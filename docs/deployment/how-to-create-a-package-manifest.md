@@ -1,48 +1,49 @@
 ---
-title: "C&#243;mo: Crear un manifiesto de paquete | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "dependencias, paquetes de arranque personalizados"
-  - "archivos del paquete [ClickOnce]"
-  - "archivos de paquete [Windows Installer]"
-  - "requisitos previos, paquete de arranque personalizado"
+title: "Cómo: crear un manifiesto del paquete | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- package files [Windows Installer]
+- package files [ClickOnce]
+- prerequisites, custom bootstrapper package
+- dependencies, custom bootstrapper packages
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
-caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 92182b9b6c6b2b2759b77e7b14d71dfd40379fc7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Crear un manifiesto de paquete
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Para implementar los requisitos previos de su aplicación, puede usar un paquete de arranque.  Un paquete de arranque contiene un archivo de manifiesto de producto único pero un manifiesto de paquete para cada configuración regional.  La funcionalidad compartida por versiones localizadas diferentes debe incluirse en el manifiesto del producto.  
+# <a name="how-to-create-a-package-manifest"></a>Cómo: Crear un manifiesto de paquete
+Para implementar los requisitos previos para la aplicación, puede usar un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único pero un manifiesto del paquete para cada configuración regional. Funcionalidad compartida por versiones localizadas diferentes debe incluirse en el manifiesto del producto.  
   
- Para obtener más información sobre los manifiestos de los paquetes, vea [Cómo: Crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).  
+ Para obtener más información sobre los manifiestos de paquete, consulte [Cómo: crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).  
   
-## Crear el manifiesto del paquete  
+## <a name="creating-the-package-manifest"></a>Crear el manifiesto del paquete  
   
-#### Para crear el manifiesto del paquete  
+#### <a name="to-create-the-package-manifest"></a>Para crear el manifiesto del paquete  
   
-1.  Cree un directorio para el paquete de arranque.  En este ejemplo se utiliza C:\\package.  
+1.  Cree un directorio para el paquete del programa previo. En este ejemplo se utiliza C:\package.  
   
 2.  Cree un subdirectorio con el nombre de la configuración regional, por ejemplo, en para inglés.  
   
-3.  En Visual Studio, cree un archivo XML denominado `package.xml` y guárdelo en la carpeta C:\\package\\en.  
+3.  En Visual Studio, cree un archivo XML que se denomina `package.xml`y guárdelo en la carpeta C:\package\en.  
   
-4.  Agregue XML para enumerar el nombre del paquete de arranque, la referencia cultural para este manifiesto del paquete localizado y el contrato de licencia opcional.  El siguiente XML utiliza las variables `DisplayName` y `Culture`, que se definen en un elemento posterior.  
+4.  Agregue el código XML para mostrar el nombre del paquete del programa previo, la referencia cultural para este manifiesto del paquete localizado y el contrato de licencia opcional. El siguiente código XML utiliza las variables `DisplayName` y `Culture`, que se definen en un elemento de una versión posterior.  
   
     ```  
     <Package  
@@ -52,7 +53,7 @@ Para implementar los requisitos previos de su aplicación, puede usar un paquete
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Agregue XML para hacer una lista de todos los archivos que están en el directorio específico de la configuración regional.  El siguiente XML utiliza un archivo que se denomina eula.txt al que se aplica la configuración regional **en**.  
+5.  Agregue el código XML para obtener una lista de todos los archivos que están en el directorio de configuración regional. El siguiente XML utiliza un archivo que se denomina eula.txt al que se aplica a la **en** configuración regional.  
   
     ```  
     <PackageFiles>  
@@ -60,7 +61,7 @@ Para implementar los requisitos previos de su aplicación, puede usar un paquete
     </PackageFiles>  
     ```  
   
-6.  Agregue XML para definir las cadenas traducibles del paquete de arranque.  El siguiente XML agrega las cadenas de error para la configuración regional en.  
+6.  Agregue el código XML para definir cadenas localizables para el paquete del programa previo. El siguiente código XML agrega las cadenas de error para la configuración regional en.  
   
     ```  
       <Strings>  
@@ -73,10 +74,10 @@ Para implementar los requisitos previos de su aplicación, puede usar un paquete
     </Strings>  
     ```  
   
-7.  Copie la carpeta C:\\package en el directorio de arranque de Visual Studio.  Para Visual Studio 2010, es \\Archivos de programa\\Microsoft SDKs\\Windows\\v7.0A\\Bootstrapper\\Packages.  
+7.  Copie la carpeta C:\package en el directorio de programa previo de Visual Studio. Para Visual Studio 2010, este es el directorio de SDKs\Windows\v7.0A\Bootstrapper\Packages \Program.  
   
-## Ejemplo  
- El manifiesto del paquete contiene la información específica de la configuración regional, como los mensajes de error, las condiciones de licencia del software y los paquetes de idioma.  
+## <a name="example"></a>Ejemplo  
+ El manifiesto del paquete contiene información de configuración regional, como mensajes de error y los términos de licencia de software, paquetes de idioma.  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -100,5 +101,5 @@ installing this package.</String>
 </Package>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)

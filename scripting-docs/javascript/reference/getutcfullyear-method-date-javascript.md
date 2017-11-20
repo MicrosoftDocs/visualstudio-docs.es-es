@@ -1,71 +1,72 @@
 ---
-title: "getUTCFullYear (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getUTCFullYear"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "getUTCFullYear (Método)"
-  - "Date (objeto)"
-  - "UTCFullYear (Método)"
-  - "fechas, UTC"
-  - "fechas UTC, devolver"
-  - "Full Year (método)"
-  - "fechas UTC, obtener"
+title: "getUTCFullYear (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getUTCFullYear
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- getUTCFullYear method
+- Date object
+- UTCFullYear method
+- dates, UTC
+- UTC dates, returning
+- Full Year method
+- UTC dates, getting
 ms.assetid: f11e5363-ef8a-48dd-9d56-4ee7290c7c48
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c8268631a96eed1f61ef4ba908b78680c8522096
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# getUTCFullYear (M&#233;todo, Date de JavaScript)
-Obtiene el año utilizando el horario universal coordinada \(UTC\).  
+# <a name="getutcfullyear-method-date-javascript"></a>getUTCFullYear (Método, Date de JavaScript)
+Obtiene el año mediante la hora Universal coordinada (UTC).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.getUTCFullYear()   
 ```  
   
-#### Parámetros  
- La referencia obligatoria `dateObj` es un objeto `Date`.  
+#### <a name="parameters"></a>Parámetros  
+ La referencia a `dateObj` necesaria es un objeto `Date` .  
   
-## Valor devuelto  
- Devuelve el año como un número de cuatro dígitos.  Se supone que los años especificados como dos dígitos en el constructor `Date` o en `setFullYear` pertenecen al siglo XX, por lo que si se da “5\/14\/12", `getUTCFullYear` devuelve “1912”.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve el año como un número de cuatro dígitos. Años especificados con dos dígitos en el `Date` constructor o en `setFullYear` se consideran del siglo XX, por lo que tiene "5/14/12", `getUTCFullYear` devuelve "1912".  
   
-## Comentarios  
- Para obtener el año mediante la hora local, usa el método `getFullYear`.  
+## <a name="remarks"></a>Comentarios  
+ Para obtener el año mediante la hora local, use la `getFullYear` método.  
   
-## Ejemplo  
- En el siguiente ejemplo, se muestra cómo usar el método `getUTCFullYear`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo, se muestra cómo utilizar el método `getUTCFullYear`.  
   
-```javascript  
+```JavaScript  
 var date = new Date("1/9/36");  
 document.write(date.getUTCFullYear());  
   
 // Output: 1936  
-  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getFullYear \(Método, Date\)](../../javascript/reference/getfullyear-method-date-javascript.md)   
- [setFullYear \(Método, Date\)](../../javascript/reference/setfullyear-method-date-javascript.md)   
- [setUTCFullYear \(Método, Date\)](../../javascript/reference/setutcfullyear-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getFullYear (método, Date)](../../javascript/reference/getfullyear-method-date-javascript.md)   
+ [setFullYear (método, Date)](../../javascript/reference/setfullyear-method-date-javascript.md)   
+ [setUTCFullYear (Método, Date)](../../javascript/reference/setutcfullyear-method-date-javascript.md)

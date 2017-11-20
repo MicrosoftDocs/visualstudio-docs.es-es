@@ -1,71 +1,73 @@
 ---
-title: "Operador de asignaci&#243;n y desplazamiento a la derecha sin signo (&gt;&gt;&gt;=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - ">>>="
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - ">>>= (operador)"
-  - "operadores de asignación, JavaScript"
-  - "operador de asignación y desplazamiento a la derecha sin signo (>>>=)"
+title: "Operador de asignación de desplazamiento a la derecha sin signo (&gt;&gt;&gt;=) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '>>>='
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- '>>>= operator'
+- unsigned right shift assignment operator (>>>=)
+- assignment operators, JavaScript
 ms.assetid: f67c3737-7d39-41ae-9c11-8b16d38f6179
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1272cbb58645df605743c6790642cd0e295442aa
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Operador de asignaci&#243;n y desplazamiento a la derecha sin signo (&gt;&gt;&gt;=) (JavaScript)
-Desplaza hacia la derecha el valor de una variable el número de bits especificado en el valor de una expresión, sin mantener el signo, y asigna el resultado a la variable.  
+# <a name="unsigned-right-shift-assignment-operator-gtgtgt-javascript"></a>Operador de asignación de desplazamiento a la derecha sin signo (&gt;&gt;&gt;=) (JavaScript)
+Desplaza a la derecha el valor de una variable por el número de bits especificados en el valor de una expresión, sin mantener el signo, y asigna el resultado a la variable.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 result >>>= expression  
 ```  
   
-## Parámetros  
- *result*  
+## <a name="parameters"></a>Parámetros  
+ *resultado*  
  Cualquier variable.  
   
- *expression*  
+ *expresión*  
  Cualquier expresión.  
   
-## Comentarios  
- El uso del operador \>\>\>\= es exactamente igual que hacer lo siguiente:  
+## <a name="remarks"></a>Comentarios  
+ Mediante el >>> = operador es exactamente igual que las acciones siguientes:  
   
-```javascript  
+```JavaScript  
 result = result >>> expression  
 ```  
   
- El operador **\>\>\>\=** desplaza los bits de *result* hacia la derecha el número de bits especificado en *expression*.  Se rellena con ceros desde la izquierda.  Los dígitos desplazados hacia la derecha se descartan.  Por ejemplo:  
+ El  **>>>=**  operador desplaza los bits de *resultado* derecha por el número de bits especificado en *expresión*. Los ceros se rellenan desde la izquierda. Se descartan los dígitos desplazados a la derecha. Por ejemplo:  
   
-```javascript  
+```JavaScript  
 var temp  
 temp = -14  
 temp >>>= 2  
 ```  
   
- La variable *temp* tiene un valor inicial de \-14 \(11111111 11111111 11111111 11110010 en binario de complemento a dos\).  Cuando se desplaza dos bits a la derecha, el valor es igual a 1073741820 \(00111111 11111111 11111111 11111100 en binario\).  
+ La variable *temp* tiene un valor inicial de -14 (11111111 11111111 11111111 11110010 en sistema binario de complemento de dos). Cuando se desplaza dos bits a la derecha, el valor es igual a 1073741820 (00111111 11111111 11111111 11111100 en binario).  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Vea también  
- [Operador de desplazamiento a la derecha sin signo \(\>\>\>\)](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)   
- [Operador de desplazamiento a la izquierda bit a bit \(\<\<\)](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)   
- [Operador de desplazamiento a la derecha bit a bit \(\>\>\)](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [Operador de desplazamiento a la derecha sin signo (>>>)](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)   
+ [Operador de desplazamiento bit a bit a la izquierda (<\<)](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)   
+ [Operador de desplazamiento bit a bit a la derecha (>>)](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)   
  [Precedencia de operadores](../../javascript/operator-subtractprecedence-javascript.md)   
- [Resumen de operadores \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Resumen de operadores (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

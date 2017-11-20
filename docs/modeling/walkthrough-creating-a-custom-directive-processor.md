@@ -10,30 +10,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
 ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
-caps.latest.revision: 74
+caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 449a8d80eef26935251c265b526d8aacd471d147
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
 *Procesadores de directivas* funcionan agregando código a la *clase de transformación generada*. Si se llama a un *directiva* desde una *plantilla de texto*, el resto del código que escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la directiva.  
@@ -983,4 +968,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  Para ver la salida en un explorador, en **el Explorador de soluciones**, haga clic en TestDP.htm y haga clic en **ver en el explorador**.  
   
      El resultado debe ser igual que el texto original pero con el formato HTML aplicado. Todos los nombres de elemento deben aparecer en negrita.
-

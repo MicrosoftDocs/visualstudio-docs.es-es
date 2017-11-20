@@ -1,34 +1,36 @@
 ---
-title: "T4 Parameter Directive | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "T4 Directiva de parámetro | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 1d590387-1d9d-40a5-a72c-65fae7a8bdf3
-caps.latest.revision: 3
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 468c4716038e3f082435984ff74c7369c200d9db
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# T4 Parameter Directive
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En una plantilla de texto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la directiva `parameter` declara propiedades en el código de plantilla que se inicializan a partir de los valores pasados desde el contexto externo.  Puede establecer estos valores si escribe el código que invocará a la transformación de texto.  
+# <a name="t4-parameter-directive"></a>Directiva de parámetro T4
+En un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantilla de texto, el `parameter` directiva declara propiedades en el código de plantilla que se inicializan de valores que se pasan desde el contexto externo. Puede establecer estos valores si escribe código que invoca la transformación de texto.  
   
-## Usar la directiva de parámetro  
+## <a name="using-the-parameter-directive"></a>Mediante la directiva de parámetro  
   
 ```  
 <#@ parameter type="Full.TypeName" name="ParameterName" #>  
 ```  
   
- La directiva `parameter` declara propiedades en el código de plantilla que se inicializan a partir de los valores pasados desde el contexto externo.  Puede establecer estos valores si escribe el código que invocará a la transformación de texto.  Los valores se pueden pasar en el diccionario `Session` o en <xref:System.Runtime.Remoting.Messaging.CallContext>.  
+ El `parameter` directiva declara propiedades en el código de plantilla que se inicializan de valores que se pasan desde el contexto externo. Puede establecer estos valores si escribe código que invoca la transformación de texto. Los valores se pueden pasar en el `Session` diccionario, o en <xref:System.Runtime.Remoting.Messaging.CallContext>.  
   
- Puede declarar parámetros de cualquier tipo remoto.  Es decir, el tipo se debe declarar con <xref:System.SerializableAttribute> o se debe derivar desde <xref:System.MarshalByRefObject>.  Esto permite pasar valores de parámetro en el AppDomain en el que se procesa la plantilla.  
+ Puede declarar parámetros de cualquier tipo de uso remoto. Es decir, el tipo debe declararse con <xref:System.SerializableAttribute>, o debe derivar de <xref:System.MarshalByRefObject>. Esto permite que los valores de parámetro que se pasan en el dominio de aplicación en el que se procesa la plantilla.  
   
- Por ejemplo, podría escribir a una plantilla de texto con el siguiente contenido:  
+ Por ejemplo, podría escribir una plantilla de texto con el siguiente contenido:  
   
 ```  
 <#@ template language="C#" #>  
@@ -41,11 +43,11 @@ Line <#= i #>
   
 ```  
   
-## Pasar valores de parámetro a una plantilla  
- Si está escribiendo una extensión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] como un comando de menú o un controlador de eventos, puede procesar una plantilla utilizando el servicio de plantillas de texto:  
+## <a name="passing-parameter-values-to-a-template"></a>Pasar valores de parámetro a una plantilla  
+ Si está escribiendo un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensión, como un comando de menú o un controlador de eventos, puede procesar una plantilla mediante el servicio de plantillas de texto:  
   
-```c#  
-// Get a service provider – how you do this depends on the context:  
+```csharp  
+// Get a service provider - how you do this depends on the context:  
 IServiceProvider serviceProvider = dte; // or dslDiagram.Store, for example   
 // Get the text template service:  
 ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITextTemplating;  
@@ -60,12 +62,12 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
   
 ```  
   
-## Pasar valores en el contexto de llamada  
- Alternativamente, puede pasar valores como datos lógicos en <xref:System.Runtime.Remoting.Messaging.CallContext>.  
+## <a name="passing-values-in-the-call-context"></a>Pasar valores en el contexto de llamadas  
+ También puede pasar valores de datos lógicos como en <xref:System.Runtime.Remoting.Messaging.CallContext>.  
   
- En el siguiente ejemplo se pasan valores utilizando ambos métodos:  
+ En el ejemplo siguiente se pasa valores mediante el uso de ambos métodos:  
   
-```c#  
+```csharp  
 ITextTemplating t4 = this.Store.GetService(typeof(STextTemplating)) as ITextTemplating;  
 ITextTemplatingSessionHost host = t4 as ITextTemplatingSessionHost;  
 host.Session = host.CreateSession();  
@@ -85,12 +87,12 @@ string result = t4.ProcessTemplate("",
   
 ```  
   
-## Pasar valores a una plantilla texto \(preprocesada\) en tiempo de ejecución  
- Por lo general, no es necesario utilizar la directiva `<#@parameter#>` con plantillas de texto \(preprocesadas\) en tiempo de ejecución.  En su lugar, puede definir un constructor adicional o una propiedad configurable para el código generado, a través del cual se pasan valores de parámetro.  Para obtener más información, vea [Run\-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Pasar valores a una plantilla de texto (preprocesada) en tiempo de ejecución  
+ No suele ser necesario usar el `<#@parameter#>` directiva con plantillas de texto en tiempo de ejecución (preprocesadas). En su lugar, puede definir un constructor adicional o una propiedad configurable para el código generado, a través del cual pasar valores de parámetro. Para obtener más información, consulte [tiempo de ejecución de generación de texto con plantillas de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Sin embargo, si desea utilizar `<#@parameter>` en una plantilla en tiempo de ejecución, puede pasar los valores a la plantilla utilizando el Diccionario de la sesión.  Por ejemplo, suponga que ha creado el archivo como una plantilla preprocesada denominada `PreTextTemplate1`.  Puede invocar a la plantilla en su programa mediante el siguiente código.  
+ Sin embargo, si desea usar `<#@parameter>` en una plantilla en tiempo de ejecución, puede pasar valores a él mediante el diccionario de sesión. Por ejemplo, supongamos que ha creado el archivo como una plantilla preprocesada denominada `PreTextTemplate1`. Puede invocar la plantilla en el programa mediante el código siguiente.  
   
-```c#  
+```csharp  
 PreTextTemplate1 t = new PreTextTemplate1();  
 t.Session = new Microsoft.VisualStudio.TextTemplating.TextTemplatingSession();  
 t.Session["TimesToRepeat"] = 5;  
@@ -100,7 +102,7 @@ string resultText = t.TransformText();
   
 ```  
   
-## Obtener argumentos a partir de TextTemplate.exe  
+## <a name="obtaining-arguments-from-texttemplateexe"></a>Obtener los argumentos de TextTemplate.exe  
   
 > [!IMPORTANT]
->  La directiva `parameter` no recupera el conjunto de valores en el parámetro `–a` de la utilidad `TextTransform.exe`.  Para obtener esos valores, establezca `hostSpecific="true"` en la directiva `template` y utilice `this.Host.ResolveParameterValue("","","argName")`.
+>  El `parameter` directiva no recuperar valores establecidos en el `-a` parámetro de la `TextTransform.exe` utilidad. Para obtener estos valores, establezca `hostSpecific="true"` en el `template` directiva y usar `this.Host.ResolveParameterValue("","","argName")`.

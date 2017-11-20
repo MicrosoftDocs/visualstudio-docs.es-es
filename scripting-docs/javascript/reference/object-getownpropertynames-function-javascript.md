@@ -1,56 +1,59 @@
 ---
-title: "Object.getOwnPropertyNames (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "getOwnPropertyNames (método) [JavaScript]"
-  - "Object.getOwnPropertyNames (método) [JavaScript]"
+title: "Object.getOwnPropertyNames (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- getOwnPropertyNames method [JavaScript]
+- Object.getOwnPropertyNames method [JavaScript]
 ms.assetid: 59f4b6b1-02be-44b3-a06c-a5ca8f70c3d8
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 76ca0036b9dedf7b4cee7b543469939e35dfe8d1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Object.getOwnPropertyNames (Funci&#243;n de JavaScript)
-Devuelve los nombres de las propiedades propias de un objeto.  Las propiedades propias de un objeto son aquellas definidas directamente en ese objeto, y no se heredan del prototipo del objeto.  Las propiedades de un objeto incluyen tanto campos \(objetos\) como funciones.  
+# <a name="objectgetownpropertynames-function-javascript"></a>Object.getOwnPropertyNames (Función de JavaScript)
+Devuelve los nombres de las propiedades de un objeto propios. Las propiedades de un objeto propias son aquellos que se definen directamente en ese objeto y no se heredan del prototipo del objeto. Las propiedades de un objeto incluyen campos (objetos) y funciones.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 Object.getOwnPropertyNames(object)  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
   
 |Parámetro|Definición|  
 |---------------|----------------|  
-|`object`|Obligatorio.  Objeto que contiene las propiedades propias.|  
+|`object`|Obligatorio. El objeto que contiene las propiedades del propias.|  
   
-## Valor devuelto  
- Matriz que contiene los nombres de las propiedades propias del objeto.  
+## <a name="return-value"></a>Valor devuelto  
+ Una matriz que contiene los nombres de las propiedades del objeto propios.  
   
-## Excepciones  
- Si el valor proporcionado para el argumento `object` no es el nombre de un objeto, se produce una excepción `TypeError`.  
+## <a name="exceptions"></a>Excepciones  
+ Si el valor proporcionado para el `object` argumento no es el nombre de un objeto, un `TypeError` se produce la excepción.  
   
-## Comentarios  
- El método `getOwnPropertyNames` devuelve los nombres de propiedades y métodos tanto enumerables como no enumerables.  Para devolver solo los nombres de propiedades y métodos enumerables, puedes usar [Object.keys \(Función\)](../../javascript/reference/object-keys-function-javascript.md).  
+## <a name="remarks"></a>Comentarios  
+ El `getOwnPropertyNames` método devuelve los nombres de métodos y propiedades enumerables y no es enumerable. Para devolver sólo los nombres de propiedades y métodos, puede usar el [Object.keys (función)](../../javascript/reference/object-keys-function-javascript.md).  
   
-## Ejemplo  
- En el ejemplo siguiente se crea un objeto que tiene tres propiedades y un método.  Después se usa el método `getOwnPropertyNames` para obtener las propiedades propias \(incluido el método\) del objeto.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se crea un objeto que tiene tres propiedades y un método. A continuación, utiliza el `getOwnPropertyNames` método para obtener las propiedades del propias (incluido el método) del objeto.  
   
-```javascript  
+```JavaScript  
 function Pasta(grain, width, shape) {  
     // Define properties.  
     this.grain = grain;  
@@ -72,10 +75,10 @@ document.write (arr);
 //   grain,width,shape,toString  
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se muestran los nombres de las propiedades que comienzan por la letra 's' en un objeto spaghetti construido con el constructor Pasta.  
+## <a name="example"></a>Ejemplo  
+ El ejemplo siguiente muestra los nombres de propiedades que comienzan con la letra ' en un **spaghetti** objeto se construyó con el **Pasta** constructor.  
   
-```javascript  
+```JavaScript  
 function Pasta(grain, size, shape) {  
     this.grain = grain;   
     this.size = size;   
@@ -99,8 +102,8 @@ function CheckKey(value) {
 // size,shape  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Vea también  
- [Object.keys \(Función\)](../../javascript/reference/object-keys-function-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Object.keys (Función)](../../javascript/reference/object-keys-function-javascript.md)

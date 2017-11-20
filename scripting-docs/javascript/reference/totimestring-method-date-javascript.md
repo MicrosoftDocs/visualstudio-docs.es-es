@@ -1,48 +1,49 @@
 ---
-title: "toTimeString (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toTimeString"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toTimeString (método)"
+title: "toTimeString (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toTimeString
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toTimeString method
 ms.assetid: a4a8c0f2-55a9-4e84-94c3-f0a547fb04b5
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4d9af1f688fee0c066158d8504e00f22af9b3a21
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# toTimeString (M&#233;todo, Date de JavaScript)
-Devuelve una hora como un valor alfanumérico.  
+# <a name="totimestring-method-date-javascript"></a>toTimeString (Método, Date de JavaScript)
+Devuelve una hora como un valor de cadena.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 objDate. toTimeString( )  
 ```  
   
-## Comentarios  
- La referencia obligatoria `objDate` es un objeto `Date`.  
+## <a name="remarks"></a>Comentarios  
+ La referencia a `objDate` necesaria es un objeto `Date`.  
   
- El método `toTimeString` devuelve un valor alfanumérico que contiene la hora en la zona horaria actual.  
+ El `toTimeString` método devuelve un valor de cadena que contiene la hora en la zona horaria actual.  
   
-## Ejemplo  
- En el ejemplo siguiente, se establece la hora en 2000 milisegundos después de la medianoche del 1 de enero de 1970 UTC y después se escribe.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente, la hora se establece en 2000 milisegundos después de la medianoche del 1 de enero de 1970 UTC y, a continuación, se escribirá.  
   
-```javascript  
+```JavaScript  
 var aDate = new Date();  
      aDate.setTime(2000);  
      document.write(aDate.toTimeString());  
@@ -51,9 +52,9 @@ var aDate = new Date();
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## Vea también  
- [toDateString \(Método, Date\)](../../javascript/reference/todatestring-method-date-javascript.md)   
- [toLocaleTimeString \(Método, Date\)](../../javascript/reference/tolocaletimestring-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [toDateString (método, Date)](../../javascript/reference/todatestring-method-date-javascript.md)   
+ [toLocaleTimeString (Método, Date)](../../javascript/reference/tolocaletimestring-method-date-javascript.md)

@@ -1,74 +1,76 @@
 ---
-title: "Operador l&#243;gico NOT (!) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "!"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "! (operador)"
-  - "! (operador), acerca del operador !"
-  - "operador lógico NOT"
+title: "Lógico NOT (operador) (!) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '!'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Logical NOT operator
+- '! operator'
+- '! operator, about ! operator'
 ms.assetid: 68c3dc71-ae95-4293-9155-67405846d71d
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 29c27b9cd670989eb2112de5067e68bd09d76903
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Operador l&#243;gico NOT (!) (JavaScript)
+# <a name="logical-not-operator--javascript"></a>Operador lógico NOT (!) (JavaScript)
 Realiza una negación lógica en una expresión.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 result = !expression  
 ```  
   
-## Parámetros  
- *result*  
+## <a name="parameters"></a>Parámetros  
+ *resultado*  
  Cualquier variable.  
   
- *expression*  
+ *expresión*  
  Cualquier expresión.  
   
-## Comentarios  
- En la tabla siguiente se indica cómo se determina *result*:  
+## <a name="remarks"></a>Comentarios  
+ La tabla siguiente se muestra cómo *resultado* viene determinado.  
   
-|Si el valor de `expression` es|`result` es|  
-|------------------------------------|-----------------|  
+|Si `expression` es|A continuación, `result` es|  
+|------------------------|----------------------|  
 |True|False|  
 |False|True|  
   
- Todos los operadores unarios, como el operador **\!**, evalúan las expresiones como se indica a continuación:  
+ Todos los operadores unarios, como el **!** evalúan las expresiones como se indica a continuación:  
   
--   Si se aplica a expresiones con valores sin definir o `null`, se genera un error en tiempo de ejecución.  
+-   Si se aplica a indefinido o `null` se genera expresiones, un error en tiempo de ejecución.  
   
--   Los objetos se convierten en cadenas.  
+-   Objetos se convierten en cadenas.  
   
--   Las cadenas se convierten en números, si es posible.  De lo contrario, se genera un error en tiempo de ejecución.  
+-   Las cadenas se convierten a números si es posible. Si no es así, se produce un error de tiempo de ejecución.  
   
--   Los valores de tipo Boolean se tratan como números \(0 si es false y 1 si es true\).  
+-   Valores booleanos se tratan como números (0 si es false, 1 si es true).  
   
  El operador se aplica al número resultante.  
   
- Para el operador **\!**, si el argumento *expression* es distinto de cero, el argumento *result* es cero.  Si *expression* es cero, *result* es 1.  
+ Para el **!** operador, si *expresión* es distinto de cero, *resultado* es cero. Si *expresión* es cero, *resultado* es 1.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Vea también  
- [Operador NOT bit a bit \(~\)](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [Bit a bit NOT (operador) (~)](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)   
  [Precedencia de operadores](../../javascript/operator-subtractprecedence-javascript.md)   
- [Resumen de operadores \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Resumen de operadores (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

@@ -1,55 +1,57 @@
 ---
-title: "continue (Instrucci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "continue_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "continue (instrucción)"
-  - "do...while (instrucción)"
-  - "estructuras de bucle, continue (instrucción)"
+title: "Continue (instrucción) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: continue_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- do...while statement
+- continue statement
+- loop structures, continue statement
 ms.assetid: f8a30d9f-e2de-4e1f-8668-4e4cf95f7df9
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 391f919c4d06a6c529bfee34e21ca7238b3c63b7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# continue (Instrucci&#243;n de JavaScript)
+# <a name="continue-statement-javascript"></a>continue (Instrucción de JavaScript)
 Detiene la iteración actual de un bucle e inicia una nueva iteración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 continue [label];  
 ```  
   
-## Comentarios  
- El argumento `label` opcional especifica la instrucción a la que `continue` se aplica.  
+## <a name="remarks"></a>Comentarios  
+ Opcional `label` especifica el argumento de la instrucción a la que `continue` se aplica.  
   
- Solo puedes usar la instrucción `continue` dentro de un bucle `while`, `do...while`, **for** o `for...in`.  Al ejecutar la instrucción `continue` se detiene la iteración actual del bucle y el flujo del programa continúa al principio del bucle.  Esta acción tiene los siguientes efectos en los distintos tipos de bucle:  
+ Puede usar el `continue` instrucción solo en un `while`, `do...while`, **para**, o `for...in` bucle. Ejecutar el `continue` instrucción se detiene la iteración actual del bucle y continúa el flujo del programa con el principio del bucle. Esto tiene los efectos siguientes en los distintos tipos de bucles:  
   
--   Los bucles `while` y `do...while` comprueban su condición y, si es igual a true, vuelven a ejecutar el bucle.  
+-   `while`y `do...while` bucles comprueban su condición y, si es true, vuelven a ejecutar el bucle.  
   
--   Los bucles `for` ejecutan su expresión de incremento y, si la expresión de comprobación es igual a true, vuelven a ejecutar el bucle.  
+-   `for`bucles ejecutan su expresión de incremento y, si es true, la expresión de prueba vuelven a ejecutan el bucle.  
   
--   Los bucles `for...in` continúan en el siguiente campo de la variable especificada y vuelven a ejecutar el bucle.  
+-   `for...in`bucles continúan con el siguiente campo de la variable especificada y vuelven a ejecutan el bucle.  
   
-## Ejemplos  
- En este ejemplo, un bucle itera de 1 a 9.  Las instrucciones que hay entre `continue` y el final del cuerpo de `for` se omiten debido al uso de la instrucción `continue` junto con la expresión `(i < 5)`.  
+## <a name="examples"></a>Ejemplos  
+ En este ejemplo, un bucle itera de 1 a 9. Las instrucciones situadas entre `continue` y el final de la `for` cuerpo se omiten debido al uso de la `continue` instrucción junto con la expresión `(i < 5)`.  
   
-```javascript  
+```JavaScript  
 for (var i = 1; i < 10; i++) {  
     if (i < 5) {  
         continue;  
@@ -61,9 +63,9 @@ for (var i = 1; i < 10; i++) {
 // Output: 5 6 7 8 9  
 ```  
   
- En el código siguiente, la instrucción `continue` hace referencia al bucle `for` que va precedido de la etiqueta `Inner:`.  Cuando `j` es 24, la instrucción `continue` hace que ese bucle `for` vaya a la siguiente iteración.  Se imprimen los números 21 a 23 y 25 a 30 en cada línea.  
+ En el código siguiente, la `continue` instrucción hace referencia a la `for` bucle que va precedido por el `Inner:` etiqueta. Cuando `j` es 24, el `continue` instrucción hace que `for` bucle para ir a la siguiente iteración. Imprimirán los números de 21 a 23 y 25 a 30 en cada línea.  
   
-```javascript  
+```JavaScript  
 Outer:  
 for (var i = 1; i <= 10; i++) {  
     document.write ("<br />");  
@@ -92,13 +94,13 @@ Inner:
 //i: 10 j: 21 22 23 25 26 27 28 29 30  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Vea también  
- [break \(Instrucción\)](../../javascript/reference/break-statement-javascript.md)   
- [do...while \(Instrucción\)](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
- [for \(Instrucción\)](../../javascript/reference/for-statement-javascript.md)   
- [for...in \(Instrucción\)](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [break (Instrucción)](../../javascript/reference/break-statement-javascript.md)   
+ [Instrucción while](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
+ [para la instrucción](../../javascript/reference/for-statement-javascript.md)   
+ [for... en instrucción](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
  [Instrucción con etiqueta](../../javascript/reference/labeled-statement-javascript.md)   
- [while \(Instrucción\)](../../javascript/reference/while-statement-javascript.md)
+ [while (Instrucción)](../../javascript/reference/while-statement-javascript.md)

@@ -7,30 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a93cb843f45efffe2b8ccdb86543baf48736ed90
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se inicia con una directiva `template`, que especifica cómo se debería procesar la plantilla. No debería haber más de una directiva de plantilla en una plantilla de texto y cualquier archivo que incluye.  
@@ -252,4 +237,3 @@ This is the common footer.
  `internal`  
   
  En una plantilla de texto en tiempo de ejecución, establece el atributo de visibilidad de la clase generada. De forma predeterminada, la clase forma parte de la API pública del código, pero si se establece `visibility="internal"`, puede asegurarse de que solo el código pueda utilizar la clase de generación de texto.
-

@@ -1,38 +1,41 @@
 ---
-title: "buffer (Propiedad, Int32Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "búfer de propiedad (Int32Array) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9e165880-7f16-4845-a41f-5b0c6e8605c5
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9d07448c44bd9f3a79731aebff5370f2ef7e7ad6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# buffer (Propiedad, Int32Array)
-Es de solo lectura.  Obtiene el ArrayBuffer al que hace referencia esta matriz.  
+# <a name="buffer-property-int32array"></a>buffer (Propiedad, Int32Array)
+Sólo lectura. Obtiene el ArrayBuffer al que hace referencia esta matriz.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 var arrayBuffer = int32Array.buffer;  
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo obtener el ArrayBuffer de la matriz.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo obtener el objeto ArrayBuffer de la matriz.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,5 +52,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

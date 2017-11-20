@@ -1,80 +1,81 @@
 ---
-title: "Informaci&#243;n general sobre las herramientas de los lenguajes espec&#237;ficos de dominio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio"
+title: "Información general sobre las herramientas de lenguaje específico de dominio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language
 ms.assetid: 50d93ea2-8c88-4522-853b-40ab194953db
-caps.latest.revision: 54
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 54
+caps.latest.revision: "54"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 20d4222f96958a730c563ff9bc84b2b5d0b08538
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Informaci&#243;n general sobre las herramientas de los lenguajes espec&#237;ficos de dominio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Herramientas de lenguaje específico de dominio \(herramientas ADSL\), que se hospedan en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], permiten diseñar un lenguaje específico y generar todo que los usuarios deben tener que crear modelos que se basan en el lenguaje.  
+# <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
+Herramientas de lenguajes específicos de dominio (herramientas ADSL), que están hospedadas en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], permiten diseñar un lenguaje específico de dominio y, a continuación, generar todo lo que los usuarios deben tener para crear modelos que se basan en el lenguaje.  
   
- Las herramientas siguientes se incluyen en las herramientas ADSL:  
+ En herramientas DSL se incluyen las siguientes herramientas:  
   
--   Un asistente de proyecto que utilice diferentes plantillas de la solución para ayudar inicia desarrollar el lenguaje específico.  
+-   Asistente de proyectos que usa las plantillas de solución diferente que le ayudarán a empezar a desarrollar su lenguaje específico de dominio.  
   
--   Un diseñador gráfico para crear y editar el lenguaje específica de dominio.  
+-   Un diseñador gráfico para crear y editar la definición de lenguaje específico de dominio.  
   
--   Un motor de validación que garantiza que la definición de lenguaje específica de dominio esté bien formada, y muestra los errores y advertencias si hay problemas.  
+-   Un motor de validación que se asegura de que la definición de lenguaje específico de dominio está bien formada y muestra los errores y advertencias si hay problemas.  
   
--   Un generador de código que toma una definición de lenguaje específica de dominio como entrada y genera código fuente como resultado.  
+-   Un generador de código que toma una definición de lenguaje específico de dominio como entrada y genera código fuente como salida.  
   
-## La solución de las herramientas ADSL  
- El asistente del diseñador de lenguaje específico proporciona las siguientes plantillas de la solución:  
+## <a name="the-dsl-tools-solution"></a>La solución de herramientas DSL  
+ El Asistente para el diseñador específico de dominio proporciona las siguientes plantillas de solución:  
   
--   flujo de la tarea  
+-   Flujo de tareas  
   
--   diagramas de clases  
+-   Diagramas de clases  
   
--   lenguaje mínimo  
+-   Lenguaje mínima  
   
--   modelos componentes  
+-   Modelos de componentes  
   
--   WPF mínimo  
+-   WPF mínima  
   
--   Windows.Forms mínimo  
+-   Windows.Forms mínima  
   
--   Biblioteca ADSL  
+-   Biblioteca DSL  
   
- Para obtener más información, vea [Elegir una plantilla de soluciones para lenguajes específicos de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+ Para obtener más información, consulte [elegir una plantilla de solución de lenguaje específico de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- El asistente crea una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que tiene los siguientes proyectos:  
+ El asistente crea un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución que tenga los siguientes proyectos:  
   
 -   DSL  
   
-     El proyecto de ADSL define el lenguaje específico y sus herramientas de edición y de procesamiento.  
+     El proyecto de Dsl define el lenguaje específico de dominio y sus herramientas de edición y procesamiento.  
   
 -   **DslPackage**  
   
-     El proyecto de DslPackage determina cómo las herramientas de lenguaje se integran con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+     El proyecto DslPackage determina cómo se integran con las herramientas de lenguaje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## La interfaz gráfica de las herramientas ADSL  
- Puede utilizar la interfaz gráfica de las herramientas ADSL para agregar elementos y relaciones al lenguaje específico.  Después de agregar los elementos, puede definir su aspecto asignándolos a las formas, personalizando colores, así como elementos decorator.  También puede agregar elementos al cuadro de herramientas.  
+## <a name="the-dsl-tools-graphical-interface"></a>La interfaz gráfica de herramientas DSL  
+ Puede usar la interfaz gráfica de herramientas DSL para agregar elementos y relaciones a su lenguaje específico de dominio. Después de haber agregado los elementos, puede definir su apariencia asignándolas a formas, personalizar colores y agregar decoradores. También puede agregar los elementos al cuadro de herramientas.  
   
-## Validación de las herramientas ADSL  
- El ADSL proporciona un nivel de validación para asegurarse de que el modelo de dominio cumple los requisitos básicos para la generación de código.  Normalmente, cuando se crea posee el lenguaje específico, agregaría dispone de validación para expresar las reglas de lógica de negocios.  Para obtener más información sobre la validación personalizada, vea [Validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).  
+## <a name="validation-in-dsl-tools"></a>Validación en herramientas DSL  
+ DSL proporciona un nivel de validación para asegurarse de que el modelo de dominio cumple los requisitos básicos para la generación de código. Normalmente, cuando se crea su propio lenguaje específico de dominio, debería agregar su propia validación para expresar las reglas de lógica de negocios. Para obtener más información acerca de la validación personalizada, vea [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).  
   
- Se recomienda valida el lenguaje específico a menudo cuando se está diseñando.  Si el lenguaje específico tiene errores de validación, no puede generar código fuente.  El proceso de generar código fuente a partir de las plantillas se realiza haciendo clic **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones.  Siempre que se modifique la definición del lenguaje, asegúrese también de a **Transformar todas las plantillas**.  Para obtener más información, vea [Cómo: Crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+ Se recomienda validar su lenguaje específico de dominio a menudo cuando se está diseñando. Si su lenguaje específico de dominio tiene errores de validación, no se puede generar código fuente. El proceso de generar código fuente a partir de las plantillas se realiza haciendo clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones. Cada vez que se modifica la definición del lenguaje, asegúrese también de **Transformar todas las plantillas**. Para obtener más información, consulte [Cómo: crear una solución de lenguaje específico de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-## Personalización de las herramientas ADSL  
- Puede proporcionar código adicional para refinar el comportamiento del modelo y definir restricciones sobre el lenguaje.  Si es necesario, puede realizar cambios significativos modificando las plantillas de texto.  
+## <a name="customization-of-dsl-tools"></a>Personalización de las herramientas DSL  
+ Puede proporcionar código adicional para afinar el comportamiento del modelo y para definir restricciones en su idioma. Si es necesario, puede realizar cambios significativos mediante la modificación de las plantillas de texto.  
   
-## Distribuir la solución ADSL  
- Las herramientas ADSL generan un paquete que se hospeda en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  El paquete muestra un cuadro de herramientas, un explorador ADSL, y otros elementos de la interfaz de usuario que permiten a los usuarios crear modelos mediante el lenguaje específico.  
+## <a name="distributing-your-dsl-solution"></a>Distribuir la solución DSL  
+ Herramientas DSL genera un paquete que se hospeda en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El paquete muestra un cuadro de herramientas, un explorador de DSL y otros elementos de interfaz de usuario que permiten a los usuarios crear modelos mediante el lenguaje específico de dominio.  
   
- Cuando compile y ejecute la solución de las herramientas ADSL en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], una segunda instancia de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] muestra cómo el lenguaje específico presenta al usuario del lenguaje. Después de comprobar que las todo correctamente, puede distribuir el archivo de `.vsix` que encontrará en la carpeta de compilación del proyecto de DslPackage.  Este archivo se puede utilizar para instalar ADSL como una extensión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en otros equipos.  Para obtener más información, vea [Implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).  
+ Al compilar y ejecutar la solución de herramientas ADSL [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], una segunda instancia de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que se muestra el aspecto de su lenguaje específico de dominio para el usuario del idioma. Después de comprobar que todo funciona correctamente, puede distribuir el `.vsix` archivo que encontrará en la carpeta de compilación del proyecto DslPackage. Este archivo se puede usar para instalar DSL como un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensión en otros equipos.  Para obtener más información, consulte [implementar soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [La instancia Experimental](../extensibility/the-experimental-instance.md)   
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/es-es/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

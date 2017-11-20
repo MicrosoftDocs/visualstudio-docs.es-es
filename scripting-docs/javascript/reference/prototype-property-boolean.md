@@ -1,43 +1,46 @@
 ---
-title: "prototype (Propiedad, Boolean) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: prototype (propiedad) (booleano) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: e4f07cb5-3462-488c-a418-76064ab10eae
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 52d2d241c4d550fe4491ea827fab9d586281242d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# prototype (Propiedad, Boolean)
+# <a name="prototype-property-boolean"></a>prototype (Propiedad, Boolean)
 Devuelve una referencia al prototipo para un booleano.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 boolean.prototype  
 ```  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  El argumento de `boolean` es el nombre de un objeto.  
   
- La propiedad `prototype` proporciona un conjunto básico de funcionalidades a una clase de objetos.  Las nuevas instancias de un objeto «heredan» el comportamiento del prototipo asignado a dicho objeto.  Es posible agregar propiedades y métodos al prototipo, pero los objetos integrados no se pueden asignar a otro prototipo.  
+ La propiedad `prototype` proporciona un conjunto básico de funcionalidades a una clase de objetos. Las nuevas instancias de un objeto «heredan» el comportamiento del prototipo asignado a dicho objeto. Es posible agregar propiedades y métodos al prototipo, pero los objetos integrados no se pueden asignar a otro prototipo.  
   
  Por ejemplo, para agregar un método al objeto `Boolean` que devuelva el valor del elemento más grande de la matriz, declare la función, agréguela a `Boolean.prototype` y después úsela.  
   
-```javascript  
+```JavaScript  
 function isFalse( ){  
     if (this.toString() == "false")  
          return true;  
@@ -53,5 +56,5 @@ document.write(bool.isFalse());
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

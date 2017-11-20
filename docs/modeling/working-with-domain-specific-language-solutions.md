@@ -1,50 +1,52 @@
 ---
-title: "Trabajar con soluciones de lenguajes espec&#237;ficos de dominio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Trabajar con soluciones de lenguajes específicos de dominio | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 3db02722-5fd5-437f-a789-9acaaa809de8
-caps.latest.revision: 6
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: c16b1e46b84b21fc1eb9d92e9954c3d2eec5b72e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Trabajar con soluciones de lenguajes espec&#237;ficos de dominio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Un lenguaje específico \(DSL\) se crea utilizando una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  En esta sección se explica cómo configurar y personalizar la solución.  
+# <a name="working-with-domain-specific-language-solutions"></a>Trabajar con soluciones de lenguajes específicos de dominio
+Un lenguaje específico de dominio (DSL) se crea mediante un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución. Esta sección trata sobre cómo configurar y personalizar la solución.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Acerca de los lenguajes específicos de dominio](../modeling/about-domain-specific-languages.md)  
- Describe cómo desarrollar el dominio \(ADSL\) y cómo aplicarlas.  
+ Describe cómo desarrollar DSL y cómo aplicarlos.  
   
  [Información general sobre las herramientas de los lenguajes específicos de dominio](../modeling/overview-of-domain-specific-language-tools.md)  
- Explica tareas principales en el desarrollo y distribuir ADSL.  
+ Explica las tareas principales de desarrollar y distribuir un DSL.  
   
- [Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)  
- Describe las ventanas que están asociados con el dominio \(ADSL\).  
+ [Introducción a la interfaz de usuario de las herramientas de los lenguajes específicos de dominio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)  
+ Describe las ventanas que están asociadas con lenguajes DSL.  
   
  [Elegir una plantilla de soluciones para lenguajes específicos de dominio](../modeling/choosing-a-domain-specific-language-solution-template.md)  
- Explica cómo elegir una plantilla para iniciar el proyecto ADSL.  
+ Explica cómo elegir una plantilla para iniciar el proyecto DSL.  
   
  [Cómo: Crear soluciones de lenguajes específicos de dominio](../modeling/how-to-create-a-domain-specific-language-solution.md)  
- Describe los pasos para configurar ADSL.  
+ Describe los pasos para configurar un DSL.  
   
  [Trabajar con diagramas de definición DSL](../modeling/working-with-the-dsl-definition-diagram.md)  
- Explica las partes del diagrama.  
+ Explica los elementos del diagrama.  
   
  [Trabajar con el Explorador de lenguajes específicos de dominio](../modeling/working-with-the-domain-specific-language-explorer.md)  
  Explica el contenido del explorador  
   
  [Cómo: Cambiar el espacio de nombres de los lenguajes específicos de dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)  
- El código que genera ADSL tiene un espacio de nombres que se establece cuando se inicia la solución, pero puede cambiarlo después.  
+ El código que se genera desde un DSL tiene un espacio de nombres que se han establecido al iniciar la solución, pero puede cambiarlo posteriormente.  
   
- [Cómo: ampliar el Diseñador de lenguaje específico de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
- Puede personalizar ADSL Designer con comandos de menú.  
+ [Cómo: Ampliar el diseñador de lenguajes específicos de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
+ Puede personalizar el diseñador DSL con comandos de menú.  
   
- [Cómo: Transformar automáticamente todas las plantillas](http://msdn.microsoft.com/es-es/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
- Para evitar hacer clic Todas las plantillas de transformación, puede convertirla en una parte automática de la compilación.
+ [Cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ Para evitar hacer clic en Transformar todas las plantillas, puede hacerla una parte de la compilación automática.

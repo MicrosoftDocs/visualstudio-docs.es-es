@@ -1,71 +1,73 @@
 ---
-title: "Date.UTC (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "UTC"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "UTC (función) [JavaScript]"
-  - "fechas UTC, devolver"
-  - "Date.UTC (función) [JavaScript]"
+title: "Date.UTC (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: UTC
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- UTC function [JavaScript]
+- UTC dates, returning
+- Date.UTC function [JavaScript]
 ms.assetid: c0d67ce1-a47e-4dfd-bbf4-21619c406a0f
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a6a7c5622b74699e3d718ceb65e96638bdb6c3c5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Date.UTC (Funci&#243;n de JavaScript)
-Devuelve el número de milisegundos transcurrido entre la medianoche del 1 de enero de 1970 según el horario universal coordinado \(UTC\) \(o GMT\) y la fecha especificada.  
+# <a name="dateutc-function-javascript"></a>Date.UTC (Función de JavaScript)
+Devuelve el número de milisegundos entre la medianoche del 1 de enero de 1970, hora Universal coordinada (UTC) (o GMT) y la fecha especificada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Date.UTC(year, month, day[, hours[, minutes[, seconds[,ms]]]])   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `year`  
- Obligatorio.  La designación de año completo es necesaria para la precisión de las fechas de cambio de siglo.  Si se usa un valor de `year` entre 0 y 99, se supone que el auténtico valor de `year` es 1900 \+ `year`.  
+ Obligatorio. La designación de año completo es necesaria para la precisión de fecha entre siglo. Si `year` está comprendido entre 0 y 99 se utiliza, a continuación, `year` se supone que es 1900 + `year`.  
   
  `month`  
- Obligatorio.  Mes como un entero comprendido entre 0 y 11 \(de enero a diciembre\).  
+ Obligatorio. El mes como un número entero entre 0 y 11 (de enero a diciembre).  
   
  `day`  
- Obligatorio.  Fecha como un valor entero comprendido entre 1 y 31.  
+ Obligatorio. La fecha como un número entero entre 1 y 31.  
   
  `hours`  
- Opcional.  Se debe proporcionar si se proporciona `minutes`.  Entero comprendido entre 0 y 23 \(desde medianoche a las 11 p.m.\) que especifica la hora.  
+ Opcional. Se debe proporcionar si `minutes` se proporciona. Número entero comprendido entre 0 y 23 (medianoche hasta las 11 p.m.) que especifica la hora.  
   
  `minutes`  
- Opcional.  Se debe proporcionar si se proporciona `seconds`.  Entero comprendido entre 0 y 59 que especifica los minutos.  
+ Opcional. Se debe proporcionar si `seconds` se proporciona. Número entero comprendido entre 0 y 59 que especifica los minutos.  
   
  `seconds`  
- Opcional.  Se debe proporcionar si se proporciona `milliseconds`.  Entero comprendido entre 0 y 59 que especifica los segundos.  
+ Opcional. Se debe proporcionar si `milliseconds` se proporciona. Número entero comprendido entre 0 y 59 que especifica a los segundos.  
   
  `ms`  
- Opcional.  Entero comprendido entre 0 y 999 que especifica los milisegundos.  
+ Opcional. Número entero comprendido entre 0 y 999 que especifica los milisegundos.  
   
-## Comentarios  
- La función `Date.UTC` devuelve el número de milisegundos transcurridos entre la medianoche del 1 de enero de 1970 UTC y la fecha proporcionada.  Este valor devuelto se puede usar en el método `setTime` y en el constructor del objeto `Date`.  Si el valor de un argumento es mayor que su intervalo, o es un número negativo, los demás valores almacenados se modifican en consecuencia.  Por ejemplo, si especificas 150 segundos, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] vuelve a definir ese número como dos minutos y 30 segundos.  
+## <a name="remarks"></a>Comentarios  
+ El `Date.UTC` función devuelve el número de milisegundos entre la medianoche del 1 de enero de 1970 UTC y la fecha proporcionada. Este valor devuelto puede usarse en el `setTime` método y en el `Date` constructor del objeto. Si el valor de un argumento es mayor que su intervalo o es un número negativo, los demás valores almacenados se modifican en consecuencia. Por ejemplo, si se especifican 150 segundos, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] vuelve a definir ese número como dos minutos y 30 segundos.  
   
- La diferencia entre la función `Date.UTC` y el constructor del objeto `Date` que acepta una fecha es que la primera supone el horario universal coordinado y el segundo supone la hora local.  
+ La diferencia entre el `Date.UTC` función y la `Date` constructor del objeto que acepta una fecha es que el `Date.UTC` función asume UTC y el `Date` constructor de objeto supone la hora local.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso de la función `Date.UTC`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo se muestra el uso de la función `Date.UTC`.  
   
-```javascript  
+```JavaScript  
 // Determine the milliseconds per day.  
  var MinMilli = 1000 * 60;  
 var HrMilli = MinMilli * 60;  
@@ -92,8 +94,8 @@ document.write(days);
 // Output: 10848  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Vea también  
- [setTime \(Método, Date\)](../../javascript/reference/settime-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [setTime (Método, Date)](../../javascript/reference/settime-method-date-javascript.md)

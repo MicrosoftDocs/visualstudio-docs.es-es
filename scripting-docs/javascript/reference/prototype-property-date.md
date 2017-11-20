@@ -1,43 +1,46 @@
 ---
-title: "prototype (Propiedad, Date) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: prototype (propiedad) (fecha) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 44f9c637-7da7-4833-906d-358506f32ced
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8c0b337964d2a2fe17a4e9a7906d81069470e61b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# prototype (Propiedad, Date)
-Devuelve una referencia al prototipo para una fecha.  
+# <a name="prototype-property-date"></a>prototype (Propiedad, Date)
+Devuelve una referencia al prototipo correspondiente a una fecha.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 date.prototype  
 ```  
   
-## Comentarios  
- El argumento `date` es el nombre de un objeto.  
+## <a name="remarks"></a>Comentarios  
+ El argumento de `date` es el nombre de un objeto.  
   
- Usa la propiedad `prototype` para proporcionar un conjunto base de funcionalidad a un objeto Date.  Las nuevas instancias de un objeto "heredan" el comportamiento del prototipo asignado a ese objeto.  
+ Use la `prototype` propiedad para proporcionar un conjunto básico de funcionalidades a una fecha. Las nuevas instancias de un objeto «heredan» el comportamiento del prototipo asignado a dicho objeto.  
   
- Por ejemplo, para agregar un método al objeto `Date` que devuelve el valor del elemento mayor de la matriz, declara la función, agrégala a `Date.prototype` y después úsala.  
+ Por ejemplo, para agregar un método al objeto `Date` que devuelva el valor del elemento más grande de la matriz, declare la función, agréguela a `Date.prototype` y después úsela.  
   
-```javascript  
+```JavaScript  
 function max( ){  
     var max = new Date();  
     max.setFullYear(2200, 01, 01);  
@@ -56,7 +59,7 @@ else if (myDate == myDate.maxDate())
   
 ```  
   
- Todos los objetos intrínsecos de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tienen una propiedad `prototype` que es de solo lectura.  Se pueden agregar propiedades y métodos al prototipo, pero no se puede asignar al objeto otro prototipo diferente.  No obstante, se puede asignar un nuevo prototipo a los objetos definidos por el usuario.  
+ Todos los intrínsecos [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objetos tienen un `prototype` propiedad que es de solo lectura. Pueden agregar propiedades y métodos al prototipo, pero el objeto no puede asignarse a otro prototipo. Sin embargo, los objetos definidos por el usuario es posible asignar un nuevo prototipo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

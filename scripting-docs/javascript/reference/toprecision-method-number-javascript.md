@@ -1,55 +1,56 @@
 ---
-title: "toPrecision (M&#233;todo, Number de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toPrecision"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toPrecision (método)"
+title: "toPrecision (método) (número) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toPrecision
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toPrecision method
 ms.assetid: ac13c82f-1038-447a-823f-f755bba535ca
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eeab7642dcd88677d1b5a7102e3cf342d7ee1d29
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# toPrecision (M&#233;todo, Number de JavaScript)
+# <a name="toprecision-method-number-javascript"></a>toPrecision (Método, Number de JavaScript)
 Representa un número en notación exponencial o de punto fijo con un número especificado de dígitos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 numObj.toPrecision([precision])  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `numObj`  
- Obligatorio.  Un objeto `Number`.  
+ Obligatorio. Objeto `Number`.  
   
  `precision`  
- Opcional.  Número de dígitos significativos.  Debe estar entre 1 y 21, ambos incluidos.  
+ Opcional. El número de dígitos significativos. Debe estar en el intervalo 1-21, ambos inclusive.  
   
-## Valor devuelto  
- En el caso de números representados en notación exponencial, se devuelven `precision` \- 1 dígitos detrás del signo decimal.  En el caso de números representados en notación fija, se devuelven `precision` dígitos significativos.  
+## <a name="return-value"></a>Valor devuelto  
+ Para los números en notación exponencial, `precision` - 1 se devuelven los dígitos después del separador decimal. Para los números representados en notación fija, `precision` se devuelven los dígitos significativos.  
   
- Si no se proporciona ningún valor para `precision` o si es **undefined**, se llama al método **toString** en su lugar.  
+ Si `precision` no se proporciona o es **indefinido**, **toString** en su lugar, se llama al método.  
   
-## Ejemplo  
- En el siguiente código se muestra cómo usar `toPrecision`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente código se muestra cómo usar `toPrecision`:  
   
-```javascript  
+```JavaScript  
 var num = new Number(123);  
 var prec = num.toPrecision();  
 document.write(prec);  
@@ -65,11 +66,11 @@ document.write(prec);
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Se aplica a**: [Number \(Objeto\)](../../javascript/reference/number-object-javascript.md)  
+ **Se aplica a**: [número de objeto](../../javascript/reference/number-object-javascript.md)  
   
-## Vea también  
- [toFixed \(Método, Number\)](../../javascript/reference/tofixed-method-number-javascript.md)   
- [toExponential \(Método, Number\)](../../javascript/reference/toexponential-method-number-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [toFixed (método, Number)](../../javascript/reference/tofixed-method-number-javascript.md)   
+ [toExponential (Método, Number)](../../javascript/reference/toexponential-method-number-javascript.md)

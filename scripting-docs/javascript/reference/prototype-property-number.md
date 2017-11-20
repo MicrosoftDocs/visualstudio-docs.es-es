@@ -1,43 +1,46 @@
 ---
-title: "prototype (Propiedad, Number) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "prototype (propiedad) (número) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: d5fb87af-fc3a-4469-8dde-d31daf654f94
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2dba8b8886b4fdbc48a662796863b1dfca019aec
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# prototype (Propiedad, Number)
+# <a name="prototype-property-number"></a>prototype (Propiedad, Number)
 Devuelve una referencia al prototipo correspondiente a una clase de número.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 number.prototype  
 ```  
   
-## Comentarios  
- El argumento `number` es el nombre de un número.  
+## <a name="remarks"></a>Comentarios  
+ El `number` argumento es el nombre de un número.  
   
- Usa la propiedad `prototype` para proporcionar un conjunto base de funcionalidad a una clase de objetos.  Las nuevas instancias de un objeto "heredan" el comportamiento del prototipo asignado a ese objeto.  
+ Use la propiedad `prototype` para proporcionar un conjunto básico de funcionalidades a una clase de objetos. Las nuevas instancias de un objeto «heredan» el comportamiento del prototipo asignado a dicho objeto.  
   
- Por ejemplo, para agregar un método al objeto `Number` que devuelve el número de dígitos \(enteros\), declara la función, agrégala a `Number.prototype` y después úsala.  
+ Por ejemplo, para agregar un método a la `Number` que devuelve los dígitos del números de (entero) del objeto, declare la función, agréguela a `Number.prototype`y, a continuación, usarla.  
   
-```javascript  
+```JavaScript  
 function number_digits() {  
     var digits = 0;  
     var num = this;  
@@ -55,9 +58,9 @@ document.write(myNumber.digits());
 // 4  
 ```  
   
- Todos los objetos intrínsecos de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tienen una propiedad `prototype` que es de solo lectura.  Se pueden agregar propiedades y métodos al prototipo, pero no se puede asignar al objeto otro prototipo diferente.  No obstante, se puede asignar un nuevo prototipo a los objetos definidos por el usuario.  
+ Todos los intrínsecos [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objetos tienen un `prototype` propiedad que es de solo lectura. Pueden agregar propiedades y métodos al prototipo, pero el objeto no puede asignarse a otro prototipo. Sin embargo, los objetos definidos por el usuario es posible asignar un nuevo prototipo.  
   
- Las listas de métodos y propiedades de cada objeto intrínseco en esta referencia de lenguaje indican cuáles son parte del prototipo del objeto y cuáles no.  
+ Las listas de métodos y propiedades para cada objeto intrínseco en esta referencia del lenguaje indican que son parte del prototipo del objeto, y cuáles no.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

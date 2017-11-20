@@ -1,61 +1,63 @@
 ---
-title: "getTime (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getTime"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "GetTime (método)"
-  - "time (método)"
+title: "getTime (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getTime
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- GetTime method
+- time method
 ms.assetid: f0da1d4e-337c-497d-9205-093defbc6d3d
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a31e542445e89a0e2f3364d36ae44f8d2d4cf9bb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# getTime (M&#233;todo, Date de JavaScript)
-Obtiene el valor de hora en milisegundos.  
+# <a name="gettime-method-date-javascript"></a>getTime (Método, Date de JavaScript)
+Obtiene el valor de tiempo en milisegundos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.getTime()   
 ```  
   
-#### Parámetros  
- La referencia obligatoria `dateObj` es un objeto `Date`.  
+#### <a name="parameters"></a>Parámetros  
+ La referencia a `dateObj` necesaria es un objeto `Date` .  
   
-## Valor devuelto  
- Devuelve el número de milisegundos transcurridos entre la medianoche del 1 de enero de 1970 y el valor de hora del objeto `Date`.  El intervalo de fechas es, aproximadamente, 285.616 años antes o después de la medianoche del 1 de enero de 1970.  Los números negativos indican fechas anteriores a 1970.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve el número de milisegundos entre la medianoche del 1 de enero de 1970 y el valor de tiempo en el `Date` objeto. El intervalo de fechas es aproximadamente, 285.616 años de cada lado de la medianoche del 1 de enero de 1970. Los números negativos indican fechas anteriores a 1970.  
   
-## Comentarios  
- Si se hacen varios cálculos de fechas y horas, es posible que desees definir variables iguales al número de milisegundos de un día, hora o minuto.  Por ejemplo:  
+## <a name="remarks"></a>Comentarios  
+ Cuando se realiza varios cálculos de fecha y hora, puede definir variables iguales al número de milisegundos de un día, hora o minuto. Por ejemplo:  
   
-```javascript  
+```JavaScript  
 var minute = 1000 * 60;  
 var hour = minute * 60;  
 var day = hour * 24;  
 ```  
   
- Consulta [Calcular fechas y horas \(JavaScript\)](../../javascript/calculating-dates-and-times-javascript.md) para obtener más información sobre cómo usar el método `getTime`.  
+ Vea [calcular fechas y horas (JavaScript)](../../javascript/calculating-dates-and-times-javascript.md) para obtener más información sobre cómo usar el `getTime` método.  
   
-## Ejemplo  
- En el siguiente ejemplo, se muestra cómo usar el método `getTime`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo, se muestra cómo utilizar el método `getTime`.  
   
-```javascript  
+```JavaScript  
 var minute = 1000 * 60;  
 var hour = minute * 60;  
 var day = hour * 24;  
@@ -66,13 +68,12 @@ var time = date.getTime();
 document.write(Math.round(time / day) + " days from 1/1/1970 to 1/1/2001");  
   
 // Output: 11323 days from 1/1/1970 to 1/1/2001  
-  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [setTime \(Método, Date\)](../../javascript/reference/settime-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [setTime (Método, Date)](../../javascript/reference/settime-method-date-javascript.md)

@@ -1,48 +1,51 @@
 ---
-title: "setUint8 (M&#233;todo, DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "setUint8 (método, DataView) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b294262b-3f4b-4183-a292-5a6982cbdd27
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4ab533520d933b11657175d396433d732536c7a3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# setUint8 (M&#233;todo, DataView)
-Almacena un valor Uint8 en el desplazamiento de bytes especificado desde el inicio de la vista.  
+# <a name="setuint8-method-dataview"></a>setUint8 (Método, DataView)
+Almacena un valor de Uint8 en el desplazamiento de bytes especificado desde el principio de la vista.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 dataView.setUint8(byteOffset, value);   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `byteOffset`  
- Lugar del búfer donde se debe establecer el valor.  
+ El lugar en el búfer en el que se debe establecer el valor.  
   
  `value`  
- Valor que se establece.  
+ Valor que se va a establecer.  
   
-## Comentarios  
- Estos métodos producen una excepción si la escritura se va a realizar más allá del final de la vista.  
+## <a name="remarks"></a>Comentarios  
+ Estos métodos genera una excepción si se escriben más allá del final de la vista.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo establecer el primer valor Uint8 del DataView.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo establecer la primera Uint8 en DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -58,5 +61,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

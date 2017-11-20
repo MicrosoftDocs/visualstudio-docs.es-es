@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::AddTypeLib | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScript::AddTypeLib | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.AddTypeLib
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_AddTypeLib"
+helpviewer_keywords: IActiveScript_AddTypeLib
 ms.assetid: 8e507ea8-c80a-471c-b482-ae753c6e8595
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::AddTypeLib
-Agrega una biblioteca de tipos al espacio de nombres para el script.  Esto es similar a la directiva de `#include` en C\/C\+\+.  Permite a un conjunto de elementos predefinidos como las definiciones de clase, `typedefs`, y constantes con nombre que se van a agregar al entorno en tiempo de ejecución disponibles para el script.  
+# <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
+Agrega una biblioteca de tipos para el espacio de nombres para la secuencia de comandos. Esto es similar a la `#include` la directiva de C o C++. Permite que un conjunto de elementos predefinidos, como las definiciones de clase, `typedefs`y constantes con nombre que se agregan al entorno de tiempo de ejecución disponible para la secuencia de comandos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT AddTypeLib(  
@@ -32,32 +35,32 @@ HRESULT AddTypeLib(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `guidTypeLib`  
- \[in\] el CLSID de la biblioteca de tipos a agregar.  
+ [in] CLSID de la biblioteca de tipos para agregar.  
   
  `dwMaj`  
- \[in\] número de versión principales.  
+ [in] Número de versión principal.  
   
  `dwMin`  
- \[in\] número de versión de Minor.  
+ [in] Número de versión secundaria.  
   
  `dwFlags`  
- \[in\] marcas de opción.  Puede ser el siguiente:  
+ [in] Marcas de opción. Puede ser el siguiente:  
   
 |Valor|Significado|  
-|-----------|-----------------|  
-|SCRIPTTYPELIB\_ISCONTROL|La biblioteca de tipos describe un control ActiveX utilizado por el host.|  
+|-----------|-------------|  
+|SCRIPTTYPELIB_ISCONTROL|La biblioteca de tipos describe un control ActiveX utilizado por el host.|  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los siguientes valores:  
   
 |Valor devuelto|Significado|  
-|--------------------|-----------------|  
+|------------------|-------------|  
 |`S_OK`|Correcto.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
-|`E_UNEXPECTED`|La llamada no se esperaba \(por ejemplo, el motor de script aún no se han cargado no se ha inicializado\).|  
-|`TYPE_E_CANTLOADLIBRARY`|La biblioteca de tipos especificada no pudo cargarse.|  
+|`E_UNEXPECTED`|No se esperaba la llamada (por ejemplo, el motor de scripting se aún no ha cargado o inicializar).|  
+|`TYPE_E_CANTLOADLIBRARY`|No se pudo cargar la biblioteca de tipos especificado.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

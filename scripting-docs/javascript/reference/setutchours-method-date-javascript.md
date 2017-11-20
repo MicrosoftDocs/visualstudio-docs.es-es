@@ -1,68 +1,70 @@
 ---
-title: "setUTCHours (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setUTCHours"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "fechas, UTC"
-  - "setUTCHours (método)"
-  - "horas UTC, establecer"
+title: "setUTCHours (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setUTCHours
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- dates, UTC
+- UTC times, setting
+- setUTCHours method
 ms.assetid: 257e36fd-fb06-4a4d-8634-d66a020a1511
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9fe83735028f86d38ef270beac6c44dfa4caae7f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# setUTCHours (M&#233;todo, Date de JavaScript)
-Establece, utilizando la hora universal coordinada \(UTC\), el valor de horas del objeto `Date`.  
+# <a name="setutchours-method-date-javascript"></a>setUTCHours (Método, Date de JavaScript)
+Establece el valor de las horas la `Date` objeto mediante la hora Universal coordinada (UTC).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.setUTCHours(numHours[, numMin[, numSec[, numMilli]]])   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `dateObj`  
- Obligatorio.  Cualquier objeto `Date`.  
+ Obligatorio. Cualquier objeto `Date`.  
   
  `numHours`  
- Obligatorio.  Valor numérico igual al valor de las horas.  
+ Obligatorio. Un valor numérico igual que el valor de horas.  
   
  `numMin`  
- Opcional.  Valor numérico igual al valor de los minutos.  Debe proporcionarse si se usa `numSec` o `numMilli`.  
+ Opcional. Un valor numérico igual que el valor de minutos. Debe especificarse si `numSec` o `numMilli` se utilizan.  
   
  `numSec`  
- Opcional.  Valor numérico igual al valor de los segundos.  Se debe proporcionar si se usa el argumento `numMilli`.  
+ Opcional. Un valor numérico igual al valor de los segundos. Se debe proporcionar si `numMilli` se usa el argumento.  
   
  `numMilli`  
- Opcional.  Valor numérico igual al valor de milisegundos.  
+ Opcional. Un valor numérico igual que el valor de milisegundos.  
   
-## Comentarios  
- Si no especificas un argumento opcional, todos los métodos **set** que toman argumentos opcionales usan el valor devuelto por los métodos **get** correspondientes.  Por ejemplo, si no se especifica el argumento `numMin`, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] usa el valor devuelto por el método `getUTCMinutes`.  
+## <a name="remarks"></a>Comentarios  
+ Todos los **establecer** métodos que toman argumentos opcionales utilizan el valor devuelto de correspondiente **obtener** métodos, si no especifica un argumento opcional. Por ejemplo, si la `numMin` no se especifica el argumento, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utiliza el valor devuelto desde el `getUTCMinutes` método.  
   
- Para establecer el valor de las horas utilizando la hora local, usa el método `setHours`.  
+ Para establecer el valor de horas mediante la hora local, utilice el `setHours` método.  
   
- Si el valor de un argumento es mayor que su intervalo, o es un número negativo, los demás valores almacenados se modifican en consecuencia.  Por ejemplo, si la fecha almacenada es el 5 de enero de 1996 a las 00:00:00.00 y se llama a **setUTCHours\(30\)**, la fecha cambia al 6 de enero de 1996 a las 06:00:00.00.  
+ Si el valor de un argumento es mayor que su intervalo o es un número negativo, los demás valores almacenados se modifican en consecuencia. Por ejemplo, si la fecha almacenada es "5 de Jan de 1996 00:00:00.00", y **setUTCHours (30)** es llama, la fecha se cambia a "6 de Jan de 1996 06:00:00.00."  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra el uso del método `setUTCHours`.  
   
-```javascript  
+```JavaScript  
 function SetUTCHoursDemo(nhr, nmin, nsec){     
    var d, s;                        // Declare variables.  
    d = new Date();                  // Create Date object.  
@@ -72,12 +74,12 @@ function SetUTCHoursDemo(nhr, nmin, nsec){
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getHours \(Método, Date\)](../../javascript/reference/gethours-method-date-javascript.md)   
- [getUTCHours \(Método, Date\)](../../javascript/reference/getutchours-method-date-javascript.md)   
- [setHours \(Método, Date\)](../../javascript/reference/sethours-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getHours (método, Date)](../../javascript/reference/gethours-method-date-javascript.md)   
+ [getUTCHours (método, Date)](../../javascript/reference/getutchours-method-date-javascript.md)   
+ [setHours (Método, Date)](../../javascript/reference/sethours-method-date-javascript.md)

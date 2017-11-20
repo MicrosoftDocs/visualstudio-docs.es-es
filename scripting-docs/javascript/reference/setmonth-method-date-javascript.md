@@ -1,61 +1,63 @@
 ---
-title: "setMonth (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setMonth"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Month (método)"
-  - "setMonth (método)"
+title: "setMonth (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setMonth
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Month method
+- setMonth method
 ms.assetid: 4f5be295-d536-46c0-b3a4-ad06457efe82
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f2672abebd327af8b0da58d46ebc183b8159711
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# setMonth (M&#233;todo, Date de JavaScript)
-Establece el valor de mes del objeto `Date` que usa la hora local.  
+# <a name="setmonth-method-date-javascript"></a>setMonth (Método, Date de JavaScript)
+Establece el valor del mes el `Date` mediante la hora local del objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj. setMonth(numMonth[, dateVal])   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `dateObj`  
- Obligatorio.  Cualquier objeto `Date`.  
+ Obligatorio. Cualquier objeto `Date`.  
   
  `numMonth`  
- Obligatorio.  Valor numérico igual al mes.  El valor correspondiente a enero es 0 y los valores de los demás meses son los siguientes de forma consecutiva.  
+ Obligatorio. Un valor numérico igual al mes. El valor de enero es 0, y otros valores de mes son consecutivos.  
   
  `dateVal`  
- Opcional.  Valor numérico que representa el día del mes.  Si no se proporciona este valor, se usa el valor de una llamada al método `getDate`.  
+ Opcional. Un valor numérico que representa el día del mes. Si no se proporciona este valor, el valor de una llamada a la `getDate` se utiliza el método.  
   
-## Comentarios  
- Para establecer el valor de mes usando el horario universal coordinado \(UTC\), usa el método `setUTCMonth`.  
+## <a name="remarks"></a>Comentarios  
+ Para establecer el valor de mes mediante la hora Universal coordinada (UTC), utilice el `setUTCMonth` método.  
   
- Si el valor de `numMonth` es mayor que 11 \(enero es el mes 0\) o es un número negativo, el año almacenado se modifica en consecuencia.  Por ejemplo, si la fecha almacenada es el 5 de enero de 1996 y se llama a **setMonth\(14\)**, la fecha cambia al 5 de marzo de 1997.  
+ Si el valor de `numMonth` es mayor que 11 (enero es el mes 0) o es un número negativo, el año almacenado se modifica según corresponda. Por ejemplo, si la fecha almacenada es "5 de Jan de 1996" y **setMonth (14)** es llama, la fecha se cambia a "5 de marzo de 1997".  
   
- Se puede usar el método **setFullYear** para establecer el año, el mes y el día del mes.  
+ El **setFullYear** método se puede utilizar para establecer el año, mes y día del mes.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra el uso del método `setMonth`.  
   
-```javascript  
+```JavaScript  
 date = new Date('1/1/1990');  
 date.setMonth(14);  
 document.write(date);  
@@ -65,12 +67,12 @@ document.write(date);
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getMonth \(Método, Date\)](../../javascript/reference/getmonth-method-date-javascript.md)   
- [getUTCMonth \(Método, Date\)](../../javascript/reference/getutcmonth-method-date-javascript.md)   
- [setUTCMonth \(Método, Date\)](../../javascript/reference/setutcmonth-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getMonth (método, Date)](../../javascript/reference/getmonth-method-date-javascript.md)   
+ [getUTCMonth (método, Date)](../../javascript/reference/getutcmonth-method-date-javascript.md)   
+ [setUTCMonth (Método, Date)](../../javascript/reference/setutcmonth-method-date-javascript.md)

@@ -1,60 +1,62 @@
 ---
-title: "slice (M&#233;todo, Array de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "slice"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "índice basado en cero"
-  - "Array (objeto)"
-  - "slice (método)"
+title: "slice (método, Array) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: slice
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- zero-based index
+- Array object
+- slice method
 ms.assetid: 3c122219-14de-4126-b091-809659c026d6
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a61cd331abef9d1a0d979f547f6d6f12222c1eee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# slice (M&#233;todo, Array de JavaScript)
+# <a name="slice-method-array-javascript"></a>slice (Método, Array de JavaScript)
 Devuelve una sección de una matriz.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 arrayObj.slice(start, [end])   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `arrayObj`  
- Obligatorio.  Objeto `Array`.  
+ Obligatorio. Un objeto `Array`.  
   
  `start`  
- Obligatorio.  Principio de la parte especificada de `arrayObj`.  
+ Obligatorio. El principio de la parte especificada de `arrayObj`.  
   
  `end`  
- Opcional.  Final de la parte especificada de `arrayObj`.  
+ Opcional. El final de la parte especificada de `arrayObj`.  
   
-## Comentarios  
- El método `slice` devuelve un objeto `Array` que contiene la parte especificada de `arrayObj`.  
+## <a name="remarks"></a>Comentarios  
+ El `slice` método devuelve un `Array` objeto que contiene la parte especificada de `arrayObj`.  
   
- El método `slice` copia hasta el elemento indicado por `end`, pero sin incluirlo.  Si el valor de `start` es negativo, se trata como `length` \+ `start`, donde `length` es la longitud de la matriz.  Si el valor de `end` es negativo, se trata como `length` \+ `end`, donde `length` es la longitud de la matriz.  Si se omite `end`, la extracción continúa hasta el final de `arrayObj`.  Si `end` tiene lugar antes que `start`, no se copia ningún elemento en la nueva matriz.  
+ El `slice` método copia hacia arriba, pero no incluyen el elemento indicado por `end`. Si `start` es negativo, se trata como `length`  +  `start`, donde `length` es la longitud de la matriz. Si `end` es negativo, se trata como `length`  +  `end` donde `length` es la longitud de la matriz. Si se omite `end`, la extracción continúa hasta el final de `arrayObj`. Si `end` se produce antes de `start`, no hay elementos se copian en la nueva matriz.  
   
-## Ejemplo  
- En los siguientes ejemplos se muestra cómo usar el método `slice`.  En el primer ejemplo, se copian en `newArray` todos los elementos de `myArray` menos el último.  En el segundo ejemplo, solo se copian en `newArray` los dos últimos elementos de `myArray`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo, se muestra cómo utilizar el método `slice`. En el primer ejemplo, todos excepto el último elemento de `myArray` se copia en `newArray`. En el segundo ejemplo, solo los dos últimos elementos de `myArray` se copian en `newArray`.  
   
-```javascript  
+```JavaScript  
 var origArray = [3, 5, 7, 9];  
 var newArray = origArray. slice(0, -1);  
 document.write(origArray);  
@@ -68,9 +70,9 @@ document.write(newArray);
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Vea también  
- [slice \(Método, String\)](../../javascript/reference/slice-method-string-javascript.md)   
- [String \(Objeto\)](../../javascript/reference/string-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [slice (método, String)](../../javascript/reference/slice-method-string-javascript.md)   
+ [String (Objeto)](../../javascript/reference/string-object-javascript.md)

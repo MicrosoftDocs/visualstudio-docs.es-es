@@ -1,48 +1,51 @@
 ---
-title: "M&#233;todo delete (WeakSet) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Método Delete (WeakSet) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 19e93366-7d42-4abf-b7b9-fcf943fa17a3
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 46eeac8ddd0072712c1867bc2a419a4e3255ffd6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# M&#233;todo delete (WeakSet) (JavaScript)
+# <a name="delete-method-weakset-javascript"></a>Método delete (WeakSet) (JavaScript)
 Elimina el elemento especificado de un `WeakSet`.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 weaksetObj.delete(obj)  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `weaksetObj`  
- Requerido.  Objeto `WeakSet`.  
+ Obligatorio. Objeto `WeakSet`.  
   
  `obj`  
- Requerido.  Elemento que se va a quitar.  
+ Obligatorio. Elemento que se va a quitar.  
   
-## Valor de propiedad y valor devuelto  
+## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  `true` si se ha eliminado el elemento.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se muestra cómo agregar y eliminar elementos de un `WeakSet`.  
   
-```javascript  
+```JavaScript  
 var ws = new WeakSet();  
   
 var str = new String("Thomas Jefferson");  
@@ -63,5 +66,5 @@ console.log(ws.has(str));
 // false  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

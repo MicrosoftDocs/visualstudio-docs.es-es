@@ -1,24 +1,26 @@
 ---
-title: "Tutorial: Generar c&#243;digo mediante plantillas de texto | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "tutoriales [plantillas de texto], generar código de aplicación"
-  - "tutoriales [plantillas de texto]"
+title: "Tutorial: Generar código mediante plantillas de texto | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- walkthroughs [text templates], generating application code
+- walkthroughs [text templates]
 ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
-caps.latest.revision: 11
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Tutorial: Generar c&#243;digo mediante plantillas de texto
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 La generación de código permite producir código de programa que está fuertemente tipado, pero que se puede modificar con facilidad cuando el modelo de origen cambia. Compare esto con la técnica alternativa de escribir un programa totalmente genérico que acepta un archivo de configuración, que es más flexible, pero produce código que no es tan fácil de leer ni de cambiar y que no tiene un rendimiento tan bueno. En este tutorial se muestra esta ventaja.  
   
 ## <a name="typed-code-for-reading-xml"></a>Código escrito para leer XML  
@@ -102,7 +104,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 4.  Para este tutorial, asigne al archivo el nombre `exampleXml.xml`. Establezca el contenido del archivo de modo que sea el XML que se muestra en la sección anterior.  
   
- ..  
+ .  
   
 ### <a name="add-a-test-code-file"></a>Agregar un archivo de código de prueba  
  Agregue un archivo de C# al proyecto y escriba en él un ejemplo del código que quiere poder escribir. Por ejemplo:  

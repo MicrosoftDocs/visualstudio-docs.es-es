@@ -1,33 +1,36 @@
 ---
-title: "Inicializar correlaci&#243;n (cuadro de di&#225;logo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "InitializeCorrelation.UI"
+title: "Inicializar el cuadro de diálogo de correlación | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: InitializeCorrelation.UI
 ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: c14cc612c544fff9a415d68ef173edcc2f9dbd87
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Inicializar correlaci&#243;n (cuadro de di&#225;logo)
-El cuadro de diálogo **Inicializar correlación** se usa en [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] para editar la propiedad <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> de una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation>.[!INCLUDE[crdefault](../test/includes/crdefault_md.md)] el tema [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md).  
+# <a name="initialize-correlation-dialog-box"></a>Inicializar correlación (cuadro de diálogo)
+El **inicializar correlación** cuadro de diálogo se usa en [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] para editar la <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propiedad de un <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)]el [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tema.  
   
- En la tabla siguiente se describen los elementos de la interfaz de usuario del cuadro de diálogo **Inicializar correlación**.  
+ La tabla siguiente describen los elementos de interfaz de usuario de la **inicializar correlación** cuadro de diálogo.  
   
 |Elemento de la interfaz de usuario|Descripción|  
-|----------------------------------------|-----------------|  
+|----------------|-----------------|  
 |**Correlación**|El objeto <xref:System.ServiceModel.Activities.CorrelationHandle> de la correlación que se va a inicializar.|  
-|**Inicializar el**|Un par clave\-valor que contiene los datos que se van a inicializar.Esto corresponde a la propiedad <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>.Un ejemplo de par clave\-valor válido sería una clave denominada "OrderID" que se asocia a una variable denominada OrderID.|  
+|**Inicializar en**|Un par clave-valor que contiene los datos que se van a inicializar. Esto corresponde a la propiedad <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>. Un ejemplo de un par clave-valor válido sería una clave denominada "OrderID" emparejado con una variable denominada OrderID.|  
   
-## Para iniciar el cuadro de diálogo Inicializar correlación  
+## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Para iniciar el cuadro de diálogo Inicializar correlación  
   
--   Haga clic en **Ver** en el diseñador de actividades **InitializeCorrelation** o seleccione una actividad <xref:System.ServiceModel.Activities.InitializeCorrelation> en [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] y, a continuación, haga clic en el botón de puntos suspensivos junto a la propiedad <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> en la cuadrícula de propiedades.  
+-   Haga clic en **vista** en el **InitializeCorrelation** actividad diseñador o seleccione un <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad en [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] y, a continuación, haga clic en el botón de puntos suspensivos junto a la <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propiedad en la cuadrícula de propiedades.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

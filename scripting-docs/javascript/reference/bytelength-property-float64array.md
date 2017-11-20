@@ -1,38 +1,41 @@
 ---
-title: "byteLength (Propiedad, Float64Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: byteLength propiedad (Float64Array) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 892498c1-dd6c-4037-89c2-cae29f5d09f2
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 594f2f4b0baca773561f7527b673916a102f50e8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# byteLength (Propiedad, Float64Array)
-Es de solo lectura.  Longitud de esta matriz desde el principio de su ArrayBuffer, en bytes, corregido en el momento de la construcción.  
+# <a name="bytelength-property-float64array"></a>byteLength (Propiedad, Float64Array)
+Sólo lectura. Longitud de esta matriz desde el principio de su ArrayBuffer, en bytes, corregida en tiempo de construcción.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 var arrayByteLength = float64Array.byteLength;  
 ```  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra cómo obtener la longitud en bytes de la matriz.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,5 +52,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

@@ -1,27 +1,30 @@
 ---
-title: "IActiveScript::GetScriptSite | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScript::GetScriptSite | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScript.GetScriptSite
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScript_GetScriptSite"
+helpviewer_keywords: IActiveScript_GetScriptSite
 ms.assetid: 83a2a89d-93d0-4cbd-9244-91a730cb406b
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 961483d45c72018bc216306d6c1aba0400a367ad
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScript::GetScriptSite
-Recupera el objeto de sitio asociado al motor de scripts de Windows.  
+# <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
+Recupera el objeto de sitio asociado con el motor de scripts de Windows.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 HRESULT GetScriptSite(  
@@ -30,23 +33,23 @@ HRESULT GetScriptSite(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `iid`  
- \[in\] identificador de la interfaz solicitada.  
+ [in] Identificador de la interfaz solicitada.  
   
  `ppvSiteObject`  
- \[out\] dirección de la ubicación que recibe el puntero de interfaz al objeto de sitio host.  
+ [out] Dirección de la ubicación que recibe el puntero de interfaz al objeto de sitio del host.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  Devuelve uno de los siguientes valores:  
   
 |Valor devuelto|Significado|  
-|--------------------|-----------------|  
+|------------------|-------------|  
 |`S_OK`|Correcto.|  
 |`E_INVALIDARG`|Un argumento no era válido.|  
-|`E_NOINTERFACE`|La interfaz especificada no se admite.|  
-|`E_POINTER`|Un puntero no válido se especificado.|  
-|`S_FALSE`|No se ha establecido ningún sitio; el parámetro de `ppvSiteObject` se establece en `NULL`.|  
+|`E_NOINTERFACE`|No se admite la interfaz especificada.|  
+|`E_POINTER`|Se especificó un puntero no válido.|  
+|`S_FALSE`|No se ha establecido ningún sitio; el `ppvSiteObject` parámetro está establecido en `NULL`.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [IActiveScript](../../winscript/reference/iactivescript.md)

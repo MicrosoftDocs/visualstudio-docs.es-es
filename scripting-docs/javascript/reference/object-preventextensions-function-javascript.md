@@ -1,75 +1,78 @@
 ---
-title: "Object.preventExtensions (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Object.preventExtensions (función) [JavaScript]"
-  - "preventExtensions (función) [JavaScript]"
-  - "impedir propiedades nuevas [JavaScript]"
-  - "propiedades [JavaScript], impedir nuevas"
+title: "Object.preventExtensions (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- properties [JavaScript], preventing new
+- preventing new properties [JavaScript]
+- preventExtensions function [JavaScript]
+- Object.preventExtensions function [JavaScript]
 ms.assetid: e6b48197-2374-4437-a9fe-519dd45a2077
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 868f917cc2249a1634194e4b2dd097e0dcbd4c08
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Object.preventExtensions (Funci&#243;n de JavaScript)
-Impide la adición de nuevas propiedades a un objeto.  
+# <a name="objectpreventextensions-function-javascript"></a>Object.preventExtensions (Función de JavaScript)
+Evita la adición de propiedades nuevas a un objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 Object.preventExtensions(object)  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `object`  
- Obligatorio.  Objeto que se va a hacer no extensible.  
+ Obligatorio. El objeto que se va a hacer no extensible.  
   
-## Valor devuelto  
- Objeto que se pasa a la función.  
+## <a name="return-value"></a>Valor devuelto  
+ El objeto que se pasa a la función.  
   
-## Excepciones  
- Si el argumento `object` no es un objeto, se produce una excepción `TypeError`.  
+## <a name="exceptions"></a>Excepciones  
+ Si el `object` argumento no es un objeto, un `TypeError` se produce la excepción.  
   
-## Comentarios  
- La función `Object.preventExtensions` hace que un objeto sea no extensible, por lo que no se le pueden agregar nuevas propiedades con nombre.  Después de hacer que un objeto sea no extensible, no puede hacerse extensible.  
+## <a name="remarks"></a>Comentarios  
+ El `Object.preventExtensions` función hace que un objeto no es extensible, por lo que no se puede agregar nuevas propiedades con nombre. Después de realiza un objeto no extensible, no se puede establecer extensible.  
   
- Para obtener más información sobre cómo establecer atributos de propiedad, consulta [Object.defineProperty \(Función\)](../../javascript/reference/object-defineproperty-function-javascript.md).  
+ Para obtener información sobre cómo establecer atributos de propiedad, vea [Object.defineProperty (función)](../../javascript/reference/object-defineproperty-function-javascript.md).  
   
-## Funciones relacionadas  
- Las funciones relacionadas siguientes impiden modificar los atributos de objeto.  
+## <a name="related-functions"></a>Funciones relacionadas  
+ Las siguientes funciones relacionadas evitar la modificación de atributos de objetos.  
   
-|Función|El objeto se hace no extensible|`configurable` se establece en `false` para cada propiedad|`writable` se establece en `false` para cada propiedad|  
-|-------------|-------------------------------------|----------------------------------------------------------------|------------------------------------------------------------|  
+|Función|Objeto estará no extensible|`configurable`se establece en `false` para cada propiedad|`writable`se establece en `false` para cada propiedad|  
+|--------------|------------------------------------|--------------------------------------------------------|----------------------------------------------------|  
 |`Object.preventExtensions`|Sí|No|No|  
-|[Object.seal](../../javascript/reference/object-seal-function-javascript.md)|Sí|Sí|No|  
-|[Object.freeze](../../javascript/reference/object-freeze-function-javascript.md)|Sí|Sí|Sí|  
+|[Object.Seal](../../javascript/reference/object-seal-function-javascript.md)|Sí|Sí|No|  
+|[Object.Freeze](../../javascript/reference/object-freeze-function-javascript.md)|Sí|Sí|Sí|  
   
- Las siguientes funciones devuelven `true` si todas las condiciones marcadas en la tabla siguiente son verdaderas.  
+ Las funciones siguientes devuelven `true` si se cumplen todas las condiciones que se marcan en la tabla siguiente.  
   
-|Función|¿Es extensible el objeto?|¿`configurable` es `false` para todas las propiedades?|¿`writable` es `false` para todas las propiedades de datos?|  
-|-------------|-------------------------------|------------------------------------------------------------|-----------------------------------------------------------------|  
+|Función|¿Objeto es extensible?|`configurable`¿es `false` para todas las propiedades?|`writable`¿es `false` para todas las propiedades de datos?|  
+|--------------|---------------------------|---------------------------------------------------|----------------------------------------------------|  
 |[Object.isExtensible](../../javascript/reference/object-isextensible-function-javascript.md)|Sí|No|No|  
 |[Object.isSealed](../../javascript/reference/object-issealed-function-javascript.md)|No|Sí|No|  
 |[Object.isFrozen](../../javascript/reference/object-isfrozen-function-javascript.md)|No|Sí|Sí|  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso de la función `Object.preventExtensions`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo se muestra el uso de la función `Object.preventExtensions`.  
   
-```javascript  
+```JavaScript  
 // Create an object that has two properties.  
 var obj = { pasta: "spaghetti", length: 10 };  
   
@@ -88,12 +91,12 @@ document.write(obj.newProp);
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Vea también  
- [Object.seal \(Función\)](../../javascript/reference/object-seal-function-javascript.md)   
- [Object.freeze \(Función\)](../../javascript/reference/object-freeze-function-javascript.md)   
- [Object.isExtensible \(Función\)](../../javascript/reference/object-isextensible-function-javascript.md)   
- [Object.isSealed \(Función\)](../../javascript/reference/object-issealed-function-javascript.md)   
- [Object.isFrozen \(Función\)](../../javascript/reference/object-isfrozen-function-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Object.Seal (función)](../../javascript/reference/object-seal-function-javascript.md)   
+ [Object.Freeze (función)](../../javascript/reference/object-freeze-function-javascript.md)   
+ [Object.isExtensible (función)](../../javascript/reference/object-isextensible-function-javascript.md)   
+ [Object.isSealed (función)](../../javascript/reference/object-issealed-function-javascript.md)   
+ [Object.isFrozen (Función)](../../javascript/reference/object-isfrozen-function-javascript.md)

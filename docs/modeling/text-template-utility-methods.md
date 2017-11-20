@@ -1,32 +1,33 @@
 ---
-title: "Text Template Utility Methods | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, utility methods"
+title: "Métodos de utilidad de plantilla de texto | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, utility methods
 ms.assetid: 8c11f9f7-678b-4f0c-b634-dc78fda699d1
-caps.latest.revision: 50
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 50
+caps.latest.revision: "50"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 534a7317b4bca2abe559c028d025a52997a9f508
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Text Template Utility Methods
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Existen varios métodos que siempre están disponibles al escribir código en una plantilla de texto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Estos métodos se definen en <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
+# <a name="text-template-utility-methods"></a>Métodos de utilidad de las plantillas de texto
+Existen varios métodos que siempre están disponibles cuando se escribe código un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantilla de texto. Estos métodos se definen en <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
->  También puede utilizar otros métodos y servicios proporcionados por el entorno host en una plantilla de texto normal \(sin preprocesamiento\).  Por ejemplo, puede resolver rutas de acceso de archivo, registrar errores y obtener servicios proporcionados por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y cualquier paquete cargado.  Para obtener más información, vea [Accessing Visual Studio from a Text Template](http://msdn.microsoft.com/es-es/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+>  También puede usar otros métodos y los servicios proporcionados por el entorno de host en una plantilla de texto (no preprocesada) normal. Por ejemplo, puede resolver las rutas de acceso de archivo, registrar errores y obtener servicios proporcionados por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y cargar alguna paquetes.  Para obtener más información, consulte [acceso a Visual Studio desde una plantilla de texto](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
-## Métodos de escritura  
- Puede utilizar los métodos `Write()` y `WriteLine()` para anexar el texto dentro de un bloque de código estándar, en lugar de utilizar un bloque de código de expresiones.  Los dos bloques de código siguientes tienen una funcionalidad equivalente.  
+## <a name="write-methods"></a>Escribir métodos  
+ Puede usar el `Write()` y `WriteLine()` métodos anexar texto dentro de un bloque de código estándar, en lugar de usar un bloque de código de la expresión. Los siguientes bloques de código de dos son funcionalmente equivalentes.  
   
-##### Bloque de código con un bloque de expresiones  
+##### <a name="code-block-with-an-expression-block"></a>Bloque de código con un bloque de expresiones  
   
 ```  
 <#  
@@ -38,7 +39,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### Bloque de código que usa WriteLine\(\)  
+##### <a name="code-block-using-writeline"></a>Bloque de código con WriteLine()  
   
 ```  
 <#   
@@ -50,9 +51,9 @@ while (i-- > 0)
 #>  
 ```  
   
- Puede que le resulte útil usa uno de estos métodos de utilidad en lugar de un bloque de expresiones dentro de un bloque de código largo con estructuras de control anidadas.  
+ Le resultará útil usar uno de estos métodos de utilidad en lugar de un bloque de expresiones dentro de un bloque de código largo con estructuras de control anidadas.  
   
- Los métodos `Write()` y `WriteLine()` tienen dos sobrecargas, una que toma un parámetro de cadena único y otra que toma una cadena de formato compuesto más una matriz de objetos para incluir en la cadena \(como el método `Console.WriteLine()`\).  Los dos usos siguientes de `WriteLine()` tienen una funcionalidad equivalente:  
+ El `Write()` y `WriteLine()` métodos tienen dos sobrecargas, una que toma un parámetro de cadena único y otra que toma una cadena de formato compuesto y una matriz de objetos que se va a incluir en la cadena (como el `Console.WriteLine()` método). Los siguientes dos usos de `WriteLine()` son funcionalmente equivalentes:  
   
 ```  
 <#  
@@ -66,8 +67,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## Métodos de sangría  
- Puede utilizar métodos de sangría para dar formato al resultado de la plantilla de texto.  La clase <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> tiene una propiedad de cadena `CurrentIndent` que muestra la sangría actual de la plantilla de texto y un campo `indentLengths` que es una lista de las sangrías que se han agregado.  Puede agregar una sangría con el método `PushIndent()`  y restar una sangría con el método `PopIndent()`.  Si desea quitar todas las sangrías, use el método `ClearIndent()`.  En el bloque de código siguiente se muestra el uso de estos métodos:  
+## <a name="indentation-methods"></a>Métodos de sangría  
+ Puede utilizar métodos de sangría para dar formato al resultado de la plantilla de texto. El <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> clase tiene un `CurrentIndent` propiedad de cadena que se muestra la sangría actual en la plantilla de texto y un `indentLengths` campo que es una lista de las sangrías que se han agregado. Puede agregar una sangría con el `PushIndent()` método y restar una sangría con el `PopIndent()` método. Si desea quitar todas las sangrías, use la `ClearIndent()` método. El bloque de código siguiente muestra el uso de estos métodos:  
   
 ```  
 <#  
@@ -83,7 +84,7 @@ while (i-- > 0)
 #>  
 ```  
   
- Este bloque de código genera el resultado siguiente:  
+ Este bloque de código genera el siguiente resultado:  
   
 ```  
 Hello  
@@ -93,8 +94,8 @@ Hello
         Hello  
 ```  
   
-## Métodos de advertencia y error  
- Puede utilizar métodos de utilidad de advertencia y error para agregar mensajes a la Lista de errores de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Por ejemplo, el siguiente código agregará un mensaje de error a la lista de errores.  
+## <a name="error-and-warning-methods"></a>Métodos de advertencia y error  
+ Puede utilizar métodos de utilidad de error y advertencia para agregar mensajes a la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lista de errores. Por ejemplo, el código siguiente agregará un mensaje de error en la lista de errores.  
   
 ```  
 <#  
@@ -110,23 +111,23 @@ Hello
 #>    
 ```  
   
-## Obtener acceso al host y al proveedor de servicio  
- La propiedad `this.Host` puede proporcionar acceso a las propiedades que expone el host que ejecuta la plantilla.  Para utilizar `this.Host`, debe establecer el atributo `hostspecific` de la directiva `<@template#>`:  
+## <a name="access-to-host-and-service-provider"></a>Acceso al Host y el proveedor de servicios  
+ La propiedad `this.Host` puede proporcionar acceso a las propiedades expuestas por el host que se está ejecutando la plantilla. Usar `this.Host`, debe establecer `hostspecific` de atributo en el `<@template#>` directiva:  
   
- `<#@template ...  hostspecific="true" #>`  
+ `<#@template ... hostspecific="true" #>`  
   
- El tipo de `this.Host` depende del tipo de host donde se ejecuta la plantilla.  En una plantilla que se ejecuta en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede convertir `this.Host` en `IServiceProvider` para obtener acceso a servicios como el IDE.  Por ejemplo:  
+ El tipo de `this.Host` depende del tipo de host en el que se está ejecutando la plantilla. En una plantilla que se ejecuta en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede convertir `this.Host` a `IServiceProvider` para obtener acceso a servicios como el IDE. Por ejemplo:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  
                        .GetService(typeof(EnvDTE.DTE));  
 ```  
   
-## Usar un conjunto diferente de métodos de utilidad  
- Como parte del proceso de generación de texto, el archivo de plantilla se transforma en una clase, que siempre tiene el nombre `GeneratedTextTransformation` y hereda de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  Si desea utilizar un conjunto diferente de métodos en su lugar, puede escribir su propia clase y especificarla en la directiva de plantilla.  Esta clase debe heredar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
+## <a name="using-a-different-set-of-utility-methods"></a>Con un conjunto diferente de métodos de utilidad  
+ Como parte del proceso de generación de texto, el archivo de plantilla se transforma en una clase, que siempre se denomina `GeneratedTextTransformation`y hereda de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Si desea usar otro conjunto de métodos en su lugar, puede escribir su propia clase y especificarla en la directiva de plantilla. La clase debe heredar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 ```  
 <#@ template inherits="MyUtilityClass" #>  
 ```  
   
- Utilice la directiva `assembly` para hacer referencia al ensamblado donde se puede encontrar la clase compilada.
+ Use la `assembly` directiva para hacer referencia al ensamblado donde se puede encontrar la clase compilada.

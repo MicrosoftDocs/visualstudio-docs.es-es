@@ -1,81 +1,84 @@
 ---
-title: "Object.isFrozen (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "isFrozen (función) [JavaScript]"
-  - "Object.isFrozen (función) [JavaScript]"
+title: "Object.isFrozen (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- isFrozen function [JavaScript]
+- Object.isFrozen function [JavaScript]
 ms.assetid: 6cf1bbc6-56e8-429b-8e2c-0024fa614acc
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3e1ccd11d5b4ef3b5f24dbfc8e815f0e3e156347
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Object.isFrozen (Funci&#243;n de JavaScript)
-Devuelve `true` si no se pueden modificar los atributos y valores de propiedad existentes en un objeto y no se pueden agregar nuevas propiedades al objeto.  
+# <a name="objectisfrozen-function-javascript"></a>Object.isFrozen (Función de JavaScript)
+Devuelve `true` si no se puede modificar los atributos de propiedad y valores existentes en un objeto y no se pueden agregar propiedades nuevas al objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 Object.isFrozen(object)  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `object`  
- Obligatorio.  Objeto que se va a probar.  
+ Obligatorio. Objeto que se va a probar.  
   
-## Valor devuelto  
- Es `true` si se cumplen todas las afirmaciones siguientes:  
+## <a name="return-value"></a>Valor devuelto  
+ `true`Si se cumplen todas de las acciones siguientes:  
   
--   El objeto no es extensible, lo que indica que no se pueden agregar nuevas propiedades al objeto.  
+-   El objeto es no es extensible, lo que indica que no se pueden agregar propiedades nuevas al objeto.  
   
--   El atributo `configurable` es `false` para todas las propiedades existentes.  
+-   El `configurable` atributo es `false` para todas las propiedades existentes.  
   
--   El atributo `writable` es `false` para todas las propiedades de datos existentes.  
+-   El `writable` atributo es `false` para todas las propiedades de datos existente.  
   
- Si el objeto no tiene ninguna propiedad existente, la función devuelve `true` si el objeto no es extensible.  
+ Si el objeto no tiene ninguna propiedad existente, la función devuelve `true` si el objeto es no extensible.  
   
-## Excepciones  
- Si el argumento `object` no es un objeto, se produce una excepción `TypeError`.  
+## <a name="exceptions"></a>Excepciones  
+ Si el `object` argumento no es un objeto, un `TypeError` se produce la excepción.  
   
-## Comentarios  
- Cuando el atributo `configurable` de una propiedad es `false`, los atributos de la propiedad no se pueden cambiar y la propiedad no se puede eliminar.  Cuando `writable` es `false`, el valor de propiedad de los datos no se puede cambiar.  Cuando `configurable` es `false` y `writable` es `true`, los atributos `value` y `writable` se pueden cambiar.  
+## <a name="remarks"></a>Comentarios  
+ Cuando el `configurable` atributo de una propiedad es `false`, no se puede cambiar los atributos de propiedad y no se puede eliminar la propiedad. Cuando `writable` es `false`, no se puede cambiar el valor de propiedad de datos. Cuando `configurable` es `false` y `writable` es `true`, `value` y `writable` atributos se pueden cambiar.  
   
- Para obtener más información sobre cómo establecer atributos de propiedad, consulta [Object.defineProperty \(Función\)](../../javascript/reference/object-defineproperty-function-javascript.md).  Para obtener los atributos de una propiedad, puedes usar [Object.getOwnPropertyDescriptor \(Función\)](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
+ Para obtener información sobre cómo establecer atributos de propiedad, vea [Object.defineProperty (función)](../../javascript/reference/object-defineproperty-function-javascript.md). Para obtener los atributos de una propiedad, puede usar el [Object.getOwnPropertyDescriptor (función)](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
   
-## Funciones relacionadas  
- Las funciones relacionadas siguientes impiden modificar los atributos de objeto.  
+## <a name="related-functions"></a>Funciones relacionadas  
+ Las siguientes funciones relacionadas evitar la modificación de atributos de objetos.  
   
-|Función|El objeto se hace no extensible|`configurable` se establece en `false` para cada propiedad|`writable` se establece en `false` para cada propiedad|  
-|-------------|-------------------------------------|----------------------------------------------------------------|------------------------------------------------------------|  
+|Función|Objeto estará no extensible|`configurable`se establece en `false` para cada propiedad|`writable`se establece en `false` para cada propiedad|  
+|--------------|------------------------------------|--------------------------------------------------------|----------------------------------------------------|  
 |[Object.preventExtensions](../../javascript/reference/object-preventextensions-function-javascript.md)|Sí|No|No|  
-|[Object.seal](../../javascript/reference/object-seal-function-javascript.md)|Sí|Sí|No|  
-|[Object.freeze](../../javascript/reference/object-freeze-function-javascript.md)|Sí|Sí|Sí|  
+|[Object.Seal](../../javascript/reference/object-seal-function-javascript.md)|Sí|Sí|No|  
+|[Object.Freeze](../../javascript/reference/object-freeze-function-javascript.md)|Sí|Sí|Sí|  
   
- Las siguientes funciones devuelven `true` si todas las condiciones marcadas en la tabla siguiente son verdaderas.  
+ Las funciones siguientes devuelven `true` si se cumplen todas las condiciones que se marcan en la tabla siguiente.  
   
-|Función|¿Es extensible el objeto?|¿`configurable` es `false` para todas las propiedades?|¿`writable` es `false` para todas las propiedades de datos?|  
-|-------------|-------------------------------|------------------------------------------------------------|-----------------------------------------------------------------|  
+|Función|¿Objeto es extensible?|`configurable`¿es `false` para todas las propiedades?|`writable`¿es `false` para todas las propiedades de datos?|  
+|--------------|---------------------------|---------------------------------------------------|----------------------------------------------------|  
 |[Object.isExtensible](../../javascript/reference/object-isextensible-function-javascript.md)|Sí|No|No|  
 |[Object.isSealed](../../javascript/reference/object-issealed-function-javascript.md)|No|Sí|No|  
 |`Object.isFrozen`|No|Sí|Sí|  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso de la función `Object.isFrozen`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo se muestra el uso de la función `Object.isFrozen`.  
   
-```javascript  
+```JavaScript  
 // Create an object that has two properties.  
 var obj = { pasta: "spaghetti", length: 10 };  
   
@@ -105,15 +108,15 @@ document.write (obj.pasta);
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Vea también  
- [Object.preventExtensions \(Función\)](../../javascript/reference/object-preventextensions-function-javascript.md)   
- [Object.seal \(Función\)](../../javascript/reference/object-seal-function-javascript.md)   
- [Object.freeze \(Función\)](../../javascript/reference/object-freeze-function-javascript.md)   
- [Object.isExtensible \(Función\)](../../javascript/reference/object-isextensible-function-javascript.md)   
- [Object.isSealed \(Función\)](../../javascript/reference/object-issealed-function-javascript.md)   
- [Object.defineProperty \(Función\)](../../javascript/reference/object-defineproperty-function-javascript.md)   
- [Object.getOwnPropertyDescriptor \(Función\)](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)   
- [Object.getOwnPropertyNames \(Función\)](../../javascript/reference/object-getownpropertynames-function-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Object.preventExtensions (función)](../../javascript/reference/object-preventextensions-function-javascript.md)   
+ [Object.Seal (función)](../../javascript/reference/object-seal-function-javascript.md)   
+ [Object.Freeze (función)](../../javascript/reference/object-freeze-function-javascript.md)   
+ [Object.isExtensible (función)](../../javascript/reference/object-isextensible-function-javascript.md)   
+ [Object.isSealed (función)](../../javascript/reference/object-issealed-function-javascript.md)   
+ [Object.defineProperty (función)](../../javascript/reference/object-defineproperty-function-javascript.md)   
+ [Object.getOwnPropertyDescriptor (función)](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)   
+ [Object.getOwnPropertyNames (Función)](../../javascript/reference/object-getownpropertynames-function-javascript.md)

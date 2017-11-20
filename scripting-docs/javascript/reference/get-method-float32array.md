@@ -1,45 +1,48 @@
 ---
-title: "get (M&#233;todo, Float32Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Get (método) (Float32Array) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: f859481c-0bb8-43d3-9d54-38d303e44397
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ea17b3d26a1f192843a2fb9d2d87f62fe26fceff
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# get (M&#233;todo, Float32Array)
-Se puede omitir.  Obtiene el elemento en el índice especificado.  
+# <a name="get-method-float32array"></a>get (Método, Float32Array)
+Se puede omitir. Obtiene el elemento en el índice especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 var value = float32Array.get(index);  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `value`  
  Valor devuelto por este método.  
   
  `index`  
  Índice donde se obtendrá el elemento de la matriz.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra cómo obtener el primer elemento de la matriz.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -56,5 +59,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

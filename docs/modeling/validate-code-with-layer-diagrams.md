@@ -19,30 +19,15 @@ helpviewer_keywords:
 - MSBuild, dependency diagrams
 - MSBuild, validating code
 ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
-caps.latest.revision: 82
+caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 53c623ce7ab7126c22aaab856a439862252a5d56
-ms.contentlocale: es-es
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar código con diagramas de dependencia
 
@@ -72,7 +57,7 @@ Para asegurarse de que código no entre en conflicto con el diseño, valide el c
   
 -   Una solución que tiene un proyecto de modelado con un diagrama de dependencia. Este diagrama de dependencia se debe vincularse a artefactos de proyectos de Visual C# .NET o Visual Basic .NET que se desea validar. Vea [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Para ver qué versiones de Visual Studio admiten esta característica, vea [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Puede validar código manualmente desde un diagrama de dependencia abierta en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. Vea [vídeo de Channel 9: diseño y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
@@ -192,7 +177,7 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
   
 |**En**|**Siga estos pasos**|  
 |------------|----------------------------|  
-|Suprimir los errores seleccionados durante la validación|Haga clic en el uno o varios errores seleccionados, elija **administrar errores de validación**y, a continuación, haga clic en **suprimir errores**.<br /><br /> Los errores suprimidos aparecen tachados. La próxima vez que ejecute la validación, estos errores no aparecerán.<br /><br /> Errores suprimidos se realiza el seguimiento en un archivo .suppressions relacionado con el archivo de diagrama de dependencia correspondiente.|  
+|Suprimir los errores seleccionados durante la validación|Haga clic en el uno o varios errores seleccionados, seleccione **administrar errores de validación**y, a continuación, haga clic en **suprimir errores**.<br /><br /> Los errores suprimidos aparecen tachados. La próxima vez que ejecute la validación, estos errores no aparecerán.<br /><br /> Errores suprimidos se realiza el seguimiento en un archivo .suppressions relacionado con el archivo de diagrama de dependencia correspondiente.|  
 |Detener la supresión de los errores seleccionados|Haga clic en los errores suprimidos seleccionada o errores, seleccione **administrar errores de validación**y, a continuación, haga clic en **Detener supresión de errores**.<br /><br /> La próxima vez que ejecute la validación, los errores suprimidos aparecerán.|  
 |Restaurar todos los errores suprimidos en la **lista de errores** ventana|Haga clic en cualquier lugar en el **lista de errores** ventana, seleccione **administrar errores de validación**y, a continuación, haga clic en **mostrar errores suprimidos**.|  
 |Ocultar todos los errores suprimidos de la **lista de errores** ventana|Haga clic en cualquier lugar en el **lista de errores** ventana, seleccione **administrar errores de validación**y, a continuación, haga clic en **Ocultar errores suprimidos**.|  
@@ -272,7 +257,7 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
 |**Sintaxis de error**|**Descripción del error**|  
 |----------------------|---------------------------|  
 |DV0001: **una dependencia no válida**|Este problema se notifica cuando un elemento de código (espacio de nombres, tipo de miembro) que asigna a las referencias de una capa un elemento de código que se asigna a otra capa, pero no hay ninguna flecha de dependencia entre estas capas en el diagrama de la validación de dependencia que contiene este capas. Se trata de una infracción de restricción de dependencia.|  
-|DV1001: **nombre de espacio de nombres no válido**|Este problema se notifica en un elemento de código asociado a una capa que propiedad "Permitido Namespace Names" no contiene el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la sintaxis de "Permite nombres de Namespace" es como una lista de punto y coma de en qué código elementos asociados a son capas de espacios de nombres pueden definirse.|  
+|DV1001: **nombre de espacio de nombres no válido**|Este problema se notifica en un elemento de código asociado a una capa que "Permite nombres de Namespace" propiedad no contienen el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la sintaxis de "Permite nombres de Namespace" es como una lista de punto y coma de en qué código elementos asociados a son capas de espacios de nombres pueden definirse.|  
 |DV1002: **depende del espacio de nombres unreferenceable**|Este problema se notifica en un elemento de código asociados a una capa y hacer referencia a otro elemento de código definido en un espacio de nombres que se define en la propiedad "Namespace Unreferenceable" de la capa. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la propiedad "Espacios de nombres Unreferenceable" se define como una lista separada por punto y coma de espacios de nombres que no se deben hacer referencia en los elementos de código asociados a esta capa.|  
 |DV1003: **nombre de espacio de nombres no permitido**|Este problema se notifica en un elemento de código asociado a una capa que propiedad "No permite nombres de Namespace" contiene el espacio de nombres en el que se define este elemento de código. Se trata de una infracción de restricción de nomenclatura. Tenga en cuenta que la propiedad "Nombre de espacio de nombres no permitido" se define como una lista separada por punto y coma de espacios de nombres en el código que no se deben definir elementos asociados a esta capa.|  
 |DV3001: **vínculo que falta**|Capa '*LayerName*'vincula a'*artefacto*' que no se encuentra. ¿Falta una referencia de ensamblado?|*LayerName* vinculada a un artefacto que no se encuentra. Por ejemplo, es posible que falte un vínculo a una clase porque en el proyecto de modelado falta una referencia al ensamblado que contiene la clase.|  
@@ -282,4 +267,3 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
 ## <a name="see-also"></a>Vea también  
  [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)   
  [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
-

@@ -1,53 +1,56 @@
 ---
-title: "compare (Propiedad, Intl.Collator) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Compare (propiedad, Intl.Collator) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 59f274dc-6e52-4344-8d5c-b9f0000b66e0
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5bfd222ac8d2c94efe279177e7f4d8ffdf850f44
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# compare (Propiedad, Intl.Collator)
-Devuelve una función que compara dos cadenas mediante el criterio de ordenación del intercalador.  
+# <a name="compare-property-intlcollator"></a>compare (Propiedad, Intl.Collator)
+Devuelve una función que compara dos cadenas mediante el criterio de ordenación del clasificador.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```javascript  
+```JavaScript  
 collatorObj.compare  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `collatorObj`  
- Requerido.  El nombre del objeto `Collator` para usar para la comparación.  
+ Obligatorio. El nombre de la `Collator` objeto que se va a utilizar para la comparación.  
   
-## Comentarios  
- La función devuelta por la propiedad `compare` toma dos argumentos, `x` y `y`, y devuelve el resultado de una comparación específica de la configuración regional `x` y `y` con las opciones especificadas en el objeto `Collator`.  
+## <a name="remarks"></a>Comentarios  
+ La función devuelta por la `compare` propiedad toma dos argumentos, `x` y `y`y devuelve el resultado de una comparación de la configuración regional de `x` y `y` mediante el uso de las opciones especificadas en el `Collator` objeto.  
   
- El resultado de la comparación será:  
+ Puede ser el resultado de la comparación:  
   
--   \-1 si `x` se produce antes de `y` en el criterio de ordenación.  
+-   -1 si `x` antes `y` en el criterio de ordenación.  
   
--   0 \(cero\) si `x` es igual a `y` en el criterio de ordenación.  
+-   0 (cero) si `x` es igual a `y` en el criterio de ordenación.  
   
--   1 si `x` se produce después de `y` en el criterio de ordenación.  
+-   1 si `x` después `y` en el criterio de ordenación.  
   
-## Ejemplo  
- El ejemplo siguiente crea un objeto `Collator` y realiza una comparación.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se crea un `Collator` de objeto y realiza una comparación.  
   
-```javascript  
+```JavaScript  
 var co = new Intl.Collator(["de-DE-u-co-phonebk"]);  
   
 if (console && console.log) {  
@@ -55,10 +58,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Ejemplo  
- El ejemplo siguiente usa objetos `Collator` para ordenar una matriz.  Este ejemplo muestra diferencias específicas de configuración regional.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se utiliza `Collator` objetos que se va a ordenar una matriz. Este ejemplo muestra las diferencias de configuración regional.  
   
-```javascript  
+```JavaScript  
 var co1 = new Intl.Collator(["de-DE-u-co-phonebk"]);  
 var co2 = new Intl.Collator(["de-DE"]);  
 var co3 = new Intl.Collator(["en-US"]);  
@@ -72,10 +75,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Ejemplo  
- El ejemplo siguiente usa un objeto `Collator` para buscar una cadena.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se usa un `Collator` objeto que se va a buscar una cadena.  
   
-```javascript  
+```JavaScript  
 // String to search  
 var arr = ["ä", "ad", "af", "a"];  
 // String searched for  
@@ -91,8 +94,8 @@ if (console && console.log) {
 }  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## Vea también  
- [Intl.Collator \(Objeto\)](../../javascript/reference/intl-collator-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Intl.Collator (Objeto)](../../javascript/reference/intl-collator-object-javascript.md)

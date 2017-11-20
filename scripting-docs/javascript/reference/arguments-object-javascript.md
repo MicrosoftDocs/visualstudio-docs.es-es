@@ -1,53 +1,55 @@
 ---
-title: "arguments (Objeto de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "arguments"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "arguments (objeto)"
-  - "argumentos, arguments (objeto)"
+title: arguments (objeto) (JavaScript) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: arguments
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arguments, arguments object
+- arguments object
 ms.assetid: 5eb79ca9-bbb8-4a42-aaf5-16a93ecb425f
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2a5c526d19ad5469d9d099f51cc5a2e2d089814f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# arguments (Objeto de JavaScript)
-Objeto que representa los argumentos de la función que se está ejecutando actualmente y las funciones que lo llamaron.  
+# <a name="arguments-object-javascript"></a>arguments (Objeto de JavaScript)
+Objeto que representa los argumentos en la función en ejecución y las funciones que lo han llamado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 [function.]arguments[n]  
 ```  
   
-## Parámetros  
- *función*  
- Opcional.  Nombre del objeto `Function` que se ejecuta actualmente.  
+## <a name="parameters"></a>Parámetros  
+ *function*  
+ Opcional. El nombre de la ejecución `Function` objeto.  
   
  *n*  
- Requerido.  Índice de base cero de los valores de argumentos pasados al objeto `Function`.  
+ Obligatorio. Índice de base cero a valores de argumento pasado a la `Function` objeto.  
   
-## Comentarios  
- No puede crear explícitamente un objeto **arguments**.  El objeto **arguments** solo está disponible cuando comienza la ejecución de una función.  Aunque el objeto **arguments** de la función no es una matriz, el acceso a los argumentos individuales se efectúa de la misma forma que a los elementos de una matriz.  El índice *n* es realmente una referencia a una de las propiedades **0** ***n*** del objeto **arguments**.  
+## <a name="remarks"></a>Comentarios  
+ No se puede crear explícitamente un **argumentos** objeto. El **argumentos** objeto solo está disponible cuando una función inicia la ejecución. El **argumentos** objeto de la función no es una matriz, pero los argumentos individuales se tiene acceso a la misma manera que se tiene acceso a elementos de la matriz. El índice  *n*  es realmente una referencia a uno de los **0**  ***n***  propiedades de la **argumentos** objeto.  
   
-## Ejemplo  
- El siguiente método muestra el uso del objeto **arguments**:  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la **argumentos** objeto.  
   
-```javascript  
+```JavaScript  
 function ArgTest(a, b)  
 {  
    var s = "";  
@@ -73,13 +75,12 @@ ArgTest(1, 2, "hello", new Date())
 // Expected Arguments: 2  
 // Passed Arguments: 4  
 // The individual arguments are: 1 2 hello Tues Jan 8 08:27:09 PST 20xx  
-  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Vea también  
- [0...n \(Propiedades, arguments\)](../../javascript/reference/0-dot-dot-dot-n-properties-arguments-javascript.md)   
- [callee \(Propiedad, arguments\)](../../javascript/reference/callee-property-arguments-javascript.md)   
- [length \(Propiedad, argumentos\)](../../javascript/reference/length-property-arguments-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [0... n (propiedades) (argumentos)](../../javascript/reference/0-dot-dot-dot-n-properties-arguments-javascript.md)   
+ [callee (propiedad) (argumentos)](../../javascript/reference/callee-property-arguments-javascript.md)   
+ [length (Propiedad, Argumentos)](../../javascript/reference/length-property-arguments-javascript.md)

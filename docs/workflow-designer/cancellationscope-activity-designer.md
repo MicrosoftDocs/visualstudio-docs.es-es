@@ -1,43 +1,46 @@
 ---
-title: "Dise&#241;ador de actividades CancellationScope | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.CancellationScope.UI"
+title: "Diseñador de actividades CancellationScope | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.CancellationScope.UI
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
-caps.latest.revision: 8
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 4b2ad28e6b89273b5fdb55e4cfa35d1df292221a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Dise&#241;ador de actividades CancellationScope
-El diseñador de actividades **CancellationScope** se utiliza para crear y configurar una actividad <xref:System.Activities.Statements.CancellationScope>.  
+# <a name="cancellationscope-activity-designer"></a>Diseñador de actividades CancellationScope
+El **CancellationScope** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.CancellationScope> actividad.  
   
-## Actividad CancellationScope  
+## <a name="the-cancellationscope-activity"></a>Actividad CancellationScope  
  La actividad <xref:System.Activities.Statements.CancellationScope> le permite especificar una actividad para la lógica de ejecución y cancelación de esa actividad.  
   
-### Utilizar el diseñador de actividades CancellationScope  
- El diseñador de actividades **CancellationScope** se puede encontrar en la categoría **Transacción** del **Cuadro de herramientas**, al que se tiene acceso al hacer clic en la pestaña **Cuadro de herramientas** de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. \(De forma alternativa, seleccione **Barra de herramientas** del menú **Ver** o CTRL\+ALT\+X\).  
+### <a name="using-the-cancellationscope-activity-designer"></a>Utilizar el diseñador de actividades CancellationScope  
+ El **CancellationScope** Diseñador de actividad puede encontrarse en el **transacciones** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en la **cuadro de herramientas**  pestaña de la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (o bien, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)  
   
- El diseñador de actividades **CancellationScope** se puede arrastrar desde el **Cuadro de herramientas** y colocarlo en la superficie de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], donde se coloquen normalmente, como en una clase <xref:System.Activities.Statements.Sequence>.De esta forma se crea una actividad <xref:System.Activities.Statements.CancellationScope> con una propiedad <xref:System.Activities.Activity.DisplayName%2A> predeterminada de CancellationScope.La propiedad <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado del diseñador de actividades **CancellationScope** o en el cuadro **DisplayName** de la cuadrícula de propiedades.  
+ El **CancellationScope** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] expuesta, donde se coloquen normalmente las actividades, por ejemplo, como en un <xref:System.Activities.Statements.Sequence>. De esta forma se crea una actividad <xref:System.Activities.Statements.CancellationScope> con una propiedad <xref:System.Activities.Activity.DisplayName%2A> predeterminada de CancellationScope. El <xref:System.Activities.Activity.DisplayName%2A> valor se puede editar en el encabezado de la **CancellationScope** Diseñador de actividad o en la **DisplayName** cuadro de la cuadrícula de propiedades.  
   
-### Propiedades CancellationScope  
- En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.CancellationScope> y se describe cómo se utilizan en el diseñador.La propiedad <xref:System.Activities.Activity.DisplayName%2A> se puede editar en cuadrícula de propiedades, pero las otras propiedades se debe editar en la superficie de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
+### <a name="the-cancellationscope-properties"></a>Propiedades CancellationScope  
+ En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.CancellationScope> y se describe cómo se utilizan en el diseñador. La propiedad <xref:System.Activities.Activity.DisplayName%2A> se puede editar en cuadrícula de propiedades, pero las otras propiedades se debe editar en la superficie de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
 |Nombre de la propiedad|Obligatorio|Uso|  
-|----------------------------|-----------------|---------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre opcional descriptivo de la actividad <xref:System.Activities.Statements.CancellationScope>.El valor predeterminado es CancellationScope.Pese a que el valor de <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda utilizar uno.|  
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Especifica la actividad para la que se proporciona la lógica de cancelación.Para agregar la actividad <xref:System.Activities.Statements.CancellationScope.Body%2A>, coloque una actividad del **Cuadro de herramientas** en el cuadro **Body** del diseñador de actividades **CancellationScope** que tenga el texto con la sugerencia "Coloque la actividad aquí".|  
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Especifica la actividad que se ejecuta en caso de cancelación.Para agregar la actividad <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>, coloque una actividad del **Cuadro de herramientas** en el cuadro **CancellationHandler** del diseñador de actividades **CancellationScope** que tenga el texto con la sugerencia "Coloque la actividad aquí".|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|El nombre descriptivo opcional de la actividad de la clase <xref:System.Activities.Statements.CancellationScope>. El valor predeterminado es CancellationScope. Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|  
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Especifica la actividad para la que se proporciona la lógica de cancelación. Para agregar el <xref:System.Activities.Statements.CancellationScope.Body%2A> actividad, coloque una actividad desde la **cuadro de herramientas** en el **cuerpo** cuadro en el **CancellationScope** Diseñador de actividad con el texto de la sugerencia "colocar Actividad aquí".|  
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Especifica la actividad que se ejecuta en caso de cancelación. Para agregar el <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> actividad, coloque una actividad desde la **cuadro de herramientas** en el **CancellationHandler** cuadro en el **CancellationScope** Diseñador de actividad con la sugerencia texto "Coloque la actividad aquí".|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Transacción](../workflow-designer/transaction-activity-designers.md)   
  [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)   
- [Compensate](../workflow-designer/compensate-activity-designer.md)   
- [Confirm](../workflow-designer/confirm-activity-designer.md)   
+ [Compensar](../workflow-designer/compensate-activity-designer.md)   
+ [Confirmar](../workflow-designer/confirm-activity-designer.md)   
  [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

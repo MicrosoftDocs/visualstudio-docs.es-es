@@ -1,69 +1,69 @@
 ---
-title: "Implementar aplicaciones ClickOnce para los servidores de pruebas y producci&#243;n sin nueva firma | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "actualizaciones de aplicaciones, ClickOnce"
-  - "aplicaciones ClickOnce, implementar sin nueva firma"
-  - "implementación ClickOnce, sin nueva firma"
-  - "deploymentProvider (etiqueta)"
-  - "manifiestos [ClickOnce]"
-  - "actualizar ubicación [ClickOnce]"
+title: "Implementar aplicaciones ClickOnce para las pruebas y los servidores de producción sin nueva firma | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce applications, deploying without resigning
+- ClickOnce deployment, without resigning
+- application updates, ClickOnce
+- update location [ClickOnce]
+- deploymentProvider tag
+- manifests [ClickOnce]
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
-caps.latest.revision: 10
-caps.handback.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "10"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 91261e0bb70092861f216333bd73a11dc07790ba
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Implementar aplicaciones ClickOnce para los servidores de pruebas y producci&#243;n sin nueva firma
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En este tema se describe una nueva característica de ClickOnce introducida en la versión 3.5 de .NET Framework que habilita la implementación de aplicaciones ClickOnce desde varias ubicaciones de red sin volver a firmar ni cambiar los manifiestos de ClickOnce.  
+# <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Implementar aplicaciones ClickOnce para los servidores de pruebas y producción sin nueva firma
+Este tema describe una nueva característica de ClickOnce introducida en .NET Framework versión 3.5 que permite la implementación de aplicaciones ClickOnce desde varias ubicaciones de red sin volver a firmar ni cambiar la ClickOnce manifiestos.  
   
 > [!NOTE]
->  Volver a firmar sigue siendo el método recomendado para implementar nuevas versiones de las aplicaciones.  Siempre que sea posible, utilice el método de volver a firmar.  Para obtener más información, vea [Mage.exe \(Herramienta de generación y edición de manifiestos\)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md).  
+>  Volver a firmar sigue siendo el método preferido para implementar nuevas versiones de las aplicaciones. Siempre que sea posible, utilice el método volver a firmar. Para más información, consulte [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).  
   
- Los programadores e ISV de terceros pueden adoptar esta característica, que permite que sus clientes actualicen fácilmente sus aplicaciones.  Esta característica se puede utilizar en las situaciones siguientes:  
+ Los desarrolladores de aplicaciones de terceros y los ISV pueden participar en esta característica, facilitando a sus clientes actualizar sus aplicaciones. Esta característica se puede utilizar en las situaciones siguientes:  
   
 -   Al actualizar una aplicación, no en la primera instalación de una aplicación.  
   
--   Cuando sólo hay una configuración de la aplicación en un equipo.  Por ejemplo, si una aplicación se configura para señalar a dos bases de datos diferentes, no se puede utilizar esta característica.  
+-   Cuando hay una sola configuración de la aplicación en un equipo. Por ejemplo, si una aplicación está configurada para que apunte a dos bases de datos diferentes, no puede usar esta característica.  
   
-## Excluir deploymentProvider de los manifiestos de implementación  
- En .NET Framework 2.0 y .NET Framework 3.0, las aplicaciones ClickOnce que se instalan en el sistema para disponibilidad sin conexión deben especificar `deploymentProvider` en su manifiesto de implementación.  `deploymentProvider` se suele denominar ubicación de actualización; es la ubicación en la que ClickOnce comprobará si hay actualizaciones de la aplicación.  Este requisito, junto con la necesidad de que los editores de aplicaciones firmen sus implementaciones, dificulta que una empresa actualice una aplicación ClickOnce de un proveedor u otro fabricante.  También dificulta la implementación de la misma aplicación procedente de varias ubicaciones en la misma red.  
+## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Exclusión de deploymentProvider de manifiestos de implementación  
+ En .NET Framework 2.0 y .NET Framework 3.0, deben especificar las aplicaciones ClickOnce que se instalación en el sistema para disponibilidad sin conexión un `deploymentProvider` en su manifiesto de implementación. El `deploymentProvider` a menudo se conoce como la ubicación de actualización; es la ubicación en la que ClickOnce comprobará las actualizaciones de la aplicación. Este requisito, junto con la necesidad de los editores de aplicaciones firmen sus implementaciones, dificultaba a una empresa para actualizar una aplicación ClickOnce desde un proveedor u otro tercero. También resulta más difícil de implementar la misma aplicación de varias ubicaciones en la misma red.  
   
- Con los cambios realizados a ClickOnce en .NET Framework 3.5, otros proveedores pueden proporcionar una aplicación ClickOnce a otra organización que, a continuación, puede implementarla en su propia red.  
+ Con los cambios que se realizaron en ClickOnce en .NET Framework 3.5, es posible que un tercero proporcionar una aplicación ClickOnce en otra organización, que, a continuación, se puede implementar la aplicación en su propia red.  
   
- Para aprovechar las ventajas de esta característica, los programadores de aplicaciones ClickOnce deben excluir `deploymentProvider` de sus manifiestos de implementación.  Esto significa excluir el argumento `-providerUrl` al crear los manifiestos de implementación con Mage.exe, o asegurarse de que el cuadro de texto **Ubicación de inicio** en la ficha **Manifiesto de aplicación** está en blanco si va a generar los manifiestos de implementación con MageUI.exe.  
+ Con el fin de sacar partido de esta característica, deben excluir los desarrolladores de aplicaciones ClickOnce `deploymentProvider` de su implementación de manifiestos. Esto significa sin incluir el `-providerUrl` manifiestos de argumento cuando se crea la implementación con Mage.exe o asegurándose de que el **iniciar ubicación** cuadro de texto en el **Application Manifest** ficha se deja en blanco si se va a generar los manifiestos de implementación con MageUI.exe.  
   
-## deploymentProvider y actualizaciones de aplicaciones  
- A partir de .NET Framework 3.5, ya no es necesario especificar `deploymentProvider` en un manifiesto de implementación para implementar una aplicación ClickOnce tanto para su uso en línea como sin conexión.  Esto permite escenarios donde deba empaquetar y firmar la implementación personalmente pero que sean otras empresas las que implementen la aplicación en sus redes.  
+## <a name="deploymentprovider-and-application-updates"></a>deploymentProvider y actualizaciones de aplicaciones  
+ A partir de .NET Framework 3.5, ya no tiene que especificar un `deploymentProvider` en el manifiesto de implementación para implementar una aplicación ClickOnce para el uso en línea y sin conexión. Esto es compatible con el escenario donde debe empaquetar y firmar la implementación personalmente, pero permitir que otras empresas implementar la aplicación a través de sus redes.  
   
- El punto clave para recordar es que las aplicaciones que excluyen `deploymentProvider` no pueden cambiar su ubicación de instalación durante las actualizaciones, hasta que distribuyan una actualización que incluya de nuevo la etiqueta `deploymentProvider`.  
+ El punto clave que recordar es que las aplicaciones que excluirán una `deploymentProvider` no se puede cambiar su ubicación de instalación durante las actualizaciones, hasta que se incluyen una actualización que incluye la `deploymentProvider` etiqueta de nuevo.  
   
- Éstos son dos ejemplos que aclararán este punto.  En el primer ejemplo, se publica una aplicación ClickOnce que no tiene ninguna etiqueta `deploymentProvider` y se pide a los usuarios que lo instalen desde http:\/\/www.adatum.com\/MyApplication\/.  Si decide que desea publicar la próxima actualización de la aplicación en http:\/\/subdomain.adatum.com\/MyApplication\/, no tendrá ninguna manera de indicarlo en el manifiesto de implementación ubicado en http:\/\/www.adatum.com\/MyApplication\/.  Puede hacer una de las dos cosas siguientes:  
+ Éstos son dos ejemplos para aclarar este concepto. En el primer ejemplo, publicar una aplicación ClickOnce que no tiene ningún `deploymentProvider` etiqueta y se pregunte a los usuarios lo instalen desde http://www.adatum.com/MyApplication/. Si decide que desea publicar la próxima actualización de la aplicación en http://subdomain.adatum.com/MyApplication/, no tendrá ninguna manera de indicarlo en el manifiesto de implementación que se encuentra en http://www.adatum.com/MyApplication/. Puede realizar una de estas dos cosas:  
   
--   Indique a sus usuarios que desinstalen la versión anterior e instalen la nueva versión desde la nueva ubicación.  
+-   Indique a los usuarios para desinstalar la versión anterior e instalar la nueva versión desde la nueva ubicación.  
   
--   Incluya una actualización en http:\/\/www.adatum.com\/MyApplication\/ que contenga un `deploymentProvider` que señale a http:\/\/www.adatum.com\/MyApplication\/.  A continuación, publique otra actualización con `deploymentProvider` señalando a http:\/\/subdomain.adatum.com\/MyApplication\/.  
+-   Incluir una actualización en http://www.adatum.com/MyApplication/ que contenga un `deploymentProvider` señale a http://www.adatum.com/MyApplication/. A continuación, suelte otra actualización posterior con `deploymentProvider` que apunta a http://subdomain.adatum.com/MyApplication/.  
   
- En el segundo ejemplo, se publica una aplicación ClickOnce que especifica `deploymentProvider` y después decide quitarlo.  Una vez descargada a los clientes la nueva versión sin `deploymentProvider`, no podrá redirigir la ruta de acceso utilizada para las actualizaciones hasta que publique una versión de su aplicación con el valor de `deploymentProvider` restaurado.  Como en el primer ejemplo, `deploymentProvider` debe señalar inicialmente a la ubicación de actualización actual, no a la nueva ubicación.  En este caso, si intenta insertar un `deploymentProvider` que hace referencia a http:\/\/subdomain.adatum.com\/MyApplication\/, se producirá un error en la siguiente actualización.  
+ En el segundo ejemplo, publicar una aplicación ClickOnce que especifica `deploymentProvider`, y, a continuación, decide quitarlo. Una vez la nueva versión sin `deploymentProvider` se ha descargado a los clientes, no podrá redirigir la ruta de acceso que se usan para las actualizaciones hasta que se publica una versión de la aplicación que tiene `deploymentProvider` restaurado. Al igual que con el primer ejemplo, `deploymentProvider` inicialmente debe apuntar a la ubicación de actualización actual, no la nueva ubicación. En este caso, si se intenta insertar un `deploymentProvider` que hace referencia a http://subdomain.adatum.com/MyApplication/, a continuación, se producirá un error en la siguiente actualización.  
   
-## Crear una implementación  
- Para obtener instrucciones paso a paso para crear implementaciones que se puedan implementar desde ubicaciones de red diferentes, vea [Tutorial: Implementar manualmente una aplicación ClickOnce que no requiera el proceso de volver a firmar y que conserve la información de marca comercial](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+## <a name="creating-a-deployment"></a>Creación de una implementación  
+ Para obtener instrucciones paso a paso sobre cómo crear implementaciones que se pueden implementar desde distintas ubicaciones de red, consulte [Tutorial: implementar manualmente una aplicación ClickOnce que Does no requieren nueva firma y esa información de personalización de marca conserva](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
   
-## Vea también  
- [Mage.exe \(Herramienta de generación y edición de manifiestos\)](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md)   
- [MageUI.exe \(Manifest Generation and Editing Tool, Graphical Client\)](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)
+## <a name="see-also"></a>Vea también  
+ [Mage.exe (Herramienta de generación y edición de manifiestos)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
+ [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

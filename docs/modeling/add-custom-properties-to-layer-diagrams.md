@@ -6,38 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- dependency diagrams, adding custom properties
+helpviewer_keywords: dependency diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 6c7e43c180ac5210d9c29961ed7330b370a99075
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 130222ef3a603576f02961979e64b0c8160430af
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Agregar propiedades personalizadas a diagramas de dependencia
-Cuando se escribe código de extensión para los diagramas de dependencia, puede almacenar valores en cualquier elemento en un diagrama de dependencia. Los valores se conservarán cuando el diagrama se guarde y se vuelva a abrir. También puede hacer que estas propiedades aparecen en la **propiedades** ventana para que los usuarios pueden ver y editar. Por ejemplo, puede permitir que los usuarios especifiquen una expresión regular para cada capa y escriban código de validación para comprobar que los nombres de las clases de cada capa se ajustan al patrón especificado por el usuario.  
+Cuando se escribe código de extensión para los diagramas de dependencia, puede almacenar valores a cualquier elemento en un diagrama de dependencia. Los valores se conservarán cuando el diagrama se guarde y se vuelva a abrir. También puede hacer que estas propiedades aparecen en la **propiedades** ventana para que los usuarios pueden verlas y editarlas. Por ejemplo, puede permitir que los usuarios especifiquen una expresión regular para cada capa y escriban código de validación para comprobar que los nombres de las clases de cada capa se ajustan al patrón especificado por el usuario.  
   
 ## <a name="properties-not-visible-to-the-user"></a>Propiedades no visibles para el usuario  
- Si desea que el código asocie valores a cualquier elemento de un diagrama de dependencia, no es necesario definir un componente MEF. Hay un diccionario denominado `Properties` en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> Solo tiene que agregar valores que calculan referencias al diccionario de cualquier elemento de capa. Se guardarán como parte del diagrama de dependencia. Para obtener más información, consulte [navegar y actualizar modelos en el código de programa de capas](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+ Si desea que el código asocie valores a cualquier elemento de un diagrama de dependencia, no es necesario definir un componente MEF. Hay un diccionario denominado `Properties` en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Solo tiene que agregar valores que calculan referencias al diccionario de cualquier elemento de capa. Se guardará como parte del diagrama de dependencia. Para obtener más información, consulte [navegar y actualizar modelos en el código de programa de capas](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
 ## <a name="properties-that-the-user-can-edit"></a>Propiedades que el usuario puede editar  
  **Preparación inicial**  
@@ -51,7 +36,7 @@ Cuando se escribe código de extensión para los diagramas de dependencia, puede
 >     ```xml  
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
 >     ```  
-> 3.  En el **Visual Studio Tools** sección del menú de inicio de aplicación de Visual Studio, abra **Developer símbolo**.  
+> 3.  En el **Visual Studio Tools** sección del menú de inicio de aplicación de Visual Studio, abra **símbolo**.  
 >   
 >      Especifique:  
 >   
@@ -77,7 +62,7 @@ public class MyProperty
 }  
 ```  
   
- Puede definir propiedades en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>o cualquiera de sus clases derivadas, que incluyen:</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>  
+ Puede definir propiedades en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> o cualquiera de sus clases derivadas, entre las que se incluyen:  
   
 -   `ILayerModel`: el modelo  
   
@@ -176,5 +161,4 @@ namespace MyNamespace
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Ampliar diagramas de dependencia](../modeling/extend-layer-diagrams.md)
-
+ [Ampliación de diagramas de dependencia](../modeling/extend-layer-diagrams.md)

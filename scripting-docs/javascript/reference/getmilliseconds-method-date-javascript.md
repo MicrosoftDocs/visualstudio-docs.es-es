@@ -1,53 +1,55 @@
 ---
-title: "getMilliseconds (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getMilliseconds"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "milisegundos"
-  - "getMilliseconds (método)"
+title: "getMilliseconds (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getMilliseconds
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- milliseconds
+- getMilliseconds method
 ms.assetid: 1b512146-1e8a-44a4-89da-6cc5338d15cb
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 33e5fc54dffbe06e47f0978e6cef94b1f650c90f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# getMilliseconds (M&#233;todo, Date de JavaScript)
-Obtiene los milisegundos de un fecha usando la hora local.  
+# <a name="getmilliseconds-method-date-javascript"></a>getMilliseconds (Método, Date de JavaScript)
+Obtiene los milisegundos de una fecha, mediante la hora local.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.getMilliseconds()   
 ```  
   
-#### Parámetros  
- La referencia obligatoria `dateObj` es un objeto `Date`.  
+#### <a name="parameters"></a>Parámetros  
+ La referencia a `dateObj` necesaria es un objeto `Date` .  
   
-## Valor devuelto  
- Devuelve los milisegundos de una fecha.  El valor puede variar de 0 a 999.  Si se ha creado una fecha sin especificar los milisegundos, el valor devuelto es 0.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve los milisegundos de una fecha. El valor puede oscilar entre 0 y 999. Si se ha construido una fecha sin especificar las milésimas de segundo, el valor devuelto es 0.  
   
-## Comentarios  
- Para obtener el número de milisegundos utilizando la hora universal coordinada \(UTC\), usa el método `getUTCMilliseconds`.  
+## <a name="remarks"></a>Comentarios  
+ Para obtener el número de milisegundos en horario Universal coordinado (UTC), use el `getUTCMilliseconds` método.  
   
-## Ejemplo  
- En el siguiente ejemplo se muestra cómo usar el método **getMilliseconds**.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo utilizar el **getMilliseconds** método.  
   
-```javascript  
+```JavaScript  
 var date = new Date("1/1/2001");  
 document.write(date.getMilliseconds());  
 document.write("<br/>");  
@@ -60,12 +62,12 @@ document.write(date.getMilliseconds());
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getUTCMilliseconds \(Método, Date\)](../../javascript/reference/getutcmilliseconds-method-date-javascript.md)   
- [setMilliseconds \(Método, Date\)](../../javascript/reference/setmilliseconds-method-date-javascript.md)   
- [setUTCMilliseconds \(Método, Date\)](../../javascript/reference/setutcmilliseconds-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getUTCMilliseconds (método, Date)](../../javascript/reference/getutcmilliseconds-method-date-javascript.md)   
+ [setMilliseconds (método, Date)](../../javascript/reference/setmilliseconds-method-date-javascript.md)   
+ [setUTCMilliseconds (Método, Date)](../../javascript/reference/setutcmilliseconds-method-date-javascript.md)

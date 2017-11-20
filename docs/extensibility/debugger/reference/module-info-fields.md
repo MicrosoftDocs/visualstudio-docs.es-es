@@ -1,122 +1,122 @@
 ---
-title: "MODULE_INFO_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_INFO_FIELDS"
-helpviewer_keywords: 
-  - "Enumeración MODULE_INFO_FIELDS"
+title: MODULE_INFO_FIELDS | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: MODULE_INFO_FIELDS
+helpviewer_keywords: MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 807c49d6bbfba4cec3a87e07e851c73723cf0792
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# MODULE_INFO_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Especifica marcadores para la información de módulos de depuración.  
+# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
+Especifica las marcas de la información del módulo de depuración.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
-```cpp#  
-enum enum_MODULE_INFO_FIELDS {   
-   MIF_NONE              = 0x0000,  
-   MIF_NAME              = 0x0001,  
-   MIF_URL               = 0x0002,  
-   MIF_VERSION           = 0x0004,  
-   MIF_DEBUGMESSAGE      = 0x0008,  
-   MIF_LOADADDRESS       = 0x0010,  
-   MIF_PREFFEREDADDRESS  = 0x0020,  
-   MIF_SIZE              = 0x0040,  
-   MIF_LOADORDER         = 0x0080,  
-   MIF_TIMESTAMP         = 0x0100,  
-   MIF_URLSYMBOLLOCATION = 0x0200,  
-   MIF_FLAGS             = 0x0400,  
-   MIF_ALLFIELDS         = 0x07ff  
+```cpp  
+enum enum_MODULE_INFO_FIELDS {   
+   MIF_NONE              = 0x0000,  
+   MIF_NAME              = 0x0001,  
+   MIF_URL               = 0x0002,  
+   MIF_VERSION           = 0x0004,  
+   MIF_DEBUGMESSAGE      = 0x0008,  
+   MIF_LOADADDRESS       = 0x0010,  
+   MIF_PREFFEREDADDRESS  = 0x0020,  
+   MIF_SIZE              = 0x0040,  
+   MIF_LOADORDER         = 0x0080,  
+   MIF_TIMESTAMP         = 0x0100,  
+   MIF_URLSYMBOLLOCATION = 0x0200,  
+   MIF_FLAGS             = 0x0400,  
+   MIF_ALLFIELDS         = 0x07ff  
 };  
 typedef DWORD MODULE_INFO_FIELDS;  
 ```  
   
-```c#  
-public enum enum_MODULE_INFO_FIELDS {   
-   MIF_NONE              = 0x0000,  
-   MIF_NAME              = 0x0001,  
-   MIF_URL               = 0x0002,  
-   MIF_VERSION           = 0x0004,  
-   MIF_DEBUGMESSAGE      = 0x0008,  
-   MIF_LOADADDRESS       = 0x0010,  
-   MIF_PREFFEREDADDRESS  = 0x0020,  
-   MIF_SIZE              = 0x0040,  
-   MIF_LOADORDER         = 0x0080,  
-   MIF_TIMESTAMP         = 0x0100,  
-   MIF_URLSYMBOLLOCATION = 0x0200,  
-   MIF_FLAGS             = 0x0400,  
-   MIF_ALLFIELDS         = 0x07ff  
+```csharp  
+public enum enum_MODULE_INFO_FIELDS {   
+   MIF_NONE              = 0x0000,  
+   MIF_NAME              = 0x0001,  
+   MIF_URL               = 0x0002,  
+   MIF_VERSION           = 0x0004,  
+   MIF_DEBUGMESSAGE      = 0x0008,  
+   MIF_LOADADDRESS       = 0x0010,  
+   MIF_PREFFEREDADDRESS  = 0x0020,  
+   MIF_SIZE              = 0x0040,  
+   MIF_LOADORDER         = 0x0080,  
+   MIF_TIMESTAMP         = 0x0100,  
+   MIF_URLSYMBOLLOCATION = 0x0200,  
+   MIF_FLAGS             = 0x0400,  
+   MIF_ALLFIELDS         = 0x07ff  
 };  
 ```  
   
-## Members  
- MIF\_NONE  
- Inicializa y el uso ninguno de los campos de la estructura.  
+## <a name="members"></a>Miembros  
+ MIF_NONE  
+ Inicializar o utilizar ninguno de los campos de la estructura.  
   
- MIF\_NAME  
- Inicializa y usan el campo de `m_bstrName` en la estructura de [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md) .  
+ MIF_NAME  
+ Inicializar o utilizar el `m_bstrName` campo el [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estructura.  
   
- MIF\_URL  
- Inicializa y usan el campo de `m_bstrUrl` en la estructura de `MODULE_INFO` .  
+ MIF_URL  
+ Inicializar o utilizar el `m_bstrUrl` campo el `MODULE_INFO` estructura.  
   
- MIF\_VERSION  
- Inicializa y usan el campo de `m_bstrVersion` en la estructura de `MODULE_INFO` .  
+ MIF_VERSION  
+ Inicializar o utilizar el `m_bstrVersion` campo el `MODULE_INFO` estructura.  
   
- MIF\_DEBUGMESSAGE  
- Inicializa y usan el campo de `m_bstrDebugMessage` en la estructura de `MODULE_INFO` .  
+ MIF_DEBUGMESSAGE  
+ Inicializar o utilizar el `m_bstrDebugMessage` campo el `MODULE_INFO` estructura.  
   
- MIF\_LOADADDRESS  
- Inicializa y usan el campo de `m_addrLoadAddress` en la estructura de `MODULE_INFO` .  
+ MIF_LOADADDRESS  
+ Inicializar o utilizar el `m_addrLoadAddress` campo el `MODULE_INFO` estructura.  
   
- MIF\_PREFFEREDADDRESS  
- Inicializa y usan el campo de `m_addrPreferredLoadAddress` en la estructura de `MODULE_INFO` .  
+ MIF_PREFFEREDADDRESS  
+ Inicializar o utilizar el `m_addrPreferredLoadAddress` campo el `MODULE_INFO` estructura.  
   
- MIF\_SIZE  
- Inicializa y usan el campo de `m_dwSize` en la estructura de `MODULE_INFO` .  
+ MIF_SIZE  
+ Inicializar o utilizar el `m_dwSize` campo el `MODULE_INFO` estructura.  
   
- MIF\_LOADORDER  
- Inicializa y usan el campo de `m_dwLoadOrder` en la estructura de `MODULE_INFO` .  
+ MIF_LOADORDER  
+ Inicializar o utilizar el `m_dwLoadOrder` campo el `MODULE_INFO` estructura.  
   
- MIF\_TIMESTAMP  
- Inicializa y usan el campo de `m_TimeStamp` en la estructura de `MODULE_INFO` .  
+ MIF_TIMESTAMP  
+ Inicializar o utilizar el `m_TimeStamp` campo el `MODULE_INFO` estructura.  
   
- MIF\_URLSYMBOLLOCATION  
- Inicializa y usan el campo de `m_bstrUrlSymbolLocation` en la estructura de `MODULE_INFO` .  
+ MIF_URLSYMBOLLOCATION  
+ Inicializar o utilizar el `m_bstrUrlSymbolLocation` campo el `MODULE_INFO` estructura.  
   
- MIF\_FLAGS  
- Inicializa y usan el campo de `m_dwModuleFlags` en la estructura de `MODULE_INFO` .  
+ MIF_FLAGS  
+ Inicializar o utilizar el `m_dwModuleFlags` campo el `MODULE_INFO` estructura.  
   
- MIF\_ALLFIELDS  
- Inicializa y el uso de todos los campos de la estructura de `MODULE_INFO` .  
+ MIF_ALLFIELDS  
+ Inicializar o utilizar todos los campos en el `MODULE_INFO` estructura.  
   
-## Comentarios  
- Estos valores se pasan como argumento al método de [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) para indicar qué campos de la estructura de [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md) se deben inicializar.  
+## <a name="remarks"></a>Comentarios  
+ Estos valores se pasan como argumento a la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) método para indicar qué campos de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) estructura deben inicializarse.  
   
- Esta configuración también se utilizan en la estructura de `MODULE_INFO` para indicar qué campos son utilizados y válidos.  
+ Estos valores también se usan en el `MODULE_INFO` estructura para indicar qué campos se utilizan y válido.  
   
- Estos marcadores se pueden combinar con `OR`bit a bit.  
+ Estas marcas se pueden combinar con un bit a bit `OR`.  
   
-## Requisitos  
- encabezado: msdbg.h  
+## <a name="requirements"></a>Requisitos  
+ Encabezado: msdbg.h  
   
- espacio de nombres: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Enumeraciones](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)   
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

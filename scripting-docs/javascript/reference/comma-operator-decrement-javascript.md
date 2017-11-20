@@ -1,50 +1,51 @@
 ---
-title: "Operador coma (,) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "%2C"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "coma (operador)"
+title: Operador de coma (,) (JavaScript) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '%2C'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: comma operator
 ms.assetid: 699fa0bf-cd0a-45ee-a291-2fbed4ecd470
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2cb504beefc5ce4c260ec8296e2cf097e17d349e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Operador coma (,) (JavaScript)
+# <a name="comma-operator--javascript"></a>Operador coma (,) (JavaScript)
 Hace que dos expresiones se ejecuten secuencialmente.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 expression1, expression2  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `expression1`  
  Cualquier expresión.  
   
  `expression2`  
  Cualquier expresión.  
   
-## Comentarios  
- El operador `,` hace que las expresiones se ejecuten de izquierda a derecha.  Un uso común del operador `,` es en la expresión de incremento de un bucle `for`.  Por ejemplo:  
+## <a name="remarks"></a>Comentarios  
+ El `,` operador hace que las expresiones que se ejecutarán en orden de izquierda a derecha. Un uso común de la `,` operador está en la expresión de incremento de un `for` bucle. Por ejemplo:  
   
-```javascript  
+```JavaScript  
 j=25;  
 for (i = 0; i < 10; i++, j++)  
 {  
@@ -52,12 +53,12 @@ for (i = 0; i < 10; i++, j++)
 }  
 ```  
   
- La instrucción `for` permite solo que se ejecute una única expresión al final de cada paso en un bucle.  El operador `,` permite que varias expresiones se traten como una sola expresión, por lo que ambas variables se pueden incrementar.  
+ El `for` instrucción permite solo una sola expresión que se ejecutará al final de cada paso a través de un bucle. El `,` operador permite varias expresiones se traten como una sola expresión, por lo que se pueden incrementar las dos variables.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Vea también  
- [for \(Instrucción\)](../../javascript/reference/for-statement-javascript.md)   
+## <a name="see-also"></a>Vea también  
+ [para la instrucción](../../javascript/reference/for-statement-javascript.md)   
  [Precedencia de operadores](../../javascript/operator-subtractprecedence-javascript.md)   
- [Resumen de operadores \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Resumen de operadores (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

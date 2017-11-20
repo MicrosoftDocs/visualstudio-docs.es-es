@@ -1,55 +1,57 @@
 ---
-title: "getUTCDay (M&#233;todo, Date de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "getUTCDay"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Date (objeto)"
-  - "fechas, UTC"
-  - "Fechas UTC, devolver"
-  - "getUTCDay (método)"
+title: "getUTCDay (método, Date) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: getUTCDay
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Date object
+- dates, UTC
+- UTC dates, returning
+- getUTCDay method
 ms.assetid: 2fceb5b0-6f77-4919-82c3-0877fd55bacb
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6ee9953a7abf548ef15cc124e09b914af360ca23
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# getUTCDay (M&#233;todo, Date de JavaScript)
-Obtiene el día de la semana utilizando el horario universal coordinado \(UTC\).  
+# <a name="getutcday-method-date-javascript"></a>getUTCDay (Método, Date de JavaScript)
+Obtiene el día de la semana mediante la hora Universal coordinada (UTC).  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 dateObj.getUTCDay()   
 ```  
   
-#### Parámetros  
- La referencia obligatoria `dateObj` es un objeto `Date`.  
+#### <a name="parameters"></a>Parámetros  
+ La referencia a `dateObj` necesaria es un objeto `Date` .  
   
-## Valor devuelto  
- Devuelve un entero comprendido entre 0 \(domingo\) y 6 \(sábado\) que representa el día de la semana.  
+## <a name="return-value"></a>Valor devuelto  
+ Devuelve un entero comprendido entre 0 (domingo) y 6 (sábado) que representa el día de la semana.  
   
-## Comentarios  
- Para obtener el día de la semana utilizando la hora local, usa el método `getDate`.  
+## <a name="remarks"></a>Comentarios  
+ Para obtener el día de la semana mediante la hora local, use la `getDate` método.  
   
-## Ejemplo  
- En el siguiente ejemplo, se muestra cómo usar el método `getUTCDay`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo, se muestra cómo utilizar el método `getUTCDay`.  
   
-```javascript  
+```JavaScript  
 var date = new Date("2/6/2001");  
 var day = date.getUTCDay();  
 document.write(day);  
@@ -58,10 +60,10 @@ document.write(day);
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [Date \(Objeto\)](../../javascript/reference/date-object-javascript.md)  
+ **Se aplica a**: [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## Vea también  
- [getDay \(Método, Date\)](../../javascript/reference/getday-method-date-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [getDay (Método, Date)](../../javascript/reference/getday-method-date-javascript.md)

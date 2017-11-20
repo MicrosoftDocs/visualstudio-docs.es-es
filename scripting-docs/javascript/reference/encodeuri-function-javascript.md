@@ -1,33 +1,34 @@
 ---
-title: "encodeURI (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "encodeURI"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "encodeURI (método)"
+title: "encodeURI (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: encodeURI
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: encodeURI method
 ms.assetid: 17bab5a2-bcd4-46c2-8b52-b2b5a0ed98a3
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8cf9bbdf34c0481c889d1176bc32ab0246a333a4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# encodeURI (Funci&#243;n de JavaScript)
-Codifica una cadena de texto como identificador de recursos uniforme \(URI\) válido.  
+# <a name="encodeuri-function-javascript"></a>encodeURI (Función de JavaScript)
+Codifica una cadena de texto como un identificador uniforme de recursos (URI) válido  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
@@ -37,15 +38,15 @@ URIString
   
 ```  
   
-## Comentarios  
- El argumento obligatorio `URIString` es un valor que representa un URI codificado.  
+## <a name="remarks"></a>Comentarios  
+ Requerido `URIString` argumento es un valor que representa un identificador URI codificado.  
   
- La función `encodeURI` devuelve un URI codificado.  Si pasas el resultado a `decodeURI`, se devuelve la cadena original.  La función `encodeURI` no codifica los siguientes caracteres: ":", "\/", ";" y "?".  Usa el método `encodeURIComponent` para codificar estos caracteres.  
+ El `encodeURI` función devuelve un identificador URI codificado. Si se pasa el resultado a `decodeURI`, se devuelve la cadena original. El `encodeURI` función no codifica los siguientes caracteres: ":", "/", ";" y "?". Use `encodeURIComponent` para codificar estos caracteres.  
   
-## Ejemplo  
- El código siguiente codifica y descodifica un URI.  
+## <a name="example"></a>Ejemplo  
+ El código siguiente se codifica en primer lugar y, a continuación, descodifica un URI.  
   
-```javascript  
+```JavaScript  
 var uriEncode = encodeURI ("http://www.Not a URL.com");  
 var uriDecode = decodeURIComponent(uriEncode);  
   
@@ -58,9 +59,9 @@ document.write(uriDecode);
 // http://www.Not a URL.com  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## Vea también  
- [decodeURI \(Función\)](../../javascript/reference/decodeuri-function-javascript.md)   
- [decodeURIComponent \(Función\)](../../javascript/reference/decodeuricomponent-function-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [decodeURI (función)](../../javascript/reference/decodeuri-function-javascript.md)   
+ [DecodeURIComponent (Función)](../../javascript/reference/decodeuricomponent-function-javascript.md)

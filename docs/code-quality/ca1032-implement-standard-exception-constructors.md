@@ -1,11 +1,10 @@
 ---
-title: 'CA1032: Implement standard exception constructors | Microsoft Docs'
+title: "CA1032: Implementar constructores de excepción estándar | Documentos de Microsoft"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,63 +14,47 @@ helpviewer_keywords:
 - CA1032
 - ImplementStandardExceptionConstructors
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 42fd1ecaab987ba35fe180c99a6f54f48a30067c
-ms.contentlocale: es-es
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7300465ce9cef97cf322a7667e775852e22edb4e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implement standard exception constructors
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementar constructores de excepción estándar
 |||  
 |-|-|  
 |TypeName|ImplementStandardExceptionConstructors|  
-|CheckId|CA1032|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Identificador de comprobación|CA1032|  
+|Categoría|Microsoft.Design|  
+|Cambio problemático|Poco problemático|  
   
-## <a name="cause"></a>Cause  
- A type extends <xref:System.Exception?displayProperty=fullName> and does not declare all the required constructors.  
+## <a name="cause"></a>Motivo  
+ Un tipo extiende <xref:System.Exception?displayProperty=fullName> y no declara todos los constructores necesarios.  
   
-## <a name="rule-description"></a>Rule Description  
- Exception types must implement the following constructors:  
+## <a name="rule-description"></a>Descripción de la regla  
+ Tipos de excepción deben implementar los constructores siguientes:  
   
--   public NewException()  
+-   NewException() público  
   
--   public NewException(string)  
+-   NewException(string) público  
   
--   public NewException(string, Exception)  
+-   pública NewException (string, excepción)  
   
--   protected or private NewException(SerializationInfo, StreamingContext)  
+-   Protected o private NewException (SerializationInfo, StreamingContext)  
   
- Failure to provide the full set of constructors can make it difficult to correctly handle exceptions. For example, the constructor that has the signature `NewException(string, Exception)` is used to create exceptions that are caused by other exceptions. Without this constructor you cannot create and throw an instance of your custom exception that contains an inner (nested) exception, which is what managed code should do in such a situation. The first three exception constructors are public by convention. The fourth constructor is protected in unsealed classes, and private in sealed classes. For more information, see [CA2229: Implement serialization constructors](../code-quality/ca2229-implement-serialization-constructors.md)  
+ El error al proporcionar el conjunto completo de constructores puede dificultar el control correcto de las excepciones. Por ejemplo, el constructor que tiene la firma `NewException(string, Exception)` se utiliza para crear las excepciones causadas por otras excepciones. Sin este constructor no puede crear y producir una instancia de la excepción personalizada que contiene una excepción interna (anidada), que es el código administrado debe hacer en esta situación. Los primeros tres constructores de excepción son públicos por convención. El cuarto constructor está protegido en clases no selladas y es privado en clases selladas. Para obtener más información, consulte [CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, add the missing constructors to the exception, and make sure that they have the correct accessibility.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Para corregir una infracción de esta regla, agregue los constructores que faltan a la excepción y asegúrese de que tienen la accesibilidad correcta.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the violation is caused by using a different access level for the public constructors.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir una advertencia de esta regla cuando se produce la infracción mediante el uso de un nivel de acceso diferente para los constructores públicos.  
   
-## <a name="example"></a>Example  
- The following example contains an exception type that violates this rule and an exception type that is correctly implemented.  
+## <a name="example"></a>Ejemplo  
+ El ejemplo siguiente contiene un tipo de excepción que infringe esta regla y un tipo de excepción que se haya implementado correctamente.  
   
  [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]

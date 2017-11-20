@@ -1,36 +1,39 @@
 ---
-title: "IActiveScriptDebug (Interfaz) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IActiveScriptDebug (interfaz)"
+title: IActiveScriptDebug (interfaz) | Documentos de Microsoft
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IActiveScriptDebug interface
 ms.assetid: e3e28cba-ee08-4a52-973a-b74be488c348
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a1e1d0c1cf51c63f1bb3fcd90ae72520da907e50
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptDebug (Interfaz)
-Implementado por los motores de scripts que admiten la depuración.  Normalmente, un objeto que implementa la interfaz de `IActiveScriptDebug` también implementa la interfaz de `IActiveScript` .  Si éste es el caso, llame al método de `IActiveScript::QueryInterface` para obtener la interfaz de `IActiveScriptDebug` .  
+# <a name="iactivescriptdebug-interface"></a>IActiveScriptDebug (Interfaz)
+Se implementa mediante motores de scripts que admiten la depuración. Normalmente, un objeto que implementa el `IActiveScriptDebug` interfaz también implementa el `IActiveScript` interfaz. Si este es el caso, llame a la `IActiveScript::QueryInterface` método para obtener el `IActiveScriptDebug` interfaz.  
   
- La interfaz de `IActiveScriptDebug` proporciona los medios para:  
+ El `IActiveScriptDebug` interfaz proporciona los medios para:  
   
--   Host inteligentes adopte el control administración de documentos.  
+-   Hosts inteligentes para ocuparse de administración de documentos.  
   
--   Administrador de depuración para sincronizar la depuración de motores de scripts.  
+-   Administrador de depuración de procesos para sincronizar la depuración de varios motores de script.  
   
- Además de los métodos heredados de `IUnknown`, la interfaz `IActiveScriptDebug` expone los métodos siguientes.  
+ Además de los métodos heredados de `IUnknown`, el `IActiveScriptDebug` interfaz expone los métodos siguientes.  
   
-## métodos en el orden de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)|Devuelve los atributos de texto de un bloque arbitrario de texto del script.|  
+|[IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)|Devuelve los atributos de texto de un bloque de texto de la secuencia de comandos arbitrario.|  
 |[IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)|Devuelve los atributos de texto para un scriptlet arbitrario.|  
-|[IActiveScriptDebug::EnumCodeContextsOfPosition](../../winscript/reference/iactivescriptdebug-enumcodecontextsofposition.md)|Delegados a `IDebugDocumentContext::EnumCodeContexts`.|
+|[IActiveScriptDebug::EnumCodeContextsOfPosition](../../winscript/reference/iactivescriptdebug-enumcodecontextsofposition.md)|Delega en `IDebugDocumentContext::EnumCodeContexts`.|

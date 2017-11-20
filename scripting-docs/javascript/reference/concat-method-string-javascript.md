@@ -1,54 +1,56 @@
 ---
-title: "concat (M&#233;todo, String de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "concat"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "concat (método, String)"
-  - "Concat (método)"
+title: "concat (método, String) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: concat
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- concat method (String)
+- Concat method
 ms.assetid: 5d28ebb2-d534-4179-9297-a4c821ee9f24
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1b6419cc6404e06fc780802a30a3b4add8320881
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# concat (M&#233;todo, String de JavaScript)
+# <a name="concat-method-string-javascript"></a>concat (Método, String de JavaScript)
 Devuelve una cadena que contiene la concatenación de dos o más cadenas.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 string1. concat([string2[, string3[, . . . [, stringN]]]])  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `string1`  
- Obligatorio.  Objeto `String` o literal de cadena con que se concatenan todas las demás cadenas especificadas.  
+ Obligatorio. La `String` objeto o literal de cadena para que todos los demás especifica cadenas se concatenan.  
   
  `string2,. . ., stringN`  
- Opcional.  Las cadenas que se van a anexar al final de `string1`.  
+ Opcional. Las cadenas que se anexará al final de `string1`.  
   
-## Comentarios  
- El resultado del método `concat` es equivalente a: `result` \= `string1` \+ `string2` \+ `string3` \+ `stringN`.  Un cambio de valor en una cadena de origen o de resultado no afecta al valor de la otra cadena.  Si alguno de los argumentos no es una cadena, se convertirá en cadena antes de concatenarse con `string1`.  
+## <a name="remarks"></a>Comentarios  
+ El resultado de la `concat` método es equivalente a: `result`  =  `string1`  +  `string2`  +  `string3`  +  `stringN`. Un cambio del valor de cadena de un origen o el resultado no afecta al valor en la otra cadena. Si alguno de los argumentos no son cadenas, primero se convierten en cadenas antes de concatenarse para `string1`.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso del método `concat` cuando se usa con una cadena:  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la `concat` método cuando se utiliza con una cadena:  
   
-```javascript  
+```JavaScript  
 var str1 = "ABCD"  
 var str2 = "EFGH";  
 var str3 = "1234";  
@@ -59,10 +61,10 @@ document.write(str1.concat(str2, str3, str4));
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **Se aplica a**: [String \(Objeto\)](../../javascript/reference/string-object-javascript.md)  
+ **Se aplica a**: [objeto de cadena](../../javascript/reference/string-object-javascript.md)  
   
-## Vea también  
- [Operador de suma \(\+\)](../../javascript/reference/addition-operator-decrement-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [Operador de suma (+)](../../javascript/reference/addition-operator-decrement-javascript.md)

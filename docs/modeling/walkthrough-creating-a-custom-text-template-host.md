@@ -1,30 +1,32 @@
 ---
-title: "Walkthrough: Creating a Custom Text Template Host | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "walkthroughs [text templates], custom host"
-  - "text templates, custom host walkthrough"
+title: 'Tutorial: Crear un Host de plantilla de texto personalizado | Documentos de Microsoft'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- walkthroughs [text templates], custom host
+- text templates, custom host walkthrough
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
-caps.latest.revision: 51
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 51
+caps.latest.revision: "51"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 40e8529dd439060172ead1ae2f68ac3052345eb4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Walkthrough: Creating a Custom Text Template Host
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Un *host de* *plantillas de texto* proporciona un entorno que permite que se ejecute el *motor de transformación de plantillas de texto*.  El host es responsable de administrar la interacción del motor con el sistema de archivos.  El motor o el *procesador de directivas*  que necesita un archivo o un ensamblado puede solicitar un recurso al host.  Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado.  Para obtener más información, vea [The Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).  
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
+A *plantilla de texto**host* proporciona un entorno que permite el *motor de transformación de plantillas de texto* para que se ejecute. El host es responsable de administrar la interacción del motor con el sistema de archivos. El motor o *procesador de directivas* que necesita un archivo o un ensamblado puede solicitar un recurso desde el host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, consulte [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).  
   
- Puede escribir un host personalizado si desea utilizar la funcionalidad de *transformación de plantillas de texto* fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o si desea integrar esa funcionalidad en herramientas personalizadas.  Para crear un host personalizado, debe crear una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  Para consultar la documentación de los métodos individuales, vea <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
+ Puede escribir un host personalizado si desea usar el *transformación de plantillas de texto* fuera de la funcionalidad de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o si desea integrar esa funcionalidad en herramientas personalizadas. Para crear un host personalizado, debe crear una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Para consultar la documentación de los métodos individuales, vea <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  Si está escribiendo una extensión o paquete de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], considere la posibilidad de utilizar el servicio de plantillas de texto en lugar de crear su propio host.  Para obtener más información, vea [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+>  Si está escribiendo una extensión o paquete de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], considere la posibilidad de utilizar el servicio de plantillas de texto en lugar de crear su propio host. Para obtener más información, consulte [invocar la transformación de texto en una extensión de VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  Las tareas que se ilustran en este tutorial son las siguientes:  
   
@@ -32,29 +34,29 @@ Un *host de* *plantillas de texto* proporciona un entorno que permite que se eje
   
 -   Probar el host personalizado.  
   
-## Requisitos previos  
+## <a name="prerequisites"></a>Requisitos previos  
  Para completar este tutorial, hay que disponer de lo siguiente:  
   
 -   Visual Studio 2010 o versiones posteriores  
   
--   SDK de Visual Studio  
+-   Visual Studio SDK  
   
-## Crear un host de plantilla de texto personalizado  
- En este tutorial, creará un host personalizado en una aplicación ejecutable a la que se puede llamar desde la línea de comandos.  La aplicación acepta un archivo de plantilla de texto como argumento, lee la plantilla, llama al motor para transformar la plantilla y muestra cualquier error que se produzca en la ventana del símbolo del sistema.  
+## <a name="creating-a-custom-text-template-host"></a>Crear un host de plantilla de texto personalizado  
+ En este tutorial, creará un host personalizado en una aplicación ejecutable a la que se puede llamar desde la línea de comandos. La aplicación acepta un archivo de plantilla de texto como argumento, lee la plantilla, llama al motor para transformar la plantilla y muestra cualquier error que se produzca en la ventana del símbolo del sistema.  
   
-#### Para crear un host personalizado  
+#### <a name="to-create-a-custom-host"></a>Para crear un host personalizado  
   
-1.  En Visual Studio, cree una nueva aplicación de consola de Visual Basic o C\# con el nombre CustomHost.  
+1.  En Visual Studio, cree una nueva aplicación de consola de Visual Basic o C# con el nombre CustomHost.  
   
 2.  Agregue referencias a los siguientes ensamblados:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
   
     -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 y versiones posteriores**  
   
 3.  Reemplace el código del archivo Program.cs o Module1.vb con el siguiente código:  
   
-    ```c#  
+    ```csharp  
     using System;  
     using System.IO;  
     using System.CodeDom.Compiler;  
@@ -404,7 +406,7 @@ Un *host de* *plantillas de texto* proporciona un entorno que permite que se eje
     }  
     ```  
   
-    ```vb#  
+    ```vb  
     Imports System  
     Imports System.IO  
     Imports System.CodeDom.Compiler  
@@ -711,27 +713,27 @@ Un *host de* *plantillas de texto* proporciona un entorno que permite que se eje
     End Namespace  
     ```  
   
-4.  Solamente en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], abra el menú **Proyecto** y haga clic en **Propiedades de CustomHost**.  En la lista **Objeto de inicio**, haga clic en **CustomHost.Program**.  
+4.  Para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] solo, abra la **proyecto** menú y haga clic en **propiedades de CustomHost**. En el **objeto de inicio** lista, haga clic en **CustomHost.Program**.  
   
-5.  En el menú **Archivo**, haga clic en **Guardar todo**.  
+5.  En el **archivo** menú, haga clic en **guardar todo**.  
   
-6.  En el menú **Compilar**, haga clic en **Compilar solución**.  
+6.  En el menú **Compilar** , haga clic en **Compilar solución**.  
   
-## Probar el host personalizado  
+## <a name="testing-the-custom-host"></a>Probar el host personalizado  
  Para probar el host personalizado, escriba una plantilla de texto, ejecute el host personalizado, pásele el nombre de la plantilla de texto y compruebe que la plantilla se transforma.  
   
-#### Para crear una plantilla de texto para probar el host personalizado  
+#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para crear una plantilla de texto para probar el host personalizado  
   
-1.  Cree un archivo de texto y denomínelo `TestTemplate.tt`.  
+1.  Crear un archivo de texto y asígnele el nombre `TestTemplate.tt`.  
   
-     Puede usar cualquier editor de texto \(por ejemplo, Bloc de notas\) para crear el archivo.  
+     Puede usar cualquier editor de texto (por ejemplo, Bloc de notas) para crear el archivo.  
   
 2.  Agregue el siguiente código al archivo:  
   
     > [!NOTE]
     >  El lenguaje de programación de la plantilla de texto no tiene que coincidir con el lenguaje del host personalizado.  
   
-    ```c#  
+    ```csharp  
     Text Template Host Test  
   
     <#@ template debug="true" #>  
@@ -749,7 +751,7 @@ Un *host de* *plantillas de texto* proporciona un entorno que permite que se eje
     #>  
     ```  
   
-    ```vb#  
+    ```vb  
     Text Template Host Test  
   
     <#@ template debug="true" language="VB"#>  
@@ -771,7 +773,7 @@ Un *host de* *plantillas de texto* proporciona un entorno que permite que se eje
   
 3.  Guarde y cierre el archivo.  
   
-#### Para probar el host personalizado  
+#### <a name="to-test-the-custom-host"></a>Para probar el host personalizado  
   
 1.  Abra la ventana del símbolo del sistema.  
   
@@ -782,7 +784,7 @@ Un *host de* *plantillas de texto* proporciona un entorno que permite que se eje
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en el **Explorador de Windows** y arrastrarlo a la ventana del símbolo del sistema.  
+    >  En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en **el Explorador de Windows** y, a continuación, arrastre el archivo en la ventana de símbolo del sistema.  
   
 3.  Escriba un espacio.  
   
@@ -793,11 +795,11 @@ Un *host de* *plantillas de texto* proporciona un entorno que permite que se eje
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  En lugar de escribir la dirección, puede ir al archivo TestTemplate.tt en el **Explorador de Windows** y arrastrarlo a la ventana del símbolo del sistema.  
+    >  En lugar de escribir la dirección, puede examinar el archivo TestTemplate.tt en **el Explorador de Windows** y, a continuación, arrastre el archivo en la ventana de símbolo del sistema.  
   
      La aplicación host personalizada se ejecuta y completa el proceso de transformación de la plantilla de texto.  
   
-5.  En el **Explorador de Windows**, vaya a la carpeta que contiene el archivo TestTemplate.tt.  
+5.  En **el Explorador de Windows**, vaya a la carpeta que contiene el archivo TestTemplate.tt.  
   
      Esta carpeta también contiene el archivo TestTemplate1.txt.  
   
@@ -813,8 +815,8 @@ Un *host de* *plantillas de texto* proporciona un entorno que permite que se eje
     This is a test  
     ```  
   
-## Pasos siguientes  
- En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica.  Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados.  Para obtener más información, vea [Tutorial: Conectar un host a un procesador de directivas personalizadas](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+## <a name="next-steps"></a>Pasos siguientes  
+ En este tutorial, creó un host de transformación de plantillas de texto que admite la funcionalidad de transformación básica. Puede expandir el host para admitir plantillas de texto que llamen a procesadores de directivas personalizados o generados. Para obtener más información, consulte [Tutorial: conectar un Host a un procesador de directivas generado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

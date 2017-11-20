@@ -1,57 +1,59 @@
 ---
-title: "eval (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "eval"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "eval (función)"
-  - "análisis, código"
-  - "analizador"
+title: "Eval (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: eval
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- eval function
+- parsing, code
+- parser
 ms.assetid: 85587e39-9325-4b75-b9f9-9d7d475a2120
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 388e486f58bb70fd192701060a5faefaed8bd98e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# eval (Funci&#243;n de JavaScript)
-Evalúa código [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] y lo ejecuta.  
+# <a name="eval-function-javascript"></a>eval (Función de JavaScript)
+Se evalúa como [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] de código y lo ejecuta.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 eval(codeString)   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `codeString`  
- Obligatorio.  Valor `String` que contiene código válido de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+ Obligatorio. A `String` valor que contiene válido [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] código.  
   
-## Comentarios  
- La función `eval` habilita la ejecución dinámica de código fuente de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+## <a name="remarks"></a>Comentarios  
+ El `eval` función permite la ejecución dinámica de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] el código fuente.  
   
- Cadena `codeString` analizada por el analizador de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] y ejecutada.  
+ El `codeString` cadena se analiza el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] analizador y ejecuta.  
   
- El código pasado a la función `eval` se ejecuta en el mismo contexto que la llamada a la función `eval`.  
+ El código ha pasado a la `eval` función se ejecuta en el mismo contexto que la llamada a la `eval` (función).  
   
- Siempre que sea posible, usa [JSON.parse \(Función\)](../../javascript/reference/json-parse-function-javascript.md) para deserializar el texto de la notación de objetos JavaScript \(JSON\).  La función `JSON.parse` es más segura y se ejecuta más rápidamente que la función `eval`.  
+ Siempre que sea posible, utilice la [JSON.parse (función)](../../javascript/reference/json-parse-function-javascript.md) deserializar texto JavaScript Object Notation (JSON). El `JSON.parse` función es más seguro y se ejecuta más rápido que el `eval` función.  
   
-## Ejemplo  
- En el código siguiente se inicializa la variable `myDate` en una fecha de prueba.  
+## <a name="example"></a>Ejemplo  
+ El código siguiente inicializa la variable `myDate` a una fecha de prueba.  
   
-```javascript  
+```JavaScript  
 var dateFn = "Date(1971,3,8)";  
 var myDate;  
 eval("myDate = new " + dateFn + ";");  
@@ -61,10 +63,10 @@ document.write(myDate);
 // Output: Thu Apr 8 00:00:00 PDT 1971  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Se aplica a**: [Objeto Global](../../javascript/reference/global-object-javascript.md)  
+ **Se aplica a**: [Global (objeto)](../../javascript/reference/global-object-javascript.md)  
   
-## Vea también  
- [String \(Objeto\)](../../javascript/reference/string-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [String (Objeto)](../../javascript/reference/string-object-javascript.md)

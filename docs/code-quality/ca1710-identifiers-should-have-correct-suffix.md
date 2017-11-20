@@ -1,30 +1,30 @@
 ---
-title: "CA1710: Los identificadores deber&#237;an tener el sufijo correcto | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1710"
-  - "IdentifiersShouldHaveCorrectSuffix"
-helpviewer_keywords: 
-  - "IdentifiersShouldHaveCorrectSuffix"
-  - "CA1710"
+title: "CA1710: Los identificadores deberían tener el sufijo correcto | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1710
+- IdentifiersShouldHaveCorrectSuffix
+helpviewer_keywords:
+- IdentifiersShouldHaveCorrectSuffix
+- CA1710
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
-caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4fd4f23ab77e2b810d5064bd45e9f7d530e9844e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CA1710: Los identificadores deber&#237;an tener el sufijo correcto
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deberían tener el sufijo correcto
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldHaveCorrectSuffix|  
@@ -32,18 +32,18 @@ manager: "wpickett"
 |Categoría|Microsoft.Naming|  
 |Cambio problemático|Problemático|  
   
-## Motivo  
+## <a name="cause"></a>Motivo  
  Un identificador no tiene el sufijo correcto.  
   
-## Descripción de la regla  
- Por convención, los nombres de tipos que extienden determinados tipos base o que implementan algunas interfaces, o tipos derivados de estos tipos, tienen un sufijo asociado al tipo base o a la interfaz.  
+## <a name="rule-description"></a>Descripción de la regla  
+ Por convención, los nombres de tipos que extienden determinados tipos base o que implementan algunas interfaces, o tipos derivados de estos tipos, tienen un sufijo asociado al tipo base o interfaz.  
   
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime.  Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
+ Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
   
- La tabla siguiente muestra los tipos base e interfaces con sufijos asociados.  
+ En la tabla siguiente se enumera los tipos base e interfaces que tienen asociados sufijos.  
   
-|Tipo base\/Interfaz|Sufijo|  
-|-------------------------|------------|  
+|Tipo base/Interfaz|Sufijo|  
+|--------------------------|------------|  
 |<xref:System.Attribute?displayProperty=fullName>|Atributo|  
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|  
 |<xref:System.Exception?displayProperty=fullName>|Excepción|  
@@ -56,42 +56,42 @@ manager: "wpickett"
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|  
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|  
 |<xref:System.Data.DataTable?displayProperty=fullName>|Colección o DataTable|  
-|<xref:System.IO.Stream?displayProperty=fullName>|Stream|  
+|<xref:System.IO.Stream?displayProperty=fullName>|Secuencia|  
 |<xref:System.Security.IPermission?displayProperty=fullName>|Permiso|  
-|<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condition|  
+|<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condición|  
 |Un delegado de controlador de eventos.|EventHandler|  
   
- Los tipos que implementan <xref:System.Collections.ICollection> y que son un tipo de estructura de datos generalizada, como un diccionario, un pila o cola, son nombres permitidos que proporcionan información significativa sobre el uso que se le va a dar al tipo.  
+ Los tipos que implementan <xref:System.Collections.ICollection> y son un tipo generalizado de estructura de datos, como un diccionario, una pila o una cola, se permiten nombres que proporcione información significativa sobre el uso previsto del tipo.  
   
- Los tipos que implementan <xref:System.Collections.ICollection> y que forman parte de la colección de elementos específicos tienen nombres que terminan con la palabra "Collection".  Por ejemplo, una colección de objetos <xref:System.Collections.Queue> tendría el nombre "QueueCollection".  El sufijo "Collection" significa que los miembros de la colección se pueden enumerar mediante la instrucción `foreach` \(`For Each` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\).  
+ Los tipos que implementan <xref:System.Collections.ICollection> y son una colección de elementos específicos tienen nombres que terminan con la palabra "Collection". Por ejemplo, una colección de <xref:System.Collections.Queue> objetos tendría el nombre "QueueCollection". El sufijo "Collection" significa que se pueden enumerar los miembros de la colección utilizando la `foreach` (`For Each` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrucción.  
   
- Los tipos que implementan <xref:System.Collections.IDictionary> tienen nombres que finalizan con la palabra "Dictionary" incluso si el tipo también implementa <xref:System.Collections.IEnumerable> o <xref:System.Collections.ICollection>.  Las convenciones de nomenclatura de uso de los sufijos "Collection" y "Dictionary" permiten a los usuarios distinguir entre los dos modelos de enumeración siguientes.  
+ Los tipos que implementan <xref:System.Collections.IDictionary> tienen nombres que terminan con la palabra "Dictionary" incluso si el tipo también implementa <xref:System.Collections.IEnumerable> o <xref:System.Collections.ICollection>. Las convenciones de nomenclatura de sufijo "Collection" y "Dictionary" permiten a los usuarios distinguir entre los siguientes dos modelos de enumeración.  
   
- Los tipos con el sufijo "Collection" siguen este modelo de enumeración.  
+ Los tipos con el sufijo "Collection" siguen este patrón de enumeración.  
   
 ```  
 foreach(SomeType x in SomeCollection) { }  
 ```  
   
- Los tipos con el sufijo "Dictionary" siguen este modelo de enumeración.  
+ Los tipos con el sufijo "Dictionary" siguen este patrón de enumeración.  
   
 ```  
 foreach(SomeType x in SomeDictionary.Values) { }  
 ```  
   
- Un objeto <xref:System.Data.DataSet> está compuesto de una colección de objetos <xref:System.Data.DataTable>, compuestos de colecciones de <xref:System.Data.DataColumn?displayProperty=fullName> y objetos <xref:System.Data.DataRow?displayProperty=fullName>, entre otros.  Estas colecciones implementan <xref:System.Collections.ICollection> mediante de la clase base <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>.  
+ A <xref:System.Data.DataSet> objeto consta de una colección de <xref:System.Data.DataTable> objetos, que consisten en colecciones de <xref:System.Data.DataColumn?displayProperty=fullName> y <xref:System.Data.DataRow?displayProperty=fullName> objetos, entre otros. Estas colecciones implementan <xref:System.Collections.ICollection> a través de la base de <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> clase.  
   
-## Cómo corregir infracciones  
- Cambie el nombre del tipo para aplicar el sufijo con el término correcto.  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
+ Cambie el nombre del tipo para que se utiliza como sufijo con el término correcto.  
   
-## Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia al utilizar el sufijo "Collection" si el tipo tiene una estructura de datos generalizada que podría extenderse o contener una conjunto arbitrario de elementos diversos.  En ese caso, podría tener sentido un nombre que proporciona información significativa sobre la implementación, rendimiento u otras características de la estructura de datos \(por ejemplo, BinaryTree\).  En los casos en que un tipo representa una colección de un tipo específico \(por ejemplo, StringCollection\), no suprima ninguna advertencia de esta regla porque el sufijo indica que el tipo puede enumerarse mediante una instrucción `foreach`.  
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+ Es seguro suprimir una advertencia al utilizar el sufijo "Collection" si el tipo es una estructura de datos generalizada que podría ampliarse o que contendrá un conjunto arbitrario de elementos diversos. En este caso, un nombre que proporcione información significativa sobre la implementación, rendimiento u otras características de la estructura de datos podría tener sentido (por ejemplo, BinaryTree). En casos donde el tipo representa una colección de un tipo específico (por ejemplo, StringCollection), no suprima las advertencias de esta regla porque el sufijo indica que el tipo se puede enumerar mediante el uso de un `foreach` instrucción.  
   
- En caso de otros sufijos, no suprima ninguna advertencia de esta regla.  El sufijo permite el uso que se le pretende dar resulte evidente por el nombre de tipo.  
+ Para otros sufijos, no suprima las advertencias de esta regla. El sufijo permite el uso previsto sea evidente a partir del nombre de tipo.  
   
-## Reglas relacionadas  
+## <a name="related-rules"></a>Reglas relacionadas  
  [CA1711: Los identificadores no deberían tener el sufijo incorrecto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
   
-## Vea también  
- [Atributos](../Topic/Attributes1.md)   
- [Eventos y delegados](http://msdn.microsoft.com/es-es/d98fd58b-fa4f-4598-8378-addf4355a115)
+## <a name="see-also"></a>Vea también  
+ [Attributes](/dotnet/standard/design-guidelines/attributes)  (Atributos)  
+ [Controlar y provocar eventos](/dotnet/standard/events/index)  

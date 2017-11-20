@@ -1,45 +1,47 @@
 ---
-title: "Operadores de comparaci&#243;n (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Comparison"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "operadores de comparación, script"
-  - "operador mayor que"
-  - "operadores de comparación"
-  - "operador mayor o igual que"
-  - "operador de desigualdad"
-  - "operador de identidad"
+title: "Operadores de comparación (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Comparison
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- comparison operators, script
+- greater than operator
+- comparison operators
+- greater than or equal to operator
+- inequity operator
+- identity operator
 ms.assetid: 084f90f0-d010-47cf-96dd-13d637fc9b68
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 067d570523fc2241b4f2e0442785a49aedb15200
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Operadores de comparaci&#243;n (JavaScript)
-Devuelve un valor de tipo Boolean que indica el resultado de la comparación.  
+# <a name="comparison-operators-javascript"></a>Operadores de comparación (JavaScript)
+Devuelve un valor booleano que indica el resultado de la comparación.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 expression1 comparisonoperator expression2  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `expression1`  
  Cualquier expresión.  
   
@@ -49,18 +51,18 @@ expression1 comparisonoperator expression2
  `expression2`  
  Cualquier expresión.  
   
-## Comentarios  
- Al comparar cadenas, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utiliza el valor de los caracteres Unicode de la expresión de cadena.  
+## <a name="remarks"></a>Comentarios  
+ Cuando se comparan cadenas, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] utiliza el valor de carácter Unicode de la expresión de cadena.  
   
- En el siguiente ejemplo se describe cómo se comportan los diversos grupos de operadores según los tipos y valores de `expression1` y `expression2`:  
+ La continuación describe cómo se comportan los diferentes grupos de operadores dependiendo de los tipos y valores de `expression1` y `expression2`:  
   
- Operadores relacionales: `<`, `>`, `<=`, `>=`  
+ Operadores relacionales: `<`, `>`, `<=`,`>=`  
   
--   Intenta convertir `expression1` y `expression2` en números.  
+-   Intenta convertir ambos `expression1` y `expression2` en números.  
   
--   Si ambas expresiones son cadenas, realiza una comparación de cadenas.  
+-   Si ambas expresiones son cadenas, realice una comparación de cadenas.  
   
--   Si cualquiera de las dos expresiones es `NaN`, devuelve `false`.  
+-   Si ambas expresiones son `NaN`, return `false`.  
   
 -   Cero negativo es igual a cero positivo.  
   
@@ -68,27 +70,27 @@ expression1 comparisonoperator expression2
   
 -   Infinito positivo es mayor que cualquier valor, incluido él mismo.  
   
- Operadores de igualdad: `==`, `!=`  
+ Operadores de igualdad: `==`,`!=`  
   
--   Si los tipos de las dos expresiones son diferentes, intenta convertirlos en tipos String, Number o Boolean.  
+-   Si los tipos de las dos expresiones son diferentes, intenta convertirlos a una cadena, número o valor booleano.  
   
--   `NaN` no es igual a ningún valor, incluido él mismo.  
+-   `NaN`no es igual a cualquier elemento incluido él mismo.  
   
 -   Cero negativo es igual a cero positivo.  
   
--   `null` equivale tanto a `null` como a `undefined`.  
+-   `null`es igual a ambos `null` y `undefined`.  
   
--   Los valores se consideran iguales si son cadenas idénticas, números equivalentes desde el punto de vista numérico, el mismo objeto, valores de tipo Boolean idénticos, o \(si los tipos son diferentes\) si pueden convertirse en una de estas situaciones.  
+-   Los valores se consideran iguales si son cadenas idénticas, números numéricamente equivalentes, el mismo objeto, valores booleanos idénticos, o (si diferentes tipos) pueden convertirse en una de estas situaciones.  
   
--   Todas las demás comparaciones se consideran desigualdades.  
+-   Cualquier otra comparación se considera distintos.  
   
- Operador de identidad: `===`, `!==`  
+ Operadores de identidad: `===`,`!==`  
   
- Estos operadores se comportan de la misma manera que los operadores de igualdad, salvo que no se realiza ninguna conversión de tipos.  Si los tipos de las dos expresiones no son iguales, estas expresiones siempre devuelven `false`.  
+ Estos operadores comportan igual que los operadores de igualdad, salvo que no se realiza ninguna conversión de tipos. Si los tipos de ambas expresiones no son iguales, estas expresiones siempre devuelven `false`.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Precedencia de operadores](../../javascript/operator-subtractprecedence-javascript.md)   
- [Resumen de operadores \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Resumen de operadores (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

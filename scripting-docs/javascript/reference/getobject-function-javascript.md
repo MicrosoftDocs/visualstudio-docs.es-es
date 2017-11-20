@@ -1,98 +1,99 @@
 ---
-title: "GetObject (Funci&#243;n de JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "GetObject"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "GetObject (función)"
+title: "GetObject (función) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: GetObject
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: GetObject function
 ms.assetid: 62efcdbc-8b86-491d-9000-ef38aa9942a9
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0d8bad127a0f260395a1ec19f44ff2d495006024
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# GetObject (Funci&#243;n de JavaScript)
+# <a name="getobject-function-javascript"></a>GetObject (Función de JavaScript)
 Devuelve una referencia a un objeto de automatización desde un archivo.  
   
 > [!NOTE]
->  Esta función no se admite en Internet Explorer 9 \(modo estándar\) o posterior.  
+>  Esta función no se admite en Internet Explorer 9 (modo estándar) o una versión posterior.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 GetObject([pathname] [, class])  
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `pathname`  
- Opcional.  Ruta completa y nombre del archivo que contiene el objeto que se va a recuperar.  Si se omite `pathname`, se requiere `class`.  
+ Opcional. Ruta de acceso completa y nombre del archivo que contiene el objeto que se va a recuperar. Si `pathname` se omite, `class` es necesario.  
   
  `class`  
- Opcional.  Clase del objeto.  
+ Opcional. Clase del objeto.  
   
- El argumento `class` usa la sintaxis `appname.objectype` y tiene estas partes:  
+ El `class` argumento utiliza la sintaxis `appname.objectype` y tiene las siguientes partes:  
   
  `appname`  
- Requerido.  Nombre de la aplicación que proporciona el objeto.  
+ Obligatorio. Nombre de la aplicación que proporciona el objeto.  
   
  `objectype`  
- Requerido.  Tipo o clase del objeto que se va a crear.  
+ Obligatorio. Tipo o clase de objeto a crear.  
   
-## Comentarios  
- La función `GetObject` no se admite en [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)] o posterior.  
+## <a name="remarks"></a>Comentarios  
+ El `GetObject` función no se admite en [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)] o una versión posterior.  
   
- Use la función `GetObject` para tener acceso a un objeto de automatización desde un archivo.  Asigne el objeto devuelto por la función `GetObject` a la variable de objeto.  Por ejemplo:  
+ Use la `GetObject` función obtenga acceso a un objeto de automatización desde un archivo. Asigne el objeto devuelto por `GetObject` a la variable de objeto. Por ejemplo:  
   
-```javascript  
+```JavaScript  
 var CADObject;  
 CADObject = GetObject("C:\\CAD\\SCHEMA.CAD");  
 ```  
   
- Cuando se ejecuta este código, se inicia la aplicación asociada al argumento `pathname` especificado y se activa el objeto del archivo especificado.  Si `pathname` es una cadena de longitud cero \(""\), `GetObject` devuelve una nueva instancia de objeto del tipo especificado.  Si se omite el argumento `pathname`, `GetObject` devuelve un objeto actualmente activo del tipo especificado.  Si no existe ningún objeto del tipo especificado, se produce un error.  
+ Cuando se ejecuta este código, la aplicación asociada con los valores especificados `pathname` se inicia, y se activa el objeto en el archivo especificado. Si `pathname` es una cadena de longitud cero (""), `GetObject` devuelve una nueva instancia de objeto del tipo especificado. Si el `pathname` argumento se omite, `GetObject` devuelve un objeto activo del tipo especificado. Si no existe ningún objeto del tipo especificado, se produce un error.  
   
- Algunas aplicaciones permiten activar parte de un archivo.  Para ello, agregue un signo de exclamación \(\!\) al final del nombre de archivo, seguido de una cadena que especifique la parte del archivo que desea activar.  Para obtener información sobre cómo crear esta cadena, consulte la documentación de la aplicación en la que se creó el objeto.  
+ Algunas aplicaciones permiten activar parte de un archivo. Para ello, agregue un signo de exclamación (!) al final del nombre de archivo y siga con una cadena que identifica la parte del archivo que desea activar. Para obtener información sobre cómo crear esta cadena, consulte la documentación de la aplicación que creó el objeto.  
   
- Por ejemplo, en una aplicación de dibujo, puede haber varias capas en un dibujo almacenado en un archivo.  Puede utilizar el código siguiente para activar una capa dentro de un dibujo denominado `SCHEMA.CAD`:  
+ Por ejemplo, en una aplicación de dibujo podría tener varias capas para un dibujo almacenado en un archivo. Puede utilizar el código siguiente para activar una capa en un dibujo denominado `SCHEMA.CAD`:  
   
-```javascript  
+```JavaScript  
 var LayerObject = GetObject("C:\\CAD\\SCHEMA.CAD!Layer3");  
 ```  
   
- Si no especifica la clase del objeto, el objeto de automatización determina la aplicación que se va a iniciar y el objeto que se va a activar, basándose en el nombre de archivo que se proporcione.  Sin embargo, algunos archivos pueden admitir más de una clase de objeto.  Por ejemplo, un dibujo puede ser compatible con tres tipos diferentes de objetos: un objeto Application, un objeto Drawing y un objeto Toolbar, que forman parte todos ellos del mismo archivo.  Para especificar el objeto que desea activar en un archivo, utilice el argumento opcional `class`.  Por ejemplo:  
+ Si no especifica la clase del objeto, la automatización determina qué aplicación iniciar y qué objeto activar, tomando como base el nombre de archivo que proporcione. Sin embargo, algunos archivos, pueden admitir más de una clase de objeto. Por ejemplo, un dibujo podría admitir tres tipos diferentes de objetos: un objeto de aplicación, un objeto de dibujo y un objeto de barra de herramientas, que forman parte del mismo archivo. Para especificar qué objeto en un archivo que desea activar, use opcional `class` argumento. Por ejemplo:  
   
-```javascript  
+```JavaScript  
 var MyObject;  
 MyObject = GetObject("C:\\DRAWINGS\\SAMPLE.DRW", "FIGMENT.DRAWING");  
 ```  
   
- En el ejemplo anterior, `FIGMENT` es el nombre de una aplicación de dibujo y `DRAWING` es uno de los tipos de objeto que admite.  Una vez que se activa un objeto, se hace referencia a él en el código mediante la variable de objeto que haya definido.  En el ejemplo anterior, se tiene acceso a las propiedades y métodos del nuevo objeto mediante la variable de objeto `MyObject`.  Por ejemplo:  
+ En el ejemplo anterior, `FIGMENT` es el nombre de una aplicación de dibujo y `DRAWING` es uno de los tipos de objeto que admite. Una vez que un objeto se activa, hace referencia en código mediante la variable de objeto que ha definido. En el ejemplo anterior, accederás a propiedades y métodos del nuevo objeto mediante la variable de objeto `MyObject`. Por ejemplo:  
   
-```javascript  
+```JavaScript  
 MyObject.Line(9, 90);  
 MyObject.InsertText(9, 100, "Hello, world.");  
 MyObject.SaveAs("C:\\DRAWINGS\\SAMPLE.DRW");  
 ```  
   
 > [!NOTE]
->  Utilice la función `GetObject` cuando exista una instancia actual del objeto o cuando desee crear el objeto con un archivo cargado.  Si no existe ninguna instancia actual y no desea que el objeto se inicie con un archivo cargado, utilice el objeto `ActiveXObject`.  
+>  Use la `GetObject` funciona cuando hay una instancia del objeto actual, o si desea crear el objeto con un archivo cargado. Si no hay ninguna instancia actual y no desea iniciar el objeto con un archivo cargado, utilice la `ActiveXObject` objeto.  
   
- Si un objeto se registró como objeto de una única instancia, sólo se creará una instancia del objeto, con independencia del número de veces que se ejecute el objeto `ActiveXObject`.  Con un objeto de una sola instancia, la función `GetObject` devuelve siempre la misma instancia cuando se llama con sintaxis de cadena de longitud cero \(""\) y origina un error si se omite el argumento `pathname`.  
+ Si un objeto ha registrado como un objeto de instancia única, solo una instancia del objeto se crea, con independencia de cómo muchas veces `ActiveXObject` se ejecuta. Con un objeto de instancia única, `GetObject` siempre devuelve la misma instancia cuando se llama con la cadena de longitud cero ("") produce un error de sintaxis y, si la `pathname` argumento se omite.  
   
-## Requisitos  
- Se admite en los siguientes modos de documento: quirks \(modo de emulación de otros exploradores web\), estándar de Internet Explorer 6, estándar de Internet Explorer 7 y estándar de Internet Explorer 8.  Vea [Información de versiones](../../javascript/reference/javascript-version-information.md).  
+## <a name="requirements"></a>Requisitos  
+ Admite los siguientes modos de documento: interpretación, estándar de Internet Explorer 6, Internet Explorer 7 y estándar de Internet Explorer 8. Consulte [Información de versión](../../javascript/reference/javascript-version-information.md).  
   
-## Vea también  
- [ActiveXObject \(Objeto\)](../../javascript/reference/activexobject-object-javascript.md)
+## <a name="see-also"></a>Vea también  
+ [ActiveXObject (Objeto)](../../javascript/reference/activexobject-object-javascript.md)

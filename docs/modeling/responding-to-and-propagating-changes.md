@@ -1,55 +1,56 @@
 ---
-title: "Responder a los cambios y propagarlos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Lenguaje específico de dominio, eventos"
+title: Responder a y propagar los cambios | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, events
 ms.assetid: fc2e9ac5-7a84-44ed-9945-94e45f89c227
-caps.latest.revision: 24
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Responder a los cambios y propagarlos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cuando se crea, se elimina o actualiza un elemento, puede escribir código que propaga el cambio a otras partes del modelo, o a los recursos externos como archivos, bases de datos, u otros componentes.  
+# <a name="responding-to-and-propagating-changes"></a>Responder a los cambios y propagarlos
+Cuando un elemento se crea, elimina o actualiza, puede escribir código que se propaga el cambio a otras partes del modelo o a recursos externos como archivos, bases de datos u otros componentes.  
   
-## En esta sección  
- como instrucción, considere estas técnicas en el orden siguiente:  
+## <a name="in-this-section"></a>En esta sección  
+ Como norma, tenga en cuenta estas técnicas en el siguiente orden:  
   
 |Técnica|Escenarios|Para obtener más información|  
-|-------------|----------------|----------------------------------|  
-|Defina una propiedad calculada del dominio.|Una propiedad de dominio cuyo valor se calcula de otras propiedades del modelo.  Por ejemplo, un precio que es la suma de los precios de elementos relacionados.|[Propiedades de almacenamiento personalizados y calculados](../modeling/calculated-and-custom-storage-properties.md)|  
-|Defina una propiedad personalizada del dominio de almacenamiento.|Una propiedad de dominio almacenada en otras partes del modelo o externamente.  Por ejemplo, puede analizar una cadena de expresión en un árbol del modelo.|[Propiedades de almacenamiento personalizados y calculados](../modeling/calculated-and-custom-storage-properties.md)|  
-|Reemplace los controladores de cambio como OnValueChanging y OnDeleting|Mantenga diferentes elementos de la sincronización, y mantener los valores externos en sincronización con el modelo.<br /><br /> Limita los valores a intervalos definidos.<br /><br /> Denominado inmediatamente antes y después del valor de propiedad y de otros cambios.  Puede finalizar el cambio iniciando una excepción.|[Controladores de los cambios de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md)|  
-|Reglas|Puede definir reglas que se ponen en la cola para la ejecución justo antes del final de una transacción en la que un cambio ha sucedido.  No se ejecutan en deshacer o rehacer.  Utilícelos para conservar una parte del almacén en para sincronizar con otra.|[Reglas de propagan los cambios en el modelo](../modeling/rules-propagate-changes-within-the-model.md)|  
-|Eventos de almacén|El almacén de modelado proporciona notificaciones de eventos como agregar o eliminar un elemento o un vínculo, o cambiar el valor de una propiedad.  El evento también se ejecuta en deshacer y rehacer.  el uso almacena eventos para actualizar los valores que no están en el almacén.|[Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
-|eventos de .NET|Las formas tienen controladores de eventos que respondan al mouse haga clic y otro los gestos.  Tiene que registrar para estos eventos para cada objeto.  El registro suele hacerse en un reemplazo de InitializeInstanceResources, y debe hacer para cada elemento.<br /><br /> Estos eventos se producen normalmente fuera de una transacción.|[Cómo: Interceptar un clic en una forma o decorador](../Topic/How%20to:%20Intercept%20a%20Click%20on%20a%20Shape%20or%20Decorator.md)|  
-|reglas de los límites|Una regla de los límites se utiliza específicamente para restringir los límites de una forma.|[Ubicación y tamaño de las reglas de restricción de formas BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
-|reglas de selección|Las reglas de selección restringir específicamente lo que el usuario puede seleccionar.|[Cómo: Tener acceso y restringir una selección](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
-|OnAssocatedPropertyChanged|Indica los estados del modelo de elementos mediante características de formas y conectores como sombra, puntas de flecha, color, y los anchos de línea y estilo.|[Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
+|---------------|---------------|--------------------------|  
+|Defina una propiedad de dominio calculado.|Una propiedad de dominio cuyo valor se calcula a partir de otras propiedades en el modelo. Por ejemplo, un precio que es la suma de precios de elementos relacionados.|[Propiedades calculadas y de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md)|  
+|Defina una propiedad de dominio de almacenamiento personalizado.|Una propiedad de dominio que se almacenan en otras partes del modelo o externamente. Por ejemplo, podría analizar una cadena de expresión en un árbol en el modelo.|[Propiedades calculadas y de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md)|  
+|Invalidar los controladores de cambio como OnValueChanging y OnDeleting|Mantener los distintos elementos sincronizados y mantenerlos sincronizados con el modelo de valores externos.<br /><br /> Restringir los valores a intervalos definidos.<br /><br /> Se llama inmediatamente antes y después el valor de propiedad y otros cambios. Puede finalizar el cambio iniciando una excepción.|[Controladores de los cambios de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md)|  
+|Reglas|Puede definir reglas que se ponen en cola para su ejecución justo antes del final de una transacción en el que se ha producido un cambio. No se ejecutan en Deshacer o rehacer. Usan para mantener sincronizados en sí una parte de la tienda.|[Las reglas propagan los cambios dentro del modelo](../modeling/rules-propagate-changes-within-the-model.md)|  
+|Eventos de almacén|El almacén de modelado proporciona notificaciones de eventos, como agregar o eliminar un elemento o vínculo o cambiar el valor de una propiedad. El evento también se ejecuta en Deshacer y rehacer. Usar eventos de almacén para actualizar los valores que no están en el almacén.|[Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
+|Eventos de .NET|Las formas tienen controladores de eventos que responden a los clics del mouse y otros movimientos. Tiene que registrar estos eventos para cada objeto. Registro normalmente se realiza en un reemplazo del InitializeInstanceResources y debe realizarse para cada elemento.<br /><br /> Normalmente, estos eventos se producen fuera de una transacción.|[Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
+|Reglas de límites|Una regla de límites se utiliza específicamente para restringir los límites de una forma.|[Ubicación y tamaño de las reglas de restricción de formas BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
+|Reglas de selección|Las reglas de selección específicamente restringen lo que el usuario puede seleccionar.|[Cómo: Tener acceso a una selección y restringir la selección actual](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
+|OnAssocatedPropertyChanged|Indicar los Estados de los elementos del modelo con las características de formas y conectores como instantáneas, puntas de flecha, color y ancho de línea y el estilo.|[Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
   
-## **comparar reglas y eventos almacenados**  
- Cambie los notificadores, reglas, y se ejecutan los eventos cuando se producen cambios en un modelo.  
+## <a name="comparing-rules-and-store-events"></a>**Comparar las reglas y los eventos de almacén**  
+ Cambio notificadores, reglas y los eventos se ejecutan cuando se producen cambios en un modelo.  
   
- Las reglas se aplican normalmente en la transacción del final de la que el cambio ha producido, y se aplican los eventos después de los cambios en una transacción se confirman.  
+ Normalmente se aplican las reglas en el final de la transacción en la que se ha producido el cambio y eventos se aplican después de confirmadas los cambios en una transacción.  
   
- El uso almacena eventos para sincronizar el modelo con los objetos fuera del almacén, y reglas de mantener la coherencia dentro del almacén.  
+ Usar eventos de almacén para sincronizar el modelo con objetos fuera del almacén y las reglas para mantener la coherencia en el almacén.  
   
--   **Crear reglas personalizadas** Se crean una regla personalizada como una clase derivada de una regla abstracta.  También debe notificar el marco sobre la regla personalizada.  Para obtener más información, vea [Reglas de propagan los cambios en el modelo](../modeling/rules-propagate-changes-within-the-model.md).  
+-   **Crear reglas personalizadas** crear una regla personalizada como una clase derivada de una regla abstracta. También debe notificar el marco de trabajo acerca de la regla personalizada. Para obtener más información, consulte [propagar los cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
--   **Suscribiéndose a eventos** Antes puede suscribirse a un evento, crear un controlador de eventos y un delegado.  Después utilice la propiedad de <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>para suscribirse al evento.  Para obtener más información, vea [Los controladores de eventos propagan cambios fuera del modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+-   **Suscribirse a eventos** para poder suscribirse a un evento, cree un controlador de eventos y el delegado. A continuación, utilice el <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propiedad que se va a suscribirse al evento. Para obtener más información, consulte [controladores propagar cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
--   **El deshacer cambia** Al deshacer una transacción, se generan los eventos, pero las reglas no se aplican.  Si una regla cambia un valor y deshace que cambie, el valor se restablece el valor original durante la acción de deshacer.  Cuando se produce un evento, debe cambiar manualmente el valor de a su valor original.  Para obtener más información sobre transactons y deshacer, vea [Cómo: Usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
+-   **Deshacer cambios** al deshacer una transacción, se generan eventos, pero no se aplican las reglas. Si una regla cambia un valor y deshacer este cambio, el valor se restablece al valor original durante la acción de deshacer. Cuando se genera un evento, debe cambiar manualmente el valor a su valor original. Para obtener más información sobre transactons y deshacer, consulte [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
--   **Pasar argumentos a las reglas y** los eventos y las reglas del caso**de los eventos** se pasa un parámetro de `EventArgs` que contiene información sobre cómo el modelo modificado.  
+-   **Pasar argumentos de evento a los eventos y las reglas de** ambos eventos y se pasan las reglas de un `EventArgs` cambia de parámetro que tiene información sobre cómo el modelo.  
   
-## Vea también  
- [Cómo: Interceptar un clic en una forma o decorador](../Topic/How%20to:%20Intercept%20a%20Click%20on%20a%20Shape%20or%20Decorator.md)   
- [Escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+## <a name="see-also"></a>Vea también  
+ [Cómo: interceptar al hacer clic en una forma o un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
+ [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

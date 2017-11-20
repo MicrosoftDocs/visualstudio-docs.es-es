@@ -1,52 +1,53 @@
 ---
-title: "C&#243;mo: Establecer una ubicaci&#243;n de archivos de registro personalizada para los errores de implementaciones de ClickOnce | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "implementación ClickOnce, registro de errores"
-  - "implementación ClickOnce, solucionar problemas"
-  - "solucionar problemas en implementaciones ClickOnce"
+title: "Cómo: establecer una ubicación de archivo de registro personalizado para los errores de implementación de ClickOnce | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- troubleshooting ClickOnce deployments
+- ClickOnce deployment, troubleshooting
+- ClickOnce deployment, error logging
 ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 4a8ed7ebbd3fc2fc35e9145509ebf335652c4bbd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# C&#243;mo: Establecer una ubicaci&#243;n de archivos de registro personalizada para los errores de implementaciones de ClickOnce
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantiene los archivos de registro de activación para todas las implementaciones.  Estos registros documentan cualquier error relacionado con la instalación e inicialización de una implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  De forma predeterminada, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea un archivo de registro para cada activación de implementación.  Almacena estos archivos de registro en la carpeta Archivos temporales de Internet.  El archivo de registro para una implementación se muestra al usuario cuando se produce un error de activación y el usuario hace clic en **Detalles** en el cuadro de diálogo de error que aparece.  
+# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Cómo: Establecer una ubicación de archivos de registro personalizada para los errores de implementaciones de ClickOnce
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]mantiene los archivos de registro de activación para todas las implementaciones. Estos registros documentan cualquier error relacionado con la instalación e inicialización de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. De forma predeterminada, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea un archivo de registro para cada activación de implementación. Estos archivos de registro almacena en la carpeta de archivos temporales de Internet. El archivo de registro para una implementación se muestra al usuario cuando se produce un error de activación y el usuario hace clic en **detalles** en el cuadro de diálogo de error resultante.  
   
- Puede cambiar este comportamiento para un cliente concreto mediante el Editor del Registro \(**regedit.exe**\) para establecer una ruta de acceso del archivo de registro personalizada.  En este caso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] graba las activaciones correctas y los errores de todas las implementaciones en un archivo único.  
+ Puede cambiar este comportamiento para un cliente específico mediante el Editor del registro (**regedit.exe**) para establecer una ruta de acceso del archivo de registro personalizado. En este caso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] registra activación correctas y erróneas para todas las implementaciones en un único archivo.  
   
 > [!CAUTION]
->  El uso incorrecto del Editor del Registro puede causar problemas graves que obliguen a reinstalar el sistema operativo.  Utilice el Editor del registro bajo su propia responsabilidad.  
+>  Si utiliza incorrectamente el Editor del registro, puede provocar problemas graves que quizás requieran reinstalar el sistema operativo. Use el Editor del Registro bajo su propia responsabilidad.  
   
 > [!NOTE]
->  Necesitará truncar o eliminar de vez en cuando el archivo de registro para evitar que crezca demasiado.  
+>  Necesitará truncar o eliminar el archivo de registro en ocasiones, para evitar que crezca demasiado grande.  
   
- El procedimiento siguiente describe cómo establecer una ubicación del archivo de registro personalizada para un cliente único.  
+ El siguiente procedimiento describe cómo establecer una ubicación de archivo de registro personalizado para un solo cliente.  
   
-### Para establecer una ubicación del archivo de registro personalizada  
+### <a name="to-set-a-custom-log-file-location"></a>Para establecer una ubicación de archivo de registro personalizada  
   
 1.  Abra **Regedit.exe**.  
   
-2.  Navegue hasta el nodo `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2.  Desplácese hasta el nodo `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
   
-3.  Establezca el valor de cadena `LogFilePath` en la ruta de acceso completa y el nombre de archivo de la ubicación de registro personalizada que prefiera.  
+3.  Establezca el valor de cadena `LogFilePath` a la ruta de acceso completa y el nombre de la ubicación de registro personalizada que prefiera.  
   
-     Esta ubicación debe estar en un directorio en el que el usuario tenga acceso de escritura.  Por ejemplo, en Windows Vista, cree la siguiente estructura de carpetas y establezca `LogFilePath` en C:\\Usuarios\\\<nombreDeUsuario\>\\Documentos\\Logs\\ClickOnce\\installation.log.  
+     Esta ubicación debe estar en un directorio al que el usuario tiene acceso de escritura. Por ejemplo, en Windows Vista, cree la siguiente estructura de carpetas y establecer `LogFilePath` a C:\Users\\< nombre de usuario\>\Documents\Logs\ClickOnce\installation.log.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Solucionar problemas en implementaciones ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

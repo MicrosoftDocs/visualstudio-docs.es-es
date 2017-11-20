@@ -1,30 +1,31 @@
 ---
-title: "Elemento de enlaces de teclado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "KeyBindings"
-helpviewer_keywords: 
-  - "Elementos de esquema XML VSCT, enlaces de teclado"
-  - "Elemento KeyBindings (esquema VSCT XML)"
+title: Elemento de enlaces de teclado | Documentos de Microsoft
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: KeyBindings
+helpviewer_keywords:
+- VSCT XML schema elements, KeyBindings
+- KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ff72a2a7acf63dea678aad0cda4cdca196ffc14f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Elemento de enlaces de teclado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El elemento KeyBindings agrupa elementos KeyBinding y otras agrupaciones KeyBindings.  
+# <a name="keybindings-element"></a>Elemento de enlaces de teclado
+Los elementos de un KeyBinding de grupos de elemento de enlaces de teclado y otros grupos de enlaces de teclado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 <KeyBindings>  
@@ -33,34 +34,39 @@ El elemento KeyBindings agrupa elementos KeyBinding y otras agrupaciones KeyBind
 </KeyBindings>  
 ```  
   
-## Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos  
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
-### Atributos  
+### <a name="attributes"></a>Atributos  
   
 |Atributo|Descripción|  
-|--------------|-----------------|  
-|Condición|Opcional. Vea [Atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Elementos secundarios  
-  
-|Elemento|Descripción|  
-|--------------|-----------------|  
-|[Elemento KeyBinding](../extensibility/keybinding-element.md)|Especifica los métodos abreviados de teclado para los comandos.|  
-|[KeyBindings](../extensibility/keybindings-element.md)|Grupos KeyBinding elementos y otras agrupaciones KeyBindings.|  
-  
-### Elementos primarios  
+### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
-|--------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos.|  
+|-------------|-----------------|  
+|[KeyBinding (Elemento)](../extensibility/keybinding-element.md)|Especifica los métodos abreviados de teclado para los comandos.|  
+|[Enlaces de teclado](../extensibility/keybindings-element.md)|Los elementos de un KeyBinding de grupos y otras agrupaciones de enlaces de teclado.|  
   
-## Ejemplo  
+### <a name="parent-elements"></a>Elementos primarios  
+  
+|Elemento|Descripción|  
+|-------------|-----------------|  
+|[CommandTable (Elemento)](../extensibility/commandtable-element.md)|Define todos los elementos que representan comandos.|  
+  
+## <a name="example"></a>Ejemplo  
   
 ```  
-<KeyBindings> <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget" editor="guidWidgetEditor" key1="VK_F5"/> <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget" editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/> </KeyBindings>  
+<KeyBindings>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
+    editor="guidWidgetEditor" key1="VK_F5"/>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
+</KeyBindings>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Elemento KeyBinding](../extensibility/keybinding-element.md)   
- [Tabla de comandos de Visual Studio \(. Archivos de Vsct\)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

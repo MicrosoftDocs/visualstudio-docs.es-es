@@ -1,51 +1,54 @@
 ---
-title: "getInt32 (M&#233;todo, DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "getInt32 (método, DataView) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 7a985681-ddb1-4c2b-815c-514c17392e82
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bae788801a81265d39be5ef090e5820122cbb09b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# getInt32 (M&#233;todo, DataView)
-Obtiene el valor Int32 en el desplazamiento de bytes especificado desde el inicio de la vista.  No hay ninguna restricción de alineación; se pueden capturar valores multibyte de cualquier desplazamiento.  
+# <a name="getint32-method-dataview"></a>getInt32 (Método, DataView)
+Obtiene el valor Int32 en el desplazamiento de bytes especificado desde el principio de la vista. No hay ninguna restricción de alineación; desde cualquier desplazamiento, se pueden obtener los valores de varios bytes.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 var testInt = dataView.getInt32(byteOffset, littleEndian);   
 ```  
   
-## Parámetros  
+## <a name="parameters"></a>Parámetros  
  `testInt`  
- Obligatorio.  Valor Int32 que se devuelve del método.  
+ Obligatorio. El valor Int32 que se devuelve desde el método.  
   
  `byteOffset`  
- Lugar del búfer donde se debe recuperar el valor.  
+ El lugar en el búfer en el que se debe recuperar el valor.  
   
  `littleEndian`  
- Opcional.  Si es false o undefined, se debe leer un valor big\-endian. Si no, se debe leer un valor little\-endian.  
+ Opcional. Si es false o no definido, se debe leer un valor de big-endian, en caso contrario, se debe leer un valor de little-endian.  
   
-## Comentarios  
- Estos métodos producen una excepción si la lectura se va a realizar más allá del final de la vista.  
+## <a name="remarks"></a>Comentarios  
+ Estos métodos genera una excepción si se leen más allá del final de la vista.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo obtener el primer valor Int32 del DataView.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra cómo obtener el primer Int32 en DataView.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -61,5 +64,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]
