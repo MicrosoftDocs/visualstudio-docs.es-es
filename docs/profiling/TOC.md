@@ -365,5 +365,5 @@
 ##### [Función CvWriteAlert](cvwritealert-function.md)
 ##### [Función CvWriteFlag](cvwriteflag-function.md)
 ##### [Función CvWriteMessage](cvwritemessage-function.md)
-### [Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analizar el uso de energía en las aplicaciones de la Tienda](analyze-energy-use-in-store-apps.md)
+### [Utilidad de la línea de comandos del visualizador de simultaneidad (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
+## [Análisis del uso de energía en las aplicaciones para UWP](analyze-energy-use-in-store-apps.md)

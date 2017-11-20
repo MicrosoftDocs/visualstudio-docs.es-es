@@ -3,15 +3,14 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
-title: "Desarrollo móvil con documentación de C++"
+title: "Documentación sobre desarrollo móvil con C++ | Microsoft Docs"
 description: Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visual Studio.
-translationtype: Human Translation
-ms.sourcegitcommit: f161d39701feb5df93bfcfa3c0496f60fb366323
-ms.openlocfilehash: 58c1a8a76456caad830406758e6921de8b4ad1af
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2d7dc3860091e11ab7b8983d9f1b739ffd383ba3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="mobile-development-with-c-documentation"></a>Desarrollo móvil con documentación de C++
 
 Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visual Studio.
@@ -28,7 +27,7 @@ Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visua
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Install Visual C++ for Cross-Platform Mobile Development</h3>
+                        <h3>Instalar Visual C++ para el desarrollo móvil multiplataforma</h3>
                         <p>Configure las herramientas necesarias para crear aplicaciones móviles para diferentes plataformas.</p>
                     </div>
                 </div>

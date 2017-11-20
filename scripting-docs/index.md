@@ -1,12 +1,11 @@
 ---
 layout: LandingPage
-title: Scripting
+title: Scripting | Microsoft Docs
+ms.openlocfilehash: 4b18b7ddea5816da472b5216ae95b51a79c05478
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
-ms.openlocfilehash: 7a3352e08f0e8912939c305de483fe8efd15bd75
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="scripting-technologies"></a>Tecnologías de scripting
 
