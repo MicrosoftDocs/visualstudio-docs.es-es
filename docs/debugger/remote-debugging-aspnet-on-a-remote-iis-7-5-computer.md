@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 730a69894c8e38dd7b9d191fa7fe3396509148d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota en un equipo remoto de IIS, ASP.NET
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde se implementa la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -26,7 +26,7 @@ Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y e
 Esta guía explica cómo instalar y configurar una aplicación de Visual Studio de 2017 ASP.NET MVC 4.5.2, implementarla en IIS y adjuntar al depurador remoto de Visual Studio. Realizar la depuración remota ASP.NET Core, vea [remoto depurar ASP.NET Core en un equipo con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). También puede implementar y depurar en IIS con Azure. Para obtener más información, consulte [de depuración remota en Azure](../debugger/remote-debugging-azure.md).
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
-* Windows Server 2012 R2 y IIS 10 (para Windows Server 2008 R2, los pasos del servidor son diferentes)
+* Windows Server 2012 R2 y IIS 8.5 (para Windows Server 2008 R2, los pasos del servidor son diferentes)
 
 ## <a name="requirements"></a>Requisitos
 

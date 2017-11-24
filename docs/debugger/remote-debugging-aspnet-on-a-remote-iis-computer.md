@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: article
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 883a9ad8660204462d5aaa852ab87c5420af4382
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abbbb1adf829361c5916f91ade5cb1a549444b72
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Núcleo de ASP.NET de depuración remota en un equipo IIS remoto en Visual Studio de 2017
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde se implementa la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -26,7 +26,7 @@ Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y e
 Esta guía explica cómo instalar y configurar un núcleo de ASP.NET de Visual Studio de 2017, implementarla en IIS y asociar al depurador remoto de Visual Studio. Realizar la depuración remota ASP.NET 4.5.2, consulte [ASP.NET de depuración remota en un equipo con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). También puede implementar y depurar en IIS con Azure. Para obtener más información, consulte [de depuración remota en Azure](../debugger/remote-debugging-azure.md).
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
-* Windows Server 2012 R2 y IIS 10
+* Windows Server 2012 R2 y IIS 8.5
 * Windows Server 2016 y IIS 10
 
 ## <a name="requirements"></a>Requisitos

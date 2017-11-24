@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e111159029710684a1a49be2859f6ac5699a70a
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problemas conocidos y solución de problemas de instantáneas de depuración en Visual Studio
 
@@ -30,8 +30,7 @@ Si aparece un icono de advertencia ![icono de advertencia de Snappoint](../debug
 
 Siga estos pasos:
 
-1. Asegúrese de que tiene la misma versión de código fuente que se usó para generar e implementar la aplicación.
-1. Asegúrese de que va a cargar los símbolos correctos para su implementación. Para ello, vea la **módulos** ventana al depurar de instantánea y compruebe que la columna del archivo de símbolos muestra un archivo .pdb cargados para el módulo que se está depurando. Tenga en cuenta que el depurador de instantánea intentará descargar automáticamente y usar símbolos para la implementación.
+1. Asegúrese de que tiene la misma versión de código fuente que se usó para generar e implementar su app.isua1. Asegúrese de que va a cargar los símbolos correctos para su implementación. Para ello, vea la **módulos** ventana al depurar de instantánea y compruebe que la columna del archivo de símbolos muestra un archivo .pdb cargados para el módulo que se está depurando. Tenga en cuenta que el depurador de instantánea intentará descargar automáticamente y usar símbolos para la implementación.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Símbolos no se cargan cuando se abre una instantánea
 
@@ -70,9 +69,10 @@ Siga estos pasos:
 - Optimizaciones de IL Roslyn no se admiten totalmente en los proyectos de ASP.NET Core. Para algunos proyectos de ASP.NET Core, no puede ver algunas de las variables o usar algunas de las variables en instrucciones condicionales. 
 - Variables especiales, como *$FUNCTION* o *$CALLER*, no se puede evaluar en instrucciones condicionales o logpoints para los proyectos de ASP.NET Core.
 - Depuración instantánea no funciona en los servicios de aplicaciones que tienen [almacenamiento en caché Local](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) activado.
+- Depurar aplicaciones de la API de instantánea no se admite actualmente.
 
 ## <a name="see-also"></a>Vea también
 
 [Depurar en Visual Studio](../debugger/index.md)  
 [Depurar aplicaciones ASP.NET en directo con el depurador de instantánea](../debugger/debug-live-azure-applications.md)  
-[Preguntas más frecuentes sobre depuración instantánea](../debugger/debug-live-azure-apps-faq.md)  
+[P+F sobre depuración de instantáneas](../debugger/debug-live-azure-apps-faq.md)  

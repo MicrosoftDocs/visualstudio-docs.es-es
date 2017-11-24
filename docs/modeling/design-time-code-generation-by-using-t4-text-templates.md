@@ -19,11 +19,11 @@ caps.latest.revision: "38"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2444687c420feb1b7e949df349d3e609f1c542d0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 97cf47eafc99abefeebce0f69ac2840617fb35e2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 Las plantillas de texto T4 en tiempo de diseño permiten generar código de programa y otros archivos de su proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de su aplicación.  
@@ -306,7 +306,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
   
 ```  
-<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v11.0\TextTemplating\Microsoft.TextTemplating.targets" />  
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  
    <TransformOnBuild>true</TransformOnBuild>  
    <!-- Other properties can be inserted here -->  

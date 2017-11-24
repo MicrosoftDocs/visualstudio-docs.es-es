@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: article
 f1_keywords: vs.debug.remote.overview
 dev_langs:
 - C++
@@ -20,11 +20,11 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d945c28e7fe703c80776a5f1ff124ab6e0a8bf9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 7f2c18e107efbc35c662504a6f784fe6f922cacd
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Puede depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente. Para ello, use el depurador remoto de Visual Studio
