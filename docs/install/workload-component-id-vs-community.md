@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 08/30/2017
+ms.date: 10/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,29 +16,12 @@ ms.technology:
 - vs-ide-install
 - vs-ide-sdk
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 69b1e308f413e4e2abe28c646e9b1999cd1ffe4b
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
-ms.sourcegitcommit: 96018963278cd1d53b226473baade41da1e98111
-ms.openlocfilehash: 19a197d59a2d4349c72e346ad3b23aee5deedd86
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/17/2017
 ---
-
 # <a name="visual-studio-community-2017-workload-and-component-ids"></a>Identificadores de componente y carga de trabajo de Visual Studio Community 2017
 
 Las tablas de esta página presentan los identificadores que puede usar para instalar Visual Studio mediante la línea de comandos o que puede especificar como una dependencia en un manifiesto VSIX. Tenga en cuenta que agregaremos componentes adicionales a medida que se publiquen actualizaciones de Visual Studio.
@@ -65,6 +48,7 @@ Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.0.26606.0 | Obligatorio
 
+
 ## <a name="azure-development"></a>Desarrollo de Azure
 
 **Id.:** Microsoft.VisualStudio.Workload.Azure
@@ -78,7 +62,7 @@ Id. de componente | Nombre | Versión | Tipo de dependencia
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Herramientas de WebJobs de Microsoft Azure | 15.0.26720.2 | Obligatorio
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Obligatorio
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Obligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Obligatorio
 Microsoft.Component.NetFX.Core.Runtime | Tiempo de ejecución de .NET Core | 15.0.26208.0 | Obligatorio
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.0.26621.2 | Obligatorio
@@ -91,12 +75,13 @@ Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Fram
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.0.26606.0 | Obligatorio
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.0.26606.0 | Obligatorio
 Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26606.0 | Obligatorio
-Microsoft.NetCore.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26621.2 | Obligatorio
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Herramientas de desarrollo de .NET Core 2.0 | 15.0.26919.1 | Obligatorio
+Microsoft.NetCore.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 2.0 | 15.0.26919.1 | Obligatorio
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26621.2 | Obligatorio
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26621.2 | Obligatorio
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulador de Azure Compute | 15.0.26621.2 | Obligatorio
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26621.2 | Obligatorio
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26823.1 | Obligatorio
 Microsoft.VisualStudio.Component.Azure.Waverton | Herramientas principales de Azure Cloud Services | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.0.26711.1 | Obligatorio
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 1.10.50614.2 | Obligatorio
@@ -112,9 +97,9 @@ Microsoft.VisualStudio.Component.SQL.ADAL | Entorno de tiempo de ejecución de S
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de comandos de SQL Server | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.DataSources | Orígenes de datos para el soporte de SQL Server | 15.0.26621.2 | Obligatorio
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Obligatorio
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Obligatorio
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26208.0 | Obligatorio
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Obligatorio
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.TypeScript.2.3 | SDK de TypeScript 2.3 | 15.0.26621.2 | Obligatorio
@@ -125,22 +110,25 @@ Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Requisitos previos d
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Herramientas de WebJobs de Microsoft Azure | 15.0.26720.2 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Herramientas de desarrollo web y ASP.NET | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 15.0.26606.0 | Obligatorio
-Microsoft.Component.Azure.DataLake.Tools | Herramientas de Azure Data Lake y Stream Analytics | 15.0.26730.0 | Se recomienda
+Microsoft.Component.Azure.DataLake.Tools | Herramientas de Azure Data Lake y Stream Analytics | 15.0.26823.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.MobileAppsSdk | SDK de Azure Mobile Apps | 15.0.26504.0 | Se recomienda
-Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Herramientas principales de Azure Resource Manager | 15.0.26504.0 | Se recomienda
+Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Herramientas principales de Azure Resource Manager | 15.0.26906.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Herramientas de Service Fabric | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas para generación de perfiles de .NET | 15.0.26711.1 | Se recomienda
 Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices | Herramientas de Azure Cloud Services | 15.0.26504.0 | Se recomienda
-Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Herramientas de Azure Resource Manager | 15.0.26711.1 | Se recomienda
+Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Herramientas de Azure Resource Manager | 15.0.26919.1 | Se recomienda
 Microsoft.Net.Component.4.6.2.SDK | SDK de .NET Framework 4.6.2 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.0.26419.1 | Opcional
 Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 15.0.26606.0 | Optional
-Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Azure Storage AzCopy | 15.0.26621.2 | Optional
+Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.0 - 1.1 para escritorio | 15.0.26919.1 | Optional
+Microsoft.NetCore.1x.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 1.0 - 1.1 para Web | 15.0.26919.1 | Optional
+Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Azure Storage AzCopy | 15.0.26906.1 | Optional
 Microsoft.VisualStudio.Component.PowerShell.Tools | Herramientas de PowerShell | 3.0.552 | Optional
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.0.26606.0 | Optional
+
 
 ## <a name="data-storage-and-processing"></a>Almacenamiento y procesamiento de datos
 
@@ -155,8 +143,8 @@ Id. de componente | Nombre | Versión | Tipo de dependencia
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
 Component.Redgate.SQLSearch.VSExtension | Redgate SQL Search | 2.4.2.1439 | Se recomienda
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Se recomienda
-Microsoft.Component.Azure.DataLake.Tools | Herramientas de Azure Data Lake y Stream Analytics | 15.0.26730.0 | Se recomienda
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Se recomienda
+Microsoft.Component.Azure.DataLake.Tools | Herramientas de Azure Data Lake y Stream Analytics | 15.0.26823.1 | Se recomienda
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Se recomienda
 Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.0.26621.2 | Se recomienda
 Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.2 | 15.0.26621.2 | Se recomienda
@@ -171,7 +159,7 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools |
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26621.2 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulador de Azure Compute | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26621.2 | Se recomienda
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26823.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.Waverton | Herramientas principales de Azure Cloud Services | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.0.26711.1 | Se recomienda
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 1.10.50614.2 | Se recomienda
@@ -187,9 +175,9 @@ Microsoft.VisualStudio.Component.SQL.ADAL | Entorno de tiempo de ejecución de S
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de comandos de SQL Server | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.DataSources | Orígenes de datos para el soporte de SQL Server | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Se recomienda
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Se recomienda
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.TypeScript.2.3 | SDK de TypeScript 2.3 | 15.0.26621.2 | Se recomienda
@@ -199,6 +187,7 @@ Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Se reco
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Herramientas de desarrollo web y ASP.NET | 15.0.26606.0 | Se recomienda
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 15.0.26606.0 | Se recomienda
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 15.0.26606.0 | Optional
+
 
 ## <a name="data-science-and-analytical-applications"></a>Aplicaciones analíticas y de ciencia de datos
 
@@ -213,7 +202,7 @@ Id. de componente | Nombre | Versión | Tipo de dependencia
 Component.Anaconda3.x64 | Anaconda3 64 bits (4.4.0) | 4.4.0 | Se recomienda
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
 Microsoft.Component.CookiecutterTools | Compatibilidad con plantillas de Cookiecutter | 15.0.26621.2 | Se recomienda
-Microsoft.Component.PythonTools | Compatibilidad con el lenguaje Python | 15.0.26730.0 | Se recomienda
+Microsoft.Component.PythonTools | Compatibilidad con el lenguaje Python | 15.0.26823.1 | Se recomienda
 Microsoft.Component.PythonTools.Web | Compatibilidad web con Python | 15.0.26606.0 | Se recomienda
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK de Windows Universal CRT | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 15.0.26621.2 | Se recomienda
@@ -225,7 +214,7 @@ Microsoft.VisualStudio.Component.R.Open | Cliente de Microsoft R (3.3.2) | 15.0.
 Microsoft.VisualStudio.Component.RHost | Compatibilidad del entorno de tiempo de ejecución con herramientas de desarrollo de R | 15.0.26621.2 | Se recomienda
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26711.1 | Se recomienda
-Microsoft.VisualStudio.Component.RTools | Compatibilidad con el lenguaje R | 15.0.26606.0 | Se recomienda
+Microsoft.VisualStudio.Component.RTools | Compatibilidad con el lenguaje R | 15.0.26919.1 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.TypeScript.2.3 | SDK de TypeScript 2.3 | 15.0.26621.2 | Se recomienda
@@ -236,17 +225,18 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.
 Component.Anaconda2.x64 | Anaconda2 64 bits (4.4.0) | 4.4.0 | Optional
 Component.Anaconda2.x86 | Anaconda2 32 bits (4.4.0) | 4.4.0 | Optional
 Component.Anaconda3.x86 | Anaconda3 32 bits (4.4.0) | 4.4.0 | Optional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Herramientas de desarrollo nativo de Python | 15.0.26730.0 | Optional
-Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26208.0 | Optional
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Herramientas de desarrollo nativo de Python | 15.0.27004.2002 | Optional
+Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | SDK de Windows 8.1 de herramientas gráficas | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VC.140 | Conjunto de herramientas de VC++ 2015.3 v140 para el escritorio (x86, x64) | 15.0.26720.2 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Optional
-Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26720.2 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26823.1 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución de C de Windows Universal | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 SDK (10.0.15063.0) para escritorio C++ x86 y x64 | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.0.27004.2002 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.0.27004.2002 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 10 (10.0.16299.0) para UWP: C++ | 15.0.27004.2002 | Optional
+
 
 ## <a name="net-desktop-development"></a>Desarrollo de escritorio de .NET
 
@@ -258,14 +248,14 @@ Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 
 
 Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Obligatorio
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Obligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Obligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | Obligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 15.0.26621.2 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.0.26606.0 | Obligatorio
-Microsoft.VisualStudio.Component.Debugger.JustInTime | Depurador Just-In-Time | 15.0.26621.2 | Obligatorio
+Microsoft.VisualStudio.Component.Debugger.JustInTime | Depurador Just-In-Time | 15.0.26823.1 | Obligatorio
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo de carga de trabajo de escritorio administrado | 15.0.26419.1 | Obligatorio
-Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Herramientas de desarrollo de escritorio de .NET | 15.0.26621.2 | Obligatorio
+Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Herramientas de desarrollo de escritorio de .NET | 15.0.26906.1 | Obligatorio
 Microsoft.VisualStudio.Component.PortableLibrary | Paquete de compatibilidad de biblioteca portátil de .NET | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26711.1 | Obligatorio
@@ -289,14 +279,16 @@ Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Fr
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 15.0.26606.0 | Optional
 Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26606.0 | Optional
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26606.0 | Optional
+Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.0 - 1.1 para escritorio | 15.0.26919.1 | Optional
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Herramientas de desarrollo de .NET Core 2.0 | 15.0.26919.1 | Optional
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 15.0.26606.0 | Optional
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.NuGet | Administrador de paquetes de NuGet | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Optional
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.0.26606.0 | Optional
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Optional
+
 
 ## <a name="game-development-with-unity"></a>Desarrollo de juegos con Unity
 
@@ -312,8 +304,9 @@ Microsoft.Net.Component.3.5.DeveloperTools | Herramientas de desarrollo para .NE
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26711.1 | Obligatorio
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
-Microsoft.VisualStudio.Component.Unity | Visual Studio Tools para Unity | 15.0.26730.10 | Obligatorio
-Component.UnityEngine | Editor de Unity 5.6 | 15.0.26730.10 | Se recomienda
+Microsoft.VisualStudio.Component.Unity | Visual Studio Tools para Unity | 15.0.26823.1 | Obligatorio
+Component.UnityEngine.x64 | Editor Unity 2017.1 de 64 bits | 15.0.26919.1 | Se recomienda
+Component.UnityEngine.x86 | Editor Unity 5.6 de 32 bits | 15.0.26919.1 | Se recomienda
 
 
 ## <a name="linux-development-with-c"></a>Desarrollo para Linux con C++
@@ -329,6 +322,17 @@ Id. de componente | Nombre | Versión | Tipo de dependencia
 Component.MDD.Linux | Visual C++ para desarrollo de aplicaciones para Linux | 15.0.26711.1 | Obligatorio
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución de C de Windows Universal | 15.0.26621.2 | Obligatorio
+Component.Linux.CMake | Herramientas de Visual C++ para CMake y Linux | 15.0.27004.2002 | Se recomienda
+Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26711.1 | Se recomienda
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26823.1 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.0.27004.2002 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.0.27004.2002 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 10 (10.0.16299.0) para UWP: C++ | 15.0.27004.2002 | Se recomienda
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 15.0.26606.0 | Se recomienda
+
 
 ## <a name="desktop-development-with-c"></a>Desarrollo para el escritorio con C++
 
@@ -341,42 +345,46 @@ Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución 
 Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Obligatorio
-Microsoft.VisualStudio.Component.Debugger.JustInTime | Depurador Just-In-Time | 15.0.26621.2 | Obligatorio
+Microsoft.VisualStudio.Component.Debugger.JustInTime | Depurador Just-In-Time | 15.0.26823.1 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Actualización de Visual C++ 2017 Redistributable | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Características principales de escritorio para Visual C++ | 15.0.26621.2 | Obligatorio
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
-Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26823.1 | Se recomienda
 Microsoft.VisualStudio.Component.Graphics.Win81 | SDK de Windows 8.1 de herramientas gráficas | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26711.1 | Se recomienda
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Se recomienda
-Microsoft.VisualStudio.Component.VC.CMake.Project | Herramientas de Visual C++ para CMake | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26720.2 | Se recomienda
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 SDK (10.0.15063.0) para escritorio C++ x86 y x64 | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.0.26621.2 | Se recomienda
+Microsoft.VisualStudio.Component.VC.CMake.Project | Herramientas de Visual C++ para CMake | 15.0.27004.2002 | Se recomienda
+Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26823.1 | Se recomienda
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26823.1 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.0.27004.2002 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.0.27004.2002 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 10 (10.0.16299.0) para UWP: C++ | 15.0.27004.2002 | Se recomienda
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 15.0.26606.0 | Se recomienda
-Component.Incredibuild | IncrediBuild: Aceleración de compilación | 15.0.26720.2 | Optional
+Component.Incredibuild | IncrediBuild: Aceleración de compilación | 15.0.26919.1 | Optional
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.1 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK de Windows Universal CRT | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.VC.140 | Conjunto de herramientas de VC++ 2015.3 v140 para el escritorio (x86, x64) | 15.0.26720.2 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | Compatibilidad con ATL para Visual C++ | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.VC.ATL | Compatibilidad con ATL para Visual C++ | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | Compatibilidad con MFC y ATL (x86 y x64) | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2 (experimental) | 15.0.26724.1 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | Compatibilidad con C++/CLI | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2 (experimental) | 15.0.26823.1 | Optional
+Microsoft.VisualStudio.Component.VC.CLI.Support | Compatibilidad con C++/CLI | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Módulos para biblioteca estándar (experimental) | 15.0.26720.2 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK de Windows 10 (10.0.10240.0) | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK de Windows 10 (10.0.10586.0) | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK de Windows 10 (10.0.14393.0) | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 (10.0.15063.0) para escritorio C++ [x86 y x64] | 15.0.26929.2 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | SDK de Windows 8.1 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | Soporte de Windows XP para C++ | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | SDK de Windows 8.1 y SDK de UCRT | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows XP para C++ | 15.0.26208.0 | Optional
+
 
 ## <a name="game-development-with-c"></a>Desarrollo de juegos con C++
 
@@ -389,27 +397,25 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows X
 Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Actualización de Visual C++ 2017 Redistributable | 15.0.26606.0 | Obligatorio
-Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26823.1 | Se recomienda
 Microsoft.VisualStudio.Component.Graphics.Win81 | SDK de Windows 8.1 de herramientas gráficas | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Se recomienda
-Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26720.2 | Se recomienda
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 SDK (10.0.15063.0) para escritorio C++ x86 y x64 | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.0.26621.2 | Se recomienda
+Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26823.1 | Se recomienda
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26823.1 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.0.27004.2002 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.0.27004.2002 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 10 (10.0.16299.0) para UWP: C++ | 15.0.27004.2002 | Se recomienda
 Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.9 | Optional
-Component.Android.SDK19 | Instalación de Android SDK (niveles de API 19 y 21) | 15.0.26621.2 | Optional
-Component.Android.SDK22 | Instalación de Android SDK (nivel de API 22) | 15.0.26208.0 | Optional
-Component.Android.SDK23 | Instalación de Android SDK (nivel de API 23) | 15.0.26606.0 | Optional
+Component.Android.SDK23.Private | Instalación de Android SDK (nivel de API 23) (instalación local) | 15.0.26906.1 | Optional
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.7 | Optional
-Component.Cocos | Cocos | 15.0.26621.2 | Optional
-Component.Incredibuild | IncrediBuild: Aceleración de compilación | 15.0.26720.2 | Optional
+Component.Cocos | Cocos | 15.0.26906.1 | Optional
+Component.Incredibuild | IncrediBuild: Aceleración de compilación | 15.0.26919.1 | Optional
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.1 | Optional
 Component.JavaJDK | Kit de desarrollo de Java SE (8.0.1120.15) | 15.0.26403.0 | Optional
 Component.MDD.Android | Herramientas de desarrollo de Android en C ++ | 15.0.26606.0 | Optional
 Component.Unreal | Instalador de Unreal Engine | 15.0.26621.2 | Optional
-Component.Unreal.Android | Compatibilidad de Visual Studio con Android para Unreal Engine | 15.0.26724.1 | Optional
+Component.Unreal.Android | Compatibilidad de Visual Studio con Android para Unreal Engine | 15.0.26919.1 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK de Windows Universal CRT | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.0.26621.2 | Optional
 Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.2 | 15.0.26621.2 | Optional
@@ -426,8 +432,12 @@ Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución 
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK de Windows 10 (10.0.10240.0) | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK de Windows 10 (10.0.10586.0) | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK de Windows 10 (10.0.14393.0) | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 (10.0.15063.0) para escritorio C++ [x86 y x64] | 15.0.26929.2 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | SDK de Windows 8.1 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | SDK de Windows 8.1 y SDK de UCRT | 15.0.26208.0 | Optional
+
 
 ## <a name="mobile-development-with-c"></a>Desarrollo móvil con C++
 
@@ -443,18 +453,20 @@ Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Vi
 Component.Android.NDK.R13B | Android NDK (R13B) | 13.1.6 | Se recomienda
 Component.Android.SDK19 | Instalación de Android SDK (niveles de API 19 y 21) | 15.0.26621.2 | Se recomienda
 Component.Android.SDK22 | Instalación de Android SDK (nivel de API 22) | 15.0.26208.0 | Se recomienda
+Component.Android.SDK25 | Instalación de Android SDK (nivel de API 25) | 15.0.26919.1 | Se recomienda
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.7 | Se recomienda
 Component.MDD.Android | Herramientas de desarrollo de Android en C ++ | 15.0.26606.0 | Se recomienda
 Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.9 | Optional
 Component.Android.NDK.R12B_3264 | Android NDK (R12B) (32 bits) | 12.1.10 | Optional
 Component.Android.NDK.R13B_3264 | Android NDK (R13B) (32 bits) | 13.1.7 | Optional
-Component.Android.SDK23 | Instalación de Android SDK (nivel de API 23) | 15.0.26606.0 | Optional
-Component.Google.Android.Emulator.API23.V2 | Emulador de Android de Google	 (nivel de API 23) | 15.0.26711.1 | Optional
-Component.HAXM | Intel Hardware Accelerated Execution Manager (HAXM) | 15.0.26208.0 | Optional
-Component.Incredibuild | IncrediBuild: Aceleración de compilación | 15.0.26720.2 | Optional
+Component.Android.SDK23 | Instalación de Android SDK (nivel de API 23) (instalación global) | 15.0.26906.1 | Optional
+Component.Google.Android.Emulator.API23.V2 | Google Android Emulator (nivel de API 23) (instalación global) | 15.0.26906.1 | Optional
+Component.HAXM | Intel Hardware Accelerated Execution Manager (HAXM) (instalación global) | 15.0.26919.1 | Optional
+Component.Incredibuild | IncrediBuild: Aceleración de compilación | 15.0.26919.1 | Optional
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.1 | Optional
 Component.JavaJDK | Kit de desarrollo de Java SE (8.0.1120.15) | 15.0.26403.0 | Optional
 Component.MDD.IOS | Herramientas de desarrollo de iOS en C++ | 15.0.26621.2 | Optional
+
 
 ## <a name="net-core-cross-platform-development"></a>Desarrollo multiplataforma de .NET Core
 
@@ -467,10 +479,11 @@ Component.MDD.IOS | Herramientas de desarrollo de iOS en C++ | 15.0.26621.2 | Op
 Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26606.0 | Obligatorio
-Microsoft.NetCore.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26621.2 | Obligatorio
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Herramientas de desarrollo de .NET Core 2.0 | 15.0.26919.1 | Obligatorio
+Microsoft.NetCore.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 2.0 | 15.0.26919.1 | Obligatorio
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Se recomienda
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Se recomienda
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Se recomienda
 Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.0.26621.2 | Se recomienda
 Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.2 | 15.0.26621.2 | Se recomienda
@@ -485,7 +498,7 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools |
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26621.2 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulador de Azure Compute | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26621.2 | Se recomienda
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26823.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.Waverton | Herramientas principales de Azure Cloud Services | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.0.26711.1 | Se recomienda
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 1.10.50614.2 | Se recomienda
@@ -503,9 +516,9 @@ Microsoft.VisualStudio.Component.SQL.ADAL | Entorno de tiempo de ejecución de S
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de comandos de SQL Server | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.DataSources | Orígenes de datos para el soporte de SQL Server | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Se recomienda
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Se recomienda
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.TypeScript.2.3 | SDK de TypeScript 2.3 | 15.0.26621.2 | Se recomienda
@@ -514,7 +527,10 @@ Microsoft.VisualStudio.Component.Web | Herramientas de desarrollo web y ASP.NET 
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Herramientas de desarrollo web y ASP.NET | 15.0.26606.0 | Se recomienda
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 15.0.26606.0 | Se recomienda
+Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.0 - 1.1 para escritorio | 15.0.26919.1 | Optional
+Microsoft.NetCore.1x.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 1.0 - 1.1 para Web | 15.0.26919.1 | Optional
 Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Compatibilidad con IIS en tiempo de desarrollo | 15.0.26720.2 | Optional
+
 
 ## <a name="mobile-development-with-net"></a>Desarrollo móvil con .NET
 
@@ -526,15 +542,15 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Compatibilidad con IIS en
 
 Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
+Component.Android.SDK25 | Instalación de Android SDK (nivel de API 25) | 15.0.26919.1 | Obligatorio
+Component.Google.Android.Emulator.API25 | Google Android Emulator (nivel de API 25) | 15.0.26929.2 | Obligatorio
+Component.HAXM | Intel Hardware Accelerated Execution Manager (HAXM) (instalación global) | 15.0.26919.1 | Obligatorio
+Component.JavaJDK | Kit de desarrollo de Java SE (8.0.1120.15) | 15.0.26403.0 | Obligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | Obligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 15.0.26621.2 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.PortableLibrary | Paquete de compatibilidad de biblioteca portátil de .NET | 15.0.26208.0 | Obligatorio
 Component.Android.NDK.R13B | Android NDK (R13B) | 13.1.6 | Se recomienda
-Component.Android.SDK23 | Instalación de Android SDK (nivel de API 23) | 15.0.26606.0 | Se recomienda
-Component.Google.Android.Emulator.API23.V2 | Emulador de Android de Google	 (nivel de API 23) | 15.0.26711.1 | Se recomienda
-Component.HAXM | Intel Hardware Accelerated Execution Manager (HAXM) | 15.0.26208.0 | Se recomienda
-Component.JavaJDK | Kit de desarrollo de Java SE (8.0.1120.15) | 15.0.26403.0 | Se recomienda
 Component.Xamarin | Xamarin | 15.0.26711.1 | Se recomienda
 Component.Xamarin.Inspector | Xamarin Workbooks | 15.0.26606.0 | Se recomienda
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 15.0.26606.0 | Se recomienda
@@ -544,7 +560,7 @@ Microsoft.VisualStudio.Component.NuGet | Administrador de paquetes de NuGet | 15
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26711.1 | Se recomienda
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Se recomienda
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Optional
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Optional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas para generación de perfiles de .NET | 15.0.26711.1 | Optional
@@ -552,8 +568,9 @@ Microsoft.VisualStudio.Component.Graphics | Editores de imágenes y modelos 3D |
 Microsoft.VisualStudio.Component.Phone.Emulator.15063 | Emulador de Windows 10 Mobile (Creators Update) | 15.0.26711.1 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VisualStudioData | Referencias de servicio y orígenes de datos | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Herramientas de la Plataforma universal de Windows para Xamarin | 15.0.26606.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.0.27004.2002 | Optional
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Herramientas de la Plataforma universal de Windows para Xamarin | 15.0.27004.2002 | Optional
+
 
 ## <a name="aspnet-and-web-development"></a>Desarrollo web y ASP.NET
 
@@ -566,10 +583,11 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Herramientas de la Plataform
 Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26606.0 | Obligatorio
-Microsoft.NetCore.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26621.2 | Obligatorio
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | Herramientas de desarrollo de .NET Core 2.0 | 15.0.26919.1 | Obligatorio
+Microsoft.NetCore.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 2.0 | 15.0.26919.1 | Obligatorio
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Se recomienda
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Se recomienda
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Se recomienda
 Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Se recomienda
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.0.26621.2 | Se recomienda
 Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.2 | 15.0.26621.2 | Se recomienda
@@ -584,7 +602,7 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools |
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26621.2 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulador de Azure Compute | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26621.2 | Se recomienda
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26823.1 | Se recomienda
 Microsoft.VisualStudio.Component.Azure.Waverton | Herramientas principales de Azure Cloud Services | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.0.26711.1 | Se recomienda
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 1.10.50614.2 | Se recomienda
@@ -603,9 +621,9 @@ Microsoft.VisualStudio.Component.SQL.ADAL | Entorno de tiempo de ejecución de S
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de comandos de SQL Server | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.DataSources | Orígenes de datos para el soporte de SQL Server | 15.0.26621.2 | Se recomienda
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Se recomienda
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Se recomienda
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26208.0 | Se recomienda
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Se recomienda
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.TypeScript.2.3 | SDK de TypeScript 2.3 | 15.0.26621.2 | Se recomienda
@@ -621,15 +639,18 @@ Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.0.26419.1 | Opc
 Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7 | 15.0.26606.0 | Optional
+Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.0 - 1.1 para escritorio | 15.0.26919.1 | Optional
+Microsoft.NetCore.1x.ComponentGroup.Web | Herramientas de desarrollo de .NET Core 1.0 - 1.1 para Web | 15.0.26919.1 | Optional
 Microsoft.VisualStudio.Component.FSharp | Compatibilidad con el idioma F# | 15.0.26606.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Compatibilidad con IIS en tiempo de desarrollo | 15.0.26720.2 | Optional
 Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.0.26606.0 | Optional
+
 
 ## <a name="nodejs-development"></a>Desarrollo de Node.js
 
 **Id.:** Microsoft.VisualStudio.Workload.Node
 
-**Descripción:** cree aplicaciones de red escalables con Node.js, un tiempo de ejecución de JavaScript asincrónico y orientado a eventos. 
+**Descripción:** cree aplicaciones de red escalables con Node.js, un tiempo de ejecución de JavaScript asincrónico y orientado a eventos.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
@@ -639,7 +660,7 @@ Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Compatibilidad con lenguaje JavaScript y TypeScript | 15.0.26606.0 | Obligatorio
-Microsoft.VisualStudio.Component.Node.Tools | Compatibilidad con Node.js | 15.0.26621.2 | Obligatorio
+Microsoft.VisualStudio.Component.Node.Tools | Compatibilidad con Node.js | 15.0.26823.1 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26711.1 | Obligatorio
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
@@ -651,7 +672,8 @@ Microsoft.VisualStudio.Component.Git | Git para Windows | 15.0.26208.0 | Se reco
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas para generación de perfiles de .NET | 15.0.26711.1 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26823.1 | Optional
+
 
 ## <a name="officesharepoint-development"></a>Desarrollo de Office y SharePoint
 
@@ -665,7 +687,7 @@ Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Obligatorio
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Obligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Obligatorio
 Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.2 | 15.0.26621.2 | Obligatorio
 Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5 | 15.0.26621.2 | Obligatorio
@@ -675,12 +697,12 @@ Microsoft.Net.Component.4.TargetingPack | Paquete de compatibilidad de .NET Fram
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26621.2 | Obligatorio
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 1.10.50614.2 | Obligatorio
-Microsoft.VisualStudio.Component.Debugger.JustInTime | Depurador Just-In-Time | 15.0.26621.2 | Obligatorio
+Microsoft.VisualStudio.Component.Debugger.JustInTime | Depurador Just-In-Time | 15.0.26823.1 | Obligatorio
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Compatibilidad con lenguaje JavaScript y TypeScript | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo de carga de trabajo de escritorio administrado | 15.0.26419.1 | Obligatorio
-Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Herramientas de desarrollo de escritorio de .NET | 15.0.26621.2 | Obligatorio
+Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Herramientas de desarrollo de escritorio de .NET | 15.0.26906.1 | Obligatorio
 Microsoft.VisualStudio.Component.NuGet | Administrador de paquetes de NuGet | 15.0.26621.2 | Obligatorio
 Microsoft.VisualStudio.Component.PortableLibrary | Paquete de compatibilidad de biblioteca portátil de .NET | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.26208.0 | Obligatorio
@@ -690,9 +712,9 @@ Microsoft.VisualStudio.Component.SQL.ADAL | Entorno de tiempo de ejecución de S
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de comandos de SQL Server | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.DataSources | Orígenes de datos para el soporte de SQL Server | 15.0.26621.2 | Obligatorio
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Obligatorio
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Obligatorio
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Obligatorio
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26208.0 | Obligatorio
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Obligatorio
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.TypeScript.2.3 | SDK de TypeScript 2.3 | 15.0.26621.2 | Obligatorio
@@ -704,6 +726,7 @@ Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 15.0.2
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Herramientas de desarrollo web y ASP.NET | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.TeamOffice | Visual Studio Tools para Office (VSTO) | 15.0.26606.0 | Se recomienda
+
 
 ## <a name="python-development"></a>Desarrollo de Python
 
@@ -718,7 +741,7 @@ Id. de componente | Nombre | Versión | Tipo de dependencia
 Component.CPython3.x64 | Python 3 64 bits (3.6.2) | 3.6.2 | Se recomienda
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
 Microsoft.Component.CookiecutterTools | Compatibilidad con plantillas de Cookiecutter | 15.0.26621.2 | Se recomienda
-Microsoft.Component.PythonTools | Compatibilidad con el lenguaje Python | 15.0.26730.0 | Se recomienda
+Microsoft.Component.PythonTools | Compatibilidad con el lenguaje Python | 15.0.26823.1 | Se recomienda
 Microsoft.Component.PythonTools.Web | Compatibilidad web con Python | 15.0.26606.0 | Se recomienda
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK de Windows Universal CRT | 15.0.26208.0 | Se recomienda
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Herramientas de conectividad y de publicación | 1.10.50614.2 | Se recomienda
@@ -740,11 +763,11 @@ Component.CPython2.x64 | Python 2 de 64 bits (2.7.13) | 2.7.13 | Opcional
 Component.CPython2.x86 | Python 2 de 32 bits (2.7.13) | 2.7.13 | Opcional
 Component.CPython3.x86 | Python 3 32 bits (3.6.2) | 3.6.2 | Optional
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Optional
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Optional
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Optional
 Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Optional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Opcional
 Microsoft.Component.PythonTools.UWP | Compatibilidad con IoT de Python | 15.0.26606.0 | Optional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Herramientas de desarrollo nativo de Python | 15.0.26730.0 | Optional
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Herramientas de desarrollo nativo de Python | 15.0.27004.2002 | Optional
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.0.26621.2 | Optional
 Microsoft.Net.Component.4.5.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.2 | 15.0.26621.2 | Optional
 Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5 | 15.0.26621.2 | Optional
@@ -758,12 +781,12 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools |
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Opcional
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulador de Azure Compute | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton | Herramientas principales de Azure Cloud Services | 15.0.26208.0 | Opcional
 Microsoft.VisualStudio.Component.ClassDesigner | Diseñador de clases | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas para generación de perfiles de .NET | 15.0.26711.1 | Optional
 Microsoft.VisualStudio.Component.Graphics | Editores de imágenes y modelos 3D | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | SDK de Windows 8.1 de herramientas gráficas | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Opcional
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.0.26606.0 | Optional
@@ -773,21 +796,22 @@ Microsoft.VisualStudio.Component.PortableLibrary | Paquete de compatibilidad de 
 Microsoft.VisualStudio.Component.SQL.ADAL | Entorno de tiempo de ejecución de SQL ADAL | 15.0.26606.0 | Optional
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de comandos de SQL Server | 15.0.26208.0 | Opcional
 Microsoft.VisualStudio.Component.SQL.DataSources | Orígenes de datos para el soporte de SQL Server | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Optional
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Opcional
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Optional
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VC.140 | Conjunto de herramientas de VC++ 2015.3 v140 para el escritorio (x86, x64) | 15.0.26720.2 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Optional
-Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26720.2 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.VC.DiagnosticTools | Herramientas de generación de perfiles de C++ | 15.0.26823.1 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.Web | Herramientas de desarrollo web y ASP.NET | 15.0.26606.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución de C de Windows Universal | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK de Windows 10 (10.0.10586.0) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | SDK de Windows 10 SDK (10.0.15063.0) para escritorio C++ x86 y x64 | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | SDK de Windows 10 (10.0.16299.0) para escritorio C++ [x86 and x64] | 15.0.27004.2002 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.0.27004.2002 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 10 (10.0.16299.0) para UWP: C++ | 15.0.27004.2002 | Optional
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Herramientas de desarrollo web y ASP.NET | 15.0.26606.0 | Optional
+
 
 ## <a name="universal-windows-platform-development"></a>Desarrollo de la Plataforma universal de Windows
 
@@ -801,7 +825,7 @@ Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Obligatorio
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Obligatorio
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Obligatorio
 Microsoft.ComponentGroup.Blend | Blend para Visual Studio | 15.0.26711.1 | Obligatorio
 Microsoft.Net.Component.4.5.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5 | 15.0.26621.2 | Obligatorio
@@ -818,24 +842,28 @@ Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 1
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.TypeScript.2.3 | SDK de TypeScript 2.3 | 15.0.26621.2 | Obligatorio
-Microsoft.VisualStudio.Component.UWP.Support | Herramientas de la Plataforma universal de Windows | 15.0.26621.2 | Obligatorio
+Microsoft.VisualStudio.Component.UWP.Support | Herramientas de la Plataforma universal de Windows | 15.0.26906.1 | Obligatorio
 Microsoft.VisualStudio.Component.VisualStudioData | Referencias de servicio y orígenes de datos | 15.0.26208.0 | Obligatorio
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Obligatorio
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Herramientas de la Plataforma universal de Windows para Cordova | 15.0.26711.1 | Obligatorio
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Herramientas de la Plataforma universal de Windows para Xamarin | 15.0.26606.0 | Obligatorio
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.0.27004.2002 | Obligatorio
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Herramientas de la Plataforma universal de Windows para Cordova | 15.0.27004.2002 | Obligatorio
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Herramientas de la Plataforma universal de Windows para Xamarin | 15.0.27004.2002 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 15.0.26606.0 | Obligatorio
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Se recomienda
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.0.26621.2 | Se recomienda
+Microsoft.VisualStudio.ComponentGroup.Win10SDK_10.0.15063.UWP.All | SDK de Windows 10 (10.0.15063.0) para UWP | 15.0.27004.2002 | Se recomienda
 Microsoft.Component.VC.Runtime.OSSupport | Tiempo de ejecución de Visual C++ para UWP | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | SDK de Windows 8.1 de herramientas gráficas | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Phone.Emulator.15063 | Emulador de Windows 10 Mobile (Creators Update) | 15.0.26711.1 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Bibliotecas y compiladores de Visual Studio C++ para ARM | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Bibliotecas y compiladores de Visual Studio C++ para ARM | 15.0.26906.1 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | SDK de Windows 10 (10.0.10240.0) | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | SDK de Windows 10 (10.0.10586.0) | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK de Windows 10 (10.0.14393.0) | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | SDK de Windows 10 (10.0.15063.0) para UWP: C++ | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | Herramientas de la Plataforma universal de Windows de C++ | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 10 (10.0.16299.0) para UWP: C++ | 15.0.27004.2002 | Optional
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | Herramientas de la Plataforma universal de Windows de C++ | 15.0.27004.2002 | Optional
+
 
 ## <a name="visual-studio-extension-development"></a>Desarrollo de extensiones de Visual Studio
 
@@ -847,7 +875,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC | Herramientas de la Plataforma uni
 
 Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Obligatorio
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Obligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | Obligatorio
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 15.0.26621.2 | Obligatorio
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrollo de .NET Framework 4.6.1 | 15.0.26606.0 | Obligatorio
@@ -866,11 +894,12 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual B
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.26711.1 | Optional
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.VC.ATL | Compatibilidad con ATL para Visual C++ | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.VC.ATL | Compatibilidad con ATL para Visual C++ | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | Compatibilidad con MFC y ATL (x86 y x64) | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 15.0.26621.2 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de VC++ 2017 v141 (x86,x64) | 15.0.26823.1 | Optional
+Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 15.0.26919.1 | Optional
+
 
 ## <a name="mobile-development-with-javascript"></a>Desarrollo móvil con JavaScript
 
@@ -894,11 +923,11 @@ Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 1
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Obligatorio
 Microsoft.VisualStudio.Component.TypeScript.2.3 | SDK de TypeScript 2.3 | 15.0.26621.2 | Obligatorio
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desarrollo web y ASP.NET | 15.0.26606.0 | Obligatorio
-Component.Android.SDK23 | Instalación de Android SDK (nivel de API 23) | 15.0.26606.0 | Optional
-Component.Google.Android.Emulator.API23.V2 | Emulador de Android de Google	 (nivel de API 23) | 15.0.26711.1 | Optional
-Component.HAXM | Intel Hardware Accelerated Execution Manager (HAXM) | 15.0.26208.0 | Optional
+Component.Android.SDK23.Private | Instalación de Android SDK (nivel de API 23) (instalación local) | 15.0.26906.1 | Optional
+Component.Google.Android.Emulator.API23.Private | Google Android Emulator (nivel de API 23) (instalación local) | 15.0.26906.1 | Optional
+Component.HAXM.Private | Intel Hardware Accelerated Execution Manager (HAXM) (instalación local) | 15.0.26919.1 | Optional
 Component.JavaJDK | Kit de desarrollo de Java SE (8.0.1120.15) | 15.0.26403.0 | Optional
-Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26208.0 | Optional
+Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.26919.1 | Optional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas para generación de perfiles de .NET | 15.0.26711.1 | Optional
@@ -907,8 +936,9 @@ Microsoft.VisualStudio.Component.Graphics | Editores de imágenes y modelos 3D |
 Microsoft.VisualStudio.Component.Phone.Emulator.15063 | Emulador de Windows 10 Mobile (Creators Update) | 15.0.26711.1 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de datos CLR para SQL Server | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VisualStudioData | Referencias de servicio y orígenes de datos | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | SDK de Windows 10 (10.0.15063.0) para UWP: C#, VB, JS | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Herramientas de la Plataforma universal de Windows para Cordova | 15.0.26711.1 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | SDK de Windows 10 (10.0.16299.0) para UWP: C#, VB, JS | 15.0.27004.2002 | Optional
+Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Herramientas de la Plataforma universal de Windows para Cordova | 15.0.27004.2002 | Optional
+
 
 ## <a name="unaffiliated-components"></a>Componentes no afiliados
 
@@ -920,16 +950,21 @@ Component.Android.Emulator | Emulador de Visual Studio para Android | 15.0.26711
 Component.Android.NDK.R11C | Android NDK (R11C) | 11.3.13
 Component.Android.NDK.R11C_3264 | Android NDK (R11C) (32 bits) | 11.3.15
 Component.GitHub.VisualStudio | Extensión de GitHub para Visual Studio | 2.2.0.10
-Microsoft.Component.Blend.SDK.WPF | SDK de Blend para Visual Studio para .NET | 15.0.26711.1
+Microsoft.Component.Blend.SDK.WPF | SDK de Blend para Visual Studio para .NET | 15.0.26929.2
 Microsoft.Component.HelpViewer | Visor de Ayuda | 15.0.26711.1
 Microsoft.VisualStudio.Component.DependencyValidation.Community | Validación de dependencias | 15.0.26208.0
-Microsoft.VisualStudio.Component.GraphDocument | Editor DGML | 15.0.26208.0
+Microsoft.VisualStudio.Component.GraphDocument | Editor DGML | 15.0.26906.1
 Microsoft.VisualStudio.Component.LinqToSql | Herramientas de LINQ to SQL | 15.0.26208.0
 Microsoft.VisualStudio.Component.Phone.Emulator | Emulador de Windows 10 Mobile (Anniversary Edition) | 15.0.26711.1
 Microsoft.VisualStudio.Component.TestTools.Core | Características principales de las herramientas de pruebas | 15.0.26606.0
 Microsoft.VisualStudio.Component.TypeScript.2.0 | SDK de TypeScript 2.0 | 15.0.26504.0
 Microsoft.VisualStudio.Component.TypeScript.2.1 | SDK de TypeScript 2.1 | 15.0.26208.0
 Microsoft.VisualStudio.Component.TypeScript.2.2 | SDK de TypeScript 2.2 | 15.0.26504.0
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Bibliotecas y compiladores de Visual C++ para ARM64 | 15.0.26906.1
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | SDK de Windows 10 SDK (10.0.16299.0) para escritorio C++ [ARM y ARM64] | 15.0.27004.2002
+
+## <a name="get-support"></a>Obtener soporte técnico
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, vea sugerencias para la solución de problemas en la página [Solucionar problemas de errores de instalación y actualización de Visual Studio 2017](troubleshooting-installation-issues.md). Asimismo, puede informarnos de problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) del IDE de Visual Studio o compartir una sugerencia con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579). Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), hacer preguntas y encontrar respuestas. También puede comunicarse con nosotros y con otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la Comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio) (requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
 
@@ -938,4 +973,3 @@ Microsoft.VisualStudio.Component.TypeScript.2.2 | SDK de TypeScript 2.2 | 15.0.2
 * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Ejemplos de parámetros de línea de comandos](command-line-parameter-examples.md)
 * [Crear una instalación sin conexión de Visual Studio](create-an-offline-installation-of-visual-studio.md)
-
