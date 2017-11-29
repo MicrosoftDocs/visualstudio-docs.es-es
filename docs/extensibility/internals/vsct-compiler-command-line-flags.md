@@ -1,25 +1,27 @@
 ---
-title: "Marcadores de l&#237;nea de comandos del compilador VSCT | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Archivos VSCT, compilar"
-  - "compilación de archivos de tabla de comandos (archivos VSCT)"
+title: "Marcadores de línea de comandos del compilador VSCT | Documentos de Microsoft"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT files, compiling
+- command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fd18d04adfbf3acd0ca50c1e75bd2a1694b28721
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Marcadores de l&#237;nea de comandos del compilador VSCT
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="vsct-compiler-command-line-flags"></a>Marcadores de línea de comandos del compilador VSCT
 El compilador de la tabla de comandos de Visual Studio (VSCT) proporciona modificadores de línea de comandos para asegurarse de compilación correcta de los archivos de vsct.  
   
 ## <a name="command-line-parameters"></a>Parámetros de línea de comandos  
@@ -60,7 +62,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Especifique todos los símbolos definidos adicionales.|  
 |-I|Indicar que el adicionales incluyen rutas de acceso que se deben usar al resolver referencias de archivo.|  
 |-L|Especifique el <xref:System.Globalization.CultureInfo> nombre de referencia cultural, por ejemplo "en-US".|  
-|-E|Emitir objetos de C# en el espacio de nombres especificado para los elementos de comando, seguido por [C &#124; H &#124; [N]:*filename*donde C = C#, H = encabezado de C++, N = espacio de nombres. El espacio de nombres es necesario en C#.|  
+|-E|Emitir objetos de C# en el espacio de nombres especificado para los elementos de comando, seguido por [C &#124; H &#124; N]:*filename*donde C = C#, H = encabezado de C++, N = espacio de nombres. El espacio de nombres es necesario en C#.|  
 |-v|Resultado detallado.|  
   
  El modificador -L indica al compilador que seleccione un grupo de cadenas para generar el archivo .cto binario que se corresponde con el determinado <xref:System.Globalization.CultureInfo> nombre de referencia cultural. El nombre de la referencia cultural especificada debe coincidir con el atributo de idioma de uno o varios [cadenas elemento](../../extensibility/strings-element.md) en el archivo .vsct. Si un elemento de cadenas no tiene ningún atributo de idioma, se hereda de la que contiene [CommandTable elemento](../../extensibility/commandtable-element.md).  
@@ -71,11 +73,11 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  El modificador -E puede usarse para emitir un archivo de encabezado de estilo C que contiene los símbolos utilizados por la tabla de comandos, o para emitir un archivo C# que contiene objetos para los símbolos de comando.  
   
- -D e – I conmutadores tienen la sintaxis de las marcas de preprocesador de Cl.exe C que tienen el mismo nombre. – D las definiciones que tienen el formato X = Y se utilizan para la expansión de basado en XML \< Defined> pruebas en `Condition` atributos. : Se incluyen las rutas de acceso se utilizan para resolver \< Include>, \< Extern> y \< mapa de bits> referencias de archivo. Para obtener más información, consulte el [referencia de esquemas XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+ -D e - I conmutadores tienen la sintaxis de las marcas de preprocesador de Cl.exe C que tienen el mismo nombre. -D las definiciones que tienen el formato X = Y se utilizan para la expansión de XML-based \<Defined > pruebas en `Condition` atributos. -Se incluyen las rutas de acceso se utilizan para resolver \<Include >, \<Extern > y \<mapa de bits > referencias de archivo. Para obtener más información, consulte el [referencia de esquemas XML de VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   
- El compilador VSCT también puede descompilar un archivo binario generado anteriormente. Para ello, proporcione un archivo binario para el \< infile>.   Si el archivo binario se ha generado por el compilador VSCT, tendrán sus símbolos ya insertados y generará un resultado con los nombres simbólicos en una \< símbolos> sección de la salida. Si el archivo binario se ha generado por el compilador CTC, la salida contendrá los GUID e identificadores real. Si el archivo *.ctsym generado por las versiones actuales de Ctc.exe está en la misma carpeta que el archivo de entrada binario, los símbolos se cargarán desde ese archivo y se usa para la salida.  
+ El compilador VSCT también puede descompilar un archivo binario generado anteriormente. Para ello, proporcione un archivo binario para el \<infile >.   Si el archivo binario se ha generado por el compilador VSCT, tendrán sus símbolos ya insertados y generará un resultado con los nombres simbólicos en una \<símbolos > sección de la salida. Si el archivo binario se ha generado por el compilador CTC, la salida contendrá los GUID e identificadores real. Si el archivo *.ctsym generado por las versiones actuales de Ctc.exe está en la misma carpeta que el archivo de entrada binario, los símbolos se cargarán desde ese archivo y se usa para la salida.  
   
 ## <a name="see-also"></a>Vea también  
  [Tabla de comandos de Visual Studio (. Archivos Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Referencia del esquema XML de VSCT](../../extensibility/vsct-xml-schema-reference.md)   
- [¿Cómo VSPackages agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Adición de elementos de la interfaz de usuario por VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

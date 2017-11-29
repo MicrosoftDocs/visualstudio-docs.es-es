@@ -1,52 +1,53 @@
 ---
-title: "global (Propiedad, Regular Expression, JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Global"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "global (propiedad)"
+title: "global (propiedad) (expresión Regular) (JavaScript) | Documentos de Microsoft"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Global
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: global property
 ms.assetid: 76a0f115-0d89-4aca-86d5-932895c6d649
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7e2b0256fea60b7ab998c504e79565fc7028cd98
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# global (Propiedad, Regular Expression, JavaScript)
-Devuelve un valor Boolean que indica el estado de la marca global \(**g**\) usada con una expresión regular.  El valor predeterminado es **false**.  Es de solo lectura.  
+# <a name="global-property-regular-expression-javascript"></a>global (Propiedad, Regular Expression, JavaScript)
+Devuelve un valor booleano que indica el estado del indicador global (**g**) utilizado con una expresión regular. Valor predeterminado es **false**. Sólo lectura.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
   
 rgExp.global  
 ```  
   
-## Comentarios  
- La referencia obligatoria `rgExp` es una instancia de un objeto **Regular Expression**.  
+## <a name="remarks"></a>Comentarios  
+ Requerido `rgExp` referencia es una instancia de un **expresión Regular** objeto.  
   
- La propiedad `global` devuelve **true** si la marca global se establece para una expresión regular y **False** de lo contrario.  
+ El `global` propiedad devuelve **true** si la marca global se establece para una expresión regular y devuelve **false** si no lo está.  
   
- Cuando se usa, la marca global indica que en una búsqueda se deben buscar todas las repeticiones del patrón dentro de la cadena de búsqueda y no solo la primera.  También se conoce como coincidencia global.  
+ Cuando se utiliza, la marca global indica que una búsqueda debe encontrar todas las apariciones del patrón dentro de la cadena buscada, no solo la primera de ellas. Se trata también conocido como coincidencia global.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra el uso de la propiedad `global`.  Si pasas **g** a la función que se muestra más abajo, todas las instancias de la palabra "the" se reemplazan con la palabra "a".  Observa que la palabra "The" situada al principio de la cadena no se reemplaza porque la marca **i** \(omitir mayúsculas y minúsculas\) no se pasa a la función.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la `global` propiedad. Si se pasa **g** "en a la función que se muestra a continuación, todas las instancias de la palabra the" se reemplazan por la palabra "a". Tenga en cuenta que el "The" al principio de la cadena no se reemplaza porque la **i** (Omitir mayúsculas y minúsculas) marca no se pasa a la función.  
   
- Esta función muestra la condición de las propiedades asociadas a las marcas permitidas de expresiones regulares, que son **g**, **i** y **m**.  La función también muestra la cadena una vez realizados todos los reemplazos.  
+ Esta función muestra la condición de las propiedades asociadas a las marcas de expresión regular permitidas, que son **g**, **i**, y **m**. La función también muestra la cadena con todos los reemplazos realizados.  
   
-```javascript  
+```JavaScript  
 function RegExpPropDemo(flag){  
    // The flag parameter is a string that contains  
    // g, i, or m.  The flags can be combined.  
@@ -81,22 +82,22 @@ function RegExpPropDemo(flag){
 document.write(RegExpPropDemo("g"));  
 ```  
   
-## Ejemplo  
- A continuación se muestra el resultado que se obtiene.  
+## <a name="example"></a>Ejemplo  
+ Aquí te mostramos la salida resultante.  
   
-```javascript  
+```JavaScript  
 global: true  
 ignoreCase: false  
 multiline: false  
 Resulting String: The batter hit a ball with a bat and a fielder caught a ball with a glove.  
 ```  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Se aplica a**: [Regular Expression \(Objeto\)](../../javascript/reference/regular-expression-object-javascript.md)  
+ **Se aplica a**: [Regular Expression (objeto)](../../javascript/reference/regular-expression-object-javascript.md)  
   
-## Vea también  
- [ignoreCase \(Propiedad, Regular Expression\)](../../javascript/reference/ignorecase-property-regular-expression-javascript.md)   
- [multiline \(Propiedad, Regular Expression\)](../../javascript/reference/multiline-property-regular-expression-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/es-es/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>Vea también  
+ [ignoreCase (propiedad, Regular Expression)](../../javascript/reference/ignorecase-property-regular-expression-javascript.md)   
+ [MultiLine (propiedad) (expresión Regular)](../../javascript/reference/multiline-property-regular-expression-javascript.md)   
+ [Sintaxis de expresión regular (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
