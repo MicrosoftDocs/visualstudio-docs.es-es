@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abbbb1adf829361c5916f91ade5cb1a549444b72
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: b73dc5b153813811a0d2b839e69200a7e5f5a1e9
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Núcleo de ASP.NET de depuración remota en un equipo IIS remoto en Visual Studio de 2017
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde se implementa la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -26,7 +26,7 @@ Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y e
 Esta guía explica cómo instalar y configurar un núcleo de ASP.NET de Visual Studio de 2017, implementarla en IIS y asociar al depurador remoto de Visual Studio. Realizar la depuración remota ASP.NET 4.5.2, consulte [ASP.NET de depuración remota en un equipo con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). También puede implementar y depurar en IIS con Azure. Para obtener más información, consulte [de depuración remota en Azure](../debugger/remote-debugging-azure.md).
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
-* Windows Server 2012 R2 y IIS 8.5
+* Windows Server 2012 R2 y IIS 8
 * Windows Server 2016 y IIS 10
 
 ## <a name="requirements"></a>Requisitos
@@ -35,7 +35,7 @@ No se admite la depuración entre dos equipos conectados a través de un servido
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Crear la aplicación de ASP.NET Core en el equipo de Visual Studio de 2017 
 
-1. Cree una nueva aplicación de ASP.NET Core. (**Archivo > Nuevo > proyecto**, a continuación, seleccione **Visual C# > Web > aplicación Web de ASP.NET Core (.NET Core)** .
+1. Cree una nueva aplicación de ASP.NET Core. (**Archivo > Nuevo > proyecto**, a continuación, seleccione **Visual C# > Web > aplicación Web de ASP.NET Core (.NET Core)**).
 
     En el **ASP.NET Core** sección plantillas, seleccione **aplicación Web**.
 
@@ -58,13 +58,13 @@ Según la configuración de seguridad, puede ahorrar tiempo para agregar los sig
 - download.microsoft.com
 - VisualStudio.com
 
-Si está usando Internet Explorer, puede agregar los sitios de confianza, vaya a **opciones de Internet > seguridad > sitios de confianza > sitios**. Estos pasos son diferentes para otros exploradores.
+Si está usando Internet Explorer, puede agregar los sitios de confianza, vaya a **opciones de Internet > seguridad > sitios de confianza > sitios**. Estos pasos son diferentes para otros exploradores. (Si tiene que descargar una versión anterior del depurador remoto de my.visualstudio.com, algunos sitios de confianza adicionales son necesarios para iniciar sesión).
 
 Al descargar el software, puede obtener las solicitudes para conceder permiso para cargar varias secuencias de comandos del sitio web y recursos. En la mayoría de los casos, estos recursos adicionales no son necesarios para instalar el software.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Instalar ASP.NET Core en Windows Server
 
-1. Instalar el [hospedaje de .NET Core Windows Server](https://go.microsoft.com/fwlink/?linkid=844461) agrupación en el sistema host. El tiempo de ejecución de .NET Core, biblioteca principal de .NET y el módulo de núcleo de ASP.NET, instala la agrupación.
+1. Instalar el [hospedaje de .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) agrupación en el sistema host. El tiempo de ejecución de .NET Core, biblioteca principal de .NET y el módulo de núcleo de ASP.NET, instala la agrupación. Para obtener instrucciones más detalladas, consulte [publicar en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Si el sistema no tiene una conexión a Internet, obtenga e instale el  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  antes de instalar el paquete de hospedaje de .NET Core Windows Server.
@@ -139,7 +139,6 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 
 5. Active  **Mostrar los procesos de todos los usuarios**.
 6. Escriba la primera letra de un nombre de proceso para encontrar rápidamente **dotnet.exe** (para ASP.NET Core).
-    >Nota: Para una aplicación ASP.NET Core, el nombre del proceso anterior era dnx.exe.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
 
@@ -148,6 +147,7 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto >**.
     
     Debería ver la página web de ASP.NET.
+
 9. En la aplicación ASP.NET en ejecución, haga clic en el vínculo a la **sobre** página.
 
     Se alcanzará el punto de interrupción en Visual Studio.
@@ -157,7 +157,7 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 En la mayoría de las instalaciones, se abren los puertos necesarios por la instalación de ASP.NET y el depurador remoto. Sin embargo, debe comprobar que los puertos estén abiertos.
 
 > [!NOTE]
-> En una máquina virtual de Azure, debe abrir puertos a través de la [grupo de seguridad de red](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+> En una máquina virtual de Azure, debe abrir puertos a través de la [grupo de seguridad de red](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Puertos necesarios:
 

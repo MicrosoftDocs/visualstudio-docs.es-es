@@ -13,11 +13,11 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98202db8e59957bfafe81b4a7d611b79c642daf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 773fecba4b3a635d86d6b06937151e38ad94912e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="code-generation-features-for-c"></a>Características de generación de código de C# #
 Visual Studio puede ayudarle a generar partes de código fuente, lo que le permitirá centrarse en el trabajo real.  Las siguientes características de generación de código están disponibles en Visual Studio para C#:
@@ -26,7 +26,8 @@ Visual Studio puede ayudarle a generar partes de código fuente, lo que le permi
 * [Generación de método](code-generation/generate-method.md)
 * [Generación de campo, propiedad, local](code-generation/generate-field-property-local.md)
 * [Generación de constructor](code-generation/generate-constructor.md)
-* [Generación de invalidación](code-generation/generate-override.md)
+* [Generar una invalidación](code-generation/generate-override.md)
+* [Generación de invalidaciones de los métodos Equals y GetHashCode](code-generation/generate-overrides.md)
 * [Generación de comentarios de documentación XML](code-generation/generate-xml-documentation-comments.md)
 * [Implementación de clase abstracta](code-generation/implement-abstract-class.md)
 * [Implementar interfaz](code-generation/implement-interface.md)
@@ -34,4 +35,3 @@ Visual Studio puede ayudarle a generar partes de código fuente, lo que le permi
  
 ## <a name="see-also"></a>Vea también  
  [Usar el entorno de desarrollo de Visual C#](using-the-visual-studio-development-environment-for-csharp.md)   
- 

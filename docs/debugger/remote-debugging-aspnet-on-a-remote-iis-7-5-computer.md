@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed7ae018725e4ba2da5239609d90276d007827aa
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota en un equipo remoto de IIS, ASP.NET
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde se implementa la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -26,7 +26,7 @@ Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y e
 Esta guía explica cómo instalar y configurar una aplicación de Visual Studio de 2017 ASP.NET MVC 4.5.2, implementarla en IIS y adjuntar al depurador remoto de Visual Studio. Realizar la depuración remota ASP.NET Core, vea [remoto depurar ASP.NET Core en un equipo con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). También puede implementar y depurar en IIS con Azure. Para obtener más información, consulte [de depuración remota en Azure](../debugger/remote-debugging-azure.md).
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
-* Windows Server 2012 R2 y IIS 8.5 (para Windows Server 2008 R2, los pasos del servidor son diferentes)
+* Windows Server 2012 R2 y IIS 8 (para Windows Server 2008 R2, los pasos del servidor son diferentes)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Según la configuración de seguridad, puede ahorrar tiempo para agregar los sig
 - download.microsoft.com
 - VisualStudio.com
 
-Si está usando Internet Explorer, puede agregar los sitios de confianza, vaya a **opciones de Internet > seguridad > sitios de confianza > sitios**. Estos pasos son diferentes para otros exploradores.
+Si está usando Internet Explorer, puede agregar los sitios de confianza, vaya a **opciones de Internet > seguridad > sitios de confianza > sitios**. Estos pasos son diferentes para otros exploradores. (Si tiene que descargar una versión anterior del depurador remoto de my.visualstudio.com, algunos sitios de confianza adicionales son necesarios para iniciar sesión).
 
 Al descargar el software, puede obtener las solicitudes para conceder permiso para cargar varias secuencias de comandos del sitio web y recursos. En la mayoría de los casos, estos recursos adicionales no son necesarios para instalar el software.
 

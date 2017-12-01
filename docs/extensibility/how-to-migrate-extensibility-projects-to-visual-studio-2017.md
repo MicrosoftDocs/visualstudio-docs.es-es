@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89591535b232317abf395c237fdc267c847ca699
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb00d2c338ac1ef9e2be6d77d68ebfe2a246d807
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad en Visual Studio de 2017
 
@@ -102,11 +102,6 @@ En lugar de modificar directamente el XML de manifiesto, puede usar la nueva **r
   ![Agregar requisitos previos de roslyn](media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
-
-## <a name="if-migrating-from-preview-4-or-preview-5"></a>Si la migración desde Preview 4 o 5 de vista previa
-
-* Reemplace `SetupDependencies` con `Prerequisites` y mover los elementos de la `Installer` elemento. `Prerequisites`Ahora sigue directamente dentro del `PackageManifest` elemento.
-* [Opcional] Quitar el `GenerateVsixV3` elemento. (Esto fue requerido en la vista previa 5 sólo.) El `GenerateVsixV3` elemento se omitirá en versiones superiores a 5 de vista previa.
 
 ## <a name="update-debug-settings-for-project"></a>Actualizar la configuración de depuración para el proyecto
 
@@ -197,3 +192,15 @@ Ejemplos:
 
 * Si tiene una extensión del depurador y sabe que el proyecto tiene una referencia a VSDebugEng.dll y VSDebug.dll, haga clic en el botón de filtro en el **archivos binarios / nombres de archivos** encabezado.  Busque "VSDebugEng.dll" y haga clic en Aceptar.  A continuación, haga clic en el botón de filtro en el **archivos binarios / nombres de archivos** encabezado nuevo y busque "VSDebug.dll".  Active la casilla "Agregar la selección actual al filtro" y haga clic en Aceptar.  Buscar ahora a través de la **nombre de componente** para encontrar un componente que es la más relacionadas con el tipo de extensión. En este ejemplo, se eligió Just-In-Time del depurador y lo agrega a su vsixmanifest.
 * Si sabe que el proyecto se trata con elementos del depurador, puede buscar "depurador" en el cuadro de búsqueda de filtro para ver qué componentes contienen a depurador en su nombre.
+
+## <a name="specifying-a-visual-studio-2017-release"></a>Especificar una versión de Visual Studio de 2017
+
+Si la extensión requiere una versión específica de 2017 de Visual Studio, por ejemplo, depende de una característica que se han publicado en 15.3, debe especificar el número de compilación en el VSIX **InstallationTarget**. Por ejemplo, versión 15.3 tiene un número de compilación de '15.0.26730.3'. Puede ver la asignación de versiones para generar números [aquí](../install/visual-studio-build-numbers-and-release-dates.md). Con el número de versión '15.3' no funcionará correctamente.
+
+Si la extensión requiere 15.3 o versiones posteriores, declararía el **InstallationTarget versión** como [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```

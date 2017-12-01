@@ -17,24 +17,39 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3f3b54e19d8418f35a733b73ea0616b53bd42ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 9f6f1e4739922a2d73999b36c0dc66e6069a6d6b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Cómo: agregar una dependencia a un paquete VSIX
-Puede configurar la implementación de un paquete VSIX que instala cualquier dependencia que ya no está presente en el equipo de destino. Para ello, incluya las dependencias VSIX en el archivo source.extension.vsixmanifest.  
-  
-#### <a name="to-add-a-dependency"></a>Para agregar una dependencia  
-  
-1.  Abra el archivo source.extension.vsixmanifest en el **diseño** vista. Vaya a la **dependencias** ficha y haga clic en **nuevo**.  
-  
-2.  Para agregar una extensión instalada: en el **agregar nuevas dependencias** cuadro de diálogo, seleccione **extensión instalada** y, después, en la **nombre**, seleccione una extensión en la lista.  
-  
-3.  Para agregar otro VSIX que no está instalado:: en el **agregar nuevas dependencias** cuadro de diálogo, seleccione **archivo en el sistema de archivos** y, a continuación, use la **examinar** para seleccionar la extensión VSIX.  
-  
-## <a name="see-also"></a>Vea también  
- [Referencia de esquema 1.0 de extensión VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Preparación de las extensiones para la implementación de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+
+Puede configurar la implementación de un paquete VSIX que instala cualquier dependencia que ya no está presente en el equipo de destino. Para ello, incluya las dependencias VSIX en el archivo source.extension.vsixmanifest.
+
+## <a name="to-add-a-dependency"></a>Para agregar una dependencia
+
+1. Abra el archivo source.extension.vsixmanifest en el **diseño** vista. Vaya a la **dependencias** ficha y haga clic en **nuevo**.
+
+2. Para agregar una extensión instalada: en el **agregar nuevas dependencias** cuadro de diálogo, seleccione **extensión instalada** y, después, en la **nombre**, seleccione una extensión en la lista.
+
+3. Para agregar otro VSIX que no está instalado:: en el **agregar nuevas dependencias** cuadro de diálogo, seleccione **archivo en el sistema de archivos** y, a continuación, use la **examinar** para seleccionar la extensión VSIX.
+
+## <a name="require-a-specific-visual-studio-release"></a>Requiere una versión específica de Visual Studio
+
+Si la extensión requiere una versión específica de 2017 de Visual Studio, por ejemplo, depende de una característica que se han publicado en 15.3, puede especificar el número de compilación en el VSIX **InstallationTarget**. Por ejemplo, versión 15.3 tiene un número de compilación de '15.0.26730.3'. Puede ver la asignación de versiones para generar números [aquí](../install/visual-studio-build-numbers-and-release-dates.md). Tenga en cuenta que el número de versión '15.3' no funcionará correctamente.
+
+Si la extensión requiere 15.3 o versiones posteriores, declararía el **InstallationTarget versión** como [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```
+
+El VSIXInstaller detectará las versiones anteriores de Visual Studio e informar al usuario que se requiere una actualización posterior.
+
+
+## <a name="see-also"></a>Vea también
+
+ [Referencia de esquema 1.0 de extensión VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b) [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md) [preparar las extensiones para la implementación de Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

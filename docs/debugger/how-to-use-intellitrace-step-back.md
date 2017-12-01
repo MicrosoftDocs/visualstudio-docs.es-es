@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7ad92e708666baf1ab0429c041ca9b7d2e0f95
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Ver las instantáneas mediante la devolución de paso de IntelliTrace
 Devolución de paso de IntelliTrace automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador evento de paso. Las instantáneas registradas permiten volver a los puntos de interrupción anteriores o pasos y ver el estado de la aplicación tal como estaba en el pasado. IntelliTrace paso atrás, ahorrarás tiempo cuando desea ver el estado anterior de la aplicación pero no desea reiniciar la depuración o volver a crear el estado de la aplicación deseada.
@@ -38,7 +38,7 @@ Por motivos de rendimiento, no se realizan las instantáneas que avance muy ráp
 
 ## <a name="navigate-and-view-snapshots"></a>Navegar y ver las instantáneas
 
-Puede navegar entre los eventos mediante el **paso atrás** y **paso adelante** botones en la barra de herramientas de depuración. Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **ventana de herramientas de diagnóstico**. Ejecución paso a paso hacia atrás o hacia delante a un evento automáticamente, se activa la depuración histórica en el evento seleccionado.
+Puede navegar entre los eventos mediante el **paso atrás (Alt + [)** y **paso hacia delante (Alt +])** botones en la barra de herramientas de depuración. Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **ventana de herramientas de diagnóstico**. Ejecución paso a paso hacia atrás o hacia delante a un evento automáticamente, se activa la depuración histórica en el evento seleccionado.
 
 ![Retroceder o avanzar botones](../debugger/media/intellitrace-step-back-icons-description.png "botones paso hacia atrás y hacia delante de paso")
 
