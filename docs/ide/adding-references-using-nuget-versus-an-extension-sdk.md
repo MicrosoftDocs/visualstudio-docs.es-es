@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40f554f21cc2cee9fb6d457ef9f4a560740cebc6
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Agregar referencias usando NuGet en lugar de un SDK de extensión
 
@@ -56,7 +55,7 @@ La tabla siguiente le ayuda a comparar las características de referencia de un 
 |El mecanismo admite una máquina de desarrollo limpia. (Es decir, no se requiere ninguna instalación, y funcionará una sencilla recuperación del control de código fuente).|N|Dado que hace referencia a un SDK, debe proteger la solución y el SDK por separado. Puede proteger el SDK desde las dos ubicaciones predeterminadas que no son del Registro desde las que MSBuild itera los SDK (para obtener más información, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)). Como alternativa, si una ubicación personalizada consta de los SDK, puede especificar el código siguiente en el archivo de proyecto:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Después, proteja los SDK en dicha ubicación.|Y|Puede desproteger la solución y Visual Studio reconocerá inmediatamente los archivos y actuará sobre ellos.|
 |Puede unirse a una gran comunidad existente de autores de paquetes.|N/D|La comunidad es nueva.|Y||
 |Puede unirse a una gran comunidad existente de consumidores de paquetes.|N/D|La comunidad es nueva.|Y||
-|Puede unirse a un ecosistema de asociados (galerías personalizadas, repositorios, etc.).|N/D|Los repositorios disponibles incluyen la Galería de Visual Studio, el Centro de descarga de Microsoft y la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|Y||
+|Puede unirse a un ecosistema de asociados (galerías personalizadas, repositorios, etc.).|N/D|Los repositorios disponibles incluyen Visual Studio Marketplace, el Centro de descarga de Microsoft y la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|Y||
 |El mecanismo se integra con los servidores de compilación de integración continua para la creación y el consumo de paquetes.|Y|El SDK debe pasar la ubicación protegida (propiedad SDKReferenceDirectoryRoot) en la línea de comandos a MSBuild.|Y||
 |El mecanismo admite las versiones de paquete preliminar y estable.|Y|El SDK admite la adición de referencias a varias versiones.|Y||
 |El mecanismo admite la actualización automática de los paquetes instalados.|Y|Si se incluye como VSIX o como parte de las actualizaciones automáticas de Visual Studio, el SDK proporciona notificaciones automáticas.|Y||
