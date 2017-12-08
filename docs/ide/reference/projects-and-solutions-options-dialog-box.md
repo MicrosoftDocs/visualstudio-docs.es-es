@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f912a0aa6588895fb99da83396e2e5caf976e223
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: fee3419b6e041983fb3aa77cace5bb02e48e1b9a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Proyectos y soluciones, Cuadro de diálogo Opciones
 Establece el comportamiento [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] relacionado con proyectos y soluciones. Para acceder a estas opciones, seleccione **Herramientas > Opciones**, expanda **Proyectos y soluciones** y haga clic en **General**.
@@ -32,15 +32,7 @@ Las rutas de acceso predeterminadas para las carpetas de proyectos y plantillas 
 > [!NOTE]
 >  Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Esta página de la Ayuda se ha redactado teniendo en cuenta la **Configuración general de desarrollo**. Para ver o cambiar la configuración, elija **Importar y exportar configuraciones** en el menú **Herramientas**. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="general-tab-options"></a>Opciones de la pestaña General  
- 
-**Carga de solución ligera**: reduce la cantidad de tiempo y memoria necesarios para cargar soluciones grandes en el IDE. Las soluciones grandes que contienen muchos proyectos de C#, Visual Basic o C++ probablemente experimentarán una ventaja de rendimiento considerable al usar la carga de solución ligera.
-
-- **Permitir que Visual Studio elija lo mejor para mi solución**: permite que Visual Studio determine automáticamente si se debe aplicar la carga de solución ligera según las características de la solución.
-- **Habilitado**: siempre se aplica la carga de solución ligera al cargar las soluciones.
-- **Deshabilitado**: nunca se aplica la carga de solución ligera.
-
-Para obtener más información, vea [Optimize Visual Studio Startup Time](../optimize-visual-studio-startup-time.md#speed_up_solution_load) (Optimizar el tiempo de inicio de Visual Studio).
+## <a name="general-tab-options"></a>Opciones de la pestaña General
 
 **Mostrar lista de errores si la compilación termina con errores**  
 Abre la ventana **Lista de errores** al terminar la compilación solo si no se ha podido compilar un proyecto. Se muestran los errores que se producen durante el proceso de compilación. Cuando esta opción está desactivada, se siguen produciendo errores, pero no se abre la ventana una vez finalizada la compilación. Esta opción está habilitada de forma predeterminada.  
