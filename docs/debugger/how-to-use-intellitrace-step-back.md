@@ -1,7 +1,7 @@
 ---
 title: "Ver una instantánea mediante IntelliTrace paso-back - Visual Studio | Documentos de Microsoft"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Ver las instantáneas mediante la devolución de paso de IntelliTrace
 Devolución de paso de IntelliTrace automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador evento de paso. Las instantáneas registradas permiten volver a los puntos de interrupción anteriores o pasos y ver el estado de la aplicación tal como estaba en el pasado. IntelliTrace paso atrás, ahorrarás tiempo cuando desea ver el estado anterior de la aplicación pero no desea reiniciar la depuración o volver a crear el estado de la aplicación deseada.

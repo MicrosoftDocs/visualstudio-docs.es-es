@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por una sesión de depuración en Visual Studio (Xaml y C#)
 En este inicio rápido se muestra cómo navegar por las sesiones de depuración de Visual Studio y cómo ver y cambiar el estado del programa en una sesión.  
@@ -52,7 +52,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  **Abra el archivo de origen MainPage.xaml.cs.** Haga clic con el botón secundario en cualquier parte del editor de XAML y seleccione **Ver código**. Aparece el archivo de código subyacente MainPage.xaml.cs. Observe que el archivo contiene un solo método, el constructor `MainPage()` .  
   
- **Reemplace el constructor MainPage con el código de ejemplo.** Elimine el método MainPage(). Siga este vínculo: [código de ejemplo de navegación (Xaml y C#) del depurador](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)y, a continuación, copie el código que aparece en la sección de C# en el Portapapeles. (Elija **volver** en el explorador o el Visor de ayuda para volver a esta página de inicio rápido.) En el editor de Visual Studio, pegue el código en el bloque `partial class MainPage`. Presione CTRL+ S para guardar el archivo.  
+ **Reemplace el constructor MainPage con el código de ejemplo.** Elimine el método MainPage(). Siga este vínculo: [código de ejemplo de navegación (Xaml y C#) del depurador](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs)y, a continuación, copie el código que aparece en la sección de C# en el Portapapeles. (Elija **volver** en el explorador o el Visor de ayuda para volver a esta página de inicio rápido.) En el editor de Visual Studio, pegue el código en el bloque `partial class MainPage`. Presione CTRL+ S para guardar el archivo.  
   
  Ahora, puede seguir los ejemplos de este tema.  
   
