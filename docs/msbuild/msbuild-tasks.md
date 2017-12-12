@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: cde7cf37c372caff4faa9ec88ecc5958112f0c6f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fc2afbe7b0226cb5983aa3022ff4b24ac31fe7aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-tasks"></a>Tareas de MSBuild
 Una plataforma de compilación debe ser capaz de ejecutar cualquier número de acciones durante el proceso de compilación. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza *tareas* para realizar estas acciones. Una tarea es una unidad de código ejecutable que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza para realizar operaciones de compilación atómicas.  
@@ -42,11 +27,11 @@ Una plataforma de compilación debe ser capaz de ejecutar cualquier número de a
 ## <a name="task-logic"></a>Lógica de las tareas  
  El formato de archivo de proyecto XML [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] no puede ejecutar completamente operaciones de compilación por sí mismo, de modo que la lógica de la tarea debe implementarse fuera del archivo del proyecto.  
   
- La lógica de ejecución de una tarea se implementa como una clase de .NET que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>, que se define en el espacio de nombres <xref:Microsoft.Build.Framework>.  
+ La lógica de ejecución de una tarea se implementa como clase .NET que, a su vez, implementa la interfaz <xref:Microsoft.Build.Framework.ITask>, definida en el espacio de nombres <xref:Microsoft.Build.Framework>.  
   
  La clase de tarea también define los parámetros de entrada y salida disponibles para la tarea en el archivo del proyecto. En el archivo del proyecto se puede acceder a todas las propiedades públicas configurables no estáticas y no abstractas expuestas por la clase de tarea si se coloca un atributo correspondiente con el mismo nombre en el elemento [Task](../msbuild/task-element-msbuild.md).  
   
- Puede escribir su propia tarea mediante la creación de una clase administrada que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Escribir tareas](../msbuild/task-writing.md).  
+ Puede escribir su propia tarea creando una clase administrada que implemente la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Escribir tareas](../msbuild/task-writing.md).  
   
 ## <a name="executing-a-task-from-a-project-file"></a>Ejecutar una tarea desde un archivo del proyecto  
  Antes de ejecutar una tarea en el archivo del proyecto, primero debe asignar el tipo en el ensamblado que implementa la tarea al nombre de tarea con el elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Esto permite a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] saber dónde buscar la lógica de ejecución de la tarea cuando la encuentre en el archivo del proyecto.  

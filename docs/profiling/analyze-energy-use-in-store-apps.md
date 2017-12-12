@@ -1,11 +1,10 @@
 ---
-title: "Análisis del uso de energía en las aplicaciones de la Tienda | Microsoft Docs"
+title: "Análisis del uso de energía en las aplicaciones para UWP | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,34 +13,18 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
-caps.latest.revision: 34
+caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 3a78a0d9afc766d316957b27d70269518f2d9d33
-ms.contentlocale: es-es
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: bcdebabac1197317b5e282be8bd648168f201673
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
-# <a name="analyze-energy-use-in-store-apps"></a>Analizar el uso de energía en las aplicaciones de la Tienda
-El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a analizar el consumo de potencia y energía de las aplicaciones de la Tienda Windows en dispositivos de tableta de bajo consumo que funcionan al menos parte del tiempo con baterías. En un dispositivo que funciona con baterías, una aplicación que usa demasiada energía puede producir tanta insatisfacción en el cliente que este puede decidir incluso desinstalarla. La optimización del uso de energía puede incrementar la adopción y el uso de la aplicación por parte de los clientes.  
+# <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
+El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a analizar el consumo de potencia y energía de las aplicaciones para UWP en dispositivos de tableta de bajo consumo que funcionan siempre o al menos parte del tiempo con baterías. En un dispositivo que funciona con baterías, una aplicación que usa demasiada energía puede producir tanta insatisfacción en el cliente que este puede decidir incluso desinstalarla. La optimización del uso de energía puede incrementar la adopción y el uso de la aplicación por parte de los clientes.  
   
 ##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Qué es el generador de perfiles Consumo de energía, cómo funciona y qué mide  
  El generador de perfiles Consumo de energía captura las actividades de la pantalla, la CPU y las conexiones de red de un dispositivo durante una sesión de generación de perfiles. Después genera estimaciones de la potencia usada para esas actividades y de la cantidad total de energía para la sesión de generación de perfiles.  
@@ -95,10 +78,10 @@ if (performance && performance.mark) {
  *markDescription* es una cadena que contiene el mensaje que se va a mostrar en la información sobre herramientas de la marca de usuario.  
   
 ##  <a name="BKMK_Configure_your_environment_for_profiling"></a> Configurar el entorno para la generación de perfiles  
- Para obtener buenas estimaciones, deberá generar un perfil de uso de energía para la aplicación en un dispositivo de bajo consumo que esté funcionando con baterías. Dado que Visual Studio no se ejecuta en la mayoría de estos dispositivos, deberá conectar su equipo de Visual Studio al dispositivo usando las Herramientas remotas para Visual Studio. Para conectarte con un dispositivo remoto, debes configurar tanto el proyecto de Visual Studio como el dispositivo remoto. Consulte [Ejecutar aplicaciones de la Tienda Windows en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) para obtener más información.  
+ Para obtener buenas estimaciones, deberá generar un perfil de uso de energía para la aplicación en un dispositivo de bajo consumo que esté funcionando con baterías. Dado que Visual Studio no se ejecuta en la mayoría de estos dispositivos, deberá conectar su equipo de Visual Studio al dispositivo usando las Herramientas remotas para Visual Studio. Para conectarte con un dispositivo remoto, debes configurar tanto el proyecto de Visual Studio como el dispositivo remoto. Vea [Ejecución de aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) para más información.  
   
 > [!TIP]
->  -   No le recomendamos la generación de perfiles de energía en el simulador de la Tienda Windows ni en el equipo de Visual Studio. La generación de perfiles en el dispositivo real proporciona datos mucho más realistas.  
+>  -   No se recomienda la generación de perfiles de energía en el simulador de UWP ni en el equipo de Visual Studio. La generación de perfiles en el dispositivo real proporciona datos mucho más realistas.  
 > -   Genere el perfil en el dispositivo de destino mientras esté funcionando con baterías.  
 > -   Cierre otras aplicaciones que puedan usar los mismos recursos (red, CPU o pantalla).  
   
@@ -167,9 +150,10 @@ if (performance && performance.mark) {
   
 -   Las secciones de **estado de la conexión y administración de los costos** para [C#/VB/C++ y XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) y [JavaScript y HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) en el Centro de desarrollo de Windows describen las API de Windows que proporcionan información sobre la conectividad de red que puede usar su aplicación para minimizar el costo del tráfico de red.  
   
-     El simulador de Visual Studio para la Tienda Windows te permite simular las propiedades de la conexión de datos de las API de información de red. Consulta [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
+     El simulador de Visual Studio para aplicaciones para UWP permite simular las propiedades de la conexión de datos de las API de información de red. Vea [Ejecución de aplicaciones para UWP en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
 -   Las herramientas **Control de tiempo de función de JavaScript** y **Uso de CPU** pueden ayudarle a reducir la carga de la CPU siempre que esté causada por funciones ineficaces Vea [Analizar el uso de CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
 
 ## <a name="see-also"></a>Vea también
- [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Generación de perfiles en Visual Studio](../profiling/index.md)  
+ [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

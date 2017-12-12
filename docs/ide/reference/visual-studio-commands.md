@@ -1,32 +1,33 @@
 ---
-title: "Comandos de Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Visual Studio, comandos"
-  - "comandos, Visual Studio"
-  - "sintaxis de comandos"
+title: Comandos de Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio, commands
+- commands, Visual Studio
+- command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Comandos de Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Los comandos de Visual Studio le permiten invocar un comando desde la ventana **Comando**, la ventana **Inmediato** o el cuadro **Buscar\/comando**. En todos los casos, el signo mayor que \(`>`\) se usa para indicar que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.  
+# <a name="visual-studio-commands"></a>Comandos de Visual Studio
+Los comandos de Visual Studio le permiten invocar un comando desde la ventana **Comando** , la ventana **Inmediato** o el cuadro **Buscar/comando** . En todos los casos, el signo mayor que (`>`) se usa para indicar que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.  
   
- Encontrará una lista completa de los comandos y su sintaxis en el cuadro de diálogo **Teclado, Opciones de entorno**.  
+ Encontrará una lista completa de los comandos y su sintaxis en el cuadro de diálogo **Teclado, Opciones de entorno** .  
   
- El carácter de escape de los comandos de Visual Studio es un carácter de intercalación \(^\), lo que significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas \("\), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo,  
+ El carácter de escape de los comandos de Visual Studio es un carácter de intercalación (^), lo que significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo,  
   
 ```  
 >Edit.Find ^^t /regex  
@@ -34,21 +35,21 @@ Los comandos de Visual Studio le permiten invocar un comando desde la ventana **
   
  El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora.  
   
- En las versiones localizadas del IDE, los nombres de los comandos se pueden escribir en el idioma nativo del IDE o en inglés. Por ejemplo, puede escribir `File.NewFile` o `Fichier.NouveauFichier`  en el IDE francés para ejecutar el mismo comando.  
+ En las versiones localizadas del IDE, los nombres de los comandos se pueden escribir en el idioma nativo del IDE o en inglés. Por ejemplo, puede escribir `File.NewFile` o `Fichier.NouveauFichier` en el IDE francés para ejecutar el mismo comando.  
   
- Muchos comandos tienen alias. Para obtener una lista de alias de comandos, consulte [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md).  
+ Muchos comandos tienen alias. Para obtener una lista de alias de comandos, consulte [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).  
   
  Los siguientes comandos toman argumentos o modificadores.  
   
 |Nombre de comando|Descripción|  
-|-----------------------|-----------------|  
+|------------------|-----------------|  
 |[Agregar elemento existente](../../ide/reference/add-existing-item-command.md)|Agrega un archivo existente a la solución actual y lo abre.|  
 |[Agregar proyecto existente](../../ide/reference/add-existing-project-command.md)|Agrega un proyecto existente a la solución actual.|  
-|[Agregar nuevo elemento](../../ide/reference/add-new-item-command.md)|Agrega un nuevo elemento de solución \(como un archivo .htm, .css o .txt o un conjunto de marcos\) a la solución actual y lo abre.|  
+|[Agregar nuevo elemento](../../ide/reference/add-new-item-command.md)|Agrega un nuevo elemento de solución (como un archivo .htm, .css o .txt o un conjunto de marcos) a la solución actual y lo abre.|  
 |[Alias](../../ide/reference/alias-command.md)|Crea un nuevo alias para un comando completo, un comando completo con argumentos o incluso otro alias.|  
 |[Evaluar instrucción](../../ide/reference/evaluate-statement-command.md)|Evalúa y muestra la instrucción dada.|  
-|[Find](../../ide/reference/find-command.md)|Busca archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar**.|  
-|[Buscar en archivos](../../ide/reference/find-in-files-command.md)|Busca archivos empleando un subconjunto de las opciones disponibles en [Buscar en archivos](../../ide/find-in-files.md).|  
+|[Find](../../ide/reference/find-command.md)|Busca archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar** .|  
+|[Buscar en archivos](../../ide/reference/find-in-files-command.md)|Busca archivos empleando un subconjunto de las opciones disponibles en el control [Buscar en archivos](../../ide/find-in-files.md).|  
 |[Ir a](../../ide/reference/go-to-command.md)|Mueve el cursor a la línea especificada.|  
 |[Mostrar pila de llamadas](../../ide/reference/list-call-stack-command.md)|Muestra la pila de llamadas actual.|  
 |[Mostrar desensamblado](../../ide/reference/list-disassembly-command.md)|Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.|  
@@ -63,20 +64,20 @@ Los comandos de Visual Studio le permiten invocar un comando desde la ventana **
 |[Abrir proyecto](../../ide/reference/open-project-command.md)|Abre un proyecto existente y le permite agregar el proyecto a la solución actual.|  
 |[Abrir solución](../../ide/reference/open-solution-command.md)|Abre una solución existente.|  
 |[Imprimir](../../ide/reference/print-command.md)|Evalúa la expresión y muestra los resultados o el texto especificado.|  
-|[Inspección rápida \(Comando\)](../../ide/reference/quick-watch-command.md)|Muestra el texto seleccionado o especificado en el campo **Expresión** del cuadro de diálogo **Inspección rápida**.|  
-|[Reemplazar](../../ide/reference/replace-command.md)|Reemplaza texto de los archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar**.|  
+|[Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md)|Muestra el texto seleccionado o especificado en el campo **Expresión** del cuadro de diálogo **Inspección rápida** .|  
+|[Reemplazar](../../ide/reference/replace-command.md)|Reemplaza texto de los archivos empleando un subconjunto de las opciones disponibles en el control **Buscar y reemplazar** .|  
 |[Reemplazar en archivos](../../ide/reference/replace-in-files-command.md)|Reemplaza texto de los archivos empleando un subconjunto de las opciones disponibles en [Reemplazar en archivos](../../ide/replace-in-files.md).|  
 |[Establecer marco de pila actual](../../ide/reference/set-current-stack-frame-command.md)|Le permite ver un marco de pila determinado.|  
 |[Establecer subproceso actual](../../ide/reference/set-current-thread-command.md)|Le permite ver un subproceso determinado.|  
 |[Establecer base](../../ide/reference/set-radix-command.md)|Determina el número de bytes que se van a ver.|  
 |[Shell](../../ide/reference/shell-command.md)|Inicia programas desde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] como si el comando se hubiera ejecutado desde el símbolo del sistema.|  
-|[ShowWebBrowser \(Comando\)](../../ide/reference/showwebbrowser-command.md)|Muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del entorno de desarrollo integrado \(IDE\).|  
+|[ShowWebBrowser (Comando)](../../ide/reference/showwebbrowser-command.md)|Muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del entorno de desarrollo integrado (IDE).|  
 |[Iniciar](../../ide/reference/start-command.md)|Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.|  
 |[Ruta de acceso](../../ide/reference/symbol-path-command.md)|Establece la lista de directorios para que el depurador busque símbolos.|  
 |[Alternar punto de interrupción](../../ide/reference/toggle-breakpoint-command.md)|Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo.|  
-|[Inspección \(Comando\)](../../ide/reference/watch-command.md)|Crea y abre una instancia especificada de una ventana **Inspección**.|  
+|[Inspección (Comando)](../../ide/reference/watch-command.md)|Crea y abre una instancia especificada de una ventana **Inspección** .|  
   
-## Vea también  
- [Ventana de comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar\/Comando](../../ide/find-command-box.md)   
+## <a name="see-also"></a>Vea también  
+ [Ventana Comandos](../../ide/reference/command-window.md)   
+ [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

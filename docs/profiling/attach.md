@@ -1,82 +1,83 @@
 ---
-title: "Asociar | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Attach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cbba99fd39bff8364e7853cd8d0f73f0e567e1d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Asociar
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La opción **Attach** de VSPerfCmd.exe inicia la generación de perfiles de muestra de los procesos en ejecución que se especifican mediante el identificador de proceso \(PID\).  
+# <a name="attach"></a>Attach
+La opción **Attach** de VSPerfCmd.exe comienza la generación de perfiles de muestra del proceso en ejecución que especifica el id. de proceso (PID).  
   
- Para utilizar la opción **Attach**, debe especificar el método **Sample** en la opción Start.  
+ Para usar la opción **Attach**, debe especificar el método **Sample** en la opción Start.  
   
 > [!NOTE]
->  Si la opción **Start** se especificó con la opción **Crosssession**, cualquier llamada a **VSPerfCmd \/Attach** o a **VSPerfCmd \/Detach** también debe especificar **Crosssession**.  
+>  Si la opción **Start** se ha especificado con la opción **CrossSession**, en cualquier llamada a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** también se debe especificar **CrossSession**.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 VSPerfCmd.exe /Attach:ProcessID [Options]  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `ProcessID`  
- Identificador de proceso \(PID\) del proceso en ejecución.  El PID de un proceso en ejecución se muestra en la pestaña Procesos del Administrador de tareas de Windows.  
+ Id. de proceso (PID) del proceso en ejecución. El PID de un proceso en ejecución se muestra en la pestaña Procesos del Administrador de tareas de Windows.  
   
-## Opciones válidas  
- Las opciones **VSPerfCmd** siguientes se pueden combinar con la opción **Attach** en una línea de comandos única.  
+## <a name="valid-options"></a>Opciones válidas  
+ Las opciones siguientes de **VSPerfCmd** se pueden combinar con la opción **Adjuntar** en una sola línea de comandos.  
   
- **Crosssession**  
- Habilita la generación de perfiles de aplicaciones en sesiones distintas del inicio de sesión.  Necesaria si se especificó la opción **Start** con la opción **Crosssession**.  
+ **CrossSession**  
+ Habilita la generación de perfiles de aplicaciones en las sesiones que no sean la sesión de inicio. Es obligatorio si la opción **Start** se ha especificado con la opción **CrossSession**.  
   
  **Start:** `Method`  
  Inicializa la sesión del generador de perfiles de línea de comandos y establece el método de generación de perfiles especificado.  
   
  **TargetCLR**  
- Especifica la versión del Common Language Runtime \(CLR\) de .NET Framework para la generación de perfiles cuando se carga más de una versión se carga en una sesión de generación de perfiles.  De forma predeterminada, se generan los perfiles de la primera versión cargada.  
+ Especifica la versión de Common Language Runtime (CLR) de .NET Framework para generar perfiles cuando se carga más de una versión en una sesión de generación de perfiles. De forma predeterminada, se genera el perfil de la primera versión cargada.  
   
  **GlobalOn GlobalOff**  
- Reanuda \(**GlobalOn**\) o pausa \(**GlobalOff**\), la generación de perfiles, pero no finaliza la sesión de generación de perfiles.  
+ Reanuda la generación de perfiles de (**GlobalOn**) o detiene la de (**GlobalOff**), pero no finaliza la sesión de generación de perfiles.  
   
  **ProcessOn:** `PID` **ProcessOff:** `PID`  
- Reanuda \(**ProcessOn**\) o pausa \(**ProcessOff**\) la generación de perfiles para el proceso especificado.  
+ Reanuda la generación de perfiles de (**ProcessOn**) o detiene la de (**ProcessOff**) para el proceso especificado.  
   
-## Opciones de Intervalo  
- Se puede especificar una de las siguientes opciones de intervalo de muestreo en la línea de comandos de Attach.  El intervalo de muestreo predeterminado es de 10.000.000 de ciclos de reloj de procesador.  
+## <a name="interval-options"></a>Opciones de intervalo  
+ Se puede especificar una de las siguientes opciones de intervalo de muestreo en la línea de comandos de Attach. El intervalo de muestreo predeterminado es 10 000 000 ciclos de reloj de procesador.  
   
- **Timer**\[**:**`Cycles`\]**PF**\[**:**`Events`\]**Sys**\[**:**Events\]**Counter**\[**:**`Name`,`Reload`,`FriendlyName`\]  
- Especifica el número y el tipo de intervalo de muestreo.  
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
+ Especifica el número y tipo del intervalo de muestreo.  
   
--   **Timer**: muestras cada número `Cycles` de ciclos de reloj de procesador.  Si no se especifica `Cycles`, se utilizan 10.000.000 ciclos.  
+-   **Timer**: muestrea cada `Cycles` ciclos de reloj de procesador. Si no se especifica `Cycles`, se usan 10 000 000 ciclos.  
   
--   **PF**: muestrea cada `Events` errores de página.  Si no se especifica `Events`, se utilizan 10 errores de página.  
+-   **PF**: muestrea cada `Events` errores de página. Si no se especifica `Events`, se usan 10 errores de página.  
   
--   **Sys**: muestrea cada `Events` llamadas al sistema operativo.  Si no se especifica `Events`, se utilizan 10 llamadas al sistema.  
+-   **Sys**: muestrea cada `Events` llamadas al sistema operativo. Si no se especifica `Events`, se usan 10 llamadas del sistema.  
   
--   **Counter**: muestrea cada número `Reload` del contador de rendimiento de la CPU especificado por `Name`.  Opcionalmente, `FriendlyName` puede especificar una cadena para utilizarla como encabezado de columna en informes del generador de perfiles.  
+-   **Counter**: muestrea cada número `Reload` del contador de rendimiento de la CPU que especifica `Name`. Opcionalmente, `FriendlyName` puede especificar una cadena que se usará como el encabezado de columna en los informes del generador de perfiles.  
   
-## Ejemplo  
- En este ejemplo se muestra cómo se adjunta a una instancia en ejecución de una aplicación con el identificador de proceso 12345.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se muestra cómo adjuntar a una instancia en ejecución de una aplicación con el id. de proceso 12345.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Attach:12345  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)

@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 48f2bb4e61ca6a4f9a9464a6b67a3218b418c8ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 Tras completar este tutorial, estará familiarizado con muchas de las herramientas y cuadros de diálogo que puede usar para desarrollar aplicaciones con Visual Studio. Creará una aplicación sencilla de estilo "Hola a todos" mientras aprende más sobre cómo trabajar en el entorno de desarrollo integrado (IDE).  

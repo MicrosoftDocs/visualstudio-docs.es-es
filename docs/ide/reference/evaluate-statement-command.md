@@ -1,44 +1,44 @@
 ---
-title: "Evaluar instrucci&#243;n (Comando) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.evaluatestatement"
-helpviewer_keywords: 
-  - "Debug.EvaluateStatement (comando)"
-  - "Evaluar instrucción (comando)"
+title: "Evaluar instrucción (Comando) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.evaluatestatement
+helpviewer_keywords:
+- Debug.EvaluateStatement command
+- Evaluate Statement command
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 46c80a49d0e043d7cdbffbc74698a29e10ab4795
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Evaluar instrucci&#243;n (Comando)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
 Evalúa y muestra la instrucción dada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Debug.EvaluateStatement text   
 ```  
   
-## Argumentos  
+## <a name="arguments"></a>Argumentos  
  `text`  
- Obligatorio.  Instrucción que se va a evaluar.  
+ Obligatorio. Instrucción que se va a evaluar.  
   
-## Comentarios  
- La ventana utilizada para escribir el comando **EvaluateStatement** determina si un signo igual \(\=\) se interpreta como un operador de comparación o como un operador de asignación.  
+## <a name="remarks"></a>Comentarios  
+ La ventana que se usa para escribir el comando **EvaluateStatement** determina si el signo igual (=) se interpreta como operador de comparación o como operador de asignación.  
   
- En la ventana **Comandos**, un signo igual \(\=\) se interpreta como un operador de comparación.  Así, por ejemplo, si los valores de las variables `a` y `b` son diferentes, el comando  
+ En la ventana **Comandos**, un signo igual (=) se interpreta como un operador de comparación. Por lo tanto, por ejemplo, si los valores de las variables `a` y `b` son diferentes, entonces el comando  
   
 ```  
 >Debug.EvaluateStatement(a=b)  
@@ -46,7 +46,7 @@ Debug.EvaluateStatement text
   
  devolverá un valor de `false`.  
   
- En la ventana **Inmediato**, por el contrario, un signo igual \(\=\) se interpreta como un operador de asignación.  Así, por ejemplo, el comando  
+ En la ventana **Inmediato**, por el contrario, un signo igual (=) se interpreta como un operador de asignación. Por lo tanto, por ejemplo, el comando  
   
 ```  
 >Debug.EvaluateStatement(a=b)  
@@ -54,15 +54,15 @@ Debug.EvaluateStatement text
   
  asignará a la variable `a` el valor de la variable `b`.  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
 ```  
 >Debug.EvaluateStatement(a+b)  
 ```  
   
-## Vea también  
- [Imprimir \(Comando\)](../../ide/reference/print-command.md)   
+## <a name="see-also"></a>Vea también  
+ [Imprimir (Comando)](../../ide/reference/print-command.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana de comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar\/Comando](../../ide/find-command-box.md)   
+ [Ventana Comandos](../../ide/reference/command-window.md)   
+ [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

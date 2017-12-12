@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 18627c9f14e82bef85ff433eea14d99653f78e68
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 Los fragmentos de código de IntelliSense son piezas de código ya creado y listo para insertarlo en la aplicación con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Puede aumentar la productividad proporcionando fragmentos de código que reduzcan la cantidad de tiempo empleado en escribir código repetitivo o buscar ejemplos. Puede utilizar el esquema XML de fragmentos de código de IntelliSense para crear sus propios fragmentos de código y agregar los fragmentos de código que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ya incluye.  
@@ -58,10 +42,7 @@ Los fragmentos de código de IntelliSense son piezas de código ya creado y list
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header)|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference)||  
   
 ##  <a name="assembly"></a> Elemento Assembly  
- Especifica el nombre del ensamblado al que el fragmento de código hace referencia.  
-  
-> [!NOTE]
->  El elemento `Assembly` solo es compatible con fragmentos de código de Visual Basic.  
+ Especifica el nombre del ensamblado al que el fragmento de código hace referencia.
   
  El valor de texto del elemento **Assembly** puede ser bien el nombre descriptivo del ensamblado, como `System.dll`, o su nombre seguro, como `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -83,8 +64,7 @@ Los fragmentos de código de IntelliSense son piezas de código ya creado y list
 ```xml  
 <Author>  
    Code Snippet Author  
-</Author>  
-  
+</Author>    
 ```  
   
 |Elemento Parent|Descripción|  
@@ -93,36 +73,39 @@ Los fragmentos de código de IntelliSense son piezas de código ya creado y list
   
  Se requiere un valor de texto. Este texto especifica al autor del fragmento de código.  
   
-##  <a name="code"></a> Elemento Code  
- Proporciona un contenedor para los bloques de código cortos.  
+## <a name="a-namecode--code-element"></a><a name="code" /> Elemento Code  
+Proporciona un contenedor para los bloques de código cortos.  
   
- Se pueden usar dos palabras reservadas en el texto del elemento `Code`: `$end$` y `$selected$`. `$end$` marca la ubicación en la que se coloca el cursor después de insertar el fragmento de código. `$selected$` representa el texto seleccionado en el documento que se insertará en el fragmento de código cuando se invoque. Por ejemplo, dado un fragmento de código que incluya:  
+### <a name="keywords"></a>Palabras clave
+Se pueden usar dos palabras reservadas en el texto del elemento `Code`: `$end$` y `$selected$`. `$end$` marca la ubicación en la que se coloca el cursor después de insertar el fragmento de código. `$selected$` representa el texto seleccionado en el documento que se insertará en el fragmento de código cuando se invoque. Por ejemplo, dado un fragmento de código que incluya:  
   
-```xml  
+```  
 $selected$ is a great color.  
 ```  
   
- Si se selecciona la palabra "Blue" cuando el usuario invoca la plantilla, el resultado es:  
+Si se selecciona la palabra "Blue" cuando el usuario invoca la plantilla, el resultado es:  
   
-```xml  
+```  
 Blue is a great color.  
 ```  
   
- No puede usar `$end$` o `$selected$` más de una vez en un fragmento de código. Si lo hace, se reconoce solo la segunda instancia. Dado un fragmento de código que incluya:  
+No puede usar `$end$` o `$selected$` más de una vez en un fragmento de código. Si lo hace, se reconoce solo la segunda instancia. Dado un fragmento de código que incluya:  
   
 ```  
 $selected$ is a great color. I love $selected$.  
 ```  
   
- Si se selecciona la palabra "Blue", el resultado es:  
+Si se selecciona la palabra "Blue", el resultado es:  
   
 ```  
-is a great color. I love Blue.  
+ is a great color. I love Blue.  
 ```  
   
- El espacio inicial aparece porque hay un espacio entre `$selected$` y `is`.  
+El espacio inicial aparece porque hay un espacio entre `$selected$` y `is`.  
   
- Todas las demás palabras clave `$` se definen dinámicamente en las etiquetas `<Literal>` y `<Object>`.  
+Todas las demás palabras clave `$` se definen dinámicamente en las etiquetas `<Literal>` y `<Object>`.  
+
+A continuación se muestra la estructura del elemento Code:
   
 ```xml  
 <Code Language="Language"  
@@ -130,37 +113,41 @@ is a great color. I love Blue.
     Delimiter="Delimiter">  
     Code to insert  
 </Code>  
-```  
-  
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`Delimiter`|Atributo opcional. Especifica el delimitador utilizado para describir los literales y los objetos en el código. De manera predeterminada, el delimitador es `$`.|  
-|`Kind`|Atributo opcional. Especifica el tipo de código que contiene el fragmento de código y la ubicación en la que debe insertarse un fragmento de código para que se compile. Los valores disponibles son `method body`, `method decl`, `type decl`, `file` y `any`.|  
-|`Language`|Atributo necesario. Especifica el idioma del fragmento de código.|  
-  
-|Valor del atributo Kind|Descripción|  
-|--------------------------|-----------------|  
-|`method body`|Especifica que el fragmento de código es un cuerpo de método y, por consiguiente, se debe insertar dentro de una declaración de método.|  
-|`method decl`|Especifica que el fragmento de código es un método y, por consiguiente, se debe insertar dentro de una clase o módulo.|  
-|`type decl`|Especifica que el fragmento de código es un tipo y, por consiguiente, se debe insertar dentro de una clase, módulo o espacio de nombres.|  
-|`file`|Especifica que el fragmento es un archivo de código completo. Estos fragmentos de código se pueden insertar solos en un archivo de código o dentro de un espacio de nombres.|  
-|`any`|Especifica que el fragmento de código se puede insertar en cualquier parte. Esta etiqueta se utiliza para fragmentos de código que son independientes del contexto, como los comentarios.|  
-  
-|Valor del atributo Language|Descripción|  
-|------------------------------|-----------------|  
-|`VB`|Identifica un fragmento de código de Visual Basic.|  
-|`CSharp`|Identifica un fragmento de código de C#.|  
-|`CPP`|Identifica un fragmento de código de C++.|  
-|`XML`|Identifica un fragmento de código XML.|  
-|`JavaScript`|Identifica un fragmento de código JavaScript.|  
-|`SQL`|Identifica un fragmento de código SQL.|  
-|`HTML`|Identifica un fragmento de código HTML.|  
-  
+```
+
+Se requiere un valor de texto. Este texto especifica el código, junto con los literales y objetos, que se pueden usar cuando este fragmento de código se inserta en un archivo de código.  
+
+### <a name="attributes"></a>Atributos
+Hay tres atributos disponibles para el elemento Code:
+
+- **Language**: atributo _obligatorio_ que especifica el lenguaje del fragmento de código. El valor puede ser uno de los siguientes:
+
+   |Valor|Descripción|  
+   |-----|-----------|  
+   |`VB`|Identifica un fragmento de código de Visual Basic.|  
+   |`CSharp`|Identifica un fragmento de código de C#.|  
+   |`CPP`|Identifica un fragmento de código de C++.|  
+   |`XML`|Identifica un fragmento de código XML.|  
+   |`JavaScript`|Identifica un fragmento de código JavaScript.|  
+   |`SQL`|Identifica un fragmento de código SQL.|  
+   |`HTML`|Identifica un fragmento de código HTML.|
+ 
+- **Kind**: atributo _opcional_ que especifica el tipo de código que contiene el fragmento de código y la ubicación en la que debe insertarse un fragmento de código para que se compile. El valor puede ser uno de los siguientes:
+
+   |Valor|Descripción|  
+   |-----|-----------|  
+   |`method body`|Especifica que el fragmento de código es un cuerpo de método y, por consiguiente, se debe insertar dentro de una declaración de método.|  
+   |`method decl`|Especifica que el fragmento de código es un método y, por consiguiente, se debe insertar dentro de una clase o módulo.|  
+   |`type decl`|Especifica que el fragmento de código es un tipo y, por consiguiente, se debe insertar dentro de una clase, módulo o espacio de nombres.|  
+   |`file`|Especifica que el fragmento es un archivo de código completo. Estos fragmentos de código se pueden insertar solos en un archivo de código o dentro de un espacio de nombres.|  
+   |`any`|Especifica que el fragmento de código se puede insertar en cualquier parte. Esta etiqueta se utiliza para fragmentos de código que son independientes del contexto, como los comentarios.|
+
+- **Delimiter**: atributo _opcional_ que especifica el delimitador usado para describir los literales y los objetos del código. De manera predeterminada, el delimitador es `$`.
+
+### <a name="parent-element"></a>Elemento primario
 |Elemento Parent|Descripción|  
 |--------------------|-----------------|  
-|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene las referencias, las importaciones, las declaraciones y el código para el fragmento de código.|  
-  
- Se requiere un valor de texto. Este texto especifica el código, junto con los literales y objetos, que se pueden utilizar cuando este fragmento de código se inserta en un proyecto.  
+|[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contiene las referencias, las importaciones, las declaraciones y el código para el fragmento de código.|
   
 ##  <a name="codesnippet"></a> Elemento CodeSnippet  
  Permite especificar un encabezado y varios fragmentos de código de IntelliSense, que puede insertar en los archivos de código de Visual Studio.  
@@ -170,7 +157,6 @@ is a great color. I love Blue.
     <Header>... </Header>  
     <Snippet>... </Snippet>  
 </CodeSnippet>  
-  
 ```  
   
 |Atributo|Descripción|  
@@ -193,7 +179,6 @@ is a great color. I love Blue.
 <CodeSnippets>  
     <CodeSnippet>... </CodeSnippet>  
 </CodeSnippets>  
-  
 ```  
   
 |Elemento secundario|Descripción|  
@@ -208,7 +193,6 @@ is a great color. I love Blue.
     <Literal>... </Literal>  
     <Object>... </Object>  
 </Declarations>  
-  
 ```  
   
 |Elemento secundario|Descripción|  
@@ -227,7 +211,6 @@ is a great color. I love Blue.
 <Default>  
     Default value  
 </Default>  
-  
 ```  
   
 |Elemento Parent|Descripción|  
@@ -284,7 +267,6 @@ is a great color. I love Blue.
     <Keywords>... </Keywords>  
     <Shortcut>... </Shortcut>  
 </Header>  
-  
 ```  
   
 |Elemento secundario|Descripción|  
@@ -311,7 +293,6 @@ is a great color. I love Blue.
 <HelpUrl>  
     www.microsoft.com  
 </HelpUrl>  
-  
 ```  
   
 |Elemento Parent|Descripción|  
@@ -327,7 +308,6 @@ is a great color. I love Blue.
 <ID>  
     Unique Identifier  
 </ID>  
-  
 ```  
   
 |Elemento Parent|Descripción|  
@@ -347,7 +327,6 @@ is a great color. I love Blue.
 <Import>  
     <Namespace>... </Namespace>  
 </Import>  
-  
 ```  
   
 |Elemento secundario|Descripción|  
@@ -488,10 +467,7 @@ is a great color. I love Blue.
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Contiene los literales y objetos de un fragmento de código que se pueden editar.|  
   
 ##  <a name="reference"></a> Elemento Reference  
- Especifica información sobre las referencias a ensamblados que requiere el fragmento de código.  
-  
-> [!NOTE]
->  El elemento `Reference` solo se admite para los proyectos de Visual Basic.  
+ Especifica información sobre las referencias a ensamblados que requiere el fragmento de código. 
   
 ```xml  
 <Reference>  
@@ -511,9 +487,6 @@ is a great color. I love Blue.
   
 ##  <a name="references"></a> Elemento References  
  Agrupa los elementos `Reference` individuales.  
-  
-> [!NOTE]
->  El elemento `References` solo se admite para los proyectos de Visual Basic.  
   
 ```xml  
 <References>  
@@ -556,8 +529,7 @@ is a great color. I love Blue.
     <Imports>... </Imports>  
     <Declarations>... </Declarations>  
     <Code>... </Code>  
-</Snippet>  
-  
+</Snippet>    
 ```  
   
 |Elemento secundario|Descripción|  

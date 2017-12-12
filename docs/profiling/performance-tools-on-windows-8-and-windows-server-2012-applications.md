@@ -4,45 +4,28 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
-ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
-ms.contentlocale: es-es
-ms.lasthandoff: 06/21/2017
-
+ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
-Las características de seguridad mejoradas a partir de Windows 8 y Windows Server 2012 han requerido cambios significativos en la forma en que las herramientas de rendimiento de Visual Studio recopilan datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. En este tema se describen los cambios para las herramientas de rendimiento a partir de las plataformas Windows 8 y Windows Server 2012.
+Las características de seguridad mejoradas a partir de Windows 8 y Windows Server 2012 han requerido cambios significativos en la forma en que las herramientas de rendimiento de Visual Studio recopilan datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. En este tema se describen los cambios para las herramientas de rendimiento a partir de las plataformas Windows 8 y Windows Server 2012.
   
 > [!NOTE]
 >  Las herramientas de rendimiento en otras versiones compatibles de Windows (Windows 7, Windows Server 2008 R2) no han cambiado.
   
 ##  <a name="BKMK_In_this_topic"></a> En este tema  
- [Recopilar datos de aplicaciones de la Tienda Windows desde el IDE de Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+ [Recopilar datos de aplicaciones para UWP desde el IDE de Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Recopilar datos de aplicaciones que se ejecutan en el escritorio Windows 8 o en Windows Server 2012 desde el IDE de Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
@@ -52,10 +35,10 @@ Las características de seguridad mejoradas a partir de Windows 8 y Windows Serv
   
  [Recopilar datos de interacciones de capas (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones de la Tienda Windows desde el IDE de Visual Studio  
- Cuando se generan perfiles de una aplicación de la Tienda Windows escrita en JavaScript y HTML 5, se recopilan datos de instrumentación para el código JavaScript. Cuando se generan perfiles de una aplicación o componente de la Tienda Windows escrita en Visual C++, Visual C# o Visual Basic, se recopilan datos de muestreo para el código nativo y administrado. Se pueden generar perfiles de la aplicación localmente o en un equipo remoto.  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Recopilar datos de aplicaciones para UWP desde el IDE de Visual Studio  
+ Cuando se generan perfiles de una aplicación para UWP escrita en JavaScript y HTML 5, se recopilan datos de instrumentación para el código JavaScript. Cuando se generan perfiles de una aplicación para UWP o componente escrito en Visual C++, Visual C# o Visual Basic, se recopilan datos de muestreo para el código nativo y administrado. Se pueden generar perfiles de la aplicación localmente o en un equipo remoto.  
   
- Estas características y opciones de generación de perfiles no se admiten al generar perfiles de las aplicaciones de la Tienda Windows:  
+ Estas características y opciones de generación de perfiles no se admiten al generar perfiles de las aplicaciones para UWP:  
   
 -   Generación de perfiles de aplicaciones JavaScript usando el método de muestreo.  
   
@@ -71,21 +54,21 @@ Las características de seguridad mejoradas a partir de Windows 8 y Windows Serv
   
 -   Opciones de instrumentación, como recopilar datos del contador de rendimiento y de Windows, o especificar opciones de la línea de comandos adicionales.  
   
- Para obtener más información sobre cómo generar perfiles de aplicaciones de la Tienda Windows, consulte los siguientes temas:  
+ Para más información sobre cómo generar perfiles de aplicaciones para UWP, vea los temas siguientes:  
   
- [Ejecutar aplicaciones de la Tienda Windows en la máquina local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+ [Ejecución de aplicaciones para UWP en el equipo local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Ejecutar aplicaciones de la Tienda Windows en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [Ejecución de aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
  [Herramientas de generación de perfiles](profiling-tools.md)  
   
 -   [Memoria de JavaScript](../profiling/javascript-memory.md)
   
--   [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows en un equipo local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+-   [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un equipo local](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows en un equipo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+-   [Generar perfiles de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP en un dispositivo remoto](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+-   [Analizar datos de rendimiento de código de Visual C++, Visual C# y Visual Basic en aplicaciones para UWP](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
  [En este tema](#BKMK_In_this_topic)  
   
@@ -106,7 +89,7 @@ Las características de seguridad mejoradas a partir de Windows 8 y Windows Serv
   
 |Nombre de herramienta.|Descripción|  
 |---------------|-----------------|  
-|[VSPerf](../profiling/vsperf.md)|Recopila datos de generación de perfiles de aplicaciones de la Tienda Windows y datos de generación de perfiles de ejemplo de aplicaciones de escritorio de Windows 8 y aplicaciones de Windows Server 2012.|  
+|[VSPerf](../profiling/vsperf.md)|Recopila datos de generación de perfiles de aplicaciones para UWP y datos de generación de perfiles de ejemplo de aplicaciones de escritorio de Windows 8 y de Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Recopila datos de generación de perfiles de instrumentación, simultaneidad e interacción de capas de las aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012. Recopila todos los tipos de datos de generación de perfiles de las versiones anteriores de Windows.|  
   
  Ambas herramientas se instalan con Visual Studio para usarse en el equipo local.  
@@ -139,7 +122,7 @@ Las características de seguridad mejoradas a partir de Windows 8 y Windows Serv
   
 1.  Para recopilar datos de interacción de capas de aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012, debe usar el método de instrumentación.  
   
-2.  No se pueden recopilar datos de interacción de capas para las aplicaciones de la Tienda Windows.  
+2.  No se pueden recopilar datos de interacción de capas para las aplicaciones para UWP.  
   
 3.  Puede incluir datos de interacción de capas en todos los métodos de generación de perfiles de otras versiones compatibles de Windows.  
   

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,35 +16,21 @@ helpviewer_keywords:
 - MSBuild, UpdateManifest task
 - UpdateManifest task [MSBuild]
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5cb9f881dc9351ee3c264a943735dff3be72fe34
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 85cb6c20f0e330b06f2e2a3999b115bc61111f9d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest (Tarea)
 Actualiza las propiedades seleccionadas en un manifiesto y se retira.  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `UpdateManifest`.  
+ En la siguiente tabla se describen los parámetros de la tarea `UpdateManifest` .  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  

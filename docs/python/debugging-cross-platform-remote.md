@@ -1,34 +1,31 @@
 ---
 title: "Depuración remota multiplataforma de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: aa667357-763f-4ce6-8e47-48f9337658a8
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7d5526bbcde438896f63c0f9b4f75d919d3ca457
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: 2711238ccc6d90b34df748c6b59e4130c74de69b
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-linux"></a>Depuración remota de código de Python en Linux
 
 Visual Studio puede iniciar y depurar aplicaciones de Python de manera local y remota en un equipo Windows (vea [Depuración remota](../debugger/remote-debugging.md)). También puede realizar la depuración remota en un sistema operativo, un dispositivo o una implementación de Python diferentes a CPython mediante la [biblioteca ptvsd](https://pypi.python.org/pypi/ptvsd).
 
 Al usar ptvsd, el código de Python que se depura hospeda el servidor de depuración al que puede asociar Visual Studio. El hospedaje necesita una pequeña modificación en el código para importar y habilitar al servidor. Además, es posible que haya que modificar la configuración de la red o del firewall en el equipo remoto para permitir conexiones TCP.
 
-Para ver una introducción a la depuración remota, consulte el vídeo de youtube.com (6 minutos y 22 segundos)[Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (Profundización: depuración remota entre plataformas).
+Para obtener una introducción a la depuración remota, vea [Deep Dive: Cross-Platform Remote Debugging (Profundización: Depuración remota multiplataforma)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 min 22 s), que se aplica a Visual Studio 2015 y 2017.
 
 > [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
 
@@ -185,4 +182,3 @@ Visual Studio le avisará sobre posibles problemas de certificado cuando se cone
 
 > [!Warning]
 > En la actualidad, Visual Studio 2017 se bloquea cuando omite estas advertencias. Asegúrese de corregir todos los problemas antes de intentar conectarse.
-

@@ -1,57 +1,57 @@
 ---
-title: "Mostrar memoria (Comando) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.listmemory"
-helpviewer_keywords: 
-  - "Debug.ListMemory (comando)"
-  - "Mostrar memoria (comando)"
-  - "ListMemory (comando)"
+title: Comando Mostrar memoria | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.listmemory
+helpviewer_keywords:
+- Debug.ListMemory command
+- ListMemory command
+- list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ae04c23a986107125edc9be149d6317a05c5b58a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Mostrar memoria (Comando)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="list-memory-command"></a>Mostrar memoria (Comando)
 Muestra el contenido del intervalo de memoria especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]  
 [/Hex|Signed|Unsigned] [expression]  
 ```  
   
-## Argumentos  
+## <a name="arguments"></a>Argumentos  
  `expression`  
- Opcional.  Dirección de memoria desde la que se va a comenzar a mostrar memoria.  
+ Opcional. Dirección de memoria desde la que se va a empezar a mostrar la memoria.  
   
-## Modificadores  
- \/ANSI&#124;Unicode  
- Opcional.  Muestra la memoria en forma de caracteres correspondientes a los bytes de memoria, ANSI o Unicode.  
+## <a name="switches"></a>Modificadores  
+ /ANSI&#124;Unicode  
+ Opcional. Muestra la memoria como caracteres correspondientes a los bytes de memoria, ya sean ANSI o Unicode.  
   
- \/Count:`number`  
- Opcional.  Determina cuántos bytes de memoria se van a mostrar, a partir de `expression`.  
+ /Count:`number`  
+ Opcional. Determina el número de bytes de memoria que se muestran, empezando por `expression`.  
   
- \/Format:`formattype`  
- Opcional.  Tipo de formato para ver la información de memoria en la ventana **Memoria**; puede ser OneByte, TwoBytes, FourBytes, EightBytes, Flotante \(32 bits\) o Doble \(64 bits\).  Si se utiliza OneByte, `/Unicode` no está disponible.  
+ /Format:`formattype`  
+ Opcional. Tipo de formato para ver la información de memoria en la ventana **Memoria**. Puede ser OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bits) o Double (64 bits). Si se usa OneByte, `/Unicode` no está disponible.  
   
- \/Hex&#124;Signed&#124;Unsigned  
- Opcional.  Especifica el formato para ver números como signed, unsigned o hexadecimal.  
+ /Hex&#124;Signed&#124;Unsigned  
+ Opcional. Especifica el formato de visualización de números: con signo, sin signo o hexadecimal.  
   
-## Comentarios  
- En lugar de escribir un comando **Debug.ListMemory** completo con todos los modificadores, puede invocar el comando utilizando alias predefinidos con ciertos modificadores preestablecidos en los valores especificados.  Por ejemplo, en lugar de escribir:  
+## <a name="remarks"></a>Comentarios  
+ En lugar de escribir un comando **Debug.ListMemory** completo con todos los modificadores, puede invocar el comando mediante los alias predefinidos con ciertos modificadores preestablecidos en los valores especificados. Por ejemplo, en lugar de especificar:  
   
 ```  
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
@@ -63,29 +63,29 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >df /Count:30 /Unicode  
 ```  
   
- Aquí se muestra una lista de los alias disponibles para el comando **Debug.ListMemory**:  
+ A continuación se muestra una lista de los alias disponibles para el comando **Debug.ListMemory**:  
   
-|Alias|Comando y modificadores|  
-|-----------|-----------------------------|  
+|Alias|Comandos y modificadores|  
+|-----------|--------------------------|  
 |**d**|Debug.ListMemory|  
-|**da**|Debug.ListMemory \/Ansi|  
-|**db**|Debug.ListMemory \/Format:OneByte|  
-|**dc**|Debug.ListMemory \/Format:FourBytes \/Ansi|  
-|**dd**|Debug.ListMemory \/Format:FourBytes|  
-|**df**|Debug.ListMemory\/Format:Float|  
-|**dq**|Debug.ListMemory \/Format:EightBytes|  
-|**du**|Debug.ListMemory \/Unicode|  
+|**da**|Debug.ListMemory /Ansi|  
+|**db**|Debug.ListMemory /Format:OneByte|  
+|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|  
+|**dd**|Debug.ListMemory /Format:FourBytes|  
+|**df**|Debug.ListMemory /Format:Float|  
+|**dq**|Debug.ListMemory /Format:EightBytes|  
+|**du**|Debug.ListMemory /Unicode|  
   
-## Ejemplo  
+## <a name="example"></a>Ejemplo  
   
 ```  
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
-## Vea también  
- [Mostrar pila de llamadas \(Comando\)](../../ide/reference/list-call-stack-command.md)   
- [Mostrar subprocesos \(Comando\)](../../ide/reference/list-threads-command.md)   
+## <a name="see-also"></a>Vea también  
+ [Comando Mostrar pila de llamadas](../../ide/reference/list-call-stack-command.md)   
+ [Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana de comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar\/Comando](../../ide/find-command-box.md)   
+ [Ventana Comandos](../../ide/reference/command-window.md)   
+ [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

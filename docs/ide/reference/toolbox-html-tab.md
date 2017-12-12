@@ -4,41 +4,24 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.toolbox.html
+f1_keywords: vs.toolbox.html
 helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
 - HTML tab in Toolbox
 ms.assetid: 9bfdd3b8-f5ac-4a5f-bdbf-c2b4e97641d8
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: bc243e4d5ec1141244314109aa76fef86287d1c1
-ms.contentlocale: es-es
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: def8de31a28a6a49f611c863ebb88d566ff93aa6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 La pestaña **HTML** del cuadro de herramientas proporciona componentes que resultan de gran utilidad en las páginas web y los formularios Web Forms. Para ver esta pestaña, abra primero un documento para editarlo en el Diseñador HTML. En el menú **Ver**, haga clic en **Cuadro de herramientas** y después haga clic en la pestaña **HTML** del cuadro de herramientas.  
@@ -119,7 +102,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 >  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, vea [Validar la información especificada por el usuario en sitios de ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Input (Password)**  
- ![Campo de contraseña de Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
+ ![Campo Contraseña de Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
 
  Inserta un elemento `input` de `type="password"`. De manera predeterminada, se inserta `id="Password1"` para el primer campo de contraseña, `id="Password2"` para el segundo y así sucesivamente.  
 
@@ -239,4 +222,3 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
 ## <a name="see-also"></a>Vea también  
  [Cuadro de herramientas](../../ide/reference/toolbox.md)   
  [Usar el cuadro de herramientas](../../ide/using-the-toolbox.md)   
-

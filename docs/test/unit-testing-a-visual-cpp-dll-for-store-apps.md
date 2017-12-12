@@ -1,40 +1,24 @@
 ---
-title: "Pruebas unitarias de un archivo DLL de Visual C++ para una aplicación de la Tienda | Microsoft Docs"
+title: Pruebas unitarias de un archivo DLL de Visual C++ en aplicaciones para UWP | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 571ea6daab6ea9cbfb30976514e163b5dcbe398d
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Pruebas unitarias de un archivo DLL de Visual C++ para una aplicación de la Tienda
-Este tema describe una manera de crear pruebas unitarias para una DLL de C++ para las aplicaciones de la Tienda Windows. La DLL RooterLib muestra las memorias imprecisas de teoría límite desde el cálculo implementando una función que calcula una estimación de la raíz cuadrada de un número determinado. Más adelante, el archivo DLL se podría incluir en una aplicación de la Tienda Windows que muestre a los usuarios cosas interesantes que se pueden hacer con las matemáticas.  
+# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>Pruebas unitarias de un archivo DLL de Visual C++ en aplicaciones para UWP
+En este tema se describe una manera de crear pruebas unitarias para un archivo DLL de C++ en aplicaciones para UWP. La DLL RooterLib recuerda vagamente a la teoría de límites de cálculo mediante la implementación de una función que calcula una estimación de la raíz cuadrada de un número determinado. Es posible que, después, el archivo DLL se incluya en una aplicación para UWP que muestre a los usuarios cosas interesantes que se pueden hacer con las matemáticas.  
   
  En este tema se muestra cómo usar las pruebas unitarias como el primer paso del desarrollo. En este enfoque, primero tienes que escribir un método de prueba que compruebe un comportamiento concreto en el sistema que estés probando y, después, escribir el código que tenga que superar la prueba. Mediante la realización de cambios en el orden de los procedimientos siguientes, puedes invertir esta estrategia para escribir primero el código que deseas probar y escribe después las pruebas unitarias.  
   
@@ -61,7 +45,7 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
 1.  En el menú **Archivo**, elija **Nuevo** y después **Nuevo proyecto**.  
   
-2.  En el diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C++** y elija **Windows Store**. Después elija **Biblioteca de pruebas unitarias (aplicaciones de la Tienda Windows)** en la lista de plantillas de proyecto.  
+2.  En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C++** y elija **Windows universal**. Después elija **Biblioteca de pruebas unitarias (Windows universal)** en la lista de plantillas de proyecto.  
   
      ![Crear una biblioteca de pruebas unitarias de C++](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
@@ -108,7 +92,7 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
      ![Cree el proyecto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")  
   
-2.  En el cuadro de diálogo **Agregar nuevo proyecto**, elija **DLL (aplicaciones de la Tienda Windows)**.  
+2.  En el cuadro de diálogo **Agregar nuevo proyecto**, elija **DLL (aplicaciones para UWP)**.  
   
 3.  Agregue el siguiente código al archivo **RooterLib.h**:  
   
@@ -364,4 +348,3 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
     >  Un conjunto estable de pruebas unitarias correctas proporciona la confianza de que no se han introducido errores al cambiar el código.  
     >   
     >  Mantenga la refactorización separada de los demás cambios.
-

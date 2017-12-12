@@ -1,27 +1,24 @@
 ---
 title: "Medición del rendimiento de código Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2723d4d0-89c8-4279-bfc2-27c0834a997e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 6270ab83022292915f268f199dee32af65f3af11
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: f01c42f073859e2e609123eb67cc9df8e26cef75
-ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="profiling-python-code"></a>Generación de perfiles del código Python
 
 Visual Studio admite la generación de perfiles de una aplicación Python cuando se usan intérpretes basados en CPython.
@@ -34,11 +31,10 @@ Al seleccionar **Aceptar**, el generador de perfiles se ejecuta y abre un inform
 
 ![Informe de rendimiento de generación de perfiles](media/profiling-results.png)
 
-Para información general, consulte lo siguiente:
+Si quiere ver una demo, eche un vistazo al vídeo [Profiling Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Generación de perfiles de Python) de Microsoft Virtual Academy (3 minutos).
 
-Para una demostración del tutorial, consulte el vídeo (8 minutos y 52 segundos) [Profiling with Python Tools for Visual Studio](http://www.youtube.com/watch?v=K-KqkFkp55k) (Generación de perfiles con Herramientas de Python para Visual Studio).
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
 
-> [!VIDEO https://www.youtube.com/embed/K-KqkFkp55k]
 
 ## <a name="profiling-for-ironpython"></a>Generación de perfiles para IronPython
 

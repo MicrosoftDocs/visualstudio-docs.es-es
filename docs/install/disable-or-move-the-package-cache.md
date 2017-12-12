@@ -4,8 +4,7 @@ description: "Deshabilite, habilite o mueva la caché de paquetes para las imple
 ms.date: 04/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,27 +17,11 @@ ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
 author: heaths
 ms.author: heaths
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: e07f1c04d9695e092db7aa29e641ce9bd36250f9
-ms.contentlocale: es-es
-ms.lasthandoff: 05/09/2017
-
+ms.openlocfilehash: 768446797558dec103927f251867ab78cd3edf0a
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="disable-or-move-the-package-cache"></a>Deshabilitación o traslado de la caché de paquetes
 
@@ -69,10 +52,11 @@ Una configuración común del sistema es tener instalado Windows en una SSD con 
 
 Actualmente, esto solo lo hace si configura la [directiva del Registro](set-defaults-for-enterprise-deployments.md) `CachePath` antes de instalar, modificar o reparar Visual Studio.
 
+## <a name="get-support"></a>Obtener soporte técnico
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, vea sugerencias para la solución de problemas en la página [Solucionar problemas de errores de instalación y actualización de Visual Studio 2017](troubleshooting-installation-issues.md). Asimismo, puede informarnos de problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) del IDE de Visual Studio o compartir una sugerencia con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579). Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), hacer preguntas y encontrar respuestas. También puede comunicarse con nosotros y con otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la Comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio) (requiere una cuenta de [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>Vea también
 
  * [Instalar Visual Studio](install-visual-studio.md)
  * [Set defaults for enterprise deployments](set-defaults-for-enterprise-deployments.md)(Establecimiento de valores predeterminados para implementaciones de empresa)
  * [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
- * [Notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

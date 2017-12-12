@@ -1,34 +1,35 @@
 ---
-title: "C&#243;mo: Sustituir par&#225;metros en una plantilla | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "parámetros de plantilla, sustituir"
-  - "plantillas de Visual Studio, utilizar parámetros"
+title: "Cómo sustituir parámetros en una plantilla | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- template parameters, substituting
+- Visual Studio templates, using parameters
 ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e6e13e704502443c371021c515c7a9578497f829
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Sustituir par&#225;metros en una plantilla
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede reemplazar parámetros de plantilla \(como los nombres de clase y los espacios de nombres\) al crear un archivo basado en una plantilla.  Para obtener una lista completa de parámetros de plantilla, consulte [Parámetros de plantilla](../ide/template-parameters.md).  
+# <a name="how-to-substitute-parameters-in-a-template"></a>Cómo: Sustituir parámetros en una plantilla
+Puede reemplazar parámetros de plantilla (como los nombres de clase y los espacios de nombres) al crear un archivo basado en una plantilla. Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  
   
-## Procedimiento  
- Puede reemplazar parámetros de los archivos de una plantilla cada vez que se cree un proyecto basado en esa plantilla.  En este procedimiento se explica cómo crear una plantilla que reemplace el nombre de un espacio de nombres por el nombre del proyecto seguro al crear un proyecto nuevo con la plantilla.  
+## <a name="procedure"></a>Procedimiento  
+ Puede reemplazar parámetros de los archivos de una plantilla cada vez que se cree un proyecto basado en esa plantilla. En este procedimiento se explica cómo crear una plantilla que reemplace el nombre de un espacio de nombres por el nombre del proyecto seguro al crear un proyecto nuevo con la plantilla.  
   
-#### Para usar un parámetro que sustituya el nombre del espacio de nombres por el nombre del proyecto  
+#### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>Para usar un parámetro que sustituya el nombre del espacio de nombres por el nombre del proyecto  
   
-1.  Inserte el parámetro en uno o varios archivos de código en la plantilla.  Por ejemplo:  
+1.  Inserte el parámetro en uno o varios archivos de código en la plantilla. Por ejemplo:  
   
     ```  
     namespace $safeprojectname$  
@@ -39,14 +40,14 @@ Puede reemplazar parámetros de plantilla \(como los nombres de clase y los espa
   
 2.  En el archivo .vstemplate de la plantilla, busque el elemento `ProjectItem` que incluye este archivo.  
   
-3.  Establezca el atributo `ReplaceParameters` en `true` para el elemento `ProjectItem`.  Por ejemplo:  
+3.  Establezca el atributo `ReplaceParameters` en `true` para el elemento `ProjectItem`. Por ejemplo:  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  
     ```  
   
-## Vea también  
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vea también  
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Parámetros de plantilla](../ide/template-parameters.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [ProjectItem \(Elemento, Plantillas de elementos de Visual Studio\)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [ProjectItem (Elemento, Plantillas de elementos de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

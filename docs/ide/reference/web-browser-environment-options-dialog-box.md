@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,30 +23,15 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: e2852ef4eb48247a97fe513efc7cdecb89ec619a
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 2b91f59e6fd7dbf688f8d1cab8d95e9329c879b6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Explorador web, Entorno, Opciones (Cuadro de diálogo)
 Establece opciones para el explorador web interno e Internet Explorer. Para acceder a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y seleccione **Explorador web**.  
@@ -58,26 +42,26 @@ Establece opciones para el explorador web interno e Internet Explorer. Para acce
 > [!IMPORTANT]
 >  Al abrir determinados archivos o componentes de la Web, se puede ejecutar código en el equipo.  
   
- Página principal  
+## <a name="home-page"></a>Página principal
  Establece la página que se muestra al abrir el explorador web del IDE.  
   
- Página de búsqueda  
+## <a name="search-page"></a>Página de búsqueda
  Le permite designar una página de búsqueda para el explorador web interno. Esta ubicación puede diferir de la página de búsqueda que usan las instancias de Internet Explorer iniciadas fuera del entorno de desarrollo integrado (IDE).  
   
- Ver código fuente con  
+## <a name="view-source-in"></a>Ver código fuente con
  Establece el editor que se usa para abrir una página web cuando se elige **Ver código fuente** en la página del explorador web interno.  
   
--   **Editor de código fuente** Seleccione esta opción para ver código fuente en [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md).  
+-   **Editor de código fuente** Seleccione esta opción para ver código fuente en el [editor](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
 -   **Editor HTML** Seleccione esta opción para ver código fuente en el [Diseñador HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta selección para editar la página web en una de las dos vistas: vista de diseño o la vista de código fuente estándar basada en texto.  
   
 -   **Editor externo** Seleccione esta opción para ver código fuente en otro editor. Especifique la ruta de acceso al editor que elija, por ejemplo, Notepad.exe.  
   
- Opciones de Internet Explorer  
- Haga clic para cambiar las opciones de Internet Explorer en el cuadro de diálogo **Propiedades de Internet**. Los cambios realizados en este cuadro de diálogo afectan tanto al explorador web interno como a las instancias de Internet Explorer iniciadas fuera del IDE de Visual Studio (por ejemplo, desde el menú Inicio).  
+## <a name="internet-explorer-options"></a>Opciones de Internet Explorer  
+Haga clic para cambiar las opciones de Internet Explorer en el cuadro de diálogo **Propiedades de Internet**. Los cambios realizados en este cuadro de diálogo afectan tanto al explorador web interno como a las instancias de Internet Explorer iniciadas fuera del IDE de Visual Studio (por ejemplo, desde el menú Inicio).  
   
 > [!NOTE]
->  Use el cuadro de diálogo Explorar con para reemplazar el explorador web interno de Visual Studio, que es una versión de Internet Explorer, por otro explorador web externo.  
+>  Use el cuadro de diálogo **Explorar con** para reemplazar el explorador web interno de Visual Studio por un explorador de su elección. Puede acceder al cuadro de diálogo Explorar con mediante el menú que aparece al hacer clic con el botón derecho o mediante el menú contextual de, por ejemplo, un archivo HTML del proyecto.
   
 ## <a name="see-also"></a>Vea también  
  [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)   

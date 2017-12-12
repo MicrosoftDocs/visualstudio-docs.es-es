@@ -1,28 +1,24 @@
 ---
 title: "Edición de código de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/10/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/10/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 03effe56-d6f6-461d-9005-e43c15bf537c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 134442008dccbeac12dd328ed3b01c2b3a1a2e8c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: d16b8fcae5b7d1a14c8f6068dfd7103115cba291
-ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editing-python-code"></a>Edición de código de Python
 
 Los desarrolladores invierten mucho tiempo en el editor de código, por lo que la [compatibilidad de Python en Visual Studio](installation.md) proporciona funciones para ayudarle a ser más productivo. Las características incluyen resalte de sintaxis de IntelliSense, finalización automática, ayuda para la firma, invalidaciones de método, búsqueda y navegación. 
@@ -35,11 +31,11 @@ En este tema:
 
 Para obtener documentación general sobre la edición de código en Visual Studio, consulte [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código. La compatibilidad con Python incluye el uso del Examinador de objetos de Visual Studio (**Ver > Otras ventanas > Examinador de objetos** o Ctrl+W,J) para inspeccionar las clases definidas en cada módulo y las funciones definidas en esas clases. 
 
-El editor también está integrado en la ventana interactiva de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Introducción: Uso de la ventana interactiva de REPL])(getting-started.md#using-the-interactive-repl-window) y [Uso de la ventana interactiva: Comando Enviar código a Interactive](interactive-repl.md#send-code-to-interactive-command) para obtener información.
+El editor también está integrado en la ventana interactiva de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Tutorial Step 3: Using the interactive REPL window](vs-tutorial-01-03.md) (Paso 3 del tutorial: Usar la ventana interactiva de REPL) y [Uso de la ventana interactiva - Comando Enviar código a Interactive](interactive-repl.md#send-code-to-interactive-command) para obtener información detallada.
 
-Para obtener una introducción a la edición de código de Python, vea el vídeo de youtube.com (3 minutos y 48 segundos) [Getting Started with Python in Visual Studio, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introducción a Python en Visual Studio, parte 3: edición):
+Para ver una introducción a la edición de código de Python, vea [Editing Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Editar código de Python) (Microsoft Virtual Academy, 2 min 30 s):
 
-> [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 
 ## <a name="intellisense"></a>IntelliSense
 
@@ -54,7 +50,7 @@ Las finalizaciones aparecen como instrucciones, identificadores y otras palabras
 Cuando se abre una lista de finalizaciones, puede buscar la finalización que desee con las teclas de dirección, el mouse o bien escribiendo algo más. A medida que escriba más letras, la lista se seguirá filtrando para mostrar las finalizaciones probables. También puede usar accesos directos como:
 
 - Escribir letras que no están al principio del nombre, como "parse" para buscar "argparse"
-- Escribir solo las letras que se encuentran al principio de palabras, como "abc" para buscar 'AbstractBaseClass' o "air" para buscar "as_integer_ratio"
+- Escribir solo las letras que se encuentran al principio de palabras, como "abc" para buscar "AbstractBaseClass" o "air" para buscar "as_integer_ratio"
 - Omitir letras, como "b64" para buscar "base64"
 
 Algunos ejemplos:
@@ -123,8 +119,7 @@ Puede ver los fragmentos de código disponibles en el Administrador de fragmento
 
 ![Administrador de fragmentos de código](media/code-editing-code-snippets-manager.png)
 
-Para crear sus propios fragmentos de código, consulte [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
-Los fragmentos de código se pueden personalizar al [crear un fragmento de código](https://msdn.microsoft.com/library/ms165394.aspx) e importándolos a través de 
+Para crear sus propios fragmentos de código, consulte [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). 
 
 Si escribe un fragmento de código excelente que le gustaría compartir, no dude en publicarlo de manera resumida y [hacérnoslo saber](https://github.com/Microsoft/PTVS/issues). Es posible que podamos incluirlo en una futura versión de Visual Studio.
 

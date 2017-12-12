@@ -1,33 +1,31 @@
 ---
 title: Plantilla de proyecto web para Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 401e7725-8be5-4e67-862c-bf0690a529e3
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2a21c43e039d9a1109f1870516e9b3d4ea3c644b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: e46dd1012d220015b1840c0c50332dbe45e43a1e
-ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-web-project-templates"></a>Plantillas de proyecto web de Python
 
-Python en Visual Studio admite el desarrollo de proyectos web en marcos como Bottle, Django y Flask mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. Sin embargo, Visual Studio no incluye los propios marcos, que debe instalarlos por separado haciendo clic con el botón derecho en el proyecto y seleccionando **Python > Install/upgrade framework… (Instalar o actualizar marco…)**.
+Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. También puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid.
 
-Cada plantilla (a la que se accede a través de **Archivo > Nuevo > Proyecto...** ) inicia un servidor web con un puerto local seleccionado aleatoriamente, abre el explorador predeterminado al depurar y permite la publicación directa en [Microsoft Azure](http://www.azure.com). Las plantillas se proporcionan para Bottle, Flask y Django, y puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid.
+Visual Studio no incluye los marcos en sí mismos. Tendrá que instalar los marcos por separado haciendo clic con el botón derecho en el proyecto y seleccionando **Python > Install/upgrade framework... (Instalar o actualizar marco...)**.
+
+Cuando se ejecuta un proyecto creado a partir de una plantilla (al que se tiene acceso a través de **Archivo > Nuevo > Proyecto...**), inicia un servidor web con un puerto local seleccionado aleatoriamente, abre el explorador predeterminado al depurar y permite la publicación directa en Microsoft Azure.
 
 ![Nuevas plantillas de proyecto web](media/template-web-new-project.png)
 
@@ -41,13 +39,9 @@ Cuando implemente Microsoft Azure App Service, seleccione una versión de Python
 
 Microsoft Azure Cloud Service *admite* el archivo `requirements.txt`. Consulte [Azure Cloud Service Projects](template-azure-cloud-service.md) (Proyectos de servicio en la nube de Azure) para detalles.
 
-Para una introducción a los proyectos web de Python, consulte el vídeo de youtube.com (3 minutos y 10 segundos) [Getting Started with PTVS, Part 6: Web sites](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introducción a PTVS, parte 6: sitios web).
-
-> [!VIDEO https://www.youtube.com/embed/FJx5mutt1uk]
-
 ## <a name="debugging"></a>Depuración
 
-Cuando se inicia un proyecto web para la depuración, Visual Studio inicia el servidor web localmente y abre el explorador predeterminado en esa dirección y puerto. Para especificar opciones adicionales, haga clic con el botón derecho en el proyecto, seleccione **Propiedades** y seleccione la pestaña **Iniciador web**:
+Cuando se inicia un proyecto web para la depuración, Visual Studio inicia el servidor web localmente y abre el explorador predeterminado en esa dirección y puerto. Para especificar opciones adicionales, haga clic con el botón derecho en el proyecto, seleccione **Propiedades** y haga clic en la pestaña **Iniciador web**:
 
   ![Propiedades del iniciador web de la plantilla web genérica](media/template-web-launcher-properties.png)
 
@@ -178,4 +172,3 @@ Si agrega la plantilla `web.config` de depuración al proyecto y pretende usar l
 El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agrega un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Use el comando **Publicar** en el proyecto de nube para implementar en el servicio en la nube; el comando **Publicar** del proyecto de Python todavía se implementa en sitios web. Consulte [Azure Cloud Service Projects](template-azure-cloud-service.md) (Proyectos de servicio en la nube de Azure) para detalles.
 
 ![Convertir en proyecto de servicio de nube de Microsoft Azure, comando](media/template-web-convert-menu.png)
-

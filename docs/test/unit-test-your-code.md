@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,14 @@ helpviewer_keywords:
 - unit tests, verifying code with
 - testing code, automated tests
 ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: 62
+caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: 2e777b966cd332871533434728a6a565c51a5336
-ms.contentlocale: es-es
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: e6e0b55e86130f316c09583d4a52e1ad3dc22608
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="unit-test-your-code"></a>Haga una prueba unitaria de su código
 Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma rápida de buscar errores lógicos en los métodos de clases de proyectos de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] y [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)].  
@@ -89,7 +73,7 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="videos"></a>Vídeos  
- [Channel 9: Unit testing your Windows Store apps built using XAML (Channel 9: prueba de las unidades de las aplicaciones de la Tienda Windows compiladas mediante XAML)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9: Unit testing your UWP apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285) (Canal 9: Prueba unitaria de las aplicaciones para UWP compiladas mediante XAML)  
   
 ### <a name="forums"></a>Foros  
  [Prueba unitaria de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -103,4 +87,3 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 ## <a name="see-also"></a>Vea también  
  [Mejorar la calidad del código](/visualstudio/test/improve-code-quality)   
  [Probar la aplicación](/devops-test-docs/test/test-apps-early-and-often)
-

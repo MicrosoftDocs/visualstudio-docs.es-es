@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
-ms.openlocfilehash: 6a28915840af1b22dffe704ac931a57f25ca6879
-ms.contentlocale: es-es
-ms.lasthandoff: 08/01/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Administrar la firma de ensamblados y manifiestos
 La firma de nombre seguro ofrece una identidad única a un componente de software. Los nombres seguros se usan para garantizar que otra persona no puede suplantar la identidad del ensamblado y para garantizar que las dependencias de componente e instrucciones de configuración se asignan al componente y a la versión del componente correctos.  
@@ -62,7 +46,7 @@ La firma de nombre seguro ofrece una identidad única a un componente de softwar
   
 -   ensamblados de componente compartido (.dll)  
   
- Debe firmar los siguientes tipos de recurso:  
+Debe firmar los siguientes tipos de recurso:  
   
 1.  Ensamblados, si quiere implementarlos en la caché global de ensamblados (GAC).  
   
@@ -70,7 +54,7 @@ La firma de nombre seguro ofrece una identidad única a un componente de softwar
   
 3.  Los ensamblados de interoperabilidad primarios, que se usan para la interoperabilidad COM. La utilidad TLBIMP exige nombres seguros al crear un ensamblado de interoperabilidad primario de una biblioteca de tipos COM.  
   
- En general, no debería firmar archivos ejecutables. Un componente con nombre seguro no puede hacer referencia a un componente con nombre no seguro que se implementa con la aplicación. Visual Studio no firma los archivos ejecutables de aplicaciones, pero en su lugar firma el manifiesto de aplicación, que señala al archivo ejecutable de nombre no seguro. Se recomienda evitar firmar componentes que son privados para la aplicación, porque si los firma puede ser más difícil administrar las dependencias.  
+En general, no debería firmar archivos ejecutables. Un componente con nombre seguro no puede hacer referencia a un componente con nombre no seguro que se implementa con la aplicación. Visual Studio no firma los archivos ejecutables de aplicaciones, pero en su lugar firma el manifiesto de aplicación, que señala al archivo ejecutable de nombre no seguro. Se recomienda evitar firmar componentes que son privados para la aplicación, porque si los firma puede ser más difícil administrar las dependencias.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Cómo firmar un ensamblado en Visual Studio  
  Puede firmar una aplicación o componente mediante la pestaña **Firma** de la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, escriba las **propiedades del proyecto** en la ventana **Inicio rápido** o pulse ALT + ENTRAR en la ventana **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar el ensamblado**.  

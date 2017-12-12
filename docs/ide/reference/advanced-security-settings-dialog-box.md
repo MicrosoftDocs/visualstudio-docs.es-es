@@ -1,49 +1,43 @@
 ---
-title: "Configuraci&#243;n de seguridad avanzada (Cuadro de di&#225;logo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.err.debug_in_zone_no_hostproc"
-  - "vs.err.debug_in_zone_no_hostproc:11310"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Cuadro de diálogo Configuración de seguridad avanzada"
+title: "Cuadro de diálogo Configuración de seguridad avanzada | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.err.debug_in_zone_no_hostproc
+helpviewer_keywords: Advanced Security Settings dialog box
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 06ca9ec7fc3c084ce503ba0900d10eb2b68f4349
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Configuraci&#243;n de seguridad avanzada (Cuadro de di&#225;logo)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Este cuadro de diálogo permite especificar la configuración de seguridad relacionada con la depuración en la zona.  
+# <a name="advanced-security-settings-dialog-box"></a>Cuadro de diálogo Configuración de seguridad avanzada
+Este cuadro de diálogo permite especificar la configuración de seguridad relacionada con la depuración en zona.  
   
- Para tener acceso a este cuadro de diálogo, seleccione un nodo de proyecto en el **Explorador de soluciones** y, a continuación, en el menú **Proyecto** haga clic en **Propiedades**.  Cuando aparezca el **Diseñador de proyectos**, haga clic en la ficha **Seguridad**.  En la página **Seguridad**, haga clic sucesivamente en **Habilitar configuración de seguridad de ClickOnce**, **Aplicación de confianza parcial** y **Avanzada**.  
+ Para acceder a este cuadro de diálogo, seleccione un nodo de proyecto en el **Explorador de soluciones** y después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Seguridad**. En la página **Seguridad**, seleccione **Habilitar configuración de seguridad de ClickOnce**, haga clic en **Aplicación de confianza parcial** y, después, haga clic en **Avanzado**.  
   
-## Lista de UIElement  
- **Depurar esta aplicación con el conjunto de permisos seleccionados**  
- Si activa esta casilla, el conjunto de permisos seleccionado en la página **Seguridad** se utiliza durante la depuración.  Esta opción se encuentra activada de forma predeterminada.  
+## <a name="uielement-list"></a>Lista de UIElement  
+ **Depurar esta aplicación con el conjunto de permisos seleccionado**  
+ Si selecciona esta casilla, se usa durante la depuración el conjunto de permisos seleccionado en la página **Seguridad**. Esta opción se encuentra activada de forma predeterminada.  
   
- Para que funcione la depuración en una zona de seguridad, esta opción debe estar habilitada. También debe estarlo la opción **Habilitar el proceso de alojamiento de Visual Studio**, disponible en la página **Depurar** del **Diseñador de proyectos**.  
+ Para que funcione la depuración en una zona de seguridad, esta opción debe estar habilitada. Además, debe estar habilitada la opción **Habilitar el proceso de hospedaje de Visual Studio** (disponible en la página **Depurar** del **Diseñador de proyectos**).  
   
- Para los proyectos de aplicación de explorador web de WPF, la opción **Depurar esta aplicación con el conjunto de permisos seleccionados** está activada y deshabilitada.  
+ Para los proyectos de aplicación de explorador web WPF, la opción **Depurar esta aplicación con el conjunto de permisos seleccionados** está activada y deshabilitada.  
   
- **Conceder acceso a la aplicación al sitio de origen**  
- Si activa esta casilla, la aplicación puede tener acceso al sitio web o recurso compartido del servidor en el que se publica.  Esta opción se encuentra activada de forma predeterminada.  
+ **Conceder a la aplicación acceso al sitio de origen**  
+ Si selecciona esta casilla, la aplicación puede tener acceso al sitio web o recurso compartido de servidor en el que está publicada. Esta opción se encuentra activada de forma predeterminada.  
   
- **Depurar esta aplicación como si se hubiera descargado de la siguiente dirección URL**  
- Si tiene que permitir que la aplicación tenga acceso al sitio web o al recurso compartido de red correspondiente a la **Dirección URL de instalación** especificada en la página **Publicar**, escriba aquí esa dirección URL.  Esta opción sólo está disponible cuando se selecciona **Conceder acceso a la aplicación al sitio de origen**.  
+ **Depurar esta aplicación como si se hubiera descargado de la siguiente dirección URL:**  
+ Si necesita que la aplicación tenga acceso al sitio web o recurso compartido de servidor correspondiente a la **Dirección URL de instalación** especificada en la página **Publicar**, escriba esa dirección URL aquí. Esta opción solo está disponible cuando está seleccionada la opción **Conceder a la aplicación acceso al sitio de origen**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Página Seguridad, Diseñador de proyectos](../../ide/reference/security-page-project-designer.md)

@@ -1,35 +1,36 @@
 ---
-title: "Trabajar con modelos 3D | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Trabajar con modelos 3D | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-caps.latest.revision: 8
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Trabajar con modelos 3D
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Puede utilizar el Editor de modelos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear modelos 3D.  Puede utilizar los modelos de su juego o aplicación basada en DirectX.  
+# <a name="working-with-3-d-models"></a>Trabajar con modelos 3D
+Puede usar el Editor de modelos en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear modelos 3D. Puede usar los modelos en su aplicación o juego basado en DirectX.  
   
-## Modelos 3D  
- Los modelos 3D definen la forma de los objetos según aparecen en una escena 3D.  Los modelos pueden ser objetos solitarios básicos, objetos complejos que se forman de jerarquías de objetos básicos o incluso escenas 3D completas.  Un objeto 3D se compone de puntos en el espacio 3D \(conocidos como *vértices*\), índices que definen triángulos, líneas u otros primitivos que se componen de esos puntos y atributos que se pueden aplicar en un por vértice o por primitivo, por ejemplo, normales de superficie.  Además, alguna información podría aplicarse objeto por objeto, por ejemplo, qué sombreador y texturas darán al objeto su aspecto único.  
+## <a name="3-d-models"></a>modelos 3D  
+ Los modelos 3D definen la forma de objetos tal y como aparecen en una escena 3D. Los modelos pueden ser objetos solitarios básicos, objetos complejos que están formados por jerarquías de objetos básicos, o incluso escenas 3D completas. Un objeto 3D está formado por puntos en el espacio 3D (conocidos como *vértices*), índices que definen triángulos, líneas u otros primitivos que se componen de estos puntos, y atributos que se pueden aplicar por vértice o por primitivo (por ejemplo, valores normales de superficie). Además, puede aplicarse cierta información por objeto (por ejemplo, qué sombreador y texturas le darán al objeto su apariencia única).  
   
- El editor de modelos es la única herramienta que necesita para crear modelos 3D básicos completos, con propiedades de materiales, texturas y sombreadores de píxeles, y que puede utilizar en el juego o la aplicación.  O puede crear modelos de marcador para usar para la creación de prototipos y pruebas antes de que se contrate a artistas para finalizar los modelos.  
+ El Editor de modelos es la única herramienta que necesita para crear modelos 3D básicos (junto con propiedades de materiales, texturas y sombreadores de píxeles) que puede usar en su juego o aplicación. O puede crear modelos de marcador de posición que usará para crear prototipos y realizar pruebas antes de que los artistas finalicen los modelos.  
   
- También puede utilizar el Editor de modelos para ver los modelos 3D existentes creados mediante el uso de herramientas con todas las funciones, y para modificarlos si observa problemas en los activos gráficos.  
+ También puede usar el Editor de modelos para ver los modelos 3D existentes que se han creado mediante herramientas completas y para modificarlos si observa problemas en los activos de imagen.  
   
-## Temas relacionados  
+## <a name="related-topics"></a>Temas relacionados  
   
 |Título|Descripción|  
-|------------|-----------------|  
-|[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el editor de modelos para trabajar con modelos 3D.|  
-|[Ejemplos del Editor de modelos](../designers/model-editor-examples.md)|Proporciona vínculos a temas que muestran cómo usar el Editor de modelos para realizar tareas de modelado 3D comunes.|
+|-----------|-----------------|  
+|[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos para trabajar con modelos 3D.|  
+|[Ejemplos del Editor de modelos](../designers/model-editor-examples.md)|Proporciona vínculos a temas que muestran cómo usar el Editor de modelos para realizar tareas comunes de modelado 3D.|

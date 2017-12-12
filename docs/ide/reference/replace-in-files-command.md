@@ -1,32 +1,32 @@
 ---
-title: "Reemplazar en archivos (Comando) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "edit.replaceinfiles"
-helpviewer_keywords: 
-  - "Edit.ReplaceInFiles (comando)"
-  - "Reemplazar en archivos (comando)"
-  - "ReplaceInFiles (comando)"
+title: Comando Reemplazar en archivos | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: edit.replaceinfiles
+helpviewer_keywords:
+- Edit.ReplaceInFiles command
+- Replace In Files command
+- ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1e9ccf0c77f28d2f57d6861dd39591a7cbbce36c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Reemplazar en archivos (Comando)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Reemplaza texto en archivos utilizando un subconjunto de las opciones disponibles en la ficha **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.  
+# <a name="replace-in-files-command"></a>Reemplazar en archivos (Comando)
+Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Edit.ReplaceinFiles findwhat replacewith [/all] [/case]  
@@ -34,68 +34,68 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 [/reset] [/stop] [/sub] [/text2] [/wild] [/word]  
 ```  
   
-## Argumentos  
+## <a name="arguments"></a>Argumentos  
  `findwhat`  
- Obligatorio.  Texto con el que debe coincidir.  
+ Obligatorio. Texto que debe coincidir.  
   
  `replacewith`  
- Obligatorio.  Texto para sustituir al texto coincidente.  
+ Obligatorio. Texto que va a sustituir el texto coincidente.  
   
-## Modificadores  
- \/all o \/a  
- Opcional.  Reemplaza todas las repeticiones del texto de búsqueda por el texto de reemplazo.  
+## <a name="switches"></a>Modificadores  
+ /all o /a  
+ Opcional. Reemplaza todas las apariciones del texto de la búsqueda por el texto de reemplazo.  
   
- \/case o \/c  
- Opcional.  Sólo se encuentran coincidencias si los caracteres en mayúsculas y minúsculas coinciden exactamente con los especificados en el argumento `findwhat`.  
+ /case o /c  
+ Opcional. Se encuentran coincidencias solo si los caracteres en mayúsculas y minúsculas coinciden exactamente con los especificados en el argumento `findwhat`.  
   
- \/ext: `extensions`  
- Opcional.  Especifica las extensiones de archivo que se van a buscar.  
+ /ext: `extensions`  
+ Opcional. Especifica las extensiones de los archivos en los que se va a buscar.  
   
- \/keep o \/k  
- Opcional.  Especifica que todos los archivos modificados queden abiertos.  
+ /keep o /k  
+ Opcional. Especifica que todos los archivos modificados se dejan abiertos.  
   
- \/lookin: `searchpath`  
- Opcional.  Directorio en el que se va a buscar.  Si la ruta de acceso contiene espacios, incluya la ruta de acceso completa entre comillas.  
+ /lookin: `searchpath`  
+ Opcional. Directorio en el que se va a buscar. Si la ruta de acceso contiene espacios, incluya la ruta de acceso completa entre comillas.  
   
- \/options o \/t  
- Opcional.  Muestra una lista de los valores de opción de búsqueda actuales y no realiza ninguna búsqueda.  
+ /options o /t  
+ Opcional. Muestra una lista de los valores de la opción de búsqueda actual y no lleva a cabo una búsqueda.  
   
- \/regex o \/r  
- Opcional.  Utiliza los caracteres especiales predefinidos en el argumento `findwhat` como notaciones que representan modelos de texto en lugar de los literales de cadena.  Para obtener una lista completa de caracteres de expresiones regulares, vea [Expresiones regulares](../../ide/using-regular-expressions-in-visual-studio.md).  
+ /regex o /r  
+ Opcional. Usa caracteres especiales predefinidos en el argumento `findwhat` como notaciones que representan patrones de texto en lugar de los caracteres literales. Para obtener una lista completa de caracteres de expresiones regulares, vea [Expresiones regulares](../../ide/using-regular-expressions-in-visual-studio.md).  
   
- \/reset o \/e  
- Opcional.  Devuelve las opciones de búsqueda a la configuración predeterminada sin realizar ninguna búsqueda.  
+ /reset o /e  
+ Opcional. Establece las opciones de búsqueda en su configuración predeterminada y no lleva a cabo una búsqueda.  
   
- \/stop  
- Opcional.  Detiene la operación de búsqueda actual si hay una en curso.  El reemplazo omite el resto de los argumentos cuando se ha especificado `/stop` .  Por ejemplo, para detener el reemplazo actual tiene que escribir lo siguiente:  
+ /stop  
+ Opcional. Detiene la operación de búsqueda actual, si hay alguna en curso. El reemplazo omite el resto de los argumentos cuando se ha especificado `/stop`. Por ejemplo, para detener el reemplazo actual, escriba lo siguiente:  
   
 ```  
 >Edit.ReplaceinFiles /stop  
 ```  
   
- \/sub o \/s  
- Opcional.  Busca en las subcarpetas del directorio especificado en el argumento \/lookin:`searchpath`.  
+ /sub o /s  
+ Opcional. Busca en las subcarpetas dentro del directorio especificado en el argumento /lookin:`searchpath`.  
   
- \/text2 o \/2  
- Opcional.  Muestra los resultados del reemplazo en la ventana **Resultados de la búsqueda 2**.  
+ /text2 o /2  
+ Opcional. Muestra los resultados del reemplazo en la ventana **Resultados de la búsqueda 2**.  
   
- \/wild o \/l  
- Opcional.  Utiliza los caracteres especiales predefinidos en el argumento `findwhat` como notaciones que representan un carácter o una secuencia de caracteres.  
+ /wild o /l  
+ Opcional. Usa caracteres especiales predefinidos en el argumento `findwhat` como notaciones para representar un carácter o una secuencia de caracteres.  
   
- \/word o \/w  
- Opcional.  Busca sólo palabras completas.  
+ /word o /w  
+ Opcional. Busca solo palabras completas.  
   
-## Ejemplo  
- Este ejemplo busca `btnCancel` y lo reemplaza por `btnReset` en todos los archivos .cls situados en la carpeta "my visual studio projects" y muestra la información de reemplazo en la ventana **Resultados de la búsqueda 2**.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se busca `btnCancel` y se reemplaza por `btnReset` en todos los archivos .cls ubicados en la carpeta "my visual studio projects". Además, se muestra la información de reemplazo en la ventana **Resultados de la búsqueda 2**.  
   
 ```  
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Buscar y reemplazar texto](../../ide/finding-and-replacing-text.md)   
  [Reemplazar en archivos](../../ide/replace-in-files.md)   
- [Ventana de comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar\/Comando](../../ide/find-command-box.md)   
+ [Ventana Comandos](../../ide/reference/command-window.md)   
+ [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

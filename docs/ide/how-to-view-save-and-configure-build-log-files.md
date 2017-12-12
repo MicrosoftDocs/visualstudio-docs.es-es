@@ -1,61 +1,62 @@
 ---
-title: "C&#243;mo: Ver, guardar y configurar archivos de registro de compilaci&#243;n | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Cómo: Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 617b495cab96d8fdb0ddd7c69d6e6c1dd93d7ccc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Ver, guardar y configurar archivos de registro de compilaci&#243;n
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre esa compilación en la ventana **Resultado**.  Con esta información, puede, por ejemplo, solucionar un error de compilación.  Para los proyectos de C\+\+, también puede ver la misma información en un archivo de .txt crear y se guarda automáticamente.  Para los proyectos de código administrado, puede copiar y pegar la información de la ventana **Resultado** en un archivo de .txt y guardarla personalmente.  También puede utilizar el IDE para especificar qué tipo de información desea ver sobre cada compilación.  
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
+Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. En el caso de los proyectos de C++, también puede ver la misma información en un archivo .txt que se crea y se guarda automáticamente. Si se trata de proyectos de código administrado, puede copiar y pegar la información de la ventana **Salida** en un archivo .txt y guardarlo donde quiera. También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.  
   
- Si compila cualquier tipo de proyecto mediante MSBuild, puede crear un archivo de .txt para almacenar información sobre la compilación.  Para obtener más información, vea [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Si compila un proyecto mediante MSBuild, puede crear un archivo .txt para guardar la información de la compilación. Para obtener más información, vea [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
-### Para ver el archivo de registro de compilación para el proyecto de c\+\+.  
+### <a name="to-view-the-build-log-file-for-a-c-project"></a>Para ver el archivo de registro de compilación de un proyecto de C++  
   
-1.  En **Explorador de Windows** o **Explorador de archivos**, abra el archivo siguiente: \\…  \\visual \\Visual Studio *Versión*\\Projects \\*ProjectName*\\*ProjectName*\\Debug \\*ProjectName*.txt  
+1.  En el **Explorador de Windows** o el **Explorador de archivos**, abra el archivo siguiente: \\…\Visual Studio *Versión*\Projects\\*NombreDelProyecto*\\*NombreDelProyecto*\Debug\\*NombreDelProyecto*.txt  
   
-### Para crear un archivo de registro de compilación de un proyecto de código administrado  
+### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para crear un archivo de registro de compilación para un proyecto de código administrado  
   
-1.  En la barra de menú, elija **Compilar**, **Compilar solución**.  
+1.  En la barra de menús, elija **Compilar**, **Compilar solución**.  
   
-2.  En la ventana **Resultado**, resalte la información de compilación y, a continuación cópiela en el portapapeles.  
+2.  En la ventana **Salida**, resalte la información de la compilación y, después, cópiela en el Portapapeles.  
   
-3.  Abra un editor de texto, como Bloc de notas, pegar la información en el archivo y, a continuación guardar.  
+3.  Abra un editor de texto, como el Bloc de notas, pegue la información en el archivo y guárdelo.  
   
-### Para cambiar la cantidad de información se incluye en el registro de compilación  
+### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para cambiar el volumen de información incluida en el registro de compilación  
   
-1.  En la barra de menú, elija **herramientas**, **opciones**.  
+1.  En la barra de menús, elija **Herramientas**, **Opciones**.  
   
-2.  En la página **Proyectos y soluciones**, elija la página **Generar y ejecutar**.  
+2.  En la página **Proyectos y soluciones**, elija la página **Compilar y ejecutar**.  
   
-3.  En la lista **Contenido de los resultados de compilación del proyecto de MSBuild**, elija uno de los valores siguientes, y elija el botón **Aceptar**.  
+3.  En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.  
   
     |Nivel de detalle|Descripción|  
-    |----------------------|-----------------|  
-    |No interactivo|Muestra un resumen de la compilación solo.|  
-    |Minimal|Muestra un resumen de la compilación y errores, las advertencias, los mensajes que se clasifican como muy importantes.|  
-    |Normal|Muestra un resumen de la compilación; errores, advertencias, y mensajes que se clasifican como muy importantes; y los principales pasos de compilación.  Utilizará este nivel de detalle con más frecuencia.|  
-    |Detailed|Muestra un resumen de la compilación; errores, advertencias, y mensajes que se clasifican como muy importantes; todos los pasos de compilación; y mensajes que se clasifican a partir de importancia normal.|  
-    |Diagnóstico|Muestra todos los datos que esté disponible para la compilación.  Puede utilizar este nivel de detalle para ayudar a depurar los problemas con los scripts y otro de compilación personalizada los problemas de compilación.|  
+    |---------------------|-----------------|  
+    |Quiet|Muestra un resumen solo de la compilación.|  
+    |Minimal|Muestra un resumen de la compilación y los errores, las advertencias y los mensajes que están clasificados como muy importantes.|  
+    |Normal|Muestra un resumen de la compilación; los errores, las advertencias y los mensajes que están clasificados como muy importantes; y los pasos principales de la compilación. Este es el nivel de detalle que se usará con más frecuencia.|  
+    |Detallado|Muestra un resumen de la compilación; los errores, las advertencias y los mensajes que están clasificados como muy importantes; todos los pasos de la compilación; y los mensajes que están clasificados como de importancia normal.|  
+    |Diagnóstico|Muestra todos los datos que están disponibles para la compilación. Puede usar este nivel de detalle para ayudar a depurar problemas con los scripts de compilación personalizada y otros problemas de compilación.|  
   
      Para obtener más información, vea [Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) y <xref:Microsoft.Build.Framework.LoggerVerbosity>.  
   
     > [!IMPORTANT]
-    >  Debe recompilar el proyecto para que los cambios surtan efecto en la ventana **Resultado** \(todos los proyectos\) y el archivo de *ProjectName*.txt \(proyectos de C\+\+ solo\).  
+    >  Debe recompilar el proyecto para que los cambios surtan efecto en la ventana **Salida** (todos los proyectos) y el archivo *NombreDelProyecto*.txt (solo para proyectos de C++).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Compilar aplicaciones en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
+ [Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)

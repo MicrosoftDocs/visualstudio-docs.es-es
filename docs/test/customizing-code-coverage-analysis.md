@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: 16
+caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: 01dc224a571144744028e98153df1c525c461156
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 64115171c64faf0f62b6530c37fa53c6631ac1d6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 De forma predeterminada, la herramienta de cobertura de código de Visual Studio analiza todos los ensamblados de la solución (.exe/.dll) que se cargan durante las pruebas unitarias. Se recomienda mantener esta configuración predeterminada, porque funciona bien la mayoría de los casos. Para obtener más información, consulte [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
@@ -344,4 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>Vea también  
  [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
-

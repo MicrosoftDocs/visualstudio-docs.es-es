@@ -1,27 +1,29 @@
 ---
-title: "JsSetExternalData (Funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsSetExternalData"
-helpviewer_keywords: 
-  - "JsSetExternalData (función)"
+title: "Función JsSetExternalData | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsSetExternalData
+helpviewer_keywords: JsSetExternalData function
 ms.assetid: 94e0ad34-67d7-4f7f-88a3-3b057ef5e4b9
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bf7e21cded2b4b1bdb50fef53fc8d298434a14eb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# JsSetExternalData (Funci&#243;n)
+# <a name="jssetexternaldata-function"></a>JsSetExternalData (Función)
 Establece los datos externos en un objeto externo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 STDAPI_(JsErrorCode) JsSetExternalData(  
@@ -30,21 +32,21 @@ STDAPI_(JsErrorCode) JsSetExternalData(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `object`  
  El objeto externo.  
   
  `externalData`  
- Los datos externos almacenados en el objeto.  Puede ser NULL si no se almacena ningún dato externo en el objeto.  
+ Los datos externos almacenados en el objeto. Puede ser NULL si no se almacena ningún dato externo en el objeto.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  El código `JsNoError` si la operación se realizó correctamente; en caso contrario, un código de error.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Requiere un contexto de script activo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

@@ -1,96 +1,97 @@
 ---
-title: "L&#237;nea de comandos del evento anterior/posterior a la compilaci&#243;n (Cuadro de di&#225;logo) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cs.ProjectPropertiesBuildEventsBuilder"
-  - "vb.ProjectPropertiesBuildEventsBuilder"
-helpviewer_keywords: 
-  - "$(SolutionExt)"
-  - "$(ProjectDir)"
-  - "$(TargetPath)"
-  - "$(ProjectExt)"
-  - "$(TargetFileName)"
-  - "$(PlatformName)"
-  - "$(SolutionName)"
-  - "macros, eventos de compilación"
-  - "$(SolutionPath)"
-  - "$(ProjectPath)"
-  - "$(ProjectFileName)"
-  - "$(DevEnvDir)"
-  - "$(TargetName)"
-  - "$(TargetDir)"
-  - "$(SolutionDir)"
-  - "$(TargetExt)"
-  - "$(OutDir)"
-  - "$(ConfigurationName)"
-  - "$(SolutionFileName)"
-  - "$(ProjectName)"
-  - "eventos de compilación, macros"
+title: "Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- cs.ProjectPropertiesBuildEventsBuilder
+- vb.ProjectPropertiesBuildEventsBuilder
+helpviewer_keywords:
+- $(SolutionExt)
+- $(ProjectDir)
+- $(TargetPath)
+- $(ProjectExt)
+- $(TargetFileName)
+- $(PlatformName)
+- $(SolutionName)
+- macros, build events
+- $(SolutionPath)
+- $(ProjectPath)
+- $(ProjectFileName)
+- $(DevEnvDir)
+- $(TargetName)
+- $(TargetDir)
+- $(SolutionDir)
+- $(TargetExt)
+- $(OutDir)
+- $(ConfigurationName)
+- $(SolutionFileName)
+- $(ProjectName)
+- build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7d2ec0c94de336adf2c8fd10946466aafcecc72a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# L&#237;nea de comandos del evento anterior/posterior a la compilaci&#243;n (Cuadro de di&#225;logo)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Puede escribir eventos anteriores o posteriores a la compilación para el [Eventos de compilación \(Página, Diseñador de proyectos\) \(C\#\)](../../ide/reference/build-events-page-project-designer-csharp.md) directamente en el cuadro de edición, o puede seleccionar macros anteriores o posteriores a la generación a partir de una lista de macros disponibles.  
+# <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
+Puede escribir eventos anteriores o posteriores a la compilación para la [página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) directamente en el cuadro de edición o puede seleccionar macros anteriores o posteriores a la compilación de una lista de macros disponibles.  
   
 > [!NOTE]
 >  Los eventos anteriores a la compilación no se ejecutan si el proyecto está actualizado y no se desencadena ninguna compilación.  
   
-## Lista de elementos de la interfaz de usuario  
- **Cuadro de edición de la línea de comandos**  
+## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario  
+ **Cuadro de edición de línea de comandos**  
  Contiene los eventos que se van a ejecutar, ya sean anteriores o posteriores a la compilación.  
   
 > [!NOTE]
->  Agregue una instrucción `call` delante de todos los comandos posteriores a la compilación que ejecutan archivos .bat.  Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
+>  Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos .bat. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Macros**  
- Expande el cuadro de edición para mostrar una lista de macros que se insertan en el cuadro de edición de la línea de comandos.  
+ Expande el cuadro de edición para mostrar una lista de macros que se van a insertar en el cuadro de edición de la línea de comandos.  
   
  **Tabla de macros**  
- Muestra las macros disponibles y su valor.  Vea Macros a continuación para obtener una descripción de cada una.  Sólo puede seleccionar una macro cada vez para insertarla en el cuadro de edición de la línea de comandos.  
+ Se enumeran las macros disponibles y su valor. Vea la sección Macros siguiente para obtener una descripción de cada una. Al insertar las macros en el cuadro de edición de la línea de comandos, solo puede seleccionarlas de una en una.  
   
- **Insert**  
+ **Insertar**  
  Inserta en el cuadro de edición de la línea de comandos la macro seleccionada en la tabla de macros.  
   
-### Macros  
- Puede utilizar cualquiera de estas macros para especificar ubicaciones de archivos u obtener el nombre real del archivo de entrada en caso de que haya varias selecciones.  Estas macros no hacen distinción entre mayúsculas y minúsculas.  
+### <a name="macros"></a>Macros  
+ Puede usar cualquiera de estas macros para especificar las ubicaciones de los archivos o para obtener el nombre real del archivo de entrada en el caso de las selecciones múltiples. Estas macros no distinguen entre mayúsculas y minúsculas.  
   
 |Macro|Descripción|  
 |-----------|-----------------|  
-|`$(ConfigurationName)`|Nombre de la configuración del proyecto actual \(por ejemplo, "Versión de depuración"\).|  
-|`$(OutDir)`|Ruta de acceso \(relativa al directorio del proyecto\) al directorio de archivos de salida.  Se resuelve en el valor de la propiedad Directorio de resultados.  Incluye la barra diagonal inversa final '\\'.|  
-|`$(DevEnvDir)`|El directorio de instalación de Visual Studio \(definido con la unidad y la ruta de acceso\); incluye “\\”\) final de barra diagonal inversa.|  
-|`$(PlatformName)`|Nombre de la plataforma de destino actual.  Por ejemplo, "CualquierCPU".|  
-|`$(ProjectDir)`|Directorio del proyecto \(definido con unidad y ruta de acceso\); incluye la barra diagonal inversa \('\\'\) final.|  
-|`$(ProjectPath)`|Nombre de la ruta de acceso absoluta del proyecto \(definido con unidad, ruta de acceso, nombre base y extensión de archivo\).|  
-|`$(ProjectName)`|Nombre base del proyecto.|  
-|`$(ProjectFileName)`|Nombre de archivo del proyecto \(definido con nombre base y extensión de archivo\).|  
-|`$(ProjectExt)`|Extensión de archivo del proyecto.  Incluye un '.' antes de la extensión de archivo.|  
-|`$(SolutionDir)`|Directorio de la solución \(definido con unidad y ruta de acceso\); incluye la barra diagonal inversa \('\\'\) final.|  
-|`$(SolutionPath)`|Nombre de la ruta de acceso absoluta de la solución \(definido con unidad, ruta de acceso, nombre base y extensión de archivo\).|  
-|`$(SolutionName)`|Nombre base de la solución.|  
-|`$(SolutionFileName)`|Nombre de archivo de la solución \(definido con nombre base y extensión de archivo\).|  
-|`$(SolutionExt)`|Extensión de archivo de la solución.  Incluye un '.' antes de la extensión de archivo.|  
-|`$(TargetDir)`|Directorio del archivo de salida principal de la compilación \(definido con unidad y ruta de acceso\).  Incluye la barra diagonal inversa final '\\'.|  
-|`$(TargetPath)`|Nombre de la ruta de acceso absoluta del archivo de salida principal de la compilación \(definido con unidad, ruta de acceso, nombre base y extensión de archivo\).|  
-|`$(TargetName)`|Nombre base del archivo de salida principal de la compilación.|  
-|`$(TargetFileName)`|Nombre del archivo de salida principal de la compilación \(definido con nombre base y extensión de archivo\).|  
-|`$(TargetExt)`|Extensión de archivo del archivo de salida principal de la compilación.  Incluye un '.' antes de la extensión de archivo.|  
+|`$(ConfigurationName)`|El nombre de la configuración del proyecto actual (por ejemplo, "Depuración").|  
+|`$(OutDir)`|Ruta de acceso al directorio de archivos de salida relativo al directorio del proyecto. Se resuelve en el valor de la propiedad Directorio de salida. Incluye la barra diagonal inversa final “\\”.|  
+|`$(DevEnvDir)`|El directorio de instalación de Visual Studio (definido como unidad y ruta de acceso) incluye la barra diagonal inversa final "\\".|  
+|`$(PlatformName)`|El nombre de la plataforma de destino actual. Por ejemplo, "CualquierCPU".|  
+|`$(ProjectDir)`|El directorio del proyecto (definido como unidad y ruta de acceso) incluye la barra diagonal inversa final "\\".|  
+|`$(ProjectPath)`|El nombre de ruta de acceso absoluta del proyecto (definido como unidad, ruta de acceso, nombre base y extensión de archivo).|  
+|`$(ProjectName)`|El nombre base del proyecto.|  
+|`$(ProjectFileName)`|El nombre de archivo del proyecto (definido como nombre base y extensión de archivo).|  
+|`$(ProjectExt)`|La extensión de archivo del proyecto. Incluye el "." antes de la extensión de archivo.|  
+|`$(SolutionDir)`|El directorio de la solución (definido como unidad y ruta de acceso) incluye la barra diagonal inversa final "\\".|  
+|`$(SolutionPath)`|El nombre de ruta de acceso absoluta de la solución (definido como unidad, ruta de acceso, nombre base y extensión de archivo).|  
+|`$(SolutionName)`|El nombre base de la solución.|  
+|`$(SolutionFileName)`|El nombre de archivo de la solución (definido como nombre base y extensión de archivo).|  
+|`$(SolutionExt)`|La extensión de archivo de la solución. Incluye el "." antes de la extensión de archivo.|  
+|`$(TargetDir)`|El directorio del archivo de salida principal de la compilación (definido como unidad y ruta de acceso). Incluye la barra diagonal inversa final "\\".|  
+|`$(TargetPath)`|El nombre de ruta de acceso absoluta del archivo de salida principal de la compilación (definido como unidad, ruta de acceso, nombre base y extensión de archivo).|  
+|`$(TargetName)`|El nombre base del archivo de salida principal de la compilación.|  
+|`$(TargetFileName)`|El nombre de archivo del archivo de salida principal de la generación (definido como nombre base y extensión de archivo).|  
+|`$(TargetExt)`|La extensión de archivo del archivo de salida principal de la compilación. Incluye el "." antes de la extensión de archivo.|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Especificar eventos de compilación personalizados en Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)   
- [Eventos de compilación \(Página, Diseñador de proyectos\) \(C\#\)](../../ide/reference/build-events-page-project-designer-csharp.md)   
- [Cómo: Especificar eventos de compilación \(Visual Basic\)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Cómo: Especificar eventos de compilación \(C\#\)](../../ide/how-to-specify-build-events-csharp.md)
+ [Eventos de compilación (Página, Diseñador de proyectos) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
+ [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)

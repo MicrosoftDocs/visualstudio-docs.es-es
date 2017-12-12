@@ -1,27 +1,29 @@
 ---
-title: "JsVariantToValue (Funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsVariantToValue"
-helpviewer_keywords: 
-  - "JsVariantToValue (función)"
+title: "Función JsVariantToValue | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsVariantToValue
+helpviewer_keywords: JsVariantToValue function
 ms.assetid: e8f9eb8b-55b3-4b65-927e-cad5b482edee
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc778d87aab7e80e7c1b04a68c2d3b9c6fdd885a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# JsVariantToValue (Funci&#243;n)
+# <a name="jsvarianttovalue-function"></a>JsVariantToValue (Función)
 Crea un valor de JavaScript que es una proyección del parámetro `VARIANT` pasado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 STDAPI_(JsErrorCode) JsVariantToValue(  
@@ -30,23 +32,23 @@ STDAPI_(JsErrorCode) JsVariantToValue(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `variant`  
  `VARIANT` que se va a proyectar.  
   
  `value`  
  Valor de JavaScript que es una proyección del parámetro `VARIANT`.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  El código `JsNoError` si la operación se realizó correctamente; en caso contrario, un código de error.  
   
-## Comentarios  
- El valor proyectado puede usarlo el script para llamar a un objeto de automatización COM desde el mismo script.  Los hosts son responsables de aplicar las reglas de subprocesos COM.  
+## <a name="remarks"></a>Comentarios  
+ El valor proyectado puede usarlo el script para llamar a un objeto de automatización COM desde el mismo script. Los hosts son responsables de aplicar las reglas de subprocesos COM.  
   
  Requiere un contexto de script activo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

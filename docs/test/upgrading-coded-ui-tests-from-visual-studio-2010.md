@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d3936d44f8591753df102cf65c15d9199a679316
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 8b854bcfcb7227a454023f89ce732706b1e545cc
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Actualizar pruebas de IU codificadas desde Visual Studio 2010
-Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 se reparan automáticamente al abrirse en Visual Studio 2012. Si los proyectos de prueba están protegidos bajo control de código fuente, los archivos del proyecto se desprotegen para esta reparación. Una vez reparados, estos proyectos de prueba que contienen pruebas de IU codificadas se pueden usar en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
+Los proyectos de prueba que contienen pruebas automatizadas de IU creadas en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 se reparan automáticamente al abrirse en Visual Studio 2012 o versiones posteriores. Si los proyectos de prueba están protegidos bajo control de código fuente, los archivos del proyecto se desprotegen para esta reparación. Una vez reparados, estos proyectos de prueba que contienen pruebas de IU codificadas se pueden usar en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
  **Requisitos**  
   
@@ -45,12 +28,12 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
 >  Visual Studio incluye más de un tipo de proyecto de prueba. Si crea una nueva prueba de IU codificada, se creará en un tipo de proyecto de prueba de IU codificada. Para obtener más información, vea [Actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
   
 > [!WARNING]
-> Los proyectos de prueba de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] que contienen pruebas de IU codificadas tienen que volver a compilarse al abrir el proyecto de prueba en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] en paralelo con [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
+>  Los proyectos de prueba de[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] que contienen pruebas de IU codificadas tienen que volver a compilarse al abrir el proyecto de prueba en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] en paralelo con [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
 > [!WARNING]
 >  Si un proyecto de prueba creado en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] que solo contiene pruebas unitarias se abre en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], no es posible agregarle las pruebas de IU codificadas. De forma similar, no se puede agregar una prueba de IU codificada a un proyecto de prueba unitaria creado en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
-## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Problemas de compatibilidad entre Visual Studio 2010 y Visual Studio 2012  
+## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012-or-later"></a>Problemas de compatibilidad entre Visual Studio 2010 y Visual Studio 2012 o versiones posteriores  
  En la siguiente tabla se enumeran los problemas que hay que tener en cuenta a la hora de migrar pruebas de IU codificadas entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
   
 > [!CAUTION]
@@ -64,7 +47,7 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
 |En [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]se agregaron referencias dentro de una instrucción "Choose" en el archivo csproj. En [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]se está usando un archivo de destinos Feedback para incluir referencias de ensamblado de prueba de IU codificada.|En [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], una prueba de IU codificada no se puede agregar a un proyecto de prueba creado en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] (o SP1) que no contuviera una prueba de IU codificada.<br /><br /> El proceso de reparación agrega el archivo de destinos y la instrucción Choose. Si una prueba de IU codificada no está en el proyecto de prueba, el proyecto se marca como reparado y no se agregarán las referencias adecuadas al agregar la prueba de IU codificada en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|Tendrá que crear un nuevo proyecto de prueba en la misma solución mediante [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] y agregarle la nueva prueba de IU codificada. Como alternativa, puede agregar pruebas de IU codificadas al proyecto de prueba en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 y abrir dicho proyecto en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|  
   
 ##  <a name="UpgradingCodedUIFromVS2010_Update"></a> Actualización de Visual Studio 2010 SP1  
- Hay una actualización para [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 con compatibilidad con Visual Studio 2012 y Windows 8 disponible para su descarga en el [Centro de descarga de Microsoft](http://www.microsoft.com/download/details.aspx?id=34677) y también como una actualización de Visual Studio.  
+ Hay una actualización para [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 con compatibilidad con Visual Studio 2012 o versiones posteriores y Windows 8 o versiones posteriores disponible para su descarga en el [Centro de descarga de Microsoft](http://www.microsoft.com/download/details.aspx?id=34677) y también como una actualización de Visual Studio.  
   
  Después de aplicar la actualización, se mejoran las siguientes características de herramientas de prueba de IU codificada de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] SP1 para Windows 8:  
   
@@ -86,4 +69,3 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
  [Generar una prueba automatizada de IU a partir de la grabación de acciones existente](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)   
  [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - performance, analyzing
 - profiling applications, walkthroughs
 ms.assetid: 36f6f123-0c14-4763-99c3-bd60ecb95b87
-caps.latest.revision: 53
+caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a20a64818982484a56ba7dc82af890c729da40e4
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Tutorial: identificar problemas de rendimiento
 En este tutorial se muestra cómo generar perfiles de una aplicación para identificar problemas de rendimiento.  
@@ -105,9 +89,9 @@ En este tutorial se muestra cómo generar perfiles de una aplicación para ident
   
 2.  La vista **Detalles de la función** contiene dos ventanas. La ventana de distribución del costo proporciona una vista gráfica del trabajo realizado por la función, el trabajo realizado por las funciones a las que llamó y la contribución de las funciones que llamaron a la función en el número de instancias que se usaron en el muestreo. Puede cambiar la función que está en el foco de la vista haciendo clic en el nombre de otra función. Por ejemplo, puede hacer clic en PeopleNS.People.GetPeople para hacer que GetPeople sea la función seleccionada.  
   
-     En la ventana **Vista de código de función** se muestra el código fuente de la función si está disponible y se resaltan las líneas menos eficaces de la función seleccionada. Si selecciona GetNames, puede observar que esta función lee una cadena de los recursos de aplicación y, a continuación, usa un <xref:System.IO.StringReader> para agregar cada una de las líneas de la cadena a una <xref:System.Collections.ArrayList>. No existe ningún mecanismo claro para optimizar esta función.  
+     En la ventana **Vista de código de función** se muestra el código fuente de la función si está disponible y se resaltan las líneas menos eficaces de la función seleccionada. Si selecciona GetNames, puede observar que esta función lee una cadena de los recursos de aplicación y, a continuación, usa un objeto <xref:System.IO.StringReader> para agregar cada una de las líneas de la cadena a un objeto <xref:System.Collections.ArrayList>. No existe ningún mecanismo claro para optimizar esta función.  
   
-3.  Dado que PeopleNS.People.GetPeople es el único llamador de GetNames, en la ventana de distribución del costo, haga clic en GetPeople para examinar el código. Este método devuelve una <xref:System.Collections.ArrayList> de los objetos PersonInformationNS.PersonInformation a partir de los nombres de las personas y compañías generados por GetNames. Sin embargo, GetNames se invoca dos veces cada vez que se crea un objeto PersonInformation. Puede ver que el método se puede optimizar fácilmente creando las listas una sola vez al comienzo del método y creando índices en esas listas durante el bucle de creación de PersonInformation.  
+3.  Dado que PeopleNS.People.GetPeople es el único llamador de GetNames, en la ventana de distribución del costo, haga clic en GetPeople para examinar el código. Este método devuelve un objeto <xref:System.Collections.ArrayList> de los objetos PersonInformationNS.PersonInformation a partir de los nombres de las personas y compañías generados por GetNames. Sin embargo, GetNames se invoca dos veces cada vez que se crea un objeto PersonInformation. Puede ver que el método se puede optimizar fácilmente creando las listas una sola vez al comienzo del método y creando índices en esas listas durante el bucle de creación de PersonInformation.  
   
 4.  Con el código de la aplicación de ejemplo se suministra una versión alternativa de GetPeople. Puede llamar a la función optimizada agregando un símbolo de compilación adicional a las propiedades de compilación. En la ventana del Explorador de soluciones, haga clic con el botón derecho en el proyecto People y después haga clic en **Propiedades**. En el menú de la página de propiedades, haga clic en **General** y escriba **OPTIMIZED_GETPEOPLE** en el cuadro de texto del símbolo de compilación condicional. La versión optimizada de GetPeople reemplazará al método original en la compilación siguiente.  
   
@@ -152,13 +136,13 @@ En este tutorial se muestra cómo generar perfiles de una aplicación para ident
   
 1.  En el gráfico de escala de tiempo de la vista **Resumen** del informe, se muestra la utilización de CPU del programa a lo largo de la ejecución de la generación de perfiles. La operación de exportación de datos debería corresponderse con el pico destacado o la altiplanicie que registra la línea a la derecha del gráfico. Podemos filtrar la sesión de rendimiento para mostrar y analizar únicamente los datos recopilados en la operación de exportación. Haga clic a la izquierda del punto del gráfico en el que comienza la operación de exportación de datos. Haga clic de nuevo en el lado derecho de la operación. A continuación, haga clic en **Filtrar por selección** en la lista de vínculos situada a la derecha de la escala de tiempo.  
   
-     En el árbol **Ruta de acceso activa**, se muestra que el método <xref:System.String.Concat%2A> invocado por el método PeopleTrax.Form1.ExportData emplea un gran porcentaje de tiempo. Dado que **System.String.Concat** también está en la parte superior de la lista **Funciones con la mayor parte del trabajo individual**, un posible punto de optimización consistiría en reducir el tiempo invertido en la función.  
+     En el árbol **Ruta de acceso activa**, se muestra que el método <xref:System.String.Concat%2A> invocado por el método PeopleTrax.Form1.ExportData emplea un gran porcentaje del tiempo. Dado que **System.String.Concat** también está en la parte superior de la lista **Funciones con la mayor parte del trabajo individual**, un posible punto de optimización consistiría en reducir el tiempo invertido en la función.  
   
 2.  Haga doble clic en **System.String.Concat** en cualquiera de las tablas de resumen para ver más información en la vista Detalles de la función.  
   
 3.  Puede ver que PeopleTrax.Form1.ExportData es el único método que llama a Concat. Haga clic en **PeopleTrax.Form1.ExportData** en la lista **Funciones que llaman** para seleccionar el método que actúa como destino de la vista Detalles de la función.  
   
-4.  Examine el método en la ventana Vista de código de función. Observe que no hay llamadas literales a **System.String.Concat**. En su lugar, se usa varias veces el operando +=, que el compilador reemplaza por llamadas a **System.String.Concat**. Cualquier modificación de una cadena en .NET Framework provoca la asignación de una nueva cadena. .NET Framework incluye una clase <xref:System.Text.StringBuilder> que está optimizada para la concatenación de cadenas  
+4.  Examine el método en la ventana Vista de código de función. Observe que no hay llamadas literales a **System.String.Concat**. En su lugar, se usa varias veces el operando +=, que el compilador reemplaza por llamadas a **System.String.Concat**. Cualquier modificación de una cadena en .NET Framework provoca la asignación de una nueva cadena. .NET Framework incluye una clase <xref:System.Text.StringBuilder> que está optimizada para la concatenación de cadenas.  
   
 5.  Para reemplazar esta área de problema con código optimizado, agregue OPTIMIZED_EXPORTDATA como símbolo de compilación condicional al proyecto PeopleTrax.  
   

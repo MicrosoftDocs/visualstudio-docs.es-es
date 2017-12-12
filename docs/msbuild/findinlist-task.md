@@ -1,48 +1,49 @@
 ---
-title: "FindInList (Tarea) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "FindInList (tarea) [MSBuild]"
-  - "MSBuild, FindInList (tarea)"
+title: Tarea FindInList | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- FindInList task [MSBuild]
+- MSBuild, FindInList task
 ms.assetid: d49b9f84-52a2-4242-9269-b741a7a7e9f7
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: c30b667564b3ffc4852f39c5ccc96c6527720a1f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# FindInList (Tarea)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-En una lista especificada, busca un elemento cuya especificación coincida.  
+# <a name="findinlist-task"></a>FindInList (Tarea)
+Busca en una lista especificada un elemento con las especificaciones coincidentes.  
   
-## Parámetros  
- En la siguiente tabla se describen los parámetros de [FindInList Task](../msbuild/findinlist-task.md).  
+## <a name="parameters"></a>Parámetros  
+ En la tabla siguiente se describen los parámetros de la [tarea FindInList](../msbuild/findinlist-task.md).  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|`CaseSensitive`|Parámetro `Boolean` opcional.<br /><br /> Si el valor es `true`, la búsqueda distingue entre mayúsculas y minúsculas; de lo contrario, no lo hace.  El valor predeterminado es `true`.|  
-|`FindLastMatch`|Parámetro `Boolean` opcional.<br /><br /> Si el valor es `true`, devuelve la última coincidencia; de lo contrario, devuelve la primera coincidencia.  El valor predeterminado es `false`.|  
-|`ItemFound`|Parámetro de salida de sólo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Primer elemento coincidente encontrado en la lista, si hay alguno.|  
-|`ItemSpecToFind`|Parámetro `String` requerido.<br /><br /> Itemspec que se va a buscar.|  
-|`List`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Lista en la que se va a buscar el itemspec.|  
-|`MatchFileNameOnly`|Parámetro `Boolean` opcional.<br /><br /> Si el valor es `true`, coincide solamente con la parte del nombre de archivo del itemspec; de lo contrario, coincide con todo el itemspec.  El valor predeterminado es `true`.|  
+|`CaseSensitive`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la búsqueda distingue entre mayúsculas y minúsculas; en caso contrario, no lo hace. El valor predeterminado es `true`.|  
+|`FindLastMatch`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, devuelve la última coincidencia; en caso contrario, devuelve la primera. El valor predeterminado es `false`.|  
+|`ItemFound`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Primer elemento coincidente que se encuentra en la lista, si existe.|  
+|`ItemSpecToFind`|Parámetro `String` requerido.<br /><br /> Especificación de elemento que se va a buscar.|  
+|`List`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Lista en la que se va a buscar la especificación de elemento.|  
+|`MatchFileNameOnly`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, solo se compara con la parte del nombre de archivo de la especificación de elemento; en caso contrario, se compara con toda la especificación de elemento. El valor predeterminado es `true`.|  
   
-## Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que hereda de la clase <xref:Microsoft.Build.Utilities.Task>.  Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension \(Clase base\)](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Comentarios  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

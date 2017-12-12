@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.markers.flag
+f1_keywords: vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0095311f5188260bf1207e4094c1ceb87b1bbb86
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="flag-markers"></a>Marcadores de marca
 Un marcador de marca representa algo que se ha producido en un momento determinado en una aplicación. Una marca puede representar muchos tipos de eventos de aplicación. Por ejemplo, una marca puede mostrar cuándo se ha programado un elemento de trabajo determinado o cuándo se ha producido una excepción. Los runtimes, como la biblioteca TPL, también pueden generar marcas.  
@@ -43,19 +25,19 @@ Un marcador de marca representa algo que se ha producido en un momento determina
 ## <a name="flag-importance"></a>Importancia de la marca  
  Las marcas se muestran en diferentes tamaños según su importancia. Al igual que cualquier marcador, la importancia puede ser baja, normal, alta o crítica.  En esta ilustración se muestra el aspecto de los marcadores por nivel de importancia:  
   
- ![Marcadores de importancia baja, normal, alta y crítica](~/profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
+ ![Marcadores de importancia baja, normal, alta y crítica](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
 Marcadores que muestran la importancia de la marca  
   
 ## <a name="flag-category"></a>Categoría de la marca  
  Una marca se muestra en uno de cinco colores diferentes, según su categoría. Los colores se reutilizan si hay más de cinco categorías. No puede elegir el color. Al igual que cualquier marcador, la categoría puede ser cualquier número entero. En la ilustración siguiente se muestran los colores de las cinco primeras categorías.  
   
- ![Los cinco colores de los marcadores de categoría](~/profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+ ![Los cinco colores de los marcadores de categoría](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
 Marcadores que muestran categorías  
   
 ## <a name="alerts"></a>Alertas  
  Una alerta es una marca de color rojo que representa un evento de aplicación crítico, como una excepción.  Esta es una alerta:  
   
- ![El marcador de alerta del visualizador de simultaneidad](~/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![Marcador de alerta del visualizador de simultaneidad](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 Un marcador de alerta  
   
 ## <a name="aggregation-flags"></a>Marcas de agregación  
@@ -63,7 +45,7 @@ Un marcador de alerta
   
  Las marcas de agregación se dibujan en diferentes tamaños. El tamaño depende del nivel de importancia de la marca más importante en la agregación. En la ilustración siguiente se muestran las marcas de agregación en orden creciente de importancia.  
   
- ![Agregar marcas que muestren cuatro niveles de importancia](~/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![Agregar marcas que muestren cuatro niveles de importancia](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Marcas de agregación por nivel de importancia  
   
 ## <a name="see-also"></a>Vea también  

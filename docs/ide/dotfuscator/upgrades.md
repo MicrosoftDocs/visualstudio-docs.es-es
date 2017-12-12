@@ -2,8 +2,7 @@
 title: Actualizar Dotfuscator Community Edition (CE) | Microsoft Docs
 ms.date: 2017-02-08
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: article
 keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protección, community edition, ofuscación, .NET, gratuito, Visual Studio 2017, actualizar, línea de comandos"
 helpviewer_keywords:
@@ -24,28 +23,12 @@ description: "Obtenga información sobre cómo actualizar el producto gratuito D
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
-ms.openlocfilehash: 60ca38639f6523cdbace4efa4aa48b48d5e9a886
-ms.contentlocale: es-es
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 261fc98312914f5a80d2302a90e360dfde2ca17f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Actualizar Dotfuscator Community Edition (CE)
 
 Dotfuscator Community Edition (Dotfuscator CE) ofrece muchas características de protección de aplicaciones de forma inmediata a todos los desarrolladores que usan Microsoft Visual Studio.
@@ -54,6 +37,7 @@ En cambio, hay más características disponibles para los usuarios que actualice
 ## <a name="registering-dotfuscator-ce"></a>Registrar Dotfuscator CE
 
 Los usuarios registrados de Dotfuscator CE obtienen acceso a características adicionales, como [compatibilidad de línea de comandos][cli], lo que facilita la integración de Dotfuscator CE en el proceso de compilación automatizado.
+Además, el registro le concederá acceso a Lucidator, una herramienta integrada empleada para [descodificar seguimientos de la pila ofuscados][decode-obfuscated].
 
 El registro es rápido, sencillo y gratuito.
 Para registrar Dotfuscator CE, consulte [la sección Registering Dotfuscator CE (Registrar Dotfuscator CE) en la página de introducción de la Guía de usuario completa de Dotfuscator CE][register-ce].
@@ -73,7 +57,6 @@ Se incluyen los siguientes:
   * La capacidad de [quitar de forma automática el código que no se usa de la aplicación][pruning], lo que reduce la cantidad de código confidencial que se distribuye.
 * *Protección de la integridad de la aplicación*
   * [Comportamientos adicionales de defensa de la aplicación][check-actions].
-  * La capacidad de insertar código contra alteraciones y depuraciones en ensamblados `.dll`.
   * La capacidad de proporcionar un período de advertencia antes de la fecha límite de fin de ciclo de vida de la aplicación.
   * La capacidad de notificar el código de aplicación durante un período de advertencia de fin de ciclo de vida o después de la fecha límite.
   * Cifrado de telemetría.
@@ -116,4 +99,4 @@ Para obtener más información sobre las características avanzadas de protecci�
 [register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
 [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
-
+[decode-obfuscated]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html

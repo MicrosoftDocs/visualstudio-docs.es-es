@@ -1,35 +1,36 @@
 ---
-title: "Metadatos de elementos en procesamiento por lotes de destinos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "procesar por lotes [MSBuild]"
-  - "MSBuild, procesamiento por lotes de destino"
-  - "procesamiento por lotes de destino [MSBuild]"
+title: Metadatos de elementos en el procesamiento por lotes de destinos | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching [MSBuild]
+- MSBuild, target batching
+- target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: d24400bc3889d5f7fbe691d3e75b7fd7ad155e01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Metadatos de elementos en procesamiento por lotes de destinos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede realizar análisis de dependencias de las entradas y los resultados de un destino de compilación.  Si se determina que las entradas o las salidas del destino están actualizadas, el destino se omite y la compilación continúa.  Los elementos `Target` utilizan los atributos `Inputs` y `Outputs` para especificar los elementos que se deben inspeccionar durante el análisis de dependencias.  
+# <a name="item-metadata-in-target-batching"></a>Metadatos de elementos en procesamiento por lotes de destinos
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede realizar el análisis de dependencias de las entradas y las salidas de un destino de compilación. Si se determina que las entradas o las salidas del destino están actualizadas, el destino se omite y la compilación continúa. Los elementos `Target` usan los atributos `Inputs` y `Outputs` para especificar los elementos que se van a inspeccionar durante el análisis de dependencias.  
   
- Si un destino contiene una tarea que usa elementos procesados por lotes como entradas o resultados, el elemento `Target` del destino deberá utilizar el procesamiento por lotes en sus atributos `Inputs` o `Outputs` para permitir que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] omita los lotes de elementos que ya estén actualizados.  
+ Si un destino contiene una tarea que usa elementos procesados por lotes como entradas o salidas, el elemento `Target` del destino debe usar el procesamiento por lotes en sus atributos `Inputs` o `Outputs` para permitir que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] omita los lotes de elementos que ya están actualizados.  
   
-## Procesar destinos por lotes  
- El ejemplo siguiente contiene una lista de elementos denominada `Res` que se divide en dos lotes basándose en los metadatos de los elementos `Culture`.  Cada uno de estos lotes se pasa a la tarea `AL`, que crea un ensamblado de salida para cada lote.  Mediante el procesamiento por lotes en el atributo `Outputs` del elemento `Target`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede determinar si cada lote individual está actualizado antes de ejecutar el destino.  Si no se utiliza el procesamiento por lotes de destinos, la tarea ejecuta ambos lotes de elementos cada vez que se ejecute el destino.  
+## <a name="batching-targets"></a>Procesamiento por lotes de destinos  
+ El ejemplo siguiente contiene una lista de elementos denominada `Res` que se divide en dos lotes en función de los metadatos del elemento `Culture`. Cada uno de estos lotes se pasa a la tarea `AL`, que crea un ensamblado de salida para cada lote. Mediante el uso del procesamiento por lotes en el atributo `Outputs` del elemento `Target`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede determinar si cada lote individual está actualizado antes de ejecutar el destino. Si no se usara el procesamiento por lotes de destinos, la tarea ejecutaría ambos lotes de elementos cada vez que se ejecutara el destino.  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -67,8 +68,8 @@ caps.handback.revision: 6
 </Project>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Cómo: Compilar versiones incrementalmente](../msbuild/how-to-build-incrementally.md)   
  [Procesamiento por lotes](../msbuild/msbuild-batching.md)   
- [Elemento Target \(MSBuild\)](../msbuild/target-element-msbuild.md)   
+ [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Metadatos de elementos en el procesamiento por lotes de tareas](../msbuild/item-metadata-in-task-batching.md)

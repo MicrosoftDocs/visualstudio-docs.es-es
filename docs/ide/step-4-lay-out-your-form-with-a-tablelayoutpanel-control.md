@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 6f4db48b7e1f90654643efbfcfd41acbdcceaec8
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 1740beb4c671b2e66e249827c2db678f6b6f7da3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: Diseñar un formulario con un control TableLayoutPanel
 En este paso, agregará un control `TableLayoutPanel` al formulario. El control TableLayoutPanel ayuda a alinear correctamente los controles del formulario que se agregarán posteriormente.  
@@ -63,7 +47,7 @@ Icono de pin
   
 4.  Pulse **TableLayoutPanel** para asegurarse de que está seleccionado. Puede comprobar qué control está seleccionado examinando la lista desplegable de la parte superior de la ventana **Propiedades**, como se muestra en la siguiente imagen.  
   
-     ![Ventana Propiedades mostrando el control TableLayoutPanel](../ide/media/express_controlspropwin.png "Express_ControlsPropWin")  
+     ![Ventana Propiedades en la que se muestra el control TableLayoutPanel](../ide/media/express_controlspropwin.png "Express_ControlsPropWin")  
 Ventana Propiedades mostrando el control TableLayoutPanel  
   
 5.  Pulse el botón **Alfabético** en la barra de herramientas de la ventana **Propiedades**. Esto hace que la lista de propiedades de la ventana **Propiedades** aparezca en orden alfabético, lo que facilitará la localización de propiedades en este tutorial.  

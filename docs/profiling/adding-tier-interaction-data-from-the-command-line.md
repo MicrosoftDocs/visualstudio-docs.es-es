@@ -4,45 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tier interaction profiling method
 - profiling tools,tier interaction method
 ms.assetid: 5a35647f-03f2-4555-8eeb-fda7e0080e67
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 6c394dfcf1c0df0cb7d006592b3dc386da328876
-ms.openlocfilehash: 33bef5cc4eb777cb2778b12f919bbcac8f7cc574
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a210ce1f6aeac113033bd82306bb5b682a5e21b9
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de llamadas sincrónicas a [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] en funciones de aplicaciones de varias capas que se comunican con una o más bases de datos.  
   
  **Windows 8 y Windows Server 2012**  
   
- Para recopilar datos de interacción de capas de aplicaciones de escritorio de Windows 8 o aplicaciones de Windows Server 2012, debe usar el método de instrumentación. No se admite la recopilación de datos de interacción de capas en aplicaciones de la Tienda Windows.  
+ Para recopilar datos de interacción de capas de aplicaciones de escritorio de Windows 8 o aplicaciones de Windows Server 2012, debe usar el método de instrumentación. No se admite la recopilación de datos de interacción de capas en aplicaciones para UWP.  
   
  **Ediciones de Visual Studio**  
   

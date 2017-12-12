@@ -1,16 +1,15 @@
 ---
-title: "Selección de bloques"
+title: "Selección de bloques | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
+ms.openlocfilehash: dfc46f3297dccda0692332efc451aa04e7997d36
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 96abe05d5afde86118623fac46b92c73857f0447
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="block-selection"></a>Selección de bloques
 Visual Studio para Mac facilita la selección, el corte, el copiado y el pegado de secciones del código. Se pueden resaltar y seleccionar bloques rectangulares de código mediante el comando **Opción + Arrastrar** en el bloque de código. Al pegar el bloque se conserva el formato de esta selección de bloque.

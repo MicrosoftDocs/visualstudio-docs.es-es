@@ -1,27 +1,28 @@
 ---
-title: "Personalizar plantillas de proyectos y de elementos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "personalizar plantillas de Visual Studio"
-  - "plantillas de Visual Studio, personalizar"
+title: Personalizar plantillas de proyecto y de elemento | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- customizing Visual Studio templates
+- Visual Studio templates, customizing
 ms.assetid: d7344a0a-d93f-4b69-bbc4-0c2d67ef272b
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3170c28527aa4ecfe335a946624ad95489b75280
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Personalizar plantillas de proyectos y de elementos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Después de proyecto y plantillas de elementos se han creado, todavía tiene la capacidad de personalizarlos aún más para satisfacer las necesidades.  
+# <a name="customizing-project-and-item-templates"></a>Personalizar plantillas de proyectos y de elementos
+Una vez que se han creado las plantillas de proyecto y elemento, puede personalizarlas aún más para que se adapten a sus necesidades.  
   
  Por ejemplo, puede realizar las tareas siguientes:  
   
@@ -29,20 +30,20 @@ Después de proyecto y plantillas de elementos se han creado, todavía tiene la 
   
      Para obtener más información, vea [Cómo: Actualizar plantillas existentes](../ide/how-to-update-existing-templates.md).  
   
--   Pase los parámetros personalizados en una plantilla para reemplazar los valores existentes.  
+-   Pasar parámetros personalizados en una plantilla para reemplazar los valores existentes.  
   
-     Para obtener más información, vea [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).  
+     Para más información, vea [Cómo: Sustituir parámetros en una plantilla](../ide/how-to-substitute-parameters-in-a-template.md).  
   
--   Personalizar los asistentes que crean proyectos de plantillas.  
+-   Personalizar los asistentes que crean proyectos a partir de plantillas.  
   
-     Para obtener más información, vea [Cómo: Utilizar los asistentes con las plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md).  
+     Para obtener más información, vea [How to: Use Wizards with Project Templates](../extensibility/how-to-use-wizards-with-project-templates.md) (Cómo: Usar asistentes con plantillas de proyectos).  
   
-## Secciones relacionadas  
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)  
   
  [Cómo: Solucionar problemas de plantillas](../ide/how-to-troubleshoot-templates.md)  
   
- [Cómo: Crear plantillas de proyectos](../ide/how-to-create-project-templates.md)  
+ [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)  
   
  [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)  
   

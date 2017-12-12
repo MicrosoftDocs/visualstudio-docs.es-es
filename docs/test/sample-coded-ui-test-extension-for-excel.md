@@ -4,37 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- coded UI tests, extensions for Excel
+helpviewer_keywords: coded UI tests, extensions for Excel
 ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 46e8adfd4e4b66e743af8a0db5aecd3f40eb2de7
-ms.contentlocale: es-es
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: 812227cb3eee5236f05e879a240133fa4bdcd13e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Extensión de muestra para probar la IU codificada para Excel
 El componente de extensión de la muestra se ejecuta en el proceso de prueba de IU codificada [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y es algo jerárquico con la clase `ExtensionPackage` en la base. Las clases `TechnologyManager`, `ActionFilter` y `PropertyProvider` están en el siguiente nivel, con los elementos de control en el nivel superior.  
@@ -70,4 +52,3 @@ Arquitectura de extensión para Excel
  [ActionFilter (Clase)](../test/sample-excel-extension-actionfilter-class.md)   
  [Element (Clases)](../test/sample-excel-extension-element-classes.md)   
  [PropertyProvider (Clase)](../test/sample-excel-extension-propertyprovider-class.md)
-

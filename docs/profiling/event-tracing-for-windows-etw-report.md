@@ -1,42 +1,43 @@
 ---
-title: "Informe Seguimiento de eventos para Windows (ETW) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "informe ETW de generación de perfiles"
-  - "informe de Seguimiento de eventos para Windows de generación de perfiles"
+title: Informe Seguimiento de eventos para Windows (ETW) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Event tracing for Windows profiling report
+- ETW profiling report
 ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6ae3b43f300ce410f58dd3fc4d849b2fe1bb3c38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Informe Seguimiento de eventos para Windows (ETW)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El informe de seguimiento de eventos para Windows \(ETW\) muestra los eventos ETW grabados en una sesión de rendimiento de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Los datos ETW se recopilan en un archivo binario \(.etl\).  
+# <a name="event-tracing-for-windows-etw-report"></a>Informe Seguimiento de eventos para Windows (ETW)
+El informe Seguimiento de eventos para Windows (ETW) muestra los eventos ETW registrados en una sesión de rendimiento de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Los datos ETW se recopilan en un archivo binario (.etl).  
   
 > [!NOTE]
->  No puede mostrar los informes ETW en la interfaz de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+>  No se puede mostrar informes ETW en la interfaz de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
--   Para obtener información sobre cómo recopilar datos ETW mediante las herramientas de generación de perfiles de la interfaz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vea [Cómo: Recopilar datos de Seguimiento de eventos para Windows \(ETW\)](../Topic/How%20to:%20Collect%20Event%20Tracing%20for%20Windows%20\(ETW\)%20Data.md).  
+-   Para obtener información sobre cómo recopilar datos ETW mediante las Herramientas de generación de perfiles desde la interfaz de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vea [Cómo: Recopilar datos de Seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
--   Para obtener información sobre cómo recopilar datos ETW utilizando las herramientas de línea de comandos de [VSPerfCmd](../profiling/vsperfcmd.md), vea [Eventos](../profiling/events-vsperfcmd.md).  
+-   Para obtener información sobre cómo recopilar datos ETW mediante las herramientas de la línea de comandos [VSPerfCmd](../profiling/vsperfcmd.md), vea [Eventos](../profiling/events-vsperfcmd.md).  
   
--   Genere el informe ETW utilizando el comando **VSReport\/Summary:ETW**.  Para obtener más información, vea [VSPerfReport](../profiling/vsperfreport.md).  
+-   Genere el informe ETW mediante el comando **VSReport/Summary:ETW**. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).  
   
 |Columna|Descripción|  
-|-------------|-----------------|  
-|**Marca de tiempo**|Identifica el momento en que se produjo el evento.|  
-|**Id. de proceso**|Identifica el proceso que generó el evento.|  
-|**Id. de subproceso**|Identifica el subproceso que generó el evento.|  
-|**Descripción**|Identifica el proveedor de eventos.|  
-|**Tipo**|Identifica el tipo de evento.|  
-|**Propiedades**|Propiedades del evento.  Cada evento es un par de nombre y valor delimitado por comas y encerrado entre corchetes.|
+|------------|-----------------|  
+|**Marca de tiempo**|Identifica la hora en la que se ha producido el evento.|  
+|**Identificador del proceso**|Identifica el proceso que ha generado el evento.|  
+|**Identificador de subproceso**|Identifica el subproceso que ha generado el evento.|  
+|**Descripción**|Identifica el proveedor del evento.|  
+|**ype**|Identifica el tipo de evento.|  
+|**Propiedades**|Propiedades del evento. Cada evento es un par nombre-valor separado por comas e incluido entre corchetes.|

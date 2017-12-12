@@ -1,19 +1,17 @@
 ---
-title: "Editor de código fuente"
+title: "Editor de código fuente | Microsoft Docs"
 description: "Empleo del editor de código fuente de Visual Studio para Mac"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
+ms.openlocfilehash: f52e60c0ade8cebc78b3408b4ef81ef85fcd767b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: aa7635cd2593b871128c0588110f0bfdad5a82ec
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="source-editor"></a>Editor de código fuente
 
 Un editor de código fuente de confianza es básico para escribir código de forma sucinta y eficaz. Visual Studio para Mac proporciona un sofisticado editor de código fuente que constituye el núcleo de las interacciones con el IDE. El editor de código fuente proporciona las características que se podrían esperar y que se necesitan para trabajar con facilidad: desde tareas básicas como resaltado de sintaxis, fragmentos de código y plegado de código, a las ventajas de la integración del compilador Roslyn, como completado de código IntelliSense totalmente funcional.
@@ -84,7 +82,6 @@ Cuando esta opción está activada, un desarrollador puede colocar el cursor del
 El color del resaltado también resulta útil para indicar que un elemento está asignado o tiene una referencia. Si un elemento está asignado, se resalta en rojo; si tiene una referencia, en azul:
 
 ![](media/source-editor-image7.png)
-
 
 
 

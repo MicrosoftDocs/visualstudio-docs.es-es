@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Csc
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
 - VB
 - CSharp
@@ -19,35 +17,21 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 9057a6bd209d4761c147577888dffa2933bbf4c8
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="csc-task"></a>Csc (Tarea)
 Encapsula CSC.exe y genera archivos ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o archivos de módulos de códigos (.netmodule). Para obtener más información sobre CSC.exe, consulte [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index).  
   
 ## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `Csc`.  
+ En la siguiente tabla se describen los parámetros de la tarea `Csc` .  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
@@ -97,7 +81,7 @@ Encapsula CSC.exe y genera archivos ejecutables (.exe), archivos de biblioteca d
 |`Win32Resource`|Parámetro `String` opcional.<br /><br /> Inserta un archivo de recurso de Win32 (.res) en el archivo de salida. Para obtener más información, consulte [/win32res (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option).|  
   
 ## <a name="remarks"></a>Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase `Microsoft.Build.Tasks.ManagedCompiler`, que la hereda de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez la hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase `Microsoft.Build.Tasks.ManagedCompiler`, que hereda de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [ToolTaskExtension (Clase base)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se utiliza la tarea `Csc` para compilar un ejecutable de los archivos de origen en la colección de elementos `Compile`.  

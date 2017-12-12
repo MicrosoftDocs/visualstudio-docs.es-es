@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,30 +27,15 @@ helpviewer_keywords:
 - class view
 - object browser
 ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: cf7325de6a4d5ee4cac1b48a7da33202034fde0c
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: f85bcde09d6748aa781ceefd85ccbf138245aca6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="viewing-the-structure-of-code"></a>Ver la estructura del código
 Puede examinar los objetos y miembros de proyectos de Visual Studio y los objetos y miembros de componentes de .NET Framework, componentes de COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipo (TLB).  
@@ -164,7 +148,7 @@ Ventana Jerarquía de llamadas
   
 -   Un conjunto de componentes personalizado  
   
- Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos .ocx. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+ Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos .ocx. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.  
   
  El panel izquierdo del **Examinador de objetos** muestra contenedores físicos, como componentes COM y .NET Framework. Puede expandir los nodos de contenedores para mostrar los espacios de nombres que contengan y, a continuación, expandir los espacios de nombres para mostrar los tipos que contengan. Cuando se selecciona un tipo, sus miembros (como es el caso de las propiedades y los métodos) se enumeran en el panel derecho. El panel inferior derecho muestra información detallada acerca del elemento seleccionado.  
   

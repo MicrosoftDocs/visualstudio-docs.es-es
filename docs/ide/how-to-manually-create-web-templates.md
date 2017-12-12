@@ -1,46 +1,47 @@
 ---
-title: "C&#243;mo: Crear plantillas web manualmente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "plantillas de proyecto [Visual Studio], Web"
-  - "plantillas [Visual Studio], Web"
-  - "plantillas de Visual Studio, Web"
-  - "plantillas web [Visual Studio]"
+title: "Cómo: Crear plantillas web manualmente | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio templates, Web
+- templates [Visual Studio], Web
+- Web templates [Visual Studio]
+- project templates [Visual Studio], Web
 ms.assetid: 731c4027-a152-48c5-bfc4-93490bf1949f
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5d5f34e421160e8cca56897e6530ff47da7b1a84
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Crear plantillas web manualmente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El proceso de creación de una plantilla web es ligeramente diferente al de crear otros tipos de plantillas.  Debido a que las plantillas de los proyectos web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y a que los elementos de proyectos web se clasifican por lenguaje de programación, el archivo .vstemplate debe especificar que se trata de una plantilla web e identificar el lenguaje de programación.  
+# <a name="how-to-manually-create-web-templates"></a>Cómo: Crear plantillas web manualmente
+La creación de una plantilla web es diferente de la creación de otros tipos de plantillas. Dado que las plantillas de proyecto web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y los elementos de proyecto web se clasifican por lenguaje de programación, el archivo .vstemplate debe especificar la plantilla como una plantilla web e identificar el lenguaje de programación.  
   
 > [!NOTE]
->  Las plantillas web deben contener un archivo .webproj vacío que se especifica mediante el atributo `File` del elemento `Project`.  Aunque los proyectos web no requieren archivos de proyecto, este archivo es necesario para el buen funcionamiento de las plantillas web.  
+>  Las plantillas web deben contener un archivo .webproj vacío que se especifica mediante el atributo `File` del elemento `Project`. Aunque los proyectos web no requieren archivos de proyecto, este archivo es necesario para que las plantillas web funcionen correctamente.  
   
-### Para crear manualmente una plantilla Web  
+### <a name="to-manually-create-a-web-template"></a>Para crear una plantilla web manualmente  
   
 1.  Cree un proyecto web.  
   
-2.  Modifique o elimine los archivos del proyecto o agréguele nuevos archivos.  
+2.  Modifique o elimine los archivos del proyecto, o bien agregue nuevos archivos al proyecto.  
   
-3.  Cree un archivo XML y guárdelo con la extensión .vstemplate en el mismo directorio que el proyecto.  No lo agregue al proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3.  Cree un archivo XML y guárdelo con la extensión de nombre de archivo .vstemplate en el mismo directorio del proyecto. No lo agregue al proyecto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  Cree el archivo XML con extensión .vstemplate para proporcionar los metadatos de la plantilla de proyecto.  Para obtener más información, vea el ejemplo de la siguiente sección.  
+4.  Cree el archivo XML .vstemplate para proporcionar los metadatos de la plantilla de proyecto. Para más información, vea el ejemplo de la sección siguiente.  
   
 5.  Busque el elemento `ProjectType` en el archivo .vstemplate y establezca el valor de texto en `Web`.  
   
-6.  Tras el elemento `ProjectType`, agregue un elemento `ProjectSubType` y establezca el valor de texto en el lenguaje de programación de la plantilla.  El lenguaje de programación puede ser uno de los siguientes valores:  
+6.  Después del elemento `ProjectType`, agregue un elemento `ProjectSubType` y establezca el valor de texto en el lenguaje de programación de la plantilla. El lenguaje de programación puede ser uno de estos valores:  
   
     -   CSharp  
   
@@ -57,12 +58,12 @@ El proceso de creación de una plantilla web es ligeramente diferente al de crea
     </TemplateData>  
     ```  
   
-7.  Seleccione los archivos de la plantilla \(también el archivo .vstemplate\), haga clic con el botón secundario en la selección, haga clic en **Enviar a** y, a continuación, en **Carpeta comprimida \(en zip\)**.  Los archivos se comprimen en un archivo .zip.  
+7.  Seleccione los archivos de la plantilla (incluido el archivo .vstemplate), haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpeta comprimida (en zip)**. Los archivos se comprimen en un archivo .zip.  
   
-8.  Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  de forma predeterminada, este directorio es \\My Documents\\Visual Studio *Versión*\\My Exported Templates \\.  
+8.  Coloque el archivo de plantilla .zip en el directorio de plantillas de proyecto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. De forma predeterminada, este directorio es \Mis documentos\Visual Studio *Versión*\My Exported Templates\\.  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra un archivo .vstemplate básico para una plantilla de proyecto web.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se muestra un archivo .vstemplate básico para una plantilla de proyecto web.  
   
 ```  
 <VSTemplate Version="2.0.0" Type="Project"  
@@ -85,6 +86,6 @@ El proceso de creación de una plantilla web es ligeramente diferente al de crea
 </VSTemplate>  
 ```  
   
-## Vea también  
- [Crear plantillas de proyecto y de elemento personalizadas](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Vea también  
+ [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

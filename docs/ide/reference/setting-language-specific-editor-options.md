@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,35 +12,20 @@ helpviewer_keywords:
 - configure editor
 - editor settings
 ms.assetid: ba64d517-a60d-409b-9860-5d75065a5bb7
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: ab506c0d3bdf9a03ee2212d6e4767d8443c604e5
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 8d3c25221b2d063064b82981a069a99d7395c59e
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="setting-language-specific-editor-options"></a>Opciones del editor específicas del lenguaje
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona una serie de opciones del Editor de texto que se aplican a lenguajes de programación concretos.  
+Visual Studio proporciona una serie de opciones del editor de texto que se aplican a lenguajes de programación concretos. Puede configurar las opciones en el cuadro de diálogo **Opciones**, al que se puede acceder desde el menú **Herramientas**. También puede configurar algunas opciones del editor por proyecto o código base creando un archivo EditorConfig. Consulte [Create portable, custom editor settings with EditorConfig (Crear opciones del editor personalizadas y portátiles con EditorConfig)](../../ide/create-portable-custom-editor-options.md).
   
-## <a name="in-this-section"></a>En esta sección  
+## <a name="settings-available-in-the-options-dialog-box"></a>Opciones de configuración disponibles en el cuadro de diálogo Opciones  
  [Opciones, editor de texto, básico (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
  Describe la configuración de las construcciones End, el cambio de formato del código, la esquematización y sugerencias de corrección de errores, entre otros, para el código de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].  
   
@@ -58,20 +42,12 @@ ms.lasthandoff: 05/24/2017
  Describe los valores de configuración de la esquematización, la identificación de errores y los comentarios de la documentación XML de C# y J#.  
   
  [Opciones, editor de texto, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
- Describe la configuración que especifica cómo se comporta la lista de finalización de IntelliSense cuando se trabaja en código de C# y J#.  
-  
- [Validación, CSS, Editor de texto, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/Library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
- Describe la configuración de la finalización de instrucciones y de la corrección de errores en hojas de estilos en cascada (CSS).  
-  
- [Validación, HTML, Editor de texto, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/Library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
- Describe la configuración para comprobar la sintaxis HTML en función del esquema seleccionado.  
+ Describe la configuración que especifica cómo se comporta la lista de finalización de IntelliSense cuando se trabaja en código de C# y J#. 
   
  [Opciones, editor de texto, XAML, formato](../../ide/reference/options-text-editor-xaml-formatting.md)  
  Describe la configuración de disposición de elementos y atributos en documentos XAML.  
   
-## <a name="related-sections"></a>Secciones relacionadas  
- [Personalizar el editor](../../ide/customizing-the-editor.md)  
- Proporciona vínculos a temas que explican muchos aspectos del editor para los que puede establecer preferencias.  
-  
- [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)  
- Proporciona vínculos a temas que explican cómo personalizar la configuración, los enlaces de teclado y otras características del entorno de desarrollo integrado (IDE).
+## <a name="see-also"></a>Vea también  
+[Personalizar el editor](../../ide/customizing-the-editor.md)  
+[Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig](../../ide/create-portable-custom-editor-options.md)  
+[Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md) &mdash; Proporciona vínculos a temas que explican cómo personalizar la configuración, los enlaces de teclado y otras características del entorno de desarrollo integrado (IDE).

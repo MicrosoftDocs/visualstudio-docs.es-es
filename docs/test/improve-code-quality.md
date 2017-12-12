@@ -1,40 +1,24 @@
 ---
-title: "Mejorar la calidad del código"
+title: "Mejorar la calidad del código | Microsoft Docs"
 ms.custom: na
 ms.date: 02/17/2017
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - team-based development
 ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
-caps.latest.revision: 39
+caps.latest.revision: "39"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: db500747061b436db2a0897e5b43a1cae4a3acae
-ms.contentlocale: es-es
-ms.lasthandoff: 06/03/2017
-
+ms.openlocfilehash: 93847beaef971f9370d59a8c5c8ac9f3a59a0967
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="improve-code-quality"></a>Mejorar la calidad del código
 ¿Qué es la calidad del código? La corrección, el mantenimiento e incluso la elegancia son factores que se tienen en cuenta en la creación de un buen código. Independientemente de su definición, las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equipo a desarrollar y a mantener altos estándares de excelencia de código.  
@@ -71,4 +55,3 @@ ms.lasthandoff: 06/03/2017
   
  [Seguimiento del trabajo mediante Visual Studio Online o Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
  Puede utilizar [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] para planear y realizar el seguimiento de los proyectos, tanto si usa el proceso rápido, el proceso formal o una variación de esos procesos. Si planea los proyectos, realiza el seguimiento del progreso con respecto al el plan y realiza los ajustes necesarios, puede reducir los riesgos, evitar las sorpresas desagradables y administrar el costo de los proyectos.
-

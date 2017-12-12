@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: cc0ac8b3418c725579b25712e14c373028fca339
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: f4778bde9903ce3e264f0209c147eedc227b7d8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual Studio de forma más rápida y eficaz. Para obtener más información sobre los métodos abreviados de teclado más frecuentes, vea [Sugerencias y trucos de Visual Studio](../ide/tips-and-tricks-for-visual-studio.md). Para obtener una lista más completa, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) y [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
@@ -91,23 +75,11 @@ Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual 
   
      Para insertar un fragmento de código, en la barra de menús, pulse **Editar**, **IntelliSense**, **Insertar fragmento de código** o abra el menú contextual en un archivo y seleccione **Insertar fragmento de código**. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).  
   
--   **Corregir errores de código alineados**. Las etiquetas inteligentes aparecen como cuadros azules o rojos debajo de una línea de código. Puede mostrar las opciones de Etiqueta inteligente si apunta a uno de los cuadros o coloca el cursor en la línea de código y elige las teclas Ctrl +. (punto).  
-  
-     Los cuadros azules sugieren maneras de corregir errores en el código.  
-  
-     Figura 1: etiquetas inteligentes de error  
-  
-     ![Sugerencias de etiquetas inteligentes de error](../ide/media/productivity_bluesmarttags.png "Productivity_BlueSmartTags")  
-  
-     Los cuadros rojos sugieren formas de refactorizar el código.  
-  
-     Figura 2: etiquetas inteligentes de refactorización  
-  
-     ![Sugerencias de etiquetas inteligentes de refactorización](../ide/media/productivity_redsmarttags.png "Productivity_RedSmartTags")  
-  
+-   **Corregir errores de código alineados**. Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción. Estas acciones se pueden aplicar mediante el icono de bombilla ![icono de bombilla pequeño](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o si se presiona **Alt+ENTRAR** o **CTRL+.** cuando el cursor esté en la línea de código adecuada. Para obtener más información, vea [Acciones rápidas](quick-actions.md).  
+
 -   **Mostrar y editar la definición de un elemento de código**. Puede mostrar y editar rápidamente el módulo en el que se define un elemento de código, como un miembro, una variable o un valor local.  
   
-     Para abrir una definición en una ventana emergente, resalte el elemento y, después, pulse las teclas Alt+F12, o abra el menú contextual del elemento y pulse **Ver la definición**. Para abrir una definición en una ventana de código diferente, abra el menú contextual del elemento de código y, después, pulse **Ir a definición**.  
+     Para abrir una definición en una ventana emergente, resalte el elemento y, después, presione las teclas **Alt+F12**, o abra el menú contextual del elemento y seleccione **Ver la definición**. Para abrir una definición en una ventana de código diferente, abra el menú contextual del elemento de código y, después, pulse **Ir a definición**.  
   
 ##  <a name="BKMK_Navigating"></a> Navegar dentro del código  
  Puede usar diversas técnicas para buscar determinadas ubicaciones del código e ir a ellas con más rapidez.  

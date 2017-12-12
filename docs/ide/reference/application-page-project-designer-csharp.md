@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,38 +14,22 @@ helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
 ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
-caps.latest.revision: 56
-author: kempb
-ms.author: kempb
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
-ms.openlocfilehash: 3f0056a62dc11c5584e38e9912ccd94f5b9e9b0e
-ms.contentlocale: es-es
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 5f32dceca8a6b14e6b1777e5c525327f46adca47
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 Use la página **Aplicación** del **Diseñador de proyectos** para especificar la configuración de la aplicación y las propiedades del proyecto.  
   
- En la página **Aplicación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando aparezca el Diseñador de proyectos, haga clic en la pestaña **Aplicación**.  
+En la página **Aplicación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando aparezca el Diseñador de proyectos, haga clic en la pestaña **Aplicación**.  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="general-application-settings"></a>Configuración de aplicación general  
  Las opciones siguientes le permiten configurar opciones generales para la aplicación.  
@@ -72,7 +55,7 @@ Use la página **Aplicación** del **Diseñador de proyectos** para especificar 
  Para obtener más información, vea [Cómo: Usar como destino una versión de .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Tipo de aplicación**  
- Especifica el tipo de aplicación que se va a compilar. Para aplicaciones de [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)], puede especificar **Aplicación de la Tienda Windows**, **Biblioteca de clases** o **Archivo WinMD**. Para la mayoría de tipos de aplicación, puede especificar **Aplicación Windows**, **Aplicación de consola**, **Biblioteca de clases**, **Servicio de Windows** o **Biblioteca de controles web**.  
+ Especifica el tipo de aplicación que se va a compilar. Para aplicaciones de Windows 8.x, puede especificar **Aplicación de la Tienda Windows**, **Biblioteca de clases** o **WinMD File** (Archivo WinMD). Para la mayoría de tipos de aplicación, puede especificar **Aplicación Windows**, **Aplicación de consola**, **Biblioteca de clases**, **Servicio de Windows** o **Biblioteca de controles web**.  
   
  Para un proyecto de aplicación web, debe especificar **Biblioteca de clases**.  
   
@@ -111,11 +94,11 @@ Use la página **Aplicación** del **Diseñador de proyectos** para especificar 
   
 -   **Properties\app.manifest**. Esta opción es necesaria para las aplicaciones implementadas mediante ClickOnce o COM sin registro. Si publica una aplicación mediante la implementación de ClickOnce, **Manifiesto** se establece automáticamente en esta opción.  
   
- **Archivo de recursos**  
- Seleccione este botón de opción si va a proporcionar un archivo de recursos para el proyecto. Al seleccionar esta opción se deshabilitan las opciones **Icono** y **Manifiesto**.  
+**Archivo de recursos**  
+Seleccione este botón de opción si va a proporcionar un archivo de recursos para el proyecto. Al seleccionar esta opción se deshabilitan las opciones **Icono** y **Manifiesto**.  
   
- Escriba un nombre de ruta o use el botón Examinar (**...**) para agregar un archivo de recursos de Win32 al proyecto.  
+Escriba un nombre de ruta o use el botón Examinar (**...**) para agregar un archivo de recursos de Win32 al proyecto.  
   
 ## <a name="see-also"></a>Vea también  
 [Administrar las propiedades de la aplicación](../../ide/application-properties.md)  
- [Escribir código en soluciones de Office](/office-dev/office-dev/writing-code-in-office-solutions)
+[Escribir código en soluciones de Office](/office-dev/office-dev/writing-code-in-office-solutions)

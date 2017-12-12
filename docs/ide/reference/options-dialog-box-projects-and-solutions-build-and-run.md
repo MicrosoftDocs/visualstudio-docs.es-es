@@ -1,11 +1,10 @@
 ---
 title: "Cuadro de diálogo Opciones, Proyectos y soluciones, Compilación y ejecución | Documentos de Microsoft"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,23 +15,21 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: e15880551e2a896bca473d463b253ec15dda7b36
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: 8e5165b4b17195e5f9172dd25962c9486a7aeeeb
-ms.contentlocale: es-es
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar
 
 En este cuadro de diálogo puede especificar el número máximo de proyectos de Visual C++ o Visual C# que se pueden compilar al mismo tiempo, determinados comportamientos de compilación predeterminados y algunos ajustes de registro de compilación. Para acceder a estas opciones, seleccione **Herramientas > Opciones**, expanda **Proyectos y soluciones** y elija **Compilación y ejecución**.
   
-**número máximo de compilaciones de proyecto paralelas**  
+**Número máximo de compilaciones de proyecto paralelas**  
 Especifica el número máximo de proyectos de Visual C++ y Visual C# que se pueden compilar al mismo tiempo. Para optimizar el proceso de compilación, el número máximo de compilaciones de proyecto paralelas se establece automáticamente en el número de CPU que tenga el equipo. El máximo es 32.  
 
 **Compilar proyectos de inicio y dependencias únicamente al ejecutar**  
@@ -60,6 +57,6 @@ Determina cuánta información aparece en la ventana **Salida** de la compilaci�
 Determina cuánta información se escribe en el archivo de registro de compilación, que se encuentra en \\...\\*NombreProyecto*\Debug\\*NombreProyecto*.log.  
 
 ## <a name="see-also"></a>Vea también  
--[Compilar y generar](../../ide/compiling-and-building-in-visual-studio.md)
-- [Cuadro de diálogo Opciones, Proyectos y soluciones](projects-and-solutions-options-dialog-box.md)
-- [Cuadro de diálogo Opciones, Proyectos y soluciones, Proyectos web](options-dialog-box-projects-and-solutions-web-projects.md)
+[Compilar y generar en Visual Studio](../../ide/compiling-and-building-in-visual-studio.md)  
+[Cuadro de diálogo Opciones, Proyectos y soluciones](projects-and-solutions-options-dialog-box.md)  
+[Cuadro de diálogo Opciones, Proyectos y soluciones, Proyectos web](options-dialog-box-projects-and-solutions-web-projects.md)

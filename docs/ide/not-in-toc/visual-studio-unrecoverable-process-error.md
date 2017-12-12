@@ -11,23 +11,20 @@ dev_langs:
 - CSharp
 - C++
 - aspx
-helpviewer_keywords:
-- editor
+helpviewer_keywords: editor
 ms.assetid: 2263956f-3ae0-4bdc-9d3a-4991dfaf4ddb
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology:
-- vs-ide-general
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5f39ea962f6b4dcc0e2c6947b2eeabf53d3329a
-ms.openlocfilehash: ba0a0aacc68e2eb9a5cd9b5b672808a71e8c09eb
-ms.contentlocale: es-es
-ms.lasthandoff: 03/01/2017
-
+ms.technology: vs-ide-general
+ms.openlocfilehash: 8750d16a485de062e66041e66e28fa591e957efd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="visual-studio-unrecoverable-process-error"></a>Error irrecuperable del proceso de Visual Studio
+# Error irrecuperable del proceso de Visual Studio
 
 Visual Studio 2017 usa varios procesos fuera de proceso para ejecutar las tareas en segundo plano necesarias, como pruebas unitarias en vivo, analizadores de código y mucho más. Estos procesos se ejecutan fuera de proceso para proporcionar ventajas de rendimiento a Visual Studio, como permitirle responder con mayor rapidez cuando se ejecutan trabajos de larga ejecución que consumen muchos recursos. Además, dado que Visual Studio es un proceso de 32 bits, la ejecución de procesos fuera de proceso proporciona a los trabajos que consumen mucha memoria un mayor espacio de memoria en el que operar.
 
@@ -37,7 +34,7 @@ Si alguno de estos procesos necesarios se detiene por cualquier razón, aparecer
 
 Si ve este mensaje, debe guardar inmediatamente el trabajo y, después, cerrar y reiniciar Visual Studio. Si no lo hace, Visual Studio puede bloquearse en cualquier momento.
 
-## <a name="list-of-processes"></a>Lista de procesos
+## Lista de procesos
 
 A continuación se muestra una lista de procesos fuera de proceso usados por Visual Studio que deben estar en ejecución para que Visual Studio funcione correctamente.
 
@@ -53,4 +50,3 @@ A continuación se muestra una lista de procesos fuera de proceso usados por Vis
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe
-

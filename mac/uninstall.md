@@ -1,5 +1,5 @@
 ---
-title: "Desinstalación de Visual Studio para Mac"
+title: Desinstalar Visual Studio para Mac | Microsoft Docs
 description: Instrucciones para desinstalar Visual Studio para Mac y las herramientas relacionadas.
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
+ms.openlocfilehash: f1e94d08addc4045bfda9ffa34b77755a0a54a89
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 6d021192e8104ec520aa057173d9dec41a62dfd3
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalación de Visual Studio para Mac
 
 Hay una serie de productos de Xamarin que permiten el desarrollo de aplicaciones entre plataformas, incluidas aplicaciones independientes como Visual Studio para Mac.
@@ -43,8 +41,8 @@ Para ejecutar el script, haga lo siguiente:
 3. Haga que el script sea ejecutable y, después, ejecútelo con **sudo**:
 
     ```bash
-    $ chmod +x ./xamarin_uninstall.sh
-    $ sudo ./xamarin_uninstall.sh
+    $ chmod +x ./uninstall-vsmac.sh
+    $ sudo ./uninstall-vsmac.sh
     ```
 4. Por último, elimine el script de desinstalación.
 
@@ -183,4 +181,3 @@ rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
 ```
-

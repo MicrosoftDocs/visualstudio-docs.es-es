@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c4ddcffd-d5b7-4ce8-8775-14e649c34518
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: e32d7a177a1a6ff0e26fba7f418f368a64bb1337
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 3fb02550aef01a16dbdb1c5e5cff4219ccd15100
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="visual-studio-reference"></a>Referencia de Visual Studio
 En esta sección se incluye la referencia de la interfaz de usuario, los equivalentes del lenguaje y otros documentos de referencia.  
@@ -50,20 +34,13 @@ En esta sección se incluye la referencia de la interfaz de usuario, los equival
  [Herramientas XML en Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)  
  Contiene documentos referentes a las herramientas XML de Visual Studio e incluye vínculos a más información.  
   
- [Referencia de Visual Studio for Applications](../../ide/reference/visual-studio-for-applications-reference.md)  
- Contiene documentación de referencia sobre las interfaces que se pueden utilizar para integrar los motores de scripts de .NET Framework en las aplicaciones.  
-  
- [MSBuild](../../msbuild/msbuild.md)
- Contiene documentos sobre cómo usar la plataforma de compilación de Microsoft, que está integrada en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
- [Recursos de solución de problemas de errores del IDE](../../ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)  
- Contiene vínculos a recursos que ayudan a resolver los mensajes de error del IDE.  
-  
- [Hable con nosotros](../../ide/talk-to-us.md)  
- Contiene información sobre cómo buscar el servicio de soporte técnico para Visual Studio.  
+ [MSBuild](../../msbuild/msbuild.md) Contiene documentos sobre cómo usar la plataforma de compilación de Microsoft, que está integrada en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Accesibilidad para personas con discapacidades](../../ide/reference/accessibility-for-people-with-disabilities.md)  
  Contiene sugerencias sobre cómo cambiar las opciones de accesibilidad.  
+  
+ [Recursos de solución de problemas de errores del IDE](../../ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)  
+ Contiene vínculos a recursos que ayudan a resolver los mensajes de error del entorno de desarrollo integrado.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Referencia de Visual Basic](/dotnet/visual-basic/reference/index)  

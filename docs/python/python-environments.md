@@ -1,28 +1,24 @@
 ---
 title: Entornos de Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/25/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: fa8a7616fe88f024ab299e5d115b66f8656e7cb3
-ms.contentlocale: es-es
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-environments"></a>Entornos de Python
 
 Python en Visual Studio facilita la administración de varios entornos de Python y el cambio fácil entre ellos para proyectos diferentes. 
@@ -46,9 +42,9 @@ A menudo, los desarrolladores solo usan un único entorno de Python global. En c
 - [Administración de paquetes necesarios](#managing-required-packages)
 - [Rutas de acceso de búsqueda](#search-paths)
 
-Para obtener una introducción, consulte el vídeo de youtube.com (13 minutos y 27 segundos) [Deep Dive: Python Interpreters](https://youtu.be/KY1GEOo3qy0) (Profundización: intérpretes de Python).
+Para ver un vídeo de introducción, consulte [Managing Python Environments (Administrar entornos de Python)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2 min 35 s).
 
-> [!VIDEO https://www.youtube.com/embed/KY1GEOo3qy0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
 
 ## <a name="selecting-and-installing-python-interpreters"></a>Selección e instalación de los intérpretes de Python
 
@@ -56,7 +52,7 @@ Excepto con Visual Studio 2017, la compatibilidad con Python no incluye un inté
 
 | Intérprete | Descripción | 
 | --- | --- | 
-| [CPython](https://www.python.org/) | Intérprete "nativo" y que se usa con más frecuencia, disponible en versiones de 32 y 64 bits (se recomienda la versión de 32 bits). Incluye características más recientes del lenguaje, máxima compatibilidad con paquetes de Python, compatibilidad completa con la depuración e interoperabilidad con [IPython](http://ipython.org/). Consulte también: [Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (¿Debo utilizar Python 2 o Python 3?) |
+| [CPython](https://www.python.org/) | Intérprete "nativo" y que se usa con más frecuencia, disponible en versiones de 32 y 64 bits (se recomienda la versión de 32 bits). Incluye características más recientes del lenguaje, máxima compatibilidad con paquetes de Python, compatibilidad completa con la depuración e interoperabilidad con [IPython](http://ipython.org/). Consulte también: [Should I use Python 2 or Python 3? (¿Debo usar Python 2 o Python 3?)](http://wiki.python.org/moin/Python2orPython3). Tenga en cuenta que Visual Studio 2015 y las versiones anteriores no admiten Python 3.6 y pueden generar el error de no compatibilidad con la versión 3.6 de Python. Use la versión Python 3.5 o anteriores. |
 | [IronPython](https://github.com/IronLanguages/main) | Implementación de .NET de Python, disponible en versiones de 32 y 64 bits, que proporciona interoperabilidad con C#, F# y Visual Basic, acceso a las API de .NET, depuración estándar de Python (pero no depuración en modo mixto de C++) y depuración mixta de IronPython y C#. IronPython, sin embargo, no admite entornos virtuales. | 
 | [Anaconda](https://www.continuum.io) | Plataforma de ciencia de datos abierta con tecnología de Python que incluye la versión más reciente de CPython y la mayoría de los paquetes de difícil instalación. Es la opción recomendable si no puede decidirse. |
 | [PyPy](http://www.pypy.org/) | Implementación JIT de seguimiento de alto rendimiento de Python adecuada para programas de ejecución prolongada y situaciones donde se identifican problemas de rendimiento pero no puede encontrar otras resoluciones. Funciona con Visual Studio, pero con compatibilidad limitada para características de depuración avanzadas. |
@@ -307,4 +303,3 @@ Los archivos con una extensión `.zip` o `.egg` también se pueden agregar como 
 > Es posible agregar una ruta de acceso de búsqueda a los módulos de Python 2.7 mientras utiliza Python 3.3 y es posible que vea errores en consecuencia.
 
 Si utiliza periódicamente las mismas rutas de acceso de búsqueda y el contenido no cambia con frecuencia, puede ser más eficaz instalarlo en la carpeta de paquetes del sitio. Después, se analiza y almacena en la base de datos de IntelliSense, siempre se asocia con el entorno deseado y no requiere que se agregue una ruta de acceso de búsqueda para cada proyecto.
-

@@ -1,5 +1,5 @@
 ---
-title: "Actualización de Visual Studio para Mac"
+title: "Actualización de Visual Studio para Mac | Microsoft Docs"
 description: Instrucciones para actualizar Visual Studio para Mac y para acceder a versiones preliminares.
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
+ms.openlocfilehash: 6980e86fa80ec415dfd4f7f830ec1c08cd0da3d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 04c8d50f87f1cec9ea51322368f58810feb24b7b
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="updating-visual-studio-for-mac"></a>Actualización de Visual Studio para Mac
 
 Visual Studio para Mac distribuye actualizaciones para el IDE y los marcos de trabajo admitidos con regularidad. Estas actualizaciones pueden ser en forma de nuevas características, mejoras y correcciones de errores.
@@ -54,4 +52,3 @@ Para iniciar la instalación de actualizaciones, seleccione el botón **Reinicia
 ![Botón para iniciar la instalación de actualizaciones](media/update-image4.png)
 
 Según los componentes que tenga que instalar, es posible que tenga que aceptar licencias adicionales o escribir el nombre de usuario y la contraseña de administrador del equipo.
-

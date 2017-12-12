@@ -1,19 +1,17 @@
 ---
-title: "Refactorización"
+title: "Refactorizar el código en Visual Studio para Mac | Microsoft Docs"
 description: "La reorganización del código en Visual Studio para Mac es muy sencilla mediante el análisis de código fuente."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
+ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 4133b35d7bafd37a44150c6af0d730562a639874
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="refactoring"></a>Refactorización
 
 Mediante la refactorización del código, es posible reorganizar, reestructurar y aclarar el código existente sin que cambie el comportamiento general del código.
@@ -109,5 +107,4 @@ Para ver todos los resultados del análisis de código fuente de un archivo, obs
 Si hace clic en el círculo situado en la parte superior, puede iterar cada sugerencia. Los problemas con la gravedad más alta se muestran los primeros. Si mantiene el puntero sobre una línea o un resultado se mostrarán los problemas, que podrá corregir mediante las acciones de contexto:
 
  ![Elemento Análisis de código fuente](media/refactoring-image5.png)
-
 

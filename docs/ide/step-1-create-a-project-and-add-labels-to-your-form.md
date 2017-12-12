@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 79222e6c9cf609e617bd3cfd49d31be4f9c7c30e
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 55e0802f58be0a1ad3a060fce257554b36c01a52
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: Crear un proyecto y agregar etiquetas al formulario
 Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregará etiquetas, un botón y otros controles a un formulario. También establecerá las propiedades de cada control que agregue. El proyecto contendrá el formulario, los controles y (más adelante en el tutorial) el código. El botón inicia la prueba, las etiquetas muestran los problemas de la prueba y los demás controles muestran las respuestas de la prueba y el tiempo que queda para finalizarla.  
@@ -85,7 +68,7 @@ Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregar�
   
      Puede cambiar varias propiedades de fuente, tal y como se muestra en la imagen siguiente.  
   
-     ![Ventana Propiedades que muestra el tamaño de fuente](../ide/media/express_setfontsize.png "Express_setFontSize")  
+     ![Ventana Propiedades en la que se muestra el tamaño de fuente](../ide/media/express_setfontsize.png "Express_setFontSize")  
 Ventana Propiedades mostrando el tamaño de fuente  
   
 8.  Agregue otro control **Label** desde el cuadro de herramientas y establezca el tamaño de fuente en **15,75**.  

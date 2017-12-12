@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,30 +25,15 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 6c2b3c577685fcb09cd9e9c7eeee955b75e76e27
-ms.contentlocale: es-es
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="file-properties-javascript"></a>Propiedades de archivo, JavaScript
 Puede usar propiedades de archivo para indicar qué acciones debe realizar el sistema del proyecto en los archivos. Por ejemplo, puede establecer propiedades de archivo para indicar si un archivo debe agregarse al paquete como un archivo de recursos.  
@@ -73,7 +57,7 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
 
 -   **Recurso**: el archivo no está incluido en el manifiesto de paquete. En su lugar, el contenido del archivo se indexa en el Índice de recursos del paquete (PRI) que se incluye en el manifiesto de paquete. Normalmente se usa para los archivos de recursos.  
 
- El valor predeterminado para **Acción del paquete** depende de la extensión del archivo que agregue a la solución.  
+El valor predeterminado para **Acción del paquete** depende de la extensión del archivo que agregue a la solución.  
 
 ### <a name="file-name-property"></a>Propiedad Nombre de archivo  
  Muestra el nombre de archivo como un valor de solo lectura. Para cambiar el nombre del archivo, debe hacer clic con el botón derecho en el Explorador de soluciones y seleccionar **Cambiar nombre**.  
@@ -82,7 +66,7 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
  Muestra la ruta de acceso completa del archivo como un valor de solo lectura. Para cambiar la ruta de acceso del archivo, puede arrastrar y colocar el archivo en el Explorador de soluciones.  
 
 ## <a name="reference-file-properties"></a>Propiedades de archivo de referencia  
- En esta sección se describen propiedades comunes de los archivos a los que se hace referencia desde [!INCLUDE[win8_app_js](../../ide/reference/includes/win8_app_js_md.md)]. Cuando selecciona una referencia como un archivo .winmd, una referencia del SDK, una referencia de proyecto a proyecto o una referencia de ensamblado en el Explorador de soluciones, pueden mostrarse otras propiedades en la ventana Propiedades, según el tipo de archivo.  
+ En esta sección se describen propiedades comunes de los archivos a los que se hace referencia desde una aplicación para UWP compilada con JavaScript. Cuando selecciona una referencia como un archivo .winmd, una referencia del SDK, una referencia de proyecto a proyecto o una referencia de ensamblado en el Explorador de soluciones, pueden mostrarse otras propiedades en la ventana Propiedades, según el tipo de archivo.  
 
 ### <a name="culture"></a>Referencia cultural  
  Muestra el idioma asociado a la referencia.  
@@ -113,4 +97,3 @@ Puede usar propiedades de archivo para indicar qué acciones debe realizar el si
 
 ## <a name="see-also"></a>Vea también  
  [Administrar propiedades de soluciones y proyectos](../../ide/managing-project-and-solution-properties.md)
-

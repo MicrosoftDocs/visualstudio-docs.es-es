@@ -1,54 +1,54 @@
 ---
-title: "WriteLinesToFile (Tarea) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, WriteLinesToFile (tarea)"
-  - "WriteLinesToFile (tarea) [MSBuild]"
+title: WriteLinesToFile (Tarea) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- WriteLinesToFile task [MSBuild]
+- MSBuild, WriteLinesToFile task
 ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 60b84cf967e92c1669cae9fbbcdabcc4e5acb159
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# WriteLinesToFile (Tarea)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="writelinestofile-task"></a>WriteLinesToFile (Tarea)
 Escribe las rutas de acceso de los elementos especificados en el archivo de texto especificado.  
   
-## Parámetros de la tarea  
+## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `WriteLinestoFile`.  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|`File`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el archivo en el que se escribirán los elementos.|  
-|`Lines`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se escribirán en el archivo.|  
+|`File`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el archivo en el que se escriben los elementos.|  
+|`Lines`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se van a escribir en el archivo.|  
 |`Overwrite`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, la tarea sobrescribe cualquier contenido existente en el archivo.|  
-|`Encoding`|Parámetro `String` opcional.<br /><br /> Seleccione la codificación de caracteres, por ejemplo, "Unicode."  Vea también <xref:System.Text.Encoding>.|  
+|`Encoding`|Parámetro `String` opcional.<br /><br /> Selecciona la codificación de caracteres, por ejemplo, "Unicode".  Vea también <xref:System.Text.Encoding>.|  
   
-## Comentarios  
- Si `Overwrite` es `true`, crea un archivo nuevo, escribe el contenido en el archivo y, a continuación, lo cierra.  Si el archivo de destino ya existe, se sobrescribe.  Si `Overwrite` es `false`, agrega el contenido al archivo, creando el archivo de destino, si no existe ya.  
+## <a name="remarks"></a>Comentarios  
+ Si `Overwrite` es `true`, crea un archivo, escribe el contenido en el archivo y después lo cierra. Si el archivo de destino ya existe, se sobrescribe. Si `Overwrite` es `false`, anexa el contenido al archivo y crea el archivo de destino si aún no existe.  
   
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que hereda de la clase <xref:Microsoft.Build.Utilities.Task>.  Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension \(Clase base\)](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Ejemplo  
- En el ejemplo siguiente se utiliza la tarea `WriteLinesToFile` para escribir las rutas de acceso de los elementos en la colección de elementos `MyItems` en el archivo especificado por la colección de elementos `MyTextFile`.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se usa la tarea `WriteLinesToFile` para escribir las rutas de acceso de los elementos de la colección de elementos `MyItems` en el archivo especificado por la colección de elementos `MyTextFile`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
     <ItemGroup>  
@@ -67,6 +67,6 @@ Escribe las rutas de acceso de los elementos especificados en el archivo de text
 </Project>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

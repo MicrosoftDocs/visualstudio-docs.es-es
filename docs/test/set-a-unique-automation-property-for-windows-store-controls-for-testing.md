@@ -1,40 +1,24 @@
 ---
-title: "Establecer una propiedad de automatización única para la prueba de controles de la Tienda Windows | Microsoft Docs"
+title: "Establecer una propiedad única de automatización para controles UWP para pruebas | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
-caps.latest.revision: 10
+caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 3038f70405239d69f0924be022040bcc8c7db9a4
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e931c898147cb93683ae618f96eed53ae13607ea
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Establecer una propiedad de Automation única para la prueba de controles de la Tienda Windows
-Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Windows basada en XAML, debe tener una propiedad única de automatización que identifique cada control.  
+# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Establecer una propiedad única de automatización para controles UWP para pruebas
+Si desea ejecutar pruebas de IU codificadas para la aplicación para UWP basada en XAML, debe tener una propiedad única de automatización que identifique cada control.  
   
  Puede asignar una propiedad única de automatización basada en el tipo de control de XAML de la aplicación. Aquí se indica cómo asignar esta propiedad única de automatización en las situaciones siguientes:  
   
@@ -219,5 +203,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)
-
+ [Comprobar aplicaciones para Windows UWP con pruebas de IU codificadas](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)

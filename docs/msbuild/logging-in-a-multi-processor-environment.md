@@ -1,47 +1,31 @@
 ---
-title: Registro en un entorno de varios procesador | Documentos de Microsoft
+title: Registrar en un entorno de varios procesadores | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, multi-processor logging
 - MSBuild, logging
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 437809decb9e7cc96faa1b582fe466e83f2a33fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e78d6c35fa294d2f1a39c91af5e278e9e4519d2d
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrar en un entorno de varios procesadores
-La capacidad de MSBuild para usar varios procesadores puede reducir significativamente el tiempo de compilación de los proyectos, pero también agrega complejidad al proceso de registro. En un entorno de un solo procesador, el registrador puede administrar eventos de entrada, mensajes, advertencias y errores de una manera predecible y secuencial. Sin embargo, en un entorno de varios procesadores, los eventos de varios orígenes pueden llegar simultáneamente o desordenados. MSBuild proporciona un nuevo registrador que reconoce varios procesadores y habilita la creación de personalizado registradores de reenvío"."  
+La capacidad de MSBuild para usar varios procesadores puede reducir significativamente el tiempo de compilación de los proyectos, pero también agrega complejidad al proceso de registro. En un entorno de un solo procesador, el registrador puede administrar eventos de entrada, mensajes, advertencias y errores de una manera predecible y secuencial. Sin embargo, en un entorno de varios procesadores, los eventos de varios orígenes pueden llegar simultáneamente o desordenados. MSBuild dispone de un nuevo registrador para varios procesadores y habilita la creación de "registradores de reenvío" personalizados.  
   
 ## <a name="logging-multiple-processor-builds"></a>Registrar compilaciones de varios procesadores  
- Cuando se compilan uno o varios proyectos en un sistema de varios procesadores o varios núcleos, los eventos de compilación de MSBuild de todos los proyectos se generan simultáneamente. Puede llegue una avalancha de datos de eventos al registrador al mismo tiempo o desordenados. Esto puede sobrecargar el registrador y provocar tiempos de compilación mayor, resultados incorrectos del registrador o incluso la interrupción de una compilación. Para resolver estos problemas, el registrador de MSBuild puede procesar eventos fuera de secuencia y correlacionar los eventos y sus orígenes.  
+ Cuando se compilan uno o varios proyectos en un sistema de varios procesadores o varios núcleos, los eventos de compilación de MSBuild de todos los proyectos se generan simultáneamente. Es posible que llegue una avalancha de datos de eventos al registrador al mismo tiempo o que vengan desordenados. Esto puede sobrecargar el registrador y producir un aumento del tiempo de compilación, una salida incorrecta del registrador o incluso la interrupción de una compilación. Para resolver estos problemas, el registrador de MSBuild puede procesar eventos desordenados y asociar los eventos y sus orígenes.  
   
  Puede mejorar más la eficacia del registro creando un registrador de reenvío personalizado. Un registrador de reenvío personalizado actúa como filtro que le permite elegir, antes de compilar, los eventos que desea supervisar. Cuando se utiliza un registrador de reenvío personalizado, los eventos no deseados no sobrecargan el registrador, desordenan los registros ni ralentizan el tiempo de compilación.  
   
@@ -76,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  Para reenviar los eventos de un registrador de reenvío, llame al método <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> de la interfaz <xref:Microsoft.Build.Framework.IEventRedirector>. Pase el <xref:Microsoft.Build.Framework.BuildEventArgs> adecuado, o un derivado, como parámetro.  
   
- Para obtener más información, consulte [crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
+ Para obtener más información, vea [Crear registradores de reenvío](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Asociar un registrador distribuido  
  Para asociar un registrador distribuido en una compilación de la línea de comandos, utilice el modificador `/distributedlogger` (o, `/dl` abreviado). El formato para especificar los nombres de los tipos y clases del registrador es igual que el del modificador `/logger`, sólo que un registrador distribuido consta de dos clases de registro: un registrador de reenvío y un registrador central. A continuación, se muestra un ejemplo de cómo asociar un registrador distribuido:  

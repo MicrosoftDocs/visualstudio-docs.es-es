@@ -1,16 +1,15 @@
 ---
-title: Empleo de Visual Studio for Mac Tools for Unity
+title: Usar Herramientas de Visual Studio para Mac para Unity | Microsoft Docs
 author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.topic: article
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
+ms.openlocfilehash: b37346546f65ab6737100c65368d2955cd2260d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: f41443424df13d59cc32340f6589b20db51b56fc
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Empleo de Visual Studio for Mac Tools for Unity
 
@@ -111,5 +110,4 @@ Para detener la depuración:
 
   ![Haga clic en Detener en Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
-Para más información sobre la depuración en Visual Studio para Mac, vea [Empleo del depurador](https://docs.microsoft.com/en-us/visualstudio/mac/debugging).
-
+Para más información sobre la depuración en Visual Studio para Mac, vea [Empleo del depurador](https://docs.microsoft.com/visualstudio/mac/debugging).

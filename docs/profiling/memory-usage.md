@@ -4,36 +4,19 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: f35dd690c97b4f69ff4633155f05dd9a2ebd7a2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 56ff9bcee976de7ae6be4bc410c275438f0f16ec
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta de diagnóstico **Uso de memoria** integrada del depurador. La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativo y administrado. Puede recopilar instantáneas de aplicaciones .NET, nativas o de modo mixto (.NET y nativo).  
@@ -186,4 +169,5 @@ Para analizar el uso de memoria, haga clic en uno de los vínculos que abre un i
  [Blog de Visual C++: herramientas de diagnóstico de memoria nativa para Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
 
 ## <a name="see-also"></a>Vea también
- [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Generación de perfiles en Visual Studio](../profiling/index.md)  
+ [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

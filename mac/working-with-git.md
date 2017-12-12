@@ -1,19 +1,17 @@
 ---
-title: Trabajo con Git
+title: Trabajar con Git | Microsoft Docs
 description: Empleo de Git en Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
+ms.openlocfilehash: 76bb378297e29fa5967a43e4df38ca2ecc4e6361
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: b3ffe27e343cd02fa52f4f82dfe170d5d0efb8c3
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-git"></a>Trabajo con Git
 
 Git es un sistema de control de versiones distribuido que permite a los equipos trabajar en los mismos documentos de forma simultánea. Esto significa que hay un servidor central que contiene todos los archivos, pero que cada vez que se extrae un repositorio de este origen central, la totalidad del repositorio se clona en el equipo local.

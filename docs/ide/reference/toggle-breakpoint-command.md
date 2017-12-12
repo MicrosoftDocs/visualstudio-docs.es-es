@@ -1,50 +1,50 @@
 ---
-title: "Alternar puntos de interrupci&#243;n (Comando) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.togglebreakpoint"
-helpviewer_keywords: 
-  - "Debug.ToggleBreakPoint (comando)"
-  - "Alternar puntos de interrupción (comando)"
-  - "ToggleBreakpoint (comando)"
+title: "Comando Alternar punto de interrupción | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.togglebreakpoint
+helpviewer_keywords:
+- ToggleBreakpoint command
+- Debug.ToggleBreakPoint command
+- Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b21255b33718e79031c037d1339343c9fe884ce3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Alternar puntos de interrupci&#243;n (Comando)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="toggle-breakpoint-command"></a>Alternar puntos de interrupción (Comando)
 Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Debug.ToggleBreakpoint [text]  
 ```  
   
-## Argumentos  
+## <a name="arguments"></a>Argumentos  
  `text`  
- Opcional.  Si se especifica texto, la línea se marca como un punto de interrupción con nombre.  De lo contrario, la línea se marca como un punto de interrupción sin nombre, que es similar a lo que sucede al presionar F9.  
+ Opcional. Si se especifica texto, la línea se marca como un punto de interrupción con nombre. En caso contrario, la línea se marca como un punto de interrupción sin nombre, que es similar a lo que sucede cuando se presiona la tecla F9.  
   
-## Ejemplo  
- El ejemplo siguiente alterna el punto de interrupción actual.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se alterna el punto de interrupción actual.  
   
 ```  
 >Debug.ToggleBreakpoint  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana de comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar\/Comando](../../ide/find-command-box.md)   
+ [Ventana Comandos](../../ide/reference/command-window.md)   
+ [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

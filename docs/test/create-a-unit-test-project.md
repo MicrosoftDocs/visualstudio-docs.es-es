@@ -11,17 +11,17 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a5ed96f71b928cdfd3845a81830adaa8de65c054
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a064d56a0be2acf6000a9e7da770cb9b25d3b65f
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 Las pruebas unitarias a menudo reflejan la estructura del código sometido a pruebas. Por ejemplo, se crearía un proyecto de prueba unitaria para cada proyecto de código en el producto. El proyecto de prueba puede estar en la misma solución que el código de producción, o puede estar en una solución independiente. Puede tener varios proyectos de prueba unitaria en una solución.  
   
 > [!NOTE]
->  La ubicación de las pruebas unitarias para código nativo y la estructura del proyecto de prueba puede ser diferente de la estructura que se describe en este tema. Para obtener más información, consulte [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
+>  La ubicación de las pruebas unitarias para código nativo y la estructura del proyecto de prueba puede ser diferente de la estructura que se describe en este tema. Para obtener más información, vea [Writing unit tests for C/C++](writing-unit-tests-for-c-cpp.md) (Escribir pruebas unitarias para C/C++).  
   
 ## <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria:  
   
@@ -48,7 +48,7 @@ Las pruebas unitarias a menudo reflejan la estructura del código sometido a pru
   
 -   [Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft para código administrado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [Escribir pruebas unitarias para C/C++ con el Framework de pruebas unitarias de Microsoft para C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+-   [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)  
   
  **Ejecutar pruebas unitarias**  
   

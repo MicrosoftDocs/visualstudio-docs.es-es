@@ -4,38 +4,20 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: b4f4e312fb7717edfe950cf6977279a1bd67a458
-ms.contentlocale: es-es
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="profiling-feature-tour"></a>Guía de características de generación de perfiles
 
@@ -114,7 +96,7 @@ La ventana le permitirá seleccionar varias herramientas de generación de perfi
 
 ## <a name="analyze-resource-consumption-xaml"></a>Análisis del consumo de recursos (XAML)
 
-En las aplicaciones XAML, como las aplicaciones de WPF de escritorio de Windows y las aplicaciones de la Tienda Windows, puede analizar el consumo de recursos mediante la herramienta Escala de tiempo de la aplicación. Por ejemplo, puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz de usuario (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas. Para usar la herramienta, seleccione **Escala de tiempo de la aplicación** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario en el que sospecha que se produce un problema de consumo de recursos y, después, seleccione **Detener recolección** para generar el informe.
+En las aplicaciones XAML (como las aplicaciones de WPF de escritorio de Windows y las aplicaciones para UWP), puede analizar el consumo de recursos mediante la herramienta Escala de tiempo de la aplicación. Por ejemplo, puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz de usuario (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas. Para usar la herramienta, seleccione **Escala de tiempo de la aplicación** en el Generador de perfiles de rendimiento y, después, elija **Iniciar**. En la aplicación, recorra el escenario en el que sospecha que se produce un problema de consumo de recursos y, después, seleccione **Detener recolección** para generar el informe.
 
 Los valores de framerate bajos en el gráfico **Rendimiento visual** podrían corresponderse con los problemas visuales que ve cuando se ejecuta la aplicación. De forma similar, los números elevados en el gráfico **Uso del subproceso de UI** podrían corresponderse con problemas en la capacidad de respuesta de la interfaz de usuario. En el informe, puede seleccionar un período de tiempo en el que sospecha que se produce un problema de rendimiento y, después, examinar las actividades detalladas del subproceso de interfaz de usuario en la vista Detalles de la escala de tiempo (panel inferior).
 
@@ -160,7 +142,7 @@ Para obtener más información, vea [Network Usage](../profiling/network-usage.m
 
 ## <a name="analyze-performance-legacy-tools"></a>Análisis de rendimiento (herramientas heredadas)
 
-Si necesita características que no están actualmente presentes en las herramientas Uso de CPU o Uso de memoria, como la instrumentación, y ejecuta aplicaciones ASP.NET o de escritorio, puede usar el Explorador de rendimiento para la generación de perfiles. (No se admite en aplicaciones UWP). Para obtener más información, vea [Performance Explorer](../profiling/performance-explorer.md) (Explorador de rendimiento).
+Si necesita características que no están actualmente presentes en las herramientas Uso de CPU o Uso de memoria, como la instrumentación, y ejecuta aplicaciones ASP.NET o de escritorio, puede usar el Explorador de rendimiento para la generación de perfiles. (No se admite en aplicaciones UWP). Para más información, vea [Explorador de rendimiento](../profiling/performance-explorer.md).
 
 ![Herramienta de Explorador de rendimiento](../profiling/media/prof-tour-performance-explorer.png "Explorador de rendimiento")
 

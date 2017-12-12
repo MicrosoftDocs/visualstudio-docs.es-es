@@ -1,38 +1,40 @@
 ---
-title: "JsErrorCode (Enumeraci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsErrorCode"
-helpviewer_keywords: 
-  - "JsErrorCode (enumeración)"
+title: "Enumeración JsErrorCode | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsErrorCode
+helpviewer_keywords: JsErrorCode enumeration
 ms.assetid: 4902f3f3-47a5-4e74-9c29-f96eeecbcda9
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b09babd38505c5619f414d2e349cd52b3596ceac
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# JsErrorCode (Enumeraci&#243;n)
+# <a name="jserrorcode-enumeration"></a>JsErrorCode (Enumeración)
 Código de error devuelto desde una API de hospedaje de Chakra.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 enum JsErrorCode : unsigned int;  
 ```  
   
-## Miembros  
+## <a name="members"></a>Miembros  
   
-### Valores  
+### <a name="values"></a>Valores  
   
 |Nombre|Descripción|  
-|------------|-----------------|  
+|----------|-----------------|  
 |`JsErrorAlreadyDebuggingContext`|El contexto no se puede poner en estado de depuración porque ya se encuentra en dicho estado.|  
 |`JsErrorAlreadyProfilingContext`|El contexto no puede iniciar la generación de perfiles porque ya la está realizando.|  
 |`JsErrorArgumentNotObject`|Se ha llamado a una API de hospedaje que funciona con valores de objeto con un valor que no es un objeto.|  
@@ -55,7 +57,7 @@ enum JsErrorCode : unsigned int;
 |`JsErrorNoCurrentContext`|La API de hospedaje requiere que haya un contexto actual, pero no hay ninguno.|  
 |`JsErrorNotImplemented`|Aún no se ha implementado una API de hospedaje.|  
 |`JsErrorNullArgument`|Un argumento de la API de hospedaje era NULL en un contexto donde este valor no está permitido.|  
-|`JsErrorObjectNotInspectable`|No se puede desajustar el objeto para el puntero `IInspectable`.<br /><br /> Este valor de enumeración solo se admite en modo de borde.|  
+|`JsErrorObjectNotInspectable`|No se puede desajustar el objeto para el puntero `IInspectable` .<br /><br /> Este valor de enumeración solo se admite en modo de borde.|  
 |`JsErrorOutOfMemory`|El motor de Chakra se ha quedado sin memoria.|  
 |`JsErrorPropertyNotSymbol`|API de hospedaje que funciona en los identificadores de propiedad de símbolo, pero que se llamó con un identificador de propiedad que no es un símbolo. El código de error devuelto por `JsGetSymbolFromPropertyId` si se llama a la función con un identificador de propiedad que no es un símbolo.<br /><br /> Este valor de enumeración solo se admite en modo de borde.|  
 |`JsErrorPropertyNotString`|API de hospedaje que funciona en los identificadores de propiedad de cadena, pero que se llamó con un identificador de propiedad que no es una cadena. El código de error devuelto por `JsGetPropertyNamefromId` existente si se llama a la función con un identificador de propiedad que no es una cadena.<br /><br /> Este valor de enumeración solo se admite en modo de borde.|  
@@ -68,8 +70,8 @@ enum JsErrorCode : unsigned int;
 |`JsErrorWrongThread`|Se llamó a una API de hospedaje en el subproceso equivocado.|  
 |`JsNoError`|Código de error de operación correcta.|  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

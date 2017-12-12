@@ -1,39 +1,23 @@
 ---
 title: Tareas insertadas de MSBuild | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- MSBuild, tasks
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 6153ab5924f66d13e2c0664ed652f8eee6f91e4c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-inline-tasks"></a>Tareas insertadas de MSBuild
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  
@@ -44,12 +28,12 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
  Una tarea insertada está contenida en un elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). La tarea insertada y el elemento `UsingTask` que la contiene se incluyen normalmente en un archivo .targets y se importan en otros archivos del proyecto según se requiera. A continuación se muestra una tarea insertada básica. Observe que no se realiza ninguna acción.  
   
 ```xml  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="" />  
@@ -108,12 +92,12 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
  A continuación se muestra una tarea insertada más completa. La tarea HelloWorld muestra "Hello, world!" en el dispositivo de registro de errores predeterminado, que suele ser la consola del sistema o la ventana de **salida** de Visual Studio. El elemento `Reference` del ejemplo se incluye solamente a efectos de ilustración.  
   
 ```xml  
-<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
     TaskFactory="CodeTaskFactory"  
-    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
       <Reference Include="System.Xml.dll"/>  
@@ -133,7 +117,7 @@ Log.LogError("Hello, world!");
  Puede guardar la tarea HelloWorld en un archivo denominado HelloWorld.targets y, a continuación, invocarlo desde un proyecto del modo siguiente.  
   
 ```xml  
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="HelloWorld.targets" />  
   <Target Name="Hello">  
     <HelloWorld />  
@@ -182,9 +166,9 @@ Log.LogError("Hello, world!");
  La tarea insertada siguiente reemplaza cada aparición de un token en el archivo determinado por el valor determinado.  
   
 ```xml  
-<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="12.0">  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v12.0.dll">  
+  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
     <ParameterGroup>  
       <Path ParameterType="System.String" Required="true" />  
       <Token ParameterType="System.String" Required="true" />  

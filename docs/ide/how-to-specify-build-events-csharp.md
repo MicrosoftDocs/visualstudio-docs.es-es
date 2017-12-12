@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,30 +14,15 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 3058bf7c6714f18291353224a192218c1b59a480
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6f4f13cabe47bc55a78733ea2bee5504d404c5c4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-specify-build-events-c"></a>Cómo: Especificar eventos de compilación (C#)
 Use eventos de compilación para especificar comandos que se ejecutan antes de que se inicie la compilación o después de que esta finalice. Los eventos de compilación se ejecutan solo si se alcanzan correctamente esos puntos en el proceso de compilación.  
@@ -163,7 +147,7 @@ Use eventos de compilación para especificar comandos que se ejecutan antes de q
   
 1.  Cree una aplicación Windows para que se publique el proyecto. Desde el menú **Archivo**, pulse **Nuevo** y, después, haga clic en **Proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**, haga clic en **Windows** y, después, haga clic en la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `CSWinApp`.  
+2.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**, haga clic en **Escritorio clásico de Windows** y, después, haga clic en la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `CSWinApp`.  
   
 3.  Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.  
   

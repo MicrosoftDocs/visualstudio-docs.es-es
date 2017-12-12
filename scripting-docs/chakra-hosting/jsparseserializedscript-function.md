@@ -1,27 +1,29 @@
 ---
-title: "JsParseSerializedScript (Funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsParseSerializedScript"
-helpviewer_keywords: 
-  - "JsParseSerializedScript (función)"
+title: "Función JsParseSerializedScript | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsParseSerializedScript
+helpviewer_keywords: JsParseSerializedScript function
 ms.assetid: 40d0c7c4-fd5b-46ed-9e65-38c2db2fc859
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7eb18c8537d7bdfe69969293b66a5909ba7c3fa1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# JsParseSerializedScript (Funci&#243;n)
+# <a name="jsparseserializedscript-function"></a>JsParseSerializedScript (Función)
 Analiza un script serializado y devuelve una función que representa el script.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 STDAPI_(JsErrorCode) JsParseSerializedScript(  
@@ -33,7 +35,7 @@ STDAPI_(JsErrorCode) JsParseSerializedScript(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `script`  
  El script que se va a analizar.  
   
@@ -49,16 +51,16 @@ STDAPI_(JsErrorCode) JsParseSerializedScript(
  `result`  
  Función que representa el código del script.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  El código `JsNoError` si la operación se realizó correctamente; en caso contrario, un código de error.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Requiere un contexto de script activo.  
   
  El motor de scripting no conserva el búfer en la memoria, por lo que el código debe mantenerlo activo mientras pueda ser usado para ejecutar scripts.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

@@ -1,28 +1,24 @@
 ---
 title: "Instalación de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 09/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ce3d3656-7ba2-490d-92df-0bb3e3badf92
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2706cbc68ea9ff14477134ca01577e4f5850f36d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 613af31a2e44cc447980b68de4b0b5642dde1262
-ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
 Para instalar la compatibilidad de Python para Visual Studio, siga las instrucciones que aparecen en la sección correspondiente a su versión de Visual Studio:
@@ -31,7 +27,7 @@ Para instalar la compatibilidad de Python para Visual Studio, siga las instrucci
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 y anterior](#visual-studio-2013-and-earlier)
 
-Para Visual Studio 2015 y versiones anteriores también es necesario instalar por separado un intérprete de Python de su elección. Para obtener más información, consulte [Entornos de Python](python-environments.md).
+Para Visual Studio 2015 y versiones anteriores también es necesario instalar por separado un intérprete de Python de su elección (Python 3.5 y versiones anteriores; 3.6 no es compatible). Para obtener más información, consulte [Entornos de Python](python-environments.md). En la misma página también se incluyen instrucciones para agregar un intérprete de Python existente a Visual Studio 2017.
 
 Para probar rápidamente la compatibilidad de Python después de seguir los pasos de instalación, abra la ventana interactiva de Python; para ello, presione Alt-I y escriba `2+2`. Si no ve la salida de `4`, revise los pasos.
 
@@ -43,20 +39,42 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Instale Visual Studio 2017 desde [https://www.visualstudio.com/vs/](https://www.visualstudio.com/vs/).
+1. Descargue y ejecute el instalador de Visual Studio 2017 más reciente:
 
-1. En el instalador de Visual Studio, seleccione la carga de trabajo **Web y nube > Desarrollo de Python**.
+    > [!div class="nextstepaction"]
+    > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Instalar Visual Studio 2017 Community</a>
+
+    >[!Tip]
+    > La edición Community es para desarrolladores individuales, aprendizaje en el aula, investigación académica y desarrollo de código abierto. Para otros usos, instale <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> o <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>.
+
+1. El instalador muestra una lista de las cargas de trabajo, que son grupos de opciones relacionadas para áreas de desarrollo específicas. Para Python, seleccione la carga de trabajo **Desarrollo de Python**.
 
     ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](media/installation-python-workload.png)
 
-    > [!Note]
-    > Python también se incluye en la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**.
+    Opcional: si está trabajando con la ciencia de datos, considere también la posibilidad de la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**. Esta carga de trabajo incluye compatibilidad con Python y también con los lenguajes R y F#. Para más información, vea [Carga de trabajo Aplicaciones de ciencia de datos y de análisis](../rtvs/data-science-workload.md).
 
-1. En el lado derecho del instalador, seleccione los intérpretes de Python y otras herramientas relacionadas que desee incluir. Por ejemplo, si va a desarrollar extensiones de C++ para Python, incluya la opción **Herramientas de desarrollo nativo Python**.
+    > [!Note]
+    > Las cargas de trabajo de Python y Ciencia de datos solo están disponibles con Visual Studio 2017 versión 15.2 y posteriores.
+
+1. En la parte derecha del instalador, puede elegir opciones adicionales si lo prefiere. Omita este paso para aceptar las opciones predeterminadas.
 
     ![Opciones de desarrollo de Python en el instalador de Visual Studio](media/installation-python-options.png)
 
-1. Si ya tiene instalados intérpretes en el equipo, consulte [Creación de un entorno para un intérprete existente](python-environments.md#creating-an-environment-for-an-existing-interpreter).
+    | Opción | Descripción | 
+    | --- | --- |
+    | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones). |
+    | Compatibilidad con plantillas de Cookiecutter | Instala la interfaz gráfica de usuario Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](cookiecutter.md). |
+    | Compatibilidad web con Python | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](template-web.md). |
+    | Compatibilidad con IoT de Python | Admite el desarrollo de Windows IoT Core con Python. |
+    | Herramientas de desarrollo nativo de Python | Instala el compilador de C++ y otros componentes necesarios para desarrollar extensiones nativas para Python. Vea [Creación de una extensión de C++ para Python](cpp-and-python.md). |
+    | Herramientas principales de Azure Cloud Services | Proporciona compatibilidad adicional para el desarrollador de Azure Cloud Services en Python. Vea [Proyectos de Azure Cloud Service](template-azure-cloud-service.md). |
+
+1. Después de la instalación, el instalador proporciona opciones para modificar, iniciar, reparar o desinstalar Visual Studio. El botón **Modificar** cambia a **Actualizar** cuando hay actualizaciones de Visual Studio disponibles para alguno de los componentes instalados. (Después, la opción Modificar está disponible en el menú desplegable). También puede iniciar Visual Studio y el instalador desde el menú Inicio de Windows mediante la búsqueda de "Visual Studio".
+
+    ![Inicio, modificación o desinstalación de Visual Studio desde el instalador](media/installation-vs-launch.png)
+
+
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -108,3 +126,4 @@ donde:
 
 Herramientas de Python para Visual Studio 1.5 y las versiones anteriores permitían una instalación solo para el usuario actual, en cuyo caso la ruta de instalación es `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`, donde &lt;VS_ver&gt; y &lt;PTVS_ver&gt; se corresponden con las mismas versiones indicadas anteriormente.
 
+<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

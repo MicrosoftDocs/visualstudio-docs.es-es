@@ -1,32 +1,29 @@
 ---
 title: Compilar y generar en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 5918c0070be747f7ebdca9d789d5706820b93e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 1a2db8a10664e1d4b38b1d6867c5a3bad1532b39
-ms.contentlocale: es-es
-ms.lasthandoff: 08/10/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
 
-La ejecución de una compilación crea ensamblados y aplicaciones ejecutables a partir del código fuente en cualquier momento durante el ciclo de desarrollo. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece mucho en lenguajes de programación como C#, Visual Basic, C++ y F#. 
+La ejecución de una compilación crea ensamblados y aplicaciones ejecutables a partir del código fuente en cualquier momento durante un ciclo de desarrollo. En general, el proceso de compilación es muy parecido en numerosos tipos de proyectos diferentes, como Windows, ASP.NET, aplicaciones móviles y otros. El proceso de compilación también se parece mucho en lenguajes de programación como C#, Visual Basic, C++ y F#. 
 
 Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir rápidamente errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.  
 
@@ -61,4 +58,3 @@ De ahí en adelante, puede explorar otras tareas:
 ## <a name="see-also"></a>Vea también  
 
 - [Compilar proyectos de sitios web](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
-

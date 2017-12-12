@@ -1,40 +1,24 @@
 ---
-title: "Pruebas unitarias de código de Visual C# en una aplicación de la Tienda | Microsoft Docs"
+title: "Pruebas unitarias de código de Visual C# en una aplicación para UWP | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
-caps.latest.revision: 19
+caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 768dd5253edac137c50ced5bf524bcc1fdd7f6da
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-visual-c-code-in-a-store-app"></a>Pruebas unitarias de código de Visual C# en una aplicación de la Tienda
-Este tema describe una forma de crear pruebas unitarias para una clase de Visual C# en una aplicación de la Tienda Windows. La clase Rooter muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. La aplicación Maths puede utilizar esta función para mostrar a un usuario las cosas divertidas que se pueden realizar con las matemáticas.  
+# <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Pruebas unitarias de código de Visual C# en una aplicación para UWP
+En este tema se describe una forma de crear pruebas unitarias para una clase de Visual C# en una aplicación para UWP. La clase Rooter muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. La aplicación Maths puede utilizar esta función para mostrar a un usuario las cosas divertidas que se pueden realizar con las matemáticas.  
   
  En este tema se muestra cómo se utilizan las pruebas unitarias como primer paso en el desarrollo. En este enfoque, primero tienes que escribir un método de prueba que compruebe un comportamiento concreto en el sistema que estés probando y, después, escribir el código que tenga que superar la prueba. Mediante la realización de cambios en el orden de los procedimientos siguientes, puedes invertir esta estrategia para escribir primero el código que deseas probar y escribe después las pruebas unitarias.  
   
@@ -68,13 +52,13 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
 1.  En el menú **Archivo**, elija **Nuevo** y después **Nuevo proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Tienda Windows**. Después, elija **Aplicación vacía** en la lista de plantillas de proyecto.  
+2.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Windows Universal**. Después, elija **Aplicación vacía** en la lista de plantillas de proyecto.  
   
 3.  Asigne al proyecto el nombre `Maths` y asegúrese de que esté seleccionado **Crear directorio para la solución**.  
   
 4.  En el Explorador de soluciones, seleccione el nombre de la solución, **Agregar** en el menú contextual y **Nuevo proyecto**.  
   
-5.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Tienda Windows**. Después elija **Biblioteca de pruebas unitarias (aplicaciones de la Tienda Windows)** en la lista de plantillas de proyecto.  
+5.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.  
   
      ![Crear el proyecto de prueba unitaria](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
@@ -381,4 +365,3 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
 > [!NOTE]
 >  Para agregar un método auxiliar a una clase de prueba, no debes agregar el atributo `[TestMethod]` al método. El Explorador de pruebas no registra el método que se va a ejecutar.
-

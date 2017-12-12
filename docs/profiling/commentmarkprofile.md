@@ -1,79 +1,80 @@
 ---
-title: "CommentMarkProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "CommentMarkProfile"
-  - "CommentMarkProfileA"
+title: CommentMarkProfile | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- CommentMarkProfile
+- CommentMarkProfileA
 ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0cb46497c8e00cedeb4056571d8fa1d19eb26c0c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# CommentMarkProfile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La función `CommentMarkProfile` inserta un marcador numérico y una cadena de texto en el archivo .vsp.  Para que se inserten la marca y el comentario, la generación de perfiles del subproceso que contiene la función `CommentMarkProfile` debe estar establecida en ON.  
+# <a name="commentmarkprofile"></a>CommentMarkProfile
+La función `CommentMarkProfile` inserta un marcador numérico y una cadena de texto en el archivo .vsp. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función `CommentMarkProfile` debe estar activada.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(  
-                                   long lMarker,   
-                                   LPCTSTR szComment);  
+                                   long lMarker,   
+                                   LPCTSTR szComment);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `lMarker`  
   
- Marcador numérico que se inserta.  El marcador debe ser mayor o igual que 0 \(cero\).  
+ Marcador numérico que se va a insertar. El marcador debe ser mayor o igual que 0 (cero).  
   
  `szComment`  
   
- Puntero a la cadena de texto que se inserta.  La cadena debe ser tener menos de 256 caracteres incluido el terminador NULL.  
+ Puntero a la cadena de texto que se va a insertar. La cadena debe contener menos de 256 caracteres, incluido el terminador NULL.  
   
-## Valor de propiedad y valor devuelto  
- La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE\_COMMAND\_STATUS**.  El valor devuelto puede ser cualquiera de los siguientes:  
+## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
+ La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerator|Descripción|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
-|MARK\_ERROR\_MARKER\_RESERVED|El parámetro es menor o igual que 0.  Estos valores están reservados.  La marca y el comentario no se registran.|  
-|MARK\_ERROR\_MODE\_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función.  La marca y el comentario no se registran.|  
-|MARK\_ERROR\_MODE\_OFF|El modo de generación de perfiles se estableció en OFF cuando se llamó a la función.  La marca y el comentario no se registran.|  
-|MARK\_ERROR\_NO\_SUPPORT|No se admite ninguna marca en este contexto.  La marca y el comentario no se registran.|  
-|MARK\_ERROR\_OUTOFMEMORY|La memoria no estaba disponible para registrar el evento.  La marca y el comentario no se registran.|  
-|MARK\_TEXTTOOLONG|La cadena supera el máximo de 256 caracteres.  La cadena del comentario se trunca y se registran la marca y el comentario.|  
-|MARK\_OK|Se devuelve MARK\_OK para indicar que la operación es correcta.|  
+|MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|  
+|MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|  
+|MARK_ERROR_MODE_OFF|El modo de generación de perfiles se estableció en OFF cuando se llamó a la función. La marca y el comentario no se registran.|  
+|MARK_ERROR_NO_SUPPORT|No se admite ninguna marca en este contexto. La marca y el comentario no se registran.|  
+|MARK_ERROR_OUTOFMEMORY|La memoria no estaba disponible para registrar el evento. La marca y el comentario no se registran.|  
+|MARK_TEXTTOOLONG|La cadena supera el máximo de 256 caracteres. La cadena del comentario se trunca y se registran la marca y el comentario.|  
+|MARK_OK|Se devuelve MARK_OK para indicar que la operación es correcta.|  
   
-## Comentarios  
- El estado de generación de perfiles del subproceso que contiene la función de perfil de marcas debe estar activado cuando se inserten marcas o comentarios con el comando VSInstr Mark o con funciones \(CommentMarkAtProfile, CommentMarkProfile o MarkProfile\).  
+## <a name="remarks"></a>Comentarios  
+ El estado de generación de perfiles del subproceso que contiene la función de perfil de marcas debe estar activado cuando se inserten marcas o comentarios con el comando VSInstr Mark o con funciones (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).  
   
- Las marcas de perfil tienen un ámbito global.  Por ejemplo, una marca de perfil insertada en un subproceso se puede utilizar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo .vsp.  
+ Las marcas de perfil tienen un ámbito global. Por ejemplo, una marca de perfil insertada en un subproceso se puede utilizar para marcar el inicio y el final de un segmento de datos en cualquier subproceso del archivo .vsp.  
   
 > [!IMPORTANT]
->  El método CommentMarkProfile sólo se puede utilizar con la instrumentación.  
+>  El método CommentMarkProfile solo se puede utilizar con instrumentación.  
   
-## Equivalente en .NET Framework  
+## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## Información de la función  
+## <a name="function-information"></a>Información de la función  
   
 |||  
 |-|-|  
-|**Encabezado**|Incluir VSPerf.h|  
-|**Biblioteca**|Utilizar VSPerf.lib|  
-|**Unicode**|Se implementa como `CommentMarkProfileW` \(Unicode\) y `CommentMarkProfileA` \(ANSI\).|  
+|**Header**|Incluya VSPerf.h|  
+|**Library**|Use VSPerf.lib|  
+|**Unicode**|Implementado como `CommentMarkProfileW` (Unicode) y `CommentMarkProfileA` (ANSI).|  
   
-## Ejemplo  
- El código siguiente muestra la llamada a la función CommentMarkProfile.  En el ejemplo se da por hecho que se utilizan macros de cadenas de Win32 y la configuración del compilador Unicode para determinar si el código realiza una llamada a la función [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)].  
+## <a name="example"></a>Ejemplo  
+ El código siguiente ilustra la llamada de función CommentMarkProfile. En el ejemplo se da por supuesto que se usan macros de cadenas de Win32 y la configuración del compilador Unicode para determinar si el código llama a la llamada de función [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)].  
   
 ```  
 void ExerciseCommentMarkProfile()  
@@ -111,5 +112,5 @@ void ExerciseCommentMarkProfile()
 }  
 ```  
   
-## Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio \(Nativa\)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

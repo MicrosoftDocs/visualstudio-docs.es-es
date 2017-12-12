@@ -1,23 +1,12 @@
 ---
-title: Pruebas unitarias de aplicaciones C++ existentes con el Explorador de pruebas | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/test/how-to-use-microsoft-test-framework-for-cpp
+ms.openlocfilehash: 7ab917a55d9a2d00a8d4635e2de45cd43cbe02f2
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Pruebas unitarias de aplicaciones C++ existentes con el Explorador de pruebas
+# <a name="how-to-use-the-microsoft-unit-testing-framework-for-c"></a>Cómo usar el marco de pruebas unitarias de Microsoft para C++
 Se recomienda que, antes de cambiar una aplicación existente, se asegure de que tiene buena cobertura con pruebas unitarias. Así podrá confiar en que los cambios no han introducido errores. Si la aplicación todavía no tiene pruebas unitarias, se pueden agregar mediante las técnicas que se muestran en este tema. En este tema se describe cómo agregar pruebas unitarias para código Visual C++ existente, comenzando por decidir cómo probar el código y cómo crear, escribir y, por último, ejecutar las pruebas.  
   
 ## <a name="deciding-how-to-test-your-code"></a>La decisión sobre cómo probar el código  
@@ -29,7 +18,7 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
   
  Hay varias maneras de probar el código del producto, según si expone las interfaces que desea probar. Elija una de las siguientes formas:  
   
- **Las pruebas unitarias usarán solo las funciones que se exportan del código en pruebas:**  
+ **Las pruebas unitarias solo pueden llamar a las funciones que se exportan del código en pruebas:**  
  Agregue un proyecto de prueba independiente. En el proyecto de prueba, agregue una referencia al proyecto en pruebas.  
   
  Vaya al procedimiento [Para hacer referencia a funciones exportadas del proyecto de prueba](#projectRef).  
@@ -46,7 +35,7 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
   
  Vaya al procedimiento [Para cambiar el código en pruebas a una biblioteca estática](#staticLink).  
   
- **Las pruebas unitarias deben usar funciones y datos privados, y el código debe compilarse como una biblioteca de vínculos dinámicos (DLL):**  
+ **Las pruebas unitarias deben usar funciones y datos de miembros privados, y el código debe compilarse como una biblioteca de vínculos dinámicos (DLL):**  
  Agregue las pruebas unitarias en el mismo proyecto que el código de producto.  
   
  Vaya al procedimiento [Para agregar pruebas unitarias en el mismo proyecto](#sameProject).  
@@ -65,9 +54,9 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
   
  Continúe con el procedimiento [Para vincular las pruebas a los archivos de biblioteca u objeto](#objectRef).  
   
-###  <a name="projectRef"></a> Para hacer referencia a funciones exportadas del proyecto de prueba  
+###  <a name="projectRef"></a> Para hacer referencia a funciones de DLL exportadas del proyecto de prueba  
   
--   Si un proyecto en pruebas exporta funciones que desea probar, puede agregar una referencia al proyecto de código desde el proyecto de prueba.  
+-   Si un proyecto en pruebas es una DLL que exporta las funciones que quiere probar, puede agregar una referencia al proyecto de código desde el proyecto de prueba.  
   
     1.  Cree un proyecto de prueba C++.  
   
@@ -162,8 +151,11 @@ Se recomienda que, antes de cambiar una aplicación existente, se asegure de que
   
 ## <a name="run-the-tests"></a>Ejecutar las pruebas  
   
-1.  En el menú **Ver** , elija **Otras ventanas**, **Explorador de pruebas**.  
+1.  En el menú **Prueba**, elija **Windows** y **Explorador de pruebas**.  
+2. Si todas las pruebas no están visibles en la ventana, compile el proyecto de prueba haciendo clic con el botón derecho en su nodo en el **Explorador de soluciones** y eligiendo **Compilar** o **Recompilar**.
   
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.  
+2.  En el Explorador de pruebas, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga doble clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
   
- Para más información, vea [Inicio rápido: Desarrollo basado en pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md).
+## <a name="see-also"></a>Vea también
+[Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas](../test/quick-start-test-driven-development-with-test-explorer.md)
+

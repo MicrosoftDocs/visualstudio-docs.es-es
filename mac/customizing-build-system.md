@@ -1,19 +1,17 @@
 ---
-title: "Personalización del sistema de compilación"
+title: "Personalización del sistema de compilación| Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
+ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: c261dbc285da6f488e6a328c997e2a9563c1c73a
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="customizing-the-build-system"></a>Personalización del sistema de compilación
 
 MSBuild es un motor de compilación desarrollado por Microsoft que permite la compilación de aplicaciones de .NET principalmente. El marco de trabajo Mono además tiene su propia implementación del motor de compilación de Microsoft, denominado **xbuild**. Pero xbuild ha quedado desfasado en favor de MSBuild en todos los sistemas operativos.
@@ -105,8 +103,7 @@ Por ejemplo, el siguiente fragmento de código crea las pantallas de inicio de i
 
 Los siguientes recursos pueden usarse para obtener información más detallada sobre MSBuild:
 
-* [Información general sobre MSDN](https://msdn.microsoft.com/en-us/library/dd393574.aspx)
-* [Conceptos de MSDN](https://msdn.microsoft.com/en-us/library/dd637714.aspx)
-
+* [Información general sobre MSDN](https://msdn.microsoft.com/library/dd393574.aspx)
+* [Conceptos de MSDN](https://msdn.microsoft.com/library/dd637714.aspx)
 
 

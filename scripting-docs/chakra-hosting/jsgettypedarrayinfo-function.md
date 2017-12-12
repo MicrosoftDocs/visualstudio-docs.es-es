@@ -1,22 +1,26 @@
 ---
-title: "JsGetTypedArrayInfo (funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Función JsGetTypedArrayInfo | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 992bc4e9-3d06-4ad2-8b6b-88a437360f81
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 44897f3960b09a110c1f1dd288f08bd5b9edc7ed
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# JsGetTypedArrayInfo (funci&#243;n)
+# <a name="jsgettypedarrayinfo-function"></a>JsGetTypedArrayInfo (función)
 Obtiene las propiedades de una matriz con tipo se usan con frecuencia.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 STDAPI_(JsErrorCode) JsGetTypedArrayInfo(  
@@ -29,7 +33,7 @@ STDAPI_(JsErrorCode) JsGetTypedArrayInfo(
   
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `typedArray`  
  La instancia de matriz con tipo.  
   
@@ -45,14 +49,14 @@ STDAPI_(JsErrorCode) JsGetTypedArrayInfo(
  `byteLength`  
  Número de bytes de la matriz.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  El código `JsNoError` si la operación se realizó correctamente; en caso contrario, un código de error.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Requiere un contexto de script activo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

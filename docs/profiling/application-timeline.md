@@ -4,36 +4,19 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 254f2d9121566ef14c5470c3d940e4f781a0f5e2
-ms.contentlocale: es-es
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 32d6ac2581f71196d1f1d826d8f1024906b7cab9
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 Use la **escala de tiempo de aplicación** del generador de perfiles para buscar y corregir en aplicaciones XAML los problemas de rendimiento relacionados con la interacción. Esta herramienta le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos de las aplicaciones. Puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas.  
@@ -46,7 +29,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
 1.  Aplicaciones Windows universales (en Windows 10)  
   
-2.  Windows Store 8.1  
+2.  Windows 8.1  
   
 3.  Windows Phone 8.1 (plataforma común de XAML)  
   
@@ -138,5 +121,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
 ## <a name="see-also"></a>Vea también  
  [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications (Blog del equipo de WPF: Nueva herramienta de análisis de rendimiento de interfaz de usuario para aplicaciones de WPF)](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
- [Procedimientos recomendados para la Tienda Windows con C++, C# y Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Optimizar WPF: Rendimiento de aplicaciones](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance) [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Procedimientos recomendados de rendimiento para aplicaciones para UWP con C++, C# y Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [Optimizar WPF: Rendimiento de aplicaciones](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
+ [Generación de perfiles en Visual Studio](../profiling/index.md)  
+ [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

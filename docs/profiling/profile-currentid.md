@@ -1,36 +1,36 @@
 ---
-title: "PROFILE_CURRENTID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "PROFILE_CURRENTID"
+title: PROFILE_CURRENTID | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: PROFILE_CURRENTID
 ms.assetid: 55ccf665-a05e-48c3-adf7-7714c0a9aaef
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eaf85776b08f6df56b5e441d9e0c99e239bf8ca6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# PROFILE_CURRENTID
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-PROFILE\_CURRENTID devuelve el pseudosímbolo \(token\) para el identificador del subproceso o del proceso, en una llamada a las funciones NameProfile, StartProfile, StopProfile, SuspendProfile y ResumeProfile.  Se utiliza para aplicar la función al subproceso o proceso actual, en lugar de a uno que se haya indicado de manera específica.  
+# <a name="profilecurrentid"></a>PROFILE_CURRENTID
+PROFILE_CURRENTID devuelve el seudotoken para el identificador de subproceso o de proceso en una llamada a las funciones NameProfile, StartProfile, StopProfile, SuspendProfile y ResumeProfile. Se usa para hacer que la función opere en el subproceso o proceso actual, en lugar de en uno indicado de forma concreta.  
   
-## Ejemplo  
- PROFILE\_CURRENTID se define en VSPerf.h como:  
+## <a name="example"></a>Ejemplo  
+ PROFILE_CURRENTID se define en VSPerf.h como:  
   
 ```  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra PROFILE\_CURRENTID.  El ejemplo utiliza PROFILE\_CURRENTID como un parámetro que identifica el subproceso actual en una llamada a la función [StartProfile](../profiling/startprofile.md).  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se ilustra PROFILE_CURRENTID. En el ejemplo se usa PROFILE_CURRENTID como un parámetro que identifica el subproceso actual en una llamada a la función [StartProfile](../profiling/startprofile.md).  
   
 ```  
 void ExerciseProfileCurrentID()  
@@ -59,8 +59,8 @@ void ExerciseProfileCurrentID()
 }  
 ```  
   
-## Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio \(Nativa\)](../profiling/visual-studio-profiler-api-reference-native.md)   
+## <a name="see-also"></a>Vea también  
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [NameProfile](../profiling/nameprofile.md)   
  [ResumeProfile](../profiling/resumeprofile.md)   
  [StartProfile](../profiling/startprofile.md)   

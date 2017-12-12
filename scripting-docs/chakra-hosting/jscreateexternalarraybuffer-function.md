@@ -1,22 +1,26 @@
 ---
-title: "Funci&#243;n JsCreateExternalArrayBuffer | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Función JsCreateExternalArrayBuffer | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 4a02aaec-0f67-4bf9-b37c-71cdb1410ca4
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 95459f9a9ff676f47d56ed584ad44a30f24fd4cb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Funci&#243;n JsCreateExternalArrayBuffer
+# <a name="jscreateexternalarraybuffer-function"></a>Función JsCreateExternalArrayBuffer
 Crea un objeto `ArrayBuffer` de Javascript para obtener acceso a la memoria externa.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(  
@@ -29,7 +33,7 @@ STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(
   
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `data`  
  Es un puntero a la memoria externa.  
   
@@ -43,16 +47,16 @@ STDAPI_(JsErrorCode) JsCreateExternalArrayBuffer(
  Es el estado proporcionado por el usuario que se pasará de nuevo para finalizar la devolución de llamada.  
   
  `result`  
- El nuevo objeto `ArrayBuffer`.  
+ El nuevo objeto `ArrayBuffer` .  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  El código `JsNoError` si la operación se realizó correctamente; en caso contrario, un código de error.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Requiere un contexto de script activo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

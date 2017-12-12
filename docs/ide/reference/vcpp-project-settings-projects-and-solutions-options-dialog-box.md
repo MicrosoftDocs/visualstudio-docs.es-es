@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.VCBuild
+f1_keywords: VS.ToolsOptionsPages.Projects.VCBuild
 helpviewer_keywords:
 - builds [Visual Studio], logs
 - build process [C++]
@@ -19,31 +17,15 @@ helpviewer_keywords:
 - extensions, files built by C or C++ compiler
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b0ccfd3d526cee44a30c8d4c33030f2eb2a585e5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 2581fdecd9a26c8d4500f83b9abd0e1f967e2ee6
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
 Este cuadro de diálogo le permite definir la configuración del proyecto y la compilación de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relacionada con el registro, el rendimiento y los tipos de archivos auxiliares.  
@@ -53,7 +35,6 @@ Este cuadro de diálogo le permite definir la configuración del proyecto y la c
 1.  En el menú **Herramientas** , haga clic en **Opciones**.  
   
 2.  Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.  
-  
  
 ## <a name="build-logging"></a>Registro de compilación  
  **Sí**  
@@ -95,17 +76,13 @@ Este cuadro de diálogo le permite definir la configuración del proyecto y la c
  **Mostrar todos los archivos**  
   Configura el **Explorador de soluciones** de modo que muestre tanto archivos del proyecto como archivos del disco en la carpeta del proyecto.  
 
-
 ## <a name="enable-project-caching"></a>Habilitar almacenamiento en caché de los proyectos
-**Sí** Esta opción permite que Visual Studio copie en caché los datos de un proyecto para que, cuando lo abra la próxima vez, se carguen esos datos en lugar de volver a calcularlos desde los archivos de proyecto. Usar datos en caché puede acelerar de forma significativa el tiempo de carga de un proyecto.   
+**Sí**  
+Permite que Visual Studio copie en caché los datos del proyecto para que, cuando lo abra la próxima vez, se carguen esos datos en lugar de volver a calcularlos desde los archivos de proyecto. Usar datos en caché puede acelerar de forma significativa el tiempo de carga de un proyecto.   
 
-**No** No se usan los datos de proyecto almacenados en caché. Se analizan los archivos de proyecto cada vez que se cargue el proyecto.
+**No**  
+No se usan los datos de proyecto almacenados en caché. Se analizan los archivos de proyecto cada vez que se cargue el proyecto.
 
-
-  
-
-  
-#
 ## <a name="see-also"></a>Vea también  
  [Compilación de programas de C/C++](/cpp/build/building-c-cpp-programs)   
  [Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)

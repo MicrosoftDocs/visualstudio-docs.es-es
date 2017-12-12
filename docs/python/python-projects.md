@@ -1,28 +1,24 @@
 ---
 title: Proyectos de Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c9c53f76-d0ef-4095-8b39-b7eb9bb33aba
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 3ce10862b3d71be43a86c1a98a9edf822ac9baf6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 3898277e5520ccabea5fba488846e520ef52fc83
-ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="python-projects"></a>Proyectos de Python
 
 Las aplicaciones de Python suelen definirse usando solo carpetas y archivos, pero esta estructura se puede complicar a medida que aplicaciones se van haciendo cada vez más grandes y pueden llegar a afectar a los archivos generados automáticamente, a JavaScript para aplicaciones web, etc. Para ayudar a administrar esta complejidad, puede crear proyectos de Visual Studio para aplicaciones de Python. Un proyecto de Python (un archivo `.pyproj`) identifica todos los archivos de origen y de contenido asociados al proyecto, contiene información de compilación para cada archivo, mantiene la información para integrarse con sistemas de control de código fuente y ayuda a organizar la aplicación en componentes lógicos.
@@ -46,14 +42,11 @@ En este tema:
 >
 > Se puede crear fácilmente un proyecto de Visual Studio a partir de código existente, como se describe a continuación en [Creación de un proyecto a partir de archivos existentes](#creating-a-project-from-existing-files).
 
-Para obtener una introducción a los proyectos de Python en Visual Studio, consulte el vídeo de youtube.com (3 minutos y 18 segundos) [Getting Started with Python Tools Part 2: Projects](https://youtu.be/KHPoVpL7zHg?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introducción a las Herramientas de Python - Parte 2: proyectos).
+Para ver una introducción a los proyectos de Python en Visual Studio, eche un vistazo al vídeo [Getting Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Obtener código de Python) de Microsoft Virtual Academy (2 minutos y 17 segundos).
 
-> [!VIDEO https://www.youtube.com/embed/KHPoVpL7zHg]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
 
-Consulte también el vídeo de youtube.com (8 minutos y 55 segundos) [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python).
-
-> [!VIDEO https://www.youtube.com/embed/Aq8eqApnugM]
-
+Vea también el vídeo más antiguo de youtube.com (8 minutos y 55 segundos) [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python).
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 
@@ -91,22 +84,13 @@ En la tabla siguiente se muestra un resumen de las plantillas disponibles en Vis
 | Módulo de extensión de Python | Esta plantilla aparece en Visual C++ si ha instalado las **herramientas de desarrollo nativo de Python** con la carga de trabajo de Python en Visual Studio 2017 (consulte [Instalación](installation.md)). Proporciona la estructura básica de un archivo DLL de extensión de C++, similar a lo que se describe en [Creating a C++ Extension for Python](cpp-and-python.md) (Crear una extensión de C++ para Python). |
 
 <a name="create-project-from-existing-files"</a>
+
 ### <a name="creating-a-project-from-existing-files"></a>Creación de un proyecto a partir de archivos existentes
 
-1. Seleccione el menú **Archivo > Nuevo > Proyecto...**  y luego seleccione la plantilla **From Existing Python Code** (A partir de código Python existente).
-1. En el cuadro de diálogo siguiente, establezca la ruta de acceso al código existente, un filtro para tipos de archivo y cualquier ruta de acceso de búsqueda que requiera el proyecto. Por último, seleccione **Siguiente**:
+> [!Important]
+> El proceso que se describe aquí no mueve ni copia los archivos de código fuente originales. Si quiere trabajar con una copia, duplique primero la carpeta.
 
-    ![Nuevo proyecto a partir de código existente, paso 1](media/projects-from-existing-1.png)
-
-1. Elija un entorno para el proyecto y el archivo de inicio; luego presione **Siguiente**. (Tenga en cuenta que el cuadro de diálogo solo muestra los archivos de la raíz del árbol de carpetas; si el archivo que desea está en una subcarpeta, deje el archivo de inicio en blanco y establézcalo posteriormente en el Explorador de soluciones).
-
-    ![Nuevo proyecto a partir de código existente, paso 2](media/projects-from-existing-2.png)
-
-1. Seleccione la ubicación para guardar el archivo de proyecto (esta acción no mueve o copia los archivos de origen originales, por lo que si quiere una copia, debe hacer una antes de usar la plantilla). En este cuadro de diálogo también puede incluir la detección automática de entornos virtuales y personalizar el proyecto para marcos web diferentes.
-
-    ![Nuevo proyecto a partir de código existente, paso 3](media/projects-from-existing-3.png)
-
-1.  Seleccione **Finalizar** y Visual Studio creará el proyecto y lo abrirá en el Explorador de soluciones. Si quiere mover el archivo `.pyproj` a otra parte, selecciónelo en el Explorador de soluciones y pulse **Archivo > Guardar como**. Esta acción actualiza las referencias de archivo en el proyecto pero no mueve ningún archivo de código.
+[!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
 ## <a name="linked-files"></a>Archivos vinculados
 

@@ -1,66 +1,66 @@
 ---
-title: "Abrir archivo (Comando) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "file.openfile"
-helpviewer_keywords: 
-  - "File.OpenFile (comando)"
-  - "of (comando)"
-  - "Abrir archivo (comando)"
+title: Comando Abrir archivo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: file.openfile
+helpviewer_keywords:
+- Open File command
+- File.OpenFile command
+- of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f7b1576ce7c34e953c45d7b303190a00d77e86cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Abrir archivo (Comando)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Abre un archivo existente y permite especificar un editor.  
+# <a name="open-file-command"></a>Abrir archivo (Comando)
+Abre un archivo existente y le permite especificar un editor.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 File.OpenFile filename [/e:editorname]  
 ```  
   
-## Argumentos  
+## <a name="arguments"></a>Argumentos  
  `filename`  
- Obligatorio.  Nombre de archivo y ruta de acceso completa o parcial del archivo que se va a abrir.  Las rutas de acceso que contienen espacios en blanco deben aparecer entre comillas.  
+ Obligatorio. Ruta de acceso completa o parcial y nombre del archivo que se va a abrir. Las rutas de acceso que contienen espacios deben ir entre comillas.  
   
-## Modificadores  
- \/e:`editorname`  
- Opcional.  Nombre del editor en el que se abrirá el archivo.  Si se especifica el argumento pero no se proporciona ningún nombre de editor, aparece el cuadro de diálogo **Abrir con**.  
+## <a name="switches"></a>Modificadores  
+ /e:`editorname`  
+ Opcional. Nombre del editor en el que se abrirá el archivo. Si se especifica el argumento pero no se ha proporcionado ningún nombre de editor, aparece el cuadro de diálogo **Abrir con**.  
   
- \/e: la sintaxis de los argumentos de`editorname` utiliza los nombres de editor como aparecen en el cuadro de diálogo abrir con, entre comillas.  
+ La sintaxis del argumento /e:`editorname` usa los nombres de editor tal y como aparecen en el cuadro de diálogo Abrir con, incluidos entre comillas.  
   
- Por ejemplo, para abrir un archivo en el editor de código fuente, tiene que escribir lo siguiente para el argumento \/e:`editorname`.  
+ Por ejemplo, para abrir un archivo en el editor de código fuente, tiene que escribir lo siguiente para el argumento /e:`editorname`.  
   
 ```  
 /e:"Source Code (text) Editor"  
 ```  
   
-## Comentarios  
- A medida que escribe una ruta de acceso, la finalización automática intenta localizar la ruta de acceso y el nombre de archivo correctos.  
+## <a name="remarks"></a>Comentarios  
+ A medida que va escribiendo una ruta de acceso, la finalización automática intenta localizar la ruta de acceso y el nombre de archivo correctos.  
   
-## Ejemplo  
- Este ejemplo abre el archivo de estilo "Test1.css" en el editor de código fuente.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se abre el archivo de estilo "Test1.css" en el editor de código fuente.  
   
 ```  
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana de comandos](../../ide/reference/command-window.md)   
+ [Ventana Comandos](../../ide/reference/command-window.md)   
  [Ventana Inmediato](../../ide/reference/immediate-window.md)   
- [Cuadro Buscar\/Comando](../../ide/find-command-box.md)   
+ [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

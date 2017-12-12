@@ -1,32 +1,32 @@
 ---
-title: "Mostrar registros (Comando) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.listregisters"
-helpviewer_keywords: 
-  - "Debug.ListRegisters (comando)"
-  - "mostrar registros (comando)"
-  - "ListRegisters (comando)"
+title: Comando Mostrar registros | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.listregisters
+helpviewer_keywords:
+- list registers command
+- Debug.ListRegisters command
+- ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-caps.latest.revision: 7
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 83f4830b79c4492337abb6052b1b2803b34b5a9b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Mostrar registros (Comando)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Muestra el valor de los registros seleccionado y le permite modificar la lista de registros para mostrar.  
+# <a name="list-registers-command"></a>Mostrar registros (Comando)
+Muestra el valor de los registros seleccionados y permite modificar la lista de registros que se van a mostrar.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]  
@@ -34,9 +34,9 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]  
 ```  
   
-## Modificadores  
- \/Display \[{`register`&#124;`registerGroup`}...\]  
- Muestra los valores del parámetro `register` o `registerGroup` especificado.  Si no se especifica ningún parámetro `register` o `registerGroup`, se muestra la lista predeterminada de registros.  Si no se especifica ningún modificador, el comportamiento es el mismo.  Por ejemplo:  
+## <a name="switches"></a>Modificadores  
+ /Display [{`register`&#124;`registerGroup`}...]  
+ Muestra los valores del objeto `register` o `registerGroup` especificado. Si no hay ningún objeto `register` o `registerGroup` especificado, se muestra la lista predeterminada de registros. Si no se especifica ningún modificador, el comportamiento es el mismo. Por ejemplo:  
   
  `Debug.ListRegisters /Display eax`  
   
@@ -44,26 +44,26 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
  `Debug.ListRegisters eax`  
   
- \/List  
+ /List  
  Muestra todos los grupos de registros de la lista.  
   
- \/Watch \[{`register`&#124;`registerGroup`}...\]  
- Agrega uno o más valores `register` o `registerGroup` a la lista.  
+ /Watch [{`register`&#124;`registerGroup`}...]  
+ Agrega uno o varios valores `register` o `registerGroup` a la lista.  
   
- \/Unwatch \[{`register`&#124;`registerGroup`}...\]  
- Quita uno o más valores `register` o `registerGroup` de la lista.  
+ /Unwatch [{`register`&#124;`registerGroup`}...]  
+ Quita uno o varios valores `register` o `registerGroup` de la lista.  
   
-## Comentarios  
- Puede utilizarse el alias `r` en lugar de `Debug.ListRegisters`.  
+## <a name="remarks"></a>Comentarios  
+ El alias `r` se puede usar en lugar de `Debug.ListRegisters`.  
   
-## Ejemplo  
- Este ejemplo utiliza el alias `r` de `Debug.ListRegisters` para mostrar los valores del grupo de registros `Flags`.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se usa el alias `r` de `Debug.ListRegisters` para mostrar los valores del grupo de registros `Flags`.  
   
 ```  
 r /Display Flags  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fundamentos de la depuración: ventana Registros](../../debugger/debugging-basics-registers-window.md)   
- [Cómo: Utilizar la ventana Registros](../../debugger/how-to-use-the-registers-window.md)
+ [Cómo: Usar la ventana Registros](../../debugger/how-to-use-the-registers-window.md)

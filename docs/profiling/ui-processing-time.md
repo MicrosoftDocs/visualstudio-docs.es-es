@@ -1,32 +1,31 @@
 ---
-title: "Tiempo de procesamiento de la interfaz de usuario | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.uiprocessing"
-helpviewer_keywords: 
-  - "Visualizador de simultaneidad, Tiempo de procesamiento de la interfaz de usuario"
+title: Tiempo de procesamiento de la interfaz de usuario | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.uiprocessing
+helpviewer_keywords: Concurrency Visualizer, UI Processing Time
 ms.assetid: 0ddb05a3-8c6b-448b-8488-2751c1e5abcc
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: af141426c0854edcbb7772aebcd87250f4730f6f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Tiempo de procesamiento de la interfaz de usuario
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que se clasifican como Procesamiento de IU.  Esto implica que un subproceso está generando mensajes de Windows o realizando otro trabajo de la interfaz de usuario.  Durante este período de tiempo, un subproceso se ha bloqueado en una API que el visualizador de simultaneidad identifica como Procesamiento de IU.  Las API como `GetMessage()` y `MsgWaitForMultipleObjects()` se incluyen en este grupo.  
+# <a name="ui-processing-time"></a>Tiempo de procesamiento de la interfaz de usuario
+Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que se clasifican como procesamiento de la interfaz de usuario. Esto implica que un subproceso está generando mensajes de Windows o realizando otro trabajo de la interfaz de usuario. Durante este tiempo, se ha bloqueado un subproceso en una API que el visualizador de simultaneidad está contando como procesamiento de la interfaz de usuario. Las API como `GetMessage()` y `MsgWaitForMultipleObjects()` se incluyen en este grupo.  
   
- Si no se identifica ninguna API de bloqueo predefinida, revise las pilas de llamadas y los informes del perfil para determinar las causas subyacentes del retraso.  
+ Si no se identifica ninguna API de bloqueo predefinida, revise las pilas de llamadas y los informes de perfil para determinar las causas subyacentes del retraso.  
   
- La categoría Procesamiento de IU es importante para entender la capacidad de respuesta de las aplicaciones GUI y es conveniente en aplicaciones que dependen de la capacidad de respuesta de la interfaz de usuario.  Por ejemplo, si el subproceso de la interfaz de usuario de una aplicación consigue registrar un tiempo de 100% en Procesamiento de IU, probablemente tenga una capacidad de respuesta muy elevada.  Sin embargo, si el subproceso de la interfaz de usuario invierte una gran cantidad de tiempo en otras categorías, busque las causas principales y considere la posibilidad de reducir las categorías no relacionadas con la interfaz de usuario en ese subproceso.  
+ La categoría de procesamiento de la interfaz de usuario es importante para entender la capacidad de respuesta de las aplicaciones de interfaz gráfica de usuario y es conveniente en aplicaciones que dependen de la capacidad de respuesta de la interfaz de usuario. Por ejemplo, si el subproceso de interfaz de usuario en una aplicación alcanza el 100 % de tiempo de procesamiento de la interfaz de usuario, probablemente tenga gran capacidad de respuesta. Sin embargo, si el subproceso de interfaz de usuario emplea tiempo considerable en otras categorías, busque las causas principales y considere la posibilidad de reducir las categorías que no sean de interfaz de usuario en ese subproceso.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

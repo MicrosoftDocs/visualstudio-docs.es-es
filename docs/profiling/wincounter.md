@@ -1,62 +1,63 @@
 ---
-title: "WinCounter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: WinCounter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5f7fd3846f98149afd7c00924464da2459deb715
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# WinCounter
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La opción **WinCounter** especifica un contador de rendimiento de aplicación o de Windows para recopilar a intervalos fijos durante la ejecución del perfil.  Los contadores de rendimiento de aplicación y de Windows se muestran como marcas en el archivo de datos de generación de perfiles.  Puede especificar varios contadores de rendimiento para recopilar en opciones independientes.  
+# <a name="wincounter"></a>WinCounter
+La opción **WinCounter** especifica un contador de rendimiento de aplicaciones o de Windows para recopilar en intervalos establecidos durante la ejecución de perfiles. Los contadores de rendimiento de aplicaciones y de Windows se muestran como marcas en el archivo de datos de generación de perfiles. Puede especificar varios contadores de rendimiento para recopilar en opciones independientes.  
   
- De forma predeterminada, los contadores se recopilan cada 500 milisegundos.  Utilice la opción **AutoMark** para especificar un intervalo de recolección diferente.  
+ De forma predeterminada, los contadores se recopilan cada 500 milisegundos. Use la opción **AutoMark** para especificar un intervalo de recopilación diferente.  
   
- Solo se usa una opción **AutoMark**.  Si se especifica varias opciones **AutoMark**, se utiliza la última.  
+ Solo se usa una opción **AutoMark**. Si se especifican varias opciones **AutoMark**, se usa la última de ellas.  
   
- La opción **WinCounter** solamente se puede utilizar con la opción **Start**.  
+ La opción **WinCounter** solo se puede usar con la opción **Start**.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `Path`  
- El contador de rendimiento de Windows en el formato de ruta de acceso de contador PDH.  
+ Contador de rendimiento de Windows en formato de ruta de acceso de contador PDH.  
   
-## Opciones necesarias  
- La opción **WinCounter** solamente se puede utilizar con la opción **Start**.  
+## <a name="required-options"></a>Opciones necesarias  
+ La opción **WinCounter** solo se puede usar con la opción **Start**.  
   
  **Start:** `Method`  
- La opción **Start** inicializa el generador de perfiles al método de generación de perfiles especificado.  
+ La opción **Start** inicializa el generador de perfiles en el método de generación de perfiles especificado.  
   
-## Opciones exclusivas  
- La opción **AutoMark** solamente se puede utilizar con la opción **WinCounter**.  
+## <a name="exclusive-options"></a>Opciones exclusivas  
+ La opción **AutoMark** solo se puede usar con la opción **WinCounter**.  
   
  **AutoMark:** `Milliseconds`  
- Especifica el número de milisegundos entre recolecciones de datos de rendimiento de Windows.  
+ Especifica el número de milisegundos entre la recopilación de datos de contadores de rendimiento de Windows.  
   
-## Ejemplo  
- En el ejemplo siguiente, se especifica que se recopilen dos contadores de rendimiento de Windows con un intervalo de 1000 milisegundos.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente, se especifican dos contadores de rendimiento de Windows para que se recopilen en un intervalo de 1 000 milisegundos.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)

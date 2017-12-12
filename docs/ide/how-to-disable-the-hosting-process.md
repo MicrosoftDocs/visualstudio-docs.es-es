@@ -1,31 +1,32 @@
 ---
-title: "C&#243;mo: Deshabilitar el proceso de alojamiento | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "proceso de alojamiento, deshabilitar"
-  - "vshost.exe, deshabilitar el proceso de alojamiento"
+title: "Cómo: Deshabilitar el proceso de hospedaje | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- hosting process, disabling
+- vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 94d40fe18ff4cca228fb39ab16bcfaa6ac42a172
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# C&#243;mo: Deshabilitar el proceso de alojamiento
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso de hospedaje.  En estos casos, es necesario deshabilitar el proceso de hospedaje para devolver los resultados correctos.  
+# <a name="how-to-disable-the-hosting-process"></a>Cómo: Deshabilitar el proceso de alojamiento
+Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso de hospedaje. En estos casos, es necesario deshabilitar el proceso de hospedaje para devolver los resultados correctos.  
   
-### Para deshabilitar el proceso de hospedaje  
+### <a name="to-disable-the-hosting-process"></a>Para deshabilitar el proceso de hospedaje  
   
-1.  Abra un proyecto ejecutable en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Los proyectos que no generan archivos ejecutables \(por ejemplo, proyectos de biblioteca de clases o de servicio\) no tienen esta opción.  
+1.  Abra un proyecto ejecutable en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Los proyectos que no generan archivos ejecutables (por ejemplo, proyectos de biblioteca de clases o de servicio) no tienen esta opción.  
   
 2.  En el menú **Proyecto**, haga clic en **Propiedades**.  
   
@@ -33,7 +34,7 @@ Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso 
   
 4.  Desactive la casilla **Habilitar el proceso de hospedaje de Visual Studio**.  
   
- Cuando se deshabilita el proceso de hospedaje, varias características de depuración no están disponibles o sufren una disminución de rendimiento.  Para obtener más información, vea [Depuración y proceso host](../debugger/debugging-and-the-hosting-process.md).  
+ Cuando se deshabilita el proceso de hospedaje, varias características de depuración no están disponibles o sufren una disminución de rendimiento. Para obtener más información, consulte [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md).  
   
  En general, cuando se deshabilita el proceso de hospedaje:  
   
@@ -43,7 +44,7 @@ Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso 
   
 -   No está disponible la depuración de confianza parcial.  
   
-## Vea también  
- [Depuración y proceso host](../debugger/debugging-and-the-hosting-process.md)   
- [Proceso de alojamiento \(vshost.exe\)](../ide/hosting-process-vshost-exe.md)   
- [Builds During Application Development](http://msdn.microsoft.com/es-es/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+## <a name="see-also"></a>Vea también  
+ [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md)   
+ [Proceso de alojamiento (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
+ [Versiones de compilación durante el desarrollo de una aplicación](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

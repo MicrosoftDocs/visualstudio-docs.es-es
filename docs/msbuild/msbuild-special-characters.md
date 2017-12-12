@@ -1,44 +1,45 @@
 ---
-title: "Caracteres especiales de MSBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "escape"
-  - "caracteres de escape"
-  - "caracteres de escape de MSBuild"
+title: Caracteres especiales de MSBuild | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- escape characters
+- escape
+- MSBuild Escape Characters
 ms.assetid: 545e6a59-1093-4514-935e-78679a46fb3c
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 04b679ed649bc4fe01a2bccb08a8c5e137b6141d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Caracteres especiales de MSBuild
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reserva algunos caracteres para un uso especial en contextos concretos.  Solo tiene que usar estos caracteres como identificadores de escape si desea utilizarlos literalmente en el contexto en el que se reservan.  Por ejemplo, un asterisco tiene un significado especial únicamente en los atributos `Include` y `Exclude` de una definición de elemento y en llamadas a `CreateItem`.  Si desea que un asterisco aparezca como un asterisco en uno de esos contextos, debe utilizarlo como identificador de escape.  En los demás contextos, simplemente escriba el asterisco donde desea que aparezca.  
+# <a name="msbuild-special-characters"></a>Caracteres especiales de MSBuild
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reserva algunos caracteres para usos especiales en contextos concretos. Para usar dichos caracteres literalmente en el contexto en el que están reservados, debe aplicarles secuencias de escape. Por ejemplo, un asterisco tiene un significado especial solo en los atributos `Include` y `Exclude` de una definición de elemento y en las llamadas a `CreateItem`. Si quiere que aparezca como un asterisco en uno de estos contextos, debe aplicarle una secuencia de escape. En todos los demás contextos, simplemente escriba el asterisco donde quiera que aparezca.  
   
- Para usar como identificador de escape un carácter especial, use la sintaxis %*xx*, donde *xx* representa el valor hexadecimal ASCII del carácter.  Para obtener más información, vea [Cómo: Utilizar caracteres de escape especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
+ Para aplicar una secuencia de escape a un carácter especial, use la sintaxis %*xx*, donde *xx* representa el valor hexadecimal ASCII del carácter. Para obtener más información, vea [Cómo: Utilizar caracteres de escape especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
   
-## Caracteres especiales  
- La tabla siguiente enumera los caracteres especiales de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]:  
+## <a name="special-characters"></a>Caracteres especiales  
+ En la tabla siguiente se muestran los caracteres especiales de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]:  
   
 |**Carácter**|**ASCII**|**Uso reservado**|  
-|------------------|---------------|-----------------------|  
+|-------------------|---------------|------------------------|  
 |%|%25|Referencia a metadatos|  
 |$|%24|Referencia a propiedades|  
 |@|%40|Referencia a listas de elementos|  
 |'|%27|Condiciones y otras expresiones|  
-|;|%3B|Separador de listas|  
-|?|%3F|Carácter comodín para su uso en nombres de archivo en los atributos `Include` y `Exclude`|  
-|\*|%2A|Carácter comodín para su uso en nombres de archivo en los atributos `Include` y `Exclude`|  
+|;|%3B|Separador de lista|  
+|?|%3F|Carácter comodín para nombres de archivo en atributos `Include` y `Exclude`|  
+|*|%2A|Carácter comodín para nombres de archivo en atributos `Include` y `Exclude`|  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)   
- [elementos](../msbuild/msbuild-items.md)
+ [Elementos](../msbuild/msbuild-items.md)

@@ -1,82 +1,83 @@
 ---
-title: "P&#225;gina Seguridad, Dise&#241;ador de proyectos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ProjectPropertiesSecurity"
-  - "vb.XBAPProjectPropertiesSecurity"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Diseñador de proyectos, página Seguridad"
-  - "Página Seguridad en el Diseñador de proyectos"
+title: "Página Seguridad, Diseñador de proyectos | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vb.ProjectPropertiesSecurity
+- vb.XBAPProjectPropertiesSecurity
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Project Designer, Security page
+- Security page in Project Designer
 ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
-caps.latest.revision: 34
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 34
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4eaa6a746f67c891e9e4979f9c5b06202383e5f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# P&#225;gina Seguridad, Dise&#241;ador de proyectos
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-La página **Seguridad** del **Diseñador de proyectos** se utiliza para configurar las opciones de seguridad de acceso del código de las aplicaciones que se implementan mediante [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].  Para obtener más información, vea [Seguridad de acceso del código para aplicaciones ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
+# <a name="security-page-project-designer"></a>Página Seguridad, Diseñador de proyectos
+La página **Seguridad** del **Diseñador de proyectos** se usa para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. Para obtener más información, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  
   
- Para tener acceso a la página **Seguridad**, seleccione un nodo de proyecto en el **Explorador de soluciones** y, a continuación, haga clic en la opción **Propiedades** del menú **Proyecto**.  Cuando aparezca el **Diseñador de proyectos**, haga clic en la ficha **Seguridad**.  
+ Para obtener acceso a la página **Seguridad**, haga clic en un nodo de proyecto en el **Explorador de soluciones** y, después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Seguridad**.  
   
-## Configuración de seguridad  
- **Habilitar configuración de seguridad de ClickOnce**  
- Determina si se habilitará o no la configuración de seguridad en tiempo de diseño.  Si esta opción está desactivada, no estarán disponibles las demás opciones de la página **Seguridad**.  
+## <a name="security-settings"></a>Configuración de seguridad  
+ **Habilitar la configuración de seguridad ClickOnce**  
+ Determina si la configuración de seguridad está habilitada en tiempo de diseño. Cuando esta opción está desactivada, todas las demás opciones de la página **Seguridad** no están disponibles.  
   
 > [!NOTE]
->  Al publicar una aplicación mediante el **Asistente para publicación**, se habilita esta opción automáticamente.  
+>  Al publicar una aplicación mediante el uso del asistente para **Publicar**, esta opción se habilita automáticamente.  
   
- Si activa esta opción, puede elegir entre dos botones de radio: **Aplicación de plena confianza** o **Aplicación de confianza parcial**.  
+ Cuando se selecciona esta opción, puede elegir uno de dos botones de radio: **Aplicación de plena confianza** o **Aplicación de confianza parcial**.  
   
- De manera predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción está activada.  
+ De forma predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción está activada.  
   
- De manera predeterminada, para todos los demás tipos de proyecto, esta opción está desactivada.  
+ Para todos los demás tipos de proyecto, esta opción está desactivada de forma predeterminada.  
   
  **Aplicación de plena confianza**  
- Si selecciona esta opción, la aplicación solicita los permisos de plena confianza cuando se instala o ejecuta en un equipo cliente.  Evite utilizar la plena confianza si es posible, porque la aplicación recibirá un acceso no restringido a recursos tales como el sistema de archivos y el Registro.  
+ Si selecciona esta opción, la aplicación solicita permisos de plena confianza cuando se instala o ejecuta en un equipo cliente. Evite usar la plena confianza si es posible, dado que se le concederá a la aplicación acceso sin restricciones a recursos como el sistema de archivos y el Registro.  
   
- De manera predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción se establece en confianza parcial.  
+ De forma predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción está establecida en Confianza parcial.  
   
- De manera predeterminada, para todos los demás tipos de proyecto, esta opción se establece en plena confianza.  
+ Para todos los demás tipos de proyecto, esta opción está establecida en Plena confianza de forma predeterminada.  
   
- **Aplicación de confianza parcial**  
- Si selecciona esta opción, la aplicación solicita los permisos de confianza parcial cuando se instala o ejecuta en un equipo cliente.  *Confianza parcial* significa que sólo las acciones que se permiten en los permisos de seguridad de acceso del código solicitados se ejecutarán.  Para obtener más información sobre cómo configurar los permisos de seguridad, vea [Seguridad de acceso del código para aplicaciones ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
+ **Esta es una aplicación de confianza parcial**  
+ Si selecciona esta opción, la aplicación solicita permisos de confianza parcial cuando se instala o ejecuta en un equipo cliente. *Confianza parcial* significa que solo se ejecutarán las acciones que están permitidas en los permisos solicitados de seguridad de acceso del código. Para obtener más información sobre cómo configurar los permisos de seguridad, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  
   
- Puede especificar la configuración de seguridad de confianza parcial configurando las opciones del área **Permisos de seguridad de ClickOnce**.  
+ Puede especificar la configuración de seguridad de confianza parcial mediante las opciones del área **Permisos de seguridad de ClickOnce**.  
   
-## Permisos de seguridad de ClickOnce  
+## <a name="clickonce-security-permissions"></a>Permisos de seguridad de ClickOnce  
  **Zona desde la que se instalará la aplicación**  
- Especifica un conjunto predeterminado de permisos de seguridad de acceso del código.  Elija **Personalizado** para comenzar sin permisos habilitados, o bien elija **Internet** o **Intranet local** para configurar un conjunto de permisos restringidos.  Si la aplicación solicita más permisos de los concedidos en una zona, aparecerá un mensaje de ClickOnce relativo a la confianza para que el usuario final conceda los permisos adicionales.  Para obtener más información sobre cómo configurar los permisos de seguridad, vea [Seguridad de acceso del código para aplicaciones ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
+ Especifica un conjunto predeterminado de permisos de seguridad de acceso del código. Elija **Internet** o **Intranet local** para un conjunto de permisos restringidos o elija **(Personalizado)** para configurar un conjunto de permisos personalizado. Si la aplicación solicita más permisos de los concedidos en una zona, aparecerá un mensaje relativo a la confianza de ClickOnce para que el usuario final conceda los permisos adicionales. Para obtener más información sobre cómo configurar los permisos de seguridad, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  
   
- De manera predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción se establece en **Internet**.  
+ De forma predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción está establecida en **Internet**.  
   
  **Editar XML de permisos**  
- Abre la plantilla de manifiesto de aplicación \(app.manifest\) para configurar los permisos del conjunto de permisos **\(Personalizado\)**.  
+ Abre la plantilla de manifiesto de aplicación (app.manifest) para configurar los permisos del conjunto de permisos **(Personalizado)**.  
   
- **Avanzado**  
- Abre el [Configuración de seguridad avanzada \(Cuadro de diálogo\)](../../ide/reference/advanced-security-settings-dialog-box.md), que se utiliza para establecer la configuración con el fin de depurar la aplicación con permisos restringidos.  Esta configuración se comprueba durante la depuración y las excepciones de permisos indican que su aplicación puede necesitar más permisos de los definidos en una zona.  
+ **Avanzadas**  
+ Abre el cuadro de diálogo [Configuración de seguridad avanzada](../../ide/reference/advanced-security-settings-dialog-box.md), que se usa para configurar las opciones de depuración de la aplicación con permisos restringidos. Estas configuraciones se comprueban durante la depuración, y las excepciones de los permisos indican que la aplicación puede necesitar más permisos de los definidos en una zona.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)   
- [Cómo: Habilitar la configuración de seguridad para aplicaciones ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Cómo: Habilitar la configuración de seguridad de ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
  [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Seguridad e implementación ClickOnce](../../deployment/clickonce-security-and-deployment.md)   
  [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)   
- [Configuración de seguridad avanzada \(Cuadro de diálogo\)](../../ide/reference/advanced-security-settings-dialog-box.md)
+ [Configuración de seguridad avanzada (Cuadro de diálogo)](../../ide/reference/advanced-security-settings-dialog-box.md)

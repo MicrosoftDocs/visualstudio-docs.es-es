@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,31 +16,15 @@ helpviewer_keywords:
 - Profiling Tools,data views
 - Profiling Tools,reports
 ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
-caps.latest.revision: 41
+caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: f67e927ad2fdaa934027507441222af4bbde3394
-ms.contentlocale: es-es
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 439c3f5e433de41a0a6f4bcaf7ec0392ca16fa49
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="analyzing-performance-tools-data"></a>Analizar datos de herramientas de rendimiento
 Los informes de rendimiento de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] le permiten ver y analizar problemas de rendimiento de la aplicación. En esta sección se proporciona información general de los informes de rendimiento y las vistas que pueden utilizarse para examinar los datos de rendimiento.  
@@ -60,4 +43,6 @@ Los informes de rendimiento de las herramientas de generación de perfiles [!INC
  [Guardar y exportar datos de herramientas de rendimiento](../profiling/saving-and-exporting-performance-tools-data.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Explorador de rendimiento](../profiling/performance-explorer.md) [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+ [Explorador de rendimiento](../profiling/performance-explorer.md)  
+ [Generación de perfiles en Visual Studio](../profiling/index.md)  
+ [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

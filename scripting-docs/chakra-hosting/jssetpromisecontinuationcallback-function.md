@@ -1,23 +1,27 @@
 ---
-title: "Funci&#243;n JsSetPromiseContinuationCallback | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Función JsSetPromiseContinuationCallback | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 6ef0faf4-1500-4bd9-aeca-c208492af8ea
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c20b5c81bd34a44158a975f0c1aed88614e01022
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Funci&#243;n JsSetPromiseContinuationCallback
+# <a name="jssetpromisecontinuationcallback-function"></a>Función JsSetPromiseContinuationCallback
 Establece una función de devolución de llamada de continuación de compromiso que el contexto llama cuando una tarea se debe poner en cola para su posterior ejecución.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 STDAPI_(JsErrorCode) JsSetPromiseContinuationCallback(  
@@ -26,23 +30,23 @@ STDAPI_(JsErrorCode) JsSetPromiseContinuationCallback(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `promiseContinuationCallback`  
  La función de devolución de llamada que se establece.  
   
  `callbackState`  
  Estado proporcionado por el usuario que se pasará de nuevo a la devolución de llamada.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  El código `JsNoError` si la operación se realizó correctamente; en caso contrario, un código de error.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Requiere un contexto de script activo.  
   
  Esta API solo es compatible en modo perimetral.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

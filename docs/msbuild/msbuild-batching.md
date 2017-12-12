@@ -1,37 +1,38 @@
 ---
-title: "Procesamiento por lotes de MSBuild | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "procesar por lotes [MSBuild]"
-  - "MSBuild, procesar por lotes"
+title: Procesamiento por lotes de MSBuild | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching [MSBuild]
+- MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Procesamiento por lotes de MSBuild
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="msbuild-batching"></a>Procesamiento por lotes de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tiene la capacidad de dividir las listas de elementos en distintas categorías, o lotes, basándose en los metadatos de estos elementos, y luego ejecutar un destino o una tarea una vez con cada lote.  
   
-## Procesamiento por lotes de tareas  
- El procesamiento por lotes de tareas permite simplificar los archivos del proyecto al facilitar un modo de dividir las listas de elementos en diferentes lotes y pasar cada uno de ellos a una tarea por separado.  Esto significa que un archivo de proyecto sólo tiene que declarar una vez la tarea y sus atributos, aunque se pueda ejecutar varias veces.  
+## <a name="task-batching"></a>Procesamiento por lotes de tareas  
+ El procesamiento por lotes de tareas le permite simplificar los archivos del proyecto porque proporciona una manera de dividir las listas de elementos en lotes diferentes y pasar cada uno de estos lotes a una tarea por separado. Esto significa que un archivo de proyecto solo necesita que la tarea y sus atributos se declaren una vez, aunque se puede ejecutar varias veces.  
   
- Es posible especificar que se desea que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] realice el procesamiento por lotes con una tarea mediante la notación %\(*nombreDeMetadatosDeElemento*\) en uno de los atributos de la tarea.  En el ejemplo siguiente, se divide la lista de elementos `Example` en lotes basándose en el valor de los metadatos del elemento `Color`, y se pasa cada lote a la tarea `MyTask` por separado.  
+ Para especificar que quiere que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] realice el procesamiento por lotes en una tarea, debe utilizar la notación %(*ItemMetaDataName*) en uno de los atributos de la tarea. En el ejemplo siguiente, la lista de elementos `Example` se divide en lotes de acuerdo con el valor de los metadatos del elemento `Color` y pasa cada uno de los lotes a la tarea `MyTask` por separado.  
   
 > [!NOTE]
->  Si no se hace referencia a la lista de elementos en ninguna parte de los atributos de la tarea o si el nombre de los metadatos es ambiguo, se podrá usar la notación %\(*colecciónDeElementos.nombreDeMetadatosDeElemento*\) para que el valor de los metadatos de elementos tenga un nombre completo que se pueda utilizar en el procesamiento por lotes.  
+>  Si no hace referencia a la lista de elementos en ninguna otra parte de los atributos de la tarea, o si el nombre de los metadatos puede ser ambiguo, puede usar la notación %(*ItemCollection.ItemMetaDataName*) para calificar totalmente el valor de los metadatos del elemento que se utilizará para el procesamiento por lotes.  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -53,14 +54,14 @@ caps.handback.revision: 9
 </Project>  
 ```  
   
- Para obtener ejemplos sobre el procesamiento por lotes más concretos, vea [Metadatos de elementos en el procesamiento por lotes de tareas](../msbuild/item-metadata-in-task-batching.md).  
+ Para obtener ejemplos más específicos de procesamiento por lotes, consulte [Metadatos de elementos en el procesamiento por lotes de tareas](../msbuild/item-metadata-in-task-batching.md).  
   
-## Procesamiento por lotes de destinos  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] comprueba si las entradas y los resultados de un destino están actualizados antes de ejecutar el destino.  Si las entradas y los resultados están actualizados, se omite el destino.  Si una tarea incluida en un destino usa el procesamiento por lotes, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe determinar si las entradas y los resultados de cada lote de elementos están actualizados.  De lo contrario, el destino se ejecutará cada vez que se alcance.  
+## <a name="target-batching"></a>Procesamiento por lotes de destinos  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verifica si las entradas y las salidas de un destino están actualizadas antes de ejecutar el destino. Si las entradas y salidas están actualizadas, el destino se omite. Si una tarea dentro de un destino usa el procesamiento por lotes, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe determinar si las entradas y las salidas de cada lote de elementos están actualizadas. En caso contrario, el destino se ejecuta cada vez que se le llama.  
   
- En el ejemplo siguiente se muestra un elemento `Target` que contiene un atributo `Outputs` con la notación %\(*nombreDeMetadatosDeElemento*\).  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dividirá la lista de elementos `Example` en lotes basándose en los metadatos de elementos `Color` y analizará las marcas de tiempo de los archivos de salida para cada lote.  Si los resultados de un lote no están actualizados, se ejecutará el destino.  De lo contrario, se omitirá el destino.  
+ En el ejemplo siguiente se muestra un elemento `Target` que contiene un atributo `Outputs` con la notación %(*ItemMetaDataName*). [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dividirá la lista de elementos `Example` en lotes de acuerdo con los metadatos del elemento `Color` y analizará las marcas de tiempo de los archivos de salida para cada lote. Si las salidas de un lote no están actualizadas, se ejecuta el destino. En caso contrario, se omite el destino.  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -84,25 +85,25 @@ caps.handback.revision: 9
 </Project>  
 ```  
   
- Para obtener otro ejemplo de procesamiento por lotes de destinos, vea [Metadatos de elementos en procesamiento por lotes de destinos](../msbuild/item-metadata-in-target-batching.md).  
+ Para obtener otro ejemplo de procesamiento por lotes de destinos, consulte [Metadatos de elementos en el procesamiento por lotes de destinos](../msbuild/item-metadata-in-target-batching.md).  
   
-## Funciones de propiedad con metadatos  
- El procesamiento por lotes se puede controlar mediante funciones de propiedad que incluyen metadatos.  Por ejemplo,  
+## <a name="property-functions-using-metadata"></a>Funciones de propiedad que utilizan metadatos  
+ El procesamiento por lotes puede controlarse mediante funciones de propiedad que incluyen metadatos. Por ejemplo,  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
- usa <xref:System.IO.Path.Combine%2A> para combinar una ruta de acceso a la carpeta raíz con una ruta de acceso al elemento Compile.  
+ utiliza <xref:System.IO.Path.Combine%2A> para combinar una ruta de acceso de directorio raíz con una ruta de acceso de elemento de compilación.  
   
- Las funciones de propiedad no pueden aparecer en los valores de los metadatos.  Por ejemplo,  
+ Es posible que las funciones de propiedad no aparezcan en los valores de los metadatos.  Por ejemplo,  
   
  `%(Compile.FullPath.Substring(0,3))`  
   
  no se permite.  
   
- Para obtener más información acerca de las funciones de propiedad, vea [Funciones de propiedad](../msbuild/property-functions.md).  
+ Para obtener más información sobre las funciones de propiedad, consulte [Funciones de propiedad](../msbuild/property-functions.md).  
   
-## Vea también  
- [Elemento ItemMetadata \(MSBuild\)](../msbuild/itemmetadata-element-msbuild.md)   
+## <a name="see-also"></a>Vea también  
+ [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)

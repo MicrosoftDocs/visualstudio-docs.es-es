@@ -1,20 +1,18 @@
 ---
-title: "Personalización del IDE"
+title: "Personalización del IDE | Microsoft Docs"
 description: "Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este tema se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
+ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 514f758718105db366363cd1c9e69163a9872dc7
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
-#<a name="customizing-the-ide"></a>Personalización del IDE
+# <a name="customizing-the-ide"></a>Personalización del IDE
 
 Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este tema se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
 
@@ -131,4 +129,3 @@ Las pestañas del editor se pueden arrastrar fuera del área de documento para c
  ![Dos columnas en paralelo con pestañas adicionales](media/customizing-the-ide-sbs2.png)
 
 Para revertir a un único editor abierto, seleccione **Vista > Columnas del editor > 1 columna**.
-

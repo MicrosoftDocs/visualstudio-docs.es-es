@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,38 +12,22 @@ dev_langs:
 - VB
 - FSharp
 - C++
-helpviewer_keywords:
-- memory leaks, JavaScript example
+helpviewer_keywords: memory leaks, JavaScript example
 ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7e848a57962636a8ca346e809f3dadad675a7963
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar fugas de memoria (JavaScript)
-![Se aplica a Windows y Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Este tutorial te guía por el proceso de identificar y corregir un problema simple de memoria con el analizador de memoria de JavaScript. El analizador de memoria de JavaScript está disponible en Visual Studio para las aplicaciones de la Tienda Windows compiladas para Windows que usan JavaScript. En este escenario, crearás una aplicación que conserva incorrectamente elementos DOM en memoria en lugar de eliminarlos a la misma velocidad a la que se crearon.  
+ Este tutorial te guía por el proceso de identificar y corregir un problema simple de memoria con el analizador de memoria de JavaScript. El analizador de memoria de JavaScript está disponible en Visual Studio para las aplicaciones para UWP compiladas para Windows con JavaScript. En este escenario, crearás una aplicación que conserva incorrectamente elementos DOM en memoria en lugar de eliminarlos a la misma velocidad a la que se crearon.  
   
  Aunque la causa de la pérdida de memoria es muy específica en esta aplicación, los pasos que se muestran aquí indican un flujo de trabajo que suele ser eficaz para aislar los objetos con pérdida de memoria.  
   
@@ -153,13 +136,13 @@ ms.lasthandoff: 02/22/2017
 1.  En la barra de herramientas **Depurar** , en la lista **Iniciar depuración** , elige el destino de depuración del proyecto actualizado: los emuladores de Windows Phone o **Simulador**.  
   
     > [!TIP]
-    >  Para una aplicación de la Tienda Windows, también puedes elegir **Equipo local** o **Equipo remoto** en esta lista. Sin embargo, la ventaja de utilizar el emulador o simulador es que puede colocarlo junto a Visual Studio y cambiar fácilmente entre la aplicación en ejecución y el analizador de memoria de JavaScript. Para obtener más información, consulte [Ejecutar aplicaciones de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) y [Ejecutar aplicaciones de la Tienta Windows en una máquina remota](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+    >  Para una aplicación para UWP, también puede elegir **Equipo local** o **Equipo remoto** en esta lista. 
   
 2.  En el menú **Depurar** , elija **Performance Profiler...**(Generador de perfiles de rendimiento...).  
   
 3.  En **Herramientas disponibles**, elige **Memoria de JavaScript**e **Iniciar**.  
   
-     En este tutorial, asociarás el analizador de memoria al proyecto de inicio. Para obtener información sobre otras opciones, como adjuntar el analizador de memoria a una aplicación instalada, consulte [Memoria de JavaScript](../profiling/javascript-memory.md).  
+     En este tutorial, asociarás el analizador de memoria al proyecto de inicio. Para obtener información sobre otras opciones, como adjuntar el analizador de memoria a una aplicación instalada, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
   
      Al iniciar el analizador de memoria, puede aparecer un Control de cuentas de usuario que solicite tu permiso para ejecutar VsEtwCollector.exe. Elija **Sí**.  
   
@@ -174,7 +157,7 @@ ms.lasthandoff: 02/22/2017
   
      El analizador de memoria de JavaScript muestra información en una nueva pestaña en Visual Studio.  
   
-     El gráfico de memoria de esta vista de resumen muestra el uso de memoria de proceso a lo largo del tiempo. La vista también proporciona comandos como **Tomar instantánea de montón**. Una instantánea proporciona información detallada sobre el uso de memoria en un momento determinado. Para obtener más información, consulte [Memoria de JavaScript](../profiling/javascript-memory.md).  
+     El gráfico de memoria de esta vista de resumen muestra el uso de memoria de proceso a lo largo del tiempo. La vista también proporciona comandos como **Tomar instantánea de montón**. Una instantánea proporciona información detallada sobre el uso de memoria en un momento determinado. Para obtener más información, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
   
 6.  Elige **Tomar instantánea de montón**.  
   
@@ -227,7 +210,7 @@ ms.lasthandoff: 02/22/2017
   
 15. Abre el objeto HTMLDivElement en la parte superior del árbol de objetos, mostrado aquí.  
   
-     ![Vista de diferencias del recuento de objetos del montón](~/profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![Vista de diferencias del recuento de objetos del montón](../profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Esta vista muestra información útil sobre la pérdida de memoria, como la siguiente:  
   
@@ -240,9 +223,9 @@ ms.lasthandoff: 02/22/2017
     > [!TIP]
     >  A veces, la ubicación de un objeto con respecto al objeto `Global` puede ayudar a identificar ese objeto. Para ello, abre el menú contextual del identificador y elige **Mostrar en vista de raíces**.  
   
-##  <a name="a-namefixingmemorya-fixing-the-memory-issue"></a><a name="FixingMemory"></a> Corregir el problema de memoria  
+##  <a name="FixingMemory"></a> Corregir el problema de memoria  
   
-1.  Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()`.  
+1.  Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()` .  
   
     ```javascript  
     function initialize() {  

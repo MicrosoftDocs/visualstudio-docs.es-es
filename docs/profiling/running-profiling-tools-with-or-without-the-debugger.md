@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
+ms.openlocfilehash: 11ebadac433076a6ab54afce59584b1f0966df68
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
-ms.openlocfilehash: 30ac6d277edf54ac56294ea0639a471a22dc00da
-ms.contentlocale: es-es
-ms.lasthandoff: 08/07/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (por ejemplo, **Uso de la CPU** y **Uso de la memoria**) se pueden ejecutar con o sin el depurador. Las herramientas de rendimiento sin depurador están diseñadas para ejecutarse en las configuraciones de la versión, mientras que las herramientas integradas en el depurador están diseñadas para ejecutarse en las configuraciones de depuración.  
@@ -124,7 +122,7 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
  ![Especificar la dirección URL que se mostrará en Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
- Ejecutar una sesión de diagnóstico en un equipo remoto o una tableta requiere instalar en el destino remoto las herramientas remotas de Visual Studio. Para aplicaciones de escritorio, consulte [Depuración remota](../debugger/remote-debugging.md).  Para aplicaciones universales de Windows, consulte [Ejecutar aplicaciones de la Tienda Windows de ejecución en una máquina remota](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Ejecutar una sesión de diagnóstico en un equipo remoto o una tableta requiere instalar en el destino remoto las herramientas remotas de Visual Studio. Para aplicaciones de escritorio, consulte [Depuración remota](../debugger/remote-debugging.md).  Para aplicaciones universales de Windows, vea [Ejecutar aplicaciones para UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Entradas de blog y artículos de MSDN del equipo de desarrollo de diagnóstico  
  [MSDN Magazine: Analizar el rendimiento durante la depuración en Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
@@ -142,4 +140,3 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
  [Ventana del depurador de Herramientas de diagnóstico en Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [IntelliTrace en Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - Profiling Tools,JavaScript
 - web site performance profiling
 ms.assetid: 37d02aad-ca4d-4eb0-bf66-ca3ecef31fbe
-caps.latest.revision: 27
+caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 6c394dfcf1c0df0cb7d006592b3dc386da328876
-ms.openlocfilehash: 40c90059930b16e081d7d46a24c1b93bdc34f98a
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 8e33605b75dfe80bf755081692bc8a4991def801
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Cómo: Generar perfiles de código de JavaScript en páginas web
 Las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pueden recopilar datos de rendimiento del código JavaScript que se ejecuta en un aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], una página web arbitraria o una aplicación JavaScript usando el método de generación de perfiles de instrumentación.  
@@ -48,13 +32,13 @@ Las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality
 -   Internet Explorer 8 o posterior.  
   
 > [!WARNING]
->  Para generar perfiles de JavaScript en aplicaciones de la Tienda Windows, consulte [Memoria de JavaScript](../profiling/javascript-memory.md) 
+>  Para generar perfiles de JavaScript en aplicaciones para UWP, vea [Memoria de JavaScript](../profiling/javascript-memory.md). 
   
  Puede usar el Asistente para generación de perfiles para crear una sesión de rendimiento. Especifique el método de instrumentación y, después, especifique la opción de generación de perfiles de JavaScript de la página Instrumentación del cuadro de diálogo de propiedades de la sesión de rendimiento.  
   
  Cuando se especifica la generación de perfiles de JavaScript, se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se ejecuta en el servidor.  
   
--   Para una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se ejecuta en el servidor.  
+-   Para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , se generan los perfiles del código JavaScript que se ejecuta en el explorador y del código [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se ejecuta en el servidor.  
   
 -   Para una página web arbitraria, se genera el perfil del código JavaScript que se ejecuta en el explorador.  
   

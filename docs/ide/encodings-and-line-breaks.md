@@ -1,15 +1,13 @@
 ---
-title: "Codificaciones y saltos de línea | Microsoft Docs"
+title: "Caracteres de codificación y salto de línea de Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.Encoding
+f1_keywords: vs.Encoding
 helpviewer_keywords:
 - line breaks
 - encoding
@@ -18,40 +16,20 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 34c400c280096acb7e0ce272fa717cbc2f8f0d8a
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: b6afbc9ca8f93dcb0313c70a9d1e41579a6bf31f
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="encodings-and-line-breaks"></a>Codificaciones y saltos de línea
-En Visual Studio puede usar la configuración **Opciones avanzadas para guardar/de archivo** para determinar el tipo de caracteres de salto de línea que quiere. También puede cambiar la codificación de un archivo con las mismas opciones.  
+Los siguientes caracteres se interpretan como saltos de línea en Visual Studio:  
   
-> [!NOTE]
->  Si tiene tipos determinados de opciones de desarrollo (Visual Basic, F#, desarrollo de Web), puede que no vea **Opciones avanzadas para guardar** en el menú. Para cambiar su configuración (por ejemplo, a General), abra **Herramientas / Importar y exportar configuraciones**. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- En Visual Studio, los siguientes caracteres se interpretan como saltos de línea:  
-  
--   CRLF: Retorno de carro + avance de línea, caracteres Unicode 000D + 000A  
+-   CR LF: Retorno de carro + avance de línea, caracteres Unicode 000D + 000A  
   
 -   LF: Avance de línea, carácter Unicode 000A  
   
@@ -61,6 +39,18 @@ En Visual Studio puede usar la configuración **Opciones avanzadas para guardar/
   
 -   PS: Separador de párrafo, carácter Unicode 2029  
   
- El texto que se copia de otras aplicaciones mantiene la codificación original y los caracteres de salto de línea. Por ejemplo, cuando copia texto desde el Bloc de notas y lo pega en un archivo de texto en Visual Studio, el texto tiene la misma configuración que tenía en el Bloc de notas.  
+El texto que se copia de otras aplicaciones mantiene la codificación original y los caracteres de salto de línea. Por ejemplo, cuando copia texto desde el Bloc de notas y lo pega en un archivo de texto en Visual Studio, el texto tiene la misma configuración que tenía en el Bloc de notas.  
   
- Cuando abre un archivo que tiene caracteres de salto de línea diferentes, puede que vea un cuadro de diálogo que le pregunta si los caracteres de salto de línea incoherentes deben normalizarse y qué tipo de salto de línea quiere.
+Cuando abre un archivo que tiene caracteres de salto de línea diferentes, puede que vea un cuadro de diálogo que le pregunta si los caracteres de salto de línea incoherentes deben normalizarse y qué tipo de salto de línea quiere.
+
+Puede usar el cuadro de diálogo **Archivo**, **Opciones avanzadas para guardar** para determinar el tipo de caracteres de salto de línea que quiere. También puede cambiar la codificación de un archivo con las mismas opciones.
+
+![Cuadro de diálogo Opciones avanzadas para guardar](media/line_endings.png)
+  
+> [!NOTE]
+>  Si no ve el cuadro de diálogo **Opciones avanzadas para guardar** en el menú **Archivo**, puede agregarlo. Elija **Herramientas**, **Personalizar…** y, después, elija la pestaña **Comandos**. En la lista desplegable **Barra de menús**, elija **Archivo** y seleccione el botón **Agregar comando…** En el cuadro de diálogo **Agregar comando**, en **Categorías**, elija **Archivo** y, en la lista **Comandos**, seleccione **Opciones avanzadas para guardar…** Seleccione **Aceptar** y después elija el botón **Bajar** para mover el comando a cualquier lugar del menú. Seleccione **Cerrar** para cerrar el cuadro de diálogo **Personalizar**. Para obtener más información, vea [Personalizar un menú o una barra de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+
+Para tener acceso al cuadro de diálogo **Opciones avanzadas para guardar**, también puede elegir **Archivo**, **Guardar \<archivo\> como…** En el cuadro de diálogo **Guardar archivo como**, seleccione el triángulo de lista desplegable junto al botón **Guardar** y elija **Guardar con codificación…**
+
+## <a name="see-also"></a>Vea también
+[Escribir código en el editor](../ide/writing-code-in-the-code-and-text-editor.md)

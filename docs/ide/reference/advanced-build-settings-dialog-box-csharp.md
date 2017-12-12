@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 06/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- cs.AdvancedBuildSettings
-helpviewer_keywords:
-- Build options [C#], advanced
+f1_keywords: cs.AdvancedBuildSettings
+helpviewer_keywords: Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b7b29ffadcb069b6c918dfbe89f0ae49d0da172a
-ms.openlocfilehash: a281313904bb8881d2e96065a024447d151cddbd
-ms.contentlocale: es-es
-ms.lasthandoff: 06/20/2017
-
+ms.openlocfilehash: c7df850e46f8f5d81b9127a9885128452900b84b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Configuración de compilación avanzada (Cuadro de diálogo, C#)
 
@@ -46,8 +28,7 @@ Use el cuadro de diálogo **Configuración de compilación avanzada** del **Dise
 
  Las opciones siguientes le permiten establecer la configuración avanzada general.
 
- **Versión de lenguaje**
- Especifica la versión del lenguaje que se va a usar. El conjunto de características es diferente en cada versión, por lo que esta opción se puede usar para forzar al compilador a que permita solo un subconjunto de las características implementadas, o para habilitar solo las características compatibles con un estándar existente. Esta configuración tiene las siguientes opciones:
+ **Versión de lenguaje** Especifica la versión del lenguaje que se va a usar. El conjunto de características es diferente en cada versión, por lo que esta opción se puede usar para forzar al compilador a que permita solo un subconjunto de las características implementadas, o para habilitar solo las características compatibles con un estándar existente. Esta configuración tiene las siguientes opciones:
 
  - **default**
 
@@ -72,8 +53,7 @@ Use el cuadro de diálogo **Configuración de compilación avanzada** del **Dise
 
  Las opciones siguientes le permiten especificar opciones de salida avanzadas.
 
- **Información de depuración**
- Especifica el tipo de información de depuración generado por el compilador. Para obtener información sobre cómo configurar el rendimiento de depuración de una aplicación, consulte [Facilitar la depuración de una imagen](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Esta configuración tiene las siguientes opciones:
+ **Información de depuración** Especifica el tipo de información de depuración generada por el compilador. Para obtener información sobre cómo configurar el rendimiento de depuración de una aplicación, consulte [Facilitar la depuración de una imagen](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Esta configuración tiene las siguientes opciones:
 
 - **none**
 
@@ -102,6 +82,4 @@ Para obtener más información, consulte [/debug (Opciones del compilador de C#)
 
 ## <a name="see-also"></a>Vea también
 
- [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
- [Compilar (Página, Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
+ [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index) [Página Compilar, Diseñador de proyectos (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,37 +13,21 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance, JavaScript [Windows Store apps]
-- performance tools, JavaScript [Windows Store apps]
+- performance, JavaScript [UWP apps]
+- performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
-- profiler, JavaScript [Windows Store apps]
+- profiler, JavaScript [UWP apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.  
@@ -58,7 +41,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en las aplica
 -   Las actualizaciones visuales son menos frecuentes de lo esperado. Esto ocurre si el subproceso de interfaz de usuario está demasiado ocupado para mantener una velocidad de fotogramas suave. Por ejemplo, si el subproceso de interfaz de usuario está ocupado, es posible que se pierdan fotogramas. Ciertos trabajos no relacionados con el subproceso de interfaz de usuario, como las solicitudes de red, la descodificación de imágenes y las operaciones de pintura, también pueden limitar la frecuencia de las actualizaciones visuales. (No todas las operaciones de pintura se realizan en el subproceso de interfaz de usuario).  
   
 ##  <a name="RunningProfiler"></a> Ejecutar la herramienta de capacidad de respuesta de la interfaz de usuario HTML  
- Puede usar la herramienta de capacidad de respuesta de la interfaz de usuario HTML si tiene una aplicación universal de Windows o de la Tienda Windows abierta en Visual Studio o instalada en un equipo que ejecuta Windows 8 o una versión posterior.  
+ Puede usar la herramienta Capacidad de respuesta de la IU de HTML si tiene una aplicación para UWP o de Windows 8.1 abierta en Visual Studio o instalada en un equipo que ejecuta Windows 8 o una versión posterior.  
   
 1.  Si estás ejecutando la aplicación desde Visual Studio, en la barra de herramientas **Estándar** , en la lista **Iniciar depuración** , elige un destino de implementación, como uno de los emuladores de Windows Phone, **Equipo local**, **Simulador**o **Equipo remoto**.  
   
@@ -72,7 +55,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en las aplica
   
     -   **Proyecto de inicio**. Elige esta opción para analizar el proyecto de inicio actual. Si estás ejecutando la aplicación en un equipo o dispositivo remoto, tienes que usar esta opción, que es el valor predeterminado.  
   
-    -   **Aplicación en ejecución**. Elige esta opción para seleccionar una aplicación de la Tienda Windows en una lista de aplicaciones en ejecución. No puedes utilizar esta opción si estás ejecutando la aplicación en un equipo o dispositivo remoto.  
+    -   **Aplicación en ejecución**. Elija esta opción para seleccionar una aplicación para UWP en una lista de aplicaciones en ejecución. No puedes utilizar esta opción si estás ejecutando la aplicación en un equipo o dispositivo remoto.  
   
          Puedes usar esta opción para analizar el rendimiento de las aplicaciones que se ejecutan en el equipo cuando no tienes acceso al código fuente.  
   
@@ -317,7 +300,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> Agrupar eventos por fotograma  
  Puede agrupar eventos que aparecen en la vista de detalles de la escala de tiempo en fotogramas individuales. Estos eventos de fotogramas son eventos generados por la herramienta y representan contenedores de eventos de nivel superior para todo el trabajo del subproceso de interfaz de usuario que tiene lugar entre eventos de pintar. Para habilitar esta vista, seleccione **Agrupar eventos de nivel superior por fotogramas**.  
   
- ![Agrupar eventos de nivel superior por fotogramas](~/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Agrupar eventos de nivel superior por fotogramas](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Al agrupar eventos por fotogramas, cada evento de nivel superior de la vista de detalles de la escala de tiempo representa un fotograma.  
   
@@ -375,7 +358,7 @@ if (performance.mark && performance.measure) {
   
 -   Vea [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el generador de perfiles de capacidad de respuesta de la interfaz de usuario.  
   
--   Lee las sugerencias para mejorar el rendimiento para las aplicaciones de la Tienda Windows compiladas para Windows que usan JavaScript. Para obtener más información, consulte [Procedimientos recomendados de rendimiento para las aplicaciones de la Tienda Windows con JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+-   Lea los consejos de rendimiento para las aplicaciones para UWP compiladas para Windows con JavaScript. Para más información, vea [Procedimientos recomendados de rendimiento para las aplicaciones para UWP con JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
 -   Para obtener información sobre el modelo y rendimiento de ejecución de código uniproceso, consulte [Ejecución de código](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   

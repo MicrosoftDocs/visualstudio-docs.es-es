@@ -4,8 +4,7 @@ description: "Más información sobre cómo crear un archivo de respuesta JSON q
 ms.date: 08/14/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,16 +13,14 @@ helpviewer_keywords:
 - installation
 - command-line
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: f8103f1d160370853e461288010e434095c776c2
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 5c8aaf24a1952847c593d5eb70f7c94208310174
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
-
 # <a name="how-to-define-settings-in-a-response-file"></a>Definición de la configuración en un archivo de respuesta
 Los administradores que implementan Visual Studio pueden especificar un archivo de respuesta con el parámetro `--in`, como en el ejemplo siguiente:
 
@@ -37,7 +34,7 @@ Los parámetros que se especifican en la línea de comandos invalidan la configu
 
 # <a name="setting-a-default-configuration-for-visual-studio"></a>Establecimiento de una configuración predeterminada para Visual Studio
 
-Si creó una caché de diseño de red con `--layout`, se crea un archivo `response.json` inicial en el diseño. Si crea un diseño parcial, este archivo de respuesta incluye las cargas de trabajo y los idiomas que se han incluido en el diseño.  Al ejecutar la instalación desde este diseño se usa automáticamente este archivo response.json, que selecciona las cargas de trabajo y los componentes incluidos en el diseño.  Los usuarios pueden seleccionar o anular la selección de cualquier carga de trabajo en la interfaz de usuario de instalación antes de instalar Visual Studio. 
+Si creó una caché de diseño de red con `--layout`, se crea un archivo `response.json` inicial en el diseño. Si crea un diseño parcial, este archivo de respuesta incluye las cargas de trabajo y los idiomas que se han incluido en el diseño.  Al ejecutar la instalación desde este diseño se usa automáticamente este archivo response.json, que selecciona las cargas de trabajo y los componentes incluidos en el diseño.  Los usuarios pueden seleccionar o anular la selección de cualquier carga de trabajo en la interfaz de usuario de instalación antes de instalar Visual Studio.
 
 Los administradores que crean un diseño pueden modificar el archivo `response.json` en el diseño para controlar la configuración predeterminada que ven sus usuarios al instalar Visual Studio a partir del diseño.  Por ejemplo, si un administrador quiere que se instalen de manera predeterminada las cargas de trabajo y los componentes específicos, puede configurar un archivo `response.json` para agregarlos.
 
@@ -59,7 +56,7 @@ El archivo `response.json` base de un diseño debe tener un aspecto similar al e
   "productId": "Microsoft.VisualStudio.Product.Enterprise"
 }
 ```
-Cuando crea o actualiza un diseño, también se crea un archivo response.template.json.  Este archivo contiene todos los identificadores de idioma, componentes y carga de trabajo que pueden usarse.  Este archivo se proporciona como una plantilla para todo lo que podría incluirse en una instalación personalizada.  Los administradores pueden usar este archivo como un punto inicial para un archivo de respuesta personalizado.  Simplemente quite los identificadores de lo que no quiere instalar y guárdelo en su propio archivo de respuesta.  No personalice el archivo response.template.json o sus cambios se perderán cuando se actualice el diseño. 
+Cuando crea o actualiza un diseño, también se crea un archivo response.template.json.  Este archivo contiene todos los identificadores de idioma, componentes y carga de trabajo que pueden usarse.  Este archivo se proporciona como una plantilla para todo lo que podría incluirse en una instalación personalizada.  Los administradores pueden usar este archivo como un punto inicial para un archivo de respuesta personalizado.  Simplemente quite los identificadores de lo que no quiere instalar y guárdelo en su propio archivo de respuesta.  No personalice el archivo response.template.json o sus cambios se perderán cuando se actualice el diseño.
 
 ## <a name="example-layout-response-file-content"></a>Ejemplo de contenido del archivo de respuesta de diseño
 En el siguiente ejemplo se instala Visual Studio Enterprise con seis cargas de trabajo y componentes comunes, con los idiomas inglés y francés para la interfaz de usuario. Puede usar este ejemplo como una plantilla; simplemente cambie las cargas de trabajo y los componentes que quiere instalar:
@@ -94,6 +91,9 @@ En el siguiente ejemplo se instala Visual Studio Enterprise con seis cargas de t
     ]
 }
 ```
+
+## <a name="get-support"></a>Obtener soporte técnico
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, vea sugerencias para la solución de problemas en la página [Solucionar problemas de errores de instalación y actualización de Visual Studio 2017](troubleshooting-installation-issues.md). Asimismo, puede informarnos de problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) del IDE de Visual Studio o compartir una sugerencia con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579). Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), hacer preguntas y encontrar respuestas. También puede comunicarse con nosotros y con otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la Comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio) (requiere una cuenta de [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>Vea también
 * [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md)
-

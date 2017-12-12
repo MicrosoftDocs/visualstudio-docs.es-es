@@ -1,42 +1,25 @@
 ---
-title: "Analizar la calidad del código de C++ de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio | Microsoft Docs"
+title: "Analizar la calidad del código de C++ de las aplicaciones para UWP mediante el análisis de código estático de Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.codeanalysis.propertypages.native.express
+f1_keywords: vs.codeanalysis.propertypages.native.express
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pt-br
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: c1e31415cf2f51c06650610fde945037ebe0191f
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: c4c49f910615e1e181fe66feab3dce5bb3c90002
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de C++ de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio
-![Se aplica a Windows y Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="analyze-c-code-quality-of-uwp-apps-using-visual-studio-static-code-analysis"></a>Análisis de la calidad del código de C++ de las aplicaciones para UWP con análisis de código estático de Visual Studio
+![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  La herramienta de análisis de código de las versiones de Visual Studio Express Edition examina el código para detectar una serie de problemas comunes e infracciones de las prácticas recomendadas de programación. Las advertencias del análisis de código son distintas de los errores y advertencias del compilador, porque el análisis de código busca patrones de código concretos que, aunque son válidos, pueden crear problemas para ti o para otros usuarios del código. El análisis de código también puede encontrar defectos del código que son difíciles de detectar al hacer las pruebas. Ejecutar la herramienta de análisis de código a intervalos regulares durante el proceso de desarrollo puede mejorar la calidad de la aplicación final.  
   
@@ -78,7 +61,7 @@ ms.lasthandoff: 04/04/2017
   
  Cuando se expande una advertencia, las líneas de código que han causado la advertencia se resaltan en el editor de código de Visual Studio.  
   
- ![Código fuente resaltado](~/test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
+ ![Código fuente resaltado](../test/media/ca_cpp_sourceline.png "CA_CPP_SourceLine")  
   
  Cuando haya entendido el problema, podrá resolverlo en el código. A continuación vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en la ventana de análisis de código y que la corrección no genera nuevas advertencias.  
   
@@ -244,4 +227,3 @@ ms.lasthandoff: 04/04/2017
 |[C28305](../code-quality/c28305.md)|Se descubrió un error al analizar un token.|  
 |[C28350](../code-quality/c28350.md)|La anotación describe una situación no aplicable de forma condicional.|  
 |[C28351](../code-quality/c28351.md)|La anotación describe dónde no se puede usar un valor dinámico (una variable) en la condición.|
-

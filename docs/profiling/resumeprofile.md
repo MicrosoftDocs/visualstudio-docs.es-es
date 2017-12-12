@@ -1,28 +1,28 @@
 ---
-title: "ResumeProfile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ResumeProfile"
+title: ResumeProfile | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: ResumeProfile
 ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb0f988ce0d1b266fd930909f6e5d6462929e8f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# ResumeProfile
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El método `ResumeProfile` reduce el contador Suspend\/Resume para el nivel de generación de perfiles especificado.  
+# <a name="resumeprofile"></a>ResumeProfile
+El método `ResumeProfile` reduce el contador de suspensiones y reanudaciones para el nivel de generación de perfiles especificado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(  
@@ -30,49 +30,49 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
                        unsigned int dwId);  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `Level`  
   
- Indica el nivel de perfil al que se puede aplicar la recolección de datos de rendimiento.  Los enumeradores **PROFILE\_CONTROL\_LEVEL** siguientes se pueden utilizar para indicar uno de los tres niveles a los que se puede aplicar la recolección de datos de rendimiento:  
+ Indica el nivel de perfil al que se puede aplicar la recopilación de datos de rendimiento. Los enumeradores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
-|Enumerator|Descripción|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
-|PROFILE\_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos de la ejecución de generación de perfiles.|  
-|PROFILE\_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
-|PROFILE\_THREADLEVEL|La configuración de nivel de subprocesos de la generación de perfiles afecta al subproceso especificado.|  
+|PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|  
+|PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
+|PROFILE_THREADLEVEL|La configuración de nivel de generación de perfiles de subproceso afecta al subproceso especificado.|  
   
  `dwId`  
   
- Identificador del proceso o del subproceso generado por el sistema.  
+ Identificador del proceso o subproceso generado por el sistema.  
   
-## Valor de propiedad y valor devuelto  
- La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE\_COMMAND\_STATUS**.  El valor devuelto puede ser cualquiera de los siguientes:  
+## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
+ La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerator|Descripción|  
+|Enumerador|Descripción|  
 |----------------|-----------------|  
-|PROFILE\_ERROR\_ID\_NOEXIST|El Id. del elemento de generación de perfiles no existe.|  
-|PROFILE\_ERROR\_LEVEL\_NOEXIST|El nivel de generación de perfiles especificado no existe.|  
-|PROFILE\_ERROR\_MODE\_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función.|  
-|PROFILE\_ERROR\_NOT\_YET\_IMPLEMENTED|Todavía no se ha implementado la llamada a la función de generación de perfiles, el nivel de generación de perfiles o la combinación de llamada y nivel.|  
-|PROFILE\_OK|La llamada se realizó correctamente.|  
+|PROFILE_ERROR_ID_NOEXIST|El identificador del elemento de generación de perfiles no existe.|  
+|PROFILE_ERROR_LEVEL_NOEXIST|El nivel de generación de perfiles especificado no existe.|  
+|PROFILE_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función.|  
+|PROFILE_ERROR_NOT_YET_IMPLEMENTED|Todavía no se ha implementado la llamada a la función de generación de perfiles, el nivel de generación de perfiles o la combinación de llamada y nivel.|  
+|PROFILE_OK|La llamada se realizó correctamente.|  
   
-## Comentarios  
- El valor inicial del contador Suspend\/Resume es 0.  Cada llamada a SuspendProfile suma 1 a este contador, cada llamada a ResumeProfile le resta 1.  
+## <a name="remarks"></a>Comentarios  
+ El valor inicial del contador de suspensiones y reanudaciones es 0. Cada llamada a SuspendProfile suma 1 al recuento de suspensiones y reanudaciones; cada llamada a ResumeProfile resta 1.  
   
- Cuando el valor del contador Suspend\/Resume es mayor que 0, el estado de Suspend\/Resume del nivel es OFF.  Cuando el recuento es menor o igual que 0, el estado de Suspend\/Resume es ON.  
+ Cuando el recuento de suspensiones y reanudaciones es mayor que 0, el estado de suspensión y reanudación para el nivel es OFF. Cuando el recuento es menor o igual que 0, el estado de suspensión y reanudación es ON.  
   
- Cuando los estados de Start\/Stop y de Suspend\/Resume son ON, el estado de generación de perfiles del nivel es ON.  Para que se generen los perfiles de un subproceso los estados del subproceso en los niveles global, de proceso y de subproceso deben ser ON.  
+ Cuando el estado de inicios y paradas, y el estado de suspensión y reanudación son los dos ON, el estado de generación de perfiles para el nivel es ON. Para que se pueda generar el perfil de un subproceso, los estados de nivel global, de proceso y de subproceso para el subproceso deben ser todos ON.  
   
-## Equivalente en .NET Framework  
+## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
   
-## Información de la función  
- Encabezado: Declarado en VSPerf.h  
+## <a name="function-information"></a>Información de la función  
+ Encabezado: declarado en VSPerf.h  
   
  Biblioteca de importación: VSPerf.lib  
   
-## Ejemplo  
- En el siguiente ejemplo se ilustra la función ResumeProfile.  En el ejemplo se asume que se ha realizado una llamada al método SuspendProfile para el mismo subproceso o proceso identificado por [PROFILE\_CURRENTID](../profiling/profile-currentid.md).  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se muestra el uso de la función ResumeProfile. En el ejemplo se da por supuesto que se ha realizado una llamada al método SuspendProfile para el mismo subproceso o proceso identificado por [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
   
 ```  
 void ExerciseResumeProfile()  
@@ -104,5 +104,5 @@ void ExerciseResumeProfile()
 }  
 ```  
   
-## Vea también  
- [Referencia a la API del generador de perfiles de Visual Studio \(Nativa\)](../profiling/visual-studio-profiler-api-reference-native.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia a la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)

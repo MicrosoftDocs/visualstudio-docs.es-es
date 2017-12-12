@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 3ebe300aa4e2a7314b55f8418bcfa0ad9fafdc59
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imagen
 En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y utilizar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:  
@@ -65,7 +49,7 @@ Imagen que creará en este tutorial
 >   
 >  Para ver el código de Visual Basic, pulse la pestaña **VB** que se encuentra en la parte superior de los bloques de código; para ver el código de Visual C#, pulse la pestaña **C#**. Si quiere obtener más información sobre Visual C++, vea [Introducción](../ide/getting-started-with-cpp-in-visual-studio.md) y el [Tutorial del lenguaje C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
->  Si quiere obtener más información sobre cómo escribir aplicaciones en Visual C# o Visual Basic para la Tienda Windows, vea [Crear la primera aplicación de la Tienda Windows con C# o Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Para obtener información sobre cómo crear aplicaciones JavaScript para la Tienda Windows, vea [Crear la primera aplicación de la Tienda Windows con JavaScript](http://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
+>  Si le interesa aprender a escribir aplicaciones para UWP de Visual C# o Visual Basic, vea [Crear aplicaciones para UWP](https://developer.microsoft.com/windows/apps).
   
 ## <a name="related-topics"></a>Temas relacionados  
   

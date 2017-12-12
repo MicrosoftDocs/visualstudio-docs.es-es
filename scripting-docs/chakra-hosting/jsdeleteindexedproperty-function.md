@@ -1,27 +1,29 @@
 ---
-title: "JsDeleteIndexedProperty (Funci&#243;n) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsDeleteIndexedProperty"
-helpviewer_keywords: 
-  - "JsDeleteIndexedProperty (función)"
+title: "Función JsDeleteIndexedProperty | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsDeleteIndexedProperty
+helpviewer_keywords: JsDeleteIndexedProperty function
 ms.assetid: cc876839-2ecd-41a8-82d0-c19b3de944e3
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e1cdf122cd721ddd50d67e1575c8dbb35bae4f70
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# JsDeleteIndexedProperty (Funci&#243;n)
+# <a name="jsdeleteindexedproperty-function"></a>JsDeleteIndexedProperty (Función)
 Elimina el valor en el índice especificado de un objeto.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 STDAPI_(JsErrorCode) JsDeleteIndexedProperty(  
@@ -30,21 +32,21 @@ STDAPI_(JsErrorCode) JsDeleteIndexedProperty(
 );  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `object`  
  El objeto en el que se va a trabajar.  
   
  `index`  
  El índice que se va a eliminar.  
   
-## Valor devuelto  
+## <a name="return-value"></a>Valor devuelto  
  El código `JsNoError` si la operación se realizó correctamente; en caso contrario, un código de error.  
   
-## Comentarios  
+## <a name="remarks"></a>Comentarios  
  Requiere un contexto de script activo.  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

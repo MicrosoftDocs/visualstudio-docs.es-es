@@ -1,53 +1,53 @@
 ---
-title: "/Edit (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/Edit (modificador para Devenv)"
-  - "Devenv, /edit (modificador)"
+title: -Edit (devenv.exe) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Devenv, /edit switch
+- /Edit Devenv swtich
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
-caps.latest.revision: 6
-caps.handback.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 05a43cbe880244da1abbb117d23fd928c60da9b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# /Edit (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 Abre el archivo especificado en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 Devenv /edit [file1[ file2]]  
 ```  
   
-## Argumentos  
+## <a name="arguments"></a>Argumentos  
  `file1`  
- Opcional.  El archivo que se abre en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  Si no existe ninguna instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se crea una nueva con un diseño de ventanas simplificado y se abre `file1` en la nueva instancia.  
+ Opcional. El archivo que se abre en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Si no existe ninguna instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se crea una instancia con un diseño de ventanas simplificado y se abre `file1` en la nueva instancia.  
   
  `file2`  
- Opcional.  Uno o varios archivos adicionales que se abren en la instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Opcional. Uno o más archivos adicionales que se van a abrir en la instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Comentarios  
- Si no se especifica un archivo y existe una instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], la instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recibe el foco.  Si no se especifica un archivo y no existe ninguna instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se crea una instancia nueva de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con un diseño de ventanas simplificado.  
+## <a name="remarks"></a>Comentarios  
+ Si no se especifica ningún archivo y ya hay una instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], la instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recibe el foco. Si no se especifica ningún archivo y no hay ninguna instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], se crea una instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] con un diseño de ventanas simplificado.  
   
  Si la instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está en un estado modal, por ejemplo, si el cuadro de diálogo [Opciones](../../ide/reference/options-dialog-box-visual-studio.md) está abierto, el archivo se abrirá en la instancia existente cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] salga del estado modal.  
   
-## Ejemplo  
- Este ejemplo abre el archivo `MyFile.cs` en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o abre el archivo en una nueva instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] si aún no existe una.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se abre el archivo `MyFile.cs` en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o se abre el archivo en una nueva instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] si todavía no hay ninguna.  
   
 ```  
 devenv /edit MyFile.cs  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)

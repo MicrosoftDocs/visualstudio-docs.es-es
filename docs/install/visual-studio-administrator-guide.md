@@ -5,8 +5,7 @@ ms.custom:
 ms.date: 05/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,27 +16,11 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
-ms.openlocfilehash: 220b41f44cdc91ea84bf08b8eec8181dc01c25c7
-ms.contentlocale: es-es
-ms.lasthandoff: 05/15/2017
-
+ms.openlocfilehash: 5d0f3e97f403bb7af144fad9e97afc932cdc6e83
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guía del administrador de Visual Studio 2017
 
@@ -72,13 +55,16 @@ Tenemos varias herramientas disponibles para ayudarle a [detectar y administrar 
 > [!TIP]
 > Además de la documentación de la guía del administrador, una buena fuente de información sobre la instalación de Visual Studio 2017 es el [blog de Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
 
+## <a name="get-support"></a>Obtener soporte técnico
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, vea sugerencias para la solución de problemas en la página [Solucionar problemas de errores de instalación y actualización de Visual Studio 2017](troubleshooting-installation-issues.md). Además, puede informarnos de los problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) del IDE de Visual Studio o compartir una sugerencia con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579). Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas. También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la Comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio) (requiere una cuenta de [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>Vea también
 * [Instalación de Visual Studio 2017](install-visual-studio.md)
 * [Usar parámetros de la línea de comandos para instalar Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
   * [Ejemplos de parámetros de línea de comandos](command-line-parameter-examples.md)
   * [Carga de trabajo y referencia de id. de componente](workload-and-component-ids.md)
 * [Crear una instalación basada en red de Visual Studio](create-a-network-installation-of-visual-studio.md)
-  * [Consideraciones especiales para instalar Visual Studio en un entorno sin conexión](install-visual-studio-in-offline-environment.md)
+  * [Instalar los certificados necesarios para la instalación sin conexión de Visual Studio](install-certificates-for-visual-studio-offline.md)
 * [Automatizar Visual Studio con un archivo de respuesta](automated-installation-with-response-file.md)
 * [Aplicar automáticamente las claves de producto durante la implementación de Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
 * [Establecer valores predeterminados para implementaciones empresariales de Visual Studio](set-defaults-for-enterprise-deployments.md)
@@ -86,5 +72,3 @@ Tenemos varias herramientas disponibles para ayudarle a [detectar y administrar 
 * [Actualizar una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Controlar las actualizaciones a implementaciones de Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Herramientas para detectar y administrar instancias de Visual Studio](tools-for-managing-visual-studio-instances.md)
-* [Notificar un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.CommandWindow
+f1_keywords: VS.CommandWindow
 helpviewer_keywords:
 - IDE, Command window
 - Mark mode in Command window
@@ -17,30 +15,15 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 5aedd2d660c1a3225cf1d2023864b099c0f080c3
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 112264b0bbe5e752a7f56004e767f26b527a6f6a
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="command-window"></a>Ventana Comandos
 La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Puede ejecutar comandos de menú y comandos que no aparecen en ningún menú. Para mostrar la ventana **Comandos**, pulse **Otras ventanas** desde el menú **Ver** y seleccione **Ventana Comandos**.  
@@ -86,21 +69,9 @@ La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el
 ## <a name="the-equals--sign"></a>El signo igual (=)  
  La ventana que se usa para escribir el comando `EvaluateStatement` determina si el signo igual (=) se interpreta como un operador de comparación o como un operador de asignación.  
   
- En la ventana **Comandos**, un signo igual (=) se interpreta como un operador de comparación. No puede usar operadores de asignación en la ventana **Comandos**. Por lo tanto, por ejemplo, si los valores de las variables `varA` y `varB` son diferentes, entonces el comando  
+ En la ventana **Comandos**, un signo igual (=) se interpreta como un operador de comparación. No puede usar operadores de asignación en la ventana **Comandos**. Por tanto, por ejemplo, si los valores de las variables `varA` y `varB` son diferentes, entonces el comando `>Debug.EvaluateStatement(varA=varB)` devolverá un valor de `False`.  
   
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- devolverá un valor de `False`.  
-  
- En la ventana **Inmediato**, por el contrario, un signo igual (=) se interpreta como un operador de asignación. Por lo tanto, por ejemplo, el comando  
-  
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- asignará a la variable `varA` el valor de la variable `varB`.  
+ En la ventana **Inmediato**, por el contrario, un signo igual (=) se interpreta como un operador de asignación. Por ejemplo, el comando `>Debug.EvaluateStatement(varA=varB)` asignará a la variable `varA` el valor de la variable `varB`.  
   
 ## <a name="parameters-switches-and-values"></a>Parámetros, modificadores y valores  
  Algunos comandos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tienen valores, modificadores y argumentos opcionales y necesarios. Determinadas reglas se aplican al tratar con dichos comandos. A continuación se muestra un ejemplo de un comando enriquecido para aclarar la terminología.  
@@ -122,11 +93,11 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
     > [!NOTE]
     >  Cualquier comando, parámetro, modificador o valor que contenga espacios debe tener comillas dobles a cada lado.  
   
- La posición de los modificadores y parámetros puede intercambiarse de manera libre en la línea de comandos con la excepción del comando [Shell](../../ide/reference/shell-command.md), que necesita sus modificadores y parámetros en un orden específico.  
+La posición de los modificadores y parámetros puede intercambiarse de manera libre en la línea de comandos con la excepción del comando [Shell](../../ide/reference/shell-command.md), que necesita sus modificadores y parámetros en un orden específico.  
   
- Prácticamente cada modificador que admite un comando tiene dos formatos: un formato corto (un carácter) y un formato largo. Pueden combinarse varios modificadores de formato corto en un grupo. Por ejemplo, `/p /g /m` puede expresarse de manera alternativa como `/pgm`.  
+Prácticamente cada modificador que admite un comando tiene dos formatos: un formato corto (un carácter) y un formato largo. Pueden combinarse varios modificadores de formato corto en un grupo. Por ejemplo, `/p /g /m` puede expresarse de manera alternativa como `/pgm`.  
   
- Si los modificadores de formato corto se combinan en un grupo y se les proporciona un valor, ese valor se aplica a cada modificador. Por ejemplo, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se produce un error si cualquiera de los modificadores del grupo no acepta un valor.  
+Si los modificadores de formato corto se combinan en un grupo y se les proporciona un valor, ese valor se aplica a cada modificador. Por ejemplo, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se produce un error si cualquiera de los modificadores del grupo no acepta un valor.  
   
 ## <a name="escape-characters"></a>Caracteres de escape  
  Un carácter de intercalación (^) en una línea de comandos significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo,  
@@ -134,7 +105,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```  
 >Edit.Find ^^t /regex  
 ```  
-  
+
  El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora. En el ejemplo que se muestra aquí se muestra cómo buscar el patrón "^t".  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usar comillas para los nombres de ruta con espacios  

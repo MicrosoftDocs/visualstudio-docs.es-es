@@ -1,131 +1,87 @@
 ---
-title: Ir a | Microsoft Docs
+title: "Buscar código mediante comandos Ir a | Microsoft Docs"
 ms.custom: 
-ms.date: 11/16/2016
+ms.date: 09/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
+helpviewer_keywords:
+- code editor, go to
+- code editor, go to line
+- go to line
+- go to
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3b812629bf0f655f39c35a56eb1b3ca9113303a6
-ms.openlocfilehash: 8bf6d49b21d128d15f5312fb230d4a8e7a8195af
-ms.contentlocale: es-es
-ms.lasthandoff: 03/01/2017
-
+ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
+# <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a  
+Los comandos **Ir a** de Visual Studio realizan una búsqueda centrada en su código para ayudarle a encontrar rápidamente elementos específicos. Puede ir a una línea, tipo, símbolo, archivo o miembro específicos desde una interfaz sencilla y unificada. Esta característica existe en Visual Studio 2017 y versiones posteriores.  
 
-# <a name="go-to"></a>Ir a
-Existen muchas maneras de navegar fácilmente por el código dentro del IDE de Visual Studio, tanto con el teclado como con el mouse.
+### <a name="how-to-use-it"></a>Cómo se usa  
 
-<!-- VERSIONLESS -->
-## <a name="go-to-all"></a>Ir a todo
-Esta característica existe en Visual Studio 2017 y versiones posteriores.  Le permite navegar por su código para encontrar los elementos específicos que busca.  Puede buscar una línea, tipo, símbolo o archivo específicos, entre otros, desde una interfaz sencilla y unificada.
+Entrada        | Función 
+------------ | ---
+**Teclado** | Presione **CTRL+T** o **CTRL+,**.     
+**Mouse**    | Seleccione **Editar**, **Ir a**, **Ir a todo**.  
 
-### <a name="how-to-use"></a>Cómo se usa
-* **Teclado**
-  * Presione **Ctrl+,** o **Ctrl+T**.  (Tenga en cuenta que su método abreviado de teclado puede ser diferente en función del perfil que haya seleccionado).
-* **Mouse**
-  * Seleccione **Editar > Ir a > Ir a todo**.
-
-Esto mostrará una ventana pequeña en la parte superior derecha de su IDE, de manera predeterminada.
+Esto mostrará una ventana pequeña en la parte superior derecha de su editor de código, de manera predeterminada.  
 
 ![Ir a todo](media/gotoall.png)
 
-Desde aquí, existen varias maneras de continuar:
-* Escriba texto sin un prefijo para buscar con los [iconos de filtrado](#filtered-searches) seleccionados debajo del cuadro de texto.
-* Escriba un [prefijo](#filtered-searches) seguido del texto que se va a buscar.
-* Escriba un signo de interrogación (?) para obtener ayuda adicional.
+A medida que escribe en el cuadro de texto, los resultados aparecen en una lista desplegable debajo del cuadro de texto. Para ir a un elemento, púlselo en la lista.    
+
+![Ventana Navegar a](../ide/media/vside_navigatetowindow.png "Ventana Navegar a")  
+
+También puede escribir un signo de interrogación (?) para obtener ayuda adicional.  
+
   ![Ayuda de Ir a todo](media/gotoall_help.png)
 
-### <a name="filtered-searches"></a>Búsquedas filtradas
-Para restringir la búsqueda a un tipo específico, puede usar un prefijo al escribir o usar los iconos debajo de la ventana de búsqueda como se muestra a continuación.
+### <a name="filtered-searches"></a>Búsquedas filtradas  
+De forma predeterminada, el elemento especificado se busca en todos los elementos de la solución, pero puede limitar la búsqueda de código a tipos de elemento específicos si coloca determinados caracteres delante de los términos de búsqueda. Además, puede cambiar rápidamente el filtro de búsqueda si selecciona los botones de la barra de herramientas del cuadro de diálogo Ir a. Los botones que cambian los filtros de tipo se encuentran a la izquierda y los botones que cambian el ámbito de la búsqueda se encuentran a la derecha.  
+
+![Ir a miembros](../ide/media/vside_navigation_toolbar.png)
+
+#### <a name="filter-to-a-specific-type-of-code-element"></a>Filtrar por un tipo específico de elemento de código  
+Para limitar la búsqueda a un tipo específico de elemento de código, puede especificar un prefijo en el cuadro de búsqueda o seleccionar uno de los cinco iconos de filtro:  
 
 Prefijo | Iconos | Acceso directo | Descripción
 :----: | ---- | -------- | ---
-#      | ![Icono de símbolo](media/gotoall_symbolicon.png) | Ctrl+1, Ctrl+S | Buscar símbolos coincidentes
-f      | ![Icono de archivo](media/gotoall_fileicon.png)     | Ctrl+1, Ctrl+F | Buscar nombres de archivo coincidentes
-m      | ![Icono de miembro](media/gotoall_membericon.png) | Ctrl+1, Ctrl+M | Buscar miembros coincidentes
-m      | ![Icono de tipo](media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Buscar tipos coincidentes
-:      | ![Icono de línea](media/gotoall_lineicon.png)     | Ctrl+G         | Ir al número de línea que se ha especificado
+\#      | ![Icono de símbolo](media/gotoall_symbolicon.png) | Ctrl+1, Ctrl+S | Ir al símbolo especificado
+f      | ![Icono de archivo](media/gotoall_fileicon.png)     | Ctrl+1, Ctrl+F | Ir al archivo especificado
+m      | ![Icono de miembro](media/gotoall_membericon.png) | Ctrl+1, Ctrl+M | Ir al miembro especificado
+m      | ![Icono de tipo](media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Ir al tipo especificado
+:      | ![Icono de línea](media/gotoall_lineicon.png)     | Ctrl+G         | Ir al número de línea especificado
 
-### <a name="search-locations"></a>Ubicaciones de búsqueda
-Para restringir la búsqueda a ubicaciones específicas, use los dos iconos de documento.
+#### <a name="filter-to-a-specific-location"></a>Filtrar en una ubicación específica    
+Para restringir la búsqueda a una ubicación específica, use uno de los dos iconos de documento:  
 
 Iconos | Descripción
 ---- | ---
 ![Documento actual](media/gotoall_currentdocument.png) | Buscar solo en el documento actual
-![Documentos externos](media/gotoall_external.png) | Buscar en documentos externos y en los que se encuentran en el proyecto o solución
+![Documentos externos](media/gotoall_external.png) | Buscar en documentos externos y en los que se encuentran en el proyecto o solución  
 
-### <a name="settings"></a>Configuración
-Hacer clic en el icono de engranaje ![Icono de engranaje](media/gotoall_gear.png) en la parte inferior derecha le permite cambiar el funcionamiento de esta característica.
+### <a name="camel-casing"></a>Grafía Camel  
+Si usa la [grafía Camel](https://en.wikipedia.org/wiki/Camel_case) en el código, puede buscar elementos de código más rápido al escribir solo las letras en mayúscula del nombre del elemento de código. Por ejemplo, si el código tiene un tipo denominado `CredentialViewModel`, puede limitar la búsqueda si selecciona el filtro de tipo ("t") y escribe solo las letras mayúsculas del nombre (`CVM`) en el cuadro de diálogo Ir a. Esta característica es útil si el código tiene nombres largos.  
 
-Configuración | Descripción
+![Ventana Navegar a: buscar con mayúsculas](../ide/media/vside_capitalsearch.png)
+
+### <a name="settings"></a>Configuración  
+Si selecciona el icono de engranaje ![Icono de engranaje](media/gotoall_gear.png) puede cambiar el funcionamiento de esta característica:  
+
+Parámetro | Descripción
 ------- | ---
 Usar pestaña de vista previa | Mostrar el elemento seleccionado inmediatamente en la pestaña de vista previa del IDE
-Mostrar detalles    | Mostrar la información de resumen, línea, archivo y proyecto de los comentarios de documentación en la ventana
-Centrar ventana   | Mover esta ventana al centro del IDE en lugar de a la parte superior derecha
-<!-- END VERSIONLESS -->
+Mostrar detalles    | Mostrar la información de proyecto, archivo, línea y resumen de los comentarios de documentación en la ventana
+Centrar ventana   | Mover esta ventana a la parte superior central del editor de código, en lugar de a la parte superior derecha   
 
-## <a name="go-to-definition"></a>Ir a definición
-Vaya al origen de un tipo y abra el resultado en una pestaña nueva:
-
-Entrada        | Función 
------------- | ---
-**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **F12**
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a definición**
-
-## <a name="peek-definition"></a>Ver la definición
-Obtenga una vista previa de la definición de un tipo en una ventana emergente en lugar de en una pestaña nueva:
-
-Entrada        | Función 
------------- | ---
-**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Alt+F12**
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ver la definición**
-
-Si ve otra definición de la ventana emergente, iniciará una ruta de navegación en la que puede desplazarse con los círculos y las flechas que aparecen encima de la ventana emergente.  Para obtener más información, vea [Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
-
-## <a name="go-to-implementation"></a>Ir a implementación
-Navegue desde una clase base o escriba sus implementaciones.  Si existen varias implementaciones, las verá en la ventana **Resultados de la búsqueda de símbolos**:
-
-Entrada        | Función 
------------- | ---
-**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Ctrl+F12**
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a implementación**
-
-## <a name="find-all-references"></a>Buscar todas las referencias
-Buscar todos los lugares en los que se usa un método, propiedad o variable.  Puede usar esto para comprobar un código no alcanzado y los posibles efectos secundarios de una refactorización grande.  Presione **F8** para desplazarse entre los resultados.
-
-Entrada        | Función 
------------- | ---
-**Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **Ctrl+K, R**
-**Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Buscar todas las referencias**
-
-## <a name="navigating-results"></a>Navegar por los resultados
-Al usar las características de navegación en Visual Studio, puede desplazarse hacia delante y hacia atrás en la pila:
-
-Entrada        | Función 
------------- | ---
-**Ctrl+-**          | Navegar hacia atrás en la pila
-**Ctrl+Mayús+-**    | Navegar hacia delante en la pila
-
-También puede usar los elementos de menú **Ver > Navegar hacia atrás** y **Ver > Navegar hacia delante**.
+## <a name="see-also"></a>Vea también  
+[Navegar por el código](../ide/navigating-code.md)  
+[Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)  

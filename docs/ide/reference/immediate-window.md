@@ -1,41 +1,42 @@
 ---
-title: "Ventana Inmediato | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ImmediateWindow"
-helpviewer_keywords: 
-  - "evaluación de expresiones en tiempo de diseño"
-  - "Inmediato (ventana)"
-  - "notificaciones de excepciones de primera oportunidad"
+title: Ventana Inmediato | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: VB
+f1_keywords: VS.ImmediateWindow
+helpviewer_keywords:
+- design-time expression evaluation
+- Immediate window
+- first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 81856823b511fc89f5f156915f843d4b0202e907
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# Ventana Inmediato
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-La ventana **Inmediato** se utiliza para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc.  Permite escribir expresiones que el lenguaje de programación evalúa o ejecuta durante la depuración.  Para mostrar la ventana **Inmediato**, abra un proyecto para su edición, a continuación, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato** o presione CTRL\+ALT\+I.  
+# <a name="immediate-window"></a>Ventana Inmediato
+La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.  
   
- Puede utilizar esta ventana para ejecutar comandos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] individuales.  Entre los comandos disponibles se incluye `EvaluateStatement`, que se puede utilizar para asignar valores a las variables.  La ventana **Inmediato** también admite IntelliSense.  
+ Puede usar esta ventana para emitir comandos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] individuales. Entre los comandos disponibles se incluye `EvaluateStatement`, que puede usarse para asignar valores a variables. La ventana **Inmediato** también admite IntelliSense.  
   
-## Mostrar los valores de las variables  
- Esta ventana puede resultar particularmente útil al depurar una aplicación.  Por ejemplo, para comprobar el valor de una variable `varA`, puede utilizar el [Imprimir \(Comando\)](../../ide/reference/print-command.md):  
+## <a name="displaying-the-values-of-variables"></a>Mostrar los valores de las variables  
+ Esta ventana puede resultar particularmente útil al depurar una aplicación. Por ejemplo, para comprobar el valor de una variable `varA`, usar el [comando Imprimir](../../ide/reference/print-command.md):  
   
 ```  
 >Debug.Print varA  
 ```  
   
- El signo de interrogación \(?\) es un alias de `Debug.Print`, por lo que este comando también se puede escribir como:  
+ El signo de interrogación (?) es un alias de `Debug.Print`, por lo que este comando también puede escribirse:  
   
 ```  
 >? varA  
@@ -44,16 +45,16 @@ La ventana **Inmediato** se utiliza para depurar y evaluar expresiones, ejecutar
  Ambas versiones de este comando devolverán el valor de la variable `varA`.  
   
 > [!NOTE]
->  Para ejecutar un comando de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en la ventana **Inmediato**, se debe incluir un signo mayor que \(\>\) delante del comando.  Para escribir varios comandos, pase a la ventana **Comando**.  
+>  Para emitir un comando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en la ventana **Inmediato**, el comando debe ir precedido de un signo mayor que (>). Para escribir varios comandos, cambie a la ventana **Comando**.  
   
-## Evaluación de expresiones en tiempo de diseño  
- Puede utilizar la ventana **Inmediato** para ejecutar una función o subrutina en tiempo de diseño.  
+## <a name="design-time-expression-evaluation"></a>Evaluación de expresiones en tiempo de diseño  
+ Puede usar la ventana **Inmediato** para ejecutar una función o subrutina en tiempo de diseño.  
   
-#### Para ejecutar una función en tiempo de diseño  
+#### <a name="to-execute-a-function-at-design-time"></a>Para ejecutar una función en tiempo de diseño  
   
-1.  Copie el código siguiente en una aplicación de consola de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:  
+1.  Copie el código siguiente en una aplicación de consola [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]:  
   
-    ```  
+    ```vb
     Module Module1  
   
         Sub Main()  
@@ -73,30 +74,30 @@ La ventana **Inmediato** se utiliza para depurar y evaluar expresiones, ejecutar
   
      La ventana **Inmediato** ejecutará `MyFunction` y mostrará `4`.  
   
- Si la función o subrutina contiene un punto de interrupción, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interrumpirá la ejecución en el punto adecuado.  A continuación puede utilizar las ventanas del depurador para examinar el estado del programa.  Para obtener más información, vea [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).  
+Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- No puede usar la evaluación de expresiones en tiempo de diseño en aquellos tipos de proyectos que requieran el inicio en un entorno de ejecución, incluidos los proyectos de [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], web, Smart Device y SQL.  
+No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de proyectos que requieren que se inicie un entorno de ejecución, incluidos los proyectos de [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)], proyectos web, proyectos de Smart Device y proyectos de SQL.  
   
-### Evaluación de expresiones en tiempo de diseño en las soluciones de varios proyectos  
- Al establecer el contexto para la evaluación de expresiones en tiempo de diseño, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hace referencia al proyecto seleccionado en el Explorador de soluciones.  Si no está seleccionado ningún proyecto en el Explorador de soluciones, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] intenta evaluar la función con respecto al proyecto de inicio.  Si la función no se puede evaluar en el contexto actual, recibirá un mensaje de error.  Si está intentando evaluar una función en un proyecto que no es el proyecto de inicio para la solución y recibe un error, seleccione el proyecto en el Explorador de soluciones e intente realizar la evaluación otra vez.  
+### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Evaluación de expresiones en tiempo de diseño en soluciones de varios proyectos  
+ Al establecer el contexto de evaluación de expresiones en tiempo de diseño, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hace referencia al proyecto seleccionado actualmente en el Explorador de soluciones. Si no se selecciona ningún proyecto en el Explorador de soluciones, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] intenta evaluar la función en el proyecto de inicio. Si no se puede evaluar la función en el contexto actual, recibirá un mensaje de error. Si está intentando evaluar una función en un proyecto que no es el proyecto de inicio para la solución y recibe un error, pruebe a seleccionar el proyecto en el Explorador de soluciones e intente realizar la evaluación otra vez.  
   
-## Escribir comandos  
- Debe escribir el signo mayor que \(\>\) cuando ejecute comandos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en la ventana **Inmediato**.  Use las teclas de dirección FLECHA ARRIBA y FLECHA ABAJO para desplazarse por los comandos ejecutados previamente.  
+## <a name="entering-commands"></a>Escribir comandos  
+ Debe escribir el signo mayor que (>) al emitir comandos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en la ventana **Inmediato**. Use las teclas FLECHA ARRIBA y FLECHA ABAJO para desplazarse por los comandos ejecutados anteriormente.  
   
 |Tarea|Soluciones|Ejemplo|  
-|-----------|----------------|-------------|  
-|Evaluar una expresión.|Escriba una interrogación de cierre \(?\) delante de la expresión.|`? a+b`|  
-|Entrar temporalmente en el modo Comando mientras se está en el modo Inmediato \(para ejecutar un único comando\).|Escriba un signo mayor que \(\>\) delante del comando.|`>alias`|  
-|Cambiar a la ventana Comando.|Escriba `cmd` en la ventana, precedido por el signo mayor que \(\>\).|`>cmd`|  
-|Volver a la ventana Inmediato.|Escriba `immed`  en la ventana sin el signo mayor que \(\>\)|`immed`|  
+|----------|--------------|-------------|  
+|Evaluar una expresión.|Empezar la expresión con un signo de interrogación (?).|`? a+b`|  
+|Entrar temporalmente en el modo Comando mientras está en el modo Inmediato (para ejecutar un único comando).|Escribir el comando, precedido de un signo mayor que (>).|`>alias`|  
+|Cambiar a la ventana Comandos.|Escribir `cmd` en la ventana, precedido de un signo mayor que (>).|`>cmd`|  
+|Volver a la ventana Inmediato.|Escribir `immed` en la ventana sin el signo mayor que (>).|`immed`|  
   
-## Modo Marcar  
- Si hace clic en cualquier línea anterior en la ventana **Inmediato**, entrará automáticamente en el modo Marcar.  Esto le permite seleccionar, editar y copiar el texto de comandos anteriores tal como lo haría en cualquier editor de texto, y pegarlo en la línea actual.  
+## <a name="mark-mode"></a>Modo Marcar  
+ Cuando hace clic en cualquier línea anterior de la ventana **Inmediato**, cambia automáticamente al modo Marcar. Esto le permite seleccionar, editar y copiar el texto de los comandos anteriores como lo haría en cualquier editor de texto, y pegarlo en la línea actual.  
   
-## El signo igual \(\=\)  
- La ventana utilizada para escribir el comando `EvaluateStatement` determina si un signo igual \(\=\) se interpreta como un operador de comparación o como un operador de asignación.  
+## <a name="the-equals--sign"></a>El signo igual (=)  
+ La ventana que se usa para escribir el comando `EvaluateStatement` determina si el signo igual (=) se interpreta como un operador de comparación o como un operador de asignación.  
   
- En la ventana **Inmediato**, un signo igual \(\=\) se interpreta como un operador de asignación.  Así, por ejemplo, el comando  
+ En la ventana **Inmediato**, un signo igual (=) se interpreta como un operador de asignación. Por lo tanto, por ejemplo, el comando  
   
 ```  
 >Debug.EvaluateStatement(varA=varB)  
@@ -104,7 +105,7 @@ La ventana **Inmediato** se utiliza para depurar y evaluar expresiones, ejecutar
   
  asignará a la variable `varA` el valor de la variable `varB`.  
   
- Por el contrario, en la ventana **Comando**, un signo igual \(\=\) se interpreta como un operador de comparación.  No es posible utilizar operaciones de asignación en la ventana **Comando**.  Así, por ejemplo, si los valores de las variables `varA` y `varB` son diferentes, el comando  
+ Por el contrario, en la ventana **Comando**, un signo igual (=) se interpreta como un operador de comparación. No puede usar operaciones de asignación en la ventana **Comando**. Por lo tanto, por ejemplo, si los valores de las variables `varA` y `varB` son diferentes, entonces el comando  
   
 ```  
 >Debug.EvaluateStatement(varA=varB)  
@@ -112,20 +113,20 @@ La ventana **Inmediato** se utiliza para depurar y evaluar expresiones, ejecutar
   
  devolverá un valor de `False`.  
   
-## Notificaciones de excepciones de primera oportunidad  
- En algunas configuraciones, las notificaciones de excepciones de primera oportunidad se muestran en la ventana **Inmediato**.  
+## <a name="first-chance-exception-notifications"></a>notificaciones de excepciones de primera oportunidad  
+ En algunas configuraciones, se muestran notificaciones de excepciones de primera oportunidad en la ventana **Inmediato**.  
   
-#### Para cambiar la presentación de notificaciones de excepciones de primera oportunidad en la ventana Inmediato  
+#### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Para activar o desactivar las notificaciones de excepciones de primera oportunidad en la ventana Inmediato  
   
-1.  En el menú **Ver**, haga clic en **Otras ventanas** y, a continuación, en **Resultados**.  
+1.  En el menú **Vista**, haga clic en **Otras ventanas** y en **Salida**.  
   
-2.  Haga clic con el botón secundario del mouse en el área de texto de la **Ventana de salida** y seleccione o anule la selección de **Mensajes de excepción**.  
+2.  Haga doble clic en el área de texto de la ventana **Salida** y seleccione o anule la selección de **Mensajes de excepción**.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Desplazarse por el código con el depurador](../../debugger/navigating-through-code-with-the-debugger.md)   
- [Ventana de comandos](../../ide/reference/command-window.md)   
+ [Ventana Comandos](../../ide/reference/command-window.md)   
  [Depurar en Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Conceptos básicos del depurador](../../debugger/debugger-basics.md)   
- [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md)   
+ [Tutorial: Depuración en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Usar expresiones regulares en Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

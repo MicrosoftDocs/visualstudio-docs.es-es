@@ -1,60 +1,60 @@
 ---
-title: "Selector de fragmentos de c&#243;digo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.expansionpicker"
-helpviewer_keywords: 
-  - "Selector de fragmentos de código"
-  - "fragmentos de código, Selector de fragmentos de código"
-  - "fragmentos de código de IntelliSense, Selector de fragmentos de código"
+title: "Selector de fragmentos de código | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.expansionpicker
+helpviewer_keywords:
+- Code Snippet Picker
+- IntelliSense code snippets, Code Snippet Picker
+- code snippets, Code Snippet Picker
 ms.assetid: f0862d48-fbbc-4cfe-b228-24492d5c89c4
-caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 58f419d52d2d89f998f64e236cfc1f0053c9cfd1
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# Selector de fragmentos de c&#243;digo
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-El Editor de código de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dispone de un **Selector de fragmentos de código** que permite, con unos pocos clics del mouse, insertar bloques de código predefinidos en el documento activo.  
+# <a name="code-snippet-picker"></a>Selector de fragmentos de código
+El Editor de código de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona un **selector de fragmentos de código** que permite, con unos pocos clics de mouse, insertar bloques de código predefinidos en el documento activo.  
   
- El procedimiento para mostrar el **Selector de fragmentos de código** varía según el lenguaje que esté utilizando.  
+ El procedimiento para mostrar el **selector de fragmentos de código** varía según el idioma que esté usando.  
   
--   [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: haga clic con el botón secundario en la ubicación que desee en el Editor de código para mostrar el menú contextual y seleccione **Insertar fragmento de código**.  
+-   [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código**.  
   
--   [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: haga clic con el botón secundario en la ubicación que desee en el Editor de código para mostrar el menú contextual y haga clic en **Insertar fragmento de código** o **Envolver con**.  
+-   [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
   
--   [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]: el **Selector de fragmentos de código** no está disponible.  
+-   [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] - El **selector de fragmentos de código** no está disponible.  
   
--   Visual F\# \- El **Selector de fragmentos de código** no está disponible.  
+-   Visual F# - El **selector de fragmentos de código** no está disponible.  
   
--   [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] \-\- Haga clic con el botón secundario en la ubicación que desee en el Editor de código para mostrar el menú contextual, y haga clic en **Insertar fragmento de código** o **Envolver con**.  
+-   [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] -- Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
   
--   XML: haga clic con el botón secundario en la ubicación que desee en el Editor de código para mostrar el menú contextual, y haga clic en **Insertar fragmento de código** o **Envolver con**.  
+-   XML - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
   
--   HTML: haga clic con el botón secundario en la ubicación que desee en el Editor de código para mostrar el menú contextual, y haga clic en **Insertar fragmento de código** o **Envolver con**.  
+-   HTML - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código** o **Delimitar con**.  
   
--   SQL \- Haga clic con el botón secundario en la ubicación que desee en el Editor de código para mostrar el menú contextual y haga clic en **Insertar fragmento de código**.  
+-   SQL - Haga clic con el botón derecho en la ubicación deseada en el Editor de código para mostrar el menú contextual y elija **Insertar fragmento de código**.  
   
- En la mayoría de los lenguajes de desarrollo de Visual Studio, puede utilizar el  **Administrador de fragmentos de código** para agregar carpetas a la  **Lista de carpetas** que la  **Selector de fragmentos de código** busca archivos de fragmento XML.  También puede crear sus propios fragmentos de código para agregar a la lista.  Para obtener más información, vea [Tutorial: Crear un fragmento de código](../../ide/walkthrough-creating-a-code-snippet.md).  
+En la mayoría de los lenguajes de desarrollo de Visual Studio, puede usar el **Administrador de fragmentos de código** para agregar carpetas a la **lista de carpetas** donde el **selector de fragmentos de código** busca archivos de fragmento de código XML. También puede crear sus propios fragmentos de código para agregarlos a la lista. Para obtener más información, vea [Tutorial: Crear un fragmento de código](../../ide/walkthrough-creating-a-code-snippet.md).  
   
-## Lista de UIElement  
- Nombre del elemento  
- Un campo de texto modificable que muestra el nombre del elemento seleccionado en la **Lista de elementos**.  Para realizar una búsqueda incremental del elemento que desea, empiece a escribir su nombre en este campo.  Continúe agregando letras hasta que se seleccione el elemento que desea en la **Lista de elementos**.  
+## <a name="uielement-list"></a>Lista de UIElement  
+Nombre del elemento  
+Un campo de texto editable que muestra el nombre del elemento seleccionado en la **lista de elementos**. Para realizar una búsqueda incremental para el elemento que quiera, empiece escribiendo su nombre en este campo. Continúe agregando letras hasta que el elemento que busca se haya seleccionado en la **lista de elementos**.  
   
- Lista de elementos  
- Una lista de fragmentos de código que se pueden insertar, o una lista de carpetas que contienen fragmentos de código.  Para insertar un fragmento de código o expandir una carpeta, seleccione el elemento que desee y presione Entrar.  
+Lista de elementos  
+Una lista de fragmentos de código disponibles para insertarlos o una lista de carpetas que contienen fragmentos de código. Para insertar un fragmento de código o expandir una carpeta, seleccione el elemento que quiera y presione Entrar.  
   
-## Vea también  
- [Procedimientos recomendados para usar fragmentos de código](../../ide/best-practices-for-using-code-snippets.md)   
- [Fragmentos de código de IntelliSense de Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
- [Establecer marcadores en el código](../../ide/setting-bookmarks-in-code.md)   
- [Cómo: Utilizar fragmentos de código envolventes](../../ide/how-to-use-surround-with-code-snippets.md)
+## <a name="see-also"></a>Vea también  
+[Procedimientos recomendados para usar fragmentos de código](../../ide/best-practices-for-using-code-snippets.md)   
+[Fragmentos de código de IntelliSense de Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
+[Establecer marcadores en el código](../../ide/setting-bookmarks-in-code.md)   
+[Cómo: Usar fragmentos de código envolventes](../../ide/how-to-use-surround-with-code-snippets.md)

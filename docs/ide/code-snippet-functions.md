@@ -1,40 +1,41 @@
 ---
-title: "Funciones de los fragmentos de c&#243;digo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "fragmentos de código [Visual Studio], funciones"
-  - "fragmentos de código de IntelliSense, funciones"
-  - "fragmentos [Visual Studio], funciones"
+title: "Funciones de los fragmentos de código | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code snippets [Visual Studio], functions
+- snippets [Visual Studio], functions
+- IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Funciones de los fragmentos de c&#243;digo
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Hay tres funciones disponibles para su uso con fragmentos de código de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  Las funciones se especifican en el elemento [Function](http://msdn.microsoft.com/es-es/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código.  Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).  
+# <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
+Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Las funciones se especifican en el elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).  
   
-## Funciones  
- En la tabla siguiente se describen las funciones disponibles para su uso con el elemento `Function` en fragmentos de código.  
+## <a name="functions"></a>Funciones  
+ En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.  
   
-|Función|Descripción|Language|  
-|-------------|-----------------|--------------|  
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificados por el parámetro `EnumerationLiteral`.  El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o a un tipo de enumeración.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|Función|Descripción|Lenguaje|  
+|--------------|-----------------|--------------|  
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`SimpleTypeName(` `TypeName` `)`|Reduce el parámetro *TypeName* a su forma más simple en el contexto en el que se invocó el fragmento de código.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`SimpleTypeName(` `TypeName` `)`|Reduce el parámetro *TypeName* a su forma más sencilla en el contexto en que se invocó el fragmento de código.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo utilizar la función `GenerateSwitchCases`.  Si se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` generará una instrucción `case` por cada valor de la enumeración.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo se muestra cómo usar la función `GenerateSwitchCases`. Cuando se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` genera una instrucción `case` para cada valor de la enumeración.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -74,8 +75,8 @@ Hay tres funciones disponibles para su uso con fragmentos de código de [!INCLUD
 </CodeSnippets>  
 ```  
   
-## Ejemplo  
- En el ejemplo siguiente se muestra cómo utilizar la función `ClassName`.  Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza por el nombre de la clase envolvente en dicha ubicación del archivo de código.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo se muestra cómo usar la función `ClassName`. Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza con el nombre de la clase envolvente en esa ubicación del archivo de código.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -120,8 +121,8 @@ Hay tres funciones disponibles para su uso con fragmentos de código de [!INCLUD
 </CodeSnippets>  
 ```  
   
-## Ejemplo  
- En este ejemplo se muestra cómo utilizar la función `SimpleTypeName`.  Cuando se inserta este fragmento de código en un archivo de código, el literal `$SystemConsole$` se reemplaza por la forma más simple del tipo <xref:System.Console> en el contexto en el que se invocó el fragmento de código.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se muestra cómo utilizar la función `SimpleTypeName`. Al insertar este fragmento de código en un archivo de código, el literal `$SystemConsole$` se reemplaza por la forma más sencilla del tipo <xref:System.Console> en el contexto en el que se invocó el fragmento de código.  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -152,6 +153,6 @@ Hay tres funciones disponibles para su uso con fragmentos de código de [!INCLUD
 </CodeSnippets>  
 ```  
   
-## Vea también  
- [Function Element \(Intellisense Code Snippets\)](http://msdn.microsoft.com/es-es/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+## <a name="see-also"></a>Vea también  
+ [Elemento Function (fragmentos de código de IntelliSense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)

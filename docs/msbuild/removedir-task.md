@@ -1,50 +1,50 @@
 ---
-title: "RemoveDir (Tarea) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#RemoveDir"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, RemoveDir (tarea)"
-  - "RemoveDir (tarea) [MSBuild]"
+title: RemoveDir (Tarea) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#RemoveDir
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- RemoveDir task [MSBuild]
+- MSBuild, RemoveDir task
 ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 68198fbc036afc0bd5b82bd67d021031bd638413
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# RemoveDir (Tarea)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="removedir-task"></a>RemoveDir (Tarea)
 Quita los directorios especificados y todos sus archivos y subdirectorios.  
   
-## Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `RemoveDir`.  
+## <a name="parameters"></a>Parámetros  
+ En la siguiente tabla se describen los parámetros de la tarea `RemoveDir` .  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|`Directories`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los directorios que se eliminarán.|  
-|`RemovedDirectories`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los directorios que se eliminaron correctamente.|  
+|`Directories`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los directorios que se van a eliminar.|  
+|`RemovedDirectories`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los directorios que se han eliminado correctamente.|  
   
-## Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que hereda de la clase <xref:Microsoft.Build.Utilities.Task>.  Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension \(Clase base\)](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Comentarios  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Ejemplo  
- En el ejemplo siguiente se quitan los directorios especificados por las propiedades `OutputDirectory` y `DebugDirectory`.  Estas rutas de acceso se consideran relativas al directorio del proyecto.  
+## <a name="example"></a>Ejemplo  
+ En el ejemplo siguiente se quitan los directorios que especifican las propiedades `OutputDirectory` y `DebugDirectory`. Estas rutas de acceso se tratan como relacionadas con el directorio del proyecto.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2005">  
   
     <PropertyGroup>  
@@ -60,6 +60,6 @@ Quita los directorios especificados y todos sus archivos y subdirectorios.
 </Project>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

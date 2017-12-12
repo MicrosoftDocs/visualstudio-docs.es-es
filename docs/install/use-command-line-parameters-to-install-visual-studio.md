@@ -1,11 +1,10 @@
 ---
 title: "Usar parámetros de la línea de comandos para instalar Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 08/14/2017
+ms.date: 09/22/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,11 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: ac513a2273177125b52628d12dfdbc499cf77bf1
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 12db04604356a9b6a8b565b7bfaf9db2eab199c1
-ms.contentlocale: es-es
-ms.lasthandoff: 08/14/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
 Cuando instala Visual Studio 2017 desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos, puede hacer lo siguiente:
@@ -87,15 +85,15 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | **Opciones de instalación avanzadas** | **Descripción** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Opcional**: identificador del canal correspondiente a la instancia que se va a instalar. Es necesario para el comando de instalación, y se omite para otros comandos si se especifica `--installPath`. |
-| `--channelUri <uri>` | **Opcional**: el URI del manifiesto del canal. Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
-| `--installChannelUri <uri>` | **Opcional**: el URI del manifiesto del canal que se va a usar para la instalación. El URI especificado por `--channelUri`, que debe especificarse cuando se especifica `--installChannelUri`, se usa para detectar actualizaciones. Si no se quieren actualizaciones, `--channelUri` debe especificarse sin un argumento. Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
+| `--channelUri <uri>` | **Opcional**: el URI del manifiesto del canal. Si no se quiere efectuar actualizaciones, `--channelUri` puede apuntar a un archivo inexistente (por ejemplo, --channelUri C:\doesntExist.chman). Se puede usar para el comando de instalación; se ignora para los demás comandos. |
+| `--installChannelUri <uri>` | **Opcional**: el URI del manifiesto del canal que se va a usar para la instalación. El URI especificado por `--channelUri`, que debe especificarse cuando se especifica `--installChannelUri`, se usa para detectar actualizaciones. Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
 | `--installCatalogUri <uri>` | **Opcional**: el URI del manifiesto del catálogo que se va a usar para la instalación. Si se especifica, el administrador del canal intenta descargar el manifiesto del catálogo de este URI antes de usar el URI en el manifiesto del canal de instalación. Este parámetro se usa para admitir la instalación sin conexión, donde la caché de diseño se creará con el catálogo del producto que ya se ha descargado. Esto puede usarse para el comando de instalación; se ignora para los demás comandos. |
 | `--productId <id>` | **Opcional**: el id. del producto de la instancia que se instalará. Se rellena previamente en condiciones normales de instalación. |
 | `--wait` | **Opcional**: el proceso esperará hasta que la instalación se complete antes de devolver un código de salida. Esto es útil al automatizar las instalaciones donde es necesario esperar a que la instalación finalice para controlar el código de retorno de esa instalación. |
 | `--locale <language-locale>` | **Opcional**: cambia el idioma para mostrar de la interfaz de usuario del instalador. La configuración se conservará. Para obtener más información, consulte la sección [Lista de configuraciones regionales de idioma](#list-of-language-locales) de esta página.|
-| `--cache` | **Nuevo en 15.2, opcional**: si está presente, los paquetes se conservarán después de instalarse de cara a posteriores reparaciones. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
-| `--nocache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se eliminan después de instalarlos o repararlos. Solo se descargarán de nuevo si es necesario y se volverán a eliminar después de su uso. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
-| `--noUpdateInstaller` | **Novedad en 15.2, opcional**: si está presente, impide que el instalador se actualice automáticamente cuando se especifica el modo silencioso. El instalador producirá un error en el comando y devolverá un código de salida distinto de cero si se especifica noUpdateInstaller con el modo silencioso cuando se requiere una actualización del instalador. | 
+| `--cache` | **Nuevo en 15.2, opcional**: si está presente, los paquetes se conservarán después de instalarse de cara a posteriores reparaciones. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para obtener más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
+| `--nocache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se eliminan después de instalarlos o repararlos. Solo se descargarán de nuevo si es necesario y se volverán a eliminar después de su uso. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para obtener más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
+| `--noUpdateInstaller` | **Novedad en 15.2, opcional**: si está presente, impide que el instalador se actualice automáticamente cuando se especifica el modo silencioso. El instalador producirá un error en el comando y devolverá un código de salida distinto de cero si se especifica noUpdateInstaller con el modo silencioso cuando se requiere una actualización del instalador. |
 | `--noWeb` | **Novedad de la versión 15.3, opcional**: el programa de instalación ahora descarga de Internet cualquier contenido que se esté instalando.  Todo el contenido que se esté instalando debe estar disponible en un diseño sin conexión.  Si falta contenido del diseño, no se podrá realizar la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista de los id. de carga de trabajo y los id. de componente
@@ -133,11 +131,12 @@ En función del resultado de la operación, la variable de entorno `%ERRORLEVEL%
 
 Cada operación genera varios archivos de registro en el directorio `%TEMP%` que indican el progreso de la instalación. Ordene la carpeta por fecha y busque los archivos que empiecen por `dd_bootstrapper`, `dd_client` y `dd_setup` para el programa previo, la aplicación del instalador y el motor de configuración, respectivamente.
 
+## <a name="get-support"></a>Obtener soporte técnico
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, vea sugerencias para la solución de problemas en la página [Solucionar problemas de errores de instalación y actualización de Visual Studio 2017](troubleshooting-installation-issues.md). También puede informarnos de problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) del IDE de Visual Studio o compartir una sugerencia con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579). Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), hacer preguntas y encontrar respuestas. También puede comunicarse con nosotros y con otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la Comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio) (requiere una cuenta de [GitHub](https://github.com/)).
+
 ## <a name="see-also"></a>Vea también
 
  * [Instalación de Visual Studio 2017](install-visual-studio.md)
  * [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017](command-line-parameter-examples.md)
  * [Automatizar la instalación de Visual Studio con un archivo de respuesta](automated-installation-with-response-file.md)
- * [Notificar un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

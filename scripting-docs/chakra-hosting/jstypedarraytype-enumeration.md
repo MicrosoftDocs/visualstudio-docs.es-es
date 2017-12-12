@@ -1,34 +1,38 @@
 ---
-title: "Enumeraci&#243;n JsTypedArrayType | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Enumeración JsTypedArrayType | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 67f3e51c-acbb-4fff-a414-0868a0dd5051
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 60fc3fbc2c81863894a824868d286c16c8e02ae5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Enumeraci&#243;n JsTypedArrayType
+# <a name="jstypedarraytype-enumeration"></a>Enumeración JsTypedArrayType
 El tipo de matriz con tipo de JavaScript.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```cpp  
 enum JsTypedArrayType;  
 ```  
   
-## Miembros  
+## <a name="members"></a>Miembros  
   
-### Valores  
+### <a name="values"></a>Valores  
   
 |Nombre|Descripción|  
-|------------|-----------------|  
+|----------|-----------------|  
 |`JsArrayTypeInt8`|Una matriz int8.|  
 |`JsArrayTypeUint8`|Una matriz uint8.|  
 |`JsArrayTypeUint8Clamped`|Una matriz fijada uint8.|  
@@ -39,8 +43,8 @@ enum JsTypedArrayType;
 |`JsArrayTypeFloat32`|Una matriz float32.|  
 |`JsArrayTypeFloat64`|Una matriz float64.|  
   
-## Requisitos  
+## <a name="requirements"></a>Requisitos  
  **Encabezado:** jsrt.h  
   
-## Vea también  
- [Referencia \(Runtime de JavaScript\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>Vea también  
+ [Referencia (tiempo de ejecución de JavaScript)](../chakra-hosting/reference-javascript-runtime.md)

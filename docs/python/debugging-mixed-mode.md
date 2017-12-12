@@ -1,35 +1,31 @@
 ---
 title: "Depuración en modo mixto para Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4ca86a87-e254-4ab7-b3ba-a0ab99c1da93
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 2f7253e91535e5c9f3214b712da135db46ed7cf9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a185a7888b693d37aa5df8f3a051679d6b7e9ec5
-ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="debugging-python-and-c-together"></a>Depuración conjunta de Python y C++
 
 La mayoría de los depuradores normales de Python admiten la depuración de código de Python exclusivamente. Pero en la práctica, Python se usa junto con C o C++ donde se requiere alto rendimiento o la posibilidad de invocar directamente las API de plataforma (vea [Creating a C++ Extension for Python](cpp-and-python.md) (Crear una extensión de C++ para Python) para obtener un ejemplo). Cuando se carga un proyecto de Python, Visual Studio proporciona depuración en modo mixto simultánea integrada para Python y código nativo C/C++, con pilas de llamadas combinadas, la posibilidad de moverse entre código de Python y nativo, puntos de interrupción en cualquier tipo de código y la posibilidad de ver representaciones de Python de objetos en marcos nativos y viceversa:
 
 ![Depuración en modo mixto](media/mixed-mode-debugging.png) 
 
-Si quiere una introducción a la compilación, prueba y depuración de módulos de C nativos con Visual Studio, consulte el vídeo de youtube.com (9 minutos y 9 segundos) [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Profundización: Creación de módulos nativos).
+Si quiere una introducción a la compilación, prueba y depuración de módulos de C nativos con Visual Studio, consulte el vídeo de youtube.com (9 minutos y 9 segundos) [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Profundización: Creación de módulos nativos). El vídeo se aplica a Visual Studio 2015 y 2017.
 
 > [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
 

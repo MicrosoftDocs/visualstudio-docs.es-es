@@ -1,41 +1,25 @@
 ---
 title: "Teclas de método abreviado (Visor de Ayuda) | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-help-viewer
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- shortcut keys [Help Viewer 2.0]
-- Help Viewer 2.0, shortcut keys
+- shortcut keys [Help Viewer]
+- Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 3d5a655a82180b7ffc82cf279b28750f55f5d4c8
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de método abreviado (Visor de Ayuda)
 Puede navegar por el Visor de Ayuda de Microsoft con las teclas de método abreviado de la tabla siguiente:  
@@ -132,3 +116,6 @@ Puede navegar por el Visor de Ayuda de Microsoft con las teclas de método abrev
 |Flecha arriba y flecha abajo|Desplazarse por la lista de **Cambios pendientes**.|  
 |Espacio|Quitar un elemento de la lista de **Cambios pendientes**.|  
 |Alt + T|Aplicar todos los cambios pendientes.|
+
+## <a name="see-also"></a>Vea también
+[Características de accesibilidad del Visor de Ayuda](../ide/accessibility-features-of-the-help-viewer.md)

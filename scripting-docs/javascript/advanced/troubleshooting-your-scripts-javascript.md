@@ -1,75 +1,78 @@
 ---
-title: "Soluci&#243;n de problemas de scripts (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "conversión automática de tipos"
-  - "solución de problemas en las secuencias de comandos"
+title: "Solución de problemas de scripts (JavaScript) | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- automative type conversion
+- troubleshooting scripts
 ms.assetid: 0e0545d9-44e5-4179-befc-99a882c5c672
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d7e0193e6dc0996d5e2d0d3df7103c7705d29477
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Soluci&#243;n de problemas de scripts (JavaScript)
-En todos los lenguajes de programación hay aspectos que dan sorpresas.  Por ejemplo, el valor `null` de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] no se comporta igual que el valor `Null` de los lenguajes C o C\+\+.  
+# <a name="troubleshooting-your-scripts-javascript"></a>Solución de problemas de scripts (JavaScript)
+Hay casos en que cualquier lenguaje de programación ofrece sorpresas. Por ejemplo, el valor `null` en [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] no se comporta igual que el valor `Null` en los lenguajes C o C++.  
   
- A continuación se incluyen algunas de las áreas problemáticas con las que te puedes encontrar al escribir scripts de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+ A continuación se indican algunas de las áreas problemáticas con que se puede encontrar al escribir scripts [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
-## Errores de sintaxis  
- Es importante prestar atención a los detalles cuando se escriben scripts.  Por ejemplo, las cadenas se deben poner entre comillas.  
+## <a name="syntax-errors"></a>Errores de sintaxis  
+ Es importante prestar atención a los detalles al escribir scripts. Por ejemplo, las cadenas deben quedar incluidas entre comillas.  
   
-## Orden de interpretación de los scripts  
- La interpretación de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] forma parte del proceso de análisis de HTML del explorador web.  Si colocas un script dentro de la etiqueta \<HEAD\> de un documento, se interpreta antes que cualquier parte de la etiqueta \<BODY\>.  Si hay objetos que se crean en la etiqueta \<BODY\>, no existen cuando se analiza \<HEAD\>. Por eso, el script no los puede manipular.  
+## <a name="order-of-script-interpretation"></a>Interpretación del orden del script  
+ La interpretación de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] forma parte del proceso de análisis de HTML de su explorador web. Si coloca un script dentro de la etiqueta \<HEAD> en un documento, se interpreta que está antes de cualquier parte de la etiqueta \<BODY>. Si tiene objetos creados en la etiqueta \<BODY>, no existen en el momento en que se analiza la etiqueta \<HEAD>, y el script no puede manipularlos.  
   
 > [!NOTE]
->  Este comportamiento es específico de Internet Explorer.  ASP y WSH tienen modelos de ejecución diferentes \(al igual que otros hosts\).  
+>  Este comportamiento es específico de Internet Explorer. ASP y WSH tienen modelos de ejecución diferentes (al igual que otros hosts).  
   
-## Conversión automática de tipos  
- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] es un lenguaje con establecimiento flexible de tipos y conversión automática.  Aunque los valores con tipos distintos no son iguales, las expresiones del ejemplo siguiente se evalúan como **true**.  
+## <a name="automatic-type-coercion"></a>Conversión de tipos automática  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] es un lenguaje débilmente tipado que incluye conversión automática. Aunque los valores con tipos distintos no son iguales, las expresiones en el ejemplo siguiente se evalúan como **true**.  
   
-```javascript  
+```JavaScript  
 "100" == 100;  
 false == 0;  
 ```  
   
- Para comprobar que el tipo y el valor coinciden, usa el operador de igualdad estricta \(\=\=\=\).  Los siguientes ejemplos se evalúan como false:  
+ Para verificar que el tipo y el valor son los mismos, utilice el operador de igualdad estricta (===). Los siguientes casos se evalúan como false:  
   
-```javascript  
+```JavaScript  
 "100" === 100;  
 false === 0;  
 ```  
   
-## Prioridad de operadores  
- La [prioridad de operador](../../javascript/operator-subtractprecedence-javascript.md) determina cuándo se realiza una operación durante la evaluación de una expresión.  En el ejemplo siguiente, la multiplicación se calcula antes que la resta, aunque la resta aparece antes en la expresión.  
+## <a name="operator-precedence"></a>Precedencia de operadores  
+ La [precedencia de operadores](../../javascript/operator-subtractprecedence-javascript.md) determina cuándo se realiza una operación durante la evaluación de una expresión. En el ejemplo siguiente, la multiplicación se realiza antes que la resta, aunque la resta aparece en primer lugar en la expresión.  
   
-```javascript  
+```JavaScript  
 theRadius = aPerimeterPoint - theCenterpoint * theCorrectionFactor;  
 ```  
   
-## Usar bucles for...in con objetos  
- Al recorrer en iteración las propiedades de un objeto con un bucle [for…in](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md), no puedes predecir ni controlar el orden en el que se asignan los campos del objeto a la variable contadora del bucle.  Más aún, el orden puede ser distinto en implementaciones diferentes del lenguaje.  
+## <a name="using-forin-loops-with-objects"></a>Uso de bucles for...in con objetos  
+ Cuando itere a través de las propiedades de un objeto con un bucle [for...in](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md), no puede predecir ni controlar el orden en el que los campos del objeto se asignan a la variable de contador de bucle. Además, el orden puede ser distinto en implementaciones diferentes del lenguaje.  
   
-## Palabra clave with  
- La instrucción [with](../../javascript/reference/with-statement-javascript.md) es adecuada para tener acceso a propiedades que ya existen en un objeto especificado, pero no se puede usar para agregar propiedades a un objeto.  Para crear nuevas propiedades en un objeto, debes hacer referencia al objeto específicamente.  
+## <a name="with-keyword"></a>Palabra clave with  
+ La instrucción [with](../../javascript/reference/with-statement-javascript.md) resulta útil para acceder a propiedades que ya existen en un objeto especificado, pero no se puede usar para agregar propiedades a un objeto. Para crear propiedades en un objeto, debe hacer referencia al objeto concreto.  
   
-## Palabra clave this  
- Aunque la palabra clave `this` que hay dentro de la definición de un objeto se usa para hacer referencia a ese mismo objeto, no se puede utilizar `this` ni otras palabras clave parecidas para hacer referencia a la función que se está ejecutando si esa función no es una definición de objeto.  Si la función se va a asignar a un objeto como un método, para hacer referencia al objeto, puedes usar la palabra clave `this` dentro de la función.  
+## <a name="this-keyword"></a>Palabra clave this  
+ Aunque use la palabra clave `this` dentro de la definición de un objeto para hacer referencia al propio objeto, no puede utilizar `this` o palabras clave similares para hacer referencia a la función que se está ejecutando cuando esa función no es una definición de objeto. Si la función debe asignarse a un objeto como un método, puede usar la palabra clave `this` dentro de la función para hacer referencia al objeto.  
   
-## Escribir un script que escribe un script en Internet Explorer  
- La etiqueta \<\/SCRIPT\> termina el script actual en caso de que el intérprete lo encuentre.  Para mostrar el propio "\<\/SCRIPT\>", tienes que escribirlo otra vez al menos en dos cadenas \(por ejemplo, "\<\/SCR" e "IPT\>"\), que luego puedes concatenar juntas en la instrucción que las escribe.  
+## <a name="writing-a-script-that-writes-a-script-in-internet-explorer"></a>Escritura de un script que escribe un script en Internet Explorer  
+ La etiqueta \</SCRIPT> finaliza el script actual si el intérprete la detecta. Para mostrar "\</SCRIPT>" como tal, reescriba this en dos cadenas como mínimo; por ejemplo, "\</SCR" e "IPT>", que puede concatenar, a continuación, en la instrucción que las escribe.  
   
-## Referencias implícitas a una ventana en Internet Explorer  
- Como se puede abrir más de una ventana a la vez, cualquier referencia implícita a una ventana apunta a la ventana actual.  Para utilizar otras ventanas, debes utilizar una referencia explícita.
+## <a name="implicit-window-references-in-internet-explorer"></a>Referencias implícitas a una ventana de Internet Explorer  
+ Ya que se puede abrir más de una ventana a la vez, cualquier referencia implícita a una ventana apunta a la ventana actual. En el caso de otras ventanas, debe usar una referencia explícita.

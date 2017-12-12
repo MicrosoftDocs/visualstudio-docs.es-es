@@ -1,57 +1,35 @@
 ---
-title: Visor de Ayuda de Microsoft | Microsoft Docs
+title: "Documentación de ayuda sin conexión de Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/02/2017
+ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- hv_general
+f1_keywords: hv_general
 helpviewer_keywords:
-- Microsoft Help Viewer 2.0 Help
-- Help Viewer 2.0, printing a topic
-- printing a topic[Help Viewer 2.0]
-- Help Viewer 2.0, toolbar
-- Help on Help [Help Viewer 2.0]
-- Help Viewer 2.0, window components
-- Help Viewer 2.0, navigating
-- toolbar [Help Viewer 2.0]
+- Microsoft Help Viewer Help
+- Help Viewer, printing a topic
+- printing a topic [Help Viewer]
+- Help Viewer, toolbar
+- Help on Help [Help Viewer]
+- Help Viewer, window components
+- Help Viewer, navigating
+- toolbar [Help Viewer]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
-caps.latest.revision: 25
-author: kempb
-ms.author: kempb
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 07ff2413503209d6ade252ac89dbfbe2589e7e85
-ms.openlocfilehash: db54dec1306e89a085e10de5bb9e81d1b54246cf
-ms.contentlocale: es-es
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
-Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft.  
-
-> [!WARNING]
->  Cuando instala Visual Studio, tiene la opción de instalar el Visor de Ayuda. Para empezar a leer temas de ayuda en el Visor de Ayuda, en lugar de en el sitio de descarga de MSDN, después de instalar el Visor de Ayuda, vaya al menú de **Ayuda** de Visual Studio, seleccione **Establecer preferencias de la Ayuda**, y, después, seleccione **Iniciar en el Visor de Ayuda**. Los temas de ayuda sin conexión para una determinada versión de Visual Studio solo están disponibles tras el lanzamiento final de esa versión.  
-
- Puede realizar lo siguiente:  
+El Visor de Ayuda de Microsoft le permite instalar y ver en el equipo local el contenido de diversos productos y tecnologías, como Visual Studio, .NET Framework, referencia del lenguaje, SQL Server y desarrollo de Windows. El Visor de Ayuda le permite:  
 
 -   Buscar y descargar conjuntos de contenido, que también se conocen como libros.  
 
@@ -61,18 +39,34 @@ Puede instalar y ver el contenido de distintos productos y tecnologías en el eq
 
 -   Buscar información mediante la búsqueda de texto completo.  
 
--   Ver, marcador e imprimir temas.  
+-   Ver, marcador e imprimir temas.
 
-## <a name="navigating-the-help-viewer"></a>Navegar por el Visor de Ayuda  
- Puede buscar información en el contenido instalado mediante las pestañas de navegación, ver contenido instalado en la pestaña o pestañas de tema y administrar contenido mediante el uso de la pestaña **Administrar contenido**. También puede realizar tareas adicionales mediante los botones en la barra de herramientas y encontrar información adicional en la esquina inferior derecha de la ventana.  
+Para instalar el Visor de Ayuda, vea [Instalación del Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer-installation.md). Para empezar a leer temas de ayuda en el Visor de Ayuda, en lugar de en línea, vaya al menú de **Ayuda** de Visual Studio y, después, seleccione **Establecer preferencias de la Ayuda** e **Iniciar en el Visor de Ayuda**.
 
-|||  
-|-|-|  
-|Navegación|Mediante el uso de la pestaña **Contenido**, puede mostrar contenido instalado como una jerarquía y especificar criterios para filtrar los títulos que aparecen.<br /><br /> Mediante el uso de la pestaña **Buscar**, puede buscar términos en cualquier lugar del contenido, incluidos los títulos de tema y el código.<br /><br /> Mediante el uso de la pestaña **Índice**, puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.<br /><br /> Mediante el uso de la pestaña **Favoritos**, puede guardar vínculos a temas que se usan con frecuencia y puede mostrar una lista de temas que haya visto recientemente.|  
-|Visualización de temas|Cada tema aparece en una pestaña y puede abrir varios temas a la vez.|  
-|Administrar contenido|Puede instalar, actualizar, mover y eliminar contenido mediante la pestaña **Administrar contenido**. En la parte superior de la pestaña, puede usar el control **Origen de instalación** para especificar si quiere instalar los libros desde una ubicación de red o desde un disco o URI. El cuadro **Ruta de acceso del almacén local** muestra donde se instalarán los libros en el equipo local y puede moverlos a una ubicación diferente con el botón **Mover**.<br /><br /> La lista de contenido muestra qué libros puede instalar o ya instaló, si hay disponible alguna actualización y el tamaño de cada libro. Puede instalar o quitar uno o más libros pulsando los vínculos **Agregar** o **Quitar** y, después, seleccionando el botón **Actualizar** en el panel **Cambios pendientes**. Si hay actualizaciones disponibles para los libros que ya instaló, puede actualizar ese contenido seleccionando el vínculo **Haga clic aquí para descargar ahora** en la parte inferior de la ventana. Además, todos los libros instalados se actualizarán si hay actualizaciones disponibles cuando se instalen libros adicionales. **Nota:** La función de la pestaña **Administrar contenido** puede diferir dependiendo de si el administrador del Visor de Ayuda desactiva estas características o si no tiene acceso a Internet.|  
+## <a name="help-viewer-tour"></a>Paseo por el Visor de Ayuda
+Puede buscar información en el contenido instalado mediante las pestañas de navegación, ver contenido instalado en la pestaña o pestañas de tema y administrar contenido mediante el uso de la pestaña **Administrar contenido**. También puede realizar tareas adicionales mediante los botones en la barra de herramientas y encontrar información adicional en la esquina inferior derecha de la ventana.
 
- La barra de herramientas de la ventana del Visor de Ayuda contiene los siguientes botones:  
+### <a name="navigation-tabs"></a>Pestañas de navegación
+
+|Tab|Descripción|
+|---|-----------|
+|Contenido|Muestra el contenido instalado como una jerarquía (tabla de contenido). Puede especificar criterios para filtrar los títulos que aparecen.|
+|Índice|Muestra una lista alfabética de términos indexados. Puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.|
+|Favoritos|También puede añadir temas a Favoritos. Para ello, elija el botón **Agregar a Favoritos**. Los temas aparecerán en esta pestaña. En la sección Historial se muestra una lista de los temas que ha visualizado recientemente.|
+|Buscar|Proporciona un cuadro de búsqueda en el que puede buscar términos en cualquier lugar del contenido, incluidos los títulos de temas y el código.|
+
+### <a name="viewing-topics"></a>Visualización de temas
+Cada tema aparece en su propia pestaña, y puede abrir varios temas a la vez.
+
+### <a name="managing-content"></a>Administrar contenido
+Puede instalar, actualizar, mover y eliminar contenido mediante la pestaña **Administrar contenido**. En la parte superior de la pestaña, puede usar el control **Origen de instalación** para especificar si quiere instalar los libros desde una ubicación de red o desde un disco o URI. El cuadro **Ruta de acceso del almacén local** muestra donde se instalarán los libros en el equipo local y puede moverlos a una ubicación diferente con el botón **Mover**.
+
+La lista de contenido muestra qué libros puede instalar o ya instaló, si hay disponible alguna actualización y el tamaño de cada libro. Puede instalar o quitar uno o más libros pulsando los vínculos **Agregar** o **Quitar** y, después, seleccionando el botón **Actualizar** en el panel **Cambios pendientes**. Si hay actualizaciones disponibles para los libros que ya instaló, puede actualizar ese contenido seleccionando el vínculo **Haga clic aquí para descargar ahora** en la parte inferior de la ventana. Además, todos los libros instalados se actualizan si hay actualizaciones disponibles al instalar libros adicionales.
+
+**Nota:** La función de la pestaña **Administrar contenido** puede diferir dependiendo de si el administrador del Visor de Ayuda desactiva estas características o si no tiene acceso a Internet.
+
+### <a name="toolbar-buttons"></a>Botones de la barra de herramientas
+La barra de herramientas de la ventana del Visor de Ayuda contiene los siguientes botones:  
 
 -   El botón **Mostrar tema en contenido** muestra la ubicación del tema en la pestaña **Contenido**.  
 
@@ -86,13 +80,9 @@ Puede instalar y ver el contenido de distintos productos y tecnologías en el eq
 
 -   El botón **Administrar contenido** activa la pestaña **Administrar contenido**.  
 
--   El pequeño triángulo abre una lista de pestañas, incluidas las del tema y la correspondiente a **Administrar contenido**. Puede activar cualquiera de esas pestañas seleccionándola.  
+-   El pequeño triángulo que aparece a la derecha abre una lista de pestañas, incluidas las del tema y la correspondiente a **Administrar contenido**. Puede elegir un nombre de pestaña y convertirla en la pestaña activa. 
 
- El área inferior de la ventana del Visor de Ayuda tiene información sobre el tamaño total de descargas pendientes, la cantidad de espacio en disco que necesitan y la cantidad de espacio en disco disponible. Esta área también contiene información sobre los errores que puedan producirse y un vínculo que puede elegir para actualizar el contenido instalado, si hay actualizaciones disponibles.  
-
-## <a name="see-also"></a>Vea también  
- [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md)   
- [Instalar y administrar el contenido local](../ide/install-and-manage-local-content.md)   
- [Encontrar información](../ide/locate-information.md)   
- [Solución de problemas del Visor de Ayuda](../ide/troubleshooting-the-help-viewer.md)
-
+## <a name="see-also"></a>Vea también
+[Instalación del Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer-installation.md)  
+[Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md)  
+[Instalar y administrar el contenido local](../ide/install-and-manage-local-content.md)

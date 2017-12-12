@@ -1,19 +1,17 @@
 ---
-title: "Configuración de un repositorio de Subversion en Visual Studio para Mac"
+title: Configurar un repositorio de Subversion en Visual Studio para Mac | Microsoft Docs
 description: Empleo de Git y Subversion en Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
+ms.openlocfilehash: 0757ad29b8614a86f059f525f6ffe3100595d09b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: ea2dffed0b9091dae61792783eb83c103ca9375c
-ms.contentlocale: es-es
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="setting-up-a-subversion-repository"></a>Configuración de un repositorio de Subversion
 
 Subversion es un sistema de control de versiones centralizado. Esto significa que hay un único servidor que contiene todos los archivos y las revisiones desde el que los usuarios pueden extraer del repositorio cualquier versión de cualquier archivo. Cuando se extraen archivos de un repositorio remoto de Subversion, el usuario obtiene una instantánea del repositorio en ese momento dado.
@@ -45,5 +43,4 @@ Antes de comenzar a usar Subversion, se deben instalar las herramientas de líne
     ![](media/version-control-subversion5.png)
 
 8.  Todos los comandos de control de versiones disponibles ya deberían aparecer en el menú de control de versiones.
-
 

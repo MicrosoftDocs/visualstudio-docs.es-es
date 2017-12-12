@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,37 +22,21 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: f43b470f07e8b90c62d17c7905ad458a22d41ff1
-ms.contentlocale: es-es
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
   
 > [!NOTE]
->  La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, por ejemplo, a la configuración **General** o **Visual C++**, elija **Herramientas**, **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
   
 ### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para compilar, recompilar o limpiar toda la solución  
   
@@ -96,7 +79,7 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
   
     -   En la barra de menús, seleccione **Compilar**, **Compilar solución** (Ctrl+Mayús+B).  
   
-     Cuando esta casilla está desactivada, todos los proyectos, sus dependencias y los archivos de solución se compilan cuando se ejecuta alguno de los comandos anteriores. Esta casilla se encuentra desactivada de forma predeterminada.  
+    Cuando esta casilla está desactivada, todos los proyectos, sus dependencias y los archivos de solución se compilan cuando se ejecuta alguno de los comandos anteriores. Esta casilla se encuentra desactivada de forma predeterminada.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Para compilar solo el proyecto de Visual C++ seleccionado  
   
@@ -110,13 +93,13 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
   
     -   **Vincular solo** *NombreDelProyecto*  
   
-     Estos comandos solo se aplican al proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] que elija, sin compilar, recompilar, limpiar o vincular dependencias del proyecto o archivos de solución. En función de la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que tenga, el submenú **Solo el proyecto** podría contener más comandos.  
+    Estos comandos solo se aplican al proyecto de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] que elija, sin compilar, recompilar, limpiar o vincular dependencias del proyecto o archivos de solución. En función de la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que tenga, el submenú **Solo el proyecto** podría contener más comandos.  
   
 ### <a name="to-compile-multiple-c-project-items"></a>Para compilar varios elementos de proyecto de C++  
   
 1.  En el **Explorador de soluciones**, seleccione varios archivos, que pueden ser acciones compiladas, abra el menú contextual de uno de esos archivos y, después, seleccione **Compilar**.  
   
-     Si los archivos tienen dependencias, se compilarán en orden de dependencia. Se producirá un error en la operación de compilación si los archivos requieren un encabezado precompilado que no está disponible al compilar. La operación de compilación usa la configuración de la solución activa actual.  
+    Si los archivos tienen dependencias, se compilarán en orden de dependencia. Se producirá un error en la operación de compilación si los archivos requieren un encabezado precompilado que no está disponible al compilar. La operación de compilación usa la configuración de la solución activa actual.  
   
 ### <a name="to-stop-a-build"></a>Para detener una compilación  
   
@@ -126,12 +109,12 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
   
     -   Presione las teclas Ctrl+Interrumpir.  
   
-## <a name="see-also"></a>Vea también  
- [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md)   
- [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)   
- [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
- [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)   
- [Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)   
- [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
+## <a name="see-also"></a>Vea también
+[Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md)   
+[Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
+[Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)   
+[Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
+[Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
+[Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)   
+[Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)   
+[Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)

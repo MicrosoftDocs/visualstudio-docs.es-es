@@ -1,48 +1,49 @@
 ---
-title: "Tutorial: Uso de las API del generador de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "herramientas de rendimiento, tutoriales"
-  - "herramientas de generación de perfiles, tutoriales"
+title: 'Tutorial: Uso de las API del generador de perfiles | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, walkthroughs
+- performance tools, walkthroughs
 ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fa7ba54d15697c02b62f13c3fa54a3005f410bd9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Tutorial: Uso de las API del generador de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El tutorial utiliza una aplicación de C\# para mostrar cómo se utilizan las API de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Se usarán las API del generador de perfiles para limitar la cantidad de datos que se recopilan durante la generación de perfiles de instrumentación.  
+# <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
+En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Usará la API del generador de perfiles para limitar la cantidad de datos que se recopilan durante la generación de perfiles de instrumentación.  
   
- Los pasos de este tutorial se aplican por lo general a una aplicación de C\/C\+\+.  Para cada lenguaje, tendrá que configurar adecuadamente el entorno de compilación.  
+ Normalmente, los pasos de este tutorial se aplican a una aplicación de C/C++. Para cada lenguaje, tendrá que configurar de forma adecuada el entorno de compilación.  
   
- Normalmente, comenzará a analizar el rendimiento de la aplicación utilizando la generación de perfiles de muestreo.  Si la generación de perfiles de muestreo no proporciona información que señale con precisión un cuello de botella, la generación de perfiles de instrumentación puede proporcionar un nivel de detalle mayor.  La generación de perfiles de instrumentación es muy útil para investigar la interacción de subprocesos.  
+ Normalmente, empezará a analizar el rendimiento de la aplicación mediante la generación de perfiles de ejemplo. Si la generación de perfiles de ejemplo no proporciona información que localiza un cuello de botella, la generación de perfiles de instrumentación puede proporcionar un nivel de detalle mayor. La generación de perfiles de instrumentación es muy útil para investigar la interacción de los subprocesos.  
   
- Sin embargo, un nivel mayor de detalle implica que se recogen más datos.  Observará que la generación de perfiles de instrumentación crea grandes archivos de datos.  Asimismo, es más probable que la instrumentación afecte al rendimiento de la aplicación.  Para obtener más información, vea [Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md) y [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md).  
+ Pero un nivel de detalle mayor significa que se recopilan más datos. Es posible que compruebe que la generación de perfiles de instrumentación crea archivos de datos grandes. Además, es más probable que la instrumentación afecte al rendimiento de la aplicación. Para más información, vea [Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md) e [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)  
   
- El generador de perfiles de Visual Studio le permite limitar la recolección de datos.  Este tutorial proporciona un ejemplo de cómo limitar la recolección de datos mediante la utilización de las API del generador de perfiles.  El generador de perfiles de Visual Studio proporciona una API para controlar la recolección de datos desde el interior de una aplicación.  
+ El generador de perfiles de Visual Studio le permite limitar la recopilación de datos. En este tutorial se ofrece un ejemplo de cómo limitar la recopilación de datos mediante las API del generador de perfiles. El generador de perfiles de Visual Studio proporciona una API para controlar la recopilación de datos desde dentro de una aplicación.  
   
- Las API del generador de perfiles de Visual Studio están en VSPerf.dll. para el código nativo.  El archivo de encabezado, VSPerf.h, y la biblioteca de importación, VSPerf.lib, se encuentran en el directorio Microsoft Visual Studio 9\\Team Tools\\Performance Tools.  
+ Para el código nativo, las API del generador de perfiles de Visual Studio se encuentran en VSPerf.dll. El archivo de encabezado (VSPerf.h) y la biblioteca de importación (VSPerf.lib) se encuentran en el directorio Microsoft Visual Studio 9\Team Tools\Performance Tools\.  
   
- Para el código administrado, las API del generador de perfiles están en Microsoft.VisualStudio.Profiler.dll.  Esta DLL se encuentra en el directorio Microsoft Visual Studio 9\\Team Tools\\Performance Tools.  Para obtener más información, vea <xref:Microsoft.VisualStudio.Profiler>.  
+ Para el código administrado, las API del generador de perfiles se encuentran en Microsoft.VisualStudio.Profiler.dll. Este archivo DLL se encuentra en el directorio Microsoft Visual Studio 9\Team Tools\Performance Tools. Para obtener más información, consulta <xref:Microsoft.VisualStudio.Profiler>.  
   
-## Requisitos previos  
- En este tutorial se da por supuesto que ha configurado la opción del entorno de desarrollo para que admita la depuración y el muestreo.  Los temas siguientes proporcionan una información general de estos requisitos previos:  
+## <a name="prerequisites"></a>Requisitos previos  
+ En este tutorial se da por supuesto que la elección del entorno de desarrollo está configurada para admitir la depuración y el muestreo. En los temas siguientes se proporciona una introducción de estos requisitos previos:  
   
- [Cómo: Elegir métodos de recolección](../profiling/how-to-choose-collection-methods.md)  
+ [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
   
  [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
- De forma predeterminada, cuando se inicia el generador de perfiles, éste recopila datos globales.  El código siguiente colocado al principio del programa desactiva la generación de perfiles global.  
+ De forma predeterminada, cuando se inicia el generador de perfiles, recopila datos en el nivel global. El código siguiente al principio del programa desactiva la generación de perfiles global.  
   
 ```  
 DataCollection.StopProfile(  
@@ -50,18 +51,18 @@ ProfileLevel.Global,
 DataCollection.CurrentId);  
 ```  
   
- Puede desactivar la recolección de datos en la línea de comandos sin utilizar llamadas API.  En los pasos siguientes se da por supuesto que su entorno de compilación de línea de comandos se ha configurado para ejecutar las herramientas de generación de perfiles, así como las herramientas de desarrollo.  Esto incluye los valores necesarios para VSInstr y VSPerfCmd.  Vea Herramientas de generación de perfiles de la línea de comandos.  
+ Puede desactivar la recopilación de datos en la línea de comandos sin usar una llamada de API. En los pasos siguientes se supone que el entorno de compilación de línea de comandos está configurado para ejecutar las herramientas de generación de perfiles y las herramientas de desarrollo. Esto incluye la configuración necesaria para VSInstr y VSPerfCmd. Vea las herramientas de generación de perfiles de línea de comandos.  
   
-## Limitar la recopilación de datos mediante las API del generador de perfiles  
+## <a name="limiting-data-collection-using-profiler-apis"></a>Limitación de la recopilación de datos mediante las API del generador de perfiles  
   
-#### Para crear código de generación de perfiles  
+#### <a name="to-create-the-code-to-profile"></a>Para crear el código para generar perfiles  
   
-1.  Cree un nuevo proyecto C\# en Visual Studio o utilice una compilación de línea de comandos, según lo que prefiera.  
+1.  Cree un nuevo proyecto de C# en Visual Studio, o use una compilación de línea de comandos, según sus preferencias.  
   
     > [!NOTE]
-    >  Su compilación debe hacer referencia a la biblioteca Microsoft.VisualStudio.Profiler.dll, ubicada en el directorio Microsoft Visual Studio 9\\Team Tools\\Performance Tools.  
+    >  La compilación debe hacer referencia a la biblioteca Microsoft.VisualStudio.Profiler.dll, ubicada en el directorio Microsoft Visual Studio 9\Team Tools\Performance Tools.  
   
-2.  Copie y pegue el código siguiente en su proyecto:  
+2.  Copie y pegue el código siguiente en el proyecto:  
   
     ```  
     using System;  
@@ -116,21 +117,21 @@ DataCollection.CurrentId);
     }  
     ```  
   
-#### Para recopilar y ver datos en el IDE de Visual Studio  
+#### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Para recopilar y ver los datos en el IDE de Visual Studio  
   
-1.  Abra el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  En el menú **Analizar**, seleccione **Generador de perfiles** y, a continuación, elija **Nueva sesión de rendimiento**.  
+1.  Abra el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En el menú **Analizar**, apunte a **Generador de perfiles** y después seleccione **Nueva sesión de rendimiento.**  
   
-2.  Agregue el binario compilado a la lista **Destinos** en la ventana **Explorador de rendimiento**.  Haga clic con el botón secundario en **Destinos** y, a continuación, seleccione **Agregar binario de destino**.  Busque el binario en el cuadro de diálogo **Agregar binario de destino** y, a continuación, haga clic en **Abrir**.  
+2.  Agregue el binario compilado a la lista **Destinos** en la ventana **Explorador de rendimiento**. Haga clic con el botón derecho en **Destinos** y después seleccione **Agregar binario de destino**. Localice el binario en el cuadro de diálogo **Agregar binario de destino** y después haga clic en **Abrir**.  
   
-3.  Seleccione **Instrumentación** en la lista **Método** de la barra de herramientas del **Explorador de rendimiento**.  
+3.  En la barra de herramientas del **Explorador de rendimiento**, en la lista **Método**, haga clic en **Instrumentación**.  
   
 4.  Haga clic en **Iniciar con generación de perfiles**.  
   
-     El generador de perfiles instrumentará y ejecutará el binario y creará un archivo de informe de rendimiento.  Este archivo aparecerá en el nodo **Informes** del **Explorador de rendimiento**.  
+     El generador de perfiles instrumentará y ejecutará el archivo binario, y creará un archivo de informe de rendimiento. El archivo de informe de rendimiento aparecerá en el nodo **Informes** del **Explorador de rendimiento**.  
   
 5.  Abra el archivo de informe de rendimiento resultante.  
   
- De forma predeterminada, cuando se inicia el generador de perfiles, éste recopilará datos globales.  El código siguiente colocado al principio del programa desactiva la generación de perfiles global.  
+ De forma predeterminada, cuando se inicia el generador de perfiles, recopilará los datos en el nivel global. El código siguiente al principio del programa desactiva la generación de perfiles global.  
   
 ```  
 DataCollection.StopProfile(  
@@ -138,30 +139,30 @@ ProfileLevel.Global,
 DataCollection.CurrentId);  
 ```  
   
-#### Para recopilar y ver los datos en la línea de comandos  
+#### <a name="to-collect-and-view-data-at-the-command-line"></a>Para recopilar y ver los datos en la línea de comandos  
   
-1.  Compile una versión de depuración del código de ejemplo que creó en el procedimiento "Para crear código de generación de perfiles", más arriba en este tutorial.  
+1.  Compile una versión de depuración del código de ejemplo que creó en el procedimiento "Crear el código para generar perfiles", anteriormente en este tutorial.  
   
-2.  Para generar los perfiles de una aplicación administrada, escriba el comando siguiente para establecer las variables de entorno correspondientes:  
+2.  Para generar perfiles de una aplicación administrada, escriba el comando siguiente para establecer las variables de entorno adecuadas:  
   
-     VsPefCLREnv \/traceon  
+     **VsPefCLREnv /traceon**  
   
-3.  Escriba el comando siguiente: VSInstr \<filename.exe\>  
+3.  Escriba el comando siguiente:**VSInstr \<nombreDeArchivo>.exe**  
   
-4.  Escriba el comando siguiente: VSPerfCmd \/start:trace \/output:\<filename.vsp\>  
+4.  Escriba el comando siguiente:**VSPerfCmd /start:trace /output:\<nombreDeArchivo>.vsp**  
   
-5.  Escriba el comando siguiente:VSPerfCmd \/globaloff  
+5.  Escriba el comando siguiente:**VSPerfCmd /globaloff**  
   
 6.  Ejecute el programa.  
   
-7.  Escriba el comando siguiente:VSPerfCmd \/shutdown  
+7.  Escriba el comando siguiente:**VSPerfCmd /shutdown**  
   
-8.  Escriba el comando siguiente: VSPerfReport \/calltrace:\<filename.vsp\>  
+8.  Escriba el comando siguiente:**VSPerfReport /calltrace:\<nombreDeArchivo>.vsp**  
   
-     Se creará un archivo .csv en el directorio actual con los datos de rendimiento resultantes.  
+     Se crea un archivo .csv en el directorio actual con los datos de rendimiento resultantes.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Profiler>   
- [Referencia a la API del generador de perfiles de Visual Studio \(Nativa\)](../profiling/visual-studio-profiler-api-reference-native.md)   
+ [Referencia de la API del generador de perfiles de Visual Studio (nativa)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Introducción](../profiling/getting-started-with-performance-tools.md)   
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)

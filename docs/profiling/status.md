@@ -1,79 +1,80 @@
 ---
-title: "Estado | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Status | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: debc70294bf0b513f22ed1cc06b9f0790da7b778
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Estado
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La opción **Status** de VSPerfCmd.exe muestra información sobre el estado de generador de perfiles y sobre los procesos para los que se esté generando perfiles actualmente.  
+# <a name="status"></a>Estado
+La opción **Status** de VSPerfCmd.exe muestra información sobre el estado del generador de perfiles y los procesos de los que actualmente se está generando el perfil.  
   
- La opción **Status** debe ser la única opción especificada en la línea de comandos.  El generador de perfiles se debe inicializar con la opción de VSPerfCmd.exe **Start** antes de que se pueda mostrar cualquier estado.  
+ La opción **Status** debe ser la única especificada en la línea de comandos. El generador de perfiles se debe inicializar con la opción **Start** de VSPerfCmd.exe antes de que se pueda mostrar cualquier estado.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 VSPerfCmd.exe /Status  
 ```  
   
-#### Parámetros  
- None  
+#### <a name="parameters"></a>Parámetros  
+ Ninguna  
   
-## Comentarios  
- La opción **Status** muestra la información de estado siguiente para el generador de perfiles.  
+## <a name="remarks"></a>Comentarios  
+ La opción **Status** muestra la siguiente información de estado para el generador de perfiles.  
   
- **Output File Name**  
- Ruta de acceso y nombre de archivo de datos actual del generador de perfiles.  
+ **Nombre del archivo de salida**  
+ La ruta de acceso y el nombre del archivo de datos actual del generador de perfiles.  
   
- **Collection Mode**  
+ **Modo de recopilación**  
  SAMPLE o TRACE  
   
- **Maximum Processes**  
- El número máximo de procesos para los que se puede generar perfiles a la vez y el número de procesos actualmente activos.  
+ **Procesos máximos**  
+ El número máximo de procesos de los que se puede generar perfiles al mismo tiempo y el número de procesos actualmente activos.  
   
- **Maximum Threads**  
- El número máximo de subprocesos para los que se puede generar perfiles a la vez.  
+ **Máximo de subprocesos**  
+ El número máximo de subprocesos de los que se pueden generar perfiles de una vez.  
   
- **Number of Buffers**  
+ **Número de búferes**  
  El número de búferes de memoria dedicados a escribir datos de generación de perfiles.  
   
- **Size of Buffers**  
- El tamaño en bytes de un búfer de memoria.  
+ **Tamaño de búferes**  
+ El tamaño de un búfer de memoria en bytes.  
   
- La opción **Status** muestra la información de estado siguiente para cada proceso para el que se esté generando perfiles actualmente.  
+ La opción **Status** muestra la siguiente información de estado para cada proceso del que actualmente se generan perfiles.  
   
  **Process**  
- Nombre del proceso para el que se esté generando perfiles.  
+ Nombre del proceso del que se generan perfiles.  
   
- **Process ID**  
+ **Identificador del proceso**  
  Identificador del sistema del proceso.  
   
- **Num Threads**  
- Número de subprocesos actualmente en ejecución.  
+ **Número de subprocesos**  
+ Número de subprocesos que se están ejecutando actualmente.  
   
- **Start\/Stop Count**  
- Recuento del generador de perfiles interno principal para controlar la recolección de datos para este proceso.  El recuento debe ser igual a uno para recopilar datos.  Las API del generador de perfiles y las opciones **GlobalOn**, **GlobalOff**, **ProcessOn**, **ProcessOff**, **ThreadOn**y **ThreadOff** de VSPerfCmd pueden manipular el recuento de Inicio\/Parada.  
+ **Recuento de inicios y paradas**  
+ El recuento del generador de perfiles interno principal para controlar la recopilación de datos para este proceso. El recuento debe ser igual a uno para recopilar los datos. El recuento de inicios y paradas se puede manipular con las API del generador de perfiles y las opciones **GlobalOn**, **GlobalOff**, **ProcessOn**, **ProcessOff**, **ThreadOn** y **ThreadOff** de VSPerfCmd.  
   
- **Suspend\/Resume Count**  
- Recuento del generador de perfiles interno secundario para controlar la recolección de datos para este proceso.  El recuento debe ser menor o igual que cero para recopilar datos.  Solamente las API del generador de perfiles pueden manipular el recuento **Suspend\/Resume**.  
+ **Recuento de suspensiones y reanudaciones**  
+ El recuento del generador de perfiles interno secundario para controlar la recopilación de datos para este proceso. El número debe ser menor o igual que cero para recopilar los datos. El recuento de **suspensiones y reanudaciones** solo se puede manipular con las API del generador de perfiles.  
   
- **Users with access rights to monitor**  
- Muestra una lista de los nombres de usuario que tienen acceso al generador de perfiles.  Se puede conceder acceso a usuarios adicionales utilizando la opción **Admin** de VSPerfCmd.exe.  
+ **Usuarios con derechos de acceso al monitor**  
+ Enumera los nombres de los usuarios que tienen acceso al generador de perfiles. Se puede conceder acceso a usuarios adicionales mediante la opción **Admin** de VSPerfCmd.exe  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)

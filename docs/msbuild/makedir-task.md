@@ -1,50 +1,50 @@
 ---
-title: "MakeDir (Tarea) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#MakeDir"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MakeDir (tarea) [MSBuild]"
-  - "MSBuild, MakeDir (tarea)"
+title: Tarea MakeDir | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#MakeDir
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MakeDir task [MSBuild]
+- MSBuild, MakeDir task
 ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: d010e6ad8aaae06476a94c1589a4f69cf50c8ddc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# MakeDir (Tarea)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="makedir-task"></a>MakeDir (Tarea)
 Crea directorios y, si es preciso, cualquier directorio primario.  
   
-## Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `MakeDir`.  
+## <a name="parameters"></a>Parámetros  
+ En la siguiente tabla se describen los parámetros de la tarea `MakeDir` .  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
 |`Directories`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Conjunto de directorios que se va a crear.|  
-|`DirectoriesCreated`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Los directorios creados por esta tarea.  Si no se pudieron crear algunos directorios, puede que no contenga todos los elementos pasados al parámetro `Directories`.|  
+|`DirectoriesCreated`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Directorios que crea esta tarea. Si no se pudieron crear algunos directorios, podría no contener todos los elementos que se han pasado en el parámetro `Directories`.|  
   
-## Comentarios  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que hereda de la clase <xref:Microsoft.Build.Utilities.Task>.  Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension \(Clase base\)](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Comentarios  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, vea [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Ejemplo  
- El siguiente ejemplo de código utiliza la tarea `MakeDir` para crear el directorio especificado por la propiedad `OutputDirectory`.  
+## <a name="example"></a>Ejemplo  
+ En el siguiente ejemplo de código se usa la tarea `MakeDir` para crear el directorio especificado por la propiedad `OutputDirectory`.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
     <PropertyGroup>  
@@ -59,6 +59,6 @@ Crea directorios y, si es preciso, cualquier directorio primario.
 </Project>  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

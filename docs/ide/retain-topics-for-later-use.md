@@ -1,35 +1,25 @@
 ---
-title: "Conservar los temas para su uso posterior | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "hv_favorites"
-helpviewer_keywords: 
-  - "marcar temas [Visor de Ayuda 2.0]"
-  - "pestaña Favoritos [Visor de Ayuda 2.0]"
-  - "Visor de Ayuda 2.0, marcar temas"
-  - "Visor de Ayuda 2.0, copiar temas"
-  - "Visor de Ayuda 2.0, Favoritos (pestaña)"
-ms.assetid: f0a4c657-001d-4604-a403-d46f15782724
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+redirect_url: /visualstudio/ide/microsoft-help-viewer
+ms.openlocfilehash: 7727904a32064fb2758236f98869cea0e96a38f6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/07/2017
 ---
-# Conservar los temas para su uso posterior
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Cuando encuentre un tema útil, puede tener acceso al mismo más adelante; para ello, cópielo y péguelo en un archivo de texto e imprímalo, o guárdelo como favorito.  Por ejemplo, puede conservar el contenido para su uso posterior abriendo el menú contextual para los temas y eligiendo las opciones **Copiar**, **Imprimir**, **Vista previa de impresión** y **Agregar a Favoritos**.  
+title: "Conservar los temas para su uso posterior | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-help-viewer" ms.tgt_pltfrm: "" ms.topic: "article" f1_keywords: 
+  - "hv_favorites" helpviewer_keywords: 
+  - "Visor de Ayuda, marcar temas"
+  - "Visor de Ayuda, copiar temas"
+  - "Visor de Ayuda, pestaña Favoritos"
+  - "marcar temas [Visor de Ayuda]"
+  - "Pestaña Favoritos [Visor de Ayuda]" ms.assetid: f0a4c657-001d-4604-a403-d46f15782724 caps.latest.revision: 8 author: "gewarren" ms.author: "gewarren" manager: ghogen
+---
+# <a name="retain-topics-for-later-use"></a>Conservar los temas para su uso posterior
+Cuando encuentra un tema útil, dispone de varias opciones para tener acceso a él más adelante, como copiarlo y pegarlo en un archivo de texto, imprimirlo o guardarlo como favorito. Por ejemplo, si quiere conservar contenido para su uso posterior, abra el menú contextual de temas y elija las opciones **Copiar**, **Imprimir**, **Vista previa de impresión** o **Agregar a Favoritos**.  
   
-## Uso de la pestaña Favoritos  
- En la pestaña **Favoritos**, puede abrir el menú contextual para cualquier entrada y después cambiar su nombre, eliminarla u organizar las entradas en las carpetas.  
+## <a name="using-the-favorites-tab"></a>Usar la pestaña Favoritos  
+ En la pestaña **Favoritos**, puede abrir el menú contextual de cualquier entrada y cambiarle el nombre, eliminarla u organizar las entradas en carpetas.  
   
-## Vea también  
- [Teclas de método abreviado \(Visor de Ayuda\)](../ide/shortcut-keys-help-viewer.md)
+## <a name="see-also"></a>Vea también  
+ [Teclas de método abreviado (Visor de Ayuda)](../ide/shortcut-keys-help-viewer.md)

@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.threadblocking
-helpviewer_keywords:
-- Concurrency Visualizer, Threads View (Parallel Performance)
+f1_keywords: vs.performance.view.threadblocking
+helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1777df83f2c2764e173300f897b18a699a38c197
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
 Vista de subprocesos es la vista más detallada y con más características del visualizador de simultaneidad. Con esta vista puede identificar si los subprocesos se están ejecutando o se bloquearon por causa de la sincronización, E/S o algún otro motivo.  
@@ -85,7 +67,7 @@ Vista de subprocesos es la vista más detallada y con más características del 
   
  Aquí tiene una ilustración de la vista de subprocesos:  
   
- ![Vista de subprocesos](~/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![Vista de subprocesos](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 Vista de subprocesos  
   
  Inicialmente, los subprocesos se ordenan en el orden en que se crean, por lo que el subproceso de aplicación principal es el primero. Puede utilizar la opción de ordenación en la esquina superior izquierda de la vista para ordenar los subprocesos por otro criterio (por ejemplo, por la mayor parte de trabajo de ejecución realizado).  

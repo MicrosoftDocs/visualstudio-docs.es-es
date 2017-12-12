@@ -4,40 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.property.counters
+f1_keywords: vs.performance.property.counters
 helpviewer_keywords:
 - Windows counters in Profiling Tools
 - CPU counters in Profiling Tools
 ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 51d524bafd6e5014c1542b05d9fd3a908eca41df
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 El generador de perfiles de Visual Studio le permite recopilar datos de rendimiento generados por el sistema operativo (contadores de Windows) y datos de rendimiento generados por la unidad de procesador (contadores de CPU).  
@@ -47,7 +30,7 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Contadores de Windows  
  Los contadores de Windows forman parte de la infraestructura de diagnóstico de Windows que proporciona información sobre el rendimiento del sistema operativo o de una aplicación, un servicio o un controlador. Los contadores de Windows dependen de la configuración del equipo actual y podrían no estar disponibles en otros equipos. Los contadores de rendimiento de Windows se recopilan en archivos de datos de generación de perfiles como marcas de generación de perfiles, que pueden utilizarse para filtrar vistas e informes.  

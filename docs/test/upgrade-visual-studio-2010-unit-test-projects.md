@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d6550f2aa1aab249eda569ff84ddf4dcf488aa18
-ms.contentlocale: es-es
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 2e3e99bfad1ebf33f23c3b38189568935d0cedee
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Actualizar proyectos de prueba unitaria de Visual Studio 2010
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] incluye compatibilidad de proyecto de prueba con los proyectos de prueba de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1. Por ejemplo, los proyectos de prueba creados con [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 se pueden abrir con [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] sin necesidad de actualizar. Por lo tanto, el equipo puede utilizar [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] para trabajar con el mismo proyecto de prueba. Para obtener más información, consulte [Actualizar pruebas unitarias desde Visual Studio 2010](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
@@ -43,14 +26,14 @@ ms.lasthandoff: 05/13/2017
 >  Las pruebas unitarias existentes en los proyectos de prueba de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 funcionarán sin problemas entre [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]. No se realizan cambios a los archivos de proyecto de prueba cuando se abre un proyecto de prueba de Visual Studio 2010 que contiene las pruebas unitarias en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], o viceversa.  
   
 > [!CAUTION]
->  Visual Studio 2010 no puede abrir proyectos de C + + / CLI cuyo destino sea el conjunto de herramientas 11.0, es decir, proyectos creados en Visual Studio 2012. Esta restricción no solo se aplica a los proyectos de prueba unitaria de C++/CLI, sino también a todos los proyectos de C++ /CLI.  
+>  Visual Studio 2010 no puede abrir proyectos de C ++/CLI cuyo destino sea el conjunto de herramientas 11.0, es decir, proyectos creados en Visual Studio 2012 o versiones posteriores. Esta restricción no solo se aplica a los proyectos de prueba unitaria de C++/CLI, sino también a todos los proyectos de C++ /CLI.  
   
 > [!NOTE]
 >  Puede ejecutar las nuevas pruebas unitarias usando vstest.console.exe desde la línea de comandos. Para obtener más información sobre el uso de vstest.console.exe, consulte [Opciones de línea de comandos de VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options), o ejecute el comando mediante el modificador de ayuda: **vstest.console.exe /?**. Aún puede ejecutar las pruebas unitarias existentes mediante MStest.exe. Para obtener más información, consulte[Ejecutar pruebas automatizadas desde la línea de comandos usando MSTest](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest) y [Opciones de la línea de comandos para MSTest.exe](/devops-test-docs/test/mstest-exe-command-line-options).  
   
  Otro cambio importante es el nuevo Explorador de pruebas. En [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], algunas de las ventanas de pruebas con que puede conocer de versiones anteriores de Visual Studio han quedado en desuso, como por ejemplo la ventana Vista de pruebas. El Explorador de pruebas está diseñado para dar mejor soporte a los desarrolladores y a los equipos que incorporan las pruebas unitarias en sus prácticas de desarrollo de software. Para obtener más información, consulte [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).  
   
-## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012"></a>Problemas de compatibilidad entre Visual Studio 2010 SP1 y Visual Studio 2012  
+## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012-or-later"></a>Problemas de compatibilidad entre Visual Studio 2010 SP1 y Visual Studio 2012 o versiones posteriores  
  Estos son algunos problemas que debe tener en cuenta al migrar pruebas unitarias entre Visual Studio 2010 SP1 y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]:  
   
 |Funcionalidad de pruebas unitarias|Problema|Soluciones|  
@@ -65,4 +48,3 @@ ms.lasthandoff: 05/13/2017
  [Hacer una prueba unitaria de su código](../test/unit-test-your-code.md)   
  [Actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [Actualizar pruebas de IU codificadas desde Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-

@@ -1,30 +1,33 @@
 ---
-title: "Objetos y matrices (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "matrices [JavaScript]"
-  - "matrices [JavaScript], objetos"
+title: Objetos y matrices (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript]
+- arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6776701ba108ae0ecefc2331c2b12272e0c1be19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/27/2017
 ---
-# Objetos y matrices (JavaScript)
-Los objetos de [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] son colecciones de propiedades y métodos.  Un método es una función que es miembro de un objeto.  Una propiedad es un valor o un conjunto de valores \(en forma de matriz u objeto\) que es miembro de un objeto.  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] admite cuatro tipos de objetos:  
+# <a name="objects-and-arrays-javascript"></a>Objetos y matrices (JavaScript)
+Los objetos de [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] son colecciones de propiedades y métodos. Un método es una función que es miembro de un objeto. Una propiedad es un valor o un conjunto de valores (en forma de matriz u objeto) que es miembro de un objeto. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] admite cuatro tipos de objetos:  
   
 -   Objetos intrínsecos, como `Array` y `String`.  
   
@@ -34,10 +37,10 @@ Los objetos de [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] s
   
 -   Objetos ActiveX.  
   
-## Propiedades y métodos expando  
- Todos los objetos de [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] admiten propiedades y métodos expando, que se pueden agregar y quitar en tiempo de ejecución.  Estas propiedades y métodos pueden tener cualquier nombre y se pueden identificar mediante números.  Si el nombre de la propiedad o método es un identificador simple, puede escribirse después del nombre del objeto con un punto, como en `myObj.name`, `myObj.age` y `myObj.getAge` en el siguiente código:  
+## <a name="expando-properties-and-methods"></a>Propiedades y métodos expando  
+ Todos los objetos de [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] admiten propiedades y métodos expando, que se pueden agregar y quitar en tiempo de ejecución. Estas propiedades y métodos pueden tener cualquier nombre y se pueden identificar mediante números. Si el nombre de la propiedad o método es un identificador simple, puede escribirse después del nombre del objeto con un punto, como en `myObj.name`, `myObj.age` y `myObj.getAge` en el siguiente código:  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
 myObj.name = "Fred";  
 myObj.age = 42;  
@@ -60,9 +63,9 @@ document.write(myObj.getAge());
   
 ```  
   
- Si el nombre de la propiedad o método no es un identificador simple o no se conoce cuando se escribe el script, puede usar una expresión entre corchetes para indizar la propiedad.  Los nombres de todas las propiedades expando de [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] se convierten en cadenas antes de agregarse al objeto:  
+ Si el nombre de la propiedad o método no es un identificador simple o no se conoce cuando se escribe el script, puede usar una expresión entre corchetes para indizar la propiedad. Los nombres de todas las propiedades expando de [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] se convierten en cadenas antes de agregarse al objeto:  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
   
 // Add two expando properties that cannot be written in the  
@@ -76,14 +79,14 @@ myObj["not a valid identifier"] = "This is the property value";
 myObj[100] = "100";  
 ```  
   
- Para obtener información acerca de cómo crear un objeto a partir de una definición, vea [Crear objetos](../javascript/creating-objects-javascript.md).  
+ Para obtener información acerca de cómo crear un objeto a partir de una definición, consulte [Crear objetos](../javascript/creating-objects-javascript.md).  
   
-## Matrices como objetos  
- En [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], los objetos y matrices se controlan casi idénticamente, porque las matrices simplemente son un tipo especial de objeto.  Tanto los objetos como las matrices pueden tener propiedades y métodos.  
+## <a name="arrays-as-objects"></a>Matrices como objetos  
+ En [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], los objetos y matrices se controlan casi idénticamente, porque las matrices simplemente son un tipo especial de objeto. Tanto los objetos como las matrices pueden tener propiedades y métodos.  
   
- Las matrices tienen una propiedad `length` pero los objetos no.  Al asignar un valor a un elemento de una matriz cuyo índice es mayor que la longitud \(por ejemplo, `myArray[100] = "hello"`\), el valor de la propiedad `length` aumenta automáticamente a la nueva longitud.  De igual forma, si reduce el valor de la propiedad `length`, se elimina cualquier elemento cuyo índice esté fuera de la longitud de la matriz.  
+ Las matrices tienen una propiedad `length` pero los objetos no. Al asignar un valor a un elemento de una matriz cuyo índice es mayor que la longitud (por ejemplo, `myArray[100] = "hello"`), el valor de la propiedad `length` aumenta automáticamente a la nueva longitud. De igual forma, si reduce el valor de la propiedad `length`, se elimina cualquier elemento cuyo índice esté fuera de la longitud de la matriz.  
   
-```javascript  
+```JavaScript  
 // An array with three elements  
 var myArray = new Array(3);  
   
@@ -108,9 +111,9 @@ document.write("new length is : " + myArray.length);
   
 ```  
   
- Las matrices proporcionan métodos para recorrer y manipular miembros.  En el ejemplo siguiente se muestra cómo obtener las propiedades de los objetos almacenados en una matriz.  
+ Las matrices proporcionan métodos para recorrer y manipular miembros. En el ejemplo siguiente se muestra cómo obtener las propiedades de los objetos almacenados en una matriz.  
   
-```javascript  
+```JavaScript  
 var myArray = new Array(3);  
   
 // Add some data  
@@ -128,10 +131,10 @@ myArray.forEach(function (item) {
 // 2003  
 ```  
   
-## Matrices multidimensionales  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] no admite directamente matrices multidimensionales, pero puede obtener el comportamiento de matrices multidimensionales almacenando matrices en los elementos de otra matriz. \(Puede almacenar cualquier tipo de datos dentro de elementos de matriz, incluidas otras matrices\). Por ejemplo, en el código siguiente se compila una tabla de multiplicación para los números hasta el 5.  
+## <a name="multi-dimensional-arrays"></a>Matrices multidimensionales  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] no admite directamente matrices multidimensionales, pero puede obtener el comportamiento de matrices multidimensionales almacenando matrices en los elementos de otra matriz. (Puede almacenar cualquier tipo de datos dentro de elementos de matriz, incluidas otras matrices). Por ejemplo, en el código siguiente se compila una tabla de multiplicación para los números hasta el 5.  
   
-```javascript  
+```JavaScript  
 // The size of the table.  
 var iMaxNum = 5;  
 // Loop counters.  

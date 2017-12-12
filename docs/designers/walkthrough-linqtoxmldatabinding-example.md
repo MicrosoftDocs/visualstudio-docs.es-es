@@ -1,52 +1,53 @@
 ---
-title: "Tutorial: Ejemplo de LinqToXmlDataBinding | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Tutorial: Ejemplo de LinqToXmlDataBinding | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 08a27820e1fc3f2677bc64dac85a657a6d1db1b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Tutorial: Ejemplo de LinqToXmlDataBinding
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Este tutorial describe el ejemplo de LinqToXmlDataBinding y explica algunos de los contenidos más interesantes de sus dos archivos de origen principales \(L2DBForm.xaml y L2DBForm.xaml.cs\).  
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Tutorial: Ejemplo de LinqToXmlDataBinding
+Este tutorial describe el ejemplo de LinqToXmlDataBinding y explica algunos de los contenidos más interesantes de sus dos archivos de origen principales (L2DBForm.xaml y L2DBForm.xaml.cs).  
   
-## Requisitos previos  
- Antes de leer este tutorial, es recomendable que cree y ejecute el programa LinqToXmlDataBinding, tal como se describe en [Cómo compilar y ejecutar el ejemplo LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).  
+## <a name="prerequisites"></a>Requisitos previos  
+ Antes de leer este tutorial, recomendamos crear y ejecutar el programa LinqToXmlDataBinding, tal y como se describe en [Cómo compilar y ejecutar el ejemplo LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).  
   
-## Notas  
- El programa LinqToXmlDataBinding es una aplicación de Windows Presentation Foundation \(WPF\) que consta de archivos de origen C\# y XAML.Contiene un documento XML incrustado que define una lista de libros, y permite que el usuario vea, agregue, elimine y edite estas entradas.Consta de los dos archivos de origen principales siguientes:  
+## <a name="remarks"></a>Comentarios  
+ El programa LinqToXmlDataBinding es una aplicación de Windows Presentation Foundation (WPF) que consta de archivos de origen C# y XAML. Contiene un documento XML incrustado que define una lista de libros, y permite que el usuario vea, agregue, elimine y edite estas entradas. Consta de los dos archivos de origen principales siguientes:  
   
--   L2DBForm.xaml contiene el código de declaración XAML para la interfaz de usuario \(IU\) de la ventana principal.También contiene una sección de recursos de la ventana que define un proveedor de datos y un documento XML incrustado para la lista de libros.  
+-   L2DBForm.xaml contiene el código de declaración XAML para la interfaz de usuario (IU) de la ventana principal. También contiene una sección de recursos de la ventana que define un proveedor de datos y un documento XML incrustado para la lista de libros.  
   
 -   L2DBForm.xaml.cs contiene los métodos de control de eventos y de inicialización asociados a la IU.  
   
  La ventana principal se divide en las cuatro secciones de IU verticales siguientes:  
   
--   **XML** muestra el origen XML sin formato de la lista de libros incrustada.  
+-   **XML** muestra el origen XML sin procesar de la lista de libros insertada.  
   
 -   **Lista de libros** muestra las entradas de libro como texto estándar y permite que el usuario seleccione y elimine entradas individuales.  
   
--   **Editar libro seleccionado** permite que el usuario edite los valores asociados a la entrada de libro seleccionada actualmente.  
+-   **Edit Selected Book** (Editar libro seleccionado) permite que el usuario edite los valores asociados a la entrada de libro seleccionada actualmente.  
   
--   **Agregar nuevo libro** permite la creación de una entrada de libro nueva según los valores especificados por el usuario.  
+-   **Add New Book** (Agregar nuevo libro) permite la creación de una entrada de libro según los valores especificados por el usuario.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
   
 |Tema|Descripción|  
-|----------|-----------------|  
+|-----------|-----------------|  
 |[Código fuente de L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)|Incluye el contenido y la descripción del código XAML en el archivo L2DBForm.xaml.|  
-|[Código de origen de L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)|Incluye el contenido y la descripción del código fuente C\# del archivo L2DBForm.xaml.cs.|  
+|[Código fuente de L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)|Incluye el contenido y la descripción del código fuente C# del archivo L2DBForm.xaml.cs.|  
   
-## Vea también  
- [Ejemplo de enlace de datos de WPF con LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
- [Cómo compilar y ejecutar el ejemplo LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)
+## <a name="see-also"></a>Vea también  
+ [Ejemplo de enlace de datos WPF mediante LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
+ [Cómo: Compilar y ejecutar el ejemplo LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)

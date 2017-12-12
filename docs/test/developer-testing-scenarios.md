@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- unit testing, create unit tests
+helpviewer_keywords: unit testing, create unit tests
 ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
-ms.openlocfilehash: b36882588281fc95ff4814c148cd428d09196fa1
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: 8ca7133aa2cb4f02e3a8761d38fb22fcc2ce6122
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Herramientas de prueba para desarrolladores, escenarios y funciones
 
@@ -68,7 +51,7 @@ IntelliTest reduce drásticamente el esfuerzo de crear y mantener pruebas unitar
 
 Pruebe su interfaz de usuario (UI) con las mejores pruebas de interfaz de usuario de la clase y la comunidad.
 Las pruebas de UI codificada proporcionan una manera de crear pruebas completamente automatizadas con el fin de validar la funcionalidad y el comportamiento de la interfaz de usuario de la aplicación.
-Pueden automatizar las pruebas de la interfaz de usuario en varias tecnologías, incluidas las aplicaciones de la Tienda Windows basadas en XAML, las aplicaciones del explorador y las de SharePoint.
+Pueden automatizar las pruebas de la interfaz de usuario en varias tecnologías, incluidas las aplicaciones de UWP basadas en XAML, las aplicaciones del explorador y las de SharePoint.
 
 Tanto si elige las pruebas de UI codificada o pruebas genéricas de interfaz de usuario basadas en exploradores con Selenium, Visual Studio le proporciona todas las herramientas que necesita. 
 
@@ -76,7 +59,7 @@ Tanto si elige las pruebas de UI codificada o pruebas genéricas de interfaz de 
 
 * [Usar Automatización de la interfaz de usuario para probar el código](use-ui-automation-to-test-your-code.md)
 * [Comenzar a crear, modificar y mantener una prueba de UI codificada](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Probar aplicaciones de la Tienda Windows con pruebas de UI codificadas](test-windows-store-8-1-apps-with-coded-ui-tests.md)
+* [Comprobación de aplicaciones de UWP con pruebas de UI codificadas](test-windows-store-8-1-apps-with-coded-ui-tests.md)
 * [Probar aplicaciones de Windows Phone con pruebas de UI codificadas](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
 * [Probar aplicaciones de SharePoint con pruebas de UI codificadas](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introducción a las pruebas de UI codificadas con Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
@@ -118,4 +101,3 @@ Visual Studio también puede ampliarse y abre la puerta a adaptadores de pruebas
 * [Acelerar la ejecución de pruebas unitarias en Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
 * [Ejecución de pruebas unitarias contextuales y paralelas](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Pruebas unitarias, cobertura de código y análisis de clon de código con Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
-

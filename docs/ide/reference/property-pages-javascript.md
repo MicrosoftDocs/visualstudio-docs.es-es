@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,39 +16,24 @@ f1_keywords:
 - javascript.project.property.debugging.machinename
 - javascript.project.property.debugging.allowlocalnetworkloopback
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 5d69e9d8d81ed36bb5933c42f3d8e9a499cd0b9d
-ms.contentlocale: es-es
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 1540667f1ed5356587837e83d30307901de4d15c
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 Las **páginas Propiedades** proporcionan acceso a la configuración del proyecto. Puede usar las páginas que aparecen en las **páginas Propiedades** para cambiar las propiedades del proyecto.  
 
- Para obtener acceso a las propiedades del proyecto, seleccione un nodo de proyecto en el **Explorador de soluciones**. En el menú **Proyecto**, haga clic en **Propiedades**.  
+Para obtener acceso a las propiedades del proyecto, seleccione un nodo de proyecto en el **Explorador de soluciones**. En el menú **Proyecto**, haga clic en **Propiedades**.  
 
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
 
- Las siguientes páginas y opciones aparecen en las **páginas Propiedades**.  
+Las siguientes páginas y opciones aparecen en las **páginas Propiedades**.  
 
 ## <a name="configuration-and-platform-page"></a>Página de configuración y plataforma  
  Utilice las siguientes opciones para seleccionar la configuración y la plataforma para mostrar o modificar.  
@@ -64,7 +48,7 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
  Utilice las siguientes opciones para establecer las propiedades generales del proyecto.  
 
 > [!NOTE]
->  Algunas opciones solo están disponibles en aplicaciones de la Tienda Windows.  
+>  Algunas opciones solo están disponibles en aplicaciones para UWP.  
 
  **Ruta de acceso de salida**  
  Especifica la ubicación de los archivos de salida para la configuración del proyecto. La ruta de acceso es relativa. Si escribe una ruta de acceso absoluta, se guarda la ruta de acceso absoluta en el proyecto. La ruta de acceso predeterminada es bin\Debug.  
@@ -78,7 +62,7 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
  Utilice las siguientes opciones para establecer las propiedades para depurar el comportamiento en el proyecto.  
 
 > [!NOTE]
->  Algunas opciones solo están disponibles en aplicaciones de la Tienda Windows.  
+>  Algunas opciones solo están disponibles en aplicaciones para UWP.  
 
  **Depurador para iniciar**  
  Especifica el host predeterminado para el depurador.  
@@ -89,18 +73,17 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
 
 -   Seleccione **Equipo remoto** para iniciar la aplicación en un equipo remoto. Para obtener más información, vea [Ejecutar aplicaciones en un equipo remoto](http://go.microsoft.com/fwlink/?LinkId=234914).  
 
- **Iniciar aplicación**  
- Especifica si se debe iniciar la aplicación cuando presiona F5 o hace clic en **Depurar**, **Iniciar depuración**. Seleccione **Sí** para iniciar la aplicación. En caso contrario, seleccione **No**. Si selecciona **No**, aún puede depurar la aplicación si usa un método diferente para iniciarla.  
+**Iniciar aplicación**  
+Especifica si se debe iniciar la aplicación cuando presiona F5 o hace clic en **Depurar**, **Iniciar depuración**. Seleccione **Sí** para iniciar la aplicación. En caso contrario, seleccione **No**. Si selecciona **No**, aún puede depurar la aplicación si usa un método diferente para iniciarla.  
 
- **Tipo de depurador**  
- Especifica los tipos de código para depurar. Seleccione **Solo scripts** para depurar código de JavaScript. Seleccione **Solo administrado** para depurar código administrado por Common Language Runtime. Seleccione **Solo nativo** para depurar código de C++. Seleccione **Nativo con Script** para depurar C++ y JavaScript. Seleccione **Mixto (administrado y nativo)** para depurar código administrado y código de C++.  
+**Tipo de depurador**  
+Especifica los tipos de código para depurar. Seleccione **Solo scripts** para depurar código de JavaScript. Seleccione **Solo administrado** para depurar código administrado por Common Language Runtime. Seleccione **Solo nativo** para depurar código de C++. Seleccione **Nativo con Script** para depurar C++ y JavaScript. Seleccione **Mixto (administrado y nativo)** para depurar código administrado y código de C++.  
 
- **Permitir bucle invertido de la red local**  
- Especifica si se permite el acceso a la dirección IP de bucle invertido para probar aplicaciones. Seleccione **Sí** para permitir el uso de la dirección de bucle invertido si la aplicación cliente se encuentra en el mismo equipo en el que se está ejecutando la aplicación de servidor. En caso contrario, seleccione **No**. Esta propiedad está disponible solo si la propiedad **Depurador para iniciar** está establecida en **Equipo remoto**.  
+**Permitir bucle invertido de la red local**  
+Especifica si se permite el acceso a la dirección IP de bucle invertido para probar aplicaciones. Seleccione **Sí** para permitir el uso de la dirección de bucle invertido si la aplicación cliente se encuentra en el mismo equipo en el que se está ejecutando la aplicación de servidor. En caso contrario, seleccione **No**. Esta propiedad está disponible solo si la propiedad **Depurador para iniciar** está establecida en **Equipo remoto**.  
 
- **Nombre de equipo**  
- Especifica el nombre del equipo remoto para hospedar al depurador. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.  
+**Nombre de equipo**  
+Especifica el nombre del equipo remoto para hospedar al depurador. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.  
 
- **Requerir autenticación**  
- Especifica si el equipo remoto requiere autenticación. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.
-
+**Requerir autenticación**  
+Especifica si el equipo remoto requiere autenticación. Esta propiedad está disponible solo si **Depurador para iniciar** está establecido en **Equipo remoto**.

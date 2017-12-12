@@ -1,28 +1,28 @@
 ---
-title: "Seguimiento de archivos | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild, seguimiento de archivos"
+title: Seguimiento de archivos | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, file tracking
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a43c651b6f39e53b77eabe261c67ad7ca0fdcf78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Seguimiento de archivos
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Los registros de seguimiento de archivos llaman al sistema de archivos de Windows para un proceso y sus procesos secundarios.  Para controlar cuándo activar y desactivar este registro y especificar el archivo de registro que se debe utilizar, los programas llaman a las funciones que se enumeran a continuación.  
+# <a name="file-tracking"></a>Seguimiento de archivos
+Los registros de seguimiento de archivos llaman al sistema de archivos de Windows para un proceso y sus procesos secundarios. Para controlar cuándo activar y desactivar este registro y especificar el archivo de registro que se debe utilizar, los programas llaman a las funciones que se enumeran a continuación.  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [EndTrackingContext](../msbuild/endtrackingcontext.md)  
  Detiene el seguimiento del contexto actual.  
   

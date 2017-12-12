@@ -1,42 +1,43 @@
 ---
-title: "Marca | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: MarK | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 1d72cef3-bb09-4bbb-8864-6ea0ab623ff9
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6992254d9c62c3f8e35d20a56bd7edd32315f10a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Marca
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La opción **Mark** de VSPerfCmd.exe inserta la información especificada en el archivo de datos de generación de perfiles.  Se puede hacer una lista de Marca en un informe de VSPerfReport independiente o en la vista de informe Marca de la interfaz de usuario del generador de perfiles.  **Mark** se puede usar para especificar los puntos inicial y final en los filtros de informe y vista.  
+# <a name="mark"></a>Marca
+La opción **MarK** (marca) de VSPerfCmd.exe inserta la información especificada en el archivo de datos de generación de perfiles. La marca puede incluirse en un informe de VSPerfReport independiente o en la vista de informe de marca de la interfaz de usuario del generador de perfiles. **Mark** se puede usar para especificar los puntos inicial y final en los filtros de informe y vista.  
   
- La opción **Mark** debe ser la única opción especificada en la línea de comandos.  
+ La opción **Mark** debe ser la única especificada en la línea de comandos.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
-VSPerfCmd.exe /Mark:MarkID,[MarkName]   
+VSPerfCmd.exe /Mark:MarkID,[MarkName]  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `MarkID`  
- Entero definido por el usuario que se muestra como identificador de marca en las vistas e informes del generador de perfiles.  `MarkID` no tiene que ser único.  
+ Entero definido por el usuario que aparece como el identificador de marca en los informes y vistas de generador de perfiles. `MarkID` no tiene que ser único.  
   
  `MarkName`  
- \(Opcional\) Cadena definida por el usuario que se muestra como nombre de marca en las vistas y los informes del generador de perfiles.  Si no se especifica `MarkName`, el campo Nombre de marca de la lista de marcas aparece vacío.  Incluya las cadenas que contienen espacios o barras diagonales \("\/"\) entre comillas.  
+ (Opcional) Cadena definida por el usuario que aparece como el nombre de la marca en los informes y vistas de generador de perfiles. Si `MarkName` no se especifica, el campo de nombre de la marca aparecerá vacío. Entrecomille las cadenas que contengan espacios o barras diagonales ("/").  
   
-## Ejemplo  
- En este ejemplo se inserta una marca con el identificador 123 y el nombre de marca "TestMark".  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo se inserta una marca con un identificador "123" y el nombre de marca "TestMark".  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -44,8 +45,8 @@ VSPerfCmd.exe /Launch:TestApp.exe
 VSPerfCmd.exe /Mark:123,TestMark  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)

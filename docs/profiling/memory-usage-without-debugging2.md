@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,31 +13,15 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: caa4a551c437a6d0479ff1a6fdd5526c6837721a
-ms.contentlocale: es-es
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 7dea60ba0f6a443b8db94611460442bd08a8cf95
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="memory-usage-without-the-debugger"></a>Uso de memoria sin el depurador
 Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:  
@@ -220,5 +203,8 @@ Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:
 |**Tamaño inclusivo (bytes)**|Tamaño de los objetos de la instantánea principal, incluso el tamaño de los objetos incluidos en los objetos.|  
   
 ## <a name="see-also"></a>Vea también  
- [Memoria de JavaScript](../profiling/javascript-memory.md) [Generación de perfiles en Visual Studio](../profiling/index.md) [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md) [Procedimientos recomendados para aplicaciones de la Tienda Windows con C++, C# y Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Memoria de JavaScript](../profiling/javascript-memory.md)  
+ [Generación de perfiles en Visual Studio](../profiling/index.md)  
+ [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)  
+ [Procedimientos recomendados de rendimiento para aplicaciones para UWP con C++, C# y Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosticar problemas de memoria con la nueva herramienta Uso de memoria en Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

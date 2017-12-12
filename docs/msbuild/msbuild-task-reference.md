@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,32 +12,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, tasks
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 48f6019ef12e2637917a0b70fbc4eaf3e0eb6f20
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c0d1474fb03acd838387677786656967e852fdf9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-task-reference"></a>Referencia de tareas de MSBuild
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas de la siguiente lista se incluyen con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Cuando se instala [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], hay tareas adicionales disponibles que se utilizan para compilar proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para obtener más información, consulte [Tareas de MSBuild específicas de Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
@@ -52,13 +36,13 @@ Las tareas proporcionan el código que se ejecuta durante el proceso de compilac
   
 ## <a name="in-this-section"></a>En esta sección  
  [Clase base de tarea](../msbuild/task-base-class.md)  
- Agrega varios parámetros a las tareas que se derivan de la clase <xref:Microsoft.Build.Utilities.Task>.  
+ Agrega varios parámetros a las tareas que derivan de la clase <xref:Microsoft.Build.Utilities.Task>.  
   
  [Clase base TaskExtension](../msbuild/taskextension-base-class.md)  
- Agrega varios parámetros a las tareas que se derivan de la clase <xref:Microsoft.Build.Tasks.TaskExtension>.  
+ Agrega varios parámetros a las tareas que derivan de la clase <xref:Microsoft.Build.Tasks.TaskExtension>.  
   
  [Clase base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)  
- Agrega varios parámetros a las tareas que se derivan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>.  
+ Agrega varios parámetros a las tareas que derivan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>.  
   
  [Tarea AL (Assembly Linker)](../msbuild/al-assembly-linker-task.md)  
  Crea un ensamblado con un manifiesto a partir de uno o más archivos que son módulos o archivos de recursos.  

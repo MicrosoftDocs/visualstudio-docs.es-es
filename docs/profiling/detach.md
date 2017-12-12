@@ -1,56 +1,57 @@
 ---
-title: "Desasociar | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Desasociar | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 97d48bdcfe663fe5434622775add890166663276
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Desasociar
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-La opción de VSPerfCmd.exe **Detach** desconecta el generador de perfiles de los procesos especificados o de todos los procesos, si no se especificó ninguno.  La generación de perfiles se debe haber inicializado utilizando el método de muestreo.  
+# <a name="detach"></a>Desasociar
+La opción **Desasociar** de VSPerfCmd.exe desconecta el generador de perfiles de los procesos especificados o de todos los procesos si no se especifica ninguno. Se debe haber inicializado la generación de perfiles mediante el método de muestreo.  
   
- La generación de perfiles que se inicia con las opciones **Launch** o **Attach** se puede desconectar con **Detach**.  El generador de perfiles se puede volver a adjuntar utilizando subsiguientes comandos **Attach**.  
+ La generación de perfiles que se ha iniciado con las opciones **Iniciar** o **Adjuntar** se puede desconectar con **Desasociar**. El generador de perfiles se puede volver a adjuntar mediante los comandos **Adjuntar** subsiguientes.  
   
- **Detach** no cierra el archivo de datos de generación de perfiles.  Utilice la opción **Shutdown** para finalizar la generación de perfiles y cerrar el archivo de datos.  
+ **Desasociar** no cierra el archivo de datos de generación de perfiles. Use la opción **Cierre** para finalizar la generación de perfiles y cerrar el archivo de datos.  
   
 > [!NOTE]
->  Si la opción **Start** se especificó con la opción **Crosssession**, cualquier llamada a **VSPerfCmd \/Attach** o a **VSPerfCmd \/Detach** también debe especificar **Crosssession**.  
+>  Si la opción **Iniciar** se ha especificado con la opción **CrossSession**, en cualquier llamada a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** también se debe especificar **CrossSession**.  
   
-## Sintaxis  
+## <a name="syntax"></a>Sintaxis  
   
 ```  
 VSPerfCmd.exe /Detach[:PIDs|ProcessNames]  
 ```  
   
-#### Parámetros  
+#### <a name="parameters"></a>Parámetros  
  `PIDs|ProcessNames`  
- `PID`\- El identificador numérico del sistema de uno o más procesos.  
+ `PID`: identificador del sistema numérico de uno o varios procesos.  
   
- `ProcessNames`: nombre del proceso.  Si hay varias instancias del proceso con nombre en ejecución, los resultados son impredecibles.  
+ `ProcessNames`: nombre del proceso. Si se ejecutan varias instancias del proceso designado, los resultados son imprevisibles.  
   
- Separe los diversos procesos con comas.  
+ Separe varios procesos con comas.  
   
- Si no se especifica ningún proceso, el generador de perfiles se desasocia de todos los procesos para los que se generó perfiles.  
+ Si no se especifica ningún proceso, el generador de perfiles se desasocia de todos los procesos para los que se generan perfiles.  
   
-## Opciones válidas  
- Las opciones **VSPerfCmd** siguientes se pueden combinar con la opción **Attach** en una línea de comandos única.  
+## <a name="valid-options"></a>Opciones válidas  
+ Las opciones siguientes de **VSPerfCmd** se pueden combinar con la opción **Adjuntar** en una sola línea de comandos.  
   
- **Crosssession**  
- Habilita la generación de perfiles de aplicaciones en sesiones distintas del inicio de sesión.  Necesaria si se especificó la opción **Start** con la opción **Crosssession**.  
+ **CrossSession**  
+ Habilita la generación de perfiles de aplicaciones en las sesiones que no sean la sesión de inicio. Es obligatorio si la opción **Iniciar** se ha especificado con la opción **CrossSession**.  
   
-## Ejemplo  
- En este ejemplo, el comando **Detach** suspende la generación de perfiles y el comando **Shutdown** cierra el archivo de datos del generador de perfiles.  
+## <a name="example"></a>Ejemplo  
+ En este ejemplo, el comando **Desasociar** suspende la generación de perfiles y el comando **Cierre** cierra el archivo de datos del generador de perfiles.  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -60,8 +61,8 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown  
 ```  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)
+ [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)

@@ -1,35 +1,31 @@
 ---
 title: "Depuración de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2192dc77-b5da-4332-b753-fa20f03f81e0
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7a6aac76bc3830dd6c003c9834b242c6d79f7821
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 92fd0f30dfbb09f0eca8d2c9bc98d7904d81353c
-ms.contentlocale: es-es
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="debugging-your-python-code"></a>Depuración del código Python
 
 Visual Studio proporciona una experiencia de depuración completa para Python, lo que incluye la asociación a procesos en ejecución, la evaluación de expresiones en las ventanas Inspección e Inmediato, la inspección de variables locales, los puntos de interrupción, las instrucciones de depuración paso a paso por instrucciones/salir de la depuración/depuración paso a paso procedimiento, la opción Establecer la instrucción siguiente y otras muchas características. 
 
-Para acceder a una introducción sobre la depuración, consulte el vídeo de youtube.com (3 minutos y 30 segundos) [Getting Started with PTVS, Part 4: Debugging](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Introducción a PTVS, parte 4: depuración).
+Para obtener una información general sobre la depuración, consulte [Debugging Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Depurar Python) (Microsoft Virtual Academy, 3 min 32 s).
 
-> [!VIDEO https://www.youtube.com/embed/bO7wpzgy74A]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
 
 En este tema:
 
@@ -44,13 +40,15 @@ Vea también los siguientes temas de depuración específicos para distintos esc
 - [Mixed-mode Python/C++ debugging](debugging-mixed-mode.md) (Depuración en modo mixto Python/C++)
 - [Symbols for mixed-mode debugging](debugging-symbols-for-mixed-mode.md) (Símbolos de depuración en modo mixto)
 
-<a name="debugging-without-a-project"</a>
+<a name="debugging-without-a-project"></a>
+
 > [!Tip]
-> Python en Visual Studio admite la depuración sin un proyecto. Con un archivo independiente de Python abierto, haga clic con el botón derecho en el editor y seleccione **Start with Debugging** (Iniciar con depuración). Visual Studio lanzará el script con el entorno predeterminado global (consulte [Entornos de Python](python-environments.md) y sin argumentos. Pero desde ese momento, dispone de compatibilidad total para depuración.
+> Python en Visual Studio admite la depuración sin un proyecto. Con un archivo independiente de Python abierto, haga clic con el botón derecho en el editor y seleccione **Iniciar con depuración**. Visual Studio lanzará el script con el entorno predeterminado global (consulte [Entornos de Python](python-environments.md)) y sin argumentos. Pero desde ese momento, dispone de compatibilidad total para depuración.
 >
 > Para controlar el entorno y los argumentos, cree fácilmente un proyecto para el código con la plantilla [Desde código de Python existente](python-projects.md#creating-a-project-from-existing-files).
 
-<a name="debugging-with-a-project"</a>
+<a name="debugging-with-a-project"></a>
+
 ## <a name="basic-debugging"></a>Depuración básica
 
 El flujo de trabajo de depuración básica conlleva configurar puntos de interrupción, recorrer paso a paso el código, inspeccionar valores y administrar excepciones, tal y como se describe en las secciones siguientes. Para obtener información detallada sobre el depurador de Visual Studio, vea [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md) (Depuración en Visual Studio).

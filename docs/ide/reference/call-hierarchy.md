@@ -1,69 +1,68 @@
 ---
-title: "Jerarqu&#237;a de llamadas | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.CallHierarchy"
-helpviewer_keywords: 
-  - "Jerarquía de llamadas"
+title: "Jerarquía de llamadas | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.CallHierarchy
+helpviewer_keywords: Call Hierarchy
 ms.assetid: c55bda01-d7de-4823-8f9a-1bcc37dbb74a
-caps.latest.revision: 40
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 40
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 065806ec223273bbacba6da7702f21bc25510983
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# Jerarqu&#237;a de llamadas
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-La jerarquía de llamadas permite navegar por el código mostrando todas las llamadas a y desde un método, propiedad, o un constructor seleccionados.  Esto permite entender mejor cómo fluye el código y evaluar los efectos de los cambios que se realizan en el código.  Puede examinar varios niveles de código para ver cadenas complejas de llamadas a métodos y puntos de entrada adicionales al código, lo que le permite explorar todas las posibles rutas de ejecución.  
+# <a name="call-hierarchy"></a>Jerarquía de llamadas
+La jerarquía de llamadas le permite navegar por el código al mostrar todas las llamadas a y desde un constructor, una propiedad o un método seleccionados. Esto le permite comprender mejor cómo fluye el código y evaluar los efectos de los cambios en el código. Puede examinar varios niveles de código para ver cadenas complejas de llamadas de métodos y puntos de entrada adicionales al código, lo que le permite explorar todas las posibles rutas de acceso de ejecución.  
   
- Jerarquía de llamadas está disponible en tiempo de diseño, a diferencia de la pila de llamadas que muestra el depurador.  
+ La jerarquía de llamadas está disponible en tiempo de diseño, a diferencia de la pila de llamadas mostrada por el depurador.  
   
-## Usar Jerarquía de llamadas  
- Para mostrar la ventana **Jerarquía de llamadas**, haga clic con el botón secundario en el nombre de una llamada a un método, propiedad o constructor y, a continuación, haga clic en **Ver jerarquía de llamadas**.  
+## <a name="using-call-hierarchy"></a>Usar la jerarquía de llamadas  
+ Para mostrar la ventana **Jerarquía de llamadas**, haga clic con el botón derecho en el nombre de un método, una propiedad o una llamada de constructor y después haga clic en **Ver jerarquía de llamadas**.  
   
- El nombre del método aparece en un panel de vista de árbol de la ventana **Jerarquía de llamadas**.  Si expande el nodo del miembro, aparecen los subnodos **Llamadas a** *nombre de miembro* y **Llamadas desde** *nombre de miembro*.  La ilustración siguiente muestra estos nodos de la ventana **Jerarquía de llamadas**.  
+ El nombre del miembro aparece en un panel de vista de árbol en la ventana **Jerarquía de llamadas**. Si expande el nodo del miembro, aparecen los subnodos **Llamadas a***nombre del miembro* y **Llamadas desde***nombre del miembro*. En la ilustración siguiente, se muestran estos nodos en la ventana **Jerarquía de llamadas**.  
   
  ![Jerarquía de llamadas con un nodo abierto](../../ide/reference/media/onenode.png "OneNode")  
 Ventana Jerarquía de llamadas  
   
 -   Si expande el nodo **Llamadas a**, se muestran todos los miembros que llaman al miembro seleccionado.  
   
--   Si expande el nodo **Llamadas desde**, se muestran todos los miembros llamados por el miembro seleccionado.  
+-   Si expande el nodo **Llamadas desde**, se muestran todos los miembros a los que llama el miembro seleccionado.  
   
- A continuación, puede expandir cada uno de estos miembros del subnodo en los nodos **Llamadas a** y **Llamadas desde**.  Eso le permite navegar a la pila de llamadores, como se muestra en la ilustración siguiente.  
+Después, puede expandir cada uno de estos miembros del subnodo en los nodos **Llamadas a** y **Llamadas desde**. Esto le permite navegar por la pila de autores de llamadas, como se muestra en la siguiente ilustración.  
   
- ![Jerarquía de llamadas con varios nodos abiertos](../../ide/media/multiplenodes.png "MultipleNodes")  
+![Jerarquía de llamadas con varios nodos abiertos](../../ide/media/multiplenodes.png "MultipleNodes")  
 Ventana Jerarquía de llamadas  
   
- En el caso de los miembros que se definen como virtuales o abstractos, aparece un nodo **Invalida nombre del método**.  En el caso de los miembros de interfaz, aparece el nodo **Implementa nombre del método**.  Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.  
+Para los miembros que están definidos como virtuales o abstractos, se muestra un nodo **Invalida “nombre de método”**. Para los miembros de interfaz, se muestra un nodo **Implementa nombre de método**. Estos nodos expansibles aparecen en el mismo nivel que los nodos **Llamadas a** y **Llamadas desde**.  
   
- El cuadro **Ámbito de búsqueda** de la barra de herramientas contiene las opciones **Mi solución**, **Proyecto actual** y **Documento actual**.  
+El cuadro **Ámbito de búsqueda** en la barra de herramientas contiene opciones para **Mi solución**, **Proyecto actual** y **Documento actual**.  
   
- Cuando se selecciona un miembro secundario en el panel de vista de árbol de **Jerarquía de llamadas**:  
+Al seleccionar un miembro secundario en el panel de vista de árbol **Jerarquía de llamadas**:  
   
--   En el panel de detalles **Jerarquía de llamadas** se muestran todas las líneas de código en las que se llama a ese miembro secundario desde el miembro primario.  
+-   El panel de detalles **Jerarquía de llamadas** muestra todas las líneas de código en que el miembro primario llama a ese miembro secundario.  
   
--   **Ventana Definición de código**, si está abierto, se muestra el código del miembro seleccionado.  Esta ventana está disponible en C\# y C\+\+.  Para obtener más información sobre esta ventana, vea [Ver la estructura del código](../../ide/viewing-the-structure-of-code.md).  
+-   La **ventana Definición de código**, si está abierta, muestra el código del miembro seleccionado. Esta ventana está disponible en C# y C++. Para más información sobre esta ventana, vea [Ver la estructura del código](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
->  Jerarquía de llamadas no encuentra las referencias del grupo de métodos, que contiene ubicaciones en las que un método se agrega como controlador de eventos o se asigna a un delegado.  Para buscar todas las referencias a un método, puede usar el comando **Buscar todas las referencias**.  
+>  La jerarquía de llamadas no encuentra referencias a grupos de métodos, que incluyen los lugares en los que se agrega un método como controlador de eventos o se asigna a un delegado. Para buscar todas las referencias a un método, puede usar el comando **Buscar todas las referencias**.  
   
-## Elementos del menú contextual  
- En la tabla siguiente se describen varias opciones del menú contextual disponibles al hacer clic con el botón secundario en un nodo del panel de vista de árbol.  
+## <a name="shortcut-menu-items"></a>Elementos del menú contextual  
+ En la tabla siguiente, se describen varias opciones del menú contextual que están disponibles cuando hace clic con el botón derecho en un nodo en el panel de vista de árbol.  
   
 |Elemento del menú contextual|Descripción|  
-|----------------------------------|-----------------|  
-|**Agregar como nueva raíz**|Agrega el nodo seleccionado al panel de vista de árbol como un nuevo nodo raíz.  De este modo, podrá concentrarse en un subárbol concreto.|  
-|**Quitar raíz**|Quita el nodo raíz seleccionado del panel de vista de árbol.  Esta opción solo está disponible desde un nodo raíz.<br /><br /> También puede usar el botón de la barra de herramientas **Quitar raíz** para quitar el nodo raíz seleccionado.|  
-|**Ir a definición**|Ejecuta el comando Ir a definición en el nodo seleccionado.  Con esto se navega a la definición original de una llamada al miembro o definición de variable.<br /><br /> Para ejecutar el comando Ir a definición, también puede hacer doble clic en el nodo seleccionado o presionar F12.|  
-|**Buscar todas las referencias**|Ejecuta el comando Buscar todas las referencias en el nodo seleccionado.  Esto busca todas las líneas de código de su proyecto que hacen referencia a una clase o miembro.<br /><br /> También puede usar MAYÚS\+F12 para ejecutar el comando Buscar todas las referencias en el nodo seleccionado.|  
-|**Copiar**|Copia el contenido del nodo seleccionado \(pero no sus subnodos\).|  
-|**Actualizar**|Contrae el nodo seleccionado de modo que al volver a expandirse muestre la información actual.|
+|-----------------------|-----------------|  
+|**Agregar como nueva raíz**|Agrega el nodo seleccionado al panel de vista de árbol como un nuevo nodo raíz. Esto le permite centrar la atención en un subárbol específico.|  
+|**Quitar raíz**|Quita el nodo raíz seleccionado del panel de vista de árbol. Esta opción solo está disponible desde un nodo raíz.<br /><br /> También puede usar el botón de la barra de herramientas **Quitar raíz** para quitar el nodo raíz seleccionado.|  
+|**Ir a definición**|Ejecuta el comando Ir a definición en el nodo seleccionado. De esta forma, se desplaza a la definición original de una llamada de miembro o definición de variable.<br /><br /> Para ejecutar el comando Ir a definición, también puede hacer doble clic en el nodo seleccionado o presionar F12 en el nodo seleccionado.|  
+|**Buscar todas las referencias**|Ejecuta el comando Buscar todas las referencias en el nodo seleccionado. De esta forma, busca todas las líneas de código en el proyecto que hacen referencia a una clase o un miembro.<br /><br /> También puede usar MAYÚS+F12 para ejecutar el comando Buscar todas las referencias en el nodo seleccionado.|  
+|**Copiar**|Copia el contenido del nodo seleccionado (pero no sus subnodos).|  
+|**Actualizar**|Contrae el nodo seleccionado para que, al volver a expandirlo, se muestre la información actual.|

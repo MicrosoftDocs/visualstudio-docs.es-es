@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 592cde9dac7ea7b49934200469e85caf1fd58f82
-ms.contentlocale: es-es
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 42a66b69bb2c1736ddf3cb4c07e8ef8be86ed4d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
+# <a name="work-with-multiple-user-accounts"></a>Trabajar con varias cuentas de usuario
 Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, puede agregarlas todas a Visual Studio para que pueda acceder a los recursos desde cualquier cuenta sin tener que iniciar sesión separadamente. En estos momentos, Azure, Application Insights, Team Foundation Server y los servicios de Office 365 admiten la experiencia de inicio de sesión simplificada. Más adelante pueden hacerse disponibles otros servicios.
 
  Después de agregar varias cuentas en un equipo, el conjunto de cuentas lo acompañará si inicia sesión en Visual Studio desde otro equipo. Es importante tener en cuenta que, aunque los nombres de cuenta tienen movilidad, las credenciales no. Por lo tanto, se le pedirá que escriba las credenciales de las otras cuentas la primera vez que intente usar sus recursos en el nuevo equipo.  
@@ -61,12 +44,12 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
 
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>Obtener acceso a su cuenta de Azure a través del cuadro de diálogo Agregar servicio conectado  
 
-1.  Cree un proyecto de aplicación universal en C#.  
+1.  Cree un proyecto de aplicación para UWP en C#.  
 
 2.  Pulse el nodo de proyecto en el Explorador de soluciones y, después, seleccione **Agregar, Servicio conectado**. Aparece el asistente **Agregar servicio conectado** con la lista de los servicios de la cuenta de Azure que está asociada con su id. de inicio de sesión de Visual Studio. No tiene que iniciar sesión por separado en Azure. Sin embargo, deberá iniciar sesión en las otras cuentas la primera vez que intente acceder a sus recursos desde un equipo determinado.  
 
     > [!WARNING]
-    >  Si es la primera vez que va a crear una aplicación para la Tienda en Visual Studio en un equipo específico, se le pedirá que habilite el dispositivo para el modo de desarrollo yendo a **Configuración &#124; Actualizaciones y seguridad &#124; Para desarrolladores** en su equipo. Para obtener más información, vea [Habilitar el dispositivo para el desarrollo](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).  
+    >  Si es la primera vez que va a crear una aplicación para UWP en Visual Studio en un equipo específico, se le pedirá que habilite el dispositivo para el modo de desarrollo. Para ello, vaya a **Configuración &#124; Actualizaciones y seguridad &#124; Para desarrolladores** en el equipo. Para obtener más información, vea [Habilitar el dispositivo para el desarrollo](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).  
 
 ###  <a name="access_azure"></a> Obtener acceso a Azure Active Directory en un proyecto web  
  Azure AD ofrece compatibilidad para el inicio de sesión único de usuario final en las aplicaciones web ASP.NET MVC o autenticación AD en los servicios web de API. La autenticación de dominio es diferente de la autenticación de cuentas de usuario individuales; los usuarios que tienen acceso a su dominio de Active Directory pueden usar sus cuentas de Azure AD existentes para conectarse a sus aplicaciones web. Las aplicaciones de Office 365 también pueden utilizar la autenticación de dominio. Para ver esto en funcionamiento, cree una aplicación web (**Archivo, Nuevo proyecto, C#, Nube, Aplicación web ASP.NET**). En el cuadro de diálogo Nuevo proyecto ASP.NET, elija **Cambiar autenticación**. El Asistente para autenticación aparece y le permite elegir qué tipo de autenticación se utilizará en la aplicación.  
@@ -88,5 +71,7 @@ Si tiene varias cuentas de Microsoft y/o cuentas profesionales o educativas, pue
  ![Administrador de cuentas](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")  
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Volver a visitar el asistente Agregar servicios conectados y Explorador de servidores  
- Vaya ahora al **Explorador de servidores** y haga de nuevo doble clic en el nodo de Azure y elija **Administrar y filtrar suscripciones**. Elija la nueva cuenta, haga clic en la flecha desplegable junto a la cuenta actual y elija las suscripciones que desea mostrar en el Explorador de servidores. Debería ver todos los servicios asociados a la suscripción especificada. Aunque no tenga iniciada sesión en el IDE de Visual Studio con la segunda cuenta, ha iniciado sesión en los servicios y recursos de esa cuenta. Lo mismo sirve para **Proyecto, Agregar servicio conectado** y **Equipo, Conectar con Team Foundation Server**.
+ Vaya ahora al **Explorador de servidores** y haga de nuevo doble clic en el nodo de Azure y elija **Administrar y filtrar suscripciones**. Elija la nueva cuenta, haga clic en la flecha desplegable junto a la cuenta actual y elija las suscripciones que desea mostrar en el Explorador de servidores. Debería ver todos los servicios asociados a la suscripción especificada. Aunque no tenga iniciada sesión en el IDE de Visual Studio con la segunda cuenta, ha iniciado sesión en los servicios y recursos de esa cuenta. Lo mismo sirve para **Proyecto, Agregar servicio conectado** y **Equipo, Conectar con Team Foundation Server**.  
 
+ ## <a name="see-also"></a>Vea también  
+[Entorno conectado](../ide/connected-environment.md)  

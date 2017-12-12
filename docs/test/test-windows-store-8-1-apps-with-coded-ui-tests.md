@@ -1,46 +1,29 @@
 ---
-title: Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU | Microsoft Docs
+title: Probar aplicaciones para Windows UWP con pruebas automatizadas de IU | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2a9dc338ce3d08ac61ecc77da8df96d9261b7e62
-ms.contentlocale: es-es
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Probar aplicaciones para UWP y de la Tienda Windows 8.1 con pruebas automatizadas de IU
+# <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Probar aplicaciones para Windows UWP con pruebas automatizadas de UI
 
-Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones para UWP y aplicaciones de la Tienda Windows 8.1 basadas en XAML. 
+Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones para UWP y aplicaciones 8.1 basadas en XAML. 
   
-## <a name="create-a-simple-windows-store-app"></a>Crear una aplicación simple de la Tienda Windows  
+## <a name="create-a-simple-uwp-app"></a>Crear una aplicación para UWP sencilla  
   
-1.  Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Windows basada en XAML, debe [establecer una propiedad única de automatización que identifique cada control](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1.  Si quiere ejecutar pruebas automatizadas de IU para la aplicación para UWP basada en XAML, debe [establecer una propiedad única de automatización que identifique cada control](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      En el menú **Herramientas** , señale **Opciones** y después elija **Editor de texto**, **XAML**y, por último **Varios**.  
   
@@ -48,13 +31,13 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
      ![Otras opciones de XAML](../test/media/cuit_windowsstoreapp_b.png "CUIT_WindowsStoreApp_B")  
   
-2.  Cree un nuevo proyecto para una aplicación de la Tienda Windows basada en XAML en blanco mediante una plantilla de Visual C# o Visual Basic.  
+2.  Cree un proyecto para una aplicación para UWP basada en XAML en blanco mediante una plantilla de Visual C# o Visual Basic.  
   
-     ![Cree una aplicación de la Tienda Windows vacía (XAML)](../test/media/cuit_windowsstoreapp_newproject_blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
+     ![Cree una aplicación &#40;XAML&#41;](../test/media/cuit_windowsstoreapp_newproject_blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
 3.  En el Explorador de soluciones, abra el archivo MainPage.xaml. Desde el Cuadro de herramientas, arrastre un control de botón y un control de cuadro de texto a la superficie de diseño.  
   
-     ![Diseñe la aplicación de la Tienda Windows](../test/media/cuit_windowsstoreapp_design.png "CUIT_WindowsStoreApp_Design")  
+     ![Diseñe la aplicación para UWP](../test/media/cuit_windowsstoreapp_design.png "CUIT_WindowsStoreApp_Design")  
   
 4.  Haga doble clic en el control de botón y agregue el código siguiente:  
   
@@ -76,15 +59,15 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
     End Class  
     ```  
   
-5.  Presione F5 para ejecutar la aplicación de la Tienda Windows.  
+5.  Presione F5 para ejecutar la aplicación para UWP.  
   
-## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>Crear y ejecutar una prueba de IU codificada para la aplicación de la Tienda Windows  
+## <a name="create-and-run-a-coded-ui-test-for-the-uwp-app"></a>Crear y ejecutar una prueba automatizada de IU para la aplicación para UWP  
 
 [¿Cómo puedo crear pruebas automatizadas de IU para aplicaciones de la Plataforma universal de Windows (UWP)?](#uwpapps)
   
-1.  Cree un nuevo proyecto de prueba de IU codificada para la aplicación de la Tienda Windows.  
+1.  Cree un nuevo proyecto de prueba automatizada de IU para la aplicación para UWP.  
   
-     ![Nuevo proyecto de prueba de IU codificada (aplicaciones de la Tienda Windows)](../test/media/cuit_windowsstore_newproject.png "CUIT_WindowsStore_NewProject")  
+     ![Nuevo proyecto de prueba automatizada de IU &#40;aplicaciones para UWP &#41;](../test/media/cuit_windowsstore_newproject.png "CUIT_WindowsStore_NewProject")  
   
 2.  Elija editar la asignación de IU mediante la herramienta de selección precisa.  
   
@@ -94,7 +77,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
      ![Copie AutomationId al Portapapeles](../test/media/cuit_windows_store_tileautomationid.png "CUIT_Windows_Store_TileAutomationID")  
   
-4.  En la aplicación de la Tienda Windows en ejecución, use la herramienta de selección precisa para elegir el control de botón y el control de cuadro de texto. Tras agregar cada control, elija el botón **Agregar control a asignación de controles de IU** en la barra de herramientas del Generador de pruebas de IU codificadas.  
+4.  En la aplicación para UWP en ejecución, use la herramienta de selección precisa para elegir el control de botón y el control de cuadro de texto. Tras agregar cada control, elija el botón **Agregar control a asignación de controles de IU** en la barra de herramientas del Generador de pruebas de IU codificadas.  
   
      ![Agregar control a asignación de controles de IU](../test/media/cuit_windowsstoreapp_uimap.png "CUIT_WindowsStoreApp_UIMap")  
   
@@ -230,7 +213,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
 11. En el Explorador de soluciones, abra el archivo CodedUITest1.cs o CodedUITest1.vb. Ahora puede agregar código al método CodedUTTestMethod1 para las acciones necesarias si desea ejecutar la prueba mediante los controles agregados a UIMap:  
   
-    1.  Inicie la aplicación de la Tienda Windows mediante la propiedad ID de automatización que copió en el Portapapeles previamente:  
+    1.  Inicie la aplicación para UWP mediante la propiedad de identificador de automatización que ha copiado previamente en el Portapapeles:  
   
         ```csharp  
         XamlWindow.Launch("8ebca7c4-effe-4c86-9998-068daccee452_cyrqexqw8cc7c!App")  
@@ -302,7 +285,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
      ![Ejecute la prueba de IU codificada desde el Explorador de pruebas](../test/media/cuit_windowsstoreapp_runtest.png "CUIT_WindowsStoreApp_RunTest")  
   
-     La aplicación de la Tienda Windows se inicia, la acción para pulsar el botón se completa y la propiedad Text del cuadro de texto se rellena y se valida mediante el método de aserción.  
+     La aplicación para UWP se inicia, la acción para pulsar el botón se completa y la propiedad Text del cuadro de texto se rellena y se valida mediante el método de aserción.  
   
      ![Ejecución de la prueba de IU codificada](../test/media/cuit_windowsstoreapp_running.png "CUIT_WindowsStoreApp_Running")  
   
@@ -314,13 +297,13 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
 #### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>P: ¿Por qué no veo la opción para registrar la prueba de IU codificada en la opción Generar código de un cuadro de diálogo Prueba de IU codificada?**  
   
-**R**: La opción para registrar no se admite en las aplicaciones de la Tienda Windows.  
+**R**: La opción para registrar no se admite en las aplicaciones para UWP.  
   
-#### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-store-apps-based-on-winjs"></a>P: ¿Puedo crear una prueba automatizada de IU para las aplicaciones de la Tienda Windows basadas en WinJS?**  
+#### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>P: ¿Puedo crear una prueba automatizada de IU para las aplicaciones para UWP basadas en WinJS?**  
 
 **R**: No. Solo se admiten aplicaciones basadas en XAML.  
   
-#### <a name="q-can-i-create-coded-ui-tests-for-my-windows-store-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>P: ¿Puedo crear pruebas automatizadas de IU para las aplicaciones de la Tienda Windows en un sistema que no ejecute Windows 8.1 ni Windows 10?**  
+#### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>P: ¿Puedo crear pruebas automatizadas de IU para las aplicaciones para UWP en un sistema que no ejecute Windows 8.1 ni Windows 10?**  
   
 **R**: No, las plantillas de proyecto de prueba de IU codificada solo están disponibles en Windows 8.1 y Windows 10. Para crear la automatización para las aplicaciones de la Plataforma universal de Windows (UWP), necesitará Windows 10.  
 
@@ -329,7 +312,7 @@ Use este tutorial para crear pruebas de interfaz de usuario para aplicaciones pa
   
 **R**: Según la plataforma en la que vaya a probar su aplicación para UWP, cree el proyecto de prueba de IU codificada de una de estas maneras:  
   
-- Una aplicación para UWP que se ejecuta en el equipo local se ejecutará como una aplicación de la Tienda. Para probarlo, debe usar la plantilla **Proyecto de prueba de IU codificada (Windows)** . Para encontrar esta plantilla cuando cree un nuevo proyecto, vaya al nodo **Windows**, **Universal** . O vaya al nodo **Windows**, **Windows 8**, **Windows** .  
+- Una aplicación para UWP que se ejecuta en el equipo local se ejecutará como una aplicación para UWP. Para probarlo, debe usar la plantilla **Proyecto de prueba de IU codificada (Windows)** . Para encontrar esta plantilla cuando cree un nuevo proyecto, vaya al nodo **Windows**, **Universal** . O vaya al nodo **Windows**, **Windows 8**, **Windows** .  
   
 - Una aplicación para UWP que se ejecute en el dispositivo o emulador se ejecutará como una aplicación de Windows Phone. Para probarlo, debe usar la plantilla **Proyecto de prueba de IU codificada (Windows Phone)** . Para encontrar esta plantilla cuando cree un nuevo proyecto, vaya al nodo **Windows**, **Universal** . O vaya al nodo **Windows**, **Windows 8**, **Windows Phone** .  
   
@@ -341,5 +324,4 @@ Después de crear el proyecto, el procedimiento para crear una prueba sigue sien
   
 ## <a name="see-also"></a>Vea también  
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
- [Establecer una propiedad de Automation única para la prueba de controles de la Tienda Windows](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
-
+ [Definición de una propiedad de Automatización única para los controles de UWP para pruebas](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

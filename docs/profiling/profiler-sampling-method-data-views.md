@@ -1,32 +1,33 @@
 ---
-title: "Vistas de datos del m&#233;todo de muestreo del generador de perfiles | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Herramientas de generación de perfiles, vistas de datos de muestreo"
-  - "vistas de datos de muestreo"
+title: "Vistas de datos del método de muestreo del generador de perfiles | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Profiling Tools,sampling data views
+- sampling data views
 ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/11/2017
 ---
-# Vistas de datos del m&#233;todo de muestreo del generador de perfiles
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="profiler-sampling-method-data-views"></a>Vistas de datos del método de muestreo del generador de perfiles
 Esta sección contiene información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de muestreo.  
   
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas.  Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección.  Vea [Generar perfiles de aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## En esta sección  
+## <a name="in-this-section"></a>En esta sección  
  [Vista Resumen](../profiling/summary-view-sampling-data.md)  
  Enumera las funciones que se estaban ejecutando con más frecuencia cuando se recopilaron las muestras y las funciones que estaban realizando más trabajo individual.  
   
@@ -36,7 +37,7 @@ Esta sección contiene información de referencia para las vistas y los informes
  [Vista Módulos](../profiling/modules-view-sampling-data.md)  
  Organiza los datos de generación de perfiles por módulo y enumera las funciones, líneas de código fuente e instrucciones que se estaban ejecutando cuando se recopilaron las muestras.  
   
- [Llamador y destinatario \(Vista\)](../profiling/caller-callee-view-sampling-data.md)  
+ [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)  
  Muestra datos de generación de perfiles de una función seleccionada y de las funciones a las que llamó y que llamaron a la función seleccionada.  
   
  [Vista Funciones](../profiling/functions-view-sampling-data.md)  
@@ -45,10 +46,10 @@ Esta sección contiene información de referencia para las vistas y los informes
  [Vista Líneas](../profiling/lines-view-sampling-data.md)  
  Enumera las líneas del código fuente que se estaban ejecutando cuando se recopilaron las muestras.  
   
- [Vista Punteros de instrucciones \(IP\)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
+ [Vista Punteros de instrucciones (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Enumera las líneas del código fuente que se estaban ejecutando cuando se recopilaron las muestras.  
   
-## Referencia  
+## <a name="reference"></a>Referencia  
  [Vista Proceso](../profiling/process-view.md)  
  Muestra en una lista las horas de inicio y fin de procesos y subprocesos.  
   
@@ -58,12 +59,12 @@ Esta sección contiene información de referencia para las vistas y los informes
  [Vista Detalles de la función](../profiling/function-details-view.md)  
  Muestra un gráfico de la relación entre una función seleccionada y las funciones que llamaron y fueron llamadas por dicha función.  
   
-## Secciones relacionadas  
+## <a name="related-sections"></a>Secciones relacionadas  
  [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)  
  Información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de instrumentación.  
   
  [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)  
  Información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que incluyen datos de memoria de .NET.  
   
-## Vea también  
+## <a name="see-also"></a>Vea también  
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)

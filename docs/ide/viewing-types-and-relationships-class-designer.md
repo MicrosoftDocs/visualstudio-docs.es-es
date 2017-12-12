@@ -1,54 +1,54 @@
 ---
-title: "Viewing Types and Relationships (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.classdesigner.CannotShowBaseType"
-helpviewer_keywords: 
-  - "class diagrams"
-  - "types [Visual Studio], visualizing"
-  - "relationships, class diagrams"
-  - "types [Visual Studio], class diagrams"
-  - "relationships, visualizing"
+title: "Ver tipos y relaciones (Diseñador de clases) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.classdesigner.CannotShowBaseType
+helpviewer_keywords:
+- class diagrams
+- types [Visual Studio], visualizing
+- relationships, class diagrams
+- types [Visual Studio], class diagrams
+- relationships, visualizing
 ms.assetid: c4f46d94-9972-42ac-ae63-6ff306369965
-caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 78d7dba3bb799e15b1a609cd5f7bd50e2089195c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 10/31/2017
 ---
-# Viewing Types and Relationships (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-El Diseñador de clases usa diagramas de clases para mostrar los detalles de los tipos; por ejemplo, sus miembros constituyentes y las relaciones que estos comparten.  La visualización de estas entidades es en realidad una vista dinámica del código.  Esto significa que es posible editar los tipos en el diseñador y, a continuación, ver los cambios reflejados en el código fuente de la entidad.  De forma similar, el diagrama de clases se mantiene sincronizado con los cambios realizados para las entidades en el código.  
+# <a name="viewing-types-and-relationships-class-designer"></a>Ver tipos y relaciones (Diseñador de clases)
+El Diseñador de clases usa diagramas de clases para mostrar los detalles de los tipos, por ejemplo, sus miembros constituyentes y las relaciones que comparten. La visualización de estas entidades es en realidad una vista dinámica del código. Esto significa que puede editar tipos en el diseñador y, después, ver los cambios reflejados en el código fuente de la entidad. Del mismo modo, el diagrama de clases se mantiene sincronizado con los cambios realizados en las entidades del código.  
   
 > [!NOTE]
->  Si el proyecto contiene un diagrama de clases y hace referencia a un tipo que se encuentra en otro proyecto, el diagrama de clases no muestra el tipo al que se hace referencia hasta que se compila el proyecto para ese tipo.  Igualmente, el diagrama no muestra los cambios realizados en el código de la entidad externa hasta que se recompila el proyecto para esa entidad.  Para obtener información sobre el tipo en los ensamblados a los que se hace referencia y los archivos de solo lectura, vea [Display of Read\-Only Information \(Class Designer\)](http://msdn.microsoft.com/es-es/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+>  Si el proyecto contiene un diagrama de clases y además hace referencia a un tipo que se encuentra en otro proyecto, el diagrama de clases no mostrará el tipo al que se hace referencia hasta que se compile el proyecto para ese tipo. Del mismo modo, el diagrama no mostrará los cambios en el código de la entidad externa hasta que se recompile el proyecto para esa entidad. Para obtener información sobre el tipo de los ensamblados a los que se hace referencia y los archivos de solo lectura, vea [Mostrar información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
-## En esta sección  
- [How to: View Existing Types \(Class Designer\)](../ide/how-to-view-existing-types-class-designer.md)  
+## <a name="in-this-section"></a>En esta sección  
+ [Cómo: Ver los tipos existentes (Diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md)  
   
- Describe cómo se puede usar el Diseñador de clases para ver código existente.  
+ Describe cómo se puede usar el Diseñador de clases para visualizar el código existente.  
   
- [How to: View Inheritance Between Types \(Class Designer\)](../ide/how-to-view-inheritance-between-types-class-designer.md)  
+ [Cómo: Ver la herencia entre tipos (Diseñador de clases)](../ide/how-to-view-inheritance-between-types-class-designer.md)  
   
- Describe cómo ver las relaciones de herencia entre los tipos.  
+ Describe cómo ver las relaciones de herencia entre tipos.  
   
- [How to: Change Between Member Notation and Association Notation \(Class Designer\)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)  
+ [Cómo: Cambiar entre notación de miembro y notación de asociación (Diseñador de clases)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)  
   
- Describe cómo alternar entre las notaciones de miembro y de asociación.  
+ Describe cómo cambiar entre notación de miembro y notación de asociación.  
   
-## Secciones relacionadas  
- [Designing Classes and Types \(Class Designer\)](../ide/designing-classes-and-types-class-designer.md)  
+## <a name="related-sections"></a>Secciones relacionadas  
+ [Diseñar clases y tipos (Diseñador de clases)](../ide/designing-classes-and-types-class-designer.md)  
   
- [Refactoring Classes and Types \(Class Designer\)](../ide/refactoring-classes-and-types-class-designer.md)  
+ [Refactorización de clases y tipos (Diseñador de clases)](../ide/refactoring-classes-and-types-class-designer.md)  
   
- [How to: Customize Class Diagrams \(Class Designer\)](../ide/how-to-customize-class-diagrams-class-designer.md)  
+ [Cómo: Personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)  
   
- [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md)
+ [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)
