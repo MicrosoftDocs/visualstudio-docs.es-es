@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 1ce09377-9073-404c-9339-fa871a4b0841
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8ba37a922c24a02d7586b9c95f57ad27a7152736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3ea3afdaa6a7a29bc85c46b6eff0f15c5c91c046
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inició rápido: Clonado de un repositorio de código Python en Visual Studio
 
@@ -27,7 +26,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 
 2. Inicie Visual Studio.
 
-3. Seleccione **Ver > Team Explorer...**  para abrir la ventana **Team Explorer** desde la que podrá conectarse a GitHub o Visual Studio Team Services o clonar un repositorio.
+3. Seleccione **Ver > Team Explorer...** para abrir la ventana **Team Explorer** desde la que podrá conectarse a GitHub o Visual Studio Team Services o clonar un repositorio.
 
     ![Ventana de Team Explorer en la que se muestra Visual Studio Team Services, GitHub y el clonado de un repositorio](media/team-explorer.png)
 
@@ -74,7 +73,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Tutorial: Uso de Python en Visual Studio](vs-tutorial-01-01.md)
+> [Tutorial: Trabajar con Python en Visual Studio](vs-tutorial-01-01.md)
 
 ## <a name="see-also"></a>Vea también
 

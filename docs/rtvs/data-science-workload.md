@@ -1,7 +1,7 @@
 ---
 title: "Carga de trabajo Aplicaciones de ciencia de datos y de análisis en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 9/5/2017
+ms.date: 09/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -10,16 +10,15 @@ ms.technology:
 - devlang-fsharp
 ms.tgt_pltfrm: 
 ms.topic: landing-page
-ms.assetid: 018069f3-6d1a-4143-a851-d86d2ff5fbfc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 976bd73c7740e474e4fa7ea3e4cf89f880c7900c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5e7738d03fa0c9b8b460fe1b2fb4bc17076fa3b5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Carga de trabajo Aplicaciones de ciencia de datos y de análisis
 
@@ -42,17 +41,16 @@ De forma predeterminada, la carga de trabajo instala las opciones siguientes, qu
 
 - Compatibilidad con el idioma F#
 - Python:
-    - Compatibilidad con el lenguaje Python
-    - Compatibilidad web con Python
-    - [Anaconda3 64 bits](https://www.continuum.io) (distribución de Python que incluye completas bibliotecas de ciencia de datos y un intérprete de Python)
-    - Compatibilidad con plantillas de Cookiecutter
+  - Compatibilidad con el lenguaje Python
+  - Compatibilidad web con Python
+  - [Anaconda3 64 bits](https://www.continuum.io) (distribución de Python que incluye completas bibliotecas de ciencia de datos y un intérprete de Python)
+  - Compatibilidad con plantillas de Cookiecutter
 - R:
-    - Compatibilidad con el lenguaje R    
-    - [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started) (intérprete de R de Microsoft totalmente compatible y admitido por la comunidad, con bibliotecas de ScaleR para cálculos más rápidos en nodos o clústeres concretos. También puede usar cualquier R de [CRAN](https://cran.r-project.org/)).
-    - Compatibilidad del entorno de tiempo de ejecución con herramientas de desarrollo de R
+  - Compatibilidad con el lenguaje R
+  - [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client) (intérprete de R de Microsoft totalmente compatible y admitido por la comunidad, con bibliotecas de ScaleR para cálculos más rápidos en nodos o clústeres concretos. También puede usar cualquier R de [CRAN](https://cran.r-project.org/)).
+  - Compatibilidad del entorno de tiempo de ejecución con herramientas de desarrollo de R
 
-> [!Note]
-> Aunque F# se incluye con varias cargas de trabajo diferentes y Python cuenta con una carga de trabajo propia, Aplicaciones de ciencia de datos y de análisis es la única carga de trabajo que incluye R en la actualidad. Con independencia de la carga de trabajo, los tres componentes de R también se pueden seleccionar en la pestaña **Componentes individuales** del instalador. Seleccione las opciones **Actividades de desarrollo > Compatibilidad con el lenguaje R**, **Actividades de desarrollo > Microsoft R Client** y **Compiladores, herramientas de compilación y entornos de ejecución > Compatibilidad de runtime con las herramientas de desarrollo de R**.
+Aunque F# se incluye con varias cargas de trabajo diferentes y Python cuenta con una carga de trabajo propia, Aplicaciones de ciencia de datos y de análisis es la única carga de trabajo que incluye R en la actualidad. Con independencia de la carga de trabajo, los tres componentes de R también se pueden seleccionar en la pestaña **Componentes individuales** del instalador. Seleccione las opciones **Actividades de desarrollo > Compatibilidad con el lenguaje R**, **Actividades de desarrollo > Microsoft R Client** y **Compiladores, herramientas de compilación y entornos de ejecución > Compatibilidad de runtime con las herramientas de desarrollo de R**.
 
 ## <a name="sql-server-integration"></a>Integración de SQL Server
 
@@ -73,7 +71,6 @@ Cuando se ejecuta el código donde ya se encuentran los datos, se disfruta de un
 Para aprovechar al máximo la integración de SQL Server, también se debe instalar la carga de trabajo **Almacenamiento y procesamiento de datos** con la opción **SQL Server Data Tools**. Esta opción habilita SQL IntelliSense, el resaltado de sintaxis y la implementación.
 
 ![Carga de trabajo de almacenamiento y procesamiento de datos](media/data-storage-workload.png) &nbsp;&nbsp; &nbsp;&nbsp; ![Opciones de la carga de trabajo de almacenamiento y procesamiento de datos](media/data-storage-workload-options.png)
-
 
 Para obtener más información:
 

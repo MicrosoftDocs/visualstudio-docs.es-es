@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 03effe56-d6f6-461d-9005-e43c15bf537c
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 134442008dccbeac12dd328ed3b01c2b3a1a2e8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 99859fc5b9e48078b037f6d68ad3d3847658a1d0
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="editing-python-code"></a>Edición de código de Python
 
@@ -50,7 +49,7 @@ Las finalizaciones aparecen como instrucciones, identificadores y otras palabras
 Cuando se abre una lista de finalizaciones, puede buscar la finalización que desee con las teclas de dirección, el mouse o bien escribiendo algo más. A medida que escriba más letras, la lista se seguirá filtrando para mostrar las finalizaciones probables. También puede usar accesos directos como:
 
 - Escribir letras que no están al principio del nombre, como "parse" para buscar "argparse"
-- Escribir solo las letras que se encuentran al principio de palabras, como "abc" para buscar "AbstractBaseClass" o "air" para buscar "as_integer_ratio"
+- Escribir solo las letras que se encuentran al principio de palabras, como "abc" para buscar 'AbstractBaseClass' o "air" para buscar "as_integer_ratio"
 - Omitir letras, como "b64" para buscar "base64"
 
 Algunos ejemplos:

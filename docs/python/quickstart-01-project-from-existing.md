@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3fd90afb-8d76-4c93-81f2-e10edbed2069
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e650679a78612494810cda254a3c2432c6fa67fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f0090c5c7cceabdfc8fde313b7d3ad23337ad409
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Inicio rápido: Crear un proyecto de Python a partir del código existente
 
@@ -34,7 +33,7 @@ Una vez que haya [instalado la compatibilidad con Python en Visual Studio 2017](
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Tutorial: Uso de Python en Visual Studio](vs-tutorial-01-01.md)
+> [Tutorial: Trabajar con Python en Visual Studio](vs-tutorial-01-01.md)
 
 ## <a name="see-also"></a>Vea también
 
