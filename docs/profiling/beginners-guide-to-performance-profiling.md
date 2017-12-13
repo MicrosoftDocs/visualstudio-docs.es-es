@@ -18,11 +18,11 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guía básica para la generación de perfiles de rendimiento
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar la pestaña **Uso de CPU** de las herramientas de diagnóstico para obtener datos de rendimiento para la aplicación. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
@@ -108,7 +108,6 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
     En esta vista, la función seleccionada se muestra en el encabezado y en el cuadro **Función actual** (en este ejemplo, GetNumber). La función que llamó a la función actual se muestra a la izquierda en **Función llamadora**, y las funciones llamadas por la función actual se muestran a la derecha en el cuadro **Funciones llamadas**. (Puede seleccionar cualquiera de los cuadros para cambiar la función actual).
 
     En esta vista se muestra el tiempo total (ms) y el porcentaje del tiempo de ejecución global de la aplicación que la función ha tardado en completarlo.
-
     **Cuerpo de la función** también muestra la cantidad total de tiempo (y el porcentaje de tiempo) empleado en el cuerpo de la función, excluido el tiempo invertido en las funciones llamadoras y llamadas. (En este ejemplo, 3713 de 3729 ms se dedicaron al cuerpo de la función y los 16 ms restantes se dedicaron al código externo al que esta función llama).
 
     > [!TIP]
@@ -157,7 +156,7 @@ Utilice el cuadro de búsqueda para localizar un nodo que esté buscando y, lueg
 </div>
   
 ## <a name="see-also"></a>Vea también  
- [[Uso de memoria](../profiling/memory-usage.md)  
+ [Uso de memoria](../profiling/memory-usage.md)  
  [Uso de CPU](../profiling/cpu-usage.md)  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
  [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

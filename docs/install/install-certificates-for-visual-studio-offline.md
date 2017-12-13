@@ -14,11 +14,11 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e6dcf1187db5c1e3dd911bc9f91867c383e5a8b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed86e3cd404c40026fad20ef08d4daecd98d74f2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar los certificados necesarios para la instalación sin conexión de Visual Studio
 
@@ -42,7 +42,7 @@ Para las empresas con equipos sin conexión que no tienen los últimos certifica
 
 Si está creando el script de la implementación de Visual Studio en un entorno sin conexión en las áreas de trabajo del cliente, debe seguir estos pasos:
 
-1. Copie la [herramienta del Administrador de certificados](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) en el recurso compartido de la instalación (por ejemplo, \\server\share\vs2017). Certmgr.exe no está incluido como parte de Windows, pero está disponible como parte de [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Copie la [herramienta del Administrador de certificados](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) en el recurso compartido de la instalación (por ejemplo, \\server\share\vs2017). Certmgr.exe no está incluido como parte de Windows, pero está disponible como parte de [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 2. Cree un archivo por lotes con los siguientes comandos:
 

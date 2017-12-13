@@ -16,11 +16,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure
 Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una aplicación de escritorio moderna que usa un servicio móvil de Azure para almacenar y proporcionar datos.  
@@ -556,7 +556,7 @@ El siguiente paso es crear la interfaz de usuario para la aplicación. Primero c
      Esto llamará al método **UpdateCheckedTodoItem** y quitará el elemento de la lista y la base de datos.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
- Ha completado un ejemplo bastante sencillo de aplicación de escritorio de WPF con un back-end de Azure. Por supuesto, probablemente una aplicación real resulte mucho más compleja; sin embargo, se aplican los mismos conceptos básicos. Vea [WPF en .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+ Ha completado un ejemplo bastante sencillo de aplicación de escritorio de WPF con un back-end de Azure. Por supuesto, probablemente una aplicación real resulte mucho más compleja; sin embargo, se aplican los mismos conceptos básicos. Vea [WPF en .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130).  
   
  Puede hacer la interfaz de usuario más atractiva mediante la adición de colores, formas, gráficos o incluso animaciones. Vea [Crear una UI con el Diseñador XAML en Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) y [Creación de una interfaz de usuario con Blend para Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Para ver una comparación entre las herramientas, vea [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
 

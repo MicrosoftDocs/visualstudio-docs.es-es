@@ -16,25 +16,24 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b6fad74a71e457759bc6b35ecb4679c3f26011e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8b20e30cc983d6dd809daa264e4fedbb3a879386
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="class-view-and-object-browser-icons"></a>Iconos de la vista de clases y del examinador de objetos
-En **Vista de clases** y **Examinador de objetos** se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.  
-  
-|Iconos|Descripción|Iconos|Descripción|  
-|----------|-----------------|----------|-----------------|  
-|![Símbolo de espacio de nombres](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Espacio de nombres|![Símbolo de declaración](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Método o función|  
+# <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
+
+En **Vista de clases** y **Examinador de objetos** se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.
+
+|Iconos|Descripción|Iconos|Descripción|
+|----------|-----------------|----------|-----------------|
+|![Símbolo de espacio de nombres](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Espacio de nombres|![Símbolo de declaración](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Método o función|
 |![Icono de clase](../ide/media/vxclass_icon.gif "vxClass_Icon")|Clase|![Símbolo de operador](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|Operador|  
-|![Símbolo de círculo de interfaz](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Propiedad|  
+|![Símbolo de círculo de interfaz](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Propiedad|
 |![Símbolo de estructura](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Estructura|![Icono de campo](../ide/media/vxfield_icon.gif "vxField_Icon")|Campo o variable|  
 |![Símbolo de unión](../ide/media/vxunion_icon.gif "vxUnion_Icon")|Unión|![Símbolo de evento](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Evento|  
 |![Símbolo de enumeración](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Enum|![Icono de constante](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Constante|  
@@ -45,21 +44,23 @@ En **Vista de clases** y **Examinador de objetos** se muestran iconos que repres
 |![Símbolo de excepción](../ide/media/vxexception_icon.gif "vxException_Icon")|Excepción|![Símbolo de plantilla](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Plantilla|  
 |![Símbolo de mapa](../ide/media/vxmap_icon.gif "vxMap_Icon")|Asignación|![Símbolo de signo de exclamación de error](../ide/media/vxerror_icon.gif "vxError_Icon")|Desconocido|  
 |![Símbolo de reenvío de tipos](../ide/media/ob_type_forward.gif "ob_type_forward")|Reenvío de tipos|||  
-  
-## <a name="signal-icons"></a>iconos de señal  
- Los siguientes iconos de señal se aplican a todos los iconos anteriores e indican su accesibilidad.  
-  
-> [!NOTE]
->  Si el proyecto se incluye en una base de datos de control de código fuente, es posible que se muestren más iconos de señal para indicar el estado de control de código fuente, como registrado o modificado.  
-  
-|Iconos|Descripción|  
+
+## <a name="signal-icons"></a>iconos de señal
+
+Los siguientes iconos de señal se aplican a todos los iconos anteriores e indican su accesibilidad.
+
+|Iconos|Descripción|
 |----------|-----------------|  
 |\<Icono Sin señal>|Público. Accesible desde cualquier lugar en este componente y desde cualquier componente que haga referencia a él.|  
 |![Símbolo Protected de señal](../ide/media/vxsignal_icon_key.gif "vxSignal_Icon_Key")|Protegido. Accesible desde la clase o el tipo contenedor o los derivados de la clase o el tipo contenedor.|  
 |![Símbolo Private de señal](../ide/media/vxsignal_icon_lock.gif "vxSignal_Icon_Lock")|Privado. Accesible solo en la clase o el tipo contenedor.|  
 |![Símbolo Sealed de señal](../ide/media/vxsignal_icon_envelope.gif "vxSignal_Icon_Envelope")|Sellado.|  
 |![Símbolo Friend&#47;Internal de señal](../ide/media/vxsignal_icon_diamond.gif "vxSignal_Icon_Diamond")|Friend/interno. Accesible solo desde el proyecto.|  
-|![Flecha de icono de señal](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|Acceso directo. Un acceso directo al objeto.|  
-  
-## <a name="see-also"></a>Vea también  
- [Ver la estructura del código](../ide/viewing-the-structure-of-code.md)
+|![Flecha de icono de señal](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|Acceso directo. Un acceso directo al objeto.|
+
+> [!NOTE]
+> Si el proyecto se incluye en una base de datos de control de código fuente, es posible que se muestren más iconos de señal para indicar el estado de control de código fuente, como registrado o modificado.
+
+## <a name="see-also"></a>Vea también
+
+[Ver la estructura del código](../ide/viewing-the-structure-of-code.md)

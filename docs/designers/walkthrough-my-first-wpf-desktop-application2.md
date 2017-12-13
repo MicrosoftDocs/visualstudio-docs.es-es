@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Tutorial: Mi primera aplicación de escritorio WPF
 Este tutorial proporciona una introducción al desarrollo en Windows Presentation Foundation (WPF). Podrá crear una aplicación básica que incluya los elementos que son comunes a la mayoría de las aplicaciones de escritorio WPF: marcado XAML, código subyacente, definiciones de aplicación, controles, diseño, enlace de datos y estilos.  
@@ -851,40 +851,40 @@ En esta sección, creará la infraestructura de la aplicación, que incluye el p
 ##  <a name="Best_Practices"></a> Procedimientos recomendados  
  Esta muestra ilustra los fundamentos de WPF y, por consiguiente, no sigue las prácticas recomendadas de desarrollo de aplicaciones. Para obtener procedimientos recomendados de desarrollo de aplicaciones de WPF y .NET Framework, vea los temas siguientes según corresponda:  
   
--   Accesibilidad: [Procedimientos de accesibilidad recomendados](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Accesibilidad: [Procedimientos de accesibilidad recomendados](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   Seguridad: [Seguridad de Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Seguridad: [Seguridad de Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
   
--   Localización: [Información general sobre la globalización y la localización de WPF](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Localización: [Información general sobre la globalización y la localización de WPF](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   Rendimiento: [Optimizar WPF: Rendimiento de aplicaciones](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Rendimiento: [Optimizar WPF: Rendimiento de aplicaciones](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a> Pasos adicionales  
  Ahora tiene una serie de técnicas a su disposición para crear una aplicación de escritorio con WPF. Ya dispone de conocimientos básicos de los bloques de creación de aplicaciones de WPF enlazados a datos. Este tema no pretende ser exhaustivo, pero espero que ya tenga una idea de las posibilidades que puede descubrir por sí mismo además de las técnicas descritas en este tema.  
   
  Para más información sobre los modelos de programación y arquitectura de WPF, vea los temas siguientes:  
   
--   [Arquitectura de WPF](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [Arquitectura de WPF](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [Información general sobre XAML](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [Información general sobre XAML](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [Información general sobre las propiedades de dependencia](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Información general sobre las propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [Sistema de diseño](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Sistema de diseño](/dotnet/framework/wpf/advanced/layout)  
   
--   [Estilos y plantillas](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Estilos y plantillas](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  Para más información sobre la creación de aplicaciones, vea los temas siguientes:  
   
--   [Información general sobre el desarrollo de aplicaciones](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Información general sobre el desarrollo de aplicaciones](/dotnet/framework/wpf/app-development/index)  
   
--   [Información general sobre los controles](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Información general sobre los controles](/dotnet/framework/wpf/controls/index)  
   
--   [Información general sobre el enlace de datos](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Información general sobre el enlace de datos](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [Información general sobre gráficos, animaciones y multimedia de WPF.](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [Información general sobre gráficos, animaciones y multimedia de WPF.](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [Documentos en WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [Documentos en WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>Vea también  
 [Crear aplicaciones de escritorio modernas con Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
