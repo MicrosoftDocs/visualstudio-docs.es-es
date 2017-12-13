@@ -8,7 +8,6 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3c714867-7a64-4b1e-aca8-09d956192279
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
@@ -19,11 +18,11 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 24293c3362249f2afcbcbb4b0266a478eaa1c9ab
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: a936c7fb80dbbe6305732a26b5e0a09a737bf3a3
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 

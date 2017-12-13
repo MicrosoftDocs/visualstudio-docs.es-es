@@ -4,7 +4,7 @@ description: "Se describe cómo funciona el instalador de Visual Studio en condi
 ms.date: 08/30/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 57665c39c875b57a1e90c4f57de68f069823cc86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 7618537fcceb0527b29f5c40584fb69d7ddcca63
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Instalación de Visual Studio 2017 en entornos de red de bajo ancho de banda o poco confiables
 
@@ -31,7 +31,7 @@ Se recomienda probar el instalador web de Visual Studio; creemos que será una b
 Pero si la conexión a Internet no está disponible o no es confiable, puede usar la línea de comandos para crear una memoria caché local de los archivos que necesita para completar una instalación sin conexión. Esta es la manera de hacerlo.
 
 > [!NOTE]
-> Si es un administrador de empresa que quiere realizar una implementación de Visual Studio 2017 en una red de estaciones de trabajo del cliente con firewall desde Internet, vea nuestras páginas [Creación de una instalación de red de Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) y [Consideraciones especiales para instalar Visual Studio en un entorno sin conexión](../install/install-visual-studio-in-offline-environment.md).
+> Si es un administrador de empresa que quiere realizar una implementación de Visual Studio 2017 en una red de estaciones de trabajo del cliente con firewall desde Internet, vea las páginas [Creación de una instalación de red de Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) y [Special considerations for installing Visual Studio in an offline environment](../install/install-visual-studio-in-offline-environment.md) (Consideraciones especiales para instalar Visual Studio en un entorno sin conexión).
 
 ## <a name="step-1---download-the-visual-studio-bootstrapper"></a>Paso 1: Descargar el programa previo de Visual Studio
 
@@ -61,7 +61,7 @@ Deberá disponer de conexión a Internet para poder completar este paso. Para cr
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US```
 
-- Para crear un diseño local completo con todas las características (lo que llevará mucho tiempo, ya que tenemos &mdash;multitud_ de características), ejecute:
+- Para crear un diseño local completo con todas las características (lo que llevará mucho tiempo&mdash;, ya que tenemos _multitud_ de características), ejecute:
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
@@ -106,7 +106,13 @@ Use este comando para ejecutar la instalación:
 | zh-TW | Chino (tradicional) |
 
 ## <a name="get-support"></a>Obtener soporte técnico
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, vea sugerencias para la solución de problemas en la página [Solucionar problemas de errores de instalación y actualización de Visual Studio 2017](troubleshooting-installation-issues.md). Además, puede informarnos de los problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) del IDE de Visual Studio o compartir una sugerencia con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579). Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas. También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la Comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio) (requiere una cuenta de [GitHub](https://github.com/)).
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+Aquí tiene algunas opciones de soporte técnico más:
+* Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
+* Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
+* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
 * [Instalar Visual Studio](install-visual-studio.md)
