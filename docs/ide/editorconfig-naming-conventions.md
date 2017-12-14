@@ -1,0 +1,191 @@
+---
+title: Convenciones de nomenclatura de .NET para EditorConfig | Microsoft Docs
+ms.custom: 
+ms.date: 11/20/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- naming conventions [EditorConfig]
+- EditorConfig naming conventions
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-ide-general
+ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 12/01/2017
+---
+# <a name="naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura para EditorConfig
+
+Las convenciones de nomenclatura están relacionadas con los nombres de elementos de código como clases, propiedades y métodos. Por ejemplo, puede especificar que los miembros públicos deben escribirse en mayúsculas, o que los métodos asincrónicos deben terminar en "Async". Puede aplicar estas reglas si las especifica en un [archivo .editorconfig](../ide/create-portable-custom-editor-options.md). Las infracciones de reglas de nomenclatura aparecen en la lista de errores o como una sugerencia debajo del nombre, según la gravedad que elija para la regla. No es necesario compilar el proyecto para ver las infracciones.
+
+Las convenciones de nomenclatura deben ordenarse de la más específica a la menos específica en el archivo .editorconfig. La primera regla encontrada que se puede aplicar es la única que se aplica.
+
+Para cada convención de nomenclatura, debe especificar los símbolos a los que se aplica, un estilo de nomenclatura y una gravedad de aplicación de la convención, con las propiedades que se describen a continuación. El orden de las propiedades no es importante.
+
+Para comenzar, elija un título para la regla de nomenclatura que va a usar en cada una de las propiedades que se necesitan para describir completamente la regla. Por ejemplo, `public_members_must_be_capitalized` es un buen nombre descriptivo para una regla de nomenclatura. En las secciones siguientes se hará referencia al título que elija como **<TítuloDeLaReglaDeNomenclatura\>**.
+
+## <a name="symbols"></a>Símbolos
+
+En primer lugar, identifique un grupo de símbolos al que aplicar la regla de nomenclatura. Esta propiedad tiene el formato siguiente:
+
+`dotnet_naming_rule.<namingRuleTitle>.symbols = <symbolTitle>`
+
+Asigne un nombre al grupo de símbolos reemplazando el valor **<títuloDelSímbolo\>** con un título descriptivo, por ejemplo `public_symbols`. Usará el valor **<títuloDelSímbolo\>** en los tres nombres de propiedad que describen los símbolos a los que se aplica la regla (tipos de símbolos, niveles de accesibilidad y modificadores).
+
+### <a name="kinds-of-symbols"></a>Tipos de símbolos
+
+Para describir el tipo de símbolos a los que se aplica la regla de nomenclatura, especifique una propiedad con el formato siguiente:
+
+`dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
+
+Los valores permitidos se enumeran a continuación y puede especificar varios valores si los separa con una coma.
+
+- \* (use este valor para especificar todos los símbolos)
+- clase
+- struct
+- interfaz
+- enum
+- propiedad
+- método
+- campo
+- evento
+- delegado
+- parámetro
+
+### <a name="accessibility-levels-of-symbols"></a>Niveles de accesibilidad de símbolos
+
+Para describir los niveles de accesibilidad de los símbolos a los que quiere aplicar la regla de nomenclatura, especifique un nombre de propiedad con el formato siguiente:
+
+`dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
+
+Los valores permitidos se enumeran a continuación y puede especificar varios valores si los separa con una coma.
+
+- \* (use este valor para especificar todos los niveles de accesibilidad)
+- public
+- internal o friend
+- private
+- protected
+- protected\_internal o protected_friend
+
+> [!NOTE]
+> Debe especificar un nivel de accesibilidad como parte de la convención de nomenclatura; en caso contrario, es posible que la convención de nomenclatura se ignore.
+
+### <a name="symbol-modifiers"></a>Modificadores de símbolo
+
+Para describir los modificadores de los símbolos a los que quiere aplicar la regla de nomenclatura, especifique un nombre de propiedad con el formato siguiente:
+
+`dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
+
+Los valores permitidos se enumeran a continuación y puede especificar varios valores si los separa con una coma.
+
+- \* (use este valor para especificar todos los modificadores)
+- abstract o must_inherit
+- async
+- const
+- readonly
+- static o shared
+
+Si se omite esta propiedad, la regla de nomenclatura se aplicará a todos los modificadores.
+
+## <a name="style"></a>Estilo
+
+Ahora que se ha identificado el grupo de símbolos al que aplicar la regla de nomenclatura, se debe describir el estilo de nomenclatura. Un estilo puede ser que el nombre tenga un prefijo o sufijo determinado, o bien que palabras individuales del nombre se separen con un carácter determinado. También puede especificar un estilo de uso de mayúsculas. La propiedad de estilo tiene el formato siguiente:
+
+`dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
+
+Asigne un nombre al estilo reemplazando el valor **<títuloDelEstilo\>** por un título descriptivo, por ejemplo `first_word_upper_case_style`. Usará el valor **<títuloDelEstilo\>** en los nombres de propiedades que describen el estilo de nomenclatura (prefijo, sufijo, carácter separador de palabras y uso de mayúsculas). Use una o varias de estas propiedades para describir el estilo.
+
+### <a name="require-a-prefix"></a>Requerir un prefijo
+
+Para especificar que los nombres de símbolo deben empezar con determinados caracteres, use esta propiedad:
+
+`dotnet_naming_style.<styleTitle>.required_prefix = <prefix>`
+
+### <a name="require-a-suffix"></a>Requerir un sufijo
+
+Para especificar que los nombres de símbolo deben terminar con determinados caracteres, use esta propiedad:
+
+`dotnet_naming_style.<styleTitle>.required_suffix = <suffix>`
+
+### <a name="require-a-certain-word-separator"></a>Requerir un separador de palabras determinado
+
+Para especificar que las palabras individuales en los nombres de símbolo deben separarse con un carácter determinado, use esta propiedad:
+
+`dotnet_naming_style.<styleTitle>.word_separator = <separator character>`
+
+### <a name="require-a-capitalization-style"></a>Requerir un estilo de uso de mayúsculas
+
+Para especificar un estilo de uso de mayúsculas determinado para los nombres de símbolo, use esta propiedad:
+
+`dotnet_naming_style.<styleTitle>.capitalization = <value>`
+
+Los valores permitidos para esta propiedad son:
+
+- pascal_case
+- camel_case
+- first\_word_upper
+- all\_upper
+- all_lower
+
+> [!NOTE]
+> Debe especificar un estilo de uso de mayúsculas como parte del estilo de nomenclatura; en caso contrario, es posible que el estilo de nomenclatura se ignore.
+
+## <a name="severity"></a>Gravedad
+
+Para describir la gravedad de una infracción de la regla de nomenclatura, especifique una propiedad con el formato siguiente:
+
+`dotnet_naming_rule.<namingRuleTitle>.severity = <value>`
+
+En la tabla siguiente se muestran los valores de gravedad permitidos y lo que significan:
+
+Gravedad | Efecto
+------------ | -------------
+Ninguno o silencioso | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente seguirá este estilo.
+suggestion | Cuando no se sigue este estilo, se muestra al usuario como una sugerencia (como puntos debajo de los dos primeros caracteres). No tiene ningún efecto en tiempo de compilación.
+warning | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la lista de errores.
+error | Cuando no se sigue este estilo, se muestra un error del compilador en la lista de errores.
+
+> [!NOTE]
+> No tiene que volver a compilar el proyecto para ver las infracciones de reglas de nomenclatura. Aparecen mientras se modifica el código, ya sea en la lista de errores o como una sugerencia.
+
+## <a name="example"></a>Ejemplo
+
+A continuación se muestra un ejemplo de archivo .editorconfig que contiene una convención de nomenclatura que especifica que las propiedades, métodos, campos, eventos y delegados públicos deben escribirse en mayúsculas. Tenga en cuenta que esta convención de nomenclatura especifica varios tipos de símbolo a los que aplicar la regla, con una coma para separar los valores.
+
+```
+# Public members must be capitalized (public_members_must_be_capitalized)
+[*.{cs,vb}]
+dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
+dotnet_naming_symbols.public_symbols.applicable_kinds           = property,method,field,event,delegate
+dotnet_naming_symbols.public_symbols.applicable_accessibilities = public
+dotnet_naming_symbols.public_symbols.required_modifiers         = readonly
+
+dotnet_naming_rule.public_members_must_be_capitalized.style    = first_word_upper_case_style
+dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_upper
+
+dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
+```
+
+En la captura de pantalla siguiente se muestra el efecto de esta convención de nomenclatura en el Editor. Se han nombrado dos variables públicas sin usar mayúscula en la primera letra. Una es `const` y la otra es `readonly`. Puesto que la regla de nomenclatura solo se aplica a símbolos *readonly*, solo la variable `readonly` muestra una sugerencia de regla de nomenclatura.
+
+![Sugerencia de regla de nomenclatura](media/editorconfig-naming-rule-suggestion.png)
+
+Ahora se va a cambiar la gravedad de la infracción a `warning`:
+
+```
+dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
+```
+
+Si cierra y vuelve a abrir el archivo de código, en lugar de ver la sugerencia debajo de la infracción de nombre, verá una línea ondulada de color verde y una advertencia en la lista de errores:
+
+![Advertencia de regla de nomenclatura](media/editorconfig-naming-rule-warning.png)
+
+## <a name="see-also"></a>Vea también
+
+[Lenguaje .NET y convenciones de formato](../ide/editorconfig-code-style-settings-reference.md)  
+[Crear opciones del editor personalizadas y portátiles](../ide/create-portable-custom-editor-options.md)

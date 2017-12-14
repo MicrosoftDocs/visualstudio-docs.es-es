@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/1/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
-ms.openlocfilehash: 8f49a205676bba830db6fb4dc66c04b62077ac44
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 588174ad2bc6f0ef99e08871c2a7faee81a38ace
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Directorio de componentes de Visual Studio Test Controller 2017
 
@@ -42,7 +42,7 @@ Para obtener más información acerca de cómo utilizar estos identificadores, v
 
 Id. de componente | Nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Características principales de Test Controller | 15.0.26711.1 | Obligatorio
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Características principales de Test Controller | 15.0.27128.1 | Obligatorio
 
 ## <a name="unaffiliated-components"></a>Componentes no afiliados
 

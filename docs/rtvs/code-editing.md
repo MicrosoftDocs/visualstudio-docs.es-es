@@ -1,26 +1,25 @@
 ---
 title: "Edición de código con Herramientas de R para Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Edición de código de R en Visual Studio
- 
+
 Herramientas de R para Visual Studio (RTVS) adapta la experiencia de edición de Visual Studio expresamente para R, mientras que conserva todas las características y la capacidad de usar extensiones. (Por ejemplo, si prefiere enlaces de teclado de VIM, puede instalar la [extensión gratuita VsVim](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) desde la Galería de Visual Studio).
 
 En este tema:
@@ -33,8 +32,7 @@ En este tema:
 - [Inserción de comentarios Roxygen](#inserting-roxygen-comments)
 - [Opciones del editor](#editor-options)
 
-Vea también los temas en [IntelliSense](code-intellisense.md), [fragmentos de código](code-snippets.md) y [R Markdown](rmarkdown.md).
-
+Vea también los temas sobre [IntelliSense](code-intellisense.md), [linting](code-linting.md), [fragmentos de código](code-snippets.md) y [R Markdown](rmarkdown.md).
 
 ## <a name="syntax-highlighting"></a>Resalte de sintaxis 
 
@@ -107,9 +105,9 @@ f <- function(a) { return(a + 1) }
 Para volver a aplicar formato a todo el archivo de código, seleccione **Editar > Avanzadas > Dar formato al documento** (Ctrl+E,D).
 
 El formato automático es una operación independiente que se puede deshacer. Por ejemplo, si pega código en el editor y se aplica el formato, al seleccionar **Editar > Deshacer** o presionar Ctrl+Z una vez se deshace el formato; si vuelve a seleccionar Deshacer, se deshará también el pegado.
- 
+
 Las opciones de formato (incluida la desactivación del formato) se establecen mediante **Herramientas > Opciones** en la pestaña **Editor de texto > R > Opciones avanzadas**. Puede ir directamente a esta página mediante el comando **Herramientas de R > Opciones del editor...** o haciendo clic con el botón derecho en el editor y seleccionando **Opciones de formato...** Vea la sección [Opciones del editor](#editor-options) para obtener más información.
- 
+
 ## <a name="inserting-roxygen-comments"></a>Inserción de comentarios Roxygen
 
 RTVS proporciona un acceso directo para generar comentarios [Roxygen](http://roxygen.org/) con los nombres de parámetro de una función. Solo tiene que escribir `###` en una línea en blanco encima de la definición de función:
@@ -144,5 +142,5 @@ Las opciones de la pestaña **R > Avanzadas** son específicas de RTVS:
 | | Lista de finalización en la tecla TAB | Desactivado | Invoca la lista de finalización al escribir uno o varios caracteres y presionar TAB. |
 | | Hacer coincidir nombres de argumentos escritos de forma parcial | Desactivado | Al escribir nombres de argumentos en una llamada de función, la ayuda de signatura muestra una descripción del argumento que coincide mejor. |
 | Ventana interactiva | Comprobación de sintaxis en la consola de R | Desactivado | Aplica la comprobación de sintaxis en la ventana interactiva. Es posible que la comprobación de sintaxis no funcione correctamente con instrucciones multilínea. | 
-| esquematizar | Esquematización de código | Activado | Crea automáticamente regiones contraíbles para áreas como instrucciones multilínea. | 
+| esquematizar | Esquematización de código | Activado | Crea automáticamente regiones contraíbles para áreas como instrucciones multilínea. |
 | Comprobación de sintaxis | Mostrar errores de sintaxis | Activado | Habilita la comprobación automática de sintaxis del código. |
