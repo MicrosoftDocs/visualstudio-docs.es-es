@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
 title: Scripting | Microsoft Docs
-ms.openlocfilehash: 4b18b7ddea5816da472b5216ae95b51a79c05478
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0ab2cac300313488bd50bebb451dfd7aa42425c1
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="scripting-technologies"></a>Tecnologías de scripting
 
@@ -19,7 +19,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/logos/logo_TS.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -37,7 +37,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/logos/logo_JS.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -55,7 +55,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/logos/logo_JS.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -73,7 +73,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -91,7 +91,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
