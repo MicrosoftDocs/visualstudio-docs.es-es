@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Con color en Visual Studio  
@@ -320,7 +320,7 @@ En ocasiones, deseará permiten al usuario final personalizar la interfaz de usu
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Creación de un paquete VSPackage para sus colores personalizables  
 Un VSPackage puede controlar las fuentes y colores a través de categorías personalizadas y mostrar los elementos en la página de propiedades de fuentes y colores. Cuando se utiliza este mecanismo, paquetes VSPackage deben implementar la [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) interfaz y sus interfaces asociadas.  
   
-En principio, este mecanismo puede utilizarse para modificar todos los elementos de presentación existente y las categorías que los contienen. Sin embargo, no debe utilizarse para modificar la categoría del Editor de texto o sus elementos de visualización. Para obtener más información sobre la categoría del Editor de texto, consulte [información general de Color y fuente](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+En principio, este mecanismo puede utilizarse para modificar todos los elementos de presentación existente y las categorías que los contienen. Sin embargo, no debe utilizarse para modificar la categoría del Editor de texto o sus elementos de visualización. Para obtener más información sobre la categoría del Editor de texto, consulte [información general de Color y fuente](../font-and-color-overview.md).  
   
 Para implementar categorías personalizadas o mostrar los elementos, un VSPackage debe:  
   
@@ -397,7 +397,7 @@ Para ello, un VSPackage debe:
   
  **OR**  
   
--   **sondear el IDE para cambios**. Esto puede hacerse mediante el implementado por el sistema [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaz. Aunque principalmente para la compatibilidad de persistencia, el [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) método puede obtener información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo MSDN [acceso a fuentes almacenados y la configuración de Color](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **sondear el IDE para cambios**. Esto puede hacerse mediante el implementado por el sistema [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaz. Aunque principalmente para la compatibilidad de persistencia, el [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) método puede obtener información de fuente y color para mostrar los elementos. Para obtener más información sobre la configuración de fuente y color, vea el artículo MSDN [acceso a fuentes almacenados y la configuración de Color](../accessing-stored-font-and-color-settings.md).  
   
 > **Nota:** para asegurarse de que los resultados de sondeo son correctos, use la [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) interfaz para determinar si se necesitan un vaciado de la caché y la actualización antes de llamar a los métodos de recuperación de la [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) interfaz.
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c3e5c90818485ef8fc071f22709dde14933769a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e5b0ddc7a8f521101e09f41b5036b4233a8bcdc6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas mixtas
 Las reglas mínimas mixtas de Microsoft se centran en los problemas más graves en los proyectos de C++ compatibles con Common Language Runtime, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos de C++ compatibles con Common Language Runtime.  
@@ -59,7 +59,6 @@ Las reglas mínimas mixtas de Microsoft se centran en los problemas más graves 
 |[C6504](../code-quality/c6504.md)|Null en valores que no son de puntero|  
 |[C6505](../code-quality/c6505.md)|MustCheck en valores void|  
 |[C6506](../code-quality/c6506.md)|Tamaño de búfer en valores que no son de puntero o matriz|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|No coincidencia Null en desreferenciación cero|  
 |[C6508](../code-quality/c6508.md)|Acceso de escritura en valores constantes|  
 |[C6509](../code-quality/c6509.md)|Return usado en condición previa|  
 |[C6510](../code-quality/c6510.md)|NullTerminated en valores que no son de puntero|  
@@ -70,12 +69,8 @@ Las reglas mínimas mixtas de Microsoft se centran en los problemas más graves 
 |[C6516](../code-quality/c6516.md)|No hay propiedades del atributo|  
 |[C6517](../code-quality/c6517.md)|Tamaño válido en búfer no legible|  
 |[C6518](../code-quality/c6518.md)|Tamaño de escritura en búfer no modificable|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|Anotación no válida: el valor de la propiedad 'NeedsRelease' debe ser Yes o No|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|Desreferenciación de cadena de tamaño no válida|  
 |[C6522](../code-quality/c6522.md)|Tipo de cadena de tamaño no válido|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|Parámetro de cadena de tamaño no válido|  
 |[C6525](../code-quality/c6525.md)|Cadena de tamaño no válida, ubicación inaccesible|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|Tipo de búfer de cadena de tamaño no válido|  
 |[C6527](../code-quality/c6527.md)|Anotación no válida: la propiedad 'NeedsRelease' no se puede usar en valores de tipo void|  
 |[C6530](../code-quality/c6530.md)|Estilo de cadena de formato no reconocido|  
 |[C6540](../code-quality/c6540.md)|El uso de anotaciones de atributo en esta función invalidará todas las anotaciones __declspec existentes|  
@@ -135,8 +130,7 @@ Las reglas mínimas mixtas de Microsoft se centran en los problemas más graves 
 |[C28253](../code-quality/c28253.md)|Anotación incoherente de la función: el parámetro tiene otra anotación en esta instancia.|  
 |[C28254](../code-quality/c28254.md)|dynamic_cast<>() no se admite en anotaciones|  
 |[C28262](../code-quality/c28262.md)|Se encontró un error de sintaxis de anotación en la función, para la anotación|  
-|[C28263](../code-quality/c28263.md)|Se encontró un error de sintaxis en una anotación condicional para la anotación intrínseca|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|Los valores de listas de resultados deben ser constantes.|  
+|[C28263](../code-quality/c28263.md)|Se encontró un error de sintaxis en una anotación condicional para la anotación intrínseca| 
 |[C28267](../code-quality/c28267.md)|Se encontró un error de sintaxis de anotaciones en la función.|  
 |[C28272](../code-quality/c28272.md)|La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función|  
 |[C28273](../code-quality/c28273.md)|Para la función, las pistas son incoherentes con la declaración de la función|  

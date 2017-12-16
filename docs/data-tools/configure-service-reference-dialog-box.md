@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
 El **configurar referencia de servicio** cuadro de diálogo le permite configurar el comportamiento de [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] servicios.  
@@ -62,7 +62,7 @@ El **configurar referencia de servicio** cuadro de diálogo le permite configura
  Determina si se llamará a los métodos de servicio de WCF sincrónicamente (valor predeterminado) o asincrónicamente.  
   
  **Generar operaciones basadas en tareas**  
- Al escribir código asincrónico, esta opción permite aprovechar las ventajas de la biblioteca TPL, incorporada en .Net 4. Vea [biblioteca TPL (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Al escribir código asincrónico, esta opción permite aprovechar las ventajas de la biblioteca TPL, incorporada en .Net 4. Vea [biblioteca TPL (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
   
  **Generar siempre contratos de mensaje**  
  Determina si se generarán tipos de contrato de mensaje para un cliente de WCF. Para obtener más información acerca de los contratos de mensaje, consulte [usar contratos de mensaje](/dotnet/framework/wcf/feature-details/using-message-contracts).  
@@ -97,4 +97,4 @@ El **configurar referencia de servicio** cuadro de diálogo le permite configura
 ## <a name="see-also"></a>Vea también  
 
  [Cómo: agregar una referencia a un servicio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Servicios de Windows Communication Foundation y servicios de datos WCF](../data-tools/configure-service-reference-dialog-box.md)
+ [Servicios de Windows Communication Foundation y Servicios de datos de WCF](../data-tools/configure-service-reference-dialog-box.md)

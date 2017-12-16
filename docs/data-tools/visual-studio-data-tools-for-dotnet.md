@@ -12,14 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b48b16d33c62c2d0ca96eb1d55ce22682458029
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Herramientas de datos de Visual Studio para .NET
-Visual Studio y .NET Framework proporcionan conjuntamente una amplia API y las herramientas de soporte técnico para conectarse a bases de datos, modelado de datos en memoria y mostrar los datos en la interfaz de usuario. Las clases de .NET Framework que proporcionan la funcionalidad de acceso a datos se conocen como [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). ADO.NET, junto con los datos de herramientas en Visual Studio, se diseñó originalmente principalmente para admitir bases de datos relacionales y XML. Hoy en día, muchos proveedores de base de datos NoSQL, o de terceros, ofrecen proveedores de ADO.NET.  
+Visual Studio y .NET Framework proporcionan conjuntamente una amplia API y las herramientas de soporte técnico para conectarse a bases de datos, modelado de datos en memoria y mostrar los datos en la interfaz de usuario. Las clases de .NET Framework que proporcionan la funcionalidad de acceso a datos se conocen como [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, junto con los datos de herramientas en Visual Studio, se diseñó originalmente principalmente para admitir bases de datos relacionales y XML. Hoy en día, muchos proveedores de base de datos NoSQL, o de terceros, ofrecen proveedores de ADO.NET.  
   
 [.NET core](https://www.dotnetfoundation.org/netcore) es compatible con ADO.NET, excepto para los conjuntos de datos y los tipos relacionados. Si el destino es .NET Core y requieren un nivel de asignación relacional de objetos (ORM), use [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
   
@@ -39,7 +39,7 @@ El flujo de trabajo típico es el siguiente:
   
 5.  Agregar código personalizado para cosas como las reglas de negocios, búsqueda y la validación de datos, o para aprovechar las ventajas de la funcionalidad personalizada que expone la base de datos subyacente.  
   
-Puede omitir el paso 3 y programar una aplicación .NET para enviar comandos directamente a una base de datos, en lugar de usar un modelo. En este caso, encontrará la documentación pertinente aquí: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). Tenga en cuenta que todavía puede usar el Asistente para configuración de orígenes de datos y los diseñadores para generar el código de enlace de datos al rellenar sus propios objetos en memoria y, a continuación, enlazar controles de IU a esos objetos.
+Puede omitir el paso 3 y programar una aplicación .NET para enviar comandos directamente a una base de datos, en lugar de usar un modelo. En este caso, encontrará la documentación pertinente aquí: [ADO.NET](/dotnet/framework/data/adonet/index). Tenga en cuenta que todavía puede usar el Asistente para configuración de orígenes de datos y los diseñadores para generar el código de enlace de datos al rellenar sus propios objetos en memoria y, a continuación, enlazar controles de IU a esos objetos.
   
 ## <a name="see-also"></a>Vea también
 [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

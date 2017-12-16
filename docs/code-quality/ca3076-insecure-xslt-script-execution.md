@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bf7da81e41a00bd0d673e3522f944dc17a549c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a304d5b405431bca78b3978e25b00d3cf7cc96c2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Ejecución del script XSLT no segura
 |||  
@@ -27,10 +27,10 @@ ms.lasthandoff: 10/31/2017
 |Cambio problemático|No trascendental|  
   
 ## <a name="cause"></a>Motivo  
- Si ejecuta el [lenguaje de transformación basado en hojas de estilo (XSLT)](https://support.microsoft.com/en-us/kb/313997) en aplicaciones .NET de forma no segura, el procesador podría [resolver referencias URI que no sean de confianza](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) y que podrían revelar información confidencial a atacantes, lo que daría lugar a ataques de denegación de servicio y entre sitios.  
+ Si ejecuta [transformaciones de lenguaje de hojas de estilo Extensible (XSLT)](https://support.microsoft.com/en-us/kb/313997) en aplicaciones .NET de forma insegura, el procesador podría resolver referencias URI no es de confianza y que podrían revelar información confidencial a atacantes, dando lugar a Ataques por denegación de servicio y entre sitios.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) es un estándar de World Wide Web Consortium (W3C) para transformar datos XML. XSLT normalmente se usa para escribir hojas de estilos para transformar datos XML en otros formatos, como HTML, texto de longitud fija, texto separado por comas o un formato XML distinto. Aunque está prohibido de forma predeterminada, puede habilitarlo para su proyecto.  
+ **XSLT** es un estándar de World Wide Web Consortium (W3C) para transformar los datos XML. XSLT normalmente se usa para escribir hojas de estilos para transformar datos XML en otros formatos, como HTML, texto de longitud fija, texto separado por comas o un formato XML distinto. Aunque está prohibido de forma predeterminada, puede habilitarlo para su proyecto.  
   
  Para garantizar que no expone una superficie a ataques, esta regla se desencadena cada vez que XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> recibe instancias de combinación no seguras de <xref:System.Xml.Xsl.XsltSettings> y <xref:System.Xml.XmlResolver>, lo que permite el procesamiento de scripts malintencionados.  
   

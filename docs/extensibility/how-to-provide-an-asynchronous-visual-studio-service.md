@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Cómo: proporcionar un servicio de asincrónica de Visual Studio
 Si desea obtener un servicio sin bloquear el subproceso de interfaz de usuario, debe crear un servicio asincrónico y cargar el paquete en un subproceso en segundo plano. Para ello puede usar un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> en lugar de un <xref:Microsoft.VisualStudio.Shell.Package>y agregue el servicio con los métodos asincrónicos especial del paquete asincrónica  
@@ -24,9 +24,9 @@ Si desea obtener un servicio sin bloquear el subproceso de interfaz de usuario, 
   
 ## <a name="implementing-an-asynchronous-service"></a>Implementar un servicio asincrónico  
   
-1.  Cree un proyecto VSIX (**archivo / nuevo / proyecto / Visual C# / Extensiblity / proyecto VSIX**). Denomine el proyecto **TestAsync**.  
+1.  Cree un proyecto VSIX (**archivo > Nuevo > proyecto > Visual C# > Extensiblity > proyecto VSIX**). Denomine el proyecto **TestAsync**.  
   
-2.  Agregar un paquete VSPackage al proyecto. Seleccione el nodo de proyecto en el **el Explorador de soluciones** y haga clic en **Agregar / nuevo elemento / elementos de Visual C# / extensibilidad / paquete de Visual Studio**. Llamar a este archivo **TestAsyncPackage.cs**.  
+2.  Agregar un paquete VSPackage al proyecto. Seleccione el nodo de proyecto en el **el Explorador de soluciones** y haga clic en **Agregar > nuevo elemento > elementos de Visual C# > extensibilidad > paquete de Visual Studio**. Llamar a este archivo **TestAsyncPackage.cs**.  
   
 3.  En TestAsyncPackage.cs, cambie el paquete para que herede de AsyncPackage en lugar de paquete:  
   

@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 76437dff5aa59e4864216318e64a07245c15c68d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualizar plantillas para proyectos y plantillas de elementos de Visual Studio de 2017
 A partir de 2017 de Visual Studio, Visual Studio está cambiando la forma detecta plantillas de proyecto y de elementos que se han instalado por un .vsix o un archivo .msi. Si dispone de extensiones que usan plantillas para proyectos o plantillas de elementos, debe actualizar sus extensiones. Este tema explica lo que debe hacer.  
@@ -26,7 +26,7 @@ A partir de 2017 de Visual Studio, Visual Studio está cambiando la forma detect
  Si desea crear una plantilla de proyecto o un elemento como parte de una extensión VSIX, vea [crear un proyecto y plantillas de elementos](../extensibility/creating-custom-project-and-item-templates.md).  
   
 ## <a name="template-scanning"></a>Plantilla de análisis  
- Anteriormente, **devenv /setup** o **devenv /installvstemplates** examina el disco local para buscar plantillas de proyecto y elemento. A partir de Preview 4, análisis se realizará solo para la ubicación de nivel de usuario (**%USERPROFILE%\Documents\\< versión de Visual Studio\>\My Exported Templates\\**) que se utiliza para plantillas generadas por la **archivo / exportar plantillas** comando.  
+ Anteriormente, **devenv /setup** o **devenv /installvstemplates** examina el disco local para buscar plantillas de proyecto y elemento. A partir de Preview 4, análisis se realizará solo para la ubicación de nivel de usuario (**%USERPROFILE%\Documents\\< versión de Visual Studio\>\My Exported Templates\\**) que se utiliza para plantillas generadas por la **archivo > Exportar plantillas** comando.  
   
  Para otras ubicaciones (no es de usuario), debe incluir un archivo manifest(.vstman) que especifica la ubicación y otras características de la plantilla. Se genera el archivo .vstman junto con el archivo .vstemplate utilizado para las plantillas. Si instala la extensión utilizando un .vsix, puede hacerlo volviendo a compilar la extensión en Visual Studio de 2017. Pero si utiliza un archivo .msi, debe realizar los cambios manualmente. Para obtener una lista de lo que necesita hacer para que estos cambios, consulte **actualizaciones para las extensiones se instalan con una. MSI** más adelante en este tema.  
   

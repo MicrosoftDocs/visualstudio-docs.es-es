@@ -50,11 +50,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Herramientas de conjunto de datos en Visual Studio
 > [!NOTE]
@@ -83,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
     -   [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)  
   
--   Consultar y buscar los datos en el conjunto de datos. Para obtener más información, consulte [consultar conjuntos de datos](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]permite [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) sobre los datos en un <xref:System.Data.DataSet> objeto. Para más información, vea [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Consultar y buscar los datos en el conjunto de datos. Para obtener más información, consulte [consultar conjuntos de datos](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]permite [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sobre los datos en un <xref:System.Data.DataSet> objeto. Para más información, vea [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Use la **orígenes de datos** ventana para enlazar controles de interfaz de usuario para el conjunto de datos o sus columnas individuales y para especificar qué columnas se puede modificar el usuario. Para obtener más información, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   

@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3c37f4dc215027752da9c16fbdfba44b4e10c41c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-a-service"></a>Cómo: proporcionar un servicio
 Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para proporcionar un servicio, un VSPackage debe registrar el servicio con Visual Studio y agregue el servicio.  
@@ -31,9 +31,9 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
   
 #### <a name="implementing-a-service"></a>Implementar un servicio  
   
-1.  Cree un proyecto VSIX (**archivo / nuevo / proyecto / Visual C# / Extensiblity / proyecto VSIX**).  
+1.  Cree un proyecto VSIX (**archivo > Nuevo > proyecto > Visual C# > Extensiblity > proyecto VSIX**).  
   
-2.  Agregar un paquete VSPackage al proyecto. Seleccione el nodo de proyecto en el **el Explorador de soluciones** y haga clic en **Agregar / nuevo elemento / elementos de Visual C# / extensibilidad / paquete de Visual Studio**.  
+2.  Agregar un paquete VSPackage al proyecto. Seleccione el nodo de proyecto en el **el Explorador de soluciones** y haga clic en **Agregar > nuevo elemento > elementos de Visual C# > extensibilidad > paquete de Visual Studio**.  
   
 3.  Para implementar un servicio, debe crear tres tipos:  
   
@@ -109,7 +109,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
   
 2.  Implemente el método de devolución de llamada, que debe crear y devolver el servicio o null si no se puede crear.  
   
-    ```  
+    ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  

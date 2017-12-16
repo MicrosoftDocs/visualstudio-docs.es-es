@@ -13,11 +13,11 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b16b7e9f4dba55babfc7ad2ad90affe0ca93c508
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Crear y usar directivas de inserción en el repositorio del análisis de código
 Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear una directiva de protección de análisis de código para .NET Framework y los proyectos de código (C/C ++) nativo en un proyecto de equipo. Puede usar la directiva de protección de análisis de código para controlar y mejorar la calidad del código que está protegido en la base de código.  
@@ -43,6 +43,4 @@ Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear una
  Explica cómo agregar palabras y tokens al diccionario al que se hace referencia en las reglas de nomenclatura de análisis de código.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Establecer y aplicar pruebas de calidad](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
-  
  [Mejorar la calidad del código con directivas de protección del proyecto de equipo](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

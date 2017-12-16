@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Los métodos APTCA deben llamar solo a métodos APTCA
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  Un llamador de confianza parcial `X` puede llamar al método `M1`, con lo que `M1` para llamar a `M2`. Dado que `M2` no tiene el atributo APTCA, su llamador inmediato (`M1`) debe satisfacer una petición de vínculo de plena confianza; `M1` es de plena confianza y, por tanto, supera esta comprobación. El riesgo de seguridad es porque `X` no participa en el cumplimiento de la petición de vínculo que protege `M2` de llamadores de confianza. Por lo tanto, los métodos con el atributo APTCA no deben llamar métodos que no tienen el atributo.  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Si el atributo APCTA es necesario, use una petición para proteger el método que llama al ensamblado de plena confianza. Los permisos exactos que se solicitan dependerán de la funcionalidad expuesta por el método. Si es posible, proteja el método con una petición de plena confianza para asegurarse de que la funcionalidad subyacente no se expone a los llamadores de confianza parcial. Si esto no es posible, seleccione un conjunto de permisos que proteja eficazmente la funcionalidad expuesta. Para obtener más información sobre las peticiones de, consulte [peticiones](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+ Si el atributo APCTA es necesario, use una petición para proteger el método que llama al ensamblado de plena confianza. Los permisos exactos que se solicitan dependerán de la funcionalidad expuesta por el método. Si es posible, proteja el método con una petición de plena confianza para asegurarse de que la funcionalidad subyacente no se expone a los llamadores de confianza parcial. Si esto no es posible, seleccione un conjunto de permisos que proteja eficazmente la funcionalidad expuesta.  
   
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  Para suprimir una advertencia de esta regla de forma segura, debe asegurarse de que la funcionalidad expuesta por el método no directa ni indirectamente que los llamadores tener acceso a información confidencial, operaciones o recursos que se pueden usar de forma destructiva.  
@@ -78,8 +78,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vea también  
  [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines)   
- [Puede llamar de ensamblados de .NET framework mediante código de confianza parcial](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)  (Usar bibliotecas de código que no es de plena confianza)  
- [Peticiones](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [Peticiones de vínculo](/dotnet/framework/misc/link-demands)   
  [Datos y modelado](/dotnet/framework/data/index)

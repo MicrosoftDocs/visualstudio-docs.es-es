@@ -18,11 +18,11 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecbf4b95689d760a58e00a65671c13c4c0807b51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 81cacbcc3f7573b9386fb2816650d8c96508b613
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Cómo: Utilizar los asistentes con las plantillas de proyectos
 Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> que, cuando se implementa, permite ejecutar código personalizado cuando un usuario crea un proyecto a partir de una plantilla.  
@@ -34,12 +34,12 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Crear un proyecto de plantilla de proyecto con un proyecto VSIX  
  Empezar a crear una plantilla personalizada con el proyecto plantilla de proyecto, que forma parte del SDK de Visual Studio. En este procedimiento se usará un proyecto de plantilla de proyecto de C#, pero también hay un proyecto de plantilla de proyecto de Visual Basic. A continuación, agregue un proyecto VSIX en la solución que contiene el proyecto de plantilla de proyecto.  
   
-1.  Crear un proyecto de plantilla de proyecto de C# (en Visual Studio, **archivo / nuevo / proyecto / Visual C# / extensibilidad / plantilla de proyecto de C#**). Asígnele el nombre **MyProjectTemplate**.  
+1.  Crear un proyecto de plantilla de proyecto de C# (en Visual Studio, **archivo > Nuevo > proyecto > Visual C# > extensibilidad > plantilla de proyecto de C#**). Asígnele el nombre **MyProjectTemplate**.  
   
     > [!NOTE]
     >  Se le pedirá que instale el SDK de Visual Studio. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Agregue un nuevo proyecto VSIX (**archivo / nuevo / proyecto / Visual C# / extensibilidad / proyecto VSIX**) en la misma solución que el proyecto de plantilla de proyecto (en el **el Explorador de soluciones**, seleccione el nodo solución, menú contextual y seleccione **Agregar / nuevo proyecto**). Asígnele el nombre **MyProjectWizard.**  
+2.  Agregue un nuevo proyecto VSIX (**archivo > Nuevo > proyecto > Visual C# > extensibilidad > proyecto VSIX**) en la misma solución que el proyecto de plantilla de proyecto (en el **el Explorador de soluciones**, seleccione el nodo de la solución, el menú contextual y seleccione **Agregar > Nuevo proyecto**). Asígnele el nombre **MyProjectWizard.**  
   
 3.  Establezca el proyecto VSIX como proyecto de inicio. En el **el Explorador de soluciones**, seleccione el nodo del proyecto VSIX, menú contextual y seleccione **establecer como proyecto de inicio**.  
   
@@ -51,14 +51,14 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
   
 7.  Compile la solución y comience la depuración. Se muestra una segunda instancia de Visual Studio. (Esto puede tardar unos minutos.)  
   
-8.  En la segunda instancia de Visual Studio, intente crear un nuevo proyecto con la nueva plantilla. (**Archivo / nuevo / proyecto / Visual C# / MyProject plantilla**). Debe aparecer el nuevo proyecto con una clase denominada **Class1**. Ahora ha creado una plantilla de proyecto personalizado. Detenga la depuración ahora.  
+8.  En la segunda instancia de Visual Studio, intente crear un nuevo proyecto con la nueva plantilla. (**Archivo > Nuevo > proyecto > Visual C# > plantilla MyProject**). Debe aparecer el nuevo proyecto con una clase denominada **Class1**. Ahora ha creado una plantilla de proyecto personalizado. Detenga la depuración ahora.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Crear un asistente de plantilla personalizado  
  Este tema muestra cómo crear un asistente personalizado que abre un Windows Form antes de que se cree el proyecto. El formulario permite a los usuarios agregar un valor de parámetro personalizado que se agrega al código fuente durante la creación del proyecto.  
   
 1.  Configurar el proyecto VSIX para que pueda crear un ensamblado.  
   
-2.  En el **el Explorador de soluciones**, seleccione el nodo de proyecto VSIX. A continuación el Explorador de soluciones, verá el **propiedades** ventana. Si no lo hace, seleccione **Ver / ventana propiedades**, o bien presione **F4**. En la ventana Propiedades, seleccione los siguientes campos para `true`:  
+2.  En el **el Explorador de soluciones**, seleccione el nodo de proyecto VSIX. A continuación el Explorador de soluciones, verá el **propiedades** ventana. Si no lo hace, seleccione **Vista > ventana propiedades**, o bien presione **F4**. En la ventana Propiedades, seleccione los siguientes campos para `true`:  
   
     -   **IncludeAssemblyInVSIXContainer**  
   
@@ -295,7 +295,7 @@ namespace $safeprojectname$
   
 1.  Volver a compilar la solución e iniciar la depuración. Aparece una segunda instancia de Visual Studio.  
   
-2.  Cree un nuevo proyecto de MyProjectTemplate. (**Archivo / nuevo / proyecto / Visual C# / MyProjectTemplate**)  
+2.  Cree un nuevo proyecto de MyProjectTemplate. (**Archivo > Nuevo > proyecto > Visual C# > MyProjectTemplate**)  
   
 3.  En el **nuevo proyecto** cuadro de diálogo, busque la plantilla, escriba un nombre y haga clic en **Aceptar**.  
   

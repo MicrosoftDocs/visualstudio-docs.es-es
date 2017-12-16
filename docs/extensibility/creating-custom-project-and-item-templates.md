@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99505c0d3c4ee59f6e07a5b38d5d95533ab879f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Crear plantillas para proyectos y plantillas de elementos
 El SDK de Visual Studio incluye plantillas de proyecto que cree una plantilla de proyecto personalizado y una plantilla de elemento personalizado. Estas plantillas incluyen algunas sustituciones de parámetros comunes y compilación como archivos zip. No se implementarán automáticamente y no están disponibles en la instancia experimental. Debe copiar el archivo zip archivos a la ubicación  
@@ -79,7 +79,7 @@ El SDK de Visual Studio incluye plantillas de proyecto que cree una plantilla de
   
 4.  Compile la solución y presione F5. Aparece la instancia experimental.  
   
-5.  Para un proyecto de plantilla de proyecto, verá la plantilla de proyecto aparecen en la **nuevo proyecto** diálogo (**archivo / nuevo / proyecto**), en el nodo Visual Basic o Visual C#. Para un proyecto de plantilla de elemento, verá la plantilla de elementos que aparecen en el cuadro de diálogo Agregar nuevo elemento (en el **el Explorador de soluciones**, seleccione el nodo del proyecto y haga clic en **Agregar / nuevo elemento**).  
+5.  Para un proyecto de plantilla de proyecto, verá la plantilla de proyecto aparecen en la **nuevo proyecto** diálogo (**archivo > Nuevo > proyecto**), en el nodo Visual Basic o Visual C#. Para un proyecto de plantilla de elemento, verá la plantilla de elementos que aparecen en el cuadro de diálogo Agregar nuevo elemento (en el **el Explorador de soluciones**, seleccione el nodo del proyecto y haga clic en **Agregar / nuevo elemento**).  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de plantillas de Visual Studio](../ide/visual-studio-template-reference.md)

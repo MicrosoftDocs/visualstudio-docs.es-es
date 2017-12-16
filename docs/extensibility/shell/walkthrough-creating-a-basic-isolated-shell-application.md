@@ -16,11 +16,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bd87c01367ea7f120413ad4aae2ae61b0332f6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 886185c61f407906ff059b84b5f1f8b18e3ace98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Tutorial: Crear una aplicación de Shell aislado básica
 Este tutorial muestra cómo crear una solución de shell aislado, personalizar la ventana de herramienta ayuda-acerca y crear un programa de instalación que instala el shell aislado.  
@@ -77,7 +77,7 @@ Este tutorial muestra cómo crear una solución de shell aislado, personalizar l
   
 3.  Compile la solución y comience la depuración.  
   
-4.  En **vista / otras ventanas**, haga clic en **explorador Web**. El **explorador Web** ventana muestra la página principal de Microsoft Corporation.  
+4.  En **Vista > otras ventanas**, haga clic en **explorador Web**. El **explorador Web** ventana muestra la página principal de Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Quitar el comando de impresión  
  El archivo .vsct en un proyecto de la interfaz de usuario de shell aislado consta de un conjunto de declaraciones del formulario `<Define name=No_` *elemento*`>`, donde *elemento* es uno de los comandos y menús estándar de Visual Studio.  
@@ -100,7 +100,7 @@ Este tutorial muestra cómo crear una solución de shell aislado, personalizar l
   
 4.  Esto quita el comando de impresión.  
   
-5.  Empiece a depurar la aplicación de shell aislado. Compruebe que la **archivo / imprimir** comando ha desaparecido.  
+5.  Empiece a depurar la aplicación de shell aislado. Compruebe que la **archivo > Imprimir** comando ha desaparecido.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Quitar características de Shell aislado  
  Puede quitar algunos de los paquetes que se cargan con Visual Studio editando el archivo de .pkgundef si no desea que las características de la aplicación de shell aislado personalizado. Especifique el paquete en una de las subclaves de la clave del registro de $RootKey$ \Packages.  
@@ -146,7 +146,7 @@ Este tutorial muestra cómo crear una solución de shell aislado, personalizar l
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  Inicie la depuración y en la aplicación de shell aislado, abra el **ayuda / acerca** cuadro. Debería ver las cadenas modificadas. El título de la ayuda/acerca de cuadro es el mismo que el `AssemblyTitle` valor en AssemblyInfo.cs.  
+4.  Inicie la depuración y en la aplicación de shell aislado, abra el **Ayuda > acerca de** cuadro. Debería ver las cadenas modificadas. El título de la ayuda/acerca de cuadro es el mismo que el `AssemblyTitle` valor en AssemblyInfo.cs.  
   
 5.  Las propiedades de la **ayuda/acerca** propio cuadro se encuentran en el archivo MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Para cambiar el ancho de la ayuda/acerca de cuadro, vaya a la `AboutDialogStyle` bloquear y establezca el `Width` propiedad a 200:  
   

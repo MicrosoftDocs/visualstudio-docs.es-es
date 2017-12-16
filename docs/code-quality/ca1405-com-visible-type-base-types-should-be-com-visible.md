@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 91634d5d46d63165874deded9c5ac67e7d4afa07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cceaee755af5269e266ca57e3644213e939c0ead
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Los tipos base de tipos visibles para COM deben ser visibles para COM
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Cambio problemático|Depende de la corrección|  
   
 ## <a name="cause"></a>Motivo  
- Un tipo visible del modelo de objetos componentes (COM) que se deriva de un tipo que no es visible para COM..  
+ Un tipo visible del modelo de objetos componentes (COM) que se deriva de un tipo que no es visible para COM.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
  Cuando un tipo visible COM agrega miembros en una nueva versión, debe cumplir una serie de instrucciones estrictas para evitar que los clientes COM que se enlazan a la versión actual. Un tipo que no es visible para COM, se da por supuesto que no tiene que seguir estas reglas de control de versiones de COM cuando agrega nuevos miembros. Sin embargo, si un visibles para COM tipo deriva del tipo no visible COM y expone una interfaz de clase de <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ClassInterfaceType> (valor predeterminado), todos los miembros públicos del tipo base (a menos que se marque específicamente como COM invisibles, lo que sería redundante) se expone a COM. Si el tipo base agrega a nuevos miembros en una versión posterior, pueden provocar errores en los clientes COM que se enlazan a la interfaz de clase del tipo derivado. Tipos visibles para COM deben derivar únicamente de tipos visibles para COM para reducir la posibilidad de que los clientes COM.  
@@ -52,5 +52,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>   
- [Presentar la interfaz de clase](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
  [Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)

@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de protección de análisis de código personalizadas para el código administrado
 Un directiva de protección especifica un conjunto de reglas que los miembros de un proyecto de equipo deben ejecutar en el código fuente antes de que el análisis de código se comprueba en el control de versiones. Microsoft proporciona un conjunto de standard *conjuntos de reglas* el análisis de código de ese grupo de reglas en áreas funcionales. *Conjuntos de reglas de directiva de protección personalizadas* especificar un conjunto de reglas de análisis de código que son específicos de un proyecto de equipo. Un conjunto de reglas se almacena en un archivo .ruleset.  
@@ -35,7 +35,7 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
  Para crear una regla personalizada establecido para un proyecto de equipo, primero se crea una carpeta especial para la regla de directiva de protección establecida en **Explorador de Control de código fuente**. A continuación, crear el archivo de conjunto de reglas y agregue el archivo al control de versiones. Por último, especifique el conjunto de reglas como la directiva de comprobación del análisis de código del proyecto de equipo.  
   
 > [!NOTE]
->  Para crear una carpeta en un proyecto de equipo, primero debe asignar la raíz del proyecto de equipo a una ubicación en el equipo local. Para obtener más información, consulte [crear y trabajar con áreas de trabajo (antiguo)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Para crear una carpeta en un proyecto de equipo, primero debe asignar la raíz del proyecto de equipo a una ubicación en el equipo local.  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para crear la carpeta de control de versiones para el conjunto de reglas de directiva de protección  
   
@@ -61,7 +61,7 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
   
 1.  En **Explorador de Control de código fuente**, haga clic en la nueva carpeta y, a continuación, haga clic en **agregar elementos a la carpeta**.  
   
-     Para obtener más información, consulte [usar control de versiones](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Para obtener más información, consulte [Git y VSTS](/vsts/git/overview).  
   
 2.  Haga clic en el conjunto de reglas archivo que creó y, a continuación, haga clic en **finalizar**.  
   

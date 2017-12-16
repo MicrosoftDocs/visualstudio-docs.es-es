@@ -10,17 +10,17 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: 8adc348553ba613898117f10ccd21a6e5cd02ab8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b89f021b181e653dff97368cc5c1f2d993f04323
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Cómo: utilizar AsyncPackage para cargar VSPackages en segundo plano
 Cargar e inicializar un paquete de VS pueden dar lugar a E/S de disco. Si este tipo E/S ocurre en el subproceso de interfaz de usuario, puede provocar problemas de capacidad de respuesta. Para solucionar este problema, Visual Studio 2015 introdujo la <xref:Microsoft.VisualStudio.Shell.AsyncPackage> clase que permite la carga del paquete en un subproceso en segundo plano.  
   
 ## <a name="creating-an-asyncpackage"></a>Crear un AsyncPackage  
- Puede empezar a crear un proyecto VSIX (**archivo / nuevo / proyecto / Visual C# / extensibilidad / proyecto VSIX**) y la adición de un paquete VSPackage al proyecto (haga clic con el botón secundario en el proyecto y **Agregar/nuevo elemento / C# elemento/extensibilidad/Visual Paquete de Studio**). A continuación, puede crear sus servicios y agregar esos servicios al paquete.  
+ Puede empezar a crear un proyecto VSIX (**archivo > Nuevo > proyecto > Visual C# > extensibilidad > proyecto VSIX**) y la adición de un paquete VSPackage al proyecto (haga clic con el botón secundario en el proyecto y **Agregar/nuevo elemento / elemento de C# / Paquete de Extensibility/Visual Studio**). A continuación, puede crear sus servicios y agregar esos servicios al paquete.  
   
 1.  Derivar el paquete desde <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   

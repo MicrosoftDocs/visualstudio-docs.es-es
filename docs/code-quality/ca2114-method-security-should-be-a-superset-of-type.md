@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La seguridad del método debería ser un supraconjunto del tipo
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Cambio problemático|Problemático|  
   
 ## <a name="cause"></a>Motivo  
- Un tipo tiene seguridad declarativa y uno de sus métodos dispone de seguridad declarativa para la misma acción de seguridad y la acción de seguridad no es [peticiones de vínculo](/dotnet/framework/misc/link-demands) o [peticiones de herencia](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)y los permisos comprueba el tipo no son un subconjunto de permisos comprobados por el método.  
+ Un tipo tiene seguridad declarativa y uno de sus métodos dispone de seguridad declarativa para la misma acción de seguridad y la acción de seguridad no es [peticiones de vínculo](/dotnet/framework/misc/link-demands), y los permisos comprobados por el tipo no son un subconjunto de los permisos comprobados por el método.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
  Un método no debe tener tanto un seguridad declarativa de nivel de método y de tipo para la misma acción. No se combinan las dos comprobaciones; se aplica solo a la demanda de nivel de método. Por ejemplo, si un tipo solicita permiso `X`, y uno de sus métodos solicita permiso `Y`, código no tiene que tener el permiso `X` para ejecutar el método.  
@@ -63,6 +63,5 @@ ms.lasthandoff: 10/31/2017
 **[Ningún permiso de lectura (exigido por método)] No se pudo obtener acceso a información personal: error en la solicitud.**   
 ## <a name="see-also"></a>Vea también  
  [Instrucciones de codificación segura](/dotnet/standard/security/secure-coding-guidelines)   
- [Peticiones de herencia](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [Peticiones de vínculo](/dotnet/framework/misc/link-demands)   
  [Datos y modelado](/dotnet/framework/data/index)

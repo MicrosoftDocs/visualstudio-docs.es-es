@@ -1,55 +1,50 @@
 ---
-title: "Los valores de las métricas de código | Documentos de Microsoft"
+title: "Calcular métricas de código en Visual Studio | Documentos de Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 12/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- code metrics
-- code analysis
-- measure code quality
-ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
-caps.latest.revision: "20"
+helpviewer_keywords: code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 234ec06d47afee3cbde7c2333742fe43ab599219
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c70648f0821ddaadfe0a70fd5307742ee110564c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="code-metrics-values"></a>Valores de métrica de código
-Las métricas de código son un conjunto de medidas de software que proporcionan a los programadores una mejor visión del código que están desarrollando. Aprovechando las ventajas de las métricas de código, los desarrolladores pueden entender qué tipos y métodos se deben rehacer o probar más a fondo. Los equipos de desarrollo pueden identificar los posibles riesgos, comprender el estado actual de un proyecto y realizar un seguimiento del progreso durante el desarrollo de software.  
-  
-## <a name="software-measurements"></a>Medidas de software  
- En la lista siguiente muestra los resultados de métrica del código que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] calcula:  
-  
--   **Índice de mantenimiento** -calcula un valor de índice entre 0 y 100 que representa la facilidad relativa de mantenimiento del código. Un valor alto significa mayor facilidad de mantenimiento. Las clasificaciones de colores, pueden utilizarse para identificar rápidamente los puntos conflictivos en el código. Una clasificación en verde está comprendido entre 20 y 100 e indica que el código tiene buen mantenimiento. Una clasificación amarilla entre 10 y 19 e indica que el código sea fácil de mantener cierta. Una clasificación de color rojo es una clasificación entre 0 y 9 e indica mantenimiento bajo.  
-  
--   **Complejidad ciclomática** -mide la complejidad estructural del código. Se crea calculando el número de rutas de acceso de código diferentes en el flujo del programa. Un programa que tiene el flujo de control complejo requerirá más pruebas para lograr una buena cobertura de código y será más difícil de mantener.  
-  
-    > [!NOTE]
-    >  En algunos casos, el cálculo de la complejidad ciclomática de un método en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] difiere de las versiones anteriores. Para obtener más información, consulte la "cambios en Visual Studio 2010 complejidad cálculos sección de código" de [solución de problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md).  
-  
--   **Profundidad de herencia** -indica el número de definiciones de clase que se extiende a la raíz de la jerarquía de clases. La profundidad la jerarquía más difícil puede ser entender donde se definen los campos y métodos determinados o / y ha vuelto a definir.  
-  
--   **El acoplamiento de clase** -mide el acoplamiento para las clases únicas a través de parámetros, variables locales, tipos de valor devuelto, llamadas a métodos, creaciones de instancias genérica o de plantilla, clases base, implementaciones de interfaz, los campos definidos en los tipos externos, y decoración de atributo. Buen diseño de software indica que los tipos y métodos deben tener cohesión alta y acoplamiento bajo. Un acoplamiento alto indica un diseño que resulta difícil reutilizar y mantener debido a sus interdependencias en otros tipos.  
-  
--   **Líneas de código** -indica el número aproximado de líneas en el código. El número se basa en el código IL y, por tanto, no es el número exacto de líneas en el archivo de código fuente. Un número muy alto podría indicar que un tipo o método intenta hacer demasiado trabajo y debe dividirse. También puede indicar que el tipo o método podría ser difícil de mantener.  
-  
-## <a name="anonymous-methods"></a>Métodos anónimos  
- Un *método anónimo* es simplemente un método que no tiene ningún nombre. Métodos anónimos se utilizan con más frecuencia para pasar un bloque de código como un parámetro de delegado. Resultados de métricas para un método anónimo que se declara en un miembro, como un método o descriptor de acceso, se asocian al miembro que declara el método. No están asociados con el miembro que llama al método.  
-  
- Para obtener más información acerca de cómo tratan las métricas de código métodos anónimos, vea [métodos anónimos y análisis de código](../code-quality/anonymous-methods-and-code-analysis.md).  
-  
-## <a name="generated-code"></a>Código generado  
- Algunas herramientas de software y los compiladores generan código que se agrega a un proyecto y que el programador del proyecto no ve o no debe cambiar. Principalmente, las métricas de código omiten el código generado al calcular los valores de métricas. Esto permite que los valores de las métricas para que refleje lo que el programador puede ver y cambiar.  
-  
- No se omite el código generado para formularios Windows forms, porque es código que el programador puede ver y cambiar.  
-  
-## <a name="see-also"></a>Vea también  
- [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+
+La mayor complejidad de las aplicaciones de software modernas también aumenta la dificultad de hacer que el código de confianza y fácil de mantener. Las métricas de código son un conjunto de medidas de software que proporcionan a los programadores una mejor visión del código que están desarrollando. Aprovechando las ventajas de las métricas de código, los desarrolladores pueden entender qué tipos y métodos se deben rehacer o probar más a fondo. Los equipos de desarrollo pueden identificar los posibles riesgos, comprender el estado actual de un proyecto y realizar un seguimiento del progreso durante el desarrollo de software.
+
+Los programadores pueden usar Visual Studio para generar datos de métricas de código que medir la complejidad y el mantenimiento del código administrado. Datos de métricas de código se pueden generar para una solución completa o un proyecto único.
+
+## <a name="software-measurements"></a>Medidas de software
+
+En la lista siguiente muestra los resultados de métrica del código que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] calcula:
+
+- **Índice de mantenimiento** -calcula un valor de índice entre 0 y 100 que representa la facilidad relativa de mantenimiento del código. Un valor alto significa mayor facilidad de mantenimiento. Las clasificaciones de colores, pueden utilizarse para identificar rápidamente los puntos conflictivos en el código. Una clasificación en verde está comprendido entre 20 y 100 e indica que el código tiene buen mantenimiento. Una clasificación amarilla entre 10 y 19 e indica que el código sea fácil de mantener cierta. Una clasificación de color rojo es una clasificación entre 0 y 9 e indica mantenimiento bajo.
+
+- **Complejidad ciclomática** -mide la complejidad estructural del código. Se crea calculando el número de rutas de acceso de código diferentes en el flujo del programa. Un programa que tiene el flujo de control complejo requerirá más pruebas para lograr una buena cobertura de código y será más difícil de mantener.
+
+- **Profundidad de herencia** -indica el número de definiciones de clase que se extiende a la raíz de la jerarquía de clases. La profundidad la jerarquía más difícil puede ser entender donde se definen los campos y métodos determinados o / y ha vuelto a definir.
+
+- **El acoplamiento de clase** -mide el acoplamiento para las clases únicas a través de parámetros, variables locales, tipos de valor devuelto, llamadas a métodos, creaciones de instancias genérica o de plantilla, clases base, implementaciones de interfaz, los campos definidos en los tipos externos, y decoración de atributo. Buen diseño de software indica que los tipos y métodos deben tener cohesión alta y acoplamiento bajo. Un acoplamiento alto indica un diseño que resulta difícil reutilizar y mantener debido a sus interdependencias en otros tipos.
+
+- **Líneas de código** -indica el número aproximado de líneas en el código. El número se basa en el código IL y, por tanto, no es el número exacto de líneas en el archivo de código fuente. Un número muy alto podría indicar que un tipo o método intenta hacer demasiado trabajo y debe dividirse. También puede indicar que el tipo o método podría ser difícil de mantener.
+
+## <a name="anonymous-methods"></a>Métodos anónimos
+
+Un *método anónimo* es simplemente un método que no tiene ningún nombre. Métodos anónimos se utilizan con más frecuencia para pasar un bloque de código como un parámetro de delegado. Resultados de métricas para un método anónimo que se declara en un miembro, como un método o descriptor de acceso, se asocian al miembro que declara el método. No están asociados con el miembro que llama al método.
+
+Para obtener más información acerca de cómo tratan las métricas de código métodos anónimos, vea [métodos anónimos y análisis de código](../code-quality/anonymous-methods-and-code-analysis.md).
+
+## <a name="generated-code"></a>Código generado
+
+Algunas herramientas de software y los compiladores generan código que se agrega a un proyecto y que el programador del proyecto no ve o no debe cambiar. Principalmente, las métricas de código omiten el código generado al calcular los valores de métricas. Esto permite que los valores de las métricas para que refleje lo que el programador puede ver y cambiar.
+
+No se omite el código generado para formularios Windows Forms, porque es código que el programador puede ver y cambiar.
