@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Aprenda a sacar el máximo partido de las suscripciones de Visual Studio."
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>Administrar suscripciones
 ## <a name="signing-in-to-the-portal"></a>Iniciar sesión en el portal
@@ -31,7 +31,7 @@ Si ha comprado una suscripción de Visual Studio a través de Microsoft Store, l
 #### <a name="workschool-accounts"></a>Cuentas profesionales o educativas
 Si le han proporcionado la suscripción en el trabajo o la escuela, habrá recibido un correo electrónico de bienvenida.  
 1.  Visite el [portal de suscriptores](https://my.visualstudio.com/).
-2.  Escriba la dirección de correo electrónico asignada a la nueva suscripción de Visual Studio. Esta dirección también se indica en la **carta de bienvenida** al suscriptor. Si no ha recibido la **carta de bienvenida**, compruebe las carpetas de correo no deseado.
+2.  Escriba la dirección de correo electrónico asignada a la nueva suscripción de Visual Studio. Esta dirección también se indica en la **carta de bienvenida** al suscriptor. Si no ha recibido la carta de bienvenida, compruebe las carpetas de correo no deseado.
 3.  Haga clic en **Continuar**.
 4.  Se le redirigirá a la página de inicio de sesión corporativo.
 5.  Escriba su contraseña.
@@ -44,12 +44,12 @@ Si su organización tiene Azure Active Directory pero usted no tiene una cuenta 
 1.  Vaya al [portal de suscriptores](https://my.visualstudio.com).
 2.  Escriba la dirección de correo electrónico asignada a la nueva suscripción de Visual Studio. Esta dirección también se indica en la **carta de bienvenida** al suscriptor.  (Si no ha recibido el correo electrónico de bienvenida, compruebe las carpetas de correo no deseado).
 3.  Haga clic en **Continuar**.
-4.  Se le redirigirá a una **página de decisiones**.   Seleccione **Cuenta profesional o educativa** si la suscripción está asignada a una cuenta **profesional o educativa** asociada con un inquilino de Azure Active Directory (AAD).  Seleccione **Personal** si la suscripción está asociada con una dirección de correo electrónico **corporativa**, pero también se ha convertido en una cuenta de Microsoft (MSA) **personal**.
+4.  Se le redirigirá a una **página de decisiones**.   Seleccione **Cuenta profesional o educativa** si la suscripción está asignada a una cuenta **profesional o educativa** asociada con un inquilino de Azure Active Directory (AAD).  Seleccione **Personal** si la suscripción está asociada con una dirección de correo electrónico **corporativa**, pero también se ha convertido en una cuenta de Microsoft (MSA) **personal**
 5.  Escriba su contraseña.
 6.  Haga clic en **Iniciar sesión**. 
 
 ### <a name="managing-multiple-subscriptions"></a>Administrar varias suscripciones
-En Mi portal se reúnen todos los programas y suscripciones de Visual Studio en una sola experiencia de portal mejorada.  Por ejemplo, tal vez tenga una suscripción estándar, como Visual Studio Enterprise para el trabajo, y una suscripción mensual de Visual Studio Professional o una pertenencia a Visual Studio Dev Essentials que usa en casa. 
+En el portal de suscripciones de Visual Studio se reúnen todos los programas y suscripciones de Visual Studio en una sola experiencia de portal mejorada.  Por ejemplo, tal vez tenga una suscripción estándar, como Visual Studio Enterprise para el trabajo, y una suscripción mensual de Visual Studio Professional o una pertenencia a Visual Studio Dev Essentials que usa en casa. 
 #### <a name="which-subscription-am-i-using"></a>¿Qué suscripción estoy usando?
 En la página de beneficios, se mostrará la suscripción que está usando en un lugar destacado del banner azul.  También se muestra en la esquina superior derecha de la página.
 
@@ -64,9 +64,9 @@ En la página de beneficios, se mostrará la suscripción que está usando en un
 #### <a name="if-your-subscription-is-not-visible"></a>Si la suscripción no está visible...
 - Puede que haya expirado.  En el portal de suscriptores solo se muestran las suscripciones activas.
 - Puede que esté asociada con una dirección de correo electrónico diferente. Por ejemplo, si inicia sesión en una suscripción de Visual Studio Professional con el correo electrónico profesional o educativo y tiene una pertenencia a Visual Studio Dev Essentials asociada a su cuenta de Microsoft, solo verá la suscripción correspondiente a la dirección de correo electrónico que ha usado para iniciar sesión en el portal de suscriptores.  Para ver la otra suscripción, debe cerrar sesión e iniciar sesión con la otra dirección de correo electrónico.
-- Si su empresa compra suscripciones a través de una licencia por volumen, es posible que el administrador no le haya asignado una suscripción.  
+- Si su empresa compra suscripciones a través de una licencia por volumen, es posible que el administrador no le haya asignado una suscripción o que haya reasignado su suscripción a otro usuario.  
 
-#### <a name="renewing-my-subscriptions"></a>Renovar las suscripciones
+### <a name="renewing-my-subscriptions"></a>Renovar las suscripciones
 **Suscripciones estándar**
 - Microsoft Store: si ha comprado la suscripción a través de [Microsoft Store](http://www.microsoft.com/store), también la puede renovar desde ahí. 
 - Licencia por volumen: si su empresa compra suscripciones a través de una licencia por volumen, el administrador debe ponerse en contacto con un distribuidor para renovar las suscripciones.
@@ -81,7 +81,7 @@ En la página de beneficios, se mostrará la suscripción que está usando en un
 
 **Visual Studio Dev Essentials**: Dev Essentials es un programa gratuito y las pertenencias no expiran.  
 
-#### <a name="transferring-subscriptions"></a>Transferir suscripciones
+### <a name="transferring-subscriptions"></a>Transferir suscripciones
 Si su suscripción se ha comprado a través de licencias por volumen de Microsoft y necesita reasignarla a otra persona de la organización, tendrá que encargarse de ello su administrador. Las suscripciones comerciales se pueden transferir a otro usuario. Para ello, es necesario ponerse en contacto con el servicio de atención al cliente.  Las suscripciones complementarias o "No para reventa" no se pueden transferir. 
 
 
@@ -91,7 +91,7 @@ Si su suscripción se ha comprado a través de licencias por volumen de Microsof
 Puede cambiar fácilmente la información de contacto y las preferencias en el perfil.  
 1.  Haga clic en su nombre en la esquina superior derecha del portal de suscriptores.
 2.  Haga clic en el botón **Editar perfil**.
-3.  En la pestaña **Acerca de**, puede cambiar su nombre, correo electrónico, país o región, imagen de perfil y preferencias de contacto.  En la pestaña "Preferencias", puede seleccionar el idioma preferido, el formato de fecha y hora, la zona horaria y el tema de la interfaz de usuario.  
+3.  En la pestaña **Acerca de**, puede cambiar su nombre, correo electrónico, país o región, imagen de perfil y preferencias de contacto.  En la pestaña **Preferencias**, puede seleccionar el idioma preferido, el formato de fecha y hora, la zona horaria y el tema de la interfaz de usuario.  
 4.  Cuando haya acabado de realizar los cambios, haga clic en **Guardar**. 
 5.  Haga clic en el botón **Atrás** del explorador para volver a la página de beneficios. 
 

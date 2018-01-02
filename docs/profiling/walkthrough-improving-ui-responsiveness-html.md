@@ -22,14 +22,14 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4747a1e2c0d9d7c20fe0856becb4cd42d1e847
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)
-Este tutorial le guía a través del proceso de identificar y corregir un problema de rendimiento con el [Generador de perfiles de capacidad de respuesta de la IU de HTML](../profiling/html-ui-responsiveness.md). El generador de perfiles está disponible en Visual Studio para aplicaciones universales de Windows y para UWP mediante JavaScript. En este escenario, crearás una aplicación de prueba de rendimiento que actualiza los elementos DOM con demasiada frecuencia, y usarás el generador de perfiles para identificar y corregir este problema.  
+Este tutorial le guía a través del proceso de identificar y corregir un problema de rendimiento con el [Generador de perfiles de capacidad de respuesta de la IU de HTML](../profiling/html-ui-responsiveness.md). El generador de perfiles está disponible en las aplicaciones de Visual Studio para UWP a través de JavaScript. En este escenario, crearás una aplicación de prueba de rendimiento que actualiza los elementos DOM con demasiada frecuencia, y usarás el generador de perfiles para identificar y corregir este problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Crear y ejecutar la aplicación de prueba de rendimiento  
   

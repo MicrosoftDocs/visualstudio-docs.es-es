@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: aec5948ed985b6ff2abde47a48198cf1a67c4337
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
 Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. A continuación le indicamos cómo debe notificarnos un problema para que podamos diagnosticarlo y corregirlo.  
@@ -65,6 +65,12 @@ Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a dia
 ## <a name="submit-the-report"></a>Enviar el informe  
 ###  <a name="submit_the_report"></a>  
  Haga clic en el botón **Enviar** para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. (Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción para el informe).  
+
+## <a name="alternate-reporting"></a>Informes alternativos
+###  <a name="alternate_reporting"></a>  
+ Si no puede completar la instalación de Visual Studio o no puede acceder a la herramienta de comentarios dentro de Visual Studio, esta herramienta también está disponible en el Instalador de Visual Studio. Haga clic en el icono de comentarios que se encuentra en la esquina superior derecha del Instalador de Visual Studio y, luego, siga los pasos descritos en este artículo.
+
+ ![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios en el Instalador de Visual Studio para abrir la herramienta de comentarios](../install/media/report-a-problem.png)
 
 ## <a name="see-also"></a>Vea también  
  [Hable con nosotros](../ide/talk-to-us.md)

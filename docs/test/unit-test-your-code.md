@@ -15,11 +15,11 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: e6e0b55e86130f316c09583d4a52e1ad3dc22608
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: 7d4b3634f651cd8fc0ebc9c2e5254914a62e3771
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="unit-test-your-code"></a>Haga una prueba unitaria de su código
 Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma rápida de buscar errores lógicos en los métodos de clases de proyectos de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] y [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)].  
@@ -30,7 +30,7 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
   
 2.  **Marco de pruebas unitarias de Microsoft para código administrado.** El marco de pruebas unitarias de Microsoft para código administrado se instala con Visual Studio y proporciona un marco para probar el código .NET.  
   
-3.  **Marco de pruebas unitarias de Microsoft para C++.** El marco de pruebas unitarias de Microsoft para C++ se instala con Visual Studio y proporciona un marco para probar código nativo.  
+3.  **Marco de pruebas unitarias de Microsoft para C++.** El marco de pruebas unitarias de Microsoft para C++ se instala con Visual Studio y proporciona un marco para probar código nativo.  Visual Studio también incluye los marcos de trabajo de Google Test, Boost.Test y CTest, y hay disponibles adaptadores de terceros si son necesarios para marcos de trabajo de prueba adicionales. Para obtener más información, vea [Writing unit tests for C/C++](writing-unit-tests-for-c-cpp.md) (Escribir pruebas unitarias para C/C++). 
   
 4.  **Herramientas de cobertura de código.** Puede determinar la cantidad de código de producto que utilizan las pruebas unitarias a partir de un comando en el Explorador de pruebas.  
   

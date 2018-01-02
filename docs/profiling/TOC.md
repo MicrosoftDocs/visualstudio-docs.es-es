@@ -1,7 +1,16 @@
-# [Guía de características de generación de perfiles](profiling-feature-tour.md)
-## [Guía básica para la generación de perfiles de rendimiento](beginners-guide-to-performance-profiling.md)
-## [Novedades de las herramientas de generación de perfiles](what-s-new-in-profiling-tools.md)
+
+# [Documentación de generación de perfiles](index.md)
+# Información general
+## [Guía de características de generación de perfiles](profiling-feature-tour.md)
+# Guías de inicio rápido
+## [Análisis del uso de CPU (administrado)](quickstart-cpu-usage-managed.md)
+## [Análisis del uso de CPU (nativo)](quickstart-cpu-usage-native.md)
+## [Análisis del uso de CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Tutoriales
+## [Análisis del rendimiento de aplicaciones en Visual Studio](beginners-guide-to-performance-profiling.md)
+# Conceptos
 ## [Ejecución de herramientas de generación de perfiles con o sin el depurador](running-profiling-tools-with-or-without-the-debugger.md)
+# Guías de procedimientos
 ## [Análisis del uso de memoria](memory-usage.md)
 ### [Eventos de montón ETW nativos personalizados](custom-native-etw-heap-events.md)
 ### [Uso de memoria sin el depurador](memory-usage-without-debugging2.md)
@@ -365,5 +374,7 @@
 ##### [Función CvWriteAlert](cvwritealert-function.md)
 ##### [Función CvWriteFlag](cvwriteflag-function.md)
 ##### [Función CvWriteMessage](cvwritemessage-function.md)
-### [Utilidad de la línea de comandos del visualizador de simultaneidad (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Análisis del uso de energía en las aplicaciones para UWP](analyze-energy-use-in-store-apps.md)
+### [Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
+## [Analizar el uso de energía en las aplicaciones de la Tienda](analyze-energy-use-in-store-apps.md)
+# Recursos
+## [Novedades de las herramientas de generación de perfiles](what-s-new-in-profiling-tools.md)

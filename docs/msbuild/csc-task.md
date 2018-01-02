@@ -21,11 +21,11 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="csc-task"></a>Csc (Tarea)
 Encapsula CSC.exe y genera archivos ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o archivos de módulos de códigos (.netmodule). Para obtener más información sobre CSC.exe, consulte [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -63,6 +63,7 @@ Encapsula CSC.exe y genera archivos ejecutables (.exe), archivos de biblioteca d
 |`NoWin32Manifest`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, no incluya el manifiesto Win32 predeterminado.|  
 |`Optimize`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, activa las optimizaciones. Si `false`, desactiva las optimizaciones. Para obtener más información, consulte [/optimize (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|Parámetro de salida `String` opcional.<br /><br /> Especifica el nombre del archivo de salida. Para obtener más información, consulte [/out (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
+|`OutputRefAssembly`|Parámetro `String` opcional.<br /><br /> Especifica el nombre del archivo de ensamblado de referencia de salida. Para más información, consulte [/refout (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
 |`PdbFile`|Parámetro `String` opcional.<br /><br /> Especifica el nombre del archivo de información de depuración. El nombre predeterminado es el nombre del archivo de salida con una extensión .pdb.|  
 |`Platform`|Parámetro `String` opcional.<br /><br /> Especifica la plataforma del procesador que debe destinar el archivo de salida. Este parámetro puede tener un valor de `x86`, `x64` o `anycpu`. El valor predeterminado es `anycpu`. Para obtener más información, consulte [/platform (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Hace que la tarea importe información de tipo pública de los elementos especificados en el proyecto actual. Para obtener más información, consulte [/reference (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Si quiere especificar un alias de referencia [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] en un archivo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], agregue los metadatos `Aliases` al elemento "Reference" original. Por ejemplo, para establecer el alias "LS1" en la siguiente línea de comandos CSC:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> debe utilizar:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  

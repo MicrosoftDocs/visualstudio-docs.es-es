@@ -8,22 +8,21 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6476de086aad812e40d3c5b638c2076d50adfb27
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="python-environments"></a>Entornos de Python
 
-Python en Visual Studio facilita la administración de varios entornos de Python y el cambio fácil entre ellos para proyectos diferentes. 
+Python en Visual Studio facilita la administración de varios entornos de Python y el cambio fácil entre ellos para proyectos diferentes.
 
-Nota: Si no está familiarizado con Python en Visual Studio, consulte los siguientes temas en primer lugar ya que la presente información se basa en ellos:
+**Nota**: Si no está familiarizado con Python en Visual Studio, consulte los siguientes temas en primer lugar ya que la presente información se basa en ellos:
 
 - [Uso de Python en Visual Studio](python-in-visual-studio.md)
 - [Instalación de la compatibilidad con Python en Visual Studio](installation.md)
@@ -50,8 +49,8 @@ Para ver un vídeo de introducción, consulte [Managing Python Environments (Adm
 
 Excepto con Visual Studio 2017, la compatibilidad con Python no incluye un intérprete de Python, por lo que necesita instalar uno de los siguientes para ejecutar el código. En general, Visual Studio detecta automáticamente intérpretes recién instalados y configura un entorno para cada uno. Si no detecta un entorno instalado, consulte la sección [Creación de un entorno para un intérprete existente](#creating-an-environment-for-an-existing-interpreter).
 
-| Intérprete | Descripción | 
-| --- | --- | 
+| Intérprete | Descripción |
+| --- | --- |
 | [CPython](https://www.python.org/) | Intérprete "nativo" y que se usa con más frecuencia, disponible en versiones de 32 y 64 bits (se recomienda la versión de 32 bits). Incluye características más recientes del lenguaje, máxima compatibilidad con paquetes de Python, compatibilidad completa con la depuración e interoperabilidad con [IPython](http://ipython.org/). Consulte también: [Should I use Python 2 or Python 3? (¿Debo usar Python 2 o Python 3?)](http://wiki.python.org/moin/Python2orPython3). Tenga en cuenta que Visual Studio 2015 y las versiones anteriores no admiten Python 3.6 y pueden generar el error de no compatibilidad con la versión 3.6 de Python. Use la versión Python 3.5 o anteriores. |
 | [IronPython](https://github.com/IronLanguages/main) | Implementación de .NET de Python, disponible en versiones de 32 y 64 bits, que proporciona interoperabilidad con C#, F# y Visual Basic, acceso a las API de .NET, depuración estándar de Python (pero no depuración en modo mixto de C++) y depuración mixta de IronPython y C#. IronPython, sin embargo, no admite entornos virtuales. | 
 | [Anaconda](https://www.continuum.io) | Plataforma de ciencia de datos abierta con tecnología de Python que incluye la versión más reciente de CPython y la mayoría de los paquetes de difícil instalación. Es la opción recomendable si no puede decidirse. |
@@ -68,7 +67,7 @@ Para abrir la ventana Python Environments (Entornos de Python), realice una de l
 1. Haga clic con el botón derecho en **Python Environments** (Entornos de Python) para un proyecto en el Explorador de soluciones y seleccione **View All Python Environments** (Ver todos los entornos de Python):
 
     ![Comando Ver todos los entornos del Explorador de soluciones](media/environments-view-all.png)
-    
+
 En cualquier caso, la ventana Python Environments (Entornos de Python) aparece como una pestaña del mismo nivel que el Explorador de soluciones:
 
 ![Ventana Python Environments (Entornos de Python)](media/environments-default-view.png)
@@ -87,7 +86,7 @@ En el ejemplo anterior se muestra que Python 3.4 (32-bit CPython) está instalad
 
 Visual Studio busca normalmente un intérprete Python instalado mediante la comprobación del Registro (siguiendo [PEP 514 - registro de Python en el Registro de Windows](https://www.python.org/dev/peps/pep-0514/)). Sin embargo, es posible que Visual Studio no lo encuentre si el intérprete está instalado en un modo no estándar. En tales casos, puede apuntar Visual Studio directamente al intérprete de la siguiente manera:
 
-1. Seleccione **+Personalizado...**  en la ventana Python Environments (Entornos de Python) para crear un nuevo entorno y abrir la pestaña [**Configurar**](#configure-tab) que se describe a continuación.
+1. Seleccione **+Personalizado...** en la ventana [Python Environments](#managing-python-environments-in-visual-studio) (Entornos de Python) para crear un nuevo entorno y abrir la pestaña [**Configurar**](#configure-tab) que se describe a continuación.
 
     ![Vista predeterminada para un nuevo entorno personalizado](media/environments-custom-1.png)
 
@@ -130,7 +129,6 @@ Los scripts de inicio contienen código que la ventana interactiva carga y ejecu
 
 1. El control **Scripts** de la pestaña **Herramientas > Opciones > Herramientas de Python > Ventanas interactivas** (vea [Opciones de ventanas interactivas](options.md#interactive-windows-options)) pretende especificar una carpeta adicional para los scripts de inicio que se cargan y ejecutan en todos los entornos. No obstante, esta característica no funciona actualmente.
 
-
 ### <a name="configure-tab"></a>Pestaña Configurar
 
 Si se muestra, contiene detalles como se describe en la tabla siguiente. Si esta pestaña no está presente, significa que Visual Studio administra todos los detalles automáticamente.
@@ -166,7 +164,6 @@ Al seleccionar **Elevar siempre al instalar o desinstalar paquetes** se impide q
 
 En esa misma pestaña de opciones, también puede seleccionar **Ejecutar siempre pip como administrador** para suprimir el cuadro de diálogo en todos los entornos. Vea [Opciones: pestaña General](options.md#general-options).
 
-
 ### <a name="intellisense-tab"></a>Pestaña IntelliSense
 
 Muestra el estado actual de la base de datos de finalización de IntelliSense:
@@ -179,7 +176,7 @@ Las bibliotecas para las que no se han compilado los datos se marcan con **!**; 
 
 ## <a name="global-environments"></a>Entornos globales
 
-Los entornos globales (o de todo el sistema) están disponibles para todos los proyectos en una máquina. Visual Studio normalmente detecta entornos globales automáticamente, que se pueden ver en la ventana Python Environments (Entornos de Python). Si no es así, puede agregar un entorno manualmente, como se describió anteriormente en [Administración de entornos de Python en Visual Studio](#managing-python-environments-in-visual-studio).
+Los entornos globales (o de todo el sistema) están disponibles para todos los proyectos en una máquina. Visual Studio normalmente detecta entornos globales automáticamente, que se pueden ver en la ventana [Python Environments](#managing-python-environments-in-visual-studio) (Entornos de Python). Si no es así, puede agregar manualmente un entorno a través de esa misma ventana.
 
 Visual Studio usa el entorno predeterminado para todos los nuevos proyectos para ejecución, depuración, comprobación de la sintaxis, visualización de finalizaciones de importación y miembros y cualquier otra tarea que requiera un entorno. El cambio del entorno predeterminado afecta a todos los proyectos a los que no se ha agregado un [entorno específico del proyecto](#project-specific-environments), tal como se describe a continuación.
 
@@ -208,7 +205,6 @@ Para instalar nuevos paquetes, haga clic con el botón derecho en el entorno, se
 
 > [!Tip]
 > Una situación común donde pip no puede instalar un paquete es cuando este incluye código fuente para componentes nativos en archivos `*.pyd`. Sin la versión necesaria de Visual Studio instalada, pip no puede compilar estos componentes. El mensaje de error que se muestra en esta situación es `error: Unable to find vcvarsall.bat`. `easy_install` suele poder descargar los binarios previamente compilados, y el usuario puede descargar un compilador adecuado para versiones anteriores de Python de [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Para más información, consulte [How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Cómo afrontar la dificultad de "no poder encontrar vcvarsallbat") en el blog del equipo de herramientas de Python.
-
 
 ## <a name="virtual-environments"></a>Entornos virtuales
 
@@ -242,11 +238,11 @@ Si comparte un proyecto con otros usuarios, mediante un sistema de compilación,
 
 Técnicamente, se puede utilizar cualquier nombre de archivo para realizar un seguimiento de los requisitos (mediante el uso de `-r <full path to file>` al instalar un paquete), pero Visual Studio proporciona compatibilidad específica para `requirements.txt`:
 
-- Si ha cargado un proyecto que contiene `requirements.txt` y desea instalar todos los paquetes enumerados en ese archivo, haga clic con el botón derecho en el proyecto y seleccione **Install from requirements.txt** (Instalar desde requirements.txt):
+- Si ha cargado un proyecto que contiene `requirements.txt` y desea instalar todos los paquetes enumerados en ese archivo, expanda el nodo **Python Environments** en el **Explorador de soluciones** y, luego, haga clic con el botón derecho en un nodo de entorno y seleccione **Install from requirements.txt** (Instalar desde requirements.txt):
 
     ![Instalar desde requirements.txt](media/environments-requirements-txt-install.png)
 
-- Cuando tenga todos los paquetes necesarios instalados en un proyecto, puede hacer clic con el botón derecho en dicho proyecto en el Explorador de soluciones y seleccionar **Generar requirements.txt** para crear el archivo necesario. Si el archivo ya existe, aparece un mensaje sobre cómo actualizarlo:
+- Si ya tiene todos los paquetes necesarios instalados en un proyecto, puede hacer clic con el botón derecho en un entorno en el Explorador de soluciones y seleccionar **Generate requirements.txt** (Generar requirements.txt) para crear el archivo necesario. Si el archivo ya existe, aparece un mensaje sobre cómo actualizarlo:
 
     ![Opciones de actualización de requirements.txt](media/environments-requirements-txt-replace.png)
 

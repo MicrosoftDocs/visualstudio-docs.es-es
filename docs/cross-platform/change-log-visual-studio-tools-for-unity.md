@@ -12,14 +12,47 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3f5569a6f6d5bb51db61292e3ba12b16dbc201b9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro de cambios (Visual Studio Tools para Unity)
 Registro de cambios de Visual Studio Tools para Unity.  
+
+## <a name="3502"></a>3.5.0.2
+ Publicada el 04/12/2017
+
+### <a name="new-features"></a>Características nuevas  
+
+-   **Integración:**  
+
+    -   Los proyectos de Unity ahora se recargan automáticamente en Visual Studio al agregar o quitar un script de Unity.
+
+-   **Depurador:**  
+
+    -   Se ha incluido una opción que permite usar el depurador de Mono compartido por Xamarin y Visual Studio para Mac para depurar el Editor de Unity.
+
+    -   Se ha agregado compatibilidad con archivos de símbolo de depuración portátiles.
+
+### <a name="bug-fixes"></a>Correcciones de errores  
+
+-   **Integración:**  
+
+    -   Se han corregido problemas de dependencias de instalación.
+
+    -   Se ha corregido un problema que hacía que el menú de ayuda de la API de Unity no se mostrara.
+    
+-   **Generación de proyectos:**  
+
+    -   Se ha corregido un problema de generación de proyectos de reproductor al trabajar en un juego para UWP con el back-end IL2CPP/.NET 4.6.
+    
+    -   Se ha corregido un problema por el que la extensión .dll se agregaba erróneamente al nombre de archivo de ensamblado.
+    
+    -   Se ha corregido un problema por el que se usaba un nivel específico de compatibilidad de API de proyecto en lugar del nivel global.
+    
+    -   No fuerce el uso de la marca AllowAttachedDebuggingOfEditor de Unity, ya que el valor predeterminado es ahora "true".
 
 ## <a name="3402"></a>3.4.0.2
  Lanzamiento 19-09-2017
@@ -59,7 +92,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   **Generación de proyectos:**  
 
-    -   Se ha corregido la generación de la solución Visual Studio en Unity 5.5 y versiones anteriores.
+    -   Se ha corregido la generación de soluciones de Visual Studio en Unity 5.5 y versiones anteriores.
 
 ## <a name="3300"></a>3.3.0.0
  Fecha de publicación: 14 de agosto de 2017

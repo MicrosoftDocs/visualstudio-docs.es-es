@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>Guía de características de generación de perfiles
 
@@ -152,7 +152,7 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |Herramienta de rendimiento|Escritorio de Windows|Universales de Windows o de la Tienda|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|  
-|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|  
+|[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí (no para .NET Core/ASP.NET Core)|  
 |[Uso de GPU](../debugger/gpu-usage.md)|sí|sí|no|  
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|no|  
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|  

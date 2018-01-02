@@ -1,32 +1,22 @@
 ---
-title: Optimizar la carga de soluciones en Visual Studio | Microsoft Docs
-ms.custom: 
-ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- startup time [Visual Studio]
-- optimizing startup time [Visual Studio]
-- speed up start time [Visual Studio]
-ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138
-caps.latest.revision: "4"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-f1_keywords: vs.performancecenter
-ms.technology: vs-ide-general
-ms.openlocfilehash: 2102fc026b566c89108f0d74dcf604020653e358
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/optimize-visual-studio-startup-time/
+ms.openlocfilehash: 6ba351d5b395caaddd12021b09f8792cd19b2905
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="optimize-solution-loading-in-visual-studio"></a>Optimizar la carga de soluciones en Visual Studio
+title: "Optimización de la carga de soluciones en Visual Studio | Microsoft Docs" ms.custom: "" ms.date: 08/31/2017 ms.reviewer: "" ms.suite: "" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "startup time [Visual Studio]"
+  - "optimizing startup time [Visual Studio]"
+  - "speed up start time [Visual Studio]" ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138 caps.latest.revision: 4 author: "gewarren" ms.author: "gewarren" manager: ghogen f1_keywords: 
+  - "vs.performancecenter" ms.technology: 
+  - "vs-ide-general"
+---
+# <a name="optimize-solution-loading-in-visual-studio"></a>Optimización de la carga de soluciones en Visual Studio
 Muchas soluciones contienen un gran número de proyectos, lo que afecta al tiempo necesario para cargarlas. Pero en entornos de equipo, los programadores suelen trabajar con un subconjunto diferente de proyectos y no necesitan cargar todos los proyectos individuales.
 
-Visual Studio 2017 es compatible con la **carga de solución ligera**. Cuando se habilita el modo de carga de solución ligera (LSL), Visual Studio 2017 carga un pequeño subconjunto de proyectos en lugar de cargar todos los proyectos de una solución de gran tamaño. La mayoría de las características del IDE usadas con frecuencia funcionan en el modo LSL, lo que permite compilar, buscar y depurar en toda la solución. (La principal función que no se admite en el modo LSL es Editar y continuar).
+Visual Studio 2017 es compatible con la **carga de solución ligera**. Cuando se habilita el modo de carga de solución ligera (LSL), Visual Studio 2017 carga un pequeño subconjunto de proyectos en lugar de cargar todos los proyectos de una solución de gran tamaño. La mayoría de las características del IDE usadas con frecuencia funcionan en el modo LSL, lo que permite compilar, buscar y depurar en toda la solución. (La principal característica que no se admite en el modo LSL es Editar y continuar).  
 
 > [!NOTE]
 > Este contenido se aplica a Visual Studio 2017 Update 3.
@@ -54,16 +44,13 @@ Puede deshabilitar o configurar LSL de manera global para todas las soluciones. 
 
 ## <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>¿Cómo funciona en segundo plano la carga de solución ligera?
 
-Cuando se carga la solución, Visual Studio recuerda qué proyectos ha abierto anteriormente y solo carga dichos proyectos. Todos los demás están visibles en el Explorador de soluciones, pero no se cargan. Cuando haga clic con el botón derecho en un proyecto o lo expanda, Visual Studio lo cargará automáticamente. La carga automática de proyectos suele tardar menos de un segundo, pero en el caso de algunos proyectos puede tardar más.
-Con todo, Visual Studio habilita características del IDE como búsqueda, depuración, compilación y control de código fuente que funcionan en toda la solución. Por ejemplo, puede buscar en una solución completa aunque solo se hayan cargado unos pocos proyectos en el modo ligero. 
+Cuando se carga la solución, Visual Studio recuerda qué proyectos ha abierto anteriormente y solo carga dichos proyectos. Todos los demás están visibles en el Explorador de soluciones, pero no se cargan. Cuando haga clic con el botón derecho en un proyecto o lo expanda, Visual Studio lo cargará automáticamente. La carga automática de proyectos suele tardar menos de un segundo, pero en el caso de algunos proyectos puede tardar más. Con todo, Visual Studio habilita características del IDE como búsqueda, depuración, compilación y control de código fuente que funcionan en toda la solución. Por ejemplo, puede buscar en una solución completa aunque solo se hayan cargado unos pocos proyectos en el modo ligero. 
 
 A medida que expanda más proyectos, Visual Studio recordará la lista de proyectos expandidos. Cuando se vuelva a abrir una solución, Visual Studio cargará automáticamente los proyectos previamente expandidos.
 
 ## <a name="visual-studio-prompts-developers-likely-to-see-significant-performance-gains"></a>Visual Studio muestra avisos a los desarrolladores que puedan experimentar más mejoras de rendimiento
 
 Según la telemetría de Visual Studio, las soluciones de gran tamaño con más de 30 proyectos se benefician considerablemente del modo LSL. Por lo tanto, se muestra un aviso a los desarrolladores con soluciones de gran tamaño para que prueben el modo LSL. La mayoría de los desarrolladores que prueban LSL por primera vez acaban usándolo de forma habitual. 
-
-Revisamos constantemente la telemetría de uso de Visual Studio para mejorar la heurística, a fin de ofrecer el modo LSL a los desarrolladores a los que les beneficiará más. 
 
 ## <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>Visual Studio hace recomendaciones para activar la carga de solución ligera en función de la heurística
 
@@ -131,4 +118,4 @@ Algunos escenarios podrían no funcionar en el modo LSL y requieren la carga de 
 Estamos muy contentos con las innovaciones para optimizar el rendimiento del tiempo de carga de soluciones para los desarrolladores. Dado que se trata de una característica nueva, nos estamos volcando en analizar los comentarios de los clientes y resolver los problemas conocidos. Esperamos recibir sus comentarios. Puede enviar un correo electrónico al equipo de optimización de la carga de soluciones de Visual Studio a la dirección lslsupport@microsoft.com
 
 ## <a name="see-also"></a>Vea también
-[Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+[Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)  

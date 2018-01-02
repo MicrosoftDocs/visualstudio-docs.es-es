@@ -5,25 +5,25 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Vea cómo activar el beneficio de Azure que se incluye con la suscripción de Visual Studio."
+Description: Learn how to activate the Azure benefit included in your Visual Studio subscription.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0ed03e61e9f62535e80ad5891c314f26121cfd7d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 32cb58f86a3664764f645f133a42d298e72dedbc
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 Como suscriptor de Visual Studio, puede usar Microsoft Azure sin cargo adicional.  Gracias a su [crédito de Azure mensual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), dispone de Azure como espacio aislado personal para desarrollo y pruebas.  Puede aprovisionar máquinas virtuales, servicios en la nube y otros recursos de Azure.  La cantidad de crédito varía según el nivel de suscripción. 
 
 Actívelo desde la categoría **Herramientas** en la página Beneficios del [portal de suscriptores](https://my.visualstudio.com/benefits): 
 
-1.  Haga clic en el vínculo "Activar" que se encuentra en la parte inferior del icono de beneficios.   
+1.  Haga clic en el vínculo **Activar** que se encuentra en la parte inferior del icono de beneficios.   
 ![Icono de Azure](_img\vs-azure\vs-azure-tile.png)
 
-2.  Rellene la información necesaria para crear la suscripción de Azure: ![Suscripción a Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+2.  Rellene la información necesaria para crear la suscripción de Azure, active la casilla de verificación para aceptar los términos y condiciones y haga clic en **Suscribirse**: ![Suscripción a Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
  
 3.  Cuando su cuenta esté lista, tendrá la opción de elegir un plan de soporte técnico de Azure (se vende por separado) o empezar a trabajar con su suscripción de Azure.  

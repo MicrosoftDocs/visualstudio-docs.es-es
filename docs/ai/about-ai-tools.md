@@ -10,11 +10,11 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 6dd677f04396e3473f1de054393de66a57681192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 90fcbd7e07ee4f18682d5cf914794982007088d0
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools para IA
 
@@ -31,6 +31,8 @@ Use las características de productividad de Visual Studio para impulsar sin dil
 Visual Studio Tools para AI se integra con Azure Machine Learning para que sea muy fácil explorar una galería de experimentos de ejemplo con CNTK, TensorFlow, MMLSpark y mucho más. 
 
 ![explorador de ejemplos](media\about\gallery.png)
+
+[Más información sobre cómo crear proyectos a partir de la galería de ejemplos](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Escalar horizontalmente el entrenamiento de modelos de aprendizaje profundo y/o la inferencia en la nube
 Esta extensión hace que sea muy sencillo entrenar modelos en el equipo local o enviar trabajos a la nube gracias a la integración con Azure Machine Learning. Puede enviar trabajos a diferentes destinos de procesamiento como, entre otros muchos, clústeres de Spark o máquinas virtuales de GPU de Azure.  

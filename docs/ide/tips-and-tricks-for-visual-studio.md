@@ -1,5 +1,5 @@
 ---
-title: Sugerencias y trucos de Visual Studio | Microsoft Docs
+title: "Métodos abreviados de teclado de Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de Visual Studio
-Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] más fácilmente con los accesos directos que se muestran en este tema. Este tema solo es un subconjunto de los métodos abreviados de teclado disponibles. Para obtener una lista más completa, vea [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre cómo optimizar Visual Studio para la accesibilidad, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md).  
 
-##  <a name="BKMK_WindowMgmt"></a> Administración de ventanas  
+En Visual Studio se puede navegar más fácilmente gracias a los accesos directos que se indican en este tema. Este tema solo es un subconjunto de los métodos abreviados de teclado disponibles. Para obtener una lista más completa, vea [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre cómo optimizar Visual Studio para la accesibilidad, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md).
+
+##  <a name="BKMK_WindowMgmt"></a> Administración de ventanas
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
 |Mostrar la lista de archivos abiertos|Ctrl+Alt+Abajo|  
 |Mostrar todas las ventanas flotantes|Ctrl+Mayús+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a> Accesos directos de ventanas  
+##  <a name="BKMK_WindowShortcuts"></a> Accesos directos de ventanas
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
 |Iniciar nueva instancia|Win+Mayús+n|  
 |Cambiar entre ventanas|Win+n|  
 
-##  <a name="BKMK_Search"></a> Búsqueda en Visual Studio  
+##  <a name="BKMK_Search"></a> Búsqueda en Visual Studio
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
 |Acotar resultados de Inicio rápido|- @opt Opciones<br />- @cmd Comandos<br />- @mru Usados más recientemente<br />- @doc Documentos abiertos|  
 |Buscar en opciones de herramientas|Ctrl+T|  
 
-##  <a name="BKMK_EditorFind"></a> Búsqueda en el editor  
+##  <a name="BKMK_EditorFind"></a> Búsqueda en el editor
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
 |Buscar en archivos|Ctrl+Mayús+F|  
 |Reemplazar en archivos|Ctrl+Mayús+H|  
 
-##  <a name="BKMK_CodeEditor"></a> Editor de código  
+##  <a name="BKMK_CodeEditor"></a> Editor de código
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
 |Navegar entre varios resultados de Peek|F8 y Mayús+F8|  
 |Alternar entre la ventana del editor de código y la ventana Definición de Peek|Mayús+Esc|  
 
-##  <a name="BKMK_Toolbars"></a> Barras de herramientas  
+##  <a name="BKMK_Toolbars"></a> Barras de herramientas
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
 |Modo de comando del cuadro de texto de búsqueda|Escribir ">"|  
 |Crear nuevo alias|Comando >alias NewAlias|  
 
-##  <a name="BKMK_Debugging"></a> Depuración  
+##  <a name="BKMK_Debugging"></a> Depuración
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ Puede navegar en [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 
 |Borrar búfer de la ventana Inmediato|>cls|  
 |Imprimir valor de la ventana Inmediato|?varname|  
 
-##  <a name="BKMK_ALM"></a> Administración del ciclo de vida de las aplicaciones  
- Vea [Métodos abreviados de teclado: Visual Studio Online, portal web de TFS y Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+##  <a name="BKMK_ALM"></a> Administración del ciclo de vida de las aplicaciones
 
-## <a name="see-also"></a>Vea también  
- [Visual Studio Blog (Blog de Visual Studio)](http://blogs.msdn.com/b/visualstudio)   
- [Visual Studio Tips and Tricks Blog (Blog de sugerencias y trucos de Visual Studio)](http://blogs.msdn.com/b/zainnab)   
- [Visual Studio Toolbox on Channel 9 (Herramientas de Visual Studio en Channel 9)](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Visual Studio Connect Bugs (Errores de conexión de Visual Studio)](http://connect.microsoft.com/VisualStudio)
+Vea [Métodos abreviados de teclado: Visual Studio Online, portal web de TFS y Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+
+## <a name="see-also"></a>Vea también
+
+[Visual Studio Blog](http://blogs.msdn.com/b/visualstudio) (Blog de Visual Studio)  
+[Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)  
+[Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox) (Herramientas de Visual Studio en Channel 9)  
+[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Visual Studio Connect Bugs (Errores de conexión de Visual Studio)](http://connect.microsoft.com/VisualStudio)

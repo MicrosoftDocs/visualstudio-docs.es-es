@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ede4bd9594e3bb19f081d8a7343f5a0c08003cad
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 En esta sección encontrará soluciones a problemas comunes con Visual Studio Tools para Unity y descripciones de problemas conocidos. Asimismo descubrirá cómo puede ayudar a mejorar Visual Studio Tools para Unity mediante la notificación de errores.  
@@ -25,7 +25,7 @@ En esta sección encontrará soluciones a problemas comunes con Visual Studio To
 Para resolver algunos problemas comunes que se producen al trabajar con Visual Studio Tools para Unity, consulte las secciones siguientes.  
 
 ### <a name="visual-studio-crashes"></a>Bloqueo de Visual Studio
-Esto puede deberse a que la caché de MEF de Visual Studio está dañada.
+Esto puede deberse a que la memoria caché de MEF de Visual Studio está dañada.
 
 Debe quitar la carpeta siguiente para restablecer la caché de MEF (cierre Visual Studio antes de hacerlo):
 
@@ -62,7 +62,8 @@ Si Visual Studio no encuentra una ubicación de origen para un punto de interrup
 ### <a name="unable-to-attach"></a>Imposibilidad de efectuar la asociación
 -   Intente deshabilitar temporalmente el antivirus o cree reglas de exclusión para VS y Unity.
 -   Intente deshabilitar temporalmente el firewall o cree reglas que permitan redes TCP/UDP entre VS y Unity.
--   Hemos identificado que programas como TeamViewer interfieren con la detección de procesos. Quizás pueda intentar detener temporalmente cualquier software adicional para ver si cambia algo.
+-   Hemos identificado que programas como TeamViewer interfieren en la detección de procesos. Puede intentar detener temporalmente cualquier software adicional para ver si cambia algo.
+-   No cambie el nombre del archivo ejecutable principal de Unity, ya que VSTU solo supervisa procesos con el nombre "Unity.exe".
 
 ### <a name="unable-to-debug-android-players"></a>Imposibilidad de depurar reproductores de Android
 La multidifusión se usa para la detección de reproductores (que es el mecanismo predeterminado que usa Unity), pero después se usa una conexión TCP normal para asociar el depurador. La fase de detección es el principal problema con dispositivos Android.

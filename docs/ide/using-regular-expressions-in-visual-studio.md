@@ -16,34 +16,32 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-- Visual Studio, regular expressions
-ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
-caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c01023649879c34838cbca3172aec6b5a053f4bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa expresiones regulares de .NET Framework para buscar y reemplazar texto. Para obtener más información sobre las expresiones regulares de .NET, consulte [Expresiones regulares de .NET Framework](/dotnet/standard/base-types/regular-expressions).  
-  
- En las versiones previas a Visual Studio 2012, se usaba una sintaxis de expresiones regulares personalizadas en las ventanas Buscar y Reemplazar. Consulte [Usar expresiones regulares en Visual Studio](https://msdn.microsoft.com/en-us/library/2k3te2cs\(v=vs.110\).aspx) para ver una explicación de cómo convertir a las versiones de .NET algunos de los símbolos de expresiones regulares personalizadas más frecuentes.  
-  
+
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa expresiones regulares de .NET Framework para buscar y reemplazar texto. Para obtener más información sobre las expresiones regulares de .NET, consulte [Expresiones regulares de .NET Framework](/dotnet/standard/base-types/regular-expressions).
+
 > [!TIP]
->  En sistemas operativos Windows, la mayoría de las líneas terminan en "\r\n" (un retorno de carro seguido de una nueva línea). Estos caracteres no se ven, pero están presentes en el editor y se pasan al servicio de expresiones regulares de .NET.  
+> En sistemas operativos Windows, la mayoría de las líneas terminan en "\r\n" (un retorno de carro seguido de una nueva línea). Estos caracteres no se ven, pero están presentes en el editor y se pasan al servicio de expresiones regulares de .NET.
+
+## <a name="replacement-patterns"></a>Patrones de reemplazo
+
+Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](/dotnet/standard/base-types/substitutions-in-regular-expressions). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
   
-> [!TIP]
->  Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](/dotnet/standard/base-types/substitutions-in-regular-expressions). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.  
-  
-## <a name="regular-expressions-in-visual-studio"></a>Expresiones regulares en Visual Studio  
- Estos son algunos ejemplos:  
-  
-|Propósito|Expresión|Ejemplo|  
-|-------------|----------------|-------------|  
+## <a name="regular-expression-examples"></a>Ejemplos de expresiones regulares
+
+A continuación se muestran algunos ejemplos:
+
+|Propósito|Expresión|Ejemplo|
+|-------------|----------------|-------------|
 |Coincidencia con cualquier carácter (excepto un salto de línea)|.|`a.o` coincide con "aro" en "around" y "abo" en "about", pero no con "acro" en "across".|  
 |Coincidencia con cero o más apariciones de la expresión anterior (coincidencias con tantos caracteres como sea posible)|*|`a*r` coincide con "r" en "rack", "ar" en "ark" y "aar" en "aardvark".|  
 |Coincidencia con cualquier carácter cero o más veces (carácter comodín *)|.*|c.*e coincide con "cke" en "racket", "comme" en "comment", y "code" en "code"|  
@@ -72,6 +70,7 @@ ms.lasthandoff: 10/31/2017
 |Coincidir con una cadena entre comillas|((\\".+?\\")&#124;('.+?'))|Coincide con cualquier cadena entre comillas simples o dobles.|  
 |Coincidir con un número hexadecimal|\b0[xX]([0-9a-fA-F]\)\b|Coincide con “0xc67f”, pero no con “0xc67fc67f”.|  
 |Coincidir con enteros y decimales|\b[0-9]*\\.\*[0-9]+\b|Coincide con “1.333”.|  
-  
-## <a name="see-also"></a>Vea también  
- [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)
+
+## <a name="see-also"></a>Vea también
+
+[Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)

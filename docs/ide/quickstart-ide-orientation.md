@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: Primer vistazo al IDE de Visual Studio
 
-En esta introducción de 5 a 10 minutos al entorno de desarrollo integrado (IDE) de Visual Studio, se van a recorrer algunas de las ventanas, menús y otras funciones de la interfaz de usuario.
+En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de 5 a 10 minutos de duración, pasaremos por algunas de las ventanas, menús y otras funciones de la interfaz de usuario.
 
 ## <a name="start-page"></a>Página de inicio
 
@@ -94,8 +94,10 @@ Hemos examinado solo algunas de las características del IDE de Visual Studio pa
 
 - Busque la sección Elementos de la interfaz de usuario general de la documentación de Visual Studio, que profundiza en las ventanas como [Lista de errores](../ide/reference/error-list-window.md), [Ventana de salida](../ide/reference/output-window.md), [Ventana Propiedades](../ide/reference/properties-window.md) y [Cuadro de diálogo Opciones](../ide/reference/options-dialog-box-visual-studio.md).
 
-- Dé un paseo más exhaustivo por el IDE, e incluso incursione en la depuración, en [Paseo por las características del IDE de Visual Studio](../ide/visual-studio-ide.md).
+- Adéntrese aún más en el IDE e incluso incursione en la depuración, en [Introducción al IDE de Visual Studio](../ide/visual-studio-ide.md).
 
 ## <a name="see-also"></a>Vea también
 
-[Guía de inicio rápido: Personalización del IDE](../ide/personalizing-the-visual-studio-ide.md)
+[Guía de inicio rápido: Personalización del IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Inicio rápido: escribir código en el editor](../ide/quickstart-editor.md)  
+[Inicio rápido: proyectos y soluciones](../ide/quickstart-projects-solutions.md)  

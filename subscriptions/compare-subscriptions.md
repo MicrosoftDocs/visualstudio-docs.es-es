@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Comparación de las características y las ventajas de las suscripciones estándar y de nube de Visual Studio"
+Description: Compare features and benefits of Visual Studio standard and cloud subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c231095c7d96c44f35752aa0a1c233599c43b420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Comparar opciones de suscripción de Visual Studio
 
@@ -24,7 +24,7 @@ Ya sea estudiante, programador individual, un equipo pequeño o una empresa, hay
 
 **Visual Studio Enterprise:** ya sea para un teléfono, un dispositivo de escritorio o la nube, Visual Studio facilita la compilación de software en PC y Mac. Las suscripciones incluyen prácticamente todo el software de Microsoft, además de créditos de Azure, cursos Pluralsight, soporte técnico y muchas más ventajas.
 
-**Visual Studio Professional:** herramientas y servicios profesionales para desarrolladores que permiten compilar cualquier aplicación para cualquier plataforma. Podrá colaborar con mayor facilidad y ser más productivo, tanto si trabaja por cuenta propia como si lo hace en un equipo pequeño.
+**Visual Studio Professional:** obtenga herramientas y servicios profesionales para desarrolladores que permiten compilar cualquier aplicación para cualquier plataforma. Podrá colaborar con mayor facilidad y ser más productivo, tanto si trabaja por cuenta propia como si lo hace en un equipo pequeño.
 
 **Visual Studio Test Professional:** impulse la calidad y la colaboración a lo largo del proceso de desarrollo con completas herramientas de prueba y con ventajas de la suscripción estándar, que incluyen software básico de Microsoft, créditos mensuales de Azure, aprendizaje técnico, soporte profesional y mucho más.
 
@@ -33,7 +33,7 @@ Ya sea estudiante, programador individual, un equipo pequeño o una empresa, hay
 **Visual Studio Dev Essentials:** obtenga todo lo que necesita para compilar e implementar aplicaciones en cualquier plataforma. Gracias a unas herramientas de última generación, la eficacia de la nube, el aprendizaje y el soporte, se trata del programa gratuito para desarrolladores más completo de todos.  
 
 ## <a name="subscription-types"></a>Tipos de suscripciones
-**Suscripciones estándar**: disponibles a través de revendedores mediante contratos de licencias por volumen de Microsoft de varios años de duración y directamente a través de la Microsoft Store en línea.  Cuentan con licencias permanentes para Visual Studio. 
+**Suscripciones estándar**: disponibles a través de revendedores mediante contratos de licencias por volumen de Microsoft de varios años de duración y directamente a través de la Microsoft Store en línea.  Las suscripciones estándar cuentan con licencias permanentes para Visual Studio. 
 
 **Suscripciones de nube**: con las suscripciones de nube, tendrá acceso a Visual Studio, Visual Studio Team Services y otras ventajas para suscriptores sin necesidad de un contrato a largo plazo.  Suscríbase mensual o anualmente. La facturación se controla a través de su suscripción de Microsoft Azure. 
 
@@ -45,7 +45,7 @@ Ya sea estudiante, programador individual, un equipo pequeño o una empresa, hay
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx): específicamente diseñado para proporcionar un acceso exclusivo a recursos que le ayudarán a desarrollar aún más sus conocimientos técnicos y habilidades de aprendizaje.
 
 ## <a name="visual-studio-licensing"></a>Licencias de Visual Studio
-Las licencias de suscripciones a Visual Studio (anteriormente denominadas suscripciones a MSDN) se conceden por usuario. Una persona puede usar el software para diseñar, desarrollar, probar o mostrar sus programas en varios dispositivos. Una suscripción a Visual Studio también permite al usuario con licencia evaluar el software y simular los entornos del cliente para poder diagnosticar problemas relacionados con sus programas.
+Las suscripciones de Visual Studio cuentan con licencia por usuario. Una persona puede usar el software para diseñar, desarrollar, probar o mostrar sus programas en varios dispositivos. Una suscripción a Visual Studio también permite al usuario con licencia evaluar el software y simular los entornos del cliente para poder diagnosticar problemas relacionados con sus programas.
 
 Los suscriptores de Visual Studio también reciben una licencia para ejecutar el software de suscriptor (excepto Windows y Windows Server) en Microsoft Azure Virtual Machines, lo que les ofrece mayor flexibilidad para desarrollar y probar sus aplicaciones. El costo de la licencia de Windows Server o Windows se incluye en la tarifa de la máquina virtual con Windows.
 
@@ -58,7 +58,7 @@ Una licencia de suscripción a Visual Studio también permite a sus usuarios fin
 ## <a name="additional-information"></a>Información adicional
 [Descargar las notas sobra la obtención de licencias de Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
 
-[Comparar opciones de suscripción y precios](https://www.visualstudio.com/pricing)
+[Comparar opciones de suscripción y precios](https://www.visualstudio.com/vs/pricing)
 
 [Comparar los IDE de Visual Studio](https://www.visualstudio.com/vs/compare/)
 

@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Descubra cómo pueden los administradores eliminar asignaciones de suscripción"
+Description: Learn how administrators can delete subscription assignments
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: db3a6a2655ad9f5f9e07793b7743a7db89928189
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 84fde21cd3cd54258d4c77a9cf16ac8f008d3937
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Eliminar asignaciones en suscripciones de Visual Studio
 

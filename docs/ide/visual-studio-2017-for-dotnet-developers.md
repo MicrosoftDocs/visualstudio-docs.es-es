@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: 6fe98cea71bb49ea3e705a22cb696184966ea0ed
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desarrolladores de .NET
 
@@ -51,7 +51,7 @@ Ejecute y depure las pruebas unitarias basadas en los marcos de pruebas MSTest, 
 [Documentación: opciones del editor personalizadas y portátiles](create-portable-custom-editor-options.md)  
 [Documentación: configuración de estilo de código .NET para EditorConfig](editorconfig-code-style-settings-reference.md)
 
-Visual Studio permite la configuración de convenciones de codificación, detecta infracciones de estilo de codificación y proporciona soluciones rápidas para solucionar problemas de estilo con el método abreviado acceso directo. Configure y aplique las convenciones de formato, nomenclatura y estilo de código del equipo en un repositorio, lo que permite invalidar valores en el nivel de proyecto y archivo, con *EditorConfig*. 
+Visual Studio permite la configuración de convenciones de codificación, detecta infracciones de estilo de codificación y proporciona soluciones rápidas para solucionar problemas de estilo con el método abreviado Ctrl+. Configure y aplique las convenciones de formato, nomenclatura y estilo de código del equipo en un repositorio, lo que permite invalidar valores en el nivel de proyecto y archivo, con *EditorConfig*. 
 
 ![Configurar y aplicar las convenciones de codificación con EditorConfig](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")  
 
@@ -69,6 +69,8 @@ Si el servicio se ejecuta en Azure, use *Depuración de instantáneas* para diag
 
 Use git o TFVC para almacenar y actualizar el código en Visual Studio. En el editor, organice los cambios locales con Team Explorer y use la barra de estado para realizar el seguimiento de las confirmaciones y cambios pendientes. Configure la integración y entrega continuas dentro de Visual Studio con nuestra extensión [Herramientas de entrega continua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) para adoptar el flujo de trabajo de un desarrollador rápido.
 
+![Control de código fuente en Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png "VSIDE_Productivity_SourceControl")
+
 ## <a name="extensibility"></a>Extensibilidad
 [Documentación: extender Visual Studio](../extensibility/index.md)
 
@@ -79,8 +81,10 @@ Visual Studio tiene un ecosistema completo de extensiones que puede instalar o c
 ## <a name="popular-extensions--shortcuts"></a>Extensiones y métodos abreviados más conocidos
 Si anteriormente usaba otro IDE o entorno de codificación, es posible que la instalación de una de estas extensiones le sea útil:
 - [Emacs Emulación](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.Emacsemulation)
-- [HotKeys for Visual Studio (IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
+- [HotKeys for Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
+
+Estos son accesos directos populares de Visual Studio. Tenga en cuenta que algunas extensiones desenlazan los enlaces de teclado de Visual Studio y debe restaurar estos enlaces de teclado para usar los comandos que aparecen a continuación. Para restaurar los enlaces de teclado a los valores predeterminados de Visual Studio, vaya a **Herramientas > Importar y exportar configuraciones... > Restablecer todas las configuraciones**.
 
 | Métodos abreviados (todos los perfiles) | Comando | Descripción |
 |-|-|-| 
@@ -93,6 +97,6 @@ Si anteriormente usaba otro IDE o entorno de codificación, es posible que la in
 | **F5** | Iniciar depuración | Iniciar la depuración de la aplicación |
 | **Ctrl+F5** | Ejecutar sin depurar | Ejecutar la aplicación localmente sin depuración |
 | **Ctrl+K,D** (perfil predeterminado) o **Ctrl+E,D** (perfil de C#) | Dar formato al documento | Limpiar el formato de las infracciones en el archivo según la configuración de nueva línea, espaciado y sangría |
-| **Ctrl+\,E** (perfil predeterminado) o **Ctrl+W,E** (perfil de C#) | Ver lista de errores | Ver todos los errores en el documento, proyecto o solución |
+| **Ctrl+\\,E** (perfil predeterminado) o **Ctrl+W,E** (perfil de C#) | Ver lista de errores | Ver todos los errores en el documento, proyecto o solución |
 
 

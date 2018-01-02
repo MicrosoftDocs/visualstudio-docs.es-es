@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guía de inicio rápido: Personalizar el IDE de Visual Studio
 
@@ -79,11 +79,13 @@ Ahora se van a personalizar algunos colores de texto para el editor. En primer l
 
 1. En **Entorno**, elija la categoría **Fuentes y colores**.
 
-   Tenga en cuenta que el texto en **Mostrar configuración para** indica **Editor de texto** &mdash;, que es lo que se pretende. Puede expandir la lista desplegable solo para ver la extensa lista de lugares donde puede personalizar las fuentes y el color del texto.
+   Observe que el texto en **Show settings for** (Mostrar configuración para) reza **Text Editor** (Editor de texto), que es justamente lo que queremos. Puede expandir la lista desplegable solo para ver la extensa lista de lugares donde puede personalizar las fuentes y el color del texto.
 
 1. Para cambiar el color del texto de números de línea, en la lista **Mostrar elementos**, elija **Número de línea**. En el cuadro **Primer plano del elemento**, elija **Oliva**.
 
    ![Cuadro de diálogo Opciones, Categoría Fuentes y colores](media/quickstart-personalize-line-number-color.png)
+
+   Algunos lenguajes tienen sus propios valores específicos de fuentes y colores. Si es un desarrollador de C++ y quiere cambiar, por ejemplo, el color que se usa con las funciones, puede buscar **Funciones de C++** en la lista **Mostrar elementos**.
 
 1. Antes de salir del cuadro de diálogo, vamos a cambiar también el color de los atributos XML. En la lista **Mostrar elementos**, desplácese hacia abajo hasta **Atributo XML** y selecciónelo. En el cuadro **Primer plano del elemento**, elija **Verde**. Seleccione **Aceptar** para guardar las selecciones y cerrar el cuadro de diálogo.
 
@@ -96,6 +98,8 @@ Hemos explorado solo un par de formas de personalizar los colores en Visual Stud
 ## <a name="see-also"></a>Vea también
 
 [Guía de inicio rápido: Primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Inicio rápido: escribir código en el editor](../ide/quickstart-editor.md)  
+[Inicio rápido: proyectos y soluciones](../ide/quickstart-projects-solutions.md)  
 [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md)  
 [Personalizar el editor](../ide/customizing-the-editor.md)  
 [Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)

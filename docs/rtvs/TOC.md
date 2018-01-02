@@ -3,7 +3,7 @@
 ## [Carga de trabajo Aplicaciones de ciencia de datos y de análisis](data-science-workload.md)
 # Guías de inicio rápido
 ## [Instalación](installation.md)
-## [Obtención de ayuda](getting-started-help.md)
+## [Ayuda](getting-started-help.md)
 # Tutoriales
 ## [Introducción a R](getting-started-with-r.md)
 # [Ejemplos](getting-started-samples.md)

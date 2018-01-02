@@ -13,25 +13,29 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 66651f8e74b1801177c4bc5bb8c4f47bd0abdf3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a7ace58e8cf3a82dce1db789466c55b0e40995c5
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="setting-bookmarks-in-code"></a>Establecer marcadores en el código
-Puede utilizar marcadores para marcar líneas en el código de forma que pueda volver rápidamente a una ubicación concreta y moverse hacia delante o hacia atrás entre ubicaciones.  
-  
- Los comandos y los iconos de los marcadores están disponibles en dos lugares: en la ventana Marcador (**Ver/Ventana Marcador**) y en la barra de herramientas del editor de texto.  
-  
-## <a name="managing-bookmarks"></a>Administrar marcadores  
- Para agregar un marcador, coloque el cursor en la línea que desea marcar. Haga clic en el botón **Alternar** o presione CTRL+K. De esta forma, se agrega el marcador. Si hace clic en el botón Alternar (o presiona CTRL+K) de nuevo, se quita el marcador. También puede eliminar los marcadores haciendo clic en el botón **Eliminar** en la ventana Marcador.  
-  
+
+Puede utilizar marcadores para marcar líneas en el código de forma que pueda volver rápidamente a una ubicación concreta y moverse hacia delante o hacia atrás entre ubicaciones. Los comandos y los iconos de los marcadores están disponibles en dos lugares: en la ventana Marcador (**Ver** > **Ventana Marcador**) y en la barra de herramientas del editor de texto.
+
+## <a name="managing-bookmarks"></a>Administrar marcadores
+
+Para agregar un marcador, coloque el cursor en la línea que desea marcar. Haga clic en el botón **Alternar** o presione CTRL+K. De esta forma, se agrega el marcador. Si hace clic en el botón Alternar (o presiona CTRL+K) de nuevo, se quita el marcador. También puede eliminar los marcadores haciendo clic en el botón **Eliminar** en la ventana Marcador.
+
 > [!IMPORTANT]
->  El marcador se establece en el número de línea, no en el código. Si modifica el código, el marcador se mantiene en el número de línea y no se mueve con el código.  
-  
- Puede navegar entre los marcadores mediante los botones **Marcador siguiente** y **Marcador anterior** de la ventana Marcador.  
-  
- Si quiere organizar los marcadores en carpetas virtuales, haga clic en **Nueva carpeta** en la ventana Marcador y, después, arrastre los marcadores seleccionados a la carpeta nueva.  
-  
- Para desactivar los marcadores (sin quitarlos), haga clic en el botón **Deshabilitar todos los marcadores** en la ventana Marcador. Puede volver a habilitarlos haciendo clic en el mismo botón (que ahora se denominará **Habilitar todos los marcadores**).
+> El marcador se establece en el número de línea, no en el código. Si modifica el código, el marcador se mantiene en el número de línea y no se mueve con el código.
+
+Puede navegar entre los marcadores mediante los botones **Marcador siguiente** y **Marcador anterior** de la ventana Marcador.
+
+Si quiere organizar los marcadores en carpetas virtuales, haga clic en **Nueva carpeta** en la ventana Marcador y, después, arrastre los marcadores seleccionados a la carpeta nueva.
+
+Para desactivar los marcadores (sin quitarlos), haga clic en el botón **Deshabilitar todos los marcadores** en la ventana Marcador. Puede volver a habilitarlos haciendo clic en el mismo botón (que ahora se denominará **Habilitar todos los marcadores**).
+
+## <a name="see-also"></a>Vea también
+
+[Escribir código en el editor](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -8,16 +8,15 @@ ms.technology: devlang-r
 ms.tgt_pltfrm: 
 ms.devlang: r
 ms.topic: article
-ms.assetid: 3ff60292-1b88-4ee9-b2b2-edd957f1a519
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7a509743ce09f2bbfb69b62060abedb48e9777b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2abb64170fdaa7ce91308f1be2c683325bc1abdd
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Cómo instalar Herramientas de R para Visual Studio
 
@@ -33,20 +32,21 @@ En este tema:
 
 ## <a name="supported-versions-of-visual-studio"></a>Versiones compatibles de Visual Studio
 
-Herramientas de R para Visual Studio (RTVS) es compatible con las ediciones Community (gratis), Professional y Enterprise de [Visual Studio 2017](https://www.visualstudio.com/downloads/) y [Visual Studio 2015 Update 3 (o versiones superiores)](http://go.microsoft.com/fwlink/?LinkId=691129) (descarga directa). 
+Herramientas de R para Visual Studio (RTVS) es compatible con Windows con las ediciones Community (gratis), Professional y Enterprise de [Visual Studio 2017](https://www.visualstudio.com/downloads/) y [Visual Studio 2015 Update 3 (o versiones superiores)](http://go.microsoft.com/fwlink/?LinkId=691129) (descarga directa).
+
+RTVS no es compatible actualmente con Visual Studio para Mac.
 
 RTVS no se instalará si solo tiene Visual Studio Shell incluido en productos como Visual Studio Test Professional y SQL Server Management Studio. Visual Studio Shell no tiene los componentes necesarios para RTVS.
-
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalación de RTVS en Visual Studio 2017
 
 1. Ejecute el instalador de Visual Studio. (Consulte [Descargas](https://www.visualstudio.com/downloads/) si aún no tiene instalado Visual Studio). En Windows 7, asegúrese de que el instalador se actualiza para mostrar la versión de Visual Studio *15.2 compilación 26430.12* o una versión posterior.
 
-2. Seleccione la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**:
+1. Seleccione la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**:
 
     ![Carga de trabajo Aplicaciones de ciencia de datos y de análisis de VS2017](media/installation-data-science-workload.png)
 
-3. Establezca las opciones adicionales de la derecha debajo del mismo nombre de carga de trabajo. De forma predeterminada, esta carga de trabajo incluye compatibilidad con F# y Python. Para R, los requisitos mínimos son **Compatibilidad con el lenguaje R**, **Compatibilidad de runtime con las herramientas de desarrollo de R** y **Microsoft R Client**.
+1. Establezca las opciones adicionales de la derecha debajo del mismo nombre de carga de trabajo. De forma predeterminada, esta carga de trabajo incluye compatibilidad con F# y Python. Para R, los requisitos mínimos son **Compatibilidad con el lenguaje R**, **Compatibilidad de runtime con las herramientas de desarrollo de R** y **Microsoft R Client**.
 
 RTVS se instala en: `%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`, donde `<version>` suele ser `2017` y `<edition>` es `Community`, `Professional` o `Enterprise`.
 
@@ -58,9 +58,9 @@ Con Visual Studio 2015, debe instalar un intérprete de R y Herramientas de R po
 
 RTVS necesita una instalación de 64 bits de R versión 3.2.1 o superior desde uno o varios de los siguientes orígenes:
 
-* [Microsoft R Open](https://mran.microsoft.com/download/)
-* [Microsoft R Client](https://msdn.microsoft.com/microsoft-r/r-client-get-started)
-* [CRAN R](https://cran.r-project.org/bin/windows/base/)
+- [Microsoft R Open](https://mran.microsoft.com/download/)
+- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [CRAN R](https://cran.r-project.org/bin/windows/base/)
 
 Microsoft R Open y CRAN R permiten varias versiones en paralelo. En cambio, Microsoft R Client solo admite una versión y siempre usa la más reciente que haya instalado.
 
@@ -92,3 +92,4 @@ La instalación sin conexión es adecuada para los equipos que no están conecta
 - [Proyectos de ejemplo de Herramientas de R](getting-started-samples.md)
 - [Ayuda](getting-started-help.md)
 - [Option settings (Opciones)](options.md)
+- [Microsoft Machine Learning Server (anteriormente R Server)](/machine-learning-server/)
