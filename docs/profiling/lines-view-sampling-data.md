@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31cd3b1732cb279004eb500b5df6583a04d2e7bb
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d08d090ad8e130e209af0d2057a065ed0bc474a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---sampling-data"></a>Vista Líneas: datos de muestreo
 La vista Líneas de datos de muestreo muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles.  
@@ -43,16 +44,16 @@ La vista Líneas de datos de muestreo muestra los datos de rendimiento de las in
   
  Por definición, una instrucción no llama a otras funciones. Por lo tanto, se muestran solo los valores exclusivos.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
+|**Nombre de proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la línea de función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la línea de función.|  
-|**Archivo de origen**|El archivo de código fuente que contiene la línea de la función.|  
+|**Archivo de código fuente**|El archivo de código fuente que contiene la línea de la función.|  
 |**Nombre de la función**|Nombre de la función.|  
-|**Número de línea de función**|Número de línea del inicio de esta función en el archivo de origen.|  
-|**Dirección de función**|La dirección de inicio de la función.|  
+|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
+|**Dirección de la función**|La dirección de inicio de la función.|  
 |**Línea de inicio del origen**|Número de línea inicial en el archivo de origen donde se recopiló esta muestra.|  
 |**Línea de finalización del origen**|Número de la línea de finalización del archivo de origen donde se recopiló esta muestra.|  
 |**Carácter de inicio en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde se recopiló esta muestra.|  

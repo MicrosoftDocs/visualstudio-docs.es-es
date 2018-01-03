@@ -11,11 +11,12 @@ ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: "13"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4fc133d96f8306b46e4d820b6f7256db8c471122
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: uwp
+ms.openlocfilehash: cad1d4dd670f83c9dcb168127ecbe44f8687f09a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Prueba de un archivo DLL de Visual C++ en aplicaciones para UWP 
 En este tema se describe una manera de crear pruebas unitarias para un archivo DLL de C++ para aplicaciones de Plataforma universal de Windows (UWP) con el marco de pruebas de Microsoft para C++. El archivo DLL de RooterLib muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. Es posible que, después, el archivo DLL se incluya en una aplicación para UWP que muestre a los usuarios cosas interesantes que se pueden hacer con las matemáticas.  

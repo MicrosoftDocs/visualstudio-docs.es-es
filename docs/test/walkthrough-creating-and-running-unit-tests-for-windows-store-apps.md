@@ -16,11 +16,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: "21"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 32cab11dd909fc8b60134ebff0d5f37c0b14dcd6
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: dfb7d875c922b8ed9e86ae05e2d129bc21a3ea8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias en aplicaciones para UWP
 Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaciones [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] administradas e incluye plantillas de biblioteca de pruebas unitarias para Visual C#, Visual Basic y Visual C++.  
@@ -139,7 +140,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="videos"></a>Vídeos  
- [Channel 9: Unit testing your UWP apps built using XAML (Channel 9: Prueba de las unidades de las aplicaciones para UWP compiladas mediante XAML)](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [Channel 9: Unit testing your UWP apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285) (Canal 9: Prueba unitaria de las aplicaciones para UWP compiladas mediante XAML)  
   
 ### <a name="forums"></a>Foros  
  [Prueba unitaria de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  

@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 922c68ee927d05579ab2566e03b8acc0d9a56608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4feedb6f32b1d1fb03ef51468eb50ef1a0aa7a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que se utiliza en un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe especificarse como elemento secundario de un elemento `ItemGroup`.  
@@ -71,7 +72,7 @@ Ahora, puede pasar los metadatos `Version` como un atributo, como se muestra en 
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Descripción|  
+|Atributo|Description|  
 |---------------|-----------------|  
 |`Include`|Atributo necesario.<br /><br /> El archivo o comodín que se incluirá en la lista de elementos.|  
 |`Exclude`|Atributo opcional.<br /><br /> El archivo o comodín que se excluirá de la lista de elementos.|  
@@ -84,13 +85,13 @@ Ahora, puede pasar los metadatos `Version` como un atributo, como se muestra en 
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Una clave de metadatos de elemento definida por el usuario que contiene el valor de metadatos del elemento. Puede haber cero o más elementos `ItemMetadata` en un elemento.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento grouping de los elementos.|  
 

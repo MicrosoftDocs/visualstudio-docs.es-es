@@ -15,18 +15,19 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a7bee6cb18fee301dfab5e7c08c58521eac4e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 587e76a0108f3636d851b299c30506e0d8d55d9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-view-filter"></a>Filtro de vista Informe de rendimiento
 La ventana Filtro de vista Informe de rendimiento se encuentra en la parte superior de la ventana Informe de generador de perfiles. Si no la ve, haga clic en el botón **Mostrar filtro**.  
   
  Puede modificar cada cláusula de filtro para restringir los resultados. Las siguientes columnas están disponibles en el generador de filtros.  
   
-|Elemento de filtro|Descripción|  
+|Elemento de filtro|Description|  
 |-----------------|-----------------|  
 |Y/O|Elija **Y** si tanto esta cláusula como la siguiente deben ser true para coincidir con un resultado. Elija **O** si esta cláusula o la siguiente pueden ser true para coincidir con un resultado.|  
 |Campo|Seleccione el campo que se utilizará en la cláusula de filtro de la lista de campos de datos que están disponibles en el archivo de informe actual.|  

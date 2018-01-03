@@ -12,18 +12,19 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c259b4a66a6f26443b684a005adb2899e2d77ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: decf24e945f0673bc801b18d4c0438e186098687
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="timer"></a>Temporizador
 La opción **Temporizador** de VSPerfCmd.exe establece el evento de generación de perfiles que se muestrea en ciclos de reloj del procesador, y cambia opcionalmente el número de ciclos en un intervalo de muestreo respecto al valor predeterminado de 10.000.000. En un procesador de 1 GH (un giga), 10.000.000 ciclos de reloj representan aproximadamente 100 muestras por segundo. El número mínimo de ciclos que se puede especificar es 50.000.  
   
  **Temporizador** solo se puede usar cuando se utiliza el método de generación de perfiles de muestreo y únicamente se puede usar en una línea de comandos que también contenga las opciones **Launch** o **Attach**.  
   
- De forma predeterminada, el evento de muestreo del generador de perfiles está establecido en los ciclos de reloj de procesador y el intervalo de muestreo está establecido en 10.000.000. Las opciones **Temporizador**, **PF**, **Sys** y **Counter** le permiten establecer el evento de muestreo y el intervalo de muestreo. La opción **GC** recopila datos de memoria de .NET en cada evento de asignación y de recolección de elementos no utilizados. Solamente se puede especificar una de estas opciones en una línea de comandos.  
+ De forma predeterminada, el evento de muestreo del generador de perfiles está establecido en los ciclos de reloj de procesador y el intervalo de muestreo está establecido en 10.000.000. Las opciones **Timer**, **PF**, **Sys** y **Counter** permiten establecer el evento de muestreo y el intervalo de muestreo. La opción **GC** recopila datos de memoria de .NET en cada evento de asignación y de recolección de elementos no utilizados. Solamente se puede especificar una de estas opciones en una línea de comandos.  
   
  El evento de muestreo y el intervalo de muestreo solo se pueden establecer en la primera línea de comandos que contenga una opción **Launch** o **Attach**.  
   

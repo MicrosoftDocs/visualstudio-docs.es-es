@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 05a7dabcfe251a1d27eef559456bca4e267e55ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95013682d5968cc1fb894f3e30746043e99e4a46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/task-element-msbuild.md) al ensamblado que contiene la implementación de la tarea.  
@@ -57,16 +58,16 @@ Asigna la tarea a la que se hace referencia en un elemento [Tarea](../msbuild/ta
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Conjunto de parámetros que aparecen en la tarea que se genera mediante el objeto `TaskFactory` especificado.|  
 |[Task](../msbuild/task-element-msbuild.md)|Datos que se pasan a `TaskFactory` para generar una instancia de la tarea.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 
 ## <a name="remarks"></a>Comentarios  
  Es posible hacer referencia a las variables de entorno, las propiedades de la línea de comandos y las propiedades del nivel de proyecto en cualquier lugar del elemento `UsingTask` si aparece en el archivo del proyecto, ya sea explícitamente o a través de un archivo de proyecto importado. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  

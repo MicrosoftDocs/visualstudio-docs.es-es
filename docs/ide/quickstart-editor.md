@@ -11,11 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 3994c7087cb26e31c5745c99a8b7678aa7e24f23
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Inicio rápido: escribir código en el editor
 

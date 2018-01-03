@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ea2f63d3e1ee4b4c694fdc025484d85fad9d739
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 47e4f57ffac71d6fb4f1c3e8cd8176c80d9f002a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="caller--callee-view----contention-data"></a>Vista Llamador y destinatario: datos de contención
 La vista Llamador y destinatario muestra información de contención para una función seleccionada y sus funciones primarias y secundarias. La vista Llamador y destinatario contiene tres cuadrículas.  
@@ -28,9 +29,9 @@ La vista Llamador y destinatario muestra información de contención para una fu
   
  **Funciones llamadas por la función actual** se muestra en la cuadrícula inferior e incluye información de contención para las funciones de destinatario (secundarias) de la función seleccionada cuando la función actual llamó a la función secundaria.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**ype**|El contexto de la función:<br /><br /> -   **0**: la función actual<br />-   **1**: una función que llama a la función actual<br />-   **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Type**|El contexto de la función:<br /><br /> -   **0**: la función actual<br />-   **1**: una función que llama a la función actual<br />-   **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Tiempo de bloqueo exclusivo**|-En la función actual, el tiempo durante el cual esta función no pudo ejecutar código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.<br />- En una función de llamador, la parte del tiempo de bloqueo exclusivo de la función actual que transcurrió cuando esta función llamó a la función actual.<br />-En una función de destinatario, el tiempo durante el cual esta función no pudo ejecutar su propio código cuando la función actual llamó a esta función. No se incluye el tiempo de bloqueo de las funciones secundarias a las que llamó la función de destinatario.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo exclusivo de esta función en este contexto con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|  
 |**Contenciones exclusivas**|- En la función actual, el número de veces en las que esta función no pudo ejecutar código en el cuerpo de la función. Las contenciones que se produjeron en funciones a las que llamó la función no se incluyen.<br />- En una función de llamador, el número de contenciones exclusivas de la función actual que se produjeron cuando esta función llamó a la función actual.<br />- En la función de destinatario, el número de veces en las que esta función no pudo ejecutar código en el cuerpo de la función cuando la función actual llamó a esta función. Las contenciones que se produjeron en funciones a las que llamó la función de destinatario no se incluyen.|  
@@ -45,12 +46,12 @@ La vista Llamador y destinatario muestra información de contención para una fu
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
 |**Identificador del proceso**|El identificador de proceso (PID) en el que se produjeron las contenciones.|  
-|**Nombre del proceso**|Nombre del proceso.|  
+|**Nombre de proceso**|Nombre del proceso.|  
 |**Nombre de la función raíz**|El nombre de la función actual. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista Informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Llamador y destinatario](../profiling/caller-callee-view.md)   
  [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)   
  [Vista Llamador y destinatario: datos de instrumentación de memoria de .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   

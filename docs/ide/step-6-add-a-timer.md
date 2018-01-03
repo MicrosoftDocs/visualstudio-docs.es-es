@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d4a31cd461f470c7b510be02c33dd1744f7ed616
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 530b57b0f8a39990d37dc8cd25ac4c7bacba5a6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-add-a-timer"></a>Paso 6: Agregar un temporizador
 A continuación, agregará un control **Temporizador** al juego de formar parejas. Un temporizador espera un número especificado de milisegundos para desencadenar un evento conocido como *tic*. Esto es útil para iniciar o repetir una acción de forma periódica. En este caso, se usará un temporizador para permitir a los participantes elegir dos iconos y, si no coinciden, ocultarlos de nuevo trascurrido un breve período de tiempo.  

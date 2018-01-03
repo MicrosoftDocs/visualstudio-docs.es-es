@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a1b0b6e2cc44193a684c6f411df908b0a54d31f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
 Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y herramientas que puede usar para compilar un proyecto de aplicación. MSBuild incluye un conjunto de herramientas estándar, pero también puede crear conjuntos de herramientas personalizados. Para obtener información sobre cómo especificar un conjunto de herramientas, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  

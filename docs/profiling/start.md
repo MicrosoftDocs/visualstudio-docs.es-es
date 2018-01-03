@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7da3855a699ae350c24646386d3b1a7e39520b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78e052b11046f3af517a97da7fea089625613fb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="start"></a>Iniciar
 La opción **Iniciar** es una opción de VSPerfCmd.exe que inicializa el generador de perfiles al método de generación de perfiles especificado.  

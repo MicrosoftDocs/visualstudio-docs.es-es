@@ -14,11 +14,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: "47"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 2a93a2af3f3d89a4970a949b42bea79b3641d53f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4e0afbcf6ff12376e3fcdf10925a20a4a7228130
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 Puede generar pruebas unitarias para métodos genéricos exactamente como lo hace para otros métodos, tal y como se describe en [Cómo: Crear y ejecutar una prueba unitaria](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Las secciones siguientes proporcionan información y ejemplos de creación de pruebas unitarias para métodos genéricos.  

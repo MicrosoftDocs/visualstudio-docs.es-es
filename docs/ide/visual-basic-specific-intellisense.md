@@ -13,11 +13,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 520b5b2d9d0a66df3bbe17a0e8deea69147cbf17
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: e99bda20d8591f314a75ee74e1b162e5fd64be81
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Archivos de código de IntelliSense para Visual Basic
 

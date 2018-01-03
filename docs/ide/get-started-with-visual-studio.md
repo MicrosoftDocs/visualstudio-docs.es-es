@@ -1,10 +1,10 @@
 ---
-redirect_url: ../ide/visual-studio-ide
-ms.openlocfilehash: a615a3a6da289f265e350d529349f1fb6ba6865f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/ide/visual-studio-ide
+ms.openlocfilehash: 5f1fa39d6e6cde1664a8aaa34aed7cba726b1d56
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="get-started-with-visual-studio"></a>Introducción a Visual Studio
 Visual Studio es una herramienta eficaz para desarrollar aplicaciones. Si todavía no lo ha hecho, descargue e instale [Visual Studio](https://www.visualstudio.com/vs/). Vea el vídeo [Introducción a Visual Studio: Configurar el IDE](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) para obtener más información sobre cómo descargar Visual Studio y configurarlo de la manera que quiera.

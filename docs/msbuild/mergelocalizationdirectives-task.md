@@ -22,18 +22,19 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c6071782251761563a2a279ced2926e68d441aec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f67c122a879df51708852925a63008cfb190318
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives (Tarea)
 La tarea <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> combina los atributos y los comentarios de localización de uno o varios archivos de formato binario [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] en un solo archivo para todo el ensamblado.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`GeneratedLocalizationFiles`|Parámetro obligatorio de tipo **ITaskItem[]**.<br /><br /> Especifica la lista de los archivos de directivas de localización para los archivos individuales en formato binario de [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)].|  
 |`OutputFile`|Parámetro de salida obligatorio de tipo **String**.<br /><br /> Especifica la ruta de acceso de salida del ensamblado de directivas de localización compilado.|  

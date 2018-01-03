@@ -18,11 +18,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 13d9fd328ffab5c182078e46bbd832cddcba6fd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar fugas de memoria (JavaScript)
 ![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -225,7 +226,7 @@ ms.lasthandoff: 11/11/2017
   
 ##  <a name="FixingMemory"></a> Corregir el problema de memoria  
   
-1.  Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()` .  
+1.  Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()`.  
   
     ```javascript  
     function initialize() {  

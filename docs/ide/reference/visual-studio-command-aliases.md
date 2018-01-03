@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 552e08a653c576a0f2e4bc916beaf4749ff490ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la ventana **Comando** acortando el texto necesario para ejecutar el comando. Por ejemplo, en lugar de escribir `>File.OpenFile` para mostrar el cuadro de diálogo **Abrir archivo**, se puede usar el alias predefinido `>of`.  
@@ -41,7 +42,7 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |[Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|  
 |Agregar nuevo proyecto|AddProj|File.AddNewProject|  
 |[Alias (Comando)](../../ide/reference/alias-command.md)|Alias|Tools.Alias|  
-|Ventana Automático|Autos|Debug.Autos|  
+|Ventana Automático|Automático|Debug.Autos|  
 |ventana Puntos de interrupción|bl|Debug.Breakpoints|  
 |Alternar punto de interrupción|bp|Debug.ToggleBreakPoint|  
 |Ventana Pila de llamadas|CallStack|Debug.CallStack|  
@@ -110,7 +111,7 @@ Los alias permiten escribir un comando en el cuadro **Buscar/Comando** o en la v
 |[Shell (comando)](../../ide/reference/shell-command.md)|shell|Tools.Shell|  
 |Detener Buscar en archivos|StopFind|Edit.FindInFiles /stop|  
 |Cambiar delimitador|SwapAnchor|Edit.SwapAnchor|  
-|Paso a paso por instrucciones|t|Debug.StepInto|  
+|Paso a paso por instrucciones|m|Debug.StepInto|  
 |Aplicar tabulación a la selección|tabify|Edit.TabifySelection|  
 |Ventana Lista de tareas|TaskList|View.TaskList|  
 |Ventana Subprocesos|Subprocesos|Debug.Threads|  

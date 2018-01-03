@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccbb32b9fd035a9058812eb5a3df306ff629086f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d1dcd42cf2251a4cd20047eaa3fc67110cf048e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Cómo: Cambiar el directorio de resultados de compilación
 Puede especificar la ubicación de salida por configuración (para debug, release o ambos) generada por el proyecto.  

@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 617b495cab96d8fdb0ddd7c69d6e6c1dd93d7ccc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
 Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. En el caso de los proyectos de C++, también puede ver la misma información en un archivo .txt que se crea y se guarda automáticamente. Si se trata de proyectos de código administrado, puede copiar y pegar la información de la ventana **Salida** en un archivo .txt y guardarlo donde quiera. También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.  
@@ -43,7 +44,7 @@ Después de compilar un proyecto en el IDE de Visual Studio, puede ver informaci
   
 3.  En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.  
   
-    |Nivel de detalle|Descripción|  
+    |Nivel de detalle|Description|  
     |---------------------|-----------------|  
     |Quiet|Muestra un resumen solo de la compilación.|  
     |Minimal|Muestra un resumen de la compilación y los errores, las advertencias y los mensajes que están clasificados como muy importantes.|  

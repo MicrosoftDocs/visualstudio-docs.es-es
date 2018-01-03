@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fc2afbe7b0226cb5983aa3022ff4b24ac31fe7aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a03a05dd2d72b6733b0936849f218b3358f15cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-tasks"></a>Tareas de MSBuild
 Una plataforma de compilación debe ser capaz de ejecutar cualquier número de acciones durante el proceso de compilación. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza *tareas* para realizar estas acciones. Una tarea es una unidad de código ejecutable que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza para realizar operaciones de compilación atómicas.  

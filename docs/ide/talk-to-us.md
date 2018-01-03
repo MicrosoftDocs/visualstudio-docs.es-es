@@ -14,11 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: 7759e67a4ce886388b9a7afea531448edeefac54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 990c13a0fa42d845668c66419ab5cd989b6d2d61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="talk-to-us"></a>Talk to Us
 Si tiene ideas sobre cómo mejorar nuestros productos y nuestra documentación, nos interesan. No podemos responder siempre personalmente, pero nos aseguraremos de hacer llegar sus comentarios al equipo o a la persona adecuada.  

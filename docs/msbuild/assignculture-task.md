@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f1522f4d3b7f97ccea1529c043e6179502fcd14a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 765f74a80e98737b65fb913113b2879ce4609248
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assignculture-task"></a>AssignCulture (Tarea)
 Esta tarea acepta una lista de elementos que puede contener una cadena de identificador de referencia cultural .NET válida como parte del nombre de archivo y genera elementos que tengan metadatos con el nombre `Culture` que contiene el correspondiente identificador de referencia cultural. Por ejemplo, el nombre de archivo Form1.fr-fr.resx tiene un indicador de referencia cultural "fr-fr" incluido, por lo que esta tarea genera un elemento que tiene el mismo nombre de archivo con los metadatos de `Culture` igual a `fr-fr`. La tarea también genera una lista de nombres de archivo con la referencia cultural que se quitó del nombre de archivo.  
@@ -33,7 +34,7 @@ Esta tarea acepta una lista de elementos que puede contener una cadena de identi
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `AssignCulture`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AssignedFiles`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene la lista de elementos recibidos en el parámetro `Files`, con una entrada de metadatos `Culture` agregada a cada elemento.<br /><br /> Si el elemento entrante del parámetro `Files` ya contiene una entrada de metadatos `Culture`, se usa la entrada de metadatos original.<br /><br /> La tarea solo asigna una entrada de metadatos `Culture` si el nombre de archivo contiene un identificador de referencia cultural válido. El identificador de referencia cultural debe estar entre los dos últimos puntos en el nombre de archivo.|  
 |`AssignedFilesWithCulture`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene el subconjunto de los elementos del parámetro `AssignedFiles` que tienen una entrada de metadatos `Culture`.|  

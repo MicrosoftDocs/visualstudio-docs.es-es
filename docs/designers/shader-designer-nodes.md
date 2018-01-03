@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2393d254ee2864291a0a3ae5bbed6e78d80d3863
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bff905ae4f280d106eea34d513af35ee3de663b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
 Los artículos de esta sección de la documentación contienen información sobre los distintos nodos del Diseñador de sombras que puede usar para crear efectos gráficos.  
@@ -44,7 +45,7 @@ Los artículos de esta sección de la documentación contienen información sobr
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Nodos de constante](../designers/constant-nodes.md)|Describe los nodos que se pueden usar para representar valores literales y la información de estado de vértice interpolada en los cálculos del sombreador. Como el estado de los vértices se interpola, y por tanto es diferente para cada píxel, cada instancia de sombreador de píxeles recibe una versión diferente de la constante.|  
 |[Nodos de parámetros](../designers/parameter-nodes.md)|Describe los nodos que se pueden usar para representar la posición de la cámara, propiedades de los materiales, parámetros de iluminación, hora y otra información de estado de la aplicación en los cálculos del sombreador.|  

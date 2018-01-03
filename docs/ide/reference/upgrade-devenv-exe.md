@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 464846eaf76761008ffc351db53d92669812f691
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e765d376276c6e83d7e2bcce2ab46974210d96c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 Actualiza el archivo de solución y todos sus archivos de proyecto, o el archivo de proyecto especificado, a los formatos actuales de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para estos archivos.  

@@ -8,21 +8,16 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords: Prerequisites dialog box
-ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
-caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68e326d8045733fc4f491c51405ed51414a92afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9e363dcdb8b15b1436da3738d75486b6675e9c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 Este cuadro de diálogo permite especificar los componentes necesarios que se instalan, cómo se instalan y en qué orden se instalan los paquetes.  
@@ -31,7 +26,7 @@ Este cuadro de diálogo permite especificar los componentes necesarios que se in
   
 ## <a name="uielement-list"></a>Lista de UIElement  
   
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |**Crear programa de instalación para instalar los componentes necesarios**|Incluye los componentes necesarios del programa de instalación de la aplicación (Setup.exe) para que se instalen antes que esta, en orden de dependencia. Esta opción se encuentra activada de forma predeterminada. Si no se selecciona, no se crea ningún archivo Setup.exe.|  
 |**Elegir los requisitos previos que se van a instalar**|Especifica si se deben instalar componentes como [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)], Crystal Reports, etc.<br /><br /> Por ejemplo, al activar la casilla situada junto a **SQL Server 2005 Express Edition SP2**, se indica al programa de instalación que debe comprobar si este componente está instalado en el equipo de destino y, si no lo está, debe instalarlo.<br /><br /> Para obtener información detallada sobre los paquetes de requisitos previos, vea la tabla de Información de requisitos más adelante en este tema.|  
@@ -43,7 +38,7 @@ Este cuadro de diálogo permite especificar los componentes necesarios que se in
 ## <a name="prerequisites-information"></a>Información de requisitos previos  
  Los componentes de requisitos previos que aparecen en el cuadro de diálogo **Requisitos previos** pueden ser diferentes a los que figuran en la lista siguiente. Los paquetes de requisitos previos incluidos en el **cuadro de diálogo Requisitos previos** se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, deberá seleccionar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.  
   
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |**.NET Framework 3.5 SP1**|Este paquete instala lo siguiente:<br /><br /> -   Versiones de .NET Framework 2.0, 3.0 y 3.5.<br />-   Compatibilidad con todas las versiones de .NET Framework en sistemas operativos de 32 bits (x86) y de 64 bits (x64).<br />-   Paquetes de idiomas para cada versión de .NET Framework que se instala con el paquete.<br />-   Service Pack para .NET Framework 2.0 y 3.0.<br /><br /> .NET Framework 3.0 se incluye con Windows Vista y .NET Framework 3.5 se incluye con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se requiere .NET Framework 3.5 para todos los proyectos de Visual Basic y Visual C# que se compilen para los sistemas operativos de 32 bits y cuya plataforma de destino esté establecida en **.NET Framework 3.5**, así como para los proyectos de Visual Basic y Visual C# compilados para sistemas operativos de 64 bits. (No se admite IA64.) Tenga en cuenta que, de manera predeterminada, los proyectos de Visual Basic y Visual C# se compilan para cualquier arquitectura de CPU. Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistribuir .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) e [Implementar requisitos previos de aplicaciones de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Este elemento está seleccionado de manera predeterminada.|  
 |**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile es un subconjunto de la versión completa de .NET Framework 3.5 SP1 destinado a aplicaciones cliente. Proporciona un subconjunto simplificado de las características de Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) y ClickOnce. Esto permite habilitar escenarios de implementación rápida para WPF, Windows Forms, WCF y las aplicaciones de consola que tienen como destino .NET Framework Client Profile. Para obtener más información, consulte [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).|  

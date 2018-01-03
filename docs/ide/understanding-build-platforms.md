@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ec355d4798da9a5134396801d744623fffc2da2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef7469677a9d6eb01514b9117ed4c303ae5346de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-platforms"></a>Descripción de las plataformas de compilación
 Puede almacenar versiones diferentes de las propiedades de solución y de proyecto que se aplican a distintas plataformas de destino. Por ejemplo, puede crear una configuración de depuración destinada a una plataforma x86 y una configuración de depuración destinada a una plataforma x64. Puede cambiar rápidamente la plataforma activa para poder compilar fácilmente varias configuraciones.  

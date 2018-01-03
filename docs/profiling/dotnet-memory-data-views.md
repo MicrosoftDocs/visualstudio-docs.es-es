@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6bbbc764c7b5275082b6261249d48122ea3c836
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fa1fb6dbaed5ed43f9a7eb3e69b52e91f43bd7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-memory-data-views"></a>Vistas de datos de memoria de .NET
 Esta sección contiene información de referencia acerca de las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de memoria de .NET.  

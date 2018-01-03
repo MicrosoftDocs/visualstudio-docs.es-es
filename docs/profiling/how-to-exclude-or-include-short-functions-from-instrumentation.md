@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22b6705c295a8a738645d163dd982b22061cabf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1238e092bf1b088ba9ce377aeaf66b1fa953f1bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Cómo: Excluir o incluir funciones cortas en la instrumentación
 De forma predeterminada, las herramientas de generación de perfiles excluyen *funciones pequeñas* de la instrumentación. Las funciones pequeñas son funciones cortas que no realizan ninguna llamada de función. Excluir estas funciones pequeñas proporciona menos sobrecarga de instrumentación y, por consiguiente, mejora la velocidad de instrumentación. La exclusión de las funciones pequeñas también reduce el tamaño del archivo de datos de generación de perfiles de rendimiento (.vsp) y el tiempo necesario para el análisis. Si se excluyen las funciones pequeñas, el tiempo que se emplea en ellas se descuenta del tiempo inclusivo y exclusivo de sus funciones primarias. Las funciones pequeñas se pueden incluir o excluir de la instrumentación, como se describe en el siguiente procedimiento.  
@@ -43,4 +44,4 @@ De forma predeterminada, las herramientas de generación de perfiles excluyen *f
   
 ## <a name="see-also"></a>Vea también  
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)   
- [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)
+ [Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)

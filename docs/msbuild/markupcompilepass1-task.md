@@ -22,18 +22,19 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5a8b4c68e5ed3d9d2322f7e2468c800bea793590
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2dfa5dd2112557d942e2e7dc1011bc605ae3e974
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 (Tarea)
 La tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> convierte archivos de proyecto de [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] no localizables en un formato binario compilado.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AllGeneratedFiles`|Parámetro de salida opcional de tipo **ITaskItem[]**.<br /><br /> Contiene una lista completa de archivos que se generan mediante la tarea <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>.|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|Parámetro **Boolean** opcional.<br /><br /> Especifica si la tarea se va a ejecutar en un <xref:System.AppDomain> independiente. Si este parámetro devuelve el valor **false**, la tarea se ejecuta en el mismo <xref:System.AppDomain> que [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] y su ejecución es más rápida. Si el parámetro devuelve el valor **true**, la tarea se ejecuta en otro <xref:System.AppDomain> que está aislado de [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] y su ejecución es más lenta.|  

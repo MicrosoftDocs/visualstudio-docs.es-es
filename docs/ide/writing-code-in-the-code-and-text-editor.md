@@ -62,18 +62,19 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb8229cffc2a3e30e3ce5a3a42af7e1673d11f3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-code-in-the-code-editor"></a>Escribir código en el editor de código
 El editor de Visual Studio proporciona muchas características que le facilitan la escritura y la administración del código y del texto. Puede expandir y contraer diferentes bloques de código mediante el uso de la esquematización. Puede obtener más información sobre el código mediante IntelliSense, el **Examinador de objetos** y la jerarquía de llamadas. Puede encontrar código mediante características como **Ir a**, **Ir a definición** y **Buscar todas las referencias**. Puede insertar bloques de código con fragmentos de código y generar código mediante funciones como **Generar a partir del uso**. Si no ha usado nunca el editor de Visual Studio, vea una breve introducción en [Edición del código](https://www.visualstudio.com/features/ide-vs).  
 
  Puede ver el código de varias maneras. De forma predeterminada, en el **Explorador de soluciones** se muestra el código organizado por archivos. Puede hacer clic en la pestaña **Vista de clases** en la parte inferior de la ventana para ver el código organizado por clases.
 
- Puede buscar y reemplazar texto en uno o varios archivos. Para obtener más información, vea [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md). Puede usar expresiones regulares para buscar y reemplazar texto. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
+ Puede buscar y reemplazar texto en uno o varios archivos. Para obtener más información, consulta [Finding and Replacing Text](../ide/finding-and-replacing-text.md). Puede usar expresiones regulares para buscar y reemplazar texto. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
 
  Los diferentes lenguajes de Visual Studio ofrecen distintos conjuntos de características y, en algunos casos, estas se comportan de forma diferente en función del lenguaje. Muchas de estas diferencias se especifican en las descripciones de las características, pero si quiere obtener más información, puede ver las secciones sobre lenguajes específicos de Visual Studio.  
 

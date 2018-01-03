@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1846b145833a7474e8662442313d0e39a262e67c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4f3388d7484021bd4c12e4a7273b312190bd6dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Cómo: Localizar y organizar plantillas de proyectos y de elementos
 Los archivos de plantilla se deben colocar en una ubicación que Visual Studio reconozca de forma que estas aparezcan en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**. Puede crear subcategorías personalizadas para las plantillas de modo que estas subcategorías aparezcan también en la interfaz de usuario.  

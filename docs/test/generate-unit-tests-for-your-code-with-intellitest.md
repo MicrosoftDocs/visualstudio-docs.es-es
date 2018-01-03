@@ -12,11 +12,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 533e1938e83a7d4dccc3be4d8847967ee7c91f6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bf6bdf29541b721839bbdef42a2bc018d4a9c424
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generar pruebas unitarias para el código con IntelliTest
 IntelliTest explora el código .NET para generar datos de prueba y un conjunto de pruebas unitarias. Para cada instrucción en el código, se genera una entrada de prueba que ejecutará esa instrucción. Se lleva a cabo un análisis de caso para cada bifurcación condicional en el código. Por ejemplo, se analizan las instrucciones `if`, las aserciones y todas las operaciones que pueden producir excepciones. Con este análisis puede generar los datos de pruebas que deben usarse en una prueba unitaria parametrizada para cada método. También crea pruebas unitarias con una cobertura de código elevada.  

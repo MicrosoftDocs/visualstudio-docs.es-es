@@ -30,11 +30,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  
@@ -94,7 +95,7 @@ Enumera los elementos de los que puede modificar el color de primer plano y de f
   
  Entre los elementos para mostrar se incluyen:  
   
-|Elemento para mostrar|Descripción|  
+|Elemento para mostrar|Description|  
 |------------------|-----------------|  
 |**Texto sin formato**|Texto del editor.|  
 |**Texto seleccionado**|Texto que se incluye en la selección actual cuando el editor tiene el foco.|  

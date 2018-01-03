@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5aff5914d9b278b206f81abd4f28ce9f4dfa409c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.  
@@ -125,7 +126,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Para buscar e iniciar el ensamblado de salida y asociar el depurador, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] necesita que las propiedades `OutputPath`, `AssemblyName`y `OutputType` estén definidas correctamente. El depurador no podrá realizar la asociación si el proceso de compilación no hiciera que el compilador generase un archivo .pdb.  
   
 ## <a name="design-time-target-execution"></a>Ejecución del destino en tiempo de diseño  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] intenta ejecutar los destinos con algunos nombres cuando carga un proyecto. Estos destinos incluyen `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`y `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ejecuta estos destinos para que el compilador pueda inicializarse con el fin de proporcionar IntelliSense, el depurador pueda inicializarse y las referencias mostradas en el Explorador de soluciones puedan resolverse. Si estos destinos no están presentes, el proyecto se cargará y se compilará correctamente pero la experiencia en tiempo de diseño de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no será totalmente funcional.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] intenta ejecutar los destinos con algunos nombres cuando carga un proyecto. Estos destinos incluyen `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` y `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ejecuta estos destinos para que el compilador pueda inicializarse con el fin de proporcionar IntelliSense, el depurador pueda inicializarse y las referencias mostradas en el Explorador de soluciones puedan resolverse. Si estos destinos no están presentes, el proyecto se cargará y se compilará correctamente pero la experiencia en tiempo de diseño de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no será totalmente funcional.  
   
 ##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  Para editar directamente un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , puede abrir el archivo del proyecto en el editor XML de Visual Studio.  

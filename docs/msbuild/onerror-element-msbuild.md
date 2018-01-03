@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1c0238bb7a525166f69a59b0af5d08db5286a5f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c21160247a617c1f74333ef567a6857bbc902cdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es `false` para una tarea con error.  
@@ -46,7 +47,7 @@ Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es 
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Descripción|  
+|Atributo|Description|  
 |---------------|-----------------|  
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
 |`ExecuteTargets`|Atributo necesario.<br /><br /> Los destinos para ejecutar si se produce un error en una tarea. Separe varios destinos con puntos y coma. Se ejecutan varios destinos en el orden especificado.|  
@@ -56,7 +57,7 @@ Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es 
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Target](../msbuild/target-element-msbuild.md)|Elemento contenedor para tareas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 

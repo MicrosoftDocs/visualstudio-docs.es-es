@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="variable-explorer"></a>Explorador de variables
 
@@ -27,22 +28,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 Después, la ventana Explorador de variables aparece de la manera siguiente:
 
 ![Ventana Explorador de variables en Visual Studio](media/variable-explorer-window.png)
 
 Si tiene un marco de datos de R más complejo definido en la sesión, puede navegar por los datos. Por ejemplo, después de ejecutar `cars <- mtcars`, puede navegar por el conjunto de datos expandiendo los diferentes nodos del Explorador de variables:
- 
+
 ![Vista expandida del Explorador de variables](media/variable-explorer-expanded-results.png)
- 
+
 Para eliminar variables, haga clic con el botón derecho y seleccione **Eliminar** o seleccione la variable y presione la tecla Eliminar.
 
 También puede buscar una observación del marco de datos con la búsqueda incremental. Primero, expanda los nodos del marco de datos que quiere buscar, después, escriba los términos de búsqueda en el cuadro de búsqueda.
 
 ## <a name="details-table-view"></a>Vista de los detalles (tabla)
 
-Como a menudo los datos son tabulares, puede ver cualquier tipo de datos complejo como una tabla independiente seleccionando el icono de lupa o haciendo clic con el botón derecho y seleccionando **Mostrar detalles**. 
+Como a menudo los datos son tabulares, puede ver cualquier tipo de datos complejo como una tabla independiente seleccionando el icono de lupa o haciendo clic con el botón derecho y seleccionando **Mostrar detalles**.
 
 ![Vista de la tabla Explorador de variables](media/variable-explorer-table-view.png)
 
@@ -69,7 +70,6 @@ También puede cambiar a un ámbito de función cuando se detiene en un punto de
 ![Explorador de variables que muestra un marco de datos durante la depuración](media/variable-explorer-as-locals-window.png)
 
 El Explorador de variables cambia automáticamente el ámbito de función a medida que avanza por el código en el depurador, como mostrar variables locales en una función.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Importar datos en el Explorador de variables
 

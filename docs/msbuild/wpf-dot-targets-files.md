@@ -21,11 +21,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: eb71632ba87fdfe7d9770c592c552d9cffdc618c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e594972fc4dc7be99b8978c8f0432c83614d52e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-targets-files"></a>Archivos .Targets de WPF
 [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)] extiende la herramienta [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] agregando un conjunto de tareas específicas de [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)] que se combinan en un archivo .targets especial, **Microsoft.WinFX.targets**. Este archivo combina el conjunto de tareas de [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] que se necesitan para compilar un proyecto de [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] en [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].  

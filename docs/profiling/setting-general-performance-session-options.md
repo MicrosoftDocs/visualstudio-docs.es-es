@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3732c842d182698ecb8b43af3e5ebc5831385433
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ca1f5d0c310fa4f9d75f27c6baf73f7a230e87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-general-performance-session-options"></a>Establecer opciones generales de sesión de rendimiento
 Puede establecer el método de recolección y las convenciones de nomenclatura de los datos de generación de perfiles para una sesión de rendimiento de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento. Para abrir este cuadro de diálogo desde el **Explorador de rendimiento**, haga clic con el botón derecho del mouse en la sesión de rendimiento y, a continuación, en **Propiedades**.  

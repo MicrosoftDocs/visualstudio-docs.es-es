@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64a10c356100e6ace36ec1c574c85479741113c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Cómo: Excluir proyectos de una compilación
 Para compilar una solución no es necesario compilar todos los proyectos que contiene. Por ejemplo, se puede excluir un proyecto que interrumpa la compilación y, a continuación, compilar el proyecto tras haber investigado y resuelto los problemas.  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 894d3f137787617de88ddcd2bed586c64dd22117
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 9c2e584b467141557d6a8e2a586643417a47edf0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Cómo: Especificar runtime de .NET Framework
 Con el lanzamiento de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], las aplicaciones se pueden componer de módulos que se compilaron con versiones diferentes del runtime de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. De forma predeterminada, las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generan perfiles del primer runtime cargado por la aplicación. Puede especificar el runtime del que se deben generar perfiles cuando se inicia una aplicación con el generador de perfiles y al adjuntar el generador de perfiles a una aplicación que ya se está ejecutando.  

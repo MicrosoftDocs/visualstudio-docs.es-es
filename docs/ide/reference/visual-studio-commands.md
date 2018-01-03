@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-commands"></a>Comandos de Visual Studio
 Los comandos de Visual Studio le permiten invocar un comando desde la ventana **Comando** , la ventana **Inmediato** o el cuadro **Buscar/comando** . En todos los casos, el signo mayor que (`>`) se usa para indicar que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.  
@@ -41,7 +42,7 @@ Los comandos de Visual Studio le permiten invocar un comando desde la ventana **
   
  Los siguientes comandos toman argumentos o modificadores.  
   
-|Nombre de comando|Descripción|  
+|Nombre de comando|Description|  
 |------------------|-----------------|  
 |[Agregar elemento existente](../../ide/reference/add-existing-item-command.md)|Agrega un archivo existente a la solución actual y lo abre.|  
 |[Agregar proyecto existente](../../ide/reference/add-existing-project-command.md)|Agrega un proyecto existente a la solución actual.|  

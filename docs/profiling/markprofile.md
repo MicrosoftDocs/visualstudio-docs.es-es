@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ab1c155b5c01f2278ca741ee13bb8e1a02e8b55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f9bc5537bf877afd3ff83d91516fe37d472c859f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markprofile"></a>MarkProfile
 El método `MarkProfile` inserta una marca de perfil en el archivo .vsp. La generación de perfiles para el subproceso que contiene la función `MarkProfile` debe estar activada (ON) para que se inserte la marca.  
@@ -36,7 +37,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Descripción|  
+|Enumerador|Description|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|  
 |MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|  

@@ -14,11 +14,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba5d9a146993a4df7d4d60318e0dc3a548819a20
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: 082569ea1875e03154e98e8078a21aafc7ad76dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-language-specific-editor-options"></a>Opciones del editor específicas del lenguaje
 

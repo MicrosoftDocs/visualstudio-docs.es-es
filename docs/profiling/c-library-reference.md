@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d951c08e3505673242b249c42b846f3d4c88300
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 690c1cf6ff64e71bcf9ad96ab5cb2c9f472d9855
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-library-reference"></a>Referencia de la biblioteca C
 Esta sección contiene información de referencia para el SDK del Visualizador de simultaneidad.  

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ae3b43f300ce410f58dd3fc4d849b2fe1bb3c38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7fb851cbeed74bf34768a930297477f54eacf7f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Informe Seguimiento de eventos para Windows (ETW)
 El informe Seguimiento de eventos para Windows (ETW) muestra los eventos ETW registrados en una sesión de rendimiento de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Los datos ETW se recopilan en un archivo binario (.etl).  
@@ -33,11 +34,11 @@ El informe Seguimiento de eventos para Windows (ETW) muestra los eventos ETW reg
   
 -   Genere el informe ETW mediante el comando **VSReport/Summary:ETW**. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Marca de tiempo**|Identifica la hora en la que se ha producido el evento.|  
 |**Identificador del proceso**|Identifica el proceso que ha generado el evento.|  
 |**Identificador de subproceso**|Identifica el subproceso que ha generado el evento.|  
 |**Descripción**|Identifica el proveedor del evento.|  
-|**ype**|Identifica el tipo de evento.|  
+|**Type**|Identifica el tipo de evento.|  
 |**Propiedades**|Propiedades del evento. Cada evento es un par nombre-valor separado por comas e incluido entre corchetes.|

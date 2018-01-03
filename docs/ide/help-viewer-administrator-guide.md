@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4c034b6aec75499d2e38af35f22cd852fa2e15
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 El Visor de Ayuda permite administrar instalaciones locales de ayuda para los entornos de red con o sin acceso a Internet. El contenido de la Ayuda local se configura en cada equipo. De forma predeterminada, los usuarios deben tener derechos de administrador para actualizar la instalación de Ayuda local.  

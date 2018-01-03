@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: cd7e50a44e5d53653f233372b643c31fe58aedc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 129f9c9235035e828e1825898aac89eaf8cd1388
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de datos de compilación que quiere revisar y si quiere guardarlos en uno o más archivos. También puede especificar un registrador personalizado para recopilar datos de compilación. Para obtener información sobre los modificadores de la línea de comandos de MSBuild que no se tratan en este tema, consulte [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
@@ -57,7 +58,7 @@ msbuild MyProject.proj /t:go /fileLogger
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
- Para obtener más información, consulte [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
+ Para obtener más información, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="saving-the-log-output-to-multiple-files"></a>Guardar la salida del registro en varios archivos  
  En el ejemplo siguiente se guarda el registro completo en `msbuild1.log`, solo los errores en `JustErrors.log` y solo las advertencias en `JustWarnings.log`. En el ejemplo se utilizan números de archivo para cada uno de los tres archivos. Los números de archivo se especifican justo después de los modificadores **/fl** y **/flp** (por ejemplo, `/fl1` y `/flp1`).  

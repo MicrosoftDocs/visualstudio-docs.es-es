@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab80c499a95f8fd1dee764edea9f971d9429688
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 75d892c4947ee93521234f9bb2cdb781bd0b09f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Cuadro de diálogo Opciones, Proyectos y soluciones, Proyectos web
 

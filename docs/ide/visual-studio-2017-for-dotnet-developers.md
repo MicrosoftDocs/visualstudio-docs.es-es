@@ -8,11 +8,12 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: dotnet
+ms.openlocfilehash: ed3eacba3611b010c95f650bd24e412d99fdde5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desarrolladores de .NET
 
@@ -86,7 +87,7 @@ Si anteriormente usaba otro IDE o entorno de codificación, es posible que la in
 
 Estos son accesos directos populares de Visual Studio. Tenga en cuenta que algunas extensiones desenlazan los enlaces de teclado de Visual Studio y debe restaurar estos enlaces de teclado para usar los comandos que aparecen a continuación. Para restaurar los enlaces de teclado a los valores predeterminados de Visual Studio, vaya a **Herramientas > Importar y exportar configuraciones... > Restablecer todas las configuraciones**.
 
-| Métodos abreviados (todos los perfiles) | Comando | Descripción |
+| Métodos abreviados (todos los perfiles) | Comando | Description |
 |-|-|-| 
 | **Ctrl+T** | Ir a todo | Navegar a cualquier declaración de archivo/tipo/miembro/símbolo |
 | **F12** (también **Ctrl+clic**) | Ir a definición | Navegar hasta donde se define un símbolo |

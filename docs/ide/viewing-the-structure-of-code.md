@@ -29,11 +29,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75a8f4251d6624487484dbd02230bc5d7c79baef
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 48b146a14310b0b148f886ef0e09bd23859abf5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="viewing-the-structure-of-code"></a>Ver la estructura del código
 

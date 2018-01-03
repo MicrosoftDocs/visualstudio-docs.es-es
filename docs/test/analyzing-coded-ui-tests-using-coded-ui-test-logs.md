@@ -11,11 +11,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 39ed1ba397fd1c0a9ff1f30acea1cff4a38529a2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: af89bbfadfa992fad4b2ba114ffb006e4b0f818a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas
 Los registros de pruebas de IU programadas filtran y guardan información importante sobre las series de pruebas de IU programadas.  

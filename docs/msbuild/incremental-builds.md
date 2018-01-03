@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 978f1d43e278a6e8a112151221bda0a828b92f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1238748b07d820a045e440e8d130bf9423668854
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="incremental-builds"></a>Compilaciones incrementales
 Las compilaciones incrementales son compilaciones que se optimizan para que no se ejecuten los destinos que tienen archivos de salida que están actualizados con respecto a sus archivos de entrada correspondientes. Un elemento de destino puede tener un atributo `Inputs`, que indica qué elementos el destino espera como entrada, y un atributo `Outputs`, que indica qué elementos genera como salida. MSBuild intenta buscar una asignación 1 a 1 entre los valores de estos atributos. Si existe una asignación 1 a 1, MSBuild compara la marca de tiempo de cada elemento de entrada con la marca de tiempo de su elemento de salida correspondiente. Los archivos de salida que no tienen ninguna asignación 1 a 1 se comparan con todos los archivos de entrada. Un elemento se considera actualizado si su archivo de salida tiene una antigüedad igual o inferior a la de su archivo o archivos de entrada.  

@@ -29,11 +29,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 003e4abaf5e6fbabead604c495b2018402cf74ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cf3f299f2b5ec2e38b5fe0315b6d0abc0411b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 Se pueden almacenar diferentes configuraciones de propiedades de solución y de proyecto para utilizar en distintos tipos de compilaciones. Para crear, seleccionar, modificar o eliminar una configuración, se puede usar el **Administrador de configuración**. Para abrirlo, en la barra de menús, seleccione **Compilación**, **Administrador de configuración**, o simplemente escriba **Configuración** en el cuadro **Inicio rápido**. También se puede usar la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar** para seleccionar una configuración o abrir el **Administrador de configuración**.  

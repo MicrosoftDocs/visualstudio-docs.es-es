@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6bb51d32ea249ba573733babcb7c9ed0cf0dde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de opciones, Propiedades de nodo Depuración
 En las siguientes tablas, se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Depuración**, `DTE.Properties("Debugging", <Property Page>)`, del cuadro de diálogo **Opciones**.  
@@ -24,7 +25,7 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 ## <a name="general"></a>General  
  `DTE.Properties("Debugging", "General")`  
   
-|Nombre de elemento de propiedad|Valor|Descripción|  
+|Nombre de elemento de propiedad|Valor|Description|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (Boolean)|Determina si el depurador pide permiso antes de eliminar todos los puntos de interrupción de un proyecto.|  
 |BreakAllProcesses|Get/Set (Boolean)|Determina si el depurador interrumpe todos los procesos cuando se interrumpe un único proceso.|  
@@ -54,7 +55,7 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 ## <a name="edit-and-continue"></a>Editar y continuar  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|Nombre de elemento de propiedad|Valor|Descripción|  
+|Nombre de elemento de propiedad|Valor|Description|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (Boolean)|Determina si la opción Editar y continuar está habilitada. Esta opción se aplica a todos los lenguajes que admiten Editar y continuar.|  
 |InvokedByCommands|Get/Set (Boolean)|Determina si Editar y continuar aplica de forma automática los cambios de código cuando el usuario selecciona un comando de depuración como **Paso** o **Continuar**. Esta opción se aplica solo a código nativo.|  
@@ -66,7 +67,7 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 ## <a name="just-in-time"></a>Just-In-Time  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|Nombre de elemento de propiedad|Valor|Descripción|  
+|Nombre de elemento de propiedad|Valor|Description|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (Boolean)|Determina si la depuración Just-In-Time está habilitada para código administrado.|  
 |JitNative|Get/Set (Boolean)|Determina si la depuración Just-In-Time está habilitada para código nativo.|  
@@ -75,7 +76,7 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 ## <a name="native"></a>Nativo  
  `DTE.Properties("Debugging", "Native")`  
   
-|Nombre de elemento de propiedad|Valor|Descripción|  
+|Nombre de elemento de propiedad|Valor|Description|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (Boolean)|Determina si el depurador carga las tablas de exportación de DLL.|  
 |EnableRPC|Get/Set (Boolean)|Determina si el depurador puede depurar paso a paso por instrucciones en llamadas a procedimientos remotos COM.|  

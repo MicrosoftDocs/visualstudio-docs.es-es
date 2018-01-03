@@ -21,11 +21,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ecb4688452457f9a24a0ab982c06567aae2491d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f1f2f0826b89a7a06d1682d4c991087f29c274c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly (Tarea)
 Elimina del Registro los ensamblados especificados para la interoperabilidad COM. Invierte la [tarea RegisterAssembly](../msbuild/registerassembly-task.md).  
@@ -33,7 +34,7 @@ Elimina del Registro los ensamblados especificados para la interoperabilidad COM
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `UnregisterAssembly` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Assemblies`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los ensamblados que se eliminarán del Registro.|  
 |`AssemblyListFile`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Contiene información sobre el estado entre las tareas `RegisterAssembly` y `UnregisterAssembly`. Impide que la tarea intente eliminar del Registro un ensamblado que no se pudo registrar en la tarea `RegisterAssembly`.<br /><br /> Si se especifica este parámetro, se omiten los parámetros `Assemblies` y `TypeLibFiles`.|  

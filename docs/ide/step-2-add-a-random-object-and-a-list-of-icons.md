@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d61602ce6c1542e746f54ecebc8576326e5e6889
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9767bae7aaa7a4dcadd425cbccdde6ec56af5646
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Paso 2: Agregar un objeto aleatorio y una lista de iconos
 En este paso, creará un conjunto de símbolos para formar parejas en el juego. Cada símbolo se agrega a dos celdas aleatorias del elemento TableLayoutPanel en el formulario. Para ello, se utilizan dos instrucciones `new` para crear dos objetos. El primero es un objeto `Random` como el usado en el juego de la prueba de matemáticas. Se utiliza en este código para elegir aleatoriamente celdas de TableLayoutPanel. El segundo objeto, que tal vez no conozca, es un objeto `List` que se utiliza para almacenar los símbolos elegidos al azar.  

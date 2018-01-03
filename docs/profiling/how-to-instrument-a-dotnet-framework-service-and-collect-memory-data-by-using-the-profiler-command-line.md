@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 487da8f755cc714aa43a5204375d8f76579ce22b
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: bb9a80d81b05f759ef90f292bd4201103876aab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Cómo: Instrumentar un servicio de .NET Framework y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
 En este tema se describe cómo usar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un servicio de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] y recopilar datos de uso de memoria. Puede recopilar datos de asignación de memoria o recopilar tanto datos de asignación de memoria como de duración de objetos.  
@@ -52,7 +53,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
   
     -   **/globaltracegc** y **/globaltracegclife** habilitan la recopilación de datos de asignación de memoria y duración de los objetos.  
   
-        |Opción|Descripción|  
+        |Opción|Description|  
         |------------|-----------------|  
         |**/globaltracegc**|Solo recopila datos de asignación de memoria.|  
         |**/globaltracegclife**|Recopila datos de asignación de memoria y de duración de los objetos.|  
@@ -74,7 +75,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
     > [!NOTE]
     >  Normalmente, las opciones **/user** y **/crosssession** son necesarias para servicios.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso de trabajo de ASP.NET. Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.|  
     |[/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otros inicios de sesión. Esta opción es necesaria si la aplicación ASP.NET se ejecuta en otra sesión. El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**.|  
@@ -100,7 +101,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
   
 -   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|  
@@ -126,5 +127,5 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 4.  Reinicie el equipo.  
   
 ## <a name="see-also"></a>Vea también  
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
  [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)

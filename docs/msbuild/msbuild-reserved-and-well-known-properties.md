@@ -18,11 +18,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2edee236382b15c8f623acd1f4a650ef9628dd68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 136e488f78090211f4c63f685338d61556982b9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un conjunto de propiedades predefinidas que almacenan información sobre el archivo de proyecto y los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Estas propiedades se evalúan igual que otras propiedades de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por ejemplo, para utilizar la propiedad `MSBuildProjectFile` escribiría `$(MSBuildProjectFile)`.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas  
  En la tabla siguiente se describen las propiedades predefinidas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
-|Propiedad|Descripción|Reservadas o conocidas|  
+|Property|Description|Reservadas o conocidas|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Ruta de acceso absoluta de la carpeta donde se encuentran los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se están utilizando actualmente (por ejemplo, C:\Windows\Microsoft.Net\Framework\\*versionNumber*). Esta propiedad es útil si necesita hacer referencia a los archivos del directorio de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.|Reservada|  
 |`MSBuildExtensionsPath`|Introducida en .NET Framework 4: no hay ninguna diferencia entre los valores predeterminados de `MSBuildExtensionsPath` y de `MSBuildExtensionsPath32`. Puede establecer la variable de entorno `MSBUILDLEGACYEXTENSIONSPATH` en un valor distinto de null para habilitar el comportamiento del valor predeterminado de `MSBuildExtensionsPath` en versiones anteriores.<br /><br /> En .NET Framework 3.5 y en versiones anteriores, el valor predeterminado de `MSBuildExtensionsPath` apunta a la ruta de la subcarpeta de MSBuild bajo la carpeta \Archivos de programa\ o \Archivos de programa (x86), según el valor de bits del proceso actual. Por ejemplo, para un proceso de 32 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta \Archivos de programa (x86). Para un proceso de 64 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta \Archivos de programa.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.<br /><br /> Esta ubicación es un lugar útil para colocar archivos de destino personalizados. Por ejemplo, podría instalar archivos de destino en \Archivos de programa\MSBuild\MisArchivos\Northwind.targets y, a continuación, importarlos en archivos de proyecto con este código XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Conocida|  

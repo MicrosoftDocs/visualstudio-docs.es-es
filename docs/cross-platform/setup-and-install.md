@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 4f525157e9e34838be4379f8df0845b294880f11
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: xamarin
+ms.openlocfilehash: ab7dc9eb430f797f11bcdd641af2a06b2380d9ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setup-and-install"></a>Configuración e instalación
 Para compilar aplicaciones nativas para iOS, Android y Windows a partir de una base de código común de C#/.NET con Xamarin, necesita lo siguiente:  

@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82c34ef71777c42b2fa743817d731a66b2b8bee9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3759133ef7a2be2a7c4c7d04d1b2d444269b7005
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---sampling-data"></a>Vista Árbol de llamadas: datos de muestreo
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles.  
@@ -39,10 +40,10 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
   
  Al establecer el nodo raíz, se eliminan todas las demás entradas de la vista, excepto el subárbol del nodo seleccionado. Para restablecer el nodo raíz en el nodo original, haga clic con el botón derecho en la ventana de la vista Árbol de llamadas y seleccione **Restablecer raíz**.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
+|**Nombre de proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
 |**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
@@ -56,7 +57,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 |**Porcentaje de muestras inclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que eran muestras inclusivas de esta función cuando la llamó la función primaria en el árbol de llamadas.|  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista Informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Árbol de llamadas: datos de muestreo del generador de perfiles](../profiling/call-tree-view-sampling-data.md)   
  [Vista Árbol de llamadas: muestreo](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Vista Árbol de llamadas: instrumentación](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   

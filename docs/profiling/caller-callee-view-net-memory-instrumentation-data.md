@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6089a2c28ec8a110d98c08092c500af751683e2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ee600d74da21c328e0cb374bad1ffdf55083254
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Vista Llamador y destinatario: datos de instrumentación de memoria de .NET
 La vista Llamador y destinatario de los datos de generación de perfiles de memoria de .NET recopilados mediante el método de instrumentación muestra la asignación y los datos de tiempo con relación a una función seleccionada y las funciones primarias y secundarias de esa función seleccionada. La vista Llamador y destinatario contiene tres cuadrículas.  
@@ -32,7 +33,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
   
 ## <a name="general"></a>General  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Nombre de la función**|Nombre de la función.|  
 |**Dirección de la función**|Dirección de la función.|  
@@ -45,12 +46,12 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 |**Nombre de proceso**|El nombre que se asigna al proceso.|  
 |**Sobrecarga de tiempo exclusiva por sondeos**|Sobrecarga de tiempo para esta función debida a la instrumentación. La sobrecarga por sondeos se ha restado de todos los tiempos exclusivos.|  
 |**Sobrecarga de tiempo inclusiva por sondeos**|Sobrecarga de tiempo para esta función y sus funciones secundarias debida a la instrumentación. La sobrecarga por sondeos se ha restado de todos los tiempos inclusivos.|  
-|**ype**|El contexto de la función:<br /><br /> **0**: la función actual<br /><br /> **1**: una función que llama a la función actual<br /><br /> **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Type**|El contexto de la función:<br /><br /> **0**: la función actual<br /><br /> **1**: una función que llama a la función actual<br /><br /> **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Nombre de la función raíz**|El nombre de la función actual. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
   
 ## <a name="net-memory-allocation-values"></a>Valores de asignación de memoria de .NET  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Asignaciones exclusivas**|-   En la función actual, el número de objetos creados cuando la función estaba ejecutando código en el cuerpo de la función (es decir, cuando la función estaba en la parte superior de la pila de llamadas). El número no incluye los objetos creados en las funciones a las que llamó esta función.<br />-   En una función de llamador, el número de asignaciones exclusivas de la función actual generadas por llamadas de esta función de llamador.<br />-   En una función de destinatario, el número de objetos creados por las instancias de esta función a las que llamó la función actual. Este número no incluye los objetos creados por funciones a las que llamó la función de destinatario.|  
 |**Porcentaje de asignaciones exclusivas**|El porcentaje de todos los objetos que se crearon durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|  
@@ -64,7 +65,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 ## <a name="elapsed-inclusive-values"></a>Valores inclusivos transcurridos  
  Los valores inclusivos transcurridos indican el tiempo que una función estuvo en la pila de llamadas. Incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo inclusivo transcurrido**|-   En la función actual, el tiempo dedicado a la función. El valor incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.<br />-   En una función de llamador, la cantidad de tiempo inclusivo transcurrido de la función actual generado por llamadas de esta función de llamador.<br />-   En una función de destinatario, el tiempo dedicado a esta función generado por llamadas de la función actual. El valor incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.|  
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo transcurrido de esta función en este contexto.|  
@@ -75,7 +76,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 ## <a name="elapsed-exclusive-values"></a>Valores exclusivos transcurridos  
  Los valores exclusivos transcurridos indican el tiempo que una función se estaba ejecutando directamente en la parte superior de la pila de llamadas. Incluye el tiempo dedicado llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero no incluye el tiempo dedicado a funciones secundarias.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo exclusivo transcurrido**|-   En la función actual, el tiempo dedicado a la ejecución del cuerpo de la función. El valor no incluye el tiempo dedicado a funciones secundarias, pero incluye llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.<br />-   En una función de llamador, la cantidad de tiempo exclusivo transcurrido de la función actual generado por llamadas de esta función de llamador.<br />-   En una función de destinatario, el tiempo dedicado a esta función generado por llamadas de la función actual. El valor no incluye el tiempo dedicado a funciones secundarias de la función de destinatario, pero incluye las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.|  
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo transcurrido total de esta función en este contexto.|  
@@ -86,7 +87,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 ## <a name="application-inclusive-values"></a>Valores inclusivos de aplicación  
  Los valores inclusivos de aplicación indican el tiempo que una función estuvo en la pila de llamadas. No incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero incluye el tiempo dedicado a funciones secundarias.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo inclusivo de aplicación**|-   En la función actual, el tiempo dedicado a la función y sus funciones secundarias. El valor no incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.<br />-   En una función de llamador, la cantidad de tiempo inclusivo de aplicación de la función actual generado por llamadas de esta función de llamador.<br />-   En una función de destinatario, el tiempo dedicado a esta función y sus funciones secundarias generado por llamadas de la función actual. El valor no incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.|  
 |**Porcentaje de tiempo inclusivo de aplicación**|El porcentaje de tiempo inclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo inclusivo de aplicación total de esta función en este contexto.|  
@@ -97,7 +98,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 ## <a name="application-exclusive-values"></a>Valores exclusivos de aplicación  
  Los valores exclusivos de aplicación indican el tiempo dedicado a la función, excluido el tiempo dedicado a funciones secundarias. El tiempo indicado también excluye el tiempo dedicado a las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo exclusivo de aplicación**|-   En la función actual, el tiempo dedicado a la ejecución del cuerpo de la función. El valor no incluye el tiempo dedicado a las funciones secundarias ni a las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.<br />-   En una función de llamador, la cantidad de tiempo exclusivo de aplicación de la función actual generado por llamadas de esta función de llamador.<br />-   En una función de destinatario, el tiempo dedicado a esta función generado por llamadas de la función actual. El valor no incluye el tiempo dedicado a las funciones secundarias de la función de destinatario ni a las llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.|  
 |**Porcentaje de tiempo exclusivo de aplicación**|El porcentaje de tiempo exclusivo transcurrido total de la ejecución de generación de perfiles que se ha empleado en el tiempo exclusivo de aplicación total de esta función en este contexto.|  
@@ -106,7 +107,7 @@ La vista Llamador y destinatario de los datos de generación de perfiles de memo
 |**Tiempo exclusivo de aplicación mínimo**|El tiempo exclusivo de aplicación mínimo de una llamada a esta función en este contexto.|  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista Informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Llamador y destinatario: datos de muestreo de memoria de .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Vista Llamador y destinatario: datos de instrumentación](../profiling/caller-callee-view-instrumentation-data.md)   
  [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)

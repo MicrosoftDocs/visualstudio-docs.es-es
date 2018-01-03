@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a239fa0f96b1552e72fe7501ae7a6fd5ef28025
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento
 

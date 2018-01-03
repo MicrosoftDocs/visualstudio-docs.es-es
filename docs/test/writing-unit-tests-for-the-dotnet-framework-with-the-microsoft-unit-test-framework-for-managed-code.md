@@ -11,11 +11,12 @@ ms.assetid: fbeba971-c468-4429-8017-0f12ab55638c
 caps.latest.revision: "5"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3242c3361638651cf4760eb7971630205e5bb893
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: a41cbda0b929d1c1692b13c3a848a0d70317e9b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft código administrado
 ## <a name="in-this-section"></a>En esta sección  

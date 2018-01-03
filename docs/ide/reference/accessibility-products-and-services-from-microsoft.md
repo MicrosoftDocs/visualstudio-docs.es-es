@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ca0ae746d116ae3613b51009c3b91e6f4aa0fa4f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6d59464050c3233e09e9d0d0844916ae3517408
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Servicios y productos de Microsoft para mejorar la accesibilidad
 > [!TIP]

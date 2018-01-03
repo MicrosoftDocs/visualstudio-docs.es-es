@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 968d46c4fe771229647282c719815982d81bf416
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c0223950fb5082c84de8026cb07778d1f7381a33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---net-memory-data"></a>Vista Resumen: datos de memoria de .NET
 La vista Resumen muestra información sobre las funciones de .NET y los tipos que asignaron la mayor cantidad de memoria, y los tipos que se crearon la mayoría de las veces en un proceso de generación de perfiles. Para obtener más información, incluyendo una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).  
@@ -28,25 +29,25 @@ La vista Resumen muestra información sobre las funciones de .NET y los tipos qu
 ## <a name="functions-allocating-most-memory"></a>Funciones que asignan la mayoría de la memoria  
  Enumera las funciones que asignaron el mayor número de bytes de memoria en la generación de perfiles.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre de la función.|  
+|**Name**|Nombre de la función.|  
 |**Porcentaje de bytes**|El porcentaje de todos los bytes asignados en la generación de perfiles que fueron asignados por esta función o una función secundaria a la que llamó esta función.|  
   
 ## <a name="types-with-most-memory-allocated"></a>Tipos con más memoria asignada  
  Enumera los tipos para los que se asignó el mayor número de bytes de memoria en la generación de perfiles.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre del tipo.|  
+|**Name**|Nombre del tipo.|  
 |**Porcentaje de bytes**|El porcentaje de todos los bytes asignados en la generación de perfiles que se asignaron para este tipo.|  
   
 ## <a name="types-with-most-instances"></a>Tipos con más instancias  
  Enumera los tipos que se crearon más veces durante la generación de perfiles. tenía  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre del tipo.|  
+|**Name**|Nombre del tipo.|  
 |**Porcentaje de instancias**|Porcentaje del número total de objetos .NET creados en la ejecución de generación de perfiles que eran instancias de este tipo.|  
   
 ## <a name="see-also"></a>Vea también  

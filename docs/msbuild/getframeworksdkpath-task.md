@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5e17a9753f0855befd3c791cf191b191b1c4662d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8a24d7e459e0320cd33ad5fe1b3c2fe60f6e0d91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (Tarea)
 Recupera la ruta de acceso a [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
@@ -33,7 +34,7 @@ Recupera la ruta de acceso a [!INCLUDE[winsdklong](../deployment/includes/winsdk
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkSdkPath`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`FrameworkSdkVersion20Path`|Parámetro de salida de solo lectura `String` opcional.<br /><br /> Devuelve la ruta de acceso al SDK de .NET versión 2.0, si está presente. De lo contrario, devuelve `String.Empty`.|  
 |`FrameworkSdkVersion35Path`|Parámetro de salida de solo lectura `String` opcional.<br /><br /> Devuelve la ruta de acceso al SDK de .NET versión 3.5, si está presente. De lo contrario, devuelve `String.Empty`.|  

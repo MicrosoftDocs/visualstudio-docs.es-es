@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a3b335990bc620a2eb798c3b774f34bc3262b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2038f69117c94752d14c9e8ce6f22aea98a67353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 Una **Sesión de rendimiento** le permite configurar opciones que determinan cómo se perfila la aplicación. También almacena informes que se generan para la sesión de generación de perfiles.  
@@ -112,6 +113,6 @@ Una **Sesión de rendimiento** le permite configurar opciones que determinan có
  [Cómo: Especificar opciones de instrumentación adicional](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Información general](../profiling/overviews-performance-tools.md)   
+ [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)

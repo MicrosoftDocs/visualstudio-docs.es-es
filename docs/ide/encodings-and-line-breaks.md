@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6afbc9ca8f93dcb0313c70a9d1e41579a6bf31f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 8a472a09a4d4d67f59d7879d03b466932d1445e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encodings-and-line-breaks"></a>Codificaciones y saltos de línea
 Los siguientes caracteres se interpretan como saltos de línea en Visual Studio:  

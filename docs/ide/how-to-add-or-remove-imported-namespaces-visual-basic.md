@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43947a2e239833459923f6991d4ee54d12876fe3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 015f2efa352b5ff2d8b87e356972270c175d0168
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Cómo: Agregar o quitar espacios de nombres importados (Visual Basic)
 Importar un espacio de nombres le permite usar elementos de ese espacio de nombres en su código sin calificar completamente el elemento. Por ejemplo, si quiere tener acceso al método `Create` en la clase `System.Messaging.MessageQueue`, puede importar el espacio de nombres `System.Messaging` y simplemente hacer referencia al elemento que necesita en el código como `MessageQueue.Create`.  

@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 199c33ce94aa1fcb5cffc45570a4425df3dbd720
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 748b547cda2a3c07ed84337d37f2a7e096ee112d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="blocking-time-profile-report"></a>Informe de perfil de bloqueo de tiempo
 Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para las pilas de llamadas que son específicas de cada categoría de bloqueo (por ejemplo, "E/S" o "Sincronización"). El informe de adelantamiento enumera los procesos que adelantaron el proceso actual junto con el número de instancias de adelantamiento. Para compilar el informe de perfil de bloqueo, la herramienta recopila las llamadas API de bloqueo y las acumula en un árbol de pilas de llamadas. Los datos que se muestran en estos informes varían según el intervalo de tiempo actual, los subprocesos ocultos y los dos filtros siguientes que se pueden aplicar:  
@@ -32,9 +33,9 @@ Los informes de perfil proporcionan datos agregados de tiempo de bloqueo para la
 ## <a name="blocking-time-report-columns"></a>Columnas del informe de tiempo de bloqueo  
  En la siguiente tabla se muestran las columnas de cada informe de tiempo de bloqueo.  
   
-|Nombre de columna|Descripción|  
+|Nombre de columna|Description|  
 |-----------------|-----------------|  
-|Nombre|El nombre de la función para cada nivel de la pila de llamadas.|  
+|nombre|El nombre de la función para cada nivel de la pila de llamadas.|  
 |Instancias|El número de instancias de la llamada de bloqueo para el período de tiempo visible.|  
 |Tiempo de bloqueo inclusivo|El tiempo de bloqueo total que se emplea para todas las pilas comprendidas en este nivel del árbol de pila de llamadas. El número inclusivo es la suma del tiempo de bloqueo exclusivo de esta función y el tiempo de bloqueo exclusivo de todos sus nodos secundarios.|  
 |Tiempo de bloqueo exclusivo|El tiempo de bloqueo total que se emplea durante el cual esta función es el nivel más bajo de la pila de llamadas. Una entrada de la pila de llamadas única que tenga un tiempo de bloqueo exclusivo elevado puede ser una función de interés.|  

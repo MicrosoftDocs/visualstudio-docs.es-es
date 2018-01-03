@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5be97e75ac7dc29a6dd0244293259bcd17591233
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97e4339546eda741ba961b0015f9f62edf231d24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 Compila y ejecuta el proyecto o la solución especificados.  

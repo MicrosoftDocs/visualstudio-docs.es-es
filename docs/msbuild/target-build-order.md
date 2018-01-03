@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7fbe62b55fde85127756b9d73be333068bb9aad3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7768d6ba35c2116c658dcd1b7968080932b99543
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-build-order"></a>Orden de compilación de destinos
 Los destinos se deben ordenar si la entrada a un destino depende de la salida de otro destino. Puede usar estos atributos para especificar el orden en el que se ejecutan los destinos:  

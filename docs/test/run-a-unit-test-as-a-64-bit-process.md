@@ -14,11 +14,12 @@ ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: "25"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: bb22521dc0c4f4a1a824c3554ce37297a61108c5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 39addca0d673ae5a9423d4195ffc2bfe3358de4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Ejecutar una prueba unitaria como un proceso de 64 bits
 Si tiene un equipo de 64 bits, puede ejecutar pruebas unitarias y capturar información de cobertura de código como un proceso de 64 bits.  

@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e199dbfc171688cd0970cf340aef0dfd3584155a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38ddfed161e04948eb3725192c95025dec5c473b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 Evalúa los elementos secundarios para seleccionar un conjunto de elementos `ItemGroup` o `PropertyGroup` para evaluar.  
@@ -57,17 +58,17 @@ Evalúa los elementos secundarios para seleccionar un conjunto de elementos `Ite
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Elemento opcional.<br /><br /> Especifica el bloque de código `PropertyGroup` y los elementos `ItemGroup` que se evaluarán si las condiciones de todos los elementos `When` se evalúan como `false`. Puede haber un elemento `Otherwise` o ninguno en un elemento `Choose` y debe ser el último elemento.|  
 |[When](../msbuild/when-element-msbuild.md)|Elemento necesario.<br /><br /> Especifica un posible bloque de código que el elemento `Choose` puede seleccionar. Puede haber uno o más elementos `When` en un elemento `Choose`.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Especifica el bloque de código que se ejecutará si las condiciones de todos los elementos `When` se evalúan como `false`.|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 |[When](../msbuild/when-element-msbuild.md)|Especifica un posible bloque de código que el elemento `Choose` puede seleccionar.|  
 
 ## <a name="remarks"></a>Comentarios  

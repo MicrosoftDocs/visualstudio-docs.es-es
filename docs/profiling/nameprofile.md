@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474ba0510194590a199c9a418eef2a46888342f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be7e6b2e29ed74fe57016bb286b54742b0add632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nameprofile"></a>NameProfile
 La función `NameProfile` asigna una cadena al subproceso o el proceso especificado.  
@@ -52,7 +53,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Indica el nivel de perfil al que se puede aplicar la recopilación de datos de rendimiento. Los valores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
-|Enumerador|Descripción|  
+|Enumerador|Description|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|  
 |PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
@@ -65,7 +66,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Descripción|  
+|Enumerador|Description|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|El elemento de generación de perfiles especificado no existe.|  
 |NAME_ERROR_INVALID_NAME|El nombre no es válido.|  

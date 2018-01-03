@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ce45373667f1731753793306aa69556c46cceb86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f67014faf67d0855ba7e800ad66e014eb665efc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combinepath-task"></a>CombinePath (Tarea)
 Combina las rutas de acceso especificadas en una única ruta de acceso.  
@@ -32,7 +33,7 @@ Combina las rutas de acceso especificadas en una única ruta de acceso.
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la [tarea CombinePath](../msbuild/combinepath-task.md).  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`BasePath`|Parámetro `String` requerido.<br /><br /> Ruta de acceso base que se combinará con las demás rutas de acceso. Puede ser una ruta de acceso relativa, una ruta de acceso absoluta o estar en blanco.|  
 |`Paths`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Una lista de rutas de acceso individuales que se combinarán con el elemento BasePath para formar la ruta de acceso combinada. Las rutas acceso pueden ser relativas o absolutas.|  

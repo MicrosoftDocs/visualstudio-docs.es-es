@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b196adf16359c640ba08495b36f4ba428cf8ba48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc5a5013b402d01db8aa84134c9a2740d0ff6304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opciones (Cuadro de diálogo) (Visual Studio)
 El cuadro de diálogo **Opciones** le permite configurar el entorno de desarrollo integrado (IDE) según sus necesidades. Por ejemplo, puede establecer una ubicación de almacenamiento predeterminada para sus proyectos, cambiar la apariencia predeterminada y el comportamiento de las ventanas y crear accesos directos para los comandos más usados. Existen también opciones específicas a su lenguaje de desarrollo y plataforma. Puede tener acceso a **Opciones** en el menú **Herramientas**.  

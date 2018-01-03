@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68c2565540d8b22d659b40d5cab4a443cac6439f
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1f3f21c13c30abafdb59e5e997210cd0d7b4fcfb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-file-extension"></a>Opciones, editor de texto, extensión de archivo
 Este cuadro de diálogo Opciones le permite especificar cómo se controlarán todos los archivos con determinadas extensiones de archivo mediante el Entorno de desarrollo integrado (IDE) de Visual Studio. Para cada **extensión** que especifique, puede seleccionar un editor asociado. Esto le permite elegir el diseñador o el editor del IDE en el que se abrirán los documentos de un tipo determinado. Para mostrar estas opciones, pulse **Opciones** del menú **Herramientas**, expanda el nodo **Editor de texto** y seleccione **Extensión de archivo**.  

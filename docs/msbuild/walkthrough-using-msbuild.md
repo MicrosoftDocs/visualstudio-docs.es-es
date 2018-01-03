@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9500cdb26b51d3a91b9565c7ef0353907e9afe7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-msbuild"></a>Tutorial: Usar MSBuild
 MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tutorial presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar los proyectos de MSBuild. Aprenderá a:  

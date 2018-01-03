@@ -12,11 +12,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7f31880813d5c1c7807ebd908ca83fa10c4b209
-ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
+ms.workload: multiple
+ms.openlocfilehash: 7e2fbc1c603886eecfa929406dfd91a1ed4e400b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -67,4 +68,4 @@ Si encuentra algún problema al iniciar sesión, consulte la página de [soporte
 ## <a name="see-also"></a>Vea también
 
 [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Recursos de Internet usados por Visual Studio](../ide/connected-environment.md)
+[Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)

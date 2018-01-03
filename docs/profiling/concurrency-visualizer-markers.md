@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff86fd14857206361a4bd9c15088cb3547200b28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7baa202558b6bb7bc60a0bb27d42ae004933ddea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores del Visualizador de simultaneidad
 En el visualizador de simultaneidad, los marcadores son iconos que representan los eventos que se producen en una aplicación.  Normalmente, la aplicación genera estos eventos para designar las fases o las instancias de una aplicación.  Los eventos se pueden generar mediante la aplicación o las bibliotecas y los runtimes que utiliza la aplicación.  

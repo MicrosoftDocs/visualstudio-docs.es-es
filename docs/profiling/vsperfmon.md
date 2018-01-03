@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fe5e6b129fd8c5f1e8ce20bb902b977a66f1035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8700cf317e60f8f842186e04cc36f4037172aa2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 La herramienta VSPerfMon, que normalmente suele iniciar VSPerfCmd.exe, puede utilizarse para recopilar datos de rendimiento de una aplicación. VSPerfMon muestra información adicional sobre el proceso de adjuntar o separar que no está disponible mediante la herramienta VSPerfCmd. Para ver esta información, inicie VSPerfMon en una ventana independiente. Para invocar VSPerfMon, utilice la siguiente sintaxis:  
@@ -35,7 +36,7 @@ VSPerfMon [/U] </TRACE [/COUNTER:cfg] | /SAMPLE | /COVERAGE> /CROSSSESSION /OUTP
   
  En la siguiente tabla se describen las opciones de la herramienta VSPerfMon:  
   
-|Opciones|Descripción|  
+|Opciones|Description|  
 |-------------|-----------------|  
 |**U**|Se escribe la salida de la consola redirigida como Unicode.  Esta debe ser la primera opción especificada.|  
 |**OUTPUT:** `<` *file name* `>`|Redirige la salida al nombre de archivo especificado.|  

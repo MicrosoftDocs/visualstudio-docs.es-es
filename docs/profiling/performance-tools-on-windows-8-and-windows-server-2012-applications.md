@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: b82860f4bdbf206441591703137f15decb294269
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 Las características de seguridad mejoradas a partir de Windows 8 y Windows Server 2012 han requerido cambios significativos en la forma en que las herramientas de rendimiento de Visual Studio recopilan datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. En este tema se describen los cambios para las herramientas de rendimiento a partir de las plataformas Windows 8 y Windows Server 2012.
@@ -87,7 +88,7 @@ Las características de seguridad mejoradas a partir de Windows 8 y Windows Serv
 ##  <a name="BKMK_Profiling_from_the_command_line"></a> Generación de perfiles desde la línea de comandos  
  Para recopilar datos de generación de perfiles en dispositivos con Windows 8 y Windows Server 2012, incluidos los dispositivos que no tienen una instalación de Visual Studio, se usan dos herramientas de línea de comandos:  
   
-|Nombre de herramienta.|Descripción|  
+|Nombre de herramienta.|Description|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|Recopila datos de generación de perfiles de aplicaciones para UWP y datos de generación de perfiles de ejemplo de aplicaciones de escritorio de Windows 8 y de Windows Server 2012.|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|Recopila datos de generación de perfiles de instrumentación, simultaneidad e interacción de capas de las aplicaciones que se ejecutan en el escritorio de Windows 8 o en Windows Server 2012. Recopila todos los tipos de datos de generación de perfiles de las versiones anteriores de Windows.|  

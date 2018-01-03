@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: efa83606dd7ef00cb82ea0d139a7238f0425664c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 49ef6cd4456f920fed0eb612da0e0a81368f6be5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Paso 4: Agregar el método CheckTheAnswer()
 En la cuarta parte de este tutorial, escribirá un método, `CheckTheAnswer()`, que determina si las respuestas a los problemas de matemáticas son correctas. Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  

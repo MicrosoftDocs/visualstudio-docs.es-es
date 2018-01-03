@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 467d119e67db254b6e15630c08c411bb15283351
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db67f01ff2a58ee856e4588df8770fc4edef8ca2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-definition-and-peek-definition"></a>Ir a definición y Ver la definición  
 Las características Ir a definición y Ver la definición le permiten ver fácilmente la definición de un tipo o miembro.
@@ -36,7 +37,7 @@ Puede cambiar la tecla modificadora del clic del mouse de **Ir a definición** s
 
 ![Habilitación del clic del mouse para Ir a definición](../ide/media/editor_options_mouse_click_gotodef.png)  
 
-## <a name="peek-definition"></a>Ver la definición
+## <a name="peek-definition"></a>Definición de Peek
 La característica Ver la definición le permite obtener una vista previa de la definición de un tipo sin abandonar su ubicación actual en el editor. Si trabaja con el teclado, coloque el cursor de texto en algún lugar del nombre de tipo o miembro y presione **Alt + F12**. Si trabaja con el mouse, puede seleccionar **Ver la definición** en el menú contextual. En Visual Studio 2017 versión 15.4 y posteriores, hay una nueva forma de ver una definición en vista de inspección mediante el mouse. En primer lugar, vaya a **Herramientas**, **Opciones**, **Editor de texto**, **General**. Seleccione la opción **Abrir definición en vista de inspección** y haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.  
 
 ![Establecer la opción Ver la definición del clic del mouse](../ide/media/editor_options_peek_view.png)  
@@ -50,5 +51,5 @@ Si ve otra definición de la ventana emergente, iniciará una ruta de navegació
 Para obtener más información, vea [Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).  
 
 ## <a name="see-also"></a>Vea también  
-[Navigating Code](../ide/navigating-code.md) (Navegar por el código)  
+[Navegar por el código](../ide/navigating-code.md)  
 [Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  

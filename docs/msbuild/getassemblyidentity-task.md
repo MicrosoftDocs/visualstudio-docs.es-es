@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2a3d23ccfac56472fbec3f144f9d7809b1bacbf9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 962217f4093b871a4256b1e7dff8853615a1527d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (Tarea)
 Recupera las identidades de ensamblado de los archivos especificados y genera la información de identidad.  
@@ -33,7 +34,7 @@ Recupera las identidades de ensamblado de los archivos especificados y genera la
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `GetAssemblyIdentity`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Assemblies`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las identidades de ensamblado recuperadas.|  
 |`AssemblyFiles`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos de los que se recuperarán las identidades.|  

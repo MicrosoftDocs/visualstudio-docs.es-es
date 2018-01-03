@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fe42e4d2a61b4166d8a69b7c90cf212c36610bd2
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 5e257d8d90d21c4298b92f7bc4b923ed5a720c85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 

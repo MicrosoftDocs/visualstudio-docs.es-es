@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf0605f635fd1cc07e04bcb848bc83f92d2d8c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 263ff80703a680ab799e373fad62c05ced62028f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="execution-profile-report"></a>Informe del perfil de ejecución
 El informe del perfil de ejecución es un perfil de muestreo tradicional. Se toman muestras aproximadamente cada milisegundo durante los períodos cuando un subproceso se está ejecutando en un núcleo lógico, y el visualizador de simultaneidad intercala el conjunto acumulado de pilas de muestras para generar un árbol de llamadas típico. Los datos de esta tabla pueden verse afectados por el intervalo de tiempo actual y los subprocesos ocultos, así como por estos filtros que se pueden aplicar:  
@@ -29,9 +30,9 @@ El informe del perfil de ejecución es un perfil de muestreo tradicional. Se tom
   
  En la tabla siguiente se muestran las columnas del informe.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|Nombre|El nombre de la función para cada nivel de la pila de llamadas.|  
+|nombre|El nombre de la función para cada nivel de la pila de llamadas.|  
 |Muestras inclusivas|Número total de muestras recopiladas para todas las pilas que se acumulan en este nivel del árbol de pila de llamadas. El número inclusivo es la suma de muestras exclusivas de esta función y de contadores inclusivos para todos sus nodos secundarios.|  
 |Muestras exclusivas|Número total de muestras recopiladas para las que esta función es el nivel más bajo de la pila de llamadas.|  
 |% de inclusivas|El porcentaje de muestras totales que se muestra en la columna de muestras inclusivas. Los porcentajes se redondean a dos posiciones decimales.|  

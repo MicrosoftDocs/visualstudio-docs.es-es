@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: b93ea35fd58d5ee678176e3da98e33b65f82740a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: b4656e98095b9ab7ff5dd5e95dd729c972190720
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configuración, instalación y comprobaciones para usuarios de Mac
 Este tema está destinado a los desarrolladores que trabajan principalmente con Mac y que, opcionalmente, usan Visual Studio en una máquina virtual de Windows en el Mac. Si es un desarrollador que trabaja principalmente en un equipo Windows y necesita configurar un Mac secundario para iOS, vea el tema [Configuración e instalación](../cross-platform/setup-and-install.md) principal.

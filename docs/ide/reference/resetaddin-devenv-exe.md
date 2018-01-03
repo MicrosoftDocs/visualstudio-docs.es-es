@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f54e50e62b7f7f8f6dd1610904b66c82da02380
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b003f4890b16a7b69f7f66f8b0ef83a0ade7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 Quita comandos y la interfaz de usuario de comandos asociados al complemento especificado.  

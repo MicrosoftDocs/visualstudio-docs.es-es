@@ -29,11 +29,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 6bdca24340f301fc19f3bc8d1e86c97c3b98c5c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20548574a15c1ac7867ff7142033e94328a40ddf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lib-task"></a>LIB (tarea)
 Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, lib.exe. El Administrador de bibliotecas crea y administra una biblioteca de archivos objeto con formato de archivo de objeto común (COFF). El Administrador de bibliotecas también puede crear archivos de exportación y bibliotecas de importación para hacer referencia a las definiciones que se exportan. Para más información, vea [Referencia de LIB](/cpp/build/reference/lib-reference) y [Ejecutar LIB](/cpp/build/reference/running-lib).  
@@ -41,7 +42,7 @@ Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, lib
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea **LIB**. La mayoría de los parámetros de tarea corresponden a una opción de línea de comandos.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |**AdditionalDependencies**|Parámetro **String[]** opcional.<br /><br /> Especifica elementos adicionales que se agregarán a la línea de comandos del vínculo.|  
 |**AdditionalLibraryDirectories**|Parámetro **String[]** opcional.<br /><br /> Reemplaza la ruta de acceso a la biblioteca de entorno. Especifique un nombre de directorio.<br /><br /> Para obtener más información, consulte [/LIBPATH (Directorios de bibliotecas adicionales)](/cpp/build/reference/libpath-additional-libpath).|  
@@ -56,7 +57,7 @@ Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, lib
 |**LinkTimeCodeGeneration**|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, especifica la generación de código en tiempo de vínculo.<br /><br /> Este parámetro corresponde a la opción **/LCTG** de lib.exe.|  
 |**MinimumRequiredVersion**|Parámetro **String** opcional.<br /><br /> Especifica la versión mínima requerida del subsistema. Especifique una lista delimitada por comas de números decimales comprendidos entre 0 y 65535.|  
 |**ModuleDefinitionFile**|Parámetro **String** opcional.<br /><br /> Especifica el nombre del archivo de definición de módulo (.def).<br /><br /> Este parámetro corresponde a la opción **/DEF** de lib.exe que toma un argumento `filename`.|  
-|**Nombre**|Parámetro **String** opcional.<br /><br /> Cuando se compila una biblioteca de importación, especifica el nombre del archivo DLL para el que se va a compilar dicha biblioteca.<br /><br /> Este parámetro corresponde a la opción **/NAME** de lib.exe que toma un argumento `filename`.|  
+|**Name**|Parámetro **String** opcional.<br /><br /> Cuando se compila una biblioteca de importación, especifica el nombre del archivo DLL para el que se va a compilar dicha biblioteca.<br /><br /> Este parámetro corresponde a la opción **/NAME** de lib.exe que toma un argumento `filename`.|  
 |**OutputFile**|Parámetro **String** opcional.<br /><br /> Invalida el nombre y la ubicación predeterminados del programa que crea lib.exe.<br /><br /> Este parámetro corresponde a la opción **/OUT** de lib.exe que toma un argumento `filename`.|  
 |**RemoveObjects**|Parámetro **String[]** opcional.<br /><br /> Omite el objeto especificado de la biblioteca de salida. Lib.exe crea una biblioteca de salida; para ello, combina todos los objetos (independientemente de que estén en archivos objeto o bibliotecas) y, a continuación, elimina los objetos que se especifican en esta opción.<br /><br /> Este parámetro corresponde a la opción **/REMOVE** de lib.exe que toma un argumento `membername`.|  
 |**Sources**|Parámetro `ITaskItem[]` requerido.<br /><br /> Especifica una lista de archivos de código fuente, separados por espacios.|  

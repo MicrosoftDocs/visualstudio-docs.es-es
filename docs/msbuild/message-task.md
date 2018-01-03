@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b2b66091c84606739b96f3aeca0b99fbaa2e950
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80464b6f2dc0f61061dbb3fdceb8bae8ec4449c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="message-task"></a>Message (Tarea)
 Registra un mensaje durante una compilación.  
@@ -33,7 +34,7 @@ Registra un mensaje durante una compilación.
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Message`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Importance`|Parámetro `String` opcional.<br /><br /> Especifica la importancia del mensaje. Este parámetro puede tener un valor de `high`, `normal` o `low`. El valor predeterminado es `normal`.|  
 |`Text`|Parámetro `String` opcional.<br /><br /> El texto del error que se va a registrar.|  

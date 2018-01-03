@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61128255cfc7eb8cf3e9da50e31a10378f321b87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7acfa376ea805553b931925a2fac0a33b44bb83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usar métodos de generación de perfiles para recopilar datos de rendimiento desde la línea de comandos
 La elección de herramientas de línea de comandos y opciones de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depende de factores como el tipo de aplicación de la que está generando perfiles, el método de generación de perfiles que desea utilizar y si se escribe la aplicación de destino en código nativo o de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  

@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9309a143760aab5b59355b4cea6cd214aaa49812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a  
 Los comandos **Ir a** de Visual Studio realizan una búsqueda centrada en su código para ayudarle a encontrar rápidamente elementos específicos. Puede ir a una línea, tipo, símbolo, archivo o miembro específicos desde una interfaz sencilla y unificada. Esta característica existe en Visual Studio 2017 y versiones posteriores.  
@@ -52,7 +53,7 @@ De forma predeterminada, el elemento especificado se busca en todos los elemento
 #### <a name="filter-to-a-specific-type-of-code-element"></a>Filtrar por un tipo específico de elemento de código  
 Para limitar la búsqueda a un tipo específico de elemento de código, puede especificar un prefijo en el cuadro de búsqueda o seleccionar uno de los cinco iconos de filtro:  
 
-Prefijo | Iconos | Acceso directo | Descripción
+Prefijo | Iconos | Acceso directo | Description
 :----: | ---- | -------- | ---
 \#      | ![Icono de símbolo](media/gotoall_symbolicon.png) | Ctrl+1, Ctrl+S | Ir al símbolo especificado
 f      | ![Icono de archivo](media/gotoall_fileicon.png)     | Ctrl+1, Ctrl+F | Ir al archivo especificado
@@ -63,7 +64,7 @@ m      | ![Icono de tipo](media/gotoall_typeicon.png)     | Ctrl+1, Ctrl+T | Ir 
 #### <a name="filter-to-a-specific-location"></a>Filtrar en una ubicación específica    
 Para restringir la búsqueda a una ubicación específica, use uno de los dos iconos de documento:  
 
-Iconos | Descripción
+Iconos | Description
 ---- | ---
 ![Documento actual](media/gotoall_currentdocument.png) | Buscar solo en el documento actual
 ![Documentos externos](media/gotoall_external.png) | Buscar en documentos externos y en los que se encuentran en el proyecto o solución  
@@ -76,7 +77,7 @@ Si usa la [grafía Camel](https://en.wikipedia.org/wiki/Camel_case) en el códig
 ### <a name="settings"></a>Configuración  
 Si selecciona el icono de engranaje ![Icono de engranaje](media/gotoall_gear.png) puede cambiar el funcionamiento de esta característica:  
 
-Parámetro | Descripción
+Parámetro | Description
 ------- | ---
 Usar pestaña de vista previa | Mostrar el elemento seleccionado inmediatamente en la pestaña de vista previa del IDE
 Mostrar detalles    | Mostrar la información de proyecto, archivo, línea y resumen de los comentarios de documentación en la ventana

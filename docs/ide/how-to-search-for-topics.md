@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec4ec1c06d6c64a344e9e39d01c850b901534af8
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-topics"></a>Cómo: Buscar temas
 Puede usar la característica de búsqueda de texto completo para buscar todos los temas que contienen una palabra determinada. También puede refinar y personalizar la búsqueda mediante el uso de expresiones comodín, operadores lógicos y operadores de búsqueda avanzada.  
@@ -43,7 +44,7 @@ Puede crear búsquedas más selectivas que devuelvan solo los temas que le inter
 ### <a name="general-guidelines"></a>Instrucciones generales  
 En la tabla siguiente se incluyen algunas reglas y directrices básicas para realizar consultas de búsqueda en la Ayuda.  
   
-|Sintaxis|Descripción|  
+|Sintaxis|Description|  
 |------------|-----------------|  
 |Distinción de mayúsculas y minúsculas|Las búsquedas no distinguen entre mayúsculas y minúsculas. Desarrolle los criterios de búsqueda usando caracteres en mayúsculas o en minúsculas. Por ejemplo, "OLE" y "ole" devuelven los mismos resultados.|  
 |Combinaciones de caracteres|No es posible buscar una sola letra (a-z) o un solo número (0-9). Si intenta buscar ciertas palabras reservadas, por ejemplo "y", "de" y "con", estas se omitirán. Para obtener más información, vea [Palabras omitidas en las búsquedas](#stopwords) más adelante en este tema.|  

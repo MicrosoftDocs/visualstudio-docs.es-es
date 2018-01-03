@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95bec41931dbde49b3de4c6ff5250df494646392
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3b8a584e8e024416ec9c3feca63297eed4497624
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launch"></a>Launch
 La opción **Launch** inicia el generador de perfiles mediante el método de muestreo y también inicia la aplicación especificada.  
@@ -43,7 +44,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  Reanuda (**GlobalOn**) o detiene (**GlobalOff**) la generación de perfiles, pero no finaliza la sesión de generación de perfiles.  
   
  **ProcessOn:** `PID` y **ProcessOff**:`PID`  
- Reanuda (**ProcessOn**) o detiene (**ProcessOff**) la generación de perfiles para el proceso especificado.  
+ Reanuda la generación de perfiles de (**ProcessOn**) o detiene la de (**ProcessOff**) para el proceso especificado.  
   
  **TargetCLR**  
  Especifica la versión de Common Language Runtime (CLR) de .NET Framework para generar perfiles cuando se carga más de una versión en una sesión de generación de perfiles. De forma predeterminada, se genera el perfil de la primera versión cargada.  
@@ -72,7 +73,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
   
 -   **Sys**: muestrea cada `Events` llamadas al sistema operativo. Si no se especifica `Events`, se usan 10 llamadas del sistema.  
   
--   **Counter**: muestrea cada número `Reload` del contador de rendimiento de la CPU especificado por `Name`. Opcionalmente, `FriendlyName` puede especificar una cadena que se usará como el encabezado de columna en los informes del generador de perfiles.  
+-   **Counter**: muestrea cada número `Reload` del contador de rendimiento de la CPU que especifica `Name`. Opcionalmente, `FriendlyName` puede especificar una cadena que se usará como el encabezado de columna en los informes del generador de perfiles.  
   
 -   **GC**: recopila datos de memoria de .NET. Mediante la opción (**allocation**), predeterminada, se recopilan datos en cada evento de asignación de memoria. Cuando se especifica el parámetro **lifetime**, también se recopilan datos en cada evento de recolección de elementos no utilizados.  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 424bc775e335c093dfbd89dfd0488a545bed7563
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2799424c82f469cbee7fcf7dea948508da47fa1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 La herramienta de línea de comandos **VSPerfASPNetCmd.exe** le permite generar perfiles de sitios web de ASP.NET sin necesidad de establecer variables de entorno ni reiniciar el equipo. Use **VSPerfASPNetCmd.exe** en lugar de [VSPerfCmd](../profiling/vsperfcmd.md) cuando genere perfiles de sitios web de ASP.NET y no necesite la funcionalidad adicional proporcionada por **VSPerCmd**. Para obtener más información sobre [VSPerfASPNetCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md), consulte **Generación rápida de perfiles de sitio web con VSPerfASPNETCmd**. **VSPerfASPNetCmd** es la herramienta de línea de comandos preferida cuando se utiliza el generador de perfiles independiente para generar perfiles de un sitio web de ASP.NET.  
@@ -29,7 +30,7 @@ La herramienta de línea de comandos **VSPerfASPNetCmd.exe** le permite generar 
   
 ## <a name="options"></a>Opciones  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**/Sample** o **/s**|Genera perfiles de sitios web utilizando el método de muestreo. **/Sample** es el método predeterminado. /Sample no se puede utilizar con **/Trace**.|  
 |**/Trace** o **/t**|Genera perfiles de sitios web utilizando el método de instrumentación. /Trace no se puede utilizar con **/Sample**.|  

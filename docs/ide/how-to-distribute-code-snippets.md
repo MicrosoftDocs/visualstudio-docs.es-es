@@ -14,11 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: e4c103aec04a9012b82c5fe979f8d5d23cfa1680
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 39f6006ec6dfe754efc58f2ccdc7b09d803de6b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-distribute-code-snippets"></a>Cómo: Distribuir fragmentos de código
 Los fragmentos de código se pueden entregar directamente a los compañeros para que los instalen en sus equipos mediante el Administrador de fragmentos de código. No obstante, si tiene que distribuir varios fragmentos de código o le gustaría distribuirlos más ampliamente, incluya el archivo de fragmento de código en una extensión de Visual Studio que puedan instalar los usuarios de esta solución.  

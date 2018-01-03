@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 74501b4d4de5d5938c54ebd7cbbaf33a24818669
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d2b7cffec4dc9e321ab9468ce57232e82087eab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference (Tarea)
 Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Esta clase es compatible con la infraestructura de .NET Framework que no está diseñada para utilizarse directamente desde el código.  
@@ -33,7 +34,7 @@ Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Task
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `ResolveNativeReference`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AdditionalSearchPaths`|Parámetro <xref:System.String?displayProperty=fullName>`[]` requerido.<br /><br /> Obtiene o establece las rutas de acceso de búsqueda para resolver identidades de ensamblado de las referencias nativas.|  
 |`ContainedComComponents`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtiene o establece los componentes COM del ensamblado nativo.|  

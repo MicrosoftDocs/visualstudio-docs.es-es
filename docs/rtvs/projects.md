@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c01007e3a1fd71af8c5204130a90b448f28c93f1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Crear proyectos de R en Visual Studio
 
@@ -40,7 +41,7 @@ Este comando crea un proyecto con un archivo `script.R` vacío abierto en el edi
 
 El archivo `rproject.rproj` mantiene determinadas opciones del proyecto específicas de R que, de lo contrario, no se administran en Visual Studio:
 
-| Propiedad | Predeterminado | Descripción |
+| Property | Default | Description |
 | --- | --- | --- |
 | Versión | 1.0 | La versión de Herramientas de R para Visual Studio usada para crear el proyecto. |
 | RestoreWorkspace | Default | Se cargan de forma automática las variables anteriores del área de trabajo desde el archivo `.RData` en el directorio del proyecto. |
@@ -66,7 +67,7 @@ Si dispone de una carpeta existente de archivos `.R` que quiera administrar en u
 
 Para abrir las páginas de propiedades del proyecto, haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, o seleccione el elemento de menú **Proyecto > Propiedades de (nombre del proyecto)...* La ventana que se abre muestra propiedades del proyecto:
 
-| Tab | Propiedad | Descripción |
+| Tab | Property | Description |
 | --- | --- | --- |
 | Run | Archivo de inicio | El nombre del archivo que se ejecuta con el comando **Archivo de inicio de origen**, F5, **Depurar > Iniciar depuración**, o **Depurar > Iniciar sin depurar**. También puede establecerlo como el archivo de inicio si hace clic con el botón derecho en el archivo del proyecto y selecciona **Establecer como script R de inicio**. |
 | | Reset R Interactive on Run (Restablecer R interactivo en ejecución) | Borra todas las variables del área de trabajo de la ventana interactiva al ejecutar el proyecto. Esto garantiza que no haya ningún contenido residual del área de trabajo de ejecuciones anteriores. |
@@ -81,7 +82,7 @@ Los proyectos de Visual Studio admiten un número de comandos generales mediante
 
 Herramientas de R para Visual Studio (RTVS) agrega un número de comandos propios al menú contextual de un proyecto de R y también archivos y carpetas en el proyecto.
 
-| Comando | Descripción |
+| Comando | Description |
 | --- | --- |
 | Establecer el directorio de trabajo aquí | Establece el directorio de trabajo de la ventana de R interactivo en la carpeta del proyecto, que también se puede usar en cualquier subcarpeta dentro de un proyecto. |
 | Abrir carpeta Contenido | Abre el Explorador de Windows en la ubicación del archivo seleccionado. | 
@@ -96,7 +97,7 @@ RTVS incluye una serie de plantillas para tipos de archivo específicos. Para ac
 > [!Note]
 > Los comandos **Agregar > Nuevo elemento...** muestran también los tipos de archivos generales que no se enumeran en la tabla; con **Archivo > Nuevo > Archivo...**, esos tipos están contenidos en su lugar en la pestaña **General**.
 
-| Tipo de archivo | Descripción |
+| Tipo de archivo | Description |
 | --- | --- |
 | Script de R | Un archivo de texto que contiene los mismos comandos que se pueden escribir en la línea de comandos de R. |
 | R Markdown | Un archivo que contiene un documento de [R Markdown](rmarkdown.md). |
@@ -106,7 +107,6 @@ RTVS incluye una serie de plantillas para tipos de archivo específicos. Para ac
 | Documentación de R (conjunto de datos) | Un archivo de documentación de R que contiene varios campos con comentarios para describir un conjunto de datos. |
 | Consulta SQL | Un archivo `.sql` vacío. Consulte [Integración de SQL Server](sql-server.md). |
 | Procedimiento almacenado con R | Archivo de R con un archivo de plantilla de procedimientos almacenados secundarios y consultas SQL secundarias. Consulte [Integración de SQL Server](sql-server.md). |
-
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Usar varios tipos de proyectos en Visual Studio
 

@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b40832545bf3561b480ce25544908760a181c485
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ba676aa3aeef0cffb5b6de6b086c7a75c5ffb458
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (Tarea)
 Recupera la ruta de acceso a los ensamblados de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
@@ -33,7 +34,7 @@ Recupera la ruta de acceso a los ensamblados de [!INCLUDE[dnprdnshort](../code-q
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkPath`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|Parámetro de salida `String` opcional.<br /><br /> Contiene la ruta de acceso a los ensamblados de la versión 1.1 de Framework, si está presente. De lo contrario, devuelve `null`.|  
 |`FrameworkVersion20Path`|Parámetro de salida `String` opcional.<br /><br /> Contiene la ruta de acceso a los ensamblados de la versión 2.0 de Framework, si está presente. De lo contrario, devuelve `null`.|  

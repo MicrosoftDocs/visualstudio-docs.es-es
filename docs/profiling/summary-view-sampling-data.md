@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb10ac11fc49ce4ca6137e9749e802563de2a0e5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: c78ba45fda91650b5b7deb37ce9fd5dabbee6fb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---sampling-data"></a>Vista Resumen: datos de muestreo
 La vista Resumen muestra información acerca de las funciones más exigentes en una generación de perfiles. Para obtener más información, incluyendo una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).  
@@ -35,9 +36,9 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
   
  La **Ruta de acceso activa** incluye los siguientes datos para cada función:  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre de la función.|  
+|**Name**|Nombre de la función.|  
 |**Porcentaje de muestras inclusivas**|El porcentaje de todas las muestras que se produjeron cuando se estaba ejecutando esta función o una función a la que llamó.|  
 |**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras que se produjeron cuando estaba ejecutando código la función en el cuerpo de la función. No se incluyen muestras recopiladas en las funciones a las que llamó esta función.|  
   
@@ -48,9 +49,9 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
   
  **Funciones que realizan la mayor parte de trabajo individual** incluye los siguientes datos para cada función:  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre de la función.|  
+|**Name**|Nombre de la función.|  
 |**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras que se recopilaron durante la generación de perfiles mientras la función ejecutaba código en el cuerpo de la función. El porcentaje excluye las muestras recopiladas cuando se estaban ejecutando las funciones a las que llamó esta función.|  
   
 ## <a name="see-also"></a>Vea también  

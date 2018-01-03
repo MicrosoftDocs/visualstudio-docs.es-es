@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 076a815be9a900b45fffee95856caa003d8155d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3fae064fab478de88f6b5f66c41df7e4e57d4ead
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider (Función)
 Crea la serie de marcadores predeterminados de un proveedor predeterminado.  
@@ -46,4 +47,4 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
  **Encabezado:** cvmarkers.h  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)
+ [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

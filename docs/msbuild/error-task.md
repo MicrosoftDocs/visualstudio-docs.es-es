@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 35360c057d0c18a1d6c891796f5788d5cfeab89b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 35f4d34bb96e5128e6a321041864e18c12380949
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-task"></a>Error (Tarea)
 Detiene una compilación y registra un error basándose en una instrucción condicional evaluada.  
@@ -33,7 +34,7 @@ Detiene una compilación y registra un error basándose en una instrucción cond
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Error`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Code`|Parámetro `String` opcional.<br /><br /> Código de error que se debe asociar con el error.|  
 |`File`|Parámetro `String` opcional.<br /><br /> El nombre del archivo que contiene el error. Si no se proporciona ningún nombre de archivo, se utilizará el archivo que contiene la tarea Error.|  

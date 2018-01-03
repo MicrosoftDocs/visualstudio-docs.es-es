@@ -11,11 +11,12 @@ ms.assetid:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 94348821e44b5ed07e3df5e4859796342919a833
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 4a4093c7ebba74493a64833bfbf83ee6d28ef1ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whitelisting-urls-in-a-private-network"></a>Inclusión en lista blanca de direcciones URL en una red privada
 
@@ -57,5 +58,4 @@ Visual Studio usa el protocolo de Seguridad de la capa de transporte (TLS) 1.2 p
 ## <a name="see-also"></a>Vea también
 
 [Se necesita autorización del Proxy (error)](../ide/reference/proxy-authorization-required.md)  
-[Recursos de Internet usados por Visual Studio](../ide/connected-environment.md)  
 [Instalar Visual Studio detrás de un firewall o servidor proxy](../install/install-visual-studio-behind-a-firewall-or-proxy-server.md)

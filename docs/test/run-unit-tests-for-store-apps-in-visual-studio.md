@@ -11,11 +11,12 @@ ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: cdb13478a7e403be916d7773dab6315429508e9c
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: ad5a81a8b80ffb5a25a04d3aa83811e90c2785e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Ejecución de pruebas unitarias en aplicaciones para UWP en Visual Studio
 En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de pruebas de Microsoft Visual Studio.  
@@ -121,4 +122,4 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
   
 2.  En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.  
   
- Para obtener más información sobre el depurador, vea [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md).
+ Para obtener más información sobre el depurador, vea [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).

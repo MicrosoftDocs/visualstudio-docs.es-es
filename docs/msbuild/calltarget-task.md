@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e88638d83a0d5920727e531f7101d4230abcce7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a52a17c84f316e0e809804043fda280a94dfe775
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calltarget-task"></a>CallTarget (Tarea)
 Invoca los destinos especificados en el archivo del proyecto.  
@@ -32,7 +33,7 @@ Invoca los destinos especificados en el archivo del proyecto.
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `CallTarget`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`RunEachTargetSeparately`|Parámetro de salida `Boolean` opcional.<br /><br /> Si es `true`, se llama al motor de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] una vez por destino. Si es `false`, se llama al motor de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] una vez para compilar todos los destinos. El valor predeterminado es `false`.|  
 |`TargetOutputs`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las salidas de todos los destinos compilados.|  

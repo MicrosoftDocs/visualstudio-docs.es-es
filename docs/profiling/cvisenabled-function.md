@@ -18,11 +18,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50dc5727ab98f09ada660c2d92c07d908f71c548
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7459b155192869f02541d65da9cfaa80f22ddd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled (Función)
 Determina si alguna sesión ha habilitado el proveedor ETW especificado.  
@@ -57,4 +58,4 @@ HRESULT CvIsEnabledEx(
  **Encabezado:** cvmarkers.h  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)
+ [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

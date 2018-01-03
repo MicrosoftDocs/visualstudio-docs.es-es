@@ -11,11 +11,12 @@ ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3dab1fb335bf1fa7a51faf8f298208c18ec87dc5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c37646bfdb722b2deb53f290eabbb9917fa987ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Analizar la cobertura de código en pruebas de comprobación de la compilación
 El análisis de cobertura de código de Microsoft Visual Studio muestra que cantidad del código ejecutan las pruebas automatizadas. Para obtener más información, consulte [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  

@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1cda2b61c50deb98752063f9606849356386a84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c0648336f4ba6be42de7253c27703fe544fb58d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Cómo: Configurar la reducción de ruido en las vistas de informes
 Los informes de rendimiento pueden configurarse para la reducción de ruido limitando la cantidad de datos que se presentan en la vistas Árbol de llamadas y Asignación. Gracias a la reducción de ruido, los problemas de rendimiento destacan más. Esto es útil a la hora de analizar informes de rendimiento.  

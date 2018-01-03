@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eacea655fe24b497b6bf9caa699e03cac99103d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 794a853db12f106e8f7002d93bca798d45bb582c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Cómo: Usar el SDK de marcadores del visualizador de concurrencia
 Este tema muestra cómo usar el SDK del visualizador de simultaneidad para crear intervalos y escribir marcas, mensajes y alertas.  

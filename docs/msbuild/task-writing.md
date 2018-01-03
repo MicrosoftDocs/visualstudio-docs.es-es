@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e71fcf69e5624e46261d49ebccc8c634492763a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92571ff82424d47875b4f28873c02ca9bdd3c237
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-writing"></a>Escribir tareas
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas están contenidas en destinos. En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se incluye una biblioteca de tareas típicas, y también puede crear sus propias tareas. Para obtener más información sobre la biblioteca de tareas incluida en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
@@ -162,7 +163,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que deriva de la clase auxiliar <xref:Microsoft.Build.Utilities.Task>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.  
   
 ### <a name="code"></a>Código  
@@ -186,7 +187,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  La clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente muestra una tarea que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Esta tarea devuelve `true`, lo que indica que se ha realizado correctamente.  
   
 ### <a name="code"></a>Código  
@@ -244,7 +245,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  Esta clase [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] muestra una tarea que deriva de la clase auxiliar <xref:Microsoft.Build.Utilities.Task>. Tiene una propiedad de cadena necesaria y genera un evento que todos los registradores registrados muestran.  
   
 ### <a name="code"></a>Código  
@@ -252,7 +253,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  En el ejemplo siguiente se muestra un archivo del proyecto que invoca la tarea del ejemplo anterior, SimpleTask3.  
   
 ### <a name="code"></a>Código  

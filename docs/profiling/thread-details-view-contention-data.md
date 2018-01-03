@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 669f227b1c5a13aada7573a245f459ba4c6a8a9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd9df48aca48d86be6e4df8d2296b2b156093e3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="thread-details-view---contention-data"></a>Vista Detalles del subproceso: datos de contención
 La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los eventos de bloqueo en el subproceso seleccionado de una ejecución de generación de perfiles originados por las contenciones sobre recursos. Un evento de bloqueo se produce cuando el subproceso se ve obligado a suspender la ejecución porque otro subproceso ha bloqueado el acceso a un recurso.  

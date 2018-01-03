@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cce0fcdf74c79dd78656b7dc4de49821549ee80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2170eb467a7adbb8fd70a3063d8c772559b54350
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn y ThreadOff
 Los subcomandos **ThreadOff** y **ThreadOn** de VSPerfCmd.exe solo están disponibles en las sesiones de generación de perfiles de la línea de comandos en las que se usa el método de instrumentación. **ThreadOff** y **ThreadOn** pausan y reanudan la generación de perfiles para el subproceso especificado. **ThreadOff** detiene la generación de perfiles del subproceso y **ThreadOn** la inicia.  
@@ -50,7 +51,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
  **Start:** `Method`  
  Inicializa la sesión de generación de perfiles de línea de comandos y establece el método de generación de perfiles especificado.  
   
- **GlobalOff** y **GlobalOn**  
+ **GlobalOff**&#124;**GlobalOn**  
  Detiene o inicia la generación de perfiles para todos los procesos en una sesión de generación de perfiles de línea de comandos.  
   
  {**ProcessOff**&#124;**ProcessOn**}**:**`TID`  

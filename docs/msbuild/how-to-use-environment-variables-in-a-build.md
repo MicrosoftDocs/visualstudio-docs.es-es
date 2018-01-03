@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 50a513bcc34a77d3dece1ed1824fbee35d8272ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b1a9999c38ef89416a2669f2e6e77226df38c9c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Cómo: Utilizar variables de entorno al compilar
 Al compilar proyectos, a menudo es necesario establecer las opciones de compilación mediante información que no está en el archivo del proyecto o en los archivos que componen el proyecto. Normalmente, esta información se almacena en variables de entorno.  

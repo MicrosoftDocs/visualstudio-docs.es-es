@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4878b71317e67c152c45d58168531f1039128f0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4714399d1ea7b17f1d79858185157e9c11902d7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Paso 1: Crear un proyecto de aplicación de Windows Forms
 Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto de aplicación de Windows Forms.  

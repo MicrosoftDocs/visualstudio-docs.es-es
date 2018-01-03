@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 76c5661f9f911c2a5ce78a5e18d9675281ef3eeb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b26b76d3370d41a8d8d1b6d449922a955f2668c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-transforms"></a>Transformaciones de MSBuild
 Una transformación es una conversión unívoca de una lista de elementos en otra. Además de permitir que un proyecto convierta listas de elementos, una transformación permite que un destino identifique una asignación directa entre sus entradas y salidas. En este tema, se explican las transformaciones y cómo las usa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para compilar proyectos de manera más eficaz.  
@@ -70,7 +71,7 @@ Una transformación es una conversión unívoca de una lista de elementos en otr
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  En el ejemplo siguiente, se muestra un archivo del proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que usa transformaciones. En este ejemplo, se da por supuesto que hay solo un archivo .xsd en el directorio c:\sub0\sub1\sub2\sub3 y que el directorio de trabajo es c:\sub0.  
   
 ### <a name="code"></a>Código  

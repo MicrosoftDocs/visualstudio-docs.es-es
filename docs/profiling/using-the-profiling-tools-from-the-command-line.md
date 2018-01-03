@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cff5b3091213cb0c4c708ce016f486fc7262a2c4
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 3cf3751eeb7a1e0a41c26bab24425312675921b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>Usar las herramientas de generación de perfiles desde la línea de comandos
 Puede utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para generar perfiles de aplicaciones en el símbolo del sistema y automatizar la generación de perfiles mediante archivos por lotes y scripting. También puede generar archivos de informe en un símbolo del sistema. Puede utilizar el generador de perfiles independiente ligero para recopilar datos en los equipos que no tienen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado.  

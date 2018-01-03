@@ -24,11 +24,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8a5977d40f8903e99dd904e5fe09ec86572895b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2308e1efecf01972dd494ce7ad4341e8e5d6d20e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bscmake-task"></a>BscMake (Tarea)
 > [!IMPORTANT]
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea **BscMake**. La mayoría de los parámetros de tarea corresponden a una opción de línea de comandos.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones especificada en la línea de comando. Por ejemplo, "/*option1* /*option2* /*option#*". Use este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **BscMake**.<br /><br /> Para más información, vea las opciones en [Opciones de BSCMAKE](/cpp/build/reference/bscmake-options).|  
 |**OutputFile**|Parámetro **String** opcional.<br /><br /> Especifica un nombre de archivo que invalida el nombre de archivo de salida predeterminado.<br /><br /> Para más información, vea la opción **/o** en [Opciones de BSCMAKE](/cpp/build/reference/bscmake-options).|  

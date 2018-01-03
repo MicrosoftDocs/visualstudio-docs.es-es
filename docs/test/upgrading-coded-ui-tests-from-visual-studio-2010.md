@@ -11,11 +11,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8b854bcfcb7227a454023f89ce732706b1e545cc
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: a24166bb88737699dc3b853cf7a821649acbc118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Actualizar pruebas de IU codificadas desde Visual Studio 2010
 Los proyectos de prueba que contienen pruebas automatizadas de IU creadas en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 se reparan automáticamente al abrirse en Visual Studio 2012 o versiones posteriores. Si los proyectos de prueba están protegidos bajo control de código fuente, los archivos del proyecto se desprotegen para esta reparación. Una vez reparados, estos proyectos de prueba que contienen pruebas de IU codificadas se pueden usar en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -39,7 +40,7 @@ Los proyectos de prueba que contienen pruebas automatizadas de IU creadas en [!I
 > [!CAUTION]
 >  Hay un problema conocido consistente en que las referencias de los proyectos de prueba de IU codificada no aparecen en el Explorador de soluciones. Para obtener más información, vea el archivo Léame incluido en el soporte de instalación de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] .  
   
-|Funcionalidad de IU codificada|Problema|Solución|  
+|Funcionalidad de IU codificada|Problema|Soluciones|  
 |----------------------------|-----------|--------------|  
 |Las pruebas de IU de Silverlight no se admiten en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|**Se producirá un error de compilación**<br /><br /> Si tiene el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y ha creado proyectos de prueba de IU codificada para aplicaciones de Silverlight, estos proyectos no se pueden abrir en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|Se recomienda administrar estos proyectos únicamente en el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] .|  
 |Las pruebas de IU de Firefox no se admiten en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]|**La compilación será correcta, pero se producirá un error de ejecución de las pruebas**<br /><br /> Si tiene el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] y ha creado proyectos de prueba de IU codificada para aplicaciones web de Firefox, estos proyectos no se pueden abrir en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|Se recomienda administrar estos proyectos únicamente en el Feature Pack 2 de [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] .|  

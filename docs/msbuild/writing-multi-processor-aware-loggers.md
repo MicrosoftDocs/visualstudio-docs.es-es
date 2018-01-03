@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f11a3717e6096ac08a8201bc9b6fc81e1a197d0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d32ef451cbbefaa2ce639d3271b762fa90892945
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Escribir registradores que reconocen varios procesadores
 La capacidad de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para aprovechar las ventajas de varios procesadores puede disminuir el tiempo de compilación de los proyectos, pero también agrega complejidad al registro de eventos de compilación. En un entorno de un solo procesador, los eventos, mensajes, advertencias y errores llegan al registrador de una manera predecible y secuencial. Sin embargo, en un entorno de varios procesadores, pueden llegar eventos de orígenes diferentes al mismo tiempo o desordenados. Para solucionar este asunto, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dispone de un registrador que reconoce varios procesadores y un nuevo modelo de registro, y permite crear "registradores de reenvío" personalizados.  

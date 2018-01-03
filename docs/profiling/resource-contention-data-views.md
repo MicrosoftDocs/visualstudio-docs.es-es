@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contention-data-views"></a>Vistas de datos de contención de recursos
 Esta sección contiene información de referencia sobre las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de contención de subprocesos.  
@@ -52,7 +53,7 @@ Esta sección contiene información de referencia sobre las vistas y los informe
  [Vista Líneas](../profiling/lines-view-contention-data.md)  
  Muestra datos de contención de recursos por línea de código de origen.  
   
- [Vista Punteros de instrucciones (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)  
+ [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)  
  Muestra contención de recursos por instrucción.  
   
  [Vista Proceso](../profiling/process-view-contention-data.md)  

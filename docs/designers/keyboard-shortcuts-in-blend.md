@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b6a19ed79db2625fc7e1ad339ab2396635767a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Métodos abreviados de teclado en Blend
 ## <a name="project-shortcuts"></a>Métodos abreviados del proyecto  

@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d295d73560a560caa7f374965a280cf48ad66c2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3251db736e42d0b5e49d92b17720605c507d2184
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries (Función)
 Libera la serie de marcadores. No utilice el objeto de la serie de marcadores después de liberar la aplicación; de lo contrario, la aplicación podría bloquearse. Si no se puede liberar la serie de marcadores, se produce una pérdida de memoria.  
@@ -42,4 +43,4 @@ HRESULT CvReleaseMarkerSeries(
  **Encabezado:** cvmarkers.h  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)
+ [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

@@ -21,11 +21,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c4c7613cca7f9dec7c2db7ceffef1cc542cfa61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b81517d8d8e0cc6dd1386525f7a2129ed18851c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-code"></a>Navegar por el código  
 Visual Studio ofrece numerosas formas de navegar por el código en el editor. En este tema se resumen las distintas maneras en las que se puede navegar por el código y se proporcionan vínculos a temas que incluyen más información.  
@@ -94,7 +95,7 @@ Entrada        | Función
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **F12**
 **Mouse**    | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (nuevo en Visual Studio 2017 versión 15.4).  
 
-## <a name="peek-definition"></a>Ver la definición  
+## <a name="peek-definition"></a>Definición de Peek  
 La opción Ver la definición muestra la definición del elemento seleccionado en una ventana sin necesidad de salir de la ubicación actual en el editor de código. Para obtener más información, vea [Cómo: Ver y editar código mediante Ver la definición](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) y [Go To Defintion and Peek Definition](../ide/go-to-and-peek-definition.md) (Ir a definición y Ver la definición).  
 
 Entrada        | Función 

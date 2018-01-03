@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 16ed7f4207a65915afbf18a496a0152e04e9a8d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 70f83ba6a48df66f9105d39570e0d5490f818e73
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vcmessage-task"></a>VCMessage (Tarea)
 Registra mensajes de advertencia y de error durante una compilación.  
@@ -37,11 +38,11 @@ Registra mensajes de advertencia y de error durante una compilación.
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea **VCMessage**.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |**Argumentos**|Parámetro **String** opcional.<br /><br /> Lista delimitada por punto y coma de los mensajes que se van a mostrar.|  
 |**Código**|Parámetro obligatorio de tipo **String**.<br /><br /> Número de error que califica el mensaje.|  
-|**ype**|Parámetro **String** opcional.<br /><br /> Especifica el tipo de mensaje que se va a emitir. Especifique `"Warning"` para emitir un mensaje de advertencia o `"Error"` para emitir un mensaje de error.|  
+|**Type**|Parámetro **String** opcional.<br /><br /> Especifica el tipo de mensaje que se va a emitir. Especifique `"Warning"` para emitir un mensaje de advertencia o `"Error"` para emitir un mensaje de error.|  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)

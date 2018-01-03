@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0ec26ec3305cf56f5b03312816737ed7131f4d2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Cómo: Buscar temas en la tabla de contenido
 En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar información. La tabla de contenido es una lista ampliable que contiene todos los temas en los libros instalados. Para obtener información de accesibilidad sobre cómo navegar por la TDC, vea [Teclas de método abreviado (Visor de Ayuda)](../ide/shortcut-keys-help-viewer.md).  

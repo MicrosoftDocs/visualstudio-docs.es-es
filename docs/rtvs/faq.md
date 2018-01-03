@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 22d114500ca602806facbf6f6e81ab7497e07526
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 9fe92fb38d1b03b081cb53fc620f60180daf5b24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -28,11 +29,11 @@ R. Actualmente, RTVS se basa en Visual Studio, que es una implementación solo p
 
 **P. ¿Funciona RTVS con las ediciones de Express de Visual Studio?**
 
-Un archivo . No.
+R. No.
 
 **P. ¿Puedo utilizar extensiones de Visual Studio con RTV?**
 
-Un archivo . Por supuesto. De hecho, a continuación se muestran algunas que conocen las personas que trabajan con R.
+R. Por supuesto. De hecho, a continuación se muestran algunas que conocen las personas que trabajan con R.
 
 - [VsVim para enlaces de teclado vim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 - [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
@@ -42,21 +43,21 @@ Consulte [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para
 
 **P. Dado que RTVS está en Visual Studio, ¿significa eso que R se puede utilizar fácilmente con C#, C++ y otros lenguajes de Microsoft?**
 
-Un archivo . No. RTVS es una herramienta para desarrollar código de R y usa los intérpretes de R nativos estándar. Actualmente no hay compatibilidad para la interoperabilidad entre R y otros lenguajes.
+R. No. RTVS es una herramienta para desarrollar código de R y usa los intérpretes de R nativos estándar. Actualmente no hay compatibilidad para la interoperabilidad entre R y otros lenguajes.
 
 **P. ¿RTVS funciona con una configuración regional que no sea en inglés?**
 
-Un archivo . La versión 1.0 de RTVS es solo en inglés. La versión 1.1 se traducirá al mismo conjunto de idiomas que Visual Studio. Mientras tanto, utilice el [paquete de idioma en inglés para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48157) o, en Visual Studio 2017, ejecute el programa de instalación y seleccione Inglés en la pestaña **Paquetes de idioma**.
+R. La versión 1.0 de RTVS es solo en inglés. La versión 1.1 se traducirá al mismo conjunto de idiomas que Visual Studio. Mientras tanto, utilice el [paquete de idioma en inglés para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48157) o, en Visual Studio 2017, ejecute el programa de instalación y seleccione Inglés en la pestaña **Paquetes de idioma**.
 
 ![Configuración internacional para Visual Studio de 2017](media/FAQ-international-settings.png)
 
 **P. Me gusta mi configuración actual de Visual Studio, pero desea probar la nueva configuración de ciencia de datos. ¿Qué debo hacer?**
 
-Un archivo . Guarde la configuración actual de Visual Studio mediante **Herramientas > Importar y exportar configuraciones...**  y luego cambie la configuración de ciencia de datos. Para restaurar la configuración guardada, use el comando **Importar y exportar configuraciones...**  de nuevo.
+R. Guarde la configuración actual de Visual Studio mediante **Herramientas > Importar y exportar configuraciones...**  y luego cambie la configuración de ciencia de datos. Para restaurar la configuración guardada, use el comando **Importar y exportar configuraciones...**  de nuevo.
 
 **P. ¿Puedo almacenar mi proyecto de Visual Studio en un recurso compartido de red?**
 
-Un archivo . No, Visual Studio no es compatible con la carga de proyectos de un recurso compartido de red.
+R. No, Visual Studio no es compatible con la carga de proyectos de un recurso compartido de red.
 
 ## <a name="r-interpretersintegration"></a>Integración/intérpretes de R
 
@@ -66,7 +67,7 @@ R. [CRAN R](https://cran.r-project.org/), [Microsoft R Client y Microsoft Machin
 
 **P. ¿Dónde puedo descargar esos intérpretes?**
 
-Un archivo . Consulte [Instalación](installation.md).
+R. Consulte [Instalación](installation.md).
 
 P. **¿Qué es Microsoft R Server?**
 
@@ -74,15 +75,15 @@ R. R Server es el nombre anterior de [Microsoft Machine Learning Server](/machin
 
 **P. ¿RTVS funciona con las ediciones de 32 bits de R?**
 
-Un archivo . No, RTVS solo es compatible con las ediciones de 64 bits de R que se ejecutan en ediciones de 64 bits de Windows.
+R. No, RTVS solo es compatible con las ediciones de 64 bits de R que se ejecutan en ediciones de 64 bits de Windows.
 
 **P. ¿Funciona RTVS con mi sistema de control de código fuente?**
 
-Un archivo . Sí, puede usar cualquier sistema de control de código fuente que esté integrado en Visual Studio.
+R. Sí, puede usar cualquier sistema de control de código fuente que esté integrado en Visual Studio.
 
 **P. ¿Cuáles es la configuración de `.gitignore` recomendada para un proyecto de RTV?**
 
-Un archivo . Github mantiene un repositorio principal de los archivos de `.gitignore` recomendados. Puede verlo aquí: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+R. Github mantiene un repositorio principal de los archivos de `.gitignore` recomendados. Puede verlo aquí: [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Servicios remotos
 
@@ -110,10 +111,10 @@ R. Vea el artículo [Execute on remote server](/machine-learning-server/r/how-to
 
 **P. Falta la característica X, ¡pero RStudio la tiene!**
 
-Un archivo . RStudio es un IDE fantástico y maduro para R que se ha estado desarrollando durante muchos años. RTVS pretende tener todas las características importantes que el usuario necesita para tener éxito. Ayude a priorizar el trabajo futuro realizando la [encuesta sobre RTVS](https://www.surveymonkey.com/r/RTVS1) y consultando los problemas de archivo en [GitHub](https://github.com/Microsoft/RTVS/issues/).
+R. RStudio es un IDE fantástico y maduro para R que se ha estado desarrollando durante muchos años. RTVS pretende tener todas las características importantes que el usuario necesita para tener éxito. Ayude a priorizar el trabajo futuro realizando la [encuesta sobre RTVS](https://www.surveymonkey.com/r/RTVS1) y consultando los problemas de archivo en [GitHub](https://github.com/Microsoft/RTVS/issues/).
 
 **P. ¿Puedo contribuir a RTV?**
 
-Un archivo . Por supuesto. El código fuente reside en [Github](https://github.com/microsoft/RTVS). Utilice el rastreador de problemas para enviar errores y comentar los archivados.
+R. Por supuesto. El código fuente reside en [Github](https://github.com/microsoft/RTVS). Utilice el rastreador de problemas para enviar errores y comentar los archivados.
 
 También se agradece la contribución a esta documentación: solo tiene que seleccionar el comando **Editar** en la esquina superior derecha de cualquier página. Los comentarios sobre la documentación también se agradecen, que se pueden agregar en la parte inferior de cualquier página.

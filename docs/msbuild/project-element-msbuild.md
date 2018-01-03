@@ -22,14 +22,15 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 013b8d0f23ad91eb6202f1ca72c36e486b0f53e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7735cce0a03f31c98cc45b481b8697d306f63f4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-element-msbuild"></a>Elemento Project (MSBuild)
-Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .  
 
 ## <a name="syntax"></a>Sintaxis  
 
@@ -54,7 +55,7 @@ Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../ex
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Descripción|  
+|Atributo|Description|  
 |---------------|-----------------|  
 |`DefaultTargets`|Atributo opcional.<br /><br /> Destinos predeterminados que serán el punto de entrada de la compilación si no se ha especificado ningún destino. Si hay varios destinos, se delimitan con punto y coma (;).<br /><br /> Si no se especifica ningún destino predeterminado ni en el atributo `DefaultTargets` ni en la línea de comandos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], el motor ejecuta el primer destino en el archivo del proyecto una vez evaluados los elementos [Import](../msbuild/import-element-msbuild.md).|  
 |`InitialTargets`|Atributo opcional.<br /><br /> Destinos iniciales que se van a ejecutar antes que los destinos especificados en el atributo `DefaultTargets` o en la línea de comandos. Si hay varios destinos, se delimitan con punto y coma (;).|  
@@ -65,7 +66,7 @@ Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../ex
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Evalúa los elementos secundarios para seleccionar un conjunto de elementos `ItemGroup` o `PropertyGroup` para evaluar.|  
 |[Import](../msbuild/import-element-msbuild.md)|Elemento opcional.<br /><br /> Permite a un archivo del proyecto importar otro archivo del proyecto. Puede haber cero o más elementos `Import` en un proyecto.|  

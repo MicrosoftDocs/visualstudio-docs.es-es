@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d328897a4d7644e76634ecff3bfbaef4dbd0c3ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-python-on-azure-app-service"></a>Administrar Python en Azure App Service
 

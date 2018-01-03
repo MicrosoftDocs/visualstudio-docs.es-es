@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4f3001eb630ce2f5a03d8e3f5169d25e413a6c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e001d58b37dadbc075c39964cea0da58656d6931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-in-visual-studio"></a>Generación de código en Visual Studio
 Visual Studio puede ayudarle a generar partes de código fuente, lo que le permitirá centrarse en el trabajo real.  Algunas de las características comunes de generación de código incluyen:  

@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 6c236a86677dab4015f8a0dc234ed211def7b1f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fde39272a9e9ededafd28a26a13f8c3adb9aaaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiales de escape
 Los caracteres especiales deben ser de escape únicamente si tienen un significado especial en el contexto en que se utilicen. Por ejemplo, el asterisco (*) es un carácter especial solo en los atributos "Include" y "Exclude" de una definición de elemento, o en una llamada a <xref:Microsoft.Build.Tasks.CreateItem>. En los demás casos, el asterisco se trata como un asterisco literal. Aunque no es necesario que los asteriscos sean de escape en todos los archivos del proyecto, tampoco es perjudicial.  
@@ -33,7 +34,7 @@ Los caracteres especiales deben ser de escape únicamente si tienen un significa
   
  A continuación se enumera la lista completa de los caracteres especiales de escape:  
   
-|Carácter|Descripción|  
+|Carácter|Description|  
 |---------------|-----------------|  
 |%|Signo de porcentaje, utilizado para hacer referencia a metadatos.|  
 |$|Signo de dólar, utilizado para hacer referencia a propiedades.|  

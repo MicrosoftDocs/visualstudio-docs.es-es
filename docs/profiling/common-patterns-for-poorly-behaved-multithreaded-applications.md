@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 744e3031c94a3b152728000e7c5425f85fb9e9ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c938f5effc963fa881506f55d0e4b271ae3a914
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
 El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el comportamiento de una aplicación multiproceso. Esta herramienta incluye una galería de modelos comunes para aplicaciones multiproceso que se comporten incorrectamente. La galería incluye patrones visuales típicos y reconocibles que se exponen a través de la herramienta, junto con una explicación del comportamiento que cada patrón representa, el resultado probable de ese comportamiento y el enfoque más común para resolverlo.  

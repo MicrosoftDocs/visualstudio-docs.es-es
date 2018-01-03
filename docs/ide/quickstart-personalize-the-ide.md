@@ -10,11 +10,12 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: ef88495e4251376a7b2f297293ce865f3917c7e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Guía de inicio rápido: Personalizar el IDE de Visual Studio
 

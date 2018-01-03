@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6152cfe60a7628ce830cbf589a6808f5ca87fae2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-functions"></a>Funciones de elementos
 A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar a funciones de elementos para obtener información sobre los elementos del proyecto. Estas funciones simplifican la obtención de elementos Distinct() y son más rápidas que si se recorren en bucle los elementos.  
@@ -53,7 +54,7 @@ A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar
 ## <a name="intrinsic-item-functions"></a>Funciones de elementos intrínsecas  
  En la tabla siguiente se enumeran las funciones intrínsecas disponibles para los elementos.  
   
-|Función|Ejemplo|Descripción|  
+|Función|Ejemplo|Description|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Devuelve el número de elementos.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Devuelve el equivalente de `Path.DirectoryName` para cada elemento.|  
@@ -62,7 +63,7 @@ A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar
 |`Reverse`|`@(MyItem->Reverse())`|Devuelve los elementos en orden inverso.|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Devuelve un `boolean` para indicar si un elemento tiene el nombre y el valor de los metadatos especificados. En la comparación no se distingue entre mayúsculas y minúsculas.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Devuelve elementos en los que se han borrado los metadatos. Solo se retiene el `itemspec`.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Devuelve elementos que tienen el nombre de los metadatos especificado. En la comparación no se distingue entre mayúsculas y minúsculas.|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Devuelve elementos que tienen el nombre de los metadatos especificado. En la comparación no se distingue entre mayúsculas y minúsculas.|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Devuelve los valores de los metadatos que tienen el nombre de los metadatos.|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Devuelve elementos que tienen el nombre y el valor de los metadatos especificados. En la comparación no se distingue entre mayúsculas y minúsculas.|  
   

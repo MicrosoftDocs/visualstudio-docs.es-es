@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1f0c356df742f279e60d81a060551530be49ac9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 603b3f57bb2b9a1e9c99a4ca3870c38bc569d620
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Cómo: Modificar el punto de pivote de un modelo 3D
 En este documento se muestra cómo usar el Editor de modelos para modificar el *punto de pivote* de un modelo 3D. El punto de pivote es el punto en el espacio que define el centro matemático del objeto para la rotación y la escala.  

@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 23cd5cf58585c8ba1397552d20cb519c1f62c236
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de Visual Studio
 
@@ -113,7 +114,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Establecer instrucción siguiente|Ctrl+Mayús+F10|  
 |Establecer o alternar punto de interrupción|F9|  
 |Deshabilitar punto de interrupción|Ctrl+F9|  
-|Ventana Inmediato|Ctrl+Alt+I|  
+|Inmediato (ventana)|Ctrl+Alt+I|  
 |Modo de comandos de la ventana Inmediato|Escribir ">"|  
 |Borrar búfer de la ventana Inmediato|>cls|  
 |Imprimir valor de la ventana Inmediato|?varname|  

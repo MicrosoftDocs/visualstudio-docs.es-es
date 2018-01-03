@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2af38cbebc1695a78a86d80240acc40c5463cbed
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: d7d692ba1ee1bf2eb0fda5430b2576edc9646ebf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Información general de Visual Studio Tools para Unity
 En esta sección aprenderá más acerca de las características que ofrece Visual Studio Tools para Unity y cómo utilizarlas para ser más productivo con Unity.  

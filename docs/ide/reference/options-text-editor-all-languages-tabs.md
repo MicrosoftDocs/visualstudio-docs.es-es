@@ -24,11 +24,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a83572bfad9aef93f7b5589e45bb24ec99fdb2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae28077b52faf97b0ed1005e6fe5474925d197de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opciones, editor de texto, todos los lenguajes, pestañas
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del Editor de código. Estas opciones también se aplican a otros editores basados en el Editor de código, como la vista de origen del diseñador HTML. Para mostrar estas opciones, seleccione **Opciones** desde el menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los lenguajes** y, después, pulse **Pestañas**.  

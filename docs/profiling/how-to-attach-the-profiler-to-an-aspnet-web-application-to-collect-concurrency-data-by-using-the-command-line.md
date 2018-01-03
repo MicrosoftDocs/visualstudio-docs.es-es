@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d43220603f28f34c04b7e4a08821299f4bedb0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 6242b23bc74589069dd29c37bebf36d045a97bc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación ASP.NET y recopilar datos de simultaneidad de procesos y subprocesos.  
@@ -39,7 +40,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
   
      Puede utilizar cualquier opción de la tabla siguiente con la opción **/start**.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName`|Especifica el dominio y el nombre de usuario opcionales de la cuenta a la que se va a conceder acceso al generador de perfiles.|  
     |[/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otros inicios de sesión.|  
@@ -62,7 +63,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
   
 -   Los pares de opciones de VSPerfCmd de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso que especifica el identificador de proceso (`PID`).|  

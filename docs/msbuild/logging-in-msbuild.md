@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 26a166779ae0a217e9522e7c3b577ec85507c0a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a2b2267a47ec88f948402ee54e8c84468b5e6a63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="logging-in-msbuild"></a>Registro de MSBuild
 El registro proporciona una manera de supervisar el progreso de una compilación. El registro captura los eventos, los mensajes, las advertencias y los errores de compilación en un archivo de registro.  

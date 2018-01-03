@@ -34,11 +34,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 978a2709fb95a0ade74f5c67d5dc774823ded6a3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: a5a3ffde718d951181d788cca5cf57a21cbff4d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opciones, editor de texto, XAML, formato
 Use la página de propiedades **Formato** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir el cuadro de diálogo **Opciones**, haga clic en el menú **Herramientas** y, después, en **Opciones**. Para acceder a la propiedad **Formato**, expanda el nodo **Editor de texto**, **XAML**, **Formato**.  

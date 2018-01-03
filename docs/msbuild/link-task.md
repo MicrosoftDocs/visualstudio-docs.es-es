@@ -34,11 +34,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 48cf258dbe267a6e2c2b020ee6613b4dac05b2eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7eb9e861898c0874388f9acb4f061a8e902fef1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="link-task"></a>Vincular tarea
 Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta del vinculador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable (.exe) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte [Opciones del enlazador](/cpp/build/reference/linker-options).  
@@ -918,7 +919,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
      Si `true`, se utilizan las entradas a la herramienta bibliotecario en lugar del propio archivo de biblioteca cuando se vinculan resultados de biblioteca de dependencias del proyecto.  
   
--   **Version**  
+-   **Versión**  
   
      Parámetro **String** opcional.  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf78e13b7205ac5bc04a67796c1e226f194b0c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 897a64f10ce7b4970f4ec0b9b631315104bcaae8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---instrumentation-data"></a>Vista Módulos: datos de instrumentación
 La vista Módulos muestra datos de rendimiento agrupados por los módulos incluidos en los datos de generación de perfiles. Las funciones del módulo se enumeran bajo el nodo de módulo.  
@@ -25,23 +26,23 @@ La vista Módulos muestra datos de rendimiento agrupados por los módulos inclui
 ## <a name="general"></a>General  
  En las columnas generales se identifica la función en una fila de la vista.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre de la función o el módulo.|  
+|**Name**|Nombre de la función o el módulo.|  
 |**Número de línea de función**|Número de línea del inicio de esta función en el archivo de origen.|  
 |**Número de llamadas**|Número total de llamadas realizadas a esta función o módulo.|  
 |**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso en el que se estaba ejecutando el módulo o la función.|  
+|**Nombre de proceso**|Nombre del proceso en el que se estaba ejecutando el módulo o la función.|  
 |**Sobrecarga de tiempo exclusiva por sondeos**|Sobrecarga de tiempo para esta función o módulo debida a la instrumentación.|  
 |**Sobrecarga de tiempo inclusiva por sondeos**|Sobrecarga de tiempo para esta función o módulo y sus funciones secundarias debida a la instrumentación.|  
   
 ## <a name="elapsed-inclusive-values"></a>Valores inclusivos transcurridos  
  Los valores inclusivos transcurridos indican el tiempo que una función estuvo en la pila de llamadas. Incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo inclusivo transcurrido**|-   Para una función, el tiempo dedicado a la función. Incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como cambios de contexto y operaciones de E/S.<br />-   Para un módulo, el tiempo en el que al menos una función del módulo estuvo en la pila de llamadas.|  
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje de tiempo total inclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo inclusivo transcurrido total de este módulo o función.|  
@@ -52,7 +53,7 @@ La vista Módulos muestra datos de rendimiento agrupados por los módulos inclui
 ## <a name="elapsed-exclusive-values"></a>Valores exclusivos transcurridos  
  Los valores exclusivos transcurridos indican el tiempo que una función se estaba ejecutando directamente en la parte superior de la pila de llamadas. Incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero no incluye el tiempo dedicado a funciones secundarias.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo exclusivo transcurrido**|-   Para una función, el tiempo dedicado al módulo o la función. Incluye el tiempo dedicado a llamadas al sistema operativo, como cambios de contexto y operaciones de E/S, pero excluye el tiempo dedicado a funciones secundarias.<br />-   Para un módulo, la suma del tiempo exclusivo transcurrido de las funciones del módulo.|  
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje de tiempo exclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo exclusivo transcurrido total de este módulo o función.|  
@@ -63,7 +64,7 @@ La vista Módulos muestra datos de rendimiento agrupados por los módulos inclui
 ## <a name="application-inclusive-values"></a>Valores inclusivos de aplicación  
  Los valores inclusivos de aplicación indican el tiempo que estuvo una función en la pila de llamadas. No incluye el tiempo dedicado llamadas al sistema operativo, como cambios de contexto y operaciones de E/S. Sin embargo, incluye el tiempo dedicado a funciones secundarias.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo inclusivo de aplicación**|-   Para una función, el tiempo dedicado a llamadas a la función. Incluye el tiempo dedicado a las funciones secundarias pero excluye las llamadas al sistema operativo, como cambios de contexto y operaciones de E/S.<br />-   Para un módulo, el tiempo en el que al menos una función del módulo estuvo en la pila de llamadas. Excluye el tiempo dedicado a llamadas al sistema operativo.|  
 |**Porcentaje de tiempo inclusivo de aplicación**|El porcentaje de tiempo inclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo inclusivo de aplicación de este módulo o función.|  
@@ -74,7 +75,7 @@ La vista Módulos muestra datos de rendimiento agrupados por los módulos inclui
 ## <a name="application-exclusive-values"></a>Valores exclusivos de aplicación  
  Los valores exclusivos de aplicación indican el tiempo dedicado al módulo o la función. Excluye el tiempo dedicado a las funciones secundarias y las llamadas al sistema operativo, como cambios de contexto y operaciones de E/S.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo exclusivo de aplicación**|El tiempo exclusivo de aplicación total de todas llamadas a este módulo o función.|  
 |**Porcentaje de tiempo exclusivo de aplicación**|El porcentaje de tiempo exclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo exclusivo de aplicación de este módulo o función.|  

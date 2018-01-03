@@ -28,11 +28,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18cf7c7ee9c7f40231482b7c0466929bd0290fb1
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 2032b0b50c9f22396d63b32b1d050eb40ea70a79
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-formatting"></a>Opciones, editor de texto, C#, formato
 Use el cuadro de diálogo de la página de propiedades **Formato** para establecer las opciones para proporcionar formato al código en el Editor de código. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda **Editor de texto**, expanda **C#** y, después, haga clic en **Formato**.  
@@ -45,7 +46,7 @@ Use el cuadro de diálogo de la página de propiedades **Formato** para establec
   
 ## <a name="uielement-list"></a>Lista de UIElement  
   
-|Etiqueta|Descripción|  
+|Etiqueta|Description|  
 |-----------|-----------------|  
 |**Dar formato automáticamente a la instrucción completada al introducir ;**|Cuando está seleccionada, da formato a las instrucciones a su finalización según las opciones de formato seleccionadas para el Editor de código. Desactive esta casilla si no quiere que el Editor de código modifique las instrucciones.|  
 |**Dar formato automáticamente al bloque completado al introducir }**|Cuando está seleccionada, da formato a los bloques de código según las opciones de formato seleccionadas para el Editor de código tan pronto como complete el bloque de código. Desactive esta casilla si no quiere que el Editor de código modifique los bloques.|  

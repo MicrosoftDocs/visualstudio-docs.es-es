@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aaa76694a60aad5c8bfcc2dd6d26feac03ab6e1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd9959d6883eec10f048733d3119206cc5dea3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Elegir elementos del cuadro de herramientas, Componentes de WPF
 En esta pestaña del cuadro de diálogo **Elegir elementos del cuadro de herramientas**, se muestra una lista de controles de Windows Presentation Foundation (WPF) disponibles en el equipo local. Para mostrar esta lista, seleccione **Elegir elementos del cuadro de herramientas** del menú **Herramientas** para mostrar el cuadro de diálogo **Elegir elementos del cuadro de herramientas** y después seleccione la pestaña **Componentes WPF**. Para ordenar los componentes de la lista, seleccione cualquier encabezado de columna.  
@@ -37,7 +38,7 @@ En esta pestaña del cuadro de diálogo **Elegir elementos del cuadro de herrami
 
 Las columnas de la pestaña **Componentes WPF** contienen la siguiente información:  
 
-Nombre  
+nombre  
 Enumera los nombres de los controles de WPF para los que existen entradas en el Registro del equipo.  
 
 Espacio de nombres  

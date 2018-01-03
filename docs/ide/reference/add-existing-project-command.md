@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e41dd319e00dccbc180319bf3642c665cf4df58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 61f9735c61538465088b58f25e6c714a2441e34c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-existing-project-command"></a>Agregar proyecto existente (Comando)
 Agrega un proyecto existente a la solución actual.  

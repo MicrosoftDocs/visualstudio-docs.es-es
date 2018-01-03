@@ -13,11 +13,12 @@ manager: ghogen
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-ms.openlocfilehash: 24470f4fdb1a75d6ebd2743b2ade72e6195842b4
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 80b7260296f1f57448ae94147a59dbb29160be40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 

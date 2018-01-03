@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec05a24a932816374766c107c1aab6f018e77cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24ae3ce7346c3fb6608a2db4faa4c57dd3399773
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-rules-reference"></a>Referencia de reglas de rendimiento
 Las reglas de rendimiento de las herramientas de generación de perfiles proporcionan advertencias adicionales e información sobre el rendimiento de la aplicación. Las reglas de rendimiento analizan los datos en un proceso de generación de perfiles recopilados de orígenes como los contadores de rendimiento de procesador y de Windows. Los mensajes de regla aparecen en la ventana Salida de error del entorno de desarrollo integrado de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Los mensajes se muestran con uno de los siguientes niveles de regla:  

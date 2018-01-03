@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8e8ef79fbbe619c4764c8f3abea5062d29159634
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f3baa0185a917f5c89142f97668b08999e0f4f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-base-class"></a>Base de tarea (Clase)
 Muchas tareas heredan en última instancia de la clase <xref:Microsoft.Build.Utilities.Task>. Esta clase agrega varios parámetros a las tareas que derivan de ellos. Estos parámetros se muestran en este documento.  
@@ -29,7 +30,7 @@ Muchas tareas heredan en última instancia de la clase <xref:Microsoft.Build.Uti
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de esta clase base.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Parámetro <xref:Microsoft.Build.Framework.IBuildEngine> opcional.<br /><br /> Especifica la interfaz del motor de compilación disponible para las tareas. El motor de compilación establece automáticamente este parámetro para permitir que las tareas vuelvan a llamarlo.|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Parámetro <xref:Microsoft.Build.Framework.IBuildEngine2> opcional.<br /><br /> Especifica la interfaz del motor de compilación disponible para las tareas. El motor de compilación establece automáticamente este parámetro para permitir que las tareas vuelvan a llamarlo.<br /><br /> Esta es una propiedad que permite que los autores de las tareas que heredan de esta clase no tengan que convertir el valor de `IBuildEngine` a `IBuildEngine2`.|  

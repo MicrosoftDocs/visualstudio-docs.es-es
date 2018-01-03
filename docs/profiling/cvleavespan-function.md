@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1886858cfedbb3651a394b9f739feadd6c77d1a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4598d6ff064a956026d4696436d84ffc80f8443
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan (Función)
 Marca el final del intervalo.  
@@ -42,4 +43,4 @@ HRESULT CvLeaveSpan(
  **Encabezado:** cvmarkers.h  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)
+ [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

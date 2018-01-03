@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdb416aa4f3825c954c78106bd5e147f83705d2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0ca44152702c3669d791f67da8f41ad09f9bc72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="timeline-caret"></a>Símbolo de intercalación de la escala de tiempo
 Cuando se selecciona un punto de la escala de tiempo de un segmento de subproceso en ejecución, aparece un símbolo de intercalación de la escala de tiempo por encima de él. La pila de llamadas que se muestra en la pestaña de pila actual es la más cercana en el tiempo a donde hizo clic en el segmento. El símbolo de intercalación se utiliza para asociar la pila de llamadas, que se muestra en la pestaña **Actual**, con el momento en el que se tomó la muestra. El símbolo de intercalación muestra la ubicación exacta de la pila de llamadas, que es la pila de llamadas más cercana a la ubicación que el usuario seleccionó.  

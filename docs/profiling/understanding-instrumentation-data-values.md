@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7f0fc8530e45831132f3ec3f357ff0113fa4abe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e1addb93dfe5c4c39bb29507aa39eba66131f888
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-instrumentation-data-values"></a>Introducción a los valores de datos de instrumentación
 El método de generación de perfiles *Instrumentación* del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] registra información de tiempos detallada de llamadas a funciones, líneas y las instrucciones de la aplicación perfilada  

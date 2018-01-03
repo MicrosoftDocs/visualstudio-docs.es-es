@@ -11,11 +11,12 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4a585310f19a03524d73deeb863b080d1d335c6c
-ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
+ms.workload: dotnet
+ms.openlocfilehash: 6845c97f906e19ed86b0baec5fa23b6bdca73632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Preguntas más frecuentes sobre Live Unit Testing
 

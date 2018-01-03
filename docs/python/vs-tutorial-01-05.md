@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2acd8aebda03d7d9809563a6c1959c8dd69bf96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en un entorno de Python
 
@@ -48,23 +49,22 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
 
 1. Cree un proyecto con **Archivo > Nuevo > Proyecto** y seleccione la plantilla "Aplicación Python". En el archivo de código que aparece, pegue el código siguiente, que crea una onda de coseno como en los pasos del tutorial anteriores, pero esta vez trazada en un gráfico:
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. Ejecute el programa con (F5) o sin el depurador (Ctrl+F5) para ver el resultado:
 
   ![Ejemplo de salida de matplotlib](media/environments-add-matplotlib3.png)
-
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -72,4 +72,5 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
 > [Trabajar con GIT](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Mayor profundización
+
 - [Entornos de Python](python-environments.md)

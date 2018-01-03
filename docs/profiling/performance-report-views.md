@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e93b23c9bd30ec81088b7ec9a81cda837d6bafd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cb369d239cd480456cd54382cab0befe5c37b9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-views"></a>Vistas de informes de rendimiento
 Esta sección proporciona información de referencia para los informes y vistas de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Las vistas de archivos de datos de generación de perfiles se muestran en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. La herramienta de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md) genera los informes.  

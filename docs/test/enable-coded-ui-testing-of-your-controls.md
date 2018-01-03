@@ -11,11 +11,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0d9e28ee58dde41703f2149534f542b08d55b9ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d44026c2a4424cbacd16af57d3fb132d23ba8068
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas de IU codificadas en los controles
 Para probar los controles con mayor facilidad, implemente compatibilidad con el marco de pruebas de IU codificadas. Se pueden agregar niveles de compatibilidad de forma incremental. Para comenzar, pueden admitirse la grabación, la reproducción y la validación de propiedades. Puede basarse en ello para permitir que el generador de pruebas de IU codificadas reconozca las propiedades personalizadas del control y proporcione clases personalizadas para obtener acceso a esas propiedades desde el código generado. También se puede ayudar al generador de pruebas de IU codificadas a capturar acciones de una manera que es próxima a la intención de la acción que se está registrando.  

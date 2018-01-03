@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9aac5f9ac8886bef61d700209f77b4b1852fe2bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a42e748e45d7db0606d585d774be254a7358d6b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tier-interactions-view"></a>Interacciones de capas (Vista)
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de funciones de aplicaciones de varias capas que se comunican con las bases de datos a través de servicios de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Los datos se recopilan solamente para las llamadas a funciones sincrónicas.  
@@ -37,9 +38,9 @@ La generación de perfiles de interacción de capas proporciona información adi
   
 ## <a name="master-pane"></a>Panel principal  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|-   Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />-   Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|  
+|**Name**|-   Para una fila de nivel superior, el nombre de la página web o del proceso del que se generaron perfiles.<br />-   Para una fila de conexión de base de datos, el nombre del servidor que hospeda la base de datos.|  
 |**Base de datos**|El nombre de la base de datos (solo filas de conexión de base de datos).|  
 |**Recuento**|El número total de solicitudes generadas por el proceso, la página web o la conexión de base de datos.|  
 |**Tiempo total transcurrido**|El tiempo total dedicado a ejecutar cualquier solicitud del proceso, la página web o la conexión de base de datos.|  
@@ -49,7 +50,7 @@ La generación de perfiles de interacción de capas proporciona información adi
   
 ## <a name="database-connection-details-pane"></a>Panel Detalles de conexión de la base de datos  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Texto de comando**|La consulta SQL de la solicitud.|  
 |**Número de consultas**|El número de veces que se ejecutó la consulta.|  

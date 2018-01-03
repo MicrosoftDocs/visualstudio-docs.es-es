@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f1f481cdbccd67f6c70425f4eb7bdf6308e3a89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 03ad912d17b84562a01a9e180980ac6130ef40a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 Muestra un cuadro de mensaje que enumera todos los modificadores `devenv`, con una breve descripción de cada uno de ellos.  

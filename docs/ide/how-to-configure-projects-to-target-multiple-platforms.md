@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f862319d29502f1e3e242990072fbe0d2410fab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7686e792d804af85bb8f9588f3ae78fd6b6ec3e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Cómo: Configurar proyectos para múltiples plataformas de destino
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona una forma para que una solución tenga como destino varias arquitecturas de CPU diferentes (o plataformas) a la vez. Se tiene acceso a las propiedades que las establecerán a través del cuadro de diálogo **Configuration Manager**.  

@@ -12,11 +12,12 @@ ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 402d59b80c5765447468468c9aa7def8c14f079c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7b7623a60f5a6e06739596b02125806205c07b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad de IDE
 > [!TIP]

@@ -27,11 +27,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 En Visual Studio puede personalizar la posición, el tamaño y el comportamiento de las ventanas para crear los diseños de ventana que mejor funcionen con los distintos flujos de trabajo de desarrollo. Al personalizar el diseño, el IDE lo recuerda. Por ejemplo, si cambia la ubicación de acoplamiento del **Explorador de soluciones** y después cierra Visual Studio, la próxima vez que lo inicie, incluso si lo hace en otro equipo, el **Explorador de soluciones** estará acoplado en la misma ubicación. También puede dar un nombre al diseño personalizado, guardarlo y luego cambiar entre los diseños con un solo comando. Por ejemplo, puede crear un diseño para la edición y otro para la depuración, y cambiar entre ellos mediante el comando de menú **Ventana &#124; Aplicar diseño de ventana**.  

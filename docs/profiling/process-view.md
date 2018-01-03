@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f174223900b6f8deba2291a80425df1c77589ce1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c730169988d931d3e1e57dd22f2793b1f8a16a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="process-view"></a>Vista Proceso
 La vista Proceso muestra los datos de generación de perfiles de los procesos y subprocesos que se ejecutaron durante la generación de perfiles.  
@@ -34,11 +35,11 @@ La vista Proceso muestra los datos de generación de perfiles de los procesos y 
   
  Las columnas de la vista Proceso son las mismas para los datos generados mediante los métodos de instrumentación y muestreo y para los datos que incluyen los datos de memoria de .NET. En la siguiente tabla se describen estos valores de columna.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Id. único**|Un identificador generado por el generador de perfiles que es único para el proceso o subproceso.|  
 |**Id.**|El identificador generado por el sistema del proceso o subproceso.|  
-|**Nombre**|El nombre del proceso o subproceso.|  
+|**Name**|El nombre del proceso o subproceso.|  
 |**Hora de inicio**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el inicio del proceso o subproceso.|  
 |**Hora de finalización**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el final del proceso o subproceso.|  
   

@@ -12,17 +12,18 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98cc07eaeac12a5d5b0e32279ddb30f0a888b5b9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: 0d0906a567d71bb1f200803e1a3933ee7bad64f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a un servicio nativo para recopilar datos de simultaneidad utilizando la línea de comandos
 En este tema se describe cómo utilizar las herramientas de la línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio nativo (C/C++) y recopilar datos de simultaneidad de procesos y subprocesos mediante el método de muestreo.  
   
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
 >  Las herramientas de línea de comandos de las Herramientas de generación de perfiles se encuentran en el subdirectorio \Team Tools\Performance Tools del directorio de instalación de Visual Studio. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar el generador de perfiles en un símbolo del sistema, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana**Símbolo del sistema** o agregarla al propio comando. Para obtener más información, consulte [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
@@ -47,7 +48,7 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
     > [!NOTE]
     >  La mayoría de los servicios requiere las opciones **/user** y **/crosssession**.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName`|Especifica el dominio y el nombre de usuario opcionales de la cuenta a la que se va a conceder acceso al generador de perfiles.|  
     |[/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otros inicios de sesión.|  
@@ -68,14 +69,14 @@ En este tema se describe cómo utilizar las herramientas de la línea de comando
   
 -   Los pares de opciones de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso que especifica el identificador de proceso (`PID`).|  
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por el identificador de proceso (`PID`) o por el nombre de proceso (*ProcName*). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
   
 ## <a name="ending-the-profiling-session"></a>Finalizar la sesión de generación de perfiles  
- Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Puede detener la recolección de datos de un servicio nativo que se perfila con el método de simultaneidad deteniendo el servicio o invocando la opción **VSPerfCmd /detach**. Después, invoque a la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.  
+ Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Puede detener la recolección de datos de un servicio nativo que se perfila con el método de simultaneidad deteniendo el servicio o invocando la opción **VSPerfCmd /detach**. Después, invoque la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.  
   
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
   

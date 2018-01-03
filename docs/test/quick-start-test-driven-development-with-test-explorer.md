@@ -11,11 +11,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: "15"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: c52ce6556ae8937dd26c1be16cfaf1a4b05b1c74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4344c844c47568c3c23744a890c202493704b6a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 Es recomendable crear pruebas unitarias para hacer que el código funcione correctamente a través de varios pasos incrementales de desarrollo. Hay varios marcos que se pueden utilizar para escribir pruebas unitarias, incluidos algunos desarrollados por terceros. Algunos marcos de prueba están especializados para pruebas en plataformas o lenguas diferentes. El Explorador de pruebas proporciona una sola interfaz para las pruebas unitarias en cualquiera de estos marcos. Hay adaptadores disponibles para los marcos más comunes y es posible escribir adaptadores propios para otros marcos.  

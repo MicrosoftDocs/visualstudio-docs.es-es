@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e9ccf0c77f28d2f57d6861dd39591a7cbbce36c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ccb81bffa6845e4e644294916a508820445da263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replace-in-files-command"></a>Reemplazar en archivos (Comando)
 Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.  

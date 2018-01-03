@@ -16,11 +16,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurar advertencias en Visual Basic
 El compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incluye un conjunto de advertencias sobre código susceptible de provocar errores en tiempo de ejecución. Puede usar esa información para escribir un código mejor, más limpio y rápido con menos errores. Por ejemplo, el compilador generará una advertencia cuando el usuario intente invocar un miembro de una variable de objeto sin asignar, volver de una función sin establecer el valor devuelto, o ejecutar un bloque `Try` con errores en la lógica para detectar excepciones.  
@@ -52,7 +53,7 @@ El compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incluye 
 ## <a name="examples"></a>Ejemplos  
  En esta tabla de ejemplos de argumentos de línea de comandos se describe qué hace cada argumento.  
   
-|Argumento|Descripción|  
+|Argumento|Description|  
 |--------------|-----------------|  
 |`vbc /warnaserror`|Especifica que todas las advertencias se deben tratar como errores.|  
 |`vbc /warnaserror:42024`|Especifica que la advertencia 42024 se debe tratar como un error.|  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cbba99fd39bff8364e7853cd8d0f73f0e567e1d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c1c2331081115e9d622c7c643af999f983e425f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attach"></a>Attach
 La opción **Attach** de VSPerfCmd.exe comienza la generación de perfiles de muestra del proceso en ejecución que especifica el id. de proceso (PID).  

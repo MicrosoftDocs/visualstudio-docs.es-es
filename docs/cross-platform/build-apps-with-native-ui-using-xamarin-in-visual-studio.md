@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup-and-install.md) y [Comprobar el entorno de Xamarin](../cross-platform/verify-your-xamarin-environment.md), este tutorial le muestra cómo compilar una aplicación de Xamarin básica (mostrada a continuación) con capas de interfaz de usuario nativa. Con la interfaz de usuario nativa, el código compartido reside en una biblioteca de clases portable (PCL) y los proyectos de plataforma individuales contienen las definiciones de interfaz de usuario.  
@@ -248,10 +249,10 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
   
 7.  En la ventana **Propiedades**, establezca estas propiedades (puede ordenar la lista alfabéticamente con el botón de ordenación de la barra de herramientas de la ventana Propiedades):  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
     |**text**|**Buscar por código postal**|  
-    |**id**|`@+id/ZipCodeSearchLabel`|  
+    |**identificador**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**textColor**|`@android:color/white`|  
     |**textStyle**|`bold`|  
@@ -302,7 +303,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
   
 10. Desde el **Cuadro de herramientas**, arrastre un control **Number** hasta **RelativeLayout** y colóquelo debajo de la etiqueta **Código postal**. Después, establezca las siguientes propiedades:  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
     |**identificador**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
@@ -325,7 +326,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
   
 11. Desde el **Cuadro de herramientas**, arrastre un **Botón** hasta el control **RelativeLayout** y colóquelo a la derecha del control zipCodeEntry. Después, establezca estas propiedades:  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
     |**identificador**|`@+id/weatherBtn`|  
     |**texto**|**Obtener el tiempo**|  

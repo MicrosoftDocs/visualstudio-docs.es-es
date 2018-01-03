@@ -11,11 +11,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83e44a28b0039c743724f3c70bee95e2ef2d419b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: dd663d17dc7d0dc66af7cdd27f0da3cf9a253523
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 Igual que con otros lenguajes, puede escribir y ejecutar pruebas unitarias de C++ en la ventana **Explorador de pruebas**. Para más información sobre cómo usar el **Explorador de pruebas**, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](run-unit-tests-with-test-explorer.md). 

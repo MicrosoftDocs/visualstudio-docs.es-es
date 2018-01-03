@@ -12,11 +12,12 @@ ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a4ac0c709f2b7f9dfded7c6781dda9831e457fa5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4cfc07cb77e1db595d1b381b1097dcfcba0abdab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
 > [!TIP]
@@ -41,7 +42,7 @@ El editor de Visual Studio incluye numerosos elementos gráficos en el texto que
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Obtener acceso a las barras de herramientas mediante combinaciones de teclas de método abreviado
 El IDE de Visual Studio tiene barras de herramientas igual que muchas ventanas de herramientas. Las siguientes combinaciones de teclas de método abreviado le ayudarán a tener acceso a ellas.
 
-|Característica|Descripción|Combinación de teclas|  
+|Característica|Description|Combinación de teclas|  
 |-------------|-----------------|---------------------|  
 |Barras de herramientas del IDE|Seleccionar el primer botón de la barra de herramientas Estándar.|**ALT**, **CTRL** + **TAB**|  
 |Ventana de herramientas (barras de herramientas)|Mover el foco a las barras de herramientas en una ventana de herramientas. <br> <br> **NOTA:** Esto funciona para la mayoría de ventanas de herramientas, pero solo cuando el foco está en una ventana de herramientas. Además, debe pulsar la tecla MAYÚS antes que la tecla ALT. En algunas ventanas de herramientas, como Team Explorer, debe mantener pulsada la tecla MAYÚS un momento antes de pulsar la tecla ALT.|**MAYÚS** + **ALT**|
@@ -50,7 +51,7 @@ El IDE de Visual Studio tiene barras de herramientas igual que muchas ventanas d
 ### <a name="other-useful-shortcut-key-combinations"></a>Otras combinaciones útiles de teclas de método abreviado  
 Otras combinaciones útiles de teclas de método abreviado son las siguientes.
 
-|Característica|Descripción|Combinación de teclas|  
+|Característica|Description|Combinación de teclas|  
 |-------------|-----------------|---------------------|  
 |IDE|Activar y desactivar el contraste alto. <br> <br> **NOTA:** Acceso directo estándar de Windows|**ALT izquierda + MAYÚS izquierda + IMPR PANT**|  
 |Cuadro de diálogo|Activar o desactivar la opción de la casilla de un cuadro de diálogo. <br> <br> **NOTA:** Acceso directo estándar de Windows|**BARRA ESPACIADORA**|  

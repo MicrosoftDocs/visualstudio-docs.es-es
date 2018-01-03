@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae0bd48af8c9fbaaaf8c38f50a2fe8233f15cb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5503422ece5847018e8d321dba9cf674dff9e623
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---contention-data"></a>Vista Módulos: datos de contención
 En la vista Módulos de datos de contención se muestran datos de simultaneidad agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo en el que se produjeron los eventos de contención se muestran debajo del nodo de módulo.  
@@ -26,7 +27,7 @@ En la vista Módulos de datos de contención se muestran datos de simultaneidad 
   
  En la tabla siguiente se describen los valores de las columnas de la vista Módulos de datos de contención.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo de bloqueo exclusivo**|-   Para una función, el tiempo durante el cual esta función no ha podido ejecutar código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.<br />-   Para un módulo, la suma de tiempo de bloqueo exclusivo de las funciones del módulo.<br />-   Para una línea o una instrucción, el tiempo durante el que dicha línea o instrucción no ha podido ejecutarse.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|-   Para una función o un módulo, el porcentaje de tiempo de bloqueo exclusivo de esta función o módulo con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.<br />-   Para una línea o una instrucción, el porcentaje del tiempo de bloqueo total de la ejecución de generación de perfiles durante el que dicha línea o instrucción no ha podido ejecutarse.|  
@@ -39,10 +40,10 @@ En la vista Módulos de datos de contención se muestran datos de simultaneidad 
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la función, línea o dirección del puntero de instrucción.|  
 |**Ruta de acceso del módulo**|La ruta de acceso del módulo que contiene el módulo, función, línea o dirección del puntero de instrucción.|  
-|**Nombre**|Nombre del módulo o de la función.|  
+|**Name**|Nombre del módulo o de la función.|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
-|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|  
+|**Nombre de proceso**|Nombre del proceso.|  
+|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   

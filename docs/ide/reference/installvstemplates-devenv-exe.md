@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d9c9862a212e448ea46c03e94b45f6dfde57bf1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 22a748a21eecc1769a05250eda31f6c10078ea77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installvstemplates-devenvexe"></a>/InstallVSTemplates (devenv.exe)
 Registra las plantillas de proyecto o elemento incluidas en *\<ruta de instalación de Visual Studio>*\Common7\IDE\ProjectTemplates\ o *\<ruta de instalación de Visual Studio>*\Common7\IDE\ItemTemplates\ para que se pueda obtener acceso a ellas a través de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**.  

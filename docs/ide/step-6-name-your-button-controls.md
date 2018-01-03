@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bbda1d3a9835d95978f7bfadbfe1b99971f6d367
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eed8f03eefb15b982f297b78f7503c947df8d712
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denominó automáticamente **pictureBox1**. Solamente hay una casilla, denominada **checkBox1**. Pronto, escribirá código, y ese código hará referencia a CheckBox y PictureBox. Como no hay más que un ejemplar de cada control, entenderá lo que significan los términos **pictureBox1** o **checkBox1** cuando los vea en su código.  

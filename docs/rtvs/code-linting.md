@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3c84424f052f8ba150c47a72048d4782b7c2a8de
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 76f4ceb040e62e4ebac46e8a791f5dac0d73aff5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Linting de código de R en Visual Studio
 

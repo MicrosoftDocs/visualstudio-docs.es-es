@@ -10,18 +10,19 @@ ms.topic: article
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.C%2fC%2b%2b.Formatting.General
-dev_langs: C++
+dev_langs: CPP
 helpviewer_keywords: Text Editor Options dialog box, formatting
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 081dc1215b0e8ac026455a5449761ce103c35551
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 5a96a88ca7edd21989764c843f57c01a7bf03b0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
 Permite cambiar el comportamiento predeterminado del editor de código cuando se programa en C o C++.  
@@ -29,7 +30,7 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, a continuación, haga clic en **Formato**.  
   
 > [!NOTE]
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="cc-options"></a>Opciones de C/C++  
  **Habilitar información rápida sobre herramientas automática**  
@@ -59,7 +60,7 @@ Permite cambiar el comportamiento predeterminado del editor de código cuando se
  **Resaltar tokens de emparejamiento**  
  Cuando se coloca el cursor junto a una llave, el editor puede resaltar la llave correspondiente de modo que pueda ver el código incluido entre llaves más fácilmente.  
   
-## <a name="outlining"></a>Esquematización  
+## <a name="outlining"></a>esquematizar  
  **Especificar el modo de esquematización al abrir los archivos**  
  Cuando se coloca un archivo en el editor de texto, se puede habilitar la característica de esquematización. Para obtener más información, vea [Esquematización](../../ide/outlining.md). Cuando esta opción está seleccionada, la característica de esquematización se habilita al abrir un archivo.  
   

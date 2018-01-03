@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 296faf330e23d65ae0ab7e9f434ab831ee520ac5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e486f7df85081ce010e6d2f518978f0952412ea1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---instrumentation-data"></a>Vista Resumen: datos de instrumentación
 La vista Resumen muestra información acerca de las funciones más exigentes en una generación de perfiles. Para obtener más información, incluyendo una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).  
@@ -30,9 +31,9 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
   
  La **Ruta de acceso activa** incluye los siguientes datos para cada función:  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre de la función.|  
+|**Name**|Nombre de la función.|  
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje del tiempo total de los datos de generación de perfiles que la función dedicó a ejecutar código en el cuerpo de la función y en funciones a las que llamó.|  
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje del tiempo total de los datos de generación de perfiles que la función dedicó a ejecutar código en el cuerpo de la función. No se incluye el tiempo dedicado a funciones a las que llamó la función.|  
   
@@ -41,9 +42,9 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
   
  **Funciones que realizan la mayor parte de trabajo individual** incluye los siguientes datos para cada función:  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre de la función.|  
+|**Name**|Nombre de la función.|  
 |**Porcentaje de tiempo exclusivo**|El porcentaje del tiempo total de los datos de generación de perfiles que la función dedicó a ejecutar código en el cuerpo de la función. No se incluye el tiempo dedicado a funciones a las que llamó la función.|  
   
 ## <a name="see-also"></a>Vea también  

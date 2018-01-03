@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f7edc6e37b21b8810e8967c160e44e82c0903b24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dc3da69cd89421ed3f8b04f5c47a190d8453411d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalizing-applications"></a>Globalizar aplicaciones
 La globalización es el proceso de diseño y desarrollo de un producto de software que funciona en diferentes referencias culturales. Esta sección se aplica a las páginas de Windows Forms y Web Forms.  

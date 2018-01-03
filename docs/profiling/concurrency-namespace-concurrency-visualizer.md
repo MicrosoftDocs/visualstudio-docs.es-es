@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c89bde3c8aed358d64349e185f06b7cdb4ccd0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 621f4167184d22445a3d083fe2a1c36db529f6f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Espacio de nombres de simultaneidad (Visualizador de simultaneidad)
 El espacio de nombres `Concurrency` proporciona las clases y funciones que dan acceso al Runtime de simultaneidad, un marco de programación simultáneo para C++. Para obtener más información, consulte [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime).  
@@ -33,7 +34,7 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>Espacios de nombres  
   
-|Name|Descripción|  
+|nombre|Description|  
 |----------|-----------------|  
 |[diagnostic (espacio de nombres)](../profiling/diagnostic-namespace.md)|El espacio de nombres `diagnostics` proporciona funcionalidad para emitir los marcadores del visualizador de simultaneidad.|  
   

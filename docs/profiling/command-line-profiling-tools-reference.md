@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 206049d850b1f2f3c6b225b0c0d9c51d2a449a07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01f10f3d9c2f0f61708c14f2d7a8307f9db850f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-profiling-tools-reference"></a>Referencia de las herramientas de generación de perfiles de la línea de comandos
 Las herramientas de rendimiento de la línea de comandos permiten a los programadores generar perfiles de las aplicaciones desde el símbolo del sistema. Las herramientas de generación de perfiles de la línea de comandos siguientes permiten perfilar el código en el símbolo del sistema.  

@@ -17,11 +17,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: "83"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: ebdac762d3dcc4079ed6e8247b394da685b1013a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 Este tutorial recorre paso a paso la creación, ejecución y personalización de una serie de pruebas unitarias mediante el marco de pruebas unitarias para código administrado de Microsoft y el Explorador de pruebas de Visual Studio. Se empieza con un proyecto C# que está en desarrollo, se crean pruebas que utilizan el código, se ejecutan las pruebas y se examinan los resultados. Por último, puede cambiar el código del proyecto y volver a ejecutar las pruebas.  

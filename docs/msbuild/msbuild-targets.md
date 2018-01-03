@@ -13,11 +13,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 29c9397ea886024c894b977f05ec83f8d7c70f60
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1055a11a428d477ef44645fbc85d3f281b523357
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-targets"></a>Objetivos de MSBuild
 Los destinos agrupan tareas en un orden concreto y permiten que el proceso de compilación se factorice en unidades más pequeñas. Por ejemplo, un destino podría eliminar todos los archivos del directorio de salida para prepararlo para la compilación, mientras que otro compila las entradas para el proyecto y las coloca en el directorio vacío. Para más información sobre las tareas, consulte [Tareas](../msbuild/msbuild-tasks.md).  

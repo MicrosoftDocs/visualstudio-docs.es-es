@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf6a2a2a663854d79a33eb84bb135d349a185532
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="report-based-on-visible-time-range"></a>Informe basado en el intervalo de tiempo visible
 La vista Perfil muestra los informes que se basan en los canales y el intervalo de tiempo visible en ese momento. Para ver detalles de los diferentes subconjuntos de datos, haga clic en los elementos de la leyenda.  
@@ -36,4 +37,4 @@ La vista Perfil muestra los informes que se basan en los canales y el intervalo 
  [Tiempo de procesamiento de la interfaz de usuario](../profiling/ui-processing-time.md)   
  [Informe de operaciones en disco](../profiling/disk-operations-report-threads-view.md)   
  [Informe de resumen por subproceso](../profiling/per-thread-summary-report.md)   
- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+ [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91de09a8fda024c07d5ccff147c5b826896e8638
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d75962d21fc49a3621d88110ae15d8cda38595a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visible-timeline-profile"></a>Perfil de escala de tiempo visible
 El perfil de escala de tiempo visible para la vista Bloqueo de subprocesos proporciona información estadística y vínculos a los informes. Los números de la leyenda activa cambian para reflejar lo que está actualmente en la vista a medida que amplía, reduce, se desplaza horizontalmente y oculta o muestra canales. Para ver un informe sobre un elemento de la leyenda, haga clic en él.  

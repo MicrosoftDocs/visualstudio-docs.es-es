@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0c50254bc632bce298e547e5599adeb99d593da7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78b85460ad7edf7163a8a53c7c4706790f493b58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-run-your-program"></a>Paso 2: Ejecutar el programa
 Al crear una solución, en realidad compiló un programa que se ejecuta. Todavía no hace gran cosa; se limita a mostrar una ventana vacía en la que se ve **Form1** en la barra de título. Pero se ejecuta, como vamos a comprobar a continuación.  

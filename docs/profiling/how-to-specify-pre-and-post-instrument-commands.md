@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7daf63f27d9c285c126e437f55d25ff674d7360f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd5ff13eec62eae238b126efd7001b1f6348551
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Cómo: Especificar comandos anteriores y posteriores a la instrumentación
 Puede especificar los comandos que se ejecutan antes o después de que los archivos binarios en una sesión de rendimiento se instrumenten. Cualquier comando que se puede emitir desde la línea de comandos puede especificarse como un evento anterior o posterior a la instrumentación. Por ejemplo, puede especificar comandos que automaticen la nueva firma de un ensamblado con una clave de nombre seguro en un archivo por lotes que se ejecuta después de que se instrumenten los binarios.  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f49d90cf2e1c80a23d132177c771ba78a84e6a87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f63f82385f55ac8a7abe08a7ad6be1825ab1dff9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-additional-performance-data"></a>Recopilar datos de rendimiento adicionales
 Además de los datos que se recopilan con un método de generación de perfiles, las herramientas de generación de perfiles de [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] permite registrar y ver datos adicionales.  

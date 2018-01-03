@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 291cb024413072a6e07cbe46a2679994f7bd3315
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a10c38ec29e9a149d6756bcbe5bbfa1e65fcbe24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Vista Líneas: datos de muestreo de memoria de .NET
 La vista Líneas para los datos de generación de perfiles de asignación de memoria .NET que usa el método de muestreo enumera las instrucciones que asignaron memoria durante la ejecución de la generación de perfiles. Las columnas también incluyen el número de asignaciones y su tamaño.  
@@ -42,16 +43,16 @@ La vista Líneas para los datos de generación de perfiles de asignación de mem
   
  Por definición, una instrucción no llama a otras funciones. Por lo tanto, se muestran solo los valores exclusivos.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
+|**Nombre de proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la instrucción.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la instrucción.|  
-|**Archivo de origen**|El archivo de origen que contiene el nombre de la instrucción.|  
+|**Archivo de código fuente**|El archivo de origen que contiene el nombre de la instrucción.|  
 |**Nombre de la función**|El nombre de la función que contiene la instrucción.|  
-|**Número de línea de función**|Número de línea del inicio de esta función en el archivo de origen.|  
-|**Dirección de función**|La dirección de inicio de la función.|  
+|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
+|**Dirección de la función**|La dirección de inicio de la función.|  
 |**Línea de inicio del origen**|Número de línea inicial en el archivo de origen donde se realizó la asignación.|  
 |**Línea de finalización del origen**|Número de línea final en el archivo de origen donde se realizó la asignación.|  
 |**Carácter de inicio en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde se realizó la asignación.|  

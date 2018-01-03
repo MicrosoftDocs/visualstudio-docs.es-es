@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fcb73674027c4ecca906312fa8808dfc5e43db39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eeb41b1897fe33cfabbef1e7ef2731ababb68737
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-loggers"></a>Registradores de compilación
 Los registradores proporcionan un método para personalizar el resultado de la compilación y de mostrar mensajes, errores o advertencias en respuesta a eventos de compilación específicos. Cada registrador se implementa como una clase .NET que, a su vez, implementa la interfaz <xref:Microsoft.Build.Framework.ILogger>, definida en el ensamblado Microsoft.Build.Framework.dll.  
@@ -65,7 +66,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  El ejemplo siguiente contiene el código completo del registrador.  
   
 ### <a name="code"></a>Código  
@@ -75,7 +76,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  El ejemplo siguiente muestra cómo implementar un registrador que escribe el registro en un archivo en lugar de mostrarlo en la ventana de la consola.  
   
 ### <a name="code"></a>Código  

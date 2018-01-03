@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 3d05dfce1679c6fba182c75a7d864cd09bc61b5b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 09b308084d9fd839c3b24a7d60317a9f93efd32a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xdcmake-task"></a>XDCMake (Tarea)
 Incluye la herramienta Documentación XML (xdcmake.exe), que combina archivos de comentarios de documento XML (.xdc) en un archivo .xml.  
@@ -39,7 +40,7 @@ Incluye la herramienta Documentación XML (xdcmake.exe), que combina archivos de
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea **XDCMake**.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|Parámetro **String[]** opcional.<br /><br /> Especifica uno o más archivos .xdc adicionales que se van a combinar.<br /><br /> Para más información, vea la descripción **Archivos de documento adicionales** en [Páginas de propiedades de la herramienta Generador de documentos XML](/cpp/ide/xml-document-generator-tool-property-pages). Vea también las opciones de la línea de comandos **/old** y **/Fs** de xdcmake.exe.|  
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones especificada en la línea de comando. Por ejemplo, "*/option1 /option2 /option#*". Use este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **XDCMake**.<br /><br /> Para más información, vea [Referencia de XDCMake](/cpp/ide/xdcmake-reference), [Páginas de propiedades de la herramienta Generador de documentos XML](/cpp/ide/xml-document-generator-tool-property-pages) y la ayuda de la línea de comandos (**/?**) de xdcmake.exe.|  

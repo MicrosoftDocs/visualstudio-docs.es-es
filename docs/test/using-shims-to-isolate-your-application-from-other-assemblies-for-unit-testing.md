@@ -11,11 +11,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: b95b4754af66c39d741b7df8a74a433ff812f834
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8ddd21dde8057475c1169cf4ef3d43df84a1c96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria
 Los **tipos de correcciones de compatibilidad (shim)** son una de las dos tecnologías que usa el marco Microsoft Fakes para permitir aislar fácilmente del entorno los componentes que se están probando. Las correcciones de compatibilidad desvían las llamadas a métodos específicos hacia el código que se escribe como parte de la prueba. Muchos métodos devuelven resultados diferentes según las condiciones externas, pero una corrección de compatibilidad está bajo el control de la prueba y puede devolver resultados coherentes en cada llamada. De esta forma, es mucho más fácil escribir las pruebas.  

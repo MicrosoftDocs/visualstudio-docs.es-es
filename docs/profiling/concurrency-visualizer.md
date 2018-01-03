@@ -18,11 +18,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 362daf0d3044841260ae7e9b8f0eb42bad8e610b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 8b811b664df5d64a2235d641a6facf6cec889fe4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer"></a>Visualizador de simultaneidad
 > [!NOTE]
@@ -43,10 +44,10 @@ ms.lasthandoff: 11/15/2017
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Vista Utilización](../profiling/utilization-view.md)|Describe cómo ver y analizar la actividad del sistema en todos los procesadores.|  
-|[Vista Subprocesos](../profiling/threads-view-parallel-performance.md)|Describe cómo analizar las interacciones entre los subprocesos del programa.|  
+|[Vista de subprocesos](../profiling/threads-view-parallel-performance.md)|Describe cómo analizar las interacciones entre los subprocesos del programa.|  
 |[Vista Núcleos](../profiling/cores-view.md)|Describe cómo analizar la migración de subprocesos por los núcleos.|  
 |[Modelos comunes para aplicaciones multiproceso con comportamiento deficiente](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Describe varios patrones comunes y muestra cómo aparecen en el Visualizador de simultaneidad.|  
 |[Blog Parallel Development in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=235385)|Proporciona sugerencias y prácticas recomendadas para el Visualizador de simultaneidad.|  

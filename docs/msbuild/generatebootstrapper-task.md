@@ -21,17 +21,18 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9add80659ea5c574dbdd56c2c09c9da4a9b646ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 036f519529f0226c56b711096abc91e4ebf97d3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (Tarea)
 Proporciona una forma automatizada de detectar, descargar e instalar una aplicación y sus requisitos previos. Actúa como instalador único que integra los instaladores independientes de todos los componentes que forman una aplicación.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
- En la siguiente tabla se describen los parámetros de la tarea `GenerateBootstrapper`.  
+ En la siguiente tabla se describen los parámetros de la tarea `GenerateBootstrapper` .  
   
 -   `ApplicationFile`  
   

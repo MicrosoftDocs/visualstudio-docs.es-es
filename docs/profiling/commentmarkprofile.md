@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cb46497c8e00cedeb4056571d8fa1d19eb26c0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 413c429343b564aea941e61d86308e68d5910c51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 La función `CommentMarkProfile` inserta un marcador numérico y una cadena de texto en el archivo .vsp. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función `CommentMarkProfile` debe estar activada.  
@@ -44,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Descripción|  
+|Enumerador|Description|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|  
 |MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|  
@@ -69,8 +70,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
   
 |||  
 |-|-|  
-|**Header**|Incluya VSPerf.h|  
-|**Library**|Use VSPerf.lib|  
+|**Header**|Incluye VSPerf.h|  
+|**Library**|Usa VSPerf.lib|  
 |**Unicode**|Implementado como `CommentMarkProfileW` (Unicode) y `CommentMarkProfileA` (ANSI).|  
   
 ## <a name="example"></a>Ejemplo  

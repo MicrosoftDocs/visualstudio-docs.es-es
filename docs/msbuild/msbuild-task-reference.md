@@ -18,18 +18,19 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c0d1474fb03acd838387677786656967e852fdf9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ae20ab8aead2369ddd3024c84b66003cf958358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-task-reference"></a>Referencia de tareas de MSBuild
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas de la siguiente lista se incluyen con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Cuando se instala [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], hay tareas adicionales disponibles que se utilizan para compilar proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para obtener más información, consulte [Tareas de MSBuild específicas de Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Además de los parámetros mostrados en los temas de esta sección, cada tarea también tiene los parámetros siguientes:  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Condition`|Parámetro `String` opcional.<br /><br /> Expresión de tipo `Boolean` que el motor de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] emplea para determinar si se ejecutará esta tarea. Para obtener información sobre las condiciones admitidas en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vea [Condiciones](../msbuild/msbuild-conditions.md).|  
 |`ContinueOnError`|Parámetro opcional. Puede contener uno de los siguientes valores:<br /><br /> -   **WarnAndContinue** o **true**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento [Target](../msbuild/target-element-msbuild.md) y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como advertencias.<br />-   **ErrorAndContinue**. Cuando se produce un error en una tarea, las tareas subsiguientes en el elemento `Target` y la compilación continúan ejecutándose, y todos los errores de la tarea se tratan como errores.<br />-   **ErrorAndStop** o **false** (valor predeterminado). Cuando se produce un error en una tarea, las tareas restantes en el elemento `Target` y la compilación no se ejecutan, y se considera que se ha producido un error en todo el elemento `Target` y la compilación.<br /><br /> Las versiones de .NET Framework anteriores a 4.5 solo admiten los valores `true` y `false`.<br /><br /> Para obtener más información, consulte [Cómo: Pasar errores por alto en las tareas](../msbuild/how-to-ignore-errors-in-tasks.md).|  

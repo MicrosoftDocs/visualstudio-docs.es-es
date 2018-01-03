@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d83a19e04a2e795005f2e0cdf0fdfe3a30c22c87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e703372a3b59ceee439b234e02e4a2d5a3cb6275
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-set-your-form-properties"></a>Paso 3: Establecer las propiedades del formulario
 Después, se usa la ventana **Propiedades** para cambiar la apariencia del formulario.  
@@ -51,9 +52,9 @@ Controlador de arrastre
   
 6.  Ejecute el programa de nuevo. Recuerde que puede utilizar cualquiera de los métodos siguientes para ejecutar el programa.  
   
-    -   Presione la tecla **F5**.  
+    -   Elija la tecla **F5**.  
   
-    -   En la barra de menús, elija **Depurar**, **Iniciar depuración**.  
+    -   En la barra de menús, seleccione **Depurar**, **Iniciar depuración**.  
   
     -   En la barra de herramientas, elija el botón **Iniciar depuración**, que es similar al siguiente.  
   

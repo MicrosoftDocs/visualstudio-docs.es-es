@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5aaff542f654928a7ed56313232a6e6ead67f9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="filtering-report-views"></a>Filtrar las vistas de informe
 Puede aplicar filtros a los archivos de datos de generación de perfiles para limitar los datos que se muestran en las vistas de los informes de rendimiento y que se exportan a los archivos de informe. Puede limitar un informe a los datos entre valores de marcas de tiempo y puede limitar los datos a procesos y subprocesos concretos. Puede guardar los filtros en un archivo y después crear un filtro en un archivo de datos de generación de perfiles diferente importando el filtro guardado.  
@@ -36,7 +37,7 @@ Puede aplicar filtros a los archivos de datos de generación de perfiles para li
   
 2.  Para cada cláusula que desee agregar a un filtro, seleccione o especifique los valores en los siguientes campos de una fila.  
   
-    |Campo|Descripción|  
+    |Campo|Description|  
     |-----------|-----------------|  
     |**Y/O**|Elija **Y** si tanto esta cláusula como la siguiente deben ser true para coincidir con un resultado. Elija **O** si esta cláusula o la siguiente pueden ser true para coincidir con un resultado.|  
     |**Campo**|Seleccione el campo que se va a utilizar en la cláusula de filtro de la lista de campos de datos.|  

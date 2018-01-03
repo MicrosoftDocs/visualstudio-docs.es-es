@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c50ce91ca1759d6d4768dec2a487e2ca169b2d64
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: beb882a336b5eeb95a9da554cc1377addf7e5772
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag (Método)
 Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.  

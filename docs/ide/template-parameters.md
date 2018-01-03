@@ -17,11 +17,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9a719e39506e080ce55bad45124e34d79dbbfac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7218b5bdcc95ed5db7f87c6fb17230895db579cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 Si se usan parámetros en las plantillas, se pueden reemplazar los valores de las partes principales de la plantilla, como nombres de clase y espacios de nombres, cuando se crean instancias de la plantilla. Estos parámetros se reemplazan por el asistente de la plantilla que se ejecuta en segundo plano cuando el usuario hace clic en **Aceptar** en los cuadros de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.  
@@ -53,7 +54,7 @@ Si se usan parámetros en las plantillas, se pueden reemplazar los valores de la
 > [!NOTE]
 >  Los parámetros de plantilla distinguen entre mayúsculas y minúsculas.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`clrversion`|Versión actual del Common Language Runtime (CLR).|  
 |`GUID [1-10]`|GUID utilizado para reemplazar el GUID del proyecto en un archivo de proyecto. Puede especificar hasta 10 GUID únicos (por ejemplo, `guid1)`.|  

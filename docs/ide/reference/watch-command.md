@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3234206f72e1ed6cb1e4aa46aad431bac046835
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad450688e8399ef247333685f95423e5fab7bec8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="watch-command"></a>Inspección (Comando)
 Crea y abre una instancia especificada de una ventana **Inspección** . Puede usar una ventana **Inspección** para calcular los valores de variables, expresiones y registros, para editar estos valores y para guardar los resultados.  

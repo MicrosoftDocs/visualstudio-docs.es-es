@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5369397adc0da3d4fb4b8da3aa7beec1f0ba3f67
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7bc5b81349c64c3b3422fb16b9cf578d0b8496ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Recolección de datos de control de tiempo detallados utilizando instrumentación
 El método de instrumentación de herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inserta código de generación de perfiles en una copia de un módulo. El código registra cada entrada, salida y llamada de función a las funciones del módulo durante una ejecución de la generación de perfiles. El método de instrumentación es útil para recopilar información de tiempo detallada sobre una sección del código y para entender el impacto de las operaciones de entrada y salida en el rendimiento de la aplicación.  
@@ -41,7 +42,7 @@ El método de instrumentación de herramientas de generación de perfiles [!INCL
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|En la página **General** , agregue los datos de duración y asignación de memoria .NET y especifique los detalles de nomenclatura del archivo de datos de generación de perfiles generado (.vsp).|-   [Recopilar datos de duración y de asignación de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|  
+|En la página **General** , agregue los datos de duración y asignación de memoria .NET y especifique los detalles de nomenclatura del archivo de datos de generación de perfiles generado (.vsp).|-   [Recopilar datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />-   [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|  
 |En la página **Iniciar** , si tiene varios proyectos .exe en su solución, especifique el inicio de la aplicación, así como el orden de inicio.|-   [Cómo: Especificar el binario de inicio](../profiling/how-to-specify-the-binary-to-start.md)|  
 |En la página **Binarios** , especifique una ubicación para las copias instrumentadas de los módulos. De forma predeterminada, los binarios originales se mueven a una carpeta de copia de seguridad.|-   [Cómo: Cambiar la ubicación de binarios instrumentados](../profiling/how-to-relocate-instrumented-binaries.md)|  
 |En la página **Interacción de capas** , agregue los datos de la llamada ADO.NET a la ejecución de la generación de perfiles.|-   [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|  

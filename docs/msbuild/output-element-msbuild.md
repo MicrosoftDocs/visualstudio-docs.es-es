@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 359bcd55d73429c118abc802a08ab86da96064e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: abeb4b0f4a34270b8b4ae4155cac910c08cf5f0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 Almacena valores de salida de tarea en elementos y propiedades.  
@@ -48,7 +49,7 @@ Almacena valores de salida de tarea en elementos y propiedades.
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Descripción|  
+|Atributo|Description|  
 |---------------|-----------------|  
 |`TaskParameter`|Atributo necesario.<br /><br /> El nombre del parámetro de salida de la tarea.|  
 |`PropertyName`|Se necesita el atributo `PropertyName` o `ItemName`.<br /><br /> La propiedad que recibe el valor del parámetro de salida de la tarea. Después, el proyecto puede hacer referencia a la propiedad con la sintaxis `$(`*PropertyName*`)`. Este nombre de propiedad puede ser un nuevo nombre de propiedad o un nombre que ya está definido en el proyecto.<br /><br /> Este atributo no se puede usar si `ItemName` también se utiliza.|  
@@ -60,7 +61,7 @@ Almacena valores de salida de tarea en elementos y propiedades.
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 

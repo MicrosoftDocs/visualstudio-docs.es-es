@@ -11,11 +11,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: fa2ffd383d2180b672347043dd02459473e3a608
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 72c8918d0f3396273bb0eee81cddd8f09c779592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel
 El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas las posibles interfaces de usuario. Tal vez no admita la interfaz de usuario concreta que desea probar. Por ejemplo, no puede crear directamente una prueba de IU codificada o una grabación de acciones para una hoja de cálculo de [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Sin embargo, puede crear una extensión para el marco de pruebas de IU codificadas que admita la interfaz de usuario concreta aprovechando la extensibilidad del marco de pruebas de IU codificadas. En el siguiente tema se proporciona un ejemplo de cómo extender el marco para que admita la creación de pruebas de IU codificadas y grabaciones de acciones para [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Para obtener más información acerca de las plataformas compatibles, consulte [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  

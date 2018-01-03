@@ -28,11 +28,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b0c421ca3d1e56c22cab7ff066d17d59914961c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mt-task"></a>MT (Tarea)
 Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más información, vea "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -43,7 +44,7 @@ Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más infor
 > [!NOTE]
 >  La documentación de mt.exe usa un guion (**-**) como prefijo para las opciones de línea de comandos, pero en este tema se usa una barra diagonal (**/**). Se aceptan ambos prefijos.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Parámetro **String[]** opcional.<br /><br /> Especifica el nombre de uno o varios archivos de manifiesto.<br /><br /> Para obtener más información, vea la opción **/manifest** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de la línea de comandos. Por ejemplo, "*/option1 /option2 /option#*". Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **MT**.<br /><br /> Para obtener más información, vea "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  

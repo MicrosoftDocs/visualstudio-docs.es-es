@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5072e552d0e8527caeb95edc65d8717bece036c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7156ca7c69d0704c889a1c21ec13242f3e92edc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overriding-toolsversion-settings"></a>Invalidar el valor de la versión de herramientas
 Puede cambiar el conjunto de herramientas para los proyectos y soluciones de tres maneras:  

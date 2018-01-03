@@ -17,11 +17,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da961d153713c996c6f057e7bb0366c747c87205
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Tutorial: identificar problemas de rendimiento
 En este tutorial se muestra cómo generar perfiles de una aplicación para identificar problemas de rendimiento.  

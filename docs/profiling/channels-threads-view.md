@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 878aa18e4df1c38790831bc550107f9f2247352e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 74d0796b1d2d3ecbe3ff08cc1eb4cfe79153f738
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="channels-threads-view"></a>Canales (Vista de subprocesos)
 El visualizador de simultaneidad muestra cuatro tipos de canales: canales de subprocesos, de discos, de marcador y de GPU.  

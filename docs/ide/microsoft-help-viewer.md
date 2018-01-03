@@ -22,11 +22,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 El Visor de Ayuda de Microsoft le permite instalar y ver en el equipo local el contenido de diversos productos y tecnologías, como Visual Studio, .NET Framework, referencia del lenguaje, SQL Server y desarrollo de Windows. El Visor de Ayuda le permite:  
@@ -48,7 +49,7 @@ Puede buscar información en el contenido instalado mediante las pestañas de na
 
 ### <a name="navigation-tabs"></a>Pestañas de navegación
 
-|Tab|Descripción|
+|Tab|Description|
 |---|-----------|
 |Contenido|Muestra el contenido instalado como una jerarquía (tabla de contenido). Puede especificar criterios para filtrar los títulos que aparecen.|
 |Índice|Muestra una lista alfabética de términos indexados. Puede buscar en el índice, especificar criterios para filtrar las entradas y requerir que las entradas contengan o empiecen con el texto que se especifica.|
@@ -65,7 +66,7 @@ La lista de contenido muestra qué libros puede instalar o ya instaló, si hay d
 
 **Nota:** La función de la pestaña **Administrar contenido** puede diferir dependiendo de si el administrador del Visor de Ayuda desactiva estas características o si no tiene acceso a Internet.
 
-### <a name="toolbar-buttons"></a>Botones de la barra de herramientas
+### <a name="toolbar-buttons"></a>Botones de barra de herramientas
 La barra de herramientas de la ventana del Visor de Ayuda contiene los siguientes botones:  
 
 -   El botón **Mostrar tema en contenido** muestra la ubicación del tema en la pestaña **Contenido**.  

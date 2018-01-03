@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7dbf181f89f6cc673452a595da8ec1ddd3b62529
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6e9088f73310da32875636b33a5a843d277c1e8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createitem-task"></a>CreateItem (Tarea)
 Rellena las colecciones de elementos con los elementos de entrada. Esto permite copiar los elementos de una lista en otra.  
@@ -34,9 +35,9 @@ Rellena las colecciones de elementos con los elementos de entrada. Esto permite 
 >  Esta tarea está en desuso. A partir de .NET Framework 3.5, los grupos de elementos se pueden colocar dentro de elementos [Target](../msbuild/target-element-msbuild.md). Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
   
 ## <a name="attributes"></a>Atributos  
- En la siguiente tabla se describen los parámetros de la tarea `CreateItem`.  
+ En la siguiente tabla se describen los parámetros de la tarea `CreateItem` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AdditionalMetadata`|Parámetro de matriz `String` opcional.<br /><br /> Especifica los metadatos adicionales que se adjuntarán a los elementos de salida.  Especifique el nombre y valor de los metadatos para el elemento empleando la siguiente sintaxis:<br /><br /> *nombreDeMetadatos*  `=` *valorDeMetadatos*<br /><br /> En caso de múltiples pares de nombre/valor de metadatos, se deberán separar con un punto y coma. Si el nombre o el valor contiene un punto y coma o cualquier otro carácter especial, deben ser de escape. Para obtener más información, vea [Cómo: Utilizar caracteres de escape especiales en MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
 |`Exclude`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los elementos que se excluirán de la colección de elementos de salida. Este parámetro puede contener las especificaciones del comodín. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md) y [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).|  

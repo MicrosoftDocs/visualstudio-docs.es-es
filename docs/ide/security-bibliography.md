@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c523af49bde89a67111acbb456d7848ea42521c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 189de218207aefb3d90333f37b0e41441ad20ba2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-bibliography"></a>Bibliografía sobre seguridad
 A continuación se incluye una selección de los recursos, disponibles en línea e impresos, sobre el tema de desarrollo de aplicaciones seguras y la configuración de entornos seguros:  

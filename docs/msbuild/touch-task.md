@@ -21,11 +21,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 663468ec8828ac0c153714548253c1a32d5c7613
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 459cea5aa39ae718fddbd97114528b45ddc460c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="touch-task"></a>Touch (Tarea)
 Establece la hora de acceso y de modificación de los archivos.  
@@ -33,7 +34,7 @@ Establece la hora de acceso y de modificación de los archivos.
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Touch` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AlwaysCreate`|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, crea cualquier archivo que todavía no existe.|  
 |`Files`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica la colección de archivos que se va a modificar.|  

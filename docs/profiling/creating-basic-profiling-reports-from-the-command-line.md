@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 111227b41b3fe48af963f93f07cdee5e5511661f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Crear informes básicos de generación de perfiles desde la línea de comandos
 En este tema se describen los comandos básicos de VSPerfReport que generan informes de valores separados por comas (.csv) a partir de un archivo .vsp o .vsps de datos de generación de perfiles. Para una descripción de todas las opciones de informes, vea [VSPerfReport](../profiling/vsperfreport.md).  
@@ -50,7 +51,7 @@ En este tema se describen los comandos básicos de VSPerfReport que generan info
 |**Módulo**|Enumera los datos de generación de perfiles de los módulos.|-   [Datos de muestreo](../profiling/modules-view-sampling-data.md)<br />-   [Datos de instrumentación](../profiling/modules-view-instrumentation-data.md)<br />-   [Datos de muestreo de memoria de .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Datos de instrumentación de memoria de .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Datos de contención](../profiling/modules-view-contention-data.md)|  
 |**Process**|Enumera los datos de generación de perfiles de los procesos.|-   [Vista Proceso](../profiling/process-view.md)<br />-   [Datos de contención](../profiling/process-view-contention-data.md)|  
 |**Subproceso**|Enumera los datos de generación de perfiles de los subprocesos.|-   [Vista Proceso](../profiling/process-view.md)|  
-|**ype**|Enumera los datos de asignación de la generación de perfiles por tipo.|-   [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)|  
+|**Type**|Enumera los datos de asignación de la generación de perfiles por tipo.|-   [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)|  
 |**Contention**|Contenciones de recursos.|-   [Contenciones de recursos](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Enumera los problemas de las reglas de rendimiento.|- Enumera el identificador de comprobación, la descripción y la ubicación en el código fuente del problema de la regla.|  
 |**ETW**|Enumera todos los eventos de Seguimiento de eventos para Windows (ETW) recopilados en la generación de perfiles.|-   [Informe de ETW](../profiling/event-tracing-for-windows-etw-report.md)|

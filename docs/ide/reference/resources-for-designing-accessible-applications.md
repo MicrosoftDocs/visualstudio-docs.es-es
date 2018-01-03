@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5469b3e6f09df75561cf85ba56c96721494aabf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para diseñar aplicaciones accesibles
 Use los siguientes vínculos para encontrar información sobre las tecnologías que admiten el diseño accesible, así como sugerencias y ejemplos para desarrollar sitios web y aplicaciones de Windows accesibles. Puede encontrar información general sobre accesibilidad en [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  

@@ -22,18 +22,19 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 29b9d79523f032b8d2fc5982747cb60d171a6ea9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2e7dfaa8f12a89f0afe13df56af0803b73b1a71a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly (Tarea)
 La tarea <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> genera un ensamblado si al menos una página de [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] del proyecto hace referencia a un tipo declarado localmente en ese proyecto. El ensamblado generado se quita una vez completado el proceso de compilación, o si este no se produce.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AssemblyName`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre corto del ensamblado que se genera para un proyecto y que también es el nombre del ensamblado de destino que se genera temporalmente. Por ejemplo, si un proyecto genera un archivo ejecutable de [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] con el nombre **WinExeAssembly.exe**, el parámetro **AssemblyName** tiene un valor de **WinExeAssembly**.|  
 |`CompileTargetName`|Parámetro obligatorio de tipo **String**.<br /><br /> Especifica el nombre del destino de [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] que se usa para generar ensamblados a partir de archivos de código fuente. El valor típico de **CompileTargetName** es **CoreCompile**.|  

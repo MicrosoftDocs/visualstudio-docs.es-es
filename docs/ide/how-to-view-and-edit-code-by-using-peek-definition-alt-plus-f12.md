@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf0dd4ab4a60dc7cfdfd351aee59c4942f75ef69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e44c9e7cc8aee41606366e1d4cb175a1855053f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)
 Puede usar el comando **Ver la definición** para ver y editar código sin salir del código que está escribiendo. **Ver la definición** e **Ir a definición** muestran la misma información, pero **Ver la definición** la muestra en una ventana emergente, mientras que **Ir a definición** muestra el código en una ventana de código independiente. **Ir a definición** hace que el contexto (es decir, la ventana de código activa, la línea actual y la posición del cursor) cambie a la ventana de código de definición. Con **Ver la definición**, puede ver y editar la definición y moverse por el archivo de definición manteniendo su lugar en el archivo de código original.  
@@ -62,7 +63,7 @@ Puede usar el comando **Ver la definición** para ver y editar código sin salir
 
 3. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.  
 
-     ![Configuración de la opción de definición de la inspección con el clic del mouse](../ide/media/editor_options_peek_view.png)  
+     ![Establecer la opción Ver la definición del clic del mouse](../ide/media/editor_options_peek_view.png)  
 
 #### <a name="to-use-keyboard-shortcuts-for-peek-definition"></a>Para utilizar métodos abreviados de teclado para Ver la definición    
 -   Puede usar estos métodos abreviados de teclado con la ventana **Ver la definición**:  
@@ -80,6 +81,6 @@ Puede usar el comando **Ver la definición** para ver y editar código sin salir
     >  También puede usar los mismos métodos abreviados de teclado para editar código en una ventana **Ver la definición** como haría en otros lugares en Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
-[Navegación por el código](../ide/navigating-code.md)  
+[Navegar por el código](../ide/navigating-code.md)  
 [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)  
 [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)

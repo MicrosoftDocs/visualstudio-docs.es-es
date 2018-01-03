@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 740eefc28e0b48d327fb5d0900ab39364633f877
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8c0f47186b36cea9b203805c3c9c009acb3fb42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Tutorial: Crear un archivo del proyecto de MSBuild desde el principio
 Los lenguajes de programación destinados a .NET Framework usan archivos de proyecto de MSBuild para describir y controlar el proceso de compilación de aplicaciones. Cuando se usa Visual Studio para crear un archivo del proyecto de MSBuild, el XML adecuado se agrega al archivo automáticamente. Sin embargo, puede ser de utilidad comprender cómo se organiza el XML y cómo se puede cambiar para controlar una compilación.  
@@ -400,7 +401,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  En el ejemplo siguiente se muestra un archivo del proyecto que compila una aplicación de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] y registra un mensaje que contiene el nombre del archivo de salida.  
   
 ### <a name="code"></a>Código  
@@ -440,7 +441,7 @@ Los lenguajes de programación destinados a .NET Framework usan archivos de proy
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
  En el ejemplo siguiente se muestra un archivo del proyecto que compila una aplicación de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] y registra un mensaje que contiene el nombre del archivo de salida.  
   
 ### <a name="code"></a>Código  

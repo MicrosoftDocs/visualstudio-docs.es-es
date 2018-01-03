@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bc6af5aa42eb480d5eff736633c2df6e68979
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-content-manager-overrides"></a>Invalidaciones de Help Content Manager
 Puede modificar el comportamiento predeterminado del Visor de Ayuda y las características relacionadas con la Ayuda en el IDE de Visual Studio. Para especificar algunas opciones, es necesario crear un archivo [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) con el fin de establecer diversos valores de la clave del Registro. Otros se establecen directamente en el Registro.
@@ -32,11 +33,11 @@ Puede modificar el comportamiento predeterminado del Visor de Ayuda y las caract
 4. Ejecute `devenv /updateconfiguration` en un símbolo del sistema del desarrollador.
 
 ### <a name="registry-key-values"></a>Valores de la clave del Registro
-|Valor de la clave del Registro|Tipo|Datos|Descripción|  
+|Valor de la clave del Registro|Tipo|Datos|Description|  
 |------------------|----|----|-----------|  
-|NewContentAndUpdateService|string|\<dirección URL HTTP del punto de conexión de servicio\>|Define un punto de conexión de servicio único.|
+|NewContentAndUpdateService|cadena|\<dirección URL HTTP del punto de conexión de servicio\>|Define un punto de conexión de servicio único.|
 |UseOnlineHelp|dword|`0` para especificar Ayuda local, `1` para especificar Ayuda en línea|Define el valor predeterminado de la Ayuda en línea o sin conexión.|
-|OnlineBaseUrl|string|\<dirección URL HTTP del punto de conexión de servicio\>|Define un punto de conexión F1 único.|
+|OnlineBaseUrl|cadena|\<dirección URL HTTP del punto de conexión de servicio\>|Define un punto de conexión F1 único.|
 |OnlineHelpPreferenceDisabled|dword|`0` para habilitar o `1` para deshabilitar la opción de preferencia de Ayuda en línea|Deshabilita la opción de preferencia de Ayuda en línea.|
 |DisableManageContent|dword|`0` para habilitar o `1` para deshabilitar la pestaña **Administrar contenido** en el Visor de Ayuda|Deshabilita la pestaña Administrar contenido.|
 |DisableFirstRunHelpSelection|dword|`0` para habilitar o `1` para deshabilitar las características de ayuda que se configuran la primera vez que se inicia Visual Studio.|Deshabilita la instalación de contenido en el primer inicio de Visual Studio.|

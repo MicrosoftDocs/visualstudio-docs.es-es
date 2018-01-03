@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 68198fbc036afc0bd5b82bd67d021031bd638413
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bcfd0c22f85bb1a5f5f158faf9358daa9adde768
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="removedir-task"></a>RemoveDir (Tarea)
 Quita los directorios especificados y todos sus archivos y subdirectorios.  
@@ -33,7 +34,7 @@ Quita los directorios especificados y todos sus archivos y subdirectorios.
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `RemoveDir` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Directories`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los directorios que se van a eliminar.|  
 |`RemovedDirectories`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los directorios que se han eliminado correctamente.|  

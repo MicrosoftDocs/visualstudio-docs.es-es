@@ -27,11 +27,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99dff1fbe5638c81572f9b370f94c0337f9f7e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista de tareas, Entorno, Opciones (Cuadro de diálogo)
 Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentarios que generan los avisos de **Lista de tareas**. Para mostrar estas opciones, seleccione **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y elija **Lista de tareas**.  
@@ -58,7 +59,7 @@ Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentar
  Prioridad  
  Establece la prioridad de las tareas que utilizan el token seleccionado. A los comentarios sobre tareas que comienzan con este token se les asigna automáticamente la prioridad designada en la **Lista de tareas**.  
   
- Name  
+ nombre  
  Escriba la cadena de token. Esto habilita el botón **Agregar**. En **Agregar**, esta cadena está incluida en la **Lista de tokens** y los comentarios que comienzan por este nombre se mostrarán en la **Lista de tareas**.  
   
  Add  

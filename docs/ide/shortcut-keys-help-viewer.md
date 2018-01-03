@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 17f71324031bfdf01b32151288257b97c036056b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de método abreviado (Visor de Ayuda)
 Puede navegar por el Visor de Ayuda de Microsoft con las teclas de método abreviado de la tabla siguiente:  
@@ -33,12 +34,12 @@ Puede navegar por el Visor de Ayuda de Microsoft con las teclas de método abrev
 |Barra de herramientas|Alt + flecha derecha|Mostrar la página siguiente.|  
 |Barra de herramientas|Alt + Inicio|Mostrar la página principal del revisor de ayuda.|  
 |Barra de herramientas|Ctrl + S|Resaltar el tema actual en la tabla de contenido (en la pestaña **Contenido**).|  
-|ToolBar|Ctrl + D|Agregar el tema actual a la pestaña **Favoritos**.|  
-|ToolBar|Ctrl + F|Mostrar la barra de búsqueda en el área de temas de manera que pueda buscar texto en el tema actual.|  
+|Barra de herramientas|Ctrl + D|Agregar el tema actual a la pestaña **Favoritos**.|  
+|Barra de herramientas|Ctrl + F|Mostrar la barra de búsqueda en el área de temas de manera que pueda buscar texto en el tema actual.|  
 |Barra de herramientas|Ctrl + P|Imprimir la página actual.|  
 |Barra de herramientas|Ctrl + F2|Mostrar una vista previa de impresión de la página actual.|  
 |Barra de herramientas|Ctrl + O|Mostrar el cuadro de diálogo **Opciones del Visor**.|  
-|ToolBar|Ctrl + Mayús + M|Mostrar la pestaña **Administrar contenido**.|  
+|Barra de herramientas|Ctrl + Mayús + M|Mostrar la pestaña **Administrar contenido**.|  
 |Navegadores|Alt + C<br /><br /> O BIEN<br /><br /> Ctrl + Mayús + C|Mostrar la pestaña **Contenido**.|  
 |Navegadores|Alt + I<br /><br /> O BIEN<br /><br /> Ctrl + Mayús + I|Mostrar la pestaña **Índice**.|  
 |Navegadores|Alt + F<br /><br /> O BIEN<br /><br /> Ctrl + Mayús + F|Mostrar la pestaña **Favoritos**.|  

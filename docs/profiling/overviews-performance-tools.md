@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e733a49617b55d2f09f7782c87c9160124ccd6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 00ec00f549198972714e95d9c586b0a3e30f2ffb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overviews-performance-tools"></a>Información general (herramientas de rendimiento)
 Esta sección proporciona información sobre los conceptos y la terminología relacionados con las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], herramientas que le sirven para medir las características de rendimiento de una aplicación en desarrollo.  
@@ -31,7 +32,7 @@ Esta sección proporciona información sobre los conceptos y la terminología re
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)  
  Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de muestreo.  
   
- [Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)  
+ [Descripción de los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)  
  Obtenga información acerca de los valores de datos que se presentan cuando se utiliza el método de generación de perfiles de instrumentación.  
   
  [Introducción a los valores de datos de asignación de memoria y duración de objetos](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  

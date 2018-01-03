@@ -21,11 +21,12 @@ caps.latest.revision: "44"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f97ce4480ebdf04cce6a129d7c1950ac28df2aaf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0120e93e809d1d0f57b5b7dc993a982b1c78836
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr"></a>VSInstr
 La herramienta VSInstr se utiliza para instrumentar binarios. Se invoca mediante la siguiente sintaxis:  
@@ -36,7 +37,7 @@ VSInstr [/U] filename [/options]
   
  En la siguiente tabla se describen las opciones de la herramienta VSInstr:  
   
-|Opciones|Descripción|  
+|Opciones|Description|  
 |-------------|-----------------|  
 |**Ayuda** o **?**|Muestra información de ayuda.|  
 |**U**|Escribe la salida de la consola redirigida como Unicode. Debe ser la primera opción especificada.|  

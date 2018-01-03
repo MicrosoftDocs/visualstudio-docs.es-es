@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6870313900da464bb2e8a9ae7facfea8c87b72d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 76485b85ffcf44ef94e116350ca8c7a3dc371bf8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
 Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++.  
@@ -29,7 +30,7 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, después, pulse **Opciones avanzadas**.  
   
 > [!NOTE]
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="browsingnavigation"></a>Exploración o navegación  
  Nunca debería elegir estas opciones excepto en el caso excepcional donde una solución sea tan grande que la actividad de base de datos use una cantidad inaceptable de recursos del sistema.  

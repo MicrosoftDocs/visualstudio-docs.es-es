@@ -11,11 +11,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 343935b46b17f876b6bde65d3bd1547069447730
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 65f9a9dd0e07a86ee6a4b883a7318f9add7df3cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar marcos de prueba unitaria de terceros
 El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de pruebas que haya desarrollado una interfaz de adaptador para el explorador. El programa de instalación del marco instala los binarios y agrega plantillas del proyecto de Visual Studio para los idiomas que admite. Cuando crea un proyecto con la plantilla, el marco se registra en el Explorador de pruebas. Una solución de Visual Studio puede contener proyectos de prueba unitaria que usen diferentes marcos y que estén destinados a diferentes idiomas. El Explorador de pruebas los ejecuta todos.  

@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4561c8955f0ce4b1b5b50be8e31b5ff2ef5751d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2f7697217d59d430e2b4661548b7f922f8fd8c95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 Implementa una solución después de una compilación o recompilación. Solo se aplica a los proyectos de código administrado.  

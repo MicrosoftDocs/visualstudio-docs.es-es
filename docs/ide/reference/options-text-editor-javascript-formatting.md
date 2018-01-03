@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9255473c3c8cd73a74a6758e698b8942dedce660
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8902d63f89167e4d977f130757af10557bffb529
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opciones, editor de texto, JavaScript, formato
 Use la página **Formato** del cuadro de diálogo **Opciones** para establecer las opciones para proporcionar formato al código en el Editor de código. Para acceder a esta página, vaya a la barra de menús y elija **Herramientas**, **Opciones** y expanda **Editor de texto**, **JavaScript** y **Formato**.  
@@ -32,7 +33,7 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
   
 ## <a name="uielement-list"></a>Lista de UIElement  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**Dar formato a una línea completada al presionar &Entrar**|Cuando se selecciona esta opción, el editor de código aplica formato a la línea automáticamente cuando presiona la tecla Entrar.|  
 |**Dar formato a una instrucción completada con ;**|Cuando se selecciona esta opción, el editor de código aplica formato a la línea automáticamente cuando presiona la tecla de punto y coma.|  
@@ -44,7 +45,7 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
   
 ## <a name="uielement-list"></a>Lista de UIElement  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**Colocar llave de apertura en línea nueva para funciones**|Cuando se selecciona esta opción, el editor de código desplaza la llave de apertura asociada a una función a una nueva línea.|  
 |**Colocar llave de apertura para bloques de control en nueva línea**|Cuando se selecciona esta opción, el editor de código desplaza la llave de apertura asociada a un bloque de control (por ejemplo, los bloques de control `if` y `while`) a una nueva línea.|  
@@ -54,7 +55,7 @@ Use la página **Formato** del cuadro de diálogo **Opciones** para establecer l
   
 ## <a name="uielement-list"></a>Lista de UIElement  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**Insertar espacio después del delimitador de coma**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de delimitadores de coma.|  
 |**Insertar espacio tras punto y coma en instrucción “for”**|Cuando se selecciona esta opción, el editor de código agrega un espacio después de cada punto y coma en la primera línea de un bucle `for`.|  

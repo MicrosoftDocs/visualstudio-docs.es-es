@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f37d62a906a0f528a821586470615a63f055af23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c6a704ac783f4efc300de26c2a5e987f82fc2e9c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-disassembly-command"></a>Mostrar desensamblador (Comando)
 Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.  
@@ -62,7 +63,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
   
 ## <a name="see-also"></a>Vea también  
  [Comando Mostrar pila de llamadas](../../ide/reference/list-call-stack-command.md)   
- [Comando Mostrar subprocesos](../../ide/reference/list-threads-command.md)   
+ [Mostrar subprocesos (Comando)](../../ide/reference/list-threads-command.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   

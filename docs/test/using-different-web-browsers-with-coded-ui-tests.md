@@ -11,11 +11,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 009ae62acc9685ee0d004976ce86b751cc0d1852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas de IU codificadas
 Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicaciones web grabando las pruebas con Internet Explorer. Después, puede personalizar la prueba y reproducirla de nuevo en Internet Explorer u otros tipos de exploradores para estas aplicaciones web.  

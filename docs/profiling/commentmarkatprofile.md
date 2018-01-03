@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f8c51fc0f1009316f406a45c62e95f24397fef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f196a9e2c5951037c215dfd69fd29864b72cd41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 El método `CommentMarkAtProfile` inserta un valor de marca de tiempo, una marca numérica y una cadena de comentario en el archivo .vsp. El valor de marca de tiempo se puede usar para sincronizar eventos externos. Para que la marca y el comentario se inserten, la generación de perfiles para el subproceso que contiene la función CommentMarkAtProfile debe estar activada.  
@@ -44,12 +45,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
  `szComment`  
   
- Puntero a la cadena de texto que se va a insertar. Esta cadena debe contener menos de 256 caracteres, incluido el terminador NULL.  
+ Puntero a la cadena de texto que se va a insertar. La cadena debe contener menos de 256 caracteres, incluido el terminador NULL.  
   
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Descripción|  
+|Enumerador|Description|  
 |----------------|-----------------|  
 |MARK_ERROR_MARKER_RESERVED|El parámetro es menor o igual que 0. Estos valores están reservados. La marca y el comentario no se registran.|  
 |MARK_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función. La marca y el comentario no se registran.|  
@@ -72,8 +73,8 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
 |||  
 |-|-|  
-|**Header**|Incluya VSPerf.h.|  
-|**Library**|Use VSPerf.lib.|  
+|**Header**|Incluye VSPerf.h|  
+|**Library**|Usa VSPerf.lib|  
 |**Unicode**|Se implementa como CommentMarkAtProfileW (Unicode) y CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Ejemplo  

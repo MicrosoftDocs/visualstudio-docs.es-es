@@ -28,17 +28,18 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f6535c656c512d5c849a8a5d8d2fb37319aa883
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 70daed24f72e6bf9efc0c81fc309c4b893285c39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-editor-modes"></a>Procedimiento para administrar los modos del editor
 Puede mostrar el editor de código de Visual Studio en varios modos de visualización.  
   
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en este artículo, en función de los valores de configuración o de edición activos. Para cambiar la configuración, por ejemplo, a la configuración **General** o **Visual C++**, elija **Herramientas**, **Importar y exportar configuraciones** y, después, elija **Restablecer todas las configuraciones**.
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en este artículo, en función de los valores de configuración o de edición activos. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas**, **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
   
 ## <a name="enabling-full-screen-mode"></a>Habilitar el modo de pantalla completa  
 Puede decidir ocultar todas las ventanas de herramientas y ver solo las ventanas de documento habilitando el modo **Pantalla completa**.  

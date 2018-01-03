@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 366fdc3483949eb0a83bfad0f51941442430292b
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: b454893c2d68b23d130d6ff38be493d988dfb1fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Buscar cambios en el código y otro historial con CodeLens
 

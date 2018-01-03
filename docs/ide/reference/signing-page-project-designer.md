@@ -23,11 +23,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d193b8927019354244d6d80032ed0c761f584f83
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 Use la página **Firma** del **Diseñador de proyectos** para firmar los manifiestos de aplicación e implementación y también para firmar el ensamblado (firma con nombre seguro).  

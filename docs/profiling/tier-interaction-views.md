@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf6f9e8ca68fdd17659c920a9419c12ade2cf935
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 13d84644ad1e934afbb8b9f56455bf3da474c38f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tier-interaction-views"></a>Vistas de interacción de capas
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de funciones de aplicaciones de varias capas que se comunican con las bases de datos a través de servicios de [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. Los datos se recopilan solamente para las llamadas a funciones sincrónicas. Puede incluir datos de interacción de capas en todos los métodos de generación de perfiles.  

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77230702bf8dc582e176e4dd0f17eab3385966c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d97695cae08352ea213ba02008ab99bef7f61c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Cómo: Suprimir advertencias del compilador
 Para no saturar un registro de compilación, especifique las clases de advertencias del compilador que no quiere incluir. Por ejemplo, puede usar esta técnica de revisar parte pero no toda la información que se genera automáticamente cuando se establece el nivel de detalle del registro de compilación en Normal, Detallado o Diagnóstico. Para obtener más información sobre el nivel de detalle, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).  

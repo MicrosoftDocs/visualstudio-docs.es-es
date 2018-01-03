@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3a7716f7f2f20504e854fe91afa0b315d856fef
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f9192bc9e69e977b8e0e8a4bbdf36a9d20e9d33f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 Varios productos pueden mostrar contenido de la Ayuda en el Visor de Ayuda de Microsoft, incluidos Visual Studio y SQL Server.
@@ -48,7 +49,7 @@ Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través 
 
 |         |         |
 |---------|---------|
-|  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Vea un vídeo")  |  [Vea un vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre cómo instalar el Visor de Ayuda de Microsoft con el Instalador de Visual Studio. |
+|  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |  [Vea un vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre cómo instalar el Visor de Ayuda de Microsoft con el Instalador de Visual Studio. |
 
 ## <a name="see-also"></a>Vea también
 [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)  

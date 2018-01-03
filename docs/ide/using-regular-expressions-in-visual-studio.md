@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 888f8f39b409559ac4d5c219f024a867f71b2263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 

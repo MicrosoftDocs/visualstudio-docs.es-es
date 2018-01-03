@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1672a505fbd7accfdc7fa644eafa6b3af0744d26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3e191509b7b0ed80447399eeb533c4a318ad8c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-memory-allocations-view"></a>Vista de asignaciones de memoria de .NET
 La vista de asignaciones enumera los tipos que se han creado durante la generación de perfiles. Cada tipo es el nodo raíz de un árbol de llamadas que muestra las rutas de ejecución de la función que dieron lugar a las asignaciones del tipo.  
@@ -40,21 +41,21 @@ La vista de asignaciones enumera los tipos que se han creado durante la generaci
   
 -   Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el tipo o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre del tipo o función asignado.|  
+|**Name**|Nombre del tipo o función asignado.|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
+|**Nombre de proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|Nombre del módulo que contiene el tipo o la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene el tipo o la función.|  
-|**Archivo de origen**|Archivo de origen que contiene la definición del tipo o de la función.|  
+|**Archivo de código fuente**|Archivo de origen que contiene la definición del tipo o de la función.|  
 |**Número de línea de la función**|Número de línea del inicio de la definición de este tipo o de la función en el archivo de origen.|  
 |**Nivel**|Indica si los datos son para un tipo o una función.|  
 |**Asignaciones inclusivas**|-   Para una función, el número total de objetos del tipo primario que la función ha creado. Este número incluye los objetos creados en funciones secundarias.<br />-   Para un tipo, el número total de instancias de ese tipo que se han creado.|  
 |**Porcentaje de asignaciones inclusivas**|-   Para una función, el porcentaje de todos los objetos creados en la generación de perfiles que eran asignaciones inclusivas del tipo primario por parte de la función.<br />-   Para un tipo, el porcentaje del número total de objetos creados en la generación de perfiles que eran instancias del tipo.|  
 |**Asignaciones exclusivas**|-   Para una función, el número de objetos creados cuando la función se estaba ejecutando directamente en la parte superior de la pila de llamadas. Este número no incluye los objetos creados en funciones secundarias.<br />-   Para un tipo, el número total de instancias de ese tipo que se han creado.|  
 |**Porcentaje de asignaciones exclusivas**|-   Para una función, el porcentaje de todos los objetos creados en la generación de perfiles que eran asignaciones exclusivas del tipo primario por parte de la función.<br />-   Para un tipo, el porcentaje del número total de objetos creados en la generación de perfiles que eran instancias del tipo.|  
-|**Bytes inclusivos**|-   Para una función, el número de bytes de memoria que la función ha asignado para objetos del tipo primario. Este número incluye la memoria que sus funciones secundarias han asignado.<br />-   Para un tipo, el número total de bytes asignados en la generación de perfiles para las instancias del tipo.|  
+|**Porcentaje de bytes inclusivos**|-   Para una función, el número de bytes de memoria que la función ha asignado para objetos del tipo primario. Este número incluye la memoria que sus funciones secundarias han asignado.<br />-   Para un tipo, el número total de bytes asignados en la generación de perfiles para las instancias del tipo.|  
 |**Porcentaje de bytes inclusivos**|-   Para una función, el porcentaje de toda la memoria asignada en la generación de perfiles que eran asignaciones inclusivas del tipo primario por parte de la función.<br />-   Para un tipo, el porcentaje de toda la memoria asignada en la generación de perfiles que se ha asignado para las instancias del tipo.|  
 |**Bytes exclusivos**|-   Para una función, el número de bytes de memoria que la función ha asignado para objetos del tipo primario. Este número no incluye la memoria que sus funciones secundarias han asignado.<br />-   Para un tipo, el número total de bytes asignados en la generación de perfiles para las instancias del tipo.|  
 |**Porcentaje de bytes exclusivos**|-   Para una función, el porcentaje de toda la memoria asignada en la generación de perfiles que eran asignaciones exclusivas del tipo primario por parte de la función.<br />-   Para un tipo, el porcentaje de toda la memoria asignada en la generación de perfiles que se ha asignado para las instancias del tipo.|

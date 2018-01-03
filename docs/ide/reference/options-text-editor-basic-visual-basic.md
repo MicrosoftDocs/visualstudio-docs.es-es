@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 746622d0a3282681599a26c8cba8782806e915e5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bc2d31565713e8985074ccf8fab6b9904f52199d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opciones, editor de texto, básico (Visual Basic)
 La página de propiedades **Opciones específicas de VB**, en la carpeta **Básico** de la carpeta **Editor de texto** del cuadro de diálogo **Opciones** (menú **Herramientas**) contiene las propiedades siguientes:  

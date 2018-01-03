@@ -12,11 +12,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: f58f547462c6c6f4d313d8b9814974f660bf59de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cb7e1e231cda62f5312be7dd1058667e5b9ae363
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Crear una prueba de IU codificada controlada por datos
 Para probar las distintas condiciones, puede ejecutar las pruebas varias veces con distintos valores de parámetros. Las pruebas de IU codificada controlada por datos son una forma cómoda de hacerlo. Defina los valores de parámetros en un origen de datos, y cada fila de dicho origen de datos será una iteración de la prueba de IU codificada. El resultado general de la prueba se basará en el resultado de todas las iteraciones. Por ejemplo, si se produce un error en una iteración de la prueba, el resultado general es error.  

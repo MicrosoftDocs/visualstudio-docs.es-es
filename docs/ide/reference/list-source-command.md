@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2f94f7bea2f4742fa975948d838e0cb01ce5e11e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bb3f3e6cb441697fb8546fcec485d292e979690b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-source-command"></a>Mostrar código fuente (Comando)
 Muestra las líneas de código fuente especificadas.  

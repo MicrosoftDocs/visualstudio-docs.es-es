@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aed7363a51b08359fc5023cbbd9b7df1b7b7f8cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 32ddf4774de92a24a5839f320d09eb61898c69d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-monitoring-performance-rules"></a>Reglas de rendimiento de la supervisión de recursos
 En la categoría de supervisión de recursos, los mensajes de rendimiento proporcionan datos adicionales sobre el rendimiento de la aplicación. Puede usar estos datos para analizar problemas de rendimiento. Estas reglas son informativas y se notifican para cada generación de perfiles.  

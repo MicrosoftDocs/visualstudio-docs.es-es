@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3378a554a9e576bde011a70916c48597218bb512
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 09141b10ab9ee39568176fa7252a503bdaa747dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos y avanzados en expresiones de búsqueda
 Puede usar operadores lógicos y operadores de búsqueda avanzada para refinar la búsqueda del contenido de Ayuda en el Visor de Ayuda.
@@ -27,7 +28,7 @@ Puede usar operadores lógicos y operadores de búsqueda avanzada para refinar l
 ## <a name="logical-operators"></a>Operadores lógicos
 Los operadores lógicos especifican cómo se deben combinar varios términos de búsqueda en una consulta de búsqueda. En la siguiente tabla se muestran los operadores lógicos AND, OR, NOT y NEAR.
   
-|Para buscar|Uso|Ejemplo|Resultado|  
+|Para buscar|Usar|Ejemplo|Resultado|  
 |-------------------|---------|-------------|------------|  
 |Ambos términos en el mismo artículo|AND|dib AND paleta|Temas que contienen "dib" y "paleta".|  
 |Cualquier término en un artículo|O|trama OR vector|Temas que contienen "trama" o "vector".|  
@@ -38,9 +39,9 @@ Los operadores lógicos especifican cómo se deben combinar varios términos de 
 > Debe escribir los operadores lógicos con todas las letras en mayúsculas para que el motor de búsqueda los reconozca.
 
 ## <a name="advanced-operators"></a>Operadores avanzados
-Los operadores de búsqueda avanzada refinan la búsqueda de contenido. Para ello, especifican en qué parte de un artículo se debe buscar el término de búsqueda. En la tabla siguiente se describen los cuatro operadores de búsqueda avanzada disponibles.
+Los operadores de búsqueda avanzada refinan la búsqueda de contenido. Para ello, especifican en qué parte de un artículo se debe buscar el término de búsqueda. En esta tabla se describen los cuatro operadores de búsqueda avanzada que hay disponibles.
 
-|Para buscar|Uso|Ejemplo|Resultado|  
+|Para buscar|Usar|Ejemplo|Resultado|  
 |-------------------|---------|-------------|------------|  
 |Un término en el título del artículo|title:|title:binaryreader|Temas que contienen "binaryreader" en sus títulos.|  
 |Un término en un ejemplo de código|code:|code:readdouble|Temas que contienen "readdouble" en un ejemplo de código.|  

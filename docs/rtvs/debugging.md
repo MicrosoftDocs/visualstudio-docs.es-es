@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: aca1fc0200e57867418c2a4c5ca7a718afdbc469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>Depuración de R en Visual Studio
 
@@ -57,12 +58,12 @@ Al estar detenido en el depurador, también está detenido en el aviso del explo
 
 El Explorador de entorno admite una serie de comandos especiales:
 
-| Comando | Descripción | 
+| Comando | Description |
 | --- | --- |
 | n | siguiente: ejecuta la siguiente instrucción en el archivo de código (igual que al depurar paso a paso por procedimientos). |
-| s | depurar paso a paso por instrucciones: ejecuta la siguiente instrucción en el archivo de código, depurando paso a paso por instrucciones un ámbito de función si la siguiente instrucción es una llamada de función. | 
+| s | depurar paso a paso por instrucciones: ejecuta la siguiente instrucción en el archivo de código, depurando paso a paso por instrucciones un ámbito de función si la siguiente instrucción es una llamada de función. |
 | f | finalizar: ejecuta el resto del ámbito de función actual y vuelve al autor de la llamada (igual que al salir de la depuración). |
-| c, cont | continuar: ejecuta el programa hasta el siguiente punto de interrupción. | 
+| c, cont | continuar: ejecuta el programa hasta el siguiente punto de interrupción. |
 | C | salir: finaliza la sesión de depuración. |
 | donde | mostrar pila: muestra la pila de llamadas en la ventana interactiva. |
 | ayuda | mostrar ayuda: muestra los comandos disponibles en la ventana interactiva. |

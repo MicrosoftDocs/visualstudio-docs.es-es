@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 280df2197aa7ef9b5e533244831585cb72f7466e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 7258a1ba99764fa7af7ce73874f447db99b8b168
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 

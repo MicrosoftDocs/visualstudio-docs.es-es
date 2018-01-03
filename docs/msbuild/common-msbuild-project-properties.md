@@ -22,11 +22,12 @@ caps.latest.revision: "36"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0ab37b9bf44cdac647a939ed7313a2e40eb88aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b78c2c1276f04a53a4f7a01e70a7d98efdba0514
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en los archivos .targets que proporciona MSBuild.  
@@ -35,7 +36,7 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
   
 ## <a name="list-of-common-properties-and-parameters"></a>Lista de propiedades y parámetros comunes  
   
-|Nombre de la propiedad o parámetro|Descripción|  
+|Nombre de la propiedad o parámetro|Description|  
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|Especifica carpetas adicionales en las que los compiladores deben buscar ensamblados de referencia.|  
 |AddModules|Hace que el compilador facilite toda la información de tipos presente en los archivos especificados al proyecto que se está compilando. Esta propiedad es equivalente al modificador `/addModules` del compilador.|  

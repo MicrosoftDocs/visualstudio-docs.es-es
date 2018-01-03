@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bb7444c529cc4ba592574ba38566235cb13c4169
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1dc0d1af8c79fe95ea091ac691519653b59a9648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (Tarea)
 Genera un manifiesto de implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Un manifiesto de implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] describe la implementación de una aplicación definiendo una identidad única para la implementación, identificando opciones de la implementación, como el modo de instalación o el modo en línea, especificando la configuración y la ubicación de actualización de la aplicación y señalando el manifiesto de la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] correspondiente.  
@@ -33,7 +34,7 @@ Genera un manifiesto de implementación de [!INCLUDE[ndptecclick](../deployment/
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea `GenerateDeploymentManifest`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AssemblyName`|Parámetro `String` opcional.<br /><br /> Especifica el campo `Name` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, el nombre se deduce de los parámetros `EntryPoint` o `InputManifest`. Si no se puede deducir el nombre, la tarea muestra un error.|  
 |`AssemblyVersion`|Parámetro `String` opcional.<br /><br /> Especifica el campo `Version` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, la tarea utiliza el valor "1.0.0.0".|  

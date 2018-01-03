@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41bf306b96db2b3aa00fff1bdcc8562823cd9d98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c829f11efd5eddda0ea819422856cb2bcc30c2ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---contention-data"></a>Vista Árbol de llamadas: datos de contención
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función enumera todas las funciones a las que llamó, el número de veces que se bloqueó la función y la cantidad de tiempo que se bloqueó la función porque estaba luchando por un recurso con otros subprocesos o procesos.  
@@ -34,7 +35,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
   
  Al establecer el nodo raíz, se eliminan todas las demás entradas de la vista, excepto el subárbol del nodo seleccionado. Para restablecer el nodo raíz en el nodo original, haga clic con el botón derecho en la vista Árbol de llamadas y, a continuación, haga clic en **Restablecer raíz**.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo de bloqueo exclusivo**|El tiempo que no se pudieron ejecutar en la generación de perfiles las instancias de esta función en esta ruta de acceso de ejecución. El valor no incluye el tiempo de bloqueo de las funciones secundarias a las que llamó la función.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo exclusivo de esta función en esta ruta de acceso de ejecución con respecto al tiempo de bloqueo total de la ejecución de generación de perfiles.|  
@@ -51,8 +52,8 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
-|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|  
+|**Nombre de proceso**|Nombre del proceso.|  
+|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   

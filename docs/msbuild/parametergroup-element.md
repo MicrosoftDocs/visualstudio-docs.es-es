@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 49da59387ccd3c7367e06c91fc7f57b824e32ab5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5ec46e5d6aea28a4124447c0f541cfb71e2f62f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parametergroup-element"></a>ParameterGroup (Elemento)
 Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask``TaskFactory`. Para obtener más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -47,13 +48,13 @@ Contiene una lista opcional de parámetros que estarán presentes en la tarea ge
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Parameter](../msbuild/parameter-element.md)|Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask``TaskFactory`. El nombre del elemento es el nombre del parámetro.|  
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|Proporciona una manera de registrar las tareas en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Puede haber cero o más elementos `UsingTask` en un proyecto.|  
 

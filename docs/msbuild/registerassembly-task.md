@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 20261d3eedaf82e636c2d8fa726a5344167640f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2b540f2b38385bdd18b1d97e4dee3e361b1c8710
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly (Tarea)
 Lee los metadatos del ensamblado especificado y agrega las entradas necesarias al Registro, lo que permite a los clientes COM crear clases de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de forma transparente. El comportamiento de esta tarea es similar, pero no idéntico, al de [Regasm.exe (Assembly Registration Tool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).  
@@ -33,7 +34,7 @@ Lee los metadatos del ensamblado especificado y agrega las entradas necesarias a
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `RegisterAssembly` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Assemblies`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los ensamblados que se van a registrar con COM.|  
 |`AssemblyListFile`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Contiene información sobre el estado entre las tareas `RegisterAssembly` y [UnregisterAssembly](../msbuild/unregisterassembly-task.md). Impide que la tarea `UnregisterAssembly` intente anular el registro de un ensamblado que no se pudo registrar en la tarea `RegisterAssembly`.|  

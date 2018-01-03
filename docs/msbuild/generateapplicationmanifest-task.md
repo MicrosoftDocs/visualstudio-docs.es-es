@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 79e8958ca5e2e75ed62da63f52bdac5b0f3b5043
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0ae1ff71e2fb304849b70222fec7a4ce85c0560
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (Tarea)
 Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifiesto nativo. Un manifiesto nativo describe un componente al definir una identidad única para dicho componente e identificar todos los ensamblados y archivos que lo conforman. Un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] extiende un manifiesto nativo indicando el punto de entrada de la aplicación y especificando el nivel de seguridad de la aplicación.  
@@ -34,7 +35,7 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/incl
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea `GenerateApplicationManifest`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AssemblyName`|Parámetro `String` opcional.<br /><br /> Especifica el campo `Name` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, el nombre se deduce de los parámetros `EntryPoint` o `InputManifest`. Si no se puede crear ningún nombre, la tarea produce un error.|  
 |`AssemblyVersion`|Parámetro `String` opcional.<br /><br /> Especifica el campo `Version` de la identidad del ensamblado para el manifiesto generado. Si no se especifica este parámetro, se utiliza un valor predeterminado de "1.0.0.0".|  
@@ -75,7 +76,7 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/incl
   
 ## <a name="item-metadata"></a>Metadatos de elementos  
   
-|Nombre de los metadatos|Descripción|  
+|Nombre de los metadatos|Description|  
 |-------------------|-----------------|  
 |`DependencyType`|Indica si se publica e instala la dependencia con la aplicación o un requisito previo. Estos metadatos son válidos para todas las dependencias, pero no se utilizan para los archivos. Los valores disponibles para estos metadatos son:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> El valor predeterminado es Install.|  
 |`AssemblyType`|Indica si la dependencia es un ensamblado administrado o nativo. Estos metadatos son válidos para todas las dependencias, pero no se utilizan para los archivos. Los valores disponibles para estos metadatos son:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` es el valor predeterminado, que indica que el generador del manifiesto determinará automáticamente el tipo de ensamblado.|  

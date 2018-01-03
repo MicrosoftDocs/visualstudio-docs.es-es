@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: 0ad7cdb245aa43deab22593fbbb5a5b10105f5af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón Importar del Administrador de fragmentos de código (**Herramientas**, **Administrador de fragmentos de código…**).  

@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0082f69e0c35bb84a15a8dd4798e7a17b6a3dd7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f45831618e7d685da1f50ae634770ef735a6ff78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Cómo: Compilar en un directorio de resultados común
 De manera predeterminada, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila cada proyecto en una solución en su propia carpeta dentro de la solución. Puede cambiar las rutas de salida de la compilación de los proyectos para forzar que todos los resultados se almacenen en la misma carpeta.  

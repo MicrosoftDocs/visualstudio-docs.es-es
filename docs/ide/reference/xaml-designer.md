@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3058e19d4ac6211c741efd973344a1af14238d10
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xaml-designer-options-page"></a>Página de opciones del Diseñador XAML
 Use la página de opciones del **Diseñador XAML** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir esta página, seleccione pulse el menú **Herramientas** y, después, elija **Opciones**. Para tener acceso a la página de propiedades **Diseñador XAML**, pulse el nodo **Diseñador XAML**. La configuración para el diseñador XAML se aplica cuando abre el documento. De esta manera, si realiza cambios en la configuración, necesita cerrar y volver a abrir Visual Studio para ver los cambios.

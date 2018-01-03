@@ -15,11 +15,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: "32"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3f7ea8032efa4b35603568afd8b17107c293f2e6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 661a3cd872cefe54a0c6c945708bbab576c40a03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Utilizar un archivo de configuración para definir un origen de datos
 Este tutorial muestra cómo usar un origen de datos definido en un archivo app.config para pruebas unitarias. Aprenderá a crear un archivo app.config que define un origen de datos que se puede usar en la clase <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. En este tutorial se presentan las tareas siguientes:  

@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8227a514887150e3477e026a238df608fe98d11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Administrar la firma de ensamblados y manifiestos
 La firma de nombre seguro ofrece una identidad única a un componente de software. Los nombres seguros se usan para garantizar que otra persona no puede suplantar la identidad del ensamblado y para garantizar que las dependencias de componente e instrucciones de configuración se asignan al componente y a la versión del componente correctos.  

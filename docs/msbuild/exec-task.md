@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7447f3f6fc9042bbcca5fc176e26200f4848a04c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 46bbd3bf979ef1406c1edbf89e9152ba439d3ef1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exec-task"></a>Exec (Tarea)
 Ejecuta el programa o comando especificado mediante los argumentos especificados.  
@@ -33,7 +34,7 @@ Ejecuta el programa o comando especificado mediante los argumentos especificados
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea `Exec`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Command`|Parámetro `String` requerido.<br /><br /> Comandos que se van a ejecutar. Estos pueden ser comandos del sistema, como attrib, o una aplicación ejecutable, como program.exe, runprogram.bat o setup.msi.<br /><br /> Este parámetro puede contener varias líneas de comandos. Alternativamente, puede colocar varios comandos en un archivo por lotes y ejecutarlo utilizando este parámetro.|  
 |`CustomErrorRegularExpression`|Parámetro `String` opcional.<br /><br /> Especifica una expresión regular que se utiliza para identificar líneas de error en los resultados de la herramienta. Esto resulta útil para las herramientas que generan resultados con un formato poco común.|  

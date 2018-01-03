@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b57361df805fbeb374d01236af1d1a16d0a3365a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ee1168865d5827f4536b39b8b0822f1e1d67635e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utilization-view"></a>Vista de utilización
 La **Vista de utilización** muestra información acerca de la CPU, la GPU y otros recursos del sistema utilizados por el proceso actual. Muestra el uso de núcleo promedio por el proceso analizado, el proceso inactivo, el proceso del sistema y otros procesos que se ejecutan en el sistema a lo largo del tiempo. No muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico. La vista se genera al dividir el tiempo de generación de perfiles en segmentos de tiempo cortos. Para cada segmento, el gráfico traza el promedio de subprocesos del proceso que se ejecutan en núcleos lógicos durante ese intervalo.  
@@ -31,7 +32,7 @@ La **Vista de utilización** muestra información acerca de la CPU, la GPU y otr
   
  El diagrama de actividad de GPU, muestra el número de motores de DirectX en uso a lo largo del tiempo.  Un motor está en uso si se está procesando un paquete DMA.  El gráfico no muestra el motor de DirectX específico (por ejemplo, 3D Engine, Video Engine y los demás).  
   
-## <a name="purpose"></a>Finalidad  
+## <a name="purpose"></a>Propósito  
  Se recomienda la vista de utilización como punto de partida de las investigaciones de rendimiento al usar el visualizador de simultaneidad. Dado que proporciona una visión general del grado de simultaneidad en una aplicación a lo largo del tiempo, puede utilizarla para identificar rápidamente las áreas que requieren que se optimice el rendimiento o el uso de la ejecución en paralelo.  
   
  Si le interesa la optimización del rendimiento, es posible que intente identificar comportamiento que no cumple las expectativas. También podría estar buscando la existencia y la causa de las regiones con poca utilización de núcleos de CPU lógicos. Puede que también esté buscando patrones de uso entre la CPU y la GPU.  

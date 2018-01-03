@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca31c95a1927565153270c8280b595fa0131c726
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 487986a1e5630b882a82b76b8acc6e2eeaa7cc88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Cómo: Mostrar las direcciones URL como vínculos en el editor
 Puede elegir que el editor de código trate los localizadores uniformes de recursos (direcciones URL) en el código como vínculos activos. Cuando use esta característica, las direcciones URL:  

@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d53cfcf4daa5e1ac1129230884684692867b121d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: abea2c5ed246fe3463205894326a7f9611b56043
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="io-time-threads-view"></a>Tiempo de E/S (Vista de subprocesos)
 Estos segmentos de la escala de tiempo están asociados a tiempos de bloqueo que se clasifican como E/S. Esto significa que un subproceso está esperando a que una operación de E/S finalice. El subproceso puede haberse bloqueado en una API o en una espera de kernel relacionada con una operación de E/S que el visualizador de simultaneidad identifica como E/S. Las API como `CreateFile()`, `ReadFile()`, y `WSARecv()` se incluyen en este grupo.  

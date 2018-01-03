@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb474e832f815453fd84ba35bc3680b961e17954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-components-tab"></a>Cuadro de herramientas, Componentes (Pestaña)
 Muestra los componentes que puede agregar a diseñadores de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] y [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Además de los componentes de [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] que se incluyen con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], como los componentes <xref:System.Messaging.MessageQueue> y <xref:System.Diagnostics.EventLog>, puede agregar sus propios componentes o unos de terceros a esta pestaña. Para obtener más información, consulte [Cómo: Manipular las fichas del cuadro de herramientas](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  

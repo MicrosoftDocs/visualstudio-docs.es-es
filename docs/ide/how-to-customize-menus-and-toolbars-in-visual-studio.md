@@ -31,11 +31,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 124448e5c989597361f678b290fe345968f0cf08
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c7c852033d5835c4da4cc7f1e3bdf5d20472439c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Cómo: Personalizar menús y barras de herramientas en Visual Studio
 Puede personalizar Visual Studio no solo mediante la adición y la eliminación de barras de herramientas y menús de la barra de menús, sino mediante la adición y la eliminación de comandos de cualquier barra de herramientas o menú concreto.  

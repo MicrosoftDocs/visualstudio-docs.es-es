@@ -26,11 +26,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 73e4544ab00142929bbd8d8dbdb154355c48c609
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5398f3eb1aa140ed53d6734734528d5c89a104c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rc-task"></a>RC (Tarea)
 Incluye la herramienta Compilador de recursos de Microsoft Windows (rc.exe). La tarea **RC** compila recursos, como cursores, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos (.res). Para obtener más información, vea "Resource Compiler" (Compilador de recursos) en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -38,7 +39,7 @@ Incluye la herramienta Compilador de recursos de Microsoft Windows (rc.exe). La 
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea RC. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Parámetro **String[]** opcional.<br /><br /> Agrega un directorio a la lista de directorios en que se buscan archivos de inclusión.<br /><br /> Para obtener más información, vea la opción **/I** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Usar RC [línea de comandos de RC]) en el sitio web de MSDN.|  
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de línea de comandos de ejemplo, **"***/option1 /option2 /option#*". Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **RC**.<br /><br /> Para obtener más información, vea las opciones de [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Usar RC [línea de comandos de RC]) en el sitio web de MSDN.|  

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1f10be3f7c021c353851039a7e7d07a250aa83a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c1f05d94cb836c065597c4c646fd6a74aaff97f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Tutorial: Crear una tarea insertada
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Para obtener más información, vea [Tareas insertadas](../msbuild/msbuild-inline-tasks.md).  

@@ -11,11 +11,12 @@ ms.assetid: c69fe3c7-f797-4e90-b21c-f2cc4dddf152
 caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 346cb9faddf2bd155c91d9fc72176020ba43197b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6a76f89db120f8655d63a064cb3d851abb9eac64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>Extensión de Excel de muestra: ActionFilter (Clase)
 Esta clase interna extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> y representa un filtro para las acciones de prueba en un elemento [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  

@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f2c3e5db9336009d5197608497772bc20d211c51
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 264b5b379b7c3f2fa364d01260e1da825b5d64d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-task"></a>MSBuild (Tarea)
 Compila proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] desde otro proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -33,7 +34,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `MSBuild` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`BuildInParallel`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, los proyectos especificados en el parámetro `Projects` se compilan en paralelo, si es posible. El valor predeterminado es `false`.|  
 |`Projects`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos del proyecto que se van a compilar.|  

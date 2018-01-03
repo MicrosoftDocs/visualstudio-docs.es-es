@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01dc6663c9242c1a919b47fb242343332cbc9a63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d622f1b4a71f52103d1d7a3148291dcd2dcf9129
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
 Muestra objetos de datos que puede agregar a formularios y componentes. La pestaña **Datos** del **Cuadro de herramientas** aparece cuando crea un proyecto que tiene un diseñador asociado. El **Cuadro de herramientas** aparece de manera predeterminada en el entorno de desarrollo integrado de Visual Studio; si necesita mostrar el **Cuadro de herramientas**, seleccione **Cuadro de herramientas** del menú **Ver**.  
@@ -31,7 +32,7 @@ Muestra objetos de datos que puede agregar a formularios y componentes. La pesta
 ## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario  
  Para ir directamente a la página de referencia de .NET Framework para un componente, presione **F1** en el elemento del **cuadro de herramientas** o en el elemento de componente en la bandeja del diseñador.  
   
-|Name|Descripción|  
+|nombre|Description|  
 |----------|-----------------|  
 |<xref:System.Data.DataSet>|Agrega una instancia de un conjunto de datos con o sin tipo al formulario o componente. Cuando arrastra este objeto en un diseñador, muestra un cuadro de diálogo que le permite seleccionar una clase de un conjunto de datos con tipo existente o especificar que quiere crear un conjunto de datos sin tipo y en blanco. **Nota:** No use el objeto <xref:System.Data.DataSet> en el **cuadro de herramientas** para crear una clase y un esquema de conjunto de datos con tipo. Para obtener más información, vea [Crear y configurar conjuntos de datos](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Proporciona una forma eficaz y flexible de mostrar datos en formato de tabla.|  

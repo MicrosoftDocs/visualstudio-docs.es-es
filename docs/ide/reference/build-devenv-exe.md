@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 490c3c4f424d9a8bac2fb0d4042604f8a53439fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8eba6684167e4b60f02512e9b0fc1c7dc514a614
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 Compila una solución mediante un archivo de configuración de solución especificado.  
@@ -40,7 +41,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
  Obligatorio. El nombre de la configuración de solución que se usará para compilar la solución mencionada en `SolutionName`.  
   
  /project `ProjName`  
- Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede especificar una ruta de acceso relativa desde la carpeta `SolutionName` al archivo del proyecto (o el nombre para mostrar del proyecto) o la ruta de acceso completa y el nombre del archivo del proyecto.  
+ Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede especificar una ruta de acceso relativa desde la carpeta `SolutionName` al archivo del proyecto (o el nombre para mostrar del proyecto), o bien la ruta de acceso completa y el nombre del archivo del proyecto.  
   
  /projectconfig `ProjConfigName`  
  Opcional. El nombre de una configuración de compilación de proyecto que se usará para crear el `/project` mencionado.  

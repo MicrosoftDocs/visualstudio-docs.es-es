@@ -17,11 +17,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 587edbdf52f34b2a7f634cdc22d74f5fc6ead1ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 67ad2608c16a4689433703971e8097069302cad1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths (Tarea)
 Devuelve las rutas de acceso al ensamblado de referencia de las diversas plataformas.  
@@ -29,7 +30,7 @@ Devuelve las rutas de acceso al ensamblado de referencia de las diversas platafo
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `GetReferenceAssemblyPaths` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`ReferenceAssemblyPaths`|Parámetro de salida `String[]` opcional.<br /><br /> Devuelve la ruta, basándose en el parámetro `TargetFrameworkMoniker`. Si `TargetFrameworkMoniker` es NULL o está vacío, esta ruta será `String.Empty`.|  
 |`FullFrameworkReferenceAssemblyPaths`|Parámetro de salida `String[]` opcional.<br /><br /> Devuelve la ruta, basándose en el parámetro `TargetFrameworkMoniker`, sin tener en cuenta la parte del perfil del moniker. Si `TargetFrameworkMoniker` es NULL o está vacío, esta ruta será `String.Empty`.|  

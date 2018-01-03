@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0ddb249c825048b5bb98dd5b648902663ccd85a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 15abebb58382674bc7943d7949dfddbc62524c91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider (Función)
 Inicializa el proveedor de marcadores. Debe llamarse antes que cualquier otra función del SDK del visualizador de simultaneidad.  
@@ -46,4 +47,4 @@ HRESULT CvInitProvider(
  **Encabezado:** cvmarkers.h  
   
 ## <a name="see-also"></a>Vea también  
- [Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)
+ [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

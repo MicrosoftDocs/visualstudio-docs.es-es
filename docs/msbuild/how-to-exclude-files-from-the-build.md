@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 444f397f01995b0aeef40c9d4efabbb57d65e594
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2148644e308e4e0c5a69d232082af2173f64ce8a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Cómo: Excluir archivos de la compilación
 En un archivo de proyecto puede utilizar comodines para incluir todos los archivos de un directorio o un conjunto de directorios anidado como entradas para una compilación. Sin embargo, puede haber un archivo en el directorio o un directorio en el conjunto anidado de directorios que no quiera incluir como entrada para una compilación. Puede excluir explícitamente ese archivo o directorio de la lista de entradas. También puede haber un archivo en un proyecto que solo quiera incluir bajo determinadas condiciones. Se pueden declarar explícitamente las condiciones para incluir un archivo en una compilación.  

@@ -11,11 +11,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: eea8b4bb93d0e848bd085fd534fcaaa553a15e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Agregar referencias usando NuGet en lugar de un SDK de extensión
 

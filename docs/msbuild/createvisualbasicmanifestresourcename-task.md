@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7f7b0858ec112bd78a0f2da6c9c6923414ada5e7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f12faac7a8c9e8ffdf9ef33716be4a87dad5dd96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName (Tarea)
 Crea el nombre de un manifiesto de estilo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] a partir del nombre de un archivo .resx especificado u otro recurso.  
@@ -32,7 +33,7 @@ Crea el nombre de un manifiesto de estilo [!INCLUDE[vbprvb](../code-quality/incl
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de [CreateVisualBasicManifestResourceName (Tarea)](../msbuild/createvisualbasicmanifestresourcename-task.md).  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`ManifestResourceNames`|Parámetro de solo lectura de salida <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br /> Los nombres de manifiesto resultantes.|  
 |`ResourceFiles`|Parámetro `String` requerido.<br /><br /> Nombre del archivo de recursos a partir del que se va a crear el nombre de manifiesto [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].|  

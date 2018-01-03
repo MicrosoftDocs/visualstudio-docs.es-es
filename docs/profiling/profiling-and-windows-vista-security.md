@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0ac59d9cb4b729b99193a921c5f6965e48815261
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0dad9e27eff76c36cadf132cb3a1b0aaec1e44da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-and-windows-vista-security"></a>Generar perfiles y seguridad en Windows Vista
 En función de la configuración de los permisos de acceso de usuario de [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] que haya facilitado un administrador de equipo, un usuario puede tener permisos de seguridad para generar perfiles de un proceso en ese equipo. En los siguientes ejemplos se muestran las posibles diferencias existentes entre los usuarios:  

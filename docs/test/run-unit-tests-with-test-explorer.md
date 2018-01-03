@@ -12,11 +12,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o proyectos de prueba unitaria de terceros, agrupar pruebas en categorías, filtrar la lista de pruebas, y crear, guardar y ejecutar las listas de reproducción de pruebas. También puede depurar las pruebas, y analizar la cobertura de código y el rendimiento de la prueba.  
@@ -127,7 +128,7 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
   
 ### <a name="test-explorer-groups"></a>Grupos del Explorador de pruebas  
   
-|Agrupar|Descripción|  
+|Agrupar|Description|  
 |-----------|-----------------|  
 |**Duración**|Agrupa las pruebas por tiempo de ejecución: **Rápido**, **Medio**y **Lento**.|  
 |**Resultado**|Agrupa las pruebas por resultados de ejecución: **Pruebas no superadas**, **Pruebas omitidas**y **Pruebas superadas**.|  
@@ -143,7 +144,7 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
   
  En el marco de pruebas unitarias de Microsoft para aplicaciones administradas, el par nombre-valor de rasgo se define en un atributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . El marco de pruebas también contiene estos rasgos predefinidos:  
   
-|Rasgo|Descripción|  
+|Rasgo|Description|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoría de propietario se define desde el marco de pruebas unitarias y requiere un valor de cadena del propietario.|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoría de prioridad se define desde el marco de pruebas unitarias y requiere un valor entero de la prioridad.|  
@@ -173,7 +174,7 @@ Con el Explorador de pruebas puede ejecutar pruebas unitarias de Visual Studio o
 > [!NOTE]
 >  Las búsquedas distinguen entre mayúsculas y minúsculas, y coinciden con la cadena especificada en cualquier parte del valor de criterios.  
   
-|Calificador:|Descripción|  
+|Calificador:|Description|  
 |---------------|-----------------|  
 |**Rasgo**|Busca coincidencias en el valor y en la categoría de rasgo. La sintaxis para especificar los valores y las categorías de rasgo se define en el marco de pruebas unitarias.|  
 |**Proyecto**|Busca coincidencias en los nombres de proyecto de prueba.|  

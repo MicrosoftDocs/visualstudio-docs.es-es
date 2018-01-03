@@ -15,17 +15,18 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vistas de datos del método de muestreo del generador de perfiles
 Esta sección contiene información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de muestreo.  
   
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Vista Resumen](../profiling/summary-view-sampling-data.md)  
@@ -46,7 +47,7 @@ Esta sección contiene información de referencia para las vistas y los informes
  [Vista Líneas](../profiling/lines-view-sampling-data.md)  
  Enumera las líneas del código fuente que se estaban ejecutando cuando se recopilaron las muestras.  
   
- [Vista Punteros de instrucciones (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
+ [Vista Punteros de instrucción (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Enumera las líneas del código fuente que se estaban ejecutando cuando se recopilaron las muestras.  
   
 ## <a name="reference"></a>Referencia  

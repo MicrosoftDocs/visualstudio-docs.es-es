@@ -14,11 +14,12 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a3ab1b6abf1949dd2c3a6afcca2987ebcf1594b9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 85abc33ab5dd1253402e020c3b77c1b639e5ae44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Proyecto de ejemplo para crear pruebas unitarias
 Este código de ejemplo se proporciona para su uso en los siguientes tutoriales:  

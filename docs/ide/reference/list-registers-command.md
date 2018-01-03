@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83f4830b79c4492337abb6052b1b2803b34b5a9b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 016de257d1ce4e6d2aa95284adbe762a5c54eacf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-registers-command"></a>Mostrar registros (Comando)
 Muestra el valor de los registros seleccionados y permite modificar la lista de registros que se van a mostrar.  

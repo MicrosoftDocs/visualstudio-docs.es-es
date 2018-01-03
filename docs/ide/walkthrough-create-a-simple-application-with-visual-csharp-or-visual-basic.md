@@ -15,36 +15,29 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 44429ccde6dece8ff0b8a0c41fd4cff328d1160f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Tutorial: Crear una aplicación sencilla con Visual C# o Visual Basic
-Tras completar este tutorial, estará familiarizado con muchas de las herramientas, cuadros de diálogo y diseñadores que puede usar para desarrollar aplicaciones con Visual Studio. Creará una aplicación sencilla "Hola mundo", diseñará la interfaz de usuario, agregará código y depurará errores, mientras aprende a trabajar en el entorno de desarrollo integrado (IDE).  
-  
- Este tema contiene las siguientes secciones:  
-  
- [Configurar el IDE](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)  
-  
- [Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)  
-  
- [Depurar y probar la aplicación](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
+Tras completar este tutorial, estará familiarizado con muchas de las herramientas, cuadros de diálogo y diseñadores que puede usar para desarrollar aplicaciones con Visual Studio. Creará una aplicación sencilla "Hola mundo", diseñará la interfaz de usuario, agregará código y depurará errores, mientras aprende a trabajar en el entorno de desarrollo integrado (IDE).
   
 ##  <a name="BKMK_ConfigureIDE"></a> Configurar el IDE  
 Cuando inicie Visual Studio por primera vez, se le pedirá que inicie sesión. Este paso es opcional para este tutorial. Después, probablemente aparezca un cuadro de diálogo que le pide que elija la configuración de desarrollo y el tema de color. Mantenga los valores predeterminados y elija **Iniciar Visual Studio**.  
 
 ![Cuadro de diálogo Elegir configuración](../ide/media/exploreide-settings.png "exploreide-settings")
   
- Una vez que se haya iniciado Visual Studio, verá las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. En el centro de la ventana de la aplicación está la **Página principal**. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio donde está la **página de inicio** . Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.  
+Una vez que se haya iniciado Visual Studio, verá las ventanas de herramientas, los menús, las barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. En el centro de la ventana de la aplicación está la **Página principal**. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio donde está la **página de inicio** . Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.  
   
- ![IDE con configuración general aplicada](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
+![IDE con configuración general aplicada](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
   
 ##  <a name="BKMK_CreateApp"></a> Crear una aplicación sencilla  
   
 ### <a name="create-the-project"></a>Crear el proyecto  
- Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una solución. Para este ejemplo, creará un proyecto de Windows Presentation Foundation (WPF).  
+Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una solución. Para este ejemplo, creará un proyecto de Windows Presentation Foundation (WPF).  
   
 #### <a name="to-create-the-wpf-project"></a>Para crear el proyecto de WPF  
   
@@ -56,11 +49,11 @@ Cuando inicie Visual Studio por primera vez, se le pedirá que inicie sesión. E
   
      ![Crear un proyecto de WPF de C#, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
- Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. WPF Designer muestra una vista de diseño y una vista XAML de MainWindow.xaml en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas.  Puede elegir ver solo la vista visual o solo la vista XAML. (Para obtener más información, vea [WPF Designer para desarrolladores de Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Los elementos siguientes aparecen en el **Explorador de soluciones**:  
+Visual Studio crea el proyecto HelloWPFApp y la solución, y el **Explorador de soluciones** muestra los distintos archivos. WPF Designer muestra una vista de diseño y una vista XAML de MainWindow.xaml en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas.  Puede elegir ver solo la vista visual o solo la vista XAML. (Para obtener más información, vea [WPF Designer para desarrolladores de Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Los elementos siguientes aparecen en el **Explorador de soluciones**:  
   
- ![Explorador de soluciones con los archivos HelloWPFApp cargados](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+![Explorador de soluciones con los archivos HelloWPFApp cargados](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
- Después de crear el proyecto, puede personalizarlo. Mediante la ventana **Propiedades** , (que se encuentra en el menú **Ver** ), puede mostrar y cambiar las opciones de los elementos de proyecto, controles y otros elementos de una aplicación.  
+Después de crear el proyecto, puede personalizarlo. Mediante la ventana **Propiedades** , (que se encuentra en el menú **Ver** ), puede mostrar y cambiar las opciones de los elementos de proyecto, controles y otros elementos de una aplicación.  
   
 #### <a name="to-change-the-name-of-mainwindowxaml"></a>Para cambiar el nombre de MainWindow.xaml  
 Asignemos a MainWindow un nombre más específico.  
@@ -73,7 +66,7 @@ Asignemos a MainWindow un nombre más específico.
      El **Explorador de soluciones** muestra que el nombre de archivo es ahora Greetings.xaml y que el nombre del archivo de código anidado es ahora Greetings.xaml.vb o Greetings.xaml.cs. Este archivo de código está anidado bajo el nodo del archivo .xaml para mostrar que están muy relacionados entre sí.  
   
 ### <a name="design-the-user-interface-ui"></a>Diseñar la interfaz de usuario (IU)  
- Agregaremos tres tipos de controles a esta aplicación: un control TextBlock, dos controles RadioButton y un control Button.  
+Agregaremos tres tipos de controles a esta aplicación: un control TextBlock, dos controles RadioButton y un control Button.  
   
 #### <a name="to-add-a-textblock-control"></a>Para agregar un control TextBlock  
   
@@ -85,16 +78,16 @@ Asignemos a MainWindow un nombre más específico.
   
 3.  Agregue un control TextBlock a la superficie de diseño. Para ello, elija el elemento **TextBlock** y arrástrelo a la ventana en la superficie de diseño. Centre el control cerca de la parte superior de la ventana.  
   
- La ventana debería ser similar a la siguiente ilustración:  
+La ventana debería ser similar a la siguiente ilustración:  
   
- ![Control TextBlock del formulario Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
+![Control TextBlock del formulario Greetings](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
- El marcado XAML debe tener un aspecto similar al siguiente:  
+El marcado XAML debe tener un aspecto similar al siguiente:  
   
-     ```xaml  
-     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
-     ```  
-  
+```xaml  
+<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
+```  
+
 #### <a name="to-customize-the-text-in-the-text-block"></a>Para personalizar el texto en el bloque de texto  
   
 1.  En la vista XAML, busque el marcado de TextBlock y cambie el atributo de texto:  
@@ -158,7 +151,7 @@ El último elemento de la interfaz de usuario que agregará es un control [Butto
      ![Formulario Greetings con etiquetas de control](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>Agregar código al botón Mostrar  
- Cuando se ejecuta esta aplicación, aparece un cuadro de mensaje después de que un usuario elija un botón de radio y, luego, el botón **Display**. Aparecerá un cuadro de mensaje para Hello y otro para Goodbye. Para crear este comportamiento, debe agregar código al evento Button_Click en Greetings.xaml.vb o Greetings.xaml.cs.  
+Cuando se ejecuta esta aplicación, aparece un cuadro de mensaje después de que un usuario elija un botón de radio y, luego, el botón **Display**. Aparecerá un cuadro de mensaje para Hello y otro para Goodbye. Para crear este comportamiento, debe agregar código al evento Button_Click en Greetings.xaml.vb o Greetings.xaml.cs.  
   
 #### <a name="add-code-to-display-message-boxes"></a>Agregar código para mostrar cuadros de mensaje    
 1.  En la superficie de diseño, haga doble clic en el botón **Mostrar** .  
@@ -201,10 +194,10 @@ El último elemento de la interfaz de usuario que agregará es un control [Butto
 3.  Guarde la aplicación.  
   
 ##  <a name="BKMK_DebugTest"></a> Depurar y probar la aplicación  
- Después, depurará la aplicación para buscar errores y probar que los dos cuadros de mensaje aparecen correctamente. Las siguientes instrucciones indican cómo compilar e iniciar el depurador. Lea también [Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) y [Depurar WPF](../debugger/debugging-wpf.md) para obtener más información.  
+Después, depurará la aplicación para buscar errores y probar que los dos cuadros de mensaje aparecen correctamente. Las siguientes instrucciones indican cómo compilar e iniciar el depurador, pero más adelante podría leer [Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) y [Debugging WPF](../debugger/debugging-wpf.md) para obtener más información.  
   
 ### <a name="find-and-fix-errors"></a>Buscar y corregir errores  
- En este paso, buscará el error que se ha producido anteriormente al cambiar el nombre del archivo MainWindow.xaml.  
+En este paso, buscará el error que se ha producido anteriormente al cambiar el nombre del archivo MainWindow.xaml.  
   
 #### <a name="to-start-debugging-and-find-the-error"></a>Para iniciar la depuración y buscar el error  
   
@@ -218,7 +211,7 @@ El último elemento de la interfaz de usuario que agregará es un control [Butto
   
      ![Comando Detener depuración del menú Depurar](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
   
- Hemos cambiado el nombre de MainWindow.xaml a Greetings.xaml al comienzo de este tutorial, pero el código todavía hace referencia a MainWindow.xaml como URI de inicio de la aplicación, por lo que el proyecto no puede iniciarse.  
+Hemos cambiado el nombre de MainWindow.xaml a Greetings.xaml al comienzo de este tutorial, pero el código todavía hace referencia a MainWindow.xaml como URI de inicio de la aplicación, por lo que el proyecto no puede iniciarse.  
   
 #### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>Para especificar Greetings.xaml como el URI de inicio  
   
@@ -284,7 +277,7 @@ Puede probar el código durante la depuración. Para ello, agregue algunos punto
   
 ¡Enhorabuena por completar este tutorial! Puede encontrar el .exe creado en el directorio de soluciones y proyectos (...\HelloWPFApp\HelloWPFApp\bin\Release\\). Si desea explorar más ejemplos, vea [Visual Studio Samples](../ide/visual-studio-samples.md).  
   
-## <a name="see-also"></a>Vea también  
- [Novedades de Visual Studio 2017](../ide/whats-new-in-visual-studio.md)   
- [Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)   
- [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)
+## <a name="see-also"></a>Vea también
+[Novedades de Visual Studio 2017](../ide/whats-new-in-visual-studio.md)   
+[Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)   
+[Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)

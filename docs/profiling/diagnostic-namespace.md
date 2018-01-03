@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76d86738f53e0d6dc60289d1e3f395794f8482ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3fb9b831562e2d9e4ce7d686f49ac484d58f6804
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diagnostic-namespace"></a>diagnostic (Espacio de nombres)
 El espacio de nombres `diagnostics` proporciona funcionalidad para emitir los marcadores del visualizador de simultaneidad.  
@@ -33,14 +34,14 @@ namespace diagnostic;
   
 ### <a name="classes"></a>Clases  
   
-|Nombre|Descripción|  
+|nombre|Description|  
 |----------|-----------------|  
 |[Clase marker_series](../profiling/marker-series-class.md)|Representa un canal de la serie de eventos generados por un único proveedor.|  
 |[Clase span](../profiling/span-class.md)|Define una fase de la aplicación.|  
   
 ### <a name="enumerations"></a>Enumeraciones  
   
-|Nombre|Descripción|  
+|nombre|Description|  
 |----------|-----------------|  
 |[Enumeración marker_importance](../profiling/marker-importance-enumeration.md)|Representa el nivel de importancia de un marcador del visualizador de simultaneidad.|  
   

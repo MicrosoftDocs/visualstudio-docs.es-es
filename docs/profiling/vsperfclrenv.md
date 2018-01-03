@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 580d3b5f1dab03e34dac7c452da08e00e453a503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f41fdf3a337fb2dea5ccca7131de34743c9096
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 La herramienta VSPerfCLREnv se usa para establecer las variables de entorno necesarias para generar perfiles de una aplicación de .NET Framework. Utiliza la siguiente sintaxis:  
@@ -67,7 +68,7 @@ VSPerfCmd /Attach:MyService.exe
   
  En la siguiente tabla se describen las opciones de VSPerfCLREnv para la generación de perfiles de instrumentación:  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**TraceOn**|Permite generar perfiles mediante el método de instrumentación. No permite la generación de perfiles de asignación de memoria o recopilar datos de duración de objetos.|  
 |**TraceGC**|Permite generar perfiles de asignación de memoria mediante el método de instrumentación. No permite recopilar datos de duración de objetos.|  
@@ -77,7 +78,7 @@ VSPerfCmd /Attach:MyService.exe
   
  En la siguiente tabla se describen las opciones de VSPerfCLREnv para la generación de perfiles de muestreo:  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**SampleOn**|Permite generar perfiles mediante el método de muestreo. No permite la generación de perfiles de asignación de memoria o recopilar datos de duración de objetos.|  
 |**SampleGC**|Permite generar perfiles de asignación de memoria mediante el método de muestreo. No permite recopilar datos de duración de objetos.|  
@@ -88,7 +89,7 @@ VSPerfCmd /Attach:MyService.exe
   
  Para generar perfiles de un servicio administrado como una aplicación web ASP.NET que inicia el sistema operativo en lugar del usuario, utilice las opciones de generación de perfiles global de las opciones de VSPerfCLREnv. En la siguiente tabla se describen las versiones globales de las opciones de VSPerfCLREnv. Estas opciones establecen las variables de entorno adecuadas en el registro.  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**GlobalTraceOn**|Permite generar perfiles globales mediante el método de instrumentación. No recopila eventos de asignación de memoria ni datos de duración de objetos.|  
 |**GlobalTraceGC**|Permite generar perfiles de asignación de memoria globales mediante el método de instrumentación. No permite recopilar datos de duración de objetos.|  
@@ -101,7 +102,7 @@ VSPerfCmd /Attach:MyService.exe
   
  Cuando haya terminado de generar perfiles de la aplicación administrada, utilice una de las siguientes opciones para eliminar las variables de entorno que agregó VSPerfCLREnv. En la siguiente tabla se describe cómo eliminar las variables de entorno estándar y globales:  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**Off**|Elimina las variables de entorno de generación de perfiles de .NET estándar. Utilice esta opción cuando se hayan utilizado las opciones de VSPerfClrEnv que no sean globales para establecer las variables de entorno del generador de perfiles.|  
 |**GlobalOff**|Elimina las variables de entorno de generación de perfiles de .NET global. Utilice esta opción cuando el sistema operativo, y no el generador de perfiles, haya iniciado la aplicación.|  

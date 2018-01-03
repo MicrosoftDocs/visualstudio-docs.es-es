@@ -13,11 +13,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 510913c4989e0dac8fd3fa3091a91b2173639c83
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C#
 

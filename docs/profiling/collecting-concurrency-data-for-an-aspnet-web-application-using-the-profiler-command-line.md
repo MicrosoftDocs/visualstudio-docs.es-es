@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1253b1bef69303386b54bb31f30c48f7b415c6d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 6f20e045eb6f0b801cffafb3224971bec2354cc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Recopilar datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 El método de simultaneidad de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite recopilar datos de contención de recursos.  
@@ -40,7 +41,7 @@ El método de simultaneidad de las herramientas de generación de perfiles de [!
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
 |**Generar perfiles mediante el método de muestreo**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Generar perfiles mediante el método de instrumentación**|-   [Recopilar datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Generar perfiles mediante el método de instrumentación**|-   [Recopilar datos de control de tiempo detallados utilizando la instrumentación](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
 |**Generar perfiles de recolección de elementos no utilizados y de asignación de memoria**|-   [Recopilar datos de memoria](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-concurrency-issues"></a>Generar perfiles de problemas de simultaneidad  

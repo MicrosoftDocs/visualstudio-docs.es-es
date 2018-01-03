@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
 Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Las funciones se especifican en el elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).  
@@ -28,7 +29,7 @@ Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE
 ## <a name="functions"></a>Funciones  
  En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.  
   
-|Función|Descripción|Lenguaje|  
+|Función|Description|Lenguaje|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  

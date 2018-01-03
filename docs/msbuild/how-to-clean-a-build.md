@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b935e0d09bb80347ee17c796f83846cef02a39f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5316a6f7f206ce5f28c6a76d13bf6dc8e4143125
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-clean-a-build"></a>Cómo: Limpiar los resultados de una compilación
 Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [Referencia de tareas](../msbuild/msbuild-task-reference.md).  

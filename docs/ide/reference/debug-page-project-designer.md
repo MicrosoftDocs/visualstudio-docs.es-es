@@ -16,11 +16,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39b19b6e418203a33c410173d46e190bbd6c01e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a16f39d9f9ba6c3e0790a53c85d0824178083953
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
 > [!WARNING]

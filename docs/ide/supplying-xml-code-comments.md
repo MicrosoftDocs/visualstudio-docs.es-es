@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fe5e36b6d6f8cd7672c2300c385a1045bb677f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ceadf13f6567b303337b14b6b76be86ddcbac8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-xml-code-comments"></a>Proporcionar comentarios del código XML
 Puede hacer que los comentarios de los archivos de código fuente estén disponibles como IntelliSense. Al agregar el modificador /doc a la línea de comandos del compilador de Visual Basic, C# o C++, se genera un archivo .xml que sirve como base para la documentación de IntelliSense.  

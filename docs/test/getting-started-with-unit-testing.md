@@ -12,11 +12,12 @@ ms.assetid: 2171CD69-FBB1-4994-9DCC-3BFFDFD26662
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 17113215615ff87ef0af611a5bc2061ca0126911
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bfb37b6ea2c448d0243f72857de0a29fa2d20c87
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-unit-testing"></a>Introducción a las pruebas unitarias
 

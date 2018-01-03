@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d94a31fbb1c0fca649f53496ff39fe36527c013
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a20c3cff1ee86e0dc0a9530e9ac75aabe881bacb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de servicios de .NET Framework utilizando la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar datos de asignación de memoria y de duración de objetos para un servicio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] mediante el método de muestreo desde la línea de comandos.  
@@ -36,7 +37,7 @@ En esta sección se describen los procedimientos y las opciones para recopilar d
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
 |**Generar perfiles mediante el método de muestreo**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
-|**Generar perfiles mediante el método de instrumentación**|-   [Recopilar datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
+|**Generar perfiles mediante el método de instrumentación**|-   [Recopilar datos de control de tiempo detallados utilizando la instrumentación](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
 |**Generar perfiles de actividad de subprocesos y contención de recursos**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-net-framework-memory-data"></a>Generar perfiles de datos de memoria de .NET Framework  

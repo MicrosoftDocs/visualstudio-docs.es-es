@@ -11,11 +11,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
 Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. A continuación le indicamos cómo debe notificarnos un problema para que podamos diagnosticarlo y corregirlo.  
@@ -46,7 +47,7 @@ Si aún no lo ha hecho, inicie sesión Visual Studio a fin de notificar un probl
 
 ## <a name="provide-a-screenshot-and-attachments-optional"></a>Proporcionar una captura de pantalla y datos adjuntos (opcional)
 ###  <a name="provide_screenshots"></a>
- Elija enviar la pantalla actual a Microsoft. Puede adjuntar capturas de pantalla adicionales u otros archivos. Para ello, haga clic en el botón **Adjuntar archivos adicionales**.  
+ Elija enviar la pantalla actual a Microsoft. Puede adjuntar capturas de pantalla adicionales u otros archivos. Para ello, haga clic en el botón **Adjuntar archivos adicionales** .  
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Proporcione un volcado de seguimiento y montón (opcional)  
 ###  <a name="provide_a_trace_and_heap_dump"></a>  

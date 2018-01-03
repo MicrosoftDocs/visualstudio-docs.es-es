@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f35dd690c97b4f69ff4633155f05dd9a2ebd7a2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 30c2d7fe3562221c2238a6b12a3eed37318ea504
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-memory-usage"></a>Analizar el uso de memoria
 Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta de diagnóstico **Uso de memoria** integrada del depurador. La herramienta Uso de memoria permite tomar una o más *instantáneas* del montón de memoria nativo y administrado. Puede recopilar instantáneas de aplicaciones .NET, nativas o de modo mixto (.NET y nativo).  
@@ -59,7 +60,7 @@ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la her
 
      Cuando la aplicación finaliza la carga, se muestra la vista Resumen de las herramientas de diagnóstico.
 
-     ![Pestaña Resumen de herramientas de diagnóstico de](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Pestaña Resumen de herramientas de diagnóstico](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Dado que la recopilación de datos de memoria puede afectar al rendimiento de depuración de las aplicaciones nativas o de modo mixto, las instantáneas de memoria están deshabilitadas de forma predeterminada. Para habilitar las instantáneas en aplicaciones nativas o de modo mixto, inicie una sesión de depuración (tecla de método abreviado: **F5**). Cuando aparezca la ventana **Herramientas de diagnóstico** , seleccione la pestaña Uso de memoria y luego elija **Generación de perfiles de montón**.  

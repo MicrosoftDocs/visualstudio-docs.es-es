@@ -18,11 +18,12 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 895b2a7f8dd60cdddb2eb785a732032524174d4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 882a21dbace4197d93a3a3c985a58a0c938e4f2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Cómo: Utilizar el teclado exclusivamente
 > [!TIP]

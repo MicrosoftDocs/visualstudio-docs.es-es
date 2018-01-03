@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 45f65ba7207ceebbe7aec711f9fcedf283573444
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91d054345394fffd5768d6afefab6b4c970306b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="math-nodes"></a>Nodos matemáticos
 En el Diseñador de sombras, los nodos matemáticos realizan operaciones algebraicas, lógicas, trigonométricas y otras operaciones matemáticas.  

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 735c95d9eda5cba15b9d75a5abf10d26dd14b0cb
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: unity
+ms.openlocfilehash: 06598b54e50db1566cc35c896061b4a2d1fb1a40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 En esta sección aprenderá a utilizar las características de productividad e integración de Visual Studio Tools para Unity y cómo utilizar al depurador de Visual Studio para el desarrollo en Unity.  

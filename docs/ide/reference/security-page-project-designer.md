@@ -10,23 +10,18 @@ ms.topic: article
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
-caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4eaa6a746f67c891e9e4979f9c5b06202383e5f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d7a0f5651171d8c3b361d9e8b30b004a4e3136c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-page-project-designer"></a>Página Seguridad, Diseñador de proyectos
 La página **Seguridad** del **Diseñador de proyectos** se usa para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. Para obtener más información, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  

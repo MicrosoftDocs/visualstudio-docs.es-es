@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59d24a6cc67429fb6c0231f9487d80abe91de965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ad8aaf7dbf9960a3281add90da685c2942bd179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Cómo: Limitar la instrumentación a archivos DLL específicos
 El método de generación de perfiles de instrumentación permite limitar la recopilación de datos de generación de perfiles a uno o más archivos DLL en una aplicación. Para generar perfiles de uno o más archivos DLL en una aplicación, debe crearse una sesión de rendimiento que incluya los archivos .dll como destinos. Se pueden especificar los archivos DLL de los que se desea generar perfiles como proyectos de una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o como archivos binarios independientes.  

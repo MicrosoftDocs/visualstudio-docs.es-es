@@ -10,11 +10,12 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3b30b796ca389d5adfc4f8ece3c8f774626e994
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-projects-and-solutions"></a>Inicio rápido: proyectos y soluciones
 

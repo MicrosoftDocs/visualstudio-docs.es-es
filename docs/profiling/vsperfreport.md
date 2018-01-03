@@ -19,11 +19,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7fceff125460ad5dc9896226458b1c7dddb077a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 075d6549125af399382b1f0018fedadf8dad53ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 La herramienta de la línea de comandos VSPerfReport se usa para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El formato de informe predeterminado es un archivo .csv.  
@@ -50,7 +51,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="general-report-options"></a>Opciones generales de informe  
  En la tabla siguiente se describen las opciones generales de formato del informe y las opciones que seleccionan los datos de los que se va a informar.  
   
-|Opciones|Descripción|  
+|Opciones|Description|  
 |-------------|-----------------|  
 |**U**|El informe de resultados y la salida de la consola redirigida se escriben como Unicode. Esta debe ser la primera opción especificada.|  
 |**Summary:**[*types*]|Crea uno o varios tipos de informes.<br /><br /> -   `All`: se generan todos los tipos de informes.<br />-   `CallerCallee`: relaciones de elemento primario/secundario entre funciones.<br />-   `Function`: funciones llamadas.<br />-   `CallTree`: jerarquía de funciones llamadas.<br />-   `Counter`: todas las marcas junto con valores del contador de rendimiento de Windows.<br />-   `Ip`: instrucciones para las que se generan perfiles.<br />-   `Life`: duración de los objetos asignados (disponible cuando se han recopilado datos de asignaciones).<br />-   `Line`: datos del perfil de la línea de código fuente.<br />-   `Header`: el informe contiene información del encabezado del archivo.<br />-   `Mark`: todas las marcas.<br />-   `Module`: módulos para los que se generan perfiles.<br />-   `Process`: procesos para los que se generan perfiles.<br />-   `Thread`: subprocesos para los que se generan perfiles.<br />-   `Type`: tipos asignados.<br />-   `Contention`: contenciones de recursos.<br />-   `RuleWarnings`: problemas de reglas de rendimiento.<br />-   `ETW`: todos los eventos de Seguimiento de eventos para Windows (ETW) recopilados en la generación de perfiles. El archivo de datos .etl debe estar en su ubicación original o en el directorio que contiene el archivo .vsp o .vsps.|  
@@ -70,7 +71,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>Opciones de filtro:  
  En la tabla siguiente se describen las opciones para filtrar los datos disponibles.  
   
-|Opciones|Descripción|  
+|Opciones|Description|  
 |-------------|-----------------|  
 |**JustMyCode**[**:**[`caller`][,`callee`]]|Solo se muestran las llamadas a funciones de aplicación de usuario; se ocultan las llamadas al sistema.<br /><br /> - Ningún parámetro: se ocultan todas las funciones del sistema.<br />-   `caller`: se muestra un nivel de las funciones del sistema que llaman a las funciones de aplicación.<br />-   `callee`: se muestra un nivel de las funciones del sistema invocadas por las funciones de aplicación de usuario.|  
 |**StartTime:**[*value*]|Solo muestra los datos recopilados tras el valor (en milisegundos).|  
@@ -84,7 +85,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="difference-report-options"></a>Opciones del informe de diferencias  
  En la tabla siguiente se describen las opciones para comparar archivos de informe.  
   
-|Opciones|Descripción|  
+|Opciones|Description|  
 |-------------|-----------------|  
 |**Diff**  `vspfile1 vspfile2`|Compare dos archivos de informe (.vsp o .vsps). Las opciones de resumen se omitirán mediante la opción diff.|  
 |**Diff:**[*value*]|Se descarta cualquier diferencia entre dos valores que se encuentre bajo este valor de umbral. Asimismo, no se muestran nuevos datos que tengan valores por debajo de este umbral.|  

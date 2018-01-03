@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 800b3f24db41ae2a76da5e3f2d1c1417b7486416
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fbbf9909d68a112b11c86fb91ed46dbe151ae0cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-the-current-session"></a>Cómo: Establecer la sesión actual
 Puede abrir varias sesiones de rendimiento en el **Explorador de rendimiento** y después puede seleccionar una de las sesiones de rendimiento visibles para establecerla como la sesión actual.  

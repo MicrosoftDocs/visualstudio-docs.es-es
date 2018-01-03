@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ae4185d56b77d40cf817d7ea3003f64dc6fff556
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 11e917f21071a273f56ddd358fd5a845ce7411dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 Especifica el bloque de código que se ejecutará solo si las condiciones de todos los elementos `When` se evalúan como `false`.  
@@ -57,7 +58,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla. Puede haber cero o más elementos `Choose` en un elemento `Otherwise`.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contiene un conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos por el usuario. Puede haber cero o más elementos `ItemGroup` en un elemento `Otherwise`.|  
@@ -65,7 +66,7 @@ Especifica el bloque de código que se ejecutará solo si las condiciones de tod
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|Evalúa los elementos secundarios para seleccionar una sección de código y ejecutarla.|  
 

@@ -26,17 +26,18 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
   
 > [!NOTE]
-> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, por ejemplo, a la configuración **General** o **Visual C++**, elija **Herramientas**, **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
+> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas**, **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
   
 ### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para compilar, recompilar o limpiar toda la solución  
   

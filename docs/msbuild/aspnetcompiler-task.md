@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 4cb7e3ab70fb2820ed2ecdb38b5876c5daf956fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 3299efa1675e4e9d173379fbb00f09c1d8ece414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (Tarea)
 La tarea `AspNetCompiler` ajusta aspnet_compiler.exe, una utilidad que sirve para precompilar las aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
@@ -33,7 +34,7 @@ La tarea `AspNetCompiler` ajusta aspnet_compiler.exe, una utilidad que sirve par
 ## <a name="task-parameters"></a>Parámetros de tareas  
  En la siguiente tabla se describen los parámetros de la tarea `AspNetCompiler`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AllowPartiallyTrustedCallers`|Parámetro `Boolean` opcional.<br /><br /> Si este parámetro es `true`, el ensamblado de nombre seguro permitirá llamadores de confianza parcial.|  
 |`Clean`|Parámetro `Boolean` opcional.<br /><br /> Si este parámetro es `true`, se compilará la aplicación precompilada limpia. Cualquier componente previamente compilado se volverá a compilar. El valor predeterminado es `false`. Este parámetro corresponde al modificador **-c** en aspnet_compiler.exe.|  

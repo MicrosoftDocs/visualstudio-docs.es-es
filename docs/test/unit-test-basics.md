@@ -12,11 +12,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec6d6bc63094b361f7663e640d9133add3bfbfd0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: b71e1797b7ba5378b7a8396f56f97cc9a0c63b2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de prueba unitaria
 Compruebe que el código funciona correctamente; para ello, cree y ejecute pruebas unitarias. Se llaman pruebas unitarias porque descomponen las funciones del programa en comportamientos comprobables discretos que se pueden probar como *unidades* individuales. El Explorador de pruebas de Visual Studio proporciona una forma flexible y eficaz de ejecutar las pruebas unitarias y ver los resultados en Visual Studio. Visual Studio instala los marcos de pruebas unitarias de Microsoft para el código administrado y nativo. Use un *marco de pruebas unitarias* para crear pruebas unitarias, ejecutarlas y notificar los resultados correspondientes. Cuando realice cambios, vuelva a ejecutar las pruebas unitarias para probar que el código sigue funcionando correctamente. Visual Studio Enterprise puede hacerlo automáticamente con [Live Unit Testing](live-unit-testing-intro.md), que detecta pruebas afectadas por los cambios en el código y las ejecuta en segundo plano mientras se escribe.

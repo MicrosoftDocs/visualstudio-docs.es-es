@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e52387956f1e4a9283a592b6ce24cacf05bb7292
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae79812a700f8444002ae3b8c04c0ea816970eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Reanuda el seguimiento en el contexto actual.  

@@ -15,11 +15,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dff0b96bc40f857224df5222b43efac914de4f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4996f6cd60889412958765a02811b1b6728f2efa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-session-overview"></a>Información general sobre las sesiones de rendimiento
 Esta introducción explica los conceptos básicos de la generación de perfiles. Los desarrolladores que no tienen experiencia en el trabajo de rendimiento verán cómo las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pueden ayudarles a ser productivos rápidamente y a aumentar el rendimiento de su código. Los desarrolladores con experiencia en la generación de perfiles pueden obtener una visión general de las características específicas y procesos de las herramientas.  
@@ -77,5 +78,5 @@ Esta introducción explica los conceptos básicos de la generación de perfiles.
  Puede pegar filas de cualquier vista de informe de rendimiento en mensajes de correo electrónico y hojas de cálculo, y puede generar informes que contengan los datos para una o más vistas.  
   
 ## <a name="see-also"></a>Vea también  
- [Información general](../profiling/overviews-performance-tools.md)   
+ [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Tutorial: identificar problemas de rendimiento](../profiling/walkthrough-identifying-performance-problems.md)

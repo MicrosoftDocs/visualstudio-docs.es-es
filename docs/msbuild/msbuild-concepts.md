@@ -13,18 +13,19 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 4395f4c82be689b1d573be44948e98711ba066c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e57abdc78bc5b5844959fe2e3077688ec496df49
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-concepts"></a>Conceptos de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un esquema XML básico que puede utilizar para controlar cómo la plataforma de compilación compila el software. Para especificar los componentes de la compilación y cómo se van a compilar, utilice estos cuatro elementos de MSBuild: propiedades, elementos, tareas y destinos.  
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Propiedades de MSBuild](../msbuild/msbuild-properties.md)|Presenta las propiedades y las colecciones de propiedades. Las propiedades son pares clave-valor que se pueden utilizar para configurar compilaciones.|  
 |[Elementos](../msbuild/msbuild-items.md)|Describe los conceptos generales en que se basa el formato de archivo de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] y la manera de encajar las piezas.|  

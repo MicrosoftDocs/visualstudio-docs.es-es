@@ -24,11 +24,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 094e3968b527261125753002d9b6a31c7bd5d244
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10dffd6ea1a07c33df07f27ee8268932f18d8c32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference (Tarea)
 Determina todos los ensamblados que dependen de los ensamblados especificados. Esto incluye las dependencias segundo y de `n`º orden.  
@@ -36,7 +37,7 @@ Determina todos los ensamblados que dependen de los ensamblados especificados. E
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `ResolveAssemblyReference` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AllowedAssemblyExtensions`|Parámetro `String[]` opcional.<br /><br /> Las extensiones de nombre de archivo de ensamblado que se usarán al resolver referencias. Las extensiones de nombre de archivo predeterminadas son .exe y .dll.|  
 |`AllowedRelatedFileExtensions`|Parámetro `String[]` opcional.<br /><br /> Las extensiones de nombre de archivo que se usarán para buscar archivos relacionados entre sí. Las extensiones predeterminadas son .pdb y .xml.|  

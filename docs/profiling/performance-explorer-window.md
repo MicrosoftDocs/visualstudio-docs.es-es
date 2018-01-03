@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6fc3be33c332d643e5feb48f4a3733395c2a608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ab16dca3d4d27c157620f59774ec37f57aae020
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-explorer-window"></a>Ventana Explorador de rendimiento
 La ventana **Explorador de rendimiento** del entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] le permite configurar e iniciar sesiones de rendimiento mediante las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -54,6 +55,6 @@ La ventana **Explorador de rendimiento** del entorno de desarrollo integrado (ID
 -   **Informes**: muestra los nombres de archivos de datos del generador de perfiles que se generan para la sesión. Haga clic con el botón derecho en **Informes** para agregar un informe existente o comparar dos archivos de datos del generador de perfiles. Haga clic con el botón derecho en un nombre de informe para abrir, quitar o exportar un archivo de datos del generador de perfiles.  
   
 ## <a name="see-also"></a>Vea también  
- [Información general](../profiling/overviews-performance-tools.md)   
+ [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5483245e7f2ae341d08618485a4f49e91eb8fa9
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 13d04bde21f46fd8950e79464beccfe2228633aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 Use la página **Aplicación** del Diseñador de proyectos para especificar la configuración de la aplicación y las propiedades de un proyecto.  
@@ -62,7 +63,7 @@ Para obtener acceso a la página **Aplicación**, seleccione un nodo de proyecto
  Para obtener más información, vea [Cómo: Usar como destino una versión de .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
  **Tipo de aplicación**  
- Especifica el tipo de aplicación que se va a compilar. Para aplicaciones de Windows 8.x, puede especificar **Aplicación de la Tienda Windows**, **Biblioteca de clases** o **Archivo WinMD**. Para la mayoría de tipos de aplicación, puede especificar **Aplicación Windows**, **Aplicación de consola**, **Biblioteca de clases**, **Servicio de Windows** o **Biblioteca de controles web**.  
+ Especifica el tipo de aplicación que se va a compilar. Para aplicaciones de Windows 8.x, puede especificar **Aplicación de la Tienda Windows**, **Biblioteca de clases** o **WinMD File** (Archivo WinMD). Para la mayoría de tipos de aplicación, puede especificar **Aplicación Windows**, **Aplicación de consola**, **Biblioteca de clases**, **Servicio de Windows** o **Biblioteca de controles web**.  
   
  Para un proyecto de aplicación web, debe especificar **Biblioteca de clases**.  
   

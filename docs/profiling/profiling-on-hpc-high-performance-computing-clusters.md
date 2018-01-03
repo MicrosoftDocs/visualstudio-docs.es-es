@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)
 Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las herramientas de generación de perfiles de [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] o [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)]. Para obtener más información sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) en el sitio web de Microsoft.  
@@ -126,7 +127,7 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
 ### <a name="hpc-launch-properties"></a>Propiedades de inicio de HPC  
   
-|Propiedad|Descripción|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Nodo principal**|Especifica el equipo que actúa como el nodo principal de HPC en la generación de perfiles.|  
 |**Número de procesos**|Especifica el número de instancias de la aplicación que se ejecutan en la aplicación perfilada.|  
@@ -137,7 +138,7 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
 ### <a name="advanced-properties"></a>Avanzadas (Propiedades)  
   
-|Propiedad|Descripción|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Nombre del proyecto**|Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] actual.|  
 |**Limpiar cuando se detenga el generador de perfiles**|Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE.|  

@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 181462529b4e66f894328d099298408a91145c6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: Revisar, comentar y probar el código
 A continuación, se agrega un comentario al código. Un comentario es una nota que no cambia la forma de comportarse del programa. Hace que resulte más fácil entender el código a la persona que lo lee. Agregar comentarios al código es un hábito recomendable. En Visual C#, se utilizan dos barras diagonales (//) para marcar una línea como comentario. En Visual Basic, se utiliza una comilla sencilla (') para marcar una línea como comentario. Después de agregar un comentario, se prueba el programa. Es recomendable ejecutar y probar el código con frecuencia mientras trabaja en sus proyectos para que pueda detectar y corregir pronto cualquier problema, antes de que la complejidad del código aumente. Esto se denomina *prueba iterativa*.  

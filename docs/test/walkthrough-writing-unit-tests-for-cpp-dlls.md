@@ -10,11 +10,12 @@ ms.topic: article
 ms.assetid: 84575412-1de7-4e53-811d-ae035eb21d13
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 97f5eef312d954445bd208364ccbe48f9325b066
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 55c6fa99cf22148657f0515d817c6d40525497d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Cómo escribir pruebas unitarias de DLL de C++
 En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando antes una prueba. Estos son los pasos básicos:  

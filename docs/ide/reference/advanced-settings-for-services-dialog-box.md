@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ced6cbcf8340547c6a6aebd2ff30192ae2350da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 77f2f55d142f87e43f2bd3848c8dcd0b352c197e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Configuración avanzada de servicios (Cuadro de diálogo)
 Los servicios de aplicaciones cliente proporcionan acceso simplificado al inicio de sesión, los roles y los servicios de perfiles de [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] desde aplicaciones de Windows Forms y Windows Presentation Foundation (WPF). Puede usar la página **Servicios** del **Diseñador de proyectos** para configurar los servicios de aplicación cliente. Para obtener más información sobre la página **Servicios**, consulte [Página Servicios, Diseñador de proyectos](../../ide/reference/services-page-project-designer.md).  

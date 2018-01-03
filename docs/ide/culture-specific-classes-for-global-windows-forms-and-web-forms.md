@@ -29,11 +29,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1864d3bd07906d5bd7413689c912e0a3c7ede036
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d3dbe578ac9f902314e7270ecb8a7d799fcc47a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales
 Cada referencia cultural tiene distintas convenciones para mostrar fechas, horas, números, moneda y otra información. El espacio de nombres <xref:System.Globalization> contiene clases que pueden usarse para modificar el modo en que se muestran los valores específicos de referencias culturales, como <xref:System.Globalization.DateTimeFormatInfo>, **Calendario** y <xref:System.Globalization.NumberFormatInfo>.  

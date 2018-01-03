@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6318b5280e2098858bdcf523a3131cf68b7c84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a9a6996c990783a4ad077211d79616ba32531822
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación independiente de .NET Framework para recopilar datos mediante la línea de comandos
 En este tema se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] para adjuntar el generador de perfiles a una aplicación independiente (cliente) de .NET Framework en ejecución y recopilar datos de memoria.  
@@ -45,7 +46,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
         |**/samplegc**|Solamente recopila datos de asignación de memoria.|  
         |**/samplegclife**|Recopila datos de asignación de memoria y datos de duración de objetos.|  
   
-    -   La opción **/samplelineoff** deshabilita la recolección de datos de número de línea de código fuente.  
+    -   La opción **/samplelineoff** deshabilita la recopilación de datos de número de línea de código fuente.  
   
 3.  Inicie el generador de perfiles. Tipo:  
   
@@ -57,7 +58,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
   
      Puede usar cualquiera de las siguientes opciones con la opción **/start:sample**.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.|  
     |[/crosssession &#124; /cs](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otras sesiones. Esta opción es necesaria si la aplicación se ejecuta en una sesión diferente. El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**.|  
@@ -81,7 +82,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
   
 -   Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recopilación de datos para el proceso especificado por `PID`.|  

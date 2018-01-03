@@ -15,18 +15,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edd51a47e4db363e7a684a59c402fd49e533e6bb
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: aspnet
+ms.openlocfilehash: e567d6afb0d7e778dcc656e633ba4a670eb2ecea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Recopilar estadísticas para aplicaciones web ASP.NET
 
 En esta sección se describen los procedimientos y las opciones para recopilar estadísticas de rendimiento de una aplicación web ASP.NET mediante las herramientas de línea de comandos **VSPerfASPNETCmd** y **VSPerfCmd** y el método de generación de perfiles de muestreo.  
   
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
 >  Aunque la herramienta **VSPerfCmd** proporciona acceso completo a la funcionalidad de las herramientas de generación de perfiles, incluido pausar y reanudar la generación de perfiles y recopilar datos adicionales del procesador y los contadores de rendimiento de Windows, debe utilizar la herramienta de línea de comandos **VSPerfASPNETCmd** cuando no necesite esta funcionalidad. La herramienta de línea de comandos **VSPerfASPNETCmd** es el método preferido para generar perfiles de sitios web de ASP.NET mediante el generador de perfiles independiente. En comparación con la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd.md), no es necesario establecer ninguna variable de entorno y tampoco reiniciar el equipo. Para obtener más información, consulte [Generación rápida de perfiles de sitios web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).  
@@ -43,7 +44,7 @@ En esta sección se describen los procedimientos y las opciones para recopilar e
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Generar perfiles mediante el método de instrumentación**|-   [Recopilar datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Generar perfiles mediante el método de instrumentación**|-   [Recopilar datos de control de tiempo detallados utilizando la instrumentación](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
 |**Generar perfiles de recolección de elementos no utilizados y de asignación de memoria**|-   [Recopilar datos de memoria](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
 |**Generar perfiles de actividad de subprocesos y contención de recursos**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)|  
   

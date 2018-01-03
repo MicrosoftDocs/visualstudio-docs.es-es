@@ -18,16 +18,17 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4ef9833b61a88fe45d9293cd036a52ce74788d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25156aa6087e5ce1b00e1a4230d4fbf42ef75513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr-warnings"></a>Advertencias de VSInstr
 La tabla siguiente muestra las advertencias emitidas por la herramienta VSInstr.exe. Para evitar que aparezca una advertencia, utilice su número con la opción NOWARN.  
   
-|Número de advertencia|Descripción|  
+|Número de advertencia|Description|  
 |--------------------|-----------------|  
 |**VSP2000**|Error interno No se puede obtener el nombre del archivo de módulo para este archivo ejecutable.|  
 |**VSP2001**|\<nombre del ensamblado> es un ensamblado de nombre seguro. Deberá volver a firmarlo antes de que pueda ejecutarse.<br /><br /> Esta advertencia aparece cuando se instrumenta un ensamblado firmado. Puede utilizar la herramienta sn.exe para volver a firmar el archivo binario o desactivar temporalmente el requisito de nombre seguro. Para obtener más información, vea [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).|  

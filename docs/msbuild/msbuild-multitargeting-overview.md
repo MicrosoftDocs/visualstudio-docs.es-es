@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 573e88f1ebc3777f0ce6a6bfa048a9784d8f6488
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ca64f2a05e587fdaf3b7ee46e13abc49406cd65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-multitargeting-overview"></a>Información general sobre compatibilidad con múltiples versiones (multi-targeting) de MSBuild
 Con MSBuild, puede compilar una aplicación para que se ejecute en cualquiera de las versiones de .NET Framework, y en cualquiera de las plataformas del sistema. Por ejemplo, puede compilar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits y compilar esa misma aplicación para que se ejecute en .NET Framework 4.5 en una plataforma de 64 bits.  

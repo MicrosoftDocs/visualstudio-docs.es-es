@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f2e09933d8e1bcfc8e29712a78fe3b2454e42117
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c1e5e25d6a8b3b953d28676415266ccf245d418
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="signfile-task"></a>SignFile (Tarea)
 Firma un archivo determinado con el certificado especificado.  
@@ -36,9 +37,9 @@ Firma un archivo determinado con el certificado especificado.
  Tenga en cuenta que los certificados SHA-256 solo están permitidos en equipos que tienen .NET 4.5 y versiones posteriores.  
   
 > [!WARNING]
->  A partir de Visual Studio 2013 Update 3, esta tarea tiene una signatura nueva que le permite especificar la versión del marco de trabajo de destino para el archivo. Le recomendamos utilizar la nueva firma, siempre que sea posible, ya que el proceso de MSBuild solo utiliza hashes SHA-256 cuando el marco de trabajo de destino es .NET 4.5 o una versión posterior. Si el marco de trabajo destino es .NET 4.0 o una versión anterior, no se utilizará el hash SHA-256.  
+>  A partir de Visual Studio 2013 Update 3, esta tarea tiene una signatura nueva que le permite especificar la versión de la plataforma de destino para el archivo. Le recomendamos utilizar la nueva firma, siempre que sea posible, ya que el proceso de MSBuild solo utiliza hashes SHA-256 cuando la plataforma de destino es .NET 4.5 o una versión posterior. Si la plataforma de destino es .NET 4.0 o una versión anterior, no se utilizará el hash SHA-256.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`CertificateThumbprint`|Parámetro `String` requerido.<br /><br /> Especifica el certificado que se va a usar en la signatura. Este certificado debe estar ubicado en el almacén personal del usuario actual.|  
 |`SigningTarget`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica los archivos que se van a firmar con el certificado.|  

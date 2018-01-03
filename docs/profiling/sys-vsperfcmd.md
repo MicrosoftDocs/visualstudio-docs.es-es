@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c733e9ce91ede2e8944616c5db1a727349854b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fa8b11d6f7ca080980234fde4fef5659f376a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 La opción **Sys** de VSPerfCmd.exe establece el evento de generación de perfiles que se muestrea para eventos de llamada del sistema (llamadas de función desde la aplicación de la que se ha generado el perfil al sistema operativo) y, opcionalmente, cambia el número de llamadas del sistema en un intervalo de muestreo a partir del valor 10 predeterminado.  

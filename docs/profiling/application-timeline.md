@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32d6ac2581f71196d1f1d826d8f1024906b7cab9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3109f33c24b3ff217f6e48c6458a4c6514b0b151
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 Use la **escala de tiempo de aplicación** del generador de perfiles para buscar y corregir en aplicaciones XAML los problemas de rendimiento relacionados con la interacción. Esta herramienta le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos de las aplicaciones. Puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas.  

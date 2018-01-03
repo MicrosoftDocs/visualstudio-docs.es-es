@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 218ed6f699b4b4777be477829060b472979c8e10
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: cplusplus
+ms.openlocfilehash: fffb892efdbe3ad2731de5b0b81f6e59f237f884
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C++
 

@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2c265fde65ae20012e2846d99b86c71254d5b44
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visual Studio permite comprender mejor el uso de hardware de alto nivel con la aplicación Direct3D. Con ella puede determinar si el rendimiento de la aplicación está enlazado a la CPU o a la GPU, y obtener más información sobre cómo usar el hardware de la plataforma con mayor eficacia. La herramienta Uso de GPU es compatible con aplicaciones que usan Direct3D 12, Direct3D 11 y Direct3D 10. No es compatible con otras API de gráficos, como Direct2D u OpenGL.  
@@ -97,7 +98,7 @@ A partir de Visual Studio 2017, estos datos se pueden abrir con [GPUView](/windo
   
  Más información:  
   
-|Control de filtro|Descripción|  
+|Control de filtro|Description|  
 |--------------------|-----------------|  
 |**Process**|El nombre del proceso que le interesa. Este menú desplegable contiene todos los procesos que usan la GPU durante la sesión de diagnóstico. El color asocia con el proceso en este menú es el color de la actividad del subproceso en las escalas de tiempo que aparecen más abajo.|  
 |**Subproceso**|El identificador de subproceso que le interesa. En una aplicación multiproceso, este elemento puede ayudarle a aislar los subprocesos específicos del proceso que le interesa. En cada línea de tiempo se resaltan los eventos asociados con el subproceso seleccionado.|  
@@ -107,13 +108,13 @@ A partir de Visual Studio 2017, estos datos se pueden abrir con [GPUView](/windo
   
  La lista de eventos de la parte inferior del informe de uso de la GPU muestra los detalles de cada evento.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Nombre de evento**|El nombre del evento de gráficos. Por lo general, cada evento se corresponde con otros dos eventos: uno de la escala de tiempo del subproceso de CPU y otro de la escala de tiempo de GPU.<br /><br /> Cuando la herramienta Uso de GPU no puede determinar el nombre de un evento, este puede definirse como "sin atributos". Para obtener más información, consulte la nota que aparece debajo de esta tabla.|  
 |**Inicio de CPU (ns)**|El momento en el que se ha iniciado el evento en la CPU con una llamada a la API de Direct3D. El tiempo se mide en nanosegundos, con relación al momento en que se ha iniciado la aplicación.|  
 |**Inicio de GPU (ns)**|El momento en el que se ha iniciado el evento en la GPU. El tiempo se mide en nanosegundos, con relación al momento en que se ha iniciado la aplicación.|  
 |**Duración de GPU (ns)**|El tiempo que tardó el evento en completarse en la GPU, en nanosegundos.|  
-|**Nombre del proceso**|El nombre de la aplicación de la que procede el evento.|  
+|**Nombre de proceso**|El nombre de la aplicación de la que procede el evento.|  
 |**Identificador de subproceso**|El identificador de subproceso del que procede el evento.|  
   
 > [!IMPORTANT]

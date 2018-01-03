@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0537b1f335d46854dd43727ade695909db421ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imagen
 En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y utilizar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:  
@@ -53,7 +54,7 @@ Imagen que creará en este tutorial
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Paso 1: Crear un proyecto de aplicación de Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Empezar a crear un proyecto de aplicación de Windows Forms.|  
 |[Paso 2: Ejecutar el programa](../ide/step-2-run-your-program.md)|Ejecutar el programa de aplicación de Windows Forms que se creó en el paso anterior.|  

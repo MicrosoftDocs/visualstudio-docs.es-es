@@ -15,17 +15,18 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9cd903153f0802ce622c91693151a02ac5ba824
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 556ab33582f7c7051eefbd0eed6c72c2c9b3de18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Cómo: Cambiar las mayúsculas y minúsculas en el editor
 Puede usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado todas a mayúsculas o todas a minúsculas.  
   
 > [!NOTE]
-> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en este artículo en función de los valores de configuración o de edición activos. Para cambiar la configuración, por ejemplo, a la configuración **General** o **Visual C++**, elija **Herramientas**, **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en este artículo en función de los valores de configuración o de edición activos. Para cambiar la configuración, por ejemplo, **General** o **Visual C++**, elija **Herramientas**, **Importar y exportar configuraciones** y, después, **Restablecer todas las configuraciones**.
   
 ## <a name="to-switch-text-to-upper-case"></a>Para cambiar texto a mayúsculas  
   

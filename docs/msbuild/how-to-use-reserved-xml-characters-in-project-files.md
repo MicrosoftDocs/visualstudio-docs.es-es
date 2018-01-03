@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8acc59afdd050998f2269cc9be1986b7f4f426ae
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.workload: multiple
+ms.openlocfilehash: eb747b60c575aa1e49b559d3cf4a73b649808041
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Cómo: Utilizar caracteres XML reservados en archivos de proyecto
 Al crear archivos de proyecto, es posible que deba utilizar caracteres XML reservados, por ejemplo, en los valores de propiedad o en los valores de parámetro de la tarea. Sin embargo, algunos caracteres reservados se deben reemplazar por una entidad con nombre para que se pueda analizar el archivo del proyecto.  

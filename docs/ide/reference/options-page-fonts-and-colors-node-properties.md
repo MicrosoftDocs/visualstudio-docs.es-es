@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c2618dbaad3fcae95219e2b6a8a1f9b3d87bf09
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a26dd168e83584b19a9d6ddad37496082c166f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Página de opciones, Propiedades de nodo Fuentes y colores
 En este documento se describen las propiedades de fuente y color de una ventana de herramientas registrada para aparecer en **Fuentes y colores** en la categoría **Entorno** del cuadro de diálogo **Opciones**. Esto apoya la naturaleza dinámica de los grupos de elementos coloreables, que pueden cambiar si se instalan o desinstalan VSPackages.  
@@ -37,7 +38,7 @@ En este documento se describen las propiedades de fuente y color de una ventana 
   
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`  
   
-|Nombre de elemento de propiedad|Valor|Descripción|  
+|Nombre de elemento de propiedad|Valor|Description|  
 |------------------------|-----------|-----------------|  
 |FontFamily|Get/Set (String)|Nombre de la fuente que se va a usar, por ejemplo, "Courier New".|  
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Valor <xref:EnvDTE.vsFontCharSet> que especifica el tipo de juego de caracteres que se va a usar, como hebreo o ruso.|  

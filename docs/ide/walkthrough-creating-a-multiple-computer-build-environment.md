@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9666f4f26476544baa6afc5dad17798b4e8360d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
 

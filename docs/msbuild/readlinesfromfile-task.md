@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d489cc152d0f5652c8e6a787d9539b246d0f5285
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8db8c8414e4ce347ca8dbb59bec0f682911cf777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (Tarea)
 Lee una lista de elementos de un archivo de texto.  
@@ -33,7 +34,7 @@ Lee una lista de elementos de un archivo de texto.
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `ReadLinesFromFile` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`File`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> requerido.<br /><br /> Especifica el archivo que se va a leer. El archivo debe tener un elemento en cada línea.|  
 |`Lines`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las líneas leídas del archivo.|  

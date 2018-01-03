@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: multiple
+ms.openlocfilehash: d0e0907e7127f83055bfafbcd4491576d94bc2c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="csc-task"></a>Csc (Tarea)
 Encapsula CSC.exe y genera archivos ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o archivos de módulos de códigos (.netmodule). Para obtener más información sobre CSC.exe, consulte [Opciones del compilador de C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -33,7 +34,7 @@ Encapsula CSC.exe y genera archivos ejecutables (.exe), archivos de biblioteca d
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Csc` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Parámetro `String[]` opcional.<br /><br /> Especifica más directorios donde buscar referencias. Para obtener más información, consulte [/lib (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option).|  
 |`AddModules`|Parámetro `String` opcional.<br /><br /> Especifica uno o varios módulos que formarán parte del ensamblado. Para obtener más información, consulte [/addmodule (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option).|  

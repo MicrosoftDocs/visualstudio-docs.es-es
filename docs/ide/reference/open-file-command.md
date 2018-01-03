@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f7b1576ce7c34e953c45d7b303190a00d77e86cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 59b0c421fa5a62394a32a2b9ad9926df58a40cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="open-file-command"></a>Abrir archivo (Comando)
 Abre un archivo existente y le permite especificar un editor.  

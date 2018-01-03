@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e763d37cecb35bee3d6b4ace9d5e4f9bf4e3173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5cb6b102025591a6ef00ca594657dca511f5b8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contentions-view---contention-data"></a>Vista Contenciones del recurso: datos de contención
 La vista Contenciones del recurso muestra datos de contención de recursos que son el origen de eventos de contención. Un evento de contención se produce cuando una función en un subproceso se ve obligada a esperar para obtener acceso al recurso porque una función en otro subproceso ha adquirido acceso exclusivo al recurso. Cada recurso es el nodo raíz de un árbol de llamadas que muestra las rutas de ejecución de la función que dieron lugar a los eventos de contención.  
@@ -40,9 +41,9 @@ La vista Contenciones del recurso muestra datos de contención de recursos que s
   
 ## <a name="navigating-the-resource-allocation-view"></a>Navegar por la vista Asignación de recursos  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|El nombre del recurso o la función.|  
+|**Name**|El nombre del recurso o la función.|  
 |**Tiempo de bloqueo exclusivo**|-   Para un recurso, el tiempo total durante el que se ha bloqueado el acceso al recurso y que produjo que un subproceso tuviese que esperar.<br />-   En una función, el tiempo durante el que se ha bloqueado el acceso de estas instancias de la función al recurso primario cuando la función estaba ejecutando código en el cuerpo de la función. No se incluye el tiempo de bloqueo de las funciones a las que llamó la función.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|-   Para un recurso, el porcentaje de tiempo de bloqueo total de los datos de generación de perfiles que es tiempo de bloqueo de este recurso<br />-   Para una función, el porcentaje de tiempo de bloqueo total de los datos de generación de perfiles que es tiempo de bloqueo exclusivo de estas instancias de recurso.|  
 |**Contenciones exclusivas**|-   Para un recurso, el número total de veces durante las que se ha bloqueado el acceso al recurso y que produjo que un subproceso tuviese que esperar.<br />-   En una función, el número total de veces durante las que se ha bloqueado el acceso de estas instancias de la función al recurso primario cuando la función estaba ejecutando código en el cuerpo de la función. No se incluye los eventos de bloqueo de las funciones a las que llamó la función.|  
@@ -52,9 +53,9 @@ La vista Contenciones del recurso muestra datos de contención de recursos que s
 |**Contenciones inclusivas**|-   Para un recurso, el número total de veces durante las que se ha bloqueado el acceso al recurso y que produjo que un subproceso tuviese que esperar.<br />-   Para una función, el porcentaje de todos los eventos de contención de la generación de perfiles que eran eventos de contención inclusivos de las instancias de esta función para el recurso principal.|  
 |**Porcentaje de contenciones inclusivas**|-   Para un recurso, el porcentaje de todos los eventos de contención de la generación de perfiles que eran eventos de contención para el acceso a este recurso.<br />-   En una función, el número total de veces durante las que se ha bloqueado el acceso de estas instancias de la función al recurso primario cuando la función estaba ejecutando código en el cuerpo de la función. No se incluye los eventos de bloqueo de las funciones a las que llamó la función.|  
 |**Nivel**|La profundidad de esta función en el árbol de llamadas. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Número de línea de función**|Número de línea del inicio de esta función en el archivo de origen.|  
+|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
-|**Id. de proceso**|El Id. del proceso (PID) en el que se estaba ejecutando la función.|  
+|**Identificador del proceso**|El Id. del proceso (PID) en el que se estaba ejecutando la función.|  
 |**Nombre de proceso**|Nombre del proceso.|  
-|**Archivo de origen**|Archivo de origen que contiene la definición de esta función.|
+|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|

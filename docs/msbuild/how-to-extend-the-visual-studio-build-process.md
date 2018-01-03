@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a87b97946e3b0c45b00bdfe00a4da23c266605c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bebac9ca310230fa0b5d63ce56a8caa6b524a145
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Cómo: Extender el proceso de compilación de Visual Studio
 El proceso de compilación [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se define mediante una serie de archivos .targets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se importan en el archivo del proyecto. Uno de estos archivos importados, Microsoft.Common.targets, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este tema se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
@@ -55,7 +56,7 @@ El proceso de compilación [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
   
  En la tabla siguiente se muestran todos los destinos de Microsoft.Common.targets que puede reemplazar de forma segura.  
   
-|Nombre de destino|Descripción|  
+|Nombre de destino|Description|  
 |-----------------|-----------------|  
 |`BeforeCompile`, `AfterCompile`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de realizar la compilación básica. La mayoría de las personalizaciones se realiza en uno de estos dos destinos.|  
 |`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutarán antes o después de todo lo demás en la compilación. **Nota**: Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos del proyecto. Esto le permite agregar con facilidad eventos previos y posteriores a la compilación del archivo del proyecto.|  
@@ -119,7 +120,7 @@ El proceso de compilación [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.
   
 ### <a name="commonly-overridden-dependson-properties"></a>Propiedades "DependsOn" que normalmente se reemplazan  
   
-|Nombre de la propiedad|Descripción|  
+|Nombre de la propiedad|Description|  
 |-------------------|-----------------|  
 |`BuildDependsOn`|La propiedad que se debe reemplazar si quiere insertar destinos personalizados antes o después del proceso de compilación completo.|  
 |`CleanDependsOn`|La propiedad que se debe reemplazar si quiere limpiar el resultado del proceso de compilación personalizado.|  

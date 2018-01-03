@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfd9f46f6ad8421cfb3e2b2eb83360504614d317
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c68443f15330a63e8372445fcbd80be8bd0dfc18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utilization-navigator"></a>Navegador de utilización
 Puede utilizar el navegador de utilización del visualizador de simultaneidad para seleccionar un intervalo de tiempo en un seguimiento. El visualizador de simultaneidad muestra la utilización de núcleos de CPU por el proceso de destino a lo largo del tiempo. Esto hace más fácil examinar patrones de uso de CPU y también permite la comparación entre los datos de uso y los datos en otras vistas. El navegador de utilización aparece en la parte superior de cada vista en el visualizador de simultaneidad. En la siguiente ilustración se muestra el navegador de utilización.  

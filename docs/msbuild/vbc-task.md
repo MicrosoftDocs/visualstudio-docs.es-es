@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5fd338079978cec84c93a22d262d25f575d32e4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1105701c5c84de200dca674a117d7b464ba9fd62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vbc-task"></a>Vbc (Tarea)
 Incluye vbc.exe, que genera ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o módulos de códigos (.netmodule). Para obtener más información sobre vbc.exe, vea [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -33,7 +34,7 @@ Incluye vbc.exe, que genera ejecutables (.exe), archivos de biblioteca de víncu
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Vbc` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Parámetro `String[]` opcional.<br /><br /> Especifica carpetas adicionales en las que buscar ensamblados especificados en el atributo References.|  
 |`AddModules`|Parámetro `String[]` opcional.<br /><br /> Hace que el compilador facilite al proyecto que se está compilando toda la información de tipos presente en los archivos especificados. Este parámetro corresponde al modificador [/addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) del compilador de vbc.exe.|  

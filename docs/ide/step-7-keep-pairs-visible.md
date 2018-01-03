@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7aba2366893e188107632e5b8393fff79c0a5f82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b1aa3a18f8632890cd41a5ee7cb64e3d7c744888
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-7-keep-pairs-visible"></a>Paso 7: Mantener visibles los pares
 El juego funciona bien siempre y cuando el jugador elija únicamente parejas de iconos que no coinciden. Sin embargo, piense qué sucedería si el jugador elige una pareja coincidente. En lugar de hacer que los iconos desaparezcan activando el temporizador (con el método `Start()`), el juego se debería restablecer automáticamente para dejar de realizar el seguimiento de las etiquetas mediante las variables de referencia `firstClicked` y `secondClicked`, sin restablecer los colores de las dos etiquetas elegidas.  

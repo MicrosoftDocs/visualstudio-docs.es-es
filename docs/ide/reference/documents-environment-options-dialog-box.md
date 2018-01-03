@@ -36,11 +36,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d9f7cef6c0dfa35a4a718c0918fbc55409af04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c89e8b018fa0979fe4c73f5cd9e0db95efd88d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documentos, Entorno, Opciones (Cuadro de diálogo)
 Use esta página del cuadro de diálogo **Opciones** para controlar la visualización de documentos en el entorno de desarrollo integrado (IDE) y administrar los cambios externos de los documentos y archivos. Puede tener acceso a este cuadro de diálogo haciendo clic en **Opciones** en el menú **Herramientas** y, después, seleccionar **Documentos** en el nodo **Entorno**. Si **Documentos** no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  

@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe80e2ab5816a22e956e2e5ad12a6ceee988df4b
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: eabbb315d03a6ba69d80d46276b0b6dff5846693
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 Si necesita investigar problemas de rendimiento de la aplicación, un buen punto de partida es entender cómo utiliza la CPU. La herramienta **Uso de CPU** muestra el punto en que la CPU dedica tiempo a ejecutar el código Visual C++, Visual C#/Visual Basic y JavaScript. A partir de Visual Studio 2015 Update 1, puede ver un desglose por función del uso de CPU sin salir del depurador. Puede activar y desactivar la generación de perfiles de CPU durante la depuración y ver los resultados cuando se detiene la ejecución, por ejemplo, en un punto de interrupción.  
@@ -25,7 +26,7 @@ Tiene varias opciones para ejecutar y administrar la sesión de diagnóstico. Po
 
 Aquí le mostramos cómo recopilar y analizar el uso de CPU con compilaciones de versión. Para analizar el uso de CPU durante la depuración, vea [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md). 
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Recopilar datos de uso de CPU  
+##  <a name="BKMK_Collect_CPU_usage_data"></a> Recopilar datos de Uso de CPU  
   
 1.  En Visual Studio, establezca la configuración de soluciones en **Versión** y elija el destino de implementación.  
   

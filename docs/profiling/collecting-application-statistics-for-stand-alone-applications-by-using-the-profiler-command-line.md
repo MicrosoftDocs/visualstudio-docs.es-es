@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75f9596666bdb2fca45cfda4bc3c43c1611a33e5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: ce2cc34174131d1a8799d66381da0595d7ac4507
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Recopilar estadísticas de aplicación para aplicaciones independientes utilizando la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar estadísticas de rendimiento para una aplicación cliente (independiente) mediante el método de muestreo desde la línea de comandos.  
@@ -51,7 +52,7 @@ En esta sección se describen los procedimientos y las opciones para recopilar e
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
 |**Generar perfiles de aplicaciones web ASP.NET**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**Generar perfiles de servicios**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Describe cómo recopilar estadísticas de rendimiento de servicios de Windows mediante el método de muestreo.|  
+|**Generar perfiles para servicios**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Describe cómo recopilar estadísticas de rendimiento de servicios de Windows mediante el método de muestreo.|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analizar vistas e informes de datos de muestreo  
  [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)

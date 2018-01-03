@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d22300bc675de5074497589af53b304b9a1caa4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 El generador de perfiles de Visual Studio le permite recopilar datos de rendimiento generados por el sistema operativo (contadores de Windows) y datos de rendimiento generados por la unidad de procesador (contadores de CPU).  
@@ -129,7 +130,7 @@ El generador de perfiles de Visual Studio le permite recopilar datos de rendimie
      C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
 ## <a name="see-also"></a>Vea también  
- [Información general](../profiling/overviews-performance-tools.md)   
+ [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)   
  [Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
  [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)

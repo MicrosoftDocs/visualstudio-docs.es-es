@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3eeb080af73966b48cf8be543faa4276ae3b438c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Cómo: Crear un sombreador de gradiente basado en geometría
 En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de degradado basado en geometría. Este sombreador escala un valor de color RGB constante según el alto de cada punto de un objeto en el espacio global.  

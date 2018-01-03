@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a22ac991b88dd62c91a9bf08f5397fe80e4ae37d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f06722f4a6192323d92ce6828b25bc57666de8bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 Devenv permite establecer diversas opciones para el entorno de desarrollo integrado (IDE), así como compilar, depurar e implementar proyectos, desde la línea de comandos. Utilice estos modificadores para ejecutar el IDE desde un script o un archivo .bat (por ejemplo, un script de compilación nocturna) o para iniciar el IDE con una configuración determinada.  
@@ -68,7 +69,7 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 ## <a name="devenv-switches"></a>Modificadores de devenv  
  Utilice los modificadores de línea de comandos siguientes para mostrar el IDE y realizar la tarea descrita.  
   
-|Modificador de la línea de comandos|Descripción|  
+|Modificador de la línea de comandos|Description|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|Inicia el IDE y ejecuta el comando especificado.|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|Carga un archivo ejecutable de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] bajo el control del depurador. Este modificador no está disponible para los archivos ejecutables de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Para obtener más información, vea [Iniciar automáticamente un proceso en el depurador](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|  
@@ -85,7 +86,7 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
   
  Utilice los modificadores de la línea de comandos siguientes para realizar la tarea descrita. Estos modificadores de la línea de comandos no muestran el IDE.  
   
-|Modificador de la línea de comandos|Descripción|  
+|Modificador de la línea de comandos|Description|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|Muestra ayuda para los modificadores de devenv en la **ventana de símbolo del sistema**.<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Compila la solución o el proyecto especificado según la configuración de la solución especificada.<br /><br /> **Devenv myproj.csproj /build**|  

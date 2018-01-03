@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b28407d0b69d1ac7e2309ee1f8c24393b68e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c8bca4053da38738068c14fc20b43acc6c775ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-xelement-dynamic-property"></a>Elements (Propiedad dinámica de XElement)
 Obtiene un indizador que se utiliza para recuperar los elementos secundarios del elemento actual que coinciden con el nombre expandido especificado.  

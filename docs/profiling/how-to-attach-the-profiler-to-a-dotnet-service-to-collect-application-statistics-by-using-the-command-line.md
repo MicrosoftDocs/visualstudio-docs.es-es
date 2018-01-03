@@ -12,11 +12,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a639c9401498f168834947d9ec9c3bd238010e13
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: e33c804509e132fc9e4da2739f1e6de2f4a47d70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a un servicio .NET para recopilar estadísticas de aplicación mediante la línea de comandos
 En este tema se describe cómo usar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio de .NET Framework y recopilar estadísticas de rendimiento con el método de muestreo.  
@@ -65,7 +66,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
     > [!NOTE]
     >  Normalmente, las opciones **/user** y **/crosssession** son necesarias para servicios.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Especifica el dominio y el nombre de usuario de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició sesión. El propietario del proceso se muestra en la columna Nombre de usuario de la pestaña Procesos del Administrador de tareas de Windows.|  
     |[/crosssession](../profiling/crosssession.md)|Habilita la generación de perfiles de procesos en otras sesiones. Esta opción es necesaria si el servicio se ejecuta en una sesión diferente. El identificador de sesión se muestra en la columna Id. de sesión de la pestaña Procesos del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**.|  
@@ -83,7 +84,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
   
      De manera predeterminada, se realiza un muestreo de los datos de rendimiento cada 10.000.000 ciclos de reloj de procesador no detenidos. En un procesador de 1 GH, equivale aproximadamente a 100 muestras por segundo. Puede especificar una de las siguientes opciones para cambiar el intervalo del ciclo de reloj o especificar otro evento de muestreo.  
   
-    |Evento de muestreo|Descripción|  
+    |Evento de muestreo|Description|  
     |------------------|-----------------|  
     |[/timer](../profiling/timer.md) **:** `Interval`|Cambia el intervalo de muestreo al número de ciclos de reloj no detenidos especificado en `Interval`.|  
     |[/pf](../profiling/pf.md)[**:**`Interval`]|Cambia el evento de muestreo a errores de página. Si se especifica `Interval`, se establece el número de errores de página entre un muestreo y otro. El valor predeterminado es 10.|  
@@ -99,7 +100,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
   
 -   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
   
-    |Opción|Descripción|  
+    |Opción|Description|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|  
@@ -131,5 +132,5 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 4.  Reinicie el equipo.  
   
 ## <a name="see-also"></a>Vea también  
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)   
+ [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
  [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)

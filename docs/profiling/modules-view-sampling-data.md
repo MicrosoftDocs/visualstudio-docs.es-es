@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cf17377de9a21f52f15b263be07fcacb6966096
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 053b1ea5903675f60d59c3574f982f2461e39e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---sampling-data"></a>Vista Módulos: datos de muestreo
 La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por los módulos de los que se toman muestras en los datos de generación de perfiles. Cada módulo es la raíz de un árbol jerárquico. Las funciones del módulo de las que se toman muestras se enumeran bajo el nodo de módulo.  
@@ -29,15 +30,15 @@ La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por
   
  Si la función se estaba ejecutando cuando se recopilaron las muestras (es decir, si la función estaba en la parte superior de la pila de llamadas), las líneas de código fuente y las direcciones de instrucción que se estaban ejecutando aparecen debajo del nodo de función. Dado que cuando se ejecuta la línea o la instrucción, se recopilan datos de una línea de código fuente o un puntero de instrucción, los valores inclusivos y exclusivos siempre son los mismos para los datos de línea y de instrucción.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|El nombre del módulo, función, número de línea o dirección del puntero de instrucción.|  
-|**Id. de proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
+|**Name**|El nombre del módulo, función, número de línea o dirección del puntero de instrucción.|  
+|**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
+|**Nombre de proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la función, línea o dirección del puntero de instrucción.|  
 |**Ruta de acceso del módulo**|La ruta de acceso del módulo que contiene el módulo, función, línea o dirección del puntero de instrucción.|  
 |**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
-|**Número de línea de función**|Número de línea del inicio de esta función en el archivo de origen.|  
+|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
 |**Muestras inclusivas**|-   Para una función, el número de muestras en las que se estaba ejecutando esta función u otra función a la que llamó esta función, es decir, el número de muestras de la pila de llamadas que contienen esta función.<br />-   Para un módulo, el número de muestras en las que al menos una función del módulo se estaba ejecutando.<br />-   Para una línea o instrucción, el número de muestras en las que se estaba ejecutando esta línea o instrucción.|  
 |**Porcentaje de muestras inclusivas**|-   Para una función o un módulo, el porcentaje de todas las muestras de la generación de perfiles que fueron muestras inclusivas de esta función o módulo.<br />-   Para una línea o instrucción, el porcentaje de todas las muestras de la generación de perfiles en las que se estaba ejecutando esta línea o instrucción.|  
 |**Muestras exclusivas**|-   Para una función, el número de muestras de la pila de llamadas en las que se estaba ejecutando directamente esta función, es decir, el número de muestras en las que esta función estaba en la parte superior de la pila de llamadas.<br />-   Para un módulo, la suma de muestras exclusivas de las funciones del módulo.<br />-   Para una línea o instrucción, el número de muestras en las que se estaba ejecutando esta línea o instrucción.|  

@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 9f26d2db9145599d941331dce646868aafa45cb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f275477c691d8cdfa60dc607b1d31cd1e042184f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Paso 2: Crear un problema de suma aleatoria
 En la segunda parte del tutorial, agregará problemas de matemáticas basados en números aleatorios para crear una prueba desafiante. También puede crear un método denominado `StartTheQuiz()` que establezca los problemas e inicie el temporizador de cuenta atrás. Más adelante en este tutorial, agregará los problemas de resta, multiplicación y división.  

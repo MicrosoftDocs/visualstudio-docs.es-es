@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7e3d7541075642d3aaa417874aa51f7f3f7faa7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 275ec14b1b6a0d43d2c8fdb88bbf1056db86d097
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Vista Llamador y destinatario: datos de muestreo de memoria de .NET
 La vista Llamador y destinatario muestra datos de la generación de perfiles de memoria de. NET para una función seleccionada y sus funciones primarias y secundarias. La vista Llamador y destinatario contiene tres cuadrículas.  
@@ -30,17 +31,17 @@ La vista Llamador y destinatario muestra datos de la generación de perfiles de 
   
  Haga doble clic en una fila de función de llamador o destinatario para hacer que esa fila sea la función actual.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
+|**Nombre de proceso**|Nombre del proceso.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
 |**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
 |**Nombre de la función**|El nombre completo de la función.|  
 |**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
 |**Dirección de la función**|Dirección de la función.|  
-|**ype**|El contexto de la función:<br /><br /> **0**: la función actual<br /><br /> **1**: una función que llama a la función actual<br /><br /> **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Type**|El contexto de la función:<br /><br /> **0**: la función actual<br /><br /> **1**: una función que llama a la función actual<br /><br /> **2**: una función llamada por la función actual<br /><br /> Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Nivel**|La profundidad de esta función en el árbol de llamadas. Solo disponible en los informes de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Asignaciones inclusivas**|-   En la función actual, el número de objetos asignados por la función en la ejecución de la generación de perfiles. Este número incluye los objetos creados en funciones de destinatario.<br />-   En una función de llamador, el número de asignaciones inclusivas de la función actual generadas por llamadas de esta función.<br />-   En una función de destinatario, el número de objetos asignados por las instancias de esta función a las que llamó la función actual. El número incluye las asignaciones realizadas por funciones a las que llamó la función de destinatario.|  
 |**Porcentaje de asignaciones inclusivas**|El porcentaje de todos los objetos que se crearon durante la ejecución de la generación de perfiles que eran asignaciones inclusivas de esta función.|  
@@ -52,7 +53,7 @@ La vista Llamador y destinatario muestra datos de la generación de perfiles de 
 |**Porcentaje de bytes exclusivos**|El porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista Informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Llamador y destinatario: datos de instrumentación de memoria .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Vista Llamador y destinatario: datos de muestreo](../profiling/caller-callee-view-sampling-data.md)   
  [Vista Llamador y destinatario: datos de instrumentación](../profiling/caller-callee-view-instrumentation-data.md)

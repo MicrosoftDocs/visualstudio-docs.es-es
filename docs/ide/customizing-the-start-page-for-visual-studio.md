@@ -19,11 +19,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 45cfb501103c762f7af6fc130a981028c262540b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d6bf05e014ff70b221d1ec77c4ee5677764142ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Personalizar la página principal de Visual Studio
 

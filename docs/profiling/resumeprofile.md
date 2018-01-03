@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb0f988ce0d1b266fd930909f6e5d6462929e8f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899c39af318e16465ccd36d671a2c9d7305b431d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 El método `ResumeProfile` reduce el contador de suspensiones y reanudaciones para el nivel de generación de perfiles especificado.  
@@ -33,9 +34,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 #### <a name="parameters"></a>Parámetros  
  `Level`  
   
- Indica el nivel de perfil al que se puede aplicar la recopilación de datos de rendimiento. Los enumeradores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
+ Indica el nivel de perfil en el que se puede aplicar la recopilación de datos de rendimiento. Los enumeradores **PROFILE_CONTROL_LEVEL** siguientes se pueden usar para indicar uno de tres niveles en los que se puede aplicar la recopilación de datos de rendimiento:  
   
-|Enumerador|Descripción|  
+|Enumerador|Description|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|La configuración de nivel global afecta a todos los procesos y subprocesos en la generación de perfiles.|  
 |PROFILE_PROCESSLEVEL|La configuración de nivel de proceso afecta a todos los subprocesos que forman parte del proceso especificado.|  
@@ -43,18 +44,18 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
  `dwId`  
   
- Identificador del proceso o subproceso generado por el sistema.  
+ Identificador del proceso o subproceso que genera el sistema.  
   
 ## <a name="property-valuereturn-value"></a>Valor de propiedad y valor devuelto  
  La función indica si la operación es correcta o errónea mediante la enumeración **PROFILE_COMMAND_STATUS**. El valor devuelto puede ser cualquiera de los siguientes:  
   
-|Enumerador|Descripción|  
+|Enumerador|Description|  
 |----------------|-----------------|  
-|PROFILE_ERROR_ID_NOEXIST|El identificador del elemento de generación de perfiles no existe.|  
+|PROFILE_ERROR_ID_NOEXIST|El id. del elemento de generación de perfiles no existe.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|El nivel de generación de perfiles especificado no existe.|  
 |PROFILE_ERROR_MODE_NEVER|El modo de generación de perfiles se estableció en NEVER cuando se llamó a la función.|  
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|Todavía no se ha implementado la llamada a la función de generación de perfiles, el nivel de generación de perfiles o la combinación de llamada y nivel.|  
-|PROFILE_OK|La llamada se realizó correctamente.|  
+|PROFILE_OK|La llamada se ha realizado correctamente.|  
   
 ## <a name="remarks"></a>Comentarios  
  El valor inicial del contador de suspensiones y reanudaciones es 0. Cada llamada a SuspendProfile suma 1 al recuento de suspensiones y reanudaciones; cada llamada a ResumeProfile resta 1.  

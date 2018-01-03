@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d348bdc52d53d7ba671b455e10893c578418a892
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37306636da74637cb950ca1502b94a750a51ccba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Guardar y exportar datos de herramientas de rendimiento
 En este tema se describe cómo guardar y exportar archivos de datos de rendimiento.  

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88b8169f5e0e53a76ff2b1bee61dc80f41a9f595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1465b9d8a14d5889bf856caa52b807ee2954cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---contention-data"></a>Vista Líneas: datos de contención
 La vista Líneas de datos de contención muestra los datos de rendimiento de las instrucciones que se estaban ejecutando cuando se recopilaron las muestras en la ejecución de generación de perfiles. En un archivo de origen, una instrucción puede abarcar más de una línea y una sola línea puede incluir más de una instrucción.  
@@ -40,27 +41,27 @@ La vista Líneas de datos de contención muestra los datos de rendimiento de las
   
  En la siguiente tabla se describen las columnas del informe de vista de líneas.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo de bloqueo exclusivo**|La cantidad de tiempo durante el cual esta instrucción no pudo ejecutar el código de la instrucción debido a un evento de contención. No se incluye el tiempo de bloqueo de las funciones a las que llamó la instrucción.|  
 |**Porcentaje de tiempo de bloqueo exclusivo**|El porcentaje de tiempo de bloqueo total en el proceso que es tiempo de bloqueo exclusivo de la instrucción.|  
 |**Contenciones exclusivas**|El número de veces que esta instrucción no pudo ejecutar el código de la instrucción debido a un evento de contención. No se incluyen los eventos de contención de las funciones a las que llamó la instrucción.|  
 |**Porcentaje de contenciones exclusivas**|El porcentaje de todos los eventos de contención en el proceso que eran contenciones exclusivas de esta instrucción.|  
-|**Dirección de función**|La dirección de la función que contiene esta instrucción.|  
+|**Dirección de la función**|La dirección de la función que contiene esta instrucción.|  
 |**Nombre de la función**|El nombre completo de la función que contiene esta instrucción.|  
 |**Tiempo de bloqueo inclusivo**|El tiempo bloqueado en esta instrucción y las funciones a las que llama la instrucción.|  
 |**Porcentaje de tiempo de bloqueo inclusivo**|El porcentaje de tiempo de bloqueo total en el proceso que es tiempo de bloqueo inclusivo de la instrucción.|  
 |**Contenciones inclusivas**|El número de veces que se bloqueó la ejecución de esta instrucción y las funciones a las que llamó la instrucción.|  
 |**Porcentaje de contenciones inclusivas**|El porcentaje de todos los eventos de contención en el proceso que eran contenciones inclusivas de esta instrucción.|  
 |**Nombre de línea**|Un identificador generado por el generador de perfiles de la línea. El identificador utiliza la siguiente sintaxis:`SourceFile`**;[**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|  
-|**Número de línea de función**|Número de línea del inicio de esta función en el archivo de origen.|  
+|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la instrucción.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la instrucción.|  
 |**Identificador de proceso**|El identificador de proceso (PID) del proceso del que se generaron perfiles.|  
-|**Nombre del proceso**|Nombre del proceso.|  
+|**Nombre de proceso**|Nombre del proceso.|  
 |**Carácter de inicio en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde se inicia la instrucción.|  
 |**Carácter de finalización en el código fuente**|Desplazamiento del carácter de inicio en la línea del archivo de origen donde finaliza la instrucción.|  
-|**Archivo de origen**|El nombre del archivo de código fuente que contiene la instrucción de la función.|  
+|**Archivo de código fuente**|El nombre del archivo de código fuente que contiene la instrucción de la función.|  
 |**Línea de inicio del origen**|El número de línea en el archivo de origen en el que comienza esta instrucción.|  
 |**Línea de finalización del origen**|El número de línea en el archivo de origen en el que finaliza esta instrucción.|  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ca218a20f46bf1233602287b1ad374921f85428a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 03fa141d6f254c385c525ac439121034e7fc816f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
 El juego de formar parejas funciona como sigue:  

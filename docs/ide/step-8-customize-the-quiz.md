@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7a4481f9a13d6807abc42b938670a05bd0dda50b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0608434ef7ecd528b6ecd5f74c0612994d471f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-8-customize-the-quiz"></a>Paso 8: Personalizar la prueba
 En la última parte del tutorial, explorará algunas maneras de personalizar la prueba y ampliar sus conocimientos. Por ejemplo, piense en cómo el programa crea problemas de división aleatorios para los que la respuesta nunca es una fracción. Para obtener más información, cambie el color del control `timeLabel` y proporcione al usuario alguna sugerencia.  

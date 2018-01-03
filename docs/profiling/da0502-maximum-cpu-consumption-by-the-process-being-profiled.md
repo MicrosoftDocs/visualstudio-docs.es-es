@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d1cd5fbe91b125c00fe617f03711ea52cdf458f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb9e860afcd88b50b324f1d2b62c6d95a55c270f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: Máximo consumo de CPU por parte del proceso que se va a perfilar
 |||  

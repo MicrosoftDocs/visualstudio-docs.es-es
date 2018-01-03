@@ -23,11 +23,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.  
@@ -324,16 +325,16 @@ if (performance.mark && performance.measure) {
   
 -   **Descodificación de imágenes.** Indica el tiempo invertido en descomprimir y descodificar imágenes.  
   
- En las categorías de script y de aplicación de estilos, el generador de perfiles de la capacidad de respuesta de la IU puede proporcionar datos procesables en el gráfico de detalles de la escala de tiempo. Si identificas algún problema de scripting, puedes ejecutar el generador de perfiles de muestreo de la CPU con el generador de perfiles de la capacidad de respuesta de la IU. Como alternativa, podrías utilizar el generador de perfiles de función de Visual Studio para obtener datos más detallados. Para obtener más información, consulte [Memoria de JavaScript](../profiling/javascript-memory.md).  
+ En las categorías de script y de aplicación de estilos, el generador de perfiles de la capacidad de respuesta de la IU puede proporcionar datos procesables en el gráfico de detalles de la escala de tiempo. Si identificas algún problema de scripting, puedes ejecutar el generador de perfiles de muestreo de la CPU con el generador de perfiles de la capacidad de respuesta de la IU. Como alternativa, podrías utilizar el generador de perfiles de función de Visual Studio para obtener datos más detallados. Para obtener más información, consulta [Memoria de JavaScript](../profiling/javascript-memory.md).  
   
  En las otras categorías de eventos, es posible que puedas identificar efectos secundarios de la plataforma que son el resultado de agregar características a la aplicación, pero en estos casos no está garantizado que puedas resolver los problemas de rendimiento específicos mediante el generador de perfiles de la capacidad de respuesta de la IU.  
   
  En esta tabla se muestran los eventos y sus descripciones:  
   
-|Evento|Categoría de eventos|Se produce cuando|  
+|evento|Categoría de eventos|Se produce cuando|  
 |-----------|--------------------|-----------------|  
 |Análisis de CSS|Carga|Se encontró nuevo contenido de CSS y se intentó analizarlo.|  
-|Análisis de HTML|Carga|Se encontró nuevo contenido HTML y se intentó analizarlo en nodos e insertarlo en el árbol DOM.|  
+|Análisis de HTML|Cargando|Se encontró nuevo contenido HTML y se intentó analizarlo en nodos e insertarlo en el árbol DOM.|  
 |Solicitud HTTP|Carga|Se encontró un recurso remoto en el DOM, o se creó un objeto XMLHttpRequest que produjo una solicitud HTTP.|  
 |Descarga especulativa|Carga|Se buscaron los recursos necesarios en el contenido HTML de la página para poder programar las solicitudes HTTP subsiguientes de estos lo más rápidamente posible.|  
 |Función de devolución de llamada de fotograma de animación|Scripting|El explorador iba a presentar otro fotograma, y esto desencadenó una función de devolución de llamada proporcionada por la aplicación.|  

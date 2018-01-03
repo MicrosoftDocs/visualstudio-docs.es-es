@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e931468b27807a99e86249008718faf4e044cbd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a93b339a062bd2e0c8dc1bf626c4ad109fa2af2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propiedad que se utiliza en un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe especificarse como elemento secundario de un elemento `PropertyGroup`.  
@@ -45,7 +46,7 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Descripción|  
+|Atributo|Description|  
 |---------------|-----------------|  
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
 
@@ -54,7 +55,7 @@ Contiene un valor y un nombre de propiedad definidos por el usuario. Cada propie
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento de agrupamiento de las propiedades.|  
 

@@ -11,11 +11,12 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: "9"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8a7524046d981b9938c9df00be7edbcfa595f0fe
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0a0643f6e290d5be5b4d2854246d5dc95c0d731f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-extension-element-classes"></a>Extensión de Excel de muestra: clases de elementos
 La extensión usa clases que derivan de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> y representan el control de la hoja de cálculo y el control de la celda en [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].  

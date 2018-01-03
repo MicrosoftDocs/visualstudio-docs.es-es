@@ -17,11 +17,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2ecd17694e65c6273f8e73a321a72bc209038922
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96501134565c4339abe9e3abc7fcfe7e29927fa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-item-templates"></a>Cómo: Crear plantillas de elementos
 En los pasos del [primer procedimiento](../ide/how-to-create-item-templates.md#export_template) de este tema se muestra cómo crear una plantilla de elementos mediante el asistente **Exportar plantilla**. Si la plantilla consta de varios archivos, vea [Cómo: Crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md).  

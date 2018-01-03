@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 417a2a06dee5dbe5b5857421e2f631660c367600
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 43c9224cdc9eae6f3c62a756bccbc789efce55b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spanspan-destructor"></a>span::~span (Destructor)
 Destruye el objeto de `span` y libera sus recursos.  

@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f076985edeeec43d9f5a71e0e53b3937d6b8358f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da81862b736605b93d4429e0e574ca5558a529c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Paso 7: Agregar componentes de diálogo al formulario
 Para que el programa abra archivos de imagen y para elegir un color de fondo, en este paso agregará un componente **OpenFileDialog** y un componente **ColorDialog** al formulario.  

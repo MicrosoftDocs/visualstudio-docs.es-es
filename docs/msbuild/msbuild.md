@@ -15,11 +15,12 @@ caps.latest.revision: "59"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 45714799a518cefa1edb7164437af7c4a067b0e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] es una plataforma para compilar aplicaciones. Este motor, que también se conoce como MSBuild, proporciona un esquema XML para un archivo del proyecto que controla cómo la plataforma de compilación procesa y compila el software. Visual Studio utiliza MSBuild, pero no depende de Visual Studio. Al invocar msbuild.exe en el archivo de proyecto o de solución, puede orquestar y compilar productos en entornos donde no está instalado Visual Studio.  
@@ -191,7 +192,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Tutorial: Crear un archivo del proyecto de MSBuild desde el principio](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto.|  
 |[Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md)|Presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar proyectos de MSBuild sin cerrar el IDE de Visual Studio.|  

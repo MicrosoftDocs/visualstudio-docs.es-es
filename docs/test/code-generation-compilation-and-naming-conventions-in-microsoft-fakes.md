@@ -11,11 +11,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 34cfe9041a9e724136c9d7c5a19b1c74f2309b2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e293d6ef200fec89150d76d94233bb171374a1d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes
 En este tema se describen opciones y problemas de generación y compilación de código en Fakes y se describen las convenciones de nomenclatura de los tipos, miembros y parámetros generados por Fakes.  

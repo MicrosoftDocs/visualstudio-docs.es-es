@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a9364a6eb9e46503a257cdc066e3d9ecd1a6c9d0
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: unity
+ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con aplicaciones de Unity
 El desarrollo de aplicaciones para plataformas modernas implica muchas otras actividades, además de escribir código. Estas actividades, denominadas DevOps (desarrollo + operaciones), abarcan el ciclo de vida completo de la aplicación e incluyen la planeación y el seguimiento del trabajo, el diseño y la implementación del código, la administración de un repositorio de código fuente, las compilaciones, la administración de integraciones e implementaciones continuas, las pruebas (incluidas las pruebas unitarias y las pruebas de la interfaz de usuario), la ejecución de diversas maneras de diagnóstico tanto en entornos de desarrollo como de producción y la supervisión del rendimiento de la aplicación y del comportamiento de los usuarios en tiempo real mediante telemetría y análisis.  

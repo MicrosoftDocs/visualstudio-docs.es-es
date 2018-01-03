@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd963c269ee5fe18d3f490bf85bab5dcf3afbf9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Guardar información de símbolos con archivos de datos de rendimiento
 Si está utilizando el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para analizar los archivos y planea mover el archivo VSP a otro equipo, debe establecer la configuración del proyecto de rendimiento para guardar o *serializar* símbolos en el archivo de informe. Esto aumenta el tamaño de un archivo de informe. Es necesario serializar símbolos por dos motivos:  

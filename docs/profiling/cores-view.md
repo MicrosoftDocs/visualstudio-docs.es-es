@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 867e6a8bffd25a25e9c021aa7565e2087a7c4bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a2ce5cc9d80e7b96318d0e1fcf8aead09652b41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view"></a>Vista de núcleos
 En la vista Núcleos se muestra cómo se asignó la ejecución de subprocesos a los núcleos de procesadores lógicos. Si está escribiendo aplicaciones de servidor, esta vista puede ayudarlo a optimizar el rendimiento de la memoria caché mediante el uso de administración de grupos de subprocesos o de afinidad de subprocesos. También puede ayudarlo a examinar los casos en que el uso de la afinidad de subprocesos puede haber empeorado el problema de la migración entre núcleos. La vista Núcleos tiene dos partes: un gráfico y una leyenda.  
@@ -30,4 +31,4 @@ En la vista Núcleos se muestra cómo se asignó la ejecución de subprocesos a 
 ## <a name="see-also"></a>Vea también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
  [Vista Utilización](../profiling/utilization-view.md)   
- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+ [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

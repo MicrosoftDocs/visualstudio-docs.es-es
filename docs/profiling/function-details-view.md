@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff4c94b079d58cab51ec0539e17ada8696ebca89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 81133dadb79cc4fba24b66e97f7384232b6171ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="function-details-view"></a>Vista Detalles de la función
 La ventana de **Vista Detalles de la función** muestra la siguiente información:  
@@ -72,7 +73,7 @@ La ventana de **Vista Detalles de la función** muestra la siguiente informació
 ## <a name="function-performance-details"></a>Detalles de rendimiento de la función  
  La tabla Detalles de rendimiento de la función proporciona datos de resumen de las métricas de rendimiento de la función seleccionada. Aparecen el valor y el porcentaje. Se especifican los datos de generación de perfiles que aparecen en el gráfico y la tabla de detalles en la lista **Métrica de rendimiento**.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Exclusivo**|- La cantidad de la métrica de rendimiento que se produjo en la ejecución del cuerpo de la función.|  
 |**Llamadas entrantes**|- La cantidad de la métrica de rendimiento que se produjo en las funciones a las que llamó la función seleccionada.|  

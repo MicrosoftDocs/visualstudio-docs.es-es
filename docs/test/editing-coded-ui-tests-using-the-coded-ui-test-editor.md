@@ -13,11 +13,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: "40"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 637bf6a6e52943e2eae247bbe5a40e10c2d3742d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2bce8aa82b1076860f9c9b96e39e7a13955b9444
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
 el Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el editor de pruebas de IU codificadas puede localizar, ver y editar las propiedades de los métodos de prueba y acciones de IU. Además, puede usar la asignación de controles de IU para ver y editar sus controles correspondientes.  

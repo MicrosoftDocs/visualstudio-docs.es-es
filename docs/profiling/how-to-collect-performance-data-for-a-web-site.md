@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6acfbee87e64e71ae85290ba74f1464af7181228
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff9927357b23ced05bbee6db354cbe8e82e62b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Cómo recopilar datos de rendimiento de un sitio web
 Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] . Puede generar perfiles de una aplicación web que esté abierta en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o de un sitio web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se encuentre en su equipo local y que no esté abierto en el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
@@ -66,7 +67,7 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
   
 8.  Se creará una sesión de rendimiento para la aplicación de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y el sitio web se abrirá en el explorador. Ejecute la funcionalidad de la que quiere generar perfiles y, luego, cierre el explorador.  
   
-     El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .  
+     El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Para generar perfiles de un sitio web sin tener que abrir un proyecto en Visual Studio  
   
@@ -103,7 +104,7 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
      El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="see-also"></a>Vea también  
- [Información general](../profiling/overviews-performance-tools.md)   
+ [Temas de introducción](../profiling/overviews-performance-tools.md)   
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Introducción a los valores de datos de instrumentación en las herramientas de generación de perfiles](../profiling/understanding-instrumentation-data-values.md)   
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)

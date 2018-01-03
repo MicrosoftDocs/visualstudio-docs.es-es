@@ -11,11 +11,12 @@ ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 653d02466e608d8d2c2955da8fec987c50517382
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: 6fe43af670320a5832765faf25294a46b8f98d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Refactorización, generación de código y acciones rápidas en Visual Studio
 

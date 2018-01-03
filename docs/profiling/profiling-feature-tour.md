@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-feature-tour"></a>Guía de características de generación de perfiles
 
@@ -154,13 +155,13 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|  
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí (no para .NET Core/ASP.NET Core)|  
 |[Uso de GPU](../debugger/gpu-usage.md)|sí|sí|no|  
-|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|no|  
+|[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|  
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|  
-|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|no|sí (no para el núcleo de ASP.NET)|  
+|[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí (no para el núcleo de ASP.NET)|  
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET Enterprise|Solo .NET Enterprise|Solo .NET Enterprise|
-|[Uso de red](../profiling/network-usage.md)|no|sí|no| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|sí para HTML, no para XAML|no|  
-|[Memoria de JavaScript](../profiling/javascript-memory.md)|no|sí para HTML, no para XAML|no|  
+|[Uso de red](../profiling/network-usage.md)|No|sí|No| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|sí para HTML, no para XAML|No|  
+|[Memoria de JavaScript](../profiling/javascript-memory.md)|No|sí para HTML, no para XAML|No|  
 
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)

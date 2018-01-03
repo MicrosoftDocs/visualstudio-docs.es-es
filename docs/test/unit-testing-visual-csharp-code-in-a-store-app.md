@@ -11,11 +11,12 @@ ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
 caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 63018bdae7cec687ccf81d53ef6e35ecdc169c83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Pruebas unitarias de código de Visual C# en una aplicación para UWP
 En este tema se describe una forma de crear pruebas unitarias para una clase de Visual C# en una aplicación para UWP. La clase Rooter muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. La aplicación Maths puede utilizar esta función para mostrar a un usuario las cosas divertidas que se pueden realizar con las matemáticas.  

@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 30c3c96a0999fe65c6fe0fa95163feaf526adfbf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb58b8e577893549e717a824b5c89d36fee2a65c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 Escribe archivos de registro para el contexto actual.  

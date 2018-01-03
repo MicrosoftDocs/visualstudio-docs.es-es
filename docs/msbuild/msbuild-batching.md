@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-batching"></a>Procesamiento por lotes de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tiene la capacidad de dividir las listas de elementos en distintas categorías, o lotes, basándose en los metadatos de estos elementos, y luego ejecutar un destino o una tarea una vez con cada lote.  

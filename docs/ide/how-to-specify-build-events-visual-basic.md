@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 78dc3c36a7513a04afd8f8e136996c3f896291e2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 42d412e576ddf9ca53f79b7349d99b87b9ef3238
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Cómo: Especificar eventos de compilación (Visual Basic)
 Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts, macros u otras acciones como parte del proceso de compilación. Los eventos anteriores a la compilación se producen antes de la compilación; los eventos posteriores a la compilación se producen después de la compilación.  

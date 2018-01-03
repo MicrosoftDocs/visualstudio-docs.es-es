@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fa94458b1b3b02e2df666af099d97bb7e115c22
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: b7eaa5214a87c2931a260f1c5adb6bac56dfa288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 Se puede especificar cómo implementar y administrar el contenido de la Ayuda local mediante los argumentos de la línea de comandos de Help Content Manager (HlpCtntMgr.exe). Los scripts de esta herramienta de la línea de comandos se deben ejecutar con permisos de administrador y no se pueden ejecutar como servicio. Con esta herramienta se pueden realizar las siguientes tareas:  

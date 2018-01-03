@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7c25dbb399a3be2af9b181c7ccbf495cc03bec19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53b4d68cfd664e5b9b3385bbbbc9228fe57e566d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 Establece el recuento de subprocesos globales y asigna ese recuento al subproceso actual.  

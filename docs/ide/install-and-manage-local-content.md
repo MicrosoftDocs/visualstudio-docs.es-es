@@ -26,11 +26,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bd498004568bab80565782e11b46691a7d0ef1f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: be2145f95ac28654852ad4e6d77aa6f33e0ecf8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el contenido de Ayuda que se instala en el equipo para ajustarlo a sus necesidades de desarrollo de software.  

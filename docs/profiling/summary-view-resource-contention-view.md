@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99865ecf81fbc7873fef43c51f543f224e281928
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a6e681c703847c970d79c1523ab12ce89e68d28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---resource-contention-view"></a>Vista Resumen: vista de contención de recursos
 La vista Resumen muestra información sobre los eventos de la aplicación en el que se suspendió un proceso o subproceso mientras esperaba el acceso a un recurso.  
@@ -32,9 +33,9 @@ La vista Resumen muestra información sobre los eventos de la aplicación en el 
   
  **Recursos más contenidos** incluye los siguientes datos para cada recurso.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre del recurso.|  
+|**Name**|Nombre del recurso.|  
 |**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|  
   
 ## <a name="most-contended-thread"></a>Subprocesos más contenidos  
@@ -42,8 +43,8 @@ La vista Resumen muestra información sobre los eventos de la aplicación en el 
   
  **Subprocesos más contenidos** incluye los siguientes datos para cada subproceso.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Id.**|Identifiador del subproceso.|  
-|**Nombre**|Nombre del proceso que posee el subproceso.|  
+|**ID**|Identifiador del subproceso.|  
+|**Name**|Nombre del proceso que posee el subproceso.|  
 |**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|

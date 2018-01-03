@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11ebadac433076a6ab54afce59584b1f0966df68
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (por ejemplo, **Uso de la CPU** y **Uso de la memoria**) se pueden ejecutar con o sin el depurador. Las herramientas de rendimiento sin depurador están diseñadas para ejecutarse en las configuraciones de la versión, mientras que las herramientas integradas en el depurador están diseñadas para ejecutarse en las configuraciones de depuración.  
@@ -43,7 +44,7 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
   
 1.  Abra el proyecto que quiere depurar y luego haga clic en **Depurar / Iniciar depuración** (o en **Iniciar** en la barra de herramientas o presione **F5**).  
   
-2.  La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para mostrar la ventana de nuevo, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.  
+2.  La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.  
   
 3.  Ejecute los escenarios cuyos datos desea recopilar.  
   

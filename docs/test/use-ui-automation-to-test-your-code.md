@@ -20,11 +20,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: "85"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: af6cb2319ffb851e91ff87d7e998eeb25315e9fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar UI Automation para probar el código
 Las pruebas automatizadas que controlan la aplicación a través de la interfaz de usuario se conocen como *pruebas de IU codificadas* (CUIT). Estas pruebas incluyen unas pruebas funcionales de los controles de la interfaz de usuario. Permiten comprobar si toda la aplicación, incluida la interfaz de usuario, funciona correctamente. Las pruebas de IU codificadas son especialmente útiles donde haya una validación o cualquier otra lógica en la interfaz de usuario, por ejemplo, en una página web. También se suelen usar para automatizar una prueba manual existente.  

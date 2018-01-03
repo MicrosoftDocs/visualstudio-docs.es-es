@@ -21,11 +21,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5709fc2ea456a8cfa45d8ce01e97c0c79d256c38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 86c4b896944c3241f01329202696aa72bfd0f160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa el contenido de un archivo de proyecto en otro archivo de proyecto.  
@@ -45,7 +46,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Descripción|  
+|Atributo|Description|  
 |---------------|-----------------|  
 |`Project`|Atributo necesario.<br /><br /> Ruta de acceso del archivo de proyecto que se va a importar. La ruta puede incluir caracteres comodín. Los archivos coincidentes se importan según el criterio de ordenación. Mediante esta característica, puede agregar código a un proyecto simplemente agregando el archivo de código a un directorio.|  
 |`Condition`|Atributo opcional.<br /><br /> Condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
@@ -55,7 +56,7 @@ Importa el contenido de un archivo de proyecto en otro archivo de proyecto.
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 |[ImportGroup](../msbuild/importgroup-element.md)|Contiene una colección de elementos `Import` agrupados en una condición opcional.|  

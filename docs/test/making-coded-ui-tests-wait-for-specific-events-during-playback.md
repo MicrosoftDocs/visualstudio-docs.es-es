@@ -11,11 +11,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: "24"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0440261e5d081c40701d3a2f93ccf35a7adb2fd8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b2c507d49bca2589d7c5a70d88f8819ee68d0ce5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción
 En una reproducción de prueba de UI codificada, puede indicar a la prueba que espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Para ello, use el método UITestControl.WaitForControlXXX() adecuado, tal y como se describe en la siguiente tabla. Para ver un ejemplo de una prueba de IU codificada que espera a que un control se habilite con el método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, vea [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  

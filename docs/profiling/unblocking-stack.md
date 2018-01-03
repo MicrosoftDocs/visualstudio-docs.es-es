@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24e0019ce0111c4a557e54fe7c2e2dfa40658ef6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 26f0a0eae84e8a1247996dc21dff002ad7e79239
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unblocking-stack"></a>Pila de desbloqueo
 Si el elemento del subproceso seleccionado actualmente representa un segmento bloqueado que posteriormente empezó a ejecutarse después de otro subproceso en el proceso actual lo desbloqueó, la pila de llamadas del subproceso que realizó el desbloqueo se muestra en esta pestaña.  

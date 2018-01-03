@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cada43ba0ac05d5ec7355f77578127c3339929be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a6fb8d57be1101f8faa5826b2459a9a1658009d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referencias, Diseñador de proyectos (Visual Basic)
 Use la página **Referencias** del **Diseñador de proyectos** para administrar las referencias, las referencias web y los espacios de nombres importados en su proyecto. Los proyectos pueden contener referencias a componentes COM, servicios Web XML, bibliotecas de clases o ensamblados de .NET Framework u otras bibliotecas de clases. Para obtener más información sobre el uso de referencias, vea [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md).  

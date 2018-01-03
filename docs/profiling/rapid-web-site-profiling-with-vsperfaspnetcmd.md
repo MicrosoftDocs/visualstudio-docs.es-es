@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1f2bc5acb69aa49fb37713942edb4e018039e8a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: ca6dd3c084c6ef8287469b3c1629af49e7a6f4fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Generación rápida de perfiles de sitio web con VSPerfASPNETCmd
 La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perfiles fácilmente de aplicaciones web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. En comparación con la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd.md), tiene menos opciones, no debe establecerse ninguna variable de entorno y no es necesario reiniciar el equipo. **VSPerfASPNETCmd** es el método preferido para la generación de perfiles con el generador de perfiles independiente. Para obtener más información, consulte [Cómo: Instalar el generador de perfiles independiente](../profiling/how-to-install-the-stand-alone-profiler.md).  
@@ -96,7 +97,7 @@ La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perf
 ## <a name="additional-options"></a>Opciones adicionales  
  Puede agregar cualquiera de las siguientes opciones para los comandos enumerados anteriormente en esta sección, excepto el comando **vsperfaspnetcmd /shutdown**.  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**/Output:** `VspFile`|De forma predeterminada, el archivo de datos de generación de perfiles (.vsp) se crea en el directorio actual con el nombre de archivo **PerformanceReport.vsp**. Utilice la opción /output para cambiar la ubicación, el nombre de archivo o ambos.|  
 |**/PackSymbols:Off**|De forma predeterminada, VsPerfASPNETCmd incrusta símbolos (nombres de función y parámetro, etcétera) en el archivo .vsp. Incrustar los símbolos puede hacer que el archivo de datos de generación de perfiles sea muy grande. Si tiene acceso a los archivos .pdb que contienen los símbolos al analizar los datos, utilice la opción /packsymbols:off para deshabilitar la incrustación de los símbolos.|

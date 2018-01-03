@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fffcc55953e394c5efd00b86949f04474a66111
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 28ae63c6dba9d352025d5c87d838772a81cf989d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-update-existing-templates"></a>Cómo: Actualizar plantillas existentes
 Después de crear una plantilla y comprimir los archivos en un archivo .zip, es posible que desee modificarla. Puede hacerlo al cambiar los archivos de la misma de forma manual o al exportar una nueva plantilla de un proyecto basado en la plantilla.  

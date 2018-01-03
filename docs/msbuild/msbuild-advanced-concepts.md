@@ -13,18 +13,19 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7d996986fbd4bc5df5841b8b74b37b8153495db4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91544f1ccc30a2f5dca998a0f670c4733cf964ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-advanced-concepts"></a>Conceptos avanzados de MSBuild
 Los documentos de esta sección describen cómo utilizar técnicas avanzadas para mejorar las compilaciones que se ejecutan con MSBuild.  
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Procesamiento por lotes](../msbuild/msbuild-batching.md)|Describe cómo procesar por lotes destinos de compilación y tareas basadas en metadatos de elementos.|  
 |[Transformaciones](../msbuild/msbuild-transforms.md)|Explica cómo utilizar las transformaciones para habilitar el análisis de dependencias.|  

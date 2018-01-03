@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cac24838cd848770c45794637620b70cea3e1bd6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8abd8c38bcff23b43365253af25547f854cb581
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="alias-command"></a>Alias (Comando)
 Crea un nuevo alias para un comando completo, un comando completo con argumentos u otro alias.  

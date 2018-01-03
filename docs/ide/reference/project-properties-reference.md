@@ -15,18 +15,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 95ffd0009e50f01e40a3182bfbf6c8c6947836c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66bd8d44fdd7ddfed502b72dcb60853fb63d3671
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-properties-reference"></a>Referencia de propiedades del proyecto
 Obtenga más información sobre cómo configurar y personalizar propiedades del proyecto.  
   
 ## <a name="project-properties-pages"></a>Páginas de propiedades del proyecto  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Página de aplicación, Diseñador de proyectos (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].|  
 |[Página de aplicación, Diseñador de proyectos (C#)](../../ide/reference/application-page-project-designer-csharp.md)|Use esta página para especificar la configuración de la aplicación y las propiedades de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].|  

@@ -37,11 +37,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d2ec0c94de336adf2c8fd10946466aafcecc72a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f9f928149adf689113e6257efaa06e94b467c95f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
 Puede escribir eventos anteriores o posteriores a la compilación para la [página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) directamente en el cuadro de edición o puede seleccionar macros anteriores o posteriores a la compilación de una lista de macros disponibles.  
@@ -68,7 +69,7 @@ Puede escribir eventos anteriores o posteriores a la compilación para la [pági
 ### <a name="macros"></a>Macros  
  Puede usar cualquiera de estas macros para especificar las ubicaciones de los archivos o para obtener el nombre real del archivo de entrada en el caso de las selecciones múltiples. Estas macros no distinguen entre mayúsculas y minúsculas.  
   
-|Macro|Descripción|  
+|Macro|Description|  
 |-----------|-----------------|  
 |`$(ConfigurationName)`|El nombre de la configuración del proyecto actual (por ejemplo, "Depuración").|  
 |`$(OutDir)`|Ruta de acceso al directorio de archivos de salida relativo al directorio del proyecto. Se resuelve en el valor de la propiedad Directorio de salida. Incluye la barra diagonal inversa final “\\”.|  

@@ -21,19 +21,20 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a585c0c3065d16000737ebfd5c42e3f020c0074a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ae7e6d5203ac4f2b6ff58a19d4938180b7a11c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createproperty-task"></a>CreateProperty (Tarea)
 Rellena las propiedades con los valores pasados. Esto permite que los valores se copien de una propiedad o cadena a otra.  
   
 ## <a name="attributes"></a>Atributos  
- En la siguiente tabla se describen los parámetros de la tarea `CreateProperty`.  
+ En la siguiente tabla se describen los parámetros de la tarea `CreateProperty` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Value`|Parámetro de salida `String` opcional.<br /><br /> Especifica el valor que se copiará en la nueva propiedad.|  
 |`ValueSetByTask`|Parámetro de salida `String` opcional.<br /><br /> Contiene el mismo valor que el parámetro `Value`. Use este parámetro únicamente cuando quiera impedir que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] establezca la propiedad de salida cuando omita el destino que lo contiene porque las salidas están actualizadas.|  

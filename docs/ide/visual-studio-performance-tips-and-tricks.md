@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 519bb7b70737e4c3e2d6e80f19a056b4cd385980
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 

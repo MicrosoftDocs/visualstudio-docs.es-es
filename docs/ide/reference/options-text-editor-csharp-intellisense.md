@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6e1613410c8143126254c8f7a4bd325c6e6f22
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: b0b69b7eafbfbb1b5c2c582fd0c734a183ea0a78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opciones, editor de texto, C#, IntelliSense
 Use la página de propiedades **IntelliSense** para modificar la configuración que afecta al comportamiento de IntelliSense para Visual C#. Puede tener acceso a la página de propiedades **IntelliSense** haciendo clic en **Opciones** en el menú **Herramientas**, después hacer clic en **C#** en la carpeta **Editor de texto** y, después, hacer clic en **IntelliSense.**  

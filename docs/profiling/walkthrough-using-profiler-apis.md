@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa7ba54d15697c02b62f13c3fa54a3005f410bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a592082cac8cf493a742c9ce6f7de3bb0c706aad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
 En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Usará la API del generador de perfiles para limitar la cantidad de datos que se recopilan durante la generación de perfiles de instrumentación.  

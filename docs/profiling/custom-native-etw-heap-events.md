@@ -13,11 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 dev_langs: C++
-ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 

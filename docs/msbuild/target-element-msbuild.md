@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ed3af7142d556c52fbed71f03d5cc53eb3025035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e8a444add9d28a79458dabab75b4cf62bf951dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] las ejecute de manera secuencial.  
@@ -58,7 +59,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 
 ### <a name="attributes"></a>Atributos  
 
-|Atributo|Descripción|  
+|Atributo|Description|  
 |---------------|-----------------|  
 |`Name`|Atributo necesario.<br /><br /> Nombre del destino.|  
 |`Condition`|Atributo opcional.<br /><br /> La condición que se va a evaluar. Si la condición se evalúa como `false`, el destino no ejecutará el cuerpo del destino ni los destinos que se establecen en el atributo `DependsOnTargets`. Para obtener más información sobre las condiciones, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
@@ -73,7 +74,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 
 ### <a name="child-elements"></a>Elementos secundarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Puede haber cero o más tareas en un destino.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Contiene un conjunto de elementos `Property` definidos por el usuario. A partir de .NET Framework 3.5, un elemento `Target` puede contener elementos `PropertyGroup`.|  
@@ -82,9 +83,9 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 
 ### <a name="parent-elements"></a>Elementos primarios  
 
-|Elemento|Descripción|  
+|Elemento|Description|  
 |-------------|-----------------|  
-|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|[Proyecto](../msbuild/project-element-msbuild.md)|Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 
 ## <a name="remarks"></a>Comentarios  
  El primer destino que se ejecutará se especifica en tiempo de ejecución. Los destinos pueden tener dependencias en otros destinos. Por ejemplo, un destino para la implementación depende de un destino para la compilación. El motor [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta las dependencias en el orden en que aparecen en el atributo `DependsOnTargets`, de izquierda a derecha. Para obtener más información, consulte [Destinos](../msbuild/msbuild-targets.md).  

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25e635ef74d19cc1f757b9a78ecbeae58fae92cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4de13644837c3fd21b38e0be6f4414700eb92414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="process-view---contention-data"></a>Vista Proceso: datos de contención
 La vista Proceso muestra datos de contención de los procesos y subprocesos que se ejecutaron durante la generación de perfiles.  
@@ -26,7 +27,7 @@ La vista Proceso muestra datos de contención de los procesos y subprocesos que 
   
  En la siguiente tabla se explican los valores de las columnas de la tabla de vista Proceso.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Hora de inicio**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el inicio del proceso o subproceso.|  
 |**Tiempo de bloqueo**|El tiempo total durante el cual no se pudieron ejecutar las funciones del proceso o subproceso.|  
@@ -34,12 +35,12 @@ La vista Proceso muestra datos de contención de los procesos y subprocesos que 
 |**Contenciones**|El número de veces que no se pudieron ejecutar las funciones del proceso o subproceso.|  
 |**Porcentaje de contenciones**|El porcentaje de todas las contenciones de la generación de perfiles que son contenciones del proceso o subproceso.|  
 |**Hora de finalización**|El número de milisegundos o ciclos de procesador desde el inicio de la generación de perfiles hasta el final del proceso o subproceso.|  
-|**Id.**|El identificador generado por el sistema del proceso o subproceso.|  
+|**ID**|El identificador generado por el sistema del proceso o subproceso.|  
 |**Duración**|El número de milisegundos o ciclos de procesador desde el inicio del proceso o subproceso hasta el final del proceso o subproceso o el final de la generación de perfiles.|  
 |**ype**|El tipo de fila, ya sea un proceso o un subproceso.<br /><br /> Solo disponible en los informes de línea de comandos de **VSReport**. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Nombre**|El nombre del proceso o subproceso.|  
+|**Name**|El nombre del proceso o subproceso.|  
 |**Id. único**|Un identificador generado por el generador de perfiles que es único para el proceso o subproceso.|  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista Informes](../profiling/how-to-customize-report-view-columns.md)   
+ [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
  [Vista Proceso](../profiling/process-view.md)

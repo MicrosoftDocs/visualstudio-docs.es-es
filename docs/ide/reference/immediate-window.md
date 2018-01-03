@@ -18,13 +18,14 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81856823b511fc89f5f156915f843d4b0202e907
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 026223f89822f2d76aa1185da8691c538b15ee62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="immediate-window"></a>Ventana Inmediato
+# <a name="immediate-window"></a>Inmediato (ventana)
 La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.  
   
  Puede usar esta ventana para emitir comandos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] individuales. Entre los comandos disponibles se incluye `EvaluateStatement`, que puede usarse para asignar valores a variables. La ventana **Inmediato** también admite IntelliSense.  

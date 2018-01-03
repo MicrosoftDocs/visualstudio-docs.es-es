@@ -14,11 +14,12 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ee9f615ad28e486566fb117124a1b69634a4b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e947fa523b2d5e79e1df1966e6a4c3d9b6c8e7af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
 > [!TIP]
@@ -39,7 +40,7 @@ Además de las características y utilidades de accesibilidad de Windows, las ca
 > [!IMPORTANT]
 >  La información de esta sección solo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si ha obtenido este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se incluye con el paquete de software o puede visitar la [página de información de contacto de Soporte técnico de Microsoft](http://support.microsoft.com/ContactUs) y hacer clic en el vínculo **Locate Microsoft Offices Worldwide** (Buscar oficinas de Microsoft en todo el mundo) (cerca de la parte inferior de la página). Esta página proporciona una lista de números de teléfono y direcciones de servicios de soporte técnico de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si los tipos de productos y servicios que se describen en esta sección están disponibles en su zona. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.  
 
- Para obtener más información, consulta los temas siguientes:  
+ Para obtener más información, vea los temas siguientes:  
 
 -   [Cómo: Establecer opciones de accesibilidad de IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)  
 

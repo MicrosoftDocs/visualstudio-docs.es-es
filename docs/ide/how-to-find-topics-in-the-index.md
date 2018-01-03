@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea90dba4090565143c84d510b5e4f9e998cfb5fc
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>Búsqueda de temas con el índice del visor de la Ayuda
 El índice contiene una lista de palabras clave asociadas a los temas del contenido instalado. Cada tema puede tener más de una palabra clave asociada, y cada palabra clave se puede asociar a más de un tema. Use este índice de la misma manera que usaría un índice de un libro.  

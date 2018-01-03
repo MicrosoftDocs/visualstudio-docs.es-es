@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 5ef21632d4d1de211aeb84c00adc0f852d4ebae9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: cplusplus
+ms.openlocfilehash: e7b9d0ef40fd0efc4bbf071ef5da75b13e8dd82a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opciones, editor de texto, C/C++, experimental
 
@@ -30,7 +31,7 @@ Para acceder a esta página de propiedades, pulse **Ctrl+Q** para activar `Quick
 Estas características están disponibles en una instalación de Visual Studio 2017.
 
 > [!NOTE]
-> Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="enable-predictive-intellisense"></a>Habilitar Intellisense predictivo
 

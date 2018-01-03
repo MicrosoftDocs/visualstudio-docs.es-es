@@ -13,27 +13,28 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d0346732de89fcc08c0f3604e8a66fa1fd7acdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Vista Módulos: datos de instrumentación de memoria de .NET
 La vista Módulos de los datos de asignación de memoria de .NET recopilados con el método de instrumentación agrupa los datos de tiempo y memoria por los módulos que se ejecutaron durante la generación de perfiles. Los datos de generación de perfiles de las funciones del módulo se enumeran bajo el nodo de módulo.  
   
 ## <a name="general"></a>General  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
-|**Nombre**|Nombre de la función o el módulo.|  
+|**Name**|Nombre de la función o el módulo.|  
 |**Número de línea de función**|Número de línea del inicio de esta función en el archivo de origen.|  
 |**Número de llamadas**|Número total de llamadas realizadas a esta función o módulo.|  
 |**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
 |**Nombre del módulo**|Nombre del módulo que contiene la función.|  
 |**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
 |**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre del proceso**|Nombre del proceso en el que se estaba ejecutando el módulo o la función.|  
+|**Nombre de proceso**|Nombre del proceso en el que se estaba ejecutando el módulo o la función.|  
 |**Sobrecarga de tiempo exclusiva por sondeos**|Sobrecarga de tiempo para esta función o módulo debida a la instrumentación.|  
 |**Sobrecarga de tiempo inclusiva por sondeos**|Sobrecarga de tiempo para esta función o módulo y sus funciones secundarias debida a la instrumentación.|  
   
@@ -44,7 +45,7 @@ La vista Módulos de los datos de asignación de memoria de .NET recopilados con
   
  Los valores inclusivos y exclusivos de memoria de un módulo son la suma de los valores de memoria inclusivos y exclusivos de las funciones del módulo.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Asignaciones inclusivas**|-   Para una función, el número total de objetos creados por la función. Este número incluye los objetos creados por las funciones llamadas por la función.<br />-   Para un módulo, el número de objetos en una generación de perfiles asignados cuando se estaba ejecutando al menos una función del módulo. Este número incluye los objetos asignados en funciones generadas por las llamadas de funciones del módulo.|  
 |**Porcentaje de asignaciones inclusivas**|El porcentaje de todos los objetos que se asignaron durante la generación de perfiles que son asignaciones inclusivas del módulo o la función.|  
@@ -52,13 +53,13 @@ La vista Módulos de los datos de asignación de memoria de .NET recopilados con
 |**Porcentaje de asignaciones exclusivas**|El porcentaje de todos los objetos que se asignaron durante la generación de perfiles que son asignaciones exclusivas del módulo o la función.|  
 |**Bytes exclusivos**|-   Para una función, el número total de bytes de memoria asignados cuando la función estaba ejecutando el código en el cuerpo de función (es decir, cuando la función estaba en la parte superior de la pila de llamadas). Este número no incluye los bytes asignados en las funciones llamadas por la función.<br />-   Para un módulo, la suma de bytes exclusivos que fueron asignados por las funciones del módulo.|  
 |**Porcentaje de bytes exclusivos**|El porcentaje de todos los bytes que se asignaron durante la generación de perfiles que son bytes exclusivos del módulo, función, línea o instrucción.|  
-|**Bytes inclusivos**|-   Para una función, el número de bytes asignados por la función. Este número incluye los bytes asignados en las funciones llamadas por la función.<br />-   Para un módulo, el número de bytes asignados en una generación de perfiles que se asignaron cuando se estaba ejecutando al menos una función del módulo. Este número incluye los objetos creados en todas las funciones llamadas por las funciones del módulo.|  
+|**Porcentaje de bytes inclusivos**|-   Para una función, el número de bytes asignados por la función. Este número incluye los bytes asignados en las funciones llamadas por la función.<br />-   Para un módulo, el número de bytes asignados en una generación de perfiles que se asignaron cuando se estaba ejecutando al menos una función del módulo. Este número incluye los objetos creados en todas las funciones llamadas por las funciones del módulo.|  
 |**Porcentaje de bytes inclusivos**|El porcentaje de todos los bytes que se asignaron durante la generación de perfiles que son bytes inclusivos del módulo o la función.|  
   
 ## <a name="elapsed-inclusive-values"></a>Valores inclusivos transcurridos  
  Los valores inclusivos transcurridos indican el tiempo que una función estuvo en la pila de llamadas. Incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo inclusivo transcurrido**|-   Para una función, el tiempo dedicado a la función. Incluye el tiempo dedicado a funciones secundarias y llamadas al sistema operativo, como cambios de contexto y operaciones de E/S.<br />-   Para un módulo, el período de tiempo en el que al menos una función del módulo estuvo en la pila de llamadas.|  
 |**Porcentaje de tiempo inclusivo transcurrido**|El porcentaje de tiempo total inclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo inclusivo transcurrido total de este módulo o función.|  
@@ -69,7 +70,7 @@ La vista Módulos de los datos de asignación de memoria de .NET recopilados con
 ## <a name="elapsed-exclusive-values"></a>Valores exclusivos transcurridos  
  Los valores exclusivos transcurridos indican el tiempo que una función se estaba ejecutando directamente en la parte superior de la pila de llamadas. Incluye el tiempo dedicado llamadas al sistema operativo, como cambios de contexto y operaciones de E/S, pero no incluye el tiempo dedicado a funciones secundarias.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo exclusivo transcurrido**|-   Para una función, el tiempo dedicado al módulo o la función. Incluye el tiempo dedicado a llamadas al sistema operativo, como cambios de contexto y operaciones de E/S, pero excluye el tiempo dedicado a funciones secundarias.<br />-   Para un módulo, la suma del tiempo exclusivo transcurrido de las funciones del módulo.|  
 |**Porcentaje de tiempo exclusivo transcurrido**|El porcentaje de tiempo exclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo exclusivo transcurrido total de este módulo o función.|  
@@ -80,7 +81,7 @@ La vista Módulos de los datos de asignación de memoria de .NET recopilados con
 ## <a name="application-inclusive-values"></a>Valores inclusivos de aplicación  
  Los valores inclusivos de aplicación indican el tiempo que una función estuvo en la pila de llamadas. No incluye el tiempo dedicado a llamadas al sistema operativo, como modificadores de contexto y operaciones de E/S, pero incluye el tiempo dedicado a funciones secundarias.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo inclusivo de aplicación**|-   Para una función, el tiempo dedicado a llamadas a la función. Incluye el tiempo dedicado a las funciones secundarias pero excluye las llamadas al sistema operativo, como cambios de contexto y operaciones de E/S.<br />-   Para un módulo, el período de tiempo en el que al menos una función del módulo estuvo en la pila de llamadas, excluido el tiempo dedicado a llamadas al sistema operativo.|  
 |**Porcentaje de tiempo inclusivo de aplicación**|El porcentaje de tiempo inclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo inclusivo de aplicación de este módulo o función.|  
@@ -91,7 +92,7 @@ La vista Módulos de los datos de asignación de memoria de .NET recopilados con
 ## <a name="application-exclusive-values"></a>Valores exclusivos de aplicación  
  Los valores exclusivos de aplicación indican el tiempo dedicado al módulo o la función, excluyendo el tiempo dedicado a funciones secundarias. El tiempo indicado también excluye las llamadas al sistema operativo, como cambios de contexto y operaciones de E/S.  
   
-|Columna|Descripción|  
+|Columna|Description|  
 |------------|-----------------|  
 |**Tiempo exclusivo de aplicación**|-   Para una función, el tiempo exclusivo de aplicación total de llamadas a esta función.<br />-   Para un módulo, el tiempo exclusivo total de aplicación de todas las llamadas a las funciones del módulo.|  
 |**Porcentaje de tiempo exclusivo de aplicación**|El porcentaje de tiempo exclusivo transcurrido de la generación de perfiles que se ha empleado en el tiempo exclusivo de aplicación de este módulo o función.|  

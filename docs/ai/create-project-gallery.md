@@ -10,11 +10,12 @@ ms.topic: how to article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 215326d948175e3f751b9a84fbff9e39f8ec652f
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: multiple
+ms.openlocfilehash: 6d0e9be07609fc75e33c2f105e64e465746e4e51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Crear un proyecto de IA desde la galería de Azure Machine Learning en Visual Studio
 

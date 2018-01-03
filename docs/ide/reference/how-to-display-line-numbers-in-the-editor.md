@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50a5a7d4e83a4cc84d8fe99fb5cc9d48527590af
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 589330e05949567837561d4e732043dcc1ce67eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Cómo: Mostrar los números de línea en el editor
 Puede mostrar u ocultar la numeración de las líneas del código.  

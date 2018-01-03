@@ -14,11 +14,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 065806ec223273bbacba6da7702f21bc25510983
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4aed087f8280049018818e68f7db56960db7e690
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-hierarchy"></a>Jerarquía de llamadas
 La jerarquía de llamadas le permite navegar por el código al mostrar todas las llamadas a y desde un constructor, una propiedad o un método seleccionados. Esto le permite comprender mejor cómo fluye el código y evaluar los efectos de los cambios en el código. Puede examinar varios niveles de código para ver cadenas complejas de llamadas de métodos y puntos de entrada adicionales al código, lo que le permite explorar todas las posibles rutas de acceso de ejecución.  
@@ -58,7 +59,7 @@ Al seleccionar un miembro secundario en el panel de vista de árbol **Jerarquía
 ## <a name="shortcut-menu-items"></a>Elementos del menú contextual  
  En la tabla siguiente, se describen varias opciones del menú contextual que están disponibles cuando hace clic con el botón derecho en un nodo en el panel de vista de árbol.  
   
-|Elemento del menú contextual|Descripción|  
+|Elemento del menú contextual|Description|  
 |-----------------------|-----------------|  
 |**Agregar como nueva raíz**|Agrega el nodo seleccionado al panel de vista de árbol como un nuevo nodo raíz. Esto le permite centrar la atención en un subárbol específico.|  
 |**Quitar raíz**|Quita el nodo raíz seleccionado del panel de vista de árbol. Esta opción solo está disponible desde un nodo raíz.<br /><br /> También puede usar el botón de la barra de herramientas **Quitar raíz** para quitar el nodo raíz seleccionado.|  

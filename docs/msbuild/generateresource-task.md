@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b3004b780400d2fac46866ac4ad02bda18ada9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3004f90f05a41ef0d2557236643af18b9be89d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateresource-task"></a>GenerateResource (Tarea)
 Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y archivos .resources binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se utiliza para convertir archivos .txt o .resx en archivos .resource. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -33,7 +34,7 @@ Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y arch
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `GenerateResource` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AdditionalInputs`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene entradas adicionales a la comprobación de dependencias realizada por esta tarea. Por ejemplo, los archivos de proyecto y de destino normalmente deben ser entradas de modo que, si se actualizan, se vuelvan a generar todos los recursos.|  
 |`EnvironmentVariables`|Parámetro `String[]` opcional.<br /><br /> Especifica una matriz de pares nombre-valor de variables de entorno que deben pasarse al ejecutable resgen.exe generado, además del bloque de entorno normal (o su invalidación selectiva).|  

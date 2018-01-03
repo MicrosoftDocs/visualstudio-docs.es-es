@@ -16,11 +16,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94b842566c3f8bf5ad5374acda0ccc9e9b50cbe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff646066c4e29c46c7ad3c24322d368fa54da9eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-choose-collection-methods"></a>Cómo: Elegir métodos de recolección
 Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admiten tres métodos de recopilación de datos de rendimiento: muestreo, instrumentación y simultaneidad. También puede utilizar el método de muestreo o de instrumentación para recopilar datos de duración y de asignación de memoria de .NET.  
@@ -37,7 +38,7 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/in
   
 -   En la primera página del asistente, seleccione una de las siguientes opciones:  
   
-|Opción|Descripción|  
+|Opción|Description|  
 |------------|-----------------|  
 |**Muestreo de la CPU**|Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU.|  
 |**Instrumentación**|Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida.|  

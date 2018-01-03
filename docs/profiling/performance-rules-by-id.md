@@ -12,17 +12,18 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f93c78df2128be830865026039552652fe901a8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48072da90145fbb60157b18bde5f38ce3cd8a8dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-rules-by-id"></a>Reglas de rendimiento por id.
-|Advertencia|Descripción|  
+|Advertencia|Description|  
 |-------------|-----------------|  
-|[DA0001: Use StringBuilder para concatenaciones](../profiling/da0001-use-stringbuilder-for-concatenations.md)|Las llamadas a System.String.Concat constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de usar la clase <xref:System.Text.StringBuilder> para construir cadenas de varios segmentos.|  
-|[DA0002: Falta VSPerfCorProf.dll](../profiling/da0002-vsperfcorprof-dll-is-missing.md)|El generador de perfiles no pudo encontrar VSPerfCorProf.dll durante la ejecución de generación de perfiles. Esta advertencia se produce cuando se usan herramientas de línea de comandos para la recopilación de datos del generador de perfiles sin usar la herramienta VSPerfCLREnv.cmd para inicializar las variables de entorno necesarias.|  
+|[DA0001: Use StringBuilder para concatenaciones](../profiling/da0001-use-stringbuilder-for-concatenations.md)|Las llamadas a System.String.Concat constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de usar la clase <xref:System.Text.StringBuilder> para construir cadenas a partir de varios segmentos.|  
+|[DA0002: Falta VSPerfCorProf.dll](../profiling/da0002-vsperfcorprof-dll-is-missing.md)|El generador de perfiles no ha podido encontrar VSPerfCorProf.dll durante la ejecución de generación de perfiles. Esta advertencia se produce cuando se usan herramientas de línea de comandos para la recopilación de datos del generador de perfiles sin utilizar la herramienta VSPerfCLREnv.cmd para inicializar las variables de entorno necesarias.|  
 |[DA0003: Muchas muestras de kernel](../profiling/da0003-many-kernel-samples.md)|Una proporción considerable de los ejemplos de la pila de llamadas recopilados para la aplicación se estaban ejecutando en modo kernel. Considere la posibilidad de generación de perfiles de la aplicación mediante el uso de un método de generación de perfiles diferente.|  
 |[DA0004: High processor usage (Uso intenso del procesador)](../profiling/da0004-high-processor-usage.md)|La utilización del procesador (CPU) fue considerablemente alta al generar perfiles de datos recopilados mediante el método de instrumentación. Considere la posibilidad de utilizar el método de generación de perfiles por muestreo al generar perfiles de una aplicación enlazada a la CPU.|  
 |[DA0005: Colecciones GC2 frecuentes](../profiling/da0005-frequent-gc2-collections.md)|Se está recuperando un número elevado de objetos de memoria de .NET en la recolección de elementos no utilizados de la generación 2.|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 |[DA0023: Mucho tiempo de CPU de GC](../profiling/da0023-high-gc-cpu-time.md)|Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que la cantidad de tiempo invertida en la recolección de elementos no utilizados es considerable en comparación con el tiempo total de procesamiento de la aplicación.|  
 |[DA0024: Tiempo excesivo de CPU de GC](../profiling/da0024-excessive-gc-cpu-time.md)|Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que la cantidad de tiempo que se invierte en la recolección de elementos no utilizados es excesivamente alta en comparación con el tiempo total de procesamiento de la aplicación.|  
 |[DA0026: Procesamiento excesivo de tiempo de CPU en modo kernel](../profiling/da0026-excessive-kernel-cpu-time-processing.md)|El tiempo de CPU proporcional que se ejecutó en modo kernel superó la cantidad de tiempo invertido en modo usuario. Considere la posibilidad de volver a generar perfiles y muestrear el número de llamadas del sistema (syscall) para determinar la causa de los tiempos de ejecución elevados del modo kernel.|  
-|[DA0029: Versión de CLR no admitida](../profiling/da0029-unsupported-clr-version.md)|Está intentando generar perfiles de una aplicación que usa la versión 1.1 de .NET Framework, que no es compatible con las herramientas de generación de perfiles.|  
+|[DA0029: Versión de CLR incompatible](../profiling/da0029-unsupported-clr-version.md)|Está intentando generar perfiles de una aplicación que usa la versión 1.1 de .NET Framework, que no es compatible con las herramientas de generación de perfiles.|  
 |[DA0030: Recopilar mediciones de interacción de capas para proyectos de base de datos](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md)|Las llamadas a los métodos <xref:System.Data> constituyen una proporción considerable de los datos de generación de perfiles; además, no ha recopilado datos de interacción de capas en la generación de perfiles. Considere la opción de volver a generar los perfiles y agregar los datos de interacción de capas.|  
 |[DA0038: Alta frecuencia de contenciones de bloqueo](../profiling/da0038-high-rate-of-lock-contentions.md)|Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa considerablemente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de las contenciones.|  
 |[DA0039: Alta frecuencia de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa excesivamente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de la contención.|  
