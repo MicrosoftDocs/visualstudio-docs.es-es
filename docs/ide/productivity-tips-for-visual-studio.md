@@ -7,45 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 803a1a94fe3eaa1bc63d59e9de2a42711f502262
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: fe42e4d2a61b4166d8a69b7c90cf212c36610bd2
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 
-Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual Studio de forma más rápida y eficaz. Para obtener más información sobre los métodos abreviados de teclado más frecuentes, vea [Sugerencias y trucos de Visual Studio](../ide/tips-and-tricks-for-visual-studio.md). Para obtener una lista más completa, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) y [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual Studio de forma más rápida y eficaz.
 
-## <a name="accessing-visual-studio-tools"></a>Obtener acceso a Visual Studio Tools
+Para obtener más información sobre los métodos abreviados de teclado más frecuentes, vea [Sugerencias y trucos de Visual Studio](../ide/tips-and-tricks-for-visual-studio.md). Para obtener una lista más completa, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) y [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Puede tener acceso más fácilmente al Símbolo del sistema para desarrolladores o a otra herramienta si lo ancla a la pantalla Inicio o a la barra de tareas.
+## <a name="accessing-visual-studio-tools"></a>Acceso a Visual Studio Tools
 
-1. En la pantalla Inicio, escriba `Visual Studio Tools` y pulse la tecla **Entrar**.
+Puede tener acceso rápidamente al Símbolo del sistema para desarrolladores o a otra herramienta de Visual Studio si ancla este elemento en el menú Inicio o en la barra de tareas.
 
-1. En **Explorador de archivos**, abra el menú contextual para el elemento que quiera:
+1. En el Explorador de Windows, navegue a `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
 
-    - Notificaciones de compilación
-
-    - Administrador de paquetes depurables
-
-    - Símbolo del sistema para desarrolladores de VS2013
-
-    - Microsoft Feedback Client 2013
-
-    - Símbolo del sistema de las herramientas cruzadas para ARM de VS2013
-
-    - Símbolo del sistema de las herramientas cruzadas de VS2013 x64
-
-    - Símbolo del sistema de las herramientas nativas de VS2013 x64
-
-    - Símbolo del sistema de las herramientas nativas de VS2013 x86
-
-1. Pulse **Anclar a Inicio** o **Anclar a la barra de tareas**.
+1. Haga clic con el botón derecho o abra el menú contextual de **Símbolo del sistema para desarrolladores** y, luego, elija **Anclar a Inicio** o **Anclar a la barra de tareas**.
 
 ## <a name="writing-code"></a>Escribir código
 
@@ -91,11 +74,11 @@ Puede buscar comandos, archivos y opciones en el IDE, además de filtrar el cont
 
 - **Mostrar solo los errores que quiera abordar**. Si elige el selecciona el botón **Filtro** de la barra de herramientas **Lista de errores**, puede reducir el número de errores que aparecen en la ventana **Lista de errores**. Puede mostrar solo los errores de los archivos que están abiertos en el editor, solo los errores del archivo actual o solo los errores del proyecto actual. También puede buscar errores específicos dentro de la ventana Lista de errores.
 
-- **Buscar cuadros de diálogo, comandos de menú y opciones**. En el cuadro [Inicio rápido, Entorno, Opciones (cuadro de diálogo)](../ide/reference/quick-launch-environment-options-dialog-box.md), escriba palabras clave o frases correspondientes a los elementos que intenta buscar. Por ejemplo, aparecen las opciones siguientes si escribe `new project`:
+- **Buscar cuadros de diálogo, comandos de menú y opciones**. En el cuadro [Inicio rápido](../ide/reference/quick-launch-environment-options-dialog-box.md), escriba palabras clave o frases correspondientes a los elementos que intenta buscar. Por ejemplo, aparecen las opciones siguientes si escribe `new project`:
 
-     ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    ![Resultados de inicio rápido para "nuevo proyecto"](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-     **Inicio rápido** muestra vínculos al cuadro de diálogo **Nuevo proyecto**, al cuadro de diálogo **Agregar nuevo elemento** y a la página Proyectos y soluciones del cuadro de diálogo **Opciones**, entre otros. Los resultados de Inicio rápido también pueden incluir archivos de proyecto y ventanas de herramientas.
+    **Inicio rápido** muestra vínculos al cuadro de diálogo **Nuevo proyecto**, al cuadro de diálogo **Agregar nuevo elemento** y a la página Proyectos y soluciones del cuadro de diálogo **Opciones**, entre otros. Los resultados de Inicio rápido también pueden incluir archivos de proyecto y ventanas de herramientas.
 
 ## <a name="debugging-code"></a>Depurar código
 
@@ -103,11 +86,11 @@ La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pued
 
 - **Probar la misma página, aplicación o sitio en exploradores diferentes**. Cuando depura código, puede cambiar fácilmente entre los exploradores web instalados, incluido [Inspector de página (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sin tener que abrir el cuadro de diálogo **Explorar con**. Puede usar la lista **Depurar destino**, que se encuentra en la barra de herramientas **Estándar** junto al botón **Iniciar depuración**, para comprobar rápidamente qué explorador está usando mientras depura o ve páginas.
 
-     ![Seleccionar opciones de depuración de explorador web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![Seleccionar opciones de depuración de explorador web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
 - **Establecer puntos de interrupción temporales**. Puede crear un punto de interrupción temporal en la línea actual de código e iniciar el depurador simultáneamente. Al llegar a esa línea de código, el depurador activa el modo de interrupción. Vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md) para obtener más información.
 
-     Para usar esta característica, pulse las teclas **Ctrl** + **F10** o abra el menú contextual de la línea de código en la que desea establecer una interrupción y, después, elija **Ejecutar hasta el cursor**.
+    Para usar esta característica, pulse las teclas **Ctrl** + **F10** o abra el menú contextual de la línea de código en la que desea establecer una interrupción y, después, elija **Ejecutar hasta el cursor**.
 
 - **Mover el punto de ejecución durante la depuración**. Puede mover el punto de ejecución actual a otra sección de código y reiniciar la depuración a partir de ese punto. Esta técnica es útil si desea depurar una sección de código sin tener que volver a crear todos los pasos necesarios para llegar a esa sección. Vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md) para obtener más información.
 

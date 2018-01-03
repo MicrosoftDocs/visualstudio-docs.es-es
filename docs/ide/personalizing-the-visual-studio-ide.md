@@ -11,15 +11,15 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49a42bdc9f8ec979e47f0977abdf36f614141c89
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: e9ae492d7fc4d110c6e5015c782f97a2561c8bd8
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 
-Puede personalizar Visual Studio de varias maneras para que se ajuste mejor a su propio estilo de desarrollo y a sus requisitos. Muchos de los valores se traspasan a las distintas instancias de Visual Studio &mdash; consulte [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). En este tema se describen brevemente las diferentes personalizaciones y dónde puede encontrar más información.
+Puede personalizar Visual Studio de varias maneras para que se ajuste mejor a su propio estilo de desarrollo y a sus requisitos. Muchos de los valores se traspasan a las distintas instancias de Visual Studio &mdash;consulte [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). En este tema se describen brevemente las diferentes personalizaciones y dónde puede encontrar más información.
 
 ## <a name="general-environment-options"></a>Opciones generales de entorno
 
