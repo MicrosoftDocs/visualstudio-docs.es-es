@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 372a1efccbfa211167930710418905d95411760c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-models"></a>Trabajar con modelos 3D
 Puede usar el Editor de modelos en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear modelos 3D. Puede usar los modelos en su aplicación o juego basado en DirectX.  
@@ -30,7 +31,7 @@ Puede usar el Editor de modelos en [!INCLUDE[vsprvs](../code-quality/includes/vs
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos para trabajar con modelos 3D.|  
 |[Ejemplos del Editor de modelos](../designers/model-editor-examples.md)|Proporciona vínculos a temas que muestran cómo usar el Editor de modelos para realizar tareas comunes de modelado 3D.|

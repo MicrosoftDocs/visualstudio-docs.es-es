@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 5dacd44d72e5be7a898ba90c074dedf4b2f2bb4b
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: a756b7a0cbc69e02c530ffc95d776aefbc96afa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduction-to-wpf"></a>Introducción a WPF
 Windows Presentation Foundation (WPF) le permite crear aplicaciones de cliente de escritorio para Windows con experiencias de usuario visualmente impactantes.  
@@ -552,7 +553,7 @@ End Namespace
 </Window>
 ``` 
   
- En este ejemplo se implementa un recurso de color de fondo mediante el elemento de propiedad `Window.Resources` . Este recurso está disponible para todos los elementos secundarios de <xref:System.Windows.Window>. Hay una gran variedad de ámbitos de recursos, incluidos los siguientes, que se muestran en el orden en que se resuelven:  
+ En este ejemplo se implementa un recurso de color de fondo mediante el elemento de propiedad `Window.Resources`. Este recurso está disponible para todos los elementos secundarios de <xref:System.Windows.Window>. Hay una gran variedad de ámbitos de recursos, incluidos los siguientes, que se muestran en el orden en que se resuelven:  
   
 1.  Un control individual (mediante la propiedad <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> heredada).  
   

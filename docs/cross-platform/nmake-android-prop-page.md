@@ -19,21 +19,22 @@ f1_keywords:
 - VC.Project.VCNMakeTool.PreprocessorDefinitions
 - VC.Project.VCNMakeTool.IncludeSearchPath
 - VC.Project.VCNMakeTool.ForcedIncludes
-ms.openlocfilehash: ff692a62a6e9cdb6b6844d6b0358c6af856b052f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 0479f14ea73e1fda1297ea85b4d6c21e6a855b63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nmake-properties-android-c"></a>Propiedades de NMake (C++ para Android) 
 
-Propiedad | Descripción
+Property | Description
 --- | ---
 Línea de comandos de Compilar | Especifica la línea de comandos que se ejecuta para el comando "Compilar".
 Línea de comandos de Recompilar todo | Especifica la línea de comandos que se ejecuta para el comando "Recompilar todo".
-Línea de comandos de Limpiar | Especifica la línea de comandos que se ejecuta para el comando "Limpiar".
-Resultado | Especifica el archivo de salida que se generará.
-Definiciones de preprocesador | Especifica las definiciones del preprocesador que usan los archivos de origen.
+Línea de comandos de limpieza | Especifica la línea de comandos que se ejecuta para el comando "Limpiar".
+Salida | Especifica el archivo de salida que se generará.
+Definiciones de preprocesador | Especifica las definiciones del preprocesador que usan los archivos de código fuente.
 Ruta de acceso de búsqueda de inclusión | Especifica la ruta de acceso de búsqueda de inclusión para resolver archivos incluidos.
-Archivos de inclusión forzados | Especifica los archivos de inclusión forzados.
+Archivos de inclusión forzados | Especifica los archivos de inclusión forzada.
 Opciones adicionales | Especifica modificadores de compilador adicionales que IntelliSense usará al analizar archivos de C++.

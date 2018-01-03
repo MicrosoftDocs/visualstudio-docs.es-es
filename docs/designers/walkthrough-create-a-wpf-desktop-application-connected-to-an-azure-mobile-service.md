@@ -16,11 +16,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: azure
+ms.openlocfilehash: f3fd548234dbd7f02be4abfab77a22d3efd9b34a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure
 Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una aplicación de escritorio moderna que usa un servicio móvil de Azure para almacenar y proporcionar datos.  

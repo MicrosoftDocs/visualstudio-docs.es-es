@@ -15,11 +15,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2b7176a0aed65a9595730247d857dc0c263dc0cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc01c0d5a2b4ad53f1384640e06b9637cd7fbe0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-editor"></a>Editor de modelos
 En este documento se describe cómo trabajar con el Editor de modelos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para ver, crear y modificar modelos 3D.  
@@ -68,7 +69,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
  En esta tabla se describen los elementos de la barra de herramientas **Modo Editor de modelos**; se muestran en el orden en que aparecen de izquierda a derecha.  
   
-|Elemento de la barra de herramientas|Descripción|  
+|Elemento de la barra de herramientas|Description|  
 |------------------|-----------------|  
 |**Seleccionar**|Habilita la selección de puntos, bordes, caras u objetos de la escena, dependiendo del modo de selección activo.|  
 |**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla Ctrl para activar el modo **Movimiento panorámico** temporalmente.|  
@@ -96,7 +97,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
  En la tabla siguiente se describen los elementos de la barra de herramientas **Editor de modelos**, en el orden en que aparecen de arriba abajo.  
   
-|Elemento de la barra de herramientas|Descripción|  
+|Elemento de la barra de herramientas|Description|  
 |------------------|-----------------|  
 |**Trasladar**|Mueve la selección.|  
 |**Escalar**|Cambia el tamaño de la selección.|  
@@ -113,7 +114,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
  En la tabla siguiente se describen los controles de la vista primaria.  
   
-|Control de vista|Descripción|  
+|Control de vista|Description|  
 |------------------|-----------------|  
 |**Movimiento panorámico**|Habilita el movimiento de una escena 3D en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto de la escena y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla Ctrl para activar el modo **Movimiento panorámico** temporalmente.|  
 |**Zoom**|Habilita la presentación de más o menos detalles en relación con el marco de la ventana. En el modo **Zoom**, seleccione un punto de la escena y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> En el modo **Seleccionar**, puede acercar o alejar con la rueda del mouse mientras mantiene presionada la tecla Ctrl.|  
@@ -122,7 +123,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
  La vista la establece la cámara virtual, pero también se define mediante una proyección. La proyección define cómo se traducen las formas y los objetos de la vista en píxeles en la superficie de diseño. En la barra de herramientas **Editor de modelos**, puede elegir la proyección **Perspectiva** u **Ortográfica**.  
   
-|Proyección|Descripción|  
+|Proyección|Description|  
 |----------------|-----------------|  
 |**Perspectiva**|En la proyección de perspectiva, los objetos que están más alejados del punto de vista aparecen más pequeños y convergen finalmente en un punto en la distancia.|  
 |**Ortográfica**|En la proyección ortográfica, los objetos parecen del mismo tamaño, con independencia de la distancia desde el punto de vista. No se muestra convergencia. Cuando se habilita la proyección **Ortográfica**, no se puede utilizar el modo **Orbital** para colocar la vista arbitrariamente.|  
@@ -215,7 +216,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
  El Editor de modelos proporciona estos materiales predeterminados:  
   
-|Material|Descripción|  
+|Material|Description|  
 |--------------|-----------------|  
 |Sin iluminación|Presenta una superficie sin iluminación simulada.|  
 |Lambert|Presenta una superficie con iluminación ambiente simulada e iluminación difusa.|  
@@ -225,7 +226,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
  Para modificar el modo en que un objeto determinado reacciona ante las distintas fuentes de luz de la escena, cambie las propiedades de iluminación del material independientemente de los demás objetos que utilizan el material. En esta tabla se describen las propiedades comunes de la iluminación:  
   
-|Propiedad Lighting|Descripción|  
+|Propiedad Lighting|Description|  
 |-----------------------|-----------------|  
 |Ambiente|Describe cómo afecta a la superficie la iluminación ambiente.|  
 |Difusa|Describe cómo afecta a la superficie las luces direccionales y puntuales.|  
@@ -307,7 +308,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas que se pueden usar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con activos gráficos como texturas e imágenes, modelos 3D y efectos de sombreador.|  
 |[Editor de imágenes](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con texturas e imágenes.|  

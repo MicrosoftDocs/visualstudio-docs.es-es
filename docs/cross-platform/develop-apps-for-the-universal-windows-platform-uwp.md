@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
 manager: ghogen
-ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)
 Con la Plataforma universal de Windows y nuestro núcleo único de Windows, puede ejecutar la misma aplicación en cualquier dispositivo con Windows 10, desde teléfonos hasta equipos de escritorio. Cree estas aplicaciones con Visual Studio y las herramientas de desarrollo de aplicaciones Windows universales.  

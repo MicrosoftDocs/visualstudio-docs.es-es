@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd4b344860190d0dcfc01adf6ccf553d34c5b038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5982cfd7b9201008f4ecc5930041200fd4980dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 Limpia todos los archivos intermedios y directorios de salida.  
@@ -37,7 +38,7 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
  Obligatorio. Ruta de acceso completa y nombre del archivo de solución o archivo del proyecto.  
   
  /project `ProjName`  
- Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede especificar una ruta de acceso relativa desde la carpeta `SolutionName` al archivo del proyecto (o el nombre para mostrar del proyecto) o la ruta de acceso completa y el nombre del archivo del proyecto.  
+ Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede especificar una ruta de acceso relativa desde la carpeta `SolutionName` al archivo del proyecto (o el nombre para mostrar del proyecto), o bien la ruta de acceso completa y el nombre del archivo del proyecto.  
   
  /projectconfig `ProjConfigName`  
  Opcional. Nombre de una configuración de compilación de proyecto que se usará para limpiar el `/project` mencionado.  

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ccc6fcfa8471d767356f1e30d1e5f8b0ed15d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b815904a7ac2b8a050cd4b907698c43a91d929dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>Código fuente de L2DBForm.xaml
 Este tema contiene y describe el archivo de origen XAML para el [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
@@ -84,7 +85,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
   
 ## <a name="example"></a>Ejemplo  
   
-### <a name="description"></a>Descripción  
+### <a name="description"></a>Description  
   
 > [!NOTE]
 >  Se recomienda copiar el código siguiente en un editor de código, como el editor de código fuente de C# de Visual Studio, de forma que sea más sencillo realizar un seguimiento de los números de línea.  

@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a473ac2be65acc9b08455fe687b52468f5ca9fa6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 603cfdd3a52163959ed223952994d3e8e4147298
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-project-templates"></a>Cómo: Crear plantillas de proyectos
 Este procedimiento le permite crear una plantilla con el Asistente **Exportar plantilla**, que empaqueta su plantilla en un archivo .zip. También puede crear plantillas en el formato de archivo VSIX para obtener una implementación mejorada con la extensión del Asistente Exportar plantilla, o con las plantillas que se incluyen en [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)], o puede crear plantillas manualmente.  

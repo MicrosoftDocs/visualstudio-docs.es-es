@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d3d01a13acf68bbf8e58ca0fa1cb41b145d9d3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e2920642c46aa3f6cdf85f4f80c2334d18095718
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utility-nodes"></a>Nodos de utilidad
 En el Diseñador de sombras, los nodos de utilidad representan cálculos de sombreador habituales y útiles que no se ajustan perfectamente a las demás categorías. Algunos nodos de utilidad realizan operaciones simples como anexar vectores o elegir resultados condicionalmente y otros realizan operaciones complejas, como calcular contribuciones de iluminación según los modelos de iluminación populares.  

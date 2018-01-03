@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5613790632c4bd462c1efbb3f218a0299b276179
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usar activos 3D en un juego o una aplicación
 En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para procesar activos 3D e incluirlos en las compilaciones.  
@@ -87,24 +88,24 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../code-
 ### <a name="image-content-pipeline-configuration"></a>Configuración de la canalización de contenido de imagen  
  Cuando se utiliza la herramienta de canalización de contenido de la imagen para compilar un activo de textura, se puede comprimir la textura de varias maneras, indicar si se deben generar niveles de MIP en tiempo de compilación y cambiar el nombre del archivo de salida.  
   
-|Propiedad|Descripción|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Compress**|Especifica el tipo de compresión que se utiliza para el archivo de salida.<br /><br /> Las opciones disponibles son:<br /><br /> -   **Sin compresión**<br />-   **Compresión BC1_UNORM**<br />-   **Compresión BC1_UNORM_SRGB**<br />-   **Compresión BC2_UNORM**<br />-   **Compresión BC2_UNORM_SRGB**<br />-   **Compresión BC3_UNORM**<br />-   **Compresión BC3_UNORM_SRGB**<br />-   **Compresión BC4_UNORM**<br />-   **Compresión BC4_SNORM**<br />-   **Compresión BC5_UNORM**<br />-   **Compresión BC5_SNORM**<br />-   **Compresión BC6H_UF16**<br />-   **Compresión BC6H_SF16**<br />-   **Compresión BC7_UNORM**<br />-   **Compresión BC7_UNORM_SRGB**<br /><br /> Para obtener información sobre qué formatos de compresión se admiten en las diferentes versiones de DirectX, vea la [Guía de programación para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|  
 |Convertir a formato alpha premultiplicado|**Sí** para convertir la imagen al formato alfa premultiplicado en el archivo de salida, de lo contrario, **No**. Solo se cambia el archivo de salida, la imagen original no se cambia.|  
-|**Generar Mips**|**Sí** para generar una cadena completa de mapas MIP en tiempo de compilación e incluirla en el archivo de salida; de lo contrario, **No**. Si es **No** y el archivo de código fuente ya contiene una cadena de mapas MIP, el archivo de salida tendrá una cadena de mapas MIP; de lo contrario, el archivo de salida no tendrá ninguna cadena de mapas MIP.|  
+|**Generar MIP**|**Sí** para generar una cadena completa de mapas MIP en tiempo de compilación e incluirla en el archivo de salida; de lo contrario, **No**. Si es **No** y el archivo de código fuente ya contiene una cadena de mapas MIP, el archivo de salida tendrá una cadena de mapas MIP; de lo contrario, el archivo de salida no tendrá ninguna cadena de mapas MIP.|  
 |**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
   
 ### <a name="mesh-content-pipeline-configuration"></a>Configuración de la canalización de contenido de mallas  
  Cuando se utiliza la herramienta de canalización de contenido de mallas para compilar un activo de malla, se puede cambiar el nombre del archivo de salida.  
   
-|Propiedad|Descripción|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
   
 ### <a name="shader-content-pipeline-configuration"></a>Configuración de la canalización de contenido del sombreador  
  Cuando se utiliza la herramienta de canalización de contenido del sombreador para compilar un activo de sombreador, se puede cambiar el nombre del archivo de salida.  
   
-|Propiedad|Descripción|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
   
@@ -200,7 +201,7 @@ cbuffer MiscVars : register(b3)
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Cómo: Exportar una textura que contiene mapas MIP](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que contiene mapas MIP calculados previamente.|  
 |[Cómo: Exportar una textura que tiene alfa premultiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Describe cómo utilizar la canalización de contenido de imagen para exportar una textura que contiene valores alfa multiplicados previamente.|  

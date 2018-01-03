@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2dfdf4f5a722bf4fea0c4bd3175e33799aa8b8df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 Obtenga información sobre la manera en que el editor de Visual Studio admite la lectura y la navegación por los distintos lenguajes de computación y sobre cómo puede agregar compatibilidad con otros lenguajes en el editor de Visual Studio.  
@@ -74,7 +75,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
   
  En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su situación:  
   
-|Nombre de carpeta|Descripción|  
+|Nombre de carpeta|Description|  
 |-----------------|-----------------|  
 |\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|  
 |\Syntaxes|Carpeta de la gramática. Contiene los archivos .json de la gramática para el lenguaje, como **Matlab.json**.|  

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f79bc2ca79cdec10fa480d87f48abc240420c34e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Crear aplicaciones en lenguajes bidireccionales
 Puede usar Visual Studio para crear aplicaciones que muestren correctamente el texto en idiomas que se escriben de derecha a izquierda, como el árabe y el hebreo. Para algunas características, simplemente puede establecer propiedades. En otros casos, debe implementar características en el código.  

@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 41fe8afba19939dfbbbd5c055f5ebd53e9fc2e04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: f744bd9535a4946570267de027e7096b41d274e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin
 Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Android, iOS y Windows con C#, .NET y Visual Studio. Xamarin permite compartir entre plataformas gran parte del código. Solo es necesario que un pequeño porcentaje sea específico de la plataforma. Para más información sobre Xamarin, vea [Visual Studio y Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -87,7 +88,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |Planear pruebas, crear casos de prueba y organizar conjuntos de pruebas|Sí||  
 |Pruebas manuales|Sí||  
 |Administrador de pruebas (grabar y reproducir pruebas)|Sí|Dispositivos Windows y emuladores de Android únicamente de Visual Studio. Con la [Grabadora de pruebas de Xamarin](https://www.xamarin.com/test-cloud/recorder) es posible grabar en todos los dispositivos.|  
-|Cobertura de código|no disponible||  
+|Cobertura de código|N/D||  
 |[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|Sí|Para destinos Windows y Android, pueden usarse las herramientas integradas de MSTest. Xamarin recomienda NUnit para ejecutar pruebas unitarias en Windows, Android e iOS. Vea [Configuring TFS for Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (sitio web de Xamarin).|  
 |[Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)|Solo Windows|La grabadora de pruebas de interfaz de usuario de Visual Studio es solo para Windows. Para todas las plataformas, vea [Grabadora de pruebas de Xamarin](https://www.xamarin.com/test-cloud/recorder).|  
   

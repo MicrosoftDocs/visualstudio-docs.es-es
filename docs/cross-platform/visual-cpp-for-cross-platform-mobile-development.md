@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 51b579d047987648caab31136b6378e0a6f0475d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 699fc53d0679e303e9c661c54634f162d95e2a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ para el desarrollo móvil multiplataforma.
 Puede compilar aplicaciones nativas de C++ para dispositivos iOS, Android y Windows, y compartir código común en bibliotecas compiladas para iOS, Android y Windows mediante Visual C++ para desarrollo móvil multiplataforma. Se trata de una opción disponible en Visual Studio de 2015 que instala los SDK y las herramientas que necesita para el desarrollo multiplataforma de bibliotecas compartidas y las aplicaciones nativas. Cuando se instala, puede usar Visual C++ para crear código que se ejecuta dispositivos y plataformas iOS y Android, además de en Windows, Windows Phone y Xbox.  
@@ -103,6 +104,6 @@ Puede compilar aplicaciones nativas de C++ para dispositivos iOS, Android y Wind
   
 3.  [Crear una aplicación de actividad nativa de Android](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Crear una aplicación OpenGL ES en iOS y Android](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4.  [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
 5.  [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)

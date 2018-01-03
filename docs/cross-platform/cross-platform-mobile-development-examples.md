@@ -13,13 +13,14 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6809ffe0c53448d7d00fec1169b90fd87274367e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 030fe898926c1e1d124a780c9ba73fec31109cd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="cross-platform-mobile-development-examples"></a>Cross-Platform Mobile Development Examples
+# <a name="cross-platform-mobile-development-examples"></a>Ejemplos de desarrollo móvil multiplataforma
 Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil multiplataforma generan ejemplos completos que pueden usarse como referencia para el aprendizaje. Además, el Centro de desarrollo de Windows tiene varias aplicaciones de ejemplo que se pueden descargar y probar en Visual Studio.  
   
 -   [Ejemplo de la aplicación hello-jni de Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -32,7 +33,7 @@ Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil mul
   
 -   [Ejemplo de aplicación Bitmap Plasma de Android](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
   
-     Este ejemplo se ha tomado de la aplicación Bitmap Plasma del NDK de Android. Aquí se muestra una aplicación OpenGL ES 2.0 completa de Android que usa la interfaz Java Native Interface. Se muestra la manipulación directa de los búferes de píxel de mapa de bits Android para generar un efecto de plasma.  
+     Este ejemplo se ha tomado de la aplicación Bitmap Plasma del NDK de Android. Aquí se muestra una aplicación OpenGL ES 2.0 completa de Android que usa la interfaz Java Native Interface. Se muestra la manipulación directa de los búferes de píxel de mapa de bits Android para generar un efecto de plasma.  
   
 -   [Ejemplo de la biblioteca TwoLibs de Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)  
   

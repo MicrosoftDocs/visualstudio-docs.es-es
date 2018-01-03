@@ -15,11 +15,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d746d874b7efe18b1bd8dabf15804f1c05b57ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor"></a>Editor de imágenes
 En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para ver y modificar recursos de textura e imagen.  
@@ -98,7 +99,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
  En esta tabla se describen los elementos de la barra de herramientas **Modo Editor de imágenes**; se muestran en el orden en que aparecen de izquierda a derecha.  
   
-|Elemento de la barra de herramientas|Descripción|  
+|Elemento de la barra de herramientas|Description|  
 |------------------|-----------------|  
 |**Seleccionar**|Permite seleccionar una región rectangular de una imagen. Después de seleccionar una región, la puede cortar, copiar, mover, escalar, girar, voltear o eliminar. Cuando hay una selección activa, las herramientas de dibujo solo afectan a la región seleccionada.|  
 |**Selección irregular**|Permite seleccionar una región irregular de una imagen. Después de seleccionar una región, la puede cortar, copiar, mover, escalar, girar, voltear o eliminar. Cuando hay una selección activa, las herramientas de dibujo solo afectan a la región seleccionada.|  
@@ -122,7 +123,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
  En la tabla siguiente se describen los elementos de la barra de herramientas **Editor de imágenes**, en el orden en que aparecen de arriba abajo.  
   
-|Elemento de la barra de herramientas|Descripción|  
+|Elemento de la barra de herramientas|Description|  
 |------------------|-----------------|  
 |**Lápiz**|Utiliza la selección de color activa para dibujar el trazo de un alias. Puede establecer el color y el grosor del trazo en la ventana **Propiedades**.|  
 |**Pincel**|Utiliza la selección de color activa para dibujar un trazo suavizado. Puede establecer el color y el grosor del trazo en la ventana **Propiedades**.|  
@@ -141,7 +142,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
 ### <a name="working-with-transparency"></a>Trabajar con transparencia  
  Algunos formatos de imagen, como DirectDraw Surface (.dds), admiten la transparencia. La transparencia se puede utilizar de varias maneras, según la herramienta que use. Para especificar el nivel de transparencia de una selección de color, en la ventana **Propiedades**, establezca el componente **A** (alfa) de la selección de color. Le mostramos la manera en la que diferentes tipos de herramientas controlan cómo se aplica la transparencia:  
   
-|Herramienta|Descripción|  
+|Herramienta|Description|  
 |----------|-----------------|  
 |**Lápiz**, **Pincel**, **Aerógrafo**, **Línea**, **Rectángulo**, **Rectángulo redondeado**, **Elipse**, **Texto**|Para combinar la selección de color activa con la imagen, en la ventana **Propiedades**, expanda el grupo de propiedades **Canales**, establezca la casilla de verificación **Dibujar** en el canal  **Alfa** y, a continuación, dibuje normalmente.<br /><br /> Para dibujar con la selección de color activa y dejar el valor alfa de la imagen en su lugar, desactive la casilla de verificación **Dibujar** del canal **Alfa** y, después, dibuje normalmente.|  
 |**Relleno**|Para combinar la selección de color activa con la imagen, elija el área que se deba rellenar.<br /><br /> Para utilizar la selección de color activa, incluido el valor del canal alfa, para sobrescribir la imagen, mantenga presionada la tecla Mayús y, a continuación, elija el área que se deba rellenar.|  
@@ -151,7 +152,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
  En la tabla siguiente se describen las propiedades de la imagen.  
   
-|Propiedad|Descripción|  
+|Property|Description|  
 |--------------|-----------------|  
 |Ancho|El ancho de la imagen.|  
 |Alto|El alto de la imagen.|  
@@ -198,7 +199,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
  Estas son las combinaciones de teclas modificadores válidas:  
   
-|Ctrl|Shift|Alt|Descripción|  
+|Ctrl|Shift|Alt|Description|  
 |----------|-----------|---------|-----------------|  
 ||||Cambia el tamaño del contenido de la región seleccionada.|  
 ||Shift||Cambia proporcionalmente el tamaño del contenido de la región seleccionada.|  
@@ -269,7 +270,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas que puede utilizar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con recursos gráficos, como texturas e imágenes, modelos 3D y efectos de sombreador.|  
 |[Editor de modelos](../designers/model-editor.md)|Describe cómo usar el Editor de modelos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con modelos 3D.|  

@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: bbfe3eb4f76d8237d6e1a1b7c26aa48b1f081f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Depurar o deshabilitar el código del proyecto en el Diseñador XAML
 En muchos casos, las excepciones no controladas en el Diseñador XAML pueden deberse a un código de proyecto que intenta tener acceso a propiedades o métodos que devuelven valores distintos o funcionan de manera diferente cuando se ejecuta la aplicación en el diseñador. Puede depurar el código del proyecto en otra instancia de Visual Studio para resolver estas excepciones o impedirlos temporalmente deshabilitando el código del proyecto en el diseñador.  

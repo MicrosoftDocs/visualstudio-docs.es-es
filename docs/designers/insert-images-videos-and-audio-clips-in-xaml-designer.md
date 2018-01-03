@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 561913dc4a215869bd33fde39527cfb0b0232b9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 58462b6cb20efd441c99f335b56b06944dbdf206
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Insertar imágenes, vídeos y clips de audio en el Diseñador XAML
 Las imágenes, los vídeos y los clips de audio agregan atractivo visual a la aplicación.  

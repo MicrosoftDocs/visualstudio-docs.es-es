@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: xamarin
+ms.openlocfilehash: 9e2c341d9516959fcc7ef6bc40215023891d618a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Más información sobre el desarrollo móvil con Xamarin
 Este tema le dirige a material de información general que le ayudará a comprender el desarrollo aplicaciones móviles multiplataforma con Xamarin. Si aún no tiene instalado Visual Studio y Xamarin, inicie primero el proceso [Setup and install](../cross-platform/setup-and-install.md) y, después, regrese aquí para trabajar con estos recursos mientras se ejecutan los instaladores.  

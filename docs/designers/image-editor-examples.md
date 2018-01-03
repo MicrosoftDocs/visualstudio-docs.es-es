@@ -12,18 +12,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b69e225bf4d7273e4e9ff1a33a1b5c4e8e332ebf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c257b39f6bb320ce39ca34278d6eff29a3f4615
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor-examples"></a>Ejemplos del Editor de imágenes
 Los artículos de esta sección de la documentación contienen ejemplos en los que se muestra cómo usar el editor de imágenes.  
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Cómo: Crear una textura básica](../designers/how-to-create-a-basic-texture.md)|Muestra cómo crear una textura básica.|  
 |[Cómo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Muestra cómo crear una textura de formato DDS con alfa premultiplicado que puede usar en una aplicación de Direct2D o WWA.|  

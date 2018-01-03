@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18f7aa6c48b0f1deebd292193d46119e8a97c4b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fbc385f5bf00d8e54aadc21162a9174be71d416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Cómo: Crear y modificar niveles de MIP
 En este documento se muestra cómo usar el **Editor de imágenes** para generar y modificar *niveles de MIP* con nivel de detalle (LoD) del espacio de textura.  

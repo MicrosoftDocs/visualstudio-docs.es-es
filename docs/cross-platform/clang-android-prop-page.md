@@ -44,15 +44,16 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 876650f14ea5017d80a554ed038ca1bcd5d19cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-project-properties-android-c"></a>Propiedades de proyectos Clang (C++ para Android)
 
-Propiedad | Descripción | Opciones
+Property | Description | Opciones
 --- | ---| ---
 Directorios de inclusión adicionales | Especifica uno o más directorios que se agregarán a la ruta de acceso de inclusión; si hay más de uno, sepárelos mediante punto y coma. (-I[ruta_de_acceso]).
 Formato de información de depuración | Especifica el tipo de información de depuración generado por el compilador. | **Ninguno**: no produce información de depuración, por lo que la compilación puede ser más rápida.<br>**Información de depuración completa (DWARF2)**: genera información de depuración DWARF2.<br>**Información de número de línea**: genera únicamente información de número de línea.<br>
@@ -77,7 +78,7 @@ Estándar de lenguaje C++ | Determina el estándar de lenguaje C++. | **Predeter
 Definiciones de preprocesador | Define un símbolo de preprocesamiento para el archivo de código fuente. (-D).
 Anular definiciones del preprocesador | Especifica la anulación de una o varias definiciones del preprocesador.  (-U [macro]).
 Anular todas las definiciones del preprocesador | Anula la definición de todos los valores del preprocesador definidos previamente.  (-undef).
-Mostrar inclusiones | Genera una lista de archivos de inclusión con la salida del compilador.  (-H).
+Mostrar inclusiones | Genera una lista de archivos de inclusión con los resultados del compilador.  (-H).
 Encabezado precompilado | Crear o usar encabezado precompilado: habilita la creación o el uso de un encabezado precompilado durante la compilación. | **Usar**: se usa un encabezado precompilado.<br>**No usar encabezados precompilados**: no se usa ningún encabezado precompilado.<br>
 Archivo de encabezado precompilado | Especifica un nombre de archivo de encabezado que se va a usar para un archivo de encabezado precompilado. Este archivo también se agregará a "Archivos de inclusión obligatorios" durante la compilación.
 Directorio de archivos de salida del encabezado precompilado | Especifica el directorio del encabezado precompilado generado. Este directorio también se agregará a "Directorios de inclusión adicionales" durante la compilación.

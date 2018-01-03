@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00677826cceab6a54c0fb2216ac6c6284a65631f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f50bfd0fa5b0f9303bc6256078a30da6e1c0575
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 Abre el archivo ejecutable especificado que se va a depurar.  

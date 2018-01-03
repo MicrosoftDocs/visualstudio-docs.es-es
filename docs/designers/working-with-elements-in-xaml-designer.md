@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e5e4729ffacfbe1a561af98be202a21dbf958de9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: cd4d65a4e14f274a167c971383702a789cc2c539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML, en el código o mediante el Diseñador XAML. En este tema se describe cómo trabajar con elementos en el Diseñador XAML en Visual Studio o Blend para Visual Studio.  

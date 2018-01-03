@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 819ca48da96e2ff48479edfe94ee7378852be5f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 73829a3283df5d3648212a79b4ad0b0f88d8b02a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)
 Use esta página del cuadro de diálogo **Opciones** para controlar los cuadros de mensaje y otros aspectos de una operación de buscar y reemplazar. Puede tener acceso a este cuadro de diálogo desde el menú **Herramientas** haciendo clic en **Opciones**, expandiendo **Entorno** y, después, haciendo clic en **Buscar y reemplazar**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  

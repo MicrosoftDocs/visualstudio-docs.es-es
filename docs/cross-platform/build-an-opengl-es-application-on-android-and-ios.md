@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 80463925da89165a569b1e6317ef8b1b22c77514
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 6378826a090b05a681a4808573eefd95899b9f6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Crear una aplicación de OpenGL ES en iOS y Android
 Cuando se instala la opción Visual C++ para desarrollo móvil multiplataforma, puede crear soluciones de Visual Studio y proyectos de aplicaciones para iOS y Android que comparten código común. Este tema le guía a través de una plantilla de solución que crea una aplicación iOS simple y una aplicación Android Native Activity. Las aplicaciones tienen código de C++ en común que usa OpenGL ES para mostrar el mismo cubo giratorio animado en cada plataforma. OpenGL ES (OpenGL para sistemas incrustados o GLES) es una API de gráficos 2D y 3D compatible con muchos dispositivos móviles.  

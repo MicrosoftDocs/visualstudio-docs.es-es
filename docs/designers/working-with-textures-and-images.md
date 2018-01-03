@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7c15d6bd2bd50b8ba8c5075ab2d90287e3a4750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-textures-and-images"></a>Trabajar con texturas e imágenes
 Puede usar el editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear y modificar texturas e imágenes. El editor de imágenes admite formatos de imagen y textura enriquecidos, como los que se usan en el desarrollo de aplicaciones de DirectX.  
@@ -47,7 +48,7 @@ Puede usar el editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Editor de imágenes](../designers/image-editor.md)|Se describe el uso del editor de imágenes para trabajar con texturas e imágenes.|  
 |[Ejemplos del Editor de imágenes](../designers/image-editor-examples.md)|Se ofrecen vínculos a temas que muestran cómo usar el editor de imágenes para realizar tareas comunes de procesamiento de imágenes.|

@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 En este documento se describe cómo trabajar con el Diseñador de sombras de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para crear, modificar y exportar efectos visuales personalizados conocidos como *sombreadores*.  
@@ -66,7 +67,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
  En esta tabla se describen los elementos de la barra de herramientas **Modo Diseñador de sombras** que se muestran en el orden en que aparecen de izquierda a derecha:  
   
-|Elemento de la barra de herramientas|Descripción|  
+|Elemento de la barra de herramientas|Description|  
 |------------------|-----------------|  
 |**Seleccionar**|Permite la interacción con nodos y bordes en el gráfico. En este modo, puede seleccionar nodos y moverlos o eliminarlos, y puede establecer bordes o interrumpirlos.|  
 |**Movimiento panorámico**|Habilita el movimiento de un gráfico de sombreador en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto en la superficie de diseño y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla Ctrl para activar el modo **Movimiento panorámico** temporalmente.|  
@@ -183,7 +184,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Title|Description|  
 |-----------|-----------------|  
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|  
 |[Editor de imágenes](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para trabajar con texturas e imágenes.|  

@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b18f5169558067b67795e983e93ca07141ae8be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44f8e1bde92cec70264beea8e9a62205ec0c2e8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Información general de enlace de datos WPF con LINQ to XML
 Este tema presenta las características de enlace de datos dinámicos en el espacio de nombres <xref:System.Xml.Linq>. Estas características se pueden usar como origen de datos para los elementos de la interfaz de usuario (IU) en Windows Presentation Foundation (WPF).  
@@ -35,7 +36,7 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Enlace de datos en Windows Presentation Foundation  
  El enlace de datos en WPF permite a un elemento de interfaz de usuario asociar una de sus propiedades con un origen de datos. Un ejemplo sencillo de esto es <xref:System.Windows.Controls.Label>, cuyo texto presenta el valor de una propiedad pública en un objeto definido por el usuario. El enlace de datos de WPF depende de los siguientes componentes:  
   
-|Componente|Descripción|  
+|Componente|Description|  
 |---------------|-----------------|  
 |Destino de enlace|El elemento de IU debe estar asociado con el origen de datos. Los elementos visuales de WPF se derivan de la clase <xref:System.Windows.UIElement>.|  
 |Propiedad de destino|*Propiedad de dependencia* del destino de enlace que refleja el valor del origen de enlace de datos. Las propiedades de dependencia son compatibles directamente con la clase <xref:System.Windows.DependencyObject>, de la que se deriva <xref:System.Windows.UIElement>.|  

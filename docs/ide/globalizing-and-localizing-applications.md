@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e32c592894b5d44a2d257d183c11da01c90456
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizar y localizar aplicaciones
 Si planea distribuir la aplicación a un público internacional, deberá tener varios aspectos en cuenta durante las fases de diseño y desarrollo. Incluso si no tiene esos planes, un pequeño esfuerzo previo puede facilitar considerablemente las cosas en caso de que sus planes cambien en futuras versiones de la aplicación. Los servicios integrados en [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] facilitan el desarrollo de una única aplicación que se puede adaptar a distintas configuraciones regionales mediante el desarrollo administrado con Visual Studio.  

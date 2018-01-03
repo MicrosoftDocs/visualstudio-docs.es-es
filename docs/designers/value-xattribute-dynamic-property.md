@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d647e7623820c6621f6605277a695a98454fec5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4807a84b9e1de5186e72cbe138f0f54e2f33525e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (Propiedad dinámica de XAttribute)
 Obtiene o establece el valor del atributo XML.  

@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4dcb40a02de239c8061ae2559ce6adb581625b8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01c2867c60a3aa7b00462503da08bda0a8ac80fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maintaining-security"></a>Mantener la seguridad
 Suele decirse que para obtener seguridad no hay que bajar la guardia. A pesar de todo el esfuerzo que pueda dedicar al sistema de seguridad durante las fases de diseño y desarrollo de la aplicación, debe asumir que después de la implementación surgirán errores en el sistema de seguridad. La auditoría de la aplicación y el análisis de los registros de eventos permiten detectar algunos errores que antes estaban ocultos.  

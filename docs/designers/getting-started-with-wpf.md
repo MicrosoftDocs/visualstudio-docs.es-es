@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c1f81d33e4efb5cc084001b2b754cfa845c91d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 93770832d37bc9df5b4ee5e27dda03821f0bc058
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-wpf"></a>Introducción a WPF
 Windows Presentation Foundation (WPF) es un marco de interfaz de usuario que crea aplicaciones de cliente de escritorio. La plataforma de desarrollo de WPF admite un amplio conjunto de características de desarrollo de aplicaciones, incluido un modelo de aplicación, recursos, controles, gráficos, diseños, enlace de datos, documentos y seguridad. Es un subconjunto de .NET Framework, por lo que si ya ha creado aplicaciones con .NET Framework usando Windows Forms o ASP.NET, la experiencia de programación le resultará familiar. WPF usa el lenguaje de marcado de aplicaciones extensible (XAML) para proporcionar un modelo declarativo para la programación de aplicaciones. Esta sección contiene temas que presentan WPF y le ayudarán a empezar a trabajar con él.  

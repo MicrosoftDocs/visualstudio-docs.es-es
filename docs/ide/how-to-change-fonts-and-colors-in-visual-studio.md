@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ed7705b2c32b64ba242333ae68057c60ae2a870
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ccfb4f178fa2e6db89b9ebaf16ca1f072cfc8720
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Cómo: Cambiar fuentes y colores en Visual Studio
 

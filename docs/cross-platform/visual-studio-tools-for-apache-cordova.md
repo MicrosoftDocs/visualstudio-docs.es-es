@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 96c5864deb3f5db0599eaca26a3b99bb9691c9b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cordova
+ms.openlocfilehash: 0df91521f768a2389655339472c6d4a896347053
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools para Apache Cordova
 Cree aplicaciones que se ejecutan en dispositivos iOS, Android y Windows, y que compartan casi el 100 % de su código. Créelas con sus tecnologías web favoritas. Apache Cordova proporciona acceso nativo a funciones del dispositivo, como la cámara del teléfono, y, lo mejor de todo, es gratis. Visual Studio incorpora estas opciones adicionales para que crear la aplicación sea aún más fácil:  

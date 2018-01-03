@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ed9aaee4e227627cf9ef5030863701445671444b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b03c03ce5980b1c6042d1670d33d43fea6c7edc4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml (Propiedad dinámica de XElement)
 Obtiene el contenido XML sin formato del elemento.  

@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dab9b5c631edde1883d4e4d2dcfa0dbf530b0441
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd49879c6c23981bc88eb4309fb6c7da8e215bd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Tutorial: Crear una bola de billar 3D realista
 En este tutorial se muestra cómo crear una bola de billar 3D realista mediante el Diseñador de sombras y el Editor de imágenes de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. La apariencia 3D de la bola de billar se logra combinando varias técnicas de sombreador con los recursos apropiados de textura.  
