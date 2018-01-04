@@ -3,11 +3,11 @@ layout: LandingPage
 title: "Generación de perfiles de aplicaciones con Visual Studio| Microsoft Docs"
 description: "Aprenda a usar Visual Studio 2017 para crear perfiles del rendimiento de las aplicaciones, los servicios y las herramientas en el idioma de su elección."
 ms.technology: vs-ide-debug
-ms.openlocfilehash: e671683cf0ea257bf6170a3c2e41b8d0db503450
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 763740cd5f0f7e6da935dfd92418067f12a204c2
+ms.sourcegitcommit: 8dfdbe6dc01331c811707be2057b65c0b1f67e40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="profiling-in-visual-studio"></a>Generación de perfiles en Visual Studio
 
@@ -151,7 +151,7 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Análisis del uso de la energía (aplicaciones de la Tienda)</h3>
+                        <h3>Análisis del uso de energía (aplicaciones UWP)</h3>
                     </div>
                 </div>
             </div>
