@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1b5040f6de578a6436f16c1a1c81d9cef4f789ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elemento (aplicación ClickOnce)
 Identifica una extensión de archivo que se asociará a la aplicación.  
@@ -45,10 +46,10 @@ Identifica una extensión de archivo que se asociará a la aplicación.
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`extension`|Obligatorio. La extensión de archivo que desee asociar a la aplicación.|  
-|`description`|Obligatorio. Una descripción del tipo de archivo para su uso por el shell.|  
-|`progid`|Obligatorio. Un nombre que identifica de forma única el tipo de archivo.|  
-|`defaultIcon`|Obligatorio. Especifica el icono que se usará para los archivos con esta extensión. El archivo de icono debe especificarse utilizando la [ \<archivo > elemento](../deployment/file-element-clickonce-application.md) dentro de la [ \<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md) que contiene este elemento.|  
+|`extension`|Requerido. La extensión de archivo que desee asociar a la aplicación.|  
+|`description`|Requerido. Una descripción del tipo de archivo para su uso por el shell.|  
+|`progid`|Requerido. Un nombre que identifica de forma única el tipo de archivo.|  
+|`defaultIcon`|Requerido. Especifica el icono que se usará para los archivos con esta extensión. El archivo de icono debe especificarse utilizando la [ \<archivo > elemento](../deployment/file-element-clickonce-application.md) dentro de la [ \<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md) que contiene este elemento.|  
   
 ## <a name="remarks"></a>Comentarios  
  Este elemento debe incluir una referencia al espacio de nombres XML para "urn: schemas-microsoft-v1". Si el `<fileAssociation>` se utiliza el elemento, que debe venir después de la `<application>` elemento de su elemento primario [ \<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md).  

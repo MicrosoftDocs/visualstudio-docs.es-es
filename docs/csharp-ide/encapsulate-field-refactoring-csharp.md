@@ -17,11 +17,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bd9e255b35ffb843c15d5ffa9c1547891bf437d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: d587edebcea443e0bfff52004b128c70923470d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsular campo (Refactorización, C#)
 El **encapsular campo** operación de refactorización le permite crear rápidamente una propiedad de un campo existente y, a continuación, actualice el código de sin problemas con las referencias a la nueva propiedad.  

@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a38494b21c87e249317b0a55fbdffa95702404cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Crear conjuntos de reglas de análisis de código personalizadas
 Aplicar reglas de análisis de código a un proyecto de código administrado mediante la especificación de un conjunto de reglas que contiene una o varias reglas. Los conjuntos de reglas estándar de Microsoft proporcionan grupos de reglas que están organizados por función y profundidad. Por ejemplo, las reglas de directrices de diseño básicas de Microsoft y las reglas de directrices de diseño extendidas de Microsoft contienen reglas que se centran en la facilidad de uso y problemas de mantenimiento, con especial hincapié en las reglas de nomenclatura en el conjunto de reglas extendidas.  

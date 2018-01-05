@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baa19209af40067c4b362b88ec0c0812b80e64ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5f0cbd7cb594314e98422789f6ec70fd63198fc4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="warning-script-debugging-disabled"></a>Advertencia: Depuración de script deshabilitada
 La depuración de script está deshabilitada actualmente en Internet Explorer  

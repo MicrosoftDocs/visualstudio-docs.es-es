@@ -14,11 +14,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44d64b7371f1b27afaa7796dc42d4b7864d20819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51b282cb86ca83ecf2ace1e4b12c8444928b15e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Utilizar conjuntos de reglas para agrupar reglas de análisis de código
 Al configurar el análisis de código en [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], puede elegir entre una lista integrados de Microsoft *conjuntos de reglas*. Un conjunto de reglas es una agrupación lógica de reglas de análisis de código que identifican problemas concretos y condiciones específicas. Por ejemplo, puede aplicar un conjunto de reglas está diseñado para examinar el código para las API disponibles públicamente o puede aplicar un conjunto de reglas que incluya solo las reglas mínimas recomendadas. También puede aplicar un conjunto de reglas que incluye todas las reglas.  

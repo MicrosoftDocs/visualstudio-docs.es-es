@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7caff553adfd812e671a2d8643b2352d9868ca43
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d20496fae54b0fdf2b0f0d17de0590c325bab0ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
 |||  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 |Cuando es .NET framework de destino|Se desencadena cuando se usan miembros presentados en|  
 |.NET Framework 2.0|.NET framework 2.0 SP1, .NET Framework 2.0 SP2|  
 |.NET Framework 3.0|.NET framework 2.0 SP1, Service Pack 2 de .NET Framework 2.0, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
-|.NET Framework 3,5|.NET Framework 3,5 SP1|  
+|.NET Framework 3,5|.NET Framework 3.5 SP1|  
 |.NET Framework 4|N/D|  
   
  Para cambiar la plataforma de destino del proyecto, consulte [como destino una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  

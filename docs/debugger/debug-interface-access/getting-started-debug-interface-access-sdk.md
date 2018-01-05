@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938aaf760a2a6305580331945875391e6ad819af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d37843917be3a2668e9a2887f046eaee00600dc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Introducción (Debug Interface Access SDK)
 El Debug Interface Access (DIA) SDK proporciona documentación de instrucciones y un ejemplo que muestra cómo utilizar la API de DIA. Use las interfaces y métodos en el SDK de DIA para desarrollar aplicaciones personalizadas que abra los archivos .pdb y .dbg y buscar símbolos, valores, atributos, direcciones y otra información de depuración en su contenido. Este SDK proporciona también las tablas de referencia para las propiedades asociadas a los símbolos encontrados en aplicaciones de C++.  

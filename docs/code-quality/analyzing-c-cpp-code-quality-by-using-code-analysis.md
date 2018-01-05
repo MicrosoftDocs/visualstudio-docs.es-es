@@ -20,11 +20,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9694985711ee8bc9b46725214ecc6df2d5020b1d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: e1f714756d13fd4606362f8923f4746a5a85c8ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Analizar la calidad de código de C/C++ mediante el análisis de código
 Puede mejorar el código de C/C++ mediante el análisis de código en Visual Studio para buscar y corregir defectos de código.  

@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bb11846ed204ee15525266a750b218295c8d662
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8bb3d993cc79ebf683f0a2622628bfc87d7c065a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 |||  
@@ -44,9 +45,9 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Descripción de la regla  
  Cuando un <xref:System.Globalization.CultureInfo?displayProperty=fullName> o <xref:System.IFormatProvider> no se proporciona el objeto, el valor de predeterminado proporcionado por el miembro sobrecargado podría no surtir el efecto deseado en todas las configuraciones regionales. Además, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] miembros eligen la referencia cultural predeterminada y dan formato basándose en suposiciones que pueden no ser correctas para el código. Para asegurarse de que el código funciona según lo previsto para los escenarios, también debe proporcionar información de referencia cultural según las instrucciones siguientes:  
   
--   Si el valor se mostrará al usuario, use la referencia cultural actual. Consulta <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
+-   Si el valor se mostrará al usuario, use la referencia cultural actual. Vea <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
   
--   Si el valor se almacena y se tiene acceso por software (guardado en un archivo o base de datos), utilice la referencia cultural invariable. Consulta <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.  
+-   Si el valor se almacena y se tiene acceso por software (guardado en un archivo o base de datos), utilice la referencia cultural invariable. Vea <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.  
   
 -   Si no conoce el destino del valor, tiene el consumidor de datos o proveedor de especificar la referencia cultural.  
   

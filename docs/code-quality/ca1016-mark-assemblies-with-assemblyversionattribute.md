@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 414a533e781be82cd0ffef1e9db234738ef07f16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b716a809f1d2a5bcf73b9dda77b94d637b2e8493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Marcar los ensamblados con AssemblyVersionAttribute
 |||  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Número de versión  
   
--   Referencia cultural  
+-   culture  
   
 -   Clave pública (para los ensamblados con nombre seguro).  
   

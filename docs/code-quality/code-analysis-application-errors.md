@@ -17,11 +17,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f89420d19696c0be26a2fb0a9b9b405574325797
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e7e1e0f504c9d813b2dbcacca1689475ec42aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
 Esta sección es una referencia de los mensajes de error generados por la herramienta de análisis de código administrado. Para obtener ayuda sobre un mensaje de error específico, escriba el número de error en la **buscar** cuadro en el índice.  

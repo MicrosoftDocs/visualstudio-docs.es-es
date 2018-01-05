@@ -14,11 +14,12 @@ ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 161622b510d230798f38205dc2ad5e3137286bef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c34c505751153410896da66040c866676c3a7ee2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API de gráficos y estadísticas de memoria
 <!-- VERSIONLESS -->

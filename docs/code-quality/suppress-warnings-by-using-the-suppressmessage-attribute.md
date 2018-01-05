@@ -22,11 +22,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Suprimir advertencias mediante el atributo SuppressMessage
 A menudo resulta útil indicar que la advertencia es nonapplicable que los miembros del equipo sepan que se ha revisado el código y se determina que se debe suprimir la advertencia. Supresión en el código fuente (ISS) permite al desarrollador para colocar el atributo que suprime una advertencia cerca de la ubicación que generó la advertencia. Puede agregar el atributo ISS directamente al archivo de origen o puede usar el menú contextual de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  

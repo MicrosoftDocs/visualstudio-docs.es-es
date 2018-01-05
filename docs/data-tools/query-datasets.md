@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 10e37db09efab78b3048ddeab4096325ba00802f
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: f25507493237ba54c9d6820500706d06d4bf7710
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="query-datasets"></a>Conjuntos de datos de consulta
 Para buscar registros específicos en un conjunto de datos, utilice el método FindBy en la tabla de datos, escribir su propia instrucción foreach para recorrer la colección de filas de la tabla, o usar [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  

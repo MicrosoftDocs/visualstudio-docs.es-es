@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ebf550ca92cbefbed684e2b11e0b20b62661133
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c7016145d5d34c9077f45f2dbf6c1507aa0e6fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Métodos anónimos y análisis de código
 Un *método anónimo* es un método que no tiene ningún nombre. Métodos anónimos se utilizan con más frecuencia para pasar un bloque de código como un parámetro de delegado.  

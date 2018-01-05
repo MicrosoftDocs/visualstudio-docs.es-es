@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b83cb82dab5f723c656b51a5322df7d7aad4570c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82f5e18b838e6f6c0696359a9d88ba3350e636ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Las enumeraciones Flags deberían tener nombres en plural
 |||  
@@ -53,4 +54,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.FlagsAttribute?displayProperty=fullName>   
- [Diseño de enum](/dotnet/standard/design-guidelines/enum)
+ [Diseño de enumeraciones](/dotnet/standard/design-guidelines/enum)
