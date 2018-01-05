@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>Información general sobre supresiones en código fuente
 Supresión en el código fuente es la capacidad para suprimir o pasar por alto infracciones de análisis de código en código administrado mediante la adición de la **SuppressMessage** atribuir a los segmentos de código que producen esas infracciones. El **SuppressMessage** es un atributo condicional que se incluye en los metadatos IL del ensamblado de código administrado solo si el símbolo de compilación CODE_ANALYSIS se define en tiempo de compilación.  
@@ -64,7 +65,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 -   **Ámbito** -el destino en el que se suprime la advertencia. Si no se especifica el destino, se establece en el destino del atributo. Los ámbitos admitidos son los siguientes:  
   
-    -   Módulo  
+    -   Module  
   
     -   Espacio de nombres  
   

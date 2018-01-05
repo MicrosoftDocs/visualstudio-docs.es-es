@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4fd4f23ab77e2b810d5064bd45e9f7d530e9844e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1593800a2cde8ff0aa1bbecd169f5f3ebd601cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deberían tener el sufijo correcto
 |||  
@@ -47,12 +48,12 @@ ms.lasthandoff: 10/31/2017
 |<xref:System.Attribute?displayProperty=fullName>|Atributo|  
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|  
 |<xref:System.Exception?displayProperty=fullName>|Excepción|  
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|  
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Colección|  
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|  
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|  
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Colección|  
 |<xref:System.Collections.Queue?displayProperty=fullName>|Colección o cola|  
 |<xref:System.Collections.Stack?displayProperty=fullName>|Colección o pila|  
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|  
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Colección|  
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|  
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|  
 |<xref:System.Data.DataTable?displayProperty=fullName>|Colección o DataTable|  

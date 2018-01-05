@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5418bc8d265c32057911df2d3a15aaddacf1398e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ac50c390ca7a45cf5ef28f2d82d1f75fc5e2c1a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Los identificadores no deben contener nombres de tipo
 |||  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 -   UInt  
   
--   Entero  
+-   Integer  
   
 -   UInteger  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Firmado  
   
--   Flotante  
+-   Float  
   
 -   Float32  
   
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
   
  Además, los nombres de parámetro también se comparan con los siguientes nombres de tipo de datos independiente del lenguaje, en mayúsculas y minúsculas:  
   
--   Objeto  
+-   Object  
   
 -   obj  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
 -   Decimal  
   
--   Guid  
+-   GUID  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  **Si se produce en un parámetro:**  

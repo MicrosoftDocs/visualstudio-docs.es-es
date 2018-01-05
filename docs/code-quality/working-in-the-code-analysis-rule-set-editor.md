@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5a0fc10230c4c2b7638e1be75770872e0dcf4aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c832b29512bfd7339ab60044ece81f1626be9bc7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Trabajar en el editor de conjuntos de reglas de análisis de código
 El editor de conjunto de reglas de análisis de código le permite especificar las reglas que se incluyen en un conjunto de reglas personalizado y para especificar la acción. También puede especificar la acción que se realizará cuando el análisis de código encuentra una infracción de la regla.  
@@ -63,8 +64,8 @@ El editor de conjunto de reglas de análisis de código le permite especificar l
 |-----------|-----------------|  
 |**ID**|El identificador de la regla.|  
 |**Categoría**|Además de su pertenencia a conjuntos de reglas, reglas de análisis de código también se agrupan por categoría. Para obtener más información, consulte [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).|  
-|**Nombre**|El título de la regla.|  
-|**Namespace**|El espacio de nombres de la regla.|  
+|**Name**|El título de la regla.|  
+|**Espacio de nombres**|El espacio de nombres de la regla.|  
 |**Tipo de destino**|Indica si la regla es de nativo, administrado o código base de datos.|  
 |**Acción**|La acción realizada cuando se infringe la regla en un ejecución del análisis de código.<br /><br /> **Advertencia** -genera una advertencia.<br /><br /> **Error** -genera un error.<br /><br /> **Ninguno** -deshabilita la regla.<br /><br /> Puede editar el campo de acción. Establecer el valor en ninguno es el mismo que si desactiva la casilla de verificación para la regla.|  
 |**Conjuntos de reglas de origen**|El conjunto de reglas que contiene la regla.|  

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: da148a7258a055e230e8a1377d90adffebaff6d7
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e29edf31a0ad3535b671ed2e972e994553c78547
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>No se pudo recuperar la información de esquema para el objeto de base de datos \<nombre de objeto >
 Este mensaje suele aparecer cuando un objeto del **Server Explorer/Database Explorer** se copia en el Portapapeles, elimina de la base de datos y, a continuación, se pega en el diseñador. Dado que ya no existe el objeto de base de datos, aparece este mensaje.  

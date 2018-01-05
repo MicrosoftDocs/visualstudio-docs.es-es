@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be65ae9177591b015cd8b29b3dbdc262b66a30ab
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: c25c76ba43c983a6029c8d50e183ccf839ef08bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intrinsic-functions"></a>Funciones intrínsecas
 Una expresión de SAL puede ser una expresión de C o C++, siempre que sea una expresión que no tiene efectos secundarios, por ejemplo, ++,--y llamadas a función todas tienen efectos secundarios en este contexto.  Sin embargo, SAL proporcionar algunos objetos de tipo de función y algunos símbolos reservados que se pueden usar en expresiones de SAL. Estos se conocen como *funciones intrínsecas*.  
@@ -37,7 +38,7 @@ Una expresión de SAL puede ser una expresión de C o C++, siempre que sea una e
 |`_Inexpressible_(expr)`|Expresa una situación donde el tamaño de un búfer es demasiado complejo para representar mediante una expresión de anotación, por ejemplo, cuando se calcula mediante el examen de un conjunto de datos de entrada y, a continuación, contar miembros seleccionados.|  
 |`_Nullterm_length_(param)`|`param`es el número de elementos en el búfer hasta, pero sin incluir un terminador nulo. Se puede aplicar a cualquier búfer de tipo no agregada y distinto de void.|  
 |`_Old_(expr)`|Cuando se evalúa en condición previa, `_Old_` devuelve el valor de entrada `expr`.  Cuando se evalúa en la condición posterior, devuelve el valor `expr` tal y como se habría evaluado en condición previa.|  
-|`_Param_(n)`|El `n`parámetro a una función, contando desde 1 a `n`, y `n` es una literal constante integral. Si el parámetro se denomina, esta anotación es idéntica al tener acceso a los parámetros por nombre. **Nota:** `n` pueden hacer referencia a los parámetros posicionales se definen por puntos suspensivos, o pueden utilizarse en prototipos de función donde no se utilizan nombres.  |  
+|`_Param_(n)`|El `n`parámetro a una función, contando desde 1 a `n`, y `n` es una literal constante integral. Si el parámetro se denomina, esta anotación es idéntica al tener acceso a los parámetros por nombre. **Nota:** `n` pueden hacer referencia a los parámetros posicionales se definen por puntos suspensivos, o pueden utilizarse en prototipos de función donde no se utilizan nombres.|  
 |`return`|Palabra clave reservada de C o C++ `return` puede utilizarse en una expresión de SAL para indicar el valor devuelto de una función.  El valor sólo está disponible en el estado de publicación; es un error de sintaxis se utiliza en el estado anterior.|  
   
 ## <a name="string-specific"></a>Cadena específica  

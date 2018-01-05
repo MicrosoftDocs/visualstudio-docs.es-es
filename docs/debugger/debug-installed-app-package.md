@@ -22,11 +22,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 354c574a890ae0385a58594a22b3314a13b9d6b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: ca1edcc26c8e015f12db6b1d564c182aa765ed52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Depurar un paquete de aplicación instalada en Visual Studio (UWP)
 

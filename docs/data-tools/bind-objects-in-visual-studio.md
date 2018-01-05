@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9f410fdfea8a241b10cbab621dbd781d3648a080
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-objects-in-visual-studio"></a>Enlazar los objetos en Visual Studio
 Visual Studio proporciona herramientas en tiempo de diseño para trabajar con objetos personalizados, como el origen de datos en la aplicación. Cuando desea almacenar los datos de una base de datos en un objeto que se enlazan a controles de interfaz de usuario, el enfoque recomendado es usar Entity Framework para generar la clase o clases. Entity Framework genera automáticamente todo el código de seguimiento de cambios de código reutilizable, lo que significa que los cambios realizados en los objetos locales guardan automáticamente en la base de datos cuando se llama a AcceptChanges en el objeto DbSet. Para obtener más información, consulte [documentación de Entity Framework](https://ef.readthedocs.org/en/latest/).  

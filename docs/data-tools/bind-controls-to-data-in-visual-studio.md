@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a datos en Visual Studio
 Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a controles. Puede crear estos controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana hasta una superficie de diseño o controles en una superficie en Visual Studio.  
@@ -37,7 +38,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 |Entity Data Model|Sí<sup>1</sup>|Sí|Sí|  
 |Clases LINQ to SQL|Ya no<sup>2</sup>|Ya no<sup>2</sup>|Ya no<sup>2</sup>|  
 |Servicios (incluidos [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services y los servicios web)|Sí|Sí|Sí|  
-|Objeto|Sí|Sí|Sí|  
+|Object|Sí|Sí|Sí|  
 |SharePoint|Sí|Sí|Sí|  
   
  1. Generar el modelo con el **Entity Data Model** asistente, a continuación, arrastrar esos objetos al diseñador.  

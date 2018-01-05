@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: dotnet
+ms.openlocfilehash: 1c940c10c85901e5da7425c33f4bdbd726be7627
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de protección de análisis de código personalizadas para el código administrado
 Un directiva de protección especifica un conjunto de reglas que los miembros de un proyecto de equipo deben ejecutar en el código fuente antes de que el análisis de código se comprueba en el control de versiones. Microsoft proporciona un conjunto de standard *conjuntos de reglas* el análisis de código de ese grupo de reglas en áreas funcionales. *Conjuntos de reglas de directiva de protección personalizadas* especificar un conjunto de reglas de análisis de código que son específicos de un proyecto de equipo. Un conjunto de reglas se almacena en un archivo .ruleset.  

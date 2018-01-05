@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 88199541fe5d3c4be3f9f1cff6de308d45d0d85a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d432dab79d5cd88d398a74c352cc9d34c8b4f2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maintainability-warnings"></a>advertencias de mantenimiento
 Advertencias de mantenimiento soportar el mantenimiento de bibliotecas y aplicaciones.  

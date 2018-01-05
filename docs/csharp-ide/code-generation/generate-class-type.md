@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: csharp
-ms.openlocfilehash: b6825be5447718e47f7145b0b3b16ec6d0ee076c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c72b9e898bd150e0d4ec1cc6a7a91d1eb7e6b7a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-c"></a>Generar una clase o tipo de C# #
 **¿Qué:** le permite generar inmediatamente el código para una clase o tipo. 
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
    --- | ---
    Access | Establecer el tipo que tienen *predeterminado*, *interno* o *público* acceso.
    Tipo | Esta propiedad puede establecerse como *clase* o *struct*.
-   Name | Esto no se puede cambiar y será el nombre que ha escrito.
+   nombre | Esto no se puede cambiar y será el nombre que ha escrito.
    Proyecto | Si hay varios proyectos de la solución, puede elegir dónde desea que la clase/estructura permanece activa.
    Nombre de archivo | Puede crear un nuevo archivo o puede agregar el tipo a un archivo existente.
 

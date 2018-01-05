@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 198e4b6d0ba2f3517cf907007cc544ca2e154013
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-code-metrics-data"></a>Trabajar con datos de métricas de código
 
@@ -103,7 +104,7 @@ Puede seleccionar y copiar una fila seleccionada de datos de métricas de códig
 
 Puede crear un [Visual Studio Team Services (VSTS)](/vsts/index) elemento de trabajo que se basa en da como resultado la **resultados de métrica del código** ventana. Cuando se crea el elemento de trabajo, Visual Studio automáticamente entra en un título en el **título** datos de métricas de campo y el código en el **historial** ficha.
 
-Para obtener más información acerca de VSTS, los elementos de trabajo, consulte [los elementos de trabajo](/vsts/work/work-items/index).
+Para obtener más información acerca de VSTS, los elementos de trabajo, consulte [(VSTS) de elementos de trabajo](/vsts/work/work-items/index).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Para crear un elemento de trabajo basado en un resultado
 

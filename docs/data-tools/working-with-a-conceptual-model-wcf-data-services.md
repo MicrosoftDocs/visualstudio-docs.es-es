@@ -16,21 +16,22 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d9c0fa3846380b58e78b449083eab486954fd8a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 86a7a4c253aa9bdd2d311d72f40e8b9374a37ff4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo Conceptual (WCF Data Services)
 Cuando se usa un modelo conceptual para describir los datos de una base de datos, se pueden consultar los datos a través de objetos en lugar de tener que traducirlos en ambos sentidos entre un esquema de base de datos y un modelo de objetos.  
   
- Puede usar los modelos conceptuales con aplicaciones de los servicios de datos de WCF. En los temas siguientes se muestra cómo consultar los datos a través de un modelo conceptual.  
+ Puede usar los modelos conceptuales con aplicaciones de Data Services de WCF. En los temas siguientes se muestra cómo consultar los datos a través de un modelo conceptual.  
   
 |Tema|Descripción|  
 |-----------|-----------------|  
 |[Cómo: ejecutar consultas de servicios de datos](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)|Muestra cómo consultar un servicio de datos desde una aplicación de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|[Cómo: proyectar los resultados de consulta](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos.|  
+|[Resultados de consulta del proyecto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services)|Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos.|  
   
  Cuando se usa un modelo conceptual, puede definir los tipos de datos válidos en el lenguaje que coincide con su dominio. Puede definir los datos válidos en el modelo, o puede agregar validación a las operaciones que se realizan en una entidad o un servicio de datos.  
   
@@ -38,14 +39,14 @@ Cuando se usa un modelo conceptual para describir los datos de una base de datos
   
 |Tema|Descripción|  
 |-----------|-----------------|  
-|[Cómo: interceptar mensajes de servicios de datos](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Muestra cómo agregar validación a una operación de servicio de datos.|  
+|[Interceptación de mensajes de servicios de datos](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Muestra cómo agregar validación a una operación de servicio de datos.|  
   
  En los temas siguientes se muestra cómo crear, actualizar y eliminar datos mediante operaciones que se ejecutan en las entidades.  
   
 |Tema|Descripción|  
 |-----------|-----------------|  
-|[Cómo: agregar, modificar y eliminar entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|  
-|[Cómo: definir relaciones de entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|  
+|[Adición, modificación y eliminación de entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|  
+|[Definición de relaciones de entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|  
   
 ## <a name="see-also"></a>Vea también  
  [Servicios de Windows Communication Foundation y servicios de datos WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

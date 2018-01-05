@@ -26,13 +26,14 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="saving-data"></a>Guardar datos
+# <a name="saving-data"></a>Guardado de datos
 Guardar los datos es que el proceso de guardar los datos modificados en modelo de datos de una aplicación en el almacén de datos original, normalmente una base de datos relacional como SQL Server.  
   
  Actualizar un origen de datos por medio de un modelo de datos suele ser un proceso de dos pasos. El primer paso consiste en actualizar el modelo de datos con información nueva: nuevos registros, registros cambiados o eliminados. Es el segundo paso guardar los cambios en el modelo de datos a la base de datos.  
