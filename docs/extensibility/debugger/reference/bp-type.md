@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b7a03f3672e954c400bebcf66f97b62148b9fd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb5f67c34a5e73cd5e1ef049c464a6349c2d5160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bptype"></a>BP_TYPE
 Especifica si el punto de interrupción está en una ubicación de código, que es una ubicación de datos o que es otro tipo de punto de interrupción.  

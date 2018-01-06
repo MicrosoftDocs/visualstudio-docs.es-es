@@ -24,11 +24,12 @@ caps.latest.revision: "135"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f009abffb1c956a0f7c57315181234fbea2fc1c
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTrace para registrar y realizar un seguimiento del historial de ejecución del código. Los errores se detectan fácilmente ya que IntelliTrace le permite:  
@@ -139,9 +140,9 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
      Vea:  
   
-    -   [Use el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+    -   [Uso del recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [Use los datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)  
+    -   [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)  
   
     -   [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)  
  
@@ -184,7 +185,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
  [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md)  
   
- [Use los datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)  
+ [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blogs  
  [Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)  

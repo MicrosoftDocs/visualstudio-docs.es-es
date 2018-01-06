@@ -22,11 +22,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 856358b9864da9cb685619ec1ce94d2c5b4bc4f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fdb9d357f1046c453ad6e21829a55983a044ff4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Solucionar problemas en implementaciones ClickOnce
 Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las implementaciones.  

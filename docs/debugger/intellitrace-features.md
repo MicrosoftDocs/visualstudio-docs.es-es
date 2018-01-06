@@ -25,11 +25,12 @@ caps.latest.revision: "67"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3672d2448c2b8872605db4a72c06d18c12e18886
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f2ad259a116b1679f1e619dc9d281c114fa086cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace-features"></a>Características de IntelliTrace
 IntelliTrace le permite registrar eventos y llamadas de método de su aplicación, por lo que puede examinar el estado de la misma (pila de llamadas y valores de variables locales) en distintos puntos de la ejecución. Simplemente empiece a depurar como de costumbre: IntelliTrace está activado de forma predeterminada y puede ver la información que se registra en el nuevo **herramientas de diagnóstico** ventana bajo la **eventos** ficha. Seleccione un evento y haga clic en **Activar depuración histórica** para ver la pila de llamadas ni variables locales registradas para este evento.  

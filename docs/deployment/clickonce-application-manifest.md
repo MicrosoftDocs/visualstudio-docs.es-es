@@ -19,11 +19,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ef1451626cf980fbd6f096fa5dc92946edebd710
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7df31b2d76639ec0eedc353e857fc1c0c8df39b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce Application Manifest
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación es un archivo XML que describe una aplicación que se implementa mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
@@ -32,11 +33,11 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto d
   
 |Elemento|Descripción|Atributos|  
 |-------------|-----------------|----------------|  
-|[\<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md)|Obligatorio. Elemento de nivel superior.|`manifestVersion`|  
-|[\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md)|Obligatorio. Identifica el ensamblado primario de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[\<ensamblado > elemento](../deployment/assembly-element-clickonce-application.md)|Requerido. Elemento de nivel superior.|`manifestVersion`|  
+|[\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md)|Requerido. Identifica el ensamblado primario de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
 |[\<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md)|Identifica los requisitos de seguridad de la aplicación.|Ninguna|  
-|[\<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md)|Obligatorio. Identifica el punto de entrada de código de aplicación.|`name`|  
-|[\<dependencia > elemento](../deployment/dependency-element-clickonce-application.md)|Obligatorio. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar.|Ninguna|  
+|[\<entryPoint > elemento](../deployment/entrypoint-element-clickonce-application.md)|Requerido. Identifica el punto de entrada de código de aplicación.|`name`|  
+|[\<dependencia > elemento](../deployment/dependency-element-clickonce-application.md)|Requerido. Identifica cada dependencia necesaria para que se ejecute la aplicación. Identifica opcionalmente los ensamblados que se tienen que preinstalar.|Ninguna|  
 |[\<archivo > elemento](../deployment/file-element-clickonce-application.md)|Opcional. Identifica cada archivo nonassembly utilizado por la aplicación. Puede incluir datos de aislamiento del modelo de objetos componentes (COM) asociados al archivo.|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)|Opcional. Identifica una extensión de archivo que se asociará a la aplicación.|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   

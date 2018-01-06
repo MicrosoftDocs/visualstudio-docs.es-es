@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e66d0f67e3774b1cbc908bb6b1bd13884a1d3171
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcadores de bits utilizada por los comandos específicos
 El comportamiento de un número de funciones de la API de complementos de Control de código fuente puede modificarse estableciendo uno o más bits en un solo valor. Estos valores se conocen como marcadores de bits. Los distintos marcadores de bits utilizadas por la API de complemento de Control de origen, que se detallan en este caso, agrupados por la función que los usa.  
@@ -36,7 +37,7 @@ El comportamiento de un número de funciones de la API de complementos de Contro
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Se espera el complemento de control de código fuente para detectar automáticamente si el archivo es texto o binario.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Tipo de archivo es texto.|  
-|`SCC_FILETYPE_BINARY`|0 x 04|Tipo de archivo es binario. **Nota:** `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` marcas son mutuamente excluyentes.   Establezca exactamente una o ninguna de ellas.|  
+|`SCC_FILETYPE_BINARY`|0 x 04|Tipo de archivo es binario. **Nota:** `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` marcas son mutuamente excluyentes. Establezca exactamente una o ninguna de ellas.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Almacenar la versión más reciente solo (ninguna deltas).|  
   
 ## <a name="diff-flags"></a>Marcas de comparación  

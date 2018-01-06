@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 973e0cfbceb6cbf67c5bc11cdde370607334809a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: efb332de822bd86cc95c4786dbca3472fd0984cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Agregar comandos de Visual Studio a una página de inicio
 Cuando se crea una página de inicio personalizada, puede agregar comandos de Visual Studio a él. Este documento describen las distintas maneras para enlazar comandos de Visual Studio para objetos XAML en una página de inicio.  

@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f84abe8354f1affc566cc05d119edc4cbc030712
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 97b5ba379eb715c63e5432b22999e2c4f12bf50d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Tutorial: Crear un arranque personalizado para mostrar un aviso de privacidad
 Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuando se convierten en ensamblados con versiones más recientes de los archivos y las versiones de ensamblado disponibles. Para asegurarse de que los clientes de consentimiento a este comportamiento, puede mostrar un aviso de privacidad a ellos. A continuación, puede elegir si se debe conceder permiso a la aplicación para actualizar automáticamente. Si la aplicación no tiene permiso para actualizar automáticamente, no se instala.  

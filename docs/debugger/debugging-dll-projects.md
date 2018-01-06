@@ -22,11 +22,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92d888c04827f3df2c9bc5ede33d4dfd9a6742dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Depurar proyectos DLL desde Visual Studio
 Las siguientes plantillas de Visual Studio crean archivos DLL:  
@@ -126,6 +127,6 @@ Para obtener más información sobre la configuración del proyecto, consulte [p
  [Tipos de proyecto de Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)   
  [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Configuraciones de depuración de la configuración del proyecto de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configuración de depuración de la configuración del proyecto para un de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Configuración de proyectos para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Configuración de proyectos para una configuración de depuración en Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)

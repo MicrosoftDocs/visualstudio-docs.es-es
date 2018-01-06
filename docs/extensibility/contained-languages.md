@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8adf63eed436b5724fcdb32d86ffc7bfb2c1a40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bfdbc3d1c0e7bbc0b3dc712d9434ca1b49c6feca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contained-languages"></a>Idiomas independientes
 *Contenido idiomas* idiomas incluidos en otros lenguajes. Por ejemplo, HTML en [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] páginas pueden contener [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] las secuencias de comandos. Una arquitectura de doble idioma es necesaria para el editor de archivos .aspx proporcionar IntelliSense, la coloración y otras características de edición para el código HTML y el lenguaje de scripting.  

@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: db313077fa7903b2bdb2fbbe6b76aa80c940fecd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b731522897512300459a32f8e01c4d54277eaa5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; elemento (aplicación ClickOnce)
 Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación.  
@@ -45,11 +46,11 @@ Identifica la aplicación implementada en un [!INCLUDE[ndptecclick](../deploymen
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Identifica el nombre de la aplicación.<br /><br /> Si `Name` contiene caracteres especiales, como las comillas simples o dobles, puede producir un error de la aplicación Activar.|  
-|`Version`|Obligatorio. Especifica el número de versión de la aplicación en el formato siguiente:`major.minor.build.revision`|  
+|`Name`|Requerido. Identifica el nombre de la aplicación.<br /><br /> Si `Name` contiene caracteres especiales, como las comillas simples o dobles, puede producir un error de la aplicación Activar.|  
+|`Version`|Requerido. Especifica el número de versión de la aplicación en el formato siguiente:`major.minor.build.revision`|  
 |`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes de la `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública que se usa para firmar el catálogo debe tener 2048 bits o mayor.<br /><br /> Aunque la firma de un ensamblado es opcional, pero recomendable, este atributo es necesario. Si un ensamblado está firmado, debería copiar un valor de un ensamblado autofirmado o utilizar un valor "ficticio" de todos los ceros.|  
-|`processorArchitecture`|Obligatorio. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
-|`language`|Obligatorio. Identifica los códigos de idioma de dos partes (por ejemplo, `en-US`) del ensamblado. Este elemento está en la `asmv2` espacio de nombres. Si no se especifica, el valor predeterminado es `neutral`.|  
+|`processorArchitecture`|Requerido. Especifica el procesador. Los valores válidos son `msil` para todos los procesadores, `x86` para Windows de 32 bits, `IA64` para Windows de 64 bits, y `Itanium` para procesadores Itanium de Intel de 64 bits.|  
+|`language`|Requerido. Identifica los códigos de idioma de dos partes (por ejemplo, `en-US`) del ensamblado. Este elemento está en la `asmv2` espacio de nombres. Si no se especifica, el valor predeterminado es `neutral`.|  
   
 ## <a name="examples"></a>Ejemplos  
   

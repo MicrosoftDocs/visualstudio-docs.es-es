@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: d5fa005273ada8869da467c9db97e0263f43f555
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por una sesión de depuración en Visual Studio (Xaml y C#)
 En este inicio rápido se muestra cómo navegar por las sesiones de depuración de Visual Studio y cómo ver y cambiar el estado del programa en una sesión.  
@@ -100,7 +101,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  Mantenga el ratón sobre la variable `a`. Observe su nombre, valor y tipo de datos. Mantenga el ratón sobre la variable `methodTrack`. Apunte de nuevo el nombre, el valor y el tipo de datos.  
   
- **También ahora, observa su nombre, valor y tipo de datos.** On the **Depurar** , diríjase a **Ventanas**y seleccione **Variables locales**. (Teclado: Alt+4).  
+ **También ahora, observa su nombre, valor y tipo de datos.** En el cuadro de diálogo **Depurar** , diríjase a **Ventanas**y seleccione **Variables locales**. (Teclado: Alt+4).  
   
  ![Ventana variables locales](../debugger/media/dbg_basics_localswindow.png "DBG_Basics_LocalsWindow")  
   
@@ -158,7 +159,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  ![Llamada de Example3 del método de demostración](../debugger/media/dbg_basics_callexample3.png "DBG_Basics_CallExample3")  
   
- **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** en el menú **Depurar** (teclado: F5). El depurador suspende la ejecución en el punto de interrupción del método MainPage.  
+ **Ejecute hasta el punto de interrupción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** on the **Depurar** (teclado: F5). El depurador suspende la ejecución en el punto de interrupción del método MainPage.  
   
  **Depure paso a paso por instrucciones el método Example3.** Seleccione **Paso a paso por instrucciones** en el menú **Depurar** (teclado: F11) hasta alcanzar el punto de entrada del método Example3. Siga depurando el método paso a paso por instrucciones hasta que haya recorrudo en iteración uno o dos bucles del bloque `for` . Tenga en cuenta que se tardaría demasiado tiempo en recorrer paso a paso las 1000 iteraciones.  
   
@@ -194,7 +195,7 @@ En este inicio rápido se muestra cómo navegar por las sesiones de depuración 
   
  ![Llamada de Example4 del método de demostración](../debugger/media/dbg_basics_callexample4.png "DBG_Basics_CallExample4")  
   
- **Ejecute hasta la excepción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** en el menú **Depurar** (teclado: F5). Presione F5 de nuevo para reanudar la ejecución. El depurador suspende la ejecución en la excepción del método Example4 y muestra un cuadro de diálogo de excepción.  
+ **Ejecute hasta la excepción.** Inicie la sesión de depuración. Para ello, elija **Iniciar depuración** on the **Depurar** (teclado: F5). Presione F5 de nuevo para reanudar la ejecución. El depurador suspende la ejecución en la excepción del método Example4 y muestra un cuadro de diálogo de excepción.  
   
  ![Cuadro de diálogo de excepción](../debugger/media/dbg_basics_exceptiondlg.png "DBG_Basics_ExceptionDlg")  
   

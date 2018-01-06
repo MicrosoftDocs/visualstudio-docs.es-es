@@ -26,11 +26,12 @@ caps.latest.revision: "44"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64d9eccdf57388428bfcd7ba5e43f75087bcf0bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bde9f1c8aa09f8e5961bd228a5f1947c2fc30f82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-threads-in-the-debugger-in-visual-studio-using-the-threads-window"></a>Vista subprocesos en el depurador de Visual Studio mediante la ventana subprocesos
 En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en la aplicación que está depurando. Para obtener instrucciones paso a paso sobre cómo usar el **subprocesos** ventana, consulte [Tutorial: depurar utilizando la ventana subprocesos](../debugger/how-to-use-the-threads-window.md).

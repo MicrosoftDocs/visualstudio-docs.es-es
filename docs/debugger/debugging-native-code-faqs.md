@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f007d1fa6d9a1bbdebdd78a88272c98f0c44cdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 943f2a142eb2267ada5c9b8570068c67684bdaed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-native-code-faqs"></a>Preguntas más frecuentes sobre la depuración de código nativo
 Los siguientes temas contienen repuestas a algunas preguntas frecuentes:  

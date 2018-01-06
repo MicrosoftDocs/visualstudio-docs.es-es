@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc68bf5f8a0e61b80200cd5454b78bcdda78cdfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Cambiar la configuración de la vista mediante la API heredado
 Configuración de características del editor principal, como el ajuste automático de línea, el margen de selección y el espacio virtual, se puede modificar por el usuario por medio de la **opciones** cuadro de diálogo. Sin embargo, también es posible cambiar esta configuración mediante programación.  

@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d52d22e3b4200cee0bd5d3dd3eab3e5356f0dbbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8b2380a585b1c428516e1578587c64b93d5b1d4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter (Elemento, Plantillas de Visual Studio)
 Contiene un nombre de parámetro personalizado y un valor que se usará cuando se crea un proyecto o elemento de la plantilla.  
@@ -36,8 +37,8 @@ Contiene un nombre de parámetro personalizado y un valor que se usará cuando s
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Nombre del parámetro. El formato para los parámetros es $*nombre*$.|  
-|`Value`|Obligatorio. El valor de reemplazo para el parámetro.|  
+|`Name`|Requerido. Nombre del parámetro. El formato para los parámetros es $*nombre*$.|  
+|`Value`|Requerido. El valor de reemplazo para el parámetro.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  

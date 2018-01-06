@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 519993c8527b0cd64c283416cd60eb48112e6886
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e728fbe2a9e430224a3da822cbcae45745eeb29e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomía de un paquete VSIX
 Un paquete VSIX es un archivo .vsix que contiene una o varias extensiones de Visual Studio, junto con los metadatos que Visual Studio usa para clasificar e instalar las extensiones. Que los metadatos se incluye en el manifiesto de VSIX y el archivo [Content_Types] .xml. Un paquete VSIX también puede contener uno o más archivos Extension.vsixlangpack para proporcionar el texto localizado el programa de instalación y puede contener paquetes VSIX adicionales para instalar las dependencias.  

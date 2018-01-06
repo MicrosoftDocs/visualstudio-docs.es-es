@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02eeb34427c6742847aef4035aef428838cc0e23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b21ce6ea8d4a65321c5af2cbae3cbc334dde3684
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-wpf"></a>Depurar WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] proporciona características adicionales para facilitar la depuración de aplicaciones WPF.  

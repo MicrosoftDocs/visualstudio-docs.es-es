@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5104bff319f4a6517ddccde1da1407156797928e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec5cedcec1d79cbc3a71410a1048f5014c8aa9e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capability-flags"></a>Marcas de capacidad
 El SCC_CAP_*xxx* marcas son marcadores de bits que se utiliza para indicar las capacidades de un complemento de control de código fuente. El SCC_EXCAP_*xxx* marcas son incrementales marcas que indican las capacidades extendidas y dan como resultado valores enteros.  

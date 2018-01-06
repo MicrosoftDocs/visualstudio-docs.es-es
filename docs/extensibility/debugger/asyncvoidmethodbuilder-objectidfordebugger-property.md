@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3dcff37e81bffefcc4385ad014d04c9b259c6eeb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4382da42fa21c5a3ce10887ad856e29bba9ae088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Propiedad AsyncVoidMethodBuilder.ObjectIdForDebugger
 Obtiene un objeto que puede utilizarse para identificar de forma exclusiva este generador para el depurador.  

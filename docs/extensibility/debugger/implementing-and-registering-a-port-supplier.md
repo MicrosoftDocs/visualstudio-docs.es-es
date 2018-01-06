@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementar y registrar un proveedor de puerto
 El rol de un proveedor de puerto es realizar un seguimiento y proporcionar puertos, lo que a su vez administración procesos. En el momento en que se debe crear un puerto, se crea una instancia del proveedor del puerto con CoCreate GUID del proveedor de puerto (el Administrador de sesión de depuración [SDM] va a usar el proveedor del puerto seleccionado por el usuario o el proveedor del puerto especificado por el sistema del proyecto). El SDM, a continuación, llame a [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para ver si se puede agregar ninguno de los puertos. Si se puede agregar un puerto, se solicita un nuevo puerto mediante una llamada a [agregar puerto](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) y pasarle una [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) que describe el puerto. `AddPort`Devuelve un nuevo puerto representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz.  

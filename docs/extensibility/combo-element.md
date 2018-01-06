@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f170efc945f92d13eda61830ef682ab4cd8fc755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9980232a7927bf1ae2df9d5f6329a57a031d3f56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="combo-element"></a>Elemento combinado
 Define los comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cuadros combinados, como se indica a continuación: cuadro combinado desplegable, DynamicCombo, IndexCombo y MRUCombo.  
@@ -41,10 +42,10 @@ Define los comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cua
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Obligatorio. GUID del identificador de comando/identificador GUID.|  
-|id|Obligatorio. Id. del identificador de comando/identificador GUID.|  
-|defaultWidth|Obligatorio. Un entero que especifica un ancho en píxeles del cuadro combinado.|  
-|idCommandList|Obligatorio. Un identificador que se envía al destino de comando active para recuperar la lista de elementos que deben mostrarse en el cuadro combinado. El identificador estará en el mismo ámbito GUID que el control.|  
+|guid|Requerido. GUID del identificador de comando/identificador GUID.|  
+|id|Requerido. Id. del identificador de comando/identificador GUID.|  
+|defaultWidth|Requerido. Un entero que especifica un ancho en píxeles del cuadro combinado.|  
+|idCommandList|Requerido. Un identificador que se envía al destino de comando active para recuperar la lista de elementos que deben mostrarse en el cuadro combinado. El identificador estará en el mismo ámbito GUID que el control.|  
 |priority|Opcional. Un valor numérico que especifica la prioridad.|  
 |type|Opcional. Un valor enumerado que especifica el tipo de botón.<br /><br /> Si no se proporcionan, utiliza el botón.<br /><br /> Cuadro combinado desplegable<br /> El VSPackage es responsable de rellenar el contenido de este cuadro combinado. El usuario no puede escribir nada en el cuadro de texto de desplegable este.<br /><br /> DynamicCombo<br /> El VSPackage es responsable de rellenar el contenido de este cuadro combinado. El usuario puede editar a este combinado y seleccionar elementos en él.<br /><br /> IndexCombo<br /> Igual que DynamicCombo excepto en que genera el índice del elemento en lugar de su texto.<br /><br /> MRUCombo<br /> Rellena el entorno de desarrollo integrado (IDE) en nombre de VSPackage.  El usuario puede editar en este cuadro combinado. El IDE recuerda hasta las últimas 16 entradas por cuadro combinado.<br /><br /> Cuando el usuario selecciona algo en el cuadro combinado, o especifica algo nuevo, el IDE notifica a VSPackage adecuado.|  
 |Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
@@ -54,8 +55,8 @@ Define los comandos que aparecen en un cuadro combinado. Hay cuatro tipos de cua
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |Elemento primario|Opcional. El elemento primario del botón.|  
-|CommandFlag|Obligatorio. Vea [comando marca elemento](../extensibility/command-flag-element.md). Los valores válidos de CommandFlag para un botón son los siguientes.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|Cadenas|Obligatorio. Vea [cadenas elemento](../extensibility/strings-element.md). Se debe definir el elemento de ButtonText secundario.|  
+|CommandFlag|Requerido. Vea [comando marca elemento](../extensibility/command-flag-element.md). Los valores válidos de CommandFlag para un botón son los siguientes.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|Cadenas|Requerido. Vea [cadenas elemento](../extensibility/strings-element.md). Se debe definir el elemento de ButtonText secundario.|  
 |Anotación|Comentario opcional.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  

@@ -31,11 +31,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdbc4c62b599ac19ff5bf6b6b0eedf862cc1b77d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e10b81ff07b77e2fd6202d2f5fb27392fe8134c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Ver la pila de llamadas y usar la ventana Pila de llamadas en el depurador de Visual Studio
 
@@ -136,7 +137,7 @@ Vea [especificar símbolos (.pdb) y archivos de código fuente](../debugger/spec
   
 4.  Escriba un nombre de la ruta de acceso del directorio a la ubicación de los símbolos en el equipo que está depurando. Para la depuración local y remota, se trata de una ruta de acceso en el equipo local.
   
-5.  Haga clic en **Aceptar** para cerrar el **opciones** cuadro de diálogo.  
+5.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.  
   
 ## <a name="see-also"></a>Vea también  
  [Código mixto e información no mostrada en la ventana Pila de llamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)  

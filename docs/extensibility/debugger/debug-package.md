@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eccd258476f82871732ef7b16f0282d2f945b9ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a2cbb124dcb2d2d7a0bbcba1bc57eb3c704dd770
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-package"></a>Depurar paquete
 El paquete de depuración se ejecuta en el shell de Visual Studio y encarga de toda la interfaz de usuario. Consume las interfaces de depuración de Visual Studio y se comunica con el Administrador de sesión de depuración (SDM).  

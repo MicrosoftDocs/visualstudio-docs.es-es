@@ -13,18 +13,19 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 513404a9abda00844e8ba68e5e207961d6de4868
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69965b35d919c4170c54cbfa1eed5d5a52dc8287
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos de Visual Studio
 Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC de Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.  
   
  El flujo de trabajo de Diagnóstico de gráficos comienza capturando un registro de cómo la aplicación usa Direct3D (en directo, mientras se ejecuta) por lo que el comportamiento se puede analizar inmediatamente, compartir o guardar para más tarde. Se pueden iniciar sesiones de captura y controlarlas manualmente desde Visual Studio o con la herramienta de captura de línea de comandos **dxcap.exe**. También se pueden iniciar sesiones de captura y controlarlas mediante programación con las API de captura de Diagnóstico de gráficos.  
   
- Después de una sesión de captura se ha registrado su contenido puede reproducirse en Visual Studio *analizador de gráficos* en cualquier momento, volver a crear los fotogramas capturados con exactamente los mismos recursos y comandos de representación que la aplicación usa. Luego, con las herramientas que se ofrecen en la ventana del Analizador de gráficos, se puede analizar en detalle cualquiera de los fotogramas capturados. Estas herramientas se pueden usar para examinar cualquier llamada API, recurso, objeto de estado de la canalización, fase de canalización de Direct3D o incluso el historial completo de cualquier píxel de un fotograma capturado. Con el uso conjunto de estas herramientas, un problema de representación se puede explorar de forma intuitiva, empezando por cómo aparece en un fotograma capturado y profundizando hasta su causa raíz en el código, los sombreadores o los activos gráficos de origen de la aplicación.  
+ Después de una sesión de captura se ha registrado su contenido puede reproducirse en Visual Studio *analizador de gráficos* en cualquier momento, volver a crear los fotogramas capturados con exactamente los mismos recursos y comandos de representación que la aplicación usa. Luego, con las herramientas que se ofrecen en la ventana del Analizador de gráficos, se puede analizar en detalle cualquiera de los fotogramas capturados. Estas herramientas se pueden usar para examinar cualquier llamada API, recurso, objeto de estado de la canalización, fase de canalización de Direct3D o incluso el historial completo de cualquier píxel de un fotograma capturado. Con el uso conjunto de estas herramientas, un problema de representación se puede explorar de forma intuitiva, empezando por cómo aparece en un fotograma capturado y profundizando hasta su causa principal en el código, los sombreadores o los activos gráficos de origen de la aplicación.  
   
  Para diagnosticar problemas de rendimiento, se puede analizar un fotograma capturado mediante el uso de la *análisis de fotogramas* herramienta. Esta herramienta explora las posibles optimizaciones del rendimiento cambiando automáticamente la forma en que la aplicación usa Direct3D y realizando automáticamente pruebas comparativas de todas las variaciones. En el pasado, tendría que crear y realizar manualmente pruebas comparativas de este tipo de cambios solo para averiguar cuáles marcaban la diferencia. Con Análisis de fotogramas, solo es necesario que realice los cambios que ya sabe que se amortizarán.  
   
@@ -80,7 +81,7 @@ Visual Studio*diagnóstico de gráficos* es un conjunto de herramientas para gra
   
 ## <a name="related-sections"></a>Secciones relacionadas  
   
-|Título|Descripción|  
+|Title|Descripción|  
 |-----------|-----------------|  
 |[Guía de características del depurador](../debugging-in-visual-studio.md)|Introduce la función de depuración en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].|  
 |[Gráficos de DirectX y juegos](http://go.microsoft.com/fwlink/?LinkId=256498)|Ofrece artículos sobre las tecnologías de gráficos DirectX.|

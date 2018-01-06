@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54bde0062fc6d79268a3c0d0a39989e493f4fb5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 48aeab8a09d4916c31c5e2b781427988cf352b25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 Esta interfaz representa un atributo personalizado, y puede proporcionar el nombre, el elemento primario y el tipo de clase del atributo.  

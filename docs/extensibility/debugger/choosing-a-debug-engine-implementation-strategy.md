@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d08d82f867ac2723ff68da615d5dc6977b8038af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fae5211ac270832f07038faafbd6f5bc463d3944
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Elegir una estrategia de implementación del motor de depuración
 Usar la arquitectura de tiempo de ejecución para determinar la estrategia de implementación (Alemania) del motor de depuración. El motor de depuración puede crearse en proceso para el programa esté depurado, en proceso para el Administrador de depuración de sesión de Visual Studio (SDM), o fuera de proceso a ambos. Las instrucciones siguientes le ayudará a elegir entre estas tres estrategias.  

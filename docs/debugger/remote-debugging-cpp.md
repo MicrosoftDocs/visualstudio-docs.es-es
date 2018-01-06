@@ -19,11 +19,12 @@ caps.latest.revision: "65"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09bd8bc648b87f69720468afcdeefa1d16dd36f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 7cae82f01564d2ef36175a3ee3e207e35a1830da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un proyecto de Visual C++ en Visual Studio la depuración remota
 Para depurar una aplicación de Visual Studio en un equipo diferente, instalar y ejecutar las herramientas remotas en el equipo donde va a implementar la aplicación, configure el proyecto para conectarse al equipo remoto desde Visual Studio y, a continuación, implementar y ejecutar la aplicación.
@@ -68,7 +69,7 @@ El depurador remoto es compatible con Windows 7 y versiones más recientes (no d
   
 5.  Realice los siguientes cambios de las propiedades:  
   
-    |Configuración|Valor|
+    |Parámetro|Valor|
     |-|-|  
     |Comando remoto|C:\remotetemp\mymfc.exe|  
     |Directorio de trabajo|C:\remotetemp|  

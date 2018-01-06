@@ -14,11 +14,12 @@ caps.latest.revision: "105"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29f87ccebc342e6b5b03d40aab789ff80496a96d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 04b627e1f3188a4e7e938f9446251b5be80b87e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Usar el recopilador independiente de IntelliTrace
 El **recolector independiente IntelliTrace** permite recopilar datos de diagnóstico de IntelliTrace para las aplicaciones en servidores de producción o en otros entornos sin instalar Visual Studio en el equipo de destino y sin cambiar el entorno del sistema de destino. El recolector independiente IntelliTrace funciona en aplicaciones web, de Sharepoint, de WPF y de Windows Forms. Cuando la recolección de datos haya terminado, basta con eliminar el recolector para desinstalarlo.  
@@ -292,7 +293,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
   
 -   Ejecutar el compilador solo cuando crea que hay un problema o cuando pueda reproducir el problema.  
   
-     Inicie la recolección, reproduzca el problema y, a continuación, detenga la recolección. Abra el archivo .iTrace en Visual Studio Enterprise y examine los datos. Vea [Abra el archivo .iTrace en Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files).  
+     Inicie la recolección, reproduzca el problema y, a continuación, detenga la recolección. Abra el archivo .iTrace en Visual Studio Enterprise y examine los datos. Vea [Abra el archivo .iTrace en Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).  
   
 -   En las aplicaciones web y de SharePoint, el recolector registra los datos de cada aplicación web que comparte el grupo de aplicaciones especificado. Esto puede ralentizar cualquier aplicación que comparta el mismo grupo de aplicaciones, aunque puede especificar únicamente los módulos para una sola aplicación en el plan de recolección.  
   
@@ -367,7 +368,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
   
      Sí. Para reducir el impacto en el rendimiento, IntelliTrace restringe la recolección de datos a los valores de los tipos de datos primitivos pasados a métodos y devueltos de estos, así como a los valores de los tipos de datos primitivos en campos de objetos de nivel superior pasados a métodos y devueltos de estos.  
   
-     Por ejemplo, suponga que tiene una signatura de método `AlterEmployee` que acepta un entero `id` y un objeto `Employee` de `oldemployee`:  
+     Por ejemplo, suponga que tiene una signatura de método `AlterEmployee` que acepta un entero `id` y un objeto `Employee`de `oldemployee`:  
   
      `public Employee AlterEmployee(int id, Employee oldemployee)`  
   

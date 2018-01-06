@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ce445dec4ca7d09f2fb8822fa9b5632356950042
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 05b4e7640a1d42c2796c7e41afe51dfac3da254a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Plantillas de Visual Studio)
 Especifica si se debe crear el proyecto y realizar el reemplazo de parámetros en la ubicación especificada, o realizar el reemplazo de parámetros en una ubicación temporal y, a continuación, guarde el proyecto en la ubicación especificada.  

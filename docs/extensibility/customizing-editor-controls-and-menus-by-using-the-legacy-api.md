@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d72671a9c9e470dafae2b36c8cf5ec34b43e750
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d63827110dab8b8028e27fa6d544f5dd1bcfc23b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personalizar menús y controles de Editor mediante la API heredado
 Un servicio de lenguaje o una vista de texto puede controlar los menús contextuales y los controles en el editor. Las páginas de esta sección explican cómo trabajar con estas características.  

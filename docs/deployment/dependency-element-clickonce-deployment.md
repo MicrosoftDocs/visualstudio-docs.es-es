@@ -28,11 +28,12 @@ caps.latest.revision: "27"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: df1c2e36f101422655b68fd2a6a012d80b71befa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependencia&gt; elemento (implementación de ClickOnce)
 Identifica la versión de la aplicación que desea instalar y la ubicación del manifiesto de aplicación.  
@@ -84,7 +85,7 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 |---------------|-----------------|  
 |`preRequisite`|Opcional. Especifica que este ensamblado debe existir en la GAC. Los valores válidos son `true` y `false`. Si `true`y el ensamblado especificado no existe en la GAC, no se puede ejecutar la aplicación.|  
 |`visible`|Opcional. Identifica la identidad de aplicación de nivel superior, incluidas sus dependencias. Utiliza internamente [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] para administrar el almacenamiento de aplicaciones y activación.|  
-|`dependencyType`|Obligatorio. La relación entre esta dependencia y la aplicación. Los valores válidos son:<br /><br /> -   `install`. Componente representa una instalación independiente de la aplicación actual.<br />-   `preRequisite`. Componente es necesario para la aplicación actual.|  
+|`dependencyType`|Requerido. La relación entre esta dependencia y la aplicación. Los valores válidos son:<br /><br /> -   `install`. Componente representa una instalación independiente de la aplicación actual.<br />-   `preRequisite`. Componente es necesario para la aplicación actual.|  
 |`codebase`|Opcional. La ruta de acceso completa al manifiesto de aplicación.|  
 |`size`|Opcional. El tamaño del manifiesto de aplicación, en bytes.|  
   
@@ -93,10 +94,10 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Identifica el nombre de la aplicación.|  
-|`Version`|Obligatorio. Especifica el número de versión de la aplicación, en el formato siguiente:`major.minor.build.revision`|  
-|`publicKeyToken`|Obligatorio. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para firmar debe tener 2048 bits o mayor.|  
-|`processorArchitecture`|Obligatorio. Especifica el microprocesador. Los valores válidos son `x86` para Windows de 32 bits y `IA64` para Windows de 64 bits.|  
+|`Name`|Requerido. Identifica el nombre de la aplicación.|  
+|`Version`|Requerido. Especifica el número de versión de la aplicación, en el formato siguiente:`major.minor.build.revision`|  
+|`publicKeyToken`|Requerido. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para firmar debe tener 2048 bits o mayor.|  
+|`processorArchitecture`|Requerido. Especifica el microprocesador. Los valores válidos son `x86` para Windows de 32 bits y `IA64` para Windows de 64 bits.|  
 |`Language`|Opcional. Identifica los códigos de idioma de dos partes del ensamblado. Por ejemplo, EN-US, que hace referencia para inglés (Estados Unidos). De manera predeterminada, es `neutral`. Este elemento está en la `asmv2` espacio de nombres.|  
 |`type`|Opcional. Por razones de compatibilidad con Windows side-by-side instalación tecnología. El único valor permitido es `win32`.|  
   

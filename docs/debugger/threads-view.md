@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view"></a>Vista de subprocesos
 La vista de subprocesos es una lista plana de todos los subprocesos asociados con windows en el sistema. Se muestran el identificador de subproceso y nombre del módulo para cada subproceso. No se incluyen los procesos, pero puede encontrar fácilmente el proceso que posee un subproceso seleccionado.  

@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8bd22d71753a8bf86adbe2b437407481388c48d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1a6ffff4d3ac0410ca3de7e2cd595119763e88b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-tasks"></a>Tareas de depuración
 Para depurar un programa, debe iniciarse y un motor de depuración (Alemania) debe estar conectado a él, o bien el Alemania debe asociarse a un programa iniciado previamente. Una vez conectado, la DE debe generar determinados eventos de inicio. En respuesta, el paquete de depuración intenta enlazar los puntos de interrupción establecidos en el IDE. Cuando el programa llega a un punto de interrupción enlazado, se detiene y espera proporcionados por el usuario.  

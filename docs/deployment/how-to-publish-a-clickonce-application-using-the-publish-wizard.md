@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f7921ccebf9872f8a1f8ed79e6ee8da05d04e320
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Cómo: Publicar una aplicación ClickOnce sin usar el Asistente para publicación
 Para que una aplicación ClickOnce esté disponible para los usuarios, debe publicarla en un recurso compartido de archivos o ruta de acceso, en un servidor FTP o en un medio extraíble. Puede publicar la aplicación mediante el Asistente para publicación; propiedades adicionales relacionados a la publicación están disponibles en la **publicar** página de la **Diseñador de proyectos**. Para obtener más información, consulte [publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md).  
@@ -62,7 +63,7 @@ Para que una aplicación ClickOnce esté disponible para los usuarios, debe publ
   
     -   Si desea ejecutar la aplicación directamente desde la ubicación de publicación, haga clic en **No, esta aplicación sólo está disponible en línea**. Un acceso directo en el **iniciar** menú no se creará.  
   
-     Haga clic en **siguiente** para continuar.  
+     Haga clic en **Siguiente** para continuar.  
   
 6.  Haga clic en **finalizar** para publicar la aplicación.  
   
@@ -91,7 +92,7 @@ Para que una aplicación ClickOnce esté disponible para los usuarios, debe publ
   
     -   Si la aplicación no buscará actualizaciones, haga clic en **la aplicación no buscará actualizaciones**.  
   
-     Haga clic en **siguiente** para continuar.  
+     Haga clic en **Siguiente** para continuar.  
   
 6.  Haga clic en **finalizar** para publicar la aplicación.  
   

@@ -27,11 +27,12 @@ caps.latest.revision: "31"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ac2da96844587401a7156669e79a9bdcfe750070
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e4897ad027354ef54a77fdad3488d2e623264741
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Seguridad de acceso del código para aplicaciones ClickOnce
 Las aplicaciones ClickOnce se basan en .NET Framework y están sujetas a restricciones de seguridad de acceso del código. Por esta razón, es importante que comprenda las implicaciones de la seguridad de acceso del código y escriba las aplicaciones ClickOnce en consecuencia.  
@@ -95,9 +96,9 @@ Las aplicaciones ClickOnce se basan en .NET Framework y están sujetas a restric
   
 ## <a name="see-also"></a>Vea también  
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Cómo: habilitar la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Cómo: establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Cómo: depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Cómo: Habilitar la configuración de seguridad de ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
  [Página Seguridad, Diseñador de proyectos](../ide/reference/security-page-project-designer.md)

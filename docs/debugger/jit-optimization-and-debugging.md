@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acf75c0fbf6f5c3cfcf645d288c4e5e2eb2450d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimización y depuración JIT
 Cuando se depura una aplicación administrada, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] suprime la optimización del código just-in-time (JIT) de forma predeterminada. Suprimir la optimización JIT significa que se está depurando código no optimizado. El código se ejecuta un poco más lentamente porque no se optimiza, pero la experiencia de depuración es mucho más profunda. La depuración de código optimizado es más difícil, y sólo se recomienda si se detecta un error en el código optimizado que no se puede reproducir en la versión no optimizada.  

@@ -33,11 +33,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3c95f24db0dc158b668f0e324fd5bac066dd4ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Buscar pérdidas de memoria con la biblioteca de CRT
 Las pérdidas de memoria, definidas como la incapacidad de desasignar correctamente memoria asignada previamente, se encuentran entre los errores más sutiles y difíciles de detectar en las aplicaciones de C/C++. Una pequeña pérdida de memoria puede no advertirse al principio, pero con el tiempo, una progresiva pérdida de memoria puede producir síntomas que van desde una disminución del rendimiento hasta el bloqueo cuando la aplicación se queda sin memoria. Peor aún, una aplicación con pérdida de memoria que utilice toda la memoria disponible puede hacer que se bloquee otra aplicación, creando confusión respecto a qué aplicación es la responsable. Incluso unas pérdidas de memoria aparentemente inocuas podrían ser síntomas de otros problemas que se deben corregir.  

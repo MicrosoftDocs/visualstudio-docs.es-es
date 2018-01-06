@@ -115,11 +115,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e32547d66d1bf4de73b209ac0174598da9bbb731
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de C++
 Puede cambiar la configuración del proyecto para una configuración de depuración de C o Visual C++ en el **páginas de propiedades** cuadro de diálogo, como se describe en [Cómo: Set Debug y Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). Las siguientes tablas muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** cuadro de diálogo.  
@@ -190,6 +191,6 @@ Para depurar archivos DLL que son externas a su proyecto, consulte [proyectos de
 ## <a name="see-also"></a>Vea también  
  [Depuración de código nativo](../debugger/debugging-native-code.md)   
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
- [Crear y administrar proyectos de Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)   
+ [Creación y administración de proyectos de Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)   
  [/ASSEMBLYDEBUG (Agregar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)   
  [Macros comunes para propiedades y comandos de compilación](/cpp/ide/common-macros-for-build-commands-and-properties)

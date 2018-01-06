@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dcd2b8457854817f84272420a42872a1b947e6c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd6acee81b2202500c9d84f5920cd4f1019a3b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (SDK de Visual Studio)
 Hay dos orígenes de eventos: el motor de depuración (Alemania) y la sesión de depuración de administrador (SDM). Eventos enviados desde un Alemania tienen un motor distinto de NULL, mientras que eventos enviados desde el SDM tienen un motor NULL.  

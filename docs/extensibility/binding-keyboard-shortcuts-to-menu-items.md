@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fe1c0bb9c3028c70e1be9df9af1de3b0804844e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ceae0f2ea69ce0340565abb85bb002713010407d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Métodos abreviados de teclado de enlace a elementos de menú
 Para enlazar un método abreviado de teclado a un comando de menú personalizado, simplemente agregue una entrada para el archivo .vsct para el paquete. Este tema explica cómo asignar un método abreviado de teclado a un botón personalizado, un elemento de menú o un comando de barra de herramientas y cómo aplicar la asignación de teclado en el editor predeterminado o limitarlos a un editor personalizado.  

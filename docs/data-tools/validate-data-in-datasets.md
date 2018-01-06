@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>Validar los datos en conjuntos de datos
 Validación de datos es el proceso de confirmar que los valores que se especifican en los objetos de datos se ajustan a las restricciones de esquema de un conjunto de datos. El proceso de validación también confirma que estos valores son siguiendo las reglas establecidas para la aplicación. Es una buena práctica para validar los datos antes de enviar actualizaciones a la base de datos subyacente. Esto reduce los errores, así como el número de viajes de ida y vuelta entre una aplicación y la base de datos.  
@@ -67,7 +68,7 @@ Si la aplicación utiliza un conjunto de datos con tipo, puede crear controlador
   
 ## <a name="data-update-events"></a>Eventos de actualización de datos  
   
-|Evento|Descripción|  
+|evento|Descripción|  
 |-----------|-----------------|  
 |<xref:System.Data.DataTable.ColumnChanging>|Se está cambiando el valor de una columna. El evento pasa la fila y columna, junto con el nuevo valor propuesto.|  
 |<xref:System.Data.DataTable.ColumnChanged>|Se cambió el valor de una columna. El evento pasa la fila y columna, junto con el valor propuesto.|  

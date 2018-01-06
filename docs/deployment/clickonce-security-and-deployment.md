@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]es una tecnología de implementación que le permite crear auto-actualización aplicaciones basadas en Windows que se pueden instalar y ejecutar con interacción mínima del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con tecnología ClickOnce si ha desarrollado los proyectos con Visual Basic y Visual C#. Para obtener información sobre cómo implementar aplicaciones de Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/27/2017
  Certificados de Authenticode se usan para comprobar la autenticidad del publicador de la aplicación. Mediante el uso de Authenticode para la implementación de aplicaciones, ClickOnce ayuda a impedir que un programa dañino se presente como un programa legítimo procedentes de un origen de confianza establecido. Si lo desea, también se pueden utilizar certificados para firmar la aplicación y los manifiestos de implementación para demostrar que los archivos no han sido alterados. Para obtener más información, consulte [ClickOnce y Authenticode](../deployment/clickonce-and-authenticode.md). Certificados también pueden utilizarse para configurar los equipos cliente para tener una lista de editores de confianza. Si una aplicación procede de un editor de confianza, se puede instalar sin ninguna interacción del usuario. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 ### <a name="code-access-security"></a>Seguridad de acceso del código  
- Seguridad de acceso del código ayuda a limitar el acceso del código a los recursos protegidos. En la mayoría de los casos, puede elegir las zonas de Internet o Intranet Local para limitar los permisos. Use la **seguridad** página en el **ProjectDesigner** para solicitar la zona correspondiente a la aplicación. También puede depurar las aplicaciones con permisos restringidos para emular la experiencia del usuario final. Para obtener más información, consulte [Code Access Security para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
+ Seguridad de acceso del código ayuda a limitar el acceso del código a los recursos protegidos. En la mayoría de los casos, puede elegir las zonas de Internet o Intranet Local para limitar los permisos. Use la **seguridad** página en el **ProjectDesigner** para solicitar la zona correspondiente a la aplicación. También puede depurar las aplicaciones con permisos restringidos para emular la experiencia del usuario final. Para más información, vea [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  
   
 ### <a name="clickonce-trust-prompt"></a>Solicitud de fiabilidad de ClickOnce  
  Si la aplicación solicita más permisos que permite que la zona, le solicitará al usuario final para tomar una decisión de confianza. El usuario final puede decidir si las aplicaciones ClickOnce, como aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation, aplicaciones de consola, aplicaciones de explorador XAML y soluciones de Office son de confianza para ejecutarse. Para obtener más información, consulte [Cómo: configurar el comportamiento de solicitud de confianza de ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).  

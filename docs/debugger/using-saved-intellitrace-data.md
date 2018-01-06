@@ -18,11 +18,12 @@ caps.latest.revision: "106"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0447f7ac0836f0f23334d8759d294437191aa6a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) para ir a puntos concretos de la ejecución de la aplicación. Este archivo puede contener eventos de rendimiento, excepciones, subprocesos, pasos de prueba, módulos y otra información del sistema que IntelliTrace recopila mientras se ejecuta la aplicación.  
@@ -225,7 +226,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |**Columna**|**Muestra**|  
 |----------------|-------------------|  
 |**ID**|El número de identificador del subproceso|  
-|**Nombre**|El nombre del subproceso. Los subprocesos sin nombre aparecen como "\<sin nombre >".|  
+|**Name**|El nombre del subproceso. Los subprocesos sin nombre aparecen como "\<sin nombre >".|  
 |**Hora de inicio**|La hora en que se creó el subproceso|  
 |**Hora de finalización**|La hora en que se completó el subproceso|  
   

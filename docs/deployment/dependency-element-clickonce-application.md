@@ -30,11 +30,12 @@ caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7a0604113161fed432219f84ac6c4d8a6a4d7666
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependencia&gt; elemento (aplicación ClickOnce)
 Identifica una plataforma o dependencia de ensamblado que se requiere para la aplicación.  
@@ -112,10 +113,10 @@ Identifica una plataforma o dependencia de ensamblado que se requiere para la ap
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`majorVersion`|Obligatorio. Especifica el número de versión principal del sistema operativo.|  
-|`minorVersion`|Obligatorio. Especifica el número de versión secundaria del sistema operativo.|  
-|`buildNumber`|Obligatorio. Especifica el número de compilación del sistema operativo.|  
-|`servicePackMajor`|Obligatorio. Especifica el número principal de service pack del sistema operativo.|  
+|`majorVersion`|Requerido. Especifica el número de versión principal del sistema operativo.|  
+|`minorVersion`|Requerido. Especifica el número de versión secundaria del sistema operativo.|  
+|`buildNumber`|Requerido. Especifica el número de compilación del sistema operativo.|  
+|`servicePackMajor`|Requerido. Especifica el número principal de service pack del sistema operativo.|  
 |`servicePackMinor`|Opcional. Especifica el número secundario de service pack del sistema operativo.|  
 |`productType`|Opcional. Identifica el valor de tipo de producto. Valores válidos son `server`, `workstation` y `domainController`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `workstation`.|  
 |`suiteType`|Opcional. Identifica un conjunto de productos disponible en el sistema o el tipo de configuración del sistema. Los valores válidos son `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, y `terminal`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `professional`.|  
@@ -127,8 +128,8 @@ Identifica una plataforma o dependencia de ensamblado que se requiere para la ap
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`dependencyType`|Obligatorio. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. A `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede instalar la aplicación.|  
-|`allowDelayedBinding`|Obligatorio. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución.|  
+|`dependencyType`|Requerido. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. A `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede instalar la aplicación.|  
+|`allowDelayedBinding`|Requerido. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución.|  
 |`group`|Opcional. Si el `dependencyType` atributo está establecido en `install`, designa a un grupo con nombre de los ensamblados que solo se instalan a petición. Para más información, consulte [Tutorial: Descargar ensamblados a petición con la API de implementación de ClickOnce mediante el diseñador](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si establece en `framework` y `dependencyType` atributo está establecido en `prerequisite`, designa el ensamblado como parte de .NET Framework. No se comprueba la caché de ensamblado global (GAC) para este ensamblado cuando se instala en [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] y versiones posteriores.|  
 |`codeBase`|Obligatorio cuando la `dependencyType` atributo está establecido en `install`. La ruta de acceso al ensamblado dependiente. Puede ser una ruta de acceso absoluta o una ruta de acceso en relación con el código del manifiesto a la base. Esta ruta de acceso debe ser un URI válido en orden para el manifiesto del ensamblado sea válido.|  
 |`size`|Obligatorio cuando la `dependencyType` atributo está establecido en `install`. El tamaño del ensamblado dependiente, en bytes.|  
@@ -138,8 +139,8 @@ Identifica una plataforma o dependencia de ensamblado que se requiere para la ap
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Obligatorio. Identifica el nombre de la aplicación.|  
-|`version`|Obligatorio. Especifica el número de versión de la aplicación en el formato siguiente:`major.minor.build.revision`|  
+|`name`|Requerido. Identifica el nombre de la aplicación.|  
+|`version`|Requerido. Especifica el número de versión de la aplicación en el formato siguiente:`major.minor.build.revision`|  
 |`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes de la `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para firmar el catálogo debe ser 2048 bits o más.|  
 |`processorArchitecture`|Opcional. Especifica el procesador. Los valores válidos son `x86` para Windows de 32 bits y `I64` para Windows de 64 bits.|  
 |`language`|Opcional. Identifica los códigos de idioma de dos partes, como EN-US, del ensamblado.|  

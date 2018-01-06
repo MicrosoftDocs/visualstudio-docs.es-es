@@ -16,11 +16,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00cc60b0b6c522c6a6674456adae50aace266030
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-and-removing-property-pages"></a>Agregar y quitar páginas de propiedades
 El Diseñador de proyectos proporciona una ubicación centralizada para administrar las propiedades del proyecto, configuraciones y recursos en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aparece como una sola ventana en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integra el entorno de desarrollo (IDE) y contiene un número de paneles de la derecha que se tiene acceso a través de las pestañas de la izquierda. Los paneles (a menudo denominados páginas de propiedades) en el Diseñador de proyectos varían según el idioma y el tipo de proyecto. El Diseñador de proyectos puede tener acceso mediante el **propiedades** comando el **proyecto** menú.  

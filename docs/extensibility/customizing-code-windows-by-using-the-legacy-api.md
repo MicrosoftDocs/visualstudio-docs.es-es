@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a958e6f6aa815b7d5726c2c441876331fba56b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f0b00c31280b9471da99aea55118e25dd551ad96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalización de ventanas de código mediante la API heredado
 Una ventana de código es un objeto de ventana de documento que admite una o varias vistas de texto. Las características exactas de una ventana de código dependen del servicio de idioma asociado. En el modo de interfaz de múltiples documentos (MDI), la ventana de código es el marco MDI secundario.  

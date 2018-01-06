@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b7924515dbb661a4281397817be4b1b68487a6ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Programaciones&gt; elemento (arranque)
 El `Schedules` contiene el elemento `Schedule` elementos, que definen las horas en que los comandos definidos por el `Command` se debe ejecutar el elemento.  
@@ -51,7 +52,7 @@ El `Schedules` contiene el elemento `Schedule` elementos, que definen las horas 
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. El nombre del elemento de programación. Esto corresponde a la `ScheduleName` propiedad de la `Command` elemento. Cuando un `Command` hace referencia a la programación con nombre, solo se ejecutará a la hora indicada por esa `Schedule` elemento. Programaciones también pueden asociar a la `FailIf` y `BypassIf` elementos, que restringen estas comprobaciones condicionales a la ejecución en la programación especificada. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Requerido. El nombre del elemento de programación. Esto corresponde a la `ScheduleName` propiedad de la `Command` elemento. Cuando un `Command` hace referencia a la programación con nombre, solo se ejecutará a la hora indicada por esa `Schedule` elemento. Programaciones también pueden asociar a la `FailIf` y `BypassIf` elementos, que restringen estas comprobaciones condicionales a la ejecución en la programación especificada. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
   
  A partir de `Schedule` elemento puede tener exactamente uno de los elementos secundarios siguientes.  
   

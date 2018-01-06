@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1aa1c2363ecf3cb6bfd9531112c87d8bcaeefe4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 95812aa634e799b5594c0cae9f4d2c3d397ca945
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Especifica qué información debe recuperar sobre un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  

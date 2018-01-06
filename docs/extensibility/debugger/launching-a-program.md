@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29e05c7cef8b7bc8644ccbf7ea542e2f043547a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-a-program"></a>Ejecutar un programa
 Los usuarios que van a depurar un programa pueden presionar F5 para ejecutar al depurador desde el IDE. Esto inicia una serie de eventos que finalmente se en el IDE al conectar a un motor de depuración (Alemania), que a su vez esté conectado o adjunta, al programa como sigue:  

@@ -22,11 +22,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 371c48282b2f775833287046ed9810f0cbc8f69e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f50c41a18f6d018ca717fbfd0cd926da8e6dcf65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Cómo: depurar desde un proyecto DLL en Visual Studio
 Es una manera de depurar un proyecto DLL especificar la aplicación que realiza la llamada en las propiedades del proyecto del proyecto de DLL y, a continuación, puede iniciar la depuración desde el propio proyecto DLL. Para que funcione este método, la aplicación debe llamar a la DLL y el archivo DLL debe estar en la ubicación donde la aplicación espera encontrarla (en caso contrario, la aplicación podría encontrar una versión diferente del archivo DLL y cargarla en su lugar, y que no ejecute los puntos de interrupción). Para otros métodos de depuración de archivos DLL, consulte [depurar proyectos DLL](../debugger/debugging-dll-projects.md).
@@ -85,6 +86,6 @@ Las páginas de propiedades de C++ difieren en diseño y contenido de las págin
   
 ## <a name="see-also"></a>Vea también  
  [Depurar proyectos DLL](../debugger/debugging-dll-projects.md)   
- [Configuraciones de depuración de la configuración del proyecto de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configuración de depuración de la configuración del proyecto para un de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Configuración de proyectos para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Configuración de proyectos para una configuración de depuración en Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

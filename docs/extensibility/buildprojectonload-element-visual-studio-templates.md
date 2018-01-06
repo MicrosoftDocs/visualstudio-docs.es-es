@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6d672eca7b818ce9bc06df4a09a7623be9e8d89f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (Elemento, Plantillas de Visual Studio)
 Crea nuevos proyectos de solo cuando se crean y agregarlos a una solución. No se compila la solución completa.  

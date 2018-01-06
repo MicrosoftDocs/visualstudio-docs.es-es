@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 498090c71abb41fa7b0837bd608715db30df5e86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff7a1f97304dd9ba09dc8f44f3d05a23196fdeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Indica el protocolo que se va a usar para la comunicación entre un servidor de depuración y el paquete de depuración (Alemania).  

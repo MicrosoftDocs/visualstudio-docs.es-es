@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16be8f494b5e8709244568afeb654ae02ca85899
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 448eba0d13a9501c328da79fa31fa66f4376d5df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Agregar Control de usuario a la página de inicio
 Este tutorial muestra cómo agregar una referencia de archivo DLL a una página de inicio personalizada. El ejemplo agrega un control de usuario a la solución, genera el control de usuario y, a continuación, hace referencia al ensamblado generado desde el archivo .xaml de página de inicio. Una nueva pestaña hospeda el control de usuario, que funciona como un explorador Web básico.  

@@ -24,11 +24,12 @@ caps.latest.revision: "45"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 8d02aa039299c5f4f31d1fa0f9e0b48b8bbeb351
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-bootstrapper-packages"></a>Crear paquetes de arranque
 El programa de instalación es un instalador genérico que se puede configurar para detectar e instalar componentes redistribuibles, como archivos de Windows Installer (.msi) y programas ejecutables. El instalador también se conoce como programa previo. Se programa mediante un conjunto de manifiestos XML que especifican los metadatos que administrarán la instalación del componente.  
@@ -125,7 +126,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Cuadro de diálogo de requisitos previos](../ide/reference/prerequisites-dialog-box.md)   
  [Referencia de esquemas de paquete y producto](../deployment/product-and-package-schema-reference.md)   
  [Usar el programa de previo Visual Studio 2005 para poner en marcha su instalación](http://go.microsoft.com/fwlink/?LinkId=107537)

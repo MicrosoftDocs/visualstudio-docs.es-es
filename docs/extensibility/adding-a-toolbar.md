@@ -15,11 +15,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da6ea8eac18151f0efbaefb3e9f910b695630669
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7b837a620a1e116b9bb8a11ff8a4edab7bfabfb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-toolbar"></a>Agregar una barra de herramientas
 Este tutorial muestra cómo agregar una barra de herramientas en el IDE de Visual Studio.  

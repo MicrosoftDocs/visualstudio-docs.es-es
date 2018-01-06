@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e292a08e6d8ac9c6f59f84514fbb625779f82c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d686e7b68e790c419679bf495bf08ad4cd4807e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-command-line-switches"></a>Adición de modificadores de línea de comandos
 Puede agregar modificadores de línea de comandos que se aplican a su VSPackage cuando se ejecuta devenv.exe. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del conmutador y sus propiedades. En este ejemplo, se agrega el modificador MySwitch para una subclase de VSPackage denominado **AddCommandSwitchPackage** sin argumentos y con el VSPackage que se cargan automáticamente.  
@@ -41,7 +42,7 @@ Puede agregar modificadores de línea de comandos que se aplican a su VSPackage 
  HelpString  
  El recurso o la cadena de Id. de Ayuda de la cadena para mostrar con **devenv /?**.  
   
- Name  
+ nombre  
  El conmutador.  
   
  PackageGuid  

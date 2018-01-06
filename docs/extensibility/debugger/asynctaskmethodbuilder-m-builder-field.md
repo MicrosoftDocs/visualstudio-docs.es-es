@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f971dd1a6ed2c4e16e3e991d43bc6ca7ca5b2f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e76425b81bc2198bbe96740c792b6da47a14d846
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>Campo de AsyncTaskMethodBuilder.m_builder
 Representa el objeto de generador de genérico a la que se delega esta instancia no genéricos.  

@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7449cef9dca41aee61a3f15162252298db04e71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-object-table"></a>Tabla de objetos gráficos
 La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le ayuda a comprender los objetos de Direct3D que admiten un fotograma de su juego o aplicación.  
@@ -42,8 +43,8 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 |Columna|Descripción|  
 |------------|-----------------|  
 |**Identificador**|Identificador de objeto.|  
-|**Nombre**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|  
-|**ype**|Tipo del objeto.|  
+|**Name**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|  
+|**Type**|Tipo del objeto.|  
 |**Active**|Muestra "*" para un objeto que se estableció en D3D10Device o D3D11DeviceContext durante el fotograma capturado.<br /><br /> Esto corresponde a los objetos que se muestran como texto gris, pero proporciona una entrada de columna que se puede utilizar como ayuda para ordenar la tabla de objetos.|  
 |**Size**|Tamaño del objeto en bytes.|  
 |**Format**|Formato del objeto. Por ejemplo, el formato de un objeto de textura o el modelo de sombreador de un objeto de sombreador.|  

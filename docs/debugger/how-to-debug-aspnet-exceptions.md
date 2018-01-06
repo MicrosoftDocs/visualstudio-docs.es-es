@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba38521b8d3d224d6544d95b947d5f0e29727c0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 82c81f2998497f047550e35397dc870338ed977e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Cómo: Depurar excepciones de ASP.NET
 Depuración de excepciones es una parte importante del desarrollo de una sólida [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación. Información general sobre cómo depurar excepciones está en [administrar excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md).  

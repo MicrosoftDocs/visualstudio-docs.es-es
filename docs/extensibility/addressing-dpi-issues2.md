@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e944c8a998a3e8bba46d5018faf1b9103a91240
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addressing-dpi-issues"></a>Solución de problemas de PPP
 Un número mayor de dispositivos se entrega con pantallas "alta resolución". Estas pantallas suelen tengan más de 200 píxeles por pulgada (PPP). Trabajar con una aplicación en estos equipos requerirá contenido para escalarse para satisfacer las necesidades de ver el contenido a una distancia de visualización normal para el dispositivo. A partir de 2014, el destino principal para pantallas de alta densidad es informática dispositivos (tabletas, equipos portátiles cocha y teléfonos) móvil.  

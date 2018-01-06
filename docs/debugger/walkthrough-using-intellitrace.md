@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eff33b87d647d28f4af8f452ea4662656a15a61e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 10d3e6b3e5b47fc481a573a365b4423e685625f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Ver eventos de IntelliTrace en Visual Studio
 Puede usar IntelliTrace para recopilar información sobre determinados eventos, categorías de eventos o llamadas a funciones individuales. En los siguientes procedimientos se muestra cómo hacerlo.  
@@ -30,7 +31,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
 
 ## <a name="create-your-app"></a>Crear la aplicación
   
-1.  Cree una aplicación de consola de C#. En el archivo Program.cs, agregue la siguiente declaración de `using` :  
+1.  Cree una aplicación de consola de C#. En el archivo Program.cs, agregue la siguiente declaración de `using`:  
   
     ```CSharp  
     using System.IO;  

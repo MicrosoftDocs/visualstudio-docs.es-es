@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3a5fc067ac65cea13181632c562a635599f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc458bddfe354f43afd15176d0283cad4875234d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-windows-phone-81-apps-in-the-emulator"></a>Ejecutar aplicaciones de Windows Phone 8.1 en el emulador
 El emulador de Windows Phone proporciona un entorno virtual en el que puede depurar y probar aplicaciones de Windows Phone en el equipo sin un dispositivo físico. Puede simular eventos táctiles y rotaciones, y elegir el tamaño y la resolución de la pantalla física que desee emular. También puede probar muchas características usadas habitualmente como, por ejemplo, la ubicación, las redes, las notificaciones, los sensores, el acelerómetro y la tarjeta SD opcional.  
@@ -37,7 +38,7 @@ Junto con Visual Studio, el emulador proporciona un entorno completo donde puede
   
  Al ejecutar una aplicación de Windows Phone por primera vez en Windows Phone Emulator, tienen lugar los siguientes eventos:  
   
-1.  Se inicia el emulador.  
+1.  El emulador se inicia.  
   
 2.  El emulador carga el sistema operativo de Windows Phone.  
   
@@ -110,7 +111,7 @@ Junto con Visual Studio, el emulador proporciona un entorno completo donde puede
 ##  <a name="BKMK_toolbar"></a>Configurar el emulador de Windows Phone con la barra de herramientas del emulador  
  En esta table se muestran los botones de configuración disponibles en la barra de herramientas del emulador.  
   
-|Botones de la barra de herramientas|Opciones de configuración|  
+|Botones de barra de herramientas|Opciones de configuración|  
 |---------------------|---------------------------|  
 |![Opciones en la barra de herramientas del emulador de Windows Phone de entrada](../debugger/media/wp_emulator_.png "WP_Emulator_")|**Configurar entrada único punto o multipunto**<br /><br /> Al habilitar una entrada de multipunto, puede hacer clic con el botón derecho para mover los puntos táctiles sin tocar la pantalla. A continuación, puedeshacer clic con el botón izquierdo para mover ambos puntos táctiles simultáneamente.|  
 |![Orientación en la barra de herramientas del emulador de Windows Phone](../debugger/media/wp_emulator_rotation.png "WP_Emulator_rotation")|**Configurar la orientación del emulador**<br /><br /> Puede cambiar la orientación en Windows Phone Emulator por una de las tres orientaciones posibles: vertical, horizontal a la izquierda u horizontal a la derecha. El tamaño del emulador no cambia al cambiar la orientación.<br /><br /> Para cambiar la orientación, haga clic en el **Girar a la izquierda** botón o **Girar a la derecha** botón.|  

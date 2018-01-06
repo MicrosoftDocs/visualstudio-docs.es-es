@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eeb8c262d6e1abc88e40f027d921ae2d4ae12cf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c6fc6558ded5ab68f54170c07e2482ab2357475b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Las solicitudes de todos los programas que se está depurando este motor de depuración (Alemania) para detener la ejecución de la próxima vez que uno de sus subprocesos intenta ejecutar.  

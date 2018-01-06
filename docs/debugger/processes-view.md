@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2ca6d0d7f875e376af37fcdcfa5d4156b8f4038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processes-view"></a>Vista Procesos
 La vista procesos muestra un árbol de todos los procesos activos en el sistema. Se muestran el nombre de identificador y el módulo de proceso. Use la vista procesos si desea examinar un proceso del sistema, que normalmente se corresponde con un programa en ejecución. Los procesos se identifican por nombres de módulos o se designan "procesos del sistema".  

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 904210dc1547c587c62a44a8e788b3f07179a71b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0ea63abb64e0c770cb456cc79e78a7e5d08b5f06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
 Contiene la información necesaria para implementar un punto de interrupción, incluidos los GUID de proveedor, restricción y punto de seguimiento.  

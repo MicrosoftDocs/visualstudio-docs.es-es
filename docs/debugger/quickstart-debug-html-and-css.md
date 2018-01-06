@@ -23,11 +23,12 @@ caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1650326711d8d788a7e232df97044c8e896e3b4
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Depurar HTML y CSS en aplicaciones de Windows 8.1 y UWP
 ![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  

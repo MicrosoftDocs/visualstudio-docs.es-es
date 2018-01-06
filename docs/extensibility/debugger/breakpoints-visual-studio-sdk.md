@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8acb93b9e079dbfc3abf5083734b9b4ec392e1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be8f0b36ebe57041e9d36b8f606bd5bddd0601bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Puntos de interrupción (SDK de Visual Studio)
 Hay tres tipos de puntos de interrupción: pendiente, límite y error.  

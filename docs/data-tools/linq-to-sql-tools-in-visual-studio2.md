@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL herramientas en Visual Studio
 LINQ to SQL era la primera tecnología de asignación objeto-relacional publicada por Microsoft. Funciona bien en escenarios básicos y continúa siendo compatible con Visual Studio, pero es ya no está en desarrollo activo. Usar LINQ to SQL al mantener una aplicación heredada que ya está utilizando, o en aplicaciones sencillas que use SQL Server y no requieren la asignación de varias tabla. En general, aplicaciones nuevas deben usar Entity Framework cuando se requiere un nivel de asignador relacional de objetos.  

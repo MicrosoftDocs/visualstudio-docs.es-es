@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538cd0cd023b8861d6adb88c19b42aac59c9f4dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messages-view"></a>Vista Mensajes
 Cada ventana tiene una secuencia de mensaje asociado. Esta secuencia de mensajes muestra en una ventana de vista de mensajes. Se muestran el identificador de ventana, el código de mensaje y el mensaje. Puede crear una vista de mensajes para un subproceso o proceso también. Esto permite ver los mensajes enviados a todas las ventanas que pertenecen a un proceso o subproceso concreto, que es especialmente útil para capturar mensajes de inicialización de la ventana.  

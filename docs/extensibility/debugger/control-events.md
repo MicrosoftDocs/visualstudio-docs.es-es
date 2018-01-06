@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3220e3c6ef1a20b8a434fbfab13b419beb331032
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15f9eff023fa875499881eb05a0795b0eaa83842
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-events"></a>Eventos de control
 Debe enviar eventos durante la ejecución del programa controlada. Todos los eventos se envían con el [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) de interfaz y tener atributos que requieren que implemente la [IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) método.  

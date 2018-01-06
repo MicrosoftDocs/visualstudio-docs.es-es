@@ -24,11 +24,12 @@ caps.latest.revision: "30"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ddcdc96095775f5957fbc9db872b51396798ba52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0caff13f84208152b3fa2ff4e56a7a2c7f0b6dd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;implementación&gt; elemento (implementación de ClickOnce)
 Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.  
@@ -64,7 +65,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`install`|Obligatorio. Especifica si esta aplicación define una presencia en las ventanas **iniciar** menú y en el Panel de Control **agregar o quitar programas** aplicación. Los valores válidos son `true` y `false`. Si `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] siempre se ejecutará la versión más reciente de esta aplicación desde la red y no reconocerá el `subscription` elemento.|  
+|`install`|Requerido. Especifica si esta aplicación define una presencia en las ventanas **iniciar** menú y en el Panel de Control **agregar o quitar programas** aplicación. Los valores válidos son `true` y `false`. Si `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] siempre se ejecutará la versión más reciente de esta aplicación desde la red y no reconocerá el `subscription` elemento.|  
 |`minimumRequiredVersion`|Opcional. Especifica la versión mínima de esta aplicación que se puede ejecutar en el cliente. Si el número de versión de la aplicación es menor que el número de versión proporcionado en el manifiesto de implementación, no se ejecutará la aplicación. Números de versión deben especificarse en el formato `N.N.N.N`, donde `N` es un entero sin signo. Si el `install` atributo es `false`, `minimumRequiredVersion` no debe establecerse.|  
 |`mapFileExtensions`|Opcional. Tiene como valor predeterminado `false`. Si `true`, todos los archivos de la implementación deben tener una extensión. deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]se eliminan esta extensión de estos archivos en cuanto descarga desde el servidor Web. Si se publica la aplicación utilizando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], esta extensión se agregará automáticamente a todos los archivos. Este parámetro permite que todos los archivos dentro de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación se descarguen desde un servidor Web que bloquea la transmisión de archivos que terminan en "unsafe" extensiones como .exe.|  
 |`disallowUrlActivation`|Opcional. Tiene como valor predeterminado `false`. Si `true`, impide que una aplicación instalada que se inicia haciendo clic en la dirección URL o escriba la dirección URL en Internet Explorer. Si el `install` atributo no está presente, se omite este atributo.|  
@@ -90,8 +91,8 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`maximumAge`|Obligatorio. Identifica la antigüedad que debería estar la actualización actual antes de que la aplicación realice una comprobación de actualizaciones. La unidad de tiempo viene determinada por la `unit` atributo.|  
-|`unit`|Obligatorio. Identifica la unidad de tiempo para `maximumAge`. Unidades válidas son `hours`, `days`, y `weeks`.|  
+|`maximumAge`|Requerido. Identifica la antigüedad que debería estar la actualización actual antes de que la aplicación realice una comprobación de actualizaciones. La unidad de tiempo viene determinada por la `unit` atributo.|  
+|`unit`|Requerido. Identifica la unidad de tiempo para `maximumAge`. Unidades válidas son `hours`, `days`, y `weeks`.|  
   
 ## <a name="deploymentprovider"></a>deploymentProvider  
  Para la versión 2.0 de .NET Framework, este elemento es necesario si el manifiesto de implementación contiene un `subscription` sección. Para .NET Framework 3.5 y versiones posteriores, este elemento es opcional y predeterminado será el servidor y la ruta de acceso de archivo en el que se detectó el manifiesto de implementación.  
@@ -100,7 +101,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`codebase`|Obligatorio. Identifica la ubicación, como un identificador uniforme de recursos (URI), del manifiesto de implementación que se utiliza para actualizar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este elemento también permite reenviar las ubicaciones de actualización para las instalaciones basadas en CD. Debe ser un URI válido.|  
+|`codebase`|Requerido. Identifica la ubicación, como un identificador uniforme de recursos (URI), del manifiesto de implementación que se utiliza para actualizar la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este elemento también permite reenviar las ubicaciones de actualización para las instalaciones basadas en CD. Debe ser un URI válido.|  
   
 ## <a name="remarks"></a>Comentarios  
  Puede configurar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación para buscar actualizaciones en el inicio, busque actualizaciones después del inicio, o no buscar actualizaciones. Para buscar actualizaciones en el inicio, asegúrese de que el `beforeApplicationStartup` elemento existe en el `update` elemento. Para buscar actualizaciones después del inicio, asegúrese de que el `expiration` elemento existe en el `update` elemento y que se proporcionan los intervalos de actualización.  

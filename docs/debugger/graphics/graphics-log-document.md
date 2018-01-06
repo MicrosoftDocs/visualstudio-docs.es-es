@@ -16,11 +16,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8429e7175ca6ab9a537952fb4a605f2281da69c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 30abe64fa54e7b63e1552ab2e4c5ce95ac11befc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-log-document"></a>Documento de registro de gráficos
 El documento de registro de gráficos es el registro de los eventos de gráficos que se producen mientras se ejecuta la aplicación en una sesión de diagnóstico de gráficos. Cuando el registro se completa, puede examinarlo en el Analizador de gráficos de Visual Studio para diagnosticar problemas de rendimiento y representación.  
@@ -72,7 +73,7 @@ El documento de registro de gráficos es el registro de los eventos de gráficos
 |**Mostrar memoria**|La cantidad de memoria instalada en el adaptador de gráficos.|  
 |**Nombre del controlador**|El nombre del controlador del adaptador de gráficos.|  
 |**Versión del controlador**|La versión del controlador del adaptador de gráficos.|  
-|**Nombre**|El nombre del adaptador de gráficos.|  
+|**Name**|El nombre del adaptador de gráficos.|  
   
  **Archivo de experimento**  
  Enumera información sobre el archivo de experimento asociado a la sesión de captura.  

@@ -34,11 +34,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dc53ebb4a61d6d4740effa7b17b4d0a26d46a68
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc63ca48f7c35c382b668d9b7c794a4905b9dac9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Cómo: establecer la depuración y liberar configuraciones en Visual Studio
 Los proyectos de Visual Studio tienen configuraciones independientes para el lanzamiento y la depuración del programa. Como se desprende de sus nombres, la versión de depuración se compila para depurar y la versión de lanzamiento para la distribución final.  
@@ -47,7 +48,7 @@ La configuración de depuración del programa se compila sin optimizar y con tod
   
 La configuración de lanzamiento del programa no contiene información de depuración simbólica y está totalmente optimizada. Depurar información puede generarse en archivos .pdb, [según las opciones del compilador](#BKMK_symbols_release) que se usan. Crear archivos PDB puede ser muy útil si luego necesita depurar la versión de lanzamiento.  
   
-Para obtener más información acerca de las configuraciones de compilación, consulte [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).  
+Para más información sobre las configuraciones de compilación, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).  
   
 Puede cambiar la configuración de compilación de la **generar** menú, desde la barra de herramientas, o en páginas de propiedades del proyecto. Las páginas de propiedades del proyecto son específicas de un lenguaje. El procedimiento que se indica a continuación muestra cómo cambiar la configuración de compilación desde el menú y la barra de herramientas. Para obtener más información sobre cómo cambiar la configuración de compilación de proyectos en distintos idiomas, consulte la sección Vea también.  
   
@@ -116,7 +117,7 @@ Para obtener información detallada sobre la configuración del proyecto para co
  [Especificar archivos de símbolos (.pdb) y archivos de código fuente en el depurador Visua Studio](../debugger/debugger-settings-and-preparation.md)  
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Configuraciones de depuración de la configuración del proyecto de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configuración de depuración de la configuración del proyecto para un de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Configuración de proyectos para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Configuración de proyectos para una configuración de depuración en Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)   
  [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)

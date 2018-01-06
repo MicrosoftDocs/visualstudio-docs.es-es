@@ -15,13 +15,14 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e8ec523147f439e2ffd45d635e9ed873bbb1e8ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e14010492b0fd086bef2bd79232a32beb54dbd84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="process-debug-manager"></a>Administrador de depuración de procesos
+# <a name="process-debug-manager"></a>Administrador de depuración del proceso
 El Administrador de depuración de procesos (PDM) es un componente de Visual Studio que administra los programas y procesos, de manera que estén disponibles para la sesión de depuración manager y los motores de depuración.  
   
  El PDM administra todos los procesos que se pueden depurar. Para ser depurado, un programa debe estar registrado con el PDM. Esto se realiza en el momento en que se inicia el programa, ya sea un puerto o un motor de depuración.  

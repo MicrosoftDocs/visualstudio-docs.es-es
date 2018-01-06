@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 367917032b836ce6a7d07cf3eba85db14464a957
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="core-interfaces"></a>Interfaces de núcleo
 Las interfaces siguientes son las interfaces principales para ampliar el depurador mediante el [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  

@@ -26,11 +26,12 @@ caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f448b7455bcbe13b7257a58a0eafbadd1165b197
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;archivo&gt; elemento (aplicación ClickOnce)
 Identifica todos los archivos nonassembly descargados y utilizados por la aplicación.  
@@ -91,8 +92,8 @@ Identifica todos los archivos nonassembly descargados y utilizados por la aplica
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Obligatorio. Identifica el nombre del archivo.|  
-|`size`|Obligatorio. Especifica el tamaño, en bytes, del archivo.|  
+|`name`|Requerido. Identifica el nombre del archivo.|  
+|`size`|Requerido. Especifica el tamaño, en bytes, del archivo.|  
 |`group`|Opcional, si la `optional` atributo no se especifica o se establece en `false`; es necesario si `optional` es `true`. El nombre del grupo al que pertenece este archivo. El nombre puede ser cualquier valor de cadena de Unicode elegido por el desarrollador y se utiliza para la descarga de archivos a petición con la <xref:System.Deployment.Application.ApplicationDeployment> clase.|  
 |`optional`|Opcional. Especifica si este archivo debe ser descarga cuando la aplicación es la primera ejecución, o si el archivo debe residir en el servidor hasta que la aplicación lo solicite a petición. Si `false` o sin definir, el archivo se descarga cuando la aplicación se ejecuta o se instala en primer lugar. Si `true`, un `group` debe especificarse para que el manifiesto de aplicación sea válido. `optional`no puede ser true si `writeableType` se especifica con el valor `applicationData`.|  
 |`writeableType`|Opcional. Especifica que este archivo es un archivo de datos. Actualmente, el único valor válido es `applicationData`.|  
@@ -102,9 +103,9 @@ Identifica todos los archivos nonassembly descargados y utilizados por la aplica
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`tlbid`|Obligatorio. El GUID asignado a la biblioteca de tipos.|  
-|`version`|Obligatorio. El número de versión de la biblioteca de tipos.|  
-|`helpdir`|Obligatorio. El directorio que contiene los archivos de ayuda para el componente. Puede ser de longitud cero.|  
+|`tlbid`|Requerido. El GUID asignado a la biblioteca de tipos.|  
+|`version`|Requerido. El número de versión de la biblioteca de tipos.|  
+|`helpdir`|Requerido. El directorio que contiene los archivos de ayuda para el componente. Puede ser de longitud cero.|  
 |`resourceid`|Opcional. La representación de cadena hexadecimal del identificador de configuración regional (LCID). Es uno a cuatro dígitos hexadecimales sin un prefijo 0 x y sin ceros a la izquierda. El LCID puede tener un identificador de sublenguaje neutro.|  
 |`flags`|Opcional. La representación de cadena de los marcadores de biblioteca de tipos para esta biblioteca de tipos. En concreto, debe ser uno de "RESTRICTED", "CONTROL", "HIDDEN" y "HASDISKIMAGE".|  
   
@@ -113,7 +114,7 @@ Identifica todos los archivos nonassembly descargados y utilizados por la aplica
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`clsid`|Obligatorio. El identificador de clase del componente COM expresado como un GUID.|  
+|`clsid`|Requerido. El identificador de clase del componente COM expresado como un GUID.|  
 |`description`|Opcional. Nombre de la clase.|  
 |`threadingModel`|Opcional. El modelo de subprocesos utilizado por las clases COM en el proceso. Si esta propiedad es null, no se utiliza ningún modelo de subprocesamiento. El componente se crea en el subproceso principal del cliente y llamadas de otros subprocesos se calculan las referencias a este subproceso. En la lista siguiente se muestra los valores válidos:<br /><br /> `Apartment`, `Free`, `Both` y `Neutral`.|  
 |`tlbid`|Opcional. GUID de la biblioteca de tipos para este componente COM.|  
@@ -129,7 +130,7 @@ Identifica todos los archivos nonassembly descargados y utilizados por la aplica
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`iid`|Obligatorio. El identificador de interfaz (IID) que ofrece este proxy. El IID debe tener llaves.|  
+|`iid`|Requerido. El identificador de interfaz (IID) que ofrece este proxy. El IID debe tener llaves.|  
 |`baseInterface`|Opcional. El IID de la interfaz desde la que hace referencia la interfaz `iid` se deriva.|  
 |`numMethods`|Opcional. El número de métodos implementados por la interfaz.|  
 |`name`|Opcional. El nombre de la interfaz tal y como aparecerá en el código.|  
@@ -141,7 +142,7 @@ Identifica todos los archivos nonassembly descargados y utilizados por la aplica
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`iid`|Obligatorio. El identificador de interfaz (IID) que ofrece este proxy. El IID debe tener llaves.|  
+|`iid`|Requerido. El identificador de interfaz (IID) que ofrece este proxy. El IID debe tener llaves.|  
 |`baseInterface`|Opcional. El IID de la interfaz desde la que hace referencia la interfaz `iid` se deriva.|  
 |`numMethods`|Opcional. El número de métodos implementados por la interfaz.|  
 |`Name`|Opcional. El nombre de la interfaz tal y como aparecerá en el código.|  

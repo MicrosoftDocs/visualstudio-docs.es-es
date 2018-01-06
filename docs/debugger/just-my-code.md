@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Especifique si desea depurar el código de usuario solo utiliza solo mi código en Visual Studio
 Puede configurar Visual Studio para automáticamente recorrer el sistema, framework y otras llamadas no son de usuario y se contraen las llamadas en la ventana Pila de llamadas. La característica que habilita o deshabilita este comportamiento se denomina *solo mi código*. Este tema describe cómo se utiliza solo mi código en proyectos de C#, Visual Basic, C++ y JavaScript.
@@ -122,9 +123,9 @@ Para la mayoría de los lenguajes de programación, solo mi código está habili
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |Función|Requerido. Especifica una o más funciones como funciones que no son de usuario.|  
-|`Name`|Obligatorio. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
+|`Name`|Requerido. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
 |`Module`|Opcional. Expresión regular con formato ECMA-262 que especifica la ruta de acceso completa al módulo que contiene la función. La búsqueda no distingue entre mayúsculas y minúsculas.|  
-|`Action`|Obligatorio. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> -   `NoStepInto`-indica al depurador que paso a paso la función coincidente.<br />-   `StepInto`-indica al depurador paso a paso las funciones coincidentes, invalidando cualquier otro `NoStepInto` para las funciones coincidentes.|  
+|`Action`|Requerido. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> -   `NoStepInto`-indica al depurador que paso a paso la función coincidente.<br />-   `StepInto`-indica al depurador paso a paso las funciones coincidentes, invalidando cualquier otro `NoStepInto` para las funciones coincidentes.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a>Personalizar el comportamiento de la pila de llamadas  
  Se puede especificar que se trate como código que no es de usuario módulos, archivos de código fuente y funciones en las pilas de llamadas; para ello, hay que especificarlos en archivos `*.natjmc`.  
@@ -159,20 +160,20 @@ Para la mayoría de los lenguajes de programación, solo mi código está habili
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín de Windows `?` (cero o un carácter) y `*` (cero o más caracteres). Por ejemplo,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al depurador que trate como código externo todos los módulos de `\3rdParty\UtilLibs` en cualquier unidad.|  
+|`Name`|Requerido. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín de Windows `?` (cero o un carácter) y `*` (cero o más caracteres). Por ejemplo,<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> indica al depurador que trate como código externo todos los módulos de `\3rdParty\UtilLibs` en cualquier unidad.|  
 |`Company`|Opcional. Nombre de la compañía que publica el módulo que está incrustado en el archivo ejecutable. Puede utilizar este atributo para eliminar la ambigüedad de los módulos.|  
   
  **Atributos del elemento File**  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
+|`Name`|Requerido. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
   
  **Atributos del elemento Function**  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Nombre completo de la función que se va a tratar como código externo.|  
+|`Name`|Requerido. Nombre completo de la función que se va a tratar como código externo.|  
 |`Module`|Opcional. Nombre o ruta de acceso completa al módulo que contiene la función. Puede utilizar este atributo para eliminar la ambigüedad de funciones que tienen el mismo nombre.|  
 |`ExceptionImplementation`|Cuando se establece en `true`, la pila de llamadas muestra la función que produjo la excepción en lugar de esta función.|  
   

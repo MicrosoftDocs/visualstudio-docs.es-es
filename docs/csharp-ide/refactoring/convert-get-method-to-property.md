@@ -13,11 +13,12 @@ ms.author: kaseyu
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.convertmethodtoproperty
 dev_langs: csharp
-ms.openlocfilehash: d034b8835caf0a5e56a9ef32599cf9197f1e3e16
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: 71ff3db81be256bdb82413d04b2f939b706c6586
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method"></a>Convertir el método Get para la propiedad / convertir la propiedad en Get (método)
 ## <a name="convert-get-method-to-property"></a>Convertir el método Get para la propiedad

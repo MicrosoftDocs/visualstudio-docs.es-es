@@ -13,18 +13,19 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ce3e623a2d1787aa67f8a6e4dcfcf9530e8766c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6ec084c0d985ce5cc3cb0a886bd1fdcaf6cc3e54
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-descriptions"></a>Descripciones de eventos
 Cada tipo de evento tiene un propósito específico.  
   
 ## <a name="events-and-the-reasons-for-their-use"></a>Eventos y los motivos para su uso  
   
-|Evento|Descripción|  
+|evento|Descripción|  
 |-----------|-----------------|  
 |Activar eventos de documento|Se producen cuando el motor de depuración (Alemania) desea el IDE para abrir o poner un documento al primer plano.|  
 |Punto de interrupción enlazado o eventos de error de punto de interrupción|Enviar cuando se enlaza a un punto de interrupción o cuando no se puede enlazar a un punto de interrupción y se devuelve un error.|  

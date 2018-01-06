@@ -13,11 +13,12 @@ caps.latest.revision: "62"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68a3afc0a83d4dba7b7cd46b2b1eba23695a2848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d0888a584e31c26c9f64cdcff70cc2f5dc8a1453
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-options-page"></a>Crear una página de opciones
 Este tutorial crea una página de herramientas/opciones simple que usa una cuadrícula de propiedades para examinar y establecer propiedades.  

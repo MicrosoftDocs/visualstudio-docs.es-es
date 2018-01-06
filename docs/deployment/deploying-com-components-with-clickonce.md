@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d3a8ae32afec789595ecd126eeaee0c5ea05a9e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 Implementación de componentes COM heredados ha sido tradicionalmente una tarea difícil. Los componentes tienen que ser registrados globalmente y, por tanto, pueden provocar efectos secundarios no deseados entre aplicaciones superpuestas. Normalmente esta situación no es un problema en las aplicaciones de .NET Framework porque los componentes se aíslan completamente a una aplicación o son compatibles en paralelo. Visual Studio permite implementar componentes COM aislados en Windows XP o un sistema operativo posterior.  

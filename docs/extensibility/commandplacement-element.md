@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71a53dfcb7ae7cca5b360d2e115c34909ca32f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a6a5c8d9220b0cd2c0dddfee283d222f4efb9ab8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 El elemento CommandPlacement habilita botones, grupos y menús que se incluirá en más de un grupo o un menú. Mediante el elemento de CommandPlacement, es necesario volver a definir completamente estos elementos con el fin de modificar la apariencia de una interfaz de usuario.  
@@ -41,16 +42,16 @@ El elemento CommandPlacement habilita botones, grupos y menús que se incluirá 
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Obligatorio. El guid del conjunto de comandos, tal como se define en el [símbolos elemento](../extensibility/symbols-element.md).|  
-|id|Obligatorio. El identificador del menú, grupo o comando para colocarse, tal como se define en el `Symbols Element`.|  
-|priority|Obligatorio. Determina la posición del elemento visual de su elemento primario.|  
+|guid|Requerido. El guid del conjunto de comandos, tal como se define en el [símbolos elemento](../extensibility/symbols-element.md).|  
+|id|Requerido. El identificador del menú, grupo o comando para colocarse, tal como se define en el `Symbols Element`.|  
+|priority|Requerido. Determina la posición del elemento visual de su elemento primario.|  
 |Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|Elemento primario|Obligatorio. El menú o el grupo que hospeda el elemento que se va a colocar.|  
+|Elemento primario|Requerido. El menú o el grupo que hospeda el elemento que se va a colocar.|  
   
 ### <a name="parent-elements"></a>Elementos primarios  
   

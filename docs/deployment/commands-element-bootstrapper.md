@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ac8580a1b930d4ad18db9eebb275e4eb67d80c62
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Comandos&gt; elemento (arranque)
 El `Commands` elemento implementa las pruebas descritas por los elementos subyacentes el `InstallChecks` elemento y declara el paquete en el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] debe instalar el programa previo si se produce un error en la prueba.  
@@ -79,7 +80,7 @@ El `Commands` elemento implementa las pruebas descritas por los elementos subyac
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`PackageFile`|Obligatorio. El nombre del paquete que instale debe una o varias de las condiciones especificadas por `InstallConditions` devuelva false. El paquete debe definirse en el mismo archivo mediante un `PackageFile` elemento.|  
+|`PackageFile`|Requerido. El nombre del paquete que instale debe una o varias de las condiciones especificadas por `InstallConditions` devuelva false. El paquete debe definirse en el mismo archivo mediante un `PackageFile` elemento.|  
 |`Arguments`|Opcional. Un conjunto de argumentos de línea de comandos que se pasan en el archivo de paquete.|  
 |`EstimatedInstallSeconds`|Opcional. El tiempo estimado, en segundos, se tardará en instalar el paquete. Este valor determina el tamaño de la barra de progreso que el programa previo muestra al usuario. El valor predeterminado es 0, en cuyo caso ningún tiempo de estimación se especifica.|  
 |`EstimatedDiskBytes`|Opcional. La cantidad estimada de espacio en disco, en bytes, que ocupará el paquete después de la instalación ha finalizado. Este valor se utiliza en los requisitos de espacio en disco duro que el programa previo muestra al usuario. El valor predeterminado es 0, en cuyo caso el programa previo no muestra ningún requisito de espacio de disco duro.|  
@@ -96,9 +97,9 @@ El `Commands` elemento implementa las pruebas descritas por los elementos subyac
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Property`|Obligatorio. El nombre de la propiedad que se va a probar. La propiedad debe haber definido previamente por un elemento secundario de la `InstallChecks` elemento. Para obtener más información, consulte [ \<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Obligatorio. El tipo de comparación que se va a realizar. En la lista siguiente se muestra los valores válidos:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|Obligatorio. El valor que se compara con la propiedad.|  
+|`Property`|Requerido. El nombre de la propiedad que se va a probar. La propiedad debe haber definido previamente por un elemento secundario de la `InstallChecks` elemento. Para obtener más información, consulte [ \<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Requerido. El tipo de comparación que se va a realizar. En la lista siguiente se muestra los valores válidos:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|Requerido. El valor que se compara con la propiedad.|  
 |`Schedule`|Opcional. El nombre de un `Schedule` etiqueta que define cuándo se debería evaluar esta regla.|  
   
 ## <a name="failif"></a>FailIf  
@@ -108,9 +109,9 @@ El `Commands` elemento implementa las pruebas descritas por los elementos subyac
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Property`|Obligatorio. El nombre de la propiedad que se va a probar. La propiedad debe haber definido previamente por un elemento secundario de la `InstallChecks` elemento. Para obtener más información, consulte [ \<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md).|  
-|`Compare`|Obligatorio. El tipo de comparación que se va a realizar. En la lista siguiente se muestra los valores válidos:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
-|`Value`|Obligatorio. El valor que se compara con la propiedad.|  
+|`Property`|Requerido. El nombre de la propiedad que se va a probar. La propiedad debe haber definido previamente por un elemento secundario de la `InstallChecks` elemento. Para obtener más información, consulte [ \<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md).|  
+|`Compare`|Requerido. El tipo de comparación que se va a realizar. En la lista siguiente se muestra los valores válidos:<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|  
+|`Value`|Requerido. El valor que se compara con la propiedad.|  
 |`String`|Opcional. El texto para mostrar al usuario en caso de error.|  
 |`Schedule`|Opcional. El nombre de un `Schedule` etiqueta que define cuándo se debería evaluar esta regla.|  
   
@@ -122,8 +123,8 @@ El `Commands` elemento implementa las pruebas descritas por los elementos subyac
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Value`|Obligatorio. El valor del código de salida a la que se `ExitCode` elemento se aplica.|  
-|`Result`|Obligatorio. Cómo la instalación debe reaccionar a este código de salida. En la lista siguiente se muestra los valores válidos:<br /><br /> `Success`. Indica que el paquete que se ha instalado correctamente.<br /><br /> `SuccessReboot`. Marca el paquete como correctamente instalado e indica al sistema que reinicie.<br /><br /> `Fail`. Marca el paquete como erróneo.<br /><br /> `FailReboot`. Marca el paquete como erróneo e indica al sistema que reinicie.|  
+|`Value`|Requerido. El valor del código de salida a la que se `ExitCode` elemento se aplica.|  
+|`Result`|Requerido. Cómo la instalación debe reaccionar a este código de salida. En la lista siguiente se muestra los valores válidos:<br /><br /> `Success`. Indica que el paquete que se ha instalado correctamente.<br /><br /> `SuccessReboot`. Marca el paquete como correctamente instalado e indica al sistema que reinicie.<br /><br /> `Fail`. Marca el paquete como erróneo.<br /><br /> `FailReboot`. Marca el paquete como erróneo e indica al sistema que reinicie.|  
 |`String`|Opcional. El valor para mostrar al usuario en respuesta a este código de salida.|  
 |`FormatMessageFromSystem`|Opcional. Determina si se debe usar el mensaje de error proporcionado por el sistema correspondiente al código de salida, o usar el valor proporcionado en `String`. Los valores válidos son `true`, lo que significa utilizar el error proporcionado por el sistema, y `false`, lo que significa utilizar la cadena proporcionada por `String`. De manera predeterminada, es `false`. Si esta propiedad es `false`, pero `String` no está establecido, se utilizará el error proporcionado por el sistema.|  
   

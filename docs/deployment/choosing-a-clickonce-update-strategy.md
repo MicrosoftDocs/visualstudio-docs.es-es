@@ -20,11 +20,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 6c7d8b1562b821129b3b9f0e6881f7a47a3a95da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a056b8d7d7581b63941fb952def0892c25382b44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Elegir una estrategia de actualización de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proporcionar actualizaciones automáticas de aplicaciones. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación lee periódicamente su archivo de manifiesto de implementación para ver si hay disponibles actualizaciones a la aplicación. En caso afirmativo, la nueva versión de la aplicación se descarga y se ejecuta. Para una mayor eficiencia, se descargan sólo los archivos que han cambiado.  

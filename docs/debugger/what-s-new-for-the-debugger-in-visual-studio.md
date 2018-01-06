@@ -22,32 +22,33 @@ caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a08c56ae60822e6d4183e5789c68cbe383b4dd5
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>' S New para que el depurador en[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 El depurador incluye estas nuevas características:
 
-- Nuevo en 15,5, el **depurador instantánea** toma una instantánea de las aplicaciones de producción cuando se ejecuta código que le interesa. Para indicar al depurador que tome una instantánea, establezca snappoints y logpoints en el código. El depurador le permite ver exactamente qué salió mal, sin afectar al tráfico de la aplicación de producción. El depurador de instantánea puede ayudarle a reducir considerablemente el tiempo necesario para resolver los problemas que se producen en entornos de producción.
+- Nuevo en 15,5, el **depurador instantánea** toma una instantánea de las aplicaciones de producción cuando se ejecuta código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
-    Recopilación de instantáneas está disponible para las siguientes aplicaciones web que se ejecuta en el servicio de aplicación de Azure:
+    La colección de instantáneas está disponible para las siguientes aplicaciones web que se ejecutan en Azure App Service:
 
-    * Aplicaciones de ASP.NET que se ejecutan en .NET Framework 4.6.1 o una versión posterior.
-    * Aplicaciones de ASP.NET Core que se ejecutan en .NET Core 2.0 o posterior en Windows.
+    * Aplicaciones ASP.NET que se ejecutan en .NET Framework 4.6.1 o versiones posteriores.
+    * Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.0 o posteriores en Windows.
 
     Para obtener más información, consulte [depurar aplicaciones ASP.NET en directo con el depurador de instantánea](../debugger/debug-live-azure-applications.md).
 
-- Nuevo en 15,5 en Visual Studio Enterprise, **IntelliTrace paso-back** automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador de evento de paso. Las instantáneas registradas permiten volver a los puntos de interrupción anteriores o pasos y ver el estado de la aplicación tal como estaba en el pasado. IntelliTrace paso atrás, ahorrarás tiempo cuando desea ver el estado anterior de la aplicación pero no desea reiniciar la depuración o volver a crear el estado de la aplicación deseada.
+- Nuevo en 15,5 en Visual Studio Enterprise, **IntelliTrace paso-back** automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador de evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
-    Puede navegar y ver las instantáneas mediante la **paso atrás** y **paso adelante** botones en la barra de herramientas de depuración. Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **herramientas de diagnóstico** ventana.
+    Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de depuración. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**.
 
     ![Paso hacia atrás y hacia delante botones](../debugger/media/intellitrace-step-back-icons-description.png  "botones paso hacia atrás y hacia delante")
 
-    Para obtener más información, consulte el [ver instantáneas mediante IntelliTrace paso-back](../debugger/how-to-use-intellitrace-step-back.md) página.
+    Para más información, consulte la página [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
 - El **aplicación auxiliar de excepciones** reemplaza el Asistente de excepciones y aparece en un cuadro de diálogo no modal donde se produjo el error. El **aplicación auxiliar de excepciones** proporciona un acceso más rápido a las excepciones internas, el análisis adicional por el depurador (si está disponible) y un acceso inmediato a la **configuración de excepciones** para la excepción. También se puede arrastrar la aplicación auxiliar de excepciones a una vista flotante si está bloqueando algo que necesita ver.
 

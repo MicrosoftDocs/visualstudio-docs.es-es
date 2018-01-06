@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4f1a906f545dcdbaefca7f5a38824a1f3259c97
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6fe68f25748df171ec6695554903b37854e7d8c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandtable-element"></a>Elemento CommandTable
 CommandTable es el elemento raíz del archivo vsct. Este es el archivo que define el diseño real y el tipo de los comandos que un VSPackage proporciona al IDE. Comandos pueden incluir elementos de menú, menús, barras de herramientas y cuadros combinados. Para obtener más información, consulta [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
@@ -48,7 +49,7 @@ CommandTable es el elemento raíz del archivo vsct. Este es el archivo que defin
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|xmlns|Obligatorio. Espacios de nombres XML:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns: xs = "http://www.w3.org/2001/XMLSchema"|  
+|xmlns|Requerido. Espacios de nombres XML:<br /><br /> xmlns = "http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns: xs = "http://www.w3.org/2001/XMLSchema"|  
 |lenguaje|Opcional. El atributo language puede utilizarse para especificar el idioma predeterminado de todos los \<cadenas > elementos en la tabla de comandos.  Si el idioma no se especifica, se usará el idioma del proceso actual:<br /><br /> idioma = "en-us"|  
   
 ### <a name="child-elements"></a>Elementos secundarios  

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d684fee89bc8840a0b8799e140159c2046caf71d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 29ac9bf5ecfc4775107ba428faacf315ba4dc789
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mparent-field"></a>m_Parent campo
 El campo de respaldo para la <xref:System.Threading.Tasks.Task?displayProperty=fullName> `Parent` propiedad.  

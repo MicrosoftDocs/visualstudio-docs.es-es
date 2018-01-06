@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016aac6f0e23b626b9023b978efa27e76924c6c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-settings-category"></a>Crear una categoría de configuración
 En este tutorial creará una categoría de configuración de Visual Studio y usarlo para guardar los valores para y restaurar los valores de un archivo de configuración. Una categoría de configuración es un grupo de propiedades relacionadas que aparecen como "punto de configuración personalizada;" es decir, como una casilla de verificación en la **importar y configuraciones de exportaciones** asistente. (Puede encontrar en el **herramientas** menú.) Valores de configuración se guarda o se restaura como una categoría, y opciones de configuración individuales no se muestran en el asistente. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -38,7 +39,7 @@ En este tutorial creará una categoría de configuración de Visual Studio y usa
   
 2.  Abra el archivo VSPackage.resx y agregar estas tres cadenas de recursos:  
   
-    |Name|Valor|  
+    |nombre|Valor|  
     |----------|-----------|  
     |106|Mi categoría|  
     |107|Mi configuración|  

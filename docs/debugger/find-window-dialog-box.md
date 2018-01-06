@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7f2824cc86f919a2124d82fd5b23db571ac780b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fac3e7bfe487c3c8a8b99cdf9495d41e630a685
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-window-dialog-box"></a>Cuadro de diálogo Buscar ventana
 Utilice este cuadro de diálogo para seleccionar una ventana y mostrar sus propiedades o mensajes. Para mostrar este cuadro de diálogo, elija **Buscar ventana** desde el **Spy** menú.  

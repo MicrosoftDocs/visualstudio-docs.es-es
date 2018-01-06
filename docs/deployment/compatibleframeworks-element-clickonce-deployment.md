@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: bb8c31d37bd37f4e2db8415ef1815caec0ec185a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 955e29add1990793711dd69fffbd2306ce61407d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; elemento (implementación de ClickOnce)
 Identifica las versiones de .NET Framework en las que se puede instalar y ejecutar esta aplicación.  
@@ -56,9 +57,9 @@ Identifica las versiones de .NET Framework en las que se puede instalar y ejecut
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`targetVersion`|Obligatorio. Especifica el número de versión de .NET Framework de destino.|  
-|`profile`|Obligatorio. Especifica el perfil de la versión de .NET Framework de destino.|  
-|`supportedRuntime`|Obligatorio. Especifica el número de versión del tiempo de ejecución asociado a la versión de .NET Framework de destino.|  
+|`targetVersion`|Requerido. Especifica el número de versión de .NET Framework de destino.|  
+|`profile`|Requerido. Especifica el perfil de la versión de .NET Framework de destino.|  
+|`supportedRuntime`|Requerido. Especifica el número de versión del tiempo de ejecución asociado a la versión de .NET Framework de destino.|  
   
 ## <a name="remarks"></a>Comentarios  
   

@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eb280684f0c06391bc6c0596093c01f260f685d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a649b7375575b43be662991b4a1a4cc4930eb9a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punto de entrada&gt; elemento (aplicación ClickOnce)
 Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecuta en un equipo cliente.  
@@ -65,7 +66,7 @@ Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick]
  `entryPoint`tiene los siguientes elementos.  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Obligatorio. El rol de `assemblyIdentity` y sus atributos se definen en [ \<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md).  
+ Requerido. El rol de `assemblyIdentity` y sus atributos se definen en [ \<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md).  
   
  El `processorArchitecture` atributo de este elemento y el `processorArchitecture` atributo definido en el `assemblyIdentity` en otra parte en la aplicación manifiesto debe coincidir.  
   
@@ -74,8 +75,8 @@ Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick]
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`file`|Obligatorio. Una referencia local al ensamblado de inicio para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este valor no puede contener la barra diagonal (/) o barra diagonal inversa (\\) separadores de ruta de acceso.|  
-|`parameters`|Obligatorio. Describe la acción que se realizará con el punto de entrada. El único valor válido es `run`; si se proporciona una cadena en blanco, `run` se da por hecho.|  
+|`file`|Requerido. Una referencia local al ensamblado de inicio para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este valor no puede contener la barra diagonal (/) o barra diagonal inversa (\\) separadores de ruta de acceso.|  
+|`parameters`|Requerido. Describe la acción que se realizará con el punto de entrada. El único valor válido es `run`; si se proporciona una cadena en blanco, `run` se da por hecho.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
  Opcional. Si se incluye, especifica que esta implementación contiene un componente que se va a implementar dentro de un host personalizado y no es una aplicación independiente.  

@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ead1571856fa04e10103fbf2274dc0e22295154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f6e3110ca4988fcc12e547f3bcd82c1026f3aeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referencia de API (depuración de Visual Studio)
 La sección de referencia incluye información general y conceptual de la API, una guía que muestra la sintaxis y el uso para todos los elementos de la API y una gran variedad de ejemplos de código. Todas las referencias se muestran ordenados alfabéticamente por categoría.  
   
  La siguiente tabla muestra common `HRESULT` valores devueltos por métodos.  
   
-|Name|Descripción|Valor|  
+|nombre|Descripción|Valor|  
 |----------|-----------------|-----------|  
 |S_OK|Correcto.|0x00000000|  
 |E_UNEXPECTED|Error inesperado.|0x8000FFFF|  
