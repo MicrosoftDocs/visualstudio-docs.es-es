@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d892b48f5cd22e1175f6cb046f627efb398e044
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: be74604bfabde34f2046af98ac976abd37068022
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="imanagedaddin-interface"></a>interfaz IManagedAddin
   Implemente la interfaz IManagedAddin para crear un componente que cargue administra complementos VSTO. Esta interfaz se agregó en 2007 Microsoft Office system.  
@@ -46,7 +47,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Métodos  
  En la tabla siguiente se enumera los métodos que se definen mediante la interfaz IManagedAddin.  
   
-|Name|Descripción|  
+|nombre|Descripción|  
 |----------|-----------------|  
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Se llama a este método cuando una aplicación de Microsoft Office carga un complemento de VSTO administrado.|  
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Se llama a este método justo antes de que una aplicación de Microsoft Office descargue un complemento de VSTO administrado.|  

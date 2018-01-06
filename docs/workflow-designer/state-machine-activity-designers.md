@@ -10,11 +10,12 @@ ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: "5"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: ad07ac5eba9e8579ae08f5ba1b242f3bc5483a5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0d4c8dbac90e3d1e3ec10314debf0a288ad48053
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="state-machine-activity-designers"></a>Diseñadores de actividad de equipo de estado
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] incluye varios diseñadores de actividades que puede usar cuando cree flujos de trabajo. Esta sección contiene los diseñadores de actividad proporcionados por el sistema que se usan para crear y administrar flujos de trabajo de máquina de estados. Los siguientes temas describen estos diseñadores y ofrecen orientación sobre cómo usarlas.  

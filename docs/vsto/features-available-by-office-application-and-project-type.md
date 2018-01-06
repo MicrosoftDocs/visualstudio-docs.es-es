@@ -24,11 +24,12 @@ caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13da2a068348478be8511e1c5624059b0d063bac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6a0f2e0b87e791618477ff6e11c9e180793d5495
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Características disponibles por aplicación y tipo de proyecto de Office
   Visual Studio tiene varios tipos de plantillas de proyecto que admiten diferentes escenarios empresariales para las aplicaciones de Microsoft Office, incluyendo los siguientes tipos:  
@@ -47,8 +48,8 @@ ms.lasthandoff: 10/31/2017
   
 |Tipos de proyecto|Aplicación de Microsoft Office|  
 |-------------------|----------------------------------|  
-|Personalizaciones de nivel de documento|Excel<br /><br /> Word|  
-|Complementos de VSTO|Excel<br /><br /> InfoPath (solo InfoPath 2013 e InfoPath 2010)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Visio<br /><br /> Word<br /><br /> Excel|  
+|Personalizaciones de nivel de documento|Excel<br /><br /> Palabra|  
+|Complementos de VSTO|Excel<br /><br /> InfoPath (solo InfoPath 2013 e InfoPath 2010)<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Visio<br /><br /> Palabra<br /><br /> Excel|  
   
 ## <a name="features-available-in-different-project-types"></a>Características disponibles en diferentes tipos de proyectos  
  En la siguiente tabla se muestra qué tipos de proyecto proporcionan cada característica.  

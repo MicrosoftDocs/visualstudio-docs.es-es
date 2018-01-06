@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74cc162e0323656bea9d48c8458eaf77519fdc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c190c4ace56b2be9c63c9f11570354cddc6c8635
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Cómo: Abrir soluciones de Office sin ejecutar código
   Una solución de Microsoft Office creada con las extensiones de código administrado se ejecuta aunque la configuración de seguridad en la aplicación de Office del usuario final se establece en alta. Esto es porque la seguridad del código de ensamblado .NET está administrado por Microsoft .NET Framework, no por Microsoft Office.  

@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6b8b95953257cefd7cf229cd094791793dfff1b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b0f2651fc4bfedab3c7308c7fa7e8cef604666f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Cómo: Agregar encabezados y pies de página a documentos mediante programación
   Puede agregar texto a los encabezados y pies de página del documento mediante las propiedades <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> y <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> de la <xref:Microsoft.Office.Interop.Word.Section>. Cada sección de un documento contiene tres encabezados y pies de página:  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="document-level-customizations"></a>Personalizaciones de nivel de documento  
+## <a name="document-level-customizations"></a>personalizaciones de nivel de documento  
  Para usar los siguientes ejemplos de código, ejecútelos desde la clase `ThisDocument` del proyecto.  
   
 #### <a name="to-add-text-to-footers-in-the-document"></a>Para agregar texto a los pies de página en el documento  

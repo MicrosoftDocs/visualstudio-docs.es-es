@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ee2c597c1a3b6a7c068c8206a87195779877461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 44799a88e0c08999452e5425e3e7d175feb8ec56
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Cómo: Obtener acceso a los contactos de Outlook mediante programación
   Este ejemplo busca todos los contactos cuyos apellidos contengan una cadena de búsqueda especificado.  

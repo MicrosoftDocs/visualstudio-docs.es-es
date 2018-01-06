@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8d6e530a82c1edfa221203b6c99f06151fe901af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3873e444f3d9c68b632d52ab98bee07bf14af679
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
 El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. Muy parecida a la **importa** o **con** habilitar palabras clave en Visual Basic .NET y C#, especificar espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.  

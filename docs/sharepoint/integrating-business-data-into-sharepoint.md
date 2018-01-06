@@ -26,11 +26,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ece3128c2d6850a1d1dd22d0328a4ee2c46da2b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4cacdbb314130fa45b5aa3820abbbffbcbc6c0bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integrating-business-data-into-sharepoint"></a>Integrar Datos profesionales en SharePoint
   Puede integrar datos profesionales en SharePoint. Datos profesionales pueden proceder de aplicaciones de servidor back-end, como [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel y SAP, o un servicio Web. Los usuarios pueden ver, agregar, actualizar o eliminar datos empresariales mediante listas externas o elementos Web de datos profesionales en SharePoint.  Los usuarios también pueden tener acceso a estos datos sin conexión en una aplicación de Microsoft Office, como Microsoft Outlook. Para obtener más información, consulte [donde puede You Show External Data](http://go.microsoft.com/fwlink/?LinkId=169295).  

@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0effe0190d54d05d706127a8e5fada66af1c7ab6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Generar perfiles de rendimiento de aplicaciones de SharePoint
   Si las aplicaciones de SharePoint se ejecuta con lentitud o de forma ineficaz, puede usar las características de generación de perfiles de Visual Studio para identificar código problemático y otros elementos. Mediante el uso de la característica de prueba de carga, puede determinar cómo se realiza una aplicación de SharePoint en situaciones de estrés, por ejemplo, cuando varios usuarios tener acceso a la aplicación al mismo tiempo. Al ejecutar pruebas de rendimiento web, puede medir cómo se realiza la aplicación en la web. Mediante el uso de pruebas de IU codificadas, puede comprobar si toda la aplicación de SharePoint, incluidos su interfaz de usuario, funciona correctamente. Cuando utilices conjuntamente estas pruebas, puede ayudarle a identificar problemas de rendimiento antes de implementar la aplicación.  

@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-xml"></a>XML de la cinta de opciones
   El elemento Cinta (XML) le permite personalizar una cinta de opciones mediante XML. Use el elemento Cinta (XML) si desea personalizar la cinta de opciones de un modo que el elemento Ribbon (diseñador visual) no admite. Para obtener una comparación de lo que puede hacer con cada elemento, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|--------------------|-----------------|  
 |**onLoad**|**customUI**|Identifica un método al que se llama cuando la aplicación carga la cinta de opciones.|  
 |**idMso**|**pestaña**|Identifica una pestaña integrada que se muestra en la cinta de opciones.|  
-|**id**|**group**|Identifica el grupo.|  
+|**identificador**|**group**|Identifica el grupo.|  
 |**etiqueta**|**group**|Especifica el texto que aparece en el grupo.|  
   
  Los elementos y atributos predeterminados del archivo XML de la cinta de opciones son un subconjunto pequeño de los elementos y atributos disponibles. Para obtener una lista completa de los elementos y atributos disponibles, consulte el artículo técnico [Personalizar la interfaz de usuario de la cinta de opciones de Office (2007) para desarrolladores (parte 2 de 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
@@ -142,7 +143,7 @@ ms.lasthandoff: 10/31/2017
   
 |Método|Descripción|  
 |------------|-----------------|  
-|`GetCustomUI`|Devuelve el contenido del archivo XML de la cinta de opciones. Las aplicaciones de Microsoft Office llaman a este método para obtener una cadena XML que define la interfaz de usuario de la cinta personalizada. Este método implementa el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` debe implementarse solo para devolver el contenido del archivo XML de cinta de opciones; no debe usarse para inicializar el complemento de VSTO.   En particular, no debe intentar mostrar cuadros de diálogo u otras ventanas en la implementación `GetCustomUI` . De lo contrario, puede que el comportamiento de la cinta de opciones personalizada no sea correcto. Si tiene que ejecutar código que inicialice el complemento de VSTO, agréguelo al controlador de eventos `ThisAddIn_Startup` .|  
+|`GetCustomUI`|Devuelve el contenido del archivo XML de la cinta de opciones. Las aplicaciones de Microsoft Office llaman a este método para obtener una cadena XML que define la interfaz de usuario de la cinta personalizada. Este método implementa el método <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> . **Nota:** `GetCustomUI` debe implementarse solo para devolver el contenido del archivo XML de cinta de opciones; no debe usarse para inicializar el complemento de VSTO. En particular, no debe intentar mostrar cuadros de diálogo u otras ventanas en la implementación `GetCustomUI` . De lo contrario, puede que el comportamiento de la cinta de opciones personalizada no sea correcto. Si tiene que ejecutar código que inicialice el complemento de VSTO, agréguelo al controlador de eventos `ThisAddIn_Startup` .|  
 |`OnLoad`|Asigne el parámetro <xref:Microsoft.Office.Core.IRibbonControl> al campo `ribbon` . Las aplicaciones de Microsoft Office llaman a este método cuando cargan la cinta de opciones personalizada. Puede usar este campo para actualizar dinámicamente la cinta personalizada. Para obtener más información, consulte el artículo técnico [Personalizar la interfaz de usuario de la cinta de opciones de Office (2007) para desarrolladores (parte 1 de 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Lo llama el método `GetCustomUI` para obtener el contenido del archivo XML de la cinta de opciones.|  
   

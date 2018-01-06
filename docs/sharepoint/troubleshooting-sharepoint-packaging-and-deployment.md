@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 569f177f23ce8c1e32441263b219f51d2305ca86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3c147fd683db68bed3b66f0eac146b8c98272d77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Solucionar problemas de empaquetado e implementación de SharePoint
   En este tema se tratan diversos problemas que pueden producirse al empaquetar e implementar soluciones de SharePoint.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 |Valor|Descripción|  
 |-----------|-----------------|  
 |Automático|Detecta las colisiones y resuelve los conflictos automáticamente.|  
-|Prompt|Detecta las colisiones y las notifica al desarrollador de software antes de resolver los conflictos.|  
+|Preguntar|Detecta las colisiones y las notifica al desarrollador de software antes de resolver los conflictos.|  
 |Ninguna|No detecta las colisiones.|  
   
 ## <a name="differences-between-f5-deployment"></a>Diferencias entre la implementación y F5  

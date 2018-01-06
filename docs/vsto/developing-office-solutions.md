@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 478bd6d27d6e4ef0fe75891d95cdc4b3258a74e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b15c9fbf2815132ac4ad84e3b321bb22db199ed2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-office-solutions"></a>Desarrollar soluciones de Office
   Después de diseñar un proyecto con Office Developer Tools en Visual Studio y configurar los archivos del proyecto, puede empezar a centrarse en la implementación del código y la interfaz de usuario personalizada (UI).  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 |[Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)|Proporciona información general sobre el modelo de programación de personalizaciones de nivel de documento y las tareas de programación relacionadas.|  
 |[Personalización de la interfaz de usuario de Office](../vsto/office-ui-customization.md)|Describe las distintas formas de personalizar las aplicaciones de interfaz de usuario de Office mediante complementos de VSTO y personalizaciones de nivel de documento.|  
 |[Datos en las soluciones de Office](../vsto/data-in-office-solutions.md)|Describe las distintas maneras de trabajar con datos en soluciones de Office, como enlazar datos a controles y almacenar datos en caché en las personalizaciones de nivel de documento.|  
-|[Cómo Autoguardado afecta a las soluciones de Office](./how-autosave-impacts-office-solutions.md)|Describe los ajustes que necesite realizar en las soluciones de Office cuando Autoguardado esté habilitado.|
+|[Cómo el autoguardado afecta a las soluciones de Office](./how-autosave-impacts-office-solutions.md)|Describe los ajustes que necesite realizar en las soluciones de Office cuando Autoguardado esté habilitado.|
 |[Solución de problemas de soluciones de Office](../vsto/troubleshooting-office-solutions.md)|Proporciona sugerencias para resolver problemas comunes que pueden surgir al crear soluciones de Office.|  
 |[Compatibilidad de subprocesos en Office](../vsto/threading-support-in-office.md)|Proporciona información general sobre cómo trabajar con varios subprocesos en soluciones de Office.|  
 |[Accesibilidad en proyectos de Office](../vsto/accessibility-in-office-projects.md)|Describe las características de accesibilidad que están disponibles en las soluciones de Office.|  

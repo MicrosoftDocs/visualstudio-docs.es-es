@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 615cfb46222dfbf6e6b3cb1ba6741cde7c7bf708
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3f531539737389938a7ff0a757235d8c5c2af263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writeline-activity-designer"></a>Diseñador de actividades WriteLine
 El **WriteLine** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.WriteLine> actividad.  

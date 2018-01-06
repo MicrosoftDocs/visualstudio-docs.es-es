@@ -20,11 +20,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ca062823968153d7c8979cb13c0e3d403237be1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 789ad22524a5c0128320bfb833b8ad97e294a86f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Tutorial: Insertar texto en un documento de un panel de acciones
   Este tutorial muestra cómo crear un panel de acciones en un documento de Microsoft Office Word. El panel de acciones contiene dos controles que recopilan datos y, a continuación, envían el texto al documento.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 -   Mostrar el panel de acciones cuando se abre la aplicación.  
   
 > [!NOTE]  
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
      **21 de marzo de 2008**  
   
-     **Nombre**  
+     **Name**  
   
      **Dirección**  
   
@@ -113,27 +114,27 @@ ms.lasthandoff: 10/31/2017
   
 4.  Agregar un **Textbox** controlar al control del panel de acciones y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**getName**|  
+    |**Name**|**getName**|  
     |**Size**|**130, 20**|  
   
 5.  Agregue un segundo **etiqueta** controlar al control del panel de acciones y cambie la **texto** propiedad **dirección**.  
   
 6.  Agregue un segundo **Textbox** controlar al control del panel de acciones y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**getAddress**|  
+    |**Name**|**getAddress**|  
     |**Acepta el valor devuelto**|**True**|  
     |**Multiline**|**True**|  
     |**Size**|**130, 40**|  
   
 7.  Agregar un **botón** controlar al control del panel de acciones y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**addText**|  
+    |**Name**|**addText**|  
     |**Texto**|**Insertar**|  
   
 ## <a name="adding-code-to-insert-text-into-the-document"></a>Agregar código para insertar texto en el documento  

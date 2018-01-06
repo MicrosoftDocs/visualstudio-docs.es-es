@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ad57b87dcbae858f865a12538c79436e907caa34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: add7474c2d38c2cbb06b0d1cc3c92efa0a16c321
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Agregar un nuevo elemento a un proyecto de flujo de trabajo (Heredado)
 Después de haber creado un proyecto de flujo de trabajo usando [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] heredado proporcionado por [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] que tiene como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], puede agregar elementos de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] y otros elementos conocidos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] al proyecto.  

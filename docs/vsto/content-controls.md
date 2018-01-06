@@ -43,11 +43,12 @@ caps.latest.revision: "65"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b2950370b35eb8e2f60f15c5de032284c5546f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4d50e7c6177152b2cef3709c983334d05b48a812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-controls"></a>Controles de contenido
   Los controles de contenido proporcionan un mecanismo para diseñar documentos y plantillas con las siguientes características:  
@@ -208,7 +209,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-binding-events-for-content-controls"></a>Eventos de enlace de datos de controles de contenido  
  Todos los controles de contenido proporcionan un conjunto de eventos que puede controlar para llevar a cabo tareas relacionadas con datos, como validar que el texto de un control cumple determinados criterios antes de actualizar el origen de datos. En la siguiente tabla se enumeran los eventos de los controles de contenido que están relacionados con el enlace de datos.  
   
-|Tarea|Evento|  
+|Tarea|evento|  
 |----------|-----------|  
 |Ejecutar código inmediatamente antes de que Word actualice automáticamente el texto de un control de contenido que está enlazado a un elemento XML personalizado.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |Ejecutar código inmediatamente antes de que Word actualice automáticamente los datos de un elemento XML personalizado que está enlazado a un control de contenido (es decir, después de modificar el texto en el control de contenido).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  

@@ -21,17 +21,18 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50673163fdbdd1c0927f6efa56eae39e8cc2e3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0c00b625c9e06152d64892f59582ec3c2e0f2866
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-e-mail-items"></a>Cómo: Guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación
   En este ejemplo se guardan los datos adjuntos al correo electrónico en una carpeta específica cuando el correo se recibe en la bandeja de entrada.  
   
 > [!IMPORTANT]  
->  En este ejemplo solo funciona si se agrega una carpeta denominada **TestFileSave** en la raíz del directorio c..  
+>  En este ejemplo solo funciona si se agrega una carpeta denominada **TestFileSave** en la raíz del directorio c.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c3f1572306dfe26d50d51ba0e83037debaf1c7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2b4bec723bda86dae2e700da89139329c494c3dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Cómo: Agregar nodos al área de trabajo desde la vista Inicio
 Este tema describe cómo agregar nodos globales para la [área de trabajo del Diseñador de esquemas de XML](../xml-tools/xml-schema-designer-workspace.md) desde el [vista inicio](../xml-tools/start-view.md).  

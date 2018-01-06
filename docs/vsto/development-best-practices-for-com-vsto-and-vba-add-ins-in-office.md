@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b3a2cbaf98eeacb78f55bea23d638cd4a1ab6d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: office
+ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Prácticas recomendadas de desarrollo de COM, VSTO y VBA complementos de Office
   Si va a desarrollar complementos COM VSTO y VBA para Office, siga las prácticas recomendadas de desarrollo descritas en este artículo.   Esto le ayudará a garantizar:
@@ -27,13 +28,13 @@ ms.lasthandoff: 11/11/2017
 -  Complejidad reducida de implementación del complemento para los usuarios y los administradores de TI.
 -  No se producen errores imprevistos de instalación o en tiempo de ejecución del complemento.
 
->Nota: El uso de la [Desktop puente](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root) para preparar su COM, VSTO o VBA complemento para la tienda Windows no es compatible. Complementos COM, VSTO y VBA no se pueden distribuir en la tienda Windows o la tienda Office. 
+>Nota: El uso de la [Desktop puente](/windows/uwp/porting/desktop-to-uwp-root) para preparar su COM, VSTO o VBA complemento para la tienda Windows no es compatible. Complementos COM, VSTO y VBA no se pueden distribuir en la tienda Windows o la tienda Office. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>No se comprueban para Office durante la instalación  
  No se recomienda tener el complemento de detectar si Office se instala durante el proceso de instalación del complemento. Si Office no está instalado, puede instalar el complemento y el usuario podrá tener acceso a él después de instalar Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Usar tipos de interoperabilidad insertados (NoPIA)  
-Si la solución utiliza .NET 4.0 o una versión posterior, utilice tipos de interoperabilidad incrustados (NoPIA) en lugar de según el Office interoperabilidad primario ensamblados (PIA) redistribuible. Con la incrustación de tipos reduce el tamaño de la instalación de la solución y garantiza la compatibilidad con versiones posterior. Office 2010 fue la última versión de Office que se incluye el paquete redistribuible de PIA. Para obtener más información, consulte [Tutorial: incrustar información de tipos de ensamblados de Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) y [equivalencia de tipos y tipos de interoperabilidad incrustados](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types). 
+Si la solución utiliza .NET 4.0 o una versión posterior, utilice tipos de interoperabilidad incrustados (NoPIA) en lugar de según el Office interoperabilidad primario ensamblados (PIA) redistribuible. Con la incrustación de tipos reduce el tamaño de la instalación de la solución y garantiza la compatibilidad con versiones posterior. Office 2010 fue la última versión de Office que se incluye el paquete redistribuible de PIA. Para obtener más información, consulte [Tutorial: incrustar información de tipos de ensamblados de Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) y [equivalencia de tipos y tipos de interoperabilidad incrustados](/windows/uwp/porting/desktop-to-uwp-root).
 
 Si la solución utiliza una versión anterior de. NET, se recomienda que actualice la solución para usar .NET 4.0 o posterior. Con .NET 4.0 o posterior, reduce los requisitos previos de tiempo de ejecución en las versiones más recientes de Windows.
   
@@ -66,4 +67,4 @@ Para proporcionar instrucciones de compatibilidad para aplicaciones de cliente d
 >Importante: Microsoft mantiene una lista de complementos compatibles para los informes de disponibilidad y la información de contacto de ISV. Para obtener el complemento aparece, consulte [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utilice el Monitor de proceso para ayudar a depurar problemas de carga o de instalación
-Si el complemento tiene problemas de compatibilidad durante la instalación o la carga, pueden estar relacionados con problemas de acceso de archivo o del registro. Use [Monitor de procesos](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) u otra herramienta de depuración similar para iniciar sesión y comparar el comportamiento en un entorno de trabajo para ayudar a identificar el problema. 
+Si el complemento tiene problemas de compatibilidad durante la instalación o la carga, pueden estar relacionados con problemas de acceso de archivo o del registro. Use [Monitor de procesos](/sysinternals/downloads/procmon) u otra herramienta de depuración similar para iniciar sesión y comparar el comportamiento en un entorno de trabajo para ayudar a identificar el problema.

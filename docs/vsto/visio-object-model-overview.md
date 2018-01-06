@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 732a270564c40c4ca20952d86abb8618f9a060f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ba481206e24870e0772290beba129d373c30862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-object-model-overview"></a>Información general sobre el modelo de objetos de Visio
   Para desarrollar soluciones de Office para Microsoft Office Visio, puede interactuar con el modelo de objetos de Visio. Este modelo de objetos está compuesto de clases e interfaces que se proporcionan en el ensamblado de interoperabilidad primario de Visio y se definen en el espacio de nombres Microsoft.Office.Interop.Visio.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="document-object"></a>Document (objeto)  
  El objeto Microsoft.Office.Interop.Visio.Document es fundamental para la programación de Visio. Representa un dibujo, una galería de símbolos o un archivo de plantilla. Al abrir un documento de Visio o crear un nuevo documento, cree un nuevo objeto Microsoft.Office.Interop.Visio.Document, que se agrega a la colección Microsoft.Office.Interop.Visio.Documents del objeto Microsoft.Office.Interop.Visio.Application .  
   
- El documento que tiene el foco se llama documento activo. Se representa mediante la propiedad Microsoft.Office.Interop.Visio.Application.ActiveDocument del objeto Microsoft.Office.Interop.Visio.Application.  
+ El documento que tiene el foco se denomina documento activo. Se representa mediante la propiedad Microsoft.Office.Interop.Visio.Application.ActiveDocument del objeto Microsoft.Office.Interop.Visio.Application.  
   
 ### <a name="page-object"></a>Page (objeto)  
  El objeto Microsoft.Office.Interop.Visio.Page representa el área de dibujo de una página de primer plano o una página de fondo. Puede usar la propiedad Microsoft.Office.Interop.Visio.Page.Background para determinar si una página es una página de primer plano o en segundo plano.  

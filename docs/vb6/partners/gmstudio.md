@@ -9,15 +9,16 @@ dev_langs: visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.openlocfilehash: e1d86e5a4f363a39283d32778144a1c0a7c50f23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 8478f4f7cd3bc342f19b84a085b1889405ca6676
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="great-migrations-studio-gmstudio"></a>Excelente migraciones Studio (gmStudio)
 
-gmStudio es un sistema único reintegración entorno para desarrollar escalable, personalizado VB6/ASP/COM para soluciones de actualización. NET. Como un software completa reintegración plataforma, gmStudio le ayuda a planear, personalizar, mejorar, comprobar y realizar un seguimiento de su proceso de actualización y cumplir los requisitos exclusivos de su código fuente y los estándares. NET.  Si se desea conservar y mejorar el valor de los activos ASP/VB6/COM, gmStudio es la solución más rentable y avanzada disponible. 
+gmStudio es un entorno de reingeniería de sistemas único para desarrollar soluciones de actualización personalizadas de VB6/ASP/COM a .NET. Como una plataforma de reingeniería de software integral, gmStudio ayuda a planear, personalizar, mejorar, verificar y supervisar el proceso de actualización y cumplir los requisitos exclusivos del código fuente y de los estándares de .NET.  Si se desea conservar y mejorar el valor de los activos ASP/VB6/COM, gmStudio es la solución más rentable y avanzada disponible. 
 
 ## <a name="the-tool-assisted-rewrite"></a>La reescritura asistida por herramientas
 

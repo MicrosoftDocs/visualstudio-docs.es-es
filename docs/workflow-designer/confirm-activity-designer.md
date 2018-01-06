@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3d1255b210bdb68868b4bc2ee0e38475da840429
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 51e44d98aaec929f1194420227a6a3871dc4f2ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="confirm-activity-designer"></a>Diseñador de actividades Confirm
 El **confirmar** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.Confirm> actividad.  

@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b27c536a9e5b7237efdd6b11b4be75ca1d91f19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 620b0643280adebad55adcfacb6883b644e42227
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Cómo: Eliminar citas mediante programación
   Este ejemplo elimina una instancia de una cita periódica. En el ejemplo se supone que la instancia de una cita periódica se produce el 28 de junio de 2006, a las 08:00.  

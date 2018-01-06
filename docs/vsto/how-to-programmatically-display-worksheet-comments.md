@@ -18,11 +18,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20381a6db187536dc729c08bb046152a0489e6a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6a57d625fcb87f5e101cc1e0f60b79a74c132b8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-display-worksheet-comments"></a>Cómo: Mostrar los comentarios de las hojas de cálculo mediante programación
   Puede mostrar y ocultar comentarios en las hojas de cálculo de Microsoft Office Excel mediante programación.  

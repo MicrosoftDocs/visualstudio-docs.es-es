@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9f12b8944d9174ca885e90b92c8e3a0d0b83215
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bd659a1df9782c4e16dd2664a27a87e858e54ef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Cómo: Marcar los controles como seguros
   Para la seguridad, SharePoint diferencia entre los controles Web que están protegidos contra la inyección de script y los controles Web que no están. Botones, protegidos o *controles seguros*, puede tener acceso a los usuarios de confianza. Puede marcar los controles como seguros en la propiedad Safe Control Entries de un elemento de proyecto de SharePoint o en el **Diseñador de paquetes** cuando se agrega un ensamblado al paquete. Para obtener más información, consulte  

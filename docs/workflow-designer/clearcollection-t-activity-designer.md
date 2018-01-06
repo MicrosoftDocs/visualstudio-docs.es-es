@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3a8dc27c22e1c9408129f30a0a7cd22e11a9d564
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 54cac37194a3b96d464b886c14bfbbbde4a1f861
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clearcollectionlttgt-activity-designer"></a>ClearCollection&lt;T&gt; Diseñador de actividad
 El **ClearCollection\<T >** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.ClearCollection%601> actividad.  

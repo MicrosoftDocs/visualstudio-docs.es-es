@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40907d71bae8c8c25f06b3b1f3d4af8b9f79c385
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 196b16ba28ee5fa590c54dee89dcd65978f2ecd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Cómo: Cambiar la posición de una pestaña en la cinta de opciones
   Puede cambiar el orden de las fichas personalizadas en una cinta de opciones mediante la **pestaña Editor de la colección**. Puede colocar pestañas personalizadas antes o después de una pestaña integrada en la cinta de opciones. Una pestaña integrada es una pestaña que ya está en la cinta de opciones de una aplicación de Microsoft Office. Por ejemplo, el **datos** ficha es una pestaña integrada en Excel.  

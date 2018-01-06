@@ -32,11 +32,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68135e13a0e78e0250b087713ab459825018ff84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 68d0cfbc96b72208eee26f3cc75dd9a19d1b63fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programming-document-level-customizations"></a>Programar personalizaciones de nivel de documento
   Al ampliar Microsoft Office Word o Microsoft Office Excel mediante una personalización de nivel de documento, puede realizar las siguientes tareas:  
@@ -90,7 +91,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="accessing-the-object-model-of-the-host-application"></a>Obtener acceso al modelo de objetos de la aplicación host  
  Para obtener acceso al modelo de objetos de la aplicación host, use los miembros de la clase generada en el proyecto. Cada una de esas clases corresponde a un objeto del modelo de objetos de Excel o de Word y contiene en su mayoría las mismas propiedades, métodos y eventos. Por ejemplo, la clase `ThisDocument` de un proyecto de nivel de documento de Word proporciona en su mayoría los mismos miembros que el objeto <xref:Microsoft.Office.Interop.Word.Document> del modelo de objetos de Word.  
   
- En el ejemplo de código siguiente se muestra cómo usar el modelo de objetos de Word para guardar el documento que forma parte de una personalización de nivel de documento de Word. Este ejemplo está pensado para ejecutarse desde la clase `ThisDocument` .  
+ En el ejemplo de código siguiente se muestra cómo usar el modelo de objetos de Word para guardar el documento que forma parte de una personalización de nivel de documento de Word.  Este ejemplo está pensado para ejecutarse desde la clase `ThisDocument` .  
   
 ```vb  
 Me.Save()  
@@ -175,6 +176,6 @@ Globals.ThisDocument.Save();
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
  [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

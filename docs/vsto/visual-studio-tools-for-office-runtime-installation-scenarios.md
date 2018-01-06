@@ -16,11 +16,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e09d83fefee766ce19c71812bccfa751cc90e27e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 057b9430f6cbac64479e6623e74497427f7824ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Escenarios de instalación del Motor en runtime de Microsoft Visual Studio Tools para Office
   Puede instalar Visual Studio 2010 Tools para Office Runtime de tres maneras:  

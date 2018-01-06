@@ -30,11 +30,12 @@ caps.latest.revision: "52"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097a4247ccc7604dd4c39b81e0f733578fc91c89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5a655210f3ab8bbcdbae7c06815a05d1ad24b390
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.  
@@ -106,7 +107,7 @@ ms.lasthandoff: 10/31/2017
   
  En la tabla siguiente se enumeran los cambios que puede realizar en un panel de tareas personalizado usando las propiedades <xref:Microsoft.Office.Tools.CustomTaskPane>.  
   
-|Tarea|Propiedad|  
+|Tarea|Property|  
 |----------|--------------|  
 |Para cambiar el tamaño del panel de tareas|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|  
 |Para cambiar la ubicación del panel de tareas|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|  
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
   
  En la tabla siguiente se enumeran los eventos que puede controlar para responder a los cambios que el usuario realice en el panel de tareas personalizado.  
   
-|Tarea|Evento|  
+|Tarea|evento|  
 |----------|-----------|  
 |Responder cuando el usuario cambia la ubicación del panel de tareas.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
 |Responder cuando el usuario oculta el panel de tareas o lo hace visible.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  

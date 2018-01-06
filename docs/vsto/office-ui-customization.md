@@ -21,11 +21,12 @@ caps.latest.revision: "74"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7af3c33ed45a5e0b9678a41900280b1e665766ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c169edc949f195d416194ae3c3ee1111977f649b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization"></a>Personalización de la interfaz de usuario de Office
   Puede personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante el uso de las herramientas de desarrollo de Office en Visual Studio. En este tema se describen las características de la interfaz de usuario que se pueden personalizar en las secciones siguientes:  
@@ -49,13 +50,13 @@ ms.lasthandoff: 10/31/2017
   
 |Característica|Tipos de proyecto compatibles|Aplicaciones de Microsoft Office compatibles|  
 |-------------|-----------------------------|---------------------------------------------|  
-|Panel de acciones|Personalizaciones de nivel de documento|Excel<br /><br /> Word|  
-|Paneles de tareas personalizados|Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|  
-|Interfaz de usuario de Cinta personalizada|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> Powerpoint<br /><br /> Proyecto<br /><br /> Word<br /><br /> Visio|  
-|Vista Backstage|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Word<br /><br /> Visio|  
+|Panel de acciones|Personalizaciones de nivel de documento|Excel<br /><br /> Palabra|  
+|Paneles de tareas personalizados|Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Palabra<br /><br /> Excel|  
+|Interfaz de usuario de Cinta personalizada|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> Powerpoint<br /><br /> Proyecto<br /><br /> Palabra<br /><br /> Visio|  
+|Vista Backstage|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Palabra<br /><br /> Visio|  
 |Áreas de formulario de Outlook|Complementos de VSTO|Outlook|  
-|Controles en documentos|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> Word|  
-|Menús contextuales|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|  
+|Controles en documentos|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> Palabra|  
+|Menús contextuales|Personalizaciones de nivel de documento<br /><br /> Complementos de VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Proyecto<br /><br /> Palabra<br /><br /> Visio<br /><br /> Excel|  
   
 ##  <a name="Actions"></a>Paneles de acciones y paneles de tareas personalizados  
  Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Casi todas las aplicaciones de Microsoft Office incluyen paneles de tareas integrados. Un ejemplo de un panel de tareas es el panel de tareas Ayuda de Word.  

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8d84873c1d4755b4eea723345f52d71064ecb9ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1fe242e3e4fd2a885373d776f79f50071fa83c1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="invokemethod-activity-designer"></a>Diseñador de actividades InvokeMethod
 **InvokeMethod** diseñador se utiliza para crear y configurar un <xref:System.Activities.Statements.InvokeMethod> actividad.  

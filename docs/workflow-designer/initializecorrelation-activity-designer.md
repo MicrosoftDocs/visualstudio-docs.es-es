@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 387b5420614fed3f4d5f956f5a91fe2ece70d53a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 83abd9f76f68ec4131840fb0ea58e9aeb93f30d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="initializecorrelation-activity-designer"></a>Diseñador de actividades InitializeCorrelation
 El **InitializeCorrelation** Diseñador de actividades se usa para crear y configurar un <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad que se utiliza para establecer una correlación entre los mensajes antes de enviarlos o recibirlos.  

@@ -24,11 +24,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa95c519ab24ba042b6a1adfa71c64499b18d4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Tutorial: Crear un flujo de trabajo con formularios de asociación y de iniciación
   Este tutorial muestra cómo crear un flujo de trabajo secuencial básico que incorpora el uso de formularios de asociación e iniciación. Se trata de formularios ASPX que permiten parámetros para agregarse a un flujo de trabajo al que asociar primero el Administrador de SharePoint (el formulario de asociación) y cuando se inicia el flujo de trabajo por el usuario (el formulario de inicio).  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
      El **Asistente para personalización de SharePoint** aparece.  
   
-10. En el **especificar el nombre de flujo de trabajo para la depuración** , acepte el nombre predeterminado (**ExpenseReport - Workflow1**). Mantenga el valor de tipo de plantilla de flujo de trabajo predeterminado (**flujo de trabajo de lista)**. Elija la **siguiente** botón.  
+10. En el **especificar el nombre de flujo de trabajo para la depuración** , acepte el nombre predeterminado (**ExpenseReport - Workflow1**). Mantenga el valor de tipo de plantilla de flujo de trabajo predeterminado (**flujo de trabajo de lista)**. Elija el botón **Siguiente**.  
   
 11. En el **desea que Visual Studio para asociar automáticamente el flujo de trabajo en una sesión de depuración?** página, desactive la casilla que se asocia automáticamente la plantilla de flujo de trabajo si está activada.  
   

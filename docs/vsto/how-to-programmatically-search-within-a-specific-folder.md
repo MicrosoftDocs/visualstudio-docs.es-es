@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97776e667333d00ecbd10feeb12620b16f2d3ac9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6397f6e90423640697aa57d7fdf2a1c85303d0f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Cómo: Buscar en una carpeta específica mediante programación
   Este ejemplo de código se utiliza el `Find` y `FindNext` métodos para buscar texto en el campo de asunto de mensajes de correo electrónico que se encuentran en el **Bandeja de entrada**. Este método utiliza un filtro de cadena para comprobar la letra T como la letra inicial de la `Subject` texto.  

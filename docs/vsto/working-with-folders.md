@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6ffe3d79a9b7bd7e15d9281fe1500b256d4c649a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2336dbec82ac6ec7b78d1c1154f9686078bb4bc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-folders"></a>Trabajar con carpetas
   La clase <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> contiene los métodos y las propiedades que se usan para obtener acceso, crear y personalizar carpetas.  

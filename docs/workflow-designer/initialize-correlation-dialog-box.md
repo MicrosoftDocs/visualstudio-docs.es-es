@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: c14cc612c544fff9a415d68ef173edcc2f9dbd87
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 347a38a67762ed92dbf5daeb0a74d428b9e7d8f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicializar correlación (cuadro de diálogo)
 El **inicializar correlación** cuadro de diálogo se usa en [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] para editar la <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propiedad de un <xref:System.ServiceModel.Activities.InitializeCorrelation> actividad. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)]el [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tema.  

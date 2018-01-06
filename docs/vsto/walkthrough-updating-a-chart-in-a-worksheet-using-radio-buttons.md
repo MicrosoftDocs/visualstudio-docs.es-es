@@ -19,11 +19,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74bd005514fa2fe72450a95d84f38dd17a7b639f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de radio
   En este tutorial se muestra los aspectos básicos del uso de botones de radio en una hoja de cálculo de Microsoft Office Excel para proporcionar al usuario una manera de cambiar rápidamente entre las opciones. En este caso, las opciones cambian el estilo de un gráfico.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 -   Cambiar el estilo del gráfico cuando se selecciona una opción.  
   
 > [!NOTE]  
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -112,9 +113,9 @@ ms.lasthandoff: 10/31/2017
   
 1.  Seleccione el <xref:Microsoft.Office.Tools.Excel.Chart> controlar en el diseñador y cambie las siguientes propiedades en el **propiedades** ventana.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**dataChart**|  
+    |**Name**|**dataChart**|  
     |**HasLegend**|**false**|  
   
 ## <a name="adding-controls"></a>Agregar controles  
@@ -136,30 +137,30 @@ ms.lasthandoff: 10/31/2017
   
 2.  Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre un **botón de Radio** controlar al control de usuario y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**columnChart**|  
+    |**Name**|**columnChart**|  
     |**Texto**|**Gráfico de columnas**|  
   
 3.  Agregue un segundo botón de radio al control de usuario y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**barChart**|  
+    |**Name**|**barChart**|  
     |**Texto**|**Gráfico de barras**|  
   
 4.  Agregue un tercer botón de radio al control de usuario y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**lineChart**|  
+    |**Name**|**lineChart**|  
     |**Texto**|**Gráfico de líneas**|  
   
 5.  Agregue un cuarto botón de radio al control de usuario y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**areaBlockChart**|  
+    |**Name**|**areaBlockChart**|  
     |**Texto**|**Gráfico de bloques de áreas**|  
   
  A continuación, escriba el código para actualizar el gráfico cuando se hace clic en un botón de radio.  

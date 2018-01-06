@@ -23,11 +23,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b73bff8170e351e9e22e95d53ae446895cfdbd2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7cbdf38b3debd7710ed036d008d52b8ef080d37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Cómo: Exportar una cinta de opciones del diseñador de la cinta de opciones a XML de la cinta de opciones
   El **cinta (diseñador Visual)** elemento no admite todos los tipos posibles de personalización de la cinta de opciones. Para personalizar la cinta de maneras avanzadas, puede exportar la cinta de opciones desde el diseñador a XML de cinta de opciones y editar el XML directamente.  

@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f59d4178e82cde6c476d9cab8d20a37dcb698262
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cbb848c07828b8581a71e57fbeee411404632f31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>Cómo: Cerrar documentos de Visio mediante programación
   Puede cerrar el documento de Microsoft Office Visio activo mediante el método Microsoft.Office.Interop.Visio.Document.Close.  

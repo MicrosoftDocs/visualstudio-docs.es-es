@@ -11,11 +11,12 @@ ms.assetid: f2280cfa-a9ec-4b56-9d94-c8fd384db980
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0380076319a80ba85aa59c388959baece9008e94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53b1ab5cb202995cb6a5e9eeef76ee4cf38b4ea9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-constructor-in-visual-basic"></a>Generar un constructor en Visual Basic
 **¿Qué:** le permite generar inmediatamente el código para un nuevo constructor en una clase. 

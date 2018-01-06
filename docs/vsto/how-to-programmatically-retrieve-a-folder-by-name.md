@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32db5d1ae316b571b71a8015bd6ea5dc7fe7a110
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 542340605407450c1cedaf9077faa90b05cdfa28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Cómo: Recuperar una carpeta por su nombre mediante programación
   Este ejemplo obtiene una referencia a una carpeta personalizada con nombre y, a continuación, muestra el contenido de la carpeta.  

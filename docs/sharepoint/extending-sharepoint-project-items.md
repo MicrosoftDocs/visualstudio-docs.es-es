@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f17e43e2fe98e36939c91b37e72b185cb14d09e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ffbacd5748ae2a5284ed628dce974b20e25bcab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-sharepoint-project-items"></a>Extender elementos de proyecto de SharePoint
   Crear una extensión de elemento de proyecto cuando desee agregar funcionalidad a un tipo de elemento de proyecto de SharePoint que ya está instalado en Visual Studio. Por ejemplo, puede crear una extensión para integrado **receptor de eventos** o **definición de lista** elementos de proyecto de Visual Studio, o puede crear una extensión para un tipo de elemento de proyecto personalizado. También puede crear una extensión para todos los tipos de elementos de proyecto de SharePoint.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
 |Elemento vacío|Microsoft.VisualStudio.SharePoint.GenericElement|  
 |Definición de lista<br /><br /> Definición de lista de tipo de contenido|Microsoft.VisualStudio.SharePoint.ListDefinition|  
 |Instancia de lista|Microsoft.VisualStudio.SharePoint.ListInstance|  
-|Módulo|Microsoft.VisualStudio.SharePoint.Module|  
+|Module|Microsoft.VisualStudio.SharePoint.Module|  
 |Flujo de trabajo secuencial<br /><br /> Flujo de trabajo de equipo de estado|Microsoft.VisualStudio.SharePoint.Workflow|  
 |Definición de sitio|Microsoft.VisualStudio.SharePoint.SiteDefinition|  
 |Elemento web visual|Microsoft.VisualStudio.SharePoint.VisualWebPart|  

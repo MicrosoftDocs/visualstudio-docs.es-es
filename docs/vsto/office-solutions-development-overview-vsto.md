@@ -18,11 +18,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c35be3e79aea37b82e9ae46463582a0874e51a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Información general sobre el desarrollo de soluciones de Office (VSTO)
   Mediante el uso de Microsoft Office como front-end de soluciones, puede beneficiarse de las conocidas interfaces de usuario y herramientas de Microsoft Office, como las características de procesamiento de texto de Word, las características de análisis de datos de Excel y las características de administración de correo electrónico de Outlook. Puede desarrollar soluciones en Visual Studio para personalizar las aplicaciones de Office y agregar las características específicas que necesite para sus procesos empresariales. Por ejemplo, puede convertir Word en un generador de contratos que ensamble contratos a partir de elementos previamente existentes que se pueden hacer modificables o no modificables. Con Excel puede crear una hoja de cálculo de presupuestos automatizada y personalizada para distintos proyectos. Los usuarios pueden aprovechar las soluciones de Office sin conexión, lo que hace que soluciones complejas resulten más prácticas de lo que serían si utilizase una arquitectura basada en web.  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  Los tipos de proyectos que puede crear dependen de las aplicaciones de Office que haya instalado en el equipo de desarrollo. Para obtener más información, consulta [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
-### <a name="document-level-customizations"></a>Personalizaciones de nivel de documento  
+### <a name="document-level-customizations"></a>personalizaciones de nivel de documento  
  Las personalizaciones de nivel de documento constan de un ensamblado que está asociado a un único documento, libro o plantilla de Microsoft Office Word o Microsoft Office Excel. El ensamblado se carga cuando se abre el documento asociado. Las características de las personalizaciones que se crean están disponibles solo cuando se abre el documento asociado. Las personalizaciones no pueden realizar cambios en toda la aplicación, como mostrar un nuevo elemento de menú o una ficha de cinta cuando se abre cualquier documento.  
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incluye herramientas que le ayudan a crear personalizaciones de nivel de documento. El documento que se personaliza se hospeda como una superficie de diseño en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], lo que permite diseñar el documento arrastrando y colocando controles en él. Muchas otras características de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] están disponibles en proyectos de nivel de documento, como son los controles de Windows Forms, el enlace de datos con la función de arrastrar y colocar, y un depurador integrado.  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
  Para obtener más información acerca de cómo utilizar los PIA en las soluciones de Office de VSTO, vea los siguientes temas:  
   
--   [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)  
+-   [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
 -   [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)  
   

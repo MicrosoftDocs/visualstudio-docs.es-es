@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: e4b019c2733a8e411b1d3e5be15af3b272708ce1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fcadbe113e92c761559161bdd8a7eba6e95937d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Crear una aplicación de consola de flujos de trabajo
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] le permite crear flujos de trabajo para ejecutar sistemas o procesos humanos. [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] proporciona la superficie de diseño para la creación de estos flujos de trabajo. El [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] se puede usar para crear flujos de trabajo desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o se puede integrar en otras aplicaciones que hospedan en otro host el diseñador.  

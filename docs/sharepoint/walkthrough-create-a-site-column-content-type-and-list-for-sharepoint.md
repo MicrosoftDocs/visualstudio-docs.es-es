@@ -26,11 +26,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6007dee14f89f875c66009f048b47579e97028b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 59dafe640428059b4c6772f79a23d5f0ccceaac7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Crear una lista, tipo de contenido y columna de sitio para SharePoint
   Los procedimientos siguientes muestran cómo crear columnas personalizadas de sitio de SharePoint, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También muestra cómo crear una lista que utiliza el nuevo tipo de contenido.  

@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 0a3b7c7cf56aa465f88ae918056e2d71ad6c41e4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e114f95baf771d8138fd155cf79f6e0ddbf14485
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="terminateworkflow-activity-designer"></a>Diseñador actividades TerminateWorkflow
 El **TerminateWorkflow** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.TerminateWorkflow> actividad.  

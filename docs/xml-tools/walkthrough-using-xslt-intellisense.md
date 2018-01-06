@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae58db5ac642bca1e68d3ad074d4a69062a1f294
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97950a9d5d6f76505e93153dccd14cfce7be15a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Tutorial: Usar XSLT de IntelliSense
 Este tutorial muestra cómo usar XSLT de IntelliSense para autocompletar los valores de algunos atributos.  

@@ -26,11 +26,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: babb8456593ba953982390f048960449069ca6fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8ecc80a3c26b97b9754f998bd0903471d00cd1d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: Crear una lista externa en SharePoint con datos profesionales
   El servicio de conectividad de datos profesionales (BDC) permite que muestran datos empresariales de aplicaciones de servidor back-end, servicios Web y bases de datos de SharePoint.  
@@ -199,7 +200,7 @@ ms.lasthandoff: 10/31/2017
   
 10. Repita el paso 6 para crear un descriptor de tipo para cada uno de los siguientes campos.  
   
-    |Nombre|Nombre de tipo|  
+    |nombre|Nombre de tipo|  
     |----------|---------------|  
     |Nombre|System.String|  
     |LastName|System.String|  
@@ -263,7 +264,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-test-the-project"></a>Para probar el proyecto  
   
-1.  Elija la **F5** clave.  
+1.  Elija la tecla **F5**.  
   
      Se abre el sitio de SharePoint.  
   

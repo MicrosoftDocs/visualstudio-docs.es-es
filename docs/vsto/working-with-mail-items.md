@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b1da36fbf982b26f079b0aebbee67bc9d5f203
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03d7f2eedef03a4995a9f14540351df80bd537f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-mail-items"></a>Trabajar con elementos de correo
   La <xref:Microsoft.Office.Interop.Outlook.MailItem> clase contiene los métodos y propiedades que se usan para realizar tareas con los mensajes de correo electrónico.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Tarea|Procedimiento|  
 |----------|---------------|  
 |Crear un mensaje de correo electrónico.|[Cómo: Crear un elemento de correo electrónico mediante programación](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|Enviar un mensaje de correo electrónico.|[Cómo: enviar un correo electrónico mediante programación](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
+|Enviar un mensaje de correo electrónico.|[Envío de correos electrónicos mediante programación](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
 |Responder a los nuevos mensajes de correo electrónico con una acción personalizada.|[Cómo: Realizar acciones al recibir un mensaje de correo mediante programación](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
 |Guardar datos adjuntos.|[Cómo: Guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
 |Agregar datos adjuntos|[Cómo: Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  

@@ -15,11 +15,12 @@ ms.assetid: a9479a52-54e5-421c-9a89-69607153bf6b
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: f2e7504d798893a02df8db12d81471095acbf72b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f8432757481618da49f59130316a88706ec37a38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-coauthoring-and-add-ins"></a>Descripción co-autoría y complementos
 

@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a41e7580e7c6c169554bb50c4d0c9af29a992b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1733ac8333675975bb5d4b42dce9df3c01e5ac0f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;actualizar&gt; elemento (desarrollo de Office en Visual Studio)
   El `update` elemento especifica el intervalo en el que se comprobará la solución de actualizaciones.  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`enabled`|Obligatorio. Establezca enabled en uno de los siguientes valores:<br /><br /> -   **True** para buscar actualizaciones.<br />-   **false** para evitar la comprobación de actualizaciones.|  
+|`enabled`|Requerido. Establezca enabled en uno de los siguientes valores:<br /><br /> -   **True** para buscar actualizaciones.<br />-   **false** para evitar la comprobación de actualizaciones.|  
   
  El `update` elemento tiene los siguientes elementos secundarios.  
   
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |`maximumAge`|-Required. Establezca esto en un entero.|  
-|`unit`|Obligatorio. Establecer `unit` a uno de los siguientes valores:<br /><br /> -   **horas**<br />-   **días**<br />-   **semanas**|  
+|`unit`|Requerido. Establecer `unit` a uno de los siguientes valores:<br /><br /> -   **horas**<br />-   **días**<br />-   **semanas**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Ejemplo de comprobar siempre las actualizaciones  
   

@@ -21,11 +21,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32fd9fe36f029296d52127cf1f3be9e3c205d82b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bcc3b19bc84d418798f296f15b36a367223c21fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas del registro para complementos de VSTO
   Debe crear un conjunto específico de entradas del registro al implementar complementos de VSTO creados con Visual Studio. Dichas entradas del registro proporcionan información que permite que la aplicación de Microsoft Office detecte y cargue el complemento de VSTO.  
@@ -75,12 +76,12 @@ ms.lasthandoff: 10/31/2017
   
  En la tabla siguiente se enumeran las entradas que figuran en esta clave del Registro.  
   
-|Entrada|Type|Valor|  
+|Entrada|Tipo|Valor|  
 |-----------|----------|-----------|  
-|**Descripción**|REG_SZ|Obligatorio. Breve descripción del complemento de VSTO.<br /><br /> Esta descripción se muestra cuando el usuario selecciona el complemento de VSTO en el panel **Complementos** del cuadro de diálogo **Opciones** de la aplicación de Microsoft Office.|  
-|**FriendlyName**|REG_SZ|Obligatorio. Nombre descriptivo del complemento de VSTO que se muestra en el cuadro de diálogo **Complementos COM** de la aplicación de Microsoft Office. El valor predeterminado es el identificador del complemento de VSTO.|  
-|**LoadBehavior**|REG_DWORD|Obligatorio. Valor que especifica cuándo la aplicación intenta cargar el complemento de VSTO y el estado actual del complemento de VSTO (cargado o sin cargar).<br /><br /> De forma predeterminada, esta entrada se establece en 3, lo que especifica que el complemento de VSTO se carga al inicio. Para obtener más información, consulte [Valores de LoadBehavior](#LoadBehavior). **Nota:** si un usuario deshabilita el complemento de VSTO, esa acción modifica **LoadBehavior** valor en el subárbol del registro HKEY_CURRENT_USER. Para cada usuario, el valor del valor **LoadBehavior** en el subárbol HKEY_CURRENT_USER invalida el valor predeterminado **LoadBehavior** definido en el subárbol HKEY_LOCAL_MACHINE.|  
-|**Manifest**|REG_SZ|Obligatorio. Ruta de acceso completa del manifiesto de implementación para el complemento de VSTO. La ruta de acceso puede ser una ubicación en el equipo local, un recurso compartido de red (UNC) o un servidor web (HTTP).<br /><br /> Si usa Windows Installer para implementar la solución, debe agregar el prefijo **file:///** a la ruta de acceso del **manifiesto** . También debe agregar la cadena **&#124; vstolocal** (es decir, el carácter de canalización **&#124;** seguido **vstolocal**) al final de esta ruta de acceso. Esto garantiza que la solución se cargue desde la carpeta de instalación, no desde la memoria caché de ClickOnce. Para obtener más información, consulta [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:** al compilar un complemento de VSTO en el equipo de desarrollo, Visual Studio agrega automáticamente el **&#124; vstolocal** cadena para esta entrada del registro.|  
+|**Descripción**|REG_SZ|Requerido. Breve descripción del complemento de VSTO.<br /><br /> Esta descripción se muestra cuando el usuario selecciona el complemento de VSTO en el panel **Complementos** del cuadro de diálogo **Opciones** de la aplicación de Microsoft Office.|  
+|**FriendlyName**|REG_SZ|Requerido. Nombre descriptivo del complemento de VSTO que se muestra en el cuadro de diálogo **Complementos COM** de la aplicación de Microsoft Office. El valor predeterminado es el identificador del complemento de VSTO.|  
+|**LoadBehavior**|REG_DWORD|Requerido. Valor que especifica cuándo la aplicación intenta cargar el complemento de VSTO y el estado actual del complemento de VSTO (cargado o sin cargar).<br /><br /> De forma predeterminada, esta entrada se establece en 3, lo que especifica que el complemento de VSTO se carga al inicio. Para obtener más información, consulte [Valores de LoadBehavior](#LoadBehavior). **Nota:** si un usuario deshabilita el complemento de VSTO, esa acción modifica **LoadBehavior** valor en el subárbol del registro HKEY_CURRENT_USER. Para cada usuario, el valor del valor **LoadBehavior** en el subárbol HKEY_CURRENT_USER invalida el valor predeterminado **LoadBehavior** definido en el subárbol HKEY_LOCAL_MACHINE.|  
+|**Manifest**|REG_SZ|Requerido. Ruta de acceso completa del manifiesto de implementación para el complemento de VSTO. La ruta de acceso puede ser una ubicación en el equipo local, un recurso compartido de red (UNC) o un servidor web (HTTP).<br /><br /> Si usa Windows Installer para implementar la solución, debe agregar el prefijo **file:///** a la ruta de acceso del **manifiesto** . También debe agregar la cadena **&#124; vstolocal** (es decir, el carácter de canalización **&#124;** seguido **vstolocal**) al final de esta ruta de acceso. Esto garantiza que la solución se cargue desde la carpeta de instalación, no desde la memoria caché de ClickOnce. Para obtener más información, consulta [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Nota:** al compilar un complemento de VSTO en el equipo de desarrollo, Visual Studio agrega automáticamente el **&#124; vstolocal** cadena para esta entrada del registro.|  
   
 ###  <a name="OutlookEntries"></a> Entradas del Registro para las áreas del formulario de Outlook.  
  Si crea un área del formulario personalizada en un complemento de VSTO para Outlook, se usarán entradas del registro adicionales para registrar dicha área en Outlook. Estas entradas se crean en una clave del Registro diferente para cada clase de mensaje que sea compatible con el área del formulario. Estas claves del Registro se encuentran en la siguiente ubicación, donde *Raíz* es HKEY_CURRENT_USER o HKEY_LOCAL_MACHINE.  

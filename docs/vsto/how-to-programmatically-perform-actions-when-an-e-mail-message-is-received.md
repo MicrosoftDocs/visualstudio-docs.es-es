@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3834ee91b06a668052a4fd86e559e0d4dbdd8f39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: acbe1cf2a97018dae1a69e363594d415a9e62c22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-e-mail-message-is-received"></a>Cómo: Realizar acciones al recibir un mensaje de correo electrónico mediante programación
   Este ejemplo realiza acciones personalizadas cuando el usuario recibe un mensaje de correo electrónico.  

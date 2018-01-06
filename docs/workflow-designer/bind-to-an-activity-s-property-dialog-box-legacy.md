@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ffb172b551018ae7352edb7dd9fed44824a794ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ed372e54e0e40d06dbd1ecf818f507c1a425ad03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Enlazar a una actividad &#39; cuadro de diálogo de propiedades de s (heredado)
 Este tema se describe cómo utilizar el **enlazar a una propiedad de Activity** cuadro de diálogo heredado [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  

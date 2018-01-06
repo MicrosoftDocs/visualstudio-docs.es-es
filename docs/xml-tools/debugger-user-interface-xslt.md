@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 422dd91a5b8e22bb9859d8ffa10160bdbe77a021
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 1071db6a7a8205ef337737473a18d1a6c31af43c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 En este tema se describen las ventanas y los cuadros de diálogo del depurador. Solo se explican las partes de la interfaz de usuario que tienen un comportamiento de depuración específico de XSLT.  
@@ -26,13 +27,13 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
 ## <a name="locals-window"></a>Ventana Locales  
  La ventana Locales muestra información acerca de las variables definidas en la hoja de estilos. Contiene tres columnas de información:  
   
- **Nombre**  
+ **Name**  
  Esta columna contiene los nombres de todas las variables locales del ámbito actual. Los conjuntos de nodos se controlan como un árbol, por el que puede desplazarse para ver sus subcarpetas.  
   
  **Valor**  
  Esta columna muestra el valor que contiene cada variable. Los nodos de atributo, instrucción de procesamiento, comentario, texto y CData muestran el valor de texto del nodo. Los nodos de espacio de nombres muestran el URI del espacio de nombres.  
   
- **ype**  
+ **Type**  
  Esta columna identifica el tipo de datos de cada variable mostrada en el **nombre** columna.  
   
  La ventana Locales muestra también las variables de contexto predefinidas que realizan el seguimiento del contexto de la transformación XSLT. En la tabla siguiente se describen las variables de contexto predefinidas que emplea el depurador de XSLT.  

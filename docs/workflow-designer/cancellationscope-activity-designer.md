@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 4b2ad28e6b89273b5fdb55e4cfa35d1df292221a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c6e9206eff3eaaeb3b5a79bb8457738c21af05c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cancellationscope-activity-designer"></a>Diseñador de actividades CancellationScope
 El **CancellationScope** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.CancellationScope> actividad.  

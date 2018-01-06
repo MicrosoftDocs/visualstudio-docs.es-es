@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c8bdc3930e09dce6607df10f9d8db004f9a3f2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: de32c5de84bf915bf3e9de21171ec3ab1ad7aee7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `entryPointsCollection` del espacio de nombres `vstav3` contiene todos los elementos `entryPoints` asociados a soluciones de Office.  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
  `entryPointsCollection` tiene los siguientes elementos.  
   
 ### <a name="entrypoints"></a>entryPoints  
- Obligatorio. El rol de la `entryPoints` elemento en el `vstav3` espacio de nombres se define en [&#60; entryPoints &#62; Elemento &#40; desarrollo de Office en Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Requerido. El rol de la `entryPoints` elemento en el `vstav3` espacio de nombres se define en [&#60; entryPoints &#62; Elemento &#40; desarrollo de Office en Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Ejemplo de personalización de nivel de documento  
   

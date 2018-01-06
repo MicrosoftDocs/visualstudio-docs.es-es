@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-workflow-project"></a>Crear un proyecto de flujo de trabajo
 Los flujos de trabajo, los servicios de flujo de trabajo de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)], las actividades personalizadas y los diseñadores de actividad personalizados se pueden crear mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En esta sección se describe cómo crear bibliotecas y aplicaciones con las plantillas de proyecto disponibles en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 413054698d241a1580a850c271e8710334c020f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f45aed7a9d49bb3803137aac3420a6a61c5de3aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>Referencia de interfaz de usuario (desarrollo de Office en Visual Studio)
   Los siguientes elementos de la interfaz de usuario forman parte de proyectos de Office en Visual Studio.  

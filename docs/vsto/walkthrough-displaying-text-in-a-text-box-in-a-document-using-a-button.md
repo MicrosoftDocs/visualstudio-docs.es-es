@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75146e583f2b15557a2f88ba18ed5d8798c7603b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 28d755d6123b2911bccd10e668212e1ea6a54484
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button"></a>Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón
   Este tutorial muestra cómo usar los botones y cuadros de texto en una personalización de nivel de documento para Microsoft Office Word.  
@@ -71,9 +72,9 @@ ms.lasthandoff: 10/31/2017
   
 5.  Arrastre un **botón** controlar al documento y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**insertText**|  
+    |**Name**|**insertText**|  
     |**Texto**|**Insertar texto**|  
   
  Ahora puede escribir el código que se ejecutará cuando se haga clic en el botón.  

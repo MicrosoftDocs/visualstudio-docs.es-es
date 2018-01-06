@@ -25,11 +25,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a16c564b39afdc2ec3cf3e15883fc05b2a13f5d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: add11e32bfdac58d0fc2f057a1ce72e0aece3c7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Cómo: Agregar controles en la vista Backstage
   Puede utilizar el Diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en el **archivo** ficha al ejecutar la aplicación, los controles que agregue a la **archivo** ficha aparece un grupo denominado  **Complementos**.  

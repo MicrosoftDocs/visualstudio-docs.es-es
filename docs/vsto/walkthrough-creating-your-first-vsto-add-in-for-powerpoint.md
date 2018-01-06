@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655aea7bed7e61bd37f30240d02a8214b9ff23ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d0f0a2162c4144c6a9fd67650d467b9828a3add
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-powerpoint"></a>Tutorial: Crear el primer complemento de VSTO para PowerPoint
   Este tutorial muestra cómo crear un complemento de VSTO para Microsoft Office PowerPoint. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de qué presentaciones están abiertas. Para obtener más información, vea [información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -73,13 +74,13 @@ ms.lasthandoff: 10/31/2017
 ## <a name="writing-code-that-adds-text-to-each-new-slide"></a>Escribir código que agregue texto a cada nueva diapositiva  
  A continuación, agregue código al archivo de código ThisAddIn. El nuevo código usa el modelo de objetos de PowerPoint para agregar un cuadro de texto a cada nueva diapositiva. De forma predeterminada, el archivo de código ThisAddIn contiene el siguiente código generado:  
   
--   Una definición parcial de la clase `ThisAddIn`. Esta clase proporciona un punto de entrada para el código y proporciona acceso al modelo de objetos de PowerPoint. Para obtener más información, consulta [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). El resto de la clase `ThisAddIn` se define en un archivo de código oculto que no se debe modificar.  
+-   Una definición parcial de la clase `ThisAddIn` . Esta clase proporciona un punto de entrada para el código y proporciona acceso al modelo de objetos de PowerPoint. Para obtener más información, consulta [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). El resto de la clase `ThisAddIn` se define en un archivo de código oculto que no se debe modificar.  
   
 -   Los controladores de eventos `ThisAddIn_Startup` y `ThisAddIn_Shutdown` . Se llama a estos controladores de eventos cuando PowerPoint carga y descarga el complemento de VSTO. Use estos controladores de eventos para inicializar el complemento de VSTO cuando se cargue y para limpiar los recursos que usa el complemento de VSTO cuando se descargue. Para obtener más información, consulta [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
 #### <a name="to-add-a-text-box-to-each-new-slide"></a>Para agregar un cuadro de texto a cada nueva diapositiva  
   
-1.  En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn`. Este código define un controlador de eventos para el evento <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> del objeto <xref:Microsoft.Office.Interop.PowerPoint.Application>.  
+1.  En el archivo de código ThisAddIn, agregue el código siguiente a la clase `ThisAddIn` . Este código define un controlador de eventos para el evento <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide> del objeto <xref:Microsoft.Office.Interop.PowerPoint.Application>.  
   
      Cuando el usuario agrega una nueva diapositiva a la presentación activa, este controlador de eventos agrega un cuadro de texto a la parte superior de la nueva diapositiva y agrega texto al cuadro de texto.  
   
@@ -92,7 +93,7 @@ ms.lasthandoff: 10/31/2017
   
  Para modificar cada nueva diapositiva, los ejemplos de código anteriores usan los siguientes objetos:  
   
--   El campo `Application` de la clase `ThisAddIn`. El campo `Application` devuelve un objeto <xref:Microsoft.Office.Interop.PowerPoint.Application> que representa la instancia actual de PowerPoint.  
+-   El campo `Application` de la clase `ThisAddIn` . El campo `Application` devuelve un objeto <xref:Microsoft.Office.Interop.PowerPoint.Application> que representa la instancia actual de PowerPoint.  
   
 -   El parámetro `Sld` del controlador de eventos para el evento <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide>. El parámetro `Sld` es un objeto <xref:Microsoft.Office.Interop.PowerPoint.Slide> que representa la nueva diapositiva. Para obtener más información, consulte [soluciones de PowerPoint](../vsto/powerpoint-solutions.md).  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "60"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d6fa02174a8b334b404a0a4ea84ee0e8089c584
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 35f5a865faafc730a13f5d0cd3a432a724434dde
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en un documento utilizando botones de radio
   En este tutorial se demuestra cómo usar los botones de radio en una personalización de nivel de documento para Microsoft Office Word a fin de ofrecer a los usuarios la opción de seleccionar estilos de gráfico en el documento.  
@@ -94,30 +95,30 @@ ms.lasthandoff: 10/31/2017
   
 2.  Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre el primer **botón de Radio** controlar al control de usuario y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**columnChart**|  
+    |**Name**|**columnChart**|  
     |**Texto**|**Gráfico de columnas**|  
   
 3.  Agregue un segundo **botón de Radio** al usuario controlar y cambiar las propiedades siguientes.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**barChart**|  
+    |**Name**|**barChart**|  
     |**Texto**|**Gráfico de barras**|  
   
 4.  Agregue un tercer **botón de Radio** al usuario controlar y cambiar las propiedades siguientes.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**lineChart**|  
+    |**Name**|**lineChart**|  
     |**Texto**|**Gráfico de líneas**|  
   
 5.  Agregue un cuarto **botón de Radio** al usuario controlar y cambiar las propiedades siguientes.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**areaBlockChart**|  
+    |**Name**|**areaBlockChart**|  
     |**Texto**|**Gráfico de bloques de áreas**|  
   
 ## <a name="adding-references"></a>Agregar referencias  

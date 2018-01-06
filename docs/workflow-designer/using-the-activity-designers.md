@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 91ce5811be2aae3744afb7444ab35a9a3da54a20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5e82bde3e7d30fd0516deb4f79ff89bb77d19709
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-activity-designers"></a>Utilizar los diseñadores de actividades
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] incluye varias actividades proporcionadas por el sistema que puede utilizar cuando cree actividades y flujos de trabajo. En esta sección se describen las categorías de las actividades proporcionadas por el sistema y los diseñadores correspondientes que están disponibles. Los temas de las actividades individuales y sus diseñadores respectivos dentro de cada una de estas categorías describen lo que hacen estas actividades y proporcionan orientación sobre cómo utilizarlas.  

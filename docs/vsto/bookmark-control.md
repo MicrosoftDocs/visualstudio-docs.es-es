@@ -21,11 +21,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d846c1a0a52011991d231e567c1727e456a1feee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a946c190197b40dbc51fe2ddbcff434a21d84c11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bookmark-control"></a>Bookmark (control)
   El control <xref:Microsoft.Office.Tools.Word.Bookmark> es un marcador que tiene un nombre único, expone eventos y se puede enlazar a datos. El marcador se puede usar como marcador de posición para marcar un elemento o una ubicación en un documento de Microsoft Office Word. El control <xref:Microsoft.Office.Tools.Word.Bookmark> s una combinación de un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> y un objeto <xref:Microsoft.Office.Interop.Word.Range> .  
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
 |Bookmark1|This is replacement|  
 |Bookmark2|text.|  
   
- Si un marcador está totalmente contenido en otro marcador y se cambia el texto del marcador exterior, el marcador interno no se elimina. Sin embargo, el marcador interno se convierte en un marcador vacío que se desplaza al final del marcador exterior. En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten con él la frase "This is sample text.".  
+ Si un marcador está totalmente contenido en otro marcador y se cambia el texto del marcador exterior, el marcador interno no se elimina. Sin embargo, el marcador interno se convierte en un marcador vacío que se desplaza al final del marcador exterior. En la tabla siguiente se muestra cómo un marcador incluido en otro marcador comparte con él la frase "This is sample text.".  
   
 |Marcador|Texto|  
 |--------------|----------|  

@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea195b8b3af284858253e6300b9a4484eb30f757
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b6952cfdebb38030d154ad022a799c07fcb9721b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor"></a>Editor XML
 El Editor XML se basa en el [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Editor de texto de Visual Studio e incluye compatibilidad adicional con los lenguajes XML. Incluye las siguientes características:  

@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 824388d1324095ed8296fd89c71b955967c9bfb2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f5f8b606008c66e2c0c173351d5e3d31c808c996
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Cómo: Crear un calendario personalizado mediante programación
   Este ejemplo crea una nueva carpeta de calendario denominada **PersonalCalendar**y, a continuación, crea un nuevo elemento de cita y lo agrega a la carpeta de calendario. El código muestra, a continuación, la carpeta de calendario.  

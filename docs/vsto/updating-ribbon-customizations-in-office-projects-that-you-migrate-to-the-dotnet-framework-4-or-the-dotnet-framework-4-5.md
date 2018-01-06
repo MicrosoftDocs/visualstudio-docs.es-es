@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d1aa39880145513049134871a48210a0e1e0b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d2c7dfef925ff61255e57315a3980fa6a145c235
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar las personalizaciones de la Cinta en los proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5
   Si el proyecto contiene una personalización de cinta que se creó mediante la **cinta (diseñador Visual)** de elementos de proyecto, debe realizar los siguientes cambios en el código del proyecto si se cambia la plataforma de destino a la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o más adelante.  
@@ -154,7 +155,7 @@ ms.lasthandoff: 10/31/2017
   
  En la siguiente tabla se enumeran los eventos de Ribbon y los delegados que se asocian a ellos en proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior.  
   
-|Evento|Delegado a usar en proyectos de la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] y posterior|  
+|evento|Delegado a usar en proyectos de la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] y posterior|  
 |-----------|---------------------------------------------------------------------------------------------------|  
 |Evento <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> en una clase Ribbon generada|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  

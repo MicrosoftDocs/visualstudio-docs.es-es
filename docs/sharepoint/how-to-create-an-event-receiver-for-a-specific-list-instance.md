@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3db5af044b1e3eb25e68c96a42335082fd3523f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a820bc1a29db10fa5f65f1781c30218c62c2ee08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Cómo: Crear un receptor de eventos para una instancia de lista genérica
   Un receptor de eventos de la instancia de lista responde a los eventos que se producen en cualquier instancia de una definición de lista. Aunque la plantilla de receptor de eventos no permitir que los destinatarios de una instancia de lista genérica, puede modificar un receptor de eventos en el ámbito de una definición de lista para responder a eventos en una instancia de lista concreta.  

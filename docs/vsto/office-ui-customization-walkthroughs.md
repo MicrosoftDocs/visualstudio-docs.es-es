@@ -20,11 +20,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed22d8b5fced2f423d6c6f1af764ba3ccf07a21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4ae3cc188c08088321ede661cef36cd8102e8fb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Tutoriales de personalización de la interfaz de usuario de Office
   En los siguientes tutoriales se muestran mecanismos para personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante personalizaciones de nivel del documento y complementos de VSTO.  

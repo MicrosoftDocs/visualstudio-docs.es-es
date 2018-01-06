@@ -27,11 +27,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 513b2216a99f37ba3aff1174965470b20921072f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: dc29b307f6459e3a5841ae1dd1c60ae9ab9ed152
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Plantillas de proyecto y de elementos de proyecto de SharePoint
   En las secciones siguientes se describen el proyecto de SharePoint y las plantillas de elemento de proyectos disponibles y cómo se utilizan. 
@@ -111,7 +112,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="list"></a>Lista  
  Una lista es una instancia de una definición de lista de base reutilizable de SharePoint, como un calendario o una lista de tareas. Después de agregar una lista a la solución, el Diseñador de listas permite agregar columnas de sitio a la lista y crear columnas de lista personalizada. Esto incluye columnas de sitio de tipos de contenido. Puede especificar el *vista* para la lista, que determina las columnas que aparecerán en la lista. Para obtener más información, consulte [Tutorial: crear una columna de sitio, el tipo de contenido y la lista de SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) y [bloques de creación: listas y bibliotecas de documentos](http://go.microsoft.com/fwlink/?LinkId=179421).  
   
-### <a name="module"></a>Módulo  
+### <a name="module"></a>Module  
  *Módulos* (no se deben confundir con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] módulos) contienen los archivos que desea implementar en el servidor de SharePoint, como imágenes o notas. El elemento de proyecto de módulo contiene un **módulo** nodo. El nodo Módulo contiene dos plantillas de elementos de proyecto: un archivo de definición de XML, que actúa como manifiesto del módulo, y un archivo sample.txt, un archivo de marcador de posición. Para obtener más información, consulte [mediante módulos para incluir archivos de la solución](../sharepoint/using-modules-to-include-files-in-the-solution.md) y [módulos](http://go.microsoft.com/fwlink/?LinkId=179425).  
   
 ### <a name="sequential-workflow-farm-solution-only"></a>Flujo de trabajo secuencial (solución de granja de servidores únicamente)  

@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64bac205a64eaf321bb0144d9f81edfa065b9029
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3d585c6019455fae5305a848ef62c74cfedf6b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-ranges"></a>Trabajar con rangos
   Las clases <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Interop.Excel.Range> contienen los métodos y las propiedades que se usan para llevar a cabo tareas con rangos.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 |Aplicar estilos a las celdas de una región.|[Cómo: Aplicar estilos a rangos de libros mediante programación](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)|  
 |Buscar texto en rangos de hojas de cálculo.|[Cómo: Buscar texto en rangos de hojas de cálculo mediante programación](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)|  
 |Aplicar color al texto de un rango de celdas.|[Cómo: Aplicar color a rangos de Excel mediante programación](../vsto/how-to-programmatically-apply-color-to-excel-ranges.md)|  
-|Ejecutar cálculos de Excel mediante programación.|[Cómo: ejecutar cálculos de Excel](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
+|Ejecutar cálculos de Excel mediante programación.|[Ejecución de cálculos de Excel mediante programación](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)|  
 |Mostrar una cadena en una celda.|[Cómo: Mostrar una cadena en la celda de una hoja de cálculo mediante programación](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md)|  
   
  Para obtener más información sobre las tareas de Excel y el modelo de objetos de Excel, consulte [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  

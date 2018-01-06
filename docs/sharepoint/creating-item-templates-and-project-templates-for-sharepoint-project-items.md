@@ -22,11 +22,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7ea1c76cda46313458dcac01b415e7541732a26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1946d31d1e0f508267300c14551b0a8efff81587
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint
   Cuando se define un tipo de elemento de proyecto de SharePoint personalizado, puede asociar con una plantilla de elementos o una plantilla de proyecto para que otros desarrolladores podrán usar el elemento de proyecto en Visual Studio. También puede crear a un Asistente para la plantilla.  

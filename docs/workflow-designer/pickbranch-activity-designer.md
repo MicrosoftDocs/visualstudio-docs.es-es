@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 9a77adbe5e2663ef11242d162b6ac718d88daea5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d583c662de31b990982b78d876bc0046e89089d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pickbranch-activity-designer"></a>Diseñador de actividades PickBranch
 La clase <xref:System.Activities.Statements.PickBranch> proporciona una ruta de acceso basada en eventos de ejecución en una actividad de la clase <xref:System.Activities.Statements.Pick> que un evento de entrada puede desencadenar.  
@@ -59,4 +60,4 @@ La clase <xref:System.Activities.Statements.PickBranch> proporciona una ruta de 
 ## <a name="see-also"></a>Vea también  
  [Flujo de control](../workflow-designer/control-flow-activity-designers.md)   
  [Actividad Pick](/dotnet/framework/windows-workflow-foundation/pick-activity)   
- [Uso de la actividad de selección](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)
+ [Uso de la actividad Pick](/dotnet/framework/windows-workflow-foundation/samples/using-the-pick-activity)

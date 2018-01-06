@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8186110b04e3ff56b3c6b0cad03890f3233c03d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2339ee60e66bca7578c2d5d1e89c7bb649b15b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-sharepoint-solutions"></a>Localizar soluciones de SharePoint
   El proceso de preparar las aplicaciones para que se pueden usar en todo el mundo se conoce como la localización. Localización es traducir los recursos para una referencia cultural concreta. Para obtener más información, consulte [Globalizar y localizar aplicaciones](/visualstudio/ide/globalizing-and-localizing-applications). Este tema proporciona información general sobre cómo localizar una solución de SharePoint.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
   
 |Tipo de archivo de recursos|Descripción|  
 |------------------------|-----------------|  
-|Predeterminado|También conocido como un recurso de reserva, archivos de recursos predeterminados contienen cadenas localizadas en la referencia cultural predeterminada, como el inglés. Se utilizan si no se encuentra ningún archivo de recursos localizado para el idioma especificado. Recursos predeterminados no tienen archivos independientes, se almacenan en el ensamblado de aplicación principal.|  
+|Default|También conocido como un recurso de reserva, archivos de recursos predeterminados contienen cadenas localizadas en la referencia cultural predeterminada, como el inglés. Se utilizan si no se encuentra ningún archivo de recursos localizado para el idioma especificado. Recursos predeterminados no tienen archivos independientes, se almacenan en el ensamblado de aplicación principal.|  
 |Independiente del idioma|Un archivo de recursos que contiene cadenas localizadas en un idioma, pero no una referencia cultural concreta. Por ejemplo, "fr" para francés.|  
 |Específico del idioma|Un archivo de recursos que contiene cadenas localizadas en un idioma y una referencia cultural. Por ejemplo, "fr-CA" para francés canadiense.|  
   

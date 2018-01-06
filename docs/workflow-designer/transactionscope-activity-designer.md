@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 1f5d948171b78c9d9e5b42cefcf5b051faf20c78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9c9b9ab609825a68edc4e2862d64bdd7cb830202
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="transactionscope-activity-designer"></a>Diseñador de actividades TransactionScope
 El **TransactionScope** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.TransactionScope> actividad.  

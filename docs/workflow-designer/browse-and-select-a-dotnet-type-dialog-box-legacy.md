@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2733464db0ab6047af7c47fb8278d7126b41fe6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 441ec5380e6b722b96fee731388b652a86a6828b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET (Heredado)
 Este tema se describe cómo utilizar el **examinar y seleccionar un tipo .NET** cuadro de diálogo heredado [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -29,7 +30,7 @@ Este tema se describe cómo utilizar el **examinar y seleccionar un tipo .NET** 
 |Elemento de la interfaz de usuario|Descripción|  
 |----------------|-----------------|  
 |**Nombre del tipo:**|Nombre del tipo actualmente seleccionado.|  
-|**ype**|En el panel izquierdo se muestra una vista de árbol de los Ensamblados a los que se hace referencia. En el panel derecho se muestran los tipos disponibles para la selección del Ensamblado al que se hace referencia seleccionado en el panel izquierdo.|  
+|**Type**|En el panel izquierdo se muestra una vista de árbol de los Ensamblados a los que se hace referencia. En el panel derecho se muestran los tipos disponibles para la selección del Ensamblado al que se hace referencia seleccionado en el panel izquierdo.|  
   
 ## <a name="see-also"></a>Vea también  
  [Usar el diseñador de actividad Legacy](../workflow-designer/using-the-legacy-activity-designer.md)

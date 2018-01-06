@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae6ff23763300a4baa748479c609217123c765c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 37da15cce48bd16e022db42fa8a08a2b9633b5fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento de VSTO
   Puede agregar controles a cualquier hoja de cálculo abierta mediante el uso de un complemento de VSTO de Excel. Este tutorial muestra cómo usar la cinta para permitir a los usuarios agregar un <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Tools.Excel.ListObject> a una hoja de cálculo. Para obtener información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -76,21 +77,21 @@ ms.lasthandoff: 10/31/2017
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**Button**|  
+    |**Name**|**Button**|  
     |**Label**|**Button**|  
   
 6.  Agregue una segunda casilla a **group1**, y, a continuación, cambie las siguientes propiedades.  
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**NamedRange**|  
+    |**Name**|**NamedRange**|  
     |**Label**|**NamedRange**|  
   
 7.  Agregue una tercera casilla a **group1**y, a continuación, cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**ListObject**|  
+    |**Name**|**ListObject**|  
     |**Label**|**ListObject**|  
   
 ## <a name="adding-controls-to-the-worksheet"></a>Agregar controles a la hoja de cálculo  
@@ -131,7 +132,7 @@ ms.lasthandoff: 10/31/2017
      [!code-csharp[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#4)]
      [!code-vb[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#4)]  
   
-9. Agregue las siguientes instrucciones a la parte superior del archivo de código de la cinta de opciones.  
+9. Agregue las siguientes instrucciones a la parte superior del archivo de código de la cinta.  
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  

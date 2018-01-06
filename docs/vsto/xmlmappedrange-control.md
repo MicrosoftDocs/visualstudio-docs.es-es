@@ -19,11 +19,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 391964152c48601b11b10ce6d8001d2d303a9a01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 27cd0f62c7670d56143180d24074e5c6002051f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange (Control)
   El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control es un rango que sólo se crea cuando se asigna un elemento de esquema no repetitivo en una celda en Microsoft Office Excel. Por ejemplo, cuando el `maxOccurs` atributo de un elemento de esquema es igual a 1. Después de que Visual Studio crea el rango XML asignado, puede programar con ella directamente sin tener que recorrer el modelo de objetos de Excel. Sólo se puede eliminar un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control dentro de Excel cuando se quita la asignación de elemento.  

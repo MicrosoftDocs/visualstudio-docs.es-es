@@ -21,11 +21,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf214f2ffc55cf0846373fcaa226253f276e3d69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a0c8d44c32c03f98a0d2621eff3899ded101b7d3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de un documento utilizando controles CheckBox
   Este tutorial muestra cómo usar controles de formularios Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato de texto.  
@@ -73,25 +74,25 @@ ms.lasthandoff: 10/31/2017
   
     |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**applyBoldFont**|  
+    |**Name**|**applyBoldFont**|  
     |**Texto**|**Negrita**|  
   
 4.  Presione **ENTRAR** para mover el punto de inserción por debajo de la primera casilla de verificación.  
   
 5.  Agregar una segunda casilla al documento debajo la `ApplyBoldFont` casilla de verificación y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**applyItalicFont**|  
+    |**Name**|**applyItalicFont**|  
     |**Texto**|**Cursiva**|  
   
 6.  Presione **ENTRAR** para mover el punto de inserción por debajo de la casilla correspondiente al segundo.  
   
 7.  Agregue una tercera casilla al documento debajo la `ApplyItalicFont` casilla de verificación y cambie las siguientes propiedades.  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**applyUnderlineFont**|  
+    |**Name**|**applyUnderlineFont**|  
     |**Texto**|**Subrayado**|  
   
 #### <a name="to-add-text-and-a-bookmark-control"></a>Para agregar texto y un control Bookmark  

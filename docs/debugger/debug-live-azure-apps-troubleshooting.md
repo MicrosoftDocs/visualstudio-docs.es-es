@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problemas conocidos y solución de problemas de instantáneas de depuración en Visual Studio
 
@@ -68,7 +69,7 @@ Siga estos pasos:
 - No se admite actualmente la depuración instantánea con varios clientes de Visual Studio en el mismo servicio de aplicación.
 - Optimizaciones de IL Roslyn no se admiten totalmente en los proyectos de ASP.NET Core. Para algunos proyectos de ASP.NET Core, no puede ver algunas de las variables o usar algunas de las variables en instrucciones condicionales. 
 - Variables especiales, como *$FUNCTION* o *$CALLER*, no se puede evaluar en instrucciones condicionales o logpoints para los proyectos de ASP.NET Core.
-- Depuración instantánea no funciona en los servicios de aplicaciones que tienen [almacenamiento en caché Local](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) activado.
+- Depuración instantánea no funciona en los servicios de aplicaciones que tienen [almacenamiento en caché Local](/azure/app-service/app-service-local-cache) activado.
 - Depurar aplicaciones de la API de instantánea no se admite actualmente.
 
 ## <a name="see-also"></a>Vea también

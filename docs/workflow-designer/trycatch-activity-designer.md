@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a00afe1ac5e0eda29378a439398bc6bd4d90e71b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9fe179a0e1aee4ff929974899d26df48f669ccd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="trycatch-activity-designer"></a>Diseñador de actividades TryCatch
 El **TryCatch** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.TryCatch> actividad.  

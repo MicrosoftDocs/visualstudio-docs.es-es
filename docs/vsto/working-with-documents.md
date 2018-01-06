@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2236ecbc6bb30ff3cfba9bebd5d5e5509f54721a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c18ae3fb8c3366c1c8e552f4b5f24a34004ce9d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-documents"></a>Trabajar con documentos
   En los temas de esta sección se proporcionan procedimientos detallados y ejemplos de código para usar el modelo de objetos de Microsoft Office Word de modo que funcione con documentos en proyectos de Office.  

@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3f1e9fca25f29bd7e649816a0529a58c7ec2f7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38d37d1c7805e98d8cf90fbb2e96e1d3c444313c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor-components"></a>Componentes del Editor XML
 En esta sección se describen las ventanas y los cuadros de diálogo del Editor XML. Como el Editor XML se basa en el Editor de texto, parte del entorno de desarrollo integrado (IDE) está configurado con las opciones generales del Editor de texto.  

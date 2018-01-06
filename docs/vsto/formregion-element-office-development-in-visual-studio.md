@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0c34dc6e3cc7fd9339e9f2a183bcc11d54008e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: bc425459cee4b4398ead78939283ab4db6efc134
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `formRegion` del espacio de nombres `vstov4` identifica un área de formulario de Microsoft Office Outlook que está asociada a un complemento de VSTO.  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Obligatorio. Identifica el nombre del área de formulario.|  
+|`name`|Requerido. Identifica el nombre del área de formulario.|  
   
  El elemento `formRegion` tiene los siguientes elementos secundarios.  
   
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Obligatorio. Identifica el formulario asociado a este área de formulario.|  
+|`name`|Requerido. Identifica el formulario asociado a este área de formulario.|  
   
 ## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo de código se muestra un elemento `formRegion` en un manifiesto de aplicación para un complemento de VSTO de Outlook implementado mediante [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Hay tres clases de mensajes asociadas a esta área de formulario. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).  

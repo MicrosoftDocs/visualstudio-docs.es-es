@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6ac342921696cb2a88426e2fd1f1ddee79e9341c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1c0b55f1539526e9386df2d6de050c14fb8f59cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Editor de conjunto de reglas (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo utilizar el **Editor de conjunto de reglas** cuadro de diálogo heredado [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -39,7 +40,7 @@ Este tema se describe cómo utilizar el **Editor de conjunto de reglas** cuadro 
 |**Agregar regla**|Agrega una definición de regla al conjunto de reglas.|  
 |**Eliminar**|Elimina la regla seleccionada del conjunto de reglas.|  
 |**Encadenamiento**|Especifica qué tipo de encadenamiento hacia delante se debe utilizar con el conjunto de reglas. Las opciones disponibles son:<br /><br /> -   **Encadenamiento completo**, que especifica que se use reenviar todos los mecanismos de encadenamiento: implícito, atribución de método y explícito utilizando una **actualización** función.<br />-   **Secuencial**, que especifica no se utiliza ningún encadenamiento hacia adelante.<br />-   **Sólo actualización explícita**, que especifica que sólo realice encadenamiento hacia adelante en **actualización** acciones.<br /><br /> Para obtener más información sobre el encadenamiento progresivo, vea [mediante la actividad PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|  
-|**Nombre**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por nombre.|  
+|**Name**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por nombre.|  
 |**Prioridad**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por prioridad.|  
 |**Reevaluación**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por tipo de reevaluación.|  
 |**Vista previa de la regla**|Encabezado de columna de la lista de conjuntos de reglas. Haga clic en él para ordenar la lista de reglas por la vista previa de la condición y las acciones de una regla.|  

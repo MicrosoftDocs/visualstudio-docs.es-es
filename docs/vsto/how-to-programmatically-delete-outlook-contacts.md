@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50cb56a8f1df730f3aa4ee214df50188b7ec94ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cfa9bf22d384b564a4051681bded69a2b186c9c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>Cómo: Eliminar contactos de Outlook mediante programación
   En este ejemplo se elimina un contacto. En el ejemplo se supone que existe un contacto llamado "Armando Pinto" en la carpeta **Contactos** .  

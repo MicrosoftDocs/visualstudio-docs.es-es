@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: faf46489be0b9a56485fc93c2138a7f6702c4778
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7ced5627420f5ac90da2cae1a2930dbd0b973dbc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Cómo: Agregar una referencia de salida del proyecto
   Para implementar los ensamblados del proyecto no es de SharePoint (o los archivos .xap en proyectos de Silverlight) en SharePoint, agréguelos como una referencia de salida del proyecto.  

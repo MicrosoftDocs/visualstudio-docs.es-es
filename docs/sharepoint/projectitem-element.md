@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8a9f1ac258f6501aedb2fd89ce21514d785b25f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 240518544f906e68ad443adf55fef20ef2bac879
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectitem-element"></a>ProjectItem (Elemento)
   Representa un elemento de proyecto de SharePoint. Este es el elemento raíz necesario del archivo .spdata.  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 |**FeatureReceiverAssembly**|Opcional **xs: String** atributo.<br /><br /> Especifica el nombre completo de un ensamblado que define un receptor de características para este elemento de proyecto de SharePoint. Para obtener más información acerca de los receptores de características, vea [proporcionar información de implementación en los elementos de proyecto de empaquetado e](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md). Para obtener más información acerca de los nombres de ensamblado completo, vea [nombres de ensamblado](/dotnet/framework/app-domains/assembly-names).|  
 |**SupportedTrustLevels**|Opcional **xs: String** atributo.<br /><br /> Especifica los niveles de confianza que admite este elemento de proyecto de SharePoint. Este valor puede ser una de las siguientes cadenas: en espacio aislado, de plena confianza, o todos. El valor All especifica Sandboxed y plena confianza.<br /><br /> En un tipo de elemento de proyecto de SharePoint personalizado, el valor de este atributo corresponde al valor que se asigna a la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propiedad en la implementación de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Si especifica un valor diferente para este atributo, Visual Studio sobrescribe el valor de manera que especifique el mismo nivel de confianza que se especifica en el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> propiedad.|  
 |**SupportedDeploymentScopes**|Opcional **xs: String** atributo.<br /><br /> Especifica los ámbitos de implementación que admite este elemento de proyecto de SharePoint. Este valor es una cadena delimitada por comas que consta de una o varias de las siguientes cadenas: granja de servidores, sitio, Web, WebApplication o paquete. Por ejemplo, "Web, sitio".<br /><br /> En un tipo de elemento de proyecto de SharePoint personalizado, el valor de este atributo corresponde al valor que se asigna a la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propiedad en la implementación de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Si especifica un valor diferente para este atributo, Visual Studio sobrescribe el valor de manera que especifique el mismo nivel de confianza que se especifica en el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> propiedad.|  
-|**ype**|Requiere **xs: String** atributo.<br /><br /> El identificador para el elemento de proyecto de SharePoint. En un tipo de elemento de proyecto de SharePoint personalizado, el identificador es una cadena que se pasa a la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para obtener más información, consulte [Cómo: definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Para obtener una lista de los identificadores para los elementos de proyecto de SharePoint integrados incluidos con Visual Studio, vea [extender elementos de proyecto de SharePoint](../sharepoint/extending-sharepoint-project-items.md).|  
+|**Type**|Requiere **xs: String** atributo.<br /><br /> El identificador para el elemento de proyecto de SharePoint. En un tipo de elemento de proyecto de SharePoint personalizado, el identificador es una cadena que se pasa a la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para obtener más información, consulte [Cómo: definir un tipo de elemento de proyecto de SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).<br /><br /> Para obtener una lista de los identificadores para los elementos de proyecto de SharePoint integrados incluidos con Visual Studio, vea [extender elementos de proyecto de SharePoint](../sharepoint/extending-sharepoint-project-items.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**Espacio de nombres**|http://schemas.Microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  

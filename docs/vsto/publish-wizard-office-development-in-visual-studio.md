@@ -23,11 +23,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eeb0a002e2d62b9066165a99ce474cf7a01a88f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1f74bdf7b740fbf8d30df78f1433196d21c0ebbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (Desarrollo de Office en Visual Studio)
   Use la **Asistente para publicación** para copiar archivos de la solución en una ubicación especificada, crear los archivos de manifiesto y crear un programa de instalación.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="where-do-you-want-to-publish-the-application"></a>¿Dónde desea publicar la aplicación?  
  **Especifique la ubicación para publicar esta aplicación**  
- Obligatorio. La ubicación de publicación es el directorio donde el **Asistente para publicación** copia los archivos de solución como los manifiestos, los ensamblados, los certificados temporales y otros archivos de la compilación. Es necesario tener acceso de escritura a este directorio.  
+ Requerido. La ubicación de publicación es el directorio donde el **Asistente para publicación** copia los archivos de solución como los manifiestos, los ensamblados, los certificados temporales y otros archivos de la compilación. Es necesario tener acceso de escritura a este directorio.  
   
  Escriba la ubicación como una ruta de acceso de disco, el recurso compartido de archivos, el sitio FTP o la dirección URL del sitio web, o haga clic en el **examinar** botón para buscar la ubicación. La ruta de acceso puede estar en estos formatos:  
   

@@ -11,11 +11,12 @@ ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 caps.latest.revision: "7"
 ms.author: sdanie
 manager: erikre
-ms.openlocfilehash: 211dfeb11fe04ab147c330fb70787e17955a3c14
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ba933b2eebb7193f8ee93852ce2a047f01ca4e0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="transition-activity-designer"></a>Diseñadores de actividad de transición
 <xref:System.Activities.Statements.Transition> representa la transición entre dos estados.  

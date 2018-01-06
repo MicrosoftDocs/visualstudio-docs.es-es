@@ -10,16 +10,18 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
+helpviewer_keywords: 
 ms.assetid: 3faf9312-8ab4-4960-b2e7-8ca9859a3dcf
 caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62c1af72158c0b416942e9124003dbeb06b584ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 91a2909d407dbdc7629e189585333a3e4702483d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Se llama a este elemento cuando se carga un complemento VSTO administrado.  
