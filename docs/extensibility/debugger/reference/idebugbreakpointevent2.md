@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea530774bee517a38133ec70c5c8d043527031c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8fedfdf2c978bb3bbb61ba469241fec75cb7dd01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 El motor de depuración (Alemania) envía esta interfaz para el Administrador de sesión de depuración (SDM) cuando un programa se detiene en un punto de interrupción.  

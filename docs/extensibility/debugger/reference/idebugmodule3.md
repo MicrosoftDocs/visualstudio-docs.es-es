@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 95e1c9056b12f1c624a52ee0cf4cbfc8c3272904
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1db551b9f62fbf85cd996e5f14bdb95c5aaca1f2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 Esta interfaz representa un módulo que admite las ubicaciones alternativas de símbolos y Estados de JustMyCode.  

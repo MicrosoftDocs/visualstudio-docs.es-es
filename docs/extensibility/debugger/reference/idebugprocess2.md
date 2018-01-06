@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8b349bee09f068a5777ecc212223c36951236ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 896448526f41514fb74b385f8605839908708305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Esta interfaz representa un proceso que se ejecuta en un puerto. Si el puerto es el puerto local, a continuación, `IDebugProcess2` normalmente representa un proceso físico en el equipo local.  
