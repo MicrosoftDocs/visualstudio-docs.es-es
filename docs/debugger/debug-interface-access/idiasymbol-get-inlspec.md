@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 950384dfce7de39969b054f6c1019fa36c1efa38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8b96e3a44ae1bb03cde58fc28af4871e80aaf4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
-Esta función recupera una marca que indica si la función se marca como alineado (mediante uno de los [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md) atributos).  
+Esta función recupera una marca que indica si la función se marca como alineado (mediante uno de los [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) atributos).  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -50,4 +51,4 @@ HRESULT get_inlSpec(
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp.md)
+ [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp)

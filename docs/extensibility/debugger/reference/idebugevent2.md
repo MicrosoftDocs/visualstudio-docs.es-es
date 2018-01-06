@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1ddf80bca13c390c2d889674120b168cb79e89e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d783cb13ee227e317afe9b49abedb6f53e9fa76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Esta interfaz se utiliza para comunicar información de depuración críticos, como detener en un punto de interrupción e información no críticos, como un mensaje de depuración.  
