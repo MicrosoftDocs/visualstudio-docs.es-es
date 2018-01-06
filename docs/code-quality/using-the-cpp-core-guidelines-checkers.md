@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: a6c32f906ca3edfa8afb27937f859d93c8428168
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: cplusplus
+ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de directrices de núcleo de C++
 Las directrices de núcleo de C++ son un conjunto portátil de directrices, reglas y procedimientos recomendados acerca de cómo escribir código en C++ creados por los diseñadores y los expertos en C++. Visual Studio admite actualmente un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de la directriz principal se instalan de forma predeterminada en Visual Studio de 2017 y se [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -95,7 +96,7 @@ A partir de Visual Studio 2017 versión 15.3, los conjuntos de reglas compatible
 
   - **Reglas de tipos de** exigir la [tipo de perfil de las directrices de núcleo de C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
-  **Visual Studio 2017 versión 15,5**:
+  **Versión 15.5 de Visual Studio 2017**:
   - **Clase reglas** varias reglas que se centran en el uso correcto de métodos especiales y especificaciones virtuales. Se trata de un subconjunto de los controles que se recomienda para [las clases y las jerarquías de clases](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class). 
   - **Las reglas de simultaneidad** una única regla que detecta los objetos declarados badlyly protección. Para obtener más información, consulte [instrucciones relacionados con la simultaneidad](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
   - **Reglas de la declaración** un par de reglas a partir de la [interfaces directrices](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) que se centran en las variables globales de cómo se declaran.  

@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed9a9fa2261ff034d7e2c870d4ee9fc557a39e47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bc9c5b87933940b2f1f98766c1fd477460bf18b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
 Recupera una enumeración que permite a un cliente recorrer en iteración la información del número de línea de todas las funciones que están entre líneas, directa o indirectamente, en este símbolo en la dirección virtual relativa (RVA) especificada.  

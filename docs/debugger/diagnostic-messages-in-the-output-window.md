@@ -30,11 +30,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2b898921b022dde9a666a42725bf63c0bb9e6ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Enviar mensajes de diagnóstico a la ventana de salida
 Puede escribir mensajes en tiempo de ejecución para la **salida** ventana mediante el `Debug` clase o la `Trace` (clase), que forman parte de la <xref:System.Diagnostics> biblioteca de clases. Utilice la clase Debug si sólo genera resultados en la versión de depuración del programa. Utilice la clase Trace si desea generar resultados en las versiones de depuración y de lanzamiento.  
@@ -60,7 +61,7 @@ Puede escribir mensajes en tiempo de ejecución para la **salida** ventana media
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Resultados (ventana)](../ide/reference/output-window.md)   
+ [Ventana de salida](../ide/reference/output-window.md)   
  [Seguimiento e instrumentación de aplicaciones](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
  [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Depurar código administrado](../debugger/debugging-managed-code.md)

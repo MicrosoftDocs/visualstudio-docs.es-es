@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea76ebef8903e5d4937cc8d9a35933c9182746f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 34457fb03d02d942c3033eeaa9128764d29e19b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-message-properties"></a>Cómo: Mostrar las propiedades de los mensajes
 Para obtener más información acerca de un mensaje que aparece en [vista mensajes](../debugger/messages-view.md), use la [cuadro de diálogo de propiedades de mensaje](../debugger/message-properties-dialog-box.md).  

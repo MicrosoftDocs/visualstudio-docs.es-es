@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b0050f5022b31020879b45e45da48546e5a7caa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0841e622b0fe7c0d01d374da21a12a151c59021d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addmessage"></a>AddMessage
 Agrega un mensaje personalizado al diagnóstico de gráficos *HUD* (visualización frontal).  
@@ -34,6 +35,6 @@ void AddMessage(
  Mensaje que se va a agregar al HUD.  
   
 ## <a name="remarks"></a>Comentarios  
- El HUD de diagnósticos de gráficos se muestra en la esquina superior izquierda de la aplicación que se ejecuta bajo diagnóstico de gráficos. Muestra información en tiempo de ejecución sobre la aplicación y sobre la captura de información de gráficos, y los mensajes que se agregan al llamar a esta función.  
+ El HUD de diagnóstico de gráficos se muestra en la esquina superior izquierda de la aplicación que se ejecuta bajo diagnóstico de gráficos. Muestra información en tiempo de ejecución sobre la aplicación y sobre la captura de información de gráficos, y los mensajes que se agregan al llamar a esta función.  
   
  Para agregar un mensaje al HUD, no tiene que ser capturaba activamente información de gráficos, es decir, se puede agregar un mensaje a través de una instancia de la `VsgDbg` (clase), pero la [Init](init.md) hace de la función de miembro para que no se llamará en primer lugar. Los mensajes solo se muestran en el HUD, no se registran en el archivo de registro de gráficos.

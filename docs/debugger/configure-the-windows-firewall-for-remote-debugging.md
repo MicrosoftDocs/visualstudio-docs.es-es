@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9432c65ec6a481b23655fb2a92915a4a4365ed5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7458c2f35bfd29c53b939b6300d2759f0e7897f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurar el Firewall de Windows para la depuración remota
 Este tema se describe cómo configurar el firewall para habilitar la depuración remota en equipos que ejecutan los sistemas operativos siguientes:  
@@ -117,8 +118,8 @@ Si se usa el modo de compatibilidad para que el depurador (**Herramientas > Opci
 |||||  
 |-|-|-|-|  
 |**Puertos**|**Entrante/saliente**|**Protocolo**|**Descripción**|  
-|135, 139, 445|Saliente|TCP|Obligatorio.|  
-|137, 138|Saliente|UDP|Obligatorio.|  
+|135, 139, 445|Saliente|TCP|Requerido.|  
+|137, 138|Saliente|UDP|Requerido.|  
 |500, 4500|Saliente|UDP|Necesario si la directiva de dominio exige que la comunicación de red se realice a través de IPSec.|  
 |80|Saliente|TCP|Necesario para la depuración en el servidor web.|
   

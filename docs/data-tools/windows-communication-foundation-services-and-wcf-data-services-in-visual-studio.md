@@ -39,11 +39,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 898cdbd15367aef6ac48d35a44b1ccb4a3deded9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servicios de Windows Communication Foundation y Data Services de WCF en Visual Studio
 Visual Studio proporciona herramientas para trabajar con Windows Communication Foundation (WCF) y [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], las tecnologías de Microsoft para crear aplicaciones distribuyen. Este tema proporciona una introducción a los servicios desde un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspectiva. Para obtener la documentación completa, vea [4.5 de servicios de datos de WCF](/dotnet/framework/data/wcf/index).  

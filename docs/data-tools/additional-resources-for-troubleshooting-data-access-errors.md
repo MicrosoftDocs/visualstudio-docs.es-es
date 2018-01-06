@@ -229,11 +229,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: d578457776afb058ee0f40bba4bb0d208f2f5e66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: ea895859550d1ebb5ddfebe743388dc971d82592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Recursos adicionales para solucionar problemas de errores de acceso de datos
 Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). En la tabla siguiente se enumera los foros relacionados con los datos disponibles en MSDN.  

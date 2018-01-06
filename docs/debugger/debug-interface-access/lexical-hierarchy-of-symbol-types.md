@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0077ababbbcfb1b2dff77a8847f5e0e0671241be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d6f9fe7b24a1e2bdd68d92f6dd22952df0d2a057
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Jerarquía léxica de tipos de símbolos
 En la tabla siguiente muestra los tipos de símbolos en la jerarquía de léxica.  

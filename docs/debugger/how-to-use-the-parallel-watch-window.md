@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 160aa732568f92b7aa768146de13c41867064717
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 570f77cddede91a81dc15200ebcf02b27f1a4f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Establece una inspección en las Variables de subprocesos en paralelo en Visual Studio
 En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las columnas siguientes se muestran en la **inspección paralela** ventana:  
@@ -45,7 +46,7 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
   
 1.  Establezca un punto de interrupción en el código.  
   
-2.  En la barra de menús, elija **depurar**, **Iniciar depuración**. Espere hasta que la aplicación llegue al punto de interrupción.  
+2.  En la barra de menús, seleccione **Depurar**, **Iniciar depuración**. Espere hasta que la aplicación llegue al punto de interrupción.  
   
 3.  En la barra de menús, elija **depurar**, **Windows**, **inspección paralela**y, a continuación, elija una ventana Inspección. Puede abrir hasta cuatro ventanas.  
   

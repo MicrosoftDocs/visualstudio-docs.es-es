@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: afb484c1d3bfdd705c5a28f150e4631048ead49d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 Editar tablas de datos igual que edita los datos de una tabla en cualquier base de datos. El proceso puede incluir insertar, actualizar y eliminar registros en la tabla. En un formulario enlazado a datos, se puede especificar qué campos se puede modificar el usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios pueden enviarse a la base de datos más adelante. Si realiza ediciones mediante programación a los datos y tiene pensado enviar los cambios a la base de datos, debe usar los objetos y métodos que realizan el seguimiento de cambios para usted.  

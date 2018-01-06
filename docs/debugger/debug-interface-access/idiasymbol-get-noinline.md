@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 749fe31448ffa4855f46de59f8449a7c84b5a380
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38a66a8d079ed79b6661e93c49656d9b7b7d5e98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 Recupera una marca que especifica si la función se ha marcado como no está en línea (mediante el [noinline](/cpp/cpp/noinline) atributo).  

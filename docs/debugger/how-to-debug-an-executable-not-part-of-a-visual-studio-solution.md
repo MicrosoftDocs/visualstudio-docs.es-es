@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be07be0e1374360a96b6672b095dcc039c6bb4f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ded5dfaec889e32bbf4c65f8e6a2335fd8c97a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Cómo: depurar un ejecutable que no forma parte de una solución de Visual Studio
 En ocasiones, puede que desee depurar un archivo ejecutable (archivo .exe) que no es parte de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proyecto. Puede tratarse de un archivo ejecutable que se haya creado fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o de un archivo ejecutable que haya recibido de otra persona.  

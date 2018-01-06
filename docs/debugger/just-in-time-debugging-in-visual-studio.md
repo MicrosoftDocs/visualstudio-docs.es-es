@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06beda1fdeda9f62d8f89b9458f488961d39fe29
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c954cd95da7b6dd2ba0c2938852b939ae396525
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Cómo: responder al depurador Just-In-Time
 

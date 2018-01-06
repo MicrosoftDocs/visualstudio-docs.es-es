@@ -17,11 +17,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eba5a9f55e5d3d08eee48dc083a7e2f848118162
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 42c5f99b3bf5ba95bc279cd5e117745ccc8e02c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-refactoring-c"></a>Cambiar el nombre de refactorización (C#)
 **Cambiar el nombre de** es una característica de refactorización en el entorno de desarrollo integrado (IDE) de Visual Studio que proporciona una manera sencilla de cambiar el nombre de los identificadores de símbolos de código, como campos, variables locales, métodos, espacios de nombres, propiedades y tipos. **Cambiar el nombre de** puede utilizarse para cambiar los nombres en los comentarios y en las cadenas y cambiar las declaraciones y las llamadas de un identificador.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 |variable local|Cambia la declaración y los usos de la variable por el nuevo nombre.|  
 |Método|Cambia el nombre del método y todas las referencias a ese método para el nuevo nombre. **Nota:** cuando cambia el nombre de un método de extensión, la operación de cambio de nombre se propagará a todas las instancias del método que se encuentran en el ámbito, con independencia de si se está utilizando el método de extensión como un método estático o un método de instancia. Para más información, vea [Métodos de extensión](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods).|  
 |Espacio de nombres|Cambia el nombre del espacio de nombres para el nuevo nombre en la declaración, todas las `using` instrucciones y nombres completos. **Nota:** al cambiar el nombre de un espacio de nombres [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] también actualiza el **Default Namespace** propiedad en el **aplicación** página de la **Diseñador de proyectos**. Esta propiedad no se puede restablecer seleccionando **deshacer** desde el **editar** menú. Para restablecer la **Default Namespace** valor de propiedad, debe modificar la propiedad en el **Diseñador de proyectos**. Para obtener más información, consulte [página de la aplicación](../ide/reference/application-page-project-designer-csharp.md).|  
-|Propiedad|Cambia la declaración y los usos de la propiedad para el nuevo nombre.|  
+|Property|Cambia la declaración y los usos de la propiedad para el nuevo nombre.|  
 |Tipo|Cambia todas las declaraciones y todos los usos del tipo para el nuevo nombre, incluidos los constructores y destructores. Para los tipos parciales, la operación de cambio de nombre se propagará a todas las partes.|  
   
 #### <a name="to-rename-an-identifier"></a>Para cambiar el nombre de un identificador  

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de3a7bfaccec45dc6b7fce1def45a6e6de8e75f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899f9026b2e7c86ad1bd9f722dc7e1904cab2b9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Cómo: Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo
 Sincronizar la configuración de análisis de código para los proyectos de código a la directiva de protección del proyecto de equipo mediante la especificación de un conjunto de reglas que contenga al menos las reglas que se especifican en el conjunto de reglas para la directiva de protección. Su jefa de desarrollador puede informar sobre el nombre y la ubicación de la regla establecida para la directiva de protección. Puede usar una de las opciones siguientes para asegurarse de que el análisis de código para el proyecto utiliza el conjunto correcto de reglas:  

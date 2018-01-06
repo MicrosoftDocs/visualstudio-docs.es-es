@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab02eacffe01c267a2f3d4ff463b729591bb8b19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e2675d821a29b53926b2145366ae98f3d8adceb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exe"></a>Exe
 Exe es el único símbolo pero un léxico o clase primaria, tal y como representa el ámbito global del archivo .exe o .dll. Hay solo un símbolo con la `SymTagExe` etiqueta por cada archivo. El [idiasession:: Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) método devuelve el símbolo.  
@@ -30,7 +31,7 @@ Exe es el único símbolo pero un léxico o clase primaria, tal y como represent
 ## <a name="properties"></a>Propiedades  
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.  
   
-|Propiedad|Tipo de datos|Descripción|  
+|Property|Tipo de datos|Descripción|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Antigüedad de este archivo ejecutable.|  
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID`de este archivo ejecutable.|  

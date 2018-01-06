@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9190cb4d27b016209df975db986ece09ddfc039b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 39b07ef08b673cab8b02772f061d0291a3c7754e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 Cuando se crea el archivo .exe, cada símbolos públicos (símbolo de arroba un mínimo y global de cada función y los datos) se da una `SymTagPublicSymbol` etiqueta.  
@@ -29,7 +30,7 @@ Cuando se crea el archivo .exe, cada símbolos públicos (símbolo de arroba un 
 ## <a name="properties"></a>Propiedades  
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.  
   
-|Propiedad|Tipo de datos|Descripción|  
+|Property|Tipo de datos|Descripción|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Desplazamiento de la parte de la ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Parte de la sección de ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|  

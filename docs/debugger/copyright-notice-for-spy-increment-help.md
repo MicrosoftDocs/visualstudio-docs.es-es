@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d14ceaa2f793897bab4503d9d920bd2ce9f8c4fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2575ef4aca817133eab19498f4c40cdc3e83e506
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="copyright-notice-for-spy-help"></a>Aviso de copyright para la Ayuda de Spy++
 La información de este documento está sujeta a cambios sin previo aviso. Las compañías, los nombres y los datos usados en estos ejemplos son ficticios, a menos que se indique lo contrario. Ninguna parte de este documento puede reproducirse ni transmitirse de ninguna forma ni por ningún medio, ya sea electrónico o mecánico, con ningún propósito, sin la previa autorización por escrito de Microsoft Corporation.  

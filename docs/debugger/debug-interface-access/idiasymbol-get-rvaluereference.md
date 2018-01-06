@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a470972a6e61e7b76edb34710f852d9580175bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 265e05aa2b6dfa0970fdaa68c556c3fb1c281273
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
 Recupera una marca que especifica si un tipo de puntero es una referencia rvalue. Debe usar cuando el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) se establece en un tipo de puntero.  

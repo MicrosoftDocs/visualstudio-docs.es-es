@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: fafc5df1a2aa32fa60c1f41077f7e3fff29ddef7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c94d70f2be28a6a420d683335c99ee0466a52114
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;ensamblado&gt; elemento (aplicación ClickOnce)
 El elemento de nivel superior para el manifiesto de aplicación.  
@@ -51,7 +52,7 @@ El elemento de nivel superior para el manifiesto de aplicación.
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`manifestVersion`|Obligatorio. El `manifestVersion` atributo debe establecerse en `1.0`.|  
+|`manifestVersion`|Requerido. El `manifestVersion` atributo debe establecerse en `1.0`.|  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra un `assembly` elemento en un manifiesto de aplicación para una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Este ejemplo de código forma parte de un ejemplo más extenso incluido en [manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md).  

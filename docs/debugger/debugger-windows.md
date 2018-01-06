@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Obtenga información acerca de las ventanas de depurador en Visual Studio
 Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando se alcanza el punto de interrupción y ejecución detiene, haga clic en **Depurar > Windows**.  
@@ -26,7 +27,7 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |**Ventana**|**Tecla de acceso rápido**|**Vea el tema**|  
 |Puntos de interrupción|CTRL+ALT+B|[Uso de puntos de interrupción](../debugger/using-breakpoints.md)|  
 |Configuración de excepciones|CTRL+ALT+E|[Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)|  
-|Resultado|CTRL+ALT+O|[Resultados (Ventana)](../ide/reference/output-window.md)|    
+|Salida|CTRL+ALT+O|[Resultados (Ventana)](../ide/reference/output-window.md)|    
 |Watch|CTRL+ALT+W, (1, 2, 3, 4)|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|  
 |Inspección rápida|MAYÚS+F9|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|  
 |Automático|CTRL+ALT+V, A|[Ventanas de variables locales y automáticas](../debugger/autos-and-locals-windows.md)|  

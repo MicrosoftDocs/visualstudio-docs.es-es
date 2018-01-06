@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5e53d813d9b2dcefd2b2d19da2a76b6c0d1f989
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 549914476db028cc5135de3c954ac841ab2da628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remove-parameters-refactoring-c"></a>Quitar parámetros (Refactorización, C#)
 `Remove Parameters`es una operación de refactorización que proporciona una manera sencilla para quitar parámetros de métodos, indizadores o delegados. Quitar parámetros cambia la declaración; en todas las ubicaciones donde se llama al miembro, se quita el parámetro para reflejar la nueva declaración.  

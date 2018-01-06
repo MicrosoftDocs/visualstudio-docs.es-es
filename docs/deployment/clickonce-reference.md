@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 4cfe5caa65246773759c4de7512fd41aa9e88023
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 898acac30776a4b189433440c9bb713a00561029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-reference"></a>Referencia a ClickOnce
 Las páginas siguientes describen la estructura de los archivos XML utilizados para representar aplicaciones ClickOnce.  

@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: aa51d29a1d5703f4fd02ee023eb1180da8031ac4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4ce173268be43cde12ecec4dd859623123a0bee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Cómo: Depurar una aplicación ClickOnce con permisos restringidos
 Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con permisos de plena confianza, por lo que no verá las mismas excepciones de seguridad al depurar una aplicación ClickOnce que las que podría ver el usuario final al ejecutarlo con permisos restringidos.  
@@ -62,7 +63,7 @@ Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con p
 6.  En el cuadro de texto **Depurar esta aplicación como si se hubiera descargado de la siguiente dirección URL** , indique una dirección URL o una ruta de acceso a la red.  
   
 ## <a name="see-also"></a>Vea también  
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

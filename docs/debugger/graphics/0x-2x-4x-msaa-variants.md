@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 663d96fa2305e4e812a422ac92959493f92e5a63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 77e4d199fe0c0ae1d876eae62014e6aaabd6f643
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA (Variantes)
 Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de presentación y cadenas de intercambio.  

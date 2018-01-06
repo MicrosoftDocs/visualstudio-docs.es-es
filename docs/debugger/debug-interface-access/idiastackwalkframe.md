@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be50964aaadad30aa13d6627be2ad1637e6123b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb683afe63880af9d1a666436739140519f7339b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 Mantiene el contexto de la pila entre las distintas invocaciones de la [idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) método.  

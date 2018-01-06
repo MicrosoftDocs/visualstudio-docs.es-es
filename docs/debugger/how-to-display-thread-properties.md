@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7ed86a571f667555c6c7fd03d0a228308229c86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6ad7885aa622954354cd211fc4f986191ea2ca1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-thread-properties"></a>Cómo: Mostrar las propiedades del subproceso
 Para obtener más información acerca de un subproceso que se muestra en [vista de subprocesos](../debugger/threads-view.md), use la [cuadro de diálogo de propiedades de subproceso](../debugger/thread-properties-dialog-box.md).  

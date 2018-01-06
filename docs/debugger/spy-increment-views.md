@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c804ad5fc4921eefc5529094c45361c5fa115fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdf541fb064064322679db6f381576a741af75a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-views"></a>Vistas de Spy++
 Spy ++ muestra vistas de árbol de las ventanas, mensajes, procesos y subprocesos disponibles en su equipo.  
@@ -34,7 +35,7 @@ Spy ++ muestra vistas de árbol de las ventanas, mensajes, procesos y subproceso
  [Vista Procesos](../debugger/processes-view.md)  
  Muestra una vista de árbol de procesos activos.  
   
- [Vista Subprocesos](../debugger/threads-view.md)  
+ [Vista de subprocesos](../debugger/threads-view.md)  
  Muestra una vista de árbol de subprocesos activos.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  

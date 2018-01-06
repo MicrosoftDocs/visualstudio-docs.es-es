@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5ee4ed193143a18c31bd454ed35b6056e0a0d2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5ed6e36db5332fdc7d009af1bcf11a6984c81ab5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pointertype"></a>PointerType
 Cada puntero se identifica mediante un `SymTagPointerType` símbolos.  
@@ -26,7 +27,7 @@ Cada puntero se identifica mediante un `SymTagPointerType` símbolos.
 ## <a name="properties"></a>Propiedades  
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.  
   
-|Propiedad|Tipo de datos|Descripción|  
+|Property|Tipo de datos|Descripción|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE`Si el puntero está marcado como una constante.|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Tamaño, en bytes, del puntero.|  

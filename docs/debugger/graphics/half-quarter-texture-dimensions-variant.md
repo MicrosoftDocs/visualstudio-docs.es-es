@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d71ee66c9d13dab5918e90c6434c3397d52191a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 93431c8863e2b30fb98d00bec5112257e54496f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>MItad/cuarto (Variante de dimensiones de textura)
 Reduce las dimensiones de la textura en texturas que no son objetivos de presentación.  

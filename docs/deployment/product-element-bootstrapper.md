@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: c115fa5cb7191ab1edcff3005620d9ac7835f8a0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: af40da0690bd8b6cc9cc12dd16fe9e11045b0624
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; elemento (arranque)
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.  

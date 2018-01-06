@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8eee6cf523fe7c327c5be0e5e34d805da80177b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a080d6cff410c09b2efa685703e1195e7d31594
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Cuadro de diálogo Fuente (Ayuda de Microsoft Spy++)
 Utilice este cuadro de diálogo para configurar la fuente de caracteres utilizada en un [vistas de Spy ++](../debugger/spy-increment-views.md) ventana. Para mostrar este cuadro de diálogo, expanda el **vista** menú y elija **fuente**.  

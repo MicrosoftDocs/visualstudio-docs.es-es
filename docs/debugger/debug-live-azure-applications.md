@@ -12,22 +12,25 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload:
+- aspnet
+- azure
+ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicaciones de Azure de ASP.NET en directo con el depurador de instantánea
 
-El depurador de instantánea toma una instantánea de las aplicaciones de producción cuando se ejecuta código que le interesa. Para indicar al depurador que tome una instantánea, establezca snappoints y logpoints en el código. El depurador le permite ver exactamente qué salió mal, sin afectar al tráfico de la aplicación de producción. El depurador de instantánea puede ayudarle a reducir considerablemente el tiempo necesario para resolver los problemas que se producen en entornos de producción.
+El depurador de instantánea toma una instantánea de las aplicaciones de producción cuando se ejecuta código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
 Snappoints y logpoints son similares a los puntos de interrupción. A diferencia de los puntos de interrupción, snappoints no detienen la aplicación cuando se produce. Normalmente, la captura una instantánea en un snappoint tiene 10 a 20 milisegundos. 
 
-Recopilación de instantáneas está disponible para las siguientes aplicaciones web que se ejecuta en el servicio de aplicación de Azure:
+La colección de instantáneas está disponible para las siguientes aplicaciones web que se ejecutan en Azure App Service:
 
-- Aplicaciones de ASP.NET que se ejecutan en .NET Framework 4.6.1 o una versión posterior.
-- Aplicaciones de ASP.NET Core que se ejecutan en .NET Core 2.0 o posterior en Windows.
+- Aplicaciones ASP.NET que se ejecutan en .NET Framework 4.6.1 o versiones posteriores.
+- Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.0 o posteriores en Windows.
 
 Además, el depurador de instantánea solo está disponible para Visual Studio de 2017 Enterprise versión 15.5 o superior y los planes de servicio de aplicaciones básica o superiores. 
 

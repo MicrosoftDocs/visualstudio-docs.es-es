@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 975e739a3cb6ab4424875845b56b04643def107d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a2892a72a07f11a9026b6c76c9e991729b16e1a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="udt"></a>UDT
 Cada clase, estructura y unión se identifican mediante un `SymTagUDT` símbolos. Cada miembro, función, datos, o tipo anidado y cada clase base, aparece como un elemento secundario de clase del tipo definido por el usuario (UDT).  
@@ -31,7 +32,7 @@ Cada clase, estructura y unión se identifican mediante un `SymTagUDT` símbolos
 ## <a name="properties"></a>Propiedades  
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.  
   
-|Propiedad|Tipo de datos|Descripción|  
+|Property|Tipo de datos|Descripción|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Símbolo para el elemento primario de clase, si lo hay.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Id. del símbolo de elemento primario de clase.|  

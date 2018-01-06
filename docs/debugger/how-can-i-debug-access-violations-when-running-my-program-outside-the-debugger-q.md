@@ -21,17 +21,18 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b8a6e019725f95788b4988fbe1ddef18cb27cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0af98932a940126c8f7288d7b5c830bb40f270fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Cómo depurar las infracciones de acceso cuando se ejecuta un programa fuera del depurador
 ## <a name="problem-description"></a>Descripción del problema  
  El programa funciona bien en el entorno de Visual Studio, pero cuando se ejecuta de forma independiente en el sistema operativo Windows, produce una infracción de acceso. ¿Cómo se puede depurar este problema?  
   
-## <a name="solution"></a>Solución  
+## <a name="solution"></a>Soluciones  
  Establecer el [Just-in-time depuración](../debugger/just-in-time-debugging-in-visual-studio.md) opción y ejecutar el programa de forma independiente hasta que se produce la infracción de acceso. A continuación, en la **infracción de acceso** cuadro de diálogo, puede hacer clic en **cancelar** para iniciar el depurador.  
   
  Vea también el artículo Q133174 de Knowledge Base, "How to Locate Where a General Protection (GP) Fault Occurs". Encontrará artículos de Knowledge Base en el CD de MSDN Library o realizando búsquedas [http://support.microsoft.com/](http://support.microsoft.com/).  

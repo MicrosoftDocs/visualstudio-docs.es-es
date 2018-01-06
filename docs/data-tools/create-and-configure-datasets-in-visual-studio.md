@@ -14,11 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f48371e17830b2cf31ff81708a72ba9d95f9a7c5
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: data-storage
+ms.openlocfilehash: da81d141e453e0106d329565338f7893b4fad758
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Crear y configurar los conjuntos de datos en Visual Studio
 

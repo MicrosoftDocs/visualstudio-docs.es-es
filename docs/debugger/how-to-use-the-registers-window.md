@@ -26,11 +26,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cff6db85b29b4db6006d37fd21e2d9b109b099e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7aa89b6e8d36c3eb47168c8672fb7eea1e3507db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Ver valores de registrar y utilizar la ventana se registra en el depurador de Visual Studio
 La ventana registros solo está disponible si está habilitada la depuración de nivel de dirección en la **opciones** cuadro de diálogo, **depuración** nodo, **General** categoría.  
@@ -54,6 +55,6 @@ La ventana registros solo está disponible si está habilitada la depuración de
     >  La información de los registros no está disponible para las aplicaciones de script o SQL.  
   
 ## <a name="see-also"></a>Vea también  
- [Fundamentos de depuración: Ventana registros](../debugger/debugging-basics-registers-window.md)   
+ [Fundamentos de la depuración: ventana Registros](../debugger/debugging-basics-registers-window.md)   
  [Ver los datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Fundamentos de la depuración: ventana Registros](../debugger/debugging-basics-registers-window.md)

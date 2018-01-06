@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: ee37983575aa82abb764d57006cdabd094ea6497
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 2ec97bfc67735af08e80d7b6e8e67080d5b9af6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-in-c"></a>Sincronizar un tipo en un nombre de archivo o un nombre de archivo a un tipo de C# #
 

@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 Este tutorial muestra cómo crear una aplicación básica "formularios sobre datos" en Visual Studio con SQL Server LocalDB, la base de datos de Northwind, Entity Framework 6 y Windows Presentation Foundation. Muestra cómo realizar el enlace de datos básico con una vista de detalles principales, y tiene también una personalizada "enlace navegador" con botones para "Mover siguiente", "Mover anterior," "Mover al principio," "mover al final," "Actualizar" y "Eliminar".  
@@ -57,7 +58,7 @@ Este ejemplo utiliza SQL Server Express LocalDB y la base de datos de ejemplo No
   
 4.  Ahora podemos usar Visual Studio para crear un modelo basado en la base de datos Northwind.  
   
-## <a name="create-the-model"></a>Crear el modelo  
+## <a name="create-the-model"></a>Creación del modelo  
   
 1.  Haga clic con el botón secundario en el nodo de proyecto en el Explorador de soluciones y elija **agregar**, **nuevo elemento...** . En el panel izquierdo, bajo el nodo de C#, elija **datos** y en el panel central, elija **ADO.NET Entity Data Model**.  
   
@@ -422,7 +423,7 @@ Agregar estos métodos de controlador a la clase MainWindow de MainWindow.xaml.c
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>Ejecutar la aplicación
-Para iniciar la depuración, presione **F5**. Debería ver datos de clientes y pedidos rellena en la cuadrícula y los botones de navegación deberían funcionar según lo esperado. Haga clic en "Confirmación" para agregar un nuevo cliente o un pedido para el modelo después de escribir los datos. Haga clic en "Cancelar" para revertir un cliente nuevo o un nuevo formulario de pedido sin guardar los datos. Puede realizar modificaciones en los clientes existentes y pedidos directamente en los cuadros de texto, y esos cambios se escriben en el modelo automáticamente.  
+Presione **F5** para iniciar la depuración. Debería ver datos de clientes y pedidos rellena en la cuadrícula y los botones de navegación deberían funcionar según lo esperado. Haga clic en "Confirmación" para agregar un nuevo cliente o un pedido para el modelo después de escribir los datos. Haga clic en "Cancelar" para revertir un cliente nuevo o un nuevo formulario de pedido sin guardar los datos. Puede realizar modificaciones en los clientes existentes y pedidos directamente en los cuadros de texto, y esos cambios se escriben en el modelo automáticamente.  
   
 ## <a name="see-also"></a>Vea también
 [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  

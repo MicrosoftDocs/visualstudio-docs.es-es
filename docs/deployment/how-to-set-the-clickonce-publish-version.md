@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: be66edb3880e8ef91f8fd95d7f11fe465322451f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: db6bfae35bbbd14190028fb0e32dfc8d35cb9bac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Cómo: Establecer la versión de publicación de ClickOnce
 El [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` propiedad determina si la aplicación que se está publicando se tratará como una actualización. Se incrementa cada versión de tiempo, la aplicación se publicará como una actualización.  
@@ -47,6 +48,6 @@ El [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Ve
   
 ## <a name="see-also"></a>Vea también  
  [Elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Cómo: automáticamente incremento el ClickOnce versión de publicación](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [Cómo: Incrementar automáticamente la versión de publicación de ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Cómo: Publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

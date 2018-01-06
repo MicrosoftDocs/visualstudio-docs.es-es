@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a6794fb327e298aa8fa7ea313ff12e1b3ab99fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Tutorial: Crear clases de LINQ to SQL usando la herencia de tabla única (Object Relational Designer)
 El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) admite la herencia de tabla única normalmente implementada en los sistemas relacionales. En este tutorial se expande en los pasos genéricos proporcionados en el [Cómo: configurar la herencia utilizando Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tema y proporciona algunos datos reales para demostrar el uso de la herencia en el [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -52,10 +53,10 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
   
 2.  En el Diseñador de tablas, agregue las siguientes columnas a la tabla:  
   
-    |Nombre de columna|Tipo de datos|Permitir valores nulos|  
+    |Nombre de columna|Tipo de datos|Permitir valores NULL|  
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
-    |**ype**|**int**|**True**|  
+    |**Type**|**int**|**True**|  
     |**FirstName**|**nvarchar (200)**|**False**|  
     |**Apellidos**|**nvarchar (200)**|**False**|  
     |**Administrador de**|**int**|**True**|  
@@ -75,7 +76,7 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**ype**|**FirstName**|**Apellidos**|**Administrador de**|  
+    |**ID**|**Type**|**FirstName**|**Apellidos**|**Administrador de**|  
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|  
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**NULL**|  
@@ -193,4 +194,4 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
  [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [Cómo: generar el modelo de objetos en Visual Basic o C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+ [Generación del modelo de objetos en Visual Basic o C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

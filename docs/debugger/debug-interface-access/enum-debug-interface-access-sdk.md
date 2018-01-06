@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b52a97fb549414c0f743c208f37530bc40c8a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce0b4df4d8df6ad3e5d2db0b41459ecbeed2a751
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enumeración (Debug Interface Access SDK)
 Las enumeraciones se identifican mediante `SymTagEnum` símbolos. Cada valor de enumeración aparece como un elemento secundario de clase con un `SymTagConstant` etiqueta.  
@@ -28,7 +29,7 @@ Las enumeraciones se identifican mediante `SymTagEnum` símbolos. Cada valor de 
 ## <a name="properties"></a>Propiedades  
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.  
   
-|Propiedad|Tipo de datos|Descripción|  
+|Property|Tipo de datos|Descripción|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|Uno de los [BasicType (enumeración)](../../debugger/debug-interface-access/basictype.md) valores.|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Elemento primario de clase de esta enumeración, si lo hay.|  

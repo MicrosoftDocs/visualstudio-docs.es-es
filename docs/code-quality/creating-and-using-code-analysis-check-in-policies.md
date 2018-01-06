@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: b7187ef8d3342ad050c66debf939e9c6a6213957
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Crear y usar directivas de inserción en el repositorio del análisis de código
 Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear una directiva de protección de análisis de código para .NET Framework y los proyectos de código (C/C ++) nativo en un proyecto de equipo. Puede usar la directiva de protección de análisis de código para controlar y mejorar la calidad del código que está protegido en la base de código.  

@@ -21,17 +21,18 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93b7a670d74fbbb0c9d8e13f1e6463b52a8ca5d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 24d3eed91a659dc8f0d114369bdba45dd2973375
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>¿Cómo se puede depurar una infracción de acceso de C++?
 ## <a name="problem-description"></a>Descripción del problema  
  El programa produce una infracción de acceso. ¿Cómo se puede depurar este error?  
   
-## <a name="solution"></a>Solución  
+## <a name="solution"></a>Soluciones  
  Si se produce una infracción de acceso en una línea de código que desreferencia varios punteros, puede ser difícil averiguar qué puntero produjo la infracción de acceso. A partir de Visual Studio 2015 Update 1, el cuadro de diálogo de excepción ahora indica explícitamente el puntero que produjo la infracción de acceso.  
   
  Por ejemplo, con el siguiente código, debería obtener una infracción de acceso:  

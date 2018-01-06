@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c1f308de55d9170b2247114ea96f611dd8e1af9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0de0874a605325f3f61547a202701eeeeb4d5a24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-state"></a>Estado de los gráficos
 La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece información sobre el estado activo de los gráficos en el momento del evento actual (por ejemplo, durante una llamada a draw).  
@@ -52,7 +53,7 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
   
 |Columna|Descripción|  
 |------------|-----------------|  
-|Nombre|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En el **vista de estado de entrada de API** y **vista de estado lógico** Estados, se aplica sangría a los nombres para mostrar la relación jerárquica entre Estados.<br /><br /> En el **vista de estado anclado** estado, se muestran los nombres completos en una lista plana.|  
+|nombre|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En el **vista de estado de entrada de API** y **vista de estado lógico** Estados, se aplica sangría a los nombres para mostrar la relación jerárquica entre Estados.<br /><br /> En el **vista de estado anclado** estado, se muestran los nombres completos en una lista plana.|  
 |Valor|El valor del elemento de estado.|  
 |Tipo|El tipo del elemento de estado.|  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 41fd9fcee2d0ae954f5ec234bf23cbefd5ccd6da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f5045f9203d5413efdd6d192d2667e94d0119220
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;descripción&gt; elemento (implementación de ClickOnce)
 Identifica la información de la aplicación utilizada para crear una presencia de shell y un **agregar o quitar programas** elemento en el Panel de Control.  
@@ -44,8 +45,8 @@ Identifica la información de la aplicación utilizada para crear una presencia 
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`publisher`|Obligatorio. Identifica el nombre de la empresa utilizado para la colocación del icono en las ventanas de **iniciar** menú y **agregar o quitar programas** elemento en el Panel de Control, cuando la implementación está configurada para la instalación.|  
-|`product`|Obligatorio. Identifica el nombre completo del producto. Usar como el título del icono instalado en las ventanas de **iniciar** menú.|  
+|`publisher`|Requerido. Identifica el nombre de la empresa utilizado para la colocación del icono en las ventanas de **iniciar** menú y **agregar o quitar programas** elemento en el Panel de Control, cuando la implementación está configurada para la instalación.|  
+|`product`|Requerido. Identifica el nombre completo del producto. Usar como el título del icono instalado en las ventanas de **iniciar** menú.|  
 |`suiteName`|Opcional. Identifica una subcarpeta dentro de la `publisher` carpeta en las ventanas de **iniciar** menú.|  
 |`supportUrl`|Opcional. Especifica una dirección URL de soporte técnico que se muestra en el **agregar o quitar programas** elemento en el Panel de Control. También se crea un acceso directo a esta dirección URL para la compatibilidad con la aplicación en las ventanas de **iniciar** menú, cuando la implementación está configurada para la instalación.|  
   

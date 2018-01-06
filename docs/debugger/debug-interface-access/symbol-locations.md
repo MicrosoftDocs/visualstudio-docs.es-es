@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd2ab3403fe01ce4ead0d3e388eaadbc34595675
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4cd226ebc3d2853ddfa35f42c5990db940c4424
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-locations"></a>Symbol Locations
 Símbolos mayoría tienen una ubicación definida en el archivo de imagen. Se especifica la ubicación de un símbolo con un valor comprendido entre el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) enumeración. El símbolo puede admitir las propiedades adicionales según su ubicación.  

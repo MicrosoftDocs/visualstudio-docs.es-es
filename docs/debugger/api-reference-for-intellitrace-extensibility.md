@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fb8f54943fdc7874677fcb0119c5865f7b33fb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1d82c76a5a20a001947a8057ab5996f716370f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referencia de la API para la extensibilidad de IntelliTrace
 Con la información proporcionada en esta sección, podrá usar la API de extensibilidad de IntelliTrace para leer y descodificar los archivos .itrace de una aplicación.  

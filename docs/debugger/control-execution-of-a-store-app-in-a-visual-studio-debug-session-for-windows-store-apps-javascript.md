@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: 1e1e30400a630c7a5b01438e521b651f25ab3137
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>Controlar la ejecución de una aplicación de UWP en una sesión de depuración de Visual Studio (JavaScript)
 En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio y cómo ver el estado del programa en una sesión.  

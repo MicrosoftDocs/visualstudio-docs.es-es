@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3469e9ae7101c9e180fba5558fce389c6dfcc72d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3a011794599bf1e56e905a40c6269b5639abadb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Reordenar parámetros de refactorización (C#)
 `Reorder Parameters`es Visual C# operación de refactorización que proporciona una manera sencilla para cambiar el orden de los parámetros de métodos, indizadores y delegados. `Reorder Parameters`cambia la declaración, y en todas las ubicaciones donde se llama al miembro, los parámetros se reorganizan para reflejar el nuevo orden.  

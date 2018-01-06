@@ -11,11 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 06170174436f37713f20c708c439e79af4d90198
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: data-storage
+ms.openlocfilehash: 26a45e8fe44e2e0945a105711ae84b1082d5c891
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-connections"></a>Agregar nuevas conexiones
 

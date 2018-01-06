@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3920bfbd5b1ddbddc3166118ead0c7d0fefff8d8
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 8684a1220b871e2c77f8c0229cddd807a6031cd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-uwp-apps-in-visual-studio"></a>Depurar aplicaciones UWP en Visual Studio
 El depurador de Visual Studio permite controlar la ejecución de un programa y examinar su estado. Puede utilizar al depurador para buscar la causa de los defectos en las aplicaciones de UWP y para entender exactamente cómo funciona la aplicación. Al suspender (interrumpir) la ejecución en el depurador, Visual Studio muestra el archivo de origen que contiene el código de ejecución y resalta la instrucción de ejecución. Puede ver los valores de variables, la pila de llamadas de funciones en ejecución y otros aspectos del estado del programa. Puede seguir ejecutando (recorrer) el programa de instrucción en instrucción para ver cómo estas cambian los valores del programa. En aquellas aplicaciones escritas con JavaScript, puede examinar y manipular el DOM de la página.  

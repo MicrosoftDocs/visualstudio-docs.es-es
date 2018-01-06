@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44bc05bc6ba27dffdc267ad2cad1e15bc9b0a61a
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 44c01069539ef5b67a9f208bc89786dfd0ac40a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas mixtas
 Las reglas recomendadas mixtas de Microsoft se centran en los problemas más graves y habituales en los proyectos de C++ compatibles con Common Language Runtime, incluidas posibles vulnerabilidades de seguridad, bloqueos de la aplicación y otros errores de diseño y lógica importantes. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos de C++ compatibles con Common Language Runtime. Este conjunto de reglas está diseñado para configurarse con Visual Studio Professional y versiones posteriores.  

@@ -20,11 +20,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cd7fc1a71009262b53878f40a1418cd4167efe5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c359e2989b1768c9c8814b11a338968bf849f59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-preparation-windows-services"></a>Preparación de la depuración: servicios de Windows
 Un servicio de Windows es un programa que se ejecuta en segundo plano en Microsoft Windows. Como ejemplos pueden citarse el servicio Telnet y el servicio de hora de Windows (que actualiza el reloj visible del equipo). Un servicio de Windows no se puede ejecutar desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; debe ejecutarse dentro del contexto del Administrador de control de servicios. Para obtener más información, consulte [crear servicios de Windows](/dotnet/framework/windows-services/how-to-create-windows-services), [depurar aplicaciones de servicios de Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications), y [Windows Service Applications](/dotnet/framework/windows-services/index).  
@@ -32,6 +33,6 @@ Un servicio de Windows es un programa que se ejecuta en segundo plano en Microso
 ## <a name="see-also"></a>Vea también  
  [Depurar código administrado](../debugger/debugging-managed-code.md)   
  [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Configuraciones de depuración de la configuración del proyecto de C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Configuración de depuración de la configuración del proyecto para un de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Configuración de proyectos para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Configuración de proyectos para una configuración de depuración en Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Cómo: Depurar el método OnStart](../debugger/how-to-debug-the-onstart-method.md)

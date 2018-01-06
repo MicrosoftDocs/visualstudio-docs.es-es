@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 685f57286a022be6b7acbdaf2b8ffed33457fef1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlazar controles WPF a datos en Visual Studio
 Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a controles de [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Para crear estos controles enlazados a datos, puede arrastrar elementos desde la **orígenes de datos** ventana hasta el [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En este tema se describen algunas de las tareas, herramientas y clases más comunes que se pueden usar para crear aplicaciones de [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] enlazadas a datos.  
@@ -54,7 +55,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 |Conjunto de datos|Sí|Sí|  
 |[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|Sí|Sí|  
 |Servicio|Sí|No|  
-|Objeto|Sí|No|  
+|Object|Sí|No|  
   
 ### <a name="datasets"></a>Conjuntos de datos  
  Cuando se arrastra una tabla o columna de la **orígenes de datos** ventana hasta el diseñador, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que realiza lo siguiente:  

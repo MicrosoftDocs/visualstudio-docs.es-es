@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9da2cd7b8a99d750692a69be406c9c8f82c461d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-net-framework-source"></a>Cómo: Depurar código fuente de .NET Framework
 La versión más reciente de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona nuevas características para [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] depuración. Para depurar [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] origen, debe tener acceso a los símbolos de depuración para el código. También debe habilitar la ejecución paso a paso [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] origen.  
@@ -57,7 +58,7 @@ La versión más reciente de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_m
   
      Si decide no descargar ahora los símbolos, estos se descargarán automáticamente la próxima vez que inicie la depuración del programa.  
   
-7.  Haga clic en **Aceptar** para cerrar el **opciones** cuadro de diálogo.  
+7.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Para cargar símbolos de Framework mediante la ventana Módulos  
   

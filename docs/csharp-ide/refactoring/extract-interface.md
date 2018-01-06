@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractinterface
 dev_langs: csharp
-ms.openlocfilehash: 854e341a5c02b3bb4b0a596720a4899410550689
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 8123154159e34597c0c76e941cd2db5824c9478e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-an-interface-in-c"></a>Extraer una interfaz en C# #
 **¿Qué:** le permite crear una interfaz con los miembros existentes de una clase, estructura o interfaz.

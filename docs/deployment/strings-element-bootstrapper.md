@@ -21,11 +21,12 @@ caps.latest.revision: "4"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bcd950dab8fe00ecdaec83c64a819b58193b1272
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; elemento (arranque)
 Define las cadenas localizadas para nombres de productos, nombres de paquete y mensajes de error de instalación.  
@@ -51,7 +52,7 @@ Define las cadenas localizadas para nombres de productos, nombres de paquete y m
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. El nombre de la cadena.|  
+|`Name`|Requerido. El nombre de la cadena.|  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se especifica todas las cadenas en inglés para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalador.  

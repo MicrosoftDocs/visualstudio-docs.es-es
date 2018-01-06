@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2bba62850791f637e93d6c82ff2186ffc5f09652
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 86dbdf312c1356c6fb63fcfa32f1dd362b4c7599
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Cómo: Establecer una zona de seguridad para una aplicación ClickOnce
 Al establecer permisos de seguridad de acceso del código para una aplicación ClickOnce, debe empezar con un conjunto básico de permisos en la página **Seguridad** del **Diseñador de proyectos**.  
@@ -46,7 +47,7 @@ Al establecer permisos de seguridad de acceso del código para una aplicación C
 5.  En la lista desplegable **Zona desde la que se instalará la aplicación** , seleccione una zona de seguridad.  
   
 ## <a name="see-also"></a>Vea también  
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)

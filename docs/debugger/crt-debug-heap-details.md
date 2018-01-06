@@ -77,11 +77,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 947da9ccdbf67a71edfaa122de8861912a9e9596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc7b945a8c53d290f573eac4565f2240ec7a2d7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debug-heap-details"></a>Detalles del montón de depuración de CRT
 Este tema proporciona un examen detallado del montón de depuración de CRT.  
@@ -193,7 +194,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  El **_crtDbgFlag** marca contiene los siguientes campos de bits:  
   
-|Campo de bit|Predeterminado<br /><br /> value|Descripción|  
+|Campo de bit|Default<br /><br /> value|Descripción|  
 |---------------|-----------------------|-----------------|  
 |**_CRTDBG_ALLOC_MEM_DF**|Activado|Activa la asignación para depuración. Cuando este bit está desactivado, las asignaciones permanecen encadenar pero su tipo de bloque es **_IGNORE_BLOCK**.|  
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Desactivado|Impide la liberación real de memoria, como en la simulación del estado de memoria escasa. Cuando este bit está activado, los bloques liberados se mantienen en la lista vinculada del montón de depuración pero se marcan como **_FREE_BLOCK** y rellenan con un valor de byte especial.|  

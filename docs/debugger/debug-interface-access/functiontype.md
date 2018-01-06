@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c3b336305e0365d6a1bd014e24bf548e38c7848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 137c584b787bb0534770ca6f16bd8b326b8f1acf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functiontype"></a>FunctionType
 Cada firma de función única se identifica mediante un `SymTagFunctionType` símbolos. Cada parámetro se identifican como un símbolo de secundarios de la clase con un `SymTagFunctionArgType` etiqueta.  
@@ -28,7 +29,7 @@ Cada firma de función única se identifica mediante un `SymTagFunctionType` sí
 ## <a name="properties"></a>Propiedades  
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.  
   
-|Propiedad|Tipo de datos|Descripción|  
+|Property|Tipo de datos|Descripción|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)|`DWORD`|Uno de los valores de la [CV_call_e (enumeración)](../../debugger/debug-interface-access/cv-call-e.md).|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Que esta función (o un método) es un miembro de la clase.|  

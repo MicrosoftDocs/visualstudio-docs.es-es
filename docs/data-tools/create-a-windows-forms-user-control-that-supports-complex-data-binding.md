@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 07640bf6c23d1aac05b5ec83b7dbe9655c2c8d9c
-ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
+ms.workload: data-storage
+ms.openlocfilehash: c5e59b34a1093b90320bfdd05989913e72600a8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Crear un control de usuario de formularios Windows Forms que admita el enlace de datos complejo
 

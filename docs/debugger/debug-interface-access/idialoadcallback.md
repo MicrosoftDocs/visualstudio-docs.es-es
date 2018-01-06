@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dc5034967fe94b8be6503a9c86f7b6bc6ee14ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5cc40b8041ea5427d223a70c7d3d9347c48be286
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Recibe las devoluciones de llamada desde el símbolo DIA localizar procedimiento, lo que permite una interfaz de usuario indicar el progreso del intento de ubicación.  

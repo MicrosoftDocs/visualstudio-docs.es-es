@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 771506897b5c40242c26a06db4e176e6eb785b21
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e3ae16740868fcbd0fdd98f35afed4290fae5905
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-project-settings"></a>Configuración del proyecto para el depurador
 Ciertos valores de configuración del proyecto también afectan a la depuración. Estos valores determinan, por ejemplo, qué directorios consulta el depurador, el comando y los argumentos del comando utilizados para iniciar el programa y el tipo de información de depuración que se crea para el programa. Estos valores se pueden cambiar en el cuadro de diálogo **Páginas de propiedades** .  

@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 78322512fdc59b4ba661bca0d40d1532ac4c98e2
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 4b403d3bbe2e42ee74af7a2f7babe8b2700dd0d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Crear tablas de búsqueda en aplicaciones WPF
 El término *tabla de búsqueda* (a veces denominado un *enlace de búsqueda*) describe un control que muestra información de una tabla de datos en función del valor de un campo de clave externa de otra tabla. Puede crear una tabla de búsqueda arrastrando el nodo principal de una tabla primaria o de objeto en el **orígenes de datos** ventana en un control que ya está enlazado a una columna o propiedad en una tabla secundaria relacionada.  
@@ -83,7 +84,7 @@ Por ejemplo, considérese una tabla de `Orders` en una base de datos de ventas. 
   
      Visual Studio establece algunas propiedades en el control para configurar el enlace de búsqueda. En la tabla siguiente se enumera las propiedades que modifica Visual Studio. Si es necesario, puede cambiar estas propiedades en el XAML o en la **propiedades** ventana.  
   
-    |Propiedad|Explicación del parámetro|  
+    |Property|Explicación del parámetro|  
     |--------------|----------------------------|  
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Esta propiedad especifica la colección o el enlace que se utiliza para obtener los datos que se muestran en el control. Visual Studio establece esta propiedad en el <xref:System.Windows.Data.CollectionViewSource> de los datos primarios que ha arrastrado al control.|  
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Esta propiedad especifica la ruta de acceso del elemento de datos que se muestra en el control. Visual Studio establece esta propiedad en la primera columna o propiedad en los datos primarios y, después de la clave principal, que tiene un tipo de datos de cadena.<br /><br /> Si desea mostrar una columna o propiedad diferente en los datos primarios, cambie esta propiedad a la ruta de acceso de una propiedad diferente.|  

@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b45f7246df2fc757f5e2a4a46e215cd25d45b1b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6057ca5e8bd6d81a72c4578a0ee8b776da46fdc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Cómo: Iniciar y detener la presentación del registro de mensajes
 Cuando un [vista mensajes](../debugger/messages-view.md) ventana está activa, un **iniciar registro** o **detener el registro** opción aparece en Spy ++ **mensajes** menú y la correspondiente **iniciar registro** o **detener el registro** botón de barra de herramientas se convierte en activa.  

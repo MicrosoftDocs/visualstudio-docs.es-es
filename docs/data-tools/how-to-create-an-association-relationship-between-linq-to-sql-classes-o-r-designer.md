@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: dff1251824a07e8448c6f0dbcf421776d90977a2
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 5c86eff5c25dbabb368d7d90ed46be718b8db8e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Cómo: crear una asociación entre clases LINQ to SQL (Object Relational Designer)
 Las asociaciones entre clases de entidades en [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] son similares a las relaciones entre tablas en una base de datos. Puede crear asociaciones entre las clases de entidad mediante el **Editor de asociaciones** cuadro de diálogo.  
@@ -54,4 +55,4 @@ Después de crear una asociación, al seleccionar la asociación en el Object Re
 [Tutorial: Crear clases LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
 [Métodos de DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
-[Cómo: representar claves principales](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)
+[Representación de claves principales](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

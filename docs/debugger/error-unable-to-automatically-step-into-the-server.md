@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.error.causality_no_server_response
 dev_langs:
 - CSharp
@@ -15,16 +15,16 @@ dev_langs:
 - C++
 - JScript
 helpviewer_keywords: remote debugging, notification error
-ms.assetid: 9a370ccc-d358-429c-b285-9b6c0649bc68
 caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e8d73b9df650a1d98b0c9f080c7b32cc0a324e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 890c3e650b656d3c69a574ba477b797ba120c0a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Error: No se puede ir al servidor automáticamente
 El error reza como sigue:  
