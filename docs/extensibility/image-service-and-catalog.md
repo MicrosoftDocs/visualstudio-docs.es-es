@@ -11,11 +11,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5813788834a7a5a99c10fe6dafc35a300bac007
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y el servicio de imágenes
 Esta guía contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imagen que se introdujo en Visual Studio 2015.  
@@ -110,7 +111,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual|  
 |GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID|  
 |Id.|El símbolo representa un identificador y debe ser un entero no negativo|  
-|Cadena|El símbolo representa un valor de cadena arbitraria|  
+|String|El símbolo representa un valor de cadena arbitraria|  
   
  Los símbolos son entre mayúsculas y minúsculas y que se hace referencia mediante la sintaxis de $(symbol-name):  
   
@@ -176,9 +177,9 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |-|-|-|  
 |**Element**|**Atributos (todas requeridas)**|**Definición**|  
 |\<Tamaño >|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen estará cuadrada.|  
-|\<SizeRange >|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo), ambos inclusive.. La imagen estará cuadrada.|  
+|\<SizeRange >|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo), ambos inclusive. La imagen estará cuadrada.|  
 |\<Dimensiones >|Ancho, alto|El origen se usará para las imágenes del ancho y alto (en unidades de dispositivo).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes de ancho/alto mínimo para el ancho/alto máximo (en unidades de dispositivo), ambos inclusive..|  
+|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes de ancho/alto mínimo para el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|  
   
  A \<origen > elemento también puede tener una función opcional \<NativeResource > subelemento, que define un \<origen > que se carga desde un ensamblado nativo en lugar de un ensamblado administrado.  
   

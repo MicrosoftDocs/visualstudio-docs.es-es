@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 00dd81c93e089a840c99efbd6165f005aff88b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9b2fb918d7545655b70a20629ff71427e66030b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon (Elemento, Plantillas de Visual Studio)
 Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que sirve como icono, que aparece en la vista de la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo, para la plantilla.  

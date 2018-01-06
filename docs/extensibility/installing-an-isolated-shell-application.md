@@ -16,11 +16,12 @@ caps.latest.revision: "40"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c6d5d88563d97c18081cbf44b67e247d98a468
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fffbe31d9d5919c1e8b94482556c851fc07a1750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalar una aplicación de Shell aislado
 Debe realizar los pasos siguientes para instalar una aplicación de Shell.  

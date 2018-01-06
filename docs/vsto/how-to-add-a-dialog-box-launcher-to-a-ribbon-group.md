@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8b5158bb17470ce63dbc22dc5b501a314ebda8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f9b9b3500b833b8ecf56d66d036f8284484b6600
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Cómo: Agregar un selector de cuadro de diálogo a un grupo de la cinta de opciones
   Puede agregar un selector de cuadro de diálogo a cualquier grupo de una cinta de opciones. Un selector de cuadro de diálogo es un icono pequeño que aparece en un grupo. Los usuarios, haga clic en este icono para abrir cuadros de diálogo relacionados o paneles de tareas que proporcionan más opciones relacionadas con el grupo.  

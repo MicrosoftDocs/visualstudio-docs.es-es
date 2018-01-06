@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17e14d4f8d3d62297ae1d2f3e62a9ed0574fef9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2f8a2cc2f1c13c46b3ac4838d95ce588d0461347
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-configuration-details"></a>Detalles de configuración de Control de código fuente
 Para implementar el control de código fuente, debe configurar correctamente un sistema de proyectos o un editor para hacer lo siguiente:  

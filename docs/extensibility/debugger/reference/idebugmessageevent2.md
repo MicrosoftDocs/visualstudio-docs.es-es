@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9ecc33a729864fe1fd84c16e732ffceb3b0f858a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Esta interfaz se utiliza el motor de depuración (Alemania) para enviar un mensaje a Visual Studio que requiere una respuesta del usuario.  

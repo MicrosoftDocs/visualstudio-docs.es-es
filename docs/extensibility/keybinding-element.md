@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2019a34e55148007cd75df12212bd4b0a897159c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 El elemento KeyBinding especifica métodos abreviados de teclado para los comandos.  
@@ -39,10 +40,10 @@ El elemento KeyBinding especifica métodos abreviados de teclado para los comand
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Obligatorio.|  
-|id|Obligatorio.|  
-|editor|Obligatorio. El editor de GUID indica el contexto de edición para el que se activará este método abreviado de teclado. El valor de ámbito de enlace global es "guidVSStd97".|  
-|key1|Obligatorio. Los valores válidos son clasificable por tipo todos los caracteres alfanuméricos y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
+|guid|Requerido.|  
+|id|Requerido.|  
+|editor|Requerido. El editor de GUID indica el contexto de edición para el que se activará este método abreviado de teclado. El valor de ámbito de enlace global es "guidVSStd97".|  
+|key1|Requerido. Los valores válidos son clasificable por tipo todos los caracteres alfanuméricos y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
 |MOD1|Opcional. Cualquier combinación de teclas CTRL, ALT y MAYÚS separados por espacios.|  
 |key2|Opcional. Los valores válidos son clasificable por tipo todos los caracteres alfanuméricos y también valores hexadecimales de dos dígitos precedidos por 0 x y [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
 |MOD2|Opcional. Cualquier combinación de teclas CTRL, ALT y MAYÚS separados por espacios.|  

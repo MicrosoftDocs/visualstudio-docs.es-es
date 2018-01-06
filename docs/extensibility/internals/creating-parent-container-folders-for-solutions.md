@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ea901fe4e380fd867db1c63e44bc1cb6e144feb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b2aa63a0c55ad196edf6c209475a816c0c3c027c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>La creación de carpetas de contenedor primario para soluciones
 En la API de complemento de Control de origen de la versión 1.2, un usuario puede especificar un destino de control de código fuente de raíz única para todos los proyectos Web dentro de la solución. Esta raíz solo se llama a una raíz de unificado Super (SUR).  

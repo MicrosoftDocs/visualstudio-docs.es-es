@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db041f839e9b7e8ad3268175829ecfee9380e736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 627e5abad07ef0566d23f010ea120df33173fb0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityitem-element"></a>Elemento VisibilityItem
 El `VisibilityItem` elemento determina la visibilidad estática de comandos y las barras de herramientas. Cada entrada identifica un comando o menú y también un contexto de la interfaz de usuario de comando asociado. Visual Studio detecta comandos, menús y barras de herramientas y su visibilidad, sin necesidad de cargar los VSPackages que definirlos. El IDE usa la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método para determinar si un contexto de la interfaz de usuario de comando está activo.  
@@ -46,9 +47,9 @@ El `VisibilityItem` elemento determina la visibilidad estática de comandos y la
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Obligatorio. El GUID del identificador de comando/identificador GUID.|  
-|id|Obligatorio. El Id. del identificador de comando/identificador GUID.|  
-|contexto|Obligatorio. El contexto de la interfaz de usuario en el que el comando es visible.|  
+|guid|Requerido. El GUID del identificador de comando/identificador GUID.|  
+|id|Requerido. El Id. del identificador de comando/identificador GUID.|  
+|contexto|Requerido. El contexto de la interfaz de usuario en el que el comando es visible.|  
 |Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  

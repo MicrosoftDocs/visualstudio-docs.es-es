@@ -12,14 +12,15 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Ver las instantáneas mediante la devolución de paso de IntelliTrace
-Devolución de paso de IntelliTrace automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador evento de paso. Las instantáneas registradas permiten volver a los puntos de interrupción anteriores o pasos y ver el estado de la aplicación tal como estaba en el pasado. IntelliTrace paso atrás, ahorrarás tiempo cuando desea ver el estado anterior de la aplicación pero no desea reiniciar la depuración o volver a crear el estado de la aplicación deseada.
+Devolución de paso de IntelliTrace automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
 Paso de copia de IntelliTrace está disponible a partir de Visual Studio Enterprise 2017 15.5 y versiones posteriores, y requiere actualización de aniversario de Windows 10 o superior. La característica se admite actualmente para la depuración de ASP.NET, formularios Windows Forms, WPF, aplicaciones de consola administrado y bibliotecas de clases administradas. No se admite actualmente la depuración de aplicaciones ASP.NET Core, .NET Core o UWP. 
   
@@ -38,7 +39,7 @@ Por motivos de rendimiento, no se realizan las instantáneas que avance muy ráp
 
 ## <a name="navigate-and-view-snapshots"></a>Navegar y ver las instantáneas
 
-Puede navegar entre los eventos mediante el **paso atrás (Alt + [)** y **paso hacia delante (Alt +])** botones en la barra de herramientas de depuración. Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **ventana de herramientas de diagnóstico**. Ejecución paso a paso hacia atrás o hacia delante a un evento automáticamente, se activa la depuración histórica en el evento seleccionado.
+Puede navegar entre los eventos mediante el **paso atrás (Alt + [)** y **paso hacia delante (Alt +])** botones en la barra de herramientas de depuración. Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **ventana de herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
 
 ![Retroceder o avanzar botones](../debugger/media/intellitrace-step-back-icons-description.png "botones paso hacia atrás y hacia delante de paso")
 
@@ -85,7 +86,7 @@ El impacto en el rendimiento general de ejecución paso a paso depende de la apl
         1. Instale el componente de conjunto de herramientas de VC++ 2015.3 v140 para el escritorio (x86, x64) del Instalador de Visual Studio.
         2. Compile la aplicación de destino.
         3. Desde la línea de comandos, utilice la herramienta editbin para establecer el `Largeaddressaware` marca para el archivo ejecutable de destino. Por ejemplo, podría usar este comando (después de actualizar la ruta de acceso): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe".
-        4. Para iniciar la depuración, presione **F5**. Ahora, las instantáneas se toman en los puntos de interrupción y el depurador.
+        4. Presione **F5** para iniciar la depuración. Ahora, las instantáneas se toman en los puntos de interrupción y el depurador.
 
         > [!Note]
         > El `Largeaddressaware` marca se debe establecer cada vez que se vuelve a generar el archivo ejecutable con los cambios.

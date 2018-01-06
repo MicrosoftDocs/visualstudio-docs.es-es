@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-for-source-control-packages"></a>Modelo para los paquetes de Control de código fuente
 El modelo siguiente representa un ejemplo de una implementación de control de código fuente. En el modelo, vea las interfaces que debe implementar y los servicios de entorno que se deben llamar. Al igual que todos los servicios, se llame realmente a los métodos de una interfaz concreta que obtiene mediante el servicio. Los nombres de las clases se identifican para que sea más fácil ver cómo se efectúa el control de código fuente.  
@@ -28,7 +29,7 @@ Proyecto de Control de código fuente de ejemplo
 ## <a name="interfaces"></a>Interfaces  
  Puede implementar el control de código fuente para los nuevos tipos de proyecto en Visual Studio mediante la lista de interfaces que se muestran en la tabla siguiente.  
   
-|Interfaz|Uso|  
+|Interfaz|Usar|  
 |---------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Llama a los proyectos y editores antes de que guarde o archivos de cambio (modificado). Esta interfaz se tiene acceso con el <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> service.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Llama a los proyectos para solicitar permiso para agregar, quitar o cambiar el nombre de un archivo o directorio. Esta interfaz también se denomina proyectos para informar el entorno cuando una aprobadas de agregar, quitar o cambiar el nombre de acción ha finalizado. Se tiene acceso mediante el <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> service.|  

@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a60ac9de727e8542df7455ee331737403f6bef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-project-type"></a>Registrar un tipo de proyecto
 Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro que permiten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] reconocer y trabajar con el tipo de proyecto. Normalmente crea estas entradas del registro mediante un archivo de registro (.rgs) de la secuencia de comandos.  
@@ -50,7 +51,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    @="devenv.exe \"%1\""  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrjFile`|Nombre y una descripción de los archivos de tipo de proyecto que tienen la extensión .figp.|  
 |`Content Type`|REG_SZ|`Text/plain`|Tipo de contenido para los archivos de proyecto.|  
@@ -82,7 +83,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`(Valor predeterminado)|REG_SZ|`FigPrj Project VSPackage`|Nombre localizable de registra VSPackage (tipo de proyecto).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Ruta de acceso del tipo de proyecto DLL. El IDE carga este archivo DLL y pasa el CLSID de VSPackage a `DllGetClassObject` para obtener <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> para construir la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objeto.|  
@@ -133,7 +134,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "SortPriority"=dword:00000064  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Nombre predeterminado de proyectos de este tipo.|  
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Identificador de recurso del nombre que se recuperan desde el archivo DLL satélite registrados en paquetes.|  
@@ -173,7 +174,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Id. de recurso para las plantillas de proyecto.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Ruta de acceso para los proyectos del tipo de proyecto registrados predeterminada.|  
@@ -194,7 +195,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "SortPriority"=dword:00000064  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|Ninguna|Valor predeterminado que indica que las entradas siguientes son para las entradas de los proyectos de archivos varios.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valor de identificador de recurso para los archivos de plantilla de agregar nuevos elementos.|  
@@ -223,7 +224,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
   
  El último campo identifica el número de versión para el recurso CTMENU. Puede combinar el menú nuevo cambiando el número de versión.  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |% CLSID_Package %|REG_SZ|`,1000,1`|El recurso para recuperar la información de menú.|  
   
@@ -237,7 +238,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "NewProjectDialogOnly"=dword:00000000  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valor de identificador de recurso para las plantillas de proyecto cifras nuevo proyecto.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Ruta de acceso predeterminada del directorio de nuevos proyectos. Elementos en este directorio se mostrarán en el **Asistente para nuevo proyecto** cuadro de diálogo.|  
@@ -252,7 +253,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
    "UseInterface"=dword:00000001  
 ```  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |`Package`|REG_SZ|`%CLSID_Package%`|Id. de clase de VSPackage registrado.|  
 |`UseInterface`|REG_DWORD|`1`|1 indica que la interfaz de usuario se utilizará para interactuar con este proyecto. 0 indica que no hay ninguna interfaz de la interfaz de usuario.|  

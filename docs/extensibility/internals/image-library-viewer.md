@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>Visor del archivo de imagen
 La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y buscar los manifiestos de imagen, que permite al usuario manipularlos en la misma manera que lo haría Visual Studio. El usuario puede modificar fondo, tamaños, valores de PPP, contraste alto y otras opciones. La herramienta también muestra información de carga para cada manifiesto de imagen y muestra información de origen para cada imagen en el manifiesto de imagen. Esta herramienta es útil para:  
@@ -76,7 +77,7 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |Importar|Importa los símbolos del archivo de manifiesto especificado para su uso en el manifiesto actual.|  
 |GUID|El símbolo representa un GUID y debe coincidir con el formato de GUID.|  
 |Id.|El símbolo representa un identificador y debe ser un entero no negativo.|  
-|Cadena|El símbolo representa un valor de cadena arbitraria.|  
+|String|El símbolo representa un valor de cadena arbitraria.|  
   
  Los símbolos son entre mayúsculas y minúsculas y que se hace referencia mediante la sintaxis de $(symbol-name):  
   
@@ -141,9 +142,9 @@ La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y 
 |-|-|-|  
 |**Element**|**Atributos (todas requeridas)**|**Definición**|  
 |\<Tamaño >|Valor|El origen se usará para las imágenes del tamaño especificado (en unidades de dispositivo). La imagen estará cuadrada.|  
-|\<SizeRange >|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo), ambos inclusive.. La imagen estará cuadrada.|  
+|\<SizeRange >|MinSize, MaxSize|El origen se usará para las imágenes de MinSize a MaxSize (en unidades de dispositivo), ambos inclusive. La imagen estará cuadrada.|  
 |\<Dimensiones >|Ancho, alto|El origen se usará para las imágenes del ancho y alto (en unidades de dispositivo).|  
-|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes de ancho/alto mínimo para el ancho/alto máximo (en unidades de dispositivo), ambos inclusive..|  
+|\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|El origen se usará para las imágenes de ancho/alto mínimo para el ancho/alto máximo (en unidades de dispositivo), ambos inclusive.|  
   
  A \<origen > elemento también puede tener una función opcional \<NativeResource > subelemento, que define un \<origen > que se carga desde un ensamblado nativo en lugar de un ensamblado administrado.  
   

@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec424f5e85f5bff9be5b276b3978b25dc3239fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Introducción a los analizadores de Roslyn
 Con los analizadores de código en vivo, basado en el proyecto en Visual Studio, los autores de API pueden distribuir el análisis de código específico de dominio como parte de sus paquetes de NuGet.  Dado que estos analizadores cuentan con la tecnología .NET Compiler Platform («Roslyn» Code-named), pueden generar advertencias en el código a medida que escribe, incluso antes de que haya terminado de la línea (espera nada más para compilar el código para detectar problemas).  Los analizadores pueden aparecer también una corrección automática de código mediante el símbolo del sistema de bombilla de Visual Studio para permitir que el código de limpieza inmediatamente  

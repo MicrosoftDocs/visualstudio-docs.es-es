@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29cbc142be40d4c4e2e8780304767bd17d1d94fe
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 22261c7485f1779eb3613c7ef5af693feeb51fbd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-single-file-generators"></a>Registrar generadores de un solo archivo
 Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe registrarlo tan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede crear instancias de él y lo asocia con un tipo de proyecto determinado.  
@@ -47,11 +48,11 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
   
     -   CLSID  
   
-         Obligatorio. Especifica el identificador de la biblioteca de clases del componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Requerido. Especifica el identificador de la biblioteca de clases del componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
     -   GeneratesDesignTimeSource  
   
-         Obligatorio. Indica si los tipos de archivos generados por esta herramienta personalizada se ponen a disposición para los diseñadores visuales. El valor de este parámetro debe ser es 0 (cero) para tipos no está disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.  
+         Requerido. Indica si los tipos de archivos generados por esta herramienta personalizada se ponen a disposición para los diseñadores visuales. El valor de este parámetro debe ser es 0 (cero) para tipos no está disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.  
   
     > [!NOTE]
     >  Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.  

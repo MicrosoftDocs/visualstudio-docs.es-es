@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6218d697880da3ebf0d9af5599b5a7ca37ddf2f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 76801810aafa3bd4048776ca38385ad1cf508d94
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-update-the-status-bar"></a>Cómo: actualizar la barra de estado
 El **barra de estado** es una barra de controles que se encuentra en la parte inferior de muchas ventanas de la aplicación que contiene una o varias de las líneas de texto de estado o de indicadores.  

@@ -15,11 +15,12 @@ caps.latest.revision: "50"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 92c4d51d575ffd6e5723bf80b8adc700b83f6afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc16c51b72ced37072c4ddf6d47bf347cf57c0f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="detecting-system-requirements"></a>Detectar los requisitos del sistema
 Un VSPackage no funcionará a menos que esté instalado Visual Studio. Al utilizar Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el programa de instalación para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, como por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.  

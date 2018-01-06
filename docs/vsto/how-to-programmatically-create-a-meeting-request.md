@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a8bf894d8dc68e951333c517ddc1708b9b277582
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 09032546b565a0fe638d63f76685ff83e26f532c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>Cómo: Crear una convocatoria de reunión mediante programación
   En este ejemplo se crea una convocatoria de reunión en Microsoft Office Outlook y se envía la solicitud a un asistente.  

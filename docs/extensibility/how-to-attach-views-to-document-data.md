@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 146303eebbd824342b000fb14b8dbf953c3f0523
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bcbb3e6b475a9dcd22d012073d3197013da337c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Cómo: adjuntar vistas para datos de documentos
 Si tiene una nueva vista de documento, es posible que pueda conectar a un objeto de datos del documento existente.  

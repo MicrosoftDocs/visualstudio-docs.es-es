@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 794eccaf59b65044840d459bbde2e17eab8684a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="delayed-document-loading"></a>Documento carga retrasada
 Cuando un usuario vuelve a abrir una solución de Visual Studio, la mayoría de los documentos asociados no se carga de forma inmediata. El marco de la ventana de documento se crea en un estado pendiente de inicialización y un documento de marcador de posición (llamado un marco de código auxiliar) se coloca en la tabla de documento ejecutando (RDT).  

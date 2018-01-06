@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50d05e529a3202f59df53801728b40fee1c68f40
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13eff6aca9470e88be788fe3fcb625fecc32c2c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-codes"></a>Códigos de error
 Cuando una función de API de complemento de Control de código fuente, devuelve un error, se espera a ser uno de los siguientes códigos de error. Todos los errores son negativos, son positivos, las advertencias o los códigos de error informativo y correcta es 0.  

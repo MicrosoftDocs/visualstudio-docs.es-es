@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bd2a46573ca655df3372c33182860cf2d4816d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f0e1c5c252e0674ee3de8371080e298f42de2112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Esta interfaz permite que un autor de llamada determinar si un proveedor de puerto puede conservar los puertos (de escribirlos en disco) entre las distintas invocaciones del depurador y, a continuación, obtener una lista de esos puertos conservados.  

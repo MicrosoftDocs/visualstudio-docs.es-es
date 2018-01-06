@@ -24,11 +24,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7b2277d725259fb5f95c186825773b5460ec17d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6a5dbff1d4a4c739ce8ecab0807e2d74c62f999e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Cómo: Agregar un método Finder específico
   Puede devolver una instancia de entidad única creando un *método Finder específico* método. El servicio de conectividad de datos profesionales (BDC) ejecuta el método Finder específico cuando un usuario elige una entidad en una lista externa o un elemento web datos económicos. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  

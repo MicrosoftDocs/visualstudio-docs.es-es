@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd70d65a7d2cbabbbf7fcd3581e8ba974ff25ee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c496c65244f0ede0c3a6385f6cf1329479a17c22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Coincidencia de llaves en un servicio de lenguaje heredado
 Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de elementos del lenguaje que deben realizarse conjuntamente, como paréntesis y llaves. Cuando un programador escribe una llave de cierre, se resalta la llave de apertura.  
@@ -43,7 +44,7 @@ Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de el
 ## <a name="enabling-support-for-brace-matching"></a>Habilitar la compatibilidad para la coincidencia de llaves  
  El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo puede establecer el `MatchBraces`, `MatchBracesAtCaret`, y `ShowMatchingBrace` parámetros con nombre que establecen las propiedades correspondientes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. También se pueden establecer propiedades de la preferencia de idioma por el usuario.  
   
-|Entrada del registro|Propiedad|Descripción|  
+|Entrada del registro|Property|Descripción|  
 |--------------------|--------------|-----------------|  
 |`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Habilita la concordancia de llaves|  
 |`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Habilita la coincidencia de llaves como el símbolo de intercalación se mueve.|  

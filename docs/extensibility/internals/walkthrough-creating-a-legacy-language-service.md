@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 256a609dad857097731e4914a11623fe62ad7664
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 660d33dd2d5c46d8020172c1fcf74bfb64b43360
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Tutorial: Crear un servicio de lenguaje heredado
 Uso de las clases de lenguaje de managed package framework (MPF) para implementar un servicio de lenguaje en [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] es sencillo. Es necesario un VSPackage para hospedar el servicio de lenguaje, el propio servicio de lenguaje y un analizador en su idioma.  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f91f6c3668b7cc1ce881dd0b98d1bd5dddebf530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuration-options-overview"></a>Información general de opciones de configuración
 Los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede admitir varias configuraciones que se pueden compilar depurado, ejecución o implementado. Una configuración es un tipo de compilación se describe con un conjunto de propiedades, normalmente modificadores del compilador y ubicaciones de archivos. De forma predeterminada, las nuevas soluciones contienen dos configuraciones, Debug y Release. Estas configuraciones pueden aplicarse utilizando su configuración predeterminada, o modificar para cumplir sus requisitos específicos de la solución o proyecto. Algunos paquetes pueden crearse de dos maneras: como un editor de ActiveX o como un componente en contexto. Proyectos no es necesario admitir varias configuraciones, sin embargo. Si hay una sola configuración, dicha configuración se asigna a todas las configuraciones de soluciones.  

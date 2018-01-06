@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f4056e778e7d8f6aa62e84b03897c810160fa41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e80b947b2d4d20692e0abceae0ffa36e64f2b0df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-isolated-shell"></a>Aislamiento de Visual Studio Shell
 El shell aislado de Visual Studio le permite crear aplicaciones independientes que se pueden ejecutar en paralelo con otras versiones de Visual Studio. Se utiliza principalmente para hospedar herramientas especializadas que se pueden usar los servicios de Visual Studio, pero también tienen un aspecto personalizado y personalización de marca. Características de Visual Studio y los grupos de comandos de menú pueden fácilmente puede activar y desactivar. Títulos de las aplicaciones, los iconos de aplicación y las pantallas de presentación son totalmente personalizables. Para obtener una lista de características personalizables, consulte [personalizar el Shell aislado](customizing-the-isolated-shell.md).  

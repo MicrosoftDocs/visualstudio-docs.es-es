@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyecto: Under the Hood, segunda parte
 En [nueva generación de proyecto: Under the Hood, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) hemos visto cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.  
@@ -64,7 +65,7 @@ namespace Simple
 }  
 ```  
   
- Para obtener una lista completa de parámetros de plantilla, consulte [parámetros de plantilla](../../ide/template-parameters.md).  
+ Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../../ide/template-parameters.md).  
   
 ## <a name="a-look-inside-a-vstemplate-file"></a>Un vistazo dentro de una. Archivo VSTemplate  
  Un archivo .vstemplate básico tiene este formato  

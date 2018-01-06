@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32e9c8ffa2a9ca2bba889436f37cc4f5c3d188bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 47316f6bd47d5d528dc6e36dfe3a4bcb67e00909
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createpkgdef-utility"></a>Utilidad de CreatePkgDef
 Toma un archivo .dll para una extensión de Visual Studio como un parámetro y crea un archivo .pkgdef para acompañar la DLL. El archivo .pkgdef contiene toda la información que en caso contrario, se escribirán en el registro del sistema cuando se instala la extensión.  
@@ -37,7 +38,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
   
 ## <a name="arguments"></a>Argumentos  
  / out =`FileName`  
- Obligatorio. Establece el nombre del archivo de salida .pkgdef a`FileName`.  
+ Requerido. Establece el nombre del archivo de salida .pkgdef a`FileName`.  
   
  /codebase  
  Opcional. Registro de las fuerzas con la utilidad de código base.  

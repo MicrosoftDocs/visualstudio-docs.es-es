@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6329950b3af0b0ec44347ad9a85124ee7192439
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ae8540a2f372abacd8eda6e63cd868edbb050392
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-options-pages"></a>Crear páginas de opciones
 En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] marco de trabajo de paquetes administrados, las clases derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> ampliar la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE agregando **opciones** páginas en el **herramientas** menú.  

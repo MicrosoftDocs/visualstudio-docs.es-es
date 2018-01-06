@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 595e8cec9f90e44c4260ade6c9654483513c310a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ccbbc6652fd4918c88bf8c3728b85e17e5b9213d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Compatibilidad con el SDK de Visual Studio
 Existen varias opciones de soporte técnico para los clientes que tienen preguntas sobre cómo extender el entorno de desarrollo integrado (IDE) de Visual Studio.  

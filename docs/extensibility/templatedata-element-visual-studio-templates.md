@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c0cda80ce9ff762547e6938ec27027fe5e045d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85dba252eedaeafbffdc58eadac91386ff6cac98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData (Elemento, Plantillas de Visual Studio)
 Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuevo proyecto** o **Agregar nuevo elemento** .  
@@ -48,7 +49,7 @@ Clasifica la plantilla y define cómo se muestra en el cuadro de diálogo **Nuev
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
-|[Nombre](../extensibility/name-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica el nombre de la plantilla, tal y como aparece en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
+|[Name](../extensibility/name-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica el nombre de la plantilla, tal y como aparece en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
 |[Descripción](../extensibility/description-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica la descripción de la plantilla, tal y como aparece en la vista la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.|  
 |[Iconos](../extensibility/icon-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Especifica la ruta de acceso y el nombre de archivo del archivo de imagen que sirve como icono, que aparece en la vista de la **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo, para la plantilla.|  
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Elemento necesario.<br /><br /> Clasifica la plantilla de proyecto para que aparezca bajo el grupo especificado en el **nuevo proyecto** cuadro de diálogo.|  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2b3974c9103a385badc56fda759ee95ef3a40a93
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06375b45e21e0b83c62f2509d666b786479ff2b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
 Permite que un paquete VSPackage tener acceso a un comando que se define en otro archivo de vsct. Por ejemplo, si el paquete de VS utiliza la norma **copia** comando, que se define mediante el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell, puede agregar el comando a un menú o barra de herramientas sin necesidad de volver a implementarlo.  
@@ -37,8 +38,8 @@ Permite que un paquete VSPackage tener acceso a un comando que se define en otro
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Obligatorio. El GUID del par de Id. de GUID que identifica el comando.|  
-|id|Obligatorio. El identificador del par de Id. de GUID que identifica el comando.|  
+|guid|Requerido. El GUID del par de Id. de GUID que identifica el comando.|  
+|id|Requerido. El identificador del par de Id. de GUID que identifica el comando.|  
 |Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  

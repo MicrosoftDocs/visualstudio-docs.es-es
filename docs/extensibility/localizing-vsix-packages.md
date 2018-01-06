@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a8bb9332b30e5dbc410bdacea3800713b25b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6b95047348f549073a05060b81874f65d7781918
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-vsix-packages"></a>Adaptar paquetes VSIX
 
@@ -104,7 +105,7 @@ El ejemplo siguiente muestra las partes relevantes de un archivo Extension.vsixm
 
 ## <a name="see-also"></a>Vea también
 
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |[Referencia de esquema 2.0 de paquete de idioma VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Un paquete de idioma VSIX describe la información de localización de un archivo de implementación de VSIX.|
 |[Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Describe la estructura y el contenido de un paquete vsix.|

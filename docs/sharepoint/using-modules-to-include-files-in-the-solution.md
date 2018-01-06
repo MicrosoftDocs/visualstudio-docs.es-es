@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 484ae234839876922b6c04767d67ed56f85a108d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f340d0a8c713aedc6ee74aa598c7170495ac8c01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Utilizar módulos para incluir archivos en la solución
   Puede haber ocasiones cuándo es conveniente para implementar los archivos en el servidor de SharePoint, independientemente de su tipo de archivo, como nuevas páginas maestras. Para ello, puede usar *módulos* (no se deben confundir con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] los módulos de código). Los módulos son contenedores de archivos en una solución de SharePoint. Cuando se implementa la solución, los archivos del módulo se copian en las carpetas especificadas en el servidor de SharePoint.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 |Nombre del elemento|Descripción|  
 |------------------|-----------------|  
 |Elementos|Contiene todos los elementos definidos en el módulo.|  
-|Módulo|El elemento de módulo tiene un único atributo, *nombre*, que especifica el nombre del módulo en el formato `<Module Name="Module1">`.<br /><br /> Tenga en cuenta que si cambia el nombre del módulo (o su *nombre de la carpeta* propiedad), debe actualizar manualmente el nombre en el elemento de módulo.<br /><br /> Si especifica un subdirectorio para los archivos en el elemento de módulo, [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) creará automáticamente una estructura de directorios correspondiente para ellos.|  
+|Module|El elemento de módulo tiene un único atributo, *nombre*, que especifica el nombre del módulo en el formato `<Module Name="Module1">`.<br /><br /> Tenga en cuenta que si cambia el nombre del módulo (o su *nombre de la carpeta* propiedad), debe actualizar manualmente el nombre en el elemento de módulo.<br /><br /> Si especifica un subdirectorio para los archivos en el elemento de módulo, [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) creará automáticamente una estructura de directorios correspondiente para ellos.|  
 |Archivo|El elemento de archivo tiene dos parámetros, *ruta de acceso* y *Url*.<br /><br /> -Path: El nombre y la ubicación del archivo en la solución de SharePoint. El formato es, `Path="Module1\Sample.txt"`.<br /><br /> -Dirección Url: La ubicación donde se implementará el archivo en el servidor de SharePoint. El formato es, `Url="Module1/Sample.txt"`.<br /><br /> -Type: Un atributo opcional que tiene dos configuraciones: *GhostableInLibrary* y *Ghostable*. El formato es, `Type="GhostableInLibrary"`. Especificar *GhostableInLibrary* significa que el archivo se agregará a una biblioteca de documentos de SharePoint junto con un elemento de lista para acompañar el archivo cuando se agrega a la biblioteca. Especificar *Ghostable* hace que el archivo se agrega a SharePoint fuera de la biblioteca de documentos.|  
   
  Cada archivo que desee implementar requiere otro `<File>` entrada de elemento en Elements.xml.  

@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1876f334ad1b444b464ecc420767dea90baed6b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-editor"></a>Dentro del Editor
 El editor se compone de una serie de diferentes subsistemas, que están diseñadas para impedir que el editor de texto modelo independiente la vista de texto y la interfaz de usuario.  

@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe7822382443e6c1e9bc1a77eb0cd64844504172
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-solution-packages"></a>Crear paquetes de soluciones de SharePoint
   Con el Diseñador de paquetes, puede crear y personalizar paquetes de implementación. Por ejemplo, puede agregar elementos y características de proyecto de SharePoint, restablecer el servidor IIS, establecer los ámbitos de activación de las características e identificar las dependencias de las características. El diseñador también genera un manifiesto, un archivo XML en el que se describe cada paquete.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 |Propiedad del Diseñador de paquetes|Descripción del valor predeterminado|  
 |-------------------------------|------------------------------------|  
-|Nombre|Obligatorio. El nombre predeterminado del paquete se establece en *ProjectName*.|  
+|nombre|Requerido. El nombre predeterminado del paquete se establece en *ProjectName*.|  
 |Restablecer WebServer|Opcional. Seleccione si desea reiniciar el servidor web una vez instalado el archivo .wsp en el servidor de SharePoint.|  
 |Tipo de servidor de implementación|Requerido. De forma predeterminada, el ámbito se establece en ApplicationServer.<br /><br /> ApplicationServer: Describe un servidor que hospeda servicios.<br /><br /> WebFrontEnd: Describe un servidor que hospeda sitios Web.|  
 |Elementos de la solución|Todos los elementos y las características de proyecto de SharePoint que se pueden agregar al paquete.|  

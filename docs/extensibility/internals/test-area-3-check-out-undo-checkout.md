@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74f2c8d5589eb4e8a3df9accdd85109e9858920d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Zona de ensayo 3: Extraer del repositorio / Deshacer desprotección
 Esta área de complemento de prueba de control de código fuente cubre los elementos de edición y reversión desde el almacén de versiones a través de la **desproteger** y **Deshacer desprotección** comandos.  
@@ -60,7 +61,7 @@ Esta área de complemento de prueba de control de código fuente cubre los eleme
 |Acción|Pasos de prueba|Resultados esperados para comprobar|  
 |------------|----------------|--------------------------------|  
 |Comprobar Out exclusivo (COE) un proyecto de cliente|1.  Cree un proyecto de cliente.<br />2.  Agregar la solución al control de código fuente.<br />3.  Desproteger todo el proyecto en modo exclusivo (**archivo**, **desproteger**).|Se produce desprotección.|  
-|Extraer del repositorio exclusiva (COE) un sistema de archivos o un proyecto Web de IIS local|1.  Establecer la conexión de servidor Web en el archivo de recurso compartido en **herramientas**, **opciones**, **proyectos**, **configuración Web**.<br />2.  Cree un proyecto Web.<br />3.  Agregar la solución al control de código fuente.<br />4.  Desproteger todo el proyecto en modo exclusivo (**archivo**, **Control de código fuente**, **desproteger**).|Se produce desprotección.|  
+|Extraer del repositorio exclusiva (COE) un sistema de archivos o un proyecto Web de IIS local|1.  Establecer la conexión de servidor Web en el archivo de recurso compartido en **herramientas**, **opciones**, **proyectos**, **configuración Web**.<br />2.  Cree un proyecto web.<br />3.  Agregar la solución al control de código fuente.<br />4.  Desproteger todo el proyecto en modo exclusivo (**archivo**, **Control de código fuente**, **desproteger**).|Se produce desprotección.|  
 |Desproteger elementos de la solución en una solución (nuevo método para controlar otros archivos)|1.  Crear una solución en blanco.<br />2.  Agregar la solución al control de código fuente.<br />3.  Desproteger la solución.<br />4.  Agregar varios elementos de la solución.<br />5.  Compruebe todos los elementos recién agregados.<br />6.  Seleccionar varios elementos de la solución.<br />7.  Extraer del repositorio los elementos seleccionados (menú contextual, **desproteger**).|Archivos seleccionados se desprotegen.|  
 |Desproteger versión Local (si el complemento sometida a prueba es compatible con esta característica)|1.  El usuario 1: Crear un proyecto de cliente.<br />2.  El usuario 1: Agregar la solución al control de código fuente.<br />3.  El usuario 2: Abra la solución de control de código fuente a otra ubicación.<br />4.  El usuario 2: Desproteger un archivo.<br />5.  El usuario 2: Modificar el archivo.<br />6.  El usuario 2: Revise el archivo.<br />7.  Usuario 1: Desproteger la versión local del archivo (comprobar la **Desproteger versión Local** opción en avanzada **desproteger** cuadro de diálogo).|La versión local del archivo se desprotege.<br /><br /> Las modificaciones por el usuario 2 no se aplican al archivo de usuario 1.|  
   

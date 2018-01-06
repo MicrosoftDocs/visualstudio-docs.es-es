@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f03dbae8b320161705c50da06d605cfc335074cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2dedd54aa1db26e38b6f212c616bd38c09018961
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementación de categorías personalizadas y mostrar los elementos
 Un VSPackage puede proporcionar un control de las fuentes y colores de texto que contiene a la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) a través de categorías personalizadas y mostrar los elementos.  
@@ -54,7 +55,7 @@ Un VSPackage puede proporcionar un control de las fuentes y colores de texto que
   
 -   Rellenar el registro con dos valores:  
   
-    |Name|Tipo|Datos|Descripción|  
+    |nombre|Tipo|Datos|Descripción|  
     |----------|----------|----------|-----------------|  
     |Categoría|REG_SZ|GUID|Crea un GUID para identificar la categoría.|  
     |Package|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría.|  
@@ -69,7 +70,7 @@ Un VSPackage puede proporcionar un control de las fuentes y colores de texto que
   
 -   Rellenar el registro con dos valores:  
   
-    |Name|Tipo|Datos|Descripción|  
+    |nombre|Tipo|Datos|Descripción|  
     |----------|----------|----------|-----------------|  
     |Categoría|REG_SZ|GUID|Crea un GUID para identificar el grupo.|  
     |Package|REG_SZ|GUID|El GUID del servicio que admite la categoría.|  

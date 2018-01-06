@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b8f75dd12e0684edd4260e796540523a2c7d08d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b16a2ee34ca757e62a26676386566b94c31ebf74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>Examinar las conexiones de SharePoint utilizando el Explorador de servidores
   Ahora puede examinar las conexiones locales de SharePoint en **Explorador de servidores**. Mediante esta técnica, puede navegar por los componentes de un sitio de SharePoint en el sistema. Componentes de sitio de SharePoint, como las definiciones de lista y tipos de contenido aparecen en un nodo que se denomina **las conexiones de SharePoint** en la vista de árbol de **Explorador de servidores**. Para mostrar **Explorador de servidores**, en la barra de menús, elija **vista**, **Explorador de servidores**. Además de mostrar los componentes de sitio de SharePoint, puede quitar elementos, ver sus propiedades o actualizar la vista de árbol mediante comandos en el menú contextual.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 |Nombre de comando|Descripción|  
 |------------------|-----------------|  
-|Actualizar|Actualiza la vista de árbol para reflejar los cambios que se hayan producido desde la última vez que se mostró el nodo.|  
+|Refresh|Actualiza la vista de árbol para reflejar los cambios que se hayan producido desde la última vez que se mostró el nodo.|  
 |Eliminar|Quita el nodo seleccionado de la vista de árbol. **Nota:** este comando sólo está habilitado en las conexiones de SharePoint que aparecen en la **las conexiones de SharePoint** nodo.|  
 |Propiedades|Muestra las propiedades disponibles para el nodo seleccionado en el **propiedades** ventana. Las propiedades son todas de sólo lectura y no todos los nodos tienen propiedades asociadas a él.|  
 |Agregar conexión|Permite especificar un sitio de SharePoint que desea examinar. Disponible en la **las conexiones de SharePoint** nodo y los nodos secundarios del sitio.|  

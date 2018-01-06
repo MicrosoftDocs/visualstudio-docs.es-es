@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c4b91633c94b899157cef5418be0ac8a4d784f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cc1e668f1d78bc6a1db66b6fd4dfebf77b0f6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glosario de depurador de Visual Studio
 Los siguientes son los términos usados en el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuración.  
@@ -31,7 +32,7 @@ Los siguientes son los términos usados en el [!INCLUDE[vsprvs](../../../code-qu
  causalidad  
  Proporciona la capacidad para realizar el seguimiento de un subproceso lógico de ejecución a través de varias máquinas, procesos y subprocesos físicos y para reconstruir la pila de llamadas del subproceso lógico en un momento determinado de duración de dicho subproceso.  
   
- contexto del código  
+ contexto de código  
  Proporciona una abstracción de una posición en el código que se sabe que el motor de depuración. Para la mayoría de las arquitecturas de tiempo de ejecución, un contexto de código es una dirección en la secuencia de instrucciones de un programa. Para los idiomas no tradicionales, en el que no se puede representar código de las instrucciones, se puede representar un contexto de código por otros medios.  
   
  ruta de acceso del código  
@@ -40,7 +41,7 @@ Los siguientes son los términos usados en el [!INCLUDE[vsprvs](../../../code-qu
  motor de depuración (Alemania)  
  Un componente que permite la depuración de una arquitectura en tiempo de ejecución. Un motor de depuración funciona junto con el sistema operativo o intérprete y proporciona servicios de depuración como la evaluación de expresión, control y los puntos de interrupción de ejecución.  
   
- contexto del documento  
+ contexto de documento  
  Proporciona una abstracción de una posición en un documento de archivo de origen que sabe que el motor de depuración. Para la mayoría de los idiomas, un contexto de documento es una posición en un archivo de código fuente. Para los idiomas no tradicionales, para que el archivo de origen no puede ser texto, un contexto de documento puede estar representado por otros medios. Vea también *documento posición*.  
   
  posición del documento  

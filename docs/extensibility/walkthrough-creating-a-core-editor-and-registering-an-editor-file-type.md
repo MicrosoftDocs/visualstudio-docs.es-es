@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c590896144ddd6e7dd1586ef08e5049d46795320
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ace475cb94920a5c0470c1d16265349edfa441f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor
 En este tutorial se muestra cómo crear un VSPackage que comienza el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el editor principal cuando un archivo que tiene la extensión de nombre de archivo .myext se carga.  

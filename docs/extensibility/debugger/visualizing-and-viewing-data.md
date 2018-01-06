@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e493cdbccf12019584bb08b82503d6a8c6ebeea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 14e5b641dc5bc51ac066f32332f3fdb2b01d1810
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizar y visualización de datos
 Los visualizadores de tipo y presentar los datos de forma que sea significativo rápidamente a un desarrollador visores personalizados. El evaluador de expresiones (EE) puede admiten visualizadores de tipo de terceros, así como proporcionar sus propios visores personalizados.  

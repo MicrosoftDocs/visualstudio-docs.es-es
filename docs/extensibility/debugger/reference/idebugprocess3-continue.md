@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d748d7ab60efdb7f9f3e17070c3292b25ebc38ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f666f35a71f65b839073e7d360bc357627fb7c5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Continúa ejecutando este proceso desde un estado de detención. Se conserva un estado de ejecución anterior (por ejemplo, un paso), y el proceso empieza a ejecutarse de nuevo.  

@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7ff76cd40f80f6855de72795b08e70fb87ed0f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cdf8fd3d32678cc80d215d77e34cd7987d7bd29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-compiler"></a>Compilador de Color VSIX
 La herramienta de compilador de Color de extensión de Visual Studio es una aplicación de consola que toma un archivo .xml que representa los colores de los temas de Visual Studio existentes y convierte a un .pkgdef archivos para que los colores se pueden utilizar en Visual Studio. Dado que es más fácil comparar las diferencias entre los archivos .xml, esta herramienta es útil para administrar los colores personalizados en el control de código fuente. También puede enlazar con entornos de compilación para que el resultado de la compilación es un archivo .pkgdef válido.  
@@ -55,7 +56,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|Name|[Required] El nombre del tema|  
+|nombre|[Required] El nombre del tema|  
 |GUID|[Required] GUID del tema (deben coincidir con formato de GUID)|  
   
  Al crear colores personalizados para Visual Studio, los colores deben definirse para los temas siguientes. Si no existe ningún color para un tema determinado, Visual Studio intenta cargar los colores que faltan desde el tema claro.  
@@ -81,7 +82,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|Name|[Required] El nombre de la categoría|  
+|nombre|[Required] El nombre de la categoría|  
 |GUID|[Required] GUID de la categoría (deben coincidir con formato de GUID)|  
   
  **Color**  
@@ -98,7 +99,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|Name|[Required] El nombre del color|  
+|nombre|[Required] El nombre del color|  
   
  **Primer plano o fondo**  
   

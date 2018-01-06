@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72460f39cf63346106c2ccd81dc9ab16f8af78b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-policy-and-the-properties-window"></a>Directiva de plantilla y la ventana Propiedades
 Cuando un proyecto se encuentra dentro de un proyecto de enterprise Templates, ese proyecto de enterprise Templates puede aplicar directivas. Directiva de plantilla se convierte en un sistema de restricción que puede utilizarse para establecer los valores predeterminados para las propiedades, ocultar propiedades, agregar propiedades y así sucesivamente.  

@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9e1bbce7fd1727bc629f015894c16b1d56a2150
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-5-change-source-control"></a>Zona de ensayo 5: Control de código fuente de cambio
 Esta área de complemento de prueba de control de código fuente trata cambiar el control de código fuente a través de la **cambiar Control de código fuente** comando.  

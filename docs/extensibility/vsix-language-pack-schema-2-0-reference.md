@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 ms.author: dagriffe
 author: dgriffen
 manager: ghogen
-ms.openlocfilehash: 15c63e446699f254ba33237c264c06c1da802811
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dagriffe
+ms.openlocfilehash: b601653e4b2d309d41f32ff71666567ab860e698
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Referencia de esquema 2.0 de VSIX Language Pack
 
@@ -34,14 +35,14 @@ El elemento raíz del archivo de paquete de idioma es `<PackageLanguagePackManif
 ### <a name="packagelangaugepackmanifest-element"></a>Elemento PackageLangaugePackManifest
 
 En el `<PackageLanguagePackManifest>` elemento debe existir el elemento siguiente:
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |`<Metadata>`| El elemento contenedor para todos los metadatos de paquete localizado
 
 ### <a name="metadata-element"></a>Elemento de metadatos
 
 En el `<Metadata>` elemento puede tener los siguientes elementos:
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |`<DisplayName>`|El nombre localizado de la extensión que se va a instalar|
 |`<Description>`|La descripción localizada de la extensión que se va a instalar|
@@ -68,7 +69,7 @@ En el `<Metadata>` elemento puede tener los siguientes elementos:
 
 ## <a name="see-also"></a>Vea también
 
-|Título|Descripción|
+|Title|Descripción|
 |-----------|-----------------|
 |[Adaptación de paquetes VSIX](../extensibility/localizing-vsix-packages.md)|Muestra cómo proporcionar compatibilidad con la instalación localizada para un paquete VSIX.|
 |[Referencia de esquema 2.0 de la extensión VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifiesto VSIX describe el contenido de un archivo de implementación .vsix, que permite que una extensión de Visual Studio para instalarse mediante el **extensiones y actualizaciones** cuadro de diálogo.|

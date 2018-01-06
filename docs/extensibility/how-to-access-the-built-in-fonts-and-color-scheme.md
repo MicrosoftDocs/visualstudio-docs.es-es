@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ae5c64d0272b998d27a9eb5753c04ae764c3af8f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5d8af96857fa3e3c02ce8ea29711eaffbb532e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Cómo: obtener acceso a las fuentes integradas y la combinación de colores
 El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fuentes y colores que está asociado a la ventana del editor. Puede tener acceso a este esquema a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.  
@@ -58,7 +59,7 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
   
 2.  Rellenar el registro para usar las fuentes estándar y la combinación de colores con cuatro valores:  
   
-    |Name|Tipo|Datos|Descripción|  
+    |nombre|Tipo|Datos|Descripción|  
     |----------|----------|----------|-----------------|  
     |Categoría|REG_SZ|GUID|Un GUID arbitrario que identifica una categoría que contiene el esquema estándar de fuente y color.|  
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Este GUID se usa por todos los VSPackages que usar las configuraciones de fuente y color predeterminado.|  

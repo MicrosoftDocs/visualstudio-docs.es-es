@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 436b5f745dc9b3b8c135ad111e6e708bbd391b4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ceee0091dc20938f9098985c2609f0a3d239c699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-element-visual-studio-templates"></a>References (Elemento, Plantillas de Visual Studio)
 Agrupa las referencias de ensamblado que la plantilla se agrega a los proyectos.  

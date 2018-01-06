@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5118fe29463368bcca90e21830e1418d41c18339
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Eventos de búfer de texto de la API heredado
 El objeto de búfer de texto emite varios eventos diferentes que le permiten responder a distintas situaciones.  

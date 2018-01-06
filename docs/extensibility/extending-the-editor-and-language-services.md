@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8490ddefaca1d170c1dbf379364cdf91b41b7803
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4e81409f8ac93c80bf16b5040c6f388b64ffabbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-editor-and-language-services"></a>Extender el Editor y los servicios de lenguaje
 Puede agregar características del servicio de lenguaje (por ejemplo, IntelliSense) a su propio editor y extender la mayoría de las características del editor de código de Visual Studio.  Para obtener una lista completa de lo que puede extender, consulte [servicio de lenguaje y puntos de extensión del Editor de](../extensibility/language-service-and-editor-extension-points.md).  

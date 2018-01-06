@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introducción al servicio de lenguaje y las extensiones de Editor
 Puede utilizar extensiones de editor para agregar características del servicio de lenguaje como la esquematización, coincidencia de llaves, IntelliSense y las bombillas a su propio lenguaje de programación o a cualquier tipo de contenido. También puede personalizar la apariencia y el comportamiento del editor de Visual Studio, por ejemplo texto colorear, márgenes, elementos gráficos y otros elementos visuales. También puede definir su propio tipo de contenido y especificar la apariencia y el comportamiento de las vistas de texto en el que aparece el contenido.  
@@ -75,7 +76,7 @@ Puede utilizar extensiones de editor para agregar características del servicio 
 ## <a name="managing-extensions"></a>Administrar extensiones  
  Las extensiones de Visual Studio se enumeran en **extensiones y actualizaciones** (en el **herramientas** menú). Si va a probar una extensión en la instancia experimental, se incluye en **extensiones y actualizaciones** en la instancia experimental, pero no aparece en la instancia de desarrollo.  
   
- Para obtener más información, consulte [buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
+ Para más información, vea [Buscar y usar extensiones de Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).  
   
 ## <a name="using-templates-to-create-editor-extensions"></a>Usar plantillas para crear extensiones de Editor  
  Puede utilizar plantillas de editor para crear extensiones MEF que personalicen clasificadores, opciones gráficas y los márgenes. Hay plantillas para proyectos de C# y Visual Basic. Para obtener más información, consulte [crear una extensión con una plantilla de elemento de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  

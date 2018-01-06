@@ -19,11 +19,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3cf332197227e2055b322bce3658cde66dc48f90
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe9fb4a12d45cf5d713fb76fe3fe04e1346a8355
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Extender el nodo Conexiones de SharePoint en el Explorador de servidores
   En Visual Studio, puede conectarse a los sitios de SharePoint locales en el equipo de desarrollo mediante el uso de la **las conexiones de SharePoint** nodo en el**Explorador de servidores** ventana. Este nodo muestra muchos de los componentes de sitios de SharePoint locales en una vista de árbol jerárquico. Por ejemplo, puede ver las listas, bibliotecas de documentos y tipos de contenido en los sitios locales. Para obtener más información sobre el uso de **Explorador de servidores** para conectarse a sitios locales de SharePoint, vea [examinar las conexiones de SharePoint utilizando el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  

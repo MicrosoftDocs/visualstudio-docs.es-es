@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d25243c82cbb1facc4029e1a770113a7b1fca57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: de3fc9b6edb3b916162a1beb34fb716d5c2adaa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-user-settings"></a>Compatibilidad con la configuración de usuario
 Un VSPackage puede definir una o varias categorías de configuración, que son grupos de variables de estado que se conservan cuando un usuario elige el **configuración de importación y exportación de** comando el **herramientas** menú. Para habilitar esta persistencia, se usa las API de configuración en el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -53,7 +54,7 @@ Un VSPackage puede definir una o varias categorías de configuración, que son g
   
  AlternateParent = CategoryName  
   
-|Name|Tipo|Datos|Descripción|  
+|nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |(Predeterminado)|REG_SZ|Nombre del punto de configuración personalizada|Nombre de la clave, `<CSPName`>, es el nombre no traducido del punto de configuración personalizada.<br /><br /> Para las implementaciones en función de MPF, nombre de la clave se obtiene mediante la combinación del `categoryName` y `objectName` argumentos de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> constructor en `categoryName_objectName`.<br /><br /> La clave puede estar vacía o puede contener el identificador de referencia con la cadena localizada en un archivo DLL satélite. Este valor se obtiene de la `objectNameResourceID` argumento pasado a la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> constructor.|  
 |Package|REG_SZ|GUID|El GUID del VSPackage que implemente el punto de configuración personalizado.<br /><br /> Las implementaciones en función de MPF usando la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase, use el constructor `objectType` argumento que contiene el VSPackage <xref:System.Type> y reflexión para obtener este valor.|  

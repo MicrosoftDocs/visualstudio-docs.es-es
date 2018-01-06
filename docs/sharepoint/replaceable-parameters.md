@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 80f9770fe0e6a0294ec43e450acc75f55b8ddbe2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ed085a38b77f7c323451e8209902bece3747ddb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replaceable-parameters"></a>Parámetros reemplazables
   Parámetros reemplazables, o *tokens*, puede usarse dentro de los archivos de proyecto para proporcionar valores para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño. Únicamente son una función similar a la norma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de la plantilla. Para obtener más información, consulte [parámetros de plantilla](/visualstudio/ide/template-parameters).  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="tokens-list"></a>Lista de tokens  
  En la tabla siguiente se enumera los tokens disponibles.  
   
-|Nombre|Descripción|  
+|nombre|Descripción|  
 |----------|-----------------|  
 |$SharePoint.Project.FileName$|El nombre del archivo del proyecto que lo contiene, por ejemplo, "Contenedor".|  
 |$SharePoint.Project.FileNameWithoutExtension$|El nombre del archivo del proyecto contenedor sin la extensión de nombre de archivo. Por ejemplo, "NuevoProy".|  

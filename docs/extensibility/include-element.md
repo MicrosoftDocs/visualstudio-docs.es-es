@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 818b56963c4733ef9bcf826b14df5a703c44e429
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: de947d7d6bf6688381f5026d68d4a007dd40e026
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="include-element"></a>Incluir el elemento
 El elemento Include especifica un archivo que se puede encontrar el proporcionado incluye la ruta de acceso para insertarla en el archivo actual.  Todos los símbolos y los tipos definidos formarán parte del resultado compilado.  
@@ -38,7 +39,7 @@ El elemento Include especifica un archivo que se puede encontrar el proporcionad
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|href|Obligatorio. La ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|  
+|href|Requerido. La ruta de acceso al archivo de encabezado:<br /><br /> href="stdidcmd.h"|  
 |Condición|Opcional. Vea [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  

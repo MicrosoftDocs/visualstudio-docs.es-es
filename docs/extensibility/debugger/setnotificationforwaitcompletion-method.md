@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 385ae98e90d8f3a466c0983405c367347bb8ca10
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f5e35933e59fb4d8ff9f13db4bef8c23891bac2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion (método)
 Establece o borra el bit de estado TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  

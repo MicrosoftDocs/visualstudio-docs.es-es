@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a7d8649e0d8cf83650da58386901e638ec14a2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Tutorial: Guardar configuración de usuario en una página de inicio
 Puede conservar la configuración de usuario para la página de inicio. Si sigue este tutorial, puede crear un control que guarda una configuración en el registro cuando el usuario hace clic en un botón y, a continuación, recupera ese valor cada vez que se cargue la página de inicio. Dado que la plantilla de proyecto de la página de inicio incluye un control de usuario personalizable y el XAML de la página de inicio predeterminada llama a ese control, no es necesario que modificar la página de inicio propio.  

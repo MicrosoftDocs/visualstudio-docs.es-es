@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 577010320dc4aa0a726e7c0befba8173245681e7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3323d317ac8b04731d1573d5c1a05150e012cbfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-essentials"></a>Essentials de servicio de lenguaje heredado
 Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programación en Visual Studio. En este tema se explica las características disponibles en los servicios de lenguaje heredado.  
@@ -36,7 +37,7 @@ Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programac
 |Característica|Descripción|  
 |-------------|-----------------|  
 |Seleccionar el color de la sintaxis|Hace que la vista del editor mostrar diferentes colores y estilos de fuente para los distintos elementos de un idioma. Esta diferencia puede resulte más fácil leer y editar archivos.<br /><br /> Para obtener información general, vea [colores de sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Para obtener información acerca de esta característica en managed package framework (MPF), consulte [coloreado de sintaxis en un servicio de lenguaje heredado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
-|Instrucciones completadas|Completa una instrucción o palabra clave que el usuario ha empezado a escribir. Finalización de instrucciones ayuda a los usuarios escribir instrucciones difíciles más fácilmente y con menos posibilidades de error y escribir menos.<br /><br /> Para obtener información general, vea [finalización de instrucciones en un servicio de lenguaje heredado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Para obtener información sobre esta característica MPF, vea [palabra completa en un servicio de lenguaje heredado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
+|Finalización de instrucciones|Completa una instrucción o palabra clave que el usuario ha empezado a escribir. Finalización de instrucciones ayuda a los usuarios escribir instrucciones difíciles más fácilmente y con menos posibilidades de error y escribir menos.<br /><br /> Para obtener información general, vea [finalización de instrucciones en un servicio de lenguaje heredado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Para obtener información sobre esta característica MPF, vea [palabra completa en un servicio de lenguaje heredado](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
 |Coincidencia de llaves|Aspectos destacados emparejan caracteres como llaves. Cuando el usuario escribe un carácter de cierre como "}", la coincidencia de llaves resalta los correspondientes caracteres, de apertura, como "{". Cuando hay varios niveles de caracteres de cierre, esta característica ayuda a los usuarios confirmar que los caracteres de inclusión están emparejados correctamente.<br /><br /> Para obtener información sobre esta característica MPF, vea [la coincidencia de llaves en un servicio de lenguaje heredado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|  
 |Información sobre herramientas de información de parámetro|Muestra una lista de posibles firmas del método sobrecargado que actualmente está escribiendo el usuario.<br /><br /> Para obtener información general, vea [información de parámetros en un servicio de lenguaje heredado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Para obtener información sobre esta característica MPF, vea [información de parámetros en un servicio de lenguaje heredado](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|  
 |Marcadores de error|Muestra un subrayado rojo ondulado, también conocido como un onduladas, bajo el texto que no es sintácticamente correcta. Marcadores de error normalmente se usan para hacer que los usuarios sea consciente de las palabras clave mal escritas, paréntesis sin cerrar, caracteres no válidos y errores similares.<br /><br /> En las clases MPF, marcadores de error se administran automáticamente en el <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> método de la <xref:Microsoft.VisualStudio.Package.AuthoringSink> clase.|  

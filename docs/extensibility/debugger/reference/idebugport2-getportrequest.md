@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df00ec25a4f417e6a84a5c42f04f082df6e0b05c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66e0ba17503a0d1bd90358d2cafc3ccec09f6fac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 Obtiene la descripción de un puerto que se había utilizado previamente para crear el puerto (si está disponible).  

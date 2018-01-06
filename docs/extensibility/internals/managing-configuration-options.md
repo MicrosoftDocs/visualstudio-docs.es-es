@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e0de435dca5c2bf16d9943f353ddb72080af969
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a3a5ae644d910cdad584c7b285c75987f39c26e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-configuration-options"></a>Administrar opciones de configuración
 Cuando se crea un nuevo tipo de proyecto, debe administrar opciones de configuración de proyecto y una solución que determinan cómo el proyecto se compilará, empaquetada, implementado y ejecución. Los temas siguientes describen la configuración de proyecto y solución.  

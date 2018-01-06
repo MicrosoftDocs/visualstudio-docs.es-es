@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f04251ea8141d07a52499beae46b2881814eec9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 17a629c2d93bb5e91fb301d4da9dca825e5b8917
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-parameters"></a>Parámetros personalizados
 Parámetros personalizados controlan el funcionamiento de un asistente después de que se ha iniciado un asistente. Un archivo .vsz relacionados proporciona una matriz de parámetros definidos por el usuario que se empaquetada por el entorno de desarrollo integrado (IDE) y se pasa al asistente como una matriz de cadenas cuando se inicia el asistente. A continuación, el asistente analiza la matriz de cadenas y utiliza la información para controlar la operación real del asistente. De esta manera, un asistente puede personalizar la funcionalidad según el contenido del archivo .vsz.  

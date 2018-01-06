@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7d5279f16dbc8228f0f116c47e6faa3ab0093472
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8503afb26ec8dc244db39dff5bddcc6d3b733896
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Se trata de una función de devolución de llamada dada a la [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) función para actualizar una recopilación de directorios y (opcionalmente) en los nombres de archivo para averiguar lo que están bajo control de código fuente.  

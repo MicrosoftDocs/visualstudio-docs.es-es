@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204cd6fe59c87dd7ac2b6ca838d1c08b4ff25c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c16fde6cb9dcb29428ad2d52a08b53cffb9f9850
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-features"></a>Características de VSPackage del Control de código fuente
 Esta sección describen las distintas características de un control de código fuente VSPackage. Describe el registro y selección de detalles de un paquete de VS y describe tres de las características relacionadas con el control de código fuente principal: controlar eventos Editar consulta Guardar consulta (QEQS), reemplazo de glifo y la interfaz de usuario personalizada (UI) para el control de código fuente funciones.  

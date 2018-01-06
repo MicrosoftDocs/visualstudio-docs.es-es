@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4c676c28b955fac29db5a961f3b566600bcf318
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: vssdk
+ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 Este artículo contiene las siguientes tareas para que los integradores de Visor de Ayuda de Visual Studio:  

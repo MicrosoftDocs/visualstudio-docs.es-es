@@ -17,11 +17,12 @@ helpviewer_keywords: refactoring [VB]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b80a5f51394fda2274190322be172325205984a0
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: e1344f3bdfdfba5b3092c1c5e3669d4b2f98698f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-in-visual-basic"></a>Refactorización en Visual Basic
 

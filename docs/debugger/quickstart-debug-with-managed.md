@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 545241d254d8ea2d2532ee8590e8e1867d635592
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: dotnet
+ms.openlocfilehash: aa992c0cdcf5c50208aacc8e16d954f4ee35da13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Depurar con código administrado mediante el depurador de Visual Studio
 
@@ -29,7 +30,7 @@ El depurador de Visual Studio proporciona muchas características eficaces para 
 
 2. En **Visual C#** o **Visual Basic**, elija **.NET Core**y, a continuación, en el panel central, elija **aplicación de consola (.NET Core)**.
 
-     Si no ve el **aplicación de consola (.NET Core)** plantilla de proyecto, haga clic en el **abrir Visual Studio Installer** vínculo en el panel izquierdo de la **nuevo proyecto** cuadro de diálogo. Se iniciará el Instalador de Visual Studio. Elija la **desarrollo de escritorio de .NET** y **.NET Core** carga de trabajo, a continuación, elija **modificar**.
+     Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la **desarrollo de escritorio de .NET** y **.NET Core** carga de trabajo, a continuación, elija **modificar**.
 
 3. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
 

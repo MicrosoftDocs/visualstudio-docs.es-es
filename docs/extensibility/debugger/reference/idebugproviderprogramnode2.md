@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d5d206edd68ef1ab9746b4bdd058c72be746b64
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8c083d9b054ecde18d1e1fff8ca5bb8cbb6be659
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Esta interfaz calcula las referencias de interfaces relacionadas con el programa a través de límites de proceso.  

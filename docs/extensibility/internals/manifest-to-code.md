@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd693d56011173564650c0abbd2d5d73492d335d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74a2fac33ed9e464dd6a54e5a63f46a6cd29a0d6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-to-code"></a>Manifiesto para código
 El manifiesto de la herramienta de código es una aplicación de consola que toma un archivo de .imagemanifest para el servicio de imágenes de Visual Studio y genera un archivo de contenedor o archivos para hacer referencia a los valores del manifiesto de imagen en C++, C#, VB o archivos de vsct de extensiones de Visual Studio. Esta herramienta genera archivos de contenedor que pueden usarse para imágenes de solicitudes desde el servicio Visual Studio imagen directamente, o para pasar los valores de manifiesto a través de API si el código no controla cualquiera de su propia interfaz de usuario y la representación.  

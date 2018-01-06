@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9d5e32f6f99cddcd3d04d8c10bda958e58fbbf3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74d59fb19d130ad53ddbf200e96cdf04e958e239
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 Esta estructura representa la dirección de una variable local dentro de un ámbito (normalmente una función o método).  

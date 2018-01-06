@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 09e96719bd7d9a2091bf31dc343036f0312c02fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-essentials"></a>Essentials de integración del Control de código fuente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]admite dos tipos de integración del control de código fuente: un complemento de control de código fuente que proporciona la funcionalidad básica y se genera utilizando la API de complementos de Control de código fuente (anteriormente conocido como la API de MSSCCI) y una solución de integración del control de origen basado en el VSPackage que Proporciona una funcionalidad más sólida.  

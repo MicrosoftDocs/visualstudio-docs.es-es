@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90268fed6f70f97c87bc1a09376aa93c1fda3106
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6d26ede37f64a95e62ff15152ff69be22ccb1ce4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;las personalizaciones&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `customizations` del espacio de nombres `vstov4` contiene toda la información sobre la instalación y carga de cada solución de Office.  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
  El elemento `customizations` tiene el siguiente elemento secundario:  
   
 ### <a name="customization"></a>personalización  
- Obligatorio. El `customization` elemento en el `vstov4` espacio de nombres se define en [&#60; personalización &#62; Elemento &#40; desarrollo de Office en Visual Studio &#41; ](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Requerido. El `customization` elemento en el `vstov4` espacio de nombres se define en [&#60; personalización &#62; Elemento &#40; desarrollo de Office en Visual Studio &#41; ](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="example-of-a-document-level-customization"></a>Ejemplo de personalización de nivel de documento  
   

@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5134116a9d6a8d7872692e88ecd8adf60e9c02e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 870d793a11cccdaae9657deabb0e3b08c4d8c6f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities (función)
 Esta función devuelve funcionalidades adicionales compatibles con el complemento de control de código fuente.  

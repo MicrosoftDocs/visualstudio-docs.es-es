@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d652db21fb98cbb0f06c2ac5ceec0f8f239beff6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Servicios relacionados e Interfaces (VSPackage de Control de código fuente)
 Esta sección enumeran todos el origen controlar interfaces relacionadas con el paquete de VS en el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. El control de código fuente VSPackage implementa algunas de estas interfaces y otros usa para realizar las tareas de control de código fuente.  

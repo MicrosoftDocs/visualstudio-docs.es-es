@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc66e193b13ac6baf9d6089483a1281c2d6a59ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f2209ce2a2f6b1263bb52d550ca303f2525047d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parent-element"></a>Elemento Parent
 El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. El elemento primario de un menú o un grupo puede ser cualquier otro menú o grupo. En un [CommandPlacement elemento](../extensibility/commandplacement-element.md), este elemento es necesario; en todas las demás instancias es opcional. Si se omite este elemento, el elemento primario de `Group_Undefined:0` se se implícito.  
@@ -37,8 +38,8 @@ El elemento primario de un cuadro combinado o botón sólo puede ser un grupo. E
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Obligatorio. Identificador de comando de GUID/identificador GUID.|  
-|id|Obligatorio. Identificador de comando del identificador de GUID/ID.|  
+|guid|Requerido. Identificador de comando de GUID/identificador GUID.|  
+|id|Requerido. Identificador de comando del identificador de GUID/ID.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguna  

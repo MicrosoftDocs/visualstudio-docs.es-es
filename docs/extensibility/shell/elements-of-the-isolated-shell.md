@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32ca2aa4c3c37a4ff407ec06031ec8db16b54ea7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82379a840010ebae434f8ad1a03c12793fe10ec5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementos de Shell aislado
 Puede modificar la configuración del registro, configuración de tiempo de ejecución y punto de entrada de la aplicación de la aplicación de shell aislado y sus .vsct, .pkgdef, and.pkgundef archivos.  
@@ -67,7 +68,7 @@ Puede modificar la configuración del registro, configuración de tiempo de ejec
 ## <a name="substitution-strings"></a>Cadenas de sustitución  
  Se muestran las cadenas de sustitución que se usa en los archivos .pkgdef y .pkgundef en [utilizan las cadenas de sustitución de. Pkgdef del y. Archivos de Pkgundef](substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md).  
   
-## <a name="other-settings"></a>Otros valores de configuración  
+## <a name="other-settings"></a>Otras configuraciones  
  Si la aplicación de shell aislado depende de Microsoft.VisualStudio.GraphModel.dll, debe agregar la siguiente redirección de enlace al archivo .config de la aplicación de Shell aislado:  
   
 ```  

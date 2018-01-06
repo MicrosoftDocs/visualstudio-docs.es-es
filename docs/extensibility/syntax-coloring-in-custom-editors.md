@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c7a63c077207fdc85f3ad8b57119e1c7d1ca30b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8c40538b34c23e88b2c680db170b9d46b7b40f62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Sintaxis de color en los editores personalizados
 Editores de Visual Studio SDK de entorno, incluidos el editor básico, use servicios de lenguaje para identificar elementos sintácticos específicos y mostrarlas con colores especificados para una vista de documento determinado.  

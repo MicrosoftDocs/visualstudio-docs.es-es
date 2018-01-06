@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID e identificadores de menús de Visual Studio
 Este tema enumera los valores GUID y el ID de los menús y los grupos en la barra de menús de Visual Studio. Estos valores se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [IDE-Defined comandos, menús y grupos](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -73,7 +74,7 @@ Este tema enumera los valores GUID y el ID de los menús y los grupos en la barr
 |-----------|--------|  
 |Nuevo o abrir|IDG_VS_FILE_FILE|  
 |Add|IDG_VS_FILE_ADD|  
-|Solución|IDG_VS_FILE_SOLUTION|  
+|Soluciones|IDG_VS_FILE_SOLUTION|  
 |Varios|IDG_VS_FILE_MISC|  
 |Guardar|IDG_VS_FILE_SAVE|  
 |Cambiar nombre|IDG_VS_FILE_RENAME|  
@@ -122,7 +123,7 @@ Este tema enumera los valores GUID y el ID de los menús y los grupos en la barr
 |Examinador de objetos|IDG_VS_VIEW_OBJBRWSR|  
 |Comando también|IDG_VS_VIEW_COMMANDWELL|  
 |Páginas de propiedades|IDG_VS_VIEW_PROPPAGES|  
-|Actualizar|IDG_VS_VIEW_REFRESH|  
+|Refresh|IDG_VS_VIEW_REFRESH|  
   
 ### <a name="project-menu-groups"></a>Grupos de menús de proyecto  
   
@@ -140,7 +141,7 @@ Este tema enumera los valores GUID y el ID de los menús y los grupos en la barr
   
 |Agrupar|Id.|  
 |-----------|--------|  
-|Solución|IDG_VS_BUILD_SOLUTION|  
+|Soluciones|IDG_VS_BUILD_SOLUTION|  
 |Selección|IDG_VS_BUILD_SELECTION|  
 |Optimización guiada por perfiles|IDG_VS_PGO_SELECTION|  
 |Varios|IDG_VS_BUILD_MISC|  

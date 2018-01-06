@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a16698863e92e5bbae4e888502788dd76b04f56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Agregar elementos a la para agregar elementos nuevos cuadros de diálogo
 El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuadro de diálogo con las claves del registro. Como se muestra en las siguientes entradas del registro, la sección AddItemTemplates contiene la ruta de acceso y el nombre del directorio de los elementos que están disponibles en la **Agregar nuevo elemento** se colocan el cuadro de diálogo.  
@@ -37,7 +38,7 @@ El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuad
   
  "SortPriority" = dword:00000064  
   
-|Name|Tipo|Datos (desde el archivo .rgs)|Descripción|  
+|nombre|Tipo|Datos (desde el archivo .rgs)|Descripción|  
 |----------|----------|-----------------------------|-----------------|  
 |@ (Valor predeterminado)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY %|Id. de recurso para **Agregar elemento** plantillas.|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Ruta de acceso de los elementos de proyecto que se muestra en el cuadro de diálogo para la **Agregar nuevo elemento** asistente.|  

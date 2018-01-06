@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 20e8309e0052f6aa92a0069f0c2138880a7742de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2787798afe9554601d44a965ae3f12d5ebeab8bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="icon-element"></a>Icon (elemento)
 El atributo guid de la etiqueta de icono es el guid de un mapa de bits definido.  El atributo id, selecciona la ranura en la franja de mapa de bits. Este elemento es opcional.  Si este elemento se omite el valor de **guidOfficeIcon:msotcidNoIcon** se se implícito.  
@@ -37,8 +38,8 @@ El atributo guid de la etiqueta de icono es el guid de un mapa de bits definido.
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|guid|Obligatorio. El guid de un mapa de bits definido.|  
-|id|Obligatorio. Selecciona la ranura en la franja de mapa de bits.|  
+|guid|Requerido. El guid de un mapa de bits definido.|  
+|id|Requerido. Selecciona la ranura en la franja de mapa de bits.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
   

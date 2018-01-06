@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58f58a1a6ec80331fd5cf6f735098c16c35db82e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50903d9b45828725da03c0fcb0db0f08d7f884eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-custom-debug-engine"></a>Registrar un motor de depuración personalizadas
 El motor de depuración debe registrarse como un generador de clases según las directrices de COM, así como registrar con Visual Studio a través de la subclave del registro de Visual Studio.  

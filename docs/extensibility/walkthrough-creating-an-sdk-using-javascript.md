@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a87ee7d1a48c313a29d00524d471b46ef572f4a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Tutorial: Crear un SDK usando JavaScript
 En este tutorial se enseña cómo utilizar JavaScript para crear un sencillo matemáticas SDK como una extensión de Visual Studio (VSIX).  El tutorial se divide en las partes siguientes:  

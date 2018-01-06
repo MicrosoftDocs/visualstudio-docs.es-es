@@ -15,14 +15,15 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b41cb3012b937ac5448b129657064cca68a5d725
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54181205c98445fef393993d683085cc3afbcba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Cómo: crear una Atom fuente de distribución para una galería privada
-Puede crear una Atom () fuente RSS en una ubicación de intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como galería privada. Para obtener más información, consulte [ensamblados privados](../extensibility/private-galleries.md).  
+Puede crear una Atom () fuente RSS en una ubicación de intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como galería privada. Para más información, vea [Private Galleries](../extensibility/private-galleries.md) (Galerías privadas).  
   
 ## <a name="creating-an-atom-feed"></a>Crear una Atom fuente  
  Para crear una fuente como galería privada Atom, se recopilan primero sus extensiones (archivos .vsix) en una carpeta. Puede organizarlos en subcarpetas si desea. También necesitará los siguientes recursos:  

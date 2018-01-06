@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8cc1bf4871ef91c5b08cb77963a70e422ee3cdc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ec34a6f93625fdb2cb8a1e5fcc5fb5c95d17653b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Cómo: Agregar una entidad a un modelo
   Para crear una entidad, agregue un control de entidad desde Visual Studio **cuadro de herramientas** en el Diseñador de conectividad de datos profesionales (BDC).  

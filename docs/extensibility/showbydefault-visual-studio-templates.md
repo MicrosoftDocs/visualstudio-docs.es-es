@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b6679cdd8f6239d5548f95d8d07146c6cda1ac9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2b0622f2a264baf73ccfeb832c3f049f8ec6fef8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Plantillas de Visual Studio)
 Si `false`, especifica que la plantilla solo se mostrarán en especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  

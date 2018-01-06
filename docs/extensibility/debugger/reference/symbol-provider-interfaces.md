@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84b8e517efa7c5c4aaeba4bf6e19dc23b0615eda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f2b3ec92ce76a3218c646c51ccb28d99322baf93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de proveedor de símbolos
 Los siguientes son las Interfaces de control de símbolos para el [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  

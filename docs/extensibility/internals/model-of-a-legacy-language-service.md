@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de un servicio de lenguaje heredado
 Un servicio de lenguaje define los elementos y características para un idioma específico y se utiliza para proporcionar el editor con información específica para ese idioma. Por ejemplo, el editor debe saber los elementos y las palabras clave del lenguaje para admitir los colores de sintaxis.  
@@ -42,7 +43,7 @@ Modelo de servicio de lenguaje básico
   
  En la tabla siguiente proporciona información general de los objetos en el modelo.  
   
-|Componente|Objeto|Función|  
+|Componente|Object|Función|  
 |---------------|------------|--------------|  
 |Búfer de texto|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Una secuencia de texto de lectura/escritura de Unicode. Es posible para que utilice otras codificaciones de texto.|  
 |Ventana Código|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Una ventana de documento que contiene una o varias vistas de texto. Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está en modo de interfaz de múltiples documentos (MDI), la ventana de código es un formulario MDI secundario.|  

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0620821ec908deed2c57ddfefb40763a48fd2074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 65e05d7da2acf5bd3eaf8dab1e3781d3d5b244a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Envío de eventos de inicio después de un lanzamiento
 Una vez que el motor de depuración (Alemania) se asocian al programa, envía una serie de eventos de inicio a la sesión de depuración.  

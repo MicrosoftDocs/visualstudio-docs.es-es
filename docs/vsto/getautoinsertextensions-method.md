@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d222f7b6751381ceb4ebdb27bb6a6bf223616df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cef8de366b812baee96ba889cc26157594d55954
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions (Método)
   Obtiene información sobre las aplicaciones de Office que se van a insertar automáticamente durante la depuración.  

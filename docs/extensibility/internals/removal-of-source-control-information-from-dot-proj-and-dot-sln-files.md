@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ea933a7e9efc08347ea107b089101f1e5d5459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4131e3d5139911c6a1bb9b44d8d8acaefa6cb632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Eliminación de información de Control de origen de. Proj y. SLN (archivos)
 En la versión 1.2 de la API de complemento de Control de origen de SCC información se almacena en un MSSCCPRJ. Archivo de control de código fuente. La ventaja de la MSSCCPRJ. Archivo de control de código fuente es que la información de control de código fuente no es origen - controlado, como en los archivos .sln y de proj.  

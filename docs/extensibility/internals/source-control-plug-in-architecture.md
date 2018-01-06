@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0cde4ca360aa0059abcbe0b64d63b4a94e85d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitectura de complementos de Control de código fuente
 Puede agregar compatibilidad de control de origen a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) mediante la implementación y adjuntar un complemento de control de código fuente. El IDE se conecta con el complemento a través de la API de complemento de Control de origen bien definido de control de código fuente. El IDE muestra las características de control de versión del sistema del control de código fuente proporcionando una interfaz de usuario (UI) que consta de las barras de herramientas y comandos de menú. El complemento de control de código fuente implementa la funcionalidad de control de código fuente.  

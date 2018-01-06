@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6687ce3ed73a96778b84cec6e77d5c0b3145702d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9b89c4e45f8268df55386d321816325fb50174c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-context-for-editors"></a>Cómo: proporcionar un contexto para los editores
 Para un editor, el contexto está activo sólo cuando el editor tiene el foco o tenía foco inmediatamente antes de que se ha movido el foco a una ventana de herramientas. Puede proporcionar el contexto para un editor haciendo lo siguiente:  

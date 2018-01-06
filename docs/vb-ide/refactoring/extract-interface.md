@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractinterface
 dev_langs: VB
-ms.openlocfilehash: 9616cae1282b992722f75eee091e2c9d271e85f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 08bbae629dbd0e1098eca67107926d290ffe7fb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-an-interface-in-visual-basic"></a>Extraer una interfaz en Visual Basic
 **¿Qué:** le permite crear una interfaz con los miembros existentes de una clase, estructura o interfaz.

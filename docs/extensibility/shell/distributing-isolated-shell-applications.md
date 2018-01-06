@@ -12,18 +12,19 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7e2a85a7e94ad9a700b197c9c4e0f75e78b4ec2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6e9b7ded8d24e4d252d29338d89bd176648511a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="distributing-isolated-shell-applications"></a>Distribuir aplicaciones de Shell aislado
 Debe instalar Visual Studio y el SDK de Visual Studio para crear una aplicación de shell aislado. Para distribuir la aplicación a los equipos de otros usuarios o los clientes, debe incluir un paquete redistribuible especial para el shell aislado.  
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Requisitos previos para la distribución de aplicaciones de Shell aislado  
   
-|Name|Descripción|  
+|nombre|Descripción|  
 |----------|-----------------|  
 |Visual Studio SDK|El SDK debe tener para desarrollar y probar las extensiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. También puede usar el SDK para crear su propia instancia del shell aislado de Visual Studio.<br /><br /> Visual Studio es un requisito previo para el SDK.|  
 |Aislamiento de Microsoft Visual Studio Shell Redistributable|El paquete redistribuible de incluir en el programa de instalación cuando se compila en un entorno de herramientas en Visual Studio aislados de shell. El paquete redistribuible de Shell aislado incluye .NET Framework 4.5.|  

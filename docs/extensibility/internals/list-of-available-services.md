@@ -15,11 +15,12 @@ caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f2fca0baa747311b08983d8fc7e30efd02ae4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-of-available-services"></a>Lista de servicios disponibles
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]y el SDK de Visual Studio admite los siguientes servicios. Algunos paquetes ofrecen sus propios servicios que no se muestran aquí, por ejemplo, servicios de lenguaje no tiene un servicio único GUID. Debe utilizar el nombre del idioma para encontrar el GUID del servicio de lenguaje en el registro.  

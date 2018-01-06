@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1334ec7b2fb5b1d11c5aee5a4febb50e63cece4a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631ffac458cd5f7d29051cdd53431bf7f7e4ccb8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUID y constantes en el SDK de Visual Studio
 La <xref:Microsoft.VisualStudio.VSConstants> clase proporciona acceso a una selección de GUID de entorno y constantes.  

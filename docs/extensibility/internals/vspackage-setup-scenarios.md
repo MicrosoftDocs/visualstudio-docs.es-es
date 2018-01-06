@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2128d4c2659d7e6e389384c4bf7e133a4fb32e47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dea9d25f211ca5042234c0400b2a10086136f49c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-setup-scenarios"></a>Escenarios de instalación de VSPackage
 Es importante para el instalador de VSPackage la flexibilidad de diseño. Por ejemplo, es posible que deba liberar una revisión de seguridad en el futuro, o podría cambiar una estrategia de negocio que requiere la compatibilidad con versiones de side-by-side exhaustiva.  

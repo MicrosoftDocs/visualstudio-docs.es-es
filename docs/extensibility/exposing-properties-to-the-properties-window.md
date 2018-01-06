@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737ce6ae0368d7d1db9d72e6fb25355409663c09
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7aed43ac4248c9bfd1e43d5e6c732a4fef3af529
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Expone las propiedades a la ventana Propiedades
 En este tutorial expone las propiedades públicas de un objeto a la **propiedades** ventana. Los cambios que realice para estas propiedades se reflejan en el **propiedades** ventana.  

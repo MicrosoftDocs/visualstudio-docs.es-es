@@ -19,11 +19,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e05fb3f0a33c0f033733c40b17d636243c18ee22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b7a88c00e980cb86764958886d737d5113dfe1fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-a-legacy-language-service"></a>Desarrollar un servicio de lenguaje heredado
 Esta sección contiene vínculos a temas que le ayudarán a crear un servicio de lenguaje heredado.  

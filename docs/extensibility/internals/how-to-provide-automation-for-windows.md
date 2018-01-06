@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 945eeb8b81ecb26d43da9528db154d133c4f868c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 17cf60573b6feb9fd317116eec4639dbf88f6089
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-provide-automation-for-windows"></a>Cómo: proporcionar la automatización para Windows
 Puede proporcionar la automatización para ventanas de herramientas y documentos. Al proporcionar automatización es aconsejable siempre que desea que los objetos de automatización estén disponibles en una ventana, y el entorno no proporcione un objeto de automatización listos para su uso, como lo hace con una lista de tareas.  

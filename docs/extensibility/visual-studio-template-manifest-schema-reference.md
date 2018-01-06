@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f714120c6f5dced4760bb14cad1e53a794030a19
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 87f676ef30da7c667c4ce2b688520a49ed1931c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referencia de esquema del manifiesto de plantilla de Visual Studio
 Este esquema describe el formato de los archivos de manifiesto (.vstman) de plantillas de Visual Studio generado para las plantillas de proyecto o un elemento de Visual Studio y describe la ubicación y otra información relevante acerca de la plantilla.  
@@ -30,7 +31,7 @@ Este esquema describe el formato de los archivos de manifiesto (.vstman) de plan
   
 ### <a name="attributes"></a>Atributos  
   
--   **Versión**: una cadena que representa la versión del manifiesto de plantilla. Obligatorio.  
+-   **Versión**: una cadena que representa la versión del manifiesto de plantilla. Requerido.  
   
 -   **Configuración regional**: una cadena que representa la configuración regional o configuraciones regionales del manifiesto de plantilla. El valor de configuración regional se aplica a todas las plantillas, por lo que debe usar un manifiesto independiente para cada configuración regional. Opcional.  
   

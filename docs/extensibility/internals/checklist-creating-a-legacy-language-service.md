@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c06d246f7467e19969075537f321061463d1755
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b09176efca3a8839d5e6a741a1e161ff61cdc7ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Lista de comprobación: Crear un servicio de lenguaje heredado
 La siguiente lista de comprobación resume los pasos básicos que deben seguirse para crear un servicio de lenguaje para el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principal. Para integrar el servicio de lenguaje en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe crear un evaluador de expresiones de depuración. Para obtener más información, consulte [escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) en el [extensibilidad de depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
@@ -66,7 +67,7 @@ La siguiente lista de comprobación resume los pasos básicos que deben seguirse
     > [!NOTE]
     >  El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> debe implementar la interfaz en el mismo objeto que la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.  
   
--   Instrucciones completadas  
+-   Finalización de instrucciones  
   
      Implementar la interfaz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet>.  
   

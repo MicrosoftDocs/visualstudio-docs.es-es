@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e identificadores de barras de herramientas de Visual Studio
 Este tema enumera los valores GUID y el ID de las barras de herramientas que se incluyen en el entorno de desarrollo integrado (IDE) de Visual Studio y de los grupos que contienen. Estos valores se definen en archivos de vsct que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [IDE-Defined comandos, menús y grupos](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -64,7 +65,7 @@ Este tema enumera los valores GUID y el ID de las barras de herramientas que se 
   
 ### <a name="standard-toolbar-groups"></a>Grupos de la barra de herramientas estándar  
   
-|Name|Id.|  
+|nombre|Id.|  
 |----------|--------|  
 |Guardar o abrir|IDG_VS_TOOLSB_SAVEOPEN|  
 |Cortar/Copiar|IDG_VS_TOOLSB_CUTCOPY|  
@@ -78,14 +79,14 @@ Este tema enumera los valores GUID y el ID de las barras de herramientas que se 
   
 ### <a name="build-toolbar-groups"></a>Crear grupos de la barra de herramientas  
   
-|Name|Id.|  
+|nombre|Id.|  
 |----------|--------|  
 |Barra de compilación|IDG_VS_BUILDBAR|  
 |Cancelar|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>Grupos de la barra de herramientas del Editor de texto  
   
-|Name|Id.|  
+|nombre|Id.|  
 |----------|--------|  
 |Finalización|IDM_VS_TOOL_TEXTEDITOR|  
 |Sangría|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,7 +95,7 @@ Este tema enumera los valores GUID y el ID de las barras de herramientas que se 
   
 ### <a name="debug-toolbar-groups"></a>Grupos de la barra de herramientas de depuración  
   
-|Name|Id.|  
+|nombre|Id.|  
 |----------|--------|  
 |Execution|IDM_DEBUG_TOOLBAR|  
 |Recorrido paso a paso|IDG_DEBUG_TOOLBAR_STEPPING|  
@@ -103,7 +104,7 @@ Este tema enumera los valores GUID y el ID de las barras de herramientas que se 
   
 ### <a name="debug-location-toolbar-groups"></a>Grupos de barra de herramientas ubicación de depuración  
   
-|Name|Id.|  
+|nombre|Id.|  
 |----------|--------|  
 |Ubicación de depuración|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
@@ -122,7 +123,7 @@ Este tema enumera los valores GUID y el ID de las barras de herramientas que se 
 |Vista de clases|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|  
 |Examinador de objetos|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|  
 |Examinador de objetos|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|  
-|Resultado|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|  
+|Salida|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|  
 |Buscar y reemplazar|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|  
 |Buscar resultados 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|  
 |Buscar resultados 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|  

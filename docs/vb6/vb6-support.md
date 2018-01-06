@@ -10,11 +10,12 @@ helpviewer_keywords:
 ms.assetid: ffc5ba4d-44d7-4ef7-a3f6-38a8738bf127
 author: paulyuk
 ms.author: paulyuk
-ms.openlocfilehash: bdfe33cac19d488bc7763f3c61c518093d8afffa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: paulyuk
+ms.openlocfilehash: a8977aad735a115089685ed0032b3d358d8b89c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Declaración de soporte para Visual Basic 6.0 en Windows
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 10/31/2017
 
 El equipo de Visual Basic se compromete a la compatibilidad de "Simplemente funciona" para aplicaciones de Visual Basic 6.0 en los siguientes sistemas operativos de Windows compatibles: 
 
-- Windows 10 
+- Windows 10
 - Windows 8.1
 - Windows 7
 - Windows Server 2016
@@ -91,7 +92,7 @@ Desde la versión inicial de esta afirmación de compatibilidad, el sistema oper
 
 El runtime de VB6 se incluirá y será compatible con Windows 8.1 durante la vigencia del sistema operativo. Archivos de tiempo de ejecución de Visual Basic 6.0 siguen estando sólo de 32 bits, y todos los componentes se deben hospedar en procesos de aplicación de 32 bits. Los programadores pueden considerar el caso de soporte técnico para Windows 8.1 como el mismo como para Windows 7.
 
-## <a name="windows-10"></a>Windows 10 
+## <a name="windows-10"></a>Windows 10
 
 Desde la versión inicial de esta afirmación de compatibilidad, el sistema operativo Windows 10 se ha liberado. Este documento se actualizó para aclarar el soporte técnico de Microsoft para VB6 en Windows 10.
 

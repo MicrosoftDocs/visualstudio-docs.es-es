@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9687e4f0be16fb42f13c6f9dd20a2cb39be50cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 00716142e7f91d01fbc81c5d25b378065cb44f92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Uso del Administrador de texto para supervisar la configuración Global
 Si implementa un editor principal, debe supervisar los cambios realizados en la configuración global, ya que estos cambios pueden afectar a la instancia del editor. Puede realizar el seguimiento de los cambios de forma escuchar los eventos generados por el Administrador de texto. Por ejemplo, cuando se especifica una preferencia global para la apariencia o comportamiento de un componente en el editor de núcleo, por ejemplo, su objeto de datos del documento, el Administrador de texto almacena esta información y comunica a todos los clientes afectados.  

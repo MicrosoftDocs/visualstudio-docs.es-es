@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ae973b0a1fc30f0592f6cb2702df645708ab43f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1c8757de9b63c3fed75ec7e2ef7f61c89e18226
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Implementar, publicar y actualizar paquetes de soluciones deSharePoint
   Después de desarrollar una solución de SharePoint en Visual Studio, puede implementar su archivo de paquete (.wsp) en un servidor de SharePoint local o publicarlo en un servidor de SharePoint local o remoto. Si implementa los archivos, puede personalizar cómo se implementan los archivos del paquete (.wsp).  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
   
 |Configuración de implementación|Descripción|  
 |------------------------------|-----------------|  
-|Predeterminado|La configuración de implementación predeterminada. Se realizan los pasos de implementación siguientes:<br /><br /> 1.  Ejecute el comando anterior a la implementación.<br />2.  Reciclar el grupo de aplicaciones de IIS.<br />3.  Retirar la solución.<br />4.  Agregar la solución.<br />5.  Activar las características.<br />6.  Comando de ejecución posterior a la implementación.<br /><br /> Cuando se desinstala un paquete, se realizan los siguientes pasos de retracción.<br /><br /> 1.  Reciclar el grupo de aplicaciones de IIS.<br />2.  Retirar la solución.|  
+|Default|La configuración de implementación predeterminada. Se realizan los pasos de implementación siguientes:<br /><br /> 1.  Ejecute el comando anterior a la implementación.<br />2.  Reciclar el grupo de aplicaciones de IIS.<br />3.  Retirar la solución.<br />4.  Agregar la solución.<br />5.  Activar las características.<br />6.  Comando de ejecución posterior a la implementación.<br /><br /> Cuando se desinstala un paquete, se realizan los siguientes pasos de retracción.<br /><br /> 1.  Reciclar el grupo de aplicaciones de IIS.<br />2.  Retirar la solución.|  
 |Sin activación|Esta configuración de implementación ejecuta los mismos pasos como la configuración predeterminada, pero omite el paso de activación.|  
   
  Puede crear sus propias configuraciones de implementación para completar un paso único o cambiar el orden de los pasos del proceso de implementación. Para obtener más información, consulte [Cómo: editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  

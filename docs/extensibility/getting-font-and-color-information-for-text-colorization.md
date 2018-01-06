@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3b31ad2ec080070dec3c68b304f400d204d47a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 97b97b6a79ac93dd614cf6557d338d5f0398192e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Obtención de fuente y la información de Color para el color de texto
 El proceso que se representa o se muestra texto de los elementos de interfaz de usuario depende del tipo de las preferencias del proyecto, su tecnología y developer. El **fuentes y colores** página de propiedades almacena la configuración.  

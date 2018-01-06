@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Tutorial: Mostrar llaves coincidentes
 Puede implementar características basadas en lenguaje como relleno de llaves definiendo las llaves que desee buscar y, a continuación, agregar una etiqueta de marcador de texto a las llaves cuando el símbolo de intercalación está en una de las llaves. Puede definir llaves en el contexto de un idioma, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y las etiquetas se aplican a ese tipo, o puede aplicar las etiquetas a un tipo de contenido existente (por ejemplo, "text"). En el siguiente tutorial se muestra cómo aplicar etiquetas para el tipo de contenido "text" la coincidencia de llaves.  

@@ -15,11 +15,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5061a52de32f699bbe234f729bb4f852ee966933
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9f4d45c3fccebed9febc2ea722981f597896ace
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalar VSPackages con Windows Installer
 Integrar el VSPackage en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] requiere algo más que copiar los archivos al equipo del usuario. Instalador de su VSPackage debe instalar el paquete de VS y sus archivos dependientes y registrar e integrarlos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. El paquete de VS puede aprovechar las características de integración como mostrar un icono en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cuadro de diálogo acerca de pantalla de presentación.  

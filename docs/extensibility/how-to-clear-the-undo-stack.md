@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a0d79b16c911390322c8ea3c27a0b0f8cd5d15d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e2592ad8bbec0ddf87731d25f5c46c714a3336d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-clear-the-undo-stack"></a>Cómo: borrar la pila de deshacer
 El siguiente procedimiento siguiente explica cómo borrar la pila de deshacer.  
