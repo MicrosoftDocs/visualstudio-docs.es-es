@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd18d04adfbf3acd0ca50c1e75bd2a1694b28721
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d33c0e1bc54ee0c1abab736ba24ce76fbf710fdc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Marcadores de línea de comandos del compilador VSCT
 El compilador de la tabla de comandos de Visual Studio (VSCT) proporciona modificadores de línea de comandos para asegurarse de compilación correcta de los archivos de vsct.  
@@ -62,7 +63,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Especifique todos los símbolos definidos adicionales.|  
 |-I|Indicar que el adicionales incluyen rutas de acceso que se deben usar al resolver referencias de archivo.|  
 |-L|Especifique el <xref:System.Globalization.CultureInfo> nombre de referencia cultural, por ejemplo "en-US".|  
-|-E|Emitir objetos de C# en el espacio de nombres especificado para los elementos de comando, seguido por [C &#124; H &#124; N]:*filename*donde C = C#, H = encabezado de C++, N = espacio de nombres. El espacio de nombres es necesario en C#.|  
+|-E|Emitir objetos de C# en el espacio de nombres especificado para los elementos de comando, seguido por [C&#124;H&#124;N]:*filename*donde C = C#, H = encabezado de C++, N = espacio de nombres. El espacio de nombres es necesario en C#.|  
 |-v|Resultado detallado.|  
   
  El modificador -L indica al compilador que seleccione un grupo de cadenas para generar el archivo .cto binario que se corresponde con el determinado <xref:System.Globalization.CultureInfo> nombre de referencia cultural. El nombre de la referencia cultural especificada debe coincidir con el atributo de idioma de uno o varios [cadenas elemento](../../extensibility/strings-element.md) en el archivo .vsct. Si un elemento de cadenas no tiene ningún atributo de idioma, se hereda de la que contiene [CommandTable elemento](../../extensibility/commandtable-element.md).  
