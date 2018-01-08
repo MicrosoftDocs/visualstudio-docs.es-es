@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 91421fbfa5474c54b15109a1d0aec6de61369713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d868e69a1c7bbeeb7c25deb78acf90fe36af2e2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Los datos en los tutoriales de soluciones de Office
   En los siguientes tutoriales se muestra cómo trabajar con los datos de las personalizaciones de nivel de documento y de los complementos VSTO de Microsoft Office Word y Microsoft Office Excel.  

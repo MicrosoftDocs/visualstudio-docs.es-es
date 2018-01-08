@@ -12,16 +12,17 @@ caps.latest.revision: "20"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 011be65e453de8f9d8010b74670b4efdf7905d06
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ded95e267195f07a003b13ccc2fb2549373e811b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-relationships"></a>Propiedades de las relaciones de dominio
 Las propiedades en la siguiente tabla están asociadas con una relación de dominio. Para obtener información acerca de las relaciones de dominio, consulte [descripción de los modelos, las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información acerca de cómo utilizar estas propiedades, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Modificador de acceso|El nivel de acceso de la relación de dominio (`public` o `internal`).|`public`|  
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código de origen que se genera a partir de la relación de dominio.|\<Ninguno >|  
@@ -31,7 +32,7 @@ Las propiedades en la siguiente tabla están asociadas con una relación de domi
 |Permite duplicados|Si `True`, se crearán vínculos duplicados de la relación de dominio entre los dos mismos elementos.|`False`|  
 |Relaciones de base|Si se deriva la relación de dominio, la relación de base de la relación de dominio.|\<Ninguno >|  
 |Es incrustar|Si `True`, la relación de dominio es una relación de incrustación. Si `False`, la relación es una relación de referencia.|\<ambos >|  
-|Name|El nombre de la relación de dominio.|Nombre actual|  
+|nombre|El nombre de la relación de dominio.|Nombre actual|  
 |Espacio de nombres|El espacio de nombres que está afiliado a la relación de dominio.|Espacio de nombres actual|  
 |Notas|Notas informales que están asociadas a la relación de dominio.|\<Ninguno >|  
 |Descripción|La descripción que se usa para documentar código y se usa en la interfaz de usuario del diseñador generado.|\<Ninguno >|  

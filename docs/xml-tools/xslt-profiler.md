@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f4dc0ee25ec338c93a9fd4bfcecb96126477f9d
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 7523043e6d8f4acdff983de5d95fd9fd55d49504
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xslt-profiler"></a>Generador de perfiles XSLT
 El generador de perfiles XSLT es una herramienta de generador de perfiles de análisis de rendimiento que ayuda a desarrollar y depurar documentos XSLT. Este generador de perfiles permite a los programadores de software medir y evaluar los problemas relacionados con el rendimiento en el código XSLT mediante la creación de informes de rendimiento de XSLT detallados. El generador de perfiles XSLT incluye sugerencias útiles para la optimización de la hoja de estilos XSL y XSLT, que son esenciales para las aplicaciones basadas en XSLT que exigen el máximo rendimiento.  

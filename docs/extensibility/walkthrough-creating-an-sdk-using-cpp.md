@@ -12,11 +12,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc30e3236f81f558f3794bb459f6da3edbdaa63d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 065d5b16e99ce7c1356f710ab2a6cc42bbd6cde4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Tutorial: Crear un SDK usando C++
 Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK, el paquete del SDK como una extensión Visual de Studio (VSIX) y, a continuación, usarla para crear una aplicación. El tutorial está dividido en estos pasos:  

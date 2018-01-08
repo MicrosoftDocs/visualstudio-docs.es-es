@@ -11,16 +11,17 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e85c47133509e3f7bf7c54b8cfa7f2121a26b04b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9da6a64eafa28ac173e4dd64b38d1e64d9639e34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-roles"></a>Propiedades de los roles de dominio
 Las propiedades en la siguiente tabla están asociadas con un rol de dominio. Para obtener información acerca de las funciones de dominio, consulte [descripción de los modelos, las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información acerca de cómo utilizar estas propiedades, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Tipo de colección|Si este rol tiene una multiplicidad de 0.. * o 1.. \*, esta propiedad personaliza el tipo genérico que se utiliza para almacenar el conjunto de vínculos.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601>se utiliza|  
 |Atributos personalizados|Atributos que especifique aquí se agregará como atributos a la clase de código generado.|< none\>|  
@@ -29,7 +30,7 @@ Las propiedades en la siguiente tabla están asociadas con un rol de dominio. Pa
 |Modificador de acceso de captador de propiedad|El modificador de acceso para el captador de la propiedad generada (`public`, `internal`, `private`, `protected`, o `protected internal`).|`public`|  
 |Modificador de acceso de establecedor de propiedad|El modificador de acceso para el establecedor de la propiedad generada (`public`, `internal`, `private`, `protected`, o `protected internal`).|`public`|  
 |Multiplicity|El número de elementos del modelo que puede reproducir la función opuesta (`0..1`, `1..1`, `0..*`, o `1..*`). Si la multiplicidad es `0..*` o `1..*`, a continuación, la propiedad generada representa una colección; en caso contrario, la propiedad generada representa un elemento de modelo simple.|Depende del tipo de relación y si se trata del rol de origen o destino en la relación.|  
-|Name|El nombre de la función de dominio. Esta propiedad no puede contener espacios en blanco.|El nombre de la clase de dominio del Reproductor de rol para este rol.|  
+|nombre|El nombre de la función de dominio. Esta propiedad no puede contener espacios en blanco.|El nombre de la clase de dominio del Reproductor de rol para este rol.|  
 |Propaga copia|`DoNotPropagateCopy`-El encargado de la función copiada no tendrá ninguna copia de este vínculo.<br /><br /> `PropagateCopyToLinkOnly`-El vínculo copiado apunta a la existente función opuesto.<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer`-El vínculo copiado apunta a una copia de la función opuesto.|`PropagateCopyToLinkAndOppositeRolePlayer`para los roles de origen de las incrustaciones.<br /><br /> `DoNotPropagateCopy`para otros roles.<br /><br /> Para obtener más información, vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md)|  
 |Propaga la eliminación|`True`Para eliminar el elemento que esta función se reproduce cuando se elimina el vínculo asociado.|`True`para el destino de una función de incrustación.<br /><br /> `False`para otros roles.<br /><br /> Para obtener más información, consulte [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md).|  
 |Nombre de la propiedad|El nombre de la propiedad que se generan en el código del Reproductor de rol. Este nombre no puede contener espacios en blanco.|El nombre de la función opuesta si este rol tiene un cero a uno o una multiplicidad de uno a uno; en caso contrario, el nombre de la función opuesta pluralized.|  

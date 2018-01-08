@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e327a716fc77dbc8dd3515c092dcd32c2da5158
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9427d2307a9d9726c2df1032410168c3b5cf1cc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Cómo: Agregar un elemento de menú contextual a los proyectos de SharePoint
   Puede agregar un elemento de menú contextual a un proyecto de SharePoint. El elemento de menú aparece cuando un usuario seleccione un nodo de proyecto en **el Explorador de soluciones**.  

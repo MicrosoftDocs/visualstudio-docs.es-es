@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a252e22cda234f6a45bee084522b2add2bafada
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fcd6b5edd5d0c6724ca7ed1e393e32d657a4a29b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Las fuentes y el formato de Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a>La fuente del entorno  

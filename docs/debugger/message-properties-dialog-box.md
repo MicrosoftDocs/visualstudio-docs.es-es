@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - message options
 - message options, General
@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4a1516219df404b6447a9e95ae676d482cea7f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab11a037a5cf9d313e3269a5c3c8df464b120006
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="message-properties-dialog-box"></a>Cuadro de diálogo Propiedades del mensaje
 Utilice este cuadro de diálogo para obtener más información acerca de un mensaje concreto. Para mostrar este cuadro de diálogo, mueva el foco a un [vista mensajes](../debugger/messages-view.md) ventana. Seleccione el nodo de un mensaje en el árbol y después elija **propiedades** desde el **vista** menú.  

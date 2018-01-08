@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fcd30a30bdae896be5aceb9dc685a5fb762ee4af
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4c1a259be5b9c8f572339279734b60ac2afd93ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-diagrams"></a>Propiedades de los diagramas
 Puede establecer propiedades que especifican cómo los diagramas aparecerá en el diseñador generado. Por ejemplo, puede especificar un color predeterminado para el texto en el diagrama.  
@@ -26,17 +27,17 @@ Puede establecer propiedades que especifican cómo los diagramas aparecerá en e
   
  En la tabla siguiente se enumera las propiedades de diagramas.  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Color de relleno|El color de relleno para el diagrama.|Blanco|  
 |Color del texto|El color del texto que se muestra en el diagrama.|Negro|  
-|Modificador de acceso|El modificador de acceso de la clase (pública o interna).|Público|  
+|Modificador de acceso|El modificador de acceso de la clase (pública o interna).|Public|  
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código generado.|\<Ninguno >|  
 |Genera doble derivadas|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Tiene un Constructor personalizado|Si `True`, se proporciona un constructor personalizado en el código fuente. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
 |Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir del diagrama (`none`, `abstract` o `sealed`).|Ninguna|  
 |Diagrama de base|La clase base de este diagrama.|(ninguno)|  
-|Name|El nombre de este diagrama.|Nombre actual|  
+|nombre|El nombre de este diagrama.|Nombre actual|  
 |Espacio de nombres|El espacio de nombres que está afiliado a este diagrama.|Espacio de nombres actual|  
 |Clase que representa|La clase de dominio raíz que representa este diagrama.|Clase raíz actual si es aplicable|  
 |Notas|Notas informales que están asociadas a este elemento.|\<Ninguno >|  

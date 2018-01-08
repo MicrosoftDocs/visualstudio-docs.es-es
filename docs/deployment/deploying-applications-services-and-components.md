@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: e6d4c01043bde59822175b20f36cd576c3a9c3a3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deployment-overview-in-visual-studio"></a>Información general de la implementación en Visual Studio
 
@@ -43,7 +44,7 @@ Vea los tutoriales para obtener instrucciones paso a paso.
 
     ![Elija publicar](../deployment/media/quickstart-publish.png)
 
-- **El tiempo de ejecución Visual C++**: puede implementar el tiempo de ejecución de Visual C++ mediante la implementación local o vinculación estática. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **El tiempo de ejecución Visual C++**: puede implementar el tiempo de ejecución de Visual C++ mediante la implementación local o vinculación estática. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 ### <a name="publish-to-web-or-deploy-to-network-share"></a>Publicar en Web o implementar en el recurso compartido de red
 
@@ -55,7 +56,7 @@ Vea los tutoriales para obtener instrucciones paso a paso.
 
     También puede implementar aplicaciones ASP.NET y servicios en un número de otras maneras. Para obtener más información, consulte [servicios y aplicaciones web ASP.NET implementar](http://www.asp.net/aspnet/overview/deployment).
 
-- **El tiempo de ejecución Visual C++**: puede implementar el tiempo de ejecución de Visual C++ mediante implementación central. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md). 
+- **El tiempo de ejecución Visual C++**: puede implementar el tiempo de ejecución de Visual C++ mediante implementación central. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
 - **Escritorio de Windows** puede publicar una aplicación de escritorio de Windows en un servidor web o un recurso compartido de red mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para obtener más información, consulte [implementar una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) y [implementar una aplicación nativa con ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -72,7 +73,7 @@ Vea los tutoriales para obtener instrucciones paso a paso.
     > [!NOTE]
     > Si no dispone de una cuenta de Azure, puede [registrarte aquí](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
-- Otros **servicios de Azure**: vea específico del [servicio de Azure](https://docs.microsoft.com/azure/#pivot=products) documentación para distintas opciones de implementación que pueden ser compatibles con Visual Studio.
+- Otros **servicios de Azure**: vea específico del [servicio de Azure](/azure/#pivot=products) documentación para distintas opciones de implementación que pueden ser compatibles con Visual Studio.
 
 ### <a name="publish-to-microsoft-store"></a>Publicar en el almacén de Microsoft
 

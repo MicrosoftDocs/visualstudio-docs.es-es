@@ -24,11 +24,12 @@ caps.latest.revision: "93"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f270966c5c91dab1a492a775faca3da220a98d6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e4a536f99c81c19ecd22554896463a84715c7b35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapas de código mediante la edición de los archivos DGML
 Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Graph Markup Language) del mapa. Por ejemplo, puede editar los elementos para especificar estilos personalizados, asignar propiedades y categorías a elementos de código y vínculos, o vincular documentos o direcciones URL a elementos de código o vínculos. Para obtener más información acerca de los elementos DGML, vea [referencia dirigido Graph Markup Language (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md).  

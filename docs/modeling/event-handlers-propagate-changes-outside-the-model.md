@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 29c8594b80c55eb000d70f05d35bbf28becb6e26
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 En el SDK de modelado y visualización, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera de la tienda, como variables no almacén, archivos, los modelos en otros almacenes, o en otro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones. Controladores de eventos de almacén se ejecutan después del final de la transacción en la que ocurrió el evento desencadenador. También se ejecutan en una operación de deshacer o rehacer. Por lo tanto, a diferencia del almacén de reglas, eventos de almacén son muy útiles para actualizar los valores que están fuera de la tienda. A diferencia de los eventos. NET, se registran los controladores de eventos de almacén para que escuche en una clase: no es necesario que registrar un controlador independiente para cada instancia. Para obtener más información sobre cómo elegir entre diferentes maneras de controlar los cambios, consulte [responder a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).  

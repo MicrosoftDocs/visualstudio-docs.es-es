@@ -35,11 +35,12 @@ caps.latest.revision: "127"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 57d04543cf604ced1b94632c2f2c3bc566267f85
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: bc06788e8308a56cb0e38dbca6e9ddb60ce12cd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
 Asegúrese de que la aplicación cumple los requisitos de la arquitectura mediante la arquitectura de Visual Studio y herramientas para diseñar y modelar la aplicación de modelado. 

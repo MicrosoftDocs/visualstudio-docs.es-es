@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 884c6d590f9075a95c5d98e7e68b50280f6acfec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5ae8d0806fad9b932e935611990cb40fcbe3e4d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sharepoint-development-samples"></a>Ejemplos de desarrollo de SharePoint
   Puede usar Visual Studio para descargar e instalar ejemplos de aplicaciones de SharePoint desde el [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185).  

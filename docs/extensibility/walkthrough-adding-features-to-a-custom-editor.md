@@ -13,11 +13,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df3621d87ae80c0eee105183edbc97a4e7ade62f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Tutorial: Agregar características a un Editor personalizado
 Después de crear un editor personalizado, puede agregar más características a él.  

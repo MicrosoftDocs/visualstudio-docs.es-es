@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.assertions
 dev_langs:
 - CSharp
@@ -23,16 +23,17 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ca228390193dfb4408b0ccb43d864509e46d89d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0899e9ab0c01a25dcb0fa3a1f991e9dfa9726d40
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="assertion-failed-dialog-box"></a>Error de aserción (cuadro de diálogo)
 Una instrucción de aserción especifica una condición que se espera que sea cierta (valor true) en un determinado punto del programa. Si la condición no es cierta, la aserción produce un error, la ejecución del programa se interrumpe y aparece este cuadro de diálogo.  
   
-|Clic|Para|  
+|Clic|En|  
 |-----------|--------|  
 |Reintentar|Depurar la aserción u obtener ayuda sobre aserciones.|  
 |Ignore|Omitir la aserción y seguir ejecutando el programa.|  

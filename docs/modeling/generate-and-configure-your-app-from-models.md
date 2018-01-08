@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a08d7a94dcd512f650564a07a1e6784bffe8c45e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
 Puede generar o configurar partes de la aplicación a partir de un modelo.

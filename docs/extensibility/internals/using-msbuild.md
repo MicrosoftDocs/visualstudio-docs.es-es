@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a148a7c5fa6d0e72345ab7f96696a11d5ba5185f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b9d05b85cacfcdf90a883ffd08d4dec316eaafc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-msbuild"></a>Uso de MSBuild
 MSBuild proporciona un formato XML bien definido, extensible para crear archivos de proyecto que se describen los elementos de proyecto para generarse, tareas de compilación y configuraciones de compilación totalmente.  

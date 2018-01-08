@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 También puede generar cadenas de texto en la aplicación en tiempo de ejecución mediante [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantillas de texto en tiempo de ejecución. El equipo donde se ejecuta la aplicación no tiene [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Plantillas en tiempo de ejecución a veces se denominan "preprocesadas plantillas de texto" porque en tiempo de compilación, la plantilla genera código que se ejecuta en tiempo de ejecución.  

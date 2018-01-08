@@ -27,11 +27,12 @@ caps.latest.revision: "102"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db8a4fad73bb710662ce63bd299751c725e0c6ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d29fd74ee92344ac8b2eedbe4a5b8838171d7d96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-controls-to-office-documents-at-run-time"></a>Agregar controles a documentos de Office en tiempo de ejecución
   Puede agregar controles a un documento de Microsoft Office Word y a un libro de Microsoft Office Excel en tiempo de ejecución. También puede quitarlos en tiempo de ejecución. Los controles que agregue o quite en tiempo de ejecución se denominan *controles dinámicos*.  

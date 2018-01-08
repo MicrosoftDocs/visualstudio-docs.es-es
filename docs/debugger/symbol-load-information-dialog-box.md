@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords: vs.debug.symbols.loadinfo
 dev_langs:
 - CSharp
@@ -18,11 +18,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5272e7f47382937a1fe192e0e9d9dbbadf6cf67a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37e945b39074c87e17634ee8b063306f9bd9991d
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="symbol-load-information-dialog-box"></a>Información de carga de símbolos (Cuadro de diálogo)
 El **cargar la información de símbolos** abre el cuadro de diálogo cuando hace clic en el **módulos** ventana y elija **cargar la información de símbolos**.  

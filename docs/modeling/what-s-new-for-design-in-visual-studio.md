@@ -16,11 +16,12 @@ caps.latest.revision: "32"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: ce1172baf41cf670b253b2420f5538607addfeb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 137ca47d83e0540a7d0b3959d7d806dbf3d5f3a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-for-design-in-visual-studio"></a>¿Qué &#39; s nuevo para el diseño en Visual Studio
 

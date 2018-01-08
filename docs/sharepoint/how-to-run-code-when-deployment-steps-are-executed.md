@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1aed7e4fe7ee30450b3ec37ce36616648e830fa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a147b9f6def49565334004bda1f8c4c80b0e7bfa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Cómo: Ejecutar código cuando se ejecutan los pasos de implementación
   Si desea realizar tareas adicionales para un paso de implementación en un proyecto de SharePoint, puede controlar eventos que se producen por elementos de proyecto de SharePoint antes y después de que Visual Studio ejecuta cada paso de implementación. Para obtener más información, consulte [extender SharePoint empaquetado e implementación](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  

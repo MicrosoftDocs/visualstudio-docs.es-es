@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 23288d1afe9b9c0a181a5d978b1956071b683218
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 74e58042c5bcd2aa4883b3e8bb0fc484a59237ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
 Decoradores son iconos, texto o comillas angulares de expandir o contraer que pueden aparecer en formas o conectores en el diagrama. Las siguientes tablas muestran las propiedades de los tres tipos de elemento decorator. Algunas de las propiedades aparecen solo en decoradores de forma o solo en decoradores de conector.  
@@ -25,10 +26,10 @@ Decoradores son iconos, texto o comillas angulares de expandir o contraer que pu
   
 ## <a name="expandcollapse-decorator"></a>Expandir o contraer decorador  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |DisplayName|El nombre de la decorador que se mostrará en el diseñador generado.|Expanda contraer decorador|  
-|Name|El nombre de la decorador.|ExpandCollapseDecorator|  
+|nombre|El nombre de la decorador.|ExpandCollapseDecorator|  
 |Notas|Notas informales que están asociadas a este decorador.|\<Ninguno >|  
 |HorizontalOffset|El desplazamiento horizontal, con respecto a la posición predeterminada de decorador, en pulgadas. (En formas sólo.)|0|  
 |VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada de decorador, en pulgadas. (En formas sólo.)|0|  
@@ -38,11 +39,11 @@ Decoradores son iconos, texto o comillas angulares de expandir o contraer que pu
   
 ## <a name="icon-decorator"></a>Icono decorador  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |DefaultIcon|La ruta de acceso del archivo de icono o imagen que se mostrará.|\<Ninguno >|  
 |DisplayName|El nombre del elemento decorator de la que se mostrará en el diseñador generado.|Icono decorador|  
-|Name|El nombre de la decorador.|IconDecorator|  
+|nombre|El nombre de la decorador.|IconDecorator|  
 |Notas|Notas informales que están asociadas con el decorador.|\<Ninguno >|  
 |HorizontalOffset|El desplazamiento horizontal, con respecto a la posición predeterminada de decorador, en pulgadas. (En formas sólo.)|0|  
 |VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada de decorador, en pulgadas. (En formas sólo.)|0|  
@@ -52,13 +53,13 @@ Decoradores son iconos, texto o comillas angulares de expandir o contraer que pu
   
 ## <a name="textdecorator"></a>TextDecorator  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |DefaultText|El texto predeterminado que se mostrará.|Etiqueta|  
 |DisplayName|El nombre del elemento decorator de la que se mostrará en el diseñador generado.|Etiqueta|  
 |FontSize|El tamaño de fuente para el texto que se muestra en el elemento decorator.|8|  
 |FontStyle|El estilo de fuente para el texto que se muestra en el elemento decorator.|Estándar|  
-|Name|El nombre de la decorador.|Etiqueta|  
+|nombre|El nombre de la decorador.|Etiqueta|  
 |Notas|Notas informales que están asociadas con el decorador.|\<Ninguno >|  
 |HorizontalOffset|El desplazamiento horizontal, con respecto a la posición predeterminada de decorador, en pulgadas. (En formas sólo.)|0|  
 |VerticalOffset|El desplazamiento vertical, en relación con la posición predeterminada de decorador, en pulgadas. (En formas sólo.)|0|  

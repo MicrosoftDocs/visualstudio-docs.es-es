@@ -20,18 +20,19 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86ffd65cf0ebe19a9f3c1f42c24fc365536be661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Empezar a depurar una aplicación multiproceso en Visual Studio
 Visual Studio proporciona varias herramientas y elementos de la interfaz de usuario para ayudarle a depurar aplicaciones multiproceso. Este tutorial muestra cómo utilizar marcadores de subprocesos, la **pilas paralelas** ventana, el **inspección paralela** ventana, puntos de interrupción condicionales y los puntos de interrupción de filtro. Este tutorial dura sólo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.
 
 |         |         |
 |---------|---------|
-| ![Vea un vídeo](../install/media/video-icon.png "WatchVideo") | [Vea un vídeo](#video) en depuración multiproceso que muestra los pasos similares. |
+|  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) en depuración multiproceso que muestra los pasos similares. |
 
 Otros temas proporcionan información adicional sobre el uso de otras herramientas de depuración multiproceso:
 
@@ -372,12 +373,6 @@ Puede establecer puntos de interrupción en condiciones diferentes, como el nomb
 #### <a name="to-switch-to-another-thread"></a>Para cambiar a otro subproceso 
 
 - Para cambiar a otro subproceso, vea [Cómo: cambiar a otro subproceso durante la depuración](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
-
-## <a name="video"></a>Vea un vídeo sobre la depuración multiproceso
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 #### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Para obtener más información sobre las ventanas pila paralelas e inspección paralela  
   

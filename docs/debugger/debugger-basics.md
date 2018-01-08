@@ -21,21 +21,18 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugger-basics"></a>Conceptos básicos del depurador
 El depurador de Visual Studio permite observar el comportamiento del programa en tiempo de ejecución y encontrar errores lógicos. El depurador trabaja con todos los lenguajes de programación de Visual Studio y sus bibliotecas asociadas. Con el depurador, se puede interrumpir la ejecución para recorrer el código y evaluar las variables en la aplicación.  
   
-## <a name="in-this-section"></a>En esta sección  
  [Introducción al depurador](../debugger/getting-started-with-the-debugger.md)  
  Explica cómo utilizar las características del depurador para depurar aplicaciones.  
-
- [Vea un vídeo en el depurador](../debugger/getting-started-with-the-debugger.md#video)  
- Muestra cómo utilizar las características del depurador para depurar aplicaciones.
   
  [Navegación en el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md)  
  Describe cómo recorrer el código con el depurador.  

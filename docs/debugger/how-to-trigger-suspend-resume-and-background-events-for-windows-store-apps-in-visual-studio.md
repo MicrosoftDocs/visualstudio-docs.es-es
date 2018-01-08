@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Cómo desencadenar suspender, reanudar y eventos en segundo plano durante la depuración de aplicaciones UWP en Visual Studio
 Cuando no estás depurando, la **Administración de la duración de los procesos** (PLM) de Windows controla el estado de ejecución de la aplicación, es decir, inicia, suspende, reanuda y finaliza la aplicación en respuesta a las acciones del usuario y al estado del dispositivo. Mientras depuras, Windows deshabilita estos eventos de activación. En este tema se describe cómo activar estos eventos en el depurador.  
   
  También se describe cómo depurar **tareas en segundo plano**. Las tareas en segundo plano te permiten realizar algunas operaciones en un proceso de segundo plano, aunque la aplicación no se esté ejecutando. Puedes utilizar el depurador para poner la aplicación en modo de depuración y, sin iniciar la interfaz de usuario, iniciar y depurar la tarea en segundo plano.  
   
- Para obtener más información acerca de las tareas de administración de la duración de proceso y de fondo vea [iniciar, reanudar y multitarea](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ Para obtener más información acerca de las tareas de administración de la duración de proceso y de fondo vea [iniciar, reanudar y multitarea](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_In_this_topic"></a> En este tema  
  [Desencadenar eventos de la Administración de la duración de los procesos](#BKMK_Trigger_Process_Lifecycle_Management_events)  
@@ -124,7 +125,7 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 4.  Elige el registro **Diagnóstico** .  
   
 ## <a name="see-also"></a>Vea también  
- [Probar aplicaciones UWP con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Testing UWP apps with Visual Studio (Probar aplicaciones para UWP con Visual Studio)](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Ciclo de vida de aplicación](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
  [Iniciar, reanudar y multitarea](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

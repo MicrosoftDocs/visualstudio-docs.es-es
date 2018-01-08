@@ -16,11 +16,12 @@ caps.latest.revision: "64"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 2e98b690fb8ba87dabb7fd8aa76a9aa44c613a38
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c0a13a32347b7150818fc80b82d0c03dc3fc4f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia desde el código
 Para visualizar la arquitectura de alto nivel, lógica de su sistema de software, cree un *diagrama de dependencia* en Visual Studio. Para asegurarse de que el código sigue siendo coherente con este diseño, valide el código con un diagrama de dependencia. Puede crear diagramas de dependencia para los proyectos de Visual C# .NET y Visual Basic. NET. Para ver qué versiones de Visual Studio admiten esta característica, vea [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
@@ -89,8 +90,8 @@ Para visualizar la arquitectura de alto nivel, lógica de su sistema de software
 |Crear una única capa para todos los artefactos seleccionados|Arrastre todos los artefactos al diagrama de dependencia al mismo tiempo.<br /><br /> Aparecerá una capa en el diagrama que estará vinculada a todos los artefactos.|  
 |Crear una capa para cada artefacto seleccionado|Presione y mantenga presionado el **MAYÚS** mientras arrastra al mismo tiempo todos los artefactos al diagrama de dependencia de clave. **Nota:** si usas el **MAYÚS** clave para seleccionar un intervalo de elementos, suelte la tecla después de seleccionar los artefactos. Cuando arrastre los artefactos al diagrama, vuelva a mantener la tecla presionada. <br /><br /> Aparecerá una capa para cada artefacto y cada capa estará vinculada a cada uno de los artefactos.|  
 |Agregar un artefacto a una capa|Arrastre el artefacto hasta la capa.|  
-|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda la **diagrama de dependencia** sección y, a continuación, arrastre un **capa** hasta el diagrama de dependencia.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija la **puntero** herramienta o presione la **ESC** clave.<br /><br /> o bien<br /><br /> Abra el menú contextual para el diagrama de dependencia, elija **agregar**y, a continuación, elija **capa**.|  
-|Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> o bien<br /><br /> Abra el menú contextual de una capa, elija **agregar**y, a continuación, elija **capa**.|  
+|Crear una nueva capa que no tenga vínculos|En el **cuadro de herramientas**, expanda la **diagrama de dependencia** sección y, a continuación, arrastre un **capa** hasta el diagrama de dependencia.<br /><br /> Para agregar varias capas, haga doble clic en la herramienta. Cuando haya terminado, elija la **puntero** herramienta o presione la **ESC** clave.<br /><br /> O bien<br /><br /> Abra el menú contextual para el diagrama de dependencia, elija **agregar**y, a continuación, elija **capa**.|  
+|Crear capas anidadas|Arrastre una capa existente a otro nivel.<br /><br /> O bien<br /><br /> Abra el menú contextual de una capa, elija **agregar**y, a continuación, elija **capa**.|  
 |Crear una nueva capa que contenga dos o más capas existentes|Seleccione las capas, abra el menú contextual para la selección y, a continuación, elija **grupo**.|  
 |Cambiar el color de una capa|Establecer su **Color** propiedad para el color que desee.|  
 |Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
@@ -116,7 +117,7 @@ Para visualizar la arquitectura de alto nivel, lógica de su sistema de software
 |**En**|**En el Explorador de capas**|  
 |------------|---------------------------|  
 |Eliminar el vínculo entre la capa y un artefacto|Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **eliminar**.|  
-|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> o bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de dependencia, abra el menú contextual de la capa y, a continuación, elija **pegar**.|  
+|Mover el vínculo de una capa a otra|Arrastre el vínculo del artefacto a una capa del diagrama.<br /><br /> O bien<br /><br /> 1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **cortar**.<br />2.  En el diagrama de dependencia, abra el menú contextual de la capa y, a continuación, elija **pegar**.|  
 |Copiar el vínculo de una capa a otra|1.  Abra el menú contextual para el vínculo del artefacto y, a continuación, elija **copia**.<br />2.  En el diagrama de dependencia, abra el menú contextual de la capa y, a continuación, elija **pegar**.|  
 |Crear una nueva capa a partir del vínculo de un artefacto existente|Arrastre el vínculo del artefacto a un espacio en blanco del diagrama.|  
 |Compruebe que el artefacto vinculado admite la validación con el diagrama de dependencia.|Mire el **admite validación** columna para el vínculo del artefacto.|  

@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c2f100e88f2c256cc0bc85bc90f92f6d101a862e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a19aef7cc11e7db1e04a6f54e4438f74227a55ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Incrustar diagramas en Windows Forms
 Puede incrustar un diagrama DSL de un Control de Windows, que aparece en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ventana.  

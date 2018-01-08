@@ -13,11 +13,12 @@ ms.suite:
 ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 manager: ghogen
-ms.openlocfilehash: be4b63e767463b7b801ab5ed98d8482e94aacd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: v-brickg
+ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Referencia de valor de color para Visual Studio
 Este tema es una referencia para la creación de nuevos tokens de color. Al crear la nueva interfaz de usuario, puede usar colores similares de la interfaz de usuario para elegir los colores para cada tema principal y el nombre del color de sistema para ese elemento para los temas de contraste alto. 
@@ -201,7 +202,7 @@ Cuando use a esta guía de referencia, recuerde:
 > [!NOTE]
 > **Muestras de contraste alto se muestran para la comparación solo.** Use el nombre de color de sistema de interfaz de usuario de contraste alto y no utilice un selector de color o Cuentagotas en estas muestras. Muestras de contraste alto en este tema reflejan el tema de alto contraste #1 en Windows. Los colores tendrá un aspecto diferentes en otros temas de contraste alto.
 
-### <a name="body"></a>Body
+### <a name="body"></a>Cuerpo
 
 | | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
 | --- | :---: | :---: | :---: | :---: |
@@ -226,7 +227,7 @@ Cuando use a esta guía de referencia, recuerde:
 > [!NOTE]
 > **Muestras de contraste alto se muestran para la comparación solo.** Use el nombre de color de sistema de interfaz de usuario de contraste alto y no utilice un selector de color o Cuentagotas en estas muestras. Muestras de contraste alto en este tema reflejan el tema de alto contraste #1 en Windows. Los colores tendrá un aspecto diferentes en otros temas de contraste alto.
 
-### <a name="body"></a>Body
+### <a name="body"></a>Cuerpo
 
 | | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
 | --- | :---: | :---: | :---: | :---: |
@@ -255,7 +256,7 @@ Cuando use a esta guía de referencia, recuerde:
 > [!NOTE]
 > **Muestras de contraste alto se muestran para la comparación solo.** Use el nombre de color de sistema de interfaz de usuario de contraste alto y no utilice un selector de color o Cuentagotas en estas muestras. Muestras de contraste alto en este tema reflejan el tema de alto contraste #1 en Windows. Los colores tendrá un aspecto diferentes en otros temas de contraste alto.
 
-### <a name="body"></a>Body
+### <a name="body"></a>Cuerpo
 
 | | Tema claro | Tema oscuro | Tema azul | Contraste alto | 
 | --- | :---: | :---: | :---: | :---: |

@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74c688d0430b95c54f1f871ad6f82fde6fa781ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89b49139db9d91ba742caeb80308f9175195a843
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Acciones personalizadas en áreas de formulario de Outlook
   Acciones mostrar botones que permiten a los usuarios responder a un elemento de Microsoft Office Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios hacen clic el **respuesta**, **responder a todos**, o **al día** botones de acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento utilizando información del elemento original.  
@@ -40,13 +41,13 @@ ms.lasthandoff: 10/31/2017
   
  En la tabla siguiente se describe las propiedades que están disponibles en la **acciones personalizadas** cuadro de diálogo.  
   
-|Propiedad|Descripción|  
+|Property|Descripción|  
 |--------------|-----------------|  
 |**AddressLike**|Especifica cómo se enviará el formulario de destino.|  
 |**Cuerpo**|Especifica cómo se anexa el cuerpo del elemento original en el formulario de destino.|  
 |**Habilitado**|Indica si está habilitada la acción personalizada. Si esta propiedad se establece en **false**, se deshabilita la acción personalizada.|  
 |**Método**|Especifica el tipo de respuesta disponible cuando se ejecuta la acción personalizada. La acción personalizada puede enviar el formulario, abra el formulario o preguntar al usuario si desea volver a enviar o abrir el formulario.|  
-|**Nombre**|Especifica el nombre interno que puede utilizar para hacer referencia a esta acción personalizada en el código.|  
+|**Name**|Especifica el nombre interno que puede utilizar para hacer referencia a esta acción personalizada en el código.|  
 |**ShowOnRibbon**|Indica si se debe mostrar la acción personalizada en la cinta de opciones del elemento original.|  
 |**SubjectPrefix**|Especifica el texto que se inserta al principio de la línea de asunto del formulario de destino.|  
 |**TargetForm**|Especifica el nombre de clase de mensaje del formulario de destino. Por ejemplo, escriba **IPM. Tarea** para abrir un formulario de tareas.|  

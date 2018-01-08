@@ -20,11 +20,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dff7896b24508891a62ad3a0760880ed6a68a65a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 10d35a0cec1e927fbc264d64ef911503f68f1606
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos complejo en un proyecto en el nivel del documento
   Este tutorial muestran los aspectos básicos del enlace de datos complejo en un proyecto de nivel de documento. Puede enlazar varias celdas de una hoja de cálculo de Microsoft Office Excel a los campos de la base de datos Northwind de SQL Server.  
@@ -182,7 +183,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  Agregue la siguiente información en la fila vacía.  
   
-    |EmployeeID|LastName|Nombre|Título|  
+    |IdEmpleado|LastName|Nombre|Title|  
     |----------------|--------------|---------------|-----------|  
     |10|Gil|Enrique|Director de ventas|  
   

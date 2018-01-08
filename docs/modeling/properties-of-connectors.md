@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 503f171b2af5e06fd3c890caf07525ba880d0658
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e974c768f9bf73b92cb974875654846a267bb893
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-connectors"></a>Propiedades de los conectores
 Los conectores representan las relaciones de dominio en un diseñador generado.  
@@ -25,7 +26,7 @@ Los conectores representan las relaciones de dominio en un diseñador generado.
   
  Conectores tienen las propiedades que se muestran en la tabla siguiente.  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Color|El color de este conector.|Negro|  
 |Estilo de guión|El estilo de guión para la línea para este conector (sólido, guión, punto, línea mixta, DashDotDot o personalizado).|Sólido|  
@@ -33,13 +34,13 @@ Los conectores representan las relaciones de dominio en un diseñador generado.
 |Estilo de extremo de destino|El estilo de extremo de destino para este conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o ninguno).|Ninguna|  
 |Color del texto|El color que se usa para decoradores de texto que están asociados a este conector.|Negro|  
 |Thickness|El grosor de la línea para este conector, se mide en pulgadas.|0.03125|  
-|Modificador de acceso|El nivel de acceso de la clase (`public` o `internal`).|Público|  
+|Modificador de acceso|El nivel de acceso de la clase (`public` o `internal`).|Public|  
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código de origen que se genera a partir de este conector.|\<Ninguno >|  
 |Genera doble derivadas|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Tiene un Constructor personalizado|Si `True`, se proporciona un constructor personalizado en el código fuente. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir del conector (`none`, `abstract` o `sealed`).|ninguna|  
 |Conector de base|La clase base de este conector.|(ninguno)|  
-|Name|El nombre de este conector.|Nombre actual|  
+|nombre|El nombre de este conector.|Nombre actual|  
 |Espacio de nombres|El espacio de nombres que está afiliado a este conector.|Espacio de nombres actual|  
 |ToolTip (tipo)|Cómo se define la información sobre herramientas (fijo, variable o ninguno). Si, a continuación, corrige el valor de la `Fixed Tooltip Text` propiedad se utiliza como la información sobre herramientas; si la variable, la información sobre herramientas se define en el código personalizado.|\<Ninguno >|  
 |Notas|Notas informales que están asociadas a este conector.|\<Ninguno >|  

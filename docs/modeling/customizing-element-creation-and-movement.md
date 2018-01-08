@@ -13,11 +13,12 @@ caps.latest.revision: "36"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d678e05046a367a722a586d13a50ef7bf0aabc79
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e8de9588e263d392252134a470312a9dc4f4b648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 Puede permitir que un elemento que se pueden arrastrar a otra, en el cuadro de herramientas o en una operación de pegado o la operación de movimiento. Puede tener los elementos movidos vinculados a los elementos de destino, mediante las relaciones que especifique.  

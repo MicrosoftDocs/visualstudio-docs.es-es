@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 4909edabd71686948632f390dfeed5f49cb6fca0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 98d7efc90a07de02f255afe1a75d10fef749e88a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-t4-text-transformation"></a>Personalizar la transformación de texto T4
 Plantillas de texto son una característica de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que le permiten generar código de programa u otros archivos de texto a través de un proceso de transformación. Usar [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], puede extender el proceso de transformación de plantillas predeterminado personalizando el procesador de directivas de plantilla de texto o el host de plantillas de texto.  

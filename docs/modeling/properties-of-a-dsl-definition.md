@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7a8fc0474f624785a47a4ba9f970b5a1ca54dd9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 289c95ebbbd294050b1e5c7cc95656e7ab5eadc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propiedades de las definiciones DSL
 Definen propiedades DslDefinition *lenguaje específico de dominio* propiedades como la numeración de la versión de la definición. Las propiedades de DslDefinition aparecen en la **propiedades** ventana al hacer clic en un área abierta del diagrama en el *Diseñador de lenguaje específico de dominio*.  
@@ -25,12 +26,12 @@ Definen propiedades DslDefinition *lenguaje específico de dominio* propiedades 
   
  DslDefinition tiene las propiedades en la tabla siguiente:  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Modificador de acceso|Determina si el modificador de acceso para la clase de dominio es pública o interna.|public|  
 |Atributos personalizados|Personalizado definido atributos para la clase de dominio.<br /><br /> **Tenga en cuenta** utilice el botón Examinar para agregar un atributo.|\<Ninguno >|  
 |Nombre de la compañía|El nombre de la empresa actual en el registro del sistema.|Nombre de la compañía actual|  
-|Name|El nombre de esta clase de dominio.|Nombre actual|  
+|nombre|El nombre de esta clase de dominio.|Nombre actual|  
 |Espacio de nombres|El espacio de nombres asociado a esta clase de dominio.|Espacio de nombres actual|  
 |Guid del paquete|El guid para el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] paquete generado para este DSL.|\<Ninguno >|  
 |Paquete Namespace|El espacio de nombres para el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] paquete generado para este DSL.|\<Ninguno >|  

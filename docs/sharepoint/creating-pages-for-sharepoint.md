@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bef1fce26bbd9ea57073273f462ec484a46a647b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7baa368e34b7b721e7b41c617c6ce6e89bb5f980
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-pages-for-sharepoint"></a>Crear páginas para SharePoint
   Puede crear páginas de aplicación, las páginas del sitio, páginas maestras y diseños de página para un sitio de SharePoint.  

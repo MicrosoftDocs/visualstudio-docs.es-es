@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Cómo: migrar proyectos de extensibilidad de Visual Studio 2015
 Aquí se muestra cómo actualizar la extensión.  
@@ -45,7 +46,7 @@ Aquí se muestra cómo actualizar la extensión.
   
 2.  Quitar los ensamblados de referencia de SDK de VS del proyecto por ello, selecciónelos, haga clic y **quitar**.  
   
-3.  Agregue las versiones de NuGet de los ensamblados de referencia de SDK de VS.  Mientras sigue en la **referencias del explorador de soluciones** nodo, abra el **administrar paquetes de NuGet...**  cuadro de diálogo.  Si desea obtener más información sobre este cuadro de diálogo, vea [UI del Administrador de paquetes](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). Se han publicado los ensamblados de referencia de SDK de VS en [nuget.org](http://www.nuget.org) por [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  Agregue las versiones de NuGet de los ensamblados de referencia de SDK de VS.  Mientras sigue en la **referencias del explorador de soluciones** nodo, abra el **administrar paquetes de NuGet...**  cuadro de diálogo.  Si desea obtener más información sobre este cuadro de diálogo, vea [UI del Administrador de paquetes](/NuGet/Tools/Package-Manager-UI). Se han publicado los ensamblados de referencia de SDK de VS en [nuget.org](http://www.nuget.org) por [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  Usar **nuget.org** como su **origen del paquete**, busque el nombre del paquete de NuGet que coincide con el ensamblado de referencia deseado (por ejemplo: Microsoft.VisualStudio.Shell.14.0) e instalarlo en su proyecto.  NuGet puede agregar varios ensamblados de referencia con el fin de satisfacer las dependencias del ensamblado inicial.  
   

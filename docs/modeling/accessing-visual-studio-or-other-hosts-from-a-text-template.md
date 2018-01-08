@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6b75a3b3e57ee72afc11013a1cf7a041b222b204
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cc0f756637921b9f470e744ec8875ba3a2b54012
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Tener acceso a Visual Studio u otros hosts desde una plantilla de texto
 En una plantilla de texto, puede usar métodos y propiedades expuestas por el host que ejecuta la plantilla, como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

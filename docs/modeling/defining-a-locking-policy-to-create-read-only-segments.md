@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0ac8ba75920c4b3b8964d473258c162c256139ca
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 93e4393a7b6731a10a00dc309353dba5870c269f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad de los [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado permite que un programa parte de bloqueo o la totalidad de un modelo de lenguaje específico de dominio (DSL) para que se puede leer pero no cambia. Se usa esta opción de solo lectura, por ejemplo, para que un usuario puede preguntar a compañeros para agregar anotaciones y revisar un modelo DSL pero puede no puedan cambiar el original.  
@@ -81,7 +82,7 @@ partition.SetLocks(Locks.Delete);
 |Valor|Lo que significa que si `IsLocked(Value)` es true|  
 |-----------|------------------------------------------|  
 |Ninguna|Sin restricción.|  
-|Propiedad|No se puede cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades que se generan mediante la función de una clase de dominio en una relación.|  
+|Property|No se puede cambiar las propiedades de dominio de los elementos. Esto no se aplica a las propiedades que se generan mediante la función de una clase de dominio en una relación.|  
 |Add|No se puede crear nuevos elementos y vínculos en una partición o en el almacén.<br /><br /> No es aplicable a `ModelElement`.|  
 |Mover|No se puede mover el elemento entre particiones si `element.IsLocked(Move)` es true, o si `targetPartition.IsLocked(Move)` es true.|  
 |Eliminar|No se puede eliminar un elemento si este bloqueo se establece en el propio elemento o en cualquiera de los elementos a los que podría propagar la eliminación, como las formas y los elementos incrustados.<br /><br /> Puede usar `element.CanDelete()` para detectar si se puede eliminar un elemento.|  

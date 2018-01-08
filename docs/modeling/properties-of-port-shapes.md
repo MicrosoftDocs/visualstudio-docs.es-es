@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6a645957ce06f77fe9cfb9d3bc3475a21a4213d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3cc8f57b0615be6255425e396f0fc4ea3e763810
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-port-shapes"></a>Propiedades de las formas de puerto
 Puede usar formas de puerto para representar las clases de dominio en el diseñador generado.  
@@ -26,7 +27,7 @@ Puede usar formas de puerto para representar las clases de dominio en el diseña
   
  Formas de puerto tienen las propiedades que se muestran en la tabla siguiente.  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Color de relleno|El color de relleno de esta forma.|Blanco|  
 |Modo degradado de relleno|El modo de degradado de relleno de esta forma.|Horizontal|  
@@ -36,13 +37,13 @@ Puede usar formas de puerto para representar las clases de dominio en el diseña
 |Estilo de guión de esquema|El estilo de guión de esquema de esta forma (sólido, guión, punto, línea mixta, DashDotDot o personalizado).|Sólido|  
 |Grosor del contorno|El grosor del contorno de esta forma.|0.03125|  
 |Color del texto|El color que se usa para decoradores de texto que están asociados con esta forma.|Negro|  
-|Modificador de acceso|El nivel de acceso de la clase (`public` o `internal`).|Público|  
+|Modificador de acceso|El nivel de acceso de la clase (`public` o `internal`).|Public|  
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código de origen que se genera a partir de esta forma.|\<Ninguno >|  
 |Genera doble derivadas|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, vea [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md)|False|  
 |Tiene un Constructor personalizado|Si `True`, se proporciona un constructor personalizado en el código fuente. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir del puerto (`none`, `abstract` o `sealed`).|ninguna|  
 |Puerto de base|La clase base de esta forma.|(ninguno)|  
-|Name|El nombre de esta forma.|Nombre actual|  
+|nombre|El nombre de esta forma.|Nombre actual|  
 |Espacio de nombres|El espacio de nombres que está afiliado a esta forma.|Espacio de nombres actual|  
 |Tipo de sugerencia de herramienta|Cómo se define la información sobre herramientas (fijo, variable o ninguno). Si, a continuación, corrige el valor de la `Fixed Tooltip Text` propiedad se utiliza como la información sobre herramientas; si la variable, la información sobre herramientas se define en el código personalizado.|ninguna|  
 |Notas|Notas informales que están asociadas con esta forma.|\<Ninguno >|  

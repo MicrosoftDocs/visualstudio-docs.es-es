@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: message options, Windows
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5213791f2accb83c08a7f8270f6fe920f59cd5a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c3795d26a8bd7bf4f4eb0ce9147ff081afa826e
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Opciones de mensaje)
 Use la **Windows** pestaña para establecer el ámbito de los mensajes que aparecen en [vista mensajes](../debugger/messages-view.md). Para mostrar la [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **mensajes de registro** desde el **Spy** menú.  

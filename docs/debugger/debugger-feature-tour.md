@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Guía de características del depurador de Visual Studio
 
@@ -192,6 +193,26 @@ La aplicación auxiliar de excepciones es una característica excelente que pued
 > Reemplaza el Asistente de excepciones en la aplicación auxiliar de excepciones [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda el **configuración de excepciones** nodo para ver más opciones controlar este tipo de excepción, pero no es necesario cambiar ninguna acción para este paseo le!
+
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Depurar aplicaciones ASP.NET en vivo en el servicio de aplicación de Azure
+
+el **depurador instantánea** toma una instantánea de las aplicaciones de producción cuando se ejecuta código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
+
+![Iniciar el depurador de instantánea](../debugger/media/snapshot-launch.png "iniciar el depurador de instantánea")
+
+Recopilación de instantáneas está disponible para aplicaciones de ASP.NET que se ejecutan en el servicio de aplicación de Azure. Las aplicaciones ASP.NET deben ejecutarse en .NET Framework 4.6.1 o versiones posteriores, y las aplicaciones de ASP.NET Core deben estar ejecutándose en .NET Core 2.0 o posterior en Windows.
+
+Para obtener más información, consulte [depurar aplicaciones ASP.NET en directo con el depurador de instantánea](../debugger/debug-live-azure-applications.md).
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Ver las instantáneas con devolución de paso de IntelliTrace (Visual Studio Enterprise)
+
+**Devolución de IntelliTrace paso** automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador de evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
+
+Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de depuración. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**.
+
+![Paso hacia atrás y hacia delante botones](../debugger/media/intellitrace-step-back-icons-description.png  "botones paso hacia atrás y hacia delante")  
+
+Para más información, consulte la página [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 
 ## <a name="more-features-to-look-at"></a>Más características para buscar en
 

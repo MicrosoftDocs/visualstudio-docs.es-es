@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7856f8fac7e986f3e5383fa91261de39fe815a28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imágenes e iconos para Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a>Uso de imágenes en Visual Studio  
@@ -271,7 +272,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="base-palette"></a>Paleta básica  
  Todos los iconos estándares contienen tres colores base. Iconos no contienen degradados o las sombras paralelas, con una o dos excepciones para iconos de herramienta 3D.  
   
-|Uso|Name|Valor (el tema claro)|Muestra|Ejemplo|  
+|Uso|nombre|Valor (el tema claro)|Muestra|Ejemplo|  
 |-----------|----------|---------------------------|------------|-------------|  
 |Segundo plano/oscuro|VS BG|424242 / 66,66,66|![Muestrario 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Ejemplo de paleta básica](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "02_BasePaletteExample 0405")|  
 |Primer plano/ligero|FG DE VS|F0EFF1 / 240,239,241|![Muestra F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
@@ -284,7 +285,7 @@ ms.lasthandoff: 10/31/2017
 #### <a name="action-modifiers"></a>Modificadores de acción  
  Los cuatro colores a continuación indican los tipos de acciones requeridas por modificadores de acción:  
   
-|Uso|Name|Valor (todos los temas)|Muestra|  
+|Uso|nombre|Valor (todos los temas)|Muestra|  
 |-----------|----------|--------------------------|------------|  
 |Positivo|Verde de acción de VS|388A34 / 56,138,52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Negativo|Rojo de la acción de VS|A1260D / 161,38,13|![Muestra A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
@@ -327,14 +328,14 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="folder"></a>Carpeta  
   
-|Uso|Name|Valor (todos los temas)|Muestra|Ejemplo|  
+|Uso|nombre|Valor (todos los temas)|Muestra|Ejemplo|  
 |-----------|----------|--------------------------|------------|-------------|  
 |Carpetas|Carpeta|DCB67A / 220,182,122|![Muestra DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icono carpeta de color](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "23_FolderColor 0405")|  
   
 #### <a name="visual-studio-languages"></a>Lenguajes de Visual Studio  
  Cada uno de los lenguajes comunes o de plataformas disponibles en Visual Studio tiene un color asociado. Estos colores se utilizan en el icono de base, o acerca de los modificadores de lenguaje que aparecen en la esquina superior derecha de los iconos compuestas.  
   
-|Uso|Name|Valor (todos los temas)|Muestra|  
+|Uso|nombre|Valor (todos los temas)|Muestra|  
 |-----------|----------|--------------------------|------------|  
 |ASP, HTML, WPF|ASP HTML WPF azul|0095D 7 / 0,149,215|![Muestra 0095d7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
 |C++|CPP púrpura|9B4F96 / 155,79,150|![Muestra 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
@@ -356,25 +357,25 @@ ms.lasthandoff: 10/31/2017
 #### <a name="intellisense"></a>IntelliSense  
  Iconos de IntelliSense utilizan una paleta de colores exclusivo. Estos colores se usan para ayudar a los usuarios distinguir rápidamente entre los distintos elementos de la lista emergente de IntelliSense.  
   
-|Uso|Name|Valor (todos los temas)|Muestra|  
+|Uso|nombre|Valor (todos los temas)|Muestra|  
 |-----------|----------|--------------------------|------------|  
 |Clase de evento|VS acción naranja|C27D1A / 194,125,26|![Muestra C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
 |Método de extensión, método, módulo, delegado|Púrpura de acción de VS|652 90 D / 101,45,144|![Muestra 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
 |Campo, elemento de enumeración, Macro, estructura, tipo de valor de unión, operador, interfaz|Azul de la acción de VS|00539C / 0,83,156|![Muestra 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Objeto|Verde de acción de VS|388A34 / 56,138,52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Object|Verde de acción de VS|388A34 / 56,138,52|![Muestra 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
 |Constante, excepción, el elemento de enumeración, mapa, elemento de mapa, Namespace, plantilla, una definición de tipo|Fondo (VS BG)|424242 / 66,66,66|![Muestrario 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>Ejemplos de iconos de IntelliSense  
   
 ||||||  
 |-|-|-|-|-|  
-|![Icono de clase de IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "36_IntelliSenseClass 0405")<br />Clase|![Icono de evento privado de IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "37_IntelliSensePrivateEvent 0405")<br />Evento privado|![Icono de delegado de IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "38_IntelliSenseDelegate 0405")<br />Delegate|![Icono de amigo de método de IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "39_IntelliSenseMethodFriend 0405")<br />Friend (método)|![Icono del campo](../../extensibility/ux-guidelines/media/0405-40_field.png "40_Field 0405")<br />Campo|  
-|![IntelliSense protegido icono de elemento de enumeración](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "41_IntelliSenseProtectedEnumItem 0405")<br />Elemento de enumeración protegido|![Icono de objeto de IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "42_IntelliSenseObject 0405")<br />Objeto|![Icono de plantilla de IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "43_IntelliSenseTemplate 0405")<br />Plantilla|![Icono de acceso directo de excepción de IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "44_IntelliSenseExceptionShortcut 0405")<br />Acceso directo de la excepción||  
+|![Icono de clase de IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "36_IntelliSenseClass 0405")<br />Clase|![Icono de evento privado de IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "37_IntelliSensePrivateEvent 0405")<br />Evento privado|![Icono de delegado de IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "38_IntelliSenseDelegate 0405")<br />delegado|![Icono de amigo de método de IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "39_IntelliSenseMethodFriend 0405")<br />Friend (método)|![Icono del campo](../../extensibility/ux-guidelines/media/0405-40_field.png "40_Field 0405")<br />Campo|  
+|![IntelliSense protegido icono de elemento de enumeración](../../extensibility/ux-guidelines/media/0405-41_intellisenseprotectedenumitem.png "41_IntelliSenseProtectedEnumItem 0405")<br />Elemento de enumeración protegido|![Icono de objeto de IntelliSense](../../extensibility/ux-guidelines/media/0405-42_intellisenseobject.png "42_IntelliSenseObject 0405")<br />Object|![Icono de plantilla de IntelliSense](../../extensibility/ux-guidelines/media/0405-43_intellisensetemplate.png "43_IntelliSenseTemplate 0405")<br />Plantilla|![Icono de acceso directo de excepción de IntelliSense](../../extensibility/ux-guidelines/media/0405-44_intellisenseexceptionshortcut.png "44_IntelliSenseExceptionShortcut 0405")<br />Acceso directo de la excepción||  
   
 ### <a name="notifications"></a>Notificaciones  
  Las notificaciones en Visual Studio se utilizan para indicar el estado. La paleta de notificación usa los siguientes cuatro colores, así como opciones de relleno de primer plano o negro, para definir notificaciones con los siguientes niveles de estado.  
   
-|Uso|Name|Valor (todos los temas)|Muestra|  
+|Uso|nombre|Valor (todos los temas)|Muestra|  
 |-----------|----------|--------------------------|------------|  
 |Estado: neutro|Notificación azul (VS azul)|1BA1E2 / 27,161,226|![Muestra 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |Estado: positivo|Notificación verde (VS verde)|339933 / 51,153,51|![Muestrario 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
@@ -387,12 +388,12 @@ ms.lasthandoff: 10/31/2017
   
 |||||  
 |-|-|-|-|  
-|![Icono de alerta](../../extensibility/ux-guidelines/media/0405-45_alert.png "45_Alert 0405")<br />Alerta|![Icono de advertencia](../../extensibility/ux-guidelines/media/0405-48_warning.png "48_Warning 0405")<br />Advertencia|![Icono completa](../../extensibility/ux-guidelines/media/0405-46_complete.png "46_Complete 0405")<br />Completado|![Icono de detención](../../extensibility/ux-guidelines/media/0405-47_stop.png "47_Stop 0405")<br />Detener|  
+|![Icono de alerta](../../extensibility/ux-guidelines/media/0405-45_alert.png "45_Alert 0405")<br />Alerta|![Icono de advertencia](../../extensibility/ux-guidelines/media/0405-48_warning.png "48_Warning 0405")<br />Advertencia|![Icono completa](../../extensibility/ux-guidelines/media/0405-46_complete.png "46_Complete 0405")<br />Completar|![Icono de detención](../../extensibility/ux-guidelines/media/0405-47_stop.png "47_Stop 0405")<br />Detener|  
   
 ### <a name="visual-studio-online"></a>Visual Studio Online  
  En general, Visual Studio Online consta de características que se hospedan en un explorador. El color varía en entornos diferentes, pero el estilo sigue siendo el mismo.  
   
-|Agrupar|Uso|Name|Valor (todos los temas)|Muestra|  
+|Agrupar|Uso|nombre|Valor (todos los temas)|Muestra|  
 |-----------|-----------|----------|--------------------------|------------|  
 |TFS|Fondo|TFSO BG|656565/ 101, 101, 101|![Muestrario 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
 |TFS|Esquema|TFSO OUT|FFFFFF / 255, 255, 255|![Muestra FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  

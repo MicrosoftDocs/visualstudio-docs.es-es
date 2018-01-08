@@ -14,11 +14,12 @@ caps.latest.revision: "38"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 40bad32ef38fb99032690804d572f630bb60ac6d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Agregar comandos y gestos a diagramas de dependencia
 Puede definir comandos del menú contextual y controladores de gestos en diagramas de dependencia en Visual Studio. Estas extensiones se pueden empaquetar en una extensión de integración de Visual Studio (VSIX) que luego puede distribuir a otros usuarios de Visual Studio.  

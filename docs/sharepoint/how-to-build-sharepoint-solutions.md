@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e198cce23f29cc00079c2bd60077ade3663bc8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cd54bdfb29bdc0966a0ad56817720814f38a47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Cómo: Compilar soluciones de SharePoint
   Compilar la solución de SharePoint no es diferente a generar otras aplicaciones en Visual Studio. Para obtener más información sobre la creación de aplicaciones, consulte [compilar y generar en Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio). Para obtener una explicación de las consideraciones específicas para soluciones de SharePoint, vea [Cómo: implementar y publicar una solución de SharePoint en un sitio de SharePoint Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  

@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f8a60f9c4ca91ff9aac516d21b3a502a2898aff1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e2631a81cd907c6946993461f953a0bc1ddbf2ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabajar con diagramas de definición DSL
 El diagrama de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definición es una herramienta importante para definir el lenguaje específico de dominio. Puede agregar elementos al modelo del dominio y definir relaciones en el diagrama, y puede modificar el diseño del diagrama para hacerlo más legible.  
@@ -64,13 +65,13 @@ El diagrama de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definición es
 ### <a name="expandcollapse-inheritance-tree"></a>Expand/Collapse Inheritance Tree (Expandir o contraer el árbol de herencia)  
  Si una clase de dominio es la clase base de otras clases de dominio, puede ocultar el árbol de herencia haciendo clic en la definición de clase de dominio y, a continuación, haga clic en **árbol de herencia de contraer**. Para mostrar el árbol de herencia, haga clic en el elemento de la definición y, a continuación, haga clic en **expanda el árbol de herencia**.  
   
-### <a name="bring-tree-here"></a>Bring Tree Here (Traer árbol aquí)  
+### <a name="bring-tree-here"></a>Bring Tree Here  
  Puede consolidar el diagrama haciendo clic en una clase de dominio de marcador de posición y, a continuación, haga clic en **poner árbol aquí**. La clase de dominio de marcador de posición se convierte en un elemento de definición y muestra los árboles de herencia y de relaciones. El elemento de definición anterior se convierte en un elemento de marcador de posición si es el destino de una relación o el elemento secundario en una relación de herencia; de lo contrario, desaparece.  
   
-### <a name="split-tree"></a>Split Tree (Dividir árbol)  
+### <a name="split-tree"></a>Split Tree  
  Puede dividir los árboles de herencia o relaciones haciendo clic en la definición de clase de dominio que se muestra y, a continuación, haga clic en **división árbol**. El elemento de definición se convierte en un elemento de marcador de posición, y la clase de dominio de definición, junto con sus árboles de herencia y de relaciones, se muestran ahora en la parte inferior de la partición.  
   
-### <a name="show-as-class"></a>Show As Class (Mostrar como clase)  
+### <a name="show-as-class"></a>Show As Class  
  Si una relación de dominio tiene derivados relaciones, o si tiene relaciones de incrustación o referencia con otras relaciones de dominio, puede mostrar la relación como una clase haciendo clic en la relación y, a continuación, haga clic en **mostrar como clase** . La relación se mostrarán con un **propiedades del dominio** compartimiento y mostrará los árboles de herencia y relaciones.  
   
 ## <a name="see-also"></a>Vea también  

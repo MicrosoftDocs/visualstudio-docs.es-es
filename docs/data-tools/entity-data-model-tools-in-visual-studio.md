@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f288d794040c533f2d00e95d628f7d04e55e96e4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Herramientas de Entity Framework en Visual Studio
-Entity Framework es una tecnología de asignación objeto-relacional que permite a los desarrolladores de .NET trabajar con datos relacionales mediante el uso de objetos específicos del dominio. Se elimina la necesidad de la mayoría del código de acceso a datos que normalmente los desarrolladores deben escribir. Entity Framework es la asignación relacional de objetos (ORM) recomendada, modelado tecnología para nuevas aplicaciones de .NET.  
+Entity Framework es una tecnología de asignación objeto-relacional que permite a los desarrolladores de .NET trabajar con datos relacionales mediante el uso de objetos específicos del dominio. Elimina la necesidad de la mayor parte del código de acceso a datos que los desarrolladores normalmente deben escribir. Entity Framework es la asignación relacional de objetos (ORM) recomendada, modelado tecnología para nuevas aplicaciones de .NET.  
   
-Herramientas de Entity Framework están diseñadas para ayudarle a crear aplicaciones de Entity Framework (EF). Toda la documentación de Entity Framework está aquí: [EF núcleos y 6 de EF](https://docs.microsoft.com/ef/).  
+Herramientas de Entity Framework están diseñadas para ayudarle a crear aplicaciones de Entity Framework (EF). Toda la documentación de Entity Framework está aquí: [EF núcleos y 6 de EF](/ef/).  
   
 Con herramientas de Entity Framework, puede crear un *modelo conceptual* partir de una base de datos y, a continuación, gráficamente visualizar y editar el modelo conceptual. – O bien –, primero puede crear gráficamente un modelo conceptual y, a continuación, generar una base de datos que admita su modelo. En cualquier caso, puede actualizar el modelo automáticamente cuando la base de datos subyacente cambie y generar automáticamente el código de capa de objeto para la aplicación. La generación de bases de datos y la generación del código de capa de objeto son personalizables.  
   

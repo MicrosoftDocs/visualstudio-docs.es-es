@@ -12,26 +12,29 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 0c0843c8bfb899dc23bcb1ce31eb3f8b9eaffd54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualizar plantillas para proyectos y plantillas de elementos de Visual Studio de 2017
-A partir de 2017 de Visual Studio, Visual Studio está cambiando la forma detecta plantillas de proyecto y de elementos que se han instalado por un .vsix o un archivo .msi. Si dispone de extensiones que usan plantillas para proyectos o plantillas de elementos, debe actualizar sus extensiones. Este tema explica lo que debe hacer.  
-  
- Este cambio afecta solo Visual Studio 2017. No afecta a las versiones anteriores de Visual Studio.  
-  
- Si desea crear una plantilla de proyecto o un elemento como parte de una extensión VSIX, vea [crear un proyecto y plantillas de elementos](../extensibility/creating-custom-project-and-item-templates.md).  
-  
-## <a name="template-scanning"></a>Plantilla de análisis  
- Anteriormente, **devenv /setup** o **devenv /installvstemplates** examina el disco local para buscar plantillas de proyecto y elemento. A partir de Preview 4, análisis se realizará solo para la ubicación de nivel de usuario (**%USERPROFILE%\Documents\\< versión de Visual Studio\>\My Exported Templates\\**) que se utiliza para plantillas generadas por la **archivo > Exportar plantillas** comando.  
-  
- Para otras ubicaciones (no es de usuario), debe incluir un archivo manifest(.vstman) que especifica la ubicación y otras características de la plantilla. Se genera el archivo .vstman junto con el archivo .vstemplate utilizado para las plantillas. Si instala la extensión utilizando un .vsix, puede hacerlo volviendo a compilar la extensión en Visual Studio de 2017. Pero si utiliza un archivo .msi, debe realizar los cambios manualmente. Para obtener una lista de lo que necesita hacer para que estos cambios, consulte **actualizaciones para las extensiones se instalan con una. MSI** más adelante en este tema.  
+
+A partir de 2017 de Visual Studio, Visual Studio detecta plantillas de proyecto y de elementos que se han instalado por un .vsix o un archivo .msi de forma diferente a las versiones anteriores de Visual Studio. Si dispone de extensiones que usan plantillas para proyectos o plantillas de elementos, debe actualizar sus extensiones. Este tema explica lo que debe hacer.
+
+Este cambio afecta solo Visual Studio 2017. No afecta a las versiones anteriores de Visual Studio.
+
+Si desea crear una plantilla de proyecto o un elemento como parte de una extensión VSIX, vea [crear un proyecto y plantillas de elementos](../extensibility/creating-custom-project-and-item-templates.md).
+
+## <a name="template-scanning"></a>Plantilla de análisis
+
+En versiones anteriores de Visual Studio, **devenv /setup** o **devenv /installvstemplates** examina el disco local para buscar plantillas de proyecto y elemento. A partir de Visual Studio de 2017, examen se realiza solo para la ubicación de nivel de usuario. La ubicación de nivel de usuario predeterminada es **%USERPROFILE%\Documents\\< versión de Visual Studio\>\Templates\\**. Esta ubicación se utiliza para plantillas generadas por la **proyecto** > **exportar plantillas...**  comando, si la **importar la plantilla automáticamente en Visual Studio** opción está seleccionada en el asistente.
+
+Para otras ubicaciones (no es de usuario), debe incluir un archivo manifest(.vstman) que especifica la ubicación y otras características de la plantilla. Se genera el archivo .vstman junto con el archivo .vstemplate utilizado para las plantillas. Si instala la extensión utilizando un .vsix, puede hacerlo volviendo a compilar la extensión en Visual Studio de 2017. Pero si utiliza un archivo .msi, debe realizar los cambios manualmente. Para obtener una lista de lo que necesita hacer para que estos cambios, consulte **actualizaciones para las extensiones se instalan con una. MSI** más adelante en este tema.  
   
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Cómo actualizar una extensión VSIX con plantillas de elemento o de proyecto  
- Este procedimiento explica cómo hacer que Visual Studio de 2017
+
 1.  Abra la solución en Visual Studio de 2017. Le pedirá que actualice el código. Haga clic en **Aceptar**.  
   
 2.  Una vez completada la actualización, debe cambiar la versión de destino de la instalación. En el proyecto VSIX, abra el archivo source.extension.vsixmanifest y seleccione el **destinos de instalación** ficha. Si el **intervalo de versiones** campo es **[14.0]**, haga clic en **editar** y cámbiela para que incluya 2017 de Visual Studio. Por ejemplo, puede establecerlo en **[14.0,15.0]** para instalar la extensión en Visual Studio 2015 o Visual Studio de 2017 o a **[15.0]** para instalar en solo Visual Studio 2017.  
@@ -176,41 +179,19 @@ Se muestran los puntos de diferencia entre las versiones de Visual Studio de 201
   
  Para obtener más información acerca de los diferentes elementos del archivo .vstman, consulte [referencia de esquema del manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Las actualizaciones para las extensiones se instalan con una. MSI  
- Algunas extensiones basadas en MSI implementación plantillas en ubicaciones de plantillas comunes como el siguiente:  
-  
--   **\<Directorio de instalación de Visual Studio > \Common7\IDE\\< ProjectTemplates/elementos >**  
-  
--   **\<Directorio de instalación de Visual Studio > \Common7\IDE\Extensions\\< NombreExtensión\>\\< proyecto/elementos >**  
-  
- Si su extensión llevará a cabo una implementación basada en MSI, debe generar el manifiesto de plantilla manualmente y asegúrese de que esté incluido en la instalación de la extensión. Debe comparar los ejemplos de .vstman enumerados anteriormente y el [referencia de esquema del manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md). Para ver lo que necesita incluir  
-  
- Se deben crear manifiestos separados para las plantillas de proyecto y elemento, y deben apuntar a plantilla directorio raíz especificado anterior. Debe crear un manifiesto por la extensión y la configuración regional.  
-  
-## <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de la plantilla  
- Si experimenta problemas de implementación de las plantillas de proyecto o un elemento, puede habilitar el registro de diagnóstico.  
-  
-1.  Cree un archivo pkgdef en la carpeta Common7\IDE\CommonExtensions para la instalación (por ejemplo, C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) con el siguiente contenido:  
-  
-     ```
-     [$RootKey$\VsTemplate]
-     "EnableTemplateDiscoveryLog"=dword:00000001
-     ```
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Las actualizaciones para las extensiones se instalan con una. MSI
 
-2. Abra un "símbolo" para la instalación mediante una búsqueda en búsqueda de Windows y ejecute `devenv /updateConfiguration`.
+Algunas extensiones basadas en MSI implementación plantillas en ubicaciones de plantillas comunes como el siguiente:
 
-3.  Inicie Visual Studio e inicie los cuadros de diálogo nuevo proyecto y el nuevo elemento para inicializar dos árboles de plantilla. El registro de plantilla aparece ahora en **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid se corresponde con el identificador de instalación de la instancia de Visual Studio). La inicialización de árbol de cada plantilla anexa entradas para este registro.  
-  
- El archivo de registro contiene las columnas siguientes:  
-  
--   **FullPathToTemplate**, que tiene los siguientes valores:  
-  
-    -   1 para la implementación basada en manifiestos  
-  
-    -   0 para la implementación basada en disco  
-  
--   **TemplateFileName**  
-  
--   Otras propiedades de plantilla
+- **\<Directorio de instalación de Visual Studio > \Common7\IDE\\< ProjectTemplates/elementos >**
 
-Nota: Para deshabilitar el registro, quite el archivo pkgdef o cambie el valor de `EnableTemplateDiscoveryLog` a `dword:00000000` y ejecute `devenv /updateConfiguration` nuevo.
+- **\<Directorio de instalación de Visual Studio > \Common7\IDE\Extensions\\< NombreExtensión\>\\< proyecto/elementos >**
+
+Si su extensión llevará a cabo una implementación basada en MSI, debe generar el manifiesto de plantilla manualmente y asegúrese de que esté incluido en la instalación de la extensión. Compare los ejemplos de .vstman enumerados anteriormente y el [referencia de esquema del manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
+Se deben crear manifiestos separados para las plantillas de proyecto y elemento, y deben apuntar a plantilla directorio raíz especificado anterior. Cree un manifiesto por la extensión y la configuración regional.
+
+## <a name="see-also"></a>Vea también
+
+[Solución de problemas de detección de plantilla](troubleshooting-template-discovery.md)  
+[Crear plantillas de proyecto y de elementos personalizadas](creating-custom-project-and-item-templates.md)

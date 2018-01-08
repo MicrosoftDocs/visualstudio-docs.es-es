@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: eae3a0ffd77fa4b399b2d62d3139e7bd8a405d48
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 850cb58f6763b521da9cdb1779b0960c0607ef88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizar el almacenamiento de archivos y la serialización XML
 Cuando el usuario guarda una instancia o *modelo*, de un lenguaje específico de dominio (DSL) en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se crea o actualiza un archivo XML. Puede volver a cargar el archivo para volver a crear el modelo en el almacén.  
@@ -268,7 +269,7 @@ Cuando el usuario guarda una instancia o *modelo*, de un lenguaje específico de
   
 |||  
 |-|-|  
-|Propiedad|Descripción|  
+|Property|Descripción|  
 |Tiene esquemas de elemento personalizado.|Si es True, indica que la clase de dominio tiene un esquema de elemento personalizado.|  
 |Es personalizada|Establezca esta propiedad en **True** si desea escribir su propio código de serialización y deserialización para esta clase de dominio.<br /><br /> Compile la solución e investigar los errores para conocer las instrucciones detalladas.|  
 |Clase de dominio|Clase de dominio al que se aplica este nodo de datos de la clase. Sólo lectura.|  
@@ -285,7 +286,7 @@ Cuando el usuario guarda una instancia o *modelo*, de un lenguaje específico de
   
 |||  
 |-|-|  
-|Propiedad|Descripción|  
+|Property|Descripción|  
 |Propiedad de dominio|Propiedad a la que se aplican los datos de configuración de serialización de xml. Sólo lectura.|  
 |Es la clave de Moniker|Si es True, la propiedad se utiliza como clave para la creación de monikers que hacen referencia a instancias de esta clase de dominio.|  
 |Es el calificador de Moniker|Si es True, la propiedad se usa para crear el calificador de monikers. Si es false, y si no se cumple para esta clase de dominio SerializeId, monikers se califican por el moniker del elemento primario en el árbol de incrustación.|  
@@ -296,7 +297,7 @@ Cuando el usuario guarda una instancia o *modelo*, de un lenguaje específico de
 ### <a name="xml-role-data"></a>Datos de las funciones de XML  
  Nodos de rol de datos se encuentran en los nodos de la clase de origen.  
   
-|Propiedad|Descripción|  
+|Property|Descripción|  
 |--------------|-----------------|  
 |Tiene un Moniker personalizado|Establecer en true si desea proporcionar su propio código para generar y resolver monikers que atraviesan esta relación.<br /><br /> Para obtener instrucciones detalladas, compile la solución y, a continuación, haga doble clic en los mensajes de error.|  
 |Relación de dominio|Especifica la relación a la que estas opciones se aplican. Sólo lectura.|  

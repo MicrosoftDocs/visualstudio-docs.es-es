@@ -25,11 +25,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f8842bd80832211f02532ca706416416325663b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitaciones de los controles de formularios Windows Forms en los documentos de Office
   Hay algunas diferencias entre los controles de formularios Windows Forms que se agregan a documentos de Microsoft Office Word u hojas de cálculo de Microsoft Office Excel y controles de formularios Windows Forms que se agregan a Windows Forms. Por ejemplo, cuando se agrega un <xref:Microsoft.Office.Tools.Word.Controls.Button> como el control a un documento, propiedades <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, y <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> no se comportan como cabría esperar.  

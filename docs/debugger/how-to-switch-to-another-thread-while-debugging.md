@@ -18,17 +18,18 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0710bad95484ada62faa042edabf5b76ac459558
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>Cómo: cambiar a otro subproceso durante la depuración en Visual Studio
 Cuando se depura una aplicación multiproceso, puede utilizar cualquiera de los diversos métodos para cambiar desde el subproceso que ha estado trabajando con a otro subproceso.
 
 > [!NOTE]
-> Si desea controlar el orden en el que ejecutan subprocesos, deberá [inmovilizar y reanudar subprocesos](/debugger/get-started-debugging-multithreaded-apps.md).
+> Si desea controlar el orden en el que ejecutan subprocesos, deberá [inmovilizar y reanudar subprocesos](../debugger/get-started-debugging-multithreaded-apps.md).
 
 Al examinar los subprocesos en el editor de código y las distintas ventanas de depuración multiproceso, la flecha amarilla indica el subproceso actual. Una flecha verde con una cola rizada indica que un subproceso actual no tiene el contexto actual del depurador.
   

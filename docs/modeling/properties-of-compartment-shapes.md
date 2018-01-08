@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 007e1a6468429212ba7d1833157a4c9a2e771652
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e1ff5e6233d04f5dff35e96660dacf319c014a78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-compartment-shapes"></a>Propiedades de las formas de compartimiento
 Formas de compartimiento son una de las formas en que se puede usar para mostrar una clase de dominio en un lenguaje específico de dominio. Puede expandir y contraer los compartimientos.  
@@ -26,7 +27,7 @@ Formas de compartimiento son una de las formas en que se puede usar para mostrar
   
  Formas de compartimiento tienen las propiedades que se muestran en la tabla siguiente.  
   
-|Propiedad|Descripción|Default|  
+|Property|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Valor predeterminado expandir el estado de contracción|Si `Expanded`, se muestran los compartimientos durante la creación. Si `Collapsed`, no lo son.|Expandido|  
 |Color de relleno|El color de relleno de esta forma.|Blanco|  
@@ -38,13 +39,13 @@ Formas de compartimiento son una de las formas en que se puede usar para mostrar
 |Estilo de guión de esquema|El estilo de guión de esquema de esta forma (sólido, guión, punto, línea mixta, DashDotDot, personalizado).|Sólido|  
 |Grosor del contorno|El grosor del contorno de esta forma.|0.03125|  
 |Color del texto|El color usado para decoradores de texto que están asociados con esta forma.|Negro|  
-|Modificador de acceso|El nivel de acceso de la forma de compartimiento (`public` o `internal`).|Público|  
+|Modificador de acceso|El nivel de acceso de la forma de compartimiento (`public` o `internal`).|Public|  
 |Atributos personalizados|Usar para agregar atributos a la clase de código de origen que se genera a partir de esta forma de compartimiento|\<Ninguno >|  
 |Genera doble derivadas|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Tiene un Constructor personalizado|Si `True`, se proporciona un constructor personalizado en el código fuente. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir de la forma de compartimiento (`none`, `abstract` o `sealed`).|Ninguna|  
 |Forma de compartimiento base|La clase base de esta forma.|(ninguno)|  
-|Name|El nombre de esta forma.|Nombre actual|  
+|nombre|El nombre de esta forma.|Nombre actual|  
 |Espacio de nombres|El espacio de nombres que está afiliado a esta forma.|Espacio de nombres actual|  
 |ToolTip (tipo)|Cómo se define la información sobre herramientas (fijo, variable o ninguno). Si, a continuación, corrige el valor de la `Fixed Tooltip Text` propiedad se utiliza como la información sobre herramientas; si la variable, la información sobre herramientas se define en el código personalizado.|ninguna|  
 |Notas|Notas informales que están asociadas con esta forma.|\<Ninguno >|  

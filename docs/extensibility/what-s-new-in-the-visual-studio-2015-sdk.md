@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>¿Qué &#39; s nuevos en el SDK de Visual Studio 2015
 El SDK de Visual Studio tiene las siguientes características nuevas y actualizadas de Visual Studio 2015, actualizado de Visual Studio 2015 y Visual Studio de 2017.  
@@ -53,7 +54,7 @@ El SDK de Visual Studio tiene las siguientes características nuevas y actualiza
  En C++, el Asistente de VSPackage admite comandos de menú, ventanas de herramientas y editores personalizados. Busque en el **nuevo proyecto** cuadro de diálogo de **Visual C++ / extensibilidad**.  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Ensamblados de referencia SDK de VS a través de NuGet  
- Para obtener una mayor portabilidad y uso compartido de los proyectos de extensibilidad, puede usar las versiones de NuGet de los ensamblados de referencia de SDK de VS.  Están disponibles en [nuget.org](http://www.nuget.org) publicados por [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) y se puede agregar fácilmente a su proyecto o solución a través de Visual Studio **hace referencia a / administrar NuGet Paquetes** cuadro de diálogo. Puede agregar referencias individuales a los ensamblados de extensibilidad específicas o agregue el SDK de VS hace referencia a ensamblados a la vez mediante el SDK de VS [paquete Meta](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Para obtener más información sobre NuGet, consulte el [documentación de NuGet](http://docs.microsoft.com/NuGet) y [UI del Administrador de paquetes](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) temas.  
+ Para obtener una mayor portabilidad y uso compartido de los proyectos de extensibilidad, puede usar las versiones de NuGet de los ensamblados de referencia de SDK de VS.  Están disponibles en [nuget.org](http://www.nuget.org) publicados por [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) y se puede agregar fácilmente a su proyecto o solución a través de Visual Studio **hace referencia a / administrar NuGet Paquetes** cuadro de diálogo. Puede agregar referencias individuales a los ensamblados de extensibilidad específicas o agregue el SDK de VS hace referencia a ensamblados a la vez mediante el SDK de VS [paquete Meta](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Para obtener más información sobre NuGet, consulte el [documentación de NuGet](/NuGet) y [UI del Administrador de paquetes](/NuGet/Tools/Package-Manager-UI) temas.  
   
  Cuando se usan las versiones de NuGet de los ensamblados de referencia de SDK de VS, otro usuario no tiene que instalar el SDK de VS para abrir y compilar el proyecto.  Los ensamblados de referencia de NuGet y herramientas de compilación del SDK de VS se instalará automáticamente en su equipo para ese proyecto.  
   

@@ -14,11 +14,12 @@ caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0eb95bdd83780aa000ea6e3c696c24e319dcd4fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizadas
 *Procesadores de directivas* funcionan agregando código a la *clase de transformación generada*. Si se llama a un *directiva* desde una *plantilla de texto*, el resto del código que escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la directiva.  
@@ -658,7 +659,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      La clave del Registro debe tener los siguientes valores:  
   
-    |Nombre|Tipo|Datos|  
+    |nombre|Tipo|Datos|  
     |----------|----------|----------|  
     |(Predeterminado)|REG_SZ|(valor no establecido)|  
     |Clase|REG_SZ|CustomDP.CustomDirectiveProcessor|  
@@ -666,7 +667,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:  
   
-    |Nombre|Tipo|Datos|  
+    |nombre|Tipo|Datos|  
     |----------|----------|----------|  
     |(Predeterminado)|REG_SZ|(valor no establecido)|  
     |Clase|REG_SZ|CustomDP.CustomDirectiveProcessor|  

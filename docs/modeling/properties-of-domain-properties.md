@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 58402e1030516e6f587ec428bd98179ff82ec43a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 17168b43056870dc259965c31902c36450876702
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-properties"></a>Propiedades de las propiedades de dominio
 A *propiedad domain* es una característica de un elemento de modelo que puede contener un valor. Por ejemplo, la clase de dominio `Person` podría tener las propiedades `Name` y `BirthDate`. En la definición de DSL, las propiedades de dominio se enumeran en el cuadro de clases de dominio en el diagrama, y en la clase de dominio en DSL Explorer (Explorador de DSL). Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md).  
@@ -34,7 +35,7 @@ A *propiedad domain* es una característica de un elemento de modelo que puede c
   
  Cuando selecciona una propiedad de dominio en un diagrama o en DSL Explorer (Explorador de DSL), puede ver los siguientes elementos en la ventana Properties (Propiedades). Para obtener más información sobre cómo usar estos elementos, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-|Propiedad|Descripción|Valor predeterminado|  
+|Property|Descripción|Valor predeterminado|  
 |--------------|-----------------|-------------------|  
 |**Descripción**|La descripción que se usa para documentar la interfaz de usuario del diseñador generado.|\<Ninguno >|  
 |**Nombre para mostrar**|Nombre que se mostrará en el diseñador generado para esta propiedad de dominio. Puede contener espacios y puntuación, por ejemplo "Título de la canción".|\<Ninguno >|  
@@ -45,10 +46,10 @@ A *propiedad domain* es una característica de un elemento de modelo que puede c
 |**Es el nombre del elemento**|Si es `True`, esta propiedad de dominio se mostrará con el nombre de su elemento modelo en DSL Explorer (Explorador de DSL).<br /><br /> Los nuevos elementos de modelo recibirán un valor predeterminado único para esta propiedad. Si desea controlar cómo se generan estos valores, establezca **proveedor de nombres de elemento**.|`False`|  
 |**Es la interfaz de usuario de solo lectura**|Si es `True`, el valor de la propiedad de dominio no se puede cambiar mediante la interfaz de usuario. Los programas sí pueden establecerlo y será visible en la ventana Properties (Propiedades).<br /><br /> Si desea ocultar la propiedad de dominio del usuario, establezca **es examinable**. Si desea controlar el acceso mediante programas, establezca **modificador de acceso de establecedor**.|`False`|  
 |**Tipo**|Tipo de propiedad de dominio (`Normal`, `Calculated` o `CustomStorage`). Para obtener más información, consulte [calculadas y las propiedades de almacenamiento personalizada](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|  
-|**Nombre**|Nombre de esta propiedad de dominio. Debe ser un identificador válido, por ejemplo **título**.|\<Ninguno >|  
+|**Name**|Nombre de esta propiedad de dominio. Debe ser un identificador válido, por ejemplo **título**.|\<Ninguno >|  
 |**Notas**|Notas informales que están asociadas con esta propiedad de dominio.|\<Ninguno >|  
 |**Modificador de acceso de establecedor**|Modificador de acceso del establecedor. Controla el ámbito en el cual el código de programa puede establecer la propiedad.|`public`|  
-|**ype**|El tipo de propiedad. Para agregar a la lista de tipos disponibles, haga clic en la raíz de DSL en el Explorador de DSL y haga clic en **Agregar tipo externo**.|`String`|  
+|**Type**|El tipo de propiedad. Para agregar a la lista de tipos disponibles, haga clic en la raíz de DSL en el Explorador de DSL y haga clic en **Agregar tipo externo**.|`String`|  
   
 ## <a name="see-also"></a>Vea también  
  [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

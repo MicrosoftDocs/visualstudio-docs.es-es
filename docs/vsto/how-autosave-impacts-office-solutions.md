@@ -15,11 +15,12 @@ ms.assetid: b60bb228-0e72-4f24-88bb-397dfc5d50a7
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 4b4f2b4433395cc03e24273a3eccc04bb31ad30e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2f2be3b4311792f58cb655f8e878557e276a04e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Cómo Autoguardado afecta a las soluciones de Office
 

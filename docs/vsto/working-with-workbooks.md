@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3d83847341e7689b34edb0a4582225886e5eebd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cfab2572544a89f0f5f353998e68093369d626f1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-workbooks"></a>Trabajar con libros
   Las clases <xref:Microsoft.Office.Tools.Excel.Workbook> y <xref:Microsoft.Office.Interop.Excel.Workbooks> contienen los métodos y las propiedades que se usan para llevar a cabo tareas con libros.  

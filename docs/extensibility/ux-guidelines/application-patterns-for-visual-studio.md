@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fad2e8d63b0005addab20756501d18fe872b4c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 139b51fbf0ede7ea439d2308a0d03afe7ba617ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-patterns-for-visual-studio"></a>Patrones de aplicación para Visual Studio
 ##  <a name="BKMK_WindowInteractions"></a>Interacciones de ventana  
@@ -136,7 +137,7 @@ Ejemplos de ventanas de herramientas de lista navegable son el Explorador de sol
 | --- | --- |
 | Automático ||  
 | Inmediato ||  
-| Resultado | La ventana de salida se pueden usar cuando tiene eventos textuales o estado a declarar. |  
+| Salida | La ventana de salida se pueden usar cuando tiene eventos textuales o estado a declarar. |  
 | Memoria ||  
 | Puntos de interrupción ||  
 | En ejecución ||  

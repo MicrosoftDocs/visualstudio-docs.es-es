@@ -12,21 +12,26 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 3677dd4ad6177f4085c907d1fceaaf37978bf769
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Crear plantillas para proyectos y plantillas de elementos
-El SDK de Visual Studio incluye plantillas de proyecto que cree una plantilla de proyecto personalizado y una plantilla de elemento personalizado. Estas plantillas incluyen algunas sustituciones de parámetros comunes y compilación como archivos zip. No se implementarán automáticamente y no están disponibles en la instancia experimental. Debe copiar el archivo zip archivos a la ubicación  
+
+El SDK de Visual Studio incluye plantillas de proyecto que cree una plantilla de proyecto personalizado y una plantilla de elemento personalizado. Estas plantillas incluyen algunas sustituciones de parámetros comunes y compilación como archivos zip. No se implementarán automáticamente y no están disponibles en la instancia experimental. Debe copiar el archivo zip generados al directorio de plantillas de usuario.
   
- Las plantillas de creación de plantilla permiten incluir plantillas de extensiones de mayor. Esto le permite implementar el control de versiones en los archivos de origen y crear un grupo de proyectos de plantilla en un paquete VSIX.  
+Las plantillas de creación de plantilla permiten incluir plantillas de extensiones de mayor. Esto le permite implementar el control de versiones en los archivos de origen y crear un grupo de proyectos de plantilla en un paquete VSIX.  
   
- Para escenarios de creación de la plantilla básica, debe usar el **Exportar plantilla** asistente, que muestra los resultados en un archivo comprimido. Para obtener más información sobre la creación de la plantilla básica, consulte [crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md).  
-  
- A partir de Visual Studio de 2017, análisis de plantillas para proyectos y plantillas de elementos ya no se realizará. En su lugar, la extensión debe proporcionar los archivos de manifiesto de plantilla que describen la ubicación de instalación de estas plantillas. Puede usar Visual Studio de 2017 para actualizar las extensiones VSIX. Si implementa la extensión utilizando un archivo MSI, debe generar manualmente los archivos de manifiesto de la plantilla. Para obtener más información, consulte [actualizar un proyecto y plantillas de elementos de Visual Studio de 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). El esquema del manifiesto de plantilla se documenta en [referencia de esquema del manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md).  
-  
+También puede configurar una plantilla para instalar paquetes de NuGet. Para obtener más información, consulte [paquetes de NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates).
+
+Para escenarios de creación de la plantilla básica, debe usar el **Exportar plantilla** asistente, que muestra los resultados en un archivo comprimido. Para obtener más información sobre la creación de la plantilla básica, consulte [crear plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md).  
+
+> [!NOTE]
+> A partir de Visual Studio de 2017, análisis de plantillas para proyectos y plantillas de elementos ya no se realizará. En su lugar, la extensión debe proporcionar los archivos de manifiesto de plantilla que describen la ubicación de instalación de estas plantillas. Puede usar Visual Studio de 2017 para actualizar las extensiones VSIX. Si implementa la extensión utilizando un archivo MSI, debe generar manualmente los archivos de manifiesto de la plantilla. Para obtener más información, consulte [actualizar un proyecto y plantillas de elementos de Visual Studio de 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md). El esquema del manifiesto de plantilla se documenta en [referencia de esquema del manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
 ## <a name="creating-a-project-template"></a>Crear una plantilla de proyecto  
   
 1.  Cree un proyecto de plantilla de proyecto. Puede encontrar la plantilla de proyecto en el **nuevo proyecto** cuadro de diálogo, en Visual Basic o Visual C# **extensibilidad** carpeta.  
@@ -81,5 +86,7 @@ El SDK de Visual Studio incluye plantillas de proyecto que cree una plantilla de
   
 5.  Para un proyecto de plantilla de proyecto, verá la plantilla de proyecto aparecen en la **nuevo proyecto** diálogo (**archivo > Nuevo > proyecto**), en el nodo Visual Basic o Visual C#. Para un proyecto de plantilla de elemento, verá la plantilla de elementos que aparecen en el cuadro de diálogo Agregar nuevo elemento (en el **el Explorador de soluciones**, seleccione el nodo del proyecto y haga clic en **Agregar / nuevo elemento**).  
   
-## <a name="see-also"></a>Vea también  
- [Referencia de plantillas de Visual Studio](../ide/visual-studio-template-reference.md)
+## <a name="see-also"></a>Vea también
+
+[Referencia de plantillas de Visual Studio](../ide/visual-studio-template-reference.md)  
+[Paquetes de NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

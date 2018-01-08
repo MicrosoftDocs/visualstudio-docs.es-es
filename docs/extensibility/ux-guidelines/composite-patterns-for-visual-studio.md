@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 Patrones compuestos combinan elementos de interacción y diseño de configuraciones. Algunos de los patrones compuestos más importantes en Visual Studio con respecto a la coherencia incluyen:  
@@ -438,7 +439,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
   
  Las selecciones en las listas pueden ser contiguas, separado, o la región. Cuando selecciones múltiples están permitidos, contiguo y siempre debe ser compatibles selección separado al soporte técnico para las selecciones de región (cuadro) son opcional. Selecciones de región se inician y arrastrándola en el espacio en blanco del cuerpo de la lista.  
   
-|Objeto|Selección|  
+|Object|Selección|  
 |------------|---------------|  
 |Lista|Contiguos|Siempre admiten (cuando se permiten selecciones múltiples).|  
 |Lista|No contiguo|Siempre admiten (cuando se permiten selecciones múltiples).|  
@@ -479,14 +480,14 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 ### <a name="overview"></a>Información general  
  Aunque es suele ser responsable de su propio estado y persistencia de cada componente de software en Visual Studio, Visual Studio guarda la configuración en algunos casos, como con posiciones y tamaños de ventana. En la tabla siguiente es una combinación de opciones que se guardan automáticamente y que requieren un usuario explícito o programarse la acción que se realizará.  
   
-|Objeto|Lo que se debe guardar|Cuándo se debe guardar|Dónde guardar|  
+|Object|Lo que se debe guardar|Cuándo se debe guardar|Dónde guardar|  
 |------------|------------------|------------------|-------------------|  
 |Objeto seleccionable (por ejemplo, una línea de código)|Un punto de interrupción en una línea de código<br /><br /> Un acceso directo de usuario asociado a la línea de código|Cuando se guarda el proyecto|El **opciones de usuario (.suo)** archivo para el proyecto|  
 |Cuadro de diálogo|La ubicación del cuadro de diálogo, si se han movido<br /><br /> La vista que el usuario utilizó por última vez en el cuadro de diálogo|Cuando se cierra el cuadro de diálogo<br /><br /> Cuando finaliza la sesión de Visual Studio|En la memoria<br /><br /> Registro en **HKEY_Current_User**|  
 |Ventana|El tamaño y la ubicación de la ventana|Cuando se cierra la ventana<br /><br /> Cuando se cambia el modo de Visual Studio<br /><br /> Cuando finaliza la sesión de Visual Studio|El **opciones de usuario (.suo)** archivo para el proyecto<br /><br /> Archivo de opciones personalizadas para la configuración de la ventana|  
 |Documento|La selección actual en el documento<br /><br /> La vista del documento<br /><br /> El último varios lugares, el usuario ha visitado|Cuando se guarda el documento|El **opciones de usuario (.suo)** archivo para el proyecto|  
 |Proyecto|Referencias a archivos<br /><br /> Referencias a los directorios en el disco<br /><br /> Referencias a otro software<br /><br /> Componentes<br /><br /> Información de estado sobre el propio proyecto|Cuando se guarda el proyecto|El archivo de proyecto|  
-|Solución|Referencias a proyectos<br /><br /> Referencias a archivos|Cuando se guarda el proyecto o solución|El **solución (.sln)** archivo|  
+|Soluciones|Referencias a proyectos<br /><br /> Referencias a archivos|Cuando se guarda el proyecto o solución|El **solución (.sln)** archivo|  
 |Configuración de **Herramientas > Opciones**|Personalizaciones del teclado<br /><br /> Personalizaciones de la barra de herramientas<br /><br /> Combinaciones de colores|Cuando el **Herramientas > opciones** cierra el cuadro de diálogo<br /><br /> Cuando finaliza la sesión de Visual Studio|Registro en **HKEY_Current_User**|  
   
  ¿Qué está haciendo el usuario y cuando está realizando, determina si una configuración se guarda en la memoria (durante la sesión), que se guardan en el disco (en las sesiones como una configuración del registro), como parte de la solución o proyecto propio archivo, como parte de la **solución Opciones (.suo)** de archivos o como una configuración personalizada de archivos que sólo ese componente de software conoce. La tabla anterior muestra varios eventos en el que se puede guardar configuración. Sin embargo, hay otras ocasiones en que puede guardar el estado:  

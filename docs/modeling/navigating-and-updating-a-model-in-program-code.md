@@ -12,11 +12,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 5c7571cbb4950f91c1b69ae88241c799577f79da
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 18381aef265935cf927940f82dd0a47ee8197222
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navegar y actualizar un modelo en el código del programa
 Puede escribir código para crear y eliminar elementos del modelo, establecer sus propiedades y crear y eliminar los vínculos entre elementos. Todos los cambios deben realizarse dentro de una transacción. Si se ven los elementos en un diagrama, el diagrama se "corregirá" automáticamente al final de la transacción.  

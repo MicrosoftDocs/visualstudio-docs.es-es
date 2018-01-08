@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccc530a741aaefd7e1faf1bd5f8974e27d9c7fb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Cuando diseña la interfaz de usuario que usa elementos comunes de shell de Visual Studio, o si quiere que el elemento de la interfaz para que sea coherente con características similares, use los nombres de símbolo (token) existentes en archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.  
@@ -778,7 +779,7 @@ Un cuadro de búsqueda puede tener uno de varios estados, algunos de los cuales 
 | --- | --- |  
 | Fondo | Ninguna |
 | Primer plano (glifo) | `SearchControl.DisabledDownButtonGlyph` |
-| Borde | Ninguno |
+| Borde | Ninguna |
 
 #### <a name="search-drop-down-lists"></a>Listas desplegables de búsqueda  
 El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeramente más complejo que otros menús desplegables en Visual Studio. Las secciones "opciones de búsqueda" y los "búsquedas sugeridas" pueden aparecer por sí sola o conjuntamente en el menú, y cada una de ellas se colorea por separado. Además, estas secciones están separadas por una línea cuando aparecen juntas y un borde rodea todo el menú desplegable.  
@@ -1105,7 +1106,7 @@ Los títulos de menú constan de un fondo, un borde y el texto del título, así
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
-| Fondo | Ninguno |
+| Fondo | Ninguna |
 | Primer plano (texto) | `Environment.CommandBarTextInactive` |
 | Primer plano (glifo) | `Environment.CommandBarTextInactive` |
 | Borde | Ninguna |
@@ -1542,7 +1543,7 @@ Los botones de expansión comparten muchos nombres de token con otros controles 
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
-| Fondo | Ninguno |
+| Fondo | Ninguna |
 | Primer plano (texto) | `Environment.CommandBarTextActive` |
 | Primer plano (glifo) | `Environment.CommandBarSplitButtonGlyph` |
 | Borde | N/D |

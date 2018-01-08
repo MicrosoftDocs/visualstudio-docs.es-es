@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.failed.commit
 - vs.debug.ENC.failed.build
@@ -23,11 +23,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd5b54f6c5bc0e70db806b0c84594d2f45b3a6ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 9bfbeb76457966c5c0da4fc55a4a3e03337fe5be
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Cuadro de diálogo Editar y continuar (C++)
 Editar y continuar no pudo aplicar los cambios realizados en el código nativo. Puede tratarse de una condición temporal. A veces, Editar y continuar no puede aplicar cambios en el código nativo inmediatamente, pero puede aplicarlos más tarde durante la sesión de depuración (por ejemplo, después de finalizar la llamada actual al procedimiento que se está ejecutando). Para obtener más información, consulte [editar y continuar](../debugger/edit-and-continue.md).  

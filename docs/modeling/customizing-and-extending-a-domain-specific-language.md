@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: efdd7f5358ce0ec4afd32ebaa8ff1fd8d117dc47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 976fbd25965c62e82f9b358f22c8fe3f2b83363e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir herramientas de modelado:  

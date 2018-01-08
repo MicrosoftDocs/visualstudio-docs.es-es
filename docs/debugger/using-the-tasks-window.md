@@ -19,14 +19,15 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c4ec0178a4767e7e0c5c726816dcd7088e14f17b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-the-tasks-window"></a>Usar la ventana Tareas
-El **tareas** ventana es similar a la **subprocesos** ventana, excepto que muestra información acerca de <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), o [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) en lugar de cada subproceso. Como los subprocesos, las tareas representan operaciones asincrónicas que se pueden ejecutar simultáneamente; sin embargo, varias tareas se pueden ejecutar en el mismo subproceso. 
+El **tareas** ventana es similar a la **subprocesos** ventana, excepto que muestra información acerca de <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), o [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) en lugar de cada subproceso. Como los subprocesos, las tareas representan operaciones asincrónicas que se pueden ejecutar simultáneamente; sin embargo, varias tareas se pueden ejecutar en el mismo subproceso. 
   
  En código administrado, puede usar el **tareas** ventana cuando se trabaja con <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos o con el **await** y **async** palabras clave (**Await** y **Async** en Visual Basic). Para obtener más información acerca de las tareas en código administrado, consulte [Parallel Programming](/dotnet/standard/parallel-programming/index).  
   

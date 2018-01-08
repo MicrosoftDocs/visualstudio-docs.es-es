@@ -19,11 +19,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f10b0ed77dc9d5f97b6fc2fc4f218c86dafee41
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e1729a7921f72df07439261cb054fe30770b24d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-changing-worksheet-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de una hoja de cálculo utilizando controles CheckBox
   En este tutorial se muestra los aspectos básicos del uso de casillas de verificación en una hoja de cálculo de Microsoft Office Excel para cambiar el formato. Utilizará las herramientas de desarrollo de Office en Visual Studio para crear y agregar código al proyecto. Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Excel en [ejemplos de desarrollo de Office y tutoriales](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 -   El proyecto de prueba.  
   
 > [!NOTE]  
->  Es posible que tu equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
@@ -70,23 +71,23 @@ ms.lasthandoff: 10/31/2017
   
 4.  Asegúrese de que **Checkbox1** está visible en el cuadro de lista Nombre de objeto de la **propiedades** ventana y cambie las siguientes propiedades:  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**applyBoldFont**|  
+    |**Name**|**applyBoldFont**|  
     |**Texto**|**Negrita**|  
   
 5.  Arrastre una segunda casilla de verificación en la celda o cerca **B4** y cambie las siguientes propiedades:  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**applyItalicFont**|  
+    |**Name**|**applyItalicFont**|  
     |**Texto**|**Cursiva**|  
   
 6.  Arrastre una tercera casilla de verificación en la celda o cerca **B6** y cambie las siguientes propiedades:  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**applyUnderlineFont**|  
+    |**Name**|**applyUnderlineFont**|  
     |**Texto**|**Subrayado**|  
   
 7.  Seleccione todos los controles de casilla de verificación tres mientras mantiene presionada la tecla CTRL.  
@@ -114,9 +115,9 @@ ms.lasthandoff: 10/31/2017
   
 5.  Asegúrese de que **NamedRange1** está visible en el cuadro de lista Nombre de objeto de la **propiedades** ventana y cambie las siguientes propiedades:  
   
-    |Propiedad|Valor|  
+    |Property|Valor|  
     |--------------|-----------|  
-    |**Nombre**|**textFont**|  
+    |**Name**|**textFont**|  
     |**Valor2**|**Haga clic en una casilla de verificación para cambiar el formato de este texto.**|  
   
  A continuación, escribir el código para dar formato al texto cuando se selecciona una opción.  

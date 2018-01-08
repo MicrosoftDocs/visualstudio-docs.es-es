@@ -13,11 +13,12 @@ caps.latest.revision: "37"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 56d67aff89c7f0cf58911cebfdaf5bfdb1464796
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e05574ba51a690621d57b6f32017d1eb359675eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-your-system-during-development"></a>Validar el sistema durante el desarrollo
 Visual Studio puede ayudarle a mantener la coherencia del software con los requisitos de los usuarios y con la arquitectura del sistema.  

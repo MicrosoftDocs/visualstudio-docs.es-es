@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c9cf2ed906cd35f201c13cc2f82f8142f598b901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 14e0252b4bf9a34c219db09d621bd5b12f7fbb78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
 Puede personalizar un lenguaje específico de dominio agregando comandos al diagrama y respondiendo a gestos como los eventos de arrastrar y colocar, clic y doble clic.  

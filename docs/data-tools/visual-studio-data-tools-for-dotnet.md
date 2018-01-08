@@ -12,16 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload:
+- data-storage
+- dotnet
+ms.openlocfilehash: 6c1558c591c982673015af4eaf4e50bc9a81f7d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Herramientas de datos de Visual Studio para .NET
 Visual Studio y .NET Framework proporcionan conjuntamente una amplia API y las herramientas de soporte técnico para conectarse a bases de datos, modelado de datos en memoria y mostrar los datos en la interfaz de usuario. Las clases de .NET Framework que proporcionan la funcionalidad de acceso a datos se conocen como [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, junto con los datos de herramientas en Visual Studio, se diseñó originalmente principalmente para admitir bases de datos relacionales y XML. Hoy en día, muchos proveedores de base de datos NoSQL, o de terceros, ofrecen proveedores de ADO.NET.  
   
-[.NET core](https://www.dotnetfoundation.org/netcore) es compatible con ADO.NET, excepto para los conjuntos de datos y los tipos relacionados. Si el destino es .NET Core y requieren un nivel de asignación relacional de objetos (ORM), use [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
+[.NET core](https://www.dotnetfoundation.org/netcore) es compatible con ADO.NET, excepto para los conjuntos de datos y los tipos relacionados. Si el destino es .NET Core y requieren un nivel de asignación relacional de objetos (ORM), use [Entity Framework Core](/ef/core/).  
   
 El siguiente diagrama muestra una vista simplificada de la arquitectura básica:  
   

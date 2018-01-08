@@ -23,11 +23,12 @@ caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1e9041c397b121a5919ad370ccb7020c229e9b61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar código con diagramas de dependencia
 
@@ -230,7 +231,7 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
 -   [Supervisar el progreso de una compilación en ejecución](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ##  <a name="TroubleshootingValidation"></a>Solucionar problemas de validación de capas  
- En la siguiente tabla se describen problemas de validación de capas y su solución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).  
+ En la siguiente tabla se describen problemas de validación de capas y su resolución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).  
   
 |**Problema**|**Causa posible**|**Resolución**|  
 |---------------|------------------------|--------------------|  

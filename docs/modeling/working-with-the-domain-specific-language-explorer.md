@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6297c5643de30331b8cf6a807df637d5cc043518
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3c0b3348625fef20c89367bd184a9d1b006b9132
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Trabajar con el Explorador de lenguajes específicos de dominio
 El **DSL explorador** muestra varios tipos de información en una vista de árbol. Para obtener más información acerca de la mayoría de los elementos en el Explorador de DSL, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md).  

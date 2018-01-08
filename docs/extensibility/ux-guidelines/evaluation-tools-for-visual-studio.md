@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 04a2d2c404f60712169639a73ff8d138fdd9323a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7026a14a4880a47f415f5aecd1c15f8a2423d86e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Herramientas de evaluación de Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista de comprobación de acabado de Visual Studio  

@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f020dbd8aef022acaafe0561fba11343e9272ff6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en cualquier equipo, debe registrarlo con uno de los métodos que se describen en este tema.  
@@ -184,7 +185,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
  Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:  
   
-|Nombre|Tipo|Datos|  
+|nombre|Tipo|Datos|  
 |----------|----------|----------|  
 |(Predeterminado)|REG_SZ|(valor no establecido)|  
 |Clase|REG_SZ|**\<Nombre de Namespace >. \<Nombre de clase >**|  
@@ -192,7 +193,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
  Si el ensamblado se encuentra en la GAC, las subclaves del Registro deben ser similares a las que se muestran en la siguiente tabla:  
   
-|Nombre|Tipo|Datos|  
+|nombre|Tipo|Datos|  
 |----------|----------|----------|  
 |(Predeterminado)|REG_SZ|(valor no establecido)|  
 |Clase|REG_SZ|\<**El nombre de clase completo**>|  
