@@ -20,7 +20,7 @@
 ### [Plantilla de proyecto web de Django](template-django.md)
 ### [Plantilla de servicio en la nube de Azure](template-azure-cloud-service.md)
 ## [Azure SDK para Python](azure-sdk-for-python.md)
-# Procedimientos
+# Guías de procedimientos
 ## [Edición de código](code-editing.md)
 ### [Formato de código](code-formatting.md)
 ### [Refactorización de código](code-refactoring.md)
