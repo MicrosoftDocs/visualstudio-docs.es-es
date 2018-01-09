@@ -39,7 +39,7 @@
 ### Referencia
 #### [Identificadores de cargas de trabajo y componentes de Visual Studio](install/workload-and-component-ids.md)
 #### [Números de compilación y fechas de lanzamiento de Visual Studio](install/visual-studio-build-numbers-and-release-dates.md)
-## [Instalación de Build Tools en un contenedor](install/build-tools-container.md)
+## [Instalar Build Tools en un contenedor](install/build-tools-container.md)
 ### [Ejemplo avanzado de contenedores](install/advanced-build-tools-container.md)
 ### [Problemas conocidos de contenedores](install/build-tools-container-issues.md)
 # Guías de inicio rápido
@@ -256,21 +256,21 @@
 ### [Crear aplicaciones en lenguajes bidireccionales](ide/creating-applications-in-bi-directional-languages.md)
 # Referencia
 ## [Novedades](ide/whats-new-in-visual-studio.md)
-## Referencia de plantillas de Visual Studio
-### [Referencia de esquema de plantillas...](extensibility/visual-studio-template-schema-reference.md)
-### [Parámetros de plantilla](ide/template-parameters.md)
-### [Crear plantillas para proyectos y elementos en Visual Studio](ide/creating-project-and-item-templates.md)
+## [Plantillas de proyectos y elementos](ide/creating-project-and-item-templates.md)
+### [Localización y organización de plantillas de proyectos y elementos](ide/how-to-locate-and-organize-project-and-item-templates.md)
+### [Personalización de plantillas de proyectos y elementos](ide/customizing-project-and-item-templates.md)
+#### [Actualización de plantillas existentes](ide/how-to-update-existing-templates.md)
+#### [Sustitución de parámetros en una plantilla](ide/how-to-substitute-parameters-in-a-template.md)
+### Creación de plantillas de proyectos y elementos
 #### [Creación de plantillas de proyecto](ide/how-to-create-project-templates.md)
 #### [Creación de plantillas de varios proyectos](ide/how-to-create-multi-project-templates.md)
 #### [Creación de plantillas de elementos](ide/how-to-create-item-templates.md)
 #### [Creación de plantillas de elementos de varios archivos](ide/how-to-create-multi-file-item-templates.md)
-#### [Creación manual de plantillas web](ide/how-to-manually-create-web-templates.md)
+#### [Creación de plantillas web](ide/how-to-manually-create-web-templates.md)
 #### [Creación de Starter Kits](ide/how-to-create-starter-kits.md)
-#### [Localización y organización de plantillas de proyectos y elementos](ide/how-to-locate-and-organize-project-and-item-templates.md)
-#### [Personalizar plantillas de proyecto y de elemento](ide/customizing-project-and-item-templates.md)
-##### [Actualización de plantillas existentes](ide/how-to-update-existing-templates.md)
-##### [Sustitución de parámetros en una plantilla](ide/how-to-substitute-parameters-in-a-template.md)
-#### [Solución de problemas de plantillas](ide/how-to-troubleshoot-templates.md)
+### [Parámetros de plantilla](ide/template-parameters.md)
+### [Referencia de esquema de plantillas (extensibilidad)](extensibility/visual-studio-template-schema-reference.md)
+### [Solución de problemas de plantillas](ide/how-to-troubleshoot-templates.md)
 ## Elementos generales de la interfaz de usuario
 ### [Jerarquía de llamadas](ide/reference/call-hierarchy.md)
 ### [Elegir elementos del cuadro de herramientas, Componentes de WPF](ide/reference/choose-toolbox-items-wpf-components.md)

@@ -95,6 +95,7 @@
 ## [Administración de la carga de proyectos en una solución](managing-project-loading-in-a-solution.md)
 # [Creación de plantillas de proyecto y de elemento personalizadas](creating-custom-project-and-item-templates.md)
 ## [Actualización de plantillas de elementos y proyectos personalizadas para Visual Studio 2017](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
+## [Solución de problemas de detección de plantillas](troubleshooting-template-discovery.md)
 ## [Uso de asistentes con las plantillas de proyectos](how-to-use-wizards-with-project-templates.md)
 ## [Referencia de esquema de plantillas de Visual Studio](visual-studio-template-schema-reference.md)
 ### [AppliesTo (Elemento, Plantillas de Visual Studio)](appliesto-element-visual-studio-templates.md)
