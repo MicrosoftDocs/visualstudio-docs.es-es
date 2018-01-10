@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 57bc02e04f4e30e0284bacbb98ec6bfe1defaa72
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 
@@ -55,7 +55,7 @@ Puede hacer referencia a los siguientes tipos de componentes y servicios:
 
 ### <a name="project-references"></a>Referencias de proyecto
 
-Los proyectos de la Plataforma universal de Windows (UWP) pueden crear referencias a otros proyectos UWP de la solución o a archivos binarios o proyectos de Windows 8.1, siempre que estos proyectos no usen las API que han quedado obsoletas en Windows 10. Para más información, vea [Migración Windows Runtime 8 a UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).
+Los proyectos de la Plataforma universal de Windows (UWP) pueden crear referencias a otros proyectos UWP de la solución o a archivos binarios o proyectos de Windows 8.1, siempre que estos proyectos no usen las API que han quedado obsoletas en Windows 10. Para más información, vea [Migración Windows Runtime 8 a UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
 Si decide redirigir los proyectos de Windows 8.1 a Windows 10, vea [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 

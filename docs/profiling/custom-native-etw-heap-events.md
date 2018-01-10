@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: ghogen
 dev_langs: C++
 ms.workload: cplusplus
-ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 
-Visual Studio contiene diversas [herramientas de diagnóstico y de generación de perfiles](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), incluido un generador de perfiles de memoria nativa.  Este generador de perfiles enlaza los [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) del proveedor de montón y proporciona un análisis de la manera en que la memoria se asigna y se usa.  De forma predeterminada, esta herramienta solo puede analizar las asignaciones realizadas desde el montón de Windows estándar y no se mostrarán las asignaciones que se encuentran fuera de este montón nativo.
+Visual Studio contiene diversas [herramientas de diagnóstico y de generación de perfiles](../profiling/profiling-tools.md), incluido un generador de perfiles de memoria nativa.  Este generador de perfiles enlaza los [eventos ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) del proveedor de montón y proporciona un análisis de la manera en que la memoria se asigna y se usa.  De forma predeterminada, esta herramienta solo puede analizar las asignaciones realizadas desde el montón de Windows estándar y no se mostrarán las asignaciones que se encuentran fuera de este montón nativo.
 
 Hay muchos casos en los que podría interesarle usar su propio montón personalizado y evitar la sobrecarga de asignación del montón estándar.  Por ejemplo, puede usar [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) para asignar una gran cantidad de memoria cuando se inicia la aplicación o el juego y, después, administrar sus propios bloques dentro de esa lista.  En este escenario, la herramienta de generador de perfiles de memoria solo vería esa asignación inicial y no la administración personalizada realizada dentro del bloque de memoria.  En cambio, mediante el uso del proveedor ETW de montón nativo personalizado, puede dejar que la herramienta conozca las asignaciones que realiza fuera del montón estándar.
 
@@ -48,7 +48,7 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-En una instantánea de la herramienta [Uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) sin el seguimiento del montón personalizado, solo se mostraría la asignación de 8192 bytes y ninguna de las asignaciones personalizadas realizadas por el grupo:
+En una instantánea de la herramienta [Uso de memoria](../profiling/memory-usage.md) sin el seguimiento del montón personalizado, solo se mostraría la asignación de 8192 bytes y ninguna de las asignaciones personalizadas realizadas por el grupo:
 
 ![Asignación del montón de Windows](media/heap-example-windows-heap.png)
 
@@ -139,7 +139,7 @@ Esta biblioteca se puede usar fácilmente en C y C++.
    ```
 
 ## <a name="tracking-memory-usage"></a>Seguimiento del uso de la memoria
-Una vez realizadas estas llamadas, se puede realizar un seguimiento del uso del montón personalizado mediante la herramienta estándar **Uso de memoria** en Visual Studio.  Para obtener más información sobre cómo usar esta herramienta, vea la documentación sobre el [uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage). Asegúrese de que ha habilitado la generación de perfiles de montón con instantáneas. En caso contrario, no verá el uso del montón personalizado. 
+Una vez realizadas estas llamadas, se puede realizar un seguimiento del uso del montón personalizado mediante la herramienta estándar **Uso de memoria** en Visual Studio.  Para obtener más información sobre cómo usar esta herramienta, vea la documentación sobre el [uso de memoria](../profiling/memory-usage.md). Asegúrese de que ha habilitado la generación de perfiles de montón con instantáneas. En caso contrario, no verá el uso del montón personalizado. 
 
 ![Habilitar la generación de perfiles de montón](media/heap-enable-heap.png)
 
@@ -153,11 +153,11 @@ El montón predeterminado *Montón de NT* tiene el mismo aspecto que antes, pero
 
 ![Montón de NT con el rastreador](media/heap-example-windows-heap.png)
 
-Al igual que en el montón de Windows estándar, también puede usar esta herramienta para comparar instantáneas y buscar fugas y daños en el montón personalizado. Esto se describe en la documentación principal sobre el [uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage).
+Al igual que en el montón de Windows estándar, también puede usar esta herramienta para comparar instantáneas y buscar fugas y daños en el montón personalizado. Esto se describe en la documentación principal sobre el [uso de memoria](../profiling/memory-usage.md).
 
 > [!TIP]
 > Visual Studio también contiene una herramienta **Uso de memoria** en el conjunto de herramientas **Generación de perfiles de rendimiento**, que se habilita en la opción de menú **Depurar > Generador de perfiles de rendimiento** o mediante la combinación de teclado **ALT+F2**.  Esta característica no incluye el seguimiento del montón y no mostrará el montón personalizado como se describe aquí.  Esta funcionalidad solo está incluida en la ventana **Herramientas de diagnóstico**, que se puede habilitar en el menú **Depurar > Windows > Mostrar herramientas de diagnóstico** o mediante la combinación de teclado **Ctrl+Alt+F2**.
 
 ## <a name="see-also"></a>Vea también
-[Herramientas de generación de perfiles](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
-[Uso de memoria](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+[Herramientas de generación de perfiles](../profiling/profiling-tools.md)  
+[Uso de memoria](../profiling/memory-usage.md)

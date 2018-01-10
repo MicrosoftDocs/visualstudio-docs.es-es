@@ -30,11 +30,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones  
 En Visual Studio 2017, puede abrir código desde casi cualquier tipo de proyecto basado en directorios en Visual Studio sin necesidad de un archivo de solución o proyecto. Esto significa que, por ejemplo, puede buscar un proyecto de código en Git, clonarlo y, después, abrirlo directamente en Visual Studio y comenzar a desarrollar sin tener que crear una solución o proyecto.  
@@ -172,7 +172,7 @@ En este procedimiento, agregaremos dos tareas de compilación personalizadas que
 
   ![Comando de tarea de compilación personalizada](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. Agregue las siguientes tareas de compilación a tasks.vs.json. En este ejemplo, vamos a agregar dos tareas: una llamada "makefile-build" que usa el comando nMake para generar el proyecto, y otra llamada makefile-clean que llama al comando nMake con el argumento "clean". Estas tareas deben agregarse a la matriz de "tareas" existente. (Tenga en cuenta que estas son solo tareas de compilación de ejemplo. Para que funcionen realmente, debe tener la carga de trabajo que contiene [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) instalada en el sistema).  
+1. Agregue las siguientes tareas de compilación a tasks.vs.json. En este ejemplo, vamos a agregar dos tareas: una llamada "makefile-build" que usa el comando nMake para generar el proyecto, y otra llamada makefile-clean que llama al comando nMake con el argumento "clean". Estas tareas deben agregarse a la matriz de "tareas" existente. (Tenga en cuenta que estas son solo tareas de compilación de ejemplo. Para que funcionen realmente, debe tener la carga de trabajo que contiene [nNake](/cpp/build/nmake-reference) instalada en el sistema).
 
   ```xml
   {

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 519bb7b70737e4c3e2d6e80f19a056b4cd385980
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -71,7 +71,7 @@ Si es habitual que se quede sin memoria durante las sesiones de depuración, pue
 
     Para deshabilitar las herramientas de diagnóstico, inicie una sesión de depuración, elija **Herramientas > Opciones > Habilitar herramientas de diagnóstico** y anule la selección de la opción.
 
-    Para más información, vea [Herramientas de generación de perfiles](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools).
+    Para más información, vea [Herramientas de generación de perfiles](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Deshabilitación de herramientas y extensiones
 Algunas herramientas o extensiones se pueden desactivar para mejorar el rendimiento.

@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Actualizado para la [versión 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -224,7 +224,7 @@ Además de una implementación de aplicación optimizada, Windows 10 Fall Creato
 * **Lo mejor de UWP y Win32** <br/>
 Mejoramos la plataforma Windows 10 con el [Puente de dispositivo de escritorio](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) para mejorar Windows 10 para todos los desarrolladores de .NET, sin importar si se centran en UWP, WPF, Windows Forms o Xamarin. Con el nuevo tipo de proyecto de paquetes de la implementación de la versión 15.5 de Visual Studio 2017, puede crear paquetes de aplicaciones de Windows para los proyectos de WPF o Windows Forms, exactamente igual que para los proyectos de UWP. Cuando empaqueta la aplicación, obtiene todos los beneficios de la implementación de la aplicación de Windows 10 y tiene la opción de una distribución a través de Microsoft Store (para aplicaciones de consumidor) o Microsoft Store para Empresas y para Educación. Como las aplicaciones empaquetadas tienen acceso tanto a la superficie de API UWP y las API Win32, ahora puede modernizar las aplicaciones de WPF y Windows Forms de manera gradual con las API UWP y las características de Windows 10. Además, puede incluir los componentes Win32 en las aplicaciones de UWP que funcionan en los equipos de escritorio con todas las funcionalidades Win32. 
 
-Para más información sobre UWP, consulte la página [Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp).
+Para más información sobre UWP, consulte la página [Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
 
 ## <a name="mobile-app-development"></a>Desarrollo de aplicaciones móviles
 ### <a name="xamarin"></a>Xamarin
@@ -271,7 +271,7 @@ Ahora también es compatible con Docker.
 
 **Novedades de la versión 15.3**: La versión 15.3 de Visual Studio 2017 admite el desarrollo de .NET Core 2.0. El uso de .NET Core 2.0 requiere descargar e instalar el SDK de .NET Core 2.0 de manera independiente.  
 
-Para obtener más información, vea la página [Guía de .NET Core](https://docs.microsoft.com/dotnet/core/index).
+Para obtener más información, vea la página [Guía de .NET Core](/dotnet/core/index).
 
 ## <a name="games-development"></a>Desarrollo de juegos
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity

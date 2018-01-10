@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>Haga una prueba unitaria de su código
 Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma rápida de buscar errores lógicos en los métodos de clases de proyectos de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] y [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)].  
@@ -55,15 +54,6 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 |**Extienda el tipo de prueba unitaria:** puede agregar funcionalidad que no esté en el marco de pruebas unitarias. Por ejemplo, puede agregar una propiedad para especificar si una prueba se debe ejecutar como un usuario normal o no. O puede extender el marco para agregar atributos de fila a un método y utilizar los datos de esa fila dentro de la prueba.|Para ver ejemplos de código para extender el marco de pruebas unitarias, vea el siguiente [sitio web de Microsoft](http://go.microsoft.com/fwlink/?LinkId=185591).|  
 |**Establecer opciones de prueba:** por ejemplo, puede especificar dónde se almacenan los resultados de las pruebas.|[Configurar pruebas unitarias mediante un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>Tareas relacionadas  
- [Revisar los resultados de pruebas en Microsoft Test Manager](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- Describe los resultados de pruebas y las maneras de trabajar con ellos, incluidos como verlos, guardarlos y eliminarlos.  
-  
- [Ejecutar pruebas del sistema mediante Microsoft Visual Studio](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- Proporciona vínculos a información sobre cómo utilizar Visual Studio en oposición a utilizar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] para ejecutar las pruebas automatizadas.  
-  
 ## <a name="reference"></a>Referencia  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  Describe el espacio de nombres UnitTesting, que proporciona los atributos, excepciones, aserciones y otras clases que ofrecen compatibilidad para prueba unitaria.  
@@ -85,6 +75,6 @@ Las pruebas unitarias proporcionan a los desarrolladores y evaluadores una forma
 ### <a name="reference"></a>Referencia  
  [Content Index for Unit Tests](http://go.microsoft.com/fwlink/?LinkID=254719) (Índice de contenido para las pruebas unitarias)  
   
-## <a name="see-also"></a>Vea también  
- [Mejorar la calidad del código](/visualstudio/test/improve-code-quality)   
- [Probar la aplicación](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>Vea también
+
+[Mejorar la calidad del código](/visualstudio/test/improve-code-quality)

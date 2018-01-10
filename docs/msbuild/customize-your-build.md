@@ -16,11 +16,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 72bcca85f57a5c68e70dfa942ec607072af86561
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78773b3a87aff91fae92ec64365ef55620e58d44
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="customize-your-build"></a>Personalizar una compilación
 En versiones de MSBuild anteriores a la versión 15, si quería proporcionar una nueva propiedad personalizada a los proyectos de su solución tenía que agregar manualmente una referencia a esa propiedad en cada archivo de proyecto de la solución. O, tenía que definir la propiedad en un archivo .props y, después, importar explícitamente el archivo .props en cada proyecto de la solución, entre otras cosas.
@@ -88,7 +88,7 @@ Para que msbuild combine correctamente los archivos "internos" (`2-src` y `2-tes
 A continuación tiene un resumen del enfoque general de msbuild:
 
 - Para un proyecto dado, msbuild busca el primer `Directory.Build.props` hacia arriba en la estructura de la solución, lo combina con valores predeterminados y detiene el análisis.
-- Si quiere que se busquen y combinen varios niveles, efectúe una [`<Import...>`](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (que se muestra arriba) del archivo "externo" desde el archivo "interno".
+- Si quiere que se busquen y combinen varios niveles, efectúe una [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove) (que se muestra arriba) del archivo "externo" desde el archivo "interno".
 - Si el archivo "externo" no importa algo por encima de él, el análisis se detendrá en ese punto.
 - Para controlar el proceso de análisis/combinación, use `$(DirectoryBuildPropsPath)` e `$(ImportDirectoryBuildProps)`.
 

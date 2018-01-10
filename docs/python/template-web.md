@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 1215c075c1c38bb742f799948929d2f301750555
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Plantillas de proyecto web de Python
 
@@ -68,13 +68,12 @@ Cualquier propiedad de proyecto o variable de entorno se puede especificar con l
 La plantilla **Proyecto web de Bottle** incluye código reutilizable que realiza la configuración necesaria. Sin embargo, una aplicación de Bottle importada no puede incluir este código, en cuyo caso la siguiente configuración inicia la aplicación mediante el módulo `bottle` instalado:
 
 - Grupo **Run Server Command** (Comando de servidor de ejecución):
-
-    - **Comando**: `bottle` (módulo)
-    - **Argumentos**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Comando**: `bottle` (módulo)
+  - **Argumentos**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - Grupo **Debug Server Command** (Comando de servidor de depuración):
-    - **Comando**: `bottle` (módulo)
-    - **Argumentos** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Comando**: `bottle` (módulo)
+  - **Argumentos** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 La opción `--reload` no se recomienda cuando se usa Visual Studio para la depuración.
 
@@ -83,12 +82,11 @@ La opción `--reload` no se recomienda cuando se usa Visual Studio para la depur
 Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar mediante la plantilla [Desde código de Python existente](python-projects.md#creating-a-project-from-existing-files). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
 
 - Grupo **Depurar**:
-
-    - **Puerto del servidor**: 6543 (o lo que se configure en los archivos. ini)
+  - **Puerto del servidor**: 6543 (o lo que se configure en los archivos. ini)
 
 - Grupo **Run Server Command** (Comando de servidor de ejecución):
-    - Comando: `..\env\scripts\pserve-script.py` (script)
-    - Argumentos: `Production.ini`
+  - Comando: `..\env\scripts\pserve-script.py` (script)
+  - Argumentos: `Production.ini`
 
 - Grupo **Debug Server Command** (Comando de servidor de depuración):
     - Comando: `..\env\scripts\pserve-script.py` (script)
@@ -146,7 +144,7 @@ Por último, puede iniciar sesión a través de la [consola de desarrollo](https
 
 Actualmente, la manera recomendada de instalar paquetes es usar la consola de desarrollo después de instalar la extensión de sitio y ejecutar pip directamente. Utilizar la ruta de acceso completa a Python es importante (de lo contrario, puede ejecutar una incorrecta) y no suele ser necesario usar un entorno virtual. Por ejemplo:
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt

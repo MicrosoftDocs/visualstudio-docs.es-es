@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 690d51ba7ec083e831bf9eba069676e38d6152ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Depuración remota de código de Python en Linux
 
@@ -36,9 +36,9 @@ Los elementos siguientes son necesarios para seguir este tutorial:
 - Un equipo remoto que ejecute Python en un sistema operativo como Mac OSX o Linux.
 - El puerto 5678 (entrada) abierto en el firewall de ese equipo, que es el valor predeterminado para la depuración remota.
 
-Puede crear fácilmente [máquinas virtuales de Linux en Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) y [tener acceso mediante Escritorio remoto](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) desde Windows. Un sistema Ubuntu para la máquina virtual resulta útil porque Python está instalado de forma predeterminada; de lo contrario, vea la lista en [Selección e instalación de los intérpretes de Python](python-environments.md#selecting-and-installing-python-interpreters) para obtener otras ubicaciones de descarga de Python.
+Puede crear fácilmente [máquinas virtuales de Linux en Azure](/azure/virtual-machines/linux/creation-choices) y [tener acceso mediante Escritorio remoto](/azure/virtual-machines/linux/use-remote-desktop) desde Windows. Un sistema Ubuntu para la máquina virtual resulta útil porque Python está instalado de forma predeterminada; de lo contrario, vea la lista en [Selección e instalación de los intérpretes de Python](python-environments.md#selecting-and-installing-python-interpreters) para obtener otras ubicaciones de descarga de Python.
 
-Para obtener detalles sobre cómo crear una regla de firewall para una máquina virtual de Azure, vea [Apertura de puertos para una máquina virtual en Azure mediante Azure Portal](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+Para obtener detalles sobre cómo crear una regla de firewall para una máquina virtual de Azure, vea [Apertura de puertos para una máquina virtual en Azure mediante Azure Portal](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 ## <a name="preparing-the-script-for-debugging"></a>Preparación del script para la depuración
 
@@ -132,14 +132,13 @@ En estos pasos, estableceremos un punto de interrupción simple para detener el 
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>Protección de la conexión del depurador con SSL
 
 De forma predeterminada, la conexión al servidor de depuración remota de ptvsd solo está protegida por el secreto y todos los datos se pasan como texto sin formato. Para una conexión más segura, ptvsd es compatible con SSL, que se define como sigue:
 
 1. En el equipo remoto, genere archivos de certificado autofirmado y de clave independientes con openssl:
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -152,8 +151,8 @@ De forma predeterminada, la conexión al servidor de depuración remota de ptvsd
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    También puede realizar el mismo cambio en el archivo de código en el equipo local, pero dado que este código no se ejecuta realmente, no es estrictamente necesario.    
+
+    También puede realizar el mismo cambio en el archivo de código en el equipo local, pero dado que este código no se ejecuta realmente, no es estrictamente necesario.
 
 1. Reinicie el programa de Python en el equipo remoto, para prepararlo para la depuración.
 

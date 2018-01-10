@@ -10,16 +10,15 @@ ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
-ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
-caps.latest.revision: "25"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 39addca0d673ae5a9423d4195ffc2bfe3358de4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 36a33e9be37255e6bcf199e612a44f65ca243a1e
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Ejecutar una prueba unitaria como un proceso de 64 bits
 Si tiene un equipo de 64 bits, puede ejecutar pruebas unitarias y capturar información de cobertura de código como un proceso de 64 bits.  
@@ -39,7 +38,7 @@ Si tiene un equipo de 64 bits, puede ejecutar pruebas unitarias y capturar infor
   
      Especifique `<TargetPlatform>x64</TargetPlatform>` en un archivo .runsettings. Una ventaja de este método es que puede especificar grupos de configuraciones en archivos diferentes y cambiar rápidamente entre las distintas configuraciones. También puede copiar la configuración entre las soluciones. Para obtener más información, consulte [Configurar pruebas unitarias usando un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
   
-## <a name="see-also"></a>Vea también  
- [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)   
- [Hacer una prueba unitaria de su código](../test/unit-test-your-code.md)   
- [Especificar la configuración de pruebas para las pruebas en Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+## <a name="see-also"></a>Vea también
+
+[Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)  
+[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)  
