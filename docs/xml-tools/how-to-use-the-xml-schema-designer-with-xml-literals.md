@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: VB
 ms.workload: multiple
-ms.openlocfilehash: 5eea45aafebe8c20431de5b2d3bd299789bf7285
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cda22612959e083cb1f0179d65554d38fab9cf03
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Cómo: Usar el Diseñador de esquemas XML con literales XML
 En este tema se explica cómo ver un esquema asociado a un literal XML en un proyecto Visual Basic.  
@@ -70,7 +70,7 @@ En este tema se explica cómo ver un esquema asociado a un literal XML en un pro
   
        End Sub  
    End Module  
-   ```  
+   ```
   
 2.  Haga clic en cualquier nodo XML en un literal XML o una importación de espacio de nombres XML y seleccione **mostrar en Explorador de esquemas**.  
   

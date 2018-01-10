@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 21018eb6e1a3ff282a7ec9fb856c431f894dafca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa4604ae256fdd4a3f935cc05ff7aec0fda4e842
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depurar una hoja de estilos XSLT
 En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos incluyen ver variables, definir puntos de interrupción y examinar el código. La hoja de estilos busca todos los libros cuyo costo sea menor que el costo promedio.  
@@ -121,7 +121,7 @@ El **resultado XSL** ventana muestra la salida de la transformación XSL. Esta v
     </books>  
   </xsl:template>  
 </xsl:stylesheet>  
-```  
+```
   
 ### <a name="booksxml"></a>books.xml  
   
@@ -153,7 +153,7 @@ El **resultado XSL** ventana muestra la salida de la transformación XSL. Esta v
     <price>9.99</price>  
   </book>  
 </bookstore>  
-```  
+```
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)

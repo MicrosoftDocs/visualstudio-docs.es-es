@@ -19,11 +19,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Cómo: Utilizar los asistentes con las plantillas de proyectos
 Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> que, cuando se implementa, permite ejecutar código personalizado cuando un usuario crea un proyecto a partir de una plantilla.  
@@ -198,6 +198,7 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
             private void button1_Click(object sender, EventArgs e)  
             {  
                 customMessage = textBox1.Text;  
+                this.Close();
             }  
         }  
     ```  
@@ -231,13 +232,13 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
   
 10. Extraer la clave pública desde el archivo key.snk. En la ventana de comandos, escriba  
   
-     **\<ubicación de sn.exe > \sn.exe - p key.snk outfile.key.**  
+     **\<ubicación de sn.exe > \sn.exe -p key.snk outfile.key.**  
   
      No olvide delimitar la ruta de acceso de sn.exe entre comillas si hay espacios en los nombres de directorio.  
   
 11. Obtener la clave pública token desde el archivo externo:  
   
-     **\<ubicación de sn.exe > \sn.exe - t outfile.key.**  
+     **\<ubicación de sn.exe > \sn.exe -t outfile.key.**  
   
      Una vez más, no olvide las comillas. Debería ver una línea en la salida similar al siguiente  
   
