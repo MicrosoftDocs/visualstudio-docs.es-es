@@ -1,5 +1,5 @@
 ---
-title: "Mejorar la calidad del código | Microsoft Docs"
+title: Herramientas de prueba de Visual Studio | Microsoft Docs
 ms.custom: na
 ms.date: 02/17/2017
 ms.reviewer: na
@@ -8,50 +8,40 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
-- Visual Studio ALM
-- team-based development
-ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
-caps.latest.revision: "39"
+- testing tools [Visual Studio]
+- unit tests [Visual Studio]
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 93847beaef971f9370d59a8c5c8ac9f3a59a0967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f3b7bb9139b1c63bca4c9cf9fbd61e21de6ed043
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="improve-code-quality"></a>Mejorar la calidad del código
-¿Qué es la calidad del código? La corrección, el mantenimiento e incluso la elegancia son factores que se tienen en cuenta en la creación de un buen código. Independientemente de su definición, las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equipo a desarrollar y a mantener altos estándares de excelencia de código.  
-  
- **Requisitos**  
-  
--   Algunas de las herramientas y características que se describen en esta sección solo están disponibles en ediciones específicas de Visual Estudio; no están disponibles universalmente en Visual Studio. Los requisitos específicos de edición se indican en la documentación de estas herramientas y características.  
-  
-## <a name="in-this-section"></a>En esta sección  
- En la siguiente tabla, encontrará descripciones de tareas comunes y vínculos para obtener más información sobre cómo puede completar correctamente dichas tareas.  
-  
-|||  
-|-|-|  
-|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|El Explorador de pruebas facilita la integración de las pruebas unitarias en la práctica de desarrollo. Puede usar el marco de pruebas unitarias de Microsoft o uno de los marcos de terceros y de código abierto.|  
-|[Live Unit Testing con Visual Studio](../test/live-unit-testing.md)|Live Unit Testing ejecuta automáticamente pruebas unitarias en segundo plano y muestra una representación gráfica de los resultados de la prueba y la cobertura de código en el editor de código de Visual Studio.|  
-|[Analizar la calidad de la aplicación](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Las herramientas de análisis de código estáticas encuentran problemas de diseño, uso, mantenimiento y estilo en C++ y en código administrado. Muchos de estos problemas pueden provocar errores que son difíciles de reproducir en entornos de prueba estándar.|  
-|[Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Las métricas de código son un conjunto de medidas de software que proporcionan a los programadores una mejor visión del código que están desarrollando. Las métricas incluyen un índice de mantenimiento para funciones y clases, complejidad ciclomática de funciones, la profundidad de herencia de clases y la cantidad de vinculación entre clases.|  
-  
-## <a name="related-scenarios"></a>Escenarios relacionados  
- [Información general de DevOps para Team Services y TFS](https://www.visualstudio.com/docs/devops-alm-overview)  
- Si no está familiarizado con Visual Studio Team Foundation y Visual Studio Team Services, puede obtener más información sobre cómo se usa en un entorno de desarrollo en equipo para mejorar la productividad y reducir los riesgos asociados al desarrollo de aplicaciones.  
-  
- [Analizar y modelar la arquitectura](../modeling/analyze-and-model-your-architecture.md)  
- Puede utilizar [!INCLUDE[vsPreExt](../test/includes/vspreext_md.md)] para administrar los desafíos y la complejidad de diseñar el software. [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] permite modelar la aplicación visualmente, tal como existe ahora y como se desea que exista en el futuro. Puede crear y mantener diagramas que le ayudarán a visualizar los modelos lógicos de la aplicación a la vez que se asignan a los modelos físicos; esto le permite cambiar, validar y analizar el software "en fase de diseño".  
-  
- [Probar la aplicación](https://www.visualstudio.com/docs/test/overview)  
- Puede usar [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] y [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)] para ser más productivo a lo largo del ciclo de vida de las pruebas. [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] o [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)] permiten planear el trabajo de pruebas. Puede crear, administrar, editar y ejecutar pruebas manuales y automatizadas. También puede revisar el progreso de las pruebas en función del plan.  
-  
- [Proteger la aplicación con PreEmptive Protection - Dotfuscator](../ide/dotfuscator/index.md)  
- Puede usar la versión gratuita Dotfuscator Community Edition para ayudar a salvaguardar secretos comerciales y propiedad intelectual de otra índole, reducir la piratería y la falsificación, y proteger contra la manipulación y la depuración no autorizada.  Dotfuscator protege y consolida los ensamblados compilados sin necesidad de programación adicional ni de obtener acceso al código fuente.
-  
- [Compilar la aplicación](https://www.visualstudio.com/docs/build/overview)  
- Puede utilizar [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] para crear y administrar compilaciones automatizadas del código. [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] permite crear servidores paralelos para implementar compilaciones. Además, se pueden analizar las tendencias de compilación.  
-  
- [Seguimiento del trabajo mediante Visual Studio Online o Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
- Puede utilizar [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] para planear y realizar el seguimiento de los proyectos, tanto si usa el proceso rápido, el proceso formal o una variación de esos procesos. Si planea los proyectos, realiza el seguimiento del progreso con respecto al el plan y realiza los ajustes necesarios, puede reducir los riesgos, evitar las sorpresas desagradables y administrar el costo de los proyectos.
+# <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
+
+Las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equipo a desarrollar y mantener altos estándares de excelencia de código.
+
+> [!NOTE]
+> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing, IntelliTest y pruebas automatizadas de IU, solo están disponibles en la edición Visual Studio Enterprise. Para más información sobre las ediciones, vea [Comparar los IDE de Visual Studio 2017](https://www.visualstudio.com/vs/compare/).
+
+## <a name="in-this-section"></a>En esta sección
+
+|||
+|-|-|
+|[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)|El Explorador de pruebas facilita la integración de las pruebas unitarias en la práctica de desarrollo. Puede usar el marco de pruebas unitarias de Microsoft o uno de los marcos de terceros y de código abierto.|
+|[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|IntelliTest genera automáticamente pruebas unitarias y datos de prueba para el código administrado.|
+|[Cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|La cobertura de código determina qué proporción del código del proyecto se está probando realmente mediante pruebas automatizadas como pruebas unitarias.|
+|[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Microsoft Fakes ayuda a aislar el código que se está probando mediante la sustitución de otros elementos de la aplicación con código auxiliar o correcciones de compatibilidad (shim).|
+|[Live Unit Testing ](../test/live-unit-testing.md)|Live Unit Testing ejecuta automáticamente pruebas unitarias en segundo plano y muestra una representación gráfica de los resultados de la prueba y la cobertura de código en el editor de código de Visual Studio.|
+|[Automatización de la interfaz de usuario](../test/use-ui-automation-to-test-your-code.md)|Use pruebas automatizadas de IU para controlar la aplicación a través de su interfaz de usuario.|
+|[Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|Un entorno de laboratorio es una colección de máquinas virtuales y físicas que se pueden usar para desarrollar y probar las aplicaciones.|
+
+## <a name="related-scenarios"></a>Escenarios relacionados
+
+* [Pruebas exploratorias y manuales (VSTS)](/vsts/manual-test/)
+* [Prueba de carga (VSTS)](/vsts/load-test/index)
+* [Prueba continua (VSTS)](/vsts/build-release/test/index)
+* [Información general de DevOps para Team Services y TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [Herramientas de análisis de código](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

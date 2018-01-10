@@ -14,11 +14,12 @@ ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f4e50777b8213a454942c0db710387bd7b59cde8
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: e923e4b8ec3a505dc3df7b51d9776629fa08faad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Control de actualizaciones a implementaciones de Visual Studio basadas en red
 

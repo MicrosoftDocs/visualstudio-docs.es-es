@@ -33,24 +33,25 @@ f1_keywords:
 - VC.Project.AdditionalOptionsPage
 - VC.Project.VCLinkerTool.AdditionalDependencies
 - VC.Project.VCLinkerTool.LibraryDependencies
-ms.openlocfilehash: 0e7b1d5b417250282092a780afc30aee965e4dfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: f74ad5934d48c941195da30d9228c35483479f69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-linker-properties-android-c"></a>Propiedades del enlazador de Clang (C++ para Android)
 
-Propiedad | Descripción | Opciones
+Property | Description | Opciones
 --- | ---| ---
-Archivo de salida | La opción invalida el nombre y la ubicación predeterminados del programa que el enlazador crea. (-o)
+Archivo de salida | La opción invalida el nombre y la ubicación predeterminados del programa que crea el enlazador. (-o)
 Mostrar progreso | Imprime los mensajes de progreso del enlazador.
 Versión | La opción -version indica al enlazador que agregue un número de versión en el encabezado del ejecutable.
-Habilitar salida detallada | La opción -verbose indica al enlazador que genere mensajes detallados para la depuración.
+Habilitar resultado detallado | La opción -verbose indica al enlazador que genere mensajes detallados para la depuración.
 Habilitar vinculación incremental | La opción indica al enlazador que habilite la vinculación incremental.
-Ruta de búsqueda de biblioteca compartida | Permite que el usuario rellene la ruta de búsqueda de bibliotecas compartidas.
+Ruta de búsqueda de biblioteca compartida | Permite que el usuario especifique la ruta de búsqueda de la biblioteca compartida.
 Directorios de bibliotecas adicionales | Permite que el usuario invalide la ruta de acceso de la biblioteca del entorno. (Carpeta -L).
-Informar de referencias de símbolos sin resolver | Al habilitar esta opción, se informará de referencias de símbolos sin resolver.
+Informar de referencias de símbolos sin resolver | Al habilitar esta opción se informará de referencias de símbolos sin resolver.
 Optimizar para uso de memoria | Se optimiza para el uso de memoria, ya que se vuelven a leer las tablas de símbolos cuando es necesario.
 Omitir bibliotecas predeterminadas específicas | Especifica uno o más nombres de las bibliotecas predeterminadas que se ignorarán.
 Forzar referencias de símbolos | Obliga a que los símbolos se especifiquen en el archivo de salida como no definidos.

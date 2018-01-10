@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1f4fd45337ebd0f00362d352077cf8441e6f5afa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 57aa814ac458fc3c893f8a2d557840d936ed033b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animar objetos en el Diseñador XAML
 Cree animaciones cortas para el movimiento y el fundido de objetos.  

@@ -1,5 +1,5 @@
 ---
-title: "Visualización de datos con las herramientas de R para Visual Studio | Microsoft Docs"
+title: "Visualización de datos con Herramientas de R para Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 06/29/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5d022864609dca3aeaa2a759ea05e1f37abd203f
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 7449e6037300eab33d89f32f98d58a5e265ad21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 
@@ -55,7 +56,7 @@ Al cambiar el tamaño de una ventana de trazado siempre se vuelve a representar 
 
 La barra de herramientas de la ventana de trazado incluye comandos aplicables, la mayoría de los cuales también están disponibles en el menú **Herramientas de R > Trazados**.
 
-| Botón | Comando | Descripción | 
+| Botón | Comando | Description | 
 | --- | --- | --- |
 | ![Botón Nueva ventana de trazado](media/plotting-toolbar-01-new-plot-window.png) | Nueva ventana de trazado | Crea una ventana de trazado independiente con su propio historial. Vea [Varias ventanas de trazado](#multiple-plot-windows). |
 | ![Botón Activar ventana de trazado](media/plotting-toolbar-02-activate-plot-window.png) | Activar ventana de trazado | Establece la ventana de trazado actual como la ventana activa, de manera que los comandos `plot` posteriores se representen en esa ventana. Vea [Varias ventanas de trazado](#multiple-plot-windows). Vea [Varias ventanas de trazado](#multiple-plot-windows). |

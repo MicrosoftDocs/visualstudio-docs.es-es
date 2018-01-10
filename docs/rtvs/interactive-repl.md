@@ -12,13 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 170d4dd3aeb5dfb2d05f8f640c653790ccab0a70
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="working-with-the-r-interactive-window"></a>Trabajar con la ventana R interactivo
+# <a name="working-with-the-r-interactive-window"></a>Trabajar con la ventana de R interactivo
 
 Herramientas de R para Visual Studio (RTVS) proporciona la ventana R interactivo, también conocida como ventana **REPL** (read-eval-print loop), en la que se puede escribir código R y ver los resultados de inmediato. Todos los módulos, la sintaxis y las variables, además de IntelliSense, están disponibles en esta ventana.
 
@@ -33,7 +34,7 @@ Para probar estas características, puede seguir el tutorial [Introducción a R]
 
 Los [fragmentos de código](code-snippets.md) también funcionan en la ventana R interactivo como en las ventanas del editor de R.
 
-## <a name="overview-of-the-interactive-window"></a>Información general sobre la ventana R interactivo
+## <a name="overview-of-the-interactive-window"></a>Información general sobre la ventana interactiva
 
 Si escribe código R válido y presiona Entrar al final de la línea, se ejecuta el código en esa línea:
 
@@ -60,21 +61,20 @@ Aquí se muestra la ventana interactiva con su barra de herramientas:
 
 Los comandos de la barra de herramientas son los siguientes, la mayoría de los cuales tiene equivalentes de teclado y también está disponible en los menús **Herramientas de R > Sesión** y **Herramientas de R > Directorio de trabajo** (o como se indica):
 
-| Botón | Comando | Combinación de teclas | Descripción | 
+| Botón | Comando | Combinación de teclas | Description | 
 | --- | --- | --- | --- |
 | ![Botón Restablecer](media/repl-toolbar-01-reset.png) | Restablecer | Ctrl+Mayús+F10 | Restablece la sesión de la ventana R interactivo y borra todas las variables y el historial. |
 | ![Botón Borrar](media/repl-toolbar-02-clear.png) | Clear | Ctrl+L | Borra la salida mostrada en la ventana R interactivo; no afecta a las variables de la sesión ni al historial. |
 | ![Botones Historial](media/repl-toolbar-03-history.png) | Comando Historial anterior<br/>Comando Historial siguiente | Arriba, Abajo<br/>Alt+Arriba/Alt+Abajo | Se desplaza por el historial, con determinados comportamientos para los bloques de código de varias líneas. Vea [Historial](#history). |
-| ![Botón Cargar área de trabajo](media/repl-toolbar-04-load-workspace.png) | Cargar área de trabajo | no disponible | Carga un área de trabajo guardada anteriormente (vea [Áreas de trabajo y sesiones](#workspaces-and-sessions)). |
-| ![Botón Guardar área de trabajo como](media/repl-toolbar-05-save-workspace-as.png)| Guardar área de trabajo como | no disponible | Guarda el estado actual de la sesión como un área de trabajo (vea [Áreas de trabajo y sesiones](#workspaces-and-sessions)). |
+| ![Botón Cargar área de trabajo](media/repl-toolbar-04-load-workspace.png) | Cargar área de trabajo | N/D | Carga un área de trabajo guardada anteriormente (vea [Áreas de trabajo y sesiones](#workspaces-and-sessions)). |
+| ![Botón Guardar área de trabajo como](media/repl-toolbar-05-save-workspace-as.png)| Guardar área de trabajo como | N/D | Guarda el estado actual de la sesión como un área de trabajo (vea [Áreas de trabajo y sesiones](#workspaces-and-sessions)). |
 | ![Botón Script de R de origen](media/repl-toolbar-06-source-r-script.png) | Script de R de origen | Ctrl+Mayús+S | Llama a `source` con el script de R activo en el editor de Visual Studio, que ejecuta el código.  Este botón solo aparece cuando hay un archivo de R abierto en el editor de Visual Studio. | 
 | ![Botón Script de R de origen con eco](media/repl-toolbar-07-source-r-script-with-echo.png) | Script de R de origen con eco | Ctrl+Mayús+Intro | Es igual que Script de R de origen, pero muestra el contenido del script en la ventana R interactivo. | 
 | ![Botón Interrumpir R](media/repl-toolbar-08-interrupt-r.png)| Interrumpir R | Esc | Detiene cualquier código en ejecución en la ventana interactiva, como el bucle `while` de la captura de pantalla que se muestra al principio de esta sección. |
-| ![Botón Asociar depurador](media/repl-toolbar-09b-attach-debugger.png)| Asociar depurador | no disponible | También disponible mediante el comando **Depurar > Adjuntar en R interactivo**. | 
+| ![Botón Asociar depurador](media/repl-toolbar-09b-attach-debugger.png)| Asociar depurador | N/D | También disponible mediante el comando **Depurar > Adjuntar en R interactivo**. | 
 | ![Botón Establecer el directorio de trabajo en la ubicación del archivo de origen](media/repl-toolbar-10-set-working-directory-source.png)| Establecer el directorio de trabajo en la ubicación del archivo de origen | Ctrl+Mayús+E | Establece el directorio de trabajo en el archivo de origen que se ha cargado más recientemente en la ventana interactiva (mediante `source`). Vea [Directorio de trabajo](#working-directory). |
 | ![Botón Establecer el directorio de trabajo en la ubicación del proyecto](media/repl-toolbar-11-set-working-directory-to-project.png) | Establecer el directorio de trabajo en la ubicación del proyecto | Ctrl+Mayús+P | Establece el directorio de trabajo en la raíz del proyecto cargado en Visual Studio. Vea [Directorio de trabajo](#working-directory). |
-| (Campo de texto) | Seleccionar directorio de trabajo | no disponible | Campo de entrada directa para el directorio de trabajo. Vea [Directorio de trabajo](#working-directory). |
-
+| (Campo de texto) | Seleccionar directorio de trabajo | N/D | Campo de entrada directa para el directorio de trabajo. Vea [Directorio de trabajo](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Áreas de trabajo y sesiones
 
@@ -88,12 +88,10 @@ Para volver a cargar un área de trabajo guardada previamente, seleccione el bot
 
 El botón **Restablecer** o **Herramientas de R > Sesión > Restablecer** borra el contexto de la sesión. Si está usando una sesión remota, el restablecimiento también elimina el perfil de usuario en el equipo remoto para borrar todos los archivos almacenados allí. (Vea [Áreas de trabajo](workspaces.md#directories-on-local-and-remote-computers)).
 
-
 ## <a name="working-directory"></a>Directorio de trabajo
 
 Es habitual que los desarrolladores quieran cambiar su directorio de trabajo en una sesión interactiva. Varios comandos, disponibles en la barra de herramientas, el menú **Herramientas de R > Directorio de trabajo** y el menú contextual del proyecto, permiten establecer fácilmente un directorio de trabajo en la ubicación de un archivo de origen, la ubicación o el proyecto o cualquier otra ubicación arbitraria. Esto ayuda a evitar la escritura de nombres de ruta de acceso completos o largos nombres de ruta de acceso relativos al hacer referencia a los archivos.
 
- 
 ## <a name="history"></a>Historial
 
 Cada línea que se escribe en la ventana R interactivo, incluso las líneas enviadas desde un editor, se conserva en el historial de REPL. Luego se puede navegar por historial con las teclas Arriba y Abajo como es probable que acostumbre a hacer en la línea de comandos.

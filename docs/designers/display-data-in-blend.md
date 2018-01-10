@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1097a5724e1fcab96be99c58532e15fedd59da30
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a48416fc2508240cd03e545c0b798d3d24ab6f6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="display-data-in-blend"></a>Mostrar datos en Blend
 Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en el diseñador. Estos datos de ejemplo se pueden generar desde cero o mediante una clase existente. También puede conectarse a *Datos en directo* que aparecerán en la aplicación al ejecutarla.  
@@ -32,13 +33,13 @@ Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en e
 -   [Mostrar datos en directo en una aplicación de la Tienda Windows o Windows Phone](#LiveStore)  
   
 ##  <a name="Scratch"></a> Generar datos de ejemplo  
- Para generar datos de ejemplo, abra un documento XAML. En el panel **Datos** , elija el botón **Crear datos de ejemplo**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") y, luego, seleccione **Nuevos datos de ejemplo**.  
+ Para generar datos de ejemplo, abra un documento XAML. En el panel **Datos**, haga clic en el botón **Crear datos de ejemplo**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") y después seleccione **Nuevos datos de ejemplo**.  
   
  Defina la estructura de los datos en el panel **Datos** y, a continuación, enlácelos a los elementos de interfaz de usuario de cualquier página.  
   
  ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")  
   
- Si desea que los datos de ejemplo aparezcan en las páginas al ejecutar la aplicación, escoja **Opciones de origen de datos** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")y, a continuación, **Habilitar al ejecutar la aplicación**.  
+ Si quiere que los datos de ejemplo aparezcan en las páginas al ejecutar la aplicación, seleccione **Opciones de origen de datos** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d") y después **Habilitar al ejecutar la aplicación**.  
   
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")  
   
@@ -49,7 +50,7 @@ Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en e
 ##  <a name="Existing"></a> Generar datos de ejemplo desde una clase  
  Si ya ha creado las clases que describen la estructura de los datos, puede generar datos de ejemplo a partir de ellas.  
   
- Para generar datos de ejemplo desde una clase, abra un documento XAML y, en el panel **Datos** , haga clic en el botón **Crear datos de ejemplo**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") ; luego, haga clic en **Crear datos de ejemplo desde clase**.  
+ Para generar datos de ejemplo desde una clase, abra un documento XAML y, en el panel **Datos**, haga clic en el botón **Crear datos de ejemplo**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") y después haga clic en **Crear datos de ejemplo desde clase**.  
   
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Crear datos de ejemplo desde una clase](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).  
   

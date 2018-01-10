@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 80b53ca4a4ada7374d0d62101b00b8ed1a9ca335
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -26,7 +27,7 @@ Visual Studio proporciona una ventana interactiva read-evaluate-print loop (REPL
 
 Visual Studio tiene una serie de modos de REPL de Python entre los que se puede elegir:
 
-| REPL | Descripción | Editar | Depuración | Imágenes |
+| REPL | Description | Editar | Depuración | Imágenes |
 | --- | --- | --- | --- | --- |
 | Estándar | REPL predeterminado, que habla directamente con Python | Edición estándar (multilínea, etc.). | Sí, mediante `$attach` | No |
 | Depuración | REPL predeterminado, que habla directamente con el proceso de Python depurado | Edición estándar | Solo depuración | No |
@@ -76,7 +77,7 @@ La excepción se produce cuando se necesitan líneas de código adicionales para
 
 <a name="meta-commands"></a> La ventana interactiva también admite varios metacomandos. Todos los metacomandos empiezan con `$`, y puede escribir `$help` para obtener una lista de los metacomandos y `$help <command>` para obtener los detalles de uso de un comando específico.
 
-| Metacomando | Descripción |
+| Metacomando | Description |
 | --- | --- |
 | `$$` | Inserta un comentario, lo que resulta útil para comentar el código a lo largo de la sesión. |
 | `$attach` | Asocia el depurador de Visual Studio con el proceso de la ventana de REPL para habilitar la depuración. |

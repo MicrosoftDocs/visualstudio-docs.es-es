@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
-ms.openlocfilehash: 074f7bfbea620710d60070928b9fc2a4ef6506fc
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 423ea3b21ff4d7363b3e20e62fb55caff0383a12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-community-2017-workload-and-component-ids"></a>Identificadores de componente y carga de trabajo de Visual Studio Community 2017
 
@@ -42,7 +43,7 @@ Para obtener más información acerca de cómo utilizar estos identificadores, v
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de Visual Studio para usuarios de C++ | 15.0.27128.1 | Optional
@@ -55,7 +56,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Herramientas de WebJobs de Microsoft Azure | 15.0.27128.1 | Obligatorio
@@ -121,7 +122,7 @@ Microsoft.Net.Component.4.6.2.SDK | SDK de .NET Framework 4.6.2 | 15.0.26208.0 |
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | SDK de .NET Framework 4.7.1 | 15.0.27128.1 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 15.0.27019.1 | Optional
-Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.0.26419.1 | Opcional
+Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.0.26419.1 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 15.0.27019.1 | Optional
@@ -140,7 +141,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Se recomienda
 Component.Redgate.SQLSearch.VSExtension | Redgate SQL Search | 2.4.2.1439 | Se recomienda
@@ -198,7 +199,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Compatibilidad con el lenguaje
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Anaconda3.x64 | Anaconda3 64 bits (5.0.0) | 5.0.0 | Se recomienda
 Microsoft.Component.CookiecutterTools | Compatibilidad con plantillas de Cookiecutter | 15.0.26621.2 | Se recomienda
@@ -245,7 +246,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | SDK de Windows 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.27019.1 | Obligatorio
 Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Obligatorio
@@ -275,7 +276,7 @@ Microsoft.Net.Component.4.6.2.SDK | SDK de .NET Framework 4.6.2 | 15.0.26208.0 |
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | SDK de .NET Framework 4.7.1 | 15.0.27128.1 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 15.0.27019.1 | Optional
-Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.0.26419.1 | Opcional
+Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.0.26419.1 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 15.0.27019.1 | Optional
@@ -300,7 +301,7 @@ Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Optiona
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Component.3.5.DeveloperTools | Herramientas de desarrollo para .NET Framework 3.5 | 15.0.26621.2 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.27019.1 | Obligatorio
@@ -318,7 +319,7 @@ Component.UnityEngine.x86 | Editor Unity 5.6 de 32 bits | 15.0.27102.0 | Se rec
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.Windows10SDK | Entorno de tiempo de ejecución de C de Windows Universal | 15.0.26621.2 | Obligatorio
@@ -340,7 +341,7 @@ Component.MDD.Linux.GCC.arm | Desarrollo incrustado e IoT | 15.0.27102.0 | Optio
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Obligatorio
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.27019.1 | Obligatorio
@@ -392,7 +393,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Soporte de Windows X
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Actualización de Visual C++ 2017 Redistributable | 15.0.27019.1 | Obligatorio
 Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26823.1 | Se recomienda
@@ -444,7 +445,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | SDK de Windows 8.1 y
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.CoreIde | Características principales de Visual Studio C++ | 15.0.26606.0 | Obligatorio
 Component.Android.NDK.R13B | Android NDK (R13B) | 13.1.6 | Se recomienda
@@ -472,7 +473,7 @@ Component.MDD.IOS | Herramientas de desarrollo de iOS en C++ | 15.0.26621.2 | Op
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Component.4.6.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.1 | 15.0.26621.2 | Obligatorio
 Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26606.0 | Obligatorio
@@ -536,7 +537,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Compatibilidad con IIS en
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
@@ -601,7 +602,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Herramientas de la Plataform
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK | Herramientas de desarrollo de .NET Core 1.0 - 1.1 | 15.0.26606.0 | Obligatorio
 Microsoft.NetCore.ComponentGroup.DevelopmentTools | Herramientas de desarrollo de .NET Core 2.0 | 15.0.27019.1 | Obligatorio
@@ -659,7 +660,7 @@ Microsoft.Net.Component.4.6.2.SDK | SDK de .NET Framework 4.6.2 | 15.0.26208.0 |
 Microsoft.Net.Component.4.6.2.TargetingPack | Paquete de compatibilidad de .NET Framework 4.6.2 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | SDK de .NET Framework 4.7.1 | 15.0.27128.1 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7.1 | 15.0.27019.1 | Optional
-Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.0.26419.1 | Opcional
+Microsoft.Net.Component.4.7.SDK | SDK de .NET Framework 4.7 | 15.0.26419.1 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | Paquete de compatibilidad de .NET Framework 4.7 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Herramientas de desarrollo de .NET Framework 4.6.2 | 15.0.26621.2 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Herramientas de desarrollo para .NET Framework 4.7.1 | 15.0.27019.1 | Optional
@@ -677,7 +678,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.0.26606.0 | 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.0.26606.0 | Obligatorio
@@ -700,7 +701,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Conjunto de herramientas de 
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 15.0.26720.2 | Obligatorio
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
@@ -751,7 +752,7 @@ Microsoft.VisualStudio.Component.TeamOffice | Visual Studio Tools para Office (V
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.CPython3.x64 | Python 3 64 bits (3.6.3) | 3.6.3.1 | Se recomienda
 Microsoft.Component.CookiecutterTools | Compatibilidad con plantillas de Cookiecutter | 15.0.26621.2 | Se recomienda
@@ -777,7 +778,7 @@ Component.Microsoft.VisualStudio.RazorExtension | Servicios de lenguaje Razor | 
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Optional
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.27019.1 | Optional
 Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Optional
-Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Opcional
+Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
 Microsoft.Component.PythonTools.UWP | Compatibilidad con IoT de Python | 15.0.26606.0 | Optional
 Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Herramientas de desarrollo nativo de Python | 15.0.27005.2 | Optional
 Microsoft.Net.Component.4.5.1.TargetingPack | Paquete de compatibilidad de .NET Framework 4.5.1 | 15.0.26621.2 | Optional
@@ -791,16 +792,16 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Herramientas de desarrol
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Herramientas de desarrollo de .NET Framework 4 – 4.6 | 15.0.26606.0 | Optional
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Herramientas de creación de Azure | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Opcional
+Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas de Azure para .NET | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulador de Azure Compute | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Azure Storage | 15.0.26823.1 | Optional
-Microsoft.VisualStudio.Component.Azure.Waverton | Herramientas principales de Azure Cloud Services | 15.0.26208.0 | Opcional
+Microsoft.VisualStudio.Component.Azure.Waverton | Herramientas principales de Azure Cloud Services | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.ClassDesigner | Diseñador de clases | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.DiagnosticTools | Herramientas para generación de perfiles de .NET | 15.0.27005.2 | Optional
 Microsoft.VisualStudio.Component.Graphics | Editores de imágenes y modelos 3D | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos y creador de perfiles GPU para DirectX | 15.0.26823.1 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | SDK de Windows 8.1 de herramientas gráficas | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Opcional
+Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnósticos de JavaScript | 15.0.26606.0 | Optional
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo de carga de trabajo de escritorio administrado | 15.0.27019.1 | Optional
 Microsoft.VisualStudio.Component.NuGet | Administrador de paquetes de NuGet | 15.0.27128.1 | Optional
@@ -808,10 +809,10 @@ Microsoft.VisualStudio.Component.PortableLibrary | Paquete de compatibilidad de 
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores de C# y Visual Basic Roslyn | 15.0.27019.1 | Optional
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# y Visual Basic | 15.0.27019.1 | Optional
 Microsoft.VisualStudio.Component.SQL.ADAL | Entorno de tiempo de ejecución de SQL ADAL | 15.0.26606.0 | Optional
-Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de comandos de SQL Server | 15.0.26208.0 | Opcional
+Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilidades de la línea de comandos de SQL Server | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.SQL.DataSources | Orígenes de datos para el soporte de SQL Server | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.0.26919.1 | Optional
-Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Opcional
+Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Optional
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Herramientas de análisis estático | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.TextTemplating | Transformación de plantilla de texto | 15.0.26208.0 | Optional
@@ -835,7 +836,7 @@ Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Herramientas de desarroll
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.27019.1 | Obligatorio
@@ -885,7 +886,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC | Herramientas de la Plataforma uni
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | Publicación de ClickOnce | 15.0.27019.1 | Obligatorio
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.0.26621.2 | Obligatorio
@@ -921,7 +922,7 @@ Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 15.0.26919.1 | Opti
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | Nombre | Versión | Tipo de dependencia
+Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Component.CordovaToolset.6.3.1 | Conjunto de herramientas de Cordova 6.3.1 | 15.0.26504.0 | Obligatorio
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Obligatorio
@@ -952,7 +953,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | Herramientas de la Plataform
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | Nombre | Versión
+Id. de componente | nombre | Versión
 --- | --- | ---
 Component.Android.Emulator | Emulador de Visual Studio para Android | 15.0.27128.1
 Component.Android.NDK.R11C | Android NDK (R11C) | 11.3.13
@@ -978,7 +979,7 @@ En ocasiones, algo no sale según lo previsto. Si se produce un error en la inst
 Aquí tiene algunas opciones de soporte técnico más:
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
 * Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), hacer preguntas y encontrar respuestas.
+* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
 * También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también

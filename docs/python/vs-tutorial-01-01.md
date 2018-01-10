@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d6c5cd4395ea0251027edbc94019637b72a630a8
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Trabajo con Python en Visual Studio
 
@@ -44,20 +45,20 @@ En este tutorial, empezará con un proyecto simple que contiene un único archiv
 
 1. En Visual Studio, seleccione **Archivo > Nuevo proyecto** (CTRL+Mayús+N). Se abrirá el cuadro de diálogo **Nuevo proyecto**. Aquí puede examinar plantillas de diferentes lenguajes. Seleccione una para el proyecto y especifique dónde colocará los archivos Visual Studio.
 
-1. Para ver las plantillas de Python, seleccione **Plantillas > Otros lenguajes > Python** en el lado izquierdo, o busque "Python". Si no recuerda la ubicación de una plantilla en el árbol de lenguajes, lo mejor es que use la búsqueda.
+1. Para ver las plantillas de Python, seleccione **Instaladas > Python** en la parte izquierda o busque "Python". Si no recuerda la ubicación de una plantilla en el árbol de lenguajes, lo mejor es que use la búsqueda.
 
     ![Cuadro de diálogo Nuevo proyecto con los proyectos de Python](media/vs-getting-started-python-01-new-project.png)
 
-1. Observe que la compatibilidad de Python con Visual Studio incluye una serie de plantillas de proyecto, incluidas aplicaciones web que usan los marcos Bottle, Flask y Django. Para los fines de este tutorial, en cambio, comenzaremos con un proyecto vacío. 
+    Observe que la compatibilidad de Python con Visual Studio incluye una serie de plantillas de proyecto, incluidas aplicaciones web que usan los marcos Bottle, Flask y Django. Para los fines de este tutorial, en cambio, comenzaremos con un proyecto vacío.
 
 1. Elija la plantilla **Aplicación de Python**, especifique un nombre para el proyecto y seleccione **Aceptar**. 
 
 1. Después de unos minutos, Visual Studio muestra la estructura del proyecto en la ventana del **Explorador de soluciones** (1). El archivo de código predeterminado se abre en el editor (2). También aparece la ventana de propiedades (3), en la que se muestra información adicional sobre los elementos seleccionados en el Explorador de soluciones, incluida su ubicación exacta en el disco.
- 
+
     ![Explorador de soluciones con un proyecto de Python](media/vs-getting-started-python-02-windows.png)
- 
+
 1. Tómese su tiempo para familiarizarse con el Explorador de soluciones, que es donde examinará los archivos y las carpetas del proyecto.
-    
+
     ![El Explorador de soluciones expandido para mostrar diversas características](media/vs-getting-started-python-03-solution-explorer.png)
 
     (1) El proyecto está resaltado en negrita. Tiene el nombre que le ha asignado en el cuadro de diálogo Nuevo proyecto. En el disco, este proyecto estará representado mediante un archivo `.pyproj` en la carpeta del proyecto.
@@ -69,7 +70,7 @@ En este tutorial, empezará con un proyecto simple que contiene un único archiv
     (4) Bajo el proyecto también se encuentra el nodo **Entornos de Python**. Si lo expande, verá los intérpretes de Python disponibles. Expanda un nodo de intérprete para ver las bibliotecas que se instalan en ese entorno (5).
 
     Haga clic con el botón derecho en cualquier nodo o elemento del Explorador de soluciones para tener acceso a un menú con los comandos aplicables. Por ejemplo, el comando **Cambiar nombre** permite cambiar el nombre de un nodo o elemento, incluido el proyecto y la solución.
-    
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
@@ -77,7 +78,7 @@ En este tutorial, empezará con un proyecto simple que contiene un único archiv
 
 ## <a name="going-deeper"></a>Mayor profundización
 
-- [Python Projects in Visual Studio](python-projects.md) (Proyectos de Python en Visual Studio)
+- [Proyectos de Python en Visual Studio](python-projects.md).
 - [Obtenga información sobre el lenguaje Python en python.org](https://www.python.org)
 - [Python para principiantes](https://www.python.org/about/gettingstarted/) (python.org)
 - [Cursos gratuitos de Python en Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)

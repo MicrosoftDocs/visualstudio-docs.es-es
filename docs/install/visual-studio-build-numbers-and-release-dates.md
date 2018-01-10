@@ -5,22 +5,39 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/18/2017
+ms.date: 12/18/2017
 ms.topic: article
 helpviewer_keywords: 
 ms.technology: vs-acquisition
 ms.service: 
-ms.openlocfilehash: fff709bc75a4d9f9747c0fc47d5961fb2b00ec1c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 945b11869145d07c9defa8586876d02eccf098f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio 2017
 En la tabla siguiente se enumeran los números de compilación y las fechas de lanzamiento de Visual Studio 2017, hasta la fecha.
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.5.2 | Versión | 12/14/2017 | 15.5.27130.2010 |
+| 15.6.0 (versión preliminar 1.1) | Vista previa | 12/14/2017 | 15.6.27205.2004 |
+| 15.5.1 | Versión | 12/7/2017 | 15.5.27130.2003 |
+| 15.6.0 (versión preliminar 1.0) | Vista previa | 12/7/2017 | 15.6.27205.0 |
+| 15.0.7 | Versión | 12/6/2017 | 15.0.26228.18 |
+| 15.5 | Versión | 12/4/2017 | 15.5.27130.0 |
+| 15.5.0 (versión preliminar 5.0) | Vista previa | 11/30/2017 | 15.5.27128.1 |
+| 15.4.5 | Versión | 11/27/2017 | 15.4.27004.2010 |
+| 15.5.0 (versión preliminar 4.0) | Vista previa | 11/14/2017 | 15.5.27110.0 |
+| 15.4.4 | Versión | 11/14/2017 | 15.4.27004.2009 |
+| 15.0.6 | Versión | 11/14/2017 | 15.0.26228.17 |
+| 15.4.3 | Versión | 11/8/2017 | 15.4.27004.2008 |
+| 15.5.0 (versión preliminar 3.0) | Vista previa | 11/6/2017 | 15.5.27102.0 |
+| 15.4.2 | Versión | 10/31/2017 | 15.4.27004.2006 |
+| 15.5.0 (versión preliminar 2.0) | Vista previa | 10/23/2017 | 15.5.27019.1 |
+| 15.4.1 | Versión | 10/19/2017 | 15.4.27004.2005 |
 | 15.5 (versión preliminar 1) | Vista previa | 10/11/2017 | 15.0.27009.1 |
 | 15.4 | Versión | 10/9/2017 | 15.0.27004.20002 |
 | 15.4 (versión preliminar 6) | Vista previa | 10/9/2017| 15.0.27004.20002 |
@@ -37,7 +54,7 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 | 15.3.1 | Versión | 8/18/2017 | 15.0.26730.08 |
 | 15.3.1 (versión preliminar 1) | Vista previa | 8/18/2017 | 15.0.26730.08 |
 | 15.3.1  | Versión | 8/18/2017 | 15.0.26730.08 |
-| 15.4 (versión preliminar 1) | Vista previa | 8/22/2017 | no disponible |
+| 15.4 (versión preliminar 1) | Vista previa | 8/24/2017 | 15.4.26823.1 |
 | 15.3 | Versión | 8/14/2017 | 15.0.26730.3 |
 | 15.3 (versión preliminar 7.1) | Vista previa | 8/11/2017 | 15.0.26730.3 |
 | 15.3 (versión preliminar 7) | Vista previa | 8/1/2017 | 15.0.26730.0 |
@@ -78,7 +95,7 @@ En ocasiones, algo no sale según lo previsto. Si se produce un error en la inst
 Aquí tiene algunas opciones de soporte técnico más:
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
 * Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), hacer preguntas y encontrar respuestas.
+* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
 * También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también

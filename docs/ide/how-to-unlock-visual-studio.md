@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 230362695dd9f099c15eb1113e1eb121418b0c41
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-unlock-visual-studio"></a>Cómo desbloquear Visual Studio
 
@@ -68,9 +69,9 @@ Si no vuelve a escribirlas, el token empieza a quedar obsoleto y en el cuadro de
 
 ### <a name="update-expired-licenses"></a>Actualizar licencias caducadas
 
- Si su suscripción ha expirado por completo y ya no tiene derechos de acceso a Visual Studio, debe renovar su suscripción o añadir otra cuenta que tenga una suscripción. Para obtener más información sobre su licencia actual, vaya a **Archivo**, **Configuración de la cuenta** y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo. Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista **Todas las cuentas**, en el lado izquierdo del cuadro de diálogo. Para ello, seleccione el vínculo **Agregar una cuenta…**.
+ Si su suscripción ha expirado por completo y ya no tiene derechos de acceso a Visual Studio, debe renovar la suscripción o agregar otra cuenta que tenga una suscripción. Para obtener más información sobre su licencia actual, vaya a **Archivo**, **Configuración de la cuenta** y vea la información de licencia que aparece en el lado derecho del cuadro de diálogo. Si tiene otra suscripción asociada a una cuenta diferente, agregue esa cuenta a la lista **Todas las cuentas**, en el lado izquierdo del cuadro de diálogo. Para ello, seleccione el vínculo **Agregar una cuenta…**.
 
 ## <a name="see-also"></a>Vea también
 
-[Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)  
-[Recursos de Internet usados por Visual Studio](../ide/connected-environment.md)
+* [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)
+ 

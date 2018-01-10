@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: eb08ea4541bd32e9e28987b103272a87c7a223c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: d57ff0dcd89a9857f62371f81d65f7929aba18c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Introducción a Herramientas de R para Visual Studio
 
@@ -45,7 +46,7 @@ Una vez que Herramientas de R para Visual Studio (RTVS) esté instalado (vea [In
 > [!Note]
 > Puede usar la ventana **R interactivo** sin tener ningún proyecto abierto e incluso cuando se cargue un tipo de proyecto diferente. Solo tiene que seleccionar **Herramientas de R > Windows > R interactivo**  en cualquier momento.
 
-## <a name="explore-the-interactive-window-and-intellisense"></a>Explorar la ventana R interactivo e IntelliSense
+## <a name="explore-the-interactive-window-and-intellisense"></a>Explorar la ventana interactiva e IntelliSense
 
 1. Compruebe que la ventana R interactivo funciona escribiendo `3 + 4` y luego presionando Entrar para ver el resultado:
 

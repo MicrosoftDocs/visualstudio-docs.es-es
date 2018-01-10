@@ -1,5 +1,5 @@
 ---
-title: "Refactorización del código de Python en Visual Studio | Microsoft Docs"
+title: "Refactorización de código de Python en Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 07/12/2017
 ms.reviewer: 
@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-python-code"></a>Refactorización del código de Python
 
@@ -28,6 +29,7 @@ Visual Studio proporciona varios comandos para transformar y limpiar automática
 - [Quitar importaciones no usadas](#remove-imports): quita las importaciones no utilizadas.
 
 <a name="rename-variable"</a>
+
 ## <a name="rename"></a>Cambiar nombre
 
 1. Haga clic con el botón derecho en el identificador cuyo nombre desea cambiar y seleccione **Rename** (Cambiar nombre); o bien, coloque el símbolo de intercalación en ese identificador y seleccione el comando de menú **Edit > Refactor > Rename...** (Editar > Refactorizar > Cambiar nombre...) (F2).

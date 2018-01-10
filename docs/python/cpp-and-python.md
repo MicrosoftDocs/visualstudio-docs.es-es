@@ -1,7 +1,7 @@
 ---
 title: Trabajar con C++ y Python en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 09/28/2017
+ms.date: 1/2/20178
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: b7b83243d676c5393669eaa8faa8e8cc34ec2580
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -107,7 +108,7 @@ Para obtener más información, vea [Installing Python Support for Visual Studio
 
 1. Establezca las propiedades específicas tal y como se describen abajo y luego seleccione **Aceptar**.
 
-    | Tab | Propiedad | Valor | 
+    | Tab | Property | Valor | 
     | --- | --- | --- |
     | General | General > Nombre de destino | Establezca este campo de modo que coincida exactamente con el nombre del módulo tal como lo ve Python. |
     | | General > Extensión de destino | .pyd |
@@ -124,14 +125,14 @@ Para obtener más información, vea [Installing Python Support for Visual Studio
     > No establezca la opción **C/C++ > Generación de código > Biblioteca en tiempo de ejecución** en "DLL de depuración multiproceso (/MDd)" ni siquiera para una configuración de depuración. Seleccione el tiempo de ejecución de "DLL multiproceso (/MD)", ya que es con lo que se compilan los binarios de Python que no son de depuración. Si por accidente establece la opción /MDd, verá el error *C1189: Py_LIMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS, and Py_REF_DEBUG* (C1189: Py_LIMITED_API no es compatible con Py_DEBUG, Py_TRACE_REFS y Py_REF_DEBUG) al compilar una configuración de depuración del archivo DLL. Además, si quita `Py_LIMITED_API` para evitar el error de compilación, Python se bloqueará al intentar importar el módulo. (El bloqueo se produce en la llamada del archivo DLL a `PyModule_Create`, como se describe más adelante, con el mensaje de salida *Fatal Python error: PyThreadState_Get: no current thread* [Error irrecuperable Python: PyThreadState_Get: ningún subproceso actual]).
     >
     > Tenga en cuenta que la opción /MDd es lo que se usa para compilar los binarios de depuración de Python (como python_d.exe), pero si se selecciona para un archivo DLL de extensión también se producirá el error de compilación con `Py_LIMITED_API`.
-   
+
 1. Haga clic con el botón derecho en el proyecto de C++ y seleccione **Compilar** para probar sus configuraciones (de depuración y de lanzamiento). Los archivos `.pyd` están en la carpeta *solución* en **Depuración** y **Lanzamiento**, no en la carpeta del proyecto de C++.
 
 1. Agregue el código siguiente al archivo `.cpp` principal del proyecto de C++:
 
     ```cpp
     #include <Windows.h>
-    #include <cmath>    
+    #include <cmath>
 
     const double e = 2.7182818284590452353602874713527;
 
@@ -149,7 +150,6 @@ Para obtener más información, vea [Installing Python Support for Visual Studio
     ```
 
 1. Compile el proyecto de C++ para confirmar que el código es correcto.
-
 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>Convertir el proyecto de C++ a una extensión para Python
 
@@ -171,11 +171,12 @@ Para convertir el DLL de C++ en una extensión para Python, debe modificar los m
     }
     ```
 
-1. Agregue una estructura que defina la manera en que la función `tanh` de C++ se muestra en Python:
+1. Agregue una estructura que defina la manera en que la función `tanh_impl` de C++ se muestra en Python:
 
     ```cpp
     static PyMethodDef superfastcode_methods[] = {
-        // The first property is the name exposed to python, the second is the C++ function name        
+        // The first property is the name exposed to Python, fast_tanh, the second is the C++
+        // function name that contains the implementation.
         { "fast_tanh", (PyCFunction)tanh_impl, METH_O, nullptr },
 
         // Terminate the array with an object containing nulls.
@@ -183,22 +184,22 @@ Para convertir el DLL de C++ en una extensión para Python, debe modificar los m
     };
     ```
 
-1. Agregue una estructura que defina el módulo tal como lo ve a través del código de Python. (Los nombres de archivo internos del proyecto de C++, como module.cpp, no tienen importancia).
+1. Agregue una estructura que defina el módulo como quiere que se haga referencia a él en el código de Python, concretamente cuando se usa la instrucción `from...import`. En el ejemplo siguiente, el nombre de módulo "superfastcode" significa que puede usar `from superfastcode import fast_tanh` en Python, porque `fast_tanh` se define en `superfastcode_methods`. (Los nombres de archivo internos del proyecto de C++, como module.cpp, no tienen importancia).
 
     ```cpp
     static PyModuleDef superfastcode_module = {
         PyModuleDef_HEAD_INIT,
-        "superfastcode",                        // Module name as Python sees it
+        "superfastcode",                        // Module name to use with Python import statements
         "Provides some functions, but faster",  // Module description
         0,
-        superfastcode_methods                   // Structure that defines the methods
+        superfastcode_methods                   // Structure that defines the methods of the module
     };
     ```
 
 1. Agregue un método al que Python llame cuando cargue el módulo, con el nombre `PyInit_<module-name>`, donde *&lt;module_name&gt;* debe coincidir exactamente con la propiedad **General > Nombre de destino** del proyecto de C++ (es decir, coincide con el nombre del archivo `.pyd` compilado por el proyecto).
 
     ```cpp
-    PyMODINIT_FUNC PyInit_superfastcode() {    
+    PyMODINIT_FUNC PyInit_superfastcode() {
         return PyModule_Create(&superfastcode_module);
     }
     ```
@@ -229,12 +230,12 @@ En segundo lugar, puede instalar el módulo en el entorno global de Python, de m
     sfc_module = Extension('superfastcode', sources = ['module.cpp'])
 
     setup(name = 'superfastcode', version = '1.0',
-        description = 'Python Package with superfastcode C++ Extension',
+        description = 'Python Package with superfastcode C++ extension',
         ext_modules = [sfc_module]
         )
     ```
 
-    Vea [Building C and C++ Extensions](https://docs.python.org/3/extending/building.html) (Compilar extensiones de C y C++) en python.org para consultar la documentación de este script.
+    Vea [Building C and C++ Extensions](https://docs.python.org/3/extending/building.html) (Compilación de extensiones de C y C++) en python.org para obtener la documentación de este script.
 
 1. El código `setup.py` le indica a Python que debe compilar la extensión que usa el conjunto de herramientas de C++ de Visual Studio 2015 cuando se use desde la línea de comandos. Abra un símbolo del sistema con privilegios elevados, vaya a la carpeta que contiene el proyecto de C++ (y `setup.py`) y escriba el comando siguiente:
 
@@ -249,7 +250,7 @@ Después de haber completado cualquiera de los métodos anteriores, puede llamar
 1. Agregue las líneas siguientes en el archivo `.py` para llamar al método `fast_tanh` exportado desde el archivo DLL y mostrar el resultado. Si escribe la instrucción `from s` manualmente, verá que `superfastcode` aparece en la lista de finalización y, después de escribir `import`, aparecerá el método `fast_tanh`.
 
     ```python
-    from superfastcode import fast_tanh    
+    from superfastcode import fast_tanh
     test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
     ```
 

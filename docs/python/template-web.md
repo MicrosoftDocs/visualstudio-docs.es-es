@@ -1,5 +1,5 @@
 ---
-title: Plantilla de proyecto web para Python en Visual Studio | Microsoft Docs
+title: Plantillas de proyecto web para Python en Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,15 +12,16 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ba0106ad8a820556ed4c8f7aaed915f532f8c824
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 1215c075c1c38bb742f799948929d2f301750555
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="python-web-project-templates"></a>Plantillas de proyecto web de Python
 
-Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. También puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid.
+Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. También puede usar la plantilla **Proyecto web** genérica para otras plataformas como Pyramid.
 
 Visual Studio no incluye los marcos en sí mismos. Tendrá que instalar los marcos por separado haciendo clic con el botón derecho en el proyecto y seleccionando **Python > Install/upgrade framework... (Instalar o actualizar marco...)**.
 
@@ -36,7 +37,7 @@ Al crear un proyecto a partir de una plantilla específica del marco, aparece un
 
 Cuando implemente Microsoft Azure App Service, seleccione una versión de Python como una [extensión del sitio](https://aka.ms/PythonOnAppService) e instale los paquetes manualmente. Además, dado que Azure App Service **no** instala automáticamente los paquetes de un archivo `requirements.txt` cuando se implementa desde Visual Studio, siga los detalles de configuración que se encuentran en [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-Microsoft Azure Cloud Service *admite* el archivo `requirements.txt`. Consulte [Azure Cloud Service Projects](template-azure-cloud-service.md) (Proyectos de servicio en la nube de Azure) para detalles.
+Microsoft Azure Cloud Services *admite* el archivo `requirements.txt`. Vea [Proyectos de servicios en la nube de Azure](template-azure-cloud-service.md) para obtener más detalles.
 
 ## <a name="debugging"></a>Depuración
 
@@ -62,12 +63,12 @@ Cualquier propiedad de proyecto o variable de entorno se puede especificar con l
 > [!Note]
 > Los valores de **Run Server Command** (Comando de servidor de ejecución) se usan con el comando **Depurar > Start Server (Iniciar el servidor)** o Ctrl-F5; los valores del grupo **Debug Server Command** (Comando de servidor de depuración) se usan con el comando **Depurar > Start Debug Server (Iniciar servidor de depuración)** o F5.
 
-
 ### <a name="sample-bottle-configuration"></a>Configuración de Bottle de ejemplo
 
-La plantilla de proyecto web de Bottle incluye código reutilizable que realiza la configuración necesaria. Sin embargo, una aplicación de Bottle importada no puede incluir este código, en cuyo caso la siguiente configuración inicia la aplicación mediante el módulo `bottle` instalado:
+La plantilla **Proyecto web de Bottle** incluye código reutilizable que realiza la configuración necesaria. Sin embargo, una aplicación de Bottle importada no puede incluir este código, en cuyo caso la siguiente configuración inicia la aplicación mediante el módulo `bottle` instalado:
 
 - Grupo **Run Server Command** (Comando de servidor de ejecución):
+
     - **Comando**: `bottle` (módulo)
     - **Argumentos**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
@@ -79,9 +80,10 @@ La opción `--reload` no se recomienda cuando se usa Visual Studio para la depur
 
 ### <a name="sample-pyramid-configuration"></a>Configuración de Pyramid de ejemplo
 
-Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar utilizando la plantilla [From Existing Python Code](python-projects.md#creating-a-project-from-existing-files) (A partir de código Python existente). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
+Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar mediante la plantilla [Desde código de Python existente](python-projects.md#creating-a-project-from-existing-files). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
 
 - Grupo **Depurar**:
+
     - **Puerto del servidor**: 6543 (o lo que se configure en los archivos. ini)
 
 - Grupo **Run Server Command** (Comando de servidor de ejecución):
@@ -94,7 +96,6 @@ Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta d
 
 > [!Tip]
 > Es probable que necesite configurar la propiedad **Directorio de trabajo** del proyecto porque las aplicaciones de Pyramid normalmente se encuentran un nivel de directorio más abajo que la parte superior del árbol de origen.
-
 
 ### <a name="other-configurations"></a>Otras configuraciones
 
@@ -161,13 +162,13 @@ Los elementos disponibles incluyen:
 - Azure web.config (HttpPlatformHandler) (web.config de Azure (HttpPlatformHandler)): Agrega un archivo `web.config` para cuando la aplicación escucha en un socket para las conexiones entrantes.
 - Archivos estáticos de Azure web.config: si tiene uno de los archivos `web.config` anteriores, agregue el archivo a un subdirectorio para excluirlo del control de la aplicación.
 - Azure Remote debugging web.config (web.config de depuración remota de Azure): Agrega los archivos necesarios para la depuración remota a través de WebSockets.
-- Web Role Support Files (Archivos de soporte de rol web): Contiene los scripts de implementación predeterminados para roles web de servicio en la nube.
-- Worker Role Support Files (Archivos de soporte de rol de trabajo): Contiene los scripts de implementación e inicio predeterminados para roles de trabajo de servicio en la nube.
+- Archivos auxiliares de rol web: contiene los scripts de implementación predeterminados para roles web de servicio en la nube.
+- Archivos auxiliares de rol de trabajo: contiene los scripts de implementación e inicio predeterminados para roles de trabajo de servicio en la nube.
 
 Si agrega la plantilla `web.config` de depuración al proyecto y pretende usar la depuración remota de Python, necesita publicar el sitio en la configuración "Depurar". Esta configuración es independiente de la configuración de la solución activa actual y siempre tiene como valor predeterminado "Liberar". Para cambiarlo, abra la pestaña **Configuración** y use el cuadro combinado **Configuración** del asistente para publicación (consulte la [documentación de Azure](https://azure.microsoft.com/develop/python/) para más información sobre la creación e implementación en Azure Web Apps):
 
 ![Cambio de la configuración de publicación](media/template-web-publish-config.png)
 
-El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agrega un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Use el comando **Publicar** en el proyecto de nube para implementar en el servicio en la nube; el comando **Publicar** del proyecto de Python todavía se implementa en sitios web. Consulte [Azure Cloud Service Projects](template-azure-cloud-service.md) (Proyectos de servicio en la nube de Azure) para detalles.
+El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agrega un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Use el comando **Publicar** en el proyecto de nube para implementar en Cloud Services; con el comando **Publicar** del proyecto de Python se sigue implementando en sitios web. Vea [Proyectos de servicios en la nube de Azure](template-azure-cloud-service.md) para obtener más detalles.
 
-![Convertir en proyecto de servicio de nube de Microsoft Azure, comando](media/template-web-convert-menu.png)
+![Comando Convertir en un proyecto de servicio en la nube de Microsoft Azure](media/template-web-convert-menu.png)

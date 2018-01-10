@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 013c32cb1567b3a4830a5c63059b14ea23df5427
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Edición de código de R en Visual Studio
 
@@ -34,7 +35,7 @@ En este tema:
 
 Vea también los temas sobre [IntelliSense](code-intellisense.md), [linting](code-linting.md), [fragmentos de código](code-snippets.md) y [R Markdown](rmarkdown.md).
 
-## <a name="syntax-highlighting"></a>Resalte de sintaxis 
+## <a name="syntax-highlighting"></a>Resalte de sintaxis
 
 Además de colorear diferentes partes del código, como cadenas, comentarios y palabras clave, RTVS también resalta y permite vínculos en comentarios:
 
@@ -67,7 +68,7 @@ Las regiones de código contraíbles le permiten ocultar temporalmente parte del
 Para crear una región propia, rodee el código que quiera con comentarios que terminen con `---`. Los pequeños controles +/- a la izquierda del código permiten expandir y contraer las regiones:
 
 ![Creación de una región contraíble con comentarios](media/editing-collapsible-regions.gif)
- 
+
 De forma predeterminada, Visual Studio inserta espacios al presionar la tecla Tab. De nuevo, puede cambiar este comportamiento como se describe en [Opciones, Editor de texto, Todos los lenguajes](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Navegación por el código
@@ -126,7 +127,7 @@ Las opciones de las pestañas **General**, **Barras de desplazamiento** y **Pest
 
 Las opciones de la pestaña **R > Avanzadas** son específicas de RTVS:
 
-| Agrupar | Opción | Default | Descripción |
+| Agrupar | Opción | Default | Description |
 | --- | --- | --- | --- |
 | Formato | Formato automático | Activado | Cambia el formato del código a medida que escribe. No afecta a los comandos **Dar formato a la selección** ni **Dar formato al documento**. |
 | | Llaves expandidas | Desactivado | Coloca una { de apertura en una nueva línea. |

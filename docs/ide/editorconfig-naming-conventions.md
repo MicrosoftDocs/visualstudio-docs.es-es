@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: multiple
+ms.openlocfilehash: 5b6d7f0dc43ca11b6fee4b97d5422b863a7b89f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura para EditorConfig
 
@@ -43,7 +44,7 @@ Para describir el tipo de símbolos a los que se aplica la regla de nomenclatura
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-Los valores permitidos se enumeran a continuación y puede especificar varios valores si los separa con una coma.
+En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
 - \* (use este valor para especificar todos los símbolos)
 - clase
@@ -63,7 +64,7 @@ Para describir los niveles de accesibilidad de los símbolos a los que quiere ap
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-Los valores permitidos se enumeran a continuación y puede especificar varios valores si los separa con una coma.
+En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
 - \* (use este valor para especificar todos los niveles de accesibilidad)
 - public
@@ -81,16 +82,15 @@ Para describir los modificadores de los símbolos a los que quiere aplicar la re
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Los valores permitidos se enumeran a continuación y puede especificar varios valores si los separa con una coma.
+En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
-- \* (use este valor para especificar todos los modificadores)
 - abstract o must_inherit
 - async
 - const
 - readonly
 - static o shared
 
-Si se omite esta propiedad, la regla de nomenclatura se aplicará a todos los modificadores.
+`required_modifiers` es una propiedad opcional. Si se omite esta propiedad, la regla de nomenclatura se aplicará a todos los modificadores.
 
 ## <a name="style"></a>Estilo
 
@@ -145,7 +145,7 @@ En la tabla siguiente se muestran los valores de gravedad permitidos y lo que si
 
 Gravedad | Efecto
 ------------ | -------------
-Ninguno o silencioso | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente seguirá este estilo.
+Ninguno o silencioso | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente sigue este estilo.
 suggestion | Cuando no se sigue este estilo, se muestra al usuario como una sugerencia (como puntos debajo de los dos primeros caracteres). No tiene ningún efecto en tiempo de compilación.
 warning | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la lista de errores.
 error | Cuando no se sigue este estilo, se muestra un error del compilador en la lista de errores.
@@ -155,7 +155,7 @@ error | Cuando no se sigue este estilo, se muestra un error del compilador en la
 
 ## <a name="example"></a>Ejemplo
 
-A continuación se muestra un ejemplo de archivo .editorconfig que contiene una convención de nomenclatura que especifica que las propiedades, métodos, campos, eventos y delegados públicos deben escribirse en mayúsculas. Tenga en cuenta que esta convención de nomenclatura especifica varios tipos de símbolo a los que aplicar la regla, con una coma para separar los valores.
+El archivo .editorconfig de ejemplo siguiente contiene una convención de nomenclatura que especifica que las propiedades, métodos, campos, eventos y delegados públicos deben escribirse en mayúsculas. Tenga en cuenta que esta convención de nomenclatura especifica varios tipos de símbolo a los que aplicar la regla, con una coma para separar los valores.
 
 ```
 # Public members must be capitalized (public_members_must_be_capitalized)

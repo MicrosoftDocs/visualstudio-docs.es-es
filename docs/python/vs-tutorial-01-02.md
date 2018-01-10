@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d417ac531331b62b0f711fe155a94f1ac0954310
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 964ed265f4e2587a1bef4812797987c47d52fa80
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>Paso 2: Escritura y ejecución de código
 
@@ -41,14 +42,14 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
     ```
 
 1. Tenga en cuenta el color de la sintaxis que diferencia la instrucción `print` del argumento `"Hello Visual Studio"`. Además, elimine temporalmente el último `"` de la cadena y observe cómo Visual Studio mostrará un subrayado rojo para el código que contiene errores de sintaxis. Luego, vuelva a colocar `"` para corregir el código.
- 
+
     ![Color de la sintaxis de IntelliSense y resaltado de errores](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > Puesto que el entorno de desarrollo de cada uno es muy personal, Visual Studio ofrece un control completo de su apariencia y comportamiento. Seleccione el comando de menú **Herramientas > Opciones** y explore los valores de las fichas **Entorno** y **Editor de texto**. De forma predeterminada, solo verá un número limitado de opciones. Para ver todas las opciones de todos los lenguajes de programación, seleccione **Mostrar todas las configuraciones** en la parte inferior del cuadro de diálogo. 
 
 1. Ejecute el código que ha escrito hasta este punto pulsando Ctrl + F5 o seleccionando el elemento de menú **Depurar > Iniciar sin depurar**. Visual Studio le advierte si todavía hay errores en el código.
- 
+
 1. Al ejecutar el programa, aparece una ventana de consola que muestra los resultados, como si ejecutara un intérprete de Python con `PythonApplication1.py` desde la línea de comandos. Presione una tecla para cerrar la ventana y volver al editor de Visual Studio.
 
     ![Resultado de la primera ejecución del programa](media/vs-getting-started-python-07-output.png)
@@ -70,28 +71,26 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
 1. Para terminar, importe los miembros `sin`, `cos` y `radians`, con las finalizaciones automáticas disponibles para cada uno de ellos. Cuando haya terminado, el código debería aparecer como sigue:
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
-    > Las finalizaciones se activan con las subcadenas a medida que escribe, mostrando coincidencias con partes de palabras, letras al principio de las palabras e incluso caracteres omitidos. Vea [Editing Code - Completions](code-editing.md#completions) (Edición de código - Finalizaciones) para obtener información.
+    > Las finalizaciones se activan con las subcadenas a medida que escribe, mostrando coincidencias con partes de palabras, letras al principio de las palabras e incluso caracteres omitidos. Vea [Edición de código: finalizaciones](code-editing.md#completions) para obtener información.
 
 1. Agregue un poco más de código para imprimir los valores de coseno de 360 grados:
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. Vuelva a ejecutar el programa con Ctrl + F5 o **Depurar > Iniciar sin depurar**. Cuando haya terminado, cierre la ventana de salida.
 
-
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
 > [Uso de la ventana interactiva de REPL](vs-tutorial-01-03.md)
-
 
 ## <a name="going-deeper"></a>Mayor profundización
 

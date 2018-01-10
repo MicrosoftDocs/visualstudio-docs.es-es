@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -26,7 +27,7 @@ Para instalar la compatibilidad de Python para Visual Studio, siga las instrucci
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 y anterior](#visual-studio-2013-and-earlier)
 
-Para Visual Studio 2015 y versiones anteriores también es necesario instalar por separado un intérprete de Python de su elección (Python 3.5 y versiones anteriores; 3.6 no es compatible). Para obtener más información, consulte [Entornos de Python](python-environments.md). En la misma página también se incluyen instrucciones para agregar un intérprete de Python existente a Visual Studio 2017.
+Para Visual Studio 2015 y versiones anteriores también es necesario instalar por separado un intérprete de Python de su elección (Python 3.5 y versiones anteriores; 3.6 no es compatible). Para obtener más información, vea [Entornos de Python](python-environments.md). En la misma página también se incluyen instrucciones para agregar un intérprete de Python existente a Visual Studio 2017.
 
 Para probar rápidamente la compatibilidad de Python después de seguir los pasos de instalación, abra la ventana interactiva de Python; para ello, presione Alt-I y escriba `2+2`. Si no ve la salida de `4`, revise los pasos.
 
@@ -59,19 +60,18 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
     ![Opciones de desarrollo de Python en el instalador de Visual Studio](media/installation-python-options.png)
 
-    | Opción | Descripción | 
+    | Opción | Description | 
     | --- | --- |
     | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones). |
     | Compatibilidad con plantillas de Cookiecutter | Instala la interfaz gráfica de usuario Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](cookiecutter.md). |
     | Compatibilidad web con Python | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](template-web.md). |
     | Compatibilidad con IoT de Python | Admite el desarrollo de Windows IoT Core con Python. |
     | Herramientas de desarrollo nativo de Python | Instala el compilador de C++ y otros componentes necesarios para desarrollar extensiones nativas para Python. Vea [Creación de una extensión de C++ para Python](cpp-and-python.md). |
-    | Herramientas principales de Azure Cloud Services | Proporciona compatibilidad adicional para el desarrollador de Azure Cloud Services en Python. Vea [Proyectos de Azure Cloud Service](template-azure-cloud-service.md). |
+    | Herramientas principales de Azure Cloud Services | Proporciona compatibilidad adicional para el desarrollador de Azure Cloud Services en Python. Vea [Proyectos de servicio de nube de Azure](template-azure-cloud-service.md). |
 
 1. Después de la instalación, el instalador proporciona opciones para modificar, iniciar, reparar o desinstalar Visual Studio. El botón **Modificar** cambia a **Actualizar** cuando hay actualizaciones de Visual Studio disponibles para alguno de los componentes instalados. (Después, la opción Modificar está disponible en el menú desplegable). También puede iniciar Visual Studio y el instalador desde el menú Inicio de Windows mediante la búsqueda de "Visual Studio".
 
     ![Inicio, modificación o desinstalación de Visual Studio desde el instalador](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

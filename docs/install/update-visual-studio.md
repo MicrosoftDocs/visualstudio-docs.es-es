@@ -1,7 +1,7 @@
 ---
 title: Actualizar Visual Studio 2017 | Microsoft Docs
 description: "Obtenga información paso a paso sobre cómo actualizar Visual Studio."
-ms.date: 11/08/2017
+ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - update Visual Studio
 - change visual studio
 - changing Visual Studio
-ms.assetid: db005b65-d233-4471-b337-551fb3fa2464
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 472b14cc16c7dc8c3a0a9bb21ac7d64a858d0094
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Actualizar Visual Studio 2017 a la versión más reciente
 Actualizamos Visual Studio con frecuencia para ampliar sus funcionalidades y corregir los problemas que nos notifican los clientes. Para asegurarse de que tiene la [versión más actual y optimizada de Visual Studio](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history), deberá actualizarlo. Esta es la manera de hacerlo.
@@ -30,19 +30,35 @@ Actualizamos Visual Studio con frecuencia para ampliar sus funcionalidades y cor
 ## <a name="update-by-using-the-notifications-hub"></a>Actualizar mediante el centro de Notificaciones
 1. Cuando haya actualizaciones, verá una marca de notificación en Visual Studio.
 
-  ![Actualizar Visual Studio 2017 mediante el Hub de notificaciones](media/notification-flag.png "Marca de notificación en Visual Studio")
+  ![Actualizar Visual Studio 2017 mediante la Central de notificaciones](media/notification-flag.png "Marca de notificación de actualización en Visual Studio")
 
-  Haga clic o pulse en la marca de notificación para abrir el centro de **Notificaciones**.
+  Haga clic en la marca de notificación para abrir la Central de **notificaciones**.
 
   ![Actualizar Visual Studio 2017 mediante el centro de Notificaciones](media/notifications-hub.png "Centro de Notificaciones en Visual Studio")
 
-2. Haga clic o pulse en **"Visual Studio Update" is available** (La "Actualización de Visual Studio" está disponible) para abrir el cuadro de diálogo **Extensiones y actualizaciones**.
+2. Haga clic en **Está disponible la actualización de Visual Studio** para abrir el cuadro de diálogo **Extensiones y actualizaciones**.
 
   ![Actualizar Visual Studio 2017 mediante el Hub de notificaciones](media/notifications-hub-select.png "Hub de notificaciones en Visual Studio")
 
-3. En el cuadro de diálogo **Extensiones y actualizaciones**, haga clic o pulse el botón **Actualizar**.
+3. En el cuadro de diálogo **Extensiones y actualizaciones**, haga clic en el botón **Actualizar**.
 
   ![Actualizar Visual Studio 2017 mediante el Hub de notificaciones](media/notifications-extensions-and-updates.png "Cuadro de diálogo Extensiones y actualizaciones en Visual Studio")
+
+### <a name="more-about-visual-studio-notifications"></a>Más información sobre las notificaciones de Visual Studio
+
+Visual Studio le avisa cuando una actualización está disponible para Visual Studio o cualquier componente, y también cuando se producen determinados eventos en el entorno de Visual Studio.
+
+* Cuando la marca de notificación es de color amarillo, hay una actualización de producto de Visual Studio disponible para instalar.
+* Cuando la marca de notificación es de color rojo, hay un problema con la licencia.
+* Cuando la marca de notificación es de color negro, hay mensajes opcionales o informativos para revisar.
+
+Haga clic en la marca de notificaciones para abrir la Central de **notificaciones** y, después, elija las notificaciones sobre las que quiere actuar. O bien, puede optar por omitir o descartar una notificación.
+
+ ![Ver un mensaje informativo u opcional en la Central de notificaciones](media/notification-flag-optional.png "La marca de notificación de mensaje opcional o informativo en Visual Studio")
+
+Si elige ignorar una notificación, Visual Studio dejará de mostrarla. Si quiere restablecer la lista de notificaciones omitidas, haga clic en el botón **Configuración** en la Central de notificaciones.
+
+   ![Hacer clic en el botón Configuración en la Central de notificaciones para ver las opciones de notificación](media/vs-notifications-hub-settings-button.png "Hacer clic en el botón Configuración en la Central de notificaciones para ver las opciones de notificación")
 
 ## <a name="update-by-using-the-visual-studio-installer"></a>Actualizar mediante el instalador de Visual Studio
 1.  Abra el instalador. Es posible que deba actualizar el instalador antes de continuar. Si es así, se le pedirá que lo haga.
@@ -53,7 +69,7 @@ Actualizamos Visual Studio con frecuencia para ampliar sus funcionalidades y cor
 
 3.  Si hay alguna actualización disponible, verá el botón **Actualizar**. (El instalador podría tardar unos segundos en determinar si hay alguna actualización disponible).
 
-  Haga clic o pulse en el botón **Actualizar** para instalar las actualizaciones.
+  Haga clic en el botón **Actualizar** para instalar las actualizaciones.
 
      ![Actualizar Visual Studio 2017 mediante el instalador de Visual Studio](media/update-visual-studio.png "Actualizar Visual Studio 2017 mediante el instalador de Visual Studio")
 
@@ -70,4 +86,4 @@ Aquí tiene algunas opciones de soporte técnico más:
 * [Instalación de Visual Studio 2017](install-visual-studio.md)
 * [Modificación de Visual Studio 2017](modify-visual-studio.md)
 * [Desinstalación de Visual Studio 2017](uninstall-visual-studio.md)
-* [Guía del administrador de Visual Studio 2017](visual-studio-administrator-guide.md)
+* [Guía de administradores de Visual Studio](visual-studio-administrator-guide.md)

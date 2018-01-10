@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ac891c48a4d3d2276fa925dd6092d1bf1d72176d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 0844526b7c5dbc0955bc9cafff6f63121b9d7182
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 
@@ -36,7 +37,7 @@ Trabajar con Cookiecutter es un proceso que implica explorar y seleccionar una p
 
 La página de inicio de Cookiecutter muestra una lista de plantillas para elegir, organizada en los siguientes grupos:
 
-| Agrupar | Descripción | 
+| Agrupar | Description | 
 | --- | --- |
 | Instalado | Plantillas que se han instalado en la máquina local. Cuando se usa una plantilla en línea, su repositorio se clona automáticamente en una subcarpeta de `~/.cookiecutters`. Puede eliminar una plantilla instalada seleccionada presionando **Supr**. |
 | Se recomienda | Plantillas cargadas desde la fuente recomendada. Microsoft mantiene la fuente predeterminada. Consulte [Opciones de Cookiecutter](#cookiecutter-options) a continuación para más información sobre cómo personalizar la fuente. |
@@ -80,7 +81,7 @@ Las opciones de Cookiecutter están disponibles en **Tools > Options > Cookiecut
 
 ![Opciones de Cookiecutter](media/cookiecutter-tools-options.png)
 
-| Opción | Descripción |
+| Opción | Description |
 | --- | --- |
 | Recommended Feed URL (URL de fuente recomendada) | La ubicación de la fuente de plantillas recomendadas. Puede ser una dirección URL o una ruta de acceso a un archivo local. Deje en blanco la dirección URL para usar la fuente protegida por Microsoft predeterminada. La fuente proporciona una sencilla lista de ubicaciones de plantillas, separadas por nuevas líneas. Para solicitar cambios en la fuente protegida, realice una solicitud de extracción contra [el origen de GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
 | Show Help (Mostrar ayuda) | Controla la visibilidad de la barra de información de ayuda en la parte superior de la ventana de Cookiecutter. |
@@ -96,10 +97,10 @@ La representación predeterminada de variables de plantilla depende del tipo de 
 
 Se pueden realizar mejoras adicionales en esta representación mediante la especificación de metadatos adicionales en el archivo `cookiecutter.json` que es específico de Visual Studio (y la CLI de Cookiecutter lo omite). Todas las propiedades son opcionales:
 
-| Propiedad | Descripción |
+| Property | Description |
 | --- | --- |
 | Etiqueta | Especifica lo que aparece encima del editor para la variable, en lugar del nombre de la variable. |
-| Descripción | Especifica la información sobre herramientas que aparece en el control de edición, en lugar del valor predeterminado de esa variable. |
+| Description | Especifica la información sobre herramientas que aparece en el control de edición, en lugar del valor predeterminado de esa variable. |
 | Dirección URL | Transforma la etiqueta en un hipervínculo, con una información sobre herramientas que muestra la URL. Al hacer clic en el hipervínculo se abrirá el explorador predeterminado del usuario con esa URL. |
 | Selector | Permite la personalización del editor de una variable. Actualmente se admiten los siguientes selectores:<ul><li>`string`: cuadro de texto estándar, de forma predeterminada para las cadenas.</li><li>`list`: cuadro combinado estándar, de forma predeterminada para las listas.</li><li>`yesno`: cuadro combinado elegir entre `y` y `n`, para las cadenas.</li><li>`odbcConnection`: cuadro de texto con un botón "..." que hace que muestra cuadro de diálogo de conexión de base de datos.</li></ul> |
 

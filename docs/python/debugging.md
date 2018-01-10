@@ -12,13 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8d17c0a3a1d376f7b44e5fb78f362fc49458462e
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="debugging-your-python-code"></a>Depuración del código Python
+# <a name="debugging-your-python-code"></a>Depuración del código de Python
 
 Visual Studio proporciona una experiencia de depuración completa para Python, lo que incluye la asociación a procesos en ejecución, la evaluación de expresiones en las ventanas Inspección e Inmediato, la inspección de variables locales, los puntos de interrupción, las instrucciones de depuración paso a paso por instrucciones/salir de la depuración/depuración paso a paso procedimiento, la opción Establecer la instrucción siguiente y otras muchas características. 
 
@@ -42,9 +43,9 @@ Vea también los siguientes temas de depuración específicos para distintos esc
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python en Visual Studio admite la depuración sin un proyecto. Con un archivo independiente de Python abierto, haga clic con el botón derecho en el editor y seleccione **Iniciar con depuración**. Visual Studio lanzará el script con el entorno predeterminado global (consulte [Entornos de Python](python-environments.md)) y sin argumentos. Pero desde ese momento, dispone de compatibilidad total para depuración.
+> Python en Visual Studio admite la depuración sin un proyecto. Con un archivo independiente de Python abierto, haga clic con el botón derecho en el editor y seleccione **Iniciar con depuración**. Visual Studio inicia el script con el entorno predeterminado global (vea [Entornos de Python](python-environments.md)) y sin argumentos. Pero desde ese momento, dispone de compatibilidad total para depuración.
 >
-> Para controlar el entorno y los argumentos, cree fácilmente un proyecto para el código con la plantilla [Desde código de Python existente](python-projects.md#creating-a-project-from-existing-files).
+> Para controlar el entorno y los argumentos, cree un proyecto para el código de manera sencilla con la plantilla de proyecto [Desde código de Python existente](python-projects.md#creating-a-project-from-existing-files).
 
 <a name="debugging-with-a-project"></a>
 
@@ -55,7 +56,7 @@ El flujo de trabajo de depuración básica conlleva configurar puntos de interru
 Puede iniciar una sesión de depuración con el comando **Depurar > Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla F5. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el Explorador de soluciones) con el entorno del proyecto activo y los argumentos de línea de comandos o las rutas de búsqueda que se han especificado en las propiedades del proyecto (vea [Opciones de depuración de proyectos](#project-debugging-options)). Pero si por alguna razón no tiene un archivo de inicio configurado, una ventana de salida de Python aparece brevemente y luego desaparece. En este caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
 
 > [!Note]
-> El depurador siempre se inicia con el entorno de Python activo para el proyecto. Para cambiar de entorno, active otro distinto como se describe en [Python Environments](python-environments.md) (Entornos de Python).
+> El depurador siempre se inicia con el entorno de Python activo para el proyecto. Para cambiar de entorno, active otro distinto como se describe en [Entornos de Python](python-environments.md).
 
 ### <a name="breakpoints"></a>Puntos de interrupción
 
@@ -78,7 +79,7 @@ Al definir las condiciones, también puede completar el campo **Acción** y crea
 
 Una vez detenido en un punto de interrupción, hay varias maneras de recorrer el código paso a paso o de ejecutar bloques de código antes de que se produzca una nueva interrupción. Estos comandos están disponibles en varios lugares, como la barra de herramientas de depuración de la parte superior, el menú **Depurar**, en el menú contextual del Editor de código y a través de métodos abreviados de teclado (no todos los comandos están en todos los lugares):
 
-| Característica | Pulsación de tecla | Descripción |
+| Característica | Pulsación de tecla | Description |
 | --- | --- | --- |
 | Continuar | F5 | Ejecuta código hasta que se alcanza el punto de interrupción siguiente. |
 | Paso a paso por instrucciones | F11 | Ejecuta la instrucción siguiente y se detiene. Si la siguiente instrucción es una llamada a una función, el depurador se detiene en la primera línea de la función que se va a invocar. |
@@ -144,7 +145,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 
 ### <a name="launch-mode-options"></a>Opciones de Modo de inicio
 
-| Opción | Descripción |
+| Opción | Description |
 | --- | --- |
 | Selector de Python estándar | Utiliza código de depuración escrito en Portable Python que es compatible con CPython, IronPython y variantes, como Stackless Python. Proporciona la mejor experiencia de depuración de código Python puro. Al realizar una asociación a un proceso `python.exe` en ejecución, se utiliza este selector. Este selector también proporciona [depuración en modo mixto](debugging-mixed-mode.md) para CPython, que permite cambiar sin problemas entre los códigos C/C++ y Python. |
 | Selector web | Inicia el explorador predeterminado para la selección y habilita la depuración de plantillas. Vea la sección de [depuración de plantillas web](template-web.md#debugging) para obtener más información. |
@@ -153,7 +154,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opciones de ejecución (rutas de búsqueda, argumentos de inicio y variables de entorno)
 
-| Opción | Descripción |
+| Opción | Description |
 | --- | --- |
 | Rutas de búsqueda | Estos valores coinciden con lo que se muestra en el nodo Rutas de búsqueda del proyecto en el Explorador de soluciones. Puede modificar este valor aquí, pero es más fácil usar el Explorador de soluciones, ya que permite examinar carpetas y convierte automáticamente las rutas de acceso en un formato relativo. |
 | Argumentos de script | Estos argumentos se agregan al comando que se ha usado para iniciar el script, y aparecen después del nombre de archivo del script. El primer elemento aquí está disponible para el script como `sys.argv[1]`, el segundo como `sys.argv[2]`, y así sucesivamente. |
@@ -174,7 +175,7 @@ La ventana interactiva de depuración de Python (**Depurar > Ventanas > Depuraci
 
 La ventana Depuración interactiva admite metacomandos especiales además de los [comandos estándar de REPL](interactive-repl.md#meta-commands):
 
-| Comando | Argumentos | Descripción |
+| Comando | Argumentos | Description |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | Inicia la ejecución del programa a partir de la instrucción actual. |
 | `$down`, `$d` | Baja el marco actual un nivel en el seguimiento de la pila. |

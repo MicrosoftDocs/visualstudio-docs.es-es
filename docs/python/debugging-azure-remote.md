@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: c9ac484d90d7c80cbff0e20f33ede099b36c9786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Depuración remota de código de Python en Azure
 
@@ -28,7 +29,7 @@ Dado que la depuración remota de Azure usa sockets web, los sockets deben estar
 
 Una vez que el proyecto está implementado correctamente y están habilitados los sockets web, puede asociarlo a App Service desde el **Explorador de servidores** en Visual Studio (**Ver > Explorador de servidores**). Busque el sitio en **Azure > App Service** y el grupo de recursos aplicables, haga clic con el botón derecho y seleccione **Asociar depurador (Python)**. (El comando **Asociar depurador** es para aplicaciones .NET que se ejecutan bajo IIS y solo resulta útil si se hospedan de forma conjunta código .NET y la aplicación de Python).
 
-Visual Studio puede llevarle directamente a un conjunto de instrucciones para asociarlo directamente, como se describe a continuación en [Asociación sin el Explorador de servidores](#attaching-without-server-explorer). Si no ve el comando **Asociar depurador (Python)** o Visual Studio no puede asociarlo a su sitio, consulte [Solución de problemas de depuración remota de Azure](debugging-azure-remote-troubleshooting.md).
+Visual Studio puede llevarle directamente a un conjunto de instrucciones para asociarlo directamente, como se describe a continuación en [Asociación sin el Explorador de servidores](#attaching-without-server-explorer). Si no ve el comando **Asociar depurador (Python)** o Visual Studio no puede adjuntarlo al sitio, vea [Solución de problemas de depuración remota de Azure](debugging-azure-remote-troubleshooting.md).
 
 Si la conexión se realiza correctamente, Visual Studio cambiará a la vista de depurador. La barra de herramientas indica el proceso que se está depurando, como un URI de `wss://`:
 

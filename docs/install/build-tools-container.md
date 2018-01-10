@@ -11,11 +11,12 @@ ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
 ms.author: heaths
 manager: ghogen
-ms.openlocfilehash: f7a85581023e100f5b69d1250711d0746540fe5c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 95f9c69ebca7dbdc7e576279b4e1ad3f17d2be25
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Build Tools en un contenedor
 
@@ -195,3 +196,4 @@ Aquí tiene algunas opciones de soporte técnico más:
 
 * [Ejemplo avanzado de contenedores](advanced-build-tools-container.md)
 * [Problemas conocidos de contenedores](build-tools-container-issues.md)
+* [Identificadores de componentes y cargas de trabajo de Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)

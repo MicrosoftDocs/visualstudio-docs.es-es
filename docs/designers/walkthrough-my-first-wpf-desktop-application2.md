@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Tutorial: Mi primera aplicación de escritorio WPF
 Este tutorial proporciona una introducción al desarrollo en Windows Presentation Foundation (WPF). Podrá crear una aplicación básica que incluya los elementos que son comunes a la mayoría de las aplicaciones de escritorio WPF: marcado XAML, código subyacente, definiciones de aplicación, controles, diseño, enlace de datos y estilos.  
@@ -268,7 +269,7 @@ En esta sección, creará la infraestructura de la aplicación, que incluye el p
   
 1.  Elija la siguiente imagen y guárdela como `watermark.png`.  
   
-     ![Marca de agua de tutorial](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Imagen de marca de agua para el tutorial](../designers/media/wpf_watermark.png "Marca de agua")  
   
     > [!NOTE]
     >  O bien, puede crear su propia imagen y guardarla como `watermark.png`.  
