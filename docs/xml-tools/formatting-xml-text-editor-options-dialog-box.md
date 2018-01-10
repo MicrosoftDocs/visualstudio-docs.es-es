@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5c15327837dbcd2fb1fe795a1e9891451df22e4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a4d6de24a75b5a08820878bc74633c02ab4118f
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formato, XML, Editor de texto, Cuadro de diálogo Opciones
 Este cuadro de diálogo permite especificar las opciones de formato del Editor XML. Puede tener acceso a la **opciones** cuadro de diálogo desde el **herramientas** menú.  
@@ -35,12 +35,12 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
  **Alinear los atributos en su propia línea**  
  Alinea el segundo atributo y los posteriores en vertical para que coincidan con la sangría del primer atributo. La siguiente prueba XML es un ejemplo de cómo se alinearían los atributos.  
   
-```  
+```xml
 <item id = "123-A"  
       name = "hammer"  
       price = "9.95">  
 </item>  
-```  
+```
   
 ## <a name="auto-reformat"></a>Formatear automáticamente  
  **Al pegar desde el Portapapeles**  
@@ -55,12 +55,12 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
   
  Si un elemento contiene una mezcla de texto y marcado, se considera que el contenido es mixto. A continuación se muestra un ejemplo de un elemento con contenido mixto.  
   
-```  
+```xml
 <dir>c:\data\AlphaProject\  
   <file readOnly="false">test1.txt</file>  
   <file readOnly="false">test2.txt</file>  
 </dir>  
-```  
+```
   
 ## <a name="see-also"></a>Vea también  
  [Propiedades del documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)   

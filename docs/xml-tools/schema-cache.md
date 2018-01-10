@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="schema-cache"></a>Caché de esquema
 El Editor XML proporciona una caché de esquema que está ubicada en el directorio %InstallRoot%\Xml\Schemas. La caché de esquema es global para todos los usuarios de un equipo e incluye esquemas XML estándar que se utilizan en IntelliSense y en la validación de documentos XML.  
@@ -54,13 +54,13 @@ El Editor XML proporciona una caché de esquema que está ubicada en el director
   
  El Editor XML también admite un número cualquiera de archivos de catálogo de esquema en el directorio de la caché de esquema. Los catálogos de esquema pueden apuntar a otras ubicaciones de esquemas que desea que el editor siempre conozca. El archivo catalog.xsd define el formato del archivo de catálogo y se incluye en el directorio de la caché de esquema. El archivo catalog.xml es el catálogo predeterminado y contiene vínculos a otros esquemas del directorio %InstallDir%. Éste es un muestreo del archivo catalog.xml:  
   
-```  
+```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">  
   <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>  
 </SchemaCatalog>  
-```  
+```
   
  El atributo `href` puede ser cualquier ruta de acceso de archivo o dirección URL http que apunte al esquema. La ruta de acceso del archivo puede ser relativa al documento de catálogo. El editor reconoce las siguientes variables, delimitadas por %%, que se expandirán en la ruta de acceso:  
   
@@ -82,25 +82,25 @@ El Editor XML proporciona una caché de esquema que está ubicada en el director
   
 El documento de catálogo puede incluir un elemento `Catalog`, que apunta a otros catálogos. Puede utilizar el elemento `Catalog` para apuntar a un catálogo central que comparte su equipo o empresa, o a un catálogo en línea que comparten sus asociados de negocios. El atributo `href` es la ruta de acceso de archivo o la dirección URL http de los otros catálogos. A continuación se muestra un ejemplo del elemento `Catalog`:  
   
-```  
+```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
-```  
+```
   
  El catálogo también puede controlar el modo en que los esquemas se asocian con documentos XML mediante el elemento especial `Association`. Este elemento asocia esquemas que carecen de un espacio de nombres de destino con una extensión de archivo determinada, lo cual puede ser de utilidad dado que el Editor XML no realiza ninguna asociación automática de esquemas que no tienen un atributo `targetNamespace`. En el siguiente ejemplo el elemento `Association` asocia el esquema dotNetConfig con todos los archivos que tienen la extensión "config":  
   
-```  
+```xml
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>  
-```  
+```
   
 ## <a name="localized-schemas"></a>Esquemas traducidos  
  En muchos casos, el archivo catalog.xml no contiene entradas para los esquemas traducidos. Puede agregar entradas adicionales al archivo catalog.xml que apunten al directorio de esquemas traducidos.  
   
  En el siguiente ejemplo, se crea un nuevo elemento `Schema` y usa la variable %LCID% para apuntar al esquema traducido.  
   
-```  
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"  
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>  
-```  
+```
   
 ## <a name="changing-the-location-of-the-schema-cache"></a>Cambio de la ubicación de la caché de esquema  
  Puede personalizar la ubicación de la caché de esquema mediante el **varios** página de opciones. Si dispone de un directorio de esquemas favoritos, se puede configurar el editor para que en su lugar utilice esos esquemas.  

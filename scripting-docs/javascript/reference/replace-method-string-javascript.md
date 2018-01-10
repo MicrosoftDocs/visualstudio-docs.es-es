@@ -21,31 +21,31 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e78e17d4b9060a3a52498109a744c13cdf972abb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 82894a5d7f92c8231a6ba3a1948369fb2c819a6d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="replace-method-string-javascript"></a>replace (Método, String de JavaScript)
-Reemplaza el texto de una cadena mediante una expresión regular o una cadena de búsqueda.  
+Reemplaza el texto de una cadena, usando una expresión regular o una cadena de búsqueda.  
   
 ## <a name="syntax"></a>Sintaxis  
   
 ```  
   
-stringObj. replace(rgExp, replaceText)  
+stringObj.replace(rgExp, replaceText)  
 ```  
   
 ## <a name="parameters"></a>Parámetros  
  `stringObj`  
- Obligatorio. Objeto `String` o literal de cadena donde se realizará el reemplazo. Esta cadena no es modificada por la **reemplazar** método. En su lugar, el valor devuelto de este método es la cadena generada por el reemplazo.  
+ Requerido. Objeto `String` o literal de cadena donde se realizará el reemplazo. Esta cadena no es modificada por la **reemplazar** método. En su lugar, el valor devuelto de este método es la cadena generada por el reemplazo.  
   
  `rgExp`  
- Obligatorio. Una instancia de un **expresión Regular** objeto que contiene el patrón de expresión regular y las marcas aplicables. También puede ser un objeto `String` o un literal de cadena que represente la expresión regular. Si `rgExp` no es una instancia de un **expresión Regular** objeto, se convierte en una cadena y se realizará una búsqueda exacta de los resultados; se realiza ningún intento para convertir la cadena en una expresión regular.  
+ Requerido. Una instancia de un **expresión Regular** objeto que contiene el patrón de expresión regular y las marcas aplicables. También puede ser un objeto `String` o un literal de cadena que represente la expresión regular. Si `rgExp` no es una instancia de un **expresión Regular** objeto, se convierte en una cadena y se realizará una búsqueda exacta de los resultados; se realiza ningún intento para convertir la cadena en una expresión regular.  
   
  `replaceText`  
- Obligatorio. Objeto `String` o literal de cadena que contiene el texto para reemplazar en cada coincidencia correcta de `rgExp` en `stringObj`. En [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] o posterior, el argumento `replaceText` también puede ser una función que devuelva el texto de reemplazo.  
+ Requerido. Objeto `String` o literal de cadena que contiene el texto para reemplazar en cada coincidencia correcta de `rgExp` en `stringObj`. En [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] o versiones posteriores, el argumento `replaceText` también puede ser una función que devuelve el texto de reemplazo.  
   
 ## <a name="return-value"></a>Valor devuelto  
  El resultado de la **reemplazar** método es una copia de `stringObj` una vez realizados los reemplazos especificados.  
@@ -89,7 +89,7 @@ var re = /(\S+)(\s+)(\S+)/g;
 var result = s.replace(re, "$3$2$1");  
 document.write(result);  
   
-// Output:  quick The fox brown over jumps lazy the dog.  
+// Output:  quick The fox brown over jumped lazy the dog.  
 ```  
   
  En el ejemplo siguiente, que funciona en [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] y versiones posteriores, se muestra cómo usar una función que devuelve el texto de reemplazo. Reemplaza cualquier instancia de un número seguido de “F” con una conversión a Celsius.  

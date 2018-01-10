@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) para ir a puntos concretos de la ejecución de la aplicación. Este archivo puede contener eventos de rendimiento, excepciones, subprocesos, pasos de prueba, módulos y otra información del sistema que IntelliTrace recopila mientras se ejecuta la aplicación.  
@@ -39,7 +39,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
     |**Origen**|**Vea**|  
     |----------------|-------------|  
     |Una sesión IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Professional o Community).|[Características de IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Una sesión de prueba en Microsoft Test Manager. Se asociará un archivo .iTrace a un elemento de trabajo de Team Foundation Server.|[Recopilar más datos de diagnóstico en las pruebas manuales](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+    |Una sesión de prueba en Microsoft Test Manager. Se asociará un archivo .iTrace a un elemento de trabajo de Team Foundation Server.|[Recopilar más datos de diagnóstico en las pruebas manuales](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent, solo o con System Center 2012 R2 Operations Manager, para las aplicaciones web ASP.NET y las aplicaciones de SharePoint que se ejecutan en la implementación|-   [Diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novedades de System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> ¿Qué desea hacer?  
@@ -266,7 +266,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
  [Características de IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Recopilar más datos de diagnóstico en las pruebas manuales](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)  
+ [Recopilar más datos de diagnóstico en las pruebas manuales](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

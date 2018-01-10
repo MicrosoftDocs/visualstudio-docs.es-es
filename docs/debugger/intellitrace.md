@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTrace para registrar y realizar un seguimiento del historial de ejecución del código. Los errores se detectan fácilmente ya que IntelliTrace le permite:  
@@ -47,7 +47,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
 |||  
 |-|-|  
 |**Depurar la aplicación con IntelliTrace:**<br /><br /> -Mostrar eventos pasados.<br />-Mostrar mi información de llamadas con eventos pasados.<br />-Guardar mi sesión de IntelliTrace.<br />-Controlar los datos que IntelliTrace recopila.|-   [Tutorial: Usar IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Características de IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Depuración histórica](../debugger/historical-debugging.md)<br />-   [Ver las instantáneas mediante la devolución de paso de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Recopilar datos de IntelliTrace durante una sesión de prueba en Test Manager**|-   [Recopilar más datos de diagnóstico en las pruebas manuales](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Recopilar datos de IntelliTrace durante una sesión de prueba en Test Manager**|-   [Recopilar más datos de diagnóstico en las pruebas manuales](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Recopilar datos de IntelliTrace de aplicaciones implementadas**|-   [Usar el recopilador independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Iniciar la depuración desde un archivo de registro de IntelliTrace (archivo. iTrace).**|-   [Uso de los datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
 -   La aplicación se bloquea en un equipo de prueba pero se ejecuta correctamente en un equipo de desarrollo.  
   
-     Puede recopilar datos de IntelliTrace desde Microsoft Test Manager, guardar los datos en un archivo .iTrace y adjuntar este archivo a un elemento de trabajo de Team Foundation Server para analizarlo más adelante. Vea [recopilar más datos de diagnóstico en las pruebas manuales](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) y [uso guarda los datos de IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
+     Puede recopilar datos de IntelliTrace desde Microsoft Test Manager, guardar los datos en un archivo .iTrace y adjuntar este archivo a un elemento de trabajo de Team Foundation Server para analizarlo más adelante. Vea [recopilar más datos de diagnóstico en las pruebas manuales](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) y [uso guarda los datos de IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   
 -   Se produce un error o un bloqueo en una aplicación implementada.  
   
@@ -180,8 +180,6 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
   
 ## <a name="in-this-section"></a>En esta sección  
  [Características de IntelliTrace](../debugger/intellitrace-features.md)  
-  
- [Incluir datos de seguimiento de diagnóstico con errores que son difíciles de reproducir](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Diagnosis de problemas tras la implementación](../debugger/diagnose-problems-after-deployment.md)  
   
