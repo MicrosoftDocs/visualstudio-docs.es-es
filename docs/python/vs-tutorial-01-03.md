@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 0124133b230da01c6e7194849466c57d86592cbd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Paso 3: uso de la ventana interactiva de REPL
 
@@ -32,7 +32,7 @@ La *ventana interactiva* de Visual Studio para Python proporciona una experienci
     ![Ventana interactiva de Python y arrastre para cambiar el tamaño](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Puede cambiar el tamaño de todas las ventanas en Visual Studio si arrastra los separadores de los bordes. También puede arrastrar las ventanas independientemente del marco de Visual Studio y reorganizarlas como prefiera dentro del marco. Para más información, vea <a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">Personalizar los diseños de ventana</a>.
+    > Puede cambiar el tamaño de todas las ventanas en Visual Studio si arrastra los separadores de los bordes. También puede arrastrar las ventanas independientemente del marco de Visual Studio y reorganizarlas como prefiera dentro del marco. Para más información, vea [Personalizar los diseños de ventana](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Escriba algunas instrucciones (como `print("Hello, Visual Studio")`) y expresiones (como `123/456`) para ver los resultados inmediatos:
 
