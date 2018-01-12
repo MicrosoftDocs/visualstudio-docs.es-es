@@ -1,10 +1,10 @@
-- name: Documentos
+- name: Docs
   tocHref: /
   topicHref: /
   items:
     - name: Visual Studio
       tocHref: /visualstudio/
-      topicHref: /visualstudio/index
+      topicHref: /visualstudio/ide/
       items:
         - name: Calidad del código
           tocHref: /visualstudio/code-quality/
