@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones UWP desde Visual Studio
 ![Solo se aplica a Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 En un dispositivo remoto de Windows 10, debe habilitar [modo de programador](/windows/uwp/get-started/enable-your-device-for-development). En dispositivos Windows 10 que ejecutan la actualización del creador o versiones posteriores, las herramientas remotas se instalan automáticamente al implementar la aplicación. Para obtener más información, consulte [depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> En Windows 8.1 y versiones de actualización del creador anterior de Windows 10, las herramientas remotas de Visual Studio debe instalarse en el dispositivo remoto y el depurador remoto debe estar ejecutándose. En Windows 8.1, también debe instalar una licencia de desarrollador.
+> En Windows 8.1 y versiones de actualización del creador anterior de Windows 10, las herramientas remotas para Visual Studio debe instalarse en el dispositivo remoto y el depurador remoto debe estar ejecutándose. En Windows 8.1, también debe instalar una licencia de desarrollador.
   
 En la implementación se usa el canal de la red del depurador remoto para enviar los archivos de aplicación al dispositivo remoto.  
   
@@ -101,7 +101,7 @@ En la implementación se usa el canal de la red del depurador remoto para enviar
  Puede establecer las siguientes opciones de implementación en la página de propiedades de depuración del proyecto de inicio.  
   
  **Permitir bucle invertido de red**  
- Por razones de seguridad, una aplicación de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] instalada de forma estándar, no puede realizar llamadas de red al dispositivo en el que está instalada. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar su aplicación a la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], debe probarla sin la exención.  
+ Por motivos de seguridad, un UWP o [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] no se permiten realizar llamadas de red para el dispositivo está instalado en las aplicaciones instaladas en la manera estándar. De forma predeterminada, la implementación de Visual Studio crea una exención respecto a esta regla para la aplicación implementada. Esta exención te permite probar procedimientos de comunicación en un mismo equipo. Antes de enviar su aplicación a la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], debe probarla sin la exención.  
   
  Para quitar la exención de bucle invertido de red en la aplicación:  
   

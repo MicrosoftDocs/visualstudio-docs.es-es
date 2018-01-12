@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, prerequisites
 - SharePoint development in Visual Studio, requirements
-ms.assetid: ae8ff69d-4540-4380-ab0b-845f7108e89c
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a32ceee7609fca96f27388839415ec5ac4d219de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cfca7b1f5e10b1591c2dd44e3e72f31acedf9b92
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="requirements-for-developing-sharepoint-solutions"></a>Requisitos para desarrollar soluciones de SharePoint
   Debe instalar en el sistema los requisitos previos siguientes para poder utilizar las herramientas de desarrollo de las soluciones de SharePoint incluidas en Visual Studio:  
