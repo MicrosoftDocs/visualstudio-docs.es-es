@@ -14,17 +14,15 @@ helpviewer_keywords:
 - <entryPointsCollection> element
 - application manifests [Office development in Visual Studio], <entryPointsCollection> element
 - entryPointsCollection element
-ms.assetid: da386d67-e45f-467c-a9ba-9b8451b520eb
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: de32c5de84bf915bf3e9de21171ec3ab1ad7aee7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 478731cde6c1ac08ca0d197f918e2fee4a8673ee
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `entryPointsCollection` del espacio de nombres `vstav3` contiene todos los elementos `entryPoints` asociados a soluciones de Office.  

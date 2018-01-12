@@ -14,17 +14,15 @@ helpviewer_keywords:
 - workbooks, opening text files as
 - text [Office development in Visual Studio], text files
 - text files, opening as workbooks
-ms.assetid: 056ae3d0-7fe7-4c28-a2a5-5a948baee0e6
-caps.latest.revision: "47"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: dbd39969fba90613594bbbc0b2ea4d2c12825af7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 45d2b85ea8c005d56ddc076d0b758a0c9e4a2d67
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Cómo: Abrir archivos de texto como libros mediante programación
   También puede abrir un archivo de texto como un libro. Se debe pasar el nombre del archivo de texto que desea abrir. Puede especificar varios parámetros opcionales, como el número de fila para iniciar el análisis y el formato de columna de los datos en el archivo.  

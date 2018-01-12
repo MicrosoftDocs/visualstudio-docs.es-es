@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8b30c782cea694fdc400cd84047f7ab1add823b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: Generar un fragmento XML a partir de un esquema XML
 Con el Editor XML es posible generar fragmentos de código XML a partir de un esquema de lenguaje de definición de esquema XML (XSD). Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento puede presionar el tabulador para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.  
@@ -138,7 +138,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ### <a name="output"></a>Salida  
  Estos son los datos XML que se generan en función de la información de esquema asociada con el elemento `Contact`. Elementos marcados como `bold` designar los campos editables del fragmento XML.  
@@ -152,7 +152,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
     <Type>Voice</Type>  
   </Phone>  
 </Contact>  
-```  
+```
   
 ## <a name="see-also"></a>Vea también  
  [Fragmentos XML](../xml-tools/xml-snippets.md)   

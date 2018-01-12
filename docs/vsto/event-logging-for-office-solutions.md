@@ -15,17 +15,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], event viewer
 - deploying applications [Office development in Visual Studio], event viewer
 - Office development in Visual Studio, event viewer
-ms.assetid: 31a246fe-ce1c-4f0e-9a21-9cf974c247fe
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 55864eda9d62be5988d1d3ab7262c4d34c0662f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c8a304b314fe09536e2659f88bfdbf53c58552c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="event-logging-for-office-solutions"></a>Registro de eventos para soluciones de Office
   Puede usar el visor de eventos en Windows para ver todos los mensajes de excepción capturados por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , cuando instale o desinstale soluciones de Office. Puede usar estos mensajes desde el registrador de eventos para resolver los problemas de instalación e implementación.  

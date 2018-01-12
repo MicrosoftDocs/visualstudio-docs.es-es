@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Chart control [Office development in Visual Studio], adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-ms.assetid: f02568e7-5caa-45b4-aa2a-4f73b0565d4e
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 53b30bb62e4c4f4146b1c43b6fe08f9683ba4867
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 74ea64dc0f73d642d3d5ea7e693eda42c8d882c4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Cómo: Agregar controles Chart a hojas de cálculo
   Puede agregar controles <xref:Microsoft.Office.Tools.Excel.Chart> a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en las personalizaciones de nivel de documento. También puede agregar controles <xref:Microsoft.Office.Tools.Excel.Chart> en tiempo de ejecución a los complementos de VSTO.  

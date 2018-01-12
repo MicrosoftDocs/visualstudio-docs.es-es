@@ -25,17 +25,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio]
 - task panes [Office development in Visual Studio], about custom task panes
 - custom task panes [Office development in Visual Studio], about custom task panes
-ms.assetid: 9a415109-5333-433e-95c6-3d59ce9c4d02
-caps.latest.revision: "52"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5a655210f3ab8bbcdbae7c06815a05d1ad24b390
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.  

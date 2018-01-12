@@ -7,30 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da7cbf43ff21825e57b5bd5a47f59dbee27fe938
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1e36ebaec08d09cbf006f4c20e743b5c2a909169
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Tutorial: Usar la herramienta Jerarquía XSLT
-La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Una hoja de estilos XSLT usa a menudo instrucciones `includes` e `imports`. La compilación se inicia desde la hoja de estilos principal, pero cuando aparece un error como resultado de compilar una hoja de estilos XSLT, dicho error puede proceder de un origen distinto de la hoja de estilos principal. Es posible que se requiera acceso a las hojas de estilos importadas o incluidas para corregir el error o editar la hoja de estilos. Es posible que la ejecución paso a paso de la hoja de estilos en el depurador le permita abrir las hojas de estilos importadas e incluidas, y si lo desea puede agregar un punto de interrupción en algún punto en una o varias de las hojas de estilos incluidas.  
+
+La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Una hoja de estilos XSLT usa a menudo instrucciones `includes` e `imports`. La compilación se inicia desde la hoja de estilos principal, pero cuando aparece un error como resultado de compilar una hoja de estilos XSLT, dicho error puede proceder de un origen distinto de la hoja de estilos principal. Es posible que se requiera acceso a las hojas de estilos importadas o incluidas para corregir el error o editar la hoja de estilos. Es posible que la ejecución paso a paso de la hoja de estilos en el depurador le permita abrir las hojas de estilos importadas e incluidas, y si lo desea puede agregar un punto de interrupción en algún punto en una o varias de las hojas de estilos incluidas.
+
+Otro escenario en el que la herramienta Jerarquía XSLT puede ser de utilidad es la colocación de puntos de interrupción en las reglas de plantilla integradas. Las reglas de plantilla son plantillas especiales generadas para cada modo de la hoja de estilos y a las que llama el elemento `xsl:apply-templates` cuando ninguna otra plantilla coincide con el nodo. Para implementar la depuración en las reglas de plantilla integradas, el depurador XSLT genera el archivo con las reglas en la carpeta temporal y las compila junto con la hoja de estilos principal. Si no se ejecuta paso a paso el código desde algún elemento `xsl:apply-template`, puede resultar complicado encontrar las hojas de estilos incluidas en la hoja de estilos principal o localizar y abrir la hoja de estilos con las reglas de plantilla integradas.
+
+El ejemplo de este tema muestra la depuración en una hoja de estilos a la que se hace referencia.
+
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Para depurar en una hoja de estilos que se hace referencia
+
+1. Abra un documento XML en Visual Studio. Este ejemplo usa el documento `collection.xml` siguiente.  
   
- Otro escenario en el que la herramienta Jerarquía XSLT puede ser de utilidad es la colocación de puntos de interrupción en las reglas de plantilla integradas. Las reglas de plantilla son plantillas especiales generadas para cada modo de la hoja de estilos y a las que llama el elemento `xsl:apply-templates` cuando ninguna otra plantilla coincide con el nodo. Para implementar la depuración en las reglas de plantilla integradas, el depurador XSLT genera el archivo con las reglas en la carpeta temporal y las compila junto con la hoja de estilos principal. Si no se ejecuta paso a paso el código desde algún elemento `xsl:apply-template`, puede resultar complicado encontrar las hojas de estilos incluidas en la hoja de estilos principal o localizar y abrir la hoja de estilos con las reglas de plantilla integradas.  
-  
- El ejemplo de este tema muestra la depuración en una hoja de estilos a la que se hace referencia.  
-  
-### <a name="procedure-title"></a>Título del procedimiento  
-  
-1.  Abra un documento XML en Visual Studio. Este ejemplo usa el documento `collection.xml` siguiente.  
-  
-    ```  
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>  
     <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>  
     <COLLECTION>  
@@ -50,11 +48,11 @@ La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Un
         <PUBLISHER>Scootney</PUBLISHER>  
       </BOOK>  
     </COLLECTION>  
-    ```  
-  
-2.  Agregue el archivo `xslincludefile.xsl` siguiente:  
-  
-    ```  
+    ```
+
+1. Agregue el archivo `xslincludefile.xsl` siguiente:
+
+    ```xml
     <?xml version='1.0'?>  
     <xsl:stylesheet version="1.0"  
           xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
@@ -73,11 +71,11 @@ La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Un
     </xsl:template>  
   
     </xsl:stylesheet>  
-    ```  
+    ```
   
 3.  Agregue el archivo `xslinclude.xsl` siguiente:  
   
-    ```  
+    ```xml
     <?xml version='1.0'?>  
     <xsl:stylesheet version="1.0"  
           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
@@ -107,13 +105,14 @@ La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Un
   
       <xsl:include href="xslincludefile.xsl" />  
     </xsl:stylesheet>  
-    ```  
+    ```
   
-4.  Agregue un punto de interrupción en la instrucción: `<xsl:include href="xslincludefile.xsl" />`  
+4.  Agregar un punto de interrupción en la instrucción `<xsl:include href="xslincludefile.xsl" />`.
   
 5.  Inicie la depuración.  
   
-6.  Cuando el depurador se detenga en la instrucción `<xsl:include href="xslincludefile.xsl" />`, presione el botón Paso a paso por instrucciones. Observe que la depuración puede continuar en la hoja de estilos a la que se hace referencia. La jerarquía está visible y el diseñador muestra la ruta de acceso correcta.  
+6.  Cuando el depurador se detiene en la instrucción `<xsl:include href="xslincludefile.xsl" />`, presione el **paso a paso** botón. Observe que la depuración puede continuar en la hoja de estilos a la que se hace referencia. La jerarquía está visible y el diseñador muestra la ruta de acceso correcta.  
   
-## <a name="see-also"></a>Vea también  
- [Tutorial: Generador de perfiles XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+## <a name="see-also"></a>Vea también
+
+[Tutorial: Generador de perfiles XSLT](../xml-tools/walkthrough-xslt-profiler.md)

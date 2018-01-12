@@ -15,17 +15,15 @@ helpviewer_keywords:
 - formatting [Office development in Visual Studio]
 - data [Office development in Visual Studio], copying across worksheets
 - copying data, Office development in Visual Studio
-ms.assetid: eed7dbaf-bdb5-4330-ba2e-5f3d50817eca
-caps.latest.revision: "37"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9f8b976427abe35ef8383604eea93f1513316903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1f79fc905152c3d2c56fa70bff9f2936835fab4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Cómo: Copiar datos y formato de una hoja de cálculo al resto mediante programación
   Puede copiar datos de un intervalo en una hoja en todas las demás hojas en un libro utilizando la <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> método. Especifique un intervalo, y si van a copiar datos, formato o ambos.  

@@ -14,17 +14,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], troubleshooting
 - Office development in Visual Studio, troubleshooting
 - deploying applications [Office development in Visual Studio], troubleshooting
-ms.assetid: 2206aeb6-44b3-4786-ba99-9c7dad5cce7c
-caps.latest.revision: "74"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a778aa9e257773ca186bba8b99d5e426f8f26aed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Solucionar problemas de implementación de las soluciones de Office
   Este tema contiene información sobre cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.  

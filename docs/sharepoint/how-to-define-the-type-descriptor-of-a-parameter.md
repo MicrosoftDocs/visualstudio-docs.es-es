@@ -17,17 +17,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter types
 - BDC [SharePoint development in Visual Studio], type descriptor
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
-ms.assetid: 7494559f-1567-4cbd-bde0-05a2ed288c3a
-caps.latest.revision: "32"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 64d741146c0ee2421ab663f78601bfba8c373f86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 78df43a5d5614c175c5134ee638a75034ced8a5d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Cómo: Definir el descriptor de tipo de un parámetro
   Un descriptor de tipo contiene propiedades que describen el tipo de datos de un parámetro. Un descriptor de tipo puede definir un campo, una entidad o una colección de entidades. Para obtener más información, consulte [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  

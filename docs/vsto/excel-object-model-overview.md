@@ -19,17 +19,15 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-ms.assetid: e4b2e46b-ea6c-4a88-a416-a7d4f495fc33
-caps.latest.revision: "66"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f2727d3c1608db15ab4b46285c0ad6971864978e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="excel-object-model-overview"></a>Excel Object Model Overview
   Para desarrollar soluciones que usen Microsoft Office Excel, puede interactuar con los objetos proporcionados por el modelo de objetos de Excel. Este tema presenta los objetos más importantes:  

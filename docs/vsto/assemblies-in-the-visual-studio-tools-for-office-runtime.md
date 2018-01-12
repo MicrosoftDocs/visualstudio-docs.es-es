@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Visual Studio Tools for Office runtime, assemblies
-ms.assetid: d2b7f8f4-0f41-4943-bca5-48c520748b7e
-caps.latest.revision: "29"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: dff032c3f43c662b75f4d0b757f16e70095efc33
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 22750553e714c0aa02577ee95753e7d5b2bf13f4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Ensamblados en el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
   Al crear un proyecto de Office, Visual Studio agrega automáticamente las referencias a los ensamblados [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] correspondientes al tipo de proyecto y la versión de .NET Framework de destino del proyecto. Hay ensamblados distintos en las extensiones de Office para .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], y [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obtener más información sobre las extensiones de Office, vea [Visual Studio Tools for Office Runtime Overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  

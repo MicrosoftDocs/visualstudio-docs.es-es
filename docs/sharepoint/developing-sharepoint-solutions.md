@@ -14,17 +14,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, overview
-ms.assetid: 059bce0f-c301-4234-a0b4-9c14b7cdfa3e
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Desarrollar soluciones de SharePoint
   En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] están disponibles varias plantillas de tipo de proyecto de SharePoint para crear sitios y elementos de sitio de SharePoint. Para obtener una lista de los tipos de proyecto disponibles, vea [proyecto de SharePoint y plantillas de elementos de proyecto](../sharepoint/sharepoint-project-and-project-item-templates.md). A continuación se ofrece una descripción de los elementos y las propiedades de un proyecto de SharePoint.  

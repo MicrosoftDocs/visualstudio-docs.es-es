@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, selecting
 - Excel projects, selecting worksheets
-ms.assetid: 9e7cdb11-e825-4c9f-abcd-d46fd20dc5e0
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: dd84ad38955620ad09ab9fab5fc178241e682948
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dfd3c56ab51cc0e1d1fb1521640497f4748195cc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Cómo: Seleccionar hojas de cálculo mediante programación
   El método <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> selecciona el objeto especificado, que mueve la selección del usuario al nuevo objeto. Use el método <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> si desea llevar el foco al objeto sin cambiar la selección del usuario.  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - managed controls, resizing
 - worksheets, resizing
 - Windows Forms controls [Office development in Visual Studio], resizing
-ms.assetid: 1439db4a-e64b-4381-a6e6-605ba94db3de
-caps.latest.revision: "33"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 75759b501741329808198aafbc7dd39d0994cb98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 01e9dfbe244d373eaa4e66c13e02c781b32b8691
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Cómo: Cambiar el tamaño de controles en celdas de hojas de cálculo
   Cuando cambia el tamaño de las columnas o filas en una hoja de cálculo, cambiar el tamaño de los controles de host contenidos en las celdas automáticamente para el alto o el ancho de la celda que se cambió de tamaño. Controles de formularios Windows Forms no cambian de tamaño automáticamente de forma predeterminada.  

@@ -17,17 +17,15 @@ helpviewer_keywords:
 - document protection, removing from workbooks
 - document protection, adding to workbooks
 - workbooks, protecting
-ms.assetid: 553c67b9-e2a4-46b6-878c-5b4b4efa4589
-caps.latest.revision: "43"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5c383c95d37894aaa49a4a42d2b9a17b9a193f41
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1799366258786bafb3b24b5580ccf29be1d59927
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Cómo: Proteger libros mediante programación
   Puede proteger un libro de Microsoft Office Excel para que los usuarios no pueden agregar o eliminar hojas de cálculo y también puede desproteger el libro mediante programación. Si lo desea, puede especificar una contraseña, indicar si desea que la estructura protegida (por lo que los usuarios no pueden mover las hojas) y que indique si desea que estén protegidas las ventanas del libro.  

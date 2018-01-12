@@ -14,17 +14,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], resizing
 - NamedRange control, resizing
 - ranges, resizing in Excel
-ms.assetid: 7d6f0b2f-be46-49b7-9f38-b4c8849683f7
-caps.latest.revision: "48"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3ef581f46dd834a253e32ab169fc7d36c1c1514b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 91d44f3ddd65c9e949c44b50d069c91c7beef5b9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-resize-namedrange-controls"></a>Cómo: Cambiar el tamaño de los controles NamedRange
   Aunque se puede establecer el tamaño de un control <xref:Microsoft.Office.Tools.Excel.NamedRange> al agregarlo a un documento de Microsoft Office Excel, podrían ser necesarios cambios posteriores.  

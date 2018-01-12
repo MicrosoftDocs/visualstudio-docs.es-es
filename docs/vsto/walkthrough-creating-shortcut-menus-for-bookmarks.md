@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Bookmark control, events
 - shortcut menus, Word
 - menus, creating in Office applications
-ms.assetid: 86dbf3ff-ba75-42f9-8df6-abfc19b3cf6b
-caps.latest.revision: "57"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 33f1e0c87130548ea5c2f9ad6ecc69e7ceac3186
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Tutorial: Crear menús de acceso directo para marcadores
   En este tutorial se muestra cómo crear menús contextuales para <xref:Microsoft.Office.Tools.Word.Bookmark> controles en una personalización de nivel de documento para Word. Cuando un usuario seleccione el texto en un marcador, un menú contextual aparece y proporciona las opciones de usuario para dar formato al texto.  

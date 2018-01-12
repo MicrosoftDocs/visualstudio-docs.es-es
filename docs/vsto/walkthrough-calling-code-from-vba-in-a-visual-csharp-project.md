@@ -19,17 +19,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-ms.assetid: 9a5741f1-8260-4964-afa1-c69b68d1cfdf
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a1e61b3b2055e6a32fa1e179232e7366fe2b3d16
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 109ae2e89cf30078c910ff313ea203c576906037
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Tutorial: llamar a código desde VBA en un proyecto de Visual C#
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Excel desde el código de Visual Basic para Aplicaciones (VBA) del libro. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `Sheet1` , exponer el método a código VBA del libro y llamar al método desde código VBA del libro.  

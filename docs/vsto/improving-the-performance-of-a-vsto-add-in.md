@@ -10,17 +10,15 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-ms.assetid: 03ef25c2-6308-4737-a655-74bbbb472dc2
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: bafc82f247f067f1f836730ec1f676f2f9559915
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Mejorar el rendimiento de un complemento de VSTO
   Puede ofrecer a los usuarios una mejor experiencia si optimiza los complementos de VSTO que cree para las aplicaciones de Office, de modo que se inicien, se cierren, abran elementos y realicen otras tareas rápidamente. Si el complemento de VSTO es para Outlook, también puede reducir la posibilidad de que se deshabilite debido a un bajo rendimiento. Puede aumentar el rendimiento del complemento de VSTO si implementa las estrategias siguientes:  

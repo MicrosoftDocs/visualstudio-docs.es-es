@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, packaging
-ms.assetid: fc1cbd2a-0166-4f2f-a81b-4dac2fa7b0f3
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 895bb4f7bde787a135699e4197622037413a1869
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81e6f83dd4fc825e885843a47d45485918f7dabe
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>Combinar XML en manifiestos de la característica y el paquete
   Paquetes y las características se definen mediante [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] los archivos de manifiesto. Estos manifiestos empaquetados son una combinación de datos generados a partir de los diseñadores y personaliza [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] especificados en la plantilla de manifiesto por los usuarios. Durante el empaquetado, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] combina personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrucciones con proporcionados por el diseñador [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar el empaquetado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] archivo de manifiesto. Elementos similares, con las excepciones que se mencionan más adelante en excepciones de combinación se combinan para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] errores de validación después de implementar los archivos en SharePoint y para realizar el manifiesto de archivos más pequeño y eficaz.  

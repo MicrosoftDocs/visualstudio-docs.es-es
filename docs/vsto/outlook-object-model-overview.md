@@ -17,17 +17,15 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - object models [Office development in Visual Studio], Outlook
 - Office object models
-ms.assetid: 59704974-b7d9-46d6-949c-e97349c75279
-caps.latest.revision: "59"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 481a18d40f17aa5488afabf1dd04f3cf6ed345b9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="outlook-object-model-overview"></a>Información general sobre el modelo de objetos de Outlook
   Para desarrollar complementos de VSTO para Microsoft Office Outlook, puede interactuar con los objetos que ofrece el modelo de objetos de Outlook. El modelo de objetos de Outlook proporciona clases e interfaces que representan elementos de la interfaz de usuario. Por ejemplo, el objeto <xref:Microsoft.Office.Interop.Outlook.Application> representa toda la aplicación, el objeto <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> representa una carpeta que contiene mensajes de correo electrónico u otros elementos y el objeto <xref:Microsoft.Office.Interop.Outlook.MailItem> representa un mensaje de correo electrónico.  

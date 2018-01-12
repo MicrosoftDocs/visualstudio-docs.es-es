@@ -15,17 +15,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: b53d48d7-cbf2-45c2-9537-06a6819be397
-caps.latest.revision: "60"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 05a0f2a997791564a8358287ff1d632c3ff7bffe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Tutorial: Crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 1
   Los proyectos de SharePoint son contenedores para uno o más elementos de proyecto de SharePoint. Puede extender el sistema de proyectos de SharePoint en Visual Studio si crea sus propios tipos de elemento de proyecto de SharePoint y, a continuación, los asocia a una plantilla de proyecto. En este tutorial, definirá un tipo de elemento de proyecto para crear una columna de sitio y, a continuación, creará una plantilla de proyecto que se puede usar para crear un nuevo proyecto que contenga un elemento de proyecto de columnas de sitio.  

@@ -15,17 +15,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: keyboard shortcuts, Office development in Visual Studio
-ms.assetid: d98edaab-846a-4baa-b190-702b1134754c
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 19e6e386a1d96fcadd788bb30f318de76e7f928f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7fc2f6ea9f9f404efae6ca85c8e6a4b0f70be129
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Teclado de Microsoft Office Word, Configuración de teclado de Microsoft Office, cuadro de diálogo Opciones
   Tanto Microsoft Office Word y Visual Studio admiten el uso de teclas de método abreviado. Puede ser la misma combinación de teclas de método abreviado para comandos diferentes en Word y en Visual Studio. Cuando Word está abierto en un proyecto de nivel de documento en Visual Studio, sólo una aplicación a la vez recibe los comandos de teclas de método abreviado. De forma predeterminada, Visual Studio recibe todos los comandos de teclas de método abreviado, pero puede hacer que Word recibirlos cuando el documento tiene el foco seleccionando **combinación de teclado dinámico**.  

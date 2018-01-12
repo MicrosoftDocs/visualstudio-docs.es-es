@@ -16,17 +16,15 @@ helpviewer_keywords:
 - check boxes, Word documents
 - documents [Office development in Visual Studio], check box controls
 - controls [Office development in Visual Studio], adding to documents
-ms.assetid: 3740e41d-a57e-43bb-87e7-6e5481ef290b
-caps.latest.revision: "70"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a0c8d44c32c03f98a0d2621eff3899ded101b7d3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b99f1a5d05d1eac173c40e7cc0c3b989f7c0cd3
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de un documento utilizando controles CheckBox
   Este tutorial muestra cómo usar controles de formularios Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato de texto.  

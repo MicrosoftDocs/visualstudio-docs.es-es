@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bc0ad40823db8a4bd1f2d3553324f8459fb995f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 63ce40fb765d3aab4cb91ebff8a3552f69d92586
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Cómo: Crear un documento XML basado en un esquema XSD
 El **generar XML de ejemplo** característica genera un archivo XML de ejemplo basado en el archivo de esquema XML (XSD).  
@@ -75,7 +75,7 @@ Además, observe que el contenido de `xs:base64Binary` solo se generará si apar
         <zip>1</zip>  
       </BillTo>  
     </PurchaseOrder>  
-    ```  
+    ```
   
 ## <a name="see-also"></a>Vea también  
  [Trabajo con datos XML](../xml-tools/working-with-xml-data.md)

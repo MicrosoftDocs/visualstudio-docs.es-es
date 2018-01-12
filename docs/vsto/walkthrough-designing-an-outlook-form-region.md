@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: form regions [Office development in Visual Studio], creating
-ms.assetid: b033fc06-cdeb-4d7f-804b-86d15bfa022a
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 715d58e205442511db9709a5e57b1b689e008628
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Tutorial: Diseñar un área de formulario de Outlook
   Las áreas de formulario personalizadas extienden los formularios estándar o personalizados de Microsoft Office Outlook. En este tutorial diseñará un área de formulario personalizada que aparece como una nueva página en la ventana del inspector de un elemento de contacto. Esta área de formulario muestra una asignación de cada dirección incluida para el contacto, enviando la información de la dirección al sitio web de búsqueda local de Windows Live. Para obtener información acerca de las áreas de formulario, vea [crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md).  

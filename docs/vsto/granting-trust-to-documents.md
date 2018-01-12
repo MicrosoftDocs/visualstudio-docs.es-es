@@ -15,17 +15,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - trust [Office development in Visual Studio], 2007 Office system
 - granting trust [Office development in Visual Studio]
-ms.assetid: 16893647-501e-4836-98af-a79a1e9de3ee
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 31fd8ba79218c6844e8fc5af33a81ce1c95a8abf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5c8cb7bc19c4668c9315c516430ffe8a8ff30ddc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="granting-trust-to-documents"></a>Granting Trust to Documents
   Un proyecto de nivel de documento tiene los mismos requisitos de seguridad que los proyectos de nivel de aplicación, esto es, firmar los manifiestos con un certificado o hacer clic en el aviso de confianza. Además, el documento o libro debe encontrarse en un directorio designado como ubicación de confianza.  

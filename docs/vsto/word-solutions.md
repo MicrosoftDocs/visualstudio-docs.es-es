@@ -26,17 +26,15 @@ helpviewer_keywords:
 - user interfaces [Office development in Visual Studio], Word
 - Office documents [Office development in Visual Studio, Word
 - document-level customizations [Office development in Visual Studio], Word
-ms.assetid: ef339ad8-1897-4a44-b588-e6004d0b6d8b
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 738c7988dbd5ee4757b231904be08dcf295ba5b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf08132ca3422186eccb1e436340f57bb26b0cb7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="word-solutions"></a>Soluciones de Word
   Visual Studio proporciona plantillas de proyecto que puede usar para crear personalizaciones de nivel de documento y complementos de VSTO para Microsoft Office Word. Puede usar estas soluciones para automatizar Word, ampliar las características de Word y personalizar la interfaz de usuario (IU) de Word. Para obtener más información acerca de las diferencias entre las personalizaciones de nivel de documento y complementos VSTO, consulte [información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  

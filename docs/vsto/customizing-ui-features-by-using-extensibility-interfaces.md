@@ -20,17 +20,15 @@ helpviewer_keywords:
 - FormRegionStartup interface
 - add-ins [Office development in Visual Studio], extensibility interfaces
 - extensibility interfaces [Office development in Visual Studio]
-ms.assetid: 3f3f7908-9404-4eda-8899-4d18c75e3b4a
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 7b0808c62b5538e7b4ae50b7992c9b65750169f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 404b54ea189c00b26f43a39274dfaf44ef37773a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Personalizar características de la interfaz de usuario mediante interfaces de extensibilidad
   Las herramientas de desarrollo de Office en Visual Studio proporcionan clases y diseñadores que administran numerosos detalles de la implementación cuando se usan para crear paneles de tareas personalizados, personalizaciones de la cinta y regiones de formularios de Outlook en un complemento VSTO. Sin embargo, también puede implementar la *interfaz de extensibilidad* para cada característica si tiene necesidades especiales.  

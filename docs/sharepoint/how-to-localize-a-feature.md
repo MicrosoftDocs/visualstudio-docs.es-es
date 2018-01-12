@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-ms.assetid: 66a0b389-1f71-421f-9817-a19840765d83
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 03adaa74feacc82c5f63c1930f7dad63cc931433
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-localize-a-feature"></a>Cómo: Localizar una característica
   De forma predeterminada, las descripciones y títulos de estas características utilizan valores de cadena codificados de forma rígida. Para localizar el título de la característica y la descripción, reemplace las cadenas con expresiones que hacen referencia a los recursos localizados.  

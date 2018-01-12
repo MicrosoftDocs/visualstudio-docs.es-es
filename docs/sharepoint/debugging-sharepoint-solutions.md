@@ -14,17 +14,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, debugging
-ms.assetid: 5120f21e-4c27-4906-b982-85e9cd5170e6
-caps.latest.revision: "29"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a0fdde3820615a41ed91e48538dac80fa234a724
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 85317332cd6b142bb8e0e916e3d7ac80e4aa836c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Depurar soluciones de SharePoint
   Puede depurar las soluciones de SharePoint utilizando el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Al iniciar la depuración, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implementa los archivos de proyecto en el servidor de SharePoint y, a continuación, abre una instancia del sitio de SharePoint en el explorador Web. En las secciones siguientes se explica cómo depurar aplicaciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

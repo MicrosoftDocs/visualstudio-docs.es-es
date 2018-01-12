@@ -16,17 +16,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: form regions [Office development in Visual Studio], adding
-ms.assetid: 49fa3d1e-1b8a-48be-95fb-35c59c4711f6
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e8c4a68c4f99c0cb33ecc938037d68553b58bca4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2029b154ca97f2e856a9e6af8ef58b82f4438df6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook
   Crear un área de formulario para extender un formulario de Microsoft Office Outlook estándar o personalizado, mediante el asistente **Nueva área de formulario de Outlook** . Puede crear una nueva área de formulario y diseñar la interfaz de usuario en Visual Studio, o puede importar un área de formulario diseñada en Outlook y agregar el código de Visual Basic o C#.  

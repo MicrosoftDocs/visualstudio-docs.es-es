@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - importing form regions
 - form regions [Office development in Visual Studio], importing
-ms.assetid: 86b0ef1a-6d7e-4ea5-b90e-458ffe4e1d10
-caps.latest.revision: "35"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cf5b5ff9f2c3b2db5d7082e4eecd9eee4e235866
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8a6abfd5c09194fe9fb37f05a50d874c0239cde
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Tutorial: Importar un área de formulario diseñada en Outlook
   En este tutorial se muestra cómo diseñar un área de formulario en Microsoft Office Outlook y cómo importarla a un proyecto de complemento de VSTO para Outlook mediante el asistente para **nueva área de formulario** . Al diseñar el área de formulario en Outlook, se pueden agregar controles nativos de Outlook a dicha área que se enlazan a datos de Outlook. Después de importar el área de formulario, puede controlar los eventos de cada control.  

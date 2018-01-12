@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Office development in Visual Studio, additional resources
-ms.assetid: 002957c3-7793-40a0-834a-fcb9c2b03a6f
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: debfb63201652f5a9d3348e3bcd591c5efe66e33
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 09bf15064fc92180f2cfc7edc1db13407b78d0e8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="additional-resources-for-developing-office-solutions"></a>Recursos adicionales para desarrollar soluciones de Office
   Las herramientas de desarrollo de Microsoft Office en Visual Studio representan solamente uno de los numerosos mecanismos para extender las aplicaciones de Office. Las aplicaciones de Office también tienen algunas características integradas como, por ejemplo, los formatos XML abiertos, que no se incluyen en las herramientas de desarrollo de Office de Visual Studio ni en esta documentación.  

@@ -14,17 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-ms.assetid: 4c42653c-627f-445e-9024-8482eaf5562e
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5cdcfc080251d62bf0f7dbede2016b4821383c5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eb06e77cf45a3c912f569686cdbe246baece8a03
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Cómo: Rellenar documentos con datos de servicios
   El acceso a los datos funciona de la misma manera en los proyectos de nivel de documento de Microsoft Office Word y en los proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para llevar los datos a la solución; además, también es posible usar controles de Windows Forms para que se muestren los datos. Asimismo, puede aprovechar los controles denominados host, ya que son objetos nativos de Microsoft Office Excel y de Microsoft Office Word mejorados con eventos y capacidad de enlace de datos. Para obtener más información, consulta [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  

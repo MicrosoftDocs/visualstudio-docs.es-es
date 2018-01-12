@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Cómo desencadenar suspender, reanudar y eventos en segundo plano durante la depuración de aplicaciones UWP en Visual Studio
 Cuando no estás depurando, la **Administración de la duración de los procesos** (PLM) de Windows controla el estado de ejecución de la aplicación, es decir, inicia, suspende, reanuda y finaliza la aplicación en respuesta a las acciones del usuario y al estado del dispositivo. Mientras depuras, Windows deshabilita estos eventos de activación. En este tema se describe cómo activar estos eventos en el depurador.  
@@ -109,7 +109,7 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
      ![Suspender, reanudar, terminar y tareas en segundo plano](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada  
- Utiliza el cuadro de diálogo Depurar aplicación instalada para cargar una aplicación que ya esté instalada en el depurador. Por ejemplo, puede depurar una aplicación que se instaló desde Microsoft Store o depurar una aplicación cuando tienes los archivos de origen de la aplicación, pero no un proyecto de Visual Studio para la aplicación. El cuadro de diálogo Depurar aplicación instalada te permite iniciar una aplicación en modo de depuración en el equipo de Visual Studio o en un dispositivo remoto, o establecer que la aplicación se ejecute en modo de depuración pero no iniciarla. Consulta la sección **Iniciar una aplicación instalada en el depurador** de las versiones de [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) o [Visual C++, Visual C# y Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) de **Iniciar una sesión de depuración** para obtener más información.  
+ Utiliza el cuadro de diálogo Depurar aplicación instalada para cargar una aplicación que ya esté instalada en el depurador. Por ejemplo, puede depurar una aplicación que se instaló desde Microsoft Store o depurar una aplicación cuando tienes los archivos de origen de la aplicación, pero no un proyecto de Visual Studio para la aplicación. El cuadro de diálogo Depurar aplicación instalada te permite iniciar una aplicación en modo de depuración en el equipo de Visual Studio o en un dispositivo remoto, o establecer que la aplicación se ejecute en modo de depuración pero no iniciarla. Consulte la **iniciar una aplicación instalada en el depurador** sección de [iniciar una sesión de depuración en una aplicación UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
   
  Una vez cargada la aplicación en el depurador, puedes usar cualquiera de los procedimientos descritos más arriba.  
   

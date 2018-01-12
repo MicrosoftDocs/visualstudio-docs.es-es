@@ -10,17 +10,15 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-ms.assetid: 78388cce-7aae-4163-8db5-ce00d0a0c331
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cef8de366b812baee96ba889cc26157594d55954
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a53148b0130dd05f3ffc3360a518f9b2b66002e7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions (Método)
   Obtiene información sobre las aplicaciones de Office que se van a insertar automáticamente durante la depuración.  

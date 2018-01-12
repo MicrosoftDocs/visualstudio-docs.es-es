@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Visual Studio Tools for Office runtime, installation scenarios
-ms.assetid: 71f34daf-8163-4a53-a401-9cab6581f30d
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 057b9430f6cbac64479e6623e74497427f7824ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9c63f5e4cef88ed927326b69f1fa389e34b06c8b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Escenarios de instalación del Motor en runtime de Microsoft Visual Studio Tools para Office
   Puede instalar Visual Studio 2010 Tools para Office Runtime de tres maneras:  

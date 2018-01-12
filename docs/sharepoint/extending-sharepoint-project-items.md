@@ -14,17 +14,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], extending
 - SharePoint project items, extending
 - SharePoint development in Visual Studio, extending project items
-ms.assetid: f09f6664-196d-46d6-819f-3c6500f23536
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ffbacd5748ae2a5284ed628dce974b20e25bcab3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e990896720916048ab449c7ccb5a927577861256
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="extending-sharepoint-project-items"></a>Extender elementos de proyecto de SharePoint
   Crear una extensión de elemento de proyecto cuando desee agregar funcionalidad a un tipo de elemento de proyecto de SharePoint que ya está instalado en Visual Studio. Por ejemplo, puede crear una extensión para integrado **receptor de eventos** o **definición de lista** elementos de proyecto de Visual Studio, o puede crear una extensión para un tipo de elemento de proyecto personalizado. También puede crear una extensión para todos los tipos de elementos de proyecto de SharePoint.  

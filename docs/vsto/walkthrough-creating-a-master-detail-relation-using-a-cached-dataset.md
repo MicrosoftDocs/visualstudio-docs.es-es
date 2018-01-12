@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - master-detail tables [Office development in Visual Studio], walkthroughs
 - data caching [Office development in Visual Studio], Master/Detail Relation
-ms.assetid: 419f4e07-c67f-4fc9-973a-bc794f349ac3
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 124f4ca6450b5fe19bc707627dfed03e46307cff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 161fdc5e35a24b1318a44d2102867961330ba559
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Tutorial: Crear a una relación de detalles principal mediante un conjunto de datos almacenados en caché
   Este tutorial muestra cómo crear a una relación principal-detalle en una hoja de cálculo y almacenamiento en caché los datos para que la solución se puede usar sin conexión.  

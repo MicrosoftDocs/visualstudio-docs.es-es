@@ -56,17 +56,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, troubleshooting
 - troubleshooting [Office development in Visual Studio]
 - Office development in Visual Studio, errors
-ms.assetid: dcede68c-f269-46fe-a692-97517b671435
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e0da4387056e68046294a2f82c9db7bbc798de07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 225595120af920dc7cb89015024d88ed7bf20580
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Soporte técnico adicional para errores de soluciones de Office
   Puede utilizar los siguientes recursos para ayudarle a encontrar respuestas a problemas que experimente al crear soluciones de Office en Visual Studio.  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], adding to Word tables
 - formatting [Office development in Visual Studio]
 - tables [Office development in Visual Studio], adding text and formatting
-ms.assetid: 3df6492a-dc9c-43ac-8fc3-0f944edd88b2
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ed593a9d03093fa092c97ce005ca190b5c433c8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2742215f01065fb90d8a312eaa324e0cecccb57b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Cómo: Agregar texto y formato a celdas de tablas de Word mediante programación
   Cada tabla consta de una colección de celdas. Cada objeto <xref:Microsoft.Office.Interop.Word.Cell> individual representa una celda de la tabla. Se hace referencia a cada celda mediante su ubicación en la tabla. Este ejemplo hace referencia a la celda ubicada en la primera fila y la primera columna de la tabla, le añade texto y le aplica formato.  

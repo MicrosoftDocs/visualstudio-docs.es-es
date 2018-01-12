@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: FeatureProperties element
-ms.assetid: 89233274-a842-4f40-a81a-5548379f6f39
-caps.latest.revision: "11"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a8de1da87ce4c6ce88c19c8c9c4eda361ba421f4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e710c5a73fbee0a09fb69518def1b03e353661c8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="featureproperties-element"></a>FeatureProperties (Elemento)
   Representa una colección de valores de propiedad que se incluye con una característica cuando se implementa en SharePoint. Una vez implementada la característica, puede tener acceso a los valores de propiedad en el código.  

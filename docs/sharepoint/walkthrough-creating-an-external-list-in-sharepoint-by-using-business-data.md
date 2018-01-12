@@ -21,17 +21,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-ms.assetid: 046cf234-705a-4a6f-91f8-c5c569ae0dd0
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8ecc80a3c26b97b9754f998bd0903471d00cd1d7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c0954665e8b088f969d59bdad0a2ef1207c95c8f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: Crear una lista externa en SharePoint con datos profesionales
   El servicio de conectividad de datos profesionales (BDC) permite que muestran datos empresariales de aplicaciones de servidor back-end, servicios Web y bases de datos de SharePoint.  

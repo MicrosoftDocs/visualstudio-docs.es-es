@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating solutions
 - solutions [Office development in Visual Studio], creating
 - Office project types in Visual Studio
-ms.assetid: 53c32c61-3d3a-4427-a5a7-f9c2c8f1de02
-caps.latest.revision: "103"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8b7322faa797ea9ce51af0cd716ffb6536f062ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7f5a0163d422e5bb04e3c43b5455cc94dde06f09
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="designing-and-creating-office-solutions"></a>Diseñar y crear soluciones de Office
   Visual Studio proporciona plantillas de proyecto que puede usar para crear varios tipos distintos de soluciones de Office. En esta sección de la documentación se describen las plantillas de proyecto y se ofrecen instrucciones sobre cómo crear proyectos de Office. Para obtener información sobre cómo implementar personalizaciones de la interfaz de usuario y el código después de haber creado el proyecto, vea [desarrollar soluciones de Office](../vsto/developing-office-solutions.md).  

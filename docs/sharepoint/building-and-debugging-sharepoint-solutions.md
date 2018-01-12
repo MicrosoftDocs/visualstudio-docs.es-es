@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building and debugging
 - SharePoint development in Visual Studio, debugging
-ms.assetid: c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 47ff77e26ede1c8f9c1bf35b8fc3e69a7951d24c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c74c65d091f170b19357058b1d8ae407b2125e77
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="building-and-debugging-sharepoint-solutions"></a>Compilar y depurar soluciones de SharePoint
   En general, compilar y depurar soluciones de SharePoint es el mismo que compilar y depurar otros tipos de proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Los temas de esta sección explican las diferencias que existen entre ellos.  

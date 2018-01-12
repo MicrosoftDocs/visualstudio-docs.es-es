@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Puede depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente. Para ello, use el depurador remoto de Visual Studio
@@ -35,15 +35,15 @@ Para obtener instrucciones detalladas sobre la depuración remota, vea estos tem
 |Escenario|Vínculo|
 |-|-|-|
 |ASP.NET|[Depuración ASP.NET Core remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) o [depuración ASP.NET remota](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# o Visual Basic|[Un proyecto C# o Visual Basic la depuración remota](remote-debugging-csharp.md)|
-|C++|[Depuración remota de un proyecto de C++](remote-debugging-cpp.md)|
-|Aplicaciones universales de Windows (UWP)|[Depuración de un paquete de aplicaciones instalado](debug-installed-app-package.md)|
+|C# o Visual Basic|[Un proyecto C# o Visual Basic la depuración remota](../debugger/remote-debugging-csharp.md)|
+|C++|[Depuración remota de un proyecto de C++](../debugger/remote-debugging-cpp.md)|
+|Aplicaciones universales de Windows (UWP)|[Ejecutar aplicaciones UWP en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) y [depurar un paquete de aplicación instalada](../debugger/debug-installed-app-package.md)|
 |Azure|[ASP.NET de depuración remota en Azure](remote-debugging-azure.md)|
 |Azure Service Fabric.|[Depurar una aplicación de Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 
 Si simplemente desea descargar e instalar al depurador remoto y no necesita las instrucciones adicionales para su escenario, siga los pasos descritos en este artículo.
   
-## <a name="download-and-install-the-remote-tools"></a>Descargar e instalar las herramientas remotas  
+## <a name="download-and-install-the-remote-tools"></a>Descargue e instale las herramientas remotas  
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

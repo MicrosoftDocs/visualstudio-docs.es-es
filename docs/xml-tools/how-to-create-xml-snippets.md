@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Crear fragmentos de código XML
 El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.  
@@ -54,7 +54,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  El `Expansion` tipo determina si aparecerá el fragmento al invocar el **Insertar fragmento de código** comando. El `SurroundsWith` tipo determina si aparecerá el fragmento al invocar el **rodear con** comando.  
   
@@ -72,7 +72,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  El elemento `Code` incluye tres variables.  
   
@@ -88,7 +88,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  El valor del elemento name se marca como una región editable.  
   
@@ -100,7 +100,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  Los literales también pueden hacer referencia a funciones. El Editor XML incluye una función denominada **Buscar prefijo**. El **Buscar prefijo** función examina el URI de espacio de nombres determinado desde la ubicación en el documento XML que este fragmento de código se invoca desde y devuelve el prefijo de espacio de nombres que se define para ese espacio de nombres, si la hubiera, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un `Literal` elemento que usa el **Buscar prefijo** función.  
   
@@ -109,7 +109,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  Luego, la variable $prefix$ puede utilizarse en cualquier parte del fragmento XML.  
   

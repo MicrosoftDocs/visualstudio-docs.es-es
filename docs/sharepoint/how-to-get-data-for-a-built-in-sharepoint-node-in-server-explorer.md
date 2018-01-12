@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
-ms.assetid: 86d04e0a-c114-427e-9945-da5fa339fda4
-caps.latest.revision: "7"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fa518bf566671dda2b54489fa37460840365bc70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf70fe2e24f88ba64ab648d18d93907de0ddbfaf
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Cómo: Obtener datos para un nodo integrado de SharePoint en el Explorador de servidores
   Para cada nodo integrado de SharePoint en **Explorador de servidores**, puede obtener datos para el componente de SharePoint subyacente que representa el nodo. Para obtener más información, consulte [extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  

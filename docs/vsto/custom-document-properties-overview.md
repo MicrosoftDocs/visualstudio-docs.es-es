@@ -17,17 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-ms.assetid: 9a215904-b760-4a49-93e8-a1a708ce0526
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0a670510a7898b38ec7f61a22f8258015b112151
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f6dfae83f09398ba9a8d1377c16756487193ee2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
   Cuando compila un proyecto de nivel de documento, Visual Studio agrega dos propiedades personalizadas al documento en el proyecto: _AssemblyLocation y _AssemblyName. Cuando un usuario abre un documento, la aplicación de Microsoft Office comprueba estas propiedades personalizadas del documento. Si existen en el documento, la aplicación carga el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], que inicia la personalización. Para obtener más información, consulte [arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).  

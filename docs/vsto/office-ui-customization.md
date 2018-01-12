@@ -16,17 +16,15 @@ helpviewer_keywords:
 - WPF [Office development in Visual Studio]
 - toolbars [Office development in Visual Studio], customizing
 - Office applications [Office development in Visual Studio], UI customization
-ms.assetid: 3d7c7b88-2053-4ada-bfe7-e7bb202c430b
-caps.latest.revision: "74"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c169edc949f195d416194ae3c3ee1111977f649b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c0556bdee18ac7dd207f1664b0aeb9de2532c90d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-ui-customization"></a>Personalización de la interfaz de usuario de Office
   Puede personalizar la interfaz de usuario (UI) de las aplicaciones de Microsoft Office mediante el uso de las herramientas de desarrollo de Office en Visual Studio. En este tema se describen las características de la interfaz de usuario que se pueden personalizar en las secciones siguientes:  

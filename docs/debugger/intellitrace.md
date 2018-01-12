@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTrace para registrar y realizar un seguimiento del historial de ejecución del código. Los errores se detectan fácilmente ya que IntelliTrace le permite:  
@@ -56,7 +56,7 @@ Puede emplear menos tiempo en la depuración de la aplicación si usa IntelliTra
 |||  
 |-|-|  
 |**Compatible**|-Aplicaciones Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br />     Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br />     Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Para depurar aplicaciones de Microsoft Azure con IntelliTrace, vea [depurar con IntelliTrace y Visual Studio un servicio de nube publicado](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Compatibilidad limitada**|-.NET core y aplicaciones de ASP.NET Core admitidas solo para eventos<br />-Aplicaciones F # en modo experimental<br />-Aplicaciones de la tienda Windows admitidas solo para eventos|  
+|**Compatibilidad limitada**|-.NET core y aplicaciones de ASP.NET Core admitidas solo para eventos<br />-Aplicaciones F # en modo experimental<br />-Aplicaciones UWP admitidas solo para eventos|  
 |**No se admite**|-C++, otros lenguajes y script<br />: Los servicios Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicaciones|  
   
 > [!NOTE]

@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - importing items [SharePoint development in Visual Studio]
-ms.assetid: 8b446cca-2adb-457b-bbfd-891209290e80
-caps.latest.revision: "18"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 447fa8749958a3fa2b65a6ef7eb878b906170e6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 07c3e9fb88ea562a85e1c7555d2c57cb04d769ff
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Cómo: Importar un tema o página maestra
   Puede dar páginas en el sitio de SharePoint una apariencia coherente mediante la creación y uso de temas y las páginas maestras. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]no proporciona plantillas para estos elementos, pero puede crearlas en SharePoint Designer y, a continuación, importarlas en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [bloques de creación: interfaz de usuario y páginas](http://go.microsoft.com/fwlink/?LinkID=182095) en el sitio Web de Microsoft.  

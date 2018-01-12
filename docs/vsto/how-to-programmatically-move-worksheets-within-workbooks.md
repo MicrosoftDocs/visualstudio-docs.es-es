@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, moving
 - workbooks, moving worksheets in
-ms.assetid: a010a633-412e-4299-9587-cacb035842c1
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a69000c4e5c97193c911ab3d9e5b97978196ab0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f0869ad6a63e4a499d9fdca2cbaa538d11eef0d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Cómo: Mover hojas de cálculo dentro de libros mediante programación
   Mediante programación, puede cambiar la posición de las hojas de cálculo en relación con otras hojas de cálculo en un libro. Si no especifica una ubicación para la hoja movida, Excel crea un nuevo libro que la contiene.  

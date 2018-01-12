@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bf693d7a5339e57edeaed82c25ed552901e1ea51
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>General, Depuración, Opciones (Cuadro de diálogo)
 El **Herramientas > Opciones > depuración > General** página permite establecer las siguientes opciones:  
@@ -85,7 +85,7 @@ Llama a activa la evaluación automática de propiedades y funciones implícitas
     Ejecuta una llamada de conversión de cadena implícita al evaluar objetos en ventanas de variables. Por lo tanto, el resultado se muestra como una cadena en lugar del nombre de tipo. Solo se aplica mientras se lleva a cabo la depuración en código C#. El atributo DebuggerDisplay puede invalidar esta configuración (vea [utilizando el atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
 **Habilitar compatibilidad de servidor de origen**  
-Indica al depurador de Visual Studio que obtenga los archivos de código fuente de los servidores de origen que implementan el protocolo SrcSrv (`srcsrv.dll`). Team Foundation Server y las herramientas de depuración para Windows son dos servidores de origen que implementan el protocolo. Para obtener más información acerca de la configuración de SrcSrv, vea el [SrcSrv](hhttps://msdn.microsoft.com/en-us/library/windows/hardware/ff558791(v=vs.85).aspx) documentación. Además, consulte [especificar símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+Indica al depurador de Visual Studio que obtenga los archivos de código fuente de los servidores de origen que implementan el protocolo SrcSrv (`srcsrv.dll`). Team Foundation Server y las herramientas de depuración para Windows son dos servidores de origen que implementan el protocolo. Para obtener más información acerca de la configuración de SrcSrv, vea el [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) documentación. Además, consulte [especificar símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 >  Dado que la lectura de archivos .pdb puede ejecutar código arbitrario en los archivos, asegúrese de que el servidor es de confianza.  

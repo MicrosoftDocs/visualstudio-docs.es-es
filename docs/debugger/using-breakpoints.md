@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción detienen la ejecución del depurador para, por ejemplo, ver el estado de las variables de código o examinar la pila de llamadas. Constituyen una de las técnicas de depuración más importantes en los cuadros de herramientas de los desarrolladores.  
@@ -232,7 +232,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 ## <a name="export-and-import-breakpoints"></a>Exportar e importar puntos de interrupción  
  Los puntos de interrupción se pueden exportar a un archivo XML; para ello, haga clic con el botón derecho en el punto de interrupción y seleccione **Exportar**. El archivo se guarda de forma predeterminada en el directorio de la solución. Para importar puntos de interrupción, abra la ventana **Puntos de interrupción** (**CTRL+ALT+B**) y, en la barra de herramientas, haga clic en la flecha que apunta a la derecha (la información sobre herramientas es **Importar puntos de interrupción de un archivo**).  
   
-## <a name="troubleshoot-breakpoints"></a>Solucionar problemas de puntos de interrupción  
+## <a name="troubleshoot"></a>Solucionar problemas de puntos de interrupción 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Eliminé un punto de interrupción, pero continúa alcanzándose al iniciar de nuevo la depuración  
  Si eliminó un punto de interrupción durante la depuración, en algunos casos puede alcanzarse de nuevo la próxima vez que se inicia la depuración. Para dejar de encontrar este punto de interrupción, asegúrese de que todas las instancias del punto de interrupción se quitan de la ventana **Puntos de interrupción** .  

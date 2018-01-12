@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], adding
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, adding Ribbon to project
-ms.assetid: 9eb6b8b3-1842-4cb3-8229-273ce35c64fb
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8ede4048722fd18f62fe4d0bbf19ac75995cb99e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6856ca88f6f8d0b6d0c983da2ee068e5618964b9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Cómo: Iniciarse en la personalización de la cinta de opciones
   Para personalizar la cinta de opciones de una aplicación de Microsoft Office, agregue un **cinta (diseñador Visual)** o **cinta (XML)** elemento a un proyecto de Office.  

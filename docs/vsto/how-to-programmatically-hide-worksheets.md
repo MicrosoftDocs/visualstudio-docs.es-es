@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - hidden worksheets
 - worksheets, hiding
-ms.assetid: 3208f633-137f-47f9-9c9c-2cf8e3c72096
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 54dddd66a1fb9408117f9f3a02102deb13093bce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1ce83d6cec246a5a232026dff4e11f3dc1ed9e06
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Cómo: Ocultar hojas de cálculo mediante programación
   Puede mostrar u ocultar las hojas de cálculo de un libro. Para ocultar una hoja de cálculo, use el elemento host de la hoja de cálculo o acceda a ella mediante la colección “Sheets” del libro.  

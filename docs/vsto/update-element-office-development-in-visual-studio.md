@@ -14,17 +14,15 @@ helpviewer_keywords:
 - update element
 - <update> element
 - application manifests [Office development in Visual Studio], <update> element
-ms.assetid: bdd5dbf7-ddda-4ef6-9db5-1fb4405261a0
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1733ac8333675975bb5d4b42dce9df3c01e5ac0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 72caa5e93b311430f4416946b6ec0bdc9fda5031
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;actualizar&gt; elemento (desarrollo de Office en Visual Studio)
   El `update` elemento especifica el intervalo en el que se comprobará la solución de actualizaciones.  

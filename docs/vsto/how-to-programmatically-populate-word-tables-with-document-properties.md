@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - document properties, inserting in Word tables
 - documents [Office development in Visual Studio], document properties
-ms.assetid: 7ed65a3d-58ed-43b3-92d6-dc10a2c331db
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e0f6a8ae9639359cb23ccc9d30adfd2eb6d84ac8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b305196b9dd05ebf411c4c68e869f5c9c5cbffc5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Cómo: Rellenar tablas de Word con propiedades de documento mediante programación
   En el siguiente ejemplo se crea una tabla de Microsoft Office Word en la parte superior del documento y se rellena con las propiedades del documento host.  

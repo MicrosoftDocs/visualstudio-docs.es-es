@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Inicio rápido: Depurar JavaScript mediante la consola
 ![Se aplica a Windows y Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Puede usar la ventana Consola JavaScript para interactuar con y depurar aplicaciones UWP compiladas mediante JavaScript. Estas características son compatibles para [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicaciones, aplicaciones de Windows Phone y aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Puede usar la ventana Consola JavaScript para interactuar con y depurar aplicaciones UWP compiladas mediante JavaScript. Estas características se admiten para aplicaciones UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicaciones, aplicaciones de Windows Phone y aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para consultar los comandos de la consola, consulte [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  La ventana Consola JavaScript le permite:  
   
@@ -269,7 +269,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BrowserSupport"></a> Compatibilidad con explorador y plataforma  
  La ventana Consola JavaScript es compatible con las siguientes plataformas:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]y aplicaciones de Windows Phone con JavaScript y HTML  
+-   Aplicaciones UWP, [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]y las aplicaciones de Windows Phone con JavaScript y HTML  
   
 -   Internet Explorer 11 que se ejecute en [!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

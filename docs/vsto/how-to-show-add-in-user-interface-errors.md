@@ -15,17 +15,15 @@ helpviewer_keywords:
 - errors [Office development in Visual Studio], user interface errors
 - user interfaces [Office development in Visual Studio], errors
 - application-level add-ins [Office development in Visual Studio], user interface errors
-ms.assetid: aa82cc04-e616-4501-940c-79d11fb393cc
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 35247fed0577d410db86b6d3bd436586784f240a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ce5204855cd6ebe468d652b8420cddc7fd19a1a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Cómo: Mostrar errores de la interfaz de usuario
   De forma predeterminada, si un complemento de VSTO intenta manipular la interfaz de usuario (IU) de Microsoft Office y no lo consigue, no se muestra ningún mensaje de error. Sin embargo, puede configurar las aplicaciones de Microsoft Office para mostrar los mensajes de errores relacionados con la interfaz de usuario. Puede usar estos mensajes para ayudar a determinar por qué no aparece una cinta personalizada, o por qué aparece una cinta pero ningún control.  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - worksheets, displaying text
 - text boxes, displaying text in worksheets
 - text [Office development in Visual Studio], text boxes
-ms.assetid: 59b73159-aab7-4f61-9ace-1723c18d78d6
-caps.latest.revision: "56"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 7743a3d1c0548b444343b3dc96b25eabac4ac951
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7b88940aa1329bc330e5d8bb7d114c21fac3dacb
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Tutorial: Mostrar texto en un cuadro de texto en una hoja de cálculo utilizando un botón
   En este tutorial se muestra los aspectos básicos del uso de botones y cuadros de texto en hojas de cálculo de Microsoft Office Excel y cómo crear proyectos de Excel con las herramientas de desarrollo de Office en Visual Studio. Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Excel en [ejemplos de desarrollo de Office y tutoriales](../vsto/office-development-samples-and-walkthroughs.md).  

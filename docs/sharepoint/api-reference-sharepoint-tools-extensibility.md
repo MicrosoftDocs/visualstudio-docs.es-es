@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, reference for project and tools extensibility
-ms.assetid: 3a42dacd-0213-4c25-aeba-9b6935ab70db
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ff40bf1abb6d3583d7df8ec8423cf7be743a12c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a44f54e80ec3b4c91198666ed7066e6308d3e602
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Referencia de la API (Extensibilidad de Herramientas de SharePoint)
   Esta sección contiene la documentación de referencia de la API para extender las herramientas de SharePoint en Visual Studio.  

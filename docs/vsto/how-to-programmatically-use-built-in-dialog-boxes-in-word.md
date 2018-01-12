@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], dialog boxes
 - dialog boxes, Word
-ms.assetid: 0c7e4338-dead-4444-868b-3b0212368455
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 25353b95a997380ea682059a43494cc2a977f943
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 961f6ac2aa9852170ecce35aa18ce4c39d7a9983
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Cómo: Usar cuadros de diálogo integrados en Word mediante programación
   Cuando se trabaja con Microsoft Office Word, hay ocasiones en que deba mostrar cuadros de diálogo proporcionados por el usuario. Aunque puede crear sus propias, puede que le interese tomar el enfoque del uso de los cuadros de diálogo integrados en Word, que se exponen en la <xref:Microsoft.Office.Interop.Word.Dialogs> colección de la <xref:Microsoft.Office.Interop.Word.Application> objeto. Esto le permite tener acceso a más de 200 de los cuadros de diálogo integrados, que se representan como enumeraciones.  

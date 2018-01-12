@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - localizing XML [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-ms.assetid: 9559a1d1-6558-4c24-a51e-c6ee79432778
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e936404d285fe5845ae364c3b5960e2fb335d2d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 99683e590a2bc6638a809bd3d14486c951a2ad02
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-localize-aspx-markup"></a>Cómo: Localizar el marcado ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]páginas (.aspx) normalmente usan valores de cadena codificados de forma rígida. Para localizar estas cadenas, reemplácelas por expresiones que hacen referencia a los recursos localizados.  

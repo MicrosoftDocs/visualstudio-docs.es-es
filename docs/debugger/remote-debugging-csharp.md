@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 959622dff7770d314dc5fa2da1e8a81ade34cac4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Un proyecto de C# o Visual Basic en Visual Studio la depuración remota
 Para depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente, instalar y ejecutar las herramientas remotas en el equipo donde se implementa la aplicación y, a continuación, configure el proyecto para conectarse al equipo remoto desde Visual Studio y, a continuación, ejecutar la aplicación.
@@ -40,7 +40,7 @@ El depurador remoto es compatible con Windows 7 y versiones más recientes (no d
 > [!NOTE]
 > No se admite la depuración entre dos equipos conectados a través de un servidor proxy. Depuración mediante una conexión de poco ancho de banda, como acceso telefónico a Internet, o una latencia alta o a través de Internet a través de países no se recomienda y puede ser un error o inaceptablemente bajo.
   
-## <a name="download-and-install-the-remote-tools"></a>Descargar e instalar las herramientas remotas
+## <a name="download-and-install-the-remote-tools"></a>Descargue e instale las herramientas remotas
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

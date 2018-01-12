@@ -18,17 +18,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio]
 - Word documents
 - host items [Office development in Visual Studio], Document
-ms.assetid: 4c1963f2-e88e-4c68-9f3d-13dedebddde4
-caps.latest.revision: "47"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fc24568849b2a5e6b9b1a55f9b07b15a34ee1f17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 85c3520d852575eef6e9dae1fd8c1120b9eccd74
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="document-host-item"></a>Elemento host Document
   El elemento host <xref:Microsoft.Office.Tools.Word.Document> es un tipo que extiende el tipo <xref:Microsoft.Office.Interop.Word.Document> del ensamblado de interoperabilidad primario de Word. Asimismo, el elemento host <xref:Microsoft.Office.Tools.Word.Document> proporciona las mismas propiedades, métodos y eventos que un objeto <xref:Microsoft.Office.Interop.Word.Document> y, además, también expone eventos adicionales y sirve de contenedor para los controles host y para los controles de Windows Forms.  

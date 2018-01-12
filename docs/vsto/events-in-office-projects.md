@@ -32,17 +32,15 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-ms.assetid: 666d7f23-ef85-4f2e-9cd3-258df5bdc6fd
-caps.latest.revision: "51"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 87d1fe708d4090fc6d2dd9509a04d13e7a21e079
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 31d7e8483865ed03830376012e780bac87fdda07
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="events-in-office-projects"></a>Eventos de los proyectos de Office
   Cada plantilla de proyecto de Office genera automáticamente varios controladores de eventos. Los controladores de eventos de las personalizaciones de nivel de documento son ligeramente diferentes de los controladores de eventos de los complementos de VSTO.  

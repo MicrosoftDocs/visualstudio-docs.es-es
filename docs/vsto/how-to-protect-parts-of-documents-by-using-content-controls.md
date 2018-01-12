@@ -18,17 +18,15 @@ helpviewer_keywords:
 - document protection [Office development in Visual Studio]
 - Word [Office development in Visual Studio], restricted permissions
 - GroupContentControl
-ms.assetid: 50d7286a-7746-446f-8eef-06ceeadc94d0
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 894379e107865e4a4d187c963a88fe23b6eec6d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 444fd63ecfe1fc74161920b17a3c7caead5a434a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Cómo: Proteger elementos de documentos mediante controles de contenido
   Al proteger un elemento de un documento, se impide que los usuarios cambien o eliminen el contenido de ese elemento. Existen varios modos de proteger los elementos de un documento de Microsoft Office Word mediante los controles de contenido:  

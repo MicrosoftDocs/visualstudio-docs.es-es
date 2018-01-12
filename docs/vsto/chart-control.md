@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Chart control [Office development in Visual Studio], events
 - Chart control [Office development in Visual Studio]
 - Chart control [Office development in Visual Studio], data binding
-ms.assetid: 64f1a7cc-cc66-47da-aaeb-44a62ae53909
-caps.latest.revision: "51"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fc5dfd4916383af8b69c14a87805e965ea855d23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9acd6d07a44ce853bcf7330d16585e1231640d48
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="chart-control"></a>Chart Control
   El control <xref:Microsoft.Office.Tools.Excel.Chart> es un objeto de gráfico que expone eventos. Al agregar un gráfico a una hoja de cálculo, Visual Studio crea un objeto <xref:Microsoft.Office.Tools.Excel.Chart> que se puede programar directamente sin tener que recorrer el modelo de objetos de Microsoft Office Excel.  

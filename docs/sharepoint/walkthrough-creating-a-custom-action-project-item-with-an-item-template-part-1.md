@@ -15,17 +15,15 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: 41ed9c1c-4239-4d80-934b-975fde744288
-caps.latest.revision: "152"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 70a307fe1eb68cb6e1409d0a43178795f0d9421c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1
   Puede extender el sistema de proyectos de SharePoint en Visual Studio creando sus propios tipos de elemento de proyecto. En este tutorial, creará un elemento de proyecto que se pueden agregar a un proyecto de SharePoint para crear una acción personalizada en un sitio de SharePoint. La acción personalizada agrega un elemento de menú para el **acciones del sitio** menú del sitio de SharePoint.  

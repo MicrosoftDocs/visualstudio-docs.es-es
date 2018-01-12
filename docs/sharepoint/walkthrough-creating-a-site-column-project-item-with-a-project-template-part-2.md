@@ -11,17 +11,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: da14207d-ac09-41ba-b387-c7f881b2a366
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a3c2ff276d6f432a4b3cabcaa4aa1b27b033676e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de proyecto en Visual Studio, es posible que desee proporcionar también un asistente para la plantilla. Puede usar el asistente con el fin de recopilar información de los usuarios cuando usan la plantilla para crear un nuevo proyecto que contiene el elemento de proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  

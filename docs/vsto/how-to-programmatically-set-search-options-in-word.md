@@ -15,17 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], search options
 - Word, searching options
 - searching, Word options
-ms.assetid: 4412b4e8-2868-4afb-a593-983603ef9b02
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: b6bd57dfbb7cec6075d72b80228e77669e365dd2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa575f8c89e9aea125179c896c35b8ecc775965e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>Cómo: Establecer opciones de búsqueda en Word mediante programación
   Hay dos maneras de establecer opciones de búsqueda para las selecciones en documentos de Microsoft Office Word:  

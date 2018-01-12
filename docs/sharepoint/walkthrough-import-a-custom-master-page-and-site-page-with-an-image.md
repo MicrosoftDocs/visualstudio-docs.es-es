@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - importing items [SharePoint development in Visual Studio]
-ms.assetid: d1703957-81e2-47e1-b4ca-6a8d550d8da2
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ef55a90b55314bf7ab2c5aa6259f09b62a350da3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 544c3c727046fdcabcde90f221f4b630c11cf29f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Tutorial: Importar una página maestra personalizada y una página de sitio con una imagen
   Este tutorial muestra cómo importar una página maestra personalizada de SharePoint y una página del sitio que tiene una imagen en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.  

@@ -22,17 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
-caps.latest.revision: "35"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12489431a7496b1d64d5aef93a24fcc239be81a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ribbon-xml"></a>XML de la cinta de opciones
   El elemento Cinta (XML) le permite personalizar una cinta de opciones mediante XML. Use el elemento Cinta (XML) si desea personalizar la cinta de opciones de un modo que el elemento Ribbon (diseñador visual) no admite. Para obtener una comparación de lo que puede hacer con cada elemento, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).  

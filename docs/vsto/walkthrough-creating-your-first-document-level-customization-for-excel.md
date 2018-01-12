@@ -14,17 +14,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Excel [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
-ms.assetid: 785d3b86-5ed5-4e0d-b5ee-896b6b1330ac
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 93b9fdad9fc0224c34835457f76140a0df5612b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Tutorial: Crear la primera personalización en el nivel del documento para Excel
   Este tutorial introductorio muestra cómo crear una personalización de nivel de documento para Microsoft Office Excel. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un libro concreto. No se puede usar una personalización de nivel de documento para realizar cambios en toda la aplicación, por ejemplo para mostrar una nueva pestaña de la cinta de opciones cuando se abre un libro.  

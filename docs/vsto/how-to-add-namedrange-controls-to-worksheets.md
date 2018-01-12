@@ -14,17 +14,15 @@ helpviewer_keywords:
 - ranges, adding to worksheets
 - NamedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-ms.assetid: da7ec48f-92cb-4fa3-b3e2-447c238d17a8
-caps.latest.revision: "54"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6632d2f92449a700481f584660711afdd3a99187
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef0ec1846a4ef75200fa6d37f137ca1ab1d70f48
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Cómo: Agregar controles NamedRange a hojas de cálculo
   Puede agregar controles <xref:Microsoft.Office.Tools.Excel.NamedRange> a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución, en los proyectos de nivel de documento.  

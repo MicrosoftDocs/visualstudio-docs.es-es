@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - controls [Office development in Visual Studio], resizing
 - Bookmark control, resizing
-ms.assetid: 3de1c774-921a-4113-a54a-e3b8d4a65d53
-caps.latest.revision: "45"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4129e7405422f5b9490965e658caebce216db1e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fc546ed1b840cc072510a49a16696a1bfc91cee7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Cómo: Cambiar el tamaño de los controles Bookmark
   El tamaño de un control <xref:Microsoft.Office.Tools.Word.Bookmark> se establece cuando lo agrega a un documento de Microsoft Office Word. También puede cambiar su tamaño más adelante.  

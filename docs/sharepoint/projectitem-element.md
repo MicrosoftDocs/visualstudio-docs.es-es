@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: ProjectItem element
-ms.assetid: df588235-12a1-4798-bc56-ef81843de17f
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 240518544f906e68ad443adf55fef20ef2bac879
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 949aef0655db4536c8690080870a03f52f09fdf4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="projectitem-element"></a>ProjectItem (Elemento)
   Representa un elemento de proyecto de SharePoint. Este es el elemento raíz necesario del archivo .spdata.  

@@ -15,17 +15,15 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-ms.assetid: 0b19d4b7-5fcc-42a2-b411-96eccd00137f
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: a3c152640963da1414c34770fff68645e33098ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Tutorial: Generar el perfil de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite encontrar y eliminar la parte más cara (rendimiento más lento) del proyecto, también conocido como el *ruta de acceso activa*.  

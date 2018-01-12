@@ -15,17 +15,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - trust [Office development in Visual Studio], 2007 Office system
 - granting trust [Office development in Visual Studio]
-ms.assetid: 6c33e614-d367-4556-9e76-0f302ad0f929
-caps.latest.revision: "37"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8d4e1e92eab8def99a67b7da531770bb2dd58fc0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 41ecf50a7306025913f228500036d133918dd31b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="granting-trust-to-office-solutions"></a>Otorgar confianza a las soluciones de Office
   Otorgar confianza a las soluciones de Office significa modificar la directiva de seguridad de cada equipo de destino debe confiar en el ensamblado de la solución, el manifiesto de aplicación, el manifiesto de implementación y el documento. Se concede confianza a la solución de Office por usted o el usuario final.  

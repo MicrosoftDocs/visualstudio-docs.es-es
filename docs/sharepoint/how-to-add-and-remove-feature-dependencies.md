@@ -16,17 +16,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, features
-ms.assetid: 2b34c8d9-c975-4fe9-b8e0-52db4a6014ea
-caps.latest.revision: "13"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 41fbe935bb6bde5a57e6277ffcf5e357cc53a391
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6e74ac8cef88319a54df0c08cd91fb2654d390cb
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Cómo: Agregar y quitar dependencias de características
   La característica de SharePoint puede depender de otras características para la funcionalidad o datos. En estos casos, puede marcar estas otras características como dependencias para la característica. De esta manera, el servidor de SharePoint se asegura de que se activan las características dependientes antes de que la característica está activada.  

@@ -16,17 +16,15 @@ helpviewer_keywords:
 - StartCaching method
 - data caching [Office development in Visual Studio], programmatically
 - data [Office development in Visual Studio], caching
-ms.assetid: 70b3fc06-7534-407e-898b-36f84e9a7516
-caps.latest.revision: "43"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: e117243afff5cfa73cd7a27ad8ce0230d8fd512a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 09d4b46aaa68a92ffb9ddfe70f329e97a1b7526d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Cómo: Almacenar en memoria caché un origen de datos de un documento de Office mediante programación
   Puede agregar mediante programación un objeto de datos a la caché de datos en un documento mediante una llamada a la `StartCaching` elemento de método de un host, como un <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, o <xref:Microsoft.Office.Tools.Excel.Worksheet>. Quitar un objeto de datos de la caché de datos mediante una llamada a la `StopCaching` método de un elemento host.  

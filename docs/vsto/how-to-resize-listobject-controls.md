@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - controls [Office development in Visual Studio], resizing
 - ListObject control, resizing
-ms.assetid: a4c7dceb-7b55-447e-9b88-c3596a2fc361
-caps.latest.revision: "50"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 96616338d0fd26e31ac0cc67e66d4dc35d03fdda
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e018ed60e60c63dd47b5d56b599ea0f0499f561c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-resize-listobject-controls"></a>Cómo: Cambiar el tamaño de los controles ListObject
   Aunque se puede establecer el tamaño de un control <xref:Microsoft.Office.Tools.Excel.ListObject> al agregarlo a un libro de Microsoft Office Excel, podrían ser necesarios cambios posteriores. Por ejemplo, conviene cambiar una lista de columnas de dos a tres columnas.  

@@ -14,17 +14,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - Word [Office development in Visual Studio], creating your first project
 - document-level customizations [Office development in Visual Studio], creating your first project
-ms.assetid: ec9f5173-0923-4aee-985a-e760e80eaae3
-caps.latest.revision: "45"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6d732f16d6794fbe59dd6f67fa904fcee916ce69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Tutorial: Crear la primera personalización en el nivel del documento para Word
   En este tutorial introductorio se muestra cómo crear una personalización de nivel de documento para Microsoft Office Word. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un documento concreto. No puede usar una personalización de nivel de documento para efectuar cambios en toda la aplicación, por ejemplo, para mostrar una nueva pestaña de la cinta de opciones cuando se abre un documento.  

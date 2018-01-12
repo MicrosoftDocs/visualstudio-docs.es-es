@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], printing documents
 - documents [Office development in Visual Studio], printing
-ms.assetid: 99285d98-1bb7-4ccb-83d9-e917b0a9ea42
-caps.latest.revision: "53"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ec4808adeb38d0ee8cf13d28e181260fbbae95bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9aa3e4b21aedff239aabde616b12a4f59281ec0a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-print-documents"></a>Cómo: Imprimir documentos mediante programación
   Puede imprimir la totalidad o parte de un documento de Microsoft Office Word en la impresora predeterminada.  

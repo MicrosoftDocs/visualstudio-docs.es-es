@@ -30,17 +30,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], project templates
 - Word projects in Visual Studio
 - Outlook [Office development in Visual Studio], project templates
-ms.assetid: 2f86546b-307f-48ea-b01c-5f5a242fce17
-caps.latest.revision: "68"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d62ccb1e842621a129a4749ae2727c10c0da970a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="office-project-templates-overview"></a>Información general sobre las plantillas de Office Project
   Las Microsoft Office Developer Tools en Visual Studio incluye plantillas de proyecto para crear los siguientes tipos de soluciones de Office:  

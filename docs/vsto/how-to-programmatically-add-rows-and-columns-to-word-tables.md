@@ -14,17 +14,15 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio], adding to Word tables
 - tables [Office development in Visual Studio], adding rows and columns
 - columns [Office development in Visual Studio], adding to Word tables
-ms.assetid: 01a9b6ca-1373-4a6e-b9e6-2225a1321daf
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 56d8c3d0c578d2dc13cf65af680bc2fb804f3539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bcad8104f5267f86c6538077f6f53abbac986d52
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Cómo: Agregar filas y columnas a tablas de Word mediante programación
   En una tabla de Microsoft Office Word, las celdas se organizan en filas y columnas. Puede usar el método <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> del objeto <xref:Microsoft.Office.Interop.Word.Rows> para agregar filas a la tabla y el método <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> del objeto <xref:Microsoft.Office.Interop.Word.Columns> para agregar columnas.  

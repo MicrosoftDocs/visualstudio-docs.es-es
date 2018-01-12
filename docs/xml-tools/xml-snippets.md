@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a419d738943f780ddb6077978242ac08ff91d36
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="xml-snippets"></a>Fragmentos de código XML
 El Editor XML ofrece una característica denominada *fragmentos XML*, que le permite compilar archivos XML con más rapidez. Los fragmentos XML se pueden reutilizar insertándolos en los archivos. También es posible generar datos XML en un esquema de lenguaje de definición de esquemas XML (XSD).  
@@ -37,7 +37,7 @@ El Editor XML ofrece una característica denominada *fragmentos XML*, que le per
     </xs:sequence>  
   </xs:complexType>  
 </xs:element>  
-```  
+```
   
  Los fragmentos se pueden insertar de dos maneras. El **Insertar fragmento de código** comando inserta el fragmento XML en la posición del cursor. El **rodear con** comando ajusta el fragmento XML alrededor del texto seleccionado. Ambos comandos están disponibles desde el **IntelliSense** submenú en el **editar** menú, o en el menú contextual de editor.  
   

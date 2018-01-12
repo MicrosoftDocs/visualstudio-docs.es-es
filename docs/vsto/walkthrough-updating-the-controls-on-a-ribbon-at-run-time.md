@@ -17,17 +17,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dynamic menu
 - dynamic menus [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], updating
-ms.assetid: ed80790f-3f95-47e4-8a41-872588a8ca07
-caps.latest.revision: "51"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 9ca505ff6e61962cd360a3f8413a69abe92e377f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 39952d1059833c92d3d5e8c277faac1b47c6e80b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-updating-the-controls-on-a-ribbon-at-run-time"></a>Tutorial: Actualizar los controles de una cinta de opciones en tiempo de ejecución
   En este tutorial se muestra cómo usar el modelo de objetos de la cinta de opciones para actualizar los controles en una cinta después de cargarla en la aplicación de Office.  

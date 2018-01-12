@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], creating
 - SharePoint development in Visual Studio, user controls
-ms.assetid: 8fcafd98-c002-47f1-b4a9-cbb500232616
-caps.latest.revision: "19"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 02847ae640f969d3c330b5eb573f36c74ef07a2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4818c9519920d722230b2d8a44d7945511931173
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-reusable-controls-for-web-parts-or-application-pages"></a>Crear controles reutilizables para elementos web o páginas de aplicación
   En Visual Studio, puede crear controles personalizados y reutilizables que pueden utilizarse en las páginas de aplicación y los elementos Web que se ejecutan en SharePoint. Estos controles se denominan controles de usuario. Un control de usuario es un tipo de control compuesto que funciona como una página Web ASP.NET, puede agregar controles de servidor Web existentes y el marcado para un control de usuario y definir propiedades y métodos para el control. A continuación, puede incrustarlos en páginas Web ASP.NET, que actúan como una unidad.  

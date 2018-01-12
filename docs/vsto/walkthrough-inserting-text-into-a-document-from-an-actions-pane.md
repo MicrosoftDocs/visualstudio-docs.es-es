@@ -15,17 +15,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-ms.assetid: fd14c896-5737-4a20-94f7-6064b67112c5
-caps.latest.revision: "70"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 789ad22524a5c0128320bfb833b8ad97e294a86f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26d79087a4dbf7fc176ab3deb2c98cd5fdb5ba8a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Tutorial: Insertar texto en un documento de un panel de acciones
   Este tutorial muestra cómo crear un panel de acciones en un documento de Microsoft Office Word. El panel de acciones contiene dos controles que recopilan datos y, a continuación, envían el texto al documento.  

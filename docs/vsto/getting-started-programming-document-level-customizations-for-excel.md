@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Excel solutions in Visual Studio
 - Excel projects [Office development in Visual Studio], getting started
-ms.assetid: 8b73cf08-a173-4b49-b20f-2d2456dbe925
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0c2f8d0a8360153b81d54b5d1867af452e6aaf9d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fdf4afeb260d94b9e121628163c760244ac5f6e1
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="getting-started-programming-document-level-customizations-for-excel"></a>Introducción a la programación de personalizaciones de nivel de documento para Excel
   Si acaba de empezar a crear personalizaciones de nivel de documento para Microsoft Office Excel mediante el uso de Visual Studio, aquí es lo que necesita saber.  

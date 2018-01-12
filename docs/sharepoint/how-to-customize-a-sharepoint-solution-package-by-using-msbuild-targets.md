@@ -13,17 +13,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, packages
-ms.assetid: 7fa6a276-04c8-463e-be95-57c2c6240d76
-caps.latest.revision: "15"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4c0fbc4a2feb3abc92c47567dcb0ea3d425ddda1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab9aa26efe3002c28ec031457d2732c828eca445
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Cómo: Personalizar un paquete de solución de SharePoint con los destinos de MSBuild
   Mediante el uso de destinos de MSBuild en un símbolo del sistema, puede personalizar el modo en que Visual Studio crea los archivos de paquete de SharePoint (.wsp). Por ejemplo, puede personalizar las propiedades de MSBuild para cambiar el directorio intermedio del paquete y los grupos de elementos de MSBuild que especifican los archivos enumerados.  

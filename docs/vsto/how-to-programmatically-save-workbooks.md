@@ -14,17 +14,15 @@ helpviewer_keywords:
 - workbooks, saving in XML format
 - workbooks, saving
 - workbooks, saving backup copies
-ms.assetid: 991ccf9b-5213-4094-9030-284ec167bdcc
-caps.latest.revision: "50"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d0aa6421893c9d930f917e98fb8aa85b6ceb28d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d184d7122459b85b3ad20fbf8338a53f28bd6c8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Cómo: Guardar libros mediante programación
   Existen varias formas de guardar un libro. Puede guardar un libro sin cambiar la ruta de acceso. Si el libro nunca se guardó, debe guardarlo especificando una ruta de acceso. Sin una ruta de acceso explícita, Microsoft Office Excel guarda el archivo en la carpeta actual con el nombre que se especificó cuando se creó. También puede guardar una copia del libro sin modificar el libro abierto en memoria.  

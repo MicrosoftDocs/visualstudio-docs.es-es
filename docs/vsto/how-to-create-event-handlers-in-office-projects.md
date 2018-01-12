@@ -15,17 +15,15 @@ helpviewer_keywords:
 - event handlers [Office development in Visual Studio]
 - Visual C# [Office development in Visual Studio], event handlers
 - events [Office development in Visual Studio]
-ms.assetid: 2cfd6a45-4c25-4431-b4fc-e0f2c0a72e54
-caps.latest.revision: "31"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 151648a6c12e2c28d912be3b75c51b438ae5ee13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c392d365ca14daeb204f4ee2f331bb1fe86ad304
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Cómo: Crear controladores de eventos en proyectos de Office
   Hay varias maneras de crear controladores de eventos en Visual Basic y C#. En la vista de diseño, puede crear controladores de eventos para controles del valor predeterminado haciendo doble clic en el control, o use el panel de eventos de la **propiedades** ventana Crear controladores para cualquier evento del control. Sin embargo, si está en la vista de código, no puede cambiar a la vista de diseño para crear un controlador de eventos.  

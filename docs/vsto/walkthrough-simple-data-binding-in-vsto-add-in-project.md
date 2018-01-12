@@ -14,17 +14,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], binding data
 - data binding [Office development in Visual Studio], Word
 - data [Office development in Visual Studio], simple binding data
-ms.assetid: b248d194-a8b1-4f87-94c4-24e940eea1fd
-caps.latest.revision: "39"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 08b66bdb454c12e54756a0cde37dccdb53024a6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8d3f9d4f097d33f08133af4d1c42c140a6b7c04a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: enlace de datos complejos en un proyecto de complemento de VSTO
   Puede enlazar datos a controles host y controles de Windows Forms en proyectos de complemento de VSTO. En este tutorial se muestra cómo se agregan controles a un documento de Microsoft Office Word y cómo se enlazan los controles a datos en tiempo de ejecución.  

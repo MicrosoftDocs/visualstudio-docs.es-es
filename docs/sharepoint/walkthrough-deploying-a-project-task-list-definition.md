@@ -13,17 +13,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, deploying
-ms.assetid: 18b62016-ed30-4dd1-9dfc-0d7e82c6767f
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 16cccaf9a8639ef2d7213140121b087cd15e72d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d91b1b40ac99ca3984f772b77a16258a1bddf51
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-deploying-a-project-task-list-definition"></a>Tutorial: Implementar una definición de lista de tareas de proyecto
   En este tutorial se muestra cómo usar [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] para crear, personalizar, depurar e implementar una lista de SharePoint para realizar el seguimiento de tareas del proyecto.  

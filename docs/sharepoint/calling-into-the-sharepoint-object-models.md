@@ -15,17 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, server object model
 - SharePoint commands [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, extensibility features
-ms.assetid: 99934f9e-901e-464e-ac8c-22c6c86440f4
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: b1a0f4175dc884283dcf92b7f6268a518cdaf0ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cbb1b8f573c6dd28280e30fd5602dff2dc30ae02
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>Llamar a los modelos de objetos de SharePoint
   Al crear extensiones para las herramientas de SharePoint en Visual Studio, es posible que deba llamar APIs SharePoint para realizar ciertas tareas. Por ejemplo, si crea un paso de implementación personalizado para proyectos de SharePoint, es posible que deba llamar SharePoint APIs para llevar a cabo algunas de las tareas para implementar soluciones.  

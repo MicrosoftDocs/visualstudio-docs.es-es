@@ -20,17 +20,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, importing items
 - SharePoint development in Visual Studio, importing .wsp files
 - importing items [SharePoint development in Visual Studio]
-ms.assetid: b1012eb8-5927-4522-9475-72f0ba55fcca
-caps.latest.revision: "24"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6dbfc2fd214d11eac8a9615c95d3f3ec6e6f3efa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Importar elementos de un sitio de SharePoint existente
   La plantilla de proyecto Importar paquete de solución de SharePoint permite reutilizar elementos, como tipos de contenido y campos de sitios de SharePoint existentes en una nueva [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solución de SharePoint. Aunque puede ejecutar la mayoría de las soluciones importadas sin modificaciones, hay algunas restricciones y aspectos a tener en cuenta, sobre todo si se modifican los elementos después de importarlos.  

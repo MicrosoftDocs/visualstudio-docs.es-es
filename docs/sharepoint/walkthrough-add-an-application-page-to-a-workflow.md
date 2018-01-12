@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding applications page to workflow
 - application page [SharePoint development in Visual Studio]
-ms.assetid: e4845d07-917b-45cb-a569-4ecdd602fbd9
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 67ee77197493cbba0161a3ee53a0617a58b62522
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 86b402e1f8b8be3adf477d67eb11387fa3091afd
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Tutorial: Agregar una página de aplicación a un flujo de trabajo
   Este tutorial muestra cómo agregar una página de aplicación que muestra los datos derivados de un flujo de trabajo a un proyecto de flujo de trabajo. Se basa en el proyecto que se describe en el tema [Tutorial: crear un flujo de trabajo con una asociación y formularios de iniciación](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  

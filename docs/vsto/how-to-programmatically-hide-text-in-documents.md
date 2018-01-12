@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], hiding text
 - text [Office development in Visual Studio], hiding in documents
-ms.assetid: f5ced4ec-22ca-463b-b963-d34ce631b486
-caps.latest.revision: "28"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 78ed00dbb7cbba80c3993932b3554dd64d3cbcf2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 252a6356955af9e1529dff046448efbc57d9638f
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Cómo: Ocultar texto en documentos mediante programación
   Puede ocultar texto en un documento si establece la propiedad <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> de <xref:Microsoft.Office.Interop.Word.Range.Font%2A> para un determinado rango de texto.  

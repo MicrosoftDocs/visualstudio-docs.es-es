@@ -14,17 +14,15 @@ helpviewer_keywords:
 - bookmarks, updating text
 - text [Office development in Visual Studio], updating in bookmarks
 - Bookmark control, updating contents
-ms.assetid: 2324164d-2538-4695-9aaf-7285ce403be3
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6c9db34e05c964b95a41593b194c4941293c7efb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: af3252f87bd3c7d6a6c6e75ae85cea4cd75bd1e9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Cómo: Actualizar texto de marcador mediante programación
   Puede insertar texto en un marcador de marcador de posición de un documento de Microsoft Office Word para poder recuperar el texto posteriormente o reemplazar el texto de un marcador. Si está desarrollando una personalización de nivel de documento, también puede actualizar el texto de un control <xref:Microsoft.Office.Tools.Word.Bookmark> que está enlazado a datos. Para obtener más información, consulte [enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md).  

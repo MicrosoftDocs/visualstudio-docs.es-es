@@ -11,17 +11,15 @@ f1_keywords: VST.SelectDocWizard.OfficeNotInstalled
 dev_langs:
 - VB
 - CSharp
-ms.assetid: da023863-721c-4e1a-96e1-6345dd12011e
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 70329c058146dde9b94713b66dfbd29319250f45
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 58c3290cd27d498e4dbd00114bf1b2f0f289efec
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="microsoft-office-is-not-installed-on-this-computer"></a>Microsoft Office no está instalado en este equipo
   Visual Studio no encuentra la aplicación de Microsoft Office que se corresponde al tipo de proyecto. Si está desarrollando un proyecto de complemento de VSTO, significa que no puede depurar o ejecutar el proyecto. Si intenta crear un proyecto de nivel de documento, significa que no puede crear el proyecto.  

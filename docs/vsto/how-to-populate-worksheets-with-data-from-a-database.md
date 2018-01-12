@@ -14,17 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], populating
 - databases [Office development in Visual Studio], populating worksheets
 - data [Office development in Visual Studio], adding to worksheets
-ms.assetid: e9e37cf1-53ca-45d0-8409-5428be7f96c5
-caps.latest.revision: "39"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6efeccfdaa6b3377869fb20f9c66613960529daf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5a5cfe5d15e1b883de46809523f1d1acaecddc91
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Cómo: Rellenar hojas de cálculo con datos de una base de datos
   Puede tener acceso a datos en proyectos de Office de nivel de documento de la misma manera que obtiene acceso a datos en proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para llevar los datos a la solución; además, también es posible usar controles de Windows Forms para que se muestren los datos. Además, puede aprovechar los controles denominados host, que son objetos nativos de Microsoft Office Excel que se han mejorado con eventos y capacidad de enlace de datos. Para obtener más información, consulta [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  

@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: application manifests [Office development in Visual Studio], <application> element
-ms.assetid: b8d3db7c-9127-4812-b18f-bb17e1f8788f
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 038ab8e2476f29cbbefb73495252c43866899062
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9f20c4c8e6d44c62282f68173ce980f650da2692
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;aplicación&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `application` del espacio de nombres `vstav3` contiene la descripción de las soluciones de Office. Los elementos secundarios son diferentes para las personalizaciones de nivel de documento y los complementos de VSTO.  
