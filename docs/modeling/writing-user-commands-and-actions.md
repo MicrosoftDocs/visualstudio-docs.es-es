@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ba5ff03f-d2e3-4188-a706-3eb68ffb5f9e
-caps.latest.revision: "7"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 14e0252b4bf9a34c219db09d621bd5b12f7fbb78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbb91d73c0e73a7adb5839997395fe60d1a7c35a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
 Puede personalizar un lenguaje específico de dominio agregando comandos al diagrama y respondiendo a gestos como los eventos de arrastrar y colocar, clic y doble clic.  

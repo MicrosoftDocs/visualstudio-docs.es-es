@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords: Domain-Specific Language Tools, Domain-Specific Language Explorer
-ms.assetid: d2926444-9408-41d8-a27e-3fd0c416f9ac
-caps.latest.revision: "20"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 075f0295eaec64c2a80832e3c23f4b3247a93860
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c9c9fbaaed7375cffd581efca34465effd48d33c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 Puede cambiar la apariencia y el comportamiento del explorador para el Diseñador de lenguaje específico de dominio como se indica a continuación:  
@@ -32,7 +30,7 @@ Puede cambiar la apariencia y el comportamiento del explorador para el Diseñado
 -   Ocultar nodos.  
   
 ## <a name="changing-the-window-title"></a>Cambiar el título de ventana  
- Para cambiar el título de la ventana del explorador generado, seleccione **comportamiento Explorer** en el **DSL explorador**y, a continuación, en la **propiedades** ventana, establezca el  **Título** propiedad para el título que desee.  
+ Para cambiar el título de la ventana del explorador generado, seleccione **comportamiento Explorer** en el **DSL explorador**y, a continuación, en la **propiedades** ventana, establezca el ** Título** propiedad para el título que desee.  
   
 ## <a name="changing-the-tab-icon"></a>Cambio del icono de pestaña  
  Para cambiar el icono de pestaña en el explorador, utilice un icono de 16 x 16 píxeles en un archivo .bmp. Coloque el archivo de icono en la carpeta \DslPackage\Resources\ y, a continuación, cambie el nombre de archivo a **ModelExplorerToolWindowBitmaps.bmp**. Por ejemplo, puede cambiar la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] setup.ico icono de archivos al formato .bmp y cambie su nombre a **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. El diseñador generado mostrará este icono en la pestaña de su explorador cuando se acopla junto con **el Explorador de soluciones**.  

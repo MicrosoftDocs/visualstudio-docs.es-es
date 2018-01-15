@@ -19,11 +19,11 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 672047cb066a812d16edc693638c3d6d8295798b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2124fe815c89c3c157be3ea729fa7edb9d96b39
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="instanceof-operator-javascript"></a>instanceof (Operador de JavaScript)
 Devuelve un valor booleano que indica si un objeto es instancia de una clase concreta.  
@@ -37,16 +37,16 @@ result = object instanceof class
   
 ## <a name="parameters"></a>Parámetros  
  `result`  
- Obligatorio. Cualquier variable.  
+ Requerido. Cualquier variable.  
   
  `object`  
- Obligatorio. Cualquier expresión de objeto.  
+ Requerido. Cualquier expresión de objeto.  
   
  `class`  
- Obligatorio. Cualquier clase de objeto definida.  
+ Requerido. Cualquier clase de objeto definida.  
   
 ## <a name="remarks"></a>Comentarios  
- El operador `instanceof` devuelve `true` si `object` es una instancia de `class`. Devuelve `true` si `true` si `class` está presente en la cadena de prototipo del objeto. Devuelve `false` si `object` no es una instancia de `class` o si `object` es `null`.  
+ El operador `instanceof` devuelve `true` si `object` es una instancia de `class`. Devuelve `true` si `class` está presente en la cadena de prototipo del objeto. Devuelve `false` si `object` no es una instancia de `class` o si `object` es `null`.  
   
 ## <a name="example"></a>Ejemplo  
  En el siguiente ejemplo se muestra cómo usar el operador `instanceof`.  

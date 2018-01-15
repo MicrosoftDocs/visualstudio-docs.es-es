@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de dependencia
 En Visual Studio, los usuarios pueden validar el código fuente en un proyecto con un modelo de capas para que puedan comprobar que el código fuente se ajusta a las dependencias de un diagrama de dependencia. Hay un algoritmo de validación estándar, pero puede definir sus propias extensiones de validación.  
@@ -59,7 +57,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
     > [!NOTE]
     >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
   
-5.  Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o en otro equipo, busque el archivo **.vsix** en **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
+5.  Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque la **.vsix** en el archivo **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Agregar un validador de capas a un VSIX independiente  
  Si desea crear un VSIX que contenga validadores de capas, comandos y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores. 
@@ -116,9 +114,9 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
     > [!NOTE]
     >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
   
-8.  Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX. (Explorador de archivos in Windows 8).  
+8.  Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque la **.vsix** un archivo en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.
   
-     Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
+     Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
 ##  <a name="programming"></a> Programar la validación  
  Para definir una extensión de validación de capas, defina una clase que tenga las siguientes características:  
@@ -150,7 +148,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   
  Cuando el usuario invoca el comando de menú **Validar arquitectura** , el sistema en tiempo de ejecución de capas analiza las capas y sus artefactos para generar un gráfico. El gráfico tiene cuatro partes:  
   
--   Los modelos de capas de la solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que se representan como nodos y vínculos en el gráfico.  
+-   Los modelos de capas de la solución de Visual Studio que se representan como nodos y vínculos en el gráfico.  
   
 -   El código, los elementos de proyecto y otros artefactos definidos en la solución y representados como nodos, y los vínculos que representan las dependencias detectadas por el proceso de análisis.  
   
@@ -190,7 +188,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
  Los vínculos entre las capas y los elementos del código tienen la categoría "Representa".  
   
 ##  <a name="debugging"></a> Depurar la validación  
- Para depurar la extensión de validación de capas, presione CTRL+F5. Se abre una instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . En esta instancia, abra o cree un modelo de capas. Este modelo debe estar asociado a código y debe tener al menos una dependencia.  
+ Para depurar la extensión de validación de capas, presione CTRL+F5. Se abre una instancia experimental de Visual Studio. En esta instancia, abra o cree un modelo de capas. Este modelo debe estar asociado a código y debe tener al menos una dependencia.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Probar con una solución que contiene dependencias  
  No se ejecuta la validación a menos que estén presentes las siguientes características:  
@@ -199,7 +197,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   
 -   Hay capas del modelo asociadas a elementos de código.  
   
- La primera vez que inicia una instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para probar la extensión de validación, debe abrir o crear una solución que tenga estas características.  
+ La primera vez que inicia una instancia experimental de Visual Studio para probar la extensión de validación, abra o cree una solución que tenga estas características.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Ejecutar Limpiar solución antes de validar la arquitectura  
  Cada vez que actualice el código de validación, use el comando **Limpiar solución** en el menú **Compilar** de la solución experimental antes de probar el comando Validar. Esto es necesario porque los resultados de la validación se almacenan en memoria caché. Si no ha actualizado el diagrama de dependencia de pruebas ni el código, no se ejecutarán los métodos de validación.  
@@ -207,9 +205,9 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 ### <a name="launch-the-debugger-explicitly"></a>Iniciar el depurador explícitamente  
  La validación se ejecuta en un proceso independiente. Por consiguiente, los puntos de interrupción del método de validación no se activarán. Debe adjuntar explícitamente el depurador al proceso cuando se haya iniciado la validación.  
   
- Para adjuntar el depurador al proceso de validación, inserte una llamada a `System.Diagnostics.Debugger.Launch()` en el inicio del método de validación. Cuando aparezca el cuadro de diálogo de depuración, seleccione la instancia principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Para adjuntar el depurador al proceso de validación, inserte una llamada a `System.Diagnostics.Debugger.Launch()` en el inicio del método de validación. Cuando aparezca el cuadro de diálogo de depuración, seleccione la instancia principal de Visual Studio.  
   
- Alternativamente, puede insertar una llamada a `System.Windows.Forms.MessageBox.Show()`. Cuando aparezca el cuadro de mensaje, vaya a la instancia principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y, en el menú **Depurar** , haga clic en **Asociar al proceso**. Seleccione el proceso denominado **Graphcmd.exe**.  
+ Alternativamente, puede insertar una llamada a `System.Windows.Forms.MessageBox.Show()`. Cuando aparezca el cuadro de mensaje, vaya a la instancia principal de Visual Studio y en el **depurar** menú haga clic en **adjuntar al proceso**. Seleccione el proceso denominado **Graphcmd.exe**.  
   
  Inicie siempre la instancia experimental presionando CTRL+F5 (**Iniciar sin depurar**).  
   

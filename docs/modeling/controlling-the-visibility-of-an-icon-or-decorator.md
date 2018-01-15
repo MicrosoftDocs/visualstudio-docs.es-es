@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
-caps.latest.revision: "2"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3a4e1927cd17a5cc86ed58565b53f04aeb6977a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b090a2f17ad41bb46675f5e170dcbf733b7f8977
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlar la visibilidad de un icono o un objeto Decorator
 A *decorador* es un icono o una línea de texto que aparece en una forma de un lenguaje específico de dominio (DSL). Puede que aparezca la decorador y desaparecen según el estado de las propiedades en el modelo. Por ejemplo, en una forma que representa a una persona, podría tener diferentes iconos que aparecen según el sexo de la persona, número de elementos secundarios y así sucesivamente.  
@@ -62,9 +60,9 @@ A *decorador* es un icono o una línea de texto que aparece en una forma de un l
   
 1.  Agregar una propiedad de dominio calculada a la clase de dominio. En el **propiedades** ventana, establezca los siguientes valores:  
   
-     **IsBrowsable =**`False`**-Esto oculta la propiedad del usuario**   
+     **IsBrowsable =**`False`**-Esto oculta la propiedad del usuario    **  
   
-     **Tipo =**`Calculated`**-Esto significa que se va a proporcionar código que calcula su valor**   
+     **Tipo =**`Calculated`**-Esto significa que se va a proporcionar código que calcula su valor    **  
   
      **Nombre** como **DecoratorControl**  
   

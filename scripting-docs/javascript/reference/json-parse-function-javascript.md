@@ -21,11 +21,11 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 519fc733fd42a194fbd7335127ddf9bcf0bdc220
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="jsonparse-function-javascript"></a>JSON.parse (Función de JavaScript)
 Convierte una cadena de la notación de objetos de JavaScript (JSON) en un objeto.  
@@ -38,7 +38,7 @@ JSON.parse(text [, reviver])
   
 ## <a name="parameters"></a>Parámetros  
  `text`  
- Obligatorio. Una cadena JSON válida.  
+ Requerido. Una cadena JSON válida.  
   
  `reviver`  
  Opcional. Función que transforma los resultados. Se llama a esta función para cada miembro del objeto. Si un miembro contiene objetos anidados, estos se transforman antes que el objeto principal. Para cada miembro, ocurre lo siguiente:  
@@ -66,7 +66,7 @@ JSON.parse(text [, reviver])
   
 -   Asegúrese de que el argumento `text` se haya serializado con una implementación conforme a JSON, como `JSON.stringify`.  
   
--   Ejecute el argumento `text` en un validador de JSON como [JSLint](http://www.jslint.com/) para ayudar a identificar errores de sintaxis.  
+-   Ejecute el `text` argumento en un validador de JSON como [JSLint](http://www.jslint.com/) o [JSON a CSV](https://json-csv.com) para ayudar a identificar errores de sintaxis.  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se usa `JSON.parse` para convertir una cadena JSON en un objeto.  

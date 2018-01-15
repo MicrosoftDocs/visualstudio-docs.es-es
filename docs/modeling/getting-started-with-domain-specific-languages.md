@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
-caps.latest.revision: "16"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 Este tema explica los conceptos básicos de definición y uso de un lenguaje específico de dominio (DSL) creado con el SDK de modelado de Visual Studio.  
@@ -143,7 +141,7 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>El contenido de un modelo  
- El contenido de un archivo que es una instancia de un DSL se denomina un *modelo*. El modelo contiene *modelo**elementos* y *vínculos* entre los elementos. La definición DSL especifica qué tipos de elementos del modelo y vínculos pueden estar en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de idioma mínima, hay un tipo de elemento de modelo y un tipo de vínculo.  
+ El contenido de un archivo que es una instancia de un DSL se denomina un *modelo*. El modelo contiene *modelo ** elementos* y *vínculos* entre los elementos. La definición DSL especifica qué tipos de elementos del modelo y vínculos pueden estar en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de idioma mínima, hay un tipo de elemento de modelo y un tipo de vínculo.  
   
  La definición DSL puede especificar cómo aparece el modelo en un diagrama. Puede elegir entre una variedad de estilos de formas y conectores. Puede especificar que algunas formas aparecen dentro de otras formas.  
   

@@ -10,17 +10,15 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selectimagedialog
 - vs.dsltools.dsldesigner.imageshape
 helpviewer_keywords: Domain-Specific Language, image shape
-ms.assetid: 9ce00ccd-07f2-4640-ac96-2a60481d0d72
-caps.latest.revision: "25"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 72e64d9a0e254ce34cea76eca8617dee71573dd9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e3ab33282c89617a74cc80623040ffc9176b761a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
 Puede usar formas de imagen para especificar cómo aparecen las clases de dominio en un diseñador generado. Define una forma de imagen, estableciendo el `Image` propiedad de la clase a un archivo de imagen predefinida. Se admiten los siguientes formatos:  

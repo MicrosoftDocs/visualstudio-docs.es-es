@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
-caps.latest.revision: "28"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e26560740dd8d6f86d80dc5063a5c9b55cac8171
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 518713302e4698105340fcffaf1698edecf96f76
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Generación de código en un proceso de compilación
 [Transformación de texto](../modeling/code-generation-and-t4-text-templates.md) se pueden invocar como parte de la [proceso de compilación](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución. Hay tareas de compilación que están especializadas para la transformación de texto. Las tareas de compilación T4 ejecutan plantillas de texto en tiempo de diseño y también compilan plantillas de texto en tiempo de ejecución (preprocesadas).  

@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, API
 - text templates, custom hosts
-ms.assetid: 62cd9a3c-a6e1-4b29-93f5-f2a0cf47dc92
-caps.latest.revision: "28"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 98d7efc90a07de02f255afe1a75d10fef749e88a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 56eb5c11984e60e16374853ef1911ae831476d64
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-t4-text-transformation"></a>Personalizar la transformación de texto T4
 Plantillas de texto son una característica de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que le permiten generar código de programa u otros archivos de texto a través de un proceso de transformación. Usar [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)], puede extender el proceso de transformación de plantillas predeterminado personalizando el procesador de directivas de plantilla de texto o el host de plantillas de texto.  

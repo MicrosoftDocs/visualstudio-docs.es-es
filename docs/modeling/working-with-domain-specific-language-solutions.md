@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3db02722-5fd5-437f-a789-9acaaa809de8
-caps.latest.revision: "6"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8b8c8bf932ab49027529972da7deaeca4a68f9ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Trabajar con soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución. Esta sección trata sobre cómo configurar y personalizar la solución.  

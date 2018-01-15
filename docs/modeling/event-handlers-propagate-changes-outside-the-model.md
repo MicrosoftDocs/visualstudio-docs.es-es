@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 En el SDK de modelado y visualización, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera de la tienda, como variables no almacén, archivos, los modelos en otros almacenes, o en otro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones. Controladores de eventos de almacén se ejecutan después del final de la transacción en la que ocurrió el evento desencadenador. También se ejecutan en una operación de deshacer o rehacer. Por lo tanto, a diferencia del almacén de reglas, eventos de almacén son muy útiles para actualizar los valores que están fuera de la tienda. A diferencia de los eventos. NET, se registran los controladores de eventos de almacén para que escuche en una clase: no es necesario que registrar un controlador independiente para cada instancia. Para obtener más información sobre cómo elegir entre diferentes maneras de controlar los cambios, consulte [responder a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).  
@@ -38,7 +36,7 @@ En el SDK de modelado y visualización, puede definir controladores de eventos d
   
     -   `ElementDeleted`-se desencadena después de un elemento del modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.  
   
-2.  Agregar una definición de clase parcial para *YourDsl***DocData** en un archivo de código independiente en el **DslPackage** proyecto.  
+2.  Agregar una definición de clase parcial para *YourDsl *** DocData** en un archivo de código independiente en el **DslPackage** proyecto.  
   
 3.  Escriba el código del evento como un método, como en el ejemplo siguiente. Puede ser `static`, a menos que desee tener acceso a `DocData`.  
   

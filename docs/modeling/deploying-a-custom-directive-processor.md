@@ -7,20 +7,18 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c7881c20412ab5ffc3f1c4486958f4b5ca68a1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
-Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en cualquier equipo, debe registrarlo con uno de los métodos que se describen en este tema.  
+Para usar un procesador de directivas personalizado en Visual Studio en cualquier equipo, debe registrarlo mediante uno de los métodos descritos en este tema.  
   
  A continuación se indican los métodos que puede usar:  
   
@@ -30,7 +28,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
 -   Establecer una clave del Registro. En este método, agrega una entrada del Registro para el procesador de directivas.  
   
- Solamente debe usar uno de estos métodos si desea transformar la plantilla de texto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Si utiliza un host personalizado en su propia aplicación, el host personalizado es el responsable de localizar los procesadores de directivas para cada directiva.  
+ Debe usar uno de estos métodos si desea transformar la plantilla de texto en Visual Studio o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Si utiliza un host personalizado en su propia aplicación, el host personalizado es el responsable de localizar los procesadores de directivas para cada directiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implementar un procesador de directivas en una extensión VSIX  
  Puede agregar un procesador de directivas personalizado a una [extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
@@ -47,7 +45,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Para desarrollar un procesador de directivas personalizado en un proyecto VSIX  
   
-1.  Cree un proyecto VSIX en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+1.  Cree un proyecto VSIX en Visual Studio.  
   
     -   En el **nuevo proyecto** cuadro de diálogo, expanda **Visual Basic** o **Visual C#**, a continuación, expanda **extensibilidad**. Haga clic en **proyecto VSIX**.  
   
@@ -104,19 +102,19 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
 #### <a name="to-install-the-custom-directive-processor"></a>Para instalar el procesador de directivas personalizado  
   
-1.  En el Explorador de Windows (Explorador de archivos en Windows 8), abra el directorio de compilación (normalmente bin\Debug o bin\Release).  
+1.  En el Explorador de Windows, abra el directorio de compilación (normalmente bin\Debug o bin\Release).  
   
 2.  Si desea instalar el procesador de directivas en otro equipo, copie el archivo .vsix en el otro equipo.  
   
-3.  Haga doble clic en el archivo .vsix. Aparecerá el instalador de extensiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3.  Haga doble clic en el archivo .vsix. Aparecerá el instalador de extensión de Visual Studio.  
   
-4.  Reinicie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:  
+4.  Reinicie Visual Studio. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Para desinstalar o deshabilitar temporalmente el procesador de directivas personalizado  
   
-1.  En el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **herramientas** menú, haga clic en **Extension Manager**.  
+1.  En Visual Studio **herramientas** menú, haga clic en **Extension Manager**.  
   
 2.  Seleccione la extensión VSIX que contiene el procesador de directivas y, a continuación, haga clic en **desinstalar** o **deshabilitar**.  
   
@@ -169,7 +167,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
      **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Si desea instalar el procesador de directivas en la versión experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], inserte "Exp" después de "11.0".  
+     Si desea instalar el procesador de directivas en la versión experimental de Visual Studio, inserte "Exp" después de "11.0".  
   
 3.  Agregue una clave del Registro con el mismo nombre que la clase de procesador de directivas.  
   

@@ -30,17 +30,15 @@ helpviewer_keywords:
 - application, architecture
 - Visual Studio ALM, visualizing code
 - applications, designing
-ms.assetid: c9f04cfa-72bd-419d-a952-616eed01472e
-caps.latest.revision: "127"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bc06788e8308a56cb0e38dbca6e9ddb60ce12cd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d32064dfcf11ade79e8630d84084349db88182e9
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizar y modelar la arquitectura
 Asegúrese de que la aplicación cumple los requisitos de la arquitectura mediante la arquitectura de Visual Studio y herramientas para diseñar y modelar la aplicación de modelado. 

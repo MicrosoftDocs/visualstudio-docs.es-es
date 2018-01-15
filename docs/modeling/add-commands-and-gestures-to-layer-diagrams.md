@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f580c81d63adb2ca474f8ea9f250f48a61da928a
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Agregar comandos y gestos a diagramas de dependencia
 Puede definir comandos del menú contextual y controladores de gestos en diagramas de dependencia en Visual Studio. Estas extensiones se pueden empaquetar en una extensión de integración de Visual Studio (VSIX) que luego puede distribuir a otros usuarios de Visual Studio.  
@@ -45,7 +43,7 @@ Puede definir comandos del menú contextual y controladores de gestos en diagram
   
 3.  Para probar la extensión, presione **CTRL+F5** o **F5**.  
   
-     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . En este caso, cree un diagrama de dependencia. El comando o extensión de gesto debería funcionar en este diagrama.  
+     Inicia una instancia experimental de Visual Studio. En este caso, cree un diagrama de dependencia. El comando o extensión de gesto debería funcionar en este diagrama.  
   
 4.  Cierre la instancia experimental y modifique el código de muestra. Para obtener más información, consulte [navegar y actualizar modelos en el código de programa de capas](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -55,7 +53,7 @@ Puede definir comandos del menú contextual y controladores de gestos en diagram
   
      [Definir un controlador de gestos](#gesture)  
   
-6.  Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o en otro equipo, busque el archivo **.vsix** en **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
+6.  Para instalar la extensión en la instancia principal de Visual Studio o en otro equipo, busque la **.vsix** en el archivo **bin\\\***. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Agregar un comando o gesto a un VSIX independiente  
  Si desea crear un VSIX que contenga comandos, validadores de capas y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores.
@@ -104,9 +102,9 @@ Puede definir comandos del menú contextual y controladores de gestos en diagram
   
      Vea también [navegar y actualizar modelos en el código de programa de capas](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Para probar la característica, presione CTRL+F5 o F5. Se abre una instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . En este caso, cree o abra un diagrama de dependencia.  
+2.  Para probar la característica, presione CTRL+F5 o F5. Se abre una instancia experimental de Visual Studio. En este caso, cree o abra un diagrama de dependencia.  
   
-3.  Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. Haga doble clic en el archivo VSIX en el Explorador de Windows (Explorador de archivos en Windows 8).  
+3.  Para instalar VSIX en la instancia principal de Visual Studio o en otro equipo, busque la **.vsix** un archivo en el **bin** directorio del proyecto VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX.  
   
      Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   

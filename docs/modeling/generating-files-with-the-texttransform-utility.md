@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
-ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
-caps.latest.revision: "41"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: de8564aa1743ed22ff4a600d9bf655bbb4adaed4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generar archivos con la utilidad TextTransform
 TextTransform.exe es una herramienta de línea de comandos que puede usar para transformar una plantilla de texto. Cuando se llama a TextTransform.exe, especifique el nombre de un archivo de plantilla de texto como argumento. TextTransform.exe llama al motor de transformación de texto y procesa la plantilla de texto. TextTransform.exe se suele llamar desde secuencias de comandos. Sin embargo, no se suelen ser necesario, porque no se puede realizar la transformación de texto en Visual Studio o en el proceso de compilación.  
@@ -62,7 +60,7 @@ TextTransform [<options>] <templateName>
 |**-u** \<espacio de nombres >|Un espacio de nombres que se utiliza para compilar la plantilla.|  
 |**-I** \<includedirectory >|Un directorio que contiene las plantillas de texto incluidas en la plantilla de texto especificado.|  
 |**-P** \<referencepath >|Un directorio para buscar ensamblados especificados en la plantilla de texto o para usar el **- r** opción.<br /><br /> Por ejemplo, para incluir ensamblados utilizados para la API de Visual Studio, use lo siguiente:<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|  
-|**-dp** \<processorName >!\< className >! \<assemblyName &#124; codeBase >|El nombre, el nombre de tipo completo y el ensamblado de un procesador de directivas que puede usarse para procesar directivas personalizadas dentro de la plantilla de texto.|  
+|**-dp** \<processorName >!\< className >! \<assemblyName & #124; codeBase >|El nombre, el nombre de tipo completo y el ensamblado de un procesador de directivas que puede usarse para procesar directivas personalizadas dentro de la plantilla de texto.|  
 |**-a** [processorName]! [ ¡directiveName]! \<parameterName >! \<parameterValue >|Especifique un valor de parámetro para un procesador de directivas. Si especifica únicamente el nombre de parámetro y valor, el parámetro estará disponible para todos los procesadores de directivas. Si especifica un procesador de directivas, el parámetro está disponible sólo para el procesador especificado. Si especifica un nombre de directiva, el parámetro está disponible solo cuando se procesa la directiva especificada.<br /><br /> Para obtener acceso a los valores de parámetro de una plantilla de texto o un procesador de directivas, utilice <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. En una plantilla de texto, incluya `hostspecific` en la directiva de plantilla e invocar el mensaje en `this.Host`. Por ejemplo:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Escriba siempre la '!' marca, incluso si se omiten el procesador opcional y los nombres de directiva. Por ejemplo:<br /><br /> `-a !!param!value`|  
 |**-h**|Proporciona la Ayuda.|  
   

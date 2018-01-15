@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7e668620-6217-4e87-aea7-e9036776c8e4
-caps.latest.revision: "3"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 911cc5e7959e5a392ff4ff53945ca5277605f7b2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3c024fc6be841f5329f133ece35ed0ef7517eb3
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 Puede empaquetar varios DSL como parte de una única solución para que se instalen juntos.  
@@ -47,7 +45,7 @@ Puede empaquetar varios DSL como parte de una única solución para que se insta
   
 2.  Combine los manifiestos VSIX de los DSL:  
   
-    1.  Abra *YourVsixProject***\source.extension.manifest**.  
+    1.  Abra * YourVsixProject ***\source.extension.manifest**.  
   
     2.  Para cada ADSL, elija **agregar contenido** y agregue:  
   
@@ -59,7 +57,7 @@ Puede empaquetar varios DSL como parte de una única solución para que se insta
   
 3.  Compile la solución.  
   
- El VSIX resultante instalará ambos DSL. Puede probar a ellos mediante F5 o implementar *YourVsixProject***\bin\Debug\\\*.vsix**.  
+ El VSIX resultante instalará ambos DSL. Puede probar a ellos mediante F5 o implementar * YourVsixProject ***\bin\Debug\\\*.vsix**.  
   
 ## <a name="see-also"></a>Vea también  
  [Integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
