@@ -17,11 +17,11 @@ caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2bcddba77305e30e4c5ae13f6b1fc5c9385b7108
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2cc47ae365841332f11cb02da1469a4c9fff80c3
+ms.sourcegitcommit: abae48f476832f79cc2c5bac43bb1226d3fe4e48
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="objectgetownpropertysymbols-function-javascript"></a>Función Object.getOwnPropertySymbols (JavaScript)
 Devuelve las propiedades de símbolos propios de un objeto. Las propiedades de símbolos propios de un objeto son aquellas que se definen directamente en ese objeto y que no se heredan del prototipo del objeto.  
@@ -34,7 +34,7 @@ Object.getOwnPropertySymbols(object);
   
 #### <a name="parameters"></a>Parámetros  
  `object`  
- Obligatorio. Objeto que contiene los símbolos propios.  
+ Requerido. Objeto que contiene los símbolos propios.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Matriz que contiene los símbolos propios del objeto.  
@@ -53,7 +53,7 @@ obj[key] = 'data';
   
 var symbols = Object.getOwnPropertySymbols(obj);  
   
-console.log(s[0].toString());  
+console.log(symbols[0].toString());  
   
 // Output:  
 // undefined  
