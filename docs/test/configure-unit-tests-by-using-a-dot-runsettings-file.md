@@ -7,47 +7,39 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
-caps.latest.revision: "25"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36e235af45e1ce313f2f0e22ab9777d5e205dbe1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 1925152f830d9969c8650fe698be6ebc70e65cf2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar pruebas unitarias usando un archivo .runsettings
-Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo \*.runsettings. (El nombre de archivo no importa, siempre que use la extensión ".runsettings"). Por ejemplo, puede cambiar el .NET Framework en el que se ejecutarán las pruebas, el directorio en el que se entregan los resultados de las pruebas y los datos recopilados durante una serie de pruebas.  
-  
- Si no quiere realizar ninguna configuración especial, no necesita un archivo \*.runsettings. El uso más frecuente es personalizar [Cobertura de código](../test/customizing-code-coverage-analysis.md).  
-  
-> [!NOTE]
->  **.runsettings y .testsettings**  
->   
->  Hay dos tipos de archivos para configurar las pruebas. Los archivos \*.runsettings se usan para las pruebas unitarias. mientras que los archivos \*.testsettings se usan para las [pruebas en entorno de laboratorio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), las pruebas de rendimiento web y las pruebas de carga, así como para personalizar determinados tipos de adaptadores de datos de diagnóstico como, por ejemplo, los adaptadores de registros de IntelliTrace y de eventos.  
->   
->  En las ediciones anteriores de Visual Studio hasta la versión 2010, las pruebas unitarias también se personalizaban mediante archivos \*.testsettings. Puede seguir realizando esa acción, pero las pruebas se ejecutarán más despacio que si usara las configuraciones equivalentes en un archivo \*.runsettings.  
-  
-## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizar pruebas con un archivo .runsettings  
-  
-1.  Agregue un archivo XML a la solución Visual Studio y cámbiele el nombre para que sea test.runsettings. (El nombre de archivo no importa, pero la extensión debe ser .runsettings).  
-  
-2.  Reemplace el contenido del archivo con el [ejemplo](#example).  
-  
-     Edite los valores según sus necesidades.  
-  
-3.  En el menú **Prueba** , elija **Configuración de pruebas**, **Seleccionar archivo de configuración de pruebas**.  
-  
- Puede crear más de un archivo \*.runsettings en la solución y habilitarlo o deshabilitarlo en momentos diferentes en el menú **Configuración de pruebas**.  
-  
- ![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")  
-  
-##  <a name="example"></a> Copiar este archivo de ejemplo .runsettings  
- A continuación se muestra un archivo \*.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.  
-  
-```xml  
+
+Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo \*.runsettings. El nombre de archivo no importa, siempre que use la extensión ".runsettings". Por ejemplo, puede cambiar la versión de .NET Framework en la que se ejecutarán las pruebas, el directorio en el que se entregan los resultados de las pruebas y los datos recopilados durante una serie de pruebas.
+
+Si no es necesaria una configuración especial, no necesita un archivo \*.runsettings. El uso más común de un archivo \*.runsettings es la personalización de la [cobertura de código](../test/customizing-code-coverage-analysis.md).
+
+## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizar pruebas con un archivo .runsettings
+
+1. Agregue un archivo XML a la solución Visual Studio y cámbiele el nombre para que sea test.runsettings. (El nombre de archivo no importa, pero la extensión debe ser .runsettings).
+
+1. Reemplace el contenido del archivo por el XML del ejemplo que hay a continuación y personalícelo como sea necesario.
+
+1. En el menú **Prueba**, elija **Configuración de pruebas** > **Seleccionar archivo de configuración de pruebas**.
+
+Puede crear más de un archivo \*.runsettings en la solución y habilitarlo o deshabilitarlo en momentos diferentes en el menú **Configuración de pruebas**.
+
+![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")
+
+## <a name="example-runsettings-file"></a>Archivo de ejemplo .runsettings
+
+A continuación se muestra un archivo \*.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <RunSettings>  
   <!-- Configurations that affect the Test Framework -->  
@@ -115,15 +107,16 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 </RunSettings>  
 ```  
   
- El archivo .runsettings también se usa para configurar la [Cobertura de código](../test/customizing-code-coverage-analysis.md).  
+El archivo .runsettings también se usa para configurar la [Cobertura de código](../test/customizing-code-coverage-analysis.md).  
   
- El resto de este tema describe el contenido del archivo.  
-  
-## <a name="edit-your-runsettings-file"></a>Editar el archivo .runsettings  
- El archivo .runsettings tiene los elementos siguientes.  
-  
-### <a name="test-run-configuration"></a>Configuración de serie de pruebas  
-  
+El resto de este tema describe el contenido del archivo.  
+
+## <a name="edit-your-runsettings-file"></a>Editar el archivo .runsettings
+
+El archivo .runsettings tiene los elementos siguientes.
+
+### <a name="test-run-configuration"></a>Configuración de serie de pruebas
+
 |Nodo|Default|Valores|  
 |----------|-------------|------------|  
 |`ResultsDirectory`||El directorio en el que se colocarán los resultados de las pruebas.|  
@@ -133,23 +126,22 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 |`TestAdaptersPaths`||Una o varias rutas de acceso al directorio donde se encuentran los TestAdapters|  
 |`MaxCpuCount`|1|Esto controla el grado de ejecución de pruebas paralelas cuando se ejecutan pruebas unitarias, mediante núcleos disponibles en el equipo.  El motor de ejecución de pruebas se inicia como un proceso distinto en cada núcleo disponible y proporciona a cada núcleo un contenedor con pruebas que se deben ejecutar, como por ejemplo un ensamblado, un archivo DLL o un artefacto relevante.  El contenedor de pruebas es la unidad de programación.  En cada contenedor, las pruebas se ejecutan según el marco de pruebas.  Si hay muchos contenedores, a medida que los procesos finalizan la ejecución de las pruebas en un contenedor, se les proporciona el siguiente contenedor disponible.<br /><br /> El valor de MaxCpuCount puede ser:<br /><br /> n, donde 1 <= n <= número de núcleos: se iniciarán hasta n procesos<br /><br /> n, donde n = cualquier otro valor: el número de procesos que se iniciarán será como máximo el número de núcleos disponibles en la máquina|  
   
-### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de datos de diagnóstico (recopiladores de datos)  
- El elemento `DataCollectors` especifica la configuración de los adaptadores de datos de diagnóstico. Los adaptadores de datos de diagnóstico se utilizan para recopilar información adicional sobre el entorno y la aplicación en pruebas. Cada adaptador tiene una configuración predeterminada, por lo que solo tiene que proporcionar valores si no quiere usar los predeterminados.  
-  
-#### <a name="code-coverage-adapter"></a>Adaptador de cobertura de código  
- El recopilador de datos de cobertura de código crea un registro de las partes del código de aplicación que se han empleado en las pruebas. Para obtener más información sobre la personalización de los valores de cobertura de código, vea [Personalizar el análisis de la cobertura de código](../test/customizing-code-coverage-analysis.md).  
-  
-#### <a name="other-diagnostic-data-adapters"></a>Otros adaptadores de datos de diagnóstico  
- El adaptador de cobertura de código es actualmente el único adaptador que se puede personalizar mediante el archivo de configuración de ejecución.  
-  
- Para personalizar cualquier otro tipo de adaptador de datos de diagnóstico, debe usar un archivo de configuración de pruebas. Para obtener más información, consulte [Especificar la configuración de prueba para las pruebas en Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).  
-  
-#### <a name="testrunparameters"></a>TestRunParameters  
- TestRunParameters proporciona una manera de definir las variables y los valores que están disponibles para las pruebas en tiempo de ejecución.  
-  
-### <a name="mstest-run-settings"></a>Parámetros de ejecución de MSTest  
- Estos valores son específicos del adaptador de pruebas que ejecuta métodos de prueba con el atributo `[TestMethod]` .  
-  
+### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de datos de diagnóstico (recopiladores de datos)
+
+El elemento `DataCollectors` especifica la configuración de los adaptadores de datos de diagnóstico. Los adaptadores de datos de diagnóstico se utilizan para recopilar información adicional sobre el entorno y la aplicación en pruebas. Cada adaptador tiene una configuración predeterminada, por lo que solo tiene que proporcionar valores si no quiere usar los predeterminados.
+
+#### <a name="code-coverage-adapter"></a>Adaptador de cobertura de código
+
+El recopilador de datos de cobertura de código crea un registro de las partes del código de aplicación que se han empleado en las pruebas. Para obtener más información sobre la personalización de los valores de cobertura de código, vea [Personalizar el análisis de la cobertura de código](../test/customizing-code-coverage-analysis.md).
+
+### <a name="testrunparameters"></a>TestRunParameters
+
+TestRunParameters proporciona una manera de definir las variables y los valores que están disponibles para las pruebas en tiempo de ejecución.  
+
+### <a name="mstest-run-settings"></a>Parámetros de ejecución de MSTest
+
+Estos valores son específicos del adaptador de pruebas que ejecuta métodos de prueba con el atributo `[TestMethod]` .  
+
 |Configuración|Default|Valores|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|False|En Visual Studio 2012, el adaptador MSTest se ha optimizado para que sea más rápido y escalable. Es posible que parte del comportamiento, como el orden en que se ejecutan las pruebas, no sea exactamente igual que en ediciones anteriores de Visual Studio. Establezca este valor en `true` para utilizar el adaptador de pruebas más antiguo.<br /><br /> Por ejemplo, puede utilizarlo si tiene un archivo app.config especificado para una prueba unitaria.<br /><br /> Se recomienda que considere la refactorización de las pruebas para poder usar el adaptador más reciente.|  
@@ -162,7 +154,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 |MapInconclusiveToFailed|False|Si una prueba devuelve un estado no concluyente, se le asigna normalmente el estado Omitido en el Explorador de pruebas. Si desea que las pruebas no concluyentes se muestren como Error, utilice esta configuración.|  
 |InProcMode|False|Si desea que las pruebas se ejecuten en el mismo proceso que el adaptador MSTest, establezca este valor en true. Este valor proporciona una pequeña mejora del rendimiento. Pero si una prueba finaliza con una excepción, el resto de pruebas no podrán continuar.|  
 |AssemblyResolution|False|Puede especificar rutas de acceso a ensamblados adicionales cuando busque y ejecute pruebas unitarias.  Por ejemplo, puede utilizar estas rutas de acceso para los ensamblados de dependencias que no residan en el mismo directorio que el ensamblado de pruebas.  Para especificar una ruta de acceso, use un elemento "Directory Path".  Las rutas de acceso pueden contener variables de entorno.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
-  
-## <a name="see-also"></a>Vea también  
- [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)   
- [Especificar la configuración de pruebas para las pruebas en Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+
+## <a name="see-also"></a>Vea también
+
+[Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)  

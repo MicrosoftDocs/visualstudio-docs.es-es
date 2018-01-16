@@ -12,19 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 24238fc0-40b8-4079-8579-698211db9a26
 caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e17055848d7913547fcbcd563774e8360eea73e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8f4ae16436143999b0a459ba4b039e796f42111
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
-# <a name="memory-usage-without-the-debugger"></a>Uso de memoria sin el depurador
+# <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Análisis del uso de memoria sin el depurador de Visual Studio
 Puede usar la herramienta **Uso de memoria** sin depuración para lo siguiente:  
   
 -   Supervisar el uso de memoria de la aplicación directamente en Visual Studio mientras desarrolla un escenario.  

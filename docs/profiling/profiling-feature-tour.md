@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Guía de características de generación de perfiles
 
@@ -147,7 +147,8 @@ Si necesita características que no están actualmente presentes en las herramie
 
 ![Herramienta de Explorador de rendimiento](../profiling/media/prof-tour-performance-explorer.png "Explorador de rendimiento")
 
-## <a name="which-tool-should-i-use"></a>¿Qué herramienta debo usar?  
+## <a name="tool_support_info"></a>¿Qué herramienta debo usar?  
+
 En esta tabla se muestra una lista de las distintas herramientas que ofrece Visual Studio y los tipos de proyecto con los que las puede usar:
   
 |Herramienta de rendimiento|Escritorio de Windows|Universales de Windows o de la Tienda|ASP.NET/ASP.NET Core|  
@@ -158,7 +159,7 @@ En esta tabla se muestra una lista de las distintas herramientas que ofrece Visu
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|  
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|  
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí (no para el núcleo de ASP.NET)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Solo .NET Enterprise|Solo .NET Enterprise|Solo .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|Solo .NET y Visual Studio Enterprise|Solo .NET y Visual Studio Enterprise|Solo .NET y Visual Studio Enterprise|
 |[Uso de red](../profiling/network-usage.md)|No|sí|No| 
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|sí para HTML, no para XAML|No|  
 |[Memoria de JavaScript](../profiling/javascript-memory.md)|No|sí para HTML, no para XAML|No|  

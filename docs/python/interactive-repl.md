@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 2126855c0d8b44965c3ba867940990de0edb1d42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -48,7 +48,7 @@ En primer lugar, cambie a la ventana Entornos de Python; para ello seleccione (*
 
 ![Vínculo a una ventana interactiva en la ventana Python Environments (Entornos de Python)](media/interactive-window-opening.png)
 
-En segundo lugar, cerca del botón de menú **Ver > Otras ventanas**, existe un comando **Ventana interactiva de Python** para su entorno predeterminado, así como un comando para cambiar a la ventana de entornos:
+En segundo lugar, cerca del botón del menú **Ver > Otras ventanas**, se encuentra el comando **Ventana interactiva de Python**, que puede usar en su entorno predeterminado, así como un comando para cambiar a la ventana de entornos:
 
 ![Elementos de menú de la ventana interactiva en Ver > Otras ventanas](media/interactive-window-menu.png)
 

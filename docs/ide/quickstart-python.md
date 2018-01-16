@@ -1,7 +1,7 @@
 ---
 title: "Inicio rápido: usar Visual Studio para crear su primera aplicación web Python | Microsoft Docs"
 ms.custom: 
-ms.date: 12/1/2017"
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -13,11 +13,11 @@ ms.author: kraigb
 manager: ghogen
 dev_langs: python
 ms.workload: python
-ms.openlocfilehash: bf0a6e187a98a03d3beed33537fe5244ecd5d35d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Inicio rápido: usar Visual Studio para crear su primera aplicación web Python
 
@@ -29,7 +29,11 @@ En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio,
 
 1. En la barra de menús superior, elija **Archivo > Nuevo > Proyecto...**.
 
-1. En el cuadro de diálogo **Nuevo proyecto**, en el panel de la izquierda, expanda **Otros lenguajes** y después seleccione **Python**. En el panel central, elija **Proyecto web**, asigne al proyecto un nombre como "HelloPython" y luego haga clic en **Aceptar**.
+1. En el cuadro de diálogo **Nuevo proyecto**, en el panel de la izquierda, expanda **Instalado** y, después, seleccione **Python**.
+
+1. En el panel central, elija **Proyecto web**, asigne al proyecto un nombre como "HelloPython" y luego haga clic en **Aceptar**.
+
+    ![Cuadro de diálogo Nuevo proyecto con Proyecto web de Python seleccionado](media/quickstart-python-00-web-project.png)
 
     Si no ve las plantillas de proyecto de Python, cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas > Obtener herramientas y características...** para abrir el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Python** y, luego, haga clic en **Modificar**.
 
@@ -39,17 +43,21 @@ En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio,
 
     ![Explorador de soluciones con el proyecto vacío recién creado](media/quickstart-python-01-empty-project.png)
 
+**Pregunta: ¿Cuál es la ventaja de crear un proyecto en Visual Studio para una aplicación de Python?**
+
+Respuesta: Las aplicaciones de Python suelen definirse con el uso de carpetas y archivos únicamente, pero esta estructura puede ser más compleja a medida que las aplicaciones aumentan de tamaño y se generan posibles archivos de forma automática, JavaScript para aplicaciones web, etc. Un proyecto de Visual Studio le ayuda a administrar esta complejidad. El proyecto (un archivo `.pyproj`) identifica todos los archivos de origen y de contenido asociados al proyecto, contiene información de compilación para cada archivo, mantiene la información para integrarse con sistemas de control de código fuente y le ayuda a organizar la aplicación en componentes lógicos.
+
 ## <a name="install-the-falcon-library"></a>Instalar la biblioteca Falcon
 
-En las aplicaciones web de Python casi siempre se usa una de las muchas bibliotecas de Python disponibles para controlar detalles de bajo nivel como el enrutamiento de solicitudes web y la forma de las respuestas. La carga de trabajo de desarrollo de Python en Visual Studio proporciona [una variedad de plantillas para aplicaciones web](../python/template-web.md) generadas en torno a las bibliotecas Bottle, Flask y Django.
+En las aplicaciones web de Python casi siempre se usa una de las muchas bibliotecas de Python disponibles para controlar detalles de bajo nivel como el enrutamiento de solicitudes web y la forma de las respuestas. Para ello, Visual Studio proporciona una variedad de plantillas para aplicaciones web mediante los marcos Bottle, Flask y Django.
 
-Pero en este tutorial rápido, se usa una biblioteca diferente, [Falcon](https://falconframework.org/), para experimentar el proceso de instalación de un paquete y la creación de la aplicación web desde el principio. Por simplicidad, en los pasos siguientes se instala Falcon en el entorno global predeterminado.
+Pero, en este inicio rápido, se usa la biblioteca de Falcon para experimentar el proceso de instalación de un paquete y la creación de la aplicación web desde el principio. En la actualidad, Visual Studio no incluye plantillas específicas de Falcon. Por simplicidad, en los pasos siguientes se instala Falcon en el entorno global predeterminado.
 
 1. Expanda el nodo **Entornos de Python** en el proyecto para ver el entorno predeterminado para el proyecto.
 
     ![Explorador de soluciones en el que se muestra el entorno predeterminado](media/quickstart-python-02-default-environment.png)
 
-1. Haga clic con el botón derecho en el entorno y seleccione **Instalar paquete de Python...**. Este comando abre la ventana **Entornos de Python** por la pestaña **Paquetes**. Escriba "falcon" en el campo de búsqueda y seleccione **"instalación de PIP falcon" desde PyPI**. Acepte los mensajes de privilegios de administrador y observe el progreso en la ventana **Salida** de Visual Studio.
+1. Haga clic con el botón derecho en el entorno y seleccione **Instalar paquete de Python...**. Este comando abre la ventana **Entornos de Python** por la pestaña **Paquetes**. Escriba "falcon" en el campo de búsqueda y seleccione **"instalación de PIP falcon" desde PyPI**. Acepte los mensajes de privilegios de administrador y observe el progreso en la ventana **Salida** de Visual Studio (se le pedirá confirmación de elevación cuando la carpeta de paquetes del entorno global esté ubicada en un área protegida, como `c:\program files`).
 
     ![Instalación de la biblioteca Falcon](media/quickstart-python-03-install-package.png)
 
@@ -57,24 +65,30 @@ Pero en este tutorial rápido, se usa una biblioteca diferente, [Falcon](https:/
 
     ![Biblioteca Falcon instalada](media/quickstart-python-04-package-installed.png)
 
+Para obtener más información sobre Falcon, visite [falconframework.org](https://falconframework.org/).
+
 Tenga en cuenta que en lugar de instalar las bibliotecas en el entorno global, los desarrolladores suelen crear un "entorno virtual" en la que se instalan las bibliotecas de un proyecto específico. Muchas plantillas de proyecto de Python en Visual Studio incluyen un archivo `requirements.txt` en el que se enumeran las bibliotecas de las que depende la plantilla. La creación de un proyecto a partir de una de esas plantillas activa la creación de un entorno virtual en el que se instalan las bibliotecas. Para más información, vea [Entornos de Python: entornos virtuales](../python/python-environments.md#virtual-environments).
 
 ## <a name="add-a-code-file"></a>Agregar un archivo de código
 
 Ahora está listo para agregar un poco de código de Python para implementar una aplicación web básica.
 
-1. Haga clic con el botón derecho en el **Explorador de soluciones** y seleccione **Agregar > Nuevo elemento...**. En el cuadro de diálogo que aparece, seleccione **Archivo de Python vacío**, asígnele el nombre `hello.py` y haga clic **Aceptar**. Visual Studio abre automáticamente el archivo en una ventana del editor. (Por lo general, el comando **Agregar > Nuevo elemento...** es una excelente manera de agregar distintos tipos de archivos a un proyecto, dado que las plantillas de elementos suelen proporcionan código reutilizable útil).
+1. Haga clic con el botón derecho en el **Explorador de soluciones** y seleccione **Agregar > Nuevo elemento...**.
 
-1. Copie y pegue, o escriba el código siguiente en `hello.py`:
+1. En el cuadro de diálogo que aparece, seleccione **Archivo de Python vacío**, asígnele el nombre `hello.py` y seleccione **Agregar**. Visual Studio abre automáticamente el archivo en una ventana del editor. (Por lo general, el comando **Agregar > Nuevo elemento...** es una excelente manera de agregar distintos tipos de archivos a un proyecto, dado que las plantillas de elementos suelen proporcionan código reutilizable útil).
+
+1. Copie el siguiente código y péguelo en `hello.py`:
 
     ```python
     import falcon
-    api = falcon.API()
 
-    # In Falcon, define a class for each resource; the on_get 
-    # method then handles any GET requests.
+    # In Falcon, define a class for each resource and define on_* methods
+    # where * is any standard HTTP methods in lowercase, such as on_get.
 
     class HelloResource:
+        # In this application, the single HelloResource responds to only GET
+        # requests, so it has only an on_get method.
+
         def on_get(self, req, resp):
             resp.status = falcon.HTTP_200  # 200 is the default
             resp.body = "Hello, Python!"
@@ -82,11 +96,16 @@ Ahora está listo para agregar un poco de código de Python para implementar una
     # Resources are represented by long-lived class instances
     hello = HelloResource()
 
-    # Instruct Falcon to route / and /hello to the HelloResource
+    # Instruct Falcon to route / and /hello to HelloResource. If you add
+    # other resources, use api.add_route to define the desired
+    # resource locators for them.
+    api = falcon.API()
     api.add_route('/', hello)
     api.add_route('/hello', hello)
 
     if __name__ == "__main__":
+        # Use Python's built-in WSGI reference implementation to run
+        # a web server for the application.
         from wsgiref.simple_server import make_server
 
         # Run the web server on localhost:8080
@@ -95,27 +114,35 @@ Ahora está listo para agregar un poco de código de Python para implementar una
         srv.serve_forever()
     ```
 
+1. Después de pegar este código, es posible que, en Visual Studio, se muestre un subrayado ondulado debajo de `falcon` en la primera línea y también debajo de `wsgiref.simple.server` en la línea número 20. Estos indicadores aparecen cuando Visual Studio todavía está compilando la base de datos de IntelliSense para esos módulos.
+
 Para más información sobre Falcon, vea el [Inicio rápido de Falcon](https://falcon.readthedocs.io/en/stable/user/quickstart.html) (falcon.readthedocs.io).
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
 1. Haga clic con el botón derecho en `hello.py` en el **Explorador de soluciones** y seleccione **Establecer como archivo de inicio**. El comando identifica el archivo de código que se va a iniciar en Python cuando se ejecuta la aplicación.
 
+    ![Establecimiento del archivo de inicio para un proyecto en el Explorador de soluciones](media/quickstart-python-05-set-as-startup-file.png)
+
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto "Hello Python" y seleccione **Propiedades**. Después, haga clic en la pestaña **Depurar** y establezca la propiedad **Número de puerto** en `8080`. Este paso garantiza que Visual Studio inicia un explorador con `localhost:8080` en lugar de usar un puerto aleatorio.
 
 1. Seleccione **Depurar > Iniciar sin depurar** (Ctrl+F5) para guardar los cambios en los archivos y ejecutar la aplicación.
 
-1. Aparece una ventana de comandos con el mensaje "Iniciando servidor de aplicaciones web" y, después, se abre una ventana del explorador por `localhost:8080` donde se puede ver el mensaje "Hello, Python!". La solicitud GET también aparece en la ventana de comandos. (Si ve solo el shell interactivo de Python en la ventana de comandos, o si esa ventana parpadea brevemente en la pantalla, asegúrese de establecer `hello.py` como el archivo de inicio en el paso 1 anterior).
+1. Aparece la ventana Comandos con el mensaje "Iniciando servidor de aplicaciones web" y, después, se abre una ventana del explorador para `localhost:8080` en la que se puede ver el mensaje "Hello, Python!". La solicitud GET también aparece en la ventana de comandos.
 
-1. Cierre la ventana de comandos para detener la aplicación.
+    Si no se abre automáticamente un explorador, inicie el explorador que quiera y vaya a `localhost:8080`.
+
+    Si solo ve el shell interactivo de Python en la ventana Comandos, o bien si esa ventana parpadea brevemente en la pantalla, asegúrese de haber establecido `hello.py` como archivo de inicio anteriormente en el paso 1.
+
+1. Cierre la ventana Comandos para detener la aplicación. Después, cierre la ventana del explorador.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Enhorabuena por completar este tutorial rápido, en el que ha obtenido información sobre el IDE de Visual Studio con Python. Para continuar con un tutorial más completo sobre Python en Visual Studio, incluido el uso de la ventana interactiva, depuración, visualización de datos y trabajar con Git, haga clic en el botón siguiente.
+Enhorabuena, ha completado este inicio rápido en el que ha obtenido información sobre el IDE de Visual Studio con Python. Para continuar con un tutorial más completo sobre Python en Visual Studio, incluido el uso de la ventana interactiva, depuración, visualización de datos y trabajar con Git, haga clic en el botón siguiente.
 
 > [!div class="nextstepaction"]
 > [Tutorial: Introducción a Python en Visual Studio](../python/vs-tutorial-01-01.md).
 
 - Obtenga información sobre [Plantillas de aplicación web de Python en Visual Studio](../python/template-web.md)
+- Más información sobre la [depuración de Python](../python/debugging.md)
 - Más información sobre el [IDE de Visual Studio](../ide/visual-studio-ide.md)
-- Obtenga información sobre cómo usar el [depurador de Visual Studio](../debugger/debugger-feature-tour.md)

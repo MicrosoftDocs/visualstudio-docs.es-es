@@ -12,14 +12,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 62a860da6c8f672f5ecd03d3ab97bb9e3ddd3365
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 Para determinar qué proporción de código del proyecto se está probando realmente mediante pruebas codificadas como pruebas unitarias, se puede utilizar la característica de cobertura de código de Visual Studio. Para restringir con eficacia los errores, las pruebas deberían ensayar o “cubrir” una proporción considerable del código.  
@@ -267,15 +268,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  Después de que la compilación se ejecute, los resultados de cobertura de código están asociados a la serie de pruebas y aparecen en el resumen de la compilación.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analizar la cobertura del código en una línea de comandos  
- Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. La cobertura de código es una opción de esta utilidad. Para obtener más información, vea [Opciones de la línea de comandos para VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options).  
+
+Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. La cobertura de código es una opción de la utilidad vstest.console.exe.
+
+1.  Abra el símbolo del sistema de Visual Studio Developer:
   
-1.  Abra el símbolo del sistema de Visual Studio Developer:  
+    En el menú **Inicio** de Windows, elija **Visual Studio 2017** > **Símbolo del sistema para desarrolladores de VS 2017**.  
   
-     En el menú **Inicio** de Windows, elija **Todos los programas**, **Microsoft Visual Studio**, **Visual Studio Tools**, **Símbolo del sistema para desarrolladores**.  
+2.  Ejecute el siguiente comando:
   
-2.  Ejecute:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
 ## <a name="troubleshooting"></a>Solución de problemas  
  Si no ve los resultados de la cobertura de código, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md).  

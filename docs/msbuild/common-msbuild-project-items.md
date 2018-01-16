@@ -19,14 +19,14 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
-En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen varios elementos en común. Estos elementos se definen en el archivo microsoft.build.commontypes.xsd.  
+En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen varios elementos en común. Estos elementos se definen en el archivo Microsoft.Build.CommonTypes.xsd.  
   
 ## <a name="common-items"></a>Elementos comunes  
  A continuación, se muestra una lista de todos los elementos de proyecto comunes.  
@@ -34,7 +34,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="reference"></a>Referencia  
  Representa una referencia de ensamblado (administrada) del proyecto.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |HintPath|Cadena opcional. Ruta de acceso absoluta o relativa del ensamblado.|  
 |nombre|Cadena opcional. Nombre para mostrar del ensamblado, por ejemplo, "System.Windows.Forms".|  
@@ -46,7 +46,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comreference"></a>COMReference  
  Representa una referencia a un componente COM (no administrado) del proyecto.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |nombre|Cadena opcional. El nombre para mostrar del componente.|  
 |GUID|Cadena opcional. GUID del componente, con el formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -59,14 +59,14 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="comfilereference"></a>COMFileReference  
  Representa una lista de las bibliotecas de tipos que se pasan al destino ResolvedComreference.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |WrapperTool|Cadena opcional. Nombre de la herramienta contenedor que se usa en el componente, por ejemplo, "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Representa un archivo de manifiesto nativo o una referencia a este archivo.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |nombre|Cadena necesaria. Nombre base del archivo de manifiesto.|  
 |HintPath|Cadena necesaria. Ruta de acceso relativa del archivo de manifiesto.|  
@@ -74,7 +74,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="projectreference"></a>ProjectReference  
  Representa una referencia a otro proyecto.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |nombre|Cadena opcional. Nombre para mostrar de la referencia.|  
 |Proyecto|Cadena opcional. GUID de la referencia, con el formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -83,7 +83,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compile  
  Representa los archivos de código fuente para el compilador.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |AutoGen|Booleano opcional. Indica si el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ha generado el archivo para el proyecto.|  
@@ -94,7 +94,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Representa los recursos que se van a incrustar en el ensamblado generado.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
@@ -108,7 +108,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Contenido  
  Representa archivos que no están compilados en el proyecto pero que podrían incrustarse o publicarse junto con él.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  
@@ -123,7 +123,7 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="none"></a>Ninguna  
  Representa archivos que no deberían tener ningún rol en el proceso de compilación.  
   
-|Nombre del elemento|Description|  
+|Nombre de metadatos de elementos|Description|  
 |---------------|-----------------|  
 |DependentUpon|Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente.|  
 |Generator|Cadena necesaria. Nombre de cualquier generador de archivos que se ejecute en este elemento.|  

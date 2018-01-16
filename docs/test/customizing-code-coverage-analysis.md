@@ -7,21 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
+
 De forma predeterminada, la herramienta de cobertura de código de Visual Studio analiza todos los ensamblados de la solución (.exe/.dll) que se cargan durante las pruebas unitarias. Se recomienda mantener esta configuración predeterminada, porque funciona bien la mayoría de los casos. Para obtener más información, consulte [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- Antes de personalizar el comportamiento de la cobertura de código, considere algunas alternativas:  
+Antes de personalizar el comportamiento de la cobertura de código, considere algunas alternativas:  
   
 -   *Quiero excluir el código de prueba de los resultados de cobertura de código e incluir únicamente el código de la aplicación.*  
   
@@ -31,10 +31,11 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
   
      Obtenga los archivos .pdb para los ensamblados y cópielos en la misma carpeta que los archivos de ensamblado .dll.  
   
- Para personalizar el comportamiento de la cobertura de código, copie el [ejemplo al final de este tema](#sample) y agréguelo a la solución con la extensión de archivo .runsettings. Edítelo según sus necesidades y, luego, en el menú **Prueba**, elija **Configuración de pruebas**, **Seleccionar archivo de configuración de pruebas**. En el resto de este tema se describe el procedimiento con más detalle.  
+Para personalizar el comportamiento de la cobertura de código, copie el [ejemplo al final de este tema](#sample) y agréguelo a la solución con la extensión de archivo .runsettings. Edítelo según sus necesidades y, luego, en el menú **Prueba**, elija **Configuración de pruebas**, **Seleccionar archivo de configuración de pruebas**. En el resto de este tema se describe el procedimiento con más detalle.  
   
-## <a name="the-runsettings-file"></a>Archivo .runsettings  
- La configuración avanzada de la cobertura de código se especifica en un archivo .runsettings. Es el archivo de configuración que usan las herramientas de pruebas unitarias. Le recomendamos copiar el [ejemplo al final de este tema](#sample) y editarlo según sus necesidades.  
+## <a name="the-runsettings-file"></a>Archivo .runsettings
+
+La configuración avanzada de la cobertura de código se especifica en un archivo .runsettings. Es el archivo de configuración que usan las herramientas de pruebas unitarias. Le recomendamos copiar el [ejemplo al final de este tema](#sample) y editarlo según sus necesidades.  
   
 -   *¿Qué sucedió con el archivo .testsettings que usé en Visual Studio 2010?*  
   
@@ -58,8 +59,9 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
   
  Otros aspectos de las pruebas unitarias se pueden configurar en el mismo archivo .runsettings. Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md).  
   
-### <a name="specifying-symbol-search-paths"></a>Especificar rutas de búsqueda de símbolos  
- La cobertura de código requiere que estén presentes los símbolos (archivos .pdb) para los ensamblados. En el caso de los ensamblados compilados por su solución, los archivos de símbolos normalmente están presentes con los archivos binarios y la cobertura de código funciona automáticamente. Pero, en algunos casos, puede que desee incluir los ensamblados a los que se hace referencia en el análisis de cobertura de código. En esos casos, los archivos .pdb podrían no estar adyacentes a los archivos binarios pero puede especificar la ruta de búsqueda de símbolos en el archivo .runsettings.  
+### <a name="specifying-symbol-search-paths"></a>Especificar rutas de búsqueda de símbolos
+
+La cobertura de código requiere que estén presentes los símbolos (archivos .pdb) para los ensamblados. En el caso de los ensamblados compilados por su solución, los archivos de símbolos normalmente están presentes con los archivos binarios y la cobertura de código funciona automáticamente. Pero, en algunos casos, puede que desee incluir los ensamblados a los que se hace referencia en el análisis de cobertura de código. En esos casos, los archivos .pdb podrían no estar adyacentes a los archivos binarios pero puede especificar la ruta de búsqueda de símbolos en el archivo .runsettings.  
   
 ```xml  
 <SymbolSearchPaths>                
@@ -72,8 +74,9 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 > [!WARNING]
 >  La resolución de símbolos puede tardar tiempo, especialmente al utilizar una ubicación de archivo remoto con muchos ensamblados. Por consiguiente, considere la posibilidad de copiar los archivos remotos .pdb en la misma ubicación local que los archivos binarios (.dll y .exe).  
   
-### <a name="excluding-and-including"></a>Exclusión e inclusión  
- Puede excluir los ensamblados especificados del análisis de cobertura de código. Por ejemplo:  
+### <a name="excluding-and-including"></a>Exclusión e inclusión
+
+Puede excluir los ensamblados especificados del análisis de cobertura de código. Por ejemplo:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -99,8 +102,9 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
   
  `Include` se procesa antes de `Exclude`.  
   
-### <a name="regular-expressions"></a>Expresiones regulares  
- Los nodos de inclusión y exclusión usan expresiones regulares. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Las expresiones regulares no son iguales que los caracteres comodín. En concreto:  
+### <a name="regular-expressions"></a>Expresiones regulares
+
+Los nodos de inclusión y exclusión usan expresiones regulares. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Las expresiones regulares no son iguales que los caracteres comodín. En concreto:  
   
 1.  **.\*** coincide con una cadena de caracteres cualquiera  
   
@@ -178,43 +182,47 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
   
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>Cómo especificar los archivos .runsettings mientras se ejecutan pruebas  
   
-### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Para personalizar runsettings en las pruebas de Visual Studio  
- Elija **Prueba**, **Configuración de pruebas**, **Seleccionar archivo de configuración de pruebas** y seleccione el archivo .runsettings. El archivo aparece en el menú Configuración de pruebas, y puede seleccionarlo o cancelarlo. Mientras está seleccionado, el archivo .runsettings se aplica siempre que se use **Analizar cobertura de código**.  
-  
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>Para personalizar la configuración de ejecución en una prueba de la línea de comandos  
- Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. El archivo de configuración es un parámetro de esta utilidad. Para más información, vea [Usar VSTest.Console desde la línea de comandos](/devops-test-docs/test/using-vstest-console-from-the-command-line).  
-  
-1.  Abra el símbolo del sistema de Visual Studio Developer:  
-  
-     En Windows, elija **Inicio**, **Todos los programas**, **Microsoft Visual Studio**, **Visual Studio Tools** y **Símbolo del sistema para desarrolladores**.  
-  
-2.  Ejecute:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
-  
-### <a name="to-customize-run-settings-in-a-build-definition"></a>Para personalizar la configuración de ejecución en una definición de compilación  
- Puede obtener datos de cobertura de código de una compilación de equipo.  
-  
- ![Especificar parámetros de ejecución en una definición de compilación](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
-  
+### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Para personalizar runsettings en las pruebas de Visual Studio
+
+Elija **Prueba** > **Configuración de pruebas** > **Seleccionar archivo de configuración de pruebas** y seleccione el archivo .runsettings. El archivo aparece en el menú Configuración de pruebas, y puede seleccionarlo o cancelarlo. Mientras está seleccionado, el archivo .runsettings se aplica siempre que se use **Analizar cobertura de código**.
+
+### <a name="to-customize-run-settings-in-a-command-line-test"></a>Para personalizar la configuración de ejecución en una prueba de la línea de comandos
+
+Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. El archivo de configuración es un parámetro de esta utilidad.
+
+1.  Abra el símbolo del sistema de Visual Studio Developer:
+
+    En el menú **Inicio** de Windows, elija **Visual Studio 2017** > **Símbolo del sistema para desarrolladores de VS 2017**.
+
+2.  Ejecute el siguiente comando:
+
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
+
+### <a name="to-customize-run-settings-in-a-build-definition"></a>Para personalizar la configuración de ejecución en una definición de compilación
+
+Puede obtener datos de cobertura de código de una compilación de equipo.
+
+![Especificar parámetros de ejecución en una definición de compilación](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
+
 1.  Asegúrese de que el archivo .runsettings está protegido.  
   
 2.  En Team Explorer, abra **Compilaciones** y agregue o modifique una definición de compilación.  
   
-3.  En la página **Proceso**, expanda **Pruebas automatizadas**, **Origen de la prueba**, **Parámetros de ejecución**. Seleccione el archivo **.runsettings**.  
+3.  En la página **Proceso**, expanda **Pruebas automatizadas** > **Origen de la prueba** > **Parámetros de ejecución**. Seleccione el archivo **.runsettings**.
   
     -   *Pero aparece **Ensamblado de prueba** en lugar de **Origen de la prueba**. Cuando intento establecer el campo **Parámetros de ejecución**, solo puedo seleccionar los archivos .testsettings.*  
   
          En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y haga clic en **[…]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, establezca **Ejecutor de pruebas** en **Ejecutor de pruebas de Visual Studio**.  
   
- Los resultados están visibles en la sección de resumen del informe de compilación.  
+Los resultados están visibles en la sección de resumen del informe de compilación.
   
-##  <a name="sample"></a> Archivo de ejemplo .runsettings  
- Copie el código y edítelo para satisfacer sus propias necesidades. Este es el archivo .runsettings predeterminado.  
-  
- (Para otros usos del archivo .runsettings, vea [Configurar pruebas unitarias con un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)).  
-  
-```xml  
+##  <a name="sample"></a> Archivo de ejemplo .runsettings
+
+Copie el código y edítelo para satisfacer sus propias necesidades. Este es el archivo .runsettings predeterminado.
+
+(Para otros usos del archivo .runsettings, vea [Configurar pruebas unitarias con un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)).
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <!-- File name extension must be .runsettings -->  
 <RunSettings>  
@@ -322,10 +330,10 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>  
     </DataCollectors>  
   </DataCollectionRunSettings>  
-</RunSettings>  
-  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
+</RunSettings>
+```
+
+## <a name="see-also"></a>Vea también
+
+[Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)  
+[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)

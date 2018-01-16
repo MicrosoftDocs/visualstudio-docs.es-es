@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: 9770a484c6949695641234a96d8b5a6cdb3c645b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>Depuración del código de Python
 
@@ -31,7 +31,7 @@ En este tema:
 
 - [Depuración básica](#basic-debugging)
 - [Opciones de depuración de proyectos](#project-debugging-options)
-- [Ventana interactiva de depuración](#the-debug-interactive-window)
+- [Ventanas inmediatas e interactivas](#immediate-and-interactive-windows)
 
 Vea también los siguientes temas de depuración específicos para distintos escenarios:
 
@@ -163,6 +163,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 | Variables de entorno | En este cuadro de texto multilínea, agregue entradas con el formato `NAME=VALUE`. Como esta configuración se aplica al final, encima de cualquier variable de entorno global existente y, después, `PYTHONPATH` se establece según la configuración de Rutas de búsqueda, puede usarse para reemplazar manualmente cualquier de esas otras variables. |
 
 <a name="the-debug-interactive-window"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>Ventana Inmediato e interactiva
 
 Existen dos ventanas interactivas que puede utilizar durante una sesión de depuración: la ventana Inmediato de Visual Studio estándar y la ventana de depuración de Python interactiva.
