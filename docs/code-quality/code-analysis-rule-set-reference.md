@@ -14,14 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e132146ce1ae19e95a7e8f6974dab25be38db5b
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
-Al configurar el análisis de código para administra proyectos de código de [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]se le presentará una lista integrados de *conjuntos de reglas*. Se puede usar uno de los conjuntos de reglas estándar o puede personalizar un conjunto de reglas para ajustarse a los requisitos del proyecto.  
+Al configurar el análisis de código para administra proyectos de código de [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], o [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)] se le presentará una lista integrados de *conjuntos de reglas*. Se puede usar uno de los conjuntos de reglas estándar o puede personalizar un conjunto de reglas para ajustarse a los requisitos del proyecto.  
   
 ## <a name="available-rule-sets"></a>Conjuntos de reglas disponibles  
  En la tabla siguiente se enumeran los conjuntos de reglas predeterminados:  
