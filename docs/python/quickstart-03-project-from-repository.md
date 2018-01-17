@@ -7,17 +7,19 @@ ms.suite:
 ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: quickstart
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 5ce79d4e8ff2056b5d713eaa781b22359141c9b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inició rápido: Clonado de un repositorio de código Python en Visual Studio
 

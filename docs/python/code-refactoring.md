@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 60e6daf25d4ce9c43f07495e9efa89ec215ec16b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: d59d44f4b5969cfc2da4a729f9b6297c97e443ee
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="refactoring-python-code"></a>Refactorización del código de Python
 
@@ -26,7 +28,7 @@ Visual Studio proporciona varios comandos para transformar y limpiar automática
 - [Cambiar nombre](#rename): cambia el nombre de la clase, el método o la variable seleccionados.
 - [Extraer método](#extract-method): crea un nuevo método a partir del código seleccionado.
 - [Agregar importación](#add-import): proporciona una etiqueta inteligente para agregar una importación que falta.
-- [Quitar importaciones no usadas](#remove-imports): quita las importaciones no utilizadas.
+- [Quitar importaciones no usadas](#remove-unused-imports): quita las importaciones no utilizadas.
 
 <a name="rename-variable"</a>
 
@@ -72,6 +74,7 @@ De forma similar, Visual Studio filtra las funciones que se importan desde otros
 Por último, si algo se fuese a excluir normalmente, pero tiene otros valores que se incluirán (por ejemplo, porque al nombre se le ha asignado un valor en el módulo), Visual Studio sigue excluyendo la importación. Este comportamiento asume que el valor no debe exportarse porque está definido en otro módulo y, por tanto, es probable que la asignación adicional sea un valor ficticio que tampoco se exporta.
 
 <a name="remove-imports"</a>
+
 ## <a name="remove-unused-imports"></a>Quitar importaciones no usadas
 
 Al escribir código, resulta fácil terminar con instrucciones `import` para módulos que no se usan en absoluto. Dado que Visual Studio analiza el código, puede determinar automáticamente si una instrucción `import` es necesaria; basta con que vea si el nombre importado se usa dentro del ámbito siguiente donde se produce la instrucción.

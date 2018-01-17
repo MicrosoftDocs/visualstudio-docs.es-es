@@ -11,11 +11,11 @@ helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-create-item-templates"></a>Cómo: Crear plantillas de elemento
 
@@ -62,8 +62,6 @@ El asistente hace gran parte del trabajo de creación de una plantilla básica, 
    ```xml
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
-
-   Para proyectos de C# de Windows 8.1, en el archivo .vstemplate, agregue el siguiente XML entre las etiquetas de apertura y de cierre `<TemplateData>`: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Para los proyectos C++ de Windows 8.1, use un valor de `WinRT-Native-6.3`. Para tipos de proyecto de Windows 10 y otros, vea [TemplateGroupID element (Extensibility)](../extensibility/templategroupid-element-visual-studio-templates.md) (Elemento TemplateGroupID (Extensibilidad)). Para ver la referencia completa de .vstemplate, vea [Referencia de esquema de plantilla de Visual Studio (Extensibilidad)](../extensibility/visual-studio-template-schema-reference.md).
 
 1. En Visual Studio, guarde el archivo .vstemplate y ciérrelo.
 

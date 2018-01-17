@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Cómo: Solucionar problemas de plantillas
 
@@ -47,20 +47,6 @@ Si el archivo .vstemplate en una plantilla no cumple el esquema de plantilla de 
 1. Coloque el nuevo archivo .zip en el mismo directorio que el antiguo.
 
 1. Elimine los archivos de plantilla extraídos y el archivo .zip de plantilla antiguo.
-
-## <a name="monitor-the-event-log"></a>Supervisión del registro de eventos
-
-Visual Studio registra los errores que se encuentra al procesar archivos .zip de plantilla. Si una plantilla no aparece en el cuadro de diálogo **Nuevo proyecto** según lo previsto, puede usar el **Visor de eventos** para solucionar el problema.
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>Para buscar errores de plantilla en el Visor de eventos
-
-1. En Windows, en el menú **Inicio**, seleccione **Herramientas administrativas de Windows** > **Visor de eventos**.
-
-1. En el panel izquierdo, seleccione **Registros de Windows** > **Aplicación**.
-
-1. Busque los eventos que tengan un valor **Source** de `Visual Studio - VsTemplate`.
-
-1. Para ver un error, haga doble clic en un evento de plantilla.
 
 ## <a name="enable-diagnostic-logging"></a>Habilitación del registro de diagnóstico
 
