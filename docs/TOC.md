@@ -84,6 +84,13 @@
 #### [Elección de una versión específica de .NET Framework](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [Información general de la compatibilidad con múltiples versiones](ide/visual-studio-multi-targeting-overview.md)
 ##### [Uso de una versión de .NET Framework como destino](ide/how-to-target-a-version-of-the-dotnet-framework.md)
+#### Creación de plantillas de proyecto y elemento
+##### [Creación de plantillas de proyecto](ide/how-to-create-project-templates.md)
+##### [Creación de plantillas de varios proyectos](ide/how-to-create-multi-project-templates.md)
+##### [Creación de plantillas de elementos](ide/how-to-create-item-templates.md)
+##### [Creación de plantillas de elementos de varios archivos](ide/how-to-create-multi-file-item-templates.md)
+##### [Creación de plantillas web](ide/how-to-manually-create-web-templates.md)
+##### [Solución de problemas de plantillas](ide/how-to-troubleshoot-templates.md)
 #### [Compatibilidad de 64 bits del IDE de Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Desarrollo sin proyectos o soluciones ("Abrir carpeta")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [Escribir código en el editor](ide/writing-code-in-the-code-and-text-editor.md)
@@ -95,7 +102,7 @@
 #### [Codificaciones y saltos de línea](ide/encodings-and-line-breaks.md)
 ##### [Guardar y abrir archivos con codificación](ide/how-to-save-and-open-files-with-encoding.md)
 #### [Esquematización](ide/outlining.md)
-#### [Generación automática de código](ide/code-generation-in-visual-studio.md)
+#### [Generación y corrección del código](ide/code-generation-in-visual-studio.md)
 ##### [Fragmentos de código](ide/code-snippets.md)
 ###### Uso de fragmentos de código
 ####### [Fragmentos de código de Visual C#](ide/visual-csharp-code-snippets.md)
@@ -305,15 +312,9 @@
 ### [Personalización de plantillas de proyectos y elementos](ide/customizing-project-and-item-templates.md)
 #### [Actualización de plantillas existentes](ide/how-to-update-existing-templates.md)
 #### [Sustitución de parámetros en una plantilla](ide/how-to-substitute-parameters-in-a-template.md)
-### Creación de plantillas de proyectos y elementos
-#### [Creación de plantillas de proyecto](ide/how-to-create-project-templates.md)
-#### [Creación de plantillas de varios proyectos](ide/how-to-create-multi-project-templates.md)
-#### [Creación de plantillas de elementos](ide/how-to-create-item-templates.md)
-#### [Creación de plantillas de elementos de varios archivos](ide/how-to-create-multi-file-item-templates.md)
-#### [Creación de plantillas web](ide/how-to-manually-create-web-templates.md)
+### Plantillas de proyecto y elemento
 ### [Parámetros de plantilla](ide/template-parameters.md)
-### [Referencia de esquema de plantillas (extensibilidad)](extensibility/visual-studio-template-schema-reference.md)
-### [Solución de problemas de plantillas](ide/how-to-troubleshoot-templates.md)
+### [Referencia de esquema de plantillas (extensibilidad)](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
 ## Elementos generales de la interfaz de usuario
 ### [Jerarquía de llamadas](ide/reference/call-hierarchy.md)
 ### [Vista previa de cambios](ide/preview-changes.md)
