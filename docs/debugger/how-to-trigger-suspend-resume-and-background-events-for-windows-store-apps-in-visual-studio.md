@@ -1,7 +1,7 @@
 ---
 title: "Cómo desencadenar suspender, reanudar y eventos en segundo plano durante la depuración de aplicaciones UWP | Documentos de Microsoft"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,17 +13,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Cómo desencadenar suspender, reanudar y eventos en segundo plano durante la depuración de aplicaciones UWP en Visual Studio
 Cuando no estás depurando, la **Administración de la duración de los procesos** (PLM) de Windows controla el estado de ejecución de la aplicación, es decir, inicia, suspende, reanuda y finaliza la aplicación en respuesta a las acciones del usuario y al estado del dispositivo. Mientras depuras, Windows deshabilita estos eventos de activación. En este tema se describe cómo activar estos eventos en el depurador.  
@@ -31,19 +30,6 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
  También se describe cómo depurar **tareas en segundo plano**. Las tareas en segundo plano te permiten realizar algunas operaciones en un proceso de segundo plano, aunque la aplicación no se esté ejecutando. Puedes utilizar el depurador para poner la aplicación en modo de depuración y, sin iniciar la interfaz de usuario, iniciar y depurar la tarea en segundo plano.  
   
  Para obtener más información acerca de las tareas de administración de la duración de proceso y de fondo vea [iniciar, reanudar y multitarea](/windows/uwp/launch-resume/index).  
-  
-##  <a name="BKMK_In_this_topic"></a> En este tema  
- [Desencadenar eventos de la Administración de la duración de los procesos](#BKMK_Trigger_Process_Lifecycle_Management_events)  
-  
- [Desencadenar tareas en segundo plano](#BKMK_Trigger_background_tasks)  
-  
--   [Desencadenar un evento de tarea en segundo plano desde una sesión de depuración estándar](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
-  
--   [Desencadenar una tarea en segundo plano cuando la aplicación no se está ejecutando](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
-  
- [Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
-  
- [Diagnosticar errores de activación de tareas en segundo plano](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Desencadenar eventos de la Administración de la duración de los procesos  
  Windows puede suspender la aplicación cuando el usuario cambia a otra aplicación o cuando Windows entra en estado de baja energía. Puedes responder al evento `Suspending` para guardar los datos pertinentes de la aplicación y del usuario en el almacenamiento persistente, y para liberar recursos. Cuando una aplicación se reanuda del estado **suspendido** , entra en el estado de **ejecución** y sigue desde el punto donde se suspendió. Puedes responder al evento `Resuming` para restaurar o actualizar el estado de la aplicación, y para reclamar recursos.  
@@ -88,7 +74,7 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
   
 2.  Abre la página de propiedades de depuración del proyecto de inicio. En el Explorador de soluciones, seleccione el proyecto. En el menú **Depurar** , elige **Propiedades**.  
   
-     Para los proyectos de C++, es posible que tengas que expandir **Propiedades de configuración** y elegir **Depuración**.  
+     Para los proyectos de C++ y JavaScript, expanda **propiedades de configuración** y, a continuación, elija **depuración**.  
   
 3.  Realice una de las siguientes acciones:  
   
@@ -109,12 +95,12 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
      ![Suspender, reanudar, terminar y tareas en segundo plano](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Desencadenar eventos de la Administración de la duración de los procesos y tareas en segundo plano desde una aplicación instalada  
- Utiliza el cuadro de diálogo Depurar aplicación instalada para cargar una aplicación que ya esté instalada en el depurador. Por ejemplo, puede depurar una aplicación que se instaló desde Microsoft Store o depurar una aplicación cuando tienes los archivos de origen de la aplicación, pero no un proyecto de Visual Studio para la aplicación. El cuadro de diálogo Depurar aplicación instalada te permite iniciar una aplicación en modo de depuración en el equipo de Visual Studio o en un dispositivo remoto, o establecer que la aplicación se ejecute en modo de depuración pero no iniciarla. Consulte la **iniciar una aplicación instalada en el depurador** sección de [iniciar una sesión de depuración en una aplicación UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
+ Use la **depurar paquete de aplicaciones instalado** cuadro de diálogo para cargar una aplicación que ya esté instalada en el depurador. Por ejemplo, puede depurar una aplicación que se instaló desde Microsoft Store o depurar una aplicación cuando tienes los archivos de origen de la aplicación, pero no un proyecto de Visual Studio para la aplicación. El **depurar paquete de aplicaciones instalado** cuadro de diálogo permite iniciar una aplicación en modo de depuración en el equipo de Visual Studio o en un dispositivo remoto, o para establecer la aplicación se ejecute en modo de depuración pero no iniciarla. Para obtener más información, consulte [depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).
   
  Una vez cargada la aplicación en el depurador, puedes usar cualquiera de los procedimientos descritos más arriba.  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnosticar errores de activación de tareas en segundo plano  
- Los registros de diagnóstico del Visor de eventos de Windows de la infraestructura de segundo plano contienen información detallada que puedes utilizar para diagnosticar y solucionar problemas de errores de tareas en segundo plano. Para ver el registro:  
+ Los registros de diagnóstico en el Visor de eventos de Windows para la infraestructura de segundo plano contiene información detallada que puede utilizar para diagnosticar y solucionar problemas de errores de tareas en segundo plano. Para ver el registro:  
   
 1.  Abra la aplicación Visor de eventos.  
   
@@ -127,5 +113,5 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 ## <a name="see-also"></a>Vea también  
  [Testing UWP apps with Visual Studio (Probar aplicaciones para UWP con Visual Studio)](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Ciclo de vida de aplicación](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Iniciar, reanudar y multitarea](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Ciclo de vida de aplicación](/windows/uwp/launch-resume/app-lifecycle)   
+ [Iniciar, reanudar y multitarea](/windows/uwp/launch-resume/index)

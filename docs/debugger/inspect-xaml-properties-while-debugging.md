@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70ca76a3b611b0490def98b1a24936f71ca42e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40ff41cc6728244d11e93541057af1cb525c7af3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspeccionar las propiedades XAML durante la depuración
 Puede obtener una vista en tiempo real del código XAML en ejecución con el **Live Visual Tree** y **Live Property Explorer**. Estas herramientas le proporcionan una vista de árbol de los elementos de interfaz de usuario de la aplicación XAML en ejecución y le muestran las propiedades en runtime de cualquier elemento de interfaz de usuario que seleccione.  
@@ -27,7 +27,6 @@ Puede obtener una vista en tiempo real del código XAML en ejecución con el **L
 |Tipo de aplicación|Sistema operativo y herramientas|  
 |-----------------|--------------------------------|  
 |Aplicaciones de Windows Presentation Foundation (4.0 y versiones posteriores)|Windows 7 y versiones posteriores|  
-|Windows 8.1 y Windows Phone 8.1 aplicaciones|Windows 10 y versiones posteriores, con el [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
 |Aplicaciones Windows universales|Windows 10 y versiones posteriores, con el [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Inspeccionar elementos en Live Visual Tree  

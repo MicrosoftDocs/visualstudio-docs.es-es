@@ -1,7 +1,7 @@
 ---
 title: Implementar aplicaciones UWP desde Visual Studio | Documentos de Microsoft
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones UWP desde Visual Studio
-![Solo se aplica a Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  La funcionalidad de implementación de Visual Studio crea y registra aplicaciones para UWP que se crean con Visual Studio en un dispositivo de destino. El modo en que se registra la aplicación depende de si el dispositivo de destino es local o remoto.  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 En un dispositivo remoto de Windows 10, debe habilitar [modo de programador](/windows/uwp/get-started/enable-your-device-for-development). En dispositivos Windows 10 que ejecutan la actualización del creador o versiones posteriores, las herramientas remotas se instalan automáticamente al implementar la aplicación. Para obtener más información, consulte [depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> En Windows 8.1 y versiones de actualización del creador anterior de Windows 10, las herramientas remotas para Visual Studio debe instalarse en el dispositivo remoto y el depurador remoto debe estar ejecutándose. En Windows 8.1, también debe instalar una licencia de desarrollador.
+> En versiones de actualización del creador anterior de Windows 10, las herramientas remotas para Visual Studio debe instalarse en el dispositivo remoto y el depurador remoto debe estar ejecutándose.
   
 En la implementación se usa el canal de la red del depurador remoto para enviar los archivos de aplicación al dispositivo remoto.  
   
@@ -117,5 +115,6 @@ En la implementación se usa el canal de la red del depurador remoto para enviar
 -   En JavaScript y en la página de propiedades de depuración, establezca el valor de **Iniciar aplicación** en **Sí**.  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).   
+ [Opciones de implementación remota avanzada](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Depurar un paquete de aplicación instalada](../debugger/debug-installed-app-package.md)   
  [Ejecutar aplicaciones desde Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

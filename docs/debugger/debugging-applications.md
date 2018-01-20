@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>Aplicaciones de depuración
 Las secciones siguientes tratan la depuración de tipos específicos de aplicaciones. Diferentes tipos de aplicaciones en distintos lenguajes requieren configuraciones y técnicas propias, y presentan distintos problemas que es necesario depurar.  
@@ -31,7 +31,7 @@ Las secciones siguientes tratan la depuración de tipos específicos de aplicaci
   
 |||  
 |-|-|  
-|[Depurar aplicaciones de Windows 8.1 y UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Describe cómo depurar aplicaciones UWP.|  
+|[Depuración de aplicaciones para UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Describe cómo depurar aplicaciones UWP.|  
 |[Depuración del código administrado](../debugger/debugging-managed-code.md)|Describe cómo depurar código administrado (Visual C#, Visual Basic y F3).|  
 |[Depuración del código nativo](../debugger/debugging-native-code.md)|Describe cómo depurar otro tipo de aplicaciones C++ nativas.|  
 |[Depuración del código de GPU](../debugger/debugging-gpu-code.md)|Describe cómo depurar el código de C++ que se ejecuta en la Unidad de procesamiento de gráficos (GPU).|  

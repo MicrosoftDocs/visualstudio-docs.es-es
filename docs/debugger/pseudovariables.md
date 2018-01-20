@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e2e5e716bd63170554537ec77895055de1fd83a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables que en el depurador de Visual Studio
 Pseudovariables son términos que se usan para mostrar determinada información en una ventana de variables o **Inspección rápida** cuadro de diálogo. Las pseudovariables se pueden especificar de la misma manera que las variables normales. No obstante, las pseudovariables no son variables ni corresponden a nombres de variable del programa.  
@@ -52,7 +52,7 @@ $handles
 |`$`*registername*<br /><br /> o<br /><br /> `@`*registername*|Muestra el contenido del registro *registername*.<br /><br /> Normalmente, puede mostrar el contenido del registro con solo escribir su nombre. La única vez que necesita utilizar esta sintaxis es cuando el nombre del registro sobrecarga un nombre de variable. Si el nombre del registro es igual que un nombre de variable en el ámbito actual, el depurador lo interpreta como un nombre de variable. Es decir, cuando `$` *registername* o `@` *registername* es muy práctico.|  
 |`$clk`|Muestra la hora en ciclos de reloj.|  
 |`$user`|Muestra una estructura con información de la cuenta que ejecuta la aplicación. Por razones de seguridad, no se muestra la información de contraseña.|  
-|`$exceptionstack`|Muestra el seguimiento de pila de excepción actual de Windows Runtime. `$ exceptionstack`funciona únicamente en las aplicaciones UWP y Windows 8.1 o posterior. No se admite `$ exceptionstack` para excepciones de C++ y SHE.|  
+|`$exceptionstack`|Muestra el seguimiento de pila de excepción actual de Windows Runtime. `$ exceptionstack`solo funciona en aplicaciones UWP. No se admite `$ exceptionstack` para excepciones de C++ y SHE.|  
 |`$ReturnValue`|Muestra el valor devuelto de un método de .NET Framework.|  
   
  En C# y Visual Basic, puede utilizar las pseudovariables que se muestran en esta tabla:  
@@ -68,7 +68,7 @@ $handles
 |--------------------|--------------|  
 |`$delete` o `$$delete`|Elimina una variable implícita que se creó en el **inmediato** ventana. La sintaxis es `$delete,` *variable* o`$delete,` *variable*`.`|  
 |`$objectids` o `$listobjectids`|Muestra todos los identificadores de objetos activos como elementos secundarios de la expresión especificada. La sintaxis es `$objectid,` *expresión* o`$listobjectids,` *expresión*`.`|  
-|`$`*N*`#`|Muestra el objeto cuyo identificador es igual a *N*.|  
+|`$` *N* `#`|Muestra el objeto cuyo identificador es igual a *N*.|  
 |`$dynamic`|Muestra el especial **vista dinámica** nodo para un objeto que implementa el `IDynamicMetaObjectProvider`. . La sintaxis es `$dynamic,` *objeto*. Esta característica solo se aplica a código que utiliza .NET Framework versión 4.|  
   
 ## <a name="see-also"></a>Vea también  

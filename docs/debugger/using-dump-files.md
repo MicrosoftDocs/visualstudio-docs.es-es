@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar archivos de volcado de memoria con Visual Studio
 Archivos de volcado de memoria con o sin montones; crear un archivo de volcado; abrir un archivo de volcado de memoria; buscar los archivos binarios, el del archivo pdb y el archivo de código fuente para un archivo de volcado.
@@ -56,11 +56,11 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado; 
   
 -   Visual Studio puede depurar archivos de volcado de memoria de aplicaciones nativas desde dispositivos ARM. Visual Studio también puede depurar archivos de volcado de memoria de aplicaciones administradas desde dispositivos ARM pero solo en el depurador nativo.  
   
--   Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) volcar archivos en Visual Studio 2013, descargue el [Windows 8.1 versión de herramientas de depuración para Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Vea [depuración del Kernel en Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) archivos de volcado, descargue las herramientas de depuración para Windows que forma parte de la [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit). 
   
 -   Visual Studio no puede depurar archivos de volcado de memoria guardados en el formato de volcado de memoria anterior conocido como un [volcado completo en modo usuario](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Tenga en cuenta que un volcado de memoria completo en modo usuario no es igual que un volcado de memoria con montón.  
   
--   Para depurar con la [SOS.dll (extensión de depuración de SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) en Visual Studio, debe instalar las herramientas de depuración para Windows que forma parte del Windows Driver Kit (WDK). Vea [Windows 8.1 Preview: descargar kits, bits y herramientas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   Para depurar con la [SOS.dll (extensión de depuración de SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) en Visual Studio, debe instalar las herramientas de depuración para Windows que forma parte de la [Windows Driver Kit (WDK)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Crear un archivo de volcado de memoria  
  Para crear un archivo de volcado de memoria con Visual Studio:  

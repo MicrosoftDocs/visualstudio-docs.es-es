@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Cambios admitidos en el código (C# y Visual Basic)
 Editar y continuar controla la mayoría de los tipos de cambios de código dentro de los cuerpos de método. Ahora bien, durante la depuración, no es posible efectuar la mayoría de cambios fuera de los cuerpos de método y algunos cambios dentro de estos. Para efectuar dichos cambios no compatibles, es necesario detener la depuración y reiniciar con una versión nueva del código.
@@ -86,7 +86,7 @@ La siguiente tabla muestra los cambios que pueden realizarse en el código de Vi
 
 ## <a name="unsupported-app-scenarios"></a>Escenarios de aplicaciones no compatibles
 
-Plataformas y aplicaciones no compatibles incluyen ASP.NET 5, el emulador de Silverlight 5, Windows Phone y Windows Phone y Windows 8.1.
+Plataformas y aplicaciones no compatibles incluyen ASP.NET 5, 5 de Silverlight y Windows 8.1.
 
 > [!NOTE]
 > Las aplicaciones compatibles incluyen UWP en x86 y x64 aplicaciones que tienen como destino .NET Framework 4.6 y Windows 10 escritorio o versiones posteriores (.NET Framework es una versión de escritorio).

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problemas conocidos y solución de problemas de instantáneas de depuración en Visual Studio
 
@@ -71,6 +71,17 @@ Siga estos pasos:
 - Variables especiales, como *$FUNCTION* o *$CALLER*, no se puede evaluar en instrucciones condicionales o logpoints para los proyectos de ASP.NET Core.
 - Depuración instantánea no funciona en los servicios de aplicaciones que tienen [almacenamiento en caché Local](/azure/app-service/app-service-local-cache) activado.
 - Depurar aplicaciones de la API de instantánea no se admite actualmente.
+
+## <a name="site-extension-upgrade"></a>Actualización de la extensión de sitio
+
+Depuración instantánea y Application Insights dependen de un ICorProfiler que se carga en el proceso del sitio y provoca problemas de bloqueo de archivos durante la actualización. Se recomienda este proceso para asegurarse de que no hay ningún tiempo de inactividad para el sitio de producción.
+
+- Crear un [ranura de implementación](/azure/app-service/web-sites-staged-publishing) dentro de su servicio de aplicación e implementará su sitio en la ranura.
+- Intercambiar la ranura de producción desde el Explorador de nube en Visual Studio o desde el Portal de Azure.
+- Detener el sitio de la ranura. Este proceso tardará unos segundos se va a terminar el proceso w3wp.exe de sitio de todas las instancias.
+- Actualizar la extensión de sitio de la ranura desde el sitio Kudu o el Portal de Azure (*hoja de servicio de aplicaciones > herramientas de desarrollo > Extensiones > actualización*).
+- Iniciar el sitio de la ranura. Le recomendamos visitar el sitio para el estado nuevo.
+- Intercambiar la ranura de producción.
 
 ## <a name="see-also"></a>Vea también
 

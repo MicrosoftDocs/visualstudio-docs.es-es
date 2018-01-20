@@ -27,22 +27,23 @@ f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.Authentication
 - VC.Project.IVCAppHostRemoteDebugPageObject.DebuggerType
 - VC.Project.IVCAppHostSimulatorDebugPageObject.BreakpointBehavior
+- vs.debug.installedapppackagelauncher
+- vs.debug.error.wwahost_scriptdebuggingdisabled
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 66ec0e79-8261-4c19-a618-3fd1b3f71bbd
 caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 367fc334d0268a73e8ad1a33ebdc6e74036ddc86
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Iniciar una sesión de depuración para una aplicación de UWP en Visual Studio
   
@@ -73,10 +74,10 @@ Elige una de estas opciones:
 |||  
 |-|-|  
 |**Equipo local**|Depura la aplicación en la sesión actual en el equipo local.|  
-|**Simulador**|Depurar la aplicación en el simulador de Visual Studio para UWP y [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicaciones. El simulador es una ventana del escritorio que le permite depurar la funcionalidad del dispositivo, por ejemplo, gestos táctiles y de rotación de dispositivos, que no estén disponibles en el equipo local. Esta opción solo está disponible si la aplicación **mínima de la plataforma de destino. Versión** es menor o igual que el sistema operativo en el equipo de desarrollo. Vea [UWP ejecutar aplicaciones en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+|**Simulador**|Depurar la aplicación en el simulador de Visual Studio para aplicaciones UWP. El simulador es una ventana del escritorio que le permite depurar la funcionalidad del dispositivo, por ejemplo, gestos táctiles y de rotación de dispositivos, que no estén disponibles en el equipo local. Esta opción solo está disponible si la aplicación **mínima de la plataforma de destino. Versión** es menor o igual que el sistema operativo en el equipo de desarrollo. Vea [UWP ejecutar aplicaciones en el simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|  
 |**Equipo remoto**|Depura la aplicación en un dispositivo que esté conectado al equipo local a través de la intranet o directamente mediante un cable Ethernet. Para depurar remotamente, las herramientas remotas para Visual Studio debe estar instalado y ejecutándose en el dispositivo remoto. Vea [UWP ejecutar aplicaciones en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
 |**Dispositivo**|Depurar la aplicación en un dispositivo USB conectado. El dispositivo debe ser programador desbloqueada y tener la pantalla desbloqueada.|  
-|**Emulador de dispositivos móvil**|Inicie un emulador con la configuración especificada en el nombre del emulador, implementar la aplicación e inicie la depuración. Emuladores solo están disponibles en equipos de Hyper-V habilitado ejecutan Windows 8.1 o versiones posteriores.|  
+|**Emulador de dispositivos móvil**|Inicie un emulador con la configuración especificada en el nombre del emulador, implementar la aplicación e inicie la depuración. Emuladores solo están disponibles en equipos de Hyper-V habilitado.|  
 
 ##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Elija otras opciones de depuración  
 
@@ -119,7 +120,7 @@ En aplicaciones de C# y Visual Basic, se puede establecer el mismo **el tipo de 
   
 -   Para aplicaciones de Visual C# y Visual Basic, selecciona **No iniciar, pero depurar mi código al empezar** en la página de propiedades de **Depurar** .  
   
--   Para las aplicaciones de Visual C++ y JavaScript, seleccione **Sí** desde el **Iniciar aplicación** lista el **depuración** página de propiedades.  
+-   Para las aplicaciones de Visual C++ y JavaScript, seleccione **No** desde el **Iniciar aplicación** lista el **depuración** página de propiedades.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (Opcional) Deshabilitar bucles invertidos de red  
   
@@ -169,7 +170,7 @@ En aplicaciones de C# y Visual Basic, se puede establecer el mismo **el tipo de 
   
  La aplicación se inicia en modo de depuración. La ejecución continúa hasta que se alcanza un punto de interrupción, se suspende manualmente la ejecución, se produce una excepción no controlada o la aplicación finaliza.  
   
- . Para obtener más información sobre la depuración de tareas en segundo plano, consulte [desencadenador suspender, reanudar y eventos para aplicaciones UWP en segundo plano)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
+ Para obtener más información sobre la depuración de tareas en segundo plano, consulte [desencadenador suspender, reanudar y eventos para aplicaciones UWP en segundo plano)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
 ###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Iniciar una aplicación instalada en el depurador  
 Si inicias la depuración utilizando F5, Visual Studio compila e implementa la aplicación, establece que la aplicación se ejecute en modo de depuración y, a continuación, la inicia. Para iniciar una aplicación que ya está instalada en un dispositivo, use la **depurar paquete de aplicaciones instalado** cuadro de diálogo. Este procedimiento es útil si necesitas depurar una aplicación que se instaló desde Microsoft Store, o si tiene los archivos de origen de la aplicación, pero no tiene un proyecto de Visual Studio para la aplicación. Por ejemplo, puede que tengas un sistema de compilación personalizado que no utilice proyectos o soluciones de Visual Studio.  
@@ -177,9 +178,6 @@ Si inicias la depuración utilizando F5, Visual Studio compila e implementa la a
 La aplicación puede estar instalada en el dispositivo local o en un dispositivo remoto.  Puedes iniciar la aplicación inmediatamente o establecer que se ejecute en el depurador cuando se inicie mediante otro proceso o método, por ejemplo desde el menú Inicio o mediante un contrato de activación. También puedes establecer que la aplicación se ejecute en modo de depuración cuando desees depurar un proceso en segundo plano sin iniciar la aplicación. Para obtener más información, consulte [desencadenador suspender, reanudar y eventos para aplicaciones UWP en segundo plano)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
 Para iniciar una aplicación instalada en el depurador, elija **depurar**, a continuación, **otros destinos de depuración**y, a continuación, **depurar paquete de aplicaciones instalado**. Para obtener instrucciones, consulte [depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).
-
-> [!NOTE]
-> Para Windows 8.1, elija **depurar**y, a continuación, elija **depurar paquete de aplicaciones instalado**.
 
 ###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Asociar al depurador a una aplicación UWP en ejecución  
 

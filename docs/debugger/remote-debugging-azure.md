@@ -16,14 +16,14 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Depuración remota de núcleo de ASP.NET en IIS y Azure en Visual Studio de 2017
-Puede implementar una aplicación Web ASP.NET en un equipo con Windows Server con IIS y configurarlo para la depuración remota. Esta guía explica cómo instalar y configurar una aplicación de Visual Studio de 2017 ASP.NET Core, implementarla en IIS con Azure y asociar al depurador remoto de Visual Studio.
+Para el servicio de aplicación de Azure, se recomienda que depurar utilizando la [depurador instantánea](../debugger/debug-live-azure-applications.md) o bien puede seguir las instrucciones de este tema para adjuntar el depurador de Visual Studio. Si está ejecutando Windows Server con IIS en una VM de Azure, también puede establecer para la depuración remota. Esta guía explica cómo instalar y configurar una aplicación de Visual Studio de 2017 ASP.NET Core, implementarla en IIS con Azure y asociar al depurador remoto de Visual Studio.
 
 > [!WARNING]
 > Asegúrese de eliminar los recursos de Azure que se crea cuando se hayan completado los pasos de este tutorial. De este modo que puede evitar incurrir en cargos innecesarios.
@@ -93,10 +93,10 @@ Al abrir el puerto 80 en el grupo de seguridad de red, abrir el puerto 4022 para
 
 Según la configuración de seguridad del explorador, puede ahorrar tiempo para agregar los siguientes sitios de confianza en el explorador, por lo que puede descargar fácilmente el software descrito en este tutorial. Puede ser necesario tener acceso a estos sitios:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- VisualStudio.com
+- visualstudio.com
 
 Si está usando Internet Explorer, puede agregar los sitios de confianza, vaya a **opciones de Internet > seguridad > sitios de confianza > sitios**. Estos pasos son diferentes para otros exploradores. (Si tiene que descargar una versión anterior del depurador remoto de my.visualstudio.com, algunos sitios de confianza adicionales son necesarios para iniciar sesión).
 

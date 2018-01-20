@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar y continuar (Visual Basic)
 Editar y continuar es una característica de depuración de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] que le permite realizar cambios en el código mientras se ejecuta en modo de interrupción. Una vez que se aplican los cambios de código, se puede reanudar su ejecución con las nuevas modificaciones en contexto y observar el efecto.  
@@ -42,7 +42,7 @@ Editar y continuar es una característica de depuración de [!INCLUDE[vbprvb](..
  Editar y continuar se admite en aplicaciones de x86 y x64 que tienen como destino .NET Framework 4.6 y aplicaciones UWP para Windows 10 escritorio o versiones posteriores (.NET Framework es una versión de escritorio).
 
  > [!NOTE]
- > Plataformas y aplicaciones no compatibles incluyen ASP.NET 5, el emulador de Silverlight 5, Windows Phone y Windows Phone y Windows 8.1.
+ > Plataformas y aplicaciones no compatibles incluyen ASP.NET 5, 5 de Silverlight y Windows 8.1.
   
  No se admite Editar y continuar al iniciar la depuración con **adjuntar al proceso**. No se admite Editar y continuar para código optimizado o una mezcla de código administrado y nativo. Para obtener más información, consulte [cambios admitidos en el código (C# y Visual Basic](../debugger/supported-code-changes-csharp.md).
   

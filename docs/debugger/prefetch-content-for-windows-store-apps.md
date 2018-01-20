@@ -12,22 +12,20 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: b4481fef-3ebf-4f7d-9748-d43821a0ebac
 caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: f98867a5420755ca2eb4e2fb5e75070759a1a91b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a0555e2a3ea600a1f5b11eaf95a48f4cfd7df3e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Depurar aplicaciones UWP con contenido precargado en Visual Studio
-![Solo se aplica a Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
- Para hacer que su aplicación UWP sean más receptivos, se puede solicitar a Windows que precargue algún contenido web, como páginas web o imágenes, en la aplicación [WinINet](http://msdn.microsoft.com/en-us/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)memoria caché. Esta funcionalidad se denomina precarga. Es especialmente eficaz para el contenido que se usa en el inicio, pero también puede precargar otro contenido de uso frecuente, demasiado. Los métodos de la [Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) clase le permite especificar el URI del contenido que quieres precargar. Consulte el SDK de Windows [ejemplo de precarga de contenido](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) para obtener ejemplos de cómo agregar la funcionalidad ContentPrefetcher a la aplicación.  
+ Para hacer que su aplicación UWP sean más receptivos, se puede solicitar a Windows que precargue algún contenido web, como páginas web o imágenes, en la aplicación [WinINet](http://msdn.microsoft.com/library/0a06f2af-957a-4dff-a8cc-187370181b5c) memoria caché. Esta funcionalidad se denomina precarga. Es especialmente eficaz para el contenido que se usa en el inicio, pero también puede precargar otro contenido de uso frecuente, demasiado. Los métodos de la [Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher) clase le permite especificar el URI del contenido que quieres precargar. Consulte el SDK de Windows [ejemplo de precarga de contenido](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) para obtener ejemplos de cómo agregar la funcionalidad ContentPrefetcher a la aplicación.  
   
  Windows utiliza la heurística para determinar cuándo debe producirse la precarga, en caso de que deba producirse, y qué recursos se descargarán. La heurística tiene en cuenta las condiciones de energía y red del sistema, el historial de uso de la aplicación del usuario y los resultados de intentos de precarga anteriores. En Visual Studio, puede usar el **desencadenar precarga de aplicaciones de la tienda de Windows** comando para hacer que Windows ignore la heurística de ContentPrefetcher y precargue todo el contenido web especificado. Es algo que puede resultar útil si deseas probar el comportamiento o rendimiento de la aplicación con el contenido que se precarga en un estado conocido (cargado o no).  
   

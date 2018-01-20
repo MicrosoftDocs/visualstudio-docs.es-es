@@ -1,5 +1,5 @@
 ---
-title: Ejecutar aplicaciones UWP y Windows 8.1 en un equipo remoto | Documentos de Microsoft
+title: Ejecutar aplicaciones UWP en un equipo remoto | Documentos de Microsoft
 ms.custom: 
 ms.date: 01/05/2018
 ms.reviewer: 
@@ -18,35 +18,32 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3e27aae0b9a8e57575015d1d8d5baee3803959a9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-on-a-remote-machine"></a>Ejecutar aplicaciones UWP y Windows 8.1 en un equipo remoto  
+# <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Ejecutar aplicaciones UWP en un equipo remoto en Visual Studio
   
-Para ejecutar una aplicación UWP o Windows 8.1 en un equipo remoto, debe asociar a él mediante las herramientas remotas para Visual Studio. Las herramientas remotas permiten ejecutar, depurar, generar perfiles y probar una aplicación para UWP que se ejecuta en un dispositivo desde un segundo equipo que ejecuta Visual Studio. La ejecución en un dispositivo remoto es muy eficaz cuando el equipo de Visual Studio no admite la funcionalidad que es específica para las aplicaciones UWP, como la entrada táctil, ubicación geográfica y orientación física. En este tema se describen los procedimientos para configurar e iniciar una sesión remota.
+Para ejecutar una aplicación de UWP en un equipo remoto, debe asociar a él mediante las herramientas remotas para Visual Studio. Las herramientas remotas permiten ejecutar, depurar, generar perfiles y probar una aplicación para UWP que se ejecuta en un dispositivo desde un segundo equipo que ejecuta Visual Studio. La ejecución en un dispositivo remoto es muy eficaz cuando el equipo de Visual Studio no admite la funcionalidad que es específica para las aplicaciones UWP, como la entrada táctil, ubicación geográfica y orientación física. En este tema se describen los procedimientos para configurar e iniciar una sesión remota.
 
 En algunos casos, las herramientas remotas se instalan automáticamente cuando se implementa en un dispositivo remoto.
 
 - Para equipos con Windows 10 ejecutan creadores de actualización y versiones posteriores, herramientas remotas se instalarán automáticamente.
 - Para dispositivos Windows 10 Xbox, IOT y HoloLens, herramientas remotas se instalarán automáticamente.
-- Para Windows Phone, debe estar conectado físicamente al teléfono, debe instalar un [licencia de desarrollador](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) (Windows Phone 8 y 8.1) o habilitar [modo de programador](/windows/uwp/get-started/enable-your-device-for-development) (Windows Mobile 10), y se debe Seleccione **dispositivo** como el destino de depuración. Herramientas remotas no se requiere o admite.
+- Para dispositivos móviles de Windows 10, debe estar conectado físicamente al teléfono, debe habilitar [modo de programador](/windows/uwp/get-started/enable-your-device-for-development) y deberá seleccionar **dispositivo** como el destino de depuración. Herramientas remotas no se requiere o admite.
 
-Para equipos con Windows 8.1 y los equipos de Windows 10 que se ejecutan una versión de actualización del pre-creador de Windows, debe instalar las herramientas remotas en el equipo remoto manualmente antes de poder depurar. Siga las instrucciones de este tema. 
+Para equipos con Windows 10 ejecutando una versión de actualización del pre-creador de Windows, debe instalar las herramientas remotas en el equipo remoto manualmente antes de poder depurar. Siga las instrucciones de este tema. 
   
 ##  <a name="BKMK_Prerequisites"></a> Requisitos previos  
  Para depurar en un dispositivo remoto:  
   
--   El dispositivo remoto y el equipo de Visual Studio deben ser conectados a través de una red o conectados directamente a través de un cable USB o Ethernet. No se admite la depuración a través de Internet.  
+- El dispositivo remoto y el equipo de Visual Studio deben ser conectados a través de una red o conectados directamente a través de un cable USB o Ethernet. No se admite la depuración a través de Internet.  
 
-- El dispositivo remoto debe habilitarse para el desarrollo.
-
-    - Para dispositivos Windows 8 y Windows 8.1, una [licencia de desarrollador](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) debe estar instalado en el dispositivo remoto.
-    - Para dispositivos Windows 10, debe habilitar [modo de programador](/windows/uwp/get-started/enable-your-device-for-development). 
+- Debe habilitar [modo de programador](/windows/uwp/get-started/enable-your-device-for-development). 
   
--   Para equipos con Windows 10 ejecutando una versión anterior a la actualización del creador de Windows 10 de Windows 10, debe [instalar y ejecutar los componentes de depuración remota](#BKMK_download).
+- Para equipos con Windows 10 ejecutando una versión anterior a la actualización del creador de Windows 10 de Windows 10, debe [instalar y ejecutar los componentes de depuración remota](#BKMK_download).
   
 ##  <a name="BKMK_Security"></a> Seguridad  
 De forma predeterminada, **Universal (protocolo sin cifrar)** se usa en Windows 10. Este protocolo sólo debe utilizarse en redes de confianza. La conexión de depuración es vulnerable a los usuarios malintencionados que pudieron interceptar y cambiar los datos que se pasan entre el desarrollo y el equipo remoto.
@@ -56,7 +53,7 @@ De forma predeterminada, **Universal (protocolo sin cifrar)** se usa en Windows 
   
 ##  <a name="BKMK_DirectConnect"></a>Cómo conectar directamente con un cable USB 
 
-En Windows 10, puede implementar en un dispositivo conectado por USB eligiendo **dispositivo** en lugar de **equipo remoto** como el destino de implementación (puede hacer esto en el **estándar** barra de herramientas o en la página de propiedades de depuración). Para Windows 8.1, las herramientas remotas deben instalarse en el dispositivo antes de que pueda conectarse directamente.
+En Windows 10, puede implementar en un dispositivo conectado por USB eligiendo **dispositivo** en lugar de **equipo remoto** como el destino de implementación (puede hacer esto en el **estándar** barra de herramientas o en la página de propiedades de depuración).
 
 ##  <a name="BKMK_ConnectVS"></a>Configurar el proyecto de Visual Studio para la depuración remota  
  Especifica el dispositivo remoto al que quieras conectarte en las propiedades del proyecto. El procedimiento varía según cuál sea el lenguaje de programación. Puede escribir el nombre de red del dispositivo remoto o puede seleccionarlo en el **conexión remota** cuadro de diálogo.  
@@ -94,7 +91,7 @@ En Windows 10, puede implementar en un dispositivo conectado por USB eligiendo *
   
 ## <a name="BKMK_download"></a>Descargue e instale las herramientas remotas (actualización creadores previa)
 
-Si usas Windows 8.1 o versiones de actualización del pre-creador de Windows 10, a continuación, siga estas instrucciones. En caso contrario, puede omitir esta sección.
+Si usa versiones de actualización del pre-creador de Windows 10, a continuación, siga estas instrucciones. En caso contrario, puede omitir esta sección.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -105,8 +102,9 @@ Si usas Windows 8.1 o versiones de actualización del pre-creador de Windows 10,
 ##  <a name="BKMK_RunRemoteDebug"></a>Iniciar una sesión de depuración remota  
  Una sesión de depuración remota se inicia, se detiene y se navega por ella de la misma forma que una sesión local. En versiones de actualización del creador anterior de Windows 10, asegúrese de que el Monitor de depuración remota se ejecuta en el dispositivo remoto.  
   
- A continuación, elige **Iniciar depuración** en el menú **Depurar** (teclado: F5). El proyecto se recompila. Luego, se implementa e inicia en el dispositivo remoto. El depurador suspende la ejecución en los puntos de interrupción. Puedes depurar paso a paso por instrucciones o por procedimientos y hasta salir del código. Elige **Detener depuración** para finalizar la sesión de depuración y cerrar la aplicación remota. Para obtener más información, consulte [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ A continuación, elige **Iniciar depuración** en el menú **Depurar** (teclado: F5). El proyecto se recompila. Luego, se implementa e inicia en el dispositivo remoto. El depurador suspende la ejecución en los puntos de interrupción. Puedes depurar paso a paso por instrucciones o por procedimientos y hasta salir del código. Elige **Detener depuración** para finalizar la sesión de depuración y cerrar la aplicación remota.
   
 ## <a name="see-also"></a>Vea también  
+ [Opciones de implementación remota avanzada](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [Testing UWP apps with Visual Studio (Probar aplicaciones para UWP con Visual Studio)](../test/testing-store-apps-with-visual-studio.md)   
  [Depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)
