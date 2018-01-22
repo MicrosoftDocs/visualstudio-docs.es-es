@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b3f46a0e4fb87e6064fb3e975cd6b7313270c13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 699f9176fd39cacaf2bb4f433cd9d2ceb8e326b5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Crear un sistema básico del proyecto, parte 2
 El primer tutorial de esta serie, [crear un sistema básico de proyecto, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), muestra cómo crear un sistema de proyectos básico. En este tutorial se basa en el sistema de proyectos básico mediante la adición de una plantilla de Visual Studio, una página de propiedades y otras características. Debe completar el primer tutorial antes de empezar este.  
@@ -283,7 +283,7 @@ ZipProjects:
   
 -   $safeprojectname$ es el nombre proporcionado por el usuario en el **nuevo proyecto** cuadro de diálogo modificado para quitar todos los espacios y caracteres no seguros.  
   
- Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  Si desea crear su propio parámetro de plantilla personalizada, consulte [NIB: Cómo: pasar parámetros personalizados a plantillas](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+ Para obtener una lista completa de parámetros de plantilla, vea [Parámetros de plantilla](../ide/template-parameters.md).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Para sustituir los parámetros de plantilla de proyecto  
   

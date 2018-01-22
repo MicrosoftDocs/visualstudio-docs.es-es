@@ -29,11 +29,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.  
@@ -64,7 +64,7 @@ Si está depurando un programa MFC, estas técnicas de depuración pueden result
     -   [Compilar una aplicación MFC con la información de depuración para los módulos seleccionados](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC proporciona una función especial, [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) , para incluir puntos de interrupción en el código fuente:  
+ MFC proporciona una clase especial [AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) función para codificar de forma rígida puntos de interrupción en el código fuente:  
   
 ```  
 AfxDebugBreak( );  
@@ -149,7 +149,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     |-----------|-----------------|  
     |**allocMemDF**|Activa el asignador de memoria para diagnósticos (opción predeterminada).|  
     |**delayFreeMemDF**|Retarda la liberación de memoria al llamar a `delete` o `free` hasta que termina el programa. Esto hace que el programa asigne la máxima cantidad posible de memoria.|  
-    |**checkAlwaysMemDF**|Llama a [AfxCheckMemory](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) cada vez que se asigna o se libera memoria.|  
+    |**checkAlwaysMemDF**|Llame a [AfxCheckMemory](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) cada vez que se asigna o se libera memoria.|  
   
      Estos valores se pueden utilizar combinados mediante una operación de disyunción lógica (OR), como se indica a continuación:  
   

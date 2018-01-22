@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 02c983fb7cd797be377f8821c46b2d7dc38450f9
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar código con diagramas de dependencia
 
@@ -218,7 +218,7 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
   
  Para obtener más información acerca de los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors). Para obtener más información acerca de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], vea:  
   
--   [Compilar la aplicación](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+-   [Compilación y versión](/vsts/build-release/index)  
   
 -   [Usar la plantilla predeterminada para el proceso de compilación](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)  
   

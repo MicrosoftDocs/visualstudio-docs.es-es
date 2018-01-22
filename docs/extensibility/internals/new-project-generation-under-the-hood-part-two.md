@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nueva generación de proyecto: Under the Hood, segunda parte
 En [nueva generación de proyecto: Under the Hood, una parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) hemos visto cómo **nuevo proyecto** se rellena el cuadro de diálogo. Supongamos que ha seleccionado un **aplicación de Windows de Visual C#**, se han rellenado los **nombre** y **ubicación** cuadros de texto y hace clic en Aceptar.  
@@ -28,7 +28,7 @@ En [nueva generación de proyecto: Under the Hood, una parte](../../extensibilit
 ## <a name="generating-the-solution-files"></a>Generar los archivos de solución  
  Elegir una plantilla de aplicación dirige [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para descomprimir y abrir el archivo .vstemplate correspondiente y para iniciar una plantilla para interpretar los comandos XML de este archivo. Estos comandos crean proyectos y elementos de proyecto de la solución nueva o existente.  
   
- La plantilla desempaqueta los archivos de origen, denominados plantillas de elementos de la misma carpeta de .zip que contiene el archivo .vstemplate. La plantilla de copia estos archivos en el nuevo proyecto, personalizarlos en consecuencia. Para obtener información general de plantillas de proyecto y elemento, vea [NIB: plantillas de Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ La plantilla desempaqueta los archivos de origen, denominados plantillas de elementos de la misma carpeta de .zip que contiene el archivo .vstemplate. La plantilla de copia estos archivos en el nuevo proyecto, personalizarlos en consecuencia.  
   
 ### <a name="template-parameter-replacement"></a>Reemplazo de parámetros de plantilla  
  Cuando la plantilla copia una plantilla de elementos a un nuevo proyecto, se reemplaza cualquier parámetro de plantilla con cadenas para personalizar el archivo. Un parámetro de plantilla es un símbolo (token) especial que se va precedido y seguido por un signo de dólar, por ejemplo, $date$.  

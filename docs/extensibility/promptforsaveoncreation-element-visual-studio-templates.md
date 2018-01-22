@@ -15,18 +15,18 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e029855ed34c227d1fe9d4d940f15995f65a2d30
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation (Elemento, Plantillas de Visual Studio)
 Especifica si se pide al usuario para un proyecto guardado ubicaciones a través de la **nuevo proyecto** cuadro de diálogo al crear un proyecto. Si este elemento está establecido en `true`, a continuación, se solicitará al usuario un proceso de guardar ubicación; si `false`, a continuación, no se les pide. (Es decir, se crea un proyecto temporal).  
   
  \<VSTemplate >  
  \<TemplateData >  
- \<PromptForSaveOnCreation >  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -57,7 +57,7 @@ Especifica si se pide al usuario para un proyecto guardado ubicaciones a través
 ## <a name="remarks"></a>Comentarios  
  `PromptForSaveOnCreation` es un elemento opcional. El valor predeterminado es `false`.  
   
- Proyectos temporales son proyectos que puede crear y modificar sin guardar el contenido de ese proyecto en el disco. Para obtener más información, consulte [proyectos temporales NIB](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Proyectos temporales son proyectos que puede crear y modificar sin guardar el contenido de ese proyecto en el disco.  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se establece el valor de `PromptForSaveOnCreation` igual a `false`, que especifica para permitir que el proyecto se deben crear como un proyecto temporal.  

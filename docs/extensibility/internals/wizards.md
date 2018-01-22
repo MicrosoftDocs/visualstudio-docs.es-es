@@ -14,11 +14,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 96d91fa687c914f0c3f98c4ddca64a93a5d70d02
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="wizards"></a>Asistentes
 Después de crear un asistente, normalmente desea agregarlo a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrar el entorno de desarrollo (IDE) de modo que otros puedan utilizarla. A continuación, aparece el Asistente de agregado en la **Agregar nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo. Para ver el **Agregar nuevo proyecto** o **Agregar nuevo elemento** diálogo cuadros, haga clic en una solución abierta en **el Explorador de soluciones**, seleccione **agregar**, y a continuación, haga clic en **nuevo proyecto** o **nuevo elemento**.  
@@ -50,9 +50,6 @@ Después de crear un asistente, normalmente desea agregarlo a la [!INCLUDE[vsprv
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Tipos de proyecto](../../extensibility/internals/project-types.md)  
  Proporciona vínculos a temas adicionales que ofrecen información sobre cómo diseñar nuevos tipos de proyecto.  
-  
- [Tutorial: Crear un asistente](http://msdn.microsoft.com/Library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
- Muestra cómo crear a un asistente.  
   
  [Ampliación de proyectos](../../extensibility/extending-projects.md)  
  Describe cómo usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos y soluciones para organizar los archivos de código y archivos de recursos y cómo implementar el control de código fuente.
