@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d23ca03e10476bba11a8f64c0626e0dd8aec5147
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fd9959fe67097b815a4a86b81b5cf78e468281a5
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 No use algoritmos criptográficos rotos
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Use opciones de criptografía más segura:  
   
--   Para MD5, use valores hash de la familia [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).  
+-   Para MD5, use valores hash de la [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) familia (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 -   Para DES y RC2, use el cifrado <xref:System.Security.Cryptography.Aes> .  
   

@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Depuración remota de núcleo de ASP.NET en IIS y Azure en Visual Studio de 2017
-Para el servicio de aplicación de Azure, se recomienda que depurar utilizando la [depurador instantánea](../debugger/debug-live-azure-applications.md) o bien puede seguir las instrucciones de este tema para adjuntar el depurador de Visual Studio. Si está ejecutando Windows Server con IIS en una VM de Azure, también puede establecer para la depuración remota. Esta guía explica cómo instalar y configurar una aplicación de Visual Studio de 2017 ASP.NET Core, implementarla en IIS con Azure y asociar al depurador remoto de Visual Studio.
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Depuración remota de núcleo de ASP.NET en IIS en Azure en Visual Studio de 2017
+
+Esta guía explica cómo instalar y configurar una aplicación de Visual Studio de 2017 ASP.NET Core, implementarla en IIS con Azure y asociar al depurador remoto de Visual Studio.
+
+El método recomendado para realizar la depuración remota en Azure depende de su escenario:
+
+* Para depurar ASP.NET Core en servicio de aplicaciones de Azure, consulte [aplicaciones de Azure depurar con el depurador de instantánea](../debugger/debug-live-azure-applications.md). Este es el método recomendado.
+* Para depurar ASP.NET Core en usar las características de depuración más tradicionales de servicio de aplicaciones de Azure, siga los pasos de este tema (vea la sección [de depuración remota en el servicio de aplicaciones de Azure](#remote_debug_azure_app_service)).
+
+    En este escenario, debe implementar la aplicación desde Visual Studio en Azure pero no es necesario instalar manualmente o configurar IIS o el depurador remoto (estos componentes se representan con líneas de puntos), como se muestra en la siguiente ilustración.
+
+    ![Los componentes del depurador remoto](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* Para depurar IIS en una VM de Azure, siga los pasos descritos en este tema (vea la sección [la depuración remota en una máquina virtual de Azure](#remote_debug_azure_vm)). Esto le permite usar una configuración personalizada de IIS, pero los pasos de instalación e implementación son más complicados.
+
+    Para una máquina virtual de Azure, debe implementar la aplicación desde Visual Studio en Azure y también debe instalar manualmente el rol IIS y el depurador remoto, tal como se muestra en la siguiente ilustración.
+
+    ![Los componentes del depurador remoto](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* Para depurar ASP.NET Core en Azure Service Fabric, vea [depurar una aplicación de Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 > [!WARNING]
 > Asegúrese de eliminar los recursos de Azure que se crea cuando se hayan completado los pasos de este tutorial. De este modo que puede evitar incurrir en cargos innecesarios.
 
-Este tema se muestra cómo:
-
-* Depuración remota Core de ASP.NET en un servicio de aplicaciones de Azure
-
-* Depuración remota ASP.NET Core en una máquina virtual de Azure
-
-Para el servicio de aplicación de Azure, debe implementar la aplicación desde Visual Studio en Azure pero no es necesario instalar manualmente o configurar IIS o el depurador remoto (estos componentes se representan con líneas de puntos), como se muestra en la siguiente ilustración.
-
-![Los componentes del depurador remoto](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-Para una máquina virtual de Azure, debe implementar la aplicación desde Visual Studio en Azure y también debe instalar manualmente el rol IIS y el depurador remoto, tal como se muestra en la siguiente ilustración.
-
-![Los componentes del depurador remoto](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> Para depurar ASP.NET Core en Azure Service Fabric, vea [depurar una aplicación de Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 ### <a name="requirements"></a>Requisitos
 
@@ -61,11 +63,11 @@ No se admite la depuración entre dos equipos conectados a través de un servido
 
 4. Abra el archivo About.cshtml.cs y establecer un punto de interrupción en la `OnGet` (método) (en las plantillas anteriores, abra HomeController.cs en su lugar y establecer el punto de interrupción en el `About()` método).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Núcleo de ASP.NET de depuración remota en un servicio de aplicaciones de Azure
+## <a name="remote_debug_azure_app_service"></a>Núcleo de ASP.NET de depuración remota en un servicio de aplicaciones de Azure
 
 Desde Visual Studio, puede publicar rápidamente y depurar la aplicación a una instancia de aprovisionamiento completo de IIS. Sin embargo, la configuración de IIS está predefinida y no es posible personalizar. Para obtener instrucciones detalladas, consulte [implementar una aplicación web de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Si necesita la capacidad de personalizar IIS, intentar depurar un [Azure VM](#BKMK_azure_vm).) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>Para implementar la aplicación y la depuración remota
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>Para implementar la aplicación y la depuración remota mediante el Explorador de servidores
 
 1. En Visual Studio, haga clic en el nodo del proyecto y elija **publicar**.
 
@@ -73,7 +75,7 @@ Desde Visual Studio, puede publicar rápidamente y depurar la aplicación a una 
 
     Para obtener instrucciones detalladas, consulte [implementar una aplicación web de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-3. En **Explorador de servidores**, haga doble clic en la instancia de servicio de aplicaciones y elija **adjuntar depurador**.
+3. Abra **Explorador de servidores** (**vista** > **Explorador de servidores**), haga doble clic en la instancia de servicio de aplicaciones y elija **adjuntar depurador**.
 
 4. En la aplicación ASP.NET en ejecución, haga clic en el vínculo a la **sobre** página.
 
@@ -81,7 +83,7 @@ Desde Visual Studio, puede publicar rápidamente y depurar la aplicación a una 
 
     Ya está. El resto de los pasos descritos en este tema se aplican a la depuración remota en una máquina virtual de Azure.
 
-## <a name="BKMK_azure_vm"></a>Núcleo de ASP.NET de depuración remota en una máquina virtual de Azure
+## <a name="remote_debug_azure_vm"></a>Núcleo de ASP.NET de depuración remota en una máquina virtual de Azure
 
 Puede crear una máquina virtual de Azure para Windows Server y, a continuación, instalar y configurar IIS y los demás componentes de software necesarias. Esto es más lento que la implementación en un servicio de aplicaciones de Azure y requiere que siga los pasos restantes de este tutorial.
 

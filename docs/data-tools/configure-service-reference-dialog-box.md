@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurar referencia de servicio (cuadro de diálogo)
-El **configurar referencia de servicio** cuadro de diálogo le permite configurar el comportamiento de [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] servicios.  
-  
+
+El **configurar referencia de servicio** cuadro de diálogo le permite configurar el comportamiento de los servicios de Windows Communication Foundation (WCF).
+
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Para tener acceso a la **configurar referencia de servicio** cuadro de diálogo, haga un servicio de referencia en **el Explorador de soluciones** y elija **configurar referencia de servicio**. También puede acceder el cuadro de diálogo, haga clic en el **avanzadas** botón en el **cuadro de diálogo Agregar referencia de servicio**.  
-  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+
+Para tener acceso a la **configurar referencia de servicio** cuadro de diálogo, haga un servicio de referencia en **el Explorador de soluciones** y elija **configurar referencia de servicio**. También puede acceder el cuadro de diálogo, haga clic en el **avanzadas** botón en el **cuadro de diálogo Agregar referencia de servicio**.
+
 ## <a name="task-list"></a>Lista de tareas  
   
 -   Para cambiar la dirección donde se hospeda un servicio WCF, escriba la nueva dirección en la **dirección** campo.  
@@ -86,16 +87,15 @@ El **configurar referencia de servicio** cuadro de diálogo le permite configura
  **Lista de ensamblados de referencia**  
  Contiene una lista de los ensamblados a los que se hace referencia en el proyecto o sitio web. Cuando **volver a usar tipos en ensamblados especificados** está seleccionada, se pueden activar o borrar ensamblados individuales.  
   
- **Agregar referencia Web**  
- Muestra el [Agregar cuadro de diálogo de referencia Web](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx).  
-  
-> [!NOTE]
->  Esta opción solo debe usarse para proyectos destinados a la versión 2.0 de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
-  
-> [!NOTE]
->  El **Agregar referencia Web** botón solo está disponible cuando la **configurar referencia de servicio** se muestra el cuadro de diálogo desde el **cuadro de diálogo Agregar referencia de servicio**.  
-  
-## <a name="see-also"></a>Vea también  
+ **Agregar referencia Web** muestra el cuadro de diálogo Agregar referencia Web.
 
- [Cómo: agregar una referencia a un servicio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Servicios de Windows Communication Foundation y Servicios de datos de WCF](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> Esta opción solo debe usarse para proyectos destinados a la versión 2.0 de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+
+> [!NOTE]
+> El **Agregar referencia Web** botón solo está disponible cuando la **configurar referencia de servicio** se muestra el cuadro de diálogo desde el **cuadro de diálogo Agregar referencia de servicio**.
+
+## <a name="see-also"></a>Vea también
+
+[Cómo: agregar una referencia a un servicio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Servicios de Windows Communication Foundation y Servicios de datos de WCF](../data-tools/configure-service-reference-dialog-box.md)
