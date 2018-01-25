@@ -15,19 +15,19 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 87fdca001430acc1ecef7e69b9afc2123dedafd0
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 4cc18515fd0fa2c24eb38e78f7be315e865f94d0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Inicio rápido: Crear un proyecto de Python desde una plantilla en Visual Studio
 
-Después de [instalar la compatibilidad con Python en Visual Studio 2017](installation.md), resulta fácil crear un nuevo proyecto de Python con una variedad de plantillas.
+Después de [instalar la compatibilidad con Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), resulta fácil crear un nuevo proyecto de Python con una variedad de plantillas.
 
 1. Inicie Visual Studio.
 
-1. Seleccione **Archivo > Nuevo > Proyecto** (Ctrl+Shift+N). En el cuadro de diálogo **Nuevo proyecto**, busque “Python” y seleccione la plantilla que quiera. Tenga en cuenta que al seleccionar una plantilla se muestra una breve descripción de lo que proporciona esa plantilla. (Vea también [Proyectos de Python](python-projects.md#project-templates)).
+1. Seleccione **Archivo > Nuevo > Proyecto** (Ctrl+Shift+N). En el cuadro de diálogo **Nuevo proyecto**, busque “Python” y seleccione la plantilla que quiera. Tenga en cuenta que al seleccionar una plantilla se muestra una breve descripción de lo que proporciona esa plantilla. (Vea también [Proyectos de Python](managing-python-projects-in-visual-studio.md#project-templates)).
 
     ![Cuadro de diálogo Nuevo proyecto con plantillas de Python en VS2017](media/projects-new-project-dialog2.png)
 
@@ -87,10 +87,10 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Tutorial: Trabajar con Python en Visual Studio](vs-tutorial-01-01.md)
+> [Tutorial: Trabajar con Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Creación de un entorno para un intérprete de Python existente](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installation.md).
-- [Ubicaciones de instalación](installation.md#install-locations).
+- [Creación de un entorno para un intérprete de Python existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md).
+- [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations).

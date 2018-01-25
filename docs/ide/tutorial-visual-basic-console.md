@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Introducción a Visual Basic en Visual Studio
 En este tutorial para Visual Basic (VB), podrá usar Visual Studio para crear y ejecutar algunas aplicaciones de consola diferentes y explorar algunas características del [entorno de desarrollo integrado (IDE)](visual-studio-ide.md) de Visual Studio mientras lo hace.
@@ -59,7 +59,7 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede 
 
 2. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
-   ![Carga de trabajo de desarrollo multiplataforma de .NET Core en el Instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+   ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opción 2: Usar la barra del menú Herramientas
 1. Cancele para salir del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, seleccione **Herramientas** > **Obtener herramientas y características...**.
@@ -82,11 +82,11 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
      Console.ReadKey(True)
     ```
 
-    Este código reemplaza a las instrucciones [Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1), [Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1) y [Console.ReadKey]() existentes.
+    Este código reemplaza las instrucciones <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> y <xref:System.Console.ReadKey%2A> existentes.
 
  ![Ventana de código en la que se muestra el código de Cómo te llamas](../ide/media/vb-codewindow-what-name.png)
 
-3. Cuando se abra la ventana de consola, escriba su nombre. La ventana de consola debe ser similar a la captura de pantalla siguiente:       
+3. Cuando se abra la ventana de consola, escriba su nombre. La ventana de consola debe ser similar a la captura de pantalla siguiente:
 
    ![Ventana de consola en la que se muestra What Is Your Name (Cómo te llamas), la fecha y hora, y el mensaje Press any key to continue (Presione cualquier tecla para continuar)](../ide/media/vb-console-what-name.png)
 

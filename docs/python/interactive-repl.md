@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: bf04cbfaff76747c952f9cf86e93fea47be2e91f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -38,7 +38,7 @@ Visual Studio tiene una serie de modos de REPL de Python entre los que se puede 
 
 En este tema se describen los modos de REPL **Estándar** y **Depurar**. Para obtener más información sobre los modos de IPython, vea [Using the IPython REPL](interactive-repl-ipython.md) (Uso de REPL de Python).
 
-Para obtener un tutorial detallado con ejemplos, incluidas las interacciones con el editor como Ctrl+Entrar, vea [Paso 3: uso de la ventana interactiva de REPL](vs-tutorial-01-03.md). Para ver un vídeo de introducción, eche un vistazo a [Python Interactive Window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Ventana interactiva de Python) de Microsoft Virtual Academy (2 minutos y 22 segundos).
+Para obtener un tutorial detallado con ejemplos, incluidas las interacciones con el editor como Ctrl+Entrar, vea [Paso 3: uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Para ver un vídeo de introducción, eche un vistazo a [Python Interactive Window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Ventana interactiva de Python) de Microsoft Virtual Academy (2 minutos y 22 segundos).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 

@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 569f827a549e240629a492237bb89ae5f0fcd25f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="python-web-project-templates"></a>Plantillas de proyecto web de Python
 
@@ -33,7 +33,7 @@ Cuando se ejecuta un proyecto creado a partir de una plantilla (al que se tiene 
 
 Las plantillas Bottle, Flask y Django incluyen un sitio de inicio con algunas páginas y archivos estáticos. Este código es suficiente para ejecutar y depurar el servidor localmente (donde es necesario obtener algunas configuraciones del entorno) y para implementar en Microsoft Azure (donde se debe proporcionar un objeto de [aplicación WSGI](http://www.python.org/dev/peps/pep-3333/)).
 
-Al crear un proyecto a partir de una plantilla específica del marco, aparece un cuadro de diálogo que le ayudará a instalar los paquetes necesarios mediante pip. También se recomienda usar un [entorno virtual](python-environments.md#global-and-virtual-environments) para proyectos web de forma que se incluyan las dependencias correctas cuando publique el sitio web:
+Al crear un proyecto a partir de una plantilla específica del marco, aparece un cuadro de diálogo que le ayudará a instalar los paquetes necesarios mediante pip. También se recomienda usar un [entorno virtual](managing-python-environments-in-visual-studio.md#global-and-virtual-environments) para proyectos web de forma que se incluyan las dependencias correctas cuando publique el sitio web:
 
 ![Cuadro de diálogo que instala los paquetes necesarios para una plantilla de proyecto](media/template-web-requirements-txt-wizard.png)
 
@@ -81,7 +81,7 @@ La opción `--reload` no se recomienda cuando se usa Visual Studio para la depur
 
 ### <a name="sample-pyramid-configuration"></a>Configuración de Pyramid de ejemplo
 
-Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar mediante la plantilla [Desde código de Python existente](python-projects.md#creating-a-project-from-existing-files). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
+Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta de la línea de comandos `pcreate`. Una vez creada una aplicación, se puede importar mediante la plantilla [Desde código de Python existente](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files). Después de realizar esto, seleccione la personalización **Proyecto web genérico** para configurar las opciones. Esta configuración asume que Pyramid se ha instalado en un entorno virtual en `..\env`.
 
 - Grupo **Depurar**:
   - **Puerto del servidor**: 6543 (o lo que se configure en los archivos. ini)

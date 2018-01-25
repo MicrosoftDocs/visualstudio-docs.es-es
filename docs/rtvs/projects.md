@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Crear proyectos de R en Visual Studio
 
@@ -119,6 +119,6 @@ En el ejemplo siguiente, la solución contiene un proyecto de R con un modelo co
 El proyecto resaltado en negrita es el proyecto de "inicio" de la solución; para cambiarlo, haga clic con el botón derecho en otro proyecto y seleccione **Establecer como proyecto de inicio**.
 
 > [!Note]
-> Actualmente, no hay ninguna integración de lenguaje explícita de R a C#/C++ (como hay para Python, consulte [Creación de una extensión de C++ para Python](../python/cpp-and-python.md)).  En cambio, hay bibliotecas disponibles que proporcionan puentes de C# y C++ para R.
+> Actualmente, no hay ninguna integración de lenguaje explícita de R a C#/C++ (como hay para Python, consulte [Creación de una extensión de C++ para Python](../python/working-with-c-cpp-python-in-visual-studio.md)).  En cambio, hay bibliotecas disponibles que proporcionan puentes de C# y C++ para R.
 
 Para obtener más información sobre cómo administrar proyectos y soluciones en general, vea [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).

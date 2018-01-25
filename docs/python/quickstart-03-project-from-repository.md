@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inició rápido: Clonado de un repositorio de código Python en Visual Studio
 
-Después de [instalar la compatibilidad con Python en Visual Studio 2017](installation.md), podrá clonar fácilmente un repositorio de código Python y crear un proyecto a partir de él.
+Después de [instalar la compatibilidad con Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), podrá clonar fácilmente un repositorio de código Python y crear un proyecto a partir de él.
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 14. Vuelva a ejecutar el programa para ver si se supera la primera comprobación y el programa se detiene en el siguiente koan. Siga corrigiendo los errores y volviendo a ejecutar el programa como quiera.
 
 > [!Important]
-> En este tutorial rápido, ha creado un clon directo del repositorio *python_koans* en GitHub. El autor de este repositorio lo protege de cambios directos, por lo que se produce un error al intentar aplicar cambios. En la práctica, los desarrolladores bifurcan este repositorio en su propia cuenta de GitHub, efectúan cambios y crean solicitudes de incorporación de cambios para enviarlos al repositorio original. Estos pasos se describen en [Tutorial, paso 6: Uso de Git](vs-tutorial-01-06.md).
+> En este tutorial rápido, ha creado un clon directo del repositorio *python_koans* en GitHub. El autor de este repositorio lo protege de cambios directos, por lo que se produce un error al intentar aplicar cambios. En la práctica, los desarrolladores bifurcan este repositorio en su propia cuenta de GitHub, efectúan cambios y crean solicitudes de incorporación de cambios para enviarlos al repositorio original. Estos pasos se describen en [Tutorial, paso 6: Uso de Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Tutorial: Trabajar con Python en Visual Studio](vs-tutorial-01-01.md)
+> [Tutorial: Trabajar con Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Creación de un entorno para un intérprete de Python existente](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installation.md).
-- [Ubicaciones de instalación](installation.md#install-locations).
+- [Creación de un entorno para un intérprete de Python existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md).
+- [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations).

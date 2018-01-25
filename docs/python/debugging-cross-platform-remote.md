@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: df8e23f0544571aa07e8b013c62922e1a69868d2
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 0d7c6644dc3f52629ff91d2f6b5dd44dbdba6b3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Depuración remota de código de Python en Linux
 
@@ -38,7 +38,7 @@ Los elementos siguientes son necesarios para seguir este tutorial:
 - Un equipo remoto que ejecute Python en un sistema operativo como Mac OSX o Linux.
 - El puerto 5678 (entrada) abierto en el firewall de ese equipo, que es el valor predeterminado para la depuración remota.
 
-Puede crear fácilmente [máquinas virtuales de Linux en Azure](/azure/virtual-machines/linux/creation-choices) y [tener acceso mediante Escritorio remoto](/azure/virtual-machines/linux/use-remote-desktop) desde Windows. Un sistema Ubuntu para la máquina virtual resulta útil porque Python está instalado de forma predeterminada; de lo contrario, vea la lista en [Selección e instalación de los intérpretes de Python](python-environments.md#selecting-and-installing-python-interpreters) para obtener otras ubicaciones de descarga de Python.
+Puede crear fácilmente [máquinas virtuales de Linux en Azure](/azure/virtual-machines/linux/creation-choices) y [tener acceso mediante Escritorio remoto](/azure/virtual-machines/linux/use-remote-desktop) desde Windows. Un sistema Ubuntu para la máquina virtual resulta útil porque Python está instalado de forma predeterminada; de lo contrario, vea la lista en [Selección e instalación de los intérpretes de Python](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) para obtener otras ubicaciones de descarga de Python.
 
 Para obtener detalles sobre cómo crear una regla de firewall para una máquina virtual de Azure, vea [Apertura de puertos para una máquina virtual en Azure mediante Azure Portal](/azure/virtual-machines/windows/nsg-quickstart-portal).
 

@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Configuración de pruebas unitarias para código de Python
 
@@ -35,7 +35,7 @@ En este tema se proporciona una descripción breve de las funcionalidades de las
 
 Por convención, Visual Studio identifica las pruebas como métodos cuyos nombres empiezan por `test`. Para ver este comportamiento, realice lo siguiente:
 
-1. Abra un [proyecto Python](python-projects.md) cargado en Visual Studio, haga clic con el botón derecho en el proyecto, seleccione **Agregar > Nuevo elemento...** y luego seleccione **Python Unit Test** (Prueba unitaria de Python) y **Agregar**.
+1. Abra un [proyecto Python](managing-python-projects-in-visual-studio.md) cargado en Visual Studio, haga clic con el botón derecho en el proyecto, seleccione **Agregar > Nuevo elemento...** y luego seleccione **Python Unit Test** (Prueba unitaria de Python) y **Agregar**.
 
 1. Esta acción crea un archivo `test1.py` con código que importa el módulo estándar `unittest`, deriva una clase de prueba de `unittest.TestCase` e invoca `unittest.main()` si ejecuta el script directamente:
 
@@ -92,7 +92,7 @@ Para iniciar la depuración, establezca un punto de interrupción inicial en el 
 
 ![Depuración de una prueba](media/unit-test-debugging.png)
 
-También puede utilizar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**, según la versión de Visual Studio (consulte la [Matriz de características](python-in-visual-studio.md#features-matrix)).
+También puede utilizar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**, según la versión de Visual Studio (consulte la [Matriz de características](overview-of-python-tools-for-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Problemas conocidos
 

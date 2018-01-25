@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción detienen la ejecución del depurador para, por ejemplo, ver el estado de las variables de código o examinar la pila de llamadas. Constituyen una de las técnicas de depuración más importantes en los cuadros de herramientas de los desarrolladores.  
@@ -160,6 +160,9 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
  Si se establece una condición de punto de interrupción con una sintaxis no válida, aparecerá un mensaje de advertencia. Si se especifica una condición de punto de interrupción con una sintaxis válida pero una semántica no válida, aparecerá un mensaje de advertencia la primera vez que se visite el punto de interrupción. En ambos casos, el depurador interrumpirá la ejecución cuando se visite el punto de interrupción no válido. El punto de interrupción se omitirá únicamente si la condición es válida y se evalúa como `false`.  
   
  La condición puede ser cualquier expresión válida que reconozca el depurador. Para más información sobre las expresiones válidas, vea [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
+
+> [!NOTE]
+> Puede usar **CTRL+ENTRAR** para cerrar el **configuración de punto de interrupción** ventana.
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Usar identificadores de objeto en las condiciones de punto de interrupción (C# y F #)  
  Hay veces en las quiere observar el comportamiento de un objeto específico; por ejemplo, podría querer averiguar por qué se insertó un objeto más de una vez en una colección. En C# y F#, puede crear identificadores de objeto para instancias específicas de [tipos de referencia](/dotnet/csharp/language-reference/keywords/reference-types) y usarlos en condiciones de punto de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.  Para crear un identificador de objeto, haga lo siguiente:  
@@ -232,20 +235,6 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 ## <a name="export-and-import-breakpoints"></a>Exportar e importar puntos de interrupción  
  Los puntos de interrupción se pueden exportar a un archivo XML; para ello, haga clic con el botón derecho en el punto de interrupción y seleccione **Exportar**. El archivo se guarda de forma predeterminada en el directorio de la solución. Para importar puntos de interrupción, abra la ventana **Puntos de interrupción** (**CTRL+ALT+B**) y, en la barra de herramientas, haga clic en la flecha que apunta a la derecha (la información sobre herramientas es **Importar puntos de interrupción de un archivo**).  
   
-## <a name="troubleshoot"></a>Solucionar problemas de puntos de interrupción 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Eliminé un punto de interrupción, pero continúa alcanzándose al iniciar de nuevo la depuración  
- Si eliminó un punto de interrupción durante la depuración, en algunos casos puede alcanzarse de nuevo la próxima vez que se inicia la depuración. Para dejar de encontrar este punto de interrupción, asegúrese de que todas las instancias del punto de interrupción se quitan de la ventana **Puntos de interrupción** .  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>El depurador no puede encontrar la versión correcta del archivo de código fuente de un punto de interrupción  
- Si un archivo de código fuente ha cambiado y el código fuente ya no coincide con el código que se está depurando, es posible que el depurador busque el archivo de código fuente que corresponde a un punto de interrupción, aunque exista el archivo de código fuente.  
-  
-1.  Si desea que Visual Studio muestre el código de origen que no coincide con la versión que está depurando, elija **Depurar > Opciones y configuración**. En la página **Depuración/General** , desactive la opción **Es necesario que los archivos de código fuente coincidan con la versión original** .  
-  
-2.  También puede enlazar el punto de interrupción al archivo de código fuente. Seleccione el punto de interrupción y elija **Condiciones** en el menú contextual. En la ventana **Configuración del punto de interrupción** , active la casilla **Permitir que el código fuente sea distinto del de la versión original** .  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>Los puntos de interrupción no funcionan en una DLL  
- No se puede establecer un punto de interrupción en un archivo de código fuente si el depurador no ha cargado la información de depuración correspondiente al módulo donde se encuentra el código. Los síntomas pueden incluir mensajes como **No se puede establecer el punto de interrupción**. El glifo del punto de interrupción de advertencia aparece en la posición del punto de interrupción. Sin embargo, estos puntos de interrupción de advertencia se convierten en puntos de interrupción reales cuando se carga el código. Para obtener más información sobre la carga de símbolos, vea [especificar símbolos (.pdb) y archivos de código fuente](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
 ## <a name="see-also"></a>Vea también  
- [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md)
+[Solucionar problemas de puntos de interrupción en el depurador de Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+[Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md)

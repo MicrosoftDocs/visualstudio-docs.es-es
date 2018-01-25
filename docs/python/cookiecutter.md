@@ -15,17 +15,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6c75991ed6c55d7905bcaaca5947f7f32897ab14
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d87beb4e8f475bd52c5be7f1d75f27ecf3b691ac
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) proporciona una interfaz gráfica de usuario para descubrir plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Se incluye con Visual Studio de 2017 y puede instalarse por separado en versiones anteriores de Visual Studio.
 
-Cookiecutter requiere Python 3.3 o posterior (32 o 64 bits) o Anaconda 3 4.2 o posterior (32 o 64 bits). Si no se dispone de un intérprete de Python adecuado, Visual Studio mostrará una advertencia. Si instala a un intérprete de Python mientras se está ejecutando Visual Studio, haga clic en el botón de inicio en la barra de herramientas de Cookiecutter para detectar el intérprete recién instalado. (Vea [Entornos de Python](python-environments.md) para obtener más información sobre los entornos en general).
+Cookiecutter requiere Python 3.3 o posterior (32 o 64 bits) o Anaconda 3 4.2 o posterior (32 o 64 bits). Si no se dispone de un intérprete de Python adecuado, Visual Studio mostrará una advertencia. Si instala a un intérprete de Python mientras se está ejecutando Visual Studio, haga clic en el botón de inicio en la barra de herramientas de Cookiecutter para detectar el intérprete recién instalado. (Vea [Entornos de Python](managing-python-environments-in-visual-studio.md) para obtener más información sobre los entornos en general).
 
 Una vez instalado, seleccione **View > Cookiecutter Explorer** (Ver > Explorador de Cookiecutter) para abrir la ventana:
 
