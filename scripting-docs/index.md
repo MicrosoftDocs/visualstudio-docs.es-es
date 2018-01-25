@@ -1,17 +1,53 @@
 ---
 layout: LandingPage
 title: Scripting | Microsoft Docs
-ms.openlocfilehash: 0ab2cac300313488bd50bebb451dfd7aa42425c1
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 859e542900af91e88ae6792740a539bb6de5dd0c
+ms.sourcegitcommit: abae48f476832f79cc2c5bac43bb1226d3fe4e48
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="scripting-technologies"></a>Tecnologías de scripting
 
-En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecnologías basadas en ECMAScript.
+Esta página proporciona vínculos a JavaScript, TypeScript, documentación de referencia basada en ECMAScript y vínculos a las tecnologías de Visual Studio que le permiten escribir aplicaciones mediante estos lenguajes.
 
 <ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-nodejs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_nodejs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Más información sobre las herramientas para Node.js</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Introducción a las aplicaciones Windows universales (UWP)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
     <li>
         <a href="http://www.typescriptlang.org/docs/tutorial.html">
         <div class="cardSize">
@@ -49,6 +85,60 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
         </a>
     </li>
     <li>
+        <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-nodejs-get-started">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_nodejs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Introducción a Azure y Node.js</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_cordova.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Herramientas para Apache Cordova</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/aspnet/core/client-side/angular">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Introducción a ASP.NET y marcos como AngularJS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="https://docs.microsoft.com/scripting/chakra-hosting/javascript-runtime-hosting">
         <div class="cardSize">
             <div class="cardPadding">
@@ -77,7 +167,7 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Más información sobre las interfaces de Windows Script</h3>
+                        <h3>Interfaces de Windows Script (archivo)</h3>
                     </div>
                 </div>
             </div>
@@ -103,5 +193,37 @@ En esta página se proporcionan vínculos a JavaScript, TypeScript y otras tecno
         </a>
     </li>
 </ul>
+
+<hr>
+<h2>Referencia</h2>
+
+<p><ul class="panelContent cardsW">
+    <li>
+        <a href="https://docs.microsoft.com/scripting/javascript/javascript-language-reference">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Referencia del lenguaje JavaScript</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/en-us/scripting/chakra-hosting/javascript-runtime-hosting">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Hospedaje de runtime de JavaScript</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul><p>
 
 ---

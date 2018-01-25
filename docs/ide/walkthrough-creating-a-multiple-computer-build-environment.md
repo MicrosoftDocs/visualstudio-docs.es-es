@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
 
@@ -29,7 +29,6 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 Este documento no confiere ningún derecho para redistribuir el software externamente ni para proporcionar entornos de compilación a terceros.  
   
 > Declinación de responsabilidades<br /><br /> Este documento se proporciona "tal cual". Si bien hemos probado los pasos descritos, no es posible probar de forma exhaustiva todas las configuraciones. Intentaremos mantener el documento actualizado con cualquier información adicional que aprendamos. La información y los puntos de vista expresados en este documento, incluidas las direcciones URL y otras referencias a sitios web de Internet, pueden cambiar sin previo aviso. Microsoft no proporciona ninguna garantía, expresa o implícita, con respecto a la información proporcionada aquí. Usted asume el riesgo de utilizarla.<br /><br /> Este documento no le proporciona ningún derecho legal sobre ninguna propiedad intelectual de ningún producto de Microsoft. Puede copiar y usar este documento para su uso interno de referencia.<br /><br /> No tiene ninguna obligación de proporcionar a Microsoft ninguna sugerencia ni ningún comentario ("Comentario”) con respecto a este documento. Sin embargo, cualquier Comentario que proporcione voluntariamente se puede utilizar en productos de Microsoft y especificaciones relacionadas u otra documentación (denominados colectivamente "Ofertas de Microsoft") que a su vez pueden utilizar terceros para desarrollar sus propios productos. Por tanto, si proporciona Comentarios a Microsoft sobre cualquier versión de este documento o las Ofertas de Microsoft a las que se aplican, acepta lo siguiente: (a) Microsoft puede utilizar, reproducir, licenciar, distribuir y comercializar libremente sus Comentarios sobre cualquier Oferta de Microsoft; (b) También concede a terceros, de forma gratuita, únicamente los derechos de patente necesarios para permitir que otros productos utilicen o interactúen con cualquier parte determinada de un Producto de Microsoft que incorpore sus Comentarios; y (c) No ofrecerá a Microsoft Comentarios (i) que tenga razones para creer que están sujetos a cualquier patente, copyright u otro derecho o reclamación de propiedad intelectual de cualquier tercero; o (ii) sujetos a términos de licencia que obliguen a que cualquier Oferta de Microsoft que incorpore o derive de esos Comentarios, u otra propiedad intelectual de Microsoft, se ofrezca en licencia o se comparta de otra forma con ningún tercero.
-
 
 Este tutorial se ha validado en los siguientes sistemas operativos, ejecutando MSBuild en la línea de comandos y mediante Team Foundation Build.  
   
@@ -47,7 +46,7 @@ Este tutorial se ha validado en los siguientes sistemas operativos, ejecutando M
   
  El entorno de varios equipos no se puede utilizar para compilar estas clases de aplicaciones:  
   
--   Aplicaciones de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]. Para compilar aplicaciones de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], debe instalar Visual Studio en el equipo de compilación.  
+-   Aplicaciones de UWP. Para compilar aplicaciones de UWP, debe instalar Visual Studio en el equipo de compilación.  
   
 -   Aplicaciones de escritorio destinadas a .NET Framework 4 o anterior. Para compilar estas clases de aplicaciones, debe instalar Visual Studio o ensamblados de referencia y herramientas de .NET (de Windows 7.1 SDK) en el equipo de compilación.  
   

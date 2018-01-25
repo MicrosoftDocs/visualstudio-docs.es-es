@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 
@@ -61,13 +61,13 @@ Si decide redirigir los proyectos de Windows 8.1 a Windows 10, vea [Portar, migr
 
 ### <a name="extension-sdk-references"></a>Referencias del SDK de extensiones
 
-Las aplicaciones para UWP en Visual Basic, C#, C++ y JavaScript pueden hacer referencia a los SDK de extensiones que tienen como destino [!INCLUDE[win81](../debugger/includes/win81_md.md)], siempre que estos SDK de extensiones no usen las API que han quedado obsoletas en Windows 10. Compruebe el sitio del proveedor del SDK de extensiones para averiguar si se puede hacer referencia a él con aplicaciones para UWP.
+Las aplicaciones para UWP en Visual Basic, C#, C++ y JavaScript pueden hacer referencia a los SDK de extensiones que tienen como destino Windows 8.1, siempre que estos SDK de extensiones no usen las API que han quedado obsoletas en Windows 10. Compruebe el sitio del proveedor del SDK de extensiones para averiguar si se puede hacer referencia a él con aplicaciones para UWP.
 
 Si determina que el SDK de extensión al que la aplicación hace referencia no es compatible, debe realizar los pasos siguientes:
 
-1. Consulte el nombre del proyecto que está provocando el error. La plataforma de destino del proyecto se indica entre paréntesis junto al nombre del mismo. Por ejemplo, **MyProjectName (Windows 8.1)** significa que el proyecto **MyProjectName** está destinado a la versión de la plataforma [!INCLUDE[win81](../debugger/includes/win81_md.md)].
+1. Consulte el nombre del proyecto que está provocando el error. La plataforma de destino del proyecto se indica entre paréntesis junto al nombre del mismo. Por ejemplo, **MyProjectName (Windows 8.1)** significa que el proyecto **MyProjectName** está destinado a la versión de la plataforma Windows 8.1.
 
-2. Vaya al sitio del proveedor propietario del SDK de extensiones no compatible e instale la versión del SDK de extensiones con dependencias que son compatibles con la versión de la plataforma a la que está destinado el proyecto.
+1. Vaya al sitio del proveedor propietario del SDK de extensiones no compatible e instale la versión del SDK de extensiones con dependencias que son compatibles con la versión de la plataforma a la que está destinado el proyecto.
 
     > [!NOTE]
     > Una manera de averiguar si un SDK de extensiones tiene dependencias de otros es consultar en el **Administrador de referencias**. Reinicie Visual Studio, cree un proyecto de aplicación para UWP en C# y, después, haga clic con el botón derecho en el proyecto y seleccione **Agregar referencia**. Vaya a la pestaña **Windows**, después a la subpestaña **Extensiones** y seleccione el SDK de extensiones. Fíjese en el panel de la derecha del **Administrador de referencias**. Si tiene dependencias, se mostrarán allí.
@@ -75,13 +75,13 @@ Si determina que el SDK de extensión al que la aplicación hace referencia no e
     > [!IMPORTANT]
     > Si el proyecto tiene como destino Windows 10 y el SDK de extensiones instalado en el paso anterior tiene una dependencia del paquete Tiempo de ejecución de Microsoft Visual C++, la versión de ese paquete que es compatible con Windows 10 es v14.0 y se instala con Visual Studio.
 
-3. Si el SDK de extensiones que se instaló en el paso anterior tiene dependencias de otros SDK de extensiones, vaya a los sitios web de los proveedores de las dependencias e instale las versiones de estas dependencias que sean compatibles con la versión de la plataforma a la que está destinado el proyecto.
+1. Si el SDK de extensiones que se instaló en el paso anterior tiene dependencias de otros SDK de extensiones, vaya a los sitios web de los proveedores de las dependencias e instale las versiones de estas dependencias que sean compatibles con la versión de la plataforma a la que está destinado el proyecto.
 
-4. Reinicie Visual Studio y abra la aplicación.
+1. Reinicie Visual Studio y abra la aplicación.
 
-5. Haga clic con el botón derecho en el nodo **Referencias** en el proyecto que produjo el error y elija **Agregar referencia**.
+1. Haga clic con el botón derecho en el nodo **Referencias** en el proyecto que produjo el error y elija **Agregar referencia**.
 
-6. Haga clic en la pestaña **Windows**, luego en la subpestaña **Extensiones** y, después, desactive las casillas de los SDK de extensiones antiguos y active las casillas de los nuevos. Haga clic en **Aceptar**.
+1. Haga clic en la pestaña **Windows**, luego en la subpestaña **Extensiones** y, después, desactive las casillas de los SDK de extensiones antiguos y active las casillas de los nuevos. Haga clic en **Aceptar**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Agregar una referencia en tiempo de diseño
 

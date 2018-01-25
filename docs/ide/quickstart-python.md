@@ -1,5 +1,6 @@
 ---
 title: "Inicio rápido: usar Visual Studio para crear su primera aplicación web Python | Microsoft Docs"
+description: "Una breve introducción al uso de Python en Visual Studio que crea una aplicación web sencilla con el marco de trabajo de Falcon."
 ms.custom: 
 ms.date: 01/08/2018
 ms.reviewer: 
@@ -12,12 +13,14 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 dev_langs: python
-ms.workload: python
-ms.openlocfilehash: 226f673dbd305f9dabf759cb11c6537a2f3ba637
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Inicio rápido: usar Visual Studio para crear su primera aplicación web Python
 
@@ -57,7 +60,7 @@ Pero, en este inicio rápido, se usa la biblioteca de Falcon para experimentar e
 
     ![Explorador de soluciones en el que se muestra el entorno predeterminado](media/quickstart-python-02-default-environment.png)
 
-1. Haga clic con el botón derecho en el entorno y seleccione **Instalar paquete de Python...**. Este comando abre la ventana **Entornos de Python** por la pestaña **Paquetes**. Escriba "falcon" en el campo de búsqueda y seleccione **"instalación de PIP falcon" desde PyPI**. Acepte los mensajes de privilegios de administrador y observe el progreso en la ventana **Salida** de Visual Studio (se le pedirá confirmación de elevación cuando la carpeta de paquetes del entorno global esté ubicada en un área protegida, como `c:\program files`).
+1. Haga clic con el botón derecho en el entorno y seleccione **Instalar paquete de Python...**. Este comando abre la ventana **Entornos de Python** por la pestaña **Paquetes**. Escriba "falcon" en el campo de búsqueda y seleccione **"instalación de PIP falcon" desde PyPI**. Acepte los mensajes de privilegios de administrador y observe el progreso en la ventana **Salida** de Visual Studio. (se le pedirá confirmación de elevación cuando la carpeta de paquetes del entorno global esté ubicada en un área protegida, como `c:\program files`).
 
     ![Instalación de la biblioteca Falcon](media/quickstart-python-03-install-package.png)
 
@@ -67,7 +70,7 @@ Pero, en este inicio rápido, se usa la biblioteca de Falcon para experimentar e
 
 Para obtener más información sobre Falcon, visite [falconframework.org](https://falconframework.org/).
 
-Tenga en cuenta que en lugar de instalar las bibliotecas en el entorno global, los desarrolladores suelen crear un "entorno virtual" en la que se instalan las bibliotecas de un proyecto específico. Muchas plantillas de proyecto de Python en Visual Studio incluyen un archivo `requirements.txt` en el que se enumeran las bibliotecas de las que depende la plantilla. La creación de un proyecto a partir de una de esas plantillas activa la creación de un entorno virtual en el que se instalan las bibliotecas. Para más información, vea [Entornos de Python: entornos virtuales](../python/python-environments.md#virtual-environments).
+Tenga en cuenta que en lugar de instalar las bibliotecas en el entorno global, los desarrolladores suelen crear un "entorno virtual" en la que se instalan las bibliotecas de un proyecto específico. Muchas plantillas de proyecto de Python en Visual Studio incluyen un archivo `requirements.txt` en el que se enumeran las bibliotecas de las que depende la plantilla. La creación de un proyecto a partir de una de esas plantillas activa la creación de un entorno virtual en el que se instalan las bibliotecas. Para más información, vea [Entornos de Python: entornos virtuales](../python/python-environments.md#creating-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Agregar un archivo de código
 

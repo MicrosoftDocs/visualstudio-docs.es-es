@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Escribir código en el editor de código
 El editor de Visual Studio proporciona muchas características que le facilitan la escritura y la administración del código y del texto. Puede expandir y contraer diferentes bloques de código mediante el uso de la esquematización. Puede obtener más información sobre el código mediante IntelliSense, el **Examinador de objetos** y la jerarquía de llamadas. Puede encontrar código mediante características como **Ir a**, **Ir a definición** y **Buscar todas las referencias**. Puede insertar bloques de código con fragmentos de código y generar código mediante funciones como **Generar a partir del uso**. Si no ha usado nunca el editor de Visual Studio, vea una breve introducción en [Edición del código](https://www.visualstudio.com/features/ide-vs).  
@@ -130,9 +130,10 @@ Para buscar dónde se hace referencia a elementos de código específicos en tod
 ## <a name="customize-the-editor"></a>Personalizar el editor  
 Puede compartir su configuración de Visual Studio con otro desarrollador, hacer que su configuración cumpla con un estándar o volver a la configuración predeterminada de Visual Studio mediante el comando **Asistente para importar y exportar configuraciones** en el menú **Herramientas**. En el **Asistente para importar y exportar configuraciones**, puede cambiar la configuración general o el lenguaje seleccionados y la configuración específica del proyecto.
 
-Para definir teclas de acceso rápido nuevas o redefinir las existentes, vaya a **Herramientas**, **Opciones**, **Entorno**, **Teclado**. Para obtener más información sobre las teclas de acceso rápido, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+Para definir teclas de acceso rápido nuevas o redefinir las existentes, vaya a **Herramientas**, **Opciones**, **Entorno**, **Teclado**. Para obtener más información sobre las teclas de acceso rápido, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Para más información sobre cómo personalizar el editor, vea [Personalizar el editor](../ide/customizing-the-editor.md). Para obtener información sobre las opciones del editor específicas del lenguaje, vea [Usar el entorno de desarrollo de Visual C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) y [Opciones, editor de texto, JavaScript, formato](../ide/reference/options-text-editor-javascript-formatting.md).
+Para más información sobre cómo personalizar el editor, vea [Personalizar el editor](../ide/customizing-the-editor.md). Para las opciones del editor específicas de JavaScript, vea [Opciones, editor de texto, JavaScript, formato](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Vea también  
- [IDE de Visual Studio](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Vea también
+
+[IDE de Visual Studio](../ide/visual-studio-ide.md)

@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Administrar Python en Azure App Service
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) es una plataforma como servicio que se ofrece para las aplicaciones web, ya sean sitios a los que se acceda a través de un explorador, API de REST que usan sus propios clientes o procesamientos desencadenados por un evento. App Service admite completamente el uso de Python para implementar aplicaciones.
 
-La compatibilidad de Python personalizable en Azure App Service se proporciona como un conjunto de *extensiones de sitio* de App Service en la que cada una contiene una versión específica del tiempo de ejecución de Python. Así, se pueden instalar los paquetes que se quiera directamente en ese entorno, como se describe en este tema. Al personalizar el entorno en el propio App Service, no es necesario mantener los paquetes en los proyectos de aplicación web ni cargarlos con el código de la aplicación. 
+La compatibilidad de Python personalizable en Azure App Service se proporciona como un conjunto de *extensiones de sitio* de App Service en la que cada una contiene una versión específica del tiempo de ejecución de Python. Así, se pueden instalar los paquetes que se quiera directamente en ese entorno, como se describe en este tema. Al personalizar el entorno en el propio App Service, no es necesario mantener los paquetes en los proyectos de aplicación web ni cargarlos con el código de la aplicación.
 
 > [!Tip]
 > Aunque App Service hace que Python 2.7 y Python 3.4 se instalen de forma predeterminada en las carpetas raíz del servidor, no se pueden personalizar ni instalar paquetes en esos entornos, ni tampoco conviene depender de su existencia o no. En su lugar, es mejor basarse en una extensión de sitio que pueda controlar, como se describe en este tema.
@@ -87,7 +88,7 @@ Empiece buscando la ruta de acceso completa a la extensión de sitio `python.exe
 
 Hay una extensión de sitio de Python instalada en el servidor en `d:\home`, en una carpeta adecuada a la versión y arquitectura de Python (excepto en el caso de algunas versiones anteriores). Por ejemplo, Python 3.6.1 x64 se instala en `d:\home\python361x64`. En este caso, la ruta al intérprete de Python sería `d:\home\python361x64\python.exe`.
 
-Para ver la ruta de acceso específica en App Service, seleccione **Extensiones** en la página de App Service y seleccione la extensión en la lista. 
+Para ver la ruta de acceso específica en App Service, seleccione **Extensiones** en la página de App Service y seleccione la extensión en la lista.
 
 ![Lista de extensiones en Azure App Service](media/python-on-azure-extension-list.png)
 
@@ -165,7 +166,7 @@ El intérprete de Python instalado a través de una extensión de sitio es solo 
 
 Para instalar paquetes directamente en el entorno del servidor, emplee uno de los siguientes métodos:
 
-| Métodos | Uso | 
+| Métodos | Uso |
 | --- | --- |
 | [Consola de Kudu para Azure App Service](#azure-app-service-kudu-console) | Instala los paquetes de forma interactiva. Los paquetes deben ser Python puro o deben publicar paquetes wheel. |
 | [API de REST de Kudu](#kudu-rest-api) | Se puede usar para automatizar la instalación de paquetes.  Los paquetes deben ser Python puro o deben publicar paquetes wheel. |
@@ -199,7 +200,7 @@ La [consola de Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) le p
     Se recomienda usar `requirements.txt`, porque es sencillo reproducir el paquete exacto que se ha establecido tanto localmente como en el servidor. Recuerde simplemente ir a la consola después de implementar los cambios realizados en `requirements.txt` y volver a ejecutar el comando.
 
 > [!Note]
-> En App Service no existe ningún compilador de C, por lo que necesita instalar el paquete wheel para cualquier paquete con módulos de extensión nativos. Muchos paquetes conocidos proporcionan sus propias ruedas. Para los paquetes que no lo hacen, use `pip wheel <package_name>` en su equipo de desarrollo local y, después, cargue la rueda en su sitio. Para obtener un ejemplo, vea [Administración de paquetes necesarios](python-environments.md#managing-required-packages).
+> En App Service no existe ningún compilador de C, por lo que necesita instalar el paquete wheel para cualquier paquete con módulos de extensión nativos. Muchos paquetes conocidos proporcionan sus propias ruedas. Para los paquetes que no lo hacen, use `pip wheel <package_name>` en su equipo de desarrollo local y, después, cargue la rueda en su sitio. Para obtener un ejemplo, vea [Administración de paquetes necesarios](python-environments.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>API de REST de Kudu
 

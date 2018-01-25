@@ -18,11 +18,11 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd5626af6417b5f0010545874bd15c86b30a303a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7275985d07f9f564dac98ba39e5ec31618dcaac4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="functions-javascript"></a>Funciones (JavaScript)
 Las funciones [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] realizan acciones y también pueden devolver valores. A veces son los resultados de cálculos o comparaciones. Las funciones también se denominan "métodos globales".  
@@ -232,7 +232,7 @@ console.log(f(3, 3, 3));
   
 <a name="Rest"></a>   
 ## <a name="rest-parameters"></a>Parámetros de REST  
- Los parámetros de REST, especificados mediante el operador de propagación (), permiten activar argumentos consecutivos en una llamada de función a una matriz.  
+ Los parámetros de REST, especificados mediante el operador de propagación `...`, permiten activar argumentos consecutivos en una llamada de función a una matriz.  
   
  Los parámetros de REST eliminan la necesidad de usar el objeto `arguments`. Los parámetros de REST se diferencian del objeto `arguments` en varios aspectos, como los siguientes:  
   

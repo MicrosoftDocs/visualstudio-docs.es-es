@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Inicio rápido: escribir código en el editor
 
@@ -135,7 +135,7 @@ Gracias al editor de Visual Studio, es muy sencillo inspeccionar la definición 
 
 ## <a name="refactoring-a-name"></a>Refactorizar un nombre
 
-Nadie crea código correctamente la primera vez y, en este sentido, una de las cosas que probablemente queramos cambiar es el nombre de una variable o un método. Vamos a probar con la funcionalidad de [refactorización](../ide/refactoring-code-generation-quick-actions.md#refactoring) de Visual Studio para cambiar el nombre de la variable `_words` a `words`.
+Nadie crea código correctamente la primera vez y, en este sentido, una de las cosas que probablemente queramos cambiar es el nombre de una variable o un método. Vamos a probar con la funcionalidad de [refactorización](../ide/refactoring-in-visual-studio.md) de Visual Studio para cambiar el nombre de la variable `_words` a `words`.
 
 1. Coloque el cursor sobre la definición de la variable `words`, haga clic con el botón derecho y elija **Cambiar nombre...** en el menú contextual. También puede presionar **CTRL**+**R**, **CTRL**+**R**.
 
@@ -161,5 +161,5 @@ Ha completado este inicio rápido sobre el editor de Visual Studio. Ahora, quiz�
 [Fragmentos de código](../ide/code-snippets.md)  
 [Esquematización](../ide/outlining.md)  
 [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)  
-[Refactorización](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[Usar IntelliSense](../ide/using-intellisense.md)  
+[Refactorización](../ide/refactoring-in-visual-studio.md)  
+[Usar IntelliSense](../ide/using-intellisense.md)

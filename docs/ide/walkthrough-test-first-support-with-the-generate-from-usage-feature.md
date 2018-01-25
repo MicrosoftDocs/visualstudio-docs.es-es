@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso | Microsoft Docs"
 ms.custom: 
-ms.date: 10/9/2017
+ms.date: 10/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,19 +13,18 @@ ms.topic: article
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-ms.assetid: 764c17a4-cd95-4c23-bf63-d92d9c5adfb2
-caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1906e55add4dfb4663e3c7da5e84d7538409db17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 696396260d96e25541cbbef6bac3b4a1be93ea13
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
+
 En este tema se muestra cómo usar la característica [Generar a partir del uso](../ide/visual-csharp-intellisense.md#generate-from-usage) que admite el desarrollo de prueba previa.  
   
  El*desarrollo de prueba previa* es un enfoque de diseño de software en el que primero se escriben pruebas unitarias basadas en las especificaciones del producto y, a continuación, se escribe el código fuente que se necesita para que las pruebas se realicen correctamente. Visual Studio admite el desarrollo de prueba previa mediante la generación de nuevos tipos y miembros en el código fuente al hacerles referencia en los casos de prueba, antes de que se definan.  
