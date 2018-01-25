@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Administrar Python en Azure App Service
 
@@ -200,7 +200,7 @@ La [consola de Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) le p
     Se recomienda usar `requirements.txt`, porque es sencillo reproducir el paquete exacto que se ha establecido tanto localmente como en el servidor. Recuerde simplemente ir a la consola después de implementar los cambios realizados en `requirements.txt` y volver a ejecutar el comando.
 
 > [!Note]
-> En App Service no existe ningún compilador de C, por lo que necesita instalar el paquete wheel para cualquier paquete con módulos de extensión nativos. Muchos paquetes conocidos proporcionan sus propias ruedas. Para los paquetes que no lo hacen, use `pip wheel <package_name>` en su equipo de desarrollo local y, después, cargue la rueda en su sitio. Para obtener un ejemplo, vea [Administración de paquetes necesarios](python-environments.md#managing-required-packages-requirementstxt).
+> En App Service no existe ningún compilador de C, por lo que necesita instalar el paquete wheel para cualquier paquete con módulos de extensión nativos. Muchos paquetes conocidos proporcionan sus propias ruedas. Para los paquetes que no lo hacen, use `pip wheel <package_name>` en su equipo de desarrollo local y, después, cargue la rueda en su sitio. Para obtener un ejemplo, vea [Administración de paquetes necesarios](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>API de REST de Kudu
 
