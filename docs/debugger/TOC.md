@@ -18,6 +18,7 @@
 # Guías de procedimientos
 ## [Navegación en el código con el depurador](navigating-through-code-with-the-debugger.md)
 ## [Uso de puntos de interrupción](using-breakpoints.md)
+### [Solución de problemas de puntos de interrupción](troubleshooting-breakpoints.md)
 ## [Inspección de datos](debugger-windows.md)
 ### [Inspección de variables](autos-and-locals-windows.md)
 ### [Definición de una inspección de variables](watch-and-quickwatch-windows.md)
