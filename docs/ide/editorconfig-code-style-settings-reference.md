@@ -21,11 +21,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1657a440405533ba188a101ae22c26c2777feff5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76b7ed58713f61882130c48d808012dc35055f55
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 
@@ -300,7 +300,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers">Preferencias de modificadores</a>
 
-Las reglas de estilo de esta sección se refieren a las preferencias de modificadores, incluida la necesidad de modificadores de accesibilidad y la especificación del criterio de ordenación deseado de los modificadores.
+Las reglas de estilo de esta sección hacen referencia a las preferencias de modificadores, incluida la necesidad de modificadores de accesibilidad y la especificación del criterio de ordenación deseado de los modificadores.
 
 En la tabla siguiente se muestran los nombres e identificadores de las reglas, los lenguajes de programación aplicables, los valores predeterminados y la primera versión compatible de Visual Studio:
 
@@ -316,7 +316,7 @@ Esta regla no acepta un valor **true** o **false**; en su lugar, acepta un valor
 
 | Valor | Description |
 | ----- |:----------- |
-| always | Prefiere que se especifiquen los modificadores de accesibilidad |
+| always | Prefiere que los modificadores de accesibilidad se especifiquen. |
 | for\_non\_interface_members | Prefiere que los modificadores de accesibilidad se declaren, excepto para los miembros de la interfaz pública. Esto no será distinto actualmente del valor **always** y servirá como prueba futura si C# agrega métodos predeterminados de interfaz. |
 | never | No se prefiere que se especifiquen los modificadores de accesibilidad |
 
