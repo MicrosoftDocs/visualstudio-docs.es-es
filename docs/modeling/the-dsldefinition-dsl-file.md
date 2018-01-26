@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>El archivo DslDefinition.dsl
 Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto de Dsl de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución, que define un *lenguaje específico de dominio*. El archivo DslDefinition.dsl describe las clases y relaciones de un lenguaje específico de dominio, junto con el diagrama, formas, conectores y el formato de serialización, y **cuadro de herramientas** del lenguaje específico de dominio y su herramientas de edición. En una solución de lenguaje específico de dominio, el código que define esas herramientas se genera conforme a la información del archivo DslDefinition.dsl.  
@@ -192,7 +192,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto de
   
 -   **IsUIReadOnly**. Este atributo determina si el usuario puede cambiar la propiedad en el **propiedades** ventana o a través de un elemento decorator en el que se incluye la propiedad.  
   
--   **Tipo**. Este atributo se puede establecer en Normal, Calculated o CustomStorage. Si establece este atributo en Calculated, debe proporcionar código personalizado que determine el valor, y la propiedad será de solo lectura. Si establece este atributo en CustomStorage, debe proporcionar código que obtenga y establezca los valores.  
+-   **Kind**. Este atributo se puede establecer en Normal, Calculated o CustomStorage. Si establece este atributo en Calculated, debe proporcionar código personalizado que determine el valor, y la propiedad será de solo lectura. Si establece este atributo en CustomStorage, debe proporcionar código que obtenga y establezca los valores.  
   
 -   **IsElementName**. Si este atributo se establece en True, su valor se establece automáticamente en un valor único cuando se crea una instancia de la clase primaria. Este atributo se puede establecer en True solo para una propiedad en cada clase, que debe tener un tipo String. En el ejemplo Component Diagram (Diagrama de componentes), la propiedad `Name` de `NamedElement` tiene `IsElementName` establecido en True. Siempre que un usuario crea un elemento `Component` (que hereda de `NamedElement`), el nombre se inicializa automáticamente en algo como "Component6".  
   
@@ -546,6 +546,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Las asignaciones de conectores también pueden contener asignaciones de elementos Decorator.  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)

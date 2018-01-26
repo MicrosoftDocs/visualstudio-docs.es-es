@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c0ecd953a0a4cb744f726fc6a62bee564d15579
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 581d4e907185339aa16bacce19a9bf31ff4d121d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir herramientas de modelado:  
@@ -55,7 +55,7 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 |Eliminar, cambiar el valor primario o volver a vincular elementos relacionados cuando se elimina un elemento.|Establecer el **propaga eliminar** valor de un rol de relación. Para los efectos más complejos, invalida `ShouldVisitRelationship` y `ShouldVisitRolePlayer` métodos en el `MyDslDeleteClosure` (clase), definida en **DomainModel.cs**<br /><br /> Vea [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md)|  
 |Conservar el diseño de la forma y la apariencia de copia y arrastre y coloque.|Agregar las formas y conectores a copiado `ElementGroupPrototype`. Es el método más conveniente para invalidar`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
 |Pegar formas en la ubicación elegida, como la posición actual del cursor.|Invalidar `ClipboardCommandSet.ProcessOnCopy()` para usar la versión específica de la ubicación de `ElementOperations.Merge().` vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
-|Crear vínculos adicionales al pegar|Invalidar ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Crear vínculos adicionales al pegar|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Habilitar arrastre y coloque los elementos de este diagrama, otros lenguajes DSL y Windows|Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Permiten una forma o una herramienta y se puedan arrastrar una forma secundaria, por ejemplo, un puerto, tal y como si se arrastró el elemento primario.|Definir una directiva de mezcla de elemento en la clase de objeto de destino, para reenviar el objeto quitado al elemento primario. Vea [Personalizar movimiento y la creación del elemento](../modeling/customizing-element-creation-and-movement.md).|  
 |Permite que una forma o herramienta que se pueden arrastrar a una forma y tienen vínculos adicionales o los objetos creados. Por ejemplo, para permitir un comentario que se coloca en un elemento al que está vinculado.|Definir una directiva de mezcla de elemento en la clase de dominio de destino y definir los vínculos que se genere. En casos complejos, puede agregar código personalizado. Vea [Personalizar movimiento y la creación del elemento](../modeling/customizing-element-creation-and-movement.md).|  
@@ -70,10 +70,10 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 |Integrar varios DSL para que funcionen como parte de una aplicación.|Vea [integrar modelos mediante Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
 |Permitir ADSL ampliar por terceros y controlar la extensión.|[Ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Compartir clases entre DSL mediante una biblioteca DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definir una directiva de bloqueo para crear segmentos de solo lectura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>Vea también  
- [Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md)   
- [Escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Modelar el SDK de Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>Vea también
+
+[Cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md)   
+[Escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[Modelar el SDK de Visual Studio: lenguajes específicos de dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

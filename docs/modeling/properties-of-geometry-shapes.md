@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 84773891342b18a583cf2919a7d09e0aaa9d2b93
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7c2b54b5bbda108c7f616eb71f7945e071721856
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-geometry-shapes"></a>Propiedades de las formas geométricas
 Puede usar formas de geometría para especificar cómo se muestran las instancias de clases de dominio en un lenguaje específico de dominio. Para obtener más información, consulte [cómo definir un lenguaje específico de dominio](../modeling/how-to-define-a-domain-specific-language.md). Para obtener más información acerca de cómo utilizar estas propiedades, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -52,4 +52,4 @@ Puede usar formas de geometría para especificar cómo se muestran las instancia
 |Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 de esta forma.|\<Ninguno >|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

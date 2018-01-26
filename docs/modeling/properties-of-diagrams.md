@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 744dffd17f13c821381de6014881ef2115c0f75c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 0c08986b9508e4061a44575d629937c70bffc06e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-diagrams"></a>Propiedades de los diagramas
 Puede establecer propiedades que especifican cómo los diagramas aparecerá en el diseñador generado. Por ejemplo, puede especificar un color predeterminado para el texto en el diagrama.  
@@ -46,4 +46,4 @@ Puede establecer propiedades que especifican cómo los diagramas aparecerá en e
 |Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 de este diagrama.|\<Ninguno >|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

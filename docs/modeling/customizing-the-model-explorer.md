@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c9c9fbaaed7375cffd581efca34465effd48d33c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7380d4bcade2e93b7e9ab7302201b67df629e041
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 Puede cambiar la apariencia y el comportamiento del explorador para el Diseñador de lenguaje específico de dominio como se indica a continuación:  
@@ -30,7 +30,7 @@ Puede cambiar la apariencia y el comportamiento del explorador para el Diseñado
 -   Ocultar nodos.  
   
 ## <a name="changing-the-window-title"></a>Cambiar el título de ventana  
- Para cambiar el título de la ventana del explorador generado, seleccione **comportamiento Explorer** en el **DSL explorador**y, a continuación, en la **propiedades** ventana, establezca el ** Título** propiedad para el título que desee.  
+ Para cambiar el título de la ventana del explorador generado, seleccione **comportamiento Explorer** en el **DSL explorador**y, a continuación, en la **propiedades** ventana, establezca el  **Título** propiedad para el título que desee.  
   
 ## <a name="changing-the-tab-icon"></a>Cambio del icono de pestaña  
  Para cambiar el icono de pestaña en el explorador, utilice un icono de 16 x 16 píxeles en un archivo .bmp. Coloque el archivo de icono en la carpeta \DslPackage\Resources\ y, a continuación, cambie el nombre de archivo a **ModelExplorerToolWindowBitmaps.bmp**. Por ejemplo, puede cambiar la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] setup.ico icono de archivos al formato .bmp y cambie su nombre a **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. El diseñador generado mostrará este icono en la pestaña de su explorador cuando se acopla junto con **el Explorador de soluciones**.  
@@ -111,5 +111,6 @@ Puede cambiar la apariencia y el comportamiento del explorador para el Diseñado
   
      El explorador debe mostrar sólo una **actores** nodo y no debe mostrar el **comentarios** nodo.  
   
-## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Vea también
+
+[Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

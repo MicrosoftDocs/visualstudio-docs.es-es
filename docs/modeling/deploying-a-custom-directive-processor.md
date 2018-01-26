@@ -11,27 +11,29 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
+
 Para usar un procesador de directivas personalizado en Visual Studio en cualquier equipo, debe registrarlo mediante uno de los métodos descritos en este tema.  
   
- A continuación se indican los métodos que puede usar:  
+A continuación se indican los métodos que puede usar:  
   
--   [Extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Proporciona una manera de instalar y desinstalar el procesador de directivas tanto en el propio equipo como en otros equipos. Por lo general, puede empaquetar otras características en la misma extensión VSIX.  
+-   [Extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Proporciona una manera de instalar y desinstalar el procesador de directivas tanto en el propio equipo como en otros equipos. Por lo general, puede empaquetar otras características en la misma extensión VSIX.  
   
 -   [VSPackage](../extensibility/internals/vspackages.md). Si define un paquete de VS que contiene otras características además del procesador de directivas, este constituye un método práctico para registrar el procesador de directivas.  
   
 -   Establecer una clave del Registro. En este método, agrega una entrada del Registro para el procesador de directivas.  
   
- Debe usar uno de estos métodos si desea transformar la plantilla de texto en Visual Studio o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Si utiliza un host personalizado en su propia aplicación, el host personalizado es el responsable de localizar los procesadores de directivas para cada directiva.  
+Debe usar uno de estos métodos si desea transformar la plantilla de texto en MSBuild o Visual Studio. Si utiliza un host personalizado en su propia aplicación, el host personalizado es el responsable de localizar los procesadores de directivas para cada directiva.  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implementar un procesador de directivas en una extensión VSIX  
- Puede agregar un procesador de directivas personalizado a una [extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implementar un procesador de directivas en una extensión VSIX
+
+Puede agregar un procesador de directivas personalizado a una [extensión de Visual Studio (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
   
  Debe asegurarse de que los dos elementos siguientes están incluidos en el archivo .vsix:  
   
@@ -39,10 +41,10 @@ Para usar un procesador de directivas personalizado en Visual Studio en cualquie
   
 -   Un archivo .pkgdef que registra el procesador de directivas. El nombre de raíz del archivo debe ser igual que el ensamblado. Por ejemplo, los archivos pueden tener los nombres CDP.dll y CDP.pkgdef.  
   
- Para inspeccionar o cambiar el contenido de un archivo .vsix, cambie su extensión de nombre de archivo a .zip y, a continuación, ábralo. Después de editar el contenido, vuelva a establecer el nombre de archivo en .vsix.  
-  
- Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describe un método.  
-  
+Para inspeccionar o cambiar el contenido de un archivo .vsix, cambie su extensión de nombre de archivo a .zip y, a continuación, ábralo. Después de editar el contenido, vuelva a establecer el nombre de archivo en .vsix.  
+
+Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describe un método.  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Para desarrollar un procesador de directivas personalizado en un proyecto VSIX  
   
 1.  Cree un proyecto VSIX en Visual Studio.  
@@ -90,11 +92,11 @@ Para usar un procesador de directivas personalizado en Visual Studio en cualquie
   
 5.  Agregue las referencias siguientes al proyecto:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Agregue la clase de procesador de directivas personalizado al proyecto.  
   
@@ -197,5 +199,6 @@ Para usar un procesador de directivas personalizado en Visual Studio en cualquie
 |Clase|REG_SZ|\<**El nombre de clase completo**>|  
 |Ensamblado|REG_SZ|\<**El nombre del ensamblado en la GAC**>|  
   
-## <a name="see-also"></a>Vea también  
- [Crear procesadores de directivas personalizadas para las plantillas de texto T4](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>Vea también
+
+[Crear procesadores de directivas personalizadas para las plantillas de texto T4](../modeling/creating-custom-t4-text-template-directive-processors.md)

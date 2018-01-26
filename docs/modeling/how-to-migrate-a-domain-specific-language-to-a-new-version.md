@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e15efdb40b21b187dfc8bec543fc48c91f9efcf6
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 7578426058c5e41bb6507c044be411348c42d050
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Cómo: Migrar lenguajes específicos de dominio a una nueva versión
 Puede migrar proyectos de definen y utilizar los lenguajes específicos de dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] de la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se distribuyó con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].  
@@ -23,7 +23,7 @@ Puede migrar proyectos de definen y utilizar los lenguajes específicos de domin
   
  Debe ejecutar la herramienta de migración de forma explícita: no se inicia automáticamente al abrir una solución en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. La herramienta y el documento de instrucciones detalladas se pueden encontrar en esta ruta de acceso:  
   
- **% Programa Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+ **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 ## <a name="before-you-migrate-your-dsl-projects"></a>Antes de migrar los proyectos de DSL  
  La herramienta de migración modifica [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] archivos de proyecto (**.csproj**) y archivos de solución (**.sln**).  
@@ -42,7 +42,7 @@ Puede migrar proyectos de definen y utilizar los lenguajes específicos de domin
   
     -   Puede haga doble clic en la herramienta en el Explorador de Windows (o explorador de archivos) o iniciar la herramienta desde un símbolo del sistema. La herramienta está en esta ubicación:  
   
-         **%ProgramFiles%\Microsoft visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
+         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
 2.  Elija la carpeta que contiene las soluciones y proyectos que se va a convertir.  
   
@@ -76,7 +76,7 @@ Puede migrar proyectos de definen y utilizar los lenguajes específicos de domin
     2.  Haga clic en el **Transformar todas las plantillas** botón en el encabezado del explorador de soluciones.  
   
         > [!NOTE]
-        >  Puede realizar este paso innecesario. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+        >  Puede realizar este paso innecesario. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6.  Actualice el código personalizado en los proyectos convertidos.  
   

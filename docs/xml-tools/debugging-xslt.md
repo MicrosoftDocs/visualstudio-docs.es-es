@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fe3d624fdfd187ebec59f43fbde8c750958d6703
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d610a7410232104428281d90bf7c67992e2a378
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="debugging-xslt"></a>Depuración de XSLT
 Puede utilizar el depurador de Visual Studio para depurar XSLT. El depurador admite la definición de puntos de interrupción, la visualización de los estados de ejecución de XSLT, etc. La depuración de XSLT se encuentra disponible en Visual Studio Team System y Professional Edition.  
@@ -57,5 +57,5 @@ Puede utilizar el depurador de Visual Studio para depurar XSLT. El depurador adm
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Presenta el depurador de Visual Studio.  
   
- [Referencia XSLT](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [Referencia XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  Proporciona material de referencia para elementos y funciones XSLT.

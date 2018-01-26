@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5d489f41069f478abfba32a65690a5adc9c2272c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 4dabfb345d9a98228afae5e20b63e6ded760800d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
 Cuando se abre una solución de herramientas de lenguajes específicos de dominio (herramientas ADSL) en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la interfaz de usuario será similar a la siguiente imagen.  
@@ -39,7 +39,7 @@ Cuando se abre una solución de herramientas de lenguajes específicos de domini
   
  La tabla siguiente explican algunos de los elementos del diagrama de modelo de dominio.  
   
-|**Término**|**Definición**|  
+|**Term**|**Definición**|  
 |--------------|--------------------|  
 |Clase de dominio|Clases de dominio son los tipos de elementos de los modelos.<br /><br /> Una clase de dominio puede aparecer más de una vez en un diagrama, si es el destino de más de una relación.<br /><br /> Para agregar una clase de dominio, arrastre la herramienta de la clase de dominio desde el **cuadro de herramientas** a la **clases y relaciones** lateral del diagrama.|  
 |Relación de dominio|Las relaciones de dominio son los tipos de vínculos entre los elementos de los modelos.<br /><br /> Un *incrustar relación* indica que el elemento de destino está propiedad o incluido en el elemento de origen y aparece como una línea sólida. Todos los elementos de un modelo deben ser el destino de una relación de incrustación, para que el modelo constituye un árbol. A *referencia relación* indica un vínculo entre elementos del modelo general y aparece como una línea discontinua. Cualquier elemento puede tener cualquier número de vínculos de referencia.<br /><br /> Crear una relación, haga clic en la herramienta en el **cuadro de herramientas**, haga clic en la clase de dominio de origen y, a continuación, haga clic en la clase de destino.|  
@@ -48,5 +48,5 @@ Cuando se abre una solución de herramientas de lenguajes específicos de domini
   
 ## <a name="see-also"></a>Vea también  
  [Información general sobre las herramientas de lenguaje específico de dominio](../modeling/overview-of-domain-specific-language-tools.md)   
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)

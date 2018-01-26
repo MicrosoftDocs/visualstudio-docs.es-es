@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Métodos de utilidad de las plantillas de texto
-Existen varios métodos que siempre están disponibles cuando se escribe código un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] plantilla de texto. Estos métodos se definen en <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Hay varios métodos que siempre están disponibles cuando se escribe código en una plantilla de texto de Visual Studio. Estos métodos se definen en <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  También puede usar otros métodos y los servicios proporcionados por el entorno de host en una plantilla de texto (no preprocesada) normal. Por ejemplo, puede resolver las rutas de acceso de archivo, registrar errores y obtener servicios proporcionados por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y cargar alguna paquetes.  Para obtener más información, consulte [acceso a Visual Studio desde una plantilla de texto](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> También puede usar otros métodos y los servicios proporcionados por el entorno de host en una plantilla de texto (no preprocesada) normal. Por ejemplo, puede resolver las rutas de acceso de archivo, registrar errores y obtener servicios proporcionados por Visual Studio y los paquetes de carga. Para obtener más información, consulte [acceso a Visual Studio desde una plantilla de texto](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Escribir métodos  
- Puede usar el `Write()` y `WriteLine()` métodos anexar texto dentro de un bloque de código estándar, en lugar de usar un bloque de código de la expresión. Los siguientes bloques de código de dos son funcionalmente equivalentes.  
+## <a name="write-methods"></a>Escribir métodos
+
+Puede usar el `Write()` y `WriteLine()` métodos anexar texto dentro de un bloque de código estándar, en lugar de usar un bloque de código de la expresión. Los siguientes bloques de código de dos son funcionalmente equivalentes.  
   
-##### <a name="code-block-with-an-expression-block"></a>Bloque de código con un bloque de expresiones  
+### <a name="code-block-with-an-expression-block"></a>Bloque de código con un bloque de expresiones  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Bloque de código con WriteLine()  
+### <a name="code-block-using-writeline"></a>Bloque de código con WriteLine()  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Métodos de sangría  
+## <a name="indentation-methods"></a>Métodos de sangría
+
  Puede utilizar métodos de sangría para dar formato al resultado de la plantilla de texto. El <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> clase tiene un `CurrentIndent` propiedad de cadena que se muestra la sangría actual en la plantilla de texto y un `indentLengths` campo que es una lista de las sangrías que se han agregado. Puede agregar una sangría con el `PushIndent()` método y restar una sangría con el `PopIndent()` método. Si desea quitar todas las sangrías, use la `ClearIndent()` método. El bloque de código siguiente muestra el uso de estos métodos:  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Métodos de advertencia y error  
- Puede utilizar métodos de utilidad de error y advertencia para agregar mensajes a la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lista de errores. Por ejemplo, el código siguiente agregará un mensaje de error en la lista de errores.  
+ Puede utilizar métodos de utilidad de advertencia y error para agregar mensajes a la lista de errores de Visual Studio. Por ejemplo, el código siguiente agregará un mensaje de error en la lista de errores.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- El tipo de `this.Host` depende del tipo de host en el que se está ejecutando la plantilla. En una plantilla que se ejecuta en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede convertir `this.Host` a `IServiceProvider` para obtener acceso a servicios como el IDE. Por ejemplo:  
+ El tipo de `this.Host` depende del tipo de host en el que se está ejecutando la plantilla. En una plantilla que se ejecuta en Visual Studio, puede convertir `this.Host` a `IServiceProvider` para obtener acceso a servicios como el IDE. Por ejemplo:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

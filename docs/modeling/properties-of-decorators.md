@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7f5bd86a9fe8d67111886e7578187747b1ea3ec8
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b3f1c171f86c9af82e532abf948ee6199a16d0e1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
 Decoradores son iconos, texto o comillas angulares de expandir o contraer que pueden aparecer en formas o conectores en el diagrama. Las siguientes tablas muestran las propiedades de los tres tipos de elemento decorator. Algunas de las propiedades aparecen solo en decoradores de forma o solo en decoradores de conector.  
@@ -66,4 +66,4 @@ Decoradores son iconos, texto o comillas angulares de expandir o contraer que pu
 |Posición|La posición predeterminada de la decorador.|TargetBottom|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

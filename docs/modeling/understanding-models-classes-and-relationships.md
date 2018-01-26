@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a3ee963ef1ac4c4159f0fe1922bfafa90875fad7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b6e23b91f411cd5260d31927ec35957a3f6c00c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
 Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición DSL, junto con cualquier código de programa personalizado que se haya escrito. La mayoría del código de programa en la solución DSL se genera a partir de este archivo.  
@@ -150,4 +150,4 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
  Una relación derivada especializa su relación de base. El dominio de las clases que TI vínculos deben derivarse de o igual a las clases vinculadas mediante la relación de base. Cuando se crea un vínculo de la relación derivada en un modelo, es una instancia de la clase derivada y las relaciones de base. En el código de programa, puede navegar con el extremo opuesto del vínculo mediante las propiedades generadas por la base o la clase derivada.  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

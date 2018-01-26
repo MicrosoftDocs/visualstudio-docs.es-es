@@ -10,25 +10,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 92db1c4d27eec5a9ac18d51644dfb0141c2fef34
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
-Este tema explica los conceptos básicos de definición y uso de un lenguaje específico de dominio (DSL) creado con el SDK de modelado de Visual Studio.  
+Este tema explica los conceptos básicos de definición y uso de un lenguaje específico de dominio (DSL) creado con el SDK de modelado de Visual Studio.
 
+> [!NOTE]
+> En Visual Studio de 2017, el SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
- Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL herramientas laboratorio**, que encontrará en este sitio: [Visualizaton y SDK de modelado](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL herramientas laboratorio**, que encontrará en este sitio: [Visualizaton y SDK de modelado](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>¿Qué puede hacer con un lenguaje específico de dominio?  
  Un lenguaje específico de dominio es una notación, normalmente gráfica, de que está diseñada para utilizarse para un propósito específico. Por el contrario, los lenguajes como UML son uso generales. En un DSL, puede definir los tipos de elemento de modelo y sus relaciones y cómo van a mostrar en la pantalla.  
   
- Al diseñar un DSL, puede distribuirla como parte de un paquete de extensión de integración de Visual Studio (VSIX). Los usuarios trabajar con DSL en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
+ Al diseñar un DSL, puede distribuirla como parte de un paquete de extensión de integración de Visual Studio (VSIX). Los usuarios trabajan con DSL en Visual Studio:  
   
  ![Diagrama de árbol genealógico, cuadro de herramientas y explorador](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
@@ -36,15 +35,15 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
   
  Una de las aplicaciones principales de DSL consiste en generar código de programa, archivos de configuración y otros artefactos. Especialmente en proyectos grandes y líneas de productos, donde se creará varias variantes de un producto, generar muchos de los aspectos de la variable de DSL puede proporcionar un gran aumento de confiabilidad y una respuesta muy rápida a los cambios de requisitos.  
   
- El resto de esta información general es un tutorial que presenta las operaciones básicas de creación y uso de un lenguaje específico de dominio en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ El resto de esta información general es un tutorial que presenta las operaciones básicas de creación y uso de un lenguaje específico de dominio en Visual Studio.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para definir un DSL, debe tener instalados los siguientes componentes:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Modelado del SDK para Visual Studio||  
 
 
@@ -52,7 +51,7 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
 
   
 ## <a name="creating-a-dsl-solution"></a>Crear una solución DSL  
- Para crear un nuevo lenguaje específico de dominio, se crea un nuevo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución mediante la plantilla de proyecto de lenguaje específico de dominio.  
+ Para crear un nuevo lenguaje específico de dominio, crea una nueva solución de Visual Studio mediante la plantilla de proyecto de lenguaje específico de dominio.  
   
 #### <a name="to-create-a-dsl-solution"></a>Para crear una solución de DSL  
   
@@ -100,7 +99,7 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
   
 -   **Proyecto de DSL** este proyecto contiene código que define el lenguaje específico de dominio.  
   
--   **Proyecto DslPackage** este proyecto contiene código que permite las instancias de DSL para abrir y editar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+-   **Proyecto DslPackage** este proyecto contiene código que permite las instancias de DSL para abrir y editar en Visual Studio.  
   
 ##  <a name="Debugging"></a>Ejecuta DSL  
  Puede ejecutar la solución DSL tan pronto como se ha creado. Más adelante, puede modificar la definición DSL gradualmente, ejecutando la solución de nuevo después de cada cambio.  
@@ -110,15 +109,15 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
 1.  Haga clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones. Esto vuelve a generar la mayoría del código fuente de DslDefinition.dsl.  
   
     > [!NOTE]
-    >  Cada vez que cambie DslDefinition.dsl, debe hacer clic en **Transformar todas las plantillas** antes de volver a generar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+    >  Cada vez que cambie DslDefinition.dsl, debe hacer clic en **Transformar todas las plantillas** antes de volver a generar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
 2.  Presione F5, o bien, en la **depurar** menú, haga clic en **Iniciar depuración**.  
   
-     Compilaciones de DSL y está instalado en la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+     Compilaciones de DSL y está instalado en la instancia experimental de Visual Studio.
   
-     Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . La instancia experimental toma su configuración de un subárbol independiente del registro, donde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones están registradas con fines de depuración. Las instancias normales de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no tiene acceso a las extensiones registradas no existe.  
+     Inicia una instancia experimental de Visual Studio. La instancia experimental toma su configuración de un subárbol del registro, donde se registran las extensiones de Visual Studio para fines de depuración independiente. Instancias normales de Visual Studio no tiene acceso a las extensiones registradas no existe.  
   
-3.  En la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra el archivo de modelo denominado **prueba** de **el Explorador de soluciones**.  
+3.  En la instancia experimental de Visual Studio, abra el archivo de modelo denominado **prueba** de **el Explorador de soluciones**.  
   
      \- o -  
   
@@ -136,7 +135,7 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
   
 5.  Haga clic en las etiquetas de las formas para cambiarlos.  
   
- Su experimental [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se parecerán al ejemplo siguiente:  
+ El Visual Studio experimental se parecerán al ejemplo siguiente:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
@@ -147,7 +146,7 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
   
  Puede ver un modelo como un árbol en el **explorador** ver mientras se está editando un modelo. Cuando se agregan formas al diagrama, los elementos del modelo también aparecen en el explorador. El explorador se puede utilizar incluso si no hay ningún diagrama.  
   
- Si no puede ver el explorador en la instancia de depuración de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], en la **vista** menú, seleccione **otras ventanas**y, a continuación, haga clic en  *\<su idioma >* **Explorer**.  
+ Si no ve el explorador en la instancia de depuración de Visual Studio, en el **vista** menú, seleccione **otras ventanas**y, a continuación, haga clic en  *\<su idioma >* **Explorer**.  
   
 ### <a name="the-api-of-your-dsl"></a>La API del ADSL  
  ADSL genera una API que permite leer y actualizar los modelos que sean instancias de DSL. Es una aplicación de la API generar archivos de texto de un modelo. Para obtener más información, consulte [generación de código en tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
@@ -164,7 +163,7 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Volver a generar archivos de texto después de cambiar el archivo de modelo  
   
-1.  En la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], guarde el archivo de modelo.  
+1.  En la instancia experimental de Visual Studio, guarde el archivo de modelo.  
   
 2.  Asegúrese de que el parámetro de nombre de archivo en cada archivo .tt hace referencia al archivo de modelo que está usando para los experimentos. Guarde el archivo .tt.  
   
@@ -182,7 +181,7 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
  Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md) y [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="customizing-the-dsl"></a>Personalizar el DSL  
- Si desea modificar la definición DSL, cierre la instancia experimental y actualizar la definición en el método main [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instancia.  
+ Si desea modificar la definición DSL, cierre la instancia experimental y actualizar la definición en la instancia principal de Visual Studio.  
   
 > [!NOTE]
 >  Después de haber modificado la definición DSL, podría perder información en los modelos de prueba creados con versiones anteriores.  Por ejemplo, la solución de depuración contiene un archivo que se denomina Sample, que contiene algunas formas y conectores. Después de empezar a desarrollar su definición DSL, no estarán visibles y se perderán cuando se guarde el archivo.  
@@ -222,9 +221,9 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
   
     2.  Haga clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones  
   
-    3.  Presione F5. Espere hasta que la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aparece.  
+    3.  Presione F5. Espere hasta que aparezca la instancia experimental de Visual Studio.  
   
-4.  En la solución de depuración en la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra el archivo de modelo de prueba. Arrastrar elementos a él desde el cuadro de herramientas. Tenga en cuenta que los títulos de herramienta y los nombres de tipo en el Explorador de DSL han cambiado.  
+4.  En la solución de depuración en la instancia experimental de Visual Studio, abra un archivo de modelo de prueba. Arrastrar elementos a él desde el cuadro de herramientas. Tenga en cuenta que los títulos de herramienta y los nombres de tipo en el Explorador de DSL han cambiado.  
   
 5.  Guarde el archivo de modelo.  
   
@@ -348,7 +347,7 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
   
 8.  Guardar la definición DSL, haga clic en **Transformar todas las plantillas**y, a continuación, presione **F5**.  
   
-9. En la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra el archivo de modelo de prueba. Usar las nuevas herramientas para crear pueblos y vínculos entre los pueblos y las personas. Tenga en cuenta que solo se pueden crear vínculos entre los tipos correctos de elemento.  
+9. En la instancia experimental de Visual Studio, abra un archivo de modelo de prueba. Usar las nuevas herramientas para crear pueblos y vínculos entre los pueblos y las personas. Tenga en cuenta que solo se pueden crear vínculos entre los tipos correctos de elemento.  
   
 10. Crear código que enumera la ciudad en la que vive cada persona. Plantillas de texto son uno de los lugares donde puede ejecutar este código. Por ejemplo, puede modificar el archivo de Sample.tt existente en la solución de depuración para que contenga el código siguiente:  
   
@@ -380,33 +379,32 @@ Este tema explica los conceptos básicos de definición y uso de un lenguaje esp
 ## <a name="validation-and-commands"></a>Validación y comandos  
  También puede desarrollar aún más este DSL agregando restricciones de validación. Estas restricciones son métodos que se pueden definir, asegúrese de que el modelo está en un estado correcto. Por ejemplo, podría definir una restricción para asegurarse de que la fecha de nacimiento de un elemento secundario es posterior a la de sus elementos primarios. La característica de validación muestra una advertencia cuando el usuario DSL intenta guardar un modelo que infringe alguna de las restricciones. Para obtener más información, consulte [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).  
   
- También puede definir los comandos de menú que el usuario puede invocar. Comandos pueden modificar el modelo. También pueden interactuar con otros modelos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y con recursos externos. Para obtener más información, consulte [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ También puede definir los comandos de menú que el usuario puede invocar. Comandos pueden modificar el modelo. También pueden interactuar con otros modelos en Visual Studio y recursos externos. Para obtener más información, consulte [Cómo: modificar un comando de menú estándar](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Implementación de DSL  
- Para permitir que otros usuarios usar el lenguaje específico de dominio, se distribuye un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] archivo de extensión (VSIX). Se crea cuando se compila la solución DSL.  
+ Para permitir que otros usuarios usar el lenguaje específico de dominio, se distribuye un archivo de extensión de Visual Studio (VSIX). Se crea cuando se compila la solución DSL.  
   
- Busque el archivo .vsix en la carpeta bin de la solución. Cópielo en el equipo en el que desea instalar. En ese equipo, haga doble clic en el archivo VSIX. DSL puede utilizarse en todas las instancias de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en ese equipo.  
+ Busque el archivo .vsix en la carpeta bin de la solución. Cópielo en el equipo en el que desea instalar. En ese equipo, haga doble clic en el archivo VSIX. DSL puede utilizarse en todas las instancias de Visual Studio en ese equipo.  
   
- Puede usar el mismo procedimiento para instalar DSL en su propio equipo, por lo que no es necesario usar la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Puede utilizar el mismo procedimiento para instalar DSL en su propio equipo, por lo que no es necesario usar la instancia experimental de Visual Studio.  
   
  Para obtener más información, consulte [implementar soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ##  <a name="Reset"></a>Quitar el antiguo DSL Experimental  
- Si ha creado DSL experimental que ya no desea, puede quitarlos del equipo mediante el restablecimiento de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instancia Experimental.  
+ Si ha creado DSL experimental que ya no desea, puede quitarlos del equipo mediante el restablecimiento de la instancia Experimental de Visual Studio.  
   
- Esto quitará del equipo todos los lenguajes DSL experimental y otros experimental [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones. Se trata de extensiones que se han ejecutado en modo de depuración.  
+ Esto quitará del equipo todos los lenguajes DSL experimental y otras extensiones de Visual Studio experimental. Se trata de extensiones que se han ejecutado en modo de depuración.  
   
- Este procedimiento no quita DSL u otro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones que se han instalado completamente ejecutando el archivo VSIX.  
+ Este procedimiento no quita DSL ni otras extensiones de Visual Studio que se han instalado completamente ejecutando el archivo VSIX.  
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Para restablecer la instancia Experimental de Visual Studio  
   
 1.  Haga clic en **iniciar**, haga clic en **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**y, a continuación, **restablecer Microsoft Instancia Visual Studio 2010 Experimental**.  
   
-2.  Volver a generar cualquier DSL experimental o en otros experimental [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones que desea utilizar.  
+2.  Vuelva a generar cualquier DSL experimental o en otras extensiones de Visual Studio experimental que desea utilizar.  
   
-## <a name="see-also"></a>Vea también  
- [Descripción de los modelos, así que las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md)   
- [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)   
+## <a name="see-also"></a>Vea también
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Descripción de los modelos, así que las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md)   
+[Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 

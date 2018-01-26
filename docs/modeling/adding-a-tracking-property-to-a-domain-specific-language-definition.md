@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de dominio.  
@@ -27,7 +27,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
  Por ejemplo, en las herramientas de lenguaje específico de dominio (herramientas ADSL), el nombre para mostrar propiedades de una clase de dominio tiene un valor predeterminado que se calcula utilizando el nombre de la clase de dominio, pero un usuario puede cambiar el valor en tiempo de diseño o restablecer el valor calculado.  
   
- En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una propiedad que tiene un valor predeterminado basado en la propiedad Namespace predeterminado del modelo de seguimiento de Namespace. Para obtener más información sobre el seguimiento de propiedades, vea [definir propiedades de seguimiento](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ En este tutorial, creará un lenguaje específico de dominio (DSL) que tiene una propiedad que tiene un valor predeterminado basado en la propiedad Namespace predeterminado del modelo de seguimiento de Namespace. Para obtener más información sobre el seguimiento de propiedades, vea [definir propiedades de seguimiento](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 -   La compatibilidad de herramientas DSL descriptores de propiedades de seguimiento. Sin embargo, el diseñador DSL no puede utilizarse para agregar una propiedad de seguimiento en un idioma. Por lo tanto, debe agregar código personalizado para definir e implementar la propiedad de seguimiento.  
   
@@ -48,9 +48,9 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.Microsoft.com/fwlink/?LinkId=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
 ## <a name="creating-the-dsl-project"></a>Crear el proyecto DSL  
  Crear el proyecto para su lenguaje específico de dominio.  
@@ -253,7 +253,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Para modificar el descriptor de tipo para la clase de dominio ExampleModel  
   
 1.  Agregue el código siguiente al archivo TypeDescriptor.cs.  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

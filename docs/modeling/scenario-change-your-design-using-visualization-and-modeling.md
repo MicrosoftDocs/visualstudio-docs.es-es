@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 14e03f7a7c5d9200cf1ebc40f9098121f4ddbff9
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 8ad4a4141d27c9250d53a567ac09b1c5ffa05f49
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño usando modelado y visualización
 Asegúrese de que su sistema de software cumple las necesidades de los usuarios mediante las herramientas de visualización y modelado de Visual Studio.
@@ -485,11 +485,10 @@ Elementos de diagramas de dependencia se encuentran en el proyecto de modelado, 
 |------------------|---------------|  
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
   
-## <a name="see-also"></a>Vea también  
- [Visualizar el código](../modeling/visualize-code.md)   
- [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)   
- [Usar modelos de desarrollo ágil](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)   
+## <a name="see-also"></a>Vea también
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Visualizar el código](../modeling/visualize-code.md)   
+[Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)   
+[Usar modelos de desarrollo ágil](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+[Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
  

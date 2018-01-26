@@ -25,19 +25,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 26dbef0fce67b4af461e7bbc15ecb870f630ca0e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-models-for-your-app"></a>Crear modelos para la aplicación
+
 Los diagramas de modelado le ayudan a entender, aclarar y transmitir las ideas que tiene sobre su código y los requisitos del usuario que el sistema de software debe satisfacer.
-  
- Para ver qué versiones de Visual Studio admite cada tipo de diagrama, consulte [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Para visualizar la arquitectura de un sistema o código existente, cree los diagramas siguientes:  
-  
+
+Para ver qué versiones de Visual Studio admite cada tipo de diagrama, consulte [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+
+Para visualizar la arquitectura de un sistema o código existente, cree los diagramas siguientes:  
+
 |**Diagram**|**Qué muestra**|  
 |-----------------|---------------|  
 |[Diagramas de dependencia: instrucciones](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)|La arquitectura de alto nivel del sistema|  
@@ -46,17 +47,16 @@ Los diagramas de modelado le ayudan a entender, aclarar y transmitir las ideas q
   
 ## <a name="related-tasks"></a>Tareas relacionadas  
   
-|**Tema**|**Task**|  
+|**Topic**|**Task**|  
 |---------------|--------------|  
 |[Visualizar el código](../modeling/visualize-code.md)|Crear mapas de código y diagramas de dependencia mejor comprender código desconocido.|  
 |[Requisitos del usuario de modelos](../modeling/model-user-requirements.md)|Usar modelos para aclarar y transmitir las necesidades del usuario.|  
 |[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|Usar modelos para describir la estructura y el comportamiento global del sistema y para asegurarse de que satisface las necesidades de los usuarios.|  
 |[Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)|Asegurarse de que el software es coherente con las necesidades de los usuarios y la arquitectura global del sistema.|  
-|[Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos de desarrollo ágil](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usar modelos para que resulte más fácil entender y cambiar el sistema durante su desarrollo. |  
+|[Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos de desarrollo ágil](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usar modelos para que resulte más fácil entender y cambiar el sistema durante su desarrollo. |  
 |[Estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md)|Organizar los modelos en un proyecto de tamaño grande o mediano.|  
   
-## <a name="external-resources"></a>Recursos externos  
-  
-|**Categoría**|**Links**|  
-|------------------|---------------|  
-|**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas ADSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+## <a name="resources"></a>Recursos
+
+[Visualización y modelado foro de herramientas de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)  
+[Foro de extensibilidad de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)

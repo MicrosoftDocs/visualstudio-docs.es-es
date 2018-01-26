@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1e61d746c1c7e77cb1ec296bfeb6957281be7f2f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 8d8059d6399f4bb6e9df988fb5ef24eef9b8f096
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-port-shapes"></a>Propiedades de las formas de puerto
 Puede usar formas de puerto para representar las clases de dominio en el diseñador generado.  
@@ -54,4 +54,4 @@ Puede usar formas de puerto para representar las clases de dominio en el diseña
 |Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 de esta forma.|\<Ninguno >|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

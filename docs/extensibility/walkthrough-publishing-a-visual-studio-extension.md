@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 9b2823c15309e63262052fd3cc95d914bf1614c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be1402da1677388712472d4309c40ce767358f7b
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Tutorial: Publicar una extensión de Visual Studio
 
@@ -70,9 +70,7 @@ En este caso se utilizará una extensión predeterminada de VSPackage, pero los 
 
   ![Cargar en Marketplace](media/upload-to-marketplace.png)
 
-6. Elija el editor que desea utilizar para cargar la extensión.  Puede cambiar los publicadores, haga clic en el nombre del publicador en la esquina superior izquierda.
-
-  ![Publicador de cambios de Marketplace](media/change-marketplace-publisher.png)
+6. Elija el editor que desea utilizar para cargar la extensión.  Puede cambiar publicadores, haga clic en los nombres de publicador que aparecen a la izquierda.  Haga clic en **nueva extensión** y seleccione **Visual Studio**.
 
 7. En **1: cargar la extensión**, puede cargar un archivo VSIX directamente en el catálogo de soluciones de Visual Studio o agregar un vínculo a su propio sitio Web. En este caso, se cargará la extensión, TestPublish.vsix.  Arrastre y coloque la extensión o bien use el **haga clic en** vínculo para buscar el archivo.  La extensión puede encontrarse en la carpeta \bin\Release del proyecto.  Haga clic en **Continuar**.
 
@@ -86,7 +84,7 @@ En este caso se utilizará una extensión predeterminada de VSPackage, pero los 
     
     * **Identificador de VSIX** es el identificador único que Visual Studio usa para la extensión.  Esto es necesario si desea que tengan la extensión puede actualizar automáticamente.  Esto es rellena automáticamente desde el archivo source.extension.vsixmanifest.
     
-    * **Logotipo de** que se usará para la extensión.  Esto se rellenarán automáticamente desde el archivo source.extension.vsixmanifest si se proporciona.
+   * **Logotipo de** que se usará para la extensión.  Esto se rellenarán automáticamente desde el archivo source.extension.vsixmanifest si se proporciona.
     
     * **Descripción breve de** de lo que hace la extensión.  Esto se rellenarán automáticamente desde el archivo source.extension.vsixmanifest.
     
@@ -108,12 +106,32 @@ En este caso se utilizará una extensión predeterminada de VSPackage, pero los 
     
     * **Permitir preguntas y respuestas para la extensión** permitirá a los usuarios dejar preguntas en la página de entrada de la extensión.
 
-9. Haga clic en **guardar y cargar**. Esto le llevará página de administración de nuevo en el publicador.  Aún no se ha publicado la extensión.  Para publicar su desplazamiento de extensión a través de la entrada de la extensión y haga clic en **...**  y, a continuación, **hacer público**.  Puede ver cómo la extensión será similar en Marketplace seleccionando **ver detalles**.  Para los números de adquisición, haga clic en **informes**.  Para realizar cambios en la extensión, haga clic en **editar*.
+9. Haga clic en **guardar y cargar**. Esto le llevará página de administración de nuevo en el publicador.  Aún no se ha publicado la extensión.  Para publicar la extensión, haga doble clic en la extensión y seleccione **hacer público**.  Puede ver cómo la extensión será similar en Marketplace seleccionando **vista extensión**.  Para los números de adquisición, haga clic en **informes**.  Para realizar cambios en la extensión, haga clic en **editar*.
 
   ![Menú de la entrada de extensión](media/extension-entry-menu.png)
 
 10. Después de hacer clic **hacer público**, la extensión es pública ahora.  Buscar en Visual Studio Marketplace para la extensión.
 
+## <a name="add-additional-users-to-manage-your-publisher-account"></a>Agregar usuarios adicionales para administrar su cuenta de publicador
+
+Marketplace admite la concesión de permisos de usuarios adicionales para acceder y administrar una cuenta de publicador.
+
+1. Navegue a la cuenta del publicador que se va a agregar usuarios adicionales.
+
+2. Seleccione **miembros** y haga clic en **agregar**
+
+  ![Agregar usuarios adicionales](media/add-users.png)
+
+3. A continuación, puede especificar la dirección de correo electrónico del usuario que se va a agregar y conceder el nivel adecuado de acceso en **seleccione un rol**.  Puede elegir entre las siguientes opciones:
+
+  * **Creador**: el usuario puede publicar extensiones, pero no se puede ver o administrar las extensiones publicadas por otros usuarios.
+  
+  * **Lector**: el usuario puede ver las extensiones, pero no se puede publicar o administrar extensiones.
+  
+  * **Colaborador**: el usuario puede publicar y administrar extensiones, pero no se puede editar la configuración del publicador o administrar el acceso.
+  
+  * **Propietario**: el usuario puede publicar y administrar las extensiones, edite la configuración del publicador y administrar el acceso.
+  
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Instale la extensión desde el catálogo de soluciones de Visual Studio
 
 Ahora que se publica la extensión, instalarlo en Visual Studio y pruébela.
@@ -126,7 +144,7 @@ Ahora que se publica la extensión, instalarlo en Visual Studio y pruébela.
 
 4. Para completar la instalación, cierre todas las instancias de Visual Studio.
 
-## <a name="removing-the-extension"></a>Quitar la extensión
+## <a name="remove-the-extension"></a>Quitar la extensión
 
 Puede quitar la extensión de Visual Studio Marketplace y de su equipo.
 
@@ -136,7 +154,7 @@ Puede quitar la extensión de Visual Studio Marketplace y de su equipo.
 
 2. En la esquina superior derecha, haga clic en **publicar** extensiones.  Seleccione el publicador que utiliza para publicar TestPublish.  Se muestra la lista de TestPublish.
 
-3. Mantenga el mouse sobre la entrada de extensión y haga clic en **...**  y **quitar...** Pedirá que confirme si desea quitar la extensión.  Haga clic en **Aceptar**.
+3. Haga doble clic en la entrada de extensión y haga clic en **quitar** le pedirá que confirme si desea quitar la extensión.  Haga clic en **Aceptar**.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Para quitar la extensión del equipo
 

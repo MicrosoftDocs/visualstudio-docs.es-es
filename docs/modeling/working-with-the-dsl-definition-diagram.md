@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5da1da2b7c74f6c95651eeb0120b213ad1e1d394
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 713d7d3598e56ceb4e5a339facb948d6d222a32d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabajar con diagramas de definición DSL
 El diagrama de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definición es una herramienta importante para definir el lenguaje específico de dominio. Puede agregar elementos al modelo del dominio y definir relaciones en el diagrama, y puede modificar el diseño del diagrama para hacerlo más legible.  
@@ -73,4 +73,4 @@ El diagrama de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definición es
  Si una relación de dominio tiene derivados relaciones, o si tiene relaciones de incrustación o referencia con otras relaciones de dominio, puede mostrar la relación como una clase haciendo clic en la relación y, a continuación, haga clic en **mostrar como clase** . La relación se mostrarán con un **propiedades del dominio** compartimiento y mostrará los árboles de herencia y relaciones.  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

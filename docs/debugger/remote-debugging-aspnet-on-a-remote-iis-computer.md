@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Núcleo de ASP.NET de depuración remota en un equipo IIS remoto en Visual Studio de 2017
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde se implementa la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
 
 ![Los componentes del depurador remoto](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Esta guía explica cómo instalar y configurar un núcleo de ASP.NET de Visual Studio de 2017, implementarla en IIS y asociar al depurador remoto de Visual Studio. Realizar la depuración remota ASP.NET 4.5.2, consulte [ASP.NET de depuración remota en un equipo con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). También puede implementar y depurar en IIS con Azure. Para el servicio de aplicación de Azure, facilidad puede implementar y depurar en una instancia preconfigurada de IIS mediante el [instantánea depurador](../debugger/debug-live-azure-applications.md) o [para asociar el depurador del explorador de servidores](../debugger/remote-debugging-azure.md).
+Esta guía explica cómo instalar y configurar un núcleo de ASP.NET de Visual Studio de 2017, implementarla en IIS y asociar al depurador remoto de Visual Studio. Realizar la depuración remota ASP.NET 4.5.2, consulte [ASP.NET de depuración remota en un equipo con IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). También puede implementar y depurar en IIS con Azure. Para el servicio de aplicación de Azure, facilidad puede implementar y depurar en una instancia preconfigurada de IIS y el depurador remoto mediante el [depurador de instantánea](../debugger/debug-live-azure-applications.md) o [para asociar el depurador del explorador de servidores](../debugger/remote-debugging-azure.md).
 
 Estos procedimientos se han probado en estas configuraciones de servidor:
 * Windows Server 2012 R2 y IIS 8

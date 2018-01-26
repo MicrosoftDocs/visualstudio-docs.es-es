@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Trabajar con soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución. Esta sección trata sobre cómo configurar y personalizar la solución.  
@@ -47,5 +47,5 @@ Un lenguaje específico de dominio (DSL) se crea mediante un [!INCLUDE[vsprvs](.
  [Cómo: Ampliar el diseñador de lenguajes específicos de dominio](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Puede personalizar el diseñador DSL con comandos de menú.  
   
- [Cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Para evitar hacer clic en Transformar todas las plantillas, puede hacerla una parte de la compilación automática.
