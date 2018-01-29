@@ -1,23 +1,27 @@
 ---
-title: "Administración de la configuración de la aplicación (.NET) | Microsoft Docs"
+title: "Administrar la configuración de la aplicación (.NET) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: msvse_settingsdesigner.err.nameblank
-helpviewer_keywords: application settings [Visual Studio]
+f1_keywords:
+- msvse_settingsdesigner.err.nameblank
+helpviewer_keywords:
+- application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a41ed010a4e950bd0fa4d28f63481587b847309
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fdd95f1890033e90b2679a2c992f3a49ad474851
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="managing-application-settings-net"></a>Administración de la configuración de la aplicación (.NET)
 

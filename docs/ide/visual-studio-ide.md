@@ -1,20 +1,20 @@
 ---
-title: "Introducción al IDE de Visual Studio | Microsoft Docs"
+title: "Información general sobre Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Introducción al IDE de Visual Studio
 
@@ -96,7 +96,7 @@ Cuando se inicia Visual Studio por primera vez, puede iniciar sesión opcionalme
 
 ¡Una buena manera de aprender algo es usarlo! Vamos a profundizar y crear un nuevo y sencillo programa.
 
-1. Abra Visual Studio. En el menú, elija **Archivo**, **Nuevo**, **Proyecto**.
+1. Abra Visual Studio. En el menú, elija **Archivo** > **Nuevo** > **Proyecto**.
 
   ![captura de pantalla](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -104,11 +104,14 @@ Cuando se inicia Visual Studio por primera vez, puede iniciar sesión opcionalme
 
 1. El cuadro de diálogo **Nuevo proyecto** muestra varias plantillas de proyecto. Elija la categoría **Windows Universal** en **Visual C#**, seleccione la plantilla **Aplicación vacía (Windows universal)** y, a continuación, elija el botón **Aceptar**.
 
-  ![captura de pantalla](../ide/media/VSIDE_Tour_NewProject2.png)
+  > [!NOTE]
+  > Si no ve la categoría **Universal de Windows**, debe instalar la carga de trabajo **Desarrollo de la Plataforma universal de Windows**. Para ello, elija el vínculo **Abrir el instalador de Visual Studio** en el panel inferior izquierdo del cuadro de diálogo **Nuevo proyecto**. Una vez que se abra el **Instalador de Visual Studio**, seleccione la carga de trabajo **Desarrollo de la Plataforma universal de Windows** y, a continuación, elija **Modificar**.
+
+  ![Plantilla de aplicación vacía de UWP](../ide/media/new-uwp-blank-app-template.png)
 
   Con este proceso se crea un nuevo proyecto de aplicación universal de Windows en blanco que utiliza Visual C# y XAML como lenguajes de programación. Espere un poco mientras Visual Studio configura el proyecto. Si se le pide alguna información, simplemente acepte los valores predeterminados por ahora.
 
-1. En el cuadro de diálogo **Nuevo proyecto de Windows universal**, elija **Aceptar** para aceptar los valores predeterminados.
+1. En el cuadro de diálogo **Nuevo proyecto de la plataforma universal de Windows**, elija **Aceptar** para aceptar los valores predeterminados.
 
 1. En breve, debería ver algo parecido a la captura de pantalla siguiente. Los archivos del proyecto se muestran en el lado derecho de una ventana llamada Explorador de soluciones.
 
@@ -140,7 +143,7 @@ Cuando se inicia Visual Studio por primera vez, puede iniciar sesión opcionalme
 
   ![captura de pantalla](../ide/media/VSIDE_Tour_XAMLButton2.png)
 
-1. Ahora, inicie la aplicación. Para ello, tiene varias posibilidades: haga clic en **Inicio** (![botón Inicio](../ide/media/VSIDE_StartButton.png)) en la barra de herramientas, elija la tecla **F5** o, en el menú, seleccione **Depurar** e **Iniciar depuración**.
+1. Ahora, inicie la aplicación. Para ello, tiene varias posibilidades: haga clic en **Inicio** (![botón Inicio](../ide/media/VSIDE_StartButton.png)) en la barra de herramientas, elija la tecla **F5** o, en el menú, seleccione **Depurar** > **Iniciar depuración**.
 
   ![captura de pantalla](../ide/media/VSIDE_Tour_RunButton.png)
 
@@ -248,7 +251,7 @@ Puede ver y administrar los recursos de nube basados en Azure en Visual Studio m
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Office 365 y sitios web. Para abrir el Explorador de servidores, en el menú principal, elija **Ver**, **Explorador de servidores**. Consulte [Add new connections](../data-tools/add-new-connections.md) (Agregar nuevas conexiones) para obtener más información acerca de cómo utilizar el Explorador de servidores.
+El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Office 365 y sitios web. Para abrir el Explorador de servidores, en el menú principal, elija **Ver** > **Explorador de servidores**. Consulte [Add new connections](../data-tools/add-new-connections.md) (Agregar nuevas conexiones) para obtener más información acerca de cómo utilizar el Explorador de servidores.
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) es un eficaz entorno de desarrollo para SQL Server, Azure SQL Database y Azure SQL Data Warehouse. Le permite compilar, depurar, mantener y refactorizar bases de datos. Puede trabajar con un proyecto de base de datos o directamente con una instancia de base de datos conectada de manera local o externa.
 
@@ -257,6 +260,7 @@ El **Explorador de objetos de SQL Server** de Visual Studio ofrece una vista de 
 ![Explorador de objetos de SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Ampliar Visual Studio
+
 Si Visual Studio no tiene la funcionalidad exacta que necesita, puede agregarla. Puede personalizar el IDE en función de su flujo de trabajo y estilo, agregar compatibilidad para herramientas externas que aún no se han integrado con Visual Studio y modificar la funcionalidad existente para aumentar la productividad. Para obtener la versión más reciente de las herramientas de extensibilidad de Visual Studio (SDK de VS), vea [Kit de desarrollo de software (SDK) de Visual Studio](../extensibility/visual-studio-sdk.md).
 
 Puede usar .NET Compiler Platform (Roslyn) para escribir sus propios analizadores de código y generadores de código. Encuentre todo lo que necesita en [Roslyn](https://github.com/dotnet/Roslyn).

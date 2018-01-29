@@ -10,15 +10,16 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-dev_langs: CSharp
+dev_langs:
+- CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66c1b3ca7a877c001bc3aeb69c5331fdc828aad8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: uso de Visual Studio para crear su primera aplicación web ASP.NET Core
 
@@ -30,11 +31,11 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
 
 1. Abra Visual Studio 2017.
 
-1. En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto...**.
+1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**
 
 1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y seleccione **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core** y después elija **Aceptar**.
 
-     Si no ve la plantilla de proyecto **.NET Core**, cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas**, **Obtener herramientas y características...**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después elija **Modificar**.
+     Si no ve la categoría de plantilla de proyecto de **.NET Core**, elija el vínculo **Abrir el instalador de Visual Studio** en el panel de la izquierda. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de ASP.NET y web** y después elija **Modificar**.
 
      ![Carga de trabajo ASP.NET en el instalador de Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
@@ -64,7 +65,7 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
  }
  ```
 
-1. Verá dos líneas de subrayado ondulado debajo de **Environment** y **String**, ya que estos tipos no están dentro del ámbito. Abra la barra de herramientas **Lista de errores** para ver los mismos errores en la lista. Si no ve la barra de herramientas **Lista de errores**, elija **Ver**, **Lista de errores** en la barra de menús superior.
+1. Verá dos líneas de subrayado ondulado debajo de **Environment** y **String**, ya que estos tipos no están dentro del ámbito. Abra la barra de herramientas **Lista de errores** para ver los mismos errores en la lista. Si no ve la barra de herramientas **Lista de errores**, elija **Ver** > **Lista de errores** en la barra de menús superior.
 
    ![Lista de errores](../ide/media/quickstart-aspnet-errorlist.png)
 
@@ -72,7 +73,7 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
-1. Presione **CTRL+F5** para ejecutar la aplicación y abrirla en un explorador web.
+1. Presione **Ctrl**+**F5** para ejecutar la aplicación y abrirla en un explorador web.
 
 1. En la parte superior del sitio web, elija **Información** para ver el mensaje del directorio que ha agregado en el método `OnGet()` para la página **Información**.
 
@@ -85,5 +86,6 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
 
 ## <a name="see-also"></a>Vea también
 
+[Introducción a C# y ASP.NET Core en Visual Studio](tutorial-csharp-aspnet-core.md)  
 [Introducción a C# y Visual Basic con Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
 [Introducción a las páginas de Razor en ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)

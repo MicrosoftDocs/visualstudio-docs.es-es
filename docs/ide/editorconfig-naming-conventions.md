@@ -12,13 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura para EditorConfig
 
@@ -74,7 +76,7 @@ En la lista siguiente se muestran los valores permitidos y puede especificar var
 - protected\_internal o protected_friend
 
 > [!NOTE]
-> Debe especificar un nivel de accesibilidad como parte de la convención de nomenclatura; en caso contrario, es posible que la convención de nomenclatura se ignore.
+> No especifique un nivel de accesibilidad como parte de la convención de nomenclatura si la accesibilidad no es aplicable al tipo de símbolo que ha tomado como destino. Por ejemplo, los parámetros no tienen niveles de accesibilidad. Si especifica un nivel de accesibilidad para una convención de nomenclatura de parámetros, la regla de nomenclatura no funcionará correctamente.
 
 ### <a name="symbol-modifiers"></a>Modificadores de símbolo
 

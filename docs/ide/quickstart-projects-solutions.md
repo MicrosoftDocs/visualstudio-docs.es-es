@@ -10,12 +10,13 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Inicio rápido: proyectos y soluciones
 
@@ -62,7 +63,7 @@ Ahora, agreguemos nuestro primer proyecto a la solución. Comenzaremos con un pr
    Un proyecto denominado "QuickDate" aparece debajo de la solución en el **Explorador de soluciones**. Actualmente solo contiene un archivo denominado **App.config**.
 
    > [!NOTE]
-   > Si no ve **Visual C#** en el panel izquierdo del cuadro de diálogo, deberá instalar la carga de trabajo **Desarrollo de escritorio de .NET**. Una manera sencilla de llevar esto a cabo es haciendo clic en el vínculo **Abrir el instalador de Visual Studio** en la parte inferior de dicho panel izquierdo. El **Instalador de Visual Studio** se abre; desde allí, después de elegir la carga de trabajo correcta, seleccione el botón **Modificar**.
+   > Si no ve **Visual C#** en el panel izquierdo del cuadro de diálogo, deberá instalar la carga de trabajo **Desarrollo de escritorio de .NET**. Una manera sencilla de llevar esto a cabo es haciendo clic en el vínculo **Abrir el instalador de Visual Studio** en la esquina inferior izquierda del cuadro de diálogo. Una vez que se abra el **Instalador de Visual Studio**, elija la carga de trabajo **Desarrollo de escritorio de .NET** y luego el botón **Modificar**.
 
    ![Vínculo Abrir el instalador de Visual Studio](media/quickstart-projects-open-installer.png)
 
@@ -182,9 +183,9 @@ Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **e
 
 ## <a name="see-also"></a>Vea también
 
-[Guía de inicio rápido: Primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Guía de inicio rápido: Personalizar el IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Inicio rápido: escribir código en el editor](../ide/quickstart-editor.md)  
+[Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)  
+[Guía de inicio rápido: personalizar el IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
+[Inicio rápido: escritura de código en el editor](../ide/quickstart-editor.md)  
 [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)  
 [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)  
 [Desarrollar código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  

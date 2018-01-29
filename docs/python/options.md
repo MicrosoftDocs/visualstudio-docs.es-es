@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -21,11 +22,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4113eda7afc2a5509c4f3f19b74628d7a9eb36e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 1c4f90aae0644ec1ff0edad55904360ddddb4be5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -51,10 +52,10 @@ Tenga en cuenta que el grupo **Experimental** contiene opciones de característi
 | --- | --- | --- |
 | Mostrar la Ventana de salida al crear entornos virtuales| Activado | Desactívela para evitar que aparezca la ventana de salida. |
 | Mostrar la Ventana de salida al instalar o desinstalar paquetes | Activado |  Desactívela para evitar que aparezca la ventana de salida. |
-| Ejecutar siempre pip como administrador | Desactivado | Eleva siempre las operaciones `pip install` para todos los entornos. Al instalar paquetes, Visual Studio solicita privilegios de administrador si el entorno está situado en un área protegida del sistema de archivos como `c:\Program Files`. En ese mensaje, puede elegir elevar siempre `pip install` solo para ese entorno. Vea [Entornos de Python: Pestaña pip](python-environments.md#pip-tab). |
+| Ejecutar siempre pip como administrador | Desactivado | Eleva siempre las operaciones `pip install` para todos los entornos. Al instalar paquetes, Visual Studio solicita privilegios de administrador si el entorno está situado en un área protegida del sistema de archivos como `c:\Program Files`. En ese mensaje, puede elegir elevar siempre `pip install` solo para ese entorno. Vea [Entornos de Python: Pestaña pip](managing-python-environments-in-visual-studio.md#pip-tab). |
 | Generar automáticamente la base de datos de finalización en el primer uso | Activado | Para que las [finalizaciones de IntelliSense](code-editing.md#intellisense) funcionen en una biblioteca, Visual Studio debe generar una base de datos de finalización para esa biblioteca. La creación de la base de datos se realiza en segundo plano cuando se instala una biblioteca, pero puede que no esté completa cuando comience a escribir código. Si esta opción está seleccionada, Visual Studio prioriza la finalización de la base de datos de una biblioteca cuando escribe código que la usa. |
-| Omitir las variables PYTHONPATH de todo el sistema | Activado | PYTHONPATH se omite de manera predeterminada porque Visual Studio proporciona un medio más directo para especificar rutas de búsqueda en entornos y proyectos. Vea [Entornos de Python: Rutas de acceso de búsqueda](python-environments.md#search-paths) para obtener información. |
-| Actualizar rutas de búsqueda al agregar archivos vinculados | Activado | Cuando se establece, agregar un [archivo vinculado](python-projects.md#linked-files) a un proyecto actualiza las [rutas de búsqueda](python-environments.md#search-paths) de manera que IntelliSense pueda incluir el contenido de la carpeta del archivo vinculado en su base de datos de finalización. Desactive esta opción para excluir dicho contenido de la base de datos de finalización. |
+| Omitir las variables PYTHONPATH de todo el sistema | Activado | PYTHONPATH se omite de manera predeterminada porque Visual Studio proporciona un medio más directo para especificar rutas de búsqueda en entornos y proyectos. Vea [Entornos de Python: Rutas de acceso de búsqueda](managing-python-environments-in-visual-studio.md#search-paths) para obtener información. |
+| Actualizar rutas de búsqueda al agregar archivos vinculados | Activado | Cuando se establece, agregar un [archivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a un proyecto actualiza las [rutas de búsqueda](managing-python-environments-in-visual-studio.md#search-paths) de manera que IntelliSense pueda incluir el contenido de la carpeta del archivo vinculado en su base de datos de finalización. Desactive esta opción para excluir dicho contenido de la base de datos de finalización. |
 | Mostrar advertencia si no se encuentra el módulo importado | Activado | Desactive esta opción para suprimir las advertencias cuando sepa que un módulo importado no está disponible actualmente pero, de otro modo, no afecta a la operación de código. |
 | Informar de sangría incoherente como | Advertencias | Como el intérprete de Python depende totalmente de la sangría adecuada para determinar el ámbito, Visual Studio genera advertencias de manera predeterminada cuando detecta sangrías incoherentes que pueden indicar errores de codificación. Se establece en *Errores* para ser incluso más estricto, lo que provoca que el programa se cierre en dichos casos. Para deshabilitar este comportamiento conjunto, seleccione *No*. |
 | Buscar encuestas o noticias | Una vez a la semana | Establece la frecuencia con la que permite que Visual Studio pueda abrir una ventana que contiene una página web con elementos de noticias y encuestas relacionados con Python, si está disponible. Las opciones son *Nunca*, *Una vez al día*, *Una vez a la semana* y *Una vez al mes*. |
@@ -88,7 +89,7 @@ Tenga en cuenta que el grupo **Experimental** contiene opciones de característi
 
 | Opción | Default | Description |
 | --- | --- | --- |
-| Scripts | N/D | Especifica una carpeta general para los scripts de inicio que se van a aplicar a las ventanas interactivas en todos los entornos. Vea [Scripts de inicio](python-environments.md#startup-scripts). En cambio, tenga en cuenta que esta característica no funciona actualmente. |
+| Scripts | N/D | Especifica una carpeta general para los scripts de inicio que se van a aplicar a las ventanas interactivas en todos los entornos. Vea [Scripts de inicio](managing-python-environments-in-visual-studio.md#startup-scripts). En cambio, tenga en cuenta que esta característica no funciona actualmente. |
 | Usar flechas arriba o abajo para navegar por el historial | Activado | Usa las teclas de flecha para navegar por el historial en la ventana interactiva. Desactive esta opción para usar las teclas de flecha para navegar dentro del resultado de la ventana interactiva en su lugar. |
 | Modo de finalización | Solo se evalúan expresiones sin llamadas de función | El proceso de determinar los miembros disponibles en una expresión en la ventana interactiva puede necesitar la evaluación de la expresión actual sin terminar, lo que puede provocar efectos secundarios o funciones que se llaman varias veces. La opción predeterminada, *Solo evaluar las expresiones sin llamadas de función* excluye expresiones que aparecen para llamar a una función, pero evalúa otras expresiones. Por ejemplo, evalúa `a.b` pero no `a().b`.  *Nunca evaluar expresiones* evita los efectos secundarios usando solo el motor de IntelliSense normal para las sugerencias. *Evaluar todas las expresiones* evalúa la expresión completa para obtener sugerencias, independientemente de los efectos secundarios. |
 | Ocultar sugerencias de análisis estático | Desactivado | Cuando se establece, muestra solo sugerencias que se obtienen evaluando la expresión. Si se combina con el modo de finalización *Nunca evaluar expresiones*, no aparecen finalizaciones útiles en la ventana interactiva. |

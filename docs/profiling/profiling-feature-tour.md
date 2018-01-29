@@ -4,21 +4,24 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>Guía de características de generación de perfiles
 
@@ -32,7 +35,7 @@ Durante la depuración, puede usar la ventana **Herramientas de diagnóstico** p
 
 ![Vista de Resumen de Herramientas de diagnóstico](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Resumen de Herramientas de diagnóstico")
 
-La ventana **Herramientas de diagnóstico** suele ser la mejor manera de generar perfiles de aplicaciones, pero también puede hacer un análisis posterior de la aplicación. Para obtener más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador).
+La ventana **Herramientas de diagnóstico** suele ser la mejor manera de generar perfiles de aplicaciones, pero en el caso de las compilaciones de versión, también puede hacer un análisis posterior de la aplicación. Para obtener más información sobre los diferentes enfoques, vea [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) (Ejecutar herramientas de generación de perfiles con o sin el depurador). Para ver la compatibilidad de la herramienta de generación de perfiles con los diferentes tipos de aplicaciones, consulte [¿Qué herramienta debo usar?](#tool_support_info)
 
 ## <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
@@ -119,13 +122,13 @@ También puede usar los gráficos para determinar si hay cuellos de botella de r
 
 ## <a name="analyze-performance-javascript"></a>Análisis del rendimiento (JavaScript)
 
-En el caso de las aplicaciones HTML universales de Windows, puede usar la herramienta Memoria de JavaScript y la herramienta Capacidad de respuesta de la IU HTML.
+En el caso de las aplicaciones UWP, puede usar la herramienta Memoria de JavaScript y la herramienta Capacidad de respuesta de la IU HTML.
 
 La herramienta Memoria de JavaScript es similar a la herramienta Uso de memoria disponible para otros tipos de aplicaciones. Puede usar esta herramienta para entender el uso de memoria y buscar fugas de memoria en la aplicación. Para obtener más información sobre la herramienta, vea [JavaScript Memory](../profiling/javascript-memory.md) (Memoria de JavaScript).
 
 ![Herramienta de generación de perfiles de Memoria de JavaScript](../profiling/media/diagjsmemory.png "Diagnóstico de Memoria de JavaScript")
 
-Para diagnosticar la capacidad de respuesta de la interfaz de usuario, el tiempo de carga lento y las actualizaciones visuales lentas en aplicaciones HTML universales de Windows, use la herramienta Capacidad de respuesta de la IU HTML. El uso es similar al de la herramienta Escala de tiempo de la aplicación para otros tipos de aplicaciones. Para obtener más información, vea [HTML UI responsiveness](../profiling/html-ui-responsiveness.md) (Capacidad de respuesta de IU HTML).
+Para diagnosticar la capacidad de respuesta de la interfaz de usuario, el tiempo de carga lento y las actualizaciones visuales lentas en aplicaciones UWP, use la herramienta Capacidad de respuesta de la IU HTML. El uso es similar al de la herramienta Escala de tiempo de la aplicación para otros tipos de aplicaciones. Para obtener más información, vea [HTML UI responsiveness](../profiling/html-ui-responsiveness.md) (Capacidad de respuesta de IU HTML).
 
 ![Herramienta de generación de perfiles de respuesta de UI de HTML](../profiling/media/diaghtmlresp.png "Diagnóstico de respuesta de HTML")
 
@@ -151,7 +154,7 @@ Si necesita características que no están actualmente presentes en las herramie
 
 En esta tabla se muestra una lista de las distintas herramientas que ofrece Visual Studio y los tipos de proyecto con los que las puede usar:
   
-|Herramienta de rendimiento|Escritorio de Windows|Universales de Windows o de la Tienda|ASP.NET/ASP.NET Core|  
+|Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|  
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí (no para .NET Core/ASP.NET Core)|  

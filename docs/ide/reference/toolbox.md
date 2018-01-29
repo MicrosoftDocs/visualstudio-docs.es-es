@@ -1,55 +1,77 @@
 ---
-title: Cuadro de herramientas | Microsoft Docs
+title: Ventana Cuadro de herramientas en Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
 helpviewer_keywords:
-- Toolbox
-- Toolbox, adding controls
-- Toolbox, moving items
-ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
-caps.latest.revision: "34"
+- Toolbox [Visual Studio]
+- custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 50c9cc96d501eb6d7d10ab31f48600eb65eb57a7
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
-El **Cuadro de herramientas** muestra iconos para controles y otros elementos que puede agregar a proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para abrir el **Cuadro de herramientas**, vaya al menú **Ver** y haga clic en **Cuadro de herramientas**. Puede acoplar el **Cuadro de herramientas** y anclarlo abierto o establecerlo en **Ocultar automáticamente**.  
-  
- Los iconos del **Cuadro de herramientas** se pueden arrastrar a la vista de diseño o pegar en un editor de código. Cualquier acción agrega el código básico para crear una instancia del elemento **Cuadro de herramientas** en el archivo de proyecto activo.  
-  
- El **Cuadro de herramientas** solo muestra los elementos que son adecuados para el tipo de archivo con el que usted está trabajando. Puede buscar en el Cuadro de herramientas para filtrar más los elementos que aparecen. Si su proyecto requiere un control que no es compatible con el Perfil de cliente, puede configurar su proyecto para que afecte al marco editando las propiedades del proyecto.  
-  
+
+La ventana **Cuadro de herramientas** muestra los controles que puede agregar a proyectos de Visual Studio. Para abrir el Cuadro de herramientas, elija **Cuadro de herramientas** en el menú **Ver**.
+
+![Ventana Cuadro de herramientas](media/toolbox.png)
+
+Puede arrastrar y colocar distintos controles en la superficie del diseñador que use y cambiar su tamaño y posición.
+
+El Cuadro de herramientas aparece junto con las vistas de diseñador, como la vista de diseñador de un archivo XAML. En el Cuadro de herramientas solo se muestran los controles que se pueden usar en el diseñador actual. Puede buscar en el Cuadro de herramientas para filtrar más los elementos que aparecen.
+
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="help-on-toolbox-tabs"></a>Ayuda acerca de las pestañas del Cuadro de herramientas  
- Los siguientes documentos proporcionan más información sobre pestañas específicas del **Cuadro de herramientas**.  
-  
--   [Cuadro de herramientas, Datos (Pestaña)](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
-  
--   [Cuadro de herramientas, Componentes (Pestaña)](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
-  
--   [Cuadro de herramientas, HTML (Pestaña)](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
-  
--   [Cuadro de herramientas, Datos (Pestaña)](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
-  
--   [Cuadro de herramientas, Componentes (Pestaña)](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
-  
--   [Cuadro de herramientas, HTML (Pestaña)](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
-  
-## <a name="see-also"></a>Vea también  
- [Usar el cuadro de herramientas](../../ide/using-the-toolbox.md)
+> Para algunos tipos de proyecto, el Cuadro de herramientas no puede mostrar todos los elementos.
+
+La versión de .NET Framework del proyecto también afecta al conjunto de controles visibles en el Cuadro de herramientas. Puede configurar el proyecto para que tome como destino una versión diferente de .NET Framework desde las páginas de propiedades del proyecto. Seleccione el modo del proyecto en el **Explorador de soluciones** y, luego, en la barra de menús, elija **Proyecto** > Propiedades de **\<proyecto\>**. En la pestaña **Aplicación**, use el menú desplegable **Plataforma de destino**.
+
+## <a name="managing-the-toolbox-window-and-its-controls"></a>Administrar la ventana Cuadro de herramientas y sus controles
+
+De manera predeterminada, el Cuadro de herramientas está contraído en la izquierda del IDE de Visual Studio y aparece cuando se desplaza el cursor por encima. Puede anclar el Cuadro de herramientas (haciendo clic en el icono **Anclar** de la barra de herramientas), de manera que permanezca abierto al mover el cursor. También puede desacoplar la ventana Cuadro de herramientas y arrastrarla a cualquier punto de la pantalla. Puede acoplar, desacoplar y ocultar el Cuadro de herramientas si hace clic con el botón derecho en su barra de herramientas y selecciona una de las opciones.
+
+Puede reorganizar los elementos de una pestaña del Cuadro de herramientas o agregar pestañas y elementos personalizados por medio de los siguientes comandos del menú contextual:
+
+- **Cambiar nombre de elemento**: permite cambiar el nombre del elemento seleccionado.
+
+- **Mostrar todo**: muestra todos los controles posibles (no solo los correspondientes al diseñador actual).
+
+- **Vista de lista**: muestra los controles en una lista vertical. Si se deja sin marcar, los controles aparecen horizontalmente.
+
+- **Elegir elementos**: abre el cuadro de diálogo **Elegir elementos del cuadro de herramientas** para que pueda especificar los elementos que aparecen en el **Cuadro de herramientas**. Para mostrar u ocultar un elemento, active o desactive su casilla.
+
+- **Ordenar elementos alfabéticamente**: ordena los elementos por el nombre.
+
+- **Restablecer barra de herramientas**: restaura la configuración y los elementos predeterminados del Cuadro de herramientas.
+
+- **Agregar pestaña**: agrega una nueva pestaña del Cuadro de herramientas.
+
+- **Subir**: mueve el elemento seleccionado hacia arriba.
+
+- **Bajar**: mueve el elemento seleccionado hacia abajo.
+
+## <a name="creating-and-distributing-custom-toolbox-controls"></a>Crear y distribuir controles personalizados del Cuadro de herramientas
+
+Puede crear controles personalizados del Cuadro de herramientas, iniciando con una plantilla de proyecto basada en [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) o en [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Después, puede distribuir el control personalizado a sus compañeros de equipo o publicarlo en la web con el [Instalador de controles del Cuadro de herramientas](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+
+## <a name="help-on-toolbox-tabs"></a>Ayuda acerca de las pestañas del Cuadro de herramientas
+
+En los siguientes temas se proporciona más información sobre algunas de las pestañas disponibles del **Cuadro de herramientas**.
+
+- [Cuadro de herramientas, Datos (Pestaña)](../../ide/reference/toolbox-data-tab.md)
+
+- [Cuadro de herramientas, Componentes (Pestaña)](../../ide/reference/toolbox-components-tab.md)
+
+- [Cuadro de herramientas, HTML (Pestaña)](../../ide/reference/toolbox-html-tab.md)

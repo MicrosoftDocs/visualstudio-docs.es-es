@@ -10,48 +10,43 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5e257d8d90d21c4298b92f7bc4b923ed5a720c85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 
-Si sigue estas sugerencias, puede escribir, navegar y depurar código en Visual Studio de forma más rápida y eficaz.
+Este tema contiene algunas sugerencias para ayudarle a escribir, navegar y depurar el código de manera más rápida y eficaz.
 
-Para obtener más información sobre los métodos abreviados de teclado más frecuentes, vea [Sugerencias y trucos de Visual Studio](../ide/tips-and-tricks-for-visual-studio.md). Para obtener una lista más completa, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) y [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-## <a name="accessing-visual-studio-tools"></a>Acceso a Visual Studio Tools
-
-Puede tener acceso rápidamente al Símbolo del sistema para desarrolladores o a otra herramienta de Visual Studio si ancla este elemento en el menú Inicio o en la barra de tareas.
-
-1. En el Explorador de Windows, navegue a `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
-
-1. Haga clic con el botón derecho o abra el menú contextual de **Símbolo del sistema para desarrolladores** y, luego, elija **Anclar a Inicio** o **Anclar a la barra de tareas**.
+Para obtener más información acerca de los métodos abreviados de teclado más frecuentes, vea [Sugerencias y trucos de Visual Studio](../ide/tips-and-tricks-for-visual-studio.md). Para obtener una lista más completa, vea [Identificar y personalizar métodos abreviados de teclado en Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) y [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="writing-code"></a>Escribir código
 
 Escriba código más rápidamente con las características siguientes.
 
-- **Usar aplicaciones de ejemplo**. Puede acelerar el desarrollo de aplicaciones si descarga e instala aplicaciones de ejemplo desde [Microsoft Developer Network](https://code.msdn.microsoft.com/). También puede obtener información sobre una tecnología o un concepto de programación determinado si descarga y explora un Sample Pack para esa área.
+- **Usar comandos prácticos**. Visual Studio contiene varios comandos que le ayudarán a realizar las tareas de edición comunes con mayor rapidez. Por ejemplo, en **la versión 15.6 de Visual Studio 2017 (versión preliminar 2)** y versiones posteriores, puede elegir un comando para duplicar fácilmente una línea de código sin tener que copiarla, cambiar la posición del cursor y, a continuación, pegarla. Elija **Editar** > **Duplicar** o presione **Ctrl**+**E**,**V**. También puede expandir o contraer una selección de texto rápidamente; para ello, seleccione **Editar** > **Avanzado** > **Expandir selección** y **Contraer selección**, o bien presione **Ctrl**+**W** y **Ctrl**+**Mayús**+**W** (disponible en **la versión 15.5 de Visual Studio 2017** y posteriores).
 
 - **Usar IntelliSense**. Cuando se escribe código en el editor, aparece información de IntelliSense, como Lista de miembros, Información de parámetros, Información rápida, ayuda para las signaturas y Palabra completa. Estas características admiten la coincidencia aproximada de texto; por ejemplo, las listas de resultados para Lista de miembros no solo incluyen las entradas que comienzan con los caracteres que escribió, sino también entradas que contienen la combinación de caracteres en cualquier lugar de sus nombres. Para obtener más información, vea [Usar IntelliSense](../ide/using-intellisense.md).
 
 - **Cambiar la inserción automática de opciones de IntelliSense mientras se escribe código**. Si se cambia IntelliSense al modo de sugerencias, se puede especificar que las opciones de IntelliSense solo se inserten si se eligen explícitamente.
 
-     Para habilitar el modo de sugerencias, pulse las teclas **Ctrl** + **Alt** + **Barra espaciadora** o bien, en la barra de menús, elija **Editar**, **IntelliSense**, **Alternar el modo de finalización**.
+     Para habilitar el modo de sugerencias, pulse las teclas **Ctrl**+**Alt**+**Barra espaciadora** o bien, en la barra de menús, elija **Editar** > **IntelliSense** > **Alternar el modo de finalización**.
 
 - **Usar fragmentos de código**. Puede usar fragmentos de código integrados o crear sus propios fragmentos de código.
 
-     Para insertar un fragmento de código, en la barra de menús, pulse **Editar**, **IntelliSense**, **Insertar fragmento de código** o abra el menú contextual en un archivo y seleccione **Insertar fragmento de código**. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).
+     Para insertar un fragmento de código, en la barra de menús, elija**Editar** > **IntelliSense** > **Insertar fragmento de código** o **Delimitar con**, o abra el menú contextual en un archivo y seleccione **Fragmento de código** > **Insertar fragmento de código** o **Delimitar con**. Para obtener más información, vea [Fragmentos de código](../ide/code-snippets.md).
 
-- **Corregir errores de código alineados**. Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción. Estas acciones se pueden aplicar mediante el icono de bombilla ![icono de bombilla pequeño](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o si se presiona **Alt+ENTRAR** o **CTRL+.** cuando el cursor esté en la línea de código adecuada. Para obtener más información, vea [Acciones rápidas](quick-actions.md).
+- **Corregir errores de código alineados**. Las acciones rápidas le permiten refactorizar, generar o modificar el código de otra manera fácilmente con una sola acción. Estas acciones se pueden aplicar mediante el icono de bombilla ![icono de bombilla pequeño](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") o si se presiona **Alt**+**Entrar** o **Ctrl**+**.** cuando el cursor esté en la línea de código adecuada. Para obtener más información, vea [Acciones rápidas](quick-actions.md).
 
 - **Mostrar y editar la definición de un elemento de código**. Puede mostrar y editar rápidamente el módulo en el que se define un elemento de código, como un miembro, una variable o un valor local.
 
-    Para abrir una definición en una ventana emergente, resalte el elemento y, después, presione las teclas **Alt+F12**, o abra el menú contextual del elemento y seleccione **Ver la definición**. Para abrir una definición en una ventana de código diferente, abra el menú contextual del elemento de código y, después, pulse **Ir a definición**.
+    Para abrir una definición en una ventana emergente, resalte el elemento y, después, presione las teclas **Alt**+**F12**, o abra el menú contextual del elemento y seleccione **Ver la definición**. Para abrir una definición en una ventana de código diferente, abra el menú contextual del elemento de código y, después, pulse **Ir a definición**.
+
+- **Usar aplicaciones de ejemplo**. Puede acelerar el desarrollo de aplicaciones si descarga e instala aplicaciones de ejemplo desde [Microsoft Developer Network](https://code.msdn.microsoft.com/). También puede obtener información sobre una tecnología o un concepto de programación determinado si descarga y explora un Sample Pack para esa área.
 
 ## <a name="navigating-within-your-code"></a>Navegar dentro del código
 
@@ -59,11 +54,11 @@ Escriba código más rápidamente con las características siguientes.
 
 - **Establecer marcadores en líneas de código**. Puede usar marcadores para navegar rápidamente a líneas de código concretas de un archivo.
 
-    Para establecer un marcador, en la barra de menús, pulse **Editar**, **Marcadores**, **Alternar marcador**. Puede ver todos los marcadores de una solución en la ventana **Marcadores**. Para obtener más información, vea [Establecer marcadores en el código](../ide/setting-bookmarks-in-code.md).
+    Para establecer un marcador, en la barra de menús, pulse **Editar** > **Marcadores** > **Alternar marcador**. Puede ver todos los marcadores de una solución en la ventana **Marcadores**. Para obtener más información, vea [Establecer marcadores en el código](../ide/setting-bookmarks-in-code.md).
 
 - **Buscar definiciones de símbolos en un archivo**. Puede buscar en una solución para encontrar definiciones de símbolos y nombres de archivo, pero los resultados de la búsqueda no incluyen espacios de nombres ni variables locales.
 
-   Para tener acceso a esta característica, en la barra de menús, pulse **Editar**, **Navegar a**.
+   Para tener acceso a esta característica, en la barra de menús, pulse **Editar** > **Navegar a**.
 
 - **Examinar la estructura general del código**. En el **Explorador de soluciones**, puede buscar y examinar clases y sus tipos y miembros en los proyectos. También puede buscar símbolos, ver la jerarquía de llamadas de un método, buscar referencias de símbolos y realizar otras tareas. Si elige un elemento de código en el **Explorador de soluciones**, el archivo asociado se abre en una pestaña **Vista previa** y el cursor se desplaza al elemento en el archivo. Para obtener más información, vea [Ver la estructura del código](../ide/viewing-the-structure-of-code.md).
 
@@ -91,7 +86,7 @@ La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pued
 
 - **Establecer puntos de interrupción temporales**. Puede crear un punto de interrupción temporal en la línea actual de código e iniciar el depurador simultáneamente. Al llegar a esa línea de código, el depurador activa el modo de interrupción. Vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md) para obtener más información.
 
-    Para usar esta característica, pulse las teclas **Ctrl** + **F10** o abra el menú contextual de la línea de código en la que desea establecer una interrupción y, después, elija **Ejecutar hasta el cursor**.
+    Para usar esta característica, pulse las teclas **Ctrl**+**F10** o abra el menú contextual de la línea de código en la que desea establecer una interrupción y, después, elija **Ejecutar hasta el cursor**.
 
 - **Mover el punto de ejecución durante la depuración**. Puede mover el punto de ejecución actual a otra sección de código y reiniciar la depuración a partir de ese punto. Esta técnica es útil si desea depurar una sección de código sin tener que volver a crear todos los pasos necesarios para llegar a esa sección. Vea [Desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md) para obtener más información.
 
@@ -105,9 +100,17 @@ La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pued
 
      Para obtener más información sobre los comandos adicionales, vea [Alias de comandos de Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
+## <a name="accessing-visual-studio-tools"></a>Acceso a Visual Studio Tools
+
+Puede tener acceso rápidamente al Símbolo del sistema para desarrolladores o a otra herramienta de Visual Studio si ancla este elemento en el menú Inicio o en la barra de tareas.
+
+1. En el Explorador de Windows, navegue a `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+
+1. Haga clic con el botón derecho o abra el menú contextual de **Símbolo del sistema para desarrolladores** y, luego, elija **Anclar a Inicio** o **Anclar a la barra de tareas**.
+
 ## <a name="managing-files-toolbars-and-windows"></a>Administrar archivos, barras de herramientas y ventanas
 
- En cualquier momento, puede trabajar en varios archivos de código y desplazarse entre varias ventanas de herramientas mientras desarrolla una aplicación. Para organizarse, utilice las sugerencias siguientes.
+En cualquier momento, puede trabajar en varios archivos de código y desplazarse entre varias ventanas de herramientas mientras desarrolla una aplicación. Para organizarse, utilice las sugerencias siguientes.
 
 - **Mantener los archivos que usa con frecuencia visibles en el editor**. Puede anclar archivos en el lado izquierdo del cuadro de la pestaña de modo que sigan siendo visibles independientemente de cuántos archivos haya abiertos en el editor.
 

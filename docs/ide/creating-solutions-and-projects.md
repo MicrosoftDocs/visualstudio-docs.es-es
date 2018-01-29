@@ -19,14 +19,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6e879e8708c55ebb5ebdd5980bd70ea1e4a97d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fb9b5119659600b4bfd902e61eda70a85b645efd
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="create-solutions-and-projects"></a>Creación de soluciones y proyectos
+# <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
 Los *proyectos* son contenedores lógicos de Visual Studio que incluyen los elementos necesarios para compilar la aplicación, como archivos de código fuente, mapas de bits, iconos y referencias de componentes y servicios. Al crear un proyecto, Visual Studio crea una *solución* que lo contiene. Después, si quiere, puede agregar otros proyectos nuevos o existentes a la solución. Las soluciones también pueden contener archivos que no están conectados con ningún proyecto específico.
 
@@ -81,7 +82,7 @@ Si tiene una colección de archivos de código fuente, puede agregarlos fácilme
 1. En el asistente, vaya a la ubicación de los archivos y escriba un nombre para el nuevo proyecto en el cuadro **Nombre**. Cuando haya terminado, elija el botón **Finalizar**.
 
 > [!NOTE]
-> Esta opción funciona mejor con recopilaciones de archivos relativamente simples. Actualmente, solo se admiten los tipos de proyecto de Visual C++, Apache Cordova, Visual Basic y Visual C#.
+> Esta opción funciona mejor con una recopilación de archivos relativamente simple. Actualmente, solo se admiten los tipos de proyecto de Visual C++, Apache Cordova, Visual Basic y Visual C#.
 
 ## <a name="add-files-to-a-solution"></a>Agregar archivos a una solución
 

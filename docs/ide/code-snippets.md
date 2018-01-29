@@ -20,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
@@ -35,7 +36,7 @@ Los fragmentos de código son pequeños bloques de código reutilizable que se p
 
 En Visual Studio hay dos tipos de fragmento de código: los fragmentos de código de expansión, que se agregan en un punto de inserción especificado y se pueden reemplazar por un método abreviado de fragmento de código, y los fragmentos de código rodear con (solo en C# y C++), que se agregan alrededor de un bloque de código seleccionado.
 
-Un ejemplo de un fragmento de código de inserción: en C# se utiliza el método abreviado tryf para insertar un bloque try-finally:
+Un ejemplo de un fragmento de código de expansión: en C# se utiliza el método abreviado tryf para insertar un bloque try-finally:
 
 ```csharp
 try

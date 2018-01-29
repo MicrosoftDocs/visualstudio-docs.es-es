@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 49518c7d38ebbec74908123b83b57bf039dda6f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a74d123d8cb0055f01619bae25b9a1bda54b35f4
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: Primer vistazo al IDE de Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guía de inicio rápido: primer vistazo al IDE de Visual Studio
 
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de 5 a 10 minutos de duración, pasaremos por algunas de las ventanas, menús y otras funciones de la interfaz de usuario.
 
@@ -99,6 +101,6 @@ Hemos examinado solo algunas de las características del IDE de Visual Studio pa
 
 ## <a name="see-also"></a>Vea también
 
-[Guía de inicio rápido: Personalización del IDE](../ide/personalizing-the-visual-studio-ide.md)  
-[Inicio rápido: escribir código en el editor](../ide/quickstart-editor.md)  
-[Inicio rápido: proyectos y soluciones](../ide/quickstart-projects-solutions.md)  
+[Guía de inicio rápido: personalización del IDE](../ide/personalizing-the-visual-studio-ide.md)  
+[Inicio rápido: escritura de código en el editor](../ide/quickstart-editor.md)  
+[Inicio rápido: proyectos y soluciones](../ide/quickstart-projects-solutions.md)
