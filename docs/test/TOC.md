@@ -20,6 +20,7 @@
 ## [Ejecutar pruebas unitarias con el Explorador de pruebas](run-unit-tests-with-test-explorer.md)
 ### [Ejecutar una prueba unitaria como un proceso de 64 bits](run-a-unit-test-as-a-64-bit-process.md)
 ### [Tutorial: Creación y ejecución de pruebas unitarias en aplicaciones para UWP](walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md)
+### [Preguntas más frecuentes sobre el Explorador de pruebas](test-explorer-faq.md)
 ## [Configurar pruebas unitarias mediante un archivo .runsettings](configure-unit-tests-by-using-a-dot-runsettings-file.md)
 ## [Escribir pruebas unitarias para código administrado](writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 ### [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
