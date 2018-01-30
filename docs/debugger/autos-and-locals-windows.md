@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspeccionar las Variables en el automático y variables locales Windows en Visual Studio
 El **automático** ventana (durante la depuración, **CTRL + ALT + V, A**, o **Depurar > Windows > automático**) y la **locales** ventana (durante la depuración **CTRL + ALT + V, L**, o **Depurar > Windows > variables locales**) son muy útiles cuando desea ver los valores de las variables durante la depuración. En la ventana **Variables locales** se muestran las variables definidas en el ámbito local, que generalmente es la función o el método que se encuentra en ejecución. En la ventana **Automático** se muestran las variables usadas en torno a la línea actual (es decir, el lugar donde se detiene el depurador). Exactamente qué variables se muestran en esta ventana es diferente en distintos idiomas. Consulte [What variables appear in the Autos Window?](#bkmk_whatvariables) a continuación.  
@@ -33,14 +35,14 @@ Si necesita más información sobre la depuración básica, consulte [Getting St
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinar objetos en las ventanas de variables locales y automáticas  
 Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. En el ejemplo siguiente se muestra un objeto [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) en la ventana **Variables locales** :  
   
-![Variables locales &#45; FileStream](../debugger/media/locals-filestream.png "FileStream variables locales")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="bkmk_whatvariables"></a> ¿Qué variables se muestran en la ventana Automático?  
  Se puede usar la ventana **Automático** en código C#, Visual Basic y C++. La ventana **Automático** no admite F# ni JavaScript.  
   
  En C# y Visual Basic, la ventana **Automático** muestra cualquier variable que se usa en la línea actual o anterior. Por ejemplo, si declara cuatro variables y las define de la siguiente manera:
 
-```CSharp
+```csharp
     public static void Main()
     {
        int a, b, c, d;
@@ -53,7 +55,7 @@ Las matrices y los objetos se muestran en las ventanas Automático y Variables l
 
  Si establece un punto de interrupción en la línea `c = 3`y ejecuta el depurador, la ventana **Automático** tendrá el siguiente aspecto cuando se detenga la ejecución del depurador:  
 
- ![Automático &#45; CSharp](../debugger/media/autos-csharp.png "automático CSharp")  
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
 
  Observe que el valor de `c` es 0, porque la línea `c = 3` aún no se ha ejecutado.  
 
@@ -73,7 +75,7 @@ Las matrices y los objetos se muestran en las ventanas Automático y Variables l
 
  Si establece un punto de interrupción en la línea `e = 5;` y ejecuta el depurador, la ventana **Automático** tendrá el siguiente aspecto cuando se detenga la ejecución del depurador:  
   
- ![Automático &#45; Cplus](../debugger/media/autos-cplus.png "Cplus automático")  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Observe que la variable e no está inicializada porque el código de la línea `e = 5;` aún no se ha ejecutado.  
   
@@ -84,7 +86,7 @@ Las matrices y los objetos se muestran en las ventanas Automático y Variables l
   
  El siguiente código C# agrega los valores devueltos de dos funciones:  
 
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b, c, d;  

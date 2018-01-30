@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: c1186da8d276796816d8531963f746f222526b6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: e1191884f0a20463f9d248a6acfca4337212b613
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C# en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en la ventana **Inspección** mediante especificadores de formato. También puede usar especificadores de formato en las ventanas **Inmediato** y **Comandos** , así como en las ventanas de código fuente. Si hace una pausa sobre una expresión de esas ventanas, el resultado aparecerá en un cuadro desplegable de información sobre datos. Estos cuadros mostrarán el especificador de formato en la pantalla de información sobre datos.  
@@ -44,7 +46,7 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
 ## <a name="using-format-specifiers"></a>Uso de especificadores de formato  
  Si tiene el siguiente código:  
   
-```CSharp  
+```csharp  
 {  
         int my_var1 = 0x0065;  
         int my_var2 = 0x0066;  
@@ -61,7 +63,7 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
   
 |Especificador|Formato|Valor de inspección original|Muestra|  
 |---------------|------------|--------------------------|--------------|  
-|ac|Fuerza la evaluación de una expresión. Esto puede resultar útil si se desactiva la evaluación implícita de propiedades y las llamadas a funciones implícitas.|Mensaje "evaluación de funciones implícita se ha desactivado por el usuario"|\<valor >|  
+|ac|Fuerza la evaluación de una expresión. Esto puede resultar útil si se desactiva la evaluación implícita de propiedades y las llamadas a funciones implícitas.|Mensaje "evaluación de funciones implícita se ha desactivado por el usuario"|\<value>|  
 |d|Entero decimal|0x0065|101|  
 |dynamic|Muestra el objeto especificado mediante un vista dinámica|Muestra todos los miembros del objeto, incluida la vista dinámica|Muestra solo la vista dinámica|  
 |h|Entero hexadecimal|61541|0x0000F065|  

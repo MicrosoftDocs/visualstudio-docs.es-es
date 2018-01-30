@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Navegar por el código con el depurador de Visual Studio
 Familiarizarse con los comandos y métodos abreviados para navegar por el código en el depurador y que hará que sea más rápida y sencilla buscar y resolver problemas de la aplicación. Mientras que navegar por el código en el depurador, puede inspeccionar el estado de la aplicación o más información sobre su flujo de ejecución.  
@@ -32,13 +35,13 @@ Familiarizarse con los comandos y métodos abreviados para navegar por el códig
   
  También, en la flecha verde inicia el depurador (igual que **F5**).  
   
- ![DBG &#95; Conceptos básicos de &#95; Inicio &#95; depuración](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Algunas otras formas de iniciar la aplicación con el depurador adjunto incluyen **F11** ([ir al código](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([paso a través de código](#BKMK_Step_over_Step_out)), o mediante usar **ejecutar hasta el Cursor**.  Vea las demás secciones de este tema para obtener información acerca de qué hacer estas opciones.  
   
  Al depurar, la línea amarilla muestra el código que se ejecutará a continuación.  
   
- ![DBG &#95; Conceptos básicos de &#95; Salto de &#95; Modo](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Durante la depuración, puede alternar entre los comandos, como **F5**, **F11** y usar otras características descritas en este tema (por ejemplo, los puntos de interrupción) para obtener acceso rápidamente al código que desea examinar.  
   
@@ -56,7 +59,7 @@ Familiarizarse con los comandos y métodos abreviados para navegar por el códig
   
 -   El depurador recorre paso a paso las instrucciones del código en lugar de las líneas físicas. Por ejemplo, una cláusula `if` se puede escribir en una línea:  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -78,7 +81,7 @@ Familiarizarse con los comandos y métodos abreviados para navegar por el códig
 |Comando de teclado|Comando de menú|Descripción|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Paso a paso por procedimientos**|Si la línea actual contiene una llamada de función, **paso a paso por** se ejecuta el código, a continuación, suspende la ejecución en la primera línea de código después de que vuelva la función llamada.|  
-|**MAYÚS + F11**|**Paso a paso para salir**|**Paso a paso fuera** continúa ejecutándose el código y suspende la ejecución cuando devuelve de la función actual (el depurador se salta a través de la función actual).|  
+|**Shift+F11**|**Paso a paso para salir**|**Paso a paso fuera** continúa ejecutándose el código y suspende la ejecución cuando devuelve de la función actual (el depurador se salta a través de la función actual).|  
   
 > [!TIP]
 >  Si necesita buscar el punto de entrada en la aplicación, comience con **F10** o **F11**. Estos comandos suelen ser útiles al inspeccionar el estado de la aplicación o tratar de buscar más información acerca de su flujo de ejecución.  
@@ -90,7 +93,7 @@ Familiarizarse con los comandos y métodos abreviados para navegar por el códig
   
      Para establecer un punto de interrupción simple en el código, abra el archivo de código fuente en el editor de Visual Studio. Establezca el cursor en la línea de código donde desea suspender la ejecución y, a continuación, haga clic en la ventana de código para ver el menú contextual y elija **punto de interrupción > Insertar punto de interrupción** (o presione **F9**). El depurador suspende la derecha de la ejecución antes de ejecuta la línea.  
   
-     ![Establecer un punto de interrupción](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
+     ![Set a breakpoint](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
   
      Los puntos de interrupción proporcionan un amplio conjunto de funcionalidades adicionales en Visual Studio, como los puntos de interrupción condicionales y de seguimiento. Vea [usar puntos de interrupción](../debugger/using-breakpoints.md).  
   

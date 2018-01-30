@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 04/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -32,16 +33,17 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c04934aed17c6e1b00664d371ff591ebbc3486a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administrar excepciones con el depurador de Visual Studio
 
@@ -77,7 +79,7 @@ Si selecciona una excepción en el **configuración de excepciones** ventana, la
   
 *  En la siguiente aplicación de consola de C#, el método Main produce una excepción **AccessViolationException** dentro de un bloque `try/catch` :  
   
-    ```CSharp  
+    ```csharp  
     static void Main(string[] args)  
     {  
         try  
@@ -128,7 +130,7 @@ Si selecciona una excepción en el **configuración de excepciones** ventana, la
   
      Este es el método Main() de la aplicación de consola:  
   
-    ```CSharp  
+    ```csharp  
     static void Main(string[] args)  
     {  
         Class1 class1 = new Class1();  
@@ -170,7 +172,7 @@ Si selecciona una excepción en el **configuración de excepciones** ventana, la
   
  La ventana **Configuración de excepciones** admite tipos genéricos de excepciones en C#, pero no en Visual Basic. Para interrumpir la ejecución en excepciones como `MyNamespace.GenericException<T>`, agregue la excepción como **MyNamespace.GenericException`1**. Es decir, si creó una excepción como esta:  
   
-```CSharp  
+```csharp  
 public class GenericException<T> : Exception  
 {  
     public GenericException() : base("This is a generic exception.")  
