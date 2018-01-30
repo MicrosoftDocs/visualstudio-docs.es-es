@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 09/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.remote.projnotconfigured
+f1_keywords:
+- vs.debug.remote.projnotconfigured
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-helpviewer_keywords: debugger, Web application errors
-caps.latest.revision: "22"
+helpviewer_keywords:
+- debugger, Web application errors
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6f1e206cc9327ef933f52f35960f628170e02c38
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: bd7ea7deea749831ebf26d3f8a406b1e3ad63fb0
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Error: El servidor Web no está configurado correctamente
 
@@ -39,7 +43,7 @@ Siga estos pasos para resolver este problema:
 
     La ruta de acceso física puede ser incorrecta si se copió en un equipo diferente, se cambió de nombre manualmente o se mueve la aplicación web. Restablecer IIS y vuelva a intentarlo.
 
-3. En Visual Studio, compruebe que esté seleccionado el servidor correcto en las propiedades. (Abra **Propiedades > Web > servidores** o **Propiedades > depurar** según el tipo de proyecto. Para un proyecto de formularios Web Forms, abra **páginas de propiedades > Opciones de Inicio > servidor**).
+3. Si está depurando localmente en Visual Studio, compruebe que esté seleccionado el servidor correcto en las propiedades. (Abra **Propiedades > Web > servidores** o **Propiedades > depurar** según el tipo de proyecto. Para un proyecto de formularios Web Forms, abra **páginas de propiedades > Opciones de Inicio > servidor**).
 
     Si está usando un servidor externo (personalizado) como IIS, la dirección URL debe ser correcta. En caso contrario, seleccione IIS Express y vuelva a intentarlo.
 

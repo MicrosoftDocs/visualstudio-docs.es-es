@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Establece una inspección en Variables mediante la inspección y las ventanas de inspección rápida en Visual Studio
-Durante la depuración, puede usar el **inspección** (**Depurar > Windows > inspección > inspección (1, 2, 3, 4)**) y **Inspección rápida** (haga doble clic en la variable /  **Depurar > Inspección rápida**) para observar las variables y expresiones.  La diferencia es que la ventana **Inspección** puede mostrar varias variables, mientras que la ventana **Inspección rápida** muestra las variables de una en una.
+Durante la depuración, puede usar el **inspección** y **Inspección rápida** windows para observar las variables y expresiones.  La diferencia es que la ventana **Inspección** puede mostrar varias variables, mientras que la ventana **Inspección rápida** muestra las variables de una en una. 
 
-Las ventanas sólo están disponibles durante una sesión de depuración. 
+Las ventanas sólo están disponibles durante una sesión de depuración. Para abrir el **inspección** ventana, elija **Depurar > Windows > inspección > inspección (1, 2, 3, 4)**). Para abrir el **Inspección rápida** ventana, haga doble clic en la variable y elija **Inspección rápida** o elija **Depurar > Inspección rápida**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observación de una única variable en Inspección rápida  
  Puede usar la ventana **Inspección rápida** para observar una única variable. Por ejemplo, si tiene el siguiente código:  
@@ -54,7 +55,7 @@ static void Main(string[] args)
   
 2.  Inicie la depuración. La ejecución se detiene en el punto de interrupción.  
   
-3.  Abra la ventana **Inspección rápida** (haga clic con el botón derecho, elija **Inspección rápida**, o bien **MAYÚS+F9**)
+3.  Abra la **Inspección rápida** ventana (haga doble clic en `a`, a continuación, elija **Inspección rápida**, o seleccione `a` y presione **MAYÚS+F9**).
 
     Debería ver una variable en el **valores** ventana, con un valor de 1.
 
