@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 1af9c5634770b08b7903033226f44630bdb0e133
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Actualizar pruebas de IU codificadas desde Visual Studio 2010
 Los proyectos de prueba que contienen pruebas automatizadas de IU creadas en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 se reparan automáticamente al abrirse en Visual Studio 2012 o versiones posteriores. Si los proyectos de prueba están protegidos bajo control de código fuente, los archivos del proyecto se desprotegen para esta reparación. Una vez reparados, estos proyectos de prueba que contienen pruebas de IU codificadas se pueden usar en [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 y [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -25,7 +26,7 @@ Los proyectos de prueba que contienen pruebas automatizadas de IU creadas en [!I
 -   Visual Studio Enterprise  
   
 > [!NOTE]
->  Visual Studio incluye más de un tipo de proyecto de prueba. Si crea una nueva prueba de IU codificada, se creará en un tipo de proyecto de prueba de IU codificada. Para obtener más información, vea [Actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
+> Visual Studio incluye más de un tipo de proyecto de prueba. Si crea una nueva prueba de IU codificada, se creará en un tipo de proyecto de prueba de IU codificada.
   
 > [!WARNING]
 >  Los proyectos de prueba de[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] que contienen pruebas de IU codificadas tienen que volver a compilarse al abrir el proyecto de prueba en [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] en paralelo con [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -66,6 +67,5 @@ Los proyectos de prueba que contienen pruebas automatizadas de IU creadas en [!I
 ## <a name="see-also"></a>Vea también
 
 [Portar, migrar y actualizar proyectos de Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
-[Actualización de pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
 [Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)  
 [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

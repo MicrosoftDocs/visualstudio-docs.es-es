@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,16 +20,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 53fe343002de3f89431927c95f36a0c092b36c2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 Use la página **Firma** del **Diseñador de proyectos** para firmar los manifiestos de aplicación e implementación y también para firmar el ensamblado (firma con nombre seguro).  
@@ -89,11 +91,11 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
 > [!NOTE]
 >  Al firmar un ensamblado, es posible que no siempre tenga acceso a una clave privada. Por ejemplo, una organización podría tener un par de claves muy bien guardado al que los desarrolladores no tuvieran acceso cada día. La clave pública podría estar disponible, pero el acceso a la clave privada estaría restringido a algunas personas. En tal caso, podría usar la *firma retardada* o la *firma parcial* para proporcionar la clave pública, retrasando la adición de la clave privada hasta la entrega del ensamblado.  
   
-## <a name="see-also"></a>Vea también  
- [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)   
- [Administrar la firma de ensamblados y manifiestos](../../ide/managing-assembly-and-manifest-signing.md)   
- [Firma de nombre seguro para aplicaciones administradas](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)   
- [Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
- [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies)   
+## <a name="see-also"></a>Vea también
+
+[Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)  
+[Administrar la firma de ensamblados y manifiestos](../../ide/managing-assembly-and-manifest-signing.md)  
+[Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md)  
+[Cómo: Firmar un ensamblado (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)  
+[Cómo: Firmar un ensamblado con un nombre seguro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)  
+[Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies) 

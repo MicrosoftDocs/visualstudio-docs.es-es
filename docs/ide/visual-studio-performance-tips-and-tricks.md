@@ -3,21 +3,24 @@ title: Sugerencias y trucos de rendimiento de Visual Studio | Microsoft Docs
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -32,7 +35,7 @@ Las recomendaciones de rendimiento de Visual Studio están previstas para situac
 
     Si actualiza el sistema desde una versión de Windows de 32 bits a una de 64 bits, se amplía la cantidad de memoria virtual disponible para Visual Studio de 2 GB a 4 GB. Esto permite que Visual Studio gestione cargas de trabajo considerablemente mayores aunque sea un proceso de 32 bits.
 
-    Para más información, vea [Memory limits (Límites de memoria)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) y [Using /LARGEADDRESSAWARE on 64-bit Windows (Uso de /LARGEADDRESSAWARE en Windows de 64 bits)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Para más información, vea [Memory limits (Límites de memoria)](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) y [Using /LARGEADDRESSAWARE on 64-bit Windows (Uso de /LARGEADDRESSAWARE en Windows de 64 bits)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Configuración de solución y proyectos
 
@@ -47,6 +50,7 @@ Si tiene una solución muy grande con muchos proyectos, le puede resultar benefi
     Puede dividir la solución en varios archivos de solución más pequeños con proyectos de uso frecuente. Esta refactorización debería reducir considerablemente el uso de memoria del flujo de trabajo. Además, las soluciones más pequeñas se cargan más rápido.
 
 ## <a name="configure-debugging-options"></a>Configuración de opciones de depuración
+
 Si es habitual que se quede sin memoria durante las sesiones de depuración, puede optimizar el rendimiento si realiza uno o más cambios de configuración.
 
 - **Habilite Solo mi código**
@@ -74,6 +78,7 @@ Si es habitual que se quede sin memoria durante las sesiones de depuración, pue
     Para más información, vea [Herramientas de generación de perfiles](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Deshabilitación de herramientas y extensiones
+
 Algunas herramientas o extensiones se pueden desactivar para mejorar el rendimiento.
 
 > [!TIP]
@@ -123,7 +128,8 @@ Para forzar una recolección de elementos no utilizados, use la tecla de acceso 
 
 Si la aplicación de la recolección de elementos no utilizados hace que el escenario funcione mejor, rellene un informe a través de la herramienta de comentarios de Visual Studio, ya que este comportamiento probablemente sea un error.
 
-Para obtener una descripción detallada del recolector de elementos no utilizados de CLR, vea [Fundamentals of Garbage Collection (Aspectos básicos de la recolección de elementos no utilizados)](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+Para obtener una descripción detallada del recolector de elementos no utilizados de CLR, vea [Fundamentals of Garbage Collection (Aspectos básicos de la recolección de elementos no utilizados)](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Vea también  
- [IDE de Visual Studio](../ide/index.md)
+## <a name="see-also"></a>Vea también
+
+[IDE de Visual Studio](../ide/visual-studio-ide.md)

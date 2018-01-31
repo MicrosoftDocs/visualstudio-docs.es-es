@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: accessibility [Visual Studio]
+helpviewer_keywords:
+- accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7b7623a60f5a6e06739596b02125806205c07b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad de IDE
 > [!TIP]
@@ -33,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="editors-dialogs-and-tool-windows"></a>Editores, cuadros de diálogo y ventanas de herramientas  
  De manera predeterminada, los cuadros de diálogo y las ventanas de herramientas en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usan el mismo tamaño de fuente y los mismos colores que el sistema operativo. La configuración del color del marco del IDE, los cuadros de diálogo, las barras de herramientas y las ventanas de herramientas se basan en una combinación de colores: clara u oscura. Puede cambiar el tema del color actual en [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md).  
 
- También puede mostrar ventanas emergentes en la vista Código del editor. Estas ventanas pueden indicarle los miembros disponibles en el objeto actual y los parámetros para completar una función o instrucción. Estas ventanas pueden resultar útiles si tiene dificultades para escribir. En cambio, interfieren con el foco del editor de código, que puede ser problemático para algunos usuarios. Puede desactivar estas ventanas abriendo el cuadro de diálogo Opciones y desactivar **Lista de miembros automática** e **Información de parámetros** en el **Editor de texto**, **Todos los lenguajes**, página **General** en el cuadro de diálogo **Opciones**. Para obtener más información, vea [Cómo: Establecer opciones generales del editor](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ También puede mostrar ventanas emergentes en la vista Código del editor. Estas ventanas pueden indicarle los miembros disponibles en el objeto actual y los parámetros para completar una función o instrucción. Estas ventanas pueden resultar útiles si tiene dificultades para escribir. En cambio, interfieren con el foco del editor de código, que puede ser problemático para algunos usuarios. Puede desactivar estas ventanas abriendo el cuadro de diálogo Opciones y desactivar **Lista de miembros automática** e **Información de parámetros** en el **Editor de texto**, **Todos los lenguajes**, página **General** en el cuadro de diálogo **Opciones**.
 
  Puede reorganizar las ventanas del entorno de desarrollo integrado (IDE) para adaptarse mejor a su manera de trabajar. Puede acoplar, hacer flotante, ocultar u ocultar automáticamente cada ventana de herramientas.  
 

@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9609f902c11291cd6892cf663ec8a343952ebaab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b43e285c35601cb0d50536a5f4c499d09ae9bbad
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Cómo: Deshabilitar el proceso de alojamiento
 Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso de hospedaje. En estos casos, es necesario deshabilitar el proceso de hospedaje para devolver los resultados correctos.  
@@ -45,7 +47,7 @@ Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso 
   
 -   No está disponible la depuración de confianza parcial.  
   
-## <a name="see-also"></a>Vea también  
- [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md)   
- [Proceso de alojamiento (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [Versiones de compilación durante el desarrollo de una aplicación](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+## <a name="see-also"></a>Vea también
+
+[Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md)   
+[Proceso de alojamiento (vshost.exe)](../ide/hosting-process-vshost-exe.md)

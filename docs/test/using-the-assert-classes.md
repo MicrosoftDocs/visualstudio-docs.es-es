@@ -14,13 +14,14 @@ helpviewer_keywords:
 - unit tests, Assert classes
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: f2d0e0020ae26a3a2331643f74f436441612b9fc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 01d41202f49a61a1ae2ba0f926b5c5b563ab351c
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-the-assert-classes"></a>Utilizar las clases Assert
 Utilice las clases Assert del espacio de nombres UnitTestingFramework para comprobar la funcionalidad específica. Un método de prueba unitaria utiliza el código de un método en el código de desarrollo, pero solo notifica la corrección del comportamiento del código si se incluyen instrucciones Assert.  
@@ -59,6 +60,7 @@ Utilice las clases Assert del espacio de nombres UnitTestingFramework para compr
   
  Decore un método de prueba con el atributo ExpectedExceptionAttribute cuando desee que el método de prueba compruebe que una excepción que espera es iniciada por un método en el código de desarrollo en ese método.  
   
-## <a name="see-also"></a>Vea también  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
- [Crear y ejecutar pruebas unitarias para código existente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
+## <a name="see-also"></a>Vea también
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
+[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)

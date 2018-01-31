@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.cv.sdk.about
+f1_keywords:
+- vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5eecc1d317f2391632cbe87df30a2ba2fd7c692c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f3745e863a94c0e2b899da0bf9d81589570c6ac0
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del Visualizador de simultaneidad
 Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -40,7 +43,7 @@ Puede instrumentar el código fuente mediante el uso del SDK del visualizador de
   
 3.  Agregue una instrucción imports o using al código.  
   
-    ```CSharp  
+    ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
@@ -93,7 +96,7 @@ Puede instrumentar el código fuente mediante el uso del SDK del visualizador de
   
 1.  Para usar un nuevo <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, primero créelo mediante un objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> y, después, genere eventos de marcador directamente desde la nueva serie.  
   
-    ```CSharp  
+    ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");  
     series1.WriteFlag("My flag");  
     ```  

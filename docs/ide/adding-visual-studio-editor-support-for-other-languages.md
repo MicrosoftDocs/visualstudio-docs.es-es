@@ -15,17 +15,19 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 Obtenga información sobre la manera en que el editor de Visual Studio admite la lectura y la navegación por los distintos lenguajes de computación y sobre cómo puede agregar compatibilidad con otros lenguajes en el editor de Visual Studio.  
@@ -40,7 +42,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 |||||||  
 |-|-|-|-|-|-|  
 |Bat|F#|Java|Markdown|Rust|Visual Basic|  
-|Clojure|Ir|JavaDoc|Objective-C|ShaderLab|Visual C#|  
+|Clojure|Ir|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
 |CSS|INI|LUA|R|Swift|XML|  
@@ -62,7 +64,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
   
 -   Visual C++  
   
--   Visual C#  
+-   C#  
   
  Todos estos tipos de archivo tienen las características que se han descrito anteriormente aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.  
   
