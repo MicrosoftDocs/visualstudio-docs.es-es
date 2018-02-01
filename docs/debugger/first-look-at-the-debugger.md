@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Empezar a trabajar con el depurador de Visual Studio
 El depurador de Visual Studio es fácil de usar en cualquier lenguaje. Aquí le mostraremos cómo depurar un programa sencillo de C#, pero puede aplicar los mismos pasos para codificar en otros lenguajes, como C++ y JavaScript.
@@ -27,7 +29,7 @@ Para ver un vídeo que muestra características similares, vea [introducción co
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>Depurar un proyecto básico de C#  
  Puede empezar con una sencilla aplicación de consola de C# (**archivo > Nuevo > proyecto**, a continuación, seleccione **Visual C#** y, a continuación, **aplicación de consola**). Si nunca ha trabajado con Visual Studio antes, consulte [Tutorial: crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). El **Main** método simplemente suma 1 a una variable entera 10 veces e imprime el resultado en la consola:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -56,7 +58,7 @@ static void Main(string[] args)
   
  Puede mantener el mouse sobre la **testInt** variable para ver el valor actual en una sugerencia de datos.  
   
- ![DBG &#95; Conceptos básicos de &#95; datos &#95; Sugerencias](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  Justo debajo de la ventana de código debería ver el **automático**, **locales**, y **inspección** windows. Estas ventanas muestran los valores actuales de las variables en tiempo de ejecución. Tanto el **automático** y **variables locales** windows mostrar **testInt** con un valor de **10**.  
   
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  Para ver la diferencia entre **paso a paso** y **paso a paso por**, tenemos que agregar un método que llama a otro método. Agregue un método a la aplicación de C# y llámelo desde el método Principal. El código debería tener este aspecto:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  
