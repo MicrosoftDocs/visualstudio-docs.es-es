@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 Describe la arquitectura de la aplicación en un nivel superior mediante la creación de *diagramas de dependencia* en Visual Studio. Asegúrese de que el código sigue siendo coherente con este diseño validar el código con un diagrama de dependencia. También puede incluir la validación de capas en el proceso de compilación. Vea [vídeo de Channel 9: diseño y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).  
@@ -62,7 +63,7 @@ Describe la arquitectura de la aplicación en un nivel superior mediante la crea
  Vea [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).  
   
 ##  <a name="CreateLayers"></a>Definir capas para representar áreas o componentes funcionales  
- Las capas representan grupos lógicos de *artefactos*, como proyectos, archivos de código, espacios de nombres, clases y métodos. Se pueden crear capas a partir de artefactos de proyectos de Visual C# .NET y Visual Basic .NET, o bien se pueden adjuntar especificaciones o planes a una capa vinculando documentos, como archivos de Word o presentaciones de PowerPoint. Cada capa aparece como un rectángulo en el diagrama y muestra el número de artefactos vinculados a ella. Una capa puede contener capas anidadas que describan tareas más específicas.  
+ Las capas representan grupos lógicos de *artefactos*, como proyectos, archivos de código, espacios de nombres, clases y métodos. Se pueden crear capas a partir de artefactos de proyectos de Visual C# y Visual Basic, o puede adjuntar especificaciones o planes a una capa vinculando documentos, como archivos de Word o presentaciones de PowerPoint. Cada capa aparece como un rectángulo en el diagrama y muestra el número de artefactos vinculados a ella. Una capa puede contener capas anidadas que describan tareas más específicas.  
   
  Como regla general, denomine las capas según su función, por ejemplo, "Presentación" o "Servicios." Si los artefactos tienen una estrecha interdependencia, colóquelos en la misma capa. Si los artefactos se pueden actualizar de forma independiente o usar en aplicaciones diferentes, sitúelos en capas distintas. Para obtener información acerca de los patrones de capas, visite el sitio Patterns & Practices en [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).  
   

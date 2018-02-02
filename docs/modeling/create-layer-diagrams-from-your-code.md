@@ -14,30 +14,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia desde el código
-Para visualizar la arquitectura de alto nivel, lógica de su sistema de software, cree un *diagrama de dependencia* en Visual Studio. Para asegurarse de que el código sigue siendo coherente con este diseño, valide el código con un diagrama de dependencia. Puede crear diagramas de dependencia para los proyectos de Visual C# .NET y Visual Basic. NET. Para ver qué versiones de Visual Studio admiten esta característica, vea [compatibilidad con la versión de arquitectura y herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![Crear un diagrama de dependencia](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- Un diagrama de dependencia le permite organizar los elementos de la solución de Visual Studio en grupos lógicos y abstractos denominados *capas*. Las capas se pueden usar para describir las tareas principales que realizan estos artefactos o los componentes principales del sistema. Cada capa puede contener otras capas que describen tareas más detalladas. También puede especificar planeadas o existentes *dependencias* entre las capas. Estas dependencias, que se representan como flechas, muestran qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. Para mantener el control de la arquitectura del código, muestre las dependencias previstas en el diagrama y, a continuación, valide el código con el diagrama.  
-  
- [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>Crear un diagrama de dependencia  
- Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene un proyecto de modelado. 
-  
+
+Para visualizar la arquitectura de alto nivel, lógica de su sistema de software, cree un *diagrama de dependencia* en Visual Studio. Para asegurarse de que el código sigue siendo coherente con este diseño, valide el código con un diagrama de dependencia. Puede crear diagramas de dependencia para los proyectos de Visual C# y Visual Basic. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+![Crear un diagrama de dependencia](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+Un diagrama de dependencia le permite organizar los elementos de la solución de Visual Studio en grupos lógicos y abstractos denominados *capas*. Las capas se pueden usar para describir las tareas principales que realizan estos artefactos o los componentes principales del sistema. Cada capa puede contener otras capas que describen tareas más detalladas. También puede especificar planeadas o existentes *dependencias* entre las capas. Estas dependencias, que se representan como flechas, muestran qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. Para mantener el control de la arquitectura del código, muestre las dependencias previstas en el diagrama y, a continuación, valide el código con el diagrama.
+
+[Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>Crear un diagrama de dependencia
+
+Antes de crear un diagrama de dependencia, asegúrese de que la solución tiene un proyecto de modelado.
+
 > [!IMPORTANT]
->  No agregue, arrastre o copie un diagrama de dependencia existente de un proyecto de modelado a otro proyecto de modelado o en otro lugar de la solución. Esto conserva las referencias del diagrama original, aunque se cambie el diagrama. Esto también impide que la validación de capas se haga correctamente y es posible que cause otros problemas, como la pérdida de elementos u otros errores al intentar abrir el diagrama.  
->   
->  En su lugar, agregue un nuevo diagrama de dependencia para el proyecto de modelado. Copie los elementos del diagrama de origen en el nuevo diagrama. Guarde el proyecto de modelado y el nuevo diagrama de dependencia.  
-  
+> No agregue, arrastre o copie un diagrama de dependencia existente de un proyecto de modelado a otro proyecto de modelado o en otro lugar de la solución. Esto conserva las referencias del diagrama original, aunque se cambie el diagrama. Esto también impide que la validación de capas se haga correctamente y es posible que cause otros problemas, como la pérdida de elementos u otros errores al intentar abrir el diagrama.
+>
+> En su lugar, agregue un nuevo diagrama de dependencia para el proyecto de modelado. Copie los elementos del diagrama de origen en el nuevo diagrama. Guarde el proyecto de modelado y el nuevo diagrama de dependencia.
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>Para agregar un nuevo diagrama de dependencia a un proyecto de modelado  
   
 1.  En el **arquitectura** menú, elija **nuevo diagrama de dependencia**.  

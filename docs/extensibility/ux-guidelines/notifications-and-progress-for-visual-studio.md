@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Las notificaciones y el progreso de Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Sistemas de notificación  
@@ -108,7 +110,7 @@ ms.lasthandoff: 12/22/2017
 ####  <a name="BKMK_ErrorList"></a>Lista de errores  
  Una notificación en la lista de errores indica errores y advertencias que se produjeron durante la compilación o y proceso de compilación y permite al usuario navegar en el código a ese error de código concretos.  
   
- ![Lista de errores](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "08_ErrorList 0901")  
+ ![Error list](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901-08_ErrorList")  
   
  **Lista de errores en Visual Studio**  
   
@@ -209,7 +211,7 @@ ms.lasthandoff: 12/22/2017
  "Las hormigas," animados puntos horizontales, ofrecen una referencia visual para un proceso de servidor de ida y vuelta indeterminado.  
   
 ##### <a name="spinner-progress-ring"></a>Spinner (anillo de progreso)  
- ![Control giratorio de progreso](../../extensibility/ux-guidelines/media/0903-02_spinner.png "02_Spinner 0903")  
+ ![Progress spinner](../../extensibility/ux-guidelines/media/0903-02_spinner.png "0903-02_Spinner")  
   
  El control de número (también conocido como un "anillo de progreso") es un indicador de progreso indeterminada que se utiliza principalmente en relación con la interfaz de usuario contextual. Mostrar un control de número cerca de su contenido relacionado, como un encabezado de categoría textual, mensajería o control.  
   
@@ -237,8 +239,6 @@ ms.lasthandoff: 12/22/2017
  **Barra de información con barra de progreso y la descripción textual**  
   
  ![Barra de información dentro de una ventana](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "06_InfoBarInWindow 0903")  
-  
- **Barra de información dentro de la ventana de análisis de código**  
   
 ##### <a name="inline"></a>Alineado  
  Indicación de progreso en línea puede representarse mediante cualquiera de los tipos de cargador de progreso. Normalmente el indicador de progreso se empareja con mensajería, pero esto no es un requisito.  
@@ -292,7 +292,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="overview"></a>Información general  
  Barras de información proporcionan al usuario un indicador cerca de su punto de atención y usando el control de barra de información compartida garantiza la coherencia de la apariencia visual y la interacción.  
   
- ![Barra de información](../../extensibility/ux-guidelines/media/0904-01_infobar.png "01_Infobar 0904")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Barras de información en Visual Studio**  
   
@@ -522,6 +522,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Marcas de agua  
  A veces un control completo o la ventana está en un estado de error. En esta situación, utilice una marca de agua para indicar el error.  
   
- ![Marca de agua](../../extensibility/ux-guidelines/media/0905-07_watermark.png "07_Watermark 0905")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Validación de campos de marca de agua**

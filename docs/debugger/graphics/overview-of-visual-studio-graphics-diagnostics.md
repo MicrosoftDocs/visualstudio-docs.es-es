@@ -4,23 +4,23 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ddd429d9-ac70-4ac4-9e69-299c6ea2df09
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Información general de Diagnóstico de gráficos de Visual Studio
-Visual Studio *diagnóstico de gráficos* es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse con aplicaciones que se ejecutan localmente en su PC de Windows, en un emulador de dispositivos de Windows o en un dispositivo o equipo remoto.  
+Visual Studio *diagnóstico de gráficos* es un conjunto de herramientas para grabar y analizar problemas de representación y rendimiento de aplicaciones de Direct3D. Diagnóstico de gráficos puede usarse en aplicaciones que se ejecutan localmente en su PC Windows o en un dispositivo o equipo remoto.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Usar Diagnóstico de gráficos para depurar problemas de representación  
  La depuración de problemas de representación en una aplicación repleta de gráficos no es tan sencilla como iniciar un depurador y recorrer el código. En cada fotograma se producen cientos de miles de píxeles únicos, cada uno según un conjunto complejo de estado, datos, parámetros y código, de los cuales quizás solo algunos píxeles muestren el problema que intenta diagnosticar. Para complicar aún más las cosas, el código que genera cada píxel se ejecuta en hardware especializado que procesa cientos de píxeles en paralelo. Las herramientas y técnicas de depuración tradicionales, difíciles de utilizar incluso en código con pocos subprocesos, son ineficaces cuando hay que hacer frente a tantos datos.  
@@ -33,10 +33,7 @@ Visual Studio *diagnóstico de gráficos* es un conjunto de herramientas para gr
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 y Direct3D 12  
  Windows 10 introdujo *Direct3D 12*, que es sustancialmente diferente de Direct3D 10 y Direct3D 11. Estas diferencias vuelven a colocar a DirectX a la altura del hardware gráfico moderno y liberan todo su potencial, pero también suponen grandes cambios en la API y aumentan la responsabilidad del programador para administrar la duración y la contención de los recursos. A pesar de las diferencias, diagnóstico de gráficos con Direct3D 12 mantiene la paridad de características con diagnóstico de gráficos con Direct3D 11.2.
   
- Windows 10 también mantiene la compatibilidad con versiones anteriores de Direct3D y con los juegos y aplicaciones que dependen de ellas. Diagnóstico de gráficos en Visual Studio sigue siendo compatible con Direct3D 10 y Direct3D 11 en Windows 10, así como en Windows 8.1.  
-  
-### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 y Direct3D 11.2  
- En [!INCLUDE[win81](../includes/win81_md.md)], DirectX 11.2 introduce nuevas características que incluyen compatibilidad para capturar información de gráficos durante el tiempo de ejecución. [!INCLUDE[win81](../includes/win81_md.md)]utiliza la nueva captura basada en tiempo de ejecución, conocido como *captura robusta*: exclusivamente para todas las versiones de DirectX que [!INCLUDE[win81](../includes/win81_md.md)] admite. La captura robusta también admite nuevas características de Direct3D 11.2.  
+ Windows 10 también mantiene la compatibilidad con versiones anteriores de Direct3D y con los juegos y aplicaciones que dependen de ellas. Diagnóstico de gráficos en Visual Studio sigue siendo compatible con Direct3D 10 y Direct3D 11 en Windows 10.
   
 ### <a name="limited-direct2d-support"></a>Compatibilidad limitada con Direct2D  
  Como Direct2D es una API de modo de usuario que se basa en Direct3D, puede utilizar diagnóstico de gráficos para ayudar a depurar problemas de representación en aplicaciones que utilizan Direct2D. Sin embargo, puesto que, en lugar de los eventos de alto nivel de Direct2D, solo se registran los eventos subyacentes de Direct3D, los eventos de Direct2D no aparecerán en la lista de eventos de gráficos. Además, como la relación entre los eventos de Direct2D y los eventos resultantes de Direct3D no siempre está clara, el uso de Diagnóstico de gráficos para depurar problemas de representación en aplicaciones que utilizan Direct2D no es sencillo. No obstante, puede utilizar Diagnóstico de gráficos para obtener información sobres problemas de representación de bajo nivel en aplicaciones que utilizan Direct2D.  

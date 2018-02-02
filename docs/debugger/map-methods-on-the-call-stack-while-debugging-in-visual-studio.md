@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.debugwithcodemaps
+f1_keywords:
+- vs.progression.debugwithcodemaps
 dev_langs:
 - CSharp
 - VB
@@ -28,16 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.workload: multiple
-ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Crear un mapa visual de la pila de llamadas durante la depuración en Visual Studio Enterprise
 Cree un mapa de código para realizar un seguimiento la pila de llamadas durante la depuración. Puede hacer anotaciones en el mapa para llevar a cabo el seguimiento de lo que hace el código y poder concentrarse en encontrar errores.
@@ -46,7 +49,7 @@ Cree un mapa de código para realizar un seguimiento la pila de llamadas durante
   
 -   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   Código que pueda depurar, por ejemplo, Visual C# .NET, Visual Basic .NET, C++, JavaScript o X++.  
+-   Código que pueda Depurar, por ejemplo, Visual C#, Visual Basic, C++, JavaScript o X ++.  
 
 Este es un vistazo rápido a un mapa de código:
   
@@ -95,7 +98,7 @@ Este es un vistazo rápido a un mapa de código:
  ![Actualizar el mapa de código con la siguiente pila de llamadas](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
 ##  <a name="AddRelatedCode"></a>Agregar código relacionado al mapa  
- ¿Ahora ya tiene un mapa: lo que a continuación? Si está trabajando con Visual C# .NET o Visual Basic. NET, agregue elementos, como campos, propiedades y otros métodos, para realizar un seguimiento de lo que está sucediendo en el código.  
+ ¿Ahora ya tiene un mapa: lo que a continuación? Si está trabajando con Visual C# o Visual Basic, agregue elementos, como campos, propiedades y otros métodos, para realizar un seguimiento de lo que está sucediendo en el código.  
   
  Haga doble clic en un método para ver su definición de código, o bien use el menú contextual para el método. (Teclado: seleccione el método en el mapa y presione **F12**)  
   

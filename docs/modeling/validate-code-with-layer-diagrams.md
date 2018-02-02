@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar código con diagramas de dependencia
 
@@ -54,7 +55,7 @@ Para asegurarse de que código no entre en conflicto con el diseño, valide el c
   
 -   Visual Studio en el servidor de Team Foundation Build para validar código automáticamente con Team Foundation Build  
   
--   Una solución que tiene un proyecto de modelado con un diagrama de dependencia. Este diagrama de dependencia se debe vincularse a artefactos de proyectos de Visual C# .NET o Visual Basic .NET que se desea validar. Vea [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Una solución que tiene un proyecto de modelado con un diagrama de dependencia. Este diagrama de dependencia se debe vincularse a artefactos de proyectos de C# o Visual Basic que se desea validar. Vea [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +121,7 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
 2.  Para ver el origen de cada error, haga doble clic en el error en la **lista de errores** ventana.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podría mostrar un mapa de código en lugar del origen del error. Esto se produce cuando el código tiene una dependencia en un ensamblado que no se especifica en el diagrama de dependencia, o el código le falta una dependencia que se especifica en el diagrama de dependencia. Revise el mapa de código o el código para determinar si debe existir la dependencia. Para obtener más información acerca de los mapas de código, vea [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] es posible que se muestre un mapa de código en lugar del origen del error. Esto se produce cuando el código tiene una dependencia en un ensamblado que no se especifica en el diagrama de dependencia, o el código le falta una dependencia que se especifica en el diagrama de dependencia. Revise el mapa de código o el código para determinar si debe existir la dependencia. Para obtener más información acerca de los mapas de código, vea [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Para administrar los errores, vea [administrar errores de validación](#ManageErrors).  
   

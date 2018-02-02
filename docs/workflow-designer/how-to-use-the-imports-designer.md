@@ -6,21 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: System.Activities.Presentation.View.ImportDesigner.UI
+f1_keywords:
+- System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.workload: multiple
-ms.openlocfilehash: 3873e444f3d9c68b632d52ab98bee07bf14af679
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cfa65ee24b99fd81712ec88e45f44bb2ed42c21a
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
-El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. Muy parecida a la **importa** o **con** habilitar palabras clave en Visual Basic .NET y C#, especificar espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.  
+El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. Muy parecida a la **importa** o **con** habilitar palabras clave en Visual Basic y C#, especificar espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.  
   
  El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas se incluyen las siguientes:  
   

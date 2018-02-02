@@ -24,12 +24,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2ac958d6033408ab509cfca7372dec0f7360b48c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: ce25077610d285cba59a6d379a68fd3be6c10bcf
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Examinar y reorganizar mapas de código
 Reorganice los elementos en mapas de código para facilitar su lectura y mejorar su rendimiento.  
@@ -107,7 +108,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 |------------|-----------------------------|  
 |Ver más información sobre un nodo o un vínculo.|Mueva el puntero del mouse sobre el nodo o vínculo hasta que aparezca información sobre herramientas.<br /><br /> En la información sobre herramientas de un vínculo agregado se muestran las dependencias individuales que representa.<br /><br /> o bien<br /><br /> Abra el menú contextual del nodo o el vínculo. Elija **editar**, **propiedades**.|  
 |Mostrar u ocultar el contenido de un grupo.|-Para expandir un grupo, abra el menú contextual para el nodo y elija **grupo**, **expandir**.<br />     O bien<br />     Mueva el puntero del mouse sobre el nodo hasta que aparezca el botón de contenido adicional (flecha hacia abajo). Haga clic en este botón para expandir el grupo. Teclado: para expandir o contraer el grupo seleccionado, presione la **más** clave (**+**) o la **menos** clave ( **-** ).<br />-Para contraer un grupo, abra el menú contextual para el nodo y elija **grupo**, **contraer**.<br />     O bien<br />     Mueva el puntero del mouse sobre un grupo hasta que aparezca el botón de contenido adicional (flecha hacia arriba). Haga clic en este botón para contraer el grupo.<br />-Para expandir todos los grupos, presione **CTRL** + **A** para seleccionar todos los nodos. Abra el menú contextual del mapa y elija **grupo**, **expandir**. **Nota:** este comando no está disponible si expandiendo todos los grupos genera un mapa inutilizable o problemas de memoria. Se recomienda expandir el mapa solo al nivel de detalle que le interese.<br />-Para contraer todos los grupos, abra el menú contextual para un nodo o para la asignación. Elija **grupo**, **Contraer todo**.|  
-|Ver la definición de código para un espacio de nombres, tipo o miembro.|Abra el menú contextual para el nodo y elija **ir a definición**.<br /><br /> O bien<br /><br /> Haga doble clic en el nodo. Para los grupos expandidos, haga doble clic en el encabezado del grupo.<br /><br /> O bien<br /><br /> Seleccione el nodo y presione **F12**.<br /><br /> Por ejemplo:<br /><br /> -En un espacio de nombres que contiene una clase, el archivo de código para la clase se abrirá para mostrar la definición de esa clase. En otros casos, el **resultados de la búsqueda de símbolos** ventana muestra una lista de archivos de código. **Nota:** al realizar esta tarea en un espacio de nombres de Visual Basic. NET, el archivo de código subyacente del espacio de nombres no se abre. Este problema también se produce cuando se efectúa esta tarea en un grupo de nodos seleccionados que incluyen un espacio de nombres de Visual Basic .NET. Para evitar este problema, examine manualmente el archivo de código subyacente u omita el nodo del espacio de nombres de la selección.<br />-En una clase o una clase parcial, el archivo de código de esa clase se abrirá para mostrar la definición de clase.<br />-Para un método, se abre el archivo de código para la clase primaria para mostrar la definición de método.|  
+|Ver la definición de código para un espacio de nombres, tipo o miembro.|Abra el menú contextual para el nodo y elija **ir a definición**.<br /><br /> O bien<br /><br /> Haga doble clic en el nodo. Para los grupos expandidos, haga doble clic en el encabezado del grupo.<br /><br /> O bien<br /><br /> Seleccione el nodo y presione **F12**.<br /><br /> Por ejemplo:<br /><br /> -En un espacio de nombres que contiene una clase, el archivo de código para la clase se abrirá para mostrar la definición de esa clase. En otros casos, el **resultados de la búsqueda de símbolos** ventana muestra una lista de archivos de código. **Nota:** al realizar esta tarea en un espacio de nombres de Visual Basic, el archivo de código subyacente del espacio de nombres no se abre. Este problema también se produce cuando se lleva a cabo esta tarea en un grupo de nodos seleccionados que incluyen un espacio de nombres de Visual Basic. Para evitar este problema, examine manualmente el archivo de código subyacente u omita el nodo del espacio de nombres de la selección.<br />-En una clase o una clase parcial, el archivo de código de esa clase se abrirá para mostrar la definición de clase.<br />-Para un método, se abre el archivo de código para la clase primaria para mostrar la definición de método.|  
 |Examinar las dependencias y los elementos que participan en un vínculo agregado.|Seleccione los vínculos que le interesa y abra el menú contextual para la selección. Elija **mostrar vínculos de contribución** o **mostrar vínculos de contribución en el nuevo mapa de código**.<br /><br /> Visual Studio expande los grupos en ambos puntos de conexión del vínculo y muestra solo los elementos y dependencias que participan en el vínculo. **Nota:** al examinar las dependencias entre los elementos de los grupos parciales, puede aparecer este comportamiento: <ul><li>Vínculos a elementos que no participan en el examen desaparecen del mapa, aunque todavía existen esos vínculos.</li><li>Suponga que examina un vínculo a un elemento en un grupo parcial y posteriormente examina otro vínculo al mismo elemento. Durante el segundo examen, el grupo parcial de destino muestra solo elementos del primer examen. No aparecen los vínculos y los elementos de destino que no participan en el primer examen pero participa en el segundo.</li></ul> Para ver los elementos de un grupo que faltan, elija **volver a obtener elementos secundarios**![volver a obtener elementos secundarios icono](../modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon") (lo que indica que no todos los miembros de un grupo aparecen en el mapa). También puede intentar deshacer sus acciones (teclado: presione **CTRL+Z**) y examine las dependencias en un nuevo mapa.|  
 |Examinar las dependencias entre varios nodos de grupos diferentes.|Expanda los grupos de modo que pueda ver todos sus elementos secundarios. Seleccione todos los nodos que le interesen, incluidos sus elementos secundarios. En el mapa se muestran los vínculos entre grupos de los nodos seleccionados.<br /><br /> Para seleccionar todos los nodos de un grupo, mantenga presionada **MAYÚS** y el botón primario del mouse mientras dibuja un rectángulo alrededor de ese grupo. Para seleccionar todos los nodos en un mapa, presione **CTRL**+**A**. **Sugerencia:** para mostrar los vínculos entre grupos en todo momento, elija **diseño** en la barra de herramientas del mapa, **avanzadas**, **mostrar todos los vínculos entre grupos**.|  
 |Ver los elementos a los que un nodo o vínculo hace referencia.|Abra el menú contextual para el nodo y elija **buscar todas las referencias**. **Nota:** esto solo aplica cuando el `Reference` atributo está establecido para el nodo o vínculo en el archivo .dgml del mapa. Para agregar referencias a elementos de los nodos o vínculos, consulte [personalizar código que se asigna mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|  
@@ -275,7 +276,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
     |-----------------------|----------------|  
     |Color de fondo|**Fondo**|  
     |Color del contorno|**Trazo**|  
-    |Color del texto (se muestra una letra "f" para mostrar el resultado)|**Primer plano**|  
+    |Color del texto (se muestra una letra "f" para mostrar el resultado)|**Foreground**|  
     |Iconos|**Iconos**|  
   
      El **selector de conjunto de colores** o **icono establecer selector** aparece el cuadro de diálogo para que seleccionar un color o icono.  
@@ -299,7 +300,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
   
     |**En**|**Choose**|  
     |------------|----------------|  
-    |Desactivar el elemento de código|**Deshabilitar**|  
+    |Desactivar el elemento de código|**Disable**|  
     |Eliminar el elemento de código|**Eliminar**|  
     |Subir el estilo|**Mover hacia arriba**|  
     |Bajar el elemento de código|**Mover hacia abajo**|  

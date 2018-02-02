@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-caps.latest.revision: "10"
+caps.latest.revision: 
 ms.author: v-brickg
 manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 69fad7f5bab020aea442670687e5fc781eee2955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- v-brickg
+ms.openlocfilehash: eb6ff923bd74b4c6350e8252d59c86cabff11428
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Diccionario del idioma Visual para Visual Studio
 Visual Studio usa un lenguaje común de visual para ilustrar los conceptos que son los bloques de creación de su iconography y otras imágenes. Al diseñar nuevos iconos, utilice este diccionario para identificar los conceptos que se desea transmitir en su propia imagen.  
@@ -448,7 +450,7 @@ Visual Studio usa un lenguaje común de visual para ilustrar los conceptos que s
 | **Estado de la acción: en pausa** | ![Estado de la acción: en pausa icono](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![Icono de pausa de servidor](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />Servidor en pausa |
 | **Estado de la acción: reproducción en curso, ejecutar** | ![Estado de la acción: reproducción, en ejecución icono](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning.png "VLD_S_ActionStatusPlayingRunning") | ![Icono de servidor iniciado](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_serverstarted.png "VLD_S_ActionStatusPlayingRunning_ServerStarted")<br />Se inició el servidor<br />![Icono no reproducir nunca](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_neverrun.png "VLD_S_ActionStatusPlayingRunning_NeverRun")<br />No ejecutar nunca |
 | **Estado de la acción: detenido** | ![Estado de la acción: icono se detuvieron](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped.png "VLD_S_ActionStatusStopped") | ![Icono de servidor detenido](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped_serverstopped.png "VLD_S_ActionStatusStopped_ServerStopped")<br />Se detuvo el servidor |
-| **Alerta** | ![Icono de alerta](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![Tabla vinculada con icono de indicación de error tab](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />Tabla vinculada con la indicación de la pestaña de error<br />![Icono de ventana de análisis de código](../../extensibility/ux-guidelines/media/vld_s_alert_codeanalysiswindow.png "VLD_S_Alert_CodeAnalysisWindow")<br />Ventana de análisis de código |
+| **Alerta** | ![Icono de alerta](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![Tabla vinculada con icono de indicación de error tab](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />Tabla vinculada con la indicación de la pestaña de error |
 | **Punto de interrupción: avanzado deshabilitado** | ![Punto de interrupción: avanzado icono deshabilitado](../../extensibility/ux-guidelines/media/vld_s_breakpointadvanceddisabled.png "VLD_S_BreakpointAdvancedDisabled") ||
 | **Punto de interrupción: avanzado habilitado**  |![Punto de interrupción: avanzado icono habilitado](../../extensibility/ux-guidelines/media/vld_s_breakpointadvancedenabled.png "VLD_S_BreakpointAdvancedEnabled") ||
 | **Punto de interrupción: enlazado** | ![Punto de interrupción: icono enlazado](../../extensibility/ux-guidelines/media/vld_s_breakpointbound.png "VLD_S_BreakpointBound") ||

@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.  
@@ -147,37 +148,32 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 ### <a name="gpu-counters"></a>Contadores de GPU  
  La compatibilidad de los contadores de hardware de GPU depende del hardware.  
   
- El Análisis de fotogramas no recopila contadores de Intel, AMD ni nVidia, ya que ninguna GPU ofrecida actualmente por estas marcas admite los contadores de hardware de GPU de manera fiable. No obstante, el Análisis de fotogramas recopila contadores de hardware de estas GPU, que lo admiten de forma fiable:  
+ El Análisis de fotogramas no recopila contadores de Intel, AMD ni nVidia, ya que ninguna GPU ofrecida actualmente por estas marcas admite los contadores de hardware de GPU de manera fiable. Sin embargo, el análisis de fotogramas recopila contadores de hardware de la GPU siguiente, que admite de forma confiable ellos:  
   
--   SoC de Qualcomm (cualquiera que admita Windows Phone)  
-  
--   nVidia T40 (Tegra4).  
+-   nVidia T40 (Tegra4)
   
  Ninguna otra plataforma que admita el Análisis de fotogramas recopila contadores de hardware de GPU.  
   
 > [!NOTE]
 >  Dado que los contadores de hardware de GPU son recursos de hardware, puede que la recopilación del conjunto completo de contadores de hardware de cada variante de representación requiera varios pases. Por esto, no se especifica el orden en el que se recopilan los contadores de la GPU.  
   
-### <a name="windows-phone"></a>Windows Phone  
- Las marcas de tiempo, las consultas de oclusión y los contadores de hardware GPU solo se admiten en auriculares de Windows Phone suministrados originalmente con Windows Phone 8.1 o Windows Phone 10. El Análisis de fotogramas lo necesita para reproducir el archivo de registro de gráficos. Auriculares de Windows Phone que se suministraron originalmente con Windows Phone 8 no admiten el análisis de fotogramas, incluso para los auriculares de que se han actualizado para Windows Phone 8.1 o Windows Phone 10.  
-  
 ## <a name="unsupported-scenarios"></a>Escenarios no admitidos  
  Algunas maneras de usar el análisis de fotogramas no se admiten o simplemente son una mala idea.  
-  
-### <a name="warp"></a>WARP  
- El Análisis de fotogramas está diseñado para perfilar y mejorar el rendimiento de la representación en hardware real. El Análisis de fotogramas se puede ejecutar en dispositivos WARP (el emulador de Windows Phone se ejecuta en WARP), pero no suele valer la pena, ya que si WARP se ejecuta en una CPU de última generación, será más lento que las más GPU modernas de menor potencia, y porque el rendimiento de WARP puede variar en gran medida según la CPU en la que se ejecute.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Reproducción de capturas de alto nivel en dispositivos inferiores  
  En el Analizador de gráficos, cuando reproduce un archivo de registro de gráficos que usa un nivel superior al que admite la máquina de reproducción, recurre a WARP automáticamente. En el Análisis de fotogramas no se recurre a WARP explícitamente y se genera un error. WARP es útil para examinar la corrección de la aplicación Direct3D, pero no para examinar su rendimiento.  
   
 > [!NOTE]
->  Aunque sea importante tener en cuenta los problemas de nivel de características, puede capturar y reproducir archivos de registro de gráficos en diferentes configuraciones y dispositivos de hardware. Por ejemplo, puede capturar información de gráficos en un dispositivo Windows Phone y reproducirla en un equipo de escritorio, y al revés. En ambos casos, el registro de gráficos se puede reproducir siempre que el archivo de registro no contenga ninguna API o utilice niveles de características que no se admitan en la máquina de reproducción.  
+>  Aunque sea importante tener en cuenta los problemas de nivel de características, puede capturar y reproducir archivos de registro de gráficos en diferentes configuraciones y dispositivos de hardware. El registro de gráficos se puede reproducir siempre que el archivo de registro no contenga ninguna API o utilice niveles de características que no se admiten en la máquina de reproducción.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e inferiores  
  Si su aplicación llama a la API Direct3D 10, el Análisis de fotogramas no la reconocerá ni la incluirá en el perfil, aunque otras herramientas del Analizador de gráficos la reconozcan y la usen.
   
 > [!NOTE]
 >  Esto se aplica solo a las llamadas de la API Direct3D que utilice, no a los niveles de características.
+
+### <a name="warp"></a>WARP  
+ El Análisis de fotogramas está diseñado para perfilar y mejorar el rendimiento de la representación en hardware real. Ejecutar análisis de fotogramas en dispositivos WARP no evitarse, pero no es normalmente la pena puesto WARP se ejecuta en una CPU de última generación es más lento que incluso el menor GPU modernas, y el rendimiento de WARP puede variar en gran medida según la CPU está ejecutando en.  
   
 ##  <a name="Variants"></a>Variantes  
  Cada cambio que hace que el análisis de fotogramas en la forma en que se representa un fotograma durante la reproducción se conoce como un *variante*. Las variantes que el Análisis de fotogramas examina corresponden a cambios comunes relativamente fáciles que puede realizar para mejorar el rendimiento de la representación o la calidad visual de la aplicación, por ejemplo, reducir el tamaño de las texturas, usar compresión de textura o permitir diferentes tipos de suavizado de contorno. Las variantes reemplazan el contexto de representación y los parámetros habituales de la aplicación. A continuación, se muestra un resumen:  
@@ -185,9 +181,9 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 |Variante|Descripción|  
 |-------------|-----------------|  
 |**Tamaño de la ventanilla de 1 x 1**|Reduce las dimensiones de la ventanilla de todos los objetivos de presentación a 1x1 píxeles.<br /><br /> Para obtener más información, vea [variante de tamaño de 1 x 1 Viewport](1x1-viewport-size-variant.md)|  
-|**0 x MSAA**|Deshabilita el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
-|**2 x MSAA**|Habilita dos veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
-|**4 x MSAA**|Habilita cuatro veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|Deshabilita el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Habilita dos veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Habilita cuatro veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
 |**Filtro de textura de punto**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtro de textura de punto) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y variantes de filtrado de textura anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtro de textura bilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtro de textura bilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y variantes de filtrado de textura anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Textura trilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtro de textura trilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y variantes de filtrado de textura anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -21,18 +22,20 @@ helpviewer_keywords:
 - '#pragma directives, code analysis'
 - C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 28a5e13c2c56c7ecdb65efdfc1bd0b3c6eb47bfc
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2261921e4266f1b58ed31650ac1ff1bb7c028942
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="code-analysis-for-cc-overview"></a>Análisis de código para obtener información general de C/C++
+# <a name="code-analysis-for-cc-overview"></a>Análisis de código para información general de C o C++
+
 La herramienta Análisis de código de C/C++ proporciona a los desarrolladores información sobre posibles defectos en su código fuente de C/C++. Entre los errores de codificación más comunes detectados por esta herramienta, destacan las saturaciones de búfer, los casos de memoria no inicializada, la desreferenciación del puntero NULL, así como las pérdidas de memoria y recursos.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>Integración del entorno de desarrollo integrado (IDE)  
@@ -48,9 +51,14 @@ La herramienta Análisis de código de C/C++ proporciona a los desarrolladores i
  Puede exigir que todas las origen código protecciones cumplan determinadas directivas. En concreto, desea asegurarse de que se ejecutan un análisis como un paso de la compilación local más reciente. Para obtener más información acerca de cómo habilitar una directiva de protección de análisis de código, vea [crear y usar directivas análisis de código en el repositorio](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Integración de Team Build  
- Puede utilizar las características integradas del sistema de compilación para ejecutar la herramienta de análisis de código como un paso de la [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proceso de compilación. Para obtener más información, consulte [de compilación y la versión](/vsts/build-release/index).  
+ Puede utilizar las características integradas del sistema de compilación para ejecutar la herramienta de análisis de código como un paso de la [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proceso de compilación. Para obtener más información, consulte [Build and release](/vsts/build-release/index) (Compilación y publicación).  
   
 ## <a name="command-line-support"></a>Compatibilidad de línea de comandos  
  Además de la integración completa en el entorno de desarrollo, los desarrolladores también pueden utilizar la herramienta de análisis desde la línea de comandos, tal como se muestra en el ejemplo siguiente:  
   
  `C:\>cl /analyze Sample.cpp`
+
+## <a name="see-also"></a>Vea también
+
+[Analizar la calidad del controlador mediante herramientas de análisis de código](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)  
+[Análisis de código para las advertencias de controladores](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

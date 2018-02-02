@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
 ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f9b0f8e36cddca227062550775c9f6098aeb1c6f
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en previsión de defectos
 Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles defectos de código mediante la herramienta de análisis de código para código de C o C++.  
@@ -85,9 +87,9 @@ Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles
   
 3.  Corregir esta advertencia mediante la macro SUCCEEDED. El código debe ser similar al código siguiente:  
   
-    ```  
-    if (SUCCEEDED (ReadUserAccount()) )  
-    ```  
+   ```cpp
+   if (SUCCEEDED (ReadUserAccount()) )  
+   ```  
   
 4.  En el **lista de errores**, haga doble clic en la siguiente advertencia:  
   
@@ -95,17 +97,17 @@ Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles
   
 5.  Corregir esta advertencia mediante la comprobación de igualdad. El código debe ser similar al código siguiente:  
   
-    ```  
-    if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
-    ```  
+   ```cpp
+   if ((len == ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))  
+   ```  
   
 ### <a name="to-treat-warning-as-an-error"></a>Tratar advertencia como un error  
   
 1.  En el archivo Bug.cpp, agregue las siguientes `#pragma` instrucción al principio del archivo para tratar la advertencia C6001 como un error:  
   
-    ```  
-    #pragma warning (error: 6001)  
-    ```  
+   ```cpp
+   #pragma warning (error: 6001)  
+   ```  
   
 2.  Vuelva a generar el proyecto CodeDefects.  
   
@@ -141,17 +143,14 @@ Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles
   
 8.  Para corregir esta advertencia, utilice una instrucción 'if' para probar el valor devuelto. El código debe ser similar al código siguiente:  
   
-     `if (NULL != newNode)`  
-  
-     `{`  
-  
-     `newNode->data = value;`  
-  
-     `newNode->next = 0;`  
-  
-     `node->next = newNode;`  
-  
-     `}`  
+   ```cpp
+   if (NULL != newNode)  
+   {  
+   newNode->data = value;  
+   newNode->next = 0;  
+   node->next = newNode;  
+   }
+   ```
   
 9. Recompile el proyecto de anotaciones.  
   
@@ -161,15 +160,13 @@ Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles
   
 1.  Anotar parámetros formales y devolver el valor de la función `AddTail` utilizando las condiciones Pre y Post como se muestra en este ejemplo:  
   
-     `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
-  
-     `(`  
-  
-     `[SA_Pre(Null=SA_Maybe)] LinkedList* node,`  
-  
-     `int value`  
-  
-     `)`  
+   ```cpp
+   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
+   (
+   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
+   int value
+   )
+   ```
   
 2.  Recompile el proyecto de anotaciones.  
   
@@ -181,19 +178,21 @@ Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles
   
 4.  Para corregir esta advertencia, utilice una instrucción 'if' para probar el valor devuelto. El código debe ser similar al código siguiente:  
   
-    ```  
-    . . .  
-    LinkedList *newNode = NULL;   
-    if (NULL == node)  
-    {  
-         return NULL;  
+   ```cpp
+   . . .  
+   LinkedList *newNode = NULL;   
+   if (NULL == node)  
+   {  
+        return NULL;  
         . . .  
-    }  
-    ```  
+   }  
+   ```  
   
 5.  Recompile el proyecto de anotaciones.  
   
      El proyecto se compila sin errores ni advertencias.  
   
-## <a name="see-also"></a>Vea también  
- [Tutorial: Analizar código administrado en previsión de defectos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+## <a name="see-also"></a>Vea también
+
+[Tutorial: Analizar código administrado en previsión de defectos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)  
+[Análisis de código para C/C ++](../code-quality/code-analysis-for-c-cpp-overview.md)

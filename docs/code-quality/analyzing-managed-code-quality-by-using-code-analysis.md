@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - code analysis,managed code
 - managed code analyis
 ms.assetid: 68510a55-da51-4381-81a5-0feba76b8b4f
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 2008ac649302d87cc2d45274de3fdb1981aa571d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>Analizar la calidad del código administrado mediante el análisis de código
 Puede usar las herramientas de análisis de código de Visual Studio para detectar posibles problemas del código, como un acceso a datos no seguro, infracciones de uso y problemas de diseño. El análisis de código funciona en aplicaciones de .NET Framework, nativas (C y C++) y de base de datos. Análisis de código para código administrado organiza las reglas en *conjuntos de reglas* que tienen como destino problemas específico de codificación.  

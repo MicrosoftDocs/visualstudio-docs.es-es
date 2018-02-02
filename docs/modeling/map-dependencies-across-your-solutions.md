@@ -29,12 +29,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Asignar dependencias de sus soluciones
 
@@ -63,13 +64,13 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
   
  **Las dependencias de código se pueden asignar en los siguientes lenguajes**:  
   
--   Visual C# .NET o Visual Basic .NET en una solución o ensamblados (.dll o .exe)  
+-   Visual C# o Visual Basic en una solución o ensamblados (.dll o .exe)  
   
 -   Código de C o C++ nativo o administrado en proyectos de Visual C++, archivos de encabezado (.h o `#include`) o archivos binarios  
   
 -   Proyectos y ensamblados de X++ creados desde módulos de .NET para Microsoft Dynamics AX  
   
- **Nota:** para los proyectos que no sean de C# o Visual Basic. NET, no hay tantas opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos desde el Explorador de soluciones, la Vista de clases y el Examinador de objetos.  
+ **Nota:** para proyectos que no sean de C# o Visual Basic, hay tantas opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos desde el Explorador de soluciones, la Vista de clases y el Examinador de objetos.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Para ver las dependencias generales de la solución  
   
@@ -286,7 +287,7 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 ##  <a name="SeeSourceHeader"></a> Ver las dependencias entre los archivos de código fuente de C y C++ y los archivos de encabezado  
  Si desea crear mapas más completos para proyectos de C++, establezca en dichos proyectos la opción del compilador de información de examen (**/FR**). Si no, aparece un mensaje que le solicita establecer esta opción. Si selecciona **Aceptar**, la opción se establece solamente en el mapa actual. Si lo desea, puede ocultar el mensaje para todos los mapas posteriores. Si oculta este mensaje, puede hacer que aparezca de nuevo. Establezca la siguiente clave del registro en `0` o elimine la clave:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Al abrir una solución que contiene proyectos de Visual C++, podría llevar algún tiempo la actualización de la base de datos de IntelliSense. Durante este tiempo, quizás no pueda crear mapas de código para los archivos de encabezado (.h o `#include`) hasta que la base de datos de IntelliSense finalice la actualización. Puede supervisar el progreso de actualización en la barra de estado de Visual Studio. Para resolver los problemas o los mensajes que aparecen porque ciertas opciones de IntelliSense están deshabilitadas, vea el artículo sobre [solución de problemas de mapas de código C y C++](#Troubleshooting).  
   

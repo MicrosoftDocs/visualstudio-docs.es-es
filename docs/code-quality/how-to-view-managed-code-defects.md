@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - code analysis, viewing managed code defects
 - code, viewing defects
 ms.assetid: 58aa6c23-d0b3-414d-930d-82e676cb7e5f
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 4b509a1943419e9e12f13575da2fb7f9991c7ee5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/31/2018
 ---
 # <a name="how-to-view-managed-code-defects"></a>Cómo: Ver defectos de código administrado
 En el análisis de código, errores, advertencias y mensajes se notifican en la ventana de análisis de código. La ventana de análisis de código aparece automáticamente cuando se ejecuta el análisis de código en un proyecto o solución.  

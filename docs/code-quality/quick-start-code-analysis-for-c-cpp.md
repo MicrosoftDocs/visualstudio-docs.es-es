@@ -10,34 +10,19 @@ ms.topic: article
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
-caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed2f4acfe185039950d627092839b14234cadccd
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C++
-Se puede mejorar la calidad de la aplicación si se analiza con regularidad el código de C o C++. Esto ayuda a descubrir problemas comunes, infracciones de los procedimientos recomendados de programación o defectos que son difíciles de detectar con pruebas. Las advertencias de análisis de código difieren de los errores y las advertencias del compilador porque el análisis de código busca patrones de código específicos que, a pesar de ser válidos, podrían crearle problemas a usted o a otras personas que usen el código.  
-  
-## <a name="in-this-topic"></a>En este tema  
-  
--   [Configurar conjuntos de reglas para un proyecto](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
-  
--   [Ejecutar análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
-  
--   [Analizar y resolver las advertencias de análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
-  
--   [Suprimir las advertencias de análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
-  
--   [Crear elementos de trabajo para el código de las advertencias del análisis](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
-  
--   [Buscar y filtrar resultados del análisis de código](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
+# <a name="quickstart-code-analysis-for-cc"></a>Inicio rápido: Análisis de código para C/C ++
+Se puede mejorar la calidad de la aplicación si se analiza con regularidad el código de C o C++. Esto ayuda a descubrir problemas comunes, infracciones de los procedimientos recomendados de programación o defectos que son difíciles de detectar con pruebas. Las advertencias del análisis de código son distintas de los errores y advertencias del compilador, porque el análisis de código busca patrones de código concretos que, aunque son válidos, pueden crear problemas para ti o para otros usuarios del código.
   
 ##  <a name="BKMK_ConfigureRuleSets"></a>Configurar conjuntos de reglas para un proyecto  
   
@@ -85,20 +70,18 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
   
 -   En el **generar** menú, elija **ejecutar análisis de código en** *nombre del proyecto*.  
   
- La solución o proyecto se compila y se ejecuta el análisis de código. Los resultados aparecen en la ventana Análisis de código.  
+ La solución o proyecto se compila y se ejecuta el análisis de código. Los resultados aparecen en la lista de errores.  
   
-##  <a name="BKMK_Analyze"></a>Analizar y resolver las advertencias de análisis de código  
- Para analizar una advertencia concreta, elija el título en la ventana Análisis de código. La advertencia se expande para mostrar la información adicional sobre el problema. Cuando es posible, el análisis de código muestra los números de línea y la lógica de análisis que condujeron a la advertencia. Para obtener información detallada sobre la advertencia, incluidas las soluciones posibles al problema, elija el identificador de la advertencia para mostrar el tema de ayuda de la biblioteca de MSDN correspondiente al mensaje.  
-  
- Cuando se expande una advertencia, la línea de código que la causó se resalta en el editor de código de Visual Studio.  
-  
- Una vez comprendido el problema, puede resolverlo en el código. A continuación vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en la ventana de análisis de código y que la corrección no genera nuevas advertencias.  
-  
-> [!TIP]
->  Puedes repetir el análisis de código desde la ventana Análisis de código. Elija la **analizar** botón y elija el ámbito del análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.  
-  
+##  <a name="BKMK_Analyze"></a>Analizar y resolver las advertencias de análisis de código
+
+Para analizar una advertencia concreta, elija el título de la advertencia en la lista de errores. La advertencia se expande para mostrar la información adicional sobre el problema. Cuando es posible, el análisis de código muestra los números de línea y la lógica de análisis que condujeron a la advertencia. Para obtener información detallada sobre la advertencia, incluidas las soluciones posibles al problema, elija el identificador de advertencia para mostrar el tema de ayuda en pantalla correspondiente.
+
+Cuando se selecciona una advertencia, la línea de código que produjo la advertencia se resalta en el editor de código de Visual Studio.
+
+Cuando haya entendido el problema, podrá resolverlo en el código. A continuación, vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en la lista de errores y que la corrección no generó las advertencias nuevo.
+
 ##  <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código  
- A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puedes suprimir advertencias individuales de modo que ya no aparezcan en la ventana Análisis de código.  
+ A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puede suprimir advertencias individuales para que ya no aparezcan en la lista de errores.  
   
  Para suprimir una advertencia:  
   
@@ -115,19 +98,22 @@ Se puede mejorar la calidad de la aplicación si se analiza con regularidad el c
   
  **Para crear un elemento de trabajo para una o varias advertencias de código de C o C++**  
   
-1.  En la ventana de análisis de código, expanda y seleccione las advertencias.  
+1.  En la lista de errores, expanda y seleccione las advertencias.  
   
-2.  En el menú contextual para las advertencias, elija **crear elemento de trabajo**y, a continuación, elija el tipo de elemento de trabajo.  
+2.  En el menú contextual para las advertencias, elija **crear elemento de trabajo**y, a continuación, elija el tipo de elemento de trabajo.
   
 3.  Visual Studio crea un único elemento de trabajo para las advertencias seleccionadas y muestra el elemento de trabajo en una ventana de documento del IDE.  
   
 4.  Agregar información adicional y, a continuación, elija **Guardar elemento de trabajo**.  
   
-##  <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código  
- Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.  
+##  <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código
+
+Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.  
   
-1.  **Para filtrar las advertencias por título o identificador de advertencia**: escriba la palabra clave en el **filtro** cuadro de texto.  
+- **Para filtrar las advertencias por título o identificador de advertencia**: escriba la palabra clave en el cuadro de búsqueda.
   
-2.  **Para filtrar las advertencias por proyecto**: en una solución multiproyecto, elija uno o varios proyectos en la lista en la parte superior derecha de la ventana de análisis de código. Elija el nombre de la solución para mostrar todas las advertencias.  
-  
-3.  **Para filtrar las advertencias por gravedad**: de forma predeterminada, los mensajes de análisis de código tienen asignados una gravedad de **advertencia**. Puede asignar la gravedad de uno o más mensajes como **Error** en una regla personalizada establecido. Elija **advertencia** o **Error** para mostrar únicamente los mensajes que tienen asignados la gravedad respectiva. Elija **todos los** para mostrar todos los mensajes.
+- **Para filtrar las advertencias por gravedad**: de forma predeterminada, los mensajes de análisis de código tienen asignados una gravedad de **advertencia**. Puede asignar la gravedad de uno o más mensajes como **Error** en una regla personalizada establecido. En el **gravedad** columna de la **lista de errores**, elija la flecha de lista desplegable y, a continuación, en el icono de filtro. Elija **advertencia** o **Error** para mostrar únicamente los mensajes que tienen asignados la gravedad respectiva. Elija **seleccionar todo** para mostrar todos los mensajes.
+
+## <a name="see-also"></a>Vea también
+
+[Análisis de código para C/C ++](../code-quality/code-analysis-for-c-cpp-overview.md)
