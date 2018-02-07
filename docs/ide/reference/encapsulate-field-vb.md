@@ -10,14 +10,17 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.encapsulatefield
-dev_langs: VB
-ms.workload: multiple
+f1_keywords:
+- vs.csharp.refactoring.encapsulatefield
+dev_langs:
+- VB
+ms.workload:
+- multiple
 ms.openlocfilehash: 010a297745ed6028f7ee127fffc210097d6d26f5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="encapsulate-a-field-in-visual-basic"></a>Encapsulamiento de un campo en Visual Basic
 

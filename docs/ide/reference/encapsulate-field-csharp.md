@@ -10,14 +10,17 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.encapsulatefield
-dev_langs: csharp
-ms.workload: dotnet
+f1_keywords:
+- vs.csharp.refactoring.encapsulatefield
+dev_langs:
+- csharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: 383f4e5bac2072b77d8e1d862cd4a1b859a57f7c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="encapsulate-a-field-in-c"></a>Encapsulamiento de un campo en C# #
 

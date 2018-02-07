@@ -13,13 +13,15 @@ manager: ghogen
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
-dev_langs: csharp
-ms.workload: dotnet
+dev_langs:
+- csharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: 44aaf3f4a570600b715d6d54f5fd80da84611b94
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="change-a-method-signature-in-c"></a>Cambio de firma del método en C# #
 

@@ -4,23 +4,26 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.XAMLDesigner
-ms.assetid: ad3820b2-0d95-4807-a75c-c3467ed973a3
-caps.latest.revision: "1"
+ms.topic: reference
+f1_keywords:
+- VS.ToolsOptionsPages.XAMLDesigner
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: bf71bb6f2d52159ab203d14c690a73525af091ae
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="xaml-designer-options-page"></a>Página de opciones del Diseñador XAML
+
 Use la página de opciones del **Diseñador XAML** para especificar cómo se aplica formato a los elementos y atributos en los documentos XAML. Para abrir esta página, seleccione pulse el menú **Herramientas** y, después, elija **Opciones**. Para tener acceso a la página de propiedades **Diseñador XAML**, pulse el nodo **Diseñador XAML**. La configuración para el diseñador XAML se aplica cuando abre el documento. De esta manera, si realiza cambios en la configuración, necesita cerrar y volver a abrir Visual Studio para ver los cambios.
 
 > [!NOTE]
@@ -100,7 +103,7 @@ Use esta configuración para determinar si los efectos se representan al editar 
 |**Efectos de representación**|Especifica si los efectos se representan al editar archivos XAML en el diseñador XAML con Blend.|  
 |**Umbral de zoom**|Especifica el porcentaje de zoom en el que se representan los efectos cuando la casilla **Efectos de representación** está seleccionada. Si aplica zoom más allá de esta configuración, los efectos ya no se representan en el diseñador XAML.|  
 
-## <a name="see-also"></a>Vea también  
- [XAML en WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
- [Cómo: Cambiar la configuración de la vista XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [Tutoriales para el uso de XAML y código](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>Vea también
+
+[XAML en WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)  
+[Tutorial: Mi primera aplicación de escritorio WPF](../../designers/walkthrough-my-first-wpf-desktop-application2.md)

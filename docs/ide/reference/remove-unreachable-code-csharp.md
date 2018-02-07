@@ -10,13 +10,15 @@ ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-dev_langs: csharp
-ms.workload: dotnet
+dev_langs:
+- csharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: 12b6910aad6399b72b3e4bc10e6b857cc98c09bb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="remove-unreachable-code-in-c"></a>Retirada de código inaccesible en C# #
 

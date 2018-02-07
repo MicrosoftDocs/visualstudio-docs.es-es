@@ -5,12 +5,7 @@ ms.date: 09/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- JScript
-- VB
-- CSharp
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
@@ -19,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: abde071bd67ab3f6a65891d347b9214f6dd5257b
-ms.sourcegitcommit: 94162a6b0440312cd71bc0c512daef9f122550f3
+ms.openlocfilehash: 5847c97f3fddea65b00c35a5a0f4d5665329ae7e
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Escribir código en el editor de código
 
@@ -68,7 +63,6 @@ Puede encontrar un número de características avanzadas en el submenú **Editar
 |Poner en minúsculas|Cambia todos los caracteres de la selección a minúsculas o, si no hay ninguna selección, cambia el carácter situado en el punto de inserción a minúsculas.|
 |Subir líneas seleccionadas|Mueve la línea seleccionada una línea hacia arriba. Método abreviado: Alt + flecha arriba.|
 |Bajar líneas seleccionadas|Mueve la línea seleccionada una línea hacia abajo. Método abreviado: Alt + flecha abajo.|
-|Validar documento|Valida los archivos de código JScript.|
 |Eliminar espacio en blanco horizontal|Elimina las tabulaciones o los espacios al final de la línea actual.|
 |Ver espacios en blanco|Muestra los espacios como puntos elevados y las tabulaciones como flechas. El final de un archivo se muestra como un glifo rectangular. Si está seleccionada la opción **Herramientas/Opciones/Editor de texto/Todos los lenguajes/Ajuste automático de línea/Mostrar glifos visibles para ajuste automático de línea** , también se muestra ese glifo.|
 |Ajuste automático de línea|Hace que todas las líneas de un documento se vean en la ventana de código. Puede activar o desactivar el ajuste automático de línea en la configuración Editor de texto/Todos los lenguajes (**Herramientas/Opciones/Editor de texto/Todos los lenguajes**).|

@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/17/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: bebff2ad-25b6-4adc-8762-60d23bdd639a
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 990f87cd0f1abf9d4f62ecd321ef038d689b75f4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="implement-an-interface-in-visual-basic"></a>Implementación de una interfaz en Visual Basic
 **Qué:** Le permite generar inmediatamente el código necesario para implementar una interfaz. 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/17/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.devlang: VB
@@ -12,14 +13,17 @@ ms.assetid: ebc361fe-d9b1-4c7a-ae28-5e71b5775460
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vsl.GenerateFromUsage
-dev_langs: VB
-ms.workload: multiple
+f1_keywords:
+- vsl.GenerateFromUsage
+dev_langs:
+- VB
+ms.workload:
+- multiple
 ms.openlocfilehash: 4a4ff45a59fb53964a365f31cc4d5f48a5b159dc
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Generación de una clase o tipo en Visual Basic
 **Qué:** Le permite generar el código de inmediato para una clase o un tipo. 

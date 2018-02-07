@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -50,7 +50,7 @@ Para obtener más información, vea [Installing Python Support for Visual Studio
 
 1. Cree un proyecto de Python en Visual Studio. Para ello, seleccione **Archivo > Nuevo > Proyecto**. Busque “Python”, seleccione la plantilla **Aplicación de Python**, dele un nombre, asígnele una ubicación y seleccione **Aceptar**.
 
-1. En el archivo `.py` del proyecto, pegue el código siguiente, que realiza una prueba comparativa del cálculo de una tangente hiperbólica (implementada sin usar la biblioteca matemática para facilitar la comparación). No dude en escribir el código manualmente para experimentar algunas de las [características de edición de Python](code-editing.md).
+1. En el archivo `.py` del proyecto, pegue el código siguiente, que realiza una prueba comparativa del cálculo de una tangente hiperbólica (implementada sin usar la biblioteca matemática para facilitar la comparación). No dude en escribir el código manualmente para experimentar algunas de las [características de edición de Python](editing-python-code-in-visual-studio.md).
 
     ```python
     from itertools import islice
@@ -289,7 +289,7 @@ Visual Studio admite la depuración de código Python y C++ de forma conjunta.
 
     ![Detener en un punto de interrupción en el código de C++](media/cpp-debugging.png)
 
-1. En este punto puede recorrer el código de C++, examinar las variables, etc. Estas características se detallan en [Depuración conjunta de Python y C++](debugging-mixed-mode.md).
+1. En este punto puede recorrer el código de C++, examinar las variables, etc. Estas características se detallan en [Depuración conjunta de Python y C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
 ## <a name="alternative-approaches"></a>Enfoques alternativos
 

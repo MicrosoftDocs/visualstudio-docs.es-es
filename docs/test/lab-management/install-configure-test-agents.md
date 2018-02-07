@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
+helpviewer_keywords:
+- configure test agents, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 495f14643245f17a2e7fcef1e21d2fc1fe978a46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>Instalar y configurar agentes de prueba
 
@@ -81,7 +83,7 @@ En la tabla siguiente se muestran los escenarios que se admiten en Agentes para 
 | Escenarios admitidos en Agentes para Visual Studio 2013 | Alternativa en TFS y TS |
 | --- | --- |
 | Flujos de trabajo de compilación-implementación-prueba en Visual Studio | Los usuarios pueden usar una [definición de compilación](https://www.visualstudio.com/team-services/continuous-integration/) (no una compilación XAML) para compilar, implementar y probar escenarios en TFS. |
-| Pruebas de carga (pruebas de rendimiento) con máquinas remotas locales | Use Test Controller/Test Agents 2013 Update 5 para ejecutar pruebas de carga locales. [Más información](https://msdn.microsoft.com/en-us/library/ff400223.aspx). |
+| Pruebas de carga (pruebas de rendimiento) con máquinas remotas locales | Use Test Controller/Test Agents 2013 Update 5 para ejecutar pruebas de carga locales. [Más información](https://msdn.microsoft.com/library/ff400223.aspx). |
 | Ejecución remota de pruebas automatizadas desde Microsoft Test Manager con un entorno de laboratorio | Actualmente no existe alternativa para este escenario. Le recomendamos que use la tarea Ejecutar pruebas funcionales en definiciones de versión y compilación (no en una compilación XAML) para ejecutar pruebas de manera remota. |
 | Desarrolladores ejecutando pruebas remotas en Visual Studio | Ya no se admite. |
 

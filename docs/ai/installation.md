@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.workload: multiple
-ms.openlocfilehash: 55524900d59bf3631d724e2cb142e649bf82c839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db07adc39f807b4dfc938ddf599bd7f83378f475
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installation"></a>Instalación
 
@@ -117,7 +118,7 @@ Luego, debemos comprobar que Python 3.5 se ha instalado correctamente y actualiz
 ### <a name="python-on-visual-studio"></a>Python en Visual Studio
 
 Python es totalmente compatible con Visual Studio a través de extensiones.
-Obtenga más información sobre la instalación de [Python en Visual Studio](https://docs.microsoft.com/visualstudio/python/installation).
+Obtenga más información sobre la instalación de [Python en Visual Studio](../python/installing-python-support-in-visual-studio.md).
 
 ### <a name="numpy-and-scipy"></a>NumPy y SciPy
 

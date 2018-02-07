@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/17/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 96cfed7f-f090-4369-8a85-2dcd4c7cf12b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 135c1edc6719c567e21496f047af45b7ce311d13
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="implement-an-abstract-class-in-visual-basic"></a>Implementación de una clase abstracta en Visual Basic
 **Qué:** Le permite generar inmediatamente el código necesario para implementar una clase abstracta. 

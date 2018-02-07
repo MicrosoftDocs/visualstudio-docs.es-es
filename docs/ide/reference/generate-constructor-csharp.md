@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f2280cfa-a9ec-4b56-9d94-c8fd384db980
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: b6e73b3b012547e98934bbcd76d1ee2eb0f3324d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>Generación de un constructor en C# #
 **Qué:** Le permite generar el código de inmediato para un nuevo constructor en una clase. 

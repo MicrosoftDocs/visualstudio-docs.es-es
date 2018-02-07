@@ -10,14 +10,17 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-f1_keywords: vs.csharp.refactoring.rename
-dev_langs: CSharp
-ms.workload: dotnet
+f1_keywords:
+- vs.csharp.refactoring.rename
+dev_langs:
+- CSharp
+ms.workload:
+- dotnet
 ms.openlocfilehash: e1325de81e16b0e381f07af4d8073d0a3fa4330c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="rename-a-code-symbol-in-c"></a>Cambio de nombre de un símbolo de código en C# #
 

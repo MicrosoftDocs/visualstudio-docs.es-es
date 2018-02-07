@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/17/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c11888e0-31b1-44cc-9037-98d3f8b3623b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 766311f0ba165c87e61bb873baa3ab2f0b2d1402
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="generate-a-field-property-or-local-in-visual-basic"></a>Generación de un campo, una propiedad o un valor local en Visual Basic
 **Qué:** Le permite generar inmediatamente el código para un campo, una propiedad o un valor local no declarados previamente. 

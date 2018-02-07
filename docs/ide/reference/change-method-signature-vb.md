@@ -13,13 +13,15 @@ manager: ghogen
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
-dev_langs: VB
-ms.workload: multiple
+dev_langs:
+- VB
+ms.workload:
+- multiple
 ms.openlocfilehash: daee27902bd602dfe1d67533ce45f42f44a3aba4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="change-a-method-signature-in-visual-basic"></a>Cambio de firma del método en Visual Basic
 

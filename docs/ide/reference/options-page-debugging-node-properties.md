@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 690eb875b0b9251dddcb36c4ad7ded17c36b67cb
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de opciones, Propiedades de nodo Depuración
 En las siguientes tablas, se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Depuración**, `DTE.Properties("Debugging", <Property Page>)`, del cuadro de diálogo **Opciones**.  
@@ -39,7 +41,7 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 |ShowAllMembers|Get/Set (Boolean)|Para los objetos que no son de usuario, determina si el depurador muestra todos los miembros de objeto en las ventanas de variables. Esta opción no tiene ningún efecto a menos que esté habilitado Solo mi código.|  
 |WarnIfNoUserCode|Get/Set (Boolean)|Determina si el depurador emite una advertencia cuando el usuario intenta asociarse a un proceso que no tiene ningún código de usuario. Esta opción no tiene ningún efecto a menos que esté habilitado Solo mi código.|  
 |EnablePropertyEvaluation|Get/Set (Boolean)|Determina si el depurador evalúa de forma automática las propiedades y llamadas a función implícitas en código administrado.|  
-|CallStringConversion|Get/Set (Boolean)|Determina si el depurador llama de forma implícita a una función de conversión de cadenas en objetos de las ventanas de variables. Esta opción se aplica solo al código de C# y JScript.|  
+|CallStringConversion|Get/Set (Boolean)|Determina si el depurador llama de forma implícita a una función de conversión de cadenas en objetos de las ventanas de variables.|  
 |EnableSourceServer|Get/Set (Boolean)|Determina si el depurador puede acceder al código desde un servidor de origen.|  
 |PrintSourceServerDiagnostics|Get/Set (Boolean)|Determina si la ventana de salida muestra mensajes de diagnóstico relacionados con el servidor de origen. Esta opción no tiene ningún efecto a menos que se habilite el acceso al servidor de origen.|  
 |HighlightEntireLine|Get/Set (Boolean)|Determina si el depurador resalta una línea completa para los puntos de interrupción y la instrucción actual.|  

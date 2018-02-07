@@ -10,12 +10,13 @@ ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 4b7b9b1ba52bed5d2bdf042db0149d799c489a7d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/06/2018
 ---
 # <a name="move-a-type-to-a-matching-file-in-c"></a>Traslado de un tipo a un archivo coincidente en Visual Basic #
 
