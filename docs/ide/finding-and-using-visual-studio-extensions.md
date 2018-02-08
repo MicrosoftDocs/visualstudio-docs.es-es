@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 06/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.ExtensionManager
+f1_keywords:
+- vs.ExtensionManager
 helpviewer_keywords:
 - install extensions
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6ed49a18c7497eefc21a7fe7bfe9d35003863a5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Búsqueda y uso de extensiones de Visual Studio
 
@@ -31,7 +34,7 @@ Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro
 Puede utilizar el cuadro de diálogo **Extensiones y actualizaciones** para instalar extensiones y ejemplos de Visual Studio desde sitios web y otras ubicaciones y, después, habilitarlas, deshabilitarlas, actualizarlas o desinstalarlas. (**Herramientas / Extensiones y actualizaciones**o escriba **Extensiones** en la ventana **Inicio rápido** ). El cuadro de diálogo también muestra las actualizaciones de los ejemplos instalados y extensiones. También puede descargar extensiones de sitios web, o puede obtenerlas de otros desarrolladores.
 
 > [!NOTE]
-> A partir de Visual Studio 2015, las extensiones hospedadas en Visual Studio Marketplace se actualizarán automáticamente.  Puede cambiar esta configuración en el cuadro de diálogo **Extensiones y actualizaciones** .  Vea la sección sobre **Actualizaciones automáticas de extensión** a continuación para obtener más información.
+> A partir de Visual Studio 2015, las extensiones hospedadas en Visual Studio Marketplace se actualizan automáticamente. Puede cambiar esta configuración en el cuadro de diálogo **Extensiones y actualizaciones** .  Vea la sección sobre **Actualizaciones automáticas de extensión** a continuación para obtener más información.
 
 ## <a name="finding-visual-studio-extensions"></a>Buscar extensiones de Visual Studio
 
@@ -66,24 +69,26 @@ Si desea deshabilitar las actualizaciones automáticas, puede deshabilitar la ca
 > [!NOTE]
 > A partir de Visual Studio 2015 Update 2, puede especificar (en **Herramientas / Opciones / Entorno / Extensiones y actualizaciones**) si quiere actualizaciones automáticas para las extensiones por usuario, todas las extensiones de usuario o ambas (la configuración predeterminada).
 
-## <a name="extension-crash-notifications"></a>Notificaciones de bloqueo de extensiones
+## <a name="extension-crashunresponsiveness-notifications"></a>Notificaciones de bloqueo/falta de respuesta de una extensión
 
-En Visual Studio 2017 (versión 15.3: versión preliminar), Visual Studio le notifica si sospecha que una extensión estaba implicada en un bloqueo durante una sesión anterior. Cuando Visual Studio se bloquea, almacena la pila de excepciones. La próxima vez que Visual Studio se inicia, examina la pila, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco pertenece a un módulo que forma parte de una extensión habilitada e instalada, le notifica con un mensaje como:
+Como novedad en **Visual Studio 2017 (versión 15.3)**, Visual Studio le notifica si sospecha que una extensión estaba implicada en un bloqueo durante una sesión anterior. Cuando Visual Studio se bloquea, almacena la pila de excepciones. La próxima vez que Visual Studio se inicia, examina la pila, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco pertenece a un módulo que forma parte de una extensión habilitada e instalada, muestra una notificación.
 
-"Una sesión anterior ha finalizado de manera inesperada. Deshabilitar la extensión "nombre_extensión" puede ayudar a evitar problemas similares".
+Como novedad en **Visual Studio 2017 (versión 15.6, versión preliminar 3)**, Visual Studio también le notifica si sospecha que una extensión está causando la falta de respuesta de la interfaz de usuario.
 
-Puede ignorar la notificación o realizar una de las acciones siguientes:
+Cuando aparezcan estas notificaciones, puede ignorarlas o realizar una de las acciones siguientes:
 
 - Pulse **Deshabilitar esta extensión**. Visual Studio deshabilita la extensión y le permite conocer si necesita reiniciar su sistema para que la deshabilitación surta efecto. Puede volver a habilitar la extensión en el cuadro de diálogo **Extensiones y actualizaciones** si quiere.
 
-- Pulse **No mostrar de nuevo para esta extensión**. El IDE ya no mostrará notificaciones de los bloqueos asociados con esta extensión, pero mostrará notificaciones de los bloqueos asociados con otras extensiones.
+- Elija **No volver a mostrar este mensaje**. 
+  - Si la notificación se refiere a un bloqueo en una sesión anterior, Visual Studio ya no mostrará una notificación cuando se produzca un bloqueo asociado a esta extensión. Visual Studio seguirá mostrando notificaciones cuando la falta de respuesta pueda estar asociada con esta extensión, o para los bloqueos o faltas de respuesta que puedan estar asociados a otras extensiones. 
+  - Si la notificación se refiere a una falta de respuesta, el IDE ya no mostrará una notificación cuando esa está extensión esté asociada a la falta de respuesta. Visual Studio seguirá mostrando notificaciones relacionadas con los bloqueos para esta extensión, y notificaciones relacionadas con bloqueos y faltas de respuesta para otras extensiones. 
 
-- Pulse **Más información** para ver este tema de ayuda en su explorador predeterminado.
+- Elija **Más información** para llegar a esta página.
 
-- Pulse el botón **X** al final de la notificación para descartarla. Si la misma extensión está implicada en un bloqueo en una sesión futura, la notificación aparecerá de nuevo.
+- Pulse el botón **X** al final de la notificación para descartarla. Aparecerá una nueva notificación para las instancias futuras de la extensión que estén asociadas con un bloqueo o falta de respuesta de la interfaz de usuario.
 
 > [!NOTE]
-> Una notificación de bloqueo significa solo que uno de los módulos de la extensión estaba en la pila del bloqueo. No necesariamente significa que la propia extensión ha provocado el bloqueo. Es posible que la extensión llamara a código que forma parte de Visual Studio y que ese código provocara el bloqueo. En cambio, la notificación puede seguir siendo útil si el escenario que ha provocado el bloqueo no es importante para usted. En este caso, deshabilitar la extensión evita el mismo bloqueo en el futuro sin afectar a su productividad.
+> Una notificación de bloqueo o falta de respuesta de la interfaz de usuario significa únicamente que uno de los módulos de la extensión estaba en la pila cuando la interfaz de usuario dejó de responder o cuando se produjo el bloqueo. No necesariamente significa que la propia extensión sea la causa. Es posible que la extensión llamara a código que forma parte de Visual Studio, lo que a su vez dio lugar a una falta de respuesta de la interfaz de usuario o a un bloqueo. Sin embargo, la notificación puede seguir siendo útil si el escenario que ha provocado la falta de respuesta de la interfaz de usuario el bloqueo no es importante para usted. En este caso, deshabilitar la extensión evita el mismo bloqueo o falta de respuesta de la interfaz de usuario en el futuro sin afectar a su productividad. 
 
 ## <a name="sample-master-copies-and-working-copies"></a>Copias maestras y copias de trabajo de muestra
 

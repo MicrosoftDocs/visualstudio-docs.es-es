@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e88e3999bdca7b926042685ca7bd2d561c12d5d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 
@@ -46,7 +46,7 @@ Los componentes de requisitos previos que aparecen en el cuadro de diálogo **Re
 
 |Elemento|Description|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Este paquete instala lo siguiente:<br /><br /> -   Versiones de .NET Framework 2.0, 3.0 y 3.5.<br />-   Compatibilidad con todas las versiones de .NET Framework en sistemas operativos de 32 bits (x86) y de 64 bits (x64).<br />-   Paquetes de idiomas para cada versión de .NET Framework que se instala con el paquete.<br />-   Service Pack para .NET Framework 2.0 y 3.0.<br /><br /> .NET Framework 3.0 se incluye con Windows Vista y .NET Framework 3.5 se incluye con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se requiere .NET Framework 3.5 para todos los proyectos de Visual Basic y Visual C# que se compilen para los sistemas operativos de 32 bits y cuya plataforma de destino esté establecida en **.NET Framework 3.5**, así como para los proyectos de Visual Basic y Visual C# compilados para sistemas operativos de 64 bits. (No se admite IA64.) Tenga en cuenta que, de manera predeterminada, los proyectos de Visual Basic y Visual C# se compilan para cualquier arquitectura de CPU. Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistribuir .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) e [Implementar requisitos previos de aplicaciones de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Este elemento está seleccionado de manera predeterminada.|
+|**.NET Framework 3.5 SP1**|Este paquete instala lo siguiente:<br /><br /> -   Versiones de .NET Framework 2.0, 3.0 y 3.5.<br />-   Compatibilidad con todas las versiones de .NET Framework en sistemas operativos de 32 bits (x86) y de 64 bits (x64).<br />-   Paquetes de idiomas para cada versión de .NET Framework que se instala con el paquete.<br />-   Service Pack para .NET Framework 2.0 y 3.0.<br /><br /> .NET Framework 3.0 se incluye con Windows Vista y .NET Framework 3.5 se incluye con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se requiere .NET Framework 3.5 para todos los proyectos de Visual Basic y C# que se compilen para los sistemas operativos de 32 bits y cuya plataforma de destino esté establecida en **.NET Framework 3.5**, así como para los proyectos de Visual Basic y C# compilados para sistemas operativos de 64 bits. (No se admite IA64.) Tenga en cuenta que, de manera predeterminada, los proyectos de Visual Basic y C# se compilan para cualquier arquitectura de CPU. Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) e [Implementar requisitos previos de aplicaciones de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Este elemento está seleccionado de manera predeterminada.|
 |**Microsoft .NET Framework 4.x**|Este paquete instala .NET Framework 4.x para las plataformas x86 y x64.|
 |**Microsoft System CLR Types para SQL Server 2014 (x64 y x86)**|Este paquete instala Microsoft System CLR Types para SQL Server 2014, tanto x64 como x86.|
 |**SQL Server 2008 R2 Express**|Este paquete instala Microsoft SQL Server 2008 R2 Express, una edición gratuita de Microsoft SQL Server 2008 R2, que representa la base de datos ideal para aplicaciones web pequeñas, de servidor o de escritorio. Se puede utilizar de forma gratuita para el desarrollo y producción. Es necesario [registrarse](http://go.microsoft.com/fwlink/?LinkId=130380) de manera gratuita para distribuir SQL Server 2008 R2 Express con la aplicación.|
@@ -60,6 +60,5 @@ Los componentes de requisitos previos que aparecen en el cuadro de diálogo **Re
 
 [Panel Publicar, Diseñador de proyectos](../../ide/reference/publish-page-project-designer.md)  
 [Requisitos previos para la implementación de aplicaciones](../../deployment/application-deployment-prerequisites.md)  
-[Redistribuir .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)  
 [Implementar requisitos previos de aplicaciones de 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
 [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)

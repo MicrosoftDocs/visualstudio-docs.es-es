@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Introducción al IDE de Visual Studio
 
@@ -30,7 +30,7 @@ También puede simplemente abrir un código que reciba desde prácticamente cual
 
 ### <a name="create-mobile-apps"></a>Creación de aplicaciones móviles
 
-Puede crear aplicaciones móviles nativas para diferentes plataformas utilizando Visual C# y Xamarin, o Visual C++, o aplicaciones híbridas que usan JavaScript con Apache Cordova. Puede escribir juegos móviles para Unity, Unreal, DirectX, Cocos y mucho más. Visual Studio incluye un emulador de Android que le ayudará a ejecutar y depurar aplicaciones de Android.
+Puede crear aplicaciones móviles nativas para diferentes plataformas utilizando C# y Xamarin, o Visual C++, o aplicaciones híbridas que usan JavaScript con Apache Cordova. Puede escribir juegos móviles para Unity, Unreal, DirectX, Cocos y mucho más. Visual Studio incluye un emulador de Android que le ayudará a ejecutar y depurar aplicaciones de Android.
 
 Puede aprovechar la eficacia de la nube para las aplicaciones móviles mediante la creación de servicios de aplicaciones de Azure. Los servicios de aplicaciones de Azure permiten que las aplicaciones almacenen datos en la nube, autentiquen de manera segura a los usuarios y escalen sus recursos hacia arriba o hacia abajo para satisfacer las necesidades de su negocio y de la aplicación. Para obtener más información, consulte [Desarrollo de aplicaciones móviles](https://www.visualstudio.com/vs/mobile-app-development/).
 
@@ -56,7 +56,7 @@ Para obtener más información, vea [Herramientas web modernas](https://www.visu
 
 ### <a name="build-cross-platform-apps-and-games"></a>Compilar aplicaciones y juegos multiplataforma
 
-Puede usar Visual Studio para compilar aplicaciones y juegos para dispositivos Android, iOS, Linux, Windows y otros dispositivos. Más información en [Desarrollo móvil multiplataforma](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Las aplicaciones universales de Windows ayudan a aprovechar el código en varias plataformas. Consulte [Aplicaciones universales de Windows](https://dev.windows.com/en-us/windows-apps) para obtener más información.
+Puede usar Visual Studio para compilar aplicaciones y juegos para dispositivos Android, iOS, Linux, Windows y otros dispositivos. Más información en [Desarrollo móvil multiplataforma](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Las aplicaciones universales de Windows ayudan a aprovechar el código en varias plataformas. Consulte [Aplicaciones universales de Windows](https://dev.windows.com/windows-apps) para obtener más información.
 
 Elija las herramientas que necesita en función de los requisitos de la aplicación y del lenguaje que quiere usar:
 
@@ -109,7 +109,7 @@ Cuando se inicia Visual Studio por primera vez, puede iniciar sesión opcionalme
 
   ![Plantilla de aplicación vacía de UWP](../ide/media/new-uwp-blank-app-template.png)
 
-  Con este proceso se crea un nuevo proyecto de aplicación universal de Windows en blanco que utiliza Visual C# y XAML como lenguajes de programación. Espere un poco mientras Visual Studio configura el proyecto. Si se le pide alguna información, simplemente acepte los valores predeterminados por ahora.
+  Con este proceso se crea un nuevo proyecto de aplicación universal de Windows en blanco que utiliza C# y XAML como lenguajes de programación. Espere un poco mientras Visual Studio configura el proyecto. Si se le pide alguna información, simplemente acepte los valores predeterminados por ahora.
 
 1. En el cuadro de diálogo **Nuevo proyecto de la plataforma universal de Windows**, elija **Aceptar** para aceptar los valores predeterminados.
 
@@ -195,7 +195,7 @@ Aquí se muestran algunas otras características de productividad comunes en Vis
 
  ![Refactorización](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** es un término que aglutina un conjunto de características muy populares que muestran información escritura sobre el código directamente en el editor y, en algunos casos, escriben pequeños fragmentos de código automáticamente. Básicamente, IntelliSense es como tener documentación básica insertada en el editor, lo que evita tener que buscar información de escritura en una ventana de ayuda independiente. Las características de IntelliSense varían según el lenguaje. Para más información, vea [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) y [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md). La ilustración siguiente muestra algunas características de IntelliSense en funcionamiento:
+- **IntelliSense** es un término que aglutina un conjunto de características muy populares que muestran información escritura sobre el código directamente en el editor y, en algunos casos, escriben pequeños fragmentos de código automáticamente. Básicamente, IntelliSense es como tener documentación básica insertada en el editor, lo que evita tener que buscar información de escritura en una ventana de ayuda independiente. Las características de IntelliSense varían según el lenguaje. Para más información, vea [IntelliSense para C#](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [IntelliSense para JavaScript](../ide/javascript-intellisense.md) y [Opciones de IntelliSense específicas de Visual Basic](../ide/visual-basic-specific-intellisense.md). La ilustración siguiente muestra algunas características de IntelliSense en funcionamiento:
 
   ![Lista de miembros de Visual Studio](../ide/media/vs2017_Intellisense.png)
 
@@ -237,7 +237,7 @@ En la siguiente imagen se muestra la ventana Team Explorer de una solución hosp
 
 ![Team Explorer de Visual Studio](../ide/media/vs2017_teamexplorer.png)
 
-También puede automatizar el proceso de compilación para compilar el código que los desarrolladores del equipo han insertado en el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. Vea [Continuous integration on any platform](https://www.visualstudio.com/en-us/docs/build/overview) (Integración continua en cualquier plataforma) para más información.
+También puede automatizar el proceso de compilación para compilar el código que los desarrolladores del equipo han insertado en el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. Para obtener más información, consulte [Build and release (VSTS and TFS)](/vsts/build-release/index) (Compilación y publicación [VSTS y TFS]).
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Conexión a servicios, bases de datos y recursos basados en la nube
 
@@ -280,6 +280,6 @@ Si nunca ha usado Visual Studio, eche un vistazo a [Introducción al desarrollo 
 * [IDE de Visual Studio](https://www.visualstudio.com/vs/)
 * [Descargas de Visual Studio](https://www.visualstudio.com/downloads/)
 * [Blog de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Foros de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Foros de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
 * [Channel 9](https://channel9.msdn.com/)

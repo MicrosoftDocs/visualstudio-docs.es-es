@@ -12,20 +12,23 @@ helpviewer_keywords:
 - unit tests, and generics
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 61c4afb816d5cd0be3628d9c801f578a5210b4a2
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
-Puede generar pruebas unitarias para métodos genéricos exactamente como lo hace para otros métodos, tal y como se describe en [Cómo: Crear y ejecutar una prueba unitaria](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Las secciones siguientes proporcionan información y ejemplos de creación de pruebas unitarias para métodos genéricos.  
-  
-## <a name="type-arguments-and-type-constraints"></a>Argumentos de tipo y restricciones de tipo  
- Cuando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera una prueba unitaria para una clase genérica, como `MyList<T>`, genera dos métodos: un objeto auxiliar genérico y un método de prueba. Si `MyList<T>` tiene una o más restricciones de tipo, el argumento de tipo debe cumplir todas las restricciones de tipo. Para asegurarse de que el código genérico en prueba funciona según lo esperado para todas las entradas permitidas, el método de prueba llama al objeto auxiliar genérico con todas las restricciones que se desean probar.  
-  
+
+Puede generar pruebas unitarias para métodos genéricos exactamente como lo hace para otros métodos. Las secciones siguientes proporcionan información y ejemplos de creación de pruebas unitarias para métodos genéricos.
+
+## <a name="type-arguments-and-type-constraints"></a>Argumentos de tipo y restricciones de tipo
+
+Cuando Visual Studio genera una prueba unitaria para una clase genérica, como `MyList<T>`, genera dos métodos: un objeto auxiliar genérico y un método de prueba. Si `MyList<T>` tiene una o más restricciones de tipo, el argumento de tipo debe cumplir todas las restricciones de tipo. Para asegurarse de que el código genérico en prueba funciona según lo esperado para todas las entradas permitidas, el método de prueba llama al objeto auxiliar genérico con todas las restricciones que se desean probar.
+
 ## <a name="examples"></a>Ejemplos  
  Los ejemplos siguientes ilustran las pruebas unitarias para métodos genéricos:  
   
@@ -197,6 +200,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>Vea también  
- [Anatomía de una prueba unitaria](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Vea también
+
+[Haga una prueba unitaria de su código](../test/unit-test-your-code.md)

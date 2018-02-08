@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 1ca2e83bab05c336f4b4ed37a13271c636b457dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 71d7f7e342ecd6d9ca3bff4e04b84352c65c0e17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Tutorial: Crear, modificar y mantener una prueba de IU codificada
 En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) simple para mostrar cómo crear, modificar y mantener una prueba del IU codificada. El tutorial proporciona soluciones para la corrección de pruebas que han sido interrumpidas por diversos problemas de sincronización y de control de refactorización.  
@@ -143,7 +144,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
   
      Aparece UIMap – Generador de pruebas de IU codificadas y la ventana de Visual Studio se minimiza.  
   
-     Para obtener más información acerca de las opciones del cuadro de diálogo, vea [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+     Para obtener más información acerca de las opciones del cuadro de diálogo, vea [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md).  
   
 8.  Seleccione **Iniciar grabación** en UIMap – Generador de pruebas de IU codificadas.  
   
@@ -368,26 +369,20 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
   
 ## <a name="external-resources"></a>Recursos externos  
   
-### <a name="videos"></a>Vídeos  
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode1-GettingStarted](http://go.microsoft.com/fwlink/?LinkID=230573)  
+### <a name="videos"></a>Vídeos
+
+![vínculo a vídeo](../data-tools/media/playvideo.gif "ReproducirVídeo") [Introducción a pruebas automatizadas de IU](http://go.microsoft.com/fwlink/?LinkID=230573)  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode2-MaintainenceAndDebugging](http://go.microsoft.com/fwlink/?LinkID=230574)  
+![vínculo a vídeo](../data-tools/media/playvideo.gif "ReproducirVídeo") [Mantenimiento y depuración de pruebas automatizadas de IU](http://go.microsoft.com/fwlink/?LinkID=230574)  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "Reproducir vídeo")[Vídeo sobre las pruebas de IU codificadas Coded UI Tests-DeepDive-Episode3-HandCoding](http://go.microsoft.com/fwlink/?LinkID=230575)  
+![vínculo a vídeo](../data-tools/media/playvideo.gif "ReproducirVídeo") [Codificación manual de pruebas automatizadas de IU](http://go.microsoft.com/fwlink/?LinkID=230575)
   
-### <a name="hands-on-lab"></a>Laboratorio de prácticas  
- [Práctica virtual de MSDN: Introducción a la creación de pruebas de UI codificadas con Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
+### <a name="faq"></a>Preguntas más frecuentes
+
+[Preguntas frecuentes sobre las pruebas automatizadas de IU](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
   
-### <a name="faq"></a>Preguntas más frecuentes  
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
-  
- [Preguntas más frecuentes sobre las pruebas de IU codificadas - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
-  
-### <a name="forum"></a>Foro  
- [Pruebas de automatización de la interfaz de usuario de Visual Studio (incluyen CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
-  
-## <a name="see-also"></a>Vea también  
- [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
- [Introducción a WPF Designer](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
- [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+## <a name="see-also"></a>Vea también
+
+[Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)  
+[Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

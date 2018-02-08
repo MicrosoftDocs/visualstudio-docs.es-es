@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e26a9fa0daf5c92c81161bdcafd92490f9a05113
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 En Visual Studio puede personalizar la posición, el tamaño y el comportamiento de las ventanas para crear los diseños de ventana que mejor funcionen con los distintos flujos de trabajo de desarrollo. Al personalizar el diseño, el IDE lo recuerda. Por ejemplo, si cambia la ubicación de acoplamiento del **Explorador de soluciones** y después cierra Visual Studio, la próxima vez que lo inicie, incluso si lo hace en otro equipo, el **Explorador de soluciones** estará acoplado en la misma ubicación. También puede dar un nombre al diseño personalizado, guardarlo y luego cambiar entre los diseños con un solo comando. Por ejemplo, puede crear un diseño para la edición y otro para la depuración, y cambiar entre ellos mediante el comando de menú **Ventana &#124; Aplicar diseño de ventana**.  
@@ -134,7 +136,7 @@ En Visual Studio puede personalizar la posición, el tamaño y el comportamiento
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Crear un proyecto de UI y personalizar el diseño  
 
-1.  En el cuadro de diálogo **Proyecto nuevo** , cree una aplicación de escritorio WPF de Visual C# y póngale el nombre que quiera. Supongamos que este es el proyecto con el que trabajaremos en la interfaz de usuario. Queremos maximizar el espacio para la ventana del diseñador y quitar de en medio otras ventanas de herramientas.  
+1.  En el cuadro de diálogo **Proyecto nuevo**, cree una aplicación de escritorio WPF de C# y póngale el nombre que quiera. Supongamos que este es el proyecto con el que trabajaremos en la interfaz de usuario. Queremos maximizar el espacio para la ventana del diseñador y quitar de en medio otras ventanas de herramientas.  
 
 2.  Si tiene varios monitores, coloque la ventana **Explorador de soluciones** y la ventana **Propiedades** en el segundo monitor. En un solo sistema de monitor, cierre todas las ventanas menos el diseñador.  
 

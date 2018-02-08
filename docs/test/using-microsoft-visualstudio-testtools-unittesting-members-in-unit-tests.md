@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 251843d3e5a32ddedfe4f9081bd52330a457fe24
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 3e0be7d788d4471f249b50f8c846343514b1c346
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
 El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Use las clases y los miembros del espacio de nombres Microsoft.VisualStudio.TestPlatform.UnitTestFramework> cuando codifique pruebas unitarias. Se pueden utilizar cuando haya escrito la unidad de prueba desde el principio o si está adaptando una prueba unitaria que se generó a partir de código que se está probando.  
@@ -41,9 +42,10 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.DataSourceElementCollection  
   
-## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos utilizados para establecer un orden de llamada  
- Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, consulte [Estructura de una prueba unitaria](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
-  
+## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos utilizados para establecer un orden de llamada
+
+Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, consulte [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+
 ### <a name="for-assemblies"></a>Para los ensamblados  
  Se llama a AssemblyInitialize y AssemblyCleanup inmediatamente después de que se carga el ensamblado e inmediatamente antes de que se descargue.  
   
@@ -64,8 +66,9 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestCleanupAttribute  
   
-## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos utilizados para identificar clases y métodos de prueba  
- Cada clase de prueba debe tener el atributo TestClass y todos los métodos de prueba deben tener el atributo TestMethod. Para obtener más información, consulte [Estructura de una prueba unitaria](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144).  
+## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos utilizados para identificar clases y métodos de prueba
+
+Cada clase de prueba debe tener el atributo TestClass y todos los métodos de prueba deben tener el atributo TestMethod. Para obtener más información, consulte [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute  
   
@@ -120,12 +123,10 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.CssProjectStructureAttribute  
   
-## <a name="classes-used-with-private-accessors"></a>Clases utilizadas con descriptores de acceso privados  
- Como se describe en [Usar Publicize para crear un descriptor de acceso privado](http://msdn.microsoft.com/en-us/2056c6a7-6672-42a7-8f53-fead33c56deb), puede generar una prueba unitaria para un método privado. Esta generación crea una clase de descriptor de acceso privado, que crea una instancia de un objeto de la clase PrivateObject. La clase PrivateObject es una clase contenedora que utiliza la reflexión como parte del proceso de descriptor de acceso privado. La clase PrivateType es similar, pero se utiliza para llamar a métodos estáticos privados en lugar de llamar a métodos de instancia privados.  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject  
-  
--   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType  
-  
-## <a name="see-also"></a>Vea también  
- Microsoft.VisualStudio.TestPlatform.UnitTestFramework
+## <a name="classes-used-with-private-accessors"></a>Clases utilizadas con descriptores de acceso privados
+
+Puede generar una prueba unitaria para un método privado. Esta generación crea una clase de descriptor de acceso privado, que crea una instancia de un objeto de la clase PrivateObject. La clase PrivateObject es una clase contenedora que utiliza la reflexión como parte del proceso de descriptor de acceso privado. La clase PrivateType es similar, pero se utiliza para llamar a métodos estáticos privados en lugar de llamar a métodos de instancia privados.
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateObject
+
+- Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType

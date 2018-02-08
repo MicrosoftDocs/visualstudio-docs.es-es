@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 Los fragmentos de código de IntelliSense son piezas de código ya creado y listo para insertarlo en la aplicación con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Puede aumentar la productividad proporcionando fragmentos de código que reduzcan la cantidad de tiempo empleado en escribir código repetitivo o buscar ejemplos. Puede utilizar el esquema XML de fragmentos de código de IntelliSense para crear sus propios fragmentos de código y agregar los fragmentos de código que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ya incluye.  
@@ -240,7 +242,7 @@ Hay tres atributos disponibles para el elemento Code:
  Especifica una función que se ejecutará cuando un literal o un objeto reciba foco en Visual Studio.  
   
 > [!NOTE]
->  El elemento `Function` solo es compatible con fragmentos de código de Visual C#.  
+>  El elemento `Function` solo es compatible con fragmentos de código de C#.  
   
 ```xml  
 <Function>  
@@ -563,7 +565,7 @@ Hay tres atributos disponibles para el elemento Code:
   
 -   `Expansion`: permite insertar el fragmento de código donde se encuentra el cursor.  
   
--   `Refactoring`: especifica que el fragmento de código se usará durante la refactorización de Visual C#. `Refactoring` no se puede usar en fragmentos de código personalizados.  
+-   `Refactoring`: especifica que el fragmento de código se usará durante la refactorización de C#. `Refactoring` no se puede usar en fragmentos de código personalizados.  
   
 ##  <a name="snippettypes"></a> Elemento SnippetTypes  
  Agrupa los elementos `SnippetType` individuales. Si el elemento `SnippetTypes` no está presente, el fragmento de código se puede insertar en cualquier parte del código.  

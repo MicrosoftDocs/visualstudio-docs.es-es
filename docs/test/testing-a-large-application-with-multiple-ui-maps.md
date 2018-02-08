@@ -10,24 +10,26 @@ ms.topic: article
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
+author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: ca9114dfe601f523878749593a213b36465bd0a7
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- multiple
+ms.openlocfilehash: c2eff9fc8e8aedecb1fd9b99538fa600dbcc5eb1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varios mapas de IU
+
 En este tema se describe cómo usar pruebas de IU codificadas cuando esté probando una aplicación grande mediante varias asignaciones de IU.  
   
  **Requisitos**  
   
 -   Visual Studio Enterprise  
   
- Al crear una nueva prueba de IU codificada, el marco de pruebas de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera de manera predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).  
+ Al crear una nueva prueba automatizada de IU, el marco de pruebas de Visual Studio genera de manera predeterminada código para la prueba en una clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Para más información sobre cómo registrar pruebas automatizadas de IU, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md) y [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md).  
   
  El código generado para la asignación de IU contiene una clase para cada objeto con el que la prueba interactúa. Para cada método generado, se genera una clase complementaria específicamente para los parámetros de ese método. Si hay un número elevado de objetos, páginas y formularios y controles en la aplicación, la asignación de IU puede llegar a ser muy grande. Además, si hay varias personas trabajando en las pruebas, la aplicación se vuelve pesada con un único archivo grande de asignación de IU.  
   
@@ -67,24 +69,25 @@ En este tema se describe cómo usar pruebas de IU codificadas cuando esté proba
   
 4.  Haga clic en **Agregar**.  
   
-     La ventana de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se minimiza y aparece el cuadro de diálogo **Generador de pruebas automatizadas de IU**.  
+     La ventana de Visual Studio se minimiza y aparece el cuadro de diálogo **Generador de pruebas automatizadas de IU**.  
   
 5.  Registre las acciones para el primer método y seleccione **Generar código**.  
   
 6.  Después de registrar todas las acciones y aserciones para el primer componente o página y de agruparlas en métodos, cierre el cuadro de diálogo **Generador de pruebas automatizadas de IU**.  
   
 7.  Siga creando asignaciones de IU. Registre las acciones y aserciones, agrúpelas en métodos para cada componente y después genere el código.  
-  
- En muchos casos, la ventana de nivel superior de la aplicación permanece constante para todos los asistentes, formularios y páginas. Aunque cada asignación de IU tiene una clase para la ventana de nivel superior, probablemente todas las asignaciones estén haciendo referencia a la misma ventana de nivel superior dentro de la cual se ejecutan todos los componentes de la aplicación. Las pruebas de IU codificadas buscan controles jerárquicamente de arriba abajo, empezando en la ventana de nivel superior, por lo que en una aplicación compleja, la ventana de nivel superior real podría estar duplicada en cada asignación de IU. Si la ventana de nivel superior real está duplicada, se realizarán varias modificaciones si esa ventana cambia. Esto podría producir problemas de rendimiento al cambiar entre asignaciones de IU.  
-  
- Para minimizar este efecto, puede usar el método `CopyFrom()` para asegurarse de que la nueva ventana de nivel superior de esa asignación de IU sea la misma que la ventana de nivel superior principal.  
-  
-## <a name="example"></a>Ejemplo  
- El ejemplo siguiente forma parte de una clase de utilidad que permite acceder a cada componente y sus controles secundarios, que están representados por las clases generadas en las diversas asignaciones de IU.  
-  
- En este ejemplo, una aplicación web denominada `Contoso` tiene una página principal, una página de productos y una página de carro de la compra. Todas estas páginas comparten una ventana de nivel superior común, que es la ventana del explorador. Hay una asignación de IU para cada página y la clase de utilidad tiene código similar al siguiente:  
-  
-```  
+
+ En muchos casos, la ventana de nivel superior de la aplicación permanece constante para todos los asistentes, formularios y páginas. Aunque cada asignación de IU tiene una clase para la ventana de nivel superior, probablemente todas las asignaciones estén haciendo referencia a la misma ventana de nivel superior dentro de la cual se ejecutan todos los componentes de la aplicación. Las pruebas de IU codificadas buscan controles jerárquicamente de arriba abajo, empezando en la ventana de nivel superior, por lo que en una aplicación compleja, la ventana de nivel superior real podría estar duplicada en cada asignación de IU. Si la ventana de nivel superior real está duplicada, se realizarán varias modificaciones si esa ventana cambia. Esto podría producir problemas de rendimiento al cambiar entre asignaciones de IU.
+
+ Para minimizar este efecto, puede usar el método `CopyFrom()` para asegurarse de que la nueva ventana de nivel superior de esa asignación de IU sea la misma que la ventana de nivel superior principal.
+
+## <a name="example"></a>Ejemplo
+
+El ejemplo siguiente forma parte de una clase de utilidad que permite acceder a cada componente y sus controles secundarios, que están representados por las clases generadas en las diversas asignaciones de IU.
+
+En este ejemplo, una aplicación web denominada `Contoso` tiene una página principal, una página de productos y una página de carro de la compra. Todas estas páginas comparten una ventana de nivel superior común, que es la ventana del explorador. Hay una asignación de IU para cada página y la clase de utilidad tiene código similar al siguiente:
+
+```csharp
 using ContosoProject.UIMaps;  
 using ContosoProject.UIMaps.HomePageClasses;  
 using ContosoProject.UIMaps.ProductPageClasses;  
@@ -135,12 +138,13 @@ namespace ContosoProject
     // Continue to create properties for each page, getting the   
     // page object from the corresponding UI Map and copying the   
     // top level window properties from the Home Page.  
-}  
-```  
-  
-## <a name="see-also"></a>Vea también  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
- [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)
+}
+```
+
+## <a name="see-also"></a>Vea también
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>  
+<xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>  
+[Usar Automatización de la interfaz de usuario para probar el código](../test/use-ui-automation-to-test-your-code.md)  
+[Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md)  
+[Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)

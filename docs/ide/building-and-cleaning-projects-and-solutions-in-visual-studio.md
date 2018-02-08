@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
@@ -111,11 +113,12 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
     -   Presione las teclas Ctrl+Interrumpir.  
   
 ## <a name="see-also"></a>Vea también
-[Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md)   
-[Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)   
-[Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
-[Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)   
-[Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)   
+
+[Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)  
+[Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)  
+[Definición de configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md)  
+[Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)  
+[Modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md)  
 [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)

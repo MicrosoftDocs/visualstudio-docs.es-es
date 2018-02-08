@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,33 +13,37 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fec5c2bbbf97bee5e0abb0725641a5c562997065
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
-Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Las funciones se especifican en el elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).  
-  
-## <a name="functions"></a>Funciones  
- En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.  
-  
+
+Hay tres funciones disponibles para utilizar con fragmentos de código de C#. Las funciones se especifican en el elemento [Function](../ide/code-snippets-schema-reference.md#function) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).
+
+## <a name="functions"></a>Funciones
+
+En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.
+
 |Función|Description|Lenguaje|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera una instrucción switch y un conjunto de instrucciones case para los miembros de la enumeración especificada por el parámetro `EnumerationLiteral`. El parámetro `EnumerationLiteral` debe ser una referencia a un literal de enumeración o un tipo de enumeración.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Devuelve el nombre de la clase que contiene el fragmento de código insertado.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`SimpleTypeName(` `TypeName` `)`|Reduce el parámetro *TypeName* a su forma más sencilla en el contexto en que se invocó el fragmento de código.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## <a name="example"></a>Ejemplo  
- En el siguiente ejemplo se muestra cómo usar la función `GenerateSwitchCases`. Cuando se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` genera una instrucción `case` para cada valor de la enumeración.  
-  
-```  
+## <a name="example"></a>Ejemplo
+
+En el siguiente ejemplo se muestra cómo usar la función `GenerateSwitchCases`. Cuando se inserta este fragmento de código y se especifica una enumeración en el literal `$switch_on$`, el literal `$cases$` genera una instrucción `case` para cada valor de la enumeración.  
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -74,12 +79,13 @@ Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="example"></a>Ejemplo  
- En el siguiente ejemplo se muestra cómo usar la función `ClassName`. Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza con el nombre de la clase envolvente en esa ubicación del archivo de código.  
-  
-```  
+```
+
+## <a name="example"></a>Ejemplo
+
+En el siguiente ejemplo se muestra cómo usar la función `ClassName`. Cuando se inserta este fragmento de código, el literal `$classname$` se reemplaza con el nombre de la clase envolvente en esa ubicación del archivo de código.
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -120,12 +126,13 @@ Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="example"></a>Ejemplo  
- En este ejemplo se muestra cómo utilizar la función `SimpleTypeName`. Al insertar este fragmento de código en un archivo de código, el literal `$SystemConsole$` se reemplaza por la forma más sencilla del tipo <xref:System.Console> en el contexto en el que se invocó el fragmento de código.  
-  
-```  
+```
+
+## <a name="example"></a>Ejemplo
+
+En este ejemplo se muestra cómo utilizar la función `SimpleTypeName`. Al insertar este fragmento de código en un archivo de código, el literal `$SystemConsole$` se reemplaza por la forma más sencilla del tipo <xref:System.Console> en el contexto en el que se invocó el fragmento de código.  
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -152,8 +159,9 @@ Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Elemento Function (fragmentos de código de IntelliSense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
- [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)
+```
+
+## <a name="see-also"></a>Vea también
+
+[Elemento Function](../ide/code-snippets-schema-reference.md#function)  
+[Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)

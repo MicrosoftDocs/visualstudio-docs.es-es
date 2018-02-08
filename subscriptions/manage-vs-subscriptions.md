@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Administrar suscripciones
 ## <a name="signing-in-to-the-portal"></a>Iniciar sesión en el portal
@@ -31,7 +31,7 @@ Si ha comprado una suscripción de Visual Studio a través de Microsoft Store, l
 #### <a name="workschool-accounts"></a>Cuentas profesionales o educativas
 Si le han proporcionado la suscripción en el trabajo o la escuela, habrá recibido un correo electrónico de bienvenida.  
 1.  Visite el [portal de suscriptores](https://my.visualstudio.com/).
-2.  Escriba la dirección de correo electrónico asignada a la nueva suscripción de Visual Studio. Esta dirección también se indica en la **carta de bienvenida** al suscriptor. Si no ha recibido la carta de bienvenida, compruebe las carpetas de correo no deseado.
+2.  Escriba la dirección de correo electrónico asignada a la nueva suscripción de Visual Studio. Esta dirección también se indica en el correo electrónico de bienvenida al suscriptor. Si no ha recibido el correo electrónico de bienvenida, compruebe las carpetas de correo no deseado.
 3.  Haga clic en **Continuar**.
 4.  Se le redirigirá a la página de inicio de sesión corporativo.
 5.  Escriba su contraseña.

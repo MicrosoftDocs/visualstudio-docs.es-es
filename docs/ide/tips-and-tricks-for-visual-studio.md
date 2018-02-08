@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5aca783500b27e6b292b82304eb14d0fba7d32
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Sugerencias de teclado para Visual Studio
 
@@ -125,6 +125,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 ## <a name="see-also"></a>Vea también
 
+[Keyboard shortcuts (VSTS and TFS)](/vsts/collaborate/keyboard-shortcuts) (Métodos abreviados de teclado [VSTS y TFS])  
 [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio) (Blog de Visual Studio)  
 [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)  
 [Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox) (Herramientas de Visual Studio en Channel 9)  

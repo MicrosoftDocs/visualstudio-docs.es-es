@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # ¿Qué opciones de publicación son las adecuadas para mí?
 
@@ -31,26 +34,22 @@ Desde Visual Studio, las aplicaciones web pueden publicarse directamente en los 
 
 En la pestaña **Publicar**, puede seleccionar un perfil de publicación existente, importar uno existente o crear uno nuevo con las opciones que se describen aquí.
 
-## Azure App Service
+## Azure App Service Web Apps
 
-[Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) ayuda a los desarrolladores a crear rápidamente una variedad de aplicaciones y servicios web escalables sin mantener la infraestructura.
+[Azure App Service Web Apps](/azure/app-service/app-service-web-overview) (o simplemente Web Apps) ayuda a los desarrolladores a crear rápidamente una variedad de aplicaciones y servicios web escalables sin mantener la infraestructura.
 
-Para las aplicaciones web en particular, un App Service es un contenedor para una [*aplicación web*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/), algo que se asemeja mucho a un host web tradicional. Es decir, una aplicación web proporciona los recursos de proceso necesarios que pueden ejecutar su código del lado servidor y hacer que esté disponible en Internet.
-
-Determine la potencia de proceso que tiene una aplicación web eligiendo un [plan de tarifa](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) para el App Service que la contiene. Puede tener varias aplicaciones web (y otros tipos de aplicación) que comparten el mismo App Service sin cambiar el plan de tarifa. Por ejemplo, puede hospedar aplicaciones web de producción, almacenamiento provisional y desarrollo juntas en el mismo App Service.
+Determine la potencia de proceso que tiene una aplicación web eligiendo un [plan de tarifa](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) para el App Service que la contiene. Puede tener varias aplicaciones web (y otros tipos de aplicación) que comparten el mismo App Service sin cambiar el plan de tarifa. Por ejemplo, puede hospedar aplicaciones web de producción, almacenamiento provisional y desarrollo juntas en el mismo App Service.
 
 Un App Service se ejecuta en máquinas virtuales hospedadas en la nube de Azure, pero es usted quien administra esas máquinas virtuales. A cada aplicación web en un App Service se le asignará una dirección URL única \*.azurewebsites.net; todos los planes de tarifa que no sean los gratuitos también permiten asignar nombres de dominio personalizados al sitio.
 
-### Cuándo optar por Azure App Service
+### Cuándo optar por Azure App Service Web Apps
 
 - Si quiere implementar una aplicación web que sea accesible mediante Internet.
 - Si quiere escalar automáticamente la aplicación web en función de la demanda sin necesidad de volver a implementarla.
 - Si no quiere mantener una infraestructura de servidor (incluidas las actualizaciones de software).
 - Si no necesita ninguna personalización de nivel de máquina en los servidores que hospedan su aplicación web.
 
-
 > Si quiere usar Azure App Service en su propio centro de datos o en otros equipos locales, puede hacerlo con [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
-
 
 ## Azure Virtual Machines
 

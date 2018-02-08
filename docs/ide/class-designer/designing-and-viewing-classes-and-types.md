@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.diagram
+f1_keywords:
+- vs.classdesigner.diagram
 helpviewer_keywords:
 - Class Designer [Visual Studio]
 - Class Designer, about Class Designer
@@ -15,19 +17,20 @@ helpviewer_keywords:
 - classes [Visual Studio], viewing
 - class designer
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d589c4f9fabefbc141d96b233c55a1fd9fc10eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3c3a3de1126eec1d20603257463fecc6ab59eaa8
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Diseñar y ver clases y tipos
-Diseñe, visualice y refactorice clases y otros tipos del código con el Diseñador de clases de Visual Studio. Utilice diagramas de clases para crear y editar las clases del proyecto de .NET de Visual C#, .NET de Visual Basic o C++, comprender mejor la estructura del proyecto o reorganizar el código.  
+Diseñe, visualice y refactorice clases y otros tipos del código con el Diseñador de clases de Visual Studio. Utilice diagramas de clases para crear y editar las clases del proyecto de C#, Visual Basic o C++, comprender mejor la estructura del proyecto o reorganizar el código.  
   
  Aquí tiene más información sobre lo que puede hacer con los diagramas de clases:  
   

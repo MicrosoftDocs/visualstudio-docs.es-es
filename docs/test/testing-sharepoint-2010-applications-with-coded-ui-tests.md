@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Probar aplicaciones de SharePoint 2010 con pruebas de IU codificadas
 Incluir pruebas de IU codificadas en una aplicación de SharePoint permite comprobar que toda la aplicación, incluidos sus controles de interfaz de usuario, funcionan correctamente. Las pruebas de IU codificadas también pueden validar valores y la lógica de la interfaz de usuario.  
@@ -29,12 +30,12 @@ Incluir pruebas de IU codificadas en una aplicación de SharePoint permite compr
   
  **Notas**  
   
--   ![Requisito previo](../test/media/prereq.png "Prereq") Las pruebas de IU codificadas para las aplicaciones de SharePoint solo son compatibles con SharePoint 2010.  
+-   ![Requisito previo](../test/media/prereq.png "Req previo") Las pruebas automatizadas de IU para las aplicaciones de SharePoint solo son compatibles con SharePoint 2010.  
   
--   ![Requisito previo](../test/media/prereq.png "Prereq") No se pueden usar controles de Visio y PowerPoint 2010 en la aplicación de SharePoint.  
+-   ![Requisito previo](../test/media/prereq.png "Req previo") No se pueden usar controles de Visio y PowerPoint 2010 en la aplicación de SharePoint.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Crear una prueba de IU codificada para la aplicación de SharePoint  
- [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) para las aplicaciones de SharePoint 2010 es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de edición web. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.  
+ [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md) para las aplicaciones de SharePoint 2010 es lo mismo que crear pruebas para otros tipos de aplicaciones. La grabación y la reproducción se admiten en todos los controles de la interfaz de edición web. La interfaz para seleccionar categorías y elementos web son todos los controles web estándar.  
   
  ![Elementos web de SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   

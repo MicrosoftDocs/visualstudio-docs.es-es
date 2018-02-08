@@ -1,5 +1,5 @@
 ---
-title: "Edición de suscripciones en el Portal de administradores | Visual Studio Marketplace"
+title: "Edición de suscripciones en el Portal de administrador | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Edición de las asignaciones de suscripción de Visual Studio
 
@@ -29,13 +29,15 @@ Puede actualizar nombre del suscriptor, los apellidos, el país, el idioma y las
 
    ![Edición de los detalles del suscriptor](_img\edit-license\edit-subscriber.png)
 
-Nota: Si tiene que cambiar el nivel de suscripción de un suscriptor, primero debe eliminar el usuario del portal y volverlo a agregar. Los niveles de suscripción no son editables.
+> [!NOTE]
+> Si tiene que cambiar el nivel de suscripción de un suscriptor, primero debe eliminar el usuario del portal y volverlo a agregar. Los niveles de suscripción no son editables.
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>Edición en masa de varios suscriptores
 
 Puede editar varios suscriptores a la vez mediante el proceso de edición en masa. Esta característica se usa principalmente en organizaciones que están efectuando cambios en la dirección de correo electrónico corporativa o cuando una organización ha decidido restringir el acceso a las descargas. 
 
-**IMPORTANTE:** Los niveles de suscripción, es decir, Enterprise, Professional, etc., y los GUID de suscripción no se pueden modificar.  Si intenta realizar una carga con estos elementos cambiados, no podrá hacerla.  
+> [!IMPORTANT]
+> Los niveles de suscripción, es decir, Enterprise, Professional, etc., y los GUID de suscripción no se pueden modificar.  Si intenta realizar una carga con estos elementos cambiados, no podrá hacerla.  
 
 1.  Para editar varios suscriptores a la vez, navegue hasta la pestaña Suscriptores. En la cinta de la parte superior, haga clic en **Edición en masa**. 
 

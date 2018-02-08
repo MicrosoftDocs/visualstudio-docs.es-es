@@ -1,5 +1,5 @@
 ---
-title: IntelliSense para Visual C# | Microsoft Docs
+title: IntelliSense para C# | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>IntelliSense para Visual C#
+# <a name="c-intellisense"></a>IntelliSense para C#
 
-IntelliSense para Visual C# está disponible al programar en el editor y mientras se depura en la ventana de comandos [Modo Inmediato](../ide/reference/immediate-window.md).
+IntelliSense para C# está disponible al programar en el editor y mientras se depura en la ventana de comandos [Modo Inmediato](../ide/reference/immediate-window.md).
 
 ## <a name="completion-lists"></a>Listas de finalización
 
-Las listas de finalización de IntelliSense en Visual C# contienen, entre otros, los tokens de la lista de miembros y palabra completa. Proporciona acceso rápido a:
+Las listas de finalización de IntelliSense en C# contienen, entre otros, los tokens de la lista de miembros y palabra completa. Proporciona acceso rápido a:
 
 - miembros de un tipo o espacio de nombres;
 
@@ -42,15 +43,15 @@ La lista de finalización en C# también es lo suficientemente inteligente como 
 
 ## <a name="code-snippets-in-completion-lists"></a>Fragmentos de código en listas de finalización
 
-En Visual C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [texto de acceso directo](../ide/code-snippets-schema-reference.md#shortcut) del fragmento de código. Para obtener más información sobre los fragmentos de código que están disponibles en Visual C# de manera predeterminada, vea [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md).
+En C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [texto de acceso directo](../ide/code-snippets-schema-reference.md#shortcut) del fragmento de código. Para obtener más información acerca de los fragmentos de código que están disponibles en C# de forma predeterminada, consulte [Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md).
 
 ## <a name="language-keywords-in-completion-lists"></a>Palabras clave de lenguaje en listas de finalización
 
-En Visual C#, la lista de finalización también incluye palabras clave del lenguaje. Para obtener más información sobre las palabras claves del lenguaje C#, vea el artículo sobre [palabras clave de C#](/dotnet/csharp/language-reference/keywords/index).
+En C#, la lista de finalización también incluye palabras clave del lenguaje. Para obtener más información sobre las palabras claves del lenguaje C#, vea el artículo sobre [palabras clave de C#](/dotnet/csharp/language-reference/keywords/index).
 
 ## <a name="extension-methods-in-completion-lists"></a>Métodos de extensión en listas de finalización
 
-En Visual C#, la lista de finalización incluye métodos de extensión que están en el ámbito.
+En C#, la lista de finalización incluye métodos de extensión que están en el ámbito.
 
 > [!NOTE]
 > La lista de finalización no muestra todos los métodos de extensión para objetos <xref:System.String>.
@@ -59,9 +60,9 @@ Los métodos de extensión usan un icono diferente del que usan los métodos de 
 
 ## <a name="filtered-completion-lists"></a>Listas de finalización filtradas
 
-IntelliSense usa filtros para quitar los miembros innecesarios de la lista de finalización. Visual C# filtra las listas de finalización que aparecen para estos elementos:
+IntelliSense usa filtros para quitar los miembros innecesarios de la lista de finalización. C# filtra las listas de finalización que aparecen para estos elementos:
 
-- **Interfaces y clases base**: IntelliSense quita automáticamente los elementos de las listas de finalización de clase base e interfaz, tanto en las listas de interfaz y base de declaración de clases como en las listas de restricciones. Por ejemplo, las enumeraciones no aparecen en la lista de finalización de las clases base porque las enumeraciones no se pueden usar para clases base. La lista de finalización de clases base solo contiene interfaces y espacios de nombres. Si selecciona un elemento en la lista y luego escribe una coma, IntelliSense quita las clases base de la lista de finalización porque Visual C# no admite herencia múltiple. El mismo comportamiento se produce con las cláusulas de restricción.
+- **Interfaces y clases base**: IntelliSense quita automáticamente los elementos de las listas de finalización de clase base e interfaz, tanto en las listas de interfaz y base de declaración de clases como en las listas de restricciones. Por ejemplo, las enumeraciones no aparecen en la lista de finalización de las clases base porque las enumeraciones no se pueden usar para clases base. La lista de finalización de clases base solo contiene interfaces y espacios de nombres. Si selecciona un elemento en la lista y luego escribe una coma, IntelliSense quita las clases base de la lista de finalización porque C# no admite herencia múltiple. El mismo comportamiento se produce con las cláusulas de restricción.
 
 - **Atributos**: cuando se aplica un atributo a un tipo, la lista de finalización se filtra para incluir únicamente los tipos que descienden de los espacios de nombres que contienen esos tipos, como <xref:System.Attribute>.
 

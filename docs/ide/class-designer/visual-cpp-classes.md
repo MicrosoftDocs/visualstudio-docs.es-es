@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.classdesigner.inheritancelinelabel
-helpviewer_keywords: Class Designer [Visual Studio], classes
+f1_keywords:
+- vs.classdesigner.inheritancelinelabel
+helpviewer_keywords:
+- Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1aac0b4dd1600edc29f43195dcf95a6c5fc9b388
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 813e52dec03975c6573ed5eb75c7b5c3ed9bb9fd
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Clase de Visual C++ en el Diseñador de clases
-El Diseñador de clases admite las clases de C++ y visualiza las clases nativas de C++ igual que las formas de clase de Visual Basic y Visual C#, con la diferencia de que las clases de C++ pueden tener varias relaciones de herencia. Puede expandir la forma de clase para que muestre más campos y métodos de la clase o contraerla para ahorrar espacio.  
+El Diseñador de clases admite las clases de C++ y visualiza las clases nativas de C++ igual que las formas de clase de Visual Basic y C#, con la diferencia de que las clases de C++ pueden tener varias relaciones de herencia. Puede expandir la forma de clase para que muestre más campos y métodos de la clase o contraerla para ahorrar espacio.  
   
 > [!NOTE]
 >  El Diseñador de clases no admite las uniones (un tipo especial de clase en la que la memoria asignada solo es la cantidad necesaria para el miembro de datos más grande de la unión).  
@@ -53,7 +57,7 @@ Si hace clic con el botón derecho en una forma de clase y, después, hace clic 
 > [!NOTE]
 >  No se admite el comando **Mostrar clases derivadas** para el código de C++. Para mostrar las clases derivadas, vaya a Vista de clases, expanda el nodo de tipo, expanda la subcarpeta **Tipos derivados** y arrastre esos tipos al diagrama de clases.  
   
-Para obtener más información sobre la herencia de varias clases, vea [Herencia múltiple](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx) y [Multiple Base Classes](/cpp/cpp/multiple-base-classes) (Varias clases base).  
+Para obtener más información sobre la herencia de varias clases, vea [Herencia múltiple](https://msdn.microsoft.com/library/6td5yws2.aspx) y [Multiple Base Classes](/cpp/cpp/multiple-base-classes) (Varias clases base).  
   
 ## <a name="abstract-classes"></a>Clases abstractas  
 El Diseñador de clases admite clases abstractas (también denominadas "clases base abstractas"). Se trata de clases de las que nunca se crean instancias, pero de las que se pueden derivar otras clases. Mediante un ejemplo de la anterior sección "Herencia múltiple" de este documento, puede crear instancias de la clase `Bird` como objetos individuales de la manera siguiente:  
@@ -166,11 +170,12 @@ En la tabla siguiente se muestran algunos ejemplos de conexión de clases especi
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Clase<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Clase<br /><br /> `C<T>`<br /><br /> Clase de plantilla<br /><br /> `D`<br /><br /> Clase<br /><br /> ->C\<float>|  
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  
-  
+
 ## <a name="see-also"></a>Vea también
-[Trabajar con código de Visual C++](working-with-visual-cpp-code.md)   
-[Clases y estructuras](/cpp/cpp/classes-and-structs-cpp)   
-[Tipos de clase anónima](/cpp/cpp/anonymous-class-types)   
-[Herencia múltiple](https://msdn.microsoft.com/en-us/library/6td5yws2.aspx)   
-[Varias clases base](/cpp/cpp/multiple-base-classes)   
+
+[Trabajar con código de Visual C++](working-with-visual-cpp-code.md)  
+[Clases y structs](/cpp/cpp/classes-and-structs-cpp)  
+[Tipos de clase anónima](/cpp/cpp/anonymous-class-types)  
+[Herencia múltiple](https://msdn.microsoft.com/library/6td5yws2.aspx)  
+[Varias clases base](/cpp/cpp/multiple-base-classes)  
 [Templates](/cpp/cpp/templates-cpp) (Plantillas [C++])
