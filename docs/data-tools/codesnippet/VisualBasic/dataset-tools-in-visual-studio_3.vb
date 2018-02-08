@@ -1,1 +1,0 @@
-        TextBox1.Text = NorthwindDataSet.Customers(3).ContactName

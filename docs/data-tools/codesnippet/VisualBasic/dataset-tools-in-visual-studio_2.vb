@@ -1,1 +1,0 @@
-        CustomersTableAdapter.Update(NorthwindDataSet.Customers)
