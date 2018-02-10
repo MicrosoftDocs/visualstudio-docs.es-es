@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, Properties window
+helpviewer_keywords:
+- Domain-Specific Language, Properties window
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8193fa12967848308c1e992f5d5f5011890042ea
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 545c8181cdaa3f13d2de04f13101d2678f9fd0ab
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-the-properties-window"></a>Personalizar la ventana Propiedades
 Puede personalizar la apariencia y el comportamiento de la ventana Propiedades de su lenguaje específico de dominio (DSL) en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En la definición DSL, debe definir propiedades de dominio en cada clase de dominio. De forma predeterminada, cuando se selecciona una instancia de la clase, ya sea en un diagrama o en el Explorador de modelos, todas las propiedades de dominio se muestran en la ventana Propiedades. Esto permite ver o editar los valores de propiedades del dominio, incluso si no se ha asignado a los campos de la forma en el diagrama.  

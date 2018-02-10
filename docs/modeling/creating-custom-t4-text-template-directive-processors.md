@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: text templates, custom directive processors
+helpviewer_keywords:
+- text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe637b6ae730cf70113abda14fad794c30868242
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 305eb97d18e8513a92637cd92b1f28798677f314
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Crear procesadores de directivas personalizadas para las plantillas de texto T4
 El *proceso de transformación de plantillas de texto* toma una *plantilla de texto* archivo como entrada y genera un archivo de texto como salida. El *motor de transformación de plantillas de texto* controles el proceso y el motor interactúa con un host de transformación de plantillas de texto y una o varias plantillas de texto *procesadores de directivas* para completar el proceso. Para obtener más información, consulte [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).  

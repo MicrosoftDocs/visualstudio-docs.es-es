@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, generated code
+helpviewer_keywords:
+- Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a2e7e206e6e8b45580bd6c37b91ad62e67794b9
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 Una solución de lenguaje específico de dominio (DSL) genera una API que puede usar para leer y actualizar instancias del DSL en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.  

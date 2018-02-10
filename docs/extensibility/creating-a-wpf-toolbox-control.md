@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0bc83d29eb076b70be5c9192acdbe39e301a6f16
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- vssdk
+ms.openlocfilehash: c1a8338f0ebd964e5d039ffa8dff000a441523f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Crear un Control de cuadro de herramientas WPF
 La plantilla de Control de cuadro de herramientas WPF (Windows Presentation Framework) le permite crear controles de WPF que se agregan automáticamente a la **cuadro de herramientas** cuando se instala la extensión. Este tema muestra cómo usar la plantilla para crear un **cuadro de herramientas** control que se puede distribuir a otros usuarios.  
@@ -61,7 +63,7 @@ La plantilla de Control de cuadro de herramientas WPF (Windows Presentation Fram
   
 1.  Abra MyToolboxControl.xaml.cs en la vista de código.  
   
-2.  Busque la clase MyToolboxControl y cambie su nombre por TestControl. (La forma más rápida de hacerlo consiste en cambiar el nombre de la clase, a continuación, seleccione **cambiar el nombre de** en el menú contextual y complete los pasos. (Para obtener más información sobre la **cambiar el nombre de** command, consulte [cambiar el nombre de refactorización (C#)](../ide/reference/rename-csharp.md).)
+2.  Busque la clase MyToolboxControl y cambie su nombre por TestControl. (La forma más rápida de hacerlo consiste en cambiar el nombre de la clase, a continuación, seleccione **cambiar el nombre de** en el menú contextual y complete los pasos. (Para obtener más información sobre la **cambiar el nombre de** command, consulte [cambiar el nombre de refactorización (C#)](../ide/reference/rename.md).)
   
 3.  Vaya a la `ProvideToolboxControl` de atributo y cambie el valor del primer parámetro a **prueba**. Este es el nombre del grupo que contiene el control en el **cuadro de herramientas**.  
   

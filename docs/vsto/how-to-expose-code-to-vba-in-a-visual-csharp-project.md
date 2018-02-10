@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,12 +19,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0be62faf81fc9d7da60a03596c25cc01a9bf0eac
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- office
+ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Cómo: Exponer código a VBA en un proyecto de Visual C#
   Puede exponer el código de un proyecto de Visual C# en Visual Basic para aplicaciones (VBA) si desea que los dos tipos de código que interactúan entre sí.  
@@ -80,7 +82,7 @@ ms.lasthandoff: 01/13/2018
   
      Para obtener más información sobre los elementos host, consulte [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-6.  Extraer una interfaz de la clase que está exponiendo a VBA. En el **Extraer interfaz** cuadro de diálogo, seleccione los miembros públicos que se van a incluir en la declaración de interfaz. Para obtener más información, consulte [Extraer interfaz refactorización](../ide/reference/extract-interface-csharp.md).
+6.  Extraer una interfaz de la clase que está exponiendo a VBA. En el **Extraer interfaz** cuadro de diálogo, seleccione los miembros públicos que se van a incluir en la declaración de interfaz. Para obtener más información, consulte [Extraer interfaz refactorización](../ide/reference/extract-interface.md).
   
 7.  Agregar el **público** palabra clave a la declaración de interfaz.  
   

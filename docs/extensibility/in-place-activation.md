@@ -4,18 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-csharp
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editors [Visual Studio SDK], custom - in-place view activation
+helpviewer_keywords:
+- editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: "26"
+caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 16c091dc6d5602e4d19b8679794ef2794b29d7ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="in-place-activation"></a>Activación en contexto
 Si la vista del editor hospeda ActiveX u otros controles activos, debe implementar la vista del editor como un control ActiveX o como un objeto de datos de documento activo mediante el modelo de activación en contexto.  
@@ -41,7 +42,7 @@ Editor de activación en contexto
   
  Todas las interfaces implementadas para crear un editor de activación en contexto se muestran en el objeto `CYourEditorDocument` único, pero esta configuración admite solamente una vista única de los datos del documento. Para obtener más información sobre la compatibilidad con varias vistas de los datos del documento, consulte [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   
-|Interfaz|Tipo de objeto|Uso|  
+|Interfaz|Tipo de objeto|Usar|  
 |---------------|--------------------|---------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>|Ver|Permite que los objetos de VSPackage en contexto funcionen como componentes totalmente integrados del IDE mediante el servicio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Este servicio integra los menús, las barras de herramientas y los comandos del objeto en el IDE y emite notificaciones de los cambios de estado.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|Ver|Medios principales por los que un objeto incrustado proporciona características básicas a su contenedor y se comunica con este.|  

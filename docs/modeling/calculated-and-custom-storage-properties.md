@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, programming domain properties
+helpviewer_keywords:
+- Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3d8749e87a25cc9243cf7e76a99b027975673ab4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
 Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se pueden mostrar al usuario en el diagrama y en el Explorador de lenguaje y son accesibles mediante código del programa. Sin embargo, las propiedades difieren del modo en que se almacenan sus valores.  
@@ -26,7 +28,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
 |Tipo de propiedad de dominio|Descripción|  
 |--------------------------|-----------------|  
 |**Estándar** (predeterminado)|Una propiedad de dominio que se guarda en el *almacenar* y serializado al archivo.|  
-|**Calcula**|Una propiedad de dominio de solo lectura que no se guarda en el almacén, pero se calcula a partir de otros valores.<br /><br /> Por ejemplo, `Person.Age` se ha podido calcular desde `Person.BirthDate`.<br /><br /> Tendrá que proporcionar el código que realiza el cálculo. Normalmente, se calcula el valor de otras propiedades de dominio. Sin embargo, también puede utilizar los recursos externos.|  
+|**Calculated**|Una propiedad de dominio de solo lectura que no se guarda en el almacén, pero se calcula a partir de otros valores.<br /><br /> Por ejemplo, `Person.Age` se ha podido calcular desde `Person.BirthDate`.<br /><br /> Tendrá que proporcionar el código que realiza el cálculo. Normalmente, se calcula el valor de otras propiedades de dominio. Sin embargo, también puede utilizar los recursos externos.|  
 |**Almacenamiento personalizado**|Una propiedad de dominio que no se guarda directamente en el almacén, pero puede ser get y set.<br /><br /> Tendrá que proporcionar los métodos que obtener y establecer el valor.<br /><br /> Por ejemplo, `Person.FullAddress` pueden almacenarse en `Person.StreetAddress`, `Person.City`, y `Person.PostalCode`.<br /><br /> También puede tener acceso a recursos externos como, por ejemplo, para obtener y establecer valores de una base de datos.<br /><br /> El código no debe establecer valores en el almacén cuando `Store.InUndoRedoOrRollback` es true. Vea [transacciones y establecedores personalizados](#setters).|  
   
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Proporcionar el código para una propiedad calculada o personalizado de almacenamiento  

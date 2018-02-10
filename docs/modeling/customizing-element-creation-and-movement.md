@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords: Domain-Specific Language, element merge directives
+f1_keywords:
+- vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords:
+- Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0310821ab2968f0709b002166d188a4ebc4c2ff4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 Puede permitir que un elemento que se pueden arrastrar a otra, en el cuadro de herramientas o en una operación de pegado o la operación de movimiento. Puede tener los elementos movidos vinculados a los elementos de destino, mediante las relaciones que especifique.  
@@ -37,7 +40,7 @@ Puede permitir que un elemento que se pueden arrastrar a otra, en el cuadro de h
   
  La responsabilidad de un EMD consiste en decidir cómo se debe combinar un objeto o grupo de objetos en una ubicación determinada en el modelo. En concreto, decide qué relaciones se deberían crear instancias para vincular el grupo combinado en el modelo. También puede personalizar para establecer las propiedades y crear objetos adicionales.  
   
- ![DSL &#45; EMD &#95; Mezcla](../modeling/media/dsl-emd_merge.png "EMD_Merge DSL")  
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
 El rol de una directiva de mezcla de elemento  
   
  Un EMD se genera automáticamente cuando se define una relación de incrustación. Este valor predeterminado EMD crea una instancia de la relación cuando los usuarios agreguen nuevas instancias de elemento secundario al elemento primario. Puede modificar estos EMDs de forma predeterminada, por ejemplo mediante la adición de código personalizado.  
@@ -47,7 +50,7 @@ El rol de una directiva de mezcla de elemento
 ## <a name="defining-an-element-merge-directive"></a>Definir una directiva de mezcla de elemento  
  Puede agregar directivas de mezcla de elemento para las clases de dominio, relaciones de dominio, formas, conectores y diagramas. Puede agregar o buscar en el Explorador de DSL en la clase de dominio receptora. La clase receptora es la clase de dominio del elemento que ya está en el modelo y en la que se van a combinar el elemento nuevo o copiar.  
   
- ![DSL &#45; EMD &#95; detalles](../modeling/media/dsl-emd_details.png "EMD_Details DSL")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  El **indización clase** es la clase de dominio de los elementos que se pueden mezclar con los miembros de la clase receptora. Instancias de subclases de la clase de Index Server también se combinará por este EMD, a menos que establezca **se aplica a las subclases** en False.  
   

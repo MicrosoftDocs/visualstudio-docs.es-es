@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
@@ -22,12 +21,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d11e02e9218d86e0e971c685ab496a2b85b2be21
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 5185b391d0374754675999bff02438efd8de83e4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 En Visual Studio, puede usar un *diagrama de dependencia* para visualizar la arquitectura lógica de alto nivel del sistema. Un diagrama de dependencia organiza los artefactos físicos en el sistema en grupos lógicos y abstractos denominados *capas*. Estas capas describen las tareas principales que realizan los artefactos o los componentes principales del sistema. Cada capa también puede contener capas anidadas que describen tareas más detalladas.  
@@ -53,7 +54,7 @@ En Visual Studio, puede usar un *diagrama de dependencia* para visualizar la arq
   
  La tabla siguiente describen los elementos que puede usar en un diagrama de dependencia.  
   
-|**Forma**|**Element**|**Descripción**|  
+|**Shape**|**Element**|**Descripción**|  
 |---------------|-----------------|---------------------|  
 |1|**Capa**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual de la capa y, a continuación, elija **ver vínculos** para abrir **Explorador de capas**.<br /><br /> Para obtener más información, consulte [Explorador de capas](#Explorer).<br /><br /> -   **Prohibido Namespace dependencias** -especifica qué artefactos asociados a esta capa no pueden depender de los espacios de nombres especificados.<br />-   **Prohibido espacios de nombres** -especifica qué artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificados.<br />-   **Requiere los espacios de nombres** -especifica qué artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificados.|  
 |2|**Dependencia**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> -   **Dirección** -especifica la dirección de la dependencia.|  

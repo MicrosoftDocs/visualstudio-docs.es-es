@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrar modelos utilizando Modelbus de Visual Studio
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus proporciona un método para crear vínculos entre los modelos y desde otras herramientas en modelos. Por ejemplo, puede vincular modelos de lenguaje específico de dominio (DSL) y los modelos UML. Puede crear un conjunto integrado de DSL.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus proporciona un método para crear vínculos entre los modelos y desde otras herramientas en modelos. Por ejemplo, puede vincular modelos de lenguaje específico de dominio (DSL) y los modelos UML. Puede crear un conjunto integrado de DSL.  
   
  ModelBus permite crear una referencia única a un modelo o a un elemento específico dentro de un modelo. Esta referencia se puede almacenar fuera del modelo, por ejemplo, en un elemento en otro modelo. Más adelante, cuando una herramienta quiera obtener acceso al elemento, la infraestructura de ModelBus cargará el modelo apropiado y devolverá el elemento. Si quiere, puede mostrar el modelo al usuario. Si no se puede acceder al archivo en su ubicación anterior, ModelBus pedirá al usuario que lo busque. Si el usuario encuentra el archivo, ModelBus corregirá todas las referencias a ese archivo.  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 01/13/2018
  La carpeta `ModelBusAdapters\bin\*` contiene los ensamblados compilados por el proyecto `Dsl` y el proyecto `ModelBusAdapters`. Para hacer referencia a este DSL desde otro DSL, debe importar estos ensamblados.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>Asegurarse de que se puede hacer referencia a los elementos  
- De forma predeterminada, los adaptadores de ModelBus de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usan el GUID de un elemento para identificarlo. Estos identificadores deben conservarse en el archivo del modelo.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Adaptadores de ModelBus utilizan el guid de un elemento para identificarlo de forma predeterminada. Estos identificadores deben conservarse en el archivo del modelo.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Para asegurarse de que los identificadores de elemento se conservan  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/13/2018
 3.  En el proyecto de depuración, en la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], agregue archivos que sean instancias de cada DSL.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus solo puede resolver referencias a modelos que son elementos de la misma solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Por ejemplo, no puede crear una referencia a un archivo de modelo que esté en otra parte del sistema de archivos.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus solo puede resolver las referencias a los modelos que son elementos en la misma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución. Por ejemplo, no puede crear una referencia a un archivo de modelo que esté en otra parte del sistema de archivos.  
   
 4.  Cree algunos elementos y vínculos en la instancia del DSL expuesto, y guárdelo.  
   

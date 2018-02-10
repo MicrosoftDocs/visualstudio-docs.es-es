@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, providing overridable classes
+helpviewer_keywords:
+- Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 568fc8c53ea7a7be79d8f8169c964f1ec7e02c0a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: f86600b6fd4bb272ece4454e9a94032ed05f3af1
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Invalidar y ampliar clases generadas
 La definición DSL es una plataforma en la que puede crear un conjunto eficaz de herramientas que se basan en un lenguaje específico de dominio. Muchas de las extensiones y las adaptaciones pueden realizarse por reemplazar y ampliar las clases que se generan a partir de la definición DSL. Estas clases incluyen no solo las clases de dominio que haya definido explícitamente en el diagrama de definición DSL, sino también otras clases que definen el cuadro de herramientas, explorador, serialización y así sucesivamente.  

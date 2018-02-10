@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language Tools, supported Visual Studio editions
+helpviewer_keywords:
+- Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b76309249310afd5bd88c8d8553792512e208220
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 359bb9864532f2f3fbeb4fecca28c54ea0a96e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Admite las ediciones de Visual Studio para visualización &amp; modelado del SDK
 Los siguientes son listas de las ediciones de Visual Studio que son compatibles con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] en los entornos de creación y la implementación. Para obtener más información acerca de estas ediciones, vea Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Centro para desarrolladores de](http://go.microsoft.com/fwlink/?LinkId=75628).  
@@ -32,7 +34,7 @@ Los siguientes son listas de las ediciones de Visual Studio que son compatibles 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
 ## <a name="deployment-editions"></a>Ediciones para implementación  
- [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] admite las siguientes configuraciones para implementar los lenguajes específicos del dominio que compile:  
+ [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] admite las siguientes configuraciones para la implementación de los lenguajes específicos de dominio que se generación:  
   
 -   Visual Studio Enterprise  
   

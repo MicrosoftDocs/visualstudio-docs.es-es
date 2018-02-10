@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Tutorial: Configurar y utilizar un conjunto de reglas personalizado
 
@@ -106,7 +106,7 @@ Ahora puede ejecutar análisis de código en el proyecto RuleSetSample y buscar 
   
 2.  En la ventana Lista de errores, haga clic en **advertencias** y, a continuación, haga clic en el **descripción** encabezado de columna para ordenar las advertencias por orden alfanumérico.  
   
-     En una aplicación del mundo real, se podría corregir cualquier infracción de regla merece la pena corregir en este punto, o si lo desea desactivar o suprimir una regla si ha determinado que no se implementó la pena corregir. Para obtener más información, consulte [Suprimir advertencias usando el atributo SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     En una aplicación del mundo real, se podría corregir cualquier infracción de regla merece la pena corregir en este punto, o si lo desea desactivar o suprimir una regla si ha determinado que no se implementó la pena corregir. Para obtener más información, consulte [Suprimir advertencias](../code-quality/in-source-suppression-overview.md).
   
 3.  Tenga en cuenta las advertencias CA1704. Las infracciones de esta regla indican que debe "considerar proporcionar un nombre más descriptivo para los parámetros." Puede corregir el problema en el código o se puede deshabilitar la regla, tal como se describe en el procedimiento siguiente.  
   

@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2aaa2426d506f9c498c4428bc0e7f4e8134ac1ab
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico de dominio (DSL), en lugar de utilizar un diagrama DSL. Este tema explica cómo enlazar un formulario Windows Forms a un DSL, usando la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows y el Explorador de modelos.  
   
 ## <a name="creating-a-windows-forms-dsl"></a>Crear un formulario Windows Forms DSL  
@@ -70,7 +71,7 @@ Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows
 ## <a name="updating-the-dsl-definition"></a>Actualización de la definición de DSL  
  Los siguientes que la definición DSL se utiliza en este tutorial.  
   
- ![DSL &#45; WPF &#45; 1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>Para actualizar la definición de DSL  
   
@@ -123,13 +124,13 @@ Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows
   
 2.  Elija **objeto**, **siguiente**.  
   
-     Expanda **Dsl**, **Company.FarmApp**y seleccione **granja**, que es la clase raíz del modelo. Elija **finalizar**.  
+     Expanda **Dsl**, **Company.FarmApp**y seleccione **granja**, que es la clase raíz del modelo. Elija **Finalizar**.  
   
      En el Explorador de soluciones, la **UI** proyecto ahora contiene **Properties\DataSources\Farm.datasource**  
   
      Las propiedades y relaciones de la clase del modelo aparecen en la ventana de orígenes de datos.  
   
-     ![DslWpf &#45; 3](../modeling/media/dslwpf-3.png "DslWpf-3")  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>Para conectar el modelo a un formulario  
   
@@ -304,7 +305,7 @@ Esquema de vínculos entre los orígenes de datos y vistas.
   
      Puede modificar el nombre del elemento en la vista de cuadrícula de datos. También puede eliminar desde allí.  
   
- ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>Acerca del código para agregar un elemento  
  Para los nuevos botones de elemento, el siguiente código alternativo es un poco más simple.  

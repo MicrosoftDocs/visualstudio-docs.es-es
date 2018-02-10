@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language
+helpviewer_keywords:
+- Domain-Specific Language
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f98b65fbb732b6736c91c605f03b7f2de2325487
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
 
@@ -53,7 +55,7 @@ También puede definir comandos de menú y otras herramientas que ayudan a los u
   
 Normalmente, un lenguaje específico de dominio se crea cuando un equipo de desarrollo tiene que escribir un código similar para varios productos. Por ejemplo, una compañía que se especializa en sistemas de control de equipaje podría definir un DSL de pista de equipaje desde la que pueden generar parte del código para cada instalación. Las ventajas de DSL son que se pueda entender sus clientes, que el código generado desde el es de confianza y que se puede actualizar rápidamente el sistema si cambian los requisitos de los clientes.  
   
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]permite crear un lenguaje específico de dominio que tiene su propio diseñador gráfico y su propia notación de diagrama y, a continuación, usar el lenguaje para generar código fuente adecuado para cada proyecto.  
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] permite crear un lenguaje específico de dominio que tiene su propio diseñador gráfico y su propia notación de diagrama y, a continuación, usar el lenguaje para generar código fuente adecuado para cada proyecto.  
   
 ## <a name="domain-specific-development"></a>Desarrollo específico de dominio
 

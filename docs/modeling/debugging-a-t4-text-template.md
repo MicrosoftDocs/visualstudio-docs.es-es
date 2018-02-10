@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurar una plantilla de texto T4
 Puede establecer puntos de interrupción en plantillas de texto. Para depurar una plantilla de texto en tiempo de diseño, guarde el archivo de plantilla de texto y, a continuación, elija **depurar plantilla T4** en el menú contextual del archivo en el Explorador de soluciones. Para depurar una plantilla de texto en tiempo de ejecución, basta con depurar la aplicación a la que pertenece.  
@@ -46,7 +47,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 |La ruta de acceso '{0}' debe ser local para este equipo o parte de su zona de confianza.|Se produce cuando una directiva o una directiva de ensamblado hace referencia a un archivo que no está en el equipo local o en la zona de confianza de la red.|Asegúrese de que el directorio donde se encuentran la directiva o las directivas de ensamblado están en su zona de confianza. Puede agregar un directorio de red a la zona de confianza mediante Internet Explorer.|  
 |Varios errores de sintaxis como "El token 'catch' no es válido" o "Un espacio de nombres no puede contener directamente miembros"|Hay demasiadas llaves de cierre en el código de plantilla. El compilador está confundiéndolo con el código de generación estándar.|Compruebe el número de llaves y corchetes de cierre que hay dentro de los delimitadores de código.|  
 |Los bucles o los condicionales no se compilan o ejecutan correctamente. Por ejemplo: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Este código genera siempre el valor de i. Solo "Number is:" es condicional.|En C#, utilice siempre llaves para delimitar los bloques de texto que se incrustan en instrucciones de control.|Agregue llaves: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|"Expresión demasiado compleja" al procesar una plantilla en tiempo de diseño o compilar una plantilla en tiempo de ejecución (preprocesada).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deja de funcionar cuando se intenta inspeccionar código generado por una plantilla en tiempo de ejecución.|El bloque de texto es demasiado largo. T4 convierte los bloques de texto en una expresión de concatenación de cadenas, con un literal de cadena para cada línea de la plantilla. Bloques de texto muy largos pueden sobrepasar los límites de tamaño del compilador.|Divida el bloque de texto largo con un bloque de expresiones como:<br /><br /> `<#= "" #>`|  
+|"Expresión demasiado compleja" al procesar una plantilla en tiempo de diseño o compilar una plantilla en tiempo de ejecución (preprocesada).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deja de funcionar cuando intenta inspeccionar código generado por una plantilla en tiempo de ejecución.|El bloque de texto es demasiado largo. T4 convierte los bloques de texto en una expresión de concatenación de cadenas, con un literal de cadena para cada línea de la plantilla. Bloques de texto muy largos pueden sobrepasar los límites de tamaño del compilador.|Divida el bloque de texto largo con un bloque de expresiones como:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Descripciones de advertencias y soluciones  
  En la tabla siguiente se enumeran las advertencias más frecuentes junto con sus soluciones, si están disponibles.  

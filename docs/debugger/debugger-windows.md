@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc526231ef92fd1cacd384cd48089fa97c59320
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Obtenga información acerca de las ventanas de depurador en Visual Studio
-Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando se alcanza el punto de interrupción y ejecución detiene, haga clic en **Depurar > Windows**.  
+
+Puede abrir la mayoría de las ventanas del depurador mientras está depurando el programa. Para ver una lista de ventanas del depurador, establezca un punto de interrupción e inicie la depuración. Cuando se alcanza el punto de interrupción y ejecución detiene, haga clic en **Depurar > Windows**.
 
 ||||
 |-|-|-|
@@ -39,10 +40,10 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Pilas paralelas|CTR:+MAYÚS+D, S|[Uso de la ventana Pilas paralelas](../debugger/using-the-parallel-stacks-window.md)|
 |Inspección paralela|CTR:+MAYÚS+D, (1, 2, 3, 4)|[Obtener iniciado depurar aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Subprocesos|CTRL+ALT+H|[Depurar utilizando la ventana subprocesos](../debugger/how-to-use-the-threads-window.md)|
-|Módulos|CTRL+ALT+U|[Cómo: Usar la ventana Módulos](../debugger/how-to-use-the-modules-window.md)| 
+|Módulos|CTRL+ALT+U|[Cómo: Usar la ventana Módulos](../debugger/how-to-use-the-modules-window.md)|
 |Subprocesos de GPU|-|[Cómo: Usar la ventana Subprocesos de GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Tareas|CTR:+MAYÚS+D, K|[Usar la ventana Tareas](../debugger/using-the-tasks-window.md)| 
-|Depuración de Python interactiva|MAYÚS+ALT+I|[Introducción a PTVS: Python interactivo](../python/python-interactive-repl-in-visual-studio.md)
+|Tareas|CTR:+MAYÚS+D, K|[Usar la ventana Tareas](../debugger/using-the-tasks-window.md)|
+|Depuración de Python interactiva|MAYÚS+ALT+I|[REPL de Python interactiva](../python/interactive-repl.md)|
 |Consola de JavaScript|CTRL+ALT+V, C|[Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Explorador de DOM|CTRL+ALT+V, D|[Depurar el diseño mediante el Explorador DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Árbol visual dinámico|-|[Inspeccionar las propiedades XAML durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -52,5 +53,6 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Desensamblado|CTRL+ALT+D|[Cómo: Usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md)|
 |Registros|CTRL+ALT+G|[Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>Vea también  
- [Conceptos básicos del depurador](../debugger/debugger-basics.md)
+## <a name="see-also"></a>Vea también
+
+[Conceptos básicos del depurador](../debugger/debugger-basics.md)
