@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3f788b114b4250819c4867136cb1b888c816cf8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 552d256b315d6506911ae4cf8724b33173cd39a4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -31,12 +31,12 @@ Para instalar la compatibilidad de Python para Visual Studio (también conocida 
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 y anterior](#visual-studio-2013-and-earlier)
 
-Para Visual Studio 2015 y las versiones anteriores, también es necesario instalar por separado el intérprete de Python que prefiera (Python 3.5 o las versiones anteriores; la versión 3.6 no es compatible y generará el mensaje "Versión de Python 3.6 no compatible"). Para obtener más información, vea [Entornos de Python](managing-python-environments-in-visual-studio.md). En la misma página también se incluyen instrucciones para agregar un intérprete de Python existente a Visual Studio 2017.
+En Visual Studio 2015 y versiones anteriores, también tiene que instalar por separado el intérprete de Python que prefiera (Python 3.5 o versiones anteriores; la versión 3.6 no es compatible y generará el mensaje "Versión 3.6 de Python no compatible"). Para obtener más información, vea [Entornos de Python](managing-python-environments-in-visual-studio.md). En la misma página también se incluyen instrucciones para agregar un intérprete de Python existente a Visual Studio 2017.
 
 Para probar rápidamente la compatibilidad de Python después de seguir los pasos de instalación, abra la ventana interactiva de Python; para ello, presione Alt-I y escriba `2+2`. Si no ve la salida de `4`, revise los pasos.
 
 > [!Tip]
-> La carga de trabajo de Python incluye la útil extensión Cookiecutter que proporciona una interfaz gráfica de usuario para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Para obtener más información, consulte [Uso de la extensión Cookiecutter](cookiecutter.md).
+> La carga de trabajo de Python incluye la útil extensión Cookiecutter que proporciona una interfaz gráfica de usuario para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Para obtener más información, consulte [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md).
 
 > [!Note]
 > La compatibilidad con Python no está actualmente disponible en Visual Studio para Mac, pero está disponible en Mac y Linux a través de Visual Studio Code. Consulte las [preguntas y respuestas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -64,11 +64,11 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
     | Opción | Description |
     | --- | --- |
     | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones). |
-    | Compatibilidad con plantillas de Cookiecutter | Instala la interfaz de usuario gráfica de Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](cookiecutter.md). |
-    | Compatibilidad web con Python | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](template-web.md). |
+    | Compatibilidad con plantillas de Cookiecutter | Instala la interfaz de usuario gráfica de Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md). |
+    | Compatibilidad web con Python | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](python-web-application-project-templates.md). |
     | Compatibilidad con IoT de Python | Admite el desarrollo de Windows IoT Core con Python. |
     | Herramientas de desarrollo nativo de Python | Instala el compilador de C++ y otros componentes necesarios para desarrollar extensiones nativas para Python. Vea [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md). Instale también la carga de trabajo **Desarrollo para el escritorio con C++** para disfrutar de una compatibilidad plena. |
-    | Herramientas principales de Azure Cloud Services | Proporciona compatibilidad adicional para el desarrollador de Azure Cloud Services en Python. Vea [Proyectos de servicio de nube de Azure](template-azure-cloud-service.md). |
+    | Herramientas principales de Azure Cloud Services | Proporciona compatibilidad adicional para el desarrollador de Azure Cloud Services en Python. Vea [Proyectos de servicio de nube de Azure](python-azure-cloud-service-project-template.md). |
 
 1. Después de la instalación, el instalador proporciona opciones para modificar, iniciar, reparar o desinstalar Visual Studio. El botón **Modificar** cambia a **Actualizar** cuando hay actualizaciones de Visual Studio disponibles para alguno de los componentes instalados. (Después, la opción Modificar está disponible en el menú desplegable). También puede iniciar Visual Studio y el instalador desde el menú Inicio de Windows mediante la búsqueda de "Visual Studio".
 

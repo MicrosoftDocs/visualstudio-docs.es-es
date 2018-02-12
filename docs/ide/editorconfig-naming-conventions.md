@@ -1,10 +1,9 @@
 ---
-title: Convenciones de nomenclatura de .NET para EditorConfig | Microsoft Docs
+title: Convenciones de nomenclatura .NET para archivos EditorConfig | Microsoft Docs
 ms.custom: 
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -12,17 +11,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura para EditorConfig
+# <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
 Las convenciones de nomenclatura están relacionadas con los nombres de elementos de código como clases, propiedades y métodos. Por ejemplo, puede especificar que los miembros públicos deben escribirse en mayúsculas, o que los métodos asincrónicos deben terminar en "Async". Puede aplicar estas reglas si las especifica en un [archivo .editorconfig](../ide/create-portable-custom-editor-options.md). Las infracciones de reglas de nomenclatura aparecen en la lista de errores o como una sugerencia debajo del nombre, según la gravedad que elija para la regla. No es necesario compilar el proyecto para ver las infracciones.
 

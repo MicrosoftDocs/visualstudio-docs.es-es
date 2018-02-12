@@ -9,44 +9,28 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: mikeblome
-ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Prueba de un archivo DLL de Visual C++ en aplicaciones para UWP 
+# <a name="how-to-test-a-visual-c-dll"></a>Cómo probar una DLL de Visual C++
+
 En este tema se describe una manera de crear pruebas unitarias para un archivo DLL de C++ para aplicaciones de Plataforma universal de Windows (UWP) con el marco de pruebas de Microsoft para C++. El archivo DLL de RooterLib muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. Es posible que, después, el archivo DLL se incluya en una aplicación para UWP que muestre a los usuarios cosas interesantes que se pueden hacer con las matemáticas.  
   
  En este tema se muestra cómo usar las pruebas unitarias como el primer paso del desarrollo. En este enfoque, primero tienes que escribir un método de prueba que compruebe un comportamiento concreto en el sistema que estés probando y, después, escribir el código que tenga que superar la prueba. Mediante la realización de cambios en el orden de los procedimientos siguientes, puedes invertir esta estrategia para escribir primero el código que deseas probar y escribe después las pruebas unitarias.  
   
- En este tema también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el DLL que desees probar. También puede incluir las pruebas unitarias directamente en el proyecto DLL o puede crear soluciones independientes para las pruebas unitarias y el archivo .DLL. Consulte [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) para obtener sugerencias sobre qué estructura usar.  
-  
-##  <a name="In_this_topic"></a> En este tema  
-
- [Crear la solución y el proyecto de prueba unitaria](#Create_the_solution_and_the_unit_test_project)  
-  
- [Comprobar que las pruebas se ejecutan en el Explorador de pruebas](#Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Agregar el proyecto DLL a la solución](#Add_the_DLL_project_to_the_solution)  
-  
- [Hacer visibles las funciones DLL para el código de prueba](#make_the_dll_functions_visible_to_the_test_code)  
-  
- [Aumentar las pruebas de forma interactiva y comprobar si se superan](#Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Depurar una prueba fallida](#Debug_a_failing_test)  
-  
- [Refactorizar el código sin cambiar las pruebas](#Refactor_the_code_without_changing_tests)  
+ En este tema también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el DLL que desees probar. También puede incluir las pruebas unitarias directamente en el proyecto DLL o puede crear soluciones independientes para las pruebas unitarias y el archivo .DLL. Consulte [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) para obtener sugerencias sobre qué estructura usar.
   
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria  
   
-1.  En el menú **Archivo**, elija **Nuevo** y después **Nuevo proyecto**.  
+1.  En el menú **Archivo**, elija **Nuevo** > **Nuevo proyecto...**.
   
-2.  En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C++** y elija **UWP**. Después elija **Biblioteca de pruebas unitarias (aplicaciones de UWP)** en la lista de plantillas de proyecto.  
-  
-     ![Crear una biblioteca de pruebas unitarias de C++](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+2.  En el cuadro de diálogo Nuevo proyecto, expanda **Instalado** > **Visual C++** y elija **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
   
 3.  Asigne al proyecto el nombre `RooterLibTests`, especifique la ubicación, asigne a la solución el nombre `RooterLib` y asegúrese de que esté activada la opción **Crear directorio para la solución**.  
   

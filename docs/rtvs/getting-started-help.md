@@ -1,23 +1,26 @@
 ---
 title: Ventana de ayuda de Herramientas de R para Visual Studio | Microsoft Docs
+description: La Ayuda de R se integra directamente en la ventana interactiva de Visual Studio mediante el comando ?. .
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Ayuda de Herramientas de R para Visual Studio
 
@@ -28,7 +31,7 @@ La Ayuda de R se integra directamente en la ventana R interactivo de Visual Stud
 > [!Tip]
 > La ventana de ayuda, como las demás de Visual Studio, se puede organizar y acoplar como quiera. Vea [Personalizar los diseños de ventana de Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Para abrir los resultados de ayuda en un explorador, seleccione el menú **Herramientas de R > Opciones** y establezca la propiedad **Explorador de ayuda de R** en `External`. Vea [Opciones](options.md).
+> Para abrir los resultados de ayuda en un explorador, seleccione el menú **Herramientas de R > Opciones** y establezca la propiedad **Explorador de ayuda de R** en `External`. Vea [Opciones](options-for-r-tools-in-visual-studio.md).
 
 Para buscar en la ayuda, use el comando `??` seguido por el término de búsqueda. Use comillas si el término de búsqueda contiene espacios en blanco:
 
@@ -52,7 +55,7 @@ Los desarrolladores suelen buscar en la documentación de R para obtener ayuda a
     ![Invocación de ayuda a través del menú contextual](media/help-right-click.png)
 
 > [!Tip]
-> Para abrir la ayuda integrada en un explorador, seleccione **Herramientas de R > Opciones** y establezca **Explorador web mediante F1** en `External`. Vea [Opciones](options.md).
+> Para abrir la ayuda integrada en un explorador, seleccione **Herramientas de R > Opciones** y establezca **Explorador web mediante F1** en `External`. Vea [Opciones](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Búsqueda integrada de StackOverflow
 
@@ -64,4 +67,4 @@ Puede cambiar la cadena anexada de ámbito, `R site:stackoverflow`, mediante la 
 
 ![Cambio a la opción Cadena de búsqueda en la Web mediante F1](media/options-dialog.png)
 
-Si prefiere que se muestren resultados en un explorador, cambie la opción **Explorador web mediante F1** tal como se describe en [Opciones](options.md).
+Si prefiere que se muestren resultados en un explorador, cambie la opción **Explorador web mediante F1** tal como se describe en [Opciones](options-for-r-tools-in-visual-studio.md).

@@ -11,12 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.workload: multiple
-ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
 Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. A continuación le indicamos cómo debe notificarnos un problema para que podamos diagnosticarlo y corregirlo.  
@@ -24,8 +25,9 @@ Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicar
 ## <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 Si aún no lo ha hecho, inicie sesión Visual Studio a fin de notificar un problema. De este modo, podrá informarnos sobre los problemas que experimente y votar o comentarlos. También puede votar o comentar otros problemas que vea publicados.
 
-1.  Haga clic en **Iniciar sesión** en la parte derecha de la herramienta, como se muestra en la siguiente captura de pantalla.
-2.  Siga las instrucciones en pantalla para iniciar sesión.
+1.  En Visual Studio, seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema**.
+2.  Si es necesario, seleccione **Iniciar sesión**; se encuentra en la parte derecha de la herramienta, tal y como se muestra en la siguiente captura de pantalla.
+3.  Siga las instrucciones en pantalla para iniciar sesión.
 
  ![Iniciar sesión para notificar un problema](../ide/media/sign-in-new-ux.png "Iniciar sesión para notificar un problema")  
 

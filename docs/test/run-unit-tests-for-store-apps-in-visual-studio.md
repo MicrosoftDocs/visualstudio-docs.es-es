@@ -1,5 +1,5 @@
 ---
-title: "Ejecución de pruebas unitarias para aplicaciones para UWP en Visual Studio | Microsoft Docs"
+title: "Ejecución de pruebas unitarias en Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,49 +9,23 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: c06ad430664f1e6cd5010e4af5d8d28efa1f8d25
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Ejecución de pruebas unitarias en aplicaciones para UWP en Visual Studio
-En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de pruebas de Microsoft Visual Studio.  
-  
-> [!NOTE]
->  Los temas de esta sección describen la funcionalidad de Visual Studio Express para Windows 8. Visual Studio Community, Enterprise y Professional proporcionan características adicionales para las pruebas unitarias.  
->   
->  -   Use cualquier marco de pruebas unitarias de código abierto o de terceros que haya creado un adaptador complementario para el Explorador de pruebas de Microsoft. También puede analizar y mostrar información de cobertura de código para las pruebas.  
-> -   Ejecute las pruebas después de cada compilación. También puede usar Microsoft Fakes, un marco de aislamiento para código administrado para centrar sus pruebas en su propio código sustituyendo el código de prueba para el sistema y la funcionalidad de terceros.  
->   
->  Para obtener más información, vea [Haga una prueba unitaria de su código](../test/unit-test-your-code.md) en la biblioteca de MSDN.  
-  
-##  <a name="BKMK_In_this_topic"></a> En este tema  
- [Marcos de pruebas unitarias y proyectos de prueba](#BKMK_Unit_test_frameworks_and_test_projects)  
-  
- [Ejecutar pruebas en el Explorador de pruebas](#BKMK_Running_tests_in_Test_Explorer)  
-  
--   [Ejecutar pruebas](#BKMK_Running_tests)  
-  
- [Ver los resultados de la prueba](#BKMK_Viewing_test_results)  
-  
--   [Ver los detalles de la prueba](#BKMK_Viewing_test_details)  
-  
--   [Ver el código fuente de un método de prueba](#BKMK_Viewing_the_source_code_of_a_test_method)  
-  
- [Organizar la lista de pruebas](#BKMK_Organizing_the_test_list)  
-  
--   [Agrupar las pruebas](#BKMK_Grouping_tests)  
-  
--   [Buscar y filtrar la lista de pruebas](#BKMK_Searching_and_filtering_the_test_list)  
-  
- [Depurar las pruebas unitarias](#BKMK_Debugging_unit_tests)  
-  
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Marcos de pruebas unitarias y proyectos de prueba  
- Visual Studio Express para aplicaciones para UWP incluye los marcos de pruebas unitarias de Microsoft para código en C++ administrado y nativo. El Explorador de pruebas puede ejecutar pruebas de varios proyectos de prueba en una solución y desde las clases de prueba que forman parte de los proyectos de código de producción. Proyectos de prueba pueden ser cualquier combinación de los marcos de pruebas unitarias de Visual C++, Visual C# y Visual Basic. Cuando se escribe el código sometido a prueba para .NET Framework, el proyecto de prueba se puede escribir en cualquier lenguaje de .NET Framework, independientemente del lenguaje del código de destino. Los proyectos de código de C/C ++ nativos deben probarse con el marco de pruebas unitarias de C++.  
-  
+# <a name="run-unit-tests-in-visual-studio"></a>Ejecución de pruebas unitarias en Visual Studio
+
+En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de pruebas de Microsoft Visual Studio.
+
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Marcos de pruebas unitarias y proyectos de prueba
+
+Visual Studio incluye los marcos de pruebas unitarias de Microsoft para código administrado y código C++ nativo. El Explorador de pruebas puede ejecutar pruebas de varios proyectos de prueba en una solución y desde las clases de prueba que forman parte de los proyectos de código de producción. Proyectos de prueba pueden ser cualquier combinación de los marcos de pruebas unitarias de Visual C++, Visual C# y Visual Basic. Cuando se escribe el código sometido a prueba para .NET Framework, el proyecto de prueba se puede escribir en cualquier lenguaje de .NET Framework, independientemente del lenguaje del código de destino. Los proyectos de código de C/C ++ nativos deben probarse con el marco de pruebas unitarias de C++.
+
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ejecutar pruebas en el Explorador de pruebas  
  Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.  
   
@@ -117,7 +91,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 1.  En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.  
   
     > [!NOTE]
-    >  Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.  
+    > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.  
   
 2.  En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.  
   

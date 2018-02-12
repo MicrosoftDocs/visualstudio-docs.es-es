@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visual Studio permite comprender mejor el uso de hardware de alto nivel con la aplicación Direct3D. Con ella puede determinar si el rendimiento de la aplicación está enlazado a la CPU o a la GPU, y obtener más información sobre cómo usar el hardware de la plataforma con mayor eficacia. La herramienta Uso de GPU es compatible con aplicaciones que usan Direct3D 12, Direct3D 11 y Direct3D 10. No es compatible con otras API de gráficos, como Direct2D u OpenGL.  
@@ -118,7 +118,7 @@ A partir de Visual Studio 2017, estos datos se pueden abrir con [GPUView](/windo
 |**Identificador de subproceso**|El identificador de subproceso del que procede el evento.|  
   
 > [!IMPORTANT]
->  Para la atribución de eventos se requiere Windows 8.1. Además, si la GPU o el controlador no son compatibles con las características de instrumentación necesarias, todos los eventos se definirán como "sin atributos". Si experimenta este problema, actualice el controlador de GPU e inténtelo de nuevo. Para obtener más información, vea [Compatibilidad de hardware y controladores](#hwsupport) más adelante.  
+>  Además, si la GPU o el controlador no son compatibles con las características de instrumentación necesarias, todos los eventos se definirán como "sin atributos". Si experimenta este problema, actualice el controlador de GPU e inténtelo de nuevo. Para obtener más información, vea [Compatibilidad de hardware y controladores](#hwsupport) más adelante.  
   
 ## <a name="gpu-usage-settings"></a>Configuración de Uso de GPU  
  Si no desea comenzar a recopilar la información de generación de perfiles en cuanto se inicia la aplicación, puede configurar la herramienta Uso de GPU para posponer esta acción. La información de generación de perfiles puede alcanzar un tamaño considerable, por lo que esta posibilidad de retardo puede resultar interesante si sabe que las ralentizaciones en el rendimiento de la aplicación se producirán más tarde.  

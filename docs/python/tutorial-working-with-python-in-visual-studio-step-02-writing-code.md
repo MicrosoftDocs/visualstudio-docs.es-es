@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Paso 2: Escritura y ejecución de código
 
@@ -45,12 +45,12 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
     print("Hello, Visual Studio")
     ```
 
-1. Tenga en cuenta el color de la sintaxis que diferencia la instrucción `print` del argumento `"Hello Visual Studio"`. Además, elimine temporalmente el último `"` de la cadena y observe cómo Visual Studio mostrará un subrayado rojo para el código que contiene errores de sintaxis. Luego, vuelva a colocar `"` para corregir el código.
+1. Tenga en cuenta el color de la sintaxis que diferencia la instrucción `print` del argumento `"Hello Visual Studio"`. Además, elimine temporalmente el último `"` de la cadena y observe cómo Visual Studio muestra un subrayado rojo en el código que contiene errores de sintaxis. Luego, vuelva a colocar `"` para corregir el código.
 
     ![Color de la sintaxis de IntelliSense y resaltado de errores](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Puesto que el entorno de desarrollo de cada uno es muy personal, Visual Studio ofrece un control completo de su apariencia y comportamiento. Seleccione el comando de menú **Herramientas > Opciones** y explore los valores de las fichas **Entorno** y **Editor de texto**. De forma predeterminada, solo verá un número limitado de opciones. Para ver todas las opciones de todos los lenguajes de programación, seleccione **Mostrar todas las configuraciones** en la parte inferior del cuadro de diálogo. 
+    > Puesto que el entorno de desarrollo de cada uno es muy personal, Visual Studio ofrece un control completo de su apariencia y comportamiento. Seleccione el comando de menú **Herramientas > Opciones** y explore los valores de las fichas **Entorno** y **Editor de texto**. De forma predeterminada, solo se ve un número limitado de opciones. Para ver todas las opciones de todos los lenguajes de programación, seleccione **Mostrar todas las configuraciones** en la parte inferior del cuadro de diálogo. 
 
 1. Ejecute el código que ha escrito hasta este punto pulsando Ctrl + F5 o seleccionando el elemento de menú **Depurar > Iniciar sin depurar**. Visual Studio le advierte si todavía hay errores en el código.
 
@@ -80,7 +80,7 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
     ```
 
     > [!Tip]
-    > Las finalizaciones se activan con las subcadenas a medida que escribe, mostrando coincidencias con partes de palabras, letras al principio de las palabras e incluso caracteres omitidos. Vea [Edición de código: finalizaciones](code-editing.md#completions) para obtener información.
+    > Las finalizaciones se activan con las subcadenas a medida que escribe, mostrando coincidencias con partes de palabras, letras al principio de las palabras e incluso caracteres omitidos. Vea [Edición de código: finalizaciones](editing-python-code-in-visual-studio.md#completions) para obtener información.
 
 1. Agregue un poco más de código para imprimir los valores de coseno de 360 grados:
 
@@ -98,7 +98,7 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
 
 ## <a name="going-deeper"></a>Mayor profundización
 
-- [Edición de código](code-editing.md)
-- [Formato de código](code-formatting.md)
-- [Refactorización de código](code-refactoring.md)
-- [Uso de PyLint](code-pylint.md)
+- [Edición de código](editing-python-code-in-visual-studio.md)
+- [Formato de código](formatting-python-code.md)
+- [Refactorización de código](refactoring-python-code.md)
+- [Uso de PyLint](linting-python-code.md)

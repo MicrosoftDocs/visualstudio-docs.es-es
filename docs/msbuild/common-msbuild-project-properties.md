@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: e1da05cbbb2415ad6ce701e1330f9e9e60568aeb
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en los archivos .targets que proporciona MSBuild.  
@@ -50,7 +52,7 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |BaseOutputPath|Especifica la ruta de acceso base del archivo de salida. Si se establece, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usará `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Ejemplo de sintaxis: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|Carpeta de nivel superior donde se crean todas las carpetas de resultados intermedios específicas de la configuración. El valor predeterminado es `obj\`. El siguiente código muestra un ejemplo: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|Valor booleano que indica si las referencias del proyecto se compilan o limpian en paralelo cuando se utiliza [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] con varios procesadores. El valor predeterminado es `true`, que indica que los proyectos se compilarán en paralelo si el sistema tiene varios núcleos o procesadores.|  
-|BuildProjectReferences|Valor booleano que indica si [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compilará las referencias de proyecto. Establezca su valor en `false` si va a compilar su proyecto en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; en caso contrario, use `true`.|  
+|BuildProjectReferences|Valor booleano que indica si [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compilará las referencias de proyecto. Establezca el valor automáticamente en `false` si va a compilar el proyecto en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; en caso contrario, use `true`. Puede especificarse `/p:BuildProjectReferences=false` en la línea de comandos para evitar la comprobación de que los proyectos a los que se hace referencia están actualizados.|  
 |CleanFile|Nombre del archivo que se utilizará como "caché limpia". La memoria caché limpia es una lista de archivos generados que se eliminarán durante la operación de limpieza. El proceso de compilación coloca el archivo en la ruta de acceso de los resultados intermedios.<br /><br /> Esta propiedad solo especifica nombres de archivo sin información sobre su ruta de acceso.|  
 |CodePage|Especifica la página de códigos que se va a utilizar para todos los archivos de código fuente en la compilación. Esta propiedad es equivalente al modificador `/codepage` del compilador.|  
 |CompilerResponseFile|Archivo de respuesta opcional que se puede pasar a las tareas del compilador.|  
@@ -71,7 +73,7 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |ExcludeDeploymentUrl|La [tarea GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) agrega una etiqueta deploymentProvider al manifiesto de implementación si el archivo de proyecto incluye alguno de los elementos siguientes:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Sin embargo, mediante ExcludeDeploymentUrl, puede evitar que la etiqueta deploymentProvider se agregue al manifiesto de implementación aunque se especifique alguna de las direcciones URL anteriores. Para ello, agregue la siguiente propiedad al archivo de proyecto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Nota:** ExcludeDeploymentUrl no se expone en el IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y solo se puede establecer manualmente editando el archivo de proyecto. Al establecer esta propiedad, la publicación desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no resulta afectada; es decir, la etiqueta deploymentProvider se agregará de igual modo a la dirección URL especificada por PublishUrl.|  
 |FileAlignment|Especifica, en bytes, dónde se alinean las secciones del archivo de salida. Los valores válidos son 512, 1024, 2048, 4096, 8192. Esta propiedad es equivalente al modificador `/filealignment` del compilador.|  
 |FrameworkPathOverride|Especifica la ubicación de mscorlib.dll y microsoft.visualbasic.dll. Este parámetro es equivalente al modificador `/sdkpath` del compilador de vbc.exe.|  
-|GenerateDocumentation|(Solo Visual Basic .NET) Se trata de un parámetro booleano que indica si la compilación generará la documentación. Si es `true`, la compilación genera la información de documentación y la coloca en un archivo .xml junto con el nombre del archivo ejecutable o la biblioteca creada por la tarea de compilación.|
+|GenerateDocumentation|(Solo Visual Basic) Parámetro booleano que indica si la compilación generará la documentación. Si es `true`, la compilación genera la información de documentación y la coloca en un archivo .xml junto con el nombre del archivo ejecutable o la biblioteca creada por la tarea de compilación.|
 |IntermediateOutputPath|Ruta de acceso intermedia completa de los resultados derivada de `BaseIntermediateOutputPath`, si no se especificó ninguna ruta de acceso. Por ejemplo, \obj\debug\\. Si se invalida esta propiedad, el valor de `BaseIntermediateOutputPath` no tiene ningún efecto.|  
 |KeyContainerName|Nombre del contenedor de claves de nombre seguro.|  
 |KeyOriginatorFile|Nombre del archivo de claves de nombre seguro.|  

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 067684c7b5064e096849afe69d2f0db1bcc75ea6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Uso de Python en Visual Studio (Windows)
 
@@ -32,7 +32,7 @@ Visual Studio en Windows proporciona compatibilidad con [código abierto](https:
 Para comenzar:
 
 - Siga las [instrucciones de instalación](installing-python-support-in-visual-studio.md) para configurar la carga de trabajo de Python.
-- Consulte una o varias de las guías de inicio rápido para crear un proyecto. Si no está seguro, comience por [Create a project from a template (Crear un proyecto a partir de una plantilla)](quickstart-02-project-from-template.md).
+- Consulte una o varias de las guías de inicio rápido para crear un proyecto. Si no está seguro, comience por [Create a project from a template (Crear un proyecto a partir de una plantilla)](quickstart-02-python-in-visual-studio-project-from-template.md).
 - Siga el tutorial [Working with Python in Visual Studio (Trabajar con Python en Visual Studio)](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) para obtener una guía completa.
 - Luego, use los vínculos de la tabla siguiente para explorar las características relacionadas con Python y las funcionalidades de Visual Studio.
 
@@ -42,11 +42,11 @@ Para comenzar:
 | [Plantillas de proyecto](managing-python-projects-in-visual-studio.md#project-templates) | Crea rápidamente una estructura de proyecto para proyectos de consola, web, Azure, datos científicos, entre otros. | [Plantillas de Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
 | Compatibilidad con varios intérpretes | Admite varias versiones de CPython e IronPython. | N/D |
 | Compatibilidad con IPython | Incluye compatibilidad para IPython o Jupyter en REPL para gráficos en línea, .NET y Windows Presentation Foundation (WPF). | N/D |
-| [Edición enriquecida, IntelliSense y comprensión del código](code-editing.md) | Incluye colores de sintaxis, autocompletado en todo el código y las bibliotecas, [formateo de código](code-formatting.md), ayuda para las firmas, vista de clases, Ir a definición, Buscar todas las referencias, fragmentos de código, [refactorización](code-refactoring.md), [PyLint](code-pylint.md) y mucho más. | [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [Ventana interactiva](interactive-repl.md) | Proporciona una experiencia rápida de REPL para Python con la capacidad de resaltar fácilmente una parte del código y enviarla a la ventana interactiva. | N/D |
-| [Depuración repleta de características](debugging.md) | La depuración se puede realizar con o sin un proyecto de Visual Studio, lo que incluye la posibilidad de depurar un ejecutable existente, [Depuración en modo mixto de Python/C++](debugging-mixed-mode.md), [depuración remota](debugging-cross-platform-remote.md) en Windows/Linux/Mac, [depuración remota en Azure](debugging-azure-remote.md) y depuración en la ventana interactiva. | [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md) |
-| [Herramientas de generación de perfiles con informes completos](profiling.md) | Explora cómo se invierte el tiempo dentro de la aplicación, incluida la capacidad de comparar el rendimiento entre diferentes ejecuciones de generación de perfiles. | [Herramientas de generación de perfiles](../profiling/profiling-tools.md) (no todas las características de generación de perfiles de Visual Studio están disponibles para Python) |
-| [Herramientas de pruebas unitarias](unit-testing.md) | Detecte, ejecute y administre pruebas en el Explorador de pruebas de Visual Studio y depure fácilmente pruebas unitarias. | [Haga una prueba unitaria de su código](../test/unit-test-your-code.md) |
+| [Edición enriquecida, IntelliSense y comprensión del código](editing-python-code-in-visual-studio.md) | Incluye colores de sintaxis, autocompletado en todo el código y las bibliotecas, [formateo de código](formatting-python-code.md), ayuda para las firmas, vista de clases, Ir a definición, Buscar todas las referencias, fragmentos de código, [refactorización](refactoring-python-code.md), [PyLint](linting-python-code.md) y mucho más. | [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Ventana interactiva](python-interactive-repl-in-visual-studio.md) | Proporciona una experiencia rápida de REPL para Python con la capacidad de resaltar fácilmente una parte del código y enviarla a la ventana interactiva. | N/D |
+| [Depuración repleta de características](debugging-python-in-visual-studio.md) | La depuración se puede realizar con o sin un proyecto de Visual Studio, lo que incluye la posibilidad de depurar un ejecutable existente, [Depuración en modo mixto de Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md), [depuración remota en Linux](debugging-python-code-on-remote-linux-machines.md) para Windows/Linux/Mac, [depuración remota en Azure](debugging-remote-python-code-on-azure.md) y depuración en la ventana interactiva. | [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Herramientas de generación de perfiles con informes completos](profiling-python-code-in-visual-studio.md) | Explora cómo se invierte el tiempo dentro de la aplicación, incluida la capacidad de comparar el rendimiento entre diferentes ejecuciones de generación de perfiles. | [Herramientas de generación de perfiles](../profiling/profiling-tools.md) (no todas las características de generación de perfiles de Visual Studio están disponibles para Python) |
+| [Herramientas de pruebas unitarias](unit-testing-python-in-visual-studio.md) | Detecte, ejecute y administre pruebas en el Explorador de pruebas de Visual Studio y depure fácilmente pruebas unitarias. | [Haga una prueba unitaria de su código](../test/unit-test-your-code.md) |
 
 La carga de trabajo de Python también incluye el [SDK de Azure para Python](azure-sdk-for-python.md), lo que simplifica el consumo de servicios de Azure desde aplicaciones de Windows, Mac OS X y Linux.
 
