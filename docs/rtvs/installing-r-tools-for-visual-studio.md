@@ -8,19 +8,19 @@ ms.suite:
 ms.technology:
 - devlang-r
 ms.tgt_pltfrm: 
-ms.devlang: r
+dev_langs:
+- R
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 8efb6b6213c214960381903c211704d70ebdc475
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Cómo instalar Herramientas de R para Visual Studio
 
