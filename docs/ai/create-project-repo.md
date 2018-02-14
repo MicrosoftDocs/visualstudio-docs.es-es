@@ -1,3 +1,5 @@
+---
+---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Clonar un repositorio de código de Python en Visual Studio
 
 Después de [instalar Visual Studio Tools para IA](installation.md), puede clonar fácilmente un repositorio de código de Python y crear un proyecto a partir de él.

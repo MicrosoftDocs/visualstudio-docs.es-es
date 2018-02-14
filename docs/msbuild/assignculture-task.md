@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-caps.latest.revision: "10"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 765f74a80e98737b65fb913113b2879ce4609248
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 40fb47caea1b9fcb0d25d45495cf3e3c1d3e04fb
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="assignculture-task"></a>AssignCulture (Tarea)
 Esta tarea acepta una lista de elementos que puede contener una cadena de identificador de referencia cultural .NET válida como parte del nombre de archivo y genera elementos que tengan metadatos con el nombre `Culture` que contiene el correspondiente identificador de referencia cultural. Por ejemplo, el nombre de archivo Form1.fr-fr.resx tiene un indicador de referencia cultural "fr-fr" incluido, por lo que esta tarea genera un elemento que tiene el mismo nombre de archivo con los metadatos de `Culture` igual a `fr-fr`. La tarea también genera una lista de nombres de archivo con la referencia cultural que se quitó del nombre de archivo.  

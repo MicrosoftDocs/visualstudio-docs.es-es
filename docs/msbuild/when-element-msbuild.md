@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#When
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#When
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - <When> Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
-caps.latest.revision: "9"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ed1fee60a7cda6d260833ba60d37a7a7a762d58e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 99da11e22b7e74feee4da4fa25b502bac563f0b2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 Especifica un posible bloque de código que el elemento `Choose` puede seleccionar.  

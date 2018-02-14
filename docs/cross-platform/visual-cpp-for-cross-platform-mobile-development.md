@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 0bb872d6-981b-4c96-9143-fcec5336bf0d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 699fc53d0679e303e9c661c54634f162d95e2a2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: 2ae49bb09d30122297efc66779f808e0c39dd0d7
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ para el desarrollo móvil multiplataforma.
 Puede compilar aplicaciones nativas de C++ para dispositivos iOS, Android y Windows, y compartir código común en bibliotecas compiladas para iOS, Android y Windows mediante Visual C++ para desarrollo móvil multiplataforma. Se trata de una opción disponible en Visual Studio de 2015 que instala los SDK y las herramientas que necesita para el desarrollo multiplataforma de bibliotecas compartidas y las aplicaciones nativas. Cuando se instala, puede usar Visual C++ para crear código que se ejecuta dispositivos y plataformas iOS y Android, además de en Windows, Windows Phone y Xbox.  

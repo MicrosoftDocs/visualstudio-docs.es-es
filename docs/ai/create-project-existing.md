@@ -1,3 +1,5 @@
+---
+---
 # <a name="create-an-ai-project-from-existing-code"></a>Crear un proyecto de IA a partir de código existente
 
 Una vez que haya [instalado Visual Studio Tools para IA](installation.md), es fácil incorporar el código de Python existente a un proyecto de Visual Studio.

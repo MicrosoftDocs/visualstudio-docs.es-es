@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Choose
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#Choose
 dev_langs:
 - VB
 - CSharp
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - <Choose> Element [MSBuild]
 - Choose Element [MSBuild]
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 38ddfed161e04948eb3725192c95025dec5c473b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0b74b872ab297c31ae59c826fe0e880a8b8a9c80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 Evalúa los elementos secundarios para seleccionar un conjunto de elementos `ItemGroup` o `PropertyGroup` para evaluar.  

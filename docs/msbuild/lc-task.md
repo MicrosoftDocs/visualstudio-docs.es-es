@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#LC
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#LC
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, LC task
 - LC task [MSBuild]
 ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
-caps.latest.revision: "15"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d0c676cf2e014027e1e553b10eff5bae3749849b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: bf308bb5693363406bb954cdb63ab5fd25772cb9
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="lc-task"></a>LC (Tarea)
 Ajusta LC.exe, que genera un archivo .license de un archivo .licx. Para obtener más información sobre LC.exe, vea [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).  

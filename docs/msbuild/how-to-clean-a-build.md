@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-caps.latest.revision: "13"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5316a6f7f206ce5f28c6a76d13bf6dc8e4143125
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6a459733e94657a711e6b28a0ae00952afae0543
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-clean-a-build"></a>Cómo: Limpiar los resultados de una compilación
 Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [Referencia de tareas](../msbuild/msbuild-task-reference.md).  

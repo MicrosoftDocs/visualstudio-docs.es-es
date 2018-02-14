@@ -1,3 +1,5 @@
+---
+---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Buscar en almacenamiento para cargar datos o descargar registros y modelos
 
 Puede buscar en todo el almacenamiento en el equipo remoto o recurso compartido de archivos de Azure para habilitar la carga de datos o la descarga de modelos y registros. O bien, si quiere tener acceso a los registros y salidas de trabajo para un trabajo específico, también puede hacerlo en el explorador de trabajos
