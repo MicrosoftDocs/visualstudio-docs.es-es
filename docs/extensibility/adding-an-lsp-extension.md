@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98bbebfb5f82d10179897e94b6a49cbb3d8c6220
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de idioma
 
@@ -52,7 +52,7 @@ Las siguientes características LSP hasta ahora se admiten en Visual Studio:
 Mensaje | Tiene compatibilidad en Visual Studio
 --- | ---
 inicializar | sí
-inicializado | 
+inicializado | sí
 cierre | sí
 Salir | sí
 $/ cancelRequest | sí
@@ -72,12 +72,12 @@ textDocument/didOpen | sí
 textDocument/didChange | sí
 textDocument/willSave |
 textDocument/willSaveWaitUntil |
-textDocument/didSave |
+textDocument/didSave | sí
 textDocument/didClose | sí
 textDocument/finalización | sí
 finalización/resolve | sí
-textDocument/mantener el mouse |
-textDocument/signatureHelp |
+textDocument/mantener el mouse | sí
+textDocument/signatureHelp | sí
 textDocument/referencias | sí
 textDocument/documentHighlight |
 textDocument/documentSymbol | sí
@@ -210,6 +210,16 @@ namespace MockLanguageExtension
         public async Task OnLoadedAsync()
         {
             await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+        }
+
+        public async Task OnServerInitializeFailedAsync(Exception e)
+        {
+            return Task.CompletedTask;
+        }
+
+        public async Task OnServerInitializedAsync()
+        {
+            return Task.CompletedTask;
         }
     }
 }
@@ -428,6 +438,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     public async Task<string> SendServerCustomMessage(string test)
     {
         return await this.customMessageRpc.InvokeAsync<string>("OnCustomRequest", test);
+    }
 }
 ```
 
@@ -440,7 +451,6 @@ Cada mensaje LSP tiene su propia interfaz de capa intermedia de interceptación.
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 {
-
     public object MiddleLayer => MiddleLayerProvider.Instance;
 
     private class MiddleLayerProvider : ILanguageClientWorkspaceSymbolProvider
@@ -459,6 +469,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
             // Only return symbols that are "files"
             return symbols.Where(sym => string.Equals(new Uri(sym.Location.Uri).Scheme, "file", StringComparison.OrdinalIgnoreCase)).ToArray();
         }
+    }
 }
 ```
 
