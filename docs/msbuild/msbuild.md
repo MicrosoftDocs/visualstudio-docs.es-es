@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 caps.latest.revision: 
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] es una plataforma para compilar aplicaciones. Este motor, que también se conoce como MSBuild, proporciona un esquema XML para un archivo del proyecto que controla cómo la plataforma de compilación procesa y compila el software. Visual Studio utiliza MSBuild, pero no depende de Visual Studio. Al invocar msbuild.exe en el archivo de proyecto o de solución, puede orquestar y compilar productos en entornos donde no está instalado Visual Studio.  
@@ -89,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 >  Antes de descargar un proyecto, asegúrese de que su código es de confianza.  
   
 ##  <a name="BKMK_ProjectFile"></a> Archivo del proyecto  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza un formato de archivo del proyecto basado en XML que es sencillo y extensible. El formato de archivo del proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] permite a los desarrolladores describir los elementos que se van a compilar, y también cómo se van a compilar en diferentes sistemas operativos y configuraciones. Además, el formato del archivo de proyecto permite a los desarrolladores crear reglas de compilación reutilizables que se pueden factorizar en archivos independientes para que las compilaciones se ejecuten de forma coherente en los distintos proyectos del producto.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa un formato de archivo del proyecto basado en XML que es sencillo y extensible. El formato de archivo del proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] permite a los desarrolladores describir los elementos que se van a compilar, y también cómo se van a compilar en diferentes sistemas operativos y configuraciones. Además, el formato del archivo de proyecto permite a los desarrolladores crear reglas de compilación reutilizables que se pueden factorizar en archivos independientes para que las compilaciones se ejecuten de forma coherente en los distintos proyectos del producto.  
   
  En las secciones siguientes se describen algunos de los elementos básicos del formato de archivo de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obtener un tutorial sobre cómo crear un archivo del proyecto básico, consulte [Tutorial: Crear un archivo del proyecto desde cero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
@@ -142,7 +141,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  La lógica de ejecución de una tarea se escribe en código administrado y se asigna a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mediante el elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Puede escribir una tarea creando un tipo administrado que implemente la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información sobre cómo escribir tareas, consulte [Escribir tareas](../msbuild/task-writing.md).  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye tareas comunes que puede modificar para que se ajusten a sus necesidades.  Algunos ejemplos son [Copy](../msbuild/copy-task.md), que copia archivos, [MakeDir](../msbuild/makedir-task.md), que crea directorios, y [Csc](../msbuild/csc-task.md), que compila archivos de código fuente de Visual C#. Para obtener una lista de las tareas disponibles junto con información de uso, consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] incluye tareas comunes que puede modificar para adaptarlas a sus necesidades.  Algunos ejemplos son [Copy](../msbuild/copy-task.md), que copia archivos, [MakeDir](../msbuild/makedir-task.md), que crea directorios, y [Csc](../msbuild/csc-task.md), que compila archivos de código fuente de Visual C#. Para obtener una lista de las tareas disponibles junto con información de uso, consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
  Para ejecutar una tarea en un archivo del proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], se crea un elemento con el nombre de la tarea como elemento secundario de un elemento [Target](../msbuild/target-element-msbuild.md). Las tareas aceptan normalmente parámetros, que se pasan como atributos del elemento. Tanto las propiedades como los elementos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se pueden utilizar como parámetros. Por ejemplo, el código siguiente llama a la tarea [MakeDir](../msbuild/makedir-task.md) y le pasa el valor de la propiedad `BuildDir` que se declaró en el ejemplo anterior.  
   
@@ -171,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Puede registrar errores de compilación, advertencias y mensajes en la consola o en otro dispositivo de salida. Para obtener más información, consulte [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) y [Registro de MSBuild](../msbuild/logging-in-msbuild.md).  
   
 ##  <a name="BKMK_VisualStudio"></a> Utilizar MSBuild en Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza el formato de archivo de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para almacenar información de compilación sobre proyectos administrados. La configuración del proyecto que se agrega o se modifica mediante la interfaz de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se refleja en el archivo .*proj que se genera para cada proyecto. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza una instancia hospedada de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para compilar proyectos administrados. Esto significa que un proyecto administrado se puede compilar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o en el símbolo del sistema (aunque [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no esté instalado) y los resultados serán idénticos.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usa el formato de archivo de proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para almacenar información de compilación sobre proyectos administrados. La configuración del proyecto que se agrega o se modifica mediante la interfaz de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se refleja en el archivo .*proj que se genera para cada proyecto. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza una instancia hospedada de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para compilar proyectos administrados. Esto significa que un proyecto administrado se puede compilar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o en el símbolo del sistema (aunque [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no esté instalado) y los resultados serán idénticos.  
   
  Para obtener un tutorial sobre cómo utilizar MSBuild en Visual Studio, consulte [Tutorial: Cómo utilizar MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   

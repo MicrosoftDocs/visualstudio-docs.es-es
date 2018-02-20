@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desarrolladores de .NET
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 01/23/2018
 [Documentación: uso de IntelliSense](using-intellisense.md)  
 [Documentación: características del editor inteligente](writing-code-in-the-code-and-text-editor.md)
 
-Visual Studio tiene una comprensión profunda de su código a través del compilador Roslyn para proporcionarle características de edición automática, como colores de sintaxis, finalización de código, revisión ortográfica de variables que se han escrito incorrectamente, resolución de tipos no importados, esquematización, visualizadores de estructuras, [CodeLens](find-code-changes-and-other-history-with-codelens.md), jerarquía de llamadas, información rápida sobre la que se puede mantener el mouse, ayuda sobre parámetros, así como herramientas para refactorización, aplicación de acciones rápidas y generación de código.
+Visual Studio tiene una comprensión profunda de su código a través del compilador de .NET ("Roslyn"), que le proporciona características de edición automática, como colores de sintaxis, finalización de código, revisión ortográfica de variables que se han escrito incorrectamente, resolución de tipos no importados, esquematización, visualizadores de estructuras, [CodeLens](find-code-changes-and-other-history-with-codelens.md), jerarquía de llamadas, información rápida sobre la que se puede mantener el mouse, ayuda sobre parámetros, así como herramientas para refactorización, aplicación de acciones rápidas y generación de código.
 
 ![Editor de código inteligente de Visual Studio](../ide/media/VSIDE_Productivity_SmartCodeEditor.png "VSIDE_Productivity_SmartCodeEditor")
 

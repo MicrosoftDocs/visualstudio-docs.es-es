@@ -18,47 +18,61 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: db3cf85576e6c46aca14897f7244cd0f56d8d5c2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Preguntas frecuentes del Explorador de pruebas de Visual Studio
 
 ## <a name="test-discovery"></a>Detección de pruebas
 
-### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-have-theories-custom-adapters-custom-traits-use-ifdefs-or-are-dynamically-defined-how-can-i-discover-these-tests"></a>1. El Explorador de pruebas no detecta las pruebas que tienen teorías, adaptadores personalizados o rasgos personalizados, que usan #ifdefs o que están definidas dinámicamente. ¿Cómo puedo detectar estas pruebas?
+### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. El Explorador de pruebas no detecta las pruebas que están definidas dinámicamente (por ejemplo, teorías, adaptadores personalizados, rasgos personalizados, #ifdefs, etc.) ¿Cómo puedo detectar estas pruebas?
 
   Compile el proyecto y asegúrese de que está activada la detección basada en ensamblados en **Herramientas > Opciones > Prueba**.
 
-  La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824), que es una detección de pruebas basada en el origen, no puede detectar pruebas que usan teorías, adaptadores personalizados, rasgos personalizados o instrucciones `#ifdef`, o que están definidas dinámicamente de alguna otra manera. Se requiere una compilación para que estas pruebas se puedan detectar con precisión. En las versiones preliminares de la versión 15.6, la detección basada en ensamblados (el detector tradicional) se ejecuta solo tras las compilaciones. Esto significa que la detección de pruebas en tiempo real detecta tantas pruebas como sea posible mientras está editando, y la detección basada en ensamblados permite que aparezcan teorías (o cualquier prueba definida dinámicamente) después de una compilación. La detección de pruebas en tiempo real mejora la capacidad de respuesta, pero sigue permitiendo la obtención de resultados completos y precisos tras una compilación.
+  La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) es la detección de pruebas basada en el origen. No puede detectar las pruebas que usan teorías, adaptadores personalizados, rasgos personalizados, instrucciones `#ifdef`, etc. porque ya están definidas en tiempo de ejecución. Se requiere una compilación para que estas pruebas se puedan detectar con precisión. En las versiones preliminares de la versión 15.6, la detección basada en ensamblados (el detector tradicional) se ejecuta solo tras las compilaciones. Esta opción significa que la detección de pruebas en tiempo real detecta tantas pruebas como sea posible mientras está editando, y la detección basada en ensamblados permite que aparezcan teorías (o cualquier prueba definida dinámicamente) después de una compilación. La detección de pruebas en tiempo real mejora la capacidad de respuesta, pero sigue permitiendo la obtención de resultados completos y precisos tras una compilación.
 
 ### <a name="2-what-does-the--plus-symbol-that-appears-in-the-top-line-of-test-explorer-mean"></a>2. ¿Qué significa el signo "+" (más) que aparece en la línea superior del Explorador de pruebas?
 
-  El signo "+" (más) indica que se pueden detectar más pruebas después de una compilación si se activa la detección basada en ensamblados. Aparecerá si se detectan pruebas definidas dinámicamente en el proyecto.
+  El signo "+" (más) indica que se pueden detectar más pruebas después de una compilación siempre y cuando la detección basada en ensamblados esté activada. Aparece si se detectan pruebas definidas dinámicamente en el proyecto.
 
   ![Línea de resumen del signo más](media/testex-plussymbol.png)
 
 ### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3. La detección basada en ensamblados ha dejado de funcionar en mi proyecto. ¿Cómo puedo volver a activarla?
 
-  Vaya a **Herramientas > Opciones > Prueba** y active la casilla **Additionally discover tests built from assemblies after builds** (Detectar adicionalmente pruebas compiladas de ensamblados tras las compilaciones).
+  Vaya a **Herramientas > Opciones > Prueba** y active la casilla **Detectar también las pruebas de los ensamblados compilados después de las compilaciones**.
 
   ![Opción basada en ensamblados](media/testex-toolsoptions.png)
 
 ### <a name="4-tests-now-appear-in-test-explorer-while-i-type-without-having-to-build-my-project-what-changed"></a>4. Ahora aparecen pruebas en el Explorador de pruebas mientras escribo, sin tener que compilar el proyecto. ¿Qué ha cambiado?
 
-  Esta característica se denomina "[detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824)". Utiliza un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que compile el proyecto. Para obtener más información acerca del comportamiento de la detección de pruebas para pruebas definidas dinámicamente, como teorías o rasgos personalizados, consulte la pregunta frecuente núm. 1.
+  Esta característica se denomina "[detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824)". Utiliza un analizador de Roslyn para detectar pruebas y rellenar el Explorador de pruebas en tiempo real sin necesidad de que compile el proyecto. Vea la pregunta frecuente n.º 1 para más información sobre el comportamiento de la detección de pruebas en las pruebas definidas dinámicamente, como teorías o rasgos personalizados.
 
 ### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5. ¿Los lenguajes y marcos de pruebas pueden utilizar la detección de pruebas en tiempo real?
 
   La [detección de pruebas en tiempo real](https://go.microsoft.com/fwlink/?linkid=862824) solo funciona en los lenguajes administrados (C# y Visual Basic), porque se ha creado mediante el compilador Roslyn. Por ahora, la detección de pruebas en tiempo real solo funciona en los marcos xUnit, NUnit y MSTest.
 
+### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. ¿Cómo puedo activar los registros del Explorador de pruebas?
+
+  Vaya a **Herramientas > Opciones > Prueba** y busque la sección Registro ahí.
+
+### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. ¿Por qué las pruebas de los proyectos de UWP no se detectan hasta que implemento la aplicación?
+
+  Las pruebas de UWP tienen como destino un tiempo de ejecución distinto cuando la aplicación se implementa. Esto significa que, para detectar las pruebas de proyectos de UWP con exactitud, no solo debe compilar el proyecto, sino también implementarlo.
+
+### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. ¿Cómo funciona la ordenación de los resultados de las pruebas en la vista de jerarquía?
+
+  En la vista de jerarquía, las pruebas se ordenan alfabéticamente, y no por su resultado. Normalmente, la otra configuración de agrupamiento suele ordenar las pruebas por resultados y, después, alfabéticamente. Aquí mostramos las diferentes opciones de agrupamiento para que pueda compararlas. Puede dejar sus comentarios sobre el diseño [en este problema de GitHub](https://github.com/Microsoft/vstest/issues/1425).
+
+  ![Ejemplos de ordenación](media/testex-sortingex.png)
+
 ## <a name="features"></a>Características
 
 ### <a name="how-can-i-turn-on-feature-flags-to-try-out-new-testing-features"></a>¿Cómo puedo activar las marcas de características para probar las nuevas características de las pruebas?
 
-Las marcas de características se utilizan para enviar partes experimentales o inacabadas del producto a los usuarios entusiastas que desean ofrecer comentarios al respecto antes de que las características se publiquen oficialmente. Pueden llegar a desestabilizar su experiencia IDE. Se recomienda usarlas solo en entornos de desarrollo seguro, como máquinas virtuales. Las marcas de características deben utilizarse siempre bajo su propia responsabilidad. Puede activar las características experimentales con la [extensión Marcas de características](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension), o mediante el símbolo del sistema para desarrolladores.
+Las marcas de características se utilizan para enviar partes experimentales o inacabadas del producto a los usuarios entusiastas que desean ofrecer comentarios al respecto antes de que las características se publiquen oficialmente. Pueden llegar a desestabilizar su experiencia IDE. Úselas solo en entornos de desarrollo seguro, como máquinas virtuales. Las marcas de características deben utilizarse siempre bajo su propia responsabilidad. Puede activar las características experimentales con la [extensión Marcas de características](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension), o mediante el símbolo del sistema para desarrolladores.
 
 ![Extensión Marcas de características](media/testex-featureflag.png)
 

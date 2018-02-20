@@ -1,6 +1,8 @@
+---
+---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Creación de un proyecto de IA desde una plantilla en Visual Studio
 
-Después de [instalar Visual Studio Tools para IA](installation.md), resulta fácil crear un nuevo proyecto de Python con una variedad de plantillas.
+Después de [instalar Visual Studio Tools para IA](installation.md), resulta fácil crear un proyecto de IA con diversas plantillas.
 
 1. Inicie Visual Studio.
 
@@ -12,7 +14,7 @@ Después de [instalar Visual Studio Tools para IA](installation.md), resulta fá
 
 1. Visual Studio crea el archivo de proyecto (un archivo `.pyproj` que se almacena en disco) junto con cualquier otro archivo descritos por la plantilla. Con la plantilla "Aplicación de TensorFlow", el proyecto contiene un archivo con el mismo nombre que el proyecto. El archivo se abre en el editor de Visual Studio de manera predeterminada.
 
-    ![Proyecto resultante al usar la plantilla de la aplicación Python](media\create-project\new-tensorflowapp.png)
+    ![Proyecto resultante al usar la plantilla Aplicación de Python](media\create-project\new-tensorflowapp.png)
 
 1. Observe que el código ya importa varias bibliotecas, entre las que se incluye TensorFlow, numpy, sys y os. Además, inicia la aplicación lista con algunos argumentos de entrada para habilitar fácilmente la modificación de la ubicación de los datos de aprendizaje de entrada, los modelos de salida y los archivos de registro. Estos parámetros resultan útiles cuando envía los trabajos a varios contextos de proceso (es decir, a un directorio distinto en el Dev Box local en un recurso compartido de Azure). 
 

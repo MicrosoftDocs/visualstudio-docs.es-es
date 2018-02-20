@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -86,7 +86,7 @@ Algunas herramientas o extensiones se pueden desactivar para mejorar el rendimie
 
 ### <a name="managed-language-services-roslyn"></a>Servicios de lenguaje administrados (Roslyn)
 
-Para más información sobre las consideraciones de rendimiento de Roslyn, vea [Performance considerations for large solutions (Consideraciones de rendimiento para soluciones de gran tamaño)] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Para más información sobre las consideraciones de rendimiento de .NET Compiler Platform ("Roslyn"), vea [Performance considerations for large solutions (Consideraciones de rendimiento para soluciones de gran tamaño)] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Deshabilite el análisis completo de la solución**
 

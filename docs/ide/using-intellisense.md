@@ -1,40 +1,31 @@
 ---
-title: Usar IntelliSense | Microsoft Docs
+title: Visual Studio IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Using IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>Uso de IntelliSense en Visual Studio
 
 IntelliSense es el término general que se usa para describir varias características: Lista de miembros, Información de parámetros, Información rápida y Palabra completa. Estas características le permiten obtener más información acerca del código que utiliza, a realizar un seguimiento de los parámetros que escribe y a agregar llamadas a propiedades y a métodos con tan solo presionar unas teclas.
 
@@ -86,7 +77,7 @@ Para desactivar información rápida del código de C++, vaya a **Herramientas**
 
 ## <a name="complete-word"></a>Palabra completa
 
-La opción Palabra completa escribe el resto del nombre de una variable, un comando o una función después de que haya escrito suficientes caracteres como para reconocerlo. Para invocar la función de palabra completa, elija **Edición** > **IntelliSense** > **Palabra completa**, presione **CTRL** +  **BARRA ESPACIADORA** o seleccione el botón **Palabra completa** de la barra de herramientas del editor.
+La opción Palabra completa escribe el resto del nombre de una variable, un comando o una función después de que haya escrito suficientes caracteres como para reconocerlo. Para invocar la función de palabra completa, elija **Edición** > **IntelliSense** > **Palabra completa**, presione **Ctrl**+**Barra espaciadora** o seleccione el botón **Palabra completa** de la barra de herramientas del editor.
 
 ## <a name="intellisense-options"></a>Opciones de IntelliSense
 
@@ -110,7 +101,7 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Vea también
 
-[Opciones de IntelliSense específicas de Visual Basic](../ide/visual-basic-specific-intellisense.md)  
+[IntelliSense de Visual Basic](../ide/visual-basic-specific-intellisense.md)  
 [IntelliSense para C#](../ide/visual-csharp-intellisense.md)  
 [IntelliSense para JavaScript](../ide/javascript-intellisense.md)  
 [Escribir y refactorizar código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  

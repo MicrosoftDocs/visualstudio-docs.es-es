@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,16 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mt-task"></a>MT (Tarea)
 Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más información, vea "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -55,11 +56,11 @@ Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más infor
 |**EnableDPIAwareness**|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, agrega información al manifiesto que marca la aplicación para que reconozca valores de ppp. Si escribe una aplicación compatible con los valores de ppp, la interfaz de usuario tendrá una apariencia similar en una amplia variedad de opciones de visualización de valores altos de ppp.<br /><br /> Para obtener más información, vea "High DPI" (Valores altos de ppp) en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**GenerateCatalogFiles**|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, genera archivos de definición de catálogo (.cdf).<br /><br /> Para obtener más información, vea la opción **/makecdfs** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**GenerateCategoryTags**|Parámetro `Boolean` opcional.<br /><br /> Si es `true`, hace que se generen etiquetas de categoría. Si este parámetro es `true`, también se debe especificar el parámetro de tarea **ManifestFromManagedAssemblyMT**.<br /><br /> Para obtener más información, vea la opción **/category** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
-|**InputResourceManifests**|Parámetro **String** opcional.<br /><br /> Proporcione el manifiesto de un recurso de tipo RT_MANIFEST que tenga el identificador especificado. Especifique un recurso con el formato *\<archivo>[***;***[***#***]<id._recurso>]*, donde el parámetro `resource_id` opcional es un número de 16 bits que no es negativo.<br /><br /> Si no se especifica ningún `resource_id`, se usará el valor predeterminado CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Para obtener más información, vea la opción **/inputresource** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
+|**InputResourceManifests**|Parámetro **String** opcional.<br /><br /> Proporcione el manifiesto de un recurso de tipo RT_MANIFEST que tenga el identificador especificado. Especifique un recurso con el formato *\<archivo>[***;***[***#***]<identificador_recurso>]*, donde el parámetro `resource_id` opcional es un número de 16 bits que no es negativo.<br /><br /> Si no se especifica ningún `resource_id`, se usará el valor predeterminado CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Para obtener más información, vea la opción **/inputresource** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ManifestFromManagedAssembly**|Parámetro **String** opcional.<br /><br /> Genera un manifiesto del ensamblado administrado especificado.<br /><br /> Para obtener más información, vea la opción **/managedassemblyname** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ManifestToIgnore**|Parámetro **String** opcional.<br /><br /> (No usado).|  
 |**OutputManifestFile**|Parámetro **String** opcional.<br /><br /> Especifica el nombre del manifiesto de salida. Si se omite este parámetro y solo se opera un manifiesto en él, ese manifiesto se modificará.<br /><br /> Para obtener más información, vea la opción **/out** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
-|**OutputResourceManifests**|Parámetro **String** opcional.<br /><br /> Genere el manifiesto a un recurso de tipo RT_MANIFEST que tenga el identificador especificado. El recurso tiene el formato *\<archivo>[***;***[***#***]<id._recurso>]*, donde el parámetro `resource_id` opcional es un número de 16 bits que no es negativo.<br /><br /> Si no se especifica ningún `resource_id`, se usará el valor predeterminado CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Para obtener más información, vea la opción **/outputresource** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
+|**OutputResourceManifests**|Parámetro **String** opcional.<br /><br /> Genere el manifiesto a un recurso de tipo RT_MANIFEST que tenga el identificador especificado. El recurso tiene el formato *\<archivo>[***;***[***#***]<identificador_recurso>]*, donde el parámetro `resource_id` opcional es un número de 16 bits que no es negativo.<br /><br /> Si no se especifica ningún `resource_id`, se usará el valor predeterminado CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Para obtener más información, vea la opción **/outputresource** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**RegistrarScriptFile**|Parámetro **String** opcional.<br /><br /> Especifica el nombre del archivo de script de registrador (.rgs) que se usará para la compatibilidad de manifiestos COM sin registro.<br /><br /> Para obtener más información, vea la opción **/rgs** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ReplacementsFile**|Parámetro **String** opcional.<br /><br /> Especifica el archivo que contiene los valores de las cadenas reemplazables en el archivo de script de registrador (.rgs).<br /><br /> Para obtener más información, vea la opción **/replacements** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**ResourceOutputFileName**|Parámetro **String** opcional.<br /><br /> Especifica el archivo de recursos de resultados usado para incrustar el manifiesto en los resultados del proyecto.|  

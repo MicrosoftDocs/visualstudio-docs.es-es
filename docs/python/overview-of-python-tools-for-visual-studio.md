@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Uso de Python en Visual Studio (Windows)
 
@@ -70,7 +70,7 @@ R. Por lo general, Python es un lenguaje interpretado, con código que se ejecut
 
 ## <a name="features-matrix"></a>Matriz de características
 
-La compatibilidad de Python se puede instalar en las siguientes ediciones de Visual Studio, como se describe en la [guía de instalación](installing-python-support-in-visual-studio.md):
+Las características de Python se pueden instalar en las siguientes ediciones de Visual Studio, tal y como se describe en la [guía de instalación](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (todas las ediciones)](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015 (todas las ediciones)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
@@ -81,7 +81,7 @@ La compatibilidad de Python se puede instalar en las siguientes ediciones de Vis
 - Visual Studio 2012 (edición Pro o una versión posterior)
 - Visual Studio 2010 SP1 (edición Pro o una versión posterior; se necesita .NET 4.5)
 
-Características admitidas por la versión y edición de Visual Studio:
+Las características son totalmente compatibles y se mantienen para la versión más reciente de Visual Studio exclusivamente. Estas características están disponibles en versiones anteriores, pero no se mantienen de manera activa.
 
 | Compatibilidad de Python | 2017 | 2015 | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
@@ -166,6 +166,8 @@ Características admitidas por la versión y edición de Visual Studio:
 | Depuración remota (Windows, Mac OS X y Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
 | Ventana interactiva de depuración | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
+
+<a name="matrix-profiling"></a>
 
 | Generación de perfiles | 2017 | 2015 | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

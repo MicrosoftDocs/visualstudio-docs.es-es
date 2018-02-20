@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>Panel Publicar, Diseñador de proyectos
 La página **Publicar** del **Diseñador de proyectos** se utiliza para configurar las propiedades para la implementación de ClickOnce.  
@@ -34,10 +34,8 @@ La página **Publicar** del **Diseñador de proyectos** se utiliza para configur
   
 ## <a name="uielement-list"></a>Lista de UIElement  
  **Ubicación de la carpeta de publicación**  
- Especifica la ubicación donde se publica la aplicación. Puede ser una ruta de acceso de unidad (`C:\deploy\myapplication`), un recurso compartido de archivos (`\\server\myapplication`), un servidor FTP (`ftp://ftp.microsoft.com/myapplication`) o un sitio web (`http://www.microsoft.com/myapplication`). Tenga en cuenta que debe haber texto en el cuadro **Ubicación de publicación** para que el botón Examinar (**...**) funcione.  
-  
- De forma predeterminada, la ubicación de publicación es `http://localhost/<projectname>/` si tiene IIS instalado o el directorio `publish\` si no tiene IIS instalado. Si el equipo ejecuta Windows Vista, el valor predeterminado es siempre el directorio `publish\` , independientemente de si se tiene IIS instalado.  
-  
+ Especifica la ubicación donde se publica la aplicación. Puede ser una ruta de acceso de unidad (`C:\deploy\myapplication`), un recurso compartido de archivos (`\\server\myapplication`) o un servidor FTP (`ftp://ftp.microsoft.com/myapplication`). Tenga en cuenta que debe haber texto en el cuadro **Ubicación de publicación** para que el botón Examinar (**...**) funcione.  
+   
  **Dirección URL de la carpeta de instalación**  
  Opcional. Especifica un sitio web adonde van los usuarios para instalar la aplicación. Solo es necesario cuando difiere de la **ubicación de publicación**, por ejemplo, cuando la aplicación se publica en un servidor de almacenamiento provisional.  
   

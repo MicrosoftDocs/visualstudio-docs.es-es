@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 
@@ -31,7 +34,7 @@ Para insertar un fragmento de código, abra un archivo de código de C++ (.cpp o
 
 - En el menú **Editar / IntelliSense**, seleccione **Insertar fragmento de código**.
 
-- Use las teclas de acceso rápido: **CTRL + K + X**.
+- Use las teclas de acceso rápido: **Ctrl**+**K**+**X**
 
 Verá una lista de opciones que empiezan por **#if**. Al seleccionar **#if**, verá el código siguiente agregado al archivo:
 
@@ -47,11 +50,11 @@ A continuación, puede reemplazar el 0 por la condición correcta.
 
 Para rodear el código seleccionado con un fragmento de código, seleccione una línea (o varias) y elija entre las acciones siguientes:
 
-1. Haga clic con el botón derecho para ver el menú contextual y seleccione **Rodear con**.
+- Haga clic con el botón derecho para ver el menú contextual y seleccione **Envolver con**.
 
-2. En el menú **Editar / IntelliSense**, seleccione **Rodear con**.
+- En el menú **Edición** > **IntelliSense**, seleccione **Envolver con**.
 
-3. Use las teclas de acceso rápido: **CTRL + K + S**.
+- En un teclado, presione: **Ctrl**+**K**+**S**
 
 Seleccione **#if**. Verá algo parecido a esto:
 

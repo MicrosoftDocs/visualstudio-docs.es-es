@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,16 +21,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CL task
 - CL task (MSBuild (Visual C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ffd317643b7ea1bfbf97bce6d533a76fd7bf1509
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5b5609ac97d9322ddf4af5bc5638212a3ccfd045
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cl-task"></a>CL (Tarea)
 Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera archivos ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o archivos de módulos de códigos (.netmodule). Para obtener más información, consulte [Opciones del compilador](/cpp/build/reference/compiler-options).  
@@ -754,7 +755,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Para obtener más información, vea la opción **/W***n* en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](/cpp/build/reference/compiler-option-warning-level).  
+     Para más información, vea la opción **/W***n* en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

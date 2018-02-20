@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.  
@@ -53,10 +54,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- Con este fin,[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examina las condiciones en `PropertyGroup`, `ItemGroup`, `Import`, la propiedad y los elementos.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examina las condiciones en `PropertyGroup`, `ItemGroup`, `Import`, la propiedad y los elementos.  
   
 ## <a name="additional-build-actions"></a>Acciones de compilación adicionales  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite cambiar el nombre de los tipos de elemento de un archivo en un proyecto con la propiedad **Acción de compilación** de la ventana [Propiedades de archivo](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) . Los nombres de tipo de elemento`Compile`, `EmbeddedResource`, `Content`y `None` siempre se muestran en este menú, junto con otros nombres de tipo de elemento ya presentes en el proyecto. Para garantizar que los nombres de los tipos de elemento personalizados siempre estén disponibles en este menú, puede agregarlos a un tipo de elemento denominado `AvailableItemName`. Por ejemplo, al agregar lo siguiente al archivo de proyecto, se agregará el tipo personalizado `JScript` a este menú para todos los proyectos que lo importen:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite cambiar el nombre de los tipos de elemento de un archivo de un proyecto con la propiedad **Acción de compilación** de la ventana [Propiedades de archivo](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959). Los nombres de tipo de elemento`Compile`, `EmbeddedResource`, `Content`y `None` siempre se muestran en este menú, junto con otros nombres de tipo de elemento ya presentes en el proyecto. Para garantizar que los nombres de los tipos de elemento personalizados siempre estén disponibles en este menú, puede agregarlos a un tipo de elemento denominado `AvailableItemName`. Por ejemplo, al agregar lo siguiente al archivo de proyecto, se agregará el tipo personalizado `JScript` a este menú para todos los proyectos que lo importen:  
   
 ```xml  
 <ItemGroup>  

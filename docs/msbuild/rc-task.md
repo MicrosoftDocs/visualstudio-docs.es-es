@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +22,17 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-caps.latest.revision: "10"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5398f3eb1aa140ed53d6734734528d5c89a104c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="rc-task"></a>RC (Tarea)
 Incluye la herramienta Compilador de recursos de Microsoft Windows (rc.exe). La tarea **RC** compila recursos, como cursores, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos (.res). Para obtener más información, vea "Resource Compiler" (Compilador de recursos) en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -42,7 +43,7 @@ Incluye la herramienta Compilador de recursos de Microsoft Windows (rc.exe). La 
 |Parámetro|Description|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Parámetro **String[]** opcional.<br /><br /> Agrega un directorio a la lista de directorios en que se buscan archivos de inclusión.<br /><br /> Para obtener más información, vea la opción **/I** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Usar RC [línea de comandos de RC]) en el sitio web de MSDN.|  
-|**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de línea de comandos de ejemplo, **"***/option1 /option2 /option#*". Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **RC**.<br /><br /> Para obtener más información, vea las opciones de [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Usar RC [línea de comandos de RC]) en el sitio web de MSDN.|  
+|**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de línea de comandos, por ejemplo, **"***/option1 /option2 /option#*". Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **RC**.<br /><br /> Para obtener más información, vea las opciones de [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Usar RC [línea de comandos de RC]) en el sitio web de MSDN.|  
 |**Referencia cultural**|Parámetro **String** opcional.<br /><br /> Especifica un identificador de configuración regional que representa la referencia cultural usada en los recursos.<br /><br /> Para obtener más información, vea la opción **/l** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Usar RC [línea de comandos de RC]) en el sitio web de MSDN.|  
 |**IgnoreStandardIncludePath**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, impide que el compilador de recursos compruebe la variable de entorno INCLUDE cuando busca archivos de encabezado o archivos de recursos.<br /><br /> Para obtener más información, vea la opción **/x** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Usar RC [línea de comandos de RC]) en el sitio web de MSDN.|  
 |**NullTerminateStrings**|Parámetro **Boolean** opcional.<br /><br /> Si es `true`, se finalizan todas las cadenas de la tabla de strings con NULL.<br /><br /> Para obtener más información, vea la opción **/n** en [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730) (Usar RC [línea de comandos de RC]) en el sitio web de MSDN.|  

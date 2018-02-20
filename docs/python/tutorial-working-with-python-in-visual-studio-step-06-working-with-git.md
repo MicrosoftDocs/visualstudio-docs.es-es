@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>Paso 6: Trabajar con Git
 
@@ -35,7 +35,7 @@ En este tema se describe cómo crear un repositorio de Git local para un proyect
 
   ![Se muestra información adicional cuando se mantiene el puntero sobre un control de Git en la ventana de Visual Studio](media/working-with-git-01.png)
 
-1. La ventana **Team Explorer** también aparece con distintas opciones de Git disponibles al seleccionar el encabezado de repositorio. El panel **Sincronización**, tal como se muestra, proporciona opciones para publicar en un repositorio remoto.
+1. La ventana **Team Explorer** también aparece con distintas opciones de Git disponibles al seleccionar el encabezado de repositorio. El panel **Sincronización**, tal y como aparece cuando se selecciona el encabezado **Insertar**, proporciona opciones para publicar en un repositorio remoto.
 
   ![Team Explorer en Visual Studio después de crear un repositorio local](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ En este tema se describe cómo crear un repositorio de Git local para un proyect
 
   ![Team Explorer en Visual Studio que muestra ramas](media/working-with-git-04.png)
 
-1. Cuando se usa un repositorio local, los cambios confirmados van directamente al repositorio. Si está conectado a un repositorio remoto, seleccione **Sincronización** para insertar las confirmaciones locales.
+1. Cuando se usa un repositorio local, los cambios confirmados van directamente al repositorio. Si está conectado a un repositorio remoto, seleccione el encabezado, elija **Sincronización** para cambiar a la sección **Sincronización** y trabaje con los comandos incluidos allí.
 
 ## <a name="going-deeper"></a>Mayor profundización
 

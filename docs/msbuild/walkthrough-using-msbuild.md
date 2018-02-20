@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, tutorial
+helpviewer_keywords:
+- MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Tutorial: Usar MSBuild
 MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tutorial presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar los proyectos de MSBuild. Aprenderá a:  
@@ -60,45 +61,33 @@ MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tu
      El archivo del proyecto aparece en el editor de código.  
   
 ## <a name="targets-and-tasks"></a>Destinos y tareas  
- Los archivos del proyecto son archivos con formato XML y con el nodo raíz [Project](../msbuild/project-element-msbuild.md).  
+Los archivos del proyecto son archivos con formato XML y con el nodo raíz [Project](../msbuild/project-element-msbuild.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Debe especificar el espacio de nombres xmlns en el elemento Project.  
+Debe especificar el espacio de nombres xmlns en el elemento Project. Si `ToolsVersion` está presente en un nuevo proyecto, debe ser "15.0".
   
- El trabajo de compilar una aplicación se realiza con los elementos [Target](../msbuild/target-element-msbuild.md) y [Task](../msbuild/task-element-msbuild.md).  
+El trabajo de compilar una aplicación se realiza con los elementos [Target](../msbuild/target-element-msbuild.md) y [Task](../msbuild/task-element-msbuild.md).  
   
 -   Una tarea es la unidad de trabajo más pequeña, en otras palabras, el "átomo" de una compilación. Las tareas son componentes ejecutables independientes que pueden tener entradas y salidas. No hay actualmente ninguna tarea a la que se haga referencia o que esté definida en el archivo del proyecto. Agregará tareas al archivo del proyecto en las secciones siguientes. Para obtener más información, consulte el tema [Tareas](../msbuild/msbuild-tasks.md).  
   
--   Un destino es una secuencia con nombre de tareas. Hay dos destinos al final del archivo del proyecto incluidos actualmente en comentarios HTML: BeforeBuild y AfterBuild.  
+-   Un destino es una secuencia con nombre de tareas. Para obtener más información, consulte el tema [Destinos](../msbuild/msbuild-targets.md).  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     Para obtener más información, consulte el tema [Destinos](../msbuild/msbuild-targets.md).  
-  
- El nodo Project tiene un atributo DefaultTargets opcional que selecciona el destino predeterminado para la compilación, en este caso Build.  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- El destino Build no se define en el archivo del proyecto. En su lugar, se importa del archivo Microsoft.CSharp.targets mediante el elemento [Import](../msbuild/import-element-msbuild.md).  
+El destino predeterminado no se define en el archivo del proyecto, sino que se especifica en los proyectos importados. El elemento [Import](../msbuild/import-element-msbuild.md) indica los proyectos importados. Por ejemplo, en un proyecto de C#, el destino predeterminado se importa del archivo Microsoft.CSharp.targets. 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- Los archivos importados se insertan realmente en el archivo del proyecto, dondequiera que se les haga referencia.  
+Los archivos importados se insertan realmente en el archivo del proyecto, dondequiera que se les haga referencia.  
+
+> [!NOTE]
+> En algunos tipos de proyecto, como .NET Core, se usa un esquema simplificado con un atributo `Sdk` en lugar de `ToolsVersion`. Estos proyectos tienen importaciones implícitas y valores de atributo predeterminados diferentes.
   
- MSBuild realiza el seguimiento de los destinos de una compilación y garantiza que cada destino se compile solamente una vez.  
+MSBuild realiza el seguimiento de los destinos de una compilación y garantiza que cada destino se compile solamente una vez.  
   
 ## <a name="adding-a-target-and-a-task"></a>Agregar un destino y una tarea  
  Agregue un destino al archivo del proyecto. Agregue una tarea al destino que imprima un mensaje.  
@@ -158,9 +147,6 @@ MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tu
   
  Alternando entre el editor de código y la ventana Comandos, puede cambiar el archivo del proyecto y ver rápidamente los resultados.  
   
-> [!NOTE]
->  Si ejecuta msbuild sin el modificador de comando /t, msbuild compilará el destino proporcionado por el atributo DefaultTarget del elemento Project, en este caso "Build". Esto compila el BuildApp.exe de la aplicación de Windows Forms.  
-  
 ## <a name="build-properties"></a>Propiedades de compilación  
  Las propiedades de compilación son pares de nombre y valor que guían la compilación. Ya se han definido varias propiedades de compilación al principio del archivo del proyecto:  
   
@@ -178,10 +164,10 @@ MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tu
  Todas las propiedades son elementos secundarios de elementos PropertyGroup. El nombre de la propiedad es el nombre del elemento secundario y el valor de la propiedad es el elemento de texto del elemento secundario. Por ejemplo,  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- define la propiedad denominada TargetFrameworkVersion, dándole el valor de cadena "v12.0".  
+ define la propiedad denominada TargetFrameworkVersion, dándole el valor de cadena "v15.0".  
   
  Las propiedades de compilación se pueden volver a definir en cualquier momento. Si  
   
@@ -223,7 +209,7 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]

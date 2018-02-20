@@ -1,10 +1,10 @@
 ---
 title: Conjunto de herramientas de MSBuild (ToolsVersion) | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +13,16 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: "30"
-author: kempb
-ms.author: kempb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7c8658b3c1a39efc24e65845be2ce75eafc4437
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e274fa60ff209436be9d11f52464d7b42972ef47
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para compilar una aplicación. Normalmente, un conjunto de herramientas de MSBuild incluye un archivo microsoft.common.tasks, un archivo microsoft.common.targets y compiladores como csc.exe y vbc.exe. La mayoría de los conjuntos de herramientas se pueden usar para compilar aplicaciones correspondientes a más de una versión de .NET Framework y a más de una plataforma de sistema. Sin embargo, el conjunto de herramientas de MSBuild 2.0 solo se puede usar para las aplicaciones de .NET Framework 2.0.  
@@ -32,7 +32,10 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
   
 ```xml  
 <Project ToolsVersion="15.0" ... </Project>  
-```  
+``` 
+
+> [!NOTE] 
+> En algunos tipos de proyecto se usa el atributo `sdk` en lugar de `ToolsVersion`. Para más información, vea [Paquetes, metapaquetes y marcos de trabajo](/dotnet/core/packages) y [Adiciones al formato csproj para .NET Core](/dotnet/core/tools/csproj).
   
 ## <a name="how-the-toolsversion-attribute-works"></a>Cómo funciona el atributo ToolsVersion  
  Al crear un nuevo proyecto en Visual Studio, o actualizar uno ya existente, se incluye automáticamente un atributo denominado `ToolsVersion` en el archivo de proyecto y su valor corresponde a la versión de MSBuild incluida en la edición de Visual Studio. Para obtener más información, consulte [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
@@ -72,7 +75,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
   
 -   Mediante los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
- Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas en función de esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+ Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. A partir de Visual Studio 2017, MSBuild deja de tener una ubicación fija. Se encuentra de forma predeterminada en la carpeta MSBuild\15.0\Bin correspondiente a la ubicación de instalación de Visual Studio. En versiones anteriores, MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente y, después, usa la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas en función de esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
  Estas son las propiedades del conjunto de herramientas:  
   
@@ -95,7 +98,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 -   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> devuelve la ruta de acceso de las herramientas de compilación.  
   
 ### <a name="sub-toolsets"></a>Subconjuntos de herramientas  
- Como se ha descrito anteriormente en este tema, MSBuild usa una clave del Registro para especificar la ruta de acceso de las herramientas básicas. Si la clave tiene una subclave, MSBuild la usa para especificar la ruta de acceso de un subconjunto de herramientas que contiene herramientas adicionales. En este caso, el conjunto de herramientas se define mediante la combinación de las definiciones de propiedades especificadas en ambas claves.  
+ En las versiones de MSBuild anteriores a 15.0, MSBuild usa una clave del registro para especificar la ruta de acceso de las herramientas básicas. Si la clave tiene una subclave, MSBuild la usa para especificar la ruta de acceso de un subconjunto de herramientas que contiene herramientas adicionales. En este caso, el conjunto de herramientas se define mediante la combinación de las definiciones de propiedades especificadas en ambas claves.  
   
 > [!NOTE]
 >  Si hay un conflicto entre los nombres de propiedades del conjunto de herramientas, el valor definido para la ruta de acceso de la subclave reemplaza al valor definido para la ruta de acceso de la clave raíz.  
@@ -106,7 +109,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
   
 -   "11.0" especifica el subconjunto de herramientas de .NET Framework 4.5  
   
--   "12.0" especifica el subconjunto de herramientas de .NET Framework 4.5.1  
+-   "12.0" especifica el subconjunto de herramientas de .NET Framework 4.5.1 
   
  Los subconjuntos de herramientas 10.0 y 11.0 deben usarse con ToolsVersion 4.0. En versiones posteriores, la versión del subconjunto de herramientas y ToolsVersion deben coincidir.  
   

@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usar Build y Release Management en lugar de Lab Management para las pruebas automatizadas
 
@@ -26,7 +28,7 @@ Si usa Microsoft Test Manager (MTM) y Lab Management para las pruebas automatiza
 
 * [Administración de autoservicio de entornos de SCVMM](#managescvmm)
 
-Build y Release Management no admiten la creación autoservicio de entornos de SCVMM con aislamiento de red, y no existen planes para proporcionar esta compatibilidad en el futuro. En cambio, existen algunas [alternativas sugeridas](#isolatedenvir).
+* [Creación de entornos con aislamiento de red](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>Automatización de compilación-implementación-prueba
@@ -74,14 +76,15 @@ En la tabla siguiente se resumen las actividades típicas que ha usado para real
 | Tomar un punto de control de un entorno o restaurar un entorno a un punto de control limpio. | Abra el entorno de laboratorio en el Visor de entorno. Seleccione la opción para tomar un punto de control o para restaurar a un punto de control anterior. | Use la consola de administración de SCVMM directamente para realizar estas operaciones en las máquinas virtuales. O, para realizar estos pasos como parte de una automatización mayor, incluya las tareas de punto de control desde la [extensión de integración de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) como parte del entorno en una definición de versión. |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>Creación autoservicio de entornos con aislamiento de red
+## <a name="creation-of-network-isolated-environments"></a>Creación de entornos con aislamiento de red
 
 Un entorno de laboratorio con aislamiento de red es un grupo de máquinas virtuales de SCVMM que puede clonarse de manera segura sin provocar conflictos de red. Esto se realizaba en MTM con una serie de instrucciones que usaban un conjunto de tarjetas adaptadoras de red para configurar las máquinas virtuales en una red privada, y otro conjunto de tarjetas adaptadoras de red para configurar las máquinas virtuales en una red pública.
 
-Con la evolución de sistemas de administración de nube públicos y privados enriquecidos como [Microsoft Azure](https://azure.microsoft.com/) y [Microsoft Azure Stack](https://azure.microsoft.com/overview/azure-stack/), puede basarse más en las herramientas de administración de nube directamente para obtener funciones similares. No existe una manera equivalente de conseguir este objetivo en Build y Release Management.
+Con todo, el uso combinado de VSTS y TFS con la tarea de compilación e implementación de SCVMM puede servir para administrar entornos de SCVMM, para aprovisionar redes virtuales aisladas y para implementar escenarios de compilación-implementación-prueba. Por ejemplo, puede usar la tarea para lo siguiente:
 
-Se recomienda que considere las siguientes alternativas si necesita un aislamiento de red:
+* Crear, restaurar y eliminar puntos de control
+* Crear máquinas virtuales con una plantilla
+* Iniciar y detener máquinas virtuales
+* Ejecutar scripts de PowerShell personalizados para SCVMM
 
-* Una motivación para el aislamiento de red ha sido la facilidad de configuración de varios clones. Como cada clon es una réplica exacta del original, los nombres de equipo y las opciones de configuración se mantienen como están, y esto facilita la configuración de entornos nuevos. En cambio, la misma ventaja provoca problemas que aparecen después en el ciclo de vida (por ejemplo, en la producción) porque la manera en que las aplicaciones se implementan finalmente no es la misma. **En su lugar**, considere la configuración de nuevos entornos de la misma manera que configura la producción, y evite usar el aislamiento de red.
-
-* Use una infraestructura de nube pública como [Microsoft Azure](https://azure.microsoft.com/) para sus necesidades de prueba. Puede usar fácilmente [plantillas de Azure Resource Manager](https://azure.microsoft.com/documentation/templates/) desde [Azure Marketplace](https://azure.microsoft.com/marketplace/) o desde las [plantillas de inicio rápido de Azure](https://azure.microsoft.com/documentation/templates/) para configurar grupos de máquinas virtuales que están conectados mediante una red privada, y están expuestos a la red pública solo con un proxy o "jumpbox".
+Para más información, vea [Create a virtual network isolated environment for build-deploy-test scenarios](/vsts/build-release/actions/virtual-networks/create-virtual-network) (Creación de un entorno con aislamiento de red virtual para escenarios de compilación-implementación-prueba).

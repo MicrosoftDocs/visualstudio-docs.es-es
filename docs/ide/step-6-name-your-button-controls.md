@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 12065875980d114d6ea8b9912009701afb5cf9a0
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: d1981e8003941f14295cd137ba238808ec49229a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
 Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denominó automáticamente **pictureBox1**. Solamente hay una casilla, denominada **checkBox1**. Pronto, escribirá código, y ese código hará referencia a CheckBox y PictureBox. Como no hay más que un ejemplar de cada control, entenderá lo que significan los términos **pictureBox1** o **checkBox1** cuando los vea en su código.  
@@ -74,7 +76,7 @@ Pestaña Form1.cs con código de Visual C#
   
      Después de agregar un controlador de eventos para un control, puede volver en cualquier momento a él desde el Diseñador de Windows Forms haciendo doble clic en el control o eligiendo **Ver**, **Código**en la barra de menús.  
   
-     Los nombres son importantes al compilar programas. Los métodos (incluso los controladores de eventos) pueden tener cualquier nombre que se desee. Cuando agregue un controlador de eventos con el IDE, se creará un nombre basado en el nombre del control y en el evento que se controla. Por ejemplo, el evento Click para un botón denominado **showButton** se denomina método de control de eventos `showButton_Click()` . Además, se suelen agregar paréntesis de apertura y cierre () después del nombre de método para indicar que se trata de un método. Si decide que desea cambiar un nombre de variable de código, haga clic con el botón secundario en la variable del código y elija **Refactorizar**, **Cambiar nombre**. Todas las instancias de esa variable del código cambiarán de nombre. Vea [Cambiar el nombre de refactorización (C#)](../ide/reference/rename-csharp.md) o [Refactorización y Cambiar nombre (Cuadro de diálogo) (Visual Basic)](../ide/reference/rename-vb.md) para obtener más información.
+     Los nombres son importantes al compilar programas. Los métodos (incluso los controladores de eventos) pueden tener cualquier nombre que se desee. Cuando agregue un controlador de eventos con el IDE, se creará un nombre basado en el nombre del control y en el evento que se controla. Por ejemplo, el evento Click para un botón denominado **showButton** se denomina método de control de eventos `showButton_Click()` . Además, se suelen agregar paréntesis de apertura y cierre () después del nombre de método para indicar que se trata de un método. Si decide que desea cambiar un nombre de variable de código, haga clic con el botón secundario en la variable del código y elija **Refactorizar**, **Cambiar nombre**. Todas las instancias de esa variable del código cambiarán de nombre. Vea [Refactorización de cambio de nombre](../ide/reference/rename.md) para más información.
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   

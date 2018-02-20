@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 193eebd4849e6a133ade1d14cb17d5b345199811
-ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
+ms.openlocfilehash: 193856ca96395db9a5b3bd494a5b8f1f7331f702
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalación de Visual Studio para Mac
 
@@ -19,18 +19,18 @@ Hay una serie de productos de Xamarin que permiten el desarrollo de aplicaciones
 
 Esta guía puede usarse para desinstalar cada producto de manera individual dirigiéndose a la sección correspondiente. El conjunto de aplicaciones completo de Xamarin puede desinstalarse si se sigue esta guía de principio a fin.
 
-Si anteriormente ha tenido Xamarin Studio instalado en el equipo, es posible que también deba seguir las instrucciones de la guía de [desinstalación](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/uninstalling_xamarin/) de developer.xamarin.com, además de los pasos siguientes.
+Si ya tenía Xamarin Studio instalado en el equipo, es posible que también deba seguir las instrucciones de la guía de [desinstalación](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/uninstalling_xamarin/) de developer.xamarin.com, además de los siguientes pasos.
 
 ## <a name="uninstall-script"></a>Script de desinstalación
 
-Puede desinstalar Visual Studio y sus componentes asociados de una vez con el script de desinstalación, que se encuentra [aquí](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
+Puede desinstalar Visual Studio y sus componentes asociados de una vez con el [script de desinstalación](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh).
 
 Este script de desinstalación contiene la mayoría de los comandos que encontrará en el artículo. Hay dos omisiones importantes en el script que no se incluyen debido a posibles dependencias externas:
 
 - **Desinstalación de Mono**
 - **Desinstalación de AVD**
 
-Para ejecutar el script, haga lo siguiente:
+Haga lo siguiente para ejecutar el script:
 
 1. Haga clic con el botón derecho en el script y seleccione **Guardar como...** para guardar el archivo en el equipo Mac.
 2. Abra Terminal y cambie el directorio de trabajo al lugar donde se haya descargado el script:
@@ -48,11 +48,11 @@ Para ejecutar el script, haga lo siguiente:
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Desinstalación de Visual Studio para Mac
 
-El primer paso a la hora de desinstalar Visual Studio de un equipo Mac es buscar **Visual Studio.app** en el directorio **/Applications** y arrastrarlo a la **Papelera**. De manera alternativa, haga clic con el botón derecho y seleccione **Trasladar a la Papelera** como se muestra a continuación:
+El primer paso a la hora de desinstalar Visual Studio de un equipo Mac es buscar **Visual Studio.app** en el directorio **/Applications** y arrastrarlo a la **Papelera**. También puede hacer clic con el botón derecho y seleccionar **Trasladar a la Papelera**, como se muestra aquí:
 
 ![Traslado de la aplicación Visual Studio a la Papelera](media/uninstall-image1.png)
 
-Al eliminar este lote de aplicaciones se quita Visual Studio para Mac, aunque pueda haber otros archivos relacionados con Xamarin en un sistema de archivos.
+Al eliminar este lote de aplicaciones, se quita Visual Studio para Mac, aunque pueda haber otros archivos relacionados con Xamarin en un sistema de archivos.
 
 Para quitar todas las trazas de Visual Studio para Mac, deben ejecutarse los siguientes comandos en Terminal:
 
@@ -60,12 +60,13 @@ Para quitar todas las trazas de Visual Studio para Mac, deben ejecutarse los sig
 sudo rm -rf "/Applications/Visual Studio.app"
 rm -rf ~/Library/Caches/VisualStudio
 rm -rf ~/Library/Preferences/VisualStudio
-rm -rf "~/Library/Preferences/Visual Studio"
+rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Developer/Xamarin
-rm -rf "~/Library/Application Support/VisualStudio"
+rm -rf ~/Library/Application\ Support/VisualStudio
+rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Desinstalación del SDK de Mono (MDK)
@@ -127,8 +128,6 @@ rm -rf ~/.android/avd
 
 Xamarin.iOS permite el desarrollo de aplicaciones de iOS con C# o F# con Visual Studio para Mac.
 
-El host de compilación de Xamarin también se ha instalado automáticamente con versiones anteriores de Xamarin.iOS para permitir el desarrollo iOS en Visual Studio. Para desinstalar ambos de un equipo, siga los pasos siguientes:
-
 Use los siguientes comandos en Terminal para quitar todos los archivos de Xamarin.iOS desde un sistema de archivos:
 
 ```bash
@@ -142,7 +141,7 @@ sudo pkgutil --forget com.xamarin.xamarin.ios.pkg
 
 ## <a name="uninstall-xamarinmac"></a>Desinstalación de Xamarin.Mac
 
-Una vez que Visual Studio para Mac se haya desinstalado correctamente, se puede quitar Xamarin.Mac del equipo con los dos comandos siguientes para borrar el producto y la licencia respectivamente del equipo Mac:
+Xamarin.Mac se puede desinstalar del equipo con los siguientes dos comandos para erradicar el producto y la licencia del equipo Mac respectivamente:
 
 ```bash
 sudo rm -rf /Library/Frameworks/Xamarin.Mac.framework
@@ -157,7 +156,7 @@ A partir de la versión 1.2.2, Xamarin Workbooks y Xamarin Inspector se pueden d
 sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstall
 ```
 
-En el caso de versiones anteriores, debe quitar manualmente lo siguiente:
+En cuanto a las versiones anteriores, debe quitar manualmente los siguientes artefactos:
 
 * Eliminar la aplicación Workbooks de `"/Applications/Xamarin Workbooks.app"`
 * Eliminar la aplicación Inspector de `"Applications/Xamarin Inspector.app"`

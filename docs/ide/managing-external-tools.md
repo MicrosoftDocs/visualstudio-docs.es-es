@@ -4,31 +4,35 @@ ms.custom:
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.externaltools
-helpviewer_keywords: external tools [Visual Studio]
+f1_keywords:
+- vs.externaltools
+helpviewer_keywords:
+- external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e796b1e5a1773183c04409781cf6e2026bfe96e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 78a3e1ee549a42681d6f15b432d0c6bb608976fd
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 
 Se puede llamar a herramientas externas desde Visual Studio mediante el menú **Herramientas**. Algunas herramientas predeterminadas están disponibles en el menú **Herramientas**, pero se puede personalizar el menú al agregar otros archivos ejecutables propios.
 
-## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Herramientas disponibles en el menú Herramientas de Visual Studio
+## <a name="tools-available-on-the-tools-menu"></a>Herramientas disponibles en el menú Herramientas
 
 El **Herramientas** menú contiene varios comandos integrados, como:
 
 * **Extensiones y actualizaciones** para [administrar Extensiones de Visual Studio](finding-and-using-visual-studio-extensions.md)
-* **Administrador de fragmentos de código...** para [organizar fragmentos de código](code-snippets.md#code-snippet-manager)
+* **Administrador de fragmentos de código...** para [organizar fragmentos de código](code-snippets.md)
 * **PreEmptive Protection - Dotfuscator** para iniciar [Dotfuscator Community Edition (CE)](dotfuscator/index.md) si está [instalado](dotfuscator/install.md)
 * **Personalizar...** para personalizar [menús y barras de herramientas](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Opciones...** para [establecer numerosas opciones diferentes para el IDE de Visual Studio y otras herramientas](reference/options-dialog-box-visual-studio.md)
@@ -37,7 +41,7 @@ El **Herramientas** menú contiene varios comandos integrados, como:
 
 Puede agregar una herramienta externa para que aparezca en el menú **Herramientas**.
 
-1. Para abrir el cuadro de diálogo **Herramientas externas**, elija **Herramientas**, **Herramientas externas...**
+1. Para abrir el cuadro de diálogo **Herramientas externas**, elija **Herramientas** > **Herramientas externas...**
 
 1. Haga clic en **Agregar** y, después, rellene la información. Por ejemplo, la entrada siguiente hace que el Explorador de Windows se abra en el directorio del archivo que tiene abierto actualmente en Visual Studio:
 
