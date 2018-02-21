@@ -189,7 +189,7 @@
 ## [Uso del contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Diagnóstico del rendimiento de la extensión](how-to-diagnose-extension-performance.md)
 ## [Solución de problemas de VSPackages](troubleshooting-vspackages.md)
-# [Shell (integrado o aislado)](shell/)
+# [Shell (integrado o aislado)](https://vspartner.com/pages/vsshells)
 # [Suministro de extensiones de Visual Studio](shipping-visual-studio-extensions.md)
 ## [Plantilla de proyecto de VSIX](vsix-project-template.md)
 ## [Introducción a la plantilla de proyecto VSIX](getting-started-with-the-vsix-project-template.md)

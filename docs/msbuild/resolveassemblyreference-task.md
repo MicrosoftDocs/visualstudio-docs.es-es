@@ -11,6 +11,7 @@ f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
 - MSBuild.ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects
 - MSBuild.ResolveAssemblyReference.FoundConflict
+- MSBuild.ResolveAssemblyRedirects.SuggestedRedirects
 dev_langs:
 - VB
 - CSharp
@@ -26,11 +27,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0003b1f747238467afd4754cb77cc1ac47a07a86
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 91585ea5e72bc2ceebf07d02c2398454f775b5b7
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference (Tarea)
 Determina todos los ensamblados que dependen de los ensamblados especificados. Esto incluye las dependencias segundo y de `n`º orden.  
