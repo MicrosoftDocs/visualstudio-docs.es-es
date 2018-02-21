@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,41 +21,44 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4f6dfae83f09398ba9a8d1377c16756487193ee2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- office
+ms.openlocfilehash: 672eaf3ed82a80983b919a37b2aeff4c99621f43
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
-  Cuando compila un proyecto de nivel de documento, Visual Studio agrega dos propiedades personalizadas al documento en el proyecto: _AssemblyLocation y _AssemblyName. Cuando un usuario abre un documento, la aplicación de Microsoft Office comprueba estas propiedades personalizadas del documento. Si existen en el documento, la aplicación carga el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], que inicia la personalización. Para obtener más información, consulte [arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).  
-  
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
-  
-## <a name="assemblyname"></a>_AssemblyName  
- Esta propiedad contiene el CLSID de una interfaz en el componente de cargador de solución de Office de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. El valor CLSID es 4E3C66D5 - 58D 4-491E-A7D4-64AF99AF6E8B. Nunca debe cambiar este valor.  
-  
-## <a name="assemblylocation"></a>_AssemblyLocation  
- Esta propiedad contiene una cadena que proporciona detalles sobre el manifiesto de implementación para la personalización. Para obtener más información sobre los manifiestos, consulte [aplicaciones y manifiestos de implementación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).  
-  
- Valor de la propiedad The_AssemblyLocation puede tener formatos diferentes, dependiendo de cómo se implementa la solución:  
-  
--   Si la solución se publica para que se instale desde un sitio Web, ruta de acceso UNC o una unidad de CD o USB, la propiedad _AssemblyLocation tiene el formato *rutaDeAccesoDelManifiestoDeImplementación*|*SolutionID*. La cadena siguiente es un ejemplo:  
-  
-     File://deployserver/MyShare/ExcelWorkbook1.VSTO | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9  
-  
--   Si se ejecuta o depura la solución desde Visual Studio, la propiedad _AssemblyLocation tiene el formato *nombreDelManifiestoDeImplementación*|*SolutionID*| vstolocal. La cadena siguiente es un ejemplo:  
-  
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal  
-  
- El *SolutionID* es un GUID que el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utiliza para identificar la solución. El *SolutionID* se genera automáticamente al compilar el proyecto. El **vstolocal** término indica a la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que se debe cargar el ensamblado desde la misma carpeta que el documento.  
-  
-## <a name="see-also"></a>Vea también  
- [Arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
- [Arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md)   
- [Aplicaciones y manifiestos de implementación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
- [Cómo: publicar una solución de Office mediante ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [Cómo: Crear y modificar propiedades personalizadas de documentos](../vsto/how-to-create-and-modify-custom-document-properties.md)  
-  
-  
+
+Cuando compila un proyecto de nivel de documento, Visual Studio agrega dos propiedades personalizadas al documento en el proyecto: \_AssemblyLocation y \_AssemblyName. Cuando un usuario abre un documento, la aplicación de Microsoft Office comprueba estas propiedades personalizadas del documento. Si existen en el documento, la aplicación carga el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], que inicia la personalización. Para obtener más información, consulte [arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+
+ [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
+
+## <a name="assemblyname"></a>\_AssemblyName
+
+Esta propiedad contiene el CLSID de una interfaz en el componente de cargador de solución de Office de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. El valor CLSID es 4E3C66D5 - 58D 4-491E-A7D4-64AF99AF6E8B. Nunca debe cambiar este valor.
+
+## <a name="assemblylocation"></a>\_AssemblyLocation
+
+Esta propiedad contiene una cadena que proporciona detalles sobre el manifiesto de implementación para la personalización. Para obtener más información sobre los manifiestos, consulte [aplicaciones y manifiestos de implementación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+
+ Valor de la propiedad The_AssemblyLocation puede tener formatos diferentes, dependiendo de cómo se implementa la solución:
+
+- Si la solución se publica para que se instale desde un sitio Web, ruta de acceso UNC o una unidad de CD o USB, la propiedad _AssemblyLocation tiene el formato *rutaDeAccesoDelManifiestoDeImplementación*|*SolutionID*. La cadena siguiente es un ejemplo:
+
+     file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
+
+- Si se ejecuta o depura la solución desde Visual Studio, la propiedad _AssemblyLocation tiene el formato *nombreDelManifiestoDeImplementación*|*SolutionID*| vstolocal. La cadena siguiente es un ejemplo:
+
+     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+
+ El *SolutionID* es un GUID que el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utiliza para identificar la solución. El *SolutionID* se genera automáticamente al compilar el proyecto. El **vstolocal** término indica a la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que se debe cargar el ensamblado desde la misma carpeta que el documento.
+
+## <a name="see-also"></a>Vea también
+
+[Arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+[arquitectura de las personalizaciones de nivel de documento de](../vsto/architecture-of-document-level-customizations.md)
+[manifiestos de aplicación e implementación de soluciones de Office ](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
+ [Cómo: publicar una solución de Office mediante ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+[Cómo: crear y modificar propiedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)
