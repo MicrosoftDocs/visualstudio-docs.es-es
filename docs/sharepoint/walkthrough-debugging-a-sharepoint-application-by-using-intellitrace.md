@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,323 +20,322 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 03afad9971a938a88df624f24e5553abbdc0f976
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- office
+ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace
-  Con IntelliTrace, puede depurar las soluciones de SharePoint más fácilmente. Los depuradores tradicionales solo proporcionan una instantánea de la solución en el momento actual. Sin embargo, puede usar IntelliTrace para revisar los eventos pasados que se produjeron en la solución y el contexto en los que se produjeron, así como navegar hasta el código.  
-  
- En este tutorial se muestra cómo depurar un proyecto de SharePoint 2010 o de SharePoint 2013 en Visual Studio Ultimate mediante Microsoft Monitoring Agent para recopilar datos de IntelliTrace de aplicaciones implementadas. Para analizar estos datos, se debe utilizar Visual Studio Ultimate. Este proyecto incorpora un receptor de características que, cuando se activa la característica, agrega una tarea a la lista de tareas y un anuncio a la lista de anuncios. Cuando la característica está desactivada, la tarea se marca como completada y se agrega un segundo anuncio a la lista de anuncios. Sin embargo, el procedimiento contiene un error lógico que evita que el proyecto se ejecute correctamente. Mediante IntelliTrace, se puede localizar y corregir el error.  
-  
- **Se aplica a:** la información de este tema se aplica a las soluciones de SharePoint 2010 y SharePoint 2013 que se crearon en Visual Studio.  
-  
- En este tutorial se muestran las tareas siguientes:  
-  
--   [Crear un receptor de características](#BKMK_CreateReceiver)  
-  
--   [Agregue código al receptor de características](#BKMK_AddCode)  
-  
--   [El proyecto de prueba](#BKMK_Test1)  
-  
--   [Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)  
-  
--   [Depurar y corregir la solución de SharePoint](#BKMK_DebugSolution)  
-  
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
-  
-## <a name="prerequisites"></a>Requisitos previos  
- Necesita los componentes siguientes para completar este tutorial:  
-  
--   Ediciones compatibles de Windows y SharePoint. Vea [requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
-  
--   Visual Studio Ultimate.  
-  
-##  <a name="BKMK_CreateReceiver"></a>Crear un receptor de características  
- Primero se debe crear un proyecto de SharePoint vacío que tiene un receptor de características.  
-  
-#### <a name="to-create-a-feature-receiver"></a>Para crear un receptor de características  
-  
-1.  Cree un proyecto de solución de SharePoint 2010 o SharePoint 2013 y asígnele el nombre **IntelliTraceTest**.  
-  
-     El **Asistente para personalización de SharePoint** aparece, en el que puede especificar el sitio de SharePoint para el proyecto y el nivel de confianza de la solución.  
-  
-2.  Elija la **implementar como solución de granja de servidores** botón de opción y, a continuación, elija la **finalizar** botón.  
-  
-     IntelliTrace sólo funciona en soluciones de granja.  
-  
-3.  En **el Explorador de soluciones**, abra el menú contextual para el **características** nodo y, a continuación, elija **Agregar característica**.  
-  
-     Aparece Feature1.feature.  
-  
-4.  Abra el menú contextual para Feature1.feature y, a continuación, elija **agregar receptor de eventos** para agregar un módulo de código a la característica.  
-  
-##  <a name="BKMK_AddCode"></a>Agregue código al receptor de características  
- Luego, agregue el código a dos métodos del receptor de características: `FeatureActivated` y `FeatureDeactivating`. Estos métodos se activan cada vez que una característica se activa o se desactiva en SharePoint, respectivamente.  
-  
-#### <a name="to-add-code-to-the-feature-receiver"></a>Para agregar código al receptor de características  
-  
-1.  En la parte superior de la clase `Feature1EventReceiver`, agregue el siguiente código, que declara las variables que especifican el sitio y subsitio de SharePoint:  
-  
-    ```vb  
-    ' SharePoint site and subsite.  
-    Private siteUrl As String = "http://localhost"  
-    Private webUrl As String = "/"  
-    ```  
-  
-    ```csharp  
-    // SharePoint site and subsite.  
-    private string siteUrl = "http://localhost";  
-    private string webUrl = "/";  
-    ```  
-  
-2.  Reemplace el método `FeatureActivated` con el código siguiente:  
-  
-    ```vb  
-    Public Overrides Sub FeatureActivated(ByVal properties As SPFeatureReceiverProperties)  
-        Try  
-            Using site As New SPSite(siteUrl)  
-                Using web As SPWeb = site.OpenWeb(webUrl)  
-                    ' Reference the lists.  
-                    Dim announcementsList As SPList = web.Lists("Announcements")  
-                    Dim taskList As SPList = web.Lists("Tasks")  
-  
-                    ' Add an announcement to the Announcements list.  
-                    Dim listItem As SPListItem = announcementsList.Items.Add()  
-                    listItem("Title") = "Activated Feature: " & Convert.ToString(properties.Definition.DisplayName)  
-                    listItem("Body") = Convert.ToString(properties.Definition.DisplayName) & " was activated on: " & DateTime.Now.ToString()  
-                    listItem.Update()  
-  
-                    ' Add a task to the Task list.  
-                    Dim newTask As SPListItem = taskList.Items.Add()  
-                    newTask("Title") = "Deactivate feature: " & Convert.ToString(properties.Definition.DisplayName)  
-                    newTask.Update()  
-                End Using  
-            End Using  
-  
-        Catch e As Exception  
-            Console.WriteLine("Error: " & e.ToString())  
-        End Try  
-  
-    End Sub  
-    ```  
-  
-    ```csharp  
-    public override void FeatureActivated(SPFeatureReceiverProperties properties)  
-    {  
-        try  
-        {  
-            using (SPSite site = new SPSite(siteUrl))  
-            {  
-                using (SPWeb web = site.OpenWeb(webUrl))  
-                {  
-                    // Reference the lists.  
-                    SPList announcementsList = web.Lists["Announcements"];  
-                    SPList taskList = web.Lists["Tasks"];  
-  
-                    // Add an announcement to the Announcements list.  
-                    SPListItem listItem = announcementsList.Items.Add();  
-                    listItem["Title"] = "Activated Feature: " + properties.Definition.DisplayName;  
-                    listItem["Body"] = properties.Definition.DisplayName + " was activated on: " + DateTime.Now.ToString();  
-                    listItem.Update();  
-  
-                    // Add a task to the Task list.  
-                    SPListItem newTask = taskList.Items.Add();  
-                    newTask["Title"] = "Deactivate feature: " + properties.Definition.DisplayName;  
-                    newTask.Update();  
-                }  
-            }  
-        }  
-  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("Error: " + e.ToString());  
-        }  
-  
-    }  
-    ```  
-  
-3.  Reemplace el método `FeatureDeactivating` con el código siguiente:  
-  
-    ```vb  
-    Public Overrides Sub FeatureDeactivating(ByVal properties As SPFeatureReceiverProperties)  
-        ' The following line induces an error to demonstrate debugging.  
-        ' Remove this line later for proper operation.  
-        Throw New System.InvalidOperationException("Serious error occurred!")  
-        Try  
-            Using site As New SPSite(siteUrl)  
-                Using web As SPWeb = site.OpenWeb(webUrl)  
-                    ' Reference the lists.  
-                    Dim taskList As SPList = web.Lists("Tasks")  
-                    Dim announcementsList As SPList = web.Lists("Announcements")  
-  
-                    ' Add an announcement that the feature was deactivated.  
-                    Dim listItem As SPListItem = announcementsList.Items.Add()  
-                    listItem("Title") = "Deactivated Feature: " & Convert.ToString(properties.Definition.DisplayName)  
-                    listItem("Body") = Convert.ToString(properties.Definition.DisplayName) & " was deactivated on: " & DateTime.Now.ToString()  
-                    listItem.Update()  
-  
-                    ' Find the task that the feature receiver added to the Task list when the  
-                    ' feature was activated.  
-                    Dim qry As New SPQuery()  
-                    qry.Query = "<Where><Contains><FieldRef Name='Title' /><Value Type='Text'>Deactivate</Value></Contains></Where>"  
-                    Dim taskItems As SPListItemCollection = taskList.GetItems(qry)  
-  
-                    For Each taskItem As SPListItem In taskItems  
-                        ' Mark the task as complete.  
-                        taskItem("PercentComplete") = 1  
-                        taskItem("Status") = "Completed"  
-                        taskItem.Update()  
-                    Next  
-                End Using  
-  
-            End Using  
-  
-        Catch e As Exception  
-            Console.WriteLine("Error: " & e.ToString())  
-        End Try  
-  
-    End Sub  
-    ```  
-  
-    ```csharp  
-    public override void FeatureDeactivating(SPFeatureReceiverProperties properties)  
-    {  
-        // The following line induces an error to demonstrate debugging.  
-        // Remove this line later for proper operation.  
-        throw new System.InvalidOperationException("A serious error occurred!");   
-        try  
-        {  
-            using (SPSite site = new SPSite(siteUrl))  
-            {  
-                using (SPWeb web = site.OpenWeb(webUrl))  
-                {  
-                    // Reference the lists.  
-                    SPList taskList = web.Lists["Tasks"];  
-                    SPList announcementsList = web.Lists["Announcements"];  
-  
-                    // Add an announcement that the feature was deactivated.  
-                    SPListItem listItem = announcementsList.Items.Add();  
-                    listItem["Title"] = "Deactivated Feature: " + properties.Definition.DisplayName;  
-                    listItem["Body"] = properties.Definition.DisplayName + " was deactivated on: " + DateTime.Now.ToString();  
-                    listItem.Update();  
-  
-                    // Find the task that the feature receiver added to the Task list when the  
-                    // feature was activated.  
-                    SPQuery qry = new SPQuery();  
-                    qry.Query = "<Where><Contains><FieldRef Name='Title' /><Value Type='Text'>Deactivate</Value></Contains></Where>";  
-                    SPListItemCollection taskItems = taskList.GetItems(qry);  
-  
-                    foreach (SPListItem taskItem in taskItems)  
-                    {  
-                        // Mark the task as complete.  
-                        taskItem["PercentComplete"] = 1;  
-                        taskItem["Status"] = "Completed";  
-                        taskItem.Update();  
-                    }  
-                }  
-            }  
-  
-        }  
-  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("Error: " + e.ToString());  
-        }  
-    }  
-    ```  
-  
-##  <a name="BKMK_Test1"></a>El proyecto de prueba  
- Ahora que el código se agrega al receptor de características y el recopilador de datos se está ejecutando, implemente y ejecute la solución de SharePoint para probar si funciona correctamente.  
-  
-> [!IMPORTANT]  
->  Para este ejemplo, se produce un error en el controlador de eventos FeatureDeactivating. Más adelante en este tutorial, encontrará este error mediante el archivo .iTrace que creó el recopilador de datos.  
-  
-#### <a name="to-test-the-project"></a>Para probar el proyecto  
-  
-1.  Implemente la solución de SharePoint y vuelva a abrir el sitio de SharePoint en un explorador.  
-  
-     La característica se activa automáticamente, lo que hace que el receptor de características agregue un anuncio y una tarea.  
-  
-2.  Muestre el contenido de las listas Anuncios y Tareas.  
-  
-     La lista anuncios debe tener un nuevo anuncio denominado **característica activada: IntelliTraceTest_Feature1**, y la lista de tareas debe tener una nueva tarea que se denomina **desactivar característica: IntelliTraceTest_ Feature1**. Si falta cualquiera de estos elementos, compruebe si la característica está activada. Si no está activada, actívela.  
-  
-3.  Desactive la característica siguiendo estos pasos:  
-  
-    1.  En el **acciones del sitio** menú en SharePoint, elija **configuración del sitio**.  
-  
-    2.  En **acciones del sitio**, elija la **administrar características del sitio** vínculo.  
-  
-    3.  Junto a **IntelliTraceTest Feature1**, elija la **desactivar** botón.  
-  
-    4.  En la página advertencia, elija la **desactivar esta característica** vínculo.  
-  
-     El controlador de eventos FeatureDeactivating() produce un error.  
-  
-##  <a name="BKMK_CollectDiagnosticData"></a>Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent  
- Si instala a Microsoft Monitoring Agent en el sistema que ejecuta SharePoint, puede depurar soluciones de SharePoint mediante el uso de datos que son más específicos que la información genérica que devuelve IntelliTrace. El agente funciona fuera de Visual Studio mediante cmdlets de PowerShell para capturar información de depuración mientras se ejecuta la solución de SharePoint.  
-  
-> [!NOTE]  
->  La información de configuración de esta sección es específica de este ejemplo. Para obtener más información sobre otras opciones de configuración, consulte [mediante el recolector independiente IntelliTrace](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
-1.  En el equipo que ejecuta SharePoint, [configurar Microsoft Monitoring Agent y empezar a supervisar la solución](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
-2.  Desactive la característica:  
-  
-    1.  En el **acciones del sitio** menú en SharePoint, elija **configuración del sitio**.  
-  
-    2.  En **acciones del sitio**, elija la **administrar características del sitio** vínculo.  
-  
-    3.  Junto a **IntelliTraceTest Feature1**, elija la **desactivar** botón.  
-  
-    4.  En la página advertencia, elija la **desactivar esta característica** vínculo.  
-  
-     Se produce un error; en este caso, se debe al error que se produce en el controlador de eventos FeatureDeactivating().  
-  
-3.  En la ventana de PowerShell, ejecute el [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando para crear el archivo .iTrace, detener la supervisión y reiniciar la solución de SharePoint.  
-  
-     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"*   
-  
-##  <a name="BKMK_DebugSolution"></a>Depurar y corregir la solución de SharePoint  
- Ahora puede ver el archivo de registro de IntelliTrace en Visual Studio para buscar y corregir el error en la solución de SharePoint.  
-  
-#### <a name="to-debug-and-fix-the-sharepoint-solution"></a>Para depurar y corregir la solución de SharePoint  
-  
-1.  En la carpeta del \IntelliTraceLogs, abra el archivo .iTrace en Visual Studio.  
-  
-     El **resumen de IntelliTrace** aparecerá la página. Dado que no se ha controlado el error, un identificador de correlación de SharePoint (un GUID) aparece en el área de una excepción no controlada de la **Analysis** sección. Elija la **pila de llamadas** botón si desea ver la pila de llamadas donde se produjo el error.  
-  
-2.  Elija la **depurar excepción** botón.  
-  
-     Si se le solicita, cargue los archivos de símbolos. En el **IntelliTrace** ventana, se resalta la excepción como "producida: error grave!".  
-  
-     En la ventana IntelliTrace, elija la excepción para mostrar el código que produjo un error.  
-  
-3.  Corrija el error abriendo la solución de SharePoint y, a continuación, marcando como comentario o quite el **throw** instrucción en la parte superior del procedimiento de FeatureDeactivating().  
-  
-4.  Recompile la solución en Visual Studio y, a continuación, vuelva a implementarla en SharePoint.  
-  
-5.  Desactive la característica siguiendo estos pasos:  
-  
-    1.  En el **acciones del sitio** menú en SharePoint, elija **configuración del sitio**.  
-  
-    2.  En **acciones del sitio**, elija la **administrar características del sitio** vínculo.  
-  
-    3.  Junto a **IntelliTraceTest Feature1**, elija la **desactivar** botón.  
-  
-    4.  En la página advertencia, elija la **desactivar esta característica** vínculo.  
-  
-6.  Abra la lista de tareas y compruebe que la **estado** valor de la tarea desactivada es "completada" y su **% completado** valor es 100%.  
-  
-     El código se ejecuta ahora correctamente.  
-  
-## <a name="see-also"></a>Vea también  
- [Comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)   
- [IntelliTrace](/visualstudio/debugger/intellitrace)   
- [Tutorial: Comprobar el código de SharePoint mediante pruebas unitarias](https://msdn.microsoft.com/en-us/library/gg599006(v=vs.100).aspx)  
-  
-  
+
+Con IntelliTrace, puede depurar las soluciones de SharePoint más fácilmente. Los depuradores tradicionales solo proporcionan una instantánea de la solución en el momento actual. Sin embargo, puede usar IntelliTrace para revisar los eventos pasados que se produjeron en la solución y el contexto en los que se produjeron, así como navegar hasta el código.
+
+ Este tutorial muestra cómo depurar un proyecto de SharePoint 2010 o SharePoint 2013 en Visual Studio mediante Microsoft Monitoring Agent para recopilar datos de IntelliTrace de aplicaciones implementadas. Para analizar estos datos, debe utilizar Visual Studio Enterprise. Este proyecto incorpora un receptor de características que, cuando se activa la característica, agrega una tarea a la lista de tareas y un anuncio a la lista de anuncios. Cuando la característica está desactivada, la tarea se marca como completada y se agrega un segundo anuncio a la lista de anuncios. Sin embargo, el procedimiento contiene un error lógico que evita que el proyecto se ejecute correctamente. Mediante IntelliTrace, se puede localizar y corregir el error.
+
+ **Se aplica a:** la información de este tema se aplica a las soluciones de SharePoint 2010 y SharePoint 2013 que se crearon en Visual Studio.
+
+ En este tutorial se muestran las tareas siguientes:
+
+- [Crear un receptor de características](#BKMK_CreateReceiver)
+
+- [Agregue código al receptor de características](#BKMK_AddCode)
+
+- [El proyecto de prueba](#BKMK_Test1)
+
+- [Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+
+- [Depurar y corregir la solución de SharePoint](#BKMK_DebugSolution)
+
+ [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+
+## <a name="prerequisites"></a>Requisitos previos
+
+Necesita los componentes siguientes para completar este tutorial:
+
+- Ediciones compatibles de Windows y SharePoint. Vea [requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+
+- Visual Studio Enterprise.
+
+## <a name="BKMK_CreateReceiver">Crear un receptor de características</a>
+
+Primero se debe crear un proyecto de SharePoint vacío que tiene un receptor de características.
+
+1. Cree un proyecto de solución de SharePoint 2010 o SharePoint 2013 y asígnele el nombre **IntelliTraceTest**.
+
+     El **Asistente para personalización de SharePoint** aparece, en el que puede especificar el sitio de SharePoint para el proyecto y el nivel de confianza de la solución.
+
+2. Elija la **implementar como solución de granja de servidores** botón de opción y, a continuación, elija la **finalizar** botón.
+
+     IntelliTrace sólo funciona en soluciones de granja.
+
+3. En **el Explorador de soluciones**, abra el menú contextual para el **características** nodo y, a continuación, elija **Agregar característica**.
+
+     Aparece Feature1.feature.
+
+4. Abra el menú contextual para Feature1.feature y, a continuación, elija **agregar receptor de eventos** para agregar un módulo de código a la característica.
+
+## <a name="BKMK_AddCode">Agregue código al receptor de características</a>
+
+Luego, agregue el código a dos métodos del receptor de características: `FeatureActivated` y `FeatureDeactivating`. Estos métodos se activan cada vez que una característica se activa o se desactiva en SharePoint, respectivamente.
+
+1. En la parte superior de la clase `Feature1EventReceiver`, agregue el siguiente código, que declara las variables que especifican el sitio y subsitio de SharePoint:
+
+    ```vb
+    ' SharePoint site and subsite.
+    Private siteUrl As String = "http://localhost"
+    Private webUrl As String = "/"
+    ```
+
+    ```csharp
+    // SharePoint site and subsite.
+    private string siteUrl = "http://localhost";
+    private string webUrl = "/";
+    ```
+
+2. Reemplace el método `FeatureActivated` con el código siguiente:
+
+    ```vb
+    Public Overrides Sub FeatureActivated(ByVal properties As SPFeatureReceiverProperties)
+        Try
+            Using site As New SPSite(siteUrl)
+                Using web As SPWeb = site.OpenWeb(webUrl)
+                    ' Reference the lists.
+                    Dim announcementsList As SPList = web.Lists("Announcements")
+                    Dim taskList As SPList = web.Lists("Tasks")
+
+                    ' Add an announcement to the Announcements list.
+                    Dim listItem As SPListItem = announcementsList.Items.Add()
+                    listItem("Title") = "Activated Feature: " & Convert.ToString(properties.Definition.DisplayName)
+                    listItem("Body") = Convert.ToString(properties.Definition.DisplayName) & " was activated on: " & DateTime.Now.ToString()
+                    listItem.Update()
+
+                    ' Add a task to the Task list.
+                    Dim newTask As SPListItem = taskList.Items.Add()
+                    newTask("Title") = "Deactivate feature: " & Convert.ToString(properties.Definition.DisplayName)
+                    newTask.Update()
+                End Using
+            End Using
+
+        Catch e As Exception
+            Console.WriteLine("Error: " & e.ToString())
+        End Try
+
+    End Sub
+    ```
+
+    ```csharp
+    public override void FeatureActivated(SPFeatureReceiverProperties properties)
+    {
+        try
+        {
+            using (SPSite site = new SPSite(siteUrl))
+            {
+                using (SPWeb web = site.OpenWeb(webUrl))
+                {
+                    // Reference the lists.
+                    SPList announcementsList = web.Lists["Announcements"];
+                    SPList taskList = web.Lists["Tasks"];
+
+                    // Add an announcement to the Announcements list.
+                    SPListItem listItem = announcementsList.Items.Add();
+                    listItem["Title"] = "Activated Feature: " + properties.Definition.DisplayName;
+                    listItem["Body"] = properties.Definition.DisplayName + " was activated on: " + DateTime.Now.ToString();
+                    listItem.Update();
+
+                    // Add a task to the Task list.
+                    SPListItem newTask = taskList.Items.Add();
+                    newTask["Title"] = "Deactivate feature: " + properties.Definition.DisplayName;
+                    newTask.Update();
+                }
+            }
+        }
+
+        catch (Exception e)
+        {
+            Console.WriteLine("Error: " + e.ToString());
+        }
+
+    }
+    ```
+
+3. Reemplace el método `FeatureDeactivating` con el código siguiente:
+
+    ```vb
+    Public Overrides Sub FeatureDeactivating(ByVal properties As SPFeatureReceiverProperties)
+        ' The following line induces an error to demonstrate debugging.
+        ' Remove this line later for proper operation.
+        Throw New System.InvalidOperationException("Serious error occurred!")
+        Try
+            Using site As New SPSite(siteUrl)
+                Using web As SPWeb = site.OpenWeb(webUrl)
+                    ' Reference the lists.
+                    Dim taskList As SPList = web.Lists("Tasks")
+                    Dim announcementsList As SPList = web.Lists("Announcements")
+
+                    ' Add an announcement that the feature was deactivated.
+                    Dim listItem As SPListItem = announcementsList.Items.Add()
+                    listItem("Title") = "Deactivated Feature: " & Convert.ToString(properties.Definition.DisplayName)
+                    listItem("Body") = Convert.ToString(properties.Definition.DisplayName) & " was deactivated on: " & DateTime.Now.ToString()
+                    listItem.Update()
+
+                    ' Find the task that the feature receiver added to the Task list when the
+                    ' feature was activated.
+                    Dim qry As New SPQuery()
+                    qry.Query = "<Where><Contains><FieldRef Name='Title' /><Value Type='Text'>Deactivate</Value></Contains></Where>"
+                    Dim taskItems As SPListItemCollection = taskList.GetItems(qry)
+
+                    For Each taskItem As SPListItem In taskItems
+                        ' Mark the task as complete.
+                        taskItem("PercentComplete") = 1
+                        taskItem("Status") = "Completed"
+                        taskItem.Update()
+                    Next
+                End Using
+
+            End Using
+
+        Catch e As Exception
+            Console.WriteLine("Error: " & e.ToString())
+        End Try
+
+    End Sub
+    ```
+
+    ```csharp
+    public override void FeatureDeactivating(SPFeatureReceiverProperties properties)
+    {
+        // The following line induces an error to demonstrate debugging.
+        // Remove this line later for proper operation.
+        throw new System.InvalidOperationException("A serious error occurred!"); 
+        try
+        {
+            using (SPSite site = new SPSite(siteUrl))
+            {
+                using (SPWeb web = site.OpenWeb(webUrl))
+                {
+                    // Reference the lists.
+                    SPList taskList = web.Lists["Tasks"];
+                    SPList announcementsList = web.Lists["Announcements"];
+
+                    // Add an announcement that the feature was deactivated.
+                    SPListItem listItem = announcementsList.Items.Add();
+                    listItem["Title"] = "Deactivated Feature: " + properties.Definition.DisplayName;
+                    listItem["Body"] = properties.Definition.DisplayName + " was deactivated on: " + DateTime.Now.ToString();
+                    listItem.Update();
+
+                    // Find the task that the feature receiver added to the Task list when the
+                    // feature was activated.
+                    SPQuery qry = new SPQuery();
+                    qry.Query = "<Where><Contains><FieldRef Name='Title' /><Value Type='Text'>Deactivate</Value></Contains></Where>";
+                    SPListItemCollection taskItems = taskList.GetItems(qry);
+
+                    foreach (SPListItem taskItem in taskItems)
+                    {
+                        // Mark the task as complete.
+                        taskItem["PercentComplete"] = 1;
+                        taskItem["Status"] = "Completed";
+                        taskItem.Update();
+                    }
+                }
+            }
+
+        }
+
+        catch (Exception e)
+        {
+            Console.WriteLine("Error: " + e.ToString());
+        }
+    }
+    ```
+
+## <a name="BKMK_Test1">El proyecto de prueba</a>
+
+Ahora que el código se agrega al receptor de características y el recopilador de datos se está ejecutando, implemente y ejecute la solución de SharePoint para probar si funciona correctamente.
+
+> [!IMPORTANT]
+> Para este ejemplo, se produce un error en el controlador de eventos FeatureDeactivating. Más adelante en este tutorial, encontrará este error mediante el archivo .iTrace que creó el recopilador de datos.
+
+1. Implemente la solución de SharePoint y vuelva a abrir el sitio de SharePoint en un explorador.
+
+     La característica se activa automáticamente, lo que hace que el receptor de características agregue un anuncio y una tarea.
+
+2. Muestre el contenido de las listas Anuncios y Tareas.
+
+     La lista anuncios debe tener un nuevo anuncio denominado **característica activada: IntelliTraceTest_Feature1**, y la lista de tareas debe tener una nueva tarea que se denomina **desactivar característica: IntelliTraceTest_ Feature1**. Si falta cualquiera de estos elementos, compruebe si la característica está activada. Si no está activada, actívela.
+
+3. Desactive la característica siguiendo estos pasos:
+
+    1. En el **acciones del sitio** menú en SharePoint, elija **configuración del sitio**.
+
+    2. En **acciones del sitio**, elija la **administrar características del sitio** vínculo.
+
+    3. Junto a **IntelliTraceTest Feature1**, elija la **desactivar** botón.
+
+    4. En la página advertencia, elija la **desactivar esta característica** vínculo.
+
+     El controlador de eventos FeatureDeactivating() produce un error.
+
+## <a name="BKMK_CollectDiagnosticData">Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent</a>
+
+Si instala a Microsoft Monitoring Agent en el sistema que ejecuta SharePoint, puede depurar soluciones de SharePoint mediante el uso de datos que son más específicos que la información genérica que devuelve IntelliTrace. El agente funciona fuera de Visual Studio mediante cmdlets de PowerShell para capturar información de depuración mientras se ejecuta la solución de SharePoint.
+
+> [!NOTE]
+> La información de configuración de esta sección es específica de este ejemplo. Para obtener más información sobre otras opciones de configuración, consulte [mediante el recolector independiente IntelliTrace](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+
+1. En el equipo que ejecuta SharePoint, [configurar Microsoft Monitoring Agent y empezar a supervisar la solución](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).
+
+2. Desactive la característica:
+
+    1. En el **acciones del sitio** menú en SharePoint, elija **configuración del sitio**.
+
+    2. En **acciones del sitio**, elija la **administrar características del sitio** vínculo.
+
+    3. Junto a **IntelliTraceTest Feature1**, elija la **desactivar** botón.
+
+    4. En la página advertencia, elija la **desactivar esta característica** vínculo.
+
+     Se produce un error; en este caso, se debe al error que se produce en el controlador de eventos FeatureDeactivating().
+
+3. En la ventana de PowerShell, ejecute el [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando para crear el archivo .iTrace, detener la supervisión y reiniciar la solución de SharePoint.
+
+     **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
+
+## <a name="BKMK_DebugSolution">Depurar y corregir la solución de SharePoint</a>
+
+Ahora puede ver el archivo de registro de IntelliTrace en Visual Studio para buscar y corregir el error en la solución de SharePoint.
+
+1. En la carpeta del \IntelliTraceLogs, abra el archivo .iTrace en Visual Studio.
+
+     El **resumen de IntelliTrace** aparecerá la página. Dado que no se ha controlado el error, un identificador de correlación de SharePoint (un GUID) aparece en el área de una excepción no controlada de la **Analysis** sección. Elija la **pila de llamadas** botón si desea ver la pila de llamadas donde se produjo el error.
+
+2. Elija la **depurar excepción** botón.
+
+     Si se le solicita, cargue los archivos de símbolos. En el **IntelliTrace** ventana, se resalta la excepción como "producida: error grave!".
+
+     En la ventana IntelliTrace, elija la excepción para mostrar el código que produjo un error.
+
+3. Corrija el error abriendo la solución de SharePoint y, a continuación, marcando como comentario o quite el **throw** instrucción en la parte superior del procedimiento de FeatureDeactivating().
+
+4. Recompile la solución en Visual Studio y, a continuación, vuelva a implementarla en SharePoint.
+
+5. Desactive la característica siguiendo estos pasos:
+
+    1. En el **acciones del sitio** menú en SharePoint, elija **configuración del sitio**.
+
+    2. En **acciones del sitio**, elija la **administrar características del sitio** vínculo.
+
+    3. Junto a **IntelliTraceTest Feature1**, elija la **desactivar** botón.
+
+    4. En la página advertencia, elija la **desactivar esta característica** vínculo.
+
+6. Abra la lista de tareas y compruebe que la **estado** valor de la tarea desactivada es "completada" y su **% completado** valor es 100%.
+
+     El código se ejecuta ahora correctamente.
+
+## <a name="see-also"></a>Vea también
+
+[Comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
+[IntelliTrace](/visualstudio/debugger/intellitrace)  
+[Tutorial: Comprobar el código de SharePoint mediante pruebas unitarias](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)
