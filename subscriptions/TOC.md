@@ -1,48 +1,75 @@
-# [Suscripciones de Visual Studio](index.md)
-# Información general
-## [Comparación de opciones de suscripción](compare-subscriptions.md)
-
-# Guías de procedimientos
-##  Suscriptores
-### [Compra de una suscripción](buy-vs-subscriptions.md)
-### [Administración de una suscripción](manage-vs-subscriptions.md)
-### [Uso de descargas para suscriptores](subscriber-downloads.md)
-### [Uso de claves de productos](product-keys.md)
-### Activación de las ventajas
-#### Herramientas
-##### [IDE de Visual Studio](vs-ide-benefit.md) 
-##### [Visual Studio Team Services](vs-vsts.md)
-##### [Microsoft Azure](vs-azure.md) 
-##### [Parasoft](vs-parasoft.md)
-##### [WhiteSource Bolt](vs-whitesource.md)
-##### [Enterprise Mobility + Security](vs-ems.md)
-##### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
-##### [Office 365 Developer](vs-office-dev.md)
-##### [Power BI Pro](vs-pbi.md)
-##### [SmartOffice4TFS + ModernRequirements4TFS](vs-modernreq.md)
-##### [Pago por uso de Microsoft Azure](vs-azure-payg.md) 
-#### Educación
-##### [DataCamp](vs-datacamp.md)
-##### [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
-##### [Opsgility](vs-opsgility.md)
-##### [Pluralsight](vs-pluralsight.md)
-##### [Aprendizaje en Xamarin University](vs-xamarin.md)
-##### [Microsoft E-Learning](vs-elearn.md)
-##### [Suscripción a MSDN Magazine](vs-msdn.md)
-#### Compatibilidad
-##### [Soporte técnico](vs-tech-support.md)
-
-## Administradores
-### [Información general del administrador](admin-responsibilities.md)
-### [Acceso al Portal de administrador](access-admin-portal.md)
-### [Uso del Portal de administrador](using-admin-portal.md)
-### [Asignación de una suscripción](assign-license.md)
-### [Edición de una suscripción](edit-license.md)
-### [Eliminación de una suscripción](delete-license.md)
-### [Búsqueda de una suscripción](search-license.md)
-### [Control de exceso de asignación de suscripciones](handle-overclaimed-license.md)
-### [Control de suscripciones expiradas](handle-expired-license.md)
-
+# [Suscripciones de Visual Studio](index.md) 
+## Experiencias del suscriptor
+### [Uso del portal del suscriptor](using-the-subscriber-portal.md)
+#### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
+#### [Iniciar sesión](signing-in.md)
+##### [Inicio de sesión con alias](aliasing.md)
+#### [Administración de sus suscripciones](manage-vs-subscriptions.md)
+### [Descarga de software](subscriber-downloads.md)
+#### [Lista de descargas de software disponibles](software-download-list.md)
+### [Obtención y administración de las claves de producto](product-keys.md)
+### Visual Studio Dev Essentials
+#### [Unión a Visual Studio Dev Essentials](join-dev-essentials.md)
+#### [Rechazo de Visual Studio Dev Essentials](leave-vsde.md)
+### [Beneficios para los suscriptores](subscriber-benefits.md)
+## Uso de beneficios para los suscriptores
+### Herramientas
+#### [Visual Studio IDE](vs-ide-benefit.md) 
+#### [Visual Studio Team Services](vs-vsts.md)
+#### [Crédito de Azure](vs-azure.md) 
+#### [Visual Studio App Center](vs-visual-studio-app-center.md)
+#### [Parasoft](vs-parasoft.md)
+#### [WhiteSource Bolt](vs-whitesource.md)
+#### [Enterprise Mobility & Security](vs-ems.md)
+#### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
+#### [Suscripción a Office 365 Developer](vs-office-dev.md)
+#### [Power BI Pro ](vs-pbi.md)
+#### [Modern Requirements4TFS](vs-modernreq.md)
+#### [Pago por uso de Azure](vs-azure-payg.md)
+### Desarrollo profesional
+#### [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
+#### [DataCamp](vs-datacamp.md)
+#### [Opsgility](vs-opsgility.md)
+#### [Pluralsight](vs-pluralsight.md)
+#### [Aprendizaje en Xamarin University](vs-xamarin.md)
+#### [Microsoft E-Learning](vs-elearn.md)
+#### [Suscripción a MSDN Magazine](vs-msdn.md)
+### Ventajas de soporte técnico
+#### [Chat de Azure Advisor](vs-azure-advisory-chat.md)
+#### [Comunidad Azure](vs-azure-community.md)
+#### [Soporte técnico](vs-tech-support.md)
+#### [Soporte técnico del foro prioritario](vs-priority-support.md)
+#### [Soporte técnico de Concierge](vs-concierge-chat.md)
+## Administrar suscripciones
+### Información general
+#### [Obtención de información sobre la administración de suscripciones](subscription-management-info.md)
+#### [Responsabilidades del administrador](admin-responsibilities.md)
+#### [Administración de administradores](managing-admins.md)
+#### [Acceso al portal](access-admin-portal.md)
+#### Incorporación de su organización
+##### [Búsqueda de su PCN](find-pcn.md)
+##### [Administración de varios PCN](multiple-pcns.md)
+##### [Búsqueda de su contacto principal](find-primary-contact.md)
+##### [Búsqueda de identificadores de suscripción](find-subscription-id.md)
+### Uso del portal de administración
+#### [Asignación de una suscripción](assign-license.md)
+#### [Reenvío de correos electrónicos de asignación](resend-assignment-email.md)
+#### [Edición de una suscripción](edit-license.md)
+#### [Eliminación de una suscripción](delete-license.md)
+#### [Búsqueda de una suscripción](search-license.md)
+#### [Sobreasignaciones](handle-overclaimed-license.md)
+#### [Suscripciones expiradas](handle-expired-license.md)
+#### [Suscriptores con inicios de sesión con el correo electrónico personal](personal-email-sign-ins.md)
+## Adquisición de suscripciones de Visual Studio
+### [Comparación de suscripciones](compare-subscriptions.md)
+### Compra de suscripciones de nube
+#### [Información general](vscloud-overview.md)
+#### [Primera adquisición](vscloud-first-purchase.md)
+#### [Renovaciones](vscloud-renewals.md)
+#### [Comprar más](vscloud-buy-more.md)
+#### [Cancelar](vscloud-cancel.md)
 ## Recursos
-### [Términos de uso](vs-license-terms.md)
-### [Soporte técnico de suscripciones](https://www.visualstudio.com/subscriptions/support/)
+### [Términos de licencia de Visual Studio](vs-license-terms.md)
+### [Artículo de licencias de Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [Comparación de opciones de suscripción y precios](https://www.visualstudio.com/vs/pricing)
+### [Comparación de las características de los IDE de Visual Studio](https://www.visualstudio.com/vs/compare)
