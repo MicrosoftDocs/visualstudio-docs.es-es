@@ -45,7 +45,7 @@
 ### [Tutorial: escritura de pruebas unitarias para archivos DLL de C o C++](walkthrough-writing-unit-tests-for-cpp-dlls.md)
 ### [Marco de pruebas unitarias de Microsoft para la referencia de API de C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)
 ## [Crear y ejecutar pruebas unitarias para aplicaciones UWP](create-and-run-unit-tests-for-a-store-app-in-visual-studio.md)
-### [Pruebas unitarias de un archivo DLL de Visual C++ en aplicaciones para UWP](unit-testing-a-visual-cpp-dll-for-store-apps.md)
+### [Pruebas unitarias de un archivo DLL de C++ en UPW](unit-testing-a-visual-cpp-dll-for-store-apps.md)
 ### [Pruebas unitarias de código de Visual C# en aplicaciones UWP](unit-testing-visual-csharp-code-in-a-store-app.md)
 ### [Ejecución de pruebas unitarias para aplicaciones UWP](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Usar cobertura de código para determinar la cantidad de código que se está probando](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

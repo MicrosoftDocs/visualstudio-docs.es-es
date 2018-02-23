@@ -1,5 +1,6 @@
 # [Información general](overview-of-python-tools-for-visual-studio.md)
 # [Instalación](installing-python-support-in-visual-studio.md)
+## [Instalación de intérpretes de Python](installing-python-interpreters.md)
 # Guías de inicio rápido
 ## [Creación de un proyecto a partir del código existente](quickstart-01-project-from-existing.md)
 ## [Creación de un proyecto a partir de una plantilla](quickstart-02-python-in-visual-studio-project-from-template.md)
@@ -14,13 +15,17 @@
 ## [5: Instalación de paquetes y administración de entornos de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 ## [6: Trabajo con Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 # Conceptos
-## [Entornos de Python](managing-python-environments-in-visual-studio.md)
 ## [Proyectos de Python](managing-python-projects-in-visual-studio.md)
 ### [Plantillas de proyecto web](python-web-application-project-templates.md)
 ### [Plantilla de proyecto web de Django](python-django-web-application-project-template.md)
 ### [Plantilla de servicio en la nube de Azure](python-azure-cloud-service-project-template.md)
 ## [Azure SDK para Python](azure-sdk-for-python.md)
 # Guías de procedimientos
+## [Administración de entornos](managing-python-environments-in-visual-studio.md)
+### [Selección de un intérprete para un proyecto](selecting-a-python-environment-for-a-project.md)
+### [Uso de requirements.txt para las dependencias](managing-required-packages-with-requirements-txt.md)
+### [Rutas de acceso de búsqueda](search-paths.md)
+### [Referencia de ventana de entorno](python-environments-window-tab-reference.md)
 ## [Edición de código](editing-python-code-in-visual-studio.md)
 ### [Formato de código](formatting-python-code.md)
 ### [Refactorización de código](refactoring-python-code.md)
