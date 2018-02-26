@@ -9,17 +9,18 @@ Description: Learn how to activate the technical support benefit included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 39d140f83f43d6032119d4a7e84d6f1f091af707
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4fb6294d6d70e827bd69544fcc4f07cad72b7c5a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación de la ventaja de soporte técnico en suscripciones de Visual Studio
 
-Resuelva problemas break-fix en entornos que no sean de producción.  (Nota: Debe activar la ventaja para poder enviar una solicitud de soporte técnico).  Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos.  
+Resuelva problemas break-fix en entornos que no sean de producción.  (Debe activar la ventaja para poder enviar una solicitud de soporte técnico).  Las suscripciones de nube anuales y estándar de Visual Studio Enterprise reciben cuatro incidentes, mientras que las suscripciones de nube anuales y estándar de Visual Studio Professional reciben dos.  
 
-**NOTA:** No todas las suscripciones de un nivel determinado son aptas para recibir los incidentes de soporte técnico.  Las suscripciones que se adquieren a través de FTE, NFR, MPN, MCT y otros programas no reciben incidentes de soporte técnico.  Si su suscripción no es apta para recibir incidentes de soporte técnico, el icono Soporte técnico no aparecerá en las ventajas disponibles. 
+> [!NOTE]
+> No todas las suscripciones de un nivel determinado son aptas para recibir los incidentes de soporte técnico.  Las suscripciones que se adquieren a través de FTE, NFR, MPN, MCT y otros programas no reciben incidentes de soporte técnico.  Si su suscripción no es apta para recibir incidentes de soporte técnico, el icono Soporte técnico no aparecerá en las ventajas disponibles. 
 
    ![Icono de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-tile.png)
 
@@ -33,7 +34,8 @@ Resuelva problemas break-fix en entornos que no sean de producción.  (Nota: Deb
 
     ![Búsqueda del identificador de suscripción de la ventaja de soporte técnico](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
-**NOTA:** Para activar la cuenta de soporte técnico en otro idioma que no sea inglés, elija el país en [esta lista](http://support.microsoft.com/activatesupport).   
+> [!NOTE]
+> Para activar la cuenta de soporte técnico en otro idioma que no sea inglés, elija el país en [esta lista](http://support.microsoft.com/activatesupport).   
 
 # <a name="how-to-submit-an-incident"></a>Envío de incidentes
 Cuando tenga el identificador de contrato y el identificador de acceso configurados, cuando necesite soporte técnico puede llamar al número de soporte técnico correspondiente a su país, enviar un incidente de soporte técnico [en línea](http://support.microsoft.com/oas/) o enviar un incidente a través de Azure Portal.  Si prefiere recibir soporte técnico por teléfono, puede enviar el incidente en línea y un profesional de soporte técnico de Microsoft le llamará.
