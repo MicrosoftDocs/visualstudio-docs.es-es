@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # ¿Qué opciones de publicación son las adecuadas para mí?
 
@@ -50,6 +50,8 @@ Un App Service se ejecuta en máquinas virtuales hospedadas en la nube de Azure,
 - Si no necesita ninguna personalización de nivel de máquina en los servidores que hospedan su aplicación web.
 
 > Si quiere usar Azure App Service en su propio centro de datos o en otros equipos locales, puede hacerlo con [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
+
+Para más información sobre cómo publicar aplicaciones de ASP.NET Core, consulte [Publicar una aplicación web de ASP.NET Core en Azure App Service con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Azure Virtual Machines
 
@@ -83,7 +85,7 @@ Tenga en cuenta que si por cualquier razón (como el acceso a la máquina) no pu
 - Si solo necesita una implementación de pruebas locales.
 - Si quiere examinar y modificar potencialmente los archivos de aplicación independientemente antes de enviarlos a otro destino de implementación.
 
-
+Para más información sobre cómo implementar aplicaciones de .NET Core, consulte [Implementación de aplicaciones de .NET Core con Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Destinos personalizados
 
@@ -103,3 +105,5 @@ Puede crear cualquier número de perfiles de implementación personalizados en V
 - Si está usando servicios en la nube en un proveedor que no sea Azure a los que se puede acceder mediante direcciones URL.
 - Si quiere implementar con credenciales que no sean las que usa con Visual Studio ni las que están asociadas directamente a las cuentas de Azure.
 - Si quiere eliminar archivos del destino cada vez que implementa.
+
+Para más información sobre la publicación en IIS, consulte [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) (IIS 8.0 con ASP.NET 3.5 y ASP.NET 4.5) y [Depuración remota en un equipo remoto de IIS, ASP.NET](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).

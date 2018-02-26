@@ -9,11 +9,11 @@ Description: Learn how to renew your Visual Studio subscriptions acquired throug
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: f4f2bcdd999a008334a56d95024393d21db15e32
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>¿Cómo renuevo una suscripción adquirida a través de Microsoft Store?
 Información general: las suscripciones comerciales suelen adquirirse en Microsoft Store, y pueden identificarse como "Comercial" al revisar la información de suscripciones disponible en https://my.visualstudio.com/subscriptions. 
@@ -29,7 +29,7 @@ Información general: las suscripciones comerciales suelen adquirirse en Microso
 
 
 ## <a name="activate-your-subscription"></a>Activar la suscripción: 
-Puede activar la suscripción desde la "página de confirmación" o el "correo electrónico de confirmación" del pago.  (Si no ve el correo electrónico de confirmación, no olvide revisar las carpetas de correo no deseado).   
+Puede activar la suscripción desde la página de confirmación o desde el correo electrónico de confirmación del pago.  (Si no ve el correo electrónico de confirmación, no olvide revisar las carpetas de correo no deseado).   
 1. Haga clic en **Haga clic aquí para iniciar sesión**.  Se le redirigirá a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 2. Inicie sesión en su suscripción.  (Obtenga ayuda con el [inicio de sesión](/visualstudio/subscriptions/signing-in)).
 3. Escriba la información de "Clave de producto" que está disponible en la "página de confirmación" o en el "correo electrónico de confirmación" del pago y haga clic en **Activar**.

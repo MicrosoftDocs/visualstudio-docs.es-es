@@ -1,9 +1,10 @@
 ---
-title: "Información general sobre Visual Studio | Microsoft Docs"
+title: "Introducción a Visual Studio 2017 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/09/2017
+ms.date: 02/05/2018
 ms.reviewer: 
 ms.suite: 
+ms.technology: vs-ide-general
 ms.topic: article
 author: gewarren
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 242de63001f7df364dacbef3f3b57446ba1e724f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8fc4946c79b16b3fb28e0991ff38cfe96e22a9e1
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Introducción al IDE de Visual Studio
 
@@ -59,118 +60,109 @@ Para obtener más información, vea [Herramientas web modernas](https://www.visu
 
 ### <a name="build-cross-platform-apps-and-games"></a>Compilar aplicaciones y juegos multiplataforma
 
-Puede usar Visual Studio para compilar aplicaciones y juegos para dispositivos Android, iOS, Linux, Windows y otros dispositivos. Más información en [Desarrollo móvil multiplataforma](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Las aplicaciones universales de Windows ayudan a aprovechar el código en varias plataformas. Consulte [Aplicaciones universales de Windows](https://dev.windows.com/windows-apps) para obtener más información.
+Puede usar Visual Studio para crear aplicaciones y juegos para MacOS, Linux y Windows, así como para Android, iOS y otros dispositivos móviles.
 
-Elija las herramientas que necesita en función de los requisitos de la aplicación y del lenguaje que quiere usar:
+- Cree aplicaciones [.NET Core](/dotnet/core/) que se ejecutan en Windows, macOS y Linux.
 
-- [Xamarin para Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): un código base común en C# para todos los dispositivos.
+- Cree aplicaciones móviles para iOS, Android y Windows en C# y F# mediante el uso de [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
 
-- [Visual Studio Tools para Apache Cordova ](../cross-platform/visual-studio-tools-for-apache-cordova.md): un código base común para HTML, CSS y JavaScript o Typescript.
+- Utilice tecnologías web estándar &mdash;HTML, CSS y JavaScript&mdash; para crear aplicaciones móviles para iOS, Android y Windows mediante [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- [Visual Studio Tools para Unity](../cross-platform/visual-studio-tools-for-unity.md): desarrollo de juegos en 2D o 3D en C#.
+- Cree juegos 2D y 3D en C# mediante [Visual Studio Tools para Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- [C++ para el desarrollo multiplataforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md): bibliotecas y aplicaciones de código compartido en C++.
+- Compile aplicaciones nativas de C++ para dispositivos iOS, Android y Windows, y compartir código común en bibliotecas compiladas para iOS, Android y Windows mediante [C++ para desarrollo multiplataforma](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
 
-- [Visual Studio Emulator for Android](../cross-platform/visual-studio-emulator-for-android.md): Emulador de Visual Studio para Android; depure y pruebe sus aplicaciones Android independientemente del IDE.
+- Implemente, pruebe y depure aplicaciones Android con el [emulador de Android](../cross-platform/visual-studio-emulator-for-android.md).
 
-[Cree juegos con Visual Studio](https://www.visualstudio.com/vs/game-development/) con herramientas de desarrollo de juegos como DirectX, Unity, Unreal, Cocos y más.
-
-Visual Studio puede ayudarle a hacer muchas más cosas. Para obtener una lista más completa, vea [IDE de Visual Studio](https://www.visualstudio.com/vs/).
+Visual Studio puede ayudarle a hacer muchas más cosas. Para obtener una lista completa, consulte [www.visualstudio.com](https://www.visualstudio.com/vs/).
 
 ## <a name="install-the-visual-studio-ide"></a>Instalación del IDE de Visual Studio
 
 Para comenzar, descargue Visual Studio e instálelo en su sistema. Puede descargarlo en [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
 
-Visual Studio ahora es más ligero que nunca. El instalador modular le permite elegir e instalar *cargas de trabajo*, que son grupos de características necesarias para el lenguaje de programación o la plataforma que prefiera. Esta estrategia ayuda a mantener la superficie de la instalación de Visual Studio más pequeña que nunca, lo que se traduce también en una mayor rapidez a la hora de instalar y actualizar.
+Visual Studio ahora es más ligero que nunca. El instalador modular le permite elegir e instalar *cargas de trabajo*, que son grupos de características necesarias para el lenguaje de programación o la plataforma que prefiera. Esta estrategia ayuda a mantener la superficie de la instalación de Visual Studio más pequeña que nunca, lo que se traduce también en una mayor rapidez a la hora de instalar y actualizar. Aparte de lograr un mejor rendimiento de instalación, Visual Studio 2017 tarda menos en iniciar el IDE y en cargar las soluciones.
 
-Para seguir los pasos necesarios para crear un programa que aparecen a continuación, asegúrese de seleccionar e instalar la carga de trabajo de **Desarrollo de la Plataforma universal de Windows**.
+Para obtener más información acerca de la configuración de Visual Studio en su sistema, consulte [Instalación de Visual Studio 2017](../install/install-visual-studio.md). Siga los pasos para [crear un programa](#create-a-program) y no se olvide de seleccionar la carga de trabajo de **Desarrollo multiplataforma de .NET Core** durante la instalación.
 
-![Instalador de Visual Studio](../ide/media/vside_tour_install_dialog.png)
-
-Aparte de lograr un mejor rendimiento de instalación, Visual Studio 2017 tarda menos en iniciar el IDE y en cargar las soluciones.
-
-Para obtener más información acerca de la configuración de Visual Studio en su sistema, consulte [Instalación de Visual Studio 2017](../install/install-visual-studio.md).
+![Instalador de Visual Studio](../ide/media/overview-net-core-workload.png)
 
 ## <a name="sign-in"></a>Inicio de sesión
 
-Cuando se inicia Visual Studio por primera vez, puede iniciar sesión opcionalmente con su cuenta Microsoft o con su cuenta profesional o educativa. Al iniciar sesión puede sincronizar la configuración de Visual Studio, como los diseños de ventana, en varios dispositivos. También le conecta automáticamente a los servicios que podría necesitar, como las suscripciones de Azure y Visual Studio Team Services.
+Cuando se inicia Visual Studio por primera vez, puede iniciar sesión opcionalmente con su cuenta Microsoft o con su cuenta profesional o educativa. Al iniciar sesión puede sincronizar la configuración de Visual Studio, como los diseños de ventana, en varios dispositivos. También le conecta automáticamente a los servicios que podría necesitar, como las suscripciones de Azure y [Visual Studio Team Services](/vsts/).
 
 ## <a name="create-a-program"></a>Creación de un programa
 
 ¡Una buena manera de aprender algo es usarlo! Vamos a profundizar y crear un nuevo y sencillo programa.
 
-1. Abra Visual Studio. En el menú, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. Abra Visual Studio. En el menú, elija **Archivo** > **Nuevo** > **Proyecto...**
 
-  ![captura de pantalla](../ide/media/VSIDE_Tour_NewProject1.png)
+  ![Archivo > Nuevo proyecto en la barra de menús](../ide/media/VSIDE_Tour_NewProject1.png)
 
-  Como alternativa, puede crear un proyecto mediante la página de inicio. Para más información, vea la entrada de blog [Harness the Power of the Redesigned Start Page](https://blogs.msdn.microsoft.com/visualstudio/2016/11/29/harness-the-power-of-the-redesigned-start-page/) (Aprovechar la eficacia de la página de inicio rediseñada).
+1. El cuadro de diálogo **Nuevo proyecto** muestra varias plantillas de proyecto. Elija la categoría **.NET Core** bajo **Visual C#** y, después, elija la plantilla **Aplicación de consola (.NET Core)**. En el cuadro de texto **Nombre**, escriba "Hola mundo". Seleccione el botón **Aceptar**.
 
-1. El cuadro de diálogo **Nuevo proyecto** muestra varias plantillas de proyecto. Elija la categoría **Windows Universal** en **Visual C#**, seleccione la plantilla **Aplicación vacía (Windows universal)** y, a continuación, elija el botón **Aceptar**.
+  ![Plantilla de aplicación de .NET Core](../ide/media/overview-new-project-dialog.png)
 
   > [!NOTE]
-  > Si no ve la categoría **Universal de Windows**, debe instalar la carga de trabajo **Desarrollo de la Plataforma universal de Windows**. Para ello, elija el vínculo **Abrir el instalador de Visual Studio** en el panel inferior izquierdo del cuadro de diálogo **Nuevo proyecto**. Una vez que se abra el **Instalador de Visual Studio**, seleccione la carga de trabajo **Desarrollo de la Plataforma universal de Windows** y, a continuación, elija **Modificar**.
+  > Si no ve la categoría **.NET Core**, debe instalar la carga de trabajo de **Desarrollo multiplaforma de .NET Core**. Para ello, elija el vínculo **Abrir el instalador de Visual Studio** en el panel inferior izquierdo del cuadro de diálogo **Nuevo proyecto**. Una vez que se abra el **Instalador de Visual Studio**, desplácese hacia abajo y seleccione la carga de trabajo de **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
-  ![Plantilla de aplicación vacía de UWP](../ide/media/new-uwp-blank-app-template.png)
+   Visual Studio usa la plantilla para crear el proyecto. Es una aplicación muy sencilla "Hola mundo"; llama al método <xref:System.Console.WriteLine> para mostrar la cadena literal "¡Hola mundo!" en la ventana de la consola.
 
-  Con este proceso se crea un nuevo proyecto de aplicación universal de Windows en blanco que utiliza C# y XAML como lenguajes de programación. Espere un poco mientras Visual Studio configura el proyecto. Si se le pide alguna información, simplemente acepte los valores predeterminados por ahora.
+1. En breve, debería ver algo parecido a la captura de pantalla siguiente:
 
-1. En el cuadro de diálogo **Nuevo proyecto de la plataforma universal de Windows**, elija **Aceptar** para aceptar los valores predeterminados.
+  ![IDE de Visual Studio](../ide/media/overview-ide-console-app.png)
 
-1. En breve, debería ver algo parecido a la captura de pantalla siguiente. Los archivos del proyecto se muestran en el lado derecho de una ventana llamada Explorador de soluciones.
+   En la ventana del editor se muestra el código de C# para la aplicación, que ocupa la mayor parte del espacio. Observe que la sintaxis del código se colorea automáticamente para indicar diferentes tipos de código, como palabras claves y tipos. Además, líneas pequeñas, verticales y discontinuas en el código indican qué llaves coinciden, y los números de línea sirven para ubicar código más adelante. Puede elegir el pequeño signo de menos en la casilla para contraer o expandir código. Esta característica de esquematización de código le permite ocultar el código que no necesita, ayudando a minimizar el desorden en la pantalla.
 
-  ![captura de pantalla](../ide/media/VSIDE_Tour_NewProject3.png)
+   Los archivos del proyecto se muestran en el lado derecho de una ventana llamada **Explorador de soluciones**.
 
-1. En el Explorador de soluciones, elija el pequeño triángulo negro situado junto al archivo MainPage.xaml para expandirlo; así, debería ver un archivo MainPage.xaml.cs debajo. Elija este archivo (que contiene el código de C#) para abrirlo.
-
-  El código de C# en MainPage.xaml.cs aparece en el editor de código en el lado izquierdo de la pantalla. Observe que la sintaxis del código se colorea automáticamente para indicar diferentes tipos de código, como instrucciones o comentarios. Además, líneas pequeñas, verticales y discontinuas en el código indican qué llaves coinciden, y los números de línea sirven para ubicar código más adelante. Puede elegir el pequeño signo de menos en la casilla para contraer o expandir código. Esta característica de esquematización de código le permite ocultar el código que no necesita, ayudando a minimizar el desorden en la pantalla.
-
-  ![](../ide/media/VSIDE_Tour_NewProject3a.png)
+  ![IDE de Visual Studio con cuadros rojos](../ide/media/overview-ide-console-app-red-boxes.png)
 
   Hay otros menús y ventanas de herramientas disponibles, pero por ahora vamos a continuar.
 
-1. Agregue un botón al formulario XAML para proporcionar a los usuarios una manera de interactuar con la aplicación. Para ello, abra el archivo MainPage.xaml. De este modo se muestra una vista en dos paneles: un diseñador arriba, para colocar visualmente los controles, y una vista de código debajo, que muestra el código XAML subyacente al diseñador. Al ejecutar el programa más adelante, lo que ve en el diseñador se convierte en una ventana que verán los usuarios, un "formulario", y el código XAML subyacente determina lo que aparece en el formulario.
+1. Ahora, inicie la aplicación. Para ello, elija **Iniciar sin depurar** en el menú **Depurar** de la barra de menús. También puede presionar **Ctrl**+**F5**.
 
-1. En el lado izquierdo de la pantalla, elija la pestaña **Herramientas** para abrir el cuadro de herramientas. El cuadro de herramientas contiene un número de controles visuales que puede agregar a los formularios. Por ahora, solo vamos a agregar un control de botón.
+  ![Menú Depurar > Iniciar sin depurar](../ide/media/overview-start-without-debugging.png)
 
-1. Expanda la sección **Controles de XAML comunes** y, a continuación, arrastre el control de botón hacia el centro del formulario. (No importa la ubicación exacta).
+  Visual Studio compila la aplicación y se abre una ventana de consola con el mensaje "Hola mundo!". ¡Ya tiene una aplicación en ejecución!
 
-  ![captura de pantalla](../ide/media/VSIDE_Tour_Toolbox.png)
+  ![Ventana de consola](../ide/media/overview-console-window.png)
 
-  Cuando haya terminado, debería ver algo parecido a lo siguiente.
+1. Para cerrar la ventana de consola, presione cualquier tecla del teclado.
 
-  ![captura de pantalla](../ide/media/VSIDE_Tour_XAMLButton.png)
+1. Ahora vamos a agregar código adicional a la aplicación. Agregue el siguiente código de C# antes de la línea que dice `Console.WriteLine("Hello World!");`:
 
-  El botón aparece en el diseñador y su código subyacente (resaltado) se agrega automáticamente al código XAML del diseñador.
+   ```csharp
+   Console.WriteLine("\nWhat is your name?");
+   var name = Console.ReadLine();
+   ```
 
-1. Vamos a cambiar parte del código XAML. Cambie el nombre de texto en el código del botón de `Button` a `Hello!`.
+   Este código muestra "What is your name?" en la ventana de la consola y espera a que el usuario escriba algún texto seguido de la tecla **Entrar**.
 
-  ![captura de pantalla](../ide/media/VSIDE_Tour_XAMLButton2.png)
+1. Ahora, cambie la línea que indica `Console.WriteLine("Hello World!");` al código siguiente:
 
-1. Ahora, inicie la aplicación. Para ello, tiene varias posibilidades: haga clic en **Inicio** (![botón Inicio](../ide/media/VSIDE_StartButton.png)) en la barra de herramientas, elija la tecla **F5** o, en el menú, seleccione **Depurar** > **Iniciar depuración**.
+   ```csharp
+   Console.WriteLine($"\nHello {name}!");
+   ```
 
-  ![captura de pantalla](../ide/media/VSIDE_Tour_RunButton.png)
+1. Vuelva a ejecutar la aplicación mediante la selección de **Depurar** > **Iniciar sin depurar** o presionando **Ctrl**+**F5**.
 
-  La aplicación inicia su proceso de compilación y aparecen mensajes de estado en la ventana de resultados. Pronto, verá que aparece el formulario con su botón en él. ¡Ya tiene una aplicación en ejecución!
+   Visual Studio recompila la aplicación y se abre una ventana de consola que le solicita su nombre.
 
-  ![captura de pantalla](../ide/media/VSIDE_Tour_RunProject.png)
+1. Escriba su nombre en la ventana de consola y presione **Entrar**.
 
-  Por supuesto, ahora no hace mucho, pero puede agregarle más funcionalidad más adelante si lo desea.
+   ![Entrada de la ventana de consola](media/overview-console-input.png)
 
-1. Cuando haya terminado de ejecutar el programa, haga clic en el botón Detener (![Botón Detener](../ide/media/VSIDE_StopButton.png)) de la barra de herramientas para detenerlo.
-
-Resumamos lo que hemos hecho hasta ahora: ha creado un nuevo proyecto de Windows Universal de C# en Visual Studio, ha visto su código, ha agregado un control al diseñador, ha cambiado parte del código XAML y, a continuación, ha ejecutado el proyecto. Aunque se ha simplificado el proceso para este ejemplo, aquí se muestran algunas partes habituales del IDE de Visual Studio que va a utilizar al desarrollar sus propias aplicaciones. Si desea más detalles acerca de este ejemplo, vea [Crear una aplicación "Hello, world" (XAML)](/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
+1. Presione cualquier tecla para cerrar la ventana de consola.
 
 ## <a name="debug-test-and-improve-your-code"></a>Depure, pruebe y mejore su código
 
-Nada se ejecuta a la perfección todo el tiempo. Cuando se escribe código, debe ejecutarlo y probarlo para comprobar su rendimiento y ver si tiene errores. El sistema de depuración con última tecnología de Visual Studio le permite depurar el código que se ejecuta en su proyecto local, en un dispositivo remoto o en un emulador, como los de los dispositivos Android o Windows Phone. Puede ejecutar el código instrucción por instrucción e inspeccionar las variables en cada paso, puede ejecutar paso a paso aplicaciones multiproceso y puede establecer puntos de interrupción que solo se producen cuando se cumple una condición especificada. Puede supervisar los valores de las variables a medida que se ejecuta el código, entre otras cosas. Todo esto se puede administrar en el propio editor de código para que no tenga que salir del código.
+Nada se ejecuta a la perfección todo el tiempo. Cuando se escribe código, debe ejecutarlo y probarlo para comprobar su rendimiento y ver si tiene errores. El sistema de depuración con última tecnología de Visual Studio le permite depurar el código que se ejecuta en su proyecto local, en un dispositivo remoto o en un emulador, como [el de los dispositivos Android](../cross-platform/visual-studio-emulator-for-android.md). Puede ejecutar el código mediante una instrucción a la vez e inspeccionar las variables a medida que avanza. Puede establecer puntos de interrupción que solo se alcanzan cuando una condición especificada es verdadera. Puede supervisar los valores de las variables a medida que se ejecuta el código, entre otras cosas. Todo esto se puede administrar en el propio editor de código para que no tenga que salir del código. Para obtener más detalles sobre el proceso de depuración de Visual Studio, consulte [Paseo por las características del depurador](../debugger/debugger-feature-tour.md).
 
-![Depuración](../ide/media/VSIDE_Tour_Debugging.png)
-
-Para las pruebas, Visual Studio ofrece pruebas unitarias, IntelliTest, carga y pruebas de rendimiento, entre otras cosas. Para obtener más detalles sobre el proceso de depuración de Visual Studio, consulte [Debugger Feature Tour](../debugger/debugger-feature-tour.md) (Guía de características del depurador). Para más información sobre las pruebas, consulte el artículo sobre [herramientas y escenarios de prueba](../test/developer-testing-scenarios.md). Para obtener más información sobre cómo mejorar el rendimiento de las aplicaciones, vea [Paseo por las características de generación de perfiles](../profiling/profiling-feature-tour.md).
+Para las pruebas, Visual Studio ofrece pruebas unitarias, IntelliTest, carga y pruebas de rendimiento, entre otras cosas. Para más información sobre las pruebas, consulte el artículo sobre [herramientas y escenarios de prueba](../test/developer-testing-scenarios.md). Para más información sobre cómo mejorar el rendimiento de las aplicaciones, consulte [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md).
 
 ## <a name="deploy-your-finished-application"></a>Implementar la aplicación finalizada
 
-Cuando la aplicación está lista para implementarse en los usuarios o los clientes, Visual Studio proporciona las herramientas para hacerlo, ya sea para implementar en Microsoft Store, en un sitio de SharePoint o usando las tecnologías InstallShield o Windows Installer. Todo está disponible a través del IDE. Para obtener más información, vea [Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md).
+Cuando la aplicación está lista para implementarse en los usuarios o los clientes, Visual Studio proporciona las herramientas para hacerlo, ya sea para implementar en Microsoft Store, en un sitio de SharePoint o usando las tecnologías InstallShield o Windows Installer. Todo está disponible a través del IDE. Para más información, consulte [Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="quick-tour-of-the-ide"></a>Paseo rápido del IDE
 
@@ -198,7 +190,7 @@ Aquí se muestran algunas otras características de productividad comunes en Vis
 
  ![Refactorización](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** es un término que aglutina un conjunto de características muy populares que muestran información escritura sobre el código directamente en el editor y, en algunos casos, escriben pequeños fragmentos de código automáticamente. Básicamente, IntelliSense es como tener documentación básica insertada en el editor, lo que evita tener que buscar información de escritura en una ventana de ayuda independiente. Las características de IntelliSense varían según el lenguaje. Para más información, vea [IntelliSense para C#](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [IntelliSense para JavaScript](../ide/javascript-intellisense.md) y [Opciones de IntelliSense específicas de Visual Basic](../ide/visual-basic-specific-intellisense.md). La ilustración siguiente muestra algunas características de IntelliSense en funcionamiento:
+- **IntelliSense** es un término que aglutina un conjunto de características muy populares que muestran información escritura sobre el código directamente en el editor y, en algunos casos, escriben pequeños fragmentos de código automáticamente. Básicamente, IntelliSense es como tener documentación básica insertada en el editor, lo que evita tener que buscar información de escritura en una ventana de ayuda independiente. Las características de IntelliSense varían según el lenguaje. Para más información, vea [IntelliSense para C#](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [IntelliSense para JavaScript](../ide/javascript-intellisense.md) y [Opciones de IntelliSense de Visual Basic](../ide/visual-basic-specific-intellisense.md). La ilustración siguiente muestra algunas características de IntelliSense en funcionamiento:
 
   ![Lista de miembros de Visual Studio](../ide/media/vs2017_Intellisense.png)
 
@@ -222,10 +214,6 @@ Aquí se muestran algunas otras características de productividad comunes en Vis
 
  ![Ir a definición](../ide/media/VSIDE_go_to_definition.png)
 
-- La herramienta relacionada [Examinador de objetos](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) permite inspeccionar ensamblados .NET o Windows Runtime en el sistema para ver qué tipos contienen y qué miembros (propiedades, métodos, eventos, etc.) contienen esos tipos.
-
-  ![Examinador de objetos que muestra System.Timer](../ide/media/objectbrowser.png)
-
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Administrar el código fuente y colaborar con otras personas
 
 Puede administrar el código fuente en repositorios Git que hospede cualquier proveedor, incluido GitHub. O bien use [Visual Studio Team Services (VSTS)](/vsts/index) para administrar el código junto con los errores y elementos de trabajo de todo el proyecto. Vea [Get Started with Git and Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) (Introducción a Git y Team Services) para obtener más información sobre cómo administrar repositorios de Git en Visual Studio mediante Team Explorer. Visual Studio tiene otras características integradas de control de código fuente. Para obtener más información sobre ellas, vea la entrada de blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/) (Nuevas características de Git en Visual Studio 2017).
@@ -240,7 +228,7 @@ En la siguiente imagen se muestra la ventana Team Explorer de una solución hosp
 
 ![Team Explorer de Visual Studio](../ide/media/vs2017_teamexplorer.png)
 
-También puede automatizar el proceso de compilación para compilar el código que los desarrolladores del equipo han insertado en el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. Para obtener más información, consulte [Build and release (VSTS and TFS)](/vsts/build-release/index) (Compilación y publicación [VSTS y TFS]).
+También puede automatizar el proceso de compilación para compilar el código que los desarrolladores del equipo han insertado en el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. Para más información, consulte [Build and release (VSTS and TFS)](/vsts/build-release/index) (Compilación y publicación [VSTS y TFS]).
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Conexión a servicios, bases de datos y recursos basados en la nube
 
@@ -285,4 +273,3 @@ Si nunca ha usado Visual Studio, eche un vistazo a [Introducción al desarrollo 
 * [Blog de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
 * [Foros de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
-* [Channel 9](https://channel9.msdn.com/)

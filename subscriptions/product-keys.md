@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -90,7 +90,8 @@ Como puede ver, hay varias versiones de Visio 2010.  Ya se ha reclamado una clav
 ### <a name="exporting-your-claimed-keys"></a>Exportación de claves reclamadas
 Puede exportar una lista de todas las claves que ha reclamado, junto con una amplia selección de claves estáticas y de otro tipo que se marcan automáticamente como "reclamadas".  
 
-**IMPORTANTE: Si la suscripción expira, ya no podrá reclamar nuevas claves ni exportar las claves que ya haya reclamado.** 
+> [!IMPORTANT] 
+> Si la suscripción expira, ya no podrá reclamar nuevas claves ni exportar las claves que ya haya reclamado.** 
 
 Para exportar las claves, basta con hacer clic en el vínculo **Export all keys** (Exportar todas las claves) en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.  
 

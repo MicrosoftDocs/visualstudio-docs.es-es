@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Tutorial: Mi primera aplicación de escritorio WPF
 
@@ -58,9 +58,9 @@ En esta sección, creará la infraestructura de la aplicación, que incluye el p
   
      **NavigationWindow** no puede contener otros elementos de interfaz de usuario como, por ejemplo, una **cuadrícula**.
 
-1. En el cuadro de diálogo **Propiedades** , expanda el nodo de categoría **Común** y elija la propiedad **Título** . A continuación, escriba `ExpenseIt` y presione la tecla **Entrar** .
+1. En el cuadro de diálogo **Propiedades** , expanda el nodo de categoría **Common** y elija la propiedad **Title** . A continuación, escriba `ExpenseIt` y presione la tecla **Entrar** .
   
-     Tenga en cuenta que el elemento **Título** de la ventana XAML cambia para que coincida con el nuevo valor. Puede modificar las propiedades XAML en la ventana XAML o en la ventana **Propiedades** para que se sincronicen los cambios.
+     Tenga en cuenta que el atributo **Título** de la ventana XAML cambia para que coincida con el nuevo valor. Puede modificar las propiedades XAML en la ventana XAML o en la ventana **Propiedades** para que se sincronicen los cambios.
 
 1. En la ventana XAML, establezca el valor del elemento **Alto** en `375`y establezca el valor de la propiedad **Ancho** en `500`.
   
@@ -116,7 +116,7 @@ En esta sección, agregará dos páginas y una imagen a la aplicación.
 
 1. En el diseñador, seleccione la pestaña **ExpenseItHome** en caso de que todavía no sea la pestaña del diseñador activa.
 
-1. Seleccione el elemento `<Title>` y cambie el título a **ExpenseIt – Inicio**.
+1. Elija el atributo `Title` y cambie su valor a **ExpenseIt - Home**.
   
      El archivo **MainWindow.xaml** deberá tener el aspecto siguiente en C#:  
   
@@ -178,7 +178,7 @@ En esta sección, agregará dos páginas y una imagen a la aplicación.
 
 1. En el diseñador, seleccione la pestaña **ExpenseReportPage.xaml** en caso de que todavía no sea la pestaña del diseñador activa.
 
-1. Seleccione el elemento `<Title>` y cambie el título a **ExpenseIt – Ver gastos**.
+1. Elija el atributo `Title` y cambie su valor a **ExpenseIt - View expense**.
   
      El archivo ExpenseReportPage.xaml deberá tener el aspecto siguiente en C#:  
   

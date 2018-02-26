@@ -1,22 +1,34 @@
 ---
-title: "Reenvío de correos electrónicos de asignación de suscripción desde Microsoft Business Center | Microsoft Docs"
+title: "Reenvío de correos electrónicos de asignación de suscripción desde Manage.visualstudio. com o VLSC | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 12/29/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to a subscriber from within VLSC
+Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7162435044a578a94249774305f2c6b8b6438219
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails-from-vlsc"></a>Reenvío de correos electrónicos de asignación de suscripción desde Microsoft Business Center
+# <a name="how-to-resend-subscription-assignment-emails"></a>Reenvío de correos electrónicos de asignación de suscripción:
 
+Los pasos necesarios para reenviar un correo electrónico de asignación dependen del portal que esté utilizando para administrar sus suscripciones. 
+
+## <a name="resending-assignment-emails-from-within-managevisualstudiocom"></a>Reenvío de correos electrónicos de asignación desde manage.visualstudio.com
+
+El proceso para reenviar correos electrónicos de asignación desde el portal de manage.visualstudio.com es muy sencillo:
+
+1. Visite el portal [manage.visualstudio.com](https://manage.visualstudio.com) e inicie sesión. 
+2. Utilice la pestaña **Filtro** para buscar el suscriptor al que desea reenviar el correo electrónico de asignación. (Para más información sobre el filtrado, consulte [Búsqueda de una suscripción](/visualstudio/subscriptions/search-license)).
+3. Haga clic en los suscriptores.  Puede usar Ctrl + clic o Mayús + clic para seleccionar varios suscriptores.
+4. Haga clic en **Reenviar** en la parte superior de los resultados de búsqueda.  
+
+## <a name="resending-assignment-emails-from-within-vlsc"></a>Reenvío de correos electrónicos de asignación desde VLSC
 Cuando una suscripción se ha asignado a un suscriptor en Microsoft Business Center y el suscriptor solicita el reenvío del correo electrónico de asignación, puede modificar la información de correo electrónico del suscriptor y, a continuación, cambiarla de nuevo a la dirección original para atender la petición. De este modo se desencadenará el reenvío automático del correo electrónico de asignación.
 
 Siga estas instrucciones para volver a enviar el correo electrónico de asignación:
@@ -36,4 +48,3 @@ Esto hará que Microsoft Business Center reconozca que hubo cambios en la suscri
 
 > [!NOTE]
 > - Las suscripciones recién asignadas generarán automáticamente el correo electrónico de asignación. Los pasos anteriores solo son necesarios cuando un usuario solicita una nueva notificación de correo electrónico de asignación o si la notificación no se ha enviado por cualquier motivo.
-> - Este procedimiento no es necesario para volver a enviar correos electrónico de asignación para las suscripciones asignadas a través de https://manage.visualstudio.com.  Para reenviar mensajes de correo electrónico de asignación a los suscriptores del portal, simplemente seleccione los suscriptores y haga clic en el botón **Reenviar** situado en la parte superior de la lista de suscriptores.  

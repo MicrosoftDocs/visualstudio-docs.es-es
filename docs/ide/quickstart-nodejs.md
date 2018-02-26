@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 ms.devlang: javascript
@@ -12,13 +13,15 @@ ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 12c848797b167038b02106ca3392cac50171f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Inicio rápido: usar Visual Studio para crear su primera aplicación de Node.js
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, con una duración de entre 5 y 10 minutos, creará una sencilla aplicación web de Node.js. Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).  
@@ -37,6 +40,10 @@ En primer lugar, creará un proyecto de aplicación web de Node.js.
      ![Carga de trabajo Node.js en el instalador de Visual Studio](../ide/media/quickstart-nodejs-workload.png)  
 
     Visual Studio crea y la nueva solución y abre el proyecto. **server.js** abierto en el editor.
+
+4. Si todavía no tiene instalado el entorno de ejecución de Node.js, instálelo desde el sitio web de [Node.js](https://nodejs.org/en/download/).
+
+    En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no se detecta ningún entorno de ejecución instalado, puede configurar el proyecto para que haga referencia al entorno de ejecución instalado.
 
 ## <a name="explore-the-ide"></a>Explorar el IDE  
 

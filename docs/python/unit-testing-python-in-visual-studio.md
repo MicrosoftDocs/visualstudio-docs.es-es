@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 662ac8a1d8eac3e23d98bd9978a16e286a26d145
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Configuración de pruebas unitarias para código de Python
 
@@ -29,9 +29,11 @@ Las pruebas unitarias son fragmentos de código que prueban otras unidades de c�
 
 Python utiliza pruebas unitarias ampliamente para validar escenarios durante el diseño de un programa. La compatibilidad de Python en Visual Studio incluye características para descubrir, ejecutar y depurar pruebas unitarias dentro del contexto de su proceso de desarrollo, sin tener que ejecutar pruebas independientemente.
 
-En este tema se proporciona una descripción breve de las funcionalidades de las pruebas unitarias en Visual Studio con Python. Para más información sobre las pruebas unitarias en general, vea [Hacer una prueba unitaria del código](../test/unit-test-your-code.md). También puede ver el vídeo [Testing Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Academia virtual de Microsoft, 2 m 31 s).
+En este tema se proporciona una descripción breve de las funcionalidades de las pruebas unitarias en Visual Studio con Python. Para más información sobre las pruebas unitarias en general, vea [Hacer una prueba unitaria del código](../test/unit-test-your-code.md).
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
+|   |   |
+|---|---|
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea el vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) sobre pruebas unitarias de Python (2 minutos 31 segundos). |
 
 ## <a name="discovering-and-viewing-tests"></a>Detección y visualización de pruebas
 

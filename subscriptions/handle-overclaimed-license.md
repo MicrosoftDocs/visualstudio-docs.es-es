@@ -3,21 +3,22 @@ title: "Administración de licencias con exceso de asignación| Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 2/13/2018
 Ms.topic: Get-Started-Article
 Description: Learn how administrators can resolve over-claimed subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 1040c38e9c45bc833db4fb04a19d9aee45859e79
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d01474a410e2c2b115e5026da5e4d3e5b6783ad5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="handling-over-claimed-subscriptions"></a>Control de "exceso de asignación" de suscripciones
 A veces los pedidos se cambian después de haber agregado a los suscriptores, lo que puede causar que en su empresa haya más suscriptores asignados que licencias en propiedad. Cuando esto ocurre, en la pestaña Suscriptores se muestra una alerta y se proporciona más información. 
-**Nota: Los escenarios de exceso de asignación no se permiten en programas de licencia abierta.**
+> [!NOTE] 
+> No se permiten los escenarios de exceso de asignación en programas de licencia abierta.
 
 ![Aviso de exceso de asignación de suscripciones](_img\over-claimed\over-claimed-alert.png)
 

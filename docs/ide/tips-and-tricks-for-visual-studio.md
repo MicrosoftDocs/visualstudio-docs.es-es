@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Sugerencias de teclado para Visual Studio
 
@@ -84,8 +84,8 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Selección de bloques|Mantenga presionada la tecla Alt mientras arrastra el mouse, Mayús+Alt+teclas de dirección||
 |Subir o bajar línea|Alt+Arriba/Alt+Abajo||
 |Línea duplicada|Ctrl+E,V|Versión 15.6 de Visual Studio 2017 (versión preliminar 2)|
-|Expandir selección|Ctrl+W|Versión 15.5 de Visual Studio 2017|
-|Contraer selección|Ctrl+Mayús+W|Versión 15.5 de Visual Studio 2017|
+|Expandir selección|**Mayús**+**Alt**+**=**|Versión 15.5 de Visual Studio 2017|
+|Contraer selección|**Mayús**+**Alt**+**-**|Versión 15.5 de Visual Studio 2017|
 |Ir a definición|F12||
 |Definición de Peek|Alt+F12||
 |Ir a la pila de definiciones|Ctrl+Mayús+8 (Atrás), Ctrl+Mayús+7 (Adelante)||
@@ -125,9 +125,9 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 ## <a name="see-also"></a>Vea también
 
-[Keyboard shortcuts (VSTS and TFS)](/vsts/collaborate/keyboard-shortcuts) (Métodos abreviados de teclado [VSTS y TFS])  
-[Visual Studio Blog](http://blogs.msdn.com/b/visualstudio) (Blog de Visual Studio)  
-[Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)  
-[Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox) (Herramientas de Visual Studio en Channel 9)  
-[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Visual Studio Connect Bugs (Errores de conexión de Visual Studio)](http://connect.microsoft.com/VisualStudio)
+- [Keyboard shortcuts (VSTS and TFS)](/vsts/collaborate/keyboard-shortcuts) (Métodos abreviados de teclado [VSTS y TFS])
+- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio) (Blog de Visual Studio)
+- [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab) (Blog de sugerencias y trucos de Visual Studio)
+- [Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox) (Herramientas de Visual Studio en Channel 9)
+- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Visual Studio Connect Bugs (Errores de conexión de Visual Studio)](http://connect.microsoft.com/VisualStudio)

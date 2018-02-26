@@ -14,37 +14,25 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f047b143a7d0955d8ac3e2708098a903c73da59
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
+
 Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Studio.  Al diseñar la aplicación, use las herramientas de Visual Studio para agregar fácilmente servicios conectados, como Office 365, Azure App Service y Application Insights.
 
- Crear aplicaciones mediante C# y .NET Framework, HTML y JavaScript o C++. Comparta código, cadenas, imágenes y, en algunos casos, incluso la interfaz de usuario.
+Crear aplicaciones mediante C# y .NET Framework, HTML y JavaScript o C++. Comparta código, cadenas, imágenes y, en algunos casos, incluso la interfaz de usuario.
 
- Si quiere compilar un juego o una aplicación gráfica inmersiva, instale Visual Studio Tools para Unity y disfrute de las eficaces características de productividad de Visual Studio con Unity, el popular entorno de desarrollo y motor multiplataforma de juegos y gráficos para aplicaciones que se ejecuta en iOS, Android, Windows y otras plataformas.
+Si quiere compilar un juego o una aplicación gráfica inmersiva, instale Visual Studio Tools para Unity y disfrute de las eficaces características de productividad de Visual Studio con Unity, el popular entorno de desarrollo y motor multiplataforma de juegos y gráficos para aplicaciones que se ejecuta en iOS, Android, Windows y otras plataformas.
 
- **En este artículo:**
+## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Compilación de una aplicación para Android, iOS y Windows (.NET Framework)
 
--   [Compilar una aplicación para Android, iOS y Windows (.NET Framework)](#NET)
+![Dispositivos](../cross-platform/media/homedevices.png "HomeDevices")
 
-    -   [Tener como destino Android, iOS y Windows desde una sola base de código](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
-
-    -   [Tener como destino dispositivos Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
-
--   [Compilar una aplicación para Android, iOS y Windows (HTML/JavaScript)](#HTML)
-
--   [Compilar una aplicación para Android y Windows (C++)](#CPP)
-
--   [Compilar un juego multiplataforma para Android, iOS y Windows con Visual Studio Tools para Unity](#Unity)
-
-##  <a name="NET"></a> Compilar una aplicación para Android, iOS y Windows (.NET Framework)
- ![Dispositivos](../cross-platform/media/homedevices.png "HomeDevices")
-
- Con Xamarin, puede tener como destino Android, iOS y Windows en la misma solución, compartir código e incluso la interfaz de usuario.
+Con Xamarin, puede tener como destino Android, iOS y Windows en la misma solución, compartir código e incluso la interfaz de usuario.
 
 |**Más información**|
 |--------------------|
@@ -52,7 +40,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 |[Obtener información acerca de Xamarin en Visual Studio](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Visual Studio y Xamarin](../cross-platform/visual-studio-and-xamarin.md) (MSDN Library)|
 |[Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) (MSDN Library)|
-|[Obtener información sobre las aplicaciones Windows universales en Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[Obtener información acerca de las aplicaciones de Windows universales en Visual Studio](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Obtener información acerca de las similitudes entre Swift y C#](http://aka.ms/scposter) (download.microsoft.com)|
 |[Obtener información acerca del emulador de Visual Studio para Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 

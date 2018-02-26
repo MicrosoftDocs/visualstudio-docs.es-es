@@ -2,7 +2,7 @@
 title: "Instalación de la compatibilidad de Python en Visual Studio | Microsoft Docs"
 description: "Instrucciones detalladas sobre cómo instalar las Herramientas de Python para Visual Studio (PTVS) en Visual Studio 2017, 2015, 2013, 2012 y 2010, incluidas las opciones y las ubicaciones de instalación."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd0ef5cba2924c33857a8366105bde1f933a1ae9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
@@ -43,7 +43,7 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Descargue y ejecute el instalador de Visual Studio 2017 más reciente. Debe instalar la versión 15.2 y posteriores para utilizar Python.
+1. Descargue y ejecute el instalador de Visual Studio 2017 más reciente. Si tiene Visual Studio ya instalado, ejecute el instalador de Visual Studio y vaya al paso 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Instalar Visual Studio 2017 Community</a>
@@ -55,7 +55,10 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
     ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](media/installation-python-workload.png)
 
-    Opcional: si está trabajando con la ciencia de datos, considere también la posibilidad de la carga de trabajo **Aplicaciones de ciencia de datos y de análisis** (Visual Studio 2017 15.2 y versiones posteriores). Esta carga de trabajo incluye compatibilidad con Python y también con los lenguajes R y F#. Para más información, vea [Carga de trabajo Aplicaciones de ciencia de datos y de análisis](../rtvs/data-science-workload.md).
+    Opcional: si está trabajando con la ciencia de datos, considere también la posibilidad de la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**. Esta carga de trabajo incluye compatibilidad con Python y también con los lenguajes R y F#. Para más información, vea [Carga de trabajo Aplicaciones de ciencia de datos y de análisis](../rtvs/data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > Las cargas de trabajo de Python y Ciencia de datos solo están disponibles con Visual Studio 2017 versión 15.2 y posteriores.
 
 1. En la parte derecha del instalador, puede elegir opciones adicionales si lo prefiere. Omita este paso para aceptar las opciones predeterminadas.
 
@@ -63,7 +66,7 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
     | Opción | Description |
     | --- | --- |
-    | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones). |
+    | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Consulte [Entornos de Python](managing-python-environments-in-visual-studio.md). |
     | Compatibilidad con plantillas de Cookiecutter | Instala la interfaz de usuario gráfica de Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md). |
     | Compatibilidad web con Python | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](python-web-application-project-templates.md). |
     | Compatibilidad con IoT de Python | Admite el desarrollo de Windows IoT Core con Python. |
@@ -74,7 +77,9 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 
     ![Inicio, modificación o desinstalación de Visual Studio desde el instalador](media/installation-vs-launch.png)
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) sobre cómo instalar la compatibilidad de Python en Visual Studio.|
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 

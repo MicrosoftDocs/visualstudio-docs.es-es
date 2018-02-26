@@ -2,7 +2,7 @@
 title: "Información general de la compatibilidad de Python en Visual Studio (Windows) | Microsoft Docs"
 description: "Resumen de las características disponibles para Python en Visual Studio (también conocido como Herramientas de Python para Visual Studio, PTVS), incluidas las preguntas y respuestas( P+F) y la matriz de compatibilidad de características de las distintas versiones de Visual Studio."
 ms.custom: 
-ms.date: 01/09/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Uso de Python en Visual Studio (Windows)
 
@@ -50,9 +50,10 @@ Para comenzar:
 
 La carga de trabajo de Python también incluye el [SDK de Azure para Python](azure-sdk-for-python.md), lo que simplifica el consumo de servicios de Azure desde aplicaciones de Windows, Mac OS X y Linux.
 
-Para ver un vídeo de introducción, consulte el breve curso [Python Tools for Visual Studio (Herramientas de Python para Visual Studio)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) en Microsoft Virtual Academy (aproximadamente 22 minutos en total). 
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo dee una serie de vídeos (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) para obtener una introducción a Python en Visual Studio (22 minutos en total). |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Consulte también los siguientes vídeos en Microsoft Virtual Academy:<ul><li>[Introduction to Programming with Python](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382) (Introducción a la programación con Python)</li><li>[Python Beginner: Strings and Functions](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015) (Python para principiantes: funciones y cadenas)</li><li>[Python Fundamentals: List and Loops](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019) (Conceptos básicos de Python: listas y bucles)</li><li>[Top Python Questions](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) (Principales preguntas sobre Python)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Preguntas y respuestas
 
@@ -81,7 +82,8 @@ Las características de Python se pueden instalar en las siguientes ediciones de
 - Visual Studio 2012 (edición Pro o una versión posterior)
 - Visual Studio 2010 SP1 (edición Pro o una versión posterior; se necesita .NET 4.5)
 
-Las características son totalmente compatibles y se mantienen para la versión más reciente de Visual Studio exclusivamente. Estas características están disponibles en versiones anteriores, pero no se mantienen de manera activa.
+> [!Important]
+> Las características son totalmente compatibles y se mantienen para la versión más reciente de Visual Studio exclusivamente. Estas características están disponibles en versiones anteriores, pero no se mantienen de manera activa.
 
 | Compatibilidad de Python | 2017 | 2015 | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24eeb39abdee21d5441c88a3fa253d4818fe61e1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definición de comandos personalizados para proyectos de Python
 
@@ -282,7 +282,7 @@ El siguiente comando simplemente ejecuta `where` para mostrar los archivos de Py
 
 ```xml
 <PropertyGroup>
-  <PythonCommands>$(PythonCommands);InstallMyPackage;ShowOutdatedPackages;ShowAllPythonFilesInProject</PythonCommands>
+  <PythonCommands>$(PythonCommands);ShowAllPythonFilesInProject</PythonCommands>
 </PropertyGroup>
 
 <Target Name="ShowAllPythonFilesInProject" Label="Show Python files in project" Returns="@(Commands)">
@@ -296,6 +296,62 @@ El siguiente comando simplemente ejecuta `where` para mostrar los archivos de Py
 ### <a name="run-server-and-run-debug-server-commands"></a>Comandos Iniciar servidor e Iniciar el servidor de depuración
 
 Para saber cómo se definen los comandos **Iniciar servidor** e **Iniciar el servidor de depuración** en los proyectos web, eche un vistazo a [Microsoft.PythonTools.Web.targets](https://github.com/Microsoft/PTVS/blob/master/Python/Product/BuildTasks/Microsoft.PythonTools.Web.targets) (GitHub).
+
+### <a name="install-package-for-development"></a>Instalar el paquete para desarrollo
+
+```xml
+<PropertyGroup>
+  <PythonCommands>PipInstallDevCommand;$(PythonCommands);</PythonCommands>
+</PropertyGroup>
+
+<Target Name="PipInstallDevCommand" Label="Install package for development" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="pip" TargetType="module" Arguments="install --editable $(ProjectDir)"
+        WorkingDirectory="$(WorkingDirectory)" ExecuteIn="Repl:Install package for development">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*De [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usado con permiso.*
+
+### <a name="generate-windows-installer"></a>Generar el instalador de Windows
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWinInstCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWinInstCommand" Label="Generate Windows Installer" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+        Arguments="bdist_wininst --user-access-control=force --title &quot;$(InstallerTitle)&quot; --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+        WorkingDirectory="$(WorkingDirectory)" RequiredPackages="setuptools"
+        ExecuteIn="Repl:Generate Windows Installer">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*De [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usado con permiso.*
+
+### <a name="generate-wheel-package"></a>Generar un paquete Wheel
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWheelCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWheelCommand" Label="Generate Wheel Package" Returns="@(Commands)">
+
+  <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+      Arguments="bdist_wheel --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+      WorkingDirectory="$(WorkingDirectory)" RequiredPackages="wheel;setuptools"
+      ExecuteIn="Repl:Generate Wheel Package">
+    <Output TaskParameter="Command" ItemName="Commands" />
+  </CreatePythonCommandItem>
+</Target>
+```
+
+*De [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (GitHub), usado con permiso.*
 
 ## <a name="troubleshooting"></a>Solución de problemas
 

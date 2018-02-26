@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9564af525d0c801e311e42bc9ebe93bb16166147
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-buy-a-subscription"></a>Cómo comprar una suscripción
 Hay dos tipos principales de suscripciones a Visual Studio (de nube y estándar), que se explican en la [página de precios de Visual Studio](https://www.visualstudio.com/vs/pricing/).
@@ -26,13 +26,14 @@ Hay dos tipos principales de suscripciones a Visual Studio (de nube y estándar)
 ## <a name="buy-visual-studio-standard-subscriptions"></a>Compra de suscripciones estándar de Visual Studio
 Deberá ponerse en contacto con su distribuidor de software para comprar una suscripción estándar a Visual Studio o visitar [Microsoft Store](https://www.microsoft.com/store) en línea.
 
-*   Para registrarse a su suscripción de Azure y comprar desde Visual Studio Marketplace, necesitará una ["cuenta personal de Microsoft"](https://www.microsoft.com/account) o una ["cuenta profesional o educativa"](/azure/active-directory/sign-up-organization) si va a comprar para su organización y administrar identidades con Azure Active Directory (Azure AD).
+
+
+### <a name="buy-visual-studio-cloud-subscriptions"></a>Compra de suscripciones a la nube de Visual Studio
+
+Para registrarse a su suscripción de Azure y comprar desde Visual Studio Marketplace, necesitará una ["cuenta personal de Microsoft"](https://www.microsoft.com/account) o una ["cuenta profesional o educativa"](/azure/active-directory/sign-up-organization) si va a comprar para su organización y administrar identidades con Azure Active Directory (Azure AD).
 
 > [!WARNING]
 > Si usa una suscripción de Azure para comprar suscripciones a la nube de Visual Studio, estos cargos aparecerán como uso por encima del límite y se descontarán de su compromiso monetario de Azure. Obtenga más información sobre la facturación de Azure en las [preguntas frecuentes](/vsts/billing/faq-azure-billing).  
-
-### <a name="buy-subscriptions"></a>Comprar suscripciones
-
 
 1.  Inicie sesión en [Visual Studio Marketplace > Suscripciones](https://marketplace.visualstudio.com/subscriptions).
 

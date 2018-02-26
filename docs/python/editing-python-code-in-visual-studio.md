@@ -2,7 +2,7 @@
 title: "Edición de código de Python en Visual Studio | Microsoft Docs"
 description: "La edición de Python en Visual Studio proporciona IntelliSense, fragmentos de código y características de navegación, además de formato, linting y refactorización."
 ms.custom: 
-ms.date: 07/10/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,21 +17,21 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2bbf7169e7d60d5dac1119f543cbcfe61e922ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="editing-python-code"></a>Edición de código de Python
 
-Los desarrolladores invierten mucho tiempo en el editor de código, por lo que la [compatibilidad de Python en Visual Studio](installing-python-support-in-visual-studio.md) proporciona funciones para ayudarle a ser más productivo. Las características incluyen resalte de sintaxis de IntelliSense, finalización automática, ayuda para la firma, invalidaciones de método, búsqueda y navegación. 
+Los desarrolladores invierten mucho tiempo en el editor de código, por lo que la [compatibilidad de Python en Visual Studio](installing-python-support-in-visual-studio.md) proporciona funciones para ayudarle a ser más productivo. Las características incluyen resalte de sintaxis de IntelliSense, finalización automática, ayuda para la firma, invalidaciones de método, búsqueda y navegación.
 
 El editor también está integrado en la ventana interactiva de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Tutorial Step 3: Using the interactive REPL window](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) (Paso 3 del tutorial: Usar la ventana interactiva de REPL) y [Uso de la ventana interactiva - Comando Enviar código a Interactive](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command) para obtener información detallada.
 
-Para ver una introducción a la edición de código de Python, vea [Edición de código de Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2 min 30 s):
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
+|   |   |
+|---|---|
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) para ver una demostración de la edición de código Python (2 minutos 30 segundos).|
 
 Para obtener documentación general sobre la edición de código en Visual Studio, consulte [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código.
 

@@ -2,7 +2,7 @@
 title: "Administración de proyectos para aplicaciones de Python en Visual Studio | Microsoft Docs"
 description: "Explica el propósito de los proyectos de Visual Studio, muestra cómo crear y administrar proyectos de código de Python y describe las diferentes plantillas de proyecto disponibles para Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f1cc2abdc78da1279367432741ca30b5885335
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-projects"></a>Proyectos de Python
 
@@ -40,11 +40,10 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 >
 > Se puede crear fácilmente un proyecto de Visual Studio a partir de código existente, como se describe en [Creación de un proyecto a partir de archivos existentes](#creating-a-project-from-existing-files).
 
-Para ver una introducción a los proyectos de Python en Visual Studio, eche un vistazo al vídeo [Getting Python Code](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Obtener código de Python) de Microsoft Virtual Academy (2 minutos y 17 segundos).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-Vea también el vídeo más antiguo de youtube.com (8 minutos y 55 segundos) [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python).
+|   |   |
+|---|---|
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) para obtener una introducción a los proyectos de Python (2 minutos 17 segundos). |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Consulte también el vídeo de Youtube.com (8 minutos y 55 segundos) [Deep Dive: Using source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 995c3d8512c3df9bf2cc40fe962106a95f9d6268
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -40,9 +40,11 @@ Visual Studio tiene una serie de modos de REPL de Python entre los que se puede 
 
 En este tema se describen los modos de REPL **Estándar** y **Depurar**. Para obtener más información sobre los modos de IPython, vea [Using the IPython REPL](interactive-repl-ipython.md) (Uso de REPL de Python).
 
-Para obtener un tutorial detallado con ejemplos, incluidas las interacciones con el editor como Ctrl+Entrar, vea [Paso 3: uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Para ver un vídeo de introducción, eche un vistazo a [Python Interactive Window](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Ventana interactiva de Python) de Microsoft Virtual Academy (2 minutos y 22 segundos).
+Para obtener un tutorial detallado con ejemplos, incluidas las interacciones con el editor como Ctrl+Entrar, vea [Paso 3: uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
+|   |   |
+|---|---|
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Consulte un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) en la ventana interactiva (2 minutos 22 segundos).|
 
 ## <a name="opening-an-interactive-window"></a>Apertura de una ventana interactiva
 

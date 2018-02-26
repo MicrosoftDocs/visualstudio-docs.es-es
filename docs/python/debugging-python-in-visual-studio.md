@@ -2,7 +2,7 @@
 title: "Depuración de código de Python en Visual Studio | Microsoft Docs"
 description: "Tutorial sobre las características de depuración de Visual Studio que son específicas del código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva."
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c3b4bf4c08f9ecd13a313c717b4da9c0a5d5a45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-your-python-code"></a>Depuración del código de Python
 
@@ -34,9 +34,9 @@ Vea también los siguientes temas de depuración específicos para distintos esc
 - [Mixed-mode Python/C++ debugging](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) (Depuración en modo mixto Python/C++)
 - [Symbols for mixed-mode debugging](debugging-symbols-for-mixed-mode-c-cpp-python.md) (Símbolos de depuración en modo mixto)
 
-Para obtener una información general sobre la depuración, consulte [Debugging Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567) (Depurar Python) (Microsoft Virtual Academy, 3 min 32 s).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567]
+|   |   |
+|---|---|
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) para ver una demostración de la depuración de Python (3 minutos 32 segundos).|
 
 <a name="debugging-without-a-project"></a>
 
