@@ -97,6 +97,7 @@
 ##### [Sustitución de parámetros en una plantilla](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Compatibilidad de 64 bits del IDE de Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Desarrollo sin proyectos o soluciones ("Abrir carpeta")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+#### [Personalización de las tareas de compilación y depuración](ide/customize-build-and-debug-tasks-in-visual-studio.md)
 ### [Escribir código en el editor](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Buscar y reemplazar texto](ide/finding-and-replacing-text.md)
 ##### [Uso de expresiones regulares](ide/using-regular-expressions-in-visual-studio.md)
