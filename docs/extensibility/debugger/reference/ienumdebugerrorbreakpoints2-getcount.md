@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IEnumDebugErrorBreakpoints2::GetCount
-helpviewer_keywords: IEnumDebugErrorBreakpoints2::GetCount
+f1_keywords:
+- IEnumDebugErrorBreakpoints2::GetCount
+helpviewer_keywords:
+- IEnumDebugErrorBreakpoints2::GetCount
 ms.assetid: 56f7bb70-d55b-471c-8c65-09a9e7f4938e
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 230e39e4aba6a975c2f1f3c3ecd244f4f0f6b08e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

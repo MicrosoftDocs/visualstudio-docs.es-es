@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IEnumDebugFrameInfo2::GetCount
-helpviewer_keywords: IEnumDebugFrameInfo2::GetCount
+f1_keywords:
+- IEnumDebugFrameInfo2::GetCount
+helpviewer_keywords:
+- IEnumDebugFrameInfo2::GetCount
 ms.assetid: d02a08e3-f34f-461e-8195-5157e154c481
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: ced0e0c6e5afc2bfea115806e695195ed5032f99
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
