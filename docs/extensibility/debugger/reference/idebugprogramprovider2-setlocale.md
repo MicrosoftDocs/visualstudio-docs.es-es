@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugProgramProvider2::SetLocale
-helpviewer_keywords: IDebugProgramProvider2::SetLocale
+f1_keywords:
+- IDebugProgramProvider2::SetLocale
+helpviewer_keywords:
+- IDebugProgramProvider2::SetLocale
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fa3bbadd4266466d18fbd24cee83ec916aa571ea
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

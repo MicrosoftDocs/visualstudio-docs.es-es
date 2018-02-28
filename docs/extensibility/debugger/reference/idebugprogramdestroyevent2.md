@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugProgramDestroyEvent2
-helpviewer_keywords: IDebugProgramDestroyEvent2
+f1_keywords:
+- IDebugProgramDestroyEvent2
+helpviewer_keywords:
+- IDebugProgramDestroyEvent2
 ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8cae0510e464d5aefcb5911387635be2dfb44987
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

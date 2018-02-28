@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugPort2::GetPortRequest
-helpviewer_keywords: IDebugPort2::GetPortRequest
+f1_keywords:
+- IDebugPort2::GetPortRequest
+helpviewer_keywords:
+- IDebugPort2::GetPortRequest
 ms.assetid: 14abf847-0675-4fa8-872e-971e00c84224
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 66e0ba17503a0d1bd90358d2cafc3ccec09f6fac
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

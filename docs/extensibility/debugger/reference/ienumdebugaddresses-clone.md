@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IEnumDebugAddresses::Clone
-helpviewer_keywords: IEnumDebugAddresses::Clone method
+f1_keywords:
+- IEnumDebugAddresses::Clone
+helpviewer_keywords:
+- IEnumDebugAddresses::Clone method
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f7a6107427e6ba6e8949da8b716a454b1fbe141f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

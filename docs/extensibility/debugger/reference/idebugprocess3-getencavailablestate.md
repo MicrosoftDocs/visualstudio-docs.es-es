@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugProcess3::GetENCAvailableState
-helpviewer_keywords: IDebugProcess3::GetENCAvailableState
+f1_keywords:
+- IDebugProcess3::GetENCAvailableState
+helpviewer_keywords:
+- IDebugProcess3::GetENCAvailableState
 ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5d0fcac34457c12218ea8728af84e5f0a623edfe
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
