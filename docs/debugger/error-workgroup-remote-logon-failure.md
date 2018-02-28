@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.error.workgroup_remote_logon_failure
+f1_keywords:
+- vs.debug.error.workgroup_remote_logon_failure
 dev_langs:
 - CSharp
 - VB
@@ -17,11 +19,12 @@ dev_langs:
 helpviewer_keywords:
 - logon failure, remote debugging
 - remote debugging, logon failure
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 38ec2de37279e1f383751c9652aeeac74473c50f
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

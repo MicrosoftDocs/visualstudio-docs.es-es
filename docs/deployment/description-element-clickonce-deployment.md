@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: urn:schemas-microsoft-com:asm.v2#description
+f1_keywords:
+- urn:schemas-microsoft-com:asm.v2#description
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords: <description> element [ClickOnce deployment manifest]
+helpviewer_keywords:
+- <description> element [ClickOnce deployment manifest]
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: f5045f9203d5413efdd6d192d2667e94d0119220
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
