@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 01/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: code analysis, C++ core check
+helpviewer_keywords:
+- code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d5db13aa350e33a297981066f36c3d1dfd1ecb67
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e0e12941db7f8e6f539c88014fc5fa9c55ca809c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referencia de Comprobador de instrucciones de C++ principal
 Esta sección enumeran las advertencias del corrector de instrucciones de C++ Core. Para obtener información sobre el análisis de código, vea [/ANALYZE (análisis de código)](/cpp/build/reference/analyze-code-analysis) y [inicio rápido: análisis de código para C/C ++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
@@ -197,7 +200,7 @@ C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL
 
 ## <a name="type-group"></a>TIPO de grupo
 C26465 NO_CONST_CAST_UNNECESSARY  
-  No utilice `const_cast` para desechar `const`. `const_cast`no es necesario; no se está quitando constness o volatilidad por esta conversión. Vea [Type.3 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
+  No utilice `const_cast` para desechar `const`. `const_cast` no es necesario; no se está quitando constness o volatilidad por esta conversión. Vea [Type.3 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
   
 C26466 NO_STATIC_DOWNCAST_POLYMORPHIC  
   No utilice `static_cast` las conversiones de restricción. Una conversión de un tipo polimórfico debe usar dynamic_cast. Vea [Type.2 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).  
@@ -248,6 +251,20 @@ C26483 STATIC_INDEX_OUT_OF_RANGE
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   
   La expresión '% expr %': ninguna matriz de decadencia de puntero. Vea [Bounds.3 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
-  
+
+## <a name="deprecated-warnings"></a>Advertencias en desuso
+
+Las advertencias siguientes están presentes en un conjunto de reglas experimental temprano del corrector directrices de núcleo, pero están en desuso y pueden omitirse. Las advertencias tienen prioridad las advertencias de la lista anterior.
+
+- 26412 DEREF_INVALID_POINTER
+- 26413 DEREF_NULLPTR
+- 26420 ASSIGN_NONOWNER_TO_EXPLICIT_OWNER
+- ASSIGN_VALID_OWNER 26421
+- VALID_OWNER_LEAVING_SCOPE 26422
+- ALLOCATION_NOT_ASSIGNED_TO_OWNER 26423
+- VALID_ALLOCATION_LEAVING_SCOPE 26424
+- ASSIGNING_TO_STATIC 26425
+- NO_LIFETIME_TRACKING 26499
+
 ## <a name="see-also"></a>Vea también  
 [Usar los comprobadores de directrices de núcleo de C++](using-the-cpp-core-guidelines-checkers.md)

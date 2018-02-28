@@ -8,7 +8,7 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -70,7 +70,7 @@ Las API de JavaScript Runtime (JsRT) permiten a las aplicaciones de escritorio, 
 ## <a name="debugging-and-profiling"></a>Depurar y generar perfiles  
  Las API de JsRT admiten la depuración y la generación de perfiles mediante la tecnología de Active Scripting.  
   
- A partir de Windows 10, el motor de JavaScript Chakra admite un motor heredado y el motor Edge, y cualquiera puede ser el destino en JsRT (consulte el artículo sobre el [motor Edge como destino frente a los. motores heredados](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) para obtener más información). La depuración de un script en Visual Studio funciona de forma diferente en el motor heredado y en el motor Edge. Con el motor heredado, el host debe proporcionar un puntero de [interfaz de IDebugApplication](../winscript/reference/idebugapplication-interface.md), que puede obtenerse de una instancia de [interfaz de IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md). Con el motor Edge, `IDebugApplication` ha quedado en desuso. El motor Chakra permite funcionalidades de depuración nativa y de script mediante el depurador de Visual Studio sin necesidad de que el usuario implemente `IDebugApplication` .  
+ A partir de Windows 10, el motor de JavaScript Chakra admite un motor heredado y el motor Microsoft Edge, y cualquiera puede ser el destino en JsRT (consulte el artículo sobre el [motor Edge como destino frente a los. motores heredados](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) para obtener más información). La depuración de un script en Visual Studio funciona de forma diferente en el motor heredado y en el motor Edge. Con el motor heredado, el host debe proporcionar un puntero de [interfaz de IDebugApplication](../winscript/reference/idebugapplication-interface.md), que puede obtenerse de una instancia de [interfaz de IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md). Con el motor Edge, `IDebugApplication` ha quedado en desuso. El motor Chakra permite funcionalidades de depuración nativa y de script mediante el depurador de Visual Studio sin necesidad de que el usuario implemente `IDebugApplication` .  
   
  Para conseguir que los scripts de un contexto de ejecución se puedan depurar, el motor Chakra tiene que pasar a usar métodos menos eficaces de ejecución de código. Como tal, el código depurable se ejecuta normalmente más despacio que el no depurable. Por ello, con el motor heredado, un host puede elegir entre iniciar la depuración en un contexto de ejecución desde el principio proporcionando el puntero de `IDebugApplication` por adelantado a través de `JsCreateContext`, o esperar hasta que la depuración sea necesaria y entonces llamar a `JsStartDebugging`. Con el motor Edge, `JsCreateContext` ya no toma un parámetro `IDebugApplication` , y como resultado el script es depurable solo después de llamar a `JsStartDebugging` . Al realizar la depuración con Visual Studio, debe habilitarse la opción del depurador "Script".  
   

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.  
@@ -30,7 +30,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
   
 -   Llame a `CaptureCurrentFrame`cuando un problema de representación sea difícil de anticipar y de capturar en pruebas manuales, pero se puede predecir mediante programación usando información sobre el estado de la aplicación en tiempo de ejecución.  
   
-##  <a name="CaptureDX11_2"></a>Captura mediante programación en Windows 10  
+##  <a name="CaptureDX11_2"></a> Captura mediante programación en Windows 10  
  Esta parte del tutorial explica la captura mediante programación en aplicaciones que usan la API DirectX 11.2 en Windows 10, que emplea el método de captura robusta.
   
  Esta sección muestra cómo realizar estas tareas:  
@@ -79,7 +79,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../../code-qual
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Asegúrese de comprobar el `HRESULT` devuelto por `DXGIGetDebugInterface1` para garantizar que obtiene una interfaz válida antes de utilizarla:  
+     Asegúrese de comprobar la `HRESULT` devuelto por [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) para garantizar que obtiene una interfaz válida antes de utilizarla:  
   
     ```  
     if (FAILED(getAnalysis))  

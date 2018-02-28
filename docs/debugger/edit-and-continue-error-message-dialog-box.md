@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 06/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,15 @@ dev_langs:
 - VB
 - FSharp
 - C++
-helpviewer_keywords: Edit and Continue Error Message dialog box
+helpviewer_keywords:
+- Edit and Continue Error Message dialog box
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 01cd34aacb4abea5f2f3ce29fcb53ba34aaeaf21
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

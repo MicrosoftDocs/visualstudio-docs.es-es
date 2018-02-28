@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.stopnow
+f1_keywords:
+- vs.debug.stopnow
 dev_langs:
 - CSharp
 - VB
@@ -15,13 +17,15 @@ dev_langs:
 - C++
 - JScript
 - SQL
-helpviewer_keywords: Stop Debugging in Progress dialog box
+helpviewer_keywords:
+- Stop Debugging in Progress dialog box
 ms.assetid: ed7ef49d-e25f-4a4d-9396-9bc7b4143117
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3f98ce313228fd96b93cb52104b190adb057a712
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

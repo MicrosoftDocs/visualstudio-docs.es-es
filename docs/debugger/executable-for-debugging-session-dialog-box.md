@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vs.debug.exefordebug
+f1_keywords:
+- vs.debug.exefordebug
 dev_langs:
 - CSharp
 - VB
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - debugger, Executable for Debugging Session dialog box
 - Executable for Debugging Session dialog box
 ms.assetid: c0ddbe32-b99f-4425-acf1-f48842804f56
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: c52d66d0a2e71b96a907fc73b16d42fa13b080bb
 ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT

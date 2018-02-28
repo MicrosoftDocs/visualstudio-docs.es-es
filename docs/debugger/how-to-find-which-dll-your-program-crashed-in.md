@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.dll
+f1_keywords:
+- vs.debug.dll
 dev_langs:
 - CSharp
 - VB
@@ -21,26 +23,27 @@ helpviewer_keywords:
 - debugging [Visual Studio], DLL crashes
 - DLLs, load order of
 ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95ad4f9c028b9b40bf5104539a608453c9d6f9dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: df872ea52d716b4eaedc9414bc7234ba7c6294d3
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Cómo: Averiguar en qué archivo DLL se bloqueó el programa
-> [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
  Si la aplicación se bloquea durante una llamada a un archivo DLL del sistema o el código de un tercero, es necesario que encuentre qué archivo DLL estaba activo cuando ocurrió el bloqueo. Si se produce un bloqueo en un archivo DLL fuera de su propio programa, puede identificar la ubicación mediante la **módulos** ventana.  
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Para averiguar dónde se produjo un bloqueo mediante la ventana Módulos  
   
-1.  Anote la dirección donde se produjo el bloqueo.  
+1.  Anote la dirección donde se produjo el bloqueo.
+
+    Si la dirección no se muestra en el mensaje de error, debe utilizar métodos alternativos para identificar el archivo DLL. Si sospecha que una DLL del sistema, puede [cargar símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) desde los servidores de símbolos de Microsoft durante la depuración. En caso contrario, puede que necesite [crear un archivo de volcado](../debugger/using-dump-files.md) con un montón información en su lugar. Varios [herramientas](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) están disponibles para crear archivos de volcado.
   
 2.  En el **depurar** menú, elija **Windows**y haga clic en **módulos**.  
   
