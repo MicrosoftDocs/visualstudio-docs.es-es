@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugDisassemblyStream2::GetScope
-helpviewer_keywords: IDebugDisassemblyStream2::GetScope
+f1_keywords:
+- IDebugDisassemblyStream2::GetScope
+helpviewer_keywords:
+- IDebugDisassemblyStream2::GetScope
 ms.assetid: 71c6e632-642a-42d8-a995-77e4ac190a5b
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: fcfd474c1f10887fd30356fe444476428c263fe0
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

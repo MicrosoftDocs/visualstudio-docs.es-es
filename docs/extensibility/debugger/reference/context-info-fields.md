@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: CONTEXT_INFO_FIELDS
-helpviewer_keywords: CONTEXT_INFO_FIELDS enumeration
+f1_keywords:
+- CONTEXT_INFO_FIELDS
+helpviewer_keywords:
+- CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 8f0316e8822706b26103f02eda1849568cf79994
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugObject::GetSize
-helpviewer_keywords: IDebugObject::GetSize method
+f1_keywords:
+- IDebugObject::GetSize
+helpviewer_keywords:
+- IDebugObject::GetSize method
 ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: b53b8fb7beb7d478f5a21035aa27eb13022ff0f3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

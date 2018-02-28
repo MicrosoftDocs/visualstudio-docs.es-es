@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugBreakEvent2
-helpviewer_keywords: IDebugBreakEvent2 interface
+f1_keywords:
+- IDebugBreakEvent2
+helpviewer_keywords:
+- IDebugBreakEvent2 interface
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 3b58e0fb18b8f41f16a6cc92e682363ff531d5ec
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

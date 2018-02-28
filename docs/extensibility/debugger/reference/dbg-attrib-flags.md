@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: DBG_ATTRIB_FLAGS
-helpviewer_keywords: DBGPROP_ATTRIB_FLAGS enumerations
+f1_keywords:
+- DBG_ATTRIB_FLAGS
+helpviewer_keywords:
+- DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 65775dde02df8f6f7969a4b797404d5bbb93ba4e
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

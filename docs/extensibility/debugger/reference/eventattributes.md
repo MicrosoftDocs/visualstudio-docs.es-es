@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: EVENTATTRIBUTES
-helpviewer_keywords: EVENTATTRIBUTES enumeration
+f1_keywords:
+- EVENTATTRIBUTES
+helpviewer_keywords:
+- EVENTATTRIBUTES enumeration
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 0d9238caf15c94aaf658d97fa8866c6ff43de687
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

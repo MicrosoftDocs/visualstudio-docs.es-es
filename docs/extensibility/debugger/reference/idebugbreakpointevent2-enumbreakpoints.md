@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugBreakpointEvent2:::EnumBreakpoints
-helpviewer_keywords: IDebugBreakpointEvent2:::EnumBreakpoints
+f1_keywords:
+- IDebugBreakpointEvent2:::EnumBreakpoints
+helpviewer_keywords:
+- IDebugBreakpointEvent2:::EnumBreakpoints
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 973c4442d42f6fe1b70be3515aba18f3f2424cb1
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

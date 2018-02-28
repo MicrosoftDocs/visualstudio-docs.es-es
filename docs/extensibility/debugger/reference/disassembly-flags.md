@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: DISASSEMBLY_FLAGS
-helpviewer_keywords: DISASSEMBLY_FLAGS enumeration
+f1_keywords:
+- DISASSEMBLY_FLAGS
+helpviewer_keywords:
+- DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c22724bbf8ba55e866a5139479bf2a56b5bf63fa
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

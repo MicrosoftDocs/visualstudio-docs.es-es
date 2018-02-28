@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugDisassemblyStream2::GetCurrentLocation
-helpviewer_keywords: IDebugDisassemblyStream2::GetCurrentLocation
+f1_keywords:
+- IDebugDisassemblyStream2::GetCurrentLocation
+helpviewer_keywords:
+- IDebugDisassemblyStream2::GetCurrentLocation
 ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 30fe6ec813446407c0fcd6636a952eb544a9e75c
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

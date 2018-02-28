@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: DEBUG_PROPERTY_INFO
-helpviewer_keywords: DEBUG_PROPERTY_INFO structure
+f1_keywords:
+- DEBUG_PROPERTY_INFO
+helpviewer_keywords:
+- DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 04ac40eea5223122a4da5187419ce5b5ed3c1bd3
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

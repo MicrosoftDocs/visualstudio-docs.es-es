@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: BP_RESOLUTION_LOCATION
-helpviewer_keywords: BP_RESOLUTION_LOCATION structure
+f1_keywords:
+- BP_RESOLUTION_LOCATION
+helpviewer_keywords:
+- BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: a85c6c097867aea17be4b4aeca1431a05c74903a
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

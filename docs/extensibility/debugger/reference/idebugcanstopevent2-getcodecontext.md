@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugCanStopEvent2::GetCodeContext
-helpviewer_keywords: IDebugCanStopEvent2::GetCodeContext
+f1_keywords:
+- IDebugCanStopEvent2::GetCodeContext
+helpviewer_keywords:
+- IDebugCanStopEvent2::GetCodeContext
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 4b2e12fe5840819394670de9dc0ff677d5ccde60
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

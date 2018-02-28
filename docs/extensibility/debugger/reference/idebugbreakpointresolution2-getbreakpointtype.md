@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugBreakpointResolution2::GetBreakpointType
-helpviewer_keywords: IDebugBreakpointResolution2::GetBreakpointType
+f1_keywords:
+- IDebugBreakpointResolution2::GetBreakpointType
+helpviewer_keywords:
+- IDebugBreakpointResolution2::GetBreakpointType
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c7bd1b12fbad9f70555009eef6774d6f0dc7c028
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

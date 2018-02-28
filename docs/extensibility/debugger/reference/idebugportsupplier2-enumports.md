@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugPortSupplier2::EnumPorts
-helpviewer_keywords: IDebugPortSupplier2::EnumPorts
+f1_keywords:
+- IDebugPortSupplier2::EnumPorts
+helpviewer_keywords:
+- IDebugPortSupplier2::EnumPorts
 ms.assetid: 88b57fd2-eba1-44fa-bd34-cf2ad2b1ff87
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 136e9bed0029cca41d04a5d3c28fec7701217acc
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: DUMPTYPE
-helpviewer_keywords: DUMPTYPE enumeration
+f1_keywords:
+- DUMPTYPE
+helpviewer_keywords:
+- DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 722e08ba5328a07c8b6272d95b5a8ae756d2405d
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

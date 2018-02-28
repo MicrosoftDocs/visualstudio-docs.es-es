@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugBreakpointRequest2
-helpviewer_keywords: IDebugBreakpointRequest2 interface
+f1_keywords:
+- IDebugBreakpointRequest2
+helpviewer_keywords:
+- IDebugBreakpointRequest2 interface
 ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: f458d8efcf1a4b466cc48dfd9dca10fa356a6304
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugExceptionEvent2::PassToDebuggee
-helpviewer_keywords: IDebugExceptionEvent2::PassToDebuggee
+f1_keywords:
+- IDebugExceptionEvent2::PassToDebuggee
+helpviewer_keywords:
+- IDebugExceptionEvent2::PassToDebuggee
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: d10f01289fc0a5733586e19bb3b584fa0f95f4aa
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

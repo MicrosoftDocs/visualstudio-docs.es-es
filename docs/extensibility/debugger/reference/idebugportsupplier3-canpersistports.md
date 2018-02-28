@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugPortSupplier3::CanPersistPorts
-helpviewer_keywords: IDebugPortSupplier3::CanPersistPorts
+f1_keywords:
+- IDebugPortSupplier3::CanPersistPorts
+helpviewer_keywords:
+- IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 7cb364ca40c42a3f392a5944169b7dd97075ab9b
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

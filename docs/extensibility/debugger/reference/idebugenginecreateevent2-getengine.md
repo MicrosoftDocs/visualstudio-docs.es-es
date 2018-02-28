@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugEngineCreateEvent2::GetEngine
-helpviewer_keywords: IDebugEngineCreateEvent2::GetEngine
+f1_keywords:
+- IDebugEngineCreateEvent2::GetEngine
+helpviewer_keywords:
+- IDebugEngineCreateEvent2::GetEngine
 ms.assetid: 187d24ed-9f9a-4418-a0ef-b8a19f54652c
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: 2fb324384f80b9908746f9c43d1782ff12661692
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT

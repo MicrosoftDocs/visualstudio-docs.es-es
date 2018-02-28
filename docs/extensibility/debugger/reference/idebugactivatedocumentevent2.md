@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDebugActivateDocumentEvent2
-helpviewer_keywords: IDebugActivateDocumentEvent2 interface
+f1_keywords:
+- IDebugActivateDocumentEvent2
+helpviewer_keywords:
+- IDebugActivateDocumentEvent2 interface
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
+ms.workload:
+- vssdk
 ms.openlocfilehash: c6ace15a6e2a88aa214261d3d8ec137ebb6d7ebe
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
