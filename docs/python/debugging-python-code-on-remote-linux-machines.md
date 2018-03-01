@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Depuración remota de código de Python en Linux
 
@@ -40,7 +40,7 @@ Los elementos siguientes son necesarios para seguir este tutorial:
 - Un equipo remoto que ejecute Python en un sistema operativo como Mac OSX o Linux.
 - El puerto 5678 (entrada) abierto en el firewall de ese equipo, que es el valor predeterminado para la depuración remota.
 
-Puede crear fácilmente [máquinas virtuales de Linux en Azure](/azure/virtual-machines/linux/creation-choices) y [tener acceso mediante Escritorio remoto](/azure/virtual-machines/linux/use-remote-desktop) desde Windows. Un sistema Ubuntu para la máquina virtual resulta útil porque Python está instalado de forma predeterminada; de lo contrario, vea la lista en [Selección e instalación de los intérpretes de Python](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) para obtener otras ubicaciones de descarga de Python.
+Puede crear fácilmente [máquinas virtuales de Linux en Azure](/azure/virtual-machines/linux/creation-choices) y [tener acceso mediante Escritorio remoto](/azure/virtual-machines/linux/use-remote-desktop) desde Windows. Un sistema Ubuntu para la máquina virtual resulta útil porque Python está instalado de forma predeterminada; de lo contrario, vea la lista en [Selección e instalación de los intérpretes de Python](installing-python-interpreters.md) para obtener otras ubicaciones de descarga de Python.
 
 Para obtener detalles sobre cómo crear una regla de firewall para una máquina virtual de Azure, vea [Apertura de puertos para una máquina virtual en Azure mediante Azure Portal](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
