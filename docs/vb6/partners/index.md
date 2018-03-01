@@ -2,14 +2,17 @@
 title: Ofertas de asociados de Visual Basic 6.0 | Microsoft Docs
 description: Ofertas de asociados para migrar de Visual Basic 6.0 a .NET.
 ms.date: 09/01/2017
-ms.technology: devlang-vb
+ms.technology:
+- devlang-vb
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: visual-basic
+dev_langs:
+- visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: 10db1f39ac362d64b0bf5b794695f6f2089f8aca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
