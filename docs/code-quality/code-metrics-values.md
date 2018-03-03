@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>Valores de métrica de código
 
@@ -26,9 +26,11 @@ La mayor complejidad de las aplicaciones de software modernas también aumenta l
 
 Los programadores pueden usar Visual Studio para generar datos de métricas de código que medir la complejidad y el mantenimiento del código administrado. Datos de métricas de código se pueden generar para una solución completa o un proyecto único.
 
+Para obtener información sobre cómo generar datos de métricas de código en Visual Studio, vea [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md).
+
 ## <a name="software-measurements"></a>Medidas de software
 
-En la lista siguiente muestra los resultados de métrica del código que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] calcula:
+En la lista siguiente muestra el código de los resultados de las métricas que calcula Visual Studio:
 
 - **Índice de mantenimiento** -calcula un valor de índice entre 0 y 100 que representa la facilidad relativa de mantenimiento del código. Un valor alto significa mayor facilidad de mantenimiento. Las clasificaciones de colores, pueden utilizarse para identificar rápidamente los puntos conflictivos en el código. Una clasificación en verde está comprendido entre 20 y 100 e indica que el código tiene buen mantenimiento. Una clasificación amarilla entre 10 y 19 e indica que el código sea fácil de mantener cierta. Una clasificación de color rojo es una clasificación entre 0 y 9 e indica mantenimiento bajo.
 
@@ -51,3 +53,8 @@ Para obtener más información acerca de cómo tratan las métricas de código m
 Algunas herramientas de software y los compiladores generan código que se agrega a un proyecto y que el programador del proyecto no ve o no debe cambiar. Principalmente, las métricas de código omiten el código generado al calcular los valores de métricas. Esto permite que los valores de las métricas para que refleje lo que el programador puede ver y cambiar.
 
 No se omite el código generado para formularios Windows Forms, porque es código que el programador puede ver y cambiar.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+- [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Utilice la ventana de resultados de métrica del código](../code-quality/working-with-code-metrics-data.md)

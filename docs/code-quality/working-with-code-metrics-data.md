@@ -1,5 +1,5 @@
 ---
-title: "Resultados de métrica en Visual Studio de código | Documentos de Microsoft"
+title: "La ventana de resultados de las métricas de código en Visual Studio | Documentos de Microsoft"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,13 +19,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>Trabajar con datos de métricas de código
+# <a name="using-the-code-metrics-results-window"></a>Mediante la ventana Resultados de métrica del código
 
 El **resultados de métrica del código** ventana muestra los datos que se generan mediante el análisis de las métricas de código. Para obtener más información acerca de los valores de datos de métricas de código, vea [valores de métrica de código](../code-quality/code-metrics-values.md).
 
@@ -41,7 +41,7 @@ El **resultados de métrica del código** ventana aparecerá automáticamente al
 
 - En el **vista** menú, elija **otras ventanas** > **resultados de métrica del código**.
 
-   El **resultados de métrica del código** se muestra la ventana, aunque no contenga ningún resultado.
+El **resultados de métrica del código** se muestra la ventana, aunque no contenga ningún resultado.
 
 ### <a name="to-view-code-metrics-details"></a>Para ver los detalles de las métricas de código
 
@@ -73,7 +73,7 @@ Puede agregar o quitar resultados de las columnas de la **resultados de métrica
 
 1. Haga clic en el **agregar o quitar columnas** botón.
 
-     \-o bien haga clic en cualquier encabezado de columna y, a continuación, haga clic en **agregar o quitar columnas**.
+     \- o bien haga clic en cualquier encabezado de columna y, a continuación, haga clic en **agregar o quitar columnas**.
 
 1. En el **agregar o quitar columnas** cuadro de diálogo, desactive la casilla de la columna que desea quitar y, a continuación, haga clic en **Aceptar**.
 
@@ -131,5 +131,5 @@ Para obtener más información acerca de VSTS, los elementos de trabajo, consult
 
 ## <a name="see-also"></a>Vea también
 
-[Valores de métrica de código](../code-quality/code-metrics-values.md)  
-[Cómo: Generar datos de las métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Valores de métrica de código](../code-quality/code-metrics-values.md)
+- [Cómo: generar datos de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

@@ -4,62 +4,74 @@ ms.custom:
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9ee45132e4acf45bccffd3e05808defd3c7ced6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="view-snapshots-using-intellitrace-step-back"></a>Ver las instantáneas mediante la devolución de paso de IntelliTrace
+# <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Ver las instantáneas con devolución de paso de IntelliTrace en Visual Studio
+
 Devolución de paso de IntelliTrace automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
 Paso de copia de IntelliTrace está disponible a partir de Visual Studio Enterprise 2017 15.5 y versiones posteriores, y requiere actualización de aniversario de Windows 10 o superior. La característica se admite actualmente para la depuración de ASP.NET, formularios Windows Forms, WPF, aplicaciones de consola administrado y bibliotecas de clases administradas. No se admite actualmente la depuración de aplicaciones ASP.NET Core, .NET Core o UWP. 
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Habilitar el modo de eventos y las instantáneas de IntelliTrace 
-Para habilitar la característica, vaya a **Herramientas > Opciones > IntelliTrace** configuración y seleccione la opción **IntelliTrace eventos e instantáneas**. 
 
-![Habilitar el modo de eventos de IntelliTrace e instantáneas](../debugger/media/intellitrace-enable-snapshots.png "modo de habilitar los eventos de IntelliTrace e instantáneas")
+1. En Visual Studio Enterprise, vaya a **Herramientas > Opciones > IntelliTrace** configuración y seleccione la opción **IntelliTrace eventos e instantáneas**. 
 
-IntelliTrace toma una instantánea del proceso de la aplicación en el depurador de cada evento de paso y de punto de interrupción. Estos eventos se registran en el **eventos** pestaña en el **herramientas de diagnóstico** ventana, junto con otros eventos de IntelliTrace. Para abrir esta ventana, elija **Debug / Windows / Mostrar herramientas de diagnóstico**.
+    ![Habilitar el modo de eventos de IntelliTrace e instantáneas](../debugger/media/intellitrace-enable-snapshots.png "modo de habilitar los eventos de IntelliTrace e instantáneas")
 
-Un icono de la cámara aparece al lado de los eventos para el que las instantáneas están disponibles. 
+2. Abra el proyecto en Visual Studio.
 
-![Ficha de eventos con instantáneas](../debugger/media/intellitrace-events-tab-with-snapshots.png "ficha de eventos con instantáneas en los puntos de interrupción y pasos")
+3. Establezca uno o más puntos de interrupción en el proyecto e iniciar la depuración (presione **F5**), o iniciar la depuración recorriendo el código (**F10** o **F11**).
 
-Por motivos de rendimiento, no se realizan las instantáneas que avance muy rápidamente. Si no aparece ningún icono de cámara aparece junto al paso, intente la ejecución paso a paso más lentamente.
+    IntelliTrace toma una instantánea del proceso de la aplicación en el depurador de cada evento de paso y de punto de interrupción. Estos eventos se registran en el **eventos** pestaña en el **herramientas de diagnóstico** ventana, junto con otros eventos de IntelliTrace. Para abrir esta ventana, elija **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
+
+    Un icono de la cámara aparece al lado de los eventos para el que las instantáneas están disponibles. 
+
+    ![Ficha de eventos con instantáneas](../debugger/media/intellitrace-events-tab-with-snapshots.png "ficha de eventos con instantáneas en los puntos de interrupción y pasos")
+
+    Por motivos de rendimiento, no se realizan las instantáneas que avance muy rápidamente. Si no aparece ningún icono de cámara aparece junto al paso, intente la ejecución paso a paso más lentamente.
 
 ## <a name="navigate-and-view-snapshots"></a>Navegar y ver las instantáneas
 
-Puede navegar entre los eventos mediante el **paso atrás (Alt + [)** y **paso hacia delante (Alt +])** botones en la barra de herramientas de depuración. Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **ventana de herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
+1. Navegar entre los eventos mediante el uso de la **paso atrás (Alt + [)** y **paso hacia delante (Alt +])** botones en la barra de herramientas de depuración.
 
-![Retroceder o avanzar botones](../debugger/media/intellitrace-step-back-icons-description.png "botones paso hacia atrás y hacia delante de paso")
+    Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **ventana de herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
 
-Al retroceder o avanzar paso a paso, Visual Studio entra en modo de depuración histórica. En este modo, el contexto del depurador cambia a la vez cuando se registró el evento seleccionado. Visual Studio también mueve el puntero a la línea de código en la ventana de código fuente correspondiente. 
+    ![Retroceder o avanzar botones](../debugger/media/intellitrace-step-back-icons-description.png "botones paso hacia atrás y hacia delante de paso")
 
-Desde esta vista, puede inspeccionar los valores de la **pila de llamadas**, **locales**, **automático**, y **inspección** windows. También puede desplazar el puntero sobre las variables para ver información sobre datos y realizar la evaluación de expresiones en el **inmediato** ventana. Los datos que se ven procede de la instantánea de tomadas en ese momento en el tiempo de proceso de la aplicación.
+    Al retroceder o avanzar paso a paso, Visual Studio entra en modo de depuración histórica. En este modo, el contexto del depurador cambia a la vez cuando se registró el evento seleccionado. Visual Studio también mueve el puntero a la línea de código en la ventana de código fuente correspondiente. 
 
-Así, por ejemplo, si ha alcanzado un punto de interrupción y ha realizado un paso (**F10**), el **paso atrás** botón hace que Visual Studio en modo histórico en la línea de código correspondiente al punto de interrupción. 
+    Desde esta vista, puede inspeccionar los valores de la **pila de llamadas**, **locales**, **automático**, y **inspección** windows. También puede desplazar el puntero sobre las variables para ver información sobre datos y realizar la evaluación de expresiones en el **inmediato** ventana. Los datos que se ven procede de la instantánea de tomadas en ese momento en el tiempo de proceso de la aplicación.
 
-![Modo histórico de activación en un evento con una instantánea](../debugger/media/intellitrace-historical-mode-with-snapshot.png "modo histórico de activación en un evento con una instantánea")
+    Así, por ejemplo, si ha alcanzado un punto de interrupción y ha realizado un paso (**F10**), el **paso atrás** botón hace que Visual Studio en modo histórico en la línea de código correspondiente al punto de interrupción. 
 
-Para volver a la ejecución en directo, elija **continuar (F5)** o haga clic en el **volver a depuración en directo** vínculo en la barra de información. 
+    ![Modo histórico de activación en un evento con una instantánea](../debugger/media/intellitrace-historical-mode-with-snapshot.png "modo histórico de activación en un evento con una instantánea")
 
-También puede ver una instantánea de la **eventos** ficha. Seleccione un evento con una instantánea y haga clic en **Activar depuración histórica**. También puede hacer clic en el icono de la cámara para activar depuración histórica.
+2. Para volver a la ejecución en directo, elija **continuar (F5)** o haga clic en el **volver a depuración en directo** vínculo en la barra de información. 
 
-![Activar depuración histórica en un evento](../debugger/media/intellitrace-activate-historical-debugging.png "Activar depuración histórica en un evento")
+3. También puede ver una instantánea de la **eventos** ficha. Para ello, seleccione un evento con una instantánea y haga clic en **Activar depuración histórica**.
 
-A diferencia de la **Establecer instrucción siguiente** comando, ver una instantánea no vuelve a ejecutar el código; proporciona una vista estática del estado de la aplicación en un momento en el tiempo que se ha producido en el pasado.
+    También puede hacer clic en el icono de la cámara para activar depuración histórica.
 
-![Información general de las copias de paso de IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "información general de IntelliTrace paso invertido")
+    ![Activar depuración histórica en un evento](../debugger/media/intellitrace-activate-historical-debugging.png "Activar depuración histórica en un evento")
+
+    A diferencia de la **Establecer instrucción siguiente** comando, ver una instantánea no vuelve a ejecutar el código; proporciona una vista estática del estado de la aplicación en un momento en el tiempo que se ha producido en el pasado.
+
+    ![Información general de las copias de paso de IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "información general de IntelliTrace paso invertido")
 
 ## <a name="next-steps"></a>Pasos siguientes  
  Para obtener información sobre cómo inspeccionar las variables en Visual Studio, vea [paseo por las características del depurador](../debugger/debugger-feature-tour.md)  
