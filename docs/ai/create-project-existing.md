@@ -29,4 +29,4 @@ Una vez que haya [instalado Visual Studio Tools para IA](installation.md), es f�
 
 ## <a name="see-also"></a>Vea también
 
-- [Creación de un entorno para un intérprete de Python existente](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Identificación manual de un entorno de Python existente](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)

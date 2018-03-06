@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 246f13b340c0acea519dccd323c1e7b2c28dd344
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3901e9df584ab9acd6bef86825a587026ae1a9e9
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Cómo: Utilizar variables de entorno al compilar
 Al compilar proyectos, a menudo es necesario establecer las opciones de compilación mediante información que no está en el archivo del proyecto o en los archivos que componen el proyecto. Normalmente, esta información se almacena en variables de entorno.  
@@ -68,6 +68,6 @@ Al compilar proyectos, a menudo es necesario establecer las opciones de compilac
 ```  
   
 ## <a name="see-also"></a>Vea también  
-    [MSBuild ](../msbuild/msbuild.md)
-    [MSBuild Properties](../msbuild/msbuild-properties.md)
- [Cómo: Compilar los mismos archivos de código fuente con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[MSBuild ](../msbuild/msbuild.md)  
+[Propiedades de MSBuild](../msbuild/msbuild-properties.md)  
+[Cómo: Compilar los mismos archivos de código fuente con diferentes opciones](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  

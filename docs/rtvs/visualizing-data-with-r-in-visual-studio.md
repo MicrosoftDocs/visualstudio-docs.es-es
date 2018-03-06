@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 97e9838e46a4e0158b281f243ffda7d46044ef2d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 962a7a5685a5d4a1d4ad5466710377d4885ad398
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="creating-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 
@@ -28,9 +28,9 @@ El trazado es una parte fundamental del flujo de trabajo de un científico de da
 
 ![Imagen prominente del trazado](media/plotting-hero-image.png)
 
-En el siguiente vídeo (2m 02s) se proporciona un breve paseo introductorio por el trazado en RTVS:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTbKmz5RSgY" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Ver un vídeo (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) sobre el trazado con R (2m 02s). |
 
 ## <a name="the-plot-window"></a>La ventana de trazado
 

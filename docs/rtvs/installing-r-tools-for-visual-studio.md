@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Cómo instalar Herramientas de R para Visual Studio
 
@@ -44,7 +44,7 @@ RTVS no se instalará si solo tiene Visual Studio Shell incluido en productos co
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalación de RTVS en Visual Studio 2017
 
-1. Ejecute el instalador de Visual Studio. (Consulte [Descargas](https://www.visualstudio.com/downloads/) si aún no tiene instalado Visual Studio). En Windows 7, asegúrese de que el instalador se actualiza para mostrar la versión de Visual Studio *15.2 compilación 26430.12* o una versión posterior.
+1. Ejecute el instalador de Visual Studio. (Consulte [Descargas](https://www.visualstudio.com/downloads/) si aún no tiene instalado Visual Studio). En Windows 7, asegúrese de que el instalador se actualiza para mostrar la versión de Visual Studio 2017 *15.2 compilación 26430.12* o una versión posterior.
 
 1. Seleccione la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**:
 
@@ -81,12 +81,12 @@ RTVS para Visual Studio 2015 se instala en: `%ProgramFiles(x86)%\Microsoft Visua
 
 La instalación sin conexión es adecuada para los equipos que no están conectados a Internet:
 
-1. Siga las instrucciones para crear un instalador sin conexión para la versión siguiente de Visual Studio: 
+1. Siga las instrucciones para crear un instalador sin conexión para la versión siguiente de Visual Studio:
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Para Visual Studio 2015, descargue los instaladores de RTVS sin conexión desde [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) y [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
+1. Para Visual Studio 2015, descargue los instaladores de RTVS sin conexión desde [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) y [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
 1. Instale Visual Studio y RTVS desde el instalador sin conexión.
 

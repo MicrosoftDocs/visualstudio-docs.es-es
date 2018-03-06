@@ -1,7 +1,7 @@
 ---
 title: "Cómo usar Boost.Test para C++ en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 01/05/2018
+ms.date: 01/29/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
@@ -10,12 +10,13 @@ ms.topic: article
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bdf772be03f6021f499b9bf777922d6d2743e0dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Cómo usar Boost.Test para C++ en Visual Studio
 
@@ -33,32 +34,40 @@ Boost.Test requiere [Boost](http://www.boost.org/)! Si no tiene Boost instalado,
 
 1. Instale la biblioteca dinámica o estática Boost.Test:
 
-    - Ejecute `vcpkg install boost-test` para instalar la biblioteca dinámica Boost.Test.
+    - Ejecute **vcpkg install boost-test** para instalar la biblioteca dinámica Boost.Test.
     
        O BIEN
        
-    - Ejecute `vcpkg install boost-test:x86-windows-static` para instalar la biblioteca estática Boost.Test.
+    - Ejecute **vcpkg install boost-test:x86-windows-static** para instalar la biblioteca estática Boost.Test.
 
-1. Ejecute `vcpkg integrate install` para configurar Visual Studio con la biblioteca e incluir rutas de acceso a los archivos de encabezado y binarios de Boost.
+1. Ejecute **vcpkg integrate install** para configurar Visual Studio con la biblioteca e incluir rutas de acceso a los archivos de encabezado y binarios de Boost.
 
-## <a name="create-a-project-for-your-tests"></a>Crear un proyecto para las pruebas
+## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Incorporación de la plantilla de elemento (versión 15.6 y posteriores de Visual Studio 2017)
 
-> [!NOTE]
-> En la versión 15.5 de Visual Studio 2017, no hay disponible ninguna plantilla de proyecto o de elemento de prueba preconfigurada para Boost.Test. Por lo tanto, tendrá que crear un proyecto de aplicación de consola que contenga las pruebas. Está previsto que en una versión futura de Visual Studio haya plantillas de prueba para Boost.Test.
+1. Para crear un archivo .cpp para las pruebas, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y elija **Agregar nuevo elemento**. 
+ 
+![Plantilla de elemento de Boost.Test](media/boost_test_item_template.png "Plantilla de elemento de Boost.Test")
+
+1. El archivo nuevo contiene un método de prueba de ejemplo. Compile el proyecto para permitir que el **Explorador de pruebas** descubra el método.
+
+La plantilla de elemento usa la variante de Boost.Test de un solo encabezado, pero puede modificar la ruta de acceso #include para usar la variante de biblioteca independiente. Para más información, consulte [Agregar directivas include](#add_include_directives).
+
+## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Creación de un proyecto de prueba (versión 15.5 de Visual Studio 2017)
+
+En la versión 15.5 de Visual Studio 2017, no hay disponible ninguna plantilla de proyecto o de elemento de prueba preconfigurada para Boost.Test. Por lo tanto, tendrá que crear y configurar un proyecto de aplicación de consola que contenga las pruebas. 
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de la solución y elija **Agregar** > **Nuevo proyecto...**
 
 1. En el panel izquierdo, elija **Visual C++** > **Escritorio de Windows** y, después, elija la plantilla **Aplicación de consola Windows**.
 
 1. Asigne un nombre al proyecto y elija **Aceptar**.
+1. Elimine la función `main` en el archivo .cpp. 
 
-## <a name="link-and-configuration-boost-static-library-only"></a>Vínculo y configuración (solo para la biblioteca estática Boost)
+1. Si usa la versión de biblioteca dinámica o de un solo encabezado de Boost.Test, vaya a [Agregar directivas include](#add_include_directives). Si usa la versión de biblioteca estática, debe llevar a cabo cierta configuración adicional:
 
-Configure el proyecto para ejecutar las pruebas de Boost.Test.
+   a. Para editar el archivo de proyecto, primero descárguelo. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y elija **Descargar proyecto**. Después, haga clic con el botón derecho en el nodo del proyecto y elija **Editar <name\>.vcxproj**.
 
-1. Para editar el archivo de proyecto, primero descárguelo. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto y elija **Descargar proyecto**. Después, haga clic con el botón derecho en el nodo del proyecto y elija **Editar <name\>.vcxproj**.
-
-1. Agregue dos líneas al grupo de propiedades **Globales**, tal y como se muestra aquí:
+   b. Agregue dos líneas al grupo de propiedades **Globales**, tal y como se muestra aquí:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -67,19 +76,17 @@ Configure el proyecto para ejecutar las pruebas de Boost.Test.
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-1. Guarde y cierre el archivo \*.vcxproj y, luego, vuelva a cargar el proyecto.
+   c. Guarde y cierre el archivo \*.vcxproj y, luego, vuelva a cargar el proyecto.
 
-1. Para abrir **Páginas de propiedades**, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**.
+   d. Para abrir **Páginas de propiedades**, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**.
 
-1. Expanda **C/C++** > **Generación de código** y, después, seleccione **Biblioteca en tiempo de ejecución**. Seleccione `/MTd` para la biblioteca en tiempo de ejecución estática de depuración y `/MT` para la biblioteca en tiempo de ejecución estática de versión.
+   d. Expanda **C/C++** > **Generación de código** y, después, seleccione **Biblioteca en tiempo de ejecución**. Seleccione **/MTd** para la biblioteca en tiempo de ejecución estática de depuración o **/MT** para la biblioteca en tiempo de ejecución estática de versión.
 
-1. Expanda **Enlazador > Sistema**. Compruebe que **SubSystem** esté establecido como **Consola**.
+   f. Expanda **Enlazador > Sistema**. Compruebe que **SubSystem** esté establecido como **Consola**.
 
-1. Haga clic en **Aceptar** para cerrar las páginas de propiedades.
+   g. Haga clic en **Aceptar** para cerrar las páginas de propiedades.
 
 ## <a name="add-include-directives"></a>Agregar directivas include
-
-1. Si hay una función `main` en su archivo de prueba .cpp, elimínela.
 
 1. En el archivo .cpp de prueba, agregue las directivas `#include` que sean necesarias para que los tipos y funciones del programa estén visibles en el código de prueba. El programa suele estar un nivel por encima en la jerarquía de carpetas. Si escribe `#include "../"`, aparecerá una ventana de IntelliSense en la que podrá seleccionar la ruta de acceso completa al archivo de encabezado.
 

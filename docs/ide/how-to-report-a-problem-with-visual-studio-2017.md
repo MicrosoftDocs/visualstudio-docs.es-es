@@ -1,7 +1,7 @@
 ---
 title: "Cómo notificar un problema con Visual Studio 2017 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/07/2017
+ms.date: 02/19/2018
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,67 +13,65 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 10ec0003bd568f497bd926974935467fdb1b4b75
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
-Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. A continuación le indicamos cómo debe notificarnos un problema para que podamos diagnosticarlo y corregirlo.  
+Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. A continuación le indicamos cómo debe notificarnos un problema para que podamos diagnosticarlo y corregirlo.
 
 ## <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 Si aún no lo ha hecho, inicie sesión Visual Studio a fin de notificar un problema. De este modo, podrá informarnos sobre los problemas que experimente y votar o comentarlos. También puede votar o comentar otros problemas que vea publicados.
 
-1.  En Visual Studio, seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema**.
-2.  Si es necesario, seleccione **Iniciar sesión**; se encuentra en la parte derecha de la herramienta, tal y como se muestra en la siguiente captura de pantalla.
-3.  Siga las instrucciones en pantalla para iniciar sesión.
+1. En Visual Studio, seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema**.
+2. Si no ha iniciado sesión, seleccione **Iniciar sesión**; se encuentra en la parte derecha de la herramienta, tal y como se muestra en la siguiente captura de pantalla.
+3. Siga las instrucciones en pantalla para iniciar sesión.
 
  ![Iniciar sesión para notificar un problema](../ide/media/sign-in-new-ux.png "Iniciar sesión para notificar un problema")  
 
-## <a name="search-and-vote-for-similar-problems"></a>Buscar y votar problemas similares  
-###  <a name="search_and_vote"></a>  
+## Buscar y votar problemas similares <a name="search_and_vote"></a>
 
-1.  Busque el problema y vea si otros usuarios también lo han notificado.
-2.  Si alguien lo ha notificado, "vótelo" para indicárnoslo.  
+1. Busque el problema y vea si otros usuarios también lo han notificado.
+2. Si alguien lo ha notificado, "vótelo" para indicárnoslo.
 
   ![Buscar y votar problemas similares](../ide/media/search-and-vote.png "Buscar y votar problemas similares")
 
-## <a name="report-a-new-problem"></a>Notificar un problema nuevo
-###  <a name="report_new_problem"></a>
-1.  Si no encuentra lo que busca, haga clic en el botón **Informar de un problema nuevo**, situado en la parte inferior de la pantalla.
-2.  Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.
-3.  Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.
+## Informar de un problema nuevo<a name="report_new_problem"></a>
+1.- Si no encuentra lo que busca, haga clic en el botón **Informar de un problema nuevo**, situado en la parte inferior de la pantalla.
+2. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.
+3. Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.
 
   ![Informar de un problema nuevo](../ide/media/report-new-problem.png "Informar de un problema nuevo")
 
-## <a name="provide-a-screenshot-and-attachments-optional"></a>Proporcionar una captura de pantalla y datos adjuntos (opcional)
-###  <a name="provide_screenshots"></a>
- Elija enviar la pantalla actual a Microsoft. Puede adjuntar capturas de pantalla adicionales u otros archivos. Para ello, haga clic en el botón **Adjuntar archivos adicionales** .  
+## Proporcionar una captura de pantalla y datos adjuntos (opcional) <a name="provide_screenshots"></a>
+ Elija enviar la pantalla actual a Microsoft. Puede adjuntar capturas de pantalla adicionales u otros archivos. Para ello, haga clic en el botón **Adjuntar archivos adicionales** .
 
-## <a name="provide-a-trace-and-heap-dump-optional"></a>Proporcione un volcado de seguimiento y montón (opcional)  
-###  <a name="provide_a_trace_and_heap_dump"></a>  
+## Proporcionar un volcado de seguimiento y montón (opcional) <a name="provide_a_trace_and_heap_dump"></a>
 
 Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a diagnosticar problemas. Apreciamos mucho que use la herramienta **Notificar un problema** para grabar los pasos de reproducción y enviar los datos a Microsoft.  A continuación le mostramos cómo hacerlo.
 
-1.  Haga clic en la pestaña **Grabar**.
-2.  Haga clic en **Iniciar grabación**. Proporcione permiso para ejecutar la herramienta.
+1. Haga clic en la pestaña **Grabar**.
+2. Haga clic en **Iniciar grabación**. Proporcione permiso para ejecutar la herramienta.
 
   ![Haga clic en Iniciar grabación para proporcionar un archivo de seguimiento y de volcado de memoria del montón ](../ide/media/record-dialog-box.png "Proporcionar archivos de seguimiento y de volcado de memoria del montón")
 
-3.  Cuando aparezca la herramienta **Grabación de acciones de usuario**, realice los pasos que reproducen el problema.
-4.  Cuando haya terminado, haga clic en **Detener grabación**.
-5.  Espere unos minutos mientras Visual Studio recopila y empaqueta la información que ha grabado.
+3. Cuando aparezca la herramienta **Grabación de acciones de usuario**, realice los pasos que reproducen el problema.
+4. Cuando haya terminado, haga clic en **Detener grabación**.
+5. Espere unos minutos mientras Visual Studio recopila y empaqueta la información que ha grabado.
 
-## <a name="submit-the-report"></a>Enviar el informe  
-###  <a name="submit_the_report"></a>  
- Haga clic en el botón **Enviar** para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. (Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción para el informe).  
+## Enviar el informe <a name="submit_the_report"></a>
+ Haga clic en el botón **Enviar** para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. (Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción para el informe).
 
-## <a name="alternate-reporting"></a>Informes alternativos
-###  <a name="alternate_reporting"></a>  
+## Informes alternativos <a name="alternate_reporting"></a>
  Si no puede completar la instalación de Visual Studio o no puede acceder a la herramienta de comentarios dentro de Visual Studio, esta herramienta también está disponible en el Instalador de Visual Studio. Haga clic en el icono de comentarios que se encuentra en la esquina superior derecha del Instalador de Visual Studio y, luego, siga los pasos descritos en este artículo.
 
  ![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios en el Instalador de Visual Studio para abrir la herramienta de comentarios](../install/media/report-a-problem.png)
 
-## <a name="see-also"></a>Vea también  
- [Hable con nosotros](../ide/talk-to-us.md)
+ >[!Note]
+ >También puede informar un problema directamente a la comunidad de desarrolladores de Visual Studio. Para hacerlo, visite [https://developercommunity.visualstudio.com/](https://developercommunity.visualstudio.com/).
+
+## <a name="see-also"></a>Vea también
+* [Hable con nosotros](../ide/talk-to-us.md)
+* [Visite la comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/)

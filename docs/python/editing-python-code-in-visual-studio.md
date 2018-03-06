@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 375508647c7a192b7b3869c4faaf80b8df2d0a4a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>Edición de código de Python
 
@@ -39,7 +39,7 @@ También puede usar el Examinador de objetos de Visual Studio (**Ver > Otras ven
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Para mejorar el rendimiento, IntelliSense depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del Explorador de soluciones) en la pestaña **IntelliSense** (vea [Entornos de Python](managing-python-environments-in-visual-studio.md)). 
+IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Para mejorar el rendimiento, IntelliSense depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del Explorador de soluciones) en la pestaña **IntelliSense** (consulte [Referencia de ventana Python Environments](python-environments-window-tab-reference.md#intellisense-tab)).
 
 ### <a name="completions"></a>Finalizaciones
 

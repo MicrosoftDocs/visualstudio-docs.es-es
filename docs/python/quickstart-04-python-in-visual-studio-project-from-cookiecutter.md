@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67cf109b0964bcb9eca104ec138f968e273111e9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4b9b7a51436eeeb67634714216f9a583de679a07
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Inicio rápido: crear un proyecto a partir de una plantilla de Cookiecutter
 
@@ -55,6 +55,6 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 ## <a name="see-also"></a>Vea también
 
 - [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md)
-- [Creación de un entorno para un intérprete de Python existente](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment) (Identificación manual de un intérprete de Python existente).
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md).
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations).

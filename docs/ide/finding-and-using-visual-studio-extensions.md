@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Búsqueda y uso de extensiones de Visual Studio
 
@@ -79,16 +79,16 @@ Cuando aparezcan estas notificaciones, puede ignorarlas o realizar una de las ac
 
 - Pulse **Deshabilitar esta extensión**. Visual Studio deshabilita la extensión y le permite conocer si necesita reiniciar su sistema para que la deshabilitación surta efecto. Puede volver a habilitar la extensión en el cuadro de diálogo **Extensiones y actualizaciones** si quiere.
 
-- Elija **No volver a mostrar este mensaje**. 
-  - Si la notificación se refiere a un bloqueo en una sesión anterior, Visual Studio ya no mostrará una notificación cuando se produzca un bloqueo asociado a esta extensión. Visual Studio seguirá mostrando notificaciones cuando la falta de respuesta pueda estar asociada con esta extensión, o para los bloqueos o faltas de respuesta que puedan estar asociados a otras extensiones. 
-  - Si la notificación se refiere a una falta de respuesta, el IDE ya no mostrará una notificación cuando esa está extensión esté asociada a la falta de respuesta. Visual Studio seguirá mostrando notificaciones relacionadas con los bloqueos para esta extensión, y notificaciones relacionadas con bloqueos y faltas de respuesta para otras extensiones. 
+- Elija **No volver a mostrar este mensaje**.
+  - Si la notificación se refiere a un bloqueo en una sesión anterior, Visual Studio ya no mostrará una notificación cuando se produzca un bloqueo asociado a esta extensión. Visual Studio seguirá mostrando notificaciones cuando la falta de respuesta pueda estar asociada con esta extensión, o para los bloqueos o faltas de respuesta que puedan estar asociados a otras extensiones.
+  - Si la notificación se refiere a una falta de respuesta, el IDE ya no mostrará una notificación cuando esa está extensión esté asociada a la falta de respuesta. Visual Studio seguirá mostrando notificaciones relacionadas con los bloqueos para esta extensión, y notificaciones relacionadas con bloqueos y faltas de respuesta para otras extensiones.
 
 - Elija **Más información** para llegar a esta página.
 
 - Pulse el botón **X** al final de la notificación para descartarla. Aparecerá una nueva notificación para las instancias futuras de la extensión que estén asociadas con un bloqueo o falta de respuesta de la interfaz de usuario.
 
 > [!NOTE]
-> Una notificación de bloqueo o falta de respuesta de la interfaz de usuario significa únicamente que uno de los módulos de la extensión estaba en la pila cuando la interfaz de usuario dejó de responder o cuando se produjo el bloqueo. No necesariamente significa que la propia extensión sea la causa. Es posible que la extensión llamara a código que forma parte de Visual Studio, lo que a su vez dio lugar a una falta de respuesta de la interfaz de usuario o a un bloqueo. Sin embargo, la notificación puede seguir siendo útil si el escenario que ha provocado la falta de respuesta de la interfaz de usuario el bloqueo no es importante para usted. En este caso, deshabilitar la extensión evita el mismo bloqueo o falta de respuesta de la interfaz de usuario en el futuro sin afectar a su productividad. 
+> Una notificación de bloqueo o falta de respuesta de la interfaz de usuario significa únicamente que uno de los módulos de la extensión estaba en la pila cuando la interfaz de usuario dejó de responder o cuando se produjo el bloqueo. No necesariamente significa que la propia extensión sea la causa. Es posible que la extensión llamara a código que forma parte de Visual Studio, lo que a su vez dio lugar a una falta de respuesta de la interfaz de usuario o a un bloqueo. Sin embargo, la notificación puede seguir siendo útil si el escenario que ha provocado la falta de respuesta de la interfaz de usuario el bloqueo no es importante para usted. En este caso, deshabilitar la extensión evita el mismo bloqueo o falta de respuesta de la interfaz de usuario en el futuro sin afectar a su productividad.
 
 ## <a name="sample-master-copies-and-working-copies"></a>Copias maestras y copias de trabajo de muestra
 

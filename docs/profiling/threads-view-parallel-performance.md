@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.threadblocking
-helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
+f1_keywords:
+- vs.performance.view.threadblocking
+helpviewer_keywords:
+- Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d2245ae466948122cbf39225043125b4feec8579
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
-Vista de subprocesos es la vista más detallada y con más características del visualizador de simultaneidad. Con esta vista puede identificar si los subprocesos se están ejecutando o se bloquearon por causa de la sincronización, E/S o algún otro motivo.  
+**Vista de subprocesos** es la vista más detallada y llena de características del visualizador de simultaneidad (elija **Analizar** > **Analizador de simultaneidad** para iniciarlo). Con esta vista puede identificar si los subprocesos se están ejecutando o se bloquearon por causa de la sincronización, E/S o algún otro motivo.  
   
  Durante el análisis de perfiles, el visualizador de simultaneidad examina todos los eventos de cambio de contexto de sistema operativo para cada subproceso de la aplicación. Los cambios de contexto pueden producirse por varias razones, como las siguientes:  
   

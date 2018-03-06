@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00b9d59ad1736d212dcd9fff3c097e81e0ad2a60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Inicio rápido: usar Visual Studio para crear su primera aplicación web Python
 
@@ -71,7 +71,7 @@ Pero, en este inicio rápido, se usa la biblioteca de Falcon para experimentar e
 
 Para obtener más información sobre Falcon, visite [falconframework.org](https://falconframework.org/).
 
-Tenga en cuenta que en lugar de instalar las bibliotecas en el entorno global, los desarrolladores suelen crear un "entorno virtual" en la que se instalan las bibliotecas de un proyecto específico. Muchas plantillas de proyecto de Python en Visual Studio incluyen un archivo `requirements.txt` en el que se enumeran las bibliotecas de las que depende la plantilla. La creación de un proyecto a partir de una de esas plantillas activa la creación de un entorno virtual en el que se instalan las bibliotecas. Para más información, vea [Entornos de Python: entornos virtuales](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments).
+Tenga en cuenta que en lugar de instalar las bibliotecas en el entorno global, los desarrolladores suelen crear un "entorno virtual" en la que se instalan las bibliotecas de un proyecto específico. Muchas plantillas de proyecto de Python en Visual Studio incluyen un archivo `requirements.txt` en el que se enumeran las bibliotecas de las que depende la plantilla. La creación de un proyecto a partir de una de esas plantillas activa la creación de un entorno virtual en el que se instalan las bibliotecas. Para más información, consulte [Uso de los entornos virtuales](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Agregar un archivo de código
 

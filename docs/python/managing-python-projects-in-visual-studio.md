@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-projects"></a>Proyectos de Python
 
@@ -54,7 +54,7 @@ Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en n
 > [!Tip]
 > Si quita de un proyecto el archivo de inicio seleccionado y no selecciona uno nuevo, cuando ejecute el proyecto aparece una ventana de salida de Python que desaparecerá casi de inmediato. Si se produce este comportamiento, compruebe que tiene un archivo de inicio asignado. Además, para mantener abierta la ventana de salida en estos casos, haga clic con el botón derecho en el proyecto, seleccione **Propiedades**, seleccione la pestaña **Depurar** y, después, agregue `-i` al campo **Argumentos del intérprete**. Este argumento hace que el intérprete entre en modo interactivo una vez que ha finalizado un programa, con lo que la ventana se mantendrá abierta hasta que pulse Ctrl+Z, Entrar para salir.
 
-Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee. Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que quiera y seleccione **Activar entorno** como se muestra a continuación. Para obtener más información, vea [Entornos de Python ](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project).
+Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee. Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que quiera y seleccione **Activar entorno** como se muestra a continuación. Para obtener más información, consulte [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
 
 ![Activación de un entorno para un proyecto de Python](media/projects-activate-environment.png)
 
@@ -71,7 +71,7 @@ En la tabla siguiente se muestra un resumen de las plantillas disponibles en Vis
 | Plantilla | Description |
 | --- | --- |
 | [Desde código de Python existente](#creating-a-project-from-existing-files) | Crea un proyecto de Visual Studio a partir de código Python existente en una estructura de carpetas.  |
-| Python Application (Aplicación de Python) | Estructura básica de proyecto para una nueva aplicación de Python con un solo archivo de origen vacío. De forma predeterminada, el proyecto se ejecuta en el intérprete de la consola del entorno global predeterminado, que se puede cambiar [asignando un entorno diferente](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
+| Python Application (Aplicación de Python) | Estructura básica de proyecto para una nueva aplicación de Python con un solo archivo de origen vacío. De forma predeterminada, el proyecto se ejecuta en el intérprete de la consola del entorno global predeterminado, que se puede cambiar [asignando un entorno diferente](selecting-a-python-environment-for-a-project.md). |
 | [Servicio en la nube de Azure](python-azure-cloud-service-project-template.md) | Proyecto para un servicio en la nube de Azure escrito en Python. |
 | [Proyectos web](python-web-application-project-templates.md) | Proyectos para servidores web basados en distintos marcos, incluidos Bottle, Django, Flask y Flask/Jade. |
 | IronPython Application (Aplicación de IronPython) | Similar a la plantilla Python Application (Aplicación de Python), pero usa IronPython de forma predeterminada habilitando la interoperabilidad .NET y la depuración en modo mixto con lenguajes de. NET. |
@@ -136,7 +136,7 @@ Una referencia a un archivo `.pyd` habilita IntelliSense para el módulo generad
 
 Si en cualquier momento el módulo de extensión se actualiza en el disco, Visual Studio vuelve a analizarlo en segundo plano. Esta acción no afecta al comportamiento en tiempo de ejecución, pero algunas finalizaciones no están disponibles hasta que se complete el análisis.
 
-Puede que también necesite agregar una [ruta de acceso de búsqueda](managing-python-environments-in-visual-studio.md#search-paths) a la carpeta que contiene el módulo.
+Puede que también necesite agregar una [ruta de acceso de búsqueda](search-paths.md) a la carpeta que contiene el módulo.
 
 ### <a name="net-projects"></a>Proyectos de .NET
 

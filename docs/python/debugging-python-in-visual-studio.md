@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="debugging-your-python-code"></a>Depuración del código de Python
 
@@ -54,7 +54,7 @@ El flujo de trabajo de depuración básica conlleva configurar puntos de interru
 Puede iniciar una sesión de depuración con el comando **Depurar > Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla F5. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el Explorador de soluciones) con el entorno del proyecto activo y los argumentos de línea de comandos o las rutas de búsqueda que se han especificado en las propiedades del proyecto (vea [Opciones de depuración de proyectos](#project-debugging-options)). Pero si por alguna razón no tiene un archivo de inicio configurado, una ventana de salida de Python aparece brevemente y luego desaparece. En este caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
 
 > [!Note]
-> El depurador siempre se inicia con el entorno de Python activo para el proyecto. Para cambiar de entorno, active otro distinto como se describe en [Entornos de Python](managing-python-environments-in-visual-studio.md).
+> El depurador siempre se inicia con el entorno de Python activo para el proyecto. Para cambiar el entorno, active otro distinto tal como se describe en el tema sobre cómo [seleccionar un entorno de Python para un proyecto](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Puntos de interrupción
 

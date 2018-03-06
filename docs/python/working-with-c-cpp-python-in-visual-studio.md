@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31d36ede3293a72db06e9919545dafb779cee252
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -219,7 +219,7 @@ Para convertir el DLL de C++ en una extensión para Python, debe modificar prime
 1. Establezca la configuración de destino en "Versión" y compile el proyecto de C++ de nuevo para comprobar el código. Si se producen errores, realice las siguientes comprobaciones:
     - No se puede encontrar Python.h: compruebe que la ruta de acceso de **C/C++ > General > Directorios de inclusión adicionales** de las propiedades del proyecto apunta a la carpeta `include` de instalación de Python.
     - No se pueden encontrar las bibliotecas de Python: compruebe que la ruta de acceso de **Enlazador > General > Directorios de bibliotecas adicionales** de las propiedades del proyecto apunta a la carpeta `libs` de instalación de Python.
-    - Errores del enlazador relacionados con la arquitectura de destino: cambie la arquitectura del proyecto del destino de C++ para que coincida con la de la instalación de Python.
+    - Errores del enlazador relacionados con la arquitectura de destino: cambie la arquitectura del proyecto del destino de C++ para que coincida con la de la instalación de Python. Por ejemplo, si tiene como destino x64 con el proyecto de C++, pero la instalación de Python es x86, cambie el proyecto de C++ para que tenga como destino x86.
 
 ## <a name="test-the-code-and-compare-the-results"></a>Probar el código y comparar los resultados
 
