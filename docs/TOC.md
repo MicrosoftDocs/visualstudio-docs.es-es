@@ -33,6 +33,8 @@
 #### [Controlar las actualizaciones a implementaciones de Visual Studio](install/controlling-updates-to-visual-studio-deployments.md)
 ### Administración de instalaciones
 #### [Herramientas para detectar y administrar instancias de Visual Studio](install/tools-for-managing-visual-studio-instances.md)
+### Administrar suscripciones
+#### [Suscripciones de Visual Studio: Información general del administrador](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Guía del administrador del Visor de Ayuda](ide/help-viewer-administrator-guide.md)
 #### [Argumentos de línea de comandos para Help Content Manager](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Invalidaciones de Help Content Manager](ide/help-content-manager-overrides.md)
@@ -46,7 +48,7 @@
 # Guías de inicio rápido
 ## [Orientación de Visual Studio](ide/quickstart-ide-orientation.md)
 ## [Proyectos y soluciones](ide/quickstart-projects-solutions.md)
-## [Escribir código en el editor](ide/quickstart-editor.md)
+## [Usar el editor](ide/quickstart-editor.md)
 ## [Personalización del tema y los colores de texto](ide/quickstart-personalize-the-ide.md)
 ## [C++: Creación de una aplicación de consola](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python: Creación de una aplicación web](ide/quickstart-python.md)
@@ -98,7 +100,7 @@
 #### [Compatibilidad de 64 bits del IDE de Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Desarrollo sin proyectos o soluciones ("Abrir carpeta")](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [Personalización de las tareas de compilación y depuración](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [Escribir código en el editor](ide/writing-code-in-the-code-and-text-editor.md)
+### [Usar el editor](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Buscar y reemplazar texto](ide/finding-and-replacing-text.md)
 ##### [Uso de expresiones regulares](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Cuadro Buscar/Comando](ide/find-command-box.md)
