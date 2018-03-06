@@ -20,11 +20,11 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0503abb3d62e9fd61149b884a7b58a685fbc62c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a2335c3697be9ef3e2d674ac37047ddd3de242d
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-version-information"></a>Información de versión de JavaScript
 Las distintas versiones de JavaScript admiten conjuntos diferentes de elementos de JavaScript. Las aplicaciones de[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] admiten un conjunto de características ligeramente diferente al de Internet Explorer.  
@@ -37,7 +37,7 @@ Las distintas versiones de JavaScript admiten conjuntos diferentes de elementos 
  En la tabla siguiente se muestran los modos de documento de Internet Explorer (y las aplicaciones de la Tienda que representan [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] y [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)]) que admiten determinados elementos de lenguaje. Los modos de documento que admiten un elemento dado se muestran con la letra **Y**("Yes", Sí) y los que no lo admiten se muestran con la letra **N**.  
   
 > [!IMPORTANT]
->  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (explorador Edge en Windows 10) no incluye compatibilidad para modos de documento heredados. Las aplicaciones de [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] son compatibles a partir de Windows Phone 8.1. Características experimentales (acerca de: flags) se indican mediante "Exp".  
+>  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] (Explorador de edge en Windows 10) no incluye compatibilidad para modos de documento heredados. Las aplicaciones de [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] son compatibles a partir de Windows Phone 8.1. Características experimentales (acerca de: flags) se indican mediante "Exp".  
   
  La tabla contiene un resumen informativo. Para más información, vea la documentación del elemento del lenguaje.  
   
@@ -262,8 +262,8 @@ Las distintas versiones de JavaScript admiten conjuntos diferentes de elementos 
 |[message (Propiedad)](../../javascript/reference/message-property-error-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[min (Función)](../../javascript/reference/math-min-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[MIN_VALUE (Constante)](../../javascript/reference/number-constants-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[Operador de asignación y módulo (%=)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
-|[Operador de módulo (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[Operador de asignación de resto (% =)](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
+|[Operador de resto (%)](../../javascript/reference/modulus-operator-decrementjavascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[moveFirst (Método)](../../javascript/reference/movefirst-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[moveNext (Método)](../../javascript/reference/movenext-method-enumerator-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[multiline (Propiedad)](../../javascript/reference/multiline-property-regular-expression-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
@@ -412,7 +412,7 @@ Las distintas versiones de JavaScript admiten conjuntos diferentes de elementos 
 |[write (Función)](../../javascript/reference/debug-write-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
 |[writeln (Función)](../../javascript/reference/debug-writeln-function-javascript.md)|Y|Y|Y|Y|Y|Y|Y|  
   
- \*Admite objetos DOM, pero los objetos no definidos por el usuario. Se pueden especificar los atributos `enumerable` y `configurable` , aunque no se usan.  
+ \* Admite objetos DOM, pero los objetos no definidos por el usuario. Se pueden especificar los atributos `enumerable` y `configurable` , aunque no se usan.  
   
 ## <a name="see-also"></a>Vea también  
  [Definir la compatibilidad de documentos](http://go.microsoft.com/fwlink/?LinkId=208537)
