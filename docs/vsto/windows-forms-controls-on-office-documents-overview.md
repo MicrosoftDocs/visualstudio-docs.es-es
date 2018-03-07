@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -30,7 +31,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 898d0325b352f3ea8982dc68cf5a99a07181a31c
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -40,12 +42,12 @@ ms.lasthandoff: 01/10/2018
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Información general sobre controles de formularios Windows Forms en documentos de Office
   Los controles de Windows Forms son objetos con los que pueden interactuar los usuarios para escribir o manipular datos. En proyectos de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede agregar controles de Windows Forms al documento o al libro en su proyecto en tiempo de ejecución, o agregar mediante programación estos controles en tiempo de diseño. Puede agregar estos controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución en un complemento VSTO para Excel o Word.  
   
- Para obtener más información, consulta [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+ Para obtener más información, consulta [Cómo: Agregar controles de Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="using-windows-forms-controls"></a>Uso de controles de formularios de Windows Forms  
- Puede agregar controles de Windows Forms a documentos y a elementos de interfaz de usuario (IU) personalizables, incluidos paneles de acciones, paneles de tareas personalizados y formularios de Windows Forms. Los controles de formularios de Windows Forms tienen generalmente el mismo comportamiento en documentos que en estos otros elementos de interfaz de usuario, pero existen algunas diferencias. Para obtener más información, vea [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
+ Puede agregar controles de Windows Forms a documentos y a elementos de interfaz de usuario (IU) personalizables, incluidos paneles de acciones, paneles de tareas personalizados y formularios de Windows Forms. Los controles de formularios de Windows Forms tienen generalmente el mismo comportamiento en documentos que en estos otros elementos de interfaz de usuario, pero existen algunas diferencias. Para obtener más información, vea [Limitaciones de los controles de formularios Windows Forms en los documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
   
  La decisión de si desea agregar controles de formularios Windows Forms a un documento o algún otro elemento de interfaz de usuario depende de varios factores. Al diseñar la interfaz de usuario de la solución, considere los usos de los controles de formularios Windows Forms, como se describe en la tabla siguiente.  
   
@@ -75,7 +77,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="adding-windows-forms-controls-programmatically"></a>Agregar controles de Windows Forms mediante programación  
  Puede agregar controles de Windows Forms a documentos de Word y hojas de cálculo de Excel en tiempo de ejecución. El [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] proporciona métodos auxiliares para agregar los controles de formularios de Windows Forms más comunes. Estos métodos auxiliares permiten agregar rápidamente controles al documento de Office y obtener acceso a la funcionalidad combinada de control de formularios de Windows Forms y la funcionalidad relacionada con Office de estos controles.  
   
- Para obtener más información, consulta [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Para obtener más información, consulta [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="using-windows-forms-controls-in-document-level-projects"></a>Utilizar controles de formularios de Windows Forms en proyectos de nivel de documento  
  Algunos aspectos del uso de controles de formularios de Windows Forms en documentos son únicos de los proyectos de nivel de documento, que le permiten diseñar la interfaz de usuario del documento mediante el Diseñador de Visual Studio.  
@@ -116,7 +118,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="preventing-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Impedir que los datos antiguos aparezcan en los libros de Excel durante la carga  
  Al agregar controles de formularios de Windows Forms a documentos u hojas de cálculo en tiempo de diseño, los controles permanecen en el documento cuando el usuario cierra el documento. Los controles agregados en tiempo de diseño también se denominan *controles estáticos*.  
   
- Cuando se abre un libro de Excel que contiene controles estáticos, el libro presenta un mapa de bits del control en un control ActiveX hasta que el código de personalización se ejecute y cargue el control real. Excel crea este mapa de bits y lo almacena en el libro cada vez que se guarde el libro. El mapa de bits muestra el control tal como aparecía la última vez que se guardó el libro, incluidos los datos que estaba mostrando el control. Para obtener más información sobre el control ActiveX que contiene controles de formularios de Windows Forms y mapas de bits, vea [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
+ Cuando se abre un libro de Excel que contiene controles estáticos, el libro presenta un mapa de bits del control en un control ActiveX hasta que el código de personalización se ejecute y cargue el control real. Excel crea este mapa de bits y lo almacena en el libro cada vez que se guarde el libro. El mapa de bits muestra el control tal como aparecía la última vez que se guardó el libro, incluidos los datos que estaba mostrando el control. Para obtener más información sobre el control ActiveX que contiene controles de formularios de Windows Forms y mapas de bits, vea [Limitaciones de los controles de formularios Windows Forms en los documentos de Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
   
  En ciertas condiciones, el código no se carga y solo se muestra el mapa de bits, por ejemplo, cuando el usuario abre el libro en modo de diseño. Además, si el usuario abre el libro en un equipo que no tenga [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] instalado, no se puede ejecutar la personalización para cargar los controles y, por tanto, solo está visible el mapa de bits del control. Siempre debe quitar la información personal de los controles en los libros antes de guardar el libro y enviarlo a otro usuario para asegurarse de que su información personal no se revele accidentalmente.  
   
@@ -138,7 +140,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Para agregar el control como una forma flotante, use una sobrecarga que acepte las coordenadas superiores e izquierdas del control.  
   
- Para obtener más información, consulta [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Para obtener más información, consulta [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Si abre una plantilla de Word en el diseñador de Visual Studio, los controles no alineados en la plantilla podrían no verse, porque Visual Studio abre la plantilla en vista **Normal** . Para ver los controles, cambie la vista a **Diseño de impresión**.  
   

@@ -9,13 +9,14 @@ ms.date: 11/13/2017
 ms.topic: article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 85513f908421f4eee5411b5d394b378e66fa31fd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e182a000dc9c8aaeb721b81036f878430260618
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="installation"></a>Instalación
 
@@ -23,11 +24,11 @@ Visual Studio Tools para AI se puede instalar en sistemas operativos Windows de 
 
 ## <a name="installing-visual-studio-tools-for-ai"></a>Instalar Visual Studio Tools para AI
 
-Esta extensión funciona con [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015, 2017, Community Edition o superior. 
+Esta extensión funciona con [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015, 2017, Community Edition o superior.
 
-Para instalarla, descárguela desde [Visual Studio MarketPlace](http://aka.ms/vstoolsforai) o desde el propio Visual Studio. 
+Para instalarla, descárguela desde [Visual Studio MarketPlace](http://aka.ms/vstoolsforai) o desde el propio Visual Studio.
 
-1. **Herramientas**> **Extensiones y actualizaciones** 
+1. **Herramientas**> **Extensiones y actualizaciones**
 
 ![instalar CUDA en Windows](media\installation\extensions.png)
 
@@ -77,7 +78,7 @@ Para instalar cuDNN
 > No obstante, puede tener varias versiones de cuDNN instaladas a la vez.
 
 
-### <a name="python"></a>Python
+### <a name="python"></a>Plantillas de
 
 Python ha sido el lenguaje de programación principal para las aplicaciones de aprendizaje profundo.
 Se necesita la distribución de Python de **64 bits** y se recomienda [Python 3.5.4](https://www.python.org/downloads/release/python-354/) para lograr la mejor compatibilidad posible.

@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcdad47ebb8ecae9d943acd8e0db60c20ef8378
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 152b5f1c0bc3129078effb07cbe5aa36a4591f9d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementación de una interfaz en Visual Studio
 
@@ -46,7 +46,7 @@ Esta generación de código se aplica a:
 1. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl +.** para activar el menú **Acciones rápidas y refactorizaciones**.
+     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
@@ -77,5 +77,5 @@ Esta generación de código se aplica a:
 
 ## <a name="see-also"></a>Vea también
 
-[Generación de código](../code-generation-in-visual-studio.md)  
-[Vista previa de cambios](../../ide/preview-changes.md)
+- [Generación de código](../code-generation-in-visual-studio.md)
+- [Vista previa de cambios](../../ide/preview-changes.md)

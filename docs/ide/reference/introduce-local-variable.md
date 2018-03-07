@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 997220d3b1a7305f84f61ee5fd4c205d1157f1b2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a100cd5dfef6dcb36f6ce845000db31d82173a2d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introducción de una variable local en Visual Basic
 
@@ -46,7 +46,7 @@ Esta generación de código se aplica a:
 1. A continuación, realice alguno de los siguientes procedimientos:
 
    - **Teclado**
-     - Presione **Ctrl +.** para activar el menú **Acciones rápidas y refactorizaciones**.
+     - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
      - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
@@ -73,5 +73,5 @@ Esta generación de código se aplica a:
 
 ## <a name="see-also"></a>Vea también
 
-[Generación de código](../code-generation-in-visual-studio.md)  
-[Vista previa de cambios](../../ide/preview-changes.md)
+- [Generación de código](../code-generation-in-visual-studio.md)
+- [Vista previa de cambios](../../ide/preview-changes.md)

@@ -9,38 +9,39 @@ ms.date: 11/13/2017
 ms.topic: article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 997a7c57ad504c90c62299b552df9dae19ee10f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 69317a662d6407cf4b18f44dcba37e5163b7662d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools para IA
 
 Visual Studio Tools para AI es una extensión que sirve para compilar, probar e implementar soluciones de AI/aprendizaje profundo. Se integra perfectamente con Azure Machine Learning para proporcionar capacidades de experimentación muy eficaces como, entre otras, el envío transparente de trabajos de preparación de datos y entrenamiento de modelos a diferentes destinos de procesamiento. Además, admite métricas personalizadas y el seguimiento del historial de ejecución, lo que da cabida a la auditoría y reproducibilidad de ciencia de datos. La colaboración destinada a empresas permite trabajar en un proyecto con más gente sin ningún tipo de riesgo.
 
-Adéntrese hoy mismo en el mundo del aprendizaje profundo con [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org) o cualquier otro marco de aprendizaje profundo.  
- 
-## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Desarrollar, depurar e implementar modelos de aprendizaje profundo y soluciones de AI  
-Use las características de productividad de Visual Studio para impulsar sin dilación la innovación de AI. Use características de editor de código integradas como el resaltado de sintaxis, IntelliSense y el formato automático de texto. La aplicación de aprendizaje profundo se puede probar de forma interactiva en el entorno local por medio de la depuración paso a paso de los modelos y las variables locales. 
+Adéntrese hoy mismo en el mundo del aprendizaje profundo con [Microsoft Cognitive Toolkit (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org) o cualquier otro marco de aprendizaje profundo.
+
+## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Desarrollar, depurar e implementar modelos de aprendizaje profundo y soluciones de AI
+Use las características de productividad de Visual Studio para impulsar sin dilación la innovación de AI. Use características de editor de código integradas como el resaltado de sintaxis, IntelliSense y el formato automático de texto. La aplicación de aprendizaje profundo se puede probar de forma interactiva en el entorno local por medio de la depuración paso a paso de los modelos y las variables locales.
 
 ![ide de aprendizaje profundo](media\about\ide.png)
 
-## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Empezar a usar rápidamente la galería de ejemplos de Azure Machine Learning  
-Visual Studio Tools para AI se integra con Azure Machine Learning para que sea muy fácil explorar una galería de experimentos de ejemplo con CNTK, TensorFlow, MMLSpark y mucho más. 
+## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Empezar a usar rápidamente la galería de ejemplos de Azure Machine Learning
+Visual Studio Tools para AI se integra con Azure Machine Learning para que sea muy fácil explorar una galería de experimentos de ejemplo con CNTK, TensorFlow, MMLSpark y mucho más.
 
 ![explorador de ejemplos](media\about\gallery.png)
 
 [Más información sobre cómo crear proyectos a partir de la galería de ejemplos](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Escalar horizontalmente el entrenamiento de modelos de aprendizaje profundo y/o la inferencia en la nube
-Esta extensión hace que sea muy sencillo entrenar modelos en el equipo local o enviar trabajos a la nube gracias a la integración con Azure Machine Learning. Puede enviar trabajos a diferentes destinos de procesamiento como, entre otros muchos, clústeres de Spark o máquinas virtuales de GPU de Azure.  
- 
+Esta extensión hace que sea muy sencillo entrenar modelos en el equipo local o enviar trabajos a la nube gracias a la integración con Azure Machine Learning. Puede enviar trabajos a diferentes destinos de procesamiento como, entre otros muchos, clústeres de Spark o máquinas virtuales de GPU de Azure.
+
 ![enviar trabajo](media\about\submitjobs.png)
 
-[Más información sobre cómo entrenar modelos en la nube](tensorflow-vm.md) 
+[Más información sobre cómo entrenar modelos en la nube](tensorflow-vm.md)
 
 ## <a name="supported-operating-systems"></a>Sistemas operativos admitidos
 Actualmente, esta extensión admite sistemas operativos Windows de 64 bits.
