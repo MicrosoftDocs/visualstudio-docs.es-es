@@ -1,13 +1,14 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: "Documentación de Visual Studio | Microsoft Docs"
 description: "Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas."
-ms.openlocfilehash: 3875594d51eeb54322eed2fbe423f045c6aa1d4a
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.topic: hub-page
+ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -405,7 +406,7 @@ ms.lasthandoff: 12/15/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                                    <h3>Python</h3>
+                                                    <h3>Plantillas de</h3>
                                                     <p>Un lenguaje de programación orientado a objetos dinámico y de alto nivel que a menudo se usa para el desarrollo rápido de aplicaciones.</p>
                                                 </a>
                                             </div>
@@ -497,7 +498,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Python</h3>
+                                                    <h3>Plantillas de</h3>
                                                     <p>Desarrollo interactivo para aplicaciones de Python, con marcos familiares como Django y Flask.</p>
                                                 </div>
                                             </div>

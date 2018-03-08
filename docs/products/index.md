@@ -1,14 +1,15 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: "Documentación de Visual Studio | Microsoft Docs"
 description: "Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas."
-searchScope: 
-ms.openlocfilehash: 38ea7dc20884fe5d70cbfa483805364e43a62801
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.topic: landing-page
+searchScope: []
+ms.openlocfilehash: 910dc9db4ebdd1e2a5c9d5743b471a95ab15d407
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -32,7 +33,7 @@ ms.lasthandoff: 01/13/2018
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>IDE de Visual Studio</h3>
-                                                    <p>Compile aplicaciones y juegos con Windows para llegar a todos los dispositivos con Android, iOS, Windows, en la Web o en la nube.</p>
+                                                    <p>Compile aplicaciones y juegos con Windows para llegara todos los dispositivos con Android, iOS, Windows, en la Web o en la nube.</p>
                                                 </div>
                                             </div>
                                         </div>
