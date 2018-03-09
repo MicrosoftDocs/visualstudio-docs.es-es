@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Ver las instantáneas con devolución de paso de IntelliTrace en Visual Studio
 
@@ -107,5 +107,7 @@ El impacto en el rendimiento general de ejecución paso a paso depende de la apl
 
     Solución:
     * Desactive todas las instantáneas de finalizar la sesión de depuración. 
+
+* Al depurar una aplicación cuyo proceso tiene un gran número de regiones de memoria exclusiva, como una aplicación que carga un gran número de archivos DLL, ejecución paso a paso el rendimiento con las instantáneas habilitadas puede verse afectado. Este problema se corregirá en una versión futura de Windows. Si experimenta este problema, llegar a nosotros en stepback@microsoft.com. 
 
 * Al guardar un archivo con **Depurar > IntelliTrace > sesión de IntelliTrace guardar** en el modo de eventos y las instantáneas, los datos adicionales que se capturan de instantáneas no están disponibles en el archivo. iTrace. En los eventos de punto de interrupción y examinar, verá la misma información como si se ha guardado el archivo en modo de solo eventos de IntelliTrace. 

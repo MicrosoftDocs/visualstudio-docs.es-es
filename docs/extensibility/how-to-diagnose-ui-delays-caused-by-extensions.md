@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9dede2f30a9d91e94bda3183deaae337e4c556dc
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Cómo: diagnosticar la interfaz de usuario retrasos causados por las extensiones
 
@@ -44,7 +44,7 @@ En las secciones siguientes, veremos estos pasos con más detalle.
 
 ## <a name="identifying-the-trigger-scenario"></a>Identificar el escenario de desencadenador
 
-Para diagnosticar un retraso de la interfaz de usuario, primero debe idetify qué (secuencia de acciones) hace que Visual Studio mostrar la notificación. Esto está en orden para puede desencadenar la notificación más adelante con activado el registro.
+Para diagnosticar un retraso de la interfaz de usuario, primero debe identificar qué (secuencia de acciones) hace que Visual Studio mostrar la notificación. Esto está en orden para puede desencadenar la notificación más adelante con activado el registro.
 
 ## <a name="restarting-vs-with-activity-logging-on"></a>Reiniciar VS con la actividad iniciar sesión
 
@@ -158,3 +158,5 @@ PerfView, detallaron instrucciones en el menú de ayuda que puede usar para iden
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
 
+> [!NOTE]
+> Si no puede solucionar la falta de respuesta debido a dependencias no tiene control sobre (por ejemplo, si la extensión debe llamar a los servicios de VS sincrónicos en el subproceso de interfaz de usuario), nos gustaría saber sobre él. Si es un miembro de nuestro programa de partners de Visual Studio, puede establecer contacto con nosotros enviando una solicitud de soporte para desarrolladores. En caso contrario, use la herramienta "Informar de un problema" para enviar sus comentarios e incluir `"Extension UI Delay Notifications"` en el título. También incluya una descripción detallada del análisis.
