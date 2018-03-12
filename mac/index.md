@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: bc836806e1acf33b35604419ac1d6aad41a2d795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d12331bd074f77db83ae4574195b8b6f7e5c452a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Presentación de Visual Studio para Mac
 
-Visual Studio para Mac es un IDE moderno y sofisticado con numerosas características para crear aplicaciones móviles, web y de escritorio. Admite el desarrollo de lo siguiente:
+Visual Studio para Mac es un IDE moderno y sofisticado con numerosas características para crear aplicaciones móviles, web y de escritorio. Admite el desarrollo siguiente:
 
 * Tecnología móvil con. NET: Android, iOS, tvOS, watchOS
 * Aplicaciones de escritorio de Mac
@@ -22,9 +22,9 @@ Visual Studio para Mac es un IDE moderno y sofisticado con numerosas caracterís
 * Aplicaciones web ASP.NET Core
 * Juegos multiplataforma de Unity
 
-Incluye un editor enriquecido, depuración, integración de plataforma nativa con iOS, Mac y Android, y control de código fuente integrado, por mencionar algunas de sus numerosas características.
+Incluye características como un editor enriquecido, depuración, integración de plataforma nativa con iOS, Mac y Android, y control de código fuente integrado.
 
-En este tema se analizan varias secciones de Visual Studio para Mac y se ofrece una visión general de algunas de las características que la convierten en una herramienta eficaz para crear aplicaciones multiplataforma.
+En este artículo se analizan varias secciones de Visual Studio para Mac y se ofrece una visión general de algunas de las características que lo convierten en una herramienta eficaz para crear aplicaciones multiplataforma.
 
 ## <a name="installation"></a>Instalación
 
@@ -36,7 +36,7 @@ Visual Studio para Mac admite el desarrollo en C# y F#, de forma predeterminada.
 
 ### <a name="c"></a>C#
 
-C# es el más lenguaje más usado para crear aplicaciones multiplataforma en Visual Studio para Mac. Esto incluye compatibilidad total con todas las características de C# 7.
+C# es el más lenguaje más usado para crear aplicaciones multiplataforma en Visual Studio para Mac. El IDE tiene compatibilidad total con todas las características de C# 7.
 
 ### <a name="f"></a>F#
 
@@ -71,7 +71,7 @@ Para empezar, vea el [laboratorio práctico](https://github.com/Microsoft/vs4mac
 
 Visual Studio tiene integrado su propio administrador de Android SDK.
 
-Para aplicaciones Android, Visual Studio para Mac incluye su propio diseñador, que funciona con archivos `.axml` de Android para crear visualmente las interfaces de usuario. Visual Studio para Mac abrirá estos archivos en Android Designer, como se muestra a continuación:
+Para aplicaciones Android, Visual Studio para Mac incluye su propio diseñador, que funciona con archivos `.axml` de Android para crear visualmente las interfaces de usuario. Visual Studio para Mac abrirá estos archivos en Android Designer, como se muestra en la imagen siguiente:
 
 ![](media/intro-image31.png)
 
@@ -83,7 +83,7 @@ iOS Designer está totalmente integrado con Visual Studio para Mac y permite la 
 
 ![](media/intro-image30.png)
 
-Para obtener más información sobre cómo usar iOS Designer, vea los documentos sobre el [diseñador](https://developer.xamarin.com/guides/ios/user_interface/designer).
+Para obtener más información sobre cómo se usa iOS Designer, vea los documentos sobre el [diseñador](https://developer.xamarin.com/guides/ios/user_interface/designer).
 
 ### <a name="mac"></a>Mac
 
@@ -118,7 +118,7 @@ Para obtener más información, vea la guía de [Xamarin Inspector](https://deve
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* **Visión general**: para obtener una visión general de muchas de las características principales de Visual Studio para Mac, vea el [paseo por el IDE](~/ide-tour.md) de Visual Studio para Mac.
+* **Paseo introductorio**: para obtener una visión general de muchas de las características principales de Visual Studio para Mac, vea el [paseo por el IDE](~/ide-tour.md) de Visual Studio para Mac.
 * **Instalación**: para obtener información sobre cómo descargar e instalar Visual Studio, vea la guía de [instalación](~/installation.md).
 * **Tutoriales de Xamarin**: para obtener más información sobre cómo desarrollar código con Xamarin, vaya al [Centro para desarrolladores](https://developer.xamarin.com) de Xamarin.
 * **Vídeos**: para obtener más información sobre otras características y aspectos de Visual Studio para Mac, vea los vídeos del sitio web de [Xamarin University](https://university.xamarin.com).
