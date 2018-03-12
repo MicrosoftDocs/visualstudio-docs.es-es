@@ -1,7 +1,7 @@
 ---
 title: "Cómo notificar un problema con Visual Studio 2017 | Microsoft Docs"
 ms.custom: 
-ms.date: 02/19/2018
+ms.date: 02/26/2018
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,16 +13,18 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ec0003bd568f497bd926974935467fdb1b4b75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
+
 Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. A continuación le indicamos cómo debe notificarnos un problema para que podamos diagnosticarlo y corregirlo.
 
 ## <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
+
 Si aún no lo ha hecho, inicie sesión Visual Studio a fin de notificar un problema. De este modo, podrá informarnos sobre los problemas que experimente y votar o comentarlos. También puede votar o comentar otros problemas que vea publicados.
 
 1. En Visual Studio, seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema**.
@@ -39,39 +41,51 @@ Si aún no lo ha hecho, inicie sesión Visual Studio a fin de notificar un probl
   ![Buscar y votar problemas similares](../ide/media/search-and-vote.png "Buscar y votar problemas similares")
 
 ## Informar de un problema nuevo<a name="report_new_problem"></a>
-1.- Si no encuentra lo que busca, haga clic en el botón **Informar de un problema nuevo**, situado en la parte inferior de la pantalla.
+
+1. Si no encuentra lo que busca, haga clic en el botón **Informar de un problema nuevo** en la parte inferior de la pantalla.
 2. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.
 3. Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.
 
   ![Informar de un problema nuevo](../ide/media/report-new-problem.png "Informar de un problema nuevo")
 
 ## Proporcionar una captura de pantalla y datos adjuntos (opcional) <a name="provide_screenshots"></a>
- Elija enviar la pantalla actual a Microsoft. Puede adjuntar capturas de pantalla adicionales u otros archivos. Para ello, haga clic en el botón **Adjuntar archivos adicionales** .
+
+ Elija enviar la pantalla actual a Microsoft. Puede adjuntar capturas de pantalla adicionales u otros archivos si hace clic en el botón **Adjuntar archivos adicionales**.
 
 ## Proporcionar un volcado de seguimiento y montón (opcional) <a name="provide_a_trace_and_heap_dump"></a>
 
-Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a diagnosticar problemas. Apreciamos mucho que use la herramienta **Notificar un problema** para grabar los pasos de reproducción y enviar los datos a Microsoft.  A continuación le mostramos cómo hacerlo.
+Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a diagnosticar problemas. Apreciamos mucho que use la herramienta **Notificar un problema** para grabar los pasos de reproducción y enviar los datos a Microsoft. A continuación le mostramos cómo hacerlo.
 
 1. Haga clic en la pestaña **Grabar**.
 2. Haga clic en **Iniciar grabación**. Proporcione permiso para ejecutar la herramienta.
 
-  ![Haga clic en Iniciar grabación para proporcionar un archivo de seguimiento y de volcado de memoria del montón ](../ide/media/record-dialog-box.png "Proporcionar archivos de seguimiento y de volcado de memoria del montón")
+  ![Hacer clic en "Iniciar grabación" para proporcionar un archivo de seguimiento y de volcado de memoria del montón ](../ide/media/record-dialog-box.png "Proporcionar archivos de seguimiento y de volcado de memoria del montón")
 
 3. Cuando aparezca la herramienta **Grabación de acciones de usuario**, realice los pasos que reproducen el problema.
-4. Cuando haya terminado, haga clic en **Detener grabación**.
+4. Cuando haya terminado, haga clic en el botón **Detener grabación**.
 5. Espere unos minutos mientras Visual Studio recopila y empaqueta la información que ha grabado.
 
 ## Enviar el informe <a name="submit_the_report"></a>
+
  Haga clic en el botón **Enviar** para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. (Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción para el informe).
 
 ## Informes alternativos <a name="alternate_reporting"></a>
- Si no puede completar la instalación de Visual Studio o no puede acceder a la herramienta de comentarios dentro de Visual Studio, esta herramienta también está disponible en el Instalador de Visual Studio. Haga clic en el icono de comentarios que se encuentra en la esquina superior derecha del Instalador de Visual Studio y, luego, siga los pasos descritos en este artículo.
+
+### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Notificar un problema mediante el Instalador de Visual Studio
+
+Si no puede completar la instalación de Visual Studio o no puede tener acceso a la herramienta de comentarios dentro de Visual Studio, puede notificar un problema mediante el Instalador de Visual Studio. Para ello, haga clic en el icono de comentario en la esquina superior derecha del Instalador de Visual Studio.
 
  ![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios en el Instalador de Visual Studio para abrir la herramienta de comentarios](../install/media/report-a-problem.png)
 
- >[!Note]
- >También puede informar un problema directamente a la comunidad de desarrolladores de Visual Studio. Para hacerlo, visite [https://developercommunity.visualstudio.com/](https://developercommunity.visualstudio.com/).
+### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>Notificar un problema directamente a la comunidad de desarrolladores de Visual Studio
+
+Si no quiere o no puede usar Visual Studio para notificar un problema, en su lugar puede hacerlo directamente a la comunidad de desarrolladores de Visual Studio. Para obtener más información, vea la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+
+#### <a name="provide-product-feedback-or-a-suggestion"></a>Proporcionar comentarios sobre el producto o una sugerencia
+
+Si no tiene un problema para notificar, pero quiere proporcionar comentarios sobre el producto o una sugerencia, también hay un lugar para eso. Para obtener más información, vea la página [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide).
 
 ## <a name="see-also"></a>Vea también
+
 * [Hable con nosotros](../ide/talk-to-us.md)
-* [Visite la comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/)
+* [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/)

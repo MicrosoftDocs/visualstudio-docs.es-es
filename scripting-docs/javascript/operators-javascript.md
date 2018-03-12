@@ -20,31 +20,31 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9d0a098418399dba19b77a12c057a3fba334e31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a3068a609da2468c59066ccd38f6de87cef1ed17
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="operators-javascript"></a>Operadores (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] tiene un rango completo de operadores, incluidos los operadores aritméticos, lógicos, bit a bit, de asignación y algunos operadores variados. Para obtener explicaciones y ejemplos, vea los temas sobre los operadores concretos.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] tiene un rango completo de operadores, incluidos los operadores aritméticos, lógicos, de bit a bit, de asignación y algunos operadores variados. Para obtener explicaciones y ejemplos, vea los temas sobre los operadores concretos.  
   
 ## <a name="computational-operators"></a>Operadores de cálculo  
   
-|Descripción|Símbolo|  
+|Description|Símbolo|  
 |-----------------|------------|  
 |[Negación unaria](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Incremento](../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
 |[Decremento](../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Multiplicación](../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[División](../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Modulus aritmético](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Resta aritmética](../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Suma](../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Resta](../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
   
 ## <a name="logical-operators"></a>Operadores lógicos  
   
-|Descripción|Símbolo|  
+|Description|Símbolo|  
 |-----------------|------------|  
 |[NOT lógico](../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Menor que](../javascript/reference/comparison-operators-javascript.md)|\<|  
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="bitwise-operators"></a>Operadores bit a bit  
   
-|Descripción|Símbolo|  
+|Description|Símbolo|  
 |-----------------|------------|  
 |[NOT bit a bit](../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
 |[Desplazamiento a la izquierda bit a bit](../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
@@ -74,14 +74,14 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="assignment-operators"></a>Operadores de asignación  
   
-|Descripción|Símbolo|  
+|Description|Símbolo|  
 |-----------------|------------|  
 |[Asignación](../javascript/reference/assignment-operator-decrement-equal-javascript.md)|=|  
 |[Asignación compuesta](../javascript/reference/compound-assignment-operators-javascript.md)|*OP*= (como += y &=)|  
   
 ## <a name="miscellaneous-operators"></a>Operadores varios  
   
-|Descripción|Símbolo|  
+|Description|Símbolo|  
 |-----------------|------------|  
 |[delete](../javascript/reference/delete-operator-decrementjavascript.md)|eliminar|  
 |[typeof](../javascript/reference/typeof-operator-decrementjavascript.md)|typeof|  

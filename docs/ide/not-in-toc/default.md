@@ -1,8 +1,6 @@
 ---
 title: "Página predeterminada para F1 en Visual Studio | Microsoft Docs"
-ms.date: 01/01/2018
-ms.reviewer: 
-ms.suite: 
+ms.date: 02/28/2018
 ms.topic: article
 robots: noindex,nofollow
 f1_keywords:
@@ -10,17 +8,29 @@ f1_keywords:
 - vs.ambient
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: f4c6e344acba0774a6a6a6f2dfe83bab9ff5ca18
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: 65f5e31060f745adfd5dd18460b0a9984064f660
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/28/2018
 ---
 # Ayuda de F1
 
-Parece que ha llegado aquí por error. Si está buscando ayuda de F1 sobre una palabra clave o el nombre de una API, compruebe que el cursor se coloca dentro de la palabra o justo a la derecha antes de presionar **F1**. Si no funciona así, pruebe a buscar en https://docs.microsoft.com.
+Parece que no pudimos encontrar lo que buscaba y lo sentimos. [Ayúdenos a mejorar](#help-us-improve-f1).
 
-Si está buscando ayuda sobre el propio editor de texto, consulte [Escribir código en el editor de código](../../ide/writing-code-in-the-code-and-text-editor.md).
+## Posición del cursor
+
+Si está buscando ayuda de F1 sobre una palabra clave o el nombre de una API, compruebe que el cursor se coloca dentro de la palabra o justo a la derecha antes de presionar **F1**. Si eso sigue sin funcionar, seleccione uno de los [vínculos útiles](#useful-links) de la lista o realice una búsqueda en https://docs.microsoft.com.
+
+## Vínculos útiles
+
+- Para obtener información general sobre Visual Studio, vea [Introducción a Visual Studio 2017](../../ide/visual-studio-ide.md).
+- Para obtener ayuda sobre el editor de texto de Visual Studio, vea [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Para obtener ayuda de C#, vea la [Guía de C#](/dotnet/csharp/index).
+- Para obtener ayuda de Visual Basic, vea la [Guía de Visual Basic](/dotnet/visual-basic/).
+- Para obtener ayuda de F#, vea la [Guía de F#](/dotnet/fsharp/).
+- Para obtener ayuda de Python, vea [Uso de Python en Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
+- Para obtener ayuda de C++, vea [Visual C++ en Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
 ## Contribuya a mejorar la Ayuda (F1)
 

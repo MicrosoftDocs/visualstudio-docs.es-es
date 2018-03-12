@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desarrolladores de .NET
 
@@ -40,9 +40,9 @@ Navegue con rapidez por el código de .NET saltando a cualquier archivo, tipo, m
 
 [Documentación: refactorizaciones y acciones rápidas](refactoring-code-generation-quick-actions.md)
 
-Visual Studio tiene diagnósticos de código activos que le ayudan a mejorar la calidad del código mediante la detección de errores y código potencialmente problemático. Proporcionamos acciones rápidas (**Ctrl+.**) para resolver los problemas detectados en el documento, proyecto o solución. Habilite el *análisis completo de la solución* para encontrar problemas en toda la solución, incluso si no tiene esos archivos abiertos en el editor.
+Visual Studio tiene diagnósticos de código activos que le ayudan a mejorar la calidad del código mediante la detección de errores y código potencialmente problemático. Proporcionamos acciones rápidas (**Ctrl**+**.**) para resolver los problemas detectados en el documento, proyecto o solución. Habilite el *análisis completo de la solución* para encontrar problemas en toda la solución, incluso si no tiene esos archivos abiertos en el editor.
 
-Además, use las sugerencias de código para obtener información sobre los procedimientos recomendados, código auxiliar o generar el código, refactorizar el código y adoptar nuevas características del lenguaje con el método abreviado acceso directo.
+Además, use las sugerencias de código para obtener información sobre los procedimientos recomendados, código auxiliar o generar el código, adoptar nuevas características del lenguaje con el método abreviado **Ctrl**+**.**, así como para refactorizar el código.
 
 ![Aplicar revisiones rápidas y refactorizaciones mediante el menú de bombilla](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")
 
@@ -59,7 +59,7 @@ Ejecute y depure las pruebas unitarias basadas en los marcos de pruebas MSTest, 
 - [Documentación: opciones del editor personalizadas y portátiles](create-portable-custom-editor-options.md)
 - [Documentación: configuración de estilo de código .NET para EditorConfig](editorconfig-code-style-settings-reference.md)
 
-Visual Studio permite la configuración de convenciones de codificación, detecta infracciones de estilo de codificación y proporciona soluciones rápidas para solucionar problemas de estilo con el método abreviado Ctrl+. Configure y aplique las convenciones de formato, nomenclatura y estilo de código del equipo en un repositorio, lo que permite invalidar valores en el nivel de proyecto y archivo, con *EditorConfig*.
+Visual Studio permite la configuración de convenciones de codificación, proporciona soluciones rápidas para solucionar problemas de estilo con el método abreviado **Ctrl**+**.** así como detectar infracciones de estilo de codificación. Configure y aplique las convenciones de formato, nomenclatura y estilo de código del equipo en un repositorio, lo que permite invalidar valores en el nivel de proyecto y archivo, con *EditorConfig*.
 
 ![Configurar y aplicar las convenciones de codificación con EditorConfig](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")
 
@@ -105,7 +105,7 @@ Estos son accesos directos populares de Visual Studio. Tenga en cuenta que algun
 | **F12** (también **Ctrl+clic**) | Ir a definición | Navegar hasta donde se define un símbolo |
 | **Ctrl+F12** | Ir a implementación | Navegar desde cualquier tipo base o miembro a sus distintas implementaciones |
 | **Mayús+F12** | Buscar todas las referencias | Ver todas las referencias de símbolos o literales |
-| **Ctrl+.** (también **Alt+Entrar** en el perfil de C#) | Acciones rápidas y refactorizaciones | Ver qué correcciones de código, acciones de generación de código, refactorizaciones u otras acciones rápidas están disponibles en la posición del cursor o selección de código |
+| **Ctrl**+**.** (también **Alt+Entrar** en el perfil de C#) | Acciones rápidas y refactorizaciones | Ver qué correcciones de código, acciones de generación de código, refactorizaciones u otras acciones rápidas están disponibles en la posición del cursor o selección de código |
 | **Ctrl**+**E**,**V** | Línea duplicada | Duplica la línea de código en la que se encuentra el cursor (disponible en la **versión 15.6 de Visual Studio 2017 (versión preliminar 2)** y posteriores) |
 | **Ctrl+Q** | Inicio rápido | Buscar todos los valores de Visual Studio |
 | **F5** | Iniciar depuración | Iniciar la depuración de la aplicación |
