@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -35,7 +36,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -124,7 +126,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |Ejecute el código para inicializar el complemento VSTO cuando este se cargue.|Agregue código al método `ThisAddIn_Startup` . Este es el controlador de eventos predeterminado para el evento <xref:Microsoft.Office.Tools.AddInBase.Startup> . Para obtener más información, consulta [Events in Office Projects](../vsto/events-in-office-projects.md).|  
 |Ejecute el código para limpiar los recursos usados por el complemento VSTO antes de que este se descargue.|Agregue código al método `ThisAddIn_Shutdown` . Este es el controlador de eventos predeterminado para el evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> . Para obtener más información, consulta [Events in Office Projects](../vsto/events-in-office-projects.md). **Nota:** en Outlook, de forma predeterminada el `ThisAddIn_Startup` controlador de eventos no siempre se llama cuando se descarga el complemento de VSTO. Para obtener más información, consulta [Events in Office Projects](../vsto/events-in-office-projects.md).|  
 |Mostrar un panel de tareas personalizado.|Utilice el campo `CustomTaskPanes` . Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).|  
-|Exponer objetos de un complemento VSTO en otras soluciones de Microsoft Office.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Para obtener más información, consulta [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
+|Exponer objetos de un complemento VSTO en otras soluciones de Microsoft Office.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> . Para obtener más información, consulta [Llamar a código en complementos VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).|  
 |Personalizar una característica del sistema Microsoft Office implementando una interfaz de extensibilidad.|Invalide el método <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> para que devuelva una instancia de una clase que implemente la interfaz. Para obtener más información, consulta [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md). **Nota:** para personalizar la interfaz de usuario de la cinta de opciones, también puede invalidar el <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> método.|  
   
 ### <a name="understanding-the-design-of-the-thisaddin-class"></a>Introducción al diseño de la clase ThisAddIn  
@@ -139,12 +141,12 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
   
  Si desea personalizar una de estas características de forma que no sea compatible con las clases y los diseñadores, puede personalizarlas mediante la implementación de una *interfaz de extensibilidad* en el complemento VSTO. Para obtener más información, consulta [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).  
   
- Además, puede modificar la interfaz de usuario de los documentos de Word y libros de Excel generando elementos host que extienden el comportamiento de documentos y libros. Esto le permite agregar controles administrados a documentos y hojas de cálculo. Para obtener más información, consulta [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Además, puede modificar la interfaz de usuario de los documentos de Word y libros de Excel generando elementos host que extienden el comportamiento de documentos y libros. Esto le permite agregar controles administrados a documentos y hojas de cálculo. Para obtener más información, consulta [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="calling-code-in-vsto-add-ins-from-other-solutions"></a>Llamar al código de complementos VSTO desde otras soluciones  
  Puede exponer los objetos de su complemento VSTO en otras soluciones (incluidas otras soluciones de Microsoft Office). Esto resulta útil si su complemento VSTO proporciona un servicio que quiera habilitar para que lo usen otras soluciones. Por ejemplo, si tiene un complemento VSTO de Microsoft Office Excel que realiza cálculos sobre datos financieros desde un servicio web, otras soluciones pueden realizar estos cálculos llamando al complemento VSTO de Excel en tiempo de ejecución.  
   
- Para obtener más información, consulta [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Para obtener más información, consulta [Llamar a código en complementos VSTO desde otras soluciones de Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Desarrollar soluciones de Office](../vsto/developing-office-solutions.md)   

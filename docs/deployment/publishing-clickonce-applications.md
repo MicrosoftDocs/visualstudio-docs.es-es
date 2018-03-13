@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - applications [Visual Studio], ClickOnce deployment
 - deploying applications [ClickOnce], publishing ClickOnce applications
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 02b5f2477a18f3432bc255b9bd17a2ac11fbc030
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -65,7 +67,7 @@ Cuando se publica una aplicación [!INCLUDE[ndptecclick](../deployment/includes/
 ### <a name="application-files-dialog-box"></a>Cuadro de diálogo Archivos de aplicación  
  Este cuadro de diálogo le permite especificar cómo se organizan en categorías los archivos de su proyecto para la publicación, la descarga dinámica y la actualización. Contiene una cuadrícula que muestra los archivos de proyecto que no se excluyen de manera predeterminada o que tienen un grupo de descarga.  
   
- Para excluir archivos, marcar los archivos como archivos de datos o de requisitos previos y crear grupos de archivos para la instalación condicional en la interfaz de usuario de Visual Studio, consulte [Cómo: especificar que los archivos se publican mediante ClickOnce](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). Los archivos de datos también se pueden marcar mediante la herramienta Mage.exe. Para obtener más información, consulta [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Para excluir archivos, marcar los archivos como archivos de datos o de requisitos previos y crear grupos de archivos para la instalación condicional en la interfaz de usuario de Visual Studio, consulte [Cómo: especificar que los archivos se publican mediante ClickOnce](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). Los archivos de datos también se pueden marcar mediante la herramienta Mage.exe. Para obtener más información, consulta [Cómo: Incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 ### <a name="prerequisites-dialog-box"></a>Cuadro de diálogo Requisitos previos  
  Este cuadro de diálogo especifica qué componentes necesarios se instalan y cómo se instalan. Para obtener más información, consulte [Cómo: instalar los requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) y [cuadro de diálogo de requisitos previos](../ide/reference/prerequisites-dialog-box.md).  

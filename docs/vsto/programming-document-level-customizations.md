@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,7 +31,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -130,7 +132,7 @@ Globals.ThisDocument.Save();
 ## <a name="managing-documents-on-a-server"></a>Administrar documentos en un servidor  
  Puede administrar diferentes aspectos de las personalizaciones de nivel de documento en un servidor que no tenga Microsoft Office Word o Microsoft Office Excel instalado. Por ejemplo, puede obtener acceso y modificar los datos en la caché de datos del documento. Asimismo, también puede administrar el ensamblado de personalización asociado al documento. Por ejemplo, puede quitar mediante programación el ensamblado del documento para que este no ejecute el código, o bien puede asociar mediante programación un ensamblado a un documento.  
   
- Para obtener más información, consulta [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).  
+ Para obtener más información, consulta [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).  
   
 ## <a name="customizing-the-user-interface-of-microsoft-office-applications"></a>Personalizar la interfaz de usuario de las aplicaciones de Microsoft Office  
  Puede personalizar la interfaz de usuario de Word y Excel de las siguientes maneras, mediante una personalización de nivel de documento:  
@@ -165,7 +167,7 @@ Globals.ThisDocument.Save();
   
 -   Utilice el método GetVstoObject si desea obtener el objeto extendido para un objeto de Office nativo. Este método devuelve un objeto <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>o <xref:Microsoft.Office.Tools.Word.Document> si el objeto de Office nativo especificado tiene uno. En caso contrario, devuelve GetVstoObject **null**. Por ejemplo, se devuelve el método GetVstoObject un <xref:Microsoft.Office.Tools.Word.Document> si especificado <xref:Microsoft.Office.Interop.Word.Document> es el objeto subyacente para el documento en el proyecto de documento de Word.  
   
- En los proyectos de nivel de documento, no puede usar el método GetVstoObject para crear un nuevo <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, o <xref:Microsoft.Office.Tools.Word.Document> elemento host en tiempo de ejecución. Solo puede usar este método para tener acceso a los elementos host existentes creados en el proyecto en tiempo de diseño. Si desea crear nuevos elementos host en tiempo de ejecución, debe desarrollar un proyecto de complemento VSTO. Para obtener más información, vea [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) y [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ En los proyectos de nivel de documento, no puede usar el método GetVstoObject para crear un nuevo <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, o <xref:Microsoft.Office.Tools.Word.Document> elemento host en tiempo de ejecución. Solo puede usar este método para tener acceso a los elementos host existentes creados en el proyecto en tiempo de diseño. Si desea crear nuevos elementos host en tiempo de ejecución, debe desarrollar un proyecto de complemento VSTO. Para obtener más información, vea [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) y [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="using-the-getvstoobject-and-hasvstoobject-methods"></a>Usar los métodos GetVstoObject y HasVstoObject  
  Para llamar al método GetVstoObject y HasVstoObject, use el método Globals.Factory.GetVstoObject o Globals.Factory.HasVstoObject y pase el objeto nativo de Word o Excel (como un <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Worksheet>) que desea probar.  

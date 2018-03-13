@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -73,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="usingfeatures"></a> Using Features of Multiple Microsoft Office Applications in a Single Project  
  Cada plantilla de proyecto de Office en Visual Studio está diseñada para funcionar con una sola aplicación de Microsoft Office. Para usar características de varias aplicaciones de Microsoft Office o para usar características de una aplicación o un componente que no tenga un proyecto en Visual Studio, debe agregar una referencia a los PIA necesarios.  
   
- En la mayoría de casos, debe agregar referencias a los PIA que instala Visual Studio en el directorio %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\. Estas versiones de los ensamblados aparecen en la pestaña **Framework** del cuadro de diálogo **Administrador de referencias** . Para obtener más información, consulta [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ En la mayoría de casos, debe agregar referencias a los PIA que instala Visual Studio en el directorio %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\. Estas versiones de los ensamblados aparecen en la pestaña **Framework** del cuadro de diálogo **Administrador de referencias** . Para obtener más información, consulta [Cómo: Apuntar a las aplicaciones de Office mediante los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
  Si ha instalado y registrado los PIA en la caché global de ensamblados, estas versiones de los ensamblados aparecen en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** . Debe evitar agregar referencias a estas versiones de los ensamblados, puesto que se pueden producir algunos problemas de desarrollo al usarlas. Por ejemplo, si ha registrado distintas versiones de los PIA en la caché global de ensamblados, el proyecto se enlazará automáticamente a la última versión del ensamblado que se registró, aunque especifique una versión distinta en la pestaña **COM** del cuadro de diálogo **Administrador de referencias** .  
   
@@ -110,7 +112,7 @@ ms.lasthandoff: 01/10/2018
  Al instalar y registrar los PIA de Office en la caché global de ensamblados (con Office o por medio de la instalación del paquete redistribuible para los PIA), los ensamblados de redirección de enlace también se instalan solamente en la caché global de ensamblados. Estos ensamblados contribuyen a garantizar que se carga la versión correcta de los ensamblados de interoperabilidad primarios en tiempo de ejecución. Por ejemplo, cuando una solución que hace referencia a un ensamblado de [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] se ejecuta en un equipo con la versión de [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] del ensamblado de interoperabilidad primario, el ensamblado de redirección de enlace indica al tiempo de ejecución de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] que cargue la versión de [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] del ensamblado de interoperabilidad primario. Para obtener más información, vea [Cómo: Habilitar y deshabilitar redireccionamiento de enlaces automático](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).  
   
 ## <a name="see-also"></a>Vea también  
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Cómo: Apuntar a las aplicaciones de Office mediante los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Información general sobre el modelo de objetos de Excel](../vsto/excel-object-model-overview.md)   
  [Soluciones de InfoPath](../vsto/infopath-solutions.md)   
  [Información general sobre el modelo de objetos de Outlook](../vsto/outlook-object-model-overview.md)   

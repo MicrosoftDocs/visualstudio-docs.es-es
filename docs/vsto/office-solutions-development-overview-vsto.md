@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  Para decidir cuál de estos tipos de proyecto es mejor para su solución, piense si desea que su código se ejecute únicamente cuando se abra un documento específico o si desea que el código esté disponible cada vez que se ejecute la aplicación. Para obtener más información acerca de las plantillas de proyecto, vea [información general de plantillas de proyecto de Office](../vsto/office-project-templates-overview.md).  
   
- Los tipos de proyectos que puede crear dependen de las aplicaciones de Office que haya instalado en el equipo de desarrollo. Para obtener más información, consulta [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ Los tipos de proyectos que puede crear dependen de las aplicaciones de Office que haya instalado en el equipo de desarrollo. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="document-level-customizations"></a>personalizaciones de nivel de documento  
  Las personalizaciones de nivel de documento constan de un ensamblado que está asociado a un único documento, libro o plantilla de Microsoft Office Word o Microsoft Office Excel. El ensamblado se carga cuando se abre el documento asociado. Las características de las personalizaciones que se crean están disponibles solo cuando se abre el documento asociado. Las personalizaciones no pueden realizar cambios en toda la aplicación, como mostrar un nuevo elemento de menú o una ficha de cinta cuando se abre cualquier documento.  

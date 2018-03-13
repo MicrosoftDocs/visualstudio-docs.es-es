@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 10f5840b085ce55485734c9287972a743859c3ef
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -31,7 +33,7 @@ ms.lasthandoff: 01/10/2018
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Guardar controles dinámicos en documentos de Office
   Los controles que se agregan en tiempo de ejecución no se conservan cuando se guarda y se cierra el documento o el libro. El comportamiento exacto es diferente para los controles host y los controles de Windows Forms. En ambos casos, puede agregar código a la solución para volver a crear los controles cuando el usuario vuelve a abrir el documento.  
   
- Los controles que agregue a los documentos en tiempo de ejecución se denominan *controles dinámicos*. Para más información sobre los controles dinámicos, consulte [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Los controles que agregue a los documentos en tiempo de ejecución se denominan *controles dinámicos*. Para más información sobre los controles dinámicos, consulte [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -103,6 +105,6 @@ ms.lasthandoff: 01/10/2018
  [!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]  
   
 ## <a name="see-also"></a>Vea también  
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   
