@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,11 +17,12 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -42,10 +44,10 @@ Las aplicaciones[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 |Instalada desde un recurso compartido de archivos de red|Zona de intranet local|  
 |Instalada desde un CD-ROM|Plena confianza|  
   
- Los permisos predeterminados se basan en la ubicación desde la cual fue implementada la versión original de la aplicación; las actualizaciones de la aplicación heredarán esos permisos. Si la aplicación se configura para que compruebe las actualizaciones desde una ubicación web o una ubicación de red y se encuentra disponible una versión más reciente, la instalación original puede recibir permisos para Internet o para la zona Intranet en lugar de permisos de plena confianza. Para evitar que el programa pida a los usuarios que concedan los permisos, el administrador del sistema puede especificar una directiva de implementación ClickOnce que defina un editor de aplicación concreto como origen de confianza. Para aquellos equipos en los que se implemente esta directiva, los permisos se concederán automáticamente y no se preguntará al usuario. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Para configurar la implementación de aplicaciones de confianza, el certificado puede instalarse en el equipo o en el nivel de empresa. Para obtener más información, consulta [How to: Add a Trusted Publisher to a Client Computer for ClickOnce Applications](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
+ Los permisos predeterminados se basan en la ubicación desde la cual fue implementada la versión original de la aplicación; las actualizaciones de la aplicación heredarán esos permisos. Si la aplicación se configura para que compruebe las actualizaciones desde una ubicación web o una ubicación de red y se encuentra disponible una versión más reciente, la instalación original puede recibir permisos para Internet o para la zona Intranet en lugar de permisos de plena confianza. Para evitar que el programa pida a los usuarios que concedan los permisos, el administrador del sistema puede especificar una directiva de implementación ClickOnce que defina un editor de aplicación concreto como origen de confianza. Para aquellos equipos en los que se implemente esta directiva, los permisos se concederán automáticamente y no se preguntará al usuario. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Para configurar la implementación de aplicaciones de confianza, el certificado puede instalarse en el equipo o en el nivel de empresa. Para obtener más información, consulta [Cómo: Agregar un publicador de confianza a un equipo cliente para aplicaciones ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Directivas de seguridad de acceso del código  
- Se determinan los permisos para una aplicación mediante la configuración de la [ \<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) elemento del manifiesto de aplicación. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera automáticamente esta información según la configuración de la página de propiedades **Seguridad** del proyecto. A una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo se le conceden los permisos específicos que solicita. Por ejemplo, cuando el acceso a archivos requiere permisos de plena confianza, si la aplicación solicita permiso de acceso al archivo, sólo se le concederá permiso de acceso al archivo, pero no permisos de plena confianza. Al desarrollar la aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , debe asegurarse de solicitar solo los permisos específicos que la aplicación necesita. En la mayoría de los casos, puede usar zonas de Internet o intranet local para limitar la aplicación a confianza parcial. Para obtener más información, consulta [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Si la aplicación requiere permisos personalizados, puede crear una zona personalizada. Para obtener más información, consulta [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Se determinan los permisos para una aplicación mediante la configuración de la [ \<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) elemento del manifiesto de aplicación. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera automáticamente esta información según la configuración de la página de propiedades **Seguridad** del proyecto. A una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo se le conceden los permisos específicos que solicita. Por ejemplo, cuando el acceso a archivos requiere permisos de plena confianza, si la aplicación solicita permiso de acceso al archivo, sólo se le concederá permiso de acceso al archivo, pero no permisos de plena confianza. Al desarrollar la aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , debe asegurarse de solicitar solo los permisos específicos que la aplicación necesita. En la mayoría de los casos, puede usar zonas de Internet o intranet local para limitar la aplicación a confianza parcial. Para obtener más información, consulta [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Si la aplicación requiere permisos personalizados, puede crear una zona personalizada. Para obtener más información, consulta [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Incluso un permiso que no forma parte del conjunto de permisos predeterminado para la zona desde la que se implementa la aplicación hará que al usuario final se le solicite conceder el permiso en el momento de la instalación o actualización. Para evitar que el programa pida a los usuarios que concedan los permisos, el administrador del sistema puede especificar una directiva de implementación ClickOnce que defina un editor de aplicación concreto como origen de confianza. En aquellos equipos en los que se implemente esta directiva, los permisos se concederán automáticamente y no se preguntará al usuario.  
   

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: dcf309bbfdd608a4ca93809804c51006ce7c2dd7
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -28,7 +30,7 @@ ms.lasthandoff: 01/10/2018
 # <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento de VSTO
   Puede agregar controles a cualquier documento abierto de Microsoft Office Word usando un complemento de VSTO. Este tutorial muestra cómo usar la cinta para permitir a los usuarios agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.  
   
- **Aplicación:** la información de este tema se aplica a los proyectos de complemento de VSTO para Word 2010. Para obtener más información, consulta [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Aplicación:** la información de este tema se aplica a los proyectos de complemento de VSTO para Word 2010. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
  En este tutorial se muestran las tareas siguientes:  
   

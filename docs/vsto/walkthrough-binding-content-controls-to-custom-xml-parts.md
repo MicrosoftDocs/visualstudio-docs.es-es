@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,7 +21,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -88,7 +90,7 @@ ms.lasthandoff: 01/10/2018
 5.  En la cinta de opciones, elija la **Developer** ficha.  
   
     > [!NOTE]  
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulta [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulta [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 6.  En el **controles** grupo, elija la **texto** botón ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para agregar una <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>a la primera celda.  
   
@@ -317,7 +319,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Modifique los datos de los elementos XML personalizados con el documento cerrado. La próxima vez que el usuario abra el documento, los controles de contenido que estén enlazados a los elementos XML mostrarán los nuevos datos.  
   
--   Utilice los controles de contenido para proteger elementos de un documento. Para obtener más información, consulta [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   Utilice los controles de contenido para proteger elementos de un documento. Para obtener más información, consulta [Cómo: Proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Automatizar Word con objetos extendidos](../vsto/automating-word-by-using-extended-objects.md)   
