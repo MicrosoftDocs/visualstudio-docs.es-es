@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Controlar dónde se ejecuta el código de R con áreas de trabajo
 
@@ -31,17 +31,6 @@ Para abrir la ventana **Áreas de trabajo**, use el comando **Herramientas de R 
 ![Ventana Áreas de trabajo en Herramientas de R para Visual Studio (VS2017)](media/workspaces-window.png)
 
 En esta ventana, la marca de verificación verde indica el área de trabajo activa a la que está enlazado RTVS. Al seleccionar una flecha azul, se establece el área de trabajo activa. El icono de configuración (engranaje) a la derecha de cada área de trabajo le permite cambiar sus argumentos de línea de comandos, ubicación y nombre. La X roja quita un área de trabajo agregada manualmente.
-
-En este tema:
-
-- [Guardar y restablecer un área de trabajo](#saving-and-resetting-a-workspace)
-- [Áreas de trabajo locales](#local-workspaces)
-- [Áreas de trabajo remotas](#remote-workspaces)
-- [Inicio de sesión en el área de trabajo remota](#remote-workspace-logon)
-- [Cambiar de área de trabajo](#switching-between-workspaces)
-- [Directorios en equipos locales y remotos](#directories-on-local-and-remote-computers)
-- [Copiar los archivos de proyecto en áreas de trabajo remotas](#copying-project-files-to-remote-workspaces)
-- [Copiar archivos desde un área de trabajo remota](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>Guardar y restablecer un área de trabajo
 

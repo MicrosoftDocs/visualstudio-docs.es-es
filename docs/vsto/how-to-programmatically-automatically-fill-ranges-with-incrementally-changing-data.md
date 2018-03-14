@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,7 +19,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: d6634fea629358368d3b61c5b505e5eec7ec0186
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -37,7 +39,7 @@ ms.lasthandoff: 01/10/2018
 -   El rango que desea rellenar, pasado como un parámetro a la <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método. Este intervalo de destino debe incluir el rango que contiene el valor inicial.  
   
     > [!NOTE]  
-    >  No se puede pasar un <xref:Microsoft.Office.Tools.Excel.NamedRange> controlar en lugar de la <xref:Microsoft.Office.Interop.Excel.Range>. Para obtener más información, consulta [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+    >  No se puede pasar un <xref:Microsoft.Office.Tools.Excel.NamedRange> controlar en lugar de la <xref:Microsoft.Office.Interop.Excel.Range>. Para obtener más información, consulta [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ## <a name="example"></a>Ejemplo  
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

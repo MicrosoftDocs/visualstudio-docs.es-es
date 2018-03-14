@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definición de comandos personalizados para proyectos de Python
 
@@ -154,7 +154,7 @@ Ninguno de los valores de atributo distingue entre mayúsculas y minúsculas.
 | Argumentos | Optional | Especifica una cadena de argumentos (si los hay) que proporcionar al destino. Cabe decir que cuando TargetType es `script`, los argumentos se proporcionan al programa de Python, no a `python.exe`. Este elemento se omite en el TargetType `code`. |
 | ExecuteIn | Sí | Especifica el entorno en el que se va a ejecutar el comando:<ul><li>**console**: (Valor predeterminado) Se ejecuta Target y los argumentos correspondientes como si se hubieran escrito directamente en la línea de comandos. Mientras Target se está ejecutando, se abre una ventana de comandos, que al finalizar se cierra automáticamente.</li><li>**consolepause**: El proceso es el mismo que con console, pero se espera a que el usuario presione una tecla para cerrar la ventana.</li><li>**output**: Se ejecuta Target y se muestran los resultados en la ventana Resultados de Visual Studio. Si TargetType es "pip", Visual Studio usa Target como el nombre del paquete y anexa los argumentos indicados en Arguments.</li><li>**repl**: Se ejecuta Target en la [ventana interactiva de Python](interactive-repl.md); el nombre para mostrar opcional se usa como título de la ventana.</li><li>**none**: El comportamiento es el mismo que con console.</li></ul>|
 | WorkingDirectory | Optional | Carpeta en la que se va a ejecutar el comando. |
-| ErrorRegex<br>WarningRegEx | Optional | Se usa únicamente cuando ExecuteIn es `output`. Ambos valores especifican una expresión regular con la que Visual Studio analiza los resultados del comando para mostrar los errores y las advertencias en la ventana Lista de errores. Si no se especifica, el comando no afecta a la ventana Lista de errores. Para más información sobre qué espera Visual Studio, vea [Grupos de capturas con nombre](#named-capture-groups-for-regular-expression). |
+| ErrorRegex<br>WarningRegEx | Optional | Se usa únicamente cuando ExecuteIn es `output`. Ambos valores especifican una expresión regular con la que Visual Studio analiza los resultados del comando para mostrar los errores y las advertencias en la ventana Lista de errores. Si no se especifica, el comando no afecta a la ventana Lista de errores. Para más información sobre qué espera Visual Studio, vea [Grupos de capturas con nombre](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Optional | Lista de requisitos de paquete del comando en el que se usa el mismo formato que en [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). El comando **Ejecutar PyLint**, por ejemplo, especifica `pylint>=1.0.0`. Antes de ejecutar el comando, Visual Studio comprueba que todos los paquetes que figuran en la lista están instalados. Visual Studio usa pip para instalar los paquetes que faltan. |
 | Entorno | Optional | Cadena de variables de entorno que hay que definir antes de ejecutar el comando. Cada variable usa el formato NAME=VALUE con varias variables separadas por punto y coma. Una variable con varios valores debe incluirlos entre comillas simples o dobles, por ejemplo, "NAME=VALUE1;VALUE2". |
 

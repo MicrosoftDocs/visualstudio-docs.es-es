@@ -2,7 +2,7 @@
 title: "Trabajo con Python en Visual Studio, paso 4: depuración | Microsoft Docs"
 description: "Paso 4 de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata cómo ejecutar código de Python en el depurador."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed662831d37d466a89b2899b2e6822509b22c9a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8c9cf775bb7edbdb51f7eb5ce6994fedaee13c9f
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
@@ -32,15 +32,14 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 1. Reemplace el código del archivo `PythonApplication1.py` por lo siguiente. Esta variación del código expande `make_dot_string` para que pueda examinar sus pasos discretos en el depurador. También coloca el bucle `for` en una función `main` y lo ejecuta explícitamente mediante una llamada a esa función:
 
     ```python
-    import sys
-    from math import sin, cos, radians
+    from math import cos, radians
 
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
         numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
-        str = ' ' * numspaces + 'o'                  # place 'o' after the spaces
-        return str
+        st = ' ' * numspaces + 'o'                   # place 'o' after the spaces
+        return st
 
     def main():
         for i in range(0, 1800, 12):

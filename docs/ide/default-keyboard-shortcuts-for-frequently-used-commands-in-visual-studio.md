@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Métodos abreviados de teclado para comandos de uso frecuente en Visual Studio
 
@@ -66,7 +68,7 @@ Puede acceder a comandos de uso frecuente en Visual Studio con estos métodos ab
 |Edit.Delete|Supr [Global, Team Explorer]<br /><br /> o Mayús+Supr [Diagrama de secuencia, Diagrama de actividades de UML, Diagramas de capas]<br /><br /> o Ctrl+Supr [Diagrama de clases]|  
 |Edit.Find|Ctrl+F [Global]|  
 |Edit.FindAllReferences|Mayús+F12 [Global]|  
-dit.FindinFiles|Ctrl+Mayús+F [Global]|  
+|Edit.FindinFiles|Ctrl+Mayús+F [Global]|  
 |Edit.FindNext|F3 [Global]|  
 |Edit.FindNextSelected|Ctrl+F3 [Global]|  
 |Edit.FormatDocument|Ctrl+K, Ctrl+D [Editor de texto]|  
@@ -82,7 +84,7 @@ dit.FindinFiles|Ctrl+Mayús+F [Global]|
 |Edit.LineDownExtendColumn|Mayús+Alt+Flecha abajo [Editor de texto]|  
 |Edit.LineOpenAbove|Ctrl+Intro [Editor de texto]|  
 |Edit.ListMembers|Ctrl+J [Editor de texto, Diseñador de flujo de trabajo]<br /><br /> o Ctrl+K, Ctrl+L [Diseñador de flujo de trabajo]<br /><br /> o Ctrl+K, L [Diseñador de flujo de trabajo]|  
-dit.NavigateTo|Ctrl+, [Global]|  
+|Edit.NavigateTo|Ctrl+, [Global]|  
 |Edit.OpenFile|Ctrl+Mayús+G [Global]|  
 |Edit.OvertypeMode|Ins [Editor de texto]|  
 |Edit.ParameterInfo|Ctrl+Mayús+Barra espaciadora [Editor de texto, Diseñador de flujo de trabajo]<br /><br /> o Ctrl+K, Ctrl+P [Diseñador de flujo de trabajo]<br /><br /> o Ctrl+K, P [Diseñador de flujo de trabajo]|  
@@ -93,7 +95,7 @@ dit.NavigateTo|Ctrl+, [Global]|
 |Edit.SelectAll|Ctrl+A [Global]|  
 |Edit.SelectCurrentWord|Ctrl+W [Editor de texto]|  
 |Edit.SelectionCancel|Esc [Editor de texto, Diseñador de informes, Diseñador de configuración, Diseñador de Windows Forms, Editor de recursos administrados]|  
-dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|  
+|Edit.SurroundWith|Ctrl+K, Ctrl+S [Global]|  
 |Edit.TabLeft|Mayús+Tabulación [Editor de texto, Diseñador de informes, Editor de formularios Windows Forms]|  
 |Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L [Editor de texto]|  
 |Edit.ToggleBookmark|Ctrl+K, Ctrl+K [Editor de texto]|  
@@ -155,7 +157,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |View.ServerExplorer|Ctrl+Alt+S [Global]|  
 |View.ShowSmartTag|Ctrl+. [Global]<br /><br /> o Mayús+Alt+F10 [Global, Vista de diseño del editor de HTML]|  
 |View.SolutionExplorer|Ctrl+Alt+L [Global]|  
-iew.TfsTeamExplorer|CTRL+\\, CTRL+M [Global]|  
+|View.TfsTeamExplorer|CTRL+\\, CTRL+M [Global]|  
 |View.Toolbox|Ctrl+Alt+X [Global]|  
 |View.ViewCode|Intro [Diagrama de clases]<br /><br /> o F7 [Diseñador de configuración]|  
 |View.ViewDesigner|Mayús+F7 [Vista de código fuente del editor de HTML]|  

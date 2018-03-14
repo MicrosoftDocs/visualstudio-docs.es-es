@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 8655a03659bd3b69e23fd155620d42df6d52386c
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -34,7 +36,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  El ejemplo siguiente no utiliza protección con contraseña; sin embargo, es recomendable considerar el uso de una contraseña al agregar protección al documento. Para obtener más información, vea el ejemplo de Document Protector en [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
- También puede usar los controles de contenido para proteger elementos de documentos. Para obtener más información, consulta [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+ También puede usar los controles de contenido para proteger elementos de documentos. Para obtener más información, consulta [Cómo: Proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
 ## <a name="protecting-a-document-that-is-part-of-a-document-level-customization"></a>Proteger un documento que forma parte de una personalización de nivel de documento  
   

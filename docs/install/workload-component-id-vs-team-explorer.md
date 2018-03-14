@@ -5,21 +5,23 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/01/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.workload: multiple
-ms.openlocfilehash: f865e5de3e4936e7003bce71ea628dae033432c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 180e7d96e88e1b8868fffbd6157fbcb901a8010c
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Directorio de componentes de Visual Studio Team Explorer 2017
 
@@ -43,7 +45,7 @@ Para obtener más información acerca de cómo utilizar estos identificadores, v
 
 Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.0.26606.0 | Obligatorio
+Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 15.6.27309.0 | Obligatorio
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de Visual Studio para usuarios de C++ | 15.0.27128.1 | Optional
 
 ## <a name="unaffiliated-components"></a>Componentes no afiliados

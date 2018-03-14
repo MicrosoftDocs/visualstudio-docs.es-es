@@ -17,10 +17,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Inicio rápido: Crear una aplicación de Windows Forms en Visual Studio con Visual Basic
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de entre 5 y 10 minutos de duración, creará una sencilla aplicación de Visual Basic que tiene una interfaz de usuario basada en Windows (UI).
