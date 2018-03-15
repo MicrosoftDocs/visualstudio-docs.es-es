@@ -1,13 +1,13 @@
 ---
 title: "Ver una instantánea mediante IntelliTrace paso-back - Visual Studio | Documentos de Microsoft"
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Ver las instantáneas con devolución de paso de IntelliTrace en Visual Studio
 
 Devolución de paso de IntelliTrace automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
-Paso de copia de IntelliTrace está disponible a partir de Visual Studio Enterprise 2017 15.5 y versiones posteriores, y requiere actualización de aniversario de Windows 10 o superior. La característica se admite actualmente para la depuración de ASP.NET, formularios Windows Forms, WPF, aplicaciones de consola administrado y bibliotecas de clases administradas. No se admite actualmente la depuración de aplicaciones ASP.NET Core, .NET Core o UWP. 
+Paso de copia de IntelliTrace está disponible a partir de Visual Studio Enterprise 2017 15.5 y versiones posteriores, y requiere actualización de aniversario de Windows 10 o superior. La característica se admite actualmente para la depuración de ASP.NET, formularios Windows Forms, WPF, aplicaciones de consola administrado y bibliotecas de clases administradas. A partir de Visual Studio de 2017 Enterprise versión 15.7 preview 1, también se admite la característica de núcleo de ASP.NET y .NET Core. No se admite actualmente la depuración de aplicaciones de UWP.
+
+En este tutorial, aprenderá lo siguiente:
+
+> [!div class="checklist"]
+> * Habilitar las instantáneas y los eventos de Intellitrace
+> * Navegar mediante comandos de paso atrás y hacia delante el paso de eventos
+> * Ver las instantáneas de eventos
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Habilitar el modo de eventos y las instantáneas de IntelliTrace 
 
-1. En Visual Studio Enterprise, vaya a **Herramientas > Opciones > IntelliTrace** configuración y seleccione la opción **IntelliTrace eventos e instantáneas**. 
+1. Abra el proyecto en Visual Studio Enterprise.
+
+1. Vaya a **Herramientas > Opciones > IntelliTrace** configuración y seleccione la opción **IntelliTrace eventos e instantáneas**. 
 
     ![Habilitar el modo de eventos de IntelliTrace e instantáneas](../debugger/media/intellitrace-enable-snapshots.png "modo de habilitar los eventos de IntelliTrace e instantáneas")
 
-2. Abra el proyecto en Visual Studio.
-
-3. Establezca uno o más puntos de interrupción en el proyecto e iniciar la depuración (presione **F5**), o iniciar la depuración recorriendo el código (**F10** o **F11**).
+1. Establezca uno o más puntos de interrupción en el proyecto e iniciar la depuración (presione **F5**), o iniciar la depuración recorriendo el código (**F10** o **F11**).
 
     IntelliTrace toma una instantánea del proceso de la aplicación en el depurador de cada evento de paso y de punto de interrupción. Estos eventos se registran en el **eventos** pestaña en el **herramientas de diagnóstico** ventana, junto con otros eventos de IntelliTrace. Para abrir esta ventana, elija **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
 
@@ -49,7 +56,7 @@ Paso de copia de IntelliTrace está disponible a partir de Visual Studio Enterpr
 
 1. Navegar entre los eventos mediante el uso de la **paso atrás (Alt + [)** y **paso hacia delante (Alt +])** botones en la barra de herramientas de depuración.
 
-    Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **ventana de herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
+    Estos botones navegar por los eventos que aparecen en la **eventos** pestaña en el **ventana de herramientas de diagnóstico**. Ejecución paso a paso hacia atrás o hacia delante a un evento automáticamente activa [depuración histórica](../debugger/historical-debugging.md) en el evento seleccionado.
 
     ![Retroceder o avanzar botones](../debugger/media/intellitrace-step-back-icons-description.png "botones paso hacia atrás y hacia delante de paso")
 
@@ -73,9 +80,7 @@ Paso de copia de IntelliTrace está disponible a partir de Visual Studio Enterpr
 
     ![Información general de las copias de paso de IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "información general de IntelliTrace paso invertido")
 
-## <a name="next-steps"></a>Pasos siguientes  
- Para obtener información sobre cómo inspeccionar las variables en Visual Studio, vea [paseo por las características del depurador](../debugger/debugger-feature-tour.md)  
- Para obtener información general de depuración histórica, vea [depuración histórica](../debugger/historical-debugging.md).  
+    Para obtener más información acerca de cómo inspeccionar las variables en Visual Studio, vea [paseo por las características del depurador](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
@@ -111,3 +116,10 @@ El impacto en el rendimiento general de ejecución paso a paso depende de la apl
 * Al depurar una aplicación cuyo proceso tiene un gran número de regiones de memoria exclusiva, como una aplicación que carga un gran número de archivos DLL, ejecución paso a paso el rendimiento con las instantáneas habilitadas puede verse afectado. Este problema se corregirá en una versión futura de Windows. Si experimenta este problema, llegar a nosotros en stepback@microsoft.com. 
 
 * Al guardar un archivo con **Depurar > IntelliTrace > sesión de IntelliTrace guardar** en el modo de eventos y las instantáneas, los datos adicionales que se capturan de instantáneas no están disponibles en el archivo. iTrace. En los eventos de punto de interrupción y examinar, verá la misma información como si se ha guardado el archivo en modo de solo eventos de IntelliTrace. 
+
+## <a name="next-steps"></a>Pasos siguientes
+
+En este tutorial, ha aprendido cómo utilizar la devolución de paso de IntelliTrace. Puede que desee obtener más información sobre otras características de IntelliTrace.
+
+> [!div class="nextstepaction"]
+> [Características de IntelliTrace](../debugger/intellitrace-features.md)

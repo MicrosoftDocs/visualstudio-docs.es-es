@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>Características de IntelliTrace
 
@@ -55,7 +55,7 @@ Si está depurando, detenga la depuración. Vaya a **Herramientas > Opciones > I
 
 Esta opción no está habilitada de forma predeterminada, pero IntelliTrace puede capturar instantáneas de la aplicación en cada evento de paso de punto de interrupción y el depurador, y puede ver las instantáneas de esta en una sesión de depuración histórica. Una instantánea proporciona una vista de su estado completo de la aplicación. Para habilitar la captura de instantáneas, vaya a **Herramientas > Opciones > IntelliTrace > General**y seleccione **IntelliTrace eventos e instantáneas**. Para obtener más información, vea [ver instantáneas mediante la devolución de paso de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
 
-Las instantáneas están disponibles en Visual Studio Enterprise 2017 15.5 y versiones posteriores, y requiere actualización de aniversario de Windows 10 o superior.  Las instantáneas no están actualmente disponibles para las aplicaciones .NET Core y ASP.NET Core.
+Las instantáneas están disponibles en Visual Studio Enterprise 2017 15.5 y versiones posteriores, y requiere actualización de aniversario de Windows 10 o superior.  Para las aplicaciones de .NET Core y ASP.NET Core, se requiere Visual Studio Enterprise 2017 versión 15.7 vista previa 1.
 
 ## <a name="GoingFurther"></a> Recopilar eventos de IntelliTrace e información de llamadas
 

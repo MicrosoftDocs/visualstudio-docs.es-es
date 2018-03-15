@@ -34,16 +34,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en la ventana **Inspección** mediante especificadores de formato.  
   
- También puede usar especificadores de formato en las ventanas **Inmediato** y **Comandos** , así como en las ventanas de código fuente. Si hace una pausa sobre una expresión de esas ventanas, el resultado aparecerá en un cuadro desplegable de información sobre datos. La visualización de información sobre datos refleja el especificador de formato.  
+ También puede utilizar especificadores de formato en el **inmediato** ventana, el **comando** ventana, en [puntos de seguimiento](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)así como en ventanas de código fuente. Si hace una pausa en una expresión de esas ventanas, el resultado aparece en una información sobre datos. La visualización de información sobre datos refleja el especificador de formato.  
   
 > [!NOTE]
 >  Cuando el depurador nativo de Visual Studio cambia a un nuevo motor de depuración, se han agregado algunos especificadores de formato nuevos y se han quitado otros más antiguos. El depurador antiguo todavía se usa cuando se realiza depuración de interoperabilidad (administrada y nativa mixta) con C++/CLI. Las secciones siguientes de este tema muestran los especificadores de formato de cada motor de depuración.
@@ -62,7 +62,7 @@ int main() {
 }  
 ```  
   
- Agregar el `my_var1` variable a la **inspección** ventana (durante la depuración, **Depurar > Windows > inspección > Inspección 1**) y establezca la presentación en formato hexadecimal (en el **ver**ventana, haga clic en la variable y seleccione **presentación Hexadecimal**). Ahora la ventana Inspección muestra que contiene el valor 0x0065. Para ver este valor expresado como carácter, en vez de como entero, en la columna Nombre, agregue el especificador de formato de carácter **, c**después del nombre de la variable: La columna **Valor** muestra ahora **101 'e'**.  
+ Agregar el `my_var1` variable a la **inspección** ventana (durante la depuración, **Depurar > Windows > inspección > Inspección 1**) y, a continuación, establezca la presentación en formato hexadecimal (en el **ver**ventana, haga clic en la variable y seleccione **presentación Hexadecimal**). Ahora la ventana Inspección muestra que contiene el valor 0x0065. Para ver este valor expresado como carácter, en vez de como entero, en la columna Nombre, agregue el especificador de formato de carácter **, c**después del nombre de la variable: La columna **Valor** muestra ahora **101 'e'**.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
@@ -83,12 +83,12 @@ int main() {
 |su|Cadena Unicode (codificación UTF-16)|\<ubicación > L "Hola a todos"|L"hola a todos"<br /><br /> u"hola a todos"|  
 |sub|Cadena de Unicode (codificación UTF-16) (sin las comillas)|\<ubicación > L "Hola a todos"|hola a todos|  
 |bstr|Cadena BSTR|\<ubicación > L "Hola a todos"|L"hola a todos"|  
-|env|Bloque de entorno (doble null la cadena terminada)|\<ubicación > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Bloque de entorno (doble null la cadena terminada)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|cadena UTF-32|\<ubicación > U "Hola a todos"|u"hola a todos"|  
 |**s32b**|cadena UTF-32 (sin comillas)|\<ubicación > U "Hola a todos"|hola a todos|  
 |**en**|enum|Sábado(6)|Sábado|  
 |**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<ubicación > {\<primer miembro >}|\<ubicación > {\<primer miembro >, \<segundo miembro >,...}|  
-|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<ubicación >, {miembro = value...}|{miembro = value...}|  
+|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<ubicación >, {miembro = value...}|{member=value...}|  
 |**nd**|Muestra solo la información de la clase, omitiendo las clases derivadas|`(Shape*) square` incluye la información de clase base y derivada|Muestra únicamente la información de clase base|  
 |hr|HRESULT o código de error Win32. (Ahora, el depurador descodifica los valores HRESULT automáticamente, de modo que este especificador no es necesario en esos casos).|S_OK|S_OK|  
 |wc|Marcador de clase de ventana|0x0010|WC_DEFAULTCHAR|  
@@ -143,7 +143,7 @@ int main() {
 |**mq**|2 palabras cuádruples|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|Caracteres de 2 bytes (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Especificador de tamaño para punteros como matrices en la depuración de interoperabilidad con C++ / CLI  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Especificador de tamaño para punteros como matrices en la depuración de interoperabilidad con C++ / CLI  
  Si tiene un puntero a un objeto que desea ver como una matriz, puede utilizar un entero para especificar el número de elementos de matriz:  
   
 |Especificador|Formato|Expresión|Valor mostrado|  

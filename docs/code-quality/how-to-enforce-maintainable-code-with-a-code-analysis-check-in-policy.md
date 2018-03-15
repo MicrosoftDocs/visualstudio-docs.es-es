@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Cómo: exigir código mantenible con una directiva de protección de análisis de código
 
@@ -31,23 +31,23 @@ Los administradores de control de versiones de Team Foundation pueden agregar la
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir el editor de directivas de análisis de código
 
-1. en **Team Explorer**, haga clic en el proyecto de equipo, haga clic en **configuración del proyecto de equipo**y, a continuación, haga clic en **Control de código fuente**.
+1. En **Team Explorer**, haga clic en el proyecto de equipo, haga clic en **configuración del proyecto de equipo**y, a continuación, haga clic en **Control de código fuente**.
 
-     The **Source Control** dialog box appears.
+     El **Control de código fuente** aparece el cuadro de diálogo.
 
-2. en el **directiva de protección** ficha y haga clic en **agregar**.
+2. En el **directiva de protección** ficha y haga clic en **agregar**.
 
-     The **Add Check-in Policy** dialog box appears.
+     El **Agregar directiva de protección** aparece el cuadro de diálogo.
 
-3. en el **directiva de protección** lista, seleccione la **análisis de código** casilla de verificación y, a continuación, haga clic en **Aceptar**.
+3. En el **directiva de protección** lista, seleccione la **análisis de código** casilla de verificación y, a continuación, haga clic en **Aceptar**.
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     El **Editor de directiva de análisis de código** aparece el cuadro de diálogo.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Para habilitar reglas de mantenimiento de análisis de código
 
-1. en el **Editor de directiva de análisis de código** cuadro de diálogo **configuración de reglas de**, expanda la **reglas de mantenimiento** nodo.
+1. En el **Editor de directiva de análisis de código** cuadro de diálogo **configuración de reglas de**, expanda la **reglas de mantenimiento** nodo.
 
-2. Seleccione las casillas de las reglas siguientes:
+2. Active las casillas de verificación de las reglas siguientes:
 
     -   Profundidad de herencia: **CA1501 AvoidExcessiveInheritance** -umbral: advertencia en más de 5 niveles de profundidad
 
@@ -63,5 +63,5 @@ Los administradores de control de versiones de Team Foundation pueden agregar la
 
 ## <a name="see-also"></a>Vea también
 
-[Los valores de las métricas de código](../code-quality/code-metrics-values.md)
-[crear y usar directivas de protección de análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Valores de métrica de código](../code-quality/code-metrics-values.md)
+- [Crear y usar directivas de protección de análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

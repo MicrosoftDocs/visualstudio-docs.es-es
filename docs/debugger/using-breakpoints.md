@@ -41,16 +41,16 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
-ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
+ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción detienen la ejecución del depurador para, por ejemplo, ver el estado de las variables de código o examinar la pila de llamadas. Constituyen una de las técnicas de depuración más importantes en los cuadros de herramientas de los desarrolladores.  
   
-##  <a name="BKMK_Overview"></a>Establecer un punto de interrupción en código fuente  
+##  <a name="BKMK_Overview"></a> Establecer un punto de interrupción en código fuente  
  Establecer un punto de interrupción en el código fuente haciendo clic en el margen izquierdo de un archivo de código fuente o coloque el cursor en una línea de código y presione F9. El punto de interrupción aparece como un punto rojo en el margen izquierdo y la línea de código se muestra coloreada:  
   
  ![Establecer un punto de interrupción](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
@@ -65,7 +65,30 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
   
  Los puntos de interrupción pueden establecerse en cualquier línea de código ejecutable. Por ejemplo, en el código de C# anterior se puede establecer un punto de interrupción en la declaración de variable, en el bucle `for` o en cualquier código incluido dentro del bucle `for` , pero no en las declaraciones de clase o espacio de nombres ni en la signatura del método.  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Establecer otros tipos de puntos de interrupción  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Establecer un punto de interrupción de función  
+  Se puede interrumpir la ejecución cuando se llama a una función.
+  
+1. Abra la **puntos de interrupción** ventana y elija **nuevo > punto de interrupción de función**.
+
+2. Escriba un nombre de función en la **nombre de la función** cuadro. 
+
+   Para reducir el número de la especificación de función:
+   
+   Utilice el nombre de función completo. 
+   Ejemplo: Namespace1.ClassX.MethodA()
+   
+   Agregue los tipos de parámetro de una función sobrecargada. 
+   Ejemplo: MethodA (int, string)
+   
+   Use la '!' símbolo para especificar el módulo.
+   Ejemplo: App1.dll! MethodA
+   
+   Utilice el operador de contexto en C++ nativo.
+   {función, [módulo]} [+&lt;desplazamiento de línea desde el inicio del método&gt;] ejemplo: {MethodA, App1.dll}+2
+
+3. En el **lenguaje** de lista desplegable, elija el idioma específico de la función que desea interrumpir en.
+  
+##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Establecer otros tipos de puntos de interrupción  
  También se pueden establecer puntos de interrupción en la pila de llamadas, en la ventana Desensamblado y, en código de C++ nativo, en una condición de datos o dirección de memoria.  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Establecer un punto de interrupción en la ventana Pila de llamadas  
@@ -213,7 +236,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 ##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Acciones de punto de interrupción y puntos de seguimiento  
  Un punto de seguimiento es un punto de interrupción que imprime un mensaje en la ventana de salida. Un punto de seguimiento puede actuar como una instrucción de seguimiento temporal en el lenguaje de programación.  
   
- En la ventana **Configuración del punto de interrupción** , active la casilla **Acciones** . En el grupo **Acción** , elija **Registrar un mensaje en la ventana de salida** . Puede imprimir una cadena genérica, como **Esto es una prueba**. Para incluir el valor de una variable o expresión, enciérrela entre llaves.  
+ En la ventana **Configuración del punto de interrupción** , active la casilla **Acciones** . En el grupo **Acción** , elija **Registrar un mensaje en la ventana de salida** . Puede imprimir una cadena genérica, como **Esto es una prueba**. Para incluir el valor de una variable o expresión, enciérrela entre llaves.  También puede utilizar especificadores de formato ([C#](../debugger/format-specifiers-in-csharp.md) y [C++](../debugger/format-specifiers-in-cpp.md)) para los valores incluidos en un punto de seguimiento.
   
  Para interrumpir la ejecución cuando se alcanza el punto de seguimiento, desactive la casilla **Continuar la ejecución** . Si se activa **Continuar la ejecución** , la ejecución no se detiene. En ambos casos, se imprime el mensaje.  
   

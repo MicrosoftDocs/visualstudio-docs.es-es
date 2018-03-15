@@ -20,14 +20,17 @@ caps.latest.revision:
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8659c7a4ece5e30378838f20341ec6712f77ca3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="proto-property-object-javascript"></a>__proto__ (propiedad) (objeto) (JavaScript)
 Contiene una referencia al prototipo interno del objeto especificado.  
+
+> [!WARNING]
+> El `__proto__` propiedad es una característica heredada. Use [Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md) en su lugar.
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -37,7 +40,7 @@ object.__proto__
   
 #### <a name="parameters"></a>Parámetros  
  `object`  
- Obligatorio. Objeto en el que se va a establecer el prototipo.  
+ Requerido. Objeto en el que se va a establecer el prototipo.  
   
 ## <a name="remarks"></a>Comentarios  
  El `__proto__` propiedad puede utilizarse para establecer el prototipo de un objeto.  

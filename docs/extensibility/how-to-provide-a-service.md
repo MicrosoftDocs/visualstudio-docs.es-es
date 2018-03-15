@@ -17,16 +17,16 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>Cómo: proporcionar un servicio
 Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para proporcionar un servicio, un VSPackage debe registrar el servicio con Visual Studio y agregue el servicio.  
   
- El <xref:Microsoft.VisualStudio.Shell.Package> clase implementa tanto <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> y <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>contiene métodos de devolución de llamada que proporcionan servicios a petición.  
+ El <xref:Microsoft.VisualStudio.Shell.Package> clase implementa tanto <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> y <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contiene métodos de devolución de llamada que proporcionan servicios a petición.  
   
  Para obtener más información acerca de los servicios, vea [servicio Essentials](../extensibility/internals/service-essentials.md) .  
   
@@ -35,7 +35,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
   
 #### <a name="implementing-a-service"></a>Implementar un servicio  
   
-1.  Cree un proyecto VSIX (**archivo > Nuevo > proyecto > Visual C# > Extensiblity > proyecto VSIX**).  
+1.  Cree un proyecto VSIX (**archivo > Nuevo > proyecto > Visual C# > extensibilidad > proyecto VSIX**).  
   
 2.  Agregar un paquete VSPackage al proyecto. Seleccione el nodo de proyecto en el **el Explorador de soluciones** y haga clic en **Agregar > nuevo elemento > elementos de Visual C# > extensibilidad > paquete de Visual Studio**.  
   
@@ -47,7 +47,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
   
     -   Una clase que implementa el servicio y la interfaz de servicio.  
   
-     En el ejemplo siguiente se muestra una implementación muy básica de los tres tipos. El constructor de la clase de servicio debe establecer el proveedor de servicios.  
+     En el ejemplo siguiente se muestra una implementación básica de los tres tipos. El constructor de la clase de servicio debe establecer el proveedor de servicios.  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -117,7 +117,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -125,7 +125,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
     > [!NOTE]
     >  Visual Studio puede rechazar una solicitud para proporcionar un servicio. Lo hace si otro VSPackage ya proporciona el servicio.  
   
-3.  Ahora puede hacer que el servicio y utilizar sus métodos. Le mostraremos en el inicializador, pero puede obtener el servicio en cualquier lugar que desea usar el servicio.  
+3.  Ahora puede hacer que el servicio y utilizar sus métodos. En el ejemplo siguiente muestra el uso del servicio en el inicializador, pero puede obtener el servicio en cualquier lugar que desea usar el servicio.  
   
     ```csharp  
     protected override void Initialize()  
@@ -136,7 +136,7 @@ Un VSPackage puede proporcionar servicios que pueden usar otros VSPackages. Para
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

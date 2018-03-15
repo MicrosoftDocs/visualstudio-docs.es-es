@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 dev_langs:
@@ -13,15 +14,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2b89abee-04fa-47e6-9676-980016cff5f8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 489d329528e88c27df03ca0e6d6d1608a39446e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4ee75310f1d976e0a0896b1be34a80c594cdd054
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="proxy-object-javascript"></a>Objeto proxy (JavaScript)
 Habilita el comportamiento personalizado de un objeto.  
@@ -34,10 +35,10 @@ proxyObj = new Proxy(target, handler)
   
 #### <a name="parameters"></a>Parámetros  
  `target`  
- Obligatorio. Un objeto o una función que debe virtualizar el proxy.  
+ Requerido. Un objeto o una función que debe virtualizar el proxy.  
   
  `handler`  
- Obligatorio. Un objeto con métodos (capturas) que implementan el comportamiento personalizado.  
+ Requerido. Un objeto con métodos (capturas) que implementan el comportamiento personalizado.  
   
 ## <a name="remarks"></a>Comentarios  
  Se utiliza un objeto `Proxy` para interceptar las operaciones de bajo nivel internas en otro objeto. Los objetos proxy pueden utilizarse, entre otros fines, para la intercepción, virtualización de objetos y los registros/la generación de perfiles.  
@@ -69,9 +70,9 @@ proxyObj = new Proxy(target, handler)
 ```JavaScript  
 var target = {};  
 var handler = {  
-  get: function (receiver, name) {  
+  get: function (target, property, receiver) {  
     // This example includes a template string.  
-    return `Hello, ${name}!`;  
+    return `Hello, ${property}!`;  
   }  
 };  
   

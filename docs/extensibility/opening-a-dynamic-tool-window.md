@@ -17,14 +17,14 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96250c79ea283117254a96875c3a1f03f4cb30b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 197bda3f825d0e709c1bc9ae08d8f0018b8b07c5
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Abra una ventana de herramientas dinámicas
-Las ventanas de herramientas normalmente se abren desde un comando en un menú o un método abreviado de teclado equivalente. En ocasiones, sin embargo, puede que tenga una ventana de herramientas que se abre cada vez que se aplica un contexto específico de la interfaz de usuario y se cierra cuando el contexto de la interfaz de usuario ya no es aplicable. Ventanas de herramienta como estas se conocen como *dinámica* o *visibles automáticamente*.  
+Las ventanas de herramientas normalmente se abren desde un comando en un menú o un método abreviado de teclado equivalente. En ocasiones, sin embargo, puede que tenga una ventana de herramientas que se abre cada vez que se aplica un contexto específico de la interfaz de usuario y se cierra cuando el contexto de la interfaz de usuario ya no es aplicable. Estos tipos de ventanas de herramientas se denominan *dinámica* o *visibles automáticamente*.  
   
 > [!NOTE]
 >  Para obtener una lista de contextos de interfaz de usuario predefinidos, vea <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>. Para el  
@@ -40,21 +40,21 @@ Las ventanas de herramientas normalmente se abren desde un comando en un menú o
   
 1.  Crear un proyecto VSIX denominado **DynamicToolWindow** y agregue una plantilla de elemento de ventana de herramienta denominada **DynamicWindowPane.cs**. Para obtener más información, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  En el archivo DynamicWindowPanePackage.cs, busque la declaración de DynamicWindowPanePackage. Agregar el <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> y los atributos de T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute para registrar la ventana de herramientas.  
+2.  En el archivo DynamicWindowPanePackage.cs, busque la declaración de DynamicWindowPanePackage. Agregar el <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> y <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> atributos para registrar la ventana de herramientas.  
   
     ```vb  
-    [[ProvideToolWindow(typeof(DynamicWindowPane)]  
+    [ProvideToolWindow(typeof(DynamicWindowPane)]  
     [ProvideToolWindowVisibility(typeof(DynamicWindowPane), VSConstants.UICONTEXT.SolutionExists_string)]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     [ProvideToolWindow(typeof(DynamicToolWindow.DynamicWindowPane))]  
-    [Guid(DynamicWindowPanePackageGuids.PackageGuidString)]  
+    [Guid(DynamicWindowPanePackage.PackageGuidString)]  
     public sealed class DynamicWindowPanePackage : Package  
     {. . .}  
     ```  
   
-     Esto registra la ventana de herramienta denominada DynamicWindowPane como una ventana temporal que no se conserva cuando se cierra y se vuelve a abrir Visual Studio. Se abre DynamicWindowPane cada vez que <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> se aplica y cerrado en caso contrario.  
+     Los atributos anteriores registrar la ventana de herramienta denominada DynamicWindowPane como una ventana temporal que no se conserva cuando se cierra y se vuelve a abrir Visual Studio. Se abre DynamicWindowPane cada vez que <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> se aplica y cerrado en caso contrario.  
   
 3.  Compile la solución y comience la depuración. Debe aparecer la instancia experimental. No debería ver la ventana de herramientas.  
   

@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 
 manager: douge
-ms.openlocfilehash: 0465057549543d8e07742e3b3806ebdcab28eb28
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 144410e0e9b5b8d5d40fee86a1573bd179aea44a
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands frente a OleMenuCommands
 Puede crear comandos de menú mediante la derivación de los objetos <xref:System.ComponentModel.Design.MenuCommand> o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> e implementando los controladores de eventos apropiados. En la mayoría de los casos puede usar <xref:System.ComponentModel.Design.MenuCommand>, como hace la plantilla de proyecto de VSPackage, pero en ocasiones puede que deba usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -190,9 +190,9 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
   
     |Propiedad MenuCommand|Marca OLECMDF|  
     |--------------------------|------------------|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
-    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Checked%2A> = `true`|OLECMDF_LATCHED|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Visible%2A> = `false`|OLECMDF_INVISIBLE|  
+    |<xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> = `true`|OLECMDF_ENABLED|  
   
      Para cambiar el texto de un comando de menú, use la propiedad <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A> en el objeto <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , como se muestra en el ejemplo siguiente.  
   
@@ -238,7 +238,7 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
   
     -   Si el comando forma parte de un menú contextual y está oculto de forma predeterminada:  
   
-         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
+         `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
     -   Si el comando usa la marca `TEXTCHANGES` , establezca el elemento `rgwz` del parámetro `pCmdText` en el nuevo texto del comando y establezca el elemento `cwActual` del parámetro `pCmdText` en el tamaño de la cadena de comandos.  
   

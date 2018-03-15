@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0cb73a5e5f40d21a5b17faae9602e40f7cd39d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: e13fb299d513f045c4c7c339a9c6602890079e40
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Crear una ventana de herramientas de varias instancias
 Puede programar una ventana de herramientas para que varias instancias del mismo pueden estar abiertos simultáneamente. De forma predeterminada, las ventanas de herramientas pueden tener solo una instancia abiertos.  
   
- Cuando se utiliza una ventana de herramientas de varias instancias, puede mostrar varias fuentes relacionadas de información al mismo tiempo. Por ejemplo, podría poner un multilínea <xref:System.Windows.Forms.TextBox> control en una ventana de herramientas de varias instancias de modo que varios fragmentos de código están disponibles al mismo tiempo durante una sesión de programación. También por ejemplo, podría colocar un <xref:System.Windows.Forms.DataGrid> cuadro y una lista desplegable de control en una ventana de herramientas de varias instancias para que pueden realizar el seguimiento simultáneamente varios orígenes de datos en tiempo real.  
+ Cuando se utiliza una ventana de herramientas de varias instancias, puede mostrar varias fuentes relacionadas de información al mismo tiempo. Por ejemplo, podría poner un multilínea <xref:System.Windows.Forms.TextBox> control en una ventana de herramientas de varias instancias de modo que varios fragmentos de código están disponibles al mismo tiempo durante una sesión de programación. Además, por ejemplo, podría colocar un <xref:System.Windows.Forms.DataGrid> cuadro y una lista desplegable de control en una ventana de herramientas de varias instancias para que pueden realizar el seguimiento simultáneamente varios orígenes de datos en tiempo real.  
   
 ## <a name="creating-a-basic-single-instance-tool-window"></a>Crear una ventana de herramientas Basic (instancia única)  
   
@@ -36,14 +38,14 @@ Puede programar una ventana de herramientas para que varias instancias del mismo
   
 ## <a name="making-a-tool-window-multi-instance"></a>Hacer que una instancia múltiple de ventana de herramienta  
   
-1.  Abra la **MIToolWindowPackage.cs** de archivos y busque el `ProvideToolWindow` atributo. y el `MultiInstances=true` parámetro, tal como se muestra en el ejemplo siguiente.  
+1.  Abra la **MIToolWindowPackage.cs** de archivos y busque el `ProvideToolWindow` atributo. y el `MultiInstances=true` parámetro, tal como se muestra en el ejemplo siguiente:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
         [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
         [ProvideMenuResource("Menus.ctmenu", 1)]  
         [ProvideToolWindow(typeof(MultiInstanceToolWindow.MIToolWindow), MultiInstances = true)]  
-        [Guid(MIToolWindowPackageGuids.PackageGuidString)]  
+        [Guid(MIToolWindowPackage.PackageGuidString)]  
         public sealed class MIToolWindowPackage : Package  
     {. . .}  
     ```  
@@ -52,7 +54,7 @@ Puede programar una ventana de herramientas para que varias instancias del mismo
   
 3.  Para crear una instancia de la ventana de herramienta, llame a la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método y establezca su `id` en un valor disponible y su `create` indicador en `true`.  
   
-     De forma predeterminada, el valor de la `id` parámetro de la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método es `0`. Esto hace que una ventana de herramientas de instancia única. Para que más de una instancia se hospede, cada instancia debe tener su propia estructura `id`.  
+     De forma predeterminada, el valor de la `id` parámetro de la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método es `0`. Este valor hace que una ventana de herramientas de instancia única. Para que más de una instancia se hospede, cada instancia debe tener su propia estructura `id`.  
   
 4.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método en el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto devuelto por la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propiedad de la instancia de la ventana de herramienta.  
   

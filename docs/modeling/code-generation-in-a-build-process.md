@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Generación de código en un proceso de compilación
 [Transformación de texto](../modeling/code-generation-and-t4-text-templates.md) se pueden invocar como parte de la [proceso de compilación](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) de un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución. Hay tareas de compilación que están especializadas para la transformación de texto. Las tareas de compilación T4 ejecutan plantillas de texto en tiempo de diseño y también compilan plantillas de texto en tiempo de ejecución (preprocesadas).  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  Esto significa que no tiene acceso cosas como nombres de archivo de proyecto de la misma manera cuando se compila una plantilla de texto en MSBuild. Sin embargo, puede utilizar [pasar información del entorno a plantillas de texto y procesadores de directivas mediante el uso de parámetros de compilación](#parameters).  
   
-##  <a name="buildserver"></a>Configurar los equipos  
+##  <a name="buildserver"></a> Configurar los equipos  
  Para habilitar las tareas de compilación en el equipo de desarrollo, instale el SDK de modelado para Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  Para especificar que los archivos de solo lectura se deben sobrescribir, inserte esta propiedad:  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  A menos que personalice el paso de procesamiento posterior, se registrará una advertencia en la lista de errores cuando se sobrescriba un archivo.  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>Pasar datos del contexto de compilación en las plantillas  
+##  <a name="parameters"></a> Pasar datos del contexto de compilación en las plantillas  
  Puede establecer valores de parámetro en el archivo de proyecto. Por ejemplo, puede pasar [generar](../msbuild/msbuild-properties.md) propiedades y [variables de entorno](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -242,7 +242,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 >  `ResolveParameterValue` obtiene datos de `T4ParameterValues` solo cuando se usa MSBuild. Cuando se transforma la plantilla mediante Visual Studio, los parámetros tienen sus valores predeterminados.  
   
-##  <a name="msbuild"></a>Mediante las propiedades del proyecto en el ensamblado y las directivas de inclusión  
+##  <a name="msbuild"></a> Mediante las propiedades del proyecto en el ensamblado y las directivas de inclusión  
  Macros de Visual Studio como $ (SolutionDir) no funcionan en MSBuild. En su lugar, puede utilizar las propiedades del proyecto.  
   
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myLibFolder`:  
