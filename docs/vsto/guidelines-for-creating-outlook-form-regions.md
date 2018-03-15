@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 1e82a4428dde7aa25c7e9a3d7d74017b9f2a874f
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -57,9 +59,9 @@ ms.lasthandoff: 01/10/2018
 ##  <a name="ClassNames"></a> Información acerca de los nombres de tipos y clases de mensaje  
  El nombre de tipo de un elemento de Outlook difiere del nombre de la clase de mensaje de un elemento de Outlook. Por ejemplo, el nombre del tipo de un elemento RSS es Microsoft.Office.Interop.Outlook.PostItem. El nombre de clase de mensaje de un elemento RSS es IPM. Post.RSS.  
   
- Use el nombre del tipo para hacer referencia a un elemento de Outlook en el código. Para obtener una lista de los nombres de tipo, consulte [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Use el nombre del tipo para hacer referencia a un elemento de Outlook en el código. Para obtener una lista de los nombres de tipo, consulte [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
- Use el nombre de la clase de mensaje de elementos de Outlook en el asistente **Nueva área de formulario de Outlook** para asociar el elemento al área de formulario. Para obtener una lista de nombres de clase de mensaje válidos, consulte [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
+ Use el nombre de la clase de mensaje de elementos de Outlook en el asistente **Nueva área de formulario de Outlook** para asociar el elemento al área de formulario. Para obtener una lista de nombres de clase de mensaje válidos, consulte [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).  
   
 ##  <a name="ReadingPane"></a> Designing Adjoining Form Regions for the Reading Pane  
  Puede usar el panel de lectura de Outlook para ofrecer una vista previa de un elemento de Outlook sin tener que abrir el elemento. El panel de lectura está diseñado solo para su lectura. Por consiguiente, es posible que los controles de entrada que se agregan a un área de formulario adyacente (como un cuadro de texto), no se comporten de la manera esperada cuando el elemento y el área de formulario se abren en el panel de lectura.  

@@ -197,7 +197,7 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Notas**  
   
--   ![Requisito previo](../test/media/prereq.png "Req previo") Si necesita asegurarse de que un control determinado está disponible antes de realizar una acción de la interfaz de usuario, considere la posibilidad de agregar código personalizado al método de prueba con el método UITestControl.WaitForControlXXX() adecuado. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Making Coded UI Tests Wait For Specific Events During Playback](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+-   ![Requisito previo](../test/media/prereq.png "Req previo") Si necesita asegurarse de que un control determinado está disponible antes de realizar una acción de la interfaz de usuario, considere la posibilidad de agregar código personalizado al método de prueba con el método UITestControl.WaitForControlXXX() adecuado. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Hacer que la prueba automatizada de IU espere por eventos concretos durante la reproducción](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
  **Sugerencias**  
   
