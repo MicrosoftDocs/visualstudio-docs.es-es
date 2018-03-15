@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,11 +21,12 @@ helpviewer_keywords:
 - custom prerequisites
 - redistributables list
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
-caps.latest.revision: "45"
+caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 5f269369084df3d81d323e75730fad27713831ca
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -37,7 +39,7 @@ El programa de instalación es un instalador genérico que se puede configurar p
  El programa previo detecta primero si los requisitos previos están ya instalados. Si no lo están, el programa previo muestra el contrato de licencia. Después de que el usuario acepta los contratos de licencia, comienza la instalación de los requisitos previos. Si se detectan todos los requisitos previos, el programa previo inicia el instalador de la aplicación.  
   
 ## <a name="creating-custom-packages"></a>Crear paquetes personalizados  
- Puede generar los manifiestos con el editor XML de Visual Studio. Para obtener más información, vea [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) y [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Para obtener un ejemplo de cómo crear un paquete de programa previo, vea [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Puede generar los manifiestos con el editor XML de Visual Studio. Para obtener más información, vea [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) y [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Para obtener un ejemplo de cómo crear un paquete de programa previo, vea [Tutorial: Crear un arranque personalizado para mostrar un aviso de privacidad](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Para crear un paquete de programa previo, debe suministrar el redistribuible en forma de archivo EXE o MSI al generador de manifiestos de programa previo. Después, el generador de manifiestos de programa previo crea los siguientes archivos:  
   

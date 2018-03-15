@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -50,7 +52,7 @@ Al usar Visual Studio para crear un archivo de Windows Installer, puede implemen
   
 - [Configurar los componentes dependientes como requisitos previos](#Configure)  
   
-- [Specify where you want to deploy the solution on the user's computer](#Location)  
+- [Especificar la ubicación de instalación de la solución en el equipo del usuario](#Location)  
   
 - [Configurar un complemento de VSTO](#ConfigureRegisitry)  
   
@@ -77,7 +79,7 @@ Este tema hace referencia a los ejemplos descargables siguientes.
 Para que una solución pueda ejecutarse en los equipos de los usuarios, debe conceder confianza de una de las siguientes maneras, o los usuarios deben responder al mensaje relativo a la confianza cuando instalen la solución.  
   
   
-- Firmar los manifiestos mediante un certificado que identifique un editor de confianza conocido. Para obtener más información, consulta [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
+- Firmar los manifiestos mediante un certificado que identifique un editor de confianza conocido. Para obtener más información, vea [Confiar en la solución mediante la firma de los manifiestos de aplicación y de implementación](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
 - Instalar la solución en el directorio de archivos de programa en el equipo del usuario.  
   
