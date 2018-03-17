@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 7e911686d1f8bff191c439f4fc2b92c37d60a31f
-ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
+ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 03/17/2018
 ---
 1.  En el dispositivo o servidor máquina que se va a depurar (en lugar de la máquina que ejecuta Visual Studio), obtener la versión correcta de las herramientas remotas.
 
     |Versión|Vínculo|Notas|
     |-|-|-|
-    |Versión 15.5 de Visual Studio 2017|[Herramientas remotas](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Siempre descargar la versión que coincida con el sistema operativo del dispositivo (x86 o x x64). Si se habilita el modo de seguridad mejorada (Windows Server), debe agregar nuevos sitios de confianza si se le solicita.|
+    |Visual Studio 2017 (última versión)|[Herramientas remotas](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Siempre descargar la versión que coincida con el sistema operativo del dispositivo (x86 o x x64). Si se habilita el modo de seguridad mejorada (Windows Server), debe agregar nuevos sitios de confianza si se le solicita.|
     |Visual Studio de 2017 (antigua)|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Herramientas remotas para versiones anteriores de Visual Studio de 2017 están disponibles en My.VisualStudio.com. Si se le solicita, combinación del grupo de Visual Studio Dev Essentials libre o inicie sesión con su suscripción de Visual Studio identificador. Si se habilita el modo de seguridad mejorada (Windows Server), debe agregar nuevos sitios de confianza si se le solicita.|
     |Visual Studio 2015 Update 3|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si se le solicita, combinación del grupo de Visual Studio Dev Essentials libre o inicie sesión con su suscripción de Visual Studio identificador. Si se habilita el modo de seguridad mejorada (Windows Server), debe agregar nuevos sitios de confianza si se le solicita.|
     |Visual Studio 2015 (antigua)|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Si se le solicita, combinación del grupo de Visual Studio Dev Essentials libre o inicie sesión con su suscripción de Visual Studio identificador. Si se habilita el modo de seguridad mejorada (Windows Server), debe agregar nuevos sitios de confianza si se le solicita.|
