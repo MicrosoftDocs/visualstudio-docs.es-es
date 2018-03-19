@@ -1,7 +1,8 @@
 ---
-title: "Proporciona información sobre cómo depurar con Visual Studio | Documentos de Microsoft"
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: "Proporciona información sobre cómo depurar - Visual Studio | Documentos de Microsoft"
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Proporciona información sobre cómo depurar con Visual Studio
 
@@ -34,6 +35,15 @@ O bien, puede leer a lo largo de para ver las características del depurador o p
 |  ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo")  |    [Vea un vídeo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sobre la depuración que muestra los pasos similares. |
 
 Aunque la aplicación de demostración es C#, las características son aplicables a C++, Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indicó).
+
+En este tutorial, aprenderá lo siguiente:
+
+> [!div class="checklist"]
+> * Iniciar al depurador y establecer puntos de interrupción.
+> * Obtenga información acerca de los comandos para recorrer el código en el depurador
+> * Inspeccionar las variables de sugerencias de datos y las ventanas del depurador
+> * Examinar la pila de llamadas
+> * Usar la aplicación auxiliar de excepciones
 
 ## <a name="start-the-debugger"></a>Iniciar al depurador.
 
@@ -82,11 +92,11 @@ Para depurar, debe iniciar la aplicación con el depurador asociado al proceso d
 
 ## <a name="restart-your-app-quickly"></a>Reinicie la aplicación rápidamente
 
-1. Haga clic en el **reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") botón en la barra de herramientas Depurar (Ctrl + Mayús + F5).
+Haga clic en el **reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") botón en la barra de herramientas Depurar (Ctrl + Mayús + F5).
 
-    Cuando se presiona **reiniciar**, le permite ahorrar tiempo frente a la aplicación de detener y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción se visita mediante la ejecución de código.
+Cuando se presiona **reiniciar**, le permite ahorrar tiempo frente a la aplicación de detener y reiniciar el depurador. El depurador se detiene en el primer punto de interrupción se visita mediante la ejecución de código.
 
-    El depurador se detiene de nuevo en el punto de interrupción que estableció en el `MainWindow` constructor.
+El depurador se detiene de nuevo en el punto de interrupción que estableció en el `MainWindow` constructor.
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navegar por el código en el depurador mediante comandos de paso
 
@@ -148,20 +158,20 @@ En su mayoría, usamos los métodos abreviados de teclado en este caso, porque e
 
 ## <a name="examine-the-call-stack"></a>Examinar la pila de llamadas
 
-- Mientras está en pausa en la `Update` método, haga clic en el **pila de llamadas** ventana, que está abierto en el panel inferior derecho de forma predeterminada.
+Mientras está en pausa en la `Update` método, haga clic en el **pila de llamadas** ventana, que está abierto en el panel inferior derecho de forma predeterminada.
 
-     ![Examinar la pila de llamadas](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![Examinar la pila de llamadas](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    El **pila de llamadas** ventana muestra el orden en el que se esté llamando métodos y funciones. La primera línea muestra la función actual (la `Update` método en la aplicación de paseo). La segunda línea muestra que `Update` se ha llamado desde el `Path.set` propiedad y así sucesivamente.
+El **pila de llamadas** ventana muestra el orden en el que se esté llamando métodos y funciones. La primera línea muestra la función actual (la `Update` método en la aplicación de paseo). La segunda línea muestra que `Update` se ha llamado desde el `Path.set` propiedad y así sucesivamente.
 
-    >  [!NOTE]
-    > El **pila de llamadas** ventana es similar a la perspectiva de la depuración de algunos IDE como Eclipse.
+>  [!NOTE]
+> El **pila de llamadas** ventana es similar a la perspectiva de la depuración de algunos IDE como Eclipse.
 
-    La pila de llamadas es una buena forma de examinar y comprender el flujo de ejecución de una aplicación.
+La pila de llamadas es una buena forma de examinar y comprender el flujo de ejecución de una aplicación.
 
-    Haga doble clic en una línea de código que se vaya a ver ese código de origen y que también cambia el ámbito actual va a inspeccionar el depurador. Esta acción no hace avanzar al depurador.
+Haga doble clic en una línea de código que se vaya a ver ese código de origen y que también cambia el ámbito actual va a inspeccionar el depurador. Esta acción no hace avanzar al depurador.
 
-    También puede utilizar los menús contextuales de la **pila de llamadas** ventana para realizar otras actividades. Por ejemplo, puede insertar los puntos de interrupción en funciones especificadas, avanzar el depurador mediante **ejecutar hasta el Cursor**y vaya a examinar el código fuente. Para obtener más información, consulte [Cómo: examinar la pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
+También puede utilizar los menús contextuales de la **pila de llamadas** ventana para realizar otras actividades. Por ejemplo, puede insertar los puntos de interrupción en funciones especificadas, avanzar el depurador mediante **ejecutar hasta el Cursor**y vaya a examinar el código fuente. Para obtener más información, consulte [Cómo: examinar la pila de llamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="step-out"></a>Salir
 
@@ -283,7 +293,9 @@ Supongamos que haya terminado examinando el `Update` método de Data.cs y desea 
 
 Para obtener más información sobre las características del depurador, vea [depurador sugerencias y trucos](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="next-steps"></a>Pasos siguientes
 
-[Depurar en Visual Studio](../debugger/index.md)  
-[Guía de características del depurador](../debugger/debugger-feature-tour.md)
+En este tutorial, ha aprendido cómo iniciar al depurador, recorrer el código e inspeccionar las variables. Puede obtener una visión general de las características del depurador junto con vínculos a más información.
+
+> [!div class="nextstepaction"]
+> [Guía de características del depurador](../debugger/debugger-feature-tour.md)

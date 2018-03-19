@@ -1,7 +1,7 @@
 ---
 title: "Depuración ASP.NET: Visual Studio | Documentos de Microsoft"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Depuración en ASP.NET con el depurador de Visual Studio
 
-El depurador de Visual Studio proporciona muchas características eficaces para ayudarle a depurar sus aplicaciones. En este tema se proporciona una forma rápida de obtener información acerca de las características básicas.
+El depurador de Visual Studio proporciona muchas características eficaces para ayudarle a depurar sus aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo 
 
-1. En Visual Studio, elija **archivo > Nuevo proyecto**.
+1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
 
 1. En **Visual C#**, elija **Web**y, a continuación, en el panel central, elija **aplicación Web de ASP.NET Core**.
 
@@ -94,19 +94,19 @@ A *punto de interrupción* es un marcador que indica dónde Visual Studio debe s
     ![Llegar a un punto de interrupción](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > Si tiene un punto de interrupción en un bucle o recursividad, o si tiene una gran cantidad de puntos de interrupción que con frecuencia recorre paso a paso, use un [punto de interrupción condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para asegurarse de que el código se suspende únicamente cuando se cumplen determinadas condiciones. Esto ahorra tiempo y también resultará más fácil de depurar problemas que son difíciles de reproducir.
+    > Si tiene un punto de interrupción en un bucle o recursividad, o si tiene muchos puntos de interrupción que con frecuencia recorre paso a paso, use un [punto de interrupción condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para asegurarse de que el código se suspende únicamente cuando se cumplen determinadas condiciones. Esto ahorra tiempo y también resultará más fácil de depurar problemas que son difíciles de reproducir.
 
-## <a name="navigate-code"></a>Navegar por el código
+## <a name="navigate-code"></a>Navegación en el código
 
-Hay comandos diferentes para indicar al depurador para continuar. Le mostraremos un comando de exploración de código de utilidad que es nuevo en Visual Studio de 2017.
+Hay comandos diferentes para indicar al depurador para continuar. Se muestra un comando de exploración de código de utilidad que es nuevo en Visual Studio de 2017.
 
-- Mientras está en pausa en el punto de interrupción, mantenga el mouse sobre la instrucción `return c2` hasta que el verde **ejecutar hasta que haga clic en** botón ![ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click.png) aparece y, a continuación, presione la **ejecutar hasta que haga clic en** botón.
+Mientras está en pausa en el punto de interrupción, mantenga el mouse sobre la instrucción `return c2` hasta que el verde **ejecutar hasta que haga clic en** botón ![ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click.png) aparece y, a continuación, presione la **ejecutar hasta que haga clic en** botón.
 
-    ![Ejecutar hasta que haga clic en](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![Ejecutar hasta que haga clic en](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    La aplicación continúa la ejecución y se detiene en la línea de código donde se ha hecho clic el botón.
+La aplicación continúa la ejecución y se detiene en la línea de código donde se ha hecho clic el botón.
 
-    Comandos de teclado comunes que permiten recorrer el código incluyen **F10** y **F11**. Para obtener instrucciones más detalladas, consulte el [guía para principiantes](../debugger/getting-started-with-the-debugger.md).
+Comandos de teclado comunes que permiten recorrer el código incluyen **F10** y **F11**. Para obtener instrucciones más detalladas, consulte el [guía para principiantes](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspeccionar las variables en una información sobre datos
 
@@ -136,9 +136,7 @@ Para obtener más información sobre el uso de editar y continuar y las limitaci
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Para obtener más información sobre el depurador, consulte [para iniciar el depurador y navegar por código](../debugger/getting-started-with-the-debugger.md).
-- Para obtener más información acerca de los puntos de interrupción, consulte [usar puntos de interrupción](../debugger/using-breakpoints.md).
+En este tutorial, ha aprendido cómo iniciar al depurador, recorrer el código e inspeccionar las variables. Puede obtener una visión general de las características del depurador junto con vínculos a más información.
 
-## <a name="see-also"></a>Vea también  
- [Depurar en Visual Studio](../debugger/index.md)  
- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Guía de características del depurador](../debugger/debugger-feature-tour.md)

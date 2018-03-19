@@ -1,7 +1,7 @@
 ---
 title: Depurar en C++ con el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,21 +17,21 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddf6aadc6b2debcb7423df589fb11739039c6476
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fce20f8c17b52b109b469bd439905e0edd66c9d3
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-with-c-using-the-visual-studio-debugger"></a>Depurar en C++ con el depurador de Visual Studio
 
-El depurador de Visual Studio proporciona muchas características eficaces para ayudarle a depurar sus aplicaciones. En este tema se proporciona una forma rápida de obtener información acerca de las características básicas.
+El depurador de Visual Studio proporciona muchas características eficaces para ayudarle a depurar sus aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo 
 
-1. En Visual Studio, elija **archivo > Nuevo proyecto**.
+1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
 
-2. En **Visual C++**, elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola de Windows**.
+2. Bajo **Visual C++**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola Windows** en el panel central.
 
     Si no ve el **aplicación de consola de Windows** plantilla de proyecto, haga clic en el **abrir Visual Studio Installer** vínculo en el panel izquierdo de la **nuevo proyecto** cuadro de diálogo. Se iniciará el Instalador de Visual Studio. Elija la **el desarrollo de escritorio con C++** carga de trabajo, a continuación, elija **modificar**.
 
@@ -92,21 +92,21 @@ A *punto de interrupción* es un marcador que indica dónde Visual Studio debe s
     El depurador realiza una pausa en la que estableció el punto de interrupción. La instrucción donde se pausó la ejecución del depurador y la aplicación se indica mediante la flecha amarilla. La línea con la `doWork` llamada de función no se ha ejecutado todavía.
 
     > [!TIP]
-    > Si tiene un punto de interrupción en un bucle o recursividad, o si tiene una gran cantidad de puntos de interrupción que con frecuencia recorre paso a paso, use un [punto de interrupción condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para asegurarse de que el código se suspende únicamente cuando se cumplen determinadas condiciones. Esto ahorra tiempo y también resultará más fácil de depurar problemas que son difíciles de reproducir.
+    > Si tiene un punto de interrupción en un bucle o recursividad, o si tiene muchos puntos de interrupción que con frecuencia recorre paso a paso, use un [punto de interrupción condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para asegurarse de que el código se suspende únicamente cuando se cumplen determinadas condiciones. Un punto de interrupción condicional le permite ahorrar tiempo y también resultará más fácil de depurar problemas que son difíciles de reproducir.
 
     Al intentar depurar los errores relacionados con la memoria en C++, también puede utilizar los puntos de interrupción para inspeccionar los valores de dirección (busque NULL) y recuentos de referencia. 
 
-## <a name="navigate-code"></a>Navegar por el código
+## <a name="navigate-code"></a>Navegación en el código
 
-Hay comandos diferentes para indicar al depurador para continuar. Le mostraremos un comando de exploración de código de utilidad que es nuevo en Visual Studio de 2017.
+Hay comandos diferentes para indicar al depurador para continuar. Se muestra un comando de exploración de código de utilidad que es nuevo en Visual Studio de 2017.
 
-- Mientras está en pausa en el punto de interrupción, mantenga el mouse sobre la instrucción `c1.push_back(20)` hasta que el verde **ejecutar hasta que haga clic en** botón ![ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click.png "RunToClick") aparece y, a continuación, presione la **Ejecutar hasta que haga clic en** botón.
+Mientras está en pausa en el punto de interrupción, mantenga el mouse sobre la instrucción `c1.push_back(20)` hasta que el verde **ejecutar hasta que haga clic en** botón ![ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click.png "RunToClick") aparece y, a continuación, presione la **Ejecutar hasta que haga clic en** botón.
 
-    ![Ejecutar hasta que haga clic en](../debugger/media/dbg-qs-run-to-click.png "ejecución hacer clic en")
+![Ejecutar hasta que haga clic en](../debugger/media/dbg-qs-run-to-click.png "ejecución hacer clic en")
 
-    La aplicación continúa la ejecución, una llamada a `doWork`y se detiene en la línea de código donde se ha hecho clic el botón.
+La aplicación continúa la ejecución, una llamada a `doWork`y se detiene en la línea de código donde se ha hecho clic el botón.
 
-    Comandos de teclado comunes que permiten recorrer el código incluyen **F10** y **F11**. Para obtener instrucciones más detalladas, consulte el [guía para principiantes](../debugger/getting-started-with-the-debugger.md).
+Comandos de teclado comunes que permiten recorrer el código incluyen **F10** y **F11**. Para obtener instrucciones más detalladas, consulte el [guía para principiantes](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Inspeccionar las variables en una información sobre datos
 
@@ -136,9 +136,7 @@ Para obtener más información sobre el uso de editar y continuar y las limitaci
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Para obtener más información sobre el depurador, consulte [para iniciar el depurador y navegar por código](../debugger/getting-started-with-the-debugger.md).
-- Para obtener más información acerca de los puntos de interrupción, consulte [usar puntos de interrupción](../debugger/using-breakpoints.md).
+En este tutorial, ha aprendido cómo iniciar al depurador, recorrer el código e inspeccionar las variables. Puede obtener una visión general de las características del depurador junto con vínculos a más información.
 
-## <a name="see-also"></a>Vea también  
- [Depurar en Visual Studio](../debugger/index.md)  
- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Guía de características del depurador](../debugger/debugger-feature-tour.md)

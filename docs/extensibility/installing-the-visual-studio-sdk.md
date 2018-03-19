@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5a4721eea178e4a9ab5766760ccf1405589684
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17b3b0a107d263a213746a625ec5a65419695b4d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Instalar el SDK de Visual Studio
 El SDK de Visual Studio es una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante.  
@@ -35,6 +35,6 @@ El SDK de Visual Studio es una característica opcional en el programa de instal
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Instalar el SDK de Visual Studio desde la línea de comandos  
-Al igual que con cualquier carga de trabajo de Visual Studio o un componente, también puede instalar el elemento desde la línea de comandos. Vea [usar parámetros de línea de comandos para instalar Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) para obtener más información sobre los modificadores de línea de comandos adecuada y cómo determinar los identificadores de carga de trabajo o un componente.
+Como con cualquier carga de trabajo de Visual Studio o un componente, también puede instalar el **desarrollo de extensión de Visual Studio** cargas de trabajo (Id.: Microsoft.VisualStudio.Workload.VisualStudioExtension) desde la línea de comandos. Vea [usar parámetros de línea de comandos para instalar Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) para obtener más información sobre los modificadores de línea de comandos adecuada e instrucciones generales acerca de cómo determinar los identificadores de carga de trabajo o un componente.
   
  Tenga en cuenta que debe usar al instalador de Visual Studio que coincida con la versión instalada de Visual Studio. Por ejemplo, si tiene instalado en el equipo de Visual Studio Enterprise, debe ejecutar el programa de instalación de Visual Studio Enterprise (vs_enterprise.exe).
