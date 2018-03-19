@@ -57,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 >  Las herramientas de desarrollo de Office en Visual Studio no admiten libros compartidos.  
   
 ## <a name="understanding-workbook-host-items-in-vsto-add-in-projects"></a>Descripción de los elementos host de libro en proyectos de complemento de VSTO  
- En los proyectos de complemento de VSTO, puede generar un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> en tiempo de ejecución para cualquier libro que esté abierto en Excel. Para generar un <xref:Microsoft.Office.Tools.Excel.Workbook> elemento host, utilice el método GetVstoObject. Para obtener más información, consulta [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ En los proyectos de complemento de VSTO, puede generar un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> en tiempo de ejecución para cualquier libro que esté abierto en Excel. Para generar un <xref:Microsoft.Office.Tools.Excel.Workbook> elemento host, utilice el método GetVstoObject. Para obtener más información, consulta [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
