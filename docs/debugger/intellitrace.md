@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -58,8 +58,8 @@ Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Pr
 |||
 |-|-|
 |**Compatible**|-Aplicaciones Visual Basic y Visual C# que usan .NET Framework 2.0 o versiones posteriores.<br/>Puede depurar la mayoría de las aplicaciones, incluidas las aplicaciones de ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010, SharePoint 2013 y de 64 bits.<br/>Para depurar aplicaciones de SharePoint con IntelliTrace, consulte [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Para depurar aplicaciones de Microsoft Azure con IntelliTrace, vea [depurar con IntelliTrace y Visual Studio un servicio de nube publicado](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Compatibilidad limitada**|-.NET core y aplicaciones de ASP.NET Core admitidas solo para eventos<br />-Aplicaciones F # en modo experimental<br />-Aplicaciones UWP admitidas solo para eventos|
-|No se admite|-C++, otros lenguajes y script<br />: Los servicios Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicaciones|
+|**Compatibilidad limitada**|-.NET core y aplicaciones de ASP.NET Core admiten ciertos sólo eventos (eventos de controlador de MVC, ADO.NET y HTTPClicent) en la depuración local. El recopilador independiente no se admite para las aplicaciones .NET Core o ASP.NET Core.<br />-Aplicaciones F # en modo experimental<br />-Aplicaciones UWP admitidas solo para eventos|
+|**No se admite**|-C++, otros lenguajes y script<br />: Los servicios Windows, Silverlight, Xbox o [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplicaciones|
 
 > [!NOTE]
 > Si desea depurar un proceso que ya se está ejecutando, puede recopilar eventos de IntelliTrace solo (ninguna información de llamadas). Puede adjuntar a un proceso de 32 bits o 64 bits en el equipo local únicamente. No se recopilan los eventos que se producen antes de asociar al proceso.
