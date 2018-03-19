@@ -2,7 +2,7 @@
   tocHref: /
   topicHref: /
   items:
-    - name: Visual Studio
+    - name: Programa para la mejora
       tocHref: /visualstudio/
       topicHref: /visualstudio/ide/
       items:
@@ -57,10 +57,13 @@
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild
+        - name: Nodejs
+          tocHref: /visualstudio/nodejs/
+          topicHref: /visualstudio/nodejs/tutorial-nodejs
         - name: Generación de perfiles
           tocHref: /visualstudio/profiling/
           topicHref: /visualstudio/profiling/index
-        - name: Python
+        - name: Plantillas de
           tocHref: /visualstudio/python/
           topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
         - name: R
