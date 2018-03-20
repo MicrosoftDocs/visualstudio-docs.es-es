@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,7 +22,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 5892f77b335e26e5b907159c4a9da37a58d2ae19
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -100,7 +102,7 @@ ms.lasthandoff: 01/10/2018
   
  No es necesario actualizar explícitamente el origen de datos en memoria cuando se realiza el enlace de datos complejo mediante el control <xref:Microsoft.Office.Tools.Excel.ListObject> . En ese caso, los cambios se envían automáticamente al origen de datos en memoria sin nada de código adicional.  
   
- Para obtener más información, consulta [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ Para obtener más información, consulte [Cómo: Actualizar un origen de datos con datos de un control Host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: consumir datos de bases de datos en Excel](http://go.microsoft.com/fwlink/?LinkID=130287)   

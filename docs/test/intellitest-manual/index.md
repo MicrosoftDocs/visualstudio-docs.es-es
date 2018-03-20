@@ -1,11 +1,7 @@
 ---
 title: Manual de referencia de IntelliTest | Herramientas de pruebas para desarrolladores de Microsoft | Microsoft Docs
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
@@ -14,18 +10,18 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 30c23fc51f136d7fc3dcfeca191f5c469fb1e331
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8216d8b4f27bb1211bc90d829233602edc915e43
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="intellitest-reference-manual"></a>Manual de referencia de IntelliTest
 
 ## <a name="contents"></a>Contenido
 
 * **[Información general de IntelliTest](introduction.md)**
-  - [Hello World, de IntelliTest](introduction.md#hello-world)
+  - [Hello World, de IntelliTest](introduction.md#the-hello-world-of-intellitest)
   - [Limitaciones](introduction.md#limitations)
     * [Indeterminismo](introduction.md#nondeterminism)
     * [Simultaneidad](introduction.md#concurrency)
@@ -33,13 +29,13 @@ ms.lasthandoff: 01/09/2018
     * [Plataforma](introduction.md#platform)
     * [Idioma](introduction.md#language)
     * [Razonamiento simbólico](introduction.md#symbolic-reasoning)
-    * [Seguimientos de pila incorrecto](introduction.md#incorrect-stack)
+    * [Seguimientos de pila incorrecto](introduction.md#incorrect-stack-traces)
   - [Información adicional](introduction.md#further-reading)<p>&nbsp;</p>
 
 * **[Introducción a IntelliTest](getting-started.md)**
   - [Atributos importantes](getting-started.md#important-attributes)
   - [Clases auxiliares estáticas importantes](getting-started.md#helper-classes)<p>&nbsp;</p>
- 
+
 * **[Generación de pruebas](test-generation.md)**
   - [Generadores de pruebas](test-generation.md#test-generators)
   - [Pruebas unitarias con parámetros](test-generation.md#parameterized-unit-testing)

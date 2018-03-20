@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,7 +17,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -45,7 +47,7 @@ ms.lasthandoff: 01/10/2018
  Las clases base no forman parte de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] redistribuible. En su lugar, se definen en ensamblados de utilidades incluidos en Visual Studio. Estos ensamblados se copian en la carpeta de salida al compilar proyectos de Office y se deben implementar con la solución. Para obtener más información sobre los ensamblados de utilidades, vea [Assemblies in the Visual Studio Tools for Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
   
 ## <a name="breaking-changes-in-office-projects-that-are-retargeted-to-the-net-framework-4"></a>Cambios importantes en los proyectos de Office que se redestinan a .NET Framework 4  
- En la tabla siguiente se enumeran los principales cambios importantes que se puede encontrar en los proyectos de Office que se redestinan a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores. Vea [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)para obtener información más detallada.  
+ En la tabla siguiente se enumeran los principales cambios importantes que se puede encontrar en los proyectos de Office que se redestinan a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores. Para obtener más detalles, vea [Migrar soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
 |Cambio importante|Consecuencia|  
 |---------------------|-----------------|  
@@ -60,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |Clases de elemento host como `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, y `ThisAddIn`, dejará de proporcionar un método Dispose que se pueda reemplazar.|Debe migrar cualquier código en la invalidación del método Dispose en el controlador de eventos de apagado de la clase de elemento host, por ejemplo, `ThisAddIn_Shutdown`y quitar la invalidación del método Dispose de la clase de elemento host.|  
   
 ## <a name="see-also"></a>Vea también  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migración de soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Novedades en el desarrollo de Office](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Información general sobre el motor en tiempo de ejecución de Visual Studio Tools para Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
   
