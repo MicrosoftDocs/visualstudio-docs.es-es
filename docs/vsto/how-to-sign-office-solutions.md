@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 2883f75c6ca75e1875621f9c6779db09722d6945
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -29,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Si modifica manualmente la aplicación y los manifiestos de implementación mediante la generación de manifiestos y la herramienta de edición (mage.exe y mageui.exe), debe volver a firmar los manifiestos antes de utilizarlas. Para obtener más información, consulta [How to: Re-sign Application and Deployment Manifests](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
+ Si modifica manualmente la aplicación y los manifiestos de implementación mediante la generación de manifiestos y la herramienta de edición (mage.exe y mageui.exe), debe volver a firmar los manifiestos antes de utilizarlas. Para obtener más información, consulta [Cómo: Volver a firmar manifiestos de aplicación e implementación](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
   
 ## <a name="signing-by-using-a-certificate"></a>Mediante un certificado de firma  
  Un certificado es un archivo que contiene una clave única y la identidad del Editor de la solución. Puede adquirir certificados de una entidad de certificación, o crear su propio certificado y tiene una entidad de certificación a firmar.  

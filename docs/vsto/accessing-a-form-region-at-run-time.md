@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: office-development
+ms.technology:
+- office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,7 +18,8 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: office
+ms.workload:
+- office
 ms.openlocfilehash: 70e9a970251aa5b95cff5983f5e2ce5e0c804a61
 ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
@@ -29,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 |Se aplica a|  
 |----------------|  
-|La información de este tema solamente se aplica a los siguientes tipos de proyectos y versiones de Microsoft Office. Para obtener más información, consulta [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Tipo de proyecto**<br /><br /> : Proyectos de complemento de VSTO<br /><br /> **Versión de Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|  
+|La información de este tema solamente se aplica a los siguientes tipos de proyectos y versiones de Microsoft Office. Para obtener más información, consulte [Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).<br /><br /> **Tipo de proyecto**<br /><br /> : Proyectos de complemento de VSTO<br /><br /> **Versión de Microsoft Office**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|  
   
  Utilice la clase `Globals` para acceder a áreas del formulario desde cualquier lugar dentro del proyecto de Outlook. Para obtener más información sobre la `Globals` de clases, consulte [acceso Global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
