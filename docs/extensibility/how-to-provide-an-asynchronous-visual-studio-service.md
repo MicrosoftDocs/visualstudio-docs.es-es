@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac446e9ed71b6e6b0c86ea64068af7a6184767
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: ea22a30d6f31099ca5d69d9cd8178188577febfe
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Cómo: proporcionar un servicio de asincrónica de Visual Studio
 Si desea obtener un servicio sin bloquear el subproceso de interfaz de usuario, debe crear un servicio asincrónico y cargar el paquete en un subproceso en segundo plano. Para ello puede usar un <xref:Microsoft.VisualStudio.Shell.AsyncPackage> en lugar de un <xref:Microsoft.VisualStudio.Shell.Package>y agregue el servicio con los métodos asincrónicos especial del paquete asincrónica.
@@ -38,7 +38,7 @@ Si desea obtener un servicio sin bloquear el subproceso de interfaz de usuario, 
   
 4.  Para implementar un servicio, debe crear tres tipos:  
   
-    -   Interfaz que describe el servicio. Muchas de estas interfaces están vacíos, es decir, no tienen ningún método.  
+    -   Una interfaz que identifica el servicio. Muchas de estas interfaces están vacíos, es decir, no tienen ningún método solo cuando se utilicen para consultar el servicio.
   
     -   Interfaz que describe la interfaz de servicio. Esta interfaz incluye los métodos para que se implementen.  
   
@@ -52,7 +52,9 @@ Si desea obtener un servicio sin bloquear el subproceso de interfaz de usuario, 
     using System.Threading;  
     using System.Threading.Tasks;  
     using System.Runtime.CompilerServices;  
-    using System.IO;  
+    using System.IO;
+    using IAsyncServiceProvider = Microsoft.VisualStudio.Shell.IAsyncServiceProvider;
+    using Task = System.Threading.Tasks.Task;
     ```  
   
 7.  Esta es la implementación del servicio asincrónico. Tenga en cuenta que debe establecer el proveedor de servicios asincrónica en lugar de con el proveedor de servicio sincrónicas en el constructor:  
@@ -60,39 +62,58 @@ Si desea obtener un servicio sin bloquear el subproceso de interfaz de usuario, 
     ```csharp
     public class TextWriterService : STextWriterService, ITextWriterService  
     {  
-        private Microsoft.VisualStudio.Shell.IAsyncServiceProvider serviceProvider;  
-        public TextWriterService(Microsoft.VisualStudio.Shell.IAsyncServiceProvider provider)  
-        {  
-            serviceProvider = provider;  
-        }  
-        public async System.Threading.Tasks.Task WriteLineAsync(string path, string line)  
+        private IAsyncServiceProvider asyncServiceProvider;  
+        
+        public TextWriterService(IAsyncServiceProvider provider)  
+        {
+            // constructor should only be used for simple initialization
+            // any usage of Visual Studio service, expensive background operations should happen in the
+            // asynchronous InitializeAsync method for best performance
+            asyncServiceProvider = provider;  
+        }
+        
+        public async Task InitializeAsync(CancellationToken cancellationToken)
+        {
+            // We have to use JoinableTaskFactory as code will switch to main thread in some parts
+            await ThreadHelper.JoinableTaskFactory.RunAsync(async () =>
+            {
+                await TaskScheduler.Default;
+                // do background operations that involve IO or other async methods
+                
+                await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);               
+                // query Visual Studio services on main thread unless they are documented as free threaded explicitly.
+                // The reason for this is the final cast to service interface (such as IVsShell) may involve COM operations to add/release references.
+                
+                IVsShell vsShell = this.asyncServiceProvider.GetServiceAsync(typeof(SVsShell)) as IVsShell;
+                // use Visual Studio services to continue initialization
+            });
+        }
+        
+        public async Task WriteLineAsync(string path, string line)  
         {  
             StreamWriter writer = new StreamWriter(path);  
             await writer.WriteLineAsync(line);  
             writer.Close();  
         }  
-        public TaskAwaiter GetAwaiter()  
-        {  
-            return new TaskAwaiter();  
-        }  
     }  
+
     public interface STextWriterService  
     {  
     }  
+    
     public interface ITextWriterService   
     {  
         System.Threading.Tasks.Task WriteLineAsync(string path, string line);  
-        TaskAwaiter GetAwaiter();  
     }  
     ```  
   
 ## <a name="registering-a-service"></a>Registrar un servicio  
- Para registrar un servicio, agregue el <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> al paquete que proporciona el servicio. Hay dos diferencias al registrar un servicio sincrónico:  
+ Para registrar un servicio, agregue el <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> al paquete que proporciona el servicio. Diferentes para registrar un servicio sincrónico, tiene que asegurarse de paquete y el servicio admite async cargar:
   
--   Si estás carga automática el paquete, debe agregar el <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> valor BackgroundLoad al atributo. Para obtener más información acerca de la carga automática VSPackages, vea [cargar VSPackages](../extensibility/loading-vspackages.md).  
+-   Debe agregar el **AllowsBackgroundLoading = true** campo a la <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> para garantizar el paquete se puede inicializar de forma asincrónica para obtener más información sobre la PackageRegistrationAttribute, consulte [registrar y Al anular el registro de VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
--   Debe agregar el **AllowsBackgroundLoading = true** campo el <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Para obtener más información sobre la PackageRegistrationAttribute, consulte [registrar y anular el registro de VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
-  
+-   Debe agregar el **IsAsyncQueryable = true** campo el <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> para garantizar la instancia de servicio se puede inicializar de forma asincrónica.
+
  Este es un ejemplo de un AsyncPackage con un registro de servicio asincrónica:
   
 ```csharp  
@@ -109,11 +130,10 @@ public sealed class TestAsyncPackage : AsyncPackage
 1.  En TestAsyncPackage.cs, quite el `Initialize()` método e invalide el `InitializeAsync()` método. Agregue el servicio y agregue un método de devolución de llamada para crear los servicios. Este es un ejemplo del inicializador asincrónico agregar un servicio:  
   
     ```csharp
-    protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
+    protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
-        this.AddService(typeof(STextWriterService), CreateService);  
-  
         await base.InitializeAsync(cancellationToken, progress);  
+        this.AddService(typeof(STextWriterService), CreateTextWriterService);
     }  
   
     ```  
@@ -123,14 +143,11 @@ public sealed class TestAsyncPackage : AsyncPackage
 3.  Implemente el método de devolución de llamada como un método asincrónico que crea y devuelve el servicio.  
   
     ```csharp  
-    public async System.Threading.Tasks.Task<object> CreateService(IAsyncServiceContainer container, CancellationToken cancellationToken, Type serviceType)  
+    public async Task<object> CreateTextWriterService(IAsyncServiceContainer container, CancellationToken cancellationToken, Type serviceType)  
     {  
-        STextWriterService service = null;  
-        await System.Threading.Tasks.Task.Run(() => {  
-                    service = new TextWriterService(this);  
-             });  
-  
-        return service;  
+        TextWriterService service = new TextWriterService(this);  
+        await service.InitializeAsync(cancellationToken);
+        return service;
     }  
   
     ```  
@@ -143,13 +160,13 @@ public sealed class TestAsyncPackage : AsyncPackage
     ```csharp  
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
-        this.AddService(typeof(STextWriterService), CreateService);  
+        await base.InitializeAsync(cancellationToken, progress);  
+        this.AddService(typeof(STextWriterService), CreateTextWriterService);  
   
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
         await textService.WriteLineAsync(<userpath>), "this is a test");  
   
-        await base.InitializeAsync(cancellationToken, progress);  
     }  
   
     ```  
@@ -175,17 +192,16 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
-        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
-        TestAsyncCommand.Initialize(this);    
-  
-        this.AddService(typeof(STextWriterService), CreateService);  
-  
+        await base.InitializeAsync(cancellationToken, progress);  
+        this.AddService(typeof(STextWriterService), CreateTextWriterService);  
+
         ITextWriterService textService =   
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
         await textService.WriteLineAsync((<userpath>, "this is a test");  
   
-        await base.InitializeAsync(cancellationToken, progress);  
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
+        TestAsyncCommand.Initialize(this);
     }  
   
     ```  
@@ -200,14 +216,16 @@ public sealed class TestAsyncPackage : AsyncPackage
     using System.IO;  
     ```  
   
-6.  Agregar un método asincrónico denominado `GetAsyncService()`, que obtiene el servicio y utiliza sus métodos:  
+6.  Agregar un método asincrónico denominado `UseTextWriterAsync()`, que obtiene el servicio y utiliza sus métodos:  
   
     ```csharp  
-    private async System.Threading.Tasks.Task GetAsyncService()  
+    private async System.Threading.Tasks.Task UseTextWriterAsync()  
     {  
+        // Query text writer service asynchronously to avoid a blocking call.
         ITextWriterService textService =   
-           this.ServiceProvider.GetService(typeof(STextWriterService))  
+           await AsyncServiceProvider.GlobalProvider.GetServiceAsync(typeof(STextWriterService))  
               as ITextWriterService;  
+
         // don't forget to change <userpath> to a local path  
         await textService.WriteLineAsync((<userpath>),"this is a test");  
        }  
@@ -219,7 +237,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
-        GetAsyncService();  
+        UseTextWriterAsync();  
     }  
   
     ```  
