@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 57a33ce473cd82fcb6fb8517d7003c8772c1d4da
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c0cd7853c65d5501213076cb7ccb533c5134c9f4
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar marcos de prueba unitaria de terceros
 El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de pruebas que haya desarrollado una interfaz de adaptador para el explorador. El programa de instalación del marco instala los binarios y agrega plantillas del proyecto de Visual Studio para los idiomas que admite. Cuando crea un proyecto con la plantilla, el marco se registra en el Explorador de pruebas. Una solución de Visual Studio puede contener proyectos de prueba unitaria que usen diferentes marcos y que estén destinados a diferentes idiomas. El Explorador de pruebas los ejecuta todos.  
@@ -56,7 +57,24 @@ El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de prue
   
 3.  En la lista **Categoría** (etiquetada como **Mostrando**), expanda el nodo **Herramientas** y seleccione **Pruebas**.  
   
-4.  Elija un marco en la lista de resultados para desplazarse a la página de Visual Studio Marketplace de la herramienta.  
-  
-## <a name="see-also"></a>Vea también  
- [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
+4.  Elija un marco en la lista de resultados para desplazarse a la página de Visual Studio Marketplace de la herramienta. 
+
+## <a name="update-to-the-latest-test-adapters"></a>Actualización a los adaptadores de prueba más recientes
+
+Actualice al adaptador de pruebas estable más reciente para experimentar una mejor ejecución y detección de pruebas. Para obtener más información acerca de las actualizaciones de MSTest, NUnit y los adaptadores de prueba de xUnit, consulte el [blog de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Para actualizar a la versión de adaptador de prueba estable más reciente
+
+1. Abra el Administrador de paquetes de NuGetr de su solución; para ello, vaya a **Herramientas > Administrador de paquetes de NuGet > Administrar paquetes de NuGet para la solución...**
+
+2. Haga clic en la pestaña **Actualizaciones** y busque los adaptadores de prueba NUnit o xUnit instalados.
+
+3. Seleccione cada adaptador de prueba y, a continuación, seleccione la versión estable más reciente en el menú desplegable.
+
+4. Seleccione el botón **Instalar**.
+
+![Actualización del adaptador de prueba](media/installadapter-upgrade.png)
+
+## <a name="see-also"></a>Vea también
+
+- [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)

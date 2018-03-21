@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Vista de definiciones de tipo y miembro
 
@@ -70,7 +71,7 @@ Por ejemplo, si ejecuta el comando **Ir a definición** para <xref:System.Consol
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Visualización de definiciones de origen descompiladas en lugar de metadatos (C#)
 
-Como novedad en **la versión preliminar 2 de la versión 15.6 de Visual Studio 2017**, puede configurar una opción para ver código fuente descompilado al ver la definición de un tipo o un miembro de C# cuyo código fuente no está disponible. Para activar esta característica, elija **Herramientas** > **Opciones** en la barra de menús. A continuación, expanda **Editor de texto** > **C#** > **Opciones avanzadas** y seleccione **Enable navigation to decompiled sources** (Habilitar la navegación a orígenes descompilados).
+Como novedad en **Visual Studio 2017, versión 15.6**, puede configurar una opción para ver código fuente descompilado al ver la definición de un tipo o un miembro de C# cuyo código fuente no está disponible. Para activar esta característica, elija **Herramientas** > **Opciones** en la barra de menús. A continuación, expanda **Editor de texto** > **C#** > **Opciones avanzadas** y seleccione **Enable navigation to decompiled sources** (Habilitar la navegación a orígenes descompilados).
 
 ![Visualización de una definición descompilada](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ Como novedad en **la versión preliminar 2 de la versión 15.6 de Visual Studio 
 
 ## <a name="see-also"></a>Vea también
 
-[Navegar por el código](../ide/navigating-code.md)  
+[Navegación en el código](../ide/navigating-code.md)
 [Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

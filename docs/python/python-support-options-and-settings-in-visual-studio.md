@@ -2,7 +2,7 @@
 title: "Opciones y configuración de Python en Visual Studio | Microsoft Docs"
 description: "Referencia de las distintas configuraciones de Visual Studio que se relacionan con proyectos y código de Python."
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -36,19 +37,21 @@ Para ver las opciones de Python, use el comando de menú **Herramientas > Opcion
 
 ![Cuadro de diálogo de opciones de Python, pestaña General](media/options-general.png)
 
-También existen opciones específicas de Python adicionales en la pestaña **Editor de texto > Python > Opciones avanzadas**.
+También hay opciones adicionales específicas de Python en la pestaña **Editor de texto > Python > Opciones avanzadas** y en la pestaña **Entorno > Fuentes y colores** del grupo "Editor de texto".
 
 > [!Note]
 > El grupo **Experimental** contiene opciones de características que están aún en desarrollo y no se documentan aquí. A menudo, se habla de ellas en entradas del [blog de ingeniería de Python en Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Opciones generales
 
+(Pestaña **Herramientas > Opciones > Python**).
+
 | Opción | Default | Description |
 | --- | --- | --- |
 | Mostrar la Ventana de salida al crear entornos virtuales| Activado | Desactívela para evitar que aparezca la ventana de salida. |
 | Mostrar la Ventana de salida al instalar o desinstalar paquetes | Activado | Desactívela para evitar que aparezca la ventana de salida. |
 | Ejecutar siempre pip como administrador | Desactivado | Eleva siempre las operaciones `pip install` para todos los entornos. Al instalar paquetes, Visual Studio solicita privilegios de administrador si el entorno está situado en un área protegida del sistema de archivos como `c:\Program Files`. En ese mensaje, puede elegir elevar siempre `pip install` solo para ese entorno. Consulte la [pestaña de paquetes](python-environments-window-tab-reference.md#packages-tab). |
-| Generar automáticamente la base de datos de finalización en el primer uso | Activado | Para que las [finalizaciones de IntelliSense](editing-python-code-in-visual-studio.md#intellisense) funcionen en una biblioteca, Visual Studio debe generar una base de datos de finalización para esa biblioteca. La creación de la base de datos se realiza en segundo plano cuando se instala una biblioteca, pero puede que no esté completa cuando comience a escribir código. Si esta opción está seleccionada, Visual Studio prioriza la finalización de la base de datos de una biblioteca cuando escribe código que la usa. |
+| Generar automáticamente la base de datos de finalización en el primer uso | Activado | *Se aplica a Visual Studio 2017, versión 15.5 y anteriores, y a versiones posteriores cuando se utiliza una base de datos de IntelliSense.* Prioriza la finalización de la base de datos de una biblioteca cuando escribe código que la usa. Para obtener más información, consulte [Referencia de pestañas de la ventana Entorno de Python - Pestaña IntelliSense](python-environments-window-tab-reference.md). |
 | Omitir las variables PYTHONPATH de todo el sistema | Activado | PYTHONPATH se omite de manera predeterminada porque Visual Studio proporciona un medio más directo para especificar rutas de búsqueda en entornos y proyectos. Consulte [Rutas de acceso de búsqueda](search-paths.md) para más detalles. |
 | Actualizar rutas de búsqueda al agregar archivos vinculados | Activado | Cuando se establece, agregar un [archivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a un proyecto actualiza las [rutas de búsqueda](search-paths.md) de manera que IntelliSense pueda incluir el contenido de la carpeta del archivo vinculado en su base de datos de finalización. Desactive esta opción para excluir dicho contenido de la base de datos de finalización. |
 | Mostrar advertencia si no se encuentra el módulo importado | Activado | Desactive esta opción para suprimir las advertencias cuando sepa que un módulo importado no está disponible actualmente pero, de otro modo, no afecta a la operación de código. |
@@ -59,6 +62,8 @@ También existen opciones específicas de Python adicionales en la pestaña **Ed
 ![Cuadro de diálogo de opciones de Python, pestaña General](media/options-general.png)
 
 ## <a name="debugging-options"></a>Opciones de depuración
+
+(Pestaña **Herramientas > Opciones > Python > Depuración**).
 
 | Opción | Default | Description |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ También existen opciones específicas de Python adicionales en la pestaña **Ed
 
 ## <a name="diagnostics-options"></a>Opciones de diagnóstico
 
+(Pestaña **Herramientas > Opciones > Python > Diagnóstico**).
+
 | Opción | Default | Description |
 | --- | --- | --- |
 | Incluye registros de análisis | Activado | Incluye registros detallados relacionados con el análisis de los entornos de Python instalados al guardar el diagnóstico en un archivo o copiarlo en el Portapapeles mediante los botones. Esta opción puede aumentar significativamente el tamaño del archivo generado, pero a menudo es necesaria para diagnosticar problemas de IntelliSense. |
@@ -81,6 +88,8 @@ También existen opciones específicas de Python adicionales en la pestaña **Ed
 ![Cuadro de diálogo Opciones de Python, pestaña Diagnóstico](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Opciones de las ventanas interactivas
+
+(Pestaña **Herramientas > Opciones > Python > Ventanas interactivas**).
 
 | Opción | Default | Description |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ También existen opciones específicas de Python adicionales en la pestaña **Ed
 ![Cuadro de diálogo de opciones de Python, pestaña Ventanas interactivas](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>Opciones avanzadas del editor de Python
+
+(Pestaña **Herramientas > Opciones > Editor de texto > Python > Opciones avanzadas**).
 
 ### <a name="completion-results"></a>Resultados de finalización
 
@@ -105,7 +116,7 @@ También existen opciones específicas de Python adicionales en la pestaña **Ed
 
 | Opción | Default | Description |
 | --- | --- | --- |
-| Confirmado escribiendo los siguientes caracteres | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Normalmente, estos caracteres siguen un identificador que puede seleccionarse de una lista de finalización, por lo que es conveniente confirmar la finalización simplemente escribiendo un carácter. Puede quitar o agregar caracteres específicos a la lista según se quiera.  |
+| Confirmado escribiendo los siguientes caracteres | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Normalmente, estos caracteres siguen un identificador que puede seleccionarse de una lista de finalización, por lo que es conveniente confirmar la finalización simplemente escribiendo un carácter. Puede quitar o agregar caracteres específicos a la lista según se quiera.  |
 | Entrar confirma la finalización actual | Activado | Cuando se establece, la tecla Entrar selecciona y aplica la finalización seleccionada actualmente como sucede con los caracteres anteriores (pero, por supuesto, no existe un carácter para Entrar por lo que no puede estar en esa lista directamente). |
 | Agregar nueva línea al presionar Entrar al final de una palabra | Desactivado | De manera predeterminada, si escribe la palabra completa que aparece en el elemento emergente de finalización y presiona Entrar, confirma esa finalización. Al establecer esta opción, las finalizaciones se confirman de manera eficaz al dejar de escribir el identificador, de manera que Entrar inserta una línea nueva. |
 
@@ -118,3 +129,11 @@ También existen opciones específicas de Python adicionales en la pestaña **Ed
 | Nombres de colores basados en tipos | Activado | Habilita los colores de la sintaxis en el código de Python. |
 
 ![Cuadro de diálogo Opciones del editor de Python, pestaña Opciones avanzadas](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>Opciones de fuentes y colores
+
+(Pestaña **Entorno > Fuentes y colores** dentro del grupo "Editor de texto").
+
+Los nombres de las opciones de Pyhton están precedidas por "Python" y se explican por sí mismos. La fuente predeterminada para todos los temas de color de Visual Studio es Consolas de 10 pt, normal (no negrita). Los colores predeterminados varían según el tema. Normalmente, una fuente o un color se cambia si le resulta difícil de leer texto con la configuración predeterminada.
+
+![Opciones de fuente y color de Python](media/options-fonts-and-colors.png)

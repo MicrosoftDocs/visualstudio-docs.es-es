@@ -6,27 +6,27 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bbc2f70f0d6774269f481cad5571dd9b78bac2da
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-ide"></a>Personalización del IDE
 
-Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este tema se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
+Visual Studio para Mac puede personalizarse de varias formas, lo que permite a los usuarios desarrollar aplicaciones en un entorno que satisfaga a la vez sus necesidades de eficiencia y estéticas. En este artículo se analizan las diversas formas en que Visual Studio para Mac puede adaptarse para satisfacer las necesidades del usuario.
 
 ## <a name="dark-theme"></a>Tema oscuro
 
 ![Vista Tema oscuro](media/customizing-the-ide-image7a.png)
 
-Puede cambiar los temas de Visual Studio para Mac si va a **Visual Studio > Preferencias... > Entorno > Estilo visual** y selecciona el tema que quiere en la lista desplegable **Tema de la interfaz de usuario**, como se muestra en la captura de pantalla siguiente:
+Puede cambiar los temas de Visual Studio para Mac si va a **Visual Studio > Preferencias... > Entorno > Estilo visual** y selecciona el tema que quiere en la lista desplegable **Tema de la interfaz de usuario**, como se muestra en la imagen siguiente:
 
  ![Selección de Tema oscuro](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Localización
 
-Visual Studio para Mac se ha localizado a 13 idiomas, con lo que resulta accesible para más desarrolladores. Los idiomas disponibles actualmente son los siguientes:
+Visual Studio para Mac se ha localizado a los siguientes 13 idiomas, con lo que resulta accesible para más desarrolladores:
 
 * Chino (China)
 * Chino (Taiwán)
@@ -42,29 +42,29 @@ Visual Studio para Mac se ha localizado a 13 idiomas, con lo que resulta accesib
 * Español
 * Turco
 
-Para cambiar el idioma mostrado en Visual Studio para Mac, vaya a **Visual Studio > Preferencias... > Entorno > Estilo visual** y seleccione el idioma que quiere en la lista desplegable **Idioma de la interfaz de usuario**, como se muestra en la captura de pantalla siguiente:
+Para cambiar el idioma mostrado en Visual Studio para Mac, vaya a **Visual Studio > Preferencias... > Entorno > Estilo visual** y seleccione el idioma que quiere en la lista desplegable **Idioma de la interfaz de usuario**, como se muestra en la imagen siguiente:
 
 
 ![Selección de idioma](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Información del autor
 
-El panel Información del autor permite agregar información relevante sobre uno mismo, como el nombre, la dirección de correo electrónico, el propietario de los derechos de autor del trabajo, la empresa y la marca comercial, como se muestra a continuación:
+El panel Información del autor permite agregar información relevante sobre uno mismo, como el nombre, la dirección de correo electrónico, el propietario de los derechos de autor del trabajo, la empresa y la marca comercial:
 
  ![Edición de la sección Información del autor](media/customizing-the-ide-image9a.png)
 
-Esta información se usa para rellenar encabezados de archivo estándar, como una licencia, que se pueden agregar a nuevos archivos creados en Visual Studio para Mac:
+Esta información se usa para rellenar encabezados de archivo estándar, como una licencia, que se pueden agregar a nuevos archivos:
 
  ![Opciones de encabezado estándar](media/customizing-the-ide-image8a.png)
 
 
-Los campos **Nombre** y **Correo electrónico** que se han rellenado se usan para agregar información a cualquier confirmación realizada mediante el control de versiones de Visual Studio para Mac. Si no ha rellenado estos campos, Visual Studio para Mac le pedirá que lo haga cuando intente usar el control de versiones.
+Los campos **Nombre** y **Correo electrónico** se usarán para agregar información a cualquier confirmación realizada mediante el control de versiones de Visual Studio para Mac. Si no ha rellenado estos campos, Visual Studio para Mac le pedirá que lo haga cuando intente usar el control de versiones.
 
 ## <a name="key-bindings"></a>Enlaces de teclado
 
 Los enlaces de teclado permiten adaptar el entorno de desarrollo para desplazarse de forma más eficaz por Visual Studio para Mac. Proporciona enlaces de teclado conocidos para muchos IDE populares, como Visual Studio (Windows), ReSharper, Visual Studio Code y Xcode.
 
-Los enlaces de teclado se pueden establecer si se va a **Visual Studio > Preferencias... > Entorno > Enlaces de teclado**, como se muestra a continuación:
+Los enlaces de teclado se pueden establecer si se va a **Visual Studio > Preferencias... > Entorno > Enlaces de teclado**, como se muestra en la imagen siguiente:
 
  ![Establecimiento de enlaces de teclado](media/customizing-the-ide-image10a.png)
 
@@ -78,7 +78,7 @@ El área de trabajo de Visual Studio para Mac consta de un área de documento pr
 
 ### <a name="viewing-and-arranging-pads"></a>Visualización y organización de paneles
 
-Al abrir cualquier solución o archivo nuevos en Visual Studio para Mac, debería observar algunos *paneles* en el área de trabajo, incluidos el Panel de solución, Esquema del documento y Errores, como se muestra a continuación:
+Al abrir cualquier solución o archivo nuevos en Visual Studio para Mac, debería observar algunos *paneles* en el área de trabajo, incluidos el Panel de solución, Esquema del documento y Errores:
 
 ![Paneles de solución](media/customizing-the-ide-image2a.png)
 
@@ -103,7 +103,7 @@ Los paneles ocultados automáticamente están acoplados a los lados del área de
 
 Los paneles que se muestran en todo momento dependen del contexto actual. Por ejemplo, cuando se usa el diseñador visual, los paneles de cuadro de herramientas y de cuadrícula de propiedades son más importantes; al depurar, resulta útil tener los paneles del depurador para ver la pila y las variables locales.
 
-El estado de los paneles abiertos se representa mediante un *diseño*. Se puede cambiar de diseño manualmente mediante el menú Vista, como se muestra a continuación, o de forma automática al realizar una acción, como depurar o abrir un guion gráfico:
+El estado de los paneles abiertos se representa mediante un *diseño*. Se puede cambiar de diseño manualmente mediante el menú Vista, como se muestra en la imagen siguiente, o de forma automática al realizar una acción, como depurar o abrir un guion gráfico:
 
 ![Selección de nuevos diseños](media/customizing-the-ide-image6b.png)
 
@@ -118,7 +118,7 @@ Pero es posible crear un nuevo diseño mediante el elemento de menú **Vista > G
 
 Visual Studio para Mac permite abrir editores de texto en paralelo o tener un editor como una ventana flotante separada.
 
-Se puede habilitar el modo de dos columnas mediante el elemento de menú Vista si se selecciona **Vista > Columnas del editor > 2 columnas** o si se arrastra una pestaña del editor a uno de los bordes del área de este, como se muestra a continuación:
+Se puede habilitar el modo de dos columnas mediante el elemento de menú Vista si se selecciona **Vista > Columnas del editor > 2 columnas** o si se arrastra una pestaña del editor a uno de los bordes del área de este:
 
  ![Modo de dos columnas en paralelo](media/customizing-the-ide-sbs.png)
 

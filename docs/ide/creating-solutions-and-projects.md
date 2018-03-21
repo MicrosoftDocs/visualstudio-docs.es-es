@@ -1,7 +1,7 @@
 ---
 title: "Creación de soluciones y proyectos en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/16/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,7 +13,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
-- solutions [Visual Studio], deleting
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
 author: gewarren
@@ -21,11 +20,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -46,7 +45,7 @@ Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones e
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Para crear un proyecto a partir de una plantilla de proyecto
 
-1. Hay varias maneras de crear un proyecto en Visual Studio. En la página de inicio, escriba el nombre de una plantilla de proyecto en el cuadro **Buscar plantillas de proyecto** o elija el vínculo **Crear nuevo proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. También puede seleccionar **Archivo**, **Nuevo**, **Proyecto…** en la barra de menús, o bien hacer clic en el botón **Nuevo proyecto** de la barra de herramientas.
+1. Hay varias maneras de crear un proyecto en Visual Studio. En la página de inicio, escriba el nombre de una plantilla de proyecto en el cuadro **Buscar plantillas de proyecto** o elija el vínculo **Crear nuevo proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. También puede seleccionar **Archivo** > **Nuevo** > **Proyecto…** en la barra de menús, o bien hacer clic en el botón **Nuevo proyecto** de la barra de herramientas.
 
   ![Página de inicio](./media/vside-newproject1.png)
 
@@ -59,9 +58,9 @@ Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones e
 
 1. Muestre la lista de plantillas del lenguaje de programación que quiera usar. Para ello, seleccione el triángulo situado junto al nombre de lenguaje y, después, elija un tipo de proyecto.
 
-  En el ejemplo siguiente se muestran las plantillas de proyecto disponibles para proyectos web de Visual C#.
+  En el ejemplo siguiente se muestran las plantillas de proyecto disponibles para proyectos .NET Core de Visual C#.
 
-  ![Plantillas de proyecto](./media/vside-newproject-projects-list.png)
+  ![Plantillas de proyecto](./media/new-project-dialog-net-core.png)
 
 1. Escriba un nombre para el nuevo proyecto en el cuadro **Nombre**. Puede guardar el proyecto en la ubicación predeterminada en el sistema, o bien seleccionar el botón **Examinar** para buscar otra ubicación.
 
@@ -69,13 +68,13 @@ Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones e
 
 1. Elija el botón **Aceptar** para crear la solución y el proyecto.
 
-1. Si quiere agregar un proyecto adicional a la solución, seleccione el nodo de la solución en el Explorador de soluciones y, después, en la barra de menús, elija **Proyecto**, **Agregar nuevo elemento**.
+1. Si quiere agregar un proyecto adicional a la solución, seleccione el nodo de la solución en el Explorador de soluciones y, después, en la barra de menús, elija **Proyecto** > **Agregar nuevo elemento**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Crear un proyecto a partir de archivos de código existentes
 
 Si tiene una colección de archivos de código fuente, puede agregarlos fácilmente a un proyecto.
 
-1. En el menú, elija **Archivo**, **Nuevo**, **Proyecto a partir de código existente**.
+1. En el menú, elija **Archivo** > **Nuevo** > **Proyecto a partir de código existente**.
 
 1. En el **Asistente para crear proyectos a partir de archivos de código existentes**, seleccione el tipo de proyecto que quiera en el cuadro de lista desplegable **¿Qué tipo de proyecto desea crear?** y, después, elija el botón **Siguiente** .
 
@@ -86,21 +85,16 @@ Si tiene una colección de archivos de código fuente, puede agregarlos fácilme
 
 ## <a name="add-files-to-a-solution"></a>Agregar archivos a una solución
 
-Si tiene un archivo que se aplica a varios proyectos, como un archivo Léame para la solución u otros archivos que pertenecen lógicamente al nivel de solución en lugar de a un proyecto específico, puede agregarlos a la propia solución. Para agregar un elemento a una solución, en el menú contextual (clic con el botón derecho) del nodo de la solución en el **Explorador de soluciones**, seleccione **Agregar**, **Nuevo elemento**, o bien **Agregar**, **Elemento existente**.
+Si tiene un archivo que se aplica a varios proyectos, como un archivo Léame para la solución u otros archivos que pertenecen lógicamente al nivel de solución en lugar de a un proyecto específico, puede agregarlos a la propia solución. Para agregar un elemento a una solución, en el menú contextual (clic con el botón derecho) del nodo de la solución en el **Explorador de soluciones**, seleccione **Agregar** > **Nuevo elemento**, o bien **Agregar** > **Elemento existente**.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Crear un proyecto .NET que tenga como destino una versión concreta de .NET Framework
 
-Cuando cree un proyecto, puede especificar la versión específica de .NET Framework que quiere que use el proyecto. Para especificar una versión de .NET Framework, seleccione el menú desplegable de versiones de **.NET Framework** en el cuadro de diálogo **Nuevo proyecto**.
+Cuando cree un proyecto, puede especificar la versión específica de .NET Framework que quiere que use el proyecto. Para especificar una versión de .NET Framework, seleccione el menú desplegable **Plataforma** en el cuadro de diálogo **Nuevo proyecto**.
 
-![Selector de versiones de .NET Framework](./media/vside-newproject-framework.png)
+![Desplegable Plataforma en el cuadro de diálogo Nuevo proyecto](./media/vside-newproject-framework.png)
 
 > [!NOTE]
-> Si está creando un proyecto a partir de una plantilla de .NET Core, se omitirá la versión de .NET Framework seleccionada en la lista desplegable.
-
-> [!TIP]
-> Si establece la versión de .NET Framework antes de seleccionar una plantilla de proyecto, Visual Studio solo mostrará las plantillas que sean compatibles con esa versión de .NET Framework.
-
-Para obtener acceso a versiones de .NET Framework anteriores a la 4, debe tener instalado .NET Framework 3.5 en el sistema.
+> Para obtener acceso a versiones de .NET Framework anteriores a la 4, debe tener instalado .NET Framework 3.5 en el sistema.
 
 ## <a name="create-empty-solutions"></a>Crear soluciones vacías
 
@@ -108,9 +102,9 @@ También puede crear soluciones vacías que no contengan ningún proyecto. Esto 
 
 ### <a name="to-create-an-empty-solution"></a>Para crear una solución vacía
 
-1. En el menú, seleccione **Archivo**, **Nuevo**, **Proyecto...**.
+1. En el menú, elija **Archivo** > **Nuevo** > **Proyecto...**
 
-1. En el panel izquierdo (**Plantillas**), seleccione **Otros tipos de proyectos** y **Soluciones de Visual Studio** en la lista expandida.
+1. En el panel izquierdo (**Plantillas**), seleccione **Otros tipos de proyectos** > **Soluciones de Visual Studio** en la lista expandida.
 
 1. En el panel central, seleccione **Solución en blanco**.
 
@@ -124,7 +118,7 @@ Como ya se ha indicado, también puede abrir archivos de código sin un proyecto
 
 Si crea un proyecto basado en .NET sin especificar una ubicación de disco, el proyecto será temporal. Los proyectos temporales permiten experimentar con proyectos de .NET. Cuando trabaje con un proyecto temporal, podrá guardarlo o descartarlo en cualquier momento.
 
-Para crear un proyecto temporal, vaya a **Herramientas**, **Opciones**, **Proyectos y soluciones**, **General** y desactive la casilla **Guardar nuevos proyectos al crearlos**. Después, abra el cuadro de diálogo **Nuevo proyecto**.
+Para crear un proyecto temporal, vaya primero a **Herramientas** > **Opciones** > **Proyectos y soluciones** > **General** y desactive la casilla **Guardar nuevos proyectos al crearlos**. Después, abra el cuadro de diálogo **Nuevo proyecto**.
 
 ## <a name="delete-a-solution-project-or-item"></a>Eliminar una solución, un proyecto o un elemento
 
@@ -146,4 +140,4 @@ Puede eliminar las soluciones y su contenido de forma permanente, pero no median
 [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)  
 [Repositorios de código abierto de Microsoft en GitHub](https://github.com/Microsoft)  
 [Ejemplos de Visual Studio](../ide/visual-studio-samples.md)  
-[Ejemplos de código para desarrolladores](https://code.msdn.microsoft.com/)  
+[Ejemplos de código para desarrolladores](https://code.msdn.microsoft.com/)

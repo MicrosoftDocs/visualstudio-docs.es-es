@@ -2,7 +2,7 @@
 title: "Administración de intérpretes y entornos de Python en Visual Studio | Microsoft Docs"
 description: "Se describe cómo usar la ventana Entornos de Python en Visual Studio para administrar entornos globales y virtuales, configurar entornos personalizados, instalar intérpretes de Python, instalar paquetes, establecer rutas de búsqueda y administrar entornos para proyectos de Visual Studio."
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 570ce6beccf14c9f04fcd3e21b86a8d00a3d607f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Administración de entornos de Python en Visual Studio
 
@@ -70,9 +70,9 @@ En cualquier caso, la ventana **Entornos de Python** aparece como una pestaña d
 
 La imagen anterior muestra que Visual Studio detectó dos instalaciones de Python 3.6 (32 bits) junto con Anaconda 5.0.0.
 
-El entorno predeterminado en negrita es Python 3.6 (en este caso, parte de una instalación de Anaconda), que Visual Studio usa para todos los proyectos nuevos. Los comandos que aparecen en la parte inferior de la ventana se aplican al intérprete seleccionado de Python 3.6 que, como puede ver, es la instalación específica en `C:\Python36-32`. Si no ve uno de los entornos que espera, consulte [Manually identifying an existing interpreter](#manually-identifying-an-existing-interpreter) (Identificación manual de un intérprete existente).
+El entorno predeterminado en negrita es Python 3.6 (en este caso, parte de una instalación de Anaconda), que Visual Studio usa para todos los proyectos nuevos. Los comandos que aparecen en la parte inferior de la ventana se aplican al intérprete seleccionado de Python 3.6 que, como puede ver, es la instalación específica en `C:\Python36-32`. Si no ve uno de los entornos que espera, consulte [Identificación manual de un entorno existente](#manually-identifying-an-existing-environment).
 
-A la derecha de cada entorno de la lista figura un control que abre una ventana interactiva para ese entorno. Puede aparecer otro control que actualiza la base de datos de IntelliSense para ese entorno.
+A la derecha de cada entorno de la lista figura un control que abre una ventana interactiva para ese entorno. Puede aparecer otro control que actualiza la base de datos de IntelliSense para ese entorno (vea [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab) para obtener más información acerca de la base de datos).
 
 Debajo de la lista de entornos hay un selector desplegable para las opciones **Introducción**, **Paquetes** e **IntelliSense** que se describen en el artículo sobre la [referencia de pestaña de la ventana Entornos de Python](python-environments-window-tab-reference.md). Además, si expande la ventana **Entornos de Python** con un ancho suficiente, estas opciones se muestran como pestañas, lo cual puede resultarle más cómodo:
 
@@ -124,4 +124,4 @@ Use los pasos siguientes para identificar un entorno instalado en una ubicación
 - [Selección de un intérprete para un proyecto](selecting-a-python-environment-for-a-project.md)
 - [Uso de requirements.txt para las dependencias](managing-required-packages-with-requirements-txt.md)
 - [Rutas de acceso de búsqueda](search-paths.md)
-- [Python Environments window reference](python-environments-window-tab-reference.md) (Referencia de ventana Entornos de Python)
+- [Referencia de ventana Entornos de Python](python-environments-window-tab-reference.md)

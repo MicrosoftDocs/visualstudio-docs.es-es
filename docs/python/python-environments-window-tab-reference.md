@@ -2,7 +2,7 @@
 title: 'Referencia de ventana Entornos de Python: Visual Studio | Microsoft Docs'
 description: "Detalles de cada una de las pestañas que aparecen en la ventana Entornos de Python en Visual Studio."
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92d5014c257cf35e556eca1928e1c5612f4913eb
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 13d84eb160b4ba82d4a03d48fe814cb0d92388b0
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referencia de pestañas de la ventana Entorno de Python
 
@@ -55,7 +55,7 @@ A medida que usa las ventanas interactivas en su flujo de trabajo diario, probab
 
 Los scripts de inicio contienen código que la ventana interactiva carga y ejecuta automáticamente, como importaciones, definiciones de función y literalmente cualquier otra cosa. Hay dos maneras de hacer referencia a dichos scripts:
 
-1. Cuando instala un entorno, Visual Studio crea una carpeta `Documents\Visual Studio 2017\Python Scripts\<environment>` donde &lt;environment> coincide con el nombre del entorno. Puede navegar fácilmente a la carpeta específica del entorno con el comando **Explorar scripts interactivos**. Cuando inicie la ventana interactiva para ese entorno, se cargan y ejecutan los archivos de `.py` que se encuentran aquí en orden alfabético.
+1. Cuando instala un entorno, Visual Studio crea una carpeta `Documents\Visual Studio 2017\Python Scripts\<environment>` donde &lt;environment&gt; coincide con el nombre del entorno. Puede navegar fácilmente a la carpeta específica del entorno con el comando **Explorar scripts interactivos**. Cuando inicie la ventana interactiva para ese entorno, se cargan y ejecutan los archivos de `.py` que se encuentran aquí en orden alfabético.
 
 1. El control **Scripts** de la pestaña **Herramientas > Opciones > Herramientas de Python > Ventanas interactivas** (vea [Opciones de ventanas interactivas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) pretende especificar una carpeta adicional para los scripts de inicio que se cargan y ejecutan en todos los entornos. No obstante, esta característica no funciona actualmente.
 
@@ -80,9 +80,17 @@ Si está disponible, contiene detalles como se describe en la tabla siguiente. S
 
 *También se etiqueta como "pip" en versiones anteriores*
 
-Administra los paquetes instalados en el entorno, lo que también permite buscar e instalar otros nuevos (incluidas las dependencias). La búsqueda filtra los paquetes instalados actualmente y [PyPI](https://pypi.python.org). También puede especificar cualquier comando `pip install` en el cuadro de búsqueda directamente, incluidas marcas, como `--user` o `--no-deps`.
+Administra los paquetes instalados en el entorno, lo que también permite buscar e instalar otros nuevos (incluidas las dependencias).
 
-![Pestaña de los paquetes de los entornos de Python](media/environments-pip-tab.png)
+Los paquetes que ya están instalados aparecen con controles para actualizar (una flecha hacia arriba) y desinstalar (la X en un círculo) el paquete:
+
+![Pestaña de los paquetes de los entornos de Python](media/environments-pip-tab-controls.png)
+
+Especifique los filtros de un término de búsqueda en la lista de paquetes instalados, así como paquetes que pueden instalarse desde PyPI.
+
+![Pestaña de los paquetes de los entornos de Python con una búsqueda en "num"](media/environments-pip-tab.png)
+
+También puede especificar cualquier comando `pip install` en el cuadro de búsqueda directamente, incluidas marcas, como `--user` o `--no-deps`.
 
 Al instalar un paquete se crean subcarpetas dentro de la carpeta `Lib` del entorno en el sistema de archivos. Por ejemplo, si tiene instalado Python 3.6 en `c:\Python36`, los paquetes se instalan en `c:\Python36\Lib`; si tiene instalado Anaconda3 en `c:\Program Files\Anaconda3`, los paquetes se instalan en `c:\Program Files\Anaconda3\Lib`.
 
@@ -102,7 +110,9 @@ Muestra el estado actual de la base de datos de finalización de IntelliSense:
 
 ![Pestaña IntelliSense de entornos de Python](media/environments-intellisense-tab.png)
 
-La base de datos contiene metadatos para todas las bibliotecas del entorno, mejora la velocidad de IntelliSense y reduce el uso de memoria. Cuando Visual Studio detecta un nuevo entorno (o el usuario agrega uno), comienza a compilar automáticamente la base de datos analizando los archivos de origen de la biblioteca. Este proceso puede tardar desde un minuto a una hora o más dependiendo de lo que esté instalado. (Anaconda, por ejemplo, incluye muchas bibliotecas y tarda algún tiempo en compilar la base de datos.) Una vez finalizado, obtiene detalles de IntelliSense y no necesita actualizar la base de datos (con el botón **Refresh DB** (Actualizar base de datos)) hasta que instale más bibliotecas.
+En **Visual Studio 2017, versión 15.5** y anteriores, las finalizaciones de IntelliSense dependen de una base de datos que se han compilado para esa biblioteca. La creación de la base de datos se realiza en segundo plano cuando se instala una biblioteca, pero puede tardar un tiempo y es posible que no esté completa cuando comience a escribir código. **Visual Studio 2017, versión 15.6** y posteriores, usa un método más rápido para proporcionar las finalizaciones que no dependen de la base de datos, a menos que decida específicamente habilitarlo.
+
+Cuando Visual Studio detecta un nuevo entorno (o el usuario agrega uno), comienza a compilar automáticamente la base de datos analizando los archivos de origen de la biblioteca. Este proceso puede tardar desde un minuto a una hora o más dependiendo de lo que esté instalado. (Anaconda, por ejemplo, incluye muchas bibliotecas y tarda algún tiempo en compilar la base de datos.) Una vez finalizado, obtiene detalles de IntelliSense y no necesita actualizar la base de datos (con el botón **Refresh DB** (Actualizar base de datos)) hasta que instale más bibliotecas.
 
 Las bibliotecas para las que no se han compilado los datos se marcan con **!**; si la base de datos de un entorno no está completa, también aparece **!** junto a ella en la lista principal de entornos.
 
@@ -110,5 +120,5 @@ Las bibliotecas para las que no se han compilado los datos se marcan con **!**; 
 
 - [Administración de entornos de Python en Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selección de un intérprete para un proyecto](selecting-a-python-environment-for-a-project.md)
-- [Uso de requirements.txt para las dependencias](managing-required-packages-with-requirements-txt.md) 
+- [Uso de requirements.txt para las dependencias](managing-required-packages-with-requirements-txt.md)
 - [Rutas de acceso de búsqueda](search-paths.md)

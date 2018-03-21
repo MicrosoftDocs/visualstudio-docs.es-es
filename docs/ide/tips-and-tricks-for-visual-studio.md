@@ -1,26 +1,26 @@
 ---
 title: "Métodos abreviados de teclado de Visual Studio | Microsoft Docs"
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Sugerencias de teclado para Visual Studio
 
-En Visual Studio se puede navegar más fácilmente gracias a los accesos directos de teclado que se indican en este tema. Este tema solo es un subconjunto de los métodos abreviados de teclado disponibles. Para obtener una lista más completa, vea [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre cómo optimizar Visual Studio para la accesibilidad, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md).
+En Visual Studio se puede navegar más fácilmente gracias a los accesos directos de teclado que se indican en este artículo.
+
+Los accesos directos que aparecen aquí son solo un subconjunto de los métodos abreviados de teclado disponibles. Para obtener una lista más completa, vea [Métodos abreviados de teclado predeterminados de Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+Para obtener información sobre cómo optimizar Visual Studio para la accesibilidad, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md).
 
 ## <a name="window-management"></a>Administración de ventanas
 
@@ -83,7 +83,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Zoom del editor|Ctrl+Mayús+> (entrada), Ctrl+Mayús+< (salida)||
 |Selección de bloques|Mantenga presionada la tecla Alt mientras arrastra el mouse, Mayús+Alt+teclas de dirección||
 |Subir o bajar línea|Alt+Arriba/Alt+Abajo||
-|Línea duplicada|Ctrl+E,V|Versión 15.6 de Visual Studio 2017 (versión preliminar 2)|
+|Línea duplicada|Ctrl+E,V|Visual Studio 2017, versión 15.6|
 |Expandir selección|**Mayús**+**Alt**+**=**|Versión 15.5 de Visual Studio 2017|
 |Contraer selección|**Mayús**+**Alt**+**-**|Versión 15.5 de Visual Studio 2017|
 |Ir a definición|F12||

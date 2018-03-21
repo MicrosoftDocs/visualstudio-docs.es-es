@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Paso 3: uso de la ventana interactiva de REPL
 
@@ -31,7 +31,7 @@ La *ventana interactiva* de Visual Studio para Python proporciona una experienci
 
 1. Abra la ventana interactiva haciendo clic con el botón derecho en el entorno de Python del proyecto en el Explorador de soluciones (por ejemplo, "Python 3.6 (32 bits)" como se muestra en un gráfico anterior) y seleccione **Abrir ventana interactiva**. Como alternativa, puede seleccionar **Ver > Otras ventanas > Ventanas interactivas de Python** en el menú principal de Visual Studio.
 
-1. Se abre la ventana interactiva debajo del editor, con el habitual símbolo del sistema de REPL de Python `>>>`. En muchas ocasiones querrá aumentar el tamaño de la ventana interactiva, lo que puede hacer si arrastra el separador entre las dos ventanas:
+1. Se abre la ventana interactiva debajo del editor, con el símbolo estándar del sistema de REPL de Python `>>>`. La lista desplegable **Plataforma** permite seleccionar un intérprete específico con el que trabajar. En muchas ocasiones también querrá aumentar el tamaño de la ventana interactiva, lo que puede hacer si arrastra el separador entre las dos ventanas:
 
     ![Ventana interactiva de Python y arrastre para cambiar el tamaño](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -100,7 +100,7 @@ La *ventana interactiva* de Visual Studio para Python proporciona una experienci
 > [!div class="nextstepaction"]
 > [Ejecución de código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-### <a name="going-deeper"></a>Mayor profundización
+## <a name="going-deeper"></a>Mayor profundización
 
 - [Uso de la ventana interactiva](python-interactive-repl-in-visual-studio.md)
 - [Usar REPL de IPython](interactive-repl-ipython.md)

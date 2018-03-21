@@ -2,7 +2,7 @@
 title: "Edición de código de Python en Visual Studio | Microsoft Docs"
 description: "La edición de Python en Visual Studio proporciona IntelliSense, fragmentos de código y características de navegación, además de formato, linting y refactorización."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>Edición de código de Python
 
@@ -39,7 +39,11 @@ También puede usar el Examinador de objetos de Visual Studio (**Ver > Otras ven
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Para mejorar el rendimiento, IntelliSense depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del Explorador de soluciones) en la pestaña **IntelliSense** (consulte [Referencia de ventana Python Environments](python-environments-window-tab-reference.md#intellisense-tab)).
+IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring).
+
+Para mejorar el rendimiento, IntelliSense en **Visual Studio 2017, versión 15.5** y anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del Explorador de soluciones) en la pestaña **IntelliSense** (consulte [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab)).
+
+**Visual Studio 2017, versión 15.6** y posteriores utiliza un medio diferente para proporcionar finalizaciones de IntelliSense que no dependen de la base de datos.
 
 ### <a name="completions"></a>Finalizaciones
 
@@ -110,15 +114,41 @@ Para personalizar los colores, vaya a **Herramientas > Opciones > Entorno > Fuen
 
 ## <a name="code-snippets"></a>Fragmentos de código
 
-Los fragmentos de código son pedazos de código que se pueden insertar en los archivos mediante un acceso directo y la tecla Tab o bien con los comandos **Editar > IntelliSense > Insertar fragmento de código** **Rodear con**. Por ejemplo, si escribe `class` seguido por la tecla Tab se genera el resto de la clase. Puede escribir sobre el nombre y la lista de bases, moviéndose entre los campos resaltados con Tab, y luego presionar Entrar para empezar a escribir el cuerpo.
+Los fragmentos de código son pedazos de código que se pueden insertar en los archivos mediante un acceso directo y la tecla Tab o bien con los comandos **Editar > IntelliSense > Insertar fragmento de código** y **Delimitar con**, seleccionando **Python** y luego el fragmento deseado.
 
-![Fragmentos de código](media/code-editing-code-snippets.png)
+Por ejemplo, `class` es un acceso directo para un fragmento de código que inserta una definición de clase. El fragmento de código aparece en la lista de finalización automática cuando se escribe `class`:
 
-Puede ver los fragmentos de código disponibles en el Administrador de fragmentos de código (**Herramientas > Administrador de fragmentos de código**), seleccionando **Python** como lenguaje:
+![Acceso directo del fragmento de código para la clase](media/code-editing-code-snippet-class.png)
+
+Al presionar Tab, se genera el resto de la clase. Puede escribir sobre el nombre y la lista de bases, moviéndose entre los campos resaltados con Tab, y luego presionar Entrar para empezar a escribir el cuerpo.
+
+![Resaltado en las áreas de un fragmento de código para completar](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>Comandos de menú
+
+Cuando use el comando de menú **Editar > IntelliSense > Insertar fragmento de código**, seleccione "Python" primero y luego un fragmento de código:
+
+![Selección de un fragmento de código mediante el comando Insertar fragmento de código](media/code-editing-code-snippet-insert.png)
+
+Del mismo modo, el comando **Editar > IntelliSense > Delimitar con**, coloca la selección actual en el editor de texto dentro de un elemento estructural elegido. Por ejemplo, suponga que tiene un poco de código similar al siguiente:
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+Al seleccionar este código y elegir el comando **Delimitar con** aparece una lista de fragmentos de código disponibles. Al elegir `def` en la lista se coloca el código seleccionado dentro de una definición de función, y puede utilizar la tecla Tab para desplazarse entre los argumentos y el nombre de la función resaltados:
+
+![Uso del comando Delimitar con para fragmentos de código](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>Examen de los fragmentos de código disponibles
+
+Puede ver los fragmentos de código disponibles en el Administrador de fragmentos de código, que se abre con el comando de menús **Herramientas > Administrador de fragmentos de código**, y seleccionando **Python** como lenguaje:
 
 ![Administrador de fragmentos de código](media/code-editing-code-snippets-manager.png)
 
-Para crear sus propios fragmentos de código, consulte [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). 
+Para crear sus propios fragmentos de código, consulte [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 Si escribe un fragmento de código excelente que le gustaría compartir, no dude en publicarlo de manera resumida y [hacérnoslo saber](https://github.com/Microsoft/PTVS/issues). Es posible que podamos incluirlo en una futura versión de Visual Studio.
 

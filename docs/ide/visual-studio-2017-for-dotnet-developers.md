@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: be14af66f5aa5389e9e701eb79dc68ee733c6068
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 para desarrolladores de .NET
 
@@ -42,7 +42,7 @@ Navegue con rapidez por el código de .NET saltando a cualquier archivo, tipo, m
 
 Visual Studio tiene diagnósticos de código activos que le ayudan a mejorar la calidad del código mediante la detección de errores y código potencialmente problemático. Proporcionamos acciones rápidas (**Ctrl**+**.**) para resolver los problemas detectados en el documento, proyecto o solución. Habilite el *análisis completo de la solución* para encontrar problemas en toda la solución, incluso si no tiene esos archivos abiertos en el editor.
 
-Además, use las sugerencias de código para obtener información sobre los procedimientos recomendados, código auxiliar o generar el código, adoptar nuevas características del lenguaje con el método abreviado **Ctrl**+**.**, así como para refactorizar el código.
+Además, use las sugerencias de código para obtener información sobre los procedimientos recomendados, código auxiliar o generar el código, adoptar nuevas características del lenguaje con el método abreviado **Ctrl**+**.**, Ctrl+.
 
 ![Aplicar revisiones rápidas y refactorizaciones mediante el menú de bombilla](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")
 
@@ -59,7 +59,7 @@ Ejecute y depure las pruebas unitarias basadas en los marcos de pruebas MSTest, 
 - [Documentación: opciones del editor personalizadas y portátiles](create-portable-custom-editor-options.md)
 - [Documentación: configuración de estilo de código .NET para EditorConfig](editorconfig-code-style-settings-reference.md)
 
-Visual Studio permite la configuración de convenciones de codificación, proporciona soluciones rápidas para solucionar problemas de estilo con el método abreviado **Ctrl**+**.** así como detectar infracciones de estilo de codificación. Configure y aplique las convenciones de formato, nomenclatura y estilo de código del equipo en un repositorio, lo que permite invalidar valores en el nivel de proyecto y archivo, con *EditorConfig*.
+Visual Studio permite la configuración de convenciones de codificación, proporciona soluciones rápidas para solucionar problemas de estilo con el método abreviado **Ctrl**+**.** Ctrl+. Configure y aplique las convenciones de formato, nomenclatura y estilo de código del equipo en un repositorio, lo que permite invalidar valores en el nivel de proyecto y archivo, con *EditorConfig*.
 
 ![Configurar y aplicar las convenciones de codificación con EditorConfig](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")
 
@@ -106,7 +106,7 @@ Estos son accesos directos populares de Visual Studio. Tenga en cuenta que algun
 | **Ctrl+F12** | Ir a implementación | Navegar desde cualquier tipo base o miembro a sus distintas implementaciones |
 | **Mayús+F12** | Buscar todas las referencias | Ver todas las referencias de símbolos o literales |
 | **Ctrl**+**.** (también **Alt+Entrar** en el perfil de C#) | Acciones rápidas y refactorizaciones | Ver qué correcciones de código, acciones de generación de código, refactorizaciones u otras acciones rápidas están disponibles en la posición del cursor o selección de código |
-| **Ctrl**+**E**,**V** | Línea duplicada | Duplica la línea de código en la que se encuentra el cursor (disponible en la **versión 15.6 de Visual Studio 2017 (versión preliminar 2)** y posteriores) |
+| **Ctrl**+**E**,**V** | Línea duplicada | Duplica la línea de código en la que se encuentra el cursor (disponible en la **Visual Studio 2017, versión 15.6** y posteriores) |
 | **Ctrl+Q** | Inicio rápido | Buscar todos los valores de Visual Studio |
 | **F5** | Iniciar depuración | Iniciar la depuración de la aplicación |
 | **Ctrl+F5** | Ejecutar sin depurar | Ejecutar la aplicación localmente sin depuración |

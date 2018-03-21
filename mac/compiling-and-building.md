@@ -6,19 +6,17 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abf772f1e00239b3a66e01c95dd827a392a12902
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilar y generar en Visual Studio para Mac
 
 Visual Studio para Mac se puede usar para compilar aplicaciones y crear ensamblados durante el desarrollo del proyecto. Es importante compilar y crear el código desde el principio y con frecuencia para poder identificar errores de coincidencia de tipos y otros errores en tiempo de compilación.
 
-## <a name="choosing-a-build-method"></a>Elección de un método de compilación:
-
-### <a name="using-the-ide"></a>Uso de el IDE
+## <a name="building-from-the-ide"></a>Compilar desde el IDE
 
 Visual Studio para Mac permite crear y ejecutar compilaciones de forma inmediata y sin perder el control sobre la funcionalidad de compilación. Visual Studio para Mac usa MSBuild como sistema de compilación subyacente.
 
@@ -40,13 +38,13 @@ Visual Studio para Mac también se puede usar para lo siguiente:
 
     ![adición de comandos personalizados](media/compiling-and-building-image6.png)
 
-### <a name="building-from-command-line"></a>Compilación desde la línea de comandos
+## <a name="building-from-command-line"></a>Compilación desde la línea de comandos
 
 Puede usar el motor de compilación MSBuild para compilar aplicaciones mediante la línea de comandos.
 
 Vea el contenido de [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) para más información sobre el uso de MSBuild.
 
-### <a name="using-visual-studio-team-services"></a>Empleo de Visual Studio Team Services
+## <a name="building-from-visual-studio-team-services"></a>Compilación desde Visual Studio Team Services
 
 * [Build your Xamarin App (Compilar la aplicación Xamarin)](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [Continuous Integration with Xamarin (Integración continua con Xamarin)](https://developer.xamarin.com/guides/cross-platform/ci/)

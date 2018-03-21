@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 0bd110b671806c37e59f5f0d52c62c1eed42e9cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -38,7 +38,7 @@ Visual Studio tiene una serie de modos de REPL de Python entre los que se puede 
 | IPython | REPL habla con el back-end de IPython | Comandos de IPython, ventajas de PyLab | No | Sí, insertado en REPL |
 | IPython sin PyLab | REPL habla con el back-end de IPython | IPython estándar | No | Sí, ventana independiente | 
 
-En este tema se describen los modos de REPL **Estándar** y **Depurar**. Para obtener más información sobre los modos de IPython, vea [Using the IPython REPL](interactive-repl-ipython.md) (Uso de REPL de Python).
+En este artículo se describen los modos de REPL **Estándar** y **Depurar**. Para obtener más información sobre los modos de IPython, vea [Using the IPython REPL](interactive-repl-ipython.md) (Uso de REPL de Python).
 
 Para obtener un tutorial detallado con ejemplos, incluidas las interacciones con el editor como Ctrl+Entrar, vea [Paso 3: uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 

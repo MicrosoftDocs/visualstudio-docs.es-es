@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 925c928e171b76af76304074e736fd8962158564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="refactoring"></a>Refactorización
 
-Mediante la refactorización del código, es posible reorganizar, reestructurar y aclarar el código existente sin que cambie el comportamiento general del código.
+Mediante la refactorización del código, es posible reorganizar, reestructurar y aclarar el código existente garantizando que no cambie el comportamiento general del código.
 
-Genera un código base más correcto, lo que lo hace mucho más utilizable, legible y fácil de mantener para cualquier desarrollador o usuario que haga referencia al código.
+La refactorización genera un código base más correcto, lo que lo hace mucho más utilizable, legible y fácil de mantener para cualquier desarrollador o usuario que haga referencia al código.
 
-La integración de Visual Studio para Mac con Roslyn, la plataforma de compilador de .NET de código abierto de Microsoft, permite más operaciones de refactorización y es totalmente compatible con la versión más reciente de C#.
+La integración de Visual Studio para Mac con Roslyn, la plataforma de compilador de .NET de código abierto de Microsoft, permite más operaciones de refactorización.
 
 ## <a name="renaming"></a>Cambiar nombre 
 

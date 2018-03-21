@@ -2,7 +2,7 @@
 title: "Trabajo con Python en Visual Studio, paso 5: instalación de paquetes | Microsoft Docs"
 description: "Paso 5 de un tutorial básico para trabajar con Python dentro de Visual Studio, que muestra las características de Visual Studio para administrar paquetes en un entorno de Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d633ce061d0624c44060c5e059cf9b29733260d9
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en un entorno de Python
 
@@ -44,19 +44,21 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
   ![Instalación de matplotlib en el entorno](media/environments-add-matplotlib1.png)
 
 1. Si se le pide, dé su consentimiento para la elevación.
- 
-1. Una vez instalado el paquete, aparece en la ventana Entornos de Python. La **X** situada a la derecha del paquete lo desinstala. 
+
+1. Una vez instalado el paquete, aparece en la ventana Entornos de Python. La **X** situada a la derecha del paquete lo desinstala.
 
   ![Finalización de la instalación de matplotlib en el entorno](media/environments-add-matplotlib2.png)
 
   La barra de progreso pequeña situada debajo del entorno indica que Visual Studio está compilando la base de datos de IntelliSense para el paquete recién instalado. La pestaña **IntelliSense** también muestra información más detallada. Tenga en cuenta que hasta que se complete dicha base de datos, las características de IntelliSense, como la finalización automática y la comprobación de sintaxis, no estarán activas en el editor de ese paquete.
 
+  Tenga en cuenta que **Visual Studio 2017, versión 15.6** y posteriores, utiliza un método diferente y más rápido para trabajar con IntelliSense, y muestra un mensaje a tal efecto en la pestaña **IntelliSense**.
+
 1. Cree un proyecto con **Archivo > Nuevo > Proyecto** y seleccione la plantilla "Aplicación Python". En el archivo de código que aparece, pegue el código siguiente, que crea una onda de coseno como en los pasos del tutorial anteriores, pero esta vez trazada en un gráfico:
 
     ```python
+    from math import radians
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
-    from math import radians
 
     def main():
         x = np.arange(0, radians(1800), radians(12))

@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Inicio rápido: proyectos y soluciones
 
@@ -185,10 +185,10 @@ Si quiere comprobar que la prueba unitaria funciona, seleccione **Probar** > **e
 
 ## <a name="see-also"></a>Vea también
 
-[Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)  
-[Guía de inicio rápido: personalizar el IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)  
-[Inicio rápido: escritura de código en el editor](../ide/quickstart-editor.md)  
-[Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)  
-[Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)  
-[Desarrollar código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Introducción al IDE de Visual Studio](../ide/visual-studio-ide.md)
+- [Guía de inicio rápido: primer vistazo al IDE de Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Guía de inicio rápido: personalizar el IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)
+- [Inicio rápido: escritura de código en el editor](../ide/quickstart-editor.md)
+- [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)
+- [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)
+- [Desarrollar código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Introducción al IDE de Visual Studio](../ide/visual-studio-ide.md)

@@ -1,19 +1,19 @@
 ---
-title: Administrar referencias en un proyecto
+title: "Administración de referencias en un proyecto en Visual Studio para Mac | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 30f6c99c6ac827b7da94fd228a7034e9ce0b0fac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 99f3ba9e5192bc17df23a93c9cad7e953797e9b4
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 
-Visual Studio para Mac ofrece tres maneras de agregar referencias adicionales a un proyecto:
+Visual Studio para Mac ofrece dos maneras de agregar referencias adicionales a un proyecto:
 
 ![Referencias del proyecto](media/projects-and-solutions-image10.png)
 
@@ -21,7 +21,6 @@ Estos son:
 
 * Referencias
 * Paquetes NuGet (agregados a través de la carpeta Paquetes)
-* Componentes
 
 Además, también pueden agregarse referencias web y referencias nativas a un proyecto.
 

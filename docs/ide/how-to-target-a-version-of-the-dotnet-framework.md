@@ -1,26 +1,25 @@
 ---
-title: "Cómo: Usar como destino una versión de .NET Framework | Microsoft Docs"
+title: "Versión de .NET Framework como destino en Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 12/08/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- targeting .NET Framework version [Visual Studio]
-- versions [Visual Studio], targeting .NET Framework version
+- targeting .NET Framework [Visual Studio]
+- .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: da2e236c39cce72670a47212aedabb87afa4d217
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 03d8b734833fad5a47f0d5517b21a7851d9258a6
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Cómo: Usar como destino una versión de .NET Framework
 
@@ -29,42 +28,42 @@ En este documento se describe cómo crear un proyecto que tiene como destino una
 > [!IMPORTANT]
 > Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, consulte [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-## <a name="targeting-a-version-when-you-create-a-project"></a>Especificar una versión de destino al crear un proyecto
+## <a name="to-target-a-version-when-you-create-a-project"></a>Para especificar una versión de destino al crear un proyecto
 
-Cuando crea un proyecto, la versión destino de .NET Framework las plantillas que se pueden utilizar.
+Al crear un proyecto, las versiones de .NET Framework disponibles dependen de qué versiones están instaladas y de la plantilla seleccionada en el cuadro de diálogo **Nuevo proyecto**.
 
-### <a name="to-target-a-version-when-you-create-a-project"></a>Para especificar una versión de destino al crear un proyecto
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto...**
 
-1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.
+1. En la lista de plantillas instaladas, elija el tipo de proyecto que quiere crear y escriba un nombre para el proyecto.
 
-2.  En la lista situada en la parte superior del cuadro de diálogo **Nuevo proyecto**, elija la versión de .NET Framework de destino que quiera especificar para el proyecto.
+1. En la lista desplegable **Plataforma** situada en la parte inferior del cuadro de diálogo **Nuevo proyecto**, elija la versión de .NET Framework de destino que quiera especificar para el proyecto.
 
-3.  En la lista de plantillas instaladas, elija el tipo de proyecto que quiere crear, asigne un nombre al proyecto y después elija el botón **Aceptar**.
+    En la lista de los plataformas se muestran solo aquellas versiones aplicables a la plantilla que eligió. Algunos tipos de proyecto, como .NET Core, no requieren .NET Framework. En tales casos, la lista desplegable **Plataforma** se mantiene oculta.
 
-    La lista de plantillas muestra únicamente los proyectos que son compatibles con la versión de .NET Framework que ha elegido.
+    ![Desplegable Plataforma en el cuadro de diálogo Nuevo proyecto](media/vside-newproject-framework.png)
 
-## <a name="changing-the-target-version"></a>Cambiar la versión de destino
+1. Elija el botón **Aceptar** .
+
+## <a name="to-change-the-targeted-version"></a>Para cambiar la versión de destino
 
 Puede cambiar la versión de .NET Framework de destino en un proyecto de Visual Basic, C# o Visual F# si sigue este procedimiento.
 
 Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, consulte [Cómo: Modificar versión de .NET Framework de destino y el conjunto de herramientas de la plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-### <a name="to-change-the-targeted-version"></a>Para cambiar la versión de destino
-
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto que quiere cambiar y después elija **Propiedades**.
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto que quiere cambiar y después elija **Propiedades**.
 
     ![Propiedades del Explorador de soluciones de Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
 
-2. En la columna izquierda de la ventana Propiedades, elija la pestaña **Aplicación**.
+1. En la columna izquierda de la ventana Propiedades, elija la pestaña **Aplicación**.
 
     ![Propiedades de aplicación de Visual Studio, pestaña Aplicación](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 
     > [!NOTE]
     > Después de crear una aplicación para UWP, no puede cambiar la versión de destino de Windows ni de .NET Framework.
 
-3.  En la lista **Plataforma de destino**, elija la versión que quiera.
+1. En la lista **Plataforma de destino**, elija la versión que quiera.
 
-4.  En el cuadro de diálogo de comprobación que aparece, elija el botón **Sí**.
+1. En el cuadro de diálogo de comprobación que aparece, elija el botón **Sí**.
 
     Se descarga el proyecto. Cuando se vuelva a cargar, la versión de .NET Framework de destino será la que acaba de elegir.
 

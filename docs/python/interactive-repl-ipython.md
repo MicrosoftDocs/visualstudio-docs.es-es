@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>Uso de IPython en la ventana interactiva
 
-La ventana interactiva de Visual Studio en modo de IPython es un entorno de desarrollo interactivo avanzado y fácil de usar que tiene características de computación paralela interactiva. En este tema se explica cómo usar IPython en la ventana interactiva de Visual Studio, en la que también están disponibles todas las características habituales de la [ventana interactiva](python-interactive-repl-in-visual-studio.md).
+La ventana interactiva de Visual Studio en modo de IPython es un entorno de desarrollo interactivo avanzado y fácil de usar que tiene características de computación paralela interactiva. En este artículo se explica cómo usar IPython en la ventana interactiva de Visual Studio, en la que también están disponibles todas las características habituales de la [ventana interactiva](python-interactive-repl-in-visual-studio.md).
 
 Para este tutorial, debe tener instalado el entorno de [Anaconda](https://www.continuum.io), que incluye IPython y las bibliotecas necesarias.
 
@@ -83,7 +83,7 @@ Para este tutorial, debe tener instalado el entorno de [Anaconda](https://www.co
 
 IPython tiene muchas otras características útiles, como el escape al shell del sistema, la sustitución de variables, la captura de salidas, etc. Vea la [documentación de IPython](http://ipython.org/documentation.html) para obtener más información.
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-articles"></a>Artículos relacionados
 
 - Para usar Jupyter fácilmente y sin instalación, pruebe el [servicio hospedado en Azure Notebooks](https://notebooks.azure.com/) gratuito que le permite conservar y compartir sus blocs de notas con otras personas.
 

@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 79036afd66d9c8c23ffb6351d6fd5329004479f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 73e82e70733e12116250e47850bbcf1edff13a6d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publicación en Azure App Service
 
@@ -74,7 +74,7 @@ Cree un App Service temporal sin necesidad de una suscripción de Azure siguiend
 
 ## <a name="configure-python-on-azure-app-service"></a>Configurar Python en Azure App Service
 
-Una vez que tenga un App Service con una aplicación web vacía ejecutándose (en su suscripción o en un sitio gratuito), instale la versión que desee de Python tal y como se describe en [Administrar Python en Azure App Service](managing-python-on-azure-app-service.md). Para publicar desde Visual Studio 2017, registre la ruta exacta al intérprete de Python instalado con la extensión de sitio de la forma que se describe en ese tema.
+Una vez que tenga un App Service con una aplicación web vacía ejecutándose (en su suscripción o en un sitio gratuito), instale la versión que desee de Python tal y como se describe en [Administrar Python en Azure App Service](managing-python-on-azure-app-service.md). Para publicar desde Visual Studio 2017, registre la ruta exacta al intérprete de Python instalado con la extensión de sitio de la forma que se describe en ese artículo.
 
 Si lo desea, también puede instalar el paquete `bottle` siguiendo el proceso de dichas instrucciones, ya que ese paquete se instala como parte de otros pasos en este tutorial.
 

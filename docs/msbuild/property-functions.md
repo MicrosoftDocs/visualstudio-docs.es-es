@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d119b5baeccc762411aa8f7db4e4d02ba881c34d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c3bd5d35e3d996a1507a5ce14d40fbb59c24cbdb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para evaluar los scripts de MSBuild. Las funciones de propiedad se pueden usar siempre que aparezcan propiedades. A diferencia de las tareas, las funciones de propiedad se pueden usar fuera de los destinos, y se evalúan antes de que se ejecute ningún destino.  
@@ -211,7 +211,7 @@ En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para 
  Esta función de propiedad tiene la sintaxis siguiente:  
 
 ```  
-$[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
+$([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```  
 
 ##  <a name="msbuild-ensuretrailingslash"></a>MSBuild EnsureTrailingSlash  
@@ -229,7 +229,7 @@ $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
  Esta función de propiedad tiene la sintaxis siguiente:  
 
 ```  
-$[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)  
+$([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```  
 
  El código siguiente es un ejemplo de esta sintaxis.  
@@ -246,7 +246,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
  Esta función de propiedad tiene la sintaxis siguiente:  
 
 ```  
-$([MSBuild]::GetPathOfFileAbove(dir.props)  
+$([MSBuild]::GetPathOfFileAbove(dir.props))  
 ```  
 
 ##  <a name="msbuild-getregistryvalue"></a>GetRegistryValue de MSBuild  
@@ -274,7 +274,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 
  Están disponibles las siguientes vistas del Registro:  
 
-|Vista del Registro|Definición|  
+|Vista del Registro|de esquema JSON|  
 |-------------------|----------------|  
 |RegistryView.Registry32|La vista del Registro para aplicaciones de 32 bits.|  
 |RegistryView.Registry64|La vista del Registro para aplicaciones de 64 bits.|  
@@ -292,7 +292,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
  Esta función de propiedad tiene la sintaxis siguiente:  
 
 ```  
-$[MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2))  
+$([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```  
 
  El código siguiente es un ejemplo de esta sintaxis.  

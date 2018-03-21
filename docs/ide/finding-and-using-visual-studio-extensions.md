@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Búsqueda y uso de extensiones de Visual Studio
 
@@ -73,7 +73,7 @@ Si desea deshabilitar las actualizaciones automáticas, puede deshabilitar la ca
 
 Como novedad en **Visual Studio 2017 (versión 15.3)**, Visual Studio le notifica si sospecha que una extensión estaba implicada en un bloqueo durante una sesión anterior. Cuando Visual Studio se bloquea, almacena la pila de excepciones. La próxima vez que Visual Studio se inicia, examina la pila, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco pertenece a un módulo que forma parte de una extensión habilitada e instalada, muestra una notificación.
 
-Como novedad en **Visual Studio 2017 (versión 15.6, versión preliminar 3)**, Visual Studio también le notifica si sospecha que una extensión está causando la falta de respuesta de la interfaz de usuario.
+Como novedad en **Visual Studio 2017, versión 15.6**, Visual Studio también le notifica si sospecha que una extensión está causando la falta de respuesta de la interfaz de usuario.
 
 Cuando aparezcan estas notificaciones, puede ignorarlas o realizar una de las acciones siguientes:
 

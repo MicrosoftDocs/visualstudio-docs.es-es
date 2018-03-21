@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 17108b8ff993d88d2e5ed179c3167f43d2895d7f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Trabajo con Python en Visual Studio
 
@@ -30,7 +30,7 @@ Python es un lenguaje de programación popular confiable, flexible, fácil de ap
 Visual Studio proporciona compatibilidad de primera clase con el lenguaje Python. Este tutorial le guiará a través de los pasos siguientes:
 
 - [Paso 0: Instalación](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Paso 1: Crear un proyecto de Python (en este tema)](#step-1-create-a-new-python-project)
+- [Paso 1: Crear un proyecto de Python (en este artículo)](#step-1-create-a-new-python-project)
 - [Paso 2: Escribir y ejecutar código para ver IntelliSense de Visual Studio en funcionamiento](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [Paso 3: Crear más código en la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [Paso 4: Ejecutar el programa completado en el depurador de Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

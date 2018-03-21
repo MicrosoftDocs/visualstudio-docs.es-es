@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6ef9084e5cd571c0f3f2b60e2c08d8d7bb0b8518
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-build-system"></a>Personalización del sistema de compilación
 
@@ -18,7 +18,7 @@ MSBuild es un motor de compilación desarrollado por Microsoft que permite la co
 
 **MSBuild** se usa principalmente como sistema de compilación para los proyectos de Visual Studio para Mac. 
 
-MSBuild toma un conjunto de entradas, como archivos de código fuente, y las transforma en salidas, como archivos ejecutables, y consigue este resultado mediante la invocación de herramientas como el compilador. 
+MSBuild toma un conjunto de entradas, como archivos de código fuente, y las transforma en salidas, como archivos ejecutables. Consigue este resultado mediante la invocación de herramientas como el compilador. 
 
 
 ## <a name="msbuild-file"></a>Archivo de MSBuild
@@ -26,17 +26,18 @@ MSBuild toma un conjunto de entradas, como archivos de código fuente, y las tra
 MSBuild usa un archivo XML, denominado archivo de proyecto, que define los *elementos* que forman parte del proyecto (por ejemplo, los recursos de imagen) y las *propiedades* necesarias para compilar el proyecto. Este archivo de proyecto siempre tiene una extensión de archivo que termina en `proj`, como `.csproj` para proyectos de C#. 
 
 ### <a name="viewing-the-msbuild-file"></a>Visualización del archivo de MSBuild
-Puede encontrar este archivo si hace clic con el botón derecho en el nombre del proyecto y selecciona **Mostrar en Finder**. Con esto se muestran todos los archivos y las carpetas relacionados con el proyecto, incluido el archivo `.csproj`, como se muestra a continuación:
+
+Para buscar el archivo MSBuild, haga clic con el botón derecho en el nombre del proyecto y seleccione **Mostrar en Finder**. La ventana de Finder muestra todos los archivos y las carpetas relacionados con el proyecto, incluido el archivo `.csproj`, como se muestra en la imagen siguiente:
 
 ![](media/customizing-build-system-image1.png)
 
-También puede mostrar el archivo `.csproj` en una nueva pestaña de Visual Studio para Mac si hace clic con el botón derecho en el nombre del proyecto y va a **Herramientas > Editar archivo**:
+Para mostrar el archivo `.csproj` en una nueva pestaña de Visual Studio para Mac, haga clic con el botón derecho en el nombre del proyecto y vaya a **Herramientas > Editar archivo**:
 
 ![](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>Composición del archivo de MSBuild
 
-Todos los archivos de MSBuild contienen un elemento raíz obligatorio `Project`, como se muestra a continuación:
+Todos los archivos de MSBuild contienen un elemento raíz obligatorio `Project`, como:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -44,7 +45,7 @@ Todos los archivos de MSBuild contienen un elemento raíz obligatorio `Project`,
 </Project>
 ```
 
-Normalmente, el proyecto también importa un archivo `.targets` que contiene muchas de las reglas que describen cómo procesar y compilar los distintos archivos. Este normalmente aparece hacia la parte inferior del archivo `proj` y, en los proyectos de C#, su aspecto será similar al siguiente:
+Normalmente, el proyecto también importará un archivo `.targets`. Este archivo contiene muchas de las reglas que describen cómo procesar y compilar los distintos archivos. La importación normalmente aparece hacia la parte inferior del archivo `proj` y, en los proyectos de C#, su aspecto es similar al siguiente:
 
 ```
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -54,7 +55,7 @@ El archivo de destinos es otro archivo de MSBuild. Este archivo contiene código
 
 ### <a name="items-and-properties"></a>Elementos y propiedades
 
-Hay dos tipos de datos fundamentales en MSBuild: *elementos* y *propiedades*, que se explican más detalladamente a continuación.
+Hay dos tipos de datos fundamentales en MSBuild: *elementos* y *propiedades*, que se explican más detalladamente en las secciones siguientes.
 
 #### <a name="properties"></a>Propiedades
 
@@ -62,7 +63,7 @@ Las propiedades son pares clave-valor que se usan para almacenar valores que afe
 
 Se establecen mediante un elemento PropertyGroup y pueden contener cualquier número de elementos PropertiesGroups, que pueden contener cualquier número de propiedades. 
 
-Por ejemplo, el elemento PropertyGroup de una aplicación de consola sencilla podría tener el aspecto siguiente:
+Por ejemplo, el elemento PropertyGroup de una aplicación de consola sencilla podría parecerse al siguiente XML:
 
 ```
 <PropertyGroup>
@@ -84,7 +85,7 @@ Los elementos proporcionan una manera de trabajar con entradas del sistema de co
 
 Los elementos se crean al declarar un `ItemGroup`. Puede haber cualquier número de elementos ItemGroups, que pueden contener cualquier número de elementos. 
 
-Por ejemplo, el siguiente fragmento de código crea las pantallas de inicio de iOS. Estas son de tipo `BundleResource`, con la especificación como ruta de acceso a la imagen:
+Por ejemplo, el siguiente fragmento de código crea las pantallas de inicio de iOS. Las pantallas de inicio tienen el tipo de compilación `BundleResource`, con la especificación como ruta de acceso a la imagen:
 
 ```
  <ItemGroup>

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef143862c56f07edc844874bbf71cd916ac9eabc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-6-working-with-git"></a>Paso 6: Trabajar con Git
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/09/2018
 
 Visual Studio proporciona integración directa con repositorios de Git locales y los que residen en servicios como GitHub y Visual Studio Team Services. La integración incluye clonar un repositorio, confirmar los cambios y administrar ramas.
 
-En este tema se describe cómo crear un repositorio de Git local para un proyecto existente. Para ver un tutorial de creación de un proyecto desde un repositorio de Git remoto, vea [Inicio rápido: Clonar un repositorio de código de Python en Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+En este artículo se describe cómo crear un repositorio de Git local para un proyecto existente. Para ver un tutorial de creación de un proyecto desde un repositorio de Git remoto, vea [Inicio rápido: Clonar un repositorio de código de Python en Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. Con un proyecto abierto en Visual Studio, como el proyecto del [paso anterior](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), haga clic con el botón derecho en la solución y seleccione **Agregar solución al control de código fuente**. Visual Studio crea un repositorio de Git local que contiene el código del proyecto y muestra controles relacionados con Git en la parte inferior de la ventana de Visual Studio. Los controles muestran confirmaciones pendientes, cambios, el nombre del repositorio y la rama. Mantenga el puntero sobre los controles para ver más información.
 

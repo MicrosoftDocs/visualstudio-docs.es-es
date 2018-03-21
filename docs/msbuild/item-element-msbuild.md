@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contiene un elemento definido por el usuario y sus metadatos. Cada elemento que se utiliza en un proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] debe especificarse como elemento secundario de un elemento `ItemGroup`.  
@@ -75,7 +75,7 @@ Ahora, puede pasar los metadatos `Version` como un atributo, como se muestra en 
 
 |Atributo|Description|  
 |---------------|-----------------|  
-|`Include`|Atributo necesario.<br /><br /> El archivo o comodín que se incluirá en la lista de elementos.|  
+|`Include`|Atributo opcional.<br /><br /> El archivo o comodín que se incluirá en la lista de elementos.|  
 |`Exclude`|Atributo opcional.<br /><br /> El archivo o comodín que se excluirá de la lista de elementos.|  
 |`Condition`|Atributo opcional.<br /><br /> La condición que se va a evaluar. Para obtener más información, consulte [Condiciones](../msbuild/msbuild-conditions.md).|  
 |`Remove`|Atributo opcional.<br /><br /> El archivo o comodín que se quitará de la lista de elementos.<br /><br />|  

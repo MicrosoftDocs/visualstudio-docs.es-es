@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: 46338778813b73dbc87458f90cfe0548bd8ccb8a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 95aa6abeb5a64158fe0ef0ed2b64392108248523
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-app-resources"></a>Administración de recursos de aplicación
 
-Los archivos de recursos de aplicación, como imágenes, archivos de texto y archivos de audio, son elementos integrales de la aplicación que no se compilan con ella. Cada plataforma compatible con Visual Studio para Mac controla estos tipos de archivos de maneras diferentes. Vea las guías siguientes para obtener más información sobre cómo tratar con recursos de aplicación en Visual Studio para Mac.
+Los archivos de recursos de aplicación, como imágenes, archivos de texto y archivos de audio, son necesarios para la aplicación, aunque no se compilan con ella. Cada plataforma compatible con Visual Studio para Mac controla estos recursos de maneras diferentes, como se explica en las siguientes guías:
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
-El código de Xamarin.Forms se ejecuta en varias plataformas, cada una con su propio sistema de archivos. Esto significa que la lectura y la escritura de archivos pueden realizarse mediante las API de archivo nativo de cada plataforma, o mediante la adición de archivos como recursos de incrustación.
+El código de Xamarin.Forms se ejecuta en varias plataformas, cada una de las cuales tiene su propio sistema de archivos y cada sistema de archivos dicta cómo leer y escribir en archivos. En Xamarin.Forms puede administrar recursos de la aplicación mediante la API de archivo nativo en cada plataforma, o mediante la adición de archivos como recursos integrados.
 
 * [Working with Images (Trabajo con imágenes)](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [Working with Files (Trabajo con archivos)]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)

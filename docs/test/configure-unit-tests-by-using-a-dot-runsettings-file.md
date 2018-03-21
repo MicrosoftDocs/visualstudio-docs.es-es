@@ -8,15 +8,15 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c0808635d0cd471f0fdaeb00e970ffde94a279c6
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configuración de pruebas unitarias con un archivo *.runsettings*
 
-En Visual Studio las pruebas unitarias se pueden configurar mediante un archivo *.runsettings*. Por ejemplo, se puede cambiar la versión de .NET Framework en la que se ejecutan las pruebas, el directorio en el que se entregan los resultados de las pruebas o los datos recopilados durante una serie de pruebas.
+En Visual Studio las pruebas unitarias se pueden configurar mediante un archivo *.runsettings*. Por ejemplo, se puede cambiar la versión de .NET Framework en la que se ejecutan las pruebas, el directorio de los resultados de las pruebas o los datos recopilados durante una serie de pruebas.
 
 > [!NOTE]
 > El nombre de archivo no importa, siempre que use la extensión ".runsettings".
@@ -57,6 +57,10 @@ A continuación se muestra un archivo *.runsettings* típico. Cada elemento del 
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
+  
+     <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
+     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -129,6 +133,7 @@ En las secciones siguientes se detallan los elementos de un archivo *.runsetting
 |`TreatTestAdapterErrorsAsWarnings`|False|false, true|
 |`TestAdaptersPaths`||Una o varias rutas de acceso al directorio donde se encuentran los TestAdapters|
 |`MaxCpuCount`|1|Este valor controla el grado de ejecución de pruebas paralelas cuando se ejecutan pruebas unitarias, mediante los núcleos disponibles en el equipo. El motor de ejecución de pruebas se inicia como un proceso distinto en cada núcleo disponible y proporciona a cada núcleo un contenedor con las pruebas que se van a ejecutar. Un contenedor puede ser un ensamblado, un archivo DLL o un artefacto relevante. El contenedor de pruebas es la unidad de programación. En cada contenedor, las pruebas se ejecutan según el marco de pruebas. Si hay muchos contenedores, a medida que los procesos finalizan la ejecución de las pruebas en un contenedor, se les proporciona el siguiente contenedor disponible.<br /><br /> El valor de MaxCpuCount puede ser:<br /><br /> n, donde 1 <= n <= número de núcleos: se iniciarán hasta n procesos<br /><br /> n, donde n = cualquier otro valor: el número de procesos que se iniciarán será como máximo el número de núcleos disponibles en la máquina|
+|`TestSessionTimeout`||Permite a los usuarios terminar una sesión de prueba cuando esta supera un tiempo de espera especificado. La configuración de un tiempo de espera garantiza que los recursos se utilicen de manera conveniente y que las sesiones de prueba se limiten a un tiempo establecido. Esta opción está disponible en **Visual Studio 2017, versión 15.5** y posteriores.
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptadores de datos de diagnóstico (recopiladores de datos)
 
@@ -140,7 +145,7 @@ El recopilador de datos de cobertura de código crea un registro de las partes d
 
 #### <a name="video-data-collector"></a>Recopilador de datos de vídeo
 
-El recopilador de datos de vídeo captura una grabación de pantalla cuando se ejecutan las pruebas. Esta grabación es útil para solucionar problemas de pruebas de interfaz de usuario. El recopilador de datos de vídeo está disponible en la **versión 15.5 de Visual Studio 2017**  y posteriores.
+El recopilador de datos de vídeo captura una grabación de pantalla cuando se ejecutan las pruebas. Esta grabación es útil para solucionar problemas de pruebas de interfaz de usuario. El recopilador de datos de vídeo está disponible en la **Visual Studio 2017, versión 15.5** y posteriores.
 
 Para personalizar cualquier otro tipo de adaptador de datos de diagnóstico, debe usar un archivo de configuración de pruebas. Para obtener más información, consulte [Especificar la configuración de prueba para las pruebas en Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
 

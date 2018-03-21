@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: c97e2216c8101c03c999b4f658dcd4b6e1dc4619
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5fa5a2479b7b04cd8ad9ec84287a30d801ff90ca
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Iniciar sesión en Visual Studio para Mac
 
-Al iniciar Visual Studio para Mac por primera vez, deberá iniciar sesión con una cuenta Microsoft. Debe usar una cuenta Microsoft que esté conectada a la licencia que quiere usar. Si no tiene una cuenta Microsoft, vea [Registrarse para obtener una cuenta Microsoft](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account). 
+Al iniciar Visual Studio para Mac por primera vez, deberá iniciar sesión con una cuenta Microsoft. Use una cuenta Microsoft que esté conectada a la licencia que quiere usar. Si no tiene una cuenta Microsoft, vea [Registrarse para obtener una cuenta Microsoft](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account). 
 
 Si decide no iniciar sesión inmediatamente, podrá usar una copia de evaluación de 30 días. Cuando transcurran los 30 días, deberá iniciar sesión para seguir usando su copia de Visual Studio para Mac 
 
@@ -22,7 +22,7 @@ Si decide no iniciar sesión inmediatamente, podrá usar una copia de evaluació
 
 Antes de iniciar sesión en Visual Studio para Mac, asegúrese de que está conectado a Internet. Las suscripciones solo se pueden activar en línea.
  
-Para iniciar sesión en Visual Studio para Mac, haga lo siguiente:
+Para iniciar sesión en Visual Studio para Mac, siga estos pasos:
 
 1. Haga clic en el vínculo Iniciar sesión de la página principal para mostrar el cuadro de diálogo Cuentas y haga clic en el botón **Iniciar sesión**:
 
@@ -32,9 +32,9 @@ Para iniciar sesión en Visual Studio para Mac, haga lo siguiente:
 
     ![](media/signing-in-image13.png)
 
-    Tenga en cuenta que no puede usar las credenciales de Xamarin para iniciar sesión en Visual Studio para Mac.
+    No puede usar las credenciales de Xamarin para iniciar sesión en Visual Studio para Mac.
 
-3. 1.   Una vez que haya iniciado sesión correctamente, verá el tipo de licencia que tiene. En este cuadro de diálogo, puede agregar las cuentas Microsoft adicionales que quiera usar:
+3.  Una vez que haya iniciado sesión correctamente, verá el tipo de licencia que tiene. En este cuadro de diálogo, puede agregar las cuentas Microsoft adicionales que quiera usar:
 
     ![](media/signing-in-image14.png)
 

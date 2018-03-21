@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Administrar Python en Azure App Service
 
 [Azure App Service](https://azure.microsoft.com/services/app-service/) es una plataforma como servicio que se ofrece para las aplicaciones web, ya sean sitios a los que se acceda a través de un explorador, API de REST que usan sus propios clientes o procesamientos desencadenados por un evento. App Service admite completamente el uso de Python para implementar aplicaciones.
 
-La compatibilidad de Python personalizable en Azure App Service se proporciona como un conjunto de *extensiones de sitio* de App Service en la que cada una contiene una versión específica del tiempo de ejecución de Python. Así, se pueden instalar los paquetes que se quiera directamente en ese entorno, como se describe en este tema. Al personalizar el entorno en el propio App Service, no es necesario mantener los paquetes en los proyectos de aplicación web ni cargarlos con el código de la aplicación.
+La compatibilidad de Python personalizable en Azure App Service se proporciona como un conjunto de *extensiones de sitio* de App Service en la que cada una contiene una versión específica del tiempo de ejecución de Python. Así, se pueden instalar los paquetes que se quiera directamente en ese entorno, como se describe en este artículo. Al personalizar el entorno en el propio App Service, no es necesario mantener los paquetes en los proyectos de aplicación web ni cargarlos con el código de la aplicación.
 
 > [!Tip]
-> Aunque App Service hace que Python 2.7 y Python 3.4 se instalen de forma predeterminada en las carpetas raíz del servidor, no se pueden personalizar ni instalar paquetes en esos entornos, ni tampoco conviene depender de su existencia o no. En su lugar, es mejor basarse en una extensión de sitio que pueda controlar, como se describe en este tema.
+> Aunque App Service hace que Python 2.7 y Python 3.4 se instalen de forma predeterminada en las carpetas raíz del servidor, no se pueden personalizar ni instalar paquetes en esos entornos, ni tampoco conviene depender de su existencia o no. En su lugar, es mejor basarse en una extensión de sitio que pueda controlar, como se describe en este artículo.
 
 > [!Important]
 > Los procesos que se describen aquí están sujetos a cambios, y especialmente a mejoras. Los cambios se anuncian en [Ingeniería de Python en el blog de Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).

@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 
 ## <a name="project-build-configurations"></a>Configuraciones de compilación del proyecto 
 
-Los proyectos pueden tener varias configuraciones; cambiar entre ellas permite diferentes salidas en tiempo de compilación. Por ejemplo, cuando se usa una configuración de depuración, la salida incluye símbolos de depuración, lo que permite al depurador resolver nombres de función, parámetros o variables del seguimiento de la pila de una aplicación bloqueada. Aunque el empleo de una configuración de depuración se traduce en un tamaño de archivo inflado, lo que no sería ideal para una aplicación diseñada para su distribución.
+Los proyectos suelen tener varias configuraciones; cambiar entre ellas permite diferentes salidas en tiempo de compilación. Por ejemplo, una configuración de depuración tendrá como resultado símbolos de depuración, lo que permite al depurador resolver nombres de función, parámetros o variables del seguimiento de la pila de una aplicación bloqueada. Aunque esta información adicional es útil durante el desarrollo, conduce a un tamaño de archivo excesivo y no es ideal para la distribución.
 
-Cada plataforma tiene configuraciones específicas para su compilación. El desarrollo de Xamarin.Android siempre tiene solo una configuración de lanzamiento o depuración. Xamarin.iOS tiene más configuraciones. Los proyectos de iOS más recientes solo tienen configuraciones de depuración o lanzamiento, pero pueden configurarse para un dispositivo o cualquier simulador instalado.
+Cada plataforma tiene configuraciones específicas para su compilación. 
 
 ## <a name="solution-configurations"></a>Configuraciones de solución
 
-Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña **Asignaciones de configuración** del elemento **Compilar > Configuraciones**, puede asignar una configuración de destino para cada elemento de la solución, como se muestra a continuación:
+Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña **Asignaciones de configuración** del elemento **Compilar > Configuraciones**, puede asignar una configuración de destino para cada elemento de la solución, como se muestra en la imagen siguiente:
 
 
  ![Opciones de asignación de configuración](media/projects-and-solutions-image3.png)
 
-Para más información, vea el vídeo [Configuration Manager (Administrador de configuración)](https://www.youtube.com/watch?v=tjSdkqYh5Vg) de James Montemagno.
+Para obtener más información sobre configuraciones, vea el vídeo [Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) (Administrador de configuración) de James Montemagno.
 
 ## <a name="run-configuration"></a>Configuración de ejecución
 
@@ -49,7 +49,7 @@ Aquellas actividades distintas a `MainLauncher` deberán tener `Exported=true` a
 
 ## <a name="examples-of-data-that-might-be-included-in-run-configurations"></a>Ejemplos de datos que se podrían incluir en configuraciones de ejecución
 
-En la siguiente lista, se proporcionan algunos ejemplos de datos que se podrían incluir en configuraciones de ejecución:
+En la siguiente lista se proporcionan algunos ejemplos de datos que se podrían incluir en configuraciones de ejecución:
 
 * Proyecto de .NET normal
     * Aplicación de inicio alternativa
