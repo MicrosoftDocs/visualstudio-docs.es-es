@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Acceso a datos en Visual Studio
 
@@ -33,7 +33,7 @@ Las listas siguientes muestran algunos de los muchos sistemas de base de datos y
 
 ||||
 |-|-|-|
-|Base de datos SQL|Documentos|Almacenamiento (blobs, tablas, colas, archivos)|
+|Base de datos SQL|Base de datos de Azure Cosmos|Almacenamiento (blobs, tablas, colas, archivos)|
 |Almacenamiento de datos SQL|Base de datos SQL Server Stretch|StorSimple|
 
 Y mucho más...
