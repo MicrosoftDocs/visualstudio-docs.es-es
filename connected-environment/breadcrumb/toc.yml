@@ -1,3 +1,11 @@
-- name: Documentos
+- name: Docs
   tocHref: /
   topicHref: /
+  items:
+    - name: Programa para la mejora
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/
+      items:
+        - name: Entorno conectado
+          tocHref: /visualstudio/connected-environment/
+          topicHref: /visualstudio/connected-environment/
