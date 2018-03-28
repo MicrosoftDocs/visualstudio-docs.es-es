@@ -1,11 +1,12 @@
 ---
-title: "Tutorial: Depurar una aplicación paralela | Documentos de Microsoft"
+title: 'Tutorial: Depurar una aplicación paralela | Documentos de Microsoft'
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.date: 03/22/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -21,16 +22,17 @@ helpviewer_keywords:
 - parallel applications, debugging [Visual Basic]
 - parallel applications, debugging [C#]
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
-caps.latest.revision: "28"
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: af74685428f15cebdcaf0992ae3ad529f2dd41b8
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Tutorial: Depurar una aplicación paralela en Visual Studio
 Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas** windows para depurar una aplicación paralela. Estas ventanas ayudan a entender y comprobar el comportamiento en tiempo de ejecución del código que usa el [tarea Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime). En este tutorial se proporciona código de muestra con puntos de interrupción integrados. Después de que el código se interrumpe, se muestra cómo utilizar el **tareas paralelas** y **pilas paralelas** windows para examinarlo.  
@@ -103,13 +105,11 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      ![Vista en la ventana Pilas paralelas de subprocesos](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")  
   
-     La pila de llamadas del subproceso principal aparece en un cuadro y las pilas de llamadas de los otros cuatro subprocesos están agrupadas en otro cuadro. Se agrupan cuatro subprocesos porque sus marcos de pila comparten los mismos contextos de método, es decir, están en los mismos métodos: `A`, `B` y `C`. Para ver los identificadores y los nombres de los subprocesos que comparten el mismo cuadro, mantenga el mouse sobre el encabezado (**4 subprocesos**). El subproceso actual se muestra en negrita, como en la siguiente ilustración.  
+     La pila de llamadas del subproceso principal aparece en un cuadro y las pilas de llamadas de los otros cuatro subprocesos están agrupadas en otro cuadro. Se agrupan cuatro subprocesos porque sus marcos de pila comparten los mismos contextos de método, es decir, están en los mismos métodos: `A`, `B` y `C`. Para ver los identificadores y los nombres de los subprocesos que comparten el mismo cuadro, mantenga el mouse sobre el cuadro con el encabezado (**4 subprocesos**). El subproceso actual se muestra en negrita.  
   
      ![Información sobre herramientas que muestra los nombres e identificadores de subproceso](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")  
   
-     La flecha amarilla indica el marco de pila activo del subproceso actual. Para obtener más información, desplace el puntero del mouse sobre él  
-  
-     ![Información sobre herramientas en marco de pila activo](../debugger/media/pdb_walkthrough_1b.png "PDB_Walkthrough_1B")  
+     La flecha amarilla indica el marco de pila activo del subproceso actual.
   
      Puede establecer el grado de detalle desea mostrar para los marcos de pila (**nombres de módulo**, **tipos de parámetro**, **nombres de parámetro**, **valores de parámetro**, **Números de línea** y **desplazamientos de bytes**) con el botón secundario en el **pila de llamadas** ventana.  
   
@@ -127,7 +127,7 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      Puede mantener el mouse sobre el encabezado del cuadro, por ejemplo, **1 subproceso** o **2 subprocesos**, para ver los identificadores de los subprocesos de subproceso. Puede desplazar el puntero del mouse sobre los marcos de pila para ver identificadores de subproceso y otros detalles del marco. El resaltado azul indica el subproceso actual y la flecha amarilla indica el marco de pila activo del subproceso actual.  
   
-     El icono de los subprocesos (las líneas onduladas azules y rojas superpuestas) indica los marcos de pila activos de los subprocesos que no son el actual. En el **pila de llamadas** ventana, haga doble clic en S.B para intercambiar los marcos. El **pilas paralelas** ventana indica que el marco de pila actual del subproceso actual utilizando un icono de flecha verde y curvada.  
+     El icono de subprocesos (interweaved líneas) indica los marcos de pila activos de los subprocesos que no. En el **pila de llamadas** ventana, haga doble clic en S.B para intercambiar los marcos. El **pilas paralelas** ventana indica que el marco de pila actual del subproceso actual utilizando un icono de flecha verde y curvada.  
   
      En el **subprocesos** ventana, intercambie entre los subprocesos y observe que la vista en la **pilas paralelas** se actualiza la ventana.  
   
@@ -141,11 +141,13 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      Cuando un contexto de método está asociado a un solo marco de pila, se muestra el encabezado del cuadro **1 subproceso** y puede cambiar a él haciendo doble clic en. Si hace doble clic en un contexto de método que tiene más que un marco asociado, el menú se abre automáticamente. Cuando desplace el puntero del mouse sobre los contextos de método, observe el triángulo negro a la derecha. Al hacer clic en ese triángulo, también se muestra el menú contextual.  
   
-     Con aplicaciones grandes que tienen muchos subprocesos, le interesa centrarse en un subconjunto de subprocesos. El **pilas paralelas** ventana puede mostrar las pilas de llamadas solo para los subprocesos marcados. En la barra de herramientas, haga clic en el **mostrar marcadas únicamente** situado junto al cuadro de lista.  
-  
-     ![Vaciar la ventana Pilas paralelas y la información sobre herramientas](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
-  
-     Después, en la **subprocesos** ventana, marque los subprocesos uno por uno para ver cómo sus pilas de llamadas aparecen en la **pilas paralelas** ventana. Para marcar subprocesos, utilice el menú contextual o la primera celda de un subproceso. Haga clic en el **mostrar marcadas únicamente** botón de barra de herramientas para mostrar todos los subprocesos.  
+     Con aplicaciones grandes que tienen muchos subprocesos, le interesa centrarse en un subconjunto de subprocesos. El **pilas paralelas** ventana puede mostrar las pilas de llamadas solo para los subprocesos marcados. Para marcar subprocesos, utilice el menú contextual o la primera celda de un subproceso. 
+
+     En la barra de herramientas, haga clic en el **mostrar marcadas únicamente** situado junto al cuadro de lista.  
+
+     ![Información sobre herramientas y la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
+
+     Ahora, sólo el subproceso marcado aparece en el **pilas paralelas** ventana.
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Para reanudar la ejecución hasta el tercer punto de interrupción  
   
@@ -157,7 +159,7 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      Observe que S.L está en negrita en los otros dos cuadros para que pueda ver dónde más aparece. Si desea ver qué marcos llaman a S.L y a qué marcos llama, haga clic en el **Alternar vista de método** botón en la barra de herramientas. En la siguiente ilustración muestra la vista de método de la **pilas paralelas** ventana.  
   
-     ![Vista de método en la ventana Pilas paralelas](../debugger/media/pdw_walkthrough_4.png "PDW_Walkthrough_4")  
+     ![Vista de método en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")  
   
      Observe cómo el diagrama se monta en el método seleccionado y lo coloca en su propio cuadro en el medio de la vista. Los destinatarios y llamadores aparecen en la parte superior e inferior. Haga clic en el **Alternar vista de método** botón nuevo para dejar este modo.  
   
@@ -165,17 +167,17 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
     -   **Presentación hexadecimal** alterna los números de la información sobre herramientas entre decimal y hexadecimal.  
   
-    -   **Cargar la información de símbolos** y **configuración de símbolos** abrir los cuadros de diálogo respectivos.  
+    -   **Configuración de símbolos** abrir los cuadros de diálogo respectivos.  
   
-    -   **Ir al código fuente** y **ir al desensamblado** navegan en el editor hasta el método seleccionado.  
+    -   **Mostrar subprocesos en código fuente** alterna la presentación de marcadores de subprocesos en el código fuente, que se muestra en la ubicación de subprocesos en el código fuente.
   
     -   **Mostrar código externo** muestra todos los marcos aun cuando no estén en código de usuario. Pruébelo para ver el diagrama expandirse para alojar los marcos adicionales (que pueden estar atenuados porque no tiene símbolos para ellos).  
+
+2.  En el **pilas paralelas** ventana, asegúrese de que el **desplazar automáticamente a marco de pila actual** botón de la barra de herramientas.  
+
+     Si tiene diagramas grandes y pasa al punto de interrupción siguiente, tal vez le interese la vista para desplazarse de forma automática al marco de pila activo del subproceso actual, es decir, el subproceso que alcanzó primero el punto de interrupción.
   
-     Si tiene diagramas grandes y pasa al punto de interrupción siguiente, tal vez le interese la vista para desplazarse de forma automática al marco de pila activo del subproceso actual, es decir, el subproceso que alcanzó primero el punto de interrupción. En el **pilas paralelas** ventana, asegúrese de que el **desplazar automáticamente a marco de pila actual** botón de la barra de herramientas.  
-  
-     ![Desplazamiento automático en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_4a.png "PDB_Walkthrough_4A")  
-  
-2.  Antes de continuar, en la **pilas paralelas** ventana, desplácese completamente hacia a la izquierda o hacia abajo.  
+3.  Antes de continuar, en la **pilas paralelas** ventana, desplácese completamente hacia a la izquierda o hacia abajo.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Para reanudar la ejecución hasta el cuarto punto de interrupción  
   
@@ -183,17 +185,15 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      Observe cómo la vista se desplaza automáticamente para ocupar su lugar. Alterne los subprocesos en la **subprocesos** marcos de pila de conmutador o ventana en la **pila de llamadas** ventana y observe cómo la vista siempre se desplaza automáticamente hasta el marco correcto. Desactivar **desplazar automáticamente a marco de pila actual** opción y ver la diferencia.  
   
-     El **vista aérea** también ayuda a diagramas grandes en la **pilas paralelas** ventana. Puede ver el **vista aérea** haciendo clic en el botón situado entre las barras de desplazamiento en la esquina inferior derecha de la ventana, tal como se muestra en la siguiente ilustración.  
+     El **vista aérea** también ayuda a diagramas grandes en la **pilas paralelas** ventana. De forma predeterminada, el **vista aérea** se encuentra en. Pero puede cambiar haciendo clic en el botón situado entre las barras de desplazamiento en la esquina inferior derecha de la ventana, tal como se muestra en la siguiente ilustración.  
   
-     ![De pájaro &#45; ojo ver en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
+     ![Vista&#45;ocular vista en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
   
-     Puede mover el rectángulo para hacer una rápida panorámica del diagrama.  
+     En la vista de pájaro, puede mover el rectángulo para hacer una rápida panorámica del diagrama.  
   
      Otra manera de mover el diagrama en cualquier dirección es haciendo clic en un área en blanco del diagrama y arrastrando al lugar deseado.  
   
      Para acercar y alejar, mantenga presionada la tecla CTRL mientras mueve la rueda del mouse. Alternativamente, haga clic en el botón Zoom en la barra de herramientas y utilice la herramienta Zoom.  
-  
-     ![Ampliada pilas en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_5a.png "PDB_Walkthrough_5A")  
   
      También puede ver las pilas en dirección descendente en lugar de abajo arriba, haciendo clic en el **herramientas** menú, haga clic en **opciones**y, a continuación, active o desactive la opción situada debajo del **depuración** nodo.  
   
@@ -212,9 +212,9 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
 4.  Haga doble clic en un subproceso en el **subprocesos** ventana para que sea el actual. Los subprocesos actuales tienen la flecha amarilla. Al cambiar el subproceso actual, las otras ventanas se actualizan. A continuación, examinaremos las tareas.  
   
-5.  En el **depurar** menú, elija **Windows** y, a continuación, haga clic en **tareas paralelas**. La siguiente ilustración muestra la **tareas** ventana.  
+5.  En el **depurar** menú, elija **Windows**y, a continuación, haga clic en **tareas**. La siguiente ilustración muestra la **tareas** ventana.  
   
-     ![Cuatro ejecuta las tareas en la ventana tareas](../debugger/media/pdw_walkthrough_6.png "PDW_Walkthrough_6")  
+     ![Cuatro ejecuta las tareas en la ventana tareas](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")  
   
      Por cada tarea que se esté ejecutando, puede leer su identificador, que devuelve la propiedad del mismo nombre, el identificador y nombre del subproceso que lo ejecuta, su ubicación (desplazando el puntero del mouse para mostrar una información sobre herramientas con la pila de llamadas completa). Asimismo, en la **tarea** columna, puede ver el método que se pasó a la tarea; en otras palabras, el punto inicial.  
   
@@ -228,13 +228,13 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
 1.  Para reanudar la ejecución hasta el segundo punto de interrupción en la **depurar** menú, haga clic en **continuar**.  
   
-     Anteriormente, el **estado** columna mostraba todas las tareas como en ejecución, pero ahora dos de las tareas están en espera. Las tareas se pueden bloquear por muchas razones diferentes. En el **estado** columna, mantenga el mouse sobre una tarea en espera para saber por qué está bloqueada. Por ejemplo, en la siguiente ilustración, la tarea 3 está esperando a la tarea 4.  
+     Anteriormente, el **estado** columna mostraba todas las tareas como activo, pero ahora dos de las tareas se bloquean. Las tareas se pueden bloquear por muchas razones diferentes. En el **estado** columna, mantenga el mouse sobre una tarea en espera para saber por qué está bloqueada. Por ejemplo, en la siguiente ilustración, la tarea 3 está esperando a la tarea 4.  
   
      ![Dos tareas en espera en la ventana tareas](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")  
   
-     La tarea 4, a su vez, está esperando a un monitor que pertenece al subproceso asignado a la tarea 2.  
+     La tarea 4, a su vez, está esperando a un monitor que pertenece al subproceso asignado a la tarea 2. (Haga clic en la fila de encabezado y elija **columnas** > **asignación de subproceso** para ver el valor de asignación de subproceso para la tarea 2).
   
-     ![Tarea en espera e información sobre herramientas en la ventana tareas](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")  
+     ![Tarea en espera e información sobre herramientas en la ventana tareas](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
   
      También puede marcar una tarea haciendo clic en la marca de la primera columna de la **tareas** ventana.  
   
@@ -242,13 +242,11 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      Cuando usa el **pilas paralelas** ventana anteriormente, vio los subprocesos de la aplicación. Ver el **pilas paralelas** ventana nuevo, pero esta vez observe las tareas de la aplicación. Haga esto seleccionando **tareas** en el cuadro en la parte superior izquierda. En la siguiente ilustración se muestra la vista Tareas.  
   
-     ![Vista en la ventana Pilas paralelas de subprocesos](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
+     ![Tareas vista en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
   
      Subprocesos que no están ejecutando tareas actualmente no se muestran en la vista tareas de la **pilas paralelas** ventana. Asimismo, con los subprocesos que ejecutan tareas, algunos de los marcos de pila que no son pertinentes para las tareas se filtran de la parte superior e inferior de la pila.  
   
      Ver el **tareas** ventana de nuevo. Haga clic con el botón secundario en cualquier encabezado de columna para ver un menú contextual de la columna.  
-  
-     ![Menú de vista contextual en la ventana tareas](../debugger/media/pdb_walkthrough_8a.png "PDB_Walkthrough_8A")  
   
      Puede utilizar el menú contextual para agregar o quitar las columnas. Por ejemplo, la columna AppDomain no está seleccionada; por consiguiente, no se muestra en la lista. Haga clic en **primario**. El **primario** columna aparece sin valores para las cuatro tareas.  
   
@@ -258,11 +256,11 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      Ahora se está ejecutando una nueva tarea, la tarea 5, y la tarea 4 está en espera. Puede ver por qué desplazando el puntero sobre la tarea en espera la **estado** ventana. En el **primario** columna, observe que la tarea 4 es el elemento primario de la tarea 5.  
   
-     Para ver mejor la relación de elementos primarios y secundarios, haga clic en el **primario** encabezado de columna y, a continuación, haga clic en **vista de elemento primario**. Vea la ilustración siguiente:  
+     Para ver mejor la relación de elementos primarios y secundarios, haga clic en la fila de encabezado de columna y, a continuación, haga clic en **vista de elemento primario**. Vea la ilustración siguiente:  
   
-     ![Elemento primario &#45; secundarios ver en la ventana tareas](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
+     ![Elemento primario&#45;vista secundaria en la ventana tareas](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
   
-     Observe que la tarea 4 y 5 se están ejecutando en el mismo subproceso. Esta información no se muestra en el **subprocesos** ventana; poder verlo aquí es otra ventaja de la **tareas** ventana. Para confirmar esto, vea la **pilas paralelas** ventana. Asegúrese de que está viendo **tareas**. Busque las tareas 4 y 5 haciendo doble clic en ellos en el **tareas** ventana. Al hacerlo, el resaltado azul el **pilas paralelas** se actualiza la ventana. También puede buscar las tareas 4 y 5 examinando la información sobre herramientas en el **pilas paralelas** ventana.  
+     Observe que la tarea 4 y 5 se están ejecutando en el mismo subproceso (mostrar la **asignación de subproceso** columna si está oculto). Esta información no se muestra en el **subprocesos** ventana; poder verlo aquí es otra ventaja de la **tareas** ventana. Para confirmar esto, vea la **pilas paralelas** ventana. Asegúrese de que está viendo **tareas**. Busque las tareas 4 y 5 haciendo doble clic en ellos en el **tareas** ventana. Al hacerlo, el resaltado azul el **pilas paralelas** se actualiza la ventana. También puede buscar las tareas 4 y 5 examinando la información sobre herramientas en el **pilas paralelas** ventana.  
   
      ![Vista en la ventana Pilas paralelas de tareas](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")  
   
@@ -278,9 +276,9 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      ![Cuatro estados de tarea en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")  
   
-     Como la tarea 5 se ha completado, ya no se muestra. Si no es el caso en su equipo y no se muestra el interbloqueo, avance un paso presionando F11.  
+     Como la tarea 5 se ha completado, ya no se muestra. Si no es el caso en el equipo y no se muestra el interbloqueo, avance un paso presionando **F11**.  
   
-     Las tareas 3 y 4 se están esperando mutuamente y están interbloqueadas. Hay también 5 nuevas tareas que son elementos secundarios de la tarea 2 y se programan ahora. Las tareas programadas son tareas que se han iniciado en código pero no se han ejecutado todavía. Por lo tanto, sus **ubicación** y **asignación de subproceso** columnas están vacías.  
+     Tareas 3 y 4 se están esperando mutuamente y están bloqueadas. Hay también 5 nuevas tareas que son elementos secundarios de la tarea 2 y se programan ahora. Las tareas programadas son tareas que se han iniciado en código pero no se han ejecutado todavía. Por lo tanto, sus **ubicación** y **asignación de subproceso** columnas están vacías.  
   
      Ver el **pilas paralelas** ventana de nuevo. El encabezado de cada cuadro tiene una información sobre herramientas que muestra los identificadores y los nombres de los subprocesos. Cambie a la vista de tareas en el **pilas paralelas** ventana. Desplace el puntero del mouse sobre un encabezado para ver el identificador, el nombre y el estado de la tarea, como se muestra en la siguiente ilustración.  
   
@@ -290,13 +288,9 @@ Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas
   
      ![Agrupar tareas en la ventana tareas](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
   
-     También puede agrupar por cualquier otra columna. Agrupando las tareas, se puede concentrar en un subconjunto de tareas. Cada grupo contraíble tiene un recuento de los elementos que están agrupados. También puede marcar rápidamente todos los elementos en el grupo, haga clic en el **marca** situado a la derecha de la **contraer** botón.  
-  
-     ![Agrupan pilas en la ventana Pilas paralelas](../debugger/media/pdb_walkthrough_12a.png "PDB_Walkthrough_12A")  
+     También puede agrupar por cualquier otra columna. Agrupando las tareas, se puede concentrar en un subconjunto de tareas. Cada grupo contraíble tiene un recuento de los elementos que están agrupados.
   
      La última característica de la **tareas** ventana para examinar es el menú contextual que aparece cuando hace clic en una tarea.  
-  
-     ![Menú contextual en la ventana tareas](../debugger/media/pdb_walkthrough_12b.png "PDB_Walkthrough_12B")  
   
      El menú contextual muestra comandos diferentes, dependiendo del estado de la tarea. Los comandos pueden incluir **copia**, **seleccionar todo**, **presentación Hexadecimal**, **pasar a la tarea**, **inmovilizar asignado Subprocesos**, **inmovilizar todos los subprocesos, pero esto**, y **Reanudar subproceso asignado**, y **marca**.  
   
