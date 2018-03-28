@@ -1,7 +1,7 @@
 ---
 title: Identificadores de componente y carga de trabajo de Visual Studio 2017 | Microsoft Docs
-description: "Utilice la carga de trabajo y los identificadores de componente para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX."
-keywords: 
+description: Utilice la carga de trabajo y los identificadores de componente para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX.
+keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a8b2ca8900c0f292d7e4bcc035e1eb58fd12a94
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 967fdb78d603998ac992b3e3609bc607dc4ea0ff
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Identificadores de componente y carga de trabajo de Visual Studio 2017
 Haga clic en los nombres de edición de la tabla siguiente para ver los identificadores de componente y de carga de trabajo que necesita para instalar Visual Studio mediante una línea de comandos o especifíquelos como una dependencia en un manifiesto VSIX.

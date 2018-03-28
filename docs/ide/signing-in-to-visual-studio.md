@@ -1,23 +1,24 @@
 ---
-title: "Iniciar sesión en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Iniciar sesión en Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/16/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
-caps.latest.revision: "30"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7e2fbc1c603886eecfa929406dfd91a1ed4e400b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 740913d6979e38fb924e0fa16b81ffda130bc2dc
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -25,7 +26,7 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>¿Por qué debo iniciar sesión en Visual Studio?
 
-Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida. Por ejemplo, después de iniciar sesión, puede sincronizar la configuración entre todos los dispositivos, extender una versión de evaluación y conectarse automáticamente a un servicio de Azure, etc. 
+Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida. Por ejemplo, después de iniciar sesión, puede sincronizar la configuración entre todos los dispositivos, extender una versión de evaluación y conectarse automáticamente a un servicio de Azure, etc.
 
 Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:  
 

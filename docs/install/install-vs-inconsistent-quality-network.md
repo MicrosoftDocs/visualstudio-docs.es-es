@@ -1,26 +1,26 @@
 ---
-title: "Instalación en entornos de red de bajo ancho de banda o poco confiables | Microsoft Docs"
-description: "Se describe cómo funciona el instalador de Visual Studio en condiciones de red poco confiables y se explica cómo descargar archivos de instalación antes de comenzar la instalación."
+title: Instalación en entornos de red de bajo ancho de banda o poco confiables | Microsoft Docs
+description: Se describe cómo funciona el instalador de Visual Studio en condiciones de red poco confiables y se explica cómo descargar archivos de instalación antes de comenzar la instalación.
 ms.date: 01/17/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - installing Visual Studio
 - no internet connection
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b78f51c3b408d5a8c0723779cdf0b2d165aeec1
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 205bbb3370c8a344b35f54da3cf523a24b142762
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Instalación de Visual Studio 2017 en entornos de red de bajo ancho de banda o poco confiables
 

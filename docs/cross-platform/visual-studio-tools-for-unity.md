@@ -1,23 +1,23 @@
 ---
 title: Visual Studio Tools para Unity | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
-author: conceptdev
-ms.author: crdun
+author: dantogno
+ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 133413989a47b71773cffd8eb521de6ad9599f83
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: e4cd2be1ff2e2db614512910a305b9e3f692551f
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity
 En esta sección conocerá Visual Studio Tools para Unity, una extensión gratuita que convierte Visual Studio en una herramienta eficaz para la compilación de juegos con Unity.
