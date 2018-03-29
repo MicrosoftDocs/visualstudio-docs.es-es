@@ -1,24 +1,24 @@
 ---
-title: "Versión de .NET Framework de destino y plataforma de destino de MSBuild | Microsoft Docs"
-ms.custom: 
+title: Versión de .NET Framework de destino y plataforma de destino de MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-caps.latest.revision: 
+caps.latest.revision: ''
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Plataforma de destino de MSBuild
 Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 802x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.  
@@ -67,14 +67,16 @@ Un proyecto se puede compilar para su ejecución en una *plataforma de destino*,
  Una *plataforma* es una combinación de hardware y de software que define un entorno en tiempo de ejecución determinado. Por ejemplo,  
   
 -   `x86` designa un sistema operativo Windows de 32 bits que se ejecuta en un procesador Intel 80x86 o su equivalente.  
+
+-   `x64` designa un sistema operativo Windows de 64 bits que se ejecuta en un procesador Intel x64 o su equivalente.
   
 -   `Xbox` designa la plataforma Microsoft Xbox 360.  
   
- Una *plataforma de destino* es la plataforma específica para la que se ha compilado el proyecto. La plataforma de destino se especifica en la propiedad de compilación `Platform` de un archivo de proyecto. Puede cambiar la plataforma de destino mediante las páginas de propiedades del proyecto o el **Administrador de configuración** del IDE.  
+ Una *plataforma de destino* es la plataforma específica para la que se ha compilado el proyecto. La plataforma de destino se especifica en la propiedad de compilación `PlatformTarget` de un archivo de proyecto. Puede cambiar la plataforma de destino mediante las páginas de propiedades del proyecto o el **Administrador de configuración** del IDE.  
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
 </PropertyGroup>  
   
 ```  
@@ -83,7 +85,7 @@ Un proyecto se puede compilar para su ejecución en una *plataforma de destino*,
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
    <Configuration>Debug</Configuration>  
 <PropertyGroup>  
   

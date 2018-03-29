@@ -1,7 +1,7 @@
 ---
 title: Uso de Build o Release Management para las pruebas automatizadas en Visual Studio | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5596dbbe65dc57dcb1862b74ed6379d1e2c080cf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usar Build y Release Management en lugar de Lab Management para las pruebas automatizadas
 
@@ -43,7 +43,7 @@ Algunas de las ventajas de usar Build o Release Management para este escenario s
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Administración de autoservicio de entornos de SCVMM
 
-El [Centro de laboratorio en Microsoft Test Manager](https://msdn.microsoft.com/library/dd997438.aspx) admite la capacidad de administrar una biblioteca de plantillas de entorno así como aprovisionar entornos bajo petición mediante un [servidor de SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+El [Centro de pruebas en Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) admite la capacidad de administrar una biblioteca de plantillas de entorno así como aprovisionar entornos bajo petición mediante un [servidor de SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Las características de aprovisionamiento de autoservicio del Centro de laboratorio tienen dos objetivos distintos:
 

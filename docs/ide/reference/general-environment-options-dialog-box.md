@@ -1,11 +1,12 @@
 ---
-title: "General, Entorno, Opciones (Cuadro de diálogo) | Microsoft Docs"
-ms.custom: 
+title: General, Entorno, Opciones (Cuadro de diálogo) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.Message.0x800a002e
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
-caps.latest.revision: "34"
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c434b60efa054dbadcb8ef24470ed135d450e12
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>General, Entorno, Opciones (Cuadro de diálogo)
 
@@ -49,7 +51,7 @@ Use esta página para cambiar, entre otras opciones, los temas de color, la conf
 
 Pulse el tema de color **Azul**, **Claro** u **Oscuro** para el IDE.
 
-Puede instalar temas predefinidos adicionales y crear temas personalizados si descarga e instala **Visual Studio Color Theme Editor** desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Después de instalar esta herramienta, aparecerán temas de color adicionales en el cuadro de lista Tema de color.
+Puede instalar temas predefinidos adicionales y crear temas personalizados si descarga e instala **Visual Studio Color Theme Editor** desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Después de instalar esta herramienta, aparecerán temas de color adicionales en el cuadro de lista Tema de color.
 
 **Aplicar el tipo título en la barra de menús**
 
@@ -69,22 +71,17 @@ Usa la aceleración de gráficos mediante hardware si está disponible, en lugar
 
 ## <a name="other"></a>Otros
 
-**Elementos mostrados en el menú Ventana**  
-Personaliza el número de ventanas que aparecen en la lista Ventanas del menú **Ventana**. Escriba un número comprendido entre 1 y 24. De forma predeterminada, el número es 10.
+**Elementos mostrados en el menú Ventana** Personaliza el número de ventanas que aparecen en la lista Ventanas del menú **Ventana**. Escriba un número comprendido entre 1 y 24. De forma predeterminada, el número es 10.
 
-**Elementos mostrados en las listas de los usados recientemente**  
-Personaliza el número de proyectos y archivos usados más recientemente que aparecen en el menú **Archivo**. Escriba un número comprendido entre 1 y 24. De forma predeterminada, el número es 10. Se trata de una manera fácil de recuperar los proyectos y archivos usados recientemente.
+**Elementos mostrados en las listas de los usados recientemente** Personaliza el número de proyectos y archivos usados más recientemente que aparecen en el menú **Archivo**. Escriba un número comprendido entre 1 y 24. De forma predeterminada, el número es 10. Se trata de una manera fácil de recuperar los proyectos y archivos usados recientemente.
 
-**Mostrar barra de estado**  
-Muestra la barra de estado. La barra de estado se encuentra en la parte inferior de la ventana del IDE y muestra información sobre el progreso de las operaciones en curso.
+**Mostrar barra de estado** Muestra la barra de estado. La barra de estado se encuentra en la parte inferior de la ventana del IDE y muestra información sobre el progreso de las operaciones en curso.
 
-**El botón Cerrar afecta solo a la ventana de herramientas activa**  
-Especifica que, cuando se hace clic en el botón **Cerrar**, solo se cierra la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. Esta opción se encuentra activada de forma predeterminada.
+**El botón Cerrar afecta solo a la ventana de herramientas activa** Especifica que, cuando se hace clic en el botón **Cerrar**, solo se cierra la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. Esta opción se encuentra activada de forma predeterminada.
 
-**Ocultar automáticamente solo afecta a la ventana de la herramienta activa**  
-Especifica que, cuando se hace clic en el botón **Ocultar automáticamente**, solo se oculta automáticamente la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. De forma predeterminada, esta opción no está seleccionada.
+**Ocultar automáticamente solo afecta a la ventana de la herramienta activa** Especifica que, cuando se hace clic en el botón **Ocultar automáticamente**, solo se oculta automáticamente la ventana de herramientas que tiene el foco, no todas las ventanas de herramientas del conjunto acoplado. De forma predeterminada, esta opción no está seleccionada.
 
 ## <a name="see-also"></a>Vea también
 
-[Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)  
+[Opciones de entorno (cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
 [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)

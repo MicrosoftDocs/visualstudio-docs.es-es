@@ -1,12 +1,13 @@
 ---
 title: Prototipos y herencia de prototipos | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: "6"
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototipos y herencia de prototipos
 En JavaScript, `prototype` es una propiedad de funciones, y de objetos creados por las funciones constructoras. El prototipo de una función es un objeto. Se usa principalmente cuando se utiliza una función como constructor.  
@@ -80,9 +81,12 @@ var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {
  El objeto `bicycle` tiene las propiedades `wheels`, `engine`, `color` y `pedals`, y su prototipo es `Vehicle.prototype`. El motor de JavaScript encuentra la propiedad `pedals` en `bicycle` y busca la cadena de prototipo para encontrar las propiedades `wheels`, `engine` y `color` de `Vehicle`.  
   
 ### <a name="changing-an-objects-prototype"></a>Cambiar el prototipo de un objeto  
- En Internet Explorer 11, puede reemplazar el prototipo interno de un objeto o función por un nuevo prototipo mediante la propiedad [__proto\_\_](../../javascript/reference/proto-property-object-javascript.md). Al utilizar esta propiedad, se heredan las propiedades y métodos del nuevo prototipo junto con otras propiedades y métodos en la cadena de prototipos.  
+En Internet Explorer 11, puede reemplazar el prototipo interno de un objeto o función por un nuevo prototipo mediante la propiedad [__proto__](../../javascript/reference/proto-property-object-javascript.md). Al utilizar esta propiedad, se heredan las propiedades y métodos del nuevo prototipo junto con otras propiedades y métodos en la cadena de prototipos.  
+
+> [!WARNING]
+> La propiedad `__proto__` es una característica heredada. En su lugar, use [Object.getPrototypeOf](../reference/object-getprototypeof-function-javascript.md).
   
- En el ejemplo siguiente se muestra cómo modificar el prototipo de un objeto. Este ejemplo muestra cómo las propiedades heredadas del objeto cambian cuando cambia el prototipo.  
+En el ejemplo siguiente se muestra cómo modificar el prototipo de un objeto. Este ejemplo muestra cómo las propiedades heredadas del objeto cambian cuando cambia el prototipo.  
   
 ```JavaScript  
 function Friend() {  

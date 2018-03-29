@@ -1,23 +1,25 @@
 ---
-title: "Análisis del uso de CPU en Visual Studio | Microsoft Docs"
+title: Análisis del uso de CPU en Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
-caps.latest.revision: "8"
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cfe16da805ec8a43af8bed0c7e112e589d060bc4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.workload:
+- multiple
+ms.openlocfilehash: 2324c857807f2f15762ce36539df3d7c2ad01b4b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 Si necesita investigar problemas de rendimiento de la aplicación, un buen punto de partida es entender cómo utiliza la CPU. La herramienta **Uso de CPU** muestra el punto en que la CPU dedica tiempo a ejecutar el código Visual C++, Visual C#/Visual Basic y JavaScript. A partir de Visual Studio 2015 Update 1, puede ver un desglose por función del uso de CPU sin salir del depurador. Puede activar y desactivar la generación de perfiles de CPU durante la depuración y ver los resultados cuando se detiene la ejecución, por ejemplo, en un punto de interrupción.  
@@ -25,6 +27,9 @@ Si necesita investigar problemas de rendimiento de la aplicación, un buen punto
 Tiene varias opciones para ejecutar y administrar la sesión de diagnóstico. Por ejemplo, puede ejecutar la herramienta **Uso de CPU** en equipos locales o remotos o en un simulador o emulador. Puede analizar el rendimiento de un proyecto abierto en Visual Studio, conectado a una aplicación en ejecución, o iniciar una aplicación que se instala desde Microsoft Store. Para obtener más información, consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Aquí le mostramos cómo recopilar y analizar el uso de CPU con compilaciones de versión. Para analizar el uso de CPU durante la depuración, vea [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md). 
+
+> [!NOTE]
+> Para .NET Core y ASP.NET Core, la herramienta Uso de CPU actualmente no proporciona resultados precisos con PBD portátiles. Use PBD completos en su lugar.
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Recopilar datos de Uso de CPU  
   

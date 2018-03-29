@@ -1,10 +1,10 @@
 ---
-title: "Cómo notificar un problema con Visual Studio 2017 | Microsoft Docs"
-ms.custom: 
-ms.date: 02/26/2018
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+title: Cómo notificar un problema con Visual Studio 2017 | Microsoft Docs
+ms.custom: ''
+ms.date: 03/11/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: TerryGLee
@@ -13,11 +13,11 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
 
@@ -69,7 +69,7 @@ Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a dia
 
  Haga clic en el botón **Enviar** para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. (Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción para el informe).
 
-## Informes alternativos <a name="alternate_reporting"></a>
+## Alternativas de informes <a name="alternate_reporting"></a>
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Notificar un problema mediante el Instalador de Visual Studio
 
@@ -77,9 +77,9 @@ Si no puede completar la instalación de Visual Studio o no puede tener acceso a
 
  ![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios en el Instalador de Visual Studio para abrir la herramienta de comentarios](../install/media/report-a-problem.png)
 
-### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>Notificar un problema directamente a la comunidad de desarrolladores de Visual Studio
+### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Buscar problemas y soluciones en la comunidad de desarrolladores de Visual Studio
 
-Si no quiere o no puede usar Visual Studio para notificar un problema, en su lugar puede hacerlo directamente a la comunidad de desarrolladores de Visual Studio. Para obtener más información, vea la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+Si no quiere o no sabe notificar un problema mediante Visual Studio, es posible que ese problema ya haya sido notificado y que se haya publicado una solución en la comunidad de desarrolladores de Visual Studio. Para obtener más información, vea la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>Proporcionar comentarios sobre el producto o una sugerencia
 

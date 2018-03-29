@@ -1,12 +1,13 @@
 ---
-title: "Inicio rápido: usar Visual Studio para crear su primera aplicación de Node.js | Microsoft Docs"
-ms.custom: 
+title: 'Inicio rápido: usar Visual Studio para crear su primera aplicación de Node.js | Microsoft Docs'
+description: En este tutorial rápido, se crea una aplicación Node.js en Visual Studio.
+ms.custom: ''
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -17,11 +18,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8597d7ee61820afdd8fcfdbff9cdb5be8dfaa61c
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Inicio rápido: usar Visual Studio para crear su primera aplicación de Node.js
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, con una duración de entre 5 y 10 minutos, creará una sencilla aplicación web de Node.js. Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).  
@@ -29,21 +30,21 @@ En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio,
 ## <a name="create-a-project"></a>Crear un proyecto
 En primer lugar, creará un proyecto de aplicación web de Node.js.
 
+1. Si todavía no tiene instalado el entorno de ejecución de Node.js, instale la versión LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/).
+
+    En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no se detecta ningún entorno de ejecución instalado, puede configurar el proyecto para que haga referencia al entorno de ejecución instalado.
+
 1. Abra Visual Studio 2017.  
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**  
+1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**  
 
-3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, elija **Aplicación web en blanco de Node.js** y después haga clic en **Aceptar**.   
+1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, elija **Aplicación web en blanco de Node.js** y después haga clic en **Aceptar**.   
 
      Si no ve la plantilla de proyecto **Aplicación web en blanco de Node.js**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Node.js** y, después, haga clic en **Modificar**.  
 
      ![Carga de trabajo Node.js en el instalador de Visual Studio](../ide/media/quickstart-nodejs-workload.png)  
 
-    Visual Studio crea y la nueva solución y abre el proyecto. **server.js** abierto en el editor.
-
-4. Si todavía no tiene instalado el entorno de ejecución de Node.js, instálelo desde el sitio web de [Node.js](https://nodejs.org/en/download/).
-
-    En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no se detecta ningún entorno de ejecución instalado, puede configurar el proyecto para que haga referencia al entorno de ejecución instalado.
+    Visual Studio crea y la nueva solución y abre el proyecto. *server.js* se abre en el editor en el panel izquierdo.
 
 ## <a name="explore-the-ide"></a>Explorar el IDE  
 
@@ -61,11 +62,11 @@ En primer lugar, creará un proyecto de aplicación web de Node.js.
 
    ![Símbolo del sistema de Node.js](../ide/media/quickstart-nodejs-command-prompt.png) 
 
-1. En el archivo **server.js** en el editor (panel de la izquierda), elija `http.createServer` y, después, presione **F12** o seleccione **Ir a definición** en el menú contextual (clic con el botón derecho). Este comando le lleva a la definición de la función `createServer` en index.d.ts.  
+1. En el archivo *server.js* en el editor (panel de la izquierda), elija `http.createServer` y, después, presione **F12** o seleccione **Ir a definición** en el menú contextual (clic con el botón derecho). Este comando le lleva a la definición de la función `createServer` en index.d.ts.  
 
    ![Menú contextual Ir a definición](../ide/media/quickstart-nodejs-gotodefinition.png)  
 
-1. Coloque el cursor al final de la cadena en esta línea de código, `res.end('Hello World\n');`, y modifíquela para que tenga el aspecto siguiente:
+1. Vuelva a *server.js*. Después, coloque el cursor al final de la cadena en esta línea de código, `res.end('Hello World\n');`, y modifíquela para que tenga el aspecto siguiente:
 
     `res.end('Hello World\n' + res.connection.`
 
@@ -88,6 +89,5 @@ En primer lugar, creará un proyecto de aplicación web de Node.js.
 
 ## <a name="next-steps"></a>Pasos siguientes 
 
-- Repasar el [Tutorial para Node.js](../nodejs/tutorial-nodejs.md)  
-- Más información sobre el [IDE de Visual Studio](../ide/visual-studio-ide.md)  
-- Obtener más información sobre [Herramientas de Node.js para Visual Studio](https://github.com/Microsoft/nodejstools/wiki)
+- Repasar el [Tutorial para Node.js y Express](../nodejs/tutorial-nodejs.md)  
+- Repasar el [Tutorial para Node.js y React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)  

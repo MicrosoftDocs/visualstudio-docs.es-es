@@ -1,11 +1,7 @@
 ---
-title: "Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias | Microsoft Docs"
-ms.custom: 
+title: Crear códigos auxiliares de métodos de pruebas unitarias en Visual Studio | Microsoft Docs
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 1620612bc27c41fcebfcc28b2844b3022fa482fa
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias
 
@@ -32,7 +28,7 @@ El comando de menú **Crear pruebas unitarias**:
 
 * Solo admite código de C# que tenga como destino .NET Framework.
 
-* Es [extensible](#extend-framework) y admite la emisión de pruebas en formato MSTest, MSTest V2, NUnit y xUnit.
+* Es extensible y admite la emisión de pruebas en formato MSTest, MSTest V2, NUnit y xUnit.
 
 ## <a name="get-started"></a>Primeros pasos
 
@@ -42,15 +38,16 @@ Para comenzar, seleccione un método, un tipo o un espacio de nombres en el edit
 
 ## <a name="setting-unit-test-traits"></a>Establecer los rasgos de las pruebas unitarias
 
-Si planea ejecutar estas pruebas como parte del proceso de automatización de pruebas, puede considerar la posibilidad de tener la prueba creada en otro proyecto de prueba (la segunda opción en el cuadro de diálogo anterior) y establecer los rasgos de las pruebas unitarias para la prueba unitaria. Esto le permitirá incluir o excluir más fácilmente estas pruebas específicas como parte de una integración continua o de una canalización de implementación continua. Los rasgos se establecen agregando metadatos a las pruebas unitarias directamente, como se muestra a continuación. 
+Si planea ejecutar estas pruebas como parte del proceso de automatización de pruebas, puede considerar la posibilidad de tener la prueba creada en otro proyecto de prueba (la segunda opción en el cuadro de diálogo anterior) y establecer los rasgos de las pruebas unitarias para la prueba unitaria. Esto le permitirá incluir o excluir más fácilmente estas pruebas específicas como parte de una integración continua o de una canalización de implementación continua. Los rasgos se establecen agregando metadatos a las pruebas unitarias directamente, como se muestra a continuación.
 
 ![Establecer los rasgos de las pruebas unitarias](media/createunittest.png)
 
-<a name="extend-framework"></a>
 ## <a name="using-third-party-unit-test-frameworks"></a>Usar marcos de pruebas unitarias de terceros
 
-Con Visual Studio, puede tener pruebas unitarias creadas fácilmente con cualquier marco de pruebas. Para instalar los demás marcos de pruebas, pulse **Herramientas | Extensiones y actualizaciones**.
-Expanda **En línea**, **Galería de Visual Studio**, **Herramientas** y pulse **Pruebas**. 
+Con Visual Studio, puede tener pruebas unitarias creadas fácilmente con cualquier marco de pruebas. Para instalar otros marcos de pruebas:
+
+1. Seleccione **Herramientas** > **Extensiones y actualizaciones**.
+2. Expanda **En línea** > **Visual Studio Marketplace** > **Herramientas** y, a continuación, elija **Pruebas**.
 
 ![Usar marcos de pruebas de terceros](media/createunittestfx.png)
 
@@ -63,9 +60,9 @@ Las extensiones de marcos de pruebas están disponibles en Visual Studio Marketp
 
 Use esta característica cada vez que necesite crear pruebas unitarias, pero específicamente cuando esté probando código existente que tenga muy poca o ninguna cobertura de prueba, y ninguna documentación. En otras palabras, donde exista una especificación de código limitada o inexistente. Implementa de manera eficaz un enfoque similar a las [pruebas unitarias inteligentes](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) que caracterizan el comportamiento observado del código.
 
-En cambio, esta característica se aplica igualmente a la situación en la que el desarrollador comienza escribiendo código y la usa para arrancar la disciplina de pruebas unitarias. Dentro del flujo de codificación, el desarrollador puede que quiera crear rápidamente un código auxiliar de método de pruebas unitarias (con una clase de prueba y un proyecto de prueba adecuados) para un fragmento de código concreto. 
+En cambio, esta característica se aplica igualmente a la situación en la que el desarrollador comienza escribiendo código y la usa para arrancar la disciplina de pruebas unitarias. Dentro del flujo de codificación, el desarrollador puede que quiera crear rápidamente un código auxiliar de método de pruebas unitarias (con una clase de prueba y un proyecto de prueba adecuados) para un fragmento de código concreto.
 
 ## <a name="see-also"></a>Vea también
 
-[Crear códigos auxiliares de método de pruebas unitarias con "Crear pruebas unitarias"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)  
-[Entradas del blog de pruebas unitarias](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)
+- [Crear códigos auxiliares de método de pruebas unitarias con "Crear pruebas unitarias"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Entradas del blog de pruebas unitarias](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)

@@ -1,13 +1,13 @@
 ---
-title: "Inicio rápido: usar Visual Studio para crear su primera aplicación web Python | Microsoft Docs"
-description: "Una breve introducción al uso de Python en Visual Studio que crea una aplicación web sencilla con el marco de trabajo de Falcon."
-ms.custom: 
-ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+title: 'Inicio rápido: usar Visual Studio para crear su primera aplicación web Python | Microsoft Docs'
+description: Una breve introducción al uso de Python en Visual Studio que crea una aplicación web sencilla con el marco de trabajo de Falcon.
+ms.custom: ''
+ms.date: 03/14/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 2b1880d95fcb4aae04d98171c8ee7df7373aaceb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Inicio rápido: usar Visual Studio para crear su primera aplicación web Python
 
-En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, con una duración de entre 5 y 10 minutos, creará una sencilla aplicación web Python. Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).
+En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, con una duración de entre 5 y 10 minutos, creará una sencilla aplicación web Python. Si todavía no tiene instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita. En el instalador, asegúrese de seleccionar la carga de trabajo **Desarrollo de Python**.
 
 ## <a name="create-the-project"></a>Crear el proyecto
 

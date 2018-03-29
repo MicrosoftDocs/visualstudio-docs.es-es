@@ -1,7 +1,7 @@
 ---
-title: "Instalación y configuración de agentes de prueba en Visual Studio | Microsoft Docs"
+title: Instalar agentes y controladores de pruebas para Visual Studio | Microsoft Docs
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="install-and-configure-test-agents"></a>Instalar y configurar agentes de prueba
+# <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
 En el caso de escenarios de prueba en los que se utiliza Visual Studio y Visual Studio Team Services (VSTS) o Team Foundation Server (TFS), no se requiere un controlador de pruebas. Agents para Visual Studio controlan la orquestación comunicándose con VSTS o TFS. Podría darse un escenario en el que se ejecutan pruebas continuas para los flujos de trabajo de compilación y publicación en VSTS o TFS.
 
@@ -32,7 +32,9 @@ También considere la posibilidad de si mejor [usar Build o Release Management e
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Instalación del controlador de pruebas y agentes de prueba
 
-Puede descargar agentes de Visual Studio 2017 desde [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Busque *Agents para Visual Studio 2017* y seleccione *Agente* o *Controlador*. Puede descargar agentes de Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://www.visualstudio.com/vs/older-downloads/).
+Puede descargar agentes de Visual Studio 2017 desde [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Desplácese hasta la parte inferior de la página y busque *Agents para Visual Studio 2017*. Seleccione *Agente* o *Controlador* y después elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
+
+Puede descargar agentes de Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://www.visualstudio.com/vs/older-downloads/).
 
 Estos instaladores están disponibles como archivos ISO para una instalación sencilla en máquinas virtuales.
 
@@ -59,10 +61,6 @@ En la tabla siguiente se muestran los escenarios que se admiten en Agentes para 
 | Escenarios admitidos en Agentes para Visual Studio 2013 | Alternativa en TFS y VSTS |
 | --- | --- |
 | Flujos de trabajo de compilación-implementación-prueba en Visual Studio | Los usuarios pueden usar una [definición de compilación](/vsts/build-release/) (no una compilación XAML) para compilar, implementar y probar escenarios en TFS. |
-| Pruebas de carga (pruebas de rendimiento) con máquinas remotas locales | Use Test Controller y Test Agents 2013 Update 5 para ejecutar pruebas de carga locales. Para obtener más información, consulte [Tutorial: Usar un controlador y agentes de pruebas en una prueba de carga](https://msdn.microsoft.com/library/ff400223.aspx). |
+| Pruebas de carga (pruebas de rendimiento) con máquinas remotas locales | Use Test Controller y Test Agents 2013 Update 5 para ejecutar pruebas de carga locales. |
 | Ejecución remota de pruebas automatizadas desde Microsoft Test Manager con un entorno de laboratorio | Actualmente no existe alternativa para este escenario. Le recomendamos que use la tarea Ejecutar pruebas funcionales en definiciones de versión y compilación (no en una compilación XAML) para ejecutar pruebas de manera remota. |
 | Desarrolladores ejecutando pruebas remotas en Visual Studio | Ya no se admite. |
-
-## <a name="see-also"></a>Vea también
-
-* [Configurar máquinas y recopilar información de diagnóstico con la configuración de pruebas](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

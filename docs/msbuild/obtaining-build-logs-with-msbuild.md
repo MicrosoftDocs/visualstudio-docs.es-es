@@ -1,27 +1,27 @@
 ---
-title: "Obtener registros de compilación con MSBuild | Microsoft Docs"
-ms.custom: 
+title: Obtener registros de compilación con MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-caps.latest.revision: 
+caps.latest.revision: ''
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ba20e37e9a984512e2d63de882d434b4f034120d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de datos de compilación que quiere revisar y si quiere guardarlos en uno o más archivos. También puede especificar un registrador personalizado para recopilar datos de compilación. Para obtener información sobre los modificadores de la línea de comandos de MSBuild que no se tratan en este tema, consulte [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
@@ -45,7 +45,7 @@ Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de d
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
-  
+
 ## <a name="saving-the-build-log-to-a-file"></a>Guardar el registro de compilación en un archivo  
  Puede usar el modificador **/fileLogger** (**fl**) para guardar los datos de compilación en un archivo. En el ejemplo siguiente, los datos de compilación se guardan en un archivo denominado `msbuild.log`.  
   
@@ -71,8 +71,20 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
   
 ```  
   
- Para obtener más información, consulte [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
-  
+ Para obtener más información, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
+
+## <a name="saving-a-binary-log"></a>Guardar un registro binario
+
+Puede guardar el registro en formato comprimido y binario con el modificador **/binaryLogger** (**bl**). Este registro incluye una descripción detallada del proceso de compilación y puede ser leído por determinadas herramientas de análisis de registro.
+
+En el ejemplo siguiente, se crea un archivo de registro binario llamado `binarylogfilename`.
+
+```  
+/bl:binarylogfilename.binlog
+``` 
+ 
+Para obtener más información, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
+
 ## <a name="using-a-custom-logger"></a>Usar un registrador personalizado  
  Para escribir su propio registrador, cree un tipo administrado que implemente la interfaz <xref:Microsoft.Build.Framework.ILogger>. Puede usar un registrador personalizado, por ejemplo, para enviar errores de compilación por correo electrónico o para registrarlos en una base de datos o en un archivo XML. Para obtener más información, consulte [Registradores de compilación](../msbuild/build-loggers.md).  
   

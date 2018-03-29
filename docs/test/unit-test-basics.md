@@ -1,11 +1,7 @@
 ---
-title: "Conceptos básicos de prueba unitaria | Microsoft Docs"
-ms.custom: 
+title: Conceptos básicos de las pruebas unitarias en Visual Studio | Microsoft Docs
 ms.date: 2016-01-07
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -14,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac60dbd14b16491f9de841f168cd5bf725c340d
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -30,7 +26,7 @@ Puede generar rápidamente proyectos y métodos de prueba a partir del código o
 
 El Explorador de pruebas también puede ejecutar marcos de pruebas unitarias de terceros y de código abierto que hayan implementado interfaces complementarias del Explorador de pruebas. Muchos de estos marcos se pueden agregar a través del Administrador de extensiones de Visual Studio y la galería de Visual Studio. Vea [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="quick-starts"></a>Guías rápidas
+## <a name="getting-started"></a>Introducción
 
 Para obtener una introducción a las pruebas unitarias que le guíe directamente en la codificación, vea uno de estos temas:
 
@@ -113,7 +109,7 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 3.  Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Para probar el proyecto `Accounts` del ejemplo, el proyecto se denominaría `AccountsTests`.
 
     > [!WARNING]
-    >  No todos los marcos de pruebas unitarias de terceros y de código abierto proporcionan una plantilla de proyecto de Visual Studio. Consulte el documento del marco para obtener información sobre cómo crear un proyecto.
+    > No todos los marcos de pruebas unitarias de terceros y de código abierto proporcionan una plantilla de proyecto de Visual Studio. Consulte el documento del marco para obtener información sobre cómo crear un proyecto.
 
 4.  En el proyecto de prueba unitaria, agregue una referencia al proyecto de código en pruebas, en el ejemplo para el proyecto Accounts.
 

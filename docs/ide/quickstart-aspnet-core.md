@@ -1,11 +1,11 @@
 ---
-title: "Uso de Visual Studio para crear una aplicación web ASP.NET Core en C# | Microsoft Docs"
-ms.custom: 
+title: Uso de Visual Studio para crear una aplicación web ASP.NET Core en C# | Microsoft Docs
+ms.custom: ''
 ms.date: 10/10/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 654dd237dab7f0f320c399e3da1b4f1d24537750
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: uso de Visual Studio para crear su primera aplicación web ASP.NET Core
 
@@ -86,7 +86,8 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
 
 ¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre el IDE de Visual Studio. Si quiere profundizar más en sus capacidades, continúe con el tutorial que encontrará en la sección **Tutoriales** de la tabla de contenido.
 
-## <a name="see-also"></a>Vea también
+## <a name="next-steps"></a>Pasos siguientes
+¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre C#, ASP.NET Core y el IDE de Visual Studio. Para obtener más información, continúe con el tutorial siguiente.
 
-* [Introducción a C# y ASP.NET Core en Visual Studio](tutorial-csharp-aspnet-core.md)
-* [Introducción a las páginas de Razor en ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+> [!div class="nextstepaction"]
+> [Introducción a C# y ASP.NET Core en Visual Studio](tutorial-csharp-aspnet-core.md)

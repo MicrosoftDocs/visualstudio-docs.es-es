@@ -1,11 +1,11 @@
 ---
-title: "Bibliografía sobre seguridad | Microsoft Docs"
-ms.custom: 
+title: Bibliografía sobre seguridad | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], additional information
@@ -15,22 +15,16 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2186630e5c93254f38bfb4bcd05fc74d73ba67e2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8d3db09285e0a7bb76a38e03a1fee467a9891843
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="security-bibliography"></a>Bibliografía sobre seguridad
 
-A continuación se incluye una selección de los recursos, disponibles en línea e impresos, sobre el tema de desarrollo de aplicaciones seguras y la configuración de entornos seguros:  
-  
-## <a name="microsoft-web-sites"></a>Sitios Web de Microsoft  
- [Microsoft Security](http://go.microsoft.com/fwlink/?LinkId=55529)  
- Proporciona información sobre el modo en que trabaja Microsoft para ayudarle a mantener las aplicaciones y los sistemas seguros, desde los sistemas de escritorio hasta los sistemas de red; e incluye vínculos a recursos de seguridad para los profesionales informáticos (IT).  
-  
- [Recursos de seguridad en MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
- Proporciona una guía de la documentación dirigida a los programadores, ejemplos de código, artículos técnicos y otros recursos necesarios para desarrollar aplicaciones seguras.  
-  
- [Microsoft TechNet Security](http://go.microsoft.com/fwlink/?LinkId=67991)  
- Contiene indicadores a la información técnica más importante sobre seguridad para los profesionales informáticos (IT) y los "usuarios avanzados".
+A continuación se incluye una selección de los recursos que contienen información sobre el desarrollo de aplicaciones seguras y la configuración de entornos seguros:
+
+[Microsoft Secure](https://www.microsoft.com/security/default.aspx)&mdash;Proporciona información sobre el modo en que trabaja Microsoft para ayudarle a mantener protegidos las aplicaciones y los sistemas, desde los sistemas de escritorio hasta los sistemas de red. Además, incluye vínculos a recursos de seguridad para los profesionales informáticos (IT).
+
+[Recursos sobre seguridad en MSDN](https://technet.microsoft.com/security/)&mdash;Proporciona una guía de la documentación dirigida a los programadores, ejemplos de código, artículos técnicos y otros recursos necesarios para desarrollar aplicaciones seguras.

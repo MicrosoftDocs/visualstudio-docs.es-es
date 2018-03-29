@@ -1,11 +1,11 @@
 ---
 title: Uso de Visual Studio Tools para Unity | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 author: conceptdev
@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e99f3e626487381639d0c76f94ceb6eac99084af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2e223132196d40c0418eb7869b36d20a3d15a235
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 En esta sección aprenderá a utilizar las características de productividad e integración de Visual Studio Tools para Unity y cómo utilizar al depurador de Visual Studio para el desarrollo en Unity.
@@ -134,6 +134,12 @@ En esta sección aprenderá a utilizar las características de productividad e i
 
 > [!IMPORTANT]
 >  Puesto que Visual Studio Tools para de Unity y la instancia de Unity se están comunicando a través de un socket de red UDP, el firewall podría preguntarle al respecto. Si esto sucede, tendrá que autorizar la conexión para que VSTU y Unity puedan comunicarse.
+
+### <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Solución de problemas de conexión entre Unity y Visual Studio
+
+#### <a name="confirm-editor-attaching-is-enabled"></a>Confirmar que Editor Attaching está habilitado
+
+En el menú de Unity, seleccione **Edit > Preferences** (Edit > Preferencias) y luego seleccione la pestaña **External Tools** (Herramientas externas). Confirme que la casilla **Editor Attaching** esté habilitada. Para obtener más información, consulte la [documentación sobre las preferencias de Unity](https://docs.unity3d.com/Manual/Preferences.html).
 
 ###  <a name="debugging-your-project-in-a-unity-player"></a> Depuración del proyecto en un Reproductor de Unity
  Puede conectar Visual Studio Tools para Unity directamente a la aplicación de Unity que se está ejecutando en un reproductor independiente si no está ejecutando el Editor de Unity o para depurar problemas específicos de la plataforma.

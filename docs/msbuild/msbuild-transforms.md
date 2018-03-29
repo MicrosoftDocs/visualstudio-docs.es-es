@@ -1,48 +1,45 @@
 ---
 title: Transformaciones de MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
-caps.latest.revision: 
+caps.latest.revision: ''
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 670465059f86e7dd5ccbe725bc0d86aed2fc97b1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b02c8b6c16bf0d1ffd75ee52d34d72446a06ed25
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="msbuild-transforms"></a>Transformaciones de MSBuild
 Una transformación es una conversión unívoca de una lista de elementos en otra. Además de permitir que un proyecto convierta listas de elementos, una transformación permite que un destino identifique una asignación directa entre sus entradas y salidas. En este tema, se explican las transformaciones y cómo las usa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para compilar proyectos de manera más eficaz.  
   
 ## <a name="transform-modifiers"></a>Modificadores de transformación  
- Las transformaciones no son arbitrarias, pero están limitadas por una sintaxis especial en la que todos los modificadores de transformación deben tener el formato %(*ItemMetaDataName*). Los metadatos de elementos se pueden usar como modificador de transformación. Esto incluye los metadatos de elementos conocidos que se asignan a todos los elementos cuando se crean. Para obtener una lista de metadatos de elementos conocidos, vea [Metadatos de los elementos conocidos de MSBuild](../msbuild/msbuild-well-known-item-metadata.md).  
+Las transformaciones no son arbitrarias, pero están limitadas por una sintaxis especial en la que todos los modificadores de transformación deben tener el formato %(*ItemMetaDataName*). Los metadatos de elementos se pueden usar como modificador de transformación. Esto incluye los metadatos de elementos conocidos que se asignan a todos los elementos cuando se crean. Para obtener una lista de metadatos de elementos conocidos, vea [Metadatos de los elementos conocidos de MSBuild](../msbuild/msbuild-well-known-item-metadata.md).  
   
- En el ejemplo siguiente, una lista de archivos .resx se transforma en una lista de archivos .resources. El modificador de transformación %(filename) especifica que cada archivo .resources tiene el mismo nombre de archivo que el archivo .resx correspondiente.  
+En el ejemplo siguiente, una lista de archivos *.resx* se transforma en una lista de archivos *.resources*. El modificador de transformación %(filename) especifica que cada archivo *.resources* tiene el mismo nombre de archivo que el archivo *.resx* correspondiente.  
   
 ```  
 @(RESXFile->'%(filename).resources')  
-```  
-  
+```
+
+Por ejemplo, si los elementos de la lista de elementos @(RESXFile) son *Form1.resx*, *Form2.resx* y *Form3.resx*, las salidas en la lista transformada serán  *Form1.resources*, *Form2.resources* y *Form3.resources*.  
+
 > [!NOTE]
->  Puede especificar un separador personalizado para obtener una lista de elementos transformada de la misma manera que especifica un separador de una lista de elementos estándar. Por ejemplo, para separar una lista de elementos transformada mediante una coma (,) en lugar del punto y coma predeterminado (;), use el siguiente XML.  
-  
-```  
-@(RESXFile->'Toolset\%(filename)%(extension)', ',')  
-```  
-  
- Por ejemplo, si los elementos de la lista de elementos @(RESXFile) son `Form1.resx`, `Form2.resx` y `Form3.resx`, las salidas en la lista transformada serán `Form1.resources`, `Form2.resources` y `Form3.resources`.  
+>  Puede especificar un separador personalizado para obtener una lista de elementos transformada de la misma manera que especifica un separador de una lista de elementos estándar. Por ejemplo, para separar una lista de elementos transformada mediante una coma (,) en lugar del punto y coma predeterminado (;), use el siguiente XML:  
+> `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
   
 ## <a name="using-multiple-modifiers"></a>Usar varios modificadores  
  Una expresión de transformación puede contener varios modificadores, que se pueden combinar en cualquier orden y se pueden repetir. En el ejemplo siguiente, se cambia el nombre del directorio que contiene los archivos, pero los archivos conservan la extensión de nombre de archivo y el nombre originales.  
@@ -51,7 +48,7 @@ Una transformación es una conversión unívoca de una lista de elementos en otr
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   
- Por ejemplo, si los elementos que están en la lista de elementos `RESXFile` son `Project1\Form1.resx`, `Project1\Form2.resx` y `Project1\Form3.text`, las salidas en la lista transformada serán `Toolset\Form1.resx`, `Toolset\Form2.resx` y `Toolset\Form3.text`.  
+ Por ejemplo, si los elementos que están contenidos en la lista de elementos `RESXFile` son *Project1\Form1.resx*, *Project1\Form2.resx* y *Project1\Form3.text*, las salidas en la lista transformada serán *Toolset\Form1.resx*, *Toolset\Form2.resx* y *Toolset\Form3.text*.  
   
 ## <a name="dependency-analysis"></a>Análisis de dependencias  
  Las transformaciones garantizan una asignación unívoca entre la lista de elementos transformada y la lista de elementos original. Por tanto, si un destino crea salidas que son transformaciones de las entradas, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede analizar las marcas de tiempo de las entradas y salidas, y decidir si quiere omitir, compilar o recompilar parcialmente un destino.  

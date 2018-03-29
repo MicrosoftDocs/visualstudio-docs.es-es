@@ -1,22 +1,18 @@
 ---
 title: Escribir pruebas unitarias para C/C++ en Visual Studio | Microsoft Docs
-ms.custom: 
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 25a5d358ce8c9b36286929232a42dad48099cff5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: ecb611d7ab816ed99e4bcce954466309f7436f76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -36,12 +32,11 @@ Además de los marcos instalados, puede escribir su propio adaptador de prueba p
 
 **Versión 15.5 de Visual Studio 2017**
 
-1) **Google Test** se incluye como un componente predeterminado de la carga de trabajo de **desarrollo para el escritorio con C++**. Tiene una plantilla de proyecto que se puede agregar a una solución a través del menú contextual **Agregar nuevo proyecto** del nodo de solución en el **Explorador de soluciones**, así como opciones que se pueden configurar por medio de **Herramientas | Opciones de**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++**. Tiene una plantilla de proyecto que se puede agregar a una solución a través del menú contextual **Agregar nuevo proyecto** del nodo de solución en el **Explorador de soluciones**, así como opciones que se pueden configurar por medio de **Herramientas | Opciones de**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-google-test-for-cpp.md).
 
-2) **Boost.Test** se incluye como un componente predeterminado de la carga de trabajo de **desarrollo para el escritorio con C++**. Se integra con el **Explorador de pruebas**, pero actualmente no tiene plantilla de proyecto, por lo que se debe configurar manualmente. Para más información, vea [Cómo usar Boost.Test para C++ en Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++**. Se integra con el **Explorador de pruebas**, pero actualmente no tiene plantilla de proyecto, por lo que se debe configurar manualmente. Para más información, vea [Cómo usar Boost.Test para C++ en Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-3) La compatibilidad con **CTest** se incluye con el componente [CMake Tools para Visual Studio](/cpp/ide/cmake-tools-for-cpp), que forma parte de la carga de trabajo de **desarrollo para el escritorio con C++**. Con todo, CTest aún no está totalmente integrado con el **Explorador de pruebas**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-ctest-for-cpp.md).
-
+- La compatibilidad con **CTest** se incluye con el componente [CMake Tools para Visual Studio](/cpp/ide/cmake-tools-for-cpp), que forma parte de la carga de trabajo de **Desarrollo para el escritorio con C++**. Con todo, CTest aún no está totalmente integrado con el **Explorador de pruebas**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 y anterior**
 
@@ -96,16 +91,16 @@ Puede agregar *rasgos* para probar métodos para especificar los propietarios de
 
 ### <a name="run-the-tests"></a>Ejecutar las pruebas
 
-1.  En el menú **Prueba**, elija **Windows** y **Explorador de pruebas**. En la siguiente ilustración se muestra un proyecto de prueba cuyas pruebas aún no se han ejecutado.
+1. En el menú **Prueba**, elija **Windows** > **Explorador de pruebas**. En la siguiente ilustración se muestra un proyecto de prueba cuyas pruebas aún no se han ejecutado.
 
-![Explorador de pruebas antes de ejecutar las pruebas](media/cpp-test-explorer.png "Explorador de pruebas de C++")
+   ![Explorador de pruebas antes de ejecutar las pruebas](media/cpp-test-explorer.png "Explorador de pruebas de C++")
 
-> [!NOTE]
-> La integración de CTest con el **Explorador de pruebas** aún no está disponible. Realice pruebas de CTest desde el menú principal de CMake.
+   > [!NOTE]
+   > La integración de CTest con el **Explorador de pruebas** aún no está disponible. Realice pruebas de CTest desde el menú principal de CMake.
 
-2. Si ninguna de las pruebas está visible en la ventana, compile el proyecto de prueba haciendo clic con el botón derecho en el nodo correspondiente en el **Explorador de soluciones** y eligiendo **Compilar** o **Recompilar**.
+1. Si ninguna de las pruebas está visible en la ventana, compile el proyecto de prueba haciendo clic con el botón derecho en el nodo correspondiente en el **Explorador de soluciones** y eligiendo **Compilar** o **Recompilar**.
 
-3.  En el Explorador de pruebas, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados. Después de ejecutar todas las pruebas, la ventana muestra cuáles se han superado y cuáles no:
+1. En el Explorador de pruebas, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados. Después de ejecutar todas las pruebas, la ventana muestra cuáles se han superado y cuáles no:
 
 ![Explorador de pruebas después de ejecutar las pruebas](media/cpp-test-explorer-passed.png "Explorador de pruebas de C++ después de ejecutar las pruebas")
 

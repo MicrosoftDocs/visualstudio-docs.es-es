@@ -1,31 +1,36 @@
 ---
 title: Analizar datos de uso de la CPU (ASP.NET) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: "1"
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 2d92c4fcdbc3c4af3269876836602025a4403463
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- aspnet
+ms.openlocfilehash: 16bdbcbc66673f872215a7b3812c4c6f7f1724b3
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Analizar datos de uso de la CPU en Visual Studio (ASP.NET)
 
 Visual Studio proporciona muchas características eficaces para ayudar a analizar problemas de rendimiento de la aplicación. En este tema se proporciona una forma rápida de obtener información sobre las características básicas. A continuación, veremos una herramienta para identificar los cuellos de botella de rendimiento debido al uso elevado de la CPU. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
 
 El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Si la herramienta **Uso de CPU** que se describe aquí no proporciona los datos que necesita, las [demás herramientas de generación de perfiles](../profiling/Profiling-Tools.md) proporcionan diferentes tipos de información que pueden resultarle útiles. En muchos casos, el cuello de botella de rendimiento de la aplicación puede no ser debido a la CPU, sino a la memoria, la representación de interfaz de usuario o el tiempo de solicitud de red.
+
+> [!NOTE]
+> Para .NET Core y ASP.NET Core, la herramienta Uso de CPU actualmente no proporciona resultados precisos con PBD portátiles. Use PBD completos en su lugar.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 

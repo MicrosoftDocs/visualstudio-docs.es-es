@@ -1,12 +1,12 @@
 ---
 title: Novedades de Visual Studio 2017 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 90d6ef6132f8844343388f35a441386c66b838c6
+ms.sourcegitcommit: 6871148ce356977b057febdb4d5a7655e7c295bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
-#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Actualizado para la [versión 15.5](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Actualizado para la [versión 15.6](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 ¿Quiere actualizar desde una versión anterior de Visual Studio? Visual Studio 2017 puede ofrecerle: productividad incomparable para cualquier desarrollador, aplicación y plataforma. Use Visual Studio 2017 para desarrollar aplicaciones para Android, iOS, Windows, Linux, la Web y la nube. Escriba código con rapidez, depure y emita diagnósticos con facilidad, ejecute pruebas con frecuencia y publique con confianza. También puede ampliar y personalizar Visual Studio si crea sus propias extensiones. Use el control de versiones, actúe con agilidad y colabore de manera eficiente con esta versión.
 
 Este es un resumen general de los cambios que hemos realizado desde la versión anterior, Visual Studio 2015:

@@ -1,12 +1,12 @@
 ---
 title: Administrar referencias en un proyecto | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 
@@ -108,7 +108,7 @@ De forma predeterminada, la propiedad <xref:Microsoft.VisualStudio.VCProjectEngi
 
 Puede crear aplicaciones que hagan referencia a proyectos o ensamblados destinados a otra versión de .NET Framework. Por ejemplo, se podría crear una aplicación destinada a [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] que haga referencia a un ensamblado destinado a [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Si se crea un proyecto destinado a una versión anterior de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], no se puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
 
-Para obtener más información, consulte [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Referencias entre proyectos
 
@@ -125,5 +125,5 @@ Las referencias a archivos son referencias directas a ensamblados fuera del cont
 
 ## <a name="see-also"></a>Vea también
 
-[Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md)  
-[Cómo: Agregar o quitar referencias usando el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+[Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md)
+[Cómo: Agregar o quitar referencias mediante el Administrador de referencias](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

@@ -1,11 +1,7 @@
 ---
-title: Herramientas de prueba para desarrolladores, escenarios y funciones | Microsoft Docs
-ms.custom: 
+title: Herramientas de prueba para desarrolladores en Visual Studio | Microsoft Docs
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -14,31 +10,21 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0da910ddf48d0f270aa5e624628d0d6b937e9ae1
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: ae3b475cb6f50f9c6ec623b7dfc588ada9b27163
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Herramientas de prueba para desarrolladores, escenarios y funciones
 
 Conserve el estado del código con las pruebas unitarias. Visual Studio proporciona una amplia variedad de herramientas y técnicas eficaces para que los desarrolladores las usen al probar aplicaciones:
 
-**Escenarios y funciones:**
-
-* [Evitar regresiones y obtener la cobertura de código con IntelliTest](#intellitest)
-* [Pruebas de interfaz de usuario con UI codificada y Selenium](#ui-testing)
-* [Pruebas unitarias eficaces con la cobertura de Visual Studio Code](#unit-testing)
-* [Pruebas unitarias con cualquier marco mediante el Explorador de pruebas de alto rendimiento](#test-explorer)
-* [Introducción a las pruebas unitarias](getting-started-with-unit-testing.md)
-
-<a name="intellitest"></a>
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>Evitar regresiones y obtener la cobertura de código con IntelliTest
 
 En los conjuntos de pruebas unitarias tradicionales, cada caso de prueba representa un escenario de uso ejemplar, y las aserciones representan la relación entre la entrada y la salida.  Comprobar algunos de dichos escenarios podría ser suficiente, pero los desarrolladores con experiencia saben que existen errores incluso en código totalmente probado, cuando las entradas correctas pero sin probar provocan respuestas incorrectas.
 
-Mejore la cobertura y evite regresiones con IntelliTest.
-IntelliTest reduce drásticamente el esfuerzo de crear y mantener pruebas unitarias para código nuevo o existente. 
+Mejore la cobertura y evite regresiones con IntelliTest. IntelliTest reduce drásticamente el esfuerzo de crear y mantener pruebas unitarias para código nuevo o existente.
 
 ![Funcionamiento de IntelliTest](media/devtest-intellitest.png)
 
@@ -48,14 +34,13 @@ IntelliTest reduce drásticamente el esfuerzo de crear y mantener pruebas unitar
 * [Introducción a IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Manual de referencia de IntelliTest](intellitest-manual/index.md)
 
-<a name="ui-testing"></a>
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Pruebas de interfaz de usuario con UI codificada y Selenium
 
 Pruebe su interfaz de usuario (UI) con las mejores pruebas de interfaz de usuario de la clase y la comunidad.
 Las pruebas de UI codificada proporcionan una manera de crear pruebas completamente automatizadas con el fin de validar la funcionalidad y el comportamiento de la interfaz de usuario de la aplicación.
 Pueden automatizar las pruebas de la interfaz de usuario en varias tecnologías, incluidas las aplicaciones de UWP basadas en XAML, las aplicaciones del explorador y las de SharePoint.
 
-Tanto si elige las pruebas de UI codificada o pruebas genéricas de interfaz de usuario basadas en exploradores con Selenium, Visual Studio le proporciona todas las herramientas que necesita. 
+Tanto si elige las pruebas de UI codificada o pruebas genéricas de interfaz de usuario basadas en exploradores con Selenium, Visual Studio le proporciona todas las herramientas que necesita.
 
 ![Pruebas de interfaz de usuario con UI codificada](media/devtest-codeduitest.png)
 
@@ -66,12 +51,11 @@ Tanto si elige las pruebas de UI codificada o pruebas genéricas de interfaz de 
 * [Probar aplicaciones de SharePoint con pruebas de UI codificadas](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introducción a las pruebas de UI codificadas con Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
-<a name="unit-testing"></a>
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Pruebas unitarias eficaces con la cobertura de Visual Studio Code
 
 Para determinar qué proporción de código del proyecto se está probando realmente mediante pruebas codificadas como pruebas unitarias, se puede usar la característica de cobertura de código de Visual Studio. Para restringir con eficacia los errores, las pruebas deberían ensayar o "cubrir" una proporción considerable del código.
 
-El análisis de cobertura de código puede aplicarse al código administrado (CLI) y no administrado (nativo).
+El análisis de cobertura de código puede aplicarse al código administrado y no administrado (nativo).
 
 La cobertura de código es una opción al ejecutar métodos de prueba mediante el Explorador de pruebas. La tabla de salida muestra el porcentaje de código que se ejecuta en cada ensamblado, clase y método. Además, el editor de código fuente muestra qué código se ha probado.
 
@@ -81,7 +65,6 @@ La cobertura de código es una opción al ejecutar métodos de prueba mediante e
 * [Pruebas unitarias, cobertura de código y análisis de clon de código con Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Personalizar el análisis de cobertura de código](customizing-code-coverage-analysis.md)
 
-<a name="test-explorer"></a>
 ## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>Pruebas unitarias con cualquier marco mediante el Explorador de pruebas de alto rendimiento
 
 El Explorador de pruebas ayuda a los desarrolladores a crear, administrar y obtener el máximo beneficio de las pruebas unitarias.

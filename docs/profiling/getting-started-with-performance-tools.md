@@ -1,28 +1,28 @@
 ---
-title: "Introducción a las herramientas de rendimiento | Microsoft Docs"
-ms.custom: 
+title: Introducción a las herramientas de rendimiento | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
 ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: be3292cb4484263b9e70a4bbdde36f60f1ea7ccb
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: e63be8c89de677cf1cb644db2fcdecf4a20399b0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="getting-started-with-performance-tools"></a>Introducción a las herramientas de rendimiento
 En esta sección se proporciona información general sobre los conceptos y las tareas que se aplicarán al recopilar, ver y analizar el rendimiento del código mediante las herramientas de generación de perfiles de Visual Studio.  
@@ -39,7 +39,6 @@ En esta sección se proporciona información general sobre los conceptos y las t
 |----------|---------------------|  
 |**Generar rápidamente el perfil de una aplicación o un sitio web:** utilice el Asistente de rendimiento para configurar y ejecutar una sesión de generación de perfiles de una solución de Visual Studio o un sitio web.|-   [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [Cómo: Recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
 |**Generar el perfil de una aplicación sin el asistente:** aprenda a utilizar las páginas de propiedades de la sesión de rendimiento para crear una sesión de rendimiento.|-   [Cómo: Crear manualmente sesiones de rendimiento](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Pruébelo:** obtener experiencia práctica mediante la generación de perfiles de una aplicación de ejemplo.|-   [Tutorial: Identificar problemas de rendimiento](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Ejemplo de PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>Vea también  
  [Temas de introducción](../profiling/overviews-performance-tools.md)   

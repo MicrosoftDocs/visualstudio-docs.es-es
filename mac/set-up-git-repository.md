@@ -1,16 +1,16 @@
 ---
-title: "Configuración de un repositorio Git en Visual Studio para Mac | Microsoft Docs"
+title: Configuración de un repositorio Git en Visual Studio para Mac | Microsoft Docs
 description: Empleo de Git y Subversion en Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 3eb3e0874cfc46fc98209113cf60a32cdb92787d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Configuración de un repositorio Git
 
@@ -43,11 +43,15 @@ Para configurar un repositorio Git, ejecute los siguientes pasos:
 
 ## <a name="publishing-an-existing-project"></a>Publicación de un proyecto existente
 
-4. Vuelva al proyecto abierto en Visual Studio para Mac. 
+Si dispone de un proyecto que _aún no está_ en control de versiones, siga estos pasos para configurarlo en Git:
+
+4.  Seleccione el nombre de la solución en el Panel de solución de Visual Studio para Mac. 
 
 5. En la barra de menús, seleccione **Control de versiones > Publicar en Control de versiones...** para que aparezca el cuadro de diálogo **Seleccionar repositorio**:
 
     ![Iniciar la extracción del repositorio en Visual Studio para Mac](media/version-control-git4-sml.png)
+
+    Si este elemento de menú aparece atenuado, asegúrese de que ha seleccionado el nombre de la solución.  
 
 6. Elija la pestaña **Repositorios registrados** y haga clic en el botón **Agregar**:
 
