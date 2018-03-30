@@ -1,13 +1,13 @@
 ---
 title: Crear un mapa visual de la pila de llamadas | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: 
+caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: f5fc0025c9d7870b0de042922d87d3a23d7728c5
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Crear un mapa visual de la pila de llamadas durante la depuración en Visual Studio Enterprise
 Cree un mapa de código para realizar un seguimiento la pila de llamadas durante la depuración. Puede hacer anotaciones en el mapa para llevar a cabo el seguimiento de lo que hace el código y poder concentrarse en encontrar errores.
@@ -73,7 +73,7 @@ Este es un vistazo rápido a un mapa de código:
   
  Para obtener información detallada de los comandos y las acciones que puede utilizar cuando se trabaja con mapas de código, vea [examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).  
   
-##  <a name="MapStack"></a>Asignar la pila de llamadas  
+##  <a name="MapStack"></a> Asignar la pila de llamadas  
   
 1.  Inicie la depuración. (Teclado: **F5**)  
   
@@ -87,17 +87,17 @@ Este es un vistazo rápido a un mapa de código:
   
      El mapa se actualiza automáticamente a la vez que continúa depurando. Vea [actualizar el mapa con la siguiente pila de llamadas](#UpdateMap).  
   
-##  <a name="MakeNotes"></a>Hacer notas sobre el código  
+##  <a name="MakeNotes"></a> Hacer notas sobre el código  
  Agregar comentarios para realizar un seguimiento de lo que está sucediendo en el código. Para agregar una nueva línea en un comentario, presione **MAYÚS + ENTRAR**.  
   
  ![Agregar comentario a la pila de llamadas en mapa de código](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")  
   
-##  <a name="UpdateMap"></a>Actualizar el mapa con la siguiente pila de llamadas  
+##  <a name="UpdateMap"></a> Actualizar el mapa con la siguiente pila de llamadas  
  Ejecute la aplicación hasta el siguiente punto de interrupción o entre en una función. El mapa agrega una nueva pila de llamadas.  
   
  ![Actualizar el mapa de código con la siguiente pila de llamadas](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
-##  <a name="AddRelatedCode"></a>Agregar código relacionado al mapa  
+##  <a name="AddRelatedCode"></a> Agregar código relacionado al mapa  
  ¿Ahora ya tiene un mapa: lo que a continuación? Si está trabajando con Visual C# o Visual Basic, agregue elementos, como campos, propiedades y otros métodos, para realizar un seguimiento de lo que está sucediendo en el código.  
   
  Haga doble clic en un método para ver su definición de código, o bien use el menú contextual para el método. (Teclado: seleccione el método en el mapa y presione **F12**)  
@@ -121,7 +121,7 @@ Este es un vistazo rápido a un mapa de código:
   
  ![Métodos que usan un campo en el mapa de código de pila de llamadas](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")  
   
-##  <a name="FindBugs"></a>Buscar errores usando el mapa  
+##  <a name="FindBugs"></a> Buscar errores usando el mapa  
  La visualización del código puede ayudarle a encontrar errores con mayor rapidez. Por ejemplo, suponga que se está investigando un error en un programa de dibujo. Cuando dibuja una línea e intenta deshacerla, no sucede nada hasta que dibuja otra línea.  
   
  Por tanto, establece los puntos de interrupción en los métodos  `clear`, `undo` y `Repaint`, inicia la depuración y compila un mapa como este:  
@@ -172,7 +172,7 @@ Este es un vistazo rápido a un mapa de código:
   
 -   **¿Cómo se impide la asignación de agregar automáticamente nuevas pilas de llamadas?**  
   
-     Elija ![botón &#45; Mostrar pila de llamadas en mapa de código automáticamente](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") en la barra de herramientas del mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl** + **MAYÚS** + **`**.  
+     Elija ![botón &#45; pila de llamadas de mostrar en mapa de código automáticamente](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") en la barra de herramientas del mapa. Para agregar manualmente la pila de llamadas actual al mapa, presione **Ctrl** + **MAYÚS** + **`**.  
   
      El mapa continuará resaltando las pilas de llamadas existentes en el mapa durante la depuración.  
   

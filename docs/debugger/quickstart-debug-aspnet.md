@@ -1,27 +1,27 @@
 ---
-title: "Depuración ASP.NET: Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: 'Depuración ASP.NET: Visual Studio | Documentos de Microsoft'
+ms.custom: mvc
 ms.date: 03/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 12b4feefed9b34ab97365818878b2116d0501abb
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Depuración en ASP.NET con el depurador de Visual Studio
 

@@ -10,17 +10,17 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f9f0c65110ef1003c58c0a4002f90ec7e7e08e3
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 6634a72b7bbed51e3ae250289696511d67c70041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Ver las instantáneas con devolución de paso de IntelliTrace en Visual Studio
 
@@ -39,11 +39,11 @@ En este tutorial, aprenderá lo siguiente:
 
 1. Abra el proyecto en Visual Studio Enterprise.
 
-1. Vaya a **Herramientas > Opciones > IntelliTrace** configuración y seleccione la opción **IntelliTrace eventos e instantáneas**. 
+1. Abra **herramientas** > **opciones** > **IntelliTrace** configuración y seleccione la opción **IntelliTrace eventos e instantáneas** . 
 
     ![Habilitar el modo de eventos de IntelliTrace e instantáneas](../debugger/media/intellitrace-enable-snapshots.png "modo de habilitar los eventos de IntelliTrace e instantáneas")
 
-1. Establezca uno o más puntos de interrupción en el proyecto e iniciar la depuración (presione **F5**), o iniciar la depuración recorriendo el código (**F10** o **F11**).
+1. En el proyecto, establezca uno o más puntos de interrupción e inicie la depuración (presione **F5**), o iniciar la depuración recorriendo el código (**F10** o **F11**).
 
     IntelliTrace toma una instantánea del proceso de la aplicación en el depurador de cada evento de paso y de punto de interrupción. Estos eventos se registran en el **eventos** pestaña en el **herramientas de diagnóstico** ventana, junto con otros eventos de IntelliTrace. Para abrir esta ventana, elija **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
 

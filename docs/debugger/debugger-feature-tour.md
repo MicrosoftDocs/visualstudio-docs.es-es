@@ -1,29 +1,30 @@
 ---
-title: "Paseo por las características del depurador | Documentos de Microsoft"
-ms.custom: H1HackMay2017
-ms.date: 05/19/2017
-ms.reviewer: 
-ms.suite: 
+title: 'Guía de características: el depurador Visual Studio | Documentos de Microsoft'
+description: Dé un paseo por el depurador de Visual Studio
+ms.custom: mvc
+ms.date: 03/27/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 2e031716c68d44a9d08a4b074c5dcb58d5553041
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="feature-tour-of-the-visual-studio-debugger"></a>Guía de características del depurador de Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Inicio rápido: Busque primero en el depurador de Visual Studio
 
 En este tema se presenta las características del depurador de Visual Studio. Si desea seguir el tutorial abriendo su propia aplicación en Visual Studio, puede hacerlo o bien puede seguir junto con una aplicación de ejemplo con el [guía para principiantes](../debugger/getting-started-with-the-debugger.md).
 

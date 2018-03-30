@@ -2,12 +2,12 @@
 title: Empezar a depurar aplicaciones multiproceso | Documentos de Microsoft
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Empezar a depurar una aplicación multiproceso en Visual Studio
 Visual Studio proporciona varias herramientas y elementos de la interfaz de usuario para ayudarle a depurar aplicaciones multiproceso. Este tutorial muestra cómo utilizar marcadores de subprocesos, la **pilas paralelas** ventana, el **inspección paralela** ventana, puntos de interrupción condicionales y los puntos de interrupción de filtro. Este tutorial dura sólo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.
@@ -319,7 +319,7 @@ Puede marcar los subprocesos que desea prestar atención especial. Acción de ma
 
 Para quitar marcadores de subprocesos, haga clic en uno o varios subprocesos marcados en el **inspección paralela** ventana y elija **Quitar marcador**.
 
-## <a name="bkmk_freeze"></a>Inmovilizar y reanudar la ejecución de subprocesos 
+## <a name="bkmk_freeze"></a> Inmovilizar y reanudar la ejecución de subprocesos 
 
 > [!TIP]
 > Puede inmovilizar y reanudar (suspender y reanudar) los subprocesos para controlar el orden en el que los subprocesos realizan trabajo. Esto puede ayudarle a resolver problemas de simultaneidad, como interbloqueos y condiciones de anticipación.
@@ -340,7 +340,7 @@ Para quitar marcadores de subprocesos, haga clic en uno o varios subprocesos mar
 
     La aplicación también puede crear instancias de algunos de los subprocesos nuevos. Tenga en cuenta que todos los nuevos subprocesos sin marcar y no están inmovilizados.
 
-## <a name="bkmk_follow_a_thread"></a>Siga un subproceso único mediante el uso de puntos de interrupción condicionales
+## <a name="bkmk_follow_a_thread"></a> Siga un subproceso único mediante el uso de puntos de interrupción condicionales
 
 En ocasiones, puede ser útil seguir la ejecución de un único subproceso en el depurador. Una manera para ello consiste en inmovilizar subprocesos que no está interesado en, pero en algunos casos puede que desee seguir un único subproceso sin inmovilizar otros subprocesos (para reproducir un determinado de errores, por ejemplo). Para seguir un subproceso sin inmovilización de otros subprocesos, se debe evitar interrumpir el código excepto en el subproceso que le interesa. Puede hacerlo estableciendo un [punto de interrupción condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 

@@ -1,12 +1,13 @@
 ---
-title: "Información general de implementación - Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: Información general de implementación - Visual Studio | Documentos de Microsoft
+ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
+ms.topic: quickstart
 dev_langs:
 - FSharp
 - VB
@@ -21,18 +22,19 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e05bf361515b45f3ebc7683fa0c83ec6116d9419
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: d07129bc373cf74c8ba373b3c51847016d585ade
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="deployment-overview-in-visual-studio"></a>Información general de la implementación en Visual Studio
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Inicio rápido: Busque primero en la implementación en Visual Studio
 
 Al implementar una aplicación, servicio o componente, se distribuye para su instalación en otros equipos, dispositivos, servidores o en la nube. Elija el método apropiado en Visual Studio para el tipo de implementación que necesita. (Muchos tipos de aplicación admiten otras herramientas de implementación como la implementación de línea de comandos o NuGet que no se describen aquí).
 
@@ -40,7 +42,7 @@ Vea los tutoriales para obtener instrucciones paso a paso.
 
 ### <a name="deploy-to-local-folder"></a>Implementar en la carpeta local
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, y **.NET Core**: usar la herramienta de publicación para implementar en una variable local carpeta. Las opciones disponibles dependen de su tipo de aplicación. En el Explorador de soluciones, haga clic en el proyecto y elija **publicar**y, a continuación, elija **carpeta**. Para obtener más información, consulte [implementar en una carpeta local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, y **.NET Core**: usar la herramienta de publicación para implementar en una carpeta local. Las opciones disponibles dependen de su tipo de aplicación. En el Explorador de soluciones, haga clic en el proyecto y elija **publicar**y, a continuación, elija **carpeta**. Para obtener más información, consulte [implementar en una carpeta local](quickstart-deploy-to-local-folder.md).
 
     ![Elija publicar](../deployment/media/quickstart-publish.png)
 
