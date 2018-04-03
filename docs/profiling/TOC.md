@@ -1,8 +1,8 @@
 
 # [Documentación de generación de perfiles](index.md)
 # Información general
-## [Guía de características de generación de perfiles](profiling-feature-tour.md)
 # Guías de inicio rápido
+## [Primer vistazo a la generación de perfiles](profiling-feature-tour.md)
 ## [Análisis del uso de CPU (administrado)](quickstart-cpu-usage-managed.md)
 ## [Análisis del uso de CPU (nativo)](quickstart-cpu-usage-native.md)
 ## [Análisis del uso de CPU (ASP.NET)](quickstart-cpu-usage-aspnet.md)

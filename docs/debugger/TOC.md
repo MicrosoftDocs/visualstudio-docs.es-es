@@ -1,7 +1,7 @@
 # [Documentación del depurador](index.md)
-# Información general
-## [Guía de características del depurador](debugger-feature-tour.md)
+# [Información general](debugger-overview.md)
 # Guías de inicio rápido
+## [Primer vistazo al depurador](debugger-feature-tour.md)
 ## [Depuración de una aplicación administrada](quickstart-debug-with-managed.md)
 ## [Depuración de una aplicación nativa](quickstart-debug-with-cplusplus.md)
 ## [Depuración de una aplicación ASP.NET](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [Visualización de los valores de cadena en un visualizador](string-visualizer-dialog-box.md)
 ### [Visualización del código desensamblador](how-to-use-the-disassembly-window.md)
 #### [Retroceso y avance en la memoria](how-to-page-up-or-down-in-memory.md)
-### [Visualización de la pila de llamadas](how-to-use-the-call-stack-window.md)
-#### [Código mixto e información no mostrada en la ventana Pila de llamadas](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [Salida del código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [Visualización de los valores de registro](how-to-use-the-registers-window.md)
 #### [Acerca de la ventana Registros](debugging-basics-registers-window.md)
 #### [Mostrar y ocultar grupos de registros](how-to-display-and-hide-register-groups.md)

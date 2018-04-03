@@ -1,7 +1,8 @@
 # [Documentación de implementación](index.md)
 # Información general
-## [Información general sobre implementación](deploying-applications-services-and-components.md)
+## [Información general sobre la implementación](deploying-applications-services-and-components-resources.md)
 # Guías de inicio rápido
+## [Primer vistazo a la implementación](deploying-applications-services-and-components.md)
 ## [Implementación en una carpeta local](quickstart-deploy-to-local-folder.md)
 ## [Implementación en un sitio web](quickstart-deploy-to-a-web-site.md)
 ## [Implementación en Azure](quickstart-deploy-to-azure.md)
@@ -23,7 +24,7 @@
 ### [Empaquetado de una aplicación UWP con Visual Studio](/windows/uwp/packaging/packaging-uwp-apps)
 ## Node.js
 ### [Publicación en el sitio web de Azure con Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
-## Python
+## Plantillas de
 ### [Publicación en Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # Guías de procedimientos
 ## [Seguridad e implementación ClickOnce](clickonce-security-and-deployment.md)
@@ -131,6 +132,4 @@
 #### [Elemento <Signature> (implementación ClickOnce)](signature-element-clickonce-deployment.md)
 #### [Elemento <customErrorReporting> (implementación ClickOnce)](customerrorreporting-element-clickonce-deployment.md)
 ### [Referencia de la API no administrada de ClickOnce](clickonce-unmanaged-api-reference.md)
-# Recursos
-## [Implementar aplicaciones, servicios y componentes](deploying-applications-services-and-components-resources.md)
 
