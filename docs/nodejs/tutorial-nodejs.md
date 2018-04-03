@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1ababcbc0903d474c2992b68e3571a71c4e88d99
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y Express en Visual Studio
 En este tutorial para el desarrollo de Visual Studio con Node.js y Express, se crea una sencilla aplicación web de Node.js, agregará código, explorará algunas características del IDE y ejecutará la aplicación. Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).  
@@ -45,6 +45,8 @@ En este tutorial aprenderá a:
 * Debe tener instalado el runtime de Node.js.
 
     Si todavía no lo tiene instalado, instale la versión LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/). En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un runtime instalado, puede configurar el proyecto para que haga referencia al runtime instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**).
+
+    Este tutorial se ha probado con Node.js 8.10.0.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 En primer lugar, creará un proyecto de aplicación web de Node.js.
@@ -119,6 +121,8 @@ En primer lugar, creará un proyecto de aplicación web de Node.js.
         res.render('index', { title: 'Express', "data" });
     });
     ```
+
+    Hay un error en la línea de código que contiene `res.render`. Es necesario corregirlo para poder ejecutar la aplicación. Corregiremos el error en la sección siguiente.
 
 ## <a name="use-intellisense"></a>Usar IntelliSense
 
