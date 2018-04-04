@@ -1,26 +1,26 @@
 ---
-title: "Orden de compilación de destinos | Microsoft Docs"
-ms.custom: 
+title: Orden de compilación de destinos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf76debbaca82f9f60769ff5b5b166e40156c4c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9936c1529f0fbb5161d4cd766b1ce5eb0fc847c1
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="target-build-order"></a>Orden de compilación de destinos
 Los destinos se deben ordenar si la entrada a un destino depende de la salida de otro destino. Puede usar estos atributos para especificar el orden en el que se ejecutan los destinos:  
@@ -113,7 +113,7 @@ Los destinos se deben ordenar si la entrada a un destino depende de la salida de
   
 2.  Se ejecutan los destinos especificados en la línea de comandos mediante el modificador **/target**. Si no se especifica ningún destino en la línea de comandos, se ejecutan los destinos `DefaultTargets`. Si ninguno está presente, se ejecuta el primer destino que se encuentre.  
   
-3.  Se evalúa el atributo de destino `Condition`. Si el atributo `Condition` está presente y se evalúa como `false`, el destino no se ejecuta y no tiene ningún efecto adicional en la compilación.  
+3.  Se evalúa el atributo de destino `Condition`. Si el atributo `Condition` está presente y se evalúa como `false`, el destino no se ejecuta y no tiene ningún efecto adicional en la compilación.
   
 4.  Antes de ejecutar un destino, se ejecutan los destinos `DependsOnTargets`.  
   

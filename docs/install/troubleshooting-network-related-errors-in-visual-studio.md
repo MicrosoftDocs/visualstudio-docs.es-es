@@ -1,31 +1,31 @@
 ---
-title: "Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio | Microsoft Docs"
-description: 
-ms.custom: 
+title: Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio | Microsoft Docs
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio
 Tenemos soluciones para la mayoría de los errores típicos relacionados con la red o con el proxy que puede encontrar cuando instala o usa Visual Studio detrás de un firewall o un servidor proxy.

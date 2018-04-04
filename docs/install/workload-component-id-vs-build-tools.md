@@ -1,27 +1,27 @@
 ---
 title: Identificadores de componente y carga de trabajo de Visual Studio Build Tools 2017 | Microsoft Docs
-description: "Uso de identificadores de componente y carga de trabajo de Visual Studio para crear aplicaciones clásicas basadas en Windows"
-keywords: 
+description: Uso de identificadores de componente y carga de trabajo de Visual Studio para crear aplicaciones clásicas basadas en Windows
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da292ede647539182b6b1f2e8aa6c843d2f0985
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 415ad88d9ef51a5002c7e64dcd4abf76f97167c3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Directorio de componentes de Visual Studio Build Tools 2017
 
@@ -68,7 +68,7 @@ Microsoft.Net.Core.Component.SDK.1x | Herramientas de desarrollo de .NET Core 1.
 
 **ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Descripción:** cree aplicaciones de red escalables con Node.js, un tiempo de ejecución de JavaScript asincrónico y orientado a eventos. 
+**Descripción:** cree aplicaciones de red escalables con Node.js, un tiempo de ejecución de JavaScript asincrónico y orientado a eventos.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 

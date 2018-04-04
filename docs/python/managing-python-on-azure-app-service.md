@@ -1,16 +1,16 @@
 ---
-title: "Instalación de intérpretes y bibliotecas de Python en Azure App Service | Microsoft Docs"
-description: "Describe cómo instalar un intérprete y las bibliotecas de Python en Azure App Service y configuración de las aplicaciones web para que hagan referencia correctamente al intérprete."
-ms.custom: 
+title: Instalación de intérpretes y bibliotecas de Python en Azure App Service | Microsoft Docs
+description: Describe cómo instalar un intérprete y las bibliotecas de Python en Azure App Service y configuración de las aplicaciones web para que hagan referencia correctamente al intérprete.
+ms.custom: ''
 ms.date: 09/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: f48a8040203f50970aa16d511f94222bf1578bb1
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Administrar Python en Azure App Service
 
@@ -217,4 +217,4 @@ En lugar de usar la consola de Kudu mediante Azure Portal, puede ejecutar comand
 
 Para obtener información sobre los comandos y la autenticación, vea la [documentación de Kudu](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-También puede ver las credenciales usando el comando `az webapp deployment list-publishing-profiles` por medio de la CLI de Azure. Vea [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles). En [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) hay disponible una biblioteca auxiliar para registrar comandos de Kudu.
+También puede ver las credenciales usando el comando `az webapp deployment list-publishing-profiles` por medio de la CLI de Azure. Vea [az webapp deployment](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles). En [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) hay disponible una biblioteca auxiliar para registrar comandos de Kudu.

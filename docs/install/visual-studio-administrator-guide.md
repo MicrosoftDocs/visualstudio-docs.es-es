@@ -1,13 +1,14 @@
 ---
-title: "Guía del administrador de Visual Studio | Microsoft Docs"
-description: "Obtenga más información sobre cómo implementar Visual Studio en un entorno empresarial."
-ms.custom: 
+title: Guía del administrador de Visual Studio | Microsoft Docs
+description: Obtenga más información sobre cómo implementar Visual Studio en un entorno empresarial.
+ms.custom: ''
 ms.date: 05/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
@@ -15,13 +16,14 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c143456d71057071aa953605e2ee60c6aa9c77de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 03a695adfed363cebf693978e7ef3bca7904beff
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guía del administrador de Visual Studio 2017
 

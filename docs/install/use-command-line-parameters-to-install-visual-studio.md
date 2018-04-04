@@ -1,13 +1,13 @@
 ---
-title: "Usar parámetros de la línea de comandos para instalar Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Usar parámetros de la línea de comandos para instalar Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/17/2018
 ms.reviewer: tims
-ms.suite: 
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -15,14 +15,14 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
 Cuando instala Visual Studio 2017 desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos, puede hacer lo siguiente:
