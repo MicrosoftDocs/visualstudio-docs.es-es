@@ -1,9 +1,6 @@
 ---
-title: "Suprimir advertencias de análisis de código en Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: Suprimir advertencias de análisis de código en Visual Studio | Documentos de Microsoft
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Suprimir las advertencias de análisis de código
+# <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
 A menudo resulta útil indicar que una advertencia no es aplicable. Esto indica a los miembros del equipo que se ha revisado el código y que se puede suprimir la advertencia. En el código fuente (ISS) de supresión utiliza el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo para suprimir una advertencia. El atributo puede colocarse cerca el segmento de código que genera la advertencia. Puede agregar el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> de atributo para el archivo de origen escribiendo, o puede usar el menú contextual en una advertencia en el **lista de errores** para agregarlo automáticamente.
 
@@ -94,7 +91,7 @@ Si hay motivos de rendimiento estricta para minimizar los metadatos de supresió
 
 Por razones de mantenimiento, no se recomienda si se omite el nombre de la regla.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Suprimir selectivas infracciones dentro de un cuerpo de método
+## <a name="suppress-selective-violations-within-a-method-body"></a>Suprimir selectivas infracciones dentro de un cuerpo de método
 
 Atributos de supresión se pueden aplicar a un método, pero no se puede incrustar dentro de un cuerpo de método. Esto significa que todas las infracciones de una regla determinada se suprimen si agrega el <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo al método.
 
@@ -160,7 +157,7 @@ Supresiones de nivel global son la única manera de suprimir mensajes que hacen 
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`siempre contiene el nombre del elemento completo.
+> `Target` siempre contiene el nombre del elemento completo.
 
 ## <a name="global-suppression-file"></a>Archivo de supresión global
 
@@ -168,4 +165,5 @@ El archivo de supresión global mantiene supresiones supresiones de nivel global
 
 ## <a name="see-also"></a>Vea también
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Usar los analizadores de Roslyn](../code-quality/use-roslyn-analyzers.md)

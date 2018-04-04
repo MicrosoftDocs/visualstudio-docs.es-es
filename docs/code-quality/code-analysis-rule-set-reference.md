@@ -1,12 +1,12 @@
 ---
-title: "Referencia de conjunto de reglas de análisis de código | Documentos de Microsoft"
-ms.custom: 
+title: Referencia de conjunto de reglas de análisis de código | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code analysis, rule sets
@@ -16,10 +16,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bc2b01641c6f6b333ef5323a60672818cc5e7b3
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
 

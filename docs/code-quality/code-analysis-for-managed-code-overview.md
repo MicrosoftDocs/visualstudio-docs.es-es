@@ -1,12 +1,8 @@
 ---
-title: "Análisis de código para código administrado Introducción | Documentos de Microsoft"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Análisis de código administrado de Visual Studio de código | Documentos de Microsoft
+ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -17,13 +13,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>Análisis de código para información general del código administrado
+# <a name="overview-of-code-analysis-for-managed-code"></a>Información general de análisis de código para código administrado
+
+Visual Studio de 2017 analiza el código administrado de dos maneras: con heredado *FxCop* análisis estático de los ensamblados administrados y con .NET Compiler Platform *analizadores*. Este tema tratan los análisis de código estático de FxCop. Para más información acerca del análisis de código mediante el uso de los analizadores de .NET Compiler Platform, consulte [analizadores de información general de Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 En el análisis de código administrado se analizan los ensamblados administrados y se muestra información sobre dichos ensamblados, como por ejemplo las infracciones de las reglas de programación y las reglas de diseño estipuladas en las instrucciones de diseño de Microsoft .NET Framework.
 
@@ -76,5 +74,6 @@ Puede utilizar las características integradas del sistema de generación para e
 
 ## <a name="see-also"></a>Vea también
 
-[Utilizar conjuntos de reglas para agrupar reglas de análisis de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
-[Cómo: habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Información general de los analizadores de Roslyn](../code-quality/roslyn-analyzers-overview.md)
+- [Usar conjuntos de reglas para agrupar reglas de análisis de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [Cómo: habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
