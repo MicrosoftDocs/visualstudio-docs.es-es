@@ -1,15 +1,15 @@
 ---
 title: Azure SDK para Python | Microsoft Docs
 description: Azure SDK para Python facilita el consumo de servicios de Microsoft Azure en aplicaciones que se ejecutan en cualquier plataforma.
-ms.custom: 
+ms.custom: ''
 ms.date: 01/22/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: baa206dfbb9caf58ce872d0c9dee22e183403adb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 728fc1249671025ca99f36f62aab19a1282f15aa
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="azure-sdk-for-python"></a>SDK de Azure para Python
 
@@ -50,7 +50,7 @@ El [Centro para desarrolladores de Azure SDK para Python](http://azure.microsoft
 - [Blob storage](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Table storage](/azure/storage/storage-python-how-to-use-table-storage)
 - [Queue storage](/azure/storage/storage-python-how-to-use-queue-storage)
-- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
 - [Colas de Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
 - [Temas y suscripciones de Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Administración de servicios](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
@@ -64,6 +64,6 @@ Para las API públicas sin documentación, las pruebas unitarias del [repositori
 
 ## <a name="support"></a>Compatibilidad
 
-El repositorio de GIT para el SDK se encuentra en [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
+El repositorio de Git del SDK se encuentra en [https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python).
 
 [Registre los problemas en el repositorio](https://github.com/Azure/azure-sdk-for-python/issues) si encuentra algún problema o tiene preguntas sobre el uso del SDK.

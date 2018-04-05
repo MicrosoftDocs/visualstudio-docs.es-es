@@ -1,12 +1,8 @@
 ---
 title: Usar expresiones regulares en Visual Studio | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: 03/26/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -33,7 +29,9 @@ Visual Studio usa [expresiones regulares de .NET Framework](/dotnet/standard/bas
 
 ## <a name="replacement-patterns"></a>Patrones de reemplazo
 
-Para más información sobre las expresiones regulares que se usan en patrones de reemplazo, vea [Sustituciones en expresiones regulares (Guía de .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
+Para usar un grupo de capturas numerado, incluya el grupo entre paréntesis en el patrón de expresión regular. Use `$number` (donde `number` es un entero que empieza por 1) para especificar un grupo numerado concreto en un patrón de reemplazo. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` define dos grupos: el primero contiene un único dígito decimal y el segundo, un solo carácter comprendido entre **a** y **z**. La expresión encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` hace referencia al primer grupo y convierte la cadena a **z1 z2 z3 z4**.
+
+Para más información sobre las expresiones regulares que se usan en patrones de reemplazo, vea [Sustituciones en expresiones regulares (Guía de .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Ejemplos de expresiones regulares
 
@@ -52,7 +50,7 @@ A continuación se muestran algunos ejemplos:
 |Delimitar la cadena coincidente al final de una línea|\r?$|`End\r?$` coincide con "end" solo cuando aparece al final de una línea.|
 |Coincidencia con cualquier carácter único de un conjunto|[abc]|`b[abc]` coincide con "ba", "bb" y "bc".|
 |Coincidir con cualquier carácter de un intervalo de caracteres|[a-f]|`be[n-t]` coincide con "bet" en "between", "ben" en "beneath" y "bes" en "beside", pero no "below".|
-|Capturar y numerar implícitamente la expresión contenida entre paréntesis|()|`([a-z])X\1` coincide con "aXa" y "bXb", pero no con "aXb". ". "\1" hace referencia al primer grupo de expresión "[a-z]".|
+|Capturar y numerar implícitamente la expresión contenida entre paréntesis|()|`([a-z])X\1` coincide con "aXa" y "bXb", pero no con "aXb". "\1" hace referencia al primer grupo de expresión "[a-z]".|
 |Invalidar una coincidencia|(?!abc)|`real (?!ity)` coincide con "real" en "realty" y "really", pero no con "reality". También encuentra el segundo “real” (pero no el primero) en “realityreal”.|
 |Coincidir con cualquier carácter que no está en un conjunto determinado de caracteres|[^abc]|`be[^n-t]` coincide con "bef" en "before", "beh" en "behind" y "bel" en "below", pero no con "beneath".|
 |Coincidir con la expresión situada antes o después del símbolo|&#124;|`(sponge&#124;mud) bath` coincide con "sponge bath" y "mud bath".|

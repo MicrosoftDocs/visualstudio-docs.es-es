@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Mi primera aplicación de escritorio WPF | Microsoft Docs"
-ms.custom: 
+title: 'Tutorial: Mi primera aplicación de escritorio WPF | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Tutorial: Mi primera aplicación de escritorio WPF
 
@@ -320,7 +320,7 @@ Diseño permite colocar los elementos de forma ordenada y administrar el tamaño
 
     1. Busque la línea `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`. Cambie `Grid.Column="0"` a `Grid.Column="1"` y cambie `Grid.Row="2"` a `Grid.Row="3"`.
 
-1. Justo antes del elemento `<Border` , agregue el siguiente código XAML para mostrar el título:
+1. Justo antes del elemento `<Border`, agregue el siguiente código XAML para mostrar el título:
 
     ```xaml
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
@@ -573,7 +573,7 @@ Diseño permite colocar los elementos de forma ordenada y administrar el tamaño
 
     -   `listHeaderTextStyle`: para dar formato al encabezado de lista **Etiqueta**.
 
-    -   `buttonStyle`: para dar formato a `Button` en la página **ExpenseItHome.xaml** .
+    -   `buttonStyle`: para dar formato a `Button` en la página **ExpenseItHome.xaml**.
 
 1. Abra **ExpenseItHome.xaml** y reemplace todo lo que haya entre los elementos `<Grid>` y `</Grid>` con el código XAML siguiente:
 

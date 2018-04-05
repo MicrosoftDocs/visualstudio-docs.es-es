@@ -1,12 +1,12 @@
 ---
-title: "Métodos abreviados de teclado predeterminados de Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Métodos abreviados de teclado predeterminados de Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 Para obtener más información sobre la accesibilidad del teclado, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md) y [Cómo: Usar el teclado exclusivamente](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -1134,6 +1134,7 @@ Cada sección de la tabla siguiente incluye comandos cuyos métodos abreviados d
 |Design.ShowHandles|F9|  
 |Design.ZoomIn|Ctrl+Alt+=|  
 |Design.ZoomOut|Ctrl+Alt+-|  
+|Opciones del diseñador|Ctrl+Mayús+;|  
 |Format.EditText|F2|  
 |Format.ResetLayout.All|Ctrl+Mayús+R|  
 |Ejecutar código del proyecto|Ctrl+F9|  

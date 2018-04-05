@@ -1,24 +1,24 @@
 ---
 title: Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: 31
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: d9d9ecfd180ce3d4bbd54eb091e6c0e3153bd7cd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 71004088d421bcc2e0809fc4004cd7af887b95af
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup-and-install.md) y [Comprobar el entorno de Xamarin](../cross-platform/verify-your-xamarin-environment.md), este tutorial le muestra cómo compilar una aplicación de Xamarin básica (mostrada a continuación) con capas de interfaz de usuario nativa. Con la interfaz de usuario nativa, el código compartido reside en una biblioteca de clases portable (PCL) y los proyectos de plataforma individuales contienen las definiciones de interfaz de usuario.  
@@ -261,7 +261,7 @@ Tras seguir los pasos de [Configuración e instalación](../cross-platform/setup
     > [!TIP]
     >  Tenga en cuenta que muchas propiedades no contienen una lista desplegable de valores que pueda seleccionar.  Puede resultar difícil saber qué valor de cadena utilizar para cualquier propiedad determinada. Para obtener sugerencias, intente buscar el nombre de una propiedad en la página de la clase [R.attr](http://developer.android.com/reference/android/R.attr.html) .  
     >   
-    >  Además, una búsqueda rápida en la web conduce generalmente a una página en [http://stackoverflow.com/](http://stackoverflow.com/) , donde otras personas han usado la misma propiedad.  
+    >  Además, una búsqueda rápida en la web conduce generalmente a una página en [http://stackoverflow.com/](http://stackoverflow.com/), donde otras personas han usado la misma propiedad.  
   
      Como referencia, si cambia a la vista **Código fuente**, verá el siguiente código para este elemento:  
   

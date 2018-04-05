@@ -1,11 +1,11 @@
 ---
 title: Propiedades reservadas y conocidas de MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,22 +15,22 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-caps.latest.revision: 
+caps.latest.revision: 29
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 89610426b944c3b3948c23c246337fd7aa9c1af8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9eafd9de132e2fa71ddfb4016115d84ef222db26
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un conjunto de propiedades predefinidas que almacenan información sobre el archivo de proyecto y los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Estas propiedades se evalúan igual que otras propiedades de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por ejemplo, para utilizar la propiedad `MSBuildProjectFile` escribiría `$(MSBuildProjectFile)`.  
   
- MSBuild utiliza los valores de la tabla siguiente para predefinir propiedades reservadas y conocidas. Las propiedades reservadas no se pueden invalidar, pero las propiedades conocidas se pueden invalidar con propiedades del entorno, propiedades globales o propiedades que se declaran en el archivo de proyecto con el mismo nombre.  
+ MSBuild utiliza los valores de la tabla siguiente para predefinir propiedades reservadas y conocidas. Las propiedades reservadas no se pueden invalidar, pero las propiedades conocidas se pueden invalidar con propiedades del entorno, propiedades globales o propiedades que se declaran en el archivo de proyecto con el mismo nombre.
   
 ## <a name="reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas  
  En la tabla siguiente se describen las propiedades predefinidas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -61,6 +61,23 @@ ms.lasthandoff: 02/09/2018
 |`MSBuildThisFileName`|Parte de nombre de archivo de `MSBuildThisFileFullPath`, sin la extensión de nombre de archivo.|Reservada|  
 |`MSBuildToolsPath`|Ruta de acceso de instalación de la versión de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se asocia al valor de `MSBuildToolsVersion`.<br /><br /> No incluya la barra diagonal inversa final de la ruta.<br /><br /> Esta propiedad no se puede invalidar.|Reservada|  
 |`MSBuildToolsVersion`|Versión del conjunto de herramientas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se utilizará para compilar el proyecto.<br /><br /> Nota: Un conjunto de herramientas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como csc.exe y vbc.exe. Para obtener más información, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) y [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md).|Reservada|  
-  
+
+## <a name="names-that-conflict-with-msbuild-elements"></a>Nombres en conflicto con elementos de MSBuild
+
+Aparte de lo anterior, los nombres relativos a elementos del lenguaje MSBuild no se pueden usar en las propiedades, elementos o metadatos de elementos definidos por el usuario:
+
+* VisualStudioProject
+* Destino
+* PropertyGroup
+* Salida
+* ItemGroup
+* UsingTask
+* ProjectExtensions
+* OnError
+* ImportGroup
+* Elegir
+* Cuando
+* Otherwise
+
 ## <a name="see-also"></a>Vea también  
  [Referencia de MSBuild](../msbuild/msbuild-reference.md) [Propiedades de MSBuild](../msbuild/msbuild-properties.md)

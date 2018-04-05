@@ -1,11 +1,11 @@
 ---
-title: "Tipos de archivos de proyecto y solución | Microsoft Docs"
-ms.custom: 
+title: Tipos de archivos de proyecto y solución | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - File Properties.CopyToOutputDirectory
@@ -26,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d05b7b5f1510777c758998572e78757c47148fa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d239a5e129f12c4521ba190674d84430f8f2e646
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="project-and-solution-file-types"></a>Tipos de archivos de proyecto y solución
 
@@ -41,7 +42,7 @@ Visual Studio admite muchos tipos de archivo. En una instalación concreta, los 
 
 En Visual Studio se usan dos tipos de archivo (.sln y .suo) para almacenar la configuración de las soluciones. Estos archivos, denominados colectivamente "archivos de solución", proporcionan al Explorador de soluciones la información que necesita para mostrar una interfaz gráfica para administrar los archivos.
 
-|Extensión|nombre|Description|
+|Comprobación de actualización|nombre|Description|
 |---------------|----------|-----------------|
 |.sln|Solución de Visual Studio|Organiza proyectos, elementos de proyecto y elementos de solución en la solución.|
 |.suo|Opciones de usuario de la solución|Realiza el seguimiento de las personalizaciones de nivel de usuario que se han realizado en Visual Studio, como los puntos de interrupción.|
@@ -50,7 +51,7 @@ En Visual Studio se usan dos tipos de archivo (.sln y .suo) para almacenar la co
 
 Los proyectos pueden contener muchos tipos de archivo diferentes. Por ejemplo, los archivos de código de C# tienen una extensión **.cs** y los de C++ tienen una extensión **.cpp**. Los recursos se almacenan en archivos **.resx** y el código XAML en archivos **.xaml**. Los archivos [app.config](../../ide/managing-application-settings-dotnet.md) contienen información de la aplicación que no se debe incluir en el código de la aplicación (como cadenas de conexión).
 
-Para más información sobre los tipos de archivo en proyectos de C++, vea [Tipos de archivos creados para proyectos de Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects) y [Unicode en la biblioteca MFC (Microsoft Foundation Class)](/cpp/mfc/unicode-in-mfc)
+Para más información sobre los tipos de archivo en proyectos de C++, vea [Tipos de archivos creados para proyectos de Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects).
 
 ## <a name="see-also"></a>Vea también
 

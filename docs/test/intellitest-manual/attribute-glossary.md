@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 474666d6243f8602c1da55ec113e459d5f2ec1d9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7a0962b8efff6e6715936b8d954d5c8b447c0693
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="attribute-glossary"></a>Glosario de atributos
 
@@ -201,7 +201,7 @@ public void MyTest(object testParameter)
 <a name="pexallowedexception"></a>
 ## <a name="pexallowedexception"></a>PexAllowedException
 
-Si este atributo está adjunto a [PexMethod](#pexmethod) (o a [PexClass](#pexclass), cambia la lógica de IntelliTest predeterminada que indica cuando se produce un error en las prueba. La prueba no se considerará incorrecta, aunque genere la excepción especificada.
+Si este atributo está adjunto a [PexMethod](#pexmethod) (o a [PexClass](#pexclass), cambia la lógica de IntelliTest predeterminada que indica cuando se produce un error en las pruebas. La prueba no se considerará incorrecta, aunque genere la excepción especificada.
 
 **Ejemplo**
 

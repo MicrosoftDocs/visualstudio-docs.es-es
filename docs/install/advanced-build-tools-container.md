@@ -1,22 +1,24 @@
 ---
 title: Ejemplo avanzado de contenedores | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6009114d16871f4582aae298b25de9a3b9fe5888
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b5497a6957c457300f7741e1e0d4acc68240020a
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="advanced-example-for-containers"></a>Ejemplo avanzado de contenedores
 
@@ -27,7 +29,7 @@ En el siguiente Dockerfile de ejemplo se usa una etiqueta de versión específic
 > [!NOTE]
 > No se puede instalar Visual Studio en microsoft/windowsservercore:10.0.14393.1593, ya que tiene problemas conocidos al iniciar el instalador en un contenedor. Para más información, vea [Problemas conocidos](build-tools-container-issues.md).
 
-En el ejemplo también se usa un programa previo de Build Tools 2017 que instala una versión específica compilada al mismo tiempo que el programa previo. El producto se podría actualizar a través del canal de versión, pero no resulta práctico para los contenedores que normalmente recompilaría. Si quiere obtener las direcciones URL para un canal específico, puede descargar el canal de https://aka.ms/vs/15/release/channel, abrir el archivo JSON y examinar las direcciones URL del programa previo. Para más información, vea [Creación de una instalación de red de Visual Studio](create-a-network-installation-of-visual-studio.md).
+En el ejemplo también se usa un programa previo de Build Tools 2017 que instala una versión específica compilada al mismo tiempo que el programa previo. El producto se podría actualizar a través del canal de versión, pero no resulta práctico para los contenedores que normalmente recompilaría. Si quiere obtener las direcciones URL de un canal específico, puede descargar el canal de https://aka.ms/vs/15/release/channel, abrir el archivo JSON y examinar las direcciones URL del programa previo. Para más información, vea [Creación de una instalación de red de Visual Studio](create-a-network-installation-of-visual-studio.md).
 
 ```dockerfile
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
