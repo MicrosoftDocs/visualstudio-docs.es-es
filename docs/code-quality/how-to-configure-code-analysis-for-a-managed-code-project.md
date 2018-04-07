@@ -1,10 +1,11 @@
 ---
-title: 'Cómo: configurar el análisis de código para un proyecto de código administrado | Documentos de Microsoft'
-ms.date: 11/04/2016
+title: Configurar el análisis de código en Visual Studio | Documentos de Microsoft
+ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
+- vs.codeanalysis.propertypages.solution
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46d41b09f0f6639195613c8a4d9a08f952c79525
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: daac3af3a6d5d5fba4d6e8dbb652821583769762
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Cómo: Configurar el análisis de código para un proyecto de código administrado
 
@@ -49,9 +50,28 @@ En Visual Studio, puede elegir entre una lista de análisis de código *conjunto
 
     - Seleccione  **\<Examinar... >** encontrar una regla personalizada existente establece que no está en la lista.
 
-    - Defina un conjunto de reglas personalizado. Para obtener más información, consulte [crear conjuntos de reglas personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    - Definir una [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
+
+## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Especificar conjuntos de reglas para varios proyectos en una solución
+
+De forma predeterminada, se asignan todos los proyectos administrados de una solución de la *reglas mínimas recomendadas de Microsoft* conjunto de reglas de análisis de código. Puede cambiar los conjuntos de reglas que se asignan a los proyectos de una solución en el **propiedades** cuadro de diálogo para la solución.
+
+1. Abra la solución en Visual Studio.
+
+2. En el **analizar** menú, seleccione **configurar análisis de código para la solución**.
+
+3. Si es necesario, expanda **propiedades comunes**y, a continuación, seleccione **configuración de análisis de código**.
+
+4. Puede especificar un conjunto de reglas para uno o más proyectos:
+
+    - Para especificar un conjunto de reglas para un proyecto individual, seleccione el nombre del proyecto.
+
+    - Para especificar un conjunto de reglas para varios proyectos, mantenga presionada la tecla **Ctrl** y seleccione los nombres de proyecto.
+
+    - Para especificar todos los proyectos de la solución, mantenga presionada la tecla **MAYÚS** y haga clic en la lista de proyectos.
+
+5. Seleccione el **conjunto de reglas** campos de un proyecto y, a continuación, seleccione el nombre de la regla establece que desea aplicar.
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Configurar y usar un conjunto de reglas personalizado](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
 - [Cómo: Configurar el análisis de código para una aplicación web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

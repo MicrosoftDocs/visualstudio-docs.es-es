@@ -1,12 +1,7 @@
 ---
-title: "Cómo: configurar el análisis de código para una aplicación Web ASP.NET | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: configurar el análisis de código para una aplicación Web ASP.NET en Visual Studio | Documentos de Microsoft'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-code-analysis
 ms.topic: article
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
@@ -15,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0f2aaf85128bd34f4e80a7b29763506b17d77911
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 075382db550fae1198b0eca239be8efd1bfadff6
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Cómo: Configurar el análisis de código para una aplicación web ASP.NET
 
@@ -45,4 +40,4 @@ En Visual Studio, puede seleccionar de una lista de análisis de código *conjun
 
     - Seleccione  **\<examinar >** especificar una regla personalizada existente conjunto que no está en la lista.
 
-    - Defina un conjunto de reglas personalizado. Para obtener más información, consulte [crear conjuntos de reglas personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    - Definir una [conjunto de reglas personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
