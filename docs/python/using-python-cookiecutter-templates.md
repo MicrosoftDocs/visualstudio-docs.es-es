@@ -1,27 +1,27 @@
 ---
-title: "Extensión CookieCutter para Python en Visual Studio | Microsoft Docs"
-description: "Visual Studio admite la extensión gráfica Cookiecutter para detectar plantillas del código de Python y crear proyectos a partir de ellas."
-ms.custom: 
+title: Extensión CookieCutter para Python | Microsoft Docs
+description: Visual Studio admite la extensión gráfica Cookiecutter para detectar plantillas del código de Python y crear proyectos a partir de ellas.
+ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96590d2856d14b8c74a9c30f73e3a933cf572164
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 
@@ -35,7 +35,7 @@ Una vez instalado, seleccione **View > Cookiecutter Explorer** (Ver > Explorador
 
 ## <a name="cookiecutter-workflow"></a>Flujo de trabajo Cookiecutter
 
-Trabajar con Cookiecutter es un proceso que implica explorar y seleccionar una plantilla, clonarla en la máquina local, configurar opciones y luego crear código a partir de esa plantilla, tal como se describe en las secciones siguientes.
+Trabajar con Cookiecutter es un proceso que implica explorar y seleccionar una plantilla, clonarla en el equipo local, configurar opciones y luego crear código a partir de esa plantilla, tal como se describe en las secciones siguientes.
 
 ### <a name="browsing-templates"></a>Exploración de plantillas
 
@@ -43,7 +43,7 @@ La página de inicio de Cookiecutter muestra una lista de plantillas para elegir
 
 | Agrupar | Description |
 | --- | --- |
-| Instalado | Plantillas que se han instalado en la máquina local. Cuando se usa una plantilla en línea, su repositorio se clona automáticamente en una subcarpeta de `~/.cookiecutters`. Puede eliminar una plantilla instalada seleccionada presionando **Supr**. |
+| Instalado | Plantillas que se han instalado en el equipo local. Cuando se usa una plantilla en línea, su repositorio se clona automáticamente en una subcarpeta de `~/.cookiecutters`. Puede eliminar una plantilla instalada seleccionada presionando **Supr**. |
 | Se recomienda | Plantillas cargadas desde la fuente recomendada. Microsoft mantiene la fuente predeterminada. Consulte [Opciones de Cookiecutter](#cookiecutter-options) a continuación para más información sobre cómo personalizar la fuente. |
 | GitHub | Resultados de búsqueda de GitHub de la palabra clave cookiecutter. Los resultados de GitHub vuelven paginados; si hay más resultados disponibles, aparece **Load More** (Cargar más) al final de la lista. |
 | Personalizados | Cuando se especifica una ubicación personalizada en el cuadro de búsqueda, aparece en este grupo. Puede escribir una ruta de acceso completa al repositorio de GitHub, o la ruta de acceso completa a una carpeta de su disco local. |
@@ -52,7 +52,7 @@ La página de inicio de Cookiecutter muestra una lista de plantillas para elegir
 
 Al seleccionar una plantilla y luego hacer clic en **Next** (Siguiente), Cookiecutter hace una copia local con la que trabaja.
 
-Si selecciona una plantilla de los grupos **Recomendado** o **GitHub**, o escribe una URL personalizada en el cuadro de búsqueda y selecciona esa plantilla, esta se clona e instala en su máquina local. Si esa plantilla se instaló en una sesión anterior de Visual Studio, se elimina automáticamente y se clona la versión más reciente.
+Si selecciona una plantilla de los grupos **Recomendado** o **GitHub**, o escribe una URL personalizada en el cuadro de búsqueda y selecciona esa plantilla, esta se clona e instala en el equipo local. Si esa plantilla se instaló en una sesión anterior de Visual Studio, se elimina automáticamente y se clona la versión más reciente.
 
 Si selecciona una plantilla del grupo **Instalado** o escribe una ruta de acceso personalizada a una carpeta en el cuadro de búsqueda y seleccione esa plantilla, Visual Studio carga esa plantilla sin clonarla.
 
@@ -207,7 +207,7 @@ Algunas plantillas pueden usar scripts posteriores a la generación que no son c
 
 ### <a name="hook-script-not-supported-on-windows"></a>Script de enlace no admitido en Windows
 
-Si el script posterior es `.sh`, puede que no esté asociado con una aplicación de su máquina de Windows. Es posible que vea un diálogo de Windows que le pide que busque una aplicación compatible en la Tienda Windows.
+Si el script posterior es `.sh`, puede que no esté asociado con una aplicación del equipo Windows. Es posible que vea un diálogo de Windows que le pide que busque una aplicación compatible en la Tienda Windows.
 
 ### <a name="templates-with-known-issues"></a>Plantillas con problemas conocidos
 

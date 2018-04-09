@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2dac5f48f69ce00ae914929638f08cf35f5a96ac
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guía de productividad de Visual Studio 2017 para desarrolladores de .NET
 
@@ -31,12 +31,7 @@ Si anteriormente usaba otro IDE o entorno de codificación, es posible que la in
 - [HotKeys for Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![Galería de extensiones de Visual Studio](../ide/media/VSIDE_Productivity_Extensibility.png)
-
-Estos son accesos directos populares de Visual Studio. 
-
-> [!NOTE]
-> Algunas extensiones desenlazan los enlaces de teclado predeterminados de Visual Studio, por lo que es necesario restaurarlos para usar los comandos que aparecen a continuación. Para restaurar los enlaces de teclado a los valores predeterminados de Visual Studio, vaya a: **Herramientas > Importar y exportar configuración... > Restablecer todas las configuraciones** o **Herramientas > Opciones > Teclado > Restablecer**.
+Estos son accesos directos populares de Visual Studio: 
 
 | Métodos abreviados (todos los perfiles) | Comando | Description |
 |-|-|-|
@@ -52,6 +47,9 @@ Estos son accesos directos populares de Visual Studio.
 | **Ctrl+F5** | Ejecutar sin depurar | Ejecutar la aplicación localmente sin depuración |
 | **Ctrl+K,D** (perfil predeterminado) o **Ctrl+E,D** (perfil de C#) | Dar formato al documento | Limpiar el formato de las infracciones en el archivo según la configuración de nueva línea, espaciado y sangría |
 | **Ctrl+\\,E** (perfil predeterminado) o **Ctrl+W,E** (perfil de C#) | Ver lista de errores | Ver todos los errores en el documento, proyecto o solución |
+
+> [!NOTE]
+> Algunas extensiones desenlazan los enlaces de teclado de Visual Studio predeterminados. Para usar los siguientes comandos, restaure los enlaces de teclado a los valores predeterminados de Visual Studio. Para ello, vaya a: **Herramientas > Importar y exportar configuración... > Restablecer todas las configuraciones** o **Herramientas > Opciones > Teclado > Restablecer**.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Necesito una manera de desplazarme rápidamente a los archivos o tipos.
 Visual Studio 2017 tiene una característica denominada _Ir a todo_ (**Ctrl+T**). Ir a todo permite saltar rápidamente a cualquier archivo, tipo, miembro o declaración de símbolo.

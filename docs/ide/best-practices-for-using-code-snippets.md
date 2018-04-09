@@ -1,11 +1,11 @@
 ---
-title: "Procedimientos recomendados para usar fragmentos de código | Microsoft Docs"
-ms.custom: 
+title: Procedimientos recomendados para usar fragmentos de código | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 
@@ -33,7 +33,7 @@ Normalmente, el fragmento de código Try...Catch bloquea catch y vuelve a inicia
 
 Al adaptar las ubicaciones de archivo a la aplicación, debe tener en cuenta lo siguiente:
 
-- Encontrar una ubicación accesible. Es posible que los usuarios no tengan acceso a la carpeta Archivos de programa del equipo, por lo que puede que no sirva almacenar archivos con los archivos de aplicación.
+- Encontrar una ubicación accesible. Es posible que los usuarios no tengan acceso a la carpeta *Archivos de programa* del equipo, por lo que puede que no sirva almacenar archivos con los archivos de aplicación.
 
 - Encontrar una ubicación segura. Almacenar archivos en la carpeta raíz (*C:\\*) no es seguro. Para los datos de aplicaciones, le recomendamos la carpeta *Application Data*. Para los datos de usuarios individuales, la aplicación puede crear un archivo para cada usuario en la carpeta *Documentos*.
 
@@ -74,5 +74,5 @@ Los fragmentos de código de IntelliSense instalados por Visual Studio no consti
 ## <a name="see-also"></a>Vea también
 
 [Fragmentos de código de IntelliSense de Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Proteger aplicaciones](../ide/securing-applications.md)  
+[Protección de aplicaciones](../ide/securing-applications.md)  
 [Fragmentos de código](../ide/code-snippets.md)

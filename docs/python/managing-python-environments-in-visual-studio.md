@@ -1,26 +1,26 @@
 ---
-title: "Administración de intérpretes y entornos de Python en Visual Studio | Microsoft Docs"
-description: "Se describe cómo usar la ventana Entornos de Python en Visual Studio para administrar entornos globales y virtuales, configurar entornos personalizados, instalar intérpretes de Python, instalar paquetes, establecer rutas de búsqueda y administrar entornos para proyectos de Visual Studio."
-ms.custom: 
-ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+title: Administración de intérpretes y entornos de Python | Microsoft Docs
+description: Se describe cómo usar la ventana Entornos de Python en Visual Studio para administrar entornos globales y virtuales, configurar entornos personalizados, instalar intérpretes de Python, instalar paquetes, establecer rutas de búsqueda y administrar entornos para proyectos de Visual Studio.
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Administración de entornos de Python en Visual Studio
 
@@ -35,6 +35,8 @@ En Visual Studio en Windows, es en la ventana [Entornos de Python](#managing-pyt
 
 También debe tener en cuenta que no puede administrar los entornos para el código de Python que se abre solo como carpeta con el comando **Archivo > Abrir > Carpeta**. En su lugar, [cree un proyecto de Python a partir del código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md) para disfrutar de las características del entorno de Visual Studio.
 
+Si desea instalar paquetes en un entorno, consulte la [pestaña Paquetes](python-environments-window-tab-reference.md#packages-tab).
+
 ## <a name="types-of-environments"></a>Tipos de entornos
 
 ### <a name="global-environments"></a>Entornos globales
@@ -47,7 +49,7 @@ Los entornos globales están disponibles para todos los proyectos del equipo. En
 
 Debido a que los paquetes instalados en un entorno global están disponibles para todos los proyectos que lo usan, puede haber conflictos cuando dos proyectos requieren paquetes incompatibles o versiones diferentes del mismo paquete. Los entornos virtuales evitan estos conflictos utilizando el intérprete y la biblioteca estándar de un entorno global pero manteniendo sus propios almacenes de paquetes en carpetas aisladas.
 
-En Visual Studio, puede crear un entorno virtual para un proyecto específico, que se almacena en una subcarpeta en el proyecto (consulte [Creating virtual environments](selecting-a-python-environment-for-a-project.md#creating-a-virtual-environment) [Creación de entornos virtuales]). El archivo del proyecto también identifica el entorno virtual. Visual Studio también registra todos los paquetes que instale en ese entorno virtual en el archivo `requirements.txt` del proyecto. Si luego comparte el proyecto y otros desarrolladores lo abren en sus equipo, Visual Studio ofrece la opción de volver a crear el entorno virtual.
+En Visual Studio, puede crear un entorno virtual para un proyecto específico, que se almacena en una subcarpeta en el proyecto. Visual Studio proporciona un comando para generar un archivo `requirements.txt` desde el entorno virtual, lo que facilita volver a crear el entorno en otros equipos. Para más información, consulte [Uso de los entornos virtuales](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ### <a name="conda-environments"></a>Entornos de coda
 
@@ -87,7 +89,7 @@ Debajo de la lista de entornos hay un selector desplegable para las opciones **I
 
 ### <a name="what-if-no-environments-appear"></a>¿Qué ocurre si no aparece ningún entorno?
 
-Si no aparece ningún entorno, significa que Visual Studio no pudo detectar ninguna instalación de Python en las ubicaciones estándar. Por ejemplo, es posible que haya instalado Visual Studio 2017 pero también que haya borrado todas las opciones de intérprete en las opciones del instalador de la carga de trabajo de Python. De manera similar, es posible que haya instalado Visual Studio 2015 o una versión anterior, pero que no haya instalado un intérprete de manera manual (consulte [Selección e instalación de los intérpretes de Python](installing-python-interpreters.md)).
+Si no aparece ningún entorno, significa que Visual Studio no pudo detectar ninguna instalación de Python en las ubicaciones estándar. Por ejemplo, es posible que haya instalado Visual Studio 2017 pero también que haya borrado todas las opciones de intérprete en las opciones del instalador de la carga de trabajo de Python. De manera similar, es posible que haya instalado Visual Studio 2015 o una versión anterior, pero que no haya instalado un intérprete de manera manual (consulte [Instalación de intérpretes de Python](installing-python-interpreters.md)).
 
 Si sabe que tiene un intérprete de Python en el equipo pero Visual Studio (cualquier versión) no lo detectó, use el comando **+ Personalizado...** para especificar manualmente la ubicación. Consulte la sección siguiente, [Identificación manual de un entorno existente](#manually-identifying-an-existing-environment).
 

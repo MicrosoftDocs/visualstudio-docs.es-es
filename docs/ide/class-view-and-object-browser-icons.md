@@ -1,11 +1,12 @@
 ---
 title: Iconos de la vista de clases y del examinador de objetos | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - icons, in Object Browser
@@ -19,12 +20,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: caac984e7d281740c322d535bebe84032c15a38e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f0a4371ae086e158f3fd7025e9867ffb99c92090
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 
@@ -46,7 +48,7 @@ En **Vista de clases** y **Examinador de objetos** se muestran iconos que repres
 |![Símbolo de mapa](../ide/media/vxmap_icon.gif "vxMap_Icon")|Asignación|![Símbolo de signo de exclamación de error](../ide/media/vxerror_icon.gif "vxError_Icon")|Desconocido|  
 |![Símbolo de reenvío de tipos](../ide/media/ob_type_forward.gif "ob_type_forward")|Reenvío de tipos|||  
 
-## <a name="signal-icons"></a>iconos de señal
+## <a name="signal-icons"></a>Iconos de señal
 
 Los siguientes iconos de señal se aplican a todos los iconos anteriores e indican su accesibilidad.
 

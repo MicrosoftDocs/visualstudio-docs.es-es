@@ -1,13 +1,13 @@
 ---
-title: "Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic | Microsoft Docs"
-description: "Aprenda a crear una aplicación de Windows Forms en Visual Studio con Visual Basic, paso a paso."
-ms.custom: 
+title: Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic | Microsoft Docs
+description: Aprenda a crear una aplicación de Windows Forms en Visual Studio con Visual Basic, paso a paso.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.devlang: vb
 author: TerryGLee
@@ -17,11 +17,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: d3a6593a6e459b16541358a0e89dc5bc21fde982
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 En esta breve introducción al entorno de desarrollo integrado de Visual Studio, creará una sencilla aplicación de Visual Basic que tiene una interfaz de usuario (IU) basada en Windows.
@@ -50,31 +50,31 @@ Tras seleccionar la plantilla de proyecto de Visual Basic y asignar un nombre al
 
      ![Clic en Cuadro de herramientas para abrir la ventana Cuadro de herramientas](../ide/media/vb-toolbox-toolwindow.png)  
 
-     Si no ve la opción flotante Cuadro de herramientas, puede abrirla desde la barra de menús. Para ello, haga clic en **Ver** > **Cuadro de herramientas**. También puede presionar **CTRL**+**Alt**+**X**.
+     Si no ve la opción flotante **Cuadro de herramientas**, puede abrirla desde la barra de menús. Para ello, haga clic en **Ver** > **Cuadro de herramientas**. También puede presionar **CTRL**+**Alt**+**X**.
 
-2. Haga clic en el icono de **anclaje** para acoplar la ventana del cuadro de herramientas.
+2. Haga clic en el icono de **anclaje** para acoplar la ventana **Cuadro de herramientas**.
 
      ![Clic en el icono de anclaje para anclar la ventana del cuadro de herramientas al IDE](../ide/media/vb-pin-the-toolbox-window.png)  
 3. Haga clic en el control **Botón** y arrástrelo al formulario.
 
      ![Agregar un botón al formulario](../ide/media/vb-add-a-button-to-form1.png)
 
-4. En la sección **Apariencia** de la ventana **Propiedades**, escriba "Click this" y presione **ENTRAR**.
+4. En la sección **Apariencia** de la ventana **Propiedades**, escriba `Click this` y presione **ENTRAR**.
 
      ![Adición de texto al botón en el formulario](../ide/media/vb-button-control-text.png)  
 
-     Si no ve la ventana Propiedades, puede abrirla desde la barra de menús. Para ello, haga clic en **Ver** > **Ventana Propiedades**. También puede presionar **F4**.
+     Si no ve la ventana **Propiedades**, puede abrirla desde la barra de menús. Para ello, haga clic en **Ver** > **Ventana Propiedades**. También puede presionar **F4**.
 
-5. En la sección **Diseño** de la ventana **Propiedades**, cambie el nombre de "Button1" a "btnClickThis" y, tras ello, presione **ENTRAR**.
+5. En la sección **Diseño** de la ventana **Propiedades**, cambie el nombre de **Button1** a `btnClickThis` y, tras ello, presione **ENTRAR**.
 
      ![Adición de una función al botón en el formulario](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>Agregar una etiqueta al formulario
 Ya hemos agregado un control de botón para crear una acción, así que ahora vamos a agregar un control de etiqueta al que enviar texto.
 
-1. Seleccione el control **Etiqueta** desde la ventana Cuadro de herramientas, arrástrelo hasta el formulario y colóquelo debajo del botón **Click this**.
+1. Seleccione el control **Etiqueta** desde la ventana **Cuadro de herramientas**, arrástrelo hasta el formulario y colóquelo debajo del botón **Click this**.
 
-2. En la sección **Diseño** de la ventana **Propiedades**, cambie el nombre de "Label1" a "lblHelloWorld" y, tras ello, presione **ENTRAR**.
+2. En la sección **Diseño** de la ventana **Propiedades**, cambie el nombre de **Label1** a `lblHelloWorld` y, tras ello, presione **ENTRAR**.
 
 ### <a name="add-code-to-the-form"></a>Agregar código al formulario
 
@@ -91,9 +91,9 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
 
      ![Clic en Iniciar para depurar y ejecutar la aplicación](../ide/media/vb-click-start-hello-world.png)
 
-   Ocurrirán varias cosas. En el IDE de Visual Studio, se abrirá la ventana de herramientas de diagnóstico y, también, una ventana de salida. Pero fuera del IDE se abre un cuadro de diálogo Form1. En él verá el botón **Click this** y el texto "Label1".
+   Ocurrirán varias cosas. En el IDE de Visual Studio, se abrirá la ventana **Herramientas de diagnóstico** y, también, una ventana **Salida**. Pero fuera del IDE se abre un cuadro de diálogo **Form1**. En él verá el botón **Click this** y el texto **Label1**.
 
-2. Haga clic en el botón **Click this** en el cuadro de diálogo **Form1**. Observe cómo el texto "Label1" cambia a "Hello World!".
+2. Haga clic en el botón **Click this** en el cuadro de diálogo **Form1**. Observe cómo el texto **Label1** cambia a **Hello World!**.
 
     ![Cuadro de diálogo Form1 con el texto Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 

@@ -1,10 +1,10 @@
 ---
 title: Agregar compatibilidad con otros lenguajes en el editor de Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - syntax colorization
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 
+caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -23,11 +23,11 @@ ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 Obtenga información sobre la manera en que el editor de Visual Studio admite la lectura y la navegación por los distintos lenguajes de computación y sobre cómo puede agregar compatibilidad con otros lenguajes en el editor de Visual Studio.  
@@ -44,7 +44,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 |Bat|F#|Java|Markdown|Rust|Visual Basic|  
 |Clojure|Ir|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
-|CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
+|CoffeeScript|HTML|LESS|Plantillas de|SQL|VBNet|  
 |CSS|INI|LUA|R|Swift|XML|  
 |Docker|Jade|Make|Ruby|TypeScript|YAML|  
   
@@ -66,28 +66,28 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
   
 -   C#  
   
- Todos estos tipos de archivo tienen las características que se han descrito anteriormente aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.  
+Todos estos tipos de archivo tienen las características que se han descrito anteriormente aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.  
   
 ## <a name="adding-support-for-non-supported-languages"></a>Agregar compatibilidad con idiomas no admitidos  
  Visual Studio 2015 Update 1 y versiones posteriores proporcionan compatibilidad de lenguaje en el editor mediante el uso de [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje de programación favorito no se admite actualmente en el editor de Visual Studio, busque en primer lugar en la Web, ya que es posible que exista un lote de TextMate para el lenguaje. Si no encuentra uno, puede agregar usted mismo compatibilidad con él en Visual Studio 2015 Update 1 o versiones posteriores. Para ello, cree un modelo de lote de TextMate para gramáticas del lenguaje y fragmentos de código.  
   
  Agregue todas las gramáticas TextMate nuevas para Visual Studio en la carpeta siguiente:  
   
- %userprofile%\\.vs\Extensions  
+ *%userprofile%\\.vs\Extensions*  
   
  En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su situación:  
   
 |Nombre de carpeta|Description|  
 |-----------------|-----------------|  
-|\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, **\Matlab**.|  
-|\Syntaxes|Carpeta de la gramática. Contiene los archivos .json de la gramática para el lenguaje, como **Matlab.json**.|  
-|\Snippets|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|  
+|\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, *\Matlab*.|  
+|*\Syntaxes*|Carpeta de la gramática. Contiene los archivos .*json* de la gramática para el lenguaje, como *Matlab.json*.|  
+|*\Snippets*|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|  
   
- En Windows, %userprofile% se resuelve como la ruta de acceso c:\Usuarios\\*\<nombre de usuario>*. Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.  
+ En Windows, *%userprofile%* se resuelve como la ruta de acceso *c:\Usuarios\\*\<nombre de usuario>*.* Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.  
   
  Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate. Introducción a las gramáticas de lenguaje: cómo agregar resaltado de sintaxis de código origen insertado en HTML) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de Textmate).  
   
 ## <a name="see-also"></a>Vea también  
- [Visual Studio 2013 Navigate To Improvements](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)  (Mejoras en Navegar a de Visual Studio 2013)  
+ [Visual Studio 2013 Navigate To improvements](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)  (Mejoras en Navegar a de Visual Studio 2013)  
  [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)   
  [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)

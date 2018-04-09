@@ -1,26 +1,28 @@
 ---
 title: Compilar y generar en Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
 
@@ -28,7 +30,7 @@ La ejecución de una compilación crea ensamblados y aplicaciones ejecutables a 
 
 Al compilar el código con frecuencia, se pueden identificar rápidamente errores en tiempo de compilación, como sintaxis incorrecta, palabras clave mal escritas y errores de coincidencia de tipos. También es posible detectar y corregir rápidamente errores en tiempo de ejecución, como errores lógicos y errores semánticos, si se compilan y ejecutan con frecuencia versiones de depuración del código.  
 
-Una compilación correcta es básicamente una validación de que el código fuente de la aplicación contiene una sintaxis correcta y de que se han resuelto todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Esto genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.md) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez haya probado por completo la aplicación, podrá compilar una versión e implementarla para sus clientes. Para obtener una introducción a este proceso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
+Una compilación correcta es básicamente una validación de que el código fuente de la aplicación contiene una sintaxis correcta y de que se han resuelto todas las referencias estáticas a bibliotecas, ensamblados y otros componentes. Esto genera un archivo ejecutable de aplicación que se puede probar para asegurarse de que funciona correctamente en un [entorno de depuración](../debugger/index.md) y en una serie de pruebas manuales y automatizadas para [validar la calidad del código](../test/improve-code-quality.md). Una vez haya probado por completo la aplicación, podrá compilar una versión e implementarla para sus clientes. Para una introducción a este proceso, vea [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md).  
 
 En la familia de productos de Visual Studio, hay tres métodos que puede usar para compilar una aplicación: el IDE de Visual Studio, las herramientas de línea de comandos de MSBuild y Team Foundation Build en Visual Studio Team Services:
  
@@ -51,7 +53,7 @@ Después, vea [Compilar y limpiar proyectos y soluciones en Visual Studio](build
 De ahí en adelante, puede explorar otras tareas:
 - [Descripción de las configuraciones de compilación](understanding-build-configurations.md)
 - [Descripción de las plataformas de compilación](understanding-build-platforms.md)
-- [Administrar propiedades de soluciones y proyectos](managing-project-and-solution-properties.md)  
+- [Administración de propiedades de soluciones y proyectos](managing-project-and-solution-properties.md)  
 - Especificar eventos de compilación en [C#](how-to-specify-build-events-csharp.md) y [Visual Basic](how-to-specify-build-events-visual-basic.md) 
 - [Establecer las opciones de compilación](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Compilar varios proyectos en paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  

@@ -1,15 +1,15 @@
 ---
-title: "Trabajo con Python en Visual Studio, paso 4: depuración | Microsoft Docs"
-description: "Paso 4 de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata cómo ejecutar código de Python en el depurador."
-ms.custom: 
+title: 'Trabajo con Python, paso 4: depuración | Microsoft Docs'
+description: Paso 4 de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata cómo ejecutar código de Python en el depurador.
+ms.custom: mvc
 ms.date: 03/08/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8c9cf775bb7edbdb51f7eb5ce6994fedaee13c9f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 49f29f310997b685369142e21cc71df8a21871cd
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
