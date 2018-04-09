@@ -1,7 +1,7 @@
 ---
 title: Ejecutar un modelo de TensorFlow en la nube
-description: "ejecutar un modelo de TensorFlow en una máquina virtual de aprendizaje profundo de azure"
-keywords: "ai, visual studio, máquina virtual de aprendizaje profundo de azure"
+description: ejecutar un modelo de TensorFlow en una máquina virtual de aprendizaje profundo de azure
+keywords: ai, visual studio, máquina virtual de aprendizaje profundo de azure
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -12,11 +12,11 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Entrenar un modelo de TensorFlow en la nube
 

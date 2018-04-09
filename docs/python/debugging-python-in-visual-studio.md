@@ -1,27 +1,27 @@
 ---
-title: "Depuración de código de Python en Visual Studio | Microsoft Docs"
-description: "Tutorial sobre las características de depuración de Visual Studio que son específicas del código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva."
-ms.custom: 
+title: Depuración de código de Python | Microsoft Docs
+description: Tutorial sobre las características de depuración de Visual Studio que son específicas del código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
+ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: a9e8cf75bcdf11994f549be3ef47d5a95868eeef
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-your-python-code"></a>Depuración del código de Python
 
@@ -49,7 +49,7 @@ Vea también los siguientes artículos de depuración específicos para distinto
 
 ## <a name="basic-debugging"></a>Depuración básica
 
-El flujo de trabajo de depuración básica conlleva configurar puntos de interrupción, recorrer paso a paso el código, inspeccionar valores y administrar excepciones, tal y como se describe en las secciones siguientes. Para obtener información detallada sobre el depurador de Visual Studio, vea [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md) (Depuración en Visual Studio).
+El flujo de trabajo de depuración básica conlleva configurar puntos de interrupción, recorrer paso a paso el código, inspeccionar valores y administrar excepciones, tal y como se describe en las secciones siguientes.
 
 Puede iniciar una sesión de depuración con el comando **Depurar > Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla F5. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el Explorador de soluciones) con el entorno del proyecto activo y los argumentos de línea de comandos o las rutas de búsqueda que se han especificado en las propiedades del proyecto (vea [Opciones de depuración de proyectos](#project-debugging-options)). **Visual Studio 2017, versión 15.6** y posteriores, le avisa si no tiene un archivo de inicio configurado; en las versiones anteriores, es posible que se abra una ventana de salida con el intérprete de Python en ejecución o que la ventana de salida aparezca brevemente y luego desaparezca. En cualquier caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
 
@@ -198,3 +198,7 @@ Tenga en cuenta que las ventanas del depurador estándar, como Procesos, Subproc
 La ventana Depuración interactiva tiene su propio conjunto de opciones, a las que puede acceder en **Herramientas > Opciones > Herramientas de Python > Ventana Depuración interactiva**. A diferencia de la ventana interactiva de Python habitual, que tiene una instancia independiente para cada entorno Python, solo haya una ventana Depuración interactiva, que siempre usa el intérprete de Python para el proceso que se depura. Vea [Opciones: Opciones de depuración](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Opciones de la ventana Depuración interactiva](media/debugging-interactive-options.png)
+
+## <a name="see-also"></a>Vea también
+
+Para obtener información detallada sobre el depurador de Visual Studio, vea [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md) (Depuración en Visual Studio).

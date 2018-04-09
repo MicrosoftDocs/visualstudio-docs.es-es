@@ -1,34 +1,34 @@
 ---
-title: "Selección e instalación de los intérpretes de Python | Microsoft Docs"
-description: "Una lista completa de los intérpretes de Python compatibles con Visual Studio, con instrucciones breves sobre dónde encontrar sus instaladores."
-ms.custom: 
+title: Selección e instalación de los intérpretes de Python | Microsoft Docs
+description: Una lista completa de los intérpretes de Python compatibles con Visual Studio, con instrucciones breves sobre dónde encontrar sus instaladores.
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="installing-python-interpreters"></a>Instalación de intérpretes de Python
+# <a name="installing-python-interpreters"></a>Instalación de los intérpretes de Python
 
 De forma predeterminada, la instalación de la carga de trabajo de desarrollo de Python en Visual Studio de 2017 también instala Python 3 (64 bits). Puede optar por instalar las versiones de 32 bits y 64 bits de Python 2, Python 3, Anaconda 2 y Anaconda 3, como se describe en [Instalación](installing-python-support-in-visual-studio.md).
 
-También puede instalar manualmente cualquiera de los intérpretes que aparecen en la tabla siguiente fuera del Instalador de Visual Studio. Por ejemplo, si instaló Anaconda 3 antes de instalar Visual Studio, no necesita volver a instalarlo mediante el Instalador de Visual Studio.
+También puede instalar manualmente cualquiera de los intérpretes que aparecen en la tabla siguiente fuera del Instalador de Visual Studio. Por ejemplo, si instaló Anaconda 3 antes de instalar Visual Studio, no necesita volver a instalarlo mediante el instalador de Visual Studio.
 
-Para Visual Studio 2015 y versiones anteriores, debe instalar manualmente uno de los intérpretes.
+Para **Visual Studio 2015 y versiones anteriores**, debe instalar manualmente uno de los intérpretes.
 
 Visual Studio (todas las versiones) detecta automáticamente cada intérprete de Python instalado y su entorno mediante la comprobación del registro (siguiendo [PEP 514: registro de Python en el Registro de Windows](https://www.python.org/dev/peps/pep-0514/)).
 
@@ -67,4 +67,4 @@ Al seguir este proceso, se asegura de que las entradas del Registro que identifi
 - [Selección de un intérprete para un proyecto](selecting-a-python-environment-for-a-project.md)
 - [Uso de requirements.txt para las dependencias](managing-required-packages-with-requirements-txt.md)
 - [Rutas de acceso de búsqueda](search-paths.md)
-- [Python Environments window reference](python-environments-window-tab-reference.md) (Referencia de ventana Entornos de Python)
+- [Referencia de ventana Entornos de Python](python-environments-window-tab-reference.md)

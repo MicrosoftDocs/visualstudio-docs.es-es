@@ -1,15 +1,15 @@
 ---
-title: "Trabajo con Python en Visual Studio, paso 0: instalación | Microsoft Docs"
-description: "Paso 0 (requisitos previos) de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata cómo instalar la compatibilidad de Python en Visual Studio."
-ms.custom: 
+title: 'Trabajo con Python, paso 0: instalación | Microsoft Docs'
+description: Paso 0 (requisitos previos) de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata cómo instalar la compatibilidad de Python en Visual Studio.
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 30e3341db1543690d39f5144ed67894b1fb65c4d
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: af6bfa2e1739e60e6c0a5eca625f358b528ebd85
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalación de la compatibilidad con Python en Visual Studio
 

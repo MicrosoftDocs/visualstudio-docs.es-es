@@ -7,7 +7,7 @@ ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: ''
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Generar perfiles de rendimiento de la aplicación en Visual Studio
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar la pestaña **Uso de CPU** de las herramientas de diagnóstico para obtener datos de rendimiento para la aplicación. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
@@ -43,6 +43,12 @@ En este tema, trataremos de analizar el uso de CPU en el flujo de trabajo de dep
 
 > [!NOTE]
 > Para .NET Core y ASP.NET Core, la herramienta Uso de CPU actualmente no proporciona resultados precisos con PBD portátiles. Use PBD completos en su lugar.
+
+En este tutorial va a:
+
+> [!div class="checklist"]
+> * Recopilar datos de Uso de CPU
+> * Analizar datos de uso de CPU
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Paso 1: Recopilar datos de generación de perfiles 
   
@@ -155,9 +161,10 @@ Utilice el cuadro de búsqueda para localizar un nodo que esté buscando y, lueg
 
 > [!TIP]
 > Si genera perfiles de un código externo que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para obtener más información sobre cómo asegurarse de que tiene los archivos necesarios, consulte [Especificar archivos de símbolos (.pdb) y de origen en el depurador](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
-  
-## <a name="see-also"></a>Vea también  
- [Uso de memoria](../profiling/memory-usage.md)  
- [Uso de CPU](../profiling/cpu-usage.md)  
- [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)
+
+## <a name="next-steps"></a>Pasos siguientes
+
+En este tutorial, ha aprendido cómo recopilar y analizar los datos de uso de la CPU. Si ha completado el [paseo por el generador de perfiles](../profiling/profiling-feature-tour.md), puede que desee obtener una visión rápida de cómo analizar el uso de la memoria en las aplicaciones.
+
+> [!div class="nextstepaction"]
+> [Analizar el uso de memoria](../profiling/memory-usage.md) 

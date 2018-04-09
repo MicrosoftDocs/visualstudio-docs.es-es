@@ -1,26 +1,26 @@
 ---
-title: "Selección de un entorno para un proyecto | Microsoft Docs"
-description: "En el Explorador de soluciones de Visual Studio, puede asignar un intérprete de Python específico (entorno) para usarlo siempre en un proyecto determinado, sin considerar el entorno predeterminado. También puede crear y administrar los entornos virtuales."
-ms.custom: 
-ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+title: Selección de un entorno para un proyecto | Microsoft Docs
+description: En el Explorador de soluciones de Visual Studio, puede asignar un intérprete de Python específico (entorno) para usarlo siempre en un proyecto determinado, sin considerar el entorno predeterminado. También puede crear y administrar los entornos virtuales.
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f422cc60638b7eed4a5b42516e7496c4a6f6209
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 28070c9864162c7af5c68644dedb296107af81d0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Selección de un entorno y un intérprete de Python para usarlo en un proyecto
 
@@ -30,11 +30,7 @@ Todos los proyectos Python nuevos en Visual Studio están configurados inicialme
 
 ![Entorno de Python predeterminado global en el Explorador de soluciones](media/environments-project.png)
 
-Puede hacer que haya otros entornos disponibles para el proyecto, incluidos los entornos virtuales. Solo se puede activar un entorno en un momento dado.
-
-## <a name="using-global-environments"></a>Uso de los entornos globales
-
-Para hacer que entornos globales específicos estén disponibles para el proyecto (incluidos los entornos de conda [identificados de manera manual](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)), haga clic con el botón derecho en el nodo **Entornos de Python** y seleccione **Agregar o quitar entornos de Python...**. En la lista que aparece, seleccione los entornos deseados:
+Para cambiar el entorno para un proyecto, haga clic en el nodo **Entornos de Python** y seleccione **Agregar o quitar entornos de Python...** . En la lista mostrada, que incluye entornos globales, virtuales y de conda, seleccione todos los que desee que aparezca en el nodo **Entornos de Python**:
 
 ![Cuadro de diálogo Add/Remove Python Environments (Agregar o quitar entornos de Python)](media/environments-add-remove.png)
 
@@ -42,29 +38,33 @@ Una vez que seleccione **Aceptar**, todos los entornos seleccionados aparecen en
 
 ![Varios entornos de Python en el Explorador de soluciones](media/environments-project-multiple.png)
 
-Para activar un entorno distinto, haga clic con el botón derecho en el nombre del entorno y seleccione **Activar entorno**. La opción se guarda con el proyecto y ese entorno se abrirá cada vez que abra el proyecto.
+Para activar rápidamente un entorno distinto, haga clic con el botón derecho en el nombre de ese entorno y seleccione **Activar entorno**. La opción se guarda con el proyecto y ese entorno se abrirá cada vez que abra el proyecto. Si desactiva todas las opciones en el cuadro de diálogo **Agregar o quitar entornos de Python**, Visual Studio activa el entorno predeterminado global.
 
-Si desactiva todas las opciones en el cuadro de diálogo **Agregar o quitar entornos de Python**, Visual Studio activa el entorno predeterminado global.
+El menú contextual del nodo **Entornos de Python** también proporciona comandos adicionales:
+
+| Comando | Description |
+| --- | --- |
+| Agregar entorno virtual... | Inicia el proceso de creación de un nuevo entorno virtual en el proyecto. Consulte [Creación de un entorno virtual](#create-a-virtual-environment). |
+| Agregar entorno virtual existente... | Le pide que seleccione una carpeta que contenga un entorno virtual y lo agrega a la lista bajo **Entornos de Python**, pero no lo activa. Consulte [Activación de un entorno virtual existente](#activate-an-existing-virtual-environment). |
+| Crear entorno de Conda... | Cambia a la *ventana* **Entornos de Python** en la que se escribe un nombre para el entorno y se especifica su intérprete básico. |
 
 ## <a name="using-virtual-environments"></a>Uso de los entornos virtuales
 
-Un entorno virtual es una combinación única de un intérprete de Python específico y un conjunto de bibliotecas específico distinto de otros entornos globales y de conda. Por lo general, usa un entorno virtual cuando tiene necesidades específicas en un proyecto y no quiere modificar otros entornos para cumplir con esas necesidades.
+Un entorno virtual es una combinación única de un intérprete de Python específico y un conjunto de bibliotecas específico distinto de otros entornos globales y de conda. Un entorno virtual es específico a un proyecto y se mantiene en una carpeta de proyecto. Esta carpeta contiene las bibliotecas instaladas del entorno junto con un archivo `pyvenv.cfg` que especifica la ruta de acceso al *intérprete básico* de ese entorno en otra parte del sistema de archivos. (Es decir, un entorno virtual no contiene una copia del intérprete, solo un vínculo a él). 
 
-Una vez que un entorno virtual se agrega al proyecto y aparece en la ventana **Python Environments** (Entornos de Python), puede activarlo como cualquier otro entorno y administrar sus paquetes.
+Una ventaja de usar un entorno virtual es que a medida que el proyecto se desarrolla a lo largo del tiempo, el entorno virtual siempre refleja las dependencias exactas del proyecto. (Por otra parte, un entorno global compartido, contiene cualquier número de bibliotecas independientemente de si se usan en el proyecto o no). A continuación, puede crear fácilmente un archivo `requirements.txt` desde el entorno virtual, que después se usa para volver a instalar esas dependencias en otro equipo de desarrollo o producción. Para más información, consulte [Managing required packages with requirements.txt](managing-required-packages-with-requirements-txt.md) (Administración de los paquetes requeridos con requirements.txt).
 
-Tenga en cuenta que un inconveniente de los entornos virtuales es que contienen rutas de acceso a archivos codificadas de forma rígida y, por tanto, no es fácil compartirlos o transportarlos a otros equipos de desarrollo. Afortunadamente, puede usar el archivo `requirements.txt` para permitir que los destinatarios del proyecto restauren fácilmente el entorno. Para más información, consulte [Managing required packages with requirements.txt](managing-required-packages-with-requirements-txt.md) (Administración de los paquetes requeridos con requirements.txt).
+Cuando abre un proyecto en Visual Studio que contiene un archivo `requirements.txt`, Visual Studio automáticamente le ofrece la opción de volver a crear el entorno virtual. En equipos donde no está instalado Visual Studio, como Azure App Service, puede usar `pip install -r requirements.txt` para restaurar los paquetes (este proceso se describe en [Administrar Python en Azure App Service](managing-python-on-azure-app-service.md)).
 
-### <a name="activating-an-existing-virtual-environment"></a>Activación de un entorno virtual existente
+Dado que un entorno virtual contiene una ruta de acceso codificada de forma rígida al intérprete básico y que puede volver a crear el entorno mediante `requirements.txt`, normalmente se omite toda la carpeta del entorno virtual del control de código fuente.
 
-Si ya creó un entorno virtual en otro lugar, puede activarlo para un proyecto como se indica a continuación:
+En las siguientes secciones se explica cómo activar un entorno virtual existente en un proyecto y cómo crear un nuevo entorno virtual.
 
-1. Haga clic con el botón derecho en **Entornos de Python** en el Explorador de soluciones y seleccione **Agregar entorno virtual existente...**.
+En Visual Studio, se puede activar un entorno virtual para un proyecto como cualquier otro a través del nodo **Entornos de Python** en el **Explorador de soluciones**.
 
-1. En el cuadro de diálogo **Examinar** que aparece, vaya a la carpeta que contiene el entorno virtual, selecciónela y, luego, seleccione **Aceptar**. Si Visual Studio detecta un archivo `requirements.txt` en ese entorno, preguntará si instalar esos paquetes.
+Una vez que un entorno virtual se agrega al proyecto, aparece en la ventana **Entornos de Python**. Puede activarlo después al igual que cualquier otro entorno así como administrar sus paquetes.
 
-1. Después de unos momentos, el entorno virtual aparece en el nodo **Entornos de Python** en el Explorador de soluciones. El entorno virtual no se activa de manera predeterminada, por lo que debe hacer clic con el botón derecho en él y seleccionar **Activar entorno**.
-
-### <a name="creating-a-virtual-environment"></a>Creación de un entorno virtual
+### <a name="create-a-virtual-environment"></a>Creación de un entorno virtual
 
 Puede crear un entorno virtual directamente desde Visual Studio como se indica a continuación:
 
@@ -87,13 +87,23 @@ Puede crear un entorno virtual directamente desde Visual Studio como se indica a
 >
 > En cualquier caso, el resultado es el mismo que si se usara el comando **Agregar entorno virtual existente...**.
 
+### <a name="activate-an-existing-virtual-environment"></a>Activación de un entorno virtual existente
+
+Si ya creó un entorno virtual en otro lugar, puede activarlo para un proyecto como se indica a continuación:
+
+1. Haga clic con el botón derecho en **Entornos de Python** en el Explorador de soluciones y seleccione **Agregar entorno virtual existente...**.
+
+1. En el cuadro de diálogo **Examinar** que aparece, vaya a la carpeta que contiene el entorno virtual, selecciónela y, luego, seleccione **Aceptar**. Si Visual Studio detecta un archivo `requirements.txt` en ese entorno, preguntará si instalar esos paquetes.
+
+1. Después de unos momentos, el entorno virtual aparece en el nodo **Entornos de Python** en el Explorador de soluciones. El entorno virtual no se activa de manera predeterminada, por lo que debe hacer clic con el botón derecho en él y seleccionar **Activar entorno**.
+
 ### <a name="remove-a-virtual-environment"></a>Eliminación de un entorno virtual
 
 1. En el Explorador de soluciones, haga clic con el botón derecho en el entorno virtual y seleccione **Quitar**.
 
 1. Visual Studio pregunta si desea quitar o eliminar el entorno virtual. Si selecciona **Quitar**, deja de estar disponible para el proyecto pero sigue en el sistema de archivos. Si selecciona **Eliminar**, se quita el entorno del proyecto y se elimina del sistema de archivos. El intérprete básico no se ve afectado.
 
-## <a name="viewing-installed-packages"></a>Visualización de los paquetes instalados
+## <a name="view-installed-packages"></a>Visualización de los paquetes instalados
 
 En el Explorador de soluciones, expanda cualquier nodo específico del entorno para ver rápidamente los paquetes que están instalados en ese entorno (lo que significa que puede importar esos paquetes y usarlos en el código cuando el entorno está activo):
 
@@ -115,4 +125,4 @@ Tenga en cuenta también que Visual Studio no admite actualmente el uso de `cond
 - [Administración de entornos de Python en Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Uso de requirements.txt para las dependencias](managing-required-packages-with-requirements-txt.md)
 - [Rutas de acceso de búsqueda](search-paths.md)
-- [Python Environments window reference](python-environments-window-tab-reference.md) (Referencia de ventana Entornos de Python)
+- [Referencia de ventana Entornos de Python](python-environments-window-tab-reference.md)

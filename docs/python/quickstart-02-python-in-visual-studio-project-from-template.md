@@ -1,90 +1,77 @@
 ---
-title: "Inicio rápido: Creación de un proyecto de Python con una plantilla en Visual Studio | Microsoft Docs"
-description: "Empiece a trabajar rápidamente con Python creando un proyecto de Visual Studio mediante una de las plantillas integradas."
-ms.custom: 
-ms.date: 03/08/2018
-ms.reviewer: 
-ms.suite: 
+title: 'Inicio rápido: Creación de un proyecto de Python con una plantilla | Microsoft Docs'
+description: En este inicio rápido, creará un proyecto de Visual Studio para Python utilizando la plantilla integrada para una aplicación básica de Flask.
+ms.custom: mvc
+ms.date: 03/22/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ab0f91022240d1fcf60bd6889ea9b2ec39f2db3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2d4d81676d9f63751455f4f51ae5993c46dd0f04
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Inicio rápido: Crear un proyecto de Python desde una plantilla en Visual Studio
 
-Después de [instalar la compatibilidad con Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), resulta fácil crear un nuevo proyecto de Python con una variedad de plantillas.
+Después de [instalar la compatibilidad con Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), resulta fácil crear un nuevo proyecto de Python con una variedad de plantillas. En este inicio rápido, creará una aplicación sencilla de Flask mediante una plantilla. El proyecto resultante es similar al proyecto que crea manualmente a través de [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md).
 
-1. Inicie Visual Studio.
+1. Inicie Visual Studio 2017.
 
-1. Seleccione **Archivo > Nuevo > Proyecto** (Ctrl+Shift+N). En el cuadro de diálogo **Nuevo proyecto**, busque “Python” y seleccione la plantilla que quiera. Tenga en cuenta que al seleccionar una plantilla se muestra una breve descripción de lo que proporciona esa plantilla. (Vea también [Proyectos de Python](managing-python-projects-in-visual-studio.md#project-templates)).
+1. En la barra de menús superior seleccione **Archivo > Nuevo > Proyecto...** . Luego, en el cuadro de diálogo **Nuevo proyecto**, busque "flask en blanco", seleccione la plantilla "Proyecto web de Flask en blanco" en la lista del medio, asigne un nombre al proyecto y seleccione **Aceptar**:
 
-    ![Cuadro de diálogo Nuevo proyecto con plantillas de Python en VS2017](media/projects-new-project-dialog2.png)
+    ![Creación de un nuevo proyecto con la plantilla Proyecto web de Flask en blanco](media/quickstart-python-06-blank-flask-template.png)
 
-1. Para este inicio rápido, seleccione la plantilla “Aplicación de Python”, asigne al proyecto un nombre (por ejemplo, “MakePI”) y una ubicación, y seleccione **Aceptar**.
+1. Visual Studio le mostrará un cuadro de diálogo que dice "Este proyecto necesita paquetes externos.". Este cuadro de diálogo aparece porque la plantilla incluye un archivo `requirements.txt` que especifica una dependencia en Flask. Visual Studio puede instalar automáticamente los paquetes y ofrece la opción de instalarlos en un *entorno virtual*. Se recomienda el uso de un entorno virtual frente a la instalación en un entorno global. Por tanto, seleccione **Install into a virtual environment** (Instalar en un entorno virtual) para continuar.
 
-1. Visual Studio crea el archivo de proyecto (un archivo `.pyproj` que se almacena en disco) junto con cualquier otro archivo descritos por la plantilla. Con la plantilla de “Aplicación de Python”, el proyecto contiene un único archivo vacío con el mismo nombre que el proyecto. El archivo se abre en el editor de Visual Studio de manera predeterminada.
+    ![Instalación de Flask en un entorno virtual](media/quickstart-python-07-install-into-virtual-environment.png)
 
-    ![Proyecto resultante al usar la plantilla de la aplicación Python](media/projects-new-structure.png)
+1. Visual Studio muestra el cuadro de diálogo **Agregar entorno virtual**. Acepte el valor predeterminado y seleccione **Crear**. A continuación, dé su consentimiento a las solicitudes de elevación.
 
-1. Agregue código al archivo abierto, como el código siguiente, que calcula y muestra 1000 dígitos de PI:
+    > [!Tip]
+    > Cuando comienza un proyecto, es muy recomendable crear un entorno virtual de inmediato, como la mayoría de las plantillas de Visual Studio le invitan a hacer. Los entornos virtuales mantienen los requisitos exactos del proyecto a lo largo del tiempo, a medida que agrega y quita las bibliotecas. Luego puede generar fácilmente un archivo `requirements.txt`, que se utiliza para volver a instalar esas dependencias en otros equipos de desarrollo (como cuando se usa un control de código fuente) y al implementar el proyecto en un servidor de producción. Para más información sobre los entornos virtuales y sus ventajas, consulte [Uso de los entornos virtuales](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) y [Administración de los paquetes necesarios con requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
+
+1. Después de que Visual Studio cree ese entorno, busque en el **Explorador de soluciones** para ver que tiene un archivo `app.py` junto con `requirements.txt`. Abra `app.py` para ver que la plantilla ha proporcionado código similar en [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md), con dos secciones agregadas.
+
+    Lo primero es la línea `wsgi_app = app.wsgi_app`, que puede resultar útil cuando se implementa una aplicación en un host web.
+
+    En segundo lugar está el código de inicio que le permite establecer el host y el puerto a través de las variables de entorno, en lugar de codificarlos de forma rígida. Este código permite controlar fácilmente la configuración en máquinas de desarrollo y producción sin cambiar el código:
 
     ```python
-    """ Print digits of PI; code adapted from the second, shorter solution
-    at http://www.codecodex.com/wiki/Calculate_digits_of_pi#Python
-    """
-
-    from time import perf_counter
-
-    def pi_digits_Python(digits):
-        scale = 10000
-        maxarr = int((digits / 4) * 14)
-        arrinit = 2000
-        carry = 0
-        arr = [arrinit] * (maxarr + 1)
-        output = ""
-
-        for i in range(maxarr, 1, -14):
-            total = 0
-            for j in range(i, 0, -1):
-                total = (total * j) + (scale * arr[j])
-                arr[j] = total % ((j * 2) - 1)
-                total = total / ((j * 2) - 1)
-
-            output += "%04d" % (carry + (total / scale))
-            carry = total % scale
-
-        return output
-
-    def test_py():
-        digits = 1000
-
-        start = perf_counter()
-        output = pi_digits_Python(digits)
-        elapsed = perf_counter() - start
-
-        print("PI to " + str(digits) + " digits in " + str(int(elapsed * 10000)/10000) + " seconds:")
-
-        ## replace inserts the decimal point
-        print(output.replace("3", "3.", 1))
-
-    if __name__ == "__main__":
-        test_py()
+    if __name__ == '__main__':
+        import os
+        HOST = os.environ.get('SERVER_HOST', 'localhost')
+        try:
+            PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        except ValueError:
+            PORT = 5555
+        app.run(HOST, PORT)
     ```
 
-1. Ejecute el programa presionando CTRL+F5 o seleccionando **Depurar > Iniciar sin depurar** en el menú. Los resultados se muestran en una ventana de la consola.
+1. Seleccione **Depurar > Iniciar sin depurar** para ejecutar el programa y abrir un explorador en `localhost:5555`.
+
+**Pregunta: ¿Qué otras plantillas de Python ofrece Visual Studio?**
+
+**Respuesta**: Con la carga de trabajo de Python instalada, Visual Studio proporciona una variedad de plantillas de proyecto que incluyen las de los marcos web [Flask, Bottle y Django](../python/python-web-application-project-templates.md), servicios en la nube de Azure, diferentes escenarios de aprendizaje automático e incluso una plantilla para crear un proyecto a partir de una estructura de carpetas existente que contiene una aplicación de Python. Puede acceder a ellas a través del cuadro de diálogo **Archivo > Nuevo > Proyecto...**  seleccionando el nodo de lenguaje **Python** y sus nodos secundarios.
+
+Visual Studio también proporciona una variedad de *plantillas de elemento* o archivo para crear rápidamente una clase de Python, un paquete de Python, una prueba unitaria de Python, archivos web.config, etc. Si tiene abierto un proyecto de Python, puede acceder a las plantillas de elemento a través del comando de menú **Proyecto > Agregar nuevo elemento...**.
+
+Mediante las plantillas puede ahorrar bastante tiempo al comenzar un proyecto o crear un archivo y también son una excelente manera de obtener información sobre diferentes tipos de aplicaciones y estructuras de código. Resulta útil invertir unos minutos en crear proyectos y elementos a partir de las diferentes plantillas para familiarizarse con lo que ofrecen.
+
+**Pregunta: ¿Puedo usar también las plantillas de Cookiecutter?**
+
+**Respuesta** : ¡Sí! De hecho, Visual Studio proporciona integración directa con Cookiecutter. Puede obtener información sobre esta utilidad en [Inicio rápido: crear un proyecto a partir de una plantilla de Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

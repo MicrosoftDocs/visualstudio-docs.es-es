@@ -1,11 +1,7 @@
 ---
-title: "Acciones rápidas comunes| Microsoft Docs"
-ms.custom: 
-ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+title: Acciones rápidas comunes| Microsoft Docs
+ms.date: 03/28/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,15 +11,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8d751e122d0c9eca23d0349761054d092a438ba8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="common-quick-actions"></a>Acciones rápidas comunes
 
-Las secciones de este tema presentan algunas de las acciones rápidas comunes que se aplican a código de C# y de Visual Basic.
+Las secciones de este tema presentan algunas de las acciones rápidas comunes que se aplican a código de C# y de Visual Basic. Estas acciones son *correcciones del código* para las [reglas del analizador](../code-quality/roslyn-analyzers-overview.md) integradas en Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Acciones que corrigen errores
 
@@ -176,7 +172,7 @@ End Function
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Acciones que quitan código innecesario
 
-### <a name="remove-unnecesary-usingsimports"></a>Quitar instrucciones Using o Import innecesarias
+### <a name="remove-unnecessary-usingsimports"></a>Quitar instrucciones Using o Import innecesarias
 
 La acción rápida **Eliminar instrucciones Using innecesarias/Quitar instrucciones Import innecesarias** quitará todas las instrucciones `using` y `Import` sin usar del archivo actual.  Cuando se selecciona este elemento, las importaciones de espacios de nombres sin usar se quitarán inmediatamente.
 
@@ -239,7 +235,7 @@ public MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS0219, BC42024 | C# y Visual Basic | Visual Studio 2017 versión 15.3 |
 
-### <a name="remove-type-from-default-value-expression"></a>Quitar el tipo de la expresión de valor **predeterminado**
+### <a name="remove-type-from-default-value-expression"></a>Quitar el tipo de la expresión de valor predeterminado
 
 Esta acción rápida quita el tipo de valor de una expresión de valor predeterminado y usa el [literal default](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) cuando el compilador puede deducir el tipo de la expresión.
 
@@ -475,7 +471,7 @@ private static int thisFieldIsPublic;
 
 ## <a name="code-transformations"></a>Transformaciones de código
 
-### <a name="convert-if-construct-to-switch"></a>Convertir la construcción **if** en **switch**
+### <a name="convert-if-construct-to-switch"></a>Convertir la construcción "if" en "switch"
 
 Esta acción rápida permite convertir una construcción **if-then-else** en una construcción **switch**.
 
@@ -741,7 +737,7 @@ int fibonacci(int n)
 }
 ```
 
-### <a name="convert-referenceequals-to-is-null"></a>Convertir `ReferenceEquals` en `is null`
+### <a name="convert-referenceequals-to-is-null"></a>Convertir "ReferenceEquals" en "es null"
 
 |  Id. de diagnóstico | Lenguajes aplicables |  Versión compatible |
 | ------- | -------------------- | ----------------  |
@@ -959,4 +955,4 @@ Console.WriteLine($"{x} {y}");
 
 ## <a name="see-also"></a>Vea también
 
-[Acciones rápidas](../ide/quick-actions.md)  
+[Acciones rápidas](../ide/quick-actions.md)
