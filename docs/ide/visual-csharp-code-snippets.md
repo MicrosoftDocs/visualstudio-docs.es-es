@@ -1,11 +1,11 @@
 ---
-title: "Fragmentos de código de C# | Microsoft Docs"
-ms.custom: 
+title: Fragmentos de código de C# | Microsoft Docs
+ms.custom: ''
 ms.date: 06/05/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#]
@@ -18,10 +18,10 @@ manager: ghogen
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0328ceb6c1420b038ca424c42dd408e36da6f891
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="c-code-snippets"></a>Fragmentos de código de C#
 
@@ -35,7 +35,7 @@ Los fragmentos de código están listos para usar y puede insertarlos rápidamen
 
 Los siguientes fragmentos de código se incluyen en Visual Studio para C# de manera predeterminada.
 
-|Nombre (o acceso directo)|Description|Ubicaciones válidas donde se puede insertar el fragmento|
+|Nombre (o acceso directo)|Descripción|Ubicaciones válidas donde se puede insertar el fragmento|
 |--------------------------|-----------------|---------------------------------------|
 |#if|Crea una directiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) y una directiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|En cualquier lugar.|
 |#region|Crea una directiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) y una directiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|En cualquier lugar.|

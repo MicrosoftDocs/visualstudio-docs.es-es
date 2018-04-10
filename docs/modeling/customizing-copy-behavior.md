@@ -1,9 +1,9 @@
 ---
 title: Personalizar el comportamiento de copia | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f8eba726c35b402e93bd1fd1b50048b8dce4bf2b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 En un lenguaje específico de dominio (DSL) creado con el SDK de visualización y modelado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede alterar lo que sucede cuando el usuario copia y pega elementos.  
@@ -216,7 +216,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Permiten al usuario arrastrar y colocar elementos.**  
  Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a>Personalizar el comportamiento de la copia de vínculo  
+##  <a name="customizeLinks"></a> Personalizar el comportamiento de la copia de vínculo  
  Cuando el usuario copia un elemento, el comportamiento estándar es que los elementos incrustados también se copien. Puede modificar el comportamiento estándar de la operación de copiar. En la definición DSL, seleccione un rol en un lado de una relación y, en la ventana de propiedades establecidas la **copia propaga** valor.  
   
  ![Propiedad propagates Copy del rol de dominio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  

@@ -1,9 +1,9 @@
 ---
-title: "Creación de un lenguaje específico de dominio basada en formularios de Windows | Documentos de Microsoft"
-ms.custom: 
+title: Creación de un lenguaje específico de dominio basada en formularios de Windows | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico de dominio (DSL), en lugar de utilizar un diagrama DSL. Este tema explica cómo enlazar un formulario Windows Forms a un DSL, usando la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado.  
@@ -53,9 +53,9 @@ Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows
   
  En la instancia principal de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tenga en cuenta los siguientes puntos acerca de la solución de ADSL:  
   
--   `DslDefinition.dsl`no contiene ningún elemento de diagrama. Esto es porque no usará los diagramas DSL para ver los modelos de la instancia de este DSL. En su lugar, se enlazará a un formulario Windows Forms para el modelo y los elementos en el formulario se mostrará el modelo.  
+-   `DslDefinition.dsl` no contiene ningún elemento de diagrama. Esto es porque no usará los diagramas DSL para ver los modelos de la instancia de este DSL. En su lugar, se enlazará a un formulario Windows Forms para el modelo y los elementos en el formulario se mostrará el modelo.  
   
--   Además el `Dsl` y `DslPackage` proyectos, la solución contiene un tercer proyecto denominado `UI.` **UI** proyecto contiene la definición de un control de formularios Windows Forms. `DslPackage`depende de `UI`, y `UI` depende de `Dsl`.  
+-   Además el `Dsl` y `DslPackage` proyectos, la solución contiene un tercer proyecto denominado `UI.` **UI** proyecto contiene la definición de un control de formularios Windows Forms. `DslPackage` depende de `UI`, y `UI` depende de `Dsl`.  
   
 -   En el `DslPackage` proyecto `UI\DocView.cs` contiene el código que muestra el control de formularios Windows Forms que se define en el `UI` proyecto.  
   
@@ -88,9 +88,9 @@ Una instancia DSL, que muestra una interfaz de usuario del formulario de Windows
   
 4.  Use la **clase con el nombre de dominio** herramienta para crear las clases de dominio siguientes:  
   
-    -   `Field`-Conseguir una propiedad de dominio adicional denominada `Size`.  
+    -   `Field` -Conseguir una propiedad de dominio adicional denominada `Size`.  
   
-    -   `Animal`-En la ventana Propiedades, establezca **modificador de herencia** a **abstracta**.  
+    -   `Animal` -En la ventana Propiedades, establezca **modificador de herencia** a **abstracta**.  
   
 5.  Use la **clase dominio** herramienta para crear las clases siguientes:  
   
@@ -223,7 +223,7 @@ Esquema de vínculos entre los orígenes de datos y vistas.
   
 3.  En el **FarmApp Explorer**, abra el menú contextual en el **granja** nodo raíz y elija **agregar nueva cabra**.  
   
-     `Goat1`aparece en el **animales** vista.  
+     `Goat1` aparece en el **animales** vista.  
   
     > [!WARNING]
     >  Debe usar el menú contextual en el **granja** nodo, no el **animales** nodo.  

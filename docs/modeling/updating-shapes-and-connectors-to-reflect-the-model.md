@@ -1,9 +1,9 @@
 ---
 title: Actualizar formas y conectores para reflejar el modelo | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Actualizar formas y conectores para reflejar el modelo
 En un lenguaje específico de dominio en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede hacer que la apariencia de una forma reflejan el estado del modelo subyacente.  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  Este método se puede utilizar tanto para las propiedades de dominio y las características de almacén no, como el tamaño de la forma.  
   
-##  <a name="OnAssociatedProperty"></a>Usar AssociateValueWith() para actualizar otras características de una forma  
+##  <a name="OnAssociatedProperty"></a> Usar AssociateValueWith() para actualizar otras características de una forma  
  Para algunas características de una forma, por ejemplo, si tiene una sombra, o el estilo de flecha de un conector, no hay ningún método integrado de exponer la característica como una propiedad de dominio.  Cambios en estas características no están bajo el control del sistema de transacciones. Por lo tanto, no resulta adecuado actualizarlos mediante reglas, porque las reglas no se invocan cuando el usuario ejecuta el comando Deshacer.  
   
  En su lugar, puede actualizar estas características mediante <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. En el ejemplo siguiente, el estilo de flecha de un conector se controla mediante un valor de una propiedad de dominio en la relación que el conector de muestra:  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`debe llamarse una vez por cada propiedad del dominio que desea registrar. Después de la llamada, se llamará los cambios en la propiedad especificada `OnAssociatedPropertyChanged()` en las formas que presenten el elemento del modelo de la propiedad.  
+ `AssociateValueWith()` debe llamarse una vez por cada propiedad del dominio que desea registrar. Después de la llamada, se llamará los cambios en la propiedad especificada `OnAssociatedPropertyChanged()` en las formas que presenten el elemento del modelo de la propiedad.  
   
  No es necesario llamar a `AssociateValueWith()` para cada instancia. Aunque InitializeResources es un método de instancia, se invoca solo una vez para cada clase de forma.

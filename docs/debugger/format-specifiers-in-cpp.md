@@ -1,12 +1,12 @@
 ---
 title: Dar formato a especificadores en el depurador (C++) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug
@@ -28,17 +28,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en la ventana **Inspección** mediante especificadores de formato.  
@@ -83,12 +83,12 @@ int main() {
 |su|Cadena Unicode (codificación UTF-16)|\<ubicación > L "Hola a todos"|L"hola a todos"<br /><br /> u"hola a todos"|  
 |sub|Cadena de Unicode (codificación UTF-16) (sin las comillas)|\<ubicación > L "Hola a todos"|hola a todos|  
 |bstr|Cadena BSTR|\<ubicación > L "Hola a todos"|L"hola a todos"|  
-|env|Bloque de entorno (doble null la cadena terminada)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|env|Bloque de entorno (doble null la cadena terminada)|\<ubicación > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|cadena UTF-32|\<ubicación > U "Hola a todos"|u"hola a todos"|  
 |**s32b**|cadena UTF-32 (sin comillas)|\<ubicación > U "Hola a todos"|hola a todos|  
 |**en**|enum|Sábado(6)|Sábado|  
 |**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<ubicación > {\<primer miembro >}|\<ubicación > {\<primer miembro >, \<segundo miembro >,...}|  
-|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<ubicación >, {miembro = value...}|{member=value...}|  
+|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<location>, {member=value...}|{member=value...}|  
 |**nd**|Muestra solo la información de la clase, omitiendo las clases derivadas|`(Shape*) square` incluye la información de clase base y derivada|Muestra únicamente la información de clase base|  
 |hr|HRESULT o código de error Win32. (Ahora, el depurador descodifica los valores HRESULT automáticamente, de modo que este especificador no es necesario en esos casos).|S_OK|S_OK|  
 |wc|Marcador de clase de ventana|0x0010|WC_DEFAULTCHAR|  
@@ -120,11 +120,11 @@ int main() {
 |**f**|Punto flotante con signo|(3./2.), f|1.500000|  
 |**e**|Notación científica con signo|(3.0/2.0)|1.500000e+000|  
 |**g**|Punto flotante con signo o notación científica con signo, lo que sea más corto|(3.0/2.0)|1.5|  
-|c|carácter único|\<ubicación >|101 'e'|  
-|s|const char*|\<ubicación >|"hola a todos"|  
-|su|const wchar_t*<br /><br /> char16_t const\*|\<ubicación >|L"hola a todos"|  
-|sub|const wchar_t*<br /><br /> char16_t const\*|\<ubicación >|hola a todos|  
-|s8|const char*|\<ubicación >|"hola a todos"|  
+|c|carácter único|\<location>|101 'e'|  
+|s|const char*|\<location>|"hola a todos"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hola a todos"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hola a todos|  
+|s8|const char*|\<location>|"hola a todos"|  
 |hr|HRESULT o código de error Win32. (Ahora, el depurador descodifica los valores HRESULT automáticamente, de modo que este especificador no es necesario en esos casos).|S_OK|S_OK|  
 |wc|Marcador de clase de ventana.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Números de mensajes de Windows|0x0010|WM_CLOSE|  

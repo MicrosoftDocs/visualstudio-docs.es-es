@@ -1,12 +1,12 @@
 ---
-title: "ClickOnce y configuración de la aplicación | Documentos de Microsoft"
-ms.custom: 
+title: ClickOnce y configuración de la aplicación | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - ClickOnce deployment, application settings
 ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
-caps.latest.revision: 
+caps.latest.revision: 10
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 862f51aa7d124c3dbaa6514b666d74c26334e299
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce y configuración de la aplicación
 Configuración de la aplicación de Windows Forms facilita la crear, almacenar y mantener aplicaciones personalizadas y las preferencias del usuario en el cliente. El siguiente documento describe cómo funcionan los archivos de configuración de la aplicación en una aplicación ClickOnce y cómo migra ClickOnce la configuración cuando el usuario realiza una actualización a la versión siguiente.  

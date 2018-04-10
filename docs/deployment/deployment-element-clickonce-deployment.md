@@ -1,12 +1,12 @@
 ---
-title: "&lt;implementación&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft"
-ms.custom: 
+title: '&lt;implementación&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
@@ -22,17 +22,17 @@ dev_langs:
 helpviewer_keywords:
 - <deployment> element [ClickOnce deployment manifest]
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 0caff13f84208152b3fa2ff4e56a7a2c7f0b6dd7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;implementación&gt; elemento (implementación de ClickOnce)
 Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.  
@@ -70,7 +70,7 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
 |---------------|-----------------|  
 |`install`|Requerido. Especifica si esta aplicación define una presencia en las ventanas **iniciar** menú y en el Panel de Control **agregar o quitar programas** aplicación. Los valores válidos son `true` y `false`. Si `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] siempre se ejecutará la versión más reciente de esta aplicación desde la red y no reconocerá el `subscription` elemento.|  
 |`minimumRequiredVersion`|Opcional. Especifica la versión mínima de esta aplicación que se puede ejecutar en el cliente. Si el número de versión de la aplicación es menor que el número de versión proporcionado en el manifiesto de implementación, no se ejecutará la aplicación. Números de versión deben especificarse en el formato `N.N.N.N`, donde `N` es un entero sin signo. Si el `install` atributo es `false`, `minimumRequiredVersion` no debe establecerse.|  
-|`mapFileExtensions`|Opcional. Tiene como valor predeterminado `false`. Si `true`, todos los archivos de la implementación deben tener una extensión. deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]se eliminan esta extensión de estos archivos en cuanto descarga desde el servidor Web. Si se publica la aplicación utilizando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], esta extensión se agregará automáticamente a todos los archivos. Este parámetro permite que todos los archivos dentro de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación se descarguen desde un servidor Web que bloquea la transmisión de archivos que terminan en "unsafe" extensiones como .exe.|  
+|`mapFileExtensions`|Opcional. Tiene como valor predeterminado `false`. Si `true`, todos los archivos de la implementación deben tener una extensión. deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se eliminan esta extensión de estos archivos en cuanto descarga desde el servidor Web. Si se publica la aplicación utilizando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], esta extensión se agregará automáticamente a todos los archivos. Este parámetro permite que todos los archivos dentro de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación se descarguen desde un servidor Web que bloquea la transmisión de archivos que terminan en "unsafe" extensiones como .exe.|  
 |`disallowUrlActivation`|Opcional. Tiene como valor predeterminado `false`. Si `true`, impide que una aplicación instalada que se inicia haciendo clic en la dirección URL o escriba la dirección URL en Internet Explorer. Si el `install` atributo no está presente, se omite este atributo.|  
 |`trustURLParameters`|Opcional. Tiene como valor predeterminado `false`. Si `true`, permite que la dirección URL incluya parámetros de cadena de consulta que se pasan a la aplicación, cantidad como argumentos de línea de comandos se pasan a una aplicación de línea de comandos. Para obtener más información, consulte [Cómo: recuperar información de cadena de consulta en una aplicación ClickOnce en línea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Si el `disallowUrlActivation` atributo es `true`, `trustUrlParameters` deben ser excluidos del manifiesto, o se establece explícitamente en `false`.|  
   
@@ -80,15 +80,15 @@ Identifica los atributos utilizados para la implementación de actualizaciones y
  Opcional. Contiene el `update` elemento. El `subscription` elemento no tiene atributos. Si el `subscription` el elemento no existe, la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación no buscará actualizaciones. Si el `install` atributo de la `deployment` elemento es `false`, el `subscription` se omite el elemento, porque un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que se inicia desde la red siempre utiliza la versión más reciente.  
   
 ## <a name="update"></a>actualizar  
- Requerido. Este elemento es un elemento secundario de la `subscription` elemento y contiene el `beforeApplicationStartup` o `expiration` elemento. `beforeApplicationStartup`y `expiration` no pueden especificarse simultáneamente en el mismo manifiesto de implementación.  
+ Requerido. Este elemento es un elemento secundario de la `subscription` elemento y contiene el `beforeApplicationStartup` o `expiration` elemento. `beforeApplicationStartup` y `expiration` no pueden especificarse simultáneamente en el mismo manifiesto de implementación.  
   
  El `update` elemento no tiene atributos.  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
- Opcional. Este elemento es un elemento secundario de la `update` elemento y no tiene atributos. Cuando el `beforeApplicationStartup` elemento existe, la aplicación estará bloqueado cuando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] comprueba si hay actualizaciones, si el cliente está en línea. Si este elemento no existe, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] analizará primero las actualizaciones basadas en los valores especificados para el `expiration` elemento. `beforeApplicationStartup`y `expiration` no pueden especificarse simultáneamente en el mismo manifiesto de implementación.  
+ Opcional. Este elemento es un elemento secundario de la `update` elemento y no tiene atributos. Cuando el `beforeApplicationStartup` elemento existe, la aplicación estará bloqueado cuando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] comprueba si hay actualizaciones, si el cliente está en línea. Si este elemento no existe, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] analizará primero las actualizaciones basadas en los valores especificados para el `expiration` elemento. `beforeApplicationStartup` y `expiration` no pueden especificarse simultáneamente en el mismo manifiesto de implementación.  
   
 ## <a name="expiration"></a>expiración  
- Opcional. Este elemento es un elemento secundario de la `update` elemento, y no tiene elementos secundarios. `beforeApplicationStartup`y `expiration` no pueden especificarse simultáneamente en el mismo manifiesto de implementación. Cuando se produce la comprobación de actualización y se detecta una versión actualizada, la nueva versión almacena en caché mientras se ejecuta la versión existente. A continuación, instale la nueva versión en el siguiente inicio de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
+ Opcional. Este elemento es un elemento secundario de la `update` elemento, y no tiene elementos secundarios. `beforeApplicationStartup` y `expiration` no pueden especificarse simultáneamente en el mismo manifiesto de implementación. Cuando se produce la comprobación de actualización y se detecta una versión actualizada, la nueva versión almacena en caché mientras se ejecuta la versión existente. A continuación, instale la nueva versión en el siguiente inicio de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  
   
  El `expiration` elemento es compatible con los siguientes atributos.  
   

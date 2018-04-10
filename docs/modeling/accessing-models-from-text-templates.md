@@ -1,9 +1,9 @@
 ---
 title: Obtener acceso a los modelos de plantillas de texto | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 Mediante el uso de plantillas de texto, puede crear archivos de informes, archivos de código fuente y otros archivos de texto que se basan en modelos de lenguaje específico de dominio. Para obtener información básica acerca de las plantillas de texto, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Las plantillas de texto funcionarán en modo experimental cuando se depura el ADSL y también funcionará en un equipo en el que haya implementado el ADSL.  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   Aunque el idioma en el que se escriben los fragmentos de código es C#, puede generar el texto de cualquier tipo. O bien puede escribir el código [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] mediante la adición de la propiedad `language="VB"` a la `template` directiva.  
   
--   Para depurar la plantilla, agregue `debug="true"` a la `template` directiva. La plantilla se abrirá en otra instancia de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si se produce una excepción. Si desea interrumpir el depurador en un momento concreto en el código, la instrucción de inserción`System.Diagnostics.Debugger.Break();`  
+-   Para depurar la plantilla, agregue `debug="true"` a la `template` directiva. La plantilla se abrirá en otra instancia de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] si se produce una excepción. Si desea interrumpir el depurador en un momento concreto en el código, la instrucción de inserción `System.Diagnostics.Debugger.Break();`  
   
      Para obtener más información, consulte [depurar una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -95,11 +95,11 @@ Here is a list of elements in the model:
   
 1.  El `filename` y `validation` parámetros se separan con ";" y no debe haber ningún otro separadores o espacios.  
   
-2.  La lista de categorías de validación determina qué métodos de validación se ejecutará. Varias categorías se deben separar con "&#124;" y no debe haber ningún otro separadores o espacios.  
+2.  La lista de categorías de validación determina qué métodos de validación se ejecutará. Varias categorías deben estar separados mediante "&#124;" y no debe haber ningún otro separadores o espacios.  
   
  Si se encuentra un error, se incluirán en la ventana de errores y el archivo de resultados contendrá un mensaje de error.  
   
-##  <a name="Multiple"></a>Obtiene acceso a varios modelos desde una plantilla de texto  
+##  <a name="Multiple"></a> Obtiene acceso a varios modelos desde una plantilla de texto  
   
 > [!NOTE]
 >  Este método permite leer varios modelos en la misma plantilla pero no admite las referencias de ModelBus. Para los modelos que se entrelazan por ModelBus referencias, consulte [utilizando ModelBus de Microsoft Visual Studio en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`invoca `LoopTemplate.t4`y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, porque no leer el modelo.  
+ `LoopSplitter.tt` invoca `LoopTemplate.t4`y, a continuación, divide el archivo resultante en sus segmentos. Tenga en cuenta que esta plantilla no tiene que ser una plantilla de modelado, porque no leer el modelo.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

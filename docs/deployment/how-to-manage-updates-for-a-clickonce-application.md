@@ -1,12 +1,12 @@
 ---
-title: "Cómo: administrar actualizaciones de una aplicación ClickOnce | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: administrar actualizaciones de una aplicación ClickOnce | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Cómo: Administrar actualizaciones de aplicaciones ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como programador, tiene mucha flexibilidad para especificar cuándo y cómo se realizan comprobaciones de actualización, si éstas son obligatorias y donde la aplicación debe buscar actualizaciones.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como programador, tiene mucha flexibilidad para especificar cuándo y cómo se realizan comprobaciones de actualización, si éstas son obligatorias y donde la aplicación debe buscar actualizaciones.  
   
  Puede configurar la aplicación para buscar actualizaciones automáticamente antes de iniciar la aplicación o a intervalos establecidos tras iniciar la aplicación. También puede especificar la versión mínima requerida; es decir, se instala una actualización si la versión del usuario es inferior a la versión necesaria.  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  En el **actualizaciones de la aplicación** diálogo cuadro, asegúrese de que el **la aplicación buscará actualizaciones** casilla está activada.  
   
-5.  En el **Actualizar ubicación** , escriba la ubicación de actualización con una dirección URL completa, con el formato http://Hostname/ApplicationName o una ruta de acceso UNC con el formato \\\Server\ApplicationName, o haga clic en el **Examinar** botón para buscar la ubicación de actualización.  
+5.  En el **Actualizar ubicación** , escriba la ubicación de actualización con una dirección URL completa, con el formato http://Hostname/ApplicationName, o una ruta de acceso UNC con el formato \\\Server\ApplicationName o haga clic en el **examinar** botón para buscar la ubicación de actualización.  
   
 ### <a name="to-check-for-updates-programmatically"></a>Para buscar actualizaciones mediante programación  
   
@@ -105,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  En el **actualizaciones de la aplicación** diálogo cuadro, asegúrese de que el **la aplicación buscará actualizaciones** casilla de verificación está desactivada. (Si lo desea, puede seleccionar esta casilla de verificación para comprobar las actualizaciones mediante programación y también permiten el tiempo de ejecución de ClickOnce buscar actualizaciones automáticamente).  
   
-5.  En el **Actualizar ubicación** , escriba la ubicación de actualización con una dirección URL completa, con el formato http://Hostname/ApplicationName o una ruta de acceso UNC con el formato \\\Server\ApplicationName, o haga clic en el **Examinar** botón para buscar la ubicación de actualización. La ubicación de actualización es donde la aplicación buscará una versión actualizada de sí mismo.  
+5.  En el **Actualizar ubicación** , escriba la ubicación de actualización con una dirección URL completa, con el formato http://Hostname/ApplicationName, o una ruta de acceso UNC con el formato \\\Server\ApplicationName o haga clic en el **examinar** botón para buscar la ubicación de actualización. La ubicación de actualización es donde la aplicación buscará una versión actualizada de sí mismo.  
   
 6.  Crear un botón, el elemento de menú u otro elemento de interfaz de usuario en un formulario Windows Forms que seleccionarán los usuarios para buscar actualizaciones. Desde el controlador de eventos de ese elemento, llama a un método para buscar e instalar actualizaciones. Puede encontrar un ejemplo de código de Visual Basic y Visual C# para este tipo de método en [Cómo: comprobar si las actualizaciones de aplicaciones mediante programación con la API de implementación de ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   

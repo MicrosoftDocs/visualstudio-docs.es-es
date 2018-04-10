@@ -1,10 +1,10 @@
 ---
-title: "Crear una aplicación de datos sencilla con WPF y Entity Framework 6 | Documentos de Microsoft"
-ms.custom: 
+title: Crear una aplicación de datos sencilla con WPF y Entity Framework 6 | Documentos de Microsoft
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 
@@ -56,7 +56,7 @@ Este ejemplo utiliza SQL Server Express LocalDB y la base de datos de ejemplo No
   
 3.  En el Administrador de paquetes de NuGet, haga clic en el **examinar** vínculo. Entity Framework es probablemente el paquete superior en la lista. Haga clic en **instalar** en el panel derecho y siga las indicaciones. La ventana de salida le indicará cuando finalice la instalación.  
   
-     ![Entity Framework NuGet Package](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
+     ![Paquete de NuGet de Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
   
 4.  Ahora podemos usar Visual Studio para crear un modelo basado en la base de datos Northwind.  
   
@@ -118,7 +118,7 @@ Es posible escribir su propio código de enlace de datos, pero es mucho más fá
         </Grid.RowDefinitions>
     ```
 
-5.  Ahora abra MainWindow.xaml por lo que está viendo en el diseñador. Esto hará que la ventana de orígenes de datos para que aparezca como una opción en el margen de la ventana de Visual Studio junto al cuadro de herramientas. Haga clic en la ficha para abrir la ventana, o presione else **Mayús + Alt + D** o elija **vista &#124; Otras ventanas &#124; Orígenes de datos**. Vamos a visualizar cada propiedad en la clase de clientes en su propio cuadro de texto individuales. En primer lugar, haga clic en la flecha en el cuadro combinado de clientes y elija **detalles**. A continuación, arrastre el nodo de la parte central de la superficie de diseño para que el diseñador sepa que desee que aparezca en la fila del medio.  Si ha extraviado, puede especificar la fila manualmente más adelante en el código XAML. De forma predeterminada, los controles se colocan verticalmente en un elemento de cuadrícula, pero en este momento puede organizarlas como prefiera en el formulario.  Por ejemplo, tendría sentido para colocar el cuadro de texto nombre en la parte superior, por encima de la dirección. La aplicación de ejemplo de este artículo reordena los campos y vuelve a ellos en dos columnas.  
+5.  Ahora abra MainWindow.xaml por lo que está viendo en el diseñador. Esto hará que la ventana de orígenes de datos para que aparezca como una opción en el margen de la ventana de Visual Studio junto al cuadro de herramientas. Haga clic en la ficha para abrir la ventana, o presione else **Mayús + Alt + D** o elija **vista &#124; otras ventanas &#124; orígenes de datos**. Vamos a visualizar cada propiedad en la clase de clientes en su propio cuadro de texto individuales. En primer lugar, haga clic en la flecha en el cuadro combinado de clientes y elija **detalles**. A continuación, arrastre el nodo de la parte central de la superficie de diseño para que el diseñador sepa que desee que aparezca en la fila del medio.  Si ha extraviado, puede especificar la fila manualmente más adelante en el código XAML. De forma predeterminada, los controles se colocan verticalmente en un elemento de cuadrícula, pero en este momento puede organizarlas como prefiera en el formulario.  Por ejemplo, tendría sentido para colocar el cuadro de texto nombre en la parte superior, por encima de la dirección. La aplicación de ejemplo de este artículo reordena los campos y vuelve a ellos en dos columnas.  
   
      ![Enlace de origen de datos de los clientes a controles individuales](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "raddata enlace de origen de datos de los clientes a controles individuales")  
   

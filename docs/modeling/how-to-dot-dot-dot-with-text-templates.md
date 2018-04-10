@@ -1,9 +1,9 @@
 ---
-title: "Cómo... con plantillas de texto | Documentos de Microsoft"
-ms.custom: 
+title: Cómo... con plantillas de texto | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
 Plantillas de texto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporcionan una forma útil de generar el texto de cualquier tipo. Puede usar plantillas de texto para generar texto en tiempo de ejecución como parte de la aplicación y en tiempo de diseño para generar algunos el código del proyecto. En este tema se resume con más frecuencia le pregunte "¿Cómo...?" preguntas frecuentes.  
@@ -79,7 +79,7 @@ Plantillas de texto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
   
      Para obtener más información, consulte [Getting Started with lenguajes específicos de dominio](../modeling/getting-started-with-domain-specific-languages.md) y [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obtener datos[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
+### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obtener datos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
  Para utilizar servicios proporcionados en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], conjunto de la `hostSpecific` atributo y carga la `EnvDTE` ensamblado. Por ejemplo:  
   
 ```csharp  
@@ -101,7 +101,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ## <a name="more-general-questions"></a>Preguntas más generales  
   
-###  <a name="starting"></a>¿Cuál es la mejor manera de empezar a escribir una plantilla de texto?  
+###  <a name="starting"></a> ¿Cuál es la mejor manera de empezar a escribir una plantilla de texto?  
   
 1.  Escribir un ejemplo concreto del archivo generado.  
   

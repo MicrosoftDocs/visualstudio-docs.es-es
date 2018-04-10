@@ -1,9 +1,9 @@
 ---
-title: "CA2002: No bloquear objetos con identidad débil | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2002: No bloquear objetos con identidad débil | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 01/31/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 f1_keywords:
@@ -21,10 +21,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: e27af6104b06b1f6a01ae6a98bfe88e8a0e967b1
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: No bloquear objetos con identidad débil
 

@@ -1,27 +1,27 @@
 ---
 title: Tareas de MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: e1de29741f11413d8829902635c1284aa6e5bce6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-tasks"></a>Tareas de MSBuild
 Una plataforma de compilación debe ser capaz de ejecutar cualquier número de acciones durante el proceso de compilación. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza *tareas* para realizar estas acciones. Una tarea es una unidad de código ejecutable que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utiliza para realizar operaciones de compilación atómicas.  
@@ -40,7 +40,7 @@ Una plataforma de compilación debe ser capaz de ejecutar cualquier número de a
   
  Para ejecutar una tarea en un archivo del proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], cree un elemento con el nombre de la tarea como elemento secundario de un elemento `Target`. Si una tarea acepta parámetros, estos se pasan como atributos del elemento.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Las listas y propiedades de elementos se pueden usar como parámetros. Por ejemplo, el siguiente código llama a la tarea `MakeDir` y establece el valor de la propiedad `Directories` del objeto `MakeDir` igual que el valor de la propiedad `BuildDir` declarada en el ejemplo anterior.  
+ Las listas y propiedades de elementos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se pueden utilizar como parámetros. Por ejemplo, el siguiente código llama a la tarea `MakeDir` y establece el valor de la propiedad `Directories` del objeto `MakeDir` igual que el valor de la propiedad `BuildDir` declarada en el ejemplo anterior.  
   
 ```xml  
 <Target Name="MakeBuildDirectory">  
@@ -64,7 +64,7 @@ Una plataforma de compilación debe ser capaz de ejecutar cualquier número de a
 ```  
   
 ## <a name="included-tasks"></a>Tareas incluidas  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se distribuye con muchas tareas como, por ejemplo, [Copy](../msbuild/copy-task.md) (que copia archivos), [MakeDir](../msbuild/makedir-task.md) (que crea directorios) y [Csc](../msbuild/csc-task.md) (que compila archivos de código fuente de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]). Para obtener una lista completa de tareas disponibles e información de uso, consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se distribuye con muchas tareas, como por ejemplo [Copy](../msbuild/copy-task.md), que copia archivos, [MakeDir](../msbuild/makedir-task.md), que crea directorios, y [Csc](../msbuild/csc-task.md), que compila archivos de código fuente [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Para obtener una lista completa de tareas disponibles e información de uso, consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Tareas invalidadas  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] busca tareas en varias ubicaciones. La primera ubicación es en archivos con la extensión .OverrideTasks almacenados en los directorios de .NET Framework. Las tareas en estos archivos invalidan cualquier otra tarea con los mismos nombres, incluidas las tareas en el archivo del proyecto. La segunda ubicación es en archivos con la extensión .Tasks en los directorios de .NET Framework. Si la tarea no se encuentra en ninguna de estas ubicaciones, se utiliza la tarea en el archivo del proyecto.  

@@ -1,29 +1,29 @@
 ---
-title: IDebugEventCallback2 | Documentos de Microsoft
-ms.custom: 
+title: IDebugEventCallback2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugEventCallback2
 helpviewer_keywords:
 - IDebugEventCallback2
 ms.assetid: 2c935ee0-2e22-4be0-a852-73736f33c8c9
-caps.latest.revision: 
+caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: 165f973fa9139f281211e6b01167b3d7044166df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Esta interfaz se utiliza el motor de depuración (Alemania) para enviar eventos de depuración para el Administrador de sesión de depuración (SDM).  
@@ -35,7 +35,7 @@ IDebugEventCallback2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Notas para los implementadores  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]implementa esta interfaz para recibir eventos de un motor de depuración.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] implementa esta interfaz para recibir eventos de un motor de depuración.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
  Un motor de depuración normalmente recibe esta interfaz cuando se llama a la SDM [adjuntar](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md), o [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Un motor de depuración envía eventos a lo SDM mediante una llamada a [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
@@ -57,7 +57,7 @@ IDebugEventCallback2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces de núcleo](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -1,9 +1,9 @@
 ---
-title: "Cómo: agregar un comando al menú contextual | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: agregar un comando al menú contextual | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Cómo: Agregar un comando a un menú contextual
 Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para que sus usuarios puedan realizar tareas específicas de su DSL. Los comandos aparecen en el menú contextual cuando los usuarios hacen clic con el botón secundario en el diagrama. Puede definir un comando para que solo aparezca en el menú en circunstancias específicas. Por ejemplo, puede hacer que el comando sea visible solo cuando el usuario haga clic en tipos específicos de elementos, o en elementos con unos estados determinados.  
@@ -51,7 +51,7 @@ Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para 
   
  En otros casos, considere usar el método MEF para definir comandos. Para obtener más información, consulte [extender ADSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-##  <a name="VSCT"></a>Declare el comando en Commands.Vsct  
+##  <a name="VSCT"></a> Declare el comando en Commands.Vsct  
  Los comandos de menú se declaran en DslPackage\Commands.vsct. Estas definiciones especifican las etiquetas de los elementos de menú y dónde aparecen en los menús.  
   
  El archivo que estás editando, Commands.vsct, importa las definiciones de varios archivos. h, que se encuentran en el directorio *ruta de instalación del SDK de Visual Studio*\VisualStudioIntegration\Common\Inc. También incluye GeneratedVsct.vsct, que se genera a partir de la definición de DSL.  
@@ -131,7 +131,7 @@ Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para 
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>Actualizar la versión del paquete en Package.tt  
+##  <a name="version"></a> Actualizar la versión del paquete en Package.tt  
  Siempre que se agregue o se cambie un comando, actualice el parámetro `version` del <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> que se aplica a la clase de paquete antes de publicar la nueva versión de su lenguaje específico de dominio.  
   
  Como la clase de paquete se define en un archivo generado, actualice el atributo en el archivo de plantilla de texto que genera el archivo Package.cs.  
@@ -146,7 +146,7 @@ Puede agregar comandos de menú a su lenguaje específico de dominio (DSL) para 
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>Definir el comportamiento del comando  
+##  <a name="CommandSet"></a> Definir el comportamiento del comando  
  Su DSL ya tiene algunos comandos que se implementan en una clase parcial que se declara en DslPackage\GeneratedCode\CommandSet.cs. Para agregar nuevos comandos, debe extender esta clase creando un nuevo archivo que contenga una declaración parcial de la misma clase. Suele ser el nombre de la clase  *\<YourDslName >*`CommandSet`. Resulta útil empezar por comprobar el nombre de la clase e inspeccionar su contenido.  
   
  La clase de conjunto de comandos deriva de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -224,7 +224,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye siempre en esta lista. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.  
   
--   `this.IsDiagramSelected()` - `true`Si el usuario hace clic en una parte en blanco del diagrama.  
+-   `this.IsDiagramSelected()` - `true` Si el usuario hace clic en una parte en blanco del diagrama.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   

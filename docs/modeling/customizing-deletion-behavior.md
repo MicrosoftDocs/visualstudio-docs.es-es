@@ -1,9 +1,9 @@
 ---
-title: "Personalizar el comportamiento de eliminación | Documentos de Microsoft"
-ms.custom: 
+title: Personalizar el comportamiento de eliminación | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizar el comportamiento de eliminación
 Normalmente, al eliminar un elemento también se eliminan los elementos relacionados. Se eliminan todas las relaciones conectadas a él y todos los elementos secundarios. Este comportamiento se denomina *elimine la propagación*. Puede personalizar la propagación de la eliminación, por ejemplo, para organizar que se eliminen otros elementos relacionados. Escribiendo código de programa puede hacer que la propagación de la eliminación dependa del estado del modelo. También puede hacer que se produzcan otros cambios en respuesta a una eliminación.  
@@ -40,7 +40,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
   
 -   [Separar](#unmerge) -usar la operación de separar para deshacer la operación de combinación que se adjunta un elemento secundario a su elemento primario.  
   
-##  <a name="default"></a>Comportamiento de eliminación predeterminado  
+##  <a name="default"></a> Comportamiento de eliminación predeterminado  
  De forma predeterminada, la propagación de la eliminación cumple estas reglas:  
   
 -   Si un elemento se elimina, todos los elementos incrustados también se eliminan. Los elementos incrustados son los destinos de relación de incrustación para las cuales este elemento es el origen. Por ejemplo, si hay una relación de incrustación de **álbum** a **canción**, a continuación, cuando se elimina un álbum determinado, también se eliminarán todas sus canciones.  
@@ -53,7 +53,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
   
 -   Todas las relaciones que están conectadas al elemento, ya sea en el rol de origen o de destino, se eliminan. La propiedad de rol del elemento en el rol opuesto ya no contiene el elemento eliminado.  
   
-##  <a name="property"></a>Establecer la opción propagar eliminar de un rol  
+##  <a name="property"></a> Establecer la opción propagar eliminar de un rol  
  Puede hacer que la eliminación se propague a lo largo de una relación de referencia, o desde un elemento secundario incrustado a su primario.  
   
 #### <a name="to-set-delete-propagation"></a>Para establecer la propagación de la eliminación  
@@ -78,7 +78,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 > [!NOTE]
 >  Para agregar código de programa a la definición DSL, cree un archivo de código independiente en el **Dsl** del proyecto y escribir las definiciones parciales para aumentar las clases en la carpeta de código generado. Para obtener más información, consulte [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
-##  <a name="closure"></a>Definir una clausura de eliminación  
+##  <a name="closure"></a> Definir una clausura de eliminación  
  La operación de eliminación utiliza la clase *YourModel *** DeleteClosure** para determinar qué elementos se deben eliminar, dada una selección inicial. Llama a `ShouldVisitRelationship()` y a `ShouldVisitRolePlayer()` repetidamente, recorriendo el gráfico de relaciones. Puede invalidar estos métodos. ShouldVisitRolePlayer se proporciona con la identidad de un vínculo y el elemento en uno de los roles del vínculo. Debe devolver uno de los siguientes valores:  
   
 -   **VisitorFilterResult.Yes**: se debe eliminar el elemento y el rastreador debe continuar para probar el elemento de otros vínculos.  
@@ -131,7 +131,7 @@ partial class MusicLibDeleteClosure
   
  Sin embargo, la técnica se da por supuesto que su eliminación afecta a solo sus vecinos en el gráfico de relaciones: no se puede usar este método para eliminar un elemento en otra parte del modelo. No puede usarlo si quiere agregar elementos o realizar otros cambios en respuesta a una eliminación.  
   
-##  <a name="ondeleting"></a>Usar OnDeleting y OnDeleted  
+##  <a name="ondeleting"></a> Usar OnDeleting y OnDeleted  
  Puede invalidar `OnDeleting()` o `OnDeleted()` en una clase de dominio o en una relación de dominio.  
   
 1.  Se llama a <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> cuando se está a punto de eliminar un elemento, pero antes de que sus relaciones se hayan desconectado. Aún se puede navegar hacia y desde otros elementos, y aún está en `store.ElementDirectory`.  
@@ -198,7 +198,7 @@ partial class Artist
   
  Cuando se realiza <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> en un elemento, se llamará a OnDeleting y OnDeleted. Estos métodos son siempre realizadas en línea: es decir, inmediatamente antes y después de la eliminación real. Si el código elimina dos o más elementos, se llamará a OnDeleting y OnDeleted alternativamente en todos ellos, por turnos.  
   
-##  <a name="rules"></a>Eventos y las reglas de eliminación  
+##  <a name="rules"></a> Eventos y las reglas de eliminación  
  Como alternativa a los controladores de OnDelete, puede definir reglas de eliminación y eventos de eliminación.  
   
 1.  **Eliminar** y **eliminar** se desencadenan las reglas solo en una transacción y no en un deshacer o rehacer. Puede establecerlas para que se pongan en la cola de ejecución al final de la transacción en la que se realiza la eliminación. Las reglas Deleting se ejecutan siempre antes que las reglas Deleted que están en la cola.  
@@ -288,7 +288,7 @@ partial class NestedShapesSampleDocData
   
 ```  
   
-##  <a name="unmerge"></a>Separar  
+##  <a name="unmerge"></a> Separar  
  Se llama a la operación que asocia un elemento secundario a su elemento primario *mezcla*. Se produce cuando un nuevo elemento o grupo de elementos se crea con el cuadro de herramientas, se mueve desde otra parte del modelo o se copia desde el portapapeles. Además de crear una relación de incrustación entre el primario y su nuevo secundario, la operación de combinación también puede configurar otras relaciones, crear elementos auxiliares y establecer valores de propiedad en los elementos. La operación de combinación se encapsula en una directiva de combinación de elementos (EMD).  
   
  Un EMD también encapsula el complementario *separar* o `MergeDisconnect` operación. Si tiene un grupo de elementos que se ha construido mediante una combinación, se recomienda usar la operación anular combinación asociada para quitar un elemento del grupo, si quiere dejar los demás elementos en un estado coherente. La operación anular combinación normalmente usará las técnicas descritas en las secciones anteriores.  

@@ -1,9 +1,9 @@
 ---
-title: "MSI y la implementación de VSIX de DSL | Documentos de Microsoft"
-ms.custom: 
+title: MSI y la implementación de VSIX de DSL | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,15 +12,15 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implementación mediante MSI y VSIX de un DSL
-Puede instalar un lenguaje específico de dominio en su propio equipo o en otros equipos. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ya debe instalarse en el equipo de destino.  
+Puede instalar un lenguaje específico de dominio en su propio equipo o en otros equipos. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ya debe instalarse en el equipo de destino.  
   
-##  <a name="which"></a>Elegir entre VSIX y la implementación de MSI  
+##  <a name="which"></a> Elegir entre VSIX y la implementación de MSI  
  Existen dos métodos de implementación de un lenguaje específico de dominio:  
   
 |Método|Ventajas|  
@@ -28,7 +28,7 @@ Puede instalar un lenguaje específico de dominio en su propio equipo o en otros
 |VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensión)|Muy fácil de implementar: copiar y ejecutar el **.vsix** archivo desde el proyecto DslPackage.<br /><br /> Para obtener más información, consulte [instalar y desinstalar un DSL utilizando el VSX](#Installing).|  
 |MSI (archivo de instalador)|: Permite al usuario abrir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] haciendo doble clic en un archivo DSL.<br />-Asocia un icono con el tipo de archivo DSL en el equipo de destino.<br />-Asocia un XSD (esquema XML) con el tipo de archivo DSL. Esto evita advertencias al carga el archivo en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Debe agregar un proyecto de instalación a la solución para crear un archivo MSI.<br /><br /> Para obtener más información, consulte [implementar un DSL mediante un archivo MSI](#msi).|  
   
-##  <a name="Installing"></a>Instalar y desinstalar un DSL utilizando el VSX  
+##  <a name="Installing"></a> Instalar y desinstalar un DSL utilizando el VSX  
  Cuando se instala el ADSL por este método, el usuario puede abrir un archivo DSL desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], pero no se puede abrir el archivo desde el Explorador de Windows.  
   
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Para instalar un DSL mediante el VSX  
@@ -65,7 +65,7 @@ Puede instalar un lenguaje específico de dominio en su propio equipo o en otros
   
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
-##  <a name="msi"></a>Implementar un DSL en un archivo MSI  
+##  <a name="msi"></a> Implementar un DSL en un archivo MSI  
  Mediante la definición de un archivo MSI (Windows Installer) para ADSL, puede permitir a los usuarios abrir archivos DSL desde el Explorador de Windows. También puede asociar un icono y una descripción breve con la extensión de nombre de archivo. Además, el archivo MSI puede instalar un XSD que puede usarse para validar los archivos DSL. Si lo desea, puede agregar otros componentes en el archivo MSI que se instalará al mismo tiempo.  
   
  Para obtener más información acerca de los archivos MSI y otras opciones de implementación, consulte [implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md).  
@@ -76,7 +76,7 @@ Puede instalar un lenguaje específico de dominio en su propio equipo o en otros
   
 1.  Establecer `InstalledByMsi` en el manifiesto de la extensión. Esto evita que el VSX se instalan y desinstalan excepto por el archivo MSI. Esto es importante si va a incluir otros componentes en el archivo MSI.  
   
-    1.  Open DslPackage\source.extension.tt  
+    1.  Abrir DslPackage\source.extension.tt  
   
     2.  Inserte la siguiente línea antes de `<SupportedProducts>`:  
   

@@ -1,22 +1,22 @@
 ---
-title: "Activación en contexto | Documentos de Microsoft"
-ms.custom: 
+title: Activación en contexto | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: 
+caps.latest.revision: 26
 manager: douge
 ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="in-place-activation"></a>Activación en contexto
 Si la vista del editor hospeda ActiveX u otros controles activos, debe implementar la vista del editor como un control ActiveX o como un objeto de datos de documento activo mediante el modelo de activación en contexto.  
@@ -34,7 +34,7 @@ Si la vista del editor hospeda ActiveX u otros controles activos, debe implement
 ## <a name="objects-and-interfaces-used"></a>Objetos e interfaces usados  
  En la siguiente ilustración, se muestran los objetos usados para crear la activación en contexto.  
   
- ![En &#45; Editor de activación contexto](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
+ ![En&#45;colocar Editor de activación](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Editor de activación en contexto  
   
 > [!NOTE]

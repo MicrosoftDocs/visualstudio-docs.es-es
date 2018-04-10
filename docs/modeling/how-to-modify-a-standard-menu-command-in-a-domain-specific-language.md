@@ -1,9 +1,9 @@
 ---
-title: "Cómo: modificar un comando de menú estándar en un lenguaje específico de dominio | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: modificar un comando de menú estándar en un lenguaje específico de dominio | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Cómo: Modificar comandos de menú estándar en lenguajes específicos de dominio
 Puede modificar el comportamiento de algunos de los comandos estándar que se definen automáticamente en su DSL. Por ejemplo, puede modificar **cortar** para que excluye la información confidencial. Para ello, se invalidan los métodos en una clase de conjunto de comandos. Estas clases se definen en el archivo CommandSet.cs, en el proyecto DslPackage, y derivan de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -36,7 +36,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
 > [!NOTE]
 >  Si desea crear sus propios comandos de menú, vea [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>¿Qué comandos se pueden modificar?  
+##  <a name="what"></a> ¿Qué comandos se pueden modificar?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Para averiguar qué comandos puede modificar  
   
@@ -53,7 +53,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
     > [!NOTE]
     >  Normalmente no debe editar los archivos que se han generado. Las ediciones se perderán la próxima vez que se generen los archivos.  
   
-##  <a name="extend"></a>Extender la clase de conjunto de comando adecuado  
+##  <a name="extend"></a> Extender la clase de conjunto de comando adecuado  
  Cree un nuevo archivo que contiene una declaración parcial de la clase de conjunto de comandos.  
   
 #### <a name="to-extend-the-command-set-class"></a>Para extender la clase de conjunto de comandos  
@@ -78,7 +78,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
   
      **Tenga en cuenta** si utiliza la plantilla de archivo de clase para crear el nuevo archivo, debe corregir el espacio de nombres y el nombre de clase.  
   
-##  <a name="override"></a>Invalide los métodos de comando  
+##  <a name="override"></a> Invalide los métodos de comando  
  Casi todos los comandos tienen dos métodos asociados: el método con un nombre como `ProcessOnStatus`... determina si el comando debe estar visible y habilitado. Se llama siempre que el usuario hace clic con el botón secundario en el diagrama, debe ejecutarse rápidamente y no realiza cambios. `ProcessOnMenu`... se llama cuando el usuario hace clic en el comando y debe realizar la función del comando. Quizás quiera invalidar uno o los dos métodos.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para cambiar cuándo aparece el comando en un menú  
@@ -137,7 +137,7 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. La forma en la que el usuario hizo clic con el botón secundario se incluye en esta lista de formas y conectores. Si el usuario hace clic en una parte en blanco del diagrama, el diagrama es el único miembro de la lista.  
   
--   `this.IsDiagramSelected()` - `true`Si el usuario hace clic en una parte en blanco del diagrama.  
+-   `this.IsDiagramSelected()` - `true` Si el usuario hace clic en una parte en blanco del diagrama.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   

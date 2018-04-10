@@ -1,9 +1,9 @@
 ---
-title: "Personalizar y ampliar un lenguaje específico de dominio | Documentos de Microsoft"
-ms.custom: 
+title: Personalizar y ampliar un lenguaje específico de dominio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir herramientas de modelado:  
@@ -33,7 +33,7 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 > [!NOTE]
 >  Si ha actualizado el archivo de definiciones de DSL, no olvide hacer clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones antes de volver a generar la solución.  
   
-##  <a name="customShapes"></a>En esta sección  
+##  <a name="customShapes"></a> En esta sección  
   
 |Para lograr este efecto|Consulte este tema|  
 |----------------------------|-------------------------|  
@@ -55,7 +55,7 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 |Habilitar copiar, cortar y pegar|Establecer el **habilitar copiar pegar** propiedad de la **Editor** nodo en el Explorador de DSL.|  
 |Copiar vínculos de referencia y sus destinos de cada vez que se copia un elemento. Por ejemplo, copie los comentarios adjuntos a un elemento.|Establecer el **copia propaga** propiedad del rol de origen (representado por la línea en un lado de la relación de dominio en el diagrama de definición DSL).<br /><br /> Escribir código para reemplazar ProcessOnCopy para lograr efectos más complejos.<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
 |Eliminar, cambiar el valor primario o volver a vincular elementos relacionados cuando se elimina un elemento.|Establecer el **propaga eliminar** valor de un rol de relación. Para los efectos más complejos, invalida `ShouldVisitRelationship` y `ShouldVisitRolePlayer` métodos en el `MyDslDeleteClosure` (clase), definida en **DomainModel.cs**<br /><br /> Vea [personalizar el comportamiento de eliminación](../modeling/customizing-deletion-behavior.md)|  
-|Conservar el diseño de la forma y la apariencia de copia y arrastre y coloque.|Agregar las formas y conectores a copiado `ElementGroupPrototype`. Es el método más conveniente para invalidar`ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
+|Conservar el diseño de la forma y la apariencia de copia y arrastre y coloque.|Agregar las formas y conectores a copiado `ElementGroupPrototype`. Es el método más conveniente para invalidar `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
 |Pegar formas en la ubicación elegida, como la posición actual del cursor.|Invalidar `ClipboardCommandSet.ProcessOnCopy()` para usar la versión específica de la ubicación de `ElementOperations.Merge().` vea [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).|  
 |Crear vínculos adicionales al pegar|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Habilitar arrastre y coloque los elementos de este diagrama, otros lenguajes DSL y Windows|Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)|  

@@ -16,10 +16,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 
