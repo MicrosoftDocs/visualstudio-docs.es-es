@@ -29,7 +29,7 @@ ms.lasthandoff: 03/28/2018
 Asegúrese de que su sistema de software cumple las necesidades de los usuarios mediante las herramientas de visualización y modelado de Visual Studio.
 Use herramientas como mapas de código, diagramas de dependencia y diagramas de clases para:  
 
- Para ver qué versiones de Visual Studio admite cada herramienta, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admite cada herramienta, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
 -   Aclarar los requisitos y procesos de negocio de los usuarios.  
 
@@ -112,7 +112,7 @@ Elementos de diagramas de dependencia se encuentran en el proyecto de modelado, 
 -   [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)  
 
     > [!NOTE]
-    >  Algunas versiones de Visual Studio admiten validación de dependencias y versiones de solo lectura de mapas de código para visualización y modelado. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+    >  Algunas versiones de Visual Studio admiten validación de dependencias y versiones de solo lectura de mapas de código para visualización y modelado. Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
 
 ##  <a name="UnderstandingCommunicating"></a> Comprensión y comunicación de información sobre el sistema  
  No hay ningún orden establecido para usar los diagramas de modelado de Visual Studio, por lo que puede usarlos como mejor se adapten a sus necesidades o enfoque. Normalmente, los equipos revisan sus modelos de forma iterativa y con frecuencia a lo largo de un proyecto. Cada diagrama ofrece determinados puntos fuertes para ayudarle a entender, describir y comunicar diferentes aspectos del sistema en desarrollo.  
