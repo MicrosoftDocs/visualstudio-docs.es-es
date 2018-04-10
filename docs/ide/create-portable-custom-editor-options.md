@@ -1,10 +1,10 @@
 ---
-title: "Uso de la configuración EditorConfig en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Uso de la configuración EditorConfig en Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 12/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -12,15 +12,15 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8be85bc578b31b087c77da1444ddd9950a6bc0ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e9ea6cde08724c00c4595774decea35b2bce44f4
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
-En Visual Studio 2017, puede agregar un archivo [EditorConfig](http://editorconfig.org/) al proyecto o código base para aplicar estilos de codificación coherentes para todos los que trabajen en el código base. La configuración de EditorConfig tiene prioridad sobre la configuración global del editor de texto de Visual Studio. Esto significa que puede adaptar cada código base para que use la configuración del editor de texto específica para ese proyecto. Puede establecer sus propias preferencias personales del editor en el cuadro de diálogo **Opciones** de Visual Studio. Esa configuración se aplica siempre que trabaje en un código base sin un archivo .editorconfig, o bien cuando este no reemplaza un valor específico. Un ejemplo de este tipo de preferencia es el estilo de sangría (tabuladores o espacios).
+En Visual Studio 2017, puede agregar un archivo [EditorConfig](http://editorconfig.org/) al proyecto o código base para aplicar estilos de codificación coherentes para todos los que trabajen en el código base. La configuración de EditorConfig tiene prioridad sobre la configuración global del editor de texto de Visual Studio. Esto significa que puede adaptar cada código base para que use la configuración del editor de texto específica para ese proyecto. Puede establecer sus propias preferencias personales del editor en el cuadro de diálogo **Opciones** de Visual Studio. Esa configuración se aplica siempre que trabaje en un código base sin un archivo *.editorconfig*, o bien cuando dicho archivo no reemplaza un valor específico*.* Un ejemplo de este tipo de preferencia es el estilo de sangría (tabuladores o espacios).
 
 La configuración de EditorConfig es compatible con varios IDE y editores de código, incluido Visual Studio. Es un componente portátil que acompaña al código y se pueden aplicar estilos de codificación incluso fuera de Visual Studio.
 
@@ -29,7 +29,7 @@ La configuración de EditorConfig es compatible con varios IDE y editores de có
 
 ## <a name="coding-consistency"></a>Coherencia del código
 
-Las opciones de configuración de los archivos EditorConfig le permiten mantener opciones y estilos de código coherentes en un código base, como el estilo de sangría, el ancho de tabulación, los caracteres de fin de línea y la codificación, entre otros, independientemente del editor o el IDE que use. Por ejemplo, al codificar en C#, si su código base tiene una convención que prefiere que las sangrías siempre consten de cinco caracteres de espacio, que los documentos usen la codificación UTF-8 y que cada línea siempre termine con un CR/LF, puede configurar un archivo .editorconfig para realizar esto.
+Las opciones de configuración de los archivos EditorConfig le permiten mantener opciones y estilos de código coherentes en un código base, como el estilo de sangría, el ancho de tabulación, los caracteres de fin de línea y la codificación, entre otros, independientemente del editor o el IDE que use. Por ejemplo, al codificar en C#, si su código base tiene una convención que prefiere que las sangrías siempre consten de cinco caracteres de espacio, que los documentos usen la codificación UTF-8 y que cada línea siempre termine con un CR/LF, puede configurar un archivo *.editorconfig* para realizar esto.
 
 Las convenciones de codificación que usa en sus proyectos personales pueden diferir de las que usa en los proyectos del equipo. Por ejemplo, puede preferir que, cuando codifique, al aplicar sangría se agregue un carácter de tabulación. En cambio, su equipo puede preferir que la aplicación de sangría agregue cuatro caracteres de espacio en lugar de un carácter de tabulación. Los archivos EditorConfig resuelven este problema permitiéndole que tenga una configuración para cada escenario.
 
@@ -58,7 +58,7 @@ Si quita un archivo EditorConfig del proyecto o código base, debe cerrar y volv
 
 ### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Para agregar un archivo EditorConfig a un proyecto o una solución
 
-1. Abra un proyecto o una solución en Visual Studio. Seleccione el nodo de proyecto o solución, dependiendo de si la configuración de .editorconfig debería aplicarse a todos los proyectos de la solución o solamente a uno. También puede seleccionar una carpeta del proyecto o de la solución en el que agregar el archivo .editorconfig.
+1. Abra un proyecto o una solución en Visual Studio. Seleccione el nodo de proyecto o solución, dependiendo de si la configuración de *.editorconfig* debería aplicarse a todos los proyectos de la solución o solamente a uno. También puede seleccionar una carpeta del proyecto o de la solución donde agregar el archivo *.editorconfig*.
 
 1. En la barra de menús, seleccione **Proyecto** > **Agregar nuevo elemento...** o pulse **Ctrl**+**Mayús**+**A**.
 
@@ -66,7 +66,7 @@ Si quita un archivo EditorConfig del proyecto o código base, debe cerrar y volv
 
 1. En las categorías de la parte izquierda, seleccione **General** y seleccione la plantilla **Archivo de texto**. En el cuadro de texto **Nombre**, indique `.editorconfig` y seleccione **Agregar**.
 
-   Aparecerá un archivo .editorconfig en el Explorador de soluciones y se abrirá en el editor.
+   Aparecerá un archivo *.editorconfig* en el Explorador de soluciones y se abrirá en el editor.
 
    ![Archivo .editorconfig en el Explorador de soluciones](media/editorconfig-in-solution-explorer.png)
 
@@ -89,13 +89,13 @@ Como alternativa, puede instalar la [extensión de servicio de lenguaje de Edito
 
 ## <a name="override-editorconfig-settings"></a>Invalidar la configuración de EditorConfig
 
-Cuando agrega un archivo .editorconfig a una carpeta en su jerarquía de archivos, su configuración se aplica en todos los archivos aplicables de ese nivel y los posteriores. También puede anular la configuración de EditorConfig para un proyecto, código base o parte de código base concretos, como una que use convenciones distintas a otras partes del código base. Esto puede ser útil al incorporar código de otro sitio sin cambiar las convenciones.
+Cuando agrega un archivo *.editorconfig* a una carpeta en su jerarquía de archivos, su configuración se aplica en todos los archivos aplicables de ese nivel y los posteriores. También puede anular la configuración de EditorConfig para un proyecto, código base o parte de código base concretos, como una que use convenciones distintas a otras partes del código base. Esto puede ser útil al incorporar código de otro sitio sin cambiar las convenciones.
 
-Para anular algunas configuraciones de EditorConfig o todas ellas, agregue un archivo .editorconfig en el nivel de la jerarquía de archivos en la que quiera que se aplique esa configuración anulada. La nueva configuración del archivo EditorConfig se aplica a los archivos que se encuentren en el mismo nivel y en cualquier subdirectorio.
+Para anular algunas configuraciones de EditorConfig o todas ellas, agregue un archivo *.editorconfig* en el nivel de la jerarquía de archivos en la que quiera que se aplique esa configuración anulada. La nueva configuración del archivo EditorConfig se aplica a los archivos que se encuentren en el mismo nivel y en cualquier subdirectorio.
 
 ![Jerarquía EditorConfig](../ide/media/vside_editorconfig_hierarchy.png)
 
-Si solo quiere anular algunos valores de configuración, pero no todos, especifique tan solo esos valores en el archivo .editorconfig. Solo se anularán las propiedades que indique explícitamente en el archivo de nivel inferior. Se seguirán aplicando otros valores de configuración de los archivos .editorconfig de nivel superior. Si quiere asegurarse de que _no_ hay ninguna configuración de _ningún_ archivo .editorconfig de nivel superior aplicada a esta parte del código base, agregue la propiedad ```root=true``` al archivo .editorconfig de nivel inferior:
+Si solo quiere anular algunos valores de configuración, pero no todos, especifique tan solo esos valores en el archivo *.editorconfig*. Solo se anularán las propiedades que indique explícitamente en el archivo de nivel inferior. Se seguirán aplicando otros valores de configuración de los archivos *.editorconfig* de nivel superior. Si quiere asegurarse de que _no_ hay ninguna configuración de _ningún_ archivo *.editorconfig* de nivel superior aplicada a esta parte del código base, agregue la propiedad ```root=true``` al archivo *.editorconfig* de nivel inferior:
 
 ```EditorConfig
 # top-most EditorConfig file
@@ -106,19 +106,19 @@ Los archivos EditorConfig se leen de arriba abajo. Los archivos EditorConfig má
 
 ## <a name="editing-editorconfig-files"></a>Edición de los archivos EditorConfig
 
-Visual Studio ayuda a editar archivos .editorconfig proporcionando listas de finalización de IntelliSense.
+Visual Studio ayuda a editar archivos *.editorconfig* proporcionando listas de finalización de IntelliSense.
 
 ![IntelliSense en un archivo .editorconfig](media/editorconfig-intellisense-no-extension.png)
 
 Después de editar el archivo EditorConfig, deberá recargar los archivos de código para que la configuración nueva tenga efecto.
 
-Si modifica muchos archivos .editorconfig, puede resultarle útil la extensión del [servicio de lenguaje EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Algunas de las características de esta extensión incluyen resaltado de sintaxis, IntelliSense mejorado, validación y formato de código.
+Si modifica muchos archivos *.editorconfig*, puede resultarle útil la extensión del servicio de lenguaje [EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Algunas de las características de esta extensión incluyen resaltado de sintaxis, IntelliSense mejorado, validación y formato de código.
 
 ![IntelliSense con la extensión de servicio de lenguaje de EditorConfig](media/editorconfig-intellisense.png)
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente se muestra el estado de la sangría de un fragmento de código de C# antes y después de agregar un archivo .editorconfig al proyecto. La configuración **Tabulaciones** del cuadro de diálogo **Opciones** del editor de texto de Visual Studio se establece para producir caracteres de espacio al presionar la tecla **Tabulador**.
+En el ejemplo siguiente se muestra el estado de la sangría de un fragmento de código de C# antes y después de agregar un archivo *.editorconfig* al proyecto. La configuración **Tabulaciones** del cuadro de diálogo **Opciones** del editor de texto de Visual Studio se establece para producir caracteres de espacio al presionar la tecla **Tabulador**.
 
 ![Configuración de tabulaciones en el editor de texto](../ide/media/vside_editorconfig_tabsetting.png)
 
@@ -126,7 +126,7 @@ Como se esperaba, al presionar la tecla **Tabulador** en la línea siguiente, se
 
 ![Código antes de usar EditorConfig](../ide/media/vside_editorconfig_before.png)
 
-Agregue un nuevo archivo denominado .editorconfig al proyecto con el siguiente contenido. El valor `[*.cs]` significa que este cambio solo se aplica a archivos de código de C# en el proyecto.
+Agregue un nuevo archivo denominado *.editorconfig* al proyecto con el siguiente contenido. El valor `[*.cs]` significa que este cambio solo se aplica a archivos de código de C# en el proyecto.
 
 ```EditorConfig
 # Top-most EditorConfig file
@@ -147,17 +147,17 @@ Si hay un archivo EditorConfig en cualquier lugar de la estructura de directorio
 
    **"Las preferencias de usuario para este tipo de archivo se han invalidado por las convenciones de codificación de este proyecto."**
 
-Esto significa que si los valores de configuración del editor de **Herramientas** > **Opciones** > **Editor de texto** (como el tamaño y estilo de la sangría, el tamaño de la tabulación o las convenciones de codificación) se especifican en un archivo EditorConfig en la estructura de directorios, en el proyecto o por encima de este, las convenciones del archivo EditorConfig invalidan la configuración que aparece en Opciones. Para controlar este comportamiento, cambie la opción **Seguir las convenciones de codificación del proyecto** en **Herramientas** > **Opciones** > **Editor de texto**. Si se desactiva la opción, se desactiva la compatibilidad con EditorConfig en Visual Studio.
+Esto significa que si los valores de configuración del editor de **Herramientas** > **Opciones** > **Editor de texto** (como el tamaño y estilo de la sangría, el tamaño de la tabulación o las convenciones de codificación) se especifican en un archivo EditorConfig en la estructura de directorios, en el proyecto o por encima de este, las convenciones del archivo EditorConfig invalidan la configuración que aparece en **Opciones**. Para controlar este comportamiento, cambie la opción **Seguir las convenciones de codificación del proyecto** en **Herramientas** > **Opciones** > **Editor de texto**. Si se desactiva la opción, se desactiva la compatibilidad con EditorConfig en Visual Studio.
 
 ![Opciones de herramientas: Seguir las convenciones de codificación del proyecto](media/coding_conventions_option.png)
 
-Para buscar cualquier archivo .editorconfig en los directorios primarios, abra un símbolo del sistema y ejecute el siguiente comando desde la raíz del disco que contiene el proyecto:
+Para buscar cualquier archivo *.editorconfig* en los directorios primarios, abra un símbolo del sistema y ejecute el siguiente comando desde la raíz del disco que contiene el proyecto:
 
 ```Shell
 dir .editorconfig /s
 ```
 
-Para controlar el ámbito de las convenciones de EditorConfig, establezca la propiedad ```root=true``` en el archivo .editorconfig en la raíz del repositorio o en el directorio en el que se encuentra el proyecto. Visual Studio busca un archivo denominado .editorconfig en el directorio del archivo abierto y en todos los directorios principales. La búsqueda finaliza cuando se llega a la ruta de acceso del archivo raíz o si se encuentra un archivo .editorconfig con ```root=true```.
+Para controlar el ámbito de las convenciones de EditorConfig, establezca la propiedad ```root=true``` en el archivo *.editorconfig* en la raíz del repositorio o en el directorio en el que se encuentra el proyecto. Visual Studio busca un archivo denominado *.editorconfig* en el directorio del archivo abierto y en todos los directorios principales. La búsqueda finaliza cuando se llega a la ruta de acceso del archivo raíz o si se encuentra un archivo *.editorconfig* con ```root=true```.
 
 ## <a name="see-also"></a>Vea también
 
