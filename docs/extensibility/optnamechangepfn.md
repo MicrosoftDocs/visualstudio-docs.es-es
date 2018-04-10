@@ -1,19 +1,19 @@
 ---
 title: OPTNAMECHANGEPFN | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - OPTNAMECHANGEPFN
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-caps.latest.revision: 
+caps.latest.revision: 11
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
