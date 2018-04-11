@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definición de comandos personalizados para proyectos de Python
 
@@ -50,7 +50,7 @@ Cada comando personalizado puede hacer referencia a un archivo de Python, a un m
 
 Para familiarizarse con los comandos personalizados, en esta sección se describe un ejemplo sencillo en el que se ejecuta el archivo de inicio de un proyecto directamente con python.exe (un comando de ese tipo es, a todos los efectos, lo mismo que usar **Depurar > Iniciar sin depurar**).
 
-1. Cree un proyecto denominado "Python-CustomCommands" con la plantilla "Aplicación de Python" (vea [Inicio rápido: Crear un proyecto de Python desde una plantilla en Visual Studio](quickstart-02-project-from-template.md) para obtener instrucciones si aún no está familiarizado con el proceso).
+1. Cree un proyecto denominado "Python-CustomCommands" con la plantilla "Aplicación de Python" (vea [Inicio rápido: Crear un proyecto de Python desde una plantilla en Visual Studio](quickstart-02-python-in-visual-studio-project-from-template.md) para obtener instrucciones si aún no está familiarizado con el proceso).
 
 1. En `Python_CustomCommands.py`, agregue el código `print("Hello custom commands")`.
 
@@ -152,7 +152,7 @@ Ninguno de los valores de atributo distingue entre mayúsculas y minúsculas.
 | TargetType | Sí | Especifica lo que el atributo Target contiene y cómo se usa junto con el atributo Arguments:<ul><li>**executable**: Se ejecuta el archivo ejecutable mencionado en Target, lo que anexa el valor en Arguments, como si se insertara directamente en la línea de comandos. El valor debe contener solo un nombre de programa, sin argumentos.</li><li>**script**: Se ejecuta `python.exe` con el nombre de archivo mencionado en Target, seguido del valor reflejado en Arguments.</li><li>**module**: Se ejecuta `python -m` seguido del nombre de módulo mencionado en Target y seguido del valor en Arguments.</li><li>**code**: Se ejecuta el código en línea incluido en Target. El valor de Arguments se omite.</li><li>**pip**: Se ejecuta `pip` con el comando mencionado en Target seguido de Arguments; pero si ExecuteIn está establecido en "output", pip da por hecho el comando `install` y usa Target como el nombre de paquete.</li></ul> |
 | Destino | Sí | Nombre de archivo, nombre de módulo, código o comando pip que se usa en función de TargetType. |
 | Argumentos | Optional | Especifica una cadena de argumentos (si los hay) que proporcionar al destino. Cabe decir que cuando TargetType es `script`, los argumentos se proporcionan al programa de Python, no a `python.exe`. Este elemento se omite en el TargetType `code`. |
-| ExecuteIn | Sí | Especifica el entorno en el que se va a ejecutar el comando:<ul><li>**console**: (Valor predeterminado) Se ejecuta Target y los argumentos correspondientes como si se hubieran escrito directamente en la línea de comandos. Mientras Target se está ejecutando, se abre una ventana de comandos, que al finalizar se cierra automáticamente.</li><li>**consolepause**: El proceso es el mismo que con console, pero se espera a que el usuario presione una tecla para cerrar la ventana.</li><li>**output**: Se ejecuta Target y se muestran los resultados en la ventana Resultados de Visual Studio. Si TargetType es "pip", Visual Studio usa Target como el nombre del paquete y anexa los argumentos indicados en Arguments.</li><li>**repl**: Se ejecuta Target en la [ventana interactiva de Python](interactive-repl.md); el nombre para mostrar opcional se usa como título de la ventana.</li><li>**none**: El comportamiento es el mismo que con console.</li></ul>|
+| ExecuteIn | Sí | Especifica el entorno en el que se va a ejecutar el comando:<ul><li>**console**: (Valor predeterminado) Se ejecuta Target y los argumentos correspondientes como si se hubieran escrito directamente en la línea de comandos. Mientras Target se está ejecutando, se abre una ventana de comandos, que al finalizar se cierra automáticamente.</li><li>**consolepause**: El proceso es el mismo que con console, pero se espera a que el usuario presione una tecla para cerrar la ventana.</li><li>**output**: Se ejecuta Target y se muestran los resultados en la ventana Resultados de Visual Studio. Si TargetType es "pip", Visual Studio usa Target como el nombre del paquete y anexa los argumentos indicados en Arguments.</li><li>**repl**: Se ejecuta Target en la [ventana interactiva de Python](python-interactive-repl-in-visual-studio.md); el nombre para mostrar opcional se usa como título de la ventana.</li><li>**none**: El comportamiento es el mismo que con console.</li></ul>|
 | WorkingDirectory | Optional | Carpeta en la que se va a ejecutar el comando. |
 | ErrorRegex<br>WarningRegEx | Optional | Se usa únicamente cuando ExecuteIn es `output`. Ambos valores especifican una expresión regular con la que Visual Studio analiza los resultados del comando para mostrar los errores y las advertencias en la ventana Lista de errores. Si no se especifica, el comando no afecta a la ventana Lista de errores. Para más información sobre qué espera Visual Studio, vea [Grupos de capturas con nombre](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Optional | Lista de requisitos de paquete del comando en el que se usa el mismo formato que en [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). El comando **Ejecutar PyLint**, por ejemplo, especifica `pylint>=1.0.0`. Antes de ejecutar el comando, Visual Studio comprueba que todos los paquetes que figuran en la lista están instalados. Visual Studio usa pip para instalar los paquetes que faltan. |

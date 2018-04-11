@@ -11,17 +11,17 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 0835c2e33dcd3c8ffa2556a406cdbd8e2d2ff265
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Introducción a C# y ASP.NET Core en Visual Studio
 En este tutorial para el desarrollo de C# con ASP.NET Core mediante Visual Studio, creará una aplicación web de C# ASP.NET Core, le agregará código, explorará algunas características del IDE y ejecutará la aplicación.

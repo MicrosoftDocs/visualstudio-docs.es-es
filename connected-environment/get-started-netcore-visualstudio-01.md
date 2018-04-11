@@ -2,17 +2,17 @@
 title: 'Crear un entorno de desarrollo de .NET Core con contenedores usando Kubernetes en la nube con Visual Studio - Paso 1: Instalar las herramientas | Microsoft Docs'
 author: johnsta
 ms.author: johnsta
-ms.date: 02/20/2018
+ms.date: 04/05/2018
 ms.topic: get-started-article
 ms.technology: vsce-kubernetes
 description: Desarrollo rápido de Kubernetes con contenedores y microservicios en Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, contenedores
 manager: ghogen
-ms.openlocfilehash: 4f25d4ae550f47533628bf073f2f22d9ed158cab
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 64aa0b322c777baa78da5bf86cb1220a47128d93
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Introducción a Connected Environment con .NET Core y Visual Studio
 
@@ -28,8 +28,6 @@ En esta guía aprenderá a:
 ## <a name="install-the-connected-environment-cli"></a>Instalar la CLI de Connected Environment
 Connected Environment requiere una configuración mínima del equipo local. La mayor parte de la configuración del entorno de desarrollo se almacena en la nube y se puede compartir con otros usuarios.
 
-1. Instale [Git para Windows](https://git-scm.com/downloads) seleccionando las opciones de instalación predeterminadas. 
-1. Descargue **kubectl.exe** desde [este vínculo](https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/windows/amd64/kubectl.exe) y **guárdelo** en una ubicación de su ruta de acceso.
 1. Descargue y ejecute el [instalador de la CLI de Connected Environment](https://aka.ms/get-vsce-windows). 
 
 ## <a name="get-kubernetes-debugging-tools"></a>Obtener las herramientas de depuración de Kubernetes

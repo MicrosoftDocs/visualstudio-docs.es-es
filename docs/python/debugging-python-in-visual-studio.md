@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a9e8cf75bcdf11994f549be3ef47d5a95868eeef
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Depuración del código de Python
 
@@ -201,4 +201,4 @@ La ventana Depuración interactiva tiene su propio conjunto de opciones, a las q
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener información detallada sobre el depurador de Visual Studio, vea [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md) (Depuración en Visual Studio).
+Para obtener información detallada sobre el depurador de Visual Studio, vea [Debugging in Visual Studio](../debugger/debugger-feature-tour.md) (Depuración en Visual Studio).
