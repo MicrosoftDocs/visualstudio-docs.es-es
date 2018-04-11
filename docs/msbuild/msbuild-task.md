@@ -1,11 +1,11 @@
 ---
 title: MSBuild (tarea) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-caps.latest.revision: 
+caps.latest.revision: 32
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a5ecaef8f384a9597243fbe2026290e65295da8d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-task"></a>MSBuild (Tarea)
 Compila proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] desde otro proyecto de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -36,7 +36,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `MSBuild` .  
   
-|Parámetro|Description|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |`BuildInParallel`|Parámetro `Boolean` opcional.<br /><br /> Si `true`, los proyectos especificados en el parámetro `Projects` se compilan en paralelo, si es posible. El valor predeterminado es `false`.|  
 |`Projects`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` requerido.<br /><br /> Especifica los archivos del proyecto que se van a compilar.|  
@@ -67,7 +67,7 @@ Compila proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes
 ## <a name="passing-properties-to-projects"></a>Pasar propiedades a los proyectos  
  En las versiones de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] anteriores a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, pasar distintos conjuntos de propiedades a diferentes proyectos enumerados en el elemento [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] era una tarea ardua. Si se utilizaba el atributo de propiedades de la [tarea MSBuild](../msbuild/msbuild-task.md), su configuración se aplicaba a todos los proyectos que se estaban compilando, a menos que procesara por lotes la [tarea MSBuild](../msbuild/msbuild-task.md) y proporcionara condicionalmente diferentes propiedades para cada proyecto de la lista de elementos.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, en cambio, ofrece dos nuevos elementos de metadatos reservados, Properties y AdditionalProperties, que proporcionan una manera flexible de pasar propiedades diferentes para distintos proyectos que se están compilando con la [tarea MSBuild](../msbuild/msbuild-task.md).  
+ Sin embargo, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 ofrece dos nuevos elementos de metadatos reservados, Properties y AdditionalProperties, que proporcionan una manera flexible de pasar propiedades diferentes para distintos proyectos que se están compilando mediante la [tarea MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
 >  Estos nuevos elementos de metadatos solo son aplicables a elementos que se pasan en el atributo Projects de la [tarea MSBuild](../msbuild/msbuild-task.md).  

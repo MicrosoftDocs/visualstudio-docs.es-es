@@ -1,12 +1,12 @@
 ---
-title: "Cómo: exponer código a VBA en un proyecto de Visual C# | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: exponer código a VBA en un proyecto de Visual C# | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Cómo: Exponer código a VBA en un proyecto de Visual C#
   Puede exponer el código de un proyecto de Visual C# en Visual Basic para aplicaciones (VBA) si desea que los dos tipos de código que interactúan entre sí.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="exposing-code-in-a-visual-c-project"></a>Exponer código en un proyecto de Visual C#  
  Para habilitar el código VBA llamar a código en un proyecto de Visual C#, modifique el código por lo que es visible para COM y, a continuación, establezca el **ReferenceAssemblyFromVbaProject** propiedad **True** en el diseñador.  
   
- Para ver un tutorial que muestra cómo llamar a un método en un proyecto de Visual C# desde VBA, vea [Tutorial: llamar a código desde VBA en un Visual C &#35; Proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+ Para ver un tutorial que muestra cómo llamar a un método en un proyecto de Visual C# desde VBA, vea [Tutorial: llamar a código desde VBA en un Visual C&#35; proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
 #### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>Exponer código en un proyecto de Visual C# a VBA  
   
@@ -108,8 +108,8 @@ ms.lasthandoff: 02/09/2018
 ## <a name="see-also"></a>Vea también  
  [Cómo: crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [Tutorial: Llamar a código desde VBA en una Visual C &#35; Proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Tutorial: Llamar a código desde VBA en una C Visual&#35; proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Cómo: Exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

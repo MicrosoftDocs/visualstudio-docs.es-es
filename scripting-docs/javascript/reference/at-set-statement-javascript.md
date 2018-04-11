@@ -1,13 +1,13 @@
 ---
-title: "@set(Instrucción de JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: '@set (Instrucción de JavaScript) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@set_JavaScriptKeyword'
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - '@set statement'
 - conditional compilation, variables
 ms.assetid: 36f15926-3e69-422d-82a2-d186dc088203
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10f74a1d57a61d78897b660812a6fd8078244b6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="set-statement-javascript"></a>@set(Instrucción de JavaScript)
+# <a name="set-statement-javascript"></a>@set (Instrucción de JavaScript)
 Crea variables utilizadas con instrucciones de compilación condicional.  
   
 > [!WARNING]
@@ -43,11 +43,11 @@ Crea variables utilizadas con instrucciones de compilación condicional.
 ```  
   
 ## <a name="parameters"></a>Parámetros  
- *VarName*  
- Obligatorio. Nombre de variable de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] válido. Debe ir siempre precedido de un carácter "@".  
+ *varname*  
+ Requerido. Nombre de variable de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] válido. Debe ir siempre precedido de un carácter "@".  
   
  `term`  
- Obligatorio. Cero o más operadores unarios seguidos de una constante, variable de compilación condicional o expresión entre paréntesis.  
+ Requerido. Cero o más operadores unarios seguidos de una constante, variable de compilación condicional o expresión entre paréntesis.  
   
 ## <a name="remarks"></a>Comentarios  
  Las variables de tipo numérico y booleano se admiten en la compilación condicional. Las variables de cadena no se aceptan. Las variables creadas mediante `@set` se suelen usar en instrucciones de compilación condicional, aunque se pueden usar en cualquier parte del código de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
@@ -96,5 +96,5 @@ Crea variables utilizadas con instrucciones de compilación condicional.
 ## <a name="see-also"></a>Vea también  
  [Compilación condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variables de compilación condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onInstrucción](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@cc_on Instrucción](../../javascript/reference/at-cc-on-statement-javascript.md)   
  [@if Instrucción](../../javascript/reference/at-if-statement-javascript.md)

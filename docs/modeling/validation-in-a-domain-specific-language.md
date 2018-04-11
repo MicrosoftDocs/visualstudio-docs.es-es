@@ -1,9 +1,9 @@
 ---
-title: "Validación en un lenguaje específico de dominio | Documentos de Microsoft"
-ms.custom: 
+title: Validación en un lenguaje específico de dominio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, constraints
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>La validación en los lenguajes específicos de dominio
 Como autor de un lenguaje específico de dominio (DSL), puede definir restricciones de validación para comprobar que el modelo creado por el usuario tiene significado. Por ejemplo, si su DSL permite a los usuarios dibujar un árbol genealógico de personas y antepasados, podría escribir una restricción que garantice que la fecha de nacimiento de los hijos sea posterior a la de los padres.  
@@ -57,7 +57,7 @@ Como autor de un lenguaje específico de dominio (DSL), puede definir restriccio
   
 1.  Habilite la validación en el **Editor\Validation** nodo:  
   
-    1.  Abra **Dsl\DslDefinition.dsl**.  
+    1.  Open **Dsl\DslDefinition.dsl**.  
   
     2.  En el Explorador de DSL, expanda la **Editor** nodo y seleccione **validación**.  
   
@@ -303,7 +303,7 @@ namespace Company.FamilyTree
   
  También se llama a los controladores después de las operaciones de deshacer o rehacer que afectan a los vínculos o elementos.  
   
-##  <a name="custom"></a>Categorías de validación personalizada  
+##  <a name="custom"></a> Categorías de validación personalizada  
  Además de las categorías de validación estándar, como Menu y Open, puede definir sus propias categorías. Puede invocar estas categorías desde el código de programa. El usuario no puede invocarlas directamente.  
   
  Un uso típico de las categorías personalizadas es definir una categoría que pruebe si el modelo cumple las condiciones previas de una herramienta determinada.  
@@ -331,7 +331,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>Alternativas a la validación  
+##  <a name="alternatives"></a> Alternativas a la validación  
  Las restricciones de validación notifican los errores, pero no cambian el modelo. Si, en su lugar, quiere evitar que el modelo quede invalidado, puede usar otras técnicas.  
   
  Sin embargo, estas técnicas no se recomiendan. Normalmente lo mejor es dejar que el usuario decida cómo corregir un modelo no válido.  

@@ -1,11 +1,11 @@
 ---
 title: MT (Tarea) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -24,17 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 
+caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
-ms.translationtype: HT
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mt-task"></a>MT (Tarea)
 Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más información, vea "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
@@ -45,7 +45,7 @@ Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más infor
 > [!NOTE]
 >  La documentación de mt.exe usa un guion (**-**) como prefijo para las opciones de línea de comandos, pero en este tema se usa una barra diagonal (**/**). Se aceptan ambos prefijos.  
   
-|Parámetro|Description|  
+|Parámetro|Descripción|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Parámetro **String[]** opcional.<br /><br /> Especifica el nombre de uno o varios archivos de manifiesto.<br /><br /> Para obtener más información, vea la opción **/manifest** de "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  
 |**AdditionalOptions**|Parámetro **String** opcional.<br /><br /> Una lista de opciones de la línea de comandos. Por ejemplo, "*/option1 /option2 /option#*". Use este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea **MT**.<br /><br /> Para obtener más información, vea "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).|  

@@ -1,12 +1,12 @@
 ---
 title: Solucionar problemas de soluciones de SharePoint | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Solucionar problemas de soluciones de SharePoint
   Los siguientes problemas o alertas pueden producirse al depurar las soluciones de SharePoint mediante el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [depurar soluciones de flujo de trabajo de SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  Este problema se produce si cambia el nombre de una instancia de lista importada y, a continuación, la ejecuta en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Mensaje de error  
- Error de compilación: se ha producido un Error en el paso de implementación "Activar características": el archivo Template\Features\\[*Importar proyecto**característica**nombre*] \Files\Lists \\[*anterior**nombre de la lista*] \Schema.xml no existe.  
+ Error de compilación: se ha producido un Error en el paso de implementación "Activar características": el archivo Template\Features\\[*Importar proyecto**característica**nombre*] \Files\Lists\\[*anterior ** nombre de la lista*] \Schema.xml no existe.  
   
 ### <a name="resolution"></a>Resolución  
  Al importar una instancia de lista, se agrega un atributo denominado CustomSchema al archivo Elements.xml de la instancia de lista. Elements.xml incluye la ruta de acceso de un archivo schema.xml personalizado para la instancia de lista. Al cambiar el nombre de la instancia de lista en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cambia la ruta de acceso de implementación para el archivo schema.xml personalizado, pero el valor de ruta de acceso del atributo CustomSchema no se actualiza. Como resultado, la instancia de lista no puede encontrar el archivo schema.xml en la ruta de acceso anterior especificada en el atributo CustomSchema cuando se activa la característica.  

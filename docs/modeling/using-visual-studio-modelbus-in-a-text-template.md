@@ -1,9 +1,9 @@
 ---
 title: Uso de ModelBus de Visual Studio en una plantilla de texto | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usar ModelBus de Visual Studio en plantillas de texto
 Si escribe plantillas de texto que lee un modelo que contenga [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hace referencia a ModelBus, desea resolver las referencias para tener acceso a los modelos de destino. En ese caso, tendrá que adaptar las plantillas de texto y los que se hace referencia lenguajes específicos de dominio (DSL):  
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  Crear un nuevo DSL mediante la plantilla de solución de lenguaje mínima. Nombre del idioma MBConsumer y establezca la extensión de nombre de archivo a ".consume".  
   
-2.  En el proyecto ADSL, agregue una referencia al ensamblado MBProvider DSL. Haga clic en `MBConsumer\Dsl\References` y, a continuación, haga clic en **Agregar referencia**. En el **examinar** ficha, busque`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  En el proyecto ADSL, agregue una referencia al ensamblado MBProvider DSL. Haga clic en `MBConsumer\Dsl\References` y, a continuación, haga clic en **Agregar referencia**. En el **examinar** ficha, busque `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      Esto le permite crear código que utilice otra DSL. Si desea crear las referencias a varias DSL, agréguela también.  
   
