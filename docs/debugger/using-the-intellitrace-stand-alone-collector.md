@@ -74,7 +74,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
   
 5.  [Recopilar datos de una aplicación web o de una aplicación de SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)  
   
-     O bien  
+     -o bien-  
   
      [Recopilar datos de una aplicación administrada](#BKMK_Collect_Data_from_Executables)  
   
@@ -195,7 +195,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
   
              `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-         O bien  
+         -o bien-  
   
     -   Para configurar permisos con el Explorador de Windows (o el Explorador de archivos):  
   
