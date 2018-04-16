@@ -16,12 +16,12 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Tutorial: Crear un host de plantillas de texto personalizadas
-A *plantilla de texto ** host* proporciona un entorno que permite el *motor de transformación de plantillas de texto* para que se ejecute. El host es responsable de administrar la interacción del motor con el sistema de archivos. El motor o *procesador de directivas* que necesita un archivo o un ensamblado puede solicitar un recurso desde el host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, consulte [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).  
+A *plantilla de texto**host* proporciona un entorno que permite el *motor de transformación de plantillas de texto* para que se ejecute. El host es responsable de administrar la interacción del motor con el sistema de archivos. El motor o *procesador de directivas* que necesita un archivo o un ensamblado puede solicitar un recurso desde el host. Este puede entonces buscar en los directorios y en la memoria caché global de ensamblados el recurso solicitado. Para obtener más información, consulte [el proceso de transformación de plantillas de texto](../modeling/the-text-template-transformation-process.md).  
   
  Puede escribir un host personalizado si desea usar el *transformación de plantillas de texto* fuera de la funcionalidad de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o si desea integrar esa funcionalidad en herramientas personalizadas. Para crear un host personalizado, debe crear una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Para consultar la documentación de los métodos individuales, vea <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

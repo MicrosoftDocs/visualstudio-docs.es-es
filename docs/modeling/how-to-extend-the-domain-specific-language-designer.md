@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ Puede crear extensiones para el diseñador que se usa para editar las definicion
   
  Para implementar las extensiones en el método main [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]y a otros equipos, siga estos pasos:  
   
-1.  Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\*\\\*.vsix  
+1.  Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\*\*\\\*.vsix  
   
 2.  Copie este archivo en el equipo de destino y, a continuación, en el Explorador de Windows (o explorador de archivos), haga doble clic en él.  
   

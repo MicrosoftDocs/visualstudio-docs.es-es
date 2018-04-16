@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/10/2018
 ---
@@ -104,7 +104,7 @@ Puede instalar un lenguaje específico de dominio en su propio equipo o en otros
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se creará un archivo denominado **CreateMsiSetupProject.vdproj**.  
   
-6.  En el Explorador de Windows, copie Dsl\\*.vdproj a una carpeta nueva denominada el programa de instalación.  
+6.  En el Explorador de Windows, copie Dsl\\\*.vdproj a una carpeta nueva denominada el programa de instalación.  
   
      (Si lo desea, ahora puede excluir CreateMsiSetupProject.tt desde el proyecto de Dsl.)  
   

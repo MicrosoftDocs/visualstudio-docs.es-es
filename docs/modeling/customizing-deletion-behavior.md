@@ -17,7 +17,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/10/2018
 ---
@@ -79,7 +79,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
 >  Para agregar código de programa a la definición DSL, cree un archivo de código independiente en el **Dsl** del proyecto y escribir las definiciones parciales para aumentar las clases en la carpeta de código generado. Para obtener más información, consulte [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Definir una clausura de eliminación  
- La operación de eliminación utiliza la clase *YourModel *** DeleteClosure** para determinar qué elementos se deben eliminar, dada una selección inicial. Llama a `ShouldVisitRelationship()` y a `ShouldVisitRolePlayer()` repetidamente, recorriendo el gráfico de relaciones. Puede invalidar estos métodos. ShouldVisitRolePlayer se proporciona con la identidad de un vínculo y el elemento en uno de los roles del vínculo. Debe devolver uno de los siguientes valores:  
+ La operación de eliminación utiliza la clase *YourModel***DeleteClosure** para determinar qué elementos se deben eliminar, dada una selección inicial. Llama a `ShouldVisitRelationship()` y a `ShouldVisitRolePlayer()` repetidamente, recorriendo el gráfico de relaciones. Puede invalidar estos métodos. ShouldVisitRolePlayer se proporciona con la identidad de un vínculo y el elemento en uno de los roles del vínculo. Debe devolver uno de los siguientes valores:  
   
 -   **VisitorFilterResult.Yes**: se debe eliminar el elemento y el rastreador debe continuar para probar el elemento de otros vínculos.  
   
