@@ -3,14 +3,16 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
-title: "Documentación sobre desarrollo móvil con C++ | Microsoft Docs"
+ms.technology: vs-ide-mobile
+title: Documentación sobre desarrollo móvil con C++ | Microsoft Docs
 description: Cree aplicaciones C++ nativas para dispositivos iOS, Android y Windows con Visual Studio.
-ms.workload: apexprodleads
-ms.openlocfilehash: ec8f21742192a098543986d117241d2bb29bb36d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- apexprodleads
+ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-development-with-c-documentation"></a>Desarrollo móvil con documentación de C++
 

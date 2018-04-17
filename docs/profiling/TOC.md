@@ -1,6 +1,6 @@
 
 # [Documentación de generación de perfiles](index.md)
-# Información general
+# [Información general](profiling-overview.md)
 # Guías de inicio rápido
 ## [Primer vistazo a la generación de perfiles](profiling-feature-tour.md)
 ## [Análisis del uso de CPU (administrado)](quickstart-cpu-usage-managed.md)
@@ -208,15 +208,15 @@
 ##### [Generación rápida de perfiles de sitio web con VSPerfASPNETCmd](rapid-web-site-profiling-with-vsperfaspnetcmd.md)
 ##### [Recopilación de estadísticas de aplicación para aplicaciones web ASP.NET utilizando el método de muestreo del generador de perfiles desde la línea de comandos](collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)
 ###### [Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar estadísticas de aplicación mediante la línea de comandos](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)
-##### [Recopilación de datos detallados de tiempo para una aplicación web ASP.NET mediante el método de instrumentación del generador de perfiles en la línea de comandos](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)
+##### [Recopilación de datos detallados de tiempo para una aplicación web ASP.NET mediante el método de instrumentación del generador de perfiles en la línea de comandos](collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)
 ###### [Instrumentación de una aplicación web ASP.NET compilada estáticamente y recopilación de datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
-###### [Instrumentación de una aplicación web ASP.NET compilada dinámicamente y recopilación de datos detallados de control de tiempo con el generador de perfiles utilizando la línea de comandos](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)
+###### [Instrumentación de una aplicación web ASP.NET compilada dinámicamente y recopilación de datos detallados de control de tiempo con el generador de perfiles utilizando la línea de comandos](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)
 ##### [Recopilación de datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles](collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)
 ###### [Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)
 ##### [Recopilación de datos de memoria de una aplicación web ASP.NET con la línea de comandos del generador de perfiles](collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)
 ###### [Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de memoria mediante la línea de comandos](how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)
 ###### [Instrumentación de una aplicación web ASP.NET compilada estáticamente y recopilación de datos de memoria mediante la línea de comandos del generador de perfiles](how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
-###### [Instrumentación de una aplicación web ASP.NET compilada dinámicamente y recopilación de datos de memoria mediante la línea de comandos del generador de perfiles](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+###### [Instrumentación de una aplicación web ASP.NET compilada dinámicamente y recopilación de datos de memoria mediante la línea de comandos del generador de perfiles](how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
 ##### [Modificación de archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente](how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md)
 #### [Generación de perfiles de servicio desde la línea de comandos](command-line-profiling-of-services.md)
 ##### [Recopilación de estadísticas de la aplicación para los servicios utilizando el método de muestreo del generador de perfiles](collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)
