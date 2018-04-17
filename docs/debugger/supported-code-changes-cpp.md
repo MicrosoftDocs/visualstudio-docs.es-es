@@ -1,12 +1,10 @@
 ---
-title: "Admite cambios en el código (C++) | Documentos de Microsoft"
-ms.custom: 
+title: Admite cambios en el código (C++) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - what's new [C#], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
-caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8b3ced43c776cc948467d68b2112fb808dd2a48c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8752cb6574a514baa121de744e381e7e37041f11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-code-changes-c"></a>Cambios admitidos en el código (C++)
 Con Visual C++, Editar y continuar controla la mayoría de los tipos de cambios del código. Sin embargo, algunos cambios no se pueden aplicar durante la ejecución de programa. Para aplicar estos cambios, debe detener la ejecución y compilar una versión nueva del código.  

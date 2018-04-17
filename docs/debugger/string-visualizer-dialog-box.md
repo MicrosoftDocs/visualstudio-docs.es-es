@@ -1,12 +1,9 @@
 ---
 title: Ver cadenas en un visualizador de cadenas | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/11/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - string visualizer
 - visualizers, string
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 801618c900f11a562b42e610c56dfa7855dfaf39
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 637e046ff99bfaee01ec2484c784d69734ff5118
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Ver las cadenas en un visualizador de cadenas en Visual Studio
 Durante la depuración, puede abrir un visualizador de cadenas para ver las cadenas que son demasiado largos para ver en una ventana de punta o el depurador de datos. En muchos escenarios, el visualizador puede ayudarle a identificar las cadenas con formato incorrecto.

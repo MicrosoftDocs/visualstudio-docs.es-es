@@ -1,12 +1,10 @@
 ---
-title: "Enviar mensajes de diagnóstico a la ventana de salida | Documentos de Microsoft"
-ms.custom: 
+title: Enviar mensajes de diagnóstico a la ventana de salida | Documentos de Microsoft
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], diagnostic messages in Output window
 - Debug class
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 36b85d16fffe8ddf6e0523eecca09e044283b7e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Enviar mensajes de diagnóstico a la ventana de salida
 Puede escribir mensajes en tiempo de ejecución para la **salida** ventana mediante el `Debug` clase o la `Trace` (clase), que forman parte de la <xref:System.Diagnostics> biblioteca de clases. Utilice la clase Debug si sólo genera resultados en la versión de depuración del programa. Utilice la clase Trace si desea generar resultados en las versiones de depuración y de lanzamiento.  

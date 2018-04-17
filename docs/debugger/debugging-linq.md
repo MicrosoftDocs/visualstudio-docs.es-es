@@ -1,12 +1,10 @@
 ---
 title: Depurar LINQ | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +17,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b08f98e7073ad1c0a42d596424d544d5624f272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-linq"></a>Depurar LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite la depuración de código de Language-Integrated Query (LINQ), con algunas limitaciones. La mayor parte de las características de depuración funcionan con instrucciones LINQ, entre ellas la ejecución paso a paso, el establecimiento de puntos de interrupción y la presentación de resultados en las ventanas del depurador. En este tema se describe las principales limitaciones de la depuración LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>Ver los resultados LINQ  
+##  <a name="BKMK_ViewingLINQResults"></a> Ver los resultados LINQ  
  Puede ver el resultado de una instrucción LINQ mediante Información sobre datos, ventana Inspección y cuadro de diálogo Inspección rápida. Al usar una ventana de código fuente, puede pausar el puntero en una consulta en la ventana de código fuente para que aparezca una información sobre datos. Puede copiar una variable LINQ y pegarla en la ventana Inspección o en el cuadro de diálogo Inspección rápida.  
   
  En LINQ, una consulta no se evalúa cuando se crea o declara, pero únicamente cuando se usa. Por consiguiente, la consulta no tiene un valor hasta que se evalúe. Para obtener una descripción completa de creación de consultas y evaluación, consulte [Introducción a las consultas de LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) o [escribir la primera consulta con LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Evaluar una consulta puede producir efectos secundarios, que son cambios en el valor de los datos o en el estado del programa. No todas las consultas tienen los efectos secundarios. Para determinar si una consulta se puede evaluar sin ningún riesgo ni efectos secundarios, debe entender el código que implementa la consulta.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Depurar paso a paso y LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Depurar paso a paso y LINQ  
  Si depura código LINQ, la ejecución paso a paso presenta algunas diferencias de comportamiento que debe conocer.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -108,7 +106,7 @@ End Function
   
  La consulta revisada llama a la función `IsEven` en cada paso a través de `items`. Puede usar las ventanas del depurador para ver si cada elemento cumple la condición especificada, y puede recorrer paso a paso el código en `IsEven`. El predicado en este ejemplo es bastante simple. Sin embargo, si tiene un predicado más complejo debe realizar la depuración, esta técnica puede ser muy útil.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Editar y continuar no se admite en LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Editar y continuar no se admite en LINQ  
  Editar y continuar admite cambios en las consultas LINQ con limitaciones. Para obtener más información, consulte [cambios admitidos en EnC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Vea también  

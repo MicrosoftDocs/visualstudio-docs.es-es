@@ -1,29 +1,25 @@
 ---
 title: Crear vistas personalizadas de los objetos nativos en el depurador | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
 - C++
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 40a78f95ed98b0486b1ffa85eabea3ae8591b823
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Crear vistas personalizadas de los objetos nativos en el depurador de Visual Studio
 El marco Natvis de Visual Studio permite personalizar la forma en que Visual Studio muestra los tipos nativos en ventanas de variables del depurador (por ejemplo, el **inspección** ventana, **locales** ventana y en  **Información sobre datos**.
@@ -464,7 +460,7 @@ El marco Natvis de Visual Studio permite personalizar la forma en que Visual Stu
 -   `ValueNode` puede dejarse vacío o usar `this` para hacer referencia al propio nodo de lista de vínculo.  
   
 #### <a name="customlistitems-expansion"></a>Expansión CustomListItems  
- La expansión `CustomListItems` le permite escribir una lógica personalizada para recorrer una estructura de datos, como una tabla hash. Debe usar `CustomListItems` para visualizar datos estructuras en que todo lo que necesita evaluar se pueda expresar mediante expresiones de C++, pero no se ajustan lo suficiente al molde para `ArrayItems`, `TreeItems`, o`LinkedListItems.`  
+ La expansión `CustomListItems` le permite escribir una lógica personalizada para recorrer una estructura de datos, como una tabla hash. Debe usar `CustomListItems` para visualizar datos estructuras en que todo lo que necesita evaluar se pueda expresar mediante expresiones de C++, pero no se ajustan lo suficiente al molde para `ArrayItems`, `TreeItems`, o `LinkedListItems.`  
   
  El visualizador de CAtlMap es un ejemplo excelente de dónde es adecuado `CustomListItems` .  
   
@@ -542,7 +538,7 @@ Se admiten las siguientes funciones intrínsecas:
 ####  <a name="BKMK_ExpandedItem_expansion"></a> Expansión de ExpandedItem  
  El elemento `ExpandedItem` se puede utilizar para generar una vista secundaria agregada que muestre las propiedades de las clases base o los miembros de datos como si fueran elementos secundarios del tipo visualizado. Se evalúa la expresión especificada y se anexan los nodos secundarios del resultado a la lista secundaria del tipo visualizado. Por ejemplo, suponga que tenemos un tipo de puntero inteligente `auto_ptr<vector<int>>`, que normalmente se muestra como:  
   
- ![Auto &#95; ptr &#60; vector &#60; int &#62; &#62; expansión predeterminada](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
+ ![Auto&#95;ptr&#60;vector&#60;int&#62; &#62; expansión predeterminada](../debugger/media/dbg_natvis_expand_expandeditem_default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
   
  Para ver los valores del vector, tiene que examinar en la ventana de variables dos niveles que pasan por el miembro _Myptr. Al agregar un elemento `ExpandedItem` , puede eliminar la variable `_Myptr` de la jerarquía y ver directamente los elementos de vector:  
   
@@ -555,7 +551,7 @@ Se admiten las siguientes funciones intrínsecas:
 </Type>  
 ```  
   
- ![Auto &#95; ptr &#60; vector &#60; int &#62; &#62; Expansión de ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
+ ![Auto&#95;ptr&#60;vector&#60;int&#62; &#62; expansión de ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
   
  En el ejemplo siguiente se muestra cómo agregar propiedades de la clase base en una clase derivada. Supongamos que la clase `CPanel` se deriva de `CFrameworkElement`. En lugar de repetir las propiedades procedentes de la clase base `CFrameworkElement` , el nodo `ExpandedItem` permite anexar esas propiedades a la lista secundaria de la clase `CPanel` . El **nd** especificador de formato, que desactiva la visualización de búsqueda de coincidencias para la clase derivada, aquí es necesario. En caso contrario, la expresión `*(CFrameworkElement*)this` hace que el `CPanel` visualización se vuelva a aplicar porque las reglas de coincidencia de tipos de la visualización predeterminada consideran la más adecuada. Mediante el **nd** especificador de formato indica al depurador que use la visualización de la clase base o la expansión predeterminada de la clase base si la clase base no tiene una visualización.  
   

@@ -1,27 +1,25 @@
 ---
 title: Sugerencias y trucos en el depurador de Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dacce06dc59724b7f8feba8f84d2b781ba56ed9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d5a748541aa9c50b698eda441f38c88f1e791c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información acerca de productividad sugerencias y trucos para el depurador de Visual Studio
 

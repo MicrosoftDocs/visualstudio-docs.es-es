@@ -1,12 +1,10 @@
 ---
-title: "CA1710: Los identificadores deberían tener el sufijo correcto | Documentos de Microsoft"
-ms.custom: 
+title: 'CA1710: Los identificadores deberían tener el sufijo correcto | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1710
 - IdentifiersShouldHaveCorrectSuffix
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IdentifiersShouldHaveCorrectSuffix
 - CA1710
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d1593800a2cde8ff0aa1bbecd169f5f3ebd601cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ae9af2a4178dd06d9f849adeb1dc42c1c0bffe08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deberían tener el sufijo correcto
 |||  

@@ -1,12 +1,10 @@
 ---
 title: 'CA1044: Las propiedades no deben ser de solo escritura | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - PropertiesShouldNotBeWriteOnly
 - CA1044
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1044
 - PropertiesShouldNotBeWriteOnly
 ms.assetid: 8386bf3a-b161-4841-bf8b-92591595aea9
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cdb3ac5479193236b146c7c2607e5a27727695a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6f1e6e3703882948e4194253508de9f834b55b68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Las propiedades no deben ser de solo escritura
 |||  
@@ -46,7 +44,7 @@ ms.lasthandoff: 12/22/2017
  Se recomienda encarecidamente que no se suprima una advertencia de esta regla.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente, `BadClassWithWriteOnlyProperty` es un tipo con una propiedad de solo escritura. `GoodClassWithReadWriteProperty`contiene el código corregido.  
+ En el ejemplo siguiente, `BadClassWithWriteOnlyProperty` es un tipo con una propiedad de solo escritura. `GoodClassWithReadWriteProperty` contiene el código corregido.  
   
  [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)]
  [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]

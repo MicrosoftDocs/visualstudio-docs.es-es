@@ -1,27 +1,25 @@
 ---
-title: "Cómo: personalizar el diccionario de análisis de código | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: personalizar el diccionario de análisis de código | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2d60b2a187b7fccf4d5f564d9554badd5da9dec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Cómo: Personalizar el diccionario de análisis de código
 Análisis de código usa un diccionario integrado para comprobar los identificadores en el código para los errores de ortografía, mayúsculas gramaticales y otras convenciones de nomenclatura de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] directrices. Puede crear un archivo de diccionario personalizado Xml para agregar, quitar o modificar los términos y abreviaturas, acrónimos al diccionario integrado.  
@@ -75,7 +73,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 -   [Diccionario/acrónimos/CasingExceptions/acrónimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
-###  <a name="BKMK_DictionaryWordsRecognizedWord"></a>/ Palabras/reconoce/palabra del diccionario  
+###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> / Palabras/reconoce/palabra del diccionario  
  Para incluir un término en la lista de términos que identifica el análisis de código como la revisión ortográfica, agregue el término como el texto interno de un elemento/palabras/reconoce/palabra del diccionario. Términos de elementos/palabras/reconoce/palabra del diccionario no distinguen mayúsculas de minúsculas.  
   
  **Ejemplo**  
@@ -110,7 +108,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 -   [CA2204: Los literales deben estar escritos correctamente ](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>/ Palabras/reconocido/palabra del diccionario  
+###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> / Palabras/reconocido/palabra del diccionario  
  Para excluir un término de la lista de términos que identifica el análisis de código como la revisión ortográfica, agregue el término que excluya como el texto interno de un elemento/palabras/no reconocida/palabra del diccionario. Términos de elementos/palabras/no reconocida/palabra del diccionario no distinguen mayúsculas de minúsculas.  
   
  **Ejemplo**  
@@ -145,7 +143,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 -   [CA2204: Los literales deben estar escritos correctamente ](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Diccionario/palabras/en desuso/Term [@PreferredAlternate]  
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Diccionario/palabras/en desuso/Term [@PreferredAlternate]  
  Para incluir un término en la lista de términos que identifica de análisis de código como obsoleto, agregue el término como el texto interno de un elemento de diccionario, palabras, ya no se utiliza/Term. Un término en desuso es una palabra que se ha escrito correctamente, pero no debe usarse.  
   
  Para incluir un término alternativo sugerido de la advertencia, especifique a alternativo en el atributo PreferredAlternate del elemento término. Puede dejar el valor de atributo vacío si no desea sugerir a una alternativa.  
@@ -182,7 +180,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 -   [CA1726: Utilizar términos preferidos](../code-quality/ca1726-use-preferred-terms.md)  
   
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Diccionario/palabras/compuesta/Term [@CompoundAlternate]  
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Diccionario/palabras/compuesta/Term [@CompoundAlternate]  
  El diccionario integrado identifica algunos de los términos como términos discretos, únicos en lugar de un término compuesto. Para incluir un término en la lista de términos que identifica el análisis de código como una palabra compuesta y para especificar la grafía correcta del término, agregue el término como el texto interno de un elemento de diccionario, palabras, compuesta/Term. En el atributo CompoundAlternate del elemento término, especifique las palabras individuales que componen el término compuesto por poner en mayúsculas la primera letra de las palabras individuales (mayúsculas y minúsculas Pascal). Tenga en cuenta que el término especificado en el texto interno se agrega automáticamente a la lista de palabras de diccionario/DiscreteExceptions.  
   
 -   El término en desuso en palabras del diccionario / / elemento en desuso/término no distingue mayúsculas de minúsculas.  
@@ -215,7 +213,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 -   [CA1704: Los identificadores deberían tener la ortografía correcta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Diccionario/palabras/DiscreteExceptions/Term  
+###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Diccionario/palabras/DiscreteExceptions/Term  
  Para excluir un término en la lista de términos que identifica el análisis de código como una sola, discreta word cuando se activa el término por las reglas de mayúsculas y minúsculas de las palabras compuestas, agregue el término como el texto interno de un elemento de diccionario/palabras/DiscreteExceptions/Term. El término en el elemento de diccionario/palabras/DiscreteExceptions/término no distingue mayúsculas de minúsculas.  
   
  **Ejemplo**  
@@ -240,7 +238,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 -   [CA1702: En las palabras compuestas se deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Diccionario/acrónimos/CasingExceptions/acrónimo  
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Diccionario/acrónimos/CasingExceptions/acrónimo  
  Para incluir un acrónimo en la lista de términos que identifica el análisis de código que está escrita correctamente e indicar cómo las reglas el acrónimo cuando se activa el término por las mayúsculas y minúsculas para palabras compuestas, agregue el término como el texto interno de un diccionario, acrónimos/CasingExceptions / Elemento Acronym. El acrónimo en el elemento de diccionario/acrónimos/CasingExceptions/acrónimo distingue mayúsculas de minúsculas.  
   
  **Ejemplo**  
@@ -263,7 +261,7 @@ Análisis de código usa un diccionario integrado para comprobar los identificad
   
 -   [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
-##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Para aplicar un diccionario personalizado a un proyecto  
+##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Para aplicar un diccionario personalizado a un proyecto  
   
 1.  En **el Explorador de soluciones**, utilice uno de los siguientes procedimientos:  
   

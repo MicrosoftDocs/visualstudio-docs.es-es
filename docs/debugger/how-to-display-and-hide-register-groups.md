@@ -1,13 +1,10 @@
 ---
-title: "Cómo: mostrar y ocultar grupos de registros | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: mostrar y ocultar grupos de registros | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.registergroups
 dev_langs:
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - Registers window, displaying and hiding register groups
 - register groups, displaying and hiding
 ms.assetid: 6be5dfb4-4cfe-4daf-b538-60405640857d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 433789524facdc4dba95e5dcfc9e6859a9124692
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135a424281af0a65dc894eb8ae3aa3477daaa15e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Cómo: Mostrar y ocultar grupos de registros
 El **registra** ventana solo está disponible si está habilitada la depuración de nivel de dirección en la **opciones** cuadro de diálogo, **depuración** nodo, **General**categoría.  

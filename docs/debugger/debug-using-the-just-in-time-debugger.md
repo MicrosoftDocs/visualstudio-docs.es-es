@@ -1,26 +1,24 @@
 ---
 title: Depurar con el depurador Just | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/06/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4bcdd28247b767321d3d5fed9681082538ba2b12
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1bfaed6a788d61f239fb8fb69095549fe5c20d6d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar con el depurador Just en Visual Studio
 Depuración Just-In-Time inicia Visual Studio automáticamente cuando se produce una excepción o un bloqueo en una aplicación que se ejecuta fuera de Visual Studio. Esto le permite probar la aplicación cuando no se está ejecutando Visual Studio y empiece a depurar con Visual Studio cuando se produce un problema.
@@ -30,7 +28,7 @@ Depuración Just-In-Time funciona en aplicaciones de escritorio de Windows. No f
 > [!TIP] 
 > Si desea saber cómo responder a Just-in-Time cuadro de diálogo del depurador, vea [en este tema](../debugger/just-in-time-debugging-in-visual-studio.md).
 
-##  <a name="BKMK_Enabling"></a>Habilitar o deshabilitar Just-In-Time la depuración  
+##  <a name="BKMK_Enabling"></a> Habilitar o deshabilitar Just-In-Time la depuración  
 Puede habilitar o deshabilitar la depuración de Visual Studio Just-In-Time **Herramientas > opciones** cuadro de diálogo.
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Para habilitar o deshabilitar la depuración Just-In-Time  
@@ -55,7 +53,7 @@ La depuración Just-In-Time todavía puede habilitarse aunque ya no esté instal
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Para deshabilitar la depuración Just-In-Time editando el Registro  
   
-1.  En el **iniciar** menú, busque y ejecute`regedit.exe`  
+1.  En el **iniciar** menú, busque y ejecute `regedit.exe`  
   
 2.  En el **Editor del registro** ventana, busque y elimine las entradas del registro siguientes:  
   

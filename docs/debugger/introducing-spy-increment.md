@@ -1,27 +1,23 @@
 ---
-title: "Introducción a Spy ++ | Documentos de Microsoft"
-ms.custom: 
+title: Introducción a Spy ++ | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++
 ms.assetid: 733b514b-63a9-402d-89aa-4f0416766655
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb12ef13e73e33b213d2b8ca79c2439b517fbda9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1884d6a0c0b017eb4dd1bf76ebc9f5faedc9838f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introducing-spy"></a>Introducción a Spy++
 Con Spy++ puede llevar a cabo las siguientes tareas:  

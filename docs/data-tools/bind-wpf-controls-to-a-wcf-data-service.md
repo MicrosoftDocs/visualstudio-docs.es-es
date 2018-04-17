@@ -1,11 +1,8 @@
 ---
 title: Enlazar controles WPF a un servicio de datos WCF | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a10ce63d969f67c12197f13f0ab285bc05e258cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Enlazar controles WPF a un servicio de datos WCF
 En este tutorial, se creará una aplicación de WPF que contiene controles enlazados a datos. Los controles se enlazan a registros de clientes que se encapsulan en un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. También agregará botones que los clientes pueden usar para ver y actualizar los registros.  
@@ -214,7 +211,7 @@ Crear controles que muestren los registros de clientes, arrastrando el `SalesOrd
   
     -   **RevisionNumber**  
   
-    -   **ROWGUID**  
+    -   **rowguid**  
   
     Esta acción impide que Visual Studio cree controles enlazados a datos para estos nodos en el paso siguiente. En este tutorial, se supone que el usuario final no necesita ver estos datos.  
   
@@ -247,11 +244,11 @@ Utilice el objeto de proxy de servicio para cargar los datos de ventas del servi
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>Navegar por los registros de ventas  
-Agregue código que permita a los usuarios desplazarse por los registros de ventas usando el  **\<**  y  **>**  botones.  
+Agregue código que permita a los usuarios desplazarse por los registros de ventas usando el **\<** y **>** botones.  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Para que los usuarios puedan navegar por los registros de ventas  
   
-1.  En el diseñador, haga doble clic en el  **<**  botón en la superficie de la ventana.  
+1.  En el diseñador, haga doble clic en el **<** botón en la superficie de la ventana.  
   
      Visual Studio abre el archivo de código subyacente y crea un nuevo `backButton_Click` controlador de eventos para el <xref:System.Windows.Controls.Primitives.ButtonBase.Click> eventos.  
   
@@ -260,7 +257,7 @@ Agregue código que permita a los usuarios desplazarse por los registros de vent
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
-3.  Vuelva al diseñador y haga doble clic en el  **>**  botón.  
+3.  Vuelva al diseñador y haga doble clic en el **>** botón.  
   
      Visual Studio abre el archivo de código subyacente y crea un nuevo `nextButton_Click` controlador de eventos para el <xref:System.Windows.Controls.Primitives.ButtonBase.Click> eventos.  
   
@@ -302,7 +299,7 @@ Compile y ejecute la aplicación para comprobar que puede ver y actualizar los r
   
     -   Los cuadros de texto muestran campos de datos diferentes desde el primer registro de ventas, que tiene el identificador de pedido de venta **71774**.  
   
-    -   Puede hacer clic en el  **>**  o  **<**  botones para navegar por otros registros de ventas.  
+    -   Puede hacer clic en el **>** o **<** botones para navegar por otros registros de ventas.  
   
 5.  En uno de los registros de ventas, escriba algún texto en el **comentario** cuadro y, a continuación, haga clic en **guardar cambios**.  
   

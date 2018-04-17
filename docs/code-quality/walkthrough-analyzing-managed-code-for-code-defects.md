@@ -1,24 +1,22 @@
 ---
-title: "Tutorial analizar código administrado en previsión de defectos de código | Documentos de Microsoft"
-ms.custom: 
+title: Tutorial analizar código administrado en previsión de defectos de código | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e1c708f31d31dd811017015cd37c7e60d49beef9
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Analizar código administrado para el código hasta los defectos
 
@@ -30,7 +28,7 @@ Este tutorial le guía a través del proceso de uso de análisis de código para
 
 ### <a name="to-create-a-class-library"></a>Para crear una biblioteca de clases
 
-1. En el **archivo** menú, elija **New** > **proyecto...** .
+1. En el menú **Archivo**, elija **Nuevo** > **Proyecto...**.
 
 1. En el **nuevo proyecto** cuadro de diálogo, expanda **instalado** > **Visual C#**y, a continuación, elija **escritorio clásico de Windows**.
 
@@ -112,7 +110,7 @@ Este tutorial le guía a través del proceso de uso de análisis de código para
 
    1. Agregue el código `using System.Runtime.Serialization;` al principio del archivo Class1.cs.
 
-   1. A continuación, agregue el constructor`protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
+   1. A continuación, agregue el constructor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
    [CA1032: Implementar constructores de excepción estándar](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: agregue el siguiente constructor a esta clase: public demo()
 

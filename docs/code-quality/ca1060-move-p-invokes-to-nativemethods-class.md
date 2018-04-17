@@ -1,12 +1,10 @@
 ---
 title: 'CA1060: Movimiento P-se invoca a la clase NativeMethods | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
 - CA1060
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - MovePInvokesToNativeMethodsClass
 - CA1060
 ms.assetid: 06686c8c-6ad3-42f7-a355-cbaefa347cfc
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7805710c61e6a9fcf4ede2ebcbf69589b53141f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 59be117e656ee0a0829a3e7fb2f9e3eb79afbec6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Mueva P/Invokes a la clase NativeMethods
 |||  

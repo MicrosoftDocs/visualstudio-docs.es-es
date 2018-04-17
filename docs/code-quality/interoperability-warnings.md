@@ -1,13 +1,10 @@
 ---
 title: Advertencias de interoperabilidad | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.Interoperabilityrules
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - interoperability warnings
 - warnings, interoperability
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8a0587bdfce2284f4767087c88faab573e04b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1f1046c07a55e683141f8f6879a45e4e55b3f3f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="interoperability-warnings"></a>advertencias de interoperabilidad
 Advertencias de interoperabilidad admiten la interacción con los clientes COM.  

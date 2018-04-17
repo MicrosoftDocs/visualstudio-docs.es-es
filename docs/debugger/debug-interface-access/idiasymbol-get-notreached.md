@@ -1,29 +1,25 @@
 ---
 title: 'Idiasymbol:: Get_notreached | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_notReached method
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8989a4ac2ed8c7688f0ffc37a71901d44e16c343
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8a4782944ff9b1ddd4325fa57cd74e6bf6ab72a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
 Recupera una marca que especifica si nunca se alcanza la función o la etiqueta.  

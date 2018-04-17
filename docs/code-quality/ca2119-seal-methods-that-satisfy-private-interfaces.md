@@ -1,12 +1,10 @@
 ---
-title: "CA2119: Sellar los métodos que cumplan las interfaces privadas | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2119: Sellar los métodos que cumplan las interfaces privadas | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2119
 - SealMethodsThatSatisfyPrivateInterfaces
 ms.assetid: 483d02e1-cfaf-4754-a98f-4116df0f3509
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b61a3e81ff7be1ff868f2dd9ce42dd5cb10522cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f54b6c58e30145759881a8a612ad6f7edfd044d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Sellar los métodos que cumplan las interfaces privadas
 |||  

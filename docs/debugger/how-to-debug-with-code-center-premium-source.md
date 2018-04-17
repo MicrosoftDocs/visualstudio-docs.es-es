@@ -1,12 +1,10 @@
 ---
-title: "Cómo: depurar código fuente de Code Center Premium con | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: depurar código fuente de Code Center Premium con | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Code Center Premium
 - debugging [Visual Studio], Code Center Premium
 ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d7405deed95f14314215b869a02bcf8a1afddea2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ef757e71f557febab74f4575635993cf77214250
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Cómo: Depurar código fuente con Code Center Premium
 Con el depurador de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], puede depurar código fuente compartido seguro de Microsoft MSDN Code Center Premium.  
@@ -57,7 +55,7 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_lon
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  No olvide incluir la barra diagonal final **/**  al final de la ruta de acceso.  
+    >  No olvide incluir la barra diagonal final**/** al final de la ruta de acceso.  
   
      Mueva estas ubicaciones a la parte superior de la lista para asegurarse de que estos símbolos se cargan en primer lugar.  
   
@@ -114,7 +112,7 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_lon
      `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  No olvide incluir la barra diagonal final **/**  al final de la ruta de acceso.  
+    >  No olvide incluir la barra diagonal final**/** al final de la ruta de acceso.  
   
 4.  Para cada proyecto administrado de la solución, haga lo siguiente  
   

@@ -1,12 +1,10 @@
 ---
 title: 'CA2006: Utilizar SafeHandle para encapsular recursos nativos | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2006
 - UseSafeHandleToEncapsulateNativeResources
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseSafeHandleToEncapsulateNativeResources
 - CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d70c453e502dd0a7f4eda2e9247dbc3ec3229ebe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0fdef78fdad92eb08012a474afff5c4c8c4d7ab8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Utilizar SafeHandle para encapsular recursos nativos
 |||  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  En estos escenarios, problemas de seguridad ni confiabilidad también existirá si se permite el acceso multiproceso a la `IntPtr` y una manera de liberar el recurso representado por el `IntPtr` se proporciona. Estos problemas incluyen el reciclaje del `IntPtr` valor al liberar el recurso mientras se realiza un uso simultáneo del recurso en otro subproceso. Esto puede producir condiciones de carrera en un subproceso puede leer o escribir los datos que está asociados al recurso incorrecto. Por ejemplo, si el tipo almacena un identificador del sistema operativo como un `IntPtr` y permite a los usuarios llamar a ambos **cerrar** y cualquier otro método que utiliza ese controlador simultáneamente y sin algún tipo de sincronización, el código tiene un identificador de reciclaje problema.  
   
- Este identificador de reciclaje de problema puede provocar daños en los datos y, con frecuencia, una vulnerabilidad de seguridad. `SafeHandle`y su clase secundaria relacionada <xref:System.Runtime.InteropServices.CriticalHandle> proporcionan un mecanismo para encapsular un identificador nativo a un recurso para que se pueden evitar estos problemas de subprocesamiento. Además, puede usar `SafeHandle` y su clase secundaria relacionada `CriticalHandle` para otros problemas de subprocesamiento, por ejemplo, para controlar la duración de objetos administrados que contienen una copia del identificador nativo sobre las llamadas a métodos nativos. En esta situación, a menudo puede quitar las llamadas a `GC.KeepAlive`. El rendimiento es posible sobrecarga se producen cuando se usa `SafeHandle` y, en menor grado, `CriticalHandle`, con frecuencia puede reducirse mediante un diseño cuidadoso.  
+ Este identificador de reciclaje de problema puede provocar daños en los datos y, con frecuencia, una vulnerabilidad de seguridad. `SafeHandle` y su clase secundaria relacionada <xref:System.Runtime.InteropServices.CriticalHandle> proporcionan un mecanismo para encapsular un identificador nativo a un recurso para que se pueden evitar estos problemas de subprocesamiento. Además, puede usar `SafeHandle` y su clase secundaria relacionada `CriticalHandle` para otros problemas de subprocesamiento, por ejemplo, para controlar la duración de objetos administrados que contienen una copia del identificador nativo sobre las llamadas a métodos nativos. En esta situación, a menudo puede quitar las llamadas a `GC.KeepAlive`. El rendimiento es posible sobrecarga se producen cuando se usa `SafeHandle` y, en menor grado, `CriticalHandle`, con frecuencia puede reducirse mediante un diseño cuidadoso.  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Convertir `IntPtr` uso con respecto a `SafeHandle` para administrar el acceso a los recursos nativos de forma segura. Vea el <xref:System.Runtime.InteropServices.SafeHandle> tema de referencia para obtener ejemplos.  

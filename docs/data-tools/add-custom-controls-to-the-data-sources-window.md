@@ -1,11 +1,8 @@
 ---
-title: "Agregar controles personalizados a la ventana de orígenes de datos | Documentos de Microsoft"
-ms.custom: 
+title: Agregar controles personalizados a la ventana de orígenes de datos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d00e818c0cfaa2659f55e5eb8bb8e4e4a87e8abc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
 Cuando se arrastra un elemento de la **orígenes de datos** ventana hasta una superficie de diseño para crear un control enlazado a datos, puede seleccionar el tipo de control que se crea. Cada elemento en la ventana tiene una lista desplegable que muestra los controles que puede elegir. El conjunto de controles asociados con cada elemento se determina por el tipo de datos del elemento. Si el control que desea crear no aparece en la lista, puede seguir las instrucciones de este tema para agregar el control a la lista.  
@@ -37,7 +33,7 @@ Cuando se arrastra un elemento de la **orígenes de datos** ventana hasta una su
 > [!NOTE]
 >  Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, en la **herramientas** menú, seleccione **importar y exportar configuraciones**. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-##  <a name="customizinglist"></a>Personalizar la lista de controles enlazables para un tipo de datos  
+##  <a name="customizinglist"></a> Personalizar la lista de controles enlazables para un tipo de datos  
  Para agregar o quitar controles de la lista de controles disponibles para los elementos de la **orígenes de datos** ventana que tiene un tipo de datos específico, realice los pasos siguientes.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Para seleccionar los controles se muestren para un tipo de datos  
@@ -71,7 +67,7 @@ Cuando se arrastra un elemento de la **orígenes de datos** ventana hasta una su
   
      Los controles seleccionados en el **asociados controles** cuadro aparecen ahora en el menú desplegable para el elemento.  
   
-##  <a name="addingcontrols"></a>Agregar controles a la lista de controles asociados para un tipo de datos  
+##  <a name="addingcontrols"></a> Agregar controles a la lista de controles asociados para un tipo de datos  
  Si desea asociar un control a un tipo de datos, pero el control no aparece en la **asociados controles** cuadro, debe agregar el control a la lista. El control debe encontrarse en la solución actual o en un ensamblado de referencia. También debe estar disponible en la **cuadro de herramientas**, y tener un atributo que especifica el comportamiento de enlace de datos del control.  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Para agregar controles a la lista de controles asociados  

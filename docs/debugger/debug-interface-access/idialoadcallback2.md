@@ -1,29 +1,25 @@
 ---
 title: IDiaLoadCallback2 | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLoadCallback2 interface
 ms.assetid: 9a44277d-cbed-4811-9bad-5a2aa0f09323
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee2733643350b2fea9b78a9d876037497d35e41a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 096002a1364288f412e97da13da4ec4344982d4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Recibe las devoluciones de llamada desde el símbolo DIA localizar procedimiento, lo que permite las restricciones que se pueden imponer en el proceso de localización.  

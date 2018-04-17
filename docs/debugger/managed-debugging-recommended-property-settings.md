@@ -1,12 +1,10 @@
 ---
-title: "Depuración administrada: Valores de propiedad recomendados | Documentos de Microsoft"
-ms.custom: 
+title: 'Depuración administrada: Valores de propiedad recomendados | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], managed
 - debugging managed code, recommended property settings
 ms.assetid: 3d14a8d4-2925-44d0-be41-ec546d411db9
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ebbd6bf87270bba70dc80cd7ff652c147d3a4849
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: e51a57f1929f4ba63bb4117e6dc496b52f2c20a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Depuración administrada: valores de propiedad recomendados
 Algunas propiedades se deben establecer de la misma manera para todos los escenarios de depuración administrados.  

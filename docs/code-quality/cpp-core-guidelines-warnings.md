@@ -1,22 +1,21 @@
 ---
-title: "Advertencias de directrices de núcleo de C++ | Documentos de Microsoft"
-ms.custom: 
+title: Advertencias de directrices de núcleo de C++ | Documentos de Microsoft
+ms.custom: ''
 ms.date: 08/10/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
-manager: ghogen
-ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.technology:
+- vs-ide-code-analysis
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1c7e5e9ee55785c1053a3d5c416529710b0b1c65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de directrices de núcleo de C++
 Las directrices de núcleo de C++ son un conjunto portátil de directrices, reglas y procedimientos recomendados acerca de cómo escribir código en C++ creados por los diseñadores y los expertos en C++. Visual Studio admite actualmente un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de la directriz principal se instalan de forma predeterminada en Visual Studio de 2017 y se [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -152,14 +151,14 @@ Se puede utilizar para suprimir las advertencias de expresión y las instruccion
 
  Puede usar la opción de línea de comandos para deshabilitar temporalmente todos los análisis de código para un archivo mediante la especificación de `/analyze-`. Esto generará la advertencia *D9025 reemplazar '/ analyze' con ' / analyze-'*, que le recordará que debe volver a habilitar análisis de código más adelante.
 
- ## <a name="corecheck_per_file"></a>Habilitar el Comprobador de instrucciones de C++ principales en los archivos de proyecto específico
+ ## <a name="corecheck_per_file"></a> Habilitar el Comprobador de instrucciones de C++ principales en los archivos de proyecto específico
 A veces puede ser útil realizar centrado de análisis de código y sigue Aproveche el IDE de Visual Studio. A continuación se muestra un escenario de ejemplo que se puede usar para los proyectos grandes para ahorrar tiempo de compilación y resulte más fácil a los resultados del filtro.
 1.  En el shell de comandos establece la `esp.extension` y `esp.annotationbuildlevel` las variables de entorno.
 2.  Inicie Visual Studio desde el shell de comandos para que herede de estas variables.
 3.  Cargar el proyecto y abra sus propiedades.
 4.  Habilitar análisis de código, seleccionar los conjuntos de reglas adecuado, pero no habilita las extensiones de análisis de código.
 5.  Vaya al archivo que desea analizar con el Comprobador de directrices de núcleo de C++ y abra sus propiedades.
-6.  Elija **C / C ++ \Command opciones de la línea** y agregar`/analyze:plugin EspXEngine.dll`
+6.  Elija **C / C ++ \Command opciones de la línea** y agregar `/analyze:plugin EspXEngine.dll`
 7.  Deshabilitar el uso del encabezado precompilado (**C / C ++ \Precompiled encabezados**). Esto es necesario porque el motor de extensiones puede intentar leer su información interna del encabezado precompilado y si este último se compiló con las opciones de proyecto predeterminadas, no serán compatible.
 8.  Recompile el proyecto. Deben ejecutar las comprobaciones de PREFast común en todos los archivos. Dado que el Comprobador de directrices de núcleo de C++ no está habilitado de forma predeterminada, solo debe ejecutarse en el archivo que está configurado para utilizarlo.
 
@@ -205,22 +204,22 @@ Si utiliza un sistema de compilación que no se basa en MSBuild todavía puede e
 Debe establecer algunas variables de entorno y utilizar opciones de línea de comandos apropiada para el compilador. Es mejor trabajar en el entorno de "línea de comandos de herramientas nativo" para que no tiene que buscar rutas de acceso específicas para el compilador, incluya directorios, etcetera.
 
 1.  **Variables de entorno**
-  - `set esp.extensions=cppcorecheck.dll`Esto indica al motor para cargar el módulo de directrices de núcleo de C++.
-  - `set esp.annotationbuildlevel=ignore`Esto deshabilita la lógica que procesa las anotaciones de SAL. Las anotaciones no afectan a análisis de código en el Comprobador de directrices de núcleo de C++, aunque su transformación haya tenido tiempo (a veces, una gran cantidad de tiempo). Este valor es opcional, pero muy recomendado.
-  - `set caexcludepath=%include%`Se recomienda que deshabilite las advertencias que se activan en encabezados estándar. Puede agregar más rutas de acceso aquí, por ejemplo la ruta de acceso a los encabezados comunes en el proyecto.
+  - `set esp.extensions=cppcorecheck.dll` Esto indica al motor para cargar el módulo de directrices de núcleo de C++.
+  - `set esp.annotationbuildlevel=ignore` Esto deshabilita la lógica que procesa las anotaciones de SAL. Las anotaciones no afectan a análisis de código en el Comprobador de directrices de núcleo de C++, aunque su transformación haya tenido tiempo (a veces, una gran cantidad de tiempo). Este valor es opcional, pero muy recomendado.
+  - `set caexcludepath=%include%` Se recomienda que deshabilite las advertencias que se activan en encabezados estándar. Puede agregar más rutas de acceso aquí, por ejemplo la ruta de acceso a los encabezados comunes en el proyecto.
 2.  **Opciones de línea de comandos**
-  - `/analyze`Habilita el análisis de código (tenga en cuenta también usa / analyze: solo y / analyze: silencioso).
-  - `/analyze:plugin EspXEngine.dll`Esta opción carga el motor de extensiones de análisis de código en el PREfast. Este motor, a su vez, carga el Comprobador de directrices de núcleo de C++.
+  - `/analyze`  Habilita el análisis de código (tenga en cuenta también usa / analyze: solo y / analyze: silencioso).
+  - `/analyze:plugin EspXEngine.dll` Esta opción carga el motor de extensiones de análisis de código en el PREfast. Este motor, a su vez, carga el Comprobador de directrices de núcleo de C++.
 
 
 
 ## <a name="use-the-guideline-support-library"></a>Usar la biblioteca de compatibilidad de la regla  
- La biblioteca de compatibilidad de la regla está diseñada para ayudar a seguir las directrices de núcleo. El GSL incluye las definiciones que permiten sustituir construcciones propensas a errores con alternativas más seguras. Por ejemplo, puede reemplazar un `T*, length` par de parámetros con el `span<T>` tipo. Está disponible en la GSL [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). La biblioteca es código abierto, por lo que puede ver los orígenes, hacer comentarios o contribuir. El proyecto se encuentra en [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+ La biblioteca de compatibilidad de la regla está diseñada para ayudar a seguir las directrices de núcleo. El GSL incluye las definiciones que permiten sustituir construcciones propensas a errores con alternativas más seguras. Por ejemplo, puede reemplazar un `T*, length` par de parámetros con el `span<T>` tipo. Está disponible en la GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). La biblioteca es código abierto, por lo que puede ver los orígenes, hacer comentarios o contribuir. El proyecto se encuentra en [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a>Utilice las instrucciones de comprobación de núcleo de C++ en proyectos de Visual Studio 2015  
-  Si usa Visual Studio 2015, los conjuntos de reglas de análisis de código de C++ Core comprobará no se instalan de forma predeterminada. Debe realizar algunos pasos adicionales antes de poder habilitar las herramientas de análisis de código de comprobación de núcleo de C++ en Visual Studio 2015. Microsoft proporciona compatibilidad para los proyectos de Visual Studio 2015 con un paquete de Nuget. El paquete se denomina Microsoft.CppCoreCheck y está disponible en [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este paquete requiere que tenga al menos Visual Studio 2015 con Update 1 instalado.  
+ ## <a name="vs2015_corecheck"></a> Utilice las instrucciones de comprobación de núcleo de C++ en proyectos de Visual Studio 2015  
+  Si usa Visual Studio 2015, los conjuntos de reglas de análisis de código de C++ Core comprobará no se instalan de forma predeterminada. Debe realizar algunos pasos adicionales antes de poder habilitar las herramientas de análisis de código de comprobación de núcleo de C++ en Visual Studio 2015. Microsoft proporciona compatibilidad para los proyectos de Visual Studio 2015 con un paquete de Nuget. El paquete se denomina Microsoft.CppCoreCheck y está disponible en [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este paquete requiere que tenga al menos Visual Studio 2015 con Update 1 instalado.  
   
- El paquete también instala otro paquete como una dependencia, un solo encabezado directriz soporte técnico de biblioteca (GSL). El GSL también está disponible en GitHub en [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).  
+ El paquete también instala otro paquete como una dependencia, un solo encabezado directriz soporte técnico de biblioteca (GSL). El GSL también está disponible en GitHub en [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).  
 
  Debido al modo en que se cargan las reglas de análisis de código, debe instalar el paquete de Microsoft.CppCoreCheck NuGet en cada proyecto de C++ que se va a comprobar en Visual Studio 2015.  
   

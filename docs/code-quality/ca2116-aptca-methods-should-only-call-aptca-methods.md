@@ -1,12 +1,10 @@
 ---
-title: "CA2116: Los métodos APTCA solo deben llamar a métodos APTCA | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2116: Los métodos APTCA solo deben llamar a métodos APTCA | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52e757e2e83974a532a4dc16ce7075105606b1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Los métodos APTCA deben llamar solo a métodos APTCA
 |||  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
  Si el atributo APTCA está presente en un ensamblado de plena confianza y el ensamblado ejecuta código en otro ensamblado que no permite a llamadores parcialmente confiables, es posible un ataque de seguridad. Si dos métodos `M1` y `M2` cumplen las condiciones siguientes, los llamadores malintencionados pueden usar el método `M1` para omitir la petición de vínculo de plena confianza implícita que protege `M2`:  
   
--   `M1`es un método público que se declara en un ensamblado de plena confianza que tiene el atributo APTCA.  
+-   `M1` es un método público que se declara en un ensamblado de plena confianza que tiene el atributo APTCA.  
   
--   `M1`llama a un método `M2` fuera `M1`del ensamblado.  
+-   `M1` llama a un método `M2` fuera `M1`del ensamblado.  
   
 -   `M2`del ensamblado no tiene el atributo APTCA y, por lo tanto, no debe ejecutarse por o en nombre de los llamadores de confianza parcial.  
   

@@ -1,27 +1,23 @@
 ---
-title: "Cómo: iniciar Spy ++ | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: iniciar Spy ++ | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, starting
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc54bd1a2912c4c07b37a5694c2a576ddd5de31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6283369006cb67466cd5bb82ae61859de595858f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-start-spy"></a>Cómo: Iniciar Spy++
 Puede iniciar Spy ++ desde Visual Studio o en un símbolo del sistema.  

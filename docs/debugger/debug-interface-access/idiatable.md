@@ -1,29 +1,25 @@
 ---
 title: IDiaTable | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaTable interface
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f596d2c51c5d5e543ed67212662c5096ea2e4eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93eedd9579f264b218e9c05c29dc3848fb3ceb9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiatable"></a>IDiaTable
 Enumera una tabla de origen de datos DIA.  
@@ -72,7 +68,7 @@ IDiaTable : IEnumUnknown
  La primera función, `ShowTableNames`, muestra los nombres de todas las tablas de la sesión. La segunda función, `GetTable`, busca en todas las tablas de una tabla que implementa la interfaz especificada. La tercera función, `UseTable`, muestra cómo utilizar el `GetTable` función.  
   
 > [!NOTE]
->  `CDiaBSTR`es una clase que encapsula un `BSTR` y controla automáticamente la cadena que libera cuando la creación de instancias se sale del ámbito.  
+>  `CDiaBSTR` es una clase que encapsula un `BSTR` y controla automáticamente la cadena que libera cuando la creación de instancias se sale del ámbito.  
   
 ```C++  
 void ShowTableNames(IDiaSession *pSession)  

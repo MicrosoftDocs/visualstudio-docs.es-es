@@ -1,29 +1,25 @@
 ---
 title: 'Idiasymbol:: Get_isaggregated | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_isAggregated method
 ms.assetid: 24d280ef-6ea3-4958-9418-4ad3ca7c67c1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aed3df2d960c8c2a85e642fe9e1487861bcfe08
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4c4ffad95f7c1b5c0e344e4ef09bd952efb374d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Recupera una marca que especifica si el símbolo de datos forma parte de un agregado o una colección de símbolos; el compilador tratará símbolos agregados como entidades independientes, pero realmente forman parte de un único símbolo mayor.  

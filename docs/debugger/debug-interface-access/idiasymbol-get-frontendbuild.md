@@ -1,29 +1,25 @@
 ---
 title: 'Idiasymbol:: Get_frontendbuild | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_frontEndBuild method
 ms.assetid: f7dab1c6-112b-4966-baa5-afc976949c76
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727438da855fd35b10af2008a3032bc6bc199bd8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2bbe63d3ad3a476fd80cd8de2be3fbe63a4b3f7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetfrontendbuild"></a>IDiaSymbol::get_frontEndBuild
 Recupera el número de compilación de front-end.  

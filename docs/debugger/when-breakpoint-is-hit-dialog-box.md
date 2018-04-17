@@ -1,12 +1,9 @@
 ---
-title: "Cuando el punto de interrupción es el cuadro de diálogo llamadas | Documentos de Microsoft"
-ms.custom: 
+title: Cuando el punto de interrupción es el cuadro de diálogo llamadas | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.whenbreakpointishit
@@ -18,17 +15,16 @@ dev_langs:
 - JScript
 - SQL
 ms.assetid: 476e3d98-cf35-4338-b124-cd0f3010d854
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c03e68315c8c0818d6b9cf6a102adde4ea4f8a10
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 627fe393d235f6d0392181cf2370cda71737a4f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Al visitar un punto de interrupción (Cuadro de diálogo)
 Con este cuadro de diálogo, es posible personalizar la acción que ocurre cuando se visita un punto de interrupción.  

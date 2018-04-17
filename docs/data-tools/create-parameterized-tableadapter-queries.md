@@ -1,11 +1,8 @@
 ---
 title: Crear consultas de TableAdapter parametrizadas | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 65c4ab52ead981d54cf9b0c64c7a3c1c941de5b0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 361bb7f9acea5d07283b63cb1b3b1b97bb495a8e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Crear consultas de TableAdapter parametrizadas
 Una consulta parametrizada devuelve datos que cumplen las condiciones de una cláusula WHERE dentro de la consulta. Por ejemplo, puede parametrizar una lista de clientes para mostrar solo los clientes de una determinada ciudad; para ello, agrega `WHERE City = @City` al final de la instrucción SQL que devuelve una lista de clientes.  
@@ -46,7 +43,7 @@ Una consulta parametrizada devuelve datos que cumplen las condiciones de una cl�
   
 -   Cree un nuevo TableAdapter y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL. Para obtener más información, consulte [crear y configurar los TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
   
-     O bien  
+     -o bien-  
   
 -   Agregue una consulta a un TableAdapter existente, y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.
   
@@ -71,7 +68,7 @@ Una consulta parametrizada devuelve datos que cumplen las condiciones de una cl�
   
 4.  Escriba un nombre en el **nuevo nombre de consulta** cuadro Si va a crear una nueva consulta.  
   
-     O bien  
+     -o bien-  
   
      Seleccione una consulta en el **nombre de consulta existente** cuadro.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Editar código y continuar con la depuración en Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: Editar código y continuar con la depuración en Visual Studio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 05/31/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.enc
 dev_langs:
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], Edit and Continue
 - debugger, tools for debugging
 ms.assetid: 2cdd4531-7117-4221-a809-8447812de2a1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f23156d7684fa2878eb09c3fec6a32e2938c13a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c3ceb68c74940e079006815101ebd0c0dab39e41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Editar código y continuar la depuración en Visual Studio (C#, en VB, C++)
 Editar y continuar es una característica que ahorra tiempo y permite realizar cambios en el código fuente mientras el programa se encuentra en modo de interrupción. Cuando reanuda la ejecución del programa eligiendo un comando de ejecución como **continuar** o **paso**, editar y continuar automáticamente aplica los cambios de código con algunas limitaciones. Esto permite realizar cambios en el código durante una sesión de depuración, en lugar de tener que parar, volver a compilar todo el programa y reiniciar la sesión de depuración.  

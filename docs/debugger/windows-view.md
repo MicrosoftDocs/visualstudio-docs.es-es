@@ -1,36 +1,32 @@
 ---
 title: Windows Vista | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.windowsview
 helpviewer_keywords:
 - Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94aae2c271b0b9030d63597fe8100e8c8f2bccbe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bea2801baab38f84b8af8f2154f2be4f05dc205f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-view"></a>Vista Ventanas
 Al abrir por primera vez Spy ++, vista de Windows muestra un árbol de todas las ventanas y controles en el sistema. Se muestran el nombre de identificador y la clase de ventana. La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventana estándar. Las ventanas relacionadas aparecen en listas con sangría debajo de sus elementos primarios que se pueden expandir.  
   
  La siguiente ilustración muestra una vista de ventanas de Spy ++ típica con el nodo superior expandido.  
   
- ![Spy &#43; &#43; Windows Vista](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
+ ![Spy&#43; &#43; Windows Vista](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView")  
 Vista de ventanas de Spy++  
   
  La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventana estándar, con ventanas relacionadas se ordenan por orden Z. Puede expandir o contraer cualquier nodo primario del árbol, haga clic en el + o - símbolo junto al nodo.  

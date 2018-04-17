@@ -1,11 +1,8 @@
 ---
 title: Enlazar controles WPF a un conjunto de datos | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Enlazar controles WPF a un conjunto de datos
 En este tutorial, se creará una aplicación de WPF que contiene controles enlazados a datos. Los controles se enlazan a registros de productos que se encapsulan en un conjunto de datos. También agregará botones para examinar los productos y guardar los cambios en los registros de productos.  
@@ -183,11 +180,11 @@ El conocimiento previo de los siguientes conceptos es útil, aunque no necesario
 7.  En el **propiedades** ventana, seleccione la casilla situada junto a la **IsReadOnly** propiedad.  
   
 ## <a name="navigating-product-records"></a>Navegar por los registros de producto  
- Agregue código que permita a los usuarios desplazarse por registros de productos usando el  **\<**  y  **>**  botones.  
+ Agregue código que permita a los usuarios desplazarse por registros de productos usando el **\<** y **>** botones.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Para que los usuarios puedan navegar por los registros de productos  
   
-1.  En el diseñador, haga doble clic en el  **<**  botón en la superficie de la ventana.  
+1.  En el diseñador, haga doble clic en el **<** botón en la superficie de la ventana.  
   
      Visual Studio abre el archivo de código subyacente y crea un nuevo `backButton_Click` controlador de eventos para el <xref:System.Windows.Controls.Primitives.ButtonBase.Click> eventos.  
   
@@ -201,7 +198,7 @@ El conocimiento previo de los siguientes conceptos es útil, aunque no necesario
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  Volver al diseñador y haga doble clic en el  **>**  botón.  
+4.  Volver al diseñador y haga doble clic en el **>** botón.  
   
 5.  Agregue el código siguiente al controlador de eventos `nextButton_Click`:  
   
@@ -236,7 +233,7 @@ Agregue código que permita a los usuarios guardar cambios en los registros de p
   
     -   Los cuadros de texto muestran datos del primer registro de producto que tiene una foto. Este producto tiene el identificador 713 del producto y el nombre **Long-Sleeve Logo Jersey, S**.  
   
-    -   Puede hacer clic en el  **>**  o  **<**  botones para navegar por otros registros de productos.  
+    -   Puede hacer clic en el **>** o **<** botones para navegar por otros registros de productos.  
   
 2.  En uno de los registros de productos, cambie el **tamaño** valor y, a continuación, haga clic en **guardar cambios**.  
   

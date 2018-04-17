@@ -1,12 +1,10 @@
 ---
-title: "CA2112: Los tipos seguros no deberían exponer campos | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2112: Los tipos seguros no deberían exponer campos | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2112
 - SecuredTypesShouldNotExposeFields
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - SecuredTypesShouldNotExposeFields
 - CA2112
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e3959540d00a74d99095a3facf824d822827a00d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 050aa2a5048ed4d58e6b5a285f584eda330f178f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Los tipos seguros no deberían exponer campos
 |||  

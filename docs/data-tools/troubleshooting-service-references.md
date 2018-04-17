@@ -1,11 +1,8 @@
 ---
 title: Solucionar problemas de referencias de servicio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - service references [Visual Studio], troubleshooting
 - WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b57547aa9a5fa3c036a534c85cb55bb1749a421b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 827533f76f8807cca146b9ea0b7483cb8fb84caf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-service-references"></a>Solucionar problemas de referencias de servicio
 En este tema se enumera los problemas comunes que pueden producirse cuando se trabaja con [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] o [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] hace referencia en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

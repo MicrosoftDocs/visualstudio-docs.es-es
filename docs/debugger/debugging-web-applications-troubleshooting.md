@@ -1,12 +1,10 @@
 ---
-title: "Depurar aplicaciones Web: Solución de problemas | Documentos de Microsoft"
-ms.custom: 
+title: 'Depurar aplicaciones Web: Solución de problemas | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Web applications, debugging
 - troubleshooting Web applications
 ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e68040d1cdfbac6c1127a280c3d1e1773c2794ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dce5fedefc5e99ad0951f10f72777cadfadae8c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Depurar aplicaciones Web: solución de problemas
 Esta sección contiene varios procedimientos habituales para la resolución de errores.  

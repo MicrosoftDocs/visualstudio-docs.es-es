@@ -1,28 +1,26 @@
 ---
 title: Depurar XAML en Blend | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: efcb38238bfc1d8001e99d6755da1f3e2f02edcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML en Blend
 Puede usar las herramientas de [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] para depurar el código XAML de su aplicación. Cuando compila un proyecto, los errores se muestran en la **resultados** panel. Haz doble clic en un error para buscar el marcado relacionado con el error. Si necesita más espacio para trabajar, puede ocultar la **resultados** panel presionando F12.  
@@ -109,13 +107,13 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../debugger/includes/blend
   
 1.  Haz doble clic en el primer error de la lista. La descripción es "El valor '<' no es válido en un atributo". Al hacer doble clic en el error, el puntero busca la ubicación correspondiente en el código. El elemento `<` que aparece delante de `Button` es válido, y no es un atributo como se indica en el mensaje de error. Si examinas la línea de código anterior, observarás que faltan las comillas de cierre del atributo `Top`. Escribe las comillas de cierre. Tenga en cuenta que la lista de errores el **resultados** panel se actualiza para reflejar los cambios.  
   
-2.  Haga doble clic en la descripción "' 0' no es válido al principio de un nombre." `Margin="0,149,0,0"`parece que tiene el formato correcto. De todos modos, observa que la codificación de color de `Margin` no coincide con las demás instancias de `Margin` en el código. Como faltan las comillas de cierre del par de nombre-valor anterior (`VerticalAlignment="Top`), `Margin="` se interpreta como parte del valor del atributo anterior y 0, como el principio de un par nombre-valor. Escribe las comillas de cierre de `Top`. La lista de errores en el **resultados** panel se actualiza para reflejar los cambios.  
+2.  Haga doble clic en la descripción "' 0' no es válido al principio de un nombre." `Margin="0,149,0,0"` parece que tiene el formato correcto. De todos modos, observa que la codificación de color de `Margin` no coincide con las demás instancias de `Margin` en el código. Como faltan las comillas de cierre del par de nombre-valor anterior (`VerticalAlignment="Top`), `Margin="` se interpreta como parte del valor del atributo anterior y 0, como el principio de un par nombre-valor. Escribe las comillas de cierre de `Top`. La lista de errores en el **resultados** panel se actualiza para reflejar los cambios.  
   
 3.  Haz doble clic en el otro error: "La etiqueta XML de cierre 'Button' no tiene una etiqueta de apertura correspondiente". El puntero se encuentra en el cierre **cuadrícula** etiqueta (`</Grid>`), lo que sugiere que el error está dentro del `Grid` objeto. Observa que al segundo objeto `Button` le falta la etiqueta de cierre. Después de agregar el cierre `/`, **resultados** se actualiza la lista del panel. Ahora que se han resuelto estos errores iniciales, se han identificado dos errores más.  
   
 4.  Haz doble clic en "No se reconoce o no se puede tener acceso al miembro 'content'". La c `c` de `content` debería estar en mayúsculas. Sustituye la "c" minúscula por una "c" mayúscula.  
   
-5.  Haz doble clic en "La propiedad 'Mame' no existe en el espacio de nombres 'http://schemas.microsoft.com/winfx/2006/xaml'". La "M" de "Mame" debería ser una "N". Sustituye la "M" por una "N". Ahora que se puede analizar el código XAML, la aplicación aparece en la superficie de diseño.  
+5.  Haga doble clic en "la propiedad 'Mame' no existe en el 'http://schemas.microsoft.com/winfx/2006/xaml' espacio de nombres." La "M" de "Mame" debería ser una "N". Sustituye la "M" por una "N". Ahora que se puede analizar el código XAML, la aplicación aparece en la superficie de diseño.  
   
      ![Depura el código XAML en Blend para Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
   

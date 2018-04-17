@@ -1,27 +1,24 @@
 ---
-title: "Cree un archivo de base de datos y usar el Diseñador de tablas en Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: Cree un archivo de base de datos y usar el Diseñador de tablas en Visual Studio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 99f5c341df6ca04c25abf325146c4dac961bafc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Crear una base de datos y agregar las tablas en Visual Studio
 Puede usar Visual Studio para crear y actualizar un archivo de base de datos local de SQL Server Express LocalDB. También puede crear una base de datos mediante la ejecución de instrucciones de Transact-SQL en el **Explorador de objetos de SQL Server** ventana de herramientas en Visual Studio. En este tema, se creará un archivo .mdf y agregar tablas y claves mediante el Diseñador de tablas.
@@ -57,7 +54,7 @@ Para completar este tutorial, debe tener opcional **almacenamiento de datos y el
 
 10. En el **Guardar cadena de conexión en el archivo de configuración de aplicación** página, elija **siguiente**.
 
-11. Una el **elija los objetos de base de datos** página, verá un mensaje que indica la base de datos no contiene ningún objeto. Elija **finalizar**.
+11. Una el **elija los objetos de base de datos** página, verá un mensaje que indica la base de datos no contiene ningún objeto. Elija **Finalizar**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Para ver las propiedades de la conexión de datos
 Puede ver la cadena de conexión para el archivo SampleDatabase.mdf abriendo la ventana Propiedades de la conexión de datos:

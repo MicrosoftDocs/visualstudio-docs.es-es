@@ -1,11 +1,8 @@
 ---
 title: Validar los datos en conjuntos de datos | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DataTable.ColumnChanging
 - System.Data.DataTable.ColumnChanging
@@ -20,17 +17,17 @@ helpviewer_keywords:
 - validating data, datasets
 - updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a85e7b429300ce86290e707bb612d778b8fbb20e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validate-data-in-datasets"></a>Validar los datos en conjuntos de datos
 Validación de datos es el proceso de confirmar que los valores que se especifican en los objetos de datos se ajustan a las restricciones de esquema de un conjunto de datos. El proceso de validación también confirma que estos valores son siguiendo las reglas establecidas para la aplicación. Es una buena práctica para validar los datos antes de enviar actualizaciones a la base de datos subyacente. Esto reduce los errores, así como el número de viajes de ida y vuelta entre una aplicación y la base de datos.  

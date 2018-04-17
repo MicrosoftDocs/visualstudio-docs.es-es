@@ -1,12 +1,9 @@
 ---
-title: "Editar y continuar en el cuadro de diálogo de mensaje de Error | Documentos de Microsoft"
-ms.custom: 
+title: Editar y continuar en el cuadro de diálogo de mensaje de Error | Documentos de Microsoft
+ms.custom: ''
 ms.date: 06/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.SupportedButNotAvaiable
@@ -19,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - Edit and Continue Error Message dialog box
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01cd34aacb4abea5f2f3ce29fcb53ba34aaeaf21
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 148fea0484bbcdfe16339ccc1b5e876506a76838
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Editar y continuar (Cuadro de diálogo de mensaje de error)
 Este cuadro de diálogo aparece cuando se depura en un lenguaje que admite Editar y continuar, pero **editar y continuar** no está disponible para el tipo de cambios de código realizados. El mensaje de error incluido en el cuadro proporciona una explicación más detallada. Entre las posibles razones para que aparezca este cuadro de diálogo se incluyen:  

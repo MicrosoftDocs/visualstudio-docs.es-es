@@ -1,29 +1,25 @@
 ---
 title: 'Idiasectioncontrib:: Get_code | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSectionContrib::get_code method
 ms.assetid: f9ccf7a6-46e7-4a1d-9d5c-97272e17bbbb
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a913d40820532fab76729dcc6a96191f27085714
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ce91b97efd91e79e60fe990d4c1485152870e25
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 Recupera una marca que indica si la sección contiene código ejecutable.  

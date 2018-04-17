@@ -1,12 +1,10 @@
 ---
-title: "CA2122: No exponer indirectamente métodos con peticiones de vínculo | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2122: No exponer indirectamente métodos con peticiones de vínculo | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2122
 - DoNotIndirectlyExposeMethodsWithLinkDemands
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DoNotIndirectlyExposeMethodsWithLinkDemands
 - CA2122
 ms.assetid: 3eda58e7-c6ec-41c3-8112-ae0841109c6a
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fc1d8c2ea663862e44b3092b0e2b8489eff3df6f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 836fca663baaa5a5c62c720eac9f7408732f95d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: No exponer indirectamente métodos con peticiones de vínculos
 |||  

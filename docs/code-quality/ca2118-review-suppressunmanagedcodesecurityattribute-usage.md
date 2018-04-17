@@ -1,12 +1,10 @@
 ---
-title: "CA2118: Uso de SuppressUnmanagedCodeSecurityAttribute de revisión | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2118: Uso de SuppressUnmanagedCodeSecurityAttribute de revisión | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Revisar el uso de SuppressUnmanagedCodeSecurityAttribute
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Un tipo público o protegido o el miembro tiene el <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atributo.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>cambia el comportamiento del sistema de seguridad predeterminado por miembros que ejecutan código no administrado mediante la invocación de plataforma o interoperabilidad COM. Por lo general, el sistema hace un [datos y modelado](/dotnet/framework/data/index) permiso de código no administrado. Esta petición se produce en tiempo de ejecución para cada invocación del miembro y comprueba cada llamador en la pila de llamadas para obtener permiso. Cuando el atributo está presente, el sistema realiza una [peticiones de vínculo](/dotnet/framework/misc/link-demands) para el permiso: los permisos del llamador inmediato se comprueban cuando el llamador está compilado JIT.  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> cambia el comportamiento del sistema de seguridad predeterminado por miembros que ejecutan código no administrado mediante la invocación de plataforma o interoperabilidad COM. Por lo general, el sistema hace un [datos y modelado](/dotnet/framework/data/index) permiso de código no administrado. Esta petición se produce en tiempo de ejecución para cada invocación del miembro y comprueba cada llamador en la pila de llamadas para obtener permiso. Cuando el atributo está presente, el sistema realiza una [peticiones de vínculo](/dotnet/framework/misc/link-demands) para el permiso: los permisos del llamador inmediato se comprueban cuando el llamador está compilado JIT.  
   
  Este atributo se utiliza principalmente para aumentar el rendimiento; sin embargo, las mejoras de rendimiento suponen riesgos de seguridad importantes. Si coloca el atributo en los miembros públicos que llaman a métodos nativos, los llamadores de la pila de llamadas (que no sea el llamador inmediato) no necesitan permiso de código no administrado para ejecutar código no administrado. Dependiendo de las acciones y el control de entrada al miembro público, podrían permitir a los llamadores no confiables a la funcionalidad de acceso restringido normalmente a código de confianza.  
   

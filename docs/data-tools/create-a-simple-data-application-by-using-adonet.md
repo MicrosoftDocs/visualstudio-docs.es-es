@@ -1,22 +1,22 @@
 ---
-title: "Crear una aplicación de datos sencilla mediante ADO.NET en Visual Studio | Documentos de Microsoft"
+title: Crear una aplicación de datos sencilla mediante ADO.NET en Visual Studio | Documentos de Microsoft
 ms.date: 08/23/2017
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab9c63e3601fb58bd2c25f84cf7ac8cda34f5b91
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 8bde01870a4511b261759cc7dd5dca04b211f2bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Crear una aplicación de datos sencilla mediante ADO.NET
 

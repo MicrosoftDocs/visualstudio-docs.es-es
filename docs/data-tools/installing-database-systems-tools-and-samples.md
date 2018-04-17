@@ -1,27 +1,24 @@
 ---
 title: Compatibilidad de base de datos de Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/06/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - database systems
 - database compatibility
 - databases for Visual Studio
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 8fbe818e233c8bbdaf4431c70b8962baf43a2ed2
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: 3c8cffef6144c188fd5f53e504f6065c4e7d0c1d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemas de base de datos compatible con Visual Studio
 
@@ -53,7 +50,7 @@ PostgreSQL es un sistema de base de datos relacional de objeto libre y de códig
 
 SQLite es un motor de base de datos SQL incrustado que se ejecuta en el proceso de la aplicación. Puede descargarlo desde el [página de descarga de SQLite](http://www.sqlite.org/download.html). Muchos paquetes de NuGet de terceros para SQLite también están disponibles. Puede examinar las ofertas en el Administrador de paquetes de NuGet (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes de NuGet para la solución**) .
 
-## <a name="firebird"></a>Pájaro de fuego
+## <a name="firebird"></a>Firebird
 
 Pájaro de fuego es un sistema de base de datos SQL de código abierto. Puede descargarlo desde el [página de descarga de pájaro de fuego](http://firebirdsql.org/en/downloads/). Un proveedor de datos ADO.NET está disponible a través del Administrador de paquetes de NuGet.
 

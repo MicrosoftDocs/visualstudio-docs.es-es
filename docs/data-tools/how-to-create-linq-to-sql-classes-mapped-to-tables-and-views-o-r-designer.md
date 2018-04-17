@@ -1,26 +1,23 @@
 ---
-title: "Cómo: crear LINQ a las clases SQL asignadas a tablas y vistas (Object Relational Designer) | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: crear LINQ a las clases SQL asignadas a tablas y vistas (Object Relational Designer) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: cc3c70ca70170de630dc28a10ff5d1352a610bfb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Cómo: crear LINQ a las clases SQL asignadas a tablas y vistas (Object Relational Designer)
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]las clases que se asignan a tablas de base de datos y vistas se denominan *las clases de entidad*. La clase de entidad se asigna a un registro, mientras que las propiedades individuales de una clase de entidad se asignan a las columnas individuales que forman un registro. Crear clases de entidad que se basan en tablas de base de datos o vistas arrastrando tablas o vistas desde **Explorador de servidores**/**el Explorador de base de datos** en el [LINQ a las herramientas de SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). El [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] genera las clases y aplica específico del [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atributos para habilitar [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funcionalidad (la comunicación de datos y editar las capacidades de la <xref:System.Data.Linq.DataContext>). Para obtener información detallada acerca de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] clases, vea el artículo [el modelo de LINQ to SQL objeto](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] las clases que se asignan a tablas de base de datos y vistas se denominan *las clases de entidad*. La clase de entidad se asigna a un registro, mientras que las propiedades individuales de una clase de entidad se asignan a las columnas individuales que forman un registro. Crear clases de entidad que se basan en tablas de base de datos o vistas arrastrando tablas o vistas desde **Explorador de servidores**/**el Explorador de base de datos** en el [LINQ a las herramientas de SQL en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). El [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] genera las clases y aplica específico del [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atributos para habilitar [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funcionalidad (la comunicación de datos y editar las capacidades de la <xref:System.Data.Linq.DataContext>). Para obtener información detallada acerca de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] clases, vea el artículo [el modelo de LINQ to SQL objeto](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
   
 > [!NOTE]
 >  El [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] es un asignador relacional de objetos simple porque admite únicamente relaciones de asignación 1:1. Es decir, una clase de entidad únicamente puede tener una relación de asignación 1:1 con una tabla o vista de base de datos. No se admiten asignaciones complejas, como la asignación de una clase de entidad a varias tablas. Sin embargo, se puede asignar una clase de entidad a una vista que combina varias tablas relacionadas.  

@@ -1,23 +1,20 @@
 ---
 title: Procedimientos recomendados y ejemplos (SAL) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c6f505d5e44aec47f88a7955b5b5d98b2699e4
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: d8910c9b5d36cecec82bf0e386e294759113c76e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="best-practices-and-examples-sal"></a>Procedimientos recomendados y ejemplos (SAL)
 Aquí se muestran algunas maneras de sacar el máximo partido fuera del lenguaje de anotación de código fuente (SAL) y evitar algunos problemas comunes.
@@ -47,7 +44,7 @@ void Func2(_Inout_ PCHAR p1)
 }
 ```
 
-## <a name="opt"></a>\_opt\_
+## <a name="opt"></a>\_participación\_
 
 Si el llamador no tiene permiso para pasar de un puntero nulo, use `_In_` o `_Out_` en lugar de `_In_opt_` o `_Out_opt_`. Esto se aplica incluso a una función que comprueba sus parámetros y devuelve un error si es NULL cuando no debería estar. Aunque tener una función comprobar su parámetro un valor nulo inesperado y devolver correctamente es una buena práctica de codificación defensiva, eso no significa que la anotación del parámetro puede ser de tipo opcional (`_*Xxx*_opt_`).
 
@@ -71,7 +68,7 @@ void Func2(_Out_ int *p1)
 
 Si una función aparece en un límite de confianza, se recomienda que realice la `_Pre_defensive_` anotación.  El modificador "estable" modifica determinadas anotaciones para indicar, en el momento de la llamada, la interfaz debe comprobarse estrictamente, pero en el cuerpo de la implementación, debe asumir que pueden pasarse parámetros incorrectos. En ese caso, `_In_ _Pre_defensive_` es preferible en un límite de confianza para indicar que aunque un llamador obtendrán un error si intenta pasar NULL, el cuerpo de la función se analizará como si el parámetro puede ser NULL y cualquier intento de hacer referencia a anular el puntero sin primero se marcará la comprobación de NULL.  Un `_Post_defensive_` anotación también está disponible para su uso en las devoluciones de llamada que el usuario de confianza se supone que el autor de llamada y el código no confiable es el código llamado.
 
-## <a name="outwrites"></a>\_Out\_writes\_
+## <a name="outwrites"></a>\_Out\_escribe\_
 
 En el ejemplo siguiente se muestra un uso indebido comunes de `_Out_writes_`.
 

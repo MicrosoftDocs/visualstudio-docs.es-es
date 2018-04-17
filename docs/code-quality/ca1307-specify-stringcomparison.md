@@ -1,12 +1,10 @@
 ---
 title: 'CA1307: Especificar StringComparison | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1307
 - SpecifyStringComparison
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1307
 - SpecifyStringComparison
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7087cfe23f7911ec33891a70cd88cf47ee9e4a7b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b8d51d55c1528af38c142c115165278503bc50fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Especificar StringComparison
 |||  

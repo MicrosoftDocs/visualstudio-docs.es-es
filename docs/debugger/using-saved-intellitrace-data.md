@@ -1,13 +1,10 @@
 ---
 title: Uso de los datos de IntelliTrace guardados | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 2a39531134d4c2f041c170d328c79d157fd74a0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) para ir a puntos concretos de la ejecución de la aplicación. Este archivo puede contener eventos de rendimiento, excepciones, subprocesos, pasos de prueba, módulos y otra información del sistema que IntelliTrace recopila mientras se ejecuta la aplicación.  
@@ -167,11 +163,11 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
      Por ejemplo:  
   
-     ![IntelliTrace &#45; Error de SharePoint &#45; Id. de correlación](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
+     ![IntelliTrace &#45; error de SharePoint &#45; Id. de correlación](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  Abra el archivo .iTrace, después vaya a **Análisis** y especifique el identificador de correlación de SharePoint para revisar la solicitud web y los eventos registrados coincidentes.  
   
-     ![Registro de IntelliTrace &#45; Escriba el Id. de correlación de SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![Registro de IntelliTrace &#45; Id. de correlación de SharePoint escriba](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  En **Eventos de solicitud**, examine los eventos. Empezando por el principio, los eventos aparecen en el orden en que se produjeron.  
   
@@ -179,7 +175,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
     2.  Elija **Iniciar depuración** para iniciar la depuración en el punto donde se produjo el evento.  
   
-     ![Archivo de registro de IntelliTrace &#45; Ver solicitud web &#43; eventos](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![Archivo de registro de IntelliTrace &#45; solicitud de vista web &#43; eventos](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  Puede ver estas clases de eventos de SharePoint junto con los eventos de IntelliTrace:  
   
@@ -209,7 +205,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
   
 3.  Elija **Depurar excepción** para iniciar la depuración en el punto en el que se produjo la excepción.  
   
-     ![Registro de IntelliTrace &#45; Las excepciones no controladas de SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![Registro de IntelliTrace &#45; excepciones no controladas de SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
  Para obtener un tutorial, vea [Tutorial: depurar una aplicación de SharePoint mediante el uso de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Para los tipos de datos que registra el agente, consulte [características de IntelliTrace](../debugger/intellitrace-features.md).  
   

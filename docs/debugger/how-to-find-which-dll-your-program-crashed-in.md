@@ -1,13 +1,10 @@
 ---
-title: "Cómo: buscar qué archivo DLL se bloqueó en el programa | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: buscar qué archivo DLL se bloqueó en el programa | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], DLL crashes
 - DLLs, load order of
 ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df872ea52d716b4eaedc9414bc7234ba7c6294d3
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 5aca05ea9ab8010ba91592b766de796636f3eb96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Cómo: Averiguar en qué archivo DLL se bloqueó el programa
   

@@ -1,12 +1,10 @@
 ---
-title: "CA1303: No pasar literales como adaptados parámetros | Documentos de Microsoft"
-ms.custom: 
+title: 'CA1303: No pasar literales como adaptados parámetros | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - Do not pass literals as localized parameters
 - DoNotPassLiteralsAsLocalizedParameters
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - DoNotPassLiteralsAsLocalizedParameters
 - CA1303
 ms.assetid: 904d284e-76d0-4b8f-a4df-0094de8d7aac
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 361155e9d46e4f71ddc61775f56105cedb5d18b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1af1edcd86d73687e24619d7e998fe304f9b5787
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: No pasar literales como parámetros localizados
 |||  

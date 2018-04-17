@@ -1,12 +1,10 @@
 ---
-title: "CA1061: No oculte métodos de clase base | Documentos de Microsoft"
-ms.custom: 
+title: 'CA1061: No oculte métodos de clase base | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1061
 - DoNotHideBaseClassMethods
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DoNotHideBaseClassMethods
 - CA1061
 ms.assetid: 0bda9dc8-87b4-4038-ab9d-563298387466
-caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d7eb4db46697e7f4cbb54d9ee11e4289b5a2ba2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f3119a088c0dfa7a976a12f0c6abb45e409da8d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: No oculte métodos de clases base
 |||  

@@ -1,29 +1,25 @@
 ---
 title: 'Idiaaddressmap:: Set_addressmap | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaAddressMap::set_addressMap method
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681e0bae46497d9b581e89340069937370831777
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 861bcce094765e18b7fce94b6477c1520e32826b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
 Proporciona un mapa de direcciones para admitir las traducciones de diseño de imagen.  
@@ -46,7 +42,7 @@ HRESULT set_addressMap (
  [in] Una matriz de [DiaAddressMapEntry estructura](../../debugger/debug-interface-access/diaaddressmapentry.md) estructuras que definen la asignación de traducción.  
   
  `imagetoSymbols`  
- [in] `TRUE` si el `data` parámetro define una asignación desde el nuevo diseño de imagen al diseño original (como se describe en los símbolos de depuración). `FALSE`Si `data` es un mapa para el nuevo diseño de imagen que se toma del diseño original.  
+ [in] `TRUE` si el `data` parámetro define una asignación desde el nuevo diseño de imagen al diseño original (como se describe en los símbolos de depuración). `FALSE` Si `data` es un mapa para el nuevo diseño de imagen que se toma del diseño original.  
   
 ## <a name="return-value"></a>Valor devuelto  
  Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  

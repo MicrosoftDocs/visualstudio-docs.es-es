@@ -1,13 +1,10 @@
 ---
-title: "Características de IntelliTrace | Documentos de Microsoft"
-ms.custom: 
+title: Características de IntelliTrace | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, debugging with events
 - IntelliTrace, recording execution history
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], IntelliTrace
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 6f4d407414c941d8c7658aa0d6f98f5b18d60244
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intellitrace-features"></a>Características de IntelliTrace
 

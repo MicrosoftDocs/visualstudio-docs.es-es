@@ -1,26 +1,23 @@
 ---
-title: "Cómo: agregar validación a clases de entidad | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: agregar validación a clases de entidad | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 1ff8eb04ae9b5009aff13dc8588633b34d4d72dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: df0f97994fd5144f9fff7cf9a5ce90fc43249476
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Cómo: agregar validación a clases de entidad
 *Validar* las clases de entidad es el proceso de confirmar que los valores especificados en los objetos de datos cumplen con las restricciones de esquema de un objeto así como las reglas establecidas para la aplicación. Se recomienda validar los datos antes de enviar las actualizaciones a la base de datos subyacente para reducir los errores. De este modo, también se reduce el número de viajes de ida y vuelta entre una aplicación y la base de datos.  

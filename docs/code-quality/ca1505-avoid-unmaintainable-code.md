@@ -1,12 +1,10 @@
 ---
-title: "CA1505: Evitar el código | Documentos de Microsoft"
-ms.custom: 
+title: 'CA1505: Evitar el código | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AvoidUnmaintainableCode
 - CA1505
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AvoidUnmaintainableCode
 - CA1505
 ms.assetid: 8292b268-5929-4221-b699-f9c414bcec5d
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5abaaba67d3390e36c4ad792d7b95bf41be80c2e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4338b73aab38b1d63f4d4015c3a1fe1e1d292932
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitar el código difícil de mantener
 |||  

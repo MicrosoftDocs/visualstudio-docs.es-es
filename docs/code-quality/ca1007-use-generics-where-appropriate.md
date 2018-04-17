@@ -1,12 +1,10 @@
 ---
-title: "CA1007: Utilizar valores genéricos cuando sea necesario | Documentos de Microsoft"
-ms.custom: 
+title: 'CA1007: Utilizar valores genéricos cuando sea necesario | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1007
 - UseGenericsWhereAppropriate
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1007
 - UseGenericsWhereAppropriate
 ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2d7093c437abf84bd86b520f84ffcf980491c77c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f0d1f324ce3ff3c27b608d8bcef1a1850804ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Utilizar valores genéricos cuando sea posible
 |||  

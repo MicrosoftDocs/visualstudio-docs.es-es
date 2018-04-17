@@ -1,12 +1,10 @@
 ---
 title: 'CA2109: Revisar los controladores de eventos visibles | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2109
 - ReviewVisibleEventHandlers
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewVisibleEventHandlers
 - CA2109
 ms.assetid: 8f8fa0ee-e94e-400e-b516-24d8727725d7
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 42b4ed61faae66c0a07e171a89a6ac9e4b9157e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7949c7f0b1bfa535fea2c30fd3a473f5fe82fc37
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Revisar los controladores de eventos visibles
 |||  

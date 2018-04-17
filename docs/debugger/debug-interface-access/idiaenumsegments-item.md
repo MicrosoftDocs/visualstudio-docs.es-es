@@ -1,29 +1,25 @@
 ---
 title: 'Idiaenumsegments:: Item | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSegments::Item method
 ms.assetid: ee44dd55-39a0-4b7b-97ff-2e1226eeb2bd
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb2aeef0fe2bb6e5d844dac61c43ce0c4d67a73
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 101e44fdd5601a65421fe5f65534cac6bd8bef75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Recupera un segmento por medio de un índice.  

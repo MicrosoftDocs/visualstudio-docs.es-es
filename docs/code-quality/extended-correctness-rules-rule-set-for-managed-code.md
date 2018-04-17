@@ -1,23 +1,21 @@
 ---
-title: "Conjunto de reglas reglas de corrección extendidas para código administrado | Documentos de Microsoft"
-ms.custom: 
+title: Conjunto de reglas reglas de corrección extendidas para código administrado | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 498b3b3eced8e21cb2079715a0bd6c2375eb8dfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: d7a09ef56020c552134ff4a7a325dacc57f8cae7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección extendidas para código administrado
 El conjunto de reglas reglas de corrección extendidas de Microsoft maximiza los errores de uso de lógica y un marco que son notificados por el análisis de código. Se pone especial énfasis en escenarios específicos como la interoperabilidad COM y aplicaciones móviles. Es aconsejable que incluya este conjunto de reglas si alguno de estos escenarios se aplica a su proyecto o para buscar problemas adicionales del proyecto.  
@@ -84,7 +82,7 @@ El conjunto de reglas reglas de corrección extendidas de Microsoft maximiza los
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecargar el operador de igualdad al reemplazar ValueType.Equals|  
 |[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Puntos de entrada de marca de Windows Forms con STAThread|  
 |[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Marcar todos los campos no serializables|  
-|[LCA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Llamar a métodos de clase base en tipos ISerializable|  
+|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Llamar a métodos de clase base en tipos ISerializable|  
 |[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Marcar los tipos ISerializable con SerializableAttribute|  
 |[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Implementar métodos de serialización correctamente|  
 |[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|Implementar ISerializable correctamente|  

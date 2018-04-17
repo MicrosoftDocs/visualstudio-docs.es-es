@@ -1,28 +1,25 @@
 ---
 title: Proyectos, proyectos de servidor y los proyectos DAC en Visual Studio de la base de datos | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - managing change, databases
 - database features of Visual Studio, managing change
 - databases, managing change
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: baca17712d6cf39753dab51c60fee901c0ea08ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Proyectos de base de datos y aplicaciones de capa de datos en Visual Studio  
 Puede usar proyectos de base de datos para crear nuevas bases de datos nuevas aplicaciones de capa de datos (DAC) y para actualizar bases de datos existentes y las aplicaciones de capa de datos. Proyectos de base de datos y los proyectos DAC permiten aplicar técnicas de administración de proyecto y de control de versión para los trabajos de desarrollo de base de datos de la misma manera que se aplican dichas técnicas al código administrado o nativo. Puede ayudar a su equipo de desarrollo administrar los cambios en las bases de datos y servidores de base de datos mediante la creación de un *proyecto DAC*, *proyecto de base de datos*, o un *proyecto de servidor* y escribirlos en el control de versiones. Los miembros del equipo, a continuación, pueden desproteger los archivos para realizar, compilar y probar los cambios en un *entorno de desarrollo aislado*, o espacio aislado, antes de compartirlos con el equipo. Para ayudar a garantizar la calidad del código, el equipo puede finalizar y probar todos los cambios para una versión concreta de la base de datos en un entorno de ensayo antes de implementar los cambios en producción.  

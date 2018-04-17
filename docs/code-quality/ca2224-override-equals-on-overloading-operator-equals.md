@@ -1,12 +1,10 @@
 ---
 title: 'CA2224: Reemplazar equals al sobrecargar operadores de igualdad | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2224
 - OverrideEqualsOnOverloadingOperatorEquals
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - OverrideEqualsOnOverloadingOperatorEquals
 - CA2224
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d34acafb4f014b91e4c0f707060ce0442a413e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9931e359b866573099723faa91b147d44f17e3bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Reemplazar Equals al sobrecargar operadores de igualdad
 |||  
@@ -51,7 +49,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Ejemplos de definiciones de igualdad incoherentes  
   
 ### <a name="description"></a>Descripción  
- En el ejemplo siguiente se muestra un tipo con definiciones incoherentes de igualdad. `BadPoint`cambia el significado de igualdad proporcionando una implementación personalizada del operador de igualdad, pero no reemplaza <xref:System.Object.Equals%2A> para que se comporta de forma idéntica.  
+ En el ejemplo siguiente se muestra un tipo con definiciones incoherentes de igualdad. `BadPoint` cambia el significado de igualdad proporcionando una implementación personalizada del operador de igualdad, pero no reemplaza <xref:System.Object.Equals%2A> para que se comporta de forma idéntica.  
   
 ### <a name="code"></a>Código  
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_1.cs)]  

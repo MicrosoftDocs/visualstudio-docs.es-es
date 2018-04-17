@@ -2,12 +2,9 @@
 title: Remoto depurar un proyecto de Visual C++ | Documentos de Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fb8230c2a70cf98a20993db930ddc1d494e989d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: df0caacf8d3d99117208ce197e075f20f6df8b5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un proyecto de Visual C++ en Visual Studio la depuración remota
 Para depurar una aplicación de Visual Studio en un equipo diferente, instalar y ejecutar las herramientas remotas en el equipo donde va a implementar la aplicación, configure el proyecto para conectarse al equipo remoto desde Visual Studio y, a continuación, implementar y ejecutar la aplicación.
@@ -50,14 +46,14 @@ El depurador remoto es compatible con Windows 7 y versiones más recientes (no d
 > [!TIP]
 > En algunos casos, puede ser más eficaz para ejecutar al depurador remoto desde un recurso compartido de archivos. Para obtener más información, consulte [ejecutar el depurador remoto desde un recurso compartido de archivos](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Configurar el depurador remoto
+## <a name="BKMK_setup"></a> Configurar el depurador remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Si necesita agregar permisos para los usuarios adicionales, cambiar el modo de autenticación o número de puerto para el depurador remoto, consulte [configurar el depurador remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a>Depuración remota de un proyecto de Visual C++  
+## <a name="remote_cplusplus"></a> Depuración remota de un proyecto de Visual C++  
  En el siguiente procedimiento, el nombre y la ruta de acceso del proyecto es C:\remotetemp\MyMfc y el nombre del equipo remoto es **MJO DL**.  
   
 1.  Crear una aplicación MFC denominada **mymfc.**  
@@ -96,7 +92,7 @@ El depurador remoto es compatible con Windows 7 y versiones más recientes (no d
   
 10. Si se le solicite, escriba las credenciales de red para conectarse al equipo remoto.  
   
-     Las credenciales necesarias son específicas de la configuración de seguridad de su red. Por ejemplo, en un equipo de dominio, puede elegir un certificado de seguridad o escriba su nombre de dominio y contraseña. En un equipo no es de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como  **MJO-DL\name@something.com** , junto con la contraseña correcta.  
+     Las credenciales necesarias son específicas de la configuración de seguridad de su red. Por ejemplo, en un equipo de dominio, puede elegir un certificado de seguridad o escriba su nombre de dominio y contraseña. En un equipo no es de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como **MJO-DL\name@something.com**, junto con la contraseña correcta.  
   
 11. En el equipo de Visual Studio, verá que la ejecución se detiene en el punto de interrupción.  
   

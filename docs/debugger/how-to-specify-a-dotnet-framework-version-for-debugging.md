@@ -1,12 +1,10 @@
 ---
-title: "Cómo: especificar una versión de .NET Framework para la depuración | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: especificar una versión de .NET Framework para la depuración | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - .NET Framework, specifying version for debugging
 - debugging [Visual Studio], specifying .NET Framework version
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 69fa33ac76f39f7f37cc9aa84d61fd3cf7b0fe45
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 1d3d94d4243e138d4b8f9753d02bbc184db6e377
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Cómo: Especificar una versión de .NET Framework para la depuración
 El depurador de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] puede depurar versiones anteriores de Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] así como la versión actual. Si inicia una aplicación desde Visual Studio, el depurador siempre puede identificar la versión correcta de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para la aplicación que está depurando. Si la aplicación ya se está ejecutando y usa **adjuntar a**, el depurador no podrá siempre identificar una versión anterior de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Si esto ocurre, aparecerá un mensaje de error que indica,  

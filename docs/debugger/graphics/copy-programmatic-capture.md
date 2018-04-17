@@ -1,23 +1,21 @@
 ---
-title: "Copiar (captura mediante programación) | Documentos de Microsoft"
-ms.custom: 
+title: Copiar (captura mediante programación) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 30ec235a-0abb-44b9-8852-61bc9e67ce22
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7f8fce1893363ac6df0e6d22320f718833a1114e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a658f458b6f2dac48ad19f60e2491ad9d6e94406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="copy-programmatic-capture"></a>Copiar (captura mediante programación)
 Copia el contenido del archivo de registro de gráficos (.vsglog) activo en un nuevo archivo.  

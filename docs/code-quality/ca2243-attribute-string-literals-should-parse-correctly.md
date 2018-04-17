@@ -1,12 +1,10 @@
 ---
 title: 'CA2243: Los literales de cadena de atributo deben analizar correctamente | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2243
 - AttributeStringLiteralsShouldParseCorrectly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AttributeStringLiteralsShouldParseCorrectly
 - CA2243
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 79ffda960d85c05648a0f1ea7d6c759fc9e76f78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0715624391b766649e48775470ed9e27f47f9613
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Los literales de cadena de atributo se deben analizar correctamente
 |||  

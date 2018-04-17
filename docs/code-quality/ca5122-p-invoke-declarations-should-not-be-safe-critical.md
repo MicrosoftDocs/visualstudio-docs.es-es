@@ -1,23 +1,21 @@
 ---
-title: "Declaraciones ca5122: P-Invoke no deben ser seguras crítico | Documentos de Microsoft"
-ms.custom: 
+title: 'Declaraciones ca5122: P-Invoke no deben ser seguras crítico | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: f2581a6d-2a0e-40c1-b600-f5dc70909200
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4f20199c554dc77f3d30ff2846821c8c443d541b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 537c705afa002d4895cf8213acf90be485821fc9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122: Las declaraciones P/Invoke no deben ser críticas para la seguridad
 |||  

@@ -1,12 +1,10 @@
 ---
-title: "CA2227: Propiedades de la colección deben ser de solo lectura | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2227: Propiedades de la colección deben ser de solo lectura | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2227
 - CollectionPropertiesShouldBeReadOnly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2227
 - CollectionPropertiesShouldBeReadOnly
 ms.assetid: 26967aaf-6fbe-438a-b4d3-ac579b5dc0f9
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8a1835c5e600320ec8b36102e4749d92cf21eae1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0884b2fc15a08584052fb69dca9980964b2fd374
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Las propiedades de la colección deben ser de solo lectura
 |||  

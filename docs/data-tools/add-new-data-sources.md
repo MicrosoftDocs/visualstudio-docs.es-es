@@ -1,29 +1,25 @@
 ---
-title: "Agregar nuevos orígenes de datos | Documentos de Microsoft"
-ms.custom: 
+title: Agregar nuevos orígenes de datos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 865f575aefedb5813a72d7a0bb2024bc85313db0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7dae171cb5f620d9dac09edb966ac1291a127d65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 En el contexto de las herramientas de datos de .NET en Visual Studio, el término *origen de datos* hace referencia a objetos de .NET que se conectan a un almacén de datos y exponen los datos a una aplicación. NET. Los diseñadores de Visual Studio pueden consumir la salida del origen de datos para generar el código reutilizable que enlaza los datos a los formularios cuando arrastra y coloca los objetos de base de datos de la **orígenes de datos** ventana. Este tipo de origen de datos puede ser:  
@@ -76,7 +72,7 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
   
 -   Data Services de WCF. Para obtener más información, consulte [Introducción](/dotnet/framework/data/wcf/wcf-data-services-overview).  
   
--   Servicios de WCF. Para obtener más información, consulte [servicios Windows Communication Foundation y servicios de datos de WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+-   Servicios WCF. Para obtener más información, consulte [servicios Windows Communication Foundation y servicios de datos de WCF en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
 -   Servicios Web.  
   

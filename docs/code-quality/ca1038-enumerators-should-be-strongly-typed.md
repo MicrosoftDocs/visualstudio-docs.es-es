@@ -1,12 +1,10 @@
 ---
 title: 'CA1038: Los enumeradores deben estar fuertemente tipados | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
 - CA1038
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - EnumeratorsShouldBeStronglyTyped
 - CA1038
 ms.assetid: 8919f526-d487-42a4-87dc-2b2ee25260c4
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 84ddea0bebd5c3811da84abadd207b839ec8be48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 01b194864f559ff095d8727ff11a4906377aa482
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Los enumeradores deben estar fuertemente tipados
 |||  

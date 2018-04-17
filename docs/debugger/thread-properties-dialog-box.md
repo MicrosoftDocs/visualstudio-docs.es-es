@@ -1,26 +1,24 @@
 ---
-title: "Cuadro de diálogo Propiedades del subproceso | Documentos de Microsoft"
-ms.custom: 
+title: Cuadro de diálogo Propiedades del subproceso | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Spy++, thread properties
 - thread properties, Spy++
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0abdebd821051d6821567c8a8ec87329868c6b28
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d8b3a0fbb7feb4e2865f67a9c51404d0ec45641d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="thread-properties-dialog-box"></a>Cuadro de diálogo Propiedades del subproceso
 Utilice este cuadro de diálogo para obtener más información acerca de un subproceso concreto. Para mostrar este cuadro de diálogo, mueva el foco a un [vista de subprocesos](../debugger/threads-view.md) ventana o abra [vista mensajes](../debugger/messages-view.md) y expanda un mensaje. Seleccione cualquier nodo de subproceso en el árbol y después elija **propiedades** desde el **vista** menú.  

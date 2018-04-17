@@ -1,23 +1,21 @@
 ---
 title: BuildProjectOnload (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6d672eca7b818ce9bc06df4a09a7623be9e8d89f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload (Elemento, Plantillas de Visual Studio)
 Crea nuevos proyectos de solo cuando se crean y agregarlos a una solución. No se compila la solución completa.  

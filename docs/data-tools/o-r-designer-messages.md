@@ -1,23 +1,20 @@
 ---
-title: "R O diseñadores mensajes | Documentos de Microsoft"
-ms.custom: 
+title: R O diseñadores mensajes | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 0c3e399e7c1885f8c288bc05c49ac0a020fc7470
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: beb5aeb6cded349dae18b05a12dc2843b705c4ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="or-designer-messages"></a>Mensajes de Object Relational Designer
 En este tema se enumeran los mensajes que pueden aparecer cuando se trabaja con Object Relational Designer.  

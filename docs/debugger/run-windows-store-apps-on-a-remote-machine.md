@@ -1,28 +1,26 @@
 ---
 title: Ejecutar aplicaciones UWP en un equipo remoto | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/05/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
-caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Ejecutar aplicaciones UWP en un equipo remoto en Visual Studio
   
@@ -51,11 +49,11 @@ De forma predeterminada, **Universal (protocolo sin cifrar)** se usa en Windows 
 > [!WARNING]
 >  No hay ninguna seguridad de red al establecer el modo de autenticación en **Universal (protocolo sin cifrar)** o **ninguno**. Elegir estos modos solamente si está seguro de que la red no presenta riesgos de tráfico hostil o malintencionado.  
   
-##  <a name="BKMK_DirectConnect"></a>Cómo conectar directamente con un cable USB 
+##  <a name="BKMK_DirectConnect"></a> Cómo conectar directamente con un cable USB 
 
 En Windows 10, puede implementar en un dispositivo conectado por USB eligiendo **dispositivo** en lugar de **equipo remoto** como el destino de implementación (puede hacer esto en el **estándar** barra de herramientas o en la página de propiedades de depuración).
 
-##  <a name="BKMK_ConnectVS"></a>Configurar el proyecto de Visual Studio para la depuración remota  
+##  <a name="BKMK_ConnectVS"></a> Configurar el proyecto de Visual Studio para la depuración remota  
  Especifica el dispositivo remoto al que quieras conectarte en las propiedades del proyecto. El procedimiento varía según cuál sea el lenguaje de programación. Puede escribir el nombre de red del dispositivo remoto o puede seleccionarlo en el **conexión remota** cuadro de diálogo.  
   
  ![Cuadro de diálogo Seleccionar conexión del depurador remoto](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -65,7 +63,7 @@ En Windows 10, puede implementar en un dispositivo conectado por USB eligiendo *
 > [!TIP]
 >  Si tienes dificultades para conectarte con un dispositivo remoto, intenta escribir la dirección IP del dispositivo. Para determinar la dirección IP de un dispositivo, abre una ventana de comandos y escribe **ipconfig**. La dirección IP aparece como **IPv4 Address**.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Elija el dispositivo remoto para los proyectos de C# y Visual Basic  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Elija el dispositivo remoto para los proyectos de C# y Visual Basic  
   
 1.  En el Explorador de soluciones, selecciona el nombre del proyecto y elige **Propiedades** en el menú contextual.  
   
@@ -77,7 +75,7 @@ En Windows 10, puede implementar en un dispositivo conectado por USB eligiendo *
 
     ![Administrar propiedades del proyecto para la depuración remota](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Elija el dispositivo remoto para los proyectos de JavaScript y C++  
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Elija el dispositivo remoto para los proyectos de JavaScript y C++  
   
 1.  En el Explorador de soluciones, selecciona el nombre del proyecto y elige **Propiedades** en el menú contextual.  
   
@@ -87,19 +85,19 @@ En Windows 10, puede implementar en un dispositivo conectado por USB eligiendo *
   
 4.  Escribe el nombre de red del dispositivo remoto en el cuadro **Nombre de equipo** o bien elige la flecha abajo contigua para elegir el dispositivo en el cuadro de diálogo **Seleccionar conexión del depurador remoto** .  
 
-    ![C &#43; &#43; proyectar las propiedades para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+    ![C&#43; &#43; proyectar las propiedades para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
   
-## <a name="BKMK_download"></a>Descargue e instale las herramientas remotas (actualización creadores previa)
+## <a name="BKMK_download"></a> Descargue e instale las herramientas remotas (actualización creadores previa)
 
 Si usa versiones de actualización del pre-creador de Windows 10, a continuación, siga estas instrucciones. En caso contrario, puede omitir esta sección.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Configurar el depurador remoto
+### <a name="BKMK_setup"></a> Configurar el depurador remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a>Iniciar una sesión de depuración remota  
+##  <a name="BKMK_RunRemoteDebug"></a> Iniciar una sesión de depuración remota  
  Una sesión de depuración remota se inicia, se detiene y se navega por ella de la misma forma que una sesión local. En versiones de actualización del creador anterior de Windows 10, asegúrese de que el Monitor de depuración remota se ejecuta en el dispositivo remoto.  
   
  A continuación, elige **Iniciar depuración** en el menú **Depurar** (teclado: F5). El proyecto se recompila. Luego, se implementa e inicia en el dispositivo remoto. El depurador suspende la ejecución en los puntos de interrupción. Puedes depurar paso a paso por instrucciones o por procedimientos y hasta salir del código. Elige **Detener depuración** para finalizar la sesión de depuración y cerrar la aplicación remota.

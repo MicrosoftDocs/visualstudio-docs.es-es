@@ -1,29 +1,25 @@
 ---
 title: 'Idiasectioncontrib:: Get_compiland | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSectionContrib::get_compiland method
 ms.assetid: c0496f6f-f8f2-435f-8674-6c32db6c5934
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1748e3143c0ce650e73a80f23f71474263cbf322
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f8a89885e559e238ba1342283a75e835d8989eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
 Recupera una referencia al símbolo compiland que han contribuido en esta sección.  

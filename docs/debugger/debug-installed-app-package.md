@@ -1,13 +1,10 @@
 ---
-title: "Depurar un paquete de aplicación instalada (UWP) | Documentos de Microsoft"
+title: Depurar un paquete de aplicación instalada (UWP) | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,17 +17,16 @@ dev_langs:
 helpviewer_keywords:
 - app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 9c1406637b6d1dce312b0574cfba3c9a4f7356e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Depurar un paquete de aplicación instalada en Visual Studio (UWP)
 
@@ -62,7 +58,7 @@ Para obtener más información acerca de estas características, consulte la ent
 > [!NOTE]
 > Visual Studio también puede conectarse a cualquier proceso de aplicación UWP ejecución seleccionando **depurar**y, a continuación, **adjuntar al proceso**. Adjuntar a un proceso en ejecución no requiere el proyecto de Visual Studio original, pero la carga de símbolos del proceso le ayudarán a significativamente cuando se depura un proceso que no tiene el código original de.
   
-## <a name="remote"></a>Depurar una aplicación instalada o se está ejecutando en un equipo remoto 
+## <a name="remote"></a> Depurar una aplicación instalada o se está ejecutando en un equipo remoto 
 
 Cuando se depura un paquete de aplicación instalada en un equipo remoto por primera vez, Visual Studio instala la versión correcta de las herramientas remotas para el dispositivo de destino. El dispositivo de destino debe ser un equipo Windows 10, XBox, HoloLens o IoT dispositivo.
 

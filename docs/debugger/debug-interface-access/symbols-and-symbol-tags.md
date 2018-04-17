@@ -1,29 +1,25 @@
 ---
-title: "Símbolos y etiquetas de símbolo | Documentos de Microsoft"
-ms.custom: 
+title: Símbolos y etiquetas de símbolo | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - symbols [DIA SDK]
 ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e51d02171455cd5b0b6051ed3b05c6d95278ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 69d2f5c2182f32a95ca95d24c5319b164f27f1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="symbols-and-symbol-tags"></a>Símbolos y etiquetas de símbolo
 Información de depuración acerca de un programa compilado se almacena en el archivo de programa (.pdb) de la base de datos como símbolos que sean accesibles mediante la API del SDK de Debug Interface Access (DIA). Todos los símbolos tienen un [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) y un [idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) propiedad. El `symTag` propiedad indica el tipo de símbolo definido por el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración. El `symIndexId` propiedad es una `DWORD` valor que contiene el identificador único para cada instancia de un símbolo.  

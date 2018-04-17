@@ -1,23 +1,21 @@
 ---
-title: "Conjunto de reglas reglas mínimas nativas | Documentos de Microsoft"
-ms.custom: 
+title: Conjunto de reglas reglas mínimas nativas | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6db3e112f45200221eff80c033daed4a04c152d4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 33617535363aaff853779e2dfe3ad011db027bba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de reglas Reglas mínimas nativas
 Las reglas mínimas nativo de Microsoft se centran en los problemas más graves en el código nativo, incluidas posibles vulnerabilidades de seguridad y bloqueos de la aplicación. Debe incluir este conjunto de reglas en todos los conjuntos de reglas personalizados que cree para sus proyectos nativos.  

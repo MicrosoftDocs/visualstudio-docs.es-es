@@ -1,23 +1,20 @@
 ---
-title: "Introducción a Visual Studio Object Relational Designer | Documentos de Microsoft"
-ms.custom: 
+title: Introducción a Visual Studio Object Relational Designer | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 09fe5a8cbec1ba1ab5a45abda4c88864e25a1751
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL herramientas en Visual Studio
 LINQ to SQL era la primera tecnología de asignación objeto-relacional publicada por Microsoft. Funciona bien en escenarios básicos y continúa siendo compatible con Visual Studio, pero es ya no está en desarrollo activo. Usar LINQ to SQL al mantener una aplicación heredada que ya está utilizando, o en aplicaciones sencillas que use SQL Server y no requieren la asignación de varias tabla. En general, aplicaciones nuevas deben usar Entity Framework cuando se requiere un nivel de asignador relacional de objetos.  

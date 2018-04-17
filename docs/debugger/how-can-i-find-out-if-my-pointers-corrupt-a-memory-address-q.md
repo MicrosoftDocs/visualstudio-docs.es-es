@@ -1,12 +1,10 @@
 ---
-title: "Cómo averiguar si los punteros dañan una dirección de memoria | Microsoft Docs"
-ms.custom: 
+title: Cómo averiguar si los punteros dañan una dirección de memoria | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - debugging [C++], memory corruption
 - corrupted memory address
 ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a57b36fc1d1dd25f439f65fe9d72cec6aab63471
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9e15681f304cdbf3e62bbc9b466507d541a707b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Cómo averiguar si los punteros dañan una dirección de memoria
 ## <a name="problem-description"></a>Descripción del problema  
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="check-for-heap-corruption"></a>Compruebe si el montón está dañado  
   
--   La mayoría de los daños en la memoria se deben en realidad a que el montón está dañado. Pruebe a usar la utilidad de marcas global (gflags.exe) o pageheap.exe. Vea [http://support.microsoft.com/default.aspx?scid=kb;en-us;286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).  
+-   La mayoría de los daños en la memoria se deben en realidad a que el montón está dañado. Pruebe a usar la utilidad de marcas global (gflags.exe) o pageheap.exe. Vea [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).  
   
 #### <a name="to-find-where-the-memory-address-is-modified"></a>Para averiguar dónde se ha modificado la dirección de la memoria  
   

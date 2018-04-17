@@ -1,11 +1,8 @@
 ---
 title: Enlazar los objetos en Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 71922f3fb6dffb63c1a6c5ed1b12e5cbce402323
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-objects-in-visual-studio"></a>Enlazar los objetos en Visual Studio
 Visual Studio proporciona herramientas en tiempo de diseño para trabajar con objetos personalizados, como el origen de datos en la aplicación. Cuando desea almacenar los datos de una base de datos en un objeto que se enlazan a controles de interfaz de usuario, el enfoque recomendado es usar Entity Framework para generar la clase o clases. Entity Framework genera automáticamente todo el código de seguimiento de cambios de código reutilizable, lo que significa que los cambios realizados en los objetos locales guardan automáticamente en la base de datos cuando se llama a AcceptChanges en el objeto DbSet. Para obtener más información, consulte [documentación de Entity Framework](https://ef.readthedocs.org/en/latest/).  

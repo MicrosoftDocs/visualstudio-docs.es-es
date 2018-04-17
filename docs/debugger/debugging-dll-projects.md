@@ -1,12 +1,10 @@
 ---
 title: Depurar proyectos DLL | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - DLLs, debugging
 - debugging [Visual Studio], DLLs
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b7e897b69770f42bac9757f061f96a67fc9b99f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Depurar proyectos DLL desde Visual Studio
 Las siguientes plantillas de Visual Studio crean archivos DLL:  
@@ -106,7 +104,7 @@ Antes de iniciar la depuración de la aplicación que hace la llamada, normalmen
   
      Se llegará al punto de interrupción y podrá recorrer `Test`. Después de que la ejecución sale de `Test`, el depurador regresa al modo de diseño.
 
-## <a name="vxtskdebuggingdllprojectsexternal"></a>Depurar un archivo DLL externo desde un proyecto de C++
+## <a name="vxtskdebuggingdllprojectsexternal"></a> Depurar un archivo DLL externo desde un proyecto de C++
 
 Si está depurando un archivo DLL externo a su proyecto, las características de depuración (por ejemplo, recorrer el código) dependerá de la [configuración de depuración del archivo DLL](#vxtskdebuggingdllprojectsbuildingadebugversion) cuando se creó y si el [archivo .pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) y otros archivos necesarios para el archivo DLL están disponibles.
 

@@ -1,12 +1,10 @@
 ---
-title: "CA2219: No producir excepciones en cláusulas de excepción | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2219: No producir excepciones en cláusulas de excepción | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseExceptionsInExceptionClauses
 - CA2219
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DoNotRaiseExceptionsInExceptionClauses
 - CA2219
 ms.assetid: 7b9b0bee-4e8e-49a4-8c40-52142b49061f
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8c5a4ee1d4425b3967928171648453a631aea815
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: abe5fe25297c61e84e19857747c19b3602f78e0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: No producir excepciones en cláusulas de excepción
 |||  

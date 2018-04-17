@@ -1,12 +1,10 @@
 ---
-title: "Cómo: cambiar el idioma de publicación para una aplicación ClickOnce | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: cambiar el idioma de publicación para una aplicación ClickOnce | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, changing publish language
 - publishing, ClickOnce
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
-caps.latest.revision: "19"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7d368f036e8a5f8599a802bb6f57eba7bc6d767d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b1590eb45950cb0e8b9de668b7eabe62d13c3b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Cómo: Cambiar el idioma de publicación de una aplicación ClickOnce
 Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, la interfaz de usuario mostrada durante la instalación el valor predeterminado es el idioma y la referencia cultural del equipo de desarrollo. Si va a publicar una aplicación localizada, debe especificar un idioma y la referencia cultural para que coincida con la versión localizada. Esto viene determinado por la `Publish language` propiedad para el proyecto.  

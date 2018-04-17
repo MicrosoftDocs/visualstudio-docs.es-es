@@ -1,13 +1,10 @@
 ---
 title: Las advertencias de seguridad | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 397259c509e07ede09752b7c410bb6362170c412
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-warnings"></a>Advertencias de seguridad
 Las advertencias de seguridad son compatibles con las bibliotecas y aplicaciones más seguras. Estas advertencias ayudan a evitar los errores de seguridad en su programa. Si deshabilita cualquier advertencia de este tipo, se debe indicar el motivo claramente en el código además de informar al responsable de seguridad designado a ese proyecto de desarrollo.  

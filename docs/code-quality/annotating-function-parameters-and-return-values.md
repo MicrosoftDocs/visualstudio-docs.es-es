@@ -1,12 +1,10 @@
 ---
-title: "Anotar parámetros de función y valores devueltos | Documentos de Microsoft"
-ms.custom: 
+title: Anotar parámetros de función y valores devueltos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
 - _Inout_updates_all_opt_
@@ -125,16 +123,16 @@ f1_keywords:
 - _Result_nullonfailure_
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: daeed5dd92116af4346cd8aa2086e6a3dd3af216
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 Este artículo describen los usos típicos de anotaciones para parámetros de función sencilla, escalares y punteros a estructuras y clases y la mayoría de los tipos de búferes.  En este artículo también muestra los patrones de uso común para las anotaciones. Para obtener información sobre las anotaciones adicionales que están relacionados con las funciones, vea [anotar el comportamiento de la función](../code-quality/annotating-function-behavior.md)  
@@ -188,7 +186,7 @@ Este artículo describen los usos típicos de anotaciones para parámetros de fu
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     En este ejemplo, el autor de llamada proporciona un búfer de `size` elementos para `p1`.  `MyStringCopy`valida algunos de esos elementos. Lo que es más importante, el `_Null_terminated_` anotación en `PWSTR` significa que `p1` está terminada en null en estado posterior a la.  De esta manera, el número de elementos válidos es todavía bien definido, pero no se requiere un recuento de elemento específico.  
+     En este ejemplo, el autor de llamada proporciona un búfer de `size` elementos para `p1`.  `MyStringCopy` valida algunos de esos elementos. Lo que es más importante, el `_Null_terminated_` anotación en `PWSTR` significa que `p1` está terminada en null en estado posterior a la.  De esta manera, el número de elementos válidos es todavía bien definido, pero no se requiere un recuento de elemento específico.  
   
      El `_bytes_` variante proporciona el tamaño en bytes en lugar de elementos. Úselo solo cuando el tamaño no se puede expresar como elementos.  Por ejemplo, `char` cadenas utilizaría el `_bytes_` variante solo si la función similares a las que usa `wchar_t` sería.  
   

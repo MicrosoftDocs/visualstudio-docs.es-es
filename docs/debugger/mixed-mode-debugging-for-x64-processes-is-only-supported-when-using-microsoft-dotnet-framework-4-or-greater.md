@@ -1,13 +1,10 @@
 ---
-title: "Modo mixto de depuración para x64 procesos solo se admite cuando se usa Microsoft.NET Framework 4 o mayor | Documentos de Microsoft"
-ms.custom: 
+title: Modo mixto de depuración para x64 procesos solo se admite cuando se usa Microsoft.NET Framework 4 o mayor | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.interop_unsupported_x64
 dev_langs:
@@ -16,17 +13,16 @@ dev_langs:
 - FSharp
 - C++
 ms.assetid: b7495655-54c0-4315-8422-43bf63b8c22e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d5c52192c30ccc3b34bfa609c3f6a7ffb99566
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 224e4de9e3a00882cb065037005b7644343262d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>El modo de depuración mixto para procesos x64 solo se admite cuando se usa Microsoft .NET Framework 4 o posterior
 Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad para la depuración en modo mixto de procesos de 64 bits. Esto significa que no puede pasar de código administrado a código nativo, o de código nativo a código administrado, mientras está depurando.  
@@ -35,11 +31,11 @@ Las versiones de .NET Framework anteriores a la 4 no proporcionan compatibilidad
   
 -   Actualice el proyecto para usar Microsoft .NET Framework 4 o posterior.  
   
-     O bien  
+     -o bien-  
   
      Depurar el código administrado y el código nativo en sesiones de depuración independientes.  
   
-     O bien  
+     -o bien-  
   
      Depurar el código mixto como un proceso de 32 bits, tal y como se describe en los procedimientos siguientes.  
   

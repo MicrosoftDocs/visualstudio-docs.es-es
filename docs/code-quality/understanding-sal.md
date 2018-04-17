@@ -1,23 +1,21 @@
 ---
-title: "Descripción de SAL | Documentos de Microsoft"
-ms.custom: 
+title: Descripción de SAL | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: deb1825bb514afec4db3bf705ac787aadb88cc11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-sal"></a>Introducción a SAL
 El lenguaje de anotación de código fuente (SAL) de Microsoft proporciona un conjunto de anotaciones que puede usar para describir la forma en que una función usa sus parámetros, las suposiciones que hace sobre ellos y las garantías de que realiza cuando termina. Las anotaciones se definen en el archivo de encabezado `<sal.h>`. Análisis de código de Visual Studio para C++ usa anotaciones SAL para modificar su análisis de funciones. Para obtener más información acerca de SAL 2.0 para el desarrollo de controladores de Windows, vea [anotaciones de SAL 2.0 para Windows controladores](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -47,7 +45,7 @@ void * memcpy(
   
  La documentación contiene un par de bits de información que sugieren que el código tiene que mantener ciertas propiedades para garantizar la corrección de programa:  
   
--   `memcpy`copia el `count` de bytes desde el búfer de origen hasta el búfer de destino.  
+-   `memcpy` copia el `count` de bytes desde el búfer de origen hasta el búfer de destino.  
   
 -   El búfer de destino debe ser al menos tan grande como el búfer de origen.  
   
@@ -131,9 +129,9 @@ wchar_t * wmemcpy(
   
 -   El llamador debe proporcionar el búfer y la inicializa.  
   
--   `_In_`especifica "solo lectura". Un error común es aplicar `_In_` a un parámetro que debe tener la `_Inout_` anotación en su lugar.  
+-   `_In_` especifica "solo lectura". Un error común es aplicar `_In_` a un parámetro que debe tener la `_Inout_` anotación en su lugar.  
   
--   `_In_`se permite pero omite el analizador en valores escalares no son de puntero.  
+-   `_In_` se permite pero omite el analizador en valores escalares no son de puntero.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -161,7 +159,7 @@ void BadInCaller()
  Si usa análisis de código de Visual Studio en este ejemplo, valida que los llamadores pasan un puntero no nulo para un búfer inicializado para `pInt`. En este caso, `pInt` puntero no puede ser NULL.  
   
 ### <a name="example-the-inopt-annotation"></a>Ejemplo: El _In_opt\_ anotación  
- `_In_opt_`es el mismo que `_In_`, salvo que el parámetro de entrada puede ser NULL y, por lo tanto, debe comprobar la función de este.  
+ `_In_opt_` es el mismo que `_In_`, salvo que el parámetro de entrada puede ser NULL y, por lo tanto, debe comprobar la función de este.  
   
 ```cpp  
   
@@ -189,7 +187,7 @@ void InOptCaller()
  Análisis de código de Visual Studio valida que la función comprueba si hay valores NULL antes de tener acceso el búfer.  
   
 ### <a name="example-the-out-annotation"></a>Ejemplo: Más equip_os\_ anotación  
- `_Out_`admite un escenario común en el que se pasa un puntero no NULL que apunta a un búfer de elemento y la función inicializa el elemento. El llamador no tiene que inicializar el búfer antes de la llamada; la función llamada promete Inicialícelo antes de regresar.  
+ `_Out_` admite un escenario común en el que se pasa un puntero no NULL que apunta a un búfer de elemento y la función inicializa el elemento. El llamador no tiene que inicializar el búfer antes de la llamada; la función llamada promete Inicialícelo antes de regresar.  
   
 ```cpp  
   
@@ -216,7 +214,7 @@ void OutCaller()
  Herramienta de análisis de código de Visual Studio valida que el llamador pasa un puntero no nulo a un búfer para `pInt` y que se inicializa el búfer de la función antes de regresar.  
   
 ### <a name="example-the-outopt-annotation"></a>Ejemplo: El _Out_opt\_ anotación  
- `_Out_opt_`es el mismo que `_Out_`, salvo que el parámetro puede ser NULL y, por lo tanto, debe comprobar la función de este.  
+ `_Out_opt_` es el mismo que `_Out_`, salvo que el parámetro puede ser NULL y, por lo tanto, debe comprobar la función de este.  
   
 ```cpp  
   
@@ -244,7 +242,7 @@ void OutOptCaller()
  Análisis de código de Visual Studio valida que esta función comprueba si hay valores NULL antes de `pInt` se desreferencia y si `pInt` no es NULL, que se inicializa el búfer de la función antes de devolver.  
   
 ### <a name="example-the-inout-annotation"></a>Ejemplo: El _Inout\_ anotación  
- `_Inout_`se usa para anotar un parámetro de puntero que se puede cambiar la función. El puntero debe apuntar a datos inicializados válidos antes de la llamada y, aunque cambie, todavía debe tener un valor válido en la devolución. La anotación se especifica que la función puede leer y escribir en el búfer de un elemento libremente. El llamador debe proporcionar el búfer y la inicializa.  
+ `_Inout_` se usa para anotar un parámetro de puntero que se puede cambiar la función. El puntero debe apuntar a datos inicializados válidos antes de la llamada y, aunque cambie, todavía debe tener un valor válido en la devolución. La anotación se especifica que la función puede leer y escribir en el búfer de un elemento libremente. El llamador debe proporcionar el búfer y la inicializa.  
   
 > [!NOTE]
 >  Al igual que `_Out_`, `_Inout_` se debe aplicar a un valor modificable.  
@@ -276,7 +274,7 @@ void BadInOutCaller()
  Análisis de código de Visual Studio valida que los llamadores pasar un puntero no nulo para un búfer inicializado para `pInt`y que, antes de la devolución, `pInt` todavía no es NULL y se inicializa el búfer.  
   
 ### <a name="example-the-inoutopt-annotation"></a>Ejemplo: El _Inout_opt\_ anotación  
- `_Inout_opt_`es el mismo que `_Inout_`, salvo que el parámetro de entrada puede ser NULL y, por lo tanto, debe comprobar la función de este.  
+ `_Inout_opt_` es el mismo que `_Inout_`, salvo que el parámetro de entrada puede ser NULL y, por lo tanto, debe comprobar la función de este.  
   
 ```cpp  
   
@@ -306,7 +304,7 @@ void InOutOptCaller()
  Análisis de código de Visual Studio valida que esta función comprueba si hay valores NULL antes de tener acceso el búfer y si `pInt` no es NULL, que se inicializa el búfer de la función antes de devolver.  
   
 ### <a name="example-the-outptr-annotation"></a>Ejemplo: El _Outptr\_ anotación  
- `_Outptr_`se usa para anotar un parámetro que se va a devolver un puntero.  El propio parámetro no debe ser NULL y la función llamada devuelve un puntero no NULL y ese puntero apunta a los datos inicializados.  
+ `_Outptr_` se usa para anotar un parámetro que se va a devolver un puntero.  El propio parámetro no debe ser NULL y la función llamada devuelve un puntero no NULL y ese puntero apunta a los datos inicializados.  
   
 ```cpp  
   
@@ -337,7 +335,7 @@ void OutPtrCaller()
  Análisis de código de Visual Studio valida que el llamador pasa un puntero no nulo `*pInt`, y que se inicializa el búfer de la función antes de regresar.  
   
 ### <a name="example-the-outptropt-annotation"></a>Ejemplo: El _Outptr_opt\_ anotación  
- `_Outptr_opt_`es el mismo que `_Outptr_`, excepto en que el parámetro es opcional, el llamador puede pasar un puntero NULL para el parámetro.  
+ `_Outptr_opt_` es el mismo que `_Outptr_`, excepto en que el parámetro es opcional, el llamador puede pasar un puntero NULL para el parámetro.  
   
 ```cpp  
   

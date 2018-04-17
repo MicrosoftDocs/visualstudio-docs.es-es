@@ -1,13 +1,10 @@
 ---
 title: Macros para informes | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.macros
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - debugging [CRT], reporting macros
 - _RPTn macro
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af21a708a05bfdc0338ca1c5b2bc038e192eb4b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d6c35a2487e2917f62e35d6e819f899ee2151ffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="macros-for-reporting"></a>Macros para los informes
 Puede usar el **_RPTn**, y **_RPTFn** macros, definidas en CRTDBG. H, para reemplazar el uso de `printf` instrucciones para la depuración. Estas macros desaparecen automáticamente en la versión de lanzamiento cuando **_DEBUG** no está definido, por lo que no es necesario encerrarlas entre **#ifdef**s.  

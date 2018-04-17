@@ -1,26 +1,23 @@
 ---
-title: "Error: Evaluación de la función &#39; función &#39; se agotó y necesita se anulará de forma insegura | Documentos de Microsoft"
-ms.custom: 
+title: 'Error: Evaluar la función &#39;función&#39; agotó el tiempo y sea necesario se anulará de forma insegura | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d0d03efbb844c29195eca7c13303a850c168e0f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 1c230c27c8d1c8dcc01910fa598fb8a97b314845
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Error: Evaluación de la función &#39; función &#39; se agotó y necesita se anulará de forma insegura
+# <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Error: Evaluar la función &#39;función&#39; agotó el tiempo y sea necesario se anulará de forma no segura
 
 Mensaje de texto completo: evaluar la función 'function' agotó el tiempo y sea necesario se anulará de forma insegura. Esto puede haber dañado el proceso de destino. 
 
@@ -37,9 +34,9 @@ Hay tres posibles soluciones para este problema.
 El mensaje de error indicará el nombre de la función que el depurador intentó llamar a. Si se puede modificar esta función, puede evitar que al depurador llamar al captador de propiedad o método ToString. Pruebe una de las siguientes acciones:
  
 * Cambiar el método a algún otro tipo de código además de un captador de propiedad o método ToString y el problema desaparecerán.
-    O bien
+    -o bien-
 * (Para ToString) Definir un atributo DebuggerDisplay en el tipo y puede que el depurador evalúa un valor distinto de ToString.
-    O bien
+    -o bien-
 * (Para un captador de propiedad) Coloque el `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atributo en la propiedad. Esto puede resultar útil si tiene un método que debe mantenerse en una propiedad por motivos de compatibilidad de API, pero realmente debería ser un método.
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>Solución #2: Que el código de destino se le pida el depurador para anular la evaluación

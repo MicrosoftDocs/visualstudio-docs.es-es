@@ -1,13 +1,10 @@
 ---
-title: "Funciones de enlace de asignación | Documentos de Microsoft"
-ms.custom: 
+title: Funciones de enlace de asignación | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - allocation hooks
 - hooks, allocation
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe5ac5ec207bb52884c097d1562a85a3414ba7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b87c41a6a31a2c66663ed121204611b4964b9c4d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="allocation-hook-functions"></a>Funciones de enlace de asignación
 Una función de enlace de asignación, instalada mediante [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), se llama cada vez que se asigna, reasigna o libera memoria. Este tipo de enlace se puede utilizar para muchos propósitos diferentes. Utilícelo para probar, por ejemplo, el modo en que una aplicación trata las situaciones de memoria insuficiente, para examinar pautas de asignación o para guardar información de asignación para análisis posteriores.  

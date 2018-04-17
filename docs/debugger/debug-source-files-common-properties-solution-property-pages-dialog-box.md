@@ -2,11 +2,8 @@
 title: Cuadro de diálogo de páginas de propiedades de origen archivos, propiedades comunes, solución de depurar | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - source files, specifying in debugger
 - debugger, source files
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
-caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa83025b15fe3773220a2b27394890318d60c850
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: ec0d60eef17a6ba92a8346ec6c7ea572aea6297e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Depurar archivos de código fuente, Propiedades comunes, Páginas de propiedades de Solución (Cuadro de diálogo)
 Esta página de propiedades especifica si el depurador buscará archivos de código fuente al depurar la solución.  

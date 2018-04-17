@@ -1,27 +1,23 @@
 ---
-title: "CA2133: Los delegados deben enlazarse a métodos con una transparencia coherente | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2133: Los delegados deben enlazarse a métodos con una transparencia coherente | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2133
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5e5d391fc11fbefbe1f3cef6ee1512ab02d6b00
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ff3811803e65028e44790dfecac9098168f53f7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Los delegados deben enlazarse a métodos con una transparencia coherente
 |||  

@@ -1,23 +1,21 @@
 ---
-title: "CA3077: Procesamiento inseguro en diseño de la API, el documento XML y el lector de texto XML | Documentos de Microsoft"
-ms.custom: 
+title: 'CA3077: Procesamiento inseguro en diseño de la API, el documento XML y el lector de texto XML | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0cd580ca1764c037cf4c209cc8a1aa7144ab4175
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f660ee98462b46e5ac5a8ab23cdf17288c995c87
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: procesamiento inseguro en el diseño de una API, documento XML y lector de texto XML
 |||  
@@ -33,7 +31,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Descripción de la regla  
  A *definición de tipo de documento (DTD)* es uno de dos formas de un analizador XML puede determinar la validez de un documento, tal como se define por la [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias en las que se aceptan datos que no son de confianza para advertir a los desarrolladores de las posibles amenazas de [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , lo que puede provocar ataques por [denegación de servicio (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Esta regla se desencadena cuando:  
   
--   <xref:System.Xml.XmlDocument>o <xref:System.Xml.XmlTextReader> clases usan valores de resolución predeterminados para el procesamiento de DTD.  
+-   <xref:System.Xml.XmlDocument> o <xref:System.Xml.XmlTextReader> clases usan valores de resolución predeterminados para el procesamiento de DTD.  
   
 -   No se ha definido ningún constructor para las clases derivadas XmlDocument o XmlTextReader o no se usa ningún valor seguro para <xref:System.Xml.XmlResolver>.  
   

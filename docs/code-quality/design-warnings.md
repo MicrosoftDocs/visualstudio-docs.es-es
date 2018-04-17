@@ -1,13 +1,10 @@
 ---
-title: "Diseñar advertencias | Documentos de Microsoft"
-ms.custom: 
+title: Diseñar advertencias | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.designrules
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - managed code analysis warnings, design warnings
 - warnings, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed7e9109e36255a8c8390d26455d6c3c568e550
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 18c32d40d38123600006d71801819d914f7595ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="design-warnings"></a>Diseñar advertencias
 Advertencias compatibles con el cumplimiento de las instrucciones de diseño de .NET Framework de diseño.  

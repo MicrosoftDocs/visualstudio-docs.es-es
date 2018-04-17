@@ -1,23 +1,21 @@
 ---
-title: "Tutorial: Objetos ausentes debido al canalización mal configurada | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Objetos ausentes debido al canalización mal configurada | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8b6809f3238c4d239d6d07f0df35d9b4a035d945
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 172effd2abffd6a7467a2fcb3490e39331910d4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Tutorial: Objetos ausentes debido a una canalización mal configurada
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para investigar un objeto que falta como consecuencia de un sombreador de píxeles sin establecer.  
@@ -101,7 +99,7 @@ En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráf
   
  Para solucionar el problema, asigne el sombreador de píxeles correcto mediante el primer parámetro de la llamada de API `ID3D11DeviceContext::PSSetShader` .  
   
- ![La C corregido &#43; &#43; el código fuente](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+ ![La C corregido&#43; &#43; código fuente](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
  Después de corregir el código, puede volver a compilarlo y ejecutar la aplicación de nuevo para comprobar que se resuelve el problema de representación:  
   

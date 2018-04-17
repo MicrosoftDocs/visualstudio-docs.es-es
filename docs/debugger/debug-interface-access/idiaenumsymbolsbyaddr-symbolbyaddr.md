@@ -1,29 +1,25 @@
 ---
 title: 'Idiaenumsymbolsbyaddr:: Symbolbyaddr | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSymbolsByAddr::symbolByAddr method
 ms.assetid: 0b6f5a68-8402-4f29-8219-20576fda8166
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b44fd8ff54dbd19b3fb4d27d0088ceeda455ae2e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a347f024a06e81d68c50f4fe33a5d5cf9966b250
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 El enumerador se coloca al realizar una búsqueda por número de sección de la imagen y el desplazamiento.  

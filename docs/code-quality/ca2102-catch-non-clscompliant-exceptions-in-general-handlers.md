@@ -1,30 +1,26 @@
 ---
 title: 'CA2102: Detectar las excepciones que no son CLSCompliant en los controladores generales | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
 helpviewer_keywords:
 - CA2102
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17238e140f8672e9d2d5a67594eb26b415c0b8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cff8d36cd80a31cf05ca461730d51703afc106ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Detectar las excepciones que no son CLSCompliant en los controladores generales
 |||  
@@ -42,7 +38,7 @@ ms.lasthandoff: 12/22/2017
   
 -   C#: `catch {}`  
   
--   C++: `catch(...) {}` o`catch(Object^) {}`  
+-   C++: `catch(...) {}` o `catch(Object^) {}`  
   
  Una excepción conforme no controlada no conformes a CLS se convierte en un problema de seguridad cuando se quitan los permisos concedidos previamente en el bloque catch. Dado que no se detectan las excepciones no conformes a CLS, podría ejecutar un método malintencionado que produce no conformes a CLS excepción conforme con permisos elevados.  
   

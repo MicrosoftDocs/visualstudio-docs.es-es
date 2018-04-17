@@ -1,11 +1,9 @@
 ---
-title: "Cuadro de diálogo de opciones de depuración, | Documentos de Microsoft"
-ms.custom: 
+title: Cuadro de diálogo de opciones de depuración, | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - Options dialog box, debugging
 - debugging [Visual Studio], settings and preparation
 ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2b8547acd579927b69cd5766d0d7b9193bcb8d3
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 714712c08e3f8c85a600ea9556264d4f0f5d7a54
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-options-dialog-box"></a>Depuración, Opciones (Cuadro de diálogo)
 El **depuración** carpeta, en la **opciones** cuadro de diálogo en el **herramientas** menú, proporciona las siguientes páginas, que permiten especificar el depurador, opciones de herramienta.  

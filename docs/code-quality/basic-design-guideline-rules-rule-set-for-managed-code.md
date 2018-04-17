@@ -1,23 +1,21 @@
 ---
-title: "Conjunto de reglas reglas de directrices de diseño básicas para código administrado | Documentos de Microsoft"
-ms.custom: 
+title: Conjunto de reglas reglas de directrices de diseño básicas para código administrado | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 769ff8468bc2f8ea90201678c85351706b8a4652
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3ae77ad6aad6b0300cd96061198086831ee61cde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de directrices de diseño básicas para código administrado
 Puede usar el conjunto de reglas reglas de directrices de diseño básicas de Microsoft a centrarse en hacer que su código sea más fácil de entender y usar. Debe incluir este conjunto de reglas si el proyecto incluye código de bibliotecas o si desea exigir procedimientos recomendados para el código que es fácil de mantener.  
@@ -84,7 +82,7 @@ Puede usar el conjunto de reglas reglas de directrices de diseño básicas de Mi
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecargar el operador de igualdad al reemplazar ValueType.Equals|  
 |[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Puntos de entrada de marca de Windows Forms con STAThread|  
 |[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Marcar todos los campos no serializables|  
-|[LCA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Llamar a métodos de clase base en tipos ISerializable|  
+|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Llamar a métodos de clase base en tipos ISerializable|  
 |[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Marcar los tipos ISerializable con SerializableAttribute|  
 |[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Implementar métodos de serialización correctamente|  
 |[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|Implementar ISerializable correctamente|  

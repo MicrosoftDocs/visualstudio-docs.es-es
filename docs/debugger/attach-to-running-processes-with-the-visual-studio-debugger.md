@@ -1,12 +1,10 @@
 ---
-title: "Adjuntar a procesos en ejecución con el depurador de Visual Studio | Documentos de Microsoft"
+title: Adjuntar a procesos en ejecución con el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
 - vs.debug.process
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], attaching to processes
 - debugger, processes
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
-caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b726cd5d29093d88e27e7de6bd5a22fcb491d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Cuando el proceso se está ejecutando, haga clic en **Depurar > asociar al proceso** (o presione **CTRL + ALT + P**) para abrir el **adjuntar al proceso** cuadro de diálogo.
@@ -46,7 +44,7 @@ Puede utilizar esta capacidad para depurar aplicaciones que se ejecutan en un eq
 > [!TIP]
 > ¿No está seguro si se debe usar **adjuntar al proceso** para su escenario de depuración? Vea [comunes de escenarios de depuración](#BKMK_Scenarios). Si desea depurar aplicaciones de ASP.NET que se han implementado en IIS, consulte [ASP.NET de depuración remota en un equipo IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a>Adjuntar a un proceso en ejecución en el equipo local  
+##  <a name="BKMK_Attach_to_a_running_process"></a> Adjuntar a un proceso en ejecución en el equipo local  
  Para asociar a un proceso, debe conocer el nombre del proceso (consulte [comunes de escenarios de depuración](#BKMK_Scenarios) para algunos nombres de proceso comunes).
   
 1.  En Visual Studio, seleccione **Depurar > asociar al proceso** (o presione **CTRL + ALT + P**).
@@ -71,7 +69,7 @@ Puede utilizar esta capacidad para depurar aplicaciones que se ejecutan en un eq
   
 4.  Haga clic en **Adjuntar**.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>Asociar a un proceso en un equipo remoto  
+##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Asociar a un proceso en un equipo remoto  
  Para asociar a un proceso, debe conocer el nombre del proceso (consulte [comunes de escenarios de depuración](#BKMK_Scenarios) para algunos nombres de proceso comunes). Para obtener más detalles para las aplicaciones ASP.NET que se han implementado en IIS, consulte [ASP.NET de depuración remota en un equipo IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). En el caso de las demás aplicaciones, encontrará el nombre del proceso en el Administrador de tareas.
   
  En el cuadro de diálogo **Asociar al proceso** , puede seleccionar otro equipo configurado para la depuración remota. Para obtener más información, consulte [depuración remota](../debugger/remote-debugging.md). Cuando se ha seleccionado un equipo remoto, se puede consultar una lista con los procesos disponibles que se están ejecutando en dicho equipo y establecer una asociación con uno o varios procesos para llevar a cabo la depuración.
@@ -112,7 +110,7 @@ Puede utilizar esta capacidad para depurar aplicaciones que se ejecutan en un eq
      
 5.  Haga clic en **Adjuntar**.
 
-## <a name="BKMK_reattach"></a>Volver a adjuntar al proceso
+## <a name="BKMK_reattach"></a> Volver a adjuntar al proceso
 
 Rápidamente puede volver a adjuntar a los procesos que estaban conectados anteriormente al eligiendo **Depurar > volver a adjuntar al proceso...** (**Mayús + Alt + P**). Cuando se elige este comando, el depurador intentará inmediatamente a la última adjuntar procesos asociado al uso de la **adjuntar al proceso** cuadro de diálogo.
 
@@ -129,7 +127,7 @@ Si intenta asociar a un proceso que pertenece a una cuenta de usuario que no es 
   
 En algunos casos, al depurar en una sesión de Escritorio remoto (Terminal Services), en la lista **Procesos disponibles** no aparecerán todos los procesos disponibles. Si se ejecuta Visual Studio como usuario que tiene una cuenta de usuario limitada, la lista **Procesos disponibles** no mostrará los procesos que se estén ejecutando en la sesión 0, la cual se usa para los servicios y otros procesos de servidor, incluido w3wp.exe. Para resolver el problema, ejecute [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con una cuenta de administrador o ejecute [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde la consola de servidor en lugar de una sesión de Terminal Services. Si ninguna de estas dos soluciones es posible, existe una tercera opción que consiste en asociar al proceso mediante la ejecución de `vsjitdebugger.exe -p` *ProcessId* en la línea de comandos de Windows. Puede determinar el identificador de proceso mediante tlist.exe. Para obtener el archivo tlist.exe, descargue e instale las Herramientas de depuración para Windows, disponibles en  [Descargas de WDK y WinDbg](http://go.microsoft.com/fwlink/?LinkId=168279).
 
-## <a name="BKMK_Scenarios"></a>Escenarios comunes de depuración
+## <a name="BKMK_Scenarios"></a> Escenarios comunes de depuración
 
 Para ayudar a identificar si necesita usar **adjuntar al proceso** y el proceso para adjuntar a, aquí se muestran algunos escenarios de depuración comunes (la lista no es exhaustiva). Cuando hay disponibles más instrucciones, se proporcionan vínculos.
 
@@ -160,7 +158,7 @@ Para escenarios de depuración remotos, debe tener el código fuente (o una copi
 
 En algunos escenarios de depuración locales, puede depurar en Visual Studio sin acceso al origen si los archivos de símbolos correctos están presentes con la aplicación (de forma predeterminada, esto requiere una versión de depuración). Para obtener más información, consulte [especificar archivos de código fuente y símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   
-##  <a name="BKMK_Troubleshoot_attach_errors"></a>Solucionar problemas de errores de asociación  
+##  <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de errores de asociación  
  Cuando el depurador se asocia a un proceso en ejecución, el proceso puede contener uno o varios tipos de código. Los tipos de código a los que se puede asociar el depurador se muestran y seleccionan en el cuadro de diálogo **Seleccionar tipo de código** .  
   
  A veces, el depurador puede asociarse correctamente a un tipo de código, pero no a otro. Esto puede ocurrir cuando se intenta asociar el depurador a un proceso que está ejecutándose en un equipo remoto. Puede que el equipo remoto tenga instalados los componentes de depuración remota para algunos tipos de código, pero no para otros. También puede ocurrir al intentar asociar el depurador a dos o varios procesos para realizar una depuración directa de la base de datos. La depuración de SQL sólo admite la asociación a un único proceso.  

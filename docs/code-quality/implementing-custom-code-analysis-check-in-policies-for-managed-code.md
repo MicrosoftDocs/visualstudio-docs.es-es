@@ -10,14 +10,14 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7d79d0117adc48a476b4e4d8a534dc755f057fd
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 234ebb6896f358b7263f8fb7c29ad5be90102495
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de protección de análisis de código personalizado para el código administrado
 

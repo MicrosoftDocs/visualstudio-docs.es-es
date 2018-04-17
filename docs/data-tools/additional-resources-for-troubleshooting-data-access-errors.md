@@ -1,11 +1,8 @@
 ---
 title: Errores de acceso de recursos adicionales para solucionar problemas de datos | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -223,18 +220,18 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ea895859550d1ebb5ddfebe743388dc971d82592
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 04d7d9922e15ae61709e21f3b220564c64ec6e08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Recursos adicionales para solucionar problemas de errores de acceso de datos
 Puede encontrar ayuda para solucionar problemas referentes a errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN). En la tabla siguiente se enumera los foros relacionados con los datos disponibles en MSDN.  

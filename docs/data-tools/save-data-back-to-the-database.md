@@ -1,11 +1,8 @@
 ---
 title: Guardar datos en la base de datos | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar datos en la base de datos
 El conjunto de datos es una copia en memoria de datos. Si modifica datos, es una buena práctica para guardar los cambios en la base de datos. Para ello en uno de tres maneras:  
@@ -158,7 +155,7 @@ En la tabla siguiente se detallan los posibles valores de la enumeración <xref:
   
  Es posible crear subconjuntos de registros modificados con el método `GetChanges` de cualquiera de las tablas de datos (<xref:System.Data.DataTable.GetChanges%2A>) o del propio conjunto de datos (<xref:System.Data.DataSet.GetChanges%2A>). Si se llama al método de la tabla de datos, devuelve una copia de la tabla donde sólo se muestran los registros cambiados. De igual forma, si llama al método en el conjunto de datos, obtiene un nuevo conjunto de datos solo con los registros modificados.  
   
- `GetChanges`por sí solo devuelve todos los registros modificados. En cambio, pasando el deseado <xref:System.Data.DataRowState> como un parámetro a la `GetChanges` método, puede especificar qué subconjunto de registros cambiados desea: recién agregado registros, registros marcados para su eliminación, registros desasociados o registros modificados.  
+ `GetChanges` por sí solo devuelve todos los registros modificados. En cambio, pasando el deseado <xref:System.Data.DataRowState> como un parámetro a la `GetChanges` método, puede especificar qué subconjunto de registros cambiados desea: recién agregado registros, registros marcados para su eliminación, registros desasociados o registros modificados.  
   
  Obtener un subconjunto de registros modificados es útil cuando desea enviar registros a otro componente para su procesamiento. En lugar de enviar todo el conjunto de datos, se puede reducir la sobrecarga de la comunicación con el otro componente al obtener únicamente los registros necesarios.   
   

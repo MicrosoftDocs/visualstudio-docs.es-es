@@ -1,13 +1,10 @@
 ---
-title: "Cuadro de diálogo de advertencia de código, es decir obsoleto | Documentos de Microsoft"
-ms.custom: 
+title: Cuadro de diálogo de advertencia de código, es decir obsoleto | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.stalecode
 dev_langs:
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - warnings, Stale Code Warning dialog box
 - Edit and Continue, stale code
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fbbd558e424103b8d6ecc69e3724c9011365c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2aa5d05695f56721a25d8a1b55c983e85f17356
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="stale-code-warning-dialog-box"></a>Advertencia de código obsoleto (cuadro de diálogo)
 Este cuadro de diálogo aparece cuando han realizado cambios a código nativo el código que **editar y continuar** no pudo aplicar inmediatamente. Por tanto, parte del código nativo en el marco de pila actual no está actualizado, es decir, que está obsoleto. Para obtener más información, consulte [Cómo: trabajar con código obsoleto](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  

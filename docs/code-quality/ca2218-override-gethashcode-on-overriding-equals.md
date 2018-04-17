@@ -1,12 +1,10 @@
 ---
 title: 'CA2218: Reemplazar GetHashCode en es igual a | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2218
 - OverrideGetHashCodeOnOverridingEquals
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - OverrideGetHashCodeOnOverridingEquals
 - CA2218
 ms.assetid: 69b020cd-29e8-45a6-952e-32cf3ce2e21d
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: eed9ae032a89eb30785acb71feac47d6c4f8cdc3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a7844f4bc10acabeef81001a0c0890c603410ec5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: Reemplazar el método GetHashCode al reemplazar el método Equals
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Un tipo público reemplaza <xref:System.Object.Equals%2A?displayProperty=fullName> , pero no invalida <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- <xref:System.Object.GetHashCode%2A>Devuelve un valor basado en la instancia actual, que es adecuada para los algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:  
+ <xref:System.Object.GetHashCode%2A> Devuelve un valor basado en la instancia actual, que es adecuada para los algoritmos hash y estructuras de datos como una tabla hash. Dos objetos que son del mismo tipo y son iguales deben devolver el mismo código hash para asegurarse de que las instancias de los tipos siguientes funcionan correctamente:  
   
 -   <xref:System.Collections.Hashtable?displayProperty=fullName>  
   
@@ -55,7 +53,7 @@ ms.lasthandoff: 12/22/2017
   
 -   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>  
   
--   Tipos que implementan<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
+-   Tipos que implementan <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Para corregir una infracción de esta regla, proporcione una implementación de <xref:System.Object.GetHashCode%2A>. Para un par de objetos del mismo tipo, debe asegurarse de que la implementación devuelve el mismo valor si la implementación de <xref:System.Object.Equals%2A> devuelve `true` para el par.  

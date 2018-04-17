@@ -1,12 +1,9 @@
 ---
-title: 'Error: SQL Can & #39; t Find SSDEBUGPS | Documentos de Microsoft'
-ms.custom: 
+title: 'Error: SQL puede&#39;t encuentra SSDEBUGPS | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.sqlde_cant_find_ssdebugps
@@ -18,16 +15,16 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a82222fe1a4a2cd643f9f84127c3674f8078fd
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b3ca505d4f18ca52153d40e922aa5aa2682405fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>Error: SQL Can & #39; t Find SSDEBUGPS
+# <a name="error-sql-can39t-find-ssdebugps"></a>Error: SQL puede&#39;t encuentra SSDEBUGPS
 
 SSDEBUGPS.dll es el componente de host de depuración de SQL Server.
 

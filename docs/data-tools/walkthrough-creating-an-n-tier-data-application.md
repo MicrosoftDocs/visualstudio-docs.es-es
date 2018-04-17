@@ -1,11 +1,8 @@
 ---
-title: "Tutorial: Crear una aplicación de datos con N niveles | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Crear una aplicación de datos con N niveles | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: a22ba174310aa9fc3f7e2676c140d164911d5bf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Tutorial: Crear una aplicación de datos con n niveles
 *N niveles* aplicaciones de datos son aplicaciones de acceso a datos y están separadas en varias capas lógicas, o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).  
@@ -124,7 +121,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
   
      Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
   
-     O bien  
+     -o bien-  
   
      Seleccione **nueva conexión** para abrir el **Agregar conexión** cuadro de diálogo.  
   
@@ -154,7 +151,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
   
 4.  En el **DataSet Project** lista, seleccione **DataEntityTier**.  
   
-5.  En el **generar** menú, seleccione **generar solución**.  
+5.  En el menú **Compilar**, seleccione **Compilar solución**.  
   
  El conjunto de datos y los TableAdapters se separan en los dos proyectos de biblioteca de clases. El proyecto que originalmente contenía el conjunto de datos entero (DataAccessTier) contiene ahora sólo los TableAdapters. El proyecto designado en la **DataSet Project** propiedad (DataEntityTier) contiene el conjunto de datos con tipo: NorthwindDataSet.Dataset.Designer.vb (o NorthwindDataSet.Dataset.Designer.cs).  
   

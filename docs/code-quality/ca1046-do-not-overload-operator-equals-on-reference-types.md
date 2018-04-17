@@ -1,12 +1,10 @@
 ---
 title: 'CA1046: No sobrecargar el operador equals en tipos de referencia | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 - CA1046
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1046
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 ms.assetid: c1dfbfe3-63f9-4005-a81a-890427b77e79
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 87c9b1ca85eb7edaf1050da96356640b06b66e0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e78217e2ce8613ca312a96058b4477d1da82a5e7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: No sobrecargar el operador de igualdad en los tipos de referencia
 |||  

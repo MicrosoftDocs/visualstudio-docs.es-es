@@ -1,12 +1,10 @@
 ---
 title: 'CA1415: Declare los elementos P-se invoca correctamente | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1415
 - DeclarePInvokesCorrectly
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1415
 - DeclarePInvokesCorrectly
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b1bacff8f97a27a02ccdf8e6f6047bfd6ad9c90b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bfad5d5a699fda54c91e674365b65305ef7fad0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Declare los elementos P/Invoke correctamente
 |||  

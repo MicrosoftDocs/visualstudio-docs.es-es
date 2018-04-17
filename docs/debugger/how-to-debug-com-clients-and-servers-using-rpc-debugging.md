@@ -1,13 +1,10 @@
 ---
-title: "Cómo: depurar clientes y servidores mediante la depuración RPC COM | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: depurar clientes y servidores mediante la depuración RPC COM | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -26,17 +23,16 @@ helpviewer_keywords:
 - remote debugging, RPC (Remote Procedure Call)
 - in-process remote procedure call debugging
 ms.assetid: 3e8526c8-43b5-4b87-8e0d-b22c24f0a3ea
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 624a08f436999c30290d7ca338669f7b0a33d1c7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4fe212015b381a38ed1cf110189b6e4839fdf9f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Cómo: Depurar clientes y servidores COM mediante la depuración RPC
 Puede utilizar la depuración RPC (llamada a procedimiento remoto) para depurar aplicaciones COM cliente-servidor. Debe habilitar la depuración RPC para poder utilizarla. Con la depuración RPC habilitada, cuando entra en la llamada al servidor desde el cliente, el depurador se adjunta al servidor y le permite depurar el código. Una vez asociado el depurador, podrá utilizar todas sus características con los procesos del servidor y del cliente.  

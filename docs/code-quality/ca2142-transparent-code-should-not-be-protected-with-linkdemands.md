@@ -1,27 +1,23 @@
 ---
-title: "CA2142: El código transparente no se debería proteger con LinkDemands | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2142: El código transparente no se debería proteger con LinkDemands | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2142
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0094d8afa2dcf59efe0aace8514979d73ac921
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c598a6aff671f0ce3ce489a203805e77eda7183
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: El código transparente no se debería proteger con LinkDemands
 |||  

@@ -2,7 +2,7 @@
 title: Advertencias de análisis de código de Visual Studio para el código administrado por CheckId | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA1000
 - CA1001
@@ -256,14 +256,14 @@ f1_keywords:
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8eee8466e9c797c5eedd318b0b91e9172137091d
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 19441bd208a48096e29635be6774c55894f317be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 

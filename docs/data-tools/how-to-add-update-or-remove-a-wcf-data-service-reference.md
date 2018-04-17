@@ -1,11 +1,8 @@
 ---
-title: "Cómo: agregar, actualizar o quitar una referencia de servicio de datos WCF | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: agregar, actualizar o quitar una referencia de servicio de datos WCF | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - service references [Visual Studio]
 - WCF Data Service reference
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c35fdaabf3de306af0541fb4781a085a3c409ff8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 2e128268a0dd81aead3204436bb8f4ea80b5a048
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Cómo: Agregar, actualizar o quitar una referencia de servicio de datos de WCF
 A *referencia de servicio* permite a un proyecto para tener acceso a uno o más [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Use la **Agregar referencia de servicio** cuadro de diálogo para buscar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] en la solución actual, localmente, en una red de área local o en Internet.  
@@ -41,7 +38,7 @@ A *referencia de servicio* permite a un proyecto para tener acceso a uno o más 
 2.  En el **dirección** cuadro, escriba la dirección URL para el servicio y, a continuación, haga clic en **vaya** para buscar el servicio. Si el servicio implementa seguridad de nombre y la contraseña de usuario, se le pedirá un nombre de usuario y una contraseña.  
   
     > [!NOTE]
-    >  Solo debe hacer referencia a servicios desde un origen de confianza. Agregar referencias de un origen de confianza puede poner en peligro la seguridad.  
+    >  Solo debe hacer referencia a servicios desde un origen de confianza. Si agrega referencias desde un origen que no es de confianza podría poner en peligro la seguridad.  
   
      También puede seleccionar la dirección URL de la **dirección** lista, que almacena las 15 direcciones URL anteriores a la que se encontraron metadatos de servicio válida.  
   

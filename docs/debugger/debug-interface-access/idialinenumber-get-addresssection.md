@@ -1,29 +1,25 @@
 ---
 title: 'Idialinenumber:: Get_addresssection | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLineNumber::get_addressSection method
 ms.assetid: a01c1bae-04b2-4c30-8621-60939a3124c2
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302ee0d1223b6f1b922a2e949f36f2a14d6890e8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a8ae40e19ddb8424ab947c968795a26558300da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
 Recupera el elemento de sección de la dirección de memoria donde se comienza un bloque.  

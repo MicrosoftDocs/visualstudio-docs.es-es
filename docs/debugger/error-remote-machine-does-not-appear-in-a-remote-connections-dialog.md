@@ -1,27 +1,25 @@
 ---
-title: "Error: El equipo remoto no aparece en un cuadro de diálogo conexiones remotas | Documentos de Microsoft"
-ms.custom: 
+title: 'Error: El equipo remoto no aparece en un cuadro de diálogo conexiones remotas | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "2"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 72a891219b24f1cb80ec9e65988f57ebfb04fcd6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 278919a2cd102565faedd799519247d7ea2a5a8a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Error: la máquina remota no aparece en el cuadro de diálogo Conexiones remotas
 Si el equipo remoto no aparece en el cuadro de diálogo Conexiones remotas, compruebe las siguientes causas comunes.  

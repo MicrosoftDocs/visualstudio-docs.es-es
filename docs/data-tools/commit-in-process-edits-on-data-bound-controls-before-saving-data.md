@@ -1,11 +1,8 @@
 ---
-title: "Confirmar tareas de edición en proceso en controles enlazados a datos antes de guardar los datos | Documentos de Microsoft"
-ms.custom: 
+title: Confirmar tareas de edición en proceso en controles enlazados a datos antes de guardar los datos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - BindingSource class, commiting edited records
 - EndEdit method
 ms.assetid: 61af4798-eef7-468c-b229-5e1497febb2f
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 38d50f1e3da0004869ae66df8e486affa1b68c2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: ffc192d5afc8540c60712192dc6d1af6135a2d66
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Confirmar tareas de edición en proceso en controles enlazados a datos antes de guardar datos
 Al editar los valores de los controles enlazados a datos, los usuarios deben salga del registro actual para confirmar el valor actualizado en el origen de datos subyacente que el control se enlaza a. Cuando se arrastran elementos desde la [ventana Orígenes de datos](add-new-data-sources.md) en un formulario, el primer elemento que se coloca genera el código en el **guardar** evento de clic de botón el <xref:System.Windows.Forms.BindingNavigator>. Este código llama el <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método de la <xref:System.Windows.Forms.BindingSource>. Por lo tanto, la llamada a la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método se genera solo para el primer <xref:System.Windows.Forms.BindingSource> que se agrega al formulario.  

@@ -1,12 +1,10 @@
 ---
 title: 'CA1816: Llamar a GC. SuppressFinalize correctamente | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1816
 - DisposeMethodsShouldCallSuppressFinalize
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DisposeMethodsShouldCallSuppressFinalize
 - CA1816
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9d6d65561e9b902202d4fc69d15d200482880cf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Llamar a GC.SuppressFinalize correctamente
 |||  
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 -   Un método llama a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> y pasa algo distinto de esto (Me en Visual Basic).  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- El <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método permite a los usuarios liberar los recursos en cualquier momento antes de que el objeto se encuentre disponible para la recolección de elementos. Si el <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> se llama al método, libera los recursos del objeto. Esto hace la finalización innecesaria. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>debe llamar a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> por lo que el recolector de elementos no utilizados no llame al finalizador del objeto.  
+ El <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método permite a los usuarios liberar los recursos en cualquier momento antes de que el objeto se encuentre disponible para la recolección de elementos. Si el <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> se llama al método, libera los recursos del objeto. Esto hace la finalización innecesaria. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> debe llamar a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> por lo que el recolector de elementos no utilizados no llame al finalizador del objeto.  
   
  Para evitar que los tipos derivados con los finalizadores de tener que volver a implementar <xref:System.IDisposable> y para llamarlo, tipos no sellados sin los finalizadores deben llamar a <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   

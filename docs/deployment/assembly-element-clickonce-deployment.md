@@ -1,13 +1,10 @@
 ---
-title: "&lt;ensamblado&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft"
-ms.custom: 
+title: '&lt;ensamblado&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
 dev_langs:
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - <assembly> element [ClickOnce deployment manifest]
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: c19312b005a1f8dfeefa766ed3a5e6a8ab1c566c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e6035fd2ce15be113233077d66e3eba44764a2f6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;ensamblado&gt; elemento (implementación de ClickOnce)
 El elemento de nivel superior para el manifiesto de implementación.  

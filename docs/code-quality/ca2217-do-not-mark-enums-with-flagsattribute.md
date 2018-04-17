@@ -1,12 +1,10 @@
 ---
 title: 'CA2217: No marcar enumeraciones con FlagsAttribute | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotMarkEnumsWithFlags
 - CA2217
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - DoNotMarkEnumsWithFlags
 - CA2217
 ms.assetid: 1b6f626c-66bf-45b0-a3e2-7c41ee9ceda7
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10b3667a8147b0eea77f79735fca465401f7c436
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0a2cdfcf4014d00ca2d975a04a8bb81191a717e0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: No marcar enumeraciones con FlagsAttribute
 |||  

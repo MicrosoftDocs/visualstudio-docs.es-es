@@ -1,12 +1,10 @@
 ---
 title: 'CA1414: Marque los argumentos P Invoke booleanos con MarshalAs | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1414
 - MarkBooleanPInvokeArgumentsWithMarshalAs
 ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ce70291bd59ef3211c9fea871c8155f1a3e7fed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 16e561e04444fba7200c00f299cc775978829100
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Marque los argumentos P/Invoke booleanos con MarshalAs
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Método de invocación de plataforma declaración incluye un <xref:System.Boolean?displayProperty=fullName> parámetro o valor devuelto, pero la <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> no se aplica el atributo para el parámetro o valor devuelto.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- Una plataforma de invocación de método tiene acceso al código no administrado y se define utilizando la `Declare` palabra clave en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Especifica el comportamiento de serialización que se utiliza para convertir a tipos de datos entre código administrado y no administrado. Tipos de bases de datos simples, como <xref:System.Byte?displayProperty=fullName> y <xref:System.Int32?displayProperty=fullName>, tiene una única representación en código no administrado y no requieren la especificación de su comportamiento de serialización; common language runtime proporciona automáticamente el comportamiento correcto.  
+ Una plataforma de invocación de método tiene acceso al código no administrado y se define utilizando la `Declare` palabra clave en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Especifica el comportamiento de serialización que se utiliza para convertir a tipos de datos entre código administrado y no administrado. Tipos de bases de datos simples, como <xref:System.Byte?displayProperty=fullName> y <xref:System.Int32?displayProperty=fullName>, tiene una única representación en código no administrado y no requieren la especificación de su comportamiento de serialización; common language runtime proporciona automáticamente el comportamiento correcto.  
   
  El <xref:System.Boolean> tipo de datos tiene varias representaciones en código no administrado. Cuando el <xref:System.Runtime.InteropServices.MarshalAsAttribute> no se especifica, el valor predeterminado el comportamiento de cálculo de referencias del <xref:System.Boolean> tipo de datos es <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Se trata de un entero de 32 bits, que no es adecuado en todas las circunstancias. La representación booleana requerida por el método no administrado debe determinarse y coincide con la correspondiente <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool es el tipo BOOL de Win32, que siempre es de 4 bytes. UnmanagedType.U1 se debe utilizar para C++ `bool` u otros tipos de 1 byte.  
   

@@ -1,27 +1,25 @@
 ---
 title: Depurar aplicaciones UWP - Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: de37ef22b9b8ebe8dbcfde9abae4d2acaab2cc2d
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b178f66257082bc837e2dfa0835bab3d21a8071e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depurar aplicaciones universales de Windows (UWP) en Visual Studio
 

@@ -1,11 +1,9 @@
 ---
-title: "Just-In-Time, depuración, cuadro de diálogo Opciones | Documentos de Microsoft"
-ms.custom: 
+title: Just-In-Time, depuración, cuadro de diálogo Opciones | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.JIT
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - Just-In-Time debugging, setting options
 - Options dialog box, debugging
 ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 057c5e0e37d8e84daa4348c91847a12b6a9ae5e9
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bbe99d21fe489e591c4747bb934d8da3f16648ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Depuración, Opciones (Cuadro de diálogo)
 Para tener acceso a la **Just-In-Time** página, vaya a la **herramientas** menú y haga clic en **opciones**. En el **opciones** cuadro de diálogo, expanda el **depuración** nodo y seleccione **Just-In-Time**. Esta página permite habilitar la depuración Just-In-Time para el código administrado, código nativo y scripts. Para obtener más información, consulte [depuración Just](../debugger/just-in-time-debugging-in-visual-studio.md).  

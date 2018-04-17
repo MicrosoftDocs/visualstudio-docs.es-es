@@ -1,13 +1,10 @@
 ---
 title: 'CA1048: No declarar miembros virtuales en tipos sealed | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - DoNotDeclareVirtualMembersInSealedTypes
 - CA1048
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - DoNotDeclareVirtualMembersInSealedTypes
 - CA1048
 ms.assetid: 5dcf4a30-6f98-48a8-b8cc-7b89ea757262
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d0b2ee7180dae53d591daba0019ad4eb6e25af
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: ad16335502394d46eade760ba365b6dcf7ed529c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: No declarar miembros virtuales en tipos sealed
 |||  

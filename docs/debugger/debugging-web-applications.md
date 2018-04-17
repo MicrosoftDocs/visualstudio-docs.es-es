@@ -1,12 +1,10 @@
 ---
 title: Depurar aplicaciones Web | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - debugging [ASP.NET], about debugging ASP.NET Web applications
 - ASP.NET Web pages, debugging
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 238cb35212232865f154bcf5afa029abd4b30c36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: bb76113faaa14e1e427c6622291c775653ea7b56
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-web-applications"></a>Depurar aplicaciones web
 En esta sección se explica cómo depurar varios tipos de aplicaciones web.  

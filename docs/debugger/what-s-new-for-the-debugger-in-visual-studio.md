@@ -1,12 +1,10 @@
 ---
 title: "' S New para que el depurador de Visual Studio de 2017 | Documentos de Microsoft"
-ms.custom: 
+ms.custom: ''
 ms.date: 03/07/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,18 +16,18 @@ helpviewer_keywords:
 - debugging [Visual Studio], what's new
 - what's new [Visual Studio], debugging
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
-caps.latest.revision: "81"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8df1dcde73496f6ec8c25eb33cb4b6986a721f33
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d0bcd44da88279f042469356a97bce7f369e1190
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>' S New para que el depurador en[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>' S New para que el depurador en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 El depurador incluye estas nuevas características:
 

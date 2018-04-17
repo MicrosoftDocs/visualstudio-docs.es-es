@@ -1,12 +1,10 @@
 ---
 title: 'CA2232: Puntos de entrada marcar Windows Forms con STAThread | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 - CA2232
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2232
 - MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe12ce5947a22414aaf07c59945fd667b106101f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2d28300d33d02fa4ca11ee1b7110a10a677b64bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Marcar puntos de entrada de Windows Forms con STAThread
 |||  
@@ -37,10 +35,10 @@ ms.lasthandoff: 12/22/2017
  Un ensamblado que hace referencia el <xref:System.Windows.Forms> espacio de nombres y su punto de entrada no está marcado con el <xref:System.STAThreadAttribute?displayProperty=fullName> atributo.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- <xref:System.STAThreadAttribute>indica que el modelo de la aplicación de subprocesos de COM es un contenedor uniproceso. Este atributo debe estar presente en el punto de entrada de cualquier aplicación que utilice Formularios Windows Forms; si se omite, los componentes de Windows podrían no funcionar correctamente. Si el atributo no está presente, la aplicación utiliza el modelo de apartamento multiproceso, que no es compatible con formularios Windows Forms.  
+ <xref:System.STAThreadAttribute> indica que el modelo de la aplicación de subprocesos de COM es un contenedor uniproceso. Este atributo debe estar presente en el punto de entrada de cualquier aplicación que utilice Formularios Windows Forms; si se omite, los componentes de Windows podrían no funcionar correctamente. Si el atributo no está presente, la aplicación utiliza el modelo de apartamento multiproceso, que no es compatible con formularios Windows Forms.  
   
 > [!NOTE]
->  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]los proyectos que usan el marco de aplicación no es necesario marcar la **Main** método con STAThread. El [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilador lo hace automáticamente.  
+>  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] los proyectos que usan el marco de aplicación no es necesario marcar la **Main** método con STAThread. El [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilador lo hace automáticamente.  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Para corregir una infracción de esta regla, agregue el <xref:System.STAThreadAttribute> atributo al punto de entrada. Si el <xref:System.MTAThreadAttribute?displayProperty=fullName> atributo está presente, elimínelo.  

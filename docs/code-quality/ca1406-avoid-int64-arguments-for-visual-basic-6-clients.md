@@ -1,12 +1,10 @@
 ---
 title: 'CA1406: Evite argumentos Int64 para clientes Visual Basic 6 | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AvoidInt64ArgumentsForVB6Clients
 - CA1406
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AvoidInt64ArgumentsForVB6Clients
 - CA1406
 ms.assetid: d5d0d3fc-f105-43da-be5b-923ab023309c
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ed47a2ccea76ce9cb6e2a1ef6dd73d53c961544c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b07be7368269701b2b77fa633464095cc509779
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Evite argumentos Int64 para clientes Visual Basic 6
 |||  

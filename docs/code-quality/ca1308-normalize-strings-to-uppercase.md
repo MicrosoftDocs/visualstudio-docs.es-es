@@ -1,12 +1,10 @@
 ---
-title: "CA1308: Normalizar las cadenas en mayúsculas | Documentos de Microsoft"
-ms.custom: 
+title: 'CA1308: Normalizar las cadenas en mayúsculas | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1308
 - NormalizeStringsToUppercase
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - NormalizeStringsToUppercase
 - CA1308
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9064ca9861f609499971b9f5188f5b0006458c15
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 979b6d0bbd14d6432ea376622ce61f6329f708fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308: Normalizar las cadenas en mayúsculas
 |||  

@@ -1,11 +1,8 @@
 ---
 title: 'Tutorial: Crear un servicio de datos WCF con WPF y Entity Framework | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c4db93f300c47bf3a09dac2fbf9d5b1f4bc17108
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: 17c53bcf3b0e2b06ed76319ee2e97b61a76da177
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Crear un servicio de datos WCF con WPF y Entity Framework
 Este tutorial muestra cómo crear un sencillo [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que se hospeda en un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación Web y, a continuación, obtener acceso a él desde una aplicación de formularios Windows Forms.  
@@ -96,7 +93,7 @@ En el paso siguiente, aprenderá a crear un [!INCLUDE[adonet_edm](../data-tools/
   
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, elíjala.  
   
-         O bien  
+         -o bien-  
   
     -   Elija la **nueva conexión** botón para configurar una nueva conexión de datos. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).  
   

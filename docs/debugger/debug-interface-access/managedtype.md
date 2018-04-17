@@ -1,13 +1,10 @@
 ---
 title: ManagedType | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - managed type symbol
 - ManagedType symbol
 ms.assetid: 5db99e2a-4f2e-4796-89b7-b401b151826f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ba534199433390adfd12babf5bd28449e838ffa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3445cd572daa6097a6d4ee68445ec0e58e06bfe5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managedtype"></a>ManagedType
 Un tipo administrado (cualquier símbolo definido por los metadatos o nativo para la funcionalidad de administración de memoria y los recursos de lenguajes como C#) se identifica mediante un `SymTagManagedType` símbolos.  

@@ -1,12 +1,10 @@
 ---
 title: 'CA2212: No marcar los componentes con WebMethod | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2212
 - DoNotMarkServicedComponentsWithWebMethod
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2212
 - DoNotMarkServicedComponentsWithWebMethod
 ms.assetid: 774bc55d-e588-48ee-8f38-c228580feca2
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ad9d4b25e7143f9c2e8cc597d432b52e3e4a8132
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ca33b1dfeafa3894b3ad82fd42a04d8310d2bd50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: No marcar los componentes con servicio como WebMethod
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Un método en un tipo que hereda de <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> se marca con <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
- <xref:System.Web.Services.WebMethodAttribute>se aplica a los métodos dentro de un servicio Web XML creados mediante ASP.NET; Esto hace que el método que se puede llamar desde clientes Web remotos. El método y la clase deben ser pública y se ejecutan en una aplicación Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent>tipos se hospedan en aplicaciones COM + y pueden usar los servicios COM +. <xref:System.Web.Services.WebMethodAttribute>no se aplica a <xref:System.EnterpriseServices.ServicedComponent> tipos, ya que no están pensados para los mismos escenarios. En concreto, agregar el atributo a la <xref:System.EnterpriseServices.ServicedComponent> método no haga que el método que se puede llamar desde clientes Web remotos. Dado que <xref:System.Web.Services.WebMethodAttribute> y un <xref:System.EnterpriseServices.ServicedComponent> método tienen comportamientos en conflicto y requisitos de contexto y el flujo de transacciones, el comportamiento del método es incorrectos en algunas situaciones.  
+ <xref:System.Web.Services.WebMethodAttribute> se aplica a los métodos dentro de un servicio Web XML creados mediante ASP.NET; Esto hace que el método que se puede llamar desde clientes Web remotos. El método y la clase deben ser pública y se ejecutan en una aplicación Web ASP.NET. <xref:System.EnterpriseServices.ServicedComponent> tipos se hospedan en aplicaciones COM + y pueden usar los servicios COM +. <xref:System.Web.Services.WebMethodAttribute> no se aplica a <xref:System.EnterpriseServices.ServicedComponent> tipos, ya que no están pensados para los mismos escenarios. En concreto, agregar el atributo a la <xref:System.EnterpriseServices.ServicedComponent> método no haga que el método que se puede llamar desde clientes Web remotos. Dado que <xref:System.Web.Services.WebMethodAttribute> y un <xref:System.EnterpriseServices.ServicedComponent> método tienen comportamientos en conflicto y requisitos de contexto y el flujo de transacciones, el comportamiento del método es incorrectos en algunas situaciones.  
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Para corregir una infracción de esta regla, quite el atributo de la <xref:System.EnterpriseServices.ServicedComponent> método.  

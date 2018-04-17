@@ -1,27 +1,23 @@
 ---
-title: "Cuadro de diálogo Buscar ventana | Documentos de Microsoft"
-ms.custom: 
+title: Cuadro de diálogo Buscar ventana | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f3b7b20b6ae96904b88ad97bbf87bf066f941d6
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: d7b0839047b0e6113a72d4c96ebfe1add984fdc0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="window-search-dialog-box"></a>Cuadro de diálogo Buscar ventana
 Utilice este cuadro de diálogo para buscar y seleccionar el nodo de una ventana específica en [Windows Vista](../debugger/windows-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de vista de Windows. A continuación, elija **Buscar ventana** desde el **búsqueda** menú.  

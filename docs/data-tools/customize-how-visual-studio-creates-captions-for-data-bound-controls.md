@@ -1,28 +1,25 @@
 ---
-title: "Personalizar el modo en que Visual Studio crea los títulos para los controles enlazados a datos | Documentos de Microsoft"
-ms.custom: 
+title: Personalizar el modo en que Visual Studio crea los títulos para los controles enlazados a datos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos para los controles enlazados a datos
 Cuando se arrastran elementos desde la [ventana Orígenes de datos](add-new-data-sources.md) en un diseñador, entra en juego la cuenta una consideración especial: los nombres de columna en las etiquetas de leyenda se vuelve a dar formato a una cadena más legible cuando dos o más palabras se encuentran como se concatenan juntos. Puede personalizar la manera en que se crean estas etiquetas, estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data diseñadores** clave del registro.  
@@ -44,14 +41,14 @@ En la tabla siguiente se muestra la configuración predeterminada interna para e
   
 |Elemento del registro|Valor predeterminado|Explicación|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|Coincide con un carácter en minúscula seguido por un carácter en mayúscula o un carácter de subrayado.|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Coincide con un carácter en minúscula seguido por un carácter en mayúscula o un carácter de subrayado.|  
 |**SmartCaptionReplacement**|$1 $2|$1 representa cualquier carácter coincidente en el primer paréntesis de la expresión y $2 representa cualquier carácter coincidente en la segundos paréntesis. La sustitución es la primera coincidencia, un espacio y, a continuación, en la segunda coincidencia.|  
-|**SmartCaptionSuffix**|:|Representa un carácter que se anexa a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo facilita`Company Name:`|  
+|**SmartCaptionSuffix**|:|Representa un carácter que se anexa a la cadena devuelta. Por ejemplo, si el título es `Company Name`, el sufijo facilita `Company Name:`|  
   
 > [!CAUTION]
 > Debe tener mucho cuidado al hacer nada en el Editor del registro. Hacer copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el Editor del registro, puede provocar problemas graves que quizás requieran reinstalar el sistema operativo. Microsoft no garantiza que se pueden resolver los problemas que causan utilizando el Editor del Registro incorrectamente. Utilice el Editor del registro bajo su responsabilidad.  
 >   
->  El siguiente artículo de Knowledge Base contiene instrucciones para realizar copias de seguridad, modificar y restaurar el registro: [descripción del registro de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb;en-us; 256986)  
+>  El siguiente artículo de Knowledge Base contiene instrucciones para realizar copias de seguridad, modificar y restaurar el registro: [descripción del registro de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar el comportamiento de subtítulos (CC) inteligente de la ventana de orígenes de datos  
   

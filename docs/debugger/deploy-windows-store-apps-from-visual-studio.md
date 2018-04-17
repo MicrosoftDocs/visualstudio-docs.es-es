@@ -1,27 +1,25 @@
 ---
 title: Implementar aplicaciones UWP desde Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: dec0b32b0be121e15c81b93f5ed7dd6aa0b9c324
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones UWP desde Visual Studio
   
@@ -39,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
 -   Implementación de una aplicación que se depurará cuando la inicie otra aplicación u otro método.
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Cómo implementar una aplicación de UWP  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Cómo implementar una aplicación de UWP  
  La implementación manual de una aplicación es un proceso simple:  
   
 1.  Si implementa a un dispositivo remoto, especifique el nombre o la dirección IP del dispositivo en la página de proyecto de la propiedad del proyecto de inicio de la aplicación. Los pasos necesarios se mencionan más adelante dentro de este tema.  
@@ -81,7 +79,7 @@ En la implementación se usa el canal de la red del depurador remoto para enviar
   
  **Cómo especificar el dispositivo remoto en una página de proyecto de JavaScript o Visual C++**  
   
- ![C &#43; &#43; proyectar las propiedades para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43; proyectar las propiedades para la depuración remota](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  Elige **Depurador remoto** en la lista **Depurador para iniciar** .  
   

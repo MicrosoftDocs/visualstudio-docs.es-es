@@ -1,11 +1,8 @@
 ---
-title: "Tutorial: Guardar datos en una transacción | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Guardar datos en una transacción | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,17 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 160cf1021e6b95dcfc6cf8ee97b20c4502f9099e
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: b7492d3325441bcd01d3d8562041c23765338369
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 Este tutorial muestra cómo guardar datos en una transacción utilizando el <xref:System.Transactions> espacio de nombres. En este tutorial creará una aplicación de formularios Windows Forms. Deberá usar al Asistente para configuración de orígenes de datos para crear un conjunto de datos de dos tablas en la base de datos de ejemplo Northwind. Agregará controles enlazados a datos a un formulario Windows Forms y modificará el código de BindingNavigator botón Guardar actualizar la base de datos dentro de un TransactionScope.  
@@ -78,7 +75,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
   
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
   
-         O bien  
+         -o bien-  
   
     -   Seleccione **nueva conexión** para iniciar el **agregar o modificar conexión** diálogo cuadro y crear una conexión a la base de datos Northwind.  
   

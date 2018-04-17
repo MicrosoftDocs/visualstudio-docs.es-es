@@ -1,27 +1,23 @@
 ---
-title: "General (ficha), cuadro de diálogo de propiedades de ventana | Documentos de Microsoft"
-ms.custom: 
+title: General (ficha), cuadro de diálogo de propiedades de ventana | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aea8d5eb998280d6602f4ea28eb0b52d5f86da3
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 0186b03bd599a3644321b186dbd19c8d7338aca5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Pestaña General (Cuadro de diálogo Propiedades de la ventana)
 Use la **General** ficha para mostrar información sobre la ventana seleccionada. Para mostrar la [cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md), mover el foco a la [Windows Vista](../debugger/windows-view.md) ventana. Seleccione cualquier nodo de la ventana en el árbol y después elija **propiedades** desde el **vista** menú.  
@@ -33,7 +29,7 @@ Use la **General** ficha para mostrar información sobre la ventana seleccionada
 |**Título de ventana**|El texto del título de ventana, o texto contenido en una ventana si se trata de un control.|  
 |**Identificador de ventana**|El identificador único de esta ventana. Números de identificador de ventana se reutilizan; una ventana que identifican solo durante la duración de esa ventana.|  
 |**Proc.**|La dirección virtual de la función de procedimiento de ventana para esta ventana. Este campo también indica si esta ventana es una ventana de Unicode y si tiene subclase.|  
-|**Rectángulo**|El rectángulo delimitador de la ventana. También se muestra el tamaño del rectángulo. Las unidades son píxeles en coordenadas de pantalla.|  
+|**rectángulo**|El rectángulo delimitador de la ventana. También se muestra el tamaño del rectángulo. Las unidades son píxeles en coordenadas de pantalla.|  
 |**Rectángulo restaurado**|El rectángulo delimitador de la ventana restaurada. También se muestra el tamaño del rectángulo. Restaurada diferirá del rectángulo cuando la ventana está maximizada ni minimizada. Las unidades son píxeles en coordenadas de pantalla.|  
 |**Rectángulo de cliente**|El rectángulo delimitador para el área de cliente de la ventana. También se muestra el tamaño del rectángulo. Las unidades son píxeles relativos a la esquina superior izquierda del área de cliente de la ventana.|  
 |**Identificador de instancia**|El identificador de instancia de la aplicación. Los identificadores de instancia no son únicos.|  

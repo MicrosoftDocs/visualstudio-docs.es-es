@@ -1,12 +1,10 @@
 ---
-title: "CA2000: Eliminar objetos antes de perder el ámbito | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2000: Eliminar objetos antes de perder el ámbito | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - CA2000
 - DisposeObjectsBeforeLosingScope
 ms.assetid: 0c3d7d8d-b94d-46e8-aa4c-38df632c1463
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 57b499756292a62c64b44f864042ffa740a14016
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d6771797128ba1f889f0639ea763a523353c8018
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminar objetos antes de perder el ámbito
 |||  

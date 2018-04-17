@@ -1,12 +1,9 @@
 ---
-title: "Error: Error de una comprobación de seguridad porque el servicio de administración IIS no respondió | Documentos de Microsoft"
-ms.custom: 
+title: 'Error: Error de una comprobación de seguridad porque el servicio de administración IIS no respondió | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
@@ -17,17 +14,16 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b96d9e1396933519da71e93bac075ee51af001
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 87a0379848f17ebe875e8680e95948e9d15e0671
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Error: Una comprobación de seguridad produjo un error porque el servicio de administración de IIS no respondió
 Este error se produce cuando el servicio de administración de IIS no responde. En general, esto indica que hay un problema relacionado con la instalación de IIS. En primer lugar, compruebe que el servicio se está ejecutando mediante el **servicios** herramienta de **herramientas administrativas**.  
@@ -36,7 +32,7 @@ Este error se produce cuando el servicio de administración de IIS no responde. 
   
 -   Reinstale IIS mediante el **agregar o quitar programas** panel de control.  
   
--   O bien  
+-   -o bien-  
   
 -   Quite IIS del equipo mediante el subprograma Agregar o quitar programas del Panel de control. Si el problema persiste tras quitar IIS, compruebe el Registro y asegúrese de que la siguiente clave ya no existe:  
   
@@ -44,7 +40,7 @@ Este error se produce cuando el servicio de administración de IIS no responde. 
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
     ```  
   
-     O bien  
+     -o bien-  
   
 -   Deshabilite el servicio de administración de IIS mediante el subprograma Herramientas administrativas del Panel de control. Esto deshabilitará IIS en el equipo.  
   

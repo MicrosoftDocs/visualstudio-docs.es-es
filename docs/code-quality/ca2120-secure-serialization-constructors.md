@@ -1,12 +1,10 @@
 ---
-title: "CA2120: Proteger los constructores de serialización | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2120: Proteger los constructores de serialización | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2120
 - SecureSerializationConstructors
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - SecureSerializationConstructors
 - CA2120
 ms.assetid: e9989da1-55a0-43f8-9aa9-da86afae3b41
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e28d76315b3ef5844bd9b525764e6f5a5111ef56
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0032e2a20c90d11db33c94397e8c8b8cadbd86db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Proteger los constructores de serializaciones
 |||  

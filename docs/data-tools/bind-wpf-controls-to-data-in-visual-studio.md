@@ -1,11 +1,8 @@
 ---
 title: Enlazar controles WPF a datos en Visual Studio - parte 1 | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [WPF], displaying
 - WPF, data binding in Visual Studio
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 4c059013703a73a83a9a6f35b3c89f7b27c523d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlazar controles WPF a datos en Visual Studio
 Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a controles de [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Para crear estos controles enlazados a datos, puede arrastrar elementos desde la **orígenes de datos** ventana hasta el [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En este tema se describen algunas de las tareas, herramientas y clases más comunes que se pueden usar para crear aplicaciones de [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] enlazadas a datos.  
@@ -54,7 +51,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|  
 |Conjunto de datos|Sí|Sí|  
 |[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|Sí|Sí|  
-|Servicio|Sí|No|  
+|web de Office|Sí|No|  
 |Object|Sí|No|  
   
 ### <a name="datasets"></a>Conjuntos de datos  
@@ -96,7 +93,7 @@ Visual Studio también realiza los cambios siguientes en el archivo de código s
 > [!NOTE]
 >  Las clases personalizadas deben ser públicos y, de forma predeterminada, tienen un constructor sin parámetros. Además, las clases de can'tbe anidados que tienen un "punto" en su sintaxis. Para obtener más información, consulte [clases XAML y personalizadas para WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que realiza lo siguiente:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que realiza lo siguiente:  
   
 -   Agrega un nuevo objeto <xref:System.Windows.Data.CollectionViewSource> a los recursos del contenedor al que se arrastró el elemento. <xref:System.Windows.Data.CollectionViewSource> es un objeto que se puede usar para navegar y mostrar los datos del objeto.  
   
