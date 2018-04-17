@@ -1,12 +1,10 @@
 ---
-title: "CA2201: No provocar tipos de excepción reservados | Documentos de Microsoft"
-ms.custom: 
+title: 'CA2201: No provocar tipos de excepción reservados | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2201
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: No provocar tipos de excepción reservados
 |||  
@@ -67,19 +65,19 @@ ms.lasthandoff: 12/22/2017
   
 |Descripción del parámetro|Excepción|  
 |---------------------------|---------------|  
-|`null`referencia|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|`null` Referencia|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |Fuera del intervalo permitido de valores (por ejemplo, un índice para una colección o lista)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
 |No válido `enum` valor|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
 |Contiene un formato que no cumple las especificaciones de parámetros de un método (por ejemplo, la cadena de formato `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |No es válida|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- Cuando una operación no es válida para el estado actual de un objeto throw<xref:System.InvalidOperationException?displayProperty=fullName>  
+ Cuando una operación no es válida para el estado actual de un objeto throw <xref:System.InvalidOperationException?displayProperty=fullName>  
   
- Cuando se realiza una operación en un objeto que se ha eliminado throw<xref:System.ObjectDisposedException?displayProperty=fullName>  
+ Cuando se realiza una operación en un objeto que se ha eliminado throw <xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- Cuando una operación no se admite (como en un invalidado **Stream.Write** en una secuencia de abrir para lectura) throw<xref:System.NotSupportedException?displayProperty=fullName>  
+ Cuando una operación no se admite (como en un invalidado **Stream.Write** en una secuencia de abrir para lectura) throw <xref:System.NotSupportedException?displayProperty=fullName>  
   
- Cuando una conversión daría como resultado un desbordamiento (como en una sobrecarga de operador de conversión explícita) throw<xref:System.OverflowException?displayProperty=fullName>  
+ Cuando una conversión daría como resultado un desbordamiento (como en una sobrecarga de operador de conversión explícita) throw <xref:System.OverflowException?displayProperty=fullName>  
   
  Para el resto de situaciones, considere la posibilidad de crear su propio tipo que deriva de <xref:System.Exception> y que producen.  
   

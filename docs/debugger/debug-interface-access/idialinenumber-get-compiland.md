@@ -1,29 +1,25 @@
 ---
 title: 'Idialinenumber:: Get_compiland | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLineNumber::get_compiland method
 ms.assetid: c476d0b8-c473-47eb-96f5-c4e8f577b1c9
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4dd41975d65fe44f0fbe1f2ad361ceab71277b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f1484a79731d9e38b2ad2fe7eb2a716680f0161
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
 Recupera una referencia al símbolo de la operación de compilación que han contribuido a los bytes del texto de la imagen.  

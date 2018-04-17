@@ -1,13 +1,10 @@
 ---
-title: "Creación de funciones de enlace de depuración | Documentos de Microsoft"
-ms.custom: 
+title: Creación de funciones de enlace de depuración | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.hooks
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - hooks
 - debugging [CRT], debug hook functions
 ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5071e2fd7c8114cb13697eef4a4ddfa32d95718
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 788f340d72bfea0f3ee1dbdd38dc939d7bb374ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-hook-function-writing"></a>Creación de funciones de enlace de depuración
 Esta sección describe varias funciones de enlace de depuración personalizadas que puede escribir y que le permitirán insertar el código que desee en algunos puntos predefinidos dentro del procesamiento normal del depurador.  

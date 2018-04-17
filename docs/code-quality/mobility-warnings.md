@@ -1,13 +1,10 @@
 ---
 title: Advertencias de movilidad | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.MobilityRules
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - mobility warnings
 - warnings, mobility
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36f6bddab2d53e4c76830cf0a88ff4f02dc23a75
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9833b4ef197419b8a20c3758bcc4dca71d1f10e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobility-warnings"></a>advertencias de movilidad
 Advertencias de movilidad son compatibles con uso eficiente de energía.  

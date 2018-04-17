@@ -1,12 +1,10 @@
 ---
 title: 'CA2221: Los finalizadores deben protegerse | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2221
 - FinalizersShouldBeProtected
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - FinalizersShouldBeProtected
 - CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9db43ff5961b50f449fd5ae2535e94abb2e57ece
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e5e761339b34cab1f00bc2f5b4db28a51ef3193
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Debe proteger los finalizadores
 |||  
