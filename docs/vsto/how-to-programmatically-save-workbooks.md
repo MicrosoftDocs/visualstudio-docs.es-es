@@ -1,12 +1,10 @@
 ---
-title: "Cómo: guardar libros mediante programación | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: guardar libros mediante programación | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - workbooks, saving backup copies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4d184d7122459b85b3ad20fbf8338a53f28bd6c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4f3421c5a00d062fb49cc73b8a7f2ba592dc5d74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Cómo: Guardar libros mediante programación
   Existen varias formas de guardar un libro. Puede guardar un libro sin cambiar la ruta de acceso. Si el libro nunca se guardó, debe guardarlo especificando una ruta de acceso. Sin una ruta de acceso explícita, Microsoft Office Excel guarda el archivo en la carpeta actual con el nombre que se especificó cuando se creó. También puede guardar una copia del libro sin modificar el libro abierto en memoria.  
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  [Trabajar con libros](../vsto/working-with-workbooks.md)   
  [Elemento Host Workbook](../vsto/workbook-host-item.md)   
  [Cómo: cerrar libros mediante programación](../vsto/how-to-programmatically-close-workbooks.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)  
   

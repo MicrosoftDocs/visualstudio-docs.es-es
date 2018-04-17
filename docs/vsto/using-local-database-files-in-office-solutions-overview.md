@@ -1,12 +1,10 @@
 ---
-title: "Uso de archivos de base de datos Local en información general sobre soluciones de Office | Documentos de Microsoft"
-ms.custom: 
+title: Uso de archivos de base de datos Local en información general sobre soluciones de Office | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - local data [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1576af3c3fc8a1c7f514a4941eb849df03774c5f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a171fe12a1476e19c46f0aef704342de375c7865
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-local-database-files-in-office-solutions-overview"></a>Información general sobre el uso de archivos de bases de datos locales en soluciones de Office
   Puede incluir un archivo de base de datos, como un archivo SQL Server Express (.mdf) o un archivo de Microsoft Office Access (.mdb), en la solución de Office. Esto permite a los usuarios finales mantener una base de datos local en situaciones donde no es necesario, por ejemplo, en una solución de inventario local que se usa en un único equipo mantener una base de datos centralizada.  

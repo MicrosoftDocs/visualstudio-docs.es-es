@@ -1,26 +1,24 @@
 ---
 title: Empezando a desarrollar extensiones de Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 44403b5d60fc13666ffc6ec00558b80ef3a50ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Empezando a desarrollar extensiones de Visual Studio
 Si nunca ha escrito una extensión de Visual Studio antes, probablemente tenga algunas preguntas. Presentamos algunos de los más comunes que aquí. Si no ve la información que está buscando, utilice los botones de comentarios (**¿le resultó útil esta página?** en la parte inferior de la pantalla) para pedir lo que desea.  
@@ -60,7 +58,7 @@ Si nunca ha escrito una extensión de Visual Studio antes, probablemente tenga a
   
 -   [Shell aislado de Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
   
-##  <a name="BKMK_ProjectTemplate"></a>¿Qué plantillas de proyecto se proporcionan con el VSSDK?  
+##  <a name="BKMK_ProjectTemplate"></a> ¿Qué plantillas de proyecto se proporcionan con el VSSDK?  
  Los dos tipos principales de extensiones son extensiones MEF y VSPackages. En general, las extensiones del VSPackage se usan para las extensiones que usar o amplían los comandos, ventanas de herramientas y proyectos. Se utilizan las extensiones MEF para ampliar o personalizar el editor de Visual Studio.  
   
  Las extensiones de Visual C# y Visual Basic, el VSSDK proporciona una plantilla de proyecto VSIX vacía que puede usar junto con las nuevas plantillas de elemento que crean comandos de menú, ventanas de herramientas y extensiones de editor. También puede usar esta plantilla para plantillas de proyecto de paquete, fragmentos de código y otros artefactos para distribuirlo a otros usuarios.  

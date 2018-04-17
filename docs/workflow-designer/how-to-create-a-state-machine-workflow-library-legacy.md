@@ -1,5 +1,5 @@
 ---
-title: "Cómo: crear una biblioteca de flujo de trabajo de equipo de estado (heredado) | Documentos de Microsoft"
+title: 'Cómo: crear una biblioteca de flujo de trabajo de equipo de estado (heredado) | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 5bd68c6e-6a98-47d9-826d-9bb7a4fd72f8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c65eafa04b25a2ba3f449d26e9a93daab1699664
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a8220c6e9dbd2d97e0bf1017498ca3b295424863
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Cómo: Crear un biblioteca de flujos de trabajo de equipo de estado (Heredado)
 
@@ -26,7 +26,7 @@ Siga estos pasos para crear un proyecto de biblioteca de flujo de trabajo de equ
 
 1.  Inicie Visual Studio.
 
-2.  En el **archivo** menú, elija **New**y, a continuación, seleccione **proyecto**.
+2.  En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 

@@ -1,12 +1,10 @@
 ---
-title: "Cómo: mostrar documentos en vista previa de impresión mediante programación | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: mostrar documentos en vista previa de impresión mediante programación | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], displaying in print preview
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c4da179b2ead999634f77d8c53f32e458326e961
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bca26eb30ed9c468d154dbba6e2f126d3c61050f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Cómo: Mostrar documentos en Vista previa de impresión mediante programación
   Si una solución genera un informe, tal vez sea conveniente presentarlo al usuario en el modo Vista previa de impresión.  

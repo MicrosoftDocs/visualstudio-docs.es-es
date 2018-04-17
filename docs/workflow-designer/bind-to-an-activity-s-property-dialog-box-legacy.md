@@ -1,5 +1,5 @@
 ---
-title: "Enlazar a una actividad&#39;cuadro de diálogo de propiedades de s (heredado) | Documentos de Microsoft"
+title: Enlazar a una actividad&#39;cuadro de diálogo de propiedades de s (heredado) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 19ebb207-e0a9-4642-8f5f-a5e31395c683
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee80d096cc0df6092811fa7fba17125c5af380f
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Enlazar a una actividad&#39;cuadro de diálogo de propiedades de s (heredado)
 Este tema se describe cómo utilizar el **enlazar a una propiedad de Activity** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

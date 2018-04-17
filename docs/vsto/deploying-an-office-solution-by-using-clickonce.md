@@ -1,12 +1,10 @@
 ---
-title: "Implementar una solución de Office mediante ClickOnce | Documentos de Microsoft"
-ms.custom: 
+title: Implementar una solución de Office mediante ClickOnce | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>Implementar una solución de Office mediante ClickOnce
   Puede implementar su solución de Office en menos pasos si usa ClickOnce. Si publica actualizaciones, la solución las detectará e instalará automáticamente. Sin embargo, ClickOnce requiere que instale la solución por separado para cada usuario de un equipo. Por tanto, debería considerar usar Windows Installer (.msi) si más de un usuario ejecuta la solución en el mismo equipo.  
@@ -48,8 +47,8 @@ ms.lasthandoff: 01/10/2018
   
  Para obtener más información sobre cómo implementar una solución de Office mediante la creación de un archivo de Windows Installer, consulte [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a>Publicar la solución  
- Puede publicar la solución mediante la **Asistente para publicación de** o **Diseñador de proyectos**. En este procedimiento, usará el **Diseñador de proyectos** porque proporciona el conjunto completo de opciones de publicación. Vea [publicar Asistente &#40; desarrollo de Office en Visual Studio &#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+##  <a name="Publish"></a> Publicar la solución  
+ Puede publicar la solución mediante la **Asistente para publicación de** o **Diseñador de proyectos**. En este procedimiento, usará el **Diseñador de proyectos** porque proporciona el conjunto completo de opciones de publicación. Vea [Asistente para publicación &#40;desarrollo de Office en Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>Para publicar la solución  
   
@@ -136,12 +135,12 @@ ms.lasthandoff: 01/10/2018
   
 14. Copie los archivos de la solución en la ubicación de instalación especificada anteriormente en este procedimiento.  
   
-##  <a name="Trust"></a>Decida cómo desea conceder confianza a la solución  
+##  <a name="Trust"></a> Decida cómo desea conceder confianza a la solución  
  Para que una solución pueda ejecutarse en los equipos de los usuarios, debe conceder confianza o los usuarios deben responder al mensaje relativo a la confianza cuando instalen la solución. Para conceder confianza a la solución, firme los manifiestos mediante un certificado que identifique un publicador de confianza conocido. Vea [manifiestos de confiar en la solución mediante la firma de la aplicación e implementación](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
  Si va a implementar una personalización de nivel de documento y desea colocar el documento en una carpeta en el equipo del usuario o hacer que el documento esté disponible en un sitio de SharePoint, asegúrese de que Office confíe en la ubicación del documento. Vea [otorgar confianza a los documentos](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="Helping"></a>Ayudar a los usuarios instalan la solución  
+##  <a name="Helping"></a> Ayudar a los usuarios instalan la solución  
  Los usuarios pueden instalar la solución ejecutando el programa de instalación, abriendo el manifiesto de implementación o, en el caso de una personalización de nivel de documento, abriendo el documento directamente. El procedimiento recomendado es que los usuarios instalen la solución mediante el programa de instalación. Los otros dos enfoques no garantizan que el software necesario está instalado. Si los usuarios desean abrir el documento desde la ubicación de instalación, deben agregarlo a la lista de ubicaciones de confianza en el Centro de confianza de la aplicación de Office.  
   
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Abrir el documento de una personalización de nivel de documento  
@@ -190,7 +189,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Para que los cambios surtan efecto, debe reiniciar el Servicio de publicación World Wide Web o debe esperar hasta que el proceso de trabajo se recicle. Debe vaciar la memoria caché del disco del explorador y después intentar abrir de nuevo el archivo .vsto.  
   
-##  <a name="Put"></a>Colocar el documento de una solución en el equipo del usuario final (solo para personalizaciones de nivel de documento)  
+##  <a name="Put"></a> Colocar el documento de una solución en el equipo del usuario final (solo para personalizaciones de nivel de documento)  
  Puede copiar el documento de la solución en el equipo del usuario final para ellos mediante la creación de una acción posterior a la implementación. De este modo, el usuario no tiene que copiar manualmente el documento desde la ubicación de instalación en su equipo después de instalar la solución. Tendrá que crear una clase que defina la acción posterior a la implementación, compilar y publicar la solución, modificar el manifiesto de aplicación y volver a firmar el manifiesto de aplicación e implementación.  
   
  Los procedimientos siguientes suponen que es el nombre del proyecto **ExcelWorkbook** y publicar la solución para la **C:\publish** directorio en el equipo.  
@@ -309,7 +308,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Copie el archivo ExcelWorkbook.vsto en el **c:\publish\Application aplicación\excelworkbook**\__Versiónpublicadamásreciente_ directory.  
   
-##  <a name="SharePoint"></a>Colocar el documento de una solución en un servidor que ejecuta SharePoint (solo para personalizaciones de nivel de documento)  
+##  <a name="SharePoint"></a> Colocar el documento de una solución en un servidor que ejecuta SharePoint (solo para personalizaciones de nivel de documento)  
  Puede publicar la personalización de nivel de documento para los usuarios finales mediante SharePoint. Cuando los usuarios van al sitio de SharePoint y abren el documento, el runtime instala automáticamente la solución desde la carpeta de red compartida en el equipo local del usuario. Una vez instalada localmente la solución, la personalización seguirá funcionando aunque el documento se copie en otra parte, como el escritorio.  
   
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>Para colocar el documento en un servidor que ejecuta SharePoint  
@@ -338,7 +337,7 @@ ms.lasthandoff: 01/10/2018
   
              Cuando los usuarios abran el documento desde el sitio de SharePoint, se abrirá el documento y se instalará la personalización. Los usuarios pueden copiar el documento en el escritorio. La personalización se ejecutará igualmente porque las propiedades del documento apuntan a la ubicación de red del documento.  
   
-##  <a name="Custom"></a>Crear a un instalador personalizado  
+##  <a name="Custom"></a> Crear a un instalador personalizado  
  Puede crear a un instalador personalizado para la solución de Office, en lugar de usar el programa de instalación que se crea automáticamente cuando se publica la solución. Por ejemplo, podría usar un script de inicio de sesión para iniciar la instalación o podría usar un archivo por lotes para instalar la solución sin interacción del usuario. Estos escenarios funcionan mejor si los requisitos previos ya están instalados en los equipos de los usuarios finales.  
   
  Como parte del proceso de instalación personalizada, llame a la herramienta de instalación de soluciones de Office (VSTOInstaller.exe), que se instala en la siguiente ubicación de forma predeterminada:  
@@ -372,12 +371,12 @@ ms.lasthandoff: 01/10/2018
 |-401|No se pudo desinstalar la solución.|  
 |-500|Se ha cancelado la operación porque no se pudo instalar o desinstalar la solución o porque no se pudo descargar el manifiesto de implementación.|  
   
-##  <a name="Update"></a>Publicar una actualización  
+##  <a name="Update"></a> Publicar una actualización  
  Para actualizar una solución, publíquela de nuevo mediante el uso de la **Diseñador de proyectos** o **Asistente para publicación**, y, a continuación, copie la solución actualizada a la ubicación de instalación. Cuando copie los archivos en la ubicación de instalación, asegúrese de sobrescribir los archivos anteriores.  
   
  La próxima vez que la solución comprueba una actualización, que podrá encontrar y cargar la nueva versión automáticamente.  
   
-##  <a name="Location"></a>Cambiar la ubicación de instalación de una solución  
+##  <a name="Location"></a> Cambiar la ubicación de instalación de una solución  
  Puede agregar o cambiar la ruta de instalación después de publicar una solución. Puede cambiar la ruta de instalación por alguna de las siguientes razones:  
   
 -   El programa de instalación se compiló antes de que se conociera la ruta de instalación.  
@@ -435,7 +434,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Ejecute el programa de instalación sin el parámetro /url para instalar la solución en la ubicación especificada.  
   
-##  <a name="Roll"></a>Revertir una solución a una versión anterior  
+##  <a name="Roll"></a> Revertir una solución a una versión anterior  
  Cuando se revierte una solución, se revierte a los usuarios a una versión anterior de la solución.  
   
 #### <a name="to-roll-back-a-solution"></a>Para revertir una solución  

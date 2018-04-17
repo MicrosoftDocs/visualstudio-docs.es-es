@@ -1,12 +1,10 @@
 ---
-title: "El enlace en tiempo de ejecución en las soluciones de Office | Documentos de Microsoft"
-ms.custom: 
+title: El enlace en tiempo de ejecución en las soluciones de Office | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - casting, object to specific type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Enlace en tiempo de ejecución en las soluciones de Office
   Algunos tipos en los modelos de objetos de aplicaciones de Office proporcionan funcionalidad que está disponible a través de características de enlace de tiempo de ejecución. Por ejemplo, algunos métodos y propiedades pueden devolver distintos tipos de objetos según el contexto de la aplicación de Office y algunos tipos pueden exponer métodos o propiedades en diferentes contextos diferentes.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  En la mayoría de los casos, la documentación de referencia enumera los posibles tipos de valor devuelto de un miembro que devuelve un <xref:System.Object>. Convertir o convertir el objeto habilita IntelliSense para el objeto en el Editor de código.  
   
- Para obtener información acerca de la conversión en Visual Basic, consulte [implícitas y las conversiones explícitas &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) y [CType (función) &#40; Visual Basic &#41; ](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Para obtener información acerca de la conversión en Visual Basic, consulte [conversiones implícitas y explícitas &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) y [CType (función) &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Ejemplos  
  En el ejemplo de código siguiente se muestra cómo convertir un objeto a un tipo específico en un proyecto de Visual Basic donde **Option Strict** se encuentra en. En este tipo de proyecto, se debe convertir explícitamente el <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> propiedad a un <xref:Microsoft.Office.Interop.Excel.Range>. Este ejemplo necesita un proyecto de Excel de nivel de documento con una clase de hoja de cálculo denominada `Sheet1`.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vea también  
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Uso de tipo dinámico &#40; C &#35; Guía de programación de &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Uso de tipo dinámico &#40;C&#35; Guía de programación&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)  (Option Strict (Instrucción))  
  [Reflexión (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexión (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  

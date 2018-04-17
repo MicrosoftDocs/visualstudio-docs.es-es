@@ -1,13 +1,10 @@
 ---
-title: "Cómo: agregar controles Chart a hojas de cálculo | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: agregar controles Chart a hojas de cálculo | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ea64dc0f73d642d3d5ea7e693eda42c8d882c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d951b70566231db956ef8771b022937af5ee5807
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Cómo: Agregar controles Chart a hojas de cálculo
   Puede agregar controles <xref:Microsoft.Office.Tools.Excel.Chart> a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en las personalizaciones de nivel de documento. También puede agregar controles <xref:Microsoft.Office.Tools.Excel.Chart> en tiempo de ejecución a los complementos de VSTO.  
@@ -40,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obtener más información acerca de <xref:Microsoft.Office.Tools.Excel.Chart> controles, vea [Control Chart](../vsto/chart-control.md).  
   
-##  <a name="designtime"></a>Agregar controles Chart en tiempo de diseño  
+##  <a name="designtime"></a> Agregar controles Chart en tiempo de diseño  
  Puede agregar el control <xref:Microsoft.Office.Tools.Excel.Chart> a la hoja de cálculo de la misma manera que agregaría un gráfico desde la aplicación.  
   
 > [!NOTE]  
@@ -60,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  En el **Seleccionar origen de datos** cuadro de diálogo, haga clic en **Aceptar**.  
   
-##  <a name="runtimedoclevel"></a>Agregar controles Chart en tiempo de ejecución en un proyecto de nivel de documento  
+##  <a name="runtimedoclevel"></a> Agregar controles Chart en tiempo de ejecución en un proyecto de nivel de documento  
  Puede agregar el control <xref:Microsoft.Office.Tools.Excel.Chart> dinámicamente en tiempo de ejecución. Los gráficos creados dinámicamente no se conservan en el documento como controles host cuando se cierra. Para obtener más información, consulta [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Para agregar un control Chart a una hoja de cálculo mediante programación  
@@ -70,7 +67,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]  
   
-##  <a name="runtimeaddin"></a>Agregar controles Chart en tiempo de ejecución en un proyecto de complemento de VSTO  
+##  <a name="runtimeaddin"></a> Agregar controles Chart en tiempo de ejecución en un proyecto de complemento de VSTO  
  Puede agregar un control <xref:Microsoft.Office.Tools.Excel.Chart> mediante programación a cualquier hoja de cálculo abierta de un proyecto de complemento de VSTO. Para obtener más información, consulta [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
  Los controles Chart creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando se cierra la hoja de cálculo. Para obtener más información, consulta [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -92,7 +89,7 @@ ms.lasthandoff: 01/10/2018
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
  [Chart (Control)](../vsto/chart-control.md)   
  [Automatizar Excel usando objetos extendidos](../vsto/automating-excel-by-using-extended-objects.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
  [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

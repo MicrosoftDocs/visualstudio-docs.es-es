@@ -1,18 +1,18 @@
 ---
-title: "Cómo: invocar el depurador de flujo de trabajo | Documentos de Microsoft"
+title: 'Cómo: invocar el depurador de flujo de trabajo | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 34c592af-f4f6-4d02-99f6-63a94698e48b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84fad1bd0daf1f7163a06683f8c41ff0257a2e4
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f4865956c0c5929c817f55bf2bfa5aea76f4ef6f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Invocar el depurador de flujo de trabajo
 Generalmente, los flujos de trabajo se depuran de la misma manera que los programas escritos otros lenguajes de programación de Visual Studio. Puede iniciar el depurador de flujo de trabajo de las siguientes maneras:

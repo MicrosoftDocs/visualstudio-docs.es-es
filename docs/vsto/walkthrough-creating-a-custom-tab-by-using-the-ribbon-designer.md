@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Crear una pestaña personalizada usando el Diseñador de la cinta de opciones | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Crear una pestaña personalizada usando el Diseñador de la cinta de opciones | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Tutorial: Crear una pestaña personalizada usando el diseñador de la cinta de opciones
   El diseñador de la cinta de opciones permite crear una pestaña personalizada y, a continuación, agregar y colocar controles en ella.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio abre el nuevo libro en el diseñador y agrega el **MyExcelRibbon** proyecto al **el Explorador de soluciones**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a>Crear paneles de acciones  
+##  <a name="BKMK_CreateActionsPanes"></a> Crear paneles de acciones  
  Agregue dos paneles de acciones personalizados al proyecto. Posteriormente agregará botones a la pestaña personalizada que muestren y oculten estos paneles de acciones.  
   
 #### <a name="to-create-actions-panes"></a>Para crear paneles de acciones  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Repita los pasos del 1 al 5 para crear un segundo panel de acciones y una etiqueta. Establecer el **texto** propiedad de la segunda etiqueta a **Actions Pane 2**.  
   
-##  <a name="BKMK_CreateCustomTab"></a>Crear una ficha personalizada  
+##  <a name="BKMK_CreateCustomTab"></a> Crear una ficha personalizada  
  Una de las instrucciones de diseño de las aplicaciones de Office es que los usuarios siempre deberían tener control de su interfaz de usuario. Para agregar esta capacidad en los paneles de acciones, puede agregar botones que muestren y oculten cada panel de acciones en una pestaña personalizada de la cinta de opciones. Para crear una ficha personalizada, agregue un **cinta (diseñador Visual)** al proyecto. El diseñador ayuda a agregar y colocar controles, a establecer las propiedades del control y a controlar los eventos de control.  
   
 #### <a name="to-create-a-custom-tab"></a>Para crear una ficha personalizada  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. Establecer el **etiqueta** propiedad **Hide Actions Pane**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a>Ocultar y mostrar paneles de acciones con botones de la ficha personalizada  
+##  <a name="BKMK_HideShowActionsPane"></a> Ocultar y mostrar paneles de acciones con botones de la ficha personalizada  
  El último paso consiste en agregar código que responda al usuario. Agregue controladores de eventos para los eventos <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> de los dos botones y el evento <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> del botón de alternancia. Agregue código a estos controladores de eventos para ocultar o mostrar los paneles de acciones.  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Para ocultar y mostrar paneles de acciones con botones de la ficha personalizada  

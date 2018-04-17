@@ -1,13 +1,10 @@
 ---
-title: "Tutorial: Crear menús contextuales para marcadores | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Crear menús contextuales para marcadores | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Tutorial: Crear menús de acceso directo para marcadores
   En este tutorial se muestra cómo crear menús contextuales para <xref:Microsoft.Office.Tools.Word.Bookmark> controles en una personalización de nivel de documento para Word. Cuando un usuario seleccione el texto en un marcador, un menú contextual aparece y proporciona las opciones de usuario para dar formato al texto.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Crear el proyecto  
+##  <a name="BKMK_CreateProject"></a> Crear el proyecto  
  El primer paso es crear un proyecto de documento de Word en Visual Studio.  
   
 #### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
@@ -60,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio abre el nuevo documento de Word en el diseñador y agrega el **mi menú contextual de marcador** proyecto al **el Explorador de soluciones**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Agregar texto y marcadores al documento  
+##  <a name="BKMK_addtextandbookmarks"></a> Agregar texto y marcadores al documento  
  Agregar texto al documento y, a continuación, agregue dos marcadores superpuestos.  
   
 #### <a name="to-add-text-to-your-document"></a>Para agregar texto al documento  
@@ -77,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  Seleccione las palabras "creación de un menú contextual cuando hace clic en el texto" y, a continuación, haga clic en **Aceptar**.  
   
-     `bookmark1`se agrega al documento.  
+     `bookmark1` se agrega al documento.  
   
 3.  Agregue otro <xref:Microsoft.Office.Tools.Word.Bookmark> el control a las palabras "haga clic en el texto de un marcador".  
   
-     `bookmark2`se agrega al documento.  
+     `bookmark2` se agrega al documento.  
   
     > [!NOTE]  
     >  Las palabras "haga clic en el texto" están en ambos `bookmark1` y `bookmark2`.  
   
  Cuando se agrega un marcador a un documento en tiempo de diseño, un <xref:Microsoft.Office.Tools.Word.Bookmark> se crea el control. Puede programar con varios eventos del marcador. Puede escribir código en el <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> eventos del marcador para que cuando el usuario seleccione el texto del marcador, aparece un menú contextual.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Agregar comandos a un menú contextual  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Agregar comandos a un menú contextual  
  Agregar botones al menú contextual que aparece cuando hace doble clic en el documento.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>Para agregar comandos a un menú contextual  
@@ -148,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Dar formato al texto del marcador  
+##  <a name="BKMK_formattextbkmk"></a> Dar formato al texto del marcador  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>Para dar formato al texto del marcador  
   

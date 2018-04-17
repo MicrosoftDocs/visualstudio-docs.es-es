@@ -1,12 +1,10 @@
 ---
 title: Paneles de tareas personalizados | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.  
@@ -129,7 +128,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia automáticamente los recursos que usa el panel de tareas personalizado cuando se descarga el complemento de VSTO. No llame a la <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> métodos en el `ThisAddIn_Shutdown` controlador de eventos en el proyecto. Estos métodos producirán <xref:System.ObjectDisposedException>, ya que [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpia los recursos que usa el objeto <xref:Microsoft.Office.Tools.CustomTaskPane> antes de llamar a `ThisAddIn_Shutdown`. Para obtener más información acerca de `ThisAddIn_Shutdown`, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a>Administrar paneles de tareas personalizados en varias ventanas de aplicación  
+##  <a name="Managing"></a> Administrar paneles de tareas personalizados en varias ventanas de aplicación  
  Cuando se crea un panel de tareas personalizado en una aplicación que usa varias ventanas para mostrar documentos y otros elementos, deberá llevar a cabo otros pasos para asegurarse de que el panel de tareas está visible cuando el usuario así lo espere.  
   
  Los paneles de tareas personalizados de todas las aplicaciones están asociados a una ventana de marco de documento, que presenta al usuario una vista de un documento o elemento. El panel de tareas solo está visible cuando la ventana asociada está visible. Sin embargo, no todas las aplicaciones usan ventanas de marco de documento de la misma forma.  
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [Cómo: administrar paneles de tareas en complementos de VSTO de Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
-##  <a name="Outlook"></a>Outlook  
+##  <a name="Outlook"></a> Outlook  
  Cuando se crea un panel de tareas personalizado para Outlook, se asocia a una ventana específica del Explorador o el Inspector. Los exploradores son ventanas que muestran el contenido de una carpeta y los inspectores son ventanas que muestran un elemento como un mensaje de correo electrónico o una tarea.  
   
  Si desea mostrar un panel de tareas personalizado con varias ventanas del Explorador o el Inspector, deberá crear una nueva instancia del panel de tareas personalizado cuando se abre una ventana del Explorador o el Inspector. Para ello, controle el evento que se desencadena al crear una ventana del Explorador o el Inspector y, a continuación, cree el panel de tareas en el controlador de eventos. También puede administrar eventos del Explorador y del Inspector para ocultar o mostrar paneles de tareas, en función de qué ventana esté visible.  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
  Si no quita explícitamente el panel de tareas personalizado, las ventanas de Outlook podrían mostrar varias instancias del panel de tareas personalizado. En ocasiones Outlook recicla las ventanas, y las ventanas recicladas conservan referencias a los paneles de tareas personalizados que se les adjuntaron.  
   
-##  <a name="WordAndInfoPath"></a>Word, InfoPath y PowerPoint  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath y PowerPoint  
  Word, InfoPath y PowerPoint muestran cada documento en una ventana de marco de documento diferente. Cuando se crea un panel de tareas personalizado para estas aplicaciones, el panel se asocia únicamente a un documento específico. Si el usuario abre un documento diferente, el panel de tareas personalizado se oculta hasta que el documento anterior esté visible de nuevo.  
   
  Si desea mostrar un panel de tareas personalizado con varios documentos, cree una nueva instancia del panel de tareas personalizado cuando el usuario cree un documento nuevo o abra un documento existente. Para ello, controle los eventos que se generan cuando se crea o se abre un documento y, a continuación, cree el panel de tareas en los controladores de eventos. También puede administrar eventos del documento para ocultar o mostrar paneles de tareas, en función de qué documento esté visible.  

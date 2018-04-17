@@ -1,12 +1,10 @@
 ---
 title: 'Tutorial: Crear el primer complemento VSTO para Word | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3452bd5e550ab724dc6c236515579869814a9237
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Tutorial: Crear el primer complemento de VSTO para Word
   Este tutorial introductorio muestra cómo crear un complemento de VSTO para Microsoft Office Word. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de los documentos que estén abiertos.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crea el **FirstWordAddIn** del proyecto y abre el archivo de código ThisAddIn en el editor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el **FirstWordAddIn** del proyecto y abre el archivo de código ThisAddIn en el editor.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-document"></a>Escribir código para agregar texto al documento guardado  
  A continuación, agregue código al archivo de código ThisAddIn. El nuevo código usa el modelo de objetos de Word para agregar texto reutilizable a cada documento guardado. De forma predeterminada, el archivo de código ThisAddIn contiene el siguiente código generado:  
@@ -137,7 +136,7 @@ ms.lasthandoff: 01/10/2018
 -   Implementar complementos VSTO para Word: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Soluciones de Word](../vsto/word-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
  [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   

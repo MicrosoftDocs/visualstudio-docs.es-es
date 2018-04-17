@@ -1,19 +1,19 @@
 ---
-title: "Cómo utilizar fragmentos XML en Microsoft Visual Studio | Documentos de Microsoft"
+title: Cómo utilizar fragmentos XML en Microsoft Visual Studio | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e8e94b799db6572b3aafcbd6bacf826b4a22861
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 5751293124edab5c8415cd60d79aba9947fb94bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-xml-snippets"></a>Cómo: usar XML fragmentos de código
 

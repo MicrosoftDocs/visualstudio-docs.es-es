@@ -1,18 +1,18 @@
 ---
-title: "Cómo: establecer puntos de interrupción en flujos de trabajo | Documentos de Microsoft"
+title: 'Cómo: establecer puntos de interrupción en flujos de trabajo | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ed757fab518d9cfe23b26186e6bded06eafe1e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: e4112e74336faf1fb456ebd94dd7c7617747a11f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Cómo establecer puntos de interrupción en los flujos de trabajo
 Cuando se utiliza el Diseñador de flujo de trabajo de Windows, puede establecer puntos de interrupción en los flujos de trabajo gráficos como lo haría en el código de Visual Basic o C#. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.

@@ -1,23 +1,21 @@
 ---
-title: "Crear un elemento de gráfico de la vista, los comandos y configuración | Documentos de Microsoft"
-ms.custom: 
+title: Crear un elemento de gráfico de la vista, los comandos y configuración | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Tutorial: Crear un elemento de gráfico de la vista, los comandos y configuración (guías de columnas)
 Puede ampliar el editor de texto y código de Visual Studio con los comandos y los efectos de la vista.  En este tema se muestra cómo empezar a trabajar con una característica de extensión populares, guías de columna.  Guías de columna son visualmente claro líneas dibujadas en la vista del editor de texto para ayudarle a administrar el código a los anchos de columna específica.  Código específicamente con formato puede ser importante para los ejemplos se incluyen en los documentos, blogs, o informes de errores.  
@@ -54,13 +52,13 @@ Puede ampliar el editor de texto y código de Visual Studio con los comandos y l
   
 -   Hay un `ColumnGuideCommands` declarar el objeto que implementa los comandos de usuario y enlaza los controladores de comandos para los comandos en el archivo .vsct.  
   
- **VSIX**.  Use **archivo &#124; Nuevo...**  comando para crear un proyecto.  Elija el nodo de extensibilidad en C# en el panel de navegación izquierdo y elija **proyecto VSIX** en el panel derecho.  Escriba el nombre ColumnGuides y elija **Aceptar** para crear el proyecto.  
+ **VSIX**.  Use **archivo &#124; nuevo...**  comando para crear un proyecto.  Elija el nodo de extensibilidad en C# en el panel de navegación izquierdo y elija **proyecto VSIX** en el panel derecho.  Escriba el nombre ColumnGuides y elija **Aceptar** para crear el proyecto.  
   
- **Ver elementos gráficos**.  Presione el botón derecho del puntero en el nodo de proyecto en el Explorador de soluciones.  Elija la **Agregar &#124; Nuevo elemento...**  comando para agregar un nuevo elemento de elementos gráficos de la vista.  Elija **extensibilidad &#124; Editor de** en el panel de navegación izquierdo y elija **elementos gráficos de área de visualización de Editor** en el panel derecho.  Escriba el nombre ColumnGuideAdornment como el nombre del elemento y elija **agregar** para agregarlo.  
+ **Ver elementos gráficos**.  Presione el botón derecho del puntero en el nodo de proyecto en el Explorador de soluciones.  Elija la **agregar &#124; nuevo elemento...**  comando para agregar un nuevo elemento de elementos gráficos de la vista.  Elija **extensibilidad &#124; Editor** en el panel de navegación izquierdo y elija **elementos gráficos de área de visualización de Editor** en el panel derecho.  Escriba el nombre ColumnGuideAdornment como el nombre del elemento y elija **agregar** para agregarlo.  
   
  Puede ver esta plantilla de elemento agregado dos archivos al proyecto (así como las referencias y así sucesivamente): ColumnGuideAdornment.cs y ColumnGuideAdornmentTextViewCreationListener.cs.  Las plantillas de dibujar un rectángulo de color púrpura en la vista.  A continuación se cambia un par de líneas en el agente de escucha de creación de vista y reemplace el contenido de ColumnGuideAdornment.cs.  
   
- **Comandos**.  Presione el botón derecho del puntero en el nodo de proyecto en el Explorador de soluciones.  Elija la **Agregar &#124; Nuevo elemento...**  comando para agregar un nuevo elemento de elementos gráficos de la vista.  Elija **extensibilidad &#124; VSPackage** en el panel de navegación izquierdo y elija **comando personalizado** en el panel derecho.  Escriba el nombre ColumnGuideCommands como el nombre del elemento y elija **agregar** para agregarlo.  Además de las varias referencias, agregar los comandos y el paquete agrega ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs y ColumnGuideCommandsPackage.vsct.  A continuación, se reemplazará el contenido de los archivos primeros y últimos para definir e implementar los comandos.  
+ **Comandos**.  Presione el botón derecho del puntero en el nodo de proyecto en el Explorador de soluciones.  Elija la **agregar &#124; nuevo elemento...**  comando para agregar un nuevo elemento de elementos gráficos de la vista.  Elija **extensibilidad &#124; VSPackage** en el panel de navegación izquierdo y elija **comando personalizado** en el panel derecho.  Escriba el nombre ColumnGuideCommands como el nombre del elemento y elija **agregar** para agregarlo.  Además de las varias referencias, agregar los comandos y el paquete agrega ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs y ColumnGuideCommandsPackage.vsct.  A continuación, se reemplazará el contenido de los archivos primeros y últimos para definir e implementar los comandos.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Configurar el agente de escucha de creación de vista de texto  
  Abra ColumnGuideAdornmentTextViewCreationListener.cs en el editor.  Este código implementa un controlador para cada vez que Visual Studio crea vistas de texto.  Hay atributos que controlan cuando se llama al controlador dependiendo de las características de la vista.  
@@ -1214,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`tiene que examine un poco para obtener un <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vista del código.  Si realiza un seguimiento a través de `GetActiveTextView`, `GetActiveView`, y `GetTextViewFromVsTextView`, puede ver cómo hacerlo.  El siguiente es el código relevante abstraído, a partir de la selección actual y obtener el marco de la selección y, luego, obtener DocView del marco como un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, a continuación, obtener un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> desde el objeto IVsTextView, a continuación, obtener un host de la vista, y Por último, el objeto IWpfTextView:  
+ `GetCurrentEditorColumn` tiene que examine un poco para obtener un <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vista del código.  Si realiza un seguimiento a través de `GetActiveTextView`, `GetActiveView`, y `GetTextViewFromVsTextView`, puede ver cómo hacerlo.  El siguiente es el código relevante abstraído, a partir de la selección actual y obtener el marco de la selección y, luego, obtener DocView del marco como un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, a continuación, obtener un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> desde el objeto IVsTextView, a continuación, obtener un host de la vista, y Por último, el objeto IWpfTextView:  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1288,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  Con la columna actual en la parte donde el usuario hizo clic, el código simplemente llama en el Administrador de configuración para agregar o quitar la columna.  El Administrador de configuración activa el evento para que todos los `ColumnGuideAdornment` objetos escuchan.  Cuando se desencadena el evento, estos objetos actualizan sus vistas de texto asociado con una nueva configuración de la Guía de columna.  
   
 ## <a name="invoking-command-from-the-command-window"></a>Invocar comando de la ventana de comandos  
- El ejemplo de guías de columna permite a los usuarios invocar dos comandos de la ventana de comandos como una forma de extensibilidad.  Si usas el **vista &#124; Otras ventanas &#124; Ventana de comandos** de comandos, puede ver la ventana de comandos.  Puede interactuar con la ventana de comandos escribiendo "Editar" y con Autocompletar nombres de comando y se proporciona el argumento 120, dispone de lo siguiente:  
+ El ejemplo de guías de columna permite a los usuarios invocar dos comandos de la ventana de comandos como una forma de extensibilidad.  Si usas el **vista &#124; otras ventanas &#124; ventana de comandos** de comandos, puede ver la ventana de comandos.  Puede interactuar con la ventana de comandos escribiendo "Editar" y con Autocompletar nombres de comando y se proporciona el argumento 120, dispone de lo siguiente:  
   
 ```  
 > Edit.AddColumnGuide 120  

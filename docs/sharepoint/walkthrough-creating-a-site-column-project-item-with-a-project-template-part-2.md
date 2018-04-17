@@ -1,25 +1,24 @@
 ---
 title: 'Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2 | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Tutorial: crear un elemento de proyecto de columna de sitio con una plantilla de proyecto, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de proyecto en Visual Studio, es posible que desee proporcionar también un asistente para la plantilla. Puede usar el asistente con el fin de recopilar información de los usuarios cuando usan la plantilla para crear un nuevo proyecto que contiene el elemento de proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   Depurar y probar el asistente.  
   
 > [!NOTE]  
->  Puede descargar un ejemplo que contiene los proyectos completos, código y otros archivos para este tutorial en la siguiente ubicación: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Puede descargar un ejemplo que contiene los proyectos completos, código y otros archivos para este tutorial en la siguiente ubicación: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para llevar a cabo este tutorial, primero debe crear la solución SiteColumnProjectItem siguiendo [Tutorial: crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Columnas de sitio de SharePoint. Para obtener más información, consulte [columnas](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a>Descripción de los componentes del Asistente  
+##  <a name="wizardcomponents"></a> Descripción de los componentes del Asistente  
  El asistente que se muestra en este tutorial contiene varios componentes. En la tabla siguiente se describen estos componentes.  
   
 |Componente|Descripción|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  En la lista de plantillas de proyecto, elija **biblioteca de controles de usuario de WPF**, denomine el proyecto **ProjectTemplateWizard**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **ProjectTemplateWizard** proyecto a la solución y abre el archivo predeterminado UserControl1.xaml.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **ProjectTemplateWizard** proyecto a la solución y abre el archivo predeterminado UserControl1.xaml.  
   
 6.  Elimine el archivo UserControl1.xaml del proyecto.  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Elija la **biblioteca de clases** plantilla de proyecto, asigne al proyecto **SharePointCommands**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **SharePointCommands** proyecto a la solución y abre el archivo de código predeterminado Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **SharePointCommands** proyecto a la solución y abre el archivo de código predeterminado Class1.  
   
 5.  Elimine el archivo de código Class1 del proyecto.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Si está desarrollando un proyecto de Visual Basic, importar el espacio de nombres ProjectTemplateWizard en el proyecto mediante el uso de la **Diseñador de proyectos**.  
   
-     Para obtener más información, vea [Cómo: agregar o quitar espacios de nombres importados &#40; Visual Basic &#41; ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Para obtener más información, consulte [Cómo: agregar o quitar espacios de nombres importados &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Para configurar el proyecto SharePointCommands  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Elija la flecha situada junto a la **agregar** botón y, a continuación, elija la **agregar como vínculo** opción en el menú que aparece.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el archivo de código para el **SharePointCommands** proyecto como un vínculo. El archivo de código se encuentra en la **ProjectTemplateWizard** también se compila el proyecto, pero el código en el archivo en el **SharePointCommands** proyecto.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el archivo de código para el **SharePointCommands** proyecto como un vínculo. El archivo de código se encuentra en la **ProjectTemplateWizard** también se compila el proyecto, pero el código en el archivo en el **SharePointCommands** proyecto.  
   
 5.  En el **SharePointCommands** del proyecto, agregue otro archivo de código llamado Commands.  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Para obtener más información sobre la `WizardExtension` elemento, vea [WizardExtension (elemento) &#40; Plantillas de Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Para obtener más información sobre la `WizardExtension` elemento, vea [WizardExtension (elemento) &#40;plantillas de Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Guarde y cierre el archivo.  
   

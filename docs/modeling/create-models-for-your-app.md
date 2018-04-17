@@ -1,11 +1,9 @@
 ---
-title: "Crear modelos para su aplicación | Documentos de Microsoft"
-ms.custom: 
+title: Crear modelos para su aplicación | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
 - vs.teamarch.UMLModelExplorer.dependency
@@ -22,14 +20,14 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57d56897b7381bd8d7f7a276e64c32ca83d5a969
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9f6da9b6e70280cc4d22264356fb0c63d2fe71ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-models-for-your-app"></a>Crear modelos para la aplicación
 
@@ -47,7 +45,7 @@ Para visualizar la arquitectura de un sistema o código existente, cree los diag
   
 ## <a name="related-tasks"></a>Tareas relacionadas  
   
-|**Topic**|**Task**|  
+|**Tema**|**Task**|  
 |---------------|--------------|  
 |[Visualizar el código](../modeling/visualize-code.md)|Crear mapas de código y diagramas de dependencia mejor comprender código desconocido.|  
 |[Requisitos del usuario de modelos](../modeling/model-user-requirements.md)|Usar modelos para aclarar y transmitir las necesidades del usuario.|  

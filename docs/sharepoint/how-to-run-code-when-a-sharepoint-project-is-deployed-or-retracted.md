@@ -1,13 +1,10 @@
 ---
-title: "Cómo: ejecutar código cuando un proyecto de SharePoint es implementa o retira | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: ejecutar código cuando un proyecto de SharePoint es implementa o retira | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74eb6585be1b90da906141db4ef89c0705efa0b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c76d62751670e4fdd38c1ebb3042e5c403ee1ca6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Cómo: Ejecutar código cuando se implementa o retracta un proyecto de SharePoint
   Si desea realizar tareas adicionales al implementar o retirar un proyecto de SharePoint, puede controlar eventos generados por Visual Studio. Para obtener más información, consulte [extender SharePoint empaquetado e implementación](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  

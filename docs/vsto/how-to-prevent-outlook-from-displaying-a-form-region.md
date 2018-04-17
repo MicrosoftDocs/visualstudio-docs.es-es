@@ -1,12 +1,10 @@
 ---
-title: "Cómo: impedir que Outlook muestre un área de formulario | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: impedir que Outlook muestre un área de formulario | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - canceling form region display
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: def4454f1031e5958dfc10e1a1fc77ccaed59067
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a5fffde6cd92d490df2a5567763da77e723ed4f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Cómo: Impedir que Outlook muestre un área de formulario
   Puede haber situaciones en las que no desea que Microsoft Office Outlook muestre un área de formulario de un elemento determinado. Por ejemplo, si un elemento de contacto no contiene una dirección de la empresa, puede evitar que un área de formulario que muestra la ubicación de la empresa en un mapa que aparezcan.  

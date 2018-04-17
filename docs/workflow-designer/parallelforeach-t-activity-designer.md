@@ -1,5 +1,5 @@
 ---
-title: "ParallelForEach&lt;T&gt; Diseñador de actividad | Documentos de Microsoft"
+title: ParallelForEach&lt;T&gt; Diseñador de actividad | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8a46b2535c976bbfe490f85fc5cc5fd6082bc7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 62d86499296c72f48d1ffcad932e9f1ff4d2fef1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; Diseñador de actividad
 La actividad <xref:System.Activities.Statements.ParallelForEach%601> enumera los elementos de una colección y ejecuta una instrucción incrustada para cada elemento de la colección en paralelo, la cual se presenta de forma asincrónica en el mismo subproceso. Utilice esta actividad de control de flujo en lugar de la actividad <xref:System.Activities.Statements.Sequence> si se desea que las actividades secundarias de esta actividad pasen a estado inactivo.
@@ -48,6 +48,6 @@ La actividad <xref:System.Activities.Statements.ParallelForEach%601> enumera los
 
 ## <a name="see-also"></a>Vea también
 
-- [Sequence](../workflow-designer/sequence-activity-designer.md)
-- [Parallel](../workflow-designer/parallel-activity-designer.md)
+- [secuencia](../workflow-designer/sequence-activity-designer.md)
+- [Paralelo](../workflow-designer/parallel-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

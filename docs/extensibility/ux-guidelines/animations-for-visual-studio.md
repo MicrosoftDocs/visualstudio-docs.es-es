@@ -1,23 +1,21 @@
 ---
 title: Las animaciones para Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a45fd22cce46cb9e43a649fb969980f42b395db2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3f28e4d6f9ae1a0af060723047621b3e205d012c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="animations-for-visual-studio"></a>Animaciones para Visual Studio
 ## <a name="animation-fundamentals"></a>Aspectos básicos de animación  
@@ -197,7 +195,7 @@ Indicadores de progreso tienen dos ventajas importantes:
   
 -   Indicadores determinados dar al usuario que una idea de hasta qué punto a lo largo de la acción está progresando, así como una sensación de vaya acercando a la finalización.  
   
-##  <a name="BKMK_AnimationPatterns"></a>Patrones de animación  
+##  <a name="BKMK_AnimationPatterns"></a> Patrones de animación  
   
 ### <a name="overview"></a>Información general  
 Las animaciones en Visual Studio están diseñadas para atender una función específica sin reducir la productividad del usuario. Por lo general, deberían ser animaciones en Visual Studio:  

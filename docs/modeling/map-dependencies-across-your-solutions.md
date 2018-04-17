@@ -2,8 +2,6 @@
 title: Asignar dependencias en sus soluciones | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -27,15 +25,15 @@ helpviewer_keywords:
 - code exploration, visualizing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aea44beeb2a8e6380bd9a568acdece79873e3050
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 8ce84bfc59782a27e517ae1813f3ee43d6cb3718
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Asignar dependencias de sus soluciones
 
@@ -287,7 +285,7 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 ##  <a name="SeeSourceHeader"></a> Ver las dependencias entre los archivos de código fuente de C y C++ y los archivos de encabezado  
  Si desea crear mapas más completos para proyectos de C++, establezca en dichos proyectos la opción del compilador de información de examen (**/FR**). Si no, aparece un mensaje que le solicita establecer esta opción. Si selecciona **Aceptar**, la opción se establece solamente en el mapa actual. Si lo desea, puede ocultar el mensaje para todos los mapas posteriores. Si oculta este mensaje, puede hacer que aparezca de nuevo. Establezca la siguiente clave del registro en `0` o elimine la clave:  
 
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
 
  Al abrir una solución que contiene proyectos de Visual C++, podría llevar algún tiempo la actualización de la base de datos de IntelliSense. Durante este tiempo, quizás no pueda crear mapas de código para los archivos de encabezado (.h o `#include`) hasta que la base de datos de IntelliSense finalice la actualización. Puede supervisar el progreso de actualización en la barra de estado de Visual Studio. Para resolver los problemas o los mensajes que aparecen porque ciertas opciones de IntelliSense están deshabilitadas, vea el artículo sobre [solución de problemas de mapas de código C y C++](#Troubleshooting).  
 
@@ -345,7 +343,7 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Compartir el mapa con otros usuarios de Visual Studio  
  Guarde el mapa desde el menú **Archivo** .  
 
- O bien  
+ -o bien-  
 
  Para guardar el mapa como parte de un proyecto específico, en la barra de herramientas del mapa elija **Compartir**, **Mover** \<*CodeMapName*>**.dgml en**y, después, elija el proyecto donde desea guardar el mapa.  
 

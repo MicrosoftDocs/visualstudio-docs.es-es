@@ -1,13 +1,10 @@
 ---
-title: "Extensiones de implementación para las herramientas de SharePoint en Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: Extensiones de implementación para las herramientas de SharePoint en Visual Studio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Extensiones de implementación para las Herramientas de SharePoint en Visual Studio
   Para implementar una extensión de herramientas de SharePoint, cree un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) que contiene el ensamblado de extensión y cualquier otro archivo que desee distribuir con la extensión. Un paquete VSIX es un archivo comprimido que sigue el estándar Open Packaging Conventions (OPC). Los paquetes VSIX tienen la extensión VSIX.  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  En **el Explorador de soluciones**, abra el menú contextual para el proyecto de plantilla de proyecto o una plantilla de elemento y, a continuación, elija **descargar el proyecto**.  
   
-7.  Vuelva a abrir el menú contextual del nodo de proyecto y, a continuación, elija **editar***YourTemplateProjectName***.csproj** o **editar**  *YourTemplateProjectName***.vbproj**.  
+7.  Vuelva a abrir el menú contextual del nodo de proyecto y, a continuación, elija **editar***YourTemplateProjectName***.csproj** o **editar***YourTemplateProjectName***. vbproj**.  
   
 8.  Busque el elemento `VSTemplate` siguiente en el archivo del proyecto.  
   

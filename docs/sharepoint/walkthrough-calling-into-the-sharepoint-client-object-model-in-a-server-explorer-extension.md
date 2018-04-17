@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Llamar a en el modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Llamar a en el modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: Llamar al modelo de objetos de cliente de SharePoint en una extensión del Explorador de servidores
   Este tutorial muestra cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el **las conexiones de SharePoint** nodo **Explorador de servidores**. Para obtener más información sobre cómo usar el modelo de objetos de cliente de SharePoint, vea [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -82,7 +81,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
   
 6.  En el **nombre** , escriba **NodoElementoWeb**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **NodoElementoWeb** proyecto al **el Explorador de soluciones**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **NodoElementoWeb** proyecto al **el Explorador de soluciones**.  
   
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto  
   
@@ -96,7 +95,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
   
 5.  En el **nombre** cuadro, escriba **ExtensiónNodoElementoWeb**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **ExtensiónNodoElementoWeb** proyecto a la solución y abre el archivo de código predeterminado Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **ExtensiónNodoElementoWeb** proyecto a la solución y abre el archivo de código predeterminado Class1.  
   
 6.  Elimine el archivo de código Class1 del proyecto.  
   
@@ -287,6 +286,6 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
  [Extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Tutorial: Extender el Explorador de servidores para mostrar elementos Web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons)   
- [Crear un icono u otra imagen &#40; Editor de imágenes para iconos &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Crear un icono u otra imagen &#40;Editor de imágenes para iconos&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

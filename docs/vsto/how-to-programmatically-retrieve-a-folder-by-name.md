@@ -1,13 +1,10 @@
 ---
-title: "Cómo: recuperar una carpeta por su nombre mediante programación | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: recuperar una carpeta por su nombre mediante programación | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], retrieving by name
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 536abafec5d2d8792eb966c763a89b0c78dd49fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7a1a27d5129f70c1a7a904a95d116f5ac96afde2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Cómo: Recuperar una carpeta por su nombre mediante programación
   Este ejemplo obtiene una referencia a una carpeta personalizada con nombre y, a continuación, muestra el contenido de la carpeta.  

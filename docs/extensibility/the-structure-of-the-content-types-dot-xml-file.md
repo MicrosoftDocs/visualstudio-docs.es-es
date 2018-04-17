@@ -1,28 +1,26 @@
 ---
 title: La estructura del archivo [Content_types] .xml | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 08f1bb76f27f7ae0923eed43339f656c90f4856f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 38e65f484411abcfb2acd78b124b77ff3f2c49cd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>La estructura del archivo [Content_types] .xml
 Contiene información sobre los tipos de contenido en un paquete VSIX. Visual Studio usa el archivo [Content_Types] .xml para instalar el paquete, pero no instala el propio archivo.  
@@ -49,7 +47,7 @@ Contiene información sobre los tipos de contenido en un paquete VSIX. Visual St
   
 |Valor|Descripción|  
 |-----------|-----------------|  
-|http://schemas.OpenFormats.org/Package/2006/Content-Types|La ubicación del esquema de tipos de contenido.|  
+|http://schemas.openformats.org/package/2006/content-types|La ubicación del esquema de tipos de contenido.|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  El `Types` elemento puede contener cualquier número de `Default` elementos.  
@@ -68,7 +66,7 @@ Contiene información sobre los tipos de contenido en un paquete VSIX. Visual St
 ### <a name="attribute-name-attribute"></a>{Nombre del atributo} Atributo  
  Visual Studio reconoce los siguientes `ContentType` valores para la asociada `Extension` tipos.  
   
-|Extensión|Tipo de contenido|  
+|Comprobación de actualización|Tipo de contenido|  
 |---------------|-----------------|  
 |txt|texto/sin formato|  
 |pkgdef del|texto/sin formato|  

@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de Radio | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de Radio | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 36a83dc849260f9d58595e2f52bb422a1854b5ec
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fbdbcc8ae12e1b0f317b53a4f0ffd7e9b2885aec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Tutorial: Actualizar un gráfico en una hoja de cálculo utilizando botones de radio
   En este tutorial se muestra los aspectos básicos del uso de botones de radio en una hoja de cálculo de Microsoft Office Excel para proporcionar al usuario una manera de cambiar rápidamente entre las opciones. En este caso, las opciones cambian el estilo de un gráfico.  

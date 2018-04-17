@@ -1,21 +1,19 @@
 ---
-title: "Introducción a los lenguajes específicos de dominio | Documentos de Microsoft"
-ms.custom: 
+title: Introducción a los lenguajes específicos de dominio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 68b750735c8f5d5f6bd7f1497565692c8836914c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 791686b948c5a0541cbe8f8cb420f38ef885c9d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 Este tema explica los conceptos básicos de definición y uso de un lenguaje específico de dominio (DSL) creado con el SDK de modelado de Visual Studio.
@@ -43,7 +41,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
 |||  
 |-|-|  
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Programa para la mejora|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Modelado del SDK para Visual Studio||  
 
@@ -102,7 +100,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
 -   **Proyecto DslPackage** este proyecto contiene código que permite las instancias de DSL para abrir y editar en Visual Studio.  
   
-##  <a name="Debugging"></a>Ejecuta DSL  
+##  <a name="Debugging"></a> Ejecuta DSL  
  Puede ejecutar la solución DSL tan pronto como se ha creado. Más adelante, puede modificar la definición DSL gradualmente, ejecutando la solución de nuevo después de cada cambio.  
   
 #### <a name="to-experiment-with-the-dsl"></a>Para experimentar con DSL  
@@ -391,7 +389,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
  Para obtener más información, consulte [implementar soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   
-##  <a name="Reset"></a>Quitar el antiguo DSL Experimental  
+##  <a name="Reset"></a> Quitar el antiguo DSL Experimental  
  Si ha creado DSL experimental que ya no desea, puede quitarlos del equipo mediante el restablecimiento de la instancia Experimental de Visual Studio.  
   
  Esto quitará del equipo todos los lenguajes DSL experimental y otras extensiones de Visual Studio experimental. Se trata de extensiones que se han ejecutado en modo de depuración.  

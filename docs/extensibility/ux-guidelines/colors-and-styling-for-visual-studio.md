@@ -2,24 +2,20 @@
 title: Colores y estilos para Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 07/31/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9522d5773fd74eabcd3b7fce84b7bd56e0cd2a
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5cee3ec1308ee103d279a0d77ded4092e4ccf9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Con color en Visual Studio
@@ -312,7 +308,7 @@ Muchos elementos de interfaz de usuario común ya ha definido de colores de cont
 | MenuText | -Borde del menú lista desplegable<br />: Marcas de verificación<br />-Glifos menú<br />-Texto del menú lista desplegable<br />-Borde de icono seleccionado |
 | Barra de desplazamiento | -Desplácese barra y barra fondo de flecha, todos los Estados de desplazamiento |
 | Ventana | -Fondo de ficha ocultación automática<br />-Menú de barras y fondo del área de comandos<br />: Fondo de pestaña de ventana de documento sin foco o no seleccionados y el borde de documento, para las pestañas abiertas y provisionales<br />-Fondo de barra de título de ventana de herramienta sin foco<br />-Fondo de la pestaña de ventana de herramienta, ambos seleccionada y anular la selección |
-| WindowFrame | : Borde IDE |
+| Marco de ventana | : Borde IDE |
 | WindowText | -Primer plano de pestaña ocultación automática<br />-Primer plano de pestaña de ventana de herramienta seleccionada<br />: Pestaña de ventana de documento no enfocado y de primer plano de la pestaña provisional seleccionado o sin foco<br />-Árbol predeterminado de primer plano de vista y al mantener el mouse sobre un glifo no seleccionado<br />: Borde de subpestaña seleccionado de la ventana<br />-La barra de desplazamiento thumb fondo, borde y glifo |
 
 ##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposición de colores para los usuarios finales
@@ -359,7 +355,7 @@ Rellenar el registro con dos valores:
 
 El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> para el grupo correspondiente.
 
-![Implementation of IVsFontAndColorGroup](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />Implementación de `IVsFontAndColorGroup`
+![Implementación de encontrar](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "a_FontAndColorGroup 0304")<br />Implementación de `IVsFontAndColorGroup`
 
 ### <a name="to-implement-ide-support"></a>Para implementar la compatibilidad IDE
 Implemente [GetObject](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject.aspx), que devuelve un [IVsFontAndColorDefaults](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) interfaz o un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> de la interfaz en el IDE para cada categoría o grupo GUID proporcionado.

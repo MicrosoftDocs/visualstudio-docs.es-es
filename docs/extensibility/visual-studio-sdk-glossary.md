@@ -1,33 +1,29 @@
 ---
 title: Glosario de SDK de Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a08985c4977896e35fa8cd94014385ac32dd8bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glosario de SDK de Visual Studio
 Este glosario proporciona definiciones de términos que se usan en el [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentación.  
   
 ## <a name="terms"></a>Términos  
- complemento  
+ de comprobación  
  Una aplicación de la utilidad, controlador u otro software que se agregan a una aplicación principal. En el entorno de desarrollo integrado (IDE) de Visual Studio, un complemento es una aplicación basada en la automatización que amplía las capacidades del IDE.  
   
  modelo de automatización  
@@ -76,7 +72,7 @@ Este glosario proporciona definiciones de términos que se usan en el [!INCLUDE[
  Utilizado para hacer referencia genéricamente al documento en su totalidad, tanto el `DocData` y `DocView`. Por ejemplo, contiene un DocumentFrame un `DocView`, pero también mantiene una referencia a la `DocData` para controlar la persistencia.  
   
  DocView  
- El DocObject/Embedding/panel de la ventana con el que el usuario interactúa para ver y manipular subyacente `DocData`. Tenga en cuenta que los usuarios no aprovechar las ventajas de la separación de documento/vista que forma parte de la `DocObject` diseño de la interfaz. Los usuarios utilizar un DocObject completo para que actúe como una vista en lugar de usar una noción más abstracto (y menos formalizado) de datos subyacentes que se conoce como `DocData`. `DocView`objetos siempre se incrustan con objetos de marco de documento (ventanas secundarias MDI) del IDE.  
+ El DocObject/Embedding/panel de la ventana con el que el usuario interactúa para ver y manipular subyacente `DocData`. Tenga en cuenta que los usuarios no aprovechar las ventajas de la separación de documento/vista que forma parte de la `DocObject` diseño de la interfaz. Los usuarios utilizar un DocObject completo para que actúe como una vista en lugar de usar una noción más abstracto (y menos formalizado) de datos subyacentes que se conoce como `DocData`. `DocView` objetos siempre se incrustan con objetos de marco de documento (ventanas secundarias MDI) del IDE.  
   
  DTE  
  La `DTE` objeto (extensibilidad de herramientas de desarrollo) es el punto de acceso de nivel superior en el modelo de automatización de Visual Studio, lo que permite automatizar y extender el IDE mediante programación.  

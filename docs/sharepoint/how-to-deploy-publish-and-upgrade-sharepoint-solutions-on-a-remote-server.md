@@ -1,12 +1,10 @@
 ---
-title: "Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Cómo: Implementar, publicar y actualizar una solución de SharePoint en un servidor remoto
   Además de implementar soluciones de SharePoint en el sistema local, puede publicar soluciones de SharePoint en espacio aislado en sitios remotos o sitios locales de SharePoint. El proceso de publicación remoto copia el archivo .wsp en el servidor de SharePoint, instala la solución y, a continuación, le permite activar la solución. También puede actualizar una instalación remota de solución de SharePoint después de realizar cambios en él.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  En **el Explorador de soluciones**, abra el menú contextual para el proyecto de SharePoint en espacio aislado que desea publicar y, a continuación, elija **publicar**.  
   
-2.  En el **publicar** diálogo cuadro, elija la **publicar en un sitio de SharePoint** botón de opción y, a continuación, escriba una dirección URL para un sitio de publicación en línea, como en el ejemplo siguiente: **https:// mytestsite.SharePoint.microsoftonline.com**.  
+2.  En el **publicar** diálogo cuadro, elija la **publicar en un sitio de SharePoint** botón de opción y, a continuación, escriba una dirección URL para un sitio de publicación en línea, como en el ejemplo siguiente: **https://mytestsite.sharepoint.microsoftonline.com** .  
   
 3.  Elija la **abrir la página de la Galería de soluciones en el explorador después de publicarlo** botón de opción para ver la lista de soluciones en el **Galería de soluciones** página después de la publicación.  
   

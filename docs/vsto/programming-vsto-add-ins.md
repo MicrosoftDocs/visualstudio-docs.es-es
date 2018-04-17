@@ -1,13 +1,10 @@
 ---
 title: Programar complementos VSTO | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
 - VST.ProjectItem.AddinProject
@@ -35,14 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 192b366b4d41fed0baf0cca4af8e57fa00dc249a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-vsto-add-ins"></a>Programar complementos de VSTO
   Cuando se amplía una aplicación de Microsoft Office mediante la creación de un complemento VSTO, el código se escribe directamente en la clase `ThisAddIn` de su proyecto. Puede usar esta clase para realizar tareas tales como tener acceso al modelo de objetos de la aplicación host de Microsoft Office, personalizar la interfaz de usuario (UI) de la aplicación y exponer objetos del complemento VSTO en otras soluciones de Office.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Algunos aspectos de la escritura de código en proyectos de complementos VSTO difieren de otros tipos de proyectos de Visual Studio. Muchas de estas diferencias se deben a la forma en que los modelos de objetos de Office se exponen al código administrado. Para obtener más información, consulta [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
- Para obtener información general sobre los complementos de VSTO y otros tipos de soluciones que puede crear mediante el uso de las herramientas de desarrollo de Office en Visual Studio, vea [información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Para obtener información general sobre los complementos de VSTO y otros tipos de soluciones que puede crear mediante el uso de las herramientas de desarrollo de Office en Visual Studio, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-thisaddin-class"></a>Uso de la clase ThisAddIn  
  Puede empezar a escribir el código del complemento VSTO en la clase `ThisAddIn` . Visual Studio genera automáticamente esta clase en el archivo de código ThisAddIn.vb (en [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) o ThisAddIn.cs (en C#) de su proyecto de complemento VSTO. El elemento [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea automáticamente una instancia de esta clase cuando la aplicación de Microsoft Office carga el complemento VSTO.  

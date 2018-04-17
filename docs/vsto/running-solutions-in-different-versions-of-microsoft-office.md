@@ -1,12 +1,10 @@
 ---
 title: Ejecutar soluciones en diferentes versiones de Microsoft Office | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - multiple Office versions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f39217b456694b7e611e0386cede9fdf3c11baf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e228f407edd38e173da78c092c0cca7061a661a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-solutions-in-different-versions-of-microsoft-office"></a>Ejecutar soluciones en diferentes versiones de Microsoft Office
     
@@ -48,9 +47,9 @@ ms.lasthandoff: 01/10/2018
   
 |Edición de Visual Studio utilizada para crear la solución|Versión de Office establecida como destino por la plantilla de proyecto|Versiones de Office que pueden ejecutar la solución|Runtime requerido en el equipo del usuario final|Versión de .NET Framework necesaria en el equipo del usuario final|  
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|  
-|Visual Studio 2008 Professional<br /><br /> o<br /><br /> Visual Studio Team System 2008|Microsoft Office System 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> Microsoft Office System 2007|Visual Studio 2010 Tools para Office Runtime<sup>1</sup><br /><br /> o<br /><br /> Visual Studio Tools para Microsoft Office System (versión 3.0 Runtime)|.NET Framework 3,5|  
-|Una de las siguientes ediciones de Visual Studio 2005 con VSTO 2005 SE<sup>2</sup> instalado:<br /><br /> -Visual Studio 2005 Tools para Office<br />-Visual Studio Team System 2005<br />-Visual Studio 2005 Professional|Microsoft Office System 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (sólo de 32 bits<sup>3</sup>)<br /><br /> Microsoft Office System 2007|Runtime de Visual Studio 2005 Tools para Office Second Edition|.NET Framework 2.0, .NET Framework 3.0 o .NET Framework 3.5|  
-|Cualquiera de las siguientes ediciones de Visual Studio:<br /><br /> -Visual Studio 2008 Professional<br />-Visual Studio Team System 2008<br />-Visual Studio 2005 Tools para Office (con o sin VSTO 2005 SE<sup>2</sup> instalado)<br />-Visual Studio Team System 2005 (con o sin VSTO 2005 SE<sup>2</sup> instalado)<br />-Visual Studio 2005 Professional con VSTO 2005 SE<sup>2</sup> instalado|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (sólo de 32 bits<sup>3</sup>)<br /><br /> Microsoft Office System 2007<br /><br /> Microsoft Office 2003|Runtime de Visual Studio 2005 Tools para Office Second Edition|.NET Framework 2.0, .NET Framework 3.0 o .NET Framework 3.5|  
+|Visual Studio 2008 Professional<br /><br /> o<br /><br /> Visual Studio Team System 2008|Microsoft Office System 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> Microsoft Office System 2007|Visual Studio 2010 Tools para Office Runtime<sup>1</sup><br /><br /> o<br /><br /> Visual Studio Tools para Microsoft Office System (versión 3.0 Runtime)|.NET Framework 3,5|  
+|Una de las siguientes ediciones de Visual Studio 2005 con VSTO 2005 SE<sup>2</sup> instalado:<br /><br /> -Visual Studio 2005 Tools para Office<br />-Visual Studio Team System 2005<br />-Visual Studio 2005 Professional|Microsoft Office System 2007|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (sólo de 32 bits<sup>3</sup>)<br /><br /> Microsoft Office System 2007|Runtime de Visual Studio 2005 Tools para Office Second Edition|.NET Framework 2.0, .NET Framework 3.0 o .NET Framework 3.5|  
+|Cualquiera de las siguientes ediciones de Visual Studio:<br /><br /> -Visual Studio 2008 Professional<br />-Visual Studio Team System 2008<br />-Visual Studio 2005 Tools para Office (con o sin VSTO 2005 SE<sup>2</sup> instalado)<br />-Visual Studio Team System 2005 (con o sin VSTO 2005 SE<sup>2</sup> instalado)<br />-Visual Studio 2005 Professional con VSTO 2005 SE<sup>2</sup> instalado|Microsoft Office 2003|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (sólo de 32 bits<sup>3</sup>)<br /><br /> Microsoft Office System 2007<br /><br /> Microsoft Office 2003|Runtime de Visual Studio 2005 Tools para Office Second Edition|.NET Framework 2.0, .NET Framework 3.0 o .NET Framework 3.5|  
   
  1. Las aplicaciones [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] y [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] incluyen el Runtime de Visual Studio 2010 Tools para Office. Por lo tanto, en este escenario, estas aplicaciones utilizan siempre el Runtime de Visual Studio 2010 Tools para Office en lugar de Visual Studio Tools para Microsoft Office system (versión 3.0 Runtime). Las aplicaciones de 2007 Microsoft Office system pueden usar el Runtime de Visual Studio 2010 Tools para Office o Visual Studio Tools para Microsoft Office system (versión 3.0 Runtime).  
   

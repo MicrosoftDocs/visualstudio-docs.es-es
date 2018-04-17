@@ -1,12 +1,10 @@
 ---
-title: "Cómo: localizar una característica | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: localizar una característica | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1ddb5e705fd581ce2717539ac6daf3e9a2081f6d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 08756ce33d97e156d63fd873c63d4d6fc282285b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-localize-a-feature"></a>Cómo: Localizar una característica
   De forma predeterminada, las descripciones y títulos de estas características utilizan valores de cadena codificados de forma rígida. Para localizar el título de la característica y la descripción, reemplace las cadenas con expresiones que hacen referencia a los recursos localizados.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Para localizar el **título** y **descripción** campos de la característica, use el siguiente formato para especificar los valores en sus cuadros:  
   
-     `$Resources:`*Identificador de cadena*  
+     `$Resources:` *Identificador de cadena*  
   
      Por ejemplo, escriba $Resources:**título** en el **título de la característica** cuadro y $Resources:**descripción** en el **descripción de la característica** cuadro .  
   

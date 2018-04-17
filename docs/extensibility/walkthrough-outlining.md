@@ -1,27 +1,23 @@
 ---
-title: "Tutorial: Esquematización | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Esquematización | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8360daf5ff1e7d94d995bdbefee6228a47e47db8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-outlining"></a>Tutorial: esquematización
 Puede implementar características basadas en lenguaje como mediante la definición de los tipos de regiones de texto que desea expandir o contraer la esquematización. Puede definir las regiones en el contexto de un servicio de lenguaje, puede definir su propio tipo de contenido y la extensión de nombre de archivo y la definición de la región se aplican sólo a ese tipo o puede aplicar las definiciones de la región a un tipo de contenido existente (por ejemplo, "text"). Este tutorial muestra cómo definir y mostrar las regiones de esquematización.  

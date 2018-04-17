@@ -1,13 +1,10 @@
 ---
-title: "Escribir código en soluciones de Office | Documentos de Microsoft"
-ms.custom: 
+title: Escribir código en soluciones de Office | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Escribir código en soluciones de Office
   Hay algunos aspectos de la escritura de código en proyectos de Office que difieren de otros tipos de proyectos de Visual Studio. Muchas de estas diferencias están relacionadas con la forma en que los modelos de objetos de Office se exponen al código administrado. Otras diferencias están relacionadas con el diseño de los proyectos de Office.  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="understanding-primary-interop-assemblies"></a>Introducción a los ensamblados de interoperabilidad primarios  
  Las aplicaciones de Microsoft Office exponen gran parte de su funcionalidad a la automatización. Sin embargo, no es posible utilizar código administrado (como Visual Basic o C#) directamente para automatizarlas. Para automatizar aplicaciones de Office mediante código administrado, debe utilizar los ensamblados de interoperabilidad primarios (PIA) de Office. Los ensamblados de interoperabilidad primarios permiten que el código administrado interactúe con el modelo de objetos basado en COM de las aplicaciones de Office.  
   
- Cada aplicación de Microsoft Office tiene un PIA. Al crear un proyecto de Office en Visual Studio, se agrega automáticamente al proyecto una referencia al PIA adecuado. Para automatizar las características de otras aplicaciones de Office desde el proyecto, debe agregar manualmente una referencia al PIA apropiado. Para obtener más información, consulta [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+ Cada aplicación de Microsoft Office tiene un PIA. Al crear un proyecto de Office en Visual Studio, se agrega automáticamente al proyecto una referencia al PIA adecuado. Para automatizar las características de otras aplicaciones de Office desde el proyecto, debe agregar manualmente una referencia al PIA apropiado. Para obtener más información, consulta [Cómo: Apuntar a las aplicaciones de Office mediante los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 ### <a name="using-primary-interop-assemblies-at-design-time-and-run-time"></a>Usar ensamblados de interoperabilidad primarios en tiempo de diseño y en tiempo de ejecución  
  Para realizar la mayoría de las tareas de desarrollo, debe tener los PIA de Office instalados y registrados en la caché global de ensamblados del equipo de desarrollo. Para obtener más información, consulta [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Para obtener más información, consulte [acceso Global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Consideraciones sobre los espacios de nombres en soluciones de Office  
- No se puede cambiar el *espacio de nombres predeterminado* (o el *espacio de nombres raíz* en Visual Basic) de un proyecto de Office después de crearlo. El espacio de nombres predeterminado siempre coincidirá con el nombre que se especifica para un proyecto cuando este se crea. Si cambia el nombre del proyecto, el espacio de nombres predeterminado no cambia. Para obtener más información sobre el espacio de nombres predeterminado en los proyectos, vea [página de aplicación, Diseñador de proyectos &#40; C &#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) y [página de aplicación, Diseñador de proyectos &#40; Visual Basic &#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ No se puede cambiar el *espacio de nombres predeterminado* (o el *espacio de nombres raíz* en Visual Basic) de un proyecto de Office después de crearlo. El espacio de nombres predeterminado siempre coincidirá con el nombre que se especifica para un proyecto cuando este se crea. Si cambia el nombre del proyecto, el espacio de nombres predeterminado no cambia. Para obtener más información sobre el espacio de nombres predeterminado en los proyectos, vea [aplicación Page, Project Designer &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) y [aplicación Page, Project Designer &#40;Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Cambiar el espacio de nombres de clases de elementos host en proyectos de C#  
  Las clases de elementos host (por ejemplo, las clases `ThisAddIn`, `ThisWorkbook`o `ThisDocument` ) tienen sus propios espacios de nombres en los proyectos de Office de Visual C#. De forma predeterminada, el espacio de nombres de los elementos host del proyecto coincide con el nombre que se especifica para un proyecto cuando este se crea.  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |Característica|Descripción|Compatibilidad con Visual Basic|Compatibilidad con Visual C#|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Parámetros opcionales|Muchos métodos de Microsoft Office tienen parámetros que no son necesarios cuando se les llama. Si no se pasa ningún valor para el parámetro, se utiliza un valor predeterminado.|Visual Basic admite parámetros opcionales.|Visual C# admite parámetros opcionales en la mayoría de los casos. Para obtener más información, consulte [los parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md).|  
-|Pasar parámetros por referencia|Los parámetros opcionales de la mayoría de los ensamblados de interoperabilidad primarios de Microsoft Office se pueden pasar por valor. Sin embargo, en algunos ensamblados de interoperabilidad primarios, los parámetros opcionales que aceptan tipos de referencia deben pasarse por referencia.<br /><br /> Para obtener más información acerca de los parámetros de tipo de valor y de referencia, vea [pasar argumentos por valor y por referencia &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (en Visual Basic) y [pasar parámetros &#40; C &#35; Guía de programación de &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|No es necesario realizar ningún trabajo adicional para pasar parámetros por referencia. El compilador de Visual Basic pasa automáticamente los parámetros por referencia cuando es necesario.|En la mayoría de los casos, el compilador de Visual C# pasa automáticamente los parámetros por referencia cuando es necesario. Para obtener más información, consulte [los parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md).|  
+|Pasar parámetros por referencia|Los parámetros opcionales de la mayoría de los ensamblados de interoperabilidad primarios de Microsoft Office se pueden pasar por valor. Sin embargo, en algunos ensamblados de interoperabilidad primarios, los parámetros opcionales que aceptan tipos de referencia deben pasarse por referencia.<br /><br /> Para obtener más información acerca de los parámetros de tipo de valor y de referencia, vea [pasar argumentos por valor y por referencia &#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (en Visual Basic) y [pasar parámetros &#40;C&#35; Guía de programación de&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|No es necesario realizar ningún trabajo adicional para pasar parámetros por referencia. El compilador de Visual Basic pasa automáticamente los parámetros por referencia cuando es necesario.|En la mayoría de los casos, el compilador de Visual C# pasa automáticamente los parámetros por referencia cuando es necesario. Para obtener más información, consulte [los parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Propiedades parametrizadas|Algunas propiedades aceptan parámetros y actúan como funciones de solo lectura.|Visual Basic admite propiedades que aceptan parámetros.|Visual C# admite propiedades que aceptan parámetros.|  
 |Enlace en tiempo de ejecución|El enlace en tiempo de ejecución implica determinar las propiedades de objetos en tiempo de ejecución, en lugar de convertir variables al tipo de objeto en tiempo de diseño.|Visual Basic realiza el enlace en tiempo de ejecución cuando **Option Strict** está desactivado. Cuando **Option Strict** está activado, debe convertir explícitamente los objetos y usar los tipos del espacio de nombres <xref:System.Reflection> para tener acceso a los miembros enlazados en tiempo de ejecución. Para obtener más información, consulta [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|Visual C# realiza el enlace en tiempo de ejecución en proyectos que tienen como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Para obtener más información, consulta [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,13 +116,13 @@ ms.lasthandoff: 01/10/2018
   
 |Característica|Descripción|Compatibilidad con Visual Basic y Visual C#|  
 |-------------|-----------------|-----------------------------------------|  
-|Índices de matriz|El límite de matriz inferior de las colecciones de aplicaciones de Microsoft Office comienza por 1. Visual Basic y Visual C# usan matrices basadas en 0. Para obtener más información, vea [matrices &#40; C &#35; Guía de programación de &#41; ](/dotnet/csharp/programming-guide/arrays/index) y [matrices en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Para obtener acceso al primer elemento de una colección en el modelo de objetos de una aplicación de Microsoft Office, utilice el índice 1 en lugar de 0.|  
+|Índices de matriz|El límite de matriz inferior de las colecciones de aplicaciones de Microsoft Office comienza por 1. Visual Basic y Visual C# usan matrices basadas en 0. Para obtener más información, consulte [matrices &#40;C&#35; Guía de programación de&#41; ](/dotnet/csharp/programming-guide/arrays/index) y [matrices en Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Para obtener acceso al primer elemento de una colección en el modelo de objetos de una aplicación de Microsoft Office, utilice el índice 1 en lugar de 0.|  
   
 ## <a name="see-also"></a>Vea también  
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Acceso global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Eventos en proyectos de Office](../vsto/events-in-office-projects.md)   
- [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [Cómo: Apuntar a las aplicaciones de Office mediante los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
  [Cómo: crear controladores de eventos en proyectos de Office](../vsto/how-to-create-event-handlers-in-office-projects.md)   
  [Enlace tardío en soluciones de Office](../vsto/late-binding-in-office-solutions.md)   
  [Desarrollo en colaboración de las soluciones de Office](../vsto/collaborative-development-of-office-solutions.md)  

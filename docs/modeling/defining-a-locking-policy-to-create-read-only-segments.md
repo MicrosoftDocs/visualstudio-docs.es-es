@@ -1,21 +1,19 @@
 ---
 title: Definir una directiva de bloqueo para crear segmentos de solo lectura | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dc7e620c04e31a063bbe8fada68527d391f0a903
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 75fe3205f1b43cb21fa78976ac2547ef3bd2fdfc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad de los [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado permite que un programa parte de bloqueo o la totalidad de un modelo de lenguaje específico de dominio (DSL) para que se puede leer pero no cambia. Se usa esta opción de solo lectura, por ejemplo, para que un usuario puede preguntar a compañeros para agregar anotaciones y revisar un modelo DSL pero puede no puedan cambiar el original.  
@@ -70,7 +68,7 @@ partition.SetLocks(Locks.Delete);
 -   No permitir la adición y eliminación de elementos y relaciones de determinadas clases, pero permitir que los cambios de propiedad. Esto proporciona a los usuarios un formulario fijo en el que pueden rellenar las propiedades.  
   
 ## <a name="lock-values"></a>Valores de bloqueo  
- Los bloqueos se pueden establecer en un almacén, partición o ModelElement individual. Locks es una `Flags` enumeración: puede combinar sus valores usando ' &#124;'.  
+ Los bloqueos se pueden establecer en un almacén, partición o ModelElement individual. Locks es una `Flags` enumeración: puede combinar sus valores usando '&#124;'.  
   
 -   Bloqueos de una ModelElement siempre incluyen los bloqueos de su partición.  
   
@@ -103,7 +101,7 @@ partition.SetLocks(Locks.Delete);
 -   Agregar esta clase a los servicios que están disponibles a través de la DocData del ADSL.  
   
 ### <a name="to-define-a-locking-policy"></a>Para definir una directiva de bloqueo  
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>tiene la siguiente definición:  
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> tiene la siguiente definición:  
   
 ```  
 public interface ILockingPolicy  
@@ -146,7 +144,7 @@ namespace Company.YourDsl.DslPackage // Change
   
 ```  
   
- Para asegurarse de que los usuarios siempre pueden eliminar elementos, incluso si llama a otro código`SetLocks(Lock.Delete):`  
+ Para asegurarse de que los usuarios siempre pueden eliminar elementos, incluso si llama a otro código `SetLocks(Lock.Delete):`  
   
  `return proposedLocks & (Locks.All ^ Locks.Delete);`  
   

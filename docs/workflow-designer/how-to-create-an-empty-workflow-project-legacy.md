@@ -1,5 +1,5 @@
 ---
-title: "Cómo: crear un proyecto de flujo de trabajo vacío (heredado) | Documentos de Microsoft"
+title: 'Cómo: crear un proyecto de flujo de trabajo vacío (heredado) | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: f81b9cf2-9adb-47a2-936b-cb1851614e19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce595536d1e26d029556ca03a26428f6b425fff
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 961425eb7f3b4d412ddcb572bc21a91bdde6e957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Cómo: Crear un proyecto de flujo de trabajo vacío (Heredado)
 Siga estos pasos para crear un proyecto de flujo de trabajo vacío mediante el Diseñador de flujo de trabajo de Windows heredado proporcionado por [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -25,7 +25,7 @@ Siga estos pasos para crear un proyecto de flujo de trabajo vacío mediante el D
 
 1.  Inicie Visual Studio.
 
-2.  En el **archivo** menú, elija **New**y, a continuación, seleccione **proyecto**.
+2.  En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 

@@ -1,13 +1,10 @@
 ---
-title: "Cómo: agregar una entrada mediante programación a los contactos de Outlook | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: agregar una entrada mediante programación a los contactos de Outlook | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6197970a4d3ff8d1f1cdd2e949d816d5eb4d6338
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: dcaea2eb4141117ee55f04c1c54fd19dc8cb3e4e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Cómo: Agregar una entrada a los contactos de Outlook mediante programación
   Este ejemplo crea un nuevo contacto y escribe datos en el nuevo contacto.  

@@ -1,25 +1,23 @@
 ---
-title: "¿Qué &#39; s nuevo en el depurador XSLT | Documentos de Microsoft"
-ms.custom: 
+title: ¿Qué&#39;s nuevo en el depurador XSLT | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 07ddc47e-5941-41f8-bd44-d993c2d054ed
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e0573043b15e49cce414a48626e3c3c6ffc31c06
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: aee1c64f022927a1a595609fdecfebacc76aca6b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-the-xslt-debugger"></a>¿Qué &#39; s nuevo en el depurador XSLT
+# <a name="what39s-new-in-the-xslt-debugger"></a>¿Qué&#39;s nuevo en el depurador XSLT
 Las siguientes características son nuevas en Visual Studio 2010.  
   
 ## <a name="xslt-profiler"></a>Generador de perfiles XSLT  

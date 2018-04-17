@@ -1,5 +1,5 @@
 ---
-title: "Métodos abreviados en el Diseñador de flujo de trabajo de teclado | Documentos de Microsoft"
+title: Métodos abreviados en el Diseñador de flujo de trabajo de teclado | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90db2c7568190d5d76e7ca1d64d5f4a140308d42
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 29d96eb6d738fbf23749bec601743002a451ad06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
 

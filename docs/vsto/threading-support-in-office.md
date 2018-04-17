@@ -1,12 +1,10 @@
 ---
 title: Compatibilidad del subprocesamiento en Office | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], threading support
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3383e3767c97efad9177f0e361524137ea5d66a8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 473287ed42fb2e4978a0f92717a01fdf31e28ad4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="threading-support-in-office"></a>Compatibilidad del subprocesamiento en Office
   Este tema proporciona información sobre cómo se admite el subprocesamiento en el modelo de objetos de Microsoft Office. El modelo de objetos de Office no es seguro para subprocesos, pero es posible trabajar con varios subprocesos en una solución de Office. Las aplicaciones de Office son servidores de modelo de objetos componentes (COM). COM permite a los clientes llamar a servidores COM en subprocesos arbitrarios. Para los servidores COM que no son seguros para subprocesos, COM proporciona un mecanismo para serializar llamadas simultáneas para que sólo un subproceso lógico que se ejecuta en el servidor en cualquier momento. Este mecanismo se conoce como el modelo de contenedor uniproceso (STA). Porque las llamadas se serializan, los llamadores pueden quedar bloqueados durante períodos de tiempo mientras el servidor está ocupado o controlando otras llamadas en un subproceso en segundo plano.  

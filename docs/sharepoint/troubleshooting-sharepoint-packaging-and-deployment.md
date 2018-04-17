@@ -1,13 +1,10 @@
 ---
-title: "Solución de problemas de SharePoint de empaquetado e implementación | Documentos de Microsoft"
-ms.custom: 
+title: Solución de problemas de SharePoint de empaquetado e implementación | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
 - VS.SharePointTools.Project.PackageRetraction
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b30c17b9b20c59085fc8a684e3b9735daa0e019c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Solucionar problemas de empaquetado e implementación de SharePoint
   En este tema se tratan diversos problemas que pueden producirse al empaquetar e implementar soluciones de SharePoint.
@@ -42,7 +39,7 @@ ms.lasthandoff: 03/02/2018
  Si desea realizar un diagnóstico entre Visual Studio, SharePoint y otras capas, puede usar la clave del Registro EnableDiagnostics para ver el seguimiento de la pila. Para obtener más información, consulte [depurar soluciones de SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="adding-project-output-to-the-solution-package"></a>Agregar la salida del proyecto al paquete de solución
- Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda que realice la **cualquier CPU** plataforma de destino para los ensamblados que desea implementar en un servidor de SharePoint. Para obtener más información, vea [página compilación, Diseñador de proyectos &#40; Visual Basic &#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) y [avanzada de cuadro de diálogo de configuración de compilador &#40; Visual Basic &#41; ](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Puede agregar la salida del proyecto a un paquete a través del Diseñador de paquetes. Sin embargo, cuando agregue la salida del proyecto, asegúrese de que la plataforma del proyecto coincide con la plataforma de la solución de SharePoint. Se recomienda que realice la **cualquier CPU** plataforma de destino para los ensamblados que desea implementar en un servidor de SharePoint. Para obtener más información, consulte [página compilación, Diseñador de proyectos &#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) y [cuadro de diálogo de configuración de compilador avanzada &#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
 
 ## <a name="validation-warnings-and-errors"></a>Errores y advertencias de validación
  Las herramientas de desarrollo de SharePoint de Visual Studio realizan pasos de validación para comprobar que el paquete de solución se crea de forma correcta. También puede crear pasos de validación personalizados para sus características y paquetes. Para obtener más información, consulte [Cómo: Create Custom Feature y reglas de validación de paquetes para soluciones de SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).

@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865b8adf9316851a29e6cf76d0fc308021e63a4c
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 524b589e7da8da02b2fafcaed5b10f4b754d2b58
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Ventanas de flujo de trabajo de Visual Studio (Heredado)
 El [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado proporcionado por [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] se puede usar para tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. El diseñador heredado es un diseñador visual que puede usar para crear un flujo de trabajo. Puede arrastrar las actividades de la **cuadro de herramientas** al diseño de la superficie y, a continuación, configurarlas. Como ventana del editor de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ocupa el área de la ventana principal usada por otras ventanas del editor de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El nombre del flujo de trabajo se muestra en la barra de título de la ventana de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

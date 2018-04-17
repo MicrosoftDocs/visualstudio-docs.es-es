@@ -1,13 +1,10 @@
 ---
-title: "Cómo: firmar soluciones de Office | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: firmar soluciones de Office | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - signing manifests [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2883f75c6ca75e1875621f9c6779db09722d6945
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 31b5e1fc3c78aecf518af0941a4a2dd0ab7e57c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-sign-office-solutions"></a>Cómo: Firmar soluciones de Office
   Si se registra una solución, puede conceder confianza a la solución utilizando el certificado como prueba. Puede utilizar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones de directiva de seguridad adicional.  
@@ -40,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Para firmar una solución de Office mediante un certificado  
   
-1.  En el **proyecto** menú, haga clic en *nombresolución***propiedades**.  
+1.  En el **proyecto** menú, haga clic en * SolutionName ***propiedades**.  
   
 2.  Haga clic en la pestaña **Firma**.  
   

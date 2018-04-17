@@ -1,13 +1,10 @@
 ---
 title: 'Tutorial: Enlazar controles de contenido a elementos XML personalizados | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Tutorial: Enlazar controles de contenido a elementos XML personalizados
   Este tutorial muestra cómo enlazar controles de contenido en una personalización de nivel de documento para Word a datos XML que se almacenan en el documento.  
@@ -66,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Crear un proyecto de documento de Word con el nombre **EmployeeControls**. Cree un nuevo documento para la solución. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre el nuevo documento de Word en el diseñador y agrega el **EmployeeControls** proyecto al **el Explorador de soluciones**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre el nuevo documento de Word en el diseñador y agrega el **EmployeeControls** proyecto al **el Explorador de soluciones**.  
   
 ## <a name="adding-content-controls-to-the-document"></a>Agregar controles de contenido al documento  
  Cree una tabla que contenga tres tipos diferentes de controles de contenido donde el usuario pueda ver o modificar la información sobre un empleado.  
@@ -326,8 +323,8 @@ ms.lasthandoff: 01/10/2018
  [Controles de contenido](../vsto/content-controls.md)   
  [Cómo: agregar controles de contenido a documentos de Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [Cómo: proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+ [Información general sobre elementos y controles Host](../vsto/host-items-and-host-controls-overview.md)   
+ [Limitaciones de programación de elementos y controles Host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

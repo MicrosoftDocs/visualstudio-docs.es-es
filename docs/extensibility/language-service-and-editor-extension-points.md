@@ -2,26 +2,22 @@
 title: Servicio de lenguaje y puntos de extensión del Editor | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-caps.latest.revision: 33
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3c253ba52da1fd6bb9133e44ba6858e8f1a4151
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="language-service-and-editor-extension-points"></a>Servicio de lenguaje y puntos de extensión del Editor
 El editor proporciona puntos de extensión que puede extender como componentes de Managed Extensibility Framework (MEF), incluidas las características de servicio de lenguaje mayoría. Estas son las categorías de punto de extensión principal:  
@@ -47,9 +43,9 @@ El editor proporciona puntos de extensión que puede extender como componentes d
 ## <a name="extending-content-types"></a>Extender tipos de contenido  
  Tipos de contenido son las definiciones de los tipos de texto que se administra mediante el editor, por ejemplo, "text", "código" o "CSharp". Definir un nuevo tipo de contenido al declarar una variable del tipo <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> y que proporciona el nuevo tipo de contenido de un nombre único. Para registrar el tipo de contenido con el editor, exportarlo junto con los siguientes atributos:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>es el nombre del tipo de contenido.  
+-   <xref:Microsoft.VisualStudio.Utilities.NameAttribute> es el nombre del tipo de contenido.  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>es el nombre del tipo de contenido que se deriva este tipo de contenido. Un tipo de contenido puede heredar de varios otros tipos de contenido.  
+-   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> es el nombre del tipo de contenido que se deriva este tipo de contenido. Un tipo de contenido puede heredar de varios otros tipos de contenido.  
   
  Dado que la <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> es una clase sealed, puede exportarlo con ningún parámetro de tipo.  
   
@@ -298,7 +294,7 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
   
 -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: Esto hace que el formato que aparecen en la interfaz de usuario  
   
- En el constructor, defina el nombre para mostrar y la apariencia de la etiqueta. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A>define el color de relleno, y <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> define el color del borde. El <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> es el nombre de la definición de formato localizable.  
+ En el constructor, defina el nombre para mostrar y la apariencia de la etiqueta. <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> define el color de relleno, y <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A> define el color del borde. El <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A> es el nombre de la definición de formato localizable.  
   
  El siguiente es un ejemplo de una definición de formato:  
   
@@ -346,7 +342,7 @@ internal AdornmentLayerDefinition testLayerDefinition;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: el tipo de contenido (por ejemplo, "text" o "code") para el que el elemento de gráfico es válido.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: el tipo de vista de texto para el que este elemento de gráfico es válido. La clase <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> tiene el conjunto de roles de la vista de texto predefinido. Por ejemplo, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> se utiliza principalmente para las vistas de texto de archivos. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>se utiliza para las vistas de texto que un usuario puede editar o navegar mediante un mouse y teclado. Ejemplos de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> vistas son la vista de editor de texto y el **salida** ventana.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: el tipo de vista de texto para el que este elemento de gráfico es válido. La clase <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> tiene el conjunto de roles de la vista de texto predefinido. Por ejemplo, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> se utiliza principalmente para las vistas de texto de archivos. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> se utiliza para las vistas de texto que un usuario puede editar o navegar mediante un mouse y teclado. Ejemplos de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> vistas son la vista de editor de texto y el **salida** ventana.  
   
  El ejemplo siguiente muestra los atributos de exportación en el proveedor de elementos gráficos.  
   
@@ -374,7 +370,7 @@ internal AdornmentLayerDefinition testAdornmentLayer;
   
 -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: el tipo de contenido (por ejemplo, "text" o "code") para el que el elemento de gráfico es válido.  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: el tipo de vista de texto para el que este elemento gráfico o la etiqueta es válida. La clase <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> tiene el conjunto de roles de la vista de texto predefinido. Por ejemplo, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> se utiliza principalmente para las vistas de texto de archivos. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>se utiliza para las vistas de texto que un usuario puede editar o navegar mediante un mouse y teclado. Ejemplos de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> vistas son la vista de editor de texto y el **salida** ventana.  
+-   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>: el tipo de vista de texto para el que este elemento gráfico o la etiqueta es válida. La clase <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles> tiene el conjunto de roles de la vista de texto predefinido. Por ejemplo, <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> se utiliza principalmente para las vistas de texto de archivos. <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> se utiliza para las vistas de texto que un usuario puede editar o navegar mediante un mouse y teclado. Ejemplos de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> vistas son la vista de editor de texto y el **salida** ventana.  
   
 -   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>: el tipo de etiqueta o elementos gráficos que haya definido. Debe agregar un segundo <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> para <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>.  
   
@@ -514,7 +510,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource>está desusado en favor de <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> está desusado en favor de <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Además, debe implementar un proveedor de la misma clase:  
   
@@ -527,7 +523,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 -   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider>está desusado en favor de <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+>  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> está desusado en favor de <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Debe exportar el proveedor junto con los siguientes atributos:  
   

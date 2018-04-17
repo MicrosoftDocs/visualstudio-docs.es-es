@@ -1,13 +1,10 @@
 ---
 title: Actualizar proyectos de Excel y Word para migrarlos a .NET Framework 4 o .NET Framework 4.5 | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 974071c68edd685bd23b29d6d37c520f50a78078
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8a1c7022af6a02a036476e55bdfc57becbd9d7f5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar proyectos de Excel y Word para migrarlos a .NET Framework 4 o .NET Framework 4.5
   Si tiene un proyecto de Word o Excel que use cualquiera de las siguientes características, debe modificar el código si se cambia el marco de trabajo de destino a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior:  
@@ -125,7 +122,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
         Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);  
     ```  
   
- Para obtener más información, consulta [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Para obtener más información, consulta [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 ##  <a name="generatedclasses"></a> Actualizar código que use instancias de las clases generadas en proyectos de nivel de documento  
  En los proyectos de nivel de documento que tengan como destino .NET Framework 3.5, las clases generadas en los proyectos se derivan de las siguientes clases en el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]:  
@@ -199,7 +196,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  En los proyectos que tienen como destino la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, estos métodos son métodos de extensión que están disponibles en la propiedad de los controles. Para usar estos métodos de extensión, el archivo de código en el que usa los métodos debe tener una instrucción **using** o **Imports** para el espacio de nombres <xref:Microsoft.Office.Tools.Excel> o <xref:Microsoft.Office.Tools.Word> . Esta instrucción se genera automáticamente en los nuevos proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior. Sin embargo, esta instrucción no se agrega automáticamente en los proyectos que tienen como destino la versión .NET Framework 3.5, por lo que debe agregarla al cambiar el destino del proyecto.  
   
- Para obtener más información, consulta [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Para obtener más información, consulta [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ##  <a name="ccevents"></a> Actualizar el código que controla los eventos de control de contenido de Word  
  En los proyectos que tengan como destino .NET Framework 3.5, el delegado <xref:System.EventHandler%601> genérico controla los eventos de los controles de contenido de Word. En los proyectos que tengan como destino [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, otros delegados controlan estos eventos.  
@@ -220,7 +217,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
   
  En los proyectos que tengan como destino la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o posterior, estas clases se han reemplazado por las interfaces <xref:Microsoft.Office.Tools.Excel.ControlSite> y <xref:Microsoft.Office.Tools.Word.ControlSite> . Debe modificar el código que hace referencia a Microsoft.Office.Tools.Word.OLEControl y Microsoft.Office.Tools.Excel.OLEObject en su lugar hacer referencia a <xref:Microsoft.Office.Tools.Excel.ControlSite> y <xref:Microsoft.Office.Tools.Word.ControlSite>. Salvo los nuevos nombres, estos controles se comportan de la misma manera que lo hacen en los proyectos que tienen como destino .NET Framework 3.5.  
   
- Para obtener más información, consulta [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Para obtener más información, consulta [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ##  <a name="itemproperty"></a> Actualizar código que usa la propiedad Controls.Item(Object)  
  En los proyectos que tienen como destino .NET Framework 3.5, puede usar la propiedad Item (Object) de la colección Microsoft.Office.Tools.Word.Document.Controls o Microsoft.Office.Tools.Excel.Worksheet.Controls para determinar si un documento u hoja de cálculo tiene un control especificado.  
@@ -235,7 +232,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
  Ahora, en los proyectos que tienen como destino la versión [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior, estos tipos de colección son interfaces que no se derivan de <xref:System.Collections.CollectionBase>. Algunos miembros ya no están disponibles en estos tipos de colección, como <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>y <xref:System.Collections.CollectionBase.InnerList%2A>.  
   
 ## <a name="see-also"></a>Vea también  
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migración de soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Controles de contenido](../vsto/content-controls.md)   
  [Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)   

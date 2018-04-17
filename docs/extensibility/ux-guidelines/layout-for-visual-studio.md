@@ -1,28 +1,26 @@
 ---
-title: "Diseño para Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: Diseño para Visual Studio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Diseño para Visual Studio
 La mayoría de los cuadros de diálogo de Visual Studio están [diseño del cuadro de diálogo de utilidad](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que son el unthemed dicho seguimiento estándar de cuadros de diálogo [principios de diseño del cuadro de diálogo de escritorio de Windows](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Cuando Visual Studio se desplace a actualizar su interfaz de usuario, algunos de los cuadros de diálogo más importancia tienen un nuevo diseño que ellos establece experiencias como definición de producto. Estos [diseño del cuadro de diálogo con temas](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) tienen un aspecto con temas.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Diseño del cuadro de diálogo de utilidad  
+##  <a name="BKMK_UtilityDialogLayout"></a> Diseño del cuadro de diálogo de utilidad  
   
 -   Todos los controles en un cuadro de diálogo de utilidad deben empezar en la parte superior izquierda y flujo hacia abajo.  
   
@@ -104,7 +102,7 @@ La mayoría de los cuadros de diálogo de Visual Studio están [diseño del cuad
   
 -   La longitud de línea debe ser un valor de ancho cómodo para un usuario analizar y leer. Un cuadro de diálogo intermedio debe ser no más de 550 píxeles de ancho.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>Botones de comando interiores  
+####  <a name="BKMK_InteriorCommandButtons"></a> Botones de comando interiores  
  En los cuadros de diálogo más complejos, un control interno podría tener sus propios botones relacionados, lo que podrían afectar a donde se encuentran los botones de confirmación del cuadro de diálogo.  
   
 -   Use una alineación vertical (columna) del interior botones cuando **Aceptar**/**cancelar** se orienta horizontalmente en la esquina inferior derecha.  
@@ -124,7 +122,7 @@ La mayoría de los cuadros de diálogo de Visual Studio están [diseño del cuad
 #### <a name="browse-button"></a>[Examinar...] botón  
  **[Examinar...]**  botones que siguen un cuadro de texto deben deletrear "Examinar..." en su totalidad, incluidos los puntos suspensivos. Si hay una estrecha espacio o hay varios **[Examinar...]**  botones en la pantalla, el botón se pueden reducir a solo los puntos suspensivos.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Diseño del cuadro de diálogo con temas  
+##  <a name="BKMK_ThemedDialogLayout"></a> Diseño del cuadro de diálogo con temas  
  Los cuadros de diálogo con temas en Visual Studio tienen un aspecto más claro y ofrecen más espacio en blanco. Tipografía proporciona más énfasis e interés, ya que proporcionan más abierto interlineado y una variedad de tamaños de fuente y pesos. Siempre que sea posible, barras de título y chrome se han reducido o eliminado. El diseño de estos cuadros de diálogo debe seguir este patrón básico:  
   
 1.  El fondo del cuadro de diálogo es blanco.  

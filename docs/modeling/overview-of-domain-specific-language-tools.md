@@ -1,23 +1,21 @@
 ---
-title: "Información general sobre las herramientas de lenguaje específico de dominio | Documentos de Microsoft"
-ms.custom: 
+title: Información general sobre las herramientas de lenguaje específico de dominio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 89ff0565bf33936f15c18c0964fc9fb2f64ab9b8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd105ae8553d39a6fe1a1bd23136d5027da17ec3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
 Herramientas de lenguajes específicos de dominio (herramientas ADSL), que están hospedadas en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], permiten diseñar un lenguaje específico de dominio y, a continuación, generar todo lo que los usuarios deben tener para crear modelos que se basan en el lenguaje.  
@@ -53,7 +51,7 @@ Herramientas de lenguajes específicos de dominio (herramientas ADSL), que está
   
  El asistente crea un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución que tenga los siguientes proyectos:  
   
--   Dsl  
+-   DSL  
   
      El proyecto de Dsl define el lenguaje específico de dominio y sus herramientas de edición y procesamiento.  
   

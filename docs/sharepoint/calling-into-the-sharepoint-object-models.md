@@ -1,12 +1,10 @@
 ---
 title: Llamar a los modelos de objetos de SharePoint | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,18 +15,19 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cbb1b8f573c6dd28280e30fd5602dff2dc30ae02
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3795b7c920415ee733e08132234de381cf610aba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calling-into-the-sharepoint-object-models"></a>Llamar a los modelos de objetos de SharePoint
   Al crear extensiones para las herramientas de SharePoint en Visual Studio, es posible que deba llamar APIs SharePoint para realizar ciertas tareas. Por ejemplo, si crea un paso de implementación personalizado para proyectos de SharePoint, es posible que deba llamar SharePoint APIs para llevar a cabo algunas de las tareas para implementar soluciones.  
   
- [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]y [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] proporcionan dos modelos de objetos diferentes que puede usar en las extensiones de herramientas de SharePoint: un modelo de objetos de servidor y un modelo de objetos de cliente. Cada modelo de objetos tiene ventajas y desventajas en el contexto de las extensiones de herramientas de SharePoint.  
+ [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] y [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] proporcionan dos modelos de objetos diferentes que puede usar en las extensiones de herramientas de SharePoint: un modelo de objetos de servidor y un modelo de objetos de cliente. Cada modelo de objetos tiene ventajas y desventajas en el contexto de las extensiones de herramientas de SharePoint.  
   
  Para obtener información general de los modelos de objetos de SharePoint, vea [información general de la programación de modelo de herramientas de extensiones de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   

@@ -1,5 +1,5 @@
 ---
-title: "Examinar y seleccionar un cuadro de diálogo de tipo de .NET (heredado) | Documentos de Microsoft"
+title: Examinar y seleccionar un cuadro de diálogo de tipo de .NET (heredado) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 1e66c9bc-94b2-46e2-bedf-871752e5f917
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3cdc5d3928cd436d86d529e667f99251e1e7cc95
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a283caa664bb208613a695cb4afb8873caba3645
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET (Heredado)
 Este tema se describe cómo utilizar el **examinar y seleccionar un tipo .NET** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

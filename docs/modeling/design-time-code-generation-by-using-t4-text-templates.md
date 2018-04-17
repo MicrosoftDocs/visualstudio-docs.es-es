@@ -1,10 +1,8 @@
 ---
-title: "Generación de código en tiempo de diseño mediante el uso de plantillas de texto T4 | Documentos de Microsoft"
-ms.custom: 
+title: Generación de código en tiempo de diseño mediante el uso de plantillas de texto T4 | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff7f01274b47b8c7c333aedbbb6dc646e14b89d3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: fea82e3343016ab4221a482e2c7975a6d39c1afb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 Las plantillas de texto T4 en tiempo de diseño permiten generar código de programa y otros archivos de su proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de su aplicación.  
@@ -294,7 +292,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().  
   
-##  <a name="Regenerating"></a>Volver a generar el código automáticamente  
+##  <a name="Regenerating"></a> Volver a generar el código automáticamente  
  Normalmente, se generan varios archivos de una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con un único modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.  
   
  Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **generar** menú.  
@@ -322,7 +320,7 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a>Convertir un archivo existente en una plantilla  
+##  <a name="Converting"></a> Convertir un archivo existente en una plantilla  
  Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. Primero cree un archivo normal como prototipo, como un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de archivos y, a continuación, agregue gradualmente código de generación que modifique el archivo resultante.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño  

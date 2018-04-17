@@ -1,23 +1,21 @@
 ---
 title: Desarrollar pruebas en un modelo | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.  
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  Desde el punto de vista de las pruebas, un modelo de requisitos puede considerarse como una forma abreviada de realizar pruebas. Por ello, es importante mantener la relación entre las pruebas y el modelo a lo largo del proyecto.  
   
-##  <a name="Attaching"></a>Adjuntar casos de prueba a elementos del modelo  
+##  <a name="Attaching"></a> Adjuntar casos de prueba a elementos del modelo  
  Si el proyecto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], puede vincular las pruebas a los elementos del modelo. Esto le permite buscar rápidamente las pruebas afectadas por un cambio en los requisitos y le ayuda a controlar en qué medida se ha completado un requisito.  
   
  Puede vincular las pruebas a todos los tipos de elemento. A continuación se muestran algunos ejemplos:  

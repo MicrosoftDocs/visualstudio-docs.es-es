@@ -1,5 +1,5 @@
 ---
-title: "Mensajes de error en el Diseñador de flujo de trabajo | Documentos de Microsoft"
+title: Mensajes de error en el Diseñador de flujo de trabajo | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ f1_keywords:
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 748893d7e08ca72140fad31c4546f4166636b8de
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f4deecb6617e85263abc5eaad11dd829abecb05d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensajes de error en el Diseñador de flujo de trabajo
 En este tema se describe los tipos de mensajes de error que se pueden encontrar al trabajar con el Diseñador de flujo de trabajo de Windows.

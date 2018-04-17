@@ -1,25 +1,22 @@
 ---
-title: "Escenarios de instalación de VSPackage | Documentos de Microsoft"
-ms.custom: 
+title: Escenarios de instalación de VSPackage | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 452a5cfee55bd314bb062d2d1ddd8496593190fa
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b58400330bb2032354d28a7b76729a5d7f85fd3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vspackage-setup-scenarios"></a>Escenarios de instalación de VSPackage
 

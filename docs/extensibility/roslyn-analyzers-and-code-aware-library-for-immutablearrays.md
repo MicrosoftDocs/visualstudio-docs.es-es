@@ -1,23 +1,21 @@
 ---
-title: "Analizadores de Roslyn y la biblioteca de código para ImmutableArrays | Documentos de Microsoft"
-ms.custom: 
+title: Analizadores de Roslyn y la biblioteca de código para ImmutableArrays | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6870f1733d507f2cf46d196b2bba027b998b5ba4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6ebafdd09e6fca0e1266c4eb03c4f6cb66554d06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y la biblioteca de código para ImmutableArrays
 
@@ -28,8 +26,8 @@ El [.NET Compiler Platform](https://github.com/dotnet/roslyn) («Roslyn») le ay
 Necesita lo siguiente para compilar este ejemplo:
 
 * Visual Studio 2015 (no una versión Express Edition) o una versión posterior.  Puede usar gratuitamente [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
-* [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  También puede, al instalar Visual Studio, comprobar herramientas de extensibilidad de Visual Studio en herramientas comunes para instalar el SDK al mismo tiempo.  Si ya ha instalado Visual Studio, también puede instalar este SDK, vaya al menú principal **archivo &#124; Nuevo &#124; Proyecto...** , elija C# en el panel de navegación izquierdo y, a continuación, elija extensibilidad.  Cuando se elige el "**instalar las herramientas de extensibilidad de Visual Studio**" plantilla de proyecto de la ruta de navegación, le pide que descargue e instale el SDK.
-* [.NET compiler Platform («Roslyn») SDK](http://aka.ms/roslynsdktemplates).  También puede instalar este SDK, vaya al menú principal **archivo &#124; Nuevo &#124; Proyecto...** , eligiendo la opción **C#** en el panel de navegación izquierdo y, a continuación, elija **extensibilidad**.  Cuando se elige "**descargar el SDK de plataforma de compilador de .NET**" plantilla de proyecto de la ruta de navegación, le pide que descargue e instale el SDK.  Este SDK incluye la [Roslyn sintaxis visualizador](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Esta herramienta muy útil le ayuda a descubrir qué tipos de modelo de código debe buscar en el analizador.  Las llamadas de la infraestructura de analizador en el código para tipos de modelo de código concretos, por lo que el código solo se ejecuta cuando sea necesario y pueda centrarse únicamente en el análisis de código relevante.
+* [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  También puede, al instalar Visual Studio, comprobar herramientas de extensibilidad de Visual Studio en herramientas comunes para instalar el SDK al mismo tiempo.  Si ya ha instalado Visual Studio, también puede instalar este SDK, vaya al menú principal **archivo &#124; New &#124;proyecto...** , elija C# en el panel de navegación izquierdo y, a continuación, elija extensibilidad.  Cuando se elige el "**instalar las herramientas de extensibilidad de Visual Studio**" plantilla de proyecto de la ruta de navegación, le pide que descargue e instale el SDK.
+* [.NET compiler Platform («Roslyn») SDK](http://aka.ms/roslynsdktemplates).  También puede instalar este SDK, vaya al menú principal **archivo &#124; New &#124; proyecto...** , eligiendo la opción **C#** en el panel de navegación izquierdo y, a continuación, elija **extensibilidad**.  Cuando se elige "**descargar el SDK de plataforma de compilador de .NET**" plantilla de proyecto de la ruta de navegación, le pide que descargue e instale el SDK.  Este SDK incluye la [Roslyn sintaxis visualizador](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Esta herramienta muy útil le ayuda a descubrir qué tipos de modelo de código debe buscar en el analizador.  Las llamadas de la infraestructura de analizador en el código para tipos de modelo de código concretos, por lo que el código solo se ejecuta cuando sea necesario y pueda centrarse únicamente en el análisis de código relevante.
 
 ## <a name="whats-the-problem"></a>¿Cuál es el problema?
 
@@ -59,13 +57,13 @@ El error con inicializadores de colección se produce porque el método Immutabl
 
 ## <a name="finding-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Buscar tipos de nodos de la sintaxis pertinente para desencadenar el analizador
 
- Para empezar a generar el analizador, en primer lugar averiguar qué tipo de SyntaxNode necesita buscar. Iniciará el visualizador de sintaxis en el menú **vista &#124; Otras ventanas &#124; Visualizador de sintaxis Roslyn**.
+ Para empezar a generar el analizador, en primer lugar averiguar qué tipo de SyntaxNode necesita buscar. Iniciará el visualizador de sintaxis en el menú **vista &#124; otras ventanas &#124; Roslyn sintaxis visualizador**.
 
 Colocar el símbolo de intercalación del editor en la línea que declara `b1`.  Verá el visualizador de sintaxis muestra que se encuentra en un `LocalDeclarationStatement` nodo del árbol de sintaxis.  Este nodo tiene un `VariableDeclaration`, que a su vez tiene una `VariableDeclarator`, que a su vez tiene una `EqualsValueClause`y por último, hay un `ObjectCreationExpression`.  Cuando hace clic en el árbol de sintaxis visualizador de nodos, la sintaxis en la ventana del editor se resaltan para mostrar el código representado por ese nodo.  Los nombres de los tipos de sub SyntaxNode coinciden con los nombres utilizados en la gramática de C#.
 
 ## <a name="creating-the-analyzer-project"></a>Crear el proyecto de Analyzer
 
-En el menú principal seleccione **archivo &#124; Nuevo &#124; Proyecto...** .  En el **nuevo proyecto** cuadro de diálogo, en **C#** proyectos en la barra de navegación izquierdo, elija extensibilidad y en el panel derecho, elija la **analizador con código corregir** proyecto plantilla.  Escriba un nombre y confirme el cuadro de diálogo.
+En el menú principal seleccione **archivo &#124; New &#124; proyecto...** .  En el **nuevo proyecto** cuadro de diálogo, en **C#** proyectos en la barra de navegación izquierdo, elija extensibilidad y en el panel derecho, elija la **analizador con código corregir** proyecto plantilla.  Escriba un nombre y confirme el cuadro de diálogo.
 
 La plantilla abre un archivo DiagnosticAnalyzer.cs.  Seleccione a ese editor ficha de búfer.  Este archivo tiene una clase de analizador (formato incorrecto del nombre que dio al proyecto) que se deriva de `DiagnosticAnalyzer` (un tipo Roslyn API).  La nueva clase tiene un `DiagnosticAnalyzerAttribute` declarar el analizador es relevante para el lenguaje C# para que el compilador detecta y carga el analizador.
 

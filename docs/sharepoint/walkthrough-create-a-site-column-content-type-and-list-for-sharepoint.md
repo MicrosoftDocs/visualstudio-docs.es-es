@@ -1,12 +1,10 @@
 ---
 title: 'Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Crear una lista, tipo de contenido y columna de sitio para SharePoint
   Los procedimientos siguientes muestran cómo crear columnas personalizadas de sitio de SharePoint, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También muestra cómo crear una lista que utiliza el nuevo tipo de contenido.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>Crear columnas de sitio personalizadas  
+##  <a name="BKMK_CreatingCustSiteCols"></a> Crear columnas de sitio personalizadas  
  Este ejemplo crea una lista para la administración de pacientes en el hospital. En primer lugar, debe crear un proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] y agregue columnas de sitio, como se indica a continuación.  
   
 #### <a name="to-create-the-project"></a>Para crear el proyecto  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Con el mismo procedimiento, agregue dos columnas de sitio más al proyecto: **ID de paciente** (tipo = "Integer") y **nombre médico** (tipo = "Text"). Establezca su valor de grupo en **columnas de sitio Clinic**.  
   
-##  <a name="BKMK_CreateCustContType"></a>Crear un tipo de contenido personalizado  
+##  <a name="BKMK_CreateCustContType"></a> Crear un tipo de contenido personalizado  
  A continuación, cree un tipo de contenido, en función del tipo de contenido de contactos, que incluye las columnas de sitio que creó en el procedimiento anterior. A partir de un tipo de contenido en un tipo de contenido existente, puede ahorrar tiempo porque el tipo de contenido base proporciona varias columnas de sitio para su uso en el nuevo tipo de contenido.  
   
 #### <a name="to-create-a-custom-content-type"></a>Para crear un tipo de contenido personalizado  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. En la barra de menús, elija **archivo**, **guardar todo**y, a continuación, cierre el Diseñador de tipo de contenido.  
   
-##  <a name="BKMK_CreateList"></a>Creación de una lista  
+##  <a name="BKMK_CreateList"></a> Creación de una lista  
  Ahora, cree una lista que usa las nuevas columnas de sitio y el tipo de contenido.  
   
 #### <a name="to-create-a-list"></a>Para crear una lista  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. En el **nombre de la columna** elija **Patient Name**, asegúrese de que el **ordenar** columna se establece en **ascendente**y, a continuación, elija la  **Aceptar** botón.  
   
-##  <a name="BKMK_TestApp"></a>Probar la aplicación  
+##  <a name="BKMK_TestApp"></a> Probar la aplicación  
  Ahora que las columnas de sitio personalizadas, el tipo de contenido y la lista están listos, implementarlas en SharePoint y ejecutar la aplicación para probarla.  
   
 #### <a name="to-test-the-application"></a>Para probar la aplicación  

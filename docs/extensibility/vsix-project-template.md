@@ -1,26 +1,24 @@
 ---
 title: Plantilla de proyecto VSIX | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bff05b0b1b05a6b00b7924f0fb5bfc957adba41c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto VSIX
 Puede utilizar la plantilla de proyecto de VSIX que incluya una o más extensiones de Visual Studio en un proyecto VSIX y, a continuación, publicar el paquete en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web.  
@@ -82,7 +80,7 @@ Puede utilizar la plantilla de proyecto de VSIX que incluya una o más extension
   
 8.  Compile la solución.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]genera un archivo .vsix que contenga un archivo de manifiesto de VSIX, un archivo [Content_Types] .xml y de todos los activos de extensión que agregan al proyecto.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera un archivo .vsix que contenga un archivo de manifiesto de VSIX, un archivo [Content_Types] .xml y de todos los activos de extensión que agregan al proyecto.  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema 2.0 de extensión VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   

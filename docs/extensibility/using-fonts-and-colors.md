@@ -1,12 +1,10 @@
 ---
 title: Utilizar fuentes y colores | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, controlling in IDE
 - IDE, controlling text color and fonts
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK]
 - text, IDE
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d87cb7a48d85e4bd3394a563b201466613a9c44f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4415d00e5a1233bfdf14dbc86a3a7ed2f7b8e770
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-fonts-and-colors"></a>Utilizar fuentes y colores
 El [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] proporciona compatibilidad para que utilizar fuentes y colores para mostrar el texto.  

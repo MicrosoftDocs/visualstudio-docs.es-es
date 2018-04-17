@@ -1,13 +1,10 @@
 ---
 title: Controles de contenido | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.DropDownListContentControl
 - VST.Toolbox.RichTextContentControl
@@ -41,14 +38,14 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1c56b7e48ce42699330e8eb40595d9cc761736e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-controls"></a>Controles de contenido
   Los controles de contenido proporcionan un mecanismo para diseñar documentos y plantillas con las siguientes características:  
@@ -130,7 +127,7 @@ ms.lasthandoff: 01/10/2018
 |Ejecutar el código una vez que el control de contenido se haya agregado al documento como resultado de una operación de deshacer o rehacer.|Controle el evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> del control.|  
 |Ejecutar el código justo antes de que se elimine el control de contenido del documento.|Controle el evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> del control.|  
   
-##  <a name="Protection"></a>Proteger elementos de documentos mediante controles de contenido  
+##  <a name="Protection"></a> Proteger elementos de documentos mediante controles de contenido  
  Al proteger un elemento de un documento, se impide que los usuarios cambien o eliminen el contenido de ese elemento. Existen varios modos de proteger los elementos de un documento mediante los controles de contenido.  
   
  Si el área que desea proteger está dentro de un control de contenido, puede usar las propiedades del control de contenido para impedir que los usuarios editen o eliminen el control:  
@@ -146,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
  Para obtener más información acerca de cómo usar controles de contenido para proteger elementos de documentos, consulte [Cómo: proteger elementos de documentos mediante controles de contenido](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-##  <a name="DataBinding"></a>Enlazar datos a controles de contenido  
+##  <a name="DataBinding"></a> Enlazar datos a controles de contenido  
  Puede mostrar los datos en documentos estableciendo enlaces entre un control de contenido y un origen de datos. Cuando el origen de datos se actualice, el control de contenido reflejará los cambios. También puede volver a guardar los cambios en el origen de datos.  
   
  Los controles de contenido proporcionan las siguientes opciones de enlace de datos:  
@@ -233,7 +230,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
  Para determinar cuándo un usuario edita el contenido de un control de contenido, puede enlazar el control a un elemento XML personalizado y controlar el evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>. Este evento se desencadena cuando el usuario cambia el contenido de un control que está enlazado a un elemento XML personalizado. Para ver un tutorial que muestra cómo enlazar un control de contenido a un elemento XML personalizado, vea [Tutorial: enlazar controles de contenido a elementos XML personalizados](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-###  <a name="checkbox"></a>Controles de contenido de casilla en proyectos de Word  
+###  <a name="checkbox"></a> Controles de contenido de casilla en proyectos de Word  
  Word 2010 introdujo un nuevo tipo de control de contenido que representa una casilla. Sin embargo, la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] no proporciona un tipo de CheckBoxContentControl correspondiente para su uso en proyectos de Office. Para crear un control de contenido de casilla en un proyecto de [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o de Word 2010, use el método <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> para crear un objeto <xref:Microsoft.Office.Tools.Word.ContentControl> y pase el valor <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> al método para especificar un control de contenido de casilla. En el ejemplo de código siguiente se muestra cómo utilizar este recurso.  
   
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

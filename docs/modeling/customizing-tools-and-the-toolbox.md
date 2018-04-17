@@ -1,10 +1,8 @@
 ---
 title: Personalizar el cuadro de herramientas y herramientas | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 160c1c27ab9d01dc76d6a5c76feb07179f7966b9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0644aa33d0e091fc3a2ff856109fe9661e2dc805
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 Debe definir los elementos del cuadro de herramientas que quiera que los usuarios puedan agregar a sus modelos. Hay dos tipos de herramientas: herramientas de elemento y las herramientas de conexión. En el diseñador generado, un usuario puede seleccionar una herramienta de elemento para dibujar formas en el diagrama, y puede seleccionar una herramienta de conexión para dibujar vínculos entre las formas. Por lo general, las herramientas de elemento permiten a los usuarios agregar instancias de clases de dominio a sus modelos, y las herramientas de conexión les permiten agregar instancias de relaciones de dominio.  
@@ -36,7 +34,7 @@ Debe definir los elementos del cuadro de herramientas que quiera que los usuario
   
 -   [Personalizar las herramientas de conexión](#connections)  
   
-##  <a name="ToolboxDef"></a>Cómo se defina el cuadro de herramientas  
+##  <a name="ToolboxDef"></a> Cómo se defina el cuadro de herramientas  
  En DSL Explorer (Explorador de DSL), expanda el nodo Editor (Editor) y los nodos situados bajo él. Normalmente, verá una jerarquía similar a esta:  
   
 ```  
@@ -93,7 +91,7 @@ Editor
   
      Si la herramienta no aparece, detenga la instancia experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En las ventanas de **iniciar** menú, ejecutar **restablecer la Microsoft Visual Studio 2010 instancia Experimental**. En el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **generar** menú, haga clic en **volver a generar solución**. Después, vuelva a probar el DSL.  
   
-##  <a name="customizing"></a>Personalizar herramientas de elemento  
+##  <a name="customizing"></a> Personalizar herramientas de elemento  
  De forma predeterminada, la herramienta creará una instancia única de la clase especificada, pero puede cambiar esto de dos maneras:  
   
 -   Defina directivas de combinación de elementos en otras clases, permita que acepten nuevas instancias de esta clase y permita que creen vínculos adicionales cuando se crea un elemento nuevo. Por ejemplo, podría permitir que el usuario coloque un comentario en otro elemento, creando así un vínculo de referencia entre los dos.  
@@ -104,7 +102,7 @@ Editor
   
 -   Escriba código para personalizar la herramienta de manera que pueda crear grupos de elementos. La herramienta se inicializa mediante métodos de ToolboxHelper.cs que puede invalidar. Para obtener más información, consulte [crear grupos de elementos de una herramienta](#groups).  
   
-##  <a name="groups"></a>Crear grupos de elementos de una herramienta  
+##  <a name="groups"></a> Crear grupos de elementos de una herramienta  
  Cada herramienta de elemento contiene un prototipo de los elementos que debe crear. De forma predeterminada, cada herramienta de elemento crea un solo elemento, pero se puede crear un grupo de objetos relacionados con una herramienta. Para ello, inicialice la herramienta con un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> que contenga los elementos relacionados.  
   
  El siguiente ejemplo se toma de un DSL en el que hay un tipo Transistor. Cada Transistor tiene tres Terminals con nombre. La herramienta de elemento de Transistors almacena un prototipo que contiene cuatro elementos de modelo y tres vínculos de relación. Cuando el usuario arrastra la herramienta al diagrama, se crea una instancia del prototipo que se vincula a la raíz del modelo.  
@@ -154,7 +152,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a>Personalizar las herramientas de conexión  
+##  <a name="connections"></a> Personalizar las herramientas de conexión  
  Normalmente, se crea una herramienta de elemento al crear una nueva clase de conector. También puede sobrecargar una herramienta permitiendo que los tipos de los dos extremos determinen el tipo de la relación. Por ejemplo, podría definir una herramienta de conexión que podría crear relaciones Persona-Persona y Persona-Ciudad.  
   
  Las herramientas de conexión invocan generadores de conexiones. Use generadores de conexiones para especificar cómo los usuarios pueden vincular elementos en el diseñador generado. Los generadores de conexiones especifican los elementos que se pueden vincular y el tipo de vínculo que se crea entre ellos.  

@@ -1,5 +1,5 @@
 ---
-title: "Diseñador de actividad de envío | Documentos de Microsoft"
+title: Diseñador de actividad de envío | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ad913623480599f8d299cba438b108a4511ae7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-activity-designer"></a>Diseñador de actividad Sent
 
@@ -46,8 +46,8 @@ El **enviar** Diseñador de actividades se usa para crear y configurar un <xref:
 |<xref:System.ServiceModel.Activities.Send.KnownTypes%2A>|False|Una colección de tipos conocidos para la operación de servicio que va llamar esta actividad <xref:System.ServiceModel.Activities.Send>. Esta propiedad se puede utilizar junto con el conjunto de propiedades <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> para <xref:System.Runtime.Serialization.DataContractSerializer>. Se ignorará si se usa <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Haga clic en el botón de puntos suspensivos junto a la **KnownTypes** campo en la cuadrícula de propiedades para mostrar la **Editor de la colección de tipo** cuadro de diálogo con el que puede agregar los tipos pertinentes.<br /><br /> Haga clic en el botón de puntos suspensivos junto a la **KnownTypes** campo en la cuadrícula de propiedades para mostrar la **Editor de la colección de tipo** cuadro de diálogo con el que puede agregar los tipos pertinentes. Para obtener más información sobre el uso de este cuadro, consulte la [cuadro de diálogo de Editor de colección de tipo](../workflow-designer/type-collection-editor-dialog-box.md) tema.|
 |<xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A>|True|Especifica la enumeración <xref:System.Net.Security.ProtectionLevel> para el mensaje.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> significa únicamente la autenticación.<br />2. <xref:System.Net.Security.ProtectionLevel> significa firma datos para ayudar a garantizar la integridad de los datos transmitidos.<br />3. <xref:System.Net.Security.ProtectionLevel> significa cifrar y firmar datos para ayudar a garantizar la confidencialidad e integridad de los datos transmitidos.|
 |<xref:System.ServiceModel.Activities.Send.SerializerOption%2A>|True|El serializador que va a utilizar en la operación de servicio que va a llamar la actividad <xref:System.ServiceModel.Activities.Send>. El valor predeterminado es <xref:System.Runtime.Serialization.DataContractSerializer>, que serializa y deserializa una instancia de un tipo en una secuencia o en un documento XML mediante un contrato de datos que se haya proporcionado.|
-|<xref:System.ServiceModel.Activities.Send.Action%2A>|False|Especifica el encabezado de acción del mensaje. Si no se establece explícitamente, su valor predeterminado es: https://tempuri.org/ {espacio de nombres de contrato de servicio} / {nombre del contrato de servicio} / {nombre de la operación}. Si se especifica en una actividad <xref:System.ServiceModel.Activities.Send>, la actividad <xref:System.ServiceModel.Activities.Receive> que recibe el mensaje debe tener el mismo valor para que el mensaje se entregue correctamente.|
-|<xref:System.ServiceModel.Activities.Send.TokenImpersonationLevel%2A>||La enumeración <xref:System.Security.Principal.TokenImpersonationLevel> permitida para el receptor del mensaje. Define los niveles de suplantación de seguridad que determinan el grado al que un proceso de servidor puede actuar en nombre de un proceso de cliente. <xref:System.Security.Principal.TokenImpersonationLevel> indica que no se ha asignado un nivel de suplantación. <xref:System.Security.Principal.TokenImpersonationLevel> indica que el proceso de servidor no puede obtener información de identificación del cliente y no puede suplantarlo. <xref:System.Security.Principal.TokenImpersonationLevel> indica que el proceso de servidor puede obtener información sobre el cliente, como identificadores de seguridad y privilegios, pero no puede suplantarlo. Esto es útil para los servidores que exportan sus propios objetos, por ejemplo, los productos de base de datos que exportan tablas y vistas. Con la información de seguridad del cliente recuperada, el servidor puede tomar decisiones de validación de acceso sin poder usar otros servicios que están usando el contexto de seguridad del cliente. <xref:System.Security.Principal.TokenImpersonationLevel> indica que el proceso de servidor puede suplantar el contexto de seguridad del cliente en su sistema local. El servidor no puede suplantar al cliente en sistemas remotos. <xref:System.Security.Principal.TokenImpersonationLevel> indica que el proceso de servidor puede suplantar el contexto de seguridad del cliente en sistemas remotos.|
+|<xref:System.ServiceModel.Activities.Send.Action%2A>|False|Especifica el encabezado de acción del mensaje. Si no se establece explícitamente, su valor predeterminado es: https://tempuri.org/{service espacio de nombres del contrato} / {nombre del contrato de servicio} / {nombre de la operación}. Si se especifica en una actividad <xref:System.ServiceModel.Activities.Send>, la actividad <xref:System.ServiceModel.Activities.Receive> que recibe el mensaje debe tener el mismo valor para que el mensaje se entregue correctamente.|
+|<xref:System.ServiceModel.Activities.Send.TokenImpersonationLevel%2A>||La enumeración <xref:System.Security.Principal.TokenImpersonationLevel> permitida para el receptor del mensaje. Define los niveles de suplantación de seguridad que determinan el grado al que un proceso de servidor puede actuar en nombre de un proceso de cliente.<xref:System.Security.Principal.TokenImpersonationLevel> indica que no se asigna un nivel de suplantación. <xref:System.Security.Principal.TokenImpersonationLevel> indica que el proceso de servidor no puede obtener información de identificación del cliente y no puede suplantarlo. <xref:System.Security.Principal.TokenImpersonationLevel> indica que el proceso de servidor puede obtener información sobre el cliente, como identificadores de seguridad y privilegios, pero no puede suplantarlo. Esto es útil para los servidores que exportan sus propios objetos, por ejemplo, los productos de base de datos que exportan tablas y vistas. Con la información de seguridad del cliente recuperada, el servidor puede tomar decisiones de validación de acceso sin poder usar otros servicios que están usando el contexto de seguridad del cliente. <xref:System.Security.Principal.TokenImpersonationLevel> indica que el proceso de servidor puede suplantar el contexto de seguridad del cliente en su sistema local. El servidor no puede suplantar al cliente en sistemas remotos. <xref:System.Security.Principal.TokenImpersonationLevel> indica que el proceso de servidor puede suplantar el contexto de seguridad del cliente en sistemas remotos.|
 |<xref:System.ServiceModel.Activities.Send.Endpoint%2A>||La clase <xref:System.ServiceModel.Endpoint> a la que la actividad <xref:System.ServiceModel.Activities.Send> envía el mensaje. Si se establece esta propiedad la <xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A> propiedad debe ser **null**.|
 |<xref:System.ServiceModel.Activities.Send.EndpointAddress%2A>||La clase <xref:System.ServiceModel.EndpointAddress> a la que se envía el mensaje.|
 |<xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A>||El nombre de la configuración del extremo. Se establece esta propiedad cuando se está configurando un punto de conexión en un archivo de configuración. Esta propiedad debe establecerse en el nombre proporcionado en el  **\<extremo >** elemento en el archivo de configuración. Si se establece esta propiedad, el <xref:System.ServiceModel.Activities.Send.Endpoint%2A> propiedad debe ser **null**.|
@@ -57,6 +57,6 @@ El **enviar** Diseñador de actividades se usa para crear y configurar un <xref:
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Receive](../workflow-designer/receive-activity-designer.md)
+- [Recepción](../workflow-designer/receive-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

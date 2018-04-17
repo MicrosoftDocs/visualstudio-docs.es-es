@@ -1,27 +1,23 @@
 ---
 title: Utilidades VSSDK | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Architecture, Visual Studio Integration
 ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03336b99b8b49c190a292ca9257aa24d4366f28c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8622e23eb4961f623d8909b7b2b540dd08285300
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vssdk-utilities"></a>Utilidades VSSDK
 Los temas de esta sección describen las herramientas que se suministran con el VSSDK.  

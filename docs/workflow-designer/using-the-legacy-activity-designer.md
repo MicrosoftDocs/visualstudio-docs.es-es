@@ -1,5 +1,5 @@
 ---
-title: "Utilizar el Diseñador de actividades heredado | Documentos de Microsoft"
+title: Utilizar el Diseñador de actividades heredado | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,14 +12,14 @@ helpviewer_keywords:
 ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4186f5181c649e43c5abc8f9ce777c2d57a7bc44
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: c69c2dfdd6fb81bcb6a544f27da0874a7dc99331
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-legacy-activity-designer"></a>Usar el diseñador de actividad Legacy
 En este tema se describe cómo utilizar el Diseñador de actividades en el Diseñador de flujo de trabajo heredado de Windows. Use el diseñador heredado cuando tenga como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

@@ -1,27 +1,23 @@
 ---
-title: "Tutorial: Agregar características a un Editor personalizado | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Agregar características a un Editor personalizado | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Tutorial: Agregar características a un Editor personalizado
 Después de crear un editor personalizado, puede agregar más características a él.  
@@ -148,7 +144,7 @@ Después de crear un editor personalizado, puede agregar más características a
   
 -   Para evitar que los comandos de menú saturar en la interfaz de usuario, debe usar los comandos existentes en el IDE antes de crear nuevos comandos. Comandos compartidas se definen en SharedCmdDef.vsct y ShellCmdDef.vsct. Estos archivos se instalan de forma predeterminada en el subdirectorio VisualStudioIntegration\Common\Inc de su [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalación.  
   
--   `ISelectionContainer`puede expresar selecciones múltiples e individuales. Cada objeto seleccionado se implementa como un `IDispatch` objeto.  
+-   `ISelectionContainer` puede expresar selecciones múltiples e individuales. Cada objeto seleccionado se implementa como un `IDispatch` objeto.  
   
 -   El IDE implementa `IOleUndoManager` como un servicio puede tener acceso desde una <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> o como un objeto que se puede crear instancias a través de <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Implementa la editor el `IOleUndoUnit` interfaz para cada `Undo` acción.  
   

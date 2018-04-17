@@ -1,13 +1,10 @@
 ---
 title: Actualizar y migrar soluciones de Office | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - migrating Office solutions in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 920fc096072cb4304e76ca8171d52d3e40caeb3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>Actualizar y migrar soluciones de Office
   Si tiene un proyecto de Microsoft Office que se creó en una versión anterior de Visual Studio, deberá actualizarlo para usarlo en las versiones actuales de Visual Studio. Para ello, ábralo en una versión de Visual Studio que incluya las herramientas de desarrollo de Microsoft Office. Para obtener más información acerca de las versiones de Visual Studio que incluyen las herramientas de desarrollo de Microsoft Office, consulte [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -91,7 +88,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Actualizar soluciones de Office](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)   
- [Migrating Office Solutions to the .NET Framework 4 or later](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
+ [Migración de soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   
  [Actualización del proyecto, cuadro de diálogo Opciones](../vsto/project-upgrade-options-dialog-box.md)  
   
   

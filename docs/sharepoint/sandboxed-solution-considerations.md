@@ -1,12 +1,10 @@
 ---
 title: Consideraciones sobre las soluciones en espacio aislado | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
   *Soluciones en espacio aislado* son una característica de Microsoft SharePoint 2010 que permite a los usuarios de la colección de sitios cargar sus propias soluciones de código personalizado. Una solución en espacio aislado habitual es a los usuarios cargar sus propios elementos Web.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  Una aplicación de SharePoint en espacio aislado se ejecuta en un proceso seguro y supervisado que tiene acceso a una parte limitada de la granja de servidores Web. Microsoft SharePoint 2010 utiliza una combinación de características, galerías de soluciones, solución de supervisión y un marco de validación para habilitar las soluciones en espacio aislado.  
   
 ## <a name="specifying-project-trust-level"></a>Especificar el nivel de confianza del proyecto  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]admite soluciones en espacio aislado a través de una propiedad de proyecto booleana denominadas *solución en espacio aislado*. Esta propiedad puede establecerse en cualquier momento en el proyecto, o puede especificarse cuando se crea el proyecto en el **Asistente para personalización de SharePoint**.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] admite soluciones en espacio aislado a través de una propiedad de proyecto booleana denominadas *solución en espacio aislado*. Esta propiedad puede establecerse en cualquier momento en el proyecto, o puede especificarse cuando se crea el proyecto en el **Asistente para personalización de SharePoint**.  
   
 > [!NOTE]  
 >  Cambiar el *solución en espacio aislado* propiedad de un proyecto tras su creación puede provocar errores de validación.  
@@ -74,7 +73,7 @@ ms.lasthandoff: 01/10/2018
  En WSS 3.0, las soluciones se pudieron implementar sólo en el nivel de granja de servidores. Esto significaba que era posible implementar soluciones potencialmente dañinas o desestabilizadoras que afecta a toda la granja Web y todas las otras colecciones de sitios y aplicaciones que se ejecutan en él. Sin embargo, con las soluciones en espacio aislado, puede implementar sus soluciones en una subárea de la granja, una colección de sitios específica. Para proporcionar protección adicional, el ensamblado de la solución no se carga en el método main [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] proceso (w3wp.exe). En su lugar, que se carga en un proceso independiente (SPUCWorkerProcess.exe). Este proceso se supervisa e implementa cuotas y limitación para proteger la granja de servidores de soluciones en espacio aislado que realizan actividades dañinas, como la ejecución de los bucles de pequeñas dimensiones que consumen ciclos de CPU.  
   
 ## <a name="site-collection-solution-gallery"></a>Galería de soluciones de colecciones de sitios  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]2010 incluye una característica que se conoce como el "Galería de soluciones de sitio colección". Puede acceder a esta función desde la página de Administración Central de SharePoint 2010 o abriendo el **acciones del sitio** menú, elija **configuración del sitio**y, a continuación, elija la **soluciones** vincular en **galerías** en el sitio de SharePoint. Galerías de soluciones son repositorios de soluciones que permiten a los administradores de colección de sitio administrar las soluciones de sus colecciones de sitios.  
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 incluye una característica que se conoce como el "Galería de soluciones de sitio colección". Puede acceder a esta función desde la página de Administración Central de SharePoint 2010 o abriendo el **acciones del sitio** menú, elija **configuración del sitio**y, a continuación, elija la **soluciones** vincular en **galerías** en el sitio de SharePoint. Galerías de soluciones son repositorios de soluciones que permiten a los administradores de colección de sitio administrar las soluciones de sus colecciones de sitios.  
   
  La Galería de soluciones es una biblioteca de documentos almacenada en la raíz Web del sitio de SharePoint. La Galería de soluciones reemplaza las plantillas de sitio y admite paquetes de soluciones. Cuando se carga un archivo de paquete (.wsp) de solución de SharePoint, se procesa como una solución en espacio aislado.  
   
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   Compatibilidad con todos los elementos Web que se derivan de`System.Web.UI.WebControls.WebParts.WebPart`  
+-   Compatibilidad con todos los elementos Web que se derivan de `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Elementos Web  
   

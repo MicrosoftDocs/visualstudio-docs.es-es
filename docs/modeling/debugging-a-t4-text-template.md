@@ -1,24 +1,22 @@
 ---
 title: Depurar una plantilla de texto T4 | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurar una plantilla de texto T4
 Puede establecer puntos de interrupción en plantillas de texto. Para depurar una plantilla de texto en tiempo de diseño, guarde el archivo de plantilla de texto y, a continuación, elija **depurar plantilla T4** en el menú contextual del archivo en el Explorador de soluciones. Para depurar una plantilla de texto en tiempo de ejecución, basta con depurar la aplicación a la que pertenece.  
@@ -47,7 +45,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 |La ruta de acceso '{0}' debe ser local para este equipo o parte de su zona de confianza.|Se produce cuando una directiva o una directiva de ensamblado hace referencia a un archivo que no está en el equipo local o en la zona de confianza de la red.|Asegúrese de que el directorio donde se encuentran la directiva o las directivas de ensamblado están en su zona de confianza. Puede agregar un directorio de red a la zona de confianza mediante Internet Explorer.|  
 |Varios errores de sintaxis como "El token 'catch' no es válido" o "Un espacio de nombres no puede contener directamente miembros"|Hay demasiadas llaves de cierre en el código de plantilla. El compilador está confundiéndolo con el código de generación estándar.|Compruebe el número de llaves y corchetes de cierre que hay dentro de los delimitadores de código.|  
 |Los bucles o los condicionales no se compilan o ejecutan correctamente. Por ejemplo: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Este código genera siempre el valor de i. Solo "Number is:" es condicional.|En C#, utilice siempre llaves para delimitar los bloques de texto que se incrustan en instrucciones de control.|Agregue llaves: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|"Expresión demasiado compleja" al procesar una plantilla en tiempo de diseño o compilar una plantilla en tiempo de ejecución (preprocesada).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deja de funcionar cuando intenta inspeccionar código generado por una plantilla en tiempo de ejecución.|El bloque de texto es demasiado largo. T4 convierte los bloques de texto en una expresión de concatenación de cadenas, con un literal de cadena para cada línea de la plantilla. Bloques de texto muy largos pueden sobrepasar los límites de tamaño del compilador.|Divida el bloque de texto largo con un bloque de expresiones como:<br /><br /> `<#= "" #>`|  
+|"Expresión demasiado compleja" al procesar una plantilla en tiempo de diseño o compilar una plantilla en tiempo de ejecución (preprocesada).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] deja de funcionar cuando se intenta inspeccionar código generado por una plantilla en tiempo de ejecución.|El bloque de texto es demasiado largo. T4 convierte los bloques de texto en una expresión de concatenación de cadenas, con un literal de cadena para cada línea de la plantilla. Bloques de texto muy largos pueden sobrepasar los límites de tamaño del compilador.|Divida el bloque de texto largo con un bloque de expresiones como:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Descripciones de advertencias y soluciones  
  En la tabla siguiente se enumeran las advertencias más frecuentes junto con sus soluciones, si están disponibles.  
@@ -72,7 +70,7 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 |La directiva de inclusión para el archivo '{0}' produce un bucle infinito.|Se muestra si se especifican directivas de inclusión circulares (por ejemplo, el archivo A incluye el archivo B, que incluye el archivo A).|No especifique directivas de inclusión circulares.|  
 |Ejecutando transformación:|Antepone esta cadena a todos los errores o advertencias que se generan mientras se ejecuta la transformación.|No es aplicable.|  
 |Se encontró una etiqueta inicial o final inesperada dentro de un bloque. Asegúrese de que no escribió una etiqueta inicial o final por error y de que no tiene bloques anidados en la plantilla.|Muestra una vez inesperado \<# o #>. Es decir, si tiene un \<# después de otra etiqueta de apertura que no se ha cerrado, o si tiene un símbolo #> cuando no hay ninguna etiqueta de apertura sin cerrar antes de él. El mensaje proporciona el número de línea de la etiqueta no coincidente.|Quite la etiqueta de apertura o de cierre no coincidente, o utilice un carácter de escape.|  
-|Se especificó una directiva con formato incorrecto. Se omitirá la directiva. Especifique la directiva con el formato`<#@ name [parametername="parametervalue"]*  #>`|Lo muestra el analizador si una directiva no se especifica en el formato correcto. El mensaje proporciona el número de línea de la directiva incorrecta.|Asegúrese de que todas las directivas tienen el formato `<#@ name [parametername="parametervalue"]*  #>`. Para obtener más información, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).|  
+|Se especificó una directiva con formato incorrecto. Se omitirá la directiva. Especifique la directiva con el formato `<#@ name [parametername="parametervalue"]*  #>`|Lo muestra el analizador si una directiva no se especifica en el formato correcto. El mensaje proporciona el número de línea de la directiva incorrecta.|Asegúrese de que todas las directivas tienen el formato `<#@ name [parametername="parametervalue"]*  #>`. Para obtener más información, consulte [directivas de plantilla de texto T4](../modeling/t4-text-template-directives.md).|  
 |Error al cargar el ensamblado '{0}' para el procesador de directivas registrado '{1}'.<br /><br /> {2}|Se produce cuando el host no puede cargar un procesador de directivas. El mensaje identifica el ensamblado proporcionado para el procesador de directivas y el nombre del procesador de directivas.|Asegúrese de que el procesador de directivas está registrado correctamente y de que el ensamblado existe.|  
 |Error al buscar el tipo '{0}' en el ensamblado '{1}' para el procesador de directivas registrado '{2}'.<br /><br /> {3}|Se produce cuando un tipo de procesador de directivas no se puede cargar desde su ensamblado. El mensaje proporciona el nombre del tipo, el ensamblado y el procesador de directivas.|vshost busca la información del procesador de directivas (nombre, ensamblado y tipo) en el Registro. Asegúrese de que el procesador de directivas está registrado correctamente y de que el tipo existe en el ensamblado.|  
 |Problema al cargar el ensamblado '{0}'|Se produce cuando hay un problema al cargar un ensamblado. El mensaje proporciona el nombre del ensamblado.|Puede especificar que se carguen en ensamblados \<@# assembly #> directivas y mediante procesadores de directivas. El mensaje de error que sigue a esta cadena debe proporcionar más datos sobre el motivo del error al cargar el ensamblado.|  

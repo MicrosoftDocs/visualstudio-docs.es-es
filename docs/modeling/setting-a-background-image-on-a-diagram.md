@@ -1,21 +1,19 @@
 ---
-title: "Configuración de una imagen de fondo en un diagrama | Documentos de Microsoft"
-ms.custom: 
+title: Configuración de una imagen de fondo en un diagrama | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 364b918af7e99116879a81d6a96602378ba30896
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2af674f1ca5b29e44d2574ad935dfd3ef3cc1867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
 En el SDK de visualización y modelado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] puede establecer la imagen de fondo de un diseñador generado usando código personalizado.  

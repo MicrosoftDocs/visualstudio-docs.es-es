@@ -1,5 +1,5 @@
 ---
-title: "Mediante el Diseñador de flujo de trabajo de máquina de Estados heredado | Documentos de Microsoft"
+title: Mediante el Diseñador de flujo de trabajo de máquina de Estados heredado | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ helpviewer_keywords:
 ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf214ce8e65ba65127d82686770b00cfd8d3f90
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Usar el diseñador de flujo de trabajo de máquina de estados heredado
 Al crear un nuevo proyecto de flujo de trabajo de máquina de estado en [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] que tiene como destino el [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], puede utilizar el **aplicación de consola de flujo de trabajo de equipo de estado** o la  **Biblioteca de flujo de trabajo de máquina de estado** plantilla de proyecto heredado. Si elige una de estas plantillas de proyecto de máquina de estados, el diseñador de máquina de estados se presenta como la interfaz de usuario del diseñador de flujo de trabajo heredada. Para obtener información acerca de las plantillas de proyecto de la máquina de Estados heredados, consulte [Cómo: crear estado de flujo de trabajo de aplicaciones de consola equipo (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) y [Cómo: crear una biblioteca de flujo de trabajo de equipo de estado (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).

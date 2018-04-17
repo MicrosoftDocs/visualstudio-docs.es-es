@@ -1,25 +1,23 @@
 ---
 title: Escribir una plantilla de texto T4 | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e640583f42154497ffe5bd25d3c6860fb9d20ca8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 140e49af62b2ea1a9bb43b7cf3fb95ccc7b257e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html > …" y todas las demás partes estándar de una página HTML. Inserta en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.  
@@ -211,7 +209,7 @@ private void WriteSquareLine(int i)
   
  Para obtener más información, consulte [directiva de importación T4](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a>Incluir código y texto  
+###  <a name="Include"></a> Incluir código y texto  
  La directiva `include` inserta texto de otro archivo de plantilla. Por ejemplo, esta directiva inserta el contenido de `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -241,7 +239,7 @@ private void WriteSquareLine(int i)
   
  **Cargar un archivo como un modelo navegable**. Un método más eficaz consiste en leer los datos como un modelo, en el que el código de la plantilla de texto puede navegar. Por ejemplo, puede cargar un archivo XML y navegar en él con expresiones XPath. También puede usar [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) para crear un conjunto de clases con el que puede leer los datos XML.  
   
- **Edite el archivo de modelo en un diagrama o formulario.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]proporciona herramientas que le permiten editar un modelo como un diagrama o formulario Windows Forms. Así resulta más fácil analizar el modelo con los usuarios de la aplicación generada. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] también crea un conjunto de clases fuertemente tipadas que reflejan la estructura del modelo. Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
+ **Edite el archivo de modelo en un diagrama o formulario.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] proporciona herramientas que le permiten editar un modelo como un diagrama o formulario Windows Forms. Así resulta más fácil analizar el modelo con los usuarios de la aplicación generada. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] también crea un conjunto de clases fuertemente tipadas que reflejan la estructura del modelo. Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>Rutas de acceso de archivo relativas en plantillas en tiempo de diseño  
  En un [plantilla de texto en tiempo de diseño](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si desea hacer referencia a un archivo en una ubicación relativa a la plantilla de texto, utilice `this.Host.ResolvePath()`. También debe establecer `hostspecific="true"` en la directiva `template`:  

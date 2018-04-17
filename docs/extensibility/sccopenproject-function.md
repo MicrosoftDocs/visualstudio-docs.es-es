@@ -1,29 +1,25 @@
 ---
-title: "Función SccOpenProject | Documentos de Microsoft"
-ms.custom: 
+title: Función SccOpenProject | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject (función)
 Esta función abre un proyecto de control de código fuente existente o crea uno nuevo.  
@@ -70,7 +66,7 @@ SCCRTN SccOpenProject (
  [in] Una función de devolución de llamada opcional para mostrar el texto de salida desde el complemento de control de código fuente.  
   
  dwFlags  
- [in] Señales si se debe crear si el proyecto es desconocido para el origen de un nuevo proyecto de control de complemento. Valor puede ser una combinación de `SCC_OP_CREATEIFNEW` y`SCC_OP_SILENTOPEN.`  
+ [in] Señales si se debe crear si el proyecto es desconocido para el origen de un nuevo proyecto de control de complemento. Valor puede ser una combinación de `SCC_OP_CREATEIFNEW` y `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>Valor devuelto  
  La implementación de complemento de control de origen de esta función debe devolver uno de los siguientes valores:  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  La primera acción que el IDE debe realizar puede ser una llamada a la `SccOpenProject` función o la [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Por esta razón, ambos tienen idéntica `lpUser` parámetro.  
   
- `lpAuxProjPath`y`lpProjName` se leen desde el archivo de solución, o se devuelven desde una llamada a la `SccGetProjPath` (función). Estos parámetros contienen las cadenas que el complemento de control de código fuente se asocia con el proyecto y sólo son significativos para el complemento. Si ninguna de estas cadenas se encuentran en el archivo de solución y no se pide al usuario para examinar (que devolvería una cadena a través de la `SccGetProjPath` función), el IDE pasa cadenas vacías para ambos `lpAuxProjPath` y `lpProjName`y actualizar estos valores no espera por el complemento cuando devuelve esta función.  
+ `lpAuxProjPath` y`lpProjName` se leen desde el archivo de solución, o se devuelven desde una llamada a la `SccGetProjPath` (función). Estos parámetros contienen las cadenas que el complemento de control de código fuente se asocia con el proyecto y sólo son significativos para el complemento. Si ninguna de estas cadenas se encuentran en el archivo de solución y no se pide al usuario para examinar (que devolvería una cadena a través de la `SccGetProjPath` función), el IDE pasa cadenas vacías para ambos `lpAuxProjPath` y `lpProjName`y actualizar estos valores no espera por el complemento cuando devuelve esta función.  
   
- `lpTextOutProc`es un puntero a una función de devolución de llamada proporcionada por el IDE para el complemento con el fin de mostrar la salida de resultados del comando de control de código fuente. Esta función de devolución de llamada se describe detalladamente en [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ `lpTextOutProc` es un puntero a una función de devolución de llamada proporcionada por el IDE para el complemento con el fin de mostrar la salida de resultados del comando de control de código fuente. Esta función de devolución de llamada se describe detalladamente en [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
 > [!NOTE]
 >  Si el complemento de control de código fuente tiene intención de aprovechar las ventajas de este, ha configurado la `SCC_CAP_TEXTOUT` se marcan en la [SccInitialize](../extensibility/sccinitialize-function.md). Si no se ha establecido esa marca, o si el IDE no admite esta característica, `lpTextOutProc` será `NULL`.  

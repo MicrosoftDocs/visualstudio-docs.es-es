@@ -1,5 +1,5 @@
 ---
-title: "Cuadro de diálogo de opciones de temas, Diseñador de flujo de trabajo (heredado) | Documentos de Microsoft"
+title: Cuadro de diálogo de opciones de temas, Diseñador de flujo de trabajo (heredado) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 71150631-4674-4568-bce8-570bef3780ad
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47916c854c2d0e30173442188419c723e5d170a3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 95bda5a08871dd89b3600dd48b54f14e92f6640a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Temas, Diseñador de flujo de trabajo, Opciones (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo utilizar el **temas, Diseñador de flujo de trabajo, opciones** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -29,7 +29,7 @@ Este tema se describe cómo utilizar el **temas, Diseñador de flujo de trabajo,
 |Elemento de la interfaz de usuario|Descripción|
 |----------------|-----------------|
 |**Nuevo**|Haga clic para abrir el [cuadro de diálogo de configuración de tema (heredado)](../workflow-designer/theme-configuration-dialog-box-legacy.md) para crear un nuevo tema.|
-|**Modify...**|Haga clic para abrir el [cuadro de diálogo de configuración de tema (heredado)](../workflow-designer/theme-configuration-dialog-box-legacy.md) para modificar el tema seleccionado.|
+|**Modificar...**|Haga clic para abrir el [cuadro de diálogo de configuración de tema (heredado)](../workflow-designer/theme-configuration-dialog-box-legacy.md) para modificar el tema seleccionado.|
 |**Examinar**|Haga clic en esta opción para buscar un archivo de tema de flujo de trabajo, que usa la extensión de nombre de archivo .wtm.|
 |**Seleccione un tema**|Encabezado de la columna de nombres de temas de la lista de temas. Seleccione un tema de la lista, haga clic en **modificar** para editar o haga clic en **Aceptar** para utilizar el tema seleccionado para el flujo de trabajo.|
 |**Descripción**|Encabezado de columna de descripciones de temas de la lista de temas.|

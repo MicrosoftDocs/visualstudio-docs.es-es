@@ -1,12 +1,10 @@
 ---
 title: 'Tutorial: Extender el Explorador de servidores para mostrar elementos Web | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Tutorial: Extender el Explorador de servidores para mostrar elementos web
   En Visual Studio, puede usar el **las conexiones de SharePoint** nodo de **Explorador de servidores** para ver componentes en sitios de SharePoint. Sin embargo, **Explorador de servidores** no mostrar algunos componentes de forma predeterminada. En este tutorial, podrá ampliar **Explorador de servidores** para que se muestre la Galería de elementos Web en cada uno conectado de sitio de SharePoint.  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Elija la **proyecto VSIX** plantilla, el nombre del proyecto **NodoElementoWeb**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **NodoElementoWeb** proyecto al **el Explorador de soluciones**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **NodoElementoWeb** proyecto al **el Explorador de soluciones**.  
   
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  En la lista de plantillas de proyecto, elija **biblioteca de clases**, denomine el proyecto **ExtensiónNodoElementoWeb**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **ExtensiónNodoElementoWeb** proyecto a la solución y abre el archivo de código predeterminado Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **ExtensiónNodoElementoWeb** proyecto a la solución y abre el archivo de código predeterminado Class1.  
   
 5.  Elimine el archivo de código Class1 del proyecto.  
   
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  En la lista de plantillas de proyecto, elija **biblioteca de clases**, denomine el proyecto **WebPartCommands**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **WebPartCommands** proyecto a la solución y abre el archivo de código predeterminado Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **WebPartCommands** proyecto a la solución y abre el archivo de código predeterminado Class1.  
   
 6.  Elimine el archivo de código Class1 del proyecto.  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Elija la flecha situada junto a la **agregar** botón y, a continuación, elija **agregar como vínculo** en el menú que aparece.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega los archivos de código al proyecto WebPartCommands como vínculos. Como resultado, los archivos de código se encuentran en el proyecto ExtensiónNodoElementoWeb, pero también se compila el código en los archivos en el proyecto WebPartCommands.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega los archivos de código al proyecto WebPartCommands como vínculos. Como resultado, los archivos de código se encuentran en el proyecto ExtensiónNodoElementoWeb, pero también se compila el código en los archivos en el proyecto WebPartCommands.  
   
 5.  Abra el menú contextual para el **WebPartCommands** proyecto nuevo y elija **Agregar referencia**.  
   
@@ -188,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Elija la **recursos** ficha y, a continuación, elija la **este proyecto no contiene un archivo de recursos predeterminado. Haga clic aquí para crear una** vínculo.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crea un archivo de recursos y lo abre en el diseñador.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea un archivo de recursos y lo abre en el diseñador.  
   
 4.  En la parte superior del diseñador, elija la flecha situada junto a la **Agregar recurso** menú de comandos y, a continuación, elija **Agregar nuevo icono** en el menú que aparece.  
   
@@ -378,6 +377,6 @@ ms.lasthandoff: 01/10/2018
  [Extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Tutorial: Llamar a en el modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons)   
- [Crear un icono u otra imagen &#40; Editor de imágenes para iconos &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Crear un icono u otra imagen &#40;Editor de imágenes para iconos&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

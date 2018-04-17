@@ -1,13 +1,10 @@
 ---
 title: Desarrollar soluciones de SharePoint | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Desarrollar soluciones de SharePoint
   En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] están disponibles varias plantillas de tipo de proyecto de SharePoint para crear sitios y elementos de sitio de SharePoint. Para obtener una lista de los tipos de proyecto disponibles, vea [proyecto de SharePoint y plantillas de elementos de proyecto](../sharepoint/sharepoint-project-and-project-item-templates.md). A continuación se ofrece una descripción de los elementos y las propiedades de un proyecto de SharePoint.  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
  Cuando una característica se agrega a un proyecto de SharePoint, aparece en el **Explorador de soluciones** como un nodo con el nombre predeterminado Feature*x*.feature, donde *x* es un número único. Una vez implementada en el servidor de SharePoint, un administrador de SharePoint puede activarla y ponerla a disposición de los usuarios del sitio de SharePoint.  
   
 #### <a name="package-node"></a>Nodo Paquete  
- El nodo **Paquete** contiene un archivo único que actúa como el mecanismo de distribución para el proyecto de SharePoint. Este archivo, conocido como un *paquete**package*, está basado en .CAB con una extensión .WSP. Un paquete de solución es un archivo implementable y reutilizable que contiene un conjunto de características, definiciones del sitio y ensamblados que se aplican a los sitios de SharePoint y que es posible habilitar o deshabilitar individualmente. El **paquete** nodo también contiene siempre un archivo que se denomina Package.wspdef, un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] archivo de definición para el paquete. Una vez que se implementa un paquete en el servidor que ejecuta SharePoint, el administrador de SharePoint puede instalarlo y activar sus características.  
+ El nodo **Paquete** contiene un archivo único que actúa como el mecanismo de distribución para el proyecto de SharePoint. Este archivo, conocido como un *solución ** paquete*, es. Basado en un archivo CAB con un. Extensión WSP. Un paquete de solución es un archivo implementable y reutilizable que contiene un conjunto de características, definiciones del sitio y ensamblados que se aplican a los sitios de SharePoint y que es posible habilitar o deshabilitar individualmente. El **paquete** nodo también contiene siempre un archivo que se denomina Package.wspdef, un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] archivo de definición para el paquete. Una vez que se implementa un paquete en el servidor que ejecuta SharePoint, el administrador de SharePoint puede instalarlo y activar sus características.  
   
  Puede ver o cambiar el contenido del paquete en el Diseñador de paquetes, haga doble clic en el nodo del paquete o abriendo el menú contextual y, a continuación, elija **abiertos**. Para obtener más información, consulte [crear paquetes de soluciones de SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   
@@ -132,10 +129,10 @@ ms.lasthandoff: 01/10/2018
 |[Cómo: Agregar y quitar carpetas asignadas](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Describe cómo se pueden agregar las carpetas asignadas a un proyecto para facilitar el acceso a los recursos de SharePoint.|  
 |[Consideraciones sobre las soluciones en espacio aislado](../sharepoint/sandboxed-solution-considerations.md)|Describe los problemas asociados a las soluciones en recintos de seguridad.|  
 |[Seguridad para las soluciones de SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Describe cuestiones de seguridad relacionadas con el desarrollo de soluciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Cuadro de diálogo de selector de URL &#40; Desarrollo de SharePoint en Visual Studio &#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Describe un cuadro de diálogo que se puede usar para agregar las referencias de la ruta de acceso a los recursos en el proyecto o en el servidor de SharePoint local.|  
+|[Cuadro de diálogo de selector de URL &#40;desarrollo de SharePoint en Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Describe un cuadro de diálogo que se puede usar para agregar las referencias de la ruta de acceso a los recursos en el proyecto o en el servidor de SharePoint local.|  
   
 ## <a name="see-also"></a>Vea también  
- [Introducción a &#40; Desarrollo de SharePoint en Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
+ [Introducción a &#40;desarrollo de SharePoint en Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

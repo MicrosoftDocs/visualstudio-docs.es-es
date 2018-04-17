@@ -1,5 +1,5 @@
 ---
-title: "System.Activities (pestaña), elija el cuadro de diálogo de elementos de cuadro de herramientas | Documentos de Microsoft"
+title: System.Activities (pestaña), elija el cuadro de diálogo de elementos de cuadro de herramientas | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07da20e7d412fc9904b6af1f36406afc9c35a9e8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (pestaña), Elegir elementos del cuadro de herramientas (cuadro de diálogo)
 Esta pestaña de la **elegir elementos del cuadro de herramientas** cuadro de diálogo muestra una lista de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] actividades, plantillas y elementos disponibles. Para mostrar esta lista, seleccione **elegir elementos del cuadro de herramientas** desde el **herramientas** menú o haciendo clic en el **cuadro de herramientas** y seleccionando **elegir elementos**para mostrar la **elegir elementos del cuadro de herramientas** cuadro de diálogo y, a continuación, seleccione su **System.Activities** ficha. De fábrica, la lista contiene actividades de flujo de trabajo de ensamblados System.Activities, System.ServiceModel.Activities y System.Activities.Core.Presentation; Sin embargo, solo proporcionados por el sistema actividades que se muestran y las actividades agregadas a través de otros ensamblados que aparecen en la **cuadro de herramientas** están activadas de forma predeterminada. Se agregó recientemente actividades se comprueban automáticamente y aparecen en la **cuadro de herramientas** al hacer clic en **Aceptar** en el cuadro de diálogo. Además, estos elementos aparecen en la **cuadro de herramientas** en una nueva categoría que corresponde al espacio de nombres donde reside la actividad/elemento/plantilla.

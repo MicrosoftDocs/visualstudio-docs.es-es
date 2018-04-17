@@ -1,13 +1,10 @@
 ---
-title: "Controla la persistencia dinámicos en documentos de Office | Documentos de Microsoft"
-ms.custom: 
+title: Controla la persistencia dinámicos en documentos de Office | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], persisting in the document
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10f5840b085ce55485734c9287972a743859c3ef
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 220a6e2c0b7e4633f91e7391448d27dddb5895c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Guardar controles dinámicos en documentos de Office
   Los controles que se agregan en tiempo de ejecución no se conservan cuando se guarda y se cierra el documento o el libro. El comportamiento exacto es diferente para los controles host y los controles de Windows Forms. En ambos casos, puede agregar código a la solución para volver a crear los controles cuando el usuario vuelve a abrir el documento.  
@@ -77,7 +74,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Almacenar información sobre el tamaño, la ubicación y el estado de los controles cuando se guarda o se cierra el documento. En una personalización de nivel de documento, puede guardar estos datos en la memoria caché de datos del documento. En un complemento VSTO, puede guardar estos datos en una parte XML personalizada del documento.  
   
-2.  Volver a crear los controles en un evento que se genera cuando se abre el documento. En los proyectos de nivel de documento, puede hacerlo el `Sheet`  *n*  `_Startup` o `ThisDocument_Startup` controladores de eventos. En proyectos de complemento de VSTO, puede hacerlo en los controladores de eventos de los eventos <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .  
+2.  Volver a crear los controles en un evento que se genera cuando se abre el documento. En los proyectos de nivel de documento, puede hacerlo en los controladores de eventos `Sheet`*n*`_Startup` o `ThisDocument_Startup` En proyectos de complemento de VSTO, puede hacerlo en los controladores de eventos de los eventos <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .  
   
 ###  <a name="removingActiveX"></a> Quitar contenedores de ActiveX en un complemento  
  Cuando se agregan controles de formularios Windows Forms dinámicos a documentos mediante un complemento de VSTO, puede impedir que los contenedores de ActiveX de los controles aparezcan en el documento la siguiente vez que se abra, como se indica a continuación.  

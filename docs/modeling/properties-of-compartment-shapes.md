@@ -1,25 +1,23 @@
 ---
 title: Propiedades de las formas de compartimiento | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e87af6c7b95fc05ab7e018f4b9adeb0ea9708868
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17e3b9dcc045cbcf1d2e0f2553c925bb99573865
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-compartment-shapes"></a>Propiedades de las formas de compartimiento
 Formas de compartimiento son una de las formas en que se puede usar para mostrar una clase de dominio en un lenguaje específico de dominio. Puede expandir y contraer los compartimientos.  

@@ -1,13 +1,10 @@
 ---
-title: "Publicar (página), proyecto de diseñador (desarrollo de Office en Visual Studio) | Documentos de Microsoft"
-ms.custom: 
+title: Publicar (página), proyecto de diseñador (desarrollo de Office en Visual Studio) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.Publish.2007System
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Property Pages dialog box, Publish [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9cc3fa102c0552893c6f7859a256b7df26e3af5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publicar (página), Diseñador de proyectos (Desarrollo de Office en Visual Studio)
   La página **Publicar** del **Diseñador de proyectos** se usa para configurar las propiedades de la implementación.  
@@ -44,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativa (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://*nombreDeServidor/nombreDeCarpeta*).  
   
- De forma predeterminada, la ubicación de publicación es *http://localhost/nombreDelProyecto/* si tiene IIS instalado o el directorio publish\ si no tiene IIS instalado.  
+ De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o el directorio publish\ si lo hace no tiene IIS instalado.  
   
  **Dirección URL de la carpeta de instalación**  
  Opcional.  

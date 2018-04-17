@@ -1,10 +1,8 @@
 ---
 title: 'Diagramas de dependencia: Hacer referencia | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -20,20 +18,20 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5185b391d0374754675999bff02438efd8de83e4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1a4ca32a85db34fa03a2ec5e52446707938b0304
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependencia: referencia
 En Visual Studio, puede usar un *diagrama de dependencia* para visualizar la arquitectura lógica de alto nivel del sistema. Un diagrama de dependencia organiza los artefactos físicos en el sistema en grupos lógicos y abstractos denominados *capas*. Estas capas describen las tareas principales que realizan los artefactos o los componentes principales del sistema. Cada capa también puede contener capas anidadas que describen tareas más detalladas.  
   
- Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Se pueden especificar las dependencias planeadas o existentes entre las capas. Estas dependencias, que se representan como flechas, indican qué capas pueden usar o usan actualmente la funcionalidad representada por otras capas. El sistema se organizan en capas que se describen los distintos roles y funciones, un diagrama de dependencia puede ayudar a que sea más fácil para que pueda entender y mantener el código.  
   
@@ -54,7 +52,7 @@ En Visual Studio, puede usar un *diagrama de dependencia* para visualizar la arq
   
  La tabla siguiente describen los elementos que puede usar en un diagrama de dependencia.  
   
-|**Shape**|**Element**|**Descripción**|  
+|**Forma**|**Element**|**Descripción**|  
 |---------------|-----------------|---------------------|  
 |1|**Capa**|Grupo lógico de artefactos físicos del sistema. Estos artefactos pueden ser espacios de nombres, proyectos, clases, métodos, etc.<br /><br /> Para ver los artefactos que están vinculados a una capa, abra el menú contextual de la capa y, a continuación, elija **ver vínculos** para abrir **Explorador de capas**.<br /><br /> Para obtener más información, consulte [Explorador de capas](#Explorer).<br /><br /> -   **Prohibido Namespace dependencias** -especifica qué artefactos asociados a esta capa no pueden depender de los espacios de nombres especificados.<br />-   **Prohibido espacios de nombres** -especifica qué artefactos asociados a esta capa no deben pertenecer a los espacios de nombres especificados.<br />-   **Requiere los espacios de nombres** -especifica qué artefactos asociados a esta capa deben pertenecer a uno de los espacios de nombres especificados.|  
 |2|**Dependencia**|Indica que una capa puede usar la funcionalidad de otra capa, pero no viceversa.<br /><br /> -   **Dirección** -especifica la dirección de la dependencia.|  
@@ -62,7 +60,7 @@ En Visual Studio, puede usar un *diagrama de dependencia* para visualizar la arq
 |4|**Comentario**|Use esta opción para agregar notas generales al diagrama o elementos del diagrama.|  
 |5|**Vínculo de comentario**|Se usa para vincular comentarios a elementos del diagrama.|  
   
-##  <a name="Explorer"></a>Explorador de capas  
+##  <a name="Explorer"></a> Explorador de capas  
  Puede vincular cada capa a artefactos de la solución, como proyectos, clases, espacios de nombres, archivos de proyecto y otros elementos del software. El número de una capa muestra el número de artefactos vinculados a ella. Sin embargo, cuando lea el número de artefactos de una capa, recuerde lo siguiente:  
   
 -   Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.  

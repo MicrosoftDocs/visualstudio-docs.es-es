@@ -1,13 +1,10 @@
 ---
-title: "Cómo: personalizar una característica de SharePoint | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: personalizar una característica de SharePoint | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner.SwitchView
 - VS.SharePointTools.RAD.featureDesigner.Manifest
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: adb4283a56715da704df8991543ea89c6cbc79a4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f22ec947e9aa3cae15427915bd5aff4122a67797
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Cómo: Personalizar una característica de SharePoint
   Puede crear y personalizar las características de SharePoint mediante el Diseñador de características de Visual Studio. Por ejemplo, puede establecer el ámbito de característica y agregar otras características como dependencias. De forma predeterminada, se abre el Diseñador de características cuando se agrega una nueva característica en el Explorador de soluciones o el Explorador de paquetes de SharePoint.  

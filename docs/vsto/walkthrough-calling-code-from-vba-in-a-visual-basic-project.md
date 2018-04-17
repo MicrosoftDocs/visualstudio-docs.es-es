@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Llamar a código desde VBA en un proyecto de Visual Basic | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Llamar a código desde VBA en un proyecto de Visual Basic | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fcd52322d88b79d90d4a20888ad2bb90a379c7df
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: efb8f6c2759760fe2eb5c5d5ccf23e0942eac93a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-basic-project"></a>Tutorial: Llamar a código de VBA en un proyecto de Visual Basic
   Este tutorial muestra cómo llamar a un método en una personalización de nivel de documento para Microsoft Office Word desde el código de Visual Basic para Aplicaciones (VBA) del documento. El procedimiento implica tres pasos básicos: agregar un método a la clase de elemento host `ThisDocument` , exponer el método a código VBA y llamar al método desde código VBA del documento.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
 3.  En la cinta de opciones, haga clic en la pestaña **Desarrollador** .  
   
     > [!NOTE]  
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulta [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, consulta [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
 4.  En el grupo **Código** , haga clic en **Visual Basic**.  
   
@@ -214,15 +213,15 @@ ms.lasthandoff: 01/10/2018
 ## <a name="next-steps"></a>Pasos siguientes  
  Puede obtener más información sobre cómo llamar a código en soluciones de Office desde VBA en estos temas:  
   
--   Llamar a código en una personalización de Visual C# desde VBA. Este proceso es diferente del proceso de Visual Basic. Para obtener más información, vea [Tutorial: llamar a código desde VBA en un Visual C &#35; Proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+-   Llamar a código en una personalización de Visual C# desde VBA. Este proceso es diferente del proceso de Visual Basic. Para obtener más información, consulte [Tutorial: llamar a código desde VBA en un Visual C&#35; proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
 -   Llamar a código en un complemento de VSTO desde VBA. Para obtener más información, consulte [Tutorial: llamar a código en un complemento de VSTO desde VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programación de personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
  [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Cómo: exponer código a VBA en una Visual C &#35; Proyecto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [Tutorial: Llamar a código desde VBA en una Visual C &#35; Proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
+ [Cómo: exponer código a VBA en una C Visual&#35; proyecto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Tutorial: Llamar a código desde VBA en una C Visual&#35; proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
   
   

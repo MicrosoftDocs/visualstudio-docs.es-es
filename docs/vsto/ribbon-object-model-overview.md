@@ -1,13 +1,10 @@
 ---
-title: "Información general sobre el modelo de objetos de la cinta de opciones | Documentos de Microsoft"
-ms.custom: 
+title: Información general sobre el modelo de objetos de la cinta de opciones | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bda61cd7ca0e169a4f62fbc0c33b24e3c4ec0048
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-object-model-overview"></a>Información general sobre el modelo de objetos para la cinta de opciones
   La [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expone un modelo de objetos fuertemente tipado que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución. Por ejemplo, dinámicamente puede rellenar los controles de menú, o mostrar y ocultar controles como. También puede agregar fichas, grupos y controles a una cinta de opciones, pero solo antes de que se cargue la cinta de opciones mediante la aplicación de Office. Para obtener información, consulte [configuración de propiedades que se convierten en modo de sólo lectura](#SettingReadOnlyProperties).  
@@ -31,12 +28,12 @@ ms.lasthandoff: 01/10/2018
   
  Este modelo de objetos de la cinta de opciones consiste principalmente en la [clase Ribbon](#RibbonClass), [los eventos de Ribbon](#RibbonEvents), y [clases de controles de cinta de opciones](#RibbonControlClasses).  
   
-##  <a name="RibbonClass"></a>Clase Ribbon  
+##  <a name="RibbonClass"></a> Clase Ribbon  
  Cuando se agrega un nuevo **cinta (diseñador Visual)** elemento a un proyecto, Visual Studio agrega un **cinta** clase al proyecto. El **cinta** clase hereda de la <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> clase.  
   
  Esta clase aparece como una clase parcial que se divide entre el archivo de código de la cinta de opciones y el archivo de código del Diseñador de la cinta.  
   
-##  <a name="RibbonEvents"></a>Eventos de Ribbon  
+##  <a name="RibbonEvents"></a> Eventos de Ribbon  
  El **cinta** clase contiene los siguientes tres eventos:  
   
 |evento|Descripción|  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Permite almacenar en caché imágenes en la personalización de la cinta de opciones cuando se cargue la cinta de opciones. Puede obtener una ligera mejora del rendimiento si escribe código para almacenar en caché las imágenes de la cinta de opciones en este controlador de eventos. Para obtener más información, consulta <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Se produce cuando se cierra la instancia de la cinta de opciones.|  
   
-##  <a name="RibbonControlClasses"></a>Controles de cinta de opciones  
+##  <a name="RibbonControlClasses"></a> Controles de cinta de opciones  
  El <xref:Microsoft.Office.Tools.Ribbon> espacio de nombres contiene un tipo para cada control que se ve en la **controles de la cinta de Office** grupo de la **cuadro de herramientas**.  
   
  En la tabla siguiente muestra el tipo de cada `Ribbon` control. Para obtener una descripción de cada control, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**Pestaña**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**pestaña**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
  El <xref:Microsoft.Office.Tools.Ribbon> espacio de nombres utiliza el prefijo "Ribbon" para estos tipos para evitar un conflicto de nombres con los nombres de clases de control en el <xref:System.Windows.Forms> espacio de nombres.  
@@ -87,14 +84,14 @@ ms.lasthandoff: 01/10/2018
 |Obtiene la imagen que aparece en un control.|Use la propiedad de imagen.|  
 |Cambiar la etiqueta de un control.|Utilice la propiedad Label.|  
 |Agregar datos definidos por el usuario a un control.|Utilice la propiedad Tag.|  
-|Obtener los elementos de un <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, o<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>control.|Utilice la propiedad Items.|  
+|Obtener los elementos de un <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, o<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> control.|Utilice la propiedad Items.|  
 |Agregar elementos a un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> control.|Utilice la propiedad Items.|  
 |Agregar controles a un <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Utilice la propiedad Items.<br /><br /> Para agregar controles a la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> después de carga la cinta de opciones en la aplicación de Office, debe establecer el <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propiedad **true** antes de que se cargue la cinta de opciones en la aplicación de Office. Para obtener información, consulte [configuración de propiedades que se convierten en modo de sólo lectura](#SettingReadOnlyProperties).|  
 |Obtener el elemento seleccionado de un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use la propiedad SelectedItem. Para una <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, use el <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> propiedad.|  
 |Obtener los grupos un <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Utilice la propiedad <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|  
 |Especifique el número de filas y columnas que aparecen en un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use la <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> y <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propiedades.|  
   
-##  <a name="SettingReadOnlyProperties"></a>Establecer las propiedades que se vuelven de solo lectura  
+##  <a name="SettingReadOnlyProperties"></a> Establecer las propiedades que se vuelven de solo lectura  
  Algunas propiedades solo pueden establecerse antes de que cargue la cinta de opciones. Hay tres lugares para establecer estas propiedades:  
   
 -   En Visual Studio **propiedades** ventana.  
@@ -131,7 +128,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
-###  <a name="ReadOnlyProperties"></a>Propiedades que se vuelven de solo lectura  
+###  <a name="ReadOnlyProperties"></a> Propiedades que se vuelven de solo lectura  
  La siguiente tabla muestra las propiedades que solo se pueden establecer antes de que cargue la cinta de opciones.  
   
 > [!NOTE]  
@@ -142,14 +139,14 @@ ms.lasthandoff: 01/10/2018
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
-|**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**controlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
-|**Dinámica**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
+|**dinámica**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Grupos**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**maxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Name**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**Posición**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
@@ -186,7 +183,7 @@ ms.lasthandoff: 01/10/2018
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  
-|*remitente*|Un <xref:System.Object> que representa el control que provocó el evento.|  
+|*Remitente*|Un <xref:System.Object> que representa el control que provocó el evento.|  
 |*e*|A <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contiene un <xref:Microsoft.Office.Core.IRibbonControl>. Utilice este control para tener acceso a cualquier propiedad que no está disponible en el modelo de objetos de la cinta de opciones proporcionado la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Vea también  

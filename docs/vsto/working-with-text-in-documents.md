@@ -1,12 +1,10 @@
 ---
 title: Trabajar con texto en documentos | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 39894ff15d6c5d9f3bc3f1e725d93d52e7321c9d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 795bd5d60feb287a60cad31aa5a6e59191f0e76a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-text-in-documents"></a>Trabajar con texto en documentos
   Los temas de esta sección proporcionan procedimientos detallados y ejemplos de código para usar el modelo de objetos de Microsoft Office Word para trabajar con texto en proyectos de Office.  
@@ -51,6 +50,6 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vea también  
  [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   
- [Información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

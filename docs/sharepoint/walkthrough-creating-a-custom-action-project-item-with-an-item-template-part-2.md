@@ -1,25 +1,24 @@
 ---
-title: "Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2 | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2 | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de elementos en Visual Studio, también puede proporcionar un Asistente para la plantilla. Puede usar al Asistente para recopilar información de los usuarios cuando utilicen la plantilla para agregar una nueva instancia del elemento de proyecto a un proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Elija la **biblioteca de controles de usuario de WPF** plantilla de proyecto, asigne al proyecto **ItemTemplateWizard**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **ItemTemplateWizard** proyecto a la solución.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **ItemTemplateWizard** proyecto a la solución.  
   
 6.  Elimine el elemento UserControl1 del proyecto.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Para obtener más información sobre la `WizardExtension` elemento, vea [WizardExtension (elemento) &#40; Plantillas de Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Para obtener más información sobre la `WizardExtension` elemento, vea [WizardExtension (elemento) &#40;plantillas de Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Guarde y cierre el archivo.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      El **configuración de la lista** aparecerá la página.  
   
-4.  En el **comunicaciones** encabezado cerca de la parte superior de la página, elija la **Centro para desarrolladores de SharePoint** vincular, compruebe que el explorador abre el sitio Web http://msdn.microsoft.com/sharepoint/ default.aspx y, a continuación, cierre el explorador.  
+4.  En el **comunicaciones** encabezado cerca de la parte superior de la página, elija la **Centro para desarrolladores de SharePoint** vincular, compruebe que el explorador abre el sitio Web http://msdn.microsoft.com/sharepoint/default.aspxy, a continuación, cierre el explorador.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Limpiar el equipo de desarrollo  
  Después de probar el elemento de proyecto, quite la plantilla de elemento de proyecto de la instancia experimental de Visual Studio.  

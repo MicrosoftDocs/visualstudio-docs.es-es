@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 135f24b9-1b37-442b-9ef8-f0f2108a3212
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f412fa9afee6aa768447fc226553fd68970e646
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Vistas de flujos de trabajo secuenciales (Heredado)
 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] Proporciona un diseñador de flujo de trabajo heredado de Windows que se puede usar al destino la [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

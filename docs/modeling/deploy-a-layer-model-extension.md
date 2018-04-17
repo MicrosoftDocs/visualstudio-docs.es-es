@@ -1,24 +1,22 @@
 ---
-title: "Implementar una extensión de modelo de capas | Documentos de Microsoft"
-ms.custom: 
+title: Implementar una extensión de modelo de capas | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, deploying extensions
 - layer models, deploying extensions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 311add860016c914aab232ffad6e3a4efadb15c9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95cfb5fa4764c53c14e5884cf41165f61a063337
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implementar una extensión del modelo de capas
 Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de capas que se crean mediante Visual Studio.  
@@ -43,7 +41,7 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
 2.  Haga clic en el nombre de la extensión y, a continuación, haga clic en **desinstalar**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalar una extensión en un servidor de Team Foundation Build Server  
- [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] servidores no suelen tengan instalado Visual Studio y, por lo que no se puede instalar la extensión VSIX haciendo doble clic en él. La instalación de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] incluye algunos componentes que permiten ejecutar una extensión VSIX, pero esta se debe instalar manualmente.  
+ Los servidores de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] no tienen normalmente Visual Studio instalado y, por lo tanto, VSIX no se puede instalar haciendo doble clic en él. La instalación de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] incluye algunos componentes que permiten ejecutar una extensión VSIX, pero esta se debe instalar manualmente.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>Para instalar la extensión por capas en un servidor de [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] Server  
   
@@ -61,7 +59,7 @@ Otros usuarios de Visual Studio pueden instalar las extensiones de modelado de c
   
     -   Si ha configurado [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] para ejecutarlo en modo interactivo como un usuario concreto, puede instalarlo solo para ese usuario:  
   
-         %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
+         %LocalAppData%\Microsoft\VisualStudio\\\Extensions\Microsoft [versión]  
   
         > [!NOTE]
         >  Suele ser % LocalAppData % *DriveName*: los usuarios*nombre de usuario*AppDataLocal.  

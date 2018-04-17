@@ -1,12 +1,10 @@
 ---
 title: 'Tutorial: Insertar datos en un libro en un servidor | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 389252ed9457935c86dcaca0ce8a9a5733202d94
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7257094aa0fb29c1b03878f5ac39c3d4f4864022
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>Tutorial: Insertar datos en un libro de trabajo de un servidor
   Este tutorial muestra cómo insertar datos en un conjunto de datos que se almacena en caché en un libro de Microsoft Office Excel sin iniciar Excel, mediante la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **AdventureWorksDataSet** proyecto al **el Explorador de soluciones** y abre el **Class1.cs** o **Class1.vb** archivo de código.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **AdventureWorksDataSet** proyecto al **el Explorador de soluciones** y abre el **Class1.cs** o **Class1.vb** archivo de código.  
   
 9. En **el Explorador de soluciones**, haga clic en **Class1.cs** o **Class1.vb**y, a continuación, haga clic en **eliminar**. No es necesario este archivo para este tutorial.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Asegúrese de que **crear un nuevo documento** está seleccionada y haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]se abre la **AdventureWorksReport** libro en el diseñador y agrega el **AdventureWorksReport** proyecto al **el Explorador de soluciones**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] se abre la **AdventureWorksReport** libro en el diseñador y agrega el **AdventureWorksReport** proyecto al **el Explorador de soluciones**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Agregar el conjunto de datos a orígenes de datos en el proyecto de libro de Excel  
  Antes de poder mostrar el conjunto de datos en el libro de Excel, primero debe agregar el conjunto de datos a orígenes de datos en el proyecto de libro de Excel.  
@@ -221,7 +220,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **DataWriter** proyecto al **el Explorador de soluciones** y abre el **Program.cs** o **Module1.vb** archivo de código.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **DataWriter** proyecto al **el Explorador de soluciones** y abre el **Program.cs** o **Module1.vb** archivo de código.  
   
 ## <a name="adding-data-to-the-cached-dataset-by-using-the-console-application"></a>Agregar datos al conjunto de datos almacenado en caché mediante el uso de la aplicación de consola  
  Use la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase en la aplicación de consola para rellenar el conjunto de datos almacenado en caché en el libro con datos.  

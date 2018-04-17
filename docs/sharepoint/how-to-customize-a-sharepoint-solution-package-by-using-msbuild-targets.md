@@ -1,13 +1,10 @@
 ---
-title: "Cómo: personalizar un paquete de solución de SharePoint mediante el uso de destinos de MSBuild | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: personalizar un paquete de solución de SharePoint mediante el uso de destinos de MSBuild | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9aa26efe3002c28ec031457d2732c828eca445
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Cómo: Personalizar un paquete de solución de SharePoint con los destinos de MSBuild
   Mediante el uso de destinos de MSBuild en un símbolo del sistema, puede personalizar el modo en que Visual Studio crea los archivos de paquete de SharePoint (.wsp). Por ejemplo, puede personalizar las propiedades de MSBuild para cambiar el directorio intermedio del paquete y los grupos de elementos de MSBuild que especifican los archivos enumerados.  
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Abra el proyecto, abra el menú contextual y, a continuación, elija **descargar el proyecto**.  
   
-4.  En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **editar***ProjectName***.vbproj** o **Editar***ProjectName***.csproj**.  
+4.  En **el Explorador de soluciones**, abra el menú contextual para el proyecto y, a continuación, elija **editar***ProjectName***.vbproj** o **editar***ProjectName*** .csproj**.  
   
 5.  Después de la `Import` línea cerca del final del archivo del proyecto, agregue la siguiente línea.  
   

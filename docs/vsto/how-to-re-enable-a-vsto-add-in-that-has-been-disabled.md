@@ -1,13 +1,10 @@
 ---
-title: "Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: volver a habilitar un complemento de VSTO que se ha deshabilitado | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], enabling
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2f86906db578987ec81e35aa8c49abd62b5e88f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 25344d23e0c9f1d6d237d008b0f6b18372490d04
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Cómo: Volver a habilitar un complemento de VSTO que se ha deshabilitado
   Las aplicaciones de Microsoft Office pueden deshabilitar los complementos de VSTO que se comporten de forma inesperada. Si una aplicación no carga el complemento de VSTO cuando intenta depurarlo, la aplicación podría haber deshabilitado total o parcialmente el complemento de VSTO.  

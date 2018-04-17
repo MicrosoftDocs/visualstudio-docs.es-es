@@ -1,10 +1,8 @@
 ---
 title: T4 Directivas de plantilla de texto | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, import directive
 - text templates, include directive
@@ -14,15 +12,15 @@ helpviewer_keywords:
 - text templates, template directive
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 785cebbb2b0280dd5025eb945d0db776018e46ad
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1ebe8e7f4872e36fb24987467b76adb6f65d2ed5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-text-template-directives"></a>Directivas de plantilla de texto T4
 Las directivas proporcionan instrucciones al motor de transformación de plantillas de texto.  

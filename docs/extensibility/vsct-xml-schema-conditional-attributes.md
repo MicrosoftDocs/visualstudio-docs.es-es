@@ -1,26 +1,24 @@
 ---
 title: Atributos condicionales de esquema XML VSCT | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 75b593110f68cd559717ae87920e898f39cdeb43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 975ca2f5fa6f070baf07b26cbfa0d8c3aa3b67d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atributos condicionales de esquema XML de VSCT
 Atributos condicionales pueden aplicarse a todas las listas y los elementos. Expresiones de expansión de símbolos y operadores lógicos se evalúan como true o false. Si es true, el elemento o la lista asociada se incluye en el resultado.  
@@ -34,7 +32,7 @@ Atributos condicionales pueden aplicarse a todas las listas y los elementos. Exp
 ## <a name="operators"></a>Operadores  
  Los siguientes operadores pueden utilizarse para evaluar expresiones condicionales.  
   
-|Operador|Definición|  
+|Operador|de esquema JSON|  
 |--------------|----------------|  
 |(,)|Agrupar|  
 |!|NOT lógico|  

@@ -1,12 +1,10 @@
 ---
-title: "Cómo: guardar documentos de Visio mediante programación | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: guardar documentos de Visio mediante programación | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], saving Visio documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c255c481123ef4159d63ad87d9c8fa2ac97cbdae
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7a98ff5a7b7df6e2e609ac2d3bf89d7fd4b23648
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Cómo: Guardar documentos de Visio mediante programación
   Hay varias formas de guardar documentos de Microsoft Office Visio:  

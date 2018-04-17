@@ -1,12 +1,10 @@
 ---
-title: "Asistente para publicación (desarrollo de Office en Visual Studio) | Documentos de Microsoft"
-ms.custom: 
+title: Asistente para publicación (desarrollo de Office en Visual Studio) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (Desarrollo de Office en Visual Studio)
   Use la **Asistente para publicación** para copiar archivos de la solución en una ubicación especificada, crear los archivos de manifiesto y crear un programa de instalación.  
@@ -45,9 +44,9 @@ ms.lasthandoff: 01/10/2018
   
 -   Una ruta de acceso de convención de nomenclatura Universal (UNC), como \\\ServerName\MyApplication\\.  
   
--   Una dirección URL de un sitio web, como http://www.microsoft.com/MyApplication.  
+-   Una dirección URL de un sitio web del sitio, como http://www.microsoft.com/MyApplication.  
   
- De forma predeterminada, la ubicación de publicación es *http://localhost/nombreDelProyecto/* si tiene IIS instalado o el directorio publish\ si no tiene IIS instalado.  
+ De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o el directorio publish\ si lo hace no tiene IIS instalado.  
   
 > [!NOTE]  
 >  Existen consideraciones más si el equipo de destino está ejecutando Windows Vista. Debe ser un administrador en el equipo de Windows Vista para usar la opción de publicación local. Además, la ubicación predeterminada es siempre el *publicar\\*  directorio, independientemente de si tiene IIS instalado.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Publicar la página, Diseñador de proyectos &#40; desarrollo de Office en Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Panel publicar, Diseñador de proyectos &#40;desarrollo de Office en Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Implementación de una solución de Office](../vsto/deploying-an-office-solution.md)  
   
   

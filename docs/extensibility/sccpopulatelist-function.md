@@ -1,29 +1,25 @@
 ---
-title: "Función SccPopulateList | Documentos de Microsoft"
-ms.custom: 
+title: Función SccPopulateList | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
 - SccPopulateList function
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 474bb834d36661c7cd85b98db78c13f619d7cba6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26e7bbb4a99c3cd649eedb7638feb5b6170b3b59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (función)
 Esta función actualiza una lista de archivos para un comando de control de origen determinado y proporciona el estado del control de código fuente en todos los archivos determinados.  

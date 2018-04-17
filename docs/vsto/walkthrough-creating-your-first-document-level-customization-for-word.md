@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Crear la primera personalización de nivel de documento para Word | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Crear la primera personalización de nivel de documento para Word | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9bb85c10b2a66741bf0405d4a1313fb2343a708b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Tutorial: Crear la primera personalización en el nivel del documento para Word
   En este tutorial introductorio se muestra cómo crear una personalización de nivel de documento para Microsoft Office Word. Las características que se crean en este tipo de solución solo están disponibles cuando se abre un documento concreto. No puede usar una personalización de nivel de documento para efectuar cambios en toda la aplicación, por ejemplo, para mostrar una nueva pestaña de la cinta de opciones cuando se abre un documento.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Seleccione **crear un nuevo documento**y haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crea el **FirstDocumentCustomization** proyecto y agrega el **FirstDocumentCustomization** documento y el archivo de código ThisDocument al proyecto. El **FirstDocumentCustomization** documento se abre automáticamente en el diseñador.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el **FirstDocumentCustomization** proyecto y agrega el **FirstDocumentCustomization** documento y el archivo de código ThisDocument al proyecto. El **FirstDocumentCustomization** documento se abre automáticamente en el diseñador.  
   
 ## <a name="closing-and-reopening-the-document-in-the-designer"></a>Cerrar y volver a abrir el documento en el diseñador  
  Puede volver a abrir el documento si lo cierra deliberada o accidentalmente en el diseñador mientras está desarrollando el proyecto.  
@@ -158,7 +157,7 @@ ms.lasthandoff: 01/10/2018
 -   Implementar personalizaciones de nivel de documento para Word: [implementar una solución de Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Soluciones de Word](../vsto/word-solutions.md)   
  [Programación de personalizaciones de nivel de documento](../vsto/programming-document-level-customizations.md)   
  [Información general sobre el modelo de objetos de Word](../vsto/word-object-model-overview.md)   

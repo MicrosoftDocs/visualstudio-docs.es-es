@@ -2,23 +2,20 @@
 title: Áreas de trabajo y servicios de lenguaje en Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 02/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8631ffea-83c8-4fd4-a01e-c59772e89c84
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59cf2936311bb94c2db1ada6a7a3d5ccf994f027
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 551a621ab97c232970d6ef67da14379c5cdfbd46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="workspaces-and-language-services"></a>Áreas de trabajo y servicios de lenguaje
 
@@ -30,7 +27,7 @@ En un [área de trabajo](workspaces.md), servicios de lenguaje se inicializan me
 
 Cuando se abre un documento en el editor, Visual Studio sólo considera lenguaje proveedores de servicios que requieren tipos de contexto de archivo para el que se puede encontrar un proveedor de contexto de archivo coincidente. A continuación, pasa los contextos de archivo desde el proveedor o proveedores de búsqueda de coincidencias para el proveedor de servicios de idioma seleccionado a través de `ILangaugeServiceProvider.InitializeAsync`. Lo que hace el proveedor de servicios de lenguaje con que los datos de contexto de archivo están un detalle de implementación del proveedor de servicios de lenguaje, pero la experiencia del usuario esperado es un servicio de lenguaje más enriquecido para abre el documento.
 
-## <a name="using-ilanguageserviceprovider"></a>Using ILanguageServiceProvider
+## <a name="using-ilanguageserviceprovider"></a>Usar ILanguageServiceProvider
 
 El servicio de lenguaje se notificará cuando se crea un contexto de archivo con un `ContextType` que coincide con uno de los `SupportedContextTypes` valores del servidor idioma exportación (atributo).
 

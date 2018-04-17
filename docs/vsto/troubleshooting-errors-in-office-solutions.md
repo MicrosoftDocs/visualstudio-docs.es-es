@@ -1,13 +1,10 @@
 ---
-title: "Solución de problemas de errores en las soluciones de Office | Documentos de Microsoft"
-ms.custom: 
+title: Solución de problemas de errores en las soluciones de Office | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Solucionar problemas de errores de las soluciones de Office
   Pueden surgir problemas al realizar las siguientes tareas mientras desarrolla soluciones de Office en Visual Studio:  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Depurar proyectos](#debugging)  
   
-##  <a name="creating"></a>Crear, actualizar y abrir proyectos  
+##  <a name="creating"></a> Crear, actualizar y abrir proyectos  
  Pueden producirse los siguientes errores al crear o abrir proyectos de Office.  
   
 ### <a name="the-project-cannot-be-created"></a>No se puede crear el proyecto  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Cuando termine de actualizar el proyecto, puede desinstalar Visual Studio 2005 Tools para Office Second Edition Runtime en el equipo de desarrollo si no lo usa ninguna otra solución de Office.  
   
-##  <a name="designers"></a>Mediante los diseñadores  
+##  <a name="designers"></a> Mediante los diseñadores  
  Podría encontrar los siguientes errores al trabajar con el documento, el libro o el diseñador de hojas de cálculo en proyectos de nivel de documento.  
   
 ### <a name="designer-failed-to-load-correctly"></a>El diseñador no se cargó correctamente  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  Aunque haya importado el espacio de nombres de Word o Excel y tener acceso a todas las clases dentro de él, debe calificar totalmente todos los tipos con Word o Excel para eliminar la ambigüedad del espacio de nombres.  
   
-##  <a name="building"></a>Compilar proyectos  
+##  <a name="building"></a> Compilar proyectos  
  Pueden producirse los siguientes errores al compilar proyectos de Office.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>No se puede compilar un proyecto de nivel de documento basado en un documento con permisos restringidos  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Se producen errores del compilador después de eliminar un control NamedRange  
  Si elimina un control <xref:Microsoft.Office.Tools.Excel.NamedRange> de una hoja de cálculo que no es la hoja de cálculo activa en el diseñador, el código generado automáticamente podría no quitarse del proyecto y podrían producirse errores del compilador. Para asegurarse de que se quita el código, siempre debe seleccionar la hoja de cálculo que contiene el control <xref:Microsoft.Office.Tools.Excel.NamedRange> para convertirla en la hoja de cálculo activa antes de eliminar el control. Si el código generado automáticamente no se elimina cuando se elimina el control, puede hacer que el diseñador elimine el código activando la hoja de cálculo y realizando un cambio de modo que la hoja quede marcada como modificada. Cuando vuelva a compilar el proyecto, el código se quita.  
   
-##  <a name="debugging"></a>Depurar proyectos  
+##  <a name="debugging"></a> Depurar proyectos  
  Pueden producirse los siguientes errores al depurar proyectos de Office.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Se pide confirmación para desinstalar al publicar e instalar una solución en el equipo de desarrollo  

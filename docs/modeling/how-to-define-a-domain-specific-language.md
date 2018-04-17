@@ -1,10 +1,8 @@
 ---
-title: "Cómo definir un lenguaje específico de dominio | Documentos de Microsoft"
-ms.custom: 
+title: Cómo definir un lenguaje específico de dominio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -16,27 +14,27 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 57ae6465ec8d9fbbe85ff1f040d69b227c6a76fe
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5cff720949f6b521b35fb68154ff3b3b43f14a8d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 Para definir un lenguaje específico de dominio (DSL), cree una solución de Visual Studio desde una plantilla. La parte clave de la solución es el diagrama DSL Definition (Definición de DSL), que se almacena en DslDefinition.dsl. DSL Definition (Definición de DSL) define las clases y las formas del DSL. Después de modificar y agregar estos elementos, puede agregar código de programa para personalizar el DSL con más detalle.
 
 Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL herramientas laboratorio**, que encontrará en este sitio: [Visualizaton y SDK de modelado](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a>Selección de una solución de plantilla  
+##  <a name="templates"></a> Selección de una solución de plantilla  
  Para definir un DSL, debe tener instalados los siguientes componentes:  
   
 |||  
 |-|-|  
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Programa para la mejora|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |SDK de Visual Studio de visualización y modelado||  
 
@@ -123,7 +121,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
  Elimine o cambie el nombre de otras clases para que se ajusten a sus necesidades.  
   
-##  <a name="patterns"></a>Patrones para definir un DSL  
+##  <a name="patterns"></a> Patrones para definir un DSL  
  Le recomendamos que desarrolle un DSL agregando o ajustando una o dos características cada vez. Agregue una característica, ejecute el DSL y pruébelo y, después, agregue una o dos características más. Una característica típica de su DSL podría ser:  
   
 -   Una clase de dominio, la relación de incrustación que conecta el elemento con el modelo, la forma necesaria para mostrar elementos de esa clase en el diagrama y la herramienta de elemento que permite a los usuarios crear elementos.  
@@ -150,7 +148,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 > [!NOTE]
 >  Con "modelo" nos referimos a una instancia de su DSL que los usuarios crean y que normalmente se muestra como un diagrama. En este tema se explican tanto el diagrama DSL Definition (Definición de DSL) como los diagramas de modelo que aparecen cuando se usa su DSL.  
   
-##  <a name="classes"></a>Definir clases de dominio  
+##  <a name="classes"></a> Definir clases de dominio  
  Las clases de dominio representan los conceptos de su DSL. Las instancias son *elementos del modelo*. Por ejemplo, en un **MusicLibrary** DSL podría tener clases de dominio denominado **álbum** y **canción**.  
   
  Para crear una clase de dominio, puede arrastrar desde el **clase con el nombre de dominio** de herramientas al diagrama y, a continuación, cambiar el nombre de la clase.  
@@ -232,7 +230,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
 7.  **Guarde el archivo, ciérrelo y vuelva a abrirlo**. Después de expandir los nodos en el explorador, todas las instancias creadas deben ser visibles.  
   
-##  <a name="shapes"></a>Definir formas en el diagrama  
+##  <a name="shapes"></a> Definir formas en el diagrama  
  Puede definir clases de elementos que aparecen en un diagrama, como rectángulos, elipses o iconos.  
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Para definir una clase de elementos que aparecen como formas en un diagrama  
@@ -328,7 +326,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
  Después de probar una forma por primera vez, quizás quiera ajustar algunas de sus propiedades y agregar algunas características más avanzadas. Para obtener más información, consulte [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="references"></a>Definir relaciones de referencia  
+##  <a name="references"></a> Definir relaciones de referencia  
  Puede definir una relación de referencia entre cualquier clase de dominio de origen y cualquier clase de dominio de destino. Las relaciones de referencia suelen mostrarse en un diagrama como conectores, que son líneas entre formas.  
   
  Por ejemplo, si los álbumes y los artistas se muestran como formas en el diagrama, podría definir una relación llamada ArtistsAppearedOnAlbums que vincula los artistas con los álbumes en los que han trabajado. Vea el ejemplo en la figura.  
@@ -410,7 +408,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
  Después de probar un conector por primera vez, quizás quiera ajustar algunas de sus propiedades y agregar algunas características más avanzadas. Para obtener más información, consulte [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="compartments"></a>Definir formas que contienen listas: compartimiento de formas  
+##  <a name="compartments"></a> Definir formas que contienen listas: compartimiento de formas  
  Una forma de compartimiento contiene una o varias listas de elementos. Por ejemplo, en un DSL de biblioteca de música, podría usar formas de compartimiento para representar álbumes de música. En cada álbum, hay una lista de canciones.  
   
  ![Forma de compartimiento](../modeling/media/compartmentshape.png "CompartmentShape")  
@@ -538,7 +536,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
 7.  Seleccione el vínculo o el elemento en la forma de compartimiento. Deben desaparecer tanto el vínculo como el elemento.  
   
-##  <a name="ports"></a>Definir los puertos en el límite de otra forma  
+##  <a name="ports"></a> Definir los puertos en el límite de otra forma  
  Un puerto es una forma que está situada en los límites de otra forma.  
   
  Los puertos se pueden usar para proporcionar un punto de conexión fijo en otra forma al cual el usuario puede dibujar conectores. En este caso, puede hacer que la forma de puerto sea transparente.  
@@ -561,7 +559,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
  Para obtener más información, consulte [formas de propiedades de puerto](../modeling/properties-of-port-shapes.md).  
   
-##  <a name="swimlanes"></a>Definir un DSL que tiene las calles  
+##  <a name="swimlanes"></a> Definir un DSL que tiene las calles  
  Las calles son una partición horizontal o vertical de un diagrama. Cada calle corresponde a un elemento de modelo. Su definición de DSL requiere una clase de dominio para los elementos de calle.  
   
  La mejor manera de crear un DSL con calles es crear una nueva solución de DSL y elegir la plantilla de solución Task Flow (Flujo de tareas). En la definición de DSL, la clase Actor es la clase de dominio asignada a la calle. Cambie el nombre de esta y otras clases para adaptarlas a su proyecto.  
@@ -572,7 +570,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
  Para obtener más información, consulte [propiedades de calles](../modeling/properties-of-swimlanes.md).  
   
-##  <a name="addTypes"></a>Agregar tipos de propiedad  
+##  <a name="addTypes"></a> Agregar tipos de propiedad  
   
 ### <a name="domain-enumerations-and-literals"></a>Literales y enumeradores de dominio  
  Una enumeración de dominio es un tipo con varios valores literales.  
@@ -588,7 +586,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
  Para agregar un tipo, haga clic en la raíz del modelo en el Explorador de DSL y, a continuación, haga clic en **Agregar nuevo tipo externo**. En la ventana Propiedades, establezca el nombre en **Color** y el espacio de nombres **System.Drawing**. Este tipo se muestra ahora en el Explorador de DSL en **tipos de dominio**. Puede elegirlo siempre que establezca el tipo de una propiedad de dominio.  
   
-##  <a name="custom"></a>Personalización de DSL  
+##  <a name="custom"></a> Personalización de DSL  
  Con las técnicas descritas en este tema, puede crear rápidamente un DSL con una notación en forma de diagrama, un formato XML legible, y las herramientas básicas que se necesitan para generar código y otros artefactos.  
   
  Hay dos métodos para extender la definición de DSL:  
@@ -608,7 +606,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
   
  Vea también [Cómo: cambiar el Namespace de un lenguaje específico de dominio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).  
   
-##  <a name="trouble"></a>Solución de problemas  
+##  <a name="trouble"></a> Solución de problemas  
  En la tabla siguiente se enumeran algunos de los problemas más comunes que se encuentran al diseñar un DSL, además de sugerencias para solucionarlos. Más sugerencias está disponible en la [foro de extensibilidad de herramientas de visualización](http://go.microsoft.com/fwlink/?LinkId=186074).  
   
 |Problema|Sugerencia|  

@@ -1,24 +1,22 @@
 ---
 title: 'Tutorial: Conectar un Host a un procesador de directivas generado | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b506957c80b1e678bab75afedb8a50621d611220
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b9180ba4c12c279667f1678d8f3ef489815b865d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Tutorial: Conectar un host a un procesador de directivas personalizadas
 Puede escribir su propio host que procesa las plantillas de texto. Un host personalizado básico se muestra en [Tutorial: crear un Host de plantilla de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Puede ampliar ese host para agregar funciones, como la generación de varios archivos de salida.  

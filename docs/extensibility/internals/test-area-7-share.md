@@ -1,26 +1,24 @@
 ---
 title: 'Zona de ensayo 7: Compartir de | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f87ff08ea8d5e325ac66d923300927b59ab06452
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fa74d6ff2291288a1ca0e7f17a2edb1e126f222b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="test-area-7-share"></a>Probar el área 7: recurso compartido
 Esta área de ensayo trata para compartir elementos entre las ubicaciones a través de la **recurso compartido** comando.  

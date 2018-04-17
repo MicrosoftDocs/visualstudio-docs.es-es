@@ -1,5 +1,5 @@
 ---
-title: "Cómo: crear una condición de regla declarativa (heredado) | Documentos de Microsoft"
+title: 'Cómo: crear una condición de regla declarativa (heredado) | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 804b6129-c433-408f-a424-46987967730c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd288086ffce4474c86cc4e87178ea173ff2e43
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Cómo: Crear una condición de regla declarativa (Heredado)
 Este tema describe cómo declarar una condición de regla mediante el Diseñador de flujo de trabajo de Windows heredado que tiene como destino el [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

@@ -1,27 +1,23 @@
 ---
-title: "Proporcionando compatibilidad a los diseñadores de deshacer | Documentos de Microsoft"
-ms.custom: 
+title: Proporcionando compatibilidad a los diseñadores de deshacer | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>Proporcionar soporte técnico de deshacer para diseñadores
 Diseñadores, como editores, normalmente se necesitan admitir las operaciones de deshacer, que los usuarios pueden invertir los cambios recientes cuando se modifica un elemento de código.  
@@ -30,7 +26,7 @@ Diseñadores, como editores, normalmente se necesitan admitir las operaciones de
   
  Implementaciones de diseñadores que necesitan para proporcionar compatibilidad con la característica de deshacer:  
   
--   Proporcionar administración de deshacer mediante la implementación de la clase base abstracta<xref:System.ComponentModel.Design.UndoEngine>  
+-   Proporcionar administración de deshacer mediante la implementación de la clase base abstracta <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   Proporcione persistencia y CodeDOM admiten implementando la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> y <xref:System.ComponentModel.Design.IComponentChangeService> clases.  
   
@@ -73,7 +69,7 @@ Diseñadores, como editores, normalmente se necesitan admitir las operaciones de
   
  El SDK del entorno proporciona compatibilidad con CodeDOM y persistencia proporcionando:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>como un implementaciones de la<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> como un implementaciones de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  A <xref:System.ComponentModel.Design.IComponentChangeService> proporcionada por el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]"host de diseño.  
   
@@ -100,7 +96,7 @@ Diseñadores, como editores, normalmente se necesitan admitir las operaciones de
   
 -   Cambios de propiedad se realizan a través del <xref:System.ComponentModel.TypeDescriptor> objeto.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>eventos se generan manualmente cuando se confirma un cambio que se pueden deshacer.  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> eventos se generan manualmente cuando se confirma un cambio que se pueden deshacer.  
   
 -   Modificación en el diseñador se creó en el contexto de un <xref:System.ComponentModel.Design.DesignerTransaction>.  
   

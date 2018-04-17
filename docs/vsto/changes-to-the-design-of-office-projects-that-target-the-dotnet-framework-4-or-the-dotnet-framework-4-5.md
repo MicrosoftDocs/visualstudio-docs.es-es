@@ -1,13 +1,10 @@
 ---
-title: "Cambios en el diseño de proyectos de Office destinados a .NET Framework 4 o .NET Framework 4.5 | Documentos de Microsoft"
-ms.custom: 
+title: Cambios en el diseño de proyectos de Office destinados a .NET Framework 4 o .NET Framework 4.5 | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Cambios en el diseño de proyectos de Office destinados a .NET Framework 4 o .NET Framework 4.5
   A partir de [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio introdujo algunos cambios en el diseño de los proyectos de Office destinados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores. Si está familiarizado con los proyectos de Office en versiones anteriores de Visual Studio, debe tener en cuenta estos cambios a la hora de desarrollar proyectos de Office destinados a esas versiones de .NET Framework 4.0 o versiones posteriores. De forma predeterminada, todos los proyectos creados con Visual Studio 2013 o versiones posteriores van destinados a .NET Framework 4.0 o versiones posteriores.  
@@ -59,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |Ha cambiado la sintaxis de los métodos HasVstoObject y GetVstoObject|Debe pasar el objeto Globals.Factory a estos métodos cuando se accede a ellos en objetos nativos de los ensamblados de interoperabilidad primarios (PIA), o puede tener acceso a estos métodos en el objeto devuelto por la propiedad Globals.Factory en el proyecto. Para obtener más información, consulte [actualizar proyectos de Excel y Word para migrarlos a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Los eventos de controles de contenido de Word se asocian a nuevos delegados.|Tiene que modificar el código que controle eventos de controles de contenido de Word para especificar los nuevos delegados. Para obtener más información, consulte [actualizar proyectos de Excel y Word para migrarlos a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Las clases OLEObject y OLEControl han cambiado de nombre.|Tiene que modificar cualquier código que use instancias de estas clases para utilizar los objetos <xref:Microsoft.Office.Tools.Excel.ControlSite> o <xref:Microsoft.Office.Tools.Word.ControlSite> en su lugar. Para obtener más información, consulte [actualizar proyectos de Excel y Word para migrarlos a .NET Framework 4 o .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Clases de elemento host como `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, y `ThisAddIn`, dejará de proporcionar un método Dispose que se pueda reemplazar.|Debe migrar cualquier código en la invalidación del método Dispose en el controlador de eventos de apagado de la clase de elemento host, por ejemplo, `ThisAddIn_Shutdown`y quitar la invalidación del método Dispose de la clase de elemento host.|  
+|Clases de elemento host como `ThisWorkbook`, `Sheet` *n*, `ThisDocument`, y `ThisAddIn`, dejará de proporcionar un método Dispose que se pueda reemplazar.|Debe migrar cualquier código en la invalidación del método Dispose en el controlador de eventos de apagado de la clase de elemento host, por ejemplo, `ThisAddIn_Shutdown`y quitar la invalidación del método Dispose de la clase de elemento host.|  
   
 ## <a name="see-also"></a>Vea también  
  [Migración de soluciones de Office a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

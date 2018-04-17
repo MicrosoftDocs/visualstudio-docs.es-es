@@ -1,29 +1,25 @@
 ---
-title: "Función SccGetProjPath | Documentos de Microsoft"
-ms.custom: 
+title: Función SccGetProjPath | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ce41826a3a0d778c5a417496d47f290e97806fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7ef5041b483e85e0806827f7d1188d432b476c5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath (función)
 Esta función pide al usuario una ruta de acceso del proyecto, que es una cadena que solo es significativa para el complemento de control de código fuente. Se llama cuando el usuario es:  
@@ -98,14 +94,14 @@ SCCRTN SccGetProjPath (
 ## <a name="remarks"></a>Comentarios  
  El propósito de esta función es para que el IDE para adquirir los parámetros `lpProjName` y `lpAuxProjPath`. Después de que el complemento de control de código fuente pide al usuario esta información, pasa estos dos cadenas volver al IDE. El IDE conserva estas cadenas en su archivo de solución y los pasa a la [SccOpenProject](../extensibility/sccopenproject-function.md) cada vez que el usuario abre este proyecto. Estas cadenas de habiliten el complemento realizar el seguimiento de información asociada con un proyecto.  
   
- Cuando se llama primero a la función, `lpAuxProjPath` se establece en una cadena vacía. `lProjName`También puede estar vacío, o puede contener el nombre del proyecto IDE, lo que podría usar o ignorar el complemento de control de código fuente. Cuando la función devuelve correctamente, el complemento devuelve las dos cadenas correspondientes. El IDE no hace suposiciones sobre estas cadenas, no los utilizará y no permitirá al usuario modificarlos. Si el usuario desea cambiar la configuración, el IDE llamará `SccGetProjPath` nuevo, pasando los mismos valores había recibido la última vez. Esto proporciona el complemento control completo sobre estas dos cadenas.  
+ Cuando se llama primero a la función, `lpAuxProjPath` se establece en una cadena vacía. `lProjName` También puede estar vacío, o puede contener el nombre del proyecto IDE, lo que podría usar o ignorar el complemento de control de código fuente. Cuando la función devuelve correctamente, el complemento devuelve las dos cadenas correspondientes. El IDE no hace suposiciones sobre estas cadenas, no los utilizará y no permitirá al usuario modificarlos. Si el usuario desea cambiar la configuración, el IDE llamará `SccGetProjPath` nuevo, pasando los mismos valores había recibido la última vez. Esto proporciona el complemento control completo sobre estas dos cadenas.  
   
  Para `lpUser`, el IDE puede pasar un nombre de usuario o, simplemente puede pasar un puntero a una cadena vacía. Si hay un nombre de usuario, el complemento de control de origen debe usar como valor predeterminado. Sin embargo, si se ha pasado ningún nombre o error de inicio de sesión con el nombre especificado, el complemento debe preguntar al usuario para un inicio de sesión y pase el nombre nuevo en `lpUser` cuando recibe un inicio de sesión válido. Dado que el complemento puede cambiar esta cadena, el IDE siempre asignará un búfer de tamaño (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
 >  La primera acción que realiza el IDE puede ser una llamada a la `SccOpenProject` función o el `SccGetProjPath` (función). Por lo tanto, ambos tienen idéntica `lpUser` parámetro, lo que permite el control de código fuente complemento iniciar sesión del usuario en cualquier momento. Incluso si el valor devuelto de la función indica un error, el complemento debe rellenar esta cadena con un nombre de inicio de sesión válido.  
   
- `lpLocalPath`es el directorio donde el usuario guarda el proyecto. Puede ser una cadena vacía. Si no hay ningún directorio definida actualmente (como en el caso de un usuario intenta descargar un proyecto desde el sistema de control de código fuente) y si `bAllowChangePath` es `TRUE`, el complemento de control de código fuente puede preguntar al usuario para la entrada o utilizar algún otro método para colocar sus cadena en el propietario `lpLocalPath`. Si `bAllowChangePath` es `FALSE`, el complemento no debería cambiar la cadena, porque el usuario ya está trabajando en el directorio especificado.  
+ `lpLocalPath` es el directorio donde el usuario guarda el proyecto. Puede ser una cadena vacía. Si no hay ningún directorio definida actualmente (como en el caso de un usuario intenta descargar un proyecto desde el sistema de control de código fuente) y si `bAllowChangePath` es `TRUE`, el complemento de control de código fuente puede preguntar al usuario para la entrada o utilizar algún otro método para colocar sus cadena en el propietario `lpLocalPath`. Si `bAllowChangePath` es `FALSE`, el complemento no debería cambiar la cadena, porque el usuario ya está trabajando en el directorio especificado.  
   
  Si el usuario crea un nuevo proyecto se deben colocar en el control de código fuente, el complemento de control de código fuente podría no realmente crearlo en el sistema de control de código fuente en el momento `SccGetProjPath` se llama. En su lugar, pase la cadena junto con un valor distinto de cero para `pbNew`, que indica que el proyecto se creará en el sistema de control de código fuente.  
   

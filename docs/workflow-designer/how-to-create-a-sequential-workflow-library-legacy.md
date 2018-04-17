@@ -1,5 +1,5 @@
 ---
-title: "Cómo: crear una biblioteca de flujos de trabajo secuenciales (heredado) | Documentos de Microsoft"
+title: 'Cómo: crear una biblioteca de flujos de trabajo secuenciales (heredado) | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 9433ccf3-1eab-4d53-90ff-2e7b2341676c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 165f63bec8fea7ec23b7e919d0f5e6c050b9ad6d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 49ef9bd788a98178250e8830786d6301816ff616
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Cómo: Crear una biblioteca de flujos de trabajo secuenciales (Heredado)
 
@@ -27,7 +27,7 @@ Siga estos pasos para crear un proyecto de biblioteca de flujo de trabajo secuen
 
 1.  Inicie Visual Studio.
 
-2.  En el **archivo** menú, elija **New**y, a continuación, seleccione **proyecto**.
+2.  En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 

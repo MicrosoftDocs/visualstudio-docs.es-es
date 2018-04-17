@@ -1,13 +1,10 @@
 ---
 title: ListObject (Control) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - ListObject control, improving performance when bound to data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2100a1c30fda5981d3d7e58f2f5077e0cdf87a2d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ed8a11a62487e47cd86ae86b9f4126cb99b37159
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="listobject-control"></a>ListObject (control)
   El control <xref:Microsoft.Office.Tools.Excel.ListObject> es una lista que expone eventos y se puede enlazar a datos. Al agregar una lista a una hoja de cálculo, Visual Studio crea un control <xref:Microsoft.Office.Tools.Excel.ListObject> que se puede programar directamente sin tener que recorrer el modelo de objetos de Microsoft Office Excel.  
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/10/2018
  En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Excel.ListObject> a la hoja de cálculo en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento de VSTO, puede agregar controles <xref:Microsoft.Office.Tools.Excel.ListObject> a hojas de cálculo solo en tiempo de ejecución. Para obtener más información, consulta [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 > [!NOTE]  
->  De forma predeterminada, los objetos de lista creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando se cierra la hoja de cálculo. Para obtener más información, consulta [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+>  De forma predeterminada, los objetos de lista creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando se cierra la hoja de cálculo. Para obtener más información, consulta [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 ## <a name="binding-data-to-the-control"></a>Enlazar datos al control  
  Un control <xref:Microsoft.Office.Tools.Excel.ListObject> admite el enlace de datos simple y complejo. El control <xref:Microsoft.Office.Tools.Excel.ListObject> se puede enlazar a un origen de datos mediante las propiedades <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> y <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> en tiempo de diseño o el método <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> en tiempo de ejecución.  

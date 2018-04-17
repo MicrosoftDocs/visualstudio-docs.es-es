@@ -1,23 +1,21 @@
 ---
-title: "El proceso de transformación de plantillas de texto | Documentos de Microsoft"
-ms.custom: 
+title: El proceso de transformación de plantillas de texto | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e350b123f1945bdeafa7f3ff2ae3da55037922cf
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1ef32254764594d66738510c7c455f992d3a7318
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
 El proceso de transformación de plantillas de texto toma un archivo de plantilla de texto como entrada y genera un nuevo archivo de texto como salida. Por ejemplo, puede usar plantillas de texto para generar código de Visual Basic o C# o puede generar un informe HTML.  
@@ -31,7 +29,7 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
 |Componente|Descripción|Puede personalizar (Sí/No)|  
 |---------------|-----------------|------------------------------|  
 |Motor de|El componente de motor controla el proceso de transformación de plantillas de texto|No.|  
-|Host|El host es la interfaz entre el motor y el entorno del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|  
+|administrador de flujos de trabajo|El host es la interfaz entre el motor y el entorno del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] es un host del proceso de transformación de texto.|Sí. Puede escribir un host personalizado.|  
 |Procesadores de directivas|Procesadores de directivas son clases que controlan las directivas en plantillas de texto. Puede usar las directivas para proporcionar datos a una plantilla de texto desde un origen de entrada.|Sí. Puede escribir procesadores de directivas personalizadas|  
   
 ## <a name="the-engine"></a>El motor de  

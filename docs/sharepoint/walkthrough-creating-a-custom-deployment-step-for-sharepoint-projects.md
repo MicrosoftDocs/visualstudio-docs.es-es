@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint
   Al implementar un proyecto de SharePoint, Visual Studio ejecuta una serie de pasos de implementación en un orden específico. Visual Studio incluye varios pasos de implementación integrados, pero también puede crear sus propias.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Elija la **proyecto VSIX** plantilla, el nombre del proyecto **PasoImplementarActualización**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **PasoImplementarActualización** proyecto al **el Explorador de soluciones**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **PasoImplementarActualización** proyecto al **el Explorador de soluciones**.  
   
 #### <a name="to-create-the-extension-project"></a>Para crear la extensión de proyecto  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Elija la **biblioteca de clases** plantilla de proyecto, asigne al proyecto **ExtensiónPasoImplementación**y, a continuación, elija la **Aceptar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **ExtensiónPasoImplementación** proyecto a la solución y abre el archivo de código predeterminado Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **ExtensiónPasoImplementación** proyecto a la solución y abre el archivo de código predeterminado Class1.  
   
 5.  Elimine el archivo de código Class1 del proyecto.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Elija la **finalizar** botón.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crea el proyecto DefiniciónListaEmpleados.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el proyecto DefiniciónListaEmpleados.  
   
 8.  Abra el menú contextual para el proyecto DefiniciónListaEmpleados, elija **agregar**y, a continuación, elija **nuevo elemento**.  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **Predeterminado (en blanco)** se haya elegido en el **crear una lista personalizable basada en:** lista.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crea el elemento de lista de los empleados con una columna de título y una única instancia vacía y se abre el Diseñador de la lista.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crea el elemento de lista de los empleados con una columna de título y una única instancia vacía y se abre el Diseñador de la lista.  
   
 12. En el Diseñador de la lista, en la **columnas** ficha, elija la **escriba un nombre de columna nuevo o existente** fila y, a continuación, agregue las siguientes columnas de la **nombre para mostrar columna** lista:  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      Se abre el diseñador/Editor de propiedades.  
   
-4.  En el **vistas** ficha, elija la **correo electrónico** columna y, a continuación, elija la  **<**  clave para mover dicha columna desde la **seleccionado columnas**lista para la **columnas disponibles** lista.  
+4.  En el **vistas** ficha, elija la **correo electrónico** columna y, a continuación, elija la **<** clave para mover dicha columna desde la **seleccionado columnas**lista para la **columnas disponibles** lista.  
   
      Esta acción quita estos campos de la vista predeterminada de la **empleados** lista en el sitio de SharePoint.  
   

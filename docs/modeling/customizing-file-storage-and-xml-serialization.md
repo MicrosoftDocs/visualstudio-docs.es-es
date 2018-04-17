@@ -1,25 +1,23 @@
 ---
-title: "Personalizar el almacenamiento de archivos y serialización XML | Documentos de Microsoft"
-ms.custom: 
+title: Personalizar el almacenamiento de archivos y serialización XML | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizar el almacenamiento de archivos y la serialización XML
 Cuando el usuario guarda una instancia o *modelo*, de un lenguaje específico de dominio (DSL) en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se crea o actualiza un archivo XML. Puede volver a cargar el archivo para volver a crear el modelo en el almacén.  
@@ -275,7 +273,7 @@ Cuando el usuario guarda una instancia o *modelo*, de un lenguaje específico de
 |Es personalizada|Establezca esta propiedad en **True** si desea escribir su propio código de serialización y deserialización para esta clase de dominio.<br /><br /> Compile la solución e investigar los errores para conocer las instrucciones detalladas.|  
 |Clase de dominio|Clase de dominio al que se aplica este nodo de datos de la clase. Sólo lectura.|  
 |Nombre del elemento|Nombre de nodo de XML para los elementos de esta clase. El valor predeterminado es una versión en minúscula del nombre de clase de dominio.|  
-|Nombre del atributo moniker|Nombre del atributo que se usa en elementos de moniker para contener la referencia. Si está en blanco, se usa el nombre de la propiedad de clave o identificador.<br /><br /> En este ejemplo, es "name":`<personMoniker name="/Mike Nash"/>`|  
+|Nombre del atributo moniker|Nombre del atributo que se usa en elementos de moniker para contener la referencia. Si está en blanco, se usa el nombre de la propiedad de clave o identificador.<br /><br /> En este ejemplo, es "name":  `<personMoniker name="/Mike Nash"/>`|  
 |Nombre del elemento moniker|Nombre del elemento xml utilizado para monikers que hacen referencia a los elementos de esta clase.<br /><br /> El valor predeterminado es una versión en minúsculas del nombre de clase que lleva el sufijo "Moniker". Por ejemplo: `personMoniker`.|  
 |Nombre del tipo moniker|Nombre del tipo xsd generado para monikers a los elementos de esta clase. Es el esquema XSD en **Dsl\Generated código\\\*Schema.xsd**|  
 |Serializar el Id.|Si es True, el GUID de elemento se incluye en el archivo. Debe ser true si no hay ninguna propiedad que se marca **es la clave de Moniker** y DSL define las relaciones de referencia para esta clase.|  

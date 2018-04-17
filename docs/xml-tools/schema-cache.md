@@ -1,23 +1,21 @@
 ---
-title: "Caché de esquema | Documentos de Microsoft"
-ms.custom: 
+title: Caché de esquema | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>Caché de esquema
 El Editor XML proporciona una caché de esquema que está ubicada en el directorio %InstallRoot%\Xml\Schemas. La caché de esquema es global para todos los usuarios de un equipo e incluye esquemas XML estándar que se utilizan en IntelliSense y en la validación de documentos XML.  
@@ -34,17 +32,17 @@ El Editor XML proporciona una caché de esquema que está ubicada en el director
 |msdata.xsd|Esquema para las anotaciones XSD que agrega la clase <xref:System.Data.DataSet>, "urn:schemas-microsoft-com:xml-msdata".|  
 |msxsl.xsd|Esquema para las extensiones de bloque de script XSLT de Microsoft, urn:schemas-microsoft-com:xslt.|  
 |SnippetFormat.xsd|Esquema para los archivos XML de fragmento de código. Para obtener ejemplos, vea %InstallDir%\VC#\Expansions.|  
-|Soap1.1.xsd|Esquema para el Protocolo simple de acceso a objetos (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|  
+|Soap1.1.xsd|Esquema para Simple Object Access Protocol (SOAP) 1.1, http://schemas.xmlsoap.org/soap/envelope/.|  
 |Soap1.2.xsd|Esquema para el Protocolo simple de acceso a objetos (SOAP) 1.2.|  
-|SiteMapSchema.xsd|Esquema para archivos XML de mapa del sitio ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|  
-|wsdl.xsd|Esquema para Lenguaje de descripción de servicios Web, http://schemas.xmlsoap.org/wsdl/.|  
-|xenc.xsd|Esquema para Cifrado XML, http://www.w3.org/2000/09/xmldsig#.|  
-|xhtml.xsd|Esquema para XHTML, http://www.w3.org/1999/xhtml.|  
+|SiteMapSchema.xsd|Esquema de archivo XML de mapa del sitio ASP.NET, "http://schemas.microsoft.com/AspNet/SiteMap-File-1.0".|  
+|wsdl.xsd|Esquema para lenguaje de descripción de servicios Web, http://schemas.xmlsoap.org/wsdl/.|  
+|xenc.xsd|Esquema para el cifrado XML, http://www.w3.org/2000/09/xmldsig#.|  
+|xhtml.xsd|Esquema para XHTML http://www.w3.org/1999/xhtml.|  
 |xlink.xsd|Esquema para XLink1.0, http://www.w3.org/1999/xlink.|  
-|xml.xsd|Esquema que describe atributos xml:space y xml:lang, http://www.w3.org/XML/1998/namespace.|  
-|xmlsig.xsd|Esquema para Firmas digitales XML, http://www.w3.org/2000/09/xmldsig#.|  
-|xsdschema.xsd|Esquema que describe el propio XSD, http://www.w3.org/2001/XMLSchema.|  
-|xslt.xsd|Esquema para Transformaciones XML, http://www.w3.org/1999/XSL/Transform.|  
+|xml.xsd|Esquema que describe atributos XML: space y XML: lang, http://www.w3.org/XML/1998/namespace.|  
+|xmlsig.xsd|Esquema para firmas digitales XML, http://www.w3.org/2000/09/xmldsig#.|  
+|xsdschema.xsd|Esquema que describe el XSD, http://www.w3.org/2001/XMLSchema.|  
+|xslt.xsd|Esquema para transformaciones XML, http://www.w3.org/1999/XSL/Transform.|  
   
 ## <a name="updating-schemas-in-the-cache"></a>Actualización de esquemas de la caché  
  El editor carga el directorio de la caché de esquema cuando se carga el paquete del Editor XML y está atento a los cambios durante la ejecución. Si se ha agregado un esquema, se carga automáticamente en un índice de esquemas conocidos almacenado en memoria. Si se ha quitado un esquema, se quita automáticamente del índice almacenado en memoria. Si se actualiza un esquema, se invalida automáticamente la caché almacenada en memoria de este esquema.  

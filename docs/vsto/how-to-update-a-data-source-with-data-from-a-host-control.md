@@ -1,12 +1,10 @@
 ---
-title: "Cómo: actualizar un origen de datos con datos de un Control Host | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: actualizar un origen de datos con datos de un Control Host | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, data sources
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 20e0e896389abc48d3f0b08136f06b90748b161d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6113979ee4a9081c089610dce4edfcd1f75347ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Cómo: Actualizar un origen de datos con datos de un control Host
   Puede enlazar un control host a un origen de datos y actualizar el origen de datos con los cambios que se realicen en los datos del control. Hay dos pasos principales en este proceso:  

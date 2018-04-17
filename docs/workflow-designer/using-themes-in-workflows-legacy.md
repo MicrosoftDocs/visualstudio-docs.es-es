@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 10225f34-aced-432a-846c-82cf6137d7c0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 752b25ba03df813bf3255af5f6c8b84f56ef5ed7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 0297426568e9b15d668490becfd2ae0b2da86ab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Utilizar los temas en los flujos de trabajo (Heredado)
 Este tema describe cómo usar los temas de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] cuando se usa el Diseñador de flujo de trabajo heredado de Windows que tenga como destino el [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].

@@ -1,13 +1,10 @@
 ---
 title: '&lt;appAddin&gt; elemento (desarrollo de Office en Visual Studio) | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27f286f9bde8db68a7190796f1d154a402fb208d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 9def97d044af74f02a2064703691333ec9f176aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `appAddin` del espacio de nombres `vstov4` almacena información específica de la personalización de los complementos de VSTO.  
@@ -54,13 +51,13 @@ ms.lasthandoff: 01/10/2018
  El elemento `appAddin` tiene los siguiente elementos secundarios:  
   
 ### <a name="friendlyname"></a>friendlyName  
- Opcional. El `friendlyName` elemento se explica en [&#60; friendlyName &#62; Elemento &#40; desarrollo de Office en Visual Studio &#41; ](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
+ Opcional. El `friendlyName` elemento se explica en [ &#60;friendlyName&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
 ### <a name="description"></a>Descripción  
- Opcional. El `description` elemento se explica en [&#60; descripción &#62; Elemento &#40; desarrollo de Office en Visual Studio &#41; ](../vsto/description-element-office-development-in-visual-studio.md).  
+ Opcional. El `description` elemento se explica en [ &#60;descripción&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).  
   
 ### <a name="formregions"></a>formRegions  
- Solo es obligatorio para los complementos de VSTO de Outlook que incluyan áreas del formulario. El `formRegions` elemento se explica en [&#60; formRegions &#62; Elemento &#40; desarrollo de Office en Visual Studio &#41; ](../vsto/formregions-element-office-development-in-visual-studio.md).  
+ Solo es obligatorio para los complementos de VSTO de Outlook que incluyan áreas del formulario. El `formRegions` elemento se explica en [ &#60;formRegions&#62; elemento &#40;desarrollo de Office en Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Ejemplo de complemento de VSTO  
   

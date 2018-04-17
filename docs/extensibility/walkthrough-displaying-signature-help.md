@@ -1,27 +1,23 @@
 ---
 title: 'Tutorial: Mostrar ayuda para las firmas | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced0eb5d3545a75ee31cff55d0e4fb9dab8c8bcb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a714fdb268f44fd2a65d04184d899ced3de53bb9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Tutorial: Mostrar ayuda para las firmas
 Ayuda para las firmas (también conocido como *información de parámetros*) muestra la firma de un método en una información sobre herramientas cuando un usuario escribe el carácter de inicio de lista de parámetros (normalmente un paréntesis de apertura). Como se escriben un separador de parámetros (normalmente una coma) y un parámetro, la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita. Puede definir la firma de ayuda en el contexto de un servicio de lenguaje, puede definir su propio tipo de contenido y la extensión de nombre de archivo y mostrar la Ayuda de firma para ese tipo o puede ver la Ayuda de firma para un tipo de contenido existente (por ejemplo, "text"). Este tutorial muestra cómo ver la Ayuda de firma para el tipo de contenido "text".  

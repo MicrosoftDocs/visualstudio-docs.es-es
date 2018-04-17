@@ -1,12 +1,10 @@
 ---
 title: Extender proyectos de SharePoint | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 403ff3793dfd5ae4211444868af8c37dbd908672
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 622596249e92d73dd4f504a445d43405847e9629
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-projects"></a>Extender los proyectos de SharePoint
   Crear una extensión de proyecto cuando desee personalizar características de nivel de proyecto de proyectos de SharePoint. Por ejemplo, puede agregar propiedades de proyecto personalizadas o responder a eventos de nivel de proyecto que se producen cuando el usuario desarrolla una solución de SharePoint en Visual Studio.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
  Para ver un tutorial que muestra cómo crear, implementar y probar una extensión de proyecto, vea [Tutorial: crear una extensión de proyecto de SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).  
   
 ## <a name="understanding-the-relationship-between-project-extensions-and-project-instances"></a>Descripción de la relación entre las extensiones de proyecto y las instancias de proyecto  
- Cuando se crea una extensión de proyecto, la extensión de carga cuando se abre cualquier tipo de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]incluye varias plantillas de proyecto de SharePoint, como las definiciones de lista y tipos de contenido, receptores de eventos. Sin embargo, hay solo un tipo de proyecto de SharePoint. Los tipos de proyecto que aparecen en la **nuevo proyecto** cuadro de diálogo solo son plantillas que agrupación uno o varios elementos de proyecto de SharePoint. Dado que hay solo un tipo de proyecto de SharePoint, las extensiones creadas para un proyecto se aplican a todos los proyectos de SharePoint. Por ejemplo, no es posible, cree una extensión que sólo se aplica a un **tipo de contenido** proyecto.  
+ Cuando se crea una extensión de proyecto, la extensión de carga cuando se abre cualquier tipo de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incluye varias plantillas de proyecto de SharePoint, como las definiciones de lista y tipos de contenido, receptores de eventos. Sin embargo, hay solo un tipo de proyecto de SharePoint. Los tipos de proyecto que aparecen en la **nuevo proyecto** cuadro de diálogo solo son plantillas que agrupación uno o varios elementos de proyecto de SharePoint. Dado que hay solo un tipo de proyecto de SharePoint, las extensiones creadas para un proyecto se aplican a todos los proyectos de SharePoint. Por ejemplo, no es posible, cree una extensión que sólo se aplica a un **tipo de contenido** proyecto.  
   
  Para obtener acceso a una instancia de proyecto concreta, controle uno de los <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> eventos de la *projectService* parámetro en la implementación de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> método. Por ejemplo, para determinar cuándo se agrega un proyecto de SharePoint a una solución, controle el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> eventos. Para obtener más información, consulte [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   

@@ -1,13 +1,10 @@
 ---
-title: "Información general sobre propiedades de documento personalizadas | Documentos de Microsoft"
-ms.custom: 
+title: Información general sobre propiedades de documento personalizadas | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - _AssemblyName property
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 672eaf3ed82a80983b919a37b2aeff4c99621f43
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
 
@@ -47,11 +44,11 @@ Esta propiedad contiene una cadena que proporciona detalles sobre el manifiesto 
 
 - Si la solución se publica para que se instale desde un sitio Web, ruta de acceso UNC o una unidad de CD o USB, la propiedad _AssemblyLocation tiene el formato *rutaDeAccesoDelManifiestoDeImplementación*|*SolutionID*. La cadena siguiente es un ejemplo:
 
-     file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
+     File://deployserver/MyShare/ExcelWorkbook1.VSTO | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
 - Si se ejecuta o depura la solución desde Visual Studio, la propiedad _AssemblyLocation tiene el formato *nombreDelManifiestoDeImplementación*|*SolutionID*| vstolocal. La cadena siguiente es un ejemplo:
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal
 
  El *SolutionID* es un GUID que el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utiliza para identificar la solución. El *SolutionID* se genera automáticamente al compilar el proyecto. El **vstolocal** término indica a la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que se debe cargar el ensamblado desde la misma carpeta que el documento.
 

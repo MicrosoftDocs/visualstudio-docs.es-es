@@ -2,24 +2,20 @@
 title: Las fuentes y el formato de Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83c1d4e20dd372d3b76362b9f06ee894b045333c
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 22e765916a19caeff643e25f97f4d0d4f91669c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Las fuentes y el formato de Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
@@ -328,7 +324,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Tipo título  
  Tipo título es un estilo en el que están en mayúscula las primeras letras de la mayoría o todas las palabras en una frase. En Visual Studio, mayúscula inicial se utiliza para muchos elementos, incluidos:  
   
--   **Tooltips.** Ejemplo: "vista previa de los elementos seleccionados"  
+-   **Información sobre herramientas.** Ejemplo: "vista previa de los elementos seleccionados"  
   
 -   **Encabezados de columna.** Ejemplo: "respuesta del sistema"  
   
@@ -345,7 +341,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Todos los pronombres|Incluidas la posesivo "Su", así como la"," una contracción de la pronombre "," y el verbo "es"|  
 |Primera y la última palabra, independientemente de partes de la oración||  
 |Preposiciones que forman parte de una frase|"Cerrar todas las ventanas" o "Apagado del sistema"|  
-|Todas las letras de un acrónimo|HTML, XML, URL, IDE, RGB|  
+|Todas las letras de un acrónimo|HTML, XML, DIRECCIÓN URL, IDE, RGB|  
 |El segundo de palabras de una palabra compuesta si es un sustantivo o adjetivo apropiado, o si las palabras tienen el mismo peso|Referencia cruzada, Software de Microsoft anterior, acceso de lectura/escritura, tiempo de ejecución|  
   
 |Minúsculas|Ejemplos|  

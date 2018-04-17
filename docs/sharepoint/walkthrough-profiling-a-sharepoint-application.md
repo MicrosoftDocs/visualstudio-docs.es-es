@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Generar perfiles de una aplicación de SharePoint | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Generar perfiles de una aplicación de SharePoint | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Tutorial: Generar el perfil de una aplicación de SharePoint
   En este tutorial se muestra cómo usar las herramientas de generación de perfiles de Visual Studio para optimizar el rendimiento de una aplicación de SharePoint. La aplicación de ejemplo es un receptor de eventos de características de SharePoint que contiene un bucle inactivo que merma el rendimiento del receptor de eventos de características. El generador de perfiles de Visual Studio le permite encontrar y eliminar la parte más cara (rendimiento más lento) del proyecto, también conocido como el *ruta de acceso activa*.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
   
--   Ediciones compatibles de Microsoft Windows y SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Ediciones compatibles de Microsoft Windows y SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Requisitos para desarrollar soluciones de SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Elija la **finalizar** botón. El proyecto aparece en **el Explorador de soluciones**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Agregar una característica y un receptor de eventos de características  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Agregar una característica y un receptor de eventos de características  
  A continuación, agregue una característica al proyecto junto con un receptor de eventos para esa característica. Este receptor de eventos contendrá el código cuyo perfil se va a generar.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para agregar una característica y un receptor de eventos de características  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Guarde el proyecto.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>Configurar e implementar la aplicación de SharePoint  
+##  <a name="BKMK_ConfigSharePointApp"></a> Configurar e implementar la aplicación de SharePoint  
  Ahora que el proyecto de SharePoint está listo, configúrelo e impleméntelo en el servidor de SharePoint.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Para configurar e implementar la aplicación de SharePoint  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      El Asistente habilita la generación de perfiles de aplicación en el servidor, muestra la **Explorador de rendimiento** ventana y, a continuación, compila, implementa y ejecuta la aplicación de SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a>Ejecutar la aplicación de SharePoint  
+##  <a name="BKMK_RunSPApp"></a> Ejecutar la aplicación de SharePoint  
  Active la característica en SharePoint, desencadenando el código de evento `FeatureActivation` para la ejecución.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Para ejecutar la aplicación de SharePoint  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      Después de cerrar SharePoint, el generador de perfiles crea y muestra un informe de generación de perfiles de muestreo y lo guarda como un archivo .vsp en la **ProfileTest** carpeta del proyecto.  
   
-##  <a name="BKMK_ViewResults"></a>Visualización e interpretación de los resultados de la generación de perfiles  
+##  <a name="BKMK_ViewResults"></a> Visualización e interpretación de los resultados de la generación de perfiles  
  Ahora que ha ejecutado la aplicación de SharePoint y ha generado perfiles, vea los resultados de las pruebas.  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>Para ver e interpretar los resultados de la generación de perfiles  

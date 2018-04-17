@@ -1,23 +1,21 @@
 ---
-title: "Acerca de lenguajes específicos de dominio | Documentos de Microsoft"
-ms.custom: 
+title: Acerca de lenguajes específicos de dominio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 89293e0b684881767b6357b88469dc69ddc71902
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
 
@@ -81,7 +79,7 @@ Un lenguaje específico de dominio debe tener un conjunto de elementos que puede
   
 ### <a name="domain-model"></a>Modelo de dominio
 
-Un lenguaje específico de dominio debe combinar el conjunto de elementos y las relaciones entre ellos en una gramática coherente. También debe definir si combinaciones de elementos y relaciones son válidas. Por ejemplo, los lenguajes de programación normalmente evitar herencia circular, en el que una clase se deriva de una clase de segundo y la segunda clase se deriva de la primera clase. También pueden utilizarse restricciones para expresar la lógica de negocios, por ejemplo, una persona no puede ser una dependencia de sí mismo. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]usa las restricciones para expresar los tipos de restricciones que requieren más lenguajes específicos de dominio.  
+Un lenguaje específico de dominio debe combinar el conjunto de elementos y las relaciones entre ellos en una gramática coherente. También debe definir si combinaciones de elementos y relaciones son válidas. Por ejemplo, los lenguajes de programación normalmente evitar herencia circular, en el que una clase se deriva de una clase de segundo y la segunda clase se deriva de la primera clase. También pueden utilizarse restricciones para expresar la lógica de negocios, por ejemplo, una persona no puede ser una dependencia de sí mismo. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa las restricciones para expresar los tipos de restricciones que requieren más lenguajes específicos de dominio.  
   
 ### <a name="artifact-generation"></a>Generación de artefacto
 
@@ -89,7 +87,7 @@ Uno de los principales propósitos de un lenguaje específico de dominio consist
   
 ### <a name="serialization"></a>Serialización
 
-Un lenguaje específico de dominio se debe conservar en alguna forma que puede editar, guardar, cierra y vuelve a cargar. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]utiliza un formato XML que le permite definir y personalizar cómo se serializa o se conservan su lenguaje específico de dominio.  
+Un lenguaje específico de dominio se debe conservar en alguna forma que puede editar, guardar, cierra y vuelve a cargar. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] utiliza un formato XML que le permite definir y personalizar cómo se serializa o se conservan su lenguaje específico de dominio.  
   
 ### <a name="integration-with-visual-studio"></a>Integración con Visual Studio
 

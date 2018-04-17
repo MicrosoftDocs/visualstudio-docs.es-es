@@ -1,18 +1,18 @@
 ---
-title: "Cómo: implementar una operación de contrato de Windows Communication Foundation (heredado) | Documentos de Microsoft"
+title: 'Cómo: implementar una operación de contrato de Windows Communication Foundation (heredado) | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8ea31cf143c572e42f1250f3a16cf73148a53fd
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Cómo: Implementar una operación de contrato de Windows Communication Foundation (Heredado)
 Este tema describe cómo implementar un [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] de contrato de operación mediante el Diseñador de flujo de trabajo heredado de Windows que tenga como destino el [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -27,7 +27,7 @@ Este tema describe cómo implementar un [!INCLUDE[indigo1](../workflow-designer/
 
     -   Haga clic en **agregar contrato** en la esquina superior derecha del cuadro de diálogo. De este modo creará un nuevo contrato y operación [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)].
 
-         O bien
+         -o bien-
 
     -   Haga clic en **importación** en la esquina superior derecha del cuadro de diálogo. El [examinar y seleccionar un cuadro de diálogo de tipo de .NET (heredado)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) se abre. Busque un ensamblado o proyecto que contenga el contrato deseado. Seleccione el contrato y haga clic en **Aceptar**.
 

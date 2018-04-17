@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Cambiar datos almacenados en caché en un libro en un servidor | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Cambiar datos almacenados en caché en un libro en un servidor | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fcea73cfbd87a4e541654b91463091b08c47b8c0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d9303c165b0c04d36a873ee2ff2aae22365b24e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-cached-data-in-a-workbook-on-a-server"></a>Tutorial: Cambiar los datos almacenados en caché de un libro de trabajo de un servidor
   En este tutorial se muestra cómo modificar un conjunto de datos que se almacena en caché en un libro de Microsoft Office Excel sin iniciar Excel, mediante la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **AdventureWorksDataSet** proyecto al **el Explorador de soluciones** y abre el **Class1.cs** o **Class1.vb** archivo de código.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **AdventureWorksDataSet** proyecto al **el Explorador de soluciones** y abre el **Class1.cs** o **Class1.vb** archivo de código.  
   
 9. En **el Explorador de soluciones**, haga clic en **Class1.cs** o **Class1.vb**y, a continuación, haga clic en **eliminar**. No es necesario este archivo para este tutorial.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Asegúrese de que **crear un nuevo documento** está seleccionada y haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]se abre la **AdventureWorksReport** libro en el diseñador y agrega el **AdventureWorksReport** proyecto al **el Explorador de soluciones**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] se abre la **AdventureWorksReport** libro en el diseñador y agrega el **AdventureWorksReport** proyecto al **el Explorador de soluciones**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Agregar el conjunto de datos a orígenes de datos en el proyecto de libro de Excel  
  Antes de poder mostrar el conjunto de datos en el libro de Excel, primero debe agregar el conjunto de datos a orígenes de datos en el proyecto de libro de Excel.  
@@ -239,7 +238,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Haga clic en **Aceptar**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Agrega el **DataWriter** proyecto al **el Explorador de soluciones** y abre el **Program.cs** o **Module1.vb** archivo de código.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **DataWriter** proyecto al **el Explorador de soluciones** y abre el **Program.cs** o **Module1.vb** archivo de código.  
   
 ## <a name="changing-data-in-the-cached-dataset-by-using-the-console-application"></a>Cambiar datos en el conjunto de datos almacenado en caché mediante la aplicación de consola  
  Use la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase en la aplicación de consola para leer los datos en una variable local `AdventureWorksLTDataSet` objeto, modificar estos datos y, a continuación, volver a guardarlo el conjunto de datos almacenados en caché.  

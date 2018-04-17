@@ -1,13 +1,10 @@
 ---
-title: "Extender SharePoint empaquetado e implementación | Documentos de Microsoft"
-ms.custom: 
+title: Extender SharePoint empaquetado e implementación | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fa807472a0787f0f1ae4c61f074fd8bb3ad5055
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c91c78e6ab78ac39eb5c53c32a70ead895129df0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-packaging-and-deployment"></a>Extender el empaquetado e implementación de SharePoint
   El proceso de empaquetado e implementación de proyectos de SharePoint se puede ampliar.
@@ -33,7 +30,7 @@ ms.lasthandoff: 01/10/2018
  Para ver un tutorial que muestra cómo crear un paso de implementación, consulte [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint de](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
 ##  <a name="creating-deployment-configurations"></a>Crear configuraciones de implementación  
- Una configuración de implementación es un conjunto de pasos de implementación que se ejecuta en relación con un proyecto determinado, pero que puede afectar a todos los elementos del proyecto de SharePoint. Cada configuración de implementación incluye un conjunto de pasos que se ejecuta cuando el proyecto se implementa y otro conjunto que se ejecuta cuando ese proyecto se retira. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)]incluye dos configuraciones de implementación integradas, pero también puede crear sus propias. Cuando crea una configuración de implementación, puede incluir tanto pasos de implementación integrados como pasos de implementación de su propia cosecha.  
+ Una configuración de implementación es un conjunto de pasos de implementación que se ejecuta en relación con un proyecto determinado, pero que puede afectar a todos los elementos del proyecto de SharePoint. Cada configuración de implementación incluye un conjunto de pasos que se ejecuta cuando el proyecto se implementa y otro conjunto que se ejecuta cuando ese proyecto se retira. [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] incluye dos configuraciones de implementación integradas, pero también puede crear sus propias. Cuando crea una configuración de implementación, puede incluir tanto pasos de implementación integrados como pasos de implementación de su propia cosecha.  
   
  Para ver un tutorial que muestra cómo crear una configuración de implementación, consulte [Tutorial: crear un paso de implementación personalizado para proyectos de SharePoint de](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   

@@ -1,12 +1,10 @@
 ---
-title: "Información adicional para errores de SharePoint | Documentos de Microsoft"
-ms.custom: 
+title: Información adicional para errores de SharePoint | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.errors.general
 - VS.SharePointTools.Project.Errors.General
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 45bf01c0d153eca484a480fa4aff25bb2e68769a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8b4ddc41e519466bbd48de4bbcbdad060bd93ef7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Información adicional de los errores de SharePoint
   Puede encontrar ayuda para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errores y advertencias en los foros públicos de Microsoft Developer Network (MSDN) y de temas de solución de problemas de herramientas de SharePoint.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="other-resources"></a>Otros recursos  
  La siguiente tabla enumera las [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] herramientas de SharePoint, foros y otros recursos disponibles en MSDN.  
   
-|Término|Definición|  
+|Término|de esquema JSON|  
 |----------|----------------|  
 |[Desarrollo de SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Proporciona un foro donde plantear preguntas acerca del desarrollo de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Foros de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Proporciona un foro para preguntas sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  

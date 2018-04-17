@@ -1,5 +1,5 @@
 ---
-title: "Si el Diseñador de actividad | Documentos de Microsoft"
+title: Si el Diseñador de actividad | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38315b493bd1349efcea5c511378d38eb05ca97d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 948359e0c6458fb0ad03d0d032676439d8062ca4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="if-activity-designer"></a>Diseñador de actividades If
 La actividad <xref:System.Activities.Statements.If> evalúa una condición y ejecuta una actividad según los resultados de esa evaluación. Esta actividad es muy útil cuando se utiliza un estilo de modelado por procedimientos de programación. Una actividad <xref:System.Activities.Statements.If> puede estar anidada en una actividad <xref:System.Activities.Statements.Sequence> o en una actividad <xref:System.Activities.Statements.Parallel>, por ejemplo. Si está utilizando una actividad <xref:System.Activities.Statements.Flowchart>, plantéese utilizar una actividad <xref:System.Activities.Statements.FlowDecision> en su lugar.
@@ -30,6 +30,6 @@ La actividad <xref:System.Activities.Statements.If> evalúa una condición y eje
 
 ## <a name="see-also"></a>Vea también
 
-- [Sequence](../workflow-designer/sequence-activity-designer.md)
-- [Parallel](../workflow-designer/parallel-activity-designer.md)
+- [secuencia](../workflow-designer/sequence-activity-designer.md)
+- [Paralelo](../workflow-designer/parallel-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

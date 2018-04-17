@@ -1,10 +1,8 @@
 ---
-title: "Validar código con diagramas de dependencia | Documentos de Microsoft"
-ms.custom: 
+title: Validar código con diagramas de dependencia | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, validating
 - validation, dependency diagrams
@@ -19,15 +17,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 484afcd70717162719e9eaf8ace294cb1f71cbcd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd799e5114c64b075592ddbe35670907fc81fa9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar código con diagramas de dependencia
 
@@ -51,13 +49,13 @@ Para asegurarse de que código no entre en conflicto con el diseño, valide el c
   
  **Requisitos**  
   
--   Visual Studio  
+-   Programa para la mejora  
   
 -   Visual Studio en el servidor de Team Foundation Build para validar código automáticamente con Team Foundation Build  
   
 -   Una solución que tiene un proyecto de modelado con un diagrama de dependencia. Este diagrama de dependencia se debe vincularse a artefactos de proyectos de C# o Visual Basic que se desea validar. Vea [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Puede validar código manualmente desde un diagrama de dependencia abierta en Visual Studio o desde un símbolo del sistema. También puede validar código automáticamente al ejecutar compilaciones locales o Team Foundation Build. Vea [vídeo de Channel 9: diseño y validar la arquitectura mediante diagramas de dependencia](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
@@ -92,21 +90,21 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
 
 * Agregar un nuevo desencadenadores de proyecto de validación de dependencia una actualización del proyecto. 
   
-##  <a name="SupportsValidation"></a>Ver si un elemento admite validación  
+##  <a name="SupportsValidation"></a> Ver si un elemento admite validación  
  Puede vincular capas a sitios web, documentos de Office, archivos de texto sin formato y archivos de proyectos que se comparten entre varias aplicaciones, pero el proceso de validación no los incluirá. Los errores de validación no aparecerán para las referencias a proyectos o ensamblados que están vinculados a capas independientes cuando no aparece ninguna dependencia entre esas capas. Tales referencias no se consideran dependencias a menos que el código utilice esas referencias.  
   
 1.  En el diagrama de dependencia, seleccione una o varias capas, haga clic en la selección y, a continuación, haga clic en **ver vínculos**.  
   
 2.  En **Explorador de capas**, mire el **admite validación** columna. Si el valor es false, el elemento no admite la validación.  
   
-##  <a name="IncludeReferences"></a>Incluir otros ensamblados .NET y proyectos para la validación  
+##  <a name="IncludeReferences"></a> Incluir otros ensamblados .NET y proyectos para la validación  
  Al arrastrar elementos al diagrama de dependencia, las referencias a los ensamblados de .NET correspondientes o los proyectos se agregan automáticamente a la **referencias de capa** carpeta del proyecto de modelado. Esta carpeta contiene referencias a los ensamblados y proyectos que se analizan durante la validación. Puede incluir otros ensamblados .NET y proyectos para validación sin arrastrarlos manualmente al diagrama de dependencia.  
   
 1.  En **el Explorador de soluciones**, haga clic en el proyecto de modelado o **referencias de capa** carpeta y, a continuación, haga clic en **Agregar referencia**.  
   
 2.  En el **Agregar referencia** cuadro de diálogo, seleccione los ensamblados o proyectos y, a continuación, haga clic en **Aceptar**.  
   
-##  <a name="ValidateManually"></a>Validar código manualmente  
+##  <a name="ValidateManually"></a> Validar código manualmente  
  Si tiene un diagrama de dependencia abierto que se vincula a elementos de la solución, puede ejecutar el **validar** comando de acceso directo del diagrama. También puede utilizar el símbolo del sistema para ejecutar el **msbuild** comando con el **pValidateArchitecture** propiedad personalizada que se establece en **True**. Por ejemplo, cuando haga cambios en el código, realice la validación de capas con regularidad para detectar pronto los conflictos de dependencia.  
   
 #### <a name="to-validate-code-from-an-open-dependency-diagram"></a>Para validar el código de un diagrama de dependencia abierto   
@@ -121,7 +119,7 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
 2.  Para ver el origen de cada error, haga doble clic en el error en la **lista de errores** ventana.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] es posible que se muestre un mapa de código en lugar del origen del error. Esto se produce cuando el código tiene una dependencia en un ensamblado que no se especifica en el diagrama de dependencia, o el código le falta una dependencia que se especifica en el diagrama de dependencia. Revise el mapa de código o el código para determinar si debe existir la dependencia. Para obtener más información acerca de los mapas de código, vea [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podría mostrar un mapa de código en lugar del origen del error. Esto se produce cuando el código tiene una dependencia en un ensamblado que no se especifica en el diagrama de dependencia, o el código le falta una dependencia que se especifica en el diagrama de dependencia. Revise el mapa de código o el código para determinar si debe existir la dependencia. Para obtener más información acerca de los mapas de código, vea [asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Para administrar los errores, vea [administrar errores de validación](#ManageErrors).  
   
@@ -163,7 +161,7 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
   
  Para obtener más información acerca de los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).  
   
-###  <a name="ManageErrors"></a>Administrar errores de validación  
+###  <a name="ManageErrors"></a> Administrar errores de validación  
  Durante el proceso de desarrollo, puede que desee suprimir algunos de los conflictos notificados durante la validación. Por ejemplo, es posible que desee suprimir errores de los que ya se ha ocupado o que no son pertinentes para su escenario concreto. Cuando se suprime un error, conviene registrar un elemento de trabajo en [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].  
   
 > [!WARNING]
@@ -182,7 +180,7 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
 |Restaurar todos los errores suprimidos en la **lista de errores** ventana|Haga clic en cualquier lugar en el **lista de errores** ventana, seleccione **administrar errores de validación**y, a continuación, haga clic en **mostrar errores suprimidos**.|  
 |Ocultar todos los errores suprimidos de la **lista de errores** ventana|Haga clic en cualquier lugar en el **lista de errores** ventana, seleccione **administrar errores de validación**y, a continuación, haga clic en **Ocultar errores suprimidos**.|  
   
-##  <a name="ValidateAuto"></a>Validar código automáticamente  
+##  <a name="ValidateAuto"></a> Validar código automáticamente  
  Puede realizar la validación de capas cada vez que ejecute una compilación local. Si el equipo usa Team Foundation Build, podrá realizar la validación de capas con protecciones controladas, que se pueden especificar creando una tarea MSBuild personalizada, y usar informes de compilación para recopilar los errores de validación. Para crear compilaciones en el repositorio validadas, consulte [utilizar un proceso de compilación de protección controlada para validar cambios](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Para validar código automáticamente durante una compilación local  
@@ -229,14 +227,14 @@ En esta versión de Visual Studio, se produce la validación de dependencia en t
   
 -   [Supervisar el progreso de una compilación en ejecución](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a>Solucionar problemas de validación de capas  
+##  <a name="TroubleshootingValidation"></a> Solucionar problemas de validación de capas  
  En la siguiente tabla se describen problemas de validación de capas y su resolución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).  
   
 |**Problema**|**Causa posible**|**Resolución**|  
 |---------------|------------------------|--------------------|  
 |Los errores de validación no se producen como se espera.|La validación no funciona en los diagramas de dependencia que se copian de otros diagramas de dependencia en el Explorador de soluciones y que están en el mismo proyecto de modelado. diagramas de dependencia que se copian de esta manera contienen las mismas referencias que el diagrama de dependencia original.|Agregue un nuevo diagrama de dependencia para el proyecto de modelado.<br /><br /> Copie los elementos del diagrama de dependencia de origen en el nuevo diagrama.|  
   
-##  <a name="UnderstandingValidationErrors"></a>Entender y resolver errores de validación de capas  
+##  <a name="UnderstandingValidationErrors"></a> Entender y resolver errores de validación de capas  
  Cuando valide el código contra un diagrama de dependencias, se producen errores de validación cuando el código entra en conflicto con el diseño. Por ejemplo, las siguientes condiciones podrían producir errores de validación:  
   
 -   Un artefacto se ha asignado a la capa equivocada. En este caso, mueva el artefacto.  

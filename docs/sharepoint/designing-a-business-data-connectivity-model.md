@@ -1,12 +1,10 @@
 ---
-title: "Diseñar un modelo de conectividad a datos empresariales | Documentos de Microsoft"
-ms.custom: 
+title: Diseñar un modelo de conectividad a datos empresariales | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Diseñar un modelo de conectividad a datos profesionales
   Puede desarrollar un modelo para el servicio de conectividad de datos profesionales (BDC) agregando entidades y métodos a un archivo de modelo. Una entidad describe una colección de campos de datos. Por ejemplo, una entidad puede representar una tabla en una base de datos. Un método realiza una tarea, como agregar, eliminar o actualizar datos representados por las entidades. Para obtener más información, consulte [integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio permite copiar descriptores de tipo entre los parámetros en el modelo. Por ejemplo, podría definir un descriptor de tipos denominado `CustomerTD` para el parámetro de valor devuelto de la `GetCustomer` método. Puede copiar la `CustomerTD` escriba descriptor en la **Explorador de BDC**y, a continuación, pegue ese descriptor de tipo para el parámetro de entrada de la `CreateCustomer` método. Esto evita tener que definir el mismo descriptor de tipo de más de una vez.  
   
-##  <a name="MethodInstances"></a>Instancias (método)  
+##  <a name="MethodInstances"></a> Instancias (método)  
  Cuando se crea un método, Visual Studio agrega una instancia predeterminada del método. Una instancia de método es una referencia a un método, junto con los valores predeterminados para los parámetros. Un único método puede tener varias instancias de método. Cada instancia es una combinación de la firma del método y un conjunto de valores predeterminados. Para obtener más información, consulte [Cómo: definir el Descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Al ejecutar el proyecto, instancias de método aparecen en una lista desplegable situada encima de la lista de SharePoint. Los usuarios pueden elegir las instancias de método para ver los datos.  

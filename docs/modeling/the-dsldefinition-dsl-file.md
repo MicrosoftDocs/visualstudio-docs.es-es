@@ -1,23 +1,21 @@
 ---
 title: El archivo DslDefinition.dsl | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 361f723997f898091b05a80cfb55c9cc5680ceb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>El archivo DslDefinition.dsl
 Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto de Dsl de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución, que define un *lenguaje específico de dominio*. El archivo DslDefinition.dsl describe las clases y relaciones de un lenguaje específico de dominio, junto con el diagrama, formas, conectores y el formato de serialización, y **cuadro de herramientas** del lenguaje específico de dominio y su herramientas de edición. En una solución de lenguaje específico de dominio, el código que define esas herramientas se genera conforme a la información del archivo DslDefinition.dsl.  
@@ -169,7 +167,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto de
   
 -   **BaseClass**. Si especifica una clase base, debe ser del mismo tipo. Por ejemplo, una clase de dominio debe tener otra clase de dominio como base y una forma de compartimiento debe tener una forma de compartimiento. Si no especifica una clase base, la clase del código generado deriva de una clase de marco estándar. Por ejemplo, una clase de dominio deriva de `ModelElement`.  
   
--   **Propiedades**. Este atributo contiene las propiedades que se mantienen bajo el control de transacciones y se conservan cuando el modelo se guarda.  
+-   **propiedades**. Este atributo contiene las propiedades que se mantienen bajo el control de transacciones y se conservan cuando el modelo se guarda.  
   
 -   **ElementMergeDirectives**. Cada directiva de combinación de elementos controla cómo se agrega una instancia diferente de otra clase a una instancia de la clase primaria. Encontrará información más detallada sobre las directivas de combinación de elementos más adelante en este tema.  
   
@@ -194,7 +192,7 @@ Este tema describe la estructura del archivo DslDefinition.dsl en el proyecto de
   
 -   **IsUIReadOnly**. Este atributo determina si el usuario puede cambiar la propiedad en el **propiedades** ventana o a través de un elemento decorator en el que se incluye la propiedad.  
   
--   **Kind**. Este atributo se puede establecer en Normal, Calculated o CustomStorage. Si establece este atributo en Calculated, debe proporcionar código personalizado que determine el valor, y la propiedad será de solo lectura. Si establece este atributo en CustomStorage, debe proporcionar código que obtenga y establezca los valores.  
+-   **Tipo**. Este atributo se puede establecer en Normal, Calculated o CustomStorage. Si establece este atributo en Calculated, debe proporcionar código personalizado que determine el valor, y la propiedad será de solo lectura. Si establece este atributo en CustomStorage, debe proporcionar código que obtenga y establezca los valores.  
   
 -   **IsElementName**. Si este atributo se establece en True, su valor se establece automáticamente en un valor único cuando se crea una instancia de la clase primaria. Este atributo se puede establecer en True solo para una propiedad en cada clase, que debe tener un tipo String. En el ejemplo Component Diagram (Diagrama de componentes), la propiedad `Name` de `NamedElement` tiene `IsElementName` establecido en True. Siempre que un usuario crea un elemento `Component` (que hereda de `NamedElement`), el nombre se inicializa automáticamente en algo como "Component6".  
   

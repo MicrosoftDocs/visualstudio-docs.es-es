@@ -1,12 +1,10 @@
 ---
-title: "Información general de plantillas de proyecto de Office | Documentos de Microsoft"
-ms.custom: 
+title: Información general de plantillas de proyecto de Office | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-project-templates-overview"></a>Información general sobre las plantillas de Office Project
   Las Microsoft Office Developer Tools en Visual Studio incluye plantillas de proyecto para crear los siguientes tipos de soluciones de Office:  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Complementos de VSTO](#AppLevel)  
   
- Para obtener una comparación detallada de estos tipos de soluciones de Office, consulte [información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Para obtener una comparación detallada de estos tipos de soluciones de Office, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Las plantillas de proyecto de Office están disponibles en el cuadro de diálogo **Nuevo proyecto** , bajo el nodo **Office** de los nodos de los lenguajes **Visual C#** y **Visual Basic** . Cada plantilla genera un proyecto con la configuración adecuada para la aplicación de destino, incluidas las referencias de ensamblado y la configuración de depuración.  
   

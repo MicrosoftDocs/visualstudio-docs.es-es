@@ -1,12 +1,10 @@
 ---
-title: "Cómo: crear un receptor de eventos para una instancia de lista específica | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: crear un receptor de eventos para una instancia de lista específica | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 66801e82f64e23ee24e66c63a62dd895c58389dc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4d6d01b9f9ed0db8588124b71c982b2d37aa86ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Cómo: Crear un receptor de eventos para una instancia de lista genérica
   Un receptor de eventos de la instancia de lista responde a los eventos que se producen en cualquier instancia de una definición de lista. Aunque la plantilla de receptor de eventos no permitir que los destinatarios de una instancia de lista genérica, puede modificar un receptor de eventos en el ámbito de una definición de lista para responder a eventos en una instancia de lista concreta.  

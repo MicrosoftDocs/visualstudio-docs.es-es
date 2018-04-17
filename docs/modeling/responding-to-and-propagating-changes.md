@@ -2,22 +2,20 @@
 title: Responder a y propagar los cambios | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f814cc9ca963b59217dc486539d22f42f487a3db
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 5e0b8d90a1f062a82c80f6777d3090e8db98e5a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="responding-to-and-propagating-changes"></a>Responder a los cambios y propagarlos
 Cuando un elemento se crea, elimina o actualiza, puede escribir código que se propaga el cambio a otras partes del modelo o a recursos externos como archivos, bases de datos u otros componentes.  

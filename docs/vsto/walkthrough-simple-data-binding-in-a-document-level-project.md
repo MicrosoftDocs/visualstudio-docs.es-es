@@ -1,12 +1,10 @@
 ---
 title: 'Tutorial: Enlace de datos Simple en un proyecto de nivel de documento | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 95029c946939bf0918e15034625ad31c1e5897b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 939d45246ea36f4227a0b914210cb0470b325c20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos simple en un proyecto en el nivel del documento
   Este tutorial muestran los aspectos básicos del enlace de datos en un proyecto de nivel de documento. Un único campo de datos en una base de datos de SQL Server está enlazado a un rango con nombre en Microsoft Office Excel. El tutorial también muestra cómo agregar controles que le permiten desplazarse a través de todos los registros en la tabla.  
@@ -181,7 +180,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Confirme que el primer registro aparece en las celdas **A1** y **B1**.  
   
-3.  Haga clic en el  **>**  (`Button3`) botón y confirme que el registro siguiente aparece en la celda **A1** y **B1**.  
+3.  Haga clic en el **>** (`Button3`) botón y confirme que el registro siguiente aparece en la celda **A1** y **B1**.  
   
 4.  Haga clic en los otros botones de desplazamiento para confirmar que el registro cambia según lo previsto.  
   

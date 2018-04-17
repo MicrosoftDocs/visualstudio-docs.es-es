@@ -1,10 +1,8 @@
 ---
-title: "Cómo: crear una solución de lenguaje específico de dominio | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: crear una solución de lenguaje específico de dominio | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5adfe90d88f46f4a3c31c1ddb6eb860403d57fe4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c2b14b407a6274e444ff50a6693b20b7ec763e72
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Cómo: Crear soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante especializada [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución.  
@@ -81,7 +79,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante especializada [!INCLUD
     > [!NOTE]
     >  Si ve un mensaje que le avisa de no ejecutar plantillas de texto desde orígenes de confianza, haga clic en **Aceptar**. Puede establecer este mensaje no que aparezca de nuevo.  
   
-##  <a name="settings"></a>Las páginas del Asistente para el Diseñador de DSL  
+##  <a name="settings"></a> Las páginas del Asistente para el Diseñador de DSL  
  Puede dejar algunos de los campos que no ha cambiado desde sus valores predeterminados. Sin embargo, asegúrese de que se establezca el campo de extensión de archivo.  
   
 ### <a name="solution-settings-page"></a>Página de configuración de la solución  

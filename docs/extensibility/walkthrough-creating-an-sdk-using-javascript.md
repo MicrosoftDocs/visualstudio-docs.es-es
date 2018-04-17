@@ -1,23 +1,21 @@
 ---
 title: 'Tutorial: Crear un SDK usando JavaScript | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2132269329c8b6af3ac846596adea7b3462db5bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Tutorial: Crear un SDK usando JavaScript
 En este tutorial se enseña cómo utilizar JavaScript para crear un sencillo matemáticas SDK como una extensión de Visual Studio (VSIX).  El tutorial se divide en las partes siguientes:  
@@ -31,7 +29,7 @@ En este tutorial se enseña cómo utilizar JavaScript para crear un sencillo mat
 ## <a name="prerequisites"></a>Requisitos previos  
  Para seguir este tutorial, debe instalar el SDK de Visual Studio. Para obtener más información, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createSimpleMathVSIX"></a>Para crear el proyecto SDK de extensión SimpleMathVSIX  
+##  <a name="createSimpleMathVSIX"></a> Para crear el proyecto SDK de extensión SimpleMathVSIX  
   
 1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
@@ -142,7 +140,7 @@ En este tutorial se enseña cómo utilizar JavaScript para crear un sencillo mat
   
 21. Reinicie Visual Studio.  
   
-##  <a name="createSampleApp"></a>Para crear una aplicación de ejemplo que usa el SDK  
+##  <a name="createSampleApp"></a> Para crear una aplicación de ejemplo que usa el SDK  
   
 1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
@@ -315,7 +313,7 @@ En este tutorial se enseña cómo utilizar JavaScript para crear un sencillo mat
   
 11. Presione la tecla F5 para compilar y ejecutar la aplicación.  
   
-12. En el interfaz de usuario de la aplicación, escriba los dos números, seleccione una operación y, a continuación, elija la  **=**  botón. Aparece el resultado correcto.  
+12. En el interfaz de usuario de la aplicación, escriba los dos números, seleccione una operación y, a continuación, elija la **=** botón. Aparece el resultado correcto.  
   
 ## <a name="see-also"></a>Vea también  
  [Creación de un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)

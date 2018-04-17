@@ -1,13 +1,10 @@
 ---
-title: "Solución de problemas de implementación de soluciones de Office | Documentos de Microsoft"
-ms.custom: 
+title: Solución de problemas de implementación de soluciones de Office | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Solucionar problemas de implementación de las soluciones de Office
   Este tema contiene información sobre cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  Puede agregar .NET Framework, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]y los ensamblados de Office de interoperabilidad primarios al paquete de instalación como requisitos previos que se implementan con la solución de Office. Para obtener información sobre cómo instalar los ensamblados de interoperabilidad primarios, vea [configurar un equipo para desarrollar soluciones de Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) y [Cómo: instalar ensamblados de interoperabilidad primarios de Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>La publicación mediante 'Localhost' puede causar problemas de instalación  
- Cuando se utiliza "http://localhost" como ubicación de instalación o publicación para las soluciones de nivel de documento, el **Asistente para publicación** no convierte la cadena en el nombre de equipo real. En este caso, la solución debe instalarse en el equipo de desarrollo. Para que las soluciones implementadas usen IIS en el equipo de desarrollo, use el nombre completo para todas las ubicaciones HTTP/HTTPS/FTP en lugar de localhost.  
+ Cuando se usa "http://localhost" como la ubicación de instalación o publicación para las soluciones de nivel de documento, el **Asistente para publicación** no convertir la cadena en el nombre de equipo real. En este caso, la solución debe instalarse en el equipo de desarrollo. Para que las soluciones implementadas usen IIS en el equipo de desarrollo, use el nombre completo para todas las ubicaciones HTTP/HTTPS/FTP en lugar de localhost.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Los ensamblados almacenados en caché se cargan en lugar de los ensamblados actualizados  
  Fusion, el cargador de ensamblados de .NET Framework, carga la copia en caché de los ensamblados cuando la ruta de acceso de salida del proyecto se encuentra en un recurso compartido de red, el ensamblado se firma con un nombre seguro y no cambia la versión del ensamblado de la personalización. Si actualiza un ensamblado que cumple estas condiciones, la actualización no aparecerá la próxima vez que se ejecute el proyecto, ya que se carga la copia en caché.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Para descargar los ensamblados en lugar de cargar las copias en caché  
   
-1.  En la barra de menús, elija **Proyecto**, *NombreDeProyecto***Propiedades**.  
+1.  En la barra de menús, elija **proyecto**, * ProjectName ***propiedades**.  
   
 2.  En la página **Aplicación** , elija **Información de ensamblado**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>La reinstalación de soluciones de Office genera una excepción de argumento fuera de intervalo  
  Cuando vuelva a instalar una solución de Office, puede aparecer una excepción <xref:System.ArgumentOutOfRangeException> con el siguiente mensaje de error: El argumento especificado está fuera del intervalo de valores válidos.  
   
- Esta situación se produce si las mayúsculas y minúsculas de la dirección URL de la ubicación de instalación son diferentes. Por ejemplo, este error podría aparecer si instaló una solución de Office desde [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) la primera vez y luego usó [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) la segunda vez.  
+ Esta situación se produce si las mayúsculas y minúsculas de la dirección URL de la ubicación de instalación son diferentes. Por ejemplo, este error podría aparecer si instaló una solución de Office de [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) la primera vez y, a continuación, usar [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) la segunda vez.  
   
  Para evitar que aparezca el mensaje, use la misma grafía al instalar soluciones de Office.  
   

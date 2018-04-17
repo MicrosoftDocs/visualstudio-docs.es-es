@@ -1,5 +1,5 @@
 ---
-title: "Cuadro de diálogo de Editor de condiciones de regla (heredado) | Documentos de Microsoft"
+title: Cuadro de diálogo de Editor de condiciones de regla (heredado) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3e4c54dff4bded0bcc07fb5e8891162cc12ea8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 62b74956dc12e19a5594585e8d356b77ae5549b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Editor de condiciones de reglas (Cuadro de diálogo) (Heredado)
 
@@ -43,11 +43,11 @@ La tabla siguiente describen los elementos de interfaz de usuario de la **Editor
 |Elemento de la interfaz de usuario|Descripción|
 |----------------|-----------------|
 |**Condición:**|Escriba la expresión para la condición de la regla.|
-|**OK**|Haga clic en esta opción para guardar la condición de la regla.|
+|**VALE**|Haga clic en esta opción para guardar la condición de la regla.|
 
 ## <a name="entering-condition-expressions"></a>Escribir expresiones de condiciones
 
-Las expresiones de condiciones se escriben como texto. Puede escribir **esto.** en el editor para hacer referencia a campos, propiedades y métodos que se utilizan en el flujo de trabajo, mediante un menú de IntelliSense. También puede escribir directamente un nombre de miembro del flujo de trabajo. Puede agregar operadores lógicos a la condición, por ejemplo AND, OR y NOT. También puede agregar predicados. Un predicado es un operador binario y dos operandos. Los operadores binarios admitidos son  **==** ,  **>** ,  **\<** ,  **>=** , y  **<=** . Los operandos admitidos son valor constante, función aritmética y miembros con ámbito público.
+Las expresiones de condiciones se escriben como texto. Puede escribir **esto.** en el editor para hacer referencia a campos, propiedades y métodos que se utilizan en el flujo de trabajo, mediante un menú de IntelliSense. También puede escribir directamente un nombre de miembro del flujo de trabajo. Puede agregar operadores lógicos a la condición, por ejemplo AND, OR y NOT. También puede agregar predicados. Un predicado es un operador binario y dos operandos. Los operadores binarios admitidos son **==**, **>**, **\<**, **>=**, y **<=**. Los operandos admitidos son valor constante, función aritmética y miembros con ámbito público.
 
 Puede especificar el tipo de la comparación y puede comparar con **null** o una cadena vacía. Puede anidar las llamadas a miembros en una variable que contenga un tipo complejo, por ejemplo, `this.Address.State == "WA"`.
 

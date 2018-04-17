@@ -1,12 +1,10 @@
 ---
-title: "Formulario de soporte técnico en flujos de trabajo | Documentos de Microsoft"
-ms.custom: 
+title: Formulario de soporte técnico en flujos de trabajo | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2544bbe60ea014ee873342f06ce285c809b42eb6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b06f956cec9f26aff59089be4e29affcd6d73ad8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="form-support-in-workflows"></a>Compatibilidad con formularios en los flujos de trabajo
   Cuatro tipos de formularios se pueden usar en un flujo de trabajo: asociación, la iniciación, tarea y modificación. Estos tipos de formulario pueden basarse en un formulario ASPX o un formulario de InfoPath. El nivel de compatibilidad que [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona para una forma determinada depende de varios factores, que se describen en las tablas siguientes. Para obtener más información sobre los tipos de formulario de flujo de trabajo, consulte [información general de formularios de flujo de trabajo](http://go.microsoft.com/fwlink/?LinkId=185228) en el sitio Web de MSDN.  

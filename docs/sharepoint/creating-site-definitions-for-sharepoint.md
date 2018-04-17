@@ -1,12 +1,10 @@
 ---
 title: Crear definiciones de sitio para SharePoint | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d29ab819dfc7efd04d27652ab3d711c89045847c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Crear definiciones de sitio para SharePoint
   El proyecto de definición de sitio de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] le permite crear un *definición del sitio*, que sirve como base para un nuevo sitio de SharePoint. Estas definiciones no sólo determinan la apariencia y el comportamiento del sitio de SharePoint, pero también su contenido de forma predeterminada y funcionalidad. En la definición puede colocar listas preconfiguradas, tipos de contenido, receptores de eventos, imágenes y otros elementos. SharePoint incluye algunas definiciones de sitio, como blogs, por ejemplo. Cuando se crea un sitio basado en la definición de sitio BLOG, el sitio contiene las listas, elementos Web y otros elementos que requiere un sitio de blog.  

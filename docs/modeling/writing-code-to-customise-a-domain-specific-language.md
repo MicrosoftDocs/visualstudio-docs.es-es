@@ -1,23 +1,21 @@
 ---
-title: "Escribir código para personalizar un lenguaje específico de dominio | Documentos de Microsoft"
-ms.custom: 
+title: Escribir código para personalizar un lenguaje específico de dominio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 81d0608189d45ed4ef9770a8fecdc61c7ebb118c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cb058ba2467ae852491339dc64a3fba837249688
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Escribir código para personalizar lenguajes específicos de dominio
 En esta sección se muestra cómo utilizar código personalizado para acceder, modificar o crear un modelo en un lenguaje específico de dominio.  
@@ -26,7 +24,7 @@ En esta sección se muestra cómo utilizar código personalizado para acceder, m
   
 -   **Comandos personalizados.** Puede crear un comando que los usuarios pueden invocar con el botón secundario en el diagrama, y que puede modificar el modelo. Para obtener más información, consulte [Cómo: agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
--   **Validation.** Puede escribir código que comprueba si el modelo está en un estado correcto. Para obtener más información, consulte [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).  
+-   **Validation (Validación).** Puede escribir código que comprueba si el modelo está en un estado correcto. Para obtener más información, consulte [validación en un lenguaje específico de dominio](../modeling/validation-in-a-domain-specific-language.md).  
   
 -   **Invalidar el comportamiento predeterminado.** Puede modificar muchos aspectos del código que se genera a partir de DslDefinition.dsl. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).  
   

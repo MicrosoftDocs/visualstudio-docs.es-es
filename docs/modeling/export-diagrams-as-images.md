@@ -1,30 +1,28 @@
 ---
-title: "Exportar diagramas como imágenes | Documentos de Microsoft"
-ms.custom: 
+title: Exportar diagramas como imágenes | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bbe67a270305dfb9f8e73d869963908502348b7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2761cc222d4ce8cc15db484d21c17da46eaa400c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imágenes
 En Visual Studio, puede guardar diagramas de modelado en formatos de solo lectura para que se puedan compartir con las partes interesadas, los usuarios o los miembros del equipo de proyecto que no utilizan la misma versión de Visual Studio.  
   
- Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Para copiar un diagrama o parte de un diagrama en otra aplicación  
   

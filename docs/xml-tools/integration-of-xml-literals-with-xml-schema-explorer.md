@@ -1,23 +1,21 @@
 ---
-title: "Integración de los literales XML con el Explorador de esquemas XML | Documentos de Microsoft"
-ms.custom: 
+title: Integración de los literales XML con el Explorador de esquemas XML | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: dad11fa10e7c61845ac0d4ea5663e6f2c7bc88ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: da088320639cbf9b663d4bc4eef8037d4321fc12
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integración de los literales XML con el Explorador de esquemas XML
 Visual Basic admite literales XML, lo que significa que se pueden incorporar fragmentos XML directamente en el código de Visual Basic. Para obtener más información, consulte [información general sobre literales de XML](http://go.microsoft.com/fwlink/?LinkId=140325).  

@@ -1,12 +1,10 @@
 ---
-title: "Directrices para la importación de flujos de trabajo reutilizables | Documentos de Microsoft"
-ms.custom: 
+title: Directrices para la importación de flujos de trabajo reutilizables | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a79f277c5cecead23def256e16b8fd69c64b2d36
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 57ca59e7e31cabde62128d2e56df45c4819cfb65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Pautas para importar flujos de trabajo reutilizables
-  Para importar flujos de trabajo reutilizables creados en SharePoint Designer, use la plantilla de proyecto Importar flujo de trabajo de reutilizable SharePoint 2010 en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Esta plantilla se importa un *declarativa* *flujo de trabajo* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-solo) y lo convierte en un *flujo de trabajo de código*, que es un flujo de trabajo que pueden mejorar con cualquiera [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] código. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Tutorial: importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).  
+  Para importar flujos de trabajo reutilizables creados en SharePoint Designer, use la plantilla de proyecto Importar flujo de trabajo de reutilizable SharePoint 2010 en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Esta plantilla se importa un *declarativa* *flujo de trabajo* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-solo) y lo convierte en un *flujo de trabajo de código*, que es un flujo de trabajo que pueden mejorar con cualquiera [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] código. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Tutorial: Importar un flujo de trabajo reutilizable de SharePoint Designer en Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).  
   
  Sin embargo, la plantilla de flujo de trabajo de importación reutilizable SharePoint 2010 puede importar sólo las soluciones de granja de servidores. Si va a implementar el flujo de trabajo como una solución en espacio aislado, impórtelo con la plantilla Importar paquete de solución de SharePoint 2010. Sin embargo, al hacerlo, no se puede convertir para flujo de trabajo de código y no podrá modificarlo como tal.  
   

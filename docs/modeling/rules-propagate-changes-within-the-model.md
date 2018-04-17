@@ -2,23 +2,21 @@
 title: Reglas de propagarán los cambios en el modelo | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: af086275f641e3237f8d22308c960ad30240b647
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: af43a323676eb977b3e722dd4a677976790a8d5f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 Puede crear una regla de almacén para propagar un cambio de un elemento a otro en la visualización y modelado de SDK (VMSDK). Cuando se produce un cambio a cualquier elemento en el almacén, las reglas se programan para ejecutarse, normalmente cuando se confirma la transacción más externa. Hay diferentes tipos de reglas para los diferentes tipos de eventos, como agregar un elemento o eliminarlo. Puede asociar reglas a tipos específicos de elementos, formas o diagramas. Muchas características integradas se definen mediante reglas: por ejemplo, las reglas de asegurarse de que se actualiza un diagrama cuando cambia el modelo. Puede personalizar su lenguaje específico de dominio mediante la adición de sus propias reglas.  

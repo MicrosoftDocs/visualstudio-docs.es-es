@@ -1,5 +1,5 @@
 ---
-title: "Conjunto de reglas de cuadro de diálogo de Editor (heredado) | Documentos de Microsoft"
+title: Conjunto de reglas de cuadro de diálogo de Editor (heredado) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 989e0ed3f390513efeb849a71f94d5d61aecc57e
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Editor de conjunto de reglas (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo utilizar el **Editor de conjunto de reglas** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -49,7 +49,7 @@ Este tema se describe cómo utilizar el **Editor de conjunto de reglas** cuadro 
 |**Condición:**|Escriba una expresión para la condición de la regla. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|
 |**A continuación, acciones:**|Escriba una expresión para las acciones Then. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|
 |**Acciones Else:**|Escriba una expresión para las acciones Else. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|
-|**OK**|Haga clic en Aceptar para guardar el conjunto de reglas en un archivo .rules.|
+|**VALE**|Haga clic en Aceptar para guardar el conjunto de reglas en un archivo .rules.|
 
  Para obtener más información acerca de los conjuntos de reglas, consulte [mediante la actividad PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).
 

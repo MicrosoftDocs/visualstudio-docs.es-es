@@ -1,13 +1,10 @@
 ---
 title: Programar personalizaciones de nivel de documento | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Sheet3
 - thisWorkbook
@@ -30,14 +27,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5f44b7d5a283d6e2946eb26e5036f47b09729de8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-document-level-customizations"></a>Programar personalizaciones de nivel de documento
   Al ampliar Microsoft Office Word o Microsoft Office Excel mediante una personalización de nivel de documento, puede realizar las siguientes tareas:  
@@ -58,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
  Algunos aspectos de la escritura de código en proyectos de nivel de documento difieren de otros tipos de proyectos de Visual Studio. Muchas de estas diferencias se deben a la forma en que los modelos de objetos de Office se exponen al código administrado. Para obtener más información, consulta [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
- Para obtener información general sobre las personalizaciones de nivel de documento y otros tipos de soluciones que puede crear mediante el uso de las herramientas de desarrollo de Office en Visual Studio, vea [información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Para obtener información general sobre las personalizaciones de nivel de documento y otros tipos de soluciones que puede crear mediante el uso de las herramientas de desarrollo de Office en Visual Studio, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>Usar las clases generadas en proyectos de nivel de documento  
  Cuando crea un proyecto de nivel de documento, Visual Studio crea automáticamente una clase en el proyecto que puede usar para comenzar a escribir el código. Visual Studio crea diferentes clases para Word y Excel:  
@@ -84,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 -   `ThisWorkbook`: deriva de <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.  
   
--   `Sheet` *n*: deriva de <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
+-   `Sheet` *n*: se deriva de <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
   
  Estas clases base redirigen todas las llamadas realizadas a sus miembros, a las implementaciones internas de las correspondientes interfaces de elementos host del [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Por ejemplo, si llama al método <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> de la clase `ThisDocument` , la clase <xref:Microsoft.Office.Tools.Word.DocumentBase> redirige esta llamada a la implementación interna de la interfaz de <xref:Microsoft.Office.Tools.Word.Document> en [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
@@ -174,7 +171,7 @@ Globals.ThisDocument.Save();
   
 ## <a name="see-also"></a>Vea también  
  [Controles en documentos de Office](../vsto/controls-on-office-documents.md)   
- [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Combinar personalizaciones de VBA y de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md)   
  [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   

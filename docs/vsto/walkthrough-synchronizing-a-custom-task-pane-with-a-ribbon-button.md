@@ -1,13 +1,10 @@
 ---
-title: "Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ff3252a1ae234615cc4d4ed83a07d98a15092bee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones
   En este tutorial se explica cómo crear un panel de tareas personalizado que los usuarios puedan ocultar o mostrar haciendo clic en un botón de alternancia de la cinta. Siempre se debe crear un elemento de interfaz de usuario, como un botón, en el que los usuarios puedan hacer clic para mostrar u ocultar el panel de tareas personalizado, porque las aplicaciones de Microsoft Office no proporcionan una manera predeterminada para que los usuarios muestren u oculten los paneles de tareas personalizados.  
@@ -174,7 +171,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Automatizar una aplicación desde un panel de tareas personalizado. Para obtener más información, consulta [Tutorial: Automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Crear un panel de tareas personalizado para cada mensaje de correo que se abre en Outlook. Para obtener más información, consulta [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Crear un panel de tareas personalizado para cada mensaje de correo que se abre en Outlook. Para obtener más información, consulta [Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Paneles de tareas personalizados](../vsto/custom-task-panes.md)   

@@ -1,26 +1,24 @@
 ---
-title: "Elemento de menú | Documentos de Microsoft"
-ms.custom: 
+title: Elemento de menú | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 58b948e7ec420442eae839cd4eeefbccbe6b509d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5c44ca8a78a331d66d099b8d141c4b66c1144949
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="menu-element"></a>Elemento de menú
 Define un elemento de menú. Se trata de los seis tipos de menús: contexto, un menú, MenuController, MenuControllerLatched, barra de herramientas y ToolWindowToolbar.  

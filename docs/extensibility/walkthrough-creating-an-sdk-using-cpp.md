@@ -1,23 +1,21 @@
 ---
 title: 'Tutorial: Crear un SDK usando C++ | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7a4091506bcd16222ff02600bd924d3526d57c38
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 33880dc3b9c359798c47c666debc3d5564524794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Tutorial: Crear un SDK usando C++
 Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK, el paquete del SDK como una extensión Visual de Studio (VSIX) y, a continuación, usarla para crear una aplicación. El tutorial está dividido en estos pasos:  
@@ -31,7 +29,7 @@ Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK,
 ## <a name="prerequisites"></a>Requisitos previos  
  Para seguir este tutorial, debe instalar el SDK de Visual Studio. Para obtener más información, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Para crear la enumeración nativa y bibliotecas en tiempo de ejecución de Windows  
+##  <a name="createClassLibrary"></a> Para crear la enumeración nativa y bibliotecas en tiempo de ejecución de Windows  
   
 1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
@@ -59,7 +57,7 @@ Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK,
   
 9. En la barra de menús, elija **Compilar**, **Compilar solución**.  
   
-##  <a name="createVSIX"></a>Para crear el proyecto de extensión NativeMathVSIX  
+##  <a name="createVSIX"></a> Para crear el proyecto de extensión NativeMathVSIX  
   
 1.  En **el Explorador de soluciones**, abra el menú contextual para **solución 'NativeMath'**y, a continuación, elija **agregar**, **nuevo proyecto**.  
   
@@ -143,7 +141,7 @@ Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK,
   
 18. Elija la **instalar** botón, espere a que finalice la instalación y, a continuación, inicie Visual Studio.  
   
-##  <a name="createSample"></a>Para crear una aplicación de ejemplo que utiliza la biblioteca de clases  
+##  <a name="createSample"></a> Para crear una aplicación de ejemplo que utiliza la biblioteca de clases  
   
 1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
@@ -171,7 +169,7 @@ Este tutorial muestra cómo crear una biblioteca nativa de C++ matemáticas SDK,
   
 9. Presione la tecla F5 para ejecutar la aplicación.  
   
-10. En la aplicación, escriba los dos números, seleccione una operación y, a continuación, elija la  **=**  botón.  
+10. En la aplicación, escriba los dos números, seleccione una operación y, a continuación, elija la **=** botón.  
   
      Aparece el resultado correcto.  
   

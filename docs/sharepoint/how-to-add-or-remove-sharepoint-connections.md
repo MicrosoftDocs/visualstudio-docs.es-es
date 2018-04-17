@@ -1,12 +1,10 @@
 ---
-title: "Cómo: agregar o quitar conexiones de SharePoint | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: agregar o quitar conexiones de SharePoint | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b7144f5f8c7c4d2ca42543abe236479ac364d7f8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: db37c29c049a4e233be96e468b93b8e2998c0565
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Cómo: Agregar o quitar conexiones de SharePoint
   Explorador de servidores permite examinar los sitios de SharePoint, así como las conexiones de datos. Sin embargo, para poder examinar el contenido de un sitio de SharePoint debe agregarlo a la **las conexiones de SharePoint** nodo.  

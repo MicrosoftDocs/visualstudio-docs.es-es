@@ -1,13 +1,10 @@
 ---
-title: "Cómo: agregar y quitar ensamblados adicionales | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: agregar y quitar ensamblados adicionales | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 13ea5388a7b4ce2d1a045dec6339dc59e5c68393
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Cómo: Agregar y quitar ensamblados adicionales
   Si un paquete de SharePoint depende de otros ensamblados para la funcionalidad o los datos, puede agregar esos ensamblados al paquete de solución (.wsp). De esta manera, el servidor de SharePoint se asegura de que los ensamblados personalizados se instalan con un paquete.  

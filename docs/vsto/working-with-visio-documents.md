@@ -1,12 +1,10 @@
 ---
 title: Trabajar con documentos de Visio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], common tasks in Visio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c34703e2897475a168215194c0dfb30000551021
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3c9d5f3ad8344e2ae231a5c3680226fa945f4c46
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-visio-documents"></a>Trabajar con documentos de Visio
   Los temas de esta sección proporcionan procedimientos paso a paso y ejemplos de código para que usar el modelo de objetos de Microsoft Office Visio para trabajar con documentos en proyectos de Office.  
@@ -38,6 +37,6 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Vea también  
  [Soluciones de Visio](../vsto/visio-solutions.md)   
  [Información general del modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
- [Información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

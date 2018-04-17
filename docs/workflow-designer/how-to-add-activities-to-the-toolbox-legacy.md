@@ -1,5 +1,5 @@
 ---
-title: "Cómo: agregar actividades al cuadro de herramientas (heredado) | Documentos de Microsoft"
+title: 'Cómo: agregar actividades al cuadro de herramientas (heredado) | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: b66ea29c-120b-40ba-8a61-c1c8240850fa
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d6d7e817ae34b3e39d617ad5d12802cabd5cedc
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 779735cb1d163db9e7b05e2892d01a991a4a4c2c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Cómo: Agregar actividades al cuadro de herramientas (Heredado)
 Al compilar una solución de flujo de trabajo con el Diseñador de flujo de trabajo de Windows heredado que tiene como destino el [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], las actividades personalizadas se pueden agregar al proyecto de flujo de trabajo y sus diseñadores colocados en el **cuadro de herramientas** para fácil acceso. También puede agregar actividades directamente a la **cuadro de herramientas** desde una biblioteca de vínculos dinámicos (DLL).

@@ -1,13 +1,10 @@
 ---
-title: "Cómo: incluir un ensamblado personalizado en una característica BDC | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: incluir un ensamblado personalizado en una característica BDC | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Add_Assemblies_Dialog
 dev_langs:
@@ -22,14 +19,14 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], add reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32554a0456c34a3c8b1d96c471fd7ae8e9221943
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ab104ee31246a524e2c34c513a66a5f5143d5f55
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Cómo: Incluir un ensamblado personalizado en una característica de BDC
   El proyecto puede hacer referencia a ensamblados de otros proyectos de la misma solución. Sin embargo, debe agregar estos ensamblados al archivo de características del proyecto mediante el **asignar al que hace referencia a LobSystems ensamblados** cuadro de diálogo.  

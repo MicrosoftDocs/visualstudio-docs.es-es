@@ -1,24 +1,22 @@
 ---
-title: "Modelado del SDK de Visual Studio - lenguajes específicos de dominio | Documentos de Microsoft"
-ms.custom: 
+title: Modelado del SDK de Visual Studio - lenguajes específicos de dominio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edb30221d85f8e634a9d618d50cd1e0b772b69a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7cb927128ae4284f665fef534aafa9bc27a73c28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
 Mediante el SDK de modelado para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede crear herramientas de desarrollo basado en modelo eficaz que puede integrar en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. De la misma manera, puede crear una o más definiciones de modelo e integrarlas en un conjunto de herramientas.  
