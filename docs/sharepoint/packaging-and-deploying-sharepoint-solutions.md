@@ -1,12 +1,10 @@
 ---
 title: Empaquetar e implementar soluciones de SharePoint | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e25d0829305f414712590296b6121d62583736a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8faeb21b7c32f1af91a9149b1b9f6bcadafeed7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>Empaquetar e implementar soluciones de SharePoint
   Normalmente, una solución de SharePoint se implementa en un servidor de SharePoint mediante un archivo de solución (.wsp) de paquete. Puede usar Visual Studio para organizar los elementos de proyecto de SharePoint en características y crear un paquete para implementar las características de SharePoint.  
@@ -39,12 +38,12 @@ ms.lasthandoff: 01/10/2018
   
 -   [Implementar archivos en soluciones de SharePoint](#DeployingFiles)  
   
-##  <a name="Creating"></a>Creación de características y paquetes  
+##  <a name="Creating"></a> Creación de características y paquetes  
  Puede usar Visual Studio para agrupar elementos relacionados de SharePoint en un *característica*. Por ejemplo, una característica para una definición de lista de contactos puede incluir la instancia de lista y la definición de lista. Puede combinar estos dos elementos en una única característica para fines de implementación. Para obtener más información acerca de las características, vea [bloques de creación: características](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
  A continuación, puede crear un paquete de solución de SharePoint (.wsp) para agrupar varias características, definiciones del sitio, ensamblados y otros archivos en un paquete único, que almacena los archivos en un formato que necesita SharePoint para implementar los archivos en el servidor. Para obtener más información, consulte [bloques de creación: soluciones](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
-##  <a name="Tools"></a>Compatibilidad con las herramientas de paquetes y características  
+##  <a name="Tools"></a> Compatibilidad con las herramientas de paquetes y características  
  Puede usar las herramientas de desarrollo de SharePoint en Visual Studio para organizar rápidamente los archivos de SharePoint en características y paquetes de soluciones para la implementación sea más fácil. Puede usar las herramientas siguientes para configurar el paquete de características y soluciones.  
   
 -   Diseñador de características y Diseñador de paquetes.  
@@ -88,12 +87,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="solution-explorer"></a>Explorador de soluciones  
  Puede usar el Explorador de soluciones para navegar y abrir los archivos del proyecto de SharePoint. Utilice el menú contextual en el Explorador de soluciones para agregar características, receptores de eventos de características y recursos de características. Además, puede abrir los diseñadores de características y los diseñadores de paquetes para configurar las características y paquetes para la implementación.  
   
-##  <a name="Deploying"></a>Implementar soluciones de SharePoint  
+##  <a name="Deploying"></a> Implementar soluciones de SharePoint  
  Después de personalizar las características y paquetes en Visual Studio, puede crear un archivo .wsp para implementar en servidores de SharePoint. Puede usar Visual Studio para depurar y probar el archivo .wsp en el servidor de SharePoint en el equipo de desarrollo. Para obtener más información acerca de cómo implementar las soluciones de SharePoint en un servidor remoto de SharePoint, vea [implementar una solución](http://go.microsoft.com/fwlink/?LinkID=169194).  
   
  También puede personalizar los pasos de implementación en el equipo de desarrollo. Para obtener más información, consulte [actualizar paquetes de soluciones de SharePoint, publicación e implementación](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
-##  <a name="DeployingFiles"></a>Implementar archivos en soluciones de SharePoint  
+##  <a name="DeployingFiles"></a> Implementar archivos en soluciones de SharePoint  
  Normalmente, cuando se agrega un elemento de proyecto de SharePoint a la solución de SharePoint, todos los necesarios se incluyen los archivos. Archivos que pueden ser compilado (archivos de código) están integradas en el ensamblado de salida de la solución. Sin embargo, también tendrá que agregar no compilable archivos, por ejemplo, .xml, .txt o archivos de recursos a un proyecto de SharePoint. Estos archivos no se empaquetan de manera automática en la solución. Para asegurarse de que se empaquetan, agregue los archivos a una carpeta asignada o a un elemento de proyecto de SharePoint.  
   
  Archivos agregados a las carpetas asignadas se copian automáticamente en el subárbol de SharePoint cuando se implementa la solución. Archivos agregados a un elemento de proyecto de SharePoint se implementan en la ubicación que se especifica en el **ubicación de implementación** propiedad para cada archivo, que parcial se establece en función de la **tipo de implementación** propiedad. De forma predeterminada, el **tipo de implementación** es el valor de la propiedad **NoDeployment**, lo que significa que el archivo no se implementa con la solución. Debe establecer otro valor para la propiedad que se va a incluir el archivo en el paquete.  

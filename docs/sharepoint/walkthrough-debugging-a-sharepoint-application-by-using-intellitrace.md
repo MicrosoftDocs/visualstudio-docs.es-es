@@ -1,13 +1,10 @@
 ---
-title: "Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace
 
@@ -58,7 +55,7 @@ Necesita los componentes siguientes para completar este tutorial:
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Crear un receptor de características</a>
+## <a name="BKMK_CreateReceiver"></a> Crear un receptor de características
 
 Primero se debe crear un proyecto de SharePoint vacío que tiene un receptor de características.
 
@@ -76,7 +73,7 @@ Primero se debe crear un proyecto de SharePoint vacío que tiene un receptor de 
 
 4. Abra el menú contextual para Feature1.feature y, a continuación, elija **agregar receptor de eventos** para agregar un módulo de código a la característica.
 
-## <a name="BKMK_AddCode">Agregue código al receptor de características</a>
+## <a name="BKMK_AddCode"></a> Agregue código al receptor de características
 
 Luego, agregue el código a dos métodos del receptor de características: `FeatureActivated` y `FeatureDeactivating`. Estos métodos se activan cada vez que una característica se activa o se desactiva en SharePoint, respectivamente.
 
@@ -250,7 +247,7 @@ Luego, agregue el código a dos métodos del receptor de características: `Feat
     }
     ```
 
-## <a name="BKMK_Test1">El proyecto de prueba</a>
+## <a name="BKMK_Test1"></a> El proyecto de prueba
 
 Ahora que el código se agrega al receptor de características y el recopilador de datos se está ejecutando, implemente y ejecute la solución de SharePoint para probar si funciona correctamente.
 
@@ -277,7 +274,7 @@ Ahora que el código se agrega al receptor de características y el recopilador 
 
      El controlador de eventos FeatureDeactivating() produce un error.
 
-## <a name="BKMK_CollectDiagnosticData">Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Recopilar datos de IntelliTrace mediante Microsoft Monitoring Agent
 
 Si instala a Microsoft Monitoring Agent en el sistema que ejecuta SharePoint, puede depurar soluciones de SharePoint mediante el uso de datos que son más específicos que la información genérica que devuelve IntelliTrace. El agente funciona fuera de Visual Studio mediante cmdlets de PowerShell para capturar información de depuración mientras se ejecuta la solución de SharePoint.
 
@@ -300,9 +297,9 @@ Si instala a Microsoft Monitoring Agent en el sistema que ejecuta SharePoint, pu
 
 3. En la ventana de PowerShell, ejecute el [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) comando para crear el archivo .iTrace, detener la supervisión y reiniciar la solución de SharePoint.
 
-     **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
+     **Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
 
-## <a name="BKMK_DebugSolution">Depurar y corregir la solución de SharePoint</a>
+## <a name="BKMK_DebugSolution"></a> Depurar y corregir la solución de SharePoint
 
 Ahora puede ver el archivo de registro de IntelliTrace en Visual Studio para buscar y corregir el error en la solución de SharePoint.
 

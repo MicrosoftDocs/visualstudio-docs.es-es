@@ -1,13 +1,10 @@
 ---
 title: Depurar soluciones de SharePoint | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.WebConfigModificationDialog
 - VS.SharePointTools.Project.DebuggingNotEnabled
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85317332cd6b142bb8e0e916e3d7ac80e4aa836c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Depurar soluciones de SharePoint
   Puede depurar las soluciones de SharePoint utilizando el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Al iniciar la depuración, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implementa los archivos de proyecto en el servidor de SharePoint y, a continuación, abre una instancia del sitio de SharePoint en el explorador Web. En las secciones siguientes se explica cómo depurar aplicaciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Habilitar información de depuración mejorada](#EnhancedDebug)  
   
-##  <a name="EnableDebug"></a>Habilitar la depuración  
+##  <a name="EnableDebug"></a> Habilitar la depuración  
  Cuando se depura por primera vez una solución de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], un cuadro de diálogo advierte de que el archivo web.config no está configurado para habilitar la depuración. (Se crea el archivo web.config al instalar el servidor de SharePoint. Para obtener más información, consulte [trabajar con archivos Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) El cuadro de diálogo da la opción de ejecutar el proyecto sin depurar o modificar el archivo web.config para habilitar la depuración. Si elige la primera opción, el proyecto se ejecuta normalmente. Si elige la segunda opción, el archivo web.config se configura para:  
   
 -   Activar la pila de llamadas (`CallStack="true"`)  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Deshabilitar la depuración de compilación (`<compilation debug="false">`)  
   
-##  <a name="Deployment"></a>Depuración F5 y proceso de implementación  
+##  <a name="Deployment"></a> Depuración F5 y proceso de implementación  
  Cuando se ejecuta un proyecto de SharePoint en modo de depuración, el proceso de implementación de SharePoint realiza las tareas siguientes:  
   
 1.  Ejecuta los comandos anteriores a la implementación personalizables.  
@@ -120,14 +117,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] muestra un mensaje de estado en la Ventana de salida de una vez completada cada tarea. Si no se puede completar una tarea, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] muestra un mensaje de error en la ventana Lista de errores.  
   
-##  <a name="Features"></a>Características de proyecto de SharePoint  
+##  <a name="Features"></a> Características de proyecto de SharePoint  
  Una característica es una unidad portátil y modular de funcionalidad que simplifica la modificación de sitios mediante definiciones del sitio. También es un paquete de [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementos de (WSS) que se puede activar para un ámbito concreto y que ayuda a los usuarios a lograr un objetivo determinado o una tarea. Las plantillas se implementan como características.  
   
  Cuando se ejecuta un proyecto en modo de depuración, el proceso de implementación crea una carpeta en el *característica* directorio en %COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES. Nombres de las características tienen el formato *nombre del proyecto*_Feature*x*, como TestProject_Feature1.  
   
  Carpeta de la solución en el directorio de características contiene un *definición de la característica* archivo y un *definición de flujo de trabajo* archivo. El archivo de definición de característica (Feature.xml) describe los archivos en la característica WAS del proyecto el archivo de definición de proyecto (Elements.xml) describe la plantilla de proyecto. Elements.XML se encuentra en **el Explorador de soluciones**, pero Feature.xml se genera cuando se crea el paquete de solución. Para obtener más información acerca de estos archivos, consulte [proyecto de SharePoint y plantillas de elementos de proyecto](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
-##  <a name="Workflow"></a>Depurar flujos de trabajo  
+##  <a name="Workflow"></a> Depurar flujos de trabajo  
  Cuando se depuran proyectos de flujo de trabajo, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega la plantilla (en función de su tipo) de flujo de trabajo a una biblioteca o a una lista. A continuación, puede iniciar la plantilla de flujo de trabajo manualmente o agregando o actualizando un elemento. Después puede utilizar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para depurar el flujo de trabajo.  
   
 > [!NOTE]  
@@ -137,12 +134,12 @@ ms.lasthandoff: 01/10/2018
   
  Por ejemplo, si especificó que se puede iniciar el flujo de trabajo manualmente, inicie directamente el flujo de trabajo desde el elemento de la biblioteca o lista. Para obtener más información sobre cómo iniciar un flujo de trabajo manualmente, consulte [iniciar manualmente un flujo de trabajo en un elemento de documento](http://go.microsoft.com/fwlink/?LinkID=79938).  
   
-##  <a name="FeatureEvents"></a>Depurar receptores de eventos de características  
+##  <a name="FeatureEvents"></a> Depurar receptores de eventos de características  
  De forma predeterminada, al ejecutar la aplicación de SharePoint de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sus características se activan automáticamente en el servidor de SharePoint. Sin embargo, esto produce problemas al depurar los receptores de eventos de características, porque cuando se activa una característica por [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], se ejecuta en un proceso diferente que el depurador. Esto significa que alguna funcionalidad de depuración, como los puntos de interrupción, no funcionará correctamente.  
   
  Para deshabilitar la activación automática de la característica en SharePoint y permitir la depuración correcta de receptores de eventos de característica, establezca el valor del proyecto **Active Deployment Configuration** propiedad **No Activation** antes de depurar. A continuación, una vez que empiece a depurar su aplicación de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], active manualmente la característica en SharePoint. Para activar la característica, abra la **acciones del sitio** menú en SharePoint, elija **configuración del sitio**, elija la **administrar las características del sitio** vincular y, a continuación, elija la **Activar** botón situado junto a la característica para continuar la depuración de forma habitual.  
   
-##  <a name="EnhancedDebug"></a>Habilitar información de depuración mejorada  
+##  <a name="EnhancedDebug"></a> Habilitar información de depuración mejorada  
  Debido a las interacciones a veces complejas entre el proceso de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (devenv.exe), el proceso host de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (vssphost4.exe), SharePoint y la capa de WCF, los errores de diagnóstico que se producen durante la compilación, implementación, etc., pueden suponer un auténtico reto. Para ayudarle a resolverlos, puede habilitar la información de depuración mejorada. Para ello, entre en la clave del Registro siguiente en el Registro de Windows:  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools]  

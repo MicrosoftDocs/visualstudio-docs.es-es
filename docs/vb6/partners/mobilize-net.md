@@ -1,11 +1,10 @@
 ---
-title: "Movilizar complementario de actualización de .net Visual Basic (VBUC) | Documentos de Microsoft"
+title: Movilizar complementario de actualización de .net Visual Basic (VBUC) | Documentos de Microsoft
 description: Movilizar herramienta de .net para migrar desde Visual Basic 6 a Visual Basic .NET y C#
 ms.date: 09/05/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d80fa0e2f00ec9ea834483e8dd2c5c262a5eea0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>Movilizar a complementario de actualización de .net Visual Basic (VBUC)
 
@@ -87,7 +86,7 @@ Estas son algunas de las características únicas del Asistente para actualizaci
 Para una lista de características actualizadas y más detallada, visite la [sitio técnica del VBUC](http://www.vbtonet.com/?msdn).
 
 ## <a name="learn-more-and-try-it-for-yourself"></a>Obtenga más información y pruébelo usted mismo
-Obtener más información sobre la VBUC, leer la evidencia del cliente, acceso notas del producto, vídeos y difusiones por Web o descargar una evaluación gratuita en http://www.mobilize.net/solution/msdn.
+Obtener más información sobre la VBUC, leer la evidencia del cliente, tener acceso a blancos artículos, vídeos y difusiones por Web o descargar una evaluación gratuita en http://www.mobilize.net/solution/msdn.
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

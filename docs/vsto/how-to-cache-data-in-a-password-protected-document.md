@@ -1,12 +1,10 @@
 ---
-title: "Cómo: almacenar en caché datos en un documento protegido por contraseña | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: almacenar en caché datos en un documento protegido por contraseña | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Cómo: Almacenar datos en caché en un documento protegido por contraseña
   Si agrega datos a la caché de datos en un documento o un libro que está protegido con una contraseña, los cambios en los datos almacenados en caché no se guardan automáticamente. Puede guardar los cambios a los datos almacenados en memoria caché al invalidar los dos métodos en el proyecto.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Para almacenar datos en un libro de Excel que está protegido con una contraseña  
   
-1.  En el `ThisWorkbook` clase o uno de los `Sheet`  *n*  clases, marcar un campo público o una propiedad en la memoria caché. Para obtener más información, consulta [Caching Data](../vsto/caching-data.md).  
+1.  En el `ThisWorkbook` clase o uno de los `Sheet` *n* clases, marcar un campo público o una propiedad en la memoria caché. Para obtener más información, consulta [Caching Data](../vsto/caching-data.md).  
   
 2.  Invalidar el <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> método en la `ThisWorkbook` clase y quite la protección del libro.  
   

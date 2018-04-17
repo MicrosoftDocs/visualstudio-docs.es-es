@@ -1,24 +1,23 @@
 ---
 title: Crear complementos VSTO para Office con Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9a1b95c057163f3a90c8277744d1ec39a2f24cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Crear complementos de VSTO para Office con Visual Studio
   Puede usar las herramientas para desarrolladores de Microsoft Office en Visual Studio para crear aplicaciones de .NET Framework que amplíen Office. Estas aplicaciones también se denominan *soluciones de Office*.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
 -   El [Centro para desarrolladores de Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) contiene vínculos a artículos técnicos, ejemplos de código, descargas, información de la comunidad, soporte técnico y otra documentación sobre las personalizaciones de Office y Aplicaciones empresariales de Office (OBA).  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Introducción a &#40; desarrollo de Office en Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Proporciona vínculos a información acerca de cómo configurar un equipo de desarrollo para crear soluciones de Office, cómo empezar a crear soluciones de Office y novedades del desarrollo de Office en Visual Studio.  
   
  [Actualización y migración de soluciones de Office](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -86,13 +85,13 @@ ms.lasthandoff: 01/10/2018
  [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)  
  Proporciona vínculos a aplicaciones de ejemplo y temas que proporcionan instrucciones paso a paso para realizar tareas habituales.  
   
- [Referencia general &#40; desarrollo de Office en Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Referencia general &#40;desarrollo de Office en Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Proporciona vínculos a información detallada sobre los ensamblados de interoperabilidad primarios, los manifiestos, los elementos de la interfaz de usuario y los mensajes de error de Office.  
   
- [Administrando referencia &#40; desarrollo de Office en Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ [Referencia administrada &#40;desarrollo de Office en Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
  Proporciona vínculos a información acerca de los tipos y espacios de nombres de API que se usan en los proyectos de Office para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Para obtener documentación de referencia de API sobre los espacios de nombres y los tipos que se usan en proyectos de Office para .NET Framework 3.5, vea la sección de referencia en la documentación de Visual Studio 2008: [Referencia administrada de 2007 System](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
- [Referencia de API no administrada &#40; desarrollo de Office en Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [Referencia de API no administrada &#40;desarrollo de Office en Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Contiene vínculos a información sobre las interfaces COM que se pueden usar para realizar acciones como cargar y descargar complementos de VSTO administrados en las aplicaciones de Office.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  

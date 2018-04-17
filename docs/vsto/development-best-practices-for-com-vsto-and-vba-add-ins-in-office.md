@@ -1,23 +1,24 @@
 ---
-title: "Desarrollo de mejores prácticas para COM, VSTO y VBA complementos de Office | Documentos de Microsoft"
-ms.custom: 
+title: Desarrollo de mejores prácticas para COM, VSTO y VBA complementos de Office | Documentos de Microsoft
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Prácticas recomendadas de desarrollo de COM, VSTO y VBA complementos de Office
   Si va a desarrollar complementos COM VSTO y VBA para Office, siga las prácticas recomendadas de desarrollo descritas en este artículo.   Esto le ayudará a garantizar:
@@ -62,7 +63,7 @@ Los clientes están solicitando ISV para proporcionar instrucciones de compatibi
 
 Para proporcionar instrucciones de compatibilidad para aplicaciones de cliente de Office (por ejemplo, Word o Excel), primero compruebe que los complementos ejecutan en la versión actual de Office y, a continuación, confirmación para proporcionar actualizaciones si su complemento interrumpe la ejecución en una versión futura. No es necesario que probar el complemento cuando Microsoft publica una nueva compilación o una actualización de Office. Microsoft apenas si cambia la plataforma de extensibilidad de COM, VSTO y VBA en Office y se documentará también estos cambios.
 
->Importante: Microsoft mantiene una lista de complementos compatibles para los informes de disponibilidad y la información de contacto de ISV. Para obtener el complemento aparece, consulte [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Importante: Microsoft mantiene una lista de complementos compatibles para los informes de disponibilidad y la información de contacto de ISV. Para obtener el complemento aparece, consulte [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utilice el Monitor de proceso para ayudar a depurar problemas de carga o de instalación
 Si el complemento tiene problemas de compatibilidad durante la instalación o la carga, pueden estar relacionados con problemas de acceso de archivo o del registro. Use [Monitor de procesos](/sysinternals/downloads/procmon) u otra herramienta de depuración similar para iniciar sesión y comparar el comportamiento en un entorno de trabajo para ayudar a identificar el problema.

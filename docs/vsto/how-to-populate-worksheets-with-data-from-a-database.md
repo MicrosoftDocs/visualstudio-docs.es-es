@@ -1,12 +1,10 @@
 ---
-title: "Cómo: Rellenar hojas de cálculo con datos de una base de datos | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: Rellenar hojas de cálculo con datos de una base de datos | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5a5cfe5d15e1b883de46809523f1d1acaecddc91
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 31f0bd40b38ed85631874556908a41e21b860ecd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Cómo: Rellenar hojas de cálculo con datos de una base de datos
   Puede tener acceso a datos en proyectos de Office de nivel de documento de la misma manera que obtiene acceso a datos en proyectos de Windows Forms. Se usan las mismas herramientas y el mismo código para llevar los datos a la solución; además, también es posible usar controles de Windows Forms para que se muestren los datos. Además, puede aprovechar los controles denominados host, que son objetos nativos de Microsoft Office Excel que se han mejorado con eventos y capacidad de enlace de datos. Para obtener más información, consulta [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  

@@ -1,12 +1,10 @@
 ---
-title: "Tutorial: Crear un proyecto de definición de sitio básico | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Crear un proyecto de definición de sitio básico | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 72a99a082fb1626013be6fa0ac5c759a43fd58a7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Tutorial: Crear un proyecto de definición de sitio básico
   En este tutorial se muestra cómo crear una definición de sitio básico que contiene un elemento Web visual con algunos controles en él. Por razones de claridad, el elemento Web visual que creas tiene solo algunos controles. Sin embargo, puede crear definiciones de sitio de SharePoint más sofisticadas que incluyen más funcionalidad.  
