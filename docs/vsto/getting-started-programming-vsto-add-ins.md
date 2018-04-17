@@ -1,13 +1,10 @@
 ---
-title: "Introducción a la programación de complementos VSTO | Documentos de Microsoft"
-ms.custom: 
+title: Introducción a la programación de complementos VSTO | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
 dev_langs:
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f395ce7fb85d71ed6e8c3f7dfb10726907832873
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fb257a709f2f81f124e2510403a9d6853180a56b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-programming-vsto-add-ins"></a>Getting Started Programming VSTO Add-ins
-  Puede utilizar complementos de VSTO para automatizar las aplicaciones de Microsoft Office, ampliar las características de la aplicación y personalizar la interfaz de usuario de la aplicación. Para obtener información acerca de los complementos de VSTO en comparación con otros tipos de soluciones de Office que puede crear con Visual Studio, vea [información general sobre el desarrollo de soluciones de Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Puede utilizar complementos de VSTO para automatizar las aplicaciones de Microsoft Office, ampliar las características de la aplicación y personalizar la interfaz de usuario de la aplicación. Para obtener información acerca de los complementos de VSTO en comparación con otros tipos de soluciones de Office que puede crear con Visual Studio, vea [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
@@ -62,7 +59,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="customizing-the-user-interface-of-applications"></a>Personalización de la interfaz de usuario de las aplicaciones  
  Hay varias maneras de personalizar la interfaz de usuario de la aplicación host mediante un complemento de VSTO:  
   
--   Para Excel y Word, puede agregar controles administrados a documentos. Para obtener más información, consulta [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+-   Para Excel y Word, puede agregar controles administrados a documentos. Para obtener más información, consulta [Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 -   Puede personalizar la cinta de opciones si la aplicación lo admite. Para obtener más información, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
