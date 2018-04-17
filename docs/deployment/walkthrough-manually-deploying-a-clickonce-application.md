@@ -1,13 +1,10 @@
 ---
-title: "Tutorial: Implementar manualmente una aplicación ClickOnce | Documentos de Microsoft"
-ms.custom: 
+title: 'Tutorial: Implementar manualmente una aplicación ClickOnce | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Tutorial: Implementar manualmente una aplicación ClickOnce
 Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, o si necesita usar características de implementación avanzada, como la implementación de aplicaciones de confianza, debe usar la herramienta de línea de comandos Mage.exe para crear su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos. Este tutorial describe cómo crear un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación mediante el uso de la versión de línea de comandos (Mage.exe) o la versión gráfica (MageUI.exe) de la herramienta de edición y generación de manifiestos.  
@@ -70,7 +66,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 -   Determinar si la aplicación requiere que los requisitos previos en el equipo cliente.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]las aplicaciones implementadas desde Visual Studio pueden incluir un instalación de requisitos previos del programa previo (setup.exe) con la implementación. Este tutorial crea los dos manifiestos requeridos para una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. Puede crear un arranque de requisitos previos mediante el [GenerateBootstrapper (tarea)](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones implementadas desde Visual Studio pueden incluir un instalación de requisitos previos del programa previo (setup.exe) con la implementación. Este tutorial crea los dos manifiestos requeridos para una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. Puede crear un arranque de requisitos previos mediante el [GenerateBootstrapper (tarea)](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Para implementar una aplicación con la herramienta de línea de comandos Mage.exe  
   
@@ -165,7 +161,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 13. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use la **firmar con archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el uso de los puntos suspensivos (**...** ) botón. A continuación, escriba la contraseña del certificado.  
   
-     O bien  
+     -o bien-  
   
      Si el certificado se guarda en un almacén de certificados accesible desde el equipo, seleccione la **firmar con certificado almacenado** opción y seleccione el certificado de la lista proporcionada.  
   
@@ -193,7 +189,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 25. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use la **firmar con archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el uso de los puntos suspensivos (**...** ) botón. A continuación, escriba la contraseña del certificado.  
   
-     O bien  
+     -o bien-  
   
      Si el certificado se guarda en un almacén de certificados accesible desde el equipo, seleccione la **firmar con certificado almacenado** opción y seleccione el certificado de la lista proporcionada.  
   

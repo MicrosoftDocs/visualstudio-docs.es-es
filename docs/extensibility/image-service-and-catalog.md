@@ -1,22 +1,19 @@
 ---
-title: "La imagen de servicio y catálogo | Documentos de Microsoft"
-ms.custom: 
+title: La imagen de servicio y catálogo | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y el servicio de imágenes
 Esta guía contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imagen que se introdujo en Visual Studio 2015.  
@@ -447,7 +444,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
         this.BitmapIndex = <Value>;  
         ```  
   
-    2.  Vea el paso &#1; de la "¿Cómo puedo usar Monikers de imagen en una nueva ventana de herramienta?" sección anterior.  
+    2.  Vea el paso 1 # de la "¿Cómo puedo usar Monikers de imagen en una nueva ventana de herramienta?" sección anterior.  
   
 2.  El comando para abrir la ventana de herramientas.  
   
@@ -660,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Muestras  
  Algunos de los ejemplos de Visual Studio en GitHub se actualizaron para mostrar cómo usar el servicio de imágenes como parte de varios puntos de extensibilidad de Visual Studio.  
   
- Comprobar [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) para los ejemplos más recientes.  
+ Comprobar [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) para los ejemplos más recientes.  
   
 ### <a name="tooling"></a>Tooling  
  Se creó un conjunto de herramientas de soporte técnico para el servicio de imágenes para ayudar a crear o actualizar la interfaz de usuario que funciona con el servicio de imágenes. Para obtener más información acerca de cada herramienta, consulte la documentación que se incluye con las herramientas. Las herramientas se incluyen como parte de la [SDK de Visual Studio 2015.](http://msdn.microsoft.com/library/bb166441.aspx)  

@@ -1,30 +1,26 @@
 ---
 title: ProjectItem (elemento) (plantillas de proyecto de Visual Studio) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca5143a3e5eaff488fee89b643a40adb60473bd8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8a7dfbfd03df24c2968dc9dae141ffc7a300e8be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem (Elemento, Plantillas de proyecto de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de proyecto.  
@@ -80,7 +76,7 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
  Un `string` que representa el nombre o la ruta de acceso a un archivo en el archivo .zip de plantilla.  
   
 ## <a name="remarks"></a>Comentarios  
- `ProjectItem`es un elemento secundario opcional de `Project`.  
+ `ProjectItem` es un elemento secundario opcional de `Project`.  
   
  El `TargetFileName` atributo se puede usar para crear una estructura de directorios diferente de la estructura de directorios en el archivo .zip de plantilla. Por ejemplo, si el archivo `MyFile.vb` existe en la raíz del archivo .zip de plantilla, pero desea que el archivo se coloquen en un directorio denominado `CustomFiles` en todos los proyectos creados a partir de la plantilla, usaría el siguiente código XML:  
   

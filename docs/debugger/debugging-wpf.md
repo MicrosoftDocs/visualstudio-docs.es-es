@@ -1,12 +1,10 @@
 ---
 title: Depurar WPF | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - WPF, debugging
 - debugging, WPF
 ms.assetid: 7948e8a6-40b2-4ebb-8461-e220a9e78cd7
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b21ce6ea8d4a65321c5af2cbae3cbc334dde3684
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b9563cc321028eb031b8cb29665a323bf1d9583
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-wpf"></a>Depurar WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] proporciona características adicionales para facilitar la depuración de aplicaciones WPF.  
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
 |Título|Descripción|  
 |-----------|-----------------|  
 |[Cómo: Usar el visualizador de árboles de WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md)|Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. En este tema se describe la interfaz de usuario del visualizador de árboles de WPF.|  
-|[Cómo: Mostrar información de seguimiento de WPF](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]puede recibir información de seguimiento de depuración de las aplicaciones de WPF y mostrar esa información en el **salida** ventana. En este tema se describe cómo habilitar y personalizar la presentación de la información de seguimiento de WPF.|  
+|[Cómo: Mostrar información de seguimiento de WPF](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] puede recibir información de seguimiento de depuración de las aplicaciones de WPF y mostrar esa información en el **salida** ventana. En este tema se describe cómo habilitar y personalizar la presentación de la información de seguimiento de WPF.|  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar código administrado](../debugger/debugging-managed-code.md)

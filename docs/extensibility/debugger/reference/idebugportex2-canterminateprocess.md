@@ -1,29 +1,25 @@
 ---
 title: IDebugPortEx2::CanTerminateProcess | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPortEx2::CanTerminateProcess
 helpviewer_keywords:
 - IDebugPortEx2::CanTerminateProcess
 ms.assetid: 111f65d8-5a1a-42b3-9de3-dd9bb03a33fd
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 023611e20f8df50a3d07086d6600b1622f1b69be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f44df279cd8ad4721a6b4559af1dc3defb94714a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 Determina si se puede finalizar un proceso.  

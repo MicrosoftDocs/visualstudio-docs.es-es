@@ -1,29 +1,25 @@
 ---
 title: IEnumDebugReferenceInfo2::Reset | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugReferenceInfo2::Reset
 helpviewer_keywords:
 - IEnumDebugReferenceInfo2::Reset
 ms.assetid: cf8ce649-5ce1-44a6-9d5a-89760021bde4
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6ab05f90bfbadcb5f0d20d373c09d0938d20d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a37c35b051aaab9301d89b1a842622a18c060ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugreferenceinfo2reset"></a>IEnumDebugReferenceInfo2::Reset
 Restablece la enumeración al primer elemento.  

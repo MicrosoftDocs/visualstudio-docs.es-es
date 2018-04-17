@@ -1,23 +1,21 @@
 ---
-title: "Cómo: publicar una aplicación de WPF con estilos visuales habilitados | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: publicar una aplicación de WPF con estilos visuales habilitados | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
-caps.latest.revision: "3"
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: bab4660d0e76e467bc95c373002a9035a4ccd672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2fbf3c2573d02111f5d1309fb80ceb09aa09f2e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Cómo: Publicar una aplicación WPF con estilos visuales habilitados
 Los estilos visuales permiten cambiar el aspecto de los controles comunes en función del tema elegido por el usuario. De forma predeterminada, los estilos visuales no están habilitados para las aplicaciones de Windows Presentation Foundation (WPF), por lo que es necesario habilitarlos manualmente. Sin embargo, habilitar los estilos visuales para una aplicación WPF y publicar después la solución produce un error. En este tema se describe cómo resolver este error y el proceso para publicar una aplicación WPF con estilos visuales habilitados. Para obtener más información sobre los estilos visuales, vea [Visual Styles Overview](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Para obtener más información sobre el mensaje de error, consulte [errores específicos de solución de problemas en implementaciones ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
@@ -34,7 +32,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
  A continuación, podrá mover los archivos publicados a la ubicación desde la que desea que los usuarios finales instalen la aplicación.  
   
-##  <a name="BKMK_publishsolwovs"></a>Publicar la solución sin estilos visuales habilitados  
+##  <a name="BKMK_publishsolwovs"></a> Publicar la solución sin estilos visuales habilitados  
   
 1.  Asegúrese de que el proyecto no tiene estilos visuales habilitados. En primer lugar, compruebe el archivo de manifiesto del proyecto para el siguiente código XML. A continuación, si el XML está presente, inclúyalo en una etiqueta de comentario.  
   
@@ -48,7 +46,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Para abrir el archivo de manifiesto en un proyecto de Visual Basic  
   
-    1.  En la barra de menús, elija **proyecto**, *ProjectName***propiedades**, donde *ProjectName* es el nombre de su proyecto WPF.  
+    1.  En la barra de menús, elija **proyecto**, * ProjectName ***propiedades**, donde *ProjectName* es el nombre de su proyecto WPF.  
   
          Aparecerán las páginas de propiedades del proyecto de WPF.  
   
@@ -58,7 +56,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Para abrir el archivo de manifiesto en un proyecto de C#  
   
-    1.  En la barra de menús, elija **proyecto**, *ProjectName***propiedades**, donde *ProjectName* es el nombre de su proyecto WPF.  
+    1.  En la barra de menús, elija **proyecto**, * ProjectName ***propiedades**, donde *ProjectName* es el nombre de su proyecto WPF.  
   
          Aparecerán las páginas de propiedades del proyecto de WPF.  
   
@@ -73,7 +71,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
   
 2.  Compile y publique la solución. Para obtener más información sobre cómo publicar la solución, vea [Cómo: publicar una aplicación ClickOnce sin usar el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a>Crear un archivo de manifiesto  
+##  <a name="BKMK_CreateManifest"></a> Crear un archivo de manifiesto  
   
 1.  Pegue el código siguiente en un archivo de Bloc de notas.  
   
@@ -94,7 +92,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
     > [!NOTE]
     >  Los procedimientos restantes se supone que el nombre de este archivo es **themes.manifest** y que el archivo se guarda en el directorio C:\temp del equipo.  
   
-##  <a name="BKMK_embedmanifest"></a>Incrustar el archivo de manifiesto en el archivo ejecutable de la solución publicada  
+##  <a name="BKMK_embedmanifest"></a> Incrustar el archivo de manifiesto en el archivo ejecutable de la solución publicada  
   
 1.  Abra la **símbolo del sistema de Visual Studio**.  
   
@@ -107,7 +105,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
     > -   La solución se encuentra en el siguiente directorio: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      La solución se publica en el siguiente directorio: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   La versión más reciente de los archivos de la aplicación publicada se encuentra en el siguiente directorio:`%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   La versión más reciente de los archivos de la aplicación publicada se encuentra en el siguiente directorio: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  No es necesario usar el nombre o las ubicaciones de directorio descritas anteriormente. El nombre y las ubicaciones descritos anteriormente se utilizan únicamente para mostrar los pasos necesarios para publicar la solución.  
   
@@ -123,7 +121,7 @@ Los estilos visuales permiten cambiar el aspecto de los controles comunes en fun
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a>Firmar los manifiestos de aplicación e implementación  
+##  <a name="BKMK_signappdeplyman"></a> Firmar los manifiestos de aplicación e implementación  
   
 1.  En el símbolo del sistema, ejecute el comando siguiente para quitar la extensión `.deploy` del archivo ejecutable del directorio actual.  
   

@@ -1,13 +1,10 @@
 ---
-title: "Cómo: establecer la depuración y configuración de lanzamiento | Documentos de Microsoft"
+title: 'Cómo: establecer la depuración y configuración de lanzamiento | Documentos de Microsoft'
 ms.custom: H1HackMay2017
 ms.date: 04/10/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -32,17 +29,16 @@ helpviewer_keywords:
 - release builds, switching to debug build
 - Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca61d09bb1d2ab09c6991f0cd50cc302dff7fb77
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: e85c89049c53bb097dd8a4ec850df6e66f902803
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Cómo: establecer la depuración y liberar configuraciones en Visual Studio
 Los proyectos de Visual Studio tienen configuraciones independientes para el lanzamiento y la depuración del programa. Como se desprende de sus nombres, la versión de depuración se compila para depurar y la versión de lanzamiento para la distribución final.  

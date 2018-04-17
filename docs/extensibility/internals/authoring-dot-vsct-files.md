@@ -1,27 +1,23 @@
 ---
-title: "Creación. Archivos Vsct | Documentos de Microsoft"
-ms.custom: 
+title: Creación. Archivos Vsct | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>Creación. Archivos Vsct
 Este documento muestra cómo crear un archivo .vsct para agregar elementos de menú, barras de herramientas y otros elementos de interfaz de usuario para el entorno de desarrollo integrado (IDE) de Visual Studio. Cuando se agregan elementos de interfaz de usuario a un paquete de Visual Studio (VSPackage) que ya no tiene un archivo .vsct, siga estos pasos.  
@@ -234,7 +230,7 @@ Este documento muestra cómo crear un archivo .vsct para agregar elementos de me
  Algunos tipos de menú y botón incluyen comportamientos especializados. En la tabla siguiente se describe algunas menú especializada y tipos de botones. Para otros tipos, vea la `types` atributo descripciones en [el elemento de menú](../../extensibility/menu-element.md), [elemento Button](../../extensibility/button-element.md), y [elemento combinado](../../extensibility/combo-element.md).  
   
  Cuadro combinado  
- Un cuadro combinado es una lista desplegable que se puede usar en una barra de herramientas. Para agregar cuadros combinados a la interfaz de usuario, cree un [combinaciones](../../extensibility/combos-element.md) elemento en el `Commands` elemento. A continuación, agregue el `Combos` elemento un `Combo` elemento para cada cuadro combinado agregar. `Combo`elementos tienen los mismos atributos y elementos secundarios como `Button` elementos y también tienen `DefaultWidth` y `idCommandList` atributos. El `DefaultWidth` atributo establece el ancho en píxeles y el `idCommandList` atributo apunta a un identificador de comando que se usa para rellenar el cuadro combinado. Para obtener más información, consulte el `Combo` documentación del elemento.  
+ Un cuadro combinado es una lista desplegable que se puede usar en una barra de herramientas. Para agregar cuadros combinados a la interfaz de usuario, cree un [combinaciones](../../extensibility/combos-element.md) elemento en el `Commands` elemento. A continuación, agregue el `Combos` elemento un `Combo` elemento para cada cuadro combinado agregar. `Combo` elementos tienen los mismos atributos y elementos secundarios como `Button` elementos y también tienen `DefaultWidth` y `idCommandList` atributos. El `DefaultWidth` atributo establece el ancho en píxeles y el `idCommandList` atributo apunta a un identificador de comando que se usa para rellenar el cuadro combinado. Para obtener más información, consulte el `Combo` documentación del elemento.  
   
  MenuController  
  Un controlador de menú es un botón que tiene una flecha situada junto a él. Haga clic en la flecha abre una lista. Para agregar un controlador de menú a la interfaz de usuario, cree un `Menu` y establezca su `type` atribuir a **MenuController** o **MenuControllerLatched**, según el comportamiento que desee. Para rellenar un controlador de menú, establézcalo como el elemento primario de un `Group` elemento. El controlador de menú mostrará a todos los elementos secundarios de ese grupo en la lista desplegable.  

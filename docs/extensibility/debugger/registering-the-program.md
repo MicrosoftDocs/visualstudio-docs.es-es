@@ -1,26 +1,24 @@
 ---
 title: Registrar el programa | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: eb61257b80e3f8b4a09819b2b037f342e2ecbee0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-the-program"></a>Registrar el programa
 Después de que el motor de depuración ha adquirido un puerto, representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz, el paso siguiente para habilitar el programa va a depurar es registrarlo con el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:  
@@ -35,7 +33,7 @@ Después de que el motor de depuración ha adquirido un puerto, representado por
   
 1.  Llame a la [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado por el puerto.  
   
-     `IDebugPortNotify2::AddProgramNode`requiere un puntero a un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz.  
+     `IDebugPortNotify2::AddProgramNode` requiere un puntero a un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaz.  
   
      Normalmente, cuando el sistema operativo o el entorno en tiempo de ejecución carga un programa, crea el nodo de programa. Si se solicita el motor de depuración (Alemania) al cargar el programa de la DE crea y registra el nodo de programa.  
   

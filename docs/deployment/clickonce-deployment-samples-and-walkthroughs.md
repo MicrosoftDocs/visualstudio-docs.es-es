@@ -1,12 +1,10 @@
 ---
-title: "Ejemplos de implementación de ClickOnce y tutoriales | Documentos de Microsoft"
-ms.custom: 
+title: Ejemplos de implementación de ClickOnce y tutoriales | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Visual Studio, deployment walkthroughs
 - Visual Studio, walkthroughs
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
-caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 68c8f730bf684688cb09970a58ab79101022d4d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d47c2f5581c2a6ad6184aaec6b4be8b115d3d218
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ejemplos y tutoriales de implementación de ClickOnce
 Esta sección contiene aplicaciones de ejemplo, código de ejemplo y tutoriales paso a paso que muestran la sintaxis, estructura y técnicas que se utilizan para implementar aplicaciones de Windows Forms, WPF y consola.  

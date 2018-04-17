@@ -1,29 +1,25 @@
 ---
-title: "Función SccEnumChangedFiles | Documentos de Microsoft"
-ms.custom: 
+title: Función SccEnumChangedFiles | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccEnumChangedFiles
 helpviewer_keywords:
 - SccEnumChangedFiles function
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3a124bbcadbf798f22b59111637038a09af7d75
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 762bda21f8480224347bd0c8c202c282298e07cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles (función)
 Proporciona una lista de archivos locales, esta función determina qué archivos son diferentes de las versiones correspondientes de la base de datos de control de código fuente.  

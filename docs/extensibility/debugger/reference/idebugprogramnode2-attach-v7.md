@@ -1,13 +1,10 @@
 ---
-title: IDebugProgramNode2::Attach_V7 | Microsoft Docs
-ms.custom: 
+title: IDebugProgramNode2::Attach_V7 | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNode2::Attach
 helpviewer_keywords:
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - IDebugProgramNode2::Attach
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7db57be153634476b8c0ba5ff6b6b1273ef190be
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: e77acd4091abd7da5c9d302fb4c4dd6eb66af379
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 

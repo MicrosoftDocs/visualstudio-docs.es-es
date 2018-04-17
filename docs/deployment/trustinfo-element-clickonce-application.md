@@ -1,12 +1,10 @@
 ---
-title: "&lt;trustInfo&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft"
-ms.custom: 
+title: '&lt;trustInfo&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], trustInfo element
 - <trustInfo> element [ClickOnce application manifest]
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 51247e86535ed9c8da04fadd5993b973f3a5f694
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d3d683ca2dde02ec63a00f870e1c1b9fd775983f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicación ClickOnce)
 Describe los permisos de seguridad mínimos necesarios para que la aplicación se ejecute en el equipo cliente.  

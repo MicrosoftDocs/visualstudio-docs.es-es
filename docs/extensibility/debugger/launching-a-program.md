@@ -1,26 +1,24 @@
 ---
 title: Ejecutar un programa | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 714d751e9855b5567bf76ccd902fada727e14ba1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="launching-a-program"></a>Ejecutar un programa
 Los usuarios que van a depurar un programa pueden presionar F5 para ejecutar al depurador desde el IDE. Esto inicia una serie de eventos que finalmente se en el IDE al conectar a un motor de depuración (Alemania), que a su vez esté conectado o adjunta, al programa como sigue:  
@@ -29,7 +27,7 @@ Los usuarios que van a depurar un programa pueden presionar F5 para ejecutar al 
   
 2.  Si se especifica un Alemania, la DE llama el sistema operativo para iniciar el programa. Como consecuencia de ejecutar el programa, se carga el entorno en tiempo de ejecución del programa. Por ejemplo, si un programa está escrito en MSIL, common language runtime se invocará para ejecutar el programa.  
   
-     O bien  
+     -o bien-  
   
      Si no se especifica un Alemania, el puerto llama el sistema operativo para iniciar el programa, lo que produce el entorno en tiempo de ejecución del programa que se va a cargar.  
   

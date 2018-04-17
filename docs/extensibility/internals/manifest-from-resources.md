@@ -1,22 +1,19 @@
 ---
 title: Manifiestos de recursos | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: bbf234d18c48ed501987f160bd2b98ec9f768b6e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 514135e5c6ba932d7b3b4319dd39c1df4e8cb212
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manifest-from-resources"></a>Manifiestos de recursos
 El manifiesto de la herramienta de recursos es una aplicación de consola que toma una lista de recursos de imagen (archivos .png o .xaml) y genera un archivo .imagemanifest que permite que esas imágenes para su uso con el servicio de imágenes de Visual Studio. Además, esta herramienta puede usarse para agregar imágenes a un .imagemanifest existente. Esta herramienta es útil para agregar compatibilidad con valores altos de PPP y temas para imágenes a una extensión de Visual Studio. El archivo .imagemanifest generado debe estar incluido en y se ha implementado como parte de una extensión de Visual Studio (VSIX).  

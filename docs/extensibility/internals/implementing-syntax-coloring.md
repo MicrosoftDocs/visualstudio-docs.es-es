@@ -1,32 +1,30 @@
 ---
-title: "Implementación de colores de sintaxis | Documentos de Microsoft"
-ms.custom: 
+title: Implementación de colores de sintaxis | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5502bd30378130e5977d427acb9df5b73226a05b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-syntax-coloring"></a>Color de la sintaxis de implementación
-Cuando el servicio de lenguaje proporciona colores de sintaxis, el analizador convierte una línea de texto en una matriz de elementos coloreables y devuelve los tipos de token correspondientes a estos elementos coloreables. El analizador debe devolver tipos de token que pertenecen a una lista de elementos coloreables. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]muestra cada elemento coloreable en la ventana de código según los atributos asignados por el objeto de aplicador de color para el tipo de token adecuado.  
+Cuando el servicio de lenguaje proporciona colores de sintaxis, el analizador convierte una línea de texto en una matriz de elementos coloreables y devuelve los tipos de token correspondientes a estos elementos coloreables. El analizador debe devolver tipos de token que pertenecen a una lista de elementos coloreables. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muestra cada elemento coloreable en la ventana de código según los atributos asignados por el objeto de aplicador de color para el tipo de token adecuado.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]no se especifica una interfaz de analizador, y la implementación de analizador es decisión suya. Sin embargo, se proporciona una implementación de analizador de forma predeterminada en el proyecto de paquete de idioma de Visual Studio. Para código administrado, managed package framework (MPF) proporciona total compatibilidad para colorear texto.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no se especifica una interfaz de analizador, y la implementación de analizador es decisión suya. Sin embargo, se proporciona una implementación de analizador de forma predeterminada en el proyecto de paquete de idioma de Visual Studio. Para código administrado, managed package framework (MPF) proporciona total compatibilidad para colorear texto.  
   
  Los servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características del servicio de lenguaje es utilizar las extensiones MEF. Para obtener más información sobre la nueva manera de implementar el color de sintaxis, vea [Tutorial: texto resaltado](../../extensibility/walkthrough-highlighting-text.md).  
   

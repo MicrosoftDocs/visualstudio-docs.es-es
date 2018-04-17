@@ -1,12 +1,10 @@
 ---
-title: "Compilar aplicaciones ClickOnce desde la línea de comandos | Documentos de Microsoft"
-ms.custom: 
+title: Compilar aplicaciones ClickOnce desde la línea de comandos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 183cb81798841c6640ea1b17d8db3820e0229769
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilar aplicaciones ClickOnce desde la línea de comandos
 En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], puede generar proyectos desde la línea de comandos, incluso si se crean en el entorno de desarrollo integrado (IDE). De hecho, puede volver a generar un proyecto creado con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en otro equipo que tiene sólo el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalado. Esto le permite reproducir una compilación mediante un proceso automatizado, por ejemplo, en una compilación central laboratorio o mediante técnicas avanzadas de scripting fuera del ámbito de compilar el proyecto en Sí.  
@@ -112,7 +110,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Propiedades de publicación se controlan en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde el **publicar**, **seguridad**, y **firma** páginas de propiedades de la **Diseñador de proyectos** . A continuación se muestra una descripción de las propiedades de publicación, junto con un valor que indica cómo cada uno de ellos se establece en las diversas páginas de propiedades del Diseñador de aplicaciones:  
   
--   `AssemblyOriginatorKeyFile`Determina el archivo clave utilizado para firmar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos de aplicación. Esta misma clave también puede utilizarse para asignar un nombre seguro a los ensamblados. Esta propiedad está establecida en el **firma** página de la **Diseñador de proyectos**.  
+-   `AssemblyOriginatorKeyFile` Determina el archivo clave utilizado para firmar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos de aplicación. Esta misma clave también puede utilizarse para asignar un nombre seguro a los ensamblados. Esta propiedad está establecida en el **firma** página de la **Diseñador de proyectos**.  
   
  Las siguientes propiedades se establecen en los **seguridad** página:  
   
@@ -122,41 +120,41 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Las siguientes propiedades se establecen en los **publicar** página:  
   
--   `PublishUrl`es la ubicación donde se publicará la aplicación en el IDE. Se inserta en la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación si no la `InstallUrl` o `UpdateUrl` se especifica la propiedad.  
+-   `PublishUrl` es la ubicación donde se publicará la aplicación en el IDE. Se inserta en la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación si no la `InstallUrl` o `UpdateUrl` se especifica la propiedad.  
   
--   `ApplicationVersion`Especifica la versión de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Se trata de un número de versión de cuatro dígitos. Si el último dígito es un "*", la `ApplicationRevision` se sustituye por el valor insertado en el manifiesto en tiempo de compilación.  
+-   `ApplicationVersion` Especifica la versión de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Se trata de un número de versión de cuatro dígitos. Si el último dígito es un "*", la `ApplicationRevision` se sustituye por el valor insertado en el manifiesto en tiempo de compilación.  
   
--   `ApplicationRevision`Especifica la revisión. Se trata de un entero que se incrementa cada vez que publique en el IDE. Tenga en cuenta que no se incrementa automáticamente para las compilaciones realizadas desde la línea de comandos.  
+-   `ApplicationRevision` Especifica la revisión. Se trata de un entero que se incrementa cada vez que publique en el IDE. Tenga en cuenta que no se incrementa automáticamente para las compilaciones realizadas desde la línea de comandos.  
   
--   `Install`Determina si la aplicación es una aplicación instalada o una aplicación de ejecución desde el Web.  
+-   `Install` Determina si la aplicación es una aplicación instalada o una aplicación de ejecución desde el Web.  
   
--   `InstallUrl`(no se muestra) es la ubicación donde los usuarios instalarán la aplicación de. Si se especifica, este valor se graba en el programa previo de setup.exe si el `IsWebBootstrapper` propiedad está habilitada. También se inserta en la aplicación de manifiesto si la `UpdateUrl` no se ha especificado.  
+-   `InstallUrl` (no se muestra) es la ubicación donde los usuarios instalarán la aplicación de. Si se especifica, este valor se graba en el programa previo de setup.exe si el `IsWebBootstrapper` propiedad está habilitada. También se inserta en la aplicación de manifiesto si la `UpdateUrl` no se ha especificado.  
   
--   `SupportUrl`la ubicación (no mostrado) está vinculada a la **agregar o quitar programas** cuadro de diálogo para una aplicación instalada.  
+-   `SupportUrl` la ubicación (no mostrado) está vinculada a la **agregar o quitar programas** cuadro de diálogo para una aplicación instalada.  
   
  Las siguientes propiedades se establecen en los **actualizaciones de la aplicación** cuadro de diálogo, tiene acceso desde el **publicar** página.  
   
--   `UpdateEnabled`indica si la aplicación debe buscar actualizaciones.  
+-   `UpdateEnabled` indica si la aplicación debe buscar actualizaciones.  
   
--   `UpdateMode`Especifica las actualizaciones de primer plano o actualizaciones en segundo plano.  
+-   `UpdateMode` Especifica las actualizaciones de primer plano o actualizaciones en segundo plano.  
   
--   `UpdateInterval`Especifica la frecuencia con la que la aplicación buscará actualizaciones.  
+-   `UpdateInterval` Especifica la frecuencia con la que la aplicación buscará actualizaciones.  
   
--   `UpdateIntervalUnits`Especifica si la `UpdateInterval` valor está en unidades de horas, días o semanas.  
+-   `UpdateIntervalUnits` Especifica si la `UpdateInterval` valor está en unidades de horas, días o semanas.  
   
--   `UpdateUrl`(no se muestra) es la ubicación desde la que la aplicación recibirá actualizaciones. Si se especifica, este valor se inserta en el manifiesto de aplicación.  
+-   `UpdateUrl` (no se muestra) es la ubicación desde la que la aplicación recibirá actualizaciones. Si se especifica, este valor se inserta en el manifiesto de aplicación.  
   
 -   Las siguientes propiedades se establecen en los **opciones de publicación** cuadro de diálogo, tiene acceso desde el **publicar** página.  
   
--   `PublisherName`Especifica el nombre del publicador que se muestra en el símbolo del sistema que se muestra cuando se instala o ejecuta la aplicación. En el caso de una aplicación instalada, también se utiliza para especificar el nombre de la carpeta en la **iniciar** menú.  
+-   `PublisherName` Especifica el nombre del publicador que se muestra en el símbolo del sistema que se muestra cuando se instala o ejecuta la aplicación. En el caso de una aplicación instalada, también se utiliza para especificar el nombre de la carpeta en la **iniciar** menú.  
   
--   `ProductName`Especifica el nombre del producto que se muestran en el símbolo del sistema que se muestra cuando se instala o ejecuta la aplicación. En el caso de una aplicación instalada, también se utiliza para especificar el nombre de método abreviado en el **iniciar** menú.  
+-   `ProductName` Especifica el nombre del producto que se muestran en el símbolo del sistema que se muestra cuando se instala o ejecuta la aplicación. En el caso de una aplicación instalada, también se utiliza para especificar el nombre de método abreviado en el **iniciar** menú.  
   
 -   Las siguientes propiedades se establecen en los **requisitos previos** cuadro de diálogo, tiene acceso desde el **publicar** página.  
   
--   `BootstrapperEnabled`Determina si se debe generar al programa previo de setup.exe.  
+-   `BootstrapperEnabled` Determina si se debe generar al programa previo de setup.exe.  
   
--   `IsWebBootstrapper`Determina si el programa previo de setup.exe funciona a través de Internet o en modo basado en disco.  
+-   `IsWebBootstrapper` Determina si el programa previo de setup.exe funciona a través de Internet o en modo basado en disco.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL y UpdateURL  
  La tabla siguiente muestran las cuatro opciones de dirección URL para la implementación ClickOnce.  

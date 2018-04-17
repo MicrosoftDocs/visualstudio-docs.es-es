@@ -2,24 +2,20 @@
 title: Remoto depurar en un equipo remoto de IIS, ASP.NET | Documentos de Microsoft
 ms.custom: remotedebugging
 ms.date: 07/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 1c8d2cfb57d3e96b845bc243575eb63af88720c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuración remota en un equipo remoto de IIS, ASP.NET
 Para depurar una aplicación ASP.NET que se ha implementado en IIS, instalar y ejecutar las herramientas remotas en el equipo donde se implementa la aplicación y, a continuación, adjunte a su aplicación en ejecución desde Visual Studio.
@@ -44,7 +40,7 @@ El depurador remoto es compatible con Windows Server a partir de Windows Server 
 
 2. Abra el archivo HomeController.cs y establezca un punto de interrupción en el método `About()` .
 
-## <a name="bkmk_configureIIS"></a>Instalar y configurar IIS en Windows Server
+## <a name="bkmk_configureIIS"></a> Instalar y configurar IIS en Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -52,7 +48,7 @@ El depurador remoto es compatible con Windows Server a partir de Windows Server 
 
 Según la configuración de seguridad, puede ahorrar tiempo para agregar los siguientes sitios de confianza en el explorador, por lo que puede descargar fácilmente el software descrito en este tutorial. Puede ser necesario tener acceso a estos sitios:
 
-- microsoft.com
+- Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
@@ -61,7 +57,7 @@ Si está usando Internet Explorer, puede agregar los sitios de confianza, vaya a
 
 Al descargar el software, puede obtener las solicitudes para conceder permiso para cargar varias secuencias de comandos del sitio web y recursos. En la mayoría de los casos, estos recursos adicionales no son necesarios para instalar el software.
 
-## <a name="BKMK_deploy_asp_net"></a>Instalar ASP.NET 4.5 en Windows Server
+## <a name="BKMK_deploy_asp_net"></a> Instalar ASP.NET 4.5 en Windows Server
 
 Si desea información más detallada para instalar ASP.NET en IIS, consulte [IIS 8.0 utilizando ASP.NET 3.5 y 4.5 de ASP.NET](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -76,11 +72,11 @@ Si desea información más detallada para instalar ASP.NET en IIS, consulte [IIS
 
 2. Reiniciar el sistema (o ejecutar **net stop era /y** seguido **del comando net start w3svc** desde un símbolo del sistema para recoger un cambio en la ruta de acceso del sistema).
 
-## <a name="BKMK_install_webdeploy"></a>(Opcional) Instale WebDeploy 3.6 en Windows Server
+## <a name="BKMK_install_webdeploy"></a> (Opcional) Instale WebDeploy 3.6 en Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-## <a name="BKMK_deploy_asp_net"></a>Configurar el sitio Web de ASP.NET en el equipo de Windows Server
+## <a name="BKMK_deploy_asp_net"></a> Configurar el sitio Web de ASP.NET en el equipo de Windows Server
 
 1. Abra el Explorador de Windows y cree una nueva carpeta, **C:\Publish**, donde va a implementar el proyecto ASP.NET más adelante.
 
@@ -98,7 +94,7 @@ Si desea información más detallada para instalar ASP.NET en IIS, consulte [IIS
 
 8. Con el sitio seleccionado en el Administrador de IIS, elija **Editar permisos**y asegúrese de que ese IUSR, IIS_IUSRS o el usuario configurado para el grupo de aplicaciones es un usuario autorizado con permisos de lectura y ejecución. Si ninguno de estos usuarios están presente, agregue IUSR como un usuario con derechos de lectura y ejecución.
 
-## <a name="bkmk_webdeploy"></a>(Opcional) Publique e implemente la aplicación mediante Web Deploy desde Visual Studio
+## <a name="bkmk_webdeploy"></a> (Opcional) Publique e implemente la aplicación mediante Web Deploy desde Visual Studio
 
 [!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
 
@@ -125,7 +121,7 @@ También puede publicar e implementar la aplicación mediante el sistema de arch
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="BKMK_msvsmon"></a>Descargue e instale las herramientas remotas en Windows Server
+## <a name="BKMK_msvsmon"></a> Descargue e instale las herramientas remotas en Windows Server
 
 En este tutorial, estamos utilizando Visual Studio de 2017.
 
@@ -134,7 +130,7 @@ En este tutorial, estamos utilizando Visual Studio de 2017.
 > [!TIP]
 > En algunos casos, puede ser más eficaz para ejecutar al depurador remoto desde un recurso compartido de archivos. Para obtener más información, consulte [ejecutar el depurador remoto desde un recurso compartido de archivos](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Configurar el depurador remoto en Windows Server
+## <a name="BKMK_setup"></a> Configurar el depurador remoto en Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -171,7 +167,7 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-## <a name="bkmk_openports"></a>Solución de problemas: Abra los puertos necesarios en Windows Server
+## <a name="bkmk_openports"></a> Solución de problemas: Abra los puertos necesarios en Windows Server
 
 En la mayoría de las instalaciones, se abren los puertos necesarios por la instalación de ASP.NET y el depurador remoto. Sin embargo, debe comprobar que los puertos estén abiertos.
 

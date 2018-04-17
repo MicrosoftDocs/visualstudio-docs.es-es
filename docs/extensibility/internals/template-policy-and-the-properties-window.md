@@ -1,32 +1,28 @@
 ---
 title: Directiva de plantilla y la ventana Propiedades | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, template policy
 ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 759864533aa5bd3455a4e01c6642817107abb1a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-policy-and-the-properties-window"></a>Directiva de plantilla y la ventana Propiedades
 Cuando un proyecto se encuentra dentro de un proyecto de enterprise Templates, ese proyecto de enterprise Templates puede aplicar directivas. Directiva de plantilla se convierte en un sistema de restricción que puede utilizarse para establecer los valores predeterminados para las propiedades, ocultar propiedades, agregar propiedades y así sucesivamente.  
   
- Usa una directiva de plantilla para controlar la visualización de información de la **propiedades** ventana es diferente de la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>administra las propiedades de objeto en el nivel de componente, aunque se puede utilizar la directiva de plantilla para restringir las propiedades del objeto en el nivel de solución o proyecto. En otras palabras  
+ Usa una directiva de plantilla para controlar la visualización de información de la **propiedades** ventana es diferente de la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> administra las propiedades de objeto en el nivel de componente, aunque se puede utilizar la directiva de plantilla para restringir las propiedades del objeto en el nivel de solución o proyecto. En otras palabras  
   
 -   Implementar los métodos en <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> para determinar lo que se muestra en el **propiedades** ventana para objetos específicos  
   

@@ -1,27 +1,23 @@
 ---
-title: "Interfaces (depuración de Visual Studio) | Documentos de Microsoft"
-ms.custom: 
+title: Interfaces (depuración de Visual Studio) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], interfaces
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13951a42b5a0fe6874c713bea3025e232b259b6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f5523b28d84b3fd490b2e83823462d4166e7332
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (depuración de Visual Studio)
 Métodos aparecen por orden alfabético en cada interfaz en la tabla de contenido y en la página de interfaz en orden de Vtable.  

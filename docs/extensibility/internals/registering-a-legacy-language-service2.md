@@ -1,27 +1,25 @@
 ---
 title: Registrar un Service2 de lenguaje heredado | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar un servicio de lenguaje heredado
 Las secciones siguientes proporcionan listas de entradas del registro para el idioma diversas opciones de servicio disponibles en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,9 +31,9 @@ Las secciones siguientes proporcionan listas de entradas del registro para el id
   
 |nombre|Tipo|Intervalo|Descripción|  
 |----------|----------|-----------|-----------------|  
-|(Predeterminado)|REG_SZ|*\<GUID >*|GUID del servicio de lenguaje.|  
+|(Predeterminado)|REG_SZ|*\<GUID &GT;*|GUID del servicio de lenguaje.|  
 |LangResID|REG_DWORD|0 x 0 a 0xffff|Identificador de recurso (ResID) para el nombre de texto localizado del idioma de cadena.|  
-|Package|REG_SZ|*\<GUID >*|GUID de VSPackage.|  
+|Package|REG_SZ|*\<GUID &GT;*|GUID de VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Especifica si el **la finalización de instrucciones** opciones en el **opciones** cuadro de diálogo están habilitados.|  
 |ShowSmartIndent|REG_DWORD|0-1|Especifica si la opción de seleccionar **inteligente** sangría en el **opciones** se habilita el cuadro de diálogo.|  
 |RequestStockColors|REG_DWORD|0-1|Especifica si personalizado o colores predeterminados se usan para palabras clave de color.|  
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Nombre de la pestaña del cuadro de herramientas para realizar de forma predeterminada cuando el editor está activo.|  
 |DisplayName|REG_SZ|resID|Nombre para mostrar en el **abrir con** cuadro de diálogo. El nombre es el identificador de recurso de cadena o un nombre de formato estándar.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Utilizado para la **abrir con** comando de menú. Si no desea mostrar el editor de texto predeterminado en la lista de editores disponibles para un tipo de archivo específico, establezca este valor en 1.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID >*|Se utiliza para cualquier servicio de lenguaje que se puede abrir un archivo con el soporte técnico de la página de códigos. Por ejemplo, cuando abre un archivo .txt utilizando el **abrir con** comando, se proporcionan opciones para usar el editor de código fuente con y sin codificación.<br /><br /> El GUID especificado en el nombre de la subclave es para el generador de editores de página de códigos; el GUID vinculado especificado en esta entrada del Registro específica es para el generador de editores regular. El propósito de esta entrada es que si el IDE no abre un archivo mediante el editor de forma predeterminada, el IDE intentará usar el editor de la siguiente en la lista. Este editor siguiente no debe ser el generador de editores de página de códigos porque este generador del editor es básicamente el mismo que el generador de editores que no se pudo.|  
-|Package|REG_SZ|*\<GUID >*|VSPackage GUID para el Id. del nombre para mostrar.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Se utiliza para cualquier servicio de lenguaje que se puede abrir un archivo con el soporte técnico de la página de códigos. Por ejemplo, cuando abre un archivo .txt utilizando el **abrir con** comando, se proporcionan opciones para usar el editor de código fuente con y sin codificación.<br /><br /> El GUID especificado en el nombre de la subclave es para el generador de editores de página de códigos; el GUID vinculado especificado en esta entrada del Registro específica es para el generador de editores regular. El propósito de esta entrada es que si el IDE no abre un archivo mediante el editor de forma predeterminada, el IDE intentará usar el editor de la siguiente en la lista. Este editor siguiente no debe ser el generador de editores de página de códigos porque este generador del editor es básicamente el mismo que el generador de editores que no se pudo.|  
+|Package|REG_SZ|*\<GUID &GT;*|VSPackage GUID para el Id. del nombre para mostrar.|  
   
 ### <a name="example"></a>Ejemplo  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |nombre|Tipo|Intervalo|Descripción|  
 |----------|----------|-----------|-----------------|  
 |(Predeterminado)|REG_SZ||Sin usar.|  
-|*\<GUID >*|REG_SZ|""|Clave para las vistas lógicas admitidas. Puede tener tantos valores como sea necesario. El nombre de la entrada del registro es lo que es importante, no el valor, que siempre es una cadena vacía.|  
+|*\<GUID &GT;*|REG_SZ|""|Clave para las vistas lógicas admitidas. Puede tener tantos valores como sea necesario. El nombre de la entrada del registro es lo que es importante, no el valor, que siempre es una cadena vacía.|  
   
 ### <a name="example"></a>Ejemplo  
   

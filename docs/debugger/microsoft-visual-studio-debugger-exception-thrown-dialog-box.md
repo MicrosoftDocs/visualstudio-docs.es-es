@@ -1,12 +1,9 @@
 ---
-title: "Cuadro de diálogo (excepción) del depurador de Microsoft Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: Cuadro de diálogo (excepción) del depurador de Microsoft Visual Studio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.exceptions.thrown
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - debugger, exceptions
 - throwing exceptions, during debugging
 ms.assetid: 1fe98d10-c8f9-4b39-a920-99169bfd542e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1020711c21fb7171a8f7f8b87296d300f53b78b1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 952e2796b9d09398acffc25365dcdb3dcbc72303
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Depurador de Microsoft Visual Studio: se inició una excepción (cuadro de diálogo)
 Se ha producido una excepción en el programa. Este cuadro de diálogo informa sobre la clase de excepción producida. El código necesita tratar esta excepción. Puede elegir entre las siguientes opciones para controlar la excepción:  

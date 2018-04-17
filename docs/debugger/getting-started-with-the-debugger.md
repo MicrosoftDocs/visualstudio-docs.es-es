@@ -3,26 +3,22 @@ title: Proporciona información sobre cómo depurar - Visual Studio | Documentos
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1c3264f7f7b0c13d8df099ab14288141ef4e6e
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 92194e403e5a8fe6c7075ea7cd449442f281a7e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Proporciona información sobre cómo depurar con Visual Studio
 
@@ -36,7 +32,7 @@ O bien, puede leer a lo largo de para ver las características del depurador o p
 
 Aunque la aplicación de demostración es C#, las características son aplicables a C++, Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indicó).
 
-En este tutorial, aprenderá lo siguiente:
+En este tutorial va a:
 
 > [!div class="checklist"]
 > * Iniciar al depurador y establecer puntos de interrupción.

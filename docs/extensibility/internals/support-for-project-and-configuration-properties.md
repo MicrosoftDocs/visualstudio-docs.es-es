@@ -1,26 +1,24 @@
 ---
-title: "Soporte técnico para el proyecto y propiedades de configuración | Documentos de Microsoft"
-ms.custom: 
+title: Soporte técnico para el proyecto y propiedades de configuración | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 823bfa0453d3e33fea2daa51779b1fe4800a1a86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Soporte técnico para el proyecto y propiedades de configuración
 El **propiedades** ventana en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) puede mostrar las propiedades de proyecto y la configuración. Puede proporcionar una página de propiedades para su propio tipo de proyecto para que el usuario puede establecer las propiedades de la aplicación.  
@@ -32,7 +30,7 @@ El **propiedades** ventana en el [!INCLUDE[vsprvs](../../code-quality/includes/v
 ## <a name="persistence-of-project-and-configuration-properties"></a>Persistencia de proyecto y propiedades de configuración  
  Propiedades de proyecto y la configuración se almacenan en un archivo de proyecto que tiene cualquier extensión de nombre de archivo asociada con el tipo de proyecto, por ejemplo, .csproj, .vbproj y .myproj. Proyectos de lenguaje normalmente utilizan un archivo de plantilla para generar el archivo de proyecto. Sin embargo, hay realmente de varias maneras para asociar tipos de proyectos y plantillas. Para obtener más información, vea [descripción del directorio de plantilla (. Archivos VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Propiedades del proyecto y la configuración se crean agregando elementos al archivo de plantilla. Estas propiedades, a continuación, están disponibles para todos los proyectos creados mediante el tipo de proyecto que usa esta plantilla. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]proyectos y la MPFProj usan el [no en la compilación: información general sobre MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) esquema de archivos de plantilla. Estos archivos tienen una sección PropertyGroup para cada configuración. Propiedades de proyectos normalmente se almacenan en la primera sección PropertyGroup, que tiene un argumento de la configuración establecida en una cadena nula.  
+ Propiedades del proyecto y la configuración se crean agregando elementos al archivo de plantilla. Estas propiedades, a continuación, están disponibles para todos los proyectos creados mediante el tipo de proyecto que usa esta plantilla. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] proyectos y la MPFProj usan el [no en la compilación: información general sobre MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) esquema de archivos de plantilla. Estos archivos tienen una sección PropertyGroup para cada configuración. Propiedades de proyectos normalmente se almacenan en la primera sección PropertyGroup, que tiene un argumento de la configuración establecida en una cadena nula.  
   
  El código siguiente muestra el inicio de un archivo de proyecto de MSBuild básico.  
   
@@ -62,9 +60,9 @@ El **propiedades** ventana en el [!INCLUDE[vsprvs](../../code-quality/includes/v
   
  El `SettingsPage` clase y la `Microsoft.VisualStudio.Package.ProjectNode` clase ofrecen estos métodos para conservar las propiedades del proyecto y la configuración:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty`y `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` conservar propiedades del proyecto.  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` y `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` conservar propiedades del proyecto.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty`y `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` conservar propiedades de configuración.  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` y `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` conservar propiedades de configuración.  
   
     > [!NOTE]
     >  Las implementaciones de la `Microsoft.VisualStudio.Package.SettingsPage` y `Microsoft.VisualStudio.Package.ProjectNode` clases utilizan el `Microsoft.Build.BuildEngine` métodos (MSBuild) para obtener y establecer propiedades del proyecto y la configuración en el archivo de proyecto.  

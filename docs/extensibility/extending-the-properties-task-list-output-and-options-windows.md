@@ -1,12 +1,10 @@
 ---
 title: Extender propiedades, lista de tareas, salida y opciones Windows | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Extender propiedades, lista de tareas, salida y ventanas de opciones
 Puede tener acceso a cualquier ventana de herramientas en Visual Studio. Este tutorial muestra cómo integrar la información acerca de la ventana de herramientas en una nueva **opciones** página y una nueva configuración en el **propiedades** página y también cómo se escriben en el **delistadetareas** y **salida** windows.  
@@ -150,7 +148,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. Este tu
   
      Cuando la ventana de herramientas está disponible para los usuarios, los elementos en el cuadro de lista se representará mediante TodoItems. Cuando el usuario selecciona uno de estos elementos en el cuadro de lista, el **propiedades** ventana mostrará información acerca del elemento.  
   
-     Para elegir los datos disponibles en la **propiedades** ventana, se puede convertir los datos en las propiedades públicas que tienen dos atributos especiales, `Description` y `Category`. `Description`es el texto que aparece en la parte inferior de la **propiedades** ventana. `Category`determina dónde debe aparecer la propiedad cuando la **propiedades** ventana se muestra en el **por categorías** vista. En la siguiente imagen, el **propiedades** ventana está en **por categorías** vista, la **nombre** propiedad en el **ToDo Fields** categoría es seleccionado y la descripción de la **nombre** propiedad se muestra en la parte inferior de la ventana.  
+     Para elegir los datos disponibles en la **propiedades** ventana, se puede convertir los datos en las propiedades públicas que tienen dos atributos especiales, `Description` y `Category`. `Description` es el texto que aparece en la parte inferior de la **propiedades** ventana. `Category` determina dónde debe aparecer la propiedad cuando la **propiedades** ventana se muestra en el **por categorías** vista. En la siguiente imagen, el **propiedades** ventana está en **por categorías** vista, la **nombre** propiedad en el **ToDo Fields** categoría es seleccionado y la descripción de la **nombre** propiedad se muestra en la parte inferior de la ventana.  
   
      ![Ventana propiedades](../extensibility/media/t5properties.png "T5Properties")  
   

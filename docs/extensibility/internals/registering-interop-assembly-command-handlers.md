@@ -1,26 +1,24 @@
 ---
 title: Registrar los controladores de comando de ensamblado de interoperabilidad | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a25f8adc91efe9d9e8b96079b4fe2e35145abf25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a4b2c0d40029cbc84d64a4ffe5ee50c59c893b95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrar los controladores de comando de ensamblado de interoperabilidad
 Debe registrar un VSPackage con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que el entorno de desarrollo integrado (IDE) enruta sus comandos correctamente.  
@@ -58,7 +56,7 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
 |-------------|-----------------|  
 |\<*Ruta de acceso al archivo DLL de recursos*>|Se trata de la ruta de acceso completa a la DLL de recursos que contiene el recurso de menú o se deja en blanco, que indica que los recursos de VSPackage DLL es que se usará (según lo especificado en la subclave de paquetes donde se registra el VSPackage propio).<br /><br /> Es habitual dejar este campo en blanco.|  
 |\<*Id. de recurso de menú*>|Este es el identificador de recurso de la `CTMENU` recursos que contiene todos los elementos de interfaz de usuario para el VSPackage como compilada a partir de un [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) archivo.|  
-|\<*Versión de menú*>|Se trata de un número que se utiliza como una versión para el `CTMENU` recursos. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Este valor se utiliza para determinar si se debe volver a combinar el contenido de la `CTMENU` recursos con su caché de todos los `CTMENU` recursos. Un volver a combinar se desencadena al ejecutar el comando de instalación de devenv.<br /><br /> Este valor inicialmente se establece en 1 e incrementa después de cada cambio en el `CTMENU` recursos y antes de que ocurra el volver a combinar.|  
+|\<*Versión de menú*>|Se trata de un número que se utiliza como una versión para el `CTMENU` recursos. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Este valor se utiliza para determinar si se debe volver a combinar el contenido de la `CTMENU` recursos con su caché de todos los `CTMENU` recursos. Un volver a combinar se desencadena al ejecutar el comando de instalación de devenv.<br /><br /> Este valor inicialmente se establece en 1 e incrementa después de cada cambio en el `CTMENU` recursos y antes de que ocurra el volver a combinar.|  
   
 ### <a name="example"></a>Ejemplo  
  Este es un ejemplo de un par de entradas de recursos:  

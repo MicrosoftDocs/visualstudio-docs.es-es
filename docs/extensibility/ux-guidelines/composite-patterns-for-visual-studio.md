@@ -1,23 +1,21 @@
 ---
 title: Patrones compuestos para Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 Patrones compuestos combinan elementos de interacción y diseño de configuraciones. Algunos de los patrones compuestos más importantes en Visual Studio con respecto a la coherencia incluyen:  
@@ -32,7 +30,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
   
 -   [Entrada táctil](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>Visualización de datos  
+##  <a name="BKMK_DataVisualization"></a> Visualización de datos  
   
 ### <a name="overview"></a>Información general  
  Los gráficos son una forma visual para agregar y visualizar datos con el fin de mejorar la toma de decisiones. Pueden ayudar a los usuarios que se enfrentan con una gran cantidad de datos, pero lo que significa poco vea lo que merecen atención y lo que podría necesitar una acción.  
@@ -85,7 +83,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 |![Muestrario 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Muestrario B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>Interfaz de usuario en el objeto y el examen  
+##  <a name="BKMK_OnObjectUI"></a> Interfaz de usuario en el objeto y el examen  
  Esta sección proporciona el contexto para leerlo, también conocido como vista de peek de código, un tipo de interfaz de usuario de objeto único a Visual Studio.  
   
 ### <a name="overview"></a>Información general  
@@ -251,7 +249,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
   
 -   **Nunca** mostrar contenido al mantener el mouse que parece ser editable o invita a la interacción del usuario. Este comportamiento puede frustrar a los usuarios si intentan mover el cursor sobre el contenido de detalle, como es el comportamiento estándar para una información sobre herramientas descartar inmediatamente cuando el cursor ya no está por encima del patrón contenido que lo generó.  
   
-##  <a name="BKMK_SelectionModels"></a>Modelos de selección  
+##  <a name="BKMK_SelectionModels"></a> Modelos de selección  
   
 ### <a name="overview"></a>Información general  
  Un modelo de selección es el mecanismo utilizado para indicar y confirmar las operaciones en uno o varios objetos de interés dentro de la interfaz de usuario. Este tema describen los patrones de interacción de selección en los editores de documento de Visual Studio: editores de texto, superficies de diseño y modelado de superficies.  
@@ -309,7 +307,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 #### <a name="region-selection-box-selection"></a>Selección de región (selección de cuadro)  
  Visual Studio es compatible con selecciones de región en el editor de texto, y esto se denomina selección del cuadro. Selección del cuadro permite al usuario seleccionar un área de texto que no sigue la secuencia de texto normal. Al igual que con la selección de texto estándar, la selección debe ser contigua. Selección del cuadro se inicia manteniendo presionada la tecla Alt mientras arrastra el puntero con el mouse. También se puede iniciar la selección del cuadro manteniendo presionadas las teclas de desplazamiento y Alt mientras usa las teclas de dirección para indicar la región de selección. Selección del cuadro usa el resaltado de selección normal y muestra el cursor del punto de inserción parpadea al final del área de selección.  
   
- ![Configuración regional &#40; cuadro &#41; la selección en Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "04_BoxSelection 0713")  
+ ![Regional &#40;cuadro&#41; selección en Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "04_BoxSelection 0713")  
   
  **Selección de región (cuadro) en Visual Studio**  
   
@@ -394,19 +392,19 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
   
  **Selección primaria con dos selecciones secundarias**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>Apariencia de la selección de objeto gráfico  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apariencia de la selección de objeto gráfico  
  Los controladores de selección son cuadrados dibujados en un patrón rectangular alrededor del cuadro de límite del objeto. La siguiente tabla muestra ejemplos de los diferentes Estados que puede tener un objeto gráfico en identificador, el tamaño y la apariencia de edición en contexto. El tamaño de los identificadores debe asociarse a borde de ventana y el uso de las métricas de borde la **GetSystemMetrics** API.  
   
 |Estado|Apariencia|Detalles de Visual|  
 |-----------|----------------|--------------------|  
 |**Anular la selección**|Default|![Estado del botón predeterminado](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "10_DefaultState 0713")||  
-|**Selección primaria**|Puede cambiar el tamaño|![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "11_PrimaryResize 0713")|![Selección primaria con cambiar el tamaño de los identificadores de &#40; ampliada &#41; ] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "12_PrimaryResizeZoom 0713")|  
-|**Selección primaria**|No puede cambiar el tamaño|![Selección primaria sin controladores de tamaño](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "13_PrimaryNoResize 0713")|![Selección primaria sin cambiar el tamaño de los identificadores de &#40; ampliada &#41; ] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "14_PrimaryNoResizeZoom 0713")|  
-|**Selección primaria**|Bloqueado|![Selección primaria bloqueada](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "15_PrimaryLocked 0713")|![Selección primaria bloqueada &#40; ampliada &#41; ] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "16_PrimaryLockedZoom 0713")|  
-|**Selección secundaria**|Puede cambiar el tamaño|![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "17_SecondaryResize 0713")|![Selección secundaria con cambiar el tamaño de los identificadores de &#40; ampliada &#41; ] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "18_SecondaryResizeZoom 0713")|  
-|**Selección secundaria**|No puede cambiar el tamaño|![Selección secundaria sin controladores de tamaño](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "19_SecondaryNoResize 0713")|![Selección secundaria sin cambio de tamaño &#40; ampliada &#41; ] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "20_SecondaryNoResizeZoom 0713")|  
-|**Selección secundaria**|Bloqueado|![Selección secundaria bloqueada](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "21_SecondaryLocked 0713")|![Selección secundaria bloqueada &#40; ampliada &#41; ] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "22_SecondaryLockedZoom 0713")|  
-|**Interfaz de usuario activa**|Default|![Estado activo de interfaz de usuario](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "23_UIActive 0713")|![Interfaz de usuario estado activo &#40; ampliada &#41; ] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "24_UIActiveZoom 0713")|  
+|**Selección primaria**|Puede cambiar el tamaño|![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "11_PrimaryResize 0713")|![Selección primaria con controladores de tamaño &#40;ampliada&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "12_PrimaryResizeZoom 0713")|  
+|**Selección primaria**|No puede cambiar el tamaño|![Selección primaria sin controladores de tamaño](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "13_PrimaryNoResize 0713")|![Selección primaria sin controladores de tamaño &#40;ampliada&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "14_PrimaryNoResizeZoom 0713")|  
+|**Selección primaria**|Bloqueado|![Selección primaria bloqueada](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "15_PrimaryLocked 0713")|![Selección primaria bloqueada &#40;ampliada&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "16_PrimaryLockedZoom 0713")|  
+|**Selección secundaria**|Puede cambiar el tamaño|![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "17_SecondaryResize 0713")|![Selección primaria con controladores de tamaño &#40;ampliada&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "18_SecondaryResizeZoom 0713")|  
+|**Selección secundaria**|No puede cambiar el tamaño|![Selección secundaria sin controladores de tamaño](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "19_SecondaryNoResize 0713")|![Selección secundaria sin controladores de tamaño &#40;ampliada&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "20_SecondaryNoResizeZoom 0713")|  
+|**Selección secundaria**|Bloqueado|![Selección secundaria bloqueada](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "21_SecondaryLocked 0713")|![Selección secundaria bloqueada &#40;ampliada&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "22_SecondaryLockedZoom 0713")|  
+|**Interfaz de usuario activa**|Default|![Estado activo de interfaz de usuario](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "23_UIActive 0713")|![Estado activo de interfaz de usuario &#40;ampliada&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "24_UIActiveZoom 0713")|  
   
 ### <a name="view-selection-models"></a>Modelos de selección de vista  
   
@@ -475,7 +473,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
   
 -   La tecla F2 activa la edición en contexto para la celda seleccionada actualmente.  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>Persistencia y guardar la configuración  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> Persistencia y guardar la configuración  
   
 ### <a name="overview"></a>Información general  
  Aunque es suele ser responsable de su propio estado y persistencia de cada componente de software en Visual Studio, Visual Studio guarda la configuración en algunos casos, como con posiciones y tamaños de ventana. En la tabla siguiente es una combinación de opciones que se guardan automáticamente y que requieren un usuario explícito o programarse la acción que se realizará.  
@@ -510,7 +508,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 #### <a name="profile-specific-layouts"></a>Diseños específicos de perfil  
  Cada perfil incluye diseños de ventana de herramienta, organizados en una forma que resultará familiar a los roles de desarrollador determinado (esperar que los desarrolladores de Visual C++ ver el **el Explorador de soluciones** en el lado izquierdo del IDE, mientras que los desarrolladores de C# esperan que se muestre el  **El Explorador de soluciones** a la derecha). Diseños de ventana específica del perfil se cargan después de que el usuario elija un perfil en el inicio. Un autor del paquete debe determinar el diseño de ventana más adecuado para la experiencia de sus clientes, sabiendo que, a continuación, se conservarán los cambios que el usuario realice en la configuración de la ventana.  
   
-##  <a name="BKMK_TouchInput"></a>Entrada táctil  
+##  <a name="BKMK_TouchInput"></a> Entrada táctil  
  Los usuarios utilizan cada vez más productos de desarrollo de Microsoft en dispositivos táctiles. Sin embargo, existen obstáculos que hacen que sea difícil utilizar herramientas de desarrollo en dispositivos táctiles. Los usuarios esperarán que nuestros productos para proporcionar una experiencia táctil confiable y precisa. El propósito de estas instrucciones es informar a ninguna decisión sobre qué funciones táctiles para incorporar y animar a una experiencia táctil coherente entre Visual Studio y productos relacionados.  
   
 ### <a name="levels-of-experience"></a>Niveles de experiencia  

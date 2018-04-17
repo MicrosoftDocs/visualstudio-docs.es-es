@@ -1,27 +1,23 @@
 ---
-title: "Cómo: usar la administración de la acción de deshacer vinculada | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: usar la administración de la acción de deshacer vinculada | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - linked undo management
 ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a025cdfc14eb39dad7ea2bc72a69f1f260fb583
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 24e39bd0bde922dbe761bc9de176d43161bb985d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-linked-undo-management"></a>Cómo: usar la administración de la acción de deshacer vinculada
 Acción de deshacer vinculada permite al usuario deshacer simultáneamente las mismas modificaciones en varios archivos. Por ejemplo, cambios de texto simultáneos en varios archivos de programa, como un archivo de encabezado y un archivo de Visual C++, es una transacción de la acción de deshacer vinculada. Acción de deshacer vinculada capacidad está integrada en la implementación del entorno del Administrador de deshacer y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> permite manipular esta capacidad. Acción de deshacer vinculada se implementa mediante una unidad de deshacer principal que puede vincular pilas de deshacer independiente para tratar como una unidad de deshacer única. En la siguiente sección se detalla el procedimiento para utilizar la acción de deshacer vinculada.  

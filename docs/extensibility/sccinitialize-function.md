@@ -1,29 +1,25 @@
 ---
-title: "Función SccInitialize | Documentos de Microsoft"
-ms.custom: 
+title: Función SccInitialize | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (función)
 Esta función inicializa el complemento de control de código fuente y proporciona capacidades y limitaciones para el entorno de desarrollo integrado (IDE).  
@@ -85,7 +81,7 @@ SCCRTN SccInitialize (
   
  El `lpCallerName` y `lpSccName` parámetros permiten el IDE y el complemento de control de código fuente intercambiar los nombres. Estos nombres pueden utilizarse simplemente para distinguir entre varias instancias o realmente pueden aparecer en los menús o cuadros de diálogo.  
   
- El `lpAuxPathLabel` parámetro es una cadena que se utiliza como un comentario para identificar la ruta de acceso del proyecto auxiliar que se almacena en el archivo de solución y pasa el control de código fuente del complemento en una llamada a la [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]utiliza la cadena "proyecto de SourceSafe:"; otros complementos de control de código fuente deben abstenerse de utilizar esta cadena concreta.  
+ El `lpAuxPathLabel` parámetro es una cadena que se utiliza como un comentario para identificar la ruta de acceso del proyecto auxiliar que se almacena en el archivo de solución y pasa el control de código fuente del complemento en una llamada a la [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] utiliza la cadena "proyecto de SourceSafe:"; otros complementos de control de código fuente deben abstenerse de utilizar esta cadena concreta.  
   
  El `lpSccCaps` parámetro proporciona el control de código fuente complemento un lugar para almacenar los marcadores de bits que indica las capacidades del complemento. (Para obtener una lista completa de los marcadores de bits de capacidad, consulte [capacidad marcas](../extensibility/capability-flags.md)). Por ejemplo, si los planes de complemento para escribir resultados a una función de devolución de llamada proporcionada por el autor de la llamada, el complemento establecería la capacidad de bits SCC_CAP_TEXTOUT. Esto podría indicar el IDE para crear una ventana de resultados de control de versión.  
   

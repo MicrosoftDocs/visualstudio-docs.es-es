@@ -1,12 +1,10 @@
 ---
-title: "Enlazar métodos abreviados de teclado a elementos de menú | Documentos de Microsoft"
-ms.custom: 
+title: Enlazar métodos abreviados de teclado a elementos de menú | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - keyboard shortcuts
 - menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ceae0f2ea69ce0340565abb85bb002713010407d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: db02cf763ee4bf171d862129c88687accab00cc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Métodos abreviados de teclado de enlace a elementos de menú
 Para enlazar un método abreviado de teclado a un comando de menú personalizado, simplemente agregue una entrada para el archivo .vsct para el paquete. Este tema explica cómo asignar un método abreviado de teclado a un botón personalizado, un elemento de menú o un comando de barra de herramientas y cómo aplicar la asignación de teclado en el editor predeterminado o limitarlos a un editor personalizado.  

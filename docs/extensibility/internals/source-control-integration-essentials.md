@@ -1,30 +1,28 @@
 ---
-title: "Fundamentos de la integración de Control de origen | Documentos de Microsoft"
-ms.custom: 
+title: Fundamentos de la integración de Control de origen | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Essentials de integración del Control de código fuente
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]admite dos tipos de integración del control de código fuente: un complemento de control de código fuente que proporciona la funcionalidad básica y se genera utilizando la API de complementos de Control de código fuente (anteriormente conocido como la API de MSSCCI) y una solución de integración del control de origen basado en el VSPackage que Proporciona una funcionalidad más sólida.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite dos tipos de integración del control de código fuente: un complemento de control de código fuente que proporciona la funcionalidad básica y se genera utilizando la API de complementos de Control de código fuente (anteriormente conocido como la API de MSSCCI) y una solución de integración del control de origen basado en el VSPackage que Proporciona una funcionalidad más sólida.  
   
 ## <a name="source-control-plug-in"></a>Complemento de Control de código fuente  
  Un complemento de Control de código fuente se escribe como un archivo DLL que implementa la API de complemento de Control de código fuente. Funcionalidad de integración de control de origen y de registro se proporciona a través de la API. Este enfoque es más fácil de implementar que un control de código fuente VSPackage y usa el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] la interfaz de usuario (UI) para la mayoría de las operaciones de control de código fuente.  

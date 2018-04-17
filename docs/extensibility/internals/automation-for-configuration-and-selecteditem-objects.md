@@ -1,26 +1,24 @@
 ---
-title: "Automatización para la configuración y objetos SelectedItem | Documentos de Microsoft"
-ms.custom: 
+title: Automatización para la configuración y objetos SelectedItem | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], SelectedItem object
 - automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8a9446a5c63df7f20d6e4dbdc3cb60bf20183bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4d4ac269664136aed51542e53900ffc1c87f21fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Automatización para la configuración y objetos SelectedItem
 Se pueden automatizar la compilación y procesos del elemento seleccionado en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

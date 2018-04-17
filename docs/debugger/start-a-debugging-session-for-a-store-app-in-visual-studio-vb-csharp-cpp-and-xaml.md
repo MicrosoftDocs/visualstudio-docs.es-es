@@ -1,12 +1,10 @@
 ---
-title: "Iniciar una sesión de depuración para una aplicación de UWP en Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: Iniciar una sesión de depuración para una aplicación de UWP en Visual Studio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/04/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
 - VC.Project.IVCAppHostRemoteDebugPageObject.BreakpointBehavior
@@ -34,16 +32,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 718d24ab0f9fbb310d2482b63bc98dd139658330
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 667fa5294f813a59425516e7e6d97177ca681365
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Iniciar una sesión de depuración para una aplicación de UWP en Visual Studio
   
@@ -79,7 +77,7 @@ Elige una de estas opciones:
 |**Dispositivo**|Depurar la aplicación en un dispositivo USB conectado. El dispositivo debe ser programador desbloqueada y tener la pantalla desbloqueada.|  
 |**Emulador de dispositivos móvil**|Inicie un emulador con la configuración especificada en el nombre del emulador, implementar la aplicación e inicie la depuración. Emuladores solo están disponibles en equipos de Hyper-V habilitado.|  
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Elija otras opciones de depuración  
+##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Elija otras opciones de depuración  
 
 Si tiene que configurar otras opciones de depuración, abra la página de propiedades para el proyecto.
   
@@ -89,11 +87,11 @@ Si tiene que configurar otras opciones de depuración, abra la página de propie
   
     -   Para aplicaciones de Visual C# y Visual Basic, elige **Depurar**.  
   
-         ![C &#35; &#47; Página de propiedades de depuración de proyecto VB](../debugger/media/dbg_csvb_debugpropertypage.png)  
+         ![C&#35; &#47; página de propiedades de depuración de proyecto VB](../debugger/media/dbg_csvb_debugpropertypage.png)  
   
     -   Para las aplicaciones de Visual C++ y JavaScript, expanda la **propiedades de configuración** nodo y, a continuación, elija **depuración**.  
   
-         ![C &#43; &#43; Página de propiedades de depuración de aplicaciones UWP](../debugger/media/dbg_cpp_debugpropertypage.png)  
+         ![C&#43; &#43; página de propiedades de depuración de la aplicación UWP](../debugger/media/dbg_cpp_debugpropertypage.png)  
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> Elegir el depurador utilizado  
 De forma predeterminada, Visual Studio depura código administrado en las aplicaciones de C# y Visual Basic. Para las aplicaciones de C# y Visual Basic, puedes depurar el código de C/C++ tanto administrado como nativo de la aplicación. En aplicaciones de C++, Visual Studio depura código nativo de forma predeterminada. En las aplicaciones de JavaScript, Visual Studio depura el script de forma predeterminada. 
@@ -179,11 +177,11 @@ La aplicación puede estar instalada en el dispositivo local o en un dispositivo
   
 Para iniciar una aplicación instalada en el depurador, elija **depurar**, a continuación, **otros destinos de depuración**y, a continuación, **depurar paquete de aplicaciones instalado**. Para obtener instrucciones, consulte [depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Asociar al depurador a una aplicación UWP en ejecución  
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Asociar al depurador a una aplicación UWP en ejecución  
 
 Para depurar una aplicación UWP en ejecución, elija **depurar**, a continuación, **otros destinos de depuración**y, a continuación, **depurar paquete de aplicaciones instalado**. Para obtener instrucciones, consulte [depurar un paquete de aplicación instalados](../debugger/debug-installed-app-package.md).
   
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Asociar al depurador a una aplicación en ejecución Windows 8.x
+###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Asociar al depurador a una aplicación en ejecución Windows 8.x
  Si quieres asociar el depurador a una aplicación de la [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , debes utilizar el Administrador de paquetes depurables para establecer la aplicación de modo que se ejecute en modo de depuración. El Administrador de paquetes depurables se instala con las herramientas remotas para Visual Studio.  
   
  Asociar el depurador a una aplicación resulta útil si tienes que depurar una aplicación ya instalada, por ejemplo, que se haya instalado desde la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]. Es necesario asociarlo cuando tienes los archivos de origen de la aplicación pero no tienes un proyecto de Visual Studio para ella. Por ejemplo, puede que tengas un sistema de compilación personalizado que no utilice proyectos o soluciones de Visual Studio.  

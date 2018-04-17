@@ -1,27 +1,23 @@
 ---
-title: "Adjuntar después de un inicio | Documentos de Microsoft"
-ms.custom: 
+title: Adjuntar después de un inicio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 890023b8336f130cf3b8cfcfe640da46af9cf0d1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 69f9f9cde76c5fa66294fd2cdbdc5252169e0183
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="attaching-after-a-launch"></a>Adjuntar después de un lanzamiento
 Después de que se ha iniciado un programa, la sesión de depuración está lista para asociar el motor de depuración (Alemania) a dicho programa.  

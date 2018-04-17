@@ -1,23 +1,21 @@
 ---
 title: Compartido colores para Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9093eef6166c86eb6e1ffdf602b4fb75841834d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Cuando diseña la interfaz de usuario que usa elementos comunes de shell de Visual Studio, o si quiere que el elemento de la interfaz para que sea coherente con características similares, use los nombres de símbolo (token) existentes en archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.  
@@ -858,7 +856,7 @@ El menú desplegable del cuadro de búsqueda tiene el potencial para ser ligeram
 | Fondo de vínculo | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Degradado para este token que no se utiliza en la interfaz de usuario con temas). |
 | Primer plano (texto de vínculo) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a>Vistas de árbol  
+###  <a name="BKMK_TreeView"></a> Vistas de árbol  
 Varias ventanas de herramientas, incluidos el Explorador de soluciones, el Explorador de servidores y la vista de clases, implementan un esquema organizativo jerárquico cuyos colores se controlan mediante nombres de colores de la `TreeView` categoría. Todos los elementos de una vista de árbol tienen colores de fondo y de texto. Los elementos que tienen elementos secundarios anidados también tienen glifos que indican si el elemento está expandido o contraído.  
 
 ![Vista de árbol (límite)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "147_TreeViewRedline 0303")<br />Vista de árbol (límite)
@@ -1041,7 +1039,7 @@ El Diseñador de manifiestos se creó para que resulte más fácil editar el arc
 
 ## <a name="command-structures"></a>Estructuras de comandos  
 
-###  <a name="BKMK_CommandMenus"></a>Menús  
+###  <a name="BKMK_CommandMenus"></a> Menús  
 Los menús pueden aparecer en varios lugares de Visual Studio: la barra de menús principal, insertada en ventanas de documento o herramienta o en el botón secundario en varias ubicaciones en todo el IDE. Las implementaciones de menús asociados con otros elementos de la interfaz de usuario se describen en la sección del elemento respectivo. Se debe usar siempre la implementación de menús estándar proporcionada por el entorno de Visual Studio. Sin embargo, en algunas ocasiones podría no tener acceso a los menús estándar de Visual Studio. En estos casos, use los siguientes nombres de token para asegurarse de que la interfaz de usuario sea coherente con otros menús de Visual Studio.  
 
 ![Menús de Visual Studio (límite)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "000_MenuRedline 0303")<br />Menús de Visual Studio (límite)
@@ -1282,7 +1280,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 | Primer plano (texto) | `Environment.CommandBarTextInactive` |
 | Borde | N/D |
 
-####  <a name="BKMK_CommandComboBox"></a>Cuadros combinados de barra de comandos
+####  <a name="BKMK_CommandComboBox"></a> Cuadros combinados de barra de comandos
 
 > [!IMPORTANT]
 > Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color para [listas desplegables de la barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
@@ -1307,7 +1305,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
 **Botón de lista desplegable de barra de comandos: estado predeterminado**  
 
-![Combinado cuadro colocar &#45; abajo botón](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "031_ComboBoxDropdownButton 0303")<br />Botón de lista desplegable de barra de comandos
+![Colocación de cuadro combinado&#45;hacia abajo botón](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "031_ComboBoxDropdownButton 0303")<br />Botón de lista desplegable de barra de comandos
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |
@@ -1414,7 +1412,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 | Fondo | Ninguna |
 | Primer plano (glifo) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a>Barra de comandos desplegables
+####  <a name="BKMK_CommandDropDown"></a> Barra de comandos desplegables
 
 > [!IMPORTANT]
 >  Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color para [cuadros combinados de la barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
@@ -1489,7 +1487,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 
  **Campo de selección desplegable de barra de comandos: estado presionado**  
 
-![Colocar &#45; hacia abajo del campo de selección presionada](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "049_DropdownSelectionFieldPressed 0303")<br />Presiona comando barra campo de selección desplegable
+![Quitar&#45;hacia abajo del campo de selección presionada](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "049_DropdownSelectionFieldPressed 0303")<br />Presiona comando barra campo de selección desplegable
 
 | Elemento | Nombre del token: Category.color |
 | --- | --- |

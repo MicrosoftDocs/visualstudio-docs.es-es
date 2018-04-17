@@ -1,27 +1,23 @@
 ---
-title: "Bloqueo titular de la administración de documentos | Documentos de Microsoft"
-ms.custom: 
+title: Bloqueo titular de la administración de documentos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65f5a38f5d4da0986b7f95c9287a94e657efa9c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-lock-holder-management"></a>Administración de propietario de bloqueo de documento
 La tabla de documento ejecutando (RDT) mantiene un recuento de los documentos abiertos y los bloqueos de edición tienen. Es posible colocar un bloqueo de edición en un documento en el RDT cuando se edita mediante programación en segundo plano sin que el usuario ve un documento abierto en una ventana de documento. Esta funcionalidad se utiliza a menudo los diseñadores que modifique varios archivos a través de una interfaz gráfica de usuario.  

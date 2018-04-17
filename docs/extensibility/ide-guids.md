@@ -3,22 +3,21 @@ title: GUID IDE | Documentos de Microsoft
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9732fa16d3c51fc5b413f4e116d9182fe7ab540f
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-guids"></a>GUID IDE
 
@@ -46,7 +45,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica GUID de algunas parte
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsUIHierarchyWindow>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_DefaultEditor>|6AC5EF80-12BF-11D1-8E9B-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_ExternalEditor>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
-|<xref:Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher>|e69cd190-1276-11d1-9f64-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher>|e69cd190-1276-11D1-9f64-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Archivos, carpetas virtuales y físicas y subproyectos
@@ -63,16 +62,16 @@ La <xref:Microsoft.VisualStudio.VSConstants> clase publica GUID de algunas parte
 |Constante|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>|8fe2df1d-e0da-4ebe-9d5c-415d40e487b5|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>|adfc4e61-0397-11d1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>|adfc4e63-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>|adfc4e61-0397-11D1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>|adfc4e63-0397-11D1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>|b706f393-2e5b-49e7-9e2e-b1825f639b63|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>|adfc4e65-0397-11d1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>|adfc4e62-0397-11d1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>|adfc4e65-0397-11D1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>|adfc4e62-0397-11D1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11D1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11D1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11D1-9f4e-00a0c911004f|
 
 ## <a name="output-pane"></a>Panel de salida
 

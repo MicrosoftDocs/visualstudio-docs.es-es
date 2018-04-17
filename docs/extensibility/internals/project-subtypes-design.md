@@ -1,27 +1,23 @@
 ---
-title: "Diseño de subtipos de proyecto | Documentos de Microsoft"
-ms.custom: 
+title: Diseño de subtipos de proyecto | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 Subtipos de proyecto permiten VSPackages ampliar proyectos basados en Microsoft Build Engine (MSBuild). El uso de agregación permite reutilizar la mayor parte de implementada en el sistema del proyecto principal administrada [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aún sigue personalizar el comportamiento de un escenario determinado.  
@@ -63,7 +59,7 @@ Subtipo de proyecto de varios niveles
  Una agregación de subtipo de proyecto multinivel consta de tres niveles, un proyecto de base, que se agrega un subtipo de proyecto, a continuación, más agregadas por un subtipo avanzadas del proyecto. En la ilustración se centra en algunas de las interfaces de soporte que se proporcionan como parte de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] arquitectura de subtipo del proyecto.  
   
 ##### <a name="deployment-mechanisms"></a>Mecanismos de implementación  
- Uno de los muchos del sistema del proyecto de base funcionalidades mejoradas por un subtipo de proyecto son mecanismos de implementación. Un subtipo de proyecto influye en los mecanismos de implementación mediante la implementación de interfaces de configuración (como <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) que se recuperan mediante una llamada a QueryInterface en <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. En un escenario donde el subtipo de proyecto y el subtipo de proyecto avanzada agreguen las implementaciones de configuración diferente, el proyecto de base llama `QueryInterface` en el subtipo de proyecto avanzada `IUnknown`. Si el subtipo de proyecto interna contiene la implementación de configuración que está solicitando el proyecto de base, el subtipo avanzadas del proyecto se delega a la implementación proporcionada por el subtipo de proyecto interna. Como un mecanismo para conservar el estado de nivel de agregación de uno a otro, implementan todos los niveles de subtipos de proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> conservar la compilación no relacionadas con datos XML en los archivos de proyecto. Para obtener más información, consulte [guardar datos en el archivo de proyecto de MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider>se implementa como un mecanismo para recuperar los extensores de automatización de los subtipos de proyecto.  
+ Uno de los muchos del sistema del proyecto de base funcionalidades mejoradas por un subtipo de proyecto son mecanismos de implementación. Un subtipo de proyecto influye en los mecanismos de implementación mediante la implementación de interfaces de configuración (como <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>) que se recuperan mediante una llamada a QueryInterface en <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. En un escenario donde el subtipo de proyecto y el subtipo de proyecto avanzada agreguen las implementaciones de configuración diferente, el proyecto de base llama `QueryInterface` en el subtipo de proyecto avanzada `IUnknown`. Si el subtipo de proyecto interna contiene la implementación de configuración que está solicitando el proyecto de base, el subtipo avanzadas del proyecto se delega a la implementación proporcionada por el subtipo de proyecto interna. Como un mecanismo para conservar el estado de nivel de agregación de uno a otro, implementan todos los niveles de subtipos de proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> conservar la compilación no relacionadas con datos XML en los archivos de proyecto. Para obtener más información, consulte [guardar datos en el archivo de proyecto de MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> se implementa como un mecanismo para recuperar los extensores de automatización de los subtipos de proyecto.  
   
  En la siguiente ilustración se centra en la implementación de extensor de automatización, el objeto de búsqueda de la configuración de proyecto en particular, utilizan subtipos de proyecto para extender el sistema de proyectos de base.  
   

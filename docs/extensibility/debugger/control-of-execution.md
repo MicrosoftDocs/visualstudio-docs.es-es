@@ -1,27 +1,23 @@
 ---
-title: "Control de ejecución | Documentos de Microsoft"
-ms.custom: 
+title: Control de ejecución | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c9fc47a0b73d07e4b24ef55c736ad80197f282cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="control-of-execution"></a>Control de ejecución
 El motor de depuración (Alemania) normalmente envía a uno de los siguientes eventos como el último evento de inicio:  
@@ -45,11 +41,11 @@ El motor de depuración (Alemania) normalmente envía a uno de los siguientes ev
   
 5.  Si el usuario elige paso a paso, en o fuera de una función, el IDE le pide la sesión de depuración para llamar al programa `Step` método y pásele la unidad de paso (instrucción, instrucción o línea) y el tipo de paso, es decir, si se debe depurar paso a paso, en , o fuera de la función. Cuando se completa el paso, la DE envía un evento complete paso a la sesión de depuración, que es un evento de detención.  
   
-     O bien  
+     -o bien-  
   
      Si el usuario decide seguir ejecutando desde el puntero de instrucción actual, el IDE le pide la sesión de depuración para llamar al programa **Execute** método. El programa reanuda la ejecución hasta que encuentra la siguiente condición de detención.  
   
-     O bien  
+     -o bien-  
   
      Si la sesión de depuración que se va a omitir un evento determinado de detención, llama a la sesión de depuración del programa **continuar** método. Si el programa se ejecución paso a paso en, en o fuera de una función cuando encuentra la condición de detención, continúa el paso.  
   

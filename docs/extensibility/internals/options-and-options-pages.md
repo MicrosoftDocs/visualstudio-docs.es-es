@@ -1,12 +1,10 @@
 ---
-title: "Opciones y páginas de opciones | Documentos de Microsoft"
-ms.custom: 
+title: Opciones y páginas de opciones | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d85b900779a5df8af077b292b2e2f70b0592e35c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-and-options-pages"></a>Opciones y páginas de opciones
 Al hacer clic en **opciones** en el **herramientas** menú abre la **opciones** cuadro de diálogo. Las opciones de este cuadro de diálogo se conocen colectivamente como páginas de opciones. El control de árbol en el panel de navegación incluye categorías de opciones, y cada categoría tiene páginas de opciones. Al seleccionar una página, sus opciones aparecen en el panel derecho. Estas páginas le permiten cambiar los valores de las opciones que determinan el estado de un paquete VSPackage.  
@@ -56,11 +54,11 @@ Al hacer clic en **opciones** en el **herramientas** menú abre la **opciones** 
 ## <a name="option-attributes-and-layout"></a>Atributos de opción y el diseño  
  La interfaz de usuario (UI) que proporciona la página determina la apariencia de las opciones de una página de opciones personalizadas. El diseño, el etiquetado y la descripción de las opciones en una página de opciones genéricas se determinan por los atributos siguientes:  
   
--   <xref:System.ComponentModel.CategoryAttribute>Determina la categoría de la opción.  
+-   <xref:System.ComponentModel.CategoryAttribute> Determina la categoría de la opción.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>Determina el nombre para mostrar de la opción.  
+-   <xref:System.ComponentModel.DisplayNameAttribute> Determina el nombre para mostrar de la opción.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>Determina la descripción de la opción.  
+-   <xref:System.ComponentModel.DescriptionAttribute> Determina la descripción de la opción.  
   
     > [!NOTE]
     >  Atributos equivalentes, SRCategory, LocDisplayName y SRDescription, usar los recursos de cadena para la localización y se definen en el [proyecto administrado de ejemplo](http://go.microsoft.com/fwlink/?LinkId=122774).  

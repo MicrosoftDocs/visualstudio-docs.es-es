@@ -1,13 +1,10 @@
 ---
-title: "Ningún origen disponible | Documentos de Microsoft"
-ms.custom: 
+title: Ningún origen disponible | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
 dev_langs:
@@ -18,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - No Source Code Available for the Current Location dialog box
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a11770bc54a7b96aa918b73b34e0028731bf0f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 022b629076e79dea679541ed301b0a7ff0c7d876
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="no-source-available"></a>No hay código fuente disponible
 El proyecto no contiene código fuente para el código que se está intentando ver. La causa habitual es hacer doble clic en un módulo que no tiene código fuente en el **ventana Pila de llamadas** o **ventana subprocesos**. Puede seguir depurando, pero no puede utilizar la ventana de código fuente para establecer puntos de interrupción y realizar otras acciones en dicha ubicación. Si necesita establecer un punto de interrupción, utilice la **ventana Desensamblado** en su lugar.  

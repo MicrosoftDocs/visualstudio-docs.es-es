@@ -1,26 +1,24 @@
 ---
-title: "Interfaz de usuario personalizada (VSPackage de Control de código fuente) | Documentos de Microsoft"
-ms.custom: 
+title: Interfaz de usuario personalizada (VSPackage de Control de código fuente) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebd2361e94e9b1430f5bac99f2e71dc53a02ebf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaz de usuario personalizada (VSPackage de Control de código fuente)
 Un VSPackage declara sus elementos de menú y sus estados predeterminados a través del archivo de la tabla de comandos de Visual Studio (.vsct). El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) muestra los elementos de menú de sus estados predeterminados hasta que se cargue el VSPackage. Posteriormente, el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método se llama para habilitar o deshabilitar elementos de menú.  
@@ -49,7 +47,7 @@ Un VSPackage declara sus elementos de menú y sus estados predeterminados a trav
   
  Requerido <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, y también las interfaces opcionales asociadas con el control de código fuente, no se llama cuando el control de código fuente VSPackage está inactivo.  
   
- Cuando el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] empieza a IDE, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] establece el contexto de la interfaz de usuario de comandos para el identificador del control de origen de valor predeterminado actual Id. de VSPackage. Esto hace que la interfaz de usuario estático del control de origen activo VSPackage que aparezca en el IDE sin que se está cargando realmente el VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]hace una pausa para que el VSPackage registrar con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> antes de efectuar cualquier llamada al VSPackage.  
+ Cuando el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] empieza a IDE, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] establece el contexto de la interfaz de usuario de comandos para el identificador del control de origen de valor predeterminado actual Id. de VSPackage. Esto hace que la interfaz de usuario estático del control de origen activo VSPackage que aparezca en el IDE sin que se está cargando realmente el VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hace una pausa para que el VSPackage registrar con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> antes de efectuar cualquier llamada al VSPackage.  
   
  La tabla siguiente describe los detalles específicos acerca de cómo los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE oculta diferentes elementos de interfaz de usuario.  
   

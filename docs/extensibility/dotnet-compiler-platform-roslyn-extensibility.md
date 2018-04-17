@@ -1,23 +1,21 @@
 ---
 title: .NET compiler Platform (&quot;Roslyn&quot;) extensibilidad | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
-caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b292593c6a6c426bb184acd67a920b5e76e3a51f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 09287c48285bfcdc32b1a7d558d44f9d212f1b41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET compiler Platform (&quot;Roslyn&quot;) extensibilidad
 La misión de núcleo de .NET Compiler Platform («Roslyn») se abre los compiladores de C# y Visual Basic que permite herramientas y tienen a los desarrolladores compartir en los compiladores con información detallada acerca de los programas. Herramientas de análisis de código mejoran la calidad del código y generadores de ayuda en la creación de aplicaciones de código. Medida herramientas le resulte más inteligentes, necesitará tener acceso a cada vez más de los conocimientos de código profundo compiladores solo poseen. En lugar de traductores opacos (código fuente y el código de objeto out), los compiladores Roslyn proporcionan API que puede usar para tareas relacionadas con el código de las herramientas y aplicaciones.  

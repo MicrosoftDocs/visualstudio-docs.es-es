@@ -1,26 +1,24 @@
 ---
-title: "Parámetros personalizados | Documentos de Microsoft"
-ms.custom: 
+title: Parámetros personalizados | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - wizards, custom parameters
 - custom parameters
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 17a629c2d93bb5e91fb301d4da9dca825e5b8917
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2fb61109a05b84eeb83b887ba0fc1a9f9fef299f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-parameters"></a>Parámetros personalizados
 Parámetros personalizados controlan el funcionamiento de un asistente después de que se ha iniciado un asistente. Un archivo .vsz relacionados proporciona una matriz de parámetros definidos por el usuario que se empaquetada por el entorno de desarrollo integrado (IDE) y se pasa al asistente como una matriz de cadenas cuando se inicia el asistente. A continuación, el asistente analiza la matriz de cadenas y utiliza la información para controlar la operación real del asistente. De esta manera, un asistente puede personalizar la funcionalidad según el contenido del archivo .vsz.  

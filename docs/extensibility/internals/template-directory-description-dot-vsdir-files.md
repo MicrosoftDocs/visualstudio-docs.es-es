@@ -1,27 +1,25 @@
 ---
-title: "Descripción de directorio de la plantilla (. Archivos VSDir) | Documentos de Microsoft"
-ms.custom: 
+title: Descripción de directorio de la plantilla (. Archivos VSDir) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsdir files
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 14ea2e0bcc11324e6529c70c04c11874ec4a3399
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="template-directory-description-vsdir-files"></a>Descripción de directorio de la plantilla (. Archivos VSDir)
 Un archivo de descripción del directorio de plantilla (.vsdir) es un archivo de texto que permite que el entorno de desarrollo integrado (IDE) para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con el proyecto en cuadros de diálogo. El contenido incluye un registro por cada archivo o carpeta. Se combinan todos los archivos .vsdir en una ubicación que se hace referencia, aunque generalmente se proporciona un único archivo para describir varias carpetas, los asistentes o los archivos de plantilla.  
@@ -35,7 +33,7 @@ HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
 SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124  
 ```  
   
- En este caso, dos registros se encuentran en un archivo. Una nueva línea (carácter de retorno de carro) separa cada registro. Cada línea representa un tipo de archivo diferente. Una canalización (&#124;) separa los campos de cada registro. Un único directorio puede contener varios archivos .vsdir que tienen diferentes nombres de archivo, o puede tener un archivo .vsdir para cada tipo de archivo.  
+ En este caso, dos registros se encuentran en un archivo. Una nueva línea (carácter de retorno de carro) separa cada registro. Cada línea representa un tipo de archivo diferente. Una canalización (&#124;) carácter separa los campos de cada registro. Un único directorio puede contener varios archivos .vsdir que tienen diferentes nombres de archivo, o puede tener un archivo .vsdir para cada tipo de archivo.  
   
 ## <a name="fields"></a>Campos  
  En la tabla siguiente enumera los campos especificados para cada registro.  

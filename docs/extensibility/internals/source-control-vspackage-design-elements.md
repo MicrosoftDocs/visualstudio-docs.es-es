@@ -1,27 +1,23 @@
 ---
-title: "Elementos de diseño de VSPackage de Control de origen | Documentos de Microsoft"
-ms.custom: 
+title: Elementos de diseño de VSPackage de Control de origen | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234346aba360d70d3bbc673067d2634a5112d0f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eb741a7dc7423c27baed2cd79476239f4e41a170
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-vspackage-design-elements"></a>Elementos de diseño de VSPackage del Control de código fuente
 Los temas de esta sección describen la estructura de control de código fuente VSPackage debe implementar para la integración profunda. También se muestran las interfaces y los servicios que el origen de control VSPackage pueden implementar y las interfaces y los servicios puede usar el control de código fuente VSPackage desde otros [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelo y la funcionalidad de control de componentes para admitir su origen.  

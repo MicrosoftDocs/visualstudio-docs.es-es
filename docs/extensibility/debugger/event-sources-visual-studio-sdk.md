@@ -1,27 +1,23 @@
 ---
-title: "Orígenes de eventos (Visual Studio SDK) | Documentos de Microsoft"
-ms.custom: 
+title: Orígenes de eventos (Visual Studio SDK) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd6acee81b2202500c9d84f5920cd4f1019a3b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6d1dac50183422b6895f6496b7ca78d24312c33e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (SDK de Visual Studio)
 Hay dos orígenes de eventos: el motor de depuración (Alemania) y la sesión de depuración de administrador (SDM). Eventos enviados desde un Alemania tienen un motor distinto de NULL, mientras que eventos enviados desde el SDM tienen un motor NULL.  

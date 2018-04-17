@@ -1,29 +1,25 @@
 ---
 title: POPDIRLISTFUNC | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8503afb26ec8dc244db39dff5bddcc6d3b733896
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 44a11e6edc9666fcd7614d467a2c9ffaa86b4365
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Se trata de una función de devolución de llamada dada a la [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) función para actualizar una recopilación de directorios y (opcionalmente) en los nombres de archivo para averiguar lo que están bajo control de código fuente.  

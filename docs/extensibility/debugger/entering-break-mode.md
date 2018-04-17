@@ -1,26 +1,24 @@
 ---
-title: "ENTRAR en modo de interrupción | Documentos de Microsoft"
-ms.custom: 
+title: ENTRAR en modo de interrupción | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - break mode
 - debugging [Debugging SDK], entering break mode
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5774161bdeb33ee954965262532406834a5c5eb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bb601ca4cf00ca2cc811f75ec27ad12bc6be32db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="entering-break-mode"></a>ENTRAR en modo de interrupción
 A continuación describe el proceso que se produce cuando se encuentra un punto de interrupción después de la ejecución paso a paso en una función, ejecute a la línea de código fuente que tiene el cursor en ella o un punto de interrupción.  

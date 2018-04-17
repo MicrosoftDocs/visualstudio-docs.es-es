@@ -1,12 +1,10 @@
 ---
-title: "Ver valores de datos de información sobre datos en el editor de código | Documentos de Microsoft"
-ms.custom: 
+title: Ver valores de datos de información sobre datos en el editor de código | Documentos de Microsoft
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], DataTips
 - DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 178bd1768474eaaaf760e2ef4feecfe0e1519bee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0c098e4b4ae94c5145a193e1903aa04a0eb757b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Ver valores de datos de información sobre datos en el editor de código
 La Información sobre datos es una manera útil de ver información sobre las variables del programa durante la depuración. La Información sobre datos funciona únicamente en modo de interrupción y únicamente con las variables que están dentro del actual ámbito de ejecución.
@@ -75,7 +73,7 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Para expandir una variable y ver sus elementos  
   
--   En una información sobre datos, coloque el puntero del mouse sobre la  **+**  inicio de sesión que precede al nombre de variable.  
+-   En una información sobre datos, coloque el puntero del mouse sobre la **+** inicio de sesión que precede al nombre de variable.  
   
     La variable se expande y se muestran sus elementos en forma de árbol.
 
@@ -105,7 +103,7 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
 -   Haga clic en el icono de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icono visualizador") para seleccionar el visualizador predeterminado del tipo de datos.  
   
-     O bien  
+     -o bien-  
   
      Haga clic en la flecha emergente junto al visualizador para seleccionar una lista emergente de visualizadores adecuados para el tipo de datos.  
   

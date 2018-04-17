@@ -1,13 +1,10 @@
 ---
-title: "&lt;dependencia&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft"
-ms.custom: 
+title: '&lt;dependencia&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,17 +23,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8ffea3e279ba894f9990991ea620baaa50b3997d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependencia&gt; elemento (implementación de ClickOnce)
 Identifica la versión de la aplicación que desea instalar y la ubicación del manifiesto de aplicación.  
@@ -98,7 +94,7 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |`Name`|Requerido. Identifica el nombre de la aplicación.|  
-|`Version`|Requerido. Especifica el número de versión de la aplicación, en el formato siguiente:`major.minor.build.revision`|  
+|`Version`|Requerido. Especifica el número de versión de la aplicación, en el formato siguiente: `major.minor.build.revision`|  
 |`publicKeyToken`|Requerido. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para firmar debe tener 2048 bits o mayor.|  
 |`processorArchitecture`|Requerido. Especifica el microprocesador. Los valores válidos son `x86` para Windows de 32 bits y `IA64` para Windows de 64 bits.|  
 |`Language`|Opcional. Identifica los códigos de idioma de dos partes del ensamblado. Por ejemplo, EN-US, que hace referencia para inglés (Estados Unidos). De manera predeterminada, es `neutral`. Este elemento está en la `asmv2` espacio de nombres.|  
@@ -107,7 +103,7 @@ Identifica la versión de la aplicación que desea instalar y la ubicación del 
 ## <a name="hash"></a>hash  
  El `hash` elemento es un elemento secundario opcional de la `file` elemento. El `hash` elemento no tiene atributos.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utiliza un valor hash algorítmico de todos los archivos en una aplicación como una comprobación de seguridad para asegurarse de que ninguno de los archivos se han modificado después de la implementación. Si el `hash` elemento no se incluye, no se realizará esta comprobación. Por lo tanto, si se omite la `hash` elemento no se recomienda.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utiliza un valor hash algorítmico de todos los archivos en una aplicación como una comprobación de seguridad para asegurarse de que ninguno de los archivos se han modificado después de la implementación. Si el `hash` elemento no se incluye, no se realizará esta comprobación. Por lo tanto, si se omite la `hash` elemento no se recomienda.  
   
 ## <a name="dsigtransforms"></a>dsig: TRANSFORMS  
  El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El `dsig:Transforms` elemento no tiene atributos.  

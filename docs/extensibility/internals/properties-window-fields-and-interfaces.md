@@ -1,27 +1,23 @@
 ---
 title: Campos de la ventana de propiedades e Interfaces | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a286d8cc782305b746789f56af431d7a62f8e2fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces y campos de la ventana de propiedades
 El modelo de selección determinar qué información se muestra en el **propiedades** ventana se basa en la ventana que tiene el foco en el IDE. Cada ventana y el objeto dentro de la ventana seleccionada, pueden tener su objeto de contexto de selección insertado en el contexto de selección global. El entorno actualiza el contexto de selección global con los valores de un marco de ventana cuando esa ventana tiene el foco. Al cambiar el foco, hace que el contexto de selección.  
@@ -49,7 +45,7 @@ El modelo de selección determinar qué información se muestra en el **propieda
   
  Por último, la parte inferior de la **propiedades** ventana también contiene una descripción del campo seleccionado en el **propiedades** cuadrícula de la ventana. Para obtener más información, consulte [obtener descripciones de los campos de la ventana propiedades](#getting-field-descriptions-from-the-properties-window).  
   
-## <a name="updating-property-values-in-the-properties-window"></a>Actualizar valores de propiedad en la ventana Propiedades
+## <a name="updating-property-values-in-the-properties-window"></a> Actualizar valores de propiedad en la ventana Propiedades
 Existen dos maneras de mantener la ventana **Propiedades** sincronizada con los cambios de valores de propiedad. La primera consiste en llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfaz, que proporciona acceso a la funcionalidad básica basada en ventanas, incluidos el acceso y la creación de ventanas de documento y de herramientas proporcionada el entorno. Los pasos siguientes describen este proceso de sincronización.  
   
 ### <a name="updating-property-values-using-ivsuishell"></a>Actualización de los valores de propiedad mediante IVsUIShell  
@@ -67,7 +63,7 @@ Existen dos maneras de mantener la ventana **Propiedades** sincronizada con los 
   
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Consideraciones de la implementación de la interfaz IConnection  
   
-1.  `IConnection`proporciona acceso a un subobjeto enumerador con el <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfaz. También proporciona acceso a todas las conexiones subobjetos del punto, cada uno de los cuales implementa la <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaz.  
+1.  `IConnection` proporciona acceso a un subobjeto enumerador con el <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfaz. También proporciona acceso a todas las conexiones subobjetos del punto, cada uno de los cuales implementa la <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaz.  
   
 2.  Cualquier objeto de búsqueda es responsable de implementar un <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> eventos. La ventana **Propiedades** aconsejará sobre el evento establecido a través de `IConnection`.  
   
@@ -75,9 +71,9 @@ Existen dos maneras de mantener la ventana **Propiedades** sincronizada con los 
   
 4.  Un cliente puede llamar a la `IConnection` interfaz para obtener acceso a un subobjeto enumerador con el <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfaz. El <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interfaz, a continuación, se puede llamar para enumerar los puntos de conexión para cada salida identificador de interfaz (IID).  
   
-5.  `IConnection`También se puede llamar para obtener acceso a los objetos secundarios de punto de conexión con el <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaz para cada IID saliente. A través de la <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaz, un cliente inicia o termina un bucle de asesoría con el objeto conectable y la sincronización del cliente. El cliente puede llamar a la <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaz para obtener un objeto enumerador con el <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interfaz para enumerar las conexiones que conoce.  
+5.  `IConnection` También se puede llamar para obtener acceso a los objetos secundarios de punto de conexión con el <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaz para cada IID saliente. A través de la <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaz, un cliente inicia o termina un bucle de asesoría con el objeto conectable y la sincronización del cliente. El cliente puede llamar a la <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interfaz para obtener un objeto enumerador con el <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interfaz para enumerar las conexiones que conoce.  
   
-## <a name="getting-field-descriptions-from-the-properties-window"></a>Obtener descripciones de los campos de la ventana Propiedades
+## <a name="getting-field-descriptions-from-the-properties-window"></a> Obtener descripciones de los campos de la ventana Propiedades
 En la parte inferior de la ventana **Propiedades** , un área de descripción muestra información relacionada con el campo de la propiedad seleccionada. Esta característica está activada de forma predeterminada. Si quiere ocultar el campo de descripción, haga clic con el botón derecho en la ventana **Propiedades** y haga clic en **Descripción**. Al hacerlo, también se quita la marca de verificación junto al título **Descripción** de la ventana de menú. Puede volver a mostrar el campo siguiendo los mismos pasos para volver a activar **Descripción** .  
   
  La información contenida en el campo descripción proviene <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Cada método, interfaz, coclase, etc. puede tener un atributo `helpstring` sin localizar en la biblioteca de tipos. El **propiedades** ventana recupera la cadena de <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>.  

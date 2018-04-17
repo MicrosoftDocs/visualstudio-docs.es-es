@@ -1,13 +1,10 @@
 ---
-title: "Preparación y configuración del depurador | Documentos de Microsoft"
-ms.custom: 
+title: Preparación y configuración del depurador | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - debugger, setting options
 - debug builds, setting up
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c04bcc2688e3bc8aaa9e7fbcf3950d609c2eed7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eb28ee7e64d0e7281ded2443579c5e9be39400af
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparación y configuración de la depuración
 En esta sección se describe la configuración de las propiedades relacionadas con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si crea el programa en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante las plantillas de proyecto, esta configuración se habilita automáticamente en la configuración Debug.  

@@ -1,31 +1,29 @@
 ---
 title: Proyecto de modelado | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 31c3d87a44838ead7663ff4c156985ab1b8e98eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: adb0204afd889ab487070578d136aea736bb63a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-modeling"></a>Modelado de proyecto
 El siguiente paso en la provisión de automatización para el proyecto consiste en implementar los objetos de proyecto estándar: la <xref:EnvDTE.Projects> y `ProjectItems` colecciones; el `Project` y <xref:EnvDTE.ProjectItem> objetos; y los demás objetos únicos de su implementación. Estos objetos estándares se definen en el archivo Dteinternal.h. En el ejemplo BscPrj se proporciona una implementación de los objetos estándares. Puede usar estas clases como modelos para crear sus propios objetos de proyecto estándar stand en paralelo con objetos de proyectos de otros tipos de proyecto.  
   
- Un consumidor de automatización se da por supuesto que puedan llamar a <xref:EnvDTE.Solution>("`<UniqueProjName>")` y <xref:EnvDTE.ProjectItems> (`n`) donde n es un número de índice para obtener un proyecto específico de la solución. Esta llamada de automatización hace que el entorno llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> en la jerarquía del proyecto adecuado, pasando VSITEMID_ROOT como el parámetro de ItemID y VSHPROPID_ExtObject como parámetro VSHPROPID. `IVsHierarchy::GetProperty`Devuelve un `IDispatch` puntero al objeto de automatización que proporciona el núcleo `Project` interfaz que ha implementado.  
+ Un consumidor de automatización se da por supuesto que puedan llamar a <xref:EnvDTE.Solution>("`<UniqueProjName>")` y <xref:EnvDTE.ProjectItems> (`n`) donde n es un número de índice para obtener un proyecto específico de la solución. Esta llamada de automatización hace que el entorno llamar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> en la jerarquía del proyecto adecuado, pasando VSITEMID_ROOT como el parámetro de ItemID y VSHPROPID_ExtObject como parámetro VSHPROPID. `IVsHierarchy::GetProperty` Devuelve un `IDispatch` puntero al objeto de automatización que proporciona el núcleo `Project` interfaz que ha implementado.  
   
  La siguiente es la sintaxis de `IVsHierarchy::GetProperty`.  
   

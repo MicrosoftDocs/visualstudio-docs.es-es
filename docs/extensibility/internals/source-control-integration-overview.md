@@ -1,33 +1,29 @@
 ---
-title: "Descripción de la integración de Control de origen | Documentos de Microsoft"
-ms.custom: 
+title: Descripción de la integración de Control de origen | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 19d75936e21729729dfeafaa041d800acbe01caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-overview"></a>Información general sobre la integración de Control de código fuente
 Esta sección comparan las dos maneras de integrar en control de código fuente de Visual Studio; un control de código fuente complemento y un VSPackage que proporciona una solución de control de código fuente y resalta las nuevas características de control de código fuente. Visual Studio permite la conmutación manual entre el control de código fuente VSPackages y los complementos de control de código fuente, así como basados en soluciones cambiar de forma automática.  
   
 ## <a name="source-control-integration"></a>Integración del Control de código fuente  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]admite dos tipos de opciones de integración de control de código fuente. En todas las versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], aún podrá integrar un complemento basado en el origen de Control API de complementos (anteriormente también denominados MSSCCI API), que proporciona funcionalidad de control de código fuente básico al usar Visual Studio origen (de interfaz de usuario de control INTERFAZ DE USUARIO). Un control de código fuente VSPackage, por otro lado, proporciona una integración profunda nueva, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ruta de acceso adecuado para la integración de control de código fuente que requiere un alto nivel de sofisticación y autonomía en su modelo de control de origen.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite dos tipos de opciones de integración de control de código fuente. En todas las versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], aún podrá integrar un complemento basado en el origen de Control API de complementos (anteriormente también denominados MSSCCI API), que proporciona funcionalidad de control de código fuente básico al usar Visual Studio origen (de interfaz de usuario de control INTERFAZ DE USUARIO). Un control de código fuente VSPackage, por otro lado, proporciona una integración profunda nueva, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ruta de acceso adecuado para la integración de control de código fuente que requiere un alto nivel de sofisticación y autonomía en su modelo de control de origen.  
   
  ![Información general del Control de origen](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")  
   
@@ -61,7 +57,7 @@ Esta sección comparan las dos maneras de integrar en control de código fuente 
 -   Es más fácil de implementar un complemento que un VSPackage del control de código fuente de control de código fuente.  
   
 ## <a name="source-control-vspackage"></a>Paquete de VS de Control de código fuente  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]permite que integra perfectamente en Visual Studio con el control total de la funcionalidad de control de código fuente y reemplazo completo de la interfaz de usuario de control de código fuente proporcionados por Visual Studio. Un control de código fuente VSPackage se registra con Visual Studio y proporciona la funcionalidad de control de código fuente. Aunque el control de código fuente varios paquetes VSPackage se puede registrar con Visual Studio, sólo uno de ellos pueden activar en cualquier momento. Un control de código fuente VSPackage tiene control total sobre la apariencia y la funcionalidad de control de código fuente en Visual Studio mientras está activa. Todos los otro paquetes VSPackage que puede estar registrada en el sistema de control de código fuente están inactiva y no mostrará ninguna interfaz de usuario en absoluto.  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] permite que integra perfectamente en Visual Studio con el control total de la funcionalidad de control de código fuente y reemplazo completo de la interfaz de usuario de control de código fuente proporcionados por Visual Studio. Un control de código fuente VSPackage se registra con Visual Studio y proporciona la funcionalidad de control de código fuente. Aunque el control de código fuente varios paquetes VSPackage se puede registrar con Visual Studio, sólo uno de ellos pueden activar en cualquier momento. Un control de código fuente VSPackage tiene control total sobre la apariencia y la funcionalidad de control de código fuente en Visual Studio mientras está activa. Todos los otro paquetes VSPackage que puede estar registrada en el sistema de control de código fuente están inactiva y no mostrará ninguna interfaz de usuario en absoluto.  
   
  La implementación de un control de código fuente VSPackage requiere una estrategia de "todo o nada". El creador de un control de código fuente VSPackage debe invertir una considerable cantidad de trabajo en la implementación de una serie de interfaces de control de código fuente y los nuevos elementos de interfaz de usuario (cuadros de diálogo, menús y barras de herramientas) para cubrir la funcionalidad de control de código fuente. Vea [crear un VSPackage de Control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md) para obtener más detalles.  
   

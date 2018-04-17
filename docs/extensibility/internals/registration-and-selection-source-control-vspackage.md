@@ -1,26 +1,24 @@
 ---
-title: "Registro y la selección (Control de código fuente VSPackage) | Documentos de Microsoft"
-ms.custom: 
+title: Registro y la selección (Control de código fuente VSPackage) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b0f02abe4cad58db27700aee3c29ec8d2dd7a7e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1d7bcdb8f930430ac00335777e2c088ce52a34bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro y la selección (VSPackage de Control de código fuente)
 Un control de código fuente se debe registrar VSPackage para exponerlo a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Si se registra más de un control de código fuente VSPackage, el usuario puede seleccionar qué VSPackage para cargar en los momentos adecuados. Vea [VSPackages](../../extensibility/internals/vspackages.md) para obtener más información sobre VSPackages y cómo registrarlos.  
@@ -53,7 +51,7 @@ Un control de código fuente se debe registrar VSPackage para exponerlo a la [!I
 ## <a name="selecting-a-source-control-package"></a>Al seleccionar un paquete de Control de código fuente  
  Varias en función de la API de complementos de Control de origen de complementos y VSPackages puede ser registrados simultáneamente el control de código fuente. El proceso de selección de un complemento de control de código fuente o un paquete VSPackage debe asegurarse de que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga el complemento o VSPackage en el momento adecuado y puede diferir la carga componentes innecesarios hasta que son necesarios. Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe quitar todas las de la interfaz de usuario desde otros VSPackages inactivas, incluidos elementos de menú, cuadros de diálogo y barras de herramientas y mostrar la interfaz de usuario para el paquete de VS activa.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]carga un paquete VSPackage del control de código fuente cuando se realiza cualquiera de las siguientes operaciones:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga un paquete VSPackage del control de código fuente cuando se realiza cualquiera de las siguientes operaciones:  
   
 -   Se abre la solución (cuando la solución está bajo control de código fuente).  
   
@@ -64,14 +62,14 @@ Un control de código fuente se debe registrar VSPackage para exponerlo a la [!I
  Un control de código fuente A que VSPackage debe cargar los componentes que necesita sólo cuando realmente va utiliza (lo que se conoce como la carga retrasada).  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>El intercambio automático VSPackage basado en la solución  
- Puede intercambiar manualmente el control de código fuente VSPackages a través de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **opciones** cuadro de diálogo en el **Control de código fuente** categoría. El intercambio automático de paquetes basados en soluciones significa que un paquete de control de código fuente que se ha designado para una solución concreta se establece automáticamente en activo cuando se abre esa solución. Debe implementar cada paquete de control de código fuente <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Controla el cambio entre ambos del origen de los complementos de control (implementación de la API de complemento de Control de origen) y VSPackages de control de código fuente.  
+ Puede intercambiar manualmente el control de código fuente VSPackages a través de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **opciones** cuadro de diálogo en el **Control de código fuente** categoría. El intercambio automático de paquetes basados en soluciones significa que un paquete de control de código fuente que se ha designado para una solución concreta se establece automáticamente en activo cuando se abre esa solución. Debe implementar cada paquete de control de código fuente <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Controla el cambio entre ambos del origen de los complementos de control (implementación de la API de complemento de Control de origen) y VSPackages de control de código fuente.  
   
  El paquete de adaptador de Control de origen se utiliza para cambiar a basada en la API de complementos de Control de código fuente cualquier complemento. El proceso de cambio para el paquete intermedio de adaptador de Control de origen y determinar qué complemento de control de código fuente debe establecerse en activo o inactivo es transparente para el usuario. El paquete del adaptador siempre está activo cuando cualquier complemento de control de código fuente está activa. Cambiar entre dos cantidades de complementos de control de origen para simplemente carga y descarga la DLL del complemento. Sin embargo, se cambia a un control de código fuente VSPackage, implica interactuar con el IDE para cargar el VSPackage adecuado.  
   
  Un control de código fuente VSPackage se llama cuando se abre una solución y la clave del registro para el VSPackage está en el archivo de solución. Cuando se abre la solución, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] busca el valor del registro y cargue el control de origen que corresponda VSPackage. Control de código fuente de todos los VSPackages debe tener las entradas del registro que se ha descrito anteriormente. Una solución que se encuentra bajo control de código fuente se marca como está asociado con un control de origen determinado VSPackage. Paquetes VSPackage deben implementar el control de código fuente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> para permitir el VSPackage basado en la solución automática intercambio.  
   
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Interfaz de usuario para la selección de paquetes y el cambio de Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Proporciona una interfaz de usuario para el control de código fuente VSPackage y la selección de complemento en el **opciones** cuadro de diálogo en el **Control de código fuente** categoría. Permite al usuario seleccionar el complemento de control de origen activo o el VSPackage. Incluye una lista desplegable:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proporciona una interfaz de usuario para el control de código fuente VSPackage y la selección de complemento en el **opciones** cuadro de diálogo en el **Control de código fuente** categoría. Permite al usuario seleccionar el complemento de control de origen activo o el VSPackage. Incluye una lista desplegable:  
   
 -   Todos los paquetes de control de código fuente instalado  
   

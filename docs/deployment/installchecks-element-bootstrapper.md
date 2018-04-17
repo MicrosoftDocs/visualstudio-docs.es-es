@@ -1,13 +1,10 @@
 ---
 title: '&lt;InstallChecks&gt; elemento (arranque) | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <InstallChecks> element [bootstrapper]
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dfd01eb4aa67af9e23a7c8c348bcacb263ccb6f6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; elemento (arranque)
 El `InstallChecks` elemento admite a partir de una serie de pruebas en el equipo local para asegurarse de que se hayan instalado todos los requisitos previos para una aplicación.  
@@ -88,9 +84,9 @@ El `InstallChecks` elemento admite a partir de una serie de pruebas en el equipo
 |`ProcessorArchitecture`|Opcional. El procesador del equipo objetivo de esta instalación. El valor predeterminado es `msil`.|  
   
 ## <a name="externalcheck"></a>ExternalCheck  
- Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `ExternalCheck`, el programa previo ejecutará el programa externo con nombre en un proceso independiente y almacenar su código de salida en la propiedad indicada por `Property`. `ExternalCheck`es útil para implementar comprobaciones de dependencia complejas o cuando la única manera de comprobar la existencia de un componente es crear instancias de él.  
+ Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `ExternalCheck`, el programa previo ejecutará el programa externo con nombre en un proceso independiente y almacenar su código de salida en la propiedad indicada por `Property`. `ExternalCheck` es útil para implementar comprobaciones de dependencia complejas o cuando la única manera de comprobar la existencia de un componente es crear instancias de él.  
   
- `ExternalCheck`no contiene elementos y tiene los atributos siguientes.  
+ `ExternalCheck` no contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
@@ -101,7 +97,7 @@ El `InstallChecks` elemento admite a partir de una serie de pruebas en el equipo
 ## <a name="filecheck"></a>FileCheck  
  Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `FileCheck`, el programa previo determinará si el archivo con nombre existe y devolver el número de versión del archivo. Si el archivo no tiene un número de versión, el programa previo establece la propiedad denominada por `Property` en 0. Si el archivo no existe, `Property` no está establecido en cualquier valor.  
   
- `FileCheck`no contiene elementos y tiene los atributos siguientes.  
+ `FileCheck` no contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
@@ -114,7 +110,7 @@ El `InstallChecks` elemento admite a partir de una serie de pruebas en el equipo
 ## <a name="msiproductcheck"></a>MsiProductCheck  
  Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `MsiProductCheck`, el programa previo comprueba si la instalación de Microsoft Windows Installer especificada ha ejecutado hasta su finalización. El valor de propiedad se establece según el estado del producto instalado. Un valor positivo indica que el producto está instalado, 0 ó -1 indica que no está instalado. (Vea la función de SDK de Windows Installer MsiQueryFeatureState para obtener más información). . Si Windows Installer no está instalado en el equipo, `Property` no se ha establecido.  
   
- `MsiProductCheck`no contiene elementos y tiene los atributos siguientes.  
+ `MsiProductCheck` no contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
@@ -125,24 +121,24 @@ El `InstallChecks` elemento admite a partir de una serie de pruebas en el equipo
 ## <a name="registrycheck"></a>RegistryCheck  
  Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `RegistryCheck`, el programa previo comprueba si existe la clave del registro especificada o si tiene el valor indicado.  
   
- `RegistryCheck`no contiene elementos y tiene los atributos siguientes.  
+ `RegistryCheck` no contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |`Property`|Requerido. El nombre de la propiedad que se va a almacenar el resultado. Puede hacer referencia a esta propiedad desde una prueba debajo la `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Requerido. Nombre de la clave del Registro.|  
-|`Value`|Opcional. El nombre del valor del registro para recuperar. El valor predeterminado es devolver el texto del valor predeterminado. `Value`debe ser una cadena o un valor DWORD.|  
+|`Value`|Opcional. El nombre del valor del registro para recuperar. El valor predeterminado es devolver el texto del valor predeterminado. `Value` debe ser una cadena o un valor DWORD.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
  Este elemento es un elemento secundario opcional de `InstallChecks`. Para cada instancia de `RegistryFileCheck`, el programa previo recupera la versión del archivo especificado, intentando primero recuperar la ruta de acceso al archivo de la clave del registro especificada. Esto es especialmente útil si desea buscar un archivo en un directorio especificado como un valor en el registro.  
   
- `RegistryFileCheck`no contiene elementos y tiene los atributos siguientes.  
+ `RegistryFileCheck` no contiene elementos y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |`Property`|Requerido. El nombre de la propiedad que se va a almacenar el resultado. Puede hacer referencia a esta propiedad desde una prueba debajo la `InstallConditions` elemento, que es un elemento secundario de la `Command` elemento. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Requerido. Nombre de la clave del Registro. Su valor se interpreta como la ruta de acceso a un archivo, a menos que el `File` atributo está establecido. Si esta clave no existe, `Property` no se ha establecido.|  
-|`Value`|Opcional. El nombre del valor del registro para recuperar. El valor predeterminado es devolver el texto del valor predeterminado. `Value`debe ser una cadena.|  
+|`Value`|Opcional. El nombre del valor del registro para recuperar. El valor predeterminado es devolver el texto del valor predeterminado. `Value` debe ser una cadena.|  
 |`FileName`|Opcional. El nombre de un archivo. Si se especifica, el valor obtenido de la clave del registro se supone que una ruta de acceso de directorio y este nombre se anexa a él. Si no se especifica, se supone que el valor devuelto del registro es la ruta de acceso completa a un archivo.|  
 |`SearchDepth`|Opcional. La profundidad en la que se va a buscar en subcarpetas para el archivo con nombre. La búsqueda es la prioridad de profundidad. El valor predeterminado es 0, lo que limita la búsqueda a la carpeta de nivel superior especificada por el valor de la clave del registro.|  
   

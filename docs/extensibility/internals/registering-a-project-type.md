@@ -1,27 +1,25 @@
 ---
 title: Registrar un tipo de proyecto | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>Registrar un tipo de proyecto
 Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro que permiten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] reconocer y trabajar con el tipo de proyecto. Normalmente crea estas entradas del registro mediante un archivo de registro (.rgs) de la secuencia de comandos.  
@@ -85,7 +83,7 @@ Cuando se crea un nuevo tipo de proyecto, debe crear las entradas del registro q
   
 |nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
-|`@`(Valor predeterminado)|REG_SZ|`FigPrj Project VSPackage`|Nombre localizable de registra VSPackage (tipo de proyecto).|  
+|`@` (Valor predeterminado)|REG_SZ|`FigPrj Project VSPackage`|Nombre localizable de registra VSPackage (tipo de proyecto).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Ruta de acceso del tipo de proyecto DLL. El IDE carga este archivo DLL y pasa el CLSID de VSPackage a `DllGetClassObject` para obtener <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> para construir la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objeto.|  
 |`CompanyName`|REG_SZ|`Microsoft`|Nombre de la compañía que desarrolló el tipo de proyecto.|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|Nombre para el tipo de proyecto.|  

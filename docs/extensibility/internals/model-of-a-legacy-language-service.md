@@ -1,27 +1,23 @@
 ---
 title: Modelo de un servicio de lenguaje heredado | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de un servicio de lenguaje heredado
 Un servicio de lenguaje define los elementos y características para un idioma específico y se utiliza para proporcionar el editor con información específica para ese idioma. Por ejemplo, el editor debe saber los elementos y las palabras clave del lenguaje para admitir los colores de sintaxis.  
@@ -52,7 +48,7 @@ Modelo de servicio de lenguaje básico
 |Ventana Código|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Una ventana de documento que contiene una o varias vistas de texto. Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está en modo de interfaz de múltiples documentos (MDI), la ventana de código es un formulario MDI secundario.|  
 |Vista de texto|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Una ventana que permite al usuario navegar y ver texto mediante el teclado y mouse (ratón). Aparece una vista de texto para el usuario como un editor. Puede usar vistas de texto en ventanas del editor normal, la ventana de salida y la ventana Inmediato. Además, puede configurar una o varias vistas de texto dentro de una ventana de código.|  
 |Administrador de texto|Administrado por el <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> de servicio, desde el cual obtener un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> puntero|Un componente que mantiene información comunes compartido por todos los componentes que se ha descrito anteriormente.|  
-|Servicio de lenguaje|Implementación dependiente; implementa<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Un objeto que proporciona el editor de información específica del lenguaje como resaltado de sintaxis, finalización de instrucciones y coincidencia de llaves.|  
+|Servicio de lenguaje|Implementación dependiente; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Un objeto que proporciona el editor de información específica del lenguaje como resaltado de sintaxis, finalización de instrucciones y coincidencia de llaves.|  
   
 ## <a name="see-also"></a>Vea también  
  [Datos de documento y vista de documento en editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)

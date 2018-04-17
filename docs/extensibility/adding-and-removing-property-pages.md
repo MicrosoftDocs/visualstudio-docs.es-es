@@ -1,27 +1,25 @@
 ---
-title: "Agregar y quitar páginas de propiedades | Documentos de Microsoft"
-ms.custom: 
+title: Agregar y quitar páginas de propiedades | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8a8130056437bf35a1617544ae7d1ecfb9068946
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-and-removing-property-pages"></a>Agregar y quitar páginas de propiedades
 El Diseñador de proyectos proporciona una ubicación centralizada para administrar las propiedades del proyecto, configuraciones y recursos en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Aparece como una sola ventana en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integra el entorno de desarrollo (IDE) y contiene un número de paneles de la derecha que se tiene acceso a través de las pestañas de la izquierda. Los paneles (a menudo denominados páginas de propiedades) en el Diseñador de proyectos varían según el idioma y el tipo de proyecto. El Diseñador de proyectos puede tener acceso mediante el **propiedades** comando el **proyecto** menú.  

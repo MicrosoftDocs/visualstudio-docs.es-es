@@ -1,26 +1,24 @@
 ---
-title: "Configuración de pantalla de ventana de herramientas | Documentos de Microsoft"
-ms.custom: 
+title: Configuración de pantalla de ventana de herramientas | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tool-window-display-configuration"></a>Configuración de pantalla de ventana de herramienta
 Cuando un paquete VSPackage registra una ventana de herramientas, la posición predeterminada, tamaño, estilo de acoplamiento y otra información de visibilidad se especifica en valores opcionales. Para obtener más información sobre el registro de la ventana de herramienta, consulte [las ventanas de herramientas en el registro](../extensibility/tool-windows-in-the-registry.md)  
@@ -44,7 +42,7 @@ HKEY_LOCAL_MACHINE\
 |nombre|REG_SZ|"Nombre corto va aquí"|Un nombre corto que describe la ventana de herramientas. Se usa solo como referencia en el registro.|  
 |Float|REG_SZ|"X1, Y1, X2, Y2"|Cuatro valores separados por comas. X1, Y1 es la coordenada de la esquina superior izquierda de la ventana de herramientas. X2, Y2 es la coordenada de la esquina inferior derecha. Todos los valores están en coordenadas de pantalla.|  
 |Estilo|REG_SZ|"MDI"<br /><br /> "Flotar"<br /><br /> "Vinculados"<br /><br /> "Por pestañas"<br /><br /> "AlwaysFloat"|Una palabra clave especifica la inicial Mostrar estado de la ventana de herramientas.<br /><br /> "MDI" = acoplado con ventana MDI.<br /><br /> "Flotar" = flotante.<br /><br /> "Vincular" = vinculada con otra ventana (especificado en la entrada de la ventana).<br /><br /> "Por pestañas" = combina con otra ventana de herramientas.<br /><br /> "AlwaysFloat" = no se puede acoplar.<br /><br /> Para obtener más información, vea la sección Comentarios.|  
-|Ventana|REG_SZ|*\<GUID >*|El GUID de una ventana a la que la ventana de herramientas se puede vincular o con pestañas. El GUID puede pertenecer a uno de sus propias ventanas o una de las ventanas de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
+|Ventana|REG_SZ|*\<GUID &GT;*|El GUID de una ventana a la que la ventana de herramientas se puede vincular o con pestañas. El GUID puede pertenecer a uno de sus propias ventanas o una de las ventanas de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
 |Orientación|REG_SZ|"Izquierda"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Bottom"|Vea la sección Comentarios.|  
 |DontForceCreate|REG_DWORD|0 o 1|Si esta entrada está presente y su valor no es cero, la ventana se carga, pero no inmediatamente muestra.|  
   
@@ -91,7 +89,7 @@ HKEY_LOCAL_MACHINE\
 |nombre|Tipo|Datos|Descripción|  
 |----------|----------|----------|-----------------|  
 |(Predeterminado)|REG_SZ|Ninguna|Deje en blanco.|  
-|*\<GUID >*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. El nombre del elemento debe ser el GUID de un comando que requieren visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|  
+|*\<GUID &GT;*|REG_DWORD o REG_SZ|0 o una cadena descriptiva.|Opcional. El nombre del elemento debe ser el GUID de un comando que requieren visibilidad. El valor contiene solo una cadena de carácter informativo. Normalmente, el valor es un `reg_dword` establecido en 0.|  
   
 ### <a name="example"></a>Ejemplo  
   

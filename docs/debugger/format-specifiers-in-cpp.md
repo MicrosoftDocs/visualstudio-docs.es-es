@@ -2,12 +2,9 @@
 title: Dar formato a especificadores en el depurador (C++) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -28,17 +25,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: f1b6151350faa55b3e2918a45908111ab96edf6a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en la ventana **Inspección** mediante especificadores de formato.  
@@ -88,7 +84,7 @@ int main() {
 |**s32b**|cadena UTF-32 (sin comillas)|\<ubicación > U "Hola a todos"|hola a todos|  
 |**en**|enum|Sábado(6)|Sábado|  
 |**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<ubicación > {\<primer miembro >}|\<ubicación > {\<primer miembro >, \<segundo miembro >,...}|  
-|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<location>, {member=value...}|{member=value...}|  
+|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<ubicación >, {miembro = value...}|{miembro = value...}|  
 |**nd**|Muestra solo la información de la clase, omitiendo las clases derivadas|`(Shape*) square` incluye la información de clase base y derivada|Muestra únicamente la información de clase base|  
 |hr|HRESULT o código de error Win32. (Ahora, el depurador descodifica los valores HRESULT automáticamente, de modo que este especificador no es necesario en esos casos).|S_OK|S_OK|  
 |wc|Marcador de clase de ventana|0x0010|WC_DEFAULTCHAR|  
@@ -120,11 +116,11 @@ int main() {
 |**f**|Punto flotante con signo|(3./2.), f|1.500000|  
 |**e**|Notación científica con signo|(3.0/2.0)|1.500000e+000|  
 |**g**|Punto flotante con signo o notación científica con signo, lo que sea más corto|(3.0/2.0)|1.5|  
-|c|carácter único|\<location>|101 'e'|  
-|s|const char*|\<location>|"hola a todos"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hola a todos"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hola a todos|  
-|s8|const char*|\<location>|"hola a todos"|  
+|c|carácter único|\<ubicación >|101 'e'|  
+|s|const char*|\<ubicación >|"hola a todos"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<ubicación >|L"hola a todos"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<ubicación >|hola a todos|  
+|s8|const char*|\<ubicación >|"hola a todos"|  
 |hr|HRESULT o código de error Win32. (Ahora, el depurador descodifica los valores HRESULT automáticamente, de modo que este especificador no es necesario en esos casos).|S_OK|S_OK|  
 |wc|Marcador de clase de ventana.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Números de mensajes de Windows|0x0010|WM_CLOSE|  

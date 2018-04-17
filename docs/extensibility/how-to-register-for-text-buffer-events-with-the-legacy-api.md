@@ -1,27 +1,23 @@
 ---
-title: "Cómo: registrar eventos de búfer de texto con la API heredado | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: registrar eventos de búfer de texto con la API heredado | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94f2e781c316f3891fdef0c324d54fa2f9742222
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b708507096e7035039e54af7505c8f5f939b5724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Cómo: registrar eventos de búfer de texto con la API de heredado de
 Si el búfer de texto que tiene acceso mediante el uso de la API heredada, se debe registrar para eventos de búfer de texto como se muestra en el siguiente procedimiento.  

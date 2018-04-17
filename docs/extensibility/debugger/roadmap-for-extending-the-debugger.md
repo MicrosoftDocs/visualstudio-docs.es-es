@@ -1,31 +1,29 @@
 ---
-title: "Guía básica para ampliar el depurador | Documentos de Microsoft"
-ms.custom: 
+title: Guía básica para ampliar el depurador | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
 - Debugging SDK, roadmap
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 612017888c78f0994a83a10e3628fc10b667f8d0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 46c5a8a995644d6876457836674152eb3b3ccad7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guía básica para ampliar el depurador
 Esta documentación proporciona información de referencia y la guía para extender la [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] del depurador con la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]documentación sobre depuración incluye ejemplos, una referencia completa y varios escenarios representativos que muestran cómo personalizar al depurador de las maneras más comunes.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] documentación sobre depuración incluye ejemplos, una referencia completa y varios escenarios representativos que muestran cómo personalizar al depurador de las maneras más comunes.  
   
  El compilador y su salida determinan lo que necesita hacer para implementar la depuración en su producto. Si el compilador:  
   

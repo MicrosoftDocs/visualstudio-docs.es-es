@@ -1,13 +1,10 @@
 ---
 title: '&lt;RelatedProducts&gt; elemento (arranque) | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
 - MSBuild.GenerateBootstrapper.DuplicateItems
@@ -22,17 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 548c1002eae581dc0e231f8dd2e28ee4a8376e27
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9fafc77df0bc557952bd5e197f3c950a3d028e3e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elemento (arranque)
 El `RelatedProducts` elemento define otros productos que dependen o que se incluyen en el producto actual.  
@@ -61,7 +57,7 @@ El `RelatedProducts` elemento define otros productos que dependen o que se inclu
 ## <a name="dependsonproduct"></a>DependsOnProduct  
  El `DependsOnProduct` elemento significa que el producto actual depende del producto con nombre, y que el producto designado debe instalarse antes que el actual. Es un elemento secundario de la `RelatedProducts` elemento. A `RelatedProducts` elemento puede tener uno o varios `DependsOnProduct` elementos.  
   
- `DependsOnProduct`tiene el siguiente atributo.  
+ `DependsOnProduct` tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
@@ -73,7 +69,7 @@ El `RelatedProducts` elemento define otros productos que dependen o que se inclu
 ## <a name="includesproduct"></a>IncludesProduct  
  El `IncludesProduct` elemento significa que un producto se incluye con la instalación actual y no requiere una instalación independiente. Es un elemento secundario de la `RelatedProducts` elemento. A `RelatedProducts` elemento puede tener uno o varios `IncludesProduct` elementos.  
   
- `IncludesProduct`tiene el siguiente atributo.  
+ `IncludesProduct` tiene el siguiente atributo.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  

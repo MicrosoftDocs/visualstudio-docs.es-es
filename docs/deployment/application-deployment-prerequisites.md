@@ -1,12 +1,10 @@
 ---
-title: "Requisitos previos de implementación de aplicaciones | Documentos de Microsoft"
-ms.custom: 
+title: Requisitos previos de implementación de aplicaciones | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Requisitos previos para la implementación de aplicaciones
 Para asegurarse de que su aplicación se instalará y se ejecutará correctamente, primero debe asegurarse de que todos los componentes de los que depende su aplicación ya estén instalados en el equipo de destino. Por ejemplo, la mayoría de las aplicaciones creadas con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen una dependencia de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; antes de instalar la aplicación, el equipo de destino debe tener la versión correcta de Common Language Runtime.  
@@ -48,10 +46,10 @@ Para asegurarse de que su aplicación se instalará y se ejecutará correctament
   
 -   La versión mínima de todos y cada uno de los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC), tal y como se especifica en las declaraciones de dependencias de ensamblados en el manifiesto del ensamblado.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]puede detectar los requisitos previos que faltan, y puede instalar requisitos previos mediante un programa previo. Para obtener más información, consulte [Cómo: instalar los requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede detectar los requisitos previos que faltan, y puede instalar requisitos previos mediante un programa previo. Para obtener más información, consulte [Cómo: instalar los requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y MageUI.exe, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, consulte [Cómo: volver a firmar aplicaciones y manifiestos de implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+>  Para cambiar los valores en los manifiestos generados por herramientas tales como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y MageUI.exe, necesita editar el manifiesto de la aplicación en un editor de texto y, después, volver a firmar los manifiestos de la aplicación y de la implementación. Para obtener más información, consulta [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Si usa Visual Studio y ClickOnce para implementar su aplicación, los paquetes de programa previo se seleccionan de forma predeterminada según la versión de .NET Framework en la solución. Sin embargo, si cambia la versión de .NET Framework de destino, debe actualizar las opciones de la **cuadro de diálogo de requisitos previos** manualmente.  
   
@@ -78,9 +76,9 @@ Para asegurarse de que su aplicación se instalará y se ejecutará correctament
 |---------------------------|-----------------|  
 |**-?, -h, - ayuda**|Muestra el cuadro de diálogo Ayuda.|  
 |**-url, - componentsurl**|Muestra la dirección URL almacenada y la dirección URL de los componentes para esta instalación.|  
-|**-url =**`location`|Establece la dirección URL donde Setup.exe buscará la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
-|**-componentsurl =**`location`|Establece la dirección URL donde Setup.exe buscará las dependencias, como [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true` **&#124;**`false`|Cuando `true`, descarga las dependencias de la ubicación preferida en el sitio del proveedor. Esto invalida la **- componentsurl** configuración. Cuando `false`, descarga las dependencias de la dirección URL especificada por **- componentsurl**.|  
+|**-url =** `location`|Establece la dirección URL donde Setup.exe buscará la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].|  
+|**-componentsurl =** `location`|Establece la dirección URL donde Setup.exe buscará las dependencias, como [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Cuando `true`, descarga las dependencias de la ubicación preferida en el sitio del proveedor. Esto invalida la **- componentsurl** configuración. Cuando `false`, descarga las dependencias de la dirección URL especificada por **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Compatibilidad con sistemas operativos  
  El programa previo de Visual Studio no se admite en Windows Server 2008 Server Core ni Windows Server 2008 R2 Server Core, que proporcionan un entorno de servidor de bajo mantenimiento con una funcionalidad limitada. Por ejemplo, la opción de instalación Server Core solo admite el perfil .NET Framework 3.5 Server Core, por lo que las características de Visual Studio que dependen de la versión completa de .NET Framework no se pueden ejecutar.  

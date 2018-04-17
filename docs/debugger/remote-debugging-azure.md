@@ -2,25 +2,22 @@
 title: Remoto depurar Core de ASP.NET en IIS y Azure | Documentos de Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 021b9c9fe0e4e921e339db432fdf6d248624c92c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Depuración remota de núcleo de ASP.NET en IIS en Azure en Visual Studio de 2017
 
@@ -63,7 +60,7 @@ No se admite la depuración entre dos equipos conectados a través de un servido
 
 4. Abra el archivo About.cshtml.cs y establecer un punto de interrupción en la `OnGet` (método) (en las plantillas anteriores, abra HomeController.cs en su lugar y establecer el punto de interrupción en el `About()` método).
 
-## <a name="remote_debug_azure_app_service"></a>Núcleo de ASP.NET de depuración remota en un servicio de aplicaciones de Azure
+## <a name="remote_debug_azure_app_service"></a> Núcleo de ASP.NET de depuración remota en un servicio de aplicaciones de Azure
 
 Desde Visual Studio, puede publicar rápidamente y depurar la aplicación a una instancia de aprovisionamiento completo de IIS. Sin embargo, la configuración de IIS está predefinida y no es posible personalizar. Para obtener instrucciones detalladas, consulte [implementar una aplicación web de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Si necesita la capacidad de personalizar IIS, intentar depurar un [Azure VM](#BKMK_azure_vm).) 
 
@@ -83,7 +80,7 @@ Desde Visual Studio, puede publicar rápidamente y depurar la aplicación a una 
 
     Ya está. El resto de los pasos descritos en este tema se aplican a la depuración remota en una máquina virtual de Azure.
 
-## <a name="remote_debug_azure_vm"></a>Núcleo de ASP.NET de depuración remota en una máquina virtual de Azure
+## <a name="remote_debug_azure_vm"></a> Núcleo de ASP.NET de depuración remota en una máquina virtual de Azure
 
 Puede crear una máquina virtual de Azure para Windows Server y, a continuación, instalar y configurar IIS y los demás componentes de software necesarias. Esto es más lento que la implementación en un servicio de aplicaciones de Azure y requiere que siga los pasos restantes de este tutorial.
 
@@ -95,7 +92,7 @@ Al abrir el puerto 80 en el grupo de seguridad de red, abrir el puerto 4022 para
 
 Según la configuración de seguridad del explorador, puede ahorrar tiempo para agregar los siguientes sitios de confianza en el explorador, por lo que puede descargar fácilmente el software descrito en este tutorial. Puede ser necesario tener acceso a estos sitios:
 
-- microsoft.com
+- Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
@@ -109,15 +106,15 @@ Al descargar el software, puede obtener las solicitudes para conceder permiso pa
 1. Instalar el [hospedaje de .NET Core Windows Server](https://aka.ms/dotnetcore-2-windowshosting) agrupación en el sistema host. La agrupación instalará el tiempo de ejecución de .NET Core, biblioteca principal de .NET y el módulo de núcleo de ASP.NET. Para obtener instrucciones más detalladas, consulte [publicar en IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Si el sistema no tiene una conexión a Internet, obtenga e instale el  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  antes de instalar el paquete de hospedaje de .NET Core Windows Server.
+    > Si el sistema no tiene una conexión a Internet, obtenga e instale el *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* antes de instalar el paquete de hospedaje de .NET Core Windows Server.
 
 3. Reiniciar el sistema (o ejecutar **net stop era /y** seguido **del comando net start w3svc** desde un símbolo del sistema para recoger un cambio en la ruta de acceso del sistema).
 
-### <a name="BKMK_install_webdeploy"></a>(Opcional) Instale WebDeploy 3.6 en Windows Server
+### <a name="BKMK_install_webdeploy"></a> (Opcional) Instale WebDeploy 3.6 en Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a>Configurar el sitio Web de ASP.NET en el equipo de Windows Server
+### <a name="BKMK_deploy_asp_net"></a> Configurar el sitio Web de ASP.NET en el equipo de Windows Server
 
 1. Abra el **Administrador de Internet Information Services (IIS)** y vaya a **Sitios**.
 
@@ -129,7 +126,7 @@ Al descargar el software, puede obtener las solicitudes para conceder permiso pa
 
     Si no ve uno de estos usuarios con acceso, vaya a través de los pasos necesarios para agregar IUSR como un usuario con derechos de lectura y ejecución.
 
-### <a name="bkmk_webdeploy"></a>(Opcional) Publique e implemente la aplicación mediante Web Deploy desde Visual Studio
+### <a name="bkmk_webdeploy"></a> (Opcional) Publique e implemente la aplicación mediante Web Deploy desde Visual Studio
 
 Si ha instalado Web Deploy mediante el instalador de plataforma Web, puede implementar la aplicación directamente desde Visual Studio.
 
@@ -169,11 +166,11 @@ Si no usa Web Deploy, debe publicar e implementar la aplicación mediante el sis
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="BKMK_msvsmon"></a>Descargue e instale las herramientas remotas en Windows Server
+### <a name="BKMK_msvsmon"></a> Descargue e instale las herramientas remotas en Windows Server
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Configurar el depurador remoto en Windows Server
+### <a name="BKMK_setup"></a> Configurar el depurador remoto en Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -211,7 +208,7 @@ Si no usa Web Deploy, debe publicar e implementar la aplicación mediante el sis
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-### <a name="bkmk_openports"></a>Solución de problemas: Abra los puertos necesarios en Windows Server
+### <a name="bkmk_openports"></a> Solución de problemas: Abra los puertos necesarios en Windows Server
 
 En la mayoría de las instalaciones, se abren los puertos necesarios por la instalación de ASP.NET y el depurador remoto. Sin embargo, si está solucionando problemas de implementación y la aplicación se hospeda detrás de un firewall, debe comprobar que estén abiertos los puertos correctos.
 

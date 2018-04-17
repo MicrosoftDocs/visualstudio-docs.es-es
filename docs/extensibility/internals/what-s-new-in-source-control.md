@@ -1,32 +1,30 @@
 ---
-title: "¿Qué &#39; s de Control de código fuente | Documentos de Microsoft"
-ms.custom: 
+title: ¿Qué&#39;s de Control de código fuente | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new [Visual Studio SDK], source control
 - source control [Visual Studio SDK], what's new
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
-caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 9fc1c5956a4d3c20f8b9abec36d554f3ec56c8c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b46730ab1acac6605af2e1ff1c418dbe8c886406
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="what39s-new-in-source-control"></a>¿Qué &#39; s de Control de código fuente
+# <a name="what39s-new-in-source-control"></a>¿Qué&#39;s de Control de código fuente
 En [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] puede proporcionar una solución de control de código fuente profundamente integrado mediante la implementación de un control de código fuente VSPackage. En esta sección se describe las características de control de código fuente VSPackages y proporciona una visión general de los pasos de implementación.  
   
 ## <a name="the-source-control-vspackage"></a>El VSPackage del Control de código fuente  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]admite dos tipos de soluciones de control de código fuente. En todas las versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], aún podrá integrar basado en la API de complementos de Control de origen de complemento. También puede crear un VSPackage para control de código fuente que proporciona una integración profunda, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ruta de acceso adecuado para las soluciones de control de código fuente que requieren un alto nivel de sofisticación y autonomía.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite dos tipos de soluciones de control de código fuente. En todas las versiones de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], aún podrá integrar basado en la API de complementos de Control de origen de complemento. También puede crear un VSPackage para control de código fuente que proporciona una integración profunda, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] ruta de acceso adecuado para las soluciones de control de código fuente que requieren un alto nivel de sofisticación y autonomía.  
   
  Un VSPackage puede agregar casi cualquier tipo de funcionalidad a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Un control de código fuente VSPackage proporciona una característica de control de código fuente completo para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], desde la UI presentada al usuario para la comunicación de back-end con el sistema de control de código fuente.  
   

@@ -3,22 +3,20 @@ title: 'Cómo: registrar tipos de archivo del Editor | Documentos de Microsoft'
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
 ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 174d1f93c11ef8b8cd8f0319daef857ceebd14a6
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 4ac67139de317c15d4e85be43f7dace132373257
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-register-editor-file-types"></a>Cómo: registrar tipos de archivo del Editor
 La manera más fácil para registrar tipos de archivo del editor es mediante el uso de los atributos de registro que se proporciona como parte de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] administrado clases package framework (MPF). Si va a implementar el paquete en el modo nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], también puede escribir un script de registro que registra el editor y las extensiones asociadas.

@@ -1,23 +1,21 @@
 ---
 title: Documento carga retrasada | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e69ee994f434e122894989d82b97ea79e4bd995c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: dc10d7807633433b38fa8587d41c2ac3c0273ebe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delayed-document-loading"></a>Documento carga retrasada
 Cuando un usuario vuelve a abrir una solución de Visual Studio, la mayoría de los documentos asociados no se carga de forma inmediata. El marco de la ventana de documento se crea en un estado pendiente de inicialización y un documento de marcador de posición (llamado un marco de código auxiliar) se coloca en la tabla de documento ejecutando (RDT).  
@@ -49,7 +47,7 @@ Cuando un usuario vuelve a abrir una solución de Visual Studio, la mayoría de 
   
  Puede evitar la carga de documento innecesarios llamando a uno de los métodos siguientes antes de solicitar las propiedades pertinentes: antes de solicitar otras propiedades.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>mediante <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> mediante <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Este método devuelve un <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> objeto que incluye un valor para <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> si aún no se ha inicializado el documento.  
   

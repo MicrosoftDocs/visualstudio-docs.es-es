@@ -1,26 +1,24 @@
 ---
 title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - EnsureDCOMUnblocked
 - IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
 ms.assetid: acf54d27-32a6-47e7-aba6-3cc0004edc7f
-caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 2c7460b4ea6f62d6b4d442d1331da0a9a5fb509f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e6b7ef2faef836e87b47247a5bf18ddec7b9dd11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugfirewallconfigurationcallback2ensuredcomunblocked"></a>IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
 Solicitudes que el firewall no bloquea la depuración remota.  

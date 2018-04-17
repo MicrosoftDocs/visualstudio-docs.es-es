@@ -1,12 +1,10 @@
 ---
 title: Aplicaciones auxiliares SDK para depurar | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b87756f52cb1506be30014331d63eec5d15beff4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sdk-helpers-for-debugging"></a>Aplicaciones auxiliares SDK para la depuración
 Estas funciones y declaraciones son funciones auxiliares globales para la implementación de motores de depuración, los evaluadores de expresión y los proveedores de símbolos en C++.  
@@ -276,7 +274,7 @@ HRESULT EnumMetricSections(
 >  Todos los GUID se almacenan en el formato de `{GUID}`. Por ejemplo: `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Motores de depuración  
- La siguiente es la organización de las métricas de motores de depuración en el registro. `Engine`es el nombre de tipo de métrica de un motor de depuración y corresponde a *[tipo de métrica]* en el subárbol del registro anterior.  
+ La siguiente es la organización de las métricas de motores de depuración en el registro. `Engine` es el nombre de tipo de métrica de un motor de depuración y corresponde a *[tipo de métrica]* en el subárbol del registro anterior.  
   
  `Engine`\  
   
@@ -303,7 +301,7 @@ HRESULT EnumMetricSections(
 |*[guid de proveedor de puerto]*|El GUID del proveedor del puerto, si lo hay. Muchos motores de depuración utiliza el proveedor del puerto predeterminado y, por tanto, no especifican su propio proveedor. En este caso, la subclave `PortSupplier` estará ausente.|  
   
 ### <a name="port-suppliers"></a>Proveedores de puertos  
- La siguiente es la organización de las métricas del proveedor de puerto en el registro. `PortSupplier`es el nombre de tipo de métrica para un proveedor del puerto y se corresponde con *[tipo de métrica]*.  
+ La siguiente es la organización de las métricas del proveedor de puerto en el registro. `PortSupplier` es el nombre de tipo de métrica para un proveedor del puerto y se corresponde con *[tipo de métrica]*.  
   
  `PortSupplier`\  
   
@@ -321,7 +319,7 @@ HRESULT EnumMetricSections(
 |*[guid de clase]*|El GUID de la clase que implementa este proveedor de puerto|  
   
 ### <a name="symbol-providers"></a>Proveedores de símbolos  
- La siguiente es la organización de las métricas del proveedor de símbolos en el registro. `SymbolProvider`es el nombre de tipo de métrica para el proveedor de símbolos y corresponde a *[tipo de métrica]*.  
+ La siguiente es la organización de las métricas del proveedor de símbolos en el registro. `SymbolProvider` es el nombre de tipo de métrica para el proveedor de símbolos y corresponde a *[tipo de métrica]*.  
   
  `SymbolProvider`\  
   
@@ -349,7 +347,7 @@ HRESULT EnumMetricSections(
 |*[guid de clase]*|El GUID de la clase que implementa este proveedor de símbolos|  
   
 ### <a name="expression-evaluators"></a>Evaluadores de expresión  
- La siguiente es la organización de las métricas del evaluador de expresiones en el registro. `ExpressionEvaluator`es el nombre de tipo de métrica para el evaluador de expresiones y corresponde a *[tipo de métrica]*.  
+ La siguiente es la organización de las métricas del evaluador de expresiones en el registro. `ExpressionEvaluator` es el nombre de tipo de métrica para el evaluador de expresiones y corresponde a *[tipo de métrica]*.  
   
 > [!NOTE]
 >  El tipo de métrica para `ExpressionEvaluator` no está definido en dbgmetric.h, ya que se supone que todos los cambios de métrica para evaluadores de expresión pasará a través de las funciones de métrica de evaluador de expresión adecuada (el diseño de la `ExpressionEvaluator` subclave es en cierto modo complicado, por lo que los detalles están ocultos en dbgmetric.lib).  
@@ -380,7 +378,7 @@ HRESULT EnumMetricSections(
 |*[guid de motor de depuración]*|El GUID de un motor de depuración que funciona este evaluador de expresiones con|  
   
 ### <a name="expression-evaluator-extensions"></a>Extensiones del evaluador de expresiones  
- La siguiente es la organización de las métricas de extensión del evaluador de expresiones en el registro. `EEExtensions`es el nombre de tipo de métrica para la expresión de extensiones de evaluador y corresponde a *[tipo de métrica]*.  
+ La siguiente es la organización de las métricas de extensión del evaluador de expresiones en el registro. `EEExtensions` es el nombre de tipo de métrica para la expresión de extensiones de evaluador y corresponde a *[tipo de métrica]*.  
   
  `EEExtensions`\  
   
@@ -395,7 +393,7 @@ HRESULT EnumMetricSections(
 |*[guid de extensión]*|El GUID de una extensión de evaluador de expresiones|  
   
 ### <a name="exceptions"></a>Excepciones  
- La siguiente es la organización de las métricas de excepciones en el registro. `Exception`es el nombre de tipo de métrica para las excepciones y corresponde a *[tipo de métrica]*.  
+ La siguiente es la organización de las métricas de excepciones en el registro. `Exception` es el nombre de tipo de métrica para las excepciones y corresponde a *[tipo de métrica]*.  
   
  `Exception`\  
   

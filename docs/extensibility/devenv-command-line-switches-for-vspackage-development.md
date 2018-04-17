@@ -1,12 +1,10 @@
 ---
-title: "Modificadores de línea de comandos de devenv para el desarrollo de VSPackage | Documentos de Microsoft"
-ms.custom: 
+title: Modificadores de línea de comandos de devenv para el desarrollo de VSPackage | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
 - /resetskippkgs command line switch
@@ -17,19 +15,19 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 18c531bb849793de184f3797067dceff4bd10199
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b6ad615048255452fc5642f8680b586d69587db5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Modificadores de línea de comandos de devenv para el desarrollo de VSPackage
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]permite a los desarrolladores automatizar las tareas desde la línea de comandos cuando se ejecuta devenv.exe, el archivo que se inicia el entorno de desarrollo integrado (IDE) de Visual Studio.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite a los desarrolladores automatizar las tareas desde la línea de comandos cuando se ejecuta devenv.exe, el archivo que se inicia el entorno de desarrollo integrado (IDE) de Visual Studio.  
   
  Las tareas incluyen:  
   
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 -   Cargando el IDE en configuraciones específicas, todo ello desde fuera del IDE. Además, puede personalizar el IDE al inicio.  
   
 ## <a name="guidelines-for-switches"></a>Directrices para conmutadores  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]documentación describe los modificadores de línea de comandos para devenv de nivel de usuario. Para obtener más información, consulte [Devenv Command Line Switches](../ide/reference/devenv-command-line-switches.md). Devenv también admite modificadores de línea de comandos adicionales que son útiles con el desarrollo VSPackage, implementación y depuración.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] documentación describe los modificadores de línea de comandos para devenv de nivel de usuario. Para obtener más información, consulte [Devenv Command Line Switches](../ide/reference/devenv-command-line-switches.md). Devenv también admite modificadores de línea de comandos adicionales que son útiles con el desarrollo VSPackage, implementación y depuración.  
   
 |Modificador de línea de comandos|Descripción|  
 |--------------------------|-----------------|  

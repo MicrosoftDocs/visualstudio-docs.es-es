@@ -1,29 +1,25 @@
 ---
 title: IDebugPendingBreakpoint2 | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPendingBreakpoint2
 helpviewer_keywords:
 - IDebugPendingBreakpoint2 interface
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef986bd657a080c08fd0ebb85908ba59757bf207
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3e5e84180747a3e6a3b9e5a34e7694f4cd07867c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 Esta interfaz representa un punto de interrupción que está listo para enlazar a una ubicación del código.  
@@ -58,7 +54,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |[Eliminar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|Elimina este punto de interrupción pendiente y todos los puntos de interrupción enlazados de él.|  
   
 ## <a name="remarks"></a>Comentarios  
- `IDebugPendingBreakpoint2`puede considerarse como un proveedor de toda la información necesaria para enlazar un punto de interrupción al código que se pueden aplicar a uno o varios programas.  
+ `IDebugPendingBreakpoint2` puede considerarse como un proveedor de toda la información necesaria para enlazar un punto de interrupción al código que se pueden aplicar a uno o varios programas.  
   
  Un punto de interrupción pendiente puede producir potencialmente más de un punto de interrupción enlazado. Por ejemplo, un punto de interrupción en una plantilla de estilo de C++ podría producir un punto de interrupción enlazado para cada instancia única de dicha plantilla.  
   

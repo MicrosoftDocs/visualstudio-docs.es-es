@@ -1,23 +1,21 @@
 ---
-title: "Cómo: migrar proyectos de extensibilidad en Visual Studio de 2017 | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: migrar proyectos de extensibilidad en Visual Studio de 2017 | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/09/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8d49ff89f38b0279c60f49ee7d5856d21fd5fc4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 93f5d663a31d43dc7a52cbd11261ca78134c682a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Cómo: migrar proyectos de extensibilidad en Visual Studio de 2017
 
@@ -175,7 +173,7 @@ Tipo de extensión | Nombre para mostrar | Id.
 Editor | Editor de núcleo de Visual Studio  | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# y Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Núcleo de carga de trabajo de escritorio administrado | Microsoft.VisualStudio.Component.ManagedDesktop.Core
-Depurador | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugger.JustInTime
+instantáneas | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugger.JustInTime
 
 ## <a name="finding-component-ids"></a>Buscar los identificadores de componentes
 

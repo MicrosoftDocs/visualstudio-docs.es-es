@@ -2,11 +2,8 @@
 title: Información general de implementación - Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
 ms.topic: overview
 dev_langs:
 - FSharp
@@ -18,11 +15,11 @@ ms.author: mikejo
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e0717be3f9544ed49bdecf0b9cda2d55fa3e44
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 58975119790cf5d8af3fe28f2ae7132955f7ffb7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Información general de implementación en Visual Studio
 

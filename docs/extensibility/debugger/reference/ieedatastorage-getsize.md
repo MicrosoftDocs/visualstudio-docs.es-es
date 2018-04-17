@@ -1,29 +1,25 @@
 ---
 title: IEEDataStorage::GetSize | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEEDataStorage::GetSize
 helpviewer_keywords:
 - IEEDataStorage::GetSize
 ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee3e04c16b59ae97b93a3c521aa1a63f57835eb4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9fb6c315971c5d7886626239387d6c6ff501ed0a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 Devuelve el número de bytes incluidos en este objeto.  

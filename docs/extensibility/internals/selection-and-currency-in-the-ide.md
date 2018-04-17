@@ -1,28 +1,26 @@
 ---
-title: "Selección y moneda en el IDE | Documentos de Microsoft"
-ms.custom: 
+title: Selección y moneda en el IDE | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selección y moneda en el IDE
 El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) mantiene información acerca de los usuarios los objetos actualmente seleccionados mediante el uso de selección *contexto*. Con el contexto de selección, paquetes VSPackage puede formar parte de la moneda de seguimiento de dos maneras:  
@@ -38,7 +36,7 @@ El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de de
 |-------------|-----------------|  
 |Jerarquía actual|Normalmente, el proyecto actual; una jerarquía actual de NULL indica que la solución como un todo está actualizada.|  
 |ItemID actual|El elemento seleccionado dentro de la jerarquía actual; Cuando hay varias selecciones en una ventana del proyecto, puede haber varios elementos actuales.|  
-|Actual`SelectionContainer`|Contiene los objetos de uno o más para que la ventana de propiedades debe mostrar las propiedades.|  
+|Actual `SelectionContainer`|Contiene los objetos de uno o más para que la ventana de propiedades debe mostrar las propiedades.|  
   
  Además, el entorno mantiene dos listas globales:  
   

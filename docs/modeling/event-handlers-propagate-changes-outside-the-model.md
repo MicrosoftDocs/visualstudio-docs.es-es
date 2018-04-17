@@ -1,24 +1,22 @@
 ---
 title: Controladores de eventos propagan los cambios fuera del modelo | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c91264d459648315fa7ce2c0d58651383ea9edd2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 En el SDK de modelado y visualización, puede definir controladores de eventos de almacén para propagar los cambios a los recursos fuera de la tienda, como variables no almacén, archivos, los modelos en otros almacenes, o en otro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensiones. Controladores de eventos de almacén se ejecutan después del final de la transacción en la que ocurrió el evento desencadenador. También se ejecutan en una operación de deshacer o rehacer. Por lo tanto, a diferencia del almacén de reglas, eventos de almacén son muy útiles para actualizar los valores que están fuera de la tienda. A diferencia de los eventos. NET, se registran los controladores de eventos de almacén para que escuche en una clase: no es necesario que registrar un controlador independiente para cada instancia. Para obtener más información sobre cómo elegir entre diferentes maneras de controlar los cambios, consulte [responder a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md).  
@@ -29,13 +27,13 @@ En el SDK de modelado y visualización, puede definir controladores de eventos d
   
 1.  Elija el tipo de evento que desea supervisar. Para obtener una lista completa, examine las propiedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propiedad se corresponde con un tipo de evento. Los usados con frecuencia son tipos de evento:  
   
-    -   `ElementAdded`-se desencadena cuando un elemento del modelo, se crea el vínculo de relación, forma o conector.  
+    -   `ElementAdded` -se desencadena cuando un elemento del modelo, se crea el vínculo de relación, forma o conector.  
   
     -   ElementPropertyChanged - se desencadena cuando el valor de un `Normal` se cambia la propiedad de dominio. El evento se desencadena únicamente si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento personalizados y calculados.  
   
          No se puede aplicar a las propiedades de rol que corresponden a los vínculos de relación. En su lugar, use `ElementAdded` para supervisar la relación de dominio.  
   
-    -   `ElementDeleted`-se desencadena después de un elemento del modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.  
+    -   `ElementDeleted` -se desencadena después de un elemento del modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.  
   
 2.  Agregar una definición de clase parcial para *YourDsl *** DocData** en un archivo de código independiente en el **DslPackage** proyecto.  
   
@@ -43,7 +41,7 @@ En el SDK de modelado y visualización, puede definir controladores de eventos d
   
 4.  Invalidar `OnDocumentLoaded()` para registrar el controlador. Si tiene más de un controlador, se puede registrar en el mismo lugar.  
   
- La ubicación del código de registro no es crítica. `DocView.LoadView()`es una ubicación alternativa.  
+ La ubicación del código de registro no es crítica. `DocView.LoadView()` es una ubicación alternativa.  
   
 ```  
 using System;  
@@ -174,7 +172,7 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="store-event-types"></a>Tipos de eventos de almacén  
  Cada tipo de evento corresponde a una colección en Store.EventManagerDirectory. Puede agregar o quitar controladores de eventos en cualquier momento, pero es habitual para agregarlos al cargar el documento.  
   
-|`EventManagerDirectory`Nombre de propiedad|Se ejecuta cuando|  
+|`EventManagerDirectory` Nombre de propiedad|Se ejecuta cuando|  
 |-------------------------------------------|-------------------|  
 |ElementAdded|Se crea una instancia de una clase de dominio, relación de dominio, forma, conector o diagrama.|  
 |ElementDeleted|Un elemento del modelo se ha quitado de un directorio de elemento del almacén y ya no es el origen o destino de una relación. El elemento no se elimina realmente de la memoria, pero se conserva en el caso de una acción de deshacer futuras.|  

@@ -1,29 +1,25 @@
 ---
 title: IDebugProcess2::Terminate | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcess2::Terminate
 helpviewer_keywords:
 - IDebugProcess2::Terminate
 ms.assetid: 5e6bf373-0fe9-4321-b04a-473a65f664d9
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c3bed9f3df7266a12d8cd8c39f16955fa647c04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3bb6c47a95ff77d19ea8f6cb8803e416c35148c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 Finaliza el proceso.  

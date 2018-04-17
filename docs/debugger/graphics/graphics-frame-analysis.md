@@ -1,25 +1,22 @@
 ---
-title: "Análisis de marco de gráficos | Documentos de Microsoft"
-ms.custom: 
+title: Análisis de marco de gráficos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 95544a030870feaace585d62a8027c17dbc56c64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.  
@@ -75,7 +72,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 #### <a name="timeline"></a>Escala de tiempo  
  La escala de tiempo muestra una vista general de los cronometrajes de llamada a draw relativos a otro. Como las barras más largas se corresponden con tiempos de dibujo más prolongados, puede usarlo para ubicar rápidamente en el fotograma las llamadas a draw más caras. Cuando el fotograma capturado contiene una gran cantidad de llamadas a draw, se combinan varias llamadas a draw en una barra cuya longitud sea la suma de esas llamadas a draw.  
   
- ![La escala de tiempo muestra draw &#45; llamar a los costos. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![La escala de tiempo muestra draw&#45;llamar a los costos. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Puede colocar el puntero en una barra para ver a qué evento de llamada a draw corresponde. Al seleccionar la barra, la lista de eventos se sincroniza con este evento.  
   
@@ -137,7 +134,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   
  El Análisis de fotogramas limita el número de reintentos a 10. Si su plataforma tiene una gestión de la energía o un canalizador del reloj agresivos, es posible que el Análisis de fotogramas no se ejecute correctamente e informe de un error porque haya superado el límite de reintentos. Tal vez pueda mitigar el problema restaurando la limitación de la velocidad del reloj y la administración de energía de la plataforma de modo que sean menos agresivas, si la plataforma lo permite.  
   
-##  <a name="HardwareSupport"></a>Compatibilidad de hardware  
+##  <a name="HardwareSupport"></a> Compatibilidad de hardware  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Marcas de tiempo y consultas de oclusión  
  Las marcas de tiempo se admiten en todas las plataformas que admiten el Análisis de fotogramas. Las consultas de oclusión de profundidad, necesarias para el contador de píxeles ocluidos, se admiten en las plataformas que admiten el nivel de características 9.2 o superiores.  
@@ -175,15 +172,15 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 ### <a name="warp"></a>WARP  
  El Análisis de fotogramas está diseñado para perfilar y mejorar el rendimiento de la representación en hardware real. Ejecutar análisis de fotogramas en dispositivos WARP no evitarse, pero no es normalmente la pena puesto WARP se ejecuta en una CPU de última generación es más lento que incluso el menor GPU modernas, y el rendimiento de WARP puede variar en gran medida según la CPU está ejecutando en.  
   
-##  <a name="Variants"></a>Variantes  
+##  <a name="Variants"></a> Variantes  
  Cada cambio que hace que el análisis de fotogramas en la forma en que se representa un fotograma durante la reproducción se conoce como un *variante*. Las variantes que el Análisis de fotogramas examina corresponden a cambios comunes relativamente fáciles que puede realizar para mejorar el rendimiento de la representación o la calidad visual de la aplicación, por ejemplo, reducir el tamaño de las texturas, usar compresión de textura o permitir diferentes tipos de suavizado de contorno. Las variantes reemplazan el contexto de representación y los parámetros habituales de la aplicación. A continuación, se muestra un resumen:  
   
 |Variante|Descripción|  
 |-------------|-----------------|  
 |**Tamaño de la ventanilla de 1 x 1**|Reduce las dimensiones de la ventanilla de todos los objetivos de presentación a 1x1 píxeles.<br /><br /> Para obtener más información, vea [variante de tamaño de 1 x 1 Viewport](1x1-viewport-size-variant.md)|  
-|**0x MSAA**|Deshabilita el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
-|**2x MSAA**|Habilita dos veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|Habilita cuatro veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**0 x MSAA**|Deshabilita el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**2 x MSAA**|Habilita dos veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
+|**4 x MSAA**|Habilita cuatro veces el suavizado de contorno de muestras múltiples (MSAA) en todos los objetivos de representación.<br /><br /> Para obtener más información, vea [0 x / 2 x / 4 x MSAA variantes](0x-2x-4x-msaa-variants.md)|  
 |**Filtro de textura de punto**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtro de textura de punto) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y variantes de filtrado de textura anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtro de textura bilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtro de textura bilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y variantes de filtrado de textura anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Textura trilineal**|Establece el modo de filtro en `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtro de textura trilineal) para todas las muestras de textura adecuadas.<br /><br /> Para obtener más información, consulte [punto, bilineal, trilineal y variantes de filtrado de textura anisotrópico](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

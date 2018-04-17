@@ -1,27 +1,23 @@
 ---
-title: "Los comandos que se deben ejecutar después de la instalación | Documentos de Microsoft"
-ms.custom: 
+title: Los comandos que se deben ejecutar después de la instalación | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ff4b1e572fd1e0c5c500fbd756d01063665bd1f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 84f1651f311fbad7aefe40a2744c61dc7d81725c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que se deben ejecutar después de la instalación
 Si implementa la extensión a través de un archivo .msi, debe ejecutar `devenv /setup` como parte de la instalación en orden para Visual Studio detectar las extensiones.  
@@ -73,7 +69,7 @@ Si implementa la extensión a través de un archivo .msi, debe ejecutar `devenv 
  Acciones personalizadas se deben crear en la tabla InstallExecuteSequence y programar su ejecución durante la instalación. Use la propiedad correspondiente en cada fila de la columna de condición para evitar que la acción personalizada que se va a ejecutar si esa versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no está instalado en el sistema.  
   
 > [!NOTE]
->  `Null`propiedades que se evalúan como `False` cuando se utiliza en las condiciones.  
+>  `Null` propiedades que se evalúan como `False` cuando se utiliza en las condiciones.  
   
  El valor de la columna de secuencia para cada acción personalizada depende de otros valores de secuencia en el paquete de Windows Installer. Valores de secuencia deben ser tal que las acciones personalizadas de devenv.exe de identificación de cerca posible inmediatamente antes de la acción estándar InstallFinalize.  
   

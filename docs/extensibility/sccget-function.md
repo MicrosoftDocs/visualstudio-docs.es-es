@@ -1,29 +1,25 @@
 ---
-title: "Función SccGet | Documentos de Microsoft"
-ms.custom: 
+title: Función SccGet | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGet
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb793eb5c35c4ca9ee22a58496ebe175b83c68e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccget-function"></a>SccGet (función)
 Esta función recupera una copia de uno o más archivos para ver y compilar pero no para su edición. En la mayoría de los sistemas, los archivos se etiquetan como de solo lectura.  
@@ -81,7 +77,7 @@ SCCRTN SccGet(
  El `SCC_GET_ALL` marca puede combinarse con la `SCC_GET_RECURSIVE` marca para recuperar todos los archivos en los directorios determinados y también todos los subdirectorios.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`nunca se debe pasar sin `SCC_GET_ALL`. Además, tenga en cuenta que si directorios C:\A y C:\A\B son ambos se pasan en una recursiva obtener, C:\A\B y todos sus subdirectorios realmente se recuperarán dos veces. Es responsabilidad del IDE, y no el origen de control del complemento, para asegurarse de que se mantengan duplicados como éste fuera de la matriz.  
+>  `SCC_GET_RECURSIVE` nunca se debe pasar sin `SCC_GET_ALL`. Además, tenga en cuenta que si directorios C:\A y C:\A\B son ambos se pasan en una recursiva obtener, C:\A\B y todos sus subdirectorios realmente se recuperarán dos veces. Es responsabilidad del IDE, y no el origen de control del complemento, para asegurarse de que se mantengan duplicados como éste fuera de la matriz.  
   
  Por último, incluso si un origen de controlar el complemento especificado el `SCC_CAP_GET_NOUI` marca en la inicialización, lo que indica que no tiene una interfaz de usuario para un comando Get, todavía puede llamar a esta función mediante el IDE para recuperar archivos. La marca simplemente quiere decir que el IDE no muestra un elemento de menú de Get y que el complemento no necesite proporcionar cualquier interfaz de usuario.  
   

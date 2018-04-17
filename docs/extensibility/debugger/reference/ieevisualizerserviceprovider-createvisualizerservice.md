@@ -1,29 +1,25 @@
 ---
 title: IEEVisualizerServiceProvider::CreateVisualizerService | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEEVisualizerServiceProvider::CreateVisualizerService
 helpviewer_keywords:
 - IEEVisualizerServiceProvider::CreateVisualizerService method
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9c34f5b11aed9ed51ca10f662ea161d792e54b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f59d86e94be5c0295786b747f6b57753aa087b07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Este método crea un servicio del visualizador.  
@@ -70,7 +66,7 @@ int CreateVisualizerService(
  Si se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 ## <a name="remarks"></a>Comentarios  
- El `binder`, `pSymProv`, y `pAddress` parámetros se pasan a la `IDebugParsedExpression::EvaluateSync` método. `CreateVisualizerService`es que se llame solo desde `IDebugParsedExpression::EvaluateSync` como parte de soporte de un evaluador de expresiones para los visualizadores de tipo.  
+ El `binder`, `pSymProv`, y `pAddress` parámetros se pasan a la `IDebugParsedExpression::EvaluateSync` método. `CreateVisualizerService` es que se llame solo desde `IDebugParsedExpression::EvaluateSync` como parte de soporte de un evaluador de expresiones para los visualizadores de tipo.  
   
 ## <a name="see-also"></a>Vea también  
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   

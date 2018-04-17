@@ -1,26 +1,24 @@
 ---
 title: Componentes principales del modelo de proyecto | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2cfb9db9c354eb4c10ece0f5a8259f3d4a104e28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-model-core-components"></a>Componentes principales del proyecto de modelo
 Las siguientes tablas se expanden en el modelo de proyecto. Las tablas ofrecen descripciones breves de las interfaces y los servicios identificados en el modelo y las interfaces y los servicios asociados a objetos específicos. Además, las tablas detallan otras interfaces que son opcionales en la creación del proyecto y el mantenimiento según los requisitos de su tipo de proyecto específico.  
@@ -85,7 +83,7 @@ Las siguientes tablas se expanden en el modelo de proyecto. Las tablas ofrecen d
   
 ### <a name="services"></a>Servicios  
   
-|Servicio|Comentarios|  
+|web de Office|Comentarios|  
 |-------------|--------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes>|Usar VSPackages que implementan tipos de proyecto para registrar que el generador de proyectos existe con el IDE. El VSPackage debe llamar a `QueryService` para este servicio y registrar la fábrica de su proyecto cuando `IVsPackage::SetSite` se llama al método. Si el `SetSite` no se llama a método, no se crea una instancia de su proyecto.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Proporciona acceso a la noción interno, integrado del IDE de la solución actual, como la capacidad para enumerar los proyectos, crear nuevos proyectos, tomar nota de los cambios en el proyecto y así sucesivamente.|  
@@ -101,7 +99,7 @@ Las siguientes tablas se expanden en el modelo de proyecto. Las tablas ofrecen d
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>|Proporciona funcionalidad básica de IDE relacionadas con la interfaz de usuario, como la capacidad para crear y enumerar las ventanas de herramientas o las ventanas de documento o para notificar un error al usuario.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>|Proporciona acceso a la barra de estado del IDE.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Se utiliza para implementar el modelo de automatización. En el modelo de proyecto, devolverá un objeto de propiedades que le permite crea una instancia de ese objeto.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Se utiliza para implementar los eventos de Portapapeles en el objeto de proyecto de la jerarquía. `SVsUIHierWinClipboardHelper`permite correctamente identificador operaciones de cortar, copiar y pegar.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Se utiliza para implementar los eventos de Portapapeles en el objeto de proyecto de la jerarquía. `SVsUIHierWinClipboardHelper` permite correctamente identificador operaciones de cortar, copiar y pegar.|  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

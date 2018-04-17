@@ -1,27 +1,23 @@
 ---
-title: "Cómo: crear una. Archivo de Vsct | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: crear una. Archivo de Vsct | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64d9b35030a18a6258de52ed0f12f9796044ba5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c6456b0b866f08956862fa197719354bedf0ecf6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-vsct-file"></a>Cómo: crear una. Archivo de Vsct  
   
@@ -102,9 +98,9 @@ Puede crear un archivo .vsct basado en XML a partir de un archivo .cto binario e
   
 3.  En el símbolo del sistema de Visual Studio, vaya al directorio que contiene los archivos .cto y .ctsym.  
   
-4.  Escriba **vsct.exe** *ctofilename***.cto** *vsctfilename***.vsct -S***symfilename***.ctsym**.  
+4.  Tipo de **vsct.exe** *ctofilename *** .cto** * vsctfilename***.vsct -S***symfilename ***ctsym**.  
   
-     `ctofilename`es el nombre del archivo .cto, `vsctfilename` es el nombre del archivo vsct que desea crear, y `symfilename` es el nombre del archivo. ctsym.  
+     `ctofilename` es el nombre del archivo .cto, `vsctfilename` es el nombre del archivo vsct que desea crear, y `symfilename` es el nombre del archivo. ctsym.  
   
      Este proceso crea un nuevo archivo compilador de tabla de comandos XML .vsct. Puede editar y compilar el archivo con vsct.exe, el compilador de .vsct, tal como lo haría con cualquier otro archivo .vsct.  
   

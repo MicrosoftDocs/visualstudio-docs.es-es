@@ -1,12 +1,10 @@
 ---
-title: "Información de parámetros en un Service1 de lenguaje heredado | Documentos de Microsoft"
-ms.custom: 
+title: Información de parámetros en un Service1 de lenguaje heredado | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
 La información de parámetros de IntelliSense, información sobre herramientas proporciona a los usuarios con sugerencias sobre dónde están en una construcción de lenguaje.  
@@ -40,7 +38,7 @@ La información de parámetros de IntelliSense, información sobre herramientas 
   
  La información de parámetros, información sobre herramientas se inicia el servicio de lenguaje a través de interceptación de comando. Para interceptar los caracteres de usuario, debe implementar su objeto de servicio de lenguaje la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> de interfaz y la vista de texto puede pasar un puntero a su <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementación, mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> método en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz. El filtro de comandos intercepta los comandos que se escriben en la ventana de código. Supervisar la información de comando para saber cuándo se debe mostrar la información de parámetros para el usuario. Puede usar el mismo filtro de comandos para la finalización de instrucciones, los marcadores de error y así sucesivamente.  
   
- Cuando se escribe una palabra clave para el que el servicio de lenguaje puede proporcionar sugerencias, a continuación, el servicio de lenguaje crea un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objeto y llama el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> método en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz para notificar el IDE para mostrar una sugerencia. Crear el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objeto mediante la `VSLocalCreateInstance` y especificando la coclase `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance`es una función definida en el vsdoc.h del archivo de encabezado que llama `QueryService` para el registro local y llamadas `CreateInstance` en este objeto para el `CLSID_VsMethodTipWindow`.  
+ Cuando se escribe una palabra clave para el que el servicio de lenguaje puede proporcionar sugerencias, a continuación, el servicio de lenguaje crea un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objeto y llama el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> método en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz para notificar el IDE para mostrar una sugerencia. Crear el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objeto mediante la `VSLocalCreateInstance` y especificando la coclase `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` es una función definida en el vsdoc.h del archivo de encabezado que llama `QueryService` para el registro local y llamadas `CreateInstance` en este objeto para el `CLSID_VsMethodTipWindow`.  
   
 ## <a name="providing-a-method-tip"></a>Proporciona una sugerencia de método  
  Para proporcionar una sugerencia de método, llame a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> método en el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> interfaz, pasando la implementación de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfaz.  

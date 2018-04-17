@@ -2,11 +2,8 @@
 title: Depuración remota en Visual Studio | Documentos de Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -19,17 +16,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 77726cb404cf764fa41d62dc6b4794cdb2f52d95
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Puede depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente. Para ello, use el depurador remoto de Visual Studio
@@ -56,7 +52,7 @@ Si simplemente desea descargar e instalar al depurador remoto y no necesita las 
 
 Puede encontrar el depurador remoto (**msvsmon.exe**) en un equipo con Visual Studio Community, Professional o Enterprise ya instalado. En algunos escenarios, la manera más fácil de configurar la depuración remota es ejecutar al depurador remoto (msvsmon.exe) desde un recurso compartido de archivos. Para conocer las limitaciones de uso, consulte la página de Ayuda del depurador remoto (**Ayuda > uso de** en el depurador remoto).
 
-1. Buscar **msvsmon.exe** en el directorio que coinciden con su versión de Visual Studio. For Visual Studio Enterprise 2017:
+1. Buscar **msvsmon.exe** en el directorio que coinciden con su versión de Visual Studio. Para Visual Studio Enterprise 2017:
 
       **Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
       

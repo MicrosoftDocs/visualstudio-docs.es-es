@@ -1,26 +1,24 @@
 ---
 title: Instalar VSPackages con Windows Installer | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
 - VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a9f4d45c3fccebed9febc2ea722981f597896ace
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6fafebe0dc2bb8e13c99be8b340e7f5663a9930f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalar VSPackages con Windows Installer
 Integrar el VSPackage en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] requiere algo más que copiar los archivos al equipo del usuario. Instalador de su VSPackage debe instalar el paquete de VS y sus archivos dependientes y registrar e integrarlos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. El paquete de VS puede aprovechar las características de integración como mostrar un icono en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cuadro de diálogo acerca de pantalla de presentación.  

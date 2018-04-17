@@ -1,23 +1,21 @@
 ---
 title: Migrar el registro de la clase de 64 bits depurador COM | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/10/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
-caps.latest.revision: "1"
 author: gregg-miskelly
 ms.author: greggm
-manager: ghogen
-ms.workload: greggm
-ms.openlocfilehash: 737c970555fce8f3cdac118421eddb09f52d7c53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- greggm
+ms.openlocfilehash: 28516038170dd34028d11bf9a070cf265ecfd830
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrar el registro de la clase COM de depurador de 64 bits
 

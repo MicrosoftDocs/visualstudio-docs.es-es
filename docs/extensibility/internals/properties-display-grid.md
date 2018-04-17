@@ -1,27 +1,23 @@
 ---
-title: "Propiedades Mostrar cuadrícula | Documentos de Microsoft"
-ms.custom: 
+title: Propiedades Mostrar cuadrícula | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], grid
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88720010c178fb1ca3a4c2425002f5f34e26e777
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 279450126cfcc7edba9398632e20bfb75e312b89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-display-grid"></a>Mostrar cuadrícula de propiedades
 El **propiedades** ventana muestra los campos dentro de una cuadrícula. La columna izquierda contiene los nombres de propiedad; la columna derecha contiene los valores de propiedad.  
@@ -33,19 +29,19 @@ El **propiedades** ventana muestra los campos dentro de una cuadrícula. La colu
   
 2.  Establecer el `pfHide` parámetro en <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> a `TRUE`.  
   
- Para obtener información de inserción a la **propiedades** ventana, el IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>llama a VSPackages para cada ventana que contiene objetos que pueden seleccionarse con propiedades relacionadas que se mostrará en el **propiedades** ventana. **El Explorador de soluciones**de implementación de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> llamadas `GetProperty` con <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> en la jerarquía del proyecto para adquirir los objetos explorable en la jerarquía.  
+ Para obtener información de inserción a la **propiedades** ventana, el IDE usa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> llama a VSPackages para cada ventana que contiene objetos que pueden seleccionarse con propiedades relacionadas que se mostrará en el **propiedades** ventana. **El Explorador de soluciones**de implementación de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> llamadas `GetProperty` con <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> en la jerarquía del proyecto para adquirir los objetos explorable en la jerarquía.  
   
  Si no es compatible con el paquete de VS <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>, el IDE intenta usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> con el valor de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> que proporcionan el elemento de la jerarquía o elementos.  
   
  El proyecto no es necesario crear VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> porque el paquete de ventana proporcionado por el IDE que lo implementa (por ejemplo, **el Explorador de soluciones**) construye <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> en su nombre.  
   
- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>consta de tres métodos llamados por el IDE:  
+ <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> consta de tres métodos llamados por el IDE:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A>contiene el número de objetos seleccionados que se mostrarán en el **propiedades** ventana.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A> contiene el número de objetos seleccionados que se mostrarán en el **propiedades** ventana.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A>Devuelve el `IDispatch` objetos que se van a mostrar en el **propiedades** ventana.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> Devuelve el `IDispatch` objetos que se van a mostrar en el **propiedades** ventana.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>permite que cualquiera de los objetos devueltos por <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> seleccionarse por el usuario. Esto permite que el VSPackage visualmente actualizar la selección que se muestra al usuario en la interfaz de usuario.  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> permite que cualquiera de los objetos devueltos por <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> seleccionarse por el usuario. Esto permite que el VSPackage visualmente actualizar la selección que se muestra al usuario en la interfaz de usuario.  
   
  El **propiedades** ventana extrae información de la `IDispatch` objetos que se va a recuperar las propiedades que se va a examinar. Utiliza el Explorador de propiedades `IDispatch` para solicitar al objeto qué propiedades admite consultando `ITypeInfo`, que se obtiene desde `IDispatch::GetTypeInfo`. El explorador, a continuación, utiliza estos valores para rellenar el **propiedades** ventana y cambiar los valores de las propiedades individuales se muestran en la cuadrícula. La información de propiedades se mantiene en el propio objeto.  
   
@@ -55,9 +51,9 @@ El **propiedades** ventana muestra los campos dentro de una cuadrícula. La colu
   
 -   Se recuperan los valores contenidos en una lista enumerada por un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> una consulta para `IDispatch`. Valores obtenidos de una lista enumerada pueden cambiarse en la cuadrícula de propiedades haciendo doble clic en el nombre del campo o haciendo clic en el valor y seleccione el nuevo valor de la lista desplegable. Para las propiedades que tienen predefinidos de configuración de las listas enumeradas, haga doble clic en el nombre de propiedad en la lista de propiedades recorre las opciones disponibles. Para las propiedades predefinidas con solo dos opciones, como verdadero/falso, haga doble clic en el nombre de propiedad para cambiar entre las opciones.  
   
--   Si <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> es `false`, que indica que se ha cambiado el valor, el valor se muestra en negrita. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A>se usa para determinar si el valor se puede restablecer el valor original. Si es así, puede cambiar a la predeterminada haciendo clic en el valor y elegir **restablecer** desde el menú que se muestra. De lo contrario, tendrá que cambiar manualmente el valor a la predeterminada. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>También le permite localizar y ocultar los nombres de propiedades que se muestran en tiempo de diseño, pero no afecta a los nombres de propiedad que se muestra en tiempo de ejecución.  
+-   Si <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> es `false`, que indica que se ha cambiado el valor, el valor se muestra en negrita. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A> se usa para determinar si el valor se puede restablecer el valor original. Si es así, puede cambiar a la predeterminada haciendo clic en el valor y elegir **restablecer** desde el menú que se muestra. De lo contrario, tendrá que cambiar manualmente el valor a la predeterminada. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> También le permite localizar y ocultar los nombres de propiedades que se muestran en tiempo de diseño, pero no afecta a los nombres de propiedad que se muestra en tiempo de ejecución.  
   
--   Haga clic en el botón de puntos suspensivos (...), se muestra una lista de valores de propiedad desde el que el usuario puede seleccionar (por ejemplo, un selector de colores o una lista de fuentes). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>proporciona estos valores.  
+-   Haga clic en el botón de puntos suspensivos (...), se muestra una lista de valores de propiedad desde el que el usuario puede seleccionar (por ejemplo, un selector de colores o una lista de fuentes). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> proporciona estos valores.  
   
 ## <a name="see-also"></a>Vea también  
  [Extensión de propiedades](../../extensibility/internals/extending-properties.md)

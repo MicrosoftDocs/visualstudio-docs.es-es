@@ -1,29 +1,25 @@
 ---
 title: IDebugPointerField | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPointerField
 helpviewer_keywords:
 - IDebugPointerField interface
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a4f110308ead7fde00528ed0404becd802069f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 63ac5f4f7e357ba256d7a796654100480a34533a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 Esta interfaz representa un tipo de puntero.  
@@ -48,7 +44,7 @@ IDebugPointerField : IDebugContainerField
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que describe el destino del puntero.|  
   
 ## <a name="remarks"></a>Comentarios  
- En C o C++, un puntero puede ser un contenedor si se utiliza con una notación de matriz. Por ejemplo, si tenemos `char *pString`, `pString` tiene un tipo de puntero a `char`. `pString[3]`tiene el tipo de un contenedor que es un puntero a `char` que hace referencia el cuarto elemento de ese contenedor.  
+ En C o C++, un puntero puede ser un contenedor si se utiliza con una notación de matriz. Por ejemplo, si tenemos `char *pString`, `pString` tiene un tipo de puntero a `char`. `pString[3]` tiene el tipo de un contenedor que es un puntero a `char` que hace referencia el cuarto elemento de ese contenedor.  
   
 ## <a name="requirements"></a>Requisitos  
  Encabezado: sh.h  

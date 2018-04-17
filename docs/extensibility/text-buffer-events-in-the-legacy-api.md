@@ -1,27 +1,23 @@
 ---
-title: "Eventos de búfer de texto de la API heredado | Documentos de Microsoft"
-ms.custom: 
+title: Eventos de búfer de texto de la API heredado | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Eventos de búfer de texto de la API heredado
 El objeto de búfer de texto emite varios eventos diferentes que le permiten responder a distintas situaciones.  
@@ -52,8 +48,8 @@ El objeto de búfer de texto emite varios eventos diferentes que le permiten res
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Notifica a los clientes de los cambios en el búfer de texto subyacente en coordenadas unidimensionales.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Notifica a los clientes de los cambios en el búfer de texto subyacente en coordenadas bidimensionales.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Notifica a los clientes de los cambios en los datos de usuario.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Notifica a los clientes de la última gesto de confirmación para desencadenar el evento y proporciona el intervalo de texto cambia. El `IVsPreliminaryTextChangeCommitEvents` interfaz no se activa en respuesta a deshacer ni rehacer los comandos. Solo los eventos se desencadenan para los búferes que tienen un administrador de deshacer. `IVsPreliminaryTextChangeCommitEvents`se desencadena antes de otros eventos, como una lista descriptiva, para asegurarse de que los otros eventos de no alteran el texto antes de que se confirmen los cambios. El VSPackage debe supervisar cualquiera el `IVsPreliminaryTextChangeCommitEvents` interfaz o `IVsFinalTextChangeCommitEvents` interfaz, pero no ambos.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Notifica a los clientes de la última gesto de confirmación para desencadenar el evento y proporciona el intervalo de texto cambia. El `IVsFinalTextChangeCommitEvents` interfaz no se activa en respuesta a deshacer ni rehacer los comandos. Solo los eventos se desencadenan para los búferes que tienen un administrador de deshacer. `IVsFinalTextChangeCommitEvents`está diseñada para su uso únicamente servicios de lenguaje u otros objetos que tienen un control completo sobre la edición. El VSPackage debe supervisar cualquiera el `IVsPreliminaryTextChangeCommitEvents` interfaz o `IVsFinalTextChangeCommitEvents` interfaz, pero no ambos.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Notifica a los clientes de la última gesto de confirmación para desencadenar el evento y proporciona el intervalo de texto cambia. El `IVsPreliminaryTextChangeCommitEvents` interfaz no se activa en respuesta a deshacer ni rehacer los comandos. Solo los eventos se desencadenan para los búferes que tienen un administrador de deshacer. `IVsPreliminaryTextChangeCommitEvents` se desencadena antes de otros eventos, como una lista descriptiva, para asegurarse de que los otros eventos de no alteran el texto antes de que se confirmen los cambios. El VSPackage debe supervisar cualquiera el `IVsPreliminaryTextChangeCommitEvents` interfaz o `IVsFinalTextChangeCommitEvents` interfaz, pero no ambos.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Notifica a los clientes de la última gesto de confirmación para desencadenar el evento y proporciona el intervalo de texto cambia. El `IVsFinalTextChangeCommitEvents` interfaz no se activa en respuesta a deshacer ni rehacer los comandos. Solo los eventos se desencadenan para los búferes que tienen un administrador de deshacer. `IVsFinalTextChangeCommitEvents` está diseñada para su uso únicamente servicios de lenguaje u otros objetos que tienen un control completo sobre la edición. El VSPackage debe supervisar cualquiera el `IVsPreliminaryTextChangeCommitEvents` interfaz o `IVsFinalTextChangeCommitEvents` interfaz, pero no ambos.|  
   
 ## <a name="see-also"></a>Vea también  
  [Obtener acceso al búfer de texto mediante la API heredado](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   

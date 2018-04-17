@@ -1,12 +1,10 @@
 ---
-title: "Cómo: instalar un visualizador | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: instalar un visualizador | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugger, visualizers
 - visualizers, installing
 ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
-caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e9864a2a8f3f39e368ae1293b4b27fc0a8d9e056
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eea59575ce6f324540e59e6265ecdcbfd6b6cfd3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-visualizer"></a>Cómo: Instalar un visualizador
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar un visualizador es un proceso sencillo.  
@@ -40,9 +38,9 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
   
 2.  Copie el archivo DLL a una de las siguientes ubicaciones:  
   
-    -   *VisualStudioInstallPath*`\Common7\Packages\Debugger\Visualizers`  
+    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
   
-    -   `My Documents\`*VisualStudioVersion*`\Visualizers`  
+    -   `My Documents\` *VisualStudioVersion* `\Visualizers`  
   
 3.  Si desea utilizar un visualizador administrado para la depuración remota, copie el archivo DLL en la misma ruta de acceso en el equipo remoto.  
   

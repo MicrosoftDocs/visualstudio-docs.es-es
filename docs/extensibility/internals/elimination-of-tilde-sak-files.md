@@ -1,27 +1,25 @@
 ---
-title: "Eliminación de ~ SAK archivos | Documentos de Microsoft"
-ms.custom: 
+title: Eliminación de ~ SAK archivos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - temporary files
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8d72a42c89cc775b9312d301a052ee102d977728
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 61227652bf191280f69466f127c4a400ea43856e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="elimination-of-sak-files"></a>Eliminación de ~ SAK archivos
 En origen Control complemento API 1.2, el ~ archivos SAK se reemplazaron por marcadores de capacidad y nuevas funciones que detectan si un complemento de control de origen es compatible con el archivo MSSCCPRJ y desprotecciones compartidas.  

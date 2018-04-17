@@ -1,27 +1,23 @@
 ---
 title: Barra desplegable | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7058c0b93cd0ff4afb2a13b625cd7ef034b03699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0cf01e8a416407c570076812bf18aa6b21c21583
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="drop-down-bar"></a>Barra de la lista desplegable
 La barra de la lista desplegable se proporciona en la parte superior de la ventana de código y contiene dos listas desplegables.  
@@ -29,7 +25,7 @@ La barra de la lista desplegable se proporciona en la parte superior de la venta
 ## <a name="drop-down-bar-interfaces"></a>Interfaces de barra desplegable  
  En [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], por ejemplo, la barra de la lista desplegable contiene las listas de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] elementos y [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] funciones de miembro de los elementos, como se muestra en la siguiente imagen.  
   
- ![Colocar &#45; abajo barras](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
+ ![Quitar&#45;abajo barras](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
 Barra de la lista desplegable  
   
  Al implementar una barra de la lista desplegable, hay cuatro interfaces de importancia principal:  

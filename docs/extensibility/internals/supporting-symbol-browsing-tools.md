@@ -1,12 +1,10 @@
 ---
-title: "Compatibilidad con herramientas de exploración de símbolo | Documentos de Microsoft"
-ms.custom: 
+title: Compatibilidad con herramientas de exploración de símbolo | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
 - browsers, symbol browsers
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 78a4e910dbd2c6063f4bdf7b0dff3f27f79b218e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 08185f64310da610253dc35e69323b17ab0177fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Compatibilidad con herramientas de exploración de símbolos
 **Examinador de objetos**, **vista de clases**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos** herramientas proporcionan símbolos examinar funciones en Visual Studio. Estas herramientas muestran vistas de árbol jerárquico de símbolos y mostrar las relaciones entre los símbolos en el árbol. Pueden representar los símbolos de espacios de nombres, objetos, clases, miembros de clase y otros elementos de lenguaje incluidos en varios componentes. Los componentes incluyen proyectos de Visual Studio, externos [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] componentes y las bibliotecas de tipos (.tlb). Para obtener más información, vea [Ver la estructura del código](../../ide/viewing-the-structure-of-code.md).  

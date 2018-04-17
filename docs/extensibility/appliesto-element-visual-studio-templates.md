@@ -1,23 +1,21 @@
 ---
 title: AppliesTo (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo (Elemento, Plantillas de Visual Studio)
 Especifica una expresión opcional para buscar una o varias funciones coincidentes. (vea <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Las funciones las exponen los tipos de proyecto a través de la jerarquía como una propiedad <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. De esta manera, la plantilla se puede compartir en varios tipos de proyecto que tengan funciones aplicables comunes.  
@@ -56,7 +54,7 @@ Especifica una expresión opcional para buscar una o varias funciones coincident
   
  La sintaxis de expresión válida se define como:  
   
--   La expresión de la función, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit) ".  
+-   La expresión de la función, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
 -   El "&#124;" es el operador OR.  
   
@@ -68,7 +66,7 @@ Especifica una expresión opcional para buscar una o varias funciones coincident
   
 -   Una expresión null o vacía se evalúa como una coincidencia.  
   
--   ¿Las capacidades de proyectos pueden ser cualquier carácter salvo estos caracteres reservados: "'' :;,+-*/\\! ~ &#124; & %$@^()={} [] <>? \t\b\n\r  
+-   ¿Las capacidades de proyectos pueden ser cualquier carácter salvo estos caracteres reservados: "'' :;,+-*/\\! ~&#124;& %$@^()={} [] <>? \t\b\n\r  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestran tres plantillas diferentes. `Template1` se aplica a todos los tipos de proyecto de C# o a cualquier otro tipo de proyecto que admita la función `WindowsAppContainer`. `Template2` se aplica a todos los proyectos de C# de cualquier tipo. `Template3` se aplica a los proyectos de C# que no son proyectos `WindowsAppContainer`.  

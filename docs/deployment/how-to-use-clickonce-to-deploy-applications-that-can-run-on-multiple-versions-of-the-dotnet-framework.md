@@ -1,12 +1,10 @@
 ---
-title: "Cómo: usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, multiple .NET Framework versions
 - deploying applications [ClickOnce], multiple .NET Framework versions
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
-caps.latest.revision: "17"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: dotnet
-ms.openlocfilehash: 2c3153b4c6808d2a79a89a10e35830ec81ba15fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 310f6a25dd0729845c2b5b6d6432f2027038780b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Cómo: Usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
 Puede implementar una aplicación que tenga como destino varias versiones de .NET Framework mediante la tecnología de implementación de ClickOnce. Esto requiere que generar y actualizar los manifiestos de aplicación e implementación.  
@@ -104,7 +102,7 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Para actualizar y volver a firmar la aplicación y la implementación de manifiestos  
   
--   Actualizar y volver a firmar los manifiestos de aplicación e implementación. Para obtener más información, consulte [Cómo: volver a firmar aplicaciones y manifiestos de implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+-   Actualizar y volver a firmar los manifiestos de aplicación e implementación. Para obtener más información, consulta [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   

@@ -1,30 +1,26 @@
 ---
 title: Essentials de tipo de proyecto | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aff6cc669d7df46acaa2cbcb129a6b13b7261d9b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-type-essentials"></a>Essentials de tipo de proyecto
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]incluye varios tipos de proyectos para idiomas como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]También le permite crear sus propios tipos de proyecto.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] incluye varios tipos de proyectos para idiomas como [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] También le permite crear sus propios tipos de proyecto.  
   
  Si desea agregar comandos personalizados, editores o ventanas de herramientas para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], puede hacerlo sin necesidad de crear un nuevo tipo de proyecto. Para obtener más información, vea los temas siguientes:  
   
@@ -62,11 +58,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Tipos de proyecto pueden admitir datos distintos de los archivos de código fuente típico que se basan en un ensamblado .exe o .dll. Por ejemplo, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proyectos de base de datos contienen referencias a los archivos de script y consulta almacenados en disco y agregar comandos a **el Explorador de soluciones** para ejecutar los scripts y consultas en una base de datos, pero los proyectos no admiten construir el comportamiento. Para obtener más información, consulte [abrir y guardar elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md).  
   
--   No tiene un tipo de proyecto usar en todos los archivos. Por ejemplo, un tipo de proyecto podría almacenar todos sus datos en una base de datos. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Proporciona un control completo sobre la conservación de datos para los proyectos y elementos de proyecto de tipos de proyecto. Para obtener más información, consulte [decisiones de diseño del tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md).  
+-   No tiene un tipo de proyecto usar en todos los archivos. Por ejemplo, un tipo de proyecto podría almacenar todos sus datos en una base de datos. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proporciona un control completo sobre la conservación de datos para los proyectos y elementos de proyecto de tipos de proyecto. Para obtener más información, consulte [decisiones de diseño del tipo de proyecto](../../extensibility/internals/project-type-design-decisions.md).  
   
 -   Tipos de proyecto deben proporcionar un *generador de proyectos*, que es un objeto que se crea una instancia del proyecto cada vez que escriba [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se le indica que abra o cree un proyecto que se basa en ese tipo de proyecto. Para obtener más información, consulte [crear proyecto instancias por usar generadores de proyectos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
--   Tipos de proyecto deben proporcionar plantillas para proyectos y elementos de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]usa las plantillas cuando los usuarios crear nuevos proyectos y agregar nuevos elementos a los proyectos existentes. Para obtener más información, consulte [Agregar proyecto y plantillas de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+-   Tipos de proyecto deben proporcionar plantillas para proyectos y elementos de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa las plantillas cuando los usuarios crear nuevos proyectos y agregar nuevos elementos a los proyectos existentes. Para obtener más información, consulte [Agregar proyecto y plantillas de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 -   Tipos de proyecto pueden admitir varias configuraciones, como Debug y Release. Los usuarios pueden cambiar las diferentes configuraciones de un proyecto mediante el uso de páginas de propiedades que se proporcionan. Para obtener más información, consulte [administrar opciones de configuración](../../extensibility/internals/managing-configuration-options.md).  
   

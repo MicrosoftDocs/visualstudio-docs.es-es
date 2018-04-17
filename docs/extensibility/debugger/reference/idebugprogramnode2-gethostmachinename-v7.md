@@ -1,13 +1,10 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
-ms.custom: 
+title: IDebugProgramNode2::GetHostMachineName_V7 | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProgramNode2::GetHostMachineName
 helpviewer_keywords:
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef26af92dd50d4d79dc2f48e8cd7e32c03e86702
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2adc7125c79afc6b9ebc16b6c4b36f5c147bcdfb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 

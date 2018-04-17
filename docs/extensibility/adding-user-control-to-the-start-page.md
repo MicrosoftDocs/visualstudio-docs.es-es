@@ -1,27 +1,25 @@
 ---
-title: "Agregar Control de usuario a la página de inicio | Documentos de Microsoft"
-ms.custom: 
+title: Agregar Control de usuario a la página de inicio | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 448eba0d13a9501c328da79fa31fa66f4376d5df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2bec2b4ab834eb55bd34a80f9e6a30931e3cd325
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Agregar Control de usuario a la página de inicio
 Este tutorial muestra cómo agregar una referencia de archivo DLL a una página de inicio personalizada. El ejemplo agrega un control de usuario a la solución, genera el control de usuario y, a continuación, hace referencia al ensamblado generado desde el archivo .xaml de página de inicio. Una nueva pestaña hospeda el control de usuario, que funciona como un explorador Web básico.  
@@ -178,7 +176,7 @@ Este tutorial muestra cómo agregar una referencia de archivo DLL a una página 
   
 1.  Copie el archivo XAML y los archivos de texto o marcado auxiliares archivos, a la **%USERPROFILE%\My documentos\Visual Studio 2015\StartPages\\**  carpeta.  
   
-2.  Si la página de inicio hace referencia a los tipos en ensamblados que no están instalados Visual Studio o los controles, copie los ensamblados y, a continuación, pegarlos en *carpeta de instalación de Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Si la página de inicio hace referencia a los tipos en ensamblados que no están instalados Visual Studio o los controles, copie los ensamblados y, a continuación, pegarlos en * carpeta de instalación de Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  En un símbolo del sistema de Visual Studio, escriba **devenv /rootsuffix Exp** para abrir una instancia experimental de Visual Studio.  
   

@@ -1,30 +1,26 @@
 ---
 title: ProjectTemplateLink (elemento) (plantillas de Visual Studio) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
 - <ProjectTemplateLink> element [Visual Studio Templates]
 - ProjectTemplateLink element [Visual Studio Templates]
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e614b2ec8ef404ef21e665ac5ae26dd73253f55
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 10ebc56e03a6582ab37126097db5f79ed9c5f2a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink (Elemento, Plantillas de Visual Studio)
 Especifica la ruta de acceso al archivo .vstemplate de un proyecto en una plantilla de varios proyectos.  
@@ -33,7 +29,7 @@ Especifica la ruta de acceso al archivo .vstemplate de un proyecto en una planti
  \<TemplateContent >  
  \<ProjectCollection >  
  \<ProjectTemplateLink >  
-O bien  
+-o bien-  
 \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  

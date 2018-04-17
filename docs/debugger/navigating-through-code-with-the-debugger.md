@@ -1,13 +1,10 @@
 ---
-title: "Navegar por el código con el depurador de Visual Studio | Documentos de Microsoft"
+title: Navegar por el código con el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 4e39c343531b7ce81c202e979117d3d2c7196cd7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Navegar por el código con el depurador de Visual Studio
 Familiarizarse con los comandos y métodos abreviados para navegar por el código en el depurador y que hará que sea más rápida y sencilla buscar y resolver problemas de la aplicación. Mientras que navegar por el código en el depurador, puede inspeccionar el estado de la aplicación o más información sobre su flujo de ejecución.  
@@ -35,7 +31,7 @@ Familiarizarse con los comandos y métodos abreviados para navegar por el códig
   
  También, en la flecha verde inicia el depurador (igual que **F5**).  
   
- ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Fundamentos&#95;iniciar&#95;depuración](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Algunas otras formas de iniciar la aplicación con el depurador adjunto incluyen **F11** ([ir al código](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([paso a través de código](#BKMK_Step_over_Step_out)), o mediante usar **ejecutar hasta el Cursor**.  Vea las demás secciones de este tema para obtener información acerca de qué hacer estas opciones.  
   
@@ -47,7 +43,7 @@ Familiarizarse con los comandos y métodos abreviados para navegar por el códig
   
  Mayoría de las características de depurador, como la presentación de valores de las variables en la ventana variables locales o la evaluación de expresiones en la ventana Inspección, está disponible solo mientras el depurador está en pausa (también denominada *el modo de interrupción*). Cuando el depurador está en pausa, el estado de la aplicación se suspende durante las funciones, variables, y los objetos se mantienen en la memoria. En el modo de interrupción, puede examinar las posiciones de los elementos y Estados para buscar infracciones o errores. Para algunos tipos de proyecto, también puede realizar ajustes en la aplicación mientras está en modo de interrupción. Para ver un vídeo que muestra estas características, vea [introducción con el depurador](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Ir al código, línea por línea  
+##  <a name="BKMK_Step_into__over__or_out_of_the_code"></a> Ir al código, línea por línea  
  Para detener en cada línea de código (cada instrucción) durante la depuración, utilice la **F11** método abreviado de teclado (o **depurar** > **paso a paso** en el menú).  
   
 > [!TIP]
@@ -75,25 +71,25 @@ Familiarizarse con los comandos y métodos abreviados para navegar por el códig
   
  Para realizar un seguimiento la pila de llamadas durante la ejecución paso a paso en funciones, vea [asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-##  <a name="BKMK_Step_over_Step_out"></a>Recorrer el código, omitiendo las funciones  
+##  <a name="BKMK_Step_over_Step_out"></a> Recorrer el código, omitiendo las funciones  
  Cuando se ejecuta código en el depurador, a menudo se dará cuenta de que no es necesario ver lo que ocurre en una función concreta (no le interesa, o sabe funciona, que el código de biblioteca probada). Utilice estos comandos para omitir a través del código (las funciones todavía se ejecutan, por supuesto, pero el depurador omite sobre ellos).  
   
 |Comando de teclado|Comando de menú|Descripción|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Paso a paso por procedimientos**|Si la línea actual contiene una llamada de función, **paso a paso por** se ejecuta el código, a continuación, suspende la ejecución en la primera línea de código después de que vuelva la función llamada.|  
-|**Shift+F11**|**Paso a paso para salir**|**Paso a paso fuera** continúa ejecutándose el código y suspende la ejecución cuando devuelve de la función actual (el depurador se salta a través de la función actual).|  
+|**MAYÚS + F11**|**Paso a paso para salir**|**Paso a paso fuera** continúa ejecutándose el código y suspende la ejecución cuando devuelve de la función actual (el depurador se salta a través de la función actual).|  
   
 > [!TIP]
 >  Si necesita buscar el punto de entrada en la aplicación, comience con **F10** o **F11**. Estos comandos suelen ser útiles al inspeccionar el estado de la aplicación o tratar de buscar más información acerca de su flujo de ejecución.  
   
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Ejecutar hasta una ubicación específica o función  
+##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Ejecutar hasta una ubicación específica o función  
  A menudo el método preferido de la depuración de código, estos métodos son útiles cuando se sabe exactamente qué código que desee inspeccionar, o al menos sabe donde desea iniciar la depuración.  
   
 -   **Establecer puntos de interrupción en el código**  
   
      Para establecer un punto de interrupción simple en el código, abra el archivo de código fuente en el editor de Visual Studio. Establezca el cursor en la línea de código donde desea suspender la ejecución y, a continuación, haga clic en la ventana de código para ver el menú contextual y elija **punto de interrupción > Insertar punto de interrupción** (o presione **F9**). El depurador suspende la derecha de la ejecución antes de ejecuta la línea.  
   
-     ![Set a breakpoint](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
+     ![Establecer un punto de interrupción](../debugger/media/dbg_basics_setbreakpoint.png "DBG_Basics_SetBreakpoint")  
   
      Los puntos de interrupción proporcionan un amplio conjunto de funcionalidades adicionales en Visual Studio, como los puntos de interrupción condicionales y de seguimiento. Vea [usar puntos de interrupción](../debugger/using-breakpoints.md).  
   
@@ -132,7 +128,7 @@ Familiarizarse con los comandos y métodos abreviados para navegar por el códig
   
      ![Elija el cuadro de diálogo de los puntos de interrupción](../debugger/media/dbg_execution_overloadedbreakpoints.png "DBG_Execution_OverloadedBreakpoints")  
   
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a>Mueva el puntero para cambiar el flujo de ejecución  
+##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Mueva el puntero para cambiar el flujo de ejecución  
  Cuando el depurador está pausado, puede mover el puntero de instrucción para establecer la siguiente instrucción de código que se ejecuta. Una flecha amarilla en el margen de una ventana de código fuente o de la ventana Desensamblado indica la ubicación de la siguiente instrucción que se debe ejecutar. Moviendo esta flecha, puede saltarse una parte del código o volver a una línea previamente ejecutada. Puede utilizar esto en situaciones como la omisión de una sección de código que contiene un error conocido.  
   
  ![Mueva el puntero](../debugger/media/dbg_basics_example3.gif "DBG_Basics_Example3")

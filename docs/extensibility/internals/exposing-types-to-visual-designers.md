@@ -1,30 +1,28 @@
 ---
-title: "Exponer tipos de diseñadores visuales | Documentos de Microsoft"
-ms.custom: 
+title: Exponer tipos de diseñadores visuales | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-types-to-visual-designers"></a>Exponer tipos de diseñadores visuales
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]debe tener acceso a definiciones de clase y tipo en tiempo de diseño para mostrar un diseñador visual. Las clases se cargan desde un conjunto predefinido de ensamblados que incluyen el conjunto completo de dependencia del proyecto actual (referencias y sus dependencias). También puede ser necesario a los diseñadores visuales para tener acceso a clases y tipos que se definen en archivos generados por herramientas personalizadas.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe tener acceso a definiciones de clase y tipo en tiempo de diseño para mostrar un diseñador visual. Las clases se cargan desde un conjunto predefinido de ensamblados que incluyen el conjunto completo de dependencia del proyecto actual (referencias y sus dependencias). También puede ser necesario a los diseñadores visuales para tener acceso a clases y tipos que se definen en archivos generados por herramientas personalizadas.  
   
  El [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] y [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] sistemas del proyecto proporcionan compatibilidad para tener acceso a las clases generadas y los tipos a través de portable temporal archivos ejecutables (PEs temporal). Cualquier archivo generado por una herramienta personalizada se puede compilar en un ensamblado temporal para que pueden cargar desde esos ensamblados y expone a los diseñadores de tipos. El resultado de cada herramienta personalizada se compila en un archivo PE temporal independiente, y el éxito o error de esta compilación temporal depende solo si no se puede compilar el archivo generado. Aunque no puede compilar un proyecto como un todo, archivos PE temporales individual pueden disponible para los diseñadores.  
   
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
  Herramientas personalizadas que aprovechan las ventajas del soporte de PE temporal deben seguir las reglas siguientes:  
   
--   `GeneratesDesignTimeSource`debe establecerse en 1 en el registro.  
+-   `GeneratesDesignTimeSource` debe establecerse en 1 en el registro.  
   
      Ninguna compilación del archivo ejecutable de programa tiene lugar sin esta configuración.  
   

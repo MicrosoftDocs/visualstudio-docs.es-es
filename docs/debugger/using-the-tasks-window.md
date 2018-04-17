@@ -2,12 +2,9 @@
 title: Usar la ventana tareas | Documentos de Microsoft
 ms.custom: ''
 ms.date: 03/18/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.paralleltasks
 dev_langs:
@@ -18,17 +15,16 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
-caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c78e17898a8f5f3d84b81c9605761919d7a2e
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: b16a8ea9a9cfc11f3029c88099d7dde479c5f1c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-tasks-window"></a>Usar la ventana Tareas
 El **tareas** ventana es similar a la **subprocesos** ventana, excepto que muestra información acerca de <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class), o [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) en lugar de cada subproceso. Como los subprocesos, las tareas representan operaciones asincrónicas que se pueden ejecutar simultáneamente; sin embargo, varias tareas se pueden ejecutar en el mismo subproceso. 
@@ -51,7 +47,7 @@ El **tareas** ventana es similar a la **subprocesos** ventana, excepto que muest
   
 |Nombre de columna|Descripción|  
 |-----------------|-----------------|  
-|**Flags**|Muestra las tareas que están marcadas y permiten marcar o desmarcar una tarea.|  
+|**Marcas**|Muestra las tareas que están marcadas y permiten marcar o desmarcar una tarea.|  
 |**Iconos**|Una flecha amarilla indica la tarea actual. La tarea actual es la tarea de nivel superior del subproceso actual.<br /><br /> Una flecha blanca indica la tarea de ruptura, es decir, la tarea en curso cuando se invocó el depurador.<br /><br /> El icono de pausa indica una tarea inmovilizada por el usuario. Puede inmovilizar y liberar una tarea haciendo clic con el botón secundario en ella en la lista.|  
 |**ID**|Un número proporcionado por sistema para la tarea. En código nativo, ésta es la dirección de la tarea.|  
 |**Estado**|El estado actual (programado, activo, bloqueado, interbloqueo, en espera o completado) de la tarea. Una tarea programada es la que aún no se ha ejecutado y, por consiguiente, no tiene pila de llamadas, subproceso asignado ni información relacionada.<br /><br /> Una tarea activa es la que estaba ejecutando código antes de la interrupción del depurador.<br /><br /> Una tarea en espera o bloqueada es aquella que se bloquea porque está esperando a ser señalice un evento, se libere un bloqueo o termine otra tarea.<br /><br /> Una tarea interbloqueada es una tarea en espera cuyo subproceso está en interbloqueo con otro subproceso.<br /><br /> Mantenga el mouse sobre la **estado** celda de una interbloqueo o en espera de una tarea obtener más información sobre el bloque. **Advertencia:** el **tareas** ventana notifica un interbloqueo solo para una tarea bloqueada que utilice una primitiva de sincronización que sea compatible con WCT Wait Chain Traversal (). Por ejemplo, para un interbloqueo <xref:System.Threading.Tasks.Task> objeto, que utiliza WCT, el depurador notifica **espera con interbloqueo**. Para una tarea interbloqueada administrada por el Runtime de simultaneidad, que no utiliza WCT, el depurador notifica **espera**. Para obtener más información sobre WCT, vea [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
@@ -61,10 +57,10 @@ El **tareas** ventana es similar a la **subprocesos** ventana, excepto que muest
 |**Ubicación**|La ubicación actual en la pila de llamadas de la tarea. Desplace el puntero del mouse sobre esta celda para ver la pila de llamadas completa de la tarea. Las tareas programadas no tienen un valor en esta columna.|  
 |**Task**|El método inicial y los argumentos que se pasaron a la tarea cuando se creó.|  
 |**AsyncState**|En el código administrado, el estado de la tarea. De forma predeterminada, se oculta esta columna. Para mostrar esta columna, abra el menú contextual de uno de los encabezados de columna. Elija **columnas**, **AsyncState**.|  
-|**Parent**|El identificador del subproceso que creó esta ventana. Si está en blanco, la tarea tiene ningún primario. Esto solo es aplicable a los programas administrados.|  
+|**Elemento primario**|El identificador del subproceso que creó esta ventana. Si está en blanco, la tarea tiene ningún primario. Esto solo es aplicable a los programas administrados.|  
 |**Asignación de subprocesos**|El identificador y nombre del subproceso en el que la tarea se está ejecutando.|  
 |**AppDomain**|En código administrado, el dominio de aplicación en el que la tarea se está ejecutando.|  
-|**task_group**|Para código nativo, la dirección de la [task_group](/cpp/parallel/concrt/reference/task-group-class.mdd) objeto que programó la tarea. En los agentes asincrónicos y las tareas ligeras, esta columna se establece en 0.|  
+|**task_group)**|Para código nativo, la dirección de la [task_group](/cpp/parallel/concrt/reference/task-group-class.mdd) objeto que programó la tarea. En los agentes asincrónicos y las tareas ligeras, esta columna se establece en 0.|  
 |**Process**|El identificador del proceso en el que se está ejecutando la tarea.|  
   
  Puede agregar columnas a la vista haciendo clic con el botón secundario en un encabezado de columna y seleccionando las columnas que desea. (Quite columnas borrando las selecciones). También puede reordenar las columnas arrastrándolas a izquierda o derecha. El menú contextual de la columna se muestra en la siguiente ilustración.  

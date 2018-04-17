@@ -1,29 +1,25 @@
 ---
 title: IEnumDebugPropertyInfo2::GetCount | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugPropertyInfo2::GetCount
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::GetCount
 ms.assetid: 9b0b3ce6-08cb-46fd-a6d9-92b36e60da19
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9afd28ef812e156cb67ab8a92ad2a70430a9ab84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0139fc37bdb2dbeaad26c35f9570aa5addff88f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugpropertyinfo2getcount"></a>IEnumDebugPropertyInfo2::GetCount
 Devuelve el número de elementos de la enumeración.  

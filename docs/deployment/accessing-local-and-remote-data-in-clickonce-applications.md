@@ -1,12 +1,10 @@
 ---
 title: Obtener acceso a datos locales y remotos en aplicaciones ClickOnce | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, data
 - data access, ClickOnce applications
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
-caps.latest.revision: "21"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d22180b0e48a875eaef3ab9e3b8ceac35b1fa6ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ffa0ebae820e5f7c62dc60e3d9bde06b206ed29b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Obtener acceso local o remoto a los datos en aplicaciones ClickOnce
 La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ofrece diversas opciones para leer y escribir datos, tanto local como remotamente.  

@@ -1,26 +1,24 @@
 ---
 title: Detectar los requisitos del sistema | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-caps.latest.revision: "50"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dc16c51b72ced37072c4ddf6d47bf347cf57c0f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5e98235bd224876b00714e1f71210ea69cb6faff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="detecting-system-requirements"></a>Detectar los requisitos del sistema
 Un VSPackage no funcionará a menos que esté instalado Visual Studio. Al utilizar Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el programa de instalación para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, como por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.  

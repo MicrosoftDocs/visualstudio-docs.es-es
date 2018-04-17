@@ -1,27 +1,25 @@
 ---
 title: En el SDK de Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fff6b720c11f3342a5894489186f57d397dd91b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 Esta sección proporciona información detallada acerca de las extensiones de Visual Studio, incluida la arquitectura de Visual Studio, componentes, servicios, esquemas, utilidades y similares.  
@@ -110,7 +108,7 @@ Vista generalizada de la arquitectura de Visual Studio
 ## <a name="visual-studio-services"></a>Servicios de Visual Studio  
  Un servicio proporciona un conjunto específico de interfaces de componentes consumir. Visual Studio proporciona un conjunto de servicios que puede usarse en los componentes, incluidas las extensiones. Por ejemplo, los servicios de Visual Studio permiten a las ventanas de herramientas pueden mostrarse u oculto de forma dinámica, habilitar el acceso a la Ayuda, barra de estado o eventos de interfaz de usuario. El editor de Visual Studio también proporciona servicios que pueden importarse por extensiones de editor. Para obtener más información, consulte [Using y proporcionar servicios](../../extensibility/using-and-providing-services.md).  
   
-## <a name="debugger"></a>Depurador  
+## <a name="debugger"></a>instantáneas  
  El depurador es la interfaz de usuario para los componentes de depuración específicos del idioma. Si ha creado un nuevo servicio de lenguaje, debe crear un motor de depuración específicos para enlazar en el depurador. Para obtener más información, consulte [extensibilidad de depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="source-control"></a>Control de código fuente  

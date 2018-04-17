@@ -1,29 +1,25 @@
 ---
-title: "Función SccSetOption | Documentos de Microsoft"
-ms.custom: 
+title: Función SccSetOption | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 916378ea594d14c9493535b3a28e72ea49ed4733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccsetoption-function"></a>SccSetOption (función)
 Esta función establece las opciones que controlan el comportamiento del complemento de control de código fuente.  
@@ -75,7 +71,7 @@ SCCRTN SccSetOption(
  Si `nOption` es `SCC_OPT_EVENTQUEUE`, el IDE es deshabilitar (o volver a habilitar) procesamiento en segundo plano. Por ejemplo, durante una compilación, el IDE podría indicar que el complemento para detener el procesamiento en inactividad de cualquier tipo de control de código fuente. Después de la compilación, lo que permitiría volver a procesamiento en segundo plano para mantener actualizada de la cola de eventos del complemento. Correspondiente a la `SCC_OPT_EVENTQUEUE` valo `nOption`, hay dos valores posibles para `dwVal`, es decir, `SCC_OPT_EQ_ENABLE` y `SCC_OPT_EQ_DISABLE`.  
   
 ## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- Si el valor de `nOption` es `SCC_OPT_HASCANCELMODE`, el IDE permite a los usuarios cancelar operaciones de larga duración. Establecer `dwVal` a `SCC_OPT_HCM_NO` (valor predeterminado) indica que el IDE no tiene ningún modo de cancelar. El complemento de control de código fuente debe ofrecer su propio botón Cancelar si desea que el usuario pueda cancelar. `SCC_OPT_HCM_YES`indica que el IDE proporciona la capacidad para cancelar una operación, por lo que no es necesario que el complemento de SCC mostrar su propio botón de cancelación. Si establece el IDE `dwVal` a `SCC_OPT_HCM_YES`, ya está preparado para responder a `SCC_MSG_STATUS` y `DOCANCEL` mensajes enviados a la `lpTextOutProc` función de devolución de llamada (vea [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Si no establece esta variable para el IDE, el complemento no debe enviar estos dos mensajes.  
+ Si el valor de `nOption` es `SCC_OPT_HASCANCELMODE`, el IDE permite a los usuarios cancelar operaciones de larga duración. Establecer `dwVal` a `SCC_OPT_HCM_NO` (valor predeterminado) indica que el IDE no tiene ningún modo de cancelar. El complemento de control de código fuente debe ofrecer su propio botón Cancelar si desea que el usuario pueda cancelar. `SCC_OPT_HCM_YES` indica que el IDE proporciona la capacidad para cancelar una operación, por lo que no es necesario que el complemento de SCC mostrar su propio botón de cancelación. Si establece el IDE `dwVal` a `SCC_OPT_HCM_YES`, ya está preparado para responder a `SCC_MSG_STATUS` y `DOCANCEL` mensajes enviados a la `lpTextOutProc` función de devolución de llamada (vea [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Si no establece esta variable para el IDE, el complemento no debe enviar estos dos mensajes.  
   
 ## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
  Si se establece nOption en `SCC_OPT_NAMECHANGEPFN`y tanto el origen de complemento de control y el IDE permiten, el complemento puede realmente cambiar el nombre o mover un archivo durante una operación de control de código fuente. El `dwVal` se establecerá en un puntero a función de tipo [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). Durante una operación de control de código fuente, el complemento puede llamar a esta función, pasando tres parámetros. Estas son el nombre antiguo (con la ruta de acceso completa) de un archivo, el nuevo nombre (con la ruta de acceso completa) de ese archivo y un puntero a la información que tenga importancia para el IDE. El IDE envía en este puntero del último mediante una llamada a `SccSetOption` con `nOption` establecido en `SCC_OPT_USERDATA`, con `dwVal` que apunta a los datos. Compatibilidad con esta función es opcional. Un enchufe VSSCI-que usa esta capacidad debe inicializar variables de datos de su puntero y del usuario de función para `NULL`, y no debe llamar a una función de cambio de nombre a menos que se le ha asignado uno. También debe prepararán para contener el valor que se especificó o cambian en respuesta a una nueva llamada a `SccSetOption`. Esto no se realizará en el medio de una operación de comando de control de código fuente, pero puede ocurrir entre los comandos.  

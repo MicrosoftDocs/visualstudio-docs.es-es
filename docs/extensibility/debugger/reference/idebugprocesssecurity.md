@@ -1,30 +1,26 @@
 ---
 title: IDebugProcessSecurity | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7acdb0f16182ebca904229d7620b80f5ec81d1de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity`se implementa mediante un proveedor de puerto para advertir al usuario que no es seguro asociarse al proceso.  
+`IDebugProcessSecurity` se implementa mediante un proveedor de puerto para advertir al usuario que no es seguro asociarse al proceso.  
   
 ## <a name="syntax"></a>Sintaxis  
   

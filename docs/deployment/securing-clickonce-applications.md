@@ -1,13 +1,10 @@
 ---
 title: Proteger las aplicaciones ClickOnce | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, security
 - deploying applications, ClickOnce security
 ms.assetid: a05b5f2f-d1f2-471a-8096-8b11f7554265
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: a7825ef0b664007fc119d7ed08066e8585ee59ac
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8f41fb12c8ec9a5a3cec0a802f7fc5b4216a39d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-clickonce-applications"></a>Proteger las aplicaciones ClickOnce
 Las aplicaciones[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] están sujetas a las restricciones en materia de seguridad de acceso del código de .NET Framework para ayudar a limitar el acceso del código a los recursos y operaciones protegidos. Por esta razón, es importante que comprenda las implicaciones de la seguridad de acceso del código para que pueda escribir las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en consecuencia. Las aplicaciones pueden utilizar Plena confianza o zonas parciales, como las zonas de Internet o intranet, para limitar el acceso.  
@@ -51,7 +47,7 @@ Las aplicaciones[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
   
  Incluso un permiso que no forma parte del conjunto de permisos predeterminado para la zona desde la que se implementa la aplicación hará que al usuario final se le solicite conceder el permiso en el momento de la instalación o actualización. Para evitar que el programa pida a los usuarios que concedan los permisos, el administrador del sistema puede especificar una directiva de implementación ClickOnce que defina un editor de aplicación concreto como origen de confianza. En aquellos equipos en los que se implemente esta directiva, los permisos se concederán automáticamente y no se preguntará al usuario.  
   
- Como desarrollador, es su responsabilidad asegurarse de que la aplicación se ejecute con los permisos adecuados. Si la aplicación solicita permisos fuera de una zona en tiempo de ejecución, es posible que se produzca una excepción de seguridad. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite depurar la aplicación en la zona de seguridad de destino. y proporciona ayuda para desarrollar aplicaciones seguras. Para obtener más información, consulta [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Como desarrollador, es su responsabilidad asegurarse de que la aplicación se ejecute con los permisos adecuados. Si la aplicación solicita permisos fuera de una zona en tiempo de ejecución, es posible que se produzca una excepción de seguridad. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite depurar la aplicación en la zona de seguridad de destino. y proporciona ayuda para desarrollar aplicaciones seguras. Para obtener más información, consulta [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Para obtener más información sobre la seguridad de acceso del código y ClickOnce, vea [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md).  
   

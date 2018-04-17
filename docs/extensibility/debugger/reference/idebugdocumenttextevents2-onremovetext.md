@@ -1,29 +1,25 @@
 ---
 title: IDebugDocumentTextEvents2::onRemoveText | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugDocumentTextEvents2::OnRemoveText
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onRemoveText
 ms.assetid: 1ebeabb2-52a1-4ccc-83cd-9ae7c3541783
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf12a1bac44755422719f7ab6d62f63380ee4f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fa02de7773ec40f4ee7caacd4d5e17638459c792
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 Notifica que el paquete de depuración que se ha quitado el texto del documento.  

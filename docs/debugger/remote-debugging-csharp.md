@@ -2,12 +2,9 @@
 title: Remoto depurar un proyecto C# o VB en Visual Studio | Documentos de Microsoft
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a7c6892eb43191c69608e66b05f8177777e3e006
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Un proyecto de C# o Visual Basic en Visual Studio la depuración remota
 Para depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente, instalar y ejecutar las herramientas remotas en el equipo donde se implementa la aplicación y, a continuación, configure el proyecto para conectarse al equipo remoto desde Visual Studio y, a continuación, ejecutar la aplicación.
@@ -50,14 +46,14 @@ El depurador remoto es compatible con Windows 7 y versiones más recientes (no d
 > [!TIP]
 > En algunos casos, puede ser más eficaz para ejecutar al depurador remoto desde un recurso compartido de archivos. Para obtener más información, consulte [ejecutar el depurador remoto desde un recurso compartido de archivos](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Configurar el depurador remoto
+## <a name="BKMK_setup"></a> Configurar el depurador remoto
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Si necesita agregar permisos para los usuarios adicionales, cambiar el modo de autenticación o número de puerto para el depurador remoto, consulte [configurar el depurador remoto](../debugger/remote-debugging.md#configure_msvsmon).
   
-## <a name="remote_csharp"></a>El proyecto de depuración remota
+## <a name="remote_csharp"></a> El proyecto de depuración remota
 El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visual Basic en un equipo remoto, pero se pueden depurar de manera remota como se describe a continuación. El siguiente procedimiento se da por supuesto que va a depurar en un equipo denominado **MJO DL**, tal y como se muestra en la ilustración siguiente.
   
 1.  Crear un proyecto WPF denominado **MyWpf**.  
@@ -97,7 +93,7 @@ El depurador no puede implementar aplicaciones de escritorio de Visual C# o Visu
   
 13. Si se le solicite, escriba las credenciales de red para conectarse al equipo remoto.  
   
-     Las credenciales requeridas varían según la configuración de seguridad de su red. Por ejemplo, en un equipo de dominio, puede especificar el nombre de dominio y la contraseña. En un equipo no es de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como  **MJO-DL\name@something.com** , junto con la contraseña correcta.
+     Las credenciales requeridas varían según la configuración de seguridad de su red. Por ejemplo, en un equipo de dominio, puede especificar el nombre de dominio y la contraseña. En un equipo no es de dominio, puede escribir el nombre del equipo y un nombre de cuenta de usuario válido, como **MJO-DL\name@something.com**, junto con la contraseña correcta.
 
      Debería ver que la ventana principal de la aplicación de WPF está abierta en el equipo remoto.
   

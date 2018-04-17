@@ -1,32 +1,30 @@
 ---
 title: Uso de RDT_ReadLock | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - RDT_ReadLock
 - visible
 - RDT_EditLock
 - invisible
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 31c13d9255442459c884379e83b619e1f73a1c2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fda2fbb4a4b03dff9d677d9c7581a4138d9fcf7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rdtreadlock-usage"></a>Uso de RDT_ReadLock
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>es una marca que proporciona la lógica para bloquear un documento en la ejecución documento tabla (RDT), que es la lista de todos los documentos que están abiertos en el IDE de Visual Studio. Este indicador determina cuando se abren documentos y, si un documento es visible en la interfaz de usuario o tuvo lugar invisible en memoria.
+<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> es una marca que proporciona la lógica para bloquear un documento en la ejecución documento tabla (RDT), que es la lista de todos los documentos que están abiertos en el IDE de Visual Studio. Este indicador determina cuando se abren documentos y, si un documento es visible en la interfaz de usuario o tuvo lugar invisible en memoria.
 
 Por lo general, usaría <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> cuando uno de los siguientes es verdadera:
 
@@ -40,7 +38,7 @@ Cuando un usuario abre un documento en la interfaz de usuario, un <xref:Microsof
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock y modificación del documento
 
-La marca anterior se ha mencionado indica que produzca la apertura del documento invisible su `RDT_EditLock` cuando el usuario abre el documento en un visible **DocumentWindow**. Cuando esto ocurre, se presentará al usuario un **guardar** preguntar cuándo visibles **DocumentWindow** está cerrado. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel`las implementaciones que usan el <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> servicio funciona inicialmente cuando sólo un `RDT_ReadLock` procede (es decir, cuando el documento se abre de manera invisible para analizar la información). Más adelante, si se debe modificar el documento, el bloqueo se actualiza a una débil **RDT_EditLock**. Si el usuario, a continuación, abre el documento en un visible **DocumentWindow**, `CodeModel`del débil `RDT_EditLock` se libera.
+La marca anterior se ha mencionado indica que produzca la apertura del documento invisible su `RDT_EditLock` cuando el usuario abre el documento en un visible **DocumentWindow**. Cuando esto ocurre, se presentará al usuario un **guardar** preguntar cuándo visibles **DocumentWindow** está cerrado. `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` las implementaciones que usan el <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> servicio funciona inicialmente cuando sólo un `RDT_ReadLock` procede (es decir, cuando el documento se abre de manera invisible para analizar la información). Más adelante, si se debe modificar el documento, el bloqueo se actualiza a una débil **RDT_EditLock**. Si el usuario, a continuación, abre el documento en un visible **DocumentWindow**, `CodeModel`del débil `RDT_EditLock` se libera.
 
 Si el usuario, a continuación, cierra el **DocumentWindow** y elige **No** cuando se le pida que guarde el documento abierto, la `CodeModel` implementación elimina toda la información en el documento y se vuelve a abrir el documento desde el disco de manera invisible la próxima vez que se necesita para el documento más información. El detalle de este comportamiento es una instancia en el que el usuario abre el **DocumentWindow** del documento abierto invisible, lo modifique, lo cierra y, a continuación, elige **n** cuando se le pida que guarde el documento. En este caso, si el documento tiene un `RDT_ReadLock`, realmente no se cierra el documento y el documento modificado permanecerá abierto invisible en la memoria, aunque el usuario eligió no guardar el documento.
 

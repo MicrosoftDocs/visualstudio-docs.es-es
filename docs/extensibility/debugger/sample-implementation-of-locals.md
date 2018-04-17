@@ -1,26 +1,24 @@
 ---
-title: "Ejemplo de implementación de variables locales | Documentos de Microsoft"
-ms.custom: 
+title: Ejemplo de implementación de variables locales | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3e8157d6ecede516ca1dcb2900cf081c11a2b790
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 56ac92989abe929884ac029e3b9c9c7dafad5fd9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-implementation-of-locals"></a>Implementación de ejemplo de variables locales
 > [!IMPORTANT]
@@ -30,17 +28,17 @@ ms.lasthandoff: 12/22/2017
   
 1.  Visual Studio llama el motor de depuración (Alemania) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) para obtener un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa todas las propiedades del marco de pila, incluidas las variables locales.  
   
-2.  `IDebugStackFrame2::GetDebugProperty`llamadas [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) para obtener un objeto que describe el método en el que se produjo el punto de interrupción. La DE proporciona un proveedor de símbolos ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), una dirección ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) y un enlazador ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
+2.  `IDebugStackFrame2::GetDebugProperty` llamadas [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) para obtener un objeto que describe el método en el que se produjo el punto de interrupción. La DE proporciona un proveedor de símbolos ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), una dirección ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) y un enlazador ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).  
   
-3.  `IDebugExpressionEvaluator::GetMethodProperty`llamadas [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) con proporcionado `IDebugAddress` objeto que se va a obtener un [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) que representa el método que contiene la dirección especificada.  
+3.  `IDebugExpressionEvaluator::GetMethodProperty` llamadas [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) con proporcionado `IDebugAddress` objeto que se va a obtener un [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) que representa el método que contiene la dirección especificada.  
   
 4.  El `IDebugContainerField` interfaz recibe consultas de la [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) interfaz. Es esta interfaz que proporciona acceso a las variables locales del método.  
   
-5.  `IDebugExpressionEvaluator::GetMethodProperty`crea una instancia de una clase (denominado `CFieldProperty` en el ejemplo) que implementa el `IDebugProperty2` interfaz para representar las variables locales del método. El `IDebugMethodField` objeto se coloca en esta `CFieldProperty` objeto junto con el `IDebugSymbolProvider`, `IDebugAddress` y `IDebugBinder` objetos.  
+5.  `IDebugExpressionEvaluator::GetMethodProperty` crea una instancia de una clase (denominado `CFieldProperty` en el ejemplo) que implementa el `IDebugProperty2` interfaz para representar las variables locales del método. El `IDebugMethodField` objeto se coloca en esta `CFieldProperty` objeto junto con el `IDebugSymbolProvider`, `IDebugAddress` y `IDebugBinder` objetos.  
   
 6.  Cuando el `CFieldProperty` se inicializa el objeto, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) se llama en el `IDebugMethodField` objeto que se va a obtener un [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) estructura que contiene toda la información que se pueden mostrar sobre el propio método .  
   
-7.  `IDebugExpressionEvaluator::GetMethodProperty`Devuelve el `CFieldProperty` objeto como un `IDebugProperty2` objeto.  
+7.  `IDebugExpressionEvaluator::GetMethodProperty` Devuelve el `CFieldProperty` objeto como un `IDebugProperty2` objeto.  
   
 8.  Llamadas visuales Studio [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) en el valor devuelto `IDebugProperty2` objeto con el filtro `guidFilterLocalsPlusArgs`. Esto devuelve un [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contiene variables locales del método. Esta enumeración se rellena mediante llamadas a [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) y [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).  
   

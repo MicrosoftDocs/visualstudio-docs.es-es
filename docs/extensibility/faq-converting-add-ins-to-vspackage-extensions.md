@@ -1,23 +1,21 @@
 ---
-title: "Preguntas más frecuentes: Conversión de complementos a las extensiones del VSPackage | Documentos de Microsoft"
-ms.custom: 
+title: 'Preguntas más frecuentes: Conversión de complementos a las extensiones del VSPackage | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Preguntas más frecuentes: Convertir complementos en extensiones de VSPackage
 Los complementos están desusados. Para realizar una nueva extensión de Visual Studio, debe crear una extensión VSIX. Aquí están las respuestas a algunas preguntas frecuentes acerca de cómo convertir un complemento de Visual Studio en una extensión VSIX.  
@@ -41,7 +39,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>¿Puedo convertir mi proyecto de complemento en un proyecto VSIX?  
  Un proyecto de complemento no se puede convertir directamente a un proyecto VSIX porque los mecanismos utilizados en proyectos VSIX no son los mismos que los de los proyectos de complemento. La plantilla de proyecto VSIX, además de las plantillas de elementos de proyecto derecha tienen una gran cantidad de código que facilita relativamente fáciles de desarrollar y la ejecución como una extensión VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a>¿Cómo empezar a desarrollar las extensiones VSIX?  
+##  <a name="BKMK_StartDeveloping"></a> ¿Cómo empezar a desarrollar las extensiones VSIX?  
  Le mostramos cómo realizar una extensión VSIX que tiene un comando de menú:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Para conseguir una extensión VSIX tiene un comando de menú  
@@ -56,7 +54,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
   
      En el **herramientas** menú (en la instancia experimental) debería ver un botón denominado **nombre de comando mi**. Al elegir este botón, debería aparecer un mensaje: **en TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a>¿Cómo se puede ejecutar el código del complemento en un paquete VSPackage?  
+##  <a name="BKMK_RunAddin"></a> ¿Cómo se puede ejecutar el código del complemento en un paquete VSPackage?  
  Normalmente, el código de complemento normalmente se ejecuta de una de dos maneras:  
   
 -   Se desencadena mediante un comando de menú (el código está en el método `IDTCommandTarget.Exec`)  

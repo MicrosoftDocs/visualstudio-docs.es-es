@@ -1,12 +1,10 @@
 ---
-title: "Seguridad e implementación ClickOnce | Documentos de Microsoft"
-ms.custom: 
+title: Seguridad e implementación ClickOnce | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +15,21 @@ helpviewer_keywords:
 - ClickOnce deployment
 - publishing, ClickOnce
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
-caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 24ebab9776c6cb0b829e1b79cb089ef6b826f726
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]es una tecnología de implementación que le permite crear auto-actualización aplicaciones basadas en Windows que se pueden instalar y ejecutar con interacción mínima del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con tecnología ClickOnce si ha desarrollado los proyectos con Visual Basic y Visual C#. Para obtener información sobre cómo implementar aplicaciones de Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una tecnología de implementación que le permite crear auto-actualización aplicaciones basadas en Windows que se pueden instalar y ejecutar con interacción mínima del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con tecnología ClickOnce si ha desarrollado los proyectos con Visual Basic y Visual C#. Para obtener información sobre cómo implementar aplicaciones de Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]la implementación supera tres problemas importantes de implementación:  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la implementación supera tres problemas importantes de implementación:  
   
 -   **Dificultades para actualizar las aplicaciones.** Con la implementación de Microsoft Windows Installer, siempre que se actualiza una aplicación, el usuario puede instalar una actualización, un archivo msp y aplicarlo al producto instalado; con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, puede proporcionar actualizaciones automáticamente. Se descargan solo aquellas partes de la aplicación que han cambiado y, a continuación, se vuelve a instalar la aplicación completa y actualizada de una nueva carpeta en paralelo.  
   
@@ -44,9 +42,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="what-is-a-clickonce-application"></a>¿Qué es una aplicación ClickOnce?  
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es cualquier Windows Presentation Foundation (XBAP), Windows Forms (.exe), aplicación de consola (.exe) o solución de Office (.dll) publicada mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología. Puede publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación de tres maneras diferentes: desde una página Web, desde un recurso compartido de red o desde medios, como un CD-ROM. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se puede instalar en el equipo de un usuario final y ejecutarse localmente incluso cuando el equipo está sin conexión o se puede ejecutar en un modo solo en línea sin instalar nada de manera permanente en el equipo del usuario final. Para más información, consulte el artículo [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]las aplicaciones se pueden actualizar automáticamente; puede comprobar si hay nuevas versiones cuando estén disponibles y reemplazar automáticamente los archivos actualizados. El desarrollador puede especificar el comportamiento de actualización; un administrador de red puede controlar estrategias de actualización, por ejemplo, marcando una actualización como obligatoria. Las actualizaciones también se revierte a una versión anterior que el usuario final o un administrador. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones se pueden actualizar automáticamente; puede comprobar si hay nuevas versiones cuando estén disponibles y reemplazar automáticamente los archivos actualizados. El desarrollador puede especificar el comportamiento de actualización; un administrador de red puede controlar estrategias de actualización, por ejemplo, marcando una actualización como obligatoria. Las actualizaciones también se revierte a una versión anterior que el usuario final o un administrador. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
- Dado que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones están aisladas, instalar o ejecutar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación no puede interrumpir las aplicaciones existentes. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]las aplicaciones son independientes; cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se instala para y ejecutar desde un seguro caché por usuario, según la aplicación. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplicaciones que se ejecutan en las zonas de seguridad de Internet o Intranet. Si es necesario, la aplicación puede solicitar permisos de seguridad con privilegios elevados. Para más información, consulte [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md).  
+ Dado que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones están aisladas, instalar o ejecutar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación no puede interrumpir las aplicaciones existentes. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones son independientes; cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se instala para y ejecutar desde un seguro caché por usuario, según la aplicación. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones que se ejecutan en las zonas de seguridad de Internet o Intranet. Si es necesario, la aplicación puede solicitar permisos de seguridad con privilegios elevados. Para más información, consulte [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 ## <a name="how-clickonce-security-works"></a>Cómo funciona la seguridad de ClickOnce  
  El núcleo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] seguridad se basa en certificados, directivas de seguridad de acceso de código y el aviso de confianza de ClickOnce.  
@@ -87,7 +85,7 @@ ms.lasthandoff: 12/22/2017
 > [!NOTE]
 >  El **Asistente para publicación** en Visual Studio puede usarse para realizar estos pasos.  
   
- Además de la ubicación de implementación, el manifiesto de implementación también contiene una ubicación de actualización (una página Web o una red de recurso compartido de archivos) donde se comprueba si hay versiones actualizadas. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]**Publicar** propiedades se utilizan para especificar cuándo y con qué frecuencia debe buscar actualizaciones la aplicación. Comportamiento de actualización se puede especificar en el manifiesto de implementación o se puede presentar como opciones del usuario en la interfaz de usuario de la aplicación por medio de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API. Además, **publicar** propiedades se pueden emplear para realizar las actualizaciones obligatorias o revertir a una versión anterior. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+ Además de la ubicación de implementación, el manifiesto de implementación también contiene una ubicación de actualización (una página Web o una red de recurso compartido de archivos) donde se comprueba si hay versiones actualizadas. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Publicar** propiedades se utilizan para especificar cuándo y con qué frecuencia debe buscar actualizaciones la aplicación. Comportamiento de actualización se puede especificar en el manifiesto de implementación o se puede presentar como opciones del usuario en la interfaz de usuario de la aplicación por medio de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API. Además, **publicar** propiedades se pueden emplear para realizar las actualizaciones obligatorias o revertir a una versión anterior. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 ### <a name="third-party-installers"></a>Instaladores de otros fabricantes  
  Puede personalizar el instalador de ClickOnce para instalar componentes de terceros junto con la aplicación. Debe tener el paquete redistribuible (archivo .exe o .msi) y describir el paquete con un manifiesto de producto independiente del idioma y un manifiesto del paquete de idioma específico. Para obtener más información, consulte [crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md).  

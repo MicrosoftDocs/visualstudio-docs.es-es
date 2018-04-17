@@ -1,12 +1,10 @@
 ---
 title: Pseudovariables | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], pseudovariables
 - pseudovariables
 ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
-caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f2bde32d67bb2e106d058c5a9e62801940d3df25
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fe5fb5e2b7ba45f36b5388ec9a1555c07173ac67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables que en el depurador de Visual Studio
 Pseudovariables son términos que se usan para mostrar determinada información en una ventana de variables o **Inspección rápida** cuadro de diálogo. Las pseudovariables se pueden especificar de la misma manera que las variables normales. No obstante, las pseudovariables no son variables ni corresponden a nombres de variable del programa.  
@@ -49,10 +47,10 @@ $handles
 |`$env`|Muestra el bloque de entorno en el visor de cadenas.|  
 |`$cmdline`|Muestra la cadena de la línea de comandos que inició el programa.|  
 |`$pid`|Muestra el identificador del proceso.|  
-|`$`*registername*<br /><br /> o<br /><br /> `@`*registername*|Muestra el contenido del registro *registername*.<br /><br /> Normalmente, puede mostrar el contenido del registro con solo escribir su nombre. La única vez que necesita utilizar esta sintaxis es cuando el nombre del registro sobrecarga un nombre de variable. Si el nombre del registro es igual que un nombre de variable en el ámbito actual, el depurador lo interpreta como un nombre de variable. Es decir, cuando `$` *registername* o `@` *registername* es muy práctico.|  
+|`$` *nombre de registro*<br /><br /> o<br /><br /> `@` *nombre de registro*|Muestra el contenido del registro *registername*.<br /><br /> Normalmente, puede mostrar el contenido del registro con solo escribir su nombre. La única vez que necesita utilizar esta sintaxis es cuando el nombre del registro sobrecarga un nombre de variable. Si el nombre del registro es igual que un nombre de variable en el ámbito actual, el depurador lo interpreta como un nombre de variable. Es decir, cuando `$` *registername* o `@` *registername* es muy práctico.|  
 |`$clk`|Muestra la hora en ciclos de reloj.|  
 |`$user`|Muestra una estructura con información de la cuenta que ejecuta la aplicación. Por razones de seguridad, no se muestra la información de contraseña.|  
-|`$exceptionstack`|Muestra el seguimiento de pila de excepción actual de Windows Runtime. `$ exceptionstack`solo funciona en aplicaciones UWP. No se admite `$ exceptionstack` para excepciones de C++ y SHE.|  
+|`$exceptionstack`|Muestra el seguimiento de pila de excepción actual de Windows Runtime. `$ exceptionstack` solo funciona en aplicaciones UWP. No se admite `$ exceptionstack` para excepciones de C++ y SHE.|  
 |`$ReturnValue`|Muestra el valor devuelto de un método de .NET Framework.|  
   
  En C# y Visual Basic, puede utilizar las pseudovariables que se muestran en esta tabla:  

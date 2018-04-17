@@ -1,12 +1,10 @@
 ---
-title: "Página de propiedades de configuración para los proyectos Web | Documentos de Microsoft"
-ms.custom: 
+title: Página de propiedades de configuración para los proyectos Web | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - debugging Web applications, project settings
 - debug configurations, Web projects
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4e58541c5ab0c7a38773740343349880aa5297e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2346b1fc78caebc62a2f9465640d6d91ebee74b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configuración de páginas de propiedades para proyectos web
 Puede cambiar los valores de propiedad para una configuración de depuración de sitio web en el **páginas de propiedades** cuadro de diálogo, como se describe en [configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). Las siguientes tablas muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** cuadro de diálogo.  

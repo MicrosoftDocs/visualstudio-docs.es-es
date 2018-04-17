@@ -1,27 +1,23 @@
 ---
-title: "Cómo: desencadenar eventos cuando el Editor pierde el foco | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: desencadenar eventos cuando el Editor pierde el foco | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - fire events on losing focus
 ms.assetid: 64d40695-6917-468a-8037-a253453ac159
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb20adf3950e87c37e2ca64bcd78913839f89d01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bbdcf30443bc548fd8d182db301cbc7119d8ceae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Cómo: desencadenar eventos cuando el Editor pierde el foco
 A veces es necesario saber cuándo un editor pierde el foco en el marco de ventana. Por ejemplo, deberá extraer el código desde una ventana de código después de que el editor ya no se centra en ella. El procedimiento siguiente proporciona los pasos que deben seguirse para recibir una notificación del editor pierde el foco.  

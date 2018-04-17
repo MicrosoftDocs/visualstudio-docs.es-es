@@ -1,27 +1,23 @@
 ---
-title: "Lista de eventos gráficos | Documentos de Microsoft"
-ms.custom: 
+title: Lista de eventos gráficos | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 244f7dd8c89eb1dcb15b81bcb20c0db9cb6cf617
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-list"></a>Lista de eventos gráficos
 Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio para explorar los eventos Direct3D que se registraron mientras se presentaba un fotograma de su juego o aplicación.  
@@ -75,8 +71,8 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 |----------|-----------------------|  
 |(sin icono)|Evento general<br /> Cualquier evento que no sea un evento definido por el usuario, un grupo de eventos definido por el usuario o un evento de dibujo.|  
 |![El icono de evento de dibujo](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Evento de dibujo<br /> Marca un evento de dibujo que ha ocurrido durante el fotograma capturado.|  
-|![El usuario &#45; icono de marcador de evento definido](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupo de eventos definido por el usuario<br /> Eventos relacionados con grupos, definidos por la aplicación.|  
-|![El usuario &#45; icono de marcador de evento definido](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcador de eventos definido por el usuario<br /> Marca una ubicación específica, definida por la aplicación.|  
+|![El usuario&#45;definido por el icono de marcador de evento](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Grupo de eventos definido por el usuario<br /> Eventos relacionados con grupos, definidos por la aplicación.|  
+|![El usuario&#45;definido por el icono de marcador de evento](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marcador de eventos definido por el usuario<br /> Marca una ubicación específica, definida por la aplicación.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Marcar eventos definidos por el usuario en la aplicación  
  Los eventos definidos por el usuario son específicos de la aplicación. Puede utilizarlos para correlacionar eventos importantes que ocurren en su aplicación con eventos de la Lista de eventos gráficos. Por ejemplo, puede crear grupos de eventos definidos por el usuario para organizar eventos relacionados, como los que presentan la interfaz de usuario, en grupos o jerarquías, para poder examinar la lista de eventos más fácilmente o crear marcadores cuando se dibujan ciertos tipos de objetos y así poder encontrar fácilmente sus eventos de gráficos en la lista de eventos.  
@@ -106,7 +102,7 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##Recurso historial Visual Studio 2017 y versiones posteriores contienen la **recursos historial** ventana.  Seleccione el icono de inspección ![icono inspección](media/gfx_watch.png) junto a una entrada en el **lista de eventos** ventana se abrirá el **historial de recursos** ventana que se muestra a continuación:
+## Recurso historial Visual Studio 2017 y versiones posteriores contienen la **recursos historial** ventana.  Seleccione el icono de inspección ![icono inspección](media/gfx_watch.png) junto a una entrada en el **lista de eventos** ventana se abrirá el **historial de recursos** ventana que se muestra a continuación:
 
 ![Historial de recursos](media/gfx_diag_resource_history.png)
 

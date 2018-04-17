@@ -1,28 +1,25 @@
 ---
 title: Comandos de consola de JavaScript en Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: df4055790cf715b3a521b6ccc09d5c6920a47136
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola de JavaScript en Visual Studio
   
@@ -89,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examinar objetos en la ventana Consola JavaScript  
  Puedes interactuar con cualquier objeto que esté dentro del ámbito cuando utilices la ventana Consola JavaScript. Para inspeccionar un objeto que esté fuera del ámbito en la ventana de la consola, utiliza `console.log` , `console.dir`u otros comandos del código. También puede interactuar con el objeto desde la ventana de la consola mientras esté dentro del ámbito si establece un punto de interrupción en el código (**Punto de interrupción** > **Insert Punto de interrupción**).  
   
-##  <a name="ConsoleLog"></a>Aplicar formato al resultado de console.log  
+##  <a name="ConsoleLog"></a> Aplicar formato al resultado de console.log  
  Si pasas varios argumentos a `console.log`, la consola los tratará como una matriz y concatenará el resultado.  
   
 ```javascript  

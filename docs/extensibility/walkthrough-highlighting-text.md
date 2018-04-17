@@ -1,27 +1,23 @@
 ---
 title: 'Tutorial: Resaltar texto | Documentos de Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b54dabbe00b0df920655b595cab32ed21126415b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 90bf22bfe65b1120f5cc149d95eea25357b8ffa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-highlighting-text"></a>Tutorial: Resaltar texto
 Puede agregar distintos efectos visuales en el editor mediante la creación de componentes de Managed Extensibility Framework (MEF). Este tutorial muestra cómo resaltar todas las apariciones de la palabra actual en un archivo de texto. Si una palabra que aparezca en más de una vez en un archivo de texto y coloca el símbolo de intercalación de una ocurrencia, se resaltan todas las apariciones.  

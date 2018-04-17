@@ -1,26 +1,24 @@
 ---
-title: "Servicios relacionados e Interfaces (VSPackage de Control de código fuente) | Documentos de Microsoft"
-ms.custom: 
+title: Servicios relacionados e Interfaces (VSPackage de Control de código fuente) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1f9e8e90fdda61524a9af107df452bc2b13cd90c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Servicios relacionados e Interfaces (VSPackage de Control de código fuente)
 Esta sección enumeran todos el origen controlar interfaces relacionadas con el paquete de VS en el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. El control de código fuente VSPackage implementa algunas de estas interfaces y otros usa para realizar las tareas de control de código fuente.  

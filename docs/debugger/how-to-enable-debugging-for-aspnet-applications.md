@@ -1,12 +1,10 @@
 ---
-title: "Habilitar la depuración de aplicaciones ASP.NET | Documentos de Microsoft"
+title: Habilitar la depuración de aplicaciones ASP.NET | Documentos de Microsoft
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Web.config configuration file, debug mode
 - debugging [Visual Studio], ASP.NET
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
-caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Depurar aplicaciones de ASP.NET en Visual Studio
 
@@ -38,7 +36,7 @@ Para seguir las instrucciones de este tema, debe:
 
 - IIS Express, que se incluye de forma predeterminada en Visual Studio 2012 y versiones posteriores
 
-    O bien
+    -o bien-
 
 - Una variable local IIS web server (versión 8.0 o posterior) que está configurado correctamente y se puede ejecutar la aplicación de ASP.NET sin errores.
 
@@ -142,7 +140,7 @@ Si está utilizando el servidor web IIS local, siga estos pasos.
     > [!NOTE]
     > Si está utilizando Windows Server 2008 R2, instale ASP.NET 4 en lugar de utilizar este comando:
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Abra la **de Internet Information Services (IIS) Manager**. (En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic en el servidor y seleccione **Internet Information Services (IIS) Manager**.)
 

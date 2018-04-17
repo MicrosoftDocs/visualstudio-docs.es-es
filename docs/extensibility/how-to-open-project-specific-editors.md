@@ -1,27 +1,25 @@
 ---
-title: "Cómo: abrir editores específica del proyecto | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: abrir editores específica del proyecto | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ae2e634d36c13632619d01cc97d5726dc5576819
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-open-project-specific-editors"></a>Cómo: abrir editores específica del proyecto
 Si un archivo de elemento que se está abriendo un proyecto intrínsecamente está enlazado al editor determinado para ese proyecto, el proyecto debe abrir el archivo con un editor específico del proyecto. El archivo no se puede delegar hasta del mecanismo del IDE para la selección de un editor. Por ejemplo, en lugar de utilizar un editor de mapa de bits estándar, puede usar esta opción de editor específico del proyecto para especificar un editor de mapa de bits específico que reconoce la información en el archivo que es único para el proyecto.  

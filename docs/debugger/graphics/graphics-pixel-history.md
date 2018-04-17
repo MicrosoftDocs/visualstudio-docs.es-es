@@ -1,27 +1,23 @@
 ---
-title: "Historial de píxeles | Documentos de Microsoft"
-ms.custom: 
+title: Historial de píxeles | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966f15e0aac212207e0f6afe96dececc8950aab2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 73e51108c4280d6e3ebf69000c9863610e4a25da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-pixel-history"></a>Historial de píxeles de gráfico
 La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visual Studio ayuda a comprender cómo afectan los eventos de Direct3D que se producen durante un fotograma del juego o la aplicación a un píxel concreto.  
@@ -41,7 +37,7 @@ La ventana Historial de píxeles de gráfico del Analizador de gráficos de Visu
   
  Puede expandir cada primitiva para examinar cómo se combinó la salida del sombreador de píxeles con el color de píxel existente para producir el color resultante. Desde aquí, también puede examinar o depurar el código del sombreador de píxeles asociado a la primitiva, y puede expandir aún más el nodo del sombreador de vértices para examinar la entrada del sombreador de vértices.  
   
-###  <a name="exclusion"></a>Exclusión de primitivas  
+###  <a name="exclusion"></a> Exclusión de primitivas  
  Si una primitiva se excluye de modo que no afecte al color del píxel, la exclusión puede producirse por varios motivos. Cada motivo está representado por un icono de los que se describen en esta tabla:  
   
 |Iconos|Motivo de exclusión|  

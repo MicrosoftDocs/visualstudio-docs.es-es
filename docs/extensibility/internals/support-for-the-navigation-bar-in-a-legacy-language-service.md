@@ -1,26 +1,24 @@
 ---
-title: "Compatibilidad con la barra de navegación en un servicio de lenguaje heredado | Documentos de Microsoft"
-ms.custom: 
+title: Compatibilidad con la barra de navegación en un servicio de lenguaje heredado | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d4dd17f3bb1bd50a97b24b42cf40edc27bf51db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Compatibilidad con la barra de navegación en un servicio de lenguaje heredado
 La barra de navegación en la parte superior de la vista del editor muestra los tipos y miembros en el archivo. Los tipos se muestran en la lista desplegable izquierda y los miembros se muestran en el derecho de la lista desplegable. Cuando el usuario selecciona un tipo, el símbolo de intercalación se coloca en la primera línea del tipo. Cuando el usuario selecciona un miembro, el símbolo de intercalación se coloca en la definición del miembro. Los cuadros de lista desplegable se actualizan para reflejar la ubicación actual del símbolo de intercalación.  

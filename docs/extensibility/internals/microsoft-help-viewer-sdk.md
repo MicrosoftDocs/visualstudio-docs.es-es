@@ -1,23 +1,21 @@
 ---
 title: Visor de Ayuda de Microsoft SDK | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e3ddc23ab56df017ef0a37c56cd5b0a81ee33a07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 Este artículo contiene las siguientes tareas para que los integradores de Visor de Ayuda de Visual Studio:  
@@ -134,17 +132,17 @@ Sección de metadatos de ejemplo:
   
 El cuerpo (sin incluir el encabezado y pie de página) del tema contendrá vínculos de página, una sección de la nota, un área contraíble, un fragmento de código y una sección de texto específico del idioma.  Vea la sección personalización de marca para obtener información acerca de esas áreas del tema presentado.  
   
-1.  Agregar una etiqueta de título de tema:`<div class="title">Contoso Topic 4</div>`  
+1.  Agregar una etiqueta de título de tema:  `<div class="title">Contoso Topic 4</div>`  
   
-2.  Agregue una sección de notas:`<div class="alert"> add your table tag and text </div>`  
+2.  Agregue una sección de notas: `<div class="alert"> add your table tag and text </div>`  
   
-3.  Agregar un área contraíble:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`  
+3.  Agregar un área contraíble:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`  
   
-4.  Agregue un fragmento de código:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`  
+4.  Agregue un fragmento de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`  
   
 5.  Agregar texto específico del lenguaje de código: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` tenga en cuenta que devLangnu = permite especificar otros lenguajes. Por ejemplo, devLangnu = "Fortran" mostrará Fortran cuando el fragmento de código DisplayLanguage = Fortran  
   
-6.  Agregar vínculos de página:`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`  
+6.  Agregar vínculos de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`  
   
 > [!NOTE]
 >  Nota: para no admite nuevas "idioma para mostrar" (ejemplo, F #, Cobol, Fortran) código en colores en el fragmento de código será monocromo.  
@@ -354,20 +352,20 @@ En la siguiente tabla, cualquier cadena que aparece entre corchetes es un marcad
   
 |Propiedad (representación HTML)|Descripción|  
 |--------------------------------------|-----------------|  
-|\<contenido de meta name="Microsoft.Help.Locale" = "[lenguaje de código]" / >|Establece una configuración regional de este tema. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez y debe insertarse por encima de las otras etiquetas de Microsoft Help. Si no se usa esta etiqueta, el texto del cuerpo del tema está indizado mediante el uso de separador de palabras está asociado a la configuración regional del producto, si se especifica; en caso contrario, la en-us se utiliza el separador de palabras. Esta etiqueta se ajusta al ISOC RFC 4646. Para asegurarse de que Microsoft Help funciona correctamente, utilice esta propiedad en lugar del atributo de idioma general.|  
-|\<contenido de meta name="Microsoft.Help.TopicLocale" = "[lenguaje de código]" / >|Establece una configuración regional de este tema cuando también se usan otras configuraciones regionales. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez. Use esta etiqueta cuando el catálogo de contenido en más de un idioma. Varios temas en un catálogo pueden tener el mismo Id., pero cada una debe especificar un TopicLocale único. El tema que especifica un TopicLocale que coincida con la configuración regional del catálogo es el tema que se muestra en la tabla de contenido. Sin embargo, todas las versiones de idioma del tema se muestran en los resultados de búsqueda.|  
-|\<Título > [Title] \< /title >|Especifica el título de este tema. Esta etiqueta es necesaria y debe utilizarse solo una vez en un tema. Si el cuerpo del tema no contiene un título \<div > sección, este título se muestra en el tema y en la tabla de contenido.|  
-|\<nombre de metadatos = "Microsoft.Help.Keywords" contenido = "[aKeywordPhrase]" / >|Especifica el texto de un vínculo que se muestra en el panel del índice del Visor de ayuda. Cuando se hace clic en el vínculo, se muestra el tema. Puede especificar varias palabras clave de índice para un tema, o si no desea que los vínculos a este tema para que aparezca en el índice, puede omitir esta etiqueta. Palabras clave "K" de versiones anteriores de ayuda se puede convertir a esta propiedad.|  
-|\<contenido de meta name="Microsoft.Help.Id" = "[TopicID]" / >|Establece el identificador de este tema. Esta etiqueta es necesaria y debe utilizarse solo una vez en un tema. El identificador debe ser único entre los temas en el catálogo que tienen la misma configuración regional. En otro tema, puede crear un vínculo a este tema mediante el uso de este identificador.|  
-|\<meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Especifica la palabra clave de F1 de este tema. Puede especificar varias palabras clave de F1 para un tema o puede omitir esta etiqueta si no desea que este tema se mostrará al usuario de una aplicación presiona la tecla F1. Normalmente, se especifica una sola palabra clave de F1 para un tema. Palabras clave de "F" de versiones anteriores de ayuda se puede convertir a esta propiedad.|  
-|\<nombre de metadatos = "Descripción" content = "[descripción del tema]" / >|Proporciona un breve resumen del contenido de este tema. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez. Se tiene acceso a esta propiedad directamente en la biblioteca de consulta; no se almacena en el archivo de índice.|  
+|\< contenido de meta name="Microsoft.Help.Locale" = "[lenguaje de código]" / >|Establece una configuración regional de este tema. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez y debe insertarse por encima de las otras etiquetas de Microsoft Help. Si no se usa esta etiqueta, el texto del cuerpo del tema está indizado mediante el uso de separador de palabras está asociado a la configuración regional del producto, si se especifica; en caso contrario, la en-us se utiliza el separador de palabras. Esta etiqueta se ajusta al ISOC RFC 4646. Para asegurarse de que Microsoft Help funciona correctamente, utilice esta propiedad en lugar del atributo de idioma general.|  
+|\< contenido de meta name="Microsoft.Help.TopicLocale" = "[lenguaje de código]" / >|Establece una configuración regional de este tema cuando también se usan otras configuraciones regionales. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez. Use esta etiqueta cuando el catálogo de contenido en más de un idioma. Varios temas en un catálogo pueden tener el mismo Id., pero cada una debe especificar un TopicLocale único. El tema que especifica un TopicLocale que coincida con la configuración regional del catálogo es el tema que se muestra en la tabla de contenido. Sin embargo, todas las versiones de idioma del tema se muestran en los resultados de búsqueda.|  
+|\< Título > [Title] \< /title >|Especifica el título de este tema. Esta etiqueta es necesaria y debe utilizarse solo una vez en un tema. Si el cuerpo del tema no contiene un título \<div > sección, este título se muestra en el tema y en la tabla de contenido.|  
+|\< nombre de metadatos = "Microsoft.Help.Keywords" contenido = "[aKeywordPhrase]" / >|Especifica el texto de un vínculo que se muestra en el panel del índice del Visor de ayuda. Cuando se hace clic en el vínculo, se muestra el tema. Puede especificar varias palabras clave de índice para un tema, o si no desea que los vínculos a este tema para que aparezca en el índice, puede omitir esta etiqueta. Palabras clave "K" de versiones anteriores de ayuda se puede convertir a esta propiedad.|  
+|\< contenido de meta name="Microsoft.Help.Id" = "[TopicID]" / >|Establece el identificador de este tema. Esta etiqueta es necesaria y debe utilizarse solo una vez en un tema. El identificador debe ser único entre los temas en el catálogo que tienen la misma configuración regional. En otro tema, puede crear un vínculo a este tema mediante el uso de este identificador.|  
+|\< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Especifica la palabra clave de F1 de este tema. Puede especificar varias palabras clave de F1 para un tema o puede omitir esta etiqueta si no desea que este tema se mostrará al usuario de una aplicación presiona la tecla F1. Normalmente, se especifica una sola palabra clave de F1 para un tema. Palabras clave de "F" de versiones anteriores de ayuda se puede convertir a esta propiedad.|  
+|\< nombre de metadatos = "Descripción" content = "[descripción del tema]" / >|Proporciona un breve resumen del contenido de este tema. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez. Se tiene acceso a esta propiedad directamente en la biblioteca de consulta; no se almacena en el archivo de índice.|  
  contenido de meta name="Microsoft.Help.TocParent" = "[parent_Id]" / >|Especifica el tema primario de este tema en la tabla de contenido. Esta etiqueta es necesaria y debe utilizarse solo una vez en un tema. El valor es el Microsoft.Help.Id del elemento primario. Un tema puede tener una sola ubicación en la tabla de contenido. "-1" se considera que el Id. del tema de la raíz de la tabla de contenido. En [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], que la página es la página inicial del Visor de ayuda. Se trata de la misma razón que agregamos específicamente TocParent =-1 para algunos de los temas para asegurarse de que aparecen en la parte superior nivel. La página de inicio del Visor de ayuda es una página del sistema y por lo que no son reemplazables. Si un VSP intenta agregar una página con un Id. de -1, puede obtener agregado para el conjunto de contenido, pero el Visor de ayuda siempre tendrá que utilizar la página del sistema - página principal del Visor de ayuda|  
-|\<contenido de meta name="Microsoft.Help.TocOrder" = "[entero]" / >|Especifica que en la tabla de contenido en este tema aparece como relativo para sus temas del mismo nivel. Esta etiqueta es necesaria y debe utilizarse solo una vez en un tema. El valor es un entero. Un tema que especifica un valor menor entero aparece por encima de un tema que especifica un número entero mayor importancia.|  
-|\<contenido de meta name="Microsoft.Help.Product" = "[product code]" / >|Especifica el producto que se describen en este tema. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez. Esta información también se puede proporcionar como un parámetro que se pasa al indizador de ayuda.|  
-|\<contenido de meta name="Microsoft.Help.ProductVersion" = "[número de versión]" / >|Especifica la versión del producto que se describen en este tema. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez. Esta información también se puede proporcionar como un parámetro que se pasa al indizador de ayuda.|  
-|\<contenido de meta name="Microsoft.Help.Category" = "[cadena]" / >|Se utiliza con los productos para identificar subsecciones de contenido. Puede identificar varias subsecciones para un tema, o si no desea que los vínculos para identificar cualquier subsecciones, puede omitir esta etiqueta. Esta etiqueta se utiliza para almacenar los atributos de TargetOS y TargetFrameworkMoniker cuando se convierte un tema desde una versión anterior de la Ayuda. El formato del contenido es AttributeName:AttributeValue.|  
-|\<el contenido de meta name="Microsoft.Help.TopicVersion ="[número de versión de tema]"/ >|Especifica esta versión del tema cuando existen varias versiones de un catálogo. Porque Microsoft.Help.Id no se garantiza que sea único, esta etiqueta es necesaria cuando más de una versión de un tema existe en un catálogo, por ejemplo, cuando un catálogo contiene un tema de .NET Framework 3.5 y un tema para .NET Framework 4 y ambos tienen el mismo Micro software. Help.Id.|  
-|\<nombre de metadatos = "SelfBranded" content = "[TRUE o FALSE]" / >|Especifica si este tema usa el paquete de personalización de marca de inicio de administrador de bibliotecas de ayuda o un paquete de personalización de marca específica para el tema. Esta etiqueta debe ser verdadero o falso. Si es TRUE, el paquete de personalización de marca para el tema asociado reemplaza el paquete de personalización de marca que se establece cuando se inicia el Administrador de bibliotecas de ayuda para que se represente el tema según lo previsto incluso si es diferente de la representación de otro tipo de contenido. Si es FALSE, se representa en el tema actual según el paquete de personalización de marca que se establece cuando se inicia el Administrador de bibliotecas de ayuda. De forma predeterminada, se supone una personalización de marca automáticamente como false a menos que se declara la variable SelfBranded como TRUE; Administrador de bibliotecas de ayuda por lo tanto, no es necesario declarar \<nombre meta = "SelfBranded" content = "FALSE" / >.|  
+|\< contenido de meta name="Microsoft.Help.TocOrder" = "[entero]" / >|Especifica que en la tabla de contenido en este tema aparece como relativo para sus temas del mismo nivel. Esta etiqueta es necesaria y debe utilizarse solo una vez en un tema. El valor es un entero. Un tema que especifica un valor menor entero aparece por encima de un tema que especifica un número entero mayor importancia.|  
+|\< contenido de meta name="Microsoft.Help.Product" = "[product code]" / >|Especifica el producto que se describen en este tema. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez. Esta información también se puede proporcionar como un parámetro que se pasa al indizador de ayuda.|  
+|\< contenido de meta name="Microsoft.Help.ProductVersion" = "[número de versión]" / >|Especifica la versión del producto que se describen en este tema. Si esta etiqueta se utiliza en un tema, se debe usar solo una vez. Esta información también se puede proporcionar como un parámetro que se pasa al indizador de ayuda.|  
+|\< contenido de meta name="Microsoft.Help.Category" = "[cadena]" / >|Se utiliza con los productos para identificar subsecciones de contenido. Puede identificar varias subsecciones para un tema, o si no desea que los vínculos para identificar cualquier subsecciones, puede omitir esta etiqueta. Esta etiqueta se utiliza para almacenar los atributos de TargetOS y TargetFrameworkMoniker cuando se convierte un tema desde una versión anterior de la Ayuda. El formato del contenido es AttributeName:AttributeValue.|  
+|\< el contenido de meta name="Microsoft.Help.TopicVersion ="[número de versión de tema]"/ >|Especifica esta versión del tema cuando existen varias versiones de un catálogo. Porque Microsoft.Help.Id no se garantiza que sea único, esta etiqueta es necesaria cuando más de una versión de un tema existe en un catálogo, por ejemplo, cuando un catálogo contiene un tema de .NET Framework 3.5 y un tema para .NET Framework 4 y ambos tienen el mismo Micro software. Help.Id.|  
+|\< nombre de metadatos = "SelfBranded" content = "[TRUE o FALSE]" / >|Especifica si este tema usa el paquete de personalización de marca de inicio de administrador de bibliotecas de ayuda o un paquete de personalización de marca específica para el tema. Esta etiqueta debe ser verdadero o falso. Si es TRUE, el paquete de personalización de marca para el tema asociado reemplaza el paquete de personalización de marca que se establece cuando se inicia el Administrador de bibliotecas de ayuda para que se represente el tema según lo previsto incluso si es diferente de la representación de otro tipo de contenido. Si es FALSE, se representa en el tema actual según el paquete de personalización de marca que se establece cuando se inicia el Administrador de bibliotecas de ayuda. De forma predeterminada, se supone una personalización de marca automáticamente como false a menos que se declara la variable SelfBranded como TRUE; Administrador de bibliotecas de ayuda por lo tanto, no es necesario declarar \<nombre meta = "SelfBranded" content = "FALSE" / >.|  
   
 ### <a name="creating-a-branding-package"></a>Crear un paquete de personalización de marca  
 La versión de Visual Studio incluye a una serie de diferentes productos de Visual Studio, incluido el aislamiento y shells integrados para Partners de Visual Studio.  Cada uno de estos productos requiere cierto grado de personalización de marca de soporte técnico, único para el producto contenido de ayuda basado en el tema.  Por ejemplo, temas de Visual Studio necesitan tener una presentación marca coherente, mientras que SQL Studio, que ajusta el Shell de ISO, requiere su propio único ayuda contenido personalización de marca de cada tema.  Un asociado de Shell integrado puede sus temas de ayuda para estar dentro del elemento primario contenido de Ayuda del producto de Visual Studio mientras se mantiene su propio tema de la personalización de marca.  
@@ -559,22 +557,22 @@ El paquete de personalización de marca contiene un conjunto de archivos HTM que
 |-|-|-|  
 |**Archivo**|**Uso**|**Muestra el origen de contenido**|  
 |homepage.htm|Se trata de una página que muestra contenido instalado actualmente y cualquier otro mensaje adecuado para presentar al usuario acerca de su contenido.  Este archivo tiene el contenido de "Microsoft.Help.Id" del atributo de datos de metadatos adicional = "-1" que coloca este contenido en la parte superior de la tabla de contenido de contenido local.||  
-||< META_HOME_PAGE_TITLE_ADD / >|Branding.XML, etiqueta \<HomePageTitle >|  
-||< HOME_PAGE_INTRODUCTION_SECTION_ADD / >|Branding.XML, etiqueta \<HomePageIntroduction >|  
-||< HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / >|Branding.XML, etiqueta \<HomePageContentInstallText >|  
-||< HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / >|Encabezado de sección Branding.xml etiqueta\<HomePageInstalledBooks >, los datos generados a partir de la aplicación, \<HomePageNoBooksInstalled > cuando no se instalan ningún libros.|  
-||< HOME_PAGE_SETTINGS_SECTION_ADD / >|Encabezado de sección Branding.xml etiqueta \<HomePageHelpSettings >, sección texto \<HomePageHelpSettingsText >.|  
+||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, etiqueta \<HomePageTitle >|  
+||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, etiqueta \<HomePageIntroduction >|  
+||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, etiqueta \<HomePageContentInstallText >|  
+||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Encabezado de sección Branding.xml etiqueta\<HomePageInstalledBooks >, los datos generados a partir de la aplicación, \<HomePageNoBooksInstalled > cuando no se instalan ningún libros.|  
+||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Encabezado de sección Branding.xml etiqueta \<HomePageHelpSettings >, sección texto \<HomePageHelpSettingsText >.|  
 |topiccorrupted.htm|Cuando no existe un tema en la configuración local, pero por alguna razón no se puede mostrar (dañado contenido).||  
-||< META_TOPIC_CORRUPTED_TITLE_ADD / >|Branding.XML, etiqueta \<TopicCorruptedTitle >|  
-||< TOPIC_CORRUPTED_SECTION_ADD / >|Branding.XML, etiqueta \<TopicCorruptedViewOnlineText >|  
+||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, etiqueta \<TopicCorruptedTitle >|  
+||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, etiqueta \<TopicCorruptedViewOnlineText >|  
 |topicnotfound.htm|Cuando un tema no se encuentra en el contenido local establecido ni está disponible en línea||  
-||< META_TOPIC_NOT_FOUND_TITLE_ADD / >|Branding.XML, etiqueta \<TopicNotFoundTitle >|  
-||< META_TOPIC_NOT_FOUND_ID_ADD / >|Branding.XML, etiqueta \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|  
-||< TOPIC_NOT_FOUND_SECTION_ADD / >|Branding.XML, etiqueta \<TopicNotFoundText >|  
+||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, etiqueta \<TopicNotFoundTitle >|  
+||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, etiqueta \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|  
+||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, etiqueta \<TopicNotFoundText >|  
 |contentnotinstalled.htm|Cuando no hay contenido local instalado para el producto.||  
-||< META_CONTENT_NOT_INSTALLED_TITLE_ADD / >|Branding.XML, etiqueta \<ContentNotInstalledTitle >|  
-||< META_CONTENT_NOT_INSTALLED_ID_ADD / >|Branding.XML, etiqueta \<ContentNotInstalledDownloadContentText >|  
-||< CONTENT_NOT_INSTALLED_SECTION_ADD / >|Branding.XML, etiqueta \<ContentNotInstalledText >|  
+||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, etiqueta \<ContentNotInstalledTitle >|  
+||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, etiqueta \<ContentNotInstalledDownloadContentText >|  
+||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, etiqueta \<ContentNotInstalledText >|  
   
 **Archivos CSS**  
   
@@ -737,7 +735,7 @@ Para crear una extensión de Shell aislado:
   
 1.  En Visual Studio, en **archivo**, elija **nuevo proyecto**, en **otros tipos de proyectos** elegir **extensibilidad**y, a continuación, elija  **Visual Studio Shell aislado**. Denomine el proyecto `ContosoHelpShell`) para crear un proyecto de extensibilidad que se basa en la plantilla de Shell aislado de Visual Studio.  
   
-2.  En el Explorador de soluciones, en el proyecto ContosoHelpShellUI, en la carpeta archivos de recursos, abra ApplicationCommands.vsct. Asegúrese de que esta línea está comentada (busque "No_Help"):`<!-- <define name="No_HelpMenuCommands"/> -->`  
+2.  En el Explorador de soluciones, en el proyecto ContosoHelpShellUI, en la carpeta archivos de recursos, abra ApplicationCommands.vsct. Asegúrese de que esta línea está comentada (busque "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`  
   
 3.  Presione la tecla F5 para compilar y ejecutar **depurar**. En la instancia experimental del IDE de Shell aislado, elija la **ayuda** menú. Asegúrese de que el **ver Ayuda**, **agregar y quitar contenido de la Ayuda**, y **establecer preferencias de la Ayuda** comandos aparecen.  
   
@@ -802,7 +800,7 @@ Para probar esto como si hubieran sido:
   
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15  
   
-     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]Shell integrado:  
+     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell integrado:  
   
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-EE. UU.  
   
@@ -833,4 +831,4 @@ Para obtener ayuda adicional, pruebe el [foros de sistema de ayuda y documentaci
   
 Actualizaciones sobre importantes problema, vea el [Léame del Visor de ayuda](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   
-Para ponerse en contacto directamente con el equipo P.M. del Visor de ayuda, enviar correo electrónico ahlpfdbk@microsoft.com
+Para ponerse en contacto directamente con el equipo P.M. del Visor de ayuda, enviar correo electrónico a hlpfdbk@microsoft.com

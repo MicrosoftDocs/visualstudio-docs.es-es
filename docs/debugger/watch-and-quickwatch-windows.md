@@ -1,13 +1,10 @@
 ---
-title: "Establece una inspección en las Variables de Visual Studio | Documentos de Microsoft"
+title: Establece una inspección en las Variables de Visual Studio | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 264ac3f21dd7799bc4aa1f36909801eac854b755
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Establece una inspección en Variables mediante la inspección y las ventanas de inspección rápida en Visual Studio
 Durante la depuración, puede usar el **inspección** y **Inspección rápida** windows para observar las variables y expresiones.  La diferencia es que la ventana **Inspección** puede mostrar varias variables, mientras que la ventana **Inspección rápida** muestra las variables de una en una. 
@@ -217,7 +214,7 @@ public class Program
   
 2.  Inicie la depuración y, cuando se detenga la ejecución en el punto de interrupción, busque la variable en la ventana **Variables locales** , haga clic en la variable y seleccione **Crear el identificador del objeto**.  
   
-3.  Debería ver un  **$**  junto con un número en el **locales** ventana, que representa el identificador de objeto.  
+3.  Debería ver un **$** junto con un número en el **locales** ventana, que representa el identificador de objeto.  
   
 4.  Agregue el identificador de objeto a la ventana Inspección.  
   

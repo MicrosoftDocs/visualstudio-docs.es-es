@@ -1,12 +1,10 @@
 ---
-title: "Cómo: depurar en un clúster de alto rendimiento | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: depurar en un clúster de alto rendimiento | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - cluster debugging
 - high-perfomance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
-caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 18a8d66da62fd480934c750a6b809465022c5d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d90037fbf147dd0234ee356f217ab97e5af87a01
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Cómo: Depurar en un clúster de alto rendimiento
 La depuración de un programa multiproceso en un clúster de alto rendimiento es similar a la depuración de un programa normal en un equipo remoto. Sin embargo, hay algunas consideraciones adicionales. Para los requisitos de configuración remotos generales, vea [depuración remota](../debugger/remote-debugging.md).  
@@ -70,7 +68,7 @@ La depuración de un programa multiproceso en un clúster de alto rendimiento es
   
      -O bien-  
   
-     `ProcessID =`*yourprocessIDnumber*  
+     `ProcessID =` *yourprocessIDnumber*  
   
      Para crear un filtro más complejo, puede combinar cláusulas con `&`, el operador AND, `||`, el operador OR, `!`, el operador NOT y paréntesis.  
   
@@ -84,11 +82,11 @@ La depuración de un programa multiproceso en un clúster de alto rendimiento es
   
 3.  En el **filtro de punto de interrupción** cuadro de diálogo, escriba:  
   
-     `ThreadName =`*yourthreadname*  
+     `ThreadName =` *yourthreadname*  
   
      -O bien-  
   
-     `ThreadID =`*yourthreadIDnumber*  
+     `ThreadID =` *yourthreadIDnumber*  
   
      Para crear un filtro más complejo, puede combinar cláusulas con `&`, el operador AND, `||`, el operador OR, `!`, el operador NOT y paréntesis.  
   

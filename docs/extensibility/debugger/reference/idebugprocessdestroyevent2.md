@@ -1,29 +1,25 @@
 ---
 title: IDebugProcessDestroyEvent2 | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugProcessDestroyEvent2
 helpviewer_keywords:
 - IDebugProcessDestroyEvent2
 ms.assetid: 1b8e0528-95bc-48fa-9653-2cea66c8dc3a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91eb4e9f749111e96bec2e527432b1f1851cd24c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9122c161a0ce308c7bd2e46cb6d56c32ada85fbc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugprocessdestroyevent2"></a>IDebugProcessDestroyEvent2
 Esta interfaz se envía cuando un proceso se termina, atípicamente se cierra o se separa de.  

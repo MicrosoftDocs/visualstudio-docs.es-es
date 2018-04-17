@@ -1,27 +1,23 @@
 ---
-title: "Cómo: mostrar propiedades de ventana | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: mostrar propiedades de ventana | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - window properties
 ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b933bbaeb3a4bcfb616250df7e190fea71fea209
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a7566a6b0e7c6a1975e6f473c3983bb33cd425ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-display-window-properties"></a>Cómo: Mostrar propiedades de ventana
 Para obtener más información acerca de una ventana que aparece en [Windows Vista](../debugger/windows-view.md), use la [cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md).  

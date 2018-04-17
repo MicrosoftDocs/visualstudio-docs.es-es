@@ -1,22 +1,22 @@
 ---
 title: Crear proyectos de modelado de UML y diagramas | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/23/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - modeling diagrams (UML)
 - UML designers
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: de9c5e86e8c6cba28ebe601a4f69bc5ee9526fa7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6f79baa9c71aed7c6176bd6c68b0c2d8c3e5def9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Crear proyectos y diagramas de modelado UML
 

@@ -1,21 +1,18 @@
 ---
-title: "Cómo: usar el contexto de la interfaz de usuario basada en reglas para extensiones de Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: usar el contexto de la interfaz de usuario basada en reglas para extensiones de Visual Studio | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Cómo: usar el contexto de la interfaz de usuario basada en reglas para extensiones de Visual Studio
 Visual Studio permite la carga de VSPackages cuando determinados conocido <xref:Microsoft.VisualStudio.Shell.UIContext>s se activan. Sin embargo, estos contextos de interfaz de usuario no son muy bien precisa, no dejando a los autores de extensión no hay ninguna opción pero para seleccionar un contexto de interfaz de usuario disponibles que activa antes del punto deseaban realmente el VSPackage para cargar. Para obtener una lista de contextos de interfaz de usuario conocidos, consulte <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -137,7 +134,7 @@ Visual Studio permite la carga de VSPackages cuando determinados conocido <xref:
 |ConfigSettingsStoreQuery:\<consulta >|"query" representa una ruta de acceso completa en el almacén de configuración de la configuración que se debe evaluar como un valor distinto de cero. La consulta se divide en una "colección" y "propertyName" en la barra diagonal que lo último.|  
 |ActiveProjectFlavor:\<projectTypeGuid >|El término será true siempre que el proyecto seleccionado actualmente es característico (agregado) y tiene un tipo que coincida con el tipo de proyecto especificado GUID.|  
 |ActiveEditorContentType:\<contentType >|El término será true si el documento seleccionado es un editor de texto con el tipo de contenido especificado.|  
-|ActiveProjectCapability:\<expresión >|El término es true si las capacidades del proyecto activo coincide con la expresión proporcionada. Una expresión puede ser algo como VB &#124; CSharp|  
+|ActiveProjectCapability:\<expresión >|El término es true si las capacidades del proyecto activo coincide con la expresión proporcionada. Una expresión puede ser algo parecido a VB &#124; CSharp|  
 |SolutionHasProjectCapability:\<expresión >|Es similar al anterior pero término es true cuando la solución tiene cualquier proyecto cargado que coincida con la expresión.|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|El término será true siempre que una solución tiene proyectos es característico (agregado) y tiene un tipo que coincida con el tipo de proyecto especificado GUID.|
 

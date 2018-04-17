@@ -1,12 +1,10 @@
 ---
-title: "Configuración de proyectos para una configuración de depuración de C++ | Documentos de Microsoft"
-ms.custom: 
+title: Configuración de proyectos para una configuración de depuración de C++ | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
 - VC.Project.IVCGPUDebugPageObject.EnvironmentMerge
@@ -111,16 +109,16 @@ helpviewer_keywords:
 - pdb files, debug build project settings
 - /MAP linker option
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
-caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cbb7e773c3c2cbb21ae4ac8d93f695601e8a3663
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2a18ec0d33ce66d62b71aedb4d15ef4273df957f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de C++
 Puede cambiar la configuración del proyecto para una configuración de depuración de C o Visual C++ en el **páginas de propiedades** cuadro de diálogo, como se describe en [Cómo: Set Debug y Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). Las siguientes tablas muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** cuadro de diálogo.  

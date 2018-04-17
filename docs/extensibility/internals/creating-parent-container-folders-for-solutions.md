@@ -1,26 +1,24 @@
 ---
-title: "La creación de carpetas de contenedor primario para soluciones | Documentos de Microsoft"
-ms.custom: 
+title: La creación de carpetas de contenedor primario para soluciones | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: b2aa63a0c55ad196edf6c209475a816c0c3c027c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2104c0c109db0d410cbd08683ce227c62982fd65
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>La creación de carpetas de contenedor primario para soluciones
 En la API de complemento de Control de origen de la versión 1.2, un usuario puede especificar un destino de control de código fuente de raíz única para todos los proyectos Web dentro de la solución. Esta raíz solo se llama a una raíz de unificado Super (SUR).  
@@ -64,7 +62,7 @@ En la API de complemento de Control de origen de la versión 1.2, un usuario pue
   
  La carpeta SUR y subcarpetas se crean independientemente de si la operación se cancela o falla debido a un error. No se quitan automáticamente en las condiciones de error o cancel.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]valores predeterminados al comportamiento de la versión 1.1, si el complemento de control de código fuente no devuelve `SCC_CAP_CREATESUBPROJECT` y `SCC_CAP_GETPARENTPROJECT` marcas de capacidad. Además, los usuarios de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , puede revertir al comportamiento de versión 1.1 estableciendo el valor de la siguiente clave en DWORD: 00000001:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] valores predeterminados al comportamiento de la versión 1.1, si el complemento de control de código fuente no devuelve `SCC_CAP_CREATESUBPROJECT` y `SCC_CAP_GETPARENTPROJECT` marcas de capacidad. Además, los usuarios de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , puede revertir al comportamiento de versión 1.1 estableciendo el valor de la siguiente clave en DWORD: 00000001:  
   
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001  
   

@@ -1,29 +1,25 @@
 ---
 title: IEnumDebugErrorBreakpoints2::Skip | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugErrorBreakpoints2::Skip
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::Skip
 ms.assetid: a5a02b38-4e3a-4f0e-b529-f770c3485c8b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ddd986c148a89370e9f9a10476bdc3cd9beff16
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3aea378f589346df2b96a1d667bc16930c5a0744
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugerrorbreakpoints2skip"></a>IEnumDebugErrorBreakpoints2::Skip
 Omite el número especificado de elementos.  

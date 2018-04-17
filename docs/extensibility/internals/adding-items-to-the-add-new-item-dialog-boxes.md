@@ -1,27 +1,23 @@
 ---
-title: "Agregar elementos a la para agregar elementos nuevos cuadros de diálogo | Documentos de Microsoft"
-ms.custom: 
+title: Agregar elementos a la para agregar elementos nuevos cuadros de diálogo | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Agregar elementos a la para agregar elementos nuevos cuadros de diálogo
 El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuadro de diálogo con las claves del registro. Como se muestra en las siguientes entradas del registro, la sección AddItemTemplates contiene la ruta de acceso y el nombre del directorio de los elementos que están disponibles en la **Agregar nuevo elemento** se colocan el cuadro de diálogo.  
@@ -69,7 +65,7 @@ El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuad
  Por ejemplo, en un proyecto de Visual Basic, podría tener proyectos Web y proyectos de cliente. Formularios Web forms no son elementos útiles para agregar a un proyecto de cliente y formularios windows forms no son elementos útiles para agregar a un proyecto de servidor Web. Por lo tanto, puede crear un directorio de plantilla que contiene todos los archivos para ambos tipos de proyecto. A continuación, mediante la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, puede ocultar los elementos que no deben mostrarse según el tipo de proyecto o la configuración del proyecto en el proyecto.  
   
 ## <a name="filtering-project-items"></a>Filtrado de los elementos de proyecto  
- `IVsFilterAddProjectItemDlg2`se proporciona para el filtrado de elementos en el árbol (panel izquierdo) y archivos de proyecto (panel derecho) de las maneras siguientes:  
+ `IVsFilterAddProjectItemDlg2` se proporciona para el filtrado de elementos en el árbol (panel izquierdo) y archivos de proyecto (panel derecho) de las maneras siguientes:  
   
 -   Los nombres localizados (títulos que se muestran en el cuadro de diálogo que se encuentra en el archivo.) proporcionada por `IVsFilterAddProjectItemDlg`.  
   

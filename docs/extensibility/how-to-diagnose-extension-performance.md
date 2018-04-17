@@ -1,25 +1,21 @@
 ---
-title: "Cómo: diagnosticar el rendimiento de la extensión | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: diagnosticar el rendimiento de la extensión | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/08/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
-manager: ghogen
+manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 60a7d1c3178d0fd74983d3f1096d01e578a49a00
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medir el impacto de la extensión de inicio
 

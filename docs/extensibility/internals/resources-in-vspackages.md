@@ -1,27 +1,25 @@
 ---
 title: Recursos de VSPackages | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee9d108e7a7a6a5bd971b20c12858edf28ac0cf3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d252f61a9f634f4bb8435626c41c586bbe5cb839
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resources-in-vspackages"></a>Recursos de VSPackages
 Puede incrustar los recursos localizados en nativo satélite DLL de interfaz de usuario, archivos DLL satélite administrados, o en un VSPackage administrado propio.  
@@ -85,7 +83,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>Notas de implementación  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]carga de retrasos de VSPackages siempre que sea posible. Una consecuencia de incrustar un archivo de director de tecnología en un paquete VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe cargar este tipo de paquetes VSPackage en la memoria durante la instalación, que es cuando se crea una tabla de comandos fusionada. Los recursos se pueden extraer un paquete VSPackage mediante el examen de los metadatos sin ejecutar código en el VSPackage. No se inicializó el VSPackage en este momento, por lo que la pérdida de rendimiento es mínimo.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carga de retrasos de VSPackages siempre que sea posible. Una consecuencia de incrustar un archivo de director de tecnología en un paquete VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe cargar este tipo de paquetes VSPackage en la memoria durante la instalación, que es cuando se crea una tabla de comandos fusionada. Los recursos se pueden extraer un paquete VSPackage mediante el examen de los metadatos sin ejecutar código en el VSPackage. No se inicializó el VSPackage en este momento, por lo que la pérdida de rendimiento es mínimo.  
   
  Cuando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] las solicitudes de un recurso desde un VSPackage después de la instalación, es probable que ya se han cargado e inicializado, ese paquete por lo que la pérdida de rendimiento es mínimo.  
   

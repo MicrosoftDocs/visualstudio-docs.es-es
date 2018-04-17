@@ -1,23 +1,21 @@
 ---
-title: "Cómo: extensiones de ida y vuelta para Visual Studio | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: extensiones de ida y vuelta para Visual Studio | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 06/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
-caps.latest.revision: "1"
 author: willbrown
 ms.author: willbrown
 manager: justinclareburt
-ms.workload: willbrown
-ms.openlocfilehash: b51673daa7a8c3526ad7de7f7cfdeac6a91d3b4b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- willbrown
+ms.openlocfilehash: 9d8d0dc2e5c8c95b5f2502ef5a48e6f97c26e289
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Cómo: crear extensiones compatibles con 2017 de Visual Studio y Visual Studio 2015
 

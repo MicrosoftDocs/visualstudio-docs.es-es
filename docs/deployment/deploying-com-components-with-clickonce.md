@@ -1,12 +1,10 @@
 ---
 title: Implementar componentes COM con ClickOnce | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 Implementación de componentes COM heredados ha sido tradicionalmente una tarea difícil. Los componentes tienen que ser registrados globalmente y, por tanto, pueden provocar efectos secundarios no deseados entre aplicaciones superpuestas. Normalmente esta situación no es un problema en las aplicaciones de .NET Framework porque los componentes se aíslan completamente a una aplicación o son compatibles en paralelo. Visual Studio permite implementar componentes COM aislados en Windows XP o un sistema operativo posterior.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Proporciona un mecanismo fácil y seguro para la implementación de las aplicaciones. NET. Sin embargo, si las aplicaciones utilizan componentes COM heredados, debe realizar pasos adicionales para su implementación. En este tema se describe cómo implementar componentes COM aislados y hacer referencia a componentes nativos (por ejemplo, de Visual Basic 6.0 o Visual C++).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Proporciona un mecanismo fácil y seguro para la implementación de las aplicaciones. NET. Sin embargo, si las aplicaciones utilizan componentes COM heredados, debe realizar pasos adicionales para su implementación. En este tema se describe cómo implementar componentes COM aislados y hacer referencia a componentes nativos (por ejemplo, de Visual Basic 6.0 o Visual C++).  
   
- Para obtener más información sobre cómo implementar componentes COM aislados, vea "simplificar la implementación de aplicación con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] y COM sin registro" en [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Para obtener más información sobre cómo implementar componentes COM aislados, vea "simplificar la implementación de aplicación con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] y COM sin registro" en [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>COM sin registro  
  COM sin registro es una nueva tecnología para implementar y activar componentes COM aislados. Funciona al colocar la información del registro que normalmente se instala en el registro del sistema en un archivo XML denominado manifiesto, y biblioteca el del componente de tipos almacenados en la misma carpeta que la aplicación.  
@@ -44,7 +42,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
  Cuando el generador del manifiesto encuentra una referencia COM aislada, enumera todas las `CoClass` las entradas de la biblioteca de tipos del componente, haciendo coincidir cada entrada con sus datos de registro correspondiente y generar manifiesto las definiciones para el de COM clases en el archivo de biblioteca de tipos.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Implementar componentes COM sin registro mediante ClickOnce  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]tecnología de implementación es ideal para implementar componentes COM aislados, ya que ambos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] y COM sin registro requieren que un componente tiene un manifiesto para ser implementados.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología de implementación es ideal para implementar componentes COM aislados, ya que ambos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] y COM sin registro requieren que un componente tiene un manifiesto para ser implementados.  
   
  Normalmente, el autor del componente debe proporcionar un manifiesto. Si no es así, sin embargo, es capaz de generar un manifiesto automáticamente para un componente COM Visual Studio. La generación del manifiesto se realiza durante la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publicar proceso; para obtener más información, vea [publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md). Esta característica también le permite aprovechar componentes heredados que crearon en los entornos de desarrollo anteriores, como Visual Basic 6.0.  
   

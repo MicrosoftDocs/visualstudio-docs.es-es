@@ -1,12 +1,10 @@
 ---
-title: "Opciones de usuario de la solución (. Archivo suo) | Documentos de Microsoft"
-ms.custom: 
+title: Opciones de usuario de la solución (. Archivo suo) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .suo files, VSPackages
 - suo files, VSPackages
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - solutions, user options
 - solution user options (.suo) file
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0bca2eef930b871d5728ff1c85742a28f4b51a7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0b96e3ad2ec29402dddc7354df46293b99bac3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-user-options-suo-file"></a>Opciones de usuario de la solución (. Archivo suo)
 El archivo de opciones (.suo) de usuario de solución contiene opciones de la solución por usuario. Este archivo no debe comprobarse para control de código fuente.  

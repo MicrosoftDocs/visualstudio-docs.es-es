@@ -2,26 +2,22 @@
 title: Depurar con código administrado mediante el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e44cf8d282c253da7fa3a09ed8d3b90ca46ca07a
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 9f1fe2dd6d73724fdf49e28ef8ee6434cad80b29
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-with-managed-code-using-the-visual-studio-debugger"></a>Depurar con código administrado mediante el depurador de Visual Studio
 

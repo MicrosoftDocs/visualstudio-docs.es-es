@@ -1,23 +1,21 @@
 ---
 title: Essentials UX para Visual Studio | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Essentials UX para Visual Studio
 ## <a name="best-practices"></a>Procedimientos recomendados  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 Forzar el usuario pueda leer el texto explicativo antes al descartar la interfaz de usuario es un antipatrón dentro de Visual Studio. Vínculos vídeo correctamente diseñado deben mostrar una información sobre herramientas con información adicional al mantener el mouse y haga clic en el "&times;" debe descartar el mensaje sin necesidad de intervención.
 
 
- ![Explicativo texto anti &#45; patrón &#45; incorrecta](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Patrón de vínculo de vídeo incorrecto
+ ![El texto explicativo anti&#45;patrón &#45; incorrecta](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Patrón de vínculo de vídeo incorrecto
   
 #### <a name="result"></a>Resultado  
  En lugar de un botón de cierre simple (un solo clic), el usuario está obligado a utilizar dos clics para descartar simplemente la interfaz de usuario en todos los lugares que aparecen los vínculos de vídeo.  
@@ -116,7 +114,7 @@ Forzar el usuario pueda leer el texto explicativo antes al descartar la interfaz
 #### <a name="alternatives"></a>Alternativas  
  El diseño correcto para esta situación sería seguir el patrón común para Internet Explorer, Office y Visual Studio: al mantener el mouse, el usuario puede ver la descripción de la información sobre herramientas y un solo clic oculta la interfaz de usuario.  
   
- ![Explicativo texto anti &#45; patrón &#45; correcto](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-patrón corregir")<br />Patrón de vínculo de vídeo correcto
+ ![El texto explicativo anti&#45;patrón &#45; correcta](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-patrón corregir")<br />Patrón de vínculo de vídeo correcto
   
 ### <a name="using-command-bars-for-settings"></a>Usar barras de comandos para la configuración  
  **Figura A** representa este antipatrón: poner un valor por debajo de un botón de comando que se aplica a algo más que el comando. En este esquema, hay comandos además de iniciar la depuración, como la vista de explorador, iniciar sin depurar y paso a paso, que respetará la configuración seleccionada.  

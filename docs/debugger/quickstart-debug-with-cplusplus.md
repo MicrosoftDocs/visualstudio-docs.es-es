@@ -2,26 +2,22 @@
 title: Depurar en C++ con el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: 639e430b-6d2d-46bd-b738-8c60dfb384f1
-caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4625eed883cfd3a2f0c5db42588ce457ce16f2c2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 1d73549fb556a52acb0e086ab8bcbfe9fb88c7b0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-with-c-using-the-visual-studio-debugger"></a>Depurar en C++ con el depurador de Visual Studio
 

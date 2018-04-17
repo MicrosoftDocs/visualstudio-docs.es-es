@@ -1,23 +1,21 @@
 ---
 title: Crear un Kit de desarrollo de Software | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ea17b02cfa2e987c4a3c02acddf838001b4ae2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 55b62ac0ac448023793f511389146ebb1b07da0f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-software-development-kit"></a>Creación de un kit de desarrollo de software
 Un kit de desarrollo de software (SDK) es un conjunto de API que puede hacer referencia como un solo elemento en Visual Studio. El **Administrador de referencias** cuadro de diálogo muestra todos los SDK que son relevantes para el proyecto. Cuando se agrega un SDK para un proyecto, la API están disponibles en Visual Studio.  
@@ -34,7 +32,7 @@ Un kit de desarrollo de software (SDK) es un conjunto de API que puede hacer ref
   
 -   [SDK de extensión](#ExtensionSDKs)  
   
-##  <a name="PlatformSDKs"></a>SDK de plataforma  
+##  <a name="PlatformSDKs"></a> SDK de plataforma  
  SDK de plataforma necesarios para desarrollar aplicaciones para una plataforma. Por ejemplo, el [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK es necesario para desarrollar aplicaciones para [!INCLUDE[win81](../debugger/includes/win81_md.md)].  
   
 ### <a name="installation"></a>Instalación  
@@ -62,7 +60,7 @@ Un kit de desarrollo de software (SDK) es un conjunto de API que puede hacer ref
 |Carpeta de arquitectura|Puede existir cualquier carpeta de la arquitectura admitida. Visual Studio es compatible con las arquitecturas siguientes: x86, x64, ARM así como neutral. Nota: Win32 que se asigna a x86 y AnyCPU asigna a neutro.<br /><br /> MSBuild busca solo en \CommonConfiguration\neutral SDK de plataforma.|  
 |SDKManifest.xml|Este archivo describe cómo Visual Studio debe utilizar el SDK. Buscar en el manifiesto del SDK para [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** el valor que muestra el Examinador de objetos en la lista de examinación.<br /><br /> **PlatformIdentity:** la existencia de este atributo indica a Visual Studio y MSBuild que el SDK es una plataforma de SDK y que las referencias agregadas de él no deben copiarse localmente.<br /><br /> **TargetFramework:** Visual Studio utiliza este atributo para asegurarse de que solo los proyectos que tienen como destino los mismos marcos como se especifica en el valor de este atributo puede consumir el SDK.<br /><br /> **MinVSVersion:** Visual Studio utiliza este atributo para utilizar solo el SDK que se aplican a él.<br /><br /> **Referencia:** este atributo debe especificarse para solo esas referencias que contienen controles. Para obtener información sobre cómo especificar si una referencia contiene controles, consulte a continuación.|  
   
-##  <a name="ExtensionSDKs"></a>SDK de extensión  
+##  <a name="ExtensionSDKs"></a> SDK de extensión  
  Las secciones siguientes describen lo que necesita hacer para implementar un SDK de extensión.  
   
 ### <a name="installation"></a>Instalación  
@@ -195,7 +193,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 16. Referencia del archivo: especificar para solo esas referencias que contienen controles o son archivos Winmd nativo. Para obtener información sobre cómo especificar si una referencia contiene controles, vea [especificar la ubicación de elementos de cuadro de herramientas](#ToolboxItems) a continuación.  
   
-##  <a name="ToolboxItems"></a>Especificar la ubicación de los elementos de cuadro de herramientas  
+##  <a name="ToolboxItems"></a> Especificar la ubicación de los elementos de cuadro de herramientas  
  El elemento ToolBoxItems del esquema SDKManifest.xml especifica la categoría y ubicación de los elementos de cuadro de herramientas de plataforma y el SDK de extensión. Los ejemplos siguientes muestran cómo especificar distintas ubicaciones. Esto es aplicable a las referencias de WinMD o DLL.  
   
 1.  Colocar controles en la categoría de cuadro de herramientas predeterminada.  

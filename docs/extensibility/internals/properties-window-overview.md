@@ -1,27 +1,23 @@
 ---
-title: "Información general sobre la ventana de propiedades | Documentos de Microsoft"
-ms.custom: 
+title: Información general sobre la ventana de propiedades | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
 El **propiedades** ventana se usa para mostrar las propiedades de objetos seleccionados en los dos tipos principales de windows disponibles en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Estos dos tipos de windows son:  
@@ -44,7 +40,7 @@ El **propiedades** ventana se usa para mostrar las propiedades de objetos selecc
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Proporciona una lista de categorías para la **propiedades** ventana y cada propiedad se asigna a una categoría.|  
 |[Interfaz IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Expone métodos y propiedades para la programación de herramientas y otras aplicaciones que admiten la automatización de un objeto.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Proporciona botones de puntos suspensivos (...) que se llama *generadores* que abrir ventanas de cuadro de diálogo modal implementadas por el propio objeto. Se utiliza si no tiene el tipo fácilmente un valor por el usuario en un campo de texto. Por ejemplo, podría utilizarse para abrir un selector de color que determina el valor RGB para usted.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Proporciona acceso a objetos que se utiliza para actualizar la información que se muestra en el **propiedades** ventana. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>se implementa mediante paquetes VSPackage para cada ventana que contiene objetos que pueden seleccionarse con propiedades relacionadas que se mostrarán.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Proporciona acceso a objetos que se utiliza para actualizar la información que se muestra en el **propiedades** ventana. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> se implementa mediante paquetes VSPackage para cada ventana que contiene objetos que pueden seleccionarse con propiedades relacionadas que se mostrarán.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Proporciona información sobre el tipo de un objeto como métodos de una interfaz y los campos de una estructura.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Permite VSPackages para recibir la notificación de eventos de selección y recuperar información acerca de la jerarquía del proyecto actual, el elemento, el valor del elemento y el contexto de la interfaz de usuario de comandos.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Proporciona el entorno que brinda acceso a las selecciones múltiples.|  

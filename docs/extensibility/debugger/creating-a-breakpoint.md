@@ -1,26 +1,24 @@
 ---
-title: "Crear un punto de interrupción | Documentos de Microsoft"
-ms.custom: 
+title: Crear un punto de interrupción | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, creating
 - debugging [Debugging SDK], creating breakpoints
 ms.assetid: 6f9f87bb-192e-45e0-9a7a-ffe729e87f7d
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 14de0dd85582e385f0083f23af9494580028f3fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 88f5b75defc1bceff4aacd580474b145df32bf68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-breakpoint"></a>Crear un punto de interrupción
 A continuación describe el proceso de creación de un punto de interrupción.  

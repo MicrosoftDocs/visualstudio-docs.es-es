@@ -1,12 +1,10 @@
 ---
-title: "Configuración para configuraciones de depuración de C# del proyecto | Documentos de Microsoft"
-ms.custom: 
+title: Configuración para configuraciones de depuración de C# del proyecto | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - project configurations, debug
 - debugging [C#], debugger settings
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 054a015c5fcd6a70696ed6945faa5cbd01547168
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f51964a303641e8e430417d63d0241603d7f360
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Configuración del proyecto para configuraciones de depuración en C#
 Puede cambiar la configuración del proyecto para una configuración de depuración de C# en el **páginas de propiedades** ventana, como se describe en [configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). Las siguientes tablas muestran dónde encontrar valores relacionados con el depurador en el **páginas de propiedades** ventana.  
@@ -37,7 +35,7 @@ Puede cambiar la configuración del proyecto para una configuración de depuraci
 > [!WARNING]
 >  Este tema no se aplica a las aplicaciones de UWP. Vea [inicie una sesión de depuración (VB, C#, C++ y XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a>Ficha Depurar  
+##  <a name="BKMK_Debug_tab"></a> Ficha Depurar  
   
 |**Configuración de**|**Descripción**|  
 |-----------------|---------------------|  
@@ -49,7 +47,7 @@ Puede cambiar la configuración del proyecto para una configuración de depuraci
 |**Habilitar depuración de código no administrado**|Permite depurar llamadas a código nativo Win32 (no administrado) desde una aplicación administrada.|  
 |**Habilitar depuración de SQL Server**|Permite depurar objetos de la base de datos de SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a>Generar (ficha)  
+##  <a name="BKMK_Build_tab"></a> Generar (ficha)  
   
 |Parámetro|Descripción|  
 |-------------|-----------------|  

@@ -1,27 +1,23 @@
 ---
-title: "Elemento que contribuye a la Agregar cuadro de diálogo nuevo elemento | Documentos de Microsoft"
-ms.custom: 
+title: Elemento que contribuye a la Agregar cuadro de diálogo nuevo elemento | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923d95256a3ab0e63bdcf35c7ae38d70a117fa02
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6d8b35537828f99fe3683e03feac3960d6ca4adc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Elemento que contribuye a la Agregar cuadro de diálogo nuevo elemento
 Un subtipo de proyecto puede proporcionar un nuevo directorio completando de elementos de la **Agregar nuevo elemento** cuadro de diálogo Registrar **Agregar elemento** plantillas en la `Projects` subclave del registro.  

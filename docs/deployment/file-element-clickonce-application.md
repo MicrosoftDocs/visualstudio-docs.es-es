@@ -1,12 +1,10 @@
 ---
-title: "&lt;archivo&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft"
-ms.custom: 
+title: '&lt;archivo&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9575fd84a5bd17777aaf540c72bfff62c27adf15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;archivo&gt; elemento (aplicación ClickOnce)
 Identifica todos los archivos nonassembly descargados y utilizados por la aplicación.  
@@ -95,7 +93,7 @@ Identifica todos los archivos nonassembly descargados y utilizados por la aplica
 |`name`|Requerido. Identifica el nombre del archivo.|  
 |`size`|Requerido. Especifica el tamaño, en bytes, del archivo.|  
 |`group`|Opcional, si la `optional` atributo no se especifica o se establece en `false`; es necesario si `optional` es `true`. El nombre del grupo al que pertenece este archivo. El nombre puede ser cualquier valor de cadena de Unicode elegido por el desarrollador y se utiliza para la descarga de archivos a petición con la <xref:System.Deployment.Application.ApplicationDeployment> clase.|  
-|`optional`|Opcional. Especifica si este archivo debe ser descarga cuando la aplicación es la primera ejecución, o si el archivo debe residir en el servidor hasta que la aplicación lo solicite a petición. Si `false` o sin definir, el archivo se descarga cuando la aplicación se ejecuta o se instala en primer lugar. Si `true`, un `group` debe especificarse para que el manifiesto de aplicación sea válido. `optional`no puede ser true si `writeableType` se especifica con el valor `applicationData`.|  
+|`optional`|Opcional. Especifica si este archivo debe ser descarga cuando la aplicación es la primera ejecución, o si el archivo debe residir en el servidor hasta que la aplicación lo solicite a petición. Si `false` o sin definir, el archivo se descarga cuando la aplicación se ejecuta o se instala en primer lugar. Si `true`, un `group` debe especificarse para que el manifiesto de aplicación sea válido. `optional` no puede ser true si `writeableType` se especifica con el valor `applicationData`.|  
 |`writeableType`|Opcional. Especifica que este archivo es un archivo de datos. Actualmente, el único valor válido es `applicationData`.|  
   
 ## <a name="typelib"></a>biblioteca de tipos  
@@ -160,7 +158,7 @@ Identifica todos los archivos nonassembly descargados y utilizados por la aplica
 ## <a name="hash"></a>hash  
  El `hash` elemento es un elemento secundario opcional de la `file` elemento. El `hash` elemento no tiene atributos.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]utiliza un valor hash algorítmico de todos los archivos en una aplicación como una comprobación de seguridad, para asegurarse de que ninguno de los archivos se han modificado después de la implementación. Si el `hash` elemento no se incluye, no se realizará esta comprobación. Por lo tanto, si se omite la `hash` elemento no se recomienda.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] utiliza un valor hash algorítmico de todos los archivos en una aplicación como una comprobación de seguridad, para asegurarse de que ninguno de los archivos se han modificado después de la implementación. Si el `hash` elemento no se incluye, no se realizará esta comprobación. Por lo tanto, si se omite la `hash` elemento no se recomienda.  
   
  Si un manifiesto contiene un archivo que no está en hash, ese manifiesto no puede ser digitalmente firmado, porque los usuarios no pueden comprobar el contenido de un archivo de este tipo.  
   

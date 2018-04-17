@@ -1,27 +1,25 @@
 ---
-title: "Solución (. Archivo sln) | Documentos de Microsoft"
-ms.custom: 
+title: Solución (. Archivo sln) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
 - solutions, .sln files
 - .sln files, VSPackages
 ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ad918b72d38e61fb1670adda8ff1f730987c2aa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 73d6f7fb83e9420f59122135761ce44ea641fe57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="solution-sln-file"></a>Solución (. Archivo sln)
 Una solución es una estructura para organizar los proyectos de Visual Studio. La solución mantiene la información de estado para los proyectos en .sln (basado en texto, compartido) y archivos .suo (opciones de solución binario, específica del usuario). Para obtener más información sobre .suo (archivos), consulte [opciones de usuario de la solución (. Archivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
@@ -96,7 +94,7 @@ EndGlobal
   
  Si hay información que se guarda, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfaz se denomina con un puntero a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> método. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> , a continuación, se llama el método por el entorno para recuperar los pares de nombre-valor de `IPropertyBag` de interfaz y escribir la información en el archivo .sln.  
   
- `SaveSolutionProps`y `WriteSolutionProps` objetos se denominan de forma recursiva por el entorno para recuperar la información que deba guardarse de la `IPropertyBag` interfaz hasta que se han escrito todos los cambios en el archivo .sln. De esta manera, puede asegurarse de que la información se conservarán con la solución y disponible próxima vez que se abra la solución.  
+ `SaveSolutionProps` y `WriteSolutionProps` objetos se denominan de forma recursiva por el entorno para recuperar la información que deba guardarse de la `IPropertyBag` interfaz hasta que se han escrito todos los cambios en el archivo .sln. De esta manera, puede asegurarse de que la información se conservarán con la solución y disponible próxima vez que se abra la solución.  
   
  Se enumera cada VSPackage cargado para ver si tiene algo para guardar en archivo .sln. Es solo en tiempo de carga que se consultan las claves del registro. El entorno sabe acerca de todos los paquetes de carga porque están en memoria en el momento en que se guarda la solución.  
   

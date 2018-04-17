@@ -1,27 +1,23 @@
 ---
 title: Marcadores de bits utilizado por determinados comandos | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcadores de bits utilizada por los comandos específicos
 El comportamiento de un número de funciones de la API de complementos de Control de código fuente puede modificarse estableciendo uno o más bits en un solo valor. Estos valores se conocen como marcadores de bits. Los distintos marcadores de bits utilizadas por la API de complemento de Control de origen, que se detallan en este caso, agrupados por la función que los usa.  
@@ -40,7 +36,7 @@ El comportamiento de un número de funciones de la API de complementos de Contro
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0 x 00|Se espera el complemento de control de código fuente para detectar automáticamente si el archivo es texto o binario.|  
 |`SCC_FILETYPE_TEXT`|0 x 01|Tipo de archivo es texto.|  
-|`SCC_FILETYPE_BINARY`|0 x 04|Tipo de archivo es binario. **Nota:** `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` marcas son mutuamente excluyentes. Establezca exactamente una o ninguna de ellas.|  
+|`SCC_FILETYPE_BINARY`|0x04|Tipo de archivo es binario. **Nota:** `SCC_FILETYPE_TEXT` y `SCC_FILETYPE_BINARY` marcas son mutuamente excluyentes.   Establezca exactamente una o ninguna de ellas.|  
 |`SCC_ADD_STORELATEST`|0 x 02|Almacenar la versión más reciente solo (ninguna deltas).|  
   
 ## <a name="diff-flags"></a>Marcas de comparación  
@@ -48,8 +44,8 @@ El comportamiento de un número de funciones de la API de complementos de Contro
   
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
-|`SCC_DIFF_IGNORECASE`|0 x 0002|Ignorar las diferencias de mayúsculas.|  
-|`SCC_DIFF_IGNORESPACE`|0 x 0004|Omitir las diferencias de espacio en blanco. **Nota:** el `SCC_DIFF_IGNORECASE` y `SCC_DIFF_IGNORESPACE` marcas son marcadores de bits opcional.|  
+|`SCC_DIFF_IGNORECASE`|0x0002|Ignorar las diferencias de mayúsculas.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Omitir las diferencias de espacio en blanco. **Nota:** el `SCC_DIFF_IGNORECASE` y `SCC_DIFF_IGNORESPACE` marcas son marcadores de bits opcional.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|PC comparando el contenido completo del archivo.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|PC por la suma de comprobación.|  
 |`SCC_DIFF_QD_TIME`|0x0040|PC con la marca de fecha y hora de archivo.|  
@@ -69,7 +65,7 @@ El comportamiento de un número de funciones de la API de complementos de Contro
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|Examinar un solo nivel de directorios para directorios (es decir, el valor predeterminado).|  
 |SCC_PDL_RECURSIVE|0 x 0001|Recursivamente examine todos los directorios en cada directorio determinado.|  
-|SCC_PDL_INCLUDEFILES|0 x 0002|Incluir nombres de archivo en el proceso de examen.|  
+|SCC_PDL_INCLUDEFILES|0x0002|Incluir nombres de archivo en el proceso de examen.|  
   
 ## <a name="openproject-flags"></a>Marcas de OpenProject  
  Estas marcas se usan por el [SccOpenProject](../extensibility/sccopenproject-function.md) en el `dwFlags` parámetro.  

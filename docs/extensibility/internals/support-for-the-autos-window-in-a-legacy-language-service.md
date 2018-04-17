@@ -1,26 +1,24 @@
 ---
-title: "Compatibilidad con la ventana automático en un servicio de lenguaje heredado | Documentos de Microsoft"
-ms.custom: 
+title: Compatibilidad con la ventana automático en un servicio de lenguaje heredado | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: db6be625c671a508be3c2fd2f1697282af282bdd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: a1a2627bd36e6047db00afaada231dc49cde2cc3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Compatibilidad con la ventana automático en un servicio de lenguaje heredado
 El **automático** ventana muestra expresiones como variables y parámetros que están en ámbito cuando se detenga el programa que se está depurando (ya sea debido a un punto de interrupción o una excepción). Las expresiones pueden incluir variables, locales o globales y los parámetros que se han cambiado en el ámbito local. El **automático** ventana también puede incluir creaciones de instancias de una clase, estructura o algún otro tipo. Todo lo que un evaluador de expresiones puede evaluar potencialmente se puede mostrar en el **automático** ventana.  

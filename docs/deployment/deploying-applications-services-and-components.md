@@ -3,11 +3,8 @@ title: Información general de implementación - Visual Studio | Documentos de M
 description: Obtenga información acerca de las opciones para implementar aplicaciones desde Visual Studio.
 ms.custom: mvc
 ms.date: 11/26/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - FSharp
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - deploying applications [Visual Studio], about deploying applications
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca458c0234de89fec814cfa5e639c13db9e6ca9b
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 5d4367c5daad9c8514f472fe759d1dba9fb7e357
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Inicio rápido: Busque primero en la implementación en Visual Studio
 

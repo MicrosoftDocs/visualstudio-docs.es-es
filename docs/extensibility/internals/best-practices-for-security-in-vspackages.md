@@ -1,27 +1,25 @@
 ---
-title: "Prácticas recomendadas para la seguridad en VSPackages | Documentos de Microsoft"
-ms.custom: 
+title: Prácticas recomendadas para la seguridad en VSPackages | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio SDK]
 - security best practices, VSPackages
 - best practices, security
 ms.assetid: 212a0504-cf6c-4e50-96b0-f2c1c575c0ff
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 71f06fdd67e4f1789637c2d935f0d25a06eb9863
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 689c85e090e44612a87474e8c77dc0e146706e84
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Prácticas recomendadas de seguridad en los paquetes VSPackage
 Para instalar el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] en el equipo, debe estar ejecutando en un contexto con credenciales administrativas. La unidad básica de seguridad e implementación de un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplicación es el [VSPackages](../../extensibility/internals/vspackages.md). Un VSPackage debe registrarse mediante el uso de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], lo que también requiere credenciales administrativas.  

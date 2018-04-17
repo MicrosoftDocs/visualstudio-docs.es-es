@@ -1,12 +1,10 @@
 ---
-title: "Admite cambios en el código (C# y Visual Basic) | Documentos de Microsoft"
-ms.custom: 
+title: Admite cambios en el código (C# y Visual Basic) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 10/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Edit and Continue [C#], supported code changes
 - Edit and Continue [Visual Basic], supported code changes
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
-caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: eba3de7930b650ad7c1fc2d6ad4511ca3ca4c9d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Cambios admitidos en el código (C# y Visual Basic)
 Editar y continuar controla la mayoría de los tipos de cambios de código dentro de los cuerpos de método. Ahora bien, durante la depuración, no es posible efectuar la mayoría de cambios fuera de los cuerpos de método y algunos cambios dentro de estos. Para efectuar dichos cambios no compatibles, es necesario detener la depuración y reiniciar con una versión nueva del código.

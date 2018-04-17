@@ -2,21 +2,17 @@
 title: Activación en contexto | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
-caps.latest.revision: 26
 manager: douge
-ms.openlocfilehash: d1fe2c1dfe71923897836f803e3a9712b4dec0f1
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d20c88dbb93712c7ef2e6342cbb3d9cd0d38a086
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="in-place-activation"></a>Activación en contexto
 Si la vista del editor hospeda ActiveX u otros controles activos, debe implementar la vista del editor como un control ActiveX o como un objeto de datos de documento activo mediante el modelo de activación en contexto.  

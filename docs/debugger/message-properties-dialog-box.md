@@ -1,26 +1,24 @@
 ---
-title: "Cuadro de diálogo Propiedades de mensaje | Documentos de Microsoft"
-ms.custom: 
+title: Cuadro de diálogo Propiedades de mensaje | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options
 - message options, General
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ab11a037a5cf9d313e3269a5c3c8df464b120006
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6d1264638a911d332929265f5f154d390eba2566
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-properties-dialog-box"></a>Cuadro de diálogo Propiedades del mensaje
 Utilice este cuadro de diálogo para obtener más información acerca de un mensaje concreto. Para mostrar este cuadro de diálogo, mueva el foco a un [vista mensajes](../debugger/messages-view.md) ventana. Seleccione el nodo de un mensaje en el árbol y después elija **propiedades** desde el **vista** menú.  

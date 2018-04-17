@@ -1,13 +1,10 @@
 ---
-title: "&lt;Firma&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft"
-ms.custom: 
+title: '&lt;Firma&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <Signature> element [ClickOnce deployment manifest]
 ms.assetid: c99b07ad-e8ba-43f2-b0d6-3745e7a7c8b3
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcc04808916d8ef31fb77cab72f54c1e22e924c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cae29bf7f1d5207258ddc90e7287f7fb3a3b2989
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Firma&gt; elemento (implementación de ClickOnce)
 Contiene la información necesaria para firmar digitalmente este manifiesto de implementación.  
@@ -40,7 +36,7 @@ Contiene la información necesaria para firmar digitalmente este manifiesto de i
 ```  
   
 ## <a name="remarks"></a>Comentarios  
- Firmar un manifiesto de implementación mediante una firma con doble cifrado es opcional, pero se recomienda. Para obtener más información acerca de la firma XML archivos Consulte la World Wide Web Consortium recomendación, "XML-Signature Syntax and Processing," se describe en [http://www.w3.org/TR/xmldsig-core/](http://www.w3.org/TR/xmldsig-core/).  
+ Firmar un manifiesto de implementación mediante una firma con doble cifrado es opcional, pero se recomienda. Para obtener más información acerca de la firma XML archivos Consulte la World Wide Web Consortium recomendación, "XML-Signature Syntax and Processing," se describe en [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
  Si desea firmar el manifiesto, se deben proporcionar valores hash para todos los archivos. No se puede firmar un manifiesto con archivos que no se aplica un algoritmo hash, ya que los usuarios no pueden comprobar el contenido de este tipo de archivos.  
   

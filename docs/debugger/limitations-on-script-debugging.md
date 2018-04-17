@@ -1,12 +1,10 @@
 ---
-title: "Limitaciones sobre la depuración de Script | Documentos de Microsoft"
-ms.custom: 
+title: Limitaciones sobre la depuración de Script | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - script debugging, limitations
 - breakpoint mapping, limitations
 ms.assetid: 280eead5-693c-47af-967f-dfe9d23f84db
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c51a9b9ad5a349261d1898310ccb0125293ab5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2b959428d940fd61c9c343f468fca71d56332c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="limitations-on-script-debugging"></a>Limitaciones de la depuración de script
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite la depuración de script en el cliente, sujeta a las limitaciones descritas en este tema.  
@@ -36,7 +34,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Los puntos de interrupción se deben establecer dentro de bloques `<script>`. No se pueden asignar puntos de interrupción en script en línea o en bloques `<% %>`.  
   
--   La dirección URL del explorador de la página debe contener el nombre de página. Por ejemplo, http://microsoft.com/default.apsx. La asignación de puntos de interrupción no puede reconocer una redirección de una dirección como http://microsoft.com a la página predeterminada.  
+-   La dirección URL del explorador de la página debe contener el nombre de página. Por ejemplo: http://microsoft.com/default.apsx. Asignación de punto de interrupción no puede reconocer una redirección de una dirección como http://microsoft.com en la página predeterminada.  
   
 -   El punto de interrupción se debe establecer en la página especificada en la dirección URL del explorador, no en un archivo de control de ASPX (ascx), la página maestra u otro archivo que incluya dicha página. No se pueden asignar puntos de interrupción establecidos en páginas incluidas.  
   

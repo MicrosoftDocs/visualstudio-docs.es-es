@@ -1,27 +1,25 @@
 ---
-title: "¿Cómo VSPackages agregar elementos de la interfaz de usuario | Documentos de Microsoft"
-ms.custom: 
+title: ¿Cómo VSPackages agregar elementos de la interfaz de usuario | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 930ab9e741b2fd5bbc0ca2954192fe5e2c4313d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>¿Cómo VSPackages agregar elementos de la interfaz de usuario
 Un VSPackage puede agregar elementos de interfaz (UI) de usuario, por ejemplo, menús, barras de herramientas y herramientas de windows, Visual Studio mediante el archivo .vsct.  
@@ -64,7 +62,7 @@ Un VSPackage puede agregar elementos de interfaz (UI) de usuario, por ejemplo, m
 </Symbols>  
 ```  
   
- El elemento de nivel superior de la `Symbols` sección es el [GuidSymbol elemento](../../extensibility/guidsymbol-element.md). `GuidSymbol`elementos asignan nombres a GUID que se usan por el IDE para identificar los paquetes y sus componentes.  
+ El elemento de nivel superior de la `Symbols` sección es el [GuidSymbol elemento](../../extensibility/guidsymbol-element.md). `GuidSymbol` elementos asignan nombres a GUID que se usan por el IDE para identificar los paquetes y sus componentes.  
   
 > [!NOTE]
 >  GUID se generan automáticamente con la plantilla de paquete de Visual Studio. También puede crear un GUID único haciendo clic en **crear GUID** en el **herramientas** menú.  
@@ -195,11 +193,11 @@ priority="0x0100" type="Menu">
 |Elemento|Definidos en esta sección de la tabla de comandos|Puede incluirse (como un elemento primario, o mediante la posición en la `CommandPlacements` sección o ambos)|Puede contener (denominado un elemento primario)|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
 |Agrupar|[Elemento Groups](../../extensibility/groups-element.md), el IDE, otros VSPackages|Un menú, un grupo, el propio elemento|Los menús, los grupos y los comandos|  
-|Menú|[Elemento menús](../../extensibility/menus-element.md), el IDE, otros VSPackages|1 a  *n*  grupos|0 para  *n*  grupos|  
-|Barra de herramientas|[Elemento menús](../../extensibility/menus-element.md), el IDE, otros VSPackages|El elemento en Sí|0 para  *n*  grupos|  
-|Elemento de menú|[Botones elemento](../../extensibility/buttons-element.md), el IDE, otros VSPackages|1 a  *n*  grupos, el propio elemento|-0 para  *n*  grupos|  
-|Botón|[Botones elemento](../../extensibility/buttons-element.md), el IDE, otros VSPackages|1 a  *n*  grupos, el propio elemento||  
-|combinado|[Elemento de cuadro combinado](../../extensibility/combos-element.md), el IDE, otros VSPackages|1 a  *n*  grupos, el propio elemento||  
+|Menú|[Elemento menús](../../extensibility/menus-element.md), el IDE, otros VSPackages|1 a *n* grupos|0 para *n* grupos|  
+|Barra de herramientas|[Elemento menús](../../extensibility/menus-element.md), el IDE, otros VSPackages|El elemento en Sí|0 para *n* grupos|  
+|Elemento de menú|[Botones elemento](../../extensibility/buttons-element.md), el IDE, otros VSPackages|1 a *n* grupos, el propio elemento|-0 para *n* grupos|  
+|Botón|[Botones elemento](../../extensibility/buttons-element.md), el IDE, otros VSPackages|1 a *n* grupos, el propio elemento||  
+|combinado|[Elemento de cuadro combinado](../../extensibility/combos-element.md), el IDE, otros VSPackages|1 a *n* grupos, el propio elemento||  
   
 ### <a name="menu-command-and-group-placement"></a>Menús y comandos, selección de ubicación de grupo  
  Un menú, grupo o comando puede aparecer en más de una ubicación en el IDE. Un elemento que aparezca en varias ubicaciones, debe agregarse a la `CommandPlacements` sección como un [CommandPlacement elemento](../../extensibility/commandplacement-element.md). Cualquier menú, grupo o comando puede agregarse como una ubicación del comando. Sin embargo, no se puede colocar las barras de herramientas de esta manera porque no pueden aparecer en varias ubicaciones contextuales.  
@@ -214,7 +212,7 @@ priority="0x0100" type="Menu">
 ##### <a name="visibility-constraints"></a>Restricciones de visibilidad  
  Una restricción de visibilidad se establece como un [VisibilityItem elemento](../../extensibility/visibilityitem-element.md) en la `VisibilityConstraints` sección. Una restricción de visibilidad define contextos concretos de interfaz de usuario en el que está visible el elemento de destino. Un menú o un comando que se incluye en esta sección solo está visible cuando uno de los contextos definidos está activo. Si un menú o un comando no se hace referencia en esta sección, siempre es visible de forma predeterminada. En esta sección no se aplica a los grupos.  
   
- `VisibilityItem`los elementos deben tener tres atributos, como se indica a continuación: el `guid` y `id` del elemento de interfaz de usuario de destino, y `context`. El `context` atributo especifica si el elemento de destino será visible y toma cualquier contexto de interfaz de usuario válido como su valor. Las constantes de contexto de la interfaz de usuario de Visual Studio son miembros de la <xref:Microsoft.VisualStudio.VSConstants> clase. Cada `VisibilityItem` elemento acepta solo un contexto valor. Para aplicar un contexto de segundo, cree un segundo `VisibilityItem` elemento al que apunta al mismo elemento, tal como se muestra en el ejemplo siguiente.  
+ `VisibilityItem` los elementos deben tener tres atributos, como se indica a continuación: el `guid` y `id` del elemento de interfaz de usuario de destino, y `context`. El `context` atributo especifica si el elemento de destino será visible y toma cualquier contexto de interfaz de usuario válido como su valor. Las constantes de contexto de la interfaz de usuario de Visual Studio son miembros de la <xref:Microsoft.VisualStudio.VSConstants> clase. Cada `VisibilityItem` elemento acepta solo un contexto valor. Para aplicar un contexto de segundo, cree un segundo `VisibilityItem` elemento al que apunta al mismo elemento, tal como se muestra en el ejemplo siguiente.  
   
 ```xml  
 <VisibilityConstraints>  
@@ -233,24 +231,24 @@ priority="0x0100" type="Menu">
  AlwaysCreate  
  Menú se crea aunque no tiene botones ni grupos.  
   
- Válido para:`Menu`  
+ Válido para: `Menu`  
   
  CommandWellOnly  
  Aplicar esta marca si el comando no aparece en el menú de nivel superior y desea que esté disponible para la personalización de shell adicionales, por ejemplo, enlace a una clave. Después de instala el paquete VSPackage, un usuario puede personalizar estos comandos abriendo el **opciones** cuadro de diálogo y, a continuación, editar la ubicación de comando en el **teclado entorno** categoría. No afecta a la ubicación en los menús contextuales, barras de herramientas, controladores de menús o submenús.  
   
- Válido para: `Button`,`Combo`  
+ Válido para: `Button`, `Combo`  
   
  DefaultDisabled  
  De forma predeterminada, el comando se deshabilita si el VSPackage que implemente el comando no está cargado o no se ha llamado al método QueryStatus.  
   
- Válido para: `Button`,`Combo`  
+ Válido para: `Button`, `Combo`  
   
  DefaultInvisible  
  De forma predeterminada, el comando es invisible si el VSPackage que implemente el comando no está cargado o no se ha llamado al método QueryStatus.  
   
  Debe combinarse con la `DynamicVisibility` marca.  
   
- Válido para: `Button`, `Combo`,`Menu`  
+ Válido para: `Button`, `Combo`, `Menu`  
   
  DynamicVisibility  
  Se puede cambiar la visibilidad del comando mediante el método QueryStatus o un contexto de GUID que se incluye en la `VisibilityConstraints` sección.  
@@ -261,12 +259,12 @@ priority="0x0100" type="Menu">
   
  Debe combinarse con la `DefaultInvisible` marca.  
   
- Válido para: `Button`, `Combo`,`Menu`  
+ Válido para: `Button`, `Combo`, `Menu`  
   
  NoShowOnMenuController  
  Si un comando que tiene este indicador se coloca en un controlador de menú, el comando no aparece en la lista desplegable.  
   
- Válido para:`Button`  
+ Válido para: `Button`  
   
  Para obtener más información acerca de las marcas de comando, consulte el [comando marca elemento](../../extensibility/command-flag-element.md) documentación.  
   
@@ -291,7 +289,7 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Apariencia del elemento de interfaz  
  Consideraciones para seleccionar y colocar elementos de comando son los siguientes:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ofrece muchos elementos de interfaz de usuario que aparecen de manera diferente dependiendo de la selección de ubicación.  
+-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ofrece muchos elementos de interfaz de usuario que aparecen de manera diferente dependiendo de la selección de ubicación.  
   
 -   Un elemento de interfaz de usuario que se define utilizando la `DefaultInvisible` marca no se mostrará en el IDE a menos que se muestran por su implementación de VSPackage de la <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método, o asociado a un determinado contexto de interfaz de usuario en el `VisibilityConstraints` sección.  
   

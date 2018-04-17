@@ -1,29 +1,25 @@
 ---
-title: "Función SccDiff | Documentos de Microsoft"
-ms.custom: 
+title: Función SccDiff | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccDiff
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 832d80c3ca49cc03c4a66b6a4cf931dd40686c82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30d8d6a4b8b400088d5feed663c8257215a0f8a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccdiff-function"></a>SccDiff (función)
 Esta función muestra (o simplemente, opcionalmente, busca) las diferencias entre el archivo actual (en el disco local) y su última versión de archivo protegido en el origen de sistema de control.  

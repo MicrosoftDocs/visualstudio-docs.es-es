@@ -1,25 +1,23 @@
 ---
-title: "Información general sobre el lenguaje específico de dominio herramientas de interfaz de usuario | Documentos de Microsoft"
-ms.custom: 
+title: Información general sobre el lenguaje específico de dominio herramientas de interfaz de usuario | Documentos de Microsoft
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 24aad9d934b044ea42a3ad5319c2a10234ca94ef
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b2b2f56341f4acc08beefc83cde9df89b708e0c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
 Cuando se abre una solución de herramientas de lenguajes específicos de dominio (herramientas ADSL) en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la interfaz de usuario será similar a la siguiente imagen.  
@@ -42,7 +40,7 @@ Cuando se abre una solución de herramientas de lenguajes específicos de domini
   
  La tabla siguiente explican algunos de los elementos del diagrama de modelo de dominio.  
   
-|**Term**|**Definición**|  
+|**Término**|**Definición**|  
 |--------------|--------------------|  
 |Clase de dominio|Clases de dominio son los tipos de elementos de los modelos.<br /><br /> Una clase de dominio puede aparecer más de una vez en un diagrama, si es el destino de más de una relación.<br /><br /> Para agregar una clase de dominio, arrastre la herramienta de la clase de dominio desde el **cuadro de herramientas** a la **clases y relaciones** lateral del diagrama.|  
 |Relación de dominio|Las relaciones de dominio son los tipos de vínculos entre los elementos de los modelos.<br /><br /> Un *incrustar relación* indica que el elemento de destino está propiedad o incluido en el elemento de origen y aparece como una línea sólida. Todos los elementos de un modelo deben ser el destino de una relación de incrustación, para que el modelo constituye un árbol. A *referencia relación* indica un vínculo entre elementos del modelo general y aparece como una línea discontinua. Cualquier elemento puede tener cualquier número de vínculos de referencia.<br /><br /> Crear una relación, haga clic en la herramienta en el **cuadro de herramientas**, haga clic en la clase de dominio de origen y, a continuación, haga clic en la clase de destino.|  

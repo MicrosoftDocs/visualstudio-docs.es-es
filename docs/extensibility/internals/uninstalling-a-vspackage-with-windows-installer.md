@@ -1,27 +1,25 @@
 ---
 title: Desinstalar un paquete VSPackage con Windows Installer | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - packages, uninstalling
 - VSPackages, uninstalling
 - uninstalling VSPackages
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ee8ad89e02dfa8aebbb39a9d7ebe523ad01bb7e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d8a62692003b26afcd5b7814bdc03320fa1c453a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Desinstalar un paquete VSPackage con Windows Installer
 En su mayor parte, Windows Installer puede desinstalar el paquete de VS justo por "deshacer" lo que hizo para instalar el paquete de VS. Las acciones personalizadas se describen en [comandos que debe ser ejecutar después de instalación](../../extensibility/internals/commands-that-must-be-run-after-installation.md) se debe ejecutar después de la desinstalación también. Como las llamadas a devenv.exe se producen justo antes de la acción de InstallFinalize estándar para la instalación y desinstalación, las entradas de tabla CustomAction y InstallExecuteSequence sirven ambos casos.  
@@ -40,7 +38,7 @@ En su mayor parte, Windows Installer puede desinstalar el paquete de VS justo po
  Una alternativa consiste en agregar `OR Installed` para iniciar las condiciones que no son importantes durante la desinstalación. Esto asegura que la condición siempre será verdadera durante la desinstalación y, por tanto, no mostrará el mensaje de error de condición de inicio.  
   
 > [!NOTE]
->  `Installed`es la propiedad de que Windows Installer se establece cuando detecta que el paquete de VS ya se instaló en el sistema.  
+>  `Installed` es la propiedad de que Windows Installer se establece cuando detecta que el paquete de VS ya se instaló en el sistema.  
   
 ## <a name="see-also"></a>Vea también  
  [Instalador de Windows](http://msdn.microsoft.com/en-us/187d8965-c79d-4ecb-8689-10930fa8b3b5)   

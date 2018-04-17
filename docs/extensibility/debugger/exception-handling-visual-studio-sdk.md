@@ -1,27 +1,23 @@
 ---
 title: Excepciones (Visual Studio SDK) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a862c26dad97eecdb5f372f41a76d7886f32be
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 646479184061b093d5d84f81827a4106bd3cda47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Excepciones (SDK de Visual Studio)
 A continuación describe el proceso que tiene lugar cuando se produzcan excepciones.  
@@ -40,7 +36,7 @@ A continuación describe el proceso que tiene lugar cuando se produzcan excepcio
   
     -   Si el método devuelve S_OK, llama a [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
   
-         O bien  
+         -o bien-  
   
          Si el método devuelve S_FALSE, el programa que se está depurando tiene una segunda oportunidad para controlar la excepción.  
   

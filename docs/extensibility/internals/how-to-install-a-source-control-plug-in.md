@@ -1,26 +1,24 @@
 ---
-title: "Cómo: instalar un complemento de Control de código fuente | Documentos de Microsoft"
-ms.custom: 
+title: 'Cómo: instalar un complemento de Control de código fuente | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: dab9270b55f5980d36256db78db89b5e4ac186f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4ffabd7adf35956163c8744eae6539e96990f38a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Cómo: instalar un complemento de Control de código fuente
 Crear un control de código fuente complemento implica tres pasos:  
@@ -32,7 +30,7 @@ Crear un control de código fuente complemento implica tres pasos:
 3.  Registrar el archivo DLL mediante la realización de entradas de registro correspondientes.  
   
 ## <a name="integration-with-visual-studio"></a>Integración con Visual Studio  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]es compatible con complementos de control de código fuente que se ajustan a la API de complemento de Control de origen.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es compatible con complementos de control de código fuente que se ajustan a la API de complemento de Control de origen.  
   
 ### <a name="registering-the-source-control-plug-in"></a>Registrar el complemento de Control de código fuente  
  Antes de poder llamar un entorno de desarrollo integrado (IDE) está ejecutando en el sistema de control de código fuente, debe buscar primero el origen de la DLL del complemento que exporta la API de control.  
