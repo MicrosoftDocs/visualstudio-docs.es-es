@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4a6a16f2e67c2e50b46109142d95db4ba07fcfaf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 Visual Studio permite crear fácilmente un proyecto de Node.js y aprovechar IntelliSense y otras características integradas compatibles con Node.js. En este tutorial para Visual Studio, se crea un proyecto de aplicación web de Node.js a partir de una plantilla de Visual Studio. A continuación, se crea una aplicación sencilla con React. 
@@ -349,11 +349,20 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
 
     Sabrá que el depurador se ha asociado correctamente cuando el Explorador DOM y la Consola de JavaScript se abran correctamente en Visual Studio. Estas herramientas de depuración son similares a las herramientas de desarrollo de Chrome y a las herramientas F12 para Edge.
 
+    > [!NOTE]
+    > Si el depurador no se conecta y aparece el mensaje "No se puede asociar al proceso. Existe una operación que no es legal en el estado actual.", utilice el Administrador de tareas para cerrar todas las instancias de Chrome antes de iniciar Chrome en modo de depuración. Es posible que las extensiones de Chrome se estén ejecutando y eviten el modo de depuración completa.
+
 1. Dado que el código ya se ejecuta con el punto de interrupción, actualice la página del explorador para alcanzar el punto de interrupción.
 
     Mientras está en pausa en el depurador, puede pasar el mouse sobre las variables y usar las ventanas del depurador para examinar el estado de la aplicación. Para avanzar el depurador, puede ejecutar el código paso a paso (**F5**, **F10** y **F11**).
 
-    En función del estado del entorno y el explorador, puede alcanzar el punto de interrupción en app-bundle.js o en su ubicación asignada en app.tsx. En cualquier caso, puede ejecutar paso a paso el código y examinar las variables. (Si tiene que interrumpir el código en un archivo *.tsx* y no es capaz de hacerlo, pruebe a usar la instrucción `debugger;` o establezca puntos de interrupción en las herramientas de desarrollo de Chrome).
+    En función del estado del entorno y el explorador, puede alcanzar el punto de interrupción en *app-bundle.js* o su ubicación asignada en *app.tsx*. En cualquier caso, puede ejecutar paso a paso el código y examinar las variables.
+
+    * Si tiene que interrumpir el código en *app.tsx* y no puede hacerlo, use **Asociar al proceso** tal como se describe en los pasos anteriores para conectar el depurador. A continuación, abra desde el Explorador de soluciones el archivo *app.tsx* generado dinámicamente; para ello, abra **Documentos de Script** > **app.tsx**, establezca un punto de interrupción y actualice la página en el explorador.
+
+        Como alternativa, si tiene que interrumpir el código en un archivo *app.tsx* y no puede hacerlo, intente utilizar la instrucción `debugger;` de *app.tsx* o, en su lugar, establezca puntos de interrupción en las herramientas de desarrollo de Chrome.
+
+    * Si tiene que interrumpir el código en *app-bundle.js* y no puede hacerlo, quite el archivo del mapa de origen, *app-bundle.js.map*.
 
     > [!TIP]
     > Una vez que se asocia al proceso la primera vez siguiendo estos pasos, puede volver a asociar rápidamente al mismo proceso en Visual Studio 2017 si selecciona **Depurar** > **Reasociar al proceso**.

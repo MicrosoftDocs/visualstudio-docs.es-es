@@ -1,19 +1,19 @@
 ---
 title: 'Suscripciones de Visual Studio: ventajas para el suscriptor'
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: Obtenga información sobre las ventajas incluidas en su suscripción de Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
@@ -22,7 +22,7 @@ Las suscripciones de Visual Studio ofrecen el conjunto de recursos más completo
 Las ventajas se agrupan en tres categorías:
 
 ## <a name="tools"></a>Herramientas
-La categoría Herramientas proporciona acceso a una amplia variedad de ventajas, incluidas las ventajas más destacadas, como el [IDE de Visual Studio](/vs-ide-benefit), [Visual Studio Team Services](/vs-vsts) y [Azure](/vs-azure).  Dependiendo del nivel de suscripción, también verá las cuentas de desarrollador de Windows y Office 365, Visual Studio App Center y las ventajas de asociados como WhiteSource Bolt y ModernRequirements.
+La categoría Herramientas proporciona acceso a una amplia variedad de ventajas, incluidas las ventajas más destacadas, como el [IDE de Visual Studio](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/) y [Azure](/vs-azure/).  Dependiendo del nivel de suscripción, también verá las cuentas de desarrollador de Windows y Office 365, Visual Studio App Center y las ventajas de asociados como WhiteSource Bolt y ModernRequirements.
 
 ## <a name="professional-development"></a>Desarrollo profesional
 Para ayudarle a mejorar continuamente sus habilidades y mantenerse al día con las últimas tecnologías, le proporcionamos acceso a algunos de los mejores aprendizajes en línea disponibles desde líderes del sector. Entre los ejemplos del excelente contenido disponible se encuentran:

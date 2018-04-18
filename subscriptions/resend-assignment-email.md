@@ -1,21 +1,21 @@
 ---
-title: "Reenvío de correos electrónicos de asignación de suscripción desde Manage.visualstudio. com o VLSC | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/13/2018
-Ms.topic: Get-Started-Article
-Description: Learn how to resend the subscription assignment to subscribers from manage.visualstudio.com or VLSC
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 0ba7d6e36c25ced78b0c6b25688e5eb5b26eb04a
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Reenvío de correos electrónicos de asignación de suscripción desde Manage.visualstudio. com o VLSC | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/13/2018
+ms.topic: Get-Started-Article
+description: Obtenga información sobre cómo reenviar la asignación de suscripción a los suscriptores desde manage.visualstudio.com o VLSC
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 080ec95c73ed649168838d823a0dcc5d809ee89a
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="how-to-resend-subscription-assignment-emails"></a>Reenvío de correos electrónicos de asignación de suscripción:
+# <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Reenvío de correos electrónicos de asignación de suscripción en el portal de administración de suscripciones de Visual Studio
 
 Los pasos necesarios para reenviar un correo electrónico de asignación dependen del portal que esté utilizando para administrar sus suscripciones. 
 

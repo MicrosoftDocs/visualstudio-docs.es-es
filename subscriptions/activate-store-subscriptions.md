@@ -1,19 +1,19 @@
 ---
-title: "Activación de las suscripciones de Visual Studio adquiridas en Microsoft Store | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/25/2018
-Ms.topic: Get-Started-Article
-Description: Learn how to activate Visual Studio subscriptions you purchased in the Microsoft Store.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 5c8809221bcf4cfd2a92ec97411ea60623ee2f93
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Activación de las suscripciones de Visual Studio adquiridas en Microsoft Store | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/25/2018
+ms.topic: Get-Started-Article
+description: Obtenga información sobre cómo activar las suscripciones de Visual Studio adquiridas en Microsoft Store.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>¿Cómo puedo activar una suscripción adquirida en Microsoft Store?
 Si ha comprado una suscripción de Visual Studio a través de Microsoft Store, los pasos de activación se pueden iniciar desde la "página de confirmación" o el "correo electrónico de confirmación" recibido después del pago. 
@@ -23,7 +23,7 @@ Si ha comprado una suscripción de Visual Studio a través de Microsoft Store, l
   
 ## <a name="activate-your-subscription"></a>Activar la suscripción: 
 1. Haga clic en **Haga clic aquí para iniciar sesión**. 
-2. Se le redirigirá a [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
+2. Se le dirigirá a [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 3. Escriba la dirección de correo que requiere acceso a la suscripción de Visual Studio y haga clic en **Continuar**.
 4. Es posible que se le redirija a una de las dos páginas de inicio de sesión diferentes que existen en función del tipo de cuenta que esté usando:
     - Los suscriptores con una "Cuenta Microsoft" (MSA) personal verán la página de contraseña de la cuenta Microsoft.

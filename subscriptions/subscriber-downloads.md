@@ -1,19 +1,19 @@
 ---
 title: Uso de descargas de suscriptor en suscripciones de Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Sepa cómo encontrar y descargar los productos de Microsoft incluidos en su suscripción de Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso de descargas de suscriptor en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.  
@@ -34,7 +34,7 @@ Son varios los motivos por los que algunos productos no pueden estar disponibles
 ## <a name="what-do-i-get"></a>¿Qué se obtiene?
 El número y tipo de descargas dependen del nivel de la suscripción y las inscripciones a programas.  Los usuarios con suscripciones estándar de Visual Studio Enterprise, por ejemplo, pueden tener disponibles descargas distintas a las de los usuarios que obtienen sus suscripciones a través de una suscripción al programa BizSpark o Microsoft Partner Network.  Para más información sobre qué descargas están disponibles según el nivel de suscripción, descargue la lista [Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx), en la que se indican los productos por nivel de prestaciones.
 
-¿No sabe con seguridad qué suscripción usa?  Vaya a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
+¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>¿Cómo se pueden encontrar descargas en el portal de suscriptor? 
 En la página [Descargas](https://my.visualstudio.com/downloads/featured) solo verá las descargas que se incluyan con su suscripción.  Si tiene más de una suscripción o inscripción a un programa, las descargas que aparezcan se corresponderán con la **suscripción de más nivel** que posea, incluso si en ese momento está viendo una suscripción diferente.  Por ejemplo, si tiene una suscripción de Visual Studio Professional y una inscripción a Visual Studio Dev Essentials (ambas asociadas al mismo identificador de inicio de sesión), las descargas que se muestren serán las que se incluyan en la suscripción de nivel Professional, aun cuando esté viendo sus prestaciones de Dev Essentials.  

@@ -1,21 +1,21 @@
 ---
-title: "Inicio de sesión en las suscripciones de Visual Studio | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to Sign In to Your Visual Studio Subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: bb6313e06525967f7ac8dd0aa6dd74bb4417ffef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Inicio de sesión en las suscripciones de Visual Studio | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: Cómo iniciar sesión en la suscripción de Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a6a29a67882e36a23f5c61757b80cf9558b93be1
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-your-visual-studio-subscription"></a>Inicio de sesión en su suscripción de Visual Studio
+# <a name="signing-in-to-your-visual-studio-subscription"></a>Inicio de sesión en la suscripción de Visual Studio
 
 Los pasos para iniciar sesión en su suscripción de Visual Studio dependen del tipo de cuenta que esté usando.  Por ejemplo, puede que esté usando una cuenta Microsoft (MSA) o una dirección de correo electrónico proporcionada por su empresa o centro educativo.  
 

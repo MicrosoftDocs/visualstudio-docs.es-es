@@ -1,5 +1,5 @@
 ---
-title: "Acceso al Portal de administración | Visual Studio Marketplace"
+title: Acceso al Portal de administración | Visual Studio Marketplace
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Acceso al Portal de administradores para las suscripciones de Visual Studio
 ## <a name="for-mpsa"></a>Para MPSA
@@ -45,12 +45,12 @@ Para comprar suscripciones de nube de Visual Studio, visite Visual Studio Market
 ### <a name="microsoft-bizspark"></a>Microsoft BizSpark
 Si es administrador de Microsoft BizSpark, puede administrar las suscripciones de Visual Studio de su organización en **My BizSpark**. Para ello, inicie sesión en: [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
 
-Para saber más sobre el programa Microsoft BizSpark, vea [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
+Para obtener más información sobre el programa Microsoft BizSpark, consulte [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
 
 
 ### <a name="imagine"></a>Imagine
-Si es administrador de Microsoft Imagine, visite [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
+Si es un administrador de Microsoft Imagine, visite [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
 
 
 ### <a name="partner"></a>Socio
-Para saber más sobre las suscripciones de Visual Studio de Microsoft Partner Network (MPN), eche un vistazo a este artículo con recursos que le ayudarán a comprarlas y administrarlas: [https://support.microsoft.com/help/4013871/ Microsoft-Partner-Network-MPN-Visual-Studio-subscriptions](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).
+Para obtener más información sobre las suscripciones de Visual Studio de Microsoft Partner Network (MPN), eche un vistazo a este artículo con recursos que lo ayudarán a comprarlas y administrarlas: [https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).

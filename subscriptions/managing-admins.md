@@ -1,5 +1,5 @@
 ---
-title: "Administración de derechos de administrador en el Portal de administrador de suscripciones de Visual Studio"
+title: Administración de derechos de administrador en el Portal de administrador de suscripciones de Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,15 +10,15 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>Administración de derechos de administrador en el Portal de administrador de suscripciones de Visual Studio
 
 ## <a name="overview"></a>Información general 
-En el Portal de administrador de suscripciones de Visual Studio (https://manage.visualstudio.com) existen dos roles:
+En el Portal de administrador de suscripciones de Visual Studio (https://manage.visualstudio.com)), existen dos roles de administración:
 
 **Superadministradores:** al configurar una organización por primera vez, el contacto principal o el encargado de los avisos es de forma predeterminada el superadministrador. El contacto principal o el encargado de los avisos puede asignar superadministradores o administradores adicionales. Además de administrar las suscripciones de los suscriptores individuales, los superadministradores pueden agregar y quitar otros administradores y superadministradores. Si hay más de dos superadministradores en el sistema, un superadministrador puede eliminarlos a todos menos a los dos últimos por razones de seguridad. 
 

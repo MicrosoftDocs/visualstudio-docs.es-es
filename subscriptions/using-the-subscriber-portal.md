@@ -1,23 +1,23 @@
 ---
-title: Uso del Portal de suscriptor - http://my.visualstudio.com | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/4/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the full range of benefits available to you on the Visual Studio subscriptions portal
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2c2939ff8b4d20f2db7dd736c6a0dee28785645c
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: 'Uso del Portal de suscriptor: http://my.visualstudio.com | Microsoft Docs'
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/04/2018
+ms.topic: Get-Started-Article
+description: Obtenga información sobre toda la gama de ventajas disponibles en el portal de suscripciones de Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del Portal de suscriptor - my.<span></span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Uso del Portal de suscriptor: my.<span></span>visualstudio<span></span>.com
 
-El Portal de suscripciones de Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), es el recurso que incluye todas las opciones para sacar partido del amplio abanico de beneficios que ofrece su suscripción a Visual Studio. 
+El Portal de suscripciones de Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), es el recurso que incluye todas las opciones para sacar partido del amplio abanico de ventajas que ofrece su suscripción a Visual Studio. 
 
 El uso del portal requiere el inicio de sesión con la identidad asociada a su suscripción.  Puede ser una cuenta Microsoft (MSA) o una dirección de correo electrónico que le haya proporcionado una organización, como su empresa o institución educativa.  Obtenga información acerca del [inicio de sesión](/visualstudio/subscriptions/signing-in).
 

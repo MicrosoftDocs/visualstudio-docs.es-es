@@ -1,23 +1,22 @@
 ---
 title: Uso de claves de producto | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to obtain and manage your product keys in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 2d3ca72182c26e2e43bcdf97ea6277a4dd1375f0
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
-## <a name="product-keys-overview"></a>Introducción a las claves de producto
 Las suscripciones de Visual Studio dan acceso a una amplia gama de productos de Microsoft para diseñar, desarrollar, probar y demostrar aplicaciones. Algunos de estos productos necesitan claves de producto durante la instalación y, de estos, algunos necesitan activación.
 
 Por lo general, las suscripciones de Visual Studio incluyen cinco claves de producto relativas a las versiones actuales de Windows y los productos de Office, además de tres claves de versiones anteriores.
@@ -48,7 +47,7 @@ Nuestros estudios revelan que el número de claves de producto que incluye la su
 ## <a name="locating-and-claiming-product-keys"></a>Búsqueda y reclamación de claves de producto
 Debe iniciar sesión en su suscripción de Visual Studio para ver las claves de producto. Encontrará las claves de producto individuales si selecciona el vínculo azul **Obtener clave** de un determinado producto en la página [Descargas](https://my.visualstudio.com/downloads).  Todas las claves también se encuentran disponibles en la página [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Si hay varias claves para un solo producto, en la columna Notas de la descarga aparecerán unas notas para ayudarle a identificar qué clave se debe usar.
 
-![Obtención de la clave desde la página Descargas](_img/product-keys/download-get-key.png)
+   ![Obtención de la clave desde la página Descargas](_img/product-keys/download-get-key.png)
 
 A veces se unen varias ediciones del producto en una sola descarga. En estos casos, la clave del producto que se introduce determina la edición del producto que se instalará.
 Algunas claves se proporcionan de manera automática, como las claves "estáticas", que puede usar todas las veces necesarias, ya que la activación no es obligatoria. Para reclamar otras claves, seleccione el vínculo **Obtener clave** del producto en cuestión.
@@ -82,7 +81,7 @@ Para reclamar una clave de producto:
 1.  Inicie sesión en su suscripción de Visual Studio.  Debe iniciar sesión para descargar productos o reclamar claves de producto. 
 2.  Haga clic en la pestaña [Claves de producto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
 3.  Las claves de producto aparecen ordenadas alfabéticamente por nombre de producto.  Puede ir al nombre del producto que quiera o buscarlo con la barra de búsqueda que hay en la parte superior de la página.  
-![Búsqueda de la clave de producto](_img\product-keys\visio-product-key-cropped.png)
+    ![Búsqueda de la clave de producto](_img\product-keys\visio-product-key-cropped.png)
 
 En este ejemplo, usamos la barra de búsqueda para encontrar una clave de producto de Visio 2010.
 Como puede ver, hay varias versiones de Visio 2010.  Ya se ha reclamado una clave de Visio Standard 2010 y otra de Visio 2010 Premium, y ambos productos tienen cuatro claves restantes.  Las claves que se han reclamado son claves comerciales y se muestran como tal en la página.  Observe que en la columna **Notas** puede incluir una breve nota sobre las claves reclamadas.  Puede usar esta información junto con la fecha reflejada en la columna **Reclamado** para llevar un seguimiento de las claves reclamadas.  Por ejemplo, en las notas puede dejar constancia de cuándo ha activado una instalación del producto con la clave.  
@@ -91,7 +90,7 @@ Como puede ver, hay varias versiones de Visio 2010.  Ya se ha reclamado una clav
 Puede exportar una lista de todas las claves que ha reclamado, junto con una amplia selección de claves estáticas y de otro tipo que se marcan automáticamente como "reclamadas".  
 
 > [!IMPORTANT] 
-> Si la suscripción expira, ya no podrá reclamar nuevas claves ni exportar las claves que ya haya reclamado.** 
+> Si la suscripción expira, ya no podrá reclamar claves nuevas ni exportar las claves que ya haya reclamado. 
 
 Para exportar las claves, basta con hacer clic en el vínculo **Export all keys** (Exportar todas las claves) en el extremo derecho de la página Claves de producto.  Se creará un archivo .xml llamado KeysExport.xml y podrá optar entre abrirlo o guardarlo.  Debe abrir el archivo con una aplicación capaz de administrar archivos .xml.  Por ejemplo, puede abrir el archivo como libro de solo lectura en Excel.  
 
