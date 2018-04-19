@@ -16,7 +16,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 4da0cad183aa39e26c39f48bca401194c9eab2f9
 ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
 ---
@@ -34,7 +34,7 @@ Puede tomar medidas para evitar Just-in-Time cuadro de diálogo de depurador que
 
 1. (Aplicaciones web) Si desea ejecutar una aplicación web, puede deshabilitar la depuración de script.
 
-    Para Internet Explorer o Edge, deshabilitar la depuración de scripts en el cuadro de diálogo Opciones de Internet. Puede tener acceso a esta configuración de la **el Panel de Control** > **red e Internet** > **opciones de Internet** (los pasos exactos dependen de su versión de Windows y el explorador).
+    Para Internet Explorer o Microsoft Edge, deshabilitar la depuración de scripts en el cuadro de diálogo Opciones de Internet. Puede tener acceso a esta configuración de la **el Panel de Control** > **red e Internet** > **opciones de Internet** (los pasos exactos dependen de su versión de Windows y el explorador).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 

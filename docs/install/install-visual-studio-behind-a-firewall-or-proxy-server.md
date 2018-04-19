@@ -1,20 +1,20 @@
 ---
-title: "Instalar Visual Studio detrás de un firewall o servidor proxy | Documentos de Microsoft"
-description: 
-ms.custom: 
+title: Instalar Visual Studio detrás de un firewall o servidor proxy | Documentos de Microsoft
+description: ''
+ms.custom: ''
 ms.date: 08/01/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/15/2018
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Instalar Visual Studio detrás de un firewall o servidor proxy
 
-El Instalador de Visual Studio descarga archivos de distintos dominios y sus servidores de descarga. Esta página enumera las direcciones URL de dominio que le recomendamos que agregue a la "lista blanca" como de confianza en los scripts de implementación.
+El Instalador de Visual Studio descarga archivos de distintos dominios y sus servidores de descarga. Esta página enumera las direcciones URL de dominio que le recomendamos que agregue a la "lista de permitidos" como de confianza en los scripts de implementación.
 
 Si es posible para su entorno, considere la posibilidad de agregar los dominios siguientes con protocolos HTTP y HTTPS.
 

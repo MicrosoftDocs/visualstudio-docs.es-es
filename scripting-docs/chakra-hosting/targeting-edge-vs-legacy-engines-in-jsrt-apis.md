@@ -1,14 +1,14 @@
 ---
 title: Compatibilidad con motores de borde o Motores heredados en las API de JsRT | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,7 +19,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>Compatibilidad con motores de borde o motores heredados en las API de JsRT
-A partir de Windows 10, uno de los cambios que hemos realizado en Chakra (el motor de JavaScript), en la misma línea que la estrategia del explorador de Windows 10 de admitir un nuevo motor de representación Edge, consiste en admitir dos motores de Chakra diferentes:  
+A partir de Windows 10, uno de los cambios que hemos realizado en Chakra (el motor de JavaScript), en la misma línea que la estrategia del explorador de Windows 10 de admitir un nuevo motor de representación Microsoft Edge, consiste en admitir dos motores de Chakra diferentes:  
   
 -   El antiguo motor de Chakra (también denominado *motor heredado* o jscript9.dll debajo), que se incluye con Internet Explorer 11 y es compatible con este explorador. Este motor está congelado en el tiempo y no cambiará en esencia a partir de la versión Win8.1/IE11.  
   
@@ -147,7 +147,7 @@ public static extern JsErrorCode JsStartDebugging();
   
 -   La aplicación solo puede admitir una versión de JsRT por proceso.  
   
-     Por ejemplo, no puede crear un entorno de ejecución de motor Edge y luego uno de motor heredado y esperar que se ejecuten correctamente en el mismo proceso. Esto no se admite y podría dar lugar a un comportamiento no documentado, como un error al cargar la segunda DLL.  
+     Por ejemplo, no puede crear un entorno de ejecución de motor Microsoft Edge y luego uno de motor heredado y esperar que se ejecuten correctamente en el mismo proceso. Esto no se admite y podría dar lugar a un comportamiento no documentado, como un error al cargar la segunda DLL.  
   
 -   Cuando se elige como destino el motor perimetral, la aplicación podría adquirir inesperadamente nuevas características cuando se actualiza automáticamente la plataforma subyacente.  
   

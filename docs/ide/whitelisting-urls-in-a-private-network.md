@@ -1,14 +1,14 @@
 ---
-title: "Inclusión en lista blanca de direcciones URL en una red privada | Microsoft Docs"
-ms.custom: 
+title: Inclusión en lista de permitidos de direcciones URL en una red privada | Microsoft Docs
+ms.custom: ''
 ms.date: 09/19/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
-ms.assetid: 
+ms.assetid: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -20,7 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/15/2018
 ---
-# <a name="whitelisting-urls-in-a-private-network"></a>Inclusión en lista blanca de direcciones URL en una red privada
+# <a name="whitelisting-urls-in-a-private-network"></a>Inclusión en lista de permitidos de direcciones URL en una red privada
 
 Si usa Visual Studio en una red privada en la que se utiliza un dispositivo de seguridad (por ejemplo, un firewall), es posible que Visual Studio no pueda conectarse a algunos recursos de red. Entre estos recursos se incluyen Visual Studio Team Services (VSTS) para el inicio de sesión y la concesión de licencias, NuGet y los servicios de Azure. Si se produce un error en Visual Studio al conectarse a uno de estos recursos, verá el mensaje de error siguiente:
 

@@ -27,15 +27,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 04/03/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
-Si usted o su organización utiliza medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá desee "incluir en una lista blanca", así como puertos y protocolos que desea abrir para tener la mejor experiencia al instalar y utilizar Visual Studio y los servicios de Azure.
+Si usted o su organización utiliza medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá desee "incluir en una lista de permitidos", así como puertos y protocolos que desea abrir para tener la mejor experiencia al instalar y utilizar Visual Studio y los servicios de Azure.
 
-* **[Instalación de Visual Studio](#install-visual-studio)**: en estas tablas se indican las direcciones URL de dominio que se van a incluir en la lista blanca para que tenga acceso a todos los componentes y las cargas de trabajo que desee.
+* **[Instalación de Visual Studio](#install-visual-studio)**: en estas tablas se indican las direcciones URL de dominio que se van a incluir en la lista de permitidos para que tenga acceso a todos los componentes y las cargas de trabajo que desee.
 
-* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)**: en esta tabla se indican las direcciones URL de dominio que se van a incluir en la lista blanca, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y servicios que desee.
+* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)**: en esta tabla se indican las direcciones URL de dominio que se van a incluir en la lista de permitidos, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y servicios que desee.
 
 ## <a name="install-visual-studio"></a>Instalar Visual Studio
-### <a name="urls-to-whitelist"></a>Direcciones URL para incluir en la lista blanca
-Debido a que el Instalador de Visual Studio descarga archivos de varios dominios y sus servidores de descarga, aquí se muestran las direcciones URL de los dominios que pueden incluirse en la lista blanca como de confianza en la interfaz de usuario o en los scripts de implementación.
+### <a name="urls-to-whitelist"></a>Direcciones URL para incluir en la lista de permitidos
+Debido a que el Instalador de Visual Studio descarga archivos de varios dominios y sus servidores de descarga, aquí se muestran las direcciones URL de los dominios que pueden incluirse en la lista de permitidos como de confianza en la interfaz de usuario o en los scripts de implementación.
 
 #### <a name="microsoft-domains"></a>Dominios de Microsoft
 | Dominio | Propósito |
@@ -72,8 +72,8 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Uso de Visual Studio y de servicios de Azure
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Direcciones URL para incluir en la lista blanca y puertos y protocolos para abrir
-Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual Studio o servicios de Azure detrás de un firewall o servidor proxy, estas son las direcciones URL que debe incluir en la lista blanca, así como los puertos y protocolos que puede querer abrir.
+### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Direcciones URL para incluir en la lista de permitidos y puertos y protocolos para abrir
+Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual Studio o servicios de Azure detrás de un firewall o servidor proxy, estas son las direcciones URL que debe incluir en la lista de permitidos, así como los puertos y protocolos que puede querer abrir.
 
 | Servicio o escenario | Punto de conexión DNS | Protocolo | Puerto | Description |
 | --- | --- | --- | --- | --- |

@@ -1,19 +1,20 @@
 ---
 title: Novedades de JavaScript | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 342b68ef-df93-48c4-81de-bdf6b6ce58d9
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -24,9 +25,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
 ---
 # <a name="what39s-new-in-javascript"></a>Novedades de JavaScript
-En este documento se incluyen las nuevas características de JavaScript compatibles con el [modo Edge](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx), [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)] y con las aplicaciones de la Tienda Windows Phone.  
+En este documento se incluyen las nuevas características de JavaScript compatibles con el [modo Microsoft Edge](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx), [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)] y con las aplicaciones de la Tienda Windows Phone.  
   
- Para averiguar qué elementos de JavaScript son compatibles con el modo Edge y están en desuso en aplicaciones de [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)], consulte [Información de versión de JavaScript](../javascript/reference/javascript-version-information.md).  
+ Para averiguar qué elementos de JavaScript son compatibles con el modo Microsoft Edge y están en desuso en aplicaciones de [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)], consulte [Información de versión de JavaScript](../javascript/reference/javascript-version-information.md).  
   
 > [!IMPORTANT]
 >  Para obtener información sobre cómo crear aplicaciones de [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)] y de la Tienda Windows Phone usando JavaScript, junto con información sobre el editor de JavaScript de Visual Studio y otras características, consulte [Desarrollar aplicaciones de la Tienda Windows con Visual Studio 2013](http://go.microsoft.com/fwlink/p/?LinkID=238263).  

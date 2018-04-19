@@ -1,15 +1,15 @@
 ---
-title: "Corrección de errores Se necesita autorización de proxy | Microsoft Docs"
-ms.custom: 
+title: Corrección de errores Se necesita autorización de proxy | Microsoft Docs
+ms.custom: ''
 ms.date: 09/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: c2d24ae1-9902-460e-b72a-0299eed9ee82
-caps.latest.revision: 
+caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
@@ -41,7 +41,7 @@ Por lo general, este error se produce cuando los usuarios están conectados a In
 
     - *.live.com
 
-- En caso contrario puede quitar la dirección http://go.microsoft.com de la lista blanca para que el cuadro de diálogo de autenticación de proxy aparezca para la dirección http://go.microsoft.com y para los puntos de conexión del servidor cuando se reinicie Visual Studio.
+- En caso contrario puede quitar la dirección http://go.microsoft.com de la lista de permitidos para que el cuadro de diálogo de autenticación de proxy aparezca para la dirección http://go.microsoft.com y para los puntos de conexión del servidor cuando se reinicie Visual Studio.
 
     O
 

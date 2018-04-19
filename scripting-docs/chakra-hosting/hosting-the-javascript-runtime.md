@@ -1,14 +1,14 @@
 ---
-title: "Hospedaje de JavaScript en tiempo de ejecución | Microsoft Docs"
-ms.custom: 
+title: Hospedaje de JavaScript en tiempo de ejecución | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -72,13 +72,13 @@ Las API de JavaScript Runtime (JsRT) permiten a las aplicaciones de escritorio, 
   
  A partir de Windows 10, el motor de JavaScript Chakra admite un motor heredado y el motor Microsoft Edge, y cualquiera puede ser el destino en JsRT (consulte el artículo sobre el [motor Edge como destino frente a los. motores heredados](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md) para obtener más información). La depuración de un script en Visual Studio funciona de forma diferente en el motor heredado y en el motor Edge. Con el motor heredado, el host debe proporcionar un puntero de [interfaz de IDebugApplication](../winscript/reference/idebugapplication-interface.md), que puede obtenerse de una instancia de [interfaz de IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md). Con el motor Edge, `IDebugApplication` ha quedado en desuso. El motor Chakra permite funcionalidades de depuración nativa y de script mediante el depurador de Visual Studio sin necesidad de que el usuario implemente `IDebugApplication` .  
   
- Para conseguir que los scripts de un contexto de ejecución se puedan depurar, el motor Chakra tiene que pasar a usar métodos menos eficaces de ejecución de código. Como tal, el código depurable se ejecuta normalmente más despacio que el no depurable. Por ello, con el motor heredado, un host puede elegir entre iniciar la depuración en un contexto de ejecución desde el principio proporcionando el puntero de `IDebugApplication` por adelantado a través de `JsCreateContext`, o esperar hasta que la depuración sea necesaria y entonces llamar a `JsStartDebugging`. Con el motor Edge, `JsCreateContext` ya no toma un parámetro `IDebugApplication` , y como resultado el script es depurable solo después de llamar a `JsStartDebugging` . Al realizar la depuración con Visual Studio, debe habilitarse la opción del depurador "Script".  
+ Para conseguir que los scripts de un contexto de ejecución se puedan depurar, el motor Chakra tiene que pasar a usar métodos menos eficaces de ejecución de código. Como tal, el código depurable se ejecuta normalmente más despacio que el no depurable. Por ello, con el motor heredado, un host puede elegir entre iniciar la depuración en un contexto de ejecución desde el principio proporcionando el puntero de `IDebugApplication` por adelantado a través de `JsCreateContext`, o esperar hasta que la depuración sea necesaria y entonces llamar a `JsStartDebugging`. Con el motor Microsoft Edge, `JsCreateContext` ya no toma un parámetro `IDebugApplication` , y como resultado el script es depurable solo después de llamar a `JsStartDebugging` . Al realizar la depuración con Visual Studio, debe habilitarse la opción del depurador "Script".  
   
- Hay dos maneras de generar un perfil del código JavaScript de un contexto de ejecución. En Windows 8.1 y versiones posteriores, se puede usar el generador de perfiles de línea de comandos de Visual Studio (vsperf.exe) con el modificador /js para generar un informe que se centre en el código JavaScript ejecutado en la aplicación. O el host puede llamar directamente a `JsStartProfiling` y `JsStopProfiling` y proporcionar una devolución de llamada para realizar la generación de perfiles él mismo. El host también puede examinar el estado del montón de recolección de elementos no utilizados llamando a `JsEnumerateHeap`. La generación de perfiles de JsRT funciona de la misma manera entre el motor heredado y el motor Edge. Sin embargo, las API de generación de perfiles de JsRT (`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`y `JsIsEnumeratingHeap`) no están disponibles para aplicaciones universales de Windows.  
+ Hay dos maneras de generar un perfil del código JavaScript de un contexto de ejecución. En Windows 8.1 y versiones posteriores, se puede usar el generador de perfiles de línea de comandos de Visual Studio (vsperf.exe) con el modificador /js para generar un informe que se centre en el código JavaScript ejecutado en la aplicación. O el host puede llamar directamente a `JsStartProfiling` y `JsStopProfiling` y proporcionar una devolución de llamada para realizar la generación de perfiles él mismo. El host también puede examinar el estado del montón de recolección de elementos no utilizados llamando a `JsEnumerateHeap`. La generación de perfiles de JsRT funciona de la misma manera entre el motor heredado y el motor Microsoft Edge. Sin embargo, las API de generación de perfiles de JsRT (`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`y `JsIsEnumeratingHeap`) no están disponibles para aplicaciones universales de Windows.  
   
 <a name="Windows"></a>   
 ## <a name="jsrt-and-the-universal-windows-platform"></a>JsRT and the Universal Windows Platform  
- Puede usar las API de JsRT para agregar funcionalidades de scripting a una aplicación universal de Windows. Una aplicación universal de Windows que usa las API de JsRT tendrá como destino las API de JSRT Edge, que a su vez tienen como destino el motor Chakra de Edge. Para obtener más información, vea el artículo sobre [Edge o motores heredados](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md). La API completa de JsRT está disponible para aplicaciones universales de Windows, excepto para la compatibilidad con enumeración de montón y generación de perfiles (no se admite`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`ni `JsIsEnumeratingHeap` ).  
+ Puede usar las API de JsRT para agregar funcionalidades de scripting a una aplicación universal de Windows. Una aplicación universal de Windows que usa las API de JsRT tendrá como destino las API de JSRT Edge, que a su vez tienen como destino el motor Chakra de Edge. Para obtener más información, vea el artículo sobre [Microsoft Edge o motores heredados](../chakra-hosting/targeting-edge-vs-legacy-engines-in-jsrt-apis.md). La API completa de JsRT está disponible para aplicaciones universales de Windows, excepto para la compatibilidad con enumeración de montón y generación de perfiles (no se admite`JsStartProfiling`, `JsStopProfiling`, `JsEnumerateHeap`ni `JsIsEnumeratingHeap` ).  
   
  JsRT también permite que los scripts accedan de forma nativa a cualquier [API de la Plataforma universal de Windows (UWP)](https://msdn.microsoft.com/en-us/library/windows/apps/br211377.aspx) tras exponer el espacio de nombres de la API a través del elemento `JsProjectWinRTNamespace`de la API de JsRT Edge. A diferencia de las aplicaciones universales de Windows, que no requieren ninguna configuración adicional aparte de proyectar los espacios de nombres necesarios, en las aplicaciones de Windows clásicas (Win32) hay que habilitar un mecanismo de bombeo delegado inicializado por COM a través de `JsSetProjectionEnqueueCallback` a fin de habilitar los eventos y las API asincrónicas. En el siguiente ejemplo de Win32 se usan las API asincrónicas de UWP para crear un cliente http y obtener contenido desde un Uri:  
   
