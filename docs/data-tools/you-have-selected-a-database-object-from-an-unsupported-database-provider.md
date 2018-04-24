@@ -1,8 +1,7 @@
 ---
-title: Ha seleccionado un objeto de base de datos de un proveedor de base de datos no admitido | Documentos de Microsoft
-ms.custom: ''
+title: Ha seleccionado un objeto de base de datos de un proveedor de bases de datos no admitido
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
 author: gewarren
 ms.author: gewarren
@@ -10,30 +9,32 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5dfb475cdb1b63e4dfcaaebcda4b5d2dc3a7f070
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0646f153149d887ce87f2688d9c28b3da502ba1c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Ha seleccionado un objeto de base de datos de un proveedor de bases de datos no admitido
-Object Relational Designer admite únicamente el proveedor de datos de .NET Framework para SQL Server (<xref:System.Data.SqlClient>). Aunque puede hacer clic en **Aceptar** y continuar trabajando con objetos de proveedores de base de datos no compatible, puede experimentar un comportamiento inesperado en tiempo de ejecución.  
-  
+
+Object Relational Designer admite únicamente el proveedor de datos de .NET Framework para SQL Server (<xref:System.Data.SqlClient>). Aunque puede hacer clic en **Aceptar** y continuar trabajando con objetos de proveedores de base de datos no compatible, puede experimentar un comportamiento inesperado en tiempo de ejecución.
+
 > [!NOTE]
->  Se admiten únicamente las conexiones de datos que usan el proveedor de datos .NET Framework para SQL Server.  
-  
-### <a name="to-correct-this-error"></a>Para corregir este error  
-  
+> Se admiten únicamente las conexiones de datos que usan el proveedor de datos .NET Framework para SQL Server.
+
+## <a name="to-correct-this-error"></a>Para corregir este error
+
 - Haga clic en **Aceptar**.
 
-   Puede continuar diseñando las clases de entidad que se asignan a la conexión que utiliza el proveedor de base de datos no admitido. Puede que se produzca un comportamiento inesperado cuando se usan proveedores de base de datos no admitidos.  
-  
-     -o bien-  
-  
+   Puede continuar diseñando las clases de entidad que se asignan a la conexión que utiliza el proveedor de base de datos no admitido. Puede que se produzca un comportamiento inesperado cuando se usan proveedores de base de datos no admitidos.
+
+    -o bien-
+
 - Haga clic en **cancelar**.
 
-   Se detiene la acción. Cree o utilice una conexión de datos que use el Proveedor de .NET Framework para servidor SQL Server.  
-  
+   Se detiene la acción. Cree o utilice una conexión de datos que use el Proveedor de .NET Framework para servidor SQL Server.
+
 ## <a name="see-also"></a>Vea también
-[Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)  
-[LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+
+- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
+- [LINQ to SQL de las herramientas en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
