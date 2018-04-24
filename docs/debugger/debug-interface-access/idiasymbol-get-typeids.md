@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_typeids | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21c0aad37f51ca388c73ada62512887ff67e3e9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f1ad4aae54096ea2fdcbcac1a68d32fc3b386ad
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
 Recupera una matriz de valores de identificador de tipo específico de compilador para este símbolo.  

@@ -2,8 +2,7 @@
 title: 'Idiasession:: Put_loadaddress | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa8f7c12e07f68d8c3fdd85f0d33d964847abf22
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0b04db800e5b61ef1598fe4c81a9ab362e375e3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 Establece la dirección de carga del archivo ejecutable que corresponde a los símbolos en este almacén de símbolos.  

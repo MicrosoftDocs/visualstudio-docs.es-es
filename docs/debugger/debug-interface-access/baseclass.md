@@ -2,8 +2,7 @@
 title: BaseClass | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146cc06ef4ac2204024053c07cf175ed6f2fc0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b86e6e9b0fc6a2649c41ddfc00da2ffbdca2ff74
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="baseclass"></a>BaseClass
 Cada clase base para un símbolo de tipo definido por el usuario (UDT) se identifica mediante un elemento secundario con un `SymTagBaseClass` etiqueta. El [idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) propiedad contiene el símbolo para que el UDT subyacente y todas las propiedades del UDT subyacente están disponibles como parte de este BaseClass (símbolo).  
