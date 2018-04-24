@@ -2,8 +2,7 @@
 title: Ejecutar aplicaciones UWP en un equipo remoto | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/05/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c09d29340584f3f6187175342fd1171dd59ba37
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Ejecutar aplicaciones UWP en un equipo remoto en Visual Studio
   

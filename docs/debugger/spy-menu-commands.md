@@ -2,8 +2,7 @@
 title: Comandos de menú de Spy | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy menu commands
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d711e30fa50a19a8826fb277a179ef68e427a41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7a11b24f5f0f950fabe475a0f0099e76032451fb
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="spy-menu-commands"></a>Comandos de menú de Spy
 El **Spy** menú proporciona comandos para trabajar con ventanas de Spy ++ y vistas.  

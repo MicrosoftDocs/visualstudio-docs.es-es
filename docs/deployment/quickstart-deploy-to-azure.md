@@ -2,8 +2,7 @@
 title: Publicar en servicio de aplicación de Azure - Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/22/2017
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: d6de76a3f3bd781ec8cd798eef87cce7acd01e69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publicar una aplicación ASP.NET o ASP.NET Core para el servicio de aplicaciones de Azure con Visual Studio
 

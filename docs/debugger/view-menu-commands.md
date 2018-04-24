@@ -2,8 +2,7 @@
 title: Ver los comandos del menú | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - View menu commands
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faa0349aa58baaf0b503481973e5d9687da4c14e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbfbcd8d586c1c6d2d3b208c3d7d62b2b333845d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-menu-commands"></a>Comandos del menú Ver
 El **vista** menú proporciona comandos para controlar la Spy ++, interfaz de usuario.  

@@ -1,84 +1,82 @@
 ---
-title: 'CA2151: Los campos con los tipos críticos deben ser crítico para la seguridad | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA2151: Los campos con tipos críticos deben ser críticos para la seguridad'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 09db9d25-7d58-4725-a252-4a07baadf046
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1123b3a2d73119836265dcf1dd4dcdc763179ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ae4c0375d4fa8ab059b13bf3aa5cbb492fa9094
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Los campos con tipos críticos deben ser críticos para la seguridad
-|||  
-|-|-|  
-|TypeName||  
-|Identificador de comprobación|CA2151|  
-|Categoría|Microsoft.Security|  
-|Cambio problemático|Problemático|  
-  
-## <a name="cause"></a>Motivo  
- Se declara un campo transparente para la seguridad o un campo crítico seguro. Su tipo se especifica como crítico para la seguridad. Por ejemplo:  
-  
-```csharp  
-[assembly: AllowPartiallyTrustedCallers]  
-  
-   [SecurityCritical]  
-   class Type1 { } // Security Critical type  
-  
-   class Type2 // Security transparent type  
-   {  
-      Type1 m_field; // CA2151, transparent field of critical type  
-   }  
-  
-```  
-  
- En este ejemplo, `m_field` es un campo transparente para la seguridad de un tipo que es crítico para la seguridad.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Para utilizar tipos críticos para la seguridad, el código que hace referencia al tipo debe ser crítico para la seguridad o crítico para la seguridad y disponible desde código transparente. Esto es así incluso si la referencia es indirecta. Por ejemplo, cuando se hace referencia a un campo transparente que tiene un tipo crítico, el código debe ser crítico para la seguridad o crítico para la seguridad y disponible desde código transparente. Por consiguiente, tener un campo transparente para la seguridad o crítico para la seguridad y disponible desde código transparente puede llevar a confusión, porque el código transparente todavía no podrá tener acceso al campo.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, marque el campo con el atributo <xref:System.Security.SecurityCriticalAttribute> o convierta el tipo al que hace referencia el campo en transparente para la seguridad o crítico para la seguridad y disponible desde código transparente.  
-  
-```csharp  
-// Fix 1: Make the referencing field security critical  
-[assembly: AllowPartiallyTrustedCallers]  
-  
-   [SecurityCritical]  
-   class Type1 { } // Security Critical type  
-  
-   class Type2 // Security transparent type  
-   {  
-      [SecurityCritical]  
-      Type1 m_field; // Fixed: critical type, critical field  
-   }  
-  
-// Fix 2: Make the referencing field security critical  
-[assembly: AllowPartiallyTrustedCallers]  
-  
-   class Type1 { } // Type1 is now transparent  
-  
-   class Type2 // Security transparent type  
-   {  
-      [SecurityCritical]  
-      Type1 m_field; // Fixed: critical type, critical field  
-   }  
-  
-```  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
-  
-### <a name="code"></a>Código  
- [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]  
-  
+|||
+|-|-|
+|TypeName||
+|Identificador de comprobación|CA2151|
+|Categoría|Microsoft.Security|
+|Cambio problemático|Problemático|
+
+## <a name="cause"></a>Motivo
+ Se declara un campo transparente para la seguridad o un campo crítico seguro. Su tipo se especifica como crítico para la seguridad. Por ejemplo:
+
+```csharp
+[assembly: AllowPartiallyTrustedCallers]
+
+   [SecurityCritical]
+   class Type1 { } // Security Critical type
+
+   class Type2 // Security transparent type
+   {
+      Type1 m_field; // CA2151, transparent field of critical type
+   }
+
+```
+
+ En este ejemplo, `m_field` es un campo transparente para la seguridad de un tipo que es crítico para la seguridad.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Para utilizar tipos críticos para la seguridad, el código que hace referencia al tipo debe ser crítico para la seguridad o crítico para la seguridad y disponible desde código transparente. Esto es así incluso si la referencia es indirecta. Por ejemplo, cuando se hace referencia a un campo transparente que tiene un tipo crítico, el código debe ser crítico para la seguridad o crítico para la seguridad y disponible desde código transparente. Por consiguiente, tener un campo transparente para la seguridad o crítico para la seguridad y disponible desde código transparente puede llevar a confusión, porque el código transparente todavía no podrá tener acceso al campo.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, marque el campo con el atributo <xref:System.Security.SecurityCriticalAttribute> o convierta el tipo al que hace referencia el campo en transparente para la seguridad o crítico para la seguridad y disponible desde código transparente.
+
+```csharp
+// Fix 1: Make the referencing field security critical
+[assembly: AllowPartiallyTrustedCallers]
+
+   [SecurityCritical]
+   class Type1 { } // Security Critical type
+
+   class Type2 // Security transparent type
+   {
+      [SecurityCritical]
+      Type1 m_field; // Fixed: critical type, critical field
+   }
+
+// Fix 2: Make the referencing field security critical
+[assembly: AllowPartiallyTrustedCallers]
+
+   class Type1 { } // Type1 is now transparent
+
+   class Type2 // Security transparent type
+   {
+      [SecurityCritical]
+      Type1 m_field; // Fixed: critical type, critical field
+   }
+
+```
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ No suprima las advertencias de esta regla.
+
+### <a name="code"></a>Código
+ [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]
+
 ### <a name="comments"></a>Comentarios

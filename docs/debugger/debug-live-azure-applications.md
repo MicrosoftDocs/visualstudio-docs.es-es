@@ -3,8 +3,7 @@ title: Depurar aplicaciones de Azure de ASP.NET en vivo - Visual Studio | Docume
 ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger
 ms.custom: mvc
 ms.date: 03/16/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -15,11 +14,11 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3d6173c62b359508819db26ff9dcdceb90644202
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6ef3acf3373f03249b9ffa4456195f25b9991a3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicaciones de Azure de ASP.NET en directo con el depurador de instantánea
 

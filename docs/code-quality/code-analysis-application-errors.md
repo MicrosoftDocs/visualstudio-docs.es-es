@@ -1,10 +1,8 @@
 ---
-title: Errores de aplicación de análisis de código | Documentos de Microsoft
-ms.custom: ''
+title: Errores de la aplicación de análisis de código
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
 - code analysis, errors
@@ -16,49 +14,49 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6fc0566e4db7ed55f4fbf7abb379cbfe8720df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b058612095bbb18d8e596beaecc1998be2e805a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
-Esta sección es una referencia de los mensajes de error generados por la herramienta de análisis de código administrado. Para obtener ayuda sobre un mensaje de error específico, escriba el número de error en la **buscar** cuadro en el índice.  
-  
-## <a name="in-this-section"></a>En esta sección  
-  
-|||  
-|-|-|  
-|[CA0001](ca0001.md)|Se produce una excepción dentro de la herramienta de análisis de código administrado que no indica una condición de error esperado.|  
-|[CA0051](ca0051.md)|No se seleccionó ninguna regla.|  
-|[CA0052](ca0052.md)|No se seleccionó ningún destino para analizar.|  
-|[CA0053](ca0053.md)|No se pudo cargar el ensamblado de regla.|  
-|[CA0054](ca0054.md)|Un ensamblado de regla personalizada tiene recursos XML no válidos.|  
-|[CA0055](ca0055.md)|No se pudo cargar el archivo:\<ruta de acceso >|  
-|[CA0056](ca0056.md)|Un archivo de proyecto tiene una versión incorrecta de la herramienta de análisis.|  
-|[CA0057](ca0057.md)|No se puede asignar infracciones al conjunto actual de destinos y reglas.|  
-|[CA0058](ca0058.md)|No se puede cargar ensamblados al que hace referencia.|  
-|[CA0059](ca0059.md)|Error del conmutador de línea de comandos.|  
-|[CA0060](ca0060.md)|No se puede cargar ensamblados al que hace referencia indirectamente.|  
-|[CA0061](ca0061.md)|La regla '*RuleId*' no se pudo encontrar.|  
-|[CA0062](ca0062.md)|La regla '*RuleId*'hace referencia en el conjunto de reglas'*RuleSetName*' no se pudo encontrar.|  
-|[CA0063](ca0063.md)|No se pudo cargar el archivo de conjunto de reglas o uno de sus archivos de conjunto de reglas dependientes.|  
-|[CA0064](ca0064.md)|Ningún análisis se realizan porque el conjunto de reglas especificado no contiene ninguna regla de FxCop.|  
-|[CA0065](ca0065.md)|Construcción de metadatos no admitido: tipo '*TypeName*'contiene una propiedad y un campo con el mismo nombre'*PropertyFieldName*'|  
-|[CA0066](ca0066.md)|El valor '*VersionID*' proporcionado para la **/targetframeworkversion** no es una versión reconocida.|  
-|[CA0067](ca0067.md)|No se encontró el directorio.|  
-|[CA0068](ca0068.md)|Depurar no se encontró información de ensamblado de destino *'AssemblyName'*.|  
-|[CA0069](ca0069.md)|Con la plataforma alternativa. *FrameworkVersion1* no se pudo encontrar. Usar *FrameworkVersion2* en su lugar. Para obtener los mejores resultados de análisis Asegúrese de que se instala la versión correcta de .NET Framework.|  
-|[CA0070](ca0070.md)|No se puede cargar el ensamblado o tipo debido a permisos de seguridad.|  
-|[CA0501](ca0501.md)|No se puede leer el informe de salida.|  
-|[CA0502](ca0502.md)|Idioma no admitido.|  
-|[CA0503](ca0503.md)|La propiedad está en desuso. Utilice la propiedad que la sustituye|  
-|[CA0504](ca0504.md)|Se omitió el directorio de la regla porque no existe|  
-|[CA0505](ca0505.md)|La propiedad está en desuso. Utilice la propiedad que la sustituye|  
-|[Errores de FxCopCmd](fxcopcmd-errors.md)|Errores de análisis de código administrado.|  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)  
-  
- [Analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)  
-  
+Esta sección es una referencia de los mensajes de error generados por la herramienta de análisis de código administrado. Para obtener ayuda sobre un mensaje de error específico, escriba el número de error en la **buscar** cuadro en el índice.
+
+## <a name="in-this-section"></a>En esta sección
+
+|||
+|-|-|
+|[CA0001](ca0001.md)|Se produce una excepción dentro de la herramienta de análisis de código administrado que no indica una condición de error esperado.|
+|[CA0051](ca0051.md)|No se seleccionó ninguna regla.|
+|[CA0052](ca0052.md)|No se seleccionó ningún destino para analizar.|
+|[CA0053](ca0053.md)|No se pudo cargar el ensamblado de regla.|
+|[CA0054](ca0054.md)|Un ensamblado de regla personalizada tiene recursos XML no válidos.|
+|[CA0055](ca0055.md)|No se pudo cargar el archivo:\<ruta de acceso >|
+|[CA0056](ca0056.md)|Un archivo de proyecto tiene una versión incorrecta de la herramienta de análisis.|
+|[CA0057](ca0057.md)|No se puede asignar infracciones al conjunto actual de destinos y reglas.|
+|[CA0058](ca0058.md)|No se puede cargar ensamblados al que hace referencia.|
+|[CA0059](ca0059.md)|Error del conmutador de línea de comandos.|
+|[CA0060](ca0060.md)|No se puede cargar ensamblados al que hace referencia indirectamente.|
+|[CA0061](ca0061.md)|La regla '*RuleId*' no se pudo encontrar.|
+|[CA0062](ca0062.md)|La regla '*RuleId*'hace referencia en el conjunto de reglas'*RuleSetName*' no se pudo encontrar.|
+|[CA0063](ca0063.md)|No se pudo cargar el archivo de conjunto de reglas o uno de sus archivos de conjunto de reglas dependientes.|
+|[CA0064](ca0064.md)|Ningún análisis se realizan porque el conjunto de reglas especificado no contiene ninguna regla de FxCop.|
+|[CA0065](ca0065.md)|Construcción de metadatos no admitido: tipo '*TypeName*'contiene una propiedad y un campo con el mismo nombre'*PropertyFieldName*'|
+|[CA0066](ca0066.md)|El valor '*VersionID*' proporcionado para la **/targetframeworkversion** no es una versión reconocida.|
+|[CA0067](ca0067.md)|No se encontró el directorio.|
+|[CA0068](ca0068.md)|Depurar no se encontró información de ensamblado de destino *'AssemblyName'*.|
+|[CA0069](ca0069.md)|Con la plataforma alternativa. *FrameworkVersion1* no se pudo encontrar. Usar *FrameworkVersion2* en su lugar. Para obtener los mejores resultados de análisis Asegúrese de que se instala la versión correcta de .NET Framework.|
+|[CA0070](ca0070.md)|No se puede cargar el ensamblado o tipo debido a permisos de seguridad.|
+|[CA0501](ca0501.md)|No se puede leer el informe de salida.|
+|[CA0502](ca0502.md)|Idioma no admitido.|
+|[CA0503](ca0503.md)|La propiedad está en desuso. Utilice la propiedad que la sustituye|
+|[CA0504](ca0504.md)|Se omitió el directorio de la regla porque no existe|
+|[CA0505](ca0505.md)|La propiedad está en desuso. Utilice la propiedad que la sustituye|
+|[Errores de FxCopCmd](fxcopcmd-errors.md)|Errores de análisis de código administrado.|
+
+## <a name="related-sections"></a>Secciones relacionadas
+ [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
+
+ [Analizar la calidad del código administrado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+

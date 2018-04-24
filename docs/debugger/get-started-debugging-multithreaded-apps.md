@@ -2,8 +2,7 @@
 title: Empezar a depurar aplicaciones multiproceso | Documentos de Microsoft
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cea34a609905ea54b00115ee6d9419eb07c58c0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 067f28cfbc90d26088b37eb40b730edca37533d2
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Empezar a depurar una aplicación multiproceso en Visual Studio
 Visual Studio proporciona varias herramientas y elementos de la interfaz de usuario para ayudarle a depurar aplicaciones multiproceso. Este tutorial muestra cómo utilizar marcadores de subprocesos, la **pilas paralelas** ventana, el **inspección paralela** ventana, puntos de interrupción condicionales y los puntos de interrupción de filtro. Este tutorial dura sólo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.

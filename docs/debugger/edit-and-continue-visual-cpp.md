@@ -2,8 +2,7 @@
 title: Editar y continuar (Visual C++) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 05/31/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 107014740c9d976be65fb2a268723184a9134868
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d5195dd92e53a6657747758c03c87ee5463c1d5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar y continuar (Visual C++)
 Puede usar Editar y continuar en proyectos de Visual C++. Vea [cambios de código admitidos (C++)](../debugger/supported-code-changes-cpp.md) para obtener información acerca de las limitaciones de editar y continuar.

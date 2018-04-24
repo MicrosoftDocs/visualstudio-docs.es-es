@@ -2,8 +2,7 @@
 title: Requisitos previos de implementación de aplicaciones | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48f72640bdf8efc53b278e4600c6b262dc1a26bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Requisitos previos para la implementación de aplicaciones
 Para asegurarse de que su aplicación se instalará y se ejecutará correctamente, primero debe asegurarse de que todos los componentes de los que depende su aplicación ya estén instalados en el equipo de destino. Por ejemplo, la mayoría de las aplicaciones creadas con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen una dependencia de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; antes de instalar la aplicación, el equipo de destino debe tener la versión correcta de Common Language Runtime.  

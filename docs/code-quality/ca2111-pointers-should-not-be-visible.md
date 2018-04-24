@@ -1,10 +1,8 @@
 ---
-title: 'CA2111: Los punteros no deberían estar visibles | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA2111: Los punteros no deberían estar visibles'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - PointersShouldNotBeVisible
 - CA2111
@@ -17,44 +15,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce027b8e6bcf39623e07a862d4f9fb23c33b9967
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc47d1ff109cf4e90191a436b95f2236b86d3333
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Los punteros no deberían estar visibles
-|||  
-|-|-|  
-|TypeName|PointersShouldNotBeVisible|  
-|Identificador de comprobación|CA2111|  
-|Categoría|Microsoft.Security|  
-|Cambio problemático|Problemático|  
-  
-## <a name="cause"></a>Motivo  
- Un público o protegido <xref:System.IntPtr?displayProperty=fullName> o <xref:System.UIntPtr?displayProperty=fullName> campo no es de solo lectura.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- <xref:System.IntPtr> y <xref:System.UIntPtr> son tipos de puntero que se usan para tener acceso a memoria no administrada. Si un puntero no es privado, interno ni de solo lectura, el código malintencionado puede cambiar el valor del puntero, potencialmente permitir el acceso a ubicaciones arbitrarias en memoria o provocando errores del sistema o aplicación.  
-  
- Si desea proteger el acceso al tipo que contiene el campo de puntero, vea [CA2112: los tipos seguros no deberían exponer campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Proteja el puntero mediante la realización de solo lectura, interno o privado.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- Suprimir una advertencia de esta regla si no se debe confiar en el valor del puntero.  
-  
-## <a name="example"></a>Ejemplo  
- El código siguiente muestra punteros que infringen y cumplen la regla. Observe que los punteros no privados también infringen la regla [CA1051: no declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
-  
- [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]  
-  
-## <a name="related-rules"></a>Reglas relacionadas  
- [CA2112: Los tipos seguros no deberían exponer campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
-  
- [CA1051: No declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
-  
-## <a name="see-also"></a>Vea también  
- <xref:System.IntPtr?displayProperty=fullName>   
- <xref:System.UIntPtr?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|PointersShouldNotBeVisible|
+|Identificador de comprobación|CA2111|
+|Categoría|Microsoft.Security|
+|Cambio problemático|Problemático|
+
+## <a name="cause"></a>Motivo
+ Un público o protegido <xref:System.IntPtr?displayProperty=fullName> o <xref:System.UIntPtr?displayProperty=fullName> campo no es de solo lectura.
+
+## <a name="rule-description"></a>Descripción de la regla
+ <xref:System.IntPtr> y <xref:System.UIntPtr> son tipos de puntero que se usan para tener acceso a memoria no administrada. Si un puntero no es privado, interno ni de solo lectura, el código malintencionado puede cambiar el valor del puntero, potencialmente permitir el acceso a ubicaciones arbitrarias en memoria o provocando errores del sistema o aplicación.
+
+ Si desea proteger el acceso al tipo que contiene el campo de puntero, vea [CA2112: los tipos seguros no deberían exponer campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Proteja el puntero mediante la realización de solo lectura, interno o privado.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ Suprimir una advertencia de esta regla si no se debe confiar en el valor del puntero.
+
+## <a name="example"></a>Ejemplo
+ El código siguiente muestra punteros que infringen y cumplen la regla. Observe que los punteros no privados también infringen la regla [CA1051: no declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+
+ [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]
+
+## <a name="related-rules"></a>Reglas relacionadas
+ [CA2112: Los tipos seguros no deberían exponer campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+
+ [CA1051: No declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+
+## <a name="see-also"></a>Vea también
+ <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

@@ -2,8 +2,7 @@
 title: AddMessage | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f58f716aca83cce9f2e04129d45a9cf9c97df50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de3460a345dba21e3a8f481adb510b9e3bdd4990
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="addmessage"></a>AddMessage
 Agrega un mensaje personalizado al diagnóstico de gráficos *HUD* (visualización frontal).  

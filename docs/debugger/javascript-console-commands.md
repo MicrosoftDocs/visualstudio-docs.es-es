@@ -2,8 +2,7 @@
 title: Comandos de consola de JavaScript en Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 07/17/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -15,11 +14,11 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: df4055790cf715b3a521b6ccc09d5c6920a47136
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c0151bb0810529f0dad36d72b80a13ae519e8b0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandos de la consola de JavaScript en Visual Studio
   

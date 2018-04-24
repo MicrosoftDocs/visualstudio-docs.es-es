@@ -2,8 +2,7 @@
 title: Información general de la memoria caché de ClickOnce | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce applications, cache
 - ClickOnce deployment, cache
 ms.assetid: e379921e-9ef1-4326-bbf3-53ba67925526
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 847e6cc7e84dcda2efdbaac630ce8589ff959180
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ff72cd106f39b4573a0e1d61715dad4f8c65140
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-cache-overview"></a>Información general sobre la memoria caché de ClickOnce
 Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones, si están instalados de forma local u hospedados en línea, se almacenan en el equipo cliente en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplicación *caché*. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] caché es una familia de directorios ocultos situados bajo el directorio de configuración Local de la carpeta de Documents and Settings del usuario actual. Esta memoria caché contiene todos los archivos de la aplicación, incluidos los ensamblados, archivos de configuración, aplicación y configuración de usuario y directorio de datos. La memoria caché también es responsable de la migración de directorio de datos de la aplicación a la versión más reciente. Para obtener más información acerca de la migración de datos, vea [obtener acceso Local y remoto datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  

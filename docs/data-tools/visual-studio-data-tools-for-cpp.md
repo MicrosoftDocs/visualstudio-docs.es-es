@@ -1,6 +1,5 @@
 ---
-title: Herramientas de datos de Visual Studio para C++ | Documentos de Microsoft
-ms.custom: ''
+title: Herramientas de datos de Visual Studio para C++
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,11 +11,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: a853edf80cd11400b2e54c17dfe95f1ccfb1c822
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b258db15ddf879e8ef64e442082936d0d37e732
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Herramientas de datos de Visual Studio para C++
 
@@ -26,22 +25,22 @@ Para conectarse a bases de datos SQL, aplicaciones nativas de C++ pueden utiliza
 
 Para aprovechar la funcionalidad personalizada de SQL Server 2005 y versiones posteriores, use la [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). El cliente nativo también contiene el controlador ODBC de SQL Server y el proveedor OLE DB de SQL Server en una biblioteca de vínculos dinámicos (DLL). Compatibilidad con aplicaciones que utilizan API de código nativo (ODBC, OLE DB y ADO) para Microsoft SQL Server.  SQL Server Native Client se instala con SQL Server Data Tools. La Guía de programación está aquí: [programación cliente nativo de SQL Server](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
-## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Para conectarse a localDB a través de ODBC y SQL Native Client desde una aplicación de C++  
-  
-1.  Instalar SQL Server Data Tools.  
-  
-2.  Si necesita una base de datos SQL de ejemplo para conectarse a, descargue la base de datos Northwind y descomprímalo a una nueva ubicación.  
-  
-3.  Usar SQL Server Management Studio para adjuntar el archivo Northwind.mdf descomprimido a localDB. Cuando se inicia SQL Server Management Studio, conéctese a (localdb) \MSSQLLocalDB.  
-  
-     ![Diálogo de conexión de SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS conectar el cuadro de diálogo")  
-  
-     A continuación, haga doble clic en el nodo de localdb en el panel izquierdo y elija **adjuntar**.  
-  
-     ![SSMS adjuntar base de datos](../data-tools/media/raddata-ssms-attach-database.png "SSMS adjuntar base de datos raddata")  
-  
+## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Para conectarse a localDB a través de ODBC y SQL Native Client desde una aplicación de C++
+
+1.  Instalar SQL Server Data Tools.
+
+2.  Si necesita una base de datos SQL de ejemplo para conectarse a, descargue la base de datos Northwind y descomprímalo a una nueva ubicación.
+
+3.  Usar SQL Server Management Studio para adjuntar el archivo Northwind.mdf descomprimido a localDB. Cuando se inicia SQL Server Management Studio, conéctese a (localdb) \MSSQLLocalDB.
+
+     ![Diálogo de conexión de SSMS](../data-tools/media/raddata-ssms-connect-dialog.png "raddata SSMS conectar el cuadro de diálogo")
+
+     A continuación, haga doble clic en el nodo de localdb en el panel izquierdo y elija **adjuntar**.
+
+     ![SSMS adjuntar base de datos](../data-tools/media/raddata-ssms-attach-database.png "SSMS adjuntar base de datos raddata")
+
 4.  Descargue el ejemplo de SDK de Windows de ODBC y descomprímalo en una nueva ubicación. Este ejemplo muestra los comandos básicos de ODBC que se utilizan para conectarse a una base de datos y emitir consultas y los comandos. Puede aprender más acerca de las funciones en el [Microsoft Open Database Connectivity (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Cuando se carga primero la solución (se encuentra en la carpeta de C++), Visual Studio le ofrece actualizar la solución a la versión actual de Visual Studio. Haga clic en **Sí**.
-  
+
 5.  Para usar al cliente nativo, necesita su archivo de encabezado y archivos de lib. Estos archivos contienen las funciones y las definiciones específicas de SQL Server, más allá de las funciones ODBC definidas en sql.h. En **proyecto** > **propiedades** > **directorios de VC ++**, agregue el siguiente directorio de inclusión:
 
 **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
@@ -50,25 +49,25 @@ Y este directorio de la biblioteca:
 
 **%ProgramFiles%\Microsoft SQL Server\110\SDK\Lib**
 
-6.  Agregue estas líneas en odbcsql.cpp. El #define evita irrelevantes definiciones de OLE DB desde que se está compilando.  
-  
+6.  Agregue estas líneas en odbcsql.cpp. El #define evita irrelevantes definiciones de OLE DB desde que se está compilando.
+
     ```cpp
-    #define _SQLNCLI_ODBC_  
-    #include <sqlncli.h>  
-    ```  
-  
-    Tenga en cuenta que el ejemplo no utiliza realmente ninguna de las funciones de cliente nativo, por lo que no son necesarios para poder compilar y ejecutar los pasos anteriores. Pero el proyecto ahora está configurado para que usar esta funcionalidad. Para obtener más información, consulte [programación cliente nativo de SQL Server](/sql/relational-databases/native-client/sql-server-native-client).  
-  
-7.  Especificar qué controlador que se utilizará en el subsistema ODBC. El ejemplo pasa el atributo de cadena de conexión de controlador en como un argumento de línea de comandos. En **proyecto** > **propiedades** > **depuración**, agregue este argumento de comando:  
-  
+    #define _SQLNCLI_ODBC_
+    #include <sqlncli.h>
+    ```
+
+    Tenga en cuenta que el ejemplo no utiliza realmente ninguna de las funciones de cliente nativo, por lo que no son necesarios para poder compilar y ejecutar los pasos anteriores. Pero el proyecto ahora está configurado para que usar esta funcionalidad. Para obtener más información, consulte [programación cliente nativo de SQL Server](/sql/relational-databases/native-client/sql-server-native-client).
+
+7.  Especificar qué controlador que se utilizará en el subsistema ODBC. El ejemplo pasa el atributo de cadena de conexión de controlador en como un argumento de línea de comandos. En **proyecto** > **propiedades** > **depuración**, agregue este argumento de comando:
+
     ```cpp
-    DRIVER="SQL Server Native Client 11.0"  
-    ```  
-  
-8.  Presione F5 para compilar y ejecutar la aplicación. Debería ver un cuadro de diálogo desde el controlador que le pide que escriba una base de datos. Escriba `(localdb)\MSSQLLocalDB`y compruebe **Usar conexión de confianza**. Press **OK**. Debería ver una consola con mensajes que indican una conexión correcta. También verá un símbolo del sistema donde se pueden escribir en una instrucción SQL. La siguiente pantalla muestra una consulta de ejemplo y los resultados:  
-  
-     ![Resultado de la consulta de ejemplo de ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "raddata resultado de la consulta de ejemplo de ODBC")  
-  
+    DRIVER="SQL Server Native Client 11.0"
+    ```
+
+8.  Presione F5 para compilar y ejecutar la aplicación. Debería ver un cuadro de diálogo desde el controlador que le pide que escriba una base de datos. Escriba `(localdb)\MSSQLLocalDB`y compruebe **Usar conexión de confianza**. Press **OK**. Debería ver una consola con mensajes que indican una conexión correcta. También verá un símbolo del sistema donde se pueden escribir en una instrucción SQL. La siguiente pantalla muestra una consulta de ejemplo y los resultados:
+
+     ![Resultado de la consulta de ejemplo de ODBC](../data-tools/media/raddata-odbc-sample-query-output.png "raddata resultado de la consulta de ejemplo de ODBC")
+
 ## <a name="see-also"></a>Vea también
 
-[Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

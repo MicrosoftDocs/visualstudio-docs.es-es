@@ -2,8 +2,7 @@
 title: Publicar aplicaciones ClickOnce | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Options
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - applications [Visual Studio], ClickOnce deployment
 - deploying applications [ClickOnce], publishing ClickOnce applications
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0ea0aac20252c8be071f81ee9120dee9f220606
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5f0c04a23844664b5bbfa67a6e83809c250b8a9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="publishing-clickonce-applications"></a>Publicar aplicaciones ClickOnce
 Cuando se publica una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] por primera vez, las propiedades de publicación se pueden establecer con el Asistente para publicación. Sólo algunas de las propiedades están disponibles en el asistente; todas las restantes se establecen en sus valores predeterminados.  

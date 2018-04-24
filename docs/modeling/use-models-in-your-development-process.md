@@ -1,6 +1,5 @@
 ---
-title: Usar modelos en el proceso de desarrollo | Documentos de Microsoft
-ms.custom: ''
+title: Usar modelos en el proceso de desarrollo
 ms.date: 11/04/2016
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
@@ -11,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee68a7db3691c7245dbe17fd4c23b948734f215a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b814f35e8c93ff8204fe39943dbaafbce03376a0
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos en el proceso de desarrollo
 
@@ -139,11 +138,11 @@ Los distintos tipos de diagramas resultan útiles para describir el diseño con 
 
 ## <a name="see-also"></a>Vea también
 
-[Usar modelos en Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
-[crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
-[modelar los requisitos de usuario](../modeling/model-user-requirements.md)
-[modelar la aplicación arquitectura](../modeling/model-your-app-s-architecture.md)
-[desarrollar pruebas en un modelo](../modeling/develop-tests-from-a-model.md)
-[estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md)
+- [Usar modelos de desarrollo ágil](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
+- [Requisitos del usuario de modelos](../modeling/model-user-requirements.md)
+- [Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)
+- [Desarrollar pruebas a partir de un modelo](../modeling/develop-tests-from-a-model.md)
+- [Estructurar la solución de modelado](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

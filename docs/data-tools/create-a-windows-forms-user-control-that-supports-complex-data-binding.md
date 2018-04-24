@@ -1,6 +1,5 @@
 ---
-title: Crear un control de usuario de formularios Windows Forms con enlace de datos | Documentos de Microsoft
-ms.custom: ''
+title: Crear un control de usuario de formularios Windows Forms con enlace de datos
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Crear un control de usuario de formularios Windows Forms que admita el enlace de datos complejo
 
@@ -111,7 +110,7 @@ En este paso se agrega un <xref:System.Windows.Forms.DataGridView> al control de
 ## <a name="add-the-required-data-binding-attribute"></a>Agregue el atributo de enlace de datos requerido
 
 En el caso de los controles complejos que admiten enlaces a datos, puede implementar el <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>Para implementar el atributo ComplexBindingProperties
 
 1. Cambiar el **ComplexDataGridView** control a la vista código. (En el **vista** menú, seleccione **código**.)
@@ -173,7 +172,7 @@ Puede crear los controles enlazados a datos arrastrando elementos desde la **or�
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>Para crear controles enlazados en el formulario
 
-Arrastre el método main **clientes** nodo desde el **orígenes de datos** ventana hasta el formulario. Compruebe que la **ComplexDataGridView** control se usa para mostrar datos de la tabla.  
+Arrastre el método main **clientes** nodo desde el **orígenes de datos** ventana hasta el formulario. Compruebe que la **ComplexDataGridView** control se usa para mostrar datos de la tabla.
 
 ## <a name="running-the-application"></a>Ejecutar la aplicación
 
@@ -191,6 +190,6 @@ Según cuáles sean los requisitos de la aplicación, hay varios pasos que se pu
 
 ## <a name="see-also"></a>Vea también
 
-[Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Controles de formularios Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Controles de formularios Windows Forms](/dotnet/framework/winforms/controls/index)

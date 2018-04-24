@@ -2,8 +2,7 @@
 title: API de gráficos y estadísticas de memoria | Documentos de Microsoft
 ms.custom: ''
 ms.date: 03/02/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.apistatistics
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b57edb59984537638dd32b621406775087ba680e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 48c8ed3c8c2ebffc57ac46e987dbc37950cba0fd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API de gráficos y estadísticas de memoria
 <!-- VERSIONLESS -->

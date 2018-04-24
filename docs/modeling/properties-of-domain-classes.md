@@ -1,8 +1,7 @@
 ---
-title: Propiedades de clases de dominio | Documentos de Microsoft
-ms.custom: ''
+title: Propiedades de las clases de dominio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain class
 author: gewarren
@@ -11,29 +10,30 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 419315e5d8ec44f8065b704612bc50c1788974e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39061e91eb173eac887cbefa9dffbc311d273b01
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-classes"></a>Propiedades de las clases de dominio
-Clases de dominio tienen las propiedades en la tabla siguiente. Para obtener información acerca de las clases de dominio, consulte [descripción de los modelos, las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información acerca de cómo utilizar estas propiedades, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
-  
-|Property|Descripción|Default|  
-|--------------|-----------------|-------------|  
-|Modificador de acceso|Nivel de acceso de la clase de dominio (`public` o `internal`).|`public`|  
-|Atributos personalizados|Se utiliza para agregar atributos a la clase de código de origen que se genera a partir de esta clase de dominio.|\<Ninguno >|  
-|Genera doble derivadas|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
-|Tiene un Constructor personalizado|Si `True`, se proporciona un constructor personalizado en el código fuente. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|  
-|Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir de la clase de dominio (`none`, `abstract` o `sealed`).|`none`|  
-|Clase base|Si se deriva esta clase de dominio, el nombre de la clase base.|\<Ninguno >|  
-|nombre|El nombre de esta clase de dominio.|Nombre actual|  
-|Espacio de nombres|El espacio de nombres de esta clase de dominio.|Espacio de nombres actual|  
-|Notas|Notas informales que están asociadas a esta clase de dominio.|\<Ninguno >|  
-|Descripción|La descripción que se utiliza para documentar la interfaz de usuario del diseñador generado.|\<Ninguno >|  
-|Nombre para mostrar|El nombre que se mostrará en el diseñador generado para esta clase de dominio.|\<Ninguno >|  
-|Help Keyword|La palabra clave opcional que se utiliza para indizar la Ayuda F1 para esta clase de dominio.|\<Ninguno >|  
-  
-## <a name="see-also"></a>Vea también  
- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+Clases de dominio tienen las propiedades en la tabla siguiente. Para obtener información acerca de las clases de dominio, consulte [descripción de los modelos, las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información acerca de cómo utilizar estas propiedades, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+
+|Property|Descripción|Default|
+|--------------|-----------------|-------------|
+|Modificador de acceso|Nivel de acceso de la clase de dominio (`public` o `internal`).|`public`|
+|Atributos personalizados|Se utiliza para agregar atributos a la clase de código de origen que se genera a partir de esta clase de dominio.|\<Ninguno >|
+|Genera doble derivadas|Si `True`, se generará una clase base y una clase parcial (para admitir la personalización mediante invalidaciones). Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
+|Tiene un Constructor personalizado|Si `True`, se proporciona un constructor personalizado en el código fuente. Para obtener más información, consulte [reemplazar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
+|Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir de la clase de dominio (`none`, `abstract` o `sealed`).|`none`|
+|Clase base|Si se deriva esta clase de dominio, el nombre de la clase base.|\<Ninguno >|
+|nombre|El nombre de esta clase de dominio.|Nombre actual|
+|Espacio de nombres|El espacio de nombres de esta clase de dominio.|Espacio de nombres actual|
+|Notas|Notas informales que están asociadas a esta clase de dominio.|\<Ninguno >|
+|Descripción|La descripción que se utiliza para documentar la interfaz de usuario del diseñador generado.|\<Ninguno >|
+|Nombre para mostrar|El nombre que se mostrará en el diseñador generado para esta clase de dominio.|\<Ninguno >|
+|Help Keyword|La palabra clave opcional que se utiliza para indizar la Ayuda F1 para esta clase de dominio.|\<Ninguno >|
+
+## <a name="see-also"></a>Vea también
+
+- [Glosario de herramientas de lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

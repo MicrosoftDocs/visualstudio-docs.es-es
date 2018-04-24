@@ -2,8 +2,7 @@
 title: 'Cómo: establecer una zona de seguridad para una aplicación ClickOnce | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,16 +13,16 @@ helpviewer_keywords:
 - code access security, ClickOnce applications
 - security zones, ClickOnce applications
 ms.assetid: d3dac454-518a-44d7-a76e-ccb7b9c3a150
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cdc44bd873a891b6478bb9776141695318150b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9be6bd056473a6cdf7d4bf3bef2aedafe5ae2143
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Cómo: Establecer una zona de seguridad para una aplicación ClickOnce
 Al establecer permisos de seguridad de acceso del código para una aplicación ClickOnce, debe empezar con un conjunto básico de permisos en la página **Seguridad** del **Diseñador de proyectos**.  

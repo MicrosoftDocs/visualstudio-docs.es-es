@@ -2,8 +2,7 @@
 title: Ver código de desensamblado en el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 974a3a82ffdb9ed8041d5b7d067c4440d2524c23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46c0ae689a9d514983aeb747bebc6cb9905c6e11
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Ver el código de desensamblado en el depurador de Visual Studio
 Esta característica solo está disponible si está habilitada la depuración de nivel de dirección la **opciones** cuadro de diálogo, **depuración** nodo. No está disponible para la depuración de script ni de SQL.  

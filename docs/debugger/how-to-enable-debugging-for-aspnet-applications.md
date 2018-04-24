@@ -2,8 +2,7 @@
 title: Habilitar la depuración de aplicaciones ASP.NET | Documentos de Microsoft
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 397dbe26aafd7ec385e6afeb11b3ca19155dfbcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Depurar aplicaciones de ASP.NET en Visual Studio
 

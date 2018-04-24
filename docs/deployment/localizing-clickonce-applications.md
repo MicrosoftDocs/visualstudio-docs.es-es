@@ -2,8 +2,7 @@
 title: Localizar aplicaciones ClickOnce | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,16 +18,16 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce applications
 - console applications, ClickOnce applications
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e14305b9a1c45c5a050e83fbcc5d20e49ca2a5a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c3d7ebc762c7b1feb895323f7ef9ee0180ce954e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="localizing-clickonce-applications"></a>Localizar aplicaciones ClickOnce
 La localización es el proceso de adaptar una aplicación a una referencia cultural concreta. Este proceso implica traducir el texto de la interfaz de usuario a un idioma específico de la región, usar el formato correcto de fecha y moneda, ajustar el tamaño de los controles en un formulario y reflejar los controles de derecha a izquierda si es necesario.  

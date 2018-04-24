@@ -2,8 +2,7 @@
 title: Ejecutar aplicaciones UWP en el simulador | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ejecutar aplicaciones UWP en el simulador
 El simulador de Visual Studio para aplicaciones UWP es una aplicación de escritorio que simula una aplicación UWP. Normalmente, desea depurar en el equipo local, un dispositivo conectado o en un equipo remoto. Sin embargo, en algunos casos, puede usar el simulador de Visual Studio para emular un tamaño de la pantalla física diferente y la resolución. También puede simular eventos táctiles y rotación y simular las propiedades de conexión de red.

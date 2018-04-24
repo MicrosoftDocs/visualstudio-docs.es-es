@@ -2,8 +2,7 @@
 title: Ver la memoria para las Variables en el depurador | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -26,11 +25,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e2c43f48a1a91c35c770f5f7150972bebb1a1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 550c5ffe641fac5bb2d080a892143bf3ff9744b0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Usar las ventanas de memoria en el depurador de Visual Studio
 El **memoria** ventana proporciona una vista en el espacio de memoria que se usa la aplicación. El **inspección** ventana, **Inspección rápida** cuadro de diálogo, **automático** ventana, y **locales** ventana Mostrar el contenido de las variables, que son se almacenan en ubicaciones específicas en la memoria. Pero la **memoria** ventana muestra la imagen a gran escala. Esta visión puede ser conveniente para examinar grandes conjuntos de datos (búferes de cadenas largas, por ejemplo), que no se muestran adecuadamente en las demás ventanas. Sin embargo, el **memoria** ventana no está limitado a la visualización de datos. Muestra todo lo que hay en el espacio de memoria, ya sean datos, código o bits aleatorios de la memoria no asignada.  

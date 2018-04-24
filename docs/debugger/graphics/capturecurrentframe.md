@@ -2,8 +2,7 @@
 title: CaptureCurrentFrame | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3863cabe07d6b3f061e0eeecded88d39d00596ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41169494424310427e5a8ae6a0af533bdf4be834
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 Captura el resto del fotograma actual en el archivo de registro de gráficos.  

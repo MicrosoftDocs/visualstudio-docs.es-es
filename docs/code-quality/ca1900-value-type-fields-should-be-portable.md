@@ -1,10 +1,8 @@
 ---
-title: 'CA1900: Los campos de tipo de valor deberían ser portátiles | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA1900: Los campos de tipos de valor deberían ser portátiles'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1900
 - ValueTypeFieldsShouldBePortable
@@ -17,28 +15,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 669f52b3255559dec2ac90eea90356c2bb886c9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 56c779095a68fc61c25412e6b895ea2bb5a635c3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Los campos de tipos de valor deberían ser portátiles
-|||  
-|-|-|  
-|TypeName|ValueTypeFieldsShouldBePortable|  
-|Identificador de comprobación|CA1900|  
-|Categoría|Microsoft.Portability|  
-|Cambio problemático|Problemático: si el campo se puede ver desde fuera del ensamblado.<br /><br /> Poco problemático: si el campo no está visible fuera del ensamblado.|  
-  
-## <a name="cause"></a>Motivo  
- Esta regla comprueba que las estructuras declaradas con un diseño explícito se alinearán correctamente cuando se calculan las referencias a código no administrado en sistemas operativos de 64 bits. IA-64 no permite accesos memoria no alineada y el proceso se bloqueará si no se corrige esta infracción.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Estructuras que tienen un diseño explícito que contiene campos no alineados provocan bloqueos en sistemas operativos de 64 bits.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Deben tener todos los campos que son menores que 8 bytes desplazamientos que son un múltiplo del tamaño y los campos que son de 8 bytes o más deben tener los desplazamientos que son un múltiplo de 8. Otra solución consiste en usar `LayoutKind.Sequential` en lugar de `LayoutKind.Explicit`, si es razonable.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+|||
+|-|-|
+|TypeName|ValueTypeFieldsShouldBePortable|
+|Identificador de comprobación|CA1900|
+|Categoría|Microsoft.Portability|
+|Cambio problemático|Problemático: si el campo se puede ver desde fuera del ensamblado.<br /><br /> Poco problemático: si el campo no está visible fuera del ensamblado.|
+
+## <a name="cause"></a>Motivo
+ Esta regla comprueba que las estructuras declaradas con un diseño explícito se alinearán correctamente cuando se calculan las referencias a código no administrado en sistemas operativos de 64 bits. IA-64 no permite accesos memoria no alineada y el proceso se bloqueará si no se corrige esta infracción.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Estructuras que tienen un diseño explícito que contiene campos no alineados provocan bloqueos en sistemas operativos de 64 bits.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Deben tener todos los campos que son menores que 8 bytes desplazamientos que son un múltiplo del tamaño y los campos que son de 8 bytes o más deben tener los desplazamientos que son un múltiplo de 8. Otra solución consiste en usar `LayoutKind.Sequential` en lugar de `LayoutKind.Explicit`, si es razonable.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Esta advertencia se debe suprimir solo si produce por un error.

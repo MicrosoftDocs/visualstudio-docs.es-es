@@ -1,6 +1,5 @@
 ---
-title: ¿Qué&#39;s nuevo para el diseño en Visual Studio | Documentos de Microsoft
-ms.custom: ''
+title: Novedades de diseño en Visual Studio
 ms.date: 11/04/2016
 ms.technology: vs-ide-modeling
 ms.topic: conceptual
@@ -13,18 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e476e7f5107fb6ecfaced44342179d3365aec98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0367d0b751a5a90f442ca6d670cd1cbe81108d5
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="what39s-new-for-design-in-visual-studio"></a>¿Qué&#39;s nuevo para el diseño en Visual Studio
+# <a name="whats-new-for-design-in-visual-studio"></a>Novedades de diseño en Visual Studio
 
 ## <a name="live-dependency-validation"></a>Validación de la dependencia en vivo
 
-Quitar dependencias no deseadas es una parte importante de la administración de la deuda técnica.
-Validación en vivo de las dependencias es ahora incluye, proporcionar información precisa acerca de los problemas y totalmente beneficien de las nuevas características de la lista de errores y el editor.
+Quitar dependencias no deseadas es una parte importante de la administración de la deuda técnica. Validación en vivo de las dependencias es ahora incluye, proporcionar información precisa acerca de los problemas y totalmente beneficien de las nuevas características de la lista de errores y el editor.
 
 ![Validación de dependencia en vivo en acción](media/dep-validation-whatsnew-01.png)
 
@@ -40,8 +38,8 @@ El **arquitectura** menú ahora contiene un comando para crear directamente un d
 
 Ahora verá el impacto de los cambios inmediatamente en los resultados del análisis para el código actual en la solución cada vez que guarde el diagrama. No tiene que esperar la finalización del comando "Validar dependencias" ya.
 
-Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/). 
- 
+Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+
 ## <a name="uml-designers-have-been-removed"></a>Se han quitado los diseñadores de UML
 
 Los diseñadores UML se han quitado de esta versión de Visual Studio Enterprise.
@@ -50,33 +48,33 @@ Los diseñadores UML se han quitado de esta versión de Visual Studio Enterprise
 * El Explorador de modelos UML ya no existe
 * Las referencias ya no se utilizan para la validación de la dependencia de proyecto de modelado
 * Ya no se muestra el nodo de "Referencias de capa" en el Explorador de soluciones
-* Ya no se usa la acción de compilación "Validación" en un diagrama de dependencia (nivel): se ha quitado la tarea de compilación 
+* Ya no se usa la acción de compilación "Validación" en un diagrama de dependencia (nivel): se ha quitado la tarea de compilación
 * Se mantiene la estructura del proyecto de ida y vuelta entre versiones
 * Todavía puede abrir, crear, editar y guardar un diagrama de dependencia (capa) como XML
 * Elementos de trabajo TFS vinculados a un diagrama de dependencia (capa) no son accesibles en la superficie de diseño
-* Ya no se admite la vinculación atrás de DSL o una capa 
+* Ya no se admite la vinculación atrás de DSL o una capa
 * Ya no se admite la extensibilidad UML en el SDK de modelado
 
 Sin embargo, es compatibles con la visualización de la arquitectura del código de .NET y C++ a través de [mapas de código](map-dependencies-across-your-solutions.md)y las mejoras importantes de la validación de dependencia se ha descrito anteriormente.
 
 Si es un usuario significativo de los diseñadores UML, puede continuar utilizando Visual Studio 2015 o versiones anteriores, mientras que decida una herramienta alternativa para sus necesidades UML.
 
-Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/). 
+Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 <a name="VersionSupport"></a>
-##  <a name="version-support-for-architecture-and-modeling-tools"></a>Compatibilidad de versiones con las herramientas de arquitectura y modelado  
+## <a name="version-support-for-architecture-and-modeling-tools"></a>Compatibilidad de versiones con las herramientas de arquitectura y modelado
 
-Visual Studio está disponible en varias versiones. No todas son compatibles con las herramientas de arquitectura y modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.  
-  
-|**Característica**|**Enterprise**|**Professional**|**Community**|**Express**|  
-|-----------------|--------------------|----------------------|-------------------|-----------------|  
-|**Mapas de código**|Sí|Vea la nota (1)|-|-|  
-|**Diagramas de dependencia**|Sí|Vea la nota (2)|Vea la nota (2)|-|  
-|**Gráficos dirigidos** (diagramas DGML)|Sí|Sí|Sí|-|  
-|**Clon de código**|Sí|-|-|-|  
-  
+Visual Studio está disponible en varias versiones. No todas son compatibles con las herramientas de arquitectura y modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
+
+|**Característica**|**Enterprise**|**Professional**|**Community**|**Express**|
+|-----------------|--------------------|----------------------|-------------------|-----------------|
+|**Mapas de código**|Sí|Vea la nota (1)|-|-|
+|**Diagramas de dependencia**|Sí|Vea la nota (2)|Vea la nota (2)|-|
+|**Gráficos dirigidos** (diagramas DGML)|Sí|Sí|Sí|-|
+|**Clon de código**|Sí|-|-|-|
+
 Nota (1): Solo admite la lectura de mapas de código, el filtrado de mapas de código, la adición de nuevos nodos genéricos y la creación de un nuevo gráfico dirigido a partir de una selección.
 
 Nota (2): Solo admite la lectura diagramas de dependencia.

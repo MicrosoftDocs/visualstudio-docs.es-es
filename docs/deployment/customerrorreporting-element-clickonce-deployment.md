@@ -2,9 +2,8 @@
 title: '&lt;customErrorReporting&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -12,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - <customErrorReporting> element [ClickOnce deployment manifest]
 ms.assetid: 7d31816e-c692-46b5-9cc9-753284b3bcda
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44094a76472679598c42f7a38ef44838502a51ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41ade854a37127443735e1c197c080aad3d5bd93
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; elemento (implementación de ClickOnce)
 Especifica un URI que se va a mostrar cuando se produce un error.  

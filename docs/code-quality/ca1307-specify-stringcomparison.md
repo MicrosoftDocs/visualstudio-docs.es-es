@@ -1,10 +1,8 @@
 ---
-title: 'CA1307: Especificar StringComparison | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA1307: Especificar StringComparison'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1307
 - SpecifyStringComparison
@@ -17,34 +15,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8d51d55c1528af38c142c115165278503bc50fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2ef2f8dbb265f0e5c82f2ea0adefc35d0721b4bd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307: Especificar StringComparison
-|||  
-|-|-|  
-|TypeName|SpecifyStringComparison|  
-|Identificador de comprobación|CA1307|  
-|Categoría|Microsoft.Globalization|  
-|Cambio problemático|Poco problemático|  
-  
-## <a name="cause"></a>Motivo  
- Una operación de comparación de cadenas utiliza una sobrecarga del método que no establece un <xref:System.StringComparison> parámetro.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Muchas operaciones de cadenas, más importante la <xref:System.String.Compare%2A> y <xref:System.String.Equals%2A> métodos, proporcionan una sobrecarga que acepta un <xref:System.StringComparison> valor de enumeración como parámetro.  
-  
- Cada vez que existe una sobrecarga que toma un <xref:System.StringComparison> parámetro, se debería utilizar en lugar de una sobrecarga que no tome este parámetro. Si este parámetro se establece explícitamente, el código es a menudo más clara realizadas y fáciles de mantener.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambiar los métodos de comparación de cadenas por sobrecargas que acepten la <xref:System.StringComparison> enumeración como parámetro. Por ejemplo: cambiar `String.Compare(str1, str2)` a `String.Compare(str1, str2, StringComparison.Ordinal)`.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla cuando la biblioteca o la aplicación está destinada a una audiencia local limitada y, por tanto, no será localizada.  
-  
-## <a name="see-also"></a>Vea también  
- [Advertencias de globalización](../code-quality/globalization-warnings.md)   
- [CA1309: Utilizar StringComparison ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+|||
+|-|-|
+|TypeName|SpecifyStringComparison|
+|Identificador de comprobación|CA1307|
+|Categoría|Microsoft.Globalization|
+|Cambio problemático|Poco problemático|
+
+## <a name="cause"></a>Motivo
+ Una operación de comparación de cadenas utiliza una sobrecarga del método que no establece un <xref:System.StringComparison> parámetro.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Muchas operaciones de cadenas, más importante la <xref:System.String.Compare%2A> y <xref:System.String.Equals%2A> métodos, proporcionan una sobrecarga que acepta un <xref:System.StringComparison> valor de enumeración como parámetro.
+
+ Cada vez que existe una sobrecarga que toma un <xref:System.StringComparison> parámetro, se debería utilizar en lugar de una sobrecarga que no tome este parámetro. Si este parámetro se establece explícitamente, el código es a menudo más clara realizadas y fáciles de mantener.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, cambiar los métodos de comparación de cadenas por sobrecargas que acepten la <xref:System.StringComparison> enumeración como parámetro. Por ejemplo: cambiar `String.Compare(str1, str2)` a `String.Compare(str1, str2, StringComparison.Ordinal)`.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla cuando la biblioteca o la aplicación está destinada a una audiencia local limitada y, por tanto, no será localizada.
+
+## <a name="see-also"></a>Vea también
+ [Advertencias de globalización](../code-quality/globalization-warnings.md) [CA1309: utilizar StringComparison ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)

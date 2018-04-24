@@ -1,29 +1,29 @@
 ---
-title: T4 CleanUpBehavior (directiva) | Documentos de Microsoft
-ms.custom: ''
+title: T4 CleanUpBehavior (Directiva)
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d0a03a57734a6536c147759ea05745497eeeffa1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb9c92aad2518a9e16adbcb37006c62c421c4361
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="t4-cleanupbehavior-directive"></a>T4 CleanUpBehavior (Directiva)
-Para eliminar el objeto appDomain después de procesar una plantilla de texto, incluya la línea siguiente:  
-  
-```  
-<#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>  
-```  
-  
- Las plantillas de texto se procesan en un objeto appDomain que es independiente del proceso host. En la mayoría de los casos, cuando se ha procesado una plantilla de texto, el objeto appdomain se utiliza de nuevo para procesar la plantilla siguiente. Sin embargo, si especifica CleanupBehavior, el objeto appDomain se elimina y la plantilla siguiente se procesará en un nuevo objeto appDomain.  
-  
- Esto reduce el procesamiento de texto, pero puede ser útil para garantizar que se desechan los recursos.  
-  
- Esta directiva solo funciona en el host de Visual Studio.
+
+Para eliminar el objeto appDomain después de procesar una plantilla de texto, incluya la línea siguiente:
+
+```
+<#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
+```
+
+Las plantillas de texto se procesan en un objeto appDomain que es independiente del proceso host. En la mayoría de los casos, cuando se ha procesado una plantilla de texto, el objeto appdomain se utiliza de nuevo para procesar la plantilla siguiente. Sin embargo, si especifica CleanupBehavior, el objeto appDomain se elimina y la plantilla siguiente se procesará en un nuevo objeto appDomain.
+
+Esto reduce el procesamiento de texto, pero puede ser útil para garantizar que se desechan los recursos.
+
+Esta directiva solo funciona en el host de Visual Studio.

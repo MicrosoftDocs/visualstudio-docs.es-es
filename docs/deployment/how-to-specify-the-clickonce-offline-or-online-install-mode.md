@@ -2,8 +2,7 @@
 title: 'Cómo: especificar la ClickOnce sin conexión o instalar el modo en línea | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,16 +15,16 @@ helpviewer_keywords:
 - offline applications
 - ClickOnce install mode
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 666273ddb251057ede1788747411111f997e5d39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18e758def9a92bc4402812dc0e2d665d8acae848
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Cómo: Especificar el modo de instalación en línea y sin conexión de ClickOnce
 El `Install Mode` para un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación determina si la aplicación estará disponible sin conexión o en línea. Cuando eliges **la aplicación solo está disponible en línea**, el usuario debe tener acceso a la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ubicación de publicación (una página Web o un recurso compartido de archivos) para ejecutar la aplicación. Cuando eliges **la aplicación también está disponible sin conexión**, la aplicación agrega entradas a la **iniciar** menú y **agregar o quitar programas** cuadro de diálogo; el usuario es se puede ejecutar la aplicación cuando no están conectados.  

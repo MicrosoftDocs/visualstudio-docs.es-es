@@ -1,10 +1,8 @@
 ---
-title: 'CA1058: Los tipos no deben ampliar ciertos tipos base | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA1058: Los tipos no deben ampliar ciertos tipos base'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 - CA1058
@@ -17,73 +15,73 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d7ec2767542db8e38d60198b5f00554897e4ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bd3461cae62f1d4b23f5afa22b0af67c78d41fc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Los tipos no deben ampliar ciertos tipos base
-|||  
-|-|-|  
-|TypeName|TypesShouldNotExtendCertainBaseTypes|  
-|Identificador de comprobación|CA1058|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Problemático|  
-  
-## <a name="cause"></a>Motivo  
- Un tipo visible externamente extiende algunos tipos base. Actualmente, esta regla notifica tipos que derivan de los tipos siguientes:  
-  
--   <xref:System.ApplicationException?displayProperty=fullName>  
-  
--   <xref:System.Xml.XmlDocument?displayProperty=fullName>  
-  
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.Queue?displayProperty=fullName>  
-  
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.SortedList?displayProperty=fullName>  
-  
--   <xref:System.Collections.Stack?displayProperty=fullName>  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Para [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versión 1, se recomendaba derivar las nuevas excepciones de <xref:System.ApplicationException>. Ha cambiado la recomendación y nuevas excepciones deben derivarse de <xref:System.Exception?displayProperty=fullName> o una de sus subclases en el <xref:System> espacio de nombres.  
-  
- No cree una subclase de <xref:System.Xml.XmlDocument> si desea crear una vista XML de un origen de datos o el modelo de objeto subyacente.  
-  
-### <a name="non-generic-collections"></a>Colecciones no genéricas  
- Utilice o extienda las colecciones genéricas siempre que sea posible. No se extienden colecciones no genéricas en el código, a menos que envió previamente.  
-  
- **Ejemplos de uso incorrecto**  
-  
-```csharp  
-public class MyCollection : CollectionBase  
-{  
-}  
-  
-public class MyReadOnlyCollection : ReadOnlyCollectionBase  
-{  
-}  
-```  
-  
- **Ejemplos de uso correcto**  
-  
-```csharp  
-public class MyCollection : Collection<T>  
-{  
-}  
-  
-public class MyReadOnlyCollection : ReadOnlyCollection<T>  
-{  
-}  
-```  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, derive el tipo de un tipo base diferente o una colección genérica.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+|||
+|-|-|
+|TypeName|TypesShouldNotExtendCertainBaseTypes|
+|Identificador de comprobación|CA1058|
+|Categoría|Microsoft.Design|
+|Cambio problemático|Problemático|
+
+## <a name="cause"></a>Motivo
+ Un tipo visible externamente extiende algunos tipos base. Actualmente, esta regla notifica tipos que derivan de los tipos siguientes:
+
+-   <xref:System.ApplicationException?displayProperty=fullName>
+
+-   <xref:System.Xml.XmlDocument?displayProperty=fullName>
+
+-   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+
+-   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+
+-   <xref:System.Collections.Queue?displayProperty=fullName>
+
+-   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+
+-   <xref:System.Collections.SortedList?displayProperty=fullName>
+
+-   <xref:System.Collections.Stack?displayProperty=fullName>
+
+## <a name="rule-description"></a>Descripción de la regla
+ Para [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versión 1, se recomendaba derivar las nuevas excepciones de <xref:System.ApplicationException>. Ha cambiado la recomendación y nuevas excepciones deben derivarse de <xref:System.Exception?displayProperty=fullName> o una de sus subclases en el <xref:System> espacio de nombres.
+
+ No cree una subclase de <xref:System.Xml.XmlDocument> si desea crear una vista XML de un origen de datos o el modelo de objeto subyacente.
+
+### <a name="non-generic-collections"></a>Colecciones no genéricas
+ Utilice o extienda las colecciones genéricas siempre que sea posible. No se extienden colecciones no genéricas en el código, a menos que envió previamente.
+
+ **Ejemplos de uso incorrecto**
+
+```csharp
+public class MyCollection : CollectionBase
+{
+}
+
+public class MyReadOnlyCollection : ReadOnlyCollectionBase
+{
+}
+```
+
+ **Ejemplos de uso correcto**
+
+```csharp
+public class MyCollection : Collection<T>
+{
+}
+
+public class MyReadOnlyCollection : ReadOnlyCollection<T>
+{
+}
+```
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, derive el tipo de un tipo base diferente o una colección genérica.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla para las infracciones sobre <xref:System.ApplicationException>. Es seguro suprimir una advertencia de esta regla si hay infracciones de sobre <xref:System.Xml.XmlDocument>. Es seguro suprimir una advertencia sobre una colección no genérica si previamente se liberó el código.

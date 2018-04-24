@@ -2,8 +2,7 @@
 title: '&lt;Producto&gt; elemento (arranque) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -13,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <product> element [bootstrapper]
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb087d4daaceca4ae1ba913b3bacc9f85c2b9cb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; elemento (arranque)
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.  

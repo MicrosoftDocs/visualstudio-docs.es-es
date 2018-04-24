@@ -2,9 +2,8 @@
 title: '&lt;descripción&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#description
 dev_langs:
@@ -14,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <description> element [ClickOnce deployment manifest]
 ms.assetid: 18f6919e-a3ab-4942-a57d-167fabfac44e
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4701bc77350d080ef9ad9c1eb56b80c344b0ff0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06a8f1a1e5ec5f4663ed999566158d104c6a7364
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;descripción&gt; elemento (implementación de ClickOnce)
 Identifica la información de la aplicación utilizada para crear una presencia de shell y un **agregar o quitar programas** elemento en el Panel de Control.  

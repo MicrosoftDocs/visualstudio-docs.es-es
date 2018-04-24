@@ -2,9 +2,8 @@
 title: '&lt;implementación&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
 - urn:schemas-microsoft-com:asm.v2#beforeApplicationStartup
@@ -19,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - <deployment> element [ClickOnce deployment manifest]
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80bcba10c350cc61d582acb80321fc75e02f16ff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f26bd8fe2b67a6078a78c9a263d57e98fc180e9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;implementación&gt; elemento (implementación de ClickOnce)
 Identifica los atributos utilizados para la implementación de actualizaciones y la exposición del sistema.  

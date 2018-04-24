@@ -1,6 +1,5 @@
 ---
-title: Agregar nuevas conexiones | Documentos de Microsoft
-ms.custom: ''
+title: Agregar nuevas conexiones
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +8,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0355b4fe3c05fb089e6feaac5bb52ff7f3f56da0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28633fcc4c744269a2a90cc72c8136afbda6f561
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="add-new-connections"></a>Agregar nuevas conexiones
 
@@ -37,9 +36,9 @@ Para crear una conexión a la base de datos, haga clic en el **Agregar conexión
 
 ![Icono de explorador nueva conexión de servidor](../data-tools/media/raddata-server-explorer-new-connection-icon.png "raddata icono de explorador nueva conexión de servidor")
 
-Se abrirá la **Agregar conexión** cuadro de diálogo. En este caso, se ha introducido el nombre de la instancia de SQL Server LocalDB.  
+Se abrirá la **Agregar conexión** cuadro de diálogo. En este caso, se ha introducido el nombre de la instancia de SQL Server LocalDB.
 
-![Agregar nueva conexión](../data-tools/media/raddata-add-new-connection-dialog.png "raddata el cuadro de diálogo de agregar nueva conexión")  
+![Agregar nueva conexión](../data-tools/media/raddata-add-new-connection-dialog.png "raddata el cuadro de diálogo de agregar nueva conexión")
 
 ## <a name="change-the-provider"></a>Cambiar el proveedor
 
@@ -57,4 +56,4 @@ Si la prueba se realiza correctamente, está listo para crear un *origen de dato
 
 ## <a name="see-also"></a>Vea también
 
-[Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

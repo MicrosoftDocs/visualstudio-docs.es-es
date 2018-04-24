@@ -1,6 +1,5 @@
 ---
-title: Actualizar datos utilizando un TableAdapter | Documentos de Microsoft
-ms.custom: ''
+title: Actualizar datos utilizando un TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,35 +19,38 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c5188f56e440f7ec00f7537602aff10723441c3a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05a61aa42c086ba3fd0a71fa221426c763df14d7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Actualizar datos utilizando un TableAdapter
-Después de modificar y validar los datos del conjunto de datos, puede devolver los datos actualizados a una base de datos mediante una llamada a la `Update` método de un [TableAdapter](../data-tools/create-and-configure-tableadapters.md). El `Update` método actualiza una tabla de datos única y se ejecuta el comando correcto (INSERT, UPDATE o DELETE) basándose en el <xref:System.Data.DataRow.RowState%2A> de cada fila de datos en la tabla. Cuando un conjunto de datos con tablas relacionadas, Visual Studio genera una clase TableAdapterManager que usar para realizar las actualizaciones. La clase TableAdapterManager garantiza que las actualizaciones se realizan en el orden correcto basándose en las restricciones de clave externa que se definen en la base de datos. Cuando utilice controles enlazados a datos, la arquitectura de enlace de datos crea una variable de miembro de la clase de TableAdapterManager denominada tableAdapterManager. 
-  
+
+Después de modificar y validar los datos del conjunto de datos, puede devolver los datos actualizados a una base de datos mediante una llamada a la `Update` método de un [TableAdapter](../data-tools/create-and-configure-tableadapters.md). El `Update` método actualiza una tabla de datos única y se ejecuta el comando correcto (INSERT, UPDATE o DELETE) basándose en el <xref:System.Data.DataRow.RowState%2A> de cada fila de datos en la tabla. Cuando un conjunto de datos con tablas relacionadas, Visual Studio genera una clase TableAdapterManager que usar para realizar las actualizaciones. La clase TableAdapterManager garantiza que las actualizaciones se realizan en el orden correcto basándose en las restricciones de clave externa que se definen en la base de datos. Cuando utilice controles enlazados a datos, la arquitectura de enlace de datos crea una variable de miembro de la clase de TableAdapterManager denominada tableAdapterManager.
+
 > [!NOTE]
->  Al intentar actualizar un origen de datos con el contenido de un conjunto de datos, puede obtener errores. Para evitar errores, se recomienda que coloque el código que llama el adaptador `Update` método dentro de un `try` / `catch` bloque.  
-  
- El procedimiento exacto para actualizar un origen de datos puede variar según las necesidades del negocio, pero incluye los siguientes pasos:  
-  
-1.  Llame el adaptador `Update` método en un `try` / `catch` bloque.  
-  
-2.  Si se detecta una excepción, buscar la fila de datos que causó el error. 
-  
-3.  Resuelva el problema de los datos de fila (mediante programación si es posible, o presentando la fila incorrecta al usuario para la modificación) y, a continuación, inténtelo de nuevo la actualización (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
-  
-## <a name="save-data-to-a-database"></a>Guardar datos en una base de datos  
- Llame a la `Update` método de un TableAdapter. Pase el nombre de la tabla de datos que contiene los valores que se escriban en la base de datos.  
-  
-#### <a name="to-update-a-database-by-using-a-tableadapter"></a>Para actualizar una base de datos utilizando un TableAdapter  
-  
--   Incluya el TableAdapter`Update` método en un `try` / `catch` bloque. En el ejemplo siguiente se muestra cómo actualizar el contenido de la `Customers` tabla `NorthwindDataSet` desde una `try` / `catch` bloque.  
-  
+> Al intentar actualizar un origen de datos con el contenido de un conjunto de datos, puede obtener errores. Para evitar errores, se recomienda que coloque el código que llama el adaptador `Update` método dentro de un `try` / `catch` bloque.
+
+ El procedimiento exacto para actualizar un origen de datos puede variar según las necesidades del negocio, pero incluye los siguientes pasos:
+
+1.  Llame el adaptador `Update` método en un `try` / `catch` bloque.
+
+2.  Si se detecta una excepción, buscar la fila de datos que causó el error.
+
+3.  Resuelva el problema de los datos de fila (mediante programación si es posible, o presentando la fila incorrecta al usuario para la modificación) y, a continuación, inténtelo de nuevo la actualización (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+
+## <a name="save-data-to-a-database"></a>Guardar datos en una base de datos
+
+Llame a la `Update` método de un TableAdapter. Pase el nombre de la tabla de datos que contiene los valores que se escriban en la base de datos.
+
+### <a name="to-update-a-database-by-using-a-tableadapter"></a>Para actualizar una base de datos utilizando un TableAdapter
+
+-   Incluya el TableAdapter`Update` método en un `try` / `catch` bloque. En el ejemplo siguiente se muestra cómo actualizar el contenido de la `Customers` tabla `NorthwindDataSet` desde una `try` / `catch` bloque.
+
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
-     [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
-  
-## <a name="see-also"></a>Vea también  
- [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)
+     [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]
+
+## <a name="see-also"></a>Vea también
+
+- [Guardar los datos de nuevo en la base de datos](../data-tools/save-data-back-to-the-database.md)

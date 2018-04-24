@@ -2,9 +2,8 @@
 title: '&lt;dependencia&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -24,16 +23,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be31fafb64b44d6d98917edb11f82a69fbc41c76
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5d84dba671d1fddda0569015d936b95e5e58d1d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependencia&gt; elemento (aplicación ClickOnce)
 Identifica una plataforma o dependencia de ensamblado que se requiere para la aplicación.  

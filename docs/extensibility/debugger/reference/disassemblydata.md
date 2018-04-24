@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0313ddccb7c6f7c4f09d3e4836c04283dd5bfc17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4276009244f1d49b89311d5d158a34bebf3fcf23
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Describe una instrucción de desensamblado para el entorno de desarrollo integrado (IDE) para mostrar.  
@@ -120,6 +120,7 @@ using System;
 using System.Runtime.InteropServices;  
   
 namespace MyNamespace  
+{
     class MyClass  
     {  
         string EncodeData(string documentString,  
@@ -146,7 +147,7 @@ namespace MyNamespace
             }  
             // Copy guid data bytes to string as wide characters.  
             // Assumption: sizeof(char) == 2.  
-            for (int i = 0; i < guidDataLength; i++)  
+            for (int i = 0; i < guidDataLength / sizeof(char); i++)  
             {  
                 returnString += (char)Marshal.ReadInt16(pBuffer, i * sizeof(char));  
             }  
@@ -202,7 +203,7 @@ namespace MyNamespace
                for (int i = 0; i < guidDataLength; i++)  
                {  
                    Marshal.WriteByte(pGuidBuffer, i,  
-                                     Marshal.ReadByte(pBuffer, bufferOffset + i);  
+                                     Marshal.ReadByte(pBuffer, bufferOffset + i));  
                }  
                bufferOffset += guidDataLength;  
                checksumGuid = (Guid)Marshal.PtrToStructure(pGuidBuffer, typeof(Guid));  

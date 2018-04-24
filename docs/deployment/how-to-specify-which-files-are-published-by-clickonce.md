@@ -2,8 +2,7 @@
 title: 'Cómo: especificar qué archivos se publican mediante ClickOnce | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
@@ -15,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, file exclusion
 - files, publishing via ClickOnce
 ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7906801baf00c8657c4ddd4e9ffadc4e8c67eba7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c59ffc2324f25c42b505505b0dbea9160ef023a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Cómo: Especificar los archivos que se van a publicar mediante ClickOnce
 Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] archivos de aplicación, sin código en el proyecto se implementan junto con la aplicación. En algunos casos, no puede quiere o necesita publicar determinados archivos, o puede que desee instalar determinados archivos según las condiciones. Visual Studio proporciona las capacidades para excluir archivos, marcar los archivos como archivos de datos o requisitos previos y crear grupos de archivos para la instalación condicional.  

@@ -1,10 +1,8 @@
 ---
-title: 'CA1011: Considere pasar los tipos base como parámetros | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA1011: Considere pasar los tipos base como parámetros'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ConsiderPassingBaseTypesAsParameters
 - CA1011
@@ -17,46 +15,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51271f3d6b2ced6fdf0229c18ac2a19ee06de36c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac73d2be980791d41b172ba0669387fd68a331fb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Considere pasar los tipos base como parámetros
-|||  
-|-|-|  
-|TypeName|ConsiderPassingBaseTypesAsParameters|  
-|Identificador de comprobación|CA1011|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Problemático|  
-  
-## <a name="cause"></a>Motivo  
- Una declaración de método incluye un parámetro formal que es un tipo derivado y el método llama a solo los miembros del tipo base del parámetro.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Cuando en una declaración de método se especifica un tipo base como parámetro, cualquier tipo derivado del tipo base puede pasarse al método como el argumento correspondiente. Cuando se utiliza el argumento en el cuerpo del método, el método específico que se ejecuta depende del tipo del argumento. Si la funcionalidad adicional proporcionada por el tipo derivado no resulta necesaria, el uso del tipo base permite que el método se utilice más ampliamente.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambie el tipo del parámetro a su tipo base.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla  
-  
--   Si el método necesita la funcionalidad específica que proporciona el tipo derivado  
-  
-     \- o -  
-  
--   para exigir que sólo el tipo derivado, o un tipo más derivado, se pasa al método.  
-  
- En estos casos, el código será más sólido debido a la comprobación de tipos inflexibles proporcionada por el compilador y el tiempo de ejecución.  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra un método, `ManipulateFileStream`, que se puede utilizar únicamente con un <xref:System.IO.FileStream> objeto, lo que infringe esta regla. Un segundo método, `ManipulateAnyStream`, cumple la regla reemplazando el <xref:System.IO.FileStream> parámetro mediante el uso de un <xref:System.IO.Stream>.  
-  
+|||
+|-|-|
+|TypeName|ConsiderPassingBaseTypesAsParameters|
+|Identificador de comprobación|CA1011|
+|Categoría|Microsoft.Design|
+|Cambio problemático|Problemático|
+
+## <a name="cause"></a>Motivo
+ Una declaración de método incluye un parámetro formal que es un tipo derivado y el método llama a solo los miembros del tipo base del parámetro.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Cuando en una declaración de método se especifica un tipo base como parámetro, cualquier tipo derivado del tipo base puede pasarse al método como el argumento correspondiente. Cuando se utiliza el argumento en el cuerpo del método, el método específico que se ejecuta depende del tipo del argumento. Si la funcionalidad adicional proporcionada por el tipo derivado no resulta necesaria, el uso del tipo base permite que el método se utilice más ampliamente.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, cambie el tipo del parámetro a su tipo base.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla
+
+-   Si el método necesita la funcionalidad específica que proporciona el tipo derivado
+
+     \- o -
+
+-   para exigir que sólo el tipo derivado, o un tipo más derivado, se pasa al método.
+
+ En estos casos, el código será más sólido debido a la comprobación de tipos inflexibles proporcionada por el compilador y el tiempo de ejecución.
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente se muestra un método, `ManipulateFileStream`, que se puede utilizar únicamente con un <xref:System.IO.FileStream> objeto, lo que infringe esta regla. Un segundo método, `ManipulateAnyStream`, cumple la regla reemplazando el <xref:System.IO.FileStream> parámetro mediante el uso de un <xref:System.IO.Stream>.
+
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
- [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]  
-  
-## <a name="related-rules"></a>Reglas relacionadas  
+ [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
+
+## <a name="related-rules"></a>Reglas relacionadas
  [CA1059: Los miembros no deben exponer algunos tipos concretos](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

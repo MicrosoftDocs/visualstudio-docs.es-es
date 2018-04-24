@@ -2,8 +2,7 @@
 title: Navegar por el código con el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e39c343531b7ce81c202e979117d3d2c7196cd7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ae96b360620a58fa323d080e6262c7f2966fa160
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Navegar por el código con el depurador de Visual Studio
 Familiarizarse con los comandos y métodos abreviados para navegar por el código en el depurador y que hará que sea más rápida y sencilla buscar y resolver problemas de la aplicación. Mientras que navegar por el código en el depurador, puede inspeccionar el estado de la aplicación o más información sobre su flujo de ejecución.  

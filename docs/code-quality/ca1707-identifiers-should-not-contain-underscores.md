@@ -1,10 +1,8 @@
 ---
-title: 'CA1707: Los identificadores no deberían contener subrayado | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA1707: Los identificadores no deberían contener subrayado'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
 - CA1707
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c911f90e4da45ce847654f0c89455375ea478e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4eed69f8c08d6106bf30e9c1884512e384a7a269
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Los identificadores no deberían contener subrayado
-|||  
-|-|-|  
-|TypeName|IdentifiersShouldNotContainUnderscores|  
-|Identificador de comprobación|CA1707|  
-|Categoría|Microsoft.Naming|  
-|Cambio problemático|Problemático: cuando se desencadena en los ensamblados<br /><br /> Poco problemático: cuando se desencadena en parámetros de tipo|  
-  
-## <a name="cause"></a>Motivo  
- El nombre de un identificador contiene el carácter de subrayado (_).  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Por convención, los nombres del identificador no contienen el carácter de subrayado (_). La regla comprueba espacios de nombres, tipos, miembros y parámetros.  
-  
- Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Quite todos los caracteres de subrayado del nombre.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
-  
-## <a name="related-rules"></a>Reglas relacionadas  
- [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
-  
+|||
+|-|-|
+|TypeName|IdentifiersShouldNotContainUnderscores|
+|Identificador de comprobación|CA1707|
+|Categoría|Microsoft.Naming|
+|Cambio problemático|Problemático: cuando se desencadena en los ensamblados<br /><br /> Poco problemático: cuando se desencadena en parámetros de tipo|
+
+## <a name="cause"></a>Motivo
+ El nombre de un identificador contiene el carácter de subrayado (_).
+
+## <a name="rule-description"></a>Descripción de la regla
+ Por convención, los nombres del identificador no contienen el carácter de subrayado (_). La regla comprueba espacios de nombres, tipos, miembros y parámetros.
+
+ Las convenciones de nomenclatura proporcionan una apariencia común para las bibliotecas destinadas a Common Language Runtime. Esto reduce la curva de aprendizaje necesaria para las nuevas bibliotecas de software y aumenta la confianza del cliente respecto a que la biblioteca se haya desarrollado por parte de un especialista en desarrollo de código administrado.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Quite todos los caracteres de subrayado del nombre.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ No suprima las advertencias de esta regla.
+
+## <a name="related-rules"></a>Reglas relacionadas
+ [CA1709: Los identificadores deberían utilizar las mayúsculas y minúsculas correctamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+
  [CA1708: Los identificadores se deberían diferenciar en algo más que en el uso de mayúsculas y minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

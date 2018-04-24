@@ -1,6 +1,5 @@
 ---
-title: Calcular métricas de código en Visual Studio | Documentos de Microsoft
-ms.custom: ''
+title: Calcular métricas de código en Visual Studio
 ms.date: 12/12/2017
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -11,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff82bba5a3126d4904efb01dfd7fd9d1141684b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97bfe1c23e2681e90853bc55987317e3f27c7a08
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="code-metrics-values"></a>Valores de métrica de código
 

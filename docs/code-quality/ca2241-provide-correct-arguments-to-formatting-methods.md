@@ -1,10 +1,8 @@
 ---
-title: 'CA2241: Proporcionar argumentos correctos para los métodos de formato | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA2241: Proporcionar argumentos correctos para los métodos de formato'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2241
 - Provide correct arguments to formatting methods
@@ -18,34 +16,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4fbaaa9b2d89b80fec1fb5106e94a7ef504e3c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02f01df5ac774a22c5a0b9b22c68650f17d3e8c0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Proporcionar argumentos correctos para los métodos de formato
-|||  
-|-|-|  
-|TypeName|ProvideCorrectArgumentsToFormattingMethods|  
-|Identificador de comprobación|CA2241|  
-|Categoría|Microsoft.Usage|  
-|Cambio problemático|No trascendental|  
-  
-## <a name="cause"></a>Motivo  
- El `format` pasado a un método como el argumento de cadena <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, o <xref:System.String.Format%2A?displayProperty=fullName> no contiene un elemento de formato que corresponda a cada argumento de objeto o viceversa.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Los argumentos de métodos como <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, y <xref:System.String.Format%2A> constan de una cadena de formato seguida de varias <xref:System.Object?displayProperty=fullName> instancias. La cadena de formato consta de texto y elementos de formato incrustada del formulario, {index [, alignment] [: formatString]}. 'index' es un entero de base cero que indica cuál de los objetos que se va a dar formato. Si un objeto no tiene un índice correspondiente en la cadena de formato, se omite el objeto. Si el objeto especificado por 'index' no existe, un <xref:System.FormatException?displayProperty=fullName> se produce en tiempo de ejecución.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, proporcionan un elemento de formato para cada argumento de objeto y un argumento de objeto para cada elemento de formato.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
-  
-## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra dos infracciones de esta regla.  
-  
+|||
+|-|-|
+|TypeName|ProvideCorrectArgumentsToFormattingMethods|
+|Identificador de comprobación|CA2241|
+|Categoría|Microsoft.Usage|
+|Cambio problemático|No trascendental|
+
+## <a name="cause"></a>Motivo
+ El `format` pasado a un método como el argumento de cadena <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, o <xref:System.String.Format%2A?displayProperty=fullName> no contiene un elemento de formato que corresponda a cada argumento de objeto o viceversa.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Los argumentos de métodos como <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, y <xref:System.String.Format%2A> constan de una cadena de formato seguida de varias <xref:System.Object?displayProperty=fullName> instancias. La cadena de formato consta de texto y elementos de formato incrustada del formulario, {index [, alignment] [: formatString]}. 'index' es un entero de base cero que indica cuál de los objetos que se va a dar formato. Si un objeto no tiene un índice correspondiente en la cadena de formato, se omite el objeto. Si el objeto especificado por 'index' no existe, un <xref:System.FormatException?displayProperty=fullName> se produce en tiempo de ejecución.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, proporcionan un elemento de formato para cada argumento de objeto y un argumento de objeto para cada elemento de formato.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ No suprima las advertencias de esta regla.
+
+## <a name="example"></a>Ejemplo
+ El ejemplo siguiente muestra dos infracciones de esta regla.
+
  [!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
  [!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]

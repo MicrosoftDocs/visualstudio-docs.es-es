@@ -1,6 +1,5 @@
 ---
-title: Mostrar datos relacionados en aplicaciones WPF | Documentos de Microsoft
-ms.custom: ''
+title: Mostrar datos relacionados en aplicaciones WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,11 +17,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5258f12a7ede6727736225e1e8308773db3c91c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b293656a0eeffeba304ef4692f9c021ae9639d22
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 En algunas aplicaciones, puede trabajar con datos procedentes de varias tablas o entidades que se relacionan entre sí en una relación de elementos primarios y secundarios. Por ejemplo, puede mostrar una cuadrícula que muestra los clientes de un `Customers` tabla. Cuando el usuario selecciona un cliente concreto, otra cuadrícula muestra los pedidos de ese cliente de un relacionados `Orders` tabla.
@@ -56,5 +55,6 @@ Puede crear controles enlazados a datos que muestren los datos relacionados arra
      ![Ventana de orígenes de datos que muestra la relación](../data-tools/media/datasources2.gif "DataSources2")
 
 ## <a name="see-also"></a>Vea también
-[Enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
-[Crear tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)
+
+- [Enlace de controles de WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+- [Crear tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1703: Las cadenas de recursos deberían tener la ortografía correcta | Documentos de Microsoft'
+title: 'CA1703: Las cadenas de recursos deberían tener la ortografía correcta'
 ms.date: 03/28/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd0fdccc9ee57223a6684b9caac191f1705c91c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22b6dd429c9f2a5e0c3fb1ef3e9e34a7a0fe1a63
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Las cadenas de recursos deberían tener la ortografía correcta
 

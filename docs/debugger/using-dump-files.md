@@ -2,8 +2,7 @@
 title: Usar archivos de volcado | Documentos de Microsoft
 ms.custom: H1HackMay2017
 ms.date: 03/08/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
@@ -24,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ae780f26f447712e7d58d87b24c2f255031d1fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b06f88433f8b744a9bea7dfcce95b0a095cf7890
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar archivos de volcado de memoria con Visual Studio
 Archivos de volcado de memoria con o sin montones; crear un archivo de volcado; abrir un archivo de volcado de memoria; buscar los archivos binarios, el del archivo pdb y el archivo de código fuente para un archivo de volcado.

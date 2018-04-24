@@ -1,9 +1,7 @@
 ---
-title: 'Tutorial: Analizar código de c/c ++ en previsión de defectos | Documentos de Microsoft'
-ms.custom: ''
+title: 'Tutorial: Analizar código de C/C++ en previsión de defectos'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -12,18 +10,18 @@ helpviewer_keywords:
 - code analysis tool, walkthroughs
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c4c0a053a103ec719792acd7b5d234aa99154ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 60cdc07b35480509152fd09fefb484557358fba0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en previsión de defectos
 
-Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles defectos de código mediante la herramienta de análisis de código para código de C o C++. 
+Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles defectos de código mediante la herramienta de análisis de código para código de C o C++.
 
 - Ejecutar análisis de código en código nativo.
 - Analizar las advertencias de defectos de código.
@@ -166,7 +164,7 @@ Este tutorial muestra cómo analizar código de C/C ++ en previsión de posibles
 
    ```cpp
    . . .
-   LinkedList *newNode = NULL; 
+   LinkedList *newNode = NULL;
    if (NULL == node)
    {
         return NULL;

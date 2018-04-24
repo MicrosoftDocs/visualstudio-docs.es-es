@@ -2,8 +2,7 @@
 title: Barra de herramientas de Spy ++ | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++ toolbar
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed820637797cf41d2b16024c659a28fb6575ec9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f90c9f249ea0091d7cd5b899ffcd9b7cdadc5a7c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="spy-toolbar"></a>Barra de herramientas de Spy++
 La barra de herramientas aparece debajo de la barra de menús de Spy ++. Para mostrar u ocultar la barra de herramientas, en la **vista** menú, haga clic en **barra de herramientas**.  

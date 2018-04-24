@@ -2,8 +2,7 @@
 title: Especificar archivos de código fuente y símbolos (.pdb) en el depurador | Documentos de Microsoft
 ms.custom: H1Hack27Feb2017
 ms.date: 04/05/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -30,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2549cfe71ef05d611251bbc8a017bd4891df3e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0a77ef00ee549006f9b4c6efb255c23543d6746
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio
 Un archivo de base de datos (.pdb) del programa, también denominado archivo de símbolos, asigna los identificadores que se crean en el código fuente de clases, métodos y otro código a los identificadores que se utilizan en los archivos ejecutables compilados del proyecto. El archivo .pdb también asigna las instrucciones del código fuente a las instrucciones de ejecución de los archivos ejecutables. El depurador utiliza estos datos para determinar dos elementos clave de la información:

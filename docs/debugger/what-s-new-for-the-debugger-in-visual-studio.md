@@ -2,8 +2,7 @@
 title: "' S New para que el depurador de Visual Studio de 2017 | Documentos de Microsoft"
 ms.custom: ''
 ms.date: 03/07/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0bcd44da88279f042469356a97bce7f369e1190
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07f25edb63e3418bab44d71bc8314d3aa83e7a84
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>' S New para que el depurador en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 

@@ -2,9 +2,8 @@
 title: 'Error: Depurar ejecutando&#39;t posible porque un depurador del Kernel está habilitado en el sistema | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce2526adc75e7b42ee0aadac5c716b1d0382f35e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Error: Depurar ejecutando&#39;t posible porque un depurador del Kernel está habilitado en el sistema
 Al depurar código administrado, podría aparecer el siguiente mensaje de error:  

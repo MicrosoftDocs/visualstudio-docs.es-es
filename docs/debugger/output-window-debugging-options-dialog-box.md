@@ -2,8 +2,7 @@
 title: Ventana de salida, depuración, cuadro de diálogo Opciones | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.OutputWindow
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3924811338c7dae1a10af541fa2f8ca49e5e83
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35c424632e51cbc7de81fb581dd2e8429341677e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Ventana de salida, Depuración, Opciones (Cuadro de diálogo)
 Puede especificar qué tipos de información de depuración aparecen en la **salida** ventana. Para mostrar estas opciones, abra el **herramientas** menú, haga clic en **opciones**, expanda la **depuración** nodo y haga clic en **resultados (ventana)**.  

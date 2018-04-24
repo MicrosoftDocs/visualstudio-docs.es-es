@@ -2,8 +2,7 @@
 title: Iniciar una sesión de depuración para una aplicación de UWP en Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/04/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
@@ -37,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 667fa5294f813a59425516e7e6d97177ca681365
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b298e2b17f1aa8805e0ab896c6978744c6c3bd53
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>Iniciar una sesión de depuración para una aplicación de UWP en Visual Studio
   

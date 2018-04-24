@@ -2,8 +2,7 @@
 title: Depurar proyectos DLL | Documentos de Microsoft
 ms.custom: ''
 ms.date: 05/23/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b7e897b69770f42bac9757f061f96a67fc9b99f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c5da503dd3eb1aec83c5f1fdef58261960d66d7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Depurar proyectos DLL desde Visual Studio
 Las siguientes plantillas de Visual Studio crean archivos DLL:  

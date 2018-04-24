@@ -1,10 +1,8 @@
 ---
-title: 'CA1013: Suma y resta de sobrecarga el operador de igualdad sobrecarga | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OverrideOperatorEqualsOnOverridingAddAndSubtract
 - OverrideOperatorEqualsOnOverloadingAddAndSubtract
@@ -21,64 +19,64 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3117841570e737f981959165892b0ea2d39bd7bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fd43cc3077c037b70eaa8107563bd8f40b6a096
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: El operador de sobrecarga es igual que la suma y resta de sobrecarga
-|||  
-|-|-|  
-|TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|  
-|Identificador de comprobación|CA1013|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Poco problemático|  
-  
-## <a name="cause"></a>Motivo  
- Un tipo público o protegido implementa los operadores de suma o resta sin implementar el operador de igualdad.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Cuando las instancias de un tipo se pueden combinar mediante operaciones como la suma y resta, casi siempre debe definir la igualdad para devolver `true` para que las dos instancias que tienen los mismos valores que la componen.  
-  
- No puede utilizar el operador de igualdad predeterminado en una implementación sobrecargada del operador de igualdad. Si lo hace, provocará un desbordamiento de pila. Para implementar el operador de igualdad, utilice el método Object.Equals en la implementación. Vea el ejemplo siguiente.  
-  
-```vb  
-If (Object.ReferenceEquals(left, Nothing)) Then  
-    Return Object.ReferenceEquals(right, Nothing)  
-Else  
-    Return left.Equals(right)  
-End If  
-```  
-  
-```csharp  
-if (Object.ReferenceEquals(left, null))   
-    return Object.ReferenceEquals(right, null);  
-return left.Equals(right);  
-```  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, implemente el operador de igualdad para que sea matemáticamente coherente con los operadores de suma y resta.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla cuando la implementación predeterminada del operador de igualdad proporciona el comportamiento adecuado para el tipo.  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se define un tipo (`BadAddableType`) que infringe esta regla. Este tipo debe implementar el operador de igualdad para hacer que las dos instancias que tienen los mismos valores de campo probar `true` igualdad. El tipo `GoodAddableType` muestra la implementación correcta. Tenga en cuenta que este tipo también implementa el operador de desigualdad y reemplaza <xref:System.Object.Equals%2A> para cumplir con otras reglas. Una implementación completa también implementaría <xref:System.Object.GetHashCode%2A>.  
-  
- [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se comprueba la igualdad utilizando instancias de los tipos que se han definido anteriormente en este tema para mostrar el valor predeterminado y un comportamiento correcto para el operador de igualdad.  
-  
- [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]  
-  
- Este ejemplo produce el siguiente resultado:  
-  
- **¿Tipo no válido: {2,2} {2,2} son iguales? No**  
-**¿Tipo: {3,3} {3,3} son iguales? Sí**  
-**¿Tipo: {3,3} {3,3} son ==?   Sí**  
-**¿Tipo no válido: {2,2} {9,9} son iguales? No**  
-**¿Tipo: {3,3} {9,9} son ==?   No**   
-## <a name="see-also"></a>Vea también  
+|||
+|-|-|
+|TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
+|Identificador de comprobación|CA1013|
+|Categoría|Microsoft.Design|
+|Cambio problemático|Poco problemático|
+
+## <a name="cause"></a>Motivo
+ Un tipo público o protegido implementa los operadores de suma o resta sin implementar el operador de igualdad.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Cuando las instancias de un tipo se pueden combinar mediante operaciones como la suma y resta, casi siempre debe definir la igualdad para devolver `true` para que las dos instancias que tienen los mismos valores que la componen.
+
+ No puede utilizar el operador de igualdad predeterminado en una implementación sobrecargada del operador de igualdad. Si lo hace, provocará un desbordamiento de pila. Para implementar el operador de igualdad, utilice el método Object.Equals en la implementación. Vea el ejemplo siguiente.
+
+```vb
+If (Object.ReferenceEquals(left, Nothing)) Then
+    Return Object.ReferenceEquals(right, Nothing)
+Else
+    Return left.Equals(right)
+End If
+```
+
+```csharp
+if (Object.ReferenceEquals(left, null))
+    return Object.ReferenceEquals(right, null);
+return left.Equals(right);
+```
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, implemente el operador de igualdad para que sea matemáticamente coherente con los operadores de suma y resta.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla cuando la implementación predeterminada del operador de igualdad proporciona el comportamiento adecuado para el tipo.
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente se define un tipo (`BadAddableType`) que infringe esta regla. Este tipo debe implementar el operador de igualdad para hacer que las dos instancias que tienen los mismos valores de campo probar `true` igualdad. El tipo `GoodAddableType` muestra la implementación correcta. Tenga en cuenta que este tipo también implementa el operador de desigualdad y reemplaza <xref:System.Object.Equals%2A> para cumplir con otras reglas. Una implementación completa también implementaría <xref:System.Object.GetHashCode%2A>.
+
+ [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente se comprueba la igualdad utilizando instancias de los tipos que se han definido anteriormente en este tema para mostrar el valor predeterminado y un comportamiento correcto para el operador de igualdad.
+
+ [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]
+
+ Este ejemplo produce el siguiente resultado:
+
+ **¿Tipo no válido: {2,2} {2,2} son iguales? ¿Ya no**
+**tipo buena: {3,3} {3,3} son iguales? ¿Sí**
+**tipo buena: {3,3} {3,3} son ==?   ¿Sí**
+**tipo incorrecto: {2,2} {9,9} son iguales? ¿Ya no**
+**tipo buena: {3,3} {9,9} son ==?   No**
+## <a name="see-also"></a>Vea también
  [Operadores de igualdad](/dotnet/standard/design-guidelines/equality-operators)

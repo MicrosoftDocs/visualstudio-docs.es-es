@@ -16,11 +16,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49008836057ce6e5b67a0795bc5c6572ef6f7935
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4b36800ea291c6f1bc0948a46b67c4e3549f349
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Agregar un menú contextual en una ventana de herramientas
 En este tutorial, se coloca un menú contextual en una ventana de herramientas. Un menú contextual es un menú que aparece cuando un usuario seleccione un botón, el cuadro de texto o el fondo de la ventana. Comandos en un menú contextual comportan igual que los comandos en otros menús o barras de herramientas. Para admitir un menú contextual, especifíquelo en el archivo .vsct y mostrarlo en la respuesta para el botón secundario del mouse.  
@@ -114,7 +114,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     </Buttons>  
     ```  
   
-5.  En ShortcutMenuPackageGuids.cs, agregue que las definiciones para el comando establecen GUID, el menú contextual y los elementos de menú.  
+5.  En ShortcutMenuCommand.cs, agregue que las definiciones para el comando establecen GUID, el menú contextual y los elementos de menú.  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -143,7 +143,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     ```csharp  
     protected override void Initialize()  
     {  
-        commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
+        var commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
         Content = new ShortcutMenuControl(commandService);  
     }  
     ```  
@@ -170,12 +170,12 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
         if (null !=commandService)  
         {  
             // Create an alias for the command set guid.  
-            Guid guid = new Guid(ShortcutMenuPackageGuids.guidShortcutMenuPackageCmdSet);  
+            Guid guid = new Guid(ShortcutMenuCommand.guidShortcutMenuPackageCmdSet);  
   
             // Create the command IDs.   
-            var red = new CommandID(guid, ShortcutMenuPackageGuids.cmdidRed);  
-            var yellow = new CommandID(guid, ShortcutMenuPackageGuids.cmdidYellow);  
-            var blue = new CommandID(guid, ShortcutMenuPackageGuids.cmdidBlue);  
+            var red = new CommandID(guid, ShortcutMenuCommand.cmdidRed);  
+            var yellow = new CommandID(guid, ShortcutMenuCommand.cmdidYellow);  
+            var blue = new CommandID(guid, ShortcutMenuCommand.cmdidBlue);  
   
             // Add a command for each command ID.  
             commandService.AddCommand(new MenuCommand(ChangeColor, red));  
@@ -234,8 +234,8 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
         if (null != commandService)  
         {  
             CommandID menuID = new CommandID(  
-                new Guid(ShortcutMenuPackageGuids.guidShortcutMenuPackageCmdSet),  
-                ShortcutMenuPackageGuids.ColorMenu);  
+                new Guid(ShortcutMenuCommand.guidShortcutMenuPackageCmdSet),  
+                ShortcutMenuCommand.ColorMenu);  
             Point p = this.PointToScreen(e.GetPosition(this));  
             commandService.ShowContextMenu(menuID, (int)p.X, (int)p.Y);  
         }  
@@ -253,13 +253,13 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
   
         switch (mc.CommandID.ID)  
         {  
-            case ShortcutMenuPackageGuids.cmdidRed:  
+            case ShortcutMenuCommand.cmdidRed:  
                 MyToolWindow.Background = Brushes.Red;  
                 break;  
-            case ShortcutMenuPackageGuids.cmdidYellow:  
+            case ShortcutMenuCommand.cmdidYellow:  
                 MyToolWindow.Background = Brushes.Yellow;  
                 break;  
-            case ShortcutMenuPackageGuids.cmdidBlue:  
+            case ShortcutMenuCommand.cmdidBlue:  
                 MyToolWindow.Background = Brushes.Blue;  
                 break;  
         }  

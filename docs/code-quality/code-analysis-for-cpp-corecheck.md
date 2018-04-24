@@ -1,23 +1,21 @@
 ---
-title: Referencia de Comprobador de directrices de núcleo de C++ de Visual Studio | Documentos de Microsoft
-ms.custom: ''
+title: Referencia de Visual Studio C++ Core directrices Comprobador
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d68ed1d7002ac0e92d3a8c3e32226cb3a38c3f0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referencia de Comprobador de instrucciones de C++ principal
 
@@ -170,7 +168,7 @@ Vea [directrices de núcleo de C++: F.6: si la función no puede iniciar, declá
 [C26474 NO_IMPLICIT_CAST](C26474.md) no convertir entre tipos de puntero cuando la conversión podría ser implícita. Vea [Type.1 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md) no usar conversiones de C de estilo de función. Vea [C++ Core directrices ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).
- 
+
 [C26490 NO_REINTERPRET_CAST](c26490.md) no use `reinterpret_cast`. Vea [Type.1 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26491 NO_STATIC_DOWNCAST](c26490.md) no utilice `static_cast` las conversiones de restricción. Vea [Type.2 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
@@ -178,7 +176,7 @@ Vea [directrices de núcleo de C++: F.6: si la función no puede iniciar, declá
 [C26492 NO_CONST_CAST](c26492.md) no utilice `const_cast` para desechar `const`. Vea [Type.3 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26493 NO_CSTYLE_CAST](c26493.md) no usar conversiones de estilo C. Vea [Type.4 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
- 
+
 [C26494 VAR_USE_BEFORE_INIT](c26494.md) Variable '% variable %' no está inicializado. Siempre inicializar un objeto. Vea [Type.5 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26495 MEMBER_UNINIT](c26495.md) Variable '% variable %' no está inicializado. Siempre inicializar una variable de miembro. Vea [Type.6 de instrucciones de C++ Core](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).

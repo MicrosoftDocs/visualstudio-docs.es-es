@@ -2,8 +2,7 @@
 title: '&lt;Paquete&gt; elemento (arranque) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -13,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <package> element [bootstrapper]
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c00bdae8c257b0dc09077ffc10b146329af797f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c04676f03f4734a25601e772208939e0b3f8482d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paquete&gt; elemento (arranque)
 El `Package` elemento es el elemento XML de nivel superior dentro de un archivo de paquete.  

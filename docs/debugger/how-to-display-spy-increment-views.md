@@ -2,8 +2,7 @@
 title: 'Cómo: mostrar las vistas de Spy ++ | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, viewing code
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ea33b65eb8c77aa2896066997d8707a32996b1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd4643ab3bad401e05d46c5ec5505322ec760342
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-display-spy-views"></a>Cómo: Mostrar las vistas de Spy++
 Cuando se inicia Spy ++, se abre en [Windows Vista](../debugger/windows-view.md), una vista de árbol de todas las ventanas y controles disponibles en su equipo. Esta ventana raíz es títulos "Windows 1". También hay tres otras vistas de Spy ++: [vista mensajes](../debugger/messages-view.md), [vista procesos](../debugger/processes-view.md), y [vista de subprocesos](../debugger/threads-view.md). Puede mostrar la vista que desee desde la **Spy** menú. Para obtener más información, consulte [vistas de Spy ++](../debugger/spy-increment-views.md).  

@@ -2,8 +2,7 @@
 title: Configuración de proyecto para el depurador | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa3a216f8f7bdcaebfae617ae345ee1a7ee42293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea878114d940f8b9881a1a1d0204da58ca6519f5
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugger-project-settings"></a>Configuración del proyecto para el depurador
 Ciertos valores de configuración del proyecto también afectan a la depuración. Estos valores determinan, por ejemplo, qué directorios consulta el depurador, el comando y los argumentos del comando utilizados para iniciar el programa y el tipo de información de depuración que se crea para el programa. Estos valores se pueden cambiar en el cuadro de diálogo **Páginas de propiedades** .  

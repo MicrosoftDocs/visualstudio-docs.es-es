@@ -2,8 +2,7 @@
 title: 'Cómo: administrar actualizaciones de una aplicación ClickOnce | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2346ab8bfcaaaaf2934461e251803fd5920f804b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 388523a15ad4d1d4759287fcc1c8ddf32e7b464f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Cómo: Administrar actualizaciones de aplicaciones ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones pueden buscar actualizaciones automáticamente o mediante programación. Como programador, tiene mucha flexibilidad para especificar cuándo y cómo se realizan comprobaciones de actualización, si éstas son obligatorias y donde la aplicación debe buscar actualizaciones.  

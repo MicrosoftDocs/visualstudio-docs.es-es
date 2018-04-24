@@ -1,10 +1,8 @@
 ---
-title: 'CA1033: Los métodos de interfaz deben ser tipos secundarios | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA1033: Los tipos secundarios deberían poder llamar a los métodos de interfaz'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InterfaceMethodsShouldBeCallableByChildTypes
 - CA1033
@@ -17,38 +15,38 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 485247e33abe3018b06144f3ec55b2b69b4b111a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c41b19d9d4a82e25223a9cf7b04034b37c3f45fb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Los tipos secundarios deberían poder llamar a los métodos de interfaz
-|||  
-|-|-|  
-|TypeName|InterfaceMethodsShouldBeCallableByChildTypes|  
-|Identificador de comprobación|CA1033|  
-|Categoría|Microsoft.Design|  
-|Cambio problemático|Poco problemático|  
-  
-## <a name="cause"></a>Motivo  
- Un tipo no sellado visible externamente proporciona un método explícito de implementación de una interfaz pública pero no proporciona un método visible externamente alternativo con el mismo nombre.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Considere la posibilidad de un tipo base que implementa explícitamente un método de interfaz pública. Un tipo que deriva del tipo base puede tener acceso al método de interfaz heredada sólo a través de una referencia a la instancia actual (`this` en C#) que se convierte en la interfaz. Si el tipo derivado vuelve a implementa (explícitamente) el método de interfaz heredada, la implementación base ya no son accesibles. La llamada a través de la referencia a la instancia actual invocará la implementación derivada; Esto hace que la recursividad y un desbordamiento de pila final.  
-  
- Esta regla no informa de una infracción de una implementación explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> cuando visible externamente `Close()` o `System.IDisposable.Dispose(Boolean)` se proporciona el método.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, implemente un nuevo método que expone la misma funcionalidad y es visible para los tipos derivados o cambiar a una implementación no explícitos. Si un cambio principal es aceptable, una alternativa es hacer que el tipo sealed.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- Es seguro suprimir una advertencia de esta regla si un método visible externamente está siempre tenga la misma funcionalidad pero con un nombre distinto del método implementado explícitamente.  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra un tipo, `ViolatingBase`, que infringe la regla y un tipo, `FixedBase`, que muestra una corrección para la infracción.  
-  
- [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]  
-  
-## <a name="see-also"></a>Vea también  
+|||
+|-|-|
+|TypeName|InterfaceMethodsShouldBeCallableByChildTypes|
+|Identificador de comprobación|CA1033|
+|Categoría|Microsoft.Design|
+|Cambio problemático|Poco problemático|
+
+## <a name="cause"></a>Motivo
+ Un tipo no sellado visible externamente proporciona un método explícito de implementación de una interfaz pública pero no proporciona un método visible externamente alternativo con el mismo nombre.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Considere la posibilidad de un tipo base que implementa explícitamente un método de interfaz pública. Un tipo que deriva del tipo base puede tener acceso al método de interfaz heredada sólo a través de una referencia a la instancia actual (`this` en C#) que se convierte en la interfaz. Si el tipo derivado vuelve a implementa (explícitamente) el método de interfaz heredada, la implementación base ya no son accesibles. La llamada a través de la referencia a la instancia actual invocará la implementación derivada; Esto hace que la recursividad y un desbordamiento de pila final.
+
+ Esta regla no informa de una infracción de una implementación explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> cuando visible externamente `Close()` o `System.IDisposable.Dispose(Boolean)` se proporciona el método.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, implemente un nuevo método que expone la misma funcionalidad y es visible para los tipos derivados o cambiar a una implementación no explícitos. Si un cambio principal es aceptable, una alternativa es hacer que el tipo sealed.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ Es seguro suprimir una advertencia de esta regla si un método visible externamente está siempre tenga la misma funcionalidad pero con un nombre distinto del método implementado explícitamente.
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente se muestra un tipo, `ViolatingBase`, que infringe la regla y un tipo, `FixedBase`, que muestra una corrección para la infracción.
+
+ [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
+
+## <a name="see-also"></a>Vea también
  [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)

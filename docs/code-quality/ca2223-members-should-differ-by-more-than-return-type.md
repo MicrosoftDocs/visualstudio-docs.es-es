@@ -1,10 +1,8 @@
 ---
-title: 'CA2223: Los miembros deben diferenciarse por el tipo de valor devuelto más de | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MembersShouldDifferByMoreThanReturnType
 - CA2223
@@ -17,82 +15,82 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 637580bee168ac35295e735bcddfed81922e95eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4caffc53ff99f20a0dee94990dd6f5b966f2e047
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Los miembros deben diferenciarse por algo más que por un tipo de valor devuelto
-|||  
-|-|-|  
-|TypeName|MembersShouldDifferByMoreThanReturnType|  
-|Identificador de comprobación|CA2223|  
-|Categoría|Microsoft.Usage|  
-|Cambio problemático|Problemático|  
-  
-## <a name="cause"></a>Motivo  
- Dos miembros públicos o protegidos tienen firmas idénticas, salvo por el tipo de valor devuelto.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Aunque common language runtime permite utilizar tipos de valor devuelto para diferenciar miembros idénticos, esta característica no está en Common Language Specification ni es una característica común de lenguajes de programación. NET. Cuando los miembros diferenciarse únicamente por el tipo de valor devuelto, los desarrolladores y las herramientas de desarrollo podrían no correctamente distinguir entre ellos.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambie el diseño de los miembros para que sean únicos basándose únicamente en sus nombres y tipos de parámetro, o no exponen a los miembros.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
-  
-## <a name="example"></a>Ejemplo  
- El ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), muestra un tipo que infringe esta regla. Tenga en cuenta que no se puede infringir esta regla mediante el uso de C# o Visual Basic.  
-  
-```  
-  
-.namespace UsageLibrary  
-{  
-  .class public auto ansi beforefieldinit ReturnTypeTest  
-         extends [mscorlib]System.Object  
-  {  
-    .method public hidebysig instance int32  
-            AMethod(int32 x) cil managed  
-    {  
-      // Code size       6 (0x6)  
-      .maxstack  1  
-      .locals init (int32 V_0)  
-      IL_0000:  ldc.i4.0  
-      IL_0001:  stloc.0  
-      IL_0002:  br.s       IL_0004  
-  
-      IL_0004:  ldloc.0  
-      IL_0005:  ret  
-    } // end of method ReturnTypeTest::AMethod  
-  
-    .method public hidebysig instance string  
-            AMethod(int32 x) cil managed  
-    {  
-      // Code size       10 (0xa)  
-      .maxstack  1  
-      .locals init (string V_0)  
-      IL_0000:  ldstr      "test"  
-      IL_0005:  stloc.0  
-      IL_0006:  br.s       IL_0008  
-  
-      IL_0008:  ldloc.0  
-      IL_0009:  ret  
-    } // end of method ReturnTypeTest::AMethod  
-  
-    .method public hidebysig specialname rtspecialname  
-            instance void  .ctor() cil managed  
-    {  
-      // Code size       7 (0x7)  
-      .maxstack  1  
-      IL_0000:  ldarg.0  
-      IL_0001:  call       instance void [mscorlib]System.Object::.ctor()  
-      IL_0006:  ret  
-    } // end of method ReturnTypeTest::.ctor  
-  
-  } // end of class ReturnTypeTest  
-  
-} // end of namespace UsageLibrary  
-  
+|||
+|-|-|
+|TypeName|MembersShouldDifferByMoreThanReturnType|
+|Identificador de comprobación|CA2223|
+|Categoría|Microsoft.Usage|
+|Cambio problemático|Problemático|
+
+## <a name="cause"></a>Motivo
+ Dos miembros públicos o protegidos tienen firmas idénticas, salvo por el tipo de valor devuelto.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Aunque common language runtime permite utilizar tipos de valor devuelto para diferenciar miembros idénticos, esta característica no está en Common Language Specification ni es una característica común de lenguajes de programación. NET. Cuando los miembros diferenciarse únicamente por el tipo de valor devuelto, los desarrolladores y las herramientas de desarrollo podrían no correctamente distinguir entre ellos.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, cambie el diseño de los miembros para que sean únicos basándose únicamente en sus nombres y tipos de parámetro, o no exponen a los miembros.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ No suprima las advertencias de esta regla.
+
+## <a name="example"></a>Ejemplo
+ El ejemplo siguiente, en lenguaje intermedio de Microsoft (MSIL), muestra un tipo que infringe esta regla. Tenga en cuenta que no se puede infringir esta regla mediante el uso de C# o Visual Basic.
+
+```
+
+.namespace UsageLibrary
+{
+  .class public auto ansi beforefieldinit ReturnTypeTest
+         extends [mscorlib]System.Object
+  {
+    .method public hidebysig instance int32
+            AMethod(int32 x) cil managed
+    {
+      // Code size       6 (0x6)
+      .maxstack  1
+      .locals init (int32 V_0)
+      IL_0000:  ldc.i4.0
+      IL_0001:  stloc.0
+      IL_0002:  br.s       IL_0004
+
+      IL_0004:  ldloc.0
+      IL_0005:  ret
+    } // end of method ReturnTypeTest::AMethod
+
+    .method public hidebysig instance string
+            AMethod(int32 x) cil managed
+    {
+      // Code size       10 (0xa)
+      .maxstack  1
+      .locals init (string V_0)
+      IL_0000:  ldstr      "test"
+      IL_0005:  stloc.0
+      IL_0006:  br.s       IL_0008
+
+      IL_0008:  ldloc.0
+      IL_0009:  ret
+    } // end of method ReturnTypeTest::AMethod
+
+    .method public hidebysig specialname rtspecialname
+            instance void  .ctor() cil managed
+    {
+      // Code size       7 (0x7)
+      .maxstack  1
+      IL_0000:  ldarg.0
+      IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+      IL_0006:  ret
+    } // end of method ReturnTypeTest::.ctor
+
+  } // end of class ReturnTypeTest
+
+} // end of namespace UsageLibrary
+
 ```

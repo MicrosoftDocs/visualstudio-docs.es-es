@@ -1,10 +1,8 @@
 ---
-title: 'CA1408: No utilizar AutoDual ClassInterfaceType | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA1408: No utilizar AutoDual ClassInterfaceType'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotUseAutoDualClassInterfaceType
 - CA1408
@@ -17,45 +15,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ee8c016896381814aa5406b4023e24799f29219
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d006f89103441ad2396c03d38e07be4f71fae000
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: No utilizar AutoDual ClassInterfaceType
-|||  
-|-|-|  
-|TypeName|DoNotUseAutoDualClassInterfaceType|  
-|Identificador de comprobación|CA1408|  
-|Categoría|Microsoft.Interoperability|  
-|Cambio problemático|Problemático|  
-  
-## <a name="cause"></a>Motivo  
- Un tipo visible del modelo de objetos componentes (COM) se marca con la <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo establecido en el `AutoDual` valo <xref:System.Runtime.InteropServices.ClassInterfaceType>.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Los tipos que utilizan una interfaz dual permiten a los clientes enlazarse a un diseño de interfaz concreto. Cualquier cambio que se introduzca en una versión futura en el diseño del tipo o en cualquier tipo base provocará un error en los clientes COM que están enlazados a la interfaz. De forma predeterminada, si la <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo no se especifica, se utiliza una interfaz solo de envío.  
-  
- A menos que marque lo contrario, todos los tipos no genéricos públicos son visibles para COM; todos los tipos no públicos y genéricos son invisibles para COM.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambie el valor de la <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atribuir a la `None` valo <xref:System.Runtime.InteropServices.ClassInterfaceType> y definir explícitamente la interfaz.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla a menos que se tiene la certeza de que el diseño del tipo y sus tipos base no van a cambiar en una versión futura.  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se muestra una clase que infringe la regla y una nueva declaración de la clase se debe utilizar una interfaz explícita.  
-  
+|||
+|-|-|
+|TypeName|DoNotUseAutoDualClassInterfaceType|
+|Identificador de comprobación|CA1408|
+|Categoría|Microsoft.Interoperability|
+|Cambio problemático|Problemático|
+
+## <a name="cause"></a>Motivo
+ Un tipo visible del modelo de objetos componentes (COM) se marca con la <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo establecido en el `AutoDual` valo <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Los tipos que utilizan una interfaz dual permiten a los clientes enlazarse a un diseño de interfaz concreto. Cualquier cambio que se introduzca en una versión futura en el diseño del tipo o en cualquier tipo base provocará un error en los clientes COM que están enlazados a la interfaz. De forma predeterminada, si la <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo no se especifica, se utiliza una interfaz solo de envío.
+
+ A menos que marque lo contrario, todos los tipos no genéricos públicos son visibles para COM; todos los tipos no públicos y genéricos son invisibles para COM.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, cambie el valor de la <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atribuir a la `None` valo <xref:System.Runtime.InteropServices.ClassInterfaceType> y definir explícitamente la interfaz.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ No suprima las advertencias de esta regla a menos que se tiene la certeza de que el diseño del tipo y sus tipos base no van a cambiar en una versión futura.
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente se muestra una clase que infringe la regla y una nueva declaración de la clase se debe utilizar una interfaz explícita.
+
  [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]  
-  
-## <a name="related-rules"></a>Reglas relacionadas  
- [CA1403: Los tipos de diseño automático no deben ser visibles para COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)  
-  
- [CA1412: Marcar las interfaces ComSource como IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)  
-  
-## <a name="see-also"></a>Vea también  
- [Habilitar tipos de .NET para la interoperación](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index) (Interoperar con código no administrado)
+ [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
+
+## <a name="related-rules"></a>Reglas relacionadas
+ [CA1403: Los tipos de diseño automático no deben ser visibles para COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+
+ [CA1412: Marcar las interfaces ComSource como IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+
+## <a name="see-also"></a>Vea también
+ [Habilitar tipos de .NET para la interoperación](/dotnet/framework/interop/qualifying-net-types-for-interoperation) [interoperar con código no administrado](/dotnet/framework/interop/index)

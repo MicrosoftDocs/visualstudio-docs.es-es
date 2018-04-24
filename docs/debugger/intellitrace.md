@@ -2,8 +2,7 @@
 title: IntelliTrace | Documentos de Microsoft
 ms.custom: ''
 ms.date: 07/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.overview
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 655bbde8ca1e2ee1cfed1ae2b57f99ed91525ec7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c5812f73d86bd585cb24f2e8d599c82d2d6e7ab
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 

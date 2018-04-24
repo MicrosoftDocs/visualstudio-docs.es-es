@@ -2,9 +2,8 @@
 title: '&lt;fileAssociation&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - <fileAssociation> element [ClickOnce application manifest]
 - manifests [ClickOnce], fileAssociation element
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da80f852526afa4692b7ecd6eefea3cc3c3de7e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1f59ef1d00951d4c49c1bcb19c6c9122e281c3ca
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elemento (aplicación ClickOnce)
 Identifica una extensión de archivo que se asociará a la aplicación.  

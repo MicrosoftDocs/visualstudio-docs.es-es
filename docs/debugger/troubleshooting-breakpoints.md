@@ -2,19 +2,18 @@
 title: Solucionar problemas de puntos de interrupción en el depurador de Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/23/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
-author: carpediemma
-ms.author: emrou
+author: mikejo5000
+ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93d8d2dacdc15e4ff92a31486f94b328b957ea55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d587809a9690e312e923ba184c9d90c38405a5d6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Solucionar problemas de puntos de interrupción en el depurador de Visual Studio
 

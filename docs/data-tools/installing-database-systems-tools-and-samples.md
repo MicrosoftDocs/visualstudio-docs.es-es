@@ -1,6 +1,5 @@
 ---
-title: Compatibilidad de base de datos de Visual Studio | Documentos de Microsoft
-ms.custom: ''
+title: Compatibilidad de base de datos de Visual Studio
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +13,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c8cffef6144c188fd5f53e504f6065c4e7d0c1d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1415ec8166ae98d6178c036fec043cc473aca7d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Sistemas de base de datos compatible con Visual Studio
 
@@ -56,5 +55,5 @@ Pájaro de fuego es un sistema de base de datos SQL de código abierto. Puede de
 
 ## <a name="see-also"></a>Vea también
 
-[Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
-[Cómo determinar la versión y edición de SQL Server y sus componentes](http://support.microsoft.com/kb/321185)
+- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Cómo determinar la versión y edición de SQL Server y sus componentes](http://support.microsoft.com/kb/321185)

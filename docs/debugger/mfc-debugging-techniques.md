@@ -2,8 +2,7 @@
 title: Técnicas de depuración de MFC | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
@@ -28,11 +27,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7f0dd5511640fe9ebb95dbdfb213ce7f37f6c8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuración de MFC
 Si está depurando un programa MFC, estas técnicas de depuración pueden resultar de utilidad.  
@@ -362,7 +361,7 @@ Phone #: 581-0215
 ####  <a name="BKMK_Customizing_object_dumps"></a> Personalizar volcados de memoria de objetos  
  Si se deriva una clase de [CObject](/cpp/mfc/reference/cobject-class), puede reemplazarse la función miembro `Dump` para ofrecer información adicional cuando se utiliza [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) para realizar un volcado de memoria de objetos en la [Ventana de salida](../ide/reference/output-window.md).  
   
- La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión (**<<**para enviar datos a un `CDumpContext`.  
+ La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión (**<<** para enviar datos a un `CDumpContext`.  
   
  Cuando se reemplaza la función `Dump` , primero se debería llamar a la versión de la clase base de `Dump` para realizar un volcado de memoria del contenido del objeto de la clase base. A continuación, se escribe una descripción textual y un valor descriptivo para cada variable miembro de la clase derivada.  
   

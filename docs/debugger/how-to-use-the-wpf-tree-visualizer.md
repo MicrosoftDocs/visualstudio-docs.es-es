@@ -2,8 +2,7 @@
 title: 'Cómo: usar el visualizador de árboles WPF | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25e7c2e6b086bced66df747cd26cc7279e52f96
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 290231b7b700a26945227ba04ddc2e97cdfe4299
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Cómo: Usar el visualizador de árboles de WPF
 Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. Para obtener más información sobre los árboles visuales, vea [árboles de WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Para obtener más información acerca de las propiedades de dependencia, vea [información general sobre propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
   
- Al abrir el visualizador de árboles de WPF, verá dos paneles: el **árbol Visual** a la izquierda y la **propiedades de** *nombre***:***tipo* panel en la parte derecha. Seleccione cualquier objeto en el **árbol Visual** panel y el **propiedades de** *nombre***:***tipo* panel se actualiza automáticamente para mostrar el propiedades de ese objeto.  
+ Al abrir el visualizador de árboles de WPF, verá dos paneles: el **árbol Visual** a la izquierda y la **propiedades de** *nombre ***:*** tipo* panel en la parte derecha. Seleccione cualquier objeto en el **árbol Visual** panel y el **propiedades de** *nombre ***:*** tipo* panel se actualiza automáticamente para mostrar el propiedades de ese objeto.  
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Para abrir el visualizador de árboles de WPF  
   
@@ -52,7 +51,7 @@ Puede usar el visualizador de árboles de WPF para explorar el árbol visual de 
   
 ### <a name="to-search-the-properties-list"></a>Para buscar en la lista de propiedades  
   
--   En el **propiedades de** *nombre***:***tipo* panel, escriba la cadena de la que desea buscar en el **filtro** cuadro.  
+-   En el **propiedades de** *nombre ***:*** tipo* panel, escriba la cadena de la que desea buscar en el **filtro** cuadro.  
   
      El visualizador de árboles de WPF buscará inmediatamente las propiedades que coincidan con la cadena que ha escrito; ahora, la lista solo muestra las propiedades que coinciden con la cadena que ha escrito. Escriba más caracteres si desea buscar una coincidencia más precisa.  
   

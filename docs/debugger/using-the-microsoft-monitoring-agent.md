@@ -2,8 +2,7 @@
 title: Mediante Microsoft Monitoring Agent | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e1a0bb0567b4ff76bd6dfac1c28fe1eccd7f48c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7df107cbf6170e603978358d49df167596208a4
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Usar Microsoft Monitoring Agent
 Puede usar **Microsoft Monitoring Agent**para supervisar localmente las aplicaciones web ASP.NET hospedadas en IIS y las aplicaciones de SharePoint 2010 o 2013 y comprobar si tienen errores, problemas de rendimiento u otro tipo de problemas. Puede guardar eventos de diagnóstico del agente en un archivo de registro de IntelliTrace (.iTrace). Después podrá abrir el registro en Visual Studio Enterprise (pero no en las versiones de Visual Studio Professional o Community) para depurar los problemas con todas las herramientas de diagnóstico de Visual Studio. También puede recopilar datos de diagnóstico de IntelliTrace y datos sobre métodos si ejecuta el agente en modo **Trace** . El agente de supervisión de Microsoft puede integrarse con [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) y [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent sí modifica el entorno del sistema de destino cuando se instala.  

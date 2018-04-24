@@ -2,8 +2,7 @@
 title: Implementar aplicaciones UWP desde Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/16/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: dec0b32b0be121e15c81b93f5ed7dd6aa0b9c324
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fda8e9b09fadfb57145331b1fc09acc1687e58e7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implementar aplicaciones UWP desde Visual Studio
   

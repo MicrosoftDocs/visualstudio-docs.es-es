@@ -1,5 +1,5 @@
 ---
-title: Análisis de código administrado de Visual Studio de código | Documentos de Microsoft
+title: Análisis de código para código administrado en Visual Studio
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9a720a1ad65f06ca6810ce0d9f9d9fe29371d539
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 727a63d122871ff452365eea66e9a6e63a7c67b0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Información general de análisis de código para código administrado
 

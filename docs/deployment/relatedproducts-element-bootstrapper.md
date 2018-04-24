@@ -2,8 +2,7 @@
 title: '&lt;RelatedProducts&gt; elemento (arranque) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
@@ -19,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - <RelatedProducts> element [bootstrapper]
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fafc77df0bc557952bd5e197f3c950a3d028e3e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 574b7180efb7495b755d823c798ffa0c21339390
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elemento (arranque)
 El `RelatedProducts` elemento define otros productos que dependen o que se incluyen en el producto actual.  

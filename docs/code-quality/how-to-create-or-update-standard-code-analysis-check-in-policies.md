@@ -1,6 +1,5 @@
 ---
-title: 'Cómo: crear o actualizar directivas de protección de análisis de código estándar | Documentos de Microsoft'
-ms.custom: ''
+title: 'Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar'
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
 
@@ -50,10 +49,10 @@ Después de especificar una directiva de protección para el código administrad
 
 Active o desactive las siguientes opciones:
 
-    |Opción|Descripción|  
-    |------------|-----------------|  
-    |**Aplicar en el repositorio para que sólo contenga los archivos que forman parte de la solución actual.**|Análisis de código puede ejecutar solo en los archivos especificados en archivos de configuración de soluciones y proyectos. Esta directiva garantiza que se analiza todo el código que forma parte de una solución.|  
-    |**Exigir análisis de código de C/C ++ (/analyze)**|Requiere que todos los proyectos de C o C++ se generan con el / analyze para ejecutar el análisis de código antes de que se pueden comprobar la opción del compilador.|  
+    |Opción|Descripción|
+    |------------|-----------------|
+    |**Aplicar en el repositorio para que sólo contenga los archivos que forman parte de la solución actual.**|Análisis de código puede ejecutar solo en los archivos especificados en archivos de configuración de soluciones y proyectos. Esta directiva garantiza que se analiza todo el código que forma parte de una solución.|
+    |**Exigir análisis de código de C/C ++ (/analyze)**|Requiere que todos los proyectos de C o C++ se generan con el / analyze para ejecutar el análisis de código antes de que se pueden comprobar la opción del compilador.|
     |**Exigir análisis de código para código administrado**|Requiere que todos los proyectos administrados, ejecutan análisis de código y compilación antes de protegerlos.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Para especificar un conjunto de reglas administradas
@@ -62,7 +61,7 @@ Active o desactive las siguientes opciones:
 
     - Seleccione un conjunto de reglas estándar de Microsoft.
 
-    - Para seleccionar un conjunto de reglas personalizado, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >**y, a continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
+    - Para seleccionar un conjunto de reglas personalizado, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >** y, a continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
 
     - **$/** `TeamProjectName` **/** `VersionControlPath`
 

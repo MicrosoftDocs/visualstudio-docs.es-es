@@ -2,9 +2,8 @@
 title: 'Error: No se puede iniciar la depuración en el servidor Web | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 05/23/2017
-ms.technology:
-- vs-ide-debug
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -29,11 +28,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 459df1ca9ffed246116c71adac8a38039b6602ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e58f8152d5c927271161bbf9615b1dfe3944e6dd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No se puede iniciar la depuración en el servidor Web
 

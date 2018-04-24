@@ -1,8 +1,8 @@
 ---
-title: 'CA2117: Los tipos APTCA solo amplían tipos base APTCA | Documentos de Microsoft'
+title: 'CA2117: Los tipos APTCA solo amplían tipos base APTCA'
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CA2117
 - AptcaTypesShouldOnlyExtendAptcaBaseTypes
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fec097019a6b1a57346cc3965f364f96740ee75
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d8b313f0e1c33eb5c17a291995956e62d8c597e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Los tipos APTCA solo amplían tipos base APTCA
 

@@ -2,8 +2,7 @@
 title: '&lt;PackageFiles&gt; elemento (arranque) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -13,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f58a9d2ca9bf77a2119e0b2a2716c96676889568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f900e1e86c20e4ce59984f2a7a6ff91e9014129d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (arranque)
 El `PackageFiles` contiene el elemento `PackageFile` elementos, que definen los paquetes de instalación que se ejecuta como resultado de la `Command` elemento.  

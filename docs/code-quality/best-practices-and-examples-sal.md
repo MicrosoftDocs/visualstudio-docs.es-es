@@ -1,20 +1,18 @@
 ---
-title: Procedimientos recomendados y ejemplos (SAL) | Documentos de Microsoft
-ms.custom: ''
+title: Procedimientos recomendados y ejemplos (SAL)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: d8910c9b5d36cecec82bf0e386e294759113c76e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d26f5329f530af2d6547f44b73ded82c5db53f4f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="best-practices-and-examples-sal"></a>Procedimientos recomendados y ejemplos (SAL)
 Aquí se muestran algunas maneras de sacar el máximo partido fuera del lenguaje de anotación de código fuente (SAL) y evitar algunos problemas comunes.

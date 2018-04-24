@@ -2,9 +2,8 @@
 title: '&lt;archivo&gt; elemento (aplicación ClickOnce) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575fd84a5bd17777aaf540c72bfff62c27adf15
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8fccbd816d578a95e3e43e15c83d615756dcddcb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;archivo&gt; elemento (aplicación ClickOnce)
 Identifica todos los archivos nonassembly descargados y utilizados por la aplicación.  

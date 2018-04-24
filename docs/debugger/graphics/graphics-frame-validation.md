@@ -2,8 +2,7 @@
 title: Validación de marco de gráficos | Documentos de Microsoft
 ms.custom: ''
 ms.date: 03/02/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.FrameValidation
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3773fc5df0df05d3f275d7e628bef0def6290d3f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9732cd3f3440448e5096e71f838d8ebcf20fb13
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="graphics-frame-validation"></a>Validación de fotogramas de gráficos
 <!-- VERSIONLESS -->

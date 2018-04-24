@@ -1,5 +1,5 @@
 ---
-title: Usar y configurar los analizadores de Roslyn en Visual Studio | Documentos de Microsoft
+title: Usar y configurar los analizadores de Roslyn en Visual Studio
 ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 17758b8cd901a03e2ce4f93fe5dfcfdbe97eadab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eeebb1fb631c0890c7bcb11160109813a31eef1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurar y usar las reglas del analizador Roslyn
 

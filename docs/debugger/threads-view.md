@@ -2,8 +2,7 @@
 title: Vista de subprocesos | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.threadsview
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24d6bfea62b73609417ade039a9c3e763bc8ddd6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21ace8efe2491a394d7abfc6402894a2fe11e6f9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="threads-view"></a>Vista de subprocesos
 La vista de subprocesos es una lista plana de todos los subprocesos asociados con windows en el sistema. Se muestran el identificador de subproceso y nombre del módulo para cada subproceso. No se incluyen los procesos, pero puede encontrar fácilmente el proceso que posee un subproceso seleccionado.  

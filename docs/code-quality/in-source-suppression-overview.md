@@ -1,5 +1,5 @@
 ---
-title: Suprimir advertencias de análisis de código en Visual Studio | Documentos de Microsoft
+title: Suprimir advertencias de análisis de código en Visual Studio
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -15,11 +15,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 70425a07fe3150f3f5a5cc0f0c6003d61998df9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b057b13697fe1ec41fdca1bef27ccb03637f696
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 

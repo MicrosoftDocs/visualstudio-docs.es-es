@@ -1,20 +1,18 @@
 ---
-title: Conjunto de reglas reglas recomendadas mixtas | Documentos de Microsoft
-ms.custom: ''
+title: Conjunto de reglas Reglas recomendadas mixtas
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfecf4019244e02816686783171cb34cd0c0c1d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b84c218ad6a369cfc5d9f06a5f5833fb277692ee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de reglas Reglas recomendadas mixtas
 
@@ -215,7 +213,7 @@ Las reglas recomendadas mixtas de Microsoft se centran en los problemas más gra
 |[C28253](../code-quality/c28253.md)|Anotación incoherente de la función: el parámetro tiene otra anotación en esta instancia.|
 |[C28254](../code-quality/c28254.md)|dynamic_cast<>() no se admite en anotaciones|
 |[C28262](../code-quality/c28262.md)|Se encontró un error de sintaxis de anotación en la función, para la anotación|
-|[C28263](../code-quality/c28263.md)|Se encontró un error de sintaxis en una anotación condicional para la anotación intrínseca| 
+|[C28263](../code-quality/c28263.md)|Se encontró un error de sintaxis en una anotación condicional para la anotación intrínseca|
 |[C28267](../code-quality/c28267.md)|Se encontró un error de sintaxis de anotaciones en la función.|
 |[C28272](../code-quality/c28272.md)|La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función|
 |[C28273](../code-quality/c28273.md)|Para la función, las pistas son incoherentes con la declaración de la función|

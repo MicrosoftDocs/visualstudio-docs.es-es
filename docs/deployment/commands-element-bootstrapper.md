@@ -2,8 +2,7 @@
 title: '&lt;Comandos&gt; elemento (arranque) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -13,16 +12,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d886d7fa7ea2ab6cb8c04810ab404a29898cd02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac3ae61012bec5f8134a48714678110951c03b76
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Comandos&gt; elemento (arranque)
 El `Commands` elemento implementa las pruebas descritas por los elementos subyacentes el `InstallChecks` elemento y declara el paquete en el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] debe instalar el programa previo si se produce un error en la prueba.  

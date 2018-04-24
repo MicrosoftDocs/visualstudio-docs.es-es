@@ -2,8 +2,7 @@
 title: Publicar en un sitio Web - Visual Studio | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/22/2017
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b6bacc45d78d1d246f6a91d13549ccc96b276a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publicar una aplicación web o una aplicación de .NET Core en un sitio web mediante la herramienta de publicación de Visual Studio
 

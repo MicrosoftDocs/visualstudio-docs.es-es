@@ -2,9 +2,8 @@
 title: '&lt;dependencia&gt; elemento (implementación de ClickOnce) | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
-ms.topic: conceptual
+ms.technology: vs-ide-deployment
+ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -23,16 +22,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ffea3e279ba894f9990991ea620baaa50b3997d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72e217413a428c8c22712ac3a90836b1ea4fbc35
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependencia&gt; elemento (implementación de ClickOnce)
 Identifica la versión de la aplicación que desea instalar y la ubicación del manifiesto de aplicación.  

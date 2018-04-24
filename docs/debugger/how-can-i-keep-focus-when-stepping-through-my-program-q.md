@@ -2,8 +2,7 @@
 title: Cómo mantener el foco mientras se recorre el programa | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.stepping
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a932bd4aea500391f790ef4999dba30322a7782
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2729f3d3cc0cd8a2411dcc9d999ba26100ba5aa2
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-program"></a>Cómo mantener el foco mientras se recorre el programa
 ## <a name="description"></a>Descripción  

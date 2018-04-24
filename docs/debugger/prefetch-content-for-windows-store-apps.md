@@ -2,8 +2,7 @@
 title: Depurar con captura previa del contenido en las aplicaciones UWP | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0117acc249e378c2ee7f419bce61551bbcb0439a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 241937c8462577d6af375d2440efe828a738a8cc
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Depurar aplicaciones UWP con contenido precargado en Visual Studio
   

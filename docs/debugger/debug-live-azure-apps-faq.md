@@ -1,8 +1,7 @@
 ---
 title: Preguntas más frecuentes sobre depuración instantánea | Documentos de Microsoft
 ms.date: 11/07/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -12,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db887f783cf205bb7951cde985fa371ab1ab755c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8547c14cfd8a59d775c909edb06e3542b18710c8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Preguntas más frecuentes para la depuración instantánea en Visual Studio
 

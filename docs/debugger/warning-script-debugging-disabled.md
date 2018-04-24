@@ -2,8 +2,7 @@
 title: 'Advertencia: Depuración de Script deshabilitada | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
@@ -18,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6318639ca8d4a1d63306e5eef07e0a9ca2878f7a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33d491d9c3b81f508523bf87d88c0bad27822e4c
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="warning-script-debugging-disabled"></a>Advertencia: Depuración de script deshabilitada
 La depuración de script está deshabilitada actualmente en Internet Explorer  

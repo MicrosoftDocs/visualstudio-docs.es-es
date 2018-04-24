@@ -2,8 +2,7 @@
 title: Información general - Visual Studio del depurador | Documentos de Microsoft
 ms.custom: mvc
 ms.date: 07/11/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: overview
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d69a6099b522eeb12da20d31ad353c5f44da5c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1941c093b82e31b815140aed4af3201cd3681a8
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="overview-of-the-visual-studio-debugger"></a>Información general sobre el depurador de Visual Studio
 

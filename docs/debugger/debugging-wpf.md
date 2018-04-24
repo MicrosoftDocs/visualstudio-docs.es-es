@@ -2,8 +2,7 @@
 title: Depurar WPF | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9563cc321028eb031b8cb29665a323bf1d9583
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f134fc7de69727e2a4c330c4904c67e213e6d561
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debugging-wpf"></a>Depurar WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] proporciona características adicionales para facilitar la depuración de aplicaciones WPF.  

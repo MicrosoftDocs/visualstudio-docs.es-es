@@ -2,8 +2,7 @@
 title: DONT_SAVE_VSGLOG_TO_TEMP | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c46fc7aa6de405fb6a48d822c5e676d15f442d6c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b70ddf2933b8bd2d96db1636612cb35a6a759a1a
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.  

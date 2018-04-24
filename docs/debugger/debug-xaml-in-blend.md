@@ -2,8 +2,7 @@
 title: Depurar XAML en Blend | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: efcb38238bfc1d8001e99d6755da1f3e2f02edcd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebcf0508c5bc4d5788be1f7515604b5b4be228f1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML en Blend
 Puede usar las herramientas de [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] para depurar el código XAML de su aplicación. Cuando compila un proyecto, los errores se muestran en la **resultados** panel. Haz doble clic en un error para buscar el marcado relacionado con el error. Si necesita más espacio para trabajar, puede ocultar la **resultados** panel presionando F12.  
@@ -62,7 +61,7 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../debugger/includes/blend
   
 5.  En el **ubicación** texto cuadro, compruebe la ubicación del proyecto.  
   
-6.  En el **lenguaje** lista, haga clic en **Visual C#**y, a continuación, haga clic en **Aceptar** para crear el proyecto.  
+6.  En el **lenguaje** lista, haga clic en **Visual C#** y, a continuación, haga clic en **Aceptar** para crear el proyecto.  
   
 7.  Haga doble clic en la superficie de diseño y, a continuación, haga clic en **ver código fuente** para cambiar a **división** vista.  
   

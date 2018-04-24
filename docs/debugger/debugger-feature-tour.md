@@ -3,8 +3,7 @@ title: 'Guía de características: el depurador Visual Studio | Documentos de Mi
 description: Dé un paseo por el depurador de Visual Studio
 ms.custom: mvc
 ms.date: 03/27/2018
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a64f970bd48f4981fe6378a3b037c566f4059e40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Inicio rápido: Busque primero en el depurador de Visual Studio
 

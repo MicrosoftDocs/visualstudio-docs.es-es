@@ -2,8 +2,7 @@
 title: ¿Cómo se puede depurar una infracción de acceso de C++? | Microsoft Docs
 ms.custom: ''
 ms.date: 05/23/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.access
@@ -21,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a28de01a6284c7b0c382b73b9f1842fe2e24afc5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b131ba4acf761a11aa9f39807d1db3202b021c9d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>¿Cómo se puede depurar una infracción de acceso de C++?
 ## <a name="problem-description"></a>Descripción del problema  

@@ -2,8 +2,7 @@
 title: Crear vistas personalizadas de datos en el depurador | Documentos de Microsoft
 ms.custom: ''
 ms.date: 06/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae1f8eb68a0280a643e60d132544de8132c7c75
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ccf8b24618aeb2cb4b8774786bf96b2184f5da9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>Crear vistas personalizadas de datos en el depurador de Visual Studio
 El depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona una gran variedad de herramientas para inspeccionar y modificar el estado de los programas. La mayoría de estas herramientas sólo funcionan en el modo de interrupción.

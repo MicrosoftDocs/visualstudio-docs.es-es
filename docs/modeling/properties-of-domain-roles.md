@@ -1,19 +1,18 @@
 ---
-title: Propiedades de dominio Roles | Documentos de Microsoft
-ms.custom: ''
+title: Propiedades de los roles de dominio
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ead7128c998b8c4ed97acac0f6da0f08113e7bef
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-roles"></a>Propiedades de los roles de dominio
 Las propiedades en la siguiente tabla están asociadas con un rol de dominio. Para obtener información acerca de las funciones de dominio, consulte [descripción de los modelos, las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información acerca de cómo utilizar estas propiedades, vea [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -40,7 +39,8 @@ Las propiedades en la siguiente tabla están asociadas con un rol de dominio. Pa
 |Propiedad nombre para mostrar|El nombre que se muestra en el diseñador generado para la propiedad de función generado.|El valor ajustado de la propiedad de nombre de la propiedad.|
 
 > [!NOTE]
->  El valor predeterminado de un nombre para mostrar se basa en el valor de propiedad asociado insertando espacios antes de cada carácter en mayúsculas que va precedida por un carácter en minúscula y no seguido por otro carácter en mayúsculas.
+> El valor predeterminado de un nombre para mostrar se basa en el valor de propiedad asociado insertando espacios antes de cada carácter en mayúsculas que va precedida por un carácter en minúscula y no seguido por otro carácter en mayúsculas.
 
 ## <a name="see-also"></a>Vea también
- [Propiedades de las relaciones de dominio](../modeling/properties-of-domain-relationships.md)
+
+- [Propiedades de las relaciones de dominio](../modeling/properties-of-domain-relationships.md)

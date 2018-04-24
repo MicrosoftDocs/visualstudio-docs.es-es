@@ -2,8 +2,7 @@
 title: Depurar una aplicación multiproceso mediante la ventana subprocesos | Documentos de Microsoft
 ms.custom: H1HackMay2017
 ms.date: 05/18/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a233722242548bd40322c872dc9c2e6d0925b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 09fccc98f52c80a00c2c6a215742ae25b2fc7a4d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Tutorial: Depurar una aplicación multiproceso en Visual Studio mediante la ventana subprocesos
 Visual Studio proporciona un **subprocesos** ventana y otra interfaz de usuario elementos para ayudar a depurar aplicaciones multiproceso. Este tutorial muestra cómo utilizar el **subprocesos** ventana y **ubicación de depuración** barra de herramientas. Para obtener información acerca de las otras herramientas, vea [empezar a depurar aplicaciones multiproceso](../debugger/get-started-debugging-multithreaded-apps.md). Este tutorial dura sólo unos minutos, pero completarlo, se familiarizará con las características para depurar aplicaciones multiproceso.   
