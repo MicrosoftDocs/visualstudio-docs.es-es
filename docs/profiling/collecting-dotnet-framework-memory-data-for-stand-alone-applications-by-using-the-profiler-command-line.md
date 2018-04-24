@@ -1,23 +1,20 @@
 ---
-title: "Recopilar datos de memoria de .NET Framework mediante la línea de comandos del generador de perfiles | Microsoft Docs"
-ms.custom: 
+title: Recopilar datos de memoria de .NET Framework mediante la línea de comandos del generador de perfiles | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: b5ce03c3a95b2ac13c33d24e101d1923bba666fc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 71de1a690e872ad11e776a86dcfdb47ba41e2f97
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de .NET Framework mediante la línea de comandos del generador de perfiles
 

@@ -3,19 +3,19 @@ title: Visual Studio 2017 para desarrolladores de .NET | Microsoft Docs
 description: Información general de las características de Visual Studio 2017 para ayudarle a escribir código de .NET mejor y más rápidamente.
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 31291814c2158c9aeb8d48b1b7b3073a4ccbcaf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guía de productividad de Visual Studio 2017 para desarrolladores de .NET
 

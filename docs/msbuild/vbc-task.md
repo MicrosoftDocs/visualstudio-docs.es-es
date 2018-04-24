@@ -2,11 +2,8 @@
 title: Vbc (tarea) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-caps.latest.revision: 19
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01b38f523a3a1c97798cdd629290791ab5e480f8
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: b80612f7d7fa97c8ba31de1a631049f48d1f82be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="vbc-task"></a>Vbc (Tarea)
 Incluye vbc.exe, que genera ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o módulos de códigos (.netmodule). Para obtener más información sobre vbc.exe, vea [Compilador de línea de comandos de Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).  
@@ -36,7 +32,7 @@ Incluye vbc.exe, que genera ejecutables (.exe), archivos de biblioteca de víncu
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `Vbc` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|Parámetro `String[]` opcional.<br /><br /> Especifica carpetas adicionales en las que buscar ensamblados especificados en el atributo References.|  
 |`AddModules`|Parámetro `String[]` opcional.<br /><br /> Hace que el compilador facilite al proyecto que se está compilando toda la información de tipos presente en los archivos especificados. Este parámetro corresponde al modificador [/addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) del compilador de vbc.exe.|  

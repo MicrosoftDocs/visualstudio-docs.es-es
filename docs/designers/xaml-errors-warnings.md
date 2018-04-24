@@ -1,19 +1,19 @@
 ---
-title: Errores y advertencias de XAML | Microsoft Docs
+title: Errores y advertencias de XAML
 ms.date: 03/06/2018
 ms.technology: vs-ide-designers
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: karann-msft
 ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e29417e1a993adfb2c4bb7c78a6f1ed0209cef
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: b252fe651355000f63c47c5b45cf6d0e9db4d776
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="xaml-errors-and-warnings"></a>Errores y advertencias de XAML
 
@@ -23,11 +23,11 @@ Al crear XAML, Visual Studio analiza el código a medida que lo escribe. Cuando 
 
 En segundo plano, varias herramientas analizan el código XAML en paralelo. Los errores de XAML se categorizan en uno de los tres tipos siguientes, en función de la herramienta que detectó el error:
 
-|**Error detectado por**|**Código del código de error**|  
-|--------------------------------|-----------------|  
-|Servicio de lenguaje XAML (editor XAML)|XLSxxxx|  
-|Diseñador XAML|XDGxxxx|  
-|Editar y continuar en XAML|XECxxxx|  
+|**Error detectado por**|**Código del código de error**|
+|--------------------------------|-----------------|
+|Servicio de lenguaje XAML (editor XAML)|XLSxxxx|
+|Diseñador XAML|XDGxxxx|
+|Editar y continuar en XAML|XECxxxx|
 
 > [!Note]
 > No todos los errores o advertencias tienen un código correspondiente. Tales errores suelen ser errores del Diseñador XAML.

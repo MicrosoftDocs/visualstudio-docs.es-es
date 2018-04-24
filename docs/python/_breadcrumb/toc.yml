@@ -7,5 +7,5 @@
       topicHref: /visualstudio/ide/
       items:
         - name: Plantillas de
-          tocHref: /visualstudio/python/
+          tocHref: /visualstudio/quickstart-python/
           topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio

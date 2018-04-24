@@ -1,13 +1,10 @@
 ---
-title: "Documentación de ayuda sin conexión de Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Documentación de ayuda sin conexión de Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - Help Viewer, navigating
 - toolbar [Help Viewer]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c703ee241cac40cdec434957a10c5e64dbb730b7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 El Visor de Ayuda de Microsoft le permite instalar y ver en el equipo local el contenido de diversos productos y tecnologías, como Visual Studio, .NET Framework, referencia del lenguaje, SQL Server y desarrollo de Windows. El Visor de Ayuda le permite:  

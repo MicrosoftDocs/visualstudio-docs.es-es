@@ -1,7 +1,7 @@
 ---
 title: Exportar los resultados de pruebas de carga en Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - results, load test
 - load tests, exporting results
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7ebb49ebe4d47ad24c8c9504b69db829128f3c2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: ce17cba842faf56205d5769bbcccfcdce8db6fec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Cómo: Exportar los resultados de pruebas de carga de un repositorio
 

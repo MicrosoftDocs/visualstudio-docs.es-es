@@ -1,27 +1,24 @@
 ---
-title: "Información general sobre el informe de rendimiento | Microsoft Docs"
-ms.custom: 
+title: Información general sobre el informe de rendimiento | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, about performance rerports
 - performance, reports
 - performance reports, about performance reports
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 915f7f3cbbee87f72c4643b8c5a2b4497bbd69dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 Puede ver los datos de generación de perfiles de una sesión de rendimiento en la ventana **Informe de rendimiento** del entorno de desarrollo integrado (IDE) de Visual Studio Team System Development Edition. Los datos de generación de perfiles se guardan en archivos .vsp y .vsps. Las ventanas de la vista Informe permiten ver y analizar problemas de rendimiento de la aplicación.  

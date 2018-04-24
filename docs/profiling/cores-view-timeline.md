@@ -1,29 +1,24 @@
 ---
-title: "Escala de tiempo de la vista Núcleos | Microsoft Docs"
-ms.custom: 
+title: Escala de tiempo de la vista Núcleos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.timeline.threads
 helpviewer_keywords:
 - Concurrency Visualizer, Cores View Timeline
 ms.assetid: 10f0c666-ac2f-4ac5-9fb5-a88f660ab840
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8e117c305c02d7a5af5cbc915b139cb80d2308
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ca61a511d5b65233aa0f7e979374ba5dd48d21ae
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cores-view-timeline"></a>Escala de tiempo de la vista Núcleos
 Cada fila de la escala de tiempo representa un núcleo de procesador lógico del sistema para el que se genera el perfil. Para cada fila, el eje horizontal muestra qué subproceso se estaba ejecutando en un núcleo lógico en un momento dado. Puede desplazar el puntero sobre un color de interés en una escala de tiempo para devolver información que identifica el subproceso. Para facilitar la identificación del subproceso, la leyenda en la parte inferior de la ventana muestra qué representa cada color. Utilice la herramienta Zoom para acercar y alejar; para ello, haga clic y arrastre o presione la tecla Ctrl y mueva la rueda del mouse. La coherencia de zoom se mantiene al cambiar entre la vista de núcleos y subprocesos.  

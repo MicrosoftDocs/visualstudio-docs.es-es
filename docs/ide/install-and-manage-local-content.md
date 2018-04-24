@@ -1,13 +1,10 @@
 ---
-title: "Instalar la documentación local de Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Instalar la documentación local de Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - hv_manage
 helpviewer_keywords:
@@ -24,17 +21,16 @@ helpviewer_keywords:
 - Help Viewer, installing local content
 - Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be2145f95ac28654852ad4e6d77aa6f33e0ecf8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b6b93d63381ba0e7afa984e6750e0dac07a8a58b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el contenido de Ayuda que se instala en el equipo para ajustarlo a sus necesidades de desarrollo de software.  

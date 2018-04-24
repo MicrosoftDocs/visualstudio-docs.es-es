@@ -2,17 +2,17 @@
 title: Desarrollo controlado por pruebas con el Explorador de pruebas en Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5769fadf05040d253a9bc637177c684995bb66d7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: b40ec7940e3c070bb1a29bd1753ed183bf67e22c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -37,7 +37,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
     1.  Cree un proyecto de prueba.
 
-         En el cuadro de diálogo **Nuevo proyecto** , expanda **Visual Basic**, **Visual C#**o **Visual C++**y, a continuación, elija **Prueba**.
+         En el cuadro de diálogo **Nuevo proyecto** , expanda **Visual Basic**, **Visual C#** o **Visual C++** y, a continuación, elija **Prueba**.
 
          Seleccione **Proyecto de prueba unitaria**.
 

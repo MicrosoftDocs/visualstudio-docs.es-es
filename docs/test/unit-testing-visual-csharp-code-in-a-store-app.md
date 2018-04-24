@@ -1,19 +1,18 @@
 ---
-title: "Pruebas unitarias para código de Visual C# en Visual Studio | Microsoft Docs"
+title: Pruebas unitarias para código de Visual C# en Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 0d47d3902bc333ee354fdf7f7d6d489b0284f6e3
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 32f76e3ebd6827ecb9ce0c27fa69b17a3da02f4e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="unit-testing-visual-c-code"></a>Pruebas unitarias de código de Visual C#
 

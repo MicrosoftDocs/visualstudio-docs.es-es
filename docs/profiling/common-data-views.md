@@ -1,26 +1,23 @@
 ---
 title: Vistas de datos comunes | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,views
 - Profiling Tools,reports
 ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ae9531eb344cf08599f1c69bcc0842f38f10df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 32039843f3aef60f6e7087b0d26f8b5e1efd1df8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="common-data-views"></a>Vistas de datos comunes
 Esta sección contiene información de referencia acerca de las vistas e informes de archivos de datos del generador de perfiles que son comunes para todos los métodos de generación de perfiles.  

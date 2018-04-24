@@ -1,12 +1,9 @@
 ---
-title: "Vista Punteros de instrucción (IP) | Microsoft Docs"
-ms.custom: 
+title: Vista Punteros de instrucción (IP) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.instructionpointers
 - vs.performance.view.ips
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - Instruction Pointers view
 - profiling tools, IP view
 ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
-caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 564bdcea907920e6e16807e34a64850e7e664f41
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5f34df089219fda6a27e68c59a1b67f1e48a0839
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="instruction-pointers-ips-view"></a>Vista Punteros de instrucciones (IP)
 La vista Punteros de instrucción permite ver instrucciones concretas que se ejecutan durante la generación de perfiles de muestreo.  

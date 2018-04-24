@@ -1,15 +1,14 @@
 ---
-title: "Configuración de Visual Studio para Mac Tools para Unity | Microsoft Docs"
+title: Configuración de Visual Studio for Mac Tools for Unity
 author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
-ms.topic: article
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 97620ef9c556705cc358d19a956bddb6dca6a3db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a1d6d523de9a5a57cf6b4c696a68dbdde1428156
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Configuración de Visual Studio for Mac Tools for Unity
 

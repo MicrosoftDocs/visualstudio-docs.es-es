@@ -2,11 +2,8 @@
 title: GenerateResource (Tarea) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, GenerateResource task
 - GenerateResource task [MSBuild]
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
-caps.latest.revision: 15
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37aacbfd2095cf4edae78393569702fe4fea6c7e
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: e26aae610407ceb1ebe050081f5b555d82badc92
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource (Tarea)
 Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y archivos .resources binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se utiliza para convertir archivos .txt o .resx en archivos .resource. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -36,7 +32,7 @@ Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y arch
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea `GenerateResource` .  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`AdditionalInputs`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene entradas adicionales a la comprobación de dependencias realizada por esta tarea. Por ejemplo, los archivos de proyecto y de destino normalmente deben ser entradas de modo que, si se actualizan, se vuelvan a generar todos los recursos.|  
 |`EnvironmentVariables`|Parámetro `String[]` opcional.<br /><br /> Especifica una matriz de pares nombre-valor de variables de entorno que deben pasarse al ejecutable resgen.exe generado, además del bloque de entorno normal (o su invalidación selectiva).|  

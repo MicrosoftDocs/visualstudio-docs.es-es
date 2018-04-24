@@ -1,23 +1,20 @@
 ---
-title: "Crear archivos de datos de generación de perfiles portátiles desde la línea de comandos | Microsoft Docs"
-ms.custom: 
+title: Crear archivos de datos de generación de perfiles portátiles desde la línea de comandos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95302666d8bd5c5738f93a2fb0a8ec698c5bb7d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dd329df74c88f5edadef27444bf3b3c89ee1b30d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Crear archivos de datos de generación de perfiles portátiles desde la línea de comandos
 Para facilitar el uso compartido de los datos de generación de perfiles, puede usar la herramienta de línea de comandos [VSPerfReport](../profiling/vsperfreport.md) para incrustar los símbolos para una ejecución de generación de perfiles en el archivo .vsp.  
@@ -35,7 +32,7 @@ Para facilitar el uso compartido de los datos de generación de perfiles, puede 
   
 -   En una ventana del símbolo del sistema, escriba el siguiente comando:  
   
-     \<RutaAcceso>**VSPerfReport \<**ArchivoVSP> **/PackSymbols**  
+     \<RutaAcceso>**VSPerfReport \<** ArchivoVSP> **/PackSymbols**  
   
      De forma predeterminada, el archivo .vsps se denomina con el nombre base del archivo .vsp. Puede especificar otro nombre con la opción **Output**.  
   
@@ -43,6 +40,6 @@ Para facilitar el uso compartido de los datos de generación de perfiles, puede 
   
 -   En una ventana del símbolo del sistema, escriba el siguiente comando:  
   
-     \<RutaAcceso>**VSPerfReport \<**ArchivoVSP> **/SummaryFile** [**/Output:**\<NombreArchivo>]  
+     \<RutaAcceso>**VSPerfReport \<** ArchivoVSP> **/SummaryFile** [**/Output:**\<NombreArchivo>]  
   
      De forma predeterminada, el archivo .vsps se denomina con el nombre base del archivo .vsp. Puede especificar otro nombre con la opción **Output**.

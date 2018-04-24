@@ -1,17 +1,16 @@
 ---
-title: "Depuración - Visualizaciones de datos"
-description: "La depuración es una parte común y necesaria de la programación. Visual Studio para Mac contiene un completo conjunto de características para facilitar la depuración. En este artículo se examinan las distintas visualizaciones de datos que se pueden ver al inspeccionar objetos en el depurador."
+title: Depuración - Visualizaciones de datos
+description: La depuración es una parte común y necesaria de la programación. Visual Studio para Mac contiene un completo conjunto de características para facilitar la depuración. En este artículo se examinan las distintas visualizaciones de datos que se pueden ver al inspeccionar objetos en el depurador.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1c228718dc528e0ab34c9af328aee1c8259fa8b5
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="data-visualizations"></a>Visualizaciones de datos
 
@@ -64,7 +63,7 @@ El visualizador muestra un elemento `NSBezierPath`:
 ![Visualización de curva Bézier](media/data-visualizations-image16.png)
 
 
-## <a name="string"></a>Cadena
+## <a name="string"></a>String
 
 Una cadena de menos de 100 caracteres se muestra entera, sin vista previa. Las cadenas más largas se muestran enteras en la vista previa. Las cadenas se pueden editar, así que el visualizador incluye un botón Editar que permite editar el valor de cadena en la vista previa o en el Editor de valores de cadena, que se muestra a continuación:
 

@@ -1,13 +1,10 @@
 ---
-title: "Tutorial: Crear un fragmento de código | Microsoft Docs"
-ms.custom: 
+title: 'Tutorial: Crear un fragmento de código | Microsoft Docs'
+ms.custom: ''
 ms.date: 10/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -16,19 +13,18 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59aff5d84f81b1e9dea9cd3e4c08527b14dc7f34
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. También puede agregar referencias y parámetros de reemplazo en el código. Puede agregar el fragmento de código a la instalación de Visual Studio mediante el botón Importar del Administrador de fragmentos de código (**Herramientas**, **Administrador de fragmentos de código…**).  

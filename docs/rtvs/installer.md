@@ -1,26 +1,20 @@
 ---
-title: "Presentación de Herramientas de R para Visual Studio | Microsoft Docs"
-description: "Información de resumen para los desarrolladores que han instalado Herramientas de R para Visual Studio."
-ms.custom: 
+title: Presentación de Herramientas de R para Visual Studio
+description: Información de resumen para los desarrolladores que han instalado Herramientas de R para Visual Studio.
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0314bd144cc43fc6a1bf2589c4ae407258076d3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5370a399ba5d66a868f3804106e062c214e4fe30
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Presentación de Herramientas de R para Visual Studio
 

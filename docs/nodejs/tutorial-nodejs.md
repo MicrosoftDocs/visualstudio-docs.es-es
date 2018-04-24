@@ -3,28 +3,24 @@ title: Crear una aplicación Node.js y Express - Visual Studio | Microsoft Docs
 description: En este tutorial, se crea una aplicación Node.js y Express en Visual Studio.
 ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y Express en Visual Studio
-En este tutorial para el desarrollo de Visual Studio con Node.js y Express, se crea una sencilla aplicación web de Node.js, agregará código, explorará algunas características del IDE y ejecutará la aplicación. Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).  
+En este tutorial para el desarrollo de Visual Studio con Node.js y Express, se crea una sencilla aplicación web de Node.js, agregará código, explorará algunas características del IDE y ejecutará la aplicación. Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).
 
 En este tutorial aprenderá a:
 > [!div class="checklist"]
@@ -51,13 +47,13 @@ En este tutorial aprenderá a:
 ## <a name="create-a-project"></a>Crear un proyecto
 En primer lugar, creará un proyecto de aplicación web de Node.js.
 
-1. Abra Visual Studio 2017.  
+1. Abra Visual Studio 2017.
 
-1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**  
+1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**
 
-1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, seleccione **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.   
+1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, seleccione **Aplicación básica de Azure Node.js Express 4** y después haga clic en **Aceptar**.
 
-     Si no ve la plantilla de proyecto **Aplicación básica de Azure Node.js Express 4**, deberá instalar primero la carga de trabajo **Desarrollo de Node.js**. 
+     Si no ve la plantilla de proyecto **Aplicación básica de Azure Node.js Express 4**, deberá instalar primero la carga de trabajo **Desarrollo de Node.js**.
 
     Visual Studio crea la solución y abre el proyecto. El archivo de proyecto *app.js* se abre en el editor (panel de la izquierda).
 
@@ -130,11 +126,11 @@ En primer lugar, creará un proyecto de aplicación web de Node.js.
 
 1. Después de la cadena `data`, escriba `: get` e IntelliSense mostrará la función `getData`. Seleccione `getData`.
 
-    ![Usar IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
+    ![Usar IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. Quite la coma (`,`) antes de `"data"` y verá el resaltado de sintaxis de color verde en la expresión. Mueva el puntero sobre el resaltado de sintaxis.
 
-    ![Ver error de sintaxis](../nodejs/media/tutorial-nodejs-syntax-checking.png) 
+    ![Ver error de sintaxis](../nodejs/media/tutorial-nodejs-syntax-checking.png)
 
     La última línea de este mensaje indica que el intérprete de JavaScript esperaba una coma (`,`).
 
@@ -152,15 +148,15 @@ En primer lugar, creará un proyecto de aplicación web de Node.js.
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código. 
+    Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código.
 
-    ![Establecer un punto de interrupción](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
+    ![Establecer un punto de interrupción](../nodejs/media/tutorial-nodejs-set-breakpoint.png)
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 
 1. Seleccione el destino de depuración en la barra de herramientas de depuración.
 
-    ![Seleccionar el destino de depuración](../nodejs/media/tutorial-nodejs-deploy-target.png) 
+    ![Seleccionar el destino de depuración](../nodejs/media/tutorial-nodejs-deploy-target.png)
 
 1. Presione **F5** (**Depurar** > **Iniciar depuración**) para ejecutar la aplicación.
 
@@ -178,15 +174,15 @@ En primer lugar, creará un proyecto de aplicación web de Node.js.
 
 1. Haga clic en los botones para mostrar diferentes imágenes.
 
-    ![Aplicación en ejecución en el explorador](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+    ![Aplicación en ejecución en el explorador](../nodejs/media/tutorial-nodejs-running-in-browser.png)
 
-1. Cierre el explorador web.  
+1. Cierre el explorador web.
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Opcional) Publicación en Azure App Service
 
 1. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **Publicar**.
 
-   ![Publicación en Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)  
+   ![Publicación en Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. Seleccione **Microsoft Azure App Service**.
 
@@ -198,11 +194,11 @@ En primer lugar, creará un proyecto de aplicación web de Node.js.
 
     Después de una implementación correcta, la aplicación se abre en un explorador que se ejecuta en Azure App Service. Haga clic en un botón para mostrar una imagen.
 
-   ![Aplicación que se ejecuta en Azure App Service](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
+   ![Aplicación que se ejecuta en Azure App Service](../nodejs/media/tutorial-nodejs-running-in-azure.png)
 
 Enhorabuena por completar este tutorial.
 
-## <a name="next-steps"></a>Pasos siguientes 
+## <a name="next-steps"></a>Pasos siguientes
 
 En este tutorial, aprendió a crear y ejecutar una aplicación Node.js con Express y a alcanzar un punto de interrupción con el depurador.
 

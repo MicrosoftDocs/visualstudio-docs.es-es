@@ -1,25 +1,21 @@
 ---
-title: "Cómo: Pasar errores por alto en las tareas | Microsoft Docs"
-ms.custom: 
+title: 'Cómo: Pasar errores por alto en las tareas | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: msbuild - "vs-ide-sdk"
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
-manager: ghogen
-ms.openlocfilehash: 6fbdf661b49fb60ec6b1e18c6886b9bdcc946437
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+author: mikejo5000
+ms.author: mikejo
+manager: douge
+ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Cómo: Pasar errores por alto en las tareas
 A veces, quiere que una compilación tolere errores en determinadas tareas. Si se produce un error en las tareas no críticas, quiere que la compilación continúe porque todavía es posible obtener el resultado esperado. Por ejemplo, si un proyecto utiliza una tarea `SendMail` para enviar un mensaje de correo electrónico después de crear cada componente, tal vez se considere aceptable que la compilación continúe hasta finalizar, aunque los servidores de correo electrónico no estén disponibles ni se puedan enviar los mensajes de estado. O bien, por ejemplo, si los archivos intermedios se suelen eliminar durante la compilación, tal vez se considere aceptable que la compilación continúe hasta finalizar, aunque no se puedan eliminar esos archivos.  

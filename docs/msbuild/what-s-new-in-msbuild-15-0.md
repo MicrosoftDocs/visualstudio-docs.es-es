@@ -1,23 +1,20 @@
 ---
 title: Novedades de MSBuild 15 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ee5566181a96ef36e8ce8f1545a22964301198
-ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
+ms.openlocfilehash: 1757dc778c45d3b9c6afd7f289b6598728dc7687
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novedades de MSBuild 15
 MSBuild ahora está disponible como parte del [SDK de .NET Core](https://www.microsoft.com/net/download/core) y puede compilar proyectos de .NET Core en Windows, Mac OS y Linux.  

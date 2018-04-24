@@ -2,25 +2,21 @@
 title: Funciones de elementos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-caps.latest.revision: 28
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca0ed4d1f895216e9fb3a015796a2f9e4f95087
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: 93c8a16b1ab15354deafc236d9f4845b051d58f7
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="item-functions"></a>Funciones de elementos
 A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar a funciones de elementos para obtener información sobre los elementos del proyecto. Estas funciones simplifican la obtención de elementos Distinct() y son más rápidas que si se recorren en bucle los elementos.  
@@ -56,7 +52,7 @@ A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar
 ## <a name="intrinsic-item-functions"></a>Funciones de elementos intrínsecas  
  En la tabla siguiente se enumeran las funciones intrínsecas disponibles para los elementos.  
   
-|Función|Ejemplo|Descripción|  
+|Función|Ejemplo|Description|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Devuelve el número de elementos.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Devuelve el equivalente de `Path.DirectoryName` para cada elemento.|  

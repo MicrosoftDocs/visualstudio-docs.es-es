@@ -1,16 +1,15 @@
 ---
-title: Configuración de un repositorio Git en Visual Studio para Mac | Microsoft Docs
+title: Configuración de un repositorio Git en Visual Studio para Mac
 description: Empleo de Git y Subversion en Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 3eb3e0874cfc46fc98209113cf60a32cdb92787d
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 97aa681762e96b8eae7f57d6f6d04c9c5b6a2984
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Configuración de un repositorio Git
 

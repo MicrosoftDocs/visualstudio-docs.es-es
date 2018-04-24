@@ -1,23 +1,20 @@
 ---
 title: Filtrado de vistas de informe desde la escala de tiempo de resumen| Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 17e837e43a1de3b052e8296a49d5b48956db0be6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a8e2eb675b63d0c0e270e1a38bc005ae29b0595d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Filtrado de vistas de informe desde la escala de tiempo de resumen
 Puede filtrar los datos que aparecen en los informes de rendimiento si especifica un segmento de tiempo en el gráfico de escala de tiempo de la vista de resumen. Al filtrar los informes, el archivo de datos de generación de perfiles se vuelve a analizar para incluir solamente el segmento de tiempo especificado.  

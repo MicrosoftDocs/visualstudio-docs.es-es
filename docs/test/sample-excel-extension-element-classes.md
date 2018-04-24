@@ -1,18 +1,18 @@
 ---
-title: "Extensión de Excel de muestra: clases de elementos | Microsoft Docs"
+title: 'Extensión de Excel de muestra: clases de elementos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91f3e3055d2ba98052ec2fd368db9aea08b81971
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1dce9745db1acf031c67d5221f6a176d94fb6f77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>Extensión de Excel de muestra: clases de elementos
 La extensión usa clases que derivan de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> y representan el control de la hoja de cálculo y el control de la celda en [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].
@@ -44,7 +44,7 @@ La extensión usa clases que derivan de <xref:Microsoft.VisualStudio.TestTools.U
 ## <a name="utilities-and-excelutilities-classes"></a>ExcelUtilities y Utilities (Clases)
  La clase `ExcelUtilities` proporciona algunos valores constantes, como el nombre de la tecnología y un método que determina si el identificador de ventana proporcionado representa una hoja de cálculo de Excel.
 
- La clase `Utilities` tiene métodos auxiliares que devuelven una gran variedad de información acerca de la interfaz de usuario. Algunos métodos utilizan llamadas directas a DLL externos del sistema, como **USER32. DLL** y **OLEACC. DLL**, para obtener los identificadores de ventana de la interfaz de usuario**.**
+ La clase `Utilities` tiene métodos auxiliares que devuelven una gran variedad de información acerca de la interfaz de usuario. Algunos métodos utilizan llamadas directas a DLL externos del sistema, como **USER32. DLL** y **OLEACC. DLL**, para obtener los identificadores de ventana de la interfaz de usuario **.**
 
 ## <a name="see-also"></a>Vea también
 

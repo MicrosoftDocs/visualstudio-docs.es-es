@@ -1,16 +1,15 @@
 ---
-title: Trabajar con Git | Microsoft Docs
+title: Trabajo con Git
 description: Empleo de Git en Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: 76bb378297e29fa5967a43e4df38ca2ecc4e6361
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8b263ee21c87acd665e22d39b7eb9c46172d9548
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="working-with-git"></a>Trabajo con Git
 

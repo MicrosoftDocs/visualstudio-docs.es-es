@@ -33,7 +33,6 @@
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Aprendizaje en Xamarin University](vs-xamarin.md)
-#### [Microsoft E-Learning](vs-elearn.md)
 #### [Suscripción a MSDN Magazine](vs-msdn.md)
 ### Ventajas de soporte técnico
 #### [Chat de Azure Advisor](vs-azure-advisory-chat.md)

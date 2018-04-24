@@ -1,7 +1,7 @@
 ---
 title: 'Cómo: Eliminar los resultados de pruebas de carga de un repositorio en Visual Studio | Microsoft Docs'
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - results, load test
 - load tests, deleting results
@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0bdcc566b17d642ba4de2f476c2e8a96994da6f9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7c76f18e55e079539d8348ee68c95f32431bff49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Cómo: Eliminar los resultados de pruebas de carga de un repositorio
 

@@ -1,20 +1,20 @@
 ---
-title: "Ejecución simbólica dinámica | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs"
+title: Ejecución simbólica dinámica | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5e650cbdd198bea763f73bcf0740fa010332eae6
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 083ee0e340688065ab765961676da63c405fd434
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 

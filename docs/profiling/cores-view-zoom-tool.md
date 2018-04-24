@@ -1,29 +1,24 @@
 ---
-title: "Herramienta de zoom de vista de núcleos | Microsoft Docs"
-ms.custom: 
+title: Herramienta de zoom de vista de núcleos | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
 helpviewer_keywords:
 - Concurrency Visualizer, Cores View Zoom Tool
 ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da3598568d0f607e37a3d42fbb080f0a70dfda57
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7f8cb142fa56f739cae28367beda40a7c285145d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cores-view-zoom-tool"></a>Herramienta de zoom de vista de núcleos
 El control de zoom es un control deslizante que le permite acercar y alejar la escala de tiempo para que pueda centrarse en áreas de especial interés. Este control hace zoom en el centro de la vista actual, por lo que debe ajustar la vista antes de acercar.  

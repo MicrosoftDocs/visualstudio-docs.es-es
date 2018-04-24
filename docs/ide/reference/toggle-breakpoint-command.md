@@ -1,13 +1,10 @@
 ---
-title: "Comando Alternar punto de interrupción | Microsoft Docs"
-ms.custom: 
+title: Comando Alternar punto de interrupción | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.togglebreakpoint
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - Debug.ToggleBreakPoint command
 - Toggle Breakpoint command
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a763ee4b2d86a42566aa1d93b8313e5799cee7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8ddbcf2cb47c5e83f2ce23833e3a206b7aaf7fe4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="toggle-breakpoint-command"></a>Alternar puntos de interrupción (Comando)
 Activa o desactiva el punto de interrupción, en función del estado actual, en la ubicación actual del archivo.  

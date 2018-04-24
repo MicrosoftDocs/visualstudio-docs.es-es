@@ -2,28 +2,24 @@
 title: Configurar advertencias en Visual Basic | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 265d86365c9084dac9d75a04df1e1ea243b3b585
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuración de advertencias in Visual Basic
 El compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incluye un conjunto de advertencias sobre código susceptible de provocar errores en tiempo de ejecución. Puede usar esa información para escribir un código mejor, más limpio y rápido con menos errores. Por ejemplo, el compilador generará una advertencia cuando el usuario intente invocar un miembro de una variable de objeto sin asignar, volver de una función sin establecer el valor devuelto, o ejecutar un bloque `Try` con errores en la lógica para detectar excepciones.  

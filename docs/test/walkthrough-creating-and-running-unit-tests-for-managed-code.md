@@ -2,7 +2,7 @@
 title: 'Tutorial: Crear y ejecutar pruebas unitarias en código administrado en Visual Studio | Microsoft Docs'
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -10,15 +10,15 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 74e364b9ea3660c8daa58b75bb6ba74f9af26c69
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a34fded72a0d04f3920e0d7a76f9550993b520e7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -111,7 +111,7 @@ public void Debit(double amount)
 
 1.  En el menú **Archivo** , elija **Agregar**y, a continuación, elija **Nuevo proyecto...**.
 
-2.  En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C#**y, a continuación, elija **Prueba**.
+2.  En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C#** y, a continuación, elija **Prueba**.
 
 3.  En la lista de plantillas, seleccione **Proyecto de prueba unitaria**.
 

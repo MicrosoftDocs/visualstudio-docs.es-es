@@ -1,27 +1,22 @@
 ---
-title: "Vista llamador y destinatario: datos de instrumentación | Microsoft Docs"
-ms.custom: 
+title: 'Vista llamador y destinatario: datos de instrumentación | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
 ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dafa487a8f81248250f8e1fd0d6c52e90982f76
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c8048d7dfd54627394705b2ca9e2ba9949f2bca1
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Vista llamador y destinatario: datos de instrumentación
 La vista Llamador y destinatario muestra información de generación de perfiles sobre una función seleccionada y sus funciones primarias y secundarias en el árbol de llamadas. La vista Llamador y destinatario contiene tres cuadrículas.  

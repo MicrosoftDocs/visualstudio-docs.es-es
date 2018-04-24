@@ -1,16 +1,15 @@
 ---
-title: Trabajar con Subversion | Microsoft Docs
+title: Trabajar con Subversion
 description: Empleo de Subversion en Visual Studio para Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 39f7407854b2ff74552209762565236adb403d84
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 1105c157139e94bef36f71d877c0184ac6ed05b0
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="working-with-subversion"></a>Trabajar con Subversion
 

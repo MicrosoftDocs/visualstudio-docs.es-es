@@ -1,13 +1,10 @@
 ---
-title: "Trabajar con diagramas de clases (Diseñador de clases) | Microsoft Docs"
-ms.custom: 
+title: Trabajar con diagramas de clases (Diseñador de clases) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams
 - documentation, using class diagrams
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - diagrams, class structure of projects
 - class structure
 ms.assetid: 37908cb7-f77b-4698-a4f9-3c21e5440fee
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606024fd031814b91cfb97e3e674d9d1240e3efb
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: cc5f623b73fa193f11f544a3a1c703d859eebdf6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Trabajar con diagramas de clases (Diseñador de clases)
 Con los diagramas de clases, es más fácil comprender la estructura de clases de los proyectos desarrollados por otras personas (o los que escribió hace mucho tiempo). Puede utilizarlos para personalizar, compartir y presentar información de proyectos con otros usuarios.  

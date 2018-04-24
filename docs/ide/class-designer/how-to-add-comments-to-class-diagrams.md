@@ -1,13 +1,10 @@
 ---
-title: "Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases) | Microsoft Docs"
-ms.custom: 
+title: 'Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - class diagrams, adding comment shapes
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc92b589cb956eaa31c22a84dce075d6599297d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8e2b17e0d05faf17e7d6c4e2ed65841229f2b15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases)
 Puede usar formas de comentario para anotar diagramas de clases. Una forma de comentario tiene una propiedad, **Text**, en la que puede escribir texto. Las formas de comentario solo existen en la superficie del diagrama y no en el código.  

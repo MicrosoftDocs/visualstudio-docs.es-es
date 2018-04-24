@@ -1,27 +1,22 @@
 ---
-title: "Vista Árbol de llamadas: datos de instrumentación de memoria de .NET | Microsoft Docs"
-ms.custom: 
+title: 'Vista Árbol de llamadas: datos de instrumentación de memoria de .NET | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 043259d4ffd403abcffcfdfa724c8a8044caf5ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4b33cffb8fba135043f316e6857f7da0ff138afe
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Vista Árbol de llamadas: datos de instrumentación de memoria de .NET
 En la vista Árbol de llamadas de los datos de generación de perfiles de asignación de memoria de .NET recopilados con el método de instrumentación se muestran las rutas de acceso de ejecución de función que se recorrieron en la aplicación en la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función muestra todas las funciones a las que llamó, así como los datos de tiempo y de memoria de .NET de dicha función.  

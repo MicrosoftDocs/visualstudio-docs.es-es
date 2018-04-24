@@ -1,19 +1,19 @@
 ---
 title: Panel Contadores para analizar pruebas de carga en Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, counters panel
 ms.assetid: e1a388d7-5d33-4631-931a-5653ac4aefdc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e693872784519f5cdcacbd0691b6f69334af22e
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f6543cc42d6ac62a252b450a232700b17f05b719
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Usar el panel Contadores en la vista Gráficos y la vista Tablas
 
@@ -31,13 +31,13 @@ El panel Contadores proporciona las siguientes características:
 
 -   Una vista de árbol estructurada de todos los contadores de rendimiento recopilados durante una ejecución de pruebas de carga con las siguientes ramas principales:
 
-    -   **Conjunto:** contiene el resumen de datos del contador de rendimiento para cada agente de prueba y para la prueba de carga completa.
+    -   **Conjunto:**  contiene el resumen de datos del contador de rendimiento para cada agente de prueba y para la prueba de carga completa.
 
     -   **Nombre de escenario:** las bifurcaciones etiquetadas con nombres de escenario de prueba de carga en el árbol de contadores de rendimiento contienen todas las instancias de contador de prueba de carga asociadas a un escenario de prueba de carga determinado. La mayoría de los contadores de prueba de carga están anidados dentro de una birfurcación del escenario.
 
          Una bifurcación de escenario contiene nodos de pruebas de rendimiento web. Los nodos de pruebas de rendimiento web contienen los nodos Páginas, Solicitudes y Transacción. Cualquier nodo de esta estructura es un contador de rendimiento que se puede agregar a un gráfico.
 
-    -   **Equipos:** contienen todas las instancias del contador de pruebas de no carga agrupadas por equipo. La bifurcación Equipos contiene un nodo por equipo asociado al controlador de prueba de carga especificado en la sección Roles de la configuración de pruebas seleccionada actualmente. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
+    -   **Equipos:**  contienen todas las instancias del contador de pruebas de no carga agrupadas por equipo. La bifurcación Equipos contiene un nodo por equipo asociado al controlador de prueba de carga especificado en la sección Roles de la configuración de pruebas seleccionada actualmente. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 
          Cada nodo de equipo contiene un conjunto de categorías de contador de rendimiento recopiladas de ese equipo. Las categorías contienen contadores y los contadores contienen nombres de instancia del contador de rendimiento.
 

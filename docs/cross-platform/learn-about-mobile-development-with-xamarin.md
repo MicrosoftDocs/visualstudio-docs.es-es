@@ -2,22 +2,19 @@
 title: Más información sobre el desarrollo móvil con Xamarin | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
-manager: ghogen
+manager: douge
 ms.workload:
 - xamarin
-ms.openlocfilehash: 30d2bf7dbcacec6490bf36584b62c200bfab0da8
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 9a174c8712f4ca9151fc30ddd357f53cec2891cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Más información sobre el desarrollo móvil con Xamarin
 
