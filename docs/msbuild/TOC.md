@@ -194,4 +194,6 @@
 ##### [Tarea UidManager](uidmanager-task.md)
 ##### [Tarea UpdateManifestForBrowserApplication](updatemanifestforbrowserapplication-task.md)
 ### [Caracteres especiales de escape](special-characters-to-escape.md)
+## [Usar MSBuild mediante programación](msbuild-api.md)
+### [Actualizar a MSBuild 15](updating-an-existing-application.md)
 ## [Glosario de MSBuild](msbuild-glossary.md)
