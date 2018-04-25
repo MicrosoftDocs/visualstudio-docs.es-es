@@ -1,10 +1,8 @@
 ---
-title: 'CA2201: No provocar tipos de excepción reservados | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA2201: No provocar tipos de excepción reservados'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -17,75 +15,75 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b3d8060a29b0968a675520cad0b3bb662d76e390
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: No provocar tipos de excepción reservados
-|||  
-|-|-|  
-|TypeName|DoNotRaiseReservedExceptionTypes|  
-|Identificador de comprobación|CA2201|  
-|Categoría|Microsoft.Usage|  
-|Cambio problemático|Problemático|  
-  
-## <a name="cause"></a>Motivo  
- Un método genera un tipo de excepción que es demasiado general o que está reservado por el tiempo de ejecución.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Los siguientes tipos de excepción son demasiado generales para proporcionar información suficiente para el usuario:  
-  
--   <xref:System.Exception?displayProperty=fullName>  
-  
--   <xref:System.ApplicationException?displayProperty=fullName>  
-  
--   <xref:System.SystemException?displayProperty=fullName>  
-  
- Los tipos de excepción siguientes están reservados y deben producir solo por common language runtime:  
-  
--   <xref:System.ExecutionEngineException?displayProperty=fullName>  
-  
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>  
-  
--   <xref:System.NullReferenceException?displayProperty=fullName>  
-  
--   <xref:System.OutOfMemoryException?displayProperty=fullName>  
-  
- **No genere excepciones generales**  
-  
- Si se produce un tipo de excepción general, como <xref:System.Exception> o <xref:System.SystemException> en una biblioteca o el marco de trabajo, obliga a los consumidores puedan todas las detectar excepciones, incluidas las excepciones desconocidas que no saben cómo controlar.  
-  
- En su lugar, se produce un tipo más derivado que ya existe en el marco de trabajo, o se crea su propio tipo que deriva de <xref:System.Exception>.  
-  
- **Producir excepciones específicas**  
-  
- La siguiente tabla muestra los parámetros y las excepciones que se producirá cuando se valida el parámetro, incluido el valor del parámetro en el descriptor de acceso set de una propiedad:  
-  
-|Descripción del parámetro|Excepción|  
-|---------------------------|---------------|  
-|`null` Referencia|<xref:System.ArgumentNullException?displayProperty=fullName>|  
-|Fuera del intervalo permitido de valores (por ejemplo, un índice para una colección o lista)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
-|No válido `enum` valor|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
-|Contiene un formato que no cumple las especificaciones de parámetros de un método (por ejemplo, la cadena de formato `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
-|No es válida|<xref:System.ArgumentException?displayProperty=fullName>|  
-  
- Cuando una operación no es válida para el estado actual de un objeto throw <xref:System.InvalidOperationException?displayProperty=fullName>  
-  
- Cuando se realiza una operación en un objeto que se ha eliminado throw <xref:System.ObjectDisposedException?displayProperty=fullName>  
-  
- Cuando una operación no se admite (como en un invalidado **Stream.Write** en una secuencia de abrir para lectura) throw <xref:System.NotSupportedException?displayProperty=fullName>  
-  
- Cuando una conversión daría como resultado un desbordamiento (como en una sobrecarga de operador de conversión explícita) throw <xref:System.OverflowException?displayProperty=fullName>  
-  
- Para el resto de situaciones, considere la posibilidad de crear su propio tipo que deriva de <xref:System.Exception> y que producen.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Para corregir una infracción de esta regla, cambie el tipo de la excepción a un tipo específico que no es uno de los tipos reservados.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
- No suprima las advertencias de esta regla.  
-  
-## <a name="related-rules"></a>Reglas relacionadas  
+|||
+|-|-|
+|TypeName|DoNotRaiseReservedExceptionTypes|
+|Identificador de comprobación|CA2201|
+|Categoría|Microsoft.Usage|
+|Cambio problemático|Problemático|
+
+## <a name="cause"></a>Motivo
+ Un método genera un tipo de excepción que es demasiado general o que está reservado por el tiempo de ejecución.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Los siguientes tipos de excepción son demasiado generales para proporcionar información suficiente para el usuario:
+
+-   <xref:System.Exception?displayProperty=fullName>
+
+-   <xref:System.ApplicationException?displayProperty=fullName>
+
+-   <xref:System.SystemException?displayProperty=fullName>
+
+ Los tipos de excepción siguientes están reservados y deben producir solo por common language runtime:
+
+-   <xref:System.ExecutionEngineException?displayProperty=fullName>
+
+-   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+
+-   <xref:System.NullReferenceException?displayProperty=fullName>
+
+-   <xref:System.OutOfMemoryException?displayProperty=fullName>
+
+ **No genere excepciones generales**
+
+ Si se produce un tipo de excepción general, como <xref:System.Exception> o <xref:System.SystemException> en una biblioteca o el marco de trabajo, obliga a los consumidores puedan todas las detectar excepciones, incluidas las excepciones desconocidas que no saben cómo controlar.
+
+ En su lugar, se produce un tipo más derivado que ya existe en el marco de trabajo, o se crea su propio tipo que deriva de <xref:System.Exception>.
+
+ **Producir excepciones específicas**
+
+ La siguiente tabla muestra los parámetros y las excepciones que se producirá cuando se valida el parámetro, incluido el valor del parámetro en el descriptor de acceso set de una propiedad:
+
+|Descripción del parámetro|Excepción|
+|---------------------------|---------------|
+|`null` Referencia|<xref:System.ArgumentNullException?displayProperty=fullName>|
+|Fuera del intervalo permitido de valores (por ejemplo, un índice para una colección o lista)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
+|No válido `enum` valor|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
+|Contiene un formato que no cumple las especificaciones de parámetros de un método (por ejemplo, la cadena de formato `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
+|No es válida|<xref:System.ArgumentException?displayProperty=fullName>|
+
+ Cuando una operación no es válida para el estado actual de un objeto throw <xref:System.InvalidOperationException?displayProperty=fullName>
+
+ Cuando se realiza una operación en un objeto que se ha eliminado throw <xref:System.ObjectDisposedException?displayProperty=fullName>
+
+ Cuando una operación no se admite (como en un invalidado **Stream.Write** en una secuencia de abrir para lectura) throw <xref:System.NotSupportedException?displayProperty=fullName>
+
+ Cuando una conversión daría como resultado un desbordamiento (como en una sobrecarga de operador de conversión explícita) throw <xref:System.OverflowException?displayProperty=fullName>
+
+ Para el resto de situaciones, considere la posibilidad de crear su propio tipo que deriva de <xref:System.Exception> y que producen.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Para corregir una infracción de esta regla, cambie el tipo de la excepción a un tipo específico que no es uno de los tipos reservados.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
+ No suprima las advertencias de esta regla.
+
+## <a name="related-rules"></a>Reglas relacionadas
  [CA1031: No capturar los tipos de excepción general](../code-quality/ca1031-do-not-catch-general-exception-types.md)

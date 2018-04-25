@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un procesador de directivas personalizado | Documentos de Microsoft'
+title: 'Tutorial: Crear un procesador de directivas personalizadas'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: f302435bcc5c8b9b66d9822888527a6840baaad5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 322de4ea4cd5c92f57e46daa4a8256b7a212c0a3
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizado
 
@@ -658,7 +658,7 @@ En esta sección, agregará una clave para el procesador de directivas personali
     |----------|----------|----------|
     |(Predeterminado)|REG_SZ|(valor no establecido)|
     |Clase|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |CodeBase|REG_SZ|**\<Ruta de acceso a la solución >**CustomDP\bin\Debug\CustomDP.dll|
+    |CodeBase|REG_SZ|**\<Ruta de acceso a la solución >** CustomDP\bin\Debug\CustomDP.dll|
 
      Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:
 

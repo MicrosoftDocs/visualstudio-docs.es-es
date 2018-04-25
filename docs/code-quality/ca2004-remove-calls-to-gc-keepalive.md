@@ -1,10 +1,8 @@
 ---
-title: 'CA2004: Quitar las llamadas a GC. KeepAlive | Documentos de Microsoft'
-ms.custom: ''
+title: 'CA2004: Quitar las llamadas a GC.KeepAlive'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - RemoveCallsToGCKeepAlive
 - CA2004
@@ -17,28 +15,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d25c42202f7df2214295af4e3d1a448266cfa6cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2f05764f5147a064815cdb744420686fb6a5a7c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Quitar las llamadas a GC.KeepAlive
-|||  
-|-|-|  
-|TypeName|RemoveCallsToGCKeepAlive|  
-|Identificador de comprobación|CA2004|  
-|Categoría|Microsoft.Reliability|  
-|Cambio problemático|Poco problemático|  
-  
-## <a name="cause"></a>Motivo  
- Clases utilizan `SafeHandle` pero sigue sin contener las llamadas a `GC.KeepAlive`.  
-  
-## <a name="rule-description"></a>Descripción de la regla  
- Si va a convertir a `SafeHandle` uso, quite todas las llamadas a `GC.KeepAlive` (objeto). En este caso, las clases no es necesario llamar a `GC.KeepAlive`, suponiendo que no tienen un finalizador sino que se basan en `SafeHandle` para completar el identificador de sistema operativo para ellos.  Aunque el costo de dejar en una llamada a `GC.KeepAlive` podría ser insignificante según la medición del rendimiento, la percepción de que una llamada a `GC.KeepAlive` es necesaria o suficiente para solucionar el problema que podría existir ya no hace que el código sea más difícil para un período de duración mantener.  
-  
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Quite las llamadas a `GC.KeepAlive`.  
-  
-## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
+|||
+|-|-|
+|TypeName|RemoveCallsToGCKeepAlive|
+|Identificador de comprobación|CA2004|
+|Categoría|Microsoft.Reliability|
+|Cambio problemático|Poco problemático|
+
+## <a name="cause"></a>Motivo
+ Clases utilizan `SafeHandle` pero sigue sin contener las llamadas a `GC.KeepAlive`.
+
+## <a name="rule-description"></a>Descripción de la regla
+ Si va a convertir a `SafeHandle` uso, quite todas las llamadas a `GC.KeepAlive` (objeto). En este caso, las clases no es necesario llamar a `GC.KeepAlive`, suponiendo que no tienen un finalizador sino que se basan en `SafeHandle` para completar el identificador de sistema operativo para ellos.  Aunque el costo de dejar en una llamada a `GC.KeepAlive` podría ser insignificante según la medición del rendimiento, la percepción de que una llamada a `GC.KeepAlive` es necesaria o suficiente para solucionar el problema que podría existir ya no hace que el código sea más difícil para un período de duración mantener.
+
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Quite las llamadas a `GC.KeepAlive`.
+
+## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Puede suprimir esta advertencia sólo si no es técnicamente correcto realizar la conversión a `SafeHandle` uso de la clase.

@@ -2,8 +2,7 @@
 title: API de extensibilidad de resumen de archivos de volcado de memoria | Documentos de Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6a35ec003bec3d66edf82a14bdf1d442fac2ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API de extensibilidad de resumen de archivos de volcado de memoria
 Al utilizar las API de extensibilidad en esta sección, puede ampliar el. Sistema de proyectos exe y **resumen de volcado de memoria** página para su uso con su propio motor de depuración personalizadas.  

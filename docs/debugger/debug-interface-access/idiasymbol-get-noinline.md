@@ -2,8 +2,7 @@
 title: 'Idiasymbol:: Get_noinline | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dcae7a05e737c745e43921dbea386a415a24e6c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c3089477e49ad1793bbe5b6aa403bf7a8fef149
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 Recupera una marca que especifica si la función se ha marcado como no está en línea (mediante el [noinline](/cpp/cpp/noinline) atributo).  

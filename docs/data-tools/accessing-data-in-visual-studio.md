@@ -1,5 +1,5 @@
 ---
-title: Acceso a datos en Visual Studio | Documentos de Microsoft
+title: Acceso a datos en Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ef1c833cb44d05a910cb3c042c295c372c9b4b06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7c7e031eb3fbe0330ab752882c8ac89eb7617bf
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Acceso a datos en Visual Studio
 
