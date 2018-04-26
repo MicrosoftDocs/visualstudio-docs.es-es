@@ -1,6 +1,7 @@
 ---
-title: advertencias de interoperabilidad
+title: Advertencias de interoperabilidad
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aac5d5759920fa1b0e51c403e7199f6b0cc39d2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 71f954658d12a9d2789315007668b152a9523923
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="interoperability-warnings"></a>advertencias de interoperabilidad
+# <a name="interoperability-warnings"></a>Advertencias de interoperabilidad
 Advertencias de interoperabilidad admiten la interacción con los clientes COM.
 
 ## <a name="in-this-section"></a>En esta sección

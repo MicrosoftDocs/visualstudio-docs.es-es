@@ -14,14 +14,15 @@ ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aae296898bfcddfa451875fe78b29f2ae95fc9df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar los datos con el TableAdapter DBDirect métodos
 Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter. Los métodos DBDirect de un TableAdapter proporcionan un nivel exhaustivo de control sobre las actualizaciones de base de datos. Puede usarlas para ejecutar instrucciones SQL específicas y procedimientos almacenados mediante una llamada a la persona `Insert`, `Update`, y `Delete` métodos según sea necesario por la aplicación (en lugar de sobrecargado `Update` método que realiza la actualización Instrucciones INSERT y DELETE en una llamada).
@@ -114,7 +115,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
 2.  Establece las siguientes opciones **nombre** y **texto** propiedades en cada botón.
 
-    |nombre|Texto|
+    |Nombre|Texto|
     |----------|----------|
     |`InsertButton`|**Insertar**|
     |`UpdateButton`|**Actualizar**|

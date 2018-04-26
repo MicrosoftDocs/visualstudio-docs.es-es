@@ -1,6 +1,7 @@
 ---
-title: advertencias de rendimiento
+title: Advertencias de rendimiento
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -16,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da08488036517e7ef555472d4ac449fa2768cbda
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8ec04b6c432d5da9504634dd502158f783325537
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="performance-warnings"></a>advertencias de rendimiento
+# <a name="performance-warnings"></a>Advertencias de rendimiento
 Advertencias de rendimiento son compatibles con las aplicaciones y bibliotecas de alto rendimiento.
 
 ## <a name="in-this-section"></a>En esta sección

@@ -9,12 +9,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 69e189b8348b7c68c7a778f00975d5d1475223ab
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 104a74a38099286675a742ce9eea367d9eeabe84
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Ubicación y tamaño de las reglas de restricción de formas BoundsRules
 
@@ -69,4 +70,4 @@ Tenga en cuenta que la ubicación y el tamaño pueden restringirse si desea.
 ## <a name="see-also"></a>Vea también
 
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>
-- [Responder a y propagar los cambios](../modeling/responding-to-and-propagating-changes.md)
+- [Respuesta a cambios y propagación](../modeling/responding-to-and-propagating-changes.md)
