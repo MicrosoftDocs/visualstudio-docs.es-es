@@ -1,7 +1,9 @@
 ---
-title: Cuadro de diálogo de opciones de temas, Diseñador de flujo de trabajo (heredado) | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - temas, Diseñador de flujo de trabajo, opciones de cuadro de diálogo) (heredado)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - VS.ToolsOptionsPages.WorkflowDesigner.Themes
 helpviewer_keywords:
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95bda5a08871dd89b3600dd48b54f14e92f6640a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a603f8b0e6e001e3eb52f2e9fb145e52a41f3dc9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Temas, Diseñador de flujo de trabajo, Opciones (Cuadro de diálogo) (Heredado)
-Este tema se describe cómo utilizar el **temas, Diseñador de flujo de trabajo, opciones** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Un tema define los colores de fondo y de primer plano, estilos, iconos y otros elementos visuales de un flujo de trabajo. Puede guardar los temas para volverlos a usar en otros flujos de trabajo. Puede seleccionar predeterminado y temas personalizados guardados utilizando el **temas, Diseñador de flujo de trabajo, opciones** cuadro de diálogo. Para abrir este cuadro de diálogo, haga clic en **Seleccionar tema personalizado** en el **flujo de trabajo** menú. O bien, haga clic en la superficie de diseño de flujo de trabajo y haga clic en **Seleccionar tema personalizado**.
+Este tema se describe cómo utilizar el **temas, Diseñador de flujo de trabajo, opciones** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el Diseñador de flujo de trabajo heredado cuando deba tener como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
 
- La tabla siguiente describen los elementos de interfaz de usuario de la **temas, Diseñador de flujo de trabajo, opciones** cuadro de diálogo.
+Un tema define los colores de fondo y de primer plano, estilos, iconos y otros elementos visuales de un flujo de trabajo. Puede guardar los temas para volverlos a usar en otros flujos de trabajo. Puede seleccionar predeterminado y temas personalizados guardados utilizando el **temas, Diseñador de flujo de trabajo, opciones** cuadro de diálogo. Para abrir este cuadro de diálogo, haga clic en **Seleccionar tema personalizado** en el **flujo de trabajo** menú. O bien, haga clic en la superficie de diseño de flujo de trabajo y haga clic en **Seleccionar tema personalizado**.
+
+La tabla siguiente describen los elementos de interfaz de usuario de la **temas, Diseñador de flujo de trabajo, opciones** cuadro de diálogo.
 
 |Elemento de la interfaz de usuario|Descripción|
 |----------------|-----------------|

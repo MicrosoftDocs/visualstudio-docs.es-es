@@ -1,7 +1,9 @@
 ---
-title: 'Cómo: establecer puntos de interrupción en flujos de trabajo (heredado) | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: establecer puntos de interrupción en flujos de trabajo (heredado)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Cómo: Establecer puntos de interrupción en los flujos de trabajo (Heredado)
-Este tema describe cómo establecer puntos de interrupción en [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplicaciones generación mediante el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando la aplicación [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Cuando use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] para compilar una aplicación [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)], puede establecer puntos de interrupción en código C# y Visual Basic de la misma manera que en Visual Studio. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.
+En este tema se describe cómo establecer puntos de interrupción en Windows Workflow Foundation (WF) y las aplicaciones creadas mediante el Diseñador de flujo de trabajo de Windows heredadas. Use el Diseñador de flujo de trabajo heredado cuando la aplicación de Windows Workflow Foundation debe tener como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
+
+ Al utilizar el Diseñador de flujo de trabajo heredados en Visual Studio 2010 para crear una aplicación de Windows Workflow Foundation, puede establecer puntos de interrupción en código C# y Visual Basic como se hace en Visual Studio. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.
 
  Un punto de interrupción tiene tres estados: *pendiente*, *enlazados*, y *Error*. Cuando se establece un punto de interrupción, está En espera y se representa mediante un icono rojo vacío. Cuando el tiempo de ejecución ha cargado el tipo de flujo de trabajo, cambia a Enlazado y se representa mediante un icono rojo sólido. Si se especifica un formato incorrecto para el punto de interrupción, como con un nombre de actividad que no es válido, aparece una ventana de error. El punto de interrupción, de todas formas, se agrega a la ventana de punto de interrupción, pero se marca con una "x" pequeña.
 

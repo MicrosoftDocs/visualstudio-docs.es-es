@@ -1,29 +1,32 @@
 ---
-title: 'Cómo: crear una aplicación de consola de flujos de trabajo | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: crear una aplicación de consola de flujos de trabajo'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e97afc8dab747c308b3d4ff884810303b79ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6461a644bdedd3d391059cd8a3a17f887e77c6b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Crear una aplicación de consola de flujos de trabajo
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] le permite crear flujos de trabajo para ejecutar sistemas o procesos humanos. El Diseñador de flujo de trabajo de Windows proporciona la superficie de diseño para crear estos flujos de trabajo. El [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] se puede usar para crear flujos de trabajo desde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o se puede integrar en otras aplicaciones que hospedan en otro host el diseñador.
 
- En este tema se describe cómo usar el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] en [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] para crear un flujo de trabajo en una aplicación de consola.
+Windows Workflow Foundation (WF) le permite crear flujos de trabajo para ejecutar sistemas o procesos humanos. El Diseñador de flujo de trabajo de Windows proporciona la superficie de diseño para crear estos flujos de trabajo. El Diseñador de flujo de trabajo puede utilizarse para crear flujos de trabajo de Visual Studio o se puede integrar en otras aplicaciones que hospedan el diseñador.
 
-### <a name="to-create-a-workflow-console-application"></a>Para crear una aplicación de consola de flujos de trabajo
+En este tema se describe cómo utilizar el Diseñador de flujo de trabajo en Visual Studio 2010 para crear un flujo de trabajo en una aplicación de consola.
 
-1.  Inicie [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+## <a name="to-create-a-workflow-console-application"></a>Para crear una aplicación de consola de flujos de trabajo
 
-2.  En el **archivo** menú, elija **New**y, a continuación, seleccione **proyecto...** .
+1.  Inicie Visual Studio 2010.
+
+2.  En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
 
      Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -38,9 +41,9 @@ ms.lasthandoff: 04/16/2018
 7.  En el **solución** cuadro, escriba el nombre de la nueva solución. Haga clic en **Aceptar** para crear la aplicación.
 
     > [!NOTE]
-    > Si desea agregar una aplicación de consola de flujos de trabajo a una solución existente, ábrala en [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], haga clic en la solución de **el Explorador de soluciones**y seleccione **agregar**, a continuación, **Nuevo proyecto...** para abrir el **nuevo proyecto** cuadro de diálogo. Continúe de la forma descrita anteriormente en este procedimiento.
+    > Si desea agregar una aplicación de consola de flujos de trabajo a una solución existente, ábrala en Visual Studio 2010, derecho, haga clic en la solución en **el Explorador de soluciones**y seleccione **agregar**, a continuación,  **Nuevo proyecto** para abrir el **nuevo proyecto** cuadro de diálogo. Continúe de la forma descrita anteriormente en este procedimiento.
 
-8.  La plantilla del proyecto crea una definición de flujo de trabajo en XAML y la definición de la aplicación de consola está en código fuente. El [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] se abre y muestra el lienzo para el flujo de trabajo que creó.
+8.  La plantilla del proyecto crea una definición de flujo de trabajo en XAML y la definición de la aplicación de consola está en código fuente. El Diseñador de flujo de trabajo se abre y muestra el lienzo del flujo de trabajo que creó.
 
 9. Para crear un flujo de trabajo, arrastre actividades u otros elementos de flujo de trabajo desde el **cuadro de herramientas** a la superficie de diseño del flujo de trabajo.
 

@@ -1,7 +1,9 @@
 ---
-title: Ventanas de flujo de trabajo de Visual Studio (heredado) | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - ventanas de flujo de trabajo de Visual Studio (heredado)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, designer windows
 ms.assetid: 78526446-d165-4367-982c-b2cf269fa22b
@@ -10,20 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 524b589e7da8da02b2fafcaed5b10f4b754d2b58
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39e2b66a7203cd4ac80d855b8752683e126a0b27
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Ventanas de flujo de trabajo de Visual Studio (Heredado)
-El [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado proporcionado por [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] se puede usar para tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. El diseñador heredado es un diseñador visual que puede usar para crear un flujo de trabajo. Puede arrastrar las actividades de la **cuadro de herramientas** al diseño de la superficie y, a continuación, configurarlas. Como ventana del editor de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ocupa el área de la ventana principal usada por otras ventanas del editor de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El nombre del flujo de trabajo se muestra en la barra de título de la ventana de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
- Los usuarios de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con experiencia deben conocer la mayor parte de las ventanas del diseñador heredado. En la tabla siguiente se describen las ventanas principales.
+Heredado proporcionados por el Diseñador de flujo de trabajo mediante Visual Studio 2010 puede utilizarse como destino la versión 3.5 de .NET Framework o el conocido como WinFX. El diseñador heredado es un diseñador visual que puede usar para crear un flujo de trabajo. Puede arrastrar las actividades de la **cuadro de herramientas** al diseño de la superficie y, a continuación, configurarlas. Como ventana de editor de Visual Studio, ocupa el área de ventana principal utilizada por otras ventanas de editor de Visual Studio. El nombre del flujo de trabajo se muestra en la barra de título de la ventana de Visual Studio.
+
+La mayoría de las ventanas del diseñador heredadas debe ser conocida por el usuario de Visual Studio con experiencia. En la tabla siguiente se describen las ventanas principales.
 
 |Ventana|Descripción|
 |------------|-----------------|
-|Superficie de diseño del flujo de trabajo heredada|Superficie del diseñador visual que se usa para crear un flujo de trabajo que tiene como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Proporciona la capacidad de crear actividades visualmente diseñadores de actividad de arrastrar desde el **cuadro de herramientas** a la superficie de diseño.|
+|Superficie de diseño del flujo de trabajo heredada|Superficie del diseñador visual que se utiliza para crear un flujo de trabajo que tenga como destino la versión 3.5 de .NET Framework o el conocido como WinFX. Proporciona la capacidad de crear actividades visualmente diseñadores de actividad de arrastrar desde el **cuadro de herramientas** a la superficie de diseño.|
 |Cuadro de herramientas|Proporciona representaciones gráficas de actividades, que puede arrastrar a la superficie de diseño.|
 |Propiedades|Se utiliza para configurar las propiedades de las actividades de flujo de trabajo.|
 |Explorador de soluciones|Muestra los proyectos de flujo de trabajo en una vista de árbol jerárquica y facilita acceso a las características que ayudan a administrar los proyectos.|

@@ -1,9 +1,9 @@
 ---
-title: Obtener acceso a un área de formulario en tiempo de ejecución | Documentos de Microsoft
+title: Obtener acceso a un área de formulario en tiempo de ejecución
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1a7d2ad69adff4462379f223f4f6bab397511d4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1ecc6ce8f3b196ec7395652b8e8584bb9b0b2d9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="accessing-a-form-region-at-run-time"></a>Obtener acceso a un área de formulario en tiempo de ejecución
 

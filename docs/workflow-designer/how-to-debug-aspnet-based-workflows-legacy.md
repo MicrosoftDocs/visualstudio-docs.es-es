@@ -1,7 +1,9 @@
 ---
-title: 'Cómo: depurar flujos de trabajo basados en ASP.NET (heredado) | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: depurar flujos de trabajo basados en ASP.NET (heredado)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - ASP.NET, debugging workflows
 - debugging workflows, ASP.NET workflows
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed3f4f23ff02291df33b2676bdb980de191b281b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bf16a6a88c5d4cd063f1c32ca846031d8b2588d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Cómo: Depurar los flujos de trabajo basados en ASP.NET (Heredado)
-Este tema describe cómo depurar [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-según [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] las aplicaciones que tienen como destino el [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] en el Diseñador de flujo de trabajo de Windows heredado.
 
- Puede depurar flujos de trabajo heredados que se inician en ASP.NET o flujos de trabajo heredados que se publican como servicio Web adjuntándolos al proceso en el que está hospedado el flujo de trabajo.
+En este tema se describe cómo depurar aplicaciones basadas en ASP.NET Windows Workflow Foundation (WF) que tienen como destino ya sea la versión de .NET Framework 3.5 o la WinFX en el Diseñador de flujo de trabajo de Windows heredado.
 
-### <a name="to-debug-an-aspnet-based-workflow"></a>Para depurar un flujo de trabajo basado en ASP.NET
+Puede depurar flujos de trabajo heredados que se inician en ASP.NET o flujos de trabajo heredados que se publican como servicio Web adjuntándolos al proceso en el que está hospedado el flujo de trabajo.
+
+## <a name="to-debug-an-aspnet-based-workflow"></a>Para depurar un flujo de trabajo basado en ASP.NET
 
 1.  Habilitar la depuración de la aplicación ASP.NET estableciendo **debug = true** en el archivo web.config.
 

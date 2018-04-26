@@ -1,7 +1,9 @@
 ---
-title: Enlazar a una actividad&#39;cuadro de diálogo de propiedades de s (heredado) | Documentos de Microsoft
+title: 'Diseñador de flujo de trabajo: enlazar a una actividad&#39;cuadro de diálogo de propiedades de s (heredado)'
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Enlazar a una actividad&#39;cuadro de diálogo de propiedades de s (heredado)
-Este tema se describe cómo utilizar el **enlazar a una propiedad de Activity** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Enlazar con un cuadro de diálogo de propiedades de una actividad (Heredado)
+
+Este tema se describe cómo utilizar el **enlazar a una propiedad de Activity** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el Diseñador de flujo de trabajo heredado cuando deba tener como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
 
  Un tipo de instancia de propiedad de dependencia se puede enlazar con la propiedad pública o evento de otra actividad. Para obtener más información sobre el enlace de actividad, vea [mediante propiedades de dependencia](http://go.microsoft.com/fwlink?LinkID=65007).
 

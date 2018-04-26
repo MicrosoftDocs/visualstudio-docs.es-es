@@ -1,7 +1,9 @@
 ---
-title: Desarrollo de aplicaciones con el Diseñador de flujo de trabajo | Documentos de Microsoft
+title: Desarrollar aplicaciones con el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -16,34 +18,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c48e7b43b23e7bfe8887f437cc17e6db077c0e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ecc9e42146bfa7de259551ff1c90d27201db5725
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Desarrollar aplicaciones con el Diseñador de flujo de trabajo
 
-El Diseñador de flujo de trabajo de Windows es un diseñador visual y un depurador para la creación gráfica y depuración de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplicaciones en el [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] que se hospeda en el [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] entorno de desarrollo. Le permite crear una aplicación de flujo de trabajo compuesta, una biblioteca de actividades o un servicio de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] mediante el uso de plantillas y diseñadores de actividades. Para obtener más información acerca de los flujos de trabajo, consulte la [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
+El Diseñador de flujo de trabajo de Windows es un diseñador visual y un depurador para la creación gráfica y depuración de aplicaciones de Windows Workflow Foundation (WF) en .NET Framework 4 que se hospeda en el entorno de desarrollo de Visual Studio 2010. Permite crear una aplicación de flujo de trabajo compuesta, la biblioteca de actividades o el servicio de Windows Communication Foundation (WCF) mediante el uso de plantillas y diseñadores de actividad. Para obtener más información acerca de los flujos de trabajo, consulte la [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
 
- A continuación se indican diversas características de diseño nuevas que diferencia esta versión nueva de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] de las versiones anteriores de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]:
+ Éstos son varias nuevas características de diseño que establecen esta nueva versión del Diseñador de flujo de trabajo además de las versiones anteriores del Diseñador de flujo de trabajo:
 
--   [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] se compila utilizando [!INCLUDE[avalon1](../workflow-designer/includes/avalon1_md.md)]. Esto mejora el uso del diseñador de actividades, así como el rendimiento para flujos de trabajo amplios y complejos.
+-   El Diseñador de flujo de trabajo se basa en Windows Presentation Foundation (WPF). Esto mejora el uso del diseñador de actividades, así como el rendimiento para flujos de trabajo amplios y complejos.
 
 -   Las actividades personalizadas se diseñan ahora con [!INCLUDE[avalon2](../workflow-designer/includes/avalon2_md.md)], mediante XAML y se ha simplificado el modelo de programación para crear los diseñadores de actividades.
 
 -   Se ha implementado una actividad de diagrama de flujo, de forma que se puede visualizar el flujo del programa con un estilo de modelado de diagramas de flujo que le resulte familiar.
 
--   [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] cuenta con un nuevo diseñador de variables con el que se pueden declarar variables y establecer su ámbito en de los flujos de trabajo, vinculándolos a las actividades.
+-   El Diseñador de flujo de trabajo tiene un nuevo diseñador de variables que le permite declarar y definir el ámbito de las variables dentro de los flujos de trabajo, vinculándolos a las actividades.
 
--   En [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] proporciona las capacidades íntegras de IntelliSense al crear expresiones Visual Basic en los flujos de trabajo de [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)].
+-   En Visual Studio 2010, el Diseñador de flujo de trabajo proporciona capacidades completas de IntelliSense al crear expresiones de Visual Basic en los flujos de trabajo de .NET Framework 4.
 
 -   El uso de las capacidades de depuración se amplía ahora a XAML, lo cual hace posible el establecimiento de puntos de interrupción en la definición del flujo de trabajo XAML e ir al código XAML en tiempo de ejecución, que proporciona un uso similar al del código administrado.
 
--   El hospedar a [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se simplifica enormemente si se compara con versiones anteriores y esto requiere ahora unas pocas líneas de código.
+-   Rehospedar el Diseñador de flujo de trabajo fuera de Visual Studio se simplifica en gran medida en comparación con versiones anteriores, requiere ahora unas pocas líneas de código.
 
 -   El nuevo <xref:System.Activities.Statements.Flowchart> actividad y su [Flowchart](../workflow-designer/flowchart-activity-designer.md) le permiten visualizar el flujo del programa con el estilo de modelado de diagrama de flujo familiar.
 
--   Las actividades de mensajería se han mejorado, lo cual le permite escribir servicios de [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] totalmente declarativos (sin código).
+-   Se han mejorado las actividades de mensajería, lo que le permite escribir totalmente declarativos (sin código) servicios Windows Communication Foundation (WCF).
 
 -   El **Agregar referencia de servicio...**  funcionalidad le permite generar automáticamente actividades que acceder a servicios Web.

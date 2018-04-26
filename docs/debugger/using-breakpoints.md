@@ -36,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04834f335fd4c9a49a2ef4de6b55adf6443d6e7c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción detienen la ejecución del depurador para, por ejemplo, ver el estado de las variables de código o examinar la pila de llamadas. Constituyen una de las técnicas de depuración más importantes en los cuadros de herramientas de los desarrolladores.  
@@ -247,8 +247,7 @@ Los puntos de interrupción detienen la ejecución del depurador para, por ejemp
 |**$PNAME**|Nombre del proceso|  
 |**$TID**|Identificador del subproceso|  
 |**$TNAME**|Nombre del subproceso|  
-|**$TICK**||  
-|**$TNAME**||  
+|**$TICK**|Recuento de graduación (desde Windows `GetTickCount`)|  
   
 ##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Etiquetas de puntos de interrupción  
  Las etiquetas de punto de interrupción solo se utilizan en la ventana **Puntos de interrupción** para ordenar y filtrar la lista de puntos de interrupción. Para agregar una etiqueta a un punto de interrupción, elija la fila del punto de interrupción y elija **Etiqueta** en el menú contextual.  

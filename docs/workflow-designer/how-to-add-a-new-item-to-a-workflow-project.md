@@ -1,32 +1,35 @@
 ---
-title: 'Cómo: agregar un nuevo elemento a un proyecto de flujo de trabajo | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: agregar un nuevo elemento a un proyecto de flujo de trabajo'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3024573a9ca4732066610c2c29c05fa1d73891
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0aa2be7fd8ecccbd8de0aa54c2693dd6b02c7e10
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Cómo agregar un nuevo elemento a un proyecto de flujo de trabajo
-Después de haber creado un proyecto de flujo de trabajo, puede agregar actividades, diseñadores y otros elementos conocidos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] al proyecto.
 
- En la tabla siguiente se enumeran los elementos de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] que puede agregar a un proyecto de flujo de trabajo.
+Después de haber creado un proyecto de flujo de trabajo, puede agregar actividades de flujo de trabajo, diseñadores y otros elementos de Visual Studio familiar a su proyecto.
 
-|Name|Descripción|
+En la tabla siguiente se enumera los elementos de Windows Workflow Foundation (WF) que se pueden agregar a un proyecto de flujo de trabajo.
+
+|nombre|Descripción|
 |----------|-----------------|
 |Actividad|Actividad que va a estar formada por otras actividades. Si selecciona este elemento agrega el mismo archivo XAML al proyecto que obtendría cuando se selecciona el **biblioteca de actividades** plantilla para un nuevo proyecto. Para obtener más información sobre este procedimiento, consulte [Cómo: crear una biblioteca de actividades](../workflow-designer/how-to-create-an-activity-library.md).|
 |Diseñador de actividad|Diseñador que se usa para personalizar la experiencia en tiempo de diseño de una actividad. Si selecciona este elemento agrega los mismos archivos al proyecto que obtendría cuando se selecciona el **biblioteca del Diseñador de actividad** plantilla para un nuevo proyecto. Para obtener más información sobre este procedimiento, consulte [Cómo: crear una biblioteca del Diseñador de actividades](../workflow-designer/how-to-create-an-activity-designer-library.md).|
 |Actividad de código|Actividad con lógica de ejecución escrita en código. Ya se ha generado automáticamente un archivo de código fuente con invalidación del método <xref:System.Activities.CodeActivity.Execute%2A>.|
 |Servicio de flujo de trabajo WCF|Servicio de [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] compilado mediante actividades de flujo de trabajo. Si selecciona este elemento agrega los mismos archivos al proyecto que obtendría cuando se selecciona el **aplicación de servicio de flujo de trabajo de WCF** plantilla para un nuevo proyecto. Para obtener más información acerca de este procedimiento, consulte [Cómo: crear una aplicación de servicio de flujo de trabajo de WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md).|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>Para agregar un nuevo elemento a un proyecto de flujo de trabajo
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>Para agregar un nuevo elemento a un proyecto de flujo de trabajo
 
 1.  En el **proyecto** menú, haga clic en **Agregar nuevo elemento...** .
 

@@ -1,7 +1,9 @@
 ---
-title: 'Cómo: crear proyectos de flujo de trabajo (heredado) | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: crear proyectos de flujo de trabajo (heredado)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6fdbbd8a744c472c06fdefbdafce77679ec2c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb5d58c6d450a5e68d804e33785ec76349bfb6d8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Cómo: Crear proyectos de flujo de trabajo (Heredado)
-Siga estos pasos para crear un proyecto de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] que tenga como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Este procedimiento utiliza el Diseñador de flujo de trabajo de Windows heredado proporcionado por [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
 
-### <a name="to-create-a-workflow-project"></a>Para crear un proyecto de flujo de trabajo
+Siga estos pasos para crear un proyecto de Windows Workflow Foundation (WF) que tiene como destino la versión 3.5 de .NET Framework o el conocido como WinFX. Este procedimiento utiliza el Diseñador de flujo de trabajo de Windows heredado proporcionada por Visual Studio 2010.
 
-1.  Inicie [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)].
+## <a name="to-create-a-workflow-project"></a>Para crear un proyecto de flujo de trabajo
+
+1.  Inicie Visual Studio.
 
 2.  En el menú **Archivo**, elija **Nuevo** y después seleccione **Proyecto**.
 
@@ -31,7 +34,7 @@ Siga estos pasos para crear un proyecto de [!INCLUDE[wf](../workflow-designer/in
 3.  Seleccione el **.NET Framework 3.0** opción o **.NET Framework 3.5** opción en la lista desplegable lista en la parte superior de la **nuevo proyecto** ventana para tener acceso al diseñador heredado.
 
     > [!NOTE]
-    > La opción predeterminada de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] es **.NET Framework 4**. Esta opción se usa para crear aplicaciones [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] que tienen como destino [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] y no usa el diseñador heredado.
+    > La opción predeterminada en Visual Studio 2010 es **.NET Framework 4**. Esta opción se utiliza para crear aplicaciones de Windows Workflow Foundation (WF) que tienen como destino .NET Framework 4 y no usa el diseñador heredado.
 
 4.  En el **tipos de proyecto** panel, seleccione proyectos de Visual C# o proyectos de Visual Basic y, a continuación, seleccione **flujo de trabajo**.
 

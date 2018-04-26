@@ -1,7 +1,9 @@
 ---
-title: Examinar y seleccionar un cuadro de diálogo de tipo de .NET (heredado) | Documentos de Microsoft
+title: 'Diseñador de flujo de trabajo: Examinar y seleccionar un cuadro de diálogo de tipo de .NET (heredado)'
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a283caa664bb208613a695cb4afb8873caba3645
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23e311aa8e87fe799bc8ea22a22ffd8e789b3dcd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET (Heredado)
-Este tema se describe cómo utilizar el **examinar y seleccionar un tipo .NET** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+
+Este tema se describe cómo utilizar el **examinar y seleccionar un tipo .NET** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el Diseñador de flujo de trabajo heredado cuando deba tener como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
 
  En el **propiedades** ventana, cuando se seleccionan propiedades que toman un tipo de .NET Framework en un ensamblado de referencia, un botón de puntos suspensivos **[...]**  aparece al final del cuadro de texto de la propiedad. Al hacer clic en el **[...]**  abre el **examinar y seleccionar un tipo .NET** cuadro de diálogo. En este cuadro de diálogo, puede escoger un tipo en una vista de árbol de los ensamblados a los que se hace referencia. Por ejemplo, cuando esté utilizando el Diseñador de actividades, en la **propiedades** ventana, haga clic en el **una clase Base** puntos suspensivos **[...]**  para seleccionar otra clase base para una actividad del árbol de ensamblados de referencia.
 

@@ -1,7 +1,9 @@
 ---
-title: Vistas de actividad (heredado) | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - vistas de actividad (heredado)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - activities, activity views
 - views, activity
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc053be2f9d11a9a1f3cd48c6c9d24e366410c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d3453ecefece93f593c3d4ebbc261e4332815da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="activity-views-legacy"></a>Vistas de actividad (Heredado)
-Muchas de las actividades proporcionadas por [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], de los flujos de trabajo se componen, tener varias vistas de diseño disponibles en el Diseñador de flujo de trabajo de Windows heredadas. Al arrastrar un diseñador de actividad de la **cuadro de herramientas** a la superficie de diseño y después cada vez que seleccione la actividad, puede cambiar entre las vistas de diseño diferentes utilizando la **deflujodetrabajo**menú o haciendo clic en la actividad seleccionada. Además, si mueve el puntero sobre el nombre de una actividad seleccionada, aparece un conjunto desplegable de pestañas, que puede utilizar para pasar de una vista a otra.
 
- Cada actividad tiene al menos una vista; se trata de la vista predeterminada que se muestra al arrastrar un diseñador de actividad de la **cuadro de herramientas** a la superficie de diseño. Esta vista predeterminada de actividad está disponible como el **ver [tipo de actividad]** opción en los menús y una pestaña, por ejemplo, **ver Parallel**. La mayoría de las actividades tienen vistas adicionales y distintas actividades pueden tener vistas diferentes. Por ejemplo, el [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) actividad tiene la vista de compensación y la [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) actividad tiene un eventos de vista. Muchas de las actividades que vienen con Windows Workflow Foundation tienen **ver controlador de cancelación** y **ver errores** diseñar vistas para ver el [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) y un [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) asociados con ellos.
+Muchas de las actividades proporcionadas por Windows Workflow Foundation (WF), desde el que se componen los flujos de trabajo, tienen varias vistas de diseño disponibles en el Diseñador de flujo de trabajo de Windows heredadas. Al arrastrar un diseñador de actividad de la **cuadro de herramientas** a la superficie de diseño y después cada vez que seleccione la actividad, puede cambiar entre las vistas de diseño diferentes utilizando la **deflujodetrabajo**menú o haciendo clic en la actividad seleccionada. Además, si mueve el puntero sobre el nombre de una actividad seleccionada, aparece un conjunto desplegable de pestañas, que puede utilizar para pasar de una vista a otra.
 
- En la tabla siguiente se enumeran el nombre y la descripción de cada vista.
+Cada actividad tiene al menos una vista; se trata de la vista predeterminada que se muestra al arrastrar un diseñador de actividad de la **cuadro de herramientas** a la superficie de diseño. Esta vista predeterminada de actividad está disponible como el **ver [tipo de actividad]** opción en los menús y una pestaña, por ejemplo, **ver Parallel**. La mayoría de las actividades tienen vistas adicionales y distintas actividades pueden tener vistas diferentes. Por ejemplo, el [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) actividad tiene la vista de compensación y la [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) actividad tiene un eventos de vista. Muchas de las actividades que vienen con Windows Workflow Foundation tienen **ver controlador de cancelación** y **ver errores** diseñar vistas para ver el [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) y un [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) asociados con ellos.
+
+En la tabla siguiente se enumeran el nombre y la descripción de cada vista.
 
 |Opción de menú o pestaña|Descripción|
 |----------------------|-----------------|
@@ -33,7 +36,7 @@ Muchas de las actividades proporcionadas por [!INCLUDE[wf](../workflow-designer/
 |**Ver controlador de compensación**|Seleccione esta opción de menú o pestaña para ver el [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053) asociado seleccionado [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093).|
 |**Ver controlador de eventos**|Seleccione esta opción de menú o pestaña para ver el [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018) asociado seleccionado el [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030).|
 
- Para obtener información acerca de las vistas similares, consulte [vistas de flujo de trabajo secuenciales (heredado)](../workflow-designer/sequential-workflow-views-legacy.md).
+Para obtener información acerca de las vistas similares, consulte [vistas de flujo de trabajo secuenciales (heredado)](../workflow-designer/sequential-workflow-views-legacy.md).
 
 ## <a name="see-also"></a>Vea también
 

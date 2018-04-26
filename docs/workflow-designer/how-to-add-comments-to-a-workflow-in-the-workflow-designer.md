@@ -1,7 +1,9 @@
 ---
-title: 'Cómo: agregar comentarios a un flujo de trabajo en el Diseñador de flujo de trabajo | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: agregar comentarios a un flujo de trabajo'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -11,15 +13,15 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fb7505d773f26a26df0b31477d99f7f5636d8c40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba21ba5b2ce6126d29d34f5df662e9e332359ed3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Agregar comentarios a un flujo de trabajo en el Diseñador de flujo de trabajo
 
-Para facilitar la creación de flujos de trabajo mayores y más complicados, [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] permite al desarrollador agregar anotaciones a los siguientes tipos de elemento en el diseñador:
+Para facilitar la creación de flujos de trabajo mayores y más complicados, .NET Framework 4.5 permite al desarrollador agregar anotaciones a los siguientes tipos de elemento en el diseñador:
 
 -   <xref:System.Activities.Activity>
 
@@ -36,7 +38,7 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, [!I
 > [!IMPORTANT]
 > El contenido de una anotación se guarda como texto sin formato en el archivo XAML asociado al flujo de trabajo y podrían leerlo otras personas. Tenga cuidado al especificar información confidencial en una anotación.
 
-### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Agregar una anotación a una actividad en el diseñador
+## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Agregar una anotación a una actividad en el diseñador
 
 1. En el Diseñador de flujo de trabajo, haga doble clic en un elemento en el flujo de trabajo y seleccione **anotaciones**, **Agregar anotación**.
 
@@ -44,7 +46,7 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, [!I
 
    El elemento muestra un icono de anotación. Al mantener el mouse sobre el icono de anotación, muestra el texto de la anotación.
 
-### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Mostrar una anotación en el diseñador de una actividad
+## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Mostrar una anotación en el diseñador de una actividad
 
 1.  Con un diseñador de actividad que tiene una anotación que se muestra fuera de la actividad, haga clic en el **Pin** icono en el adorno de anotación.
 
@@ -56,7 +58,7 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, [!I
 
    ![Anotación que se muestra fuera del Diseñador de actividades](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
 
-### <a name="showing-or-hiding-all-annotations"></a>Mostrar u ocultar todas las anotaciones
+## <a name="showing-or-hiding-all-annotations"></a>Mostrar u ocultar todas las anotaciones
 
 1. Haga clic con el botón secundario en una actividad que tiene una anotación. Seleccione **anotaciones**, **mostrar todas las anotaciones**.
 
@@ -64,7 +66,7 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, [!I
 
 1. Para mostrar todas las anotaciones fuera de los diseñadores de actividades, haga doble clic en la actividad y seleccione **anotaciones**, **ocultar todas las anotaciones**.
 
-### <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Editar o eliminar una anotación para una actividad
+## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Editar o eliminar una anotación para una actividad
 
 1. Haga clic con el botón secundario en una actividad que tiene una anotación.
 
@@ -74,7 +76,7 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, [!I
 
 1. Para eliminar todas las anotaciones a la vez, haga clic en el flujo de trabajo y seleccione **anotación**, **eliminar todas las anotaciones**.
 
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Agregar, editar y eliminar una anotación para una variable o argumento
+## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Agregar, editar y eliminar una anotación para una variable o argumento
 
 1. Haga clic con el botón secundario en una variable o argumento y seleccione Agregar anotación.
 

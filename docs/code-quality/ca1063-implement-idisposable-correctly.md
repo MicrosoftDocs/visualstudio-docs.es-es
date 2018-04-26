@@ -1,6 +1,7 @@
 ---
 title: 'CA1063: Implemente IDisposable correctamente'
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implemente IDisposable correctamente
 
@@ -60,17 +61,17 @@ Todos los tipos IDisposable deben implementar el modelo de Dispose correctamente
 
 Examine el código y determinar cuál de las siguientes resoluciones corregirá esta infracción.
 
-- Quite IDisposable de la lista de interfaces que se implementan en {0} y reemplazar la implementación de Dispose de clase base en su lugar.
+- Quite IDisposable de la lista de interfaces implementadas por {0} y reemplace la implementación de Dispose de clase base en su lugar.
 
 - Quite el finalizador del tipo {0}, invalide Dispose (colocación de bool) y coloque la lógica de finalización en la ruta de acceso del código donde 'desechar' es false.
 
 - Quitar {0}, invalide Dispose (colocación de bool) y coloque la lógica de dispose en la ruta de acceso del código donde 'desechar' es true.
 
-- Asegúrese de que {0} se declaró como public y sealed.
+- Asegúrese de que {0} está declarado como public y sealed.
 
 - Cambiar el nombre de {0} a 'Dispose' y asegúrese de que se declara como public y sealed.
 
-- Asegúrese de que ese {0} se declara como protegido, virtual y no sellado.
+- Asegúrese de que {0} se declara como protegido, virtual y no sellados.
 
 - Modificar {0} para que llama a Dispose (true), a continuación, llame a GC. SuppressFinalize en la instancia del objeto actual ('this' o 'Me' en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) y, a continuación, se devuelve.
 

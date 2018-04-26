@@ -1,7 +1,9 @@
 ---
-title: Invocar el depurador de Visual Studio para Windows Workflow Foundation (heredado) | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - invocar al depurador de Visual Studio para Windows Workflow Foundation (heredado)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - stepping
 - Step Over command
@@ -19,23 +21,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e3563b175359e00a051138451292eb015958480
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a326f8b6dc482c2adfc2caba797c38094a99f8c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Invocar el Depurador de Microsoft Visual Studio para Windows Workflow Foundation (Heredado)
-Este tema se describe cómo utilizar el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depurador para depurar [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplicaciones en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Generalmente, los flujos de trabajo heredados se depuran de la misma manera que los programas escritos en otros lenguajes de programación de Visual Studio. Puede iniciar el depurador de [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] for Windows Workflow Foundation de las formas siguientes:
+Este tema se describe cómo utilizar el depurador de Visual Studio para depurar aplicaciones de Windows Workflow Foundation (WF) en el Diseñador de flujo de trabajo de Windows heredado. Use el Diseñador de flujo de trabajo heredado cuando deba tener como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
+
+Generalmente, los flujos de trabajo heredados se depuran de la misma manera que los programas escritos en otros lenguajes de programación de Visual Studio. Puede iniciar Visual Studio depurador de Windows Workflow Foundation de las maneras siguientes:
 
 -   Seleccione **adjuntar al proceso** en el **depurar** menú para seleccionar una instancia de flujo de trabajo de ejecución de los procesos disponibles.
 
 -   Presione **F5** para iniciar la ejecución de una instancia del flujo de trabajo, o continúe ejecutándose una vez que se ha alcanzado un punto de interrupción.
 
 ## <a name="stepping-through-code"></a>Ejecución paso a paso del código
- El depurador admite uno de los procedimientos de depuración más comunes, la ejecución paso a paso, es decir, la ejecución del código de línea en línea. Hay tres comandos para ejecutar el código paso a paso:
+
+El depurador admite uno de los procedimientos de depuración más comunes, la ejecución paso a paso, es decir, la ejecución del código de línea en línea. Hay tres comandos para ejecutar el código paso a paso:
 
 -   **En el paso**: puede ir a una actividad usando **F11**. El depurador avanza paso a paso por todos los controladores definidos. Si no hay ningún controlador definido, puede ejecutar la actividad paso a paso o, en las actividades compuestas, que contienen otras actividades, puede entrar en la primera actividad en ejecución. ENTRAR en los controladores de código desde el diseñador no se admite para las actividades siguientes: **IfElseActivity**, **WhileActivity**, **ConditionedActivityGroup**, o **ReplicatorActivity**. Para depurar los controladores asociados a estas actividades, debe colocar puntos de interrupción explícitos en el código.
 
@@ -51,7 +55,7 @@ Este tema se describe cómo utilizar el [!INCLUDE[vsprvs](../code-quality/includ
 
  Para establecer un proyecto de inicio en el Explorador de soluciones, haga clic en el nombre del proyecto y seleccione **establecer como proyecto de inicio**. Para establecer la ruta de acceso al host en el **iniciar programa externo** propiedad, haga doble clic en el proyecto de flujo de trabajo **propiedades** nodo en el Explorador de soluciones y seleccione el **depurar** pestaña. En **acción de inicio**, seleccione **programa externo de inicio** y escriba la ruta de acceso al archivo .exe que hospeda el flujo de trabajo que desea depurar.
 
- Si la aplicación host se establece como proyecto de inicio, sólo se invoca el depurador de Visual Studio para depurar, y no se invoca el depurador de [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] for Windows Workflow Foundation. Si se utiliza el depurador de Visual Studio, sólo se alcanzan los puntos de interrupción del código de C# o Visual Basic, pero no los puntos de interrupción establecidos en el diseñador de flujo de trabajo. Por ejemplo, se utiliza un punto de interrupción establecido en una actividad <xref:System.Workflow.Activities.ParallelActivity> en el diseñador si se utiliza el depurador de [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] for Windows Workflow Foundation, pero no si se utiliza el depurador de Visual Studio.
+ Si la aplicación host se establece como proyecto de inicio, se invoca el depurador de Visual Studio para depurar, y no se invoca el Visual Studio depurador for Windows Workflow Foundation. Si se utiliza el depurador de Visual Studio, sólo se alcanzan los puntos de interrupción del código de C# o Visual Basic, pero no los puntos de interrupción establecidos en el diseñador de flujo de trabajo. Por ejemplo, un punto de interrupción que se establece en un <xref:System.Workflow.Activities.ParallelActivity> se alcanza la actividad en el diseñador si se utiliza Visual Studio depurador de Windows Workflow Foundation, pero no cuando se utiliza el depurador de Visual Studio.
 
 ## <a name="see-also"></a>Vea también
 

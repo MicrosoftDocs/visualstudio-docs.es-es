@@ -1,7 +1,9 @@
 ---
-title: 'Cómo: crear un proyecto de flujo de trabajo vacío (heredado) | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: crear un proyecto de flujo de trabajo vacío (heredado)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - projects, empty workflow
 - empty workflow projects
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 961425eb7f3b4d412ddcb572bc21a91bdde6e957
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2aa51df35a1187c8d327a401d77c12e4532f4eb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Cómo: Crear un proyecto de flujo de trabajo vacío (Heredado)
-Siga estos pasos para crear un proyecto de flujo de trabajo vacío mediante el Diseñador de flujo de trabajo de Windows heredado proporcionado por [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
-### <a name="to-create-an-empty-workflow-project"></a>Para crear un proyecto de flujo de trabajo vacío
+Siga estos pasos para crear un proyecto de flujo de trabajo vacío mediante el Diseñador de flujo de trabajo de Windows heredado proporcionada por Visual Studio 2010. Use el Diseñador de flujo de trabajo heredado cuando deba tener como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
+
+## <a name="to-create-an-empty-workflow-project"></a>Para crear un proyecto de flujo de trabajo vacío
 
 1.  Inicie Visual Studio.
 
@@ -32,7 +35,7 @@ Siga estos pasos para crear un proyecto de flujo de trabajo vacío mediante el D
 3.  Seleccione el **.NET Framework 3.0** opción o **.NET Framework 3.5** opción en la lista desplegable lista en la parte superior de la **nuevo proyecto** ventana para tener acceso al diseñador heredado.
 
     > [!NOTE]
-    > La opción predeterminada de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] es **.NET Framework 4**. Esta opción se usa para crear aplicaciones [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] que tienen como destino [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] y no usa el diseñador heredado.
+    > La opción predeterminada en Visual Studio 2010 es **.NET Framework 4**. Esta opción se utiliza para crear aplicaciones de Windows Workflow Foundation (WF) que tienen como destino .NET Framework 4 y no usa el diseñador heredado.
 
 4.  En el **tipos de proyecto** panel, seleccione Visual C# o Visual Basic (en **otros lenguajes**) y, a continuación, seleccione **flujo de trabajo**.
 

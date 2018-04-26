@@ -1,27 +1,30 @@
 ---
-title: 'Cómo: invocar una operación de contrato de Windows Communication Foundation (heredado) | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: invocar una operación de contrato de Windows Communication Foundation (heredado)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: a9058345-708f-4fcf-8739-2a43e5285b7a
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c97b62f7ddfbe46ac5ede4aefba53e50020f3b65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b39d2132b29ec1f8fbfd8339bdb8f81e6f752a0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Cómo: Invocar una operación de contrato de Windows Communication Foundation (Heredado)
-Este tema describe cómo invocar un [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] de contrato de operación mediante el Diseñador de flujo de trabajo heredado de Windows que tenga como destino el [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Después de arrastrar un **SendActivity** actividad en el cuadro de herramientas a la superficie de diseño de flujo de trabajo, debe importar un contrato existente y determinar qué operación se invocará desde que **SendActivity** actividad. Seleccione el contrato y sus operaciones a través de la [elija el cuadro de diálogo de operación (heredado)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+En este tema se describe cómo invocar una operación de contrato de Windows Communication Foundation (WCF) mediante el Diseñador de flujo de trabajo de Windows heredado que tiene como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
 
- Además, si se utiliza un archivo de configuración con el servicio, es necesario especificar un <xref:System.Workflow.Activities.ChannelToken>. <xref:System.Workflow.Activities.ChannelToken> identifica la configuración del extremo que la actividad de envío va a utilizar para conectar con el servicio de flujo de trabajo.
+Después de arrastrar un **SendActivity** actividad en el cuadro de herramientas a la superficie de diseño de flujo de trabajo, importar un contrato existente. Determinar qué operación se invoca desde la que **SendActivity** actividad. Seleccione el contrato y sus operaciones a través de la [elija el cuadro de diálogo de operación (heredado)](../workflow-designer/choose-operation-dialog-box-legacy.md).
 
-### <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Invocar una operación de contrato WCF desde una actividad SendActivity
+Además, si usa un archivo de configuración con su servicio, debe especificar un <xref:System.Workflow.Activities.ChannelToken>. <xref:System.Workflow.Activities.ChannelToken> identifica la configuración del extremo que la actividad de envío va a utilizar para conectar con el servicio de flujo de trabajo.
+
+## <a name="to-invoke-a-wcf-contract-operation-from-a-sendactivity-activity"></a>Invocar una operación de contrato WCF desde una actividad SendActivity
 
 1.  Haga doble clic en el **SendActivity** actividad en el diseñador o haga clic en los puntos suspensivos junto a la **ServiceOperationInfo** propiedad en el **propiedades** panel.
 
@@ -35,13 +38,13 @@ Este tema describe cómo invocar un [!INCLUDE[indigo1](../workflow-designer/incl
 
 5.  En **operaciones disponibles**, seleccione la operación que desea invocar y haga clic en **Aceptar**.
 
-### <a name="to-specify-a-channel-token"></a>Para especificar un token de canal
+## <a name="to-specify-a-channel-token"></a>Para especificar un token de canal
 
 1.  Seleccione la actividad <xref:System.Workflow.Activities.SendActivity> en el diseñador.
 
 2.  En el **propiedades** panel, especifique un nombre para el <xref:System.Workflow.Activities.ChannelToken>. Este nombre únicamente identifica el token de canal.
 
-3.  Expanda el nodo del token de canal y especifique un nombre para el extremo de cliente que va a utilizar en el campo <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A>. La configuración del extremo del mismo nombre en el archivo de configuración se utilizará para configurar el canal.
+3.  Expanda el nodo del token de canal y especifique un nombre para el extremo de cliente que va a utilizar en el campo <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A>. La configuración del extremo del mismo nombre en el archivo de configuración se utiliza para configurar el canal.
 
 4.  Cree la configuración del punto de conexión en el archivo de configuración, si aún no existe. Para obtener más información acerca de cómo configurar el cliente, consulte [información general sobre el cliente de WCF](/dotnet/framework/wcf/wcf-client-overview).
 

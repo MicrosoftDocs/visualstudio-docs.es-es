@@ -1,18 +1,19 @@
 ---
-title: 'Extensión de Excel de muestra: TechnologyManager (Clase) | Microsoft Docs'
+title: 'Extensión de Excel de muestra: TechnologyManager (Clase)'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b3d0a78adb1ac50c7c0b16857c3b5c9b1d9c6f5c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1a10accdfa490f946fc7365ff5e2c6ae0a58c34
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Extensión de Excel de muestra: TechnologyManager (Clase)
 

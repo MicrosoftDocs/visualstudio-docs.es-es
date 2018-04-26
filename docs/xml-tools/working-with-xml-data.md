@@ -1,19 +1,19 @@
 ---
-title: Trabajar con datos XML | Documentos de Microsoft
-ms.custom: ''
+title: Trabajo con datos XML
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e92bd40eba56c486c95be4d85e376f80beffccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-xml-data"></a>Trabajar con datos XML
 
@@ -45,28 +45,16 @@ El Diseñador de esquemas XML está integrado con Visual Studio y el Editor XML 
 
 Visual Studio permite la depuración de hojas de estilos XSLT. Mediante el depurador, puede definir puntos de interrupción en una hoja de estilos XSLT, ir a una hoja de estilos XSLT a partir del código, etc.
 
-## <a name="in-this-section"></a>En esta sección
-
-[Editor XML](../xml-tools/xml-editor.md)  
-Presenta el Editor XML.
-
-[Diseñador de esquemas XML](../xml-tools/xml-schema-designer.md)  
-Describe el Diseñador de esquemas XML y el trabajo con los esquemas del lenguaje de definición de esquemas XML (XSD).
-
 ## <a name="related-sections"></a>Secciones relacionadas
 
-[Depuración de XSLT](../xml-tools/debugging-xslt.md)  
-Describe cómo depurar hojas de estilos con el depurador de Visual Studio.
+[Depuración de XSLT](../xml-tools/debugging-xslt.md) se explica cómo depurar hojas de estilos utilizando el depurador de Visual Studio.
 
-[Referencia de los estándares XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-Proporciona información sobre las tecnologías XML, como XML, DTD (definición de tipo de documento), XSD (lenguaje de definición de esquema XML) y XSLT.
+[Referencia de los estándares XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) proporciona información acerca de las tecnologías XML, como XML, definición de tipo de documento (DTD), lenguaje de definición de esquemas XML (XSD) y XSLT.
 
-[Crear y configurar conjuntos de datos en Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-Ofrece una explicación de las herramientas de tiempo de diseño para la creación de conjuntos de datos.
+[Crear y configurar los conjuntos de datos en Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) ofrece una explicación de las herramientas de tiempo de diseño para crear conjuntos de datos.
 
-[Servicios Web XML en código administrado](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
-Describe cómo crear e implementar servicios Web XML y cómo tener acceso a los mismos.
+[Servicios Web XML en código administrado](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) se explica cómo crear e implementar servicios Web XML y cómo obtener acceso a servicios Web XML.
 
 ## <a name="see-also"></a>Vea también
 
-[Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+- [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

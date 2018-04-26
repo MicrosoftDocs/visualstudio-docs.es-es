@@ -11,14 +11,15 @@ ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d898260d14b92bbc740023e01f521f98927b160
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5b1701b95f86f3645ea7d54a47f8b3c7b36b3fd4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos
 Puede crear controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana hasta WPF designer o el Diseñador de Windows Forms. Cada elemento de la **orígenes de datos** ventana tiene un control predeterminado que se crea al arrastrar al diseñador. Sin embargo, puede elegir crear un control diferente.

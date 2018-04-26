@@ -12,14 +12,15 @@ ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: da00528f7c5e2332f4aa599674f6dcb0929be125
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectarse a los datos en una base de datos de Access (formularios Windows Forms)
 Puede conectarse a una base de datos de Access (un archivo .mdf o un archivo .accdb) mediante Visual Studio. Después de definir la conexión, los datos aparecen en la **orígenes de datos** ventana. Desde esta ventana, puede arrastrar las tablas o vistas a los formularios.

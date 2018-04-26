@@ -1,7 +1,9 @@
 ---
-title: Vistas de flujos de trabajo secuenciales (heredado) | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - vistas de flujos de trabajo secuenciales (heredado)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Vistas de flujos de trabajo secuenciales (Heredado)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] Proporciona un diseñador de flujo de trabajo heredado de Windows que se puede usar al destino la [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] proporciona una manera de crear gráficamente aplicaciones de [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] mediante la conocida interfaz de usuario de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] las aplicaciones de flujo de trabajo están formadas por pasos de proceso de flujo de trabajo denominados actividades. Para crear un flujo de trabajo, cree actividades en la superficie de diseño arrastrando sus diseñadores de actividad correspondientes desde **cuadro de herramientas** a la superficie de diseño.
+Visual Studio 2010 proporciona un diseñador de flujo de trabajo heredado de Windows que puede utilizarse como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
 
- Cuando se crea un flujo de trabajo secuencial, que es un [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), existen tres vistas del flujo de trabajo. Estas vistas son accesibles desde el **flujo de trabajo** menú y en el menú contextual en la superficie de diseño.
+El Diseñador de flujo de trabajo proporciona una manera de crear gráficamente aplicaciones de Windows Workflow Foundation (WF) mediante la conocida interfaz de usuario de Visual Studio. Las aplicaciones de Windows Workflow Foundation (WF) se componen de pasos del proceso de flujo de trabajo denominados actividades. Para crear un flujo de trabajo, cree actividades en la superficie de diseño arrastrando sus diseñadores de actividad correspondientes desde **cuadro de herramientas** a la superficie de diseño.
 
- En la tabla siguiente se enumeran el nombre y la descripción de cada vista.
+Cuando se crea un flujo de trabajo secuencial, que es un [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), existen tres vistas del flujo de trabajo. Estas vistas son accesibles desde el **flujo de trabajo** menú y en el menú contextual en la superficie de diseño.
+
+En la tabla siguiente se enumeran el nombre y la descripción de cada vista.
 
 |Opción de menú o pestaña|Descripción|
 |----------------------|-----------------|

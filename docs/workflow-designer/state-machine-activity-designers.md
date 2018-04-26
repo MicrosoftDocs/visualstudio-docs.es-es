@@ -1,30 +1,24 @@
 ---
-title: Diseñadores de actividad de la máquina de estado | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - diseñadores de actividad de equipo de estado
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bde93d8ac1907accf4f7d14da186aa43ccb169a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="state-machine-activity-designers"></a>Diseñadores de actividad de equipo de estado
+
 Diseñador de flujo de trabajo de Windows incluye un número de diseñadores de actividad que se pueden utilizar cuando cree flujos de trabajo. Esta sección contiene los diseñadores de actividad proporcionados por el sistema que se usan para crear y administrar flujos de trabajo de máquina de estados. Los siguientes temas describen estos diseñadores y ofrecen orientación sobre cómo usarlas.
-
-## <a name="in-this-section"></a>En esta sección
- [StateMachine](../workflow-designer/statemachine-activity-designer.md) contiene una colección de Estados y modelos de flujos de trabajo mediante el paradigma de la máquina de estado conocido.
-
- [Estado](../workflow-designer/state-activity-designer.md) representa un estado en el que puede estar una máquina de Estados.
-
- [FinalState](../workflow-designer/finalstate-activity-designer.md) representa un estado que finaliza una instancia de la máquina de Estados.
-
- [Transición](../workflow-designer/transition-activity-designer.md) representa la transición entre dos Estados.
 
 ## <a name="reference"></a>Referencia
  <xref:System.Activities.Statements.StateMachine>

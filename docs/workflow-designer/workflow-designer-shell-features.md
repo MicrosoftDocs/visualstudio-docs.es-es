@@ -1,7 +1,9 @@
 ---
-title: Características de Shell del Diseñador de flujo de trabajo | Documentos de Microsoft
+title: Características del shell del Diseñador de flujo de trabajo
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>Características del shell del Diseñador de flujo de trabajo
 
@@ -27,7 +29,7 @@ Diseñador de flujo de trabajo de Windows se compone de tres áreas principales 
  El mapa general muestra una versión reducida de la totalidad de la actividad en la raíz de la ruta de navegación actual, incluso todos sus elementos secundarios y los expandidos. Hay una ventanilla, un rectángulo con un borde naranja, que resalta la parte de la actividad que se muestra en esos momentos en el editor. Si se arrastra el rectángulo en torno al mapa general, se desplaza el diseñador de flujos de trabajo y cambia la vista del editor.
 
 > [!NOTE]
-> La interfaz de usuario [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] está virtualizada. Los diseñadores de actividades se presentan solo cuando se requieran. Si una parte del flujo de trabajo no se ha dibujado nunca en la superficie del diseñador, esa parte aparecerá en blanco en el mapa general. Al desplazarse por el mapa general, se dibuja enteramente el flujo de trabajo.
+> La interfaz de usuario del Diseñador de flujo de trabajo está virtualizada. Los diseñadores de actividades se presentan solo cuando se requieran. Si una parte del flujo de trabajo no se ha dibujado nunca en la superficie del diseñador, esa parte aparecerá en blanco en el mapa general. Al desplazarse por el mapa general, se dibuja enteramente el flujo de trabajo.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Copiar o guardar flujos de trabajo como imágenes
  Los flujos de trabajo se pueden copiar en formato de mapa de bits o guardar en formato de mapa de bits o de vector. Copiar o guardar una imagen ofrece una forma de exportar a otro programa una vista de la totalidad de la actividad en la raíz de la ruta de navegación actual, lo cual incluye todos sus elementos secundarios y los expandidos.
@@ -36,4 +38,4 @@ Diseñador de flujo de trabajo de Windows se compone de tres áreas principales 
 
 ## <a name="fonts-and-colors"></a>Fuentes y colores
 
-Las fuentes que se utilizan en [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] dentro de [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] están controladas por la fuente del entorno. Los colores que se muestran en [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] cambian si está utilizando una combinación de colores de alto contraste para el tema del sistema operativo. Debe reiniciar [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] tras realizar un cambio en la fuente o configuración del color antes de que los cambios surtan efecto en [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+Las fuentes usadas en el Diseñador de flujo de trabajo dentro de Visual Studio 2010 se controlan mediante la fuente del entorno. Los colores mostrados en el Diseñador de flujo de trabajo cambian si está utilizando una combinación de colores de contraste alto para el tema del sistema operativo. Debe reiniciar Visual Studio 2010 después de realizar un cambio en la configuración de fuente o el color antes de que los cambios surtan efecto en el Diseñador de flujo de trabajo.

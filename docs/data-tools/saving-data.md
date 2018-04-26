@@ -20,14 +20,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 robots: noindex,nofollow
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7983da748eeb4f008fd17bfc8b086c94c1a6731c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 98ce067f4d56a477d3521f6451202eaeab8d11f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="saving-data"></a>Guardado de datos
 Guardar los datos es que el proceso de guardar los datos modificados en modelo de datos de una aplicación en el almacén de datos original, normalmente una base de datos relacional como SQL Server.

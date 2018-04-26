@@ -1,25 +1,28 @@
 ---
-title: 'Cómo: implementar una operación de contrato de Windows Communication Foundation (heredado) | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: implementar una operación de contrato de Windows Communication Foundation (heredado)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b069d8ca8c1adb72e2869eb59644e8abeff14ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Cómo: Implementar una operación de contrato de Windows Communication Foundation (Heredado)
-Este tema describe cómo implementar un [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] de contrato de operación mediante el Diseñador de flujo de trabajo heredado de Windows que tenga como destino el [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Después de arrastrar un **ReceiveActivity** actividad en el cuadro de herramientas a la superficie de diseño de flujo de trabajo, cree un nuevo [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] contrato o importe un contrato existente e implemente las operaciones. Seleccione o cree el contrato y sus operaciones a través de la [elija el cuadro de diálogo de operación (heredado)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+En este tema se describe cómo implementar una operación de contrato de Windows Communication Foundation (WCF) mediante el Diseñador de flujo de trabajo de Windows heredado que tiene como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
 
-### <a name="to-implement-a-wcf-contract-operation"></a>Para implementar una operación de contrato WCF
+Después de arrastrar un **ReceiveActivity** actividad en el cuadro de herramientas a la superficie de diseño de flujo de trabajo, cree un nuevo [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] contrato o importe un contrato existente e implemente las operaciones. Seleccione o cree el contrato y sus operaciones a través de la [elija el cuadro de diálogo de operación (heredado)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+
+## <a name="to-implement-a-wcf-contract-operation"></a>Para implementar una operación de contrato WCF
 
 1.  Haga doble clic en el **ReceiveActivity** actividad en el diseñador o haga clic en los puntos suspensivos junto a la **ServiceOperationInfo** propiedad en el **propiedades** panel.
 

@@ -1,18 +1,20 @@
 ---
-title: 'Cómo: usar la ruta de navegación | Documentos de Microsoft'
+title: 'Diseñador de flujo de trabajo: Cómo: usar la ruta de navegación'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c88a8c47bfaa2e1ccd135baec95f19a49c4e5a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92f3e35d4182297601741bd603aa3c5a17e54d67
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Utilizar la ruta de navegación
 
@@ -24,22 +26,22 @@ Hay tres maneras principales para cambiar el conjunto de actividades que se mues
 
 3.  Expanda o contraiga las actividades que aparecen.
 
-### <a name="using-breadcrumb-navigation"></a>Utilizar la barra de ruta de navegación
+## <a name="using-breadcrumb-navigation"></a>Utilizar la barra de ruta de navegación
 
-1.  Haga doble clic en una actividad de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] para cambiar la actividad raíz a la actividad donde ha hecho clic. A continuación, la actividad donde ha hecho clic se expande totalmente desde la raíz y se muestran sus antecesores en la barra de ruta de navegación. En ocasiones esto se denomina aumentar o disminuir el detalle de una actividad.
+1.  Haga doble clic en una actividad del Diseñador de flujo de trabajo para cambiar la actividad raíz para la actividad donde ha hecho clic. A continuación, la actividad donde ha hecho clic se expande totalmente desde la raíz y se muestran sus antecesores en la barra de ruta de navegación. En ocasiones esto se denomina aumentar o disminuir el detalle de una actividad.
 
 2.  Para desplazarse hasta un antecesor de la actividad raíz actual, haga clic en la actividad en la barra de ruta de navegación.
 
-### <a name="expanding-or-collapsing-an-activity-in-place"></a>Expandir o contraer una actividad en el sitio
+## <a name="expanding-or-collapsing-an-activity-in-place"></a>Expandir o contraer una actividad en el sitio
 
 1.  Al hacer clic en el botón de contenido adicional de una actividad, se expande o contrae la actividad en el sitio.
 
 2.  Cuando se modifica el estado del estado de expansión al hacer clic en el botón, se guarda el nuevo estado de expansión en XAML.
 
     > [!WARNING]
-    > No todas las actividades se pueden expandir en el sitio. Existen dos casos en los que una actividad no se puede expandir en el sitio: cuando el elemento primario de la actividad no permite la expansión de sus elementos secundarios en el sitio, (por ejemplo, las actividades en un diagrama de flujo no se pueden expandir en el sitio) o cuando el diseñador de actividades no tiene permitido expandirse en el sitio. Aunque ninguno de los diseñadores de actividad que se incluyen en [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] se comportan según esta última posibilidad, algunas actividades personalizadas pueden exhibir este comportamiento.
+    > No todas las actividades se pueden expandir en el sitio. Existen dos casos en los que una actividad no se puede expandir en el sitio: cuando el elemento primario de la actividad no permite la expansión de sus elementos secundarios en el sitio, (por ejemplo, las actividades en un diagrama de flujo no se pueden expandir en el sitio) o cuando el diseñador de actividades no tiene permitido expandirse en el sitio. Aunque ninguno de los diseñadores de actividades incluidos en el Diseñador de flujo de trabajo tiene el comportamiento de este último, algunas actividades personalizadas pueden exhibir este comportamiento.
 
-### <a name="expanding-all-or-collapsing-all-activities"></a>Expandir o contraer todas las actividades
+## <a name="expanding-all-or-collapsing-all-activities"></a>Expandir o contraer todas las actividades
 
 1.  Use la **Expandir todo** y **Contraer todo** botones en la interfaz de usuario para expandir o contraer todas las actividades bajo la raíz de la ruta de navegación actual. Observe que las acciones de expandir y contraer todas las actividades son estados globales. Esto significa que al cambiar la actividad raíz mediante la ruta de navegación, expandir todas o contraer todo el estado persiste hasta que haga clic **restaurar**.
 

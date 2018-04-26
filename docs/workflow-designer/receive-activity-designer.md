@@ -1,7 +1,9 @@
 ---
-title: Diseñador de actividades Receive | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - Diseñador de actividades Receive
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -10,29 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7573c126ce8e11143d3b39a637c44649d15acf95
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="receive-activity-designer"></a>Diseñador de actividades Receive
+
 El **recepción** Diseñador de actividades se usa para crear y configurar un <xref:System.ServiceModel.Activities.Receive> actividad. Una actividad <xref:System.ServiceModel.Activities.Receive> es una actividad que recibe un mensaje que puede ser de tipo integrado como <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> o <xref:System.Xml.Linq.XElement> o bien, un contrato de datos definido por la aplicación, contrato de mensaje o clase XML que se pueden serializar.
 
 ## <a name="the-receive-activity"></a>Actividad Receive
- La actividad <xref:System.ServiceModel.Activities.Receive> puede recibir un elemento único o varios elementos, en función del tipo de contenido de Receive que se utilice. Una actividad <xref:System.ServiceModel.Activities.SendReply> se puede enlazar a una actividad <xref:System.ServiceModel.Activities.Receive> que reciba un mensaje como parte de un patrón de intercambio de mensajes solicitud/respuesta en el servicio.
+
+La actividad <xref:System.ServiceModel.Activities.Receive> puede recibir un elemento único o varios elementos, en función del tipo de contenido de Receive que se utilice. Una actividad <xref:System.ServiceModel.Activities.SendReply> se puede enlazar a una actividad <xref:System.ServiceModel.Activities.Receive> que reciba un mensaje como parte de un patrón de intercambio de mensajes solicitud/respuesta en el servicio.
 
 ### <a name="using-the-receive-activity-designer"></a>Utilizar el diseñador de actividades Receive
- El **recepción** Diseñador de actividad puede encontrarse en el **mensajería** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas**ficha la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (o bien, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+ El **recepción** Diseñador de actividad puede encontrarse en el **mensajería** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas**ficha en el Diseñador de flujo de trabajo (como alternativa, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)
 
- El **recepción** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] expuesta, donde se coloquen normalmente las actividades. Esto crea una actividad <xref:System.ServiceModel.Activities.Receive> con una propiedad <xref:System.Activities.Activity.DisplayName%2A> predeterminada de Receive. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **recepción** Diseñador de actividad o en la **DisplayName** cuadro de la cuadrícula de propiedades.
+ El **recepción** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades. Esto crea una actividad <xref:System.ServiceModel.Activities.Receive> con una propiedad <xref:System.Activities.Activity.DisplayName%2A> predeterminada de Receive. El <xref:System.Activities.Activity.DisplayName%2A> se pueden editar en el encabezado de la **recepción** Diseñador de actividad o en la **DisplayName** cuadro de la cuadrícula de propiedades.
 
  Para crear un <xref:System.ServiceModel.Activities.SendReply> actividad y enlazarla a seleccionado <xref:System.ServiceModel.Activities.Receive> actividad, haga clic en el **recepción** haga clic en Diseñador de actividad el **crear SendReply** elemento en el menú contextual y la **SendReplyToReceive** diseñador aparece debajo de la **recepción** diseñador. La actividad <xref:System.ServiceModel.Activities.SendReply> es una actividad que envía el mensaje de respuesta como parte de un patrón de intercambio de mensajes solicitud/respuesta en el servicio. Se puede configurar con el **SendReplyToReceive** diseñador.
 
  Como alternativa, el **ReceiveAndSendReply** Diseñador de plantilla en el **mensajería** categoría de la **cuadro de herramientas** puede usarse para crear un par de preconfigurada<xref:System.ServiceModel.Activities.Receive>y <xref:System.ServiceModel.Activities.SendReply> actividad. Para obtener más información sobre el uso de la **ReceiveAndSendReply** y **SendReplyToReceive** plantilla, consulte el [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md) tema.
 
 ### <a name="the-receive-activity-properties"></a>Propiedades de la actividad Receive
- En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.Receive> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en la cuadrícula de propiedades o en la superficie de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. La única propiedad obligatoria es <xref:System.ServiceModel.Activities.Receive.OperationName%2A>.
+ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.Receive> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades o en la superficie del Diseñador de flujo de trabajo. La única propiedad obligatoria es <xref:System.ServiceModel.Activities.Receive.OperationName%2A>.
 
 |Nombre de la propiedad|Obligatorio|Uso|
 |-------------------|--------------|-----------|

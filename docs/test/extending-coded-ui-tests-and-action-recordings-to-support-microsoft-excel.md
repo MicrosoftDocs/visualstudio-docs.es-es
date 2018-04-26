@@ -1,6 +1,7 @@
 ---
-title: Extensión de las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel | Microsoft Docs
+title: Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 47942e945d366bea657142067173c89935820b0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a98481123e26a72a1553d01c29d8e7ee023faaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extender las pruebas automatizadas de IU y las grabaciones de acciones para la compatibilidad con Microsoft Excel
 

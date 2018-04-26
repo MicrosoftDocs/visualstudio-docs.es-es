@@ -1,7 +1,9 @@
 ---
-title: Conjunto de reglas de cuadro de diálogo de Editor (heredado) | Documentos de Microsoft
+title: 'Diseñador de flujo de trabajo: conjunto de reglas de cuadro de diálogo de Editor (heredado)'
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Editor de conjunto de reglas (Cuadro de diálogo) (Heredado)
-Este tema se describe cómo utilizar el **Editor de conjunto de reglas** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- El **Editor de conjunto de reglas** cuadro de diálogo se usa para crear y modificar [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) regla conjuntos, que se serializan en un archivo. Rules.
+Este tema se describe cómo utilizar el **Editor de conjunto de reglas** cuadro de diálogo en el Diseñador de flujo de trabajo de Windows heredado. Use el Diseñador de flujo de trabajo heredado cuando deba tener como destino la versión 3.5 de .NET Framework o el conocido como WinFX.
+
+El **Editor de conjunto de reglas** cuadro de diálogo se usa para crear y modificar [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) regla conjuntos, que se serializan en un archivo. Rules.
 
 > [!NOTE]
 > Si desea abrir el archivo .rules con el **Editor XML con codificación**, primero debe cerrar la ventana del diseñador asociada para el flujo de trabajo o actividad.
 
- Para obtener información sobre cómo obtener acceso a la **Editor de conjunto de reglas** cuadro de diálogo, vea [Cómo: crear un conjunto de reglas de PolicyActivity (heredado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Para obtener información sobre cómo obtener acceso a la **Editor de conjunto de reglas** cuadro de diálogo, vea [Cómo: crear un conjunto de reglas de PolicyActivity (heredado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
-> El editor de reglas del [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] heredado que se usa para tener como destino [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] o [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] no es compatible con múltiples versiones.
+> El editor de reglas del Diseñador de flujo de trabajo heredado que se usa como destino la versión 3.5 de .NET Framework o el conocido como WinFX no compatible con múltiples versiones.
 
- La tabla siguiente describen los elementos de interfaz de usuario de la **Editor de conjunto de reglas** cuadro de diálogo.
+La tabla siguiente describen los elementos de interfaz de usuario de la **Editor de conjunto de reglas** cuadro de diálogo.
 
 |Elemento de la interfaz de usuario|Descripción|
 |----------------|-----------------|

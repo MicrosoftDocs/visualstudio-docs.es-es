@@ -1,7 +1,9 @@
 ---
-title: Diseñador de plantillas SendAndReceiveReply | Documentos de Microsoft
+title: Diseñador de flujo de trabajo - Diseñador de plantillas SendAndReceiveReply
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
 - System.ServiceModel.Activities.ReceiveReply.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4edb5081c58772fc67bb24b4832e7068f1a0344d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c6a4749ed138b22ac3d600befad01ef1776478e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sendandreceivereply-template-designer"></a>Diseñador de plantillas SendAndReceiveReply
 
 El **SendAndReceiveReply** plantilla se usa para crear un par de configuradas previamente <xref:System.ServiceModel.Activities.Send> y <xref:System.ServiceModel.Activities.ReceiveReply> actividades dentro de un <xref:System.Activities.Statements.Sequence> actividad que se correlacionan como parte de un intercambio de mensajes de solicitud/respuesta modelo en el cliente.
 
 ## <a name="the-sendandreceivereply-template"></a>Plantilla SendAndReceiveReply
- Agregar **SendAndReceiveReply** plantilla hace tres cosas además de crear el <xref:System.ServiceModel.Activities.Send> y <xref:System.ServiceModel.Activities.ReceiveReply> actividades dentro de un <xref:System.Activities.Statements.Sequence> actividad:
+
+Agregar **SendAndReceiveReply** plantilla hace tres cosas además de crear el <xref:System.ServiceModel.Activities.Send> y <xref:System.ServiceModel.Activities.ReceiveReply> actividades dentro de un <xref:System.Activities.Statements.Sequence> actividad:
 
 1.  Configura las propiedades <xref:System.ServiceModel.Activities.Send.OperationName%2A> y <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> de la actividad <xref:System.ServiceModel.Activities.Send>.
 
@@ -31,16 +34,16 @@ El **SendAndReceiveReply** plantilla se usa para crear un par de configuradas pr
 3.  Crea una clase <xref:System.ServiceModel.Activities.CorrelationHandle> como una variable de la actividad primaria.
 
 ### <a name="using-the-sendandreceivereply-template-designer"></a>Utilizar el diseñador de plantillas SendAndReceiveReply
- El **SendAndReceiveReply** Diseñador de actividad puede encontrarse en el **mensajería** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en la **cuadro de herramientas**  ficha [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (o bien, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+ El **SendAndReceiveReply** Diseñador de actividad puede encontrarse en el **mensajería** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en la **cuadro de herramientas**  ficha en el Diseñador de flujo de trabajo (como alternativa, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)
 
- El **SendAndReceiveReply** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocarlo en la [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] expuesta, donde se coloquen normalmente las actividades. Esto crea una <xref:System.ServiceModel.Activities.Send> actividad que se pueden configurar con el **enviar** Diseñador de actividad y un correlacionados <xref:System.ServiceModel.Activities.ReceiveReply> que pueden configurarse con la **ReceiveReplyForSend** diseñador.
+ El **SendAndReceiveReply** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades. Esto crea una <xref:System.ServiceModel.Activities.Send> actividad que se pueden configurar con el **enviar** Diseñador de actividad y un correlacionados <xref:System.ServiceModel.Activities.ReceiveReply> que pueden configurarse con la **ReceiveReplyForSend** diseñador.
 
  Para obtener más información sobre el uso de la **enviar** diseñador para configurar el <xref:System.ServiceModel.Activities.Send> actividad, consulte la [enviar](../workflow-designer/send-activity-designer.md) tema.
 
  Para obtener más información sobre el uso de la **ReceiveReplyForSend** diseñador para configurar la <xref:System.ServiceModel.Activities.ReceiveReply> actividad, consulte la sección siguiente.
 
 ### <a name="properties-of-receivereply"></a>Propiedades ReceiveReply
- En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.ReceiveReply> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en una cuadrícula de propiedades y algunas de ellas en la superficie del diseñador de [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.ReceiveReply> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades y algunas se pueden editar en la superficie de flujo de trabajo Designerdesigner.
 
 |Nombre de la propiedad|Obligatorio|Uso|
 |-------------------|--------------|-----------|

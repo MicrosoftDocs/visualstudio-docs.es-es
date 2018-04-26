@@ -1,6 +1,7 @@
 ---
-title: Novedades de Live Unit Testing | Microsoft Docs
+title: Novedades de Live Unit Testing
 ms.date: 10-11-2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: cda0426397afd1ce36a122c06eb010f30a671879
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e6e0a812839dac9ad8962e12a610a82cb56a1fc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Novedades de Live Unit Testing
 
