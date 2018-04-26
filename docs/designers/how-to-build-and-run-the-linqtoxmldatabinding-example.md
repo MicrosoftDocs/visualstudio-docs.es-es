@@ -1,6 +1,7 @@
 ---
 title: 'Cómo: Compilar y ejecutar el ejemplo LinqToXmlDataBinding'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
@@ -8,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de5515d96d5aa0dff30082207e7f20fd7981fc89
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e78665f19f4cbc62197cc8474feb1c550cc4e491
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Cómo: Compilar y ejecutar el ejemplo LinqToXmlDataBinding
 

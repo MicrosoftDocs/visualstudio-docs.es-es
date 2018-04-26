@@ -1,10 +1,9 @@
 ---
-title: Ventana Propiedades | Microsoft Docs
-ms.custom: ''
+title: Ventana Propiedades
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - properties [Visual Studio], Properties Window
 - handler functions, Properties window
@@ -23,66 +22,83 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: accebfc02e5bba6be361cb3ab2d252f20f59314f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2848a8197dfe62836918de51ae6e7d01677dac6d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="properties-window"></a>Ventana Propiedades
-Use esta ventana para ver y cambiar las propiedades de tiempo de diseño y los eventos de los objetos seleccionados que se encuentran en editores y diseñadores. También puede usar la ventana **Propiedades** para editar y ver archivos, proyectos y propiedades de la solución. Puede ver la ventana **Propiedades** en el menú **Ver**. También puede abrirla si presiona F4 o escribe **Propiedades** en la ventana **Inicio rápido**.  
-  
- En la ventana **Propiedades** se muestran distintos tipos de campos de edición, según las necesidades de una propiedad determinada. Estos campos de edición incluyen cuadros de edición, listas desplegables y vínculos a cuadros de diálogo del editor personalizado. Las propiedades atenuadas son de solo lectura.  
-  
-## <a name="uielement-list"></a>Lista de UIElement  
- Nombre de objeto  
- Muestra el objeto o los objetos seleccionados actualmente. Solo se pueden ver los objetos del editor o diseñador activo. Si selecciona varios objetos, solo aparecen propiedades comunes a todos los objetos seleccionados.  
-  
- Por categorías  
- Muestra todas las propiedades y valores de propiedad del objeto seleccionado, por categoría. Puede contraer una categoría para reducir el número de propiedades visibles. Al expandir o contraer una categoría, aparece un signo más (+) o menos (-) a la izquierda del nombre de la categoría. Las categorías se muestran ordenadas alfabéticamente.  
-  
- Alfabético  
- Ordena alfabéticamente todas las propiedades de tiempo de diseño y los eventos de los objetos seleccionados. Para editar una propiedad no atenuada, haga clic en la celda a su derecha y escriba los cambios.  
-  
- Páginas de propiedades  
- Muestra el cuadro de diálogo **Páginas de propiedades** o el **Diseñador de proyectos** del elemento seleccionado. En Páginas de propiedades, se muestra un subconjunto, el mismo o un superconjunto de las propiedades disponibles en la ventana **Propiedades**. Use este botón para ver y editar propiedades relacionadas con la configuración activa del proyecto.  
-  
- Propiedades  
- Muestra las propiedades de un objeto. Muchos objetos también tienen eventos que se pueden ver mediante la ventana **Propiedades**.  
-  
- Ordenar por origen de propiedad  
- Agrupa las propiedades por origen, como herencia, estilos aplicados y enlaces. Solo está disponible al editar archivos XAML en el diseñador.  
-  
- Eventos  
- Muestra los eventos de un objeto.  
-  
+Use esta ventana para ver y cambiar las propiedades de tiempo de diseño y los eventos de los objetos seleccionados que se encuentran en editores y diseñadores. También puede usar la ventana **Propiedades** para editar y ver archivos, proyectos y propiedades de la solución. Puede ver la ventana **Propiedades** en el menú **Ver**. También puede abrirla si presiona F4 o escribe **Propiedades** en la ventana **Inicio rápido**.
+
+ En la ventana **Propiedades** se muestran distintos tipos de campos de edición, según las necesidades de una propiedad determinada. Estos campos de edición incluyen cuadros de edición, listas desplegables y vínculos a cuadros de diálogo del editor personalizado. Las propiedades atenuadas son de solo lectura.
+
+## <a name="uielement-list"></a>Lista de UIElement
+ Nombre de objeto
+
+ Muestra el objeto o los objetos seleccionados actualmente. Solo se pueden ver los objetos del editor o diseñador activo. Si selecciona varios objetos, solo aparecen propiedades comunes a todos los objetos seleccionados.
+
+ Por categorías
+
+ Muestra todas las propiedades y valores de propiedad del objeto seleccionado, por categoría. Puede contraer una categoría para reducir el número de propiedades visibles. Al expandir o contraer una categoría, aparece un signo más (+) o menos (-) a la izquierda del nombre de la categoría. Las categorías se muestran ordenadas alfabéticamente.
+
+ Alfabético
+
+ Ordena alfabéticamente todas las propiedades de tiempo de diseño y los eventos de los objetos seleccionados. Para editar una propiedad no atenuada, haga clic en la celda a su derecha y escriba los cambios.
+
+ Páginas de propiedades
+
+ Muestra el cuadro de diálogo **Páginas de propiedades** o el **Diseñador de proyectos** del elemento seleccionado. En Páginas de propiedades, se muestra un subconjunto, el mismo o un superconjunto de las propiedades disponibles en la ventana **Propiedades**. Use este botón para ver y editar propiedades relacionadas con la configuración activa del proyecto.
+
+ Propiedades
+
+ Muestra las propiedades de un objeto. Muchos objetos también tienen eventos que se pueden ver mediante la ventana **Propiedades**.
+
+ Ordenar por origen de propiedad
+
+ Agrupa las propiedades por origen, como herencia, estilos aplicados y enlaces. Solo está disponible al editar archivos XAML en el diseñador.
+
+ Eventos
+
+ Muestra los eventos de un objeto.
+
 > [!NOTE]
->  Este control de la barra de herramientas de la ventana **Propiedades** solo está disponible cuando está activo un diseñador de formularios o controles en el contexto de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Al editar archivos XAML, los eventos aparecen en una pestaña independiente de la ventana Propiedades.  
-  
- Mensajes  
- Muestra todos los mensajes de Windows. Le permite agregar o eliminar funciones del controlador especificado para los mensajes proporcionados para la clase seleccionada.  
-  
+> Este control de la barra de herramientas de la ventana **Propiedades** solo está disponible cuando está activo un diseñador de formularios o controles en el contexto de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Al editar archivos XAML, los eventos aparecen en una pestaña independiente de la ventana Propiedades.
+
+
+ Mensajes
+
+ Muestra todos los mensajes de Windows. Le permite agregar o eliminar funciones del controlador especificado para los mensajes proporcionados para la clase seleccionada.
+
 > [!NOTE]
->  Este control de la barra de herramientas de la ventana **Propiedades** solo está disponible cuando **Vista de clases** es la ventana activa en el contexto de un proyecto de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
-  
- Overrides  
- Enumera todas las funciones virtuales de la clase seleccionada y permite agregar o eliminar funciones de invalidación.  
-  
+> Este control de la barra de herramientas de la ventana **Propiedades** solo está disponible cuando **Vista de clases** es la ventana activa en el contexto de un proyecto de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+
+
+ Overrides
+
+ Enumera todas las funciones virtuales de la clase seleccionada y permite agregar o eliminar funciones de invalidación.
+
 > [!NOTE]
->  Este control de la barra de herramientas de la ventana **Propiedades** solo está disponible cuando **Vista de clases** es la ventana activa en el contexto de un proyecto de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].  
-  
- Panel de descripción  
- Muestra el tipo de propiedad y una breve descripción de la propiedad. Puede activar y desactivar la descripción de la propiedad mediante el comando Descripción del menú contextual.  
-  
+> Este control de la barra de herramientas de la ventana **Propiedades** solo está disponible cuando **Vista de clases** es la ventana activa en el contexto de un proyecto de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+
+
+ Panel de descripción
+
+ Muestra el tipo de propiedad y una breve descripción de la propiedad. Puede activar y desactivar la descripción de la propiedad mediante el comando Descripción del menú contextual.
+
 > [!NOTE]
->  Este control de la barra de herramientas de la ventana **Propiedades** no está disponible al editar archivos XAML en el diseñador.  
-  
- Vista de miniaturas  
- Muestra una representación visual del elemento seleccionado actualmente al editar archivos XAML en el diseñador.  
-  
- Buscar  
- Proporciona una función de búsqueda de propiedades y eventos al editar archivos XAML en el diseñador. El cuadro de búsqueda responde a búsquedas de palabras parciales y actualiza los resultados de la búsqueda a medida que escribe.  
-  
-## <a name="see-also"></a>Vea también  
- [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)   
- [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)
+> Este control de la barra de herramientas de la ventana **Propiedades** no está disponible al editar archivos XAML en el diseñador.
+
+
+ Vista de miniaturas
+
+ Muestra una representación visual del elemento seleccionado actualmente al editar archivos XAML en el diseñador.
+
+ Buscar
+
+ Proporciona una función de búsqueda de propiedades y eventos al editar archivos XAML en el diseñador. El cuadro de búsqueda responde a búsquedas de palabras parciales y actualiza los resultados de la búsqueda a medida que escribe.
+
+## <a name="see-also"></a>Vea también
+
+- [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)
+- [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)

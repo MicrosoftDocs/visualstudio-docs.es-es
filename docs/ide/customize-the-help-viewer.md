@@ -1,9 +1,8 @@
 ---
-title: Personalizar el Visor de Ayuda | Microsoft Docs
-ms.custom: ''
+title: Personalizar el Visor de Ayuda
 ms.date: 11/02/2017
-ms.technology:
-- vs-help-viewer
+ms.prod: visual-studio-dev15
+ms.technology: vs-help-viewer
 ms.topic: conceptual
 f1_keywords:
 - hv_options
@@ -16,36 +15,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44dfbc4f4a1fe93635e827527684abe2048b36aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar el Visor de Ayuda
 Puede personalizar el diseño de las ventanas del Visor de Ayuda, así como otras opciones como el tamaño de fuente, el número máximo de resultados y si se debe incluir el contenido en inglés.
 
 ## <a name="customizing-window-layout"></a>Personalizar el diseño de ventana
-Puede personalizar el diseño de la ventana del Visor de Ayuda. Para restaurar la ventana del Visor de Ayuda a su diseño predeterminado, abra el cuadro de diálogo **Opciones del visor** y, a continuación, elija el botón **Restablecer**.  
+Puede personalizar el diseño de la ventana del Visor de Ayuda. Para restaurar la ventana del Visor de Ayuda a su diseño predeterminado, abra el cuadro de diálogo **Opciones del visor** y, a continuación, elija el botón **Restablecer**.
 
 ### <a name="docking-tabs"></a>Pestañas de acoplamiento
 El Visor de Ayuda es compatible con la funcionalidad de acoplamiento estándar. De manera predeterminada, todas las pestañas del Visor de Ayuda están acopladas, pero puede moverlas, cambiar su tamaño, acoplarlas en otras ubicaciones y hacerlas “flotar” para que aparezcan como ventanas secundarias independientes.
-  
+
 ### <a name="opening-a-topic-in-a-new-tab"></a>Abrir un tema en una pestaña nueva
 Elija el tema de cualquier pestaña de navegación y, luego, presione **Ctrl+Entrar**.
-  
+
 ### <a name="minimize-a-navigation-tab"></a>Minimizar una pestaña de navegación
 Para crear más espacio para ver temas, seleccione el icono de anclaje de las pestañas de navegación. Cuando estas pestañas están minimizadas, solo se muestran sus etiquetas en el borde más cercano de la ventana. Para restaurar las pestañas, elija la etiqueta de cualquier pestaña y, luego, elija de nuevo el icono de anclaje.
-  
-## <a name="changing-settings-in-viewer-options"></a>Cambiar la configuración de opciones del Visor  
-El cuadro de diálogo **Opciones del Visor** se abre seleccionando el botón **Opciones del Visor** en la barra de herramientas.  
-  
-|Para realizar esta tarea:|Siga este paso:|  
-|---------------------------|---------------------|  
-|Cambiar el tamaño de la fuente en la que aparece el texto|Elija un tamaño en la lista **Tamaño del texto**.|  
-|Cambiar el número máximo de resultados de búsqueda que aparecen en la pestaña **Búsqueda**|Elija un valor en la lista **Número máximo de resultados de la búsqueda**.|  
-|Cambiar el número máximo de entradas del historial que aparecen en la ventana **Favoritos**|Elija un valor en la lista **Número máximo de entradas del historial guardadas**.|  
+
+## <a name="changing-settings-in-viewer-options"></a>Cambiar la configuración de opciones del Visor
+El cuadro de diálogo **Opciones del Visor** se abre seleccionando el botón **Opciones del Visor** en la barra de herramientas.
+
+|Para realizar esta tarea:|Siga este paso:|
+|---------------------------|---------------------|
+|Cambiar el tamaño de la fuente en la que aparece el texto|Elija un tamaño en la lista **Tamaño del texto**.|
+|Cambiar el número máximo de resultados de búsqueda que aparecen en la pestaña **Búsqueda**|Elija un valor en la lista **Número máximo de resultados de la búsqueda**.|
+|Cambiar el número máximo de entradas del historial que aparecen en la ventana **Favoritos**|Elija un valor en la lista **Número máximo de entradas del historial guardadas**.|
 |Incluya o excluya el contenido en inglés al ver el contenido de una versión de un producto que no sea en inglés.|Active o desactive la casilla **Incluir contenido en inglés en todas las pestañas de navegación y solicitudes de F1**. **Precaución**: Esta característica también controla si puede descargar contenido en inglés en la pestaña **Administrar contenido**.|
 
 ## <a name="see-also"></a>Vea también
-[Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)
+
+- [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)

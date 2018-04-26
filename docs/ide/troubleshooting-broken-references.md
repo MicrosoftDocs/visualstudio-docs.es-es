@@ -1,10 +1,9 @@
 ---
-title: Solucionar problemas de referencias rotas | Microsoft Docs
-ms.custom: ''
+title: Solucionar problemas de referencias rotas
 ms.date: 03/21/2017
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 helpviewer_keywords:
 - C# projects, references
 - Visual Basic projects, references
@@ -16,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256e7018b29402a2d67693de3c8e2cfe18ea2f71
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d9669596eb49330235eca2c35dffe0f2cb1afb9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Solucionar problemas de referencias rotas
 
@@ -92,4 +91,4 @@ Si un usuario ha agregado una referencia a un componente COM y un segundo usuari
 
 ## <a name="see-also"></a>Vea también
 
-[Página Referencias, Diseñador de proyectos (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)
+- [Página Referencias, Diseñador de proyectos (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

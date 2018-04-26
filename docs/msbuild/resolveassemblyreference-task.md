@@ -1,12 +1,9 @@
 ---
 title: ResolveAssemblyReference (Tarea) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
 - MSBuild.ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-caps.latest.revision: 
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91585ea5e72bc2ceebf07d02c2398454f775b5b7
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4870e84d81774e15aa62367b568a3e7a3eadf863
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference (Tarea)
 Determina todos los ensamblados que dependen de los ensamblados especificados. Esto incluye las dependencias segundo y de `n`º orden.  
@@ -66,7 +62,7 @@ Determina todos los ensamblados que dependen de los ensamblados especificados. E
 |`LatestTargetFrameworkDirectories`|Parámetro `String[]` opcional.<br /><br /> Especifica una lista de directorios que contienen las listas redist para el marco de trabajo más reciente que se puede usar como destino en la máquina. Si no se establece, se usa la última versión del marco de trabajo instalado en la máquina para un identificador de marco de trabajo de destino.|  
 |`ProfileName`|Parámetro `String` opcional.<br /><br /> -  Especifica el nombre del perfil del marco que se va a tener como destino. Por ejemplo, Client, Web o Network.|  
 |`RelatedFiles`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los archivos relacionados, como los archivos XML y .pdb que tienen el mismo nombre base como referencia.<br /><br /> Los archivos mostrados en este parámetro pueden contener opcionalmente los siguientes metadatos de elemento:<br /><br /> -   `Primary`: valor `Boolean` . Si es `true`, el elemento de archivo se pasó a la matriz con el parámetro `Assemblies` opcional. El valor predeterminado es `false`.<br />-   `CopyLocal`: valor `Boolean` . Indica si la referencia proporcionada se debe copiar en el directorio de salida.|  
-|`ResolvedDependencyFiles`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las rutas de acceso de enésimo *n*orden a las dependencias. Este parámetro no incluye las referencias principales de primer orden, que se encuentran en el parámetro `ResolvedFiles` .<br /><br /> Los elementos de este parámetro opcionalmente contienen los siguientes metadatos de elementos:<br /><br /> -   `CopyLocal`: valor `Boolean` . Indica si la referencia proporcionada se debe copiar en el directorio de salida.<br />-   `FusionName`: valor `String` . Especifica el nombre de esta dependencia.<br />-   `ResolvedFrom`: valor `String` . Especifica la ruta de acceso de búsqueda literal desde la que se ha resuelto este archivo.|  
+|`ResolvedDependencyFiles`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene las rutas de acceso de enésimo ** orden a las dependencias. Este parámetro no incluye las referencias principales de primer orden, que se encuentran en el parámetro `ResolvedFiles` .<br /><br /> Los elementos de este parámetro opcionalmente contienen los siguientes metadatos de elementos:<br /><br /> -   `CopyLocal`: valor `Boolean` . Indica si la referencia proporcionada se debe copiar en el directorio de salida.<br />-   `FusionName`: valor `String` . Especifica el nombre de esta dependencia.<br />-   `ResolvedFrom`: valor `String` . Especifica la ruta de acceso de búsqueda literal desde la que se ha resuelto este archivo.|  
 |`ResolvedFiles`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene una lista de todas las referencias principales que se resuelven en rutas de acceso completas.<br /><br /> Los elementos de este parámetro opcionalmente contienen los siguientes metadatos de elementos:<br /><br /> -   `CopyLocal`: valor `Boolean` . Indica si la referencia proporcionada se debe copiar en el directorio de salida.<br />-   `FusionName`: valor `String` . Especifica el nombre de esta dependencia.<br />-   `ResolvedFrom`: valor `String` . Especifica la ruta de acceso de búsqueda literal desde la que se ha resuelto este archivo.|  
 |`SatelliteFiles`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los archivos satélite encontrados. Serán CopyLocal=true si la referencia o dependencia que originó este elemento es CopyLocal=true.<br /><br /> Los elementos de este parámetro opcionalmente contienen los siguientes metadatos de elementos:<br /><br /> -   `CopyLocal`: valor `Boolean` . Indica si la referencia proporcionada se debe copiar en el directorio de salida. Este valor es `true` si la referencia o dependencia que originó este elemento tiene un valor `CopyLocal` de `true`.<br />-   `DestinationSubDirectory`: valor `String` . Especifica el directorio de destino relativo en el que se copiará este elemento.|  
 |`ScatterFiles`|Parámetro de salida de solo lectura <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contiene los archivos de dispersión asociados a uno de los ensamblados dados.<br /><br /> Los elementos de este parámetro opcionalmente contienen los siguientes metadatos de elementos:<br /><br /> -   `CopyLocal`: valor `Boolean` . Indica si la referencia proporcionada se debe copiar en el directorio de salida.|  

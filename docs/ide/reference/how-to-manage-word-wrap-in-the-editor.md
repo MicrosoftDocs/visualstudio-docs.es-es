@@ -1,9 +1,8 @@
 ---
-title: 'Cómo: Administrar el ajuste de línea en el editor | Microsoft Docs'
-ms.custom: ''
+title: 'Cómo: Administrar el ajuste de línea en el editor'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -15,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edd81a4c4168d7733b21ec84123e984e42b71063
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08fe7ac16eff2c7ebf398b0483034a324eb02d91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Cómo: Administrar el ajuste de línea en el editor
 
@@ -31,26 +30,26 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
 ## <a name="procedure"></a>Procedimiento
 
 ### <a name="to-set-word-wrap-preferences"></a>Para establecer las preferencias de ajuste automático de línea
-  
-1.  En el menú **Herramientas**, seleccione **Opciones**.  
-  
-2.  En la carpeta **Editor de texto**, pulse las opciones **General** en la subcarpeta **Todos los lenguajes** para establecer esta opción globalmente.  
-  
-     o  
-  
-     Pulse las opciones **General** en la subcarpeta del lenguaje en el que está programando.  
-  
-3.  En **Configuración**, seleccione o desactive la opción **Ajuste automático de línea**.  
-  
-     Cuando la opción **Ajuste automático de línea** está seleccionada, la opción **Mostrar glifos visuales para ajuste de línea** está habilitada.  
-  
-4.  Seleccione la opción **Mostrar glifos visuales para ajuste de línea** si prefiere mostrar un indicador de flecha de retorno donde una línea larga se ajusta en una segunda línea. Desactive esta opción si prefiere no mostrar indicadores de flecha.  
-  
+
+1.  En el menú **Herramientas**, seleccione **Opciones**.
+
+2.  En la carpeta **Editor de texto**, pulse las opciones **General** en la subcarpeta **Todos los lenguajes** para establecer esta opción globalmente.
+
+     o
+
+     Pulse las opciones **General** en la subcarpeta del lenguaje en el que está programando.
+
+3.  En **Configuración**, seleccione o desactive la opción **Ajuste automático de línea**.
+
+     Cuando la opción **Ajuste automático de línea** está seleccionada, la opción **Mostrar glifos visuales para ajuste de línea** está habilitada.
+
+4.  Seleccione la opción **Mostrar glifos visuales para ajuste de línea** si prefiere mostrar un indicador de flecha de retorno donde una línea larga se ajusta en una segunda línea. Desactive esta opción si prefiere no mostrar indicadores de flecha.
+
     > [!NOTE]
-    >  Estas flechas de aviso no se agregan a su código: solo para fines de visualización.  
-  
+    >  Estas flechas de aviso no se agregan a su código: solo para fines de visualización.
+
 ## <a name="see-also"></a>Vea también
 
-[Personalizar el editor](../../ide/customizing-the-editor.md)  
-[Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)  
-[Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personalizar el editor](../../ide/customizing-the-editor.md)
+- [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)
+- [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)

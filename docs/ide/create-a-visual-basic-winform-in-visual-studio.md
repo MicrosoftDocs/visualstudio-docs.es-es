@@ -1,10 +1,10 @@
 ---
-title: Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic | Microsoft Docs
+title: Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 description: Aprenda a crear una aplicación de Windows Forms en Visual Studio con Visual Basic, paso a paso.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.devlang: vb
 author: TerryGLee
@@ -14,51 +14,54 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: d51c92307a7ac266da042d33a7669a3ac629b21e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 603fe9c8aaa328e0ae1b42f385a0f8f2b5867955
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
+
 En esta breve introducción al entorno de desarrollo integrado de Visual Studio, creará una sencilla aplicación de Visual Basic que tiene una interfaz de usuario (IU) basada en Windows.
 
 Si todavía no tiene instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita.
 
 ## <a name="create-a-project"></a>Crear un proyecto
-En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tipo de proyecto se incluyen todos los archivos de plantilla que vamos a necesitar, sin necesidad de agregar nada más.  
 
-1. Abra Visual Studio 2017.  
+En primer lugar, crearemos un proyecto de aplicación de Visual Basic. En el tipo de proyecto se incluyen todos los archivos de plantilla que vamos a necesitar, sin necesidad de agregar nada más.
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**  
+1. Abra Visual Studio 2017.
 
-3. En el cuadro de diálogo **Nuevo proyecto** en el panel izquierdo, expanda **Visual Basic** y seleccione **Escritorio clásico de Windows**. En el panel central, elija **Aplicación de Windows Forms (.NET Framework)**. Luego, asigne al archivo el nombre `HelloWorld`.  
+2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**
 
-     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)**, cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Obtener herramientas y características...** Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.  
+3. En el cuadro de diálogo **Nuevo proyecto** en el panel izquierdo, expanda **Visual Basic** y seleccione **Escritorio clásico de Windows**. En el panel central, elija **Aplicación de Windows Forms (.NET Framework)**. Luego, asigne al archivo el nombre `HelloWorld`.
 
-     ![Carga de trabajo de .NET Core en el instalador de Visual Studio](../ide/media/install-dot-net-desktop-env.png)  
+     Si no ve la plantilla de proyecto **Aplicación de Windows Forms (.NET Framework)**, cancele haciendo clic fuera del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, elija **Herramientas** > **Obtener herramientas y características...** Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y, luego, seleccione **Modificar**.
+
+     ![Carga de trabajo de .NET Core en el instalador de Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 
 ## <a name="create-the-application"></a>Crear la aplicación
-Tras seleccionar la plantilla de proyecto de Visual Basic y asignar un nombre al archivo, Visual Studio abre un formulario automáticamente. Un formulario es una interfaz de usuario de Windows. Vamos a crear una aplicación "Hello World"; para ello, agregaremos controles al formulario y, después, ejecutaremos la aplicación.   
 
-### <a name="add-a-button-to-the-form"></a>Agregar un botón al formulario  
+Tras seleccionar la plantilla de proyecto de Visual Basic y asignar un nombre al archivo, Visual Studio abre un formulario automáticamente. Un formulario es una interfaz de usuario de Windows. Vamos a crear una aplicación "Hello World"; para ello, agregaremos controles al formulario y, después, ejecutaremos la aplicación.
+
+### <a name="add-a-button-to-the-form"></a>Agregar un botón al formulario
 
 1. Haga clic en **Cuadro de herramientas** para abrir la ventana flotante Cuadro de herramientas.
 
-     ![Clic en Cuadro de herramientas para abrir la ventana Cuadro de herramientas](../ide/media/vb-toolbox-toolwindow.png)  
+     ![Clic en Cuadro de herramientas para abrir la ventana Cuadro de herramientas](../ide/media/vb-toolbox-toolwindow.png)
 
      Si no ve la opción flotante **Cuadro de herramientas**, puede abrirla desde la barra de menús. Para ello, haga clic en **Ver** > **Cuadro de herramientas**. También puede presionar **CTRL**+**Alt**+**X**.
 
 2. Haga clic en el icono de **anclaje** para acoplar la ventana **Cuadro de herramientas**.
 
-     ![Clic en el icono de anclaje para anclar la ventana del cuadro de herramientas al IDE](../ide/media/vb-pin-the-toolbox-window.png)  
+     ![Clic en el icono de anclaje para anclar la ventana del cuadro de herramientas al IDE](../ide/media/vb-pin-the-toolbox-window.png)
 3. Haga clic en el control **Botón** y arrástrelo al formulario.
 
      ![Agregar un botón al formulario](../ide/media/vb-add-a-button-to-form1.png)
 
 4. En la sección **Apariencia** de la ventana **Propiedades**, escriba `Click this` y presione **ENTRAR**.
 
-     ![Adición de texto al botón en el formulario](../ide/media/vb-button-control-text.png)  
+     ![Adición de texto al botón en el formulario](../ide/media/vb-button-control-text.png)
 
      Si no ve la ventana **Propiedades**, puede abrirla desde la barra de menús. Para ello, haga clic en **Ver** > **Ventana Propiedades**. También puede presionar **F4**.
 
@@ -67,6 +70,7 @@ Tras seleccionar la plantilla de proyecto de Visual Basic y asignar un nombre al
      ![Adición de una función al botón en el formulario](../ide/media/vb-button-control-function.png)
 
 ### <a name="add-a-label-to-the-form"></a>Agregar una etiqueta al formulario
+
 Ya hemos agregado un control de botón para crear una acción, así que ahora vamos a agregar un control de etiqueta al que enviar texto.
 
 1. Seleccione el control **Etiqueta** desde la ventana **Cuadro de herramientas**, arrástrelo hasta el formulario y colóquelo debajo del botón **Click this**.
@@ -84,6 +88,7 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
      ![Adición de código al formulario](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
+
 1. Haga clic en el botón **Iniciar** para ejecutar la aplicación.
 
      ![Clic en Iniciar para depurar y ejecutar la aplicación](../ide/media/vb-click-start-hello-world.png)
@@ -94,8 +99,9 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
 
     ![Cuadro de diálogo Form1 con el texto Label1 ](../ide/media/vb-form1-dialog-hello-world.png)
 
-¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre Visual Basic y el IDE de Visual Studio. Si quiere profundizar más, continúe con el tutorial que encontrará en la sección **Tutoriales** de la tabla de contenido.  
+¡Enhorabuena por completar este tutorial de inicio rápido! Esperamos que haya aprendido un poco sobre Visual Basic y el IDE de Visual Studio. Si quiere profundizar más, continúe con el tutorial que encontrará en la sección **Tutoriales** de la tabla de contenido.
 
-## <a name="see-also"></a>Vea también   
+## <a name="see-also"></a>Vea también
+
 * [Inicio rápido: Crear una aplicación de consola en Visual Studio con Visual Basic](quickstart-visual-basic-console.md)
-* [Más información sobre IntelliSense de Visual Basic](visual-basic-specific-intellisense.md)  
+* [Más información sobre IntelliSense de Visual Basic](visual-basic-specific-intellisense.md)

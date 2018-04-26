@@ -1,6 +1,7 @@
 ---
-title: Compatibilidad de 64 bits del IDE de Visual Studio | Microsoft Docs
+title: Compatibilidad de 64 bits del IDE de Visual Studio
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e6067e3280a998f4b2296f880471080bd7bb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b911a6529e3e32075ca8599c921ae8369afb691
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
 
@@ -32,5 +33,5 @@ En [Cómo: Configurar proyectos para plataformas de destino](../ide/how-to-confi
 
 ## <a name="debugging-a-64-bit-application"></a>Depurar una aplicación de 64 bits
 
-[Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)
-[Uso de archivos de volcado](../debugger/using-dump-files.md)
+- [Depurar aplicaciones de 64 bits](../debugger/debug-64-bit-applications.md)
+- [Usar archivos de volcado de memoria](../debugger/using-dump-files.md)

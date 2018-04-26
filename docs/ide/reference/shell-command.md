@@ -1,10 +1,9 @@
 ---
-title: Comando Shell | Microsoft Docs
-ms.custom: ''
+title: Shell (Comando)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.shell
 helpviewer_keywords:
@@ -21,69 +20,77 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c44f6c784b33a927741a09c3dffc9b13017488e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 632c37ea2ee8afc0a8d3b45e0d3e208de6b76f9d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="shell-command"></a>Shell (Comando)
-Inicia programas ejecutables desde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Tools.Shell [/command] [/output] [/dir:folder] path [args]  
-```  
-  
-## <a name="arguments"></a>Argumentos  
- `path`  
- Obligatorio. El nombre de archivo y la ruta de acceso del archivo que se va a ejecutar o el documento que se va a abrir. Se necesita una ruta de acceso completa si el archivo especificado no está en uno de los directorios de la variable de entorno PATH.  
-  
- `args`  
- Opcional. Argumentos que se pasan al programa invocado.  
-  
-## <a name="switches"></a>Modificadores  
- /commandwindow [o] /command [o] /c [o] /cmd  
- Opcional. Especifica que la salida del ejecutable se muestra en la ventana **Comandos**.  
-  
- /dir:`folder` [o] /d: `folder`  
- Opcional. Especifica el directorio de trabajo que se establecerá cuando se ejecute el programa.  
-  
- /outputwindow [u] /output [u] /out [u] /o  
- Opcional. Especifica que la salida del ejecutable se muestra en la ventana **Salida**.  
-  
-## <a name="remarks"></a>Comentarios  
- Los modificadores /dir /o /c tienen que especificarse inmediatamente después de `Tools.Shell`. Cualquier elemento especificado después del nombre del ejecutable se pasa como argumentos de línea de comandos.  
-  
- El alias predefinido `Shell` se puede usar en lugar de `Tools.Shell`.  
-  
+Inicia programas ejecutables desde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Tools.Shell [/command] [/output] [/dir:folder] path [args]
+```
+
+## <a name="arguments"></a>Argumentos
+ `path`
+
+ Obligatorio. El nombre de archivo y la ruta de acceso del archivo que se va a ejecutar o el documento que se va a abrir. Se necesita una ruta de acceso completa si el archivo especificado no está en uno de los directorios de la variable de entorno PATH.
+
+ `args`
+
+ Opcional. Argumentos que se pasan al programa invocado.
+
+## <a name="switches"></a>Modificadores
+ /commandwindow [o] /command [o] /c [o] /cmd
+
+ Opcional. Especifica que la salida del ejecutable se muestra en la ventana **Comandos**.
+
+ /dir:`folder` [o] /d: `folder`
+
+ Opcional. Especifica el directorio de trabajo que se establecerá cuando se ejecute el programa.
+
+ /outputwindow [u] /output [u] /out [u] /o
+
+ Opcional. Especifica que la salida del ejecutable se muestra en la ventana **Salida**.
+
+## <a name="remarks"></a>Comentarios
+ Los modificadores /dir /o /c tienen que especificarse inmediatamente después de `Tools.Shell`. Cualquier elemento especificado después del nombre del ejecutable se pasa como argumentos de línea de comandos.
+
+ El alias predefinido `Shell` se puede usar en lugar de `Tools.Shell`.
+
 > [!CAUTION]
->  Si el argumento `path` proporciona la ruta de acceso de directorio, así como el nombre de archivo, debe incluir la ruta de acceso completa entre comillas literales ("""), como en el siguiente ejemplo:  
-  
-```  
-Tools.Shell """C:\Program Files\SomeFile.exe"""  
-```  
-  
- El procesador `Shell` interpreta cada conjunto de tres comillas dobles (""") como un único carácter de comilla doble. Por tanto, en el ejemplo anterior, se pasa la siguiente cadena de ruta de acceso al comando `Shell`:  
-  
-```  
-"C:\Program Files\SomeFile.exe"  
-```  
-  
+> Si el argumento `path` proporciona la ruta de acceso de directorio, así como el nombre de archivo, debe incluir la ruta de acceso completa entre comillas literales ("""), como en el siguiente ejemplo:
+
+
+```
+Tools.Shell """C:\Program Files\SomeFile.exe"""
+```
+
+ El procesador `Shell` interpreta cada conjunto de tres comillas dobles (""") como un único carácter de comilla doble. Por tanto, en el ejemplo anterior, se pasa la siguiente cadena de ruta de acceso al comando `Shell`:
+
+```
+"C:\Program Files\SomeFile.exe"
+```
+
 > [!CAUTION]
->  Si no se coloca la cadena de ruta de acceso entre comillas literales ("""), Windows usará solo la parte de la cadena hasta el primer espacio. Por ejemplo, si la cadena de ruta de acceso anterior no se hubiera colocado correctamente entre comillas, Windows buscaría un archivo denominado "Program" que se encuentra en el directorio raíz C:\. Si un archivo ejecutable C:\Program.exe estuviera disponible, incluso uno instalado por una manipulación ilícita, Windows intentaría ejecutar ese programa en lugar del programa "C:\Archivos de programa\SomeFile.exe" deseado.  
-  
-## <a name="example"></a>Ejemplo  
- El siguiente comando usa xcopy.exe para copiar el archivo `MyText.txt` en la carpeta `Text`. La salida de xcopy.exe se muestra tanto en la **ventana Comandos** como en la ventana de **salida**.  
-  
-```  
->Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana Comandos](../../ide/reference/command-window.md)   
- [Ventana de salida](../../ide/reference/output-window.md)   
- [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+> Si no se coloca la cadena de ruta de acceso entre comillas literales ("""), Windows usará solo la parte de la cadena hasta el primer espacio. Por ejemplo, si la cadena de ruta de acceso anterior no se hubiera colocado correctamente entre comillas, Windows buscaría un archivo denominado "Program" que se encuentra en el directorio raíz C:\. Si un archivo ejecutable C:\Program.exe estuviera disponible, incluso uno instalado por una manipulación ilícita, Windows intentaría ejecutar ese programa en lugar del programa "C:\Archivos de programa\SomeFile.exe" deseado.
+
+
+## <a name="example"></a>Ejemplo
+ El siguiente comando usa xcopy.exe para copiar el archivo `MyText.txt` en la carpeta `Text`. La salida de xcopy.exe se muestra tanto en la **ventana Comandos** como en la ventana de **salida**.
+
+```
+>Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
+```
+
+## <a name="see-also"></a>Vea también
+
+- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Ventana Comandos](../../ide/reference/command-window.md)
+- [Resultados (Ventana)](../../ide/reference/output-window.md)
+- [Cuadro Buscar/Comando](../../ide/find-command-box.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

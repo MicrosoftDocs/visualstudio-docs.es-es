@@ -1,9 +1,9 @@
 ---
-title: Introducción a Visual Basic en Visual Studio | Microsoft Docs
+title: Introducción a Visual Basic en Visual Studio
 ms.custom: ''
 ms.date: 12/08/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,32 +13,44 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c3fe8351196e11073e836d875e940a9ce17d36
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Introducción a Visual Basic en Visual Studio
+
 En este tutorial para Visual Basic (VB), podrá usar Visual Studio para crear y ejecutar algunas aplicaciones de consola diferentes y explorar algunas características del [entorno de desarrollo integrado (IDE)](visual-studio-ide.md) de Visual Studio mientras lo hace.
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita.
 
 ## <a name="before-you-begin"></a>Antes de empezar
+
 Esta es una sección rápida de P+F para presentar algunos conceptos clave.
+
 ### <a name="what-is-visual-basic"></a>¿Qué es Visual Basic?
+
 Visual Basic es un lenguaje de programación con seguridad de tipos diseñado para ser fácil de aprender. Se deriva de BASIC, que significa "Código simbólico de instrucciones de propósito general para principiantes".
+
 ### <a name="what-is-visual-studio"></a>¿Qué es Visual Studio?
-Visual Studio es un conjunto de desarrollo integrado de herramientas de productividad para desarrolladores. Considérelo como un programa que se puede usar para crear programas y aplicaciones.  
+
+Visual Studio es un conjunto de desarrollo integrado de herramientas de productividad para desarrolladores. Considérelo como un programa que se puede usar para crear programas y aplicaciones.
+
 ### <a name="what-is-a-console-app"></a>¿Qué es una aplicación de consola?
+
 Una aplicación de consola toma la entrada y muestra la salida en una ventana de línea de comandos, también conocida como consola.
+
 ### <a name="what-is-net-core"></a>¿Qué es .NET Core?
+
 .NET core es el siguiente paso evolutivo de .NET Framework. Donde .NET Framework permitía compartir código entre lenguajes de programación, .NET Core agrega la capacidad de compartir código entre plataformas. Y todavía mejor, es de código abierto. (.NET Framework y .NET Core incluyen bibliotecas de funciones predeterminadas, así como un Common Language Runtime (CLR), que actúa como una máquina virtual en el que se ejecuta el código).
 
 ## <a name="start-developing"></a>Empezar a desarrollar
+
 ¿Listo para empezar a desarrollar? Vamos allá.
 
 ### <a name="create-a-project"></a>Crear un proyecto
+
 En primer lugar, se creará un proyecto de aplicación de Visual Basic. En el tipo de proyecto se incluyen todos los archivos de plantilla que vamos a necesitar, sin necesidad de agregar nada más.
 
 1. Abra Visual Studio 2017.
@@ -62,11 +74,13 @@ Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, puede 
    ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Opción 2: Usar la barra del menú Herramientas
+
 1. Cancele para salir del cuadro de diálogo **Nuevo proyecto** y, en la barra de menús superior, seleccione **Herramientas** > **Obtener herramientas y características...**.
 
 2. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.   
 
 ## <a name="create-a-what-is-your-name-application"></a>Crear una aplicación "¿Cómo te llamas?"
+
 Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra junto con la fecha y hora. Esta es la manera de hacerlo:
 
 1. Si todavía no está abierto, abra el proyecto *WhatIsYourName*.
@@ -93,6 +107,7 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
 5. Presione cualquier tecla para cerrar la ventana de consola.
 
 ## <a name="create-a-calculate-this-application"></a>Crear una aplicación "Calcular esto"
+
 1. Abra Visual Studio 2017 y, después, en la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**.
 
 2. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)**. Después, asigne el nombre *CalculateThis* al archivo.  
@@ -123,6 +138,7 @@ Vamos a crear una aplicación que le solicita el nombre y, después, lo muestra 
     ![Ventana de consola en la que se muestra la aplicación CaluculateThis, que incluye mensajes sobre las acciones que se deben realizar.](../ide/media/vb-console-calculate-this.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 Enhorabuena por completar este tutorial. Para obtener más información sobre Visual Basic y el IDE de Visual Studio, vea las páginas siguientes.
 
 * [Guía de Visual Basic](/dotnet/visual-basic/index)

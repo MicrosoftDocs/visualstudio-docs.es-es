@@ -1,18 +1,19 @@
 ---
 title: Cómo compartir un entorno de desarrollo | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 3/12/2018
-ms.topic: article
-ms.technology: vsce-kubernetes
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Desarrollo rápido de Kubernetes con contenedores y microservicios en Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, contenedores
-manager: ghogen
-ms.openlocfilehash: 9808e1ac3a6d7b3381b807bc0ce209e15f3e97cf
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+manager: douge
+ms.openlocfilehash: 43d23caa039340345372076d02b3c4989cde5b01
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="share-a-development-environment"></a>Compartir un entorno de desarrollo
 

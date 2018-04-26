@@ -1,10 +1,9 @@
 ---
-title: Página Referencias, Diseñador de proyectos (Visual Basic) | Microsoft Docs
-ms.custom: ''
+title: Página Referencias, Diseñador de proyectos (Visual Basic)
 ms.date: 06/21/2017
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesReference
 - vb.ProjectPropertiesUnusedReference
@@ -19,73 +18,85 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d21e095ee6a81a257c33fe43be0673766cce43d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35534c0c6965dd7f7db01e2299ff71572b8de9e7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referencias, Diseñador de proyectos (Visual Basic)
-Use la página **Referencias** del **Diseñador de proyectos** para administrar las referencias, las referencias web y los espacios de nombres importados en su proyecto. Los proyectos pueden contener referencias a componentes COM, servicios Web XML, bibliotecas de clases o ensamblados de .NET Framework u otras bibliotecas de clases. Para obtener más información sobre el uso de referencias, vea [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md).  
+Use la página **Referencias** del **Diseñador de proyectos** para administrar las referencias, las referencias web y los espacios de nombres importados en su proyecto. Los proyectos pueden contener referencias a componentes COM, servicios Web XML, bibliotecas de clases o ensamblados de .NET Framework u otras bibliotecas de clases. Para obtener más información sobre el uso de referencias, vea [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md).
 
- Para obtener acceso a la página **Referencias**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Referencias**.  
+ Para obtener acceso a la página **Referencias**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando se muestre el Diseñador de proyectos, haga clic en la pestaña **Referencias**.
 
-## <a name="uielement-list"></a>Lista de UIElement  
- Las opciones siguientes le permiten seleccionar o quitar referencias y espacios de nombres importados en su proyecto.  
+## <a name="uielement-list"></a>Lista de UIElement
+ Las opciones siguientes le permiten seleccionar o quitar referencias y espacios de nombres importados en su proyecto.
 
- **Referencias sin usar**  
- Haga clic en este botón para tener acceso al cuadro de diálogo **Referencias sin usar**.  
+ **Referencias sin usar**
 
- El cuadro de diálogo **Referencias sin usar** le permite quitar referencias que se incluyen en su proyecto pero que el código no usa realmente. Contiene una cuadrícula que muestra el **Nombre de referencia**, la **Ruta de acceso** y otra información sobre las referencias del espacio de nombres sin usar de su proyecto. En la cuadrícula, seleccione las referencias del espacio de nombres que quiere quitar de su proyecto y haga clic en **Quitar**.  
+ Haga clic en este botón para tener acceso al cuadro de diálogo **Referencias sin usar**.
 
- **Rutas de acceso de referencia**  
- Haga clic en este botón para tener acceso al cuadro de diálogo **Rutas de acceso de referencia**.  
+ El cuadro de diálogo **Referencias sin usar** le permite quitar referencias que se incluyen en su proyecto pero que el código no usa realmente. Contiene una cuadrícula que muestra el **Nombre de referencia**, la **Ruta de acceso** y otra información sobre las referencias del espacio de nombres sin usar de su proyecto. En la cuadrícula, seleccione las referencias del espacio de nombres que quiere quitar de su proyecto y haga clic en **Quitar**.
+
+ **Rutas de acceso de referencia**
+
+ Haga clic en este botón para tener acceso al cuadro de diálogo **Rutas de acceso de referencia**.
 
 > [!NOTE]
->  Cuando el sistema del proyecto busca una referencia de ensamblado, el sistema resuelve la referencia buscando en las siguientes ubicaciones, en el orden siguiente:  
->   
->  1.  La carpeta del proyecto. Los archivos de la carpeta del proyecto aparecen en el **Explorador de soluciones** cuando **Mostrar todos los archivos** no está en vigor.  
-> 2.  Las carpetas que se especifican en el cuadro de diálogo **Rutas de acceso de referencia**.  
-> 3.  Las carpetas que muestran archivos en el cuadro de diálogo **Agregar referencia**.  
-> 4.  La carpeta de objetos del proyecto. (Cuando agrega una referencia COM a su proyecto, uno o más ensamblados pueden agregarse a la carpeta de objetos del proyecto).  
+> Cuando el sistema del proyecto busca una referencia de ensamblado, el sistema resuelve la referencia buscando en las siguientes ubicaciones, en el orden siguiente:
 
- **Referencias**  
- Esta lista muestra todas las referencias del proyecto, usadas o sin usar.  
+>
+>  1.  La carpeta del proyecto. Los archivos de la carpeta del proyecto aparecen en el **Explorador de soluciones** cuando **Mostrar todos los archivos** no está en vigor.
+> 2.  Las carpetas que se especifican en el cuadro de diálogo **Rutas de acceso de referencia**.
+> 3.  Las carpetas que muestran archivos en el cuadro de diálogo **Agregar referencia**.
+> 4.  La carpeta de objetos del proyecto. (Cuando agrega una referencia COM a su proyecto, uno o más ensamblados pueden agregarse a la carpeta de objetos del proyecto).
 
- **Add**  
- Haga clic en este botón para agregar una referencia o una referencia web a la lista **Referencias**.  
+ **Referencias**
 
- Pulse **Referencia** para agregar una referencia a su proyecto con el cuadro de diálogo Agregar referencia.  
+ Esta lista muestra todas las referencias del proyecto, usadas o sin usar.
 
- Pulse **Referencia web** para agregar una referencia web a su proyecto con el cuadro de diálogo Agregar referencia web.  
+ **Add**
 
- **Remove**  
- Seleccione una o más referencias en la lista **Referencias**, después, haga clic en este botón para eliminarlas.  
+ Haga clic en este botón para agregar una referencia o una referencia web a la lista **Referencias**.
 
- **Actualizar referencia web**  
- Seleccione una referencia web en la lista **Referencias** y haga clic en este botón para actualizarla.  
+ Pulse **Referencia** para agregar una referencia a su proyecto con el cuadro de diálogo Agregar referencia.
 
- **Espacios de nombres importados**  
- Puede escribir su propio espacio de nombres en este cuadro y hacer clic en **Agregar importación del usuario** para agregarlo a la lista de espacios de nombres.  
+ Pulse **Referencia web** para agregar una referencia web a su proyecto con el cuadro de diálogo Agregar referencia web.
 
- Puede crear alias para los espacios de nombres importados por el usuario. Para realizar esto, escriba el alias y el espacio de nombres en el formato *alias*=*espacio de nombres*. Esto es útil si está usando espacios de nombres largos, por ejemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.  
+ **Remove**
 
- **Agregar importación del usuario**  
- Haga clic en este botón para agregar el espacio de nombres especificado en el cuadro **Espacios de nombres importados** a la lista de espacios de nombres importados. El botón solo está activo si el espacio de nombres especificado todavía no está en la lista.  
+ Seleccione una o más referencias en la lista **Referencias**, después, haga clic en este botón para eliminarlas.
 
- **Lista de espacios de nombres**  
- Esta lista muestra todos los espacios de nombres disponibles. Las casillas de los espacios de nombres incluidas en el proyecto están seleccionadas.  
+ **Actualizar referencia web**
 
- **Actualizar importación del usuario**  
- Seleccione un espacio de nombres especificado por el usuario en la lista de espacios de nombres, escriba el nombre por el que quiere reemplazarlo en el cuadro **Espacios de nombres importados** y, después, haga clic en este botón para cambiar al nuevo espacio de nombres. El botón está activo solo si el espacio de nombres seleccionado es uno que ha agregado a la lista con el botón **Agregar importación del usuario**. Puede agregar:  
+ Seleccione una referencia web en la lista **Referencias** y haga clic en este botón para actualizarla.
 
--   Clases o espacios de nombres, como <xref:System.Math?displayProperty=fullName>.  
+ **Espacios de nombres importados**
 
--   Importaciones de alias, como `VB=Microsoft.VisualBasic`.  
+ Puede escribir su propio espacio de nombres en este cuadro y hacer clic en **Agregar importación del usuario** para agregarlo a la lista de espacios de nombres.
 
--   Espacios de nombres XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
+ Puede crear alias para los espacios de nombres importados por el usuario. Para realizar esto, escriba el alias y el espacio de nombres en el formato *alias*=*espacio de nombres*. Esto es útil si está usando espacios de nombres largos, por ejemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
-## <a name="see-also"></a>Vea también  
- [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md)   
- [Cómo: Agregar o quitar espacios de nombres importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
- [Imports (instrucción), espacio de nombres XML](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)
+ **Agregar importación del usuario**
+
+ Haga clic en este botón para agregar el espacio de nombres especificado en el cuadro **Espacios de nombres importados** a la lista de espacios de nombres importados. El botón solo está activo si el espacio de nombres especificado todavía no está en la lista.
+
+ **Lista de espacios de nombres**
+
+ Esta lista muestra todos los espacios de nombres disponibles. Las casillas de los espacios de nombres incluidas en el proyecto están seleccionadas.
+
+ **Actualizar importación del usuario**
+
+ Seleccione un espacio de nombres especificado por el usuario en la lista de espacios de nombres, escriba el nombre por el que quiere reemplazarlo en el cuadro **Espacios de nombres importados** y, después, haga clic en este botón para cambiar al nuevo espacio de nombres. El botón está activo solo si el espacio de nombres seleccionado es uno que ha agregado a la lista con el botón **Agregar importación del usuario**. Puede agregar:
+
+-   Clases o espacios de nombres, como <xref:System.Math?displayProperty=fullName>.
+
+-   Importaciones de alias, como `VB=Microsoft.VisualBasic`.
+
+-   Espacios de nombres XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+
+## <a name="see-also"></a>Vea también
+
+- [Administrar referencias en un proyecto](../../ide/managing-references-in-a-project.md)
+- [Cómo: Agregar o quitar espacios de nombres importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Imports (instrucción), espacio de nombres XML](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)
