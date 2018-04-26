@@ -11,12 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0461ff028925081285dafdc4f782b7c58c28a32c
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 9942d9903188785af1658a37515092c3ce1ad2dd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizar el comportamiento de eliminación
 Normalmente, al eliminar un elemento también se eliminan los elementos relacionados. Se eliminan todas las relaciones conectadas a él y todos los elementos secundarios. Este comportamiento se denomina *elimine la propagación*. Puede personalizar la propagación de la eliminación, por ejemplo, para organizar que se eliminen otros elementos relacionados. Escribiendo código de programa puede hacer que la propagación de la eliminación dependa del estado del modelo. También puede hacer que se produzcan otros cambios en respuesta a una eliminación.
