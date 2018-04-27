@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 83deb2088fca81573a8d4051c7e324b9c8abbfe1
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/27/2018
+---
 En esta guía aprenderá a:
 
 1. Crear en Azure un entorno basado en Kubernetes optimizado para el desarrollo.

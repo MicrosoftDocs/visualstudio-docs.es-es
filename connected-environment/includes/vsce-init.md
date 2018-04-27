@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 394e31bf0660557c1eba571006cacf213263c07e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/27/2018
+---
 ## <a name="initialize-code-for-docker-and-kubernetes-development"></a>Inicializar código para el desarrollo de Docker y Kubernetes
 Por ahora, tenemos una aplicación web básica que se puede ejecutar localmente. Ahora incluiremos la aplicación en un contenedor; para ello, crearemos activos que definan el contenedor de la aplicación y cómo se implementará en Kubernetes. Esto es muy fácil de hacer con Connected Environment: 
 
