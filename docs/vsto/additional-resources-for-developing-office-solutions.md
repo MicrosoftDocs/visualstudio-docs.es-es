@@ -2,8 +2,8 @@
 title: Recursos adicionales para desarrollar soluciones de Office | Documentos de Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,11 +15,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1df1000196e271bb30ab4dd501569c12d33e0b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b34f32110af7d9c7e5aad079990b1c82c13d6370
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="additional-resources-for-developing-office-solutions"></a>Recursos adicionales para desarrollar soluciones de Office
   Las herramientas de desarrollo de Microsoft Office en Visual Studio representan solamente uno de los numerosos mecanismos para extender las aplicaciones de Office. Las aplicaciones de Office también tienen algunas características integradas como, por ejemplo, los formatos XML abiertos, que no se incluyen en las herramientas de desarrollo de Office de Visual Studio ni en esta documentación.  
