@@ -295,6 +295,7 @@
 #### [No se puede asociar al proceso](unable-to-attach-to-the-process.md)
 #### [Editar y continuar (cuadro de diálogo de mensaje de error)](edit-and-continue-error-message-dialog-box.md)
 #### [Error: El tiempo de espera de evaluación de la función 'función' se agotó y tuvo que anularse de forma no segura](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Error: el proceso de destino terminó con el código "code" al evaluar la función "function"](error-evaluating-the-function-process-exited.md)
 #### [Error: No se puede conectar a SQL Server en el equipo remoto](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Error: No se puede obtener acceso a la interfaz de depuración de SQL Server](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Error: SQL Can't Find SSDEBUGPS (SQL no encuentra SSDEBUGPS)](error-sql-can-t-find-ssdebugps.md)
