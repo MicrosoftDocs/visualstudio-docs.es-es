@@ -2,8 +2,8 @@
 title: Automatizar Word con objetos extendidos | Documentos de Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d639f1916799341c749164b32559b2ea3ba82428
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7452826ed0726f095a2ae6a8add12d8b07bd2e7
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="automating-word-by-using-extended-objects"></a>Automatizar Word con objetos extendidos
   Cuando desarrolla soluciones de Word en Visual Studio, puede usar la opción *elementos host* y *controles host*en sus soluciones. Se trata de objetos que extienden algunos objetos de uso común en el modelo de objetos de Word (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario de Word), como los objetos <xref:Microsoft.Office.Interop.Word.Document> y <xref:Microsoft.Office.Interop.Word.ContentControl> . Los objetos extendidos se comportan como los objetos de Word en los que se basan, pero agregan eventos adicionales y capacidades de enlace de datos a los objetos.  

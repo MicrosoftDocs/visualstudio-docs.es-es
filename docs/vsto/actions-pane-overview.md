@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 50f39b6fc292bba2081d8eb5c3bc87d6f9041b49
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="actions-pane-overview"></a>Información general sobre paneles de acciones
-  Un panel de acciones es un **acciones de documentos** panel de tareas que se adjunta a un documento específico de Microsoft Office Word o un libro de Microsoft Office Excel. Se aloja dentro del panel de tareas de Office junto con otros paneles de tareas integrados, como el **origen XML** panel de tareas de Excel o el **estilos y formato** panel de tareas de Word. Puede utilizar controles de Windows Forms o WPF para diseñar la interfaz de usuario del panel de acciones.  
+  Un panel de acciones es un **acciones de documentos** panel de tareas que se adjunta a un documento específico de Microsoft Office Word o un libro de Microsoft Office Excel. El panel de acciones se hospeda dentro del panel de tareas de Office junto con otros paneles de tareas integrados, como el **origen XML** panel de tareas de Excel o el **estilos y formato** panel de tareas de Word. Puede utilizar controles de Windows Forms o WPF para diseñar la interfaz de usuario del panel de acciones.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  El panel de acciones difiere de los paneles de tareas personalizados. Los paneles de tareas personalizados están asociados a la aplicación, no a un documento específico. Puede crear paneles de tareas personalizados en complementos de VSTO para algunas aplicaciones de Microsoft Office. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).  
 
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [cómo hacer I: Use WPF controles dentro de an Excel Actions Pane?](http://go.microsoft.com/fwlink/?LinkId=132763).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [cómo hacer I: Use WPF controles dentro de an Excel Actions Pane?](http://go.microsoft.com/fwlink/?LinkId=132763).
 
 ## <a name="displaying-the-actions-pane"></a>Mostrar el panel de acciones  
  El panel de acciones se representa mediante la clase <xref:Microsoft.Office.Tools.ActionsPane>. Cuando crea un proyecto de nivel de documento, una instancia de esta clase está disponible para el código mediante el uso del campo `ActionsPane` de la clase `ThisWorkbook` (para Excel) o `ThisDocument` (para Word) en el proyecto. Para mostrar el panel de acciones, agregue un control de Windows Forms a la propiedad <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> del campo `ActionsPane`. En el siguiente ejemplo de código se agrega un control denominado `actions` al panel de acciones.  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/27/2018
  El panel de acciones se vuelve visible en tiempo de ejecución desde el momento que usted le agrega un control de forma explícita. Una vez que se muestre el panel de acciones, puede agregar o quitar controles de forma dinámica en respuesta a las acciones del usuario. Normalmente debe agregar el código para mostrar el panel de acciones en el controlador de eventos `Startup` de `ThisDocument` o `ThisWorkbook` para que el panel de acciones esté visible cuando el usuario abra el documento por primera vez. Sin embargo, puede que le interese mostrar el panel de acciones solo como respuesta a una acción del usuario en el documento. Por ejemplo, podría agregar código para el evento `Click` de un control en el documento.  
 
 ### <a name="adding-multiple-controls-to-the-actions-pane"></a>Agregar varios controles al panel de acciones  
- Si va a agregar varios controles al panel de acciones, en la mayoría de los casos debería agrupar los controles en un control de usuario y, a continuación, agregar el control de usuario a la propiedad <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>. Este proceso incluye los siguientes pasos:  
+ Al agregar varios controles al panel de acciones, debe agrupar los controles en un control de usuario y, a continuación, agregar el control de usuario a la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad. Este proceso incluye los siguientes pasos:  
 
 1.  Crear la interfaz de usuario (UI) del panel de acciones agregando un **Control del panel de acciones** o **Control de usuario** elemento al proyecto. Ambos elementos incluyen una clase <xref:System.Windows.Forms.UserControl> de Windows Forms personalizada. El **Control del panel de acciones** y **Control de usuario** elementos son equivalentes; la única diferencia es su nombre.  
 
@@ -79,12 +79,12 @@ ms.lasthandoff: 04/27/2018
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]  
 
 ### <a name="clearing-the-actions-pane-when-the-document-is-opened"></a>Borrar el panel de acciones cuando se abre el documento  
- Si el usuario guarda el documento mientras está visible el panel de acciones, el panel de acciones estará visible cada vez que se abra el documento, independientemente de que el panel de acciones contenga o no algún control. Si desea controlar cuando se muestra, llame al método <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> del campo `ActionsPane` en el controlador de eventos `Startup` de `ThisDocument` o `ThisWorkbook` para asegurarse de que el panel de acciones no esté visible cuando se abra el documento.  
+ Cuando un usuario guarda el documento mientras está visible el panel Acciones, el panel Acciones estará visible cada vez que se abre el documento, si el panel de acciones contiene todos los controles. Si desea controlar cuando se muestra, llame al método <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> del campo `ActionsPane` en el controlador de eventos `Startup` de `ThisDocument` o `ThisWorkbook` para asegurarse de que el panel de acciones no esté visible cuando se abra el documento.  
 
 ### <a name="determining-when-the-actions-pane-is-closed"></a>Determinar cuándo se cierra el panel de acciones  
  No se genera ningún evento cuando se cierra el panel de acciones. Aunque la clase <xref:Microsoft.Office.Tools.ActionsPane> tiene un evento <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, este evento no se genera cuando el usuario final cierra el panel de acciones. En su lugar, este evento se desencadena cuando se ocultan los controles del panel de acciones mediante una llamada a la <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> método o estableciendo la <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> propiedad **false**.  
 
- Si el usuario final cierra el panel de acciones, el usuario puede lograr que se vuelva a mostrar llevando a cabo uno de los siguientes procedimientos en la interfaz de usuario (UI) de la aplicación.  
+ Cuando el usuario cierra el panel Acciones, el usuario puede mostrarlo nuevo llevando a cabo uno de los procedimientos siguientes en la interfaz de usuario (UI) de la aplicación.  
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>Para mostrar el panel de acciones mediante la interfaz de usuario de Word o Excel  
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 04/27/2018
 ## <a name="programming-actions-pane-events"></a>Programar eventos del panel de acciones  
  Puede agregar varios controles de usuario al panel de acciones y, a continuación, escribir código para responder a eventos en el documento mostrando y ocultando los controles de usuario. Si asigna elementos de esquema XML a su documento, puede mostrar determinados controles de usuario en el panel de acciones siempre que el punto de inserción esté dentro de uno de los elementos XML. Para obtener más información, consulte [Cómo: mapa de esquemas a documentos de Word dentro de Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) y [Cómo: mapa de esquemas a hojas de cálculo dentro de Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).  
 
- También puede escribir código para responder a los eventos de cualquier objeto, incluyendo eventos de control host, aplicación o documento. Para obtener más información, consulte [Tutorial: programar basándose en los eventos de un NamedRange Control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ También puede escribir código para responder a los eventos de cualquier objeto, incluyendo eventos de control host, aplicación o documento. Para obtener más información, consulta [Tutorial: Programar basándose en los eventos de un control NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
 
 ## <a name="binding-data-to-controls-on-the-actions-pane"></a>Enlazar datos a controles en el panel de acciones  
  Los controles del panel de acciones tienen las mismas capacidades de enlace de datos que los controles de Windows Forms. Puede enlazar los controles a orígenes de datos, como conjuntos de datos, conjuntos de datos con tipo y XML. Para obtener más información, consulta [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
@@ -129,7 +129,7 @@ ms.lasthandoff: 04/27/2018
 ## <a name="resizing-the-actions-pane"></a>Cambiar el tamaño del panel de acciones  
  No puede cambiar directamente el tamaño de un <xref:Microsoft.Office.Tools.ActionsPane> porque <xref:Microsoft.Office.Tools.ActionsPane> está incrustado en el panel de tareas. Sin embargo, puede cambiar el ancho del panel de tareas mediante programación estableciendo la propiedad <xref:Microsoft.Office.Core.CommandBar.Width%2A> de la <xref:Microsoft.Office.Core.CommandBar> que representa el panel de tareas. Puede cambiar la altura del panel de tareas si está acoplado horizontalmente o si está flotando.  
 
- Por lo general, no se recomienda cambiar mediante programación el tamaño del panel de tareas porque el usuario debería poder seleccionar el tamaño del panel de tareas que mejor se adapte a sus necesidades. Sin embargo, si tiene que cambiar el ancho del panel de tareas, podría utilizar el siguiente código para hacerlo.  
+ Mediante programación cambiar el tamaño del panel de tareas no se recomienda porque el usuario debería poder seleccionar el tamaño del panel de tareas que mejor se adapte a sus necesidades. Sin embargo, si tiene que cambiar el ancho del panel de tareas, podría utilizar el siguiente código para hacerlo.  
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
  [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]  
@@ -145,7 +145,7 @@ ms.lasthandoff: 04/27/2018
 > [!NOTE]  
 >  Los usuarios finales pueden cambiar manualmente la posición del panel de tareas en cualquier momento. No hay ninguna manera de garantizar que el panel de tareas permanezca acoplado en la posición que indique mediante programación. Sin embargo, puede comprobar los cambios de orientación y asegurarse de que los controles del panel de acciones se apilen en la dirección correcta. Para obtener más información, consulte [Cómo: administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md).  
 
- Establecer las propiedades <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> y <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> de <xref:Microsoft.Office.Tools.ActionsPane> no cambia su posición porque el objeto <xref:Microsoft.Office.Tools.ActionsPane> está incrustado en el panel de tareas.  
+ Establecer el <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> y <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> propiedades de la <xref:Microsoft.Office.Tools.ActionsPane> no cambia su posición porque el <xref:Microsoft.Office.Tools.ActionsPane> objeto está incrustado en el panel de tareas.  
 
  Si el panel de tareas no está acoplado, puede establecer las propiedades <xref:Microsoft.Office.Core.CommandBar.Top%2A> y <xref:Microsoft.Office.Core.CommandBar.Left%2A> de <xref:Microsoft.Office.Core.CommandBar> que representa el panel de tareas. El siguiente código mueve un panel de tareas desacoplado a la esquina superior izquierda del documento.  
 

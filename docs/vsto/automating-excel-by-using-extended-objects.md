@@ -2,8 +2,8 @@
 title: Automatizar Excel usando objetos extendidos | Documentos de Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 63c200a3d3a6a64dfc100cc9365f142a8dddae4c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c1111a9fdd66d99f1dda40d3045ad337d499a6a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>Automatizar Excel usando objetos extendidos
   Al desarrollar soluciones de Excel en Visual Studio, puede usar *elementos host* y *controles host*en sus soluciones. Estos son objetos que extienden algunos objetos muy usados en el modelo de objetos de Excel (es decir, el modelo de objetos expuesto por el ensamblado de interoperabilidad primario para Excel), como son los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> y <xref:Microsoft.Office.Interop.Excel.Range> . Los objetos extendidos se comportan como los objetos de Excel en los que se basan, pero agregan características adicionales, como nuevas capacidades de enlace de eventos y datos a los objetos.  
