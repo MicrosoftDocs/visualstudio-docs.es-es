@@ -1,8 +1,9 @@
 ---
-title: Límites de exploración | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs
+title: Límites de exploración | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
@@ -10,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f152f128fed04abee44ca8c57c89b9f1c2f12ae6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="exploration-bounds"></a>Límites de exploración
 
@@ -57,7 +58,7 @@ Normalmente, la razón del tiempo de espera es que IntelliTest está intentando 
 <a name="maxconstraintsolvermemory"></a>
 ## <a name="maxconstraintsolvermemory"></a>MaxConstraintSolverMemory
 
-El número de megabytes que el [solucionador de restricciones](input-generation.md#constraint-solver) tiene para calcular entradas que provocarán una nueva y diferente ruta de ejecución que se va a tomar. Esta es una opción de **PexSettingsAttributeBase** y de sus tipos derivados.
+El número de megabytes que el [solucionador de restricciones](input-generation.md#constraint-solver) tiene para calcular entradas que provocarán una nueva y diferente ruta de ejecución que se va a tomar. Esta es una opción de *PexSettingsAttributeBase** y de sus tipos derivados.
 
 Cuanto mayor es la profundidad con la que IntelliTest explora las rutas de ejecución de un programa, más complejos se convierten los sistemas de restricciones que IntelliTest crea del flujo de control y el flujo de datos del programa. Dependiendo de la memoria disponible de su equipo, puede establecer este valor para permitir que IntelliTest trate sistemas de restricciones más complejos.
 
@@ -121,13 +122,12 @@ void ParameterizedTest(int n)
 
 El número máximo de ejecuciones que IntelliTest probará durante la exploración de una prueba.
 
-La motivación para este límite de exploración es que cualquier código que contiene bucles o recursividad pueda tener un número infinito de rutas de ejecución y, por lo tanto, IntelliTest necesita limitarse durante la [generación de entradas](input-generation.md). 
+La motivación para este límite de exploración es que cualquier código que contiene bucles o recursividad pueda tener un número infinito de rutas de ejecución y, por lo tanto, IntelliTest necesita limitarse durante la [generación de entradas](input-generation.md).
 
-Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la manera siguiente: 
+Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la manera siguiente:
 
 * IntelliTest llamará a un método de prueba parametrizado hasta **MaxRuns** veces con diferentes entradas de prueba.
-* Si el código de prueba es determinista, IntelliTest tomará una ruta de ejecución diferente cada vez. 
-  En cambio, en determinadas condiciones el código ejecutado puede seguir una ruta de ejecución que ya haya tomado antes, con entradas diferentes. 
+* Si el código de prueba es determinista, IntelliTest tomará una ruta de ejecución diferente cada vez. En cambio, en determinadas condiciones el código ejecutado puede seguir una ruta de ejecución que ya haya tomado antes, con entradas diferentes.
 * IntelliTest cuenta el número de rutas de ejecución únicas que detecta; este número está limitado mediante la opción **MaxRunsWithUniquePaths**.
 
 <a name="maxrunswithoutnewtests"></a>
@@ -135,7 +135,7 @@ Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la ma
 
 El número máximo de ejecuciones consecutivas sin que se emita una nueva prueba.
 
-Aunque a menudo IntelliTest puede detectar muchas entradas de pruebas interesantes en un breve período, después de un tiempo no detectará ninguna entrada de prueba nueva y no emitirá más pruebas unitarias. Esta opción de configuración coloca un límite en el número de intentos consecutivos que IntelliTest puede realizar sin emitir una prueba nueva. Cuando se alcanza, detendrá la exploración. 
+Aunque a menudo IntelliTest puede detectar muchas entradas de pruebas interesantes en un breve período, después de un tiempo no detectará ninguna entrada de prueba nueva y no emitirá más pruebas unitarias. Esta opción de configuración coloca un límite en el número de intentos consecutivos que IntelliTest puede realizar sin emitir una prueba nueva. Cuando se alcanza, detendrá la exploración.
 
 <a name="maxrunswithuniquepaths"></a>
 ## <a name="maxrunswithuniquepaths"></a>MaxRunsWithUniquePaths
@@ -147,8 +147,7 @@ La motivación para este límite de exploración es que cualquier código que co
 Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la manera siguiente: 
 
 * IntelliTest llamará a un método de prueba parametrizado hasta **MaxRuns** veces con diferentes entradas de prueba.
-* Si el código de prueba es determinista, IntelliTest tomará una ruta de ejecución diferente cada vez. 
-  En cambio, en determinadas condiciones el código ejecutado puede seguir una ruta de ejecución que ya haya tomado antes, con entradas diferentes. 
+* Si el código de prueba es determinista, IntelliTest tomará una ruta de ejecución diferente cada vez. En cambio, en determinadas condiciones el código ejecutado puede seguir una ruta de ejecución que ya haya tomado antes, con entradas diferentes. 
 * IntelliTest cuenta el número de rutas de ejecución únicas que detecta; este número está limitado mediante la opción **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>
@@ -156,16 +155,14 @@ Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la ma
 
 El número máximo de excepciones que pueden encontrarse antes de que se detenga la exploración.
 
-La motivación para este límite de exploración es detener la exploración del código que contiene muchos errores.
-Si IntelliTest detecta demasiados errores en el código, se detiene la exploración.
+La motivación para este límite de exploración es detener la exploración del código que contiene muchos errores. Si IntelliTest detecta demasiados errores en el código, se detiene la exploración.
 
 <a name="testexcludepathboundsexceeded"></a>
 ## <a name="testexcludepathboundsexceeded"></a>TestExcludePathBoundsExceeded
 
 Las rutas de ejecución que exceden los límites de ruta que se han configurado [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) y [MaxConditions](#maxconditions) se ignoran.
 
-La motivación para este límite de exploración es tratar (muy probablemente) con pruebas de no terminación. Cuando IntelliTest alcanza un límite de exploración como [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) o [MaxConditions](#maxconditions), presupone que la prueba no será un proceso de no terminación y que no provocará un desbordamiento de pila después.
-Dichos casos de prueba pueden presentar problemas en otros marcos de prueba, y este atributo proporciona una manera de evitar que IntelliTest emita casos de prueba para los procesos de no terminación potenciales o los casos de prueba que provocarán un desbordamiento de pila.
+La motivación para este límite de exploración es tratar (muy probablemente) con pruebas de no terminación. Cuando IntelliTest alcanza un límite de exploración como [MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack) o [MaxConditions](#maxconditions), presupone que la prueba no será un proceso de no terminación y que no provocará un desbordamiento de pila después. Dichos casos de prueba pueden presentar problemas en otros marcos de prueba, y este atributo proporciona una manera de evitar que IntelliTest emita casos de prueba para los procesos de no terminación potenciales o los casos de prueba que provocarán un desbordamiento de pila.
 
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
@@ -184,10 +181,10 @@ Dependiendo de la opción [TestEmissionFilter](#testemissionfilter) actual, Inte
 
 La opción **TestEmissionBranchHits** determina si IntelliTest solo debe considerar si una rama se ha cubierto por completo (**TestEmissionBranchHits=1**), si una prueba la ha cubierto una o dos veces (**TestEmissionBranchHits=2**), y así sucesivamente.
 
-**TestEmissionBranchHits=1** producirá un conjunto de pruebas muy pequeño que cubrirá todas las ramas que IntelliTest puede alcanzar. En concreto, este conjunto de pruebas también cubrirá todos los bloques básicos y las instrucciones que ha alcanzado. 
+**TestEmissionBranchHits=1** producirá un conjunto de pruebas muy pequeño que cubrirá todas las ramas que IntelliTest puede alcanzar. En concreto, este conjunto de pruebas también cubrirá todos los bloques básicos y las instrucciones que ha alcanzado.
 
 El valor predeterminado de esta opción es **TestEmissionBranchHits=2**, que genera un conjunto de pruebas más expresivo que también es más adecuado para detectar futuros errores de regresiones.
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publique sus ideas y solicitudes de características en [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

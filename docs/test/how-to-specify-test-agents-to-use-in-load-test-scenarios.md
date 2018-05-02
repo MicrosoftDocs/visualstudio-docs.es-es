@@ -1,5 +1,5 @@
 ---
-title: Especificar los agentes de pruebas que se usarán en escenarios de prueba de carga en Visual Studio | Microsoft Docs
+title: Especificación de los agentes de pruebas que se van a usar en escenarios de prueba de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,13 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd6ca0c9b92f8eaa27c2a8726cc9d2cea49636b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a4aacbd31516e6a3e55f1b543a3cc8f49ea6ce4d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Cómo: Especificar los agentes de prueba que se usarán en escenarios de prueba de carga
 

@@ -1,5 +1,5 @@
 ---
-title: Combinación de pruebas para un escenario de pruebas de carga en Visual Studio | Microsoft Docs
+title: Combinación de pruebas para un escenario de pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7f0cb4c25c99c7ab68400d63e1ec52253a5f61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificar la combinación de las pruebas para especificar qué rendimiento web, pruebas unitarias y pruebas automatizadas de IU incluir en un escenario de prueba de carga
 
@@ -77,12 +78,14 @@ Puede agregar más pruebas unitarias y de rendimiento web a la combinación de p
  El botón **Distribuir** se utiliza para asignar porcentajes equitativos entre todos los elementos. Por ejemplo, si tiene tres elementos, al elegir **Distribuir**, los valores de porcentaje se establecen en 34, 33 y 33.
 
 > [!WARNING]
->  El botón **Distribuir** reemplaza a cualquier elemento que esté bloqueado.
+> El botón **Distribuir** reemplaza a cualquier elemento que esté bloqueado.
+
 
  También es posible escribir directamente los valores de porcentaje en la columna **%**, en lugar de usar los controles deslizantes. Si escribe un valor de porcentaje directamente, los demás elementos no se ajustarán automáticamente.
 
 > [!NOTE]
->  Los controles deslizantes se deshabilitan cuando el total no suma un 100 % o cuando los valores de porcentaje especificados en la columna **%** son decimales.
+> Los controles deslizantes se deshabilitan cuando el total no suma un 100 % o cuando los valores de porcentaje especificados en la columna **%** son decimales.
+
 
  Si escribe los valores de porcentajes manualmente, debe asegurarse de que la suma de todos los elementos sea 100 %. Al guardar una combinación, si la suma no es igual al 100 %, se le solicitará que acepte los valores de porcentajes tal y como están o que vuelva a ajustarlos. Si decide aceptarlos tal y como están, se prorratearán al 100%.  Por ejemplo, si tiene dos elementos y los establece manualmente en un 80% y un 40%, el primer elemento se establecerá en un 66,67% (80 dividido entre 120) y el segundo elemento se establecerá en un 33,33% (40 dividido entre 120).
 

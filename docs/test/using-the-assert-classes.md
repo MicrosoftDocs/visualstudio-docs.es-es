@@ -1,8 +1,9 @@
 ---
-title: Uso de las clases Assert para pruebas unitarias en Visual Studio | Microsoft Docs
+title: Uso de las clases Assert para pruebas unitarias en Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -13,17 +14,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ff40f25e9beffa848185fe2c1f95df96928543d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d56477822fa2d965902d9442d47e2c3ab24d656
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-assert-classes"></a>Usar las clases Assert
 
 Utilice las clases Assert del espacio de nombres UnitTestingFramework para comprobar la funcionalidad específica. Un método de prueba unitaria utiliza el código de un método en el código de desarrollo, pero solo notifica la corrección del comportamiento del código si se incluyen instrucciones Assert.
 
 ## <a name="kinds-of-asserts"></a>Tipos de aserciones
+
  El espacio de nombres <xref:Microsoft.VisualStudio.TestTools.UnitTesting> proporciona varios tipos de clases Assert:
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
@@ -47,7 +49,7 @@ Utilice las clases Assert del espacio de nombres UnitTestingFramework para compr
  AssertInconclusiveException se inicia siempre que una prueba genera un resultado no concluyente. Normalmente, se agrega una instrucción Assert.Inconclusive a una prueba de que se sigue trabajando para indicar que aún no está lista para ejecutarse.
 
 > [!NOTE]
->  Una estrategia alternativa sería marcar una prueba que no está lista para ejecutarse con el atributo Ignore. Sin embargo, esto tiene la desventaja de que no puede generar fácilmente un informe sobre el número de pruebas que quedan por implementar.
+> Una estrategia alternativa consiste en marcar una prueba que no está lista para ejecutarse con el atributo Ignore. Sin embargo, esto tiene la desventaja de que no puede generar fácilmente un informe sobre el número de pruebas que quedan por implementar.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
 

@@ -1,6 +1,7 @@
 ---
-title: Generación de pruebas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest | Microsoft Docs
+title: Generación de pruebas | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +11,21 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 259ff0818cebde6d7c603428c6cdb88cd51ca293
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-generation"></a>Generación de pruebas
 
-En las pruebas unitarias tradicionales, se necesitan varios ingredientes para crear una prueba:
+En las pruebas unitarias tradicionales, una prueba consta de varios elementos:
+
+* Una [secuencia de llamadas a métodos](test-generation.md#test-generators).
+* Los argumentos con los que se llaman a los métodos; los argumentos son las [entradas de prueba](input-generation.md).
+* La validación del comportamiento previsto de la aplicación probada indicando un conjunto de [aserciones](#assumptions-and-assertions).
+
+A continuación se muestra una estructura de prueba de ejemplo:
 
 ```
 [Test]
@@ -34,12 +41,6 @@ void MyTest() {
     Assert.AreEqual(a[0], 5);
 }
 ```
-
-La prueba consta de diferentes aspectos:
-
-* Corrige una [secuencia de llamadas al método](test-generation.md#test-generators)
-* Corrige los argumentos con los que se llaman a los métodos; los argumentos son las [entradas de prueba](input-generation.md)
-* Valida el comportamiento previsto de la aplicación probada indicando un conjunto de [aserciones](#assumptions-and-assertions)
 
 A menudo, IntelliTest puede determinar automáticamente valores de argumento relevantes para [pruebas unitarias parametrizadas](#parameterized-unit-testing) más generales, que proporcionan la secuencia de llamadas al método y aserciones.
 
@@ -243,4 +244,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>¿Tiene comentarios?
 
-Publique sus ideas y solicitudes de características en **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Publique sus ideas y solicitudes de características en [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

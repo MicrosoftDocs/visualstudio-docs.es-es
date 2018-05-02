@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Importar los resultados de pruebas de carga a un repositorio en Visual Studio | Microsoft Docs'
+title: 'Cómo: Importar los resultados de pruebas de carga a un repositorio en Visual Studio'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a4646578299895c0988522d871ba727d80f063c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2663864f0cf9d23db22f11cccfd7a9c474d6577c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Cómo: Importar los resultados de pruebas de carga a un repositorio
 

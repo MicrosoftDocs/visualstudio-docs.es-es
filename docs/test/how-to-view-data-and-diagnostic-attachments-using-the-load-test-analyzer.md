@@ -1,5 +1,5 @@
 ---
-title: Ver datos y datos adjuntos de diagnóstico para pruebas de carga en Visual Studio | Microsoft Docs
+title: Visualización de datos y datos adjuntos de diagnóstico para pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: 73309bdd-437a-4eb0-88c8-702c3e24b9b0
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 08e4ce09103cd5f06926147ae38b916ae666648b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2bed9c90bb7562072c2f0855c361fc307227976d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Cómo: Ver datos y datos adjuntos de diagnóstico usando el Analizador de prueba de carga
 

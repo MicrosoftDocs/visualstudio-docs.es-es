@@ -34,7 +34,7 @@
 #### [Especificar cuándo y dónde se aplica una anotación](specifying-when-and-where-an-annotation-applies.md)
 #### [Funciones intrínsecas](intrinsic-functions.md)
 #### [Procedimientos recomendados y ejemplos (SAL)](best-practices-and-examples-sal.md)
-### [Especificar información de código adicional mediante __analysis_assume](how-to-specify-additional-code-information-by-using-analysis-assume.md)
+### [Especificación de información de código adicional mediante _Analysis_assume](how-to-specify-additional-code-information-by-using-analysis-assume.md)
 ## [Conjuntos de reglas](using-rule-sets-to-group-code-analysis-rules.md)
 ### [Conjuntos de reglas para el código administrado](how-to-configure-code-analysis-for-a-managed-code-project.md)
 #### [Configurar el análisis de código para una aplicación web ASP.NET](how-to-configure-code-analysis-for-an-aspnet-web-application.md)

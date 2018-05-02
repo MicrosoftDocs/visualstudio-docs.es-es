@@ -1,5 +1,5 @@
 ---
-title: Crear un complemento de prueba de carga en Visual Studio | Microsoft Docs
+title: Creación de un complemento de prueba de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Cómo: Crear un complemento de pruebas de carga
 
@@ -102,7 +103,8 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
 El código siguiente muestra un complemento de prueba de carga que ejecuta código personalizado después de que se produzca un evento LoadTestFinished. Si este código se ejecuta en un agente de una máquina remota y el agente de prueba no tienen un servicio SMTP de host local, la prueba de carga permanecerá en el estado "En curso" mientras se abre un cuadro de mensaje.
 
 > [!NOTE]
->  El siguiente código requiere que se agregue una referencia a System.Windows.Forms.
+> El siguiente código requiere que se agregue una referencia a System.Windows.Forms.
+
 
 ```csharp
 using System;

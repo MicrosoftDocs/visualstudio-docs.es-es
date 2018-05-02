@@ -1,7 +1,7 @@
 ---
-title: Proyecto de ejemplo para crear un adaptador de datos de diagnóstico en Visual Studio | Microsoft Docs
+title: Proyecto de ejemplo para crear un adaptador de datos de diagnóstico en Visual Studio
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - Diagnostic Data Adapter [Visual Studio ALM]
 - samples. Diagnostic Data Adapter [Visual Studio ALM]
@@ -10,12 +10,13 @@ ms.assetid: 548bdc5e-338f-4be7-a555-e6a2efb1df6b
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 98606c5afbeed035392f35d71de60bb4d4bbb5a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Proyecto de ejemplo para crear un adaptador de datos de diagnóstico
 

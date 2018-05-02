@@ -1,6 +1,7 @@
 ---
-title: Habilitar pruebas automatizadas de IU en los controles en Visual Studio | Microsoft Docs
+title: Habilitación de pruebas automatizadas de IU en los controles en Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c3906b84995716072d4df0a1b518930a521cdb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 42c5e312aa467eea494e6c667f61157d953dddd0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar pruebas automatizadas de IU en los controles
 

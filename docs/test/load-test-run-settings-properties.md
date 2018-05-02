@@ -1,19 +1,20 @@
 ---
-title: Parámetros de ejecución de pruebas de carga en Visual Studio | Microsoft Docs
+title: Parámetros de ejecución de pruebas de carga en Visual Studio
 ms.date: 10/19/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - load tests, run settings
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 498c581d1918fbd4565f821bf516a5301534d733
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c3f057a5642fd18affca6894521a5648f01aeb1c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="load-test-run-settings-properties"></a>Propiedades de los parámetros de ejecución de las pruebas de carga
 

@@ -1,6 +1,6 @@
 ---
 title: Carga de trabajo Aplicaciones de ciencia de datos y de análisis
-description: La carga de trabajo de Aplicaciones de ciencia de datos y de análisis en Visual Studio reúne los lenguajes Python, R, F# y sus correspondientes distribuciones del entorno en tiempo de ejecución, incluida Anaconda.
+description: Esta carga de trabajo de Visual Studio reúne los lenguajes Python, R, F# y sus correspondientes distribuciones de tiempo de ejecución, incluida Anaconda.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs - vs-python
@@ -10,13 +10,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 29812965a364b6de272f0e365f49552e4627361f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="data-science-and-analytical-applications-workload"></a>Carga de trabajo Aplicaciones de ciencia de datos y de análisis
+# <a name="install-data-science-support-in-visual-studio"></a>Instalación de la compatibilidad con ciencia de datos en Visual Studio
 
 La carga de trabajo Aplicaciones de ciencia de datos y de análisis de Visual Studio, que puede seleccionar e instalar mediante el instalador de Visual Studio, reúne tres lenguajes y sus correspondientes distribuciones para los entornos de ejecución:
 

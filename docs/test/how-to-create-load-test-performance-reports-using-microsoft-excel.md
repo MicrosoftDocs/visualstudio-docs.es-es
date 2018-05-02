@@ -1,5 +1,5 @@
 ---
-title: Crear informes de rendimiento de la prueba de carga de Visual Studio con Microsoft Excel | Microsoft Docs
+title: Creación de informes de rendimiento de la prueba de carga de Visual Studio con Microsoft Excel
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95be1cd0e6e5ab4d5fd3b487465ba09711f97714
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Cómo: Crear informes de rendimiento de la prueba de carga con Microsoft Excel
 

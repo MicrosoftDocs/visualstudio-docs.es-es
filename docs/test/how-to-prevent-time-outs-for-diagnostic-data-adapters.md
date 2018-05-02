@@ -1,5 +1,5 @@
 ---
-title: Tiempos de espera para adaptadores de datos de diagnóstico en Visual Studio | Microsoft Docs
+title: Tiempos de espera para adaptadores de datos de diagnóstico en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: 39fff4fc-9233-4f67-96ac-e81bbaf7ca82
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 61572a323fa29892096c963ad94a5e201dd61ec9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7d15f2e65d30235e67fd0775684fd22e8eed0fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Cómo: Evitar los tiempos de espera para los adaptadores de datos de diagnóstico
 

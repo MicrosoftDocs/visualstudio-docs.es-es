@@ -1,5 +1,5 @@
 ---
-title: Analizar errores en las pruebas de carga con el Panel de contadores en Visual Studio | Microsoft Docs
+title: Análisis de los errores en las pruebas de carga con el Panel de contadores en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: 981b4f1e-505a-4078-a06d-58ae17d996b4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2705120f5cf0e13e94369140c256bd3c7ae1466b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e37b39d504059491318913f6eb1345d73ef3074b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-analyze-errors-using-the-counters-panel"></a>Cómo: Analizar errores con el panel Contadores
 

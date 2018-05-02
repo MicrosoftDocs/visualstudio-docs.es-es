@@ -1,5 +1,5 @@
 ---
-title: Modelos de carga para pruebas de carga en Visual Studio | Microsoft Docs
+title: Modelos de carga para pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edición de los modelos de carga para modelar las actividades de usuarios virtuales
 
@@ -43,7 +44,8 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
  Por ejemplo, una carga por pasos con un **Recuento inicial de usuarios** de uno, un **Recuento máximo de usuarios** de 100, una **Duración del paso (segundos)** de 10 y un **Recuento de usuarios por pasos** de 1 crea un modelo de carga de usuarios que empieza en 1 y se incrementa en 1 cada 10 segundos hasta que se llega a 100 usuarios.
 
 > [!NOTE]
->  Si la duración total de la prueba es inferior al tiempo necesario para llegar paso a paso a la carga máxima de usuarios, la prueba se detiene cuando se agota la duración y no alcanza el objetivo de recuento máximo de usuarios.
+> Si la duración total de la prueba es inferior al tiempo necesario para llegar paso a paso a la carga máxima de usuarios, la prueba se detiene cuando se agota la duración y no alcanza el objetivo de recuento máximo de usuarios.
+
 
  Puede utilizar el objetivo por pasos para aumentar la carga hasta que el servidor llegue a un punto en que el rendimiento disminuye de manera considerable. A medida que aumente la carga, el servidor se quedará finalmente sin recursos. La carga por pasos resulta una buena forma de determinar el número de usuarios con el que esto ocurre. Con la carga por pasos, también tiene que supervisar atentamente los recursos de agente para asegurarse de que los agentes pueden generar la carga deseada.
 
@@ -117,12 +119,14 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
  Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades del modelo de carga asociadas a un escenario a niveles en los que se cumplan los objetivos de la prueba.
 
 > [!NOTE]
->  Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
+> Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
+
 
  Un modelo de carga especifica el número de usuarios virtuales activos durante una prueba de carga y la velocidad con que se agregan nuevos usuarios. Puede elegir entre las tres tramas disponibles: la de pasos, la constante y la basada en objetivos. Para obtener más información, vea [Specifying the Number of Virtual Users with Load Patterns in a Load Test Scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
 
 > [!NOTE]
->  También puede cambiar las propiedades de carga mediante programación usando un complemento de prueba de carga. Para obtener más información, vea [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+> También puede cambiar las propiedades de carga mediante programación usando un complemento de prueba de carga. Para obtener más información, vea [Cómo: Crear un complemento de pruebas de carga](../test/how-to-create-a-load-test-plug-in.md).
+
 
 ### <a name="to-change-the-load-pattern"></a>Para cambiar el modelo de carga
 

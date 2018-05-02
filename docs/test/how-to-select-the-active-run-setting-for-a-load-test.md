@@ -1,5 +1,5 @@
 ---
-title: Seleccionar un parámetro de ejecución para una prueba de carga en Visual Studio | Microsoft Docs
+title: Selección de un parámetro de ejecución para una prueba de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dc521cf8e0218fabd691493fdb65fb46471e05bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Cómo: Seleccionar el parámetro de ejecución activo para una prueba de carga
 
@@ -43,7 +44,8 @@ En el Editor de prueba de carga, el parámetro de ejecución activo se identific
      El parámetro de ejecución seleccionado se activará y permanecerá en ese estado hasta que se active otro parámetro de ejecución.
 
 > [!NOTE]
->  Puede reemplazar el parámetro de ejecución activo estableciendo una variable de entorno denominada `Test.UseRunSetting=<run setting name>`. Esto resulta muy útil cuando se ejecuta una prueba de carga desde la línea de comandos o desde un archivo por lotes. Esto le permite elegir diferentes parámetros de ejecución sin tener que abrir la prueba de carga.
+> Puede reemplazar el parámetro de ejecución activo estableciendo una variable de entorno denominada `Test.UseRunSetting=<run setting name>`. Esto resulta muy útil cuando se ejecuta una prueba de carga desde la línea de comandos o desde un archivo por lotes. Esto le permite elegir diferentes parámetros de ejecución sin tener que abrir la prueba de carga.
+
 
 ## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Especificar el parámetro de ejecución para utilizar desde la línea de comandos
  Puede invalidar los parámetros de ejecución predeterminados en la prueba de carga estableciendo una variable de entorno de la línea de comandos:

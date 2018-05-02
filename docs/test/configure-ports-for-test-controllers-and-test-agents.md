@@ -1,5 +1,5 @@
 ---
-title: Configurar los puertos para los controladores de pruebas y los agentes de pruebas en Visual Studio | Microsoft Docs
+title: Configuración de los puertos para los controladores de pruebas y los agentes de pruebas en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,13 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5ae620904929f6e2da5c727751e46fe9d0874276
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4067dae0d75f5fbd4e4dfb3ff7bacfc1ff269512
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurar los puertos para los controladores de pruebas y los agentes de pruebas
 

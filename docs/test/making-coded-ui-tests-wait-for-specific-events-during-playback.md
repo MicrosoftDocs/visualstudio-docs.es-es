@@ -1,6 +1,7 @@
 ---
-title: Hacer que las pruebas automatizadas de UI esperen por eventos específicos en Visual Studio | Microsoft Docs
+title: Hacer que las pruebas automatizadas de IU esperen por eventos específicos en Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
@@ -8,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c288958ba2864c9db962b050ad3139dbb4f7ccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7503bc77f9cd857a0a551ff3862e2aa9824583ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Hacer que la prueba de IU codificada espere por eventos concretos durante la reproducción
 
@@ -23,7 +24,8 @@ En una reproducción de prueba de UI codificada, puede indicar a la prueba que e
  Visual Studio Enterprise
 
 > [!TIP]
->  También puede agregar retrasos antes de las acciones con el editor de pruebas de IU codificadas. Para obtener más información, consulte [Cómo insertar un retraso antes de una acción de IU mediante el editor de pruebas de IU codificadas](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> También puede agregar retrasos antes de las acciones con el editor de pruebas de IU codificadas. Para obtener más información, consulte [Cómo insertar un retraso antes de una acción de IU mediante el editor de pruebas de IU codificadas](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
+
 
  **Métodos de UITestControl.WaitForControlXXX()**
 

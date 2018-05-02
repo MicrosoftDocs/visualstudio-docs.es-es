@@ -2,13 +2,13 @@
 ## Experiencias del suscriptor
 ### [Uso del portal del suscriptor](using-the-subscriber-portal.md)
 #### [Activación de suscripciones comerciales](activate-store-subscriptions.md)
-#### [Iniciar sesión](signing-in.md)
+#### [Inicio de sesión](signing-in.md)
 #### [Identidades alternativas](vs-alternate-identity.md)
 ##### [Inicio de sesión con alias](aliasing.md)
-#### [Administración de sus suscripciones](manage-vs-subscriptions.md)
+#### [Administración de las suscripciones](manage-vs-subscriptions.md)
 ### [Descarga de software](subscriber-downloads.md)
 #### [Lista de descargas de software disponibles](software-download-list.md)
-### [Obtención y administración de las claves de producto](product-keys.md)
+### [Obtención y administración de claves de producto](product-keys.md)
 ### Visual Studio Dev Essentials
 #### [Unión a Visual Studio Dev Essentials](join-dev-essentials.md)
 #### [Rechazo de Visual Studio Dev Essentials](leave-vsde.md)

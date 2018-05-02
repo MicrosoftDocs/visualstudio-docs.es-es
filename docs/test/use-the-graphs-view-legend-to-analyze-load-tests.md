@@ -1,5 +1,5 @@
 ---
-title: Usar la leyenda de la vista Diagramas para analizar pruebas de carga en Visual Studio | Microsoft Docs
+title: Uso de la leyenda de la vista Diagramas para analizar pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a6c14375d46c4317b86b9da67526230369cfbcb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55d38dcb87081ea7fc0b16d7d500d13e72f77269
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Usar la leyenda de la vista Diagramas para analizar pruebas de carga
 

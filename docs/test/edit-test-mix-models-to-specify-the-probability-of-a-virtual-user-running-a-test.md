@@ -1,5 +1,5 @@
 ---
-title: Editar modelos de combinación de pruebas en Visual Studio | Microsoft Docs
+title: Edición de modelos de combinación de pruebas en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ebcb58ea848bbb04dd4fdb132a87c66707bc4af8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3f06eac67207209932073899ae0277f9a156b54
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba
 

@@ -1,5 +1,5 @@
 ---
-title: Crear un complemento de grabación para pruebas de rendimiento web en Visual Studio | Microsoft Docs
+title: Creación de un complemento de grabación para pruebas de rendimiento web en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 145fc290360b8f8cac55a952b5c24a367ef847ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 008275d4e0ff094c7933b4e0bae89055acd4bf8e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Cómo: Crear un complemento de grabación
 

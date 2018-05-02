@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en los archivos .targets que proporciona MSBuild.  
@@ -69,9 +69,10 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
 |FileAlignment|Especifica, en bytes, dónde se alinean las secciones del archivo de salida. Los valores válidos son 512, 1024, 2048, 4096, 8192. Esta propiedad es equivalente al modificador `/filealignment` del compilador.|  
 |FrameworkPathOverride|Especifica la ubicación de mscorlib.dll y microsoft.visualbasic.dll. Este parámetro es equivalente al modificador `/sdkpath` del compilador de vbc.exe.|  
 |GenerateDocumentation|(Solo Visual Basic) Parámetro booleano que indica si la compilación generará la documentación. Si es `true`, la compilación genera la información de documentación y la coloca en un archivo .xml junto con el nombre del archivo ejecutable o la biblioteca creada por la tarea de compilación.|
-|IntermediateOutputPath|Ruta de acceso intermedia completa de los resultados derivada de `BaseIntermediateOutputPath`, si no se especificó ninguna ruta de acceso. Por ejemplo, \obj\debug\\. Si se invalida esta propiedad, el valor de `BaseIntermediateOutputPath` no tiene ningún efecto.|  
+|IntermediateOutputPath|Ruta de acceso intermedia completa de los resultados derivada de `BaseIntermediateOutputPath`, si no se especificó ninguna ruta de acceso. Por ejemplo, \obj\debug\\.|  
 |KeyContainerName|Nombre del contenedor de claves de nombre seguro.|  
 |KeyOriginatorFile|Nombre del archivo de claves de nombre seguro.|  
+|MSBuildProjectExtensionsPath|Especifica la ruta de acceso donde se encuentran las extensiones de proyecto. De forma predeterminada, esto tiene el mismo valor que `BaseIntermediateOutputPath`.|  
 |ModuleAssemblyName|Nombre del ensamblado al que se incorporará el módulo compilado. Esta propiedad es equivalente al modificador `/moduleassemblyname` de compilador.|  
 |NoLogo|Valor booleano que indica si se va a desactivar el logotipo del compilador. Esta propiedad es equivalente al modificador `/nologo` del compilador.|  
 |NoStdLib|Valor booleano que indica si se debe evitar hacer referencia a la biblioteca estándar (mscorlib.dll). El valor predeterminado es `false`.|  

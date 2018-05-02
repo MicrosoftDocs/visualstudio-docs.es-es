@@ -1,6 +1,7 @@
 ---
-title: 'Cómo: Crear una prueba unitaria controlada por datos en Visual Studio | Microsoft Docs'
+title: 'Cómo: Crear una prueba unitaria controlada por datos en Visual Studio'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -15,11 +16,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4e243afbdd5df41cf3b4716cafd7c82f5d4f7984
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Cómo: Crear una prueba unitaria controlada por datos
 

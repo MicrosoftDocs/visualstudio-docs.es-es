@@ -19,20 +19,36 @@
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: Tutoriales
   items:
-    - name: '0: Instalar la compatibilidad de Python'
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: '1: Creación de un proyecto de Python'
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: '2: Escritura y ejecución de código'
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: '3: Uso de la ventana interactiva de REPL'
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: '4: Ejecución de código en el depurador'
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: '5: Instalación de paquetes y administración de entornos de Python'
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: '6: Trabajo con Git'
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Python en Visual Studio
+      items:
+        - name: '0: Instalar la compatibilidad de Python'
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: '1: Creación de un proyecto de Python'
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: '2: Escritura y ejecución de código'
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: '3: Uso de la ventana interactiva de REPL'
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: '4: Ejecución de código en el depurador'
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: '5: Instalación de paquetes y administración de entornos de Python'
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: '6: Trabajo con Git'
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Información acerca de Django en Visual Studio
+      items:
+        - name: 1. Crear un proyecto y una solución
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2. Crear una aplicación de Django
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3. Servir archivos estáticos y agregar páginas
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4. Usar la plantilla de proyecto web de Django
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5. Autenticar usuarios
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6. Usar la plantilla de proyecto web de Django de sondeos
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
 - name: Conceptos
   items:
     - name: Proyectos de Python
@@ -106,5 +122,7 @@
       href: using-python-cookiecutter-templates.md
 - name: Referencia
   items:
+    - name: Plantillas de elementos
+      href: python-item-templates.md
     - name: Opciones
       href: python-support-options-and-settings-in-visual-studio.md

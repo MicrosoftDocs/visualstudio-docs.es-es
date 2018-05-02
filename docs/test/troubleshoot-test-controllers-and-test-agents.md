@@ -1,7 +1,7 @@
 ---
-title: Solucionar problemas de controladores y agentes de pruebas en Visual Studio | Microsoft Docs
+title: Solución de problemas de controladores y agentes de pruebas en Visual Studio
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estrategias para solucionar problemas de controladores de pruebas y agentes de prueba en pruebas de carga
 
@@ -27,7 +28,8 @@ En este artículo se tratan algunos problemas comunes que pueden aparecer cuando
  Al ejecutar una prueba de carga, puede recibir errores al intentar conectarse a un equipo de agente de prueba y recopilar los contadores de rendimiento. El servicio de registro remoto es el servicio responsable de proporcionar los datos del contador de rendimiento a un equipo remoto. En algunos sistemas operativos, el servicio Registro remoto no se inicia automáticamente. Para corregir este problema, inicie manualmente el servicio Registro remoto.
 
 > [!NOTE]
->  Puede acceder al servicio Registro remoto en el **Panel de control**. Elija **Herramientas administrativas** y, luego, **Servicios**.
+> Puede acceder al servicio Registro remoto en el **Panel de control**. Elija **Herramientas administrativas** y, luego, **Servicios**.
+
 
  Otro motivo de este problema es no disponer de los permisos adecuados para leer los contadores de rendimiento. En las ejecuciones de pruebas locales, la cuenta del usuario que ejecuta la prueba debe ser miembro del grupo Usuarios avanzados, o superior, o del grupo Usuarios del monitor de sistema. En las ejecuciones de pruebas remotas, la cuenta en la que se configura la ejecución del controlador debe ser miembro del grupo Usuarios avanzados, o superior, o del grupo Usuarios del monitor del sistema.
 
@@ -87,7 +89,8 @@ En este artículo se tratan algunos problemas comunes que pueden aparecer cuando
  Si se instala el controlador de pruebas en un equipo con varios adaptadores de red, se puede producir este error.
 
 > [!NOTE]
->  También es posible instalar los agentes de prueba correctamente y no detectar este problema hasta que se ejecute una prueba.
+> También es posible instalar los agentes de prueba correctamente y no detectar este problema hasta que se ejecute una prueba.
+
 
  Para corregir este error, debe enlazar el controlador de pruebas a uno de los adaptadores de red. Debe establecer la propiedad `BindTo` en el controlador de pruebas y, a continuación, cambiar el agente de prueba para que haga referencia al controlador de pruebas mediante la dirección IP en vez del nombre. Los pasos se facilitan en los procedimientos siguientes.
 

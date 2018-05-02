@@ -1,5 +1,5 @@
 ---
-title: Panel Contadores para analizar pruebas de carga en Visual Studio | Microsoft Docs
+title: Panel Contadores para analizar pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: e1a388d7-5d33-4631-931a-5653ac4aefdc
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f6543cc42d6ac62a252b450a232700b17f05b719
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd276a70a99344b837dad5cb12a0d87365535f39
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Usar el panel Contadores en la vista Gráficos y la vista Tablas
 

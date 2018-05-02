@@ -1,5 +1,5 @@
 ---
-title: Agregar etiquetas de equipo a asignaciones de conjuntos de contadores para pruebas de carga en Visual Studio | Microsoft Docs
+title: Adición de etiquetas de equipo a asignaciones de conjuntos de contadores para pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: f52a73e1-036a-4b28-a6c8-848284bf4488
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 26a0ffc5835e79ee02d1041c4e228f59bcd87d37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6b14ef4ae42ef978c449f7cb4bafaa08bf8a1a6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor"></a>Cómo: Agregar etiquetas de equipo a asignaciones de conjuntos de contadores con el Editor de prueba de carga
 

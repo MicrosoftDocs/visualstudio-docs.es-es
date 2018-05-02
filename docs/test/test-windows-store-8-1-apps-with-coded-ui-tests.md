@@ -1,6 +1,7 @@
 ---
-title: Probar aplicaciones para UWP con pruebas automatizadas de IU en Visual Studio | Microsoft Docs
+title: Prueba de aplicaciones para Windows UWP con pruebas automatizadas de IU en Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -11,11 +12,11 @@ dev_langs:
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 8167834fdfb4cf0251aad4a5d31c4dea00e37731
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a3230d8d13ca7a3aa028be4520ab291b68b3b0c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Probar aplicaciones para Windows UWP con pruebas automatizadas de UI
 

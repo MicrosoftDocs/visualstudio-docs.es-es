@@ -1,5 +1,6 @@
 ---
-title: Portar, migrar y actualizar proyectos de Visual Studio
+title: Portar, migrar y actualizar proyectos
+description: Una referencia de la compatibilidad en Visual Studio 2017 para los proyectos creados en versiones anteriores de Visual Studio y cómo Visual Studio decide cuándo es necesario migrar un proyecto.
 ms.date: 03/14/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -18,13 +19,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2e7112794d0b7104c10b7130a96c76d73de46b52
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Portar, migrar y actualizar proyectos de Visual Studio
+# <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Referencia de migración y actualización de proyectos para Visual Studio 2017
 
 Cada nueva versión de Visual Studio suele ser compatible con la mayoría de los tipos anteriores de proyectos, archivos y otros activos. Puede trabajar con ellos [igual que ha hecho hasta ahora](../ide/solutions-and-projects-in-visual-studio.md) y, siempre y cuando no dependa de las características más recientes, Visual Studio mantendrá por lo general la compatibilidad con versiones anteriores, como Visual Studio 2015, Visual Studio 2013 y Visual Studio 2012. (Vea en [Notas de la versión](https://www.visualstudio.com/vs/release-notes/) las funciones específicas de cada versión).
 
