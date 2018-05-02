@@ -2,8 +2,13 @@
 title: Portar, migrar y actualizar proyectos
 description: Una referencia de la compatibilidad en Visual Studio 2017 para los proyectos creados en versiones anteriores de Visual Studio y cómo Visual Studio decide cuándo es necesario migrar un proyecto.
 ms.date: 03/14/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+author: kraigb
+ms.author: kraigb
+manager: douge
+ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -14,16 +19,11 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-author: kraigb
-ms.author: kraigb
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 2e7112794d0b7104c10b7130a96c76d73de46b52
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Referencia de migración y actualización de proyectos para Visual Studio 2017
 
