@@ -14,13 +14,13 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 80ca583b3cd773121cda7b0311fcf551472cb2d4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a896047ad8141bc7edf797066df9d309bf7eb72c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Introducción a C# y ASP.NET Core en Visual Studio
+# <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Introducción a C# y ASP.NET Core en Visual Studio
 En este tutorial para el desarrollo de C# con ASP.NET Core mediante Visual Studio, creará una aplicación web de C# ASP.NET Core, le agregará código, explorará algunas características del IDE y ejecutará la aplicación.
 
 Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita.
@@ -42,7 +42,7 @@ En primer lugar, creará un proyecto de ASP.NET Core. En el tipo de proyecto se 
 
 1. Abra Visual Studio 2017.
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**
+2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
 3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**, expanda **Web** y después seleccione **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core**, asigne el nombre *MyCoreApp* al archivo y, después, haga clic en **Aceptar**.   
 
@@ -86,15 +86,15 @@ El patrón de MVC ayuda a crear aplicaciones que son más fáciles de actualizar
 
     ![Explorador de soluciones de ASP.NET en Visual Studio](../ide/media/csharp-aspnet-solution-explorer-mycoreapp.png)
 
-1. Abra el archivo **HomeController.cs** desde la carpeta **Controladores**.
+1. Abra el archivo *HomeController.cs* desde la carpeta **Controladores**.
 
       ![Archivo HomeController.cs en el Explorador de soluciones de Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
-2. Ver el archivo **HomeController.cs**
+2. Ver el archivo *HomeController.cs*
 
   ![HomeController.cs en la ventana de código de Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. El proyecto también tiene una carpeta **Vistas** que contiene otras carpetas que se asignan a cada controlador (además de una para las vistas **compartidas**). Por ejemplo, el archivo CSHTML de la vista (una extensión de HTML) para la ruta de acceso **/Home/About** estaría en **Views/Home/About.cshtml**. Abra ese archivo.
+4. El proyecto también tiene una carpeta **Vistas** que contiene otras carpetas que se asignan a cada controlador (además de una para las vistas **compartidas**). Por ejemplo, el archivo CSHTML de la vista (una extensión de HTML) para la ruta de acceso */Home/About* estaría en *Views/Home/About.cshtml*. Abra ese archivo.
 
   ![Archivo About.cshtml en el Explorador de soluciones en Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
@@ -103,13 +103,13 @@ El patrón de MVC ayuda a crear aplicaciones que son más fáciles de actualizar
   ![About.cshtml en la ventana de código de Visual Studio](../ide/media/csharp-aspnet-about-cshtml-code.png)
 
  >[!NOTE]
- > Para obtener más información al respecto, vea la página [Introducción a C# y ASP.NET mediante la sintaxis Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+ > Para más información al respecto, consulte la página [Introducción a C# y ASP.NET mediante la sintaxis Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
-6. La solución también contiene una carpeta **wwwroot** que es la raíz del sitio web. Puede colocar el contenido estático del sitio (como CSS, imágenes y bibliotecas de JavaScript) directamente en las rutas de acceso en las que quiera que esté cuando se implemente el sitio.
+6. La solución también contiene una carpeta *wwwroot* que es la raíz del sitio web. Puede colocar el contenido estático del sitio (como CSS, imágenes y bibliotecas de JavaScript) directamente en las rutas de acceso en las que quiera que esté cuando se implemente el sitio.
 
  ![Carpeta wwwroot en el Explorador de soluciones en Visual Studio](../ide/media/csharp-aspnet-solution-wwwroot.png)
 
-7. También hay una variedad de archivos de configuración que sirven para administrar el proyecto, sus paquetes y la aplicación en tiempo de ejecución. Por ejemplo, la [configuración](/aspnet/core/fundamentals/configuration) predeterminada de la aplicación se almacena en **appsettings.json**. Pero puede invalidar algunos o todos estos valores de forma individual en cada entorno, por ejemplo, proporcionando un archivo **appsettings.Development.json** para el entorno **Desarrollo**.
+7. También hay una variedad de archivos de configuración que sirven para administrar el proyecto, sus paquetes y la aplicación en tiempo de ejecución. Por ejemplo, la [configuración](/aspnet/core/fundamentals/configuration) predeterminada de la aplicación se almacena en *appsettings.json*. Pero puede invalidar algunos o todos estos valores de forma individual en cada entorno, por ejemplo, proporcionando un archivo *appsettings.Development.json* para el entorno **Desarrollo**.
 
  ![Archivos de configuración en el Explorador de soluciones en Visual Studio](../ide/media/csharp-aspnet-solution-explorer-config-files.png)
 
@@ -126,21 +126,21 @@ El patrón de MVC ayuda a crear aplicaciones que son más fáciles de actualizar
 
  ![Seleccione Acerca de en la ventana del explorador de la aplicación](../ide/media/csharp-aspnet-browser-page.png)
 
- Entre otras cosas, la página Acerca de en el explorador representa el texto que se establece en el archivo HomeController.cs.
+ Entre otras cosas, la página **Acerca de** en el explorador representa el texto que se establece en el archivo *HomeController.cs*.
 
    ![Ver el texto de la página Acerca de](../ide/media/csharp-aspnet-browser-page-about.png)
 
-1. Mantenga abierta la ventana del explorador y vuelva a Visual Studio. Abra **Controllers/HomeController.cs** si todavía no está abierto.
+1. Mantenga abierta la ventana del explorador y vuelva a Visual Studio. Abra *Controllers/HomeController.cs* si todavía no está abierto.
 
  ![Abrir el archivo HomeController.cs desde el Explorador de soluciones en Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 1. Establezca un punto de interrupción en la primera línea del método **About**. Para ello, haga clic en el margen o sitúe el cursor en la línea y presione **F9**.
 
-  Esta línea establece algunos datos de la colección **ViewData** que se representan en la página CSHTML en **Views/Home/About.cshtml**.
+  Esta línea establece algunos datos de la colección **ViewData** que se representan en la página CSHTML en *Views/Home/About.cshtml*.
 
  ![Establecer un punto de interrupción en la primera línea del método About de About.cshtml.  ](../ide/media/csharp-aspnet-home-controller-code-set-breakpoint.png)
 
-1. Vuelva al explorador y actualice la página Acerca de. Esto activará el punto de interrupción en Visual Studio.
+1. Vuelva al explorador y actualice la página **Acerca de**. Esto activará el punto de interrupción en Visual Studio.
 
 1. En Visual Studio, mueva el mouse sobre el miembro **ViewData** para ver sus datos.
 
@@ -148,7 +148,7 @@ El patrón de MVC ayuda a crear aplicaciones que son más fáciles de actualizar
 
 1. Quite el punto de interrupción de la aplicación con el mismo método usado para agregarlo.
 
-1. Abra **Views/Home/About.cshtml**.
+1. Abra *Views/Home/About.cshtml*.
 
  ![Seleccionar About.cshtml en el Explorador de soluciones](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
