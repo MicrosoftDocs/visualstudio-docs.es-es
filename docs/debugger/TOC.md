@@ -9,6 +9,7 @@
 ## [Información sobre cómo depurar con Visual Studio](getting-started-with-the-debugger.md)
 ## [Ejecución de código Python en el depurador...](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Depuración de una aplicación de Azure en vivo](debug-live-azure-applications.md)
+## [Depuración de código administrado y nativo](how-to-debug-managed-and-native-code.md)
 ## [Visualización de instantáneas mediante step-back de IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Guías de procedimientos
 ## [Navegación en el código con el depurador](navigating-through-code-with-the-debugger.md)
