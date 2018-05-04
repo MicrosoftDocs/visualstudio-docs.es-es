@@ -1,30 +1,29 @@
 ---
-title: "Desarrollo de código en Visual Studio sin proyectos o soluciones | Microsoft Docs"
+title: Desarrollo de código en Visual Studio sin proyectos o soluciones
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 6a2fee12882275d78d759e39d69674b4aef2f38b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones
 
 En Visual Studio 2017, puede abrir código desde casi cualquier tipo de proyecto basado en directorios en Visual Studio sin necesidad de un archivo de solución o proyecto. Esto significa que, por ejemplo, puede clonar un repositorio en GitHub, abrirlo directamente en Visual Studio y comenzar a desarrollar sin tener que crear una solución o proyecto. Si es necesario, puede especificar tareas de compilación personalizadas y parámetros de inicio a través de archivos JSON simples.
 
-Una vez que abre los archivos de código en Visual Studio, el Explorador de soluciones muestra todos los archivos de la carpeta. Puede hacer clic en cualquier archivo para comenzar a editarlo. En segundo plano, Visual Studio comienza a indexar los archivos para habilitar las características de refactorización, navegación e IntelliSense. A medida que edita, crea, mueve o elimina archivos, Visual Studio hace seguimiento de manera automática de los cambios y actualiza de manera continua su indice de IntelliSense. El código aparecerá con coloración de sintaxis y, en muchos casos, incluye la finalización de instrucciones de IntelliSense básicas.
+Una vez que abre los archivos de código en Visual Studio, el **Explorador de soluciones** muestra todos los archivos de la carpeta. Puede hacer clic en cualquier archivo para comenzar a editarlo. En segundo plano, Visual Studio comienza a indexar los archivos para habilitar las características de refactorización, navegación e IntelliSense. A medida que edita, crea, mueve o elimina archivos, Visual Studio hace seguimiento de manera automática de los cambios y actualiza de manera continua su indice de IntelliSense. El código aparecerá con coloración de sintaxis y, en muchos casos, incluye la finalización de instrucciones de IntelliSense básicas.
 
 ## <a name="open-any-code"></a>Apertura de cualquier tipo de código
 
@@ -32,7 +31,7 @@ Puede abrir el código en Visual Studio de una de las maneras siguientes:
 
 - En la barra de menús de Visual Studio, elija **Archivo** > **Abrir** > **Carpeta** y vaya a la ubicación del código.
 - En el menú contextual (clic derecho) de una carpeta que contiene código, elija el comando **Abrir en Visual Studio**.
-- Elija el vínculo **Abrir carpeta** en la página de inicio de Visual Studio.
+- Elija el vínculo **Abrir carpeta** en la **página de inicio** de Visual Studio.
 - Si es usuario de teclado, presione **Ctrl**+**Mayús**+**Alt**+**O** en Visual Studio.
 - Abra el código desde un repositorio GitHub clonado.
 
@@ -46,7 +45,7 @@ En el ejemplo siguiente se muestra cómo clonar un repositorio de GitHub y, a co
 
    ![Botón de clonar de GitHub](./media/VSIDE_Code_Clone.png)
 
-1. En Visual Studio, elija la pestaña **Team Explorer** para abrir Team Explorer. Si no ve la pestaña, ábralo desde **Ver** > **Team Explorer**.
+1. En Visual Studio, elija la pestaña **Team Explorer** para abrir **Team Explorer**. Si no ve la pestaña, ábralo desde **Ver** > **Team Explorer**.
 
 1. En Team Explorer, en la sección **Repositorios GIT locales**, elija el comando **Clonar** y, a continuación, pegue la dirección URL de la página de GitHub en el cuadro de texto.
 
@@ -54,11 +53,11 @@ En el ejemplo siguiente se muestra cómo clonar un repositorio de GitHub y, a co
 
 1. Elija el botón **Clonar** para clonar los archivos del proyecto en un repositorio de GIT local. Dependiendo del tamaño del repositorio, este proceso podría tardar varios minutos.
 
-1. Una vez que el repositorio se haya clonado en el sistema, en Team Explorer, elija el comando **Abrir** del menú contextual (clic con el botón derecho) del repositorio recién clonado.
+1. Una vez que el repositorio se haya clonado en el sistema, en **Team Explorer**, elija el comando **Abrir** del menú contextual (clic con el botón derecho) del repositorio recién clonado.
 
    ![Repositorio clonado](./media/VSIDE_Code_Clone3.png)
 
-1. Elija el comando **Mostrar vista de carpeta** para ver los archivos en el Explorador de soluciones.
+1. Elija el comando **Mostrar vista de carpeta** para ver los archivos en el **Explorador de soluciones**.
 
    ![Mostrar vista de carpeta](./media/VSIDE_Code_Clone3_show.png)
 

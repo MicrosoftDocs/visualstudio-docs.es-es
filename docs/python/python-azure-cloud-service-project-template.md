@@ -1,36 +1,30 @@
 ---
-title: Plantilla de proyectos de servicios en la nube de Azure para Python | Microsoft Docs
+title: Plantilla de proyecto de servicio de nube de Azure para Python
 description: Información general de la plantilla de Visual Studio para Azure Cloud Services escrita en Python, que incluye la implementación de roles, las dependencias y la solución de problemas.
-ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Proyectos de servicio en la nube de Azure para Python
 
 Visual Studio proporciona plantillas para ayudarle a empezar a crear Azure Cloud Services con Python.
 
-Un [servicio en la nube](http://go.microsoft.com/fwlink/?LinkId=306052) consta de cualquier número de *roles de trabajo* y *roles web*, cada uno de los cuales realiza una tarea conceptualmente independiente, pero se puede replicar por separado entre máquinas virtuales según sea necesario para escalar. Los roles web proporcionan hospedaje para aplicaciones web de front-end. En lo que se refiere a Python, se puede usar cualquier marco web que admita WSGI para escribir este tipo de aplicación (tal como admite la [plantilla Proyecto web](python-web-application-project-templates.md)). Los roles de trabajo están pensados para procesos de larga ejecución que no interactúan directamente con los usuarios. Dichos usuarios normalmente usan las bibliotecas de [datos](http://go.microsoft.com/fwlink/?LinkId=401571) y del [servicio de aplicaciones](http://go.microsoft.com/fwlink/?LinkId=401572), que se pueden instalar con [`pip install azure`](http://pypi.org/project/azure).
+Un [servicio en la nube](https://docs.microsoft.com/azure/cloud-services/) consta de cualquier número de *roles de trabajo* y *roles web*, cada uno de los cuales realiza una tarea conceptualmente independiente, pero se puede replicar por separado entre máquinas virtuales según sea necesario para escalar. Los roles web proporcionan hospedaje para aplicaciones web de front-end. En lo que se refiere a Python, se puede usar cualquier marco web que admita WSGI para escribir este tipo de aplicación (tal como admite la [plantilla Proyecto web](python-web-application-project-templates.md)). Los roles de trabajo están pensados para procesos de larga ejecución que no interactúan directamente con los usuarios. Suelen usar los paquetes del paquete "azure", que se instala con [`pip install azure`](http://pypi.org/project/azure).
 
-Este artículo contiene detalles sobre la plantilla de proyecto y otra compatibilidad en Visual Studio 2017 (las versiones anteriores son similares, pero con algunas diferencias). Para más información sobre el trabajo con Azure desde Python, visite el [Centro para desarrolladores de Python para Azure](http://go.microsoft.com/fwlink/?linkid=254360).
+Este artículo contiene detalles sobre la plantilla de proyecto y otra compatibilidad en Visual Studio 2017 (las versiones anteriores son similares, pero con algunas diferencias). Para más información sobre el trabajo con Azure desde Python, visite el [Centro para desarrolladores de Python para Azure](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 
 ## <a name="create-a-project"></a>Crear un proyecto
 

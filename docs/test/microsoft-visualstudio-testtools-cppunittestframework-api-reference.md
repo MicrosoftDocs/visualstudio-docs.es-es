@@ -1,18 +1,19 @@
 ---
-title: Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework | Microsoft Docs
+title: Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 ms.date: 11/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: reference
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 17b3b159f6baea62a079da622ccf0b44dc43591b
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1ab231191be638b529ffe5f4bbc3f5d4801f4bf4
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -147,7 +148,7 @@ TEST_CLASS_INITIALIZE(methodName)
 }
 ```
 
- Define *methodName* como un método que se ejecuta después de que se cree cada clase de prueba. `TEST_CLASS_INITIALIZE` solo se puede definir una vez en una clase de prueba y se debe definir en el ámbito de la clase de prueba.
+ Define *methodName* como un método que se ejecuta antes de que se cree cada clase de prueba. `TEST_CLASS_INITIALIZE` solo se puede definir una vez en una clase de prueba y se debe definir en el ámbito de la clase de prueba.
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)

@@ -1,31 +1,25 @@
 ---
-title: Opciones de Herramientas de R en Visual Studio | Microsoft Docs
-description: "Referencia de las opciones de Visual Studio para el lenguaje R y características asociadas."
-ms.custom: 
+title: Opciones de Herramientas de R
+description: Referencia de las opciones de Visual Studio para el lenguaje R y características asociadas.
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- devlang-r
-dev_langs:
-- R
-ms.tgt_pltfrm: 
+ms.prod: visual-studio-dev15
+ms.technology: vs-rtvs
+ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
 - vs.toolsoptionspages.r_tools
 - vs.toolsoptionspages.r_tools.advanced
 - vs.toolsoptionspages.r_tools.#150
-ms.topic: article
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2a2671c5a234d4a30d64823794880dc648d219b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 625062930b533e35ab79564377d0220a5d98f1d7
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Opciones de Herramientas de R para Visual Studio
 

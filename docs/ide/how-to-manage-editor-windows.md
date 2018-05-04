@@ -1,63 +1,62 @@
 ---
-title: "Cómo: Administrar las ventanas del editor | Microsoft Docs"
-ms.custom: 
+title: 'Cómo: Administrar las ventanas del editor'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editor windows
 - windows, managing editor windows
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 877f1e556498a31ec7ddfac12b1907d159c713cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 66b10bb58420b09bc184ef447503ca90acc7574f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-editor-windows"></a>Cómo: Administrar las ventanas del editor
-Puede trabajar con código en varias ubicaciones a la vez. Puede hacerlo dividiendo una ventana del editor o abriendo varias instancias de las ventanas del editor.  
-  
+
+Puede trabajar con código en varias ubicaciones a la vez. Para ello, divida una ventana del editor o abra varias instancias de ventanas del editor.
+
 > [!NOTE]
->  No todas las ventanas del editor admiten varias instancias.  
-  
-## <a name="splitting-an-editor-window"></a>División de una ventana del editor  
- Una instancia de una ventana del editor se puede dividir en dos vistas independientes para facilitar la edición.  
-  
-#### <a name="to-split-a-pane"></a>Para dividir un panel  
-  
-1.  Haga clic en la ventana del editor para que pase al primer plano.  
-  
-2.  En el menú **Ventana**, seleccione **Dividir**.  
-  
-     El área de edición se divide en dos paneles separados por una barra divisora. Puede desplazar estos paneles de forma independiente para ver y editar distintas partes del documento activo al mismo tiempo. Los cambios realizados en un panel se reflejarán en el otro.  
-  
+> No todas las ventanas del editor admiten varias instancias.
+
+## <a name="split-an-editor-window"></a>Dividir una ventana del editor
+
+Una instancia de una ventana del editor se puede dividir en dos vistas independientes para facilitar la edición.
+
+### <a name="to-split-a-pane"></a>Para dividir un panel
+
+1.  Haga clic en la ventana del editor para que pase al primer plano.
+
+2.  En el menú **Ventana**, seleccione **Dividir**.
+
+     El área de edición se divide en dos paneles separados por una barra divisora. Puede desplazar estos paneles de forma independiente para ver y editar distintas partes del documento activo al mismo tiempo. Los cambios realizados en un panel se reflejarán en el otro.
+
     > [!TIP]
-    >  Para hacer que un panel sea mayor que otro, arrastre la barra divisora hacia arriba o hacia abajo.  
-  
-#### <a name="to-return-to-single-pane-view"></a>Para volver a la vista de panel único  
-  
--   En el menú **Ventana**, seleccione **Quitar división**.  
-  
-## <a name="creating-new-windows"></a>Creación de nuevas ventanas  
- También puede crear varias instancias de una ventana del editor. Esta característica permite abrir un documento largo en más de una instancia de un editor para poder ver y editar las diferentes secciones simultáneamente en distintas ventanas del editor a tamaño completo.  
-  
-#### <a name="to-create-a-new-window"></a>Para crear una ventana  
-  
--   En el menú **Ventana**, haga clic en **Nueva ventana**.  
-  
-     Se agregará una nueva instancia con pestañas del editor.  
-  
-## <a name="see-also"></a>Vea también  
- [Personalizar el editor](../ide/customizing-the-editor.md)   
- [Escribir código](../ide/writing-code-in-the-code-and-text-editor.md)   
- [Personalizar los diseños de ventana](../ide/customizing-window-layouts-in-visual-studio.md)
+    > Para hacer que un panel sea mayor que otro, arrastre la barra divisora hacia arriba o hacia abajo.
+
+### <a name="to-return-to-single-pane-view"></a>Para volver a la vista de panel único
+
+-   En el menú **Ventana**, seleccione **Quitar división**.
+
+## <a name="create-new-windows"></a>Crear nuevas ventanas
+
+También puede crear varias instancias de una ventana del editor. Esta característica permite abrir un documento largo en más de una instancia de un editor para poder ver y editar las diferentes secciones simultáneamente en distintas ventanas del editor a tamaño completo.
+
+- En el menú **Ventana**, haga clic en **Nueva ventana**.
+
+   Se agregará una nueva instancia con pestañas del editor.
+
+## <a name="see-also"></a>Vea también
+
+- [Personalizar el editor](../ide/customizing-the-editor.md)
+- [Escribir código](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Personalizar los diseños de ventana](../ide/customizing-window-layouts-in-visual-studio.md)

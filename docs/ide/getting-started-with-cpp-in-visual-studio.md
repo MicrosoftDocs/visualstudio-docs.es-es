@@ -1,22 +1,23 @@
 ---
-title: Introducción a C++ en Visual Studio | Microsoft Docs
+title: Introducción a C++ en Visual Studio
+description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 
@@ -52,7 +53,7 @@ Visual Studio usa *proyectos* para organizar el código de una aplicación y *so
 
 1. Seleccione el botón **Aceptar** para crear el proyecto y la solución de la aplicación.
 
-   El proyecto y la solución HelloApp, así como los archivos básicos de una aplicación de consola Windows, se crean y se cargan automáticamente en el **Explorador de soluciones**. El archivo HelloApp.cpp se abre en el editor de código. Estos elementos aparecen en el **Explorador de soluciones**:
+   El proyecto y la solución HelloApp, así como los archivos básicos de una aplicación de consola Windows, se crean y se cargan automáticamente en el **Explorador de soluciones**. El archivo *HelloApp.cpp* se abre en el editor de código. Estos elementos aparecen en el **Explorador de soluciones**:
 
    ![Archivos de la solución en el Explorador de soluciones](../ide/media/get-started-cpp-solution-explorer.png "Archivos de la solución en el Explorador de soluciones")
 
@@ -62,7 +63,7 @@ El siguiente paso es agregar código para mostrar la palabra "Hello" en la venta
 
 ### <a name="to-edit-code-in-the-editor"></a>Para editar el código en el editor
 
-1. En el archivo HelloApp.cpp, escriba una línea en blanco antes de la línea `return 0;` y, después, escriba este código:
+1. En el archivo *HelloApp.cpp*, escriba una línea en blanco antes de la línea `return 0;` y, después, escriba este código:
 
    ```cpp
    cout << "Hello\n";
@@ -76,16 +77,16 @@ El siguiente paso es agregar código para mostrar la palabra "Hello" en la venta
 
    ![Error en la ventana Lista de errores](../ide/media/get-started-cpp-error-list.png "Error en la ventana Lista de errores")
 
-   El código no tiene una declaración para [std::cout](/cpp/standard-library/iostream), que se encuentra en el archivo de encabezado \<iostream>.
+   El código no tiene una declaración para [std::cout](/cpp/standard-library/iostream), que se encuentra en el archivo de encabezado *\<iostream>*.
 
-1. Para incluir el archivo de encabezado de iostream, escriba el siguiente código después de `#include "stdafx.h"`:
+1. Para incluir el archivo de encabezado de *iostream*, escriba el siguiente código después de `#include "stdafx.h"`:
 
    ```cpp
    #include <iostream>
    using namespace std;
    ```
 
-   Probablemente haya observado que, al escribir código, ha aparecido un cuadro. Este cuadro contiene sugerencias para completar automáticamente los caracteres a medida que se van escribiendo. Este cuadro forma parte de IntelliSense de C++, que proporciona indicaciones de codificación, incluida información sobre miembros de interfaz o clase y parámetros. También puede usar fragmentos de código, que son bloques de código predefinidos. Para obtener más información, vea [Using IntelliSense](../ide/using-intellisense.md) y [Code Snippets](../ide/code-snippets.md).
+   Probablemente haya observado que, al escribir código, ha aparecido un cuadro. Este cuadro contiene sugerencias para completar automáticamente los caracteres a medida que se van escribiendo. Este cuadro forma parte de IntelliSense de C++, que proporciona indicaciones de codificación, incluida información sobre miembros de interfaz o clase y parámetros. También puede usar fragmentos de código, que son bloques de código predefinidos. Para obtener más información, vea [Uso de IntelliSense](../ide/using-intellisense.md) y [Fragmentos de código](../ide/code-snippets.md).
 
    ![Código corregido en el editor](../ide/media/get-started-cpp-cout-fix.png "Código corregido en el editor")
 
@@ -105,11 +106,11 @@ Puede depurar HelloApp para ver si aparece la palabra "Hello" en la ventana de c
 
 ### <a name="to-debug-the-app"></a>Para depurar la aplicación
 
-1. Para iniciar el depurador, elija **Depurar > Iniciar depuración** en la barra de menús.
+Para iniciar el depurador, elija **Depurar > Iniciar depuración** en la barra de menús.
 
-   ![Comando Iniciar depuración en el menú Depurar](../ide/media/get-started-cpp-start-debugging-menu.png "Comando Iniciar depuración en el menú Depurar")
+![Comando Iniciar depuración en el menú Depurar](../ide/media/get-started-cpp-start-debugging-menu.png "Comando Iniciar depuración en el menú Depurar")
 
-   El depurador inicia y ejecuta el código. La ventana de consola (una ventana independiente que se parece a un símbolo del sistema) aparece durante unos segundos, pero se cierra rápidamente cuando el depurador deja de ejecutarse. Para ver el texto, deberá establecer un punto de interrupción para detener la ejecución del programa.
+El depurador inicia y ejecuta el código. La ventana de consola (una ventana independiente que se parece a un símbolo del sistema) aparece durante unos segundos, pero se cierra rápidamente cuando el depurador deja de ejecutarse. Para ver el texto, deberá establecer un punto de interrupción para detener la ejecución del programa.
 
 ### <a name="to-add-a-breakpoint"></a>Para agregar un punto de interrupción
 
@@ -129,7 +130,7 @@ Puede depurar HelloApp para ver si aparece la palabra "Hello" en la ventana de c
 
 1. Presione **MAYÚS+F5** para detener la depuración.
 
-Para más información sobre la depuración de proyectos de consola, vea [Console Projects](../debugger/debugging-preparation-console-projects.md) (Proyectos de consola).
+Para más información sobre la depuración de proyectos de consola, vea [Proyectos de consola](../debugger/debugging-preparation-console-projects.md).
 
 ## <a name="build-a-release-version-of-the-app"></a>Compilar una versión de lanzamiento de la aplicación
 
@@ -149,12 +150,12 @@ Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzam
 
 Cuando esta compilación acabe, habrá creado una aplicación que se puede copiar y ejecutar en cualquier ventana de símbolo del sistema. Puede que no sea mucho, pero abre la puerta a cosas mucho más grandes.
 
-¡Enhorabuena por completar este tutorial de inicio rápido! Si desea explorar más ejemplos, vea [Visual Studio Samples](../ide/visual-studio-samples.md).
+¡Enhorabuena por completar este tutorial de inicio rápido! Si desea explorar más ejemplos, vea [ejemplos de Visual Studio](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Vea también
 
-[Usar el IDE de Visual Studio para desarrollo de escritorio de C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
-[Tutorial: Creación de una aplicación sencilla con C# o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Sugerencias de productividad para Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
-[Ejemplos de Visual Studio](../ide/visual-studio-samples.md)  
-[Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+- [Usar el IDE de Visual Studio para desarrollo de escritorio de C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
+- [Tutorial: Creación de una aplicación sencilla con C# o Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Sugerencias de productividad para Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Ejemplos de Visual Studio](../ide/visual-studio-samples.md)
+- [Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)

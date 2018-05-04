@@ -1,0 +1,53 @@
+---
+title: Mejorar el rendimiento si Visual Studio es lento
+ms.date: 04/11/2018
+ms.topic: conceptual
+helpviewer_keywords:
+- performance [Visual Studio]
+author: gewarren
+ms.author: gewarren
+manager: douge
+f1_keywords:
+- vs.performancecenter
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: 4afd84dfaccc632143b380619a2324e607e833fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/26/2018
+---
+# <a name="optimize-visual-studio-performance"></a>Optimización del rendimiento de Visual Studio
+
+Este artículo proporciona algunas sugerencias que se pueden probar en el caso de que Visual Studio se ejecute lentamente. También puede echar un vistazo a [Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md) para obtener más sugerencias para mejorar el rendimiento.
+
+## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Actualización a Visual Studio 2017, versión 15.6 o posterior
+
+Si actualmente usa Visual Studio 2015, descargue [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) de forma gratuita para comprobar su mejora del rendimiento. Las soluciones se cargan dos o tres veces más rápido en Visual Studio 2017, con mejoras de rendimiento también en otras áreas. Visual Studio 2017 es compatible en paralelo con Visual Studio 2015, por lo que no pierde nada por probarlo.
+
+Si ya usa Visual Studio 2017, asegúrese de que está ejecutando la versión 15.6 o una posterior. Los datos demuestran que las soluciones se cargan dos o tres veces más rápido en la versión 15.6. Descárguela [aquí](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
+
+## <a name="extensions-and-tool-windows"></a>Extensiones y ventanas de herramientas
+
+Puede que tenga instaladas extensiones que ralenticen Visual Studio. Para obtener ayuda para administrar las extensiones a fin de mejorar el rendimiento, vea [Cambiar la configuración de extensión para mejorar el inicio, la carga de solución y el rendimiento de la escritura](../ide/optimize-visual-studio-startup-time.md#extensions).
+
+Del mismo modo, puede que tenga instaladas ventanas de herramientas que ralenticen Visual Studio. Para obtener ayuda para administrar las ventanas de herramientas, vea [Cambiar la configuración de la ventana de herramientas para mejorar el tiempo de inicio](../ide/optimize-visual-studio-startup-time.md#tool-windows).
+
+## <a name="hardware"></a>Hardware
+
+Si está pensando en actualizar el hardware, una unidad de estado sólido (SSD) tiene más impacto en el rendimiento que algo más de RAM o una CPU más rápida.
+
+Si agrega una SSD, para conseguir un rendimiento óptimo, instale Windows en esa unidad en lugar de en una unidad de disco duro (HDD). No parece que la ubicación de la unidad de las soluciones de Visual Studio tenga tanta importancia.
+
+Además, no ejecute la solución desde una unidad USB. Cópiela en la unidad de disco duro o la SSD.
+
+## <a name="help-us-improve"></a>Ayúdenos a mejorar
+
+Sus comentarios nos ayudan a mejorar. Use la característica **Notificar un problema** para "registrar" un seguimiento y enviárnoslo. Seleccione el icono de comentarios situado junto a **Inicio rápido** o seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema** en la barra de menús. Para obtener más información, vea [Cómo notificar un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+
+## <a name="see-also"></a>Vea también
+
+- [Sugerencias y trucos de rendimiento](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Blog de Visual Studio: Cargar soluciones más rápido con Visual Studio 2017 versión 15.6)

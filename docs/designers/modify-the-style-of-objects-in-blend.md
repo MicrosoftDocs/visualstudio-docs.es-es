@@ -1,22 +1,19 @@
 ---
-title: Modificar el estilo de objetos en Blend | Microsoft Docs
-ms.custom: 
+title: Modificar el estilo de objetos en Blend
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar el estilo de objetos en Blend
 
@@ -27,8 +24,6 @@ Si desea volver a utilizar la configuración o un conjunto de configuraciones, c
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pinceles: modificar la apariencia de un objeto
 
 Aplique un pincel a un objeto si desea cambiar su apariencia.
-
-**Vea un vídeo corto:** ![botón Reproducir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Editor de pinceles](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Pintar una imagen o patrón repetitivos en un objeto
 
@@ -47,8 +42,6 @@ Cree un pincel con dibujo mediante un dibujo vectorial como un trazado o forma. 
 Cree un pincel visual a partir de un control como un botón. Las ilustraciones siguientes muestran el pincel visual y el pincel visual en mosaico.
 
 ![Pincel visual](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Pincel visual en mosaico](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
-
-**Vea un vídeo corto:** ![botón Reproducir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [icono de pinceles](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).
 
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Estilos y plantillas: crear una apariencia coherente en todos los controles
 
@@ -82,7 +75,7 @@ En el cuadro de diálogo **Crear recurso de estilo**, puede ponerle un nombre al
 
 > [!NOTE]
 > No es posible crear estilos o plantillas para todos los tipos control. Si un control no los admite, el botón de ruta de navegación no aparecerá sobre la mesa de trabajo.
-> Para volver al ámbito de edición del documento principal, haga clic en **Devolver ámbito a**  ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Para volver al ámbito de edición del documento principal, haga clic en **Devolver ámbito a**  ![Icono de Devolver ámbito a](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar un estilo o una plantilla a un control
 
@@ -92,7 +85,7 @@ Haga clic con el botón derecho en el panel [Objetos y escala de tiempo](../desi
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar el estilo o la plantilla predeterminados de un control
 
-Seleccione el control y, en el panel [Propiedades](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel), busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png) y, después, haga clic en **Restablecer** en el menú contextual.
+Seleccione el control y, en el panel [Propiedades](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel), busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Estados visuales: Cambiar la apariencia de un control según su estado
 
@@ -102,14 +95,12 @@ Los controles pueden tener una apariencia visual distinta según las interaccion
 
 **Vea un vídeo corto:** ![botón Reproducir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Administrar el estado de los controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-##  <a name="Resources"></a> Recursos: crear colores, estilos y plantillas y volver a usarlos más adelante
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Recursos: crear colores, estilos y plantillas y volver a usarlos más adelante
 
 Prácticamente cualquier elemento del proyecto se puede convertir en un recurso. Un recurso es tan solo un objeto que se puede volver a usar en diferentes sitios de la aplicación. Por ejemplo, puede crear un color, convertirlo en un recurso y después usar ese color en varios objetos. Para cambiar el color de todos esos objetos, simplemente cambie el recurso de color.
 
 ![Botón Convertir color en recurso](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Cuadro de diálogo Crear recurso de color](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-**Vea un vídeo corto:** ![botón Reproducir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Breve pincelada sobre recursos](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).
-
 ## <a name="see-also"></a>Vea también
 
-[Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

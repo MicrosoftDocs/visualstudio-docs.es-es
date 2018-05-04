@@ -1,21 +1,19 @@
 ---
-title: "Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento | Microsoft Docs"
-ms.custom: 
+title: 'Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0262dd7573eb990fb56f03bfa668a4b8e9d95878
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento
 
@@ -25,7 +23,7 @@ Al trabajar con archivos de código largos, puede ser difícil tenerlo todo en m
 
 1. Puede configurar la barra de desplazamiento para mostrar cambios en el código, puntos de interrupción, errores y marcadores.
 
-    Abra la página de opciones **Barra de desplazamiento**; para ello, elija **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** (o un lenguaje concreto), o bien escriba **barra de desplazamiento** en la ventana Inicio rápido.
+    Abra la página de opciones **Barra de desplazamiento**; para ello, elija **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** (o un lenguaje concreto), o bien escriba **barra de desplazamiento** en la ventana **Inicio rápido**.
 
 2. Seleccione **Mostrar anotaciones en la barra de desplazamiento vertical** y después seleccione las anotaciones que quiere ver.
 
@@ -47,7 +45,7 @@ Al trabajar con archivos de código largos, puede ser difícil tenerlo todo en m
 
     En la página de opciones **Barra de desplazamiento**, seleccione **Usar el modo Barra para la barra de desplazamiento vertical** o **Usar el modo Mapa para la barra de desplazamiento vertical**. Puede elegir el ancho en la lista desplegable **Información general del código fuente**.
 
-    Este es el aspecto del ejemplo de búsqueda cuando el modo Mapa está activado y el ancho se establece en Medio:
+    Este es el aspecto del ejemplo de búsqueda cuando el modo Mapa está activado y el ancho se establece en **Medio**:
 
     ![Barra de desplazamiento en modo Mapa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 
@@ -59,4 +57,4 @@ Al trabajar con archivos de código largos, puede ser difícil tenerlo todo en m
 
 ## <a name="see-also"></a>Vea también
 
-[Escribir código en el editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Escribir código en el editor](../ide/writing-code-in-the-code-and-text-editor.md)

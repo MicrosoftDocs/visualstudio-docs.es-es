@@ -1,11 +1,9 @@
 ---
-title: "Fragmentos de código | Microsoft Docs"
-ms.custom: 
+title: Fragmentos de código
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
@@ -14,18 +12,18 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
@@ -97,10 +95,10 @@ Si cambia `newPropertyValue` por `m_property`, se cambian todas las instancias d
 
 ## <a name="see-also"></a>Vea también
 
-[Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)  
-[Cómo: Distribuir fragmentos de código](../ide/how-to-distribute-code-snippets.md)  
-[Procedimientos recomendados para usar fragmentos de código](../ide/best-practices-for-using-code-snippets.md)  
-[Solucionar problemas con fragmentos de código](../ide/troubleshooting-snippets.md)  
-[Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md)  
-[Fragmentos de código de Visual C++](../ide/visual-cpp-code-snippets.md)  
-[Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)
+- [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Cómo: Distribuir fragmentos de código](../ide/how-to-distribute-code-snippets.md)
+- [Procedimientos recomendados para usar fragmentos de código](../ide/best-practices-for-using-code-snippets.md)
+- [Solucionar problemas con fragmentos de código](../ide/troubleshooting-snippets.md)
+- [Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md)
+- [Fragmentos de código de Visual C++](../ide/visual-cpp-code-snippets.md)
+- [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)

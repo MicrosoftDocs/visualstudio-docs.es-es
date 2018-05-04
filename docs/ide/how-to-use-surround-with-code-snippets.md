@@ -1,25 +1,22 @@
 ---
-title: "Cómo usar fragmentos de código envolventes | Microsoft Docs"
-ms.custom: 
+title: Cómo usar fragmentos de código envolventes | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 685f227205deb306d7d18dcea2e620e2366ad73f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e2c5211291fbfe3bb7c8ab3fe1eaa371a2dd8e2c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Cómo usar fragmentos de código envolventes
 
@@ -29,7 +26,7 @@ Los siguientes procedimientos describen cómo usar fragmentos de código envolve
 
 1. En el IDE de Visual Studio, abra el archivo que quiere editar.
 
-1. En el Editor de código, seleccione el texto que quiere delimitar.
+1. En el **Editor de código**, seleccione el texto que quiere delimitar.
 
 1. Escriba **Ctrl**+**K**, **Ctrl**+**S**.
 
@@ -39,7 +36,7 @@ Los siguientes procedimientos describen cómo usar fragmentos de código envolve
 
 1. En el IDE de Visual Studio, abra el archivo que quiere editar.
 
-1. En el Editor de código, seleccione el texto que quiere delimitar.
+1. En el **Editor de código**, seleccione el texto que quiere delimitar.
 
 1. En el menú **Edición**, seleccione **IntelliSense** y elija el comando **Delimitar con**.
 
@@ -51,7 +48,7 @@ Los siguientes procedimientos describen cómo usar fragmentos de código envolve
 
 1. En el IDE de Visual Studio, abra el archivo que quiere editar.
 
-1. En el Editor de código, seleccione el texto que quiere delimitar.
+1. En el **Editor de código**, seleccione el texto que quiere delimitar.
 
 1. Haga clic en el texto seleccionado y elija el comando **Delimitar con** del menú contextual.
 
@@ -61,5 +58,5 @@ Los siguientes procedimientos describen cómo usar fragmentos de código envolve
 
 ## <a name="see-also"></a>Vea también
 
-[Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md)  
-[Selector de fragmentos de código](../ide/reference/code-snippet-picker.md)
+- [Fragmentos de código de C#](../ide/visual-csharp-code-snippets.md)
+- [Selector de fragmentos de código](../ide/reference/code-snippet-picker.md)
