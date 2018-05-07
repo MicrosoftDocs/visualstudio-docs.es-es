@@ -1,18 +1,19 @@
 ---
 title: 'Crear un entorno de desarrollo de Node.js con contenedores usando Kubernetes en la nube - Paso 5: Llamar a otro contenedor | Microsoft Docs'
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Desarrollo rápido de Kubernetes con contenedores y microservicios en Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, contenedores
-manager: ghogen
-ms.openlocfilehash: 5b7065714475ee700fb1a04502a50a4fce0b0e8d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: 89565869feec746aff75327b59ee7d0b466f26c1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-nodejs"></a>Introducción a Connected Environment con Node.js
 
@@ -28,7 +29,7 @@ Ya debería tener el código de ejemplo de `mywebapi` para esta guía en una car
 ## <a name="run-mywebapi"></a>Ejecutar *mywebapi*
 1. Abra la carpeta `mywebapi` en una *ventana de VS Code aparte*.
 1. Presione F5 y espere a que el servicio se compile e implemente. Sabrá que está listo cuando aparezca la barra de depuración de VS Code.
-1. Anote la dirección URL del punto de conexión, tendrá un aspecto parecido a http://localhost:\<númeroDePuerto\>. **Consejo: La barra de estado de VS Code mostrará una dirección URL interactiva.** Puede parecer que el contenedor se ejecuta localmente, pero en realidad se está ejecutando en nuestro entorno de desarrollo en Azure. La razón de usar la dirección de host local es que `mywebapi` no tiene definido ningún punto de conexión público y solo se puede tener acceso a ella desde dentro de la instancia de Kubernetes. Para mayor comodidad, y de cara a facilitar la interacción con el servicio privado desde el equipo local, Connected Environment crea un túnel SSH temporal hacia el contenedor que se ejecuta en Azure.
+1. Anote la dirección URL del punto de conexión, que tendrá un aspecto parecido a http://localhost:\<númeroDePuerto\>. **Consejo: La barra de estado de VS Code mostrará una dirección URL interactiva.** Puede parecer que el contenedor se ejecuta localmente, pero en realidad se está ejecutando en nuestro entorno de desarrollo en Azure. La razón de usar la dirección de host local es que `mywebapi` no tiene definido ningún punto de conexión público y solo se puede tener acceso a ella desde dentro de la instancia de Kubernetes. Para mayor comodidad, y de cara a facilitar la interacción con el servicio privado desde el equipo local, Connected Environment crea un túnel SSH temporal hacia el contenedor que se ejecuta en Azure.
 1. Cuando `mywebapi` esté listo, abra el explorador en la dirección de host local. Debería ver una respuesta del servicio `mywebapi` ("Hello from mywebapi").
 
 

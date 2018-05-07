@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear un arranque personalizado para mostrar un privacidad Prompt | Documentos de Microsoft'
+title: 'Tutorial: Crear un arranque personalizado con un aviso de privacidad | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Tutorial: Crear un arranque personalizado para mostrar un aviso de privacidad
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Tutorial: Crear a un arranque personalizado con un aviso de privacidad
 Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuando se convierten en ensamblados con versiones más recientes de los archivos y las versiones de ensamblado disponibles. Para asegurarse de que los clientes de consentimiento a este comportamiento, puede mostrar un aviso de privacidad a ellos. A continuación, puede elegir si se debe conceder permiso a la aplicación para actualizar automáticamente. Si la aplicación no tiene permiso para actualizar automáticamente, no se instala.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 -   Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Crear un cuadro de diálogo de consentimiento de actualización  
+## <a name="create-an-update-consent-dialog-box"></a>Crear un cuadro de diálogo de consentimiento de actualización  
  Para mostrar un aviso de privacidad, cree una aplicación que pida al lector que da su consentimiento a las actualizaciones automáticas de la aplicación.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Para crear un cuadro de diálogo de consentimiento  
@@ -136,7 +136,7 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 26. En el **generar** menú, haga clic en **compilar solución**.  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>Crear el paquete de arranque personalizado  
+## <a name="create-the-custom-bootstrapper-package"></a>Crear el paquete de arranque personalizado  
  Para mostrar el aviso de privacidad para los usuarios finales, puede crear un paquete de arranque personalizado para la aplicación del cuadro de diálogo de consentimiento de actualización e incluir como un requisito previo en todas las aplicaciones de ClickOnce.  
   
  Este procedimiento muestra cómo crear un paquete de arranque personalizado mediante la creación de los siguientes documentos:  
@@ -228,7 +228,7 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 6.  Si es necesario, cree un nuevo archivo de manifiesto package.xml y un nuevo documento eula.rtf para los términos de licencia de software para cada configuración regional. Por ejemplo, si ha creado subdirectorios para las configuraciones regionales fr y de, crear archivos de manifiesto package.xml independiente y los términos de licencia de software y guardarlos en los subdirectorios fr y de.  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Configurar la aplicación de consentimiento de actualización como un requisito previo  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Establecer la aplicación de consentimiento de actualización como un requisito previo  
  En Visual Studio, puede establecer la aplicación de aceptación de actualizaciones como requisito previo.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para establecer la aplicación de aceptación de actualizaciones como requisito previo  
@@ -246,7 +246,7 @@ Puede configurar aplicaciones ClickOnce que se actualizan automáticamente cuand
   
 5.  Haga clic en **Aceptar**.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Crear y probar el programa de instalación  
+## <a name="create-and-test-the-setup-program"></a>Crear y probar el programa de instalación  
  Después de establecer la aplicación de aceptación de actualizaciones como requisito previo, puede generar el instalador y el programa previo para la aplicación.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Para crear y probar el programa de instalación, no haga clic en acepto  

@@ -1,10 +1,9 @@
 ---
-title: -ResetSkipPkgs (devenv.exe) | Microsoft Docs
-ms.custom: ''
+title: -ResetSkipPkgs (devenv.exe)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /ResetSkipPkgs Devenv switch
 - Devenv, /ResetSkipPkgs switch
@@ -15,30 +14,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ffc8ae23dd66cdf863b6bf193289df63b3fdb06
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6199bf96bc631cf1018b2cb72a4d3c3cf7c703cc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
-Borra todas las opciones para omitir la carga agregada a VSPackages por usuarios que quieren evitar problemas al cargar VSPackages. Después, inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Devenv /ResetSkipPkgs  
-```  
-  
-## <a name="remarks"></a>Comentarios  
- La presencia de una etiqueta SkipLoading deshabilita la carga de un VSPackage; al borrar la etiqueta, se rehabilita la carga de VSPackage.  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente, se borran todas las etiquetas SkipLoading.  
-  
-```  
-Devenv.exe /ResetSkipPkgs  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
+Borra todas las opciones para omitir la carga agregada a VSPackages por usuarios que quieren evitar problemas al cargar VSPackages. Después, inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Devenv /ResetSkipPkgs
+```
+
+## <a name="remarks"></a>Comentarios
+ La presencia de una etiqueta SkipLoading deshabilita la carga de un VSPackage; al borrar la etiqueta, se rehabilita la carga de VSPackage.
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo siguiente, se borran todas las etiquetas SkipLoading.
+
+```
+Devenv.exe /ResetSkipPkgs
+```
+
+## <a name="see-also"></a>Vea también
+
+- [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)

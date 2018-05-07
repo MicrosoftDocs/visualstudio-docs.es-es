@@ -1,9 +1,9 @@
 ---
-title: Elegir elementos del cuadro de herramientas, Componentes de WPF | Microsoft Docs
-ms.custom: ''
+title: Elegir elementos del cuadro de herramientas, Componentes de WPF
 ms.date: 06/21/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.chooseitems.wpfcomponents
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 955d0ab74d59606e63a4772aee5de96c920544ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d05e69acb414c08e752593fbfdb08246c3d14a2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Elegir elementos del Cuadro de herramientas, componentes de WPF
 
@@ -36,16 +36,20 @@ En esta pestaña del cuadro de diálogo **Elegir elementos del cuadro de herrami
 
 Las columnas de la pestaña **Componentes WPF** contienen la siguiente información:
 
-nombre  
+**Name**
+
 Enumera los nombres de los controles de WPF para los que existen entradas en el Registro del equipo.
 
-Espacio de nombres  
+**Espacio de nombres**
+
 Muestra la jerarquía del espacio de nombres de la [API de clases de .NET Framework](/dotnet/api/?view=netframework-4.7) que define la estructura del componente. Ordene esta columna para mostrar los componentes disponibles en cada espacio de nombres de .NET Framework instalado en el equipo.
 
-Nombre del ensamblado  
+**Nombre del ensamblado**
+
 Muestra el nombre del ensamblado de .NET Framework que incluye el espacio de nombres de cada componente. Ordene esta columna para mostrar los espacios de nombres contenidos en cada ensamblado de .NET Framework instalado en el equipo.
 
-Directorio  
+**Directorio**
+
 Muestra la ubicación del ensamblado de .NET Framework. La ubicación predeterminada de todos los ensamblados es la caché global de ensamblados. Para obtener más información sobre la caché global de ensamblados, consulte [Trabajar con ensamblados y la caché global de ensamblados](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Lista de UIElement
@@ -54,15 +58,15 @@ Muestra la ubicación del ensamblado de .NET Framework. La ubicación predetermi
 
 Filtra la lista de controles de WPF según la cadena proporcionada en el cuadro de texto. Se muestran todas las coincidencias encontradas en cualquiera de las cuatro columnas.
 
-### <a name="clear"></a>Clear
+**Borrar**
 
 Borra la cadena de filtro.
 
-### <a name="browse"></a>Examinar
+**Examinar**
 
 Abre el cuadro de diálogo **Abrir**, que le permite ir a ensamblados que contienen controles de WPF. Úselo para cargar ensamblados que no se encuentran en la caché global de ensamblados.
 
-### <a name="language"></a>Lenguaje
+**Idioma**
 
 Muestra el lenguaje localizado del ensamblado que contiene el control de WPF seleccionado.
 
@@ -80,5 +84,5 @@ Puede hacer referencia a los controles directamente en la vista XAML mediante la
 
 ## <a name="see-also"></a>Vea también
 
-[Cuadro de herramientas](../../ide/reference/toolbox.md)  
-[Introducción a WPF](../../designers/getting-started-with-wpf.md)
+- [Cuadro de herramientas](../../ide/reference/toolbox.md)
+- [Introducción a WPF](../../designers/getting-started-with-wpf.md)

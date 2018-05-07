@@ -1,7 +1,7 @@
 ---
-title: Refactorización de una firma de método en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Refactorización de una firma de método en Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce920d11d7f29f166bf551d8ce95df11f5abf9d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 576cbb1fb9ef9210a3f22849a996fa5da14dd443
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactorización de cambio de una firma de método
 

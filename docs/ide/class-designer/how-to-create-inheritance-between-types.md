@@ -1,9 +1,8 @@
 ---
-title: 'Cómo: Crear la herencia entre tipos (Diseñador de clases) | Microsoft Docs'
-ms.custom: ''
+title: 'Cómo: Crear la herencia entre tipos (Diseñador de clases)'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -16,40 +15,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af87e62f231c13a1aabbb667a189a82e7cbfa3f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13f89a15b0ec734e29e27fe652ee7e71b791db50
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Cómo: Crear la herencia entre tipos (Diseñador de clases)
-Para crear una relación de herencia entre dos tipos de un diagrama de clases mediante el Diseñador de clases, conecte el tipo base con el tipo o los tipos derivados. Puede haber una relación de herencia entre dos clases, entre una clase y una interfaz o entre dos interfaces.  
-  
-### <a name="to-create-an-inheritance-between-types"></a>Para crear una herencia entre tipos  
-  
-1.  Desde el proyecto, en el Explorador de soluciones, abra un archivo de diagrama de clases (.cd).  
-  
-     Si no tiene un diagrama de clases, créelo. Vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md).  
-  
-2.  En el **Cuadro de herramientas**, en **Diseñador de clases**, haga clic en **Herencia**.  
-  
-3.  En el diagrama de clases, dibuje una línea de herencia entre los tipos que desee, desde:  
-  
-    -   Una clase derivada a la clase base  
-  
-    -   Una clase de implementación a la interfaz implementada  
-  
-    -   Una interfaz de extensión a la interfaz extendida  
-  
-4.  Opcionalmente, cuando tenga un tipo derivado de un tipo genérico, haga clic en la línea de herencia. En la ventana **Propiedades**, establezca la propiedad **Argumentos de tipo** para que coincida con el tipo que quiera para el tipo genérico.  
-  
+
+Para crear una relación de herencia entre dos tipos de un diagrama de clases mediante el **Diseñador de clases**, conecte el tipo base con su tipo o tipos derivados. Puede haber una relación de herencia entre dos clases, entre una clase y una interfaz o entre dos interfaces.
+
+## <a name="to-create-an-inheritance-between-types"></a>Para crear una herencia entre tipos
+
+1.  Desde el proyecto, en el **Explorador de soluciones**, abra un archivo de diagrama de clases (.cd).
+
+     Si no tiene un diagrama de clases, créelo. Vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md).
+
+2.  En el **Cuadro de herramientas**, en **Diseñador de clases**, haga clic en **Herencia**.
+
+3.  En el diagrama de clases, dibuje una línea de herencia entre los tipos que desee, desde:
+
+    -   Una clase derivada a la clase base
+
+    -   Una clase de implementación a la interfaz implementada
+
+    -   Una interfaz de extensión a la interfaz extendida
+
+4.  Opcionalmente, cuando tenga un tipo derivado de un tipo genérico, haga clic en la línea de herencia. En la ventana **Propiedades**, establezca la propiedad **Argumentos de tipo** para que coincida con el tipo que quiera para el tipo genérico.
+
     > [!NOTE]
-    >  Si una clase abstracta principal contiene como mínimo un miembro abstracto, todos los miembros abstractos se implementan como clases de herencia no abstractas.  
-    >   
-    >  Aunque puede visualizar los tipos genéricos existentes, no puede crear tipos genéricos nuevos. Tampoco puede cambiar los parámetros de tipo de los tipos genéricos existentes.  
-  
+    > Si una clase abstracta principal contiene como mínimo un miembro abstracto, todos los miembros abstractos se implementan como clases de herencia no abstractas.
+    >
+    >  Aunque puede visualizar los tipos genéricos existentes, no puede crear tipos genéricos nuevos. Tampoco puede cambiar los parámetros de tipo de los tipos genéricos existentes.
+
 ## <a name="see-also"></a>Vea también
-[Herencia](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)   
-[Fundamentos de la herencia](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)   
-[Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)   
-[Clases de Visual C++ en el Diseñador de clases](visual-cpp-classes.md)
+
+- [Herencia](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
+- [Fundamentos de la herencia](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
+- [Cómo: Ver la herencia entre tipos](how-to-view-inheritance-between-types.md)
+- [Clases de Visual C++ en el Diseñador de clases](visual-cpp-classes.md)

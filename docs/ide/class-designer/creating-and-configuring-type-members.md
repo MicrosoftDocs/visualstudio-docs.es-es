@@ -1,9 +1,8 @@
 ---
-title: Crear y configurar miembros de tipo (Diseñador de clases) | Microsoft Docs
-ms.custom: ''
+title: Crear y configurar miembros de tipo (Diseñador de clases)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
@@ -32,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 910860ce3362dd6d87a43df28e0221b404567666
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Crear y configurar miembros de tipo (Diseñador de clases)
 Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos en la ventana **Detalles de clase**:
@@ -48,46 +47,46 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 |Interfaz|método, propiedad, evento (para C# y Visual Basic)|
 |Clase abstracta|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), destructor (método), constante |
 |Estructura (struct en C#)|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), constante |
-|delegado|Parámetro|
+|delegado|parámetro|
 |Módulo (solo en VB)|método, propiedad, campo, evento, constructor, constante|
 
 > [!NOTE]
->  Haga que la declaración de la propiedad sea más concisa cuando no se requiere ninguna lógica adicional en los descriptores de acceso get y set de una propiedad usando las propiedades implementadas automáticamente (solo C#). Para mostrar la firma completa, en el menú **Diagrama de clase**, pulse **Cambiar formato de los miembros**, **Mostrar firma completa**. Para obtener más información sobre las propiedades autoimplementadas, vea [Propiedades autoimplementadas](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).
+> Haga que la declaración de la propiedad sea más concisa cuando no se requiere ninguna lógica adicional en los descriptores de acceso get y set de una propiedad usando las propiedades implementadas automáticamente (solo C#). Para mostrar la firma completa, en el menú **Diagrama de clase**, elija **Cambiar formato de los miembros** > **Mostrar firma completa**. Para obtener más información sobre las propiedades autoimplementadas, vea [Propiedades autoimplementadas](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).
 
 ## <a name="common-tasks"></a>Tareas comunes
 
 |Tarea|Contenido adicional|
 |----------|------------------------|
-|**Introducción:** antes de crear y configurar los miembros de tipo, debe abrir la ventana Detalles de clase.|-   [Abrir la ventana Detalles de clase](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Notas de uso de los detalles de clase](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Presentación de la información de solo lectura](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Crear y modificar miembros de tipo:** puede crear nuevos miembros, modificar miembros y agregar parámetros a un método usando la ventana Detalles de clase.|-   [Crear miembros](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Modificar miembros de tipo](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Agregar parámetros a métodos](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Introducción:** antes de crear y configurar los miembros de tipo, debe abrir la ventana **Detalles de clase**.|-   [Abrir la ventana Detalles de clase](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Notas de uso de los detalles de clase](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Presentación de la información de solo lectura](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Crear y modificar miembros de tipo:** puede crear nuevos miembros, modificar miembros y agregar parámetros a un método mediante la ventana **Detalles de clase**.|-   [Crear miembros](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Modificar miembros de tipo](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Agregar parámetros a métodos](creating-and-configuring-type-members.md#AddMethodParams)|
 
-##  <a name="OpenClassDetails"></a>Abrir la ventana Detalles de clase
-De manera predeterminada, la ventana Detalles de clase aparece automáticamente cuando se abre un nuevo diagrama de clases (vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md)). También puede abrir la ventana Detalles de clase de forma explícita de las maneras siguientes.
+## <a name="open-the-class-details-window"></a>Abrir la ventana Detalles de clase
+De manera predeterminada, la ventana **Detalles de clase** aparece automáticamente cuando se abre un nuevo diagrama de clases (vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md)). También puede abrir la ventana **Detalles de clase** de forma explícita de las maneras siguientes.
 
 #### <a name="to-open-the-class-details-window"></a>Para abrir la ventana Detalles de clase
 
 1.  Haga clic con el botón derecho en cualquier clase del diagrama para que aparezca un menú contextual.
 
-2.  En el menú contextual, haga clic en **Ventana Detalles de clase**.
+2.  En el menú contextual, haga clic en **Detalles de clase**.
 
  - O
 
 -   Señale a **Otras ventanas** en el menú Ver y, después, haga clic en **Detalles de clase**.
 
-##  <a name="CreateMembers"></a>Crear miembros
+## <a name="create-members"></a>Crear miembros
 Puede crear un miembro con cualquiera de las herramientas siguientes:
 
--   Diseñador de clases
+-   **Diseñador de clases**
 
--   Barra de herramientas de la ventana Detalles de clase
+-   Barra de herramientas de la ventana **Detalles de clase**
 
--   Ventana Detalles de clase
-
-> [!NOTE]
->  Los procedimientos de esta sección también permiten crear constructores y destructores. Tenga presente que los constructores y destructores son tipos especiales de métodos y, como tales, aparecen en el compartimiento **Métodos** de las formas del diagrama de clases y en la sección **Métodos** de la cuadrícula de la ventana Detalles de clase.
+-   Ventana **Detalles de clase**
 
 > [!NOTE]
->  La única entidad que puede agregar a un delegado es un parámetro. Tenga en cuenta que el procedimiento titulado 'Para crear un miembro con la barra de herramientas de la ventana Detalles de clase' no es válido para esta operación.
+> Los procedimientos de esta sección también permiten crear constructores y destructores. Tenga presente que los constructores y destructores son tipos especiales de métodos y, como tales, aparecen en el compartimiento **Métodos** de las formas del diagrama de clases y en la sección **Métodos** de la cuadrícula de la ventana **Detalles de clase**.
+
+> [!NOTE]
+> La única entidad que puede agregar a un delegado es un parámetro. Tenga en cuenta que el procedimiento titulado "Para crear un miembro con la barra de herramientas de la ventana **Detalles de clase**" no es válido para esta operación.
 
 #### <a name="to-create-a-member-using-class-designer"></a>Para crear un miembro con el Diseñador de clases
 
@@ -101,15 +100,15 @@ Puede crear un miembro con cualquiera de las herramientas siguientes:
 
 1.  En la superficie de diagrama, seleccione el tipo al que desee agregar un miembro.
 
-     El tipo obtiene el foco y su contenido se muestra en la ventana Detalles de clase.
+     El tipo obtiene el foco y su contenido se muestra en la ventana **Detalles de clase**.
 
-2.  En la barra de herramientas de la ventana Detalles de clase, haga clic en el icono superior y seleccione **Nuevo \<miembro>** en la lista desplegable.
+2.  En la barra de herramientas de la ventana **Detalles de clase**, haga clic en el icono superior y seleccione **Nuevo \<miembro>** en la lista desplegable.
 
-     El cursor se moverá al campo **Nombre** de una fila del tipo de miembro que quiere agregar. Por ejemplo, si ha hecho clic en **Nueva propiedad**, el cursor se moverá a una nueva fila en la sección **Propiedades** de la ventana Detalles de clase.
+     El cursor se moverá al campo **Nombre** de una fila del tipo de miembro que quiere agregar. Por ejemplo, si ha hecho clic en **Nueva propiedad**, el cursor se mueve a una nueva fila de la sección **Propiedades** de la ventana **Detalles de clase**.
 
 3.  Escriba el nombre del miembro que desee crear y presione ENTRAR (o mueva el foco de otra forma, por ejemplo, presionando Tabulador).
 
-     Se crea una nueva firma de miembro y se agrega al tipo. El miembro existe ahora en el código y aparece en el **Diseñador de clases**, la ventana Detalles de clase y la ventana Propiedades.
+     Se crea una nueva firma de miembro y se agrega al tipo. El miembro existe ahora en el código y aparece en el **Diseñador de clases**, la ventana **Detalles de clase** y la ventana Propiedades.
 
 4.  Si lo desea, puede especificar de forma opcional otros detalles sobre el miembro, como su tipo.
 
@@ -117,22 +116,22 @@ Puede crear un miembro con cualquiera de las herramientas siguientes:
 
 1.  En la superficie de diagrama, seleccione el tipo al que desee agregar un miembro.
 
-     El tipo obtiene el foco y su contenido se muestra en la ventana Detalles de clase.
+     El tipo obtiene el foco y su contenido se muestra en la ventana **Detalles de clase**.
 
-2.  En la ventana Detalles de clase, en la sección que contiene el tipo de miembro que quiere agregar, haga clic en **\<agregar miembro>**. Por ejemplo, si quiere agregar un campo, haga clic en **\<agregar campo>**.
+2.  En la ventana **Detalles de clase**, en la sección que contiene el tipo de miembro que quiere agregar, haga clic en **\<agregar miembro>**. Por ejemplo, si quiere agregar un campo, haga clic en **\<agregar campo>**.
 
 3.  Escriba el nombre del miembro que desee crear y presione ENTRAR.
 
-     Se crea una nueva firma de miembro y se agrega al tipo. El miembro existe ahora en el código y aparece en el **Diseñador de clases**, la ventana Detalles de clase y la ventana Propiedades.
+     Se crea una nueva firma de miembro y se agrega al tipo. El miembro existe ahora en el código y aparece en el **Diseñador de clases**, la ventana **Detalles de clase** y la ventana Propiedades.
 
 4.  Si lo desea, puede especificar de forma opcional otros detalles sobre el miembro, como su tipo.
 
-     **Nota:** También puede usar métodos abreviados de teclado para crear miembros. Para más información, vea [Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+     **Nota:** También puede usar métodos abreviados de teclado para crear miembros. Para obtener más información, vea [Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
-##  <a name="ModifyTypeMembers"></a>Modificar miembros de tipo
-El Diseñador de clases permite modificar los miembros de los tipos que aparecen en el diagrama. Puede modificar los miembros de cualquier tipo que aparezca en un diagrama de clases que no sean de solo lectura. Para modificar los miembros de tipo, se usa la edición en contexto en la superficie de diseño, la ventana Propiedades y la ventana Detalles de clase.
+## <a name="modify-type-members"></a>Modificar miembros de tipo
+El Diseñador de clases permite modificar los miembros de los tipos que aparecen en el diagrama. Puede modificar los miembros de cualquier tipo que aparezca en un diagrama de clases que no sean de solo lectura. Para modificar miembros de tipo, se usa la edición en contexto en la superficie de diseño, la ventana Propiedades y la ventana **Detalles de clase**.
 
-Todos los miembros mostrados en la ventana Detalles de clase representan los miembros de los tipos del diagrama de clases. Hay cuatro tipos de miembros: métodos, propiedades, campos y eventos.
+Todos los miembros mostrados en la ventana **Detalles de clase** representan los miembros de los tipos del diagrama de clases. Hay cuatro tipos de miembros: métodos, propiedades, campos y eventos.
 
 Todas las filas de miembro aparecen bajo encabezados que agrupan los miembros por tipo. Por ejemplo, todas las propiedades aparecen bajo el encabezado **Propiedades** que, al igual que los nodos de la cuadrícula, se puede contraer o expandir.
 
@@ -158,11 +157,11 @@ Cada fila de miembro muestra los elementos siguientes:
 
 -   **\<agregar miembro>**
 
-     La última fila de la ventana Detalles de clase contiene el texto **\<agregar miembro>** en la celda **Nombre**. Puede crear un nuevo miembro haciendo clic en esta celda. Para obtener más información, vea [Crear miembros](creating-and-configuring-type-members.md#CreateMembers).
+     La última fila de la ventana **Detalles de clase** contiene el texto **\<agregar miembro>** en la celda **Nombre**. Puede crear un nuevo miembro haciendo clic en esta celda. Para obtener más información, vea [Crear miembros](creating-and-configuring-type-members.md#CreateMembers).
 
 -   **Propiedades de miembro en la ventana Propiedades**
 
-     La ventana Detalles de clase muestra un subconjunto de las propiedades del miembro que se muestran en la ventana Propiedades. Al cambiar una propiedad en una ubicación, el valor de la propiedad se actualizará globalmente. Esta actualización incluye la presentación de su valor en la otra ubicación.
+     La ventana **Detalles de clase** muestra un subconjunto de las propiedades del miembro que se muestran en la ventana Propiedades. Al cambiar una propiedad en una ubicación, el valor de la propiedad se actualizará globalmente. Esta actualización incluye la presentación de su valor en la otra ubicación.
 
 -   **Resumen**
 
@@ -176,15 +175,15 @@ Cada fila de miembro muestra los elementos siguientes:
 
 1.  Con el Diseñador de clases, seleccione un tipo.
 
-2.  Si no se muestra la ventana Detalles de clase, haga clic en el botón **Ventana Detalles de clase** en la barra de herramientas del Diseñador de clases.
+2.  Si no aparece la ventana **Detalles de clase**, haga clic en el botón **Ventana Detalles de clase** de la barra de herramientas del Diseñador de clases.
 
-3.  Edite los valores de los campos de la cuadrícula de la ventana Detalles de clase. Después de cada modificación, presione ENTRAR o aleje el foco del campo editado, presionando, por ejemplo, la tecla TAB. Los cambios se reflejan de inmediato en el código.
+3.  Edite los valores de los campos de la cuadrícula de la ventana **Detalles de clase**. Después de cada modificación, presione ENTRAR o aleje el foco del campo editado, presionando, por ejemplo, la tecla TAB. Los cambios se reflejan de inmediato en el código.
 
     > [!NOTE]
     >  Si desea modificar únicamente el nombre de un miembro, puede hacerlo mediante la edición en contexto.
 
-##  <a name="AddMethodParams"></a>Agregar parámetros a métodos
-Agregue parámetros a los métodos mediante la ventana Detalles de clase. Los parámetros se pueden configurar como necesarios u opcionales. Al proporcionar un valor para la propiedad **predeterminada opcional** de un parámetro, se indica al diseñador que genere código como parámetro opcional.
+## <a name="add-parameters-to-methods"></a>Agregar parámetros a métodos
+Agregue parámetros a métodos mediante la ventana **Detalles de clase**. Los parámetros se pueden configurar como necesarios u opcionales. Al proporcionar un valor para la propiedad **predeterminada opcional** de un parámetro, se indica al diseñador que genere código como parámetro opcional.
 
 Las filas de parámetros contienen los elementos siguientes:
 
@@ -212,27 +211,29 @@ Las filas de parámetros contienen los elementos siguientes:
 
 **Propiedades de parámetro en la ventana Propiedades**
 
-La ventana Propiedades muestra las mismas propiedades de parámetro que la ventana Detalles de clase: **Nombre**, **Tipo**, **Modificador**, **Resumen**, así como la propiedad **predeterminada opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.
+La ventana Propiedades muestra las mismas propiedades de parámetro que la ventana **Detalles de clase**: **Nombre**, **Tipo**, **Modificador**, **Resumen**, así como la propiedad **Valor predeterminado opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.
 
 > [!NOTE]
->  Para agregar un parámetro a un delegado, vea [Crear miembros](creating-and-configuring-type-members.md#CreateMembers).
+> Para agregar un parámetro a un delegado, vea [Crear miembros](creating-and-configuring-type-members.md#CreateMembers).
+
 
 > [!NOTE]
->  A pesar de ser un método, un destructor no puede tener parámetros.
+> A pesar de ser un método, un destructor no puede tener parámetros.
 
-###  <a name="HowToAddParameterToMethod"></a>Para agregar un parámetro a un método
+
+### <a name="to-add-a-parameter-to-a-method"></a>Para agregar un parámetro a un método
 
 1.  En la superficie de diagrama, haga clic en el tipo que contenga el método al que desee agregar un parámetro.
 
-     El tipo obtiene el foco y su contenido se muestra en la ventana Detalles de clase.
+     El tipo obtiene el foco y su contenido se muestra en la ventana **Detalles de clase**.
 
-2.  En la ventana Detalles de clase, expanda la fila del método al que desee agregar un parámetro.
+2.  En la ventana **Detalles de clase**, expanda la fila del método al que quiere agregar un parámetro.
 
      Aparece una fila de parámetro con sangría que solo contiene el siguiente texto entre paréntesis **\<agregar parámetro>**.
 
 3.  Haga clic en **\<agregar parámetro>**, escriba el nombre del nuevo parámetro y presione **Entrar**.
 
-     El nuevo parámetro se agrega al método y al código de este. Aparece en las ventanas Detalles de clase y Propiedades.
+     El nuevo parámetro se agrega al método y al código de este. Aparece en las ventanas **Detalles de clase** y Propiedades.
 
 4.  De forma opcional, puede especificar otros detalles sobre el parámetro, como el tipo.
 
@@ -240,52 +241,52 @@ La ventana Propiedades muestra las mismas propiedades de parámetro que la venta
 
 1.  En la superficie del diagrama, haga clic en el tipo que contenga el método al que desee agregar un parámetro opcional.
 
-     El tipo obtiene el foco y su contenido se muestra en la ventana Detalles de clase.
+     El tipo obtiene el foco y su contenido se muestra en la ventana **Detalles de clase**.
 
-2.  En la ventana Detalles de clase, expanda la fila del método al que desee agregar un parámetro opcional.
+2.  En la ventana **Detalles de clase**, expanda la fila del método al que quiere agregar un parámetro opcional.
 
      Aparece una fila de parámetro con sangría que solo contiene el siguiente texto entre paréntesis **\<agregar parámetro>**.
 
 3.  Haga clic en **\<agregar parámetro>**, escriba el nombre del nuevo parámetro y presione **Entrar**.
 
-     El nuevo parámetro se agrega al método y al código de este. Aparece en las ventanas Detalles de clase y Propiedades.
+     El nuevo parámetro se agrega al método y al código de este. Aparece en las ventanas **Detalles de clase** y Propiedades.
 
 4.  En la ventana Propiedades, escriba un valor para la propiedad **predeterminada opcional**. Al establecer la propiedad predeterminada opcional de un parámetro, ese parámetro pasa a ser opcional.
 
     > [!NOTE]
     >  Los parámetros opcionales deben ser los últimos parámetros en la lista de parámetros.
 
-##  <a name="ClassDetailsUsageNotes"></a>Notas de uso de los detalles de clase
-Tenga en cuenta las siguientes sugerencias cuando utilice la ventana Detalles de clase.
+## <a name="class-details-usage-notes"></a>Notas de uso de Detalles de clase
+Tenga en cuenta las siguientes sugerencias cuando use la ventana **Detalles de clase**.
 
 **Celdas modificables y no modificables**
 
-Todas las celdas de la ventana Detalles de clase son modificables, con unas pocas excepciones:
+Todas las celdas de la ventana **Detalles de clase** son modificables, con unas pocas excepciones:
 
--   Todo el tipo es de solo lectura cuando, por ejemplo, se encuentra en un ensamblado al que se hace referencia. Cuando se selecciona la forma en el Diseñador de clases, la ventana Detalles de clase muestra los detalles en estado de sólo lectura.
+-   Todo el tipo es de solo lectura cuando, por ejemplo, se encuentra en un ensamblado al que se hace referencia. Cuando se selecciona la forma en el Diseñador de clases, la ventana **Detalles de clase** muestra los detalles en estado de solo lectura.
 
 -   En el caso de los indizadores, el nombre es de sólo lectura y el resto de los datos (tipo, modificador, resumen) son modificables.
 
--   En la ventana Detalles de clase, los parámetros de todos los genéricos son de sólo lectura. Para cambiar un parámetro genérico, edite su código fuente.
+-   En la ventana **Detalles de clase**, los parámetros de todos los genéricos son de solo lectura. Para cambiar un parámetro genérico, edite su código fuente.
 
 -   El nombre del parámetro de tipo definido en un tipo genérico es de sólo lectura.
 
--   Cuando el código de un tipo está dañado (no es analizable), la ventana Detalles de clase muestra el contenido del tipo como de sólo lectura.
+-   Cuando el código de un tipo está dañado (no es analizable), la ventana **Detalles de clase** muestra el contenido del tipo como de solo lectura.
 
 **Ventana Detalles de clase y código fuente**
 
--   Para ver el código fuente, puede hacer clic con el botón secundario del mouse en una forma de la ventana Detalles de clase (o del Diseñador de clases) y hacer clic en Ver código. El archivo de código fuente se abre y se desplaza hasta el elemento seleccionado.
+-   Para ver el código fuente, puede hacer clic con el botón derecho en una forma de la ventana **Detalles de clase** (o del Diseñador de clases) y luego hacer clic en Ver código. El archivo de código fuente se abre y se desplaza hasta el elemento seleccionado.
 
--   Los cambios realizados en el código fuente se reflejan inmediatamente en la presentación de información de firma en el Diseñador de clases y en la ventana Detalles de clase. Si la ventana Detalles de clase está cerrada, la nueva información puede verse cuando se vuelve a abrir.
+-   Los cambios realizados en el código fuente se reflejan inmediatamente en la presentación de información de firma en el Diseñador de clases y en la ventana **Detalles de clase**. Si la ventana **Detalles de clase** está cerrada, la nueva información puede verse cuando se vuelve a abrir.
 
--   Cuando el código de un tipo está dañado (no es analizable), la ventana Detalles de clase muestra el contenido del tipo como de sólo lectura.
+-   Cuando el código de un tipo está dañado (no es analizable), la ventana **Detalles de clase** muestra el contenido del tipo como de solo lectura.
 
-**Función del Portapapeles en la ventana Detalles de clase**
+**Funcionalidad del Portapapeles en la ventana Detalles de clase**
 
- Puede copiar o cortar campos o filas de la ventana Detalles de clase y pegarlos en otro tipo. Sólo puede cortar una fila si no es de sólo lectura. Cuando se pega la fila, la ventana Detalles de clase le asigna un nuevo nombre (derivado del nombre de la fila copiada) para evitar un conflicto.
+ Puede copiar o cortar campos o filas de la ventana **Detalles de clase** y pegarlos en otro tipo. Sólo puede cortar una fila si no es de sólo lectura. Cuando se pega la fila, la ventana **Detalles de clase** le asigna un nuevo nombre (derivado del nombre de la fila copiada) para evitar un conflicto.
 
-##  <a name="ReadOnlyInfo"></a>Presentación de la información de solo lectura
-El Diseñador de clases y la ventana Detalles de clase pueden mostrar los tipos (y los miembros de tipo) de:
+## <a name="display-of-read-only-information"></a>Presentación de la información de solo lectura
+El Diseñador de clases y la ventana **Detalles de clase** pueden mostrar los tipos (y los miembros de tipos) de:
 
 -   un proyecto que contiene un diagrama de clases
 
@@ -299,7 +300,7 @@ Un proyecto completo o determinadas partes de él, como archivos individuales, p
 
 **Control de código fuente**
 
-Dado que un diagrama de clases se guarda como un archivo en un proyecto, es necesario extraer del repositorio el proyecto para guardar cualquier cambio realizado en el Diseñador de clases o en la ventana Detalles de clase.
+Dado que un diagrama de clases se guarda como un archivo en un proyecto, es necesario extraer del repositorio el proyecto para guardar cualquier cambio realizado en el Diseñador de clases o en la ventana **Detalles de clase**.
 
 **Proyectos de solo lectura**
 
@@ -313,11 +314,11 @@ Si un archivo de código contiene un error de sintaxis, las formas que muestran 
 
 Los tipos a los que se hace referencia (como .NET Framework), que existen bajo el nodo de otro proyecto o bajo un nodo de ensamblado al que se hace referencia, aparecen indicados en la superficie de diseño del Diseñador de clases como de sólo lectura. Los tipos locales, que existen en el proyecto abierto, son de lectura y escritura, y así lo indica la forma correspondiente en la superficie de diseño del Diseñador de clases.
 
-Los indizadores son de lectura y escritura en el código y en la ventana Detalles de clase, pero el nombre del indizador es de sólo lectura.
+Los indizadores son de lectura y escritura en el código y en la ventana **Detalles de clase**, pero el nombre del indizador es de solo lectura.
 
-No puede modificar métodos parciales mediante el Diseñador de clases o la ventana Detalles de clase; debe utilizar el Editor de código para modificarlos.
+No es posible modificar métodos parciales mediante el Diseñador de clases o la ventana **Detalles de clase**; debe usar el Editor de código para hacerlo.
 
-No puede modificar el código C++ nativo mediante el Diseñador de clases o la ventana Detalles de clase; debe utilizar el Editor de código para modificar el código C++ nativo.
+No puede modificar código C++ nativo mediante el Diseñador de clases o la ventana **Detalles de clase**; debe usar el Editor de código para hacerlo.
 
 ## <a name="see-also"></a>Vea también
 

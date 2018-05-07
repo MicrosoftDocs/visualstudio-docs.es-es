@@ -1,9 +1,9 @@
 ---
-title: Parámetros de plantilla de elemento y de proyecto de Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Parámetros de plantilla de elemento y de proyecto de Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
-Si se usan parámetros en las plantillas, se pueden reemplazar los valores de las partes principales de la plantilla, como nombres de clase y espacios de nombres, cuando se crean instancias de la plantilla. Estos parámetros se reemplazan por el asistente de la plantilla que se ejecuta en segundo plano cuando el usuario selecciona **Aceptar** o **Agregar** en los cuadros de diálogo **Nuevo proyecto** o **Agregar nuevo elemento**.
+Es posible sustituir valores de la plantilla cuando se crea una instancia de ella. Para configurar esta funcionalidad, use *parámetros de plantilla*. Los parámetros de plantilla pueden usarse para sustituir valores como nombres de clase y espacios de nombres de la plantilla. El asistente para plantillas que se ejecuta en segundo plano cuando un usuario agrega un nuevo elemento o proyecto reemplaza estos parámetros.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Declarar y habilitar parámetros de plantilla
 
@@ -38,7 +38,7 @@ Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemp
 
 1. Establezca el atributo `ReplaceParameters` del elemento `ProjectItem` en `true`:
 
-1. En el archivo de código del elemento de proyecto, incluya los parámetros donde proceda. Por ejemplo, el parámetro siguiente especifica que se debe utilizar el nombre del proyecto seguro para el espacio de nombres en un archivo:
+1. En el archivo de código del elemento de proyecto, incluya los parámetros donde proceda. Por ejemplo, el parámetro siguiente especifica que se usa el nombre de proyecto seguro para el espacio de nombres de un archivo:
 
     ```csharp
     namespace $safeprojectname$
@@ -118,5 +118,5 @@ En el archivo .vstemplate para la plantilla de proyecto, incluya el atributo `Re
 
 ## <a name="see-also"></a>Vea también
 
-[Personalización de plantillas](../ide/customizing-project-and-item-templates.md)  
-[Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
+- [Personalización de plantillas](../ide/customizing-project-and-item-templates.md)
+- [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)

@@ -1,6 +1,7 @@
 ---
-title: 'Tutorial: Utilizar un archivo de configuración para definir un origen de datos en Visual Studio | Microsoft Docs'
+title: 'Tutorial: Usar un archivo de configuración para definir un origen de datos en Visual Studio'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Utilizar un archivo de configuración para definir un origen de datos
 
@@ -71,7 +72,8 @@ Este tutorial muestra cómo usar un origen de datos definido en un archivo *app.
 ```
 
 > [!NOTE]
->  El nombre del ensamblado debe coincidir con la compilación de Microsoft Visual Studio .NET Framework que está usando. Establezca la versión en 9.0.0.0 si usa Visual Studio .NET Framework 3.5. Si usa Visual Studio .NET Framework 2.0, establezca la versión en 8.0.0.0.
+> El nombre del ensamblado debe coincidir con la compilación de Microsoft Visual Studio .NET Framework que está usando. Establezca la versión en 9.0.0.0 si usa Visual Studio .NET Framework 3.5. Si usa Visual Studio .NET Framework 2.0, establezca la versión en 8.0.0.0.
+
 
 ## <a name="define-connection-strings"></a>Definir cadenas de conexión
  Las cadenas de conexión definen la información específica del proveedor para acceder a los orígenes de datos. Las cadenas de conexión definidas en los archivos de configuración proporcionan información del proveedor de datos reutilizable en una aplicación. En esta sección, creará dos cadenas de conexión para que las usen los orígenes de datos definidos en la sección de configuración personalizada.

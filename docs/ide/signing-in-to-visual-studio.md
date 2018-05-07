@@ -1,9 +1,9 @@
 ---
-title: Iniciar sesión en Visual Studio | Microsoft Docs
+title: Iniciar sesión en Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -43,7 +43,7 @@ Esta es una lista completa de lo que puede esperar y lo que puede hacer después
 
 La primera vez que inicia Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta de Microsoft de forma gratuita. Vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-A continuación, elija la configuración de UI y el tema de color que desea usar en Visual Studio. Visual Studio recordará la configuración y la sincronizará en todos los entornos de Visual Studio en los que ha iniciado sesión. Para obtener una lista de las configuraciones sincronizadas, vea [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). Puede cambiar la configuración más adelante si abre el menú **Herramientas**, **Opciones** en Visual Studio.
+A continuación, elija la configuración de UI y el tema de color que desea usar en Visual Studio. Visual Studio recordará la configuración y la sincronizará en todos los entornos de Visual Studio en los que ha iniciado sesión. Para obtener una lista de las configuraciones sincronizadas, vea [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). Puede cambiar la configuración más adelante si abre el menú **Herramientas** > **Opciones** en Visual Studio.
 
 Después de proporcionar la configuración, se inicia Visual Studio, y ya ha iniciado sesión y está listo para empezar. Para comprobar si ha iniciado sesión, busque su nombre en la esquina superior derecha del entorno de Visual Studio.
 
@@ -53,7 +53,7 @@ A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión a
 
 ## <a name="to-change-your-profile-information"></a>Para cambiar la información del perfil
 
-1. Vaya a **Archivo**, **Configuración de la cuenta** y seleccione el vínculo **Administrar perfil de Visual Studio**.
+1. Vaya a **Archivo** > **Configuración de la cuenta** y elija el vínculo **Administrar perfil de Visual Studio**.
 
 1. En la ventana del explorador, seleccione **Editar perfil** y cambie los valores de configuración que quiera.
 
@@ -61,9 +61,9 @@ A menos que cierre sesión, siempre que inicia Visual Studio se inicia sesión a
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
-Si encuentra algún problema al iniciar sesión, consulte la página de [soporte técnico de cuentas](https://www.visualstudio.com/subscriptions/support/) para obtener ayuda.
+Si encuentra algún problema al iniciar sesión, vea la página de [soporte técnico de cuentas](https://www.visualstudio.com/subscriptions/support/) para obtener ayuda.
 
 ## <a name="see-also"></a>Vea también
 
-[Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)
+* [Cómo desbloquear Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Información general sobre IDE de Visual Studio](../ide/visual-studio-ide.md)

@@ -1,9 +1,8 @@
 ---
-title: Administrar herramientas externas | Microsoft Docs
-ms.custom: ''
+title: Administrar herramientas externas
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -14,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea718d2170d058897db4bfa7a9a2cfc32da563a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eeeee2e6e7ae5d043124faaa79bc6bad7c527702
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 
@@ -29,18 +28,18 @@ Se puede llamar a herramientas externas desde Visual Studio mediante el menú **
 El **Herramientas** menú contiene varios comandos integrados, como:
 
 * **Extensiones y actualizaciones** para [administrar Extensiones de Visual Studio](finding-and-using-visual-studio-extensions.md)
-* **Administrador de fragmentos de código...** para [organizar fragmentos de código](code-snippets.md)
+* **Administrador de fragmentos de código** para [organizar fragmentos de código](code-snippets.md)
 * **PreEmptive Protection - Dotfuscator** para iniciar [Dotfuscator Community Edition (CE)](dotfuscator/index.md) si está [instalado](dotfuscator/install.md)
-* **Personalizar...** para personalizar [menús y barras de herramientas](how-to-customize-menus-and-toolbars-in-visual-studio.md)
-* **Opciones...** para [establecer numerosas opciones diferentes para el IDE de Visual Studio y otras herramientas](reference/options-dialog-box-visual-studio.md)
+* **Personalizar** para [personalizar menús y barras de herramientas](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Opciones** para [establecer varias opciones diferentes para el IDE de Visual Studio y otras herramientas](reference/options-dialog-box-visual-studio.md)
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Agregar nuevas herramientas al menú Herramientas
 
 Puede agregar una herramienta externa para que aparezca en el menú **Herramientas**.
 
-1. Para abrir el cuadro de diálogo **Herramientas externas**, elija **Herramientas** > **Herramientas externas...**
+1. Para abrir el cuadro de diálogo **Herramientas externas**, elija **Herramientas** > **Herramientas externas**.
 
-1. Haga clic en **Agregar** y, después, rellene la información. Por ejemplo, la entrada siguiente hace que el Explorador de Windows se abra en el directorio del archivo que tiene abierto actualmente en Visual Studio:
+1. Haga clic en **Agregar** y, después, rellene la información. Por ejemplo, la entrada siguiente hace que el **Explorador de Windows** se abra en el directorio del archivo que tiene abierto en Visual Studio:
 
    * Título: `Open File Location`
 
@@ -52,28 +51,28 @@ Puede agregar una herramienta externa para que aparezca en el menú **Herramient
 
 Lo siguiente es una lista completa de los argumentos que se pueden utilizar al definir una herramienta externa:
 
-|nombre|Argumento|Description|  
-|----------|--------------|-----------------|  
-|Ruta de acceso del elemento|$(ItemPath)|Nombre de archivo completo del archivo actual (unidad + ruta de acceso + nombre de archivo).|  
-|Directorio del elemento|$(ItemDir)|Directorio del archivo actual (unidad + ruta de acceso).|  
-|Nombre de archivo del elemento|$(ItemFilename)|Nombre de archivo del archivo actual (nombre de archivo).|  
-|Extensión del elemento|$(ItemExt)|Extensión del nombre de archivo del archivo actual.|  
-|Línea actual|$(CurLine)|Posición de línea actual del cursor en la ventana de código.|  
-|Columna actual|$(CurCol)|Posición de columna actual del cursor en la ventana de código.|  
-|Texto actual|$(CurText)|Texto seleccionado.|  
-|Ruta de acceso de destino|$(TargetPath)|Nombre de archivo completo del elemento que se va a compilar (unidad + ruta de acceso + nombre de archivo).|  
-|Directorio de destino|$(TargetDir)|Directorio del elemento que se va a compilar.|  
-|Nombre de destino|$(TargetName)|Nombre de archivo del elemento que se va a compilar.|  
-|Extensión de destino|$(TargetExt)|Extensión del nombre de archivo del elemento que se va a compilar.|  
-|Directorio binario|$(BinDir)|Ubicación final del archivo binario que se va a compilar (definida como unidad + ruta de acceso).|  
-|Directorio del proyecto|$(ProjDir)|Directorio del proyecto actual (unidad + ruta de acceso).|  
-|Nombre de archivo del proyecto|$(ProjFileName)|Nombre de archivo del proyecto actual (unidad + ruta de acceso + nombre de archivo).|  
-|Directorio de la solución|$(SolutionDir)|Directorio de la solución actual (unidad + ruta de acceso).|  
+|nombre|Argumento|Description|
+|----------|--------------|-----------------|
+|Ruta de acceso del elemento|$(ItemPath)|Nombre de archivo completo del archivo actual (unidad + ruta de acceso + nombre de archivo).|
+|Directorio del elemento|$(ItemDir)|Directorio del archivo actual (unidad + ruta de acceso).|
+|Nombre de archivo del elemento|$(ItemFilename)|Nombre de archivo del archivo actual (nombre de archivo).|
+|Extensión del elemento|$(ItemExt)|Extensión del nombre de archivo del archivo actual.|
+|Línea actual|$(CurLine)|Posición de línea actual del cursor en la ventana de código.|
+|Columna actual|$(CurCol)|Posición de columna actual del cursor en la ventana de código.|
+|Texto actual|$(CurText)|Texto seleccionado.|
+|Ruta de acceso de destino|$(TargetPath)|Nombre de archivo completo del elemento que se va a compilar (unidad + ruta de acceso + nombre de archivo).|
+|Directorio de destino|$(TargetDir)|Directorio del elemento que se va a compilar.|
+|Nombre de destino|$(TargetName)|Nombre de archivo del elemento que se va a compilar.|
+|Extensión de destino|$(TargetExt)|Extensión del nombre de archivo del elemento que se va a compilar.|
+|Directorio binario|$(BinDir)|Ubicación final del archivo binario que se va a compilar (definida como unidad + ruta de acceso).|
+|Directorio del proyecto|$(ProjDir)|Directorio del proyecto actual (unidad + ruta de acceso).|
+|Nombre de archivo del proyecto|$(ProjFileName)|Nombre de archivo del proyecto actual (unidad + ruta de acceso + nombre de archivo).|
+|Directorio de la solución|$(SolutionDir)|Directorio de la solución actual (unidad + ruta de acceso).|
 |Nombre de archivo de la solución|$(SolutionFileName)|Nombre de archivo de la solución actual (unidad + ruta de acceso + nombre de archivo).|
 
 > [!NOTE]
-> La barra de estado del IDE muestra las variables Línea actual y Columna actual para indicar dónde se encuentra el punto de inserción en el Editor de código activo. La variable Texto actual devuelve el texto o el código seleccionado en dicha ubicación.
+> La barra de estado del IDE muestra las variables **Línea actual** y **Columna actual** para indicar dónde se encuentra el punto de inserción en el **Editor de código** activo. La variable **Texto actual** devuelve el texto o el código seleccionado en esa ubicación.
 
 ## <a name="see-also"></a>Vea también
 
-[Herramientas de compilación de C/C++](/cpp/build/reference/c-cpp-build-tools)
+- [Herramientas de compilación de C/C++](/cpp/build/reference/c-cpp-build-tools)

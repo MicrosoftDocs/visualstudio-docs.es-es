@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Seleccionar un repositorio de resultados de pruebas de carga en Visual Studio | Microsoft Docs'
+title: 'Cómo: Seleccionar un repositorio de resultados de pruebas de carga en Visual Studio'
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,13 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3b653ff4bd57c9986e2269c20a4fb314a9372b23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d12279badb0d6898dca3dc06d23eb67a054cc1eb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Cómo: Seleccionar un repositorio de resultados de pruebas de carga
 

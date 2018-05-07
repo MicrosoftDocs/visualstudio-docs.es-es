@@ -2,6 +2,7 @@
 title: 'Inicio rápido: Crear su primera aplicación de la Plataforma universal de Windows en Visual Studio con XAML y C# | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Inicio rápido: Crear su primera aplicación de la Plataforma universal de Windows en Visual Studio con XAML y C#
 
@@ -31,7 +32,7 @@ En primer lugar, cree un proyecto de la Plataforma universal de Windows. En el t
 
 1. Abra Visual Studio 2017.
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**
+2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 3. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y, a continuación, elija **Windows Universal**. En el panel central, elija **Aplicación vacía (Windows universal)**. Luego, asigne el nombre *HelloWorld* al proyecto y elija **Aceptar**.
 
@@ -54,7 +55,7 @@ Es hora de empezar a desarrollar. Deberá agregar un control de botón y una acc
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Agregar un botón al lienzo Diseño
 
-1. En el **Explorador de soluciones**, haga doble clic en **MainPage.xaml** para abrir una vista en dos paneles.
+1. En el **Explorador de soluciones**, haga doble clic en *MainPage.xaml* para abrir una vista en dos paneles.
 
   ![Abrir MainPage.xaml en el Explorador de soluciones ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
@@ -66,7 +67,7 @@ Es hora de empezar a desarrollar. Deberá agregar un control de botón y una acc
 
   ![Haga clic en Cuadro de herramientas para abrir la ventana flotante Cuadro de herramientas](../ide/media/uwp-toolbox.png)
 
-  (Si no ve la opción Cuadro de herramientas, puede abrirla desde la barra de menús. Para ello, elija **Ver** > **barra de herramientas**. También puede presionar **CTRL**+**Alt**+**X**.
+  (Si no ve la opción **Cuadro de herramientas**, puede abrirla desde la barra de menús. Para ello, elija **Ver** > **barra de herramientas**. También puede presionar **CTRL**+**Alt**+**X**.
 
 3. Haga clic en el icono de **anclaje** para acoplar la ventana del cuadro de herramientas.
 
@@ -76,17 +77,17 @@ Es hora de empezar a desarrollar. Deberá agregar un control de botón y una acc
 
    ![Haga clic en el control Botón y arrástrelo al lienzo Diseño](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Si observa el código en el Editor XAML, verá que el botón también se ha agregado ahí:
+  Si observa el código en el **Editor XAML**, verá que el botón también se ha agregado ahí:
 
   ![Haga clic en el control Botón y arrástrelo al lienzo Diseño](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Agregar una etiqueta al botón
 
-1. En el Editor XAML, cambie el valor de Contenido del botón de "Button" a "Hello World!"
+1. En el **Editor XAML**, cambie el valor de Contenido del botón de "Button" a "Hello World!"
 
    ![Cambiar el valor del contenido del botón a Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Observe que el botón del Diseñador XAML también cambia.
+2. Observe que el botón del **Diseñador XAML** también cambia.
 
    ![El botón cambia a Hello World en el lienzo de diseño](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ Un "controlador de eventos" parece algo complicado, pero es simplemente otro nom
 
 1. Haga doble clic en el control de botón del lienzo de diseño.
 
-2.  Modifique el código del controlador de eventos en *MainPage.xaml.cs*, la página de código subyacente.
+2. Modifique el código del controlador de eventos en *MainPage.xaml.cs*, la página de código subyacente.
 
  Aquí es donde las cosas se ponen interesantes. El controlador de eventos predeterminado tiene el aspecto siguiente:
 
@@ -121,7 +122,7 @@ Un "controlador de eventos" parece algo complicado, pero es simplemente otro nom
 
 #### <a name="what-did-we-just-do"></a>¿Qué acabamos de hacer?
 
-El código usa algunas API de Windows para crear un objeto de síntesis de voz y, a continuación, le proporciona algún texto para que lo pronuncie. (Para obtener más información sobre el uso de SpeechSynthesis, consulte <xref:System.Speech.Synthesis>).
+El código usa algunas API de Windows para crear un objeto de síntesis de voz y, a continuación, le proporciona algún texto para que lo pronuncie. (Para obtener más información sobre el uso de `SpeechSynthesis`, vea <xref:System.Speech.Synthesis>).
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 

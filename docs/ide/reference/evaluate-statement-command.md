@@ -1,10 +1,9 @@
 ---
-title: Evaluar instrucción (Comando) | Microsoft Docs
-ms.custom: ''
+title: Evaluar instrucción (Comando)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
 helpviewer_keywords:
@@ -16,53 +15,53 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe960ec84830ce76095577f7d8ee2f0c9c4ccbe8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c2ec882bb2fdc9d0f3b74a0552c85a7b286617c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
-Evalúa y muestra la instrucción dada.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-Debug.EvaluateStatement text   
-```  
-  
-## <a name="arguments"></a>Argumentos  
- `text`  
- Obligatorio. Instrucción que se va a evaluar.  
-  
-## <a name="remarks"></a>Comentarios  
- La ventana que se usa para escribir el comando **EvaluateStatement** determina si el signo igual (=) se interpreta como operador de comparación o como operador de asignación.  
-  
- En la ventana **Comandos**, un signo igual (=) se interpreta como un operador de comparación. Por lo tanto, por ejemplo, si los valores de las variables `a` y `b` son diferentes, entonces el comando  
-  
-```  
->Debug.EvaluateStatement(a=b)  
-```  
-  
- devolverá un valor de `false`.  
-  
- En la ventana **Inmediato**, por el contrario, un signo igual (=) se interpreta como un operador de asignación. Por lo tanto, por ejemplo, el comando  
-  
-```  
->Debug.EvaluateStatement(a=b)  
-```  
-  
- asignará a la variable `a` el valor de la variable `b`.  
-  
-## <a name="example"></a>Ejemplo  
-  
-```  
->Debug.EvaluateStatement(a+b)  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Imprimir (Comando)](../../ide/reference/print-command.md)   
- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Ventana Comandos](../../ide/reference/command-window.md)   
- [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Evalúa y muestra la instrucción dada.
+
+## <a name="syntax"></a>Sintaxis
+
+```
+Debug.EvaluateStatement text
+```
+
+## <a name="arguments"></a>Argumentos
+ `text` Obligatorio. Instrucción que se va a evaluar.
+
+## <a name="remarks"></a>Comentarios
+ La ventana que se usa para escribir el comando **EvaluateStatement** determina si el signo igual (=) se interpreta como operador de comparación o como operador de asignación.
+
+ En la ventana **Comandos**, un signo igual (=) se interpreta como un operador de comparación. Por lo tanto, por ejemplo, si los valores de las variables `a` y `b` son diferentes, entonces el comando
+
+```
+>Debug.EvaluateStatement(a=b)
+```
+
+ devolverá un valor de `false`.
+
+ En la ventana **Inmediato**, por el contrario, un signo igual (=) se interpreta como un operador de asignación. Por lo tanto, por ejemplo, el comando
+
+```
+>Debug.EvaluateStatement(a=b)
+```
+
+ asignará a la variable `a` el valor de la variable `b`.
+
+## <a name="example"></a>Ejemplo
+
+```
+>Debug.EvaluateStatement(a+b)
+```
+
+## <a name="see-also"></a>Vea también
+
+- [Imprimir (Comando)](../../ide/reference/print-command.md)
+- [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Ventana Comandos](../../ide/reference/command-window.md)
+- [Cuadro Buscar/Comando](../../ide/find-command-box.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
