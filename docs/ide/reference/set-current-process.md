@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907ef900283cb3f15d9e65f7196c3cf42e191ed3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 64561db59cc089d9539ab396cf4e869e92fe1117
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-current-process"></a>Establecer el proceso actual
 Establece el proceso especificado como el proceso activo en el depurador.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Debug.SetCurrentProcess index
 ```
 
@@ -38,7 +38,7 @@ Debug.SetCurrentProcess index
 
 ## <a name="example"></a>Ejemplo
 
-```
+```cmd
 >Debug.SetCurrentProcess 1
 ```
 

@@ -1,7 +1,7 @@
 ---
-title: Configuración de la convención de codificación de .NET para EditorConfig en Visual Studio| Microsoft Docs
+title: Configuración de la convención de codificación de .NET para EditorConfig en Visual Studio
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -12,16 +12,17 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 1996edee476525ec73839fc22dd2fa39de03098a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 
@@ -113,7 +114,7 @@ En la lista siguiente se muestran las reglas de convención de lenguaje permitid
 
 Las reglas de estilo de esta sección son aplicables a C# y Visual Basic. Para ver ejemplos de código en el lenguaje de programación preferido, elíjalo en el menú desplegable **Lenguaje** en la esquina superior derecha de la ventana del explorador.
 
-#### <a name="this_and_me">Los calificadores "This." y "Me."</a>
+#### Calificadores <a name="this_and_me"></a>"This." y "Me."
 
 Esta regla de estilo (los identificadores de regla IDE0003 e IDE0009) se puede aplicar a campos, propiedades, métodos o eventos. Un valor **true** significa que prefiere que el símbolo de código esté precedido por `this.` en C# o `Me.` en Visual Basic. Un valor **false** significa que prefiere que el elemento de código _no_ esté precedido por `this.` o `Me.`.
 
@@ -218,7 +219,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-Estas reglas podrían aparecer en un archivo .editorconfig como sigue:
+Estas reglas podrían aparecer en un archivo *.editorconfig* como sigue:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -229,7 +230,7 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="language_keywords">Palabras clave del lenguaje en lugar de nombres de tipos de marco para referencias de tipo</a>
+#### <a name="language_keywords"></a>Palabras clave del lenguaje en lugar de nombres de tipos de marco para referencias de tipo
 
 Esta regla de estilo se puede aplicar a variables locales, parámetros de métodos y miembros de clases, o bien como una regla independiente para escribir expresiones de acceso a miembros. Un valor **true** significa que se prefiere la palabra clave del lenguaje (como `int` o `Integer`) en lugar del nombre de tipo (por ejemplo, `Int32`) para los tipos que tienen una palabra clave para representarlos. Un valor **false** significa que se prefiere el nombre de tipo en lugar de la palabra clave del lenguaje.
 
@@ -286,7 +287,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-Estas reglas podrían aparecer en un archivo .editorconfig como sigue:
+Estas reglas podrían aparecer en un archivo *.editorconfig* como sigue:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -295,7 +296,7 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="normalize_modifiers">Preferencias de modificadores</a>
+#### <a name="normalize_modifiers"></a>Preferencias de modificadores
 
 Las reglas de estilo de esta sección hacen referencia a las preferencias de modificadores, incluida la necesidad de modificadores de accesibilidad y la especificación del criterio de ordenación deseado de los modificadores.
 
@@ -363,7 +364,7 @@ Public Class MyClass
 End Class
 ```
 
-Estas reglas podrían aparecer en un archivo .editorconfig como sigue:
+Estas reglas podrían aparecer en un archivo *.editorconfig* como sigue:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -379,7 +380,7 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="expression_level">Preferencias de nivel de expresión</a>
+#### <a name="expression_level"></a>Preferencias de nivel de expresión
 
 Las reglas de estilo de esta sección definen las preferencias de nivel de expresión, incluido el uso de inicializadores de objeto, de inicializadores de colección, de nombres de tupla explícitos o inferidos y de tipos anónimos inferidos.
 
@@ -505,7 +506,7 @@ var anon = new { age = age, name = name };
 
 ```
 
-Estas reglas podrían aparecer en un archivo .editorconfig como sigue:
+Estas reglas podrían aparecer en un archivo *.editorconfig* como sigue:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -517,7 +518,7 @@ dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
-#### <a name="null_checking">Preferencias de la comprobación de NULL</a>
+#### <a name="null_checking"></a>Preferencias de la comprobación de NULL
 
 Las reglas de estilo de esta sección tienen que ver con el uso de las preferencias de la comprobación de NULL.
 
@@ -578,7 +579,7 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-Estas reglas podrían aparecer en un archivo .editorconfig como sigue:
+Estas reglas podrían aparecer en un archivo *.editorconfig* como sigue:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -591,7 +592,7 @@ dotnet_style_null_propagation = true:suggestion
 
 Las reglas de estilo de esta sección solo son aplicables a C#.
 
-#### <a name="var">Tipos implícitos y explícitos</a>
+#### <a name="var"></a>Tipos implícitos y explícitos
 
 Las reglas de estilo de esta sección (los identificadores de regla IDE0007 e IDE0008) hacen referencia al uso de la palabra clave [var](/dotnet/csharp/language-reference/keywords/var) frente a un tipo explícito en una declaración de variable. Esta regla se puede aplicar por separado a los tipos integrados, cuando el tipo es aparente, y en otros lugares.
 
@@ -648,7 +649,7 @@ var f = this.Init();
 bool f = this.Init();
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -658,7 +659,7 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="expression_bodied_members">Miembros con forma de expresión</a>
+#### <a name="expression_bodied_members"></a>Miembros con forma de expresión
 
 Las reglas de estilo de esta sección hacen referencia al uso de [miembros con forma de expresión](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) cuando la lógica consta de una sola expresión. Esta regla se puede aplicar a métodos, constructores, operadores, propiedades, indizadores y descriptores de acceso.
 
@@ -795,7 +796,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -808,7 +809,7 @@ csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
 ```
 
-#### <a name="pattern_matching">Coincidencia de patrones</a>
+#### <a name="pattern_matching"></a>Coincidencia de patrones
 
 Las reglas de estilo de esta sección hacen referencia al uso de la [coincidencia de patrones](/dotnet/csharp/pattern-matching) en C#.
 
@@ -850,7 +851,7 @@ var s = o as string;
 if (s != null) {...}
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -859,7 +860,7 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="inlined_variable_declarations">Declaraciones de variables insertadas</a>
+#### <a name="inlined_variable_declarations"></a>Declaraciones de variables insertadas
 
 Esta regla de estilo se aplica a si las variables `out` se declaran como alineadas o no. A partir de C# 7, puede [declarar una variable de salida en la lista de argumentos de la llamada al método](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), en lugar de en una declaración de variable independiente.
 
@@ -885,7 +886,7 @@ int i;
 if (int.TryParse(value, out i) {...}
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -893,7 +894,7 @@ Archivo .editorconfig de ejemplo:
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-#### <a name="expression_level_csharp">Preferencias de nivel de expresión</a>
+#### <a name="expression_level_csharp"></a>Preferencias de nivel de expresión
 
 Las reglas de estilo de esta sección hacen referencia a las preferencias de nivel de expresión, incluido el uso de [expresiones predeterminadas](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), variables deconstruidas y funciones locales sobre funciones anónimas.
 
@@ -967,7 +968,7 @@ fibonacci = (int n) =>
 };
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -977,7 +978,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking_csharp">Preferencias de la comprobación de "NULL"</a>
+#### <a name="null_checking_csharp"></a>Preferencias de la comprobación de "NULL"
 
 Estas reglas de estilo están relacionadas con la sintaxis de la comprobación de `null`, incluido el uso de expresiones `throw` o instrucciones `throw`, y si se realiza una comprobación de NULL o se usa el operador de incorporación condicional (`?.`) al invocar una [expresión lambda](/dotnet/csharp/lambda-expressions).
 
@@ -1019,7 +1020,7 @@ func?.Invoke(args);
 if (func != null) { func(args); }
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1028,7 +1029,7 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="code_block">Preferencias de bloques de código</a>
+#### <a name="code_block"></a>Preferencias de bloques de código
 
 Esta regla de estilo se refiere al uso de llaves `{ }` para delimitar los bloques de código.
 
@@ -1053,7 +1054,7 @@ if (test) { this.Display(); }
 if (test) this.Display();
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1101,7 +1102,7 @@ En la lista siguiente se muestran las reglas de convención de formato disponibl
 
 Las reglas de formato de esta sección son aplicables a C# y Visual Basic.
 
-#### <a name="usings">Organización de instrucciones Using</a>
+#### <a name="usings"></a>Organización de instrucciones Using
 
 Esta regla de formato se refiere a la ubicación de directivas using con System.*, con respecto a otras directivas using.
 
@@ -1130,7 +1131,7 @@ using Octokit;
 using System.Threading.Tasks;
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # .NET formatting settings:
@@ -1142,7 +1143,7 @@ dotnet_sort_system_directives_first = true
 
 Las reglas de formato de esta sección se aplican únicamente al código de C#.
 
-#### <a name="newline">Opciones de nueva línea</a>
+#### <a name="newline"></a>Opciones de nueva línea
 
 Estas reglas de formato se refieren al uso de nuevas líneas para dar formato al código.
 
@@ -1327,7 +1328,7 @@ var q = from a in e from b in e
         select a * b;
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1341,7 +1342,7 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### <a name="indent">Opciones de sangría</a>
+#### <a name="indent"></a>Opciones de sangría
 
 Estas reglas de formato se refieren al uso de la sangría para dar formato al código.
 
@@ -1476,7 +1477,7 @@ class C
 }
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1486,7 +1487,7 @@ csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 ```
 
-#### <a name="spacing">Opciones de espaciado</a>
+#### <a name="spacing"></a>Opciones de espaciado
 
 Estas reglas de formato se refieren al uso de caracteres de espacio para dar formato al código.
 
@@ -1585,7 +1586,7 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1597,7 +1598,7 @@ csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 ```
 
-#### <a name="wrapping">Opciones de ajuste</a>
+#### <a name="wrapping"></a>Opciones de ajuste
 
 Estas reglas de formato se refieren al uso de líneas individuales frente a líneas separadas para las instrucciones y bloques de código.
 
@@ -1642,7 +1643,7 @@ public int MyProperty
 }
 ```
 
-Archivo .editorconfig de ejemplo:
+Ejemplo del archivo *.editorconfig*:
 
 ```EditorConfig
 # CSharp formatting settings:

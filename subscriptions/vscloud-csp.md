@@ -1,19 +1,19 @@
 ---
 title: Adquisición de suscripciones de nube de Visual Studio para CSP
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Información para proveedores de soluciones en la nube sobre cómo comprar y administrar suscripciones de nube de Visual Studio para sus clientes.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Adquirir y administrar suscripciones de nube de Visual Studio para los clientes
 
@@ -78,7 +78,7 @@ Así es como hay que interpretar lo que aparece en esta hoja de cálculo:
 Ofrecemos un descuento del 5 % por la sexta unidad que se adquiera (para un mismo cliente) cada mes de cada suscripción de Visual Studio. Es por eso que aparecen dos filas por cada opción de suscripción. Una fila muestra un "valor mínimo" de 0, lo que debe interpretarse como el precio base de las primeras cinco unidades. La otra fila muestra un "valor mínimo" de 5, por lo que este es el precio con el 5 % de descuento que se aplica desde la sexta unidad en adelante.
 
 
-## <a name="faq"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **mensuales**?
 R: En la primera compra, facturaremos una cantidad prorrateada para cubrir los días restantes del mes actual. Por ejemplo, si se compran 10 suscripciones de nube mensuales de Visual Studio Professional el 15 de abril, cobraríamos solo cinco unidades (porque siguen quedando por delante 15 de los 30 días del mes en curso), o bien el 50 % y prorratearíamos las unidades facturadas al 50 %. A partir del 1 de mayo, y así cada mes en adelante hasta que se cancele, se facturarán las 10 unidades por completo.
 

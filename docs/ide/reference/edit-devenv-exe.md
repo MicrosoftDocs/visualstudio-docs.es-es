@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c071d225ebd2ac5032da3b5aed095bef6cafe352
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 22c5aeffae35a4202577cf8065b76b1968616355
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 Abre el archivo especificado en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Devenv /edit [file1[ file2]]
 ```
 
@@ -45,7 +45,7 @@ Devenv /edit [file1[ file2]]
 ## <a name="example"></a>Ejemplo
  En este ejemplo se abre el archivo `MyFile.cs` en una instancia existente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o se abre el archivo en una nueva instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] si todavía no hay ninguna.
 
-```
+```cmd
 devenv /edit MyFile.cs
 ```
 

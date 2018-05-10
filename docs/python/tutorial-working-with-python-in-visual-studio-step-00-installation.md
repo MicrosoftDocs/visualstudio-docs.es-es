@@ -1,27 +1,21 @@
 ---
-title: 'Trabajo con Python, paso 0: instalación | Microsoft Docs'
-description: Paso 0 (requisitos previos) de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata cómo instalar la compatibilidad de Python en Visual Studio.
-ms.custom: mvc
+title: 'Tutorial sobre cómo trabajar con Python, paso 0: instalación'
+description: Paso 0 (requisitos previos de instalación) de un tutorial básico sobre cómo trabajar con Python en Visual Studio.
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: af6bfa2e1739e60e6c0a5eca625f358b528ebd85
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 314aedd06755fba89c1e7e427613b0cad4e81b12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalación de la compatibilidad con Python en Visual Studio
 
@@ -44,7 +38,7 @@ ms.lasthandoff: 03/28/2018
 
     ![Probar Python a través de la ventana interactiva](media/installation-interactive-test.png)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
 > [Paso 1: Creación de un proyecto de Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

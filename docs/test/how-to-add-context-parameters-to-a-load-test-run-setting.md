@@ -1,20 +1,21 @@
 ---
-title: Agregar parámetros de contexto a parámetros de ejecución de pruebas de carga en Visual Studio | Microsoft Docs
+title: Agregar parámetros de contexto a parámetros de ejecución de pruebas de carga en Visual Studio
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 03db08b701574a4e910b96c843d0f2638e71a4f7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Cómo: Agregar parámetros de contexto a parámetros de ejecución de pruebas de carga
 
@@ -62,9 +63,9 @@ Además, si asigna valores diferentes a un parámetro de contexto usando el mism
 
      Si el parámetro de ejecución ya contiene una carpeta **Parámetros de contexto**, puede hacer clic en ella con el botón derecho y, a continuación, elegir **Agregar parámetro de contexto**.
 
-4.  En la ventana Propiedades, cambie el valor de **Nombre** según corresponda (por ejemplo, WebServer1). En la ventana Propiedades, cambie **Valor** al parámetro que quiera usar (por ejemplo, http://CorporateStagingWebServer).
+4.  En la ventana Propiedades, cambie el valor de **Nombre** según corresponda (por ejemplo, WebServer1). En la ventana Propiedades, cambie **Valor** por el parámetro que quiera usar (por ejemplo, http://CorporateStagingWebServer)).
 
-5.  (Opcional) Repita los pasos 3 a 5 y use una cadena diferente para la propiedad **Value** (por ejemplo, http://CorporateProductionWebServer).
+5.  (Opcional) Repita los pasos del 3 al 5 y use una cadena diferente para la propiedad **Valor** (por ejemplo, http://CorporateProductionWebServer)).
 
 6.  Elija los parámetros de ejecución que quiera activar. Abra el menú contextual en los parámetros de ejecución y seleccione **Establecer como activa**.
 

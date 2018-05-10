@@ -18,18 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c67b1b7d581a7e4b9d4309bfe432bf2a3298e4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac74f5275288cdba35d3a70f4a7813c800e4327d
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 Establece el idioma predeterminado que se usa para texto, moneda y otros valores en el entorno de desarrollo integrado (IDE).
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 devenv {/LCID|/l} LocaleID
 ```
 
@@ -58,7 +58,7 @@ devenv {/LCID|/l} LocaleID
 ## <a name="example"></a>Ejemplo
  En este ejemplo se carga el IDE con cadenas de recursos en inglés.
 
-```
+```cmd
 devenv /LCID 1033
 ```
 

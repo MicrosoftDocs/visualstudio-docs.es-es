@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9670d5789e57c4a3c156cca0608840762d094b9f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 48b9bc6f2797a6cf6c87da4e4bc2e2d83f84622a
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="project-properties-reference"></a>Referencia de propiedades del proyecto
 Obtenga más información sobre cómo configurar y personalizar propiedades del proyecto.
@@ -31,11 +31,9 @@ Obtenga más información sobre cómo configurar y personalizar propiedades del 
 |[Página Eventos de compilación, (Diseñador de proyectos) (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)|Use este panel para especificar las instrucciones de configuración de compilación.|
 |[Página Compilar (Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md)|Use este panel para especificar las propiedades de configuración de compilación de un proyecto de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].|
 |[Página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)|Use esta página para especificar las propiedades de compilación de proyectos de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)].|
-|||
 |[Página Depuración, Diseñador de proyectos](../../ide/reference/debug-page-project-designer.md)|Use esta página para especificar las propiedades de depuración de un proyecto.|
 |[Análisis de código, Diseñador de proyectos](../../ide/reference/code-analysis-project-designer.md)|Use esta página para configurar la herramienta de análisis de código.|
 |[Panel Publicar, Diseñador de proyectos](../../ide/reference/publish-page-project-designer.md)|Use esta página para configurar las propiedades de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|
-|||
 |[Página Referencias, Diseñador de proyectos (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|Use esta página para administrar las referencias que ha usado un proyecto.|
 |[Página Seguridad, Diseñador de proyectos](../../ide/reference/security-page-project-designer.md)|Use esta página para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)].|
 |[Página Firma, Diseñador de proyectos](../../ide/reference/signing-page-project-designer.md)|Use esta página para firmar los manifiestos de implementación y aplicación, y firmar el ensamblado.|

@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27b11142880f71ed653371bd23ae01e51f50b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.
@@ -32,13 +32,13 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
 ## <a name="displaying-the-values-of-variables"></a>Mostrar los valores de las variables
  Esta ventana puede resultar particularmente útil al depurar una aplicación. Por ejemplo, para comprobar el valor de una variable `varA`, usar el [comando Imprimir](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  El signo de interrogación (?) es un alias de `Debug.Print`, por lo que este comando también puede escribirse:
 
-```
+```cmd
 >? varA
 ```
 
@@ -100,7 +100,7 @@ No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de
 
  En la ventana **Inmediato**, un signo igual (=) se interpreta como un operador de asignación. Por lo tanto, por ejemplo, el comando
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
@@ -108,7 +108,7 @@ No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de
 
  Por el contrario, en la ventana **Comando**, un signo igual (=) se interpreta como un operador de comparación. No puede usar operaciones de asignación en la ventana **Comando**. Por lo tanto, por ejemplo, si los valores de las variables `varA` y `varB` son diferentes, entonces el comando
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 

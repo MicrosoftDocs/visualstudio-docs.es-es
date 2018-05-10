@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb238559cd59c03f134e781bc4beaf7ba7cb7893
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-new-item-command"></a>Agregar nuevo elemento (Comando)
 Agrega un nuevo elemento de solución (como un archivo .htm, .css o .txt o un conjunto de marcos) a la solución actual y lo abre.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
@@ -40,7 +40,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
  Por ejemplo, para crear un archivo de texto nuevo tiene que escribir lo siguiente para el argumento /t:`templatename`.
 
-```
+```cmd
 /t:"General\Style Sheet"
 ```
 
@@ -50,14 +50,14 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
  Por ejemplo, para abrir una hoja de estilos en el editor de código fuente, tiene que escribir lo siguiente para el argumento /e:`editorname`.
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Ejemplo
  En este ejemplo se agrega un elemento de solución nuevo, MyHTMLpg, a la solución actual.
 
-```
+```cmd
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 

@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957f521b23bc56a6bfa4f8de315f130d5f82d8d3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce3c95591809b847141dde07b2a770d9b4597a5f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quick-watch-command"></a>Inspección rápida (Comando)
 Muestra el texto seleccionado o especificado en el campo Expresión de la ventana [Inspección rápida](../../debugger/watch-and-quickwatch-windows.md). Puede usar este cuadro de diálogo para calcular el valor actual de una variable o expresión reconocida por el depurador, o el contenido de un registro. Además, puede cambiar el valor de cualquier variable no constante o el contenido de cualquier registro.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Debug.QuickWatchq [text]
 ```
 
@@ -40,7 +40,7 @@ Debug.QuickWatchq [text]
 
 ## <a name="example"></a>Ejemplo
 
-```
+```cmd
 >Debug.QuickWatch
 ```
 

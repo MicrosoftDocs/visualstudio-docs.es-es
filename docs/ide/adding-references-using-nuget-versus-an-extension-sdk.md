@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49854e401bdefa4da776f888fff8cff6fdb0d136
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6956ebbd1220be17037b3c9a3d7bd3174872134d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Incorporación de referencias usando NuGet en lugar de un SDK de extensión
 
@@ -50,7 +50,7 @@ La tabla siguiente le ayuda a comparar las características de referencia de un 
 |El mecanismo se integra con los manifiestos de la aplicación.|Y|El SDK debe pasar conceptos específicos de la [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)] para que el empaquetado y F5 funcionen correctamente con los SDK que están disponibles en la [!INCLUDE[win8_appstore_short](../ide/includes/win8_appstore_short_md.md)].|Y|El contenido de NuGet pasa a formar parte del proyecto. No se necesita ninguna consideración especial de F5.|
 |El mecanismo implementa archivos que no son de referencia (por ejemplo, el marco de pruebas de implementación en el que se ejecutan pruebas de aplicaciones de [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]).|Y|Si coloca los archivos en la carpeta *\redist*, se implementan automáticamente.|Y||
 |El mecanismo agrega automáticamente los SDK de plataforma en el IDE de Visual Studio.|Y|Si coloca el SDK de [!INCLUDE[win8](../debugger/includes/win8_md.md)] o el SDK de Windows Phone en una ubicación específica con un diseño específico, el SDK se integra automáticamente con todas las características de Visual Studio.|N||
-|El mecanismo admite una máquina de desarrollo limpia. (Es decir, no se requiere ninguna instalación, y funcionará una sencilla recuperación del control de código fuente).|N|Dado que hace referencia a un SDK, debe proteger la solución y el SDK por separado. Puede proteger el SDK desde las dos ubicaciones predeterminadas que no son del Registro desde las que MSBuild itera los SDK (para obtener más información, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)). Como alternativa, si una ubicación personalizada consta de los SDK, puede especificar el código siguiente en el archivo de proyecto:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Después, proteja los SDK en dicha ubicación.|Y|Puede desproteger la solución y Visual Studio reconocerá inmediatamente los archivos y actuará sobre ellos.|
+|El mecanismo admite una máquina de desarrollo limpia. (Es decir, no se requiere ninguna instalación, y funcionará una sencilla recuperación del control de código fuente).|N|Dado que hace referencia a un SDK, debe proteger la solución y el SDK por separado. Puede proteger el SDK desde las dos ubicaciones predeterminadas que no son del Registro desde las que MSBuild itera los SDK (para obtener más información, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md)). Como alternativa, si una ubicación personalizada consta de los SDK, puede especificar el código siguiente en el archivo de proyecto:<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> Después, proteja los SDK en dicha ubicación.|Y|Puede desproteger la solución y Visual Studio reconocerá inmediatamente los archivos y actuará sobre ellos.|
 |Puede unirse a una gran comunidad existente de autores de paquetes.|N/D|La comunidad es nueva.|Y||
 |Puede unirse a una gran comunidad existente de consumidores de paquetes.|N/D|La comunidad es nueva.|Y||
 |Puede unirse a un ecosistema de asociados (galerías personalizadas, repositorios, etc.).|N/D|Los repositorios disponibles incluyen Visual Studio Marketplace, el Centro de descarga de Microsoft y la [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|Y||

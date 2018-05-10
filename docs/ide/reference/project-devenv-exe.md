@@ -18,18 +18,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2f9eef5ba7973f2735be575b6282fac0afc201c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 588b56c03dbd14b1b7658b92a67b02a6dc3892eb
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 Identifica un único proyecto dentro de la configuración de la solución especificada para compilar, limpiar, recompilar o implementar.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
 ```
 
@@ -77,7 +77,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 ## <a name="example"></a>Ejemplo
  Este ejemplo compila el proyecto `CSharpConsoleApp`, mediante la configuración de compilación de proyecto `Debug` en la configuración de solución `Debug` de `MySolution`.
 
-```
+```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 

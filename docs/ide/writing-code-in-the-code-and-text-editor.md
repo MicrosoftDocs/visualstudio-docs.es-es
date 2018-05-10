@@ -1,24 +1,22 @@
 ---
-title: "Características del editor de código en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Características del editor de código en Visual Studio
 ms.date: 02/23/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18b3d1afad30967edb130756843371dc9ec7ed26
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 3803a8ffb95aae59846b468b41f04eaa96f324f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 
@@ -84,7 +82,7 @@ Puede compartir su configuración de Visual Studio con otro desarrollador, hacer
 
 Para definir teclas de acceso rápido nuevas o redefinir las existentes, vaya a **Herramientas** > **Opciones** > **Entorno** > **Teclado**. Para más información sobre las teclas de acceso rápido, consulte [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Para más información sobre cómo personalizar el editor, consulte [Personalizar el editor](../ide/customizing-the-editor.md). Para las opciones del editor específicas de JavaScript, consulte las [ediciones del editor de JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
+Para más información sobre cómo personalizar el editor, consulte [Personalizar el editor](../ide/customizing-the-editor.md). Para las opciones del editor específicas de JavaScript, consulte las [opciones del editor de JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Vea también
 

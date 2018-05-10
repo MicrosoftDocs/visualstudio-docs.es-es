@@ -1,15 +1,9 @@
 ---
-title: Instalación de la compatibilidad de Python | Microsoft Docs
-description: Instrucciones detalladas sobre cómo instalar las Herramientas de Python para Visual Studio (PTVS) en Visual Studio 2017, 2015, 2013, 2012 y 2010, incluidas las opciones y las ubicaciones de instalación.
-ms.custom: ''
+title: Instalación de la compatibilidad de Python
+description: Cómo instalar las Herramientas de Python para Visual Studio (PTVS) en Visual Studio 2017, 2015, 2013, 2012 y 2010, incluidas las opciones y las ubicaciones de instalación.
 ms.date: 02/15/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -17,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6276c70cebd8f4d71e056142258422645c50cdfa
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
+# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
 Para instalar la compatibilidad de Python para Visual Studio (también conocida como Herramientas de Python para Visual Studio o PTVS), siga las instrucciones que aparecen en la sección correspondiente a su versión de Visual Studio:
 

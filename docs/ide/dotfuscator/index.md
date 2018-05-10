@@ -18,11 +18,11 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a81d640e2ecebe46a20f7a3661584cb5c7423691
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 Se utiliza para consolidar, proteger y eliminar aplicaciones de escritorio, móviles, de servidor e insertadas a fin de ayudar a salvaguardar secretos comerciales y propiedad intelectual de otra índole, reducir la piratería y la falsificación y proteger contra la manipulación y la depuración no autorizada.
 Dotfuscator funciona en ensamblados compilados sin necesidad de programación adicional ni de obtener acceso al código fuente.
 
-![](media/header.svg)
+![PreEmptive Protection - Dotfuscator](media/header.svg)
 
 ## <a name="why-protection-matters"></a>Por qué es importante la protección
 

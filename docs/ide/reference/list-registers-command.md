@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1113f7a4e1a61e6fe2954dfe8d98b9b2c52e6732
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce91abde91edf989b33c476b042abaf16c685df0
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="list-registers-command"></a>Mostrar registros (Comando)
 Muestra el valor de los registros seleccionados y permite modificar la lista de registros que se van a mostrar.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Watch [{register|registerGroup}...]]
 [/Unwatch [{register|registerGroup}...]]
@@ -62,7 +62,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="example"></a>Ejemplo
  En este ejemplo se usa el alias `r` de `Debug.ListRegisters` para mostrar los valores del grupo de registros `Flags`.
 
-```
+```cmd
 r /Display Flags
 ```
 

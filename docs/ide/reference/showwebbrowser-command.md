@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1396cd28244a655d18f6e09f4795dd099a11ca7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser (Comando)
 Muestra la dirección URL especificada en una ventana del explorador web dentro o fuera del entorno de desarrollo integrado (IDE).
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 View.ShowWebBrowser URL [/new][/ext]
 ```
 
@@ -50,7 +50,7 @@ View.ShowWebBrowser URL [/new][/ext]
 ## <a name="example"></a>Ejemplo
  En el ejemplo siguiente se muestra la página principal de MSDN Online en un explorador web fuera del IDE. Si una instancia del explorador web ya está abierta, se usa; en caso contrario, se inicia una nueva instancia.
 
-```
+```cmd
 >View.ShowWebBrowser http://msdn.microsoft.com /ext
 ```
 

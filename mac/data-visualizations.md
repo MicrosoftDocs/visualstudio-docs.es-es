@@ -3,14 +3,14 @@ title: Depuración - Visualizaciones de datos
 description: La depuración es una parte común y necesaria de la programación. Visual Studio para Mac contiene un completo conjunto de características para facilitar la depuración. En este artículo se examinan las distintas visualizaciones de datos que se pueden ver al inspeccionar objetos en el depurador.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 1c228718dc528e0ab34c9af328aee1c8259fa8b5
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 5ee16324a312eca79de2f3b356a5f3be941f5e7b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="data-visualizations"></a>Visualizaciones de datos
 

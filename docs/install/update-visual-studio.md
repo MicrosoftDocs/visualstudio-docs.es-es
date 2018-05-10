@@ -1,12 +1,9 @@
 ---
-title: Actualizar Visual Studio 2017 | Microsoft Docs
-description: Obtenga información paso a paso sobre cómo actualizar Visual Studio.
-ms.date: 03/06/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+title: Actualizar Visual Studio 2017
+description: Obtenga información sobre cómo actualizar Visual Studio a la versión más reciente, paso a paso.
+ms.date: 04/23/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - update Visual Studio
@@ -17,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa2e4e46fb2e4d51c83a559bbb9cda58d636e69a
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Actualizar Visual Studio 2017 a la versión más reciente
 
@@ -56,6 +53,9 @@ Cuando haya una actualización, aparecerá la correspondiente marca de notificac
 
      La actualización continúa. Cuando se haya completado, Visual Studio se reiniciará.
 
+     > [!NOTE]
+     > Si ejecuta Visual Studio en modo de administrador, debe reiniciar Visual Studio manualmente después de la actualización.    
+
 ### <a name="use-the-ide"></a>Uso del IDE
 
 Puede buscar una actualización y, a continuación, instalarla desde la barra de menús de Visual Studio.
@@ -69,6 +69,9 @@ Puede buscar una actualización y, a continuación, instalarla desde la barra de
 3. Cuando aparezca el cuadro de diálogo **Actualizar**, elija **Actualizar ahora**.
 
    La actualización continúa como se describe en la sección anterior y Visual Studio se reinicia una vez que la actualización finalice correctamente.
+
+   > [!NOTE]
+   > Si ejecuta Visual Studio en modo de administrador, debe reiniciar Visual Studio manualmente después de la actualización.  
 
 ### <a name="use-the-visual-studio-installer"></a>Uso del instalador de Visual Studio
 
@@ -150,8 +153,8 @@ Aquí tiene algunas opciones de soporte técnico más:
 
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
 * Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+* Puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
 

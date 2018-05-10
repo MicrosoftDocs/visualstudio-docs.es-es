@@ -1,21 +1,19 @@
 ---
-title: "Uso de Ver la definición en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Uso de Ver la definición en Visual Studio
 ms.date: 01/10/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a7465b8432d00df83638dbfa98a36cf8dee469a
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Cómo: Ver y editar código mediante Ver la definición (Alt+F12)
 
@@ -67,7 +65,7 @@ Cuando empieza a editar dentro de una ventana **Ver la definición**, el archivo
 
 1. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.
 
-   ![Establecer la opción Ver la definición del clic del mouse](../ide/media/editor_options_peek_view.png)  
+   ![Establecer la opción Ver la definición del clic del mouse](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Métodos abreviados de teclado para Ver la definición
 
@@ -75,18 +73,18 @@ Puede usar estos métodos abreviados de teclado con la ventana **Ver la definici
 
 |Funcionalidad|Método abreviado de teclado|
 |-------------------|:-----------------------:|
-|Abrir la ventana de definición|Alt+F12|
-|Cerrar la ventana de definición|Esc|
-|Promover la ventana de definición a una pestaña de documento normal|Mayús+Alt+Inicio|
-|Navegar entre ventanas de definición|Ctrl+Alt+- y Ctrl+Alt+=|
-|Navegar entre varios resultados|F8 y Mayús+F8|
-|Alternar entre la ventana del editor de código y la ventana de definición|Mayús+Esc|
+|Abrir la ventana de definición|**Alt**+**F12**|
+|Cerrar la ventana de definición|**Esc**|
+|Promover la ventana de definición a una pestaña de documento normal|**Mayús**+**Alt**+**Inicio**|
+|Navegar entre ventanas de definición|**Ctrl**+**Alt**+**-** y **Ctrl**+**Alt**+**=**|
+|Navegar entre varios resultados|**F8** y **Mayús**+**F8**|
+|Alternar entre la ventana del editor de código y la ventana de definición|**Mayús**+**Esc**|
 
 > [!NOTE]
 > También puede usar los mismos métodos abreviados de teclado para editar código en una ventana **Ver la definición** como haría en otros lugares en Visual Studio.
 
 ## <a name="see-also"></a>Vea también
 
-[Navegar por el código](../ide/navigating-code.md)  
-[Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)  
-[Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)
+- [Navegación en el código](../ide/navigating-code.md)
+- [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)
+- [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)

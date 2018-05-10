@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>Ventana Comandos
 La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Puede ejecutar comandos de menú y comandos que no aparecen en ningún menú. Para mostrar la ventana **Comandos**, pulse **Otras ventanas** desde el menú **Ver** y seleccione **Ventana Comandos**.
@@ -30,13 +30,13 @@ La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el
 ## <a name="displaying-the-values-of-variables"></a>Mostrar los valores de las variables
  Para comprobar el valor de una variable `varA`, use el [comando Imprimir](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  El signo de interrogación (?) es un alias de `Debug.Print`, por lo que este comando también puede escribirse:
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el
 ## <a name="parameters-switches-and-values"></a>Parámetros, modificadores y valores
  Algunos comandos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tienen valores, modificadores y argumentos opcionales y necesarios. Determinadas reglas se aplican al tratar con dichos comandos. A continuación se muestra un ejemplo de un comando enriquecido para aclarar la terminología.
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Si los modificadores de formato corto se combinan en un grupo y se les proporcio
 ## <a name="escape-characters"></a>Caracteres de escape
  Un carácter de intercalación (^) en una línea de comandos significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo,
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

@@ -1,27 +1,21 @@
 ---
-title: 'Trabajo con Python, paso 1: creación de un proyecto | Microsoft Docs'
-description: Paso 1 de un tutorial básico para trabajar con Python dentro de Visual Studio, que resume todo el tutorial, describe los requisitos previos y recorre el proceso de creación de un nuevo proyecto de Python.
-ms.custom: mvc
+title: 'Tutorial sobre cómo trabajar con Python, paso 1: creación de un proyecto'
+description: Información general y paso 1 de un tutorial básico de las funcionalidades de Python en Visual Studio, entre otras, los requisitos previos y la creación de un proyecto de Python.
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c97af84d02b1dcf6fb60f8dad06bf3bd6975a4e3
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Trabajo con Python en Visual Studio
 
@@ -37,9 +31,7 @@ Visual Studio proporciona compatibilidad de primera clase con el lenguaje Python
 - [Paso 5: Instalar paquetes y administrar entornos de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Paso 6: Trabajar con Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Requisitos previos
-
-- Visual Studio 2017 con la carga de trabajo de Python instalada. Vea las instrucciones en el [Paso 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md).
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>Paso 1: Crear un proyecto de Python
 
@@ -75,7 +67,7 @@ En este tutorial, empezará con un proyecto simple que contiene un único archiv
 
     Haga clic con el botón derecho en cualquier nodo o elemento del Explorador de soluciones para tener acceso a un menú con los comandos aplicables. Por ejemplo, el comando **Cambiar nombre** permite cambiar el nombre de un nodo o elemento, incluido el proyecto y la solución.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
 > [Escribir y ejecutar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

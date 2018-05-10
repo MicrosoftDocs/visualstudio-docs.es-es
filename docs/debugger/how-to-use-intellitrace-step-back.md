@@ -1,8 +1,8 @@
 ---
-title: Ver una instantánea mediante IntelliTrace paso-back - Visual Studio | Documentos de Microsoft
+title: Ver una instantánea mediante la devolución de paso de IntelliTrace
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 12/06/2017
+ms.date: 05/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Ver las instantáneas con devolución de paso de IntelliTrace en Visual Studio
 
@@ -38,9 +38,20 @@ En este tutorial va a:
 
     ![Habilitar el modo de eventos de IntelliTrace e instantáneas](../debugger/media/intellitrace-enable-snapshots.png "modo de habilitar los eventos de IntelliTrace e instantáneas")
 
+1. Elija si desea configurar las opciones para ver instantáneas de las excepciones, **IntelliTrace** > **avanzadas** desde el **opciones** cuadro de diálogo.
+
+    Estas opciones están disponibles a partir de Visual Studio de 2017 Enterprise versión 15,7.
+
+    ![Configurar el comportamiento de las instantáneas de las excepciones](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    Al habilitar eventos e instantáneas, el tomar instantáneas de las excepciones también se habilita de forma predeterminada. Puede deshabilitar las instantáneas de las excepciones anulando la selección de **recopilar las instantáneas en eventos de excepción**. Cuando esta característica está habilitada, se realizan las instantáneas para las excepciones no controladas. Para las excepciones administradas, se realizan las instantáneas solo si se produce la excepción y si no es un volver a producir una excepción iniciada anteriormente. Puede establecer un número máximo de instantáneas de las excepciones, seleccione un valor de la lista desplegable. El valor máximo se aplica a cada vez que la aplicación entra en modo de interrupción (por ejemplo, cuando la aplicación alcanza un punto de interrupción).
+
+    > [!NOTE]
+    > Las instantáneas se toman solo para eventos de excepción que IntelliTrace registra. Puede especificar qué eventos registra IntelliTrace seleccionando **herramientas** > **opciones** > **eventos de IntelliTrace**.
+
 1. En el proyecto, establezca uno o más puntos de interrupción e inicie la depuración (presione **F5**), o iniciar la depuración recorriendo el código (**F10** o **F11**).
 
-    IntelliTrace toma una instantánea del proceso de la aplicación en el depurador de cada evento de paso y de punto de interrupción. Estos eventos se registran en el **eventos** pestaña en el **herramientas de diagnóstico** ventana, junto con otros eventos de IntelliTrace. Para abrir esta ventana, elija **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
+    IntelliTrace toma una instantánea del proceso de la aplicación en cada paso del depurador, eventos de punto de interrupción y eventos de excepción no controlada. Estos eventos se registran en el **eventos** pestaña en el **herramientas de diagnóstico** ventana, junto con otros eventos de IntelliTrace. Para abrir esta ventana, elija **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
 
     Un icono de la cámara aparece al lado de los eventos para el que las instantáneas están disponibles. 
 

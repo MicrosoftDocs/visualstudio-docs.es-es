@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6199bf96bc631cf1018b2cb72a4d3c3cf7c703cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbf7a601213c3c02cc35f2d9453eee6b1d39c43e
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
 Borra todas las opciones para omitir la carga agregada a VSPackages por usuarios que quieren evitar problemas al cargar VSPackages. Después, inicia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Devenv /ResetSkipPkgs
 ```
 
@@ -35,7 +35,7 @@ Devenv /ResetSkipPkgs
 ## <a name="example"></a>Ejemplo
  En el ejemplo siguiente, se borran todas las etiquetas SkipLoading.
 
-```
+```cmd
 Devenv.exe /ResetSkipPkgs
 ```
 

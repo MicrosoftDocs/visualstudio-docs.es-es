@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90e331ed637edcc81dc99f99c3ec39aa75928f7d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ba1d23302cc0c3b9d14b23bd8547f33eb21ce0c3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 Compila una solución mediante un archivo de configuración de solución especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]
 ```
 
@@ -51,7 +51,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 ## <a name="example"></a>Ejemplo
  Este ejemplo compila el proyecto `CSharpConsoleApp`, mediante la configuración de compilación de proyecto `Debug` en la configuración de solución `Debug` de `MySolution`.
 
-```
+```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 

@@ -1,53 +1,87 @@
 ---
-title: Plantillas de aplicación web para Python | Microsoft Docs
+title: Plantillas de aplicación web para Python
 description: Información general de las plantillas de Visual Studio para aplicaciones web escritas en Python con las plataformas Bottle, Flask y Django, que incluye las configuraciones de depuración y la publicación en Azure App Service.
-ms.custom: ''
-ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.date: 04/17/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c406aec010e45ea37de15366adfd014b5aa74f6b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 
-Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. También puede usar la plantilla **Proyecto web** genérica para otras plataformas como Pyramid.
+Python en Visual Studio admite el desarrollo de proyectos web en los marcos Bottle, Flask y Django mediante plantillas de proyecto y un iniciador de depuración que puede configurarse para controlar varios marcos. Estas plantillas incluyen un archivo `requirements.txt` para declarar las dependencias necesarias. Al crear un proyecto a partir de alguna de estas plantillas, Visual Studio le pedirá que instale dichos paquetes (vea [Instalación de los requisitos de proyecto](#installing-project-requirements) más adelante en este artículo).
 
-Visual Studio no incluye los marcos en sí mismos. Tendrá que instalar los marcos por separado haciendo clic con el botón derecho en el proyecto y seleccionando **Python > Install/upgrade framework... (Instalar o actualizar marco...)**.
+También puede usar la plantilla "Proyecto web" genérica para otros marcos como Pyramid. En este caso, no se instala ningún marco con la plantilla. En su lugar, instale los paquetes necesarios en el entorno que va a usar para el proyecto (vea [Administración de Entornos de Python](managing-python-environments-in-visual-studio.md)).
 
-Cuando se ejecuta un proyecto creado a partir de una plantilla (al que se tiene acceso a través de **Archivo > Nuevo > Proyecto...**), inicia un servidor web con un puerto local seleccionado aleatoriamente, abre el explorador predeterminado al depurar y permite la publicación directa en Microsoft Azure.
+## <a name="using-a-project-template"></a>Uso de una plantilla de proyecto
 
-![Nuevas plantillas de proyecto web](media/template-web-new-project.png)
+Para crear un proyecto a partir de una plantilla, seleccione **Archivo** > **Nuevo** > **Proyecto**. Para ver plantillas para proyectos web, seleccione **Python** > **Web** en el lado izquierdo del cuadro de diálogo. Después, seleccione una plantilla de su elección, asigne los nombres al proyecto y a la solución, defina las opciones para un directorio de la solución y el repositorio de Git y seleccione **Aceptar**.
 
-Las plantillas Bottle, Flask y Django incluyen un sitio de inicio con algunas páginas y archivos estáticos. Este código es suficiente para ejecutar y depurar el servidor localmente (donde es necesario obtener algunas configuraciones del entorno) y para implementar en Microsoft Azure (donde se debe proporcionar un objeto de [aplicación WSGI](http://www.python.org/dev/peps/pep-3333/)).
+![Cuadro de diálogo Nuevo proyecto para aplicaciones web](media/projects-new-project-dialog-web.png)
+
+La plantilla genérica "Proyecto web", que se ha mencionado anteriormente, solo ofrece un proyecto de Visual Studio vacío sin código ni suposiciones aparte de que se trata de un proyecto de Python. Para obtener detalles sobre la plantilla "Servicio en la nube de Azure", vea [Proyectos de servicio en la nube de Azure para Python](python-azure-cloud-service-project-template.md).python-azure-cloud-service-project-template.md
+
+Todas las demás plantillas se basan en los marcos web de Bottle, Flask o Django y se dividen en tres grupos generales, como se describe en las secciones siguientes. Las aplicaciones creadas con cualquiera de estas plantillas contienen código suficiente para ejecutar y depurar la aplicación localmente. Cada una de ellas ofrece el [objeto de aplicación WSGI](http://www.python.org/dev/peps/pep-3333/) necesario (python.org) para la [implementación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+
+### <a name="blank-group"></a>Grupo en blanco
+
+Todas las plantillas "Proyecto web de (marco) en blanco" crean un proyecto que incluye más o menos el código reutilizable mínimo y las dependencias necesarias declaradas en un archivo `requirements.txt`.
+
+| Plantilla | Description |
+| --- | --- |
+| Proyecto web de Bottle en blanco | Genera una aplicación mínima en `app.py` con una página principal de `/` y una página `/hello/<name>` que devuelve `<name>` mediante el uso de una plantilla de página insertada muy breve. |
+| Proyecto web de Django en blanco | Genera un proyecto de Django con la estructura del sitio principal de Django pero sin ninguna aplicación de Django. Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 1](learn-django-in-visual-studio-step-01-project-and-solution.md). |
+| Proyecto web de Flask en blanco | Genera un aplicación mínima con una única página "Hola mundo" para `/`. Esta aplicación es similar al resultado obtenido tras seguir los pasos detallados descritos en [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md?context=visualstudio/python/default).
+
+### <a name="web-group"></a>Grupo web
+
+Todas las plantillas "Proyecto web de (marco)" crean un aplicación web de inicio con un diseño idéntico, con independencia del marco elegido. La aplicación tiene una página de inicio, otra de Acerca de y otra de contacto, además de una barra de navegación y un diseño dinámico que usa el arranque. Cada aplicación está correctamente configurada para archivos estáticos de servidor (CSS, JavaScript y fuentes) y utiliza un mecanismo de la plantilla de página adecuado para el marco.
+
+| Plantilla | Description |
+| --- | --- |
+| Proyecto web de Bottle | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta `static` y se controlan mediante código en `app.py`. El enrutamiento de las páginas individuales se encuentra en `routes.py` y la carpeta `views` contiene las plantillas de página.|
+| Proyecto web de Django | Genera un proyecto de Django y una aplicación de Django con tres páginas, compatibilidad con la autenticación y una base de datos de SQLite (pero no hay modelos de datos). Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 4](learn-django-in-visual-studio-step-04-full-django-project-template.md). |
+| Proyecto web de Flask | Genera una aplicación cuyos archivos estáticos se encuentran en la carpeta `static`. El código de `views.py` controla el enrutamiento, con plantillas de página mediante el motor de Jinja contenido en la carpeta `templates`. El archivo `runserver.py` proporciona el código de inicio. |
+| Proyecto web de Flask/Jade | Genera la misma aplicación que con la plantilla "Proyecto web de Flask", pero utilizando el motor de plantillas de Jade. |
+
+### <a name="polls-group"></a>Grupo de sondeos
+
+Las plantillas "Proyecto web de (marco) de sondeos" crean una aplicación web de inicio a través de las cuales los usuarios pueden votar las distintas preguntas de sondeos. Cada aplicación se basa en la estructura de las plantillas de proyecto "web" para usar una base de datos con el fin de administrar los sondeos y las respuestas de los usuarios. Las aplicaciones incluyen modelos de datos apropiados y una página de aplicación especial ("/seed") que carga los sondeos desde un archivo `samples.json`.
+
+| Plantilla | Description |
+| --- | --- |
+| Proyecto web de Bottle de sondeos | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código del almacén de datos se encuentran en la carpeta `models`, y el archivo `settings.py` contiene código para determinar qué almacén de datos se utiliza. |
+| Proyecto web de Django de sondeos | Genera un proyecto de Django y una aplicación de Django con tres páginas y una base de datos de SQLite. Incluye las personalizaciones de la interfaz administrativa de Django para permitir que un administrador autenticado cree y administre los sondeos. Para más información, vea la información sobre [plantillas de Django](python-django-web-application-project-template.md) y [aprendizaje de Django, paso 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md). |
+| Proyecto web de Flask de sondeos | Genera una aplicación que se puede ejecutar en una base de datos en memoria, MongoDB o Azure Table Storage, que se configura mediante la variable de entorno `REPOSITORY_NAME`. Los modelos de datos y el código del almacén de datos se encuentran en la carpeta `models`, y el archivo `settings.py` contiene código para determinar qué almacén de datos se utiliza. La aplicación utiliza el motor de Jinja para las plantillas de página. |
+| Proyecto web de Flask/Jade de sondeos | Genera la misma aplicación que con la plantilla "Proyecto web de Flask de sondeos", pero utilizando el motor de plantillas de Jade. |
+
+## <a name="installing-project-requirements"></a>Instalación de los requisitos de proyecto
 
 Al crear un proyecto a partir de una plantilla específica del marco, aparece un cuadro de diálogo que le ayudará a instalar los paquetes necesarios mediante pip. También se recomienda usar un [entorno virtual](selecting-a-python-environment-for-a-project.md#using-virtual-environments) para proyectos web de forma que se incluyan las dependencias correctas cuando publique el sitio web:
 
 ![Cuadro de diálogo que instala los paquetes necesarios para una plantilla de proyecto](media/template-web-requirements-txt-wizard.png)
 
+Si usa el control de código fuente, normalmente se omite la carpeta del entorno virtual, ya que dicho entorno solo puede volver a crearse con `requirements.txt`. La mejor forma de excluir la carpeta es seleccionar primero **I will install them myself** (Haré la instalación por mi cuenta) en el aviso mostrado anteriormente y luego deshabilitar la confirmación automática antes de crear el entorno virtual. Para más información, vea el [tutorial de aprendizaje de Django, pasos 1-2 y 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
+
 Cuando implemente Microsoft Azure App Service, seleccione una versión de Python como una [extensión del sitio](https://aka.ms/PythonOnAppService) e instale los paquetes manualmente. Además, dado que Azure App Service **no** instala automáticamente los paquetes de un archivo `requirements.txt` cuando se implementa desde Visual Studio, siga los detalles de configuración que se encuentran en [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-Microsoft Azure Cloud Services *admite* el archivo `requirements.txt`. Vea [Proyectos de servicios en la nube de Azure](python-azure-cloud-service-project-template.md) para obtener más detalles.
+Microsoft Azure Cloud Services *admite* el archivo `requirements.txt`. Vea los [proyectos del servicio en la nube de Azure](python-azure-cloud-service-project-template.md) para obtener detalles.
 
 ## <a name="debugging"></a>Depuración
 
-Cuando se inicia un proyecto web para la depuración, Visual Studio inicia el servidor web localmente y abre el explorador predeterminado en esa dirección y puerto. Para especificar opciones adicionales, haga clic con el botón derecho en el proyecto, seleccione **Propiedades** y haga clic en la pestaña **Iniciador web**:
+Cuando se inicia un proyecto web para la depuración, Visual Studio inicia el servidor web local en un puerto aleatorio y abre el explorador predeterminado en esa dirección y puerto. Para especificar opciones adicionales, haga clic con el botón derecho en el proyecto, seleccione **Propiedades** y haga clic en la pestaña **Iniciador web**:
 
-  ![Propiedades del iniciador web de la plantilla web genérica](media/template-web-launcher-properties.png)
+![Propiedades del iniciador web de la plantilla web genérica](media/template-web-launcher-properties.png)
 
 En el grupo **Depurar**:
 
@@ -93,84 +127,23 @@ Las aplicaciones de Pyramid actualmente se crean mejor mediante la herramienta d
   - Argumentos: `Production.ini`
 
 - Grupo **Debug Server Command** (Comando de servidor de depuración):
-    - Comando: `..\env\scripts\pserve-script.py` (script)
-    - Argumentos: `Development.ini`
+  - Comando: `..\env\scripts\pserve-script.py` (script)
+  - Argumentos: `Development.ini`
 
 > [!Tip]
-> Es probable que tenga que configurar la propiedad **Directorio de trabajo** del proyecto porque las aplicaciones de Pyramid suelen encontrarse en un nivel de directorio por debajo del principio del árbol de origen.
+> Es probable que tenga que configurar la propiedad **Directorio de trabajo** del proyecto porque las aplicaciones de Pyramid suelen encontrarse en una carpeta por debajo de la raíz del proyecto.
 
 ### <a name="other-configurations"></a>Otras configuraciones
 
 Si tiene una configuración para otro marco que quiere compartir, o si quiere solicitar la configuración para otro marco, abra un [problema en GitHub](https://github.com/Microsoft/PTVS/issues).
 
-## <a name="publishing-to-azure-app-service"></a>Publicación en Azure App Service
+## <a name="convert-a-project-to-azure-cloud-service"></a>Convertir en un proyecto de servicio en la nube de Azure
 
-Hay dos formas principales de publicar en Azure App Service. En primer lugar, la implementación a partir del control de código fuente se puede utilizar de la misma manera que para otros lenguajes, como se describe en la [documentación de Azure](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). Para publicar directamente desde Visual Studio, haga clic con el botón derecho en el proyecto y seleccione **Publicar**:
-
-![Comando Publicar en el menú contextual de un proyecto](media/template-web-publish-command.png)
-
-Después de seleccionar el comando, un asistente le guiará para crear un sitio web o importar la configuración de publicación, obtener una vista previa de archivos modificados y publicar en un servidor remoto.
-
-Cuando cree un sitio en App Service, necesitará instalar Python y todos los paquetes de los que depende dicho sitio. Puede publicar primero el sitio, pero no se ejecutará hasta que no haya configurado Python.
-
-Para instalar Python en App Service, se recomienda utilizar las [extensiones de sitio](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net). Estas extensiones son copias de las [versiones oficiales](https://www.python.org) de Python, optimizadas y reempaquetadas para Azure App Service.
-
-Una extensión de sitio puede implementarse mediante [Azure Portal](https://portal.azure.com/). Seleccione la hoja **Herramientas de desarrollo > Extensiones** para su App Service, seleccione **Agregar** y desplácese por la lista para buscar los elementos de Python:
-
-![Agregar la extensión de sitio en Azure Portal](media/template-web-site-extensions.png)
-
-Si usa plantillas de implementación de JSON, puede especificar la extensión de sitio como un recurso del sitio:
-
-```json
-{
-    "resources": [
-    {
-        "apiVersion": "2015-08-01",
-        "name": "[parameters('siteName')]",
-        "type": "Microsoft.Web/sites",
-        ...
-    },
-    "resources": [
-    {
-        "apiVersion": "2015-08-01",
-        "name": "python352x64",
-        "type": "siteextensions",
-        "properties": { },
-        "dependsOn": [
-            "[resourceId('Microsoft.Web/sites', parameters('siteName'))]"
-        ]
-    },
-    ...
-}
-```
-
-Por último, puede iniciar sesión a través de la [consola de desarrollo](https://github.com/projectkudu/kudu/wiki/Kudu-console) e instalar una extensión de sitio desde allí.
-
-Actualmente, la manera recomendada de instalar paquetes es usar la consola de desarrollo después de instalar la extensión de sitio y ejecutar pip directamente. Utilizar la ruta de acceso completa a Python es importante (de lo contrario, puede ejecutar una incorrecta) y no suele ser necesario usar un entorno virtual. Por ejemplo:
-
-```command
-c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
-
-c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
-```
-
-Cuando se implementa en Azure App Service, el sitio se ejecuta detrás de Microsoft IIS. Si quiere habilitar el sitio para que trabaje con IIS, necesitará agregar al menos un archivo `web.config`. Hay disponibles plantillas para algunos destinos de implementación comunes. Para obtener estas plantillas, haga clic con el botón derecho en el proyecto y seleccione **Agregar > Nuevo elemento...** (vea el cuadro de diálogo siguiente). Además, estas configuraciones se pueden modificar fácilmente para otros usos. Vea la [Referencia de configuración de IIS](https://www.iis.net/configreference) para obtener información sobre la configuración disponible.
-
-![Plantillas de elementos de Azure](media/template-web-azure-items.png)
-
-Los elementos disponibles incluyen:
-
-- Azure web.config (FastCGI) (wef.config de Azure (FastCGI)): Agrega un archivo `web.config` para cuando la aplicación proporciona un objeto [WSGI](https://wsgi.readthedocs.io/en/latest/) para controlar las conexiones entrantes.
-- Azure web.config (HttpPlatformHandler) (web.config de Azure (HttpPlatformHandler)): Agrega un archivo `web.config` para cuando la aplicación escucha en un socket para las conexiones entrantes.
-- Archivos estáticos de Azure web.config: si tiene uno de los archivos `web.config` anteriores, agregue el archivo a un subdirectorio para excluirlo del control de la aplicación.
-- Azure Remote debugging web.config (web.config de depuración remota de Azure): Agrega los archivos necesarios para la depuración remota a través de WebSockets.
-- Archivos auxiliares de rol web: contiene los scripts de implementación predeterminados para roles web de servicio en la nube.
-- Archivos auxiliares de rol de trabajo: contiene los scripts de implementación e inicio predeterminados para roles de trabajo de servicio en la nube.
-
-Si agrega la plantilla `web.config` de depuración al proyecto y pretende usar la depuración remota de Python, necesita publicar el sitio en la configuración "Depurar". Esta configuración es independiente de la configuración de la solución activa actual y siempre tiene como valor predeterminado "Liberar". Para cambiarlo, abra la pestaña **Configuración** y use el cuadro combinado **Configuración** del asistente para publicación (consulte la [documentación de Azure](https://azure.microsoft.com/develop/python/) para más información sobre la creación e implementación en Azure Web Apps):
-
-![Cambio de la configuración de publicación](media/template-web-publish-config.png)
-
-El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agrega un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Use el comando **Publicar** en el proyecto de nube para implementar en Cloud Services; con el comando **Publicar** del proyecto de Python se sigue implementando en sitios web. Vea [Proyectos de servicios en la nube de Azure](python-azure-cloud-service-project-template.md) para obtener más detalles.
+El comando **Convertir en un proyecto de servicio en la nube de Microsoft Azure** (imagen siguiente) agrega un proyecto de servicio en la nube a la solución. Este proyecto incluye la configuración de implementación y la configuración para las máquinas virtuales y los servicios que se van a usar. Use el comando **Publicar** en el proyecto de nube para implementar en Cloud Services; con el comando **Publicar** del proyecto de Python se sigue implementando en sitios web. Para más información, vea [Proyectos de servicios en la nube de Azure](python-azure-cloud-service-project-template.md).
 
 ![Comando Convertir en un proyecto de servicio en la nube de Microsoft Azure](media/template-web-convert-menu.png)
+
+## <a name="see-also"></a>Vea también
+
+- [Referencia de plantillas de elemento de Python](python-item-templates.md)
+- [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

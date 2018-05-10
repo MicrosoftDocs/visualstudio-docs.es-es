@@ -1,22 +1,23 @@
 ---
-title: Editar pruebas automatizadas de IU en Visual Studio | Microsoft Docs
+title: Editar pruebas automatizadas de IU en Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77aa1fd259d671e4ba97eaa6eef29bbff87c18bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 5d2ff297d5284bc10f01155b5bba47d5a9e62276
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
 el Editor de pruebas de IU codificadas permite modificar fácilmente este tipo de pruebas. Con el editor de pruebas de IU codificadas puede localizar, ver y editar las propiedades de los métodos de prueba y acciones de IU. Además, puede usar la asignación de controles de IU para ver y editar sus controles correspondientes.
@@ -140,7 +141,7 @@ Posiblemente usa una versión de Visual Studio Enterprise anterior a la 2012. El
 
 Para deshacer el cambio, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z. Después también debe quitar el código manualmente desde el archivo UIMap.cs o UIMap.vb.
 
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Locating a UI Control in the application under test
+##  <a name="CodedUITestEditor_LocateUIControl"></a> Buscar un control de interfaz de usuario en la aplicación sometida a prueba
  En ocasiones puede ser difícil visualizar dónde se ubican los controles en la interfaz de usuario de la aplicación sometida a prueba. Una de las capacidades del editor de pruebas de IU codificadas es que puede seleccionar un control de la asignación de controles de IU y ver su ubicación en la aplicación sometida a prueba. También se puede usar la característica **Buscar control de IU** de la aplicación sometida a prueba para comprobar las modificaciones de propiedades de búsqueda que haya efectuado en un control.
 
  ![Buscar control de IU](../test/media/codeduilocatecontrol.png "CodedUILocateControl")

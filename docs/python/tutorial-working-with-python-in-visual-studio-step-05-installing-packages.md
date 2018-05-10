@@ -1,27 +1,21 @@
 ---
-title: 'Trabajo con Python, paso 5: instalación de paquetes | Microsoft Docs'
-description: Paso 5 de un tutorial básico para trabajar con Python dentro de Visual Studio, que muestra las características de Visual Studio para administrar paquetes en un entorno de Python.
-ms.custom: mvc
+title: 'Tutorial sobre cómo trabajar con Python, paso 5: instalación de paquetes'
+description: Paso 5 de un tutorial básico de las funcionalidades de Python en Visual Studio, en el que se muestran las características de Visual Studio para administrar paquetes en un entorno de Python.
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 509c601c6f3cf31cb7772182e0ecb771c232b8a6
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en un entorno de Python
 
@@ -72,7 +66,7 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
 
   ![Ejemplo de salida de matplotlib](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
 > [Trabajar con GIT](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)

@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e36bbd95146f8a8b1095fefaa7882ff5f88d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novedades de diseño en Visual Studio
 
@@ -64,18 +64,13 @@ Para obtener más información, consulte [esta entrada de blog](https://blogs.ms
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-<a name="VersionSupport"></a>
-## <a name="version-support-for-architecture-and-modeling-tools"></a>Compatibilidad de versiones con las herramientas de arquitectura y modelado
+## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Compatibilidad con la versión de arquitectura y herramientas de modelado
 
-Visual Studio está disponible en varias versiones. No todas son compatibles con las herramientas de arquitectura y modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
+Visual Studio 2015 está disponible en varias versiones. No todos ellos proporcionan compatibilidad para la arquitectura y las herramientas de modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
 
 |**Característica**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mapas de código**|Sí|Vea la nota (1)|-|-|
-|**Diagramas de dependencia**|Sí|Vea la nota (2)|Vea la nota (2)|-|
+|**Mapas de código**|Sí|Solo se admite la lectura de mapas de código, filtrando código asigna, agregar nuevos nodos genéricos y crear un nuevo gráfico dirigido a partir de una selección.|-|-|
+|**Diagramas de dependencia**|Sí|Solo admite la lectura de diagramas de dependencia.|Solo admite la lectura de diagramas de dependencia.|-|
 |**Gráficos dirigidos** (diagramas DGML)|Sí|Sí|Sí|-|
 |**Clon de código**|Sí|-|-|-|
-
-Nota (1): Solo admite la lectura de mapas de código, el filtrado de mapas de código, la adición de nuevos nodos genéricos y la creación de un nuevo gráfico dirigido a partir de una selección.
-
-Nota (2): Solo admite la lectura diagramas de dependencia.

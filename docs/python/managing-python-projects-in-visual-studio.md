@@ -1,29 +1,23 @@
 ---
-title: Administración de proyectos de aplicación de Python | Microsoft Docs
-description: Explica el propósito de los proyectos de Visual Studio, muestra cómo crear y administrar proyectos de código de Python y describe las diferentes plantillas de proyecto disponibles para Python.
-ms.custom: ''
+title: Administración de proyectos de aplicación de Python
+description: El propósito de los proyectos de Visual Studio, cómo crear y administrar proyectos de código de Python y las diferentes plantillas de proyecto disponibles para Python.
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dccac11e0ffedf90b72812806b1161f7c270571b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="python-projects"></a>Proyectos de Python
+# <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
 Las aplicaciones de Python suelen definirse usando solo carpetas y archivos, pero esta estructura se puede complicar a medida que aplicaciones se van haciendo cada vez más grandes y pueden llegar a afectar a los archivos generados automáticamente, a JavaScript para aplicaciones web, etc. Un proyecto de Visual Studio le ayuda a administrar esta complejidad. El proyecto (un archivo `.pyproj`) identifica todos los archivos de origen y de contenido asociados al proyecto, contiene información de compilación para cada archivo, mantiene la información para integrarse con sistemas de control de código fuente y le ayuda a organizar la aplicación en componentes lógicos.
 
@@ -47,9 +41,9 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 
-Al desarrollar la aplicación, normalmente necesita agregar nuevos archivos de distintos tipos al proyecto. Agregar dichos archivos se realiza fácilmente haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar > Elemento existente...** , lo que le permitirá buscar un archivo que quiere agregar, o mediante **Agregar > Nuevo elemento...** , que abre un cuadro de diálogo con numerosas plantillas de elementos. Estas plantillas incluyen archivos de Python vacíos, una clase de Python, una prueba unitaria y varios archivos relacionados con aplicaciones web. Puede explorar estas opciones con un proyecto de prueba para saber lo que está disponible en la versión de Visual Studio.
+Al desarrollar la aplicación, normalmente necesita agregar nuevos archivos de distintos tipos al proyecto. La adición de dichos archivos se realiza fácilmente haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar** > **Elemento existente**, lo que le permitirá buscar un archivo que quiere agregar, o mediante **Agregar** > **Nuevo elemento**, que abre un cuadro de diálogo con numerosas plantillas de elementos. Como se describe en la referencia sobre [plantillas de elemento](python-item-templates.md), las opciones incluyen archivos de Python vacíos, una clase de Python, una prueba unitaria y varios archivos relacionados con aplicaciones web. Puede explorar estas opciones con un proyecto de prueba para saber lo que está disponible en la versión de Visual Studio.
 
-Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el Explorador de soluciones. El archivo de inicio es el archivo que se ejecuta al iniciar la depuración (F5 o **Depurar > Iniciar depuración**) o que ejecuta el proyecto en la ventana interactiva (Alt+Mayús+F5 o **Depurar > Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
+Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el Explorador de soluciones. El archivo de inicio es el archivo que se ejecuta al iniciar la depuración (F5 o **Depurar** > **Iniciar depuración**) o que ejecuta el proyecto en la ventana interactiva (Alt+Mayús+F5 o **Depurar** > **Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
 
 > [!Tip]
 > Si quita el archivo de inicio seleccionado de un proyecto y no selecciona uno nuevo, Visual Studio no sabrá con que archivo de Python empezar al intentar ejecutar el proyecto. En este caso, Visual Studio 2017, versión 15.6 y posteriores, muestra un error; con las versiones anteriores, se abre una ventana de salida con el intérprete de Python en ejecución o verá la ventana de salida aparecer pero desaparecer a continuación casi de inmediato. Si se produce alguno de estos comportamientos, compruebe que tiene un archivo de inicio asignado.
@@ -64,7 +58,7 @@ Un proyecto nuevo siempre está asociado al entorno de Python global predetermin
 
 ## <a name="project-templates"></a>Plantillas de proyecto
 
-Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde cero o a partir de código existente. Para usar una plantilla, seleccione el comando de menú **Archivo > Nuevo > Proyecto...**  o haga clic con el botón secundario en la solución en el Explorador de soluciones y seleccione **Agregar > Nuevo proyecto...** . Ambas acciones abrirán el cuadro de diálogo **Nuevo proyecto** que se muestra a continuación. Para ver plantillas específicas de Python, busque "Python" o seleccione el nodo **Instalado > Python**:
+Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde cero o a partir de código existente. Para usar una plantilla, seleccione el comando de menú **Archivo** > **Nuevo** > **Proyecto** o haga clic con el botón derecho en la solución en el Explorador de soluciones y seleccione **Agregar** > **Nuevo proyecto**. Ambas acciones abrirán el cuadro de diálogo **Nuevo proyecto** que se muestra a continuación. Para ver plantillas específicas de Python, busque "Python" o seleccione el nodo **Instalado** > **Python**:
 
 ![Cuadro de diálogo Nuevo proyecto con plantillas de Python](media/projects-new-project-dialog.png)
 
@@ -75,7 +69,7 @@ En la tabla siguiente se muestra un resumen de las plantillas disponibles en Vis
 | [Desde código de Python existente](#creating-a-project-from-existing-files) | Crea un proyecto de Visual Studio a partir de código Python existente en una estructura de carpetas.  |
 | Python Application (Aplicación de Python) | Estructura básica de proyecto para una nueva aplicación de Python con un solo archivo de origen vacío. De forma predeterminada, el proyecto se ejecuta en el intérprete de la consola del entorno global predeterminado, que se puede cambiar [asignando un entorno diferente](selecting-a-python-environment-for-a-project.md). |
 | [Servicio en la nube de Azure](python-azure-cloud-service-project-template.md) | Proyecto para un servicio en la nube de Azure escrito en Python. |
-| [Proyectos web](python-web-application-project-templates.md) | Proyectos para servidores web basados en distintos marcos, incluidos Bottle, Django, Flask y Flask/Jade. |
+| [Proyectos web](python-web-application-project-templates.md) | Proyectos para aplicaciones web basados en distintos marcos, incluidos Bottle, Django y Flask. |
 | IronPython Application (Aplicación de IronPython) | Similar a la plantilla Python Application (Aplicación de Python), pero usa IronPython de forma predeterminada habilitando la interoperabilidad .NET y la depuración en modo mixto con lenguajes de. NET. |
 | IronPython WPF Application (Aplicación WPF de IronPython ) | Estructura de proyecto que usa IronPython con archivos XAML de Windows Presentation Foundation para la interfaz de usuario de la aplicación. Visual Studio proporciona un diseñador de IU XAML, el código subyacente se puede escribir en Python y la aplicación se ejecuta sin mostrar una consola. |
 | IronPython Silverlight Web Page (Página web de Silverlight en IronPython) | Proyecto de IronPython que se ejecuta en un explorador mediante Silverlight. El código Python de la aplicación se incluye en la página web como un script. Una etiqueta de script reutilizable extrae código de JavaScript que inicializa IronPython ejecutándose dentro de Silverlight, desde donde el código Python puede interactuar con DOM. |
@@ -86,7 +80,7 @@ En la tabla siguiente se muestra un resumen de las plantillas disponibles en Vis
 > [!Note]
 > Dado que Python es un lenguaje interpretado, los proyectos de Python en Visual Studio no producen un archivo ejecutable independiente al igual que otros proyectos de lenguaje compilado (C#, por ejemplo). Para obtener más información, consulte [Preguntas y respuestas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-<a name="create-project-from-existing-files"</a>
+<a name="create-project-from-existing-files"></a>
 
 ### <a name="creating-a-project-from-existing-files"></a>Creación de un proyecto a partir de archivos existentes
 

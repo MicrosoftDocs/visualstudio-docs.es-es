@@ -1,27 +1,21 @@
 ---
-title: 'Trabajo con Python, paso 4: depuración | Microsoft Docs'
-description: Paso 4 de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata cómo ejecutar código de Python en el depurador.
-ms.custom: mvc
+title: 'Tutorial sobre cómo trabajar con Python, paso 4: depuración'
+description: Paso 4 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata cómo ejecutar código de Python en el depurador.
 ms.date: 03/08/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f29f310997b685369142e21cc71df8a21871cd
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
@@ -106,7 +100,7 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 > [!Tip]
 > En algunas situaciones, como un error al iniciar el intérprete de Python, la ventana de salida puede aparecer solo brevemente y luego cerrarse de forma automática sin darle la oportunidad de ver los mensajes de error. Si esto ocurre, haga clic con el botón derecho en el proyecto en el Explorador de soluciones, seleccione **Propiedades**, la ficha **Depurar** y, después, agregue `-i` al campo **Argumentos del intérprete**. Este argumento hace que el intérprete entre en modo interactivo una vez que se haya finalizado un programa, con lo que la ventana se mantendrá abierta hasta que pulse Ctrl + Z, Entrar para salir.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
 > [Installing packages in your Python environment (Instalación de paquetes en su entorno de Python)](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)

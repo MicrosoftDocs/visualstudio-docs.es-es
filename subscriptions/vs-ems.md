@@ -1,50 +1,23 @@
 ---
 title: Beneficio de EMS | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/11/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Enterprise Mobility + Security benefit included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: ca4a8aab8711799502a2518b6498122380a76cd4
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/11/2018
+ms.topic: Get-Started-Article
+description: Obtenga información sobre la ventaja Enterprise Mobility + Security que se incluye con la suscripción de Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: acf1028890dfcee3194beaeff930d514ea1c812f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Beneficio de Enterprise Mobility + Security (EMS) en suscripciones de Visual Studio
 
-## <a name="overview"></a>Información general
 Las suscripciones de nube anuales y estándar de Visual Studio Enterprise incluyen Enterprise Mobility + Security (EMS).  Proteja y administre sus identidades, dispositivos, aplicaciones y datos con EMS: Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics y Microsoft Cloud App Security.  
-
-## <a name="eligibility"></a>Elegibilidad
-| Programa/nivel de suscripción                                                  | Prestación               | ¿Renovable?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise estándar                                             | No disponible         |                                                                    |
-| Visual Studio Enterprise anual                                               | No disponible         |                                                                    |
-| Visual Studio Enterprise mensual                                              | No disponible         |                                                                    |
-| Visual Studio Professional estándar                                           | No disponible         |                                                                    |
-| Visual Studio Professional anual                                             | No disponible         |                                                                    | 
-| Visual Studio Professional mensual                                            | No disponible         |                                                                    |
-| Visual Studio Test Pro                                                        | No disponible         |                                                                    |
-| Plataformas de MSDN                                                                | No disponible         |                                                                    |
-| Visual Studio Dev Essentials                                                  | No disponible         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | No disponible         |                                                                    |
-| Visual Studio Enterprise - FTE                                                | No disponible         |                                                                    |
-| Visual Studio Enterprise - Microsoft Partner Network                          | No disponible         |                                                                    |
-| Visual Studio Professional - Microsoft Partner Network                        | No disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (estándar)                                 | No disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (premium)                                  | No disponible         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | No disponible         |                                                                    |
-| Microsoft Certified Trainer - software y servicios                             | No disponible         |                                                                    |
-| Microsoft Certified Trainer - desarrollador de software y servicios                   | No disponible         |                                                                    |
-
-<sup>1</sup>  *Incluye Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*  
-
-¿No sabe con seguridad qué suscripción usa?  Vaya a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
 
 ## <a name="activation-steps"></a>Pasos para la activación
 
@@ -74,8 +47,21 @@ Para usar EMS, deberá configurar una cuenta o iniciar sesión con una existente
 
 6.  EMS requiere acceso a Microsoft [Azure Portal](https://azure.microsoft.com).  Siga los tres pasos indicados en la página de aterrizaje de EMS para activar la suscripción de Azure, agregar usuarios y configurar EMS.
 
-## <a name="faq"></a>Preguntas más frecuentes
-*Compruebe aquí si hay actualizaciones*.
+## <a name="eligibility"></a>Elegibilidad
+| Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Disponible       |  Sí          |
+| Visual Studio Professional (estándar<sup>2</sup>, de nube anual) | Licencia por volumen, Azure, venta directa                                       | Disponible                                                            |  Sí          |
+| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D          |
+| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
+| Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
+| Visual Studio Dev Essentials | N/D  | No disponible |N/D |
+
+<sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark.  Excluye: Microsoft Valued Partner (MVP), Region Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network (Professional).*
+
+<sup>2</sup> *Excluye Microsoft Partner Network (Professional)*
+
+¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con EMS?  Consulte la [documentación de EMS](/enterprise-mobility-security/) en línea.

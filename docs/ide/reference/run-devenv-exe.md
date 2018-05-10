@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b784b794945363afb2ea8955b5ad1bde96c36528
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9e10b12729ed8f547c2658c0f4ce6ece84a12dbe
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 Compila y ejecuta el proyecto o la solución especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 devenv {/run|/r} {SolutionName|ProjectName}
 ```
 
@@ -51,7 +51,7 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="example"></a>Ejemplo
  En este ejemplo se ejecuta la solución `MySolution` con la configuración de implementación activa.
 
-```
+```cmd
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
 ```
 

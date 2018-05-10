@@ -1,23 +1,22 @@
 ---
-title: Números de compilación y fechas de lanzamiento de Visual Studio 2017 | Microsoft Docs
+title: Números de compilación y fechas de lanzamiento de Visual Studio 2017
 description: Una lista de las versiones de lanzamiento y los números de compilación de Visual Studio 2017, ordenados por fecha.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/04/2018
+ms.date: 04/26/2018
 ms.topic: reference
 helpviewer_keywords: ''
-ms.technology:
-- vs-acquisition
-ms.service: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f941891c858d36d4cbe1de706d100c0b27d9c85
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 1f307043d49ee05245fe6e4c766a151f3d78c6c2
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio 2017
 
@@ -25,6 +24,13 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.7.0 (versión preliminar 5.0) | Vista previa | 26 de abril de 2018 | 15.7.27625.0 |
+| 15.6.7 | Versión | 26 de abril de 2018 | 15.6.27428.2043 |
+| 15.0.13 | Versión | 26 de abril de 2018 | 15.0.26228.31 |
+| 15.7.0 (versión preliminar 4.0) | Vista previa | 18 de abril de 2018 | 15.7.27617.1 |
+| 15.6.6 | Versión | 10 de abril de 2018 | 15.6.27428.2037 |
+| 15.0.12 | Versión | 10 de abril de 2018 | 15.0.26228.30 |
+| 15.7.0 (versión preliminar 3.0) | Vista previa | 9 de abril de 2018 | 15.7.27604.0 |
 | 15.6.5 | Versión | 4 de abril de 2018 | 15.6.27428.2027 |
 | 15.6.4 | Versión | 22 de marzo de 2018 | 15.6.27428.2015 |
 | 15.7.0 (versión preliminar 2.0) | Vista previa | 21 de marzo de 2018 | 15.7.27520.0 |
@@ -124,8 +130,8 @@ Aquí tiene algunas opciones de soporte técnico más:
 
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
 * Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+* Puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
 

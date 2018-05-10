@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0e4172d73544f3fe22764505bbabf182fc4ec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="codeindex-command"></a>CodeIndex (Comando)
 
@@ -33,7 +33,7 @@ Para usar el comando **CodeIndex**, debe ser miembro del grupo de seguridad **Ad
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /ignoreList:[ add | remove | removeAll | view ] ServerPath | /listLargeFiles [/fileCount:FileCount] [/minSize:MinSize] | /reindexAll | /destroyCodeIndex [/noPrompt] | /temporaryDataSizeLimit:[ view | <SizeInGBs> | disable ] | /indexHistoryPeriod:[ view | all | <NumberOfMonths> ] [/collectionName:CollectionName | /collectionId:CollectionId]
 ```
 
@@ -65,61 +65,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
  Para ver el estado y la configuración de la indización de código:
 
-```
+```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
 ```
 
  Para iniciar la indización de todos los conjuntos de cambios:
 
-```
+```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
 ```
 
  Para detener la indización de los conjuntos de cambios creados previamente e iniciar solo la indización de nuevos conjuntos de cambios:
 
-```
+```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
 ```
 
  Para buscar hasta 50 archivos de más de 10 KB:
 
-```
+```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
 ```
 
  Para excluir un archivo concreto de la indización y agregarlo a la lista de archivos omitidos:
 
-```
+```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
 ```
 
  Para ver todos los archivos que no están indizados:
 
-```
+```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
  Para borrar datos indizados previamente y reiniciar la indización:
 
-```
+```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
 ```
 
  Para guardar todo el historial del conjunto de cambios:
 
-```
+```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
 ```
 
  Para quitar el límite de tamaño de los datos temporales de CodeLens y seguir indexando independientemente del tamaño de los datos temporales:
 
-```
+```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
 ```
 
  Para eliminar el índice de código con confirmación:
 
-```
+```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 

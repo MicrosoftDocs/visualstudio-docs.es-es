@@ -11,57 +11,57 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 915a65129b3131bf599903681b1e504d5d16d902
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 368d1a794f51d827aa62cc913039edda59ae7ae6
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Agregar propiedades personalizadas a diagramas de dependencia
+
 Cuando se escribe código de extensión para los diagramas de dependencia, puede almacenar valores a cualquier elemento en un diagrama de dependencia. Los valores se conservarán cuando el diagrama se guarde y se vuelva a abrir. También puede hacer que estas propiedades aparecen en la **propiedades** ventana para que los usuarios pueden verlas y editarlas. Por ejemplo, puede permitir que los usuarios especifiquen una expresión regular para cada capa y escriban código de validación para comprobar que los nombres de las clases de cada capa se ajustan al patrón especificado por el usuario.
 
-## <a name="properties-not-visible-to-the-user"></a>Propiedades no visibles para el usuario
- Si desea que el código asocie valores a cualquier elemento de un diagrama de dependencia, no es necesario definir un componente MEF. Hay un diccionario denominado `Properties` en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Solo tiene que agregar valores que calculan referencias al diccionario de cualquier elemento de capa. Se guardará como parte del diagrama de dependencia. Para obtener más información, consulte [navegar y actualizar modelos en el código de programa de capas](../modeling/navigate-and-update-layer-models-in-program-code.md).
+## <a name="non-visible-properties"></a>Propiedades no visibles
 
-## <a name="properties-that-the-user-can-edit"></a>Propiedades que el usuario puede editar
- **Preparación inicial**
+Si desea que el código asocie valores a cualquier elemento de un diagrama de dependencia, no es necesario definir un componente MEF. Hay un diccionario denominado `Properties` en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Solo tiene que agregar valores que calculan referencias al diccionario de cualquier elemento de capa. Se guardará como parte del diagrama de dependencia. Para obtener más información, consulte [navegar y actualizar modelos en el código de programa de capas](../modeling/navigate-and-update-layer-models-in-program-code.md).
+
+## <a name="editable-properties"></a>Propiedades editables
+
+**Preparación inicial**
 
 > [!IMPORTANT]
->  Para que las propiedades aparezcan, debe realizar el cambio siguiente en todos los equipos donde desee que las propiedades de capa sean visibles.
+> Para que las propiedades aparezcan, realice el siguiente cambio en cada equipo donde desea que esté visible de propiedades de capa:
 >
->  1.  Ejecutar el Bloc de notas mediante **ejecutar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
-> 2.  Dentro del elemento `Content`, agregue:
+> 1. Ejecutar el Bloc de notas mediante **ejecutar como administrador**. Abra *%ProgramFiles%\Microsoft Visual Studio [versión] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
+> 2. Dentro de la **contenido** elemento, agregar:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
-> 3.  En el **Visual Studio Tools** sección del menú de inicio de aplicación de Visual Studio, abra **símbolo**.
->
->      Especifique:
+> 3. En el **Visual Studio Tools** sección del menú de inicio de aplicación de Visual Studio, abra **símbolo**. Especifique:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
-> 4.  Reinicie Visual Studio.
+> 4. Reinicie Visual Studio.
 
- **Asegúrese de que el código está en un proyecto VSIX**
+**Asegúrese de que el código está en un proyecto VSIX**
 
- Si la propiedad forma parte de un proyecto de validación, gesto o comando, no es necesario agregar nada. El código de la propiedad personalizada debe definirse en un proyecto de extensibilidad de Visual Studio definido como componente MEF. Para obtener más información, consulte [agregar comandos y gestos a diagramas de dependencia](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [agregar validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Si la propiedad forma parte de un proyecto de validación, gesto o comando, no es necesario agregar nada. El código de la propiedad personalizada debe definirse en un proyecto de extensibilidad de Visual Studio definido como componente MEF. Para obtener más información, consulte [agregar comandos y gestos a diagramas de dependencia](../modeling/add-commands-and-gestures-to-layer-diagrams.md) o [agregar validación de arquitectura personalizada a diagramas de dependencia](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
- **Definir la propiedad personalizada**
+**Definir la propiedad personalizada**
 
- Para crear una propiedad personalizada, defina una clase como esta:
+Para crear una propiedad personalizada, defina una clase como esta:
 
-```
+```csharp
 [Export(typeof(IPropertyExtension))]
-public class MyProperty
-      : PropertyExtension<ILayerElement>
+public class MyProperty : PropertyExtension<ILayerElement>
 {
   // Implement the interface.
 }
 ```
 
- Puede definir propiedades en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> o cualquiera de sus clases derivadas, entre las que se incluyen:
+Puede definir propiedades en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> o cualquiera de sus clases derivadas, entre las que se incluyen:
 
 -   `ILayerModel`: el modelo
 
@@ -74,9 +74,10 @@ public class MyProperty
 -   `ILayerCommentLink`
 
 ## <a name="example"></a>Ejemplo
- El siguiente código es un descriptor de propiedad personalizado típico. Define una propiedad booleana en el modelo de capas (`ILayerModel`) que permite al usuario proporcionar valores para un método de validación personalizado.
 
-```
+El siguiente código es un descriptor de propiedad personalizado típico. Define una propiedad booleana en el modelo de capas (`ILayerModel`) que permite al usuario proporcionar valores para un método de validación personalizado.
+
+```csharp
 using System;
 using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;

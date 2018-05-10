@@ -1,15 +1,9 @@
 ---
-title: 'Inició rápido: Clonación de un repositorio de código Python | Microsoft Docs'
+title: 'Inició rápido: Clonación de un repositorio de código Python'
 description: En este inicio rápido, creará un proyecto de Python en Visual Studio mediante la clonación del repositorio de Python Koans mediante Visual Studio Team Explorer.
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 8cad15dcb5bb7c9c8a774f645789d26e0e0ffd7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inició rápido: Clonado de un repositorio de código Python en Visual Studio
 
@@ -31,7 +25,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 
 2. Inicie Visual Studio.
 
-3. Seleccione **Ver > Team Explorer...** para abrir la ventana **Team Explorer** desde la que puede conectarse a GitHub o Visual Studio Team Services, o bien clonar un repositorio. (Si no ve la página **Conectar** que se muestra a continuación, seleccione el icono de enchufe en la barra de herramientas superior, que le llevará a esa página).
+3. Seleccione **Ver > Team Explorer** para abrir la ventana **Team Explorer** desde la que puede conectarse a GitHub o Visual Studio Team Services, o bien clonar un repositorio. (Si no ve la página **Conectar** que se muestra a continuación, seleccione el icono de enchufe en la barra de herramientas superior, que le llevará a esa página).
 
     ![Ventana de Team Explorer en la que se muestra Visual Studio Team Services, GitHub y la clonación de un repositorio](media/team-explorer.png)
 
@@ -42,7 +36,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 
 5. Cuando se complete la clonación, aparecerá el nombre del repositorio en la lista **Repositorios GIT locales**. Haga doble clic en ese nombre para ir al panel de repositorio en **Team Explorer**.
 
-6. En **Soluciones**, seleccione **Nueva...**.
+6. En **Soluciones**, seleccione **Nueva**.
 
     ![Ventana de Team Explorer, con la creación de un proyecto nuevo a partir de un clon](media/team-explorer-new-project.png)
 
@@ -52,7 +46,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 
 9. En el **Explorador de soluciones**, expanda el nodo `python3`, haga clic con el botón derecho en `contemplate_koans.py` y seleccione **Establecer como archivo de inicio**. Este paso indica a Visual Studio qué archivo debe usar al ejecutar el proyecto.
 
-10. Seleccione **Proyecto > Koans Properties...** (Propiedades de Koans…) en el menú, seleccione la pestaña **General** y establezca **Directorio de trabajo** en "python3". Este paso es necesario porque, de forma predeterminada, Visual Studio establece el directorio de trabajo en la raíz del proyecto en lugar de hacerlo en la ubicación del archivo de inicio (`python3\contemplate_koans.py`, que también puede ver en las propiedades del proyecto). El código de programa busca un archivo `koans.txt` en la carpeta de trabajo por lo que, si no cambia este valor, verá un error en tiempo de ejecución.
+10. Seleccione **Proyecto > Koans Properties** en el menú, seleccione la pestaña **General** y establezca **Directorio de trabajo** en "python3". Este paso es necesario porque, de forma predeterminada, Visual Studio establece el directorio de trabajo en la raíz del proyecto en lugar de hacerlo en la ubicación del archivo de inicio (`python3\contemplate_koans.py`, que también puede ver en las propiedades del proyecto). El código de programa busca un archivo `koans.txt` en la carpeta de trabajo por lo que, si no cambia este valor, verá un error en tiempo de ejecución.
 
     ![Configuración del directorio de trabajo para un proyecto de Python](media/projects-set-working-directory.png)
 
@@ -84,6 +78,6 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 
 ## <a name="see-also"></a>Vea también
 
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment) (Identificación manual de un intérprete de Python existente).
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente).
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md).
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations).

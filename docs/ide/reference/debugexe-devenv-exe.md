@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 065648588b51ad6c71ae1a10235da4f096470abe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 07dfcbb6064d0f1043c0621534b953a5f5c63e82
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 Abre el archivo ejecutable especificado que se va a depurar.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Devenv /debugexe ExecutableFile
 ```
 
@@ -42,7 +42,7 @@ Devenv /debugexe ExecutableFile
 ## <a name="example"></a>Ejemplo
  En el ejemplo siguiente, se abre el archivo `MyApplication.exe` para depurar.
 
-```
+```cmd
 Devenv.exe /debugexe MyApplication.exe
 ```
 

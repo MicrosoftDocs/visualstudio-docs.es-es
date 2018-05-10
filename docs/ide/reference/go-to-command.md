@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b55e399dab41065fb96f9f3ac8e80484860f5187
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e583ee3bcb764d09bed9907710454dd6c39c6b8d
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="go-to-command"></a>Ir a (Comando)
 Mueve el cursor a la línea especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Edit.GoTo [linenumber]
 ```
 
@@ -44,7 +44,7 @@ Edit.GoTo [linenumber]
 
 ## <a name="example"></a>Ejemplo
 
-```
+```cmd
 >Edit.GoTo 125
 ```
 

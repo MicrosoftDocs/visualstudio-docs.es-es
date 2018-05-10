@@ -1,15 +1,9 @@
 ---
-title: 'Inicio rápido: Creación de un proyecto de Python con una plantilla | Microsoft Docs'
+title: 'Inicio rápido: Crear un proyecto de Python con una plantilla'
 description: En este inicio rápido, creará un proyecto de Visual Studio para Python utilizando la plantilla integrada para una aplicación básica de Flask.
-ms.custom: mvc
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d4d81676d9f63751455f4f51ae5993c46dd0f04
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: a033d8b2709a6eaf871758d1bd46a3ad34f7a08f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Inicio rápido: Crear un proyecto de Python desde una plantilla en Visual Studio
 
@@ -65,7 +59,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 
 **Respuesta**: Con la carga de trabajo de Python instalada, Visual Studio proporciona una variedad de plantillas de proyecto que incluyen las de los marcos web [Flask, Bottle y Django](../python/python-web-application-project-templates.md), servicios en la nube de Azure, diferentes escenarios de aprendizaje automático e incluso una plantilla para crear un proyecto a partir de una estructura de carpetas existente que contiene una aplicación de Python. Puede acceder a ellas a través del cuadro de diálogo **Archivo > Nuevo > Proyecto...**  seleccionando el nodo de lenguaje **Python** y sus nodos secundarios.
 
-Visual Studio también proporciona una variedad de *plantillas de elemento* o archivo para crear rápidamente una clase de Python, un paquete de Python, una prueba unitaria de Python, archivos web.config, etc. Si tiene abierto un proyecto de Python, puede acceder a las plantillas de elemento a través del comando de menú **Proyecto > Agregar nuevo elemento...**.
+Visual Studio también proporciona una variedad de *plantillas de elemento* o archivo para crear rápidamente una clase de Python, un paquete de Python, una prueba unitaria de Python, archivos `web.config`, etc. Si tiene abierto un proyecto de Python, puede acceder a las plantillas de elemento a través del comando de menú **Proyecto > Agregar nuevo elemento**. Consulte la referencia sobre [plantillas de elemento](python-item-templates.md).
 
 Mediante las plantillas puede ahorrar bastante tiempo al comenzar un proyecto o crear un archivo y también son una excelente manera de obtener información sobre diferentes tipos de aplicaciones y estructuras de código. Resulta útil invertir unos minutos en crear proyectos y elementos a partir de las diferentes plantillas para familiarizarse con lo que ofrecen.
 
@@ -80,6 +74,6 @@ Mediante las plantillas puede ahorrar bastante tiempo al comenzar un proyecto o 
 
 ## <a name="see-also"></a>Vea también
 
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment) (Identificación manual de un intérprete de Python existente).
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente).
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md).
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations).

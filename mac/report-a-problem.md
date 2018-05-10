@@ -1,15 +1,16 @@
 ---
-title: Notificar un problema | Microsoft Docs
+title: Notificar un problema con Visual Studio para Mac
+description: Cómo hacer sugerencias o informar de problemas experimentados al usar Visual Studio para Mac.
+ms.topic: troubleshooting
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
-ms.topic: article
+ms.date: 05/06/2018
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: f391ef0b21ba6d500e88908d806ea3958c771bed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2bf296c54ff4978195427f86d1a59f64300650df
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Cómo notificar un problema en Visual Studio para Mac
 

@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 177a3c0c088e20b37172f6ff0a5b818dce24795c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-in-files-command"></a>Buscar en archivos (Comando)
 Busca en los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Buscar en archivos** de la ventana **Buscar y reemplazar**.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Edit.FindinFiles findwhat [/case] [/ext:extensions]
 [/lookin:searchpath] [/names] [/options] [/reset] [/stop] [/sub]
 [/text2] [/wild|/regex] [/word]
@@ -52,7 +52,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 
  /stop Opcional. Detiene la operación de búsqueda actual, si hay alguna en curso. La búsqueda omite el resto de los argumentos cuando se ha especificado `/stop`. Por ejemplo, para detener la búsqueda actual, escriba lo siguiente:
 
-```
+```cmd
 >Edit.FindinFiles /stop
 ```
 
@@ -67,7 +67,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="example"></a>Ejemplo
  En este ejemplo se busca btnCancel en todos los archivos .cls ubicados en la carpeta "My Visual Studio Projects". Además, se muestra la información de coincidencia en la ventana Resultados de la búsqueda 2.
 
-```
+```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 

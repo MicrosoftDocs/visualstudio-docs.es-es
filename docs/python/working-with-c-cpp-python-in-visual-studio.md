@@ -1,16 +1,9 @@
 ---
-title: Trabajo con C++ y Python | Microsoft Docs
-description: Proceso y pasos para escribir una extensión o módulo de C++ para Python en Visual Studio
-ms.custom: ''
+title: Trabajo con C++ y Python
+description: Un tutorial para crear una extensión de C++ para Python mediante Visual Studio, incluida la depuración en modo mixto.
 ms.date: 04/03/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-- C++
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -18,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f81a9f14d64e014fd2b40b0628d7d71884810a3
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 

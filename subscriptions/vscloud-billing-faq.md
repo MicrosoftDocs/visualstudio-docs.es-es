@@ -1,22 +1,24 @@
 ---
 title: Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio Enterprise y Visual Studio Professional
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/2/2018
-Ms.topic: Get-Started-Article
-Description: Billing questions for cloud subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7c89c562ab49ffd95af7cfce699d13aa8a639c81
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/02/2018
+ms.topic: Get-Started-Article
+description: Preguntas sobre facturación para suscripciones de nube.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Preguntas más frecuentes sobre facturación relativas a suscripciones de nube de Visual Studio
 [Coteje los precios y ventajas de las distintas suscripciones de nube](https://www.visualstudio.com/vs/pricing/) para conocer las ventajas de cada suscripción de Visual Studio; compare las suscripciones de nube con las suscripciones estándar de Visual Studio y estudie los detalles de las ventajas de suscriptor, entre otras muchas cosas.
+
+## <a name="general-purchasing-questions"></a>Preguntas sobre compras generales
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>P: ¿Puedo adquirir suscripciones de nube de Visual Studio con un pedido de compra?
 R: No. Todas las suscripciones de nube de Visual Studio se deben adquirir a través de una suscripción de Azure. Concíbalas como si fuera su cuenta de facturación de Azure.
@@ -79,7 +81,7 @@ Además, el descuento solo es válido en los cargos de un determinado período d
 
 ### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>P: ¿Puedo usar los créditos mensuales de Azure como suscriptor de Visual Studio para comprar más suscripciones de nube de Visual Studio?
 
-R: No, no puede usar [créditos mensuales de Azure como suscriptor de Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) para comprar en Visual Studio Marketplace. Las compras de suscripciones de nube de Visual Studio se cargarán en su tarjeta de crédito.
+R: No, no puede usar [créditos mensuales de Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) como suscriptor de Visual Studio para comprar en Visual Studio Marketplace. Las compras de suscripciones de nube de Visual Studio se cargarán en su tarjeta de crédito.
 Antes de realizar alguna compra, deberá [quitar el límite de gasto](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>P: ¿Cuál es la diferencia entre suscripciones de nube anuales y mensuales?

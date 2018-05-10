@@ -1,12 +1,9 @@
 ---
-title: "Creación de soluciones y proyectos en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Creación de soluciones y proyectos en Visual Studio
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: d92cc8bcbc160dbc5cab10bffe30b08ba1cca7be
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -32,7 +29,7 @@ Los *proyectos* son contenedores lógicos de Visual Studio que incluyen los elem
 
 ![Jerarquía de soluciones y proyectos](./media/vside-proj-soln.png)
 
-Puede ver las soluciones y los proyectos en una ventana de herramientas denominada **Explorador de soluciones**. En la captura de pantalla siguiente se muestra una solución de ejemplo en el Explorador de soluciones (BikeSharing.Xamarin-UWP) que contiene dos proyectos: BikeSharing.Clients.Core y BikeSharing.Clients.Windows. Cada proyecto contiene varios archivos, carpetas y referencias. El nombre del proyecto en negrita es el *proyecto de inicio*, es decir, el proyecto que se inicia cuando se ejecuta la aplicación. Puede especificar qué proyecto es el de inicio.
+Puede ver las soluciones y los proyectos en una ventana de herramientas denominada **Explorador de soluciones**. En la captura de pantalla siguiente se muestra una solución de ejemplo en el **Explorador de soluciones** (**BikeSharing.Xamarin-UWP**) que contiene dos proyectos: **BikeSharing.Clients.Core** y **BikeSharing.Clients.Windows**. Cada proyecto contiene varios archivos, carpetas y referencias. El nombre del proyecto en negrita es el *proyecto de inicio*, es decir, el proyecto que se inicia cuando se ejecuta la aplicación. Puede especificar qué proyecto es el de inicio.
 
 ![Explorador de soluciones con proyectos](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones e
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Para crear un proyecto a partir de una plantilla de proyecto
 
-1. Hay varias maneras de crear un proyecto en Visual Studio. En la página de inicio, escriba el nombre de una plantilla de proyecto en el cuadro **Buscar plantillas de proyecto** o elija el vínculo **Crear nuevo proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. También puede seleccionar **Archivo** > **Nuevo** > **Proyecto…** en la barra de menús, o bien hacer clic en el botón **Nuevo proyecto** de la barra de herramientas.
+1. Hay varias maneras de crear un proyecto en Visual Studio. En la **página de inicio**, escriba el nombre de una plantilla de proyecto en el cuadro **Buscar plantillas de proyecto** o elija el vínculo **Crear nuevo proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. También puede seleccionar **Archivo** > **Nuevo** > **Proyecto…** en la barra de menús, o bien hacer clic en el botón **Nuevo proyecto** de la barra de herramientas.
 
   ![Página de inicio](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ Aun así, no hacen falta soluciones ni proyectos para desarrollar aplicaciones e
 
 1. Elija el botón **Aceptar** para crear la solución y el proyecto.
 
-1. Si quiere agregar un proyecto adicional a la solución, seleccione el nodo de la solución en el Explorador de soluciones y, después, en la barra de menús, elija **Proyecto** > **Agregar nuevo elemento**.
+1. Si quiere agregar un proyecto adicional a la solución, seleccione el nodo de la solución en el **Explorador de soluciones** y, después, en la barra de menús, elija **Proyecto** > **Agregar nuevo elemento**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Crear un proyecto a partir de archivos de código existentes
 
@@ -122,10 +119,10 @@ Para crear un proyecto temporal, vaya primero a **Herramientas** > **Opciones** 
 
 ## <a name="delete-a-solution-project-or-item"></a>Eliminar una solución, un proyecto o un elemento
 
-Puede eliminar las soluciones y su contenido de forma permanente, pero no mediante el IDE de Visual Studio. Cuando se eliminan elementos en Visual Studio, solo se eliminan de la solución o proyecto actual. Para eliminar del sistema una solución u otro componente de forma permanente, use el Explorador de archivos para eliminar la carpeta que contiene los archivos de solución .sln y .suo. No obstante, antes de eliminar permanentemente una solución, se recomienda que haga una copia de seguridad de todos los proyectos o archivos por si vuelve a necesitarlos.
+Puede eliminar las soluciones y su contenido de forma permanente, pero no mediante el IDE de Visual Studio. Cuando se eliminan elementos en Visual Studio, solo se eliminan de la solución o proyecto actual. Para eliminar del sistema una solución u otro componente de forma permanente, use el Explorador de archivos para eliminar la carpeta que contiene los archivos de solución *.sln* y *.suo*. No obstante, antes de eliminar permanentemente una solución, se recomienda que haga una copia de seguridad de todos los proyectos o archivos por si vuelve a necesitarlos.
 
 > [!NOTE]
-> El archivo .suo es un archivo oculto que no aparece en la configuración predeterminada del Explorador de archivos. Para mostrar los archivos ocultos, en el menú **Vista** del Explorador de archivos, seleccione la casilla **Elementos ocultos**.
+> El archivo *.suo* es un archivo oculto que no aparece en la configuración predeterminada del Explorador de archivos. Para mostrar los archivos ocultos, en el menú **Vista** del Explorador de archivos, seleccione la casilla **Elementos ocultos**.
 
 ### <a name="to-permanently-delete-a-solution"></a>Para eliminar permanentemente una solución
 
@@ -137,7 +134,7 @@ Puede eliminar las soluciones y su contenido de forma permanente, pero no median
 
 ## <a name="see-also"></a>Vea también
 
-[Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)  
-[Repositorios de código abierto de Microsoft en GitHub](https://github.com/Microsoft)  
-[Ejemplos de Visual Studio](../ide/visual-studio-samples.md)  
-[Ejemplos de código para desarrolladores](https://code.msdn.microsoft.com/)
+- [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
+- [Repositorios de código abierto de Microsoft en GitHub](https://github.com/Microsoft)
+- [Ejemplos de Visual Studio](../ide/visual-studio-samples.md)
+- [Ejemplos de código para desarrolladores](https://code.msdn.microsoft.com/)

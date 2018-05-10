@@ -1,27 +1,21 @@
 ---
-title: Depuración de código de Python | Microsoft Docs
+title: Depuración de código de Python
 description: Tutorial sobre las características de depuración de Visual Studio que son específicas del código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>Depuración del código de Python
 
@@ -131,7 +125,7 @@ El comando de menú **Depurar > Ventanas > Configuración de excepciones** abre 
 
 La casilla de cada excepción controla si el depurador *siempre* se interrumpe cuando se produce la excepción. Active esta casilla si quiere que las interrupciones sean más frecuentes para una excepción concreta.
 
-De manera predeterminada, la mayoría de las excepciones activan una interrupción cuando no se pueda encontrar un controlador de excepciones en el código fuente. Para cambiar este comportamiento, haga clic con el botón derecho en cualquier excepción y active o desactive **Continuar cuando no se controle en el código de usuario**. Desactive esta casilla si quiere que las interrupciones sean menos frecuentes para una excepción.
+De manera predeterminada, la mayoría de las excepciones activan una interrupción cuando no se pueda encontrar un controlador de excepciones en el código fuente. Para cambiar este comportamiento, haga clic con el botón derecho en cualquier excepción y modifique la opción **Continuar cuando no se controle en el código de usuario**. Desactive esta casilla si quiere que las interrupciones sean menos frecuentes para una excepción.
 
 Para configurar una excepción que no aparece en esta lista, haga clic en el botón **Agregar** para agregarla. El nombre debe coincidir con el nombre completo de la excepción.
 

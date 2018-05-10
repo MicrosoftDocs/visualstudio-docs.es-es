@@ -1,54 +1,51 @@
 ---
-title: "Creación de plantillas de varios proyectos para Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Creación de plantillas de varios proyectos para Visual Studio
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86952d3b742abf3b73b22e17d695717ca8dac9bd
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-multi-project-templates"></a>Cómo: Crear plantillas de varios proyectos
 
 Las plantillas de varios proyectos actúan como contenedores de dos o más proyectos. Cuando se crea un proyecto basado en una plantilla de varios proyectos a partir del cuadro de diálogo **Nuevo proyecto**, todos los proyectos de la plantilla se agregan a la solución.
 
-Una plantilla de varios proyectos contiene como mínimo dos plantillas de proyectos, y una plantilla raíz de tipo `ProjectGroup`.
+Una plantilla de varios proyectos tiene como mínimo dos plantillas de proyectos y una plantilla raíz de tipo `ProjectGroup`.
 
 Las plantillas de varios proyectos se comportan de forma distinta a las de proyecto único. Tienen las siguientes características únicas:
 
-- A los proyectos individuales de una plantilla de varios proyectos no se les puede asignar nombres en el cuadro de diálogo **Nuevo proyecto**. En su lugar, use el atributo `ProjectName` del elemento `ProjectTemplateLink` que hay en el archivo .vstemplate para especificar un nombre para cada proyecto.
+- A los proyectos individuales de una plantilla de varios proyectos no se les puede asignar nombres en el cuadro de diálogo **Nuevo proyecto**. En su lugar, use el atributo `ProjectName` del elemento `ProjectTemplateLink` que hay en el archivo *vstemplate* para especificar un nombre para cada proyecto.
 
-- Las plantillas de varios proyectos pueden contener proyectos para distintos lenguajes, pero la plantilla completa solo se puede colocar en una categoría. Especifique la categoría de plantilla en el elemento `ProjectType` del archivo .vstemplate.
+- Las plantillas de varios proyectos pueden contener proyectos para distintos lenguajes, pero la plantilla completa solo se puede colocar en una categoría. Especifique la categoría de plantilla en el elemento `ProjectType` del archivo *vstemplate*.
 
-Una plantilla de varios proyectos debe incluir los elementos siguientes, comprimidos en un archivo .zip:
+Una plantilla de varios proyectos debe incluir los elementos siguientes, comprimidos en un archivo *.zip*:
 
-- Un archivo raíz .vstemplate para toda la plantilla de varios proyectos. Este archivo raíz .vstemplate contiene los metadatos que muestra el cuadro de diálogo **Nuevo proyecto** y especifica dónde encontrar los archivos .vstemplate para los proyectos de una plantilla. Este archivo debe estar ubicado en la raíz del archivo .zip.
+- Un archivo raíz *vstemplate* para toda la plantilla de varios proyectos. Este archivo raíz *vstemplate* contiene los metadatos que muestra el cuadro de diálogo **Nuevo proyecto** y especifica dónde encontrar los archivos *vstemplate* para los proyectos de una plantilla. Este archivo debe estar ubicado en la raíz del archivo *.zip*.
 
-- Dos o más carpetas que contienen los archivos necesarios para una plantilla de proyecto completa. Esto incluye todos los archivos de código del proyecto, así como un archivo .vstemplate para el proyecto.
+- Dos o más carpetas que contienen los archivos necesarios para una plantilla de proyecto completa. Las carpetas incluyen todos los archivos de código del proyecto, así como un archivo *vstemplate* para el proyecto.
 
-Por ejemplo, un archivo .zip de plantilla de varios proyectos que tiene dos proyectos podría tener los siguientes archivos y directorios:
+Por ejemplo, un archivo *.zip* de plantilla de varios proyectos que tiene dos proyectos podría tener los siguientes archivos y directorios:
 
-- MultiProjectTemplate.vstemplate
-- \Project1\Project1.vstemplate
-- \Project1\Project1.vbproj
-- \Project1\Class.vb
-- \Project2\Project2.vstemplate
-- \Project2\Project2.vbproj
-- \Project2\Class.vb
+- *MultiProjectTemplate.vstemplate*
+- *\Project1\Project1.vstemplate*
+- *\Project1\Project1.vbproj*
+- *\Project1\Class.vb*
+- *\Project2\Project2.vstemplate*
+- *\Project2\Project2.vbproj*
+- *\Project2\Class.vb*
 
-El archivo raíz .vstemplate de una plantilla de varios proyectos difiere de una plantilla de proyecto único de las siguientes formas:
+El archivo raíz *vstemplate* de una plantilla de varios proyectos difiere de una plantilla de proyecto único de las siguientes formas:
 
 - El atributo `Type` del elemento `VSTemplate` tiene el valor `ProjectGroup` en lugar de `Project`. Por ejemplo:
 
@@ -57,7 +54,7 @@ El archivo raíz .vstemplate de una plantilla de varios proyectos difiere de una
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- El elemento `TemplateContent` contiene un elemento `ProjectCollection` que tiene uno o varios elementos `ProjectTemplateLink` que definen las rutas de acceso a los archivos .vstemplate de los proyectos incluidos. Por ejemplo:
+- El elemento `TemplateContent` contiene un elemento `ProjectCollection` que tiene uno o varios elementos `ProjectTemplateLink` que definen las rutas de acceso a los archivos *vstemplate* de los proyectos incluidos. Por ejemplo:
 
     ```xml
     <TemplateContent>
@@ -78,7 +75,7 @@ El archivo raíz .vstemplate de una plantilla de varios proyectos difiere de una
 
 1. Personalice los proyectos hasta que estén listos para exportarlos a una plantilla.
 
-1. En el menú **Proyecto**, elija **Exportar plantilla...**.
+1. En el menú **Proyecto**, elija **Exportar plantilla**.
 
    Se abre el **Asistente para exportar plantillas**.
 
@@ -86,31 +83,31 @@ El archivo raíz .vstemplate de una plantilla de varios proyectos difiere de una
 
 1. En la página **Seleccionar opciones de plantilla**, escriba un nombre y, si quiere, una descripción, un icono y una imagen de vista previa para su plantilla. Elija **Finalizar**.
 
-   El proyecto se exporta a un archivo .zip y se coloca en la ubicación de salida especificada.
+   El proyecto se exporta a un archivo *.zip* y se coloca en la ubicación de salida especificada.
 
    > [!NOTE]
    > Cada proyecto debe exportarse a una plantilla de forma individual; por lo tanto, debe repetir los pasos anteriores para cada proyecto de la solución.
 
 1. Cree un directorio para la plantilla y un subdirectorio para cada proyecto.
 
-1. Extraiga el contenido de cada archivo .zip del proyecto en el subdirectorio correspondiente que acaba de crear.
+1. Extraiga el contenido de cada archivo *.zip* del proyecto en el subdirectorio correspondiente que acaba de crear.
 
-1. En el directorio base, cree un archivo XML que tenga le extensión de archivo **.vstemplate**. Ese archivo contiene los metadatos de la plantilla de varios proyectos. Vea el ejemplo que se indica a continuación para saber la estructura del archivo. Debe especificar la ruta de acceso relativa de cada archivo .vstemplate del proyecto.
+1. En el directorio base, cree un archivo XML que tenga le extensión de archivo *.vstemplate*. Ese archivo contiene los metadatos de la plantilla de varios proyectos. Vea el ejemplo que se indica a continuación para saber la estructura del archivo. Debe especificar la ruta de acceso relativa de cada archivo *vstemplate* del proyecto.
 
 1. Seleccione el directorio base y, en el menú contextual, elija **Enviar a** > **Carpeta comprimida (en zip)**.
 
-   Los archivos y las carpetas se comprimen en un archivo .zip.
+   Los archivos y las carpetas se comprimen en un archivo *.zip*.
 
-1. Copie el archivo .zip en el directorio de plantillas de proyectos del usuario. De forma predeterminada, este directorio es %USERPROFILE%\Mis documentos\Visual Studio \<versión\>\Templates\ProjectTemplates.
+1. Copie el archivo *.zip* en el directorio de plantillas de proyectos del usuario. De forma predeterminada, este directorio es *%USERPROFILE%\Documentos\Visual Studio \<versión\>\Templates\ProjectTemplates*.
 
 1. En Visual Studio, abra el cuadro de diálogo **Nuevo proyecto** y compruebe que aparece su plantilla.
 
 ## <a name="two-project-example"></a>Ejemplo de dos proyectos
 
-En este ejemplo, se muestra un archivo raíz .vstemplate básico de varios proyectos. En este ejemplo, la plantilla contiene dos proyectos, `My Windows Application` y `My Class Library`. El atributo `ProjectName` del elemento `ProjectTemplateLink` especifica el nombre que se da al proyecto.
+En este ejemplo, se muestra un archivo raíz *vstemplate* básico de varios proyectos. En este ejemplo, la plantilla tiene dos proyectos, `My Windows Application` y `My Class Library`. El atributo `ProjectName` del elemento `ProjectTemplateLink` especifica el nombre que se da al proyecto.
 
 > [!TIP]
-> Si no se especifica el atributo `ProjectName`, el nombre del archivo .vstemplate se usa como nombre del proyecto.
+> Si no se especifica el atributo `ProjectName`, el nombre del archivo *vstemplate* se usa como nombre del proyecto.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -136,7 +133,7 @@ En este ejemplo, se muestra un archivo raíz .vstemplate básico de varios proye
 
 ## <a name="example-with-solution-folders"></a>Ejemplo con carpetas de soluciones
 
-En este ejemplo, se usa el elemento `SolutionFolder` para dividir los proyectos en dos grupos, `Math Classes` y `Graphics Classes`. La plantilla contiene cuatro proyectos, dos de los cuales se colocan en cada carpeta de soluciones.
+En este ejemplo, se usa el elemento `SolutionFolder` para dividir los proyectos en dos grupos, `Math Classes` y `Graphics Classes`. La plantilla tiene cuatro proyectos, dos de los cuales se colocan en cada carpeta de soluciones.
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -172,8 +169,8 @@ En este ejemplo, se usa el elemento `SolutionFolder` para dividir los proyectos 
 
 ## <a name="see-also"></a>Vea también
 
-[Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)  
-[Cómo: Crear plantillas de proyectos](../ide/how-to-create-project-templates.md)  
-[Referencia de esquema de plantilla de Visual Studio (Extensibilidad)](../extensibility/visual-studio-template-schema-reference.md)  
-[Elemento SolutionFolder (plantillas de Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)  
-[Elemento ProjectTemplateLink (plantillas de Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio (Extensibilidad)](../extensibility/visual-studio-template-schema-reference.md)
+- [Elemento SolutionFolder (plantillas de Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [Elemento ProjectTemplateLink (plantillas de Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

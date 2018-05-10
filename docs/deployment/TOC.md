@@ -96,7 +96,7 @@
 #### [Solucionar problemas de errores específicos de las implementaciones ClickOnce](troubleshooting-specific-errors-in-clickonce-deployments.md)
 #### [Depurar aplicaciones ClickOnce que usan System.Deployment.Application](debugging-clickonce-applications-that-use-system-deployment-application.md)
 ## [Requisitos previos para la implementación de aplicaciones](application-deployment-prerequisites.md)
-### [Implementar requisitos previos de aplicaciones de 64 bits](deploying-prerequisites-for-64-bit-applications.md)
+### [Implementación de requisitos previos de aplicaciones de 64 bits](deploying-prerequisites-for-64-bit-applications.md)
 ### [Crear paquetes de arranque](creating-bootstrapper-packages.md)
 ### [Cómo: Crear un manifiesto de producto](how-to-create-a-product-manifest.md)
 ### [Cómo: Crear un manifiesto de paquete](how-to-create-a-package-manifest.md)

@@ -1,8 +1,9 @@
 ---
-title: "Personalización de las tareas de compilación y depuración en Visual Studio mediante tasks.vs.json y launch.vs.json | Microsoft Docs"
+title: Personalización de las tareas de compilación y depuración en Visual Studio mediante tasks.vs.json y launch.vs.json
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
 - makefiles [Visual Studio]
@@ -12,14 +13,14 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d40bd35d893afeb8e76e18d46185b3d63add1c5
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 859a3687e2dde0d5bedb9f4084bb83b844ca28e1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -38,7 +39,7 @@ Use estos archivos *.json* para personalizar el código base sin proyecto:
 Estos archivos *.json* se encuentran en una carpeta oculta llamada *.vs* en la carpeta raíz del código base. Visual Studio crea los archivos *tasks.vs.json* y *launch.vs.json* según sea necesario cuando se elija **Configurar tareas** o **Configuración de depuración e inicio** en un archivo o una carpeta del **Explorador de soluciones**. Estos archivos *.json* están ocultos porque los usuarios habitualmente no desean insertarlos en el control de código fuente. Sin embargo, si desea poder insertarlos en el control de código fuente, arrastre los archivos a la raíz del código base, donde estarán visibles.
 
 > [!TIP]
-> Para ver los archivos ocultos en Visual Studio, elija el botón **Mostrar todos los archivos** en la barra de herramientas del Explorador de soluciones.
+> Para ver archivos ocultos en Visual Studio, elija el botón **Mostrar todos los archivos** en la barra de herramientas del **Explorador de soluciones**.
 
 ## <a name="define-tasks-with-tasksvsjson"></a>Definición de tareas con tasks.vs.json
 
@@ -54,7 +55,7 @@ Se pueden agregar tareas personalizadas a archivos individuales o a todos los ar
 
 Si el código base usa las herramientas de compilación personalizadas que Visual Studio no reconoce, no podrá ejecutar ni depurar el código en Visual Studio hasta que complete algunos pasos de configuración. Visual Studio proporciona *tareas de compilación* en las que puede indicar a Visual Studio cómo compilar, recompilar y limpiar el código. El archivo de tarea de compilación *tasks.vs.json* asocia el bucle de desarrollo interno de Visual Studio con las herramientas de compilación personalizadas que usa el código base.
 
-Considere un código base que consta de un solo archivo de C# llamado *hello.cs*. El archivo Make para este tipo de código base podría tener el aspecto siguiente:
+Considere un código base que consta de un solo archivo de C# llamado *hello.cs*. El *archivo Make* para este tipo de código base podría tener el aspecto siguiente:
 
 ```makefile
 build: directory hello.exe
@@ -73,7 +74,7 @@ bin:
     md bin
 ```
 
-Para este tipo de archivo Make que contiene objetivos de compilación, limpieza y recompilación, es posible definir el archivo *tasks.vs.json* siguiente. Contiene tres tareas de compilación para compilar, recompilar y limpiar el código base, con NMAKE como la herramienta de compilación.
+Para este tipo de *archivo Make* que contiene destinos de compilación, limpieza y recompilación, es posible definir el siguiente archivo *tasks.vs.json*. Contiene tres tareas de compilación para compilar, recompilar y limpiar el código base, con NMAKE como la herramienta de compilación.
 
 ```json
 {
@@ -117,7 +118,7 @@ Para este tipo de archivo Make que contiene objetivos de compilación, limpieza 
 }
 ```
 
-Una vez que se definen las tareas de compilación en *tasks.vs.json*, se agregan elementos de menú contextual adicionales a los archivos correspondientes en el **Explorador de soluciones**. En este ejemplo, las opciones **Build** (Compilar), **Rebuild** (Recompilar) y **Clean** (Limpiar) se agregan al menú contextual de cualquier *archivo MAKE*.
+Una vez que se definen las tareas de compilación en *tasks.vs.json*, se agregan elementos de menú contextual adicionales a los archivos correspondientes en el **Explorador de soluciones**. En este ejemplo, las opciones "compilar", "recompilar" y "limpiar" se agregan al menú contextual de cualquier *archivo Make*.
 
 ![menú contextual de archivo MAKE con opción de compilar, recompilar y limpiar](media/customize-build-rebuild-clean.png)
 
@@ -205,23 +206,23 @@ Puede crear tareas para cualquier archivo o carpeta si especifica su nombre en e
 |-|-|
 |`"*"`| tarea disponible para todos los archivos y carpetas del área de trabajo|
 |`"*/"`| tarea disponible para todas las carpetas del área de trabajo|
-|`"*.js"`| tarea disponible para todos los archivos con extensión .js del área de trabajo|
-|`"/*.js"`| tarea disponible para todos los archivos con extensión .js en la raíz del área de trabajo|
-|`"src/*/"`| tarea disponible para todas las subcarpetas de la carpeta "src"|
-|`"makefile"`| tarea disponible para todos los archivos Make del área de trabajo|
-|`"/makefile"`| tarea disponible solo para el archivo Make que se encuentra en la raíz del área de trabajo|
+|`"*.js"`| tarea disponible para todos los archivos con la extensión *.js* del área de trabajo|
+|`"/*.js"`| tarea disponible para todos los archivos con extensión *.js* de la raíz del área de trabajo|
+|`"src/*/"`| tarea disponible para todas las subcarpetas de la carpeta *src*|
+|`"makefile"`| tarea disponible para todos los *archivos Make* del área de trabajo|
+|`"/makefile"`| tarea disponible solo para el *archivo Make* de la raíz del área de trabajo|
 
 #### <a name="macros-for-tasksvsjson"></a>Macros de tasks.vs.json
 
 |||
 |-|-|
-|`${env.<VARIABLE>}`| Especifica cualquier variable de entorno (por ejemplo, ${env.PATH}, ${env.COMSPEC}, etc.) que esté establecida para el símbolo del sistema para desarrolladores. Para más información, consulte [Símbolo del sistema para desarrolladores de Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
-|`${workspaceRoot}`| La ruta de acceso completa a la carpeta del área de trabajo (por ejemplo, "C:\sources\hello")|
-|`${file}`| La ruta de acceso completa del archivo o la carpeta en que se selecciona la ejecución de esta tarea (por ejemplo, "C:\sources\hello\src\hello.js")|
-|`${relativeFile}`| La ruta de acceso relativa al archivo o la carpeta (por ejemplo, "src\hello.js")|
-|`${fileBasename}`| El nombre del archivo sin ruta de acceso ni extensión (por ejemplo, "hello")|
-|`${fileDirname}`| La ruta de acceso completa al archivo, sin el nombre de archivo (por ejemplo, "C:\sources\hello\src")|
-|`${fileExtname}`| La extensión del archivo seleccionado (por ejemplo, ".js")|
+|`${env.<VARIABLE>}`| Especifica cualquier variable de entorno (por ejemplo, ${env.PATH}, ${env.COMSPEC}, etc.) que esté establecida para el símbolo del sistema para desarrolladores. Para obtener más información, vea [Símbolo del sistema para desarrolladores de Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs).|
+|`${workspaceRoot}`| La ruta de acceso completa a la carpeta del área de trabajo (por ejemplo, *C:\sources\hello*)|
+|`${file}`| La ruta de acceso completa del archivo o la carpeta seleccionados para la ejecución de esta tarea (por ejemplo, *C:\sources\hello\src\hello.js*)|
+|`${relativeFile}`| La ruta de acceso relativa al archivo o la carpeta (por ejemplo, *src\hello.js*)|
+|`${fileBasename}`| El nombre del archivo sin ruta de acceso ni extensión (por ejemplo, *hello*)|
+|`${fileDirname}`| La ruta de acceso completa al archivo, sin el nombre de archivo (por ejemplo, *C:\sources\hello\src*)|
+|`${fileExtname}`| La extensión del archivo seleccionado (por ejemplo, *.js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configuración de la depuración con launch.vs.json
 

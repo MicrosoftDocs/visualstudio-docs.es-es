@@ -1,27 +1,21 @@
 ---
-title: 'Trabajo con Python, paso 3: ventana interactiva de REPL | Microsoft Docs'
-description: Paso 3 de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata la ventana interactiva de REPL de Python.
-ms.custom: mvc
+title: 'Tutorial de trabajo con Python, paso 3: la ventana interactiva REPL'
+description: Paso 3 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata sobre la ventana interactiva REPL de Python.
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 437dc0b64c3fb9b1a92c4651ad66e5cec867d66b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Paso 3: uso de la ventana interactiva de REPL
 
@@ -95,7 +89,7 @@ La *ventana interactiva* de Visual Studio para Python proporciona una experienci
 
 1. Lo que acaba de hacer es usar el entorno de REPL rápido de la ventana interactiva para elaborar los detalles de un pequeño fragmento de código y después lo ha agregado cómodamente al archivo de código fuente del proyecto. Si ahora vuelve a ejecutar el código con Ctrl+F5 (o **Depurar > Iniciar sin depurar**), verá los resultados exactos que quería.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
 > [Ejecución de código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

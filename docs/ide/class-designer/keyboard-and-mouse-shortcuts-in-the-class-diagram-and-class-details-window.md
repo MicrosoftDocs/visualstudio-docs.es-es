@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a50f61debeb312f0da14e4d8aa848e50abc9cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0762287c47494b0dd0d3f4d444d7143c8688ec2b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase (Diseñador de clases)
 
@@ -32,8 +32,8 @@ Se admiten las siguientes acciones del mouse en los diagramas de clases:
 |Combinación del mouse|Contexto|Description|
 |-----------------------|-------------|-----------------|
 |Doble clic|Shape (elementos)|Se abre el editor de código.|
-||Conector de círculo|Expandir o contraer el círculo.|
-||Etiqueta del conector de círculo|Invoca el comando **Mostrar interfaz**.|
+|Doble clic|Conector de círculo|Expandir o contraer el círculo.|
+|Doble clic|Etiqueta del conector de círculo|Invoca el comando **Mostrar interfaz**.|
 |Rueda del mouse|Diagrama de clases|Desplazamiento vertical.|
 |MAYÚS + rueda del mouse|Diagrama de clases|Desplazamiento horizontal.|
 |CTRL + rueda del mouse|Diagrama de clases|Zoom.|
@@ -60,12 +60,12 @@ Se admiten las siguientes acciones del teclado en los diagramas de clases:
 |Key|Contexto|Description|
 |---------|-------------|-----------------|
 |Teclas de dirección|Dentro de las formas de tipo|Navegación de tipo árbol por el contenido de la forma (permite efectuar un recorrido cíclico). Las teclas izquierda y derecha expanden y contraen el elemento actual, si es expansible, y navegan al elemento primario si no lo es (consulte los métodos de navegación por la vista de árbol para obtener información detallada sobre su comportamiento).|
-||Formas de nivel superior|Mover las formas en el diagrama.|
+|Teclas de dirección|Formas de nivel superior|Mover las formas en el diagrama.|
 |MAYÚS + teclas de dirección|Dentro de las formas de tipo|Crear una selección continua compuesta por elementos de forma, como miembros, tipos anidados o compartimientos. Estos métodos abreviados no permiten el recorrido cíclico.|
 |INICIO|Dentro de las formas de tipo|Navegar al título de la forma de nivel superior.|
-||Formas de nivel superior|Desplácese a la primera forma del diagrama.|
+|INICIO|Formas de nivel superior|Desplácese a la primera forma del diagrama.|
 |FIN|Dentro de las formas de tipo|Navegar al último elemento visible dentro de la forma.|
-||Formas de nivel superior|Navegar a la última forma del diagrama.|
+|FIN|Formas de nivel superior|Navegar a la última forma del diagrama.|
 |MAYÚS+HOME|Dentro de la forma de tipo|Selecciona los elementos que contiene la forma, empezando por el elemento actual y finalizando con el elemento de nivel superior de la misma forma.|
 |MAYÚS+END|Dentro de la forma de tipo|Igual que MAYÚS + INICIO pero en dirección descendente.|
 |ENTRAR|Todos los contextos|Invoca la acción predeterminada de la forma (también disponible con doble clic). En la mayoría de los casos se trata de la acción Ver código, pero en algunos elementos varía (círculos, encabezados de compartimiento o etiquetas de círculo).|
@@ -75,7 +75,7 @@ Se admiten las siguientes acciones del teclado en los diagramas de clases:
 |ALT + MAYÚS + L|Interior de las formas de tipo y sobre las formas de tipo.|Navega al círculo (si existe) de la forma seleccionada.|
 |ALT + MAYÚS + B|Interior de las formas de tipo y sobre las formas de tipo.|Si la lista de tipos base se muestra en la forma de tipo y tiene más de un elemento, alterna el estado de expansión de la lista (contraer/expandir).|
 |SUPRIMIR|Sobre las formas de tipo y de comentario|Invoca el comando **Quitar del diagrama**.|
-||Sobre cualquier otra cosa.|Invoca el comando **Eliminar del código** (miembros, parámetros, asociaciones, herencia, etiquetas de círculo).|
+|SUPRIMIR|Sobre cualquier otra cosa.|Invoca el comando **Eliminar del código** (miembros, parámetros, asociaciones, herencia, etiquetas de círculo).|
 |CTRL+SUPR|Todos los contextos|Invoca el comando **Eliminar del código** en la selección.|
 |TAB|Todos los contextos|Navega al siguiente elemento secundario del mismo elemento principal (permite el recorrido cíclico).|
 |MAYÚS+TAB|Todos los contextos|Navega al elemento secundario anterior del mismo elemento primario (permite el recorrido cíclico).|

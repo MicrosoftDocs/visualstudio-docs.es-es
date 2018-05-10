@@ -11,21 +11,23 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: d2db4210085e3dc16d9c4b9e00653312ae0d5a82
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Herramientas de datos de Visual Studio para .NET
 
-Visual Studio y .NET Framework proporcionan conjuntamente una amplia API y las herramientas de soporte técnico para conectarse a bases de datos, modelado de datos en memoria y mostrar los datos en la interfaz de usuario. Las clases de .NET Framework que proporcionan la funcionalidad de acceso a datos se conocen como [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, junto con los datos de herramientas en Visual Studio, se diseñó originalmente principalmente para admitir bases de datos relacionales y XML. Hoy en día, muchos proveedores de base de datos NoSQL, o de terceros, ofrecen proveedores de ADO.NET.
+Visual Studio y .NET Framework proporcionan conjuntamente una amplia API y las herramientas de soporte técnico para conectarse a bases de datos, modelado de datos en memoria y mostrar los datos en la interfaz de usuario. Las clases de .NET Framework que proporcionan la funcionalidad de acceso a datos se conocen como [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, junto con los datos de herramientas en Visual Studio, se ha diseñado principalmente para admitir bases de datos relacionales y XML. Hoy en día, muchos proveedores de base de datos NoSQL, o de terceros, ofrecen proveedores de ADO.NET.
 
 [.NET core](/dotnet/core/) es compatible con ADO.NET, excepto para los conjuntos de datos y los tipos relacionados. Si el destino es .NET Core y requieren un nivel de asignación relacional de objetos (ORM), use [Entity Framework Core](/ef/core/).
 
 El siguiente diagrama muestra una vista simplificada de la arquitectura básica:
 
 ![Arquitectura de ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
+
+## <a name="typical-workflow"></a>Flujo de trabajo típico
 
 El flujo de trabajo típico es el siguiente:
 
@@ -43,4 +45,4 @@ Puede omitir el paso 3 y programar una aplicación .NET para enviar comandos dir
 
 ## <a name="see-also"></a>Vea también
 
-- [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Obtener acceso a datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

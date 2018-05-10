@@ -1,24 +1,24 @@
 ---
 title: Beneficio de Azure PAYG
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to set up your Azure Pay-As-You-Go account.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4add5862ba05a588a3320b3f2530787ff153c974
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Obtenga información sobre cómo configurar la cuenta Pago por uso de Azure.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cd1b545e4b3f6300431c6bfd7c28c9998572dacf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="setting-up-azure-devtest-pay-as-you-go-subscription"></a>Configuración de la suscripción Desarrollo/pruebas - Pago por uso de Azure
+# <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Configuración de una suscripción Desarrollo/pruebas - Pago por uso de Azure
 Colabore con su equipo en la nube.  Cree varias suscripciones Desarrollo/pruebas - Pago por uso, al mismo tiempo que colabora con otros suscriptores y proporciona aislamiento entre los equipos y el entorno.  Recibirá tarifas por horas con descuentos exclusivos para desarrollo y pruebas y derechos de uso en la nube de su software de suscripción en Azure.
 
-1.  Para usar el beneficio de la suscripción Pago por uso de Azure, haga clic en el vínculo **Activar** situado en la parte inferior del icono del beneficio.   
+1.  Para usar la ventaja para suscripción Pago por uso de Azure, inicie sesión en [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el vínculo **Activar** situado en la parte inferior del icono de la ventaja.   
 
     ![Icono de Azure PAYG](_img\vs-azure-payg\vs-azure-payg-tile.png) 
 

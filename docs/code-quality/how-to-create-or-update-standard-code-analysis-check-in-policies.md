@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar'
+title: Crear o actualizar directivas de protección de análisis de código estándar
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Cómo: Crear o actualizar directivas de inserción en el repositorio de análisis de código estándar
 
@@ -34,7 +34,7 @@ Directivas de protección de análisis de código se establecen en la configurac
 
 Después de especificar una directiva de protección para el código administrado, los miembros del equipo pueden sincronizar su configuración de análisis de código para los proyectos de código para la configuración de directiva del proyecto de equipo.
 
-### <a name="to-open-the-check-in-policy-editor"></a>Para abrir el editor de directiva de protección
+## <a name="to-open-the-check-in-policy-editor"></a>Para abrir el editor de directiva de protección
 
 1. En Team Explorer, haga clic en el nombre del proyecto de equipo, seleccione **configuración del proyecto de equipo**y, a continuación, haga clic en **Control de código fuente**.
 
@@ -46,28 +46,28 @@ Después de especificar una directiva de protección para el código administrad
 
     - Haga doble clic en las existentes **análisis de código** de elemento en el **tipo de directiva** lista para cambiar la directiva.
 
-### <a name="to-set-policy-options"></a>Para establecer las opciones de directiva
+## <a name="to-set-policy-options"></a>Para establecer las opciones de directiva
 
 Active o desactive las siguientes opciones:
 
-    |Opción|Descripción|
-    |------------|-----------------|
-    |**Aplicar en el repositorio para que sólo contenga los archivos que forman parte de la solución actual.**|Análisis de código puede ejecutar solo en los archivos especificados en archivos de configuración de soluciones y proyectos. Esta directiva garantiza que se analiza todo el código que forma parte de una solución.|
-    |**Exigir análisis de código de C/C ++ (/analyze)**|Requiere que todos los proyectos de C o C++ se generan con el / analyze para ejecutar el análisis de código antes de que se pueden comprobar la opción del compilador.|
-    |**Exigir análisis de código para código administrado**|Requiere que todos los proyectos administrados, ejecutan análisis de código y compilación antes de protegerlos.|
+|Opción|Descripción|
+|------------|-----------------|
+|**Aplicar en el repositorio para que sólo contenga los archivos que forman parte de la solución actual.**|Análisis de código puede ejecutar solo en los archivos especificados en archivos de configuración de soluciones y proyectos. Esta directiva garantiza que se analiza todo el código que forma parte de una solución.|
+|**Exigir análisis de código de C/C ++ (/analyze)**|Requiere que todos los proyectos de C o C++ se generan con el / analyze para ejecutar el análisis de código antes de que se pueden comprobar la opción del compilador.|
+|**Exigir análisis de código para código administrado**|Requiere que todos los proyectos administrados, ejecutan análisis de código y compilación antes de protegerlos.|
 
-### <a name="to-specify-a-managed-rule-set"></a>Para especificar un conjunto de reglas administradas
+## <a name="to-specify-a-managed-rule-set"></a>Para especificar un conjunto de reglas administradas
 
-- Desde el **ejecutar este conjunto de reglas** lista, use uno de los métodos siguientes:
+Desde el **ejecutar este conjunto de reglas** lista, use uno de los métodos siguientes:
 
-    - Seleccione un conjunto de reglas estándar de Microsoft.
+- Seleccione un conjunto de reglas estándar de Microsoft.
 
-    - Para seleccionar un conjunto de reglas personalizado, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >** y, a continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
+- Seleccione una regla personalizada, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >**. A continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
 
-    - **$/** `TeamProjectName` **/** `VersionControlPath`
+   **$/** `TeamProjectName` **/** `VersionControlPath`
 
-    - Para obtener más información acerca de cómo crear e implementar una regla de directiva de protección personalizadas conjuntos, vea [personalizado para implementar directivas de protección para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Para obtener más información acerca de cómo crear e implementar una regla de directiva de protección personalizadas conjuntos, vea [personalizado para implementar directivas de protección para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Vea también
 
-[Crear y usar directivas de protección del análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Crear y usar directivas de protección de análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

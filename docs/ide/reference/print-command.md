@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf241ec0a9ff849b52761a241e84a15d287bb88
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ef4f0c5c6bd5be2820e1f666529fc43fac59763
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="print-command"></a>Imprimir (Comando)
 Evalúa una expresión o muestra el texto especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Debug.Print text
 ```
 
@@ -39,13 +39,13 @@ Debug.Print text
 ## <a name="remarks"></a>Comentarios
  Puede usar el signo de interrogación (?) como un alias para este comando. Por lo tanto, por ejemplo, el comando
 
-```
+```cmd
 >Debug.Print expA
 ```
 
  también se puede escribir
 
-```
+```cmd
 >? expA
 ```
 
@@ -53,7 +53,7 @@ Debug.Print text
 
 ## <a name="example"></a>Ejemplo
 
-```
+```cmd
 >Debug.Print varA
 ```
 

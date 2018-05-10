@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
 Este cuadro de diálogo le permite definir la configuración del proyecto y la compilación de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relacionada con el registro, el rendimiento y los tipos de archivos auxiliares.
@@ -71,10 +71,10 @@ Este cuadro de diálogo le permite definir la configuración del proyecto y la c
 ## <a name="extensions-to-hide"></a>Extensiones para ocultar
   Especifica las extensiones de nombre de archivo de los archivos que no aparecerán en el **Explorador de soluciones** cuando esté habilitada la opción **Mostrar todos los archivos**.
 
- ## <a name="build-customization-search-path"></a>Ruta de búsqueda de personalizaciones de compilación
+## <a name="build-customization-search-path"></a>Ruta de búsqueda de personalizaciones de compilación
   Especifica la lista de directorios que contienen archivos .rules, que ayudan a definir reglas de compilación para los proyectos.
 
-# <a name="solution-explorer-mode"></a>Modo Explorador de soluciones
+## <a name="solution-explorer-mode"></a>Modo Explorador de soluciones
  **Mostrar únicamente archivos del proyecto**
 
   Configura el **Explorador de soluciones** de modo que solo muestre archivos del proyecto.

@@ -1,10 +1,7 @@
 ---
-title: "Optimización del rendimiento de Visual Studio| Microsoft Docs"
+title: Mejorar el tiempo de inicio de Visual Studio
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -12,19 +9,20 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - vs.performancecenter
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 403bbfff74cfe969a26e12aeb1f4b54ef0473195
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: b7ba4e3d3a32aa7921d23b8719ec63733b9e239e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="optimize-visual-studio-performance"></a>Optimización del rendimiento de Visual Studio
+# <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
 
 Visual Studio está diseñado para iniciarse de la forma más rápida y eficaz posible. Sin embargo, ciertas extensiones y ventanas de herramientas de Visual Studio pueden afectar negativamente al tiempo de inicio cuando se cargan. Puede controlar el comportamiento de las extensiones y las ventanas de herramientas lentas desde el cuadro de diálogo **Administrar el rendimiento de Visual Studio**. Para más sugerencias generales sobre cómo mejorar el rendimiento, consulte [Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).
 
@@ -32,29 +30,29 @@ Visual Studio está diseñado para iniciarse de la forma más rápida y eficaz p
 
 Para evitar que se alargue demasiado el tiempo de inicio, Visual Studio de 2017 carga las extensiones mediante un enfoque _a petición_. Con este comportamiento, las extensiones no se abren inmediatamente cuando Visual Studio se inicia, sino cuando son necesarias. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
 
-Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándole de la extensión o la ventana de herramientas que está provocando la ralentización. El mensaje ofrece un vínculo al cuadro de diálogo **Administrar el rendimiento de Visual Studio**. También puede acceder a este cuadro de diálogo eligiendo **Ayuda**, **Administrar el rendimiento de Visual Studio** en la barra de menús.
+Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándole de la extensión o la ventana de herramientas que está provocando la ralentización. El mensaje ofrece un vínculo al cuadro de diálogo **Administrar el rendimiento de Visual Studio**. También puede acceder a este cuadro de diálogo si elige **Ayuda** > **Administrar el rendimiento de Visual Studio** en la barra de menús.
 
 ![Administrar el rendimiento Visual Studio: mensaje emergente en el que se lee "Se ha detectado que la extensión... está ralentizando Visual Studio"](../ide/media/vside_perfdialog_popup.png)
 
 En el cuadro de diálogo se enumeran las ventanas de herramientas y extensiones que afectan negativamente al rendimiento de inicio. Puede cambiar la configuración de la ventana de herramientas y de las extensiones para mejorar el rendimiento de inicio.
 
-## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a>Cambiar la configuración de extensión para mejorar el inicio, la carga de solución y el rendimiento de la escritura
+## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Cambiar la configuración de extensión para mejorar el inicio, la carga de solución y el rendimiento de la escritura
 
-1. Abra el cuadro de diálogo **Administrar el rendimiento de Visual Studio** eligiendo **Ayuda**, **Administrar el rendimiento de Visual Studio** en la barra de menús.
+1. Abra el cuadro de diálogo **Administrar el rendimiento de Visual Studio**. Para ello, seleccione **Ayuda** > **Administrar el rendimiento de Visual Studio** en la barra de menús.
 
-    Si una extensión está ralentizando el inicio de Visual Studio, la carga de la solución o la escritura, esta aparece en el cuadro de diálogo **Administrar el rendimiento de Visual Studio** en **Extensiones**, **Inicio** (o **Carga de solución** o **Escritura**).
+    Si una extensión está ralentizando el inicio de Visual Studio, la carga de la solución o la escritura, esta aparece en el cuadro de diálogo **Administrar el rendimiento de Visual Studio** en **Extensiones** > **Inicio** (o **Carga de solución** o **Escritura**).
 
     ![Administración del rendimiento de Visual Studio: vista de extensiones](../ide/media/vside_perfdialog_extensions.png)
 
 2. Elija la extensión que quiera deshabilitar y después elija el botón **Deshabilitar**.
 
-Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro de diálogo Administrador de extensiones o Administrar el rendimiento de Visual Studio.
+Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro de diálogo **Administrador de extensiones** o **Administrar el rendimiento de Visual Studio**.
 
-## <a name="to-change-tool-window-settings-to-improve-startup-time"></a>Cambiar la configuración de la ventana de herramientas para mejorar el tiempo de inicio
+## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Cambiar la configuración de la ventana de herramientas para mejorar el tiempo de inicio
 
-1. Abra el cuadro de diálogo **Administrar el rendimiento de Visual Studio** eligiendo **Ayuda**, **Administrar el rendimiento de Visual Studio** en la barra de menús.
+1. Abra el cuadro de diálogo **Administrar el rendimiento de Visual Studio**. Para ello, seleccione **Ayuda** > **Administrar el rendimiento de Visual Studio** en la barra de menús.
 
-    Si una ventana de herramientas ralentiza el inicio de Visual Studio, la ventana de herramientas aparece en el cuadro de diálogo **Administrar el rendimiento de Visual Studio** en **Ventanas de herramientas**, **Inicio**.
+    Si una ventana de herramientas ralentiza el inicio de Visual Studio, la ventana de herramientas aparece en el cuadro de diálogo **Administrar el rendimiento de Visual Studio** en **Ventanas de herramientas** > **Inicio**.
 
 2. Elija la ventana de herramientas cuyo comportamiento quiera cambiar.
 
@@ -73,4 +71,6 @@ Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro
 
 ## <a name="see-also"></a>Vea también
 
+- [Optimización del rendimiento de Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Blog de Visual Studio: Cargar soluciones más rápido con Visual Studio 2017 versión 15.6)

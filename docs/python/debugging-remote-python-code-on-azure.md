@@ -1,31 +1,25 @@
 ---
-title: Depuración remota de Azure con Python | Microsoft Docs
+title: Depuración remota de Azure con Python
 description: Describe cómo configurar una instancia de Azure App Service para usar Visual Studio para la depuración remota de una aplicación de Python.
-ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d74e4425bfcaefbd1bb13e368ee719acaa3bae80
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 11a624ec6582e5e07e51de6d4ab29b84dc53d4a1
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Depuración remota de código de Python en Azure
 
-[La compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md) incluye la posibilidad de depurar de forma remota el código de Python que se ejecuta en Azure App Service. A diferencia de la depuración remota simple, el equipo de destino en este escenario no es directamente accesible a través de TCP, por lo que Visual Studio proporciona un proxy que expone el protocolo del depurador sobre HTTP. Los proyectos creados con la plantilla web configuran automáticamente este proxy en el archivo `web.debug.config` generado. También se habilita la depuración remota cuando se publica una configuración de depuración de su proyecto, como se describe en [Publicación en Azure App Service](python-web-application-project-templates.md#publishing-to-azure-app-service).
+[La compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md) incluye la posibilidad de depurar de forma remota el código de Python que se ejecuta en Azure App Service. A diferencia de la depuración remota simple, el equipo de destino en este escenario no es directamente accesible a través de TCP, por lo que Visual Studio proporciona un proxy que expone el protocolo del depurador sobre HTTP. Los proyectos creados con la plantilla web configuran automáticamente este proxy en el archivo `web.debug.config` generado. También se habilita la depuración remota cuando se publica una configuración de depuración de su proyecto, como se describe en [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md.
 
 Dado que la depuración remota de Azure usa sockets web, los sockets deben estar habilitados para su instancia de App Service mediante el [portal de Azure](https://portal.azure.com); para ello, vaya a **Configuración > Configuración de la aplicación** y establezca **Configuración general > Sockets web** en **Activado**. Luego, seleccione **Guardar** para aplicar el cambio. (Tenga en cuenta que la configuración de **Depuración** no se aplica a la depuración de Python).
 

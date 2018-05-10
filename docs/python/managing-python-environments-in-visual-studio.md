@@ -1,28 +1,23 @@
 ---
-title: Administración de intérpretes y entornos de Python | Microsoft Docs
-description: Se describe cómo usar la ventana Entornos de Python en Visual Studio para administrar entornos globales y virtuales, configurar entornos personalizados, instalar intérpretes de Python, instalar paquetes, establecer rutas de búsqueda y administrar entornos para proyectos de Visual Studio.
-ms.custom: ''
+title: Administración de entornos e intérpretes de Python
+description: Use la ventana Entornos de Python para administrar entornos globales, virtuales y de conda, instalar paquetes e intérpretes de Python y asignar entornos a proyectos de Visual Studio.
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a1bf9c9c016a71c816ed8cc40b675c520e9c9397
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-environments-in-visual-studio"></a>Administración de entornos de Python en Visual Studio
+# <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
 Un *entorno* de Python es un contexto en el que se ejecuta el código de Python e incluye los entornos globales, virtuales y de conda. Un entorno consta de un intérprete, una biblioteca (normalmente la biblioteca estándar de Python) y un conjunto de paquetes instalados. Todos estos componentes determinan qué construcciones de lenguaje y sintaxis son válidas, a qué función de sistema operativo puede acceder y qué paquetes puede usar.
 

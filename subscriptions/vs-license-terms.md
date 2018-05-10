@@ -1,19 +1,19 @@
 ---
-title: "Términos de licencia de las suscripciones de Visual Studio"
+title: Términos de licencia de las suscripciones de Visual Studio
 author: evanwindom
 ms.author: jaunger
-Manager: evelynp
-ms.date: 10/3/2017
+manager: evelynp
+ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-description: "Términos de licencia de las suscripciones de Visual Studio."
+description: Términos de licencia de las suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 68e5a55156b3a5e67f047df585f20c83e808386a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/16/2018
 ---
 **TÉRMINOS DE LICENCIA DE SOFTWARE DE MICROSOFT PARA LAS SIGUIENTES SUSCRIPCIONES DE VISUAL STUDIO:**
 
@@ -45,7 +45,7 @@ SI CUMPLE CON ESTOS TÉRMINOS DE LICENCIA, TENDRÁ LOS DERECHOS SIGUIENTES PARA 
 
    d. **Programas de Microsoft incluidos.** Salvo lo descrito en las secciones 2.e y 2.f., estos términos de licencia se aplican a todos los programas de Microsoft incluidos con la suscripción de software. Si los términos de licencia con cualquiera de esos programas le conceden otros derechos que no entren expresamente en conflicto con estos términos de licencia, también tendrá esos derechos.
 
-   e. **Producto de Windows 10 IoT.** Todos los productos de Windows IoT y los servicios incluidos con el software se rigen por sus propios términos de licencia. Además, si quiere distribuir la imagen de entorno de ejecución de Windows 10 IoT Core ("imagen de entorno de ejecución"), y si la distribución tiene fines comerciales, primero debe ejecutar y cumplir con los términos y condiciones de una licencia comercial de Microsoft o la filial de Microsoft correspondiente a su país. Entre los ejemplos de fines comerciales se incluye la ejecución de operaciones empresariales, la concesión de licencias, el alquiler o la venta de la aplicación que contiene la imagen de entorno de ejecución, la distribución de la imagen de entorno de ejecución de la aplicación a los clientes con fines de evaluación, la distribución de la imagen de entorno de ejecución para su uso con productos comerciales, el uso de la imagen de entorno de ejecución en la creación o el uso de productos comerciales o cualquier otra actividad cuyo fin sea que usted u otros usuarios obtengan beneficios comerciales. Para obtener más información, vaya a [http://go.microsoft.com/fwlink/?LinkID=614849](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409).
+   e. **Producto de Windows 10 IoT.** Todos los productos de Windows IoT y los servicios incluidos con el software se rigen por sus propios términos de licencia. Además, si quiere distribuir la imagen de entorno de ejecución de Windows 10 IoT Core ("imagen de entorno de ejecución"), y si la distribución tiene fines comerciales, primero debe ejecutar y cumplir con los términos y condiciones de una licencia comercial de Microsoft o la filial de Microsoft correspondiente a su país. Entre los ejemplos de fines comerciales se incluye la ejecución de operaciones empresariales, la concesión de licencias, el alquiler o la venta de la aplicación que contiene la imagen de entorno de ejecución, la distribución de la imagen de entorno de ejecución de la aplicación a los clientes con fines de evaluación, la distribución de la imagen de entorno de ejecución para su uso con productos comerciales, el uso de la imagen de entorno de ejecución en la creación o el uso de productos comerciales o cualquier otra actividad cuyo fin sea que usted u otros usuarios obtengan beneficios comerciales. Para obtener más información, visite [http://go.microsoft.com/fwlink/?LinkID=614849](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409).
 
    f. **Paquetes de características de Visual Studio, Agents para Visual Studio 2015, IntelliTrace Collector para Visual Studio 2015, Kits de desarrollo de software (SDK), Kits de desarrollo del controlador (DDK), versiones de modelos y prácticas, y programas de terceros.** La suscripción también puede contener componentes de software clasificados como "Paquetes de características de Visual Studio", "Agents para Visual Studio 2015", "IntelliTrace Collector para Visual Studio 2015", "Herramientas remotas para Visual Studio 2015", software de evaluación y versión preliminar, "SDK", "DDK", "modelos y prácticas" o programas de terceros. Estos están a su disposición mediante descargas para suscriptores de Visual Studio. Si cualquiera de los componentes o programas de software incluyen otros términos, esos términos se aplican a su uso.
 
@@ -97,9 +97,9 @@ SI CUMPLE CON ESTOS TÉRMINOS DE LICENCIA, TENDRÁ LOS DERECHOS SIGUIENTES PARA 
        You may run, at any one time, only one instance of SQL Server 2014 Standard Edition in one physical or virtual operating system environment on one server solely to support the software. You do not need SQL Server CALs for this use.
 
 
-   b.  **Utilidades.** El software contiene algunos elementos de la lista de utilidades en [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409).  Puede copiar e instalar esos elementos en sus equipos o en otros de terceros. Tenga en cuenta que las utilidades están diseñadas para su uso temporal, que Microsoft no podrá aplicar revisiones ni actualizaciones de utilidades por separado del resto del software, y que, por su naturaleza, es posible que algunas de las utilidades permitan que otros usuarios accedan a los equipos en los que están instaladas. Por consiguiente, deberá eliminar todas las utilidades que haya instalado cuando termine de depurar o implementar las aplicaciones y bases de datos. Microsoft no es responsable de ningún uso o acceso que terceros hagan de las utilidades que se instalen en algún equipo.
+   b.  **Utilidades.** El software contiene algunos elementos de la lista de utilidades de [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Puede copiar e instalar esos elementos en sus equipos o en otros de terceros. Tenga en cuenta que las utilidades están diseñadas para su uso temporal, que Microsoft no podrá aplicar revisiones ni actualizaciones de utilidades por separado del resto del software, y que, por su naturaleza, es posible que algunas de las utilidades permitan que otros usuarios accedan a los equipos en los que están instaladas. Por consiguiente, deberá eliminar todas las utilidades que haya instalado cuando termine de depurar o implementar las aplicaciones y bases de datos. Microsoft no es responsable de ningún uso o acceso que terceros hagan de las utilidades que se instalen en algún equipo.
 
-   c. **Servidor de compilación.** El software contiene algunos elementos de la lista del servidor de compilación en [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409).  Si dichos elementos se incluyen en el software, puede copiarlos e instalarlos en los equipos de compilación. Usted y otros usuarios de su organización pueden usar estos elementos en los equipos de compilación únicamente con el fin de compilar, generar, comprobar y archivar las aplicaciones o ejecutar pruebas de rendimiento o calidad como parte del proceso de compilación.
+   c. **Servidor de compilación.** El software contiene algunos elementos en la lista de servidores de compilación de [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Si dichos elementos se incluyen en el software, puede copiarlos e instalarlos en los equipos de compilación. Usted y otros usuarios de su organización pueden usar estos elementos en los equipos de compilación únicamente con el fin de compilar, generar, comprobar y archivar las aplicaciones o ejecutar pruebas de rendimiento o calidad como parte del proceso de compilación.
 
    d. **Alcance de la licencia.** No puede realizar ingeniería inversa, descompilar ni desensamblar el software, ni intentar obtener de otra manera el código fuente del software salvo y únicamente en la medida en que: (i) esté permitido por la ley vigente a pesar de esta limitación; o (ii) sea necesario para depurar cambios en las bibliotecas autorizadas en virtud de la Licencia Pública General Reducida de GNU que se incluye con el software y está vinculada e él.
 
@@ -170,7 +170,7 @@ SI CUMPLE CON ESTOS TÉRMINOS DE LICENCIA, TENDRÁ LOS DERECHOS SIGUIENTES PARA 
 
     a. **Derecho de uso y distribución.** Los archivos de texto y código que se muestran a continuación son "Código distribuible". 
 
-    - *Archivos REDIST.TXT*. Puede copiar y distribuir el código objeto del código que aparece en el archivo redist.txt del software y en la lista REDIST que se encuentra en [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409).
+    - *Archivos REDIST.TXT*. Puede copiar y distribuir el formulario de código objeto que aparece en el archivo redist.txt del software y en la lista REDIST que se encuentra en [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409).
 
     - *Código de ejemplo, plantillas y estilos.* Puede copiar, modificar y distribuir el código fuente y objeto del código marcado como "ejemplo", "plantilla", "estilos simples" y "estilos de boceto".
 
@@ -275,7 +275,7 @@ _____
 
 **Productos de Visual Studio 2015:** 
 
-**DATOS.** El software puede recopilar información sobre el usuario y la utilización del software y, después, enviarla a Microsoft. Microsoft puede usar esta información para ofrecer servicios y mejorar nuestros productos y servicios. Puede rechazar muchos de estos escenarios, pero no todos, tal y como se describe en la documentación del producto. También hay algunas características en el software que pueden permitirle recopilar datos de los usuarios de las aplicaciones. Si utiliza estas características para habilitar la recopilación de datos en las aplicaciones, debe cumplir con la ley vigente, lo que incluye comunicar los avisos oportunos a los usuarios de las aplicaciones. Puede obtener más información sobre la recopilación y el uso de datos en la documentación de ayuda y la declaración de privacidad, disponible en [http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409). Al usar el software, se entiende que da su consentimiento para la realización de estas prácticas.
+**DATOS.** El software puede recopilar información sobre el usuario y la utilización del software y, después, enviarla a Microsoft. Microsoft puede usar esta información para ofrecer servicios y mejorar nuestros productos y servicios. Puede rechazar muchos de estos escenarios, pero no todos, tal y como se describe en la documentación del producto. También hay algunas características en el software que pueden permitirle recopilar datos de los usuarios de las aplicaciones. Si utiliza estas características para habilitar la recopilación de datos en las aplicaciones, debe cumplir con la ley vigente, lo que incluye comunicar los avisos oportunos a los usuarios de las aplicaciones. Puede obtener más información sobre la recopilación y el uso de datos en la documentación de ayuda y la declaración de privacidad en [http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409). Al usar el software, se entiende que da su consentimiento para la realización de estas prácticas.
 
   
 

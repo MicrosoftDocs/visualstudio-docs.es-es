@@ -1,27 +1,21 @@
 ---
-title: 'Trabajo con Python, paso 2: escritura y ejecución de código | Microsoft Docs'
-description: Paso 2 de un tutorial básico para trabajar con Python dentro de Visual Studio, que trata sobre cómo modificar y ejecutar un sencillo programa Hola mundo, seguido de un código muy interesante que muestra las características de IntelliSense y de edición de Visual Studio.
-ms.custom: mvc
+title: 'Tutorial sobre cómo trabajar con Python, paso 2: escritura y ejecución de código'
+description: Paso 2 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, entre otras, la edición de código y la ejecución de un proyecto.
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6045b385754eebfe7b754b9d213f860a199b1824
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Paso 2: Escritura y ejecución de código
 
@@ -91,7 +85,7 @@ Aunque el Explorador de soluciones es donde se administran los archivos del proy
 
 1. Vuelva a ejecutar el programa con Ctrl + F5 o **Depurar > Iniciar sin depurar**. Cuando haya terminado, cierre la ventana de salida.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
 > [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)

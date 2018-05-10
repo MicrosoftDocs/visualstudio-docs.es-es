@@ -16,18 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fb28a49c1e0439e859211de553d473eaf815fb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e462e64df90a7672efa890897b48726a0e764e6c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 Limpia y, después, compila la configuración de solución especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
 ```
 
@@ -59,7 +59,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 ## <a name="example"></a>Ejemplo
  En este ejemplo se limpia y se recompila el proyecto `CSharpWinApp` mediante la configuración de compilación de proyecto `Debug` en la configuración de solución `Debug` de `MySolution`.
 
-```
+```cmd
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 

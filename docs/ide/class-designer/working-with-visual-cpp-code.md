@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb3dfce4f4e1596e21853c1ef645bd4ef107186e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="work-with-visual-c-code-class-designer"></a>Trabajar con código de Visual C++ (Diseñador de clases)
 
@@ -73,7 +73,7 @@ Puede que el **Diseñador de clases** no pueda resolver tipos por las razones si
 
 -   El tipo se encuentra en una biblioteca a la que hace referencia una directiva #import. Una posible solución alternativa es agregar manualmente el código generado (archivo .tlh) a una directiva #include en el archivo de encabezado.
 
--   Asegúrese de que el **Diseñador de clases** admite el tipo especificado. Vea [Limitaciones de los elementos de código C++](#limitations).
+-   Asegúrese de que el **Diseñador de clases** admite el tipo especificado. Vea [Limitaciones de los elementos de código C++](#limitations-for-c-code-elements).
 
 El error que probablemente más va a encontrar para un problema de resolución de tipos es **No se pudo encontrar el código para una o varias formas en el diagrama de clase "\<element>"**. Este mensaje de error no necesariamente indica que el código sea incorrecto. Solo indica que ese diseñador de clases no pudo mostrar el código. Pruebe las siguientes medidas:
 

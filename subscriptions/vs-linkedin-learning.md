@@ -1,53 +1,26 @@
 ---
 title: Beneficio de LinkedIn Learning en suscripciones de Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the LinkedIn Learning benefit included as part of a LinkedIn Premium subscription included in selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8ef318cb7cdefefc079b230f0e44fdeb5f0c2d8f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Obtenga información sobre el beneficio de LinkedIn Learning incluido como parte de una suscripción a LinkedIn Premium incluida en suscripciones seleccionadas de Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 71b6fca12acf1ee1ebd552622a41412f1d1ba269
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Beneficio de LinkedIn Learning en suscripciones de Visual Studio
 
-## <a name="overview"></a>Información general
 Saque el máximo partido de todas las posibilidades que LinkedIn ofrece con el acceso a las personas, información y conocimientos que necesita para impulsar su carrera.  Adquiera las aptitudes empresariales, técnicas y creativas más demandadas de manos de expertos del sector.
 
 Algunas suscripciones de Visual Studio incluyen una suscripción a LinkedIn Premium, que incluye LinkedIn Learning.  La duración de la suscripción Premium depende del tipo de suscripción de Visual Studio que tenga.
 Debe tener una cuenta de LinkedIn para poder sacar partido de la prestación LinkedIn Learning.  Si aún no tiene una, tendrá la oportunidad de crearla antes de activar la suscripción Premium.  
-
-## <a name="eligibility"></a>Elegibilidad
-| Programa/nivel de suscripción                                                  | Prestación               | ¿Renovable?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise estándar                                             | 6 meses              |  No                                                                |
-| Visual Studio Enterprise anual                                               | 6 meses              |  No                                                                |
-| Visual Studio Enterprise mensual                                              | No disponible         |                                                                    |
-| Visual Studio Professional estándar                                           | 3 meses              |  No                                                                |
-| Visual Studio Professional anual                                             | 3 meses              |  No                                                                | 
-| Visual Studio Professional mensual                                            | No disponible         |                                                                    |
-| Visual Studio Test Pro                                                        | 3 meses              |  No                                                                |
-| Plataformas de MSDN                                                                | 3 meses              |  No                                                                |
-| Visual Studio Dev Essentials                                                  | 3 meses              |  No                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 6 meses              |  No                                                                |
-| Visual Studio Enterprise - FTE                                                | No disponible         |                                                                    |
-| Visual Studio Enterprise - Microsoft Partner Network                          | No disponible         |                                                                    |
-| Visual Studio Professional - Microsoft Partner Network                        | No disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (estándar)                                 | No disponible         |                                                                    |
-| Visual Studio Enterprise – Imagine (premium)                                  | No disponible         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | No disponible         |                                                                    |
-| Microsoft Certified Trainer - software y servicios                             | No disponible         |                                                                    |
-| Microsoft Certified Trainer - desarrollador de software y servicios                   | No disponible         |                                                                    |
-
-<sup>1</sup>  *Incluye Not for Resale (NFR), Microsoft Valued Partner (MVP), Region Director (RD), Visual Studio Industry Partner (VSIP)*  
-
-¿No sabe con seguridad qué suscripción usa?  Vaya a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
 
 ## <a name="activation-steps"></a>Pasos para la activación
 Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
@@ -117,8 +90,25 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 
     ![Página de inicio de LinkedIn Learning](_img\vs-linkedin\vs-linkedin-learning-home.png)
 
-## <a name="faq"></a>Preguntas más frecuentes
-*Compruebe aquí si hay actualizaciones*.
+## <a name="eligibility"></a>Elegibilidad
+| Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | 6 meses       |  No.  Disponible solo para nuevos suscriptores          |
+| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |No.  Disponible solo para nuevos suscriptores         |
+| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                             |  No.  Disponible solo para nuevos suscriptores         |
+| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                              | No.  Disponible solo para nuevos suscriptores         |
+| Visual Studio Dev Essentials | NA  | 3 meses |No.  Disponible solo para nuevos suscriptores |
+| Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
+
+<sup>1</sup> *Incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP).  Excluye: Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Partner (MVP), Region Director (RD).  MCT Software & Services.*
+
+
+
+¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
+
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>P: Si renuevo la suscripción, ¿también se renueva mi beneficio de LinkedIn Learning?
+R: No, la oferta de LinkedIn Learning solo está disponible para nuevos suscriptores. 
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con LinkedIn Learning?  Consulte estos recursos:

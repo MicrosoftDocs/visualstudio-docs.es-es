@@ -1,15 +1,9 @@
 ---
-title: Introducción a la compatibilidad de Python en Visual Studio en Windows | Microsoft Docs
-description: Resumen de características de Visual Studio, que lo convierten en el mejor IDE de Python en Windows (también conocidas como Herramientas de Python para Visual Studio, PTVS)
-ms.custom: ''
+title: Introducción a la compatibilidad de Python en Visual Studio en Windows
+description: Resumen de características de Python en Visual Studio, que lo convierten en el mejor IDE de Python en Windows (también conocidas como Herramientas de Python para Visual Studio, PTVS).
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -17,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="working-with-python-in-visual-studio-windows"></a>Uso de Python en Visual Studio (Windows)
+# <a name="working-with-python-in-visual-studio-on-windows"></a>Trabajo con Python en Visual Studio en Windows
 
 Python es un lenguaje de programación popular confiable, flexible, fácil de aprender, de uso libre en todos los sistemas operativos y admitido por una gran comunidad de desarrolladores y muchas bibliotecas gratuitas. Python es compatible con todos los modos de desarrollo, lo que incluye aplicaciones web, servicios web, aplicaciones de escritorio, scripting e informática científica, y lo utilizan muchas universidades, científicos, programadores ocasionales y desarrolladores profesionales. Puede obtener más información sobre el lenguaje en [python.org](https://www.python.org) y [Python for Beginners](https://www.python.org/about/gettingstarted/) (Python para principiantes).
 
@@ -94,6 +88,7 @@ Las plantillas de proyecto y elemento automatizan el proceso de configuración d
 Para obtener más información:
 
 - Documento: [Administración de proyectos de Python](managing-python-projects-in-visual-studio.md)
+- Documento: [Referencia de plantillas de elemento](python-item-templates.md)
 - Documento: [Plantillas de proyecto de Python](managing-python-projects-in-visual-studio.md#project-templates)
 - Documento: [Trabajo con C++ y Python](working-with-c-cpp-python-in-visual-studio.md)
 - Documento de características generales de Visual Studio: [Plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md#visual-studio-templates)
@@ -174,13 +169,15 @@ R. Por lo general, Python es un lenguaje interpretado, con código que se ejecut
 Las características de Python se pueden instalar en las siguientes ediciones de Visual Studio, tal y como se describe en la [guía de instalación](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (todas las ediciones)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (todas las ediciones)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
+- Visual Studio 2015 (todas las ediciones)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express para Web, Update 2 o una versión posterior
 - Visual Studio 2013 Express para escritorio, Update 2 o una versión posterior
 - Visual Studio 2013 (edición Pro o una versión posterior)
 - Visual Studio 2012 (edición Pro o una versión posterior)
 - Visual Studio 2010 SP1 (edición Pro o una versión posterior; se necesita .NET 4.5)
+
+Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
 
 > [!Important]
 > Las características son totalmente compatibles y se mantienen para la versión más reciente de Visual Studio exclusivamente. Estas características están disponibles en versiones anteriores, pero no se mantienen de manera activa.
@@ -301,6 +298,6 @@ Las características de Python se pueden instalar en las siguientes ediciones de
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-- [Puente de WFastCGI entre IIS y Python](https://pypi.python.org/pypi/wfastcgi) (python.org)
+- [Puente de WFastCGI entre IIS y Python](https://pypi.org/p/wfastcgi) (pypi.org)
 - [Cursos gratuitos de Python en Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Preguntas principales de Python en Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Cómo: implementar proyectos anidados
+
 Cuando se crea un tipo de proyecto anidado haya son un varios pasos adicionales que deben implementarse. Un proyecto principal se toma en algunas de las mismas responsabilidades que tiene la solución para sus proyectos anidados (secundarios). El proyecto principal es un contenedor de proyectos similares a una solución. En concreto, hay varios eventos que se deben generar la solución y por los proyectos primario para generar la jerarquía de proyectos anidados. Estos eventos se describen en el siguiente proceso para crear proyectos anidados.
 
-### <a name="to-create-nested-projects"></a>Para crear proyectos anidados
+## <a name="create-nested-projects"></a>Crear proyectos anidados
 
 1.  El entorno de desarrollo integrado (IDE) carga información de inicio y el archivo de proyecto del proyecto principal mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaz. El proyecto principal se crea y se agrega a la solución.
 
     > [!NOTE]
-    >  En este momento, es demasiado pronto en el proceso para el proyecto principal crear el proyecto anidado porque el proyecto principal se debe crear antes de pueden crear los proyectos secundarios. Después de esta secuencia, el proyecto principal puede aplicar configuraciones a los proyectos secundarios y los proyectos secundarios pueden obtener información acerca de los proyectos primario si es necesario. Esta secuencia es si es necesario en los clientes como control de código fuente (SCC) y el Explorador de soluciones.
+    > En este momento, es demasiado pronto en el proceso para el proyecto principal crear el proyecto anidado porque el proyecto principal se debe crear antes de pueden crear los proyectos secundarios. Después de esta secuencia, el proyecto principal puede aplicar configuraciones a los proyectos secundarios y los proyectos secundarios pueden obtener información acerca de los proyectos primario si es necesario. Esta secuencia es si es necesario en los clientes como control de código fuente (SCC) y el Explorador de soluciones.
 
      El proyecto principal debe esperar a que el <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método para ser llamado por el IDE antes de pueda crear su anidados (secundarios) proyecto o proyectos.
 
@@ -57,7 +58,7 @@ Cuando se crea un tipo de proyecto anidado haya son un varios pasos adicionales 
      Si aún no existe, el proyecto principal crea un GUID para cada proyecto anidado mediante una llamada a `CoCreateGuid`.
 
     > [!NOTE]
-    >  `CoCreateGuid` se llamó a una API COM cuando no se creará un GUID. Para obtener más información, vea `CoCreateGuid` y GUID en MSDN Library.
+    > `CoCreateGuid` se llamó a una API COM cuando no se creará un GUID. Para obtener más información, vea `CoCreateGuid` y GUID en MSDN Library.
 
      El proyecto principal almacena este GUID en su archivo de proyecto para recuperar la próxima vez que se abre en el IDE. Vea el paso 4 para obtener más información relativa a la que realiza la llamada de `AddVirtualProjectEX` para recuperar la `guidProjectID` para el proyecto secundario.
 
@@ -66,7 +67,7 @@ Cuando se crea un tipo de proyecto anidado haya son un varios pasos adicionales 
      Dado que los proyectos primarios y secundarios se crean instancias mediante programación, puede establecer propiedades para proyectos anidados en este momento.
 
     > [!NOTE]
-    >  No sólo se recibe la información de contexto desde el proyecto anidado, pero también puede preguntar si el proyecto principal tiene cualquier contexto para ese elemento mediante la comprobación de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De esa manera, puede agregar atributos adicionales de Ayuda dinámica y opciones de menú específicas para proyectos anidados individuales.
+    > No sólo se recibe la información de contexto desde el proyecto anidado, pero también puede preguntar si el proyecto principal tiene cualquier contexto para ese elemento mediante la comprobación de <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De esa manera, puede agregar atributos adicionales de Ayuda dinámica y opciones de menú específicas para proyectos anidados individuales.
 
 10. La jerarquía se crea para su presentación en el Explorador de soluciones con una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.
 
@@ -78,15 +79,12 @@ Cuando se crea un tipo de proyecto anidado haya son un varios pasos adicionales 
 
      Cuando se cierra un proyecto anidado porque el usuario ha cerrado la solución o específico del proyecto, el otro método en `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, se llama. El proyecto principal encapsula las llamadas a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> método con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> métodos para notificar a los agentes de escucha de eventos de la solución que se está cerrando los proyectos anidados.
 
- Los temas siguientes tratan con varios otros conceptos que debe considerar al implementar proyectos anidados:
+Los temas siguientes tratan con varios otros conceptos que debe considerar al implementar proyectos anidados:
 
- [Consideraciones para descargar y volver a cargar proyectos anidados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
-
- [Compatibilidad del Asistente para proyectos anidados](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [Implementación del control de comandos para proyectos anidados](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [Filtrado del cuadro de diálogo AddItem para proyectos anidados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [Consideraciones para descargar y volver a cargar proyectos anidados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Compatibilidad del Asistente para proyectos anidados](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [Implementación del control de comandos para proyectos anidados](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [Filtrado del cuadro de diálogo AddItem para proyectos anidados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
 ## <a name="see-also"></a>Vea también
 

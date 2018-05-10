@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar el modo en que Visual Studio crea los títulos para los controles enlazados a datos
+
 Cuando se arrastran elementos desde la [ventana Orígenes de datos](add-new-data-sources.md) en un diseñador, entra en juego la cuenta una consideración especial: los nombres de columna en las etiquetas de leyenda se vuelve a dar formato a una cadena más legible cuando dos o más palabras se encuentran como se concatenan juntos. Puede personalizar la manera en que se crean estas etiquetas, estableciendo el **SmartCaptionExpression**, **SmartCaptionReplacement**, y **SmartCaptionSuffix** valores en el **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data diseñadores** clave del registro.
 
 > [!NOTE]
@@ -48,15 +49,15 @@ En la tabla siguiente se muestra la configuración predeterminada interna para e
 > [!CAUTION]
 > Debe tener mucho cuidado al hacer nada en el Editor del registro. Hacer copia de seguridad del registro antes de editarlo. Si utiliza incorrectamente el Editor del registro, puede provocar problemas graves que quizás requieran reinstalar el sistema operativo. Microsoft no garantiza que se pueden resolver los problemas que causan utilizando el Editor del Registro incorrectamente. Utilice el Editor del registro bajo su responsabilidad.
 >
->  El siguiente artículo de Knowledge Base contiene instrucciones para realizar copias de seguridad, modificar y restaurar el registro: [descripción del registro de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> El siguiente artículo de Knowledge Base contiene instrucciones para realizar copias de seguridad, modificar y restaurar el registro: [descripción del registro de Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar el comportamiento de subtítulos (CC) inteligente de la ventana de orígenes de datos
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Modificar el comportamiento de subtítulos (CC) inteligente de la ventana de orígenes de datos
 
 1.  Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
 
 2.  Tipo de `regedit` en el **ejecutar** cuadro de diálogo y haga clic en **Aceptar**.
 
-3.  Expanda el **HKEY_CURRENT_USER**, **Software*, **Microsoft**, **VisualStudio** nodo.
+3.  Expanda el **HKEY_CURRENT_USER**, **Software**, **Microsoft**, **VisualStudio** nodo.
 
 7.  Haga clic en el **15.0** nodo y crear un nuevo **clave** denominado `Data Designers`.
 
@@ -80,7 +81,7 @@ En la tabla siguiente se muestra la configuración predeterminada interna para e
 
     La próxima vez que se arrastran elementos desde la **orígenes de datos** ventana, las etiquetas de leyenda se crean utilizando los nuevos valores del registro proporcionados.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Para desactivar la característica de subtítulos (CC) inteligente
+## <a name="turn-off-the-smart-captioning-feature"></a>Desactivar la característica de subtítulos (CC) inteligente
 
 1.  Abra una ventana de comandos, haga clic en **iniciar** y, a continuación, **ejecutar**.
 

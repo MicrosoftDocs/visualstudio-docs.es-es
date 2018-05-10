@@ -1,54 +1,51 @@
 ---
-title: Cuadro Buscar comando | Microsoft Docs
-ms.custom: 
+title: Cuadro Buscar/Comando
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede1e6cd1340ea204199df66108c49db310949f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="findcommand-box"></a>Buscar/Comando (cuadro)
 
 Puede buscar texto y ejecutar comandos de Visual Studio desde el cuadro **Buscar comando**. El cuadro **Comando/Buscar** todavía está disponible como un control de la barra de herramientas, pero ya está visible de manera predeterminada. Puede mostrar el cuadro **Comando/Buscar** pulsando **Agregar o quitar botones** en la barra de herramientas **Estándar** y, después, pulsar **Buscar**.
 
-Para ejecutar un comando de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], precédalo de un signo mayor que (>).
+Para ejecutar un comando de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], precédalo de un signo mayor que (**>**).
 
-El cuadro **Buscar comando** conserva los últimos 20 elementos escritos y los muestra en una lista desplegable. Puede navegar por la lista mediante el uso de las teclas de dirección.
+El cuadro **Buscar comando** conserva los últimos 20 elementos escritos y los muestra en una lista desplegable. Puede navegar por la lista con las **teclas de dirección**.
 
 ![Cuadro Buscar comando](../ide/media/findcommandbox.png "FindCommandBox")
 
 ## <a name="searching-for-text"></a>Buscar texto
 
-Cuando se especifica texto en el cuadro **Buscar comando** y se presiona la tecla **ENTRAR**, Visual Studio busca de forma predeterminada la ventana de herramientas o documento actuales con las opciones especificadas en el cuadro de diálogo **Buscar en archivos**. Para obtener más información, consulta [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
+Cuando se especifica texto en el cuadro **Buscar comando** y se presiona la tecla **ENTRAR**, Visual Studio busca de forma predeterminada la ventana de herramientas o documento actuales con las opciones especificadas en el cuadro de diálogo **Buscar en archivos**. Para obtener más información, vea [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md).
 
 ## <a name="entering-commands"></a>Escribir comandos
 
-Para usar el cuadro **Buscar comando** para emitir un solo comando o alias de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en lugar de buscar texto, escriba el comando precedido de un signo mayor que (>). Por ejemplo:
+Para usar el cuadro **Buscar comando** para emitir un solo comando o alias de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en lugar de buscar texto, escriba el comando precedido de un signo mayor que (**>**). Por ejemplo:
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
 ```
 
-También puede usar la ventana Comandos para escribir y ejecutar uno o varios comandos. Algunos comandos o alias pueden escribirse y ejecutarse por sí solos; otros requieren argumentos en su sintaxis. Para obtener una lista de los comandos que tienen argumentos, vea [Comandos de Visual Studio](../ide/reference/visual-studio-commands.md).
+También puede usar la ventana **Comandos** para escribir y ejecutar uno o varios comandos. Algunos comandos o alias pueden escribirse y ejecutarse por sí solos; otros requieren argumentos en su sintaxis. Para obtener una lista de los comandos que tienen argumentos, vea [Comandos de Visual Studio](../ide/reference/visual-studio-commands.md).
 
 ## <a name="escape-characters"></a>Caracteres de escape
 
-Un carácter de intercalación (^) en un comando significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo:
+Un carácter de intercalación (**^**) en un comando significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas (**"**), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo:
 
 ```
 >Edit.Find ^^t /regex
@@ -58,5 +55,5 @@ El símbolo de intercalación funciona igual tanto si está dentro como fuera de
 
 ## <a name="see-also"></a>Vea también
 
-[Ventana Comandos](../ide/reference/command-window.md)  
-[Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)
+- [Ventana Comandos](../ide/reference/command-window.md)
+- [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)

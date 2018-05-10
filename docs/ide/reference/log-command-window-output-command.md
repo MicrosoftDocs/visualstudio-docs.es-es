@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16eb42011a15539193e9d69724d299c73e5cecc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2de9b21f55765706a56110aee84959b2003e994e
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="log-command-window-output-command"></a>Registrar resultados de la ventana de comandos (Comando)
 Copia en un archivo todas las entradas y salidas de la ventana **Comandos**.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
@@ -58,19 +58,19 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="examples"></a>Ejemplos
  Este ejemplo crea un archivo de registro, cmdlog, e inicia el registro de comandos.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
  Este ejemplo detiene el registro de comandos.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
  Este ejemplo reanuda el registro de comandos en el archivo de registro usado anteriormente.
 
-```
+```cmd
 >Tools.LogCommandWindowOutput /on
 ```
 

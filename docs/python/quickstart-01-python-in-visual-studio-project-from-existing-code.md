@@ -1,15 +1,9 @@
 ---
-title: 'Inicio rápido: Creación de un proyecto de Python a partir de código existente | Microsoft Docs'
+title: 'Inicio rápido: Crear un proyecto de Python a partir del código existente'
 description: En este tutorial, creará un proyecto de Visual Studio para Python a partir de una carpeta existente, mediante una plantilla adecuada.
-ms.custom: mvc
 ms.date: 01/08/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b31cda03c2ca233e90e1ba0194d83845805e28f3
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 7a27110082ead9da0c8c355a9ee3770524f09f04
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Inicio rápido: Crear un proyecto de Python a partir del código existente
 
@@ -41,6 +35,6 @@ Una vez que haya [instalado la compatibilidad con Python en Visual Studio 2017](
 
 ## <a name="see-also"></a>Vea también
 
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment) (Identificación manual de un intérprete de Python existente).
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente).
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md).
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations).

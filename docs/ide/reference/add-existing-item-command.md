@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ec281b508842424fbfb74bbe0726bb2ec47abe2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b4647fd5ca2cc5199c1f9b85e5237dd57d95dbbd
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-existing-item-command"></a>Agregar elemento existente (Comando)
 Agrega un archivo existente a la solución actual y lo abre.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 File.AddExistingItem filename [/e:editorname]
 ```
 
@@ -38,7 +38,7 @@ File.AddExistingItem filename [/e:editorname]
 
  La sintaxis del argumento /e:`editorname` usa los nombres de editor tal y como aparecen en el **cuadro de diálogo Abrir con**, incluidos entre comillas. Por ejemplo, para abrir una hoja de estilos en el editor de código fuente, tiene que escribir lo siguiente para el argumento /e:`editorname`.
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
@@ -48,7 +48,7 @@ File.AddExistingItem filename [/e:editorname]
 ## <a name="example"></a>Ejemplo
  En este ejemplo, se agrega el archivo Form1.frm a la solución actual.
 
-```
+```cmd
 >File.AddExistingItem "C:\public\solution files\Form1.frm"
 ```
 

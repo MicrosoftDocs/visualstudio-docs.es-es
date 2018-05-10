@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Crear una extensión con una plantilla de elemento de Editor
 Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio para crear extensiones de editor básico que aumenta el editor de clasificadores, opciones gráficas y los márgenes. Las plantillas de elementos de editor están disponibles para los proyectos de Visual C# o Visual Basic VSIX.  
@@ -36,7 +36,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
   
     -   EditorClassifier1.cs contiene el `EditorClassifier1` clase.  
   
-    -   EditorClassifier1ClassificationDefinition.cs contiene el `OEditorClassifier1ClassificationDefinition` clase.  
+    -   EditorClassifier1ClassificationDefinition.cs contiene el `EditorClassifier1ClassificationDefinition` clase.  
   
     -   EditorClassifier1Format.cs contiene el `EditorClassifier1Format` clase.  
   
@@ -57,7 +57,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
   
     -   TextAdornment1.cs contiene el `TextAdornment1` clase.  
   
-    -   extAdornment1TextViewCreationListener.cs contiene el `TextAdornment1TextViewCreationListener` clase.  
+    -   TextAdornment1TextViewCreationListener.cs contiene el `TextAdornment1TextViewCreationListener` clase.  
   
 4.  Compile la solución y comience la depuración. Aparece la instancia experimental. Si abre un archivo de texto, la 'a' de los caracteres en el texto aparecen destacados en rojo con un fondo azul.  
   
@@ -88,7 +88,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
   
 1.  En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#** o **Visual Basic** y, a continuación, haga clic en **extensibilidad**. En el **plantillas** panel, seleccione **proyecto VSIX**. En el cuadro **Nombre**, escriba `MarginExtension`. Haga clic en **Aceptar**.  
   
-2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **elementos gráficos de área de visualización de Editor**. Deje el nombre de archivo predeterminado (EditorMargin1.cs/vb).  
+2.  En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **Agregar / nuevo elemento**. Vaya a Visual C# **extensibilidad** nodo y seleccione **Editor margen**. Deje el nombre de archivo predeterminado (EditorMargin1.cs/vb).  
   
 3.  Hay dos archivos de código, como se indica a continuación:  
   

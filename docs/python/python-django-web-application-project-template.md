@@ -1,30 +1,25 @@
 ---
-title: Plantilla de proyecto web de Django para Python | Microsoft Docs
+title: Plantilla de proyecto web de Django para Python
 description: Información general de las plantillas de Visual Studio para aplicaciones web escritas en Python con el marco Django.
-ms.custom: ''
-ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.date: 04/17/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
+author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 941ec5191e440be95d66da983508de36cef6d4fd
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 077619b7d47441bb4a02dbe87e7cf714b634beff
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="django-web-project-template"></a>Plantilla de proyecto web de Django
 
-[Django](https://www.djangoproject.com/) es un marco de Python de alto nivel diseñado para el desarrollo web rápido, seguro y escalable. La compatibilidad de Python en Visual Studio proporciona una plantilla de proyecto para configurar la estructura de una aplicación web basada en Django. Para usar la plantilla en Visual Studio, seleccione **Archivo > Nuevo > Proyecto**, busque "Django" y seleccione la plantilla **Proyecto web de Django**. El proyecto resultante incluye código reutilizable, así como una base de datos de SQLite predeterminada. La plantilla **Proyecto web de Django en blanco** es similar, pero no incluye la base de datos.
+[Django](https://www.djangoproject.com/) es un marco de Python de alto nivel diseñado para el desarrollo web rápido, seguro y escalable. La compatibilidad de Python en Visual Studio proporciona varias plantillas de proyecto para configurar la estructura de una aplicación web basada en Django. Para usar una plantilla en Visual Studio, seleccione **Archivo** > **Nuevo** > **Proyecto**, busque "Django" y seleccione alguna de las plantillas "Proyecto web de Django en blanco", "Proyecto web de Django" y "Proyecto web de Django de sondeos". Consulte el [tutorial de aprendizaje de Django](learn-django-in-visual-studio-step-01-project-and-solution.md) para ver una guía detallada de todas las plantillas.
 
 Visual Studio proporciona IntelliSense al completo para proyectos de Django:
 
@@ -60,10 +55,14 @@ El acceso a la consola de administración de Django se realiza a través de vari
 
     ![Consola](media/template-django-console-sync-db.png)
 
-- **Collect Static** (Recopilar estáticos): ejecuta `manage.py collectstatic --noinput` para copiar todos los archivos estáticos en la ruta de acceso que especificada `STATIC_ROOT` en `settings.py`. Tenga en cuenta que cuando [publicar en Microsoft Azure](python-web-application-project-templates.md#publishing-to-azure-app-service), automáticamente se recopilan los archivos estáticos como parte de la operación de publicación.
+- **Collect Static** (Recopilar estáticos): ejecuta `manage.py collectstatic --noinput` para copiar todos los archivos estáticos en la ruta de acceso que especificada `STATIC_ROOT` en `settings.py`. Al [publicar en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md), automáticamente se recopilan los archivos estáticos como parte de la operación de publicación.
 
     ![Consola](media/template-django-console-collect-static.png)
 
 - **Validar**: ejecuta `manage.py validate`, que informa de los errores de validación en los modelos instalados que especifica `INSTALLED_APPS` en `settings.py`:
 
     ![Consola](media/template-django-console-validate.png)
+
+## <a name="see-also"></a>Vea también
+
+- [Tutorial de aprendizaje de Django](learn-django-in-visual-studio-step-01-project-and-solution.md)

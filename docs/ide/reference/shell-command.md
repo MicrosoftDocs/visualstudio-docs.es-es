@@ -20,18 +20,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632c37ea2ee8afc0a8d3b45e0d3e208de6b76f9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="shell-command"></a>Shell (Comando)
 Inicia programas ejecutables desde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
@@ -66,13 +66,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 > Si el argumento `path` proporciona la ruta de acceso de directorio, así como el nombre de archivo, debe incluir la ruta de acceso completa entre comillas literales ("""), como en el siguiente ejemplo:
 
 
-```
+```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
  El procesador `Shell` interpreta cada conjunto de tres comillas dobles (""") como un único carácter de comilla doble. Por tanto, en el ejemplo anterior, se pasa la siguiente cadena de ruta de acceso al comando `Shell`:
 
-```
+```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
@@ -83,7 +83,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ## <a name="example"></a>Ejemplo
  El siguiente comando usa xcopy.exe para copiar el archivo `MyText.txt` en la carpeta `Text`. La salida de xcopy.exe se muestra tanto en la **ventana Comandos** como en la ventana de **salida**.
 
-```
+```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 

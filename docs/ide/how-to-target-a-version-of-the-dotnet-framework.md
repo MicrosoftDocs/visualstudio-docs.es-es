@@ -1,25 +1,22 @@
 ---
-title: "Versión de .NET Framework como destino en Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Versión de .NET Framework como destino en Visual Studio
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03d8b734833fad5a47f0d5517b21a7851d9258a6
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 6d0eef8a9563fdb6d74737f90cf184186142a672
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Cómo: Usar como destino una versión de .NET Framework
 
@@ -32,7 +29,7 @@ En este documento se describe cómo crear un proyecto que tiene como destino una
 
 Al crear un proyecto, las versiones de .NET Framework disponibles dependen de qué versiones están instaladas y de la plantilla seleccionada en el cuadro de diálogo **Nuevo proyecto**.
 
-1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto...**
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 1. En la lista de plantillas instaladas, elija el tipo de proyecto que quiere crear y escriba un nombre para el proyecto.
 
@@ -54,7 +51,7 @@ Para obtener información sobre cómo cambiar la versión de destino para los pr
 
     ![Propiedades del Explorador de soluciones de Visual Studio](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
 
-1. En la columna izquierda de la ventana Propiedades, elija la pestaña **Aplicación**.
+1. En la columna izquierda de la ventana **Propiedades**, elija la pestaña **Aplicación**.
 
     ![Propiedades de aplicación de Visual Studio, pestaña Aplicación](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 
@@ -72,8 +69,8 @@ Para obtener información sobre cómo cambiar la versión de destino para los pr
 
 ## <a name="see-also"></a>Vea también
 
-[Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
-[Solucionar problemas de versión de .NET Framework de destino](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
-[Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)  
-[Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Información general sobre la compatibilidad con múltiples versiones de Visual Studio](../ide/visual-studio-multi-targeting-overview.md)
+- [Solucionar problemas de versión de .NET Framework de destino](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
+- [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

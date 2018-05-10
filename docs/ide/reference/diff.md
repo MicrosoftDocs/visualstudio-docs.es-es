@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c70c238a4503fbd05249ef6522cf020c00221c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6cbf0f8f9fa2e97908e2ae13e3961382a7250a91
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="diff"></a>/Diferencias
 Compara dos archivos. Las diferencias se muestran en una ventana especial de Visual Studio.
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
 ```
 
