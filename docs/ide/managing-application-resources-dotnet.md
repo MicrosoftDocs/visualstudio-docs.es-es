@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe35a9a0e9b1e4b2e04e978f2b32cb38439b76cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="manage-application-resources-net"></a>Administrar los recursos de la aplicación (.NET)
 
@@ -35,7 +35,7 @@ Para obtener más información sobre los recursos de las aplicaciones de escrito
 
 En un proyecto de código administrado, abra la ventana de propiedades del proyecto. Puede abrir la ventana Propiedades de cualquiera de estas maneras:
 
-- Hacer clic con el botón derecho en el nodo de proyecto del **Explorador de soluciones** y seleccionar **Propiedades**.
+- Hacer clic con el botón derecho en el nodo de proyecto en el **Explorador de soluciones** y seleccionar **Propiedades**.
 - Escribir "propiedades del proyecto" en la ventana **Inicio rápido**.
 - Presionar **Alt**+**Entrar** en la ventana **Explorador de soluciones**.
 

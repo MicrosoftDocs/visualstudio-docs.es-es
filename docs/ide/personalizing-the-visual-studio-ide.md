@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar el IDE de Visual Studio
 
@@ -40,7 +40,7 @@ Para cambiar las opciones de color en el editor, escriba `environment` en el cua
 
 Puede cambiar el uso de mayúsculas en el menú principal y alternar entre **tipo título** ("Archivo") y **Todo mayúsculas** ("ARCHIVO"). Escriba `environment` en el cuadro **Inicio rápido**, seleccione **Entorno --> General** y, luego, cambie la opción **Aplicar tipografía de título a la barra de menús**.
 
-### <a name="customze-menus-and-toolbars"></a>Personalización de menús y barras de herramientas
+### <a name="customize-menus-and-toolbars"></a>Personalización de menús y barras de herramientas
 
 Para agregar o quitar elementos del menú o de la barra de herramientas, vea [Cómo: Personalizar menús y barras de herramientas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 

@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
@@ -34,7 +34,7 @@ Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemp
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>Para habilitar la substitución de parámetros en las plantillas
 
-1. En el archivo .vstemplate de la plantilla, busque el elemento `ProjectItem` correspondiente al elemento para el que desea habilitar el reemplazo de parámetros.
+1. En el archivo *.vstemplate* de la plantilla, busque el elemento `ProjectItem` correspondiente al elemento para el que quiere habilitar el reemplazo de parámetros.
 
 1. Establezca el atributo `ReplaceParameters` del elemento `ProjectItem` en `true`:
 
@@ -63,7 +63,7 @@ La tabla siguiente muestra los parámetros de plantilla reservados que cualquier
 |SpecificSolutionName|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `SpecificSolutionName` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `SpecificSolutionName` está en blanco.|
 |userdomain|Dominio del usuario actual.|
 |username|Nombre de usuario actual.|
-|webnamespace|Nombre del sitio web actual. Este parámetro se utiliza en la plantilla de formulario Web Forms para garantizar que los nombres de clase sean únicos. Si el sitio web está en el directorio raíz del servidor web, este parámetro de plantilla se resuelve como el directorio raíz del servidor web.|
+|webnamespace|Nombre del sitio web actual. Este parámetro se usa en la plantilla de formulario web para garantizar que los nombres de clase sean únicos. Si el sitio web está en el directorio raíz del servidor web, este parámetro de plantilla se resuelve como el directorio raíz del servidor web.|
 |año|Año actual en formato AAAA.|
 
 > [!NOTE]
@@ -73,7 +73,7 @@ La tabla siguiente muestra los parámetros de plantilla reservados que cualquier
 
 Puede especificar sus propios parámetros y valores de plantilla, además de los parámetros de plantilla reservados predeterminados que se usan durante el reemplazo de parámetros. Para obtener más información, consulte [CustomParameters element (Visual Studio templates)](../extensibility/customparameters-element-visual-studio-templates.md) (Elemento CustomParameters (plantillas de Visual Studio)).
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>Ejemplo: Uso del nombre del proyecto para un nombre de archivo
+## <a name="example-use-the-project-name-for-a-file-name"></a>Ejemplo: Uso del nombre del proyecto para un nombre de archivo
 
 Puede especificar nombres de archivo variables para los elementos de proyecto usando un parámetro en el atributo `TargetFileName`.
 
@@ -90,7 +90,7 @@ En el ejemplo siguiente se especifica que el nombre de un archivo ejecutable usa
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>Ejemplo: Uso del nombre de proyecto seguro para el nombre del espacio de nombres
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Ejemplo: Uso del nombre de proyecto seguro para el nombre del espacio de nombres
 
 Para usar el nombre del proyecto seguro para el espacio de nombres en un archivo de clase de C#, use la sintaxis siguiente:
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-En el archivo .vstemplate para la plantilla de proyecto, incluya el atributo `ReplaceParameters="true"` al hacer referencia al archivo:
+En el archivo *.vstemplate* de la plantilla de proyecto, incluya el atributo `ReplaceParameters="true"` al hacer referencia al archivo:
 
 ```xml
 <TemplateContent>
@@ -118,5 +118,5 @@ En el archivo .vstemplate para la plantilla de proyecto, incluya el atributo `Re
 
 ## <a name="see-also"></a>Vea también
 
-- [Personalización de plantillas](../ide/customizing-project-and-item-templates.md)
+- [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)

@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 90ec61924a9a08fc01c54f04bd8a7cc82fcc9525
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="quick-actions"></a>Acciones rápidas
 
@@ -24,10 +24,10 @@ Las acciones rápidas le permiten refactorizar, generar o modificar el código d
 
 Las acciones rápidas pueden utilizarse para:
 
-- aplicar una revisión de código para una infracción de regla del [analizador de código](../code-quality/roslyn-analyzers-overview.md)
-- [suprimir](../code-quality/use-roslyn-analyzers.md) una infracción de regla del analizador de código
-- aplicar una refactorización (por ejemplo, [insertar una variable temporal](../ide/reference/inline-temporary-variable.md))
-- generar código (por ejemplo, [introducir una variable local](../ide/reference/introduce-local-variable.md))
+- Aplicar una revisión de código para una infracción de regla del [analizador de código](../code-quality/roslyn-analyzers-overview.md).
+- [Suprimir](../code-quality/use-roslyn-analyzers.md) una infracción de regla del analizador de código.
+- Aplicar una refactorización (por ejemplo, [insertar una variable temporal](../ide/reference/inline-temporary-variable.md)).
+- Generar código (por ejemplo, [introducir una variable local](../ide/reference/introduce-local-variable.md)).
 
 Las acciones rápidas se pueden aplicar mediante el icono de bombilla ![icono de bombilla pequeño](media/vs2015_lightbulbsmall.png) o presionando **Ctrl**+**.** cuando el cursor está en una línea de código para la que está disponible una acción. Verá una bombilla si hay una flecha en zigzag de color rojo y Visual Studio tiene una sugerencia para corregir el problema. Por ejemplo, si tiene un error que se indica mediante una flecha en zigzag de color rojo, aparecerá una bombilla cuando haya disponibles correcciones para ese error.
 
