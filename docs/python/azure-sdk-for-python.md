@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 91f51f91008552e602991505f28ef4f076692f52
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 58e7f6cd46293573f17c344ffba943d99b55f830
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-sdk-for-python"></a>SDK de Azure para Python
 

@@ -1,7 +1,7 @@
 ---
 title: Implementar en una carpeta local - Visual Studio | Documentos de Microsoft
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,17 +12,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Implementar una aplicación web o una aplicación de .NET Core en una carpeta local mediante la herramienta de publicación de Visual Studio
 
 Puede usar el **publicar** herramienta para publicar la aplicación en una carpeta local. 
 
 Estos pasos se aplican a ASP.NET, ASP.NET Core, .NET Core y aplicaciones de Python en Visual Studio. Para Node.js, se admiten los pasos, pero la interfaz de usuario es diferente.
+
+## <a name="prerequisites"></a>Requisitos previos
+
+* Debe tener instalado de Visual Studio 2017 y **.NET Framework** y **.NET Core** cargas de trabajo de desarrollo instalado.
+
+    Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo 
 
@@ -40,7 +46,9 @@ Estos pasos se aplican a ASP.NET, ASP.NET Core, .NET Core y aplicaciones de Pyth
 
     ![Elija publicar](../deployment/media/quickstart-publish.png "elija Publicar")
 
-1. En el **publicar** panel, elija **carpeta**.
+1. Si previamente ha configurado ningún perfil de publicación, la **publicar** aparece el panel. Haga clic en **crear nuevo perfil**.
+
+1. En el **elegir un destino de publicación** diálogo cuadro, elija **carpeta**.
 
     ![Elija la carpeta](../deployment/media/quickstart-publish-folder.png "Seleccionar carpeta")
 

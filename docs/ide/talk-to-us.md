@@ -14,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa70cac665c5673416b62aed6aa6ae0a9ebd805
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 81eafb383be9f687bdc16bd8241e396849b8894a
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="talk-to-us"></a>Hable con nosotros
 Si tiene ideas sobre cómo mejorar nuestros productos y nuestra documentación, nos interesan. No podemos responder siempre personalmente, pero nos aseguraremos de hacer llegar sus comentarios al equipo o a la persona adecuada.  
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>Quiero notificar un problema con Visual Studio
-Si tiene problemas con Visual Studio, como bloqueos, un rendimiento bajo o un comportamiento inesperado, entre otros, notifíquenos el problema. Para hacerlo, use la herramienta **Notificar un problema**. Simplemente haga clic en el icono de comentarios situado junto al **Inicio rápido** o pulse **Ayuda** > **Enviar comentarios** > **Notificar un problema** desde el menú principal. Para obtener más información, consulte [Notificación de un problema con Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
+Si tiene problemas con Visual Studio, como bloqueos, un rendimiento bajo o un comportamiento inesperado, entre otros, notifíquenos el problema. Para hacerlo, use la herramienta **Notificar un problema**. Simplemente haga clic en el icono de comentarios situado junto al **Inicio rápido** o pulse **Ayuda** > **Enviar comentarios** > **Notificar un problema** desde el menú principal. Para obtener más información, vea [Cómo notificar un problema con Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quiero hacer una sugerencia relacionada con las características de Visual Studio
 Si hay algo que podamos mejorar, háganoslo saber. Elija**Ayuda** > **Enviar comentarios** > **Ofrecer una sugerencia** para sugerir una característica o cambio al equipo de Visual Studio. Su sugerencia se publicará automáticamente en [UserVoice](https://visualstudio.uservoice.com), donde otros usuarios podrán votarla.
@@ -53,4 +53,4 @@ Si quiere compartir sus preguntas y respuestas con otros desarrolladores, puede 
 Use el botón de comentarios **¿Le resultó útil esta página?** ubicado en la parte inferior de la página. Encontrará este botón en todas nuestras páginas de documentación. De manera alternativa, puede agregar comentarios a cualquier página de Visual Studio en [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) mediante el uso del botón **Sign in to give documentation feedback** (Iniciar sesión para dejar comentarios sobre la documentación) que se encuentra también en la parte inferior de la página.
 
 ## <a name="see-also"></a>Vea también
- [Cómo notificar un problema con Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+[Cómo notificar un problema con Visual Studio 2017](how-to-report-a-problem-with-visual-studio-2017.md)

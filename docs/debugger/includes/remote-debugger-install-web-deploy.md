@@ -13,15 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 81b58a2162d7240e32e1fb2d45e462ec551155e7
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 05/10/2018
 ---
 1. Si piensa implementar aplicaciones con Web Deploy en Visual Studio, instale la versión más reciente de Web Deploy en el servidor.
 
-    Para instalar Web Deploy, use la [instalador de plataforma Web (WPI)](https://www.microsoft.com/web/downloads/platform.aspx). Buscar Web Deploy en la pestaña aplicaciones. También puede obtener un instalador directamente desde el [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
+    Para instalar Web Deploy, use la [instalador de plataforma Web (WPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Para buscar el vínculo del instalador de plataforma Web de IIS, seleccione **IIS** en el panel izquierdo del administrador del servidor. Haga clic en el servidor y seleccione **Internet Information Services (IIS) Manager**.)
+
+    En el instalador de plataforma Web, encontrará Web Deploy en la pestaña aplicaciones. También puede obtener un instalador directamente desde el [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
 
 2. Compruebe que Web Deploy se ejecuta correctamente, abra **el Panel de Control > sistema y seguridad > Herramientas administrativas > servicios** y asegúrese de que **servicio Web Deployment Agent** se ejecuta (el nombre del servicio es diferente en versiones anteriores).
 

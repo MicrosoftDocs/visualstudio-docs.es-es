@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial 1: Crear un visor de imagen'
+title: 'Tutorial 1: Crear un visor de imágenes'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,13 +11,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b26b70b4887b792bd7a0a16bc3291d4e8fae369
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imagen
+# <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y utilizar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:  
 
 -   Cree un nuevo proyecto.  
@@ -38,6 +38,8 @@ En este tutorial, compilará un programa que carga una imagen de un archivo y la
 
  ![Imagen que creará en este tutorial](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Imagen que creará en este tutorial  
+
+## <a name="tutorial-links"></a>Vínculos del tutorial
 
  Para descargar una versión completa del ejemplo, vea [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8) (Ejemplo completo del tutorial de visor de imágenes).  
 
@@ -60,7 +62,7 @@ Imagen que creará en este tutorial
 |[Paso 4: Diseñar un formulario con un control TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Agregue un control `TableLayoutPanel` al formulario.|  
 |[Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md)|Agregar controles, como un control `PictureBox` y un control `CheckBox`, al formulario. Agregar botones al formulario.|  
 |[Paso 6: Asignar un nombre a los controles de botón](../ide/step-6-name-your-button-controls.md)|Cambiar el nombre de los botones por otros más significativos.|  
-|[Paso 7: Agregar componentes de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md)|Agregar un componente **OpenFileDialog** y un componente **ColorDialog** al formulario.|  
+|[Paso 7: Agregar componentes de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md)|Agregue un componente `OpenFileDialog` y un componente `ColorDialog` al formulario.|  
 |[Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Escribir código mediante la herramienta IntelliSense.|  
 |[Paso 9: Revisar, comentar y probar el código](../ide/step-9-review-comment-and-test-your-code.md)|Revisar y probar el código. Agregar comentarios según sea necesario.|  
 |[Paso 10: Escribir código para botones adicionales y una casilla](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Escribir código para hacer que funcionen otros botones y una casilla mediante IntelliSense.|  

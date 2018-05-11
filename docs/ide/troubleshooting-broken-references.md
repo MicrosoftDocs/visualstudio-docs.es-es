@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9669596eb49330235eca2c35dffe0f2cb1afb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c1879b67558cb57fba7bc462e4c7df03fb5efc8
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Solucionar problemas de referencias rotas
 
@@ -42,11 +42,11 @@ A continuación se ofrecen soluciones a estos problemas.
 
 ## <a name="reference-path-is-incorrect"></a>La ruta de acceso de referencia es incorrecta
 
-Si los proyectos se comparten en equipos diferentes, es posible que no se encuentren algunas referencias cuando un componente se encuentra en un directorio diferente en cada equipo. Las referencias se almacenan con el nombre del archivo de componente (por ejemplo, MyComponent). Cuando se agrega una referencia a un proyecto, la ubicación de la carpeta del archivo de componente (por ejemplo, C:\MyComponents\\) se anexa a la propiedad del proyecto **ReferencePath**.
+Si los proyectos se comparten en equipos diferentes, es posible que no se encuentren algunas referencias cuando un componente se encuentra en un directorio diferente en cada equipo. Las referencias se almacenan con el nombre del archivo de componente (por ejemplo, *MyComponent*). Cuando se agrega una referencia a un proyecto, la ubicación de la carpeta del archivo de componente (por ejemplo, *C:\MyComponents*) se anexa a la propiedad del proyecto **ReferencePath**.
 
-Cuando se abre el proyecto, intenta encontrar estos archivos de componente a los que se hace referencia mediante una búsqueda en los directorios de la ruta de acceso de referencia. Si el proyecto se abre en un equipo que almacena el componente en otro directorio, por ejemplo, D:\MyComponents\\, no se puede encontrar la referencia y aparece un error en la lista de tareas.
+Cuando se abre el proyecto, intenta encontrar estos archivos de componente a los que se hace referencia mediante una búsqueda en los directorios de la ruta de acceso de referencia. Si el proyecto se abre en un equipo que almacena el componente en otro directorio, por ejemplo, *D:\MyComponents*, no se puede encontrar la referencia y aparece un error en la **lista de tareas**.
 
-Para corregir este problema, puede eliminar la referencia rota y después reemplazarla mediante el cuadro de diálogo Agregar referencia. Otra solución es usar el elemento **Reference Path** (Ruta de acceso de referencia) en las páginas de propiedades del proyecto y modificar las carpetas de la lista para que apunten a las ubicaciones correctas. La propiedad **Reference Path** se guarda para cada usuario en cada equipo. Por tanto, si modifica la ruta de acceso de referencia, esto no afecta a otros usuarios del proyecto.
+Para corregir este problema, puede eliminar la referencia rota y después reemplazarla mediante el cuadro de diálogo **Agregar referencia**. Otra solución es usar el elemento **Reference Path** (Ruta de acceso de referencia) en las páginas de propiedades del proyecto y modificar las carpetas de la lista para que apunten a las ubicaciones correctas. La propiedad **Reference Path** se guarda para cada usuario en cada equipo. Por tanto, si modifica la ruta de acceso de referencia, esto no afecta a otros usuarios del proyecto.
 
 > [!TIP]
 > Las referencias entre proyectos no tienen estos problemas. Por este motivo, úselas en lugar de las referencias de archivo, si es posible.

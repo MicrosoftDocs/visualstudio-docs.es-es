@@ -11,18 +11,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55142712972ce5d5fd44e76dbad042daca18edc6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d9541fda2ab0fc558cbc9972ba84fd98c7ae5892
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Crear una prueba matemática cronometrada
 En este tutorial, se compila un juego de prueba matemática en el que el jugador debe responder a cuatro problemas aritméticos aleatorios en un tiempo especificado. Aprenderá a:  
 
--   Generar números aleatorios mediante la clase `Random`.  
+-   Generar números aleatorios mediante la clase <xref:System.Random>.  
 
--   Generar eventos que se producirán en un momento concreto con un control **Timer**.  
+-   Generar eventos que se producirán en un momento concreto con un control <xref:System.Windows.Forms.Timer>.  
 
 -   Controlar el flujo del programa con instrucciones `if else`.  
 
@@ -33,7 +33,9 @@ En este tutorial, se compila un juego de prueba matemática en el que el jugador
  ![Prueba matemática con cuatro problemas](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
 Juego de prueba matemática que creará en este tutorial  
 
- Para descargar una versión completa de la prueba, vea [Ejemplo completo del tutorial de prueba matemática](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+## <a name="tutorial-links"></a>Vínculos del tutorial
+
+ Para descargar una versión completa de la prueba, vea [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c) (Ejemplo completo del tutorial de prueba matemática).  
 
 > [!NOTE]
 >  En este tutorial, se trata tanto Visual C# como Visual Basic, por lo que deberá centrarse en la información específica del lenguaje de programación que use.  

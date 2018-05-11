@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas con fragmentos de código
+title: Solución de problemas con fragmentos de código
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,13 +14,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0151ff22146d745c42204ec66b9f5d35c2c8b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dea93f5c575afc96af188ab2e92e2ee12b929549
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="troubleshooting-snippets"></a>Solucionar problemas con fragmentos de código
+# <a name="troubleshoot-snippets"></a>Solución de problemas con fragmentos de código
 
 Los problemas relacionados con los fragmentos de código de IntelliSense suelen deberse a dos cosas: un archivo de fragmento de código dañado o la presencia de contenido incorrecto en el archivo de fragmento de código.
 

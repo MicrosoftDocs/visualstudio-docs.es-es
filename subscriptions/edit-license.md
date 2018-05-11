@@ -9,20 +9,18 @@ description: Obtenga más información sobre cómo los administradores pueden ed
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9ea5f6bc562ce520be08728facfb6099df95ca4c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Edición de las asignaciones de suscripción de Visual Studio
 
-Como administrador de suscripciones, tiene la capacidad de realizar cambios en las suscripciones asignadas a personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios. 
+Como administrador de suscripciones, puede hacer cambios en las suscripciones asignadas a personas de su organización.  En este artículo se describen los tipos de cambios que puede realizar y se proporcionan los pasos necesarios. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Aplicación de cambios en la información del suscriptor
 Puede editar la información del suscriptor para corregir los errores o actualizarla. 
-> [!NOTE]
-> Si edita la dirección de correo electrónico de un suscriptor, se restablecerán las ventajas existentes.
 
 Para editar un suscriptor, seleccione los puntos suspensivos (...) que aparecen junto a la dirección de correo electrónico del suscriptor al mantener el mouse sobre él. Aparecerá una lista desplegable.  Seleccione **Editar** para modificar los detalles del suscriptor. También puede hacer doble clic en la fila del suscriptor en la cuadrícula para abrir la ventana de edición.
 
