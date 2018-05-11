@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  En el **Agregar recurso** diálogo cuadro, elija una referencia cultural para el archivo de recursos, como el inglés (Estados Unidos).  
   
-     Este paso agrega un archivo de recursos global a la solución en el formato, recursos * x***.*** referencia cultural ***.** resx, por ejemplo, recurso1.en-US.resx.  
+     Este paso agrega un archivo de recursos global a la solución en el formato, recursos * x ***.*** referencia cultural ***.** resx, por ejemplo, recurso1.en-US.resx.  
   
 5.  Cuando el **Editor de recursos** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregar recursos al archivo de recursos.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  En **el Explorador de soluciones**, abra el menú contextual para el nombre de una característica en el **características** nodo y, a continuación, elija **Agregar recurso de características**.  
   
-     Este paso agrega un archivo de recursos a la característica en el formato * NombreArchivoRecursos***.*** referencia cultural ***.** resx, por ejemplo, Característica1.en-US.resx.  
+     Este paso agrega un archivo de recursos a la característica en el formato * NombreArchivoRecursos ***.*** referencia cultural ***.** resx, por ejemplo, Característica1.en-US.resx.  
   
 3.  Cuando el **Editor de recursos** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregar recursos al archivo de recursos.  
   
