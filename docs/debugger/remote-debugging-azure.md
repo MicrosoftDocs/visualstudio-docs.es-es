@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Depuración remota de núcleo de ASP.NET en IIS en Azure en Visual Studio de 2017
 
@@ -110,11 +110,17 @@ Al descargar el software, puede obtener las solicitudes para conceder permiso pa
 
 3. Reiniciar el sistema (o ejecutar **net stop era /y** seguido **del comando net start w3svc** desde un símbolo del sistema para recoger un cambio en la ruta de acceso del sistema).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Opcional) Instale WebDeploy 3.6 para hospedar servidores en Windows Server
+
+En algunos casos, puede ser más rápido para importar configuración de publicación en Visual Studio en lugar de configurar manualmente opciones de implementación. Si prefiere importar configuración en lugar de configurar el perfil de publicación en Visual Studio de publicación, vea [importar configuración de publicación e implementar a IIS](../deployment/tutorial-import-publish-settings-iis.md). En caso contrario, permanezca en este tema y siga leyendo. Si completó el artículo sobre la importación de configuración de publicación e implementar correctamente, la aplicación, a continuación, vuelva a este tema e iniciar en la sección en [descargar las herramientas remotas](#BKMK_msvsmon).
+
 ### <a name="BKMK_install_webdeploy"></a> (Opcional) Instale WebDeploy 3.6 en Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> Configurar el sitio Web de ASP.NET en el equipo de Windows Server
+
+Si va a importar la configuración de publicación, puede omitir esta sección.
 
 1. Abra el **Administrador de Internet Information Services (IIS)** y vaya a **Sitios**.
 

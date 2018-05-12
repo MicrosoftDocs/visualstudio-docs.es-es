@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Crear aplicaciones ClickOnce para que las implementen terceros
 No todos los programadores que crean implementaciones ClickOnce plan implementar las propias aplicaciones. Muchos de ellos simplemente empaquetan su aplicación mediante ClickOnce y, a continuación, entregan los archivos a un cliente, por ejemplo, una gran empresa. El cliente pasa a ser el responsable de alojar la aplicación en su red. Este tema describen algunos de los problemas inherentes a tales implementaciones en las versiones de .NET Framework anteriores a la versión 3.5. A continuación, se describe una nueva solución que se proporciona mediante la nueva característica de "Usar manifiesto de confianza" en .NET Framework 3.5. Por último, concluye con estrategias recomendadas para crear implementaciones de ClickOnce para los clientes que aún utilicen versiones anteriores de .NET Framework.  
@@ -57,7 +57,7 @@ No todos los programadores que crean implementaciones ClickOnce plan implementar
   
  Usar un certificado autofirmado para el manifiesto de implementación presenta varias ventajas. Por lo que elimina la necesidad de que el cliente obtener o crear su propio certificado Authenticode, `<useManifestForTrust>` simplifica la implementación para el cliente, permitiendo al desarrollador mantener su propia identidad de marca en la aplicación. El resultado es un conjunto de implementaciones firmadas que son más seguras y tienen identidades de aplicación exclusivo. Esto elimina el posible conflicto que puede producirse al implementar la misma aplicación para varios clientes.  
   
- Para obtener información detallada sobre cómo crear una implementación de ClickOnce con `<useManifestForTrust>` habilitado, consulte [Tutorial: implementar manualmente una aplicación ClickOnce que Does no requieren nueva firma y esa información de personalización de marca conserva](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Para obtener información detallada sobre cómo crear una implementación de ClickOnce con `<useManifestForTrust>` habilitado, consulte [Tutorial: implementar manualmente una aplicación ClickOnce que Does no requieren nueva firma y esa información de personalización de marca conserva](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Manifiesto de la aplicación de confianza funciona en tiempo de ejecución  
  Para obtener una mejor comprensión de cómo usar el manifiesto de aplicación de confianza funciona en tiempo de ejecución, considere el ejemplo siguiente. Una aplicación ClickOnce que tiene como destino .NET Framework 3.5 es creada por Microsoft. El manifiesto de aplicación usa el `<useManifestForTrust>` elemento y firmados por Microsoft. Adventure Works firma el manifiesto de implementación mediante un certificado autofirmado. Los clientes de Adventure Works están configurados para confiar en cualquier aplicación firmada por Microsoft.  
@@ -99,6 +99,6 @@ No todos los programadores que crean implementaciones ClickOnce plan implementar
  El inconveniente de este método es que requiere el cliente para instalar las herramientas de .NET Framework SDK y para que un desarrollador o administrador del sistema con experiencia en su uso. Algunos clientes pueden exigir una solución que requiera poco o ningún esfuerzo técnico por su parte.  
   
 ## <a name="see-also"></a>Vea también  
- [Implementar aplicaciones ClickOnce para las pruebas y los servidores de producción sin nueva firma](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [Implementar aplicaciones ClickOnce para las pruebas y los servidores de producción sin nueva firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Tutorial: Implementar manualmente una aplicación ClickOnce que no requiera el proceso de volver a firmar y que conserve la información de marca comercial](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Tutorial: Implementar manualmente una aplicación ClickOnce que no requiera el proceso de volver a firmar y que conserve la información de marca comercial](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

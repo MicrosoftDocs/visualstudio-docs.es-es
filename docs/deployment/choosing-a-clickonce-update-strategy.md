@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08025ed5d5e3806e04501c46a96e1df5f85b31fb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Elegir una estrategia de actualización de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proporcionar actualizaciones automáticas de aplicaciones. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación lee periódicamente su archivo de manifiesto de implementación para ver si hay disponibles actualizaciones a la aplicación. En caso afirmativo, la nueva versión de la aplicación se descarga y se ejecuta. Para una mayor eficiencia, se descargan sólo los archivos que han cambiado.  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 >  Las actualizaciones de aplicaciones requieren conectividad de red. Si no hay conexión de red, la aplicación se ejecutará sin comprobar si hay actualizaciones, independientemente de la estrategia de actualización elegida.  
   
 > [!NOTE]
->  En .NET Framework 2.0 y .NET Framework 3.0, cada vez que la aplicación comprueba si hay actualizaciones, antes o después del inicio, o mediante las API de <xref:System.Deployment.Application>, debe establecer `deploymentProvider` en el manifiesto de implementación. El `deploymentProvider` elemento corresponde en Visual Studio para la **Actualizar ubicación** campo el **actualizaciones** cuadro de diálogo de la **publicar** ficha. Esta regla es más flexible en .NET Framework 3.5. Para obtener más información, consulte [implementación ClickOnce aplicaciones para las pruebas y los servidores de producción sin Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+>  En .NET Framework 2.0 y .NET Framework 3.0, cada vez que la aplicación comprueba si hay actualizaciones, antes o después del inicio, o mediante las API de <xref:System.Deployment.Application>, debe establecer `deploymentProvider` en el manifiesto de implementación. El `deploymentProvider` elemento corresponde en Visual Studio para la **Actualizar ubicación** campo el **actualizaciones** cuadro de diálogo de la **publicar** ficha. Esta regla es más flexible en .NET Framework 3.5. Para obtener más información, consulte [implementación ClickOnce aplicaciones para las pruebas y los servidores de producción sin Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Comprobar si hay actualizaciones después del inicio de la aplicación  
  Con esta estrategia, la aplicación intentará buscar y leer en segundo plano el archivo de manifiesto de implementación mientras la aplicación se está ejecutando. Si hay una actualización disponible, la próxima vez que el usuario ejecute la aplicación, se le pedirá que descargue e instale la actualización.  
