@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: adf65277f4ec7566464f737bf8b4ab5913043bcc
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # Ayuda de F1
 
@@ -37,4 +37,4 @@ Si está buscando ayuda de F1 sobre una palabra clave o el nombre de una API, co
 
 ## Contribuya a mejorar la Ayuda (F1)
 
-Ayúdenos a mejorar la experiencia de la Ayuda (F1) dejándonos comentarios sobre lo que buscaba cuando presionó **F1**. Por ejemplo, ¿en qué símbolo o ventana estaba el cursor? Use el botón para **dejar comentarios sobre documentación** de abajo. ¡Gracias!
+Ayúdenos a mejorar la experiencia de Ayuda de F1. Registrar un problema de ayuda del producto, haciendo clic en el botón **Give product feedback (Proporcionar comentarios sobre el producto)** a continuación. Incluya sobre qué estaba buscando ayuda cuando presionó **F1**, por ejemplo, en qué símbolo o ventana estaba el cursor. ¡Gracias!

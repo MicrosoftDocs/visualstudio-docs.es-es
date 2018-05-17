@@ -9,11 +9,11 @@ description: Vea cómo activar la ventaja de soporte técnico que se incluye con
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación de la ventaja de soporte técnico en suscripciones de Visual Studio
 
@@ -75,6 +75,20 @@ Para usar la ventaja de soporte técnico de la suscripción de Visual Studio en 
 3.  En "Soporte técnico", haga clic en "Vincular el contrato de soporte técnico"
 4.  Escriba el "identificador de acceso" y el "identificador de contacto" que se proporcionaron en el paso 1 anterior.
 Una vez que complete estos pasos, podrá seleccionar el plan de soporte técnico asociado con la ventaja de la suscripción de Visual Studio.  (Es posible que el nombre del plan incluya "MSDN").
+
+## <a name="eligibility"></a>Elegibilidad
+| Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Cuatro incidentes       |  Sí|
+| Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa, no para reventa<sup>2</sup>                                        | Dos incidentes                                                          |Sí         |
+| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Dos incidentes                                             |  Sí         |
+| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Dos incidentes                                               | Sí         |
+| Visual Studio Dev Essentials | NA  | No disponible |NA|
+| Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
+
+<sup>1</sup>  *Incluye:  Imagine Premium. Excluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine Standard, Microsoft Valued Partner (MVP), Region Director (RD) y MCT Software & Services.*
+
+<sup>2</sup>  *Incluye:  Imagine Standard.*
 
  
 

@@ -1,7 +1,7 @@
 ---
 title: Novedades de Visual Studio 2017
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a523933dbc18d6fdc107415c6f7faefa9fc5135
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ae8a0424f822b4b84aed01badc5bc625aacdde8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
-#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Actualizado para la [versión 15.6](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+#### <a name="updated-for-the-157-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Actualizado para la [versión 15.7](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 ¿Quiere actualizar desde una versión anterior de Visual Studio? Visual Studio 2017 puede ofrecerle: productividad incomparable para cualquier desarrollador, aplicación y plataforma. Use Visual Studio 2017 para desarrollar aplicaciones para Android, iOS, Windows, Linux, la Web y la nube. Escriba código con rapidez, depure y emita diagnósticos con facilidad, ejecute pruebas con frecuencia y publique con confianza. También puede ampliar y personalizar Visual Studio si crea sus propias extensiones. Use el control de versiones, actúe con agilidad y colabore de manera eficiente con esta versión.
 
 Este es un resumen general de los cambios que hemos realizado desde la versión anterior, Visual Studio 2015:
@@ -55,7 +55,11 @@ Seleccione las cargas de trabajo que requiere y cámbielas cuando sea necesario.
 
  ![Cuadro de diálogo de instalación de Visual Studio 2017](../install/media/install-visual-studio-enterprise.png "Pantalla del programa de instalación de Visual Studio de 2017")
 
-¿Quiere seleccionar sus propios componentes en lugar de usar cargas de trabajo? Seleccione la pestaña **Componentes individuales** del instalador. ¿Quiere instalar paquetes de idioma sin tener que cambiar la opción de idioma de Windows? Pulse la pestaña **Paquetes de idioma** del instalador.  
+También tiene diferentes opciones para configurar la instalación:
+
+* ¿Quiere seleccionar sus propios componentes en lugar de usar cargas de trabajo? Seleccione la pestaña **Componentes individuales** del instalador.
+* ¿Quiere instalar paquetes de idioma sin tener que cambiar la opción de idioma de Windows? Pulse la pestaña **Paquetes de idioma** del instalador.
+* **Novedad en 15.7**: ¿Quiere cambiar la ubicación de instalación de Visual Studio? Elija la pestaña **Opciones de instalación** del instalador.
 
 Para más información sobre la nueva experiencia de instalación, incluidas instrucciones paso a paso para guiarle, consulte la página [Instalación de Visual Studio](../install/install-visual-studio.md).
 
@@ -74,14 +78,14 @@ También puede permanecer más tiempo con la sesión abierta. Visual Studio no l
 El nuevo Centro de rendimiento de Visual Studio puede ayudarle a optimizar el tiempo necesario para iniciar el IDE. El Centro de rendimiento muestra todas las extensiones y ventanas de herramientas que pueden estar ralentizando el inicio del IDE. Puede usarlo para mejorar el rendimiento de inicio determinando cuándo se inician las extensiones o si las ventanas de herramientas están abiertas en el inicio.
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Carga de extensiones a petición más rápida
-Visual Studio moverá sus extensiones (y también trabajará con extensiones de terceros) para que se carguen bajo demanda, en lugar de en el momento de inicio del IDE. ¿Tiene curiosidad por saber qué extensiones afectan al inicio, la carga de la solución y el rendimiento de escritura? Puede ver esta información en Ayuda -> Administrar el rendimiento de Visual Studio.
+Visual Studio moverá sus extensiones (y también trabajará con extensiones de terceros) para que se carguen bajo demanda, en lugar de en el momento de inicio del IDE. ¿Tiene curiosidad por saber qué extensiones afectan al inicio, la carga de la solución y el rendimiento de escritura? Puede ver esta información en **Ayuda** > **Administrar el rendimiento de Visual Studio**.
 
   ![Cuadro de diálogo Opciones en Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png "Cuadro de diálogo Ayuda de Visual Studio- Administración del rendimiento")
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Administrar las extensiones con Roaming Extension Manager
 Ahora es más sencillo configurar cada entorno de desarrollo con sus extensiones favoritas cuando inicie sesión en Visual Studio. El nuevo Roaming Extension Manager mantiene el seguimiento de todas sus extensiones favoritas mediante la creación de una lista sincronizada en la nube.  
 
-Para ver una lista de las extensiones de Visual Studio, haga clic en Herramientas > Extensiones y actualizaciones y, después, haga clic en Roaming Extension Manager.
+Para ver una lista de las extensiones de Visual Studio, haga clic en **Herramientas** > **Extensiones y actualizaciones** y, después, haga clic en **Roaming Extension Manager**.
 
 ![Visual Studio 2017 - Cuadro de diálogo Extensiones y actualizaciones](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - Herramientas > Cuadro de diálogo Extensiones y actualizaciones")
 
@@ -106,13 +110,13 @@ En Visual Studio Enterprise de 2017, Live Unit Testing le ofrece los resultados 
 
 Para más información, vea [Introducción Live Unit Testing](../test/live-unit-testing-intro.md) (Presentación de Live Unit Testing). Para obtener una lista de las nuevas características agregadas en cada versión de Visual Studio Enterprise 2017, vea [Novedades de Live Unit Testing](../test/live-unit-testing-whats-new.md).
 
-#### <a name="setting-up-a-cicd-pipeline"></a>Configuración de una canalización de CI/CD
+#### <a name="set-up-a-cicd-pipeline"></a>Configurar una canalización de CI/CD
 #### <a name="automated-testing"></a>Pruebas automatizadas
 Las pruebas automatizadas son una parte fundamental de cualquier canalización de DevOps. Le permiten probar y presentar su solución de manera coherente y confiable en ciclos mucho más cortos. Los flujos de CI/CD (integración continua y entrega continua) pueden ayudarle a hacer que el proceso sea más eficaz.
 
 Para más información sobre las pruebas automatizadas, vea la publicación del blog [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Canalización de CI/CD para pruebas automatizadas en DevOps).
 
-Para más información sobre las novedades de la extensión de DevLabs de [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) (Herramientas de entrega continua para Visual Studio), vea la entrada de blog [Committing with Confidence: Commit Time Code Quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (Confirmar con confianza: calidad del código de tiempo de confirmación).
+Para más información sobre las novedades de la extensión de DevLabs de [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) (Herramientas de entrega continua para Visual Studio), vea la entrada de blog [Commit with Confidence: Commit Time Code Quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) (Confirmar con confianza: calidad del código de tiempo de confirmación).
 
 ### <a name="visual-studio-ide-enhancements"></a>Mejoras del IDE de Visual Studio
 #### <a name="use-new-refactorings"></a>Uso de nuevas refactorizaciones
@@ -137,15 +141,15 @@ Cuando se trabaja con un proyecto en Visual Studio, puede configurar y rápidame
 #### <a name="experience-improved-navigation-controls"></a>Experiencia de controles de navegación mejorada
 Se ha actualizado la experiencia de navegación para ayudarle a llegar de A a B con mayor confianza y menos distracciones.
 
-* **Novedad en 15.4**: **Ir a definición (Ctrl+clic o F12)** &ndash; Los usuarios del mouse tienen una manera más fácil de navegar a la definición de un miembro: presionar **Ctrl** y, después, hacer clic en el miembro. Al presionar **Ctrl** y mantener el puntero sobre un símbolo de código lo subrayará y lo convertirá en un vínculo. Vea [Go To Definition and Peek Definition](../ide/go-to-and-peek-definition.md) (Ir a definición y Ver la definición) para más información.  
+* **Novedad en 15.4**: **Ir a definición** (**CTRL**+**clic** o **F12**) &ndash; Los usuarios del mouse tienen una manera más fácil de navegar a la definición de un miembro: presionar **CTRL** y, después, hacer clic en el miembro. Al presionar **Ctrl** y mantener el puntero sobre un símbolo de código lo subrayará y lo convertirá en un vínculo. Vea [Go To Definition and Peek Definition](../ide/go-to-and-peek-definition.md) (Ir a definición y Ver la definición) para más información.  
 
-* **Ir a implementación (Ctrl+F12)** &ndash; Navegue desde cualquier tipo base o miembro a sus diversas implementaciones.
+* **Ir a implementación** (**CTRL**+**F12**) &ndash; Navegue desde cualquier tipo base o miembro a sus diversas implementaciones.
 
-* **Ir a todo (Ctrl+T o Ctrl+,)** &ndash; Navegue directamente a cualquier declaración de archivo/tipo/miembro/símbolo. Puede filtrar la lista de resultados o usar la sintaxis de consulta (por ejemplo, "f searchTerm" para los archivos, "t searchTerm" para los tipos, etc.).
+* **Ir a todo** (**CTRL**+**T** o **CTRL**+**,**) &ndash; Navegue directamente a cualquier declaración de archivo/tipo/miembro/símbolo. Puede filtrar la lista de resultados o usar la sintaxis de consulta (por ejemplo, "f searchTerm" para los archivos, "t searchTerm" para los tipos, etc.).
 
  ![Ir a todo mejorado](../ide/media/vs2017ide-navigation-go-to.png "Ejemplo de la función mejorada de Ir a todo")
 
-* **Buscar todas las referencias (Mayús+F12)** &ndash; Con la coloración de sintaxis, puede agrupar los resultados de Buscar todas las referencias mediante una combinación de proyecto, definición y ruta de acceso. También puede "bloquear" resultados para seguir encontrando otras referencias sin perder los resultados originales.
+* **Buscar todas las referencias** (**Mayús**+**F12**) &ndash; Con la coloración de sintaxis, puede agrupar los resultados de Buscar todas las referencias mediante una combinación de proyecto, definición y ruta de acceso. También puede "bloquear" resultados para seguir encontrando otras referencias sin perder los resultados originales.
 
  ![Nueva herramienta Buscar todas las referencias](../ide/media/vs2017ide-find-all-references.png "Ejemplo de la nueva herramienta Buscar todas las referencias")
 
@@ -173,12 +177,12 @@ La nueva aplicación auxiliar de excepciones le ayuda a ver la información de e
 
 ![Cuadro de diálogo de la nueva aplicación auxiliar de excepciones en Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png "Cuadro de diálogo de la nueva aplicación auxiliar de excepciones")
 
-Para obtener más información, vea la publicación del blog [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar la nueva aplicación auxiliar de excepciones en Visual Studio).
+Para obtener más información, vea la publicación del blog [Use the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Usar la nueva aplicación auxiliar de excepciones en Visual Studio).
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Instantáneas y step-back de IntelliTrace:
 **Novedad de la versión 15.5**: la característica step-back de IntelliTrace toma automáticamente una instantánea de la aplicación en cada punto de interrupción y evento de paso del depurador. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
-Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de depuración. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
+Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de **depuración**. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**. Retroceder o avanzar paso a paso a un evento activa de manera automática la depuración histórica del evento seleccionado.
 
 ![Cuadro de diálogo Nueva aplicación auxiliar de excepciones en Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botones Retroceder paso a paso y Avanzar paso a paso")
 
@@ -233,12 +237,12 @@ Como parte de la carga de trabajo de "Desarrollo móvil con .NET", los desarroll
 Para obtener más información, vea la página [Visual Studio y Xamarin](../cross-platform/visual-studio-and-xamarin.md).
 
 ### <a name="entitlements-editor"></a>Editor de derechos
-**Novedades de la versión 15.3**: Para sus necesidades de desarrollo de iOS, hemos agregado un editor de derechos independiente. Incluye una interfaz de usuario fácil de usar que puede examinarse fácilmente. Para iniciarlo, haga doble clic en el archivo entitlements.plist.
+**Novedades de la versión 15.3**: Para sus necesidades de desarrollo de iOS, hemos agregado un editor de derechos independiente. Incluye una interfaz de usuario fácil de usar que puede examinarse fácilmente. Para iniciarlo, haga doble clic en el archivo *entitlements.plist*.
 
 ![Editor de derechos para Xamarin](../ide/media/xamarin-entitlements-editor.png "Editor de derechos para Xamarin")
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools para Xamarin
-**Novedad de la versión 15.4**: Xamarin Live permite a los desarrolladores implementar, probar y depurar constantemente sus aplicaciones directamente en dispositivos iOS y Android. Después de descargar Xamarin Live Player&mdash;que se encuentra disponible en App Store o en Google Play&mdash; puede sincronizar su dispositivo con Visual Studio y revolucionar la forma de compilar aplicaciones móviles. Esta funcionalidad ya está incluida en Visual Studio y se puede habilitar en Herramientas > Opciones > Xamarin > Otros > Habilitar Xamarin Live Player.
+**Novedad de la versión 15.4**: Xamarin Live permite a los desarrolladores implementar, probar y depurar constantemente sus aplicaciones directamente en dispositivos iOS y Android. Después de descargar Xamarin Live Player&mdash;que se encuentra disponible en App Store o en Google Play&mdash; puede sincronizar su dispositivo con Visual Studio y revolucionar la forma de compilar aplicaciones móviles. Esta funcionalidad ya está incluida en Visual Studio y puede habilitarse en **Herramientas** > **Opciones** > **Xamarin** > **Otros** > **Habilitar Xamarin Live Player**.
 
 ![Animación del modo de edición en vivo, implementación y par de Xamarin Live Player](../ide/media/xamarinliveplayer.gif)
 
@@ -288,7 +292,7 @@ Para obtener más información, vea la página [Visual Studio Tools para Unity](
 Para más información, consulte la página [Visual Studio Tools para IA](../ai/about-ai-tools.md).
 
 
-## <a name="talk-to-us"></a>Hable con nosotros  
+## <a name="contact-us"></a>Póngase en contacto con nosotros  
  ¿Por qué enviar comentarios al equipo de Visual Studio? Porque tomamos los comentarios de los clientes muy en serio. Estos impulsan muchas de nuestras acciones.  
 
 Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio o notificar un problema, vea la página [Hable con nosotros](../ide/talk-to-us.md).  
@@ -297,11 +301,11 @@ Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio o notif
  A veces, un mensaje no es suficiente para transmitir el impacto completo de un problema que ha detectado. Si experimenta un bloqueo u otro problema de rendimiento, puede compartir fácilmente los pasos de reproducción y los archivos auxiliares (como capturas de pantalla y archivos de seguimiento y volcado del montón) con nosotros mediante la herramienta **Notificar un problema**. Para obtener más información sobre cómo usar esta herramienta, vea la página [Cómo notificar un problema](how-to-report-a-problem-with-visual-studio-2017.md).  
 
 ### <a name="track-your-issue-in-connect"></a>Realice un seguimiento de su problema en Connect  
- Si quiere realizar un seguimiento del estado de su comentario sobre Visual Studio, vaya a [Connect](http://connect.microsoft.com/) y notifique el error allí. Después de notificarlo, puede volver a Connect para realizar un seguimiento de su estado.  
+ Si quiere realizar un seguimiento del estado de su comentario sobre Visual Studio, vaya a [Connect](http://connect.microsoft.com/) y notifique el error allí. Después de notificarlo, puede volver a **Connect** para realizar un seguimiento de su estado.  
 
 ## <a name="see-also"></a>Vea también
 * [Notas de la versión de Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
-* [What's New in Visual C++ (Novedades de Visual C++)](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [What's New in C# (Novedades de C#)](/dotnet/csharp/whats-new)  
-* [What's New for Team Foundation Server (Novedades de Team Foundation Server)](https://www.visualstudio.com/docs/whats-new)
+* [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [Novedades de C#](/dotnet/csharp/whats-new)  
+* [Novedades de Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Novedades de Visual Studio para Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

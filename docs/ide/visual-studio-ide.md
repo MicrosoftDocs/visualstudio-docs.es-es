@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Introducción al IDE de Visual Studio
 
@@ -93,7 +93,7 @@ Cuando se inicia Visual Studio por primera vez, puede iniciar sesión opcionalme
 
 ¡Una buena manera de aprender algo es usarlo! Vamos a profundizar y crear un nuevo y sencillo programa.
 
-1. Abra Visual Studio. En el menú, elija **Archivo** > **Nuevo** > **Proyecto...**
+1. Abra Visual Studio. En el menú, elija **Archivo** > **Nuevo** > **Proyecto**.
 
   ![Archivo > Nuevo proyecto en la barra de menús](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -181,7 +181,7 @@ Para ofrecerle una amplia información gráfica de Visual Studio, la siguiente i
 
 Aquí se muestran algunas otras características de productividad comunes en Visual Studio:
 
-- El cuadro de búsqueda [Inicio rápido](../ide/reference/quick-launch-environment-options-dialog-box.md) supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Simplemente empiece a escribir el nombre de lo que esté buscando y Visual Studio le mostrará resultados que le llevarán exactamente a donde quiere ir. El inicio rápido muestra también vínculos que inician el Instalador de Visual Studio para cualquier componente individual o carga de trabajo.
+- El cuadro de búsqueda [Inicio rápido](../ide/reference/quick-launch-environment-options-dialog-box.md) supone una excelente manera de encontrar rápidamente lo que necesita en Visual Studio. Simplemente empiece a escribir el nombre de lo que esté buscando y Visual Studio le mostrará resultados que le llevarán exactamente a donde quiere ir. El **inicio rápido** muestra también vínculos que inician el Instalador de Visual Studio para cualquier componente individual o carga de trabajo.
 
   ![Cuadro de búsqueda de inicio rápido](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -221,9 +221,9 @@ Visual Studio Team Services es un servicio en la nube para hospedar proyectos de
 
 Team Foundation Server (TFS) es el centro de administración del ciclo de vida de aplicación de Visual Studio. Permite a todas las partes interesadas en el proceso de desarrollo participar con una única solución. TFS es útil para administrar equipos heterogéneos y también proyectos.
 
-Si tiene una cuenta de Visual Studio Team Services o Team Foundation Server en la red, conéctese a ella en la ventana de Team Explorer en Visual Studio. Desde esta ventana puede proteger o desproteger código en el control de código fuente, administrar elementos de trabajo, iniciar compilaciones y acceder a los salones y las áreas de trabajo del equipo. Puede abrir Team Explorer desde el cuadro **Inicio rápido** o, en el menú principal, en **Ver, Team Explorer** o desde **Equipo, Administrar conexiones**.
+Si tiene una cuenta de Visual Studio Team Services o Team Foundation Server en la red, conéctese a ella en la ventana de **Team Explorer** en Visual Studio. Desde esta ventana puede proteger o desproteger código en el control de código fuente, administrar elementos de trabajo, iniciar compilaciones y acceder a los salones y las áreas de trabajo del equipo. Puede abrir **Team Explorer** desde el cuadro **Inicio rápido** o, en el menú principal, en **Ver** > **Team Explorer** o desde **Equipo** > **Administrar conexiones**.
 
-En la siguiente imagen se muestra la ventana Team Explorer de una solución hospedada en VSTS.
+En la siguiente imagen se muestra la ventana **Team Explorer** de una solución hospedada en VSTS.
 
 ![Team Explorer de Visual Studio](../ide/media/vs2017_teamexplorer.png)
 
@@ -235,13 +235,13 @@ La nube es fundamental para el mundo en línea de hoy, y Visual Studio le propor
 
 ![Servicios conectados](../ide/media/VSIDE_Tour_Connected_Services.png)
 
-Al seleccionar un servicio en la página **Servicios conectados** se inicia el asistente de Servicios conectados que configura el proyecto y descarga los paquetes de NuGet necesarios para ayudarle a comenzar la codificación en el servicio.
+Al seleccionar un servicio en la página **Servicios conectados** se inicia el asistente de **Servicios conectados** que configura el proyecto y descarga los paquetes de NuGet necesarios para ayudarle a comenzar la codificación en el servicio.
 
-Puede ver y administrar los recursos de nube basados en Azure en Visual Studio mediante [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer muestra los recursos de Azure en todas las cuentas administradas en la suscripción de Azure en la que ha iniciado sesión. Para obtener Cloud Explorer, seleccione la carga de trabajo de **desarrollo de Azure** en el Instalador de Visual Studio.
+Puede ver y administrar los recursos de nube basados en Azure en Visual Studio mediante [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Cloud Explorer muestra los recursos de Azure en todas las cuentas administradas en la suscripción de Azure en la que ha iniciado sesión. Para obtener **Cloud Explorer**, seleccione la carga de trabajo de **desarrollo de Azure** en el Instalador de Visual Studio.
 
 ![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
-El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Office 365 y sitios web. Para abrir el Explorador de servidores, en el menú principal, elija **Ver** > **Explorador de servidores**. Consulte [Add new connections](../data-tools/add-new-connections.md) (Agregar nuevas conexiones) para obtener más información acerca de cómo utilizar el Explorador de servidores.
+El **Explorador de servidores** sirve para explorar y administrar activos e instancias de SQL Server de forma local y remota, así como en Azure, Salesforce.com, Office 365 y sitios web. Para abrir el **Explorador de servidores**, en el menú principal, elija **Ver** > **Explorador de servidores**. Consulte [Add new connections](../data-tools/add-new-connections.md) (Agregar nuevas conexiones) para obtener más información acerca de cómo utilizar el Explorador de servidores.
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) es un eficaz entorno de desarrollo para SQL Server, Azure SQL Database y Azure SQL Data Warehouse. Le permite compilar, depurar, mantener y refactorizar bases de datos. Puede trabajar con un proyecto de base de datos o directamente con una instancia de base de datos conectada de manera local o externa.
 

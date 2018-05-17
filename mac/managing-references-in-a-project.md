@@ -1,15 +1,15 @@
 ---
-title: "Administración de referencias en un proyecto en Visual Studio para Mac | Microsoft Docs"
+title: Administrar referencias en un proyecto
+description: En este artículo se explica cómo administrar las referencias en un proyecto en Visual Studio para Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
-ms.topic: article
+ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 99f3ba9e5192bc17df23a93c9cad7e953797e9b4
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: a26c8f4f6a21454610e6bbd9b4bb8a3f48a2a778
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 

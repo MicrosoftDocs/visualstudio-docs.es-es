@@ -1,25 +1,22 @@
 ---
-title: Registro de cambios (Visual Studio Tools para Unity) | Microsoft Docs
+title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/23/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 6670f346f4834807296f6385bf23e573400f96a3
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/11/2018
 ---
-# <a name="change-log-visual-studio-tools-for-unity"></a>Registro de cambios (Visual Studio Tools para Unity)
+# <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 Registro de cambios de Visual Studio Tools para Unity.
 
 ## <a name="3605"></a>3.6.0.5
@@ -87,7 +84,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Integración:**
 
     -   Vuelva a cargar solo proyectos en los cambios externos (con limitación).
- 
+
 ## <a name="3601"></a>3.6.0.1
  Lanzamiento 24-01-2018
 
@@ -96,9 +93,9 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Integración:**
 
     -   Se corrigió la conversión del símbolo de depuración de pdb automático a mdb.
-    
+
     -   Se ha corregido la llamada indirecta a EditorPrefs.GetBool que afecta al inspector al tratar de cambiar el tamaño de la matriz.
- 
+
 ## <a name="3600"></a>3.6.0.0
  Lanzamiento 10-01-2018
 
@@ -115,7 +112,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Depurador:**
 
     -   Se ha agregado compatibilidad para los atributos DebuggerHidden/DebuggerStepThrough con el nuevo tiempo de ejecución de Unity.
-    
+
 -   **Asistentes:**
 
     -   Introduzca la versión "Latest" para los asistentes.
@@ -129,7 +126,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 -   **Depurador:**
 
     -   Se ha corregido una carrera en el control de eventos importantes.
-    
+
 -   **Asistentes:**
 
     -   Actualice el contexto de Roslyn antes de insertar el método.

@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a95841d9b9b8e67f34883efcc1a55a2daba7e8b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4119abf74281e3c0dbb2b3d5f3ef472a0527a08f
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="import-and-export-settings-command"></a>comando para importar y exportar configuraciones
 Importa, exporta o restablece la configuración de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Sintaxis
 
-```
+```cmd
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
@@ -51,7 +51,7 @@ Al ejecutar este comando sin modificadores se abre el Asistente **Importar y exp
 
 El comando siguiente exporta la configuración actual al archivo `MyFile.vssettings`.
 
-```shell
+```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 

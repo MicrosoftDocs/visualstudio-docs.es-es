@@ -1,14 +1,15 @@
 ---
 title: Comentarios
+description: En este artículo se describe la utilización de comentarios en el editor de código fuente de Visual Studio para Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 0d49896a3c265dfdc5a25c46e80de498adfffb07
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 4a7dfd0daaddad9f91d461689a0174469dd253c2
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="comments"></a>Comentarios
 

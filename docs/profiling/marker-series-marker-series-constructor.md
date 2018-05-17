@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9b1e33d845dd07306d9a6b59bfb57fd9cc2acc3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 22107cb7ecaf7c5f232b4377fc681a11720d1068
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series (Constructor)
 Inicializa una nueva instancia de la clase `marker_series`.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 marker_series();  
 marker_series(  
    _In_ LPCTSTR _SeriesName  

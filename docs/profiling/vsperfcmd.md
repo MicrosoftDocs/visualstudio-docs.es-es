@@ -1,13 +1,9 @@
 ---
 title: VSPerfCmd | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, VSPerfCmd tool
 - command-line tools, VSPerfCmd tool
@@ -15,22 +11,21 @@ helpviewer_keywords:
 - profiling tools,VSPerfCmd
 - VSPerfCmd tool
 ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af5636866e2d91cc5aac5c8054a92961aeb3d042
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 La herramienta **VSPerfCmd.exe** se usa para iniciar y detener la recopilación de datos de rendimiento. Utiliza la siguiente sintaxis:  
   
-```  
+```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   

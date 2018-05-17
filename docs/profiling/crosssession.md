@@ -1,23 +1,20 @@
 ---
 title: CrossSession | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 079e0ec1b2bad2ca01a698c474c37de6d5d7dfd6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d0f9ef3577f1285f428415de6b5b452d2a4cd7b6
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="crosssession"></a>CrossSession
 La opción **CrossSession** de VSPerfCmd.exe permite que el generador de perfiles recopile datos de cualquier sesión de consola. La opción **CrossSession** debe usarse con la opción **Start**.  
@@ -26,7 +23,7 @@ La opción **CrossSession** de VSPerfCmd.exe permite que el generador de perfile
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /CrossSession [Options]  
 ```  
   
@@ -48,7 +45,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ## <a name="example"></a>Ejemplo  
  En este ejemplo, se usa la opción **CrossSession** para adjuntar a una aplicación que se ha iniciado en otra sesión de consola.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession  
 VSPerfCmd.exe /Attach:12345 /CS  
 ```  

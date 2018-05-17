@@ -21,8 +21,8 @@ helpviewer_keywords:
 - errors, class diagrams
 - errors, Class Designer
 - error messages, Class Designer
-- Class Designer [Visual Studio], errors
 - error messages, class diagrams
+- Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: gewarren
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0af8686af556ca24cdbc9e0a51206f4f0728206
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 014497d0b32df61412820468a8f3f7e0b177c14f
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="additional-information-about-class-designer-errors"></a>Información adicional sobre los errores del Diseñador de clases
+# <a name="class-designer-errors"></a>Errores del Diseñador de clases
 
-El **Diseñador de clases** no hace un seguimiento de la ubicación de los archivos de origen, por lo que modificar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el **Diseñador de clases** pierda de vista el tipo (sobre todo el tipo de origen de una definición de tipo, de clases base o de tipos de asociación). Puede que obtenga un error, como **El Diseñador de clases no puede mostrar este tipo**. Si lo recibe, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para volver a mostrarlo.
+El **Diseñador de clases** no hace un seguimiento de la ubicación de los archivos de origen, por lo que modificar la estructura del proyecto o mover los archivos de origen del proyecto puede hacer que el **Diseñador de clases** pierda de vista el tipo. Por ejemplo, es habitual modificar el tipo de origen de una definición de tipo, de clases base y de tipos de asociación. Puede que obtenga un error, como **El Diseñador de clases no puede mostrar este tipo**. Para resolver el error, arrastre otra vez el código fuente modificado o reubicado al diagrama de clases para mostrarlo.
 
 ## <a name="resources"></a>Recursos
 

@@ -1,7 +1,7 @@
 ---
 title: Edición de código de Python
 description: La edición de Python en Visual Studio proporciona IntelliSense, fragmentos de código y características de navegación, además de formato, linting y refactorización.
-ms.date: 03/05/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="editing-python-code"></a>Edición de código de Python
 
@@ -33,7 +33,7 @@ También puede usar el Examinador de objetos de Visual Studio (**Ver > Otras ven
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring).
+IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Visual Studio 2017, versión 15.7 y posteriores también admite [sugerencias de tipo](#type-hints).
 
 Para mejorar el rendimiento, IntelliSense en **Visual Studio 2017, versión 15.5** y anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del Explorador de soluciones) en la pestaña **IntelliSense** (consulte [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
@@ -77,6 +77,46 @@ Al escribir @ se inicia un decorador y se muestran todos los posibles decoradore
 
 > [!Tip]
 > Puede configurar el comportamiento de estas finalizaciones en **Herramientas > Opciones > Editor de texto > Python > Opciones avanzadas**. De estas opciones, **Filter list based on search string** (Filtrar lista en función de la cadena de búsqueda) aplica el filtrado de sugerencias de finalización mientras se escribe (activo de manera predeterminada) y **Member completion displays intersection of members** (La finalización de miembros muestra la intersección de miembros) muestra solo las finalizaciones que son compatibles con todos los posibles tipos (desactivado de manera predeterminada). Vea [Opciones: resultados de finalización](python-support-options-and-settings-in-visual-studio.md#completion-results).
+
+### <a name="type-hints"></a>Sugerencias de escritura
+
+*Visual Studio 2017, versión 15.7 y posteriores*
+
+"Sugerencias de escritura" en Python 3.5 + ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) es una sintaxis de anotación de funciones y clases que indica los tipos de argumentos, valores devueltos y atributos de clase. IntelliSense muestra sugerencias de tipo cuando mantiene el mouse sobre las llamadas a funciones, argumentos y variables que tengan dichas anotaciones.
+
+En el ejemplo siguiente, la clase `Vector` se declara como `List[float]`, y la función `scale` contiene sugerencias de tipo para sus argumentos y el valor devuelto. Al mantener el mouse sobre una llamada a esa función se muestran las sugerencias de tipo:
+
+![Mantener el mouse sobre una llamada de función para mostrar sugerencias de tipo](media/code-editing-type-hints1.png)
+
+En el ejemplo siguiente puede ver cómo los atributos anotados de la clase `Employee` aparecen en la ventana emergente de finalización de IntelliSense para un atributo:
+
+![Finalización de IntelliSense que muestra sugerencias de tipo](media/code-editing-type-hints2.png)
+
+También es útil validar las sugerencias de tipo en todo el proyecto, porque los errores normalmente no aparecerán hasta el tiempo de ejecución. Para ello, Visual Studio integra la herramienta estándar del sector MyPy mediante el comando de menú contextual **Python > Ejecutar MyPy** en el **Explorador de soluciones**:
+
+![Ejecute el comando de menú contextual de MyPy en el Explorador de soluciones](media/code-editing-type-hints-run-mypy.png)
+
+Al ejecutar el comando se le solicita que instale el paquete MyPy, si es necesario. Después, Visual Studio ejecuta MyPy para validar las sugerencias de tipo de cada archivo de Python en el proyecto. Los errores se muestran en la ventana **Lista de errores** de Visual Studio. Al seleccionar un elemento en la ventana se desplaza a la línea adecuada del código.
+
+Como ejemplo sencillo, la siguiente definición de función contiene una sugerencia de tipo para indicar que el argumento `input` es de tipo `str`, mientras que la llamada a esa función intenta pasar un entero:
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+Al usar el comando **Ejecutar MyPy** en este código se genera el siguiente error:
+
+![Resultado de ejemplo donde MyPy valida las sugerencias de tipo](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> Las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* (`.pyi`). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, consulte [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
+>
+> Actualmente Visual Studio no admite sugerencias de tipo en los comentarios.
 
 ### <a name="signature-help"></a>Ayuda para la firma
 

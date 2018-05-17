@@ -17,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Cómo: Visualizar una asociación de colecciones (Diseñador de clases)
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Cómo: Visualizar una asociación de colecciones en el Diseñador de clases
 
 Las propiedades y campos que son colecciones de otros tipos se pueden mostrar en el diagrama de clase como una asociación de colecciones. A diferencia de una asociación normal, que muestra un campo o propiedad como una línea que vincula la clase propietaria con el tipo de campo, una asociación de colecciones se muestra como una línea que vincula la clase propietaria con el tipo recopilado.
 
@@ -35,7 +35,7 @@ Las propiedades y campos que son colecciones de otros tipos se pueden mostrar en
 
 3.  En la clase, haga clic en el campo o la propiedad y elija **Mostrar como asociación de colecciones**.
 
-     La propiedad o el campo se muestra como una línea de asociación que se vincula al tipo recopilado.
+La propiedad o el campo se muestra como una línea de asociación que se vincula al tipo recopilado.
 
 ## <a name="see-also"></a>Vea también
 

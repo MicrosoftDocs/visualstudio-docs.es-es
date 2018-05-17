@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0246f448ba51ab63cd10d2026d0aa2e2cdbb7bb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b68565e7c5f3a0b7f4aff09ccc3b3223d562d822
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="span-class"></a>span (Clase)
 Define una fase de la aplicación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 class span;  
 ```  
   

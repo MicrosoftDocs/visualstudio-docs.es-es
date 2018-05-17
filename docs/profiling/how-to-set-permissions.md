@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f3cf4ca3cb79a6b58d4f3549d05d355764148f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8c5b6e7878e4000b8263cc772d59ee197f0b62e
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-set-permissions"></a>Cómo: Establecer permisos
 
@@ -58,7 +58,7 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
      La ruta de acceso de esta carpeta puede ser similar a la siguiente:
 
-    ```
+    ```cmd
     D:\ourProject
     ```
 
@@ -82,13 +82,13 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 2. Cambie el directorio a:
 
-    ```
+    ```cmd
     <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools
     ```
 
 3. Ejecute el siguiente comando:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,start /admin:service,start
     ```
 
@@ -100,7 +100,7 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 4. Ejecute el comando para permitir el acceso a la funcionalidad del controlador de generación de perfiles por un usuario o grupo que no tiene acceso de administrador en el equipo:
 
-    ```
+    ```cmd
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
@@ -114,7 +114,7 @@ Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación 
 
 5. (Opcional) Para conservar los resultados de cualquiera de los pasos anteriores después de reiniciar el equipo, ejecute el siguiente comando:
 
-    ```
+    ```cmd
     vsperfcmd /admin:driver,autostart,on
     ```
 

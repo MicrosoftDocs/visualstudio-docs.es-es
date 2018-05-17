@@ -1,7 +1,7 @@
 ---
 title: Introducción a la compatibilidad de Python en Visual Studio en Windows
 description: Resumen de características de Python en Visual Studio, que lo convierten en el mejor IDE de Python en Windows (también conocidas como Herramientas de Python para Visual Studio, PTVS).
-ms.date: 04/06/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: e86f8f856963a979b8e64ba0e613cdb73685a9a0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Trabajo con Python en Visual Studio en Windows
 
@@ -46,7 +46,7 @@ Para obtener más información:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Edición enriquecida, IntelliSense y comprensión del código
 
-Visual Studio proporciona un editor de Python de primera clase, que incluye colores de la sintaxis, autocompletar en el código y las bibliotecas, formato de código, ayuda para las firmas, refactorización, sugerencias de tipo y detección de errores (se muestra a continuación). Visual Studio también proporciona características exclusivas como vista de clases, ir a definición, buscar todas las referencias y fragmentos de código. La integración directa con la [Ventana interactiva](#interactive-window) lo ayudará a desarrollar rápidamente código Python que ya está guardado en un archivo.
+Visual Studio proporciona un editor de Python de primera clase, que incluye colores de la sintaxis, autocompletar en el código y las bibliotecas, formato de código, ayuda para las firmas, refactorización, detección de errores (se muestra a continuación) y sugerencias de tipo. Visual Studio también proporciona características exclusivas como vista de clases, ir a definición, buscar todas las referencias y fragmentos de código. La integración directa con la [Ventana interactiva](#interactive-window) lo ayudará a desarrollar rápidamente código Python que ya está guardado en un archivo.
 
 ![Finalizaciones de código para código de Python en Visual Studio](media/code-editing-completions-simple.png)
 

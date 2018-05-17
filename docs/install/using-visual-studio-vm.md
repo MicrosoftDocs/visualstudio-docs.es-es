@@ -1,8 +1,9 @@
 ---
-title: Uso de Visual Studio en una máquina virtual de Azure | Microsoft Docs
+title: Uso de Visual Studio en una máquina virtual de Azure
 description: Aprenda a usar Visual Studio en una máquina virtual de Azure
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -14,25 +15,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: b4ee86cf7a42182cde4d015dfa10c7102563c9a6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a id="top"> </a> Imágenes de Visual Studio en Azure
+
 El uso de Visual Studio en una máquina virtual de Azure preconfigurada es una forma fácil y rápida de llegar a un entorno de desarrollo en funcionamiento partiendo de cero. Hay imágenes del sistema con distintas configuraciones de Visual Studio disponibles en [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1).
 
 ¿Es la primera vez que usa Azure? [Cree una cuenta gratuita de Azure](https://azure.microsoft.com/free).
 
 ## <a name="what-configurations-and-versions-are-available"></a>¿Qué configuraciones y versiones están disponibles?
+
 En Azure Marketplace puede encontrar imágenes de las versiones principales más recientes: Visual Studio 2017 y Visual Studio 2015. Para cada versión principal, verá la versión de lanzamiento original (RTW) y las versiones actualizadas más recientes. Cada una de estas versiones ofrece las ediciones Visual Studio Enterprise y Visual Studio Community. Estas imágenes se actualizan como mínimo cada mes para incluir las actualizaciones más recientes de Visual Studio y Windows. Aunque los nombres de las imágenes siguen siendo los mismos, la descripción de cada imagen incluye la versión del producto instalada y la fecha de inicio de la imagen.
 
 | Versión de lanzamiento                                              | Ediciones                     |     Versión del producto     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: versión más reciente (15.6)                    |    Enterprise, Community     |      Versión 15.6.4     |
-| Visual Studio 2017: versión preliminar más reciente (versión 15.7, versión preliminar 3) |    Enterprise, Community     |      Versión 15.7.0     |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versión 15.0.10    |
+| Visual Studio 2017: versión más reciente (15.7)                    |    Enterprise, Community     |      Versión 15.7.0     |
+| Visual Studio 2017: versión preliminar más reciente (versión 15.8, versión preliminar 1) |    Enterprise, Community     |      Versión 15.8.1     |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versión 15.0.13    |
 |   Visual Studio 2015: versión más reciente (Update 3)                      |    Enterprise, Community     |  Versión 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Ninguna             | (Servicio de mantenimiento expirado) |
 
@@ -42,6 +45,7 @@ En Azure Marketplace puede encontrar imágenes de las versiones principales más
 Para más información, consulte la [directiva de mantenimiento de Visual Studio](/visualstudio/productinfo/vs-servicing-vs).
 
 ## <a name="what-features-are-installed"></a>¿Qué características están instaladas?
+
 Cada imagen contiene el conjunto de características recomendado para esa edición de Visual Studio. Por lo general, la instalación incluye:
 
 * Todas las cargas de trabajo disponibles que incluyan los componentes opcionales recomendados para cada carga de trabajo
@@ -67,6 +71,7 @@ Se utiliza la línea de comandos siguiente para instalar Visual Studio al compil
 Si las imágenes no incluyen la característica de Visual Studio que necesita, envíe un comentario mediante la herramienta para crear comentarios que se encuentra en la esquina superior derecha de la página.
 
 ## <a name="what-size-vm-should-i-choose"></a>¿Qué tamaño de máquina virtual debería elegir?
+
 Azure ofrece una amplia gama de tamaños de máquina virtual. Dado que Visual Studio es una eficaz aplicación multiproceso, es recomendable que la máquina tenga un tamaño que pueda incluir al menos dos procesadores y 7 GB de memoria. Le recomendamos los siguientes tamaños de máquina virtual para las imágenes de Visual Studio:
 
    * Standard_D2_v3
@@ -82,6 +87,7 @@ Para más información sobre los tamaños de máquina más recientes, consulte [
 Con Azure puede reequilibrar su opción inicial cambiando el tamaño de la máquina virtual. También puede aprovisionar una nueva máquina virtual con un tamaño más adecuado o cambiar el tamaño de la máquina virtual existente en otro hardware subyacente. Para más información, consulte [Cambio de tamaño de una máquina virtual Windows](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>Una vez que la máquina virtual se esté ejecutando, ¿qué tengo que hacer?
+
 Visual Studio sigue el modelo "traiga su propia licencia" de Azure. Al igual que sucede en la instalación de hardware propietario, uno de los primeros pasos es obtener una licencia para la instalación de Visual Studio. Para desbloquear Visual Studio escoja una de estas dos opciones:
 - Iniciar sesión con una cuenta Microsoft que esté asociada con una suscripción de Visual Studio
 - Desbloquear Visual Studio con la clave de producto suministrada con la compra inicial
@@ -107,6 +113,7 @@ Para obtener más información, consulte [Captura de una imagen administrada de 
 Además, puede que las tecnologías o las tareas de desarrollo requieran mayor escalado (como variedades de configuraciones de desarrollo y varias configuraciones de máquina). Puede usar Azure DevTest Labs para crear _recetas_ que automatizan la construcción de la "imagen perfecta". También puede utilizar DevTest Labs para administrar directivas para las máquinas virtuales en ejecución del equipo. [Uso de Azure DevTest Labs para desarrolladores](/azure/devtest-lab/devtest-lab-developer-lab) es la mejor fuente de información sobre DevTest Labs.
 
 ## <a name="next-steps"></a>Pasos siguientes
+
 Ahora que ya está informado sobre las imágenes preconfiguradas de Visual Studio, el siguiente paso es crear una máquina virtual:
 
 * [Creación de una máquina virtual en Azure Portal](/azure/virtual-machines/windows/quick-create-portal)

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f44279baea33333c21bfadfd9fec21a2045aea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Cómo: Ver la herencia entre tipos (Diseñador de clases)
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Cómo: Ver la herencia entre tipos en el Diseñador de clases
 
 Si existe, la relación de herencia entre un tipo base y sus tipos derivados se puede buscar en un diagrama de clases del **Diseñador de clases**. Para crear una relación de herencia, si no existe ninguna, entre dos tipos, vea [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md).
 

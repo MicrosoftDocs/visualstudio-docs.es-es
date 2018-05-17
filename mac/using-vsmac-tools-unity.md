@@ -1,15 +1,15 @@
 ---
-title: Usar Herramientas de Visual Studio para Mac para Unity | Microsoft Docs
+title: Empleo de Visual Studio for Mac Tools for Unity
+description: Esta guía describe cómo usar la extensión de Visual Studio for Mac Tools for Unity
 author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
-ms.topic: article
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b37346546f65ab6737100c65368d2955cd2260d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4044169508b177ff5524ee024479244595661eab
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Empleo de Visual Studio for Mac Tools for Unity
 

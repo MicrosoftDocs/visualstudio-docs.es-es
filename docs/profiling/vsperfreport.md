@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7460b287b22ead961a5701fe4f8fa8bb22fc2d2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 La herramienta de la línea de comandos VSPerfReport se usa para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El formato de informe predeterminado es un archivo .csv.  
   
  VSPerfReport usa la sintaxis siguiente:  
   
-```  
+```cmd  
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
@@ -36,7 +36,7 @@ VSPerfReport [/U] vspfilename [/options]
   
  La herramienta de línea de comandos VSPerfReport también se usa para comparar archivos .vsp o .vsps. Para generar un informe de diferencias ("diff"), use la sintaxis siguiente:  
   
-```  
+```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   

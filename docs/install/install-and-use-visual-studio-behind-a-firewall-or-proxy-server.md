@@ -1,13 +1,10 @@
 ---
 title: Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy | Microsoft Docs
-description: ''
+description: Revise las direcciones URL de dominio, los puertos y los protocolos que quiere incluir en la lista de permitidos o abrir si la organización usa un firewall o un servidor proxy
 ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -20,24 +17,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f9f83c89e09e07d6024b779a89b9a6c4374112
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy
-Si usted o su organización utiliza medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá desee "incluir en una lista de permitidos", así como puertos y protocolos que desea abrir para tener la mejor experiencia al instalar y utilizar Visual Studio y los servicios de Azure.
+
+Si usted o su organización utiliza medidas de seguridad como un firewall o un servidor proxy, hay direcciones URL de dominio que quizá desee "incluir en una lista blanca", así como puertos y protocolos que desea abrir para tener la mejor experiencia al instalar y utilizar Visual Studio y los servicios de Azure.
 
 * **[Instalación de Visual Studio](#install-visual-studio)**: en estas tablas se indican las direcciones URL de dominio que se van a incluir en la lista de permitidos para que tenga acceso a todos los componentes y las cargas de trabajo que desee.
 
-* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)**: en esta tabla se indican las direcciones URL de dominio que se van a incluir en la lista de permitidos, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y servicios que desee.
+* **[Uso de Visual Studio y de servicios de Azure](#use-visual-studio-and-azure-services)**: en esta tabla se indican las direcciones URL de dominio que se van a incluir en la lista blanca, así como los puertos y protocolos que se van a abrir para que tenga acceso a todas las características y servicios que desee.
 
 ## <a name="install-visual-studio"></a>Instalar Visual Studio
-### <a name="urls-to-whitelist"></a>Direcciones URL para incluir en la lista de permitidos
-Debido a que el Instalador de Visual Studio descarga archivos de varios dominios y sus servidores de descarga, aquí se muestran las direcciones URL de los dominios que pueden incluirse en la lista de permitidos como de confianza en la interfaz de usuario o en los scripts de implementación.
+
+### <a name="urls-to-whitelist"></a>Direcciones URL para incluir en la lista blanca
+
+Debido a que el Instalador de Visual Studio descarga archivos de varios dominios y sus servidores de descarga, aquí se muestran las direcciones URL de los dominios que pueden incluirse en la lista blanca como de confianza en la interfaz de usuario o en los scripts de implementación.
 
 #### <a name="microsoft-domains"></a>Dominios de Microsoft
+
 | Dominio | Propósito |
 | ------ | ------- |
 | go.microsoft.com | Configurar URL de resolución |
@@ -57,6 +58,7 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>Dominios que no son de Microsoft
+
 | Dominio | Instala estas cargas de trabajo. |
 | ------ | ------- |
 | archive.apache.org |  Desarrollo para dispositivos móviles con JavaScript (Cordova) |
@@ -72,8 +74,10 @@ Debido a que el Instalador de Visual Studio descarga archivos de varios dominios
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Uso de Visual Studio y de servicios de Azure
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Direcciones URL para incluir en la lista de permitidos y puertos y protocolos para abrir
-Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual Studio o servicios de Azure detrás de un firewall o servidor proxy, estas son las direcciones URL que debe incluir en la lista de permitidos, así como los puertos y protocolos que puede querer abrir.
+
+### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Direcciones URL para incluir en la lista blanca y puertos y protocolos para abrir
+
+Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual Studio o servicios de Azure detrás de un firewall o servidor proxy, estas son las direcciones URL que debe incluir en la lista blanca, así como los puertos y protocolos que puede querer abrir.
 
 | Servicio o escenario | Punto de conexión DNS | Protocolo | Puerto | Description |
 | --- | --- | --- | --- | --- |
@@ -113,21 +117,24 @@ Para asegurarse de que tiene acceso a todo lo que necesita cuando utiliza Visual
 | Depurador de <br>instantáneas | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependiente de la versión de Visual Studio) | 1. Archivo .json de consulta para el tamaño de SKU del servicio de aplicación <br>2. Varias llamadas de Azure RM <br>3. Llamada de preparación de sitio  <br>4. Punto de conexión de Kudu del servicio de aplicación dirigido del cliente <br>5. Versión de la extensión de sitio de consulta publicada en nuget.org <br>6. Canal de depuración remota |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Se utiliza para ver, enviar, ejecutar y administrar trabajos de ASA. <br><br> Se utiliza para examinar clústeres de HDI y para enviar, diagnosticar y depurar trabajos de HDI. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Se utiliza para compilar, enviar, ver, diagnosticar y depurar trabajos; también para examinar archivos ADLS, y para cargar y descargar archivos. |
-|Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org y *.nodejs.org solo se necesitan para determinados escenarios de tareas de compilación (por ejemplo, Instalador de la herramienta NuGet, Instalador de herramientas de nodo) o si se van a usar canales de subida públicos con las fuentes.  Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
+|Servicio de empaquetado | [cuenta].visualstudio.com <br/> [cuenta].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org y *.nodejs.org solo son necesarios para determinados escenarios de tareas de compilación (por ejemplo, el Instalador de la herramienta NuGet o el Instalador de herramientas de nodo) o si se van a usar canales de subida públicos con las fuentes. Los otros tres dominios son necesarios para la funcionalidad principal del servicio de empaquetado. |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>Solución de problemas de errores relacionados con la red
+
 A veces, es posible que se ejecuten errores relacionados con la red o con el proxy cuando se instala o se utiliza Visual Studio detrás de un firewall o de un servidor proxy. Para más información sobre las soluciones de dichos mensajes de error, consulte la página [Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="get-support"></a>Obtener soporte técnico
+
 Aquí tiene algunas opciones más de soporte técnico:
+
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
 * Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+* Puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
+
 * [Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Guía del administrador de Visual Studio](visual-studio-administrator-guide.md)
 * [Instalación de Visual Studio 2017](install-visual-studio.md)

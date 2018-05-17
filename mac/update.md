@@ -3,14 +3,14 @@ title: Actualización de Visual Studio para Mac
 description: Instrucciones para actualizar Visual Studio para Mac y para acceder a versiones preliminares.
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: eeda1afa2e9cd311c09660f2af5190b224b9c341
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 7f93a76f3b054755a385696a6cfc8649a608a58b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="updating-visual-studio-for-mac"></a>Actualización de Visual Studio para Mac
 
@@ -19,8 +19,7 @@ Visual Studio para Mac distribuye actualizaciones para el IDE y los marcos de tr
 Visual Studio para Mac proporciona tres canales para obtener estas versiones más recientes:
 
 * **Estable**: proporciona actualizaciones probadas exhaustivamente. Este es el canal recomendado para obtener la mejor experiencia de desarrollo.
-* **Beta**: proporciona acceso temprano a actualizaciones que son versiones candidatas para la publicación en el canal estable.
-* **Alfa**: proporciona acceso temprano a actualizaciones que incorporan nuevas características, pero que quizá no sean confiables para uso diario.
+* **Beta** / **Alpha**: proporciona acceso temprano a actualizaciones que son versiones candidatas para la publicación en el canal estable. Estas versiones pueden no ser fiables para su uso diario.
 
 ## <a name="checking-for-updates"></a>Búsqueda de actualizaciones
 

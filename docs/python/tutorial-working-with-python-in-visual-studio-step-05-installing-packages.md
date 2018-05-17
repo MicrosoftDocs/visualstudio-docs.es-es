@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en un entorno de Python
 
@@ -43,7 +43,7 @@ La comunidad de desarrolladores de Python ha generado miles de paquetes útiles 
 
   ![Finalización de la instalación de matplotlib en el entorno](media/environments-add-matplotlib2.png)
 
-  La barra de progreso pequeña situada debajo del entorno indica que Visual Studio está compilando la base de datos de IntelliSense para el paquete recién instalado. La pestaña **IntelliSense** también muestra información más detallada. Tenga en cuenta que hasta que se complete dicha base de datos, las características de IntelliSense, como la finalización automática y la comprobación de sintaxis, no estarán activas en el editor de ese paquete.
+  Una barra de progreso pequeña podría aparecer debajo del entorno par indicar que Visual Studio está compilando la base de datos de IntelliSense para el paquete recién instalado. La pestaña **IntelliSense** también muestra información más detallada. Tenga en cuenta que hasta que se complete dicha base de datos, las características de IntelliSense, como la finalización automática y la comprobación de sintaxis, no estarán activas en el editor de ese paquete.
 
   Tenga en cuenta que **Visual Studio 2017, versión 15.6** y posteriores, utiliza un método diferente y más rápido para trabajar con IntelliSense, y muestra un mensaje a tal efecto en la pestaña **IntelliSense**.
 

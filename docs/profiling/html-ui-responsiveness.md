@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Análisis de la capacidad de respuesta de la IU HTML en aplicaciones de UWP
 En este tema se describe cómo aislar los problemas de rendimiento en las aplicaciones mediante el generador de perfiles de la capacidad de respuesta de la interfaz de usuario, una herramienta de rendimiento disponible para las aplicaciones universales de Windows.  
@@ -100,7 +100,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en las aplica
   
     -   Use la [Ver la escala de tiempo de la sesión de diagnóstico](#Ruler) para ver [Marcar código para el análisis](#ProfileMark), eventos del ciclo de vida de la aplicación y la escala de tiempo asociada a estos eventos, así como la de los datos de los gráficos restantes.  
   
-    -   Utilice [CPU utilization graph](#CPUutilization) para ver información general sobre la actividad de la CPU y el tipo de trabajo que lleva a cabo durante un período de tiempo concreto. En los períodos en los que hay una actividad excesiva de la CPU es más probable que se produzcan problemas de la capacidad de respuesta y fotogramas descartados.  
+    -   Utilice [CPU utilization graph](#CPUUtilization) para ver información general sobre la actividad de la CPU y el tipo de trabajo que lleva a cabo durante un período de tiempo concreto. En los períodos en los que hay una actividad excesiva de la CPU es más probable que se produzcan problemas de la capacidad de respuesta y fotogramas descartados.  
   
     -   Si está desarrollando un juego o una aplicación multimedia compleja, use el [Ver el rendimiento visual (FPS)](#VisualThroughput) para identificar los períodos de tiempo en los que disminuyó la velocidad de los fotogramas.  
   

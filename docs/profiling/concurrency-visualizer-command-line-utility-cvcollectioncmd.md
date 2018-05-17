@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606a6c021247a00b2244986d5f91ad19d6a167f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
 Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Visualizador de simultaneidad para recopilar seguimientos de la línea de comandos de manera que los pueda ver en el Visualizador de simultaneidad para Visual Studio. Las herramientas se pueden usar en equipos que no tengan instalado Visual Studio.  
@@ -30,7 +30,7 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Recopile datos de un seguimiento con CVCollectionCmd  
  Para recopilar información de un seguimiento, inicie la aplicación con CVCollectionCmd o asóciela a ella. Consulte la siguiente referencia de comandos para conocer las opciones disponibles. Por ejemplo  
   
-```  
+```cmd  
 <Path>CVCollectionCmd /launch c:\myapp\myapp.exe /outdir c:\myapp\data  
 ```  
   

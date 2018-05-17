@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bc8bb2eddf756b238b88e79050552caef945d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-build-platforms"></a>Descripción de las plataformas de compilación
 
@@ -38,4 +38,4 @@ Puede almacenar versiones diferentes de las propiedades de solución y de proyec
 
 - [Tutorial: Compilar una aplicación](../ide/walkthrough-building-an-application.md)
 - [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md)

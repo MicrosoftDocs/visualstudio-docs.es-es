@@ -1,5 +1,6 @@
 ---
-title: Proyecto de ejemplo para crear pruebas unitarias en Visual Studio
+title: Código de ejemplo para crear pruebas unitarias
+description: En este artículo se proporciona código de ejemplo que se puede probar con pruebas unitarias en Visual Studio.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,19 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6ab04990292715932c652e2e275787447761ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="sample-project-for-creating-unit-tests"></a>Proyecto de ejemplo para crear pruebas unitarias
+# <a name="sample-code-for-testing"></a>Código de ejemplo para pruebas
 
-Este código de ejemplo se proporciona para su uso en los siguientes tutoriales:
+Este código de ejemplo contiene una clase, *BankAccount*, con diversos métodos que se pueden probar en las pruebas unitarias.
 
-- [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este tutorial le guía por los pasos necesarios para crear y personalizar pruebas unitarias, ejecutarlas y examinar los resultados.
+El código se usa en los siguientes tutoriales:
 
-- [Tutorial: Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, utilice la utilidad de línea de comandos MSTest.exe para ejecutar pruebas y ver los resultados.
+- [Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Este tutorial le guía por los pasos necesarios para crear y personalizar pruebas unitarias, ejecutarlas y examinar los resultados.
+- [Usar la utilidad de prueba de la línea de comandos](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). En este tutorial, utilice la utilidad de línea de comandos MSTest.exe para ejecutar pruebas y ver los resultados.
 
 ## <a name="sample-code"></a>Código de ejemplo
 
@@ -125,9 +127,9 @@ namespace BankAccountNS
 
 /* Las compañías, organizaciones, productos, nombres de dominio, direcciones de correo electrónico, logotipos, personas, lugares y eventos que se citan a modo de ejemplo son ficticios. No se pretende indicar, ni debe deducirse, ninguna asociación con compañías, organizaciones, productos, dominios, direcciones de correo electrónico, logotipos, personas, lugares o hechos reales. \*/
 
-## <a name="working-with-the-code"></a>Trabajar con el código
+## <a name="create-the-project"></a>Crear el proyecto
 
-Para trabajar con este código, primero tiene que crear un proyecto para él en Visual Studio. Siga los pasos de la sección "Preparar el tutorial" en [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+Para trabajar con este código, primero cree un proyecto para él en Visual Studio. Siga los pasos para crear el proyecto en [Tutorial: Crear y ejecutar pruebas unitarias en código administrado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test).
 
 ## <a name="see-also"></a>Vea también
 

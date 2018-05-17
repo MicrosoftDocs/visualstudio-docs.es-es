@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc78c49aae49704e2dd56abfee7b0e43b285845d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 075a81dc81bb202be913f5a06e8213a8a68a010f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="markerseries-class"></a>marker_series (Clase)
 Representa un canal en serie de eventos generados por un único proveedor.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 class marker_series;  
 ```  
   

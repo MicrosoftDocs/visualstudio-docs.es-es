@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 
@@ -23,9 +23,9 @@ En Visual Studio se pueden usar fragmentos de código para agregar código de us
 
 Hay dos opciones: agregar un fragmento de código en una ubicación concreta del código (inserción) o rodear el código seleccionado con un fragmento de código.
 
-## <a name="inserting-a-code-snippet"></a>Insertar un fragmento de código
+## <a name="insert-a-code-snippet"></a>Insertar un fragmento de código
 
-Para insertar un fragmento de código, abra un archivo de código de C++ (.cpp o .h), haga clic en cualquier parte dentro del archivo y elija entre las acciones siguientes:
+Para insertar un fragmento de código, abra un archivo de código de C++ (*.cpp* o *.h*), haga clic en cualquier parte dentro del archivo y elija entre las acciones siguientes:
 
 - Haga clic con el botón derecho para ver el menú contextual y seleccione **Insertar fragmento de código**.
 
@@ -41,9 +41,9 @@ Verá una lista de opciones que empiezan por **#if**. Al seleccionar **#if**, ve
 #endif // 0
 ```
 
-A continuación, puede reemplazar el 0 por la condición correcta.
+A continuación, puede reemplazar el **0** por la condición correcta.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Usar un fragmento de código para rodear el código seleccionado
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Usar un fragmento de código para rodear el código seleccionado
 
 Para rodear el código seleccionado con un fragmento de código, seleccione una línea (o varias) y elija entre las acciones siguientes:
 
@@ -51,7 +51,7 @@ Para rodear el código seleccionado con un fragmento de código, seleccione una 
 
 - En el menú **Edición** > **IntelliSense**, seleccione **Envolver con**.
 
-- En un teclado, presione: **Ctrl**+**K**+**S**
+- En un teclado, presione: **CTRL**+**K**+**S**
 
 Seleccione **#if**. Verá algo parecido a esto:
 
@@ -71,7 +71,7 @@ La mayoría de los nombres de los fragmentos de código se explican por sí mism
 
 ## <a name="class-vs-classi"></a>Class frente a classi
 
-El fragmento de código **class** proporciona la definición de una clase denominada MyClass, con el constructor y el destructor predeterminados adecuados, donde las definiciones de constructor y destructor se encuentran fuera de la clase:
+El fragmento de código **class** proporciona la definición de una clase denominada `MyClass`, con el constructor y el destructor predeterminados adecuados, donde las definiciones de constructor y destructor se encuentran fuera de la clase:
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-El fragmento de código **classi** proporciona también la definición de una clase denominada MyClass, pero el constructor y el destructor predeterminados se definen en la definición de clase:
+El fragmento de código **classi** proporciona también la definición de una clase denominada `MyClass`, pero el constructor y el destructor predeterminados se definen en la definición de clase:
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-Si se inserta el fragmento de código de destructor, proporciona un destructor para SomeClass:
+Si se inserta el fragmento de código de destructor, proporciona un destructor para `SomeClass`:
 
 ```cpp
 class SomeClass {

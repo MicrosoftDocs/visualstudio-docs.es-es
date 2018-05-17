@@ -1,15 +1,15 @@
 ---
 title: Comentarios de tareas
-description: ''
+description: Agregar comentarios de tarea en el código
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: c119af47cc3b592033a68b0ec543afa86140c77a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 23ce804476b6495d45e114728b287c1f5f85d1d9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="task-comments"></a>Comentarios de tareas
 
@@ -19,7 +19,7 @@ Al escribir código, es una práctica estándar comentar de forma explícita el 
 
 Para agregar un nuevo comentario de tarea, agregue un comentario que incluya la palabra clave tarea. Por ejemplo:
 
-```
+```csharp
 //TODO: Finish this for all properties.
 ```
 

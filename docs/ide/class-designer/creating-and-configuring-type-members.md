@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Crear y configurar miembros de tipo (Diseñador de clases)
 Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos en la ventana **Detalles de clase**:
@@ -57,8 +57,8 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 
 |Tarea|Contenido adicional|
 |----------|------------------------|
-|**Introducción:** antes de crear y configurar los miembros de tipo, debe abrir la ventana **Detalles de clase**.|-   [Abrir la ventana Detalles de clase](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Notas de uso de los detalles de clase](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Presentación de la información de solo lectura](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Crear y modificar miembros de tipo:** puede crear nuevos miembros, modificar miembros y agregar parámetros a un método mediante la ventana **Detalles de clase**.|-   [Crear miembros](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Modificar miembros de tipo](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Agregar parámetros a métodos](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Introducción:** antes de crear y configurar los miembros de tipo, debe abrir la ventana **Detalles de clase**.|-   [Abrir la ventana Detalles de clase](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Notas de uso de Detalles de clase](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Presentación de la información de solo lectura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Crear y modificar miembros de tipo:** puede crear nuevos miembros, modificar miembros y agregar parámetros a un método mediante la ventana **Detalles de clase**.|-   [Crear miembros](creating-and-configuring-type-members.md#create-members)<br />-   [Modificar miembros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Agregar parámetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Abrir la ventana Detalles de clase
 De manera predeterminada, la ventana **Detalles de clase** aparece automáticamente cuando se abre un nuevo diagrama de clases (vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md)). También puede abrir la ventana **Detalles de clase** de forma explícita de las maneras siguientes.
@@ -157,7 +157,7 @@ Cada fila de miembro muestra los elementos siguientes:
 
 -   **\<agregar miembro>**
 
-     La última fila de la ventana **Detalles de clase** contiene el texto **\<agregar miembro>** en la celda **Nombre**. Puede crear un nuevo miembro haciendo clic en esta celda. Para obtener más información, vea [Crear miembros](creating-and-configuring-type-members.md#CreateMembers).
+     La última fila de la ventana **Detalles de clase** contiene el texto **\<agregar miembro>** en la celda **Nombre**. Puede crear un nuevo miembro haciendo clic en esta celda. Para obtener más información, vea [Crear miembros](creating-and-configuring-type-members.md#create-members).
 
 -   **Propiedades de miembro en la ventana Propiedades**
 
@@ -207,14 +207,14 @@ Las filas de parámetros contienen los elementos siguientes:
 
 -   **\<agregar parámetro>**
 
-     La última fila de parámetros de un miembro contiene el texto **<add parameter>** en la celda **Nombre**. Haga clic en esta celda para crear un nuevo parámetro. Para obtener más información, vea [Para agregar un parámetro a un método](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     La última fila de parámetros de un miembro contiene el texto **<add parameter>** en la celda **Nombre**. Haga clic en esta celda para crear un nuevo parámetro. Para obtener más información, vea [Para agregar un parámetro a un método](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Propiedades de parámetro en la ventana Propiedades**
 
 La ventana Propiedades muestra las mismas propiedades de parámetro que la ventana **Detalles de clase**: **Nombre**, **Tipo**, **Modificador**, **Resumen**, así como la propiedad **Valor predeterminado opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.
 
 > [!NOTE]
-> Para agregar un parámetro a un delegado, vea [Crear miembros](creating-and-configuring-type-members.md#CreateMembers).
+> Para agregar un parámetro a un delegado, vea [Crear miembros](creating-and-configuring-type-members.md#create-members).
 
 
 > [!NOTE]

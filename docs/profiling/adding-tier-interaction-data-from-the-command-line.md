@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 
@@ -54,20 +54,20 @@ En el ejemplo siguiente, se generan perfiles para una aplicación de escritorio 
 
 2. Inicialice la generación de perfiles de .NET y las variables de entorno de TIP. Escriba los siguientes comandos:
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Inicie el generador de perfiles. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Inicie la aplicación con VSPerfCmd. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ En el ejemplo siguiente, se generan perfiles para una aplicación de escritorio 
 
 6. Borre las variables del entorno de TIP. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 3. Inicialice las variables de entorno de generación de perfiles .NET. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. Inicialice las variables de entorno de TIP. Escriba el comando siguiente
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 7. Inicie el generador de perfiles. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 9. Adjunte el generador de perfiles al servicio. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 12. Borre las variables de entorno de generación de perfiles de .NET y TIP. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ La herramienta de línea de comandos VSPerfASPNETCmd le permite generar perfiles
 
 Para agregar la interacción de capas a los datos de generación de perfiles recopilados mediante VSPerfASPNETCmd, agregue la opción **/TIP** de la línea de comandos. Por ejemplo, utilice la siguiente línea de comandos para recopilar datos de interacción de capas para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mediante el método de instrumentación:
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

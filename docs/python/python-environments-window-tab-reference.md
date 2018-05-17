@@ -1,26 +1,21 @@
 ---
-title: Referencia de ventana Entornos de Python | Microsoft Docs
+title: Referencia de ventana Entornos de Python
 description: Detalles de cada una de las pestañas que aparecen en la ventana Entornos de Python en Visual Studio.
-ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.devlang: python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f323bfbe65a5e25935673674e604425bc33185c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referencia de pestañas de la ventana Entorno de Python
 
@@ -41,7 +36,7 @@ Proporciona información básica y comandos para el entorno:
 
 | Comando | Description |
 | --- | --- |
-| Hacer que este entorno sea el predeterminado para los proyectos nuevos | Establece el entorno activo, que puede hacer que Visual Studio deje de responder por unos instantes mientras se carga la base de datos de IntelliSense. Los entornos con muchos paquetes pueden dejar de responder durante más tiempo. |
+| Hacer que este entorno sea el predeterminado para los proyectos nuevos | Establece el entorno activo, que puede hacer que Visual Studio (2017, versión 15.5 y anteriores) deje de responder por unos instantes mientras se carga la base de datos de IntelliSense. Los entornos con muchos paquetes pueden dejar de responder durante más tiempo. |
 | Visitar el sitio web del distribuidor | Abre un explorador en la URL proporcionada por la distribución de Python. Python 3.x, por ejemplo, se dirige a python.org. |
 | Abrir ventana interactiva | Abre la [ventana interactiva (REPL)](python-interactive-repl-in-visual-studio.md) para este entorno en Visual Studio, aplicando cualquiera de los [scripts de inicio (ver a continuación)](#startup-scripts). |
 | Explorar scripts interactivos | Vea [Scripts de inicio](#startup-scripts). |
@@ -80,7 +75,7 @@ Si está disponible, contiene detalles como se describe en la tabla siguiente. S
 
 *También se etiqueta como "pip" en versiones anteriores*
 
-Administra los paquetes instalados en el entorno, lo que también permite buscar e instalar otros nuevos (incluidas las dependencias).
+Administra los paquetes instalados en el entorno mediante pip, lo que también permite buscar e instalar otros nuevos (incluidas las dependencias). En Visual Studio 2017, versión 15.7 y posteriores, aparece una opción **Paquetes (Conda)** que usa el Administrador de paquetes Conda en su lugar. (Si no ve esta opción, establezca la opción **Herramientas** > **Opciones** > **Python** > **Experimental** > **Usar el Administrador de paquetes Conda cuando esté disponible (en lugar de pip)** y reinicie Visual Studio).
 
 Los paquetes que ya están instalados aparecen con controles para actualizar (una flecha hacia arriba) y desinstalar (la X en un círculo) el paquete:
 
@@ -110,7 +105,8 @@ Muestra el estado actual de la base de datos de finalización de IntelliSense:
 
 ![Pestaña IntelliSense de entornos de Python](media/environments-intellisense-tab.png)
 
-En **Visual Studio 2017, versión 15.5** y anteriores, las finalizaciones de IntelliSense dependen de una base de datos que se han compilado para esa biblioteca. La creación de la base de datos se realiza en segundo plano cuando se instala una biblioteca, pero puede tardar un tiempo y es posible que no esté completa cuando comience a escribir código. **Visual Studio 2017, versión 15.6** y posteriores, usa un método más rápido para proporcionar las finalizaciones que no dependen de la base de datos, a menos que decida específicamente habilitarlo.
+- En **Visual Studio 2017, versión 15.5** y anteriores, las finalizaciones de IntelliSense dependen de una base de datos que se han compilado para esa biblioteca. La creación de la base de datos se realiza en segundo plano cuando se instala una biblioteca, pero puede tardar un tiempo y es posible que no esté completa cuando comience a escribir código.
+- **Visual Studio 2017, versión 15.6** y posteriores, usa un método más rápido para proporcionar las finalizaciones que no dependen de la base de datos de forma predeterminada. Por esta razón la pestaña se etiqueta como **IntelliSense [base de datos deshabilitada]**. Puede habilitar la base de datos si desactiva la opción **Herramientas** > **Opciones** > **Python** > **Experimental** > **Usar el nuevo estilo IntelliSense para los entornos**.
 
 Cuando Visual Studio detecta un nuevo entorno (o el usuario agrega uno), comienza a compilar automáticamente la base de datos analizando los archivos de origen de la biblioteca. Este proceso puede tardar desde un minuto a una hora o más dependiendo de lo que esté instalado. (Anaconda, por ejemplo, incluye muchas bibliotecas y tarda algún tiempo en compilar la base de datos.) Una vez finalizado, obtiene detalles de IntelliSense y no necesita actualizar la base de datos (con el botón **Refresh DB** (Actualizar base de datos)) hasta que instale más bibliotecas.
 

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-content-manager-overrides"></a>Invalidaciones de Help Content Manager
 
@@ -24,7 +24,7 @@ Puede modificar el comportamiento predeterminado del Visor de Ayuda y las caract
 
 1. Cree un archivo *.pkgdef* con `[$RootKey$\Help]` como primera línea.
 
-2. Agregue en líneas independientes algunos de los valores de la clave del Registro descritos en la tabla siguiente, o todos ellos. Por ejemplo: `“UseOnlineHelp”=dword:00000001`.
+2. Agregue en líneas independientes algunos de los valores de la clave del Registro descritos en la tabla siguiente, o todos ellos. Por ejemplo: `"UseOnlineHelp"=dword:00000001`.
 
 3. Copie el archivo en *%Archivos de programa(x86)%\Microsoft Visual Studio\2017\\<edición\>\Common7\IDE\CommonExtensions*.
 
@@ -45,12 +45,12 @@ Puede modificar el comportamiento predeterminado del Visor de Ayuda y las caract
 
 ```
 [$RootKey$\Help]
-“NewContentAndUpdateService”=”https://some.service.endpoint”
-“UseOnlineHelp”=dword:00000001
-“OnlineBaseUrl”=”https://some.service.endpoint”
-“OnlineHelpPreferenceDisabled”=dword:00000000
-“DisableManageContent”=dword:00000000
-“DisableFirstRunHelpSelection”=dword:00000001
+"NewContentAndUpdateService"="https://some.service.endpoint"
+"UseOnlineHelp"=dword:00000001
+"OnlineBaseUrl"="https://some.service.endpoint"
+"OnlineHelpPreferenceDisabled"=dword:00000000
+"DisableManageContent"=dword:00000000
+"DisableFirstRunHelpSelection"=dword:00000001
 ```
 
 ## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Uso del Editor del Registro para cambiar el comportamiento del Visor de Ayuda
@@ -60,7 +60,7 @@ Los dos comportamientos siguientes pueden controlarse mediante el establecimient
 |Tarea|Clave del Registro|Valor|Datos|
 |----------|-----|------|----|
 |Invalidar la prioridad de trabajos del servicio BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (en un equipo de 64 bits)\Microsoft\Help\v2.3|BITSPriority|**foreground**, **high**, **normal** o **low**|
-|Apuntar al almacén de contenido local en un recurso compartido de red|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
+|Apuntar al almacén de contenido local en un recurso compartido de red|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>Vea también
 

@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: c617ed1bae10569291b88d038e8d875ca966ad43
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="source-editor"></a>Editor de código fuente
 
@@ -24,7 +24,6 @@ En este artículo se presentan algunas de las características clave del editor 
 Ver el código y desplazarse por él de forma eficaz es una parte integral del flujo de trabajo de desarrollo. Cómo decida ver y mantener el código exactamente es una decisión personal, que varía entre desarrolladores y, a menudo, entre proyectos.
 
 Visual Studio para Mac ofrece variedad de eficaces características para que el desarrollo multiplataforma sea lo más accesible y útil posible. En las secciones siguientes se explican algunos de los aspectos destacados.
-
 
 ## <a name="code-folding"></a>Plegado de código
 
@@ -62,25 +61,20 @@ También hay disponible una opción para mostrar tabulaciones, espacios y finale
 
  ![espacio en blanco mostrado](media/source-editor-image22.png)
 
-
 ## <a name="ruler"></a>Regla
 
 La regla de columna es útil para determinar longitudes de línea, especialmente cuando se trabaja en un equipo que tiene directrices de longitud de línea. La regla de columna se puede activar o desactivar si se va a **Visual Studio > Preferencias... > Editor de texto > Marcadores y reglas** y se selecciona (o se anula la selección) **Mostrar regla de columna**, como se muestra en la imagen siguiente:
 
- ![](media/source-editor-image5.png)
+ ![Cuadro de diálogo Preferencias con la opción "Mostrar regla de columna" resaltada](media/source-editor-image5.png)
 
  Se muestra como una línea vertical gris clara en el editor de código fuente.
-
 
 ## <a name="highlight-identifier-references"></a>Resaltar referencias a identificadores
 
 Cuando la opción "Resaltar referencias a identificadores" está activada, puede seleccionar cualquier símbolo del código fuente y el editor de código fuente le proporciona una guía visual a las demás referencias de ese archivo. Para activar esta opción, vaya a **Visual Studio > Preferencias... > Editor de texto > Marcadores y reglas** y seleccione _Resaltar referencias a identificadores_, como se muestra en la imagen siguiente:
 
-![](media/source-editor-image6.png)
+![Cuadro de diálogo Preferencias con la opción "Resaltar referencias a identificadores" resaltada](media/source-editor-image6.png)
 
 El color del resaltado también resulta útil para indicar que un elemento está asignado o tiene una referencia. Si un elemento está asignado, se resalta en rojo; si tiene una referencia, en azul:
 
-![](media/source-editor-image7.png)
-
-
-
+![Ejemplo en el que se muestra el color de resaltado](media/source-editor-image7.png)

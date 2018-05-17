@@ -9,11 +9,11 @@ description: Obtenga información sobre las ventajas incluidas en su suscripció
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
@@ -40,5 +40,8 @@ Como suscriptor de Visual Studio, también tendrá acceso a diversos tipos de so
 - Obtenga ayuda de los miembros de la comunidad en los foros de soporte técnico prioritario.  Si los miembros de la comunidad no pueden responder a sus preguntas, los expertos de Microsoft le proporcionarán una respuesta. 
 - ¿Tiene preguntas acerca de Azure?  Consulte los servicios de chat de la comunidad de Azure y de Azure Advisor.  
 
-Para más información acerca de las ventajas que se incluyen en su suscripción, consulte la página de precios de Visual Studio.  La información sobre las ventajas específicas, incluido qué suscripciones las incluyen, está disponible en el tema **Uso de beneficios para los suscriptores** a continuación. 
+> [!NOTE] 
+> La suscripción también puede incluir acceso a descargas de software.  Para más información sobre las descargas, así como las descargas que se incluyen con su suscripción, visite [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+
+Para más información sobre las ventajas que se incluyen en su suscripción, consulte la [página de precios de Visual Studio](https://www.visualstudio.com/vs/pricing/).  La información sobre las ventajas específicas, incluido qué suscripciones las incluyen, está disponible en el tema **Uso de beneficios para los suscriptores** a continuación. 
 

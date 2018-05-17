@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac89442c7f0242fca3238a32bfb60d1cb2e1b4e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
@@ -29,7 +29,7 @@ Las recomendaciones de rendimiento de Visual Studio están previstas para situac
 
     Si actualiza el sistema desde una versión de Windows de 32 bits a una de 64 bits, se amplía la cantidad de memoria virtual disponible para Visual Studio de 2 GB a 4 GB. Esto permite que Visual Studio gestione cargas de trabajo considerablemente mayores aunque sea un proceso de 32 bits.
 
-    Para más información, vea [Memory limits (Límites de memoria)](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) y [Using /LARGEADDRESSAWARE on 64-bit Windows (Uso de /LARGEADDRESSAWARE en Windows de 64 bits)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Para obtener más información, vea [Memory limits](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) (Límites de memoria) y [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (Uso de /LARGEADDRESSAWARE en Windows de 64 bits).
 
 ## <a name="configure-solution-and-projects"></a>Configuración de solución y proyectos
 
@@ -37,7 +37,7 @@ Si tiene una solución muy grande con muchos proyectos, le puede resultar benefi
 
 - **Descargue proyectos**
 
-    Puede descargar manualmente aquellos proyectos individuales usados raras veces desde el Explorador de soluciones si hace clic con el botón derecho en el menú contextual.
+    Puede descargar manualmente aquellos proyectos individuales usados raras veces desde el **Explorador de soluciones** si hace clic con el botón derecho en el menú contextual.
 
 - **Refactorice la solución**
 
@@ -51,23 +51,23 @@ Si es habitual que se quede sin memoria durante las sesiones de depuración, pue
 
     La optimización más sencilla consiste en habilitar la característica **Solo mi código**, que solo carga los símbolos del proyecto. La habilitación de esta característica puede traducirse en un considerable ahorro de memoria para depurar aplicaciones administradas (.NET). Esta opción ya está habilitada de forma predeterminada en algunos tipos de proyecto.
 
-    Para habilitar **Solo mi código**, elija **Herramientas > Opciones > Depuración > General** y luego seleccione **Habilitar Solo mi código**.
+    Para habilitar **Solo mi código**, elija **Herramientas** > **Opciones** > **Depuración** > **General** y luego seleccione **Habilitar solo mi código**.
 
 - **Especifique los símbolos que se van a cargar**
 
-    En la depuración nativa, la carga de archivos de símbolos (.pdb) resulta costosa en términos de recursos de memoria. Puede establecer la configuración de símbolos del depurador de modo que se ahorre memoria. Por lo general, la solución se configura para cargar únicamente los módulos del proyecto.
+    En la depuración nativa, la carga de archivos de símbolos (*.pdb*) resulta costosa en términos de recursos de memoria. Puede establecer la configuración de símbolos del depurador de modo que se ahorre memoria. Por lo general, la solución se configura para cargar únicamente los módulos del proyecto.
 
-    Para especificar la carga de símbolos, elija **Herramientas > Opciones > Depuración > Símbolos**.
+    Para especificar la carga de símbolos, elija **Herramientas** > **Opciones** > **Depuración** > **Símbolos**.
 
-    Establezca las opciones en **Solo los módulos especificados** en lugar de **Todos los módulos** y luego especifique qué módulos quiere cargar. Durante la depuración, también puede hacer clic con el botón derecho en módulos concretos de la ventana **Módulos** para incluir explícitamente un módulo en la carga de símbolos. (Para abrir la ventana durante la depuración, elija **Depurar > Ventanas > Módulos**).
+    Establezca las opciones en **Solo los módulos especificados** en lugar de **Todos los módulos** y luego especifique qué módulos quiere cargar. Durante la depuración, también puede hacer clic con el botón derecho en módulos concretos de la ventana **Módulos** para incluir explícitamente un módulo en la carga de símbolos. (Para abrir la ventana durante la depuración, elija **Depurar** > **Ventanas** > **Módulos**).
 
-    Para más información, vea [Understanding symbol files (Introducción a los archivos de símbolos)](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    Para obtener más información, vea [Understanding symbol files](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/) (Introducción a los archivos de símbolos).
 
 - **Deshabilite las herramientas de diagnóstico**
 
     Se recomienda deshabilitar la generación de perfiles de CPU después de su uso. Esta característica puede consumir grandes cantidades de recursos. Una vez habilitada la generación de perfiles de CPU, este estado se mantiene en las sesiones de depuración posteriores, por lo que merece la pena desactivarla de forma explícita al terminar. Puede ahorrar algunos recursos si deshabilita las herramientas de diagnóstico durante la depuración si no necesita las características proporcionadas.
 
-    Para deshabilitar las herramientas de diagnóstico, inicie una sesión de depuración, elija **Herramientas > Opciones > Habilitar herramientas de diagnóstico** y anule la selección de la opción.
+    Para deshabilitar las **herramientas de diagnóstico**, inicie una sesión de depuración, elija **Herramientas** > **Opciones** > **Habilitar herramientas de diagnóstico** y anule la selección de la opción.
 
     Para más información, vea [Herramientas de generación de perfiles](../profiling/profiling-tools.md).
 
@@ -82,17 +82,17 @@ Algunas herramientas o extensiones se pueden desactivar para mejorar el rendimie
 
 Para más información sobre las consideraciones de rendimiento de .NET Compiler Platform ("Roslyn"), vea [Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions) (Consideraciones de rendimiento para soluciones de gran tamaño).
 
-- **Deshabilite el análisis completo de la solución**
+- **Deshabilitar el análisis completo de la solución**
 
     Visual Studio realiza un análisis de toda la solución con el fin de proporcionar una experiencia completa sobre errores antes de invocar una compilación. Esta característica es útil para identificar los errores lo antes posible. Pero en el caso de las soluciones muy grandes, esta característica puede consumir recursos de memoria considerables. Si experimenta problemas de memoria o similares, puede deshabilitar esta experiencia para liberar estos recursos. De forma predeterminada, esta opción está habilitada para Visual Basic y deshabilitada para C#.
 
-    Para deshabilitar **Análisis completo de la solución**, elija **Herramientas > Opciones > Editor de texto > <Visual Basic o C#>**. Luego elija **Avanzadas** y anule la selección de **Habilitar análisis de la solución completa**.
+    Para deshabilitar **Análisis completo de la solución**, elija **Herramientas** > **Opciones** > **Editor de texto** > **<Visual Basic o C#>**. Luego elija **Avanzadas** y anule la selección de **Habilitar análisis de la solución completa**.
 
 - **Deshabilite CodeLens**
 
-    Visual Studio realiza una tarea **Buscar todas las referencias** en cada método cuando este se muestra. CodeLens proporciona características como la presentación en línea del número de referencias. El trabajo se realiza en un proceso independiente (por ejemplo, ServiceHub.RoslynCodeAnalysisService32). En soluciones muy grandes o en sistemas limitados por recursos, esta característica puede tener un impacto considerable sobre el rendimiento, aunque se ejecute con una prioridad baja. Si experimenta un uso elevado de la CPU en este proceso o problemas de memoria (por ejemplo, al cargar una solución grande en un equipo de 4 GB), puede intentar deshabilitar esta característica para liberar recursos.
+    Visual Studio realiza una tarea **Buscar todas las referencias** en cada método cuando este se muestra. CodeLens proporciona características como la presentación en línea del número de referencias. El trabajo se realiza en un proceso independiente (por ejemplo, *ServiceHub.RoslynCodeAnalysisService32*). En soluciones muy grandes o en sistemas limitados por recursos, esta característica puede tener un impacto considerable sobre el rendimiento, aunque se ejecute con una prioridad baja. Si experimenta un uso elevado de la CPU en este proceso o problemas de memoria (por ejemplo, al cargar una solución grande en un equipo de 4 GB), puede intentar deshabilitar esta característica para liberar recursos.
 
-    Para deshabilitar CodeLens, elija **Herramientas > Opciones > Editor de texto > Todos los lenguajes > CodeLens** y anule la selección de la característica.
+    Para deshabilitar **CodeLens**, elija **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens** y anule la selección de la característica.
 
     Esta característica está disponible en Visual Studio Professional y Visual Studio Enterprise.
 
@@ -106,9 +106,9 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
 - **Deshabilite el diseñador XAML**
 
-    El diseñador XAML está habilitado de forma predeterminada, pero solo consume recursos si se abre un archivo .XAML. Si trabaja con archivos XAML pero no quiere usar la funcionalidad del diseñador, deshabilite esta característica para liberar memoria.
+    El diseñador XAML está habilitado de forma predeterminada, pero solo consume recursos si se abre un archivo *.xaml*. Si trabaja con archivos XAML pero no quiere usar la funcionalidad del diseñador, deshabilite esta característica para liberar memoria.
 
-    Para deshabilitar el diseñador XAML, vaya a **Herramientas > Opciones > Diseñador XAML > Habilitar diseñador XAML** y anule la selección de la opción.
+    Para deshabilitar el **diseñador XAML**, vaya a **Herramientas** > **Opciones** > **Diseñador XAML** > **Habilitar diseñador XAML** y anule la selección de la opción.
 
 - **Quite cargas de trabajo**
 
@@ -116,9 +116,9 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
 ## <a name="force-a-garbage-collection"></a>Aplicación de recolección de elementos no utilizados
 
-CLR usa un sistema de administración de memoria de recopilación de elementos no utilizados. En este sistema, a veces hay objetos que ya no son necesarios pero que usan memoria. Este estado es temporal; el recolector de elementos no utilizados libera esta memoria en función de su rendimiento y heurística de uso de recursos. Puede forzar a CLR a que recopile la memoria sin usar mediante una tecla de acceso rápido en Visual Studio. Si hay una cantidad considerable de elementos no utilizados en espera de recolección y se fuerza esta, debería ver cómo se reduce el uso de memoria del proceso devenv.exe en el Administrador de tareas. Es raro tener que recurrir a este método. Pero después de que se haya completado una operación costosa (por ejemplo, una compilación completa, una sesión de depuración o un evento de apertura de solución), puede ayudar a determinar cuánta memoria está usando realmente el proceso. Dado que Visual Studio es mixto (administrado y nativo), a veces es posible que el asignador nativo y el recolector de elementos no utilizados compitan por recursos de memoria limitados. En condiciones de elevado uso de memoria, puede ser útil forzar la ejecución del recolector de elementos no utilizados.
+CLR usa un sistema de administración de memoria de recopilación de elementos no utilizados. En este sistema, a veces hay objetos que ya no son necesarios pero que usan memoria. Este estado es temporal; el recolector de elementos no utilizados libera esta memoria en función de su rendimiento y heurística de uso de recursos. Puede forzar a CLR a que recopile la memoria sin usar mediante una tecla de acceso rápido en Visual Studio. Si hay una cantidad considerable de elementos no utilizados en espera de recolección y se fuerza esta, debería ver cómo se reduce el uso de memoria del proceso *devenv.exe* en el **Administrador de tareas**. Es raro tener que recurrir a este método. Pero después de que se haya completado una operación costosa (por ejemplo, una compilación completa, una sesión de depuración o un evento de apertura de solución), puede ayudar a determinar cuánta memoria está usando realmente el proceso. Dado que Visual Studio es mixto (administrado y nativo), a veces es posible que el asignador nativo y el recolector de elementos no utilizados compitan por recursos de memoria limitados. En condiciones de elevado uso de memoria, puede ser útil forzar la ejecución del recolector de elementos no utilizados.
 
-Para forzar una recolección de elementos no utilizados, use la tecla de acceso rápido: **Ctrl + Alt + Mayús + F12**, **Ctrl + Alt + Mayús + F12** (presione dos veces).
+Para forzar una recolección de elementos no utilizados, use este atajo de teclado: **CTRL**+**Alt**+**Mayús**+**F12**, **CTRL**+**Alt**+**Mayús**+**F12** (presione dos veces).
 
 Si la aplicación de la recolección de elementos no utilizados hace que el escenario funcione mejor, rellene un informe a través de la herramienta de comentarios de Visual Studio, ya que este comportamiento probablemente sea un error.
 

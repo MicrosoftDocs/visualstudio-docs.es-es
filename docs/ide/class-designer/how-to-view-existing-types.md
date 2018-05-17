@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Cómo: Ver los tipos existentes (Diseñador de clases)
+# <a name="how-to-view-existing-types-in-class-designer"></a>Cómo: Ver los tipos existentes en el Diseñador de clases
 
 Para ver un tipo existente y sus miembros, agregue su forma a un diagrama de clases.
 
@@ -36,13 +36,13 @@ Para diseñar nuevos tipos en los diagramas de clases, vea [Cómo: Crear tipos c
 
 2.  Desde el proyecto, en el **Explorador de soluciones**, arrastre un archivo de código fuente hasta el diagrama de clases.
 
-    > [!WARNING]
+    > [!NOTE]
     > Si la solución tiene un proyecto que comparte código en varias aplicaciones, puede arrastrar archivos o código a un diagrama de clases únicamente de estos orígenes:
     >
-    > -   El proyecto de la aplicación que contiene el diagrama
-    > -   Un proyecto compartido importado por el proyecto de la aplicación
-    > -   Un proyecto al que se hace referencia
-    > -   Un ensamblado
+    > - El proyecto de la aplicación que contiene el diagrama
+    > - Un proyecto compartido importado por el proyecto de la aplicación
+    > - Un proyecto al que se hace referencia
+    > - Un ensamblado
 
     En el diagrama, en la posición a la que arrastró el archivo, aparecen formas que representan los tipos definidos en el archivo de código fuente.
 
@@ -60,9 +60,7 @@ Cuando se muestra por primera vez un tipo en el diagrama, su forma aparece contr
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Para mostrar el contenido de un proyecto en un diagrama de clases
 
-- En el **Explorador de soluciones** o en la **Vista de clases**, haga clic con el botón derecho en el proyecto y elija **Ver**; después, elija **Ver diagrama de clases**.
-
-     Se crea un diagrama de clases que se rellena automáticamente.
+En el **Explorador de soluciones** o en la **Vista de clases**, haga clic con el botón derecho en el proyecto y elija **Ver**; después, elija **Ver diagrama de clases**. Se crea un diagrama de clases que se rellena automáticamente.
 
 ## <a name="see-also"></a>Vea también
 

@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>Visualización de la estructura del código
 
@@ -56,11 +56,11 @@ Si el proyecto se protege en el control de código fuente, cada elemento **Vista
 
 ### <a name="class-view-toolbar"></a>Barra de herramientas de Vista de clases
 
-La barra de herramientas de Vista de clases contiene los siguientes comandos.
+La barra de herramientas de **Vista de clases** contiene los siguientes comandos.
 
 |||
 |-|-|
-|**Nueva carpeta**|Crea una carpeta virtual o una subcarpeta en la que puede organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa (.suo). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
+|**Nueva carpeta**|Crea una carpeta virtual o una subcarpeta en la que puede organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa (*.suo*). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
 |**Atrás**|Navegal al elemento seleccionado anteriormente.|
 |**Adelante**|Navega al siguiente elemento seleccionado.|
 |**Ver diagrama de clases** (solo para proyectos de código administrado)|Se vuelve disponible al seleccionar un espacio de nombres o al escribir en la **Vista de clases**. Cuando se selecciona un espacio de nombres, el diagrama de clases muestra todos los tipos que contiene. Cuando se selecciona un tipo, el diagrama de clases solo muestra ese tipo.|
@@ -90,7 +90,7 @@ El menú contextual de la **Vista de clases** puede contener los siguientes coma
 |**Ir a definición**|Busca la definición del elemento en el código fuente o en el **Examinador de objetos** si el elemento no está definido en el proyecto abierto.|
 |**Examinar definición**|Muestra el elemento seleccionado en el **Examinador de objetos**.|
 |**Buscar todas las referencias**|Busca el elemento del objeto seleccionado actualmente y muestra los resultados en la ventana **Resultados de la búsqueda**.|
-|**Filtrar tipo** (solo para código administrado)|Solo muestra el tipo o espacio de nombres seleccionado. Para quitar el filtro, seleccione el botón **Borrar búsqueda**  (X) situado junto al cuadro **Buscar**.|
+|**Filtrar tipo** (solo para código administrado)|Solo muestra el tipo o espacio de nombres seleccionado. Para quitar el filtro, seleccione el botón **Borrar búsqueda** (**X**) situado junto al cuadro **Buscar**.|
 |**Copiar**|Copia el nombre completo del elemento.|
 |**Ordenar alfabéticamente**|Enumera los tipos y miembros según su nombre por orden alfabético.|
 |**Ordenar por tipo de miembro**|Ordena los tipos y miembros por tipo (de tal modo que las clases preceden a las interfaces, las interfaces preceden a los delegados y los métodos preceden a las propiedades).|
@@ -130,11 +130,11 @@ El menú contextual de la ventana **Jerarquía de llamadas** contiene los siguie
 
 La ventana del **Examinador de objetos** muestra descripciones del código en sus proyectos.
 
-Puede filtrar los componentes que desee ver mediante el uso de la lista desplegable en la parte superior de la ventana. Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos .ocx. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.
+Puede filtrar los componentes que desee ver mediante el uso de la lista desplegable en la parte superior de la ventana. Los componentes personalizados pueden incluir archivos ejecutables de código administrado, ensamblados de biblioteca, bibliotecas de tipo y archivos *.ocx*. No es posible agregar componentes personalizados de C++. La configuración personalizada se guarda en el directorio de aplicaciones de usuario de Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 El panel izquierdo del **Examinador de objetos** muestra los ensamblados. Puede expandir los ensamblados para mostrar los espacios de nombres que contengan y, a continuación, expandir los espacios de nombres para mostrar los tipos que contengan. Cuando se selecciona un tipo, sus miembros (como es el caso de las propiedades y los métodos) se enumeran en el panel derecho. El panel inferior derecho muestra información detallada acerca del elemento seleccionado.
 
-Puede buscar un elemento específico mediante el cuadro **Buscar** situado en la parte superior de la ventana. Las búsquedas no distinguen entre mayúsculas y minúsculas. Los resultados de las búsquedas se muestran en el panel izquierdo. Para borrar una búsqueda, seleccione el botón **Borrar búsqueda** (X) situado junto al cuadro **Buscar**.
+Puede buscar un elemento específico mediante el cuadro **Buscar** situado en la parte superior de la ventana. Las búsquedas no distinguen entre mayúsculas y minúsculas. Los resultados de las búsquedas se muestran en el panel izquierdo. Para borrar una búsqueda, seleccione el botón **Borrar búsqueda** (**X**) situado junto al cuadro **Buscar**.
 
 El **Examinador de objetos** realiza un seguimiento de las selecciones que haya realizado y puede navegar entre ellas usando los botones **Adelante** y **Atrás** de la barra de herramientas.
 
@@ -185,7 +185,7 @@ La ventana **Definición de código** muestra la definición de un tipo o miembr
 Aunque esta ventana es de solo lectura, puede establecer puntos de interrupción o marcadores en ella. Para modificar la definición mostrada, pulse **Editar definición** en el menú contextual. Esto abre el archivo de origen en el editor de código y mueve el punto de inserción a la línea en la que comienza la definición.
 
 > [!NOTE]
-> A partir de Visual Studio 2015, la ventana de definición de código solo se puede usar con código de C++.
+> A partir de Visual Studio 2015, la ventana de **definición de código** solo se puede usar con código de C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Menú contextual de Definición de código
 
@@ -193,8 +193,8 @@ El menú contextual de la ventana **Definición de código** puede contener los 
 
 |||
 |-|-|
-|**Acciones rápidas y refactorizaciones...**||
-|**Cambiar nombre...**||
+|**Acciones rápidas y refactorizaciones**||
+|**Cambiar nombre**||
 |**Generar gráfico de archivos de inclusión**||
 |**Ver la definición**||
 |**Ir a definición**|Busca la definición (o definiciones, en el caso de clases parciales) y las muestra en la ventana **Resultados de la búsqueda**.|

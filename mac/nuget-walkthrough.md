@@ -1,15 +1,15 @@
 ---
-title: 'Tutorial: Incluir un paquete NuGet en el proyecto'
+title: Incluir un paquete NuGet en el proyecto
 description: En este documento se explica cómo incluir un paquete NuGet en un proyecto de Xamarin. Le guía a lo largo del proceso de búsqueda y descarga de un paquete, además de presentar las características de integración del IDE.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>Incluir un paquete NuGet en el proyecto
 
@@ -26,8 +26,6 @@ Para mostrar la funcionalidad del paquete NuGet, primero se crea una nueva aplic
 En primer lugar, cree un proyecto denominado `HelloNuget` como se muestra a continuación. Este ejemplo muestra la plantilla de aplicación de vista única de iOS, aunque cualquier tipo de proyecto compatible funcionaría:
 
 ![Crear nuevo proyecto de iOS](media/nuget-walkthrough-NewProject.png)
-
-<a name="Adding_a_Package" class="injected"></a>
 
 ## <a name="adding-a-package"></a>Adición de un paquete
 
@@ -50,9 +48,9 @@ Use el cuadro de búsqueda de la esquina superior derecha para buscar un paquete
 
 Una vez que el paquete se ha descargado, se agrega al proyecto. La solución cambia de este modo:
 
-*   El nodo **Referencias** contiene una lista de todos los ensamblados que forman parte de un paquete NuGet.
-*   El nodo **Paquetes** muestra cada paquete NuGet descargado. Puede actualizar esta lista o quitar un paquete de ella.
-*   Se agrega un archivo **packages.config** al proyecto. El IDE usa este archivo XML para realizar un seguimiento de a qué versiones del paquete se hace referencia en este proyecto. Este archivo no se debe editar manualmente, sino que debe mantenerse en el control de versiones. Tenga en cuenta que se puede usar un archivo project.json en lugar de un archivo packages.config. El archivo project.json es un nuevo formato de archivo de paquete presentado con NuGet 3 que admite la restauración transitiva. Puede ver información más detallada sobre project.json en la [documentación de NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). Hay que agregar el archivo project.json manualmente y cerrar el proyecto y volverlo a abrir antes de usar el archivo project.json en Visual Studio para Mac.
+* El nodo **Referencias** contiene una lista de todos los ensamblados que forman parte de un paquete NuGet.
+* El nodo **Paquetes** muestra cada paquete NuGet descargado. Puede actualizar esta lista o quitar un paquete de ella.
+* Se agrega un archivo **packages.config** al proyecto. El IDE usa este archivo XML para realizar un seguimiento de a qué versiones del paquete se hace referencia en este proyecto. Este archivo no se debe editar manualmente, sino que debe mantenerse en el control de versiones. Tenga en cuenta que se puede usar un archivo project.json en lugar de un archivo packages.config. El archivo project.json es un nuevo formato de archivo de paquete presentado con NuGet 3 que admite la restauración transitiva. Puede ver información más detallada sobre project.json en la [documentación de NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). Hay que agregar el archivo project.json manualmente y cerrar el proyecto y volverlo a abrir antes de usar el archivo project.json en Visual Studio para Mac.
 
 ## <a name="using-nuget-packages"></a>Uso de paquetes NuGet
 
@@ -60,8 +58,9 @@ Una vez agregado el paquete NuGet y actualizadas las referencias del proyecto, p
 
 Asegúrese de agregar cualquier directiva `using` necesaria a la parte superior del archivo:
 
-
-    using Newtownsoft.json;
+```csharp
+using Newtownsoft.json;
+```
 
 La mayoría de los paquetes NuGet proporcionan información adicional, como un Léame o un vínculo de página de proyecto al origen de NuGet. Normalmente puede encontrar un vínculo a este en el texto del paquete en la página Agregar paquetes:
 

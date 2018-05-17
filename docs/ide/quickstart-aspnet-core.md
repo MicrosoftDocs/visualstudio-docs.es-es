@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Inicio rápido: uso de Visual Studio para crear su primera aplicación web ASP.NET Core
 
@@ -32,7 +32,7 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
 
 1. Abra Visual Studio 2017.
 
-1. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
 1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y seleccione **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core** y después elija **Aceptar**.
 
@@ -70,7 +70,7 @@ En primer lugar, creará un proyecto de aplicación web ASP.NET Core. En el tipo
 
    ![Lista de errores](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. En la ventana del editor, coloque el cursor en cualquiera de las líneas que contienen el error y, luego, elija la **bombilla Acciones rápidas** situada en el margen izquierdo. En el menú desplegable, elija **using System;** para agregar esta directiva a la parte superior del archivo y resolver los errores.
+1. En la ventana del editor, coloque el cursor en cualquiera de las líneas que contenga el error y, a continuación, elija la bombilla Acciones rápidas situada en el margen izquierdo. En el menú desplegable, elija **using System;** para agregar esta directiva a la parte superior del archivo y resolver los errores.
 
 ## <a name="run-the-application"></a>Ejecutar la aplicación
 

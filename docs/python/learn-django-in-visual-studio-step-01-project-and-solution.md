@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Información acerca de Django en Visual Studio, paso 1'
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio, que muestra el soporte que brinda Visual Studio al desarrollo de Django.
-ms.date: 04/25/2018
+ms.date: 05/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97f801d111f7fcb2aaeb207c3f3fcf1784a04f30
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 389bd7a3dedfcc400e9cf3d56d26723a5fc9aa7e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Paso 1 del tutorial: Introducción a la plataforma web de Django en Visual Studio
 
@@ -33,7 +33,9 @@ En este tutorial aprenderá a:
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Visual Studio 2017 con la carga de trabajo de Python instalada. Para obtener instrucciones, consulte [Instalación de la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md).
+- Visual Studio 2017 con las siguientes opciones:
+  - La carga de trabajo **Desarrollo de Python** (pestaña **Carga de trabajo** del instalador). Para obtener instrucciones, consulte [Instalación de la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md).
+  - **Git para Windows** y **Extensión de GitHub para Visual Studio** en la pestaña **Componentes individuales** de **Herramientas de código**.
 
 Las plantillas de proyecto de Django también se incluyen con todas las versiones anteriores de las Herramientas de Python para Visual Studio, aunque los detalles pueden diferir de aquello que se describe en este tutorial (especialmente respecto de las versiones anteriores de la plataforma Django).
 
@@ -89,7 +91,7 @@ Como seleccionó **Crear nuevo repositorio Git** en el cuadro de diálogo **Nuev
 
     ![Ventana de Team Explorer que muestra las opciones de repositorio Git para el control de código fuente](media/django/step01-team-explorer.png)
 
-    Puede elegir cualquier servicio que desee para sus propios proyectos. En este tutorial se muestra el uso de GitHub, donde se mantiene el código de ejemplo completo para el tutorial en el repositorio [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django).
+    Puede elegir cualquier servicio que desee para sus propios proyectos. En este tutorial se muestra el uso de GitHub, donde se mantiene el código de ejemplo completo del tutorial en el repositorio [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 1. Al seleccionar cualquiera de los controles de **Publicar**, **Team Explorer** le pedirá más información. Por ejemplo, al publicar el ejemplo para este tutorial, el propio repositorio tenía que haberse creado primero. En este caso, la opción **Insertar en repositorio remoto** se utilizó con la dirección URL del repositorio.
 
@@ -206,4 +208,4 @@ En este momento, el proyecto de Django básico no contiene ninguna aplicación. 
 
 - Código del proyecto Django: [Escribiendo su primera aplicación en Django, parte 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Utilidad administrativa: [django-admin and manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (django-admin y manage.py) (docs.djangoproject.com)
-- Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

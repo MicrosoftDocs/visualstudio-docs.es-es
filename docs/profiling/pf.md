@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a872745208b1f97065cc073920273dd90f4fa60
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 523140a4ffdc8e1eae07e3ae7dcffee5709067a2
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="pf"></a>PF
 La opción **PF** de VSPerfCmd.exe establece el evento de generación de perfiles que se muestrea en errores de página y cambia opcionalmente el número de errores de página en un intervalo de muestreo respecto al valor predeterminado de 10.  
   
 > [!NOTE]
->  PF no puede usarse en sistemas de 64 bits.  
+>  **PF** no se puede usar en sistemas de 64 bits.  
   
- **Tenga en cuenta que PF** no se admite en equipos de 64 bits. **PF** solo se puede usar en una línea de comandos que también contenga las opciones **Launch** o **Attach**.  
+**PF** solo se puede usar en una línea de comandos que también contenga la opción **Launch** o **Attach**.  
   
  De forma predeterminada, el evento de muestreo está establecido en los ciclos de reloj de procesador y el intervalo de muestreo está establecido en 10.000.000. Las opciones **Timer**, **PF**, **Sys** y **Counter** le permiten establecer el intervalo de muestreo y de eventos de ejemplo. La opción **GC** recopila datos de memoria de .NET en cada evento de asignación y de recolección de elementos no utilizados. Solamente se puede especificar una de estas opciones en una línea de comandos.  
   
@@ -30,7 +30,7 @@ La opción **PF** de VSPerfCmd.exe establece el evento de generación de perfile
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]  
 ```  
   
@@ -65,7 +65,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="example"></a>Ejemplo  
  Este ejemplo muestra cómo establecer el evento de ejemplo de generación de perfiles en errores de página y establecer el intervalo de muestreo en 20 errores de página.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  

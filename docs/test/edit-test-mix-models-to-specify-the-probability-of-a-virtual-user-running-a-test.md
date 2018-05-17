@@ -11,18 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3f06eac67207209932073899ae0277f9a156b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba
+# <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Editar modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba
 
 El *modelo de combinación de pruebas* especifica la probabilidad de que un usuario virtual ejecute una prueba determinada en un escenario de prueba de carga. Esto le permite simular una carga de forma más realista. En lugar de tener un único flujo de trabajo en sus aplicaciones, puede disponer de varios, lo que supone una aproximación más real a la forma en que los usuarios finales interactúan con las aplicaciones.
 
 ## <a name="test-mix-model-options"></a>Opciones del modelo de combinación de pruebas
- Puede especificar una de las siguientes opciones de modelo de combinación de pruebas para el escenario de la prueba de carga:
+
+Puede especificar una de las siguientes opciones de modelo de combinación de pruebas para el escenario de la prueba de carga:
 
 -   **A partir del número total de pruebas:** determina qué prueba unitaria o de rendimiento web se ejecuta cuando un usuario virtual inicia una iteración de prueba. Al final de la prueba de carga, el número de veces que se ha ejecutado una prueba determinada coincide con la distribución de pruebas asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en porcentajes de transacciones en un registro de IIS o en datos de producción.
 
@@ -79,5 +80,5 @@ Con el Editor de pruebas de carga, puede cambiar el modelo de combinación de pr
 
 ## <a name="see-also"></a>Vea también
 
-- [Edición de escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
+- [Editar escenarios de prueba de carga](../test/edit-load-test-scenarios.md)
 - [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md)

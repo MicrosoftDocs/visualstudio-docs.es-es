@@ -1,12 +1,10 @@
 ---
-title: Usar parámetros de la línea de comandos para instalar Visual Studio | Microsoft Docs
+title: Usar parámetros de la línea de comandos para instalar Visual Studio
+description: Obtenga información sobre cómo usar parámetros de línea de comandos para controlar o personalizar la instalación de Visual Studio.
 ms.custom: ''
-ms.date: 01/17/2018
-ms.reviewer: tims
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 05/07/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -18,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
+
 Cuando instala Visual Studio 2017 desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos, puede hacer lo siguiente:
 
 - Iniciar la instalación con determinadas opciones preseleccionadas.
@@ -37,7 +36,8 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
 * [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
 
-## <a name="list-of-command-line-parameters"></a>Lista de parámetros de la línea de comandos  
+## <a name="list-of-command-line-parameters"></a>Lista de parámetros de la línea de comandos
+
  Los parámetros de la línea de comandos de Visual Studio no distinguen mayúsculas de minúsculas.
 
 > Sintaxis: `vs_enterprise.exe [command] <options>...`
@@ -101,11 +101,17 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `--nocache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se eliminan después de instalarlos o repararlos. Solo se descargarán de nuevo si es necesario y se volverán a eliminar después de su uso. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Novedad en 15.2, opcional**: si está presente, impide que el instalador se actualice automáticamente cuando se especifica el modo silencioso. El instalador producirá un error en el comando y devolverá un código de salida distinto de cero si se especifica noUpdateInstaller con el modo silencioso cuando se requiere una actualización del instalador. |
 | `--noWeb` | **Novedad de la versión 15.3, opcional**: el programa de instalación ahora descarga de Internet cualquier contenido que se esté instalando.  Todo el contenido que se esté instalando debe estar disponible en un diseño sin conexión.  Si falta contenido del diseño, no se podrá realizar la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). |
+| `--path <name>=<path>` | **Novedad en 15.7 (opcional)**: se utiliza para especificar las rutas de acceso de instalación personalizada para la instalación. Los nombre de ruta de acceso admitidos son uso compartido, caché e instalar. |
+| `--path cache=<path>` | **Novedad en 15.7 (opcional)**: utiliza la ubicación que especifique para descargar los archivos de instalación. Esta ubicación solo puede establecerse la primera vez que se instala Visual Studio. Ejemplo: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Novedad en 15.7 (opcional)**: contiene los archivos compartidos para las instalaciones en paralelo de Visual Studio. Algunas herramientas y SDK se instalan en una ubicación en esta unidad, mientras que otros pueden invalidar esta configuración e instalarse en otra unidad. Ejemplo: `--path shared="C:\VS\shared"` |
+| `--path install=<path>` | **Novedad en 15.7 (opcional)**: equivalente a `–-installPath`. En particular, `--installPath "C:\VS"` y `--path install="C:\VS"` son equivalentes. Solo se puede usar uno de los dos a la vez. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista de los id. de carga de trabajo y los id. de componente
+
 Para obtener una lista de los identificadores de componente y carga de trabajo ordenados por producto de Visual Studio, vea la página [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Lista de configuraciones regionales de idioma
+
 | **Idioma-configuración regional** | **Idioma** |
 | ----------------------- | --------------- |
 | cs-CZ | Checo |
@@ -124,6 +130,7 @@ Para obtener una lista de los identificadores de componente y carga de trabajo o
 | zh-TW | Chino (tradicional) |
 
 ## <a name="error-codes"></a>Códigos de error
+
 En función del resultado de la operación, la variable de entorno `%ERRORLEVEL%` se establecerá en uno de los valores siguientes:
 
 | **Valor** | **Resultado** |
@@ -138,16 +145,18 @@ En función del resultado de la operación, la variable de entorno `%ERRORLEVEL%
 Cada operación genera varios archivos de registro en el directorio `%TEMP%` que indican el progreso de la instalación. Ordene la carpeta por fecha y busque los archivos que empiecen por `dd_bootstrapper`, `dd_client` y `dd_setup` para el programa previo, la aplicación del instalador y el motor de configuración, respectivamente.
 
 ## <a name="get-support"></a>Obtener soporte técnico
+
 En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
+
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
 * Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+* Puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio). (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
 
- * [Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017](command-line-parameter-examples.md)
- * [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
- * [Automatizar la instalación de Visual Studio con un archivo de respuesta](automated-installation-with-response-file.md)
+* [Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017](command-line-parameter-examples.md)
+* [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Automatizar la instalación de Visual Studio con un archivo de respuesta](automated-installation-with-response-file.md)

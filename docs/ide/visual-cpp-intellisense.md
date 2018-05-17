@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C++
 
-IntelliSense para C++ está disponible para los archivos independientes y para los archivos que forman parte de un proyecto de C++. En proyectos multiplataforma, algunas características de IntelliSense están disponibles en archivos .cpp y .c en el proyecto de código compartido, aun cuando el usuario se encuentre en un contexto de Android o iOS.
+IntelliSense para C++ está disponible para los archivos independientes y para los archivos que forman parte de un proyecto de C++. En proyectos multiplataforma, algunas características de IntelliSense están disponibles en archivos *.cpp* y *.c* en el proyecto de código compartido, aun cuando el usuario se encuentre en un contexto de Android o iOS.
 
 ## <a name="intellisense-features-in-c"></a>Características de Intellisense en C++
 
@@ -73,23 +73,23 @@ Esta es una aplicación de OpenGLES que está configurada para compilarse para A
 
 Tenga en cuenta lo siguiente:
 
-- La rama #else de la línea 8 aparece en gris para indicar que se trata de una región inactiva, porque se ha definido __ANDROID\_\_ para un proyecto de Android.
+- La rama `#else` de la línea 8 aparece en gris para indicar que se trata de una región inactiva, porque se ha definido `__ANDROID__` para un proyecto de Android.
 
-- La variable de saludo de la línea 11 se inicializa con el identificador HELLO, que tiene un subrayado ondulado de color púrpura. Esto se debe a que no se ha definido ningún identificador HELLO en el proyecto de iOS actualmente inactivo. Aunque la línea 11 se compilará en un proyecto Android, no lo hará en iOS. Puesto que se trata de código compartido, es algo que debe cambiar aunque se compile en la configuración activa actualmente.
+- La variable de saludo de la línea 11 se inicializa con el identificador `HELLO`, que tiene un subrayado ondulado de color púrpura. Esto se debe a que no se ha definido ningún identificador `HELLO` en el proyecto de iOS actualmente inactivo. Aunque la línea 11 se compilará en un proyecto Android, no lo hará en iOS. Puesto que se trata de código compartido, es algo que debe cambiar aunque se compile en la configuración activa actualmente.
 
-- La línea 12 tiene un subrayado ondulado de color rojo en el identificador BYE; este identificador no está definido en el proyecto activo seleccionado actualmente.
+- La línea 12 tiene un subrayado ondulado de color rojo en el identificador `BYE`; este identificador no está definido en el proyecto activo seleccionado actualmente.
 
-Ahora cambie el proyecto activo a iOS.StaticLibrary y observe cómo cambia el subrayado ondulado.
+Ahora cambie el proyecto activo a **iOS.StaticLibrary** y observe cómo cambia el subrayado ondulado.
 
 ![iOS está seleccionado como el proyecto activo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 Tenga en cuenta lo siguiente:
 
-- La rama #ifdef de la línea 6 aparece en gris para indicar que se trata de una región inactiva, porque no se ha definido __ANDROID\_\_ para un proyecto de iOS.
+- La rama `#ifdef` de la línea 6 aparece en gris para indicar que se trata de una región inactiva, porque no se ha definido `__ANDROID__` para un proyecto de iOS.
 
-- La variable de saludo de la línea 11 se inicializa con el identificador HELLO, que ahora tiene un subrayado ondulado de color rojo. Esto se debe a que no se ha definido ningún identificador HELLO en el proyecto de iOS actualmente activo.
+- La variable de saludo de la línea 11 se inicializa con el identificador `HELLO`, que ahora tiene un subrayado ondulado de color rojo. Esto se debe a que no se ha definido ningún identificador `HELLO` en el proyecto de iOS actualmente activo.
 
-- La línea 12 tiene un subrayado ondulado de color púrpura en el identificador BYE; este identificador no está definido en el proyecto Android.NativeActivity actualmente inactivo.
+- La línea 12 tiene un subrayado ondulado de color púrpura en el identificador `BYE`; este identificador no está definido en el proyecto **Android.NativeActivity** actualmente inactivo.
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense para archivos independientes
 
@@ -97,10 +97,10 @@ Al abrir un único archivo fuera de cualquier proyecto, se sigue obteniendo Inte
 
 ![Visual C&#43;&#43; Intellisense de archivo único](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-De forma predeterminada, IntelliSense de archivo único solo utiliza directorios de inclusión estándar para buscar archivos de encabezado. Para agregar directorios adicionales, abra el menú contextual del nodo Solución y agregue el directorio a la lista **Depurar código fuente**, tal como se muestra en la siguiente ilustración:
+De forma predeterminada, IntelliSense de archivo único solo utiliza directorios de inclusión estándar para buscar archivos de encabezado. Para agregar directorios adicionales, abra el menú contextual del nodo **Solución** y agregue el directorio a la lista **Depurar código fuente**, tal como se muestra en la siguiente ilustración:
 
 ![Agregar una ruta a un archivo de encabezado.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 
 ## <a name="see-also"></a>Vea también
 
-- [Usar IntelliSense](../ide/using-intellisense.md)
+- [Uso de IntelliSense](../ide/using-intellisense.md)

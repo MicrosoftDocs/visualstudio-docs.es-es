@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ccfde67a46ac1ae1b74a031a9ec030942d12b3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8905fe471d022ff7772ded2e5e3e571b1b74968
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-implement-an-interface-class-designer"></a>Cómo: Implementar una interfaz (Diseñador de clases)
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Cómo: Implementar una interfaz en el Diseñador de clases
 
 En el **Diseñador de clases**, puede implementar una interfaz en el diagrama de clases si la conecta a una clase que proporcione código para los métodos de interfaz. El **Diseñador de clases** genera una implementación de interfaz y muestra la relación entre la interfaz y la clase como una relación de herencia. Para implementar una interfaz, dibuje una línea de herencia entre la interfaz y la clase, o bien arrastre la interfaz desde la Vista de clases.
 
@@ -34,7 +34,7 @@ En el **Diseñador de clases**, puede implementar una interfaz en el diagrama de
 
      Aparece un círculo conectado a la clase y una etiqueta con el nombre de interfaz identifica la relación de herencia. Visual Studio genera código auxiliar para todos los miembros de interfaz.
 
- Para obtener más información, vea [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md).
+Para obtener más información, vea [Cómo: Crear la herencia entre tipos](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Para implementar una interfaz desde la ventana Vista de clases
 

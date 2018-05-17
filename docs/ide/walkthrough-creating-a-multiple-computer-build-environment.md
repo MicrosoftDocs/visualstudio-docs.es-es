@@ -12,13 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c7623aff3c2aec4753f628eb9a24ecf6937275
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 392b2b5a129afe9504f306378103862d631d456e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
+# <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
 
 Se puede crear un entorno de compilación dentro de la organización si se instala Visual Studio en un equipo host y después se copian los diversos archivos y configuraciones en otro equipo para que pueda participar en las compilaciones. No es necesario instalar Visual Studio en el otro equipo.
 
@@ -70,21 +70,21 @@ Al instalar Visual Studio en el equipo host, se crean los archivos y las configu
 
 1. En el equipo host, instale Visual Studio.
 
-2. En el equipo de compilación, instale .NET Framework 4.5. Para comprobar que está instalado, asegúrese de que el valor de la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version comienza con "4.5".
+2. En el equipo de compilación, instale .NET Framework 4.5. Para comprobar que está instalado, asegúrese de que el valor de la clave del Registro **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET FrameworkSetup\NDP\v4\Full@Version** comienza con "4.5".
 
 ## <a name="CopyingFiles"></a> Copiar archivos del equipo host al equipo de compilación
 
 En esta sección se explica cómo copiar los archivos, compiladores, herramientas de compilación, activos de MSBuild y configuraciones del Registro necesarios del equipo host al equipo de compilación. En estas instrucciones se da por supuesto que ha instalado Visual Studio en la ubicación predeterminada en el equipo host; si lo instaló en otra ubicación, ajuste los pasos en consecuencia.
 
-- En un equipo x86, la ubicación predeterminada es C:\Archivos de programa\Microsoft Visual Studio 11.0\
-- En un equipo x64, la ubicación predeterminada es C:\Archivos de programa (x86)\Microsoft Visual Studio 11.0\
+- En un equipo x86, la ubicación predeterminada es *C:\Archivos de programa\Microsoft Visual Studio 11.0*
+- En un equipo x64, la ubicación predeterminada es *C:\Archivos de programa (x86)\Microsoft Visual Studio 11.0*
 
-Tenga en cuenta que el nombre de la carpeta Archivos de programa depende del sistema operativo instalado. En un equipo x86, el nombre es \Archivos de programa\\, mientras que en un equipo x64 es \Archivos de programa (x86)\\. Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta Archivos de programa como %ProgramFiles%.
+Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del sistema operativo instalado. En un equipo x86, el nombre es *Archivos de programa*, mientras que en un equipo x64 es *Archivos de programa (x86)*. Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta *Archivos de programa* como *%ProgramFiles%*.
 
 > [!NOTE]
 > En el equipo de compilación, todos los archivos pertinentes deben estar en la misma unidad; sin embargo, la letra de esa unidad puede ser diferente que la de la unidad donde está instalado Visual Studio en el equipo host. En cualquier caso, debe tener en cuenta la ubicación de los archivos cuando cree entradas del Registro como se describe más adelante en este documento.
 
-#### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Para copiar los archivos de Windows SDK en el equipo de compilación
+#### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Copiar los archivos de Windows SDK en el equipo de compilación
 
 1. Si solo tiene instalado Windows SDK para Windows 8, copie estas carpetas de forma recursiva del equipo host al equipo de compilación:
 
@@ -110,7 +110,7 @@ Tenga en cuenta que el nombre de la carpeta Archivos de programa depende del sis
 
     - Kit para la certificación de hardware en Microsoft Windows
 
-     …pueden tener instalados archivos en las carpetas %ProgramFiles%\Windows Kits\8.0\ enumeradas en el paso anterior, y sus términos de licencia quizás no permitan derechos de servidor de compilación para esos archivos. Consulte los términos de licencia de todos los kits de Windows instalados para comprobar si se pueden copiar archivos en el equipo de compilación. Si los términos de licencia no permiten derechos de servidor de compilación, quite los archivos del equipo de compilación.
+     …pueden tener instalados archivos en las carpetas *%ProgramFiles%\Windows Kits\8.0* enumeradas en el paso anterior, y sus términos de licencia quizás no permitan derechos de servidor de compilación para esos archivos. Consulte los términos de licencia de todos los kits de Windows instalados para comprobar si se pueden copiar archivos en el equipo de compilación. Si los términos de licencia no permiten derechos de servidor de compilación, quite los archivos del equipo de compilación.
 
 2. Copie las siguientes carpetas de forma recursiva del equipo host al equipo de compilación:
 
@@ -146,7 +146,7 @@ Tenga en cuenta que el nombre de la carpeta Archivos de programa depende del sis
 
     - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat
 
-4. Las siguientes bibliotecas en tiempo de ejecución de Visual C++ solo se requieren si ejecuta resultados de la compilación en el equipo de compilación, por ejemplo, como parte de pruebas automatizadas. Los archivos suelen encontrarse en subcarpetas bajo la carpeta %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ o %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\, según la arquitectura del sistema. En los sistemas x86, copie los archivos binarios x86 a la carpeta \Windows\System32\. En los sistemas x64, copie los archivos binarios x86 a la carpeta Windows\SysWOW64\ y los archivos binarios x64 a la carpeta Windows\System32\.
+4. Las siguientes bibliotecas en tiempo de ejecución de Visual C++ solo se requieren si ejecuta resultados de la compilación en el equipo de compilación, por ejemplo, como parte de pruebas automatizadas. Los archivos suelen encontrarse en subcarpetas bajo la carpeta *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86* o *%ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64*, según la arquitectura del sistema. En los sistemas x86, copie los archivos binarios x86 a la carpeta *Windows\System32*. En los sistemas x64, copie los archivos binarios x86 a la carpeta *Windows\SysWOW64* y los archivos binarios x64 a la carpeta *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -186,7 +186,7 @@ Tenga en cuenta que el nombre de la carpeta Archivos de programa depende del sis
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Copie solo los siguientes archivos de la carpeta \Debug_NonRedist\x86\ o \Debug_NonRedist\x64\ al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). No se puede copiar ningún otro archivo.
+5. Copie solo los siguientes archivos de la carpeta *Debug_NonRedist\x86* o *Debug_NonRedist\x64* al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). No se puede copiar ningún otro archivo.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -207,9 +207,7 @@ Tenga en cuenta que el nombre de la carpeta Archivos de programa depende del sis
 ##  <a name="CreatingRegistry"></a> Crear la configuración del Registro
  Debe crear entradas del Registro para configurar los valores de MSBuild.
 
-#### <a name="to-create-registry-settings"></a>Para crear la configuración del Registro
-
-1. Identifique la carpeta primaria para las entradas del Registro. Todas las entradas del Registro se crean bajo la misma clave primaria. En un equipo x86, la clave primaria es HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. En un equipo x64, la clave primaria es HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Con independencia de la arquitectura del sistema, en este tutorial se hace referencia a la clave primaria como %RegistryRoot%.
+1. Identifique la carpeta primaria para las entradas del Registro. Todas las entradas del Registro se crean bajo la misma clave primaria. En un equipo x86, la clave primaria es **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. En un equipo x64, la clave primaria es **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Con independencia de la arquitectura del sistema, en este tutorial se hace referencia a la clave primaria como %RegistryRoot%.
 
     > [!NOTE]
     > Si la arquitectura del equipo host es distinta de la del equipo de compilación, asegúrese de utilizar la clave primaria adecuada en cada equipo. Esto es especialmente importante si desea automatizar el proceso de exportación.
@@ -218,63 +216,63 @@ Tenga en cuenta que el nombre de la carpeta Archivos de programa depende del sis
 
 2. Cree las entradas del Registro siguientes en el equipo de compilación. Todas estas entradas son cadenas (Tipo == "REG_SZ" en el Registro). Establezca los mismos valores para estas entradas y para las entradas comparables en el equipo host.
 
-    - %RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)
+    - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder**
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder**
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder**
 
-    - %RegistryRoot%\VisualStudio\11.0@Source Directories
+    - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
 
-    - %RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir
+    - **%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64**
 
-    - %RegistryRoot%\VisualStudio\SxS\VC7@11.0
+    - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-    - %RegistryRoot%\VisualStudio\SxS\VS7@11.0
+    - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
-    - %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot
+    - **%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot**
 
-    - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath
+    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
 
-    - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10
+    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
 
-    - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
+    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
      En un equipo de compilación x64, cree también siguiente la entrada del Registro y consulte el equipo host para determinar cómo establecerla.
 
-    - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder
+    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
 
      Si el equipo de compilación es x64 y desea utilizar la versión de 64 bits de MSBuild, o si está utilizando el servicio de compilación de Team Foundation Server en un equipo x64, debe crear las entradas del Registro siguientes en el registro nativo de 64 bits. Consulte el equipo host para determinar cómo establecer estas entradas.
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
 ## <a name="SettingEnvVariables"></a> Establecer variables de entorno en el equipo de compilación
 
-Para utilizar MSBuild en el equipo de compilación, debe establecer las variables de entorno PATH. Puede utilizar vcvarsall.bat para establecer las variables o puede configurarlas manualmente.
+Para utilizar MSBuild en el equipo de compilación, debe establecer las variables de entorno PATH. Puede utilizar *vcvarsall.bat* para establecer las variables o puede configurarlas manualmente.
 
-### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>Para utilizar vcvarsall.bat con el fin de establecer variables de entorno
+### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Utilizar vcvarsall.bat con el fin de establecer variables de entorno
 
-- Abra una ventana de símbolo del sistema en el equipo de compilación y ejecute %Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat. Puede usar un argumento de línea de comandos para especificar el conjunto de herramientas que desea usar: x86, x64 nativo o compilador cruzado de x64. Si no especifica ningún argumento de la línea de comandos, se utiliza el conjunto de herramientas de x86.
+- Abra una ventana de **símbolo del sistema** en el equipo de compilación y ejecute *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*. Puede usar un argumento de línea de comandos para especificar el conjunto de herramientas que desea usar: x86, x64 nativo o compilador cruzado de x64. Si no especifica ningún argumento de la línea de comandos, se utiliza el conjunto de herramientas de x86.
 
-     En esta tabla se describen los argumentos admitidos para vcvarsall.bat:
+     En esta tabla se describen los argumentos admitidos para *vcvarsall.bat*:
 
     |Argumento de vcvarsall.bat|Compilador|Arquitectura del equipo de compilación|Arquitectura de salida de compilación|
     |----------------------------|--------------|---------------------------------|-------------------------------|
@@ -282,9 +280,9 @@ Para utilizar MSBuild en el equipo de compilación, debe establecer las variable
     |x86_amd64|Cruzado de x64|x86, x64|x64|
     |amd64|Nativo de x64|x64|x64|
 
-     Si vcvarsall.bat se ejecuta correctamente (es decir, no se muestra ningún mensaje de error), puede omitir el paso siguiente y continuar a la sección [Instalar ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) de este documento.
+     Si *vcvarsall.bat* se ejecuta correctamente (es decir, no se muestra ningún mensaje de error), puede omitir el paso siguiente y continuar a la sección [Instalar ensamblados de MSBuild en la caché global de ensamblados (GAC) en el equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) de este documento.
 
-### <a name="to-manually-set-environment-variables"></a>Para establecer manualmente variables de entorno
+### <a name="manually-set-environment-variables"></a>Establecer manualmente variables de entorno
 
 1. Para configurar manualmente el entorno de la línea de comandos, agregue esta ruta de acceso a la variable de entorno PATH:
 
@@ -316,9 +314,9 @@ MSBuild requiere la instalación de algunos ensamblados adicionales en la GAC de
 
     - %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. Para instalar los ensamblados en la GAC, busque gacutil.exe en el equipo de compilación; normalmente está en %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Si no encuentra esta carpeta, repita los pasos de la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) de este tutorial.
+2. Para instalar los ensamblados en la GAC, busque *gacutil.exe* en el equipo de compilación; normalmente está en %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Si no encuentra esta carpeta, repita los pasos de la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) de este tutorial.
 
-     Abra una ventana de símbolo del sistema que tenga derechos administrativos y ejecute este comando para cada archivo:
+     Abra una ventana de **símbolo del sistema** que tenga derechos administrativos y ejecute este comando para cada archivo:
 
      **gacutil -i \<file>**
 
@@ -329,7 +327,7 @@ MSBuild requiere la instalación de algunos ensamblados adicionales en la GAC de
 
 Puede utilizar Team Foundation Build para compilar proyectos y soluciones de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] o puede compilarlos en la línea de comandos. Cuando se utiliza Team Foundation Build para compilar proyectos, invoca el ejecutable de MSBuild correspondiente a la arquitectura del sistema. En la línea de comandos, puede utilizar MSBuild de 32 bits o MSBuild 64 bits, y puede elegir la arquitectura de MSBuild estableciendo la variable de entorno PATH o invocando directamente el archivo ejecutable de MSBuild específico de la arquitectura.
 
-Para usar msbuild.exe en el símbolo del sistema, ejecute el comando siguiente, donde *solution.sln* es un marcador de posición para el nombre de la solución.
+Para usar *msbuild.exe* en el símbolo del sistema, ejecute el comando siguiente, donde *solution.sln* es un marcador de posición para el nombre de la solución.
 
 **msbuild** *solution.sln*
 
@@ -345,17 +343,17 @@ Para más información sobre cómo usar MSBuild en la línea de comandos, vea [R
 Puede crear un entorno de compilación que se pueda implementar en varios equipos y no requiera almacenar archivos en la GAC ni modificar configuraciones del Registro. Los pasos siguientes son simplemente una forma de realizarlo. Adapte estos pasos a las características únicas de su entorno de compilación.
 
 > [!NOTE]
-> Debe deshabilitar la compilación incremental de modo que tracker.exe no produzca ningún error durante una compilación. Para deshabilitar la compilación incremental, establezca este parámetro de compilación:
+> Debe deshabilitar la compilación incremental de modo que *tracker.exe* no produzca ningún error durante una compilación. Para deshabilitar la compilación incremental, establezca este parámetro de compilación:
 >
 > **msbuild** *solution.sln* **/p:TrackFileAccess=false**
 
-1. Cree un directorio "Depot" en el equipo host.
+1. Cree un directorio *Depot* en el equipo host.
 
      En estos pasos se hace referencia al directorio como %Depot%.
 
-2. Copie los directorios y los archivos como se describe en la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) de este tutorial, pero péguelos en el directorio %Depot% recién creado. Por ejemplo, copie de %ProgramFiles%\Windows Kits\8.0\bin\ a %Depot%\Windows Kits\8.0\bin\\.
+2. Copie los directorios y los archivos como se describe en la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) de este tutorial, pero péguelos en el directorio *%Depot%* recién creado. Por ejemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* a *%Depot%\Windows Kits\8.0\bin*.
 
-3. Cuando los archivos se hayan pegado en %Depot%, realice estos cambios:
+3. Cuando los archivos se hayan pegado en *%Depot%*, realice estos cambios:
 
     - En %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ y \Microsoft.CppCommon.targets\\, cambie cada instancia de
 
@@ -375,7 +373,7 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
-4. Cree un archivo .props (por ejemplo, Partner.AutoImports.props) y póngalo en la raíz de la carpeta que contiene los proyectos. Este archivo se usa para establecer las variables utilizadas por MSBuild para buscar diversos recursos. Si las variables no se establecen con este archivo, se establecen mediante otros archivos .props y .targets que dependen de las configuraciones del Registro. Puesto que no vamos a establecer ninguna configuración del Registro, estas variables estarán vacías y se produciría un error de compilación. En su lugar, agregue esto a Partner.AutoImports.props:
+4. Cree un archivo *.props* (por ejemplo, *Partner.AutoImports.props*) y póngalo en la raíz de la carpeta que contiene los proyectos. Este archivo se usa para establecer las variables utilizadas por MSBuild para buscar diversos recursos. Si las variables no se establecen con este archivo, se establecen mediante otros archivos *.props* y *.targets* que dependen de las configuraciones del Registro. Puesto que no vamos a establecer ninguna configuración del Registro, estas variables estarán vacías y se produciría un error de compilación. En su lugar, agregue esto a *Partner.AutoImports.props*:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

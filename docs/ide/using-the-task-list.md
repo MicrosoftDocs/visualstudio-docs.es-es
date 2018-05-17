@@ -1,5 +1,5 @@
 ---
-title: Usar la Lista de tareas
+title: Uso de la lista de tareas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fb071186d816e852c695ffe1cceed29d23ff8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="using-the-task-list"></a>Usar la Lista de tareas
+# <a name="use-the-task-list"></a>Uso de la lista de tareas
 
 Use la **Lista de tareas** para hacer un seguimiento de los comentarios de código que usan tokens como `TODO` y `HACK`(o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida del código. Haga clic en el elemento de la lista para ir a su ubicación en el código fuente.
 
@@ -30,29 +30,29 @@ Use la **Lista de tareas** para hacer un seguimiento de los comentarios de códi
 
 Cuando la ventana **Lista de tareas** está abierta, aparece en la parte inferior de la ventana de la aplicación.
 
-### <a name="to-open-the-task-list"></a>Para abrir la Lista de tareas
+### <a name="open-the-task-list"></a>Abrir la Lista de tareas
 
-- En el menú **Ver**, elija **Lista de tareas** (teclado: CTRL+\\, T).
+- En el menú **Ver**, elija **Lista de tareas** (teclado: **CTRL**+**\\**,**T**).
 
     ![Ventana Lista de tareas](../ide/media/vs2015_task_list.png "vs2015_task_list")
 
-### <a name="to-change-the-sort-order-of-the-list"></a>Para cambiar el criterio de ordenación de la lista
+### <a name="change-the-sort-order-of-the-list"></a>Cambiar el criterio de ordenación de la lista
 
 - Haga clic en el encabezado de cualquier columna. Para refinar los resultados de la búsqueda, presione la tecla Mayúsculas y haga clic en otro encabezado de columna.
 
-     Como alternativa, en el menú contextual, elija **Ordenar por**y elija un encabezado. Para refinar los resultados de la búsqueda, presione la tecla Mayúsculas y elija un segundo encabezado de columna.
+     Como alternativa, en el menú contextual, elija **Ordenar por**y elija un encabezado. Para refinar los resultados de la búsqueda, presione la tecla **Mayúsculas** y elija un segundo encabezado de columna.
 
-### <a name="to-show-or-hide-columns"></a>Para mostrar u ocultar columnas
+### <a name="show-or-hide-columns"></a>Mostrar u ocultar columnas
 
 - En el menú contextual, elija **Mostrar columnas**. Elija las columnas que desee mostrar u ocultar.
 
-### <a name="to-change-the-order-of-the-columns"></a>Para cambiar el orden de las columnas
+### <a name="change-the-order-of-the-columns"></a>Cambiar el orden de las columnas
 
 - Arrastre cualquier encabezado de columna hasta la ubicación que desee.
 
 ## <a name="user-tasks"></a>Tareas de usuario
 
-La característica de tareas de usuario se retiró en Visual Studio 2015 y versiones posteriores. Cuando se abre una solución que tiene datos de tareas de usuario de Visual Studio 2013 y versiones anteriores, dichos datos no se verán afectados en el archivo .suo, pero las tareas de usuario no se mostrarán en la lista de tareas.
+La característica de tareas de usuario se retiró en Visual Studio 2015 y versiones posteriores. Cuando se abre una solución que tiene datos de tareas de usuario de Visual Studio 2013 y versiones anteriores, dichos datos no se verán afectados en el archivo *.suo*, pero las tareas de usuario no se mostrarán en la lista de tareas.
 
 Si desea seguir teniendo acceso y actualizar los datos de tareas de usuario, debe abrir el proyecto en Visual Studio 2013 y copiar el contenido de las tareas de usuario en la herramienta de administración de proyecto preferido (por ejemplo, Team Foundation Server).
 
@@ -74,11 +74,11 @@ Dado que `TODO` es un token predefinido, este comentario aparece como una tarea 
 
 ###  <a name="customTokens"></a> Tokens personalizados
 
-De forma predeterminada, Visual Studio incluye los tokens siguientes: HACK, TODO, UNDONE, NOTE. Estos no distinguen mayúsculas de minúsculas.
+De forma predeterminada, Visual Studio incluye los tokens siguientes: `HACK`, `TODO`, `UNDONE` y `NOTE`. Estos no distinguen mayúsculas de minúsculas.
 
 También puede crear tokens propios personalizados.
 
-#### <a name="to-create-a-custom-token"></a>Para crear un token personalizado
+#### <a name="create-a-custom-token"></a>Crear un token personalizado
 
 1. En el menú **Herramientas** , elija **Opciones**.
 
@@ -96,7 +96,7 @@ También puede crear tokens propios personalizados.
 
 De forma predeterminada, los comentarios TODO en C++ no se muestran en la ventana **Lista de tareas** . Esto se puede cambiar:
 
-#### <a name="to-turn-off-c-todo-comments"></a>Para desactivar los comentarios TODO en C++
+#### <a name="turn-off-c-todo-comments"></a>Desactivar los comentarios TODO en C++
 
 En el menú **Herramientas**, elija **Opciones** > **Editor de texto** > **C/C++** > **Vista** > **Enumerar tareas de comentario** y establezca el valor en false.
 
@@ -106,9 +106,9 @@ Un *acceso directo* es un marcador en el código al que se le realiza el seguimi
 
 ![Icono de acceso directo a la Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
 
-### <a name="to-create-a-shortcut"></a>Para crear un acceso directo
+### <a name="create-a-shortcut"></a>Crear un acceso directo
 
-Para crear un acceso directo, inserte el puntero donde quiera colocar un acceso directo en el código. Elija **Edición** > **Marcadores** > **Agregar acceso directo de la Lista de tareas** o presione **CTRL** + **K**, **CTRL** + **H**.
+Para crear un acceso directo, inserte el puntero donde quiera colocar un acceso directo en el código. Elija **Edición** > **Marcadores** > **Agregar acceso directo de la Lista de tareas** o presione **CTRL**+**K**, **CTRL**+**H**.
 
 Para navegar por los accesos directos en el código, elija un acceso directo de la lista y, después, elija **Tarea siguiente** o **Tarea anterior** en el menú contextual.
 

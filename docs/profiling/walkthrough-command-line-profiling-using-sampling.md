@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 941597abd21d62501546860cf9cc8adc8fc6de2d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Tutorial: Generar perfiles utilizando el método de muestreo en la línea de comandos
 
@@ -54,13 +54,13 @@ El muestreo es un método de generación de perfiles mediante el cual un proceso
 
 4. Escriba el comando siguiente para establecer las variables de entorno adecuadas:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleon
     ```
 
 5. Inicie la generación de perfiles ejecutando VSPerfCmd.exe, que es la herramienta de la línea de comandos que controla el generador de perfiles. El comando siguiente inicia la aplicación y el generador de perfiles en modo de muestreo:
 
-    ```
+    ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
@@ -76,13 +76,13 @@ El muestreo es un método de generación de perfiles mediante el cual un proceso
 
 9. Cierre el generador de perfiles. Escriba el comando siguiente:
 
-    ```
+    ```cmd
     VSPerfCmd /shutdown
     ```
 
 10. Use el comando siguiente para restablecer las variables de entorno:
 
-    ```
+    ```cmd
     VSPerfCLREnv /sampleoff
     ```
 
@@ -94,7 +94,7 @@ El muestreo es un método de generación de perfiles mediante el cual un proceso
 
     - Genere un archivo de informes de valores separados por comas (.csv) utilizando la herramienta de línea de comandos VSPerfReport.exe. Para generar informes para usar fuera del IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], use el comando siguiente:
 
-        ```
+        ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all
         ```
 

@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Paso 6 del tutorial: Uso de la plantilla Proyecto web de Django de sondeos
 
@@ -361,7 +361,7 @@ La llamada a `admin.site.register` conecta entonces esa clase al modelo (`Poll`)
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!Note]
-> Si ha estado confirmando la solución de Visual Studio en el control de código fuente en el transcurso de este tutorial, ahora es un buen momento de hacer otra confirmación. La solución debe coincidir con el código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learn-django](https://github.com/Microsoft/python-sample-vs-learn-django).
+> Si ha estado confirmando la solución de Visual Studio en el control de código fuente en el transcurso de este tutorial, ahora es un buen momento de hacer otra confirmación. La solución debe coincidir con el código fuente del tutorial en GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Ya ha explorado por completo las plantillas "Proyecto web de Django en blanco", "Proyecto web de Django" y "Proyecto web de Django de sondeos" en Visual Studio. Ha aprendido todos los elementos básicos de Django, como el uso de vistas y plantillas, y ha explorado el enrutamiento, la autenticación y el uso de modelos de base de datos. Ahora podrá crear una aplicación web propia con las vistas y los modelos que necesite.
 

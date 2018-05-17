@@ -3,21 +3,21 @@ title: Beneficio de soporte prioritario en las suscripciones de Visual Studio | 
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/16/2018
+ms.date: 05/07/2018
 ms.topic: Get-Started-Article
 description: Obtenga información sobre la ventaja Soporte prioritario incluida en las suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5353bb4dda9da754db7b00d96450df162c5a6d38
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Soporte prioritario en suscripciones de Visual Studio
 
-El beneficio de soporte prioritario le brinda acceso a diferentes foros de la comunidad de soporte, donde puede buscar publicaciones existentes o plantear nuevas preguntas.  Si no se responde a su pregunta por la comunidad en los dos días, el equipo de soporte técnico de Microsoft proporcionará una respuesta.  
+El beneficio de soporte prioritario le brinda acceso a diferentes foros de la comunidad de soporte, donde puede buscar publicaciones existentes o plantear nuevas preguntas.  Si la comunidad no responde a su pregunta en dos días, el equipo de soporte técnico de Microsoft le proporcionará una respuesta.  
 
 Los suscriptores con determinadas suscripciones de Visual Studio pueden recibir asistencia prioritaria a través de un gran número de foros que abarcan diferentes temas.
 
@@ -214,7 +214,7 @@ Es muy sencillo acceder al soporte técnico prioritario.
 ## <a name="eligibility"></a>Elegibilidad
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, NFR seleccionado<sup>1</sup> | Included       |  Sí          |
+| Visual Studio Enterprise (estándar, de nube anual)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Included       |  Sí          |
 | Visual Studio Professional (estándar, de nube anual) | Licencia por volumen, Azure, venta directa                                       | Included                                                            |Sí |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Included                                                            |Sí |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Included                                                            |Sí |

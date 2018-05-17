@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f71b91b606eb10947f6b794d6311efe6627bd12e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 52dd9ccce2d7ea2aab36895c186c25ad5207de7a
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="stopprofile"></a>StopProfile
 La función `StopProfile` establece el contador en 0 (desactivado) para el nivel de generación de perfiles especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(  
                        PROFILE_CONTROL_LEVEL Level,   
                        unsigned int dwId);  
@@ -73,7 +73,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra el método StopProfile. En el ejemplo se da por supuesto que se ha realizado una llamada al método StartProfile para el mismo subproceso o proceso que identifica [PROFILE_CURRENTID](../profiling/profile-currentid.md).  
   
-```  
+```cpp  
 void ExerciseStopProfile()  
 {  
     // StartProfile and StopProfile control the   

@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e134db79df1457b3308fc86b2fbe2b133d8ce86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="startprofile"></a>StartProfile
 La función `StartProfile` establece el contador en 1 (activado) para el nivel de generación de perfiles especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(  
                         PROFILE_CONTROL_LEVEL Level,   
                         unsigned int dwId);  
@@ -73,7 +73,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="example"></a>Ejemplo  
  En el ejemplo siguiente se muestra el uso de la llamada de función StartProfile.  
   
-```  
+```cpp  
 void ExerciseStartProfile()  
 {  
     // StartProfile and StopProfile control the  
