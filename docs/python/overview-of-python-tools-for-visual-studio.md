@@ -1,7 +1,7 @@
 ---
 title: Introducción a la compatibilidad de Python en Visual Studio en Windows
 description: Resumen de características de Python en Visual Studio, que lo convierten en el mejor IDE de Python en Windows (también conocidas como Herramientas de Python para Visual Studio, PTVS).
-ms.date: 05/07/2018
+ms.date: 04/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e86f8f856963a979b8e64ba0e613cdb73685a9a0
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Trabajo con Python en Visual Studio en Windows
 
