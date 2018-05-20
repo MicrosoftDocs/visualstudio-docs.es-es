@@ -1,12 +1,13 @@
 ---
-title: "reducir (método, Array) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: reducir (método, Array) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>reduce (Método, Array de JavaScript)
 Llama a la función de devolución de llamada especificado para todos los elementos de una matriz. El valor devuelto de la función de devolución de llamada es el resultado acumulado, y se proporciona como un argumento en la siguiente llamada a dicha función.  
@@ -39,10 +40,10 @@ array1.reduce(callbackfn[, initialValue])
   
 #### <a name="parameters"></a>Parámetros  
   
-|Parámetro|Definición|  
+|Parámetro|de esquema JSON|  
 |---------------|----------------|  
-|`array1`|Obligatorio. Objeto de matriz.|  
-|`callbackfn`|Obligatorio. Una función que acepta hasta cuatro argumentos. El método `reduce` llama a la función `callbackfn` una vez para cada elemento de la matriz.|  
+|`array1`|Requerido. Objeto de matriz.|  
+|`callbackfn`|Requerido. Una función que acepta hasta cuatro argumentos. El método `reduce` llama a la función `callbackfn` una vez para cada elemento de la matriz.|  
 |`initialValue`|Opcional. Si `initialValue` se especifica, se utiliza como valor inicial para iniciar la acumulación. La primera llamada a la `callbackfn` función proporciona este valor como argumento en lugar de un valor de matriz.|  
   
 ## <a name="return-value"></a>Valor devuelto  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>Comentarios  
  Si un `initialValue` se proporciona, el `reduce` llamadas al método el `callbackfn` funcionar una vez por cada elemento presente en la matriz, en orden de índice ascendente. Si un `initialValue` no se proporciona, el `reduce` llamadas al método el `callbackfn` función en cada elemento, empezando por el segundo elemento.  
   
- El valor devuelto de la función de devolución de llamada se proporciona como el `previousValue` argumento en la siguiente llamada a la función de devolución de llamada. El valor devuelto de la última llamada a la función de devolución de llamada es el valor devuelto de la `reduce` método.  
+ El valor devuelto de la función de devolución de llamada se proporciona como el `accumulator` argumento en la siguiente llamada a la función de devolución de llamada. El valor devuelto de la última llamada a la función de devolución de llamada es el valor devuelto de la `reduce` método.  
   
  Para los elementos que faltan en la matriz, no se llama a la función de devolución de llamada.  
   
@@ -68,15 +69,15 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>Sintaxis de la función de devolución de llamada  
  La sintaxis de la función de devolución de llamada es la siguiente:  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  Puede declarar la función de devolución de llamada mediante el uso de hasta cuatro parámetros.  
   
  En la tabla siguiente se muestran los parámetros de la función de devolución de llamada.  
   
-|Argumento de devolución de llamada|Definición|  
+|Argumento de devolución de llamada|de esquema JSON|  
 |-----------------------|----------------|  
-|`previousValue`|El valor de la llamada anterior a la función de devolución de llamada. Si un `initialValue` se proporciona a la `reduce` método, el `previousValue` es `initialValue` la primera vez que se llama a la función.|  
+|`accumulator`|El valor de la llamada anterior a la función de devolución de llamada. Si un `initialValue` se proporciona a la `reduce` método, el `accumulator` es `initialValue` la primera vez que se llama a la función.|  
 |`currentValue`|El valor del elemento de matriz actual.|  
 |`currentIndex`|El índice numérico del elemento de matriz actual.|  
 |`array1`|Objeto Array que contiene el elemento.|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  Si un `initialValue` se proporciona al método reduce:  
   
--   El argumento `previousValue` es `initialValue`.  
+-   El argumento `accumulator` es `initialValue`.  
   
 -   El `currentValue` argumento es el valor del primer elemento presente en la matriz.  
   
  Si un `initialValue` no se proporciona:  
   
--   El `previousValue` argumento es el valor del primer elemento presente en la matriz.  
+-   El `accumulator` argumento es el valor del primer elemento presente en la matriz.  
   
 -   El `currentValue` argumento es el valor del segundo elemento presente en la matriz.  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |El elemento se elimina de la matriz.|No, a menos que el elemento se haya pasado ya a la función de devolución de llamada.|  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo siguiente se concatenan valores de la matriz en una cadena, separe los valores con "::". Dado que se proporciona ningún valor inicial para la `reduce` método, la primera llamada a la función de devolución de llamada tiene "abc" como el `previousValue` argumento y "def" como el `currentValue` argumento.  
+ En el ejemplo siguiente se concatenan valores de la matriz en una cadena, separe los valores con "::". Dado que se proporciona ningún valor inicial para la `reduce` método, la primera llamada a la función de devolución de llamada tiene "abc" como el `accumulator` argumento y "def" como el `currentValue` argumento.  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  El ejemplo siguiente agrega los valores en una matriz. El `currentIndex` y `array1` parámetros se usan en la función de devolución de llamada.  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  En el ejemplo siguiente se obtiene una matriz que contiene únicamente los valores que están comprendidos entre 1 y 10 en otra matriz. El valor inicial proporcionado para el `reduce` método es una matriz vacía.  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  

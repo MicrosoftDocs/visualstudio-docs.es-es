@@ -1,5 +1,5 @@
 ---
-title: Arquitectura de soluciones de Office en Visual Studio | Documentos de Microsoft
+title: Arquitectura de soluciones de Office en Visual Studio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,13 +17,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3796ba362102f1628e218a730d10fc600c744262
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="architecture-of-office-solutions-in-visual-studio"></a>Arquitectura de las soluciones de Office en Visual Studio
+# <a name="architecture-of-office-solutions-in-visual-studio"></a>Arquitectura de soluciones de Office en Visual Studio
   Los temas de esta sección proporcionan información sobre cómo funcionan las soluciones creadas con Office Developer Tools en Visual Studio.  
   
 > [!NOTE]  
@@ -36,23 +36,23 @@ ms.lasthandoff: 04/28/2018
  [Arquitectura de complementos VSTO](../vsto/architecture-of-vsto-add-ins.md)  
  Describe los componentes de complementos de VSTO y cómo los cargan las aplicaciones.  
   
- [Información general sobre el motor en tiempo de ejecución de Visual Studio Tools para Office](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
+ [Visual Studio Tools para Office Runtime Introducción](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  Describe las distintas versiones del tiempo de ejecución que se utiliza para las soluciones de Office.  
   
- [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)  
+ [Entradas del registro para complementos VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
  Describe las claves del registro que necesitan los equipos de usuarios finales para detectar y cargar complementos de VSTO.  
   
- [Información general sobre propiedades personalizadas del documento](../vsto/custom-document-properties-overview.md)  
+ [Información general sobre propiedades de documento personalizadas](../vsto/custom-document-properties-overview.md)  
  Explica cómo funcionan las propiedades personalizadas del documento en las personalizaciones de nivel de documento.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Proporciona una introducción al uso de Microsoft Office como plataforma para el desarrollo de soluciones empresariales.  
   
- [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Proporciona vínculos a información acerca de cómo configurar un equipo de desarrollo para crear soluciones de Office, cómo empezar a crear soluciones y qué cambios se han producido desde las versiones anteriores de Office Developer Tools en Visual Studio.  
   
- [Diseño y creación de soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
  Proporciona vínculos a información sobre la creación de soluciones de Office.  
   
  [Referencia general &#40;desarrollo de Office en Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  

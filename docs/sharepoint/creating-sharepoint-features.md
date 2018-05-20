@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16c7405cfe889808f27dbb274f7f685e949889dd
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-sharepoint-features"></a>Crear características de SharePoint
   Puede usar una característica de SharePoint para agrupar elementos relacionados de proyecto de SharePoint para una implementación más sencilla. Puede crear características, establecer ámbitos y marcar otras características como dependencias utilizando el Diseñador de características de SharePoint. El diseñador también genera un manifiesto, que es un archivo XML que describe cada característica.  
@@ -42,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
 |Property|Descripción|  
 |--------------|-----------------|  
-|Title|Opcional. El título predeterminado de la característica está establecido en *SolutionName ** NombreCaracterística*.|  
+|Title|Opcional. El título predeterminado de la característica está establecido en *nombresolución* *NombreCaracterística*.|  
 |Descripción|Opcional. La descripción de la característica de SharePoint.|  
 |Ámbito|Requerido. Si una característica se crea mediante el uso de **el Explorador de soluciones**, el ámbito está establecido en Web de forma predeterminada.<br /><br /> -Granja: Activar una característica para una granja de servidores completa.<br /><br /> -Sitio: Activar una característica para todos los sitios web en una colección de sitios.<br /><br /> -Web: Activar una característica para un sitio web específico.<br /><br /> -WebApplication: Activar una característica para todos los sitios web en una aplicación web.|  
 |Elementos de la solución|Todos los elementos de SharePoint que se pueden agregar a la característica.|  

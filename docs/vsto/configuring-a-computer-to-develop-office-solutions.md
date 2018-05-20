@@ -1,5 +1,5 @@
 ---
-title: Configurar un equipo para desarrollar soluciones de Office | Documentos de Microsoft
+title: Configurar un equipo para desarrollar soluciones de Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59c00639ce839962c06cacf3c036a5cd8f74b508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58458b51115834b5b94e858676ee8039d5894c70
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="configuring-a-computer-to-develop-office-solutions"></a>Configurar un equipo para desarrollar soluciones de Office
+# <a name="configure-a-computer-to-develop-office-solutions"></a>Configurar un equipo para desarrollar soluciones de Office
 
 Para crear complementos y personalizaciones de VSTO para Microsoft Office, instale una versión compatible de Visual Studio, .NET Framework y Microsoft Office.
 
@@ -43,16 +43,16 @@ Si instala una versión compatible de Visual Studio, .NET Framework y Microsoft 
 
      Para asegurarse de que estas herramientas se instalan, inicie el programa de instalación de Visual Studio y elija la **modificar** botón. Active la casilla **Microsoft Office Developer Tools** y después elija el botón **Actualizar** .
 
-- Asegúrese de que no se está ejecutando una versión de Office entregada por medio de hacer clic en ejecutar. Vea [Cómo: Comprobar si Outlook es una aplicación de hacer clic y ejecutar en un equipo](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Asegúrese de que no se está ejecutando una versión de Office entregada por medio de hacer clic en ejecutar. Vea [Cómo: comprobar si Outlook es una aplicación de hacer clic para ejecutar en un equipo](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
 
 - Asegúrese de que se ejecuta solo una versión de Microsoft Office.
 
-Si sigue teniendo problemas, vea [Additional Support for Errors in Office Solutions](../vsto/additional-support-for-errors-in-office-solutions.md).
+Si sigue teniendo problemas, consulte [compatibilidad adicional para errores de soluciones de Office de](../vsto/additional-support-for-errors-in-office-solutions.md).
 
 ## <a name="see-also"></a>Vea también
 
-[Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[Cómo: Configurar un equipo para desarrollar soluciones de Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Cómo: Instalar el Motor en tiempo de ejecución de Visual Studio Tools para Office redistribuible](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Cómo: Instalar ensamblados de interoperabilidad primarios de Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Características disponibles por aplicación y tipo de proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md)
+[Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+[Cómo: configurar un equipo para desarrollar soluciones de Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+[Cómo: instalar Visual Studio Tools para Office runtime redistribuible](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Cómo: instalar ensamblados de interoperabilidad primarios](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md)

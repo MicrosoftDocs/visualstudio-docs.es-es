@@ -1,5 +1,5 @@
 ---
-title: Áreas de formulario de acciones personalizadas en Outlook | Documentos de Microsoft
+title: Acciones personalizadas en áreas de formulario de Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec4c6a0ce361102ab216bc0c9f460a0bdd7a4a0d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Acciones personalizadas en áreas de formulario de Outlook
   Acciones mostrar botones que permiten a los usuarios responder a un elemento de Microsoft Office Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios hacen clic el **respuesta**, **responder a todos**, o **al día** botones de acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento utilizando información del elemento original.  
@@ -29,8 +29,8 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="adding-custom-actions-to-a-form-region"></a>Agregar acciones personalizadas a un área de formulario  
- Para agregar una acción personalizada a un área de formulario, use la **acciones personalizadas** cuadro de diálogo. Puede abrir el **acciones personalizadas** cuadro de diálogo de **el Explorador de soluciones** expandiendo el **manifiesto** nodo, al seleccionar el **elemento CustomAction**propiedad y, a continuación, haga clic en el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")).  
+## <a name="add-custom-actions-to-a-form-region"></a>Agregar acciones personalizadas a un área de formulario  
+ Para agregar una acción personalizada a un área de formulario, use la **acciones personalizadas** cuadro de diálogo. Puede abrir el **acciones personalizadas** cuadro de diálogo de **el Explorador de soluciones** expandiendo el **manifiesto** nodo, al seleccionar el **elemento CustomAction**propiedad y, a continuación, haga clic en el botón de puntos suspensivos (![elipse diseñador móvil de ASP.NET](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")).  
   
  Puede usar el **acciones personalizadas** cuadro de diálogo para especificar un *destino formulario*. Un formulario de destino es el formulario que aparece cuando el usuario ejecuta la acción personalizada.  
   
@@ -50,12 +50,12 @@ ms.lasthandoff: 04/16/2018
 |**TargetForm**|Especifica el nombre de clase de mensaje del formulario de destino. Por ejemplo, escriba **IPM. Tarea** para abrir un formulario de tareas.|  
 |**Título**|Especifica la etiqueta del botón de acción personalizada.|  
   
-## <a name="customizing-a-custom-action-at-run-time"></a>Personalizar una acción personalizada en tiempo de ejecución  
+## <a name="customize-a-custom-action-at-runtime"></a>Personalizar una acción personalizada en tiempo de ejecución  
  También puede agregar comportamiento a la acción personalizada mediante código. Por ejemplo, puede agregar código que toma los nombres de los destinatarios de correo electrónico y agrega dichos nombres como asistentes en un nuevo elemento de cita. Para ello, controle el [CustomAction](http://msdn.microsoft.com/library/office/ff862186.aspx) eventos de la [objeto MailItem](http://msdn.microsoft.com/library/office/ff861332.aspx).  
   
 ## <a name="see-also"></a>Vea también  
  [Crear áreas de formulario de Outlook](../vsto/creating-outlook-form-regions.md)   
  [Tutorial: Diseñar un área de formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Asociación de un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
+ [Asociar un área de formulario a una clase de mensaje de Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   
