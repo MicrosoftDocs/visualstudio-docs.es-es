@@ -81,7 +81,6 @@
 ##### [Depuración en modo mixto](how-to-debug-in-mixed-mode.md)
 #### [Preparación de la depuración: proyectos de consola](debugging-preparation-console-projects.md)
 #### [Depuración de un archivo ejecutable que no forma parte de una solución de Visual Studio](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [Cómo: Depurar con código fuente de Code Center Premium](how-to-debug-with-code-center-premium-source.md)
 #### [Depuración y proceso de hospedaje](debugging-and-the-hosting-process.md)
 #### [Definición de una versión de .NET Framework para la depuración](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [Creación de vistas personalizadas de datos](viewing-data-in-the-debugger.md)

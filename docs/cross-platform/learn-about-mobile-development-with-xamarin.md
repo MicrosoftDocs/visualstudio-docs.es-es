@@ -11,11 +11,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: abeac53d6907603d6158c483095152d0f4ab2c5e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 921faa49690b641fda0e864d27705040a1b97f1e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Más información sobre el desarrollo móvil con Xamarin
 
@@ -101,7 +101,7 @@ Para depurar las aplicaciones entre plataformas sin tener que usar un dispositiv
   
 ### <a name="microsofts-android-emulator"></a>Emulador Android de Microsoft 
 
-Se recomienda que utilice el [emulador de Microsoft Visual Studio para Android](~/cross-platform/visual-studio-emulator-for-android.md), que se instala con Visual Studio.  En el vídeo [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Emulador de Visual Studio para Android) de Channel9 (5 m 55 s), se ofrece información general y una demostración  
+Se recomienda que utilice el [emulador de Microsoft Visual Studio para Android](visual-studio-emulator-for-android.md), que se instala con Visual Studio.  En el vídeo [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Emulador de Visual Studio para Android) de Channel9 (5 m 55 s), se ofrece información general y una demostración  
   
 ### <a name="apples-ios-simulator"></a>Simulador de iOS de Apple
 

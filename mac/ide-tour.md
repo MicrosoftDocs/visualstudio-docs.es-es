@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: ffe295d6744af1ff6d91172b99575cf5eba97246
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 024e58c1c217652c489ad9fe9e568cd21f687ae8
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Paseo por Visual Studio para Mac
 
@@ -52,7 +52,7 @@ El Panel de solución organiza los proyectos de una solución:
 
 Aquí es donde se organizan los archivos por el código fuente, los recursos, la interfaz de usuario y las dependencias en proyectos específicos de plataforma.
 
-Para más información sobre el uso de proyectos y soluciones en Visual Studio para Mac, consulte el artículo [Proyectos y soluciones](~/projects-and-solutions.md).
+Para más información sobre el uso de proyectos y soluciones en Visual Studio para Mac, consulte el artículo [Proyectos y soluciones](projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Referencias de ensamblado
  
@@ -64,7 +64,7 @@ Se pueden agregar otras referencias con el cuadro de diálogo **Editar referenci
  
 ![Cuadro de diálogo Editar referencias](media/ide-tour-image20.png)
 
-Para más información sobre el uso de referencias en Visual Studio para Mac, consulte el artículo [Administrar referencias en un proyecto](~/managing-references-in-a-project.md).
+Para más información sobre el uso de referencias en Visual Studio para Mac, consulte el artículo [Administrar referencias en un proyecto](managing-references-in-a-project.md).
 
 ## <a name="dependencies--packages"></a>Dependencias o paquetes
 
@@ -76,19 +76,19 @@ Para agregar una dependencia a la aplicación, haga clic con el botón derecho e
 
 ![Adición de un paquete NuGet](media/ide-tour-image21.png)
 
-En el artículo [Incluir un paquete NuGet en el proyecto](~/nuget-walkthrough.md) puede encontrar información sobre el uso de un paquete NuGet en una aplicación.
+En el artículo [Incluir un paquete NuGet en el proyecto](nuget-walkthrough.md) puede encontrar información sobre el uso de un paquete NuGet en una aplicación.
 
 ## <a name="refactoring"></a>Refactorización
 
-Visual Studio para Mac proporciona dos maneras útiles de refactorizar el código: acciones de contexto y análisis de código fuente. Puede obtener más información sobre ellas en el artículo [Refactorización](~/refactoring.md).
+Visual Studio para Mac proporciona dos maneras útiles de refactorizar el código: acciones de contexto y análisis de código fuente. Puede obtener más información sobre ellas en el artículo [Refactorización](refactoring.md).
 
 ## <a name="debugging"></a>Depuración
 
-Visual Studio para Mac tiene un depurador nativo que proporciona compatibilidad de depuración con aplicaciones Xamarin.iOS, Xamarin.Mac y Xamarin.Android. Visual Studio para Mac usa Mono Soft Debugger, que está implementado en el entorno de ejecución Mono, lo que permite al IDE depurar código administrado en todas las plataformas. Para más información sobre la depuración, visite el artículo [Depuración](~/debugging.md).
+Visual Studio para Mac tiene un depurador nativo que proporciona compatibilidad de depuración con aplicaciones Xamarin.iOS, Xamarin.Mac y Xamarin.Android. Visual Studio para Mac usa Mono Soft Debugger, que está implementado en el entorno de ejecución Mono, lo que permite al IDE depurar código administrado en todas las plataformas. Para más información sobre la depuración, visite el artículo [Depuración](debugging.md).
 
 El depurador contiene visualizadores completos para tipos especiales, como cadenas, colores, direcciones URL, además de tamaños, coordenadas y curvas Bézier.
 
-Para más información sobre las visualizaciones de datos del depurador, vea el artículo [Visualizaciones de datos](~/data-visualizations.md).
+Para más información sobre las visualizaciones de datos del depurador, vea el artículo [Visualizaciones de datos](data-visualizations.md).
 
 ## <a name="version-control"></a>Control de versiones
 
@@ -100,4 +100,4 @@ Los archivos con cambios sin confirmar tienen una anotación en sus iconos en el
 
 ![Archivos sin confirmar en el Panel de solución](media/ide-tour-image23.png)
 
-Para más información sobre el uso del control de versiones en Visual Studio, consulte el artículo [Control de versiones](~/version-control.md).
+Para más información sobre el uso del control de versiones en Visual Studio, consulte el artículo [Control de versiones](version-control.md).
