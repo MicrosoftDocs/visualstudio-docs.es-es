@@ -19,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba8f84db31cbe41e8bd3f62a7806de0a6d2ea58e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12de0ea2e9638c7ab523bbda0e623c84d0182aad
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Solucionar problemas de soluciones de SharePoint
   Los siguientes problemas o alertas pueden producirse al depurar las soluciones de SharePoint mediante el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obtener más información, consulte [depurar soluciones de flujo de trabajo de SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -135,7 +135,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Instale [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
--   Asegúrese de que tiene acceso de administrador al sitio web de SharePoint. Para obtener más información, consulte el [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artículo en línea [conceder acceso al sitio del portal](http://go.microsoft.com/fwlink/?LinkId=98310).  
+-   Asegúrese de que tiene acceso de administrador al sitio web de SharePoint. Para obtener más información, consulte el [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artículo en línea [asignar o quitar administradores de aplicaciones de servicio en SharePoint Server](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications).  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>El evento web de eliminación de sitios no se genera en el proyecto de receptor de eventos  
  Cuando crea un proyecto de receptor de eventos y selecciona ciertos eventos web como "Se va a eliminar un sitio", el evento nunca se produce.  

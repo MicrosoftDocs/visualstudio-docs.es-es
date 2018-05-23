@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de elementos en Visual Studio, también puede proporcionar un Asistente para la plantilla. Puede usar al Asistente para recopilar información de los usuarios cuando utilicen la plantilla para agregar una nueva instancia del elemento de proyecto a un proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/22/2018
 -   Depurar y probar el asistente.  
   
 > [!NOTE]  
->  Puede descargar un ejemplo que contiene los proyectos completos, código y otros archivos para este tutorial en la siguiente ubicación: [archivos de proyecto para ver tutoriales de extensibilidad de herramientas de SharePoint](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Puede descargar un ejemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que muestra cómo crear actividades personalizadas para un flujo de trabajo.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para llevar a cabo este tutorial, primero debe crear la solución CustomActionProjectItem siguiendo [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  

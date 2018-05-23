@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Depurar soluciones de SharePoint
   Puede depurar las soluciones de SharePoint utilizando el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Al iniciar la depuración, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implementa los archivos de proyecto en el servidor de SharePoint y, a continuación, abre una instancia del sitio de SharePoint en el explorador Web. En las secciones siguientes se explica cómo depurar aplicaciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  Cuando se depuran proyectos de flujo de trabajo, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] agrega la plantilla (en función de su tipo) de flujo de trabajo a una biblioteca o a una lista. A continuación, puede iniciar la plantilla de flujo de trabajo manualmente o agregando o actualizando un elemento. Después puede utilizar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para depurar el flujo de trabajo.  
   
 > [!NOTE]  
->  Si agrega referencias a otros ensamblados, asegúrese de que esos ensamblados se instalan en la caché global de ensamblados ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). De lo contrario, se producirá un error en la solución de flujo de trabajo. Para obtener información sobre cómo instalar ensamblados, vea [inicie manualmente un flujo de trabajo en un documento o elemento](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  Si agrega referencias a otros ensamblados, asegúrese de que esos ensamblados se instalan en la caché global de ensamblados ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). De lo contrario, se producirá un error en la solución de flujo de trabajo. Para obtener información sobre cómo instalar ensamblados, vea [inicie manualmente un flujo de trabajo en un documento o elemento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Sin embargo, el proceso de implementación no inicia el flujo de trabajo. Debe iniciar el flujo de trabajo desde el sitio web de SharePoint. También puede iniciar el flujo de trabajo utilizando una aplicación cliente como Microsoft Office Word 2010 o bien mediante código de servidor independiente. Utilice uno de los enfoques especificado en el **Asistente para personalización de SharePoint**.  
   
- Por ejemplo, si especificó que se puede iniciar el flujo de trabajo manualmente, inicie directamente el flujo de trabajo desde el elemento de la biblioteca o lista. Para obtener más información sobre cómo iniciar un flujo de trabajo manualmente, consulte [iniciar manualmente un flujo de trabajo en un elemento de documento](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ Por ejemplo, si especificó que se puede iniciar el flujo de trabajo manualmente, inicie directamente el flujo de trabajo desde el elemento de la biblioteca o lista. Para obtener más información sobre cómo iniciar un flujo de trabajo manualmente, consulte [iniciar manualmente un flujo de trabajo en un elemento de documento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
 ##  <a name="FeatureEvents"></a> Depurar receptores de eventos de características  
  De forma predeterminada, al ejecutar la aplicación de SharePoint de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], sus características se activan automáticamente en el servidor de SharePoint. Sin embargo, esto produce problemas al depurar los receptores de eventos de características, porque cuando se activa una característica por [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], se ejecuta en un proceso diferente que el depurador. Esto significa que alguna funcionalidad de depuración, como los puntos de interrupción, no funcionará correctamente.  

@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Crear soluciones de flujo de trabajo de SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporciona herramientas para ayudarle a crear flujos de trabajo personalizados que administran el ciclo de vida de documentos y elementos de lista en un sitio SharePoint Web. Los elementos proporcionados incluyen un diseñador, un conjunto de controles de actividad y las referencias de ensamblado necesarias. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] También incluye el **Asistente para personalización de SharePoint**, para ayudar a crear y configurar los flujos de trabajo.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>Flujos de trabajo en SharePoint  
  Cuando se agrega un flujo de trabajo a una lista o biblioteca de SharePoint, aplicar un proceso empresarial en todos los elementos en la biblioteca o lista. Un flujo de trabajo describe las acciones que el sistema o los usuarios deben realizar en cada elemento, como enviar el elemento para editar y, a continuación, revisar. Estas acciones, conocidas como *actividades*, son los bloques de creación del flujo de trabajo.  
   
- Puede crear flujos de trabajo de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implementarlas en un sitio SharePoint Web. Después de implementa un flujo de trabajo en SharePoint, se asocia con una lista o biblioteca. Se puede, a continuación, se inicia automáticamente, mediante un proceso o manualmente por el usuario. Para obtener más información acerca de la operación de flujo de trabajo, consulte [mediante flujos de trabajo para administrar procesos](http://go.microsoft.com/fwlink/?LinkId=79757).  
+ Puede crear flujos de trabajo de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implementarlas en un sitio SharePoint Web. Después de implementa un flujo de trabajo en SharePoint, se asocia con una lista o biblioteca. Se puede, a continuación, se inicia automáticamente, mediante un proceso o manualmente por el usuario. Para obtener más información acerca de la operación de flujo de trabajo, consulte [flujos de trabajo de desarrollo de SharePoint mediante Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>Crear flujos de trabajo de SharePoint personalizado  
  Dos proyectos de flujo de trabajo de SharePoint están disponibles en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **flujo de trabajo secuencial** y **flujo de trabajo de máquina de estados**.  
