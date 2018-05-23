@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48d4a5845dd5e5f364d34544f57e1ef7bdfe6052
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1e6fec89a151525a84349b7019c7569eb752172e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Error: El servidor Web no pudo encontrar el recurso solicitado
 Por motivos de seguridad, IIS ha devuelto un error genérico.  
@@ -29,8 +29,7 @@ Por motivos de seguridad, IIS ha devuelto un error genérico.
   
  Existen muchas posibles causas de este error. Entre las causas más comunes se incluyen un problema con la instalación o la configuración de IIS, la configuración del sitio web o los permisos del sistema de archivos. Puede intentar obtener acceso al recurso mediante un explorador. Según cómo esté configurado IIS, podría tener que utilizar un explorador local en el servidor o examinar el registro de errores de IIS para obtener un mensaje de error detallado.  
   
- Para obtener más información sobre cómo solucionar problemas de IIS, consulte [administración de IIS y administración](http://go.microsoft.com/fwlink/?LinkId=255872).  
+ Para obtener más información sobre cómo solucionar problemas de IIS, consulte [administración de IIS y administración](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>Vea también  
- [Herramienta de seguridad UrlScan](http://www.microsoft.com/technet/security/tools/urlscan.mspx)   
  [Error: El servidor web se ha bloqueado y está impidiendo la ejecución del verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

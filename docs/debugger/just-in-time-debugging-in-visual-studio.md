@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Cómo: responder al depurador Just-In-Time
 
@@ -25,7 +25,7 @@ Las acciones que debe realizar cuando vea Just-in-Time cuadro de diálogo de dep
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Si desea corregir o depurar el error (los usuarios de Visual Studio)
 
-- Debe tener [instalado Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48146) para ver la información detallada sobre el error e intenta depurarlo. Para obtener más información, consulte [depurar con el depurador Just](../debugger/debug-using-the-just-in-time-debugger.md). Si no se puede resolver el error y corregir la aplicación, póngase en contacto con el propietario de la aplicación para resolver el error.
+- Debe tener [instalado Visual Studio](http://www.visualstudio.com) para ver la información detallada sobre el error e intenta depurarlo. Para obtener más información, consulte [depurar con el depurador Just](../debugger/debug-using-the-just-in-time-debugger.md). Si no se puede resolver el error y corregir la aplicación, póngase en contacto con el propietario de la aplicación para resolver el error.
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Si desea impedir que aparezca el cuadro de diálogo de depurador Just
 

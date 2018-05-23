@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Inicio rápido: Busque primero en la implementación en Visual Studio
 
@@ -86,6 +86,8 @@ Desde Visual Studio, puede crear paquetes de aplicaciones para su implementació
     ![Puente de escritorio](../deployment/media/feature-tour-desktop-bridge.png)
 
 ### <a name="create-an-installer-package-windows-client"></a>Crear un paquete del instalador (cliente de Windows)
+
+Si se requiere más de una instalación compleja de una aplicación de escritorio que [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) puede proporcionar, puede crear un paquete de instalación, un proyecto de instalación o un arranque personalizado.
 
 - Se puede crear un instalador de WiX basadas en MSI utilizando el [WiX conjunto de herramientas de Visual Studio de 2017 extensión](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 

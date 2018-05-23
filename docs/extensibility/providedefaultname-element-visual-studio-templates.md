@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName (Elemento, Plantillas de Visual Studio)
 Especifica si el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema de proyecto generará un nombre predeterminado para la plantilla en el **Agregar nuevo elemento** o **nuevo proyecto** cuadro de diálogo.  
@@ -59,7 +59,7 @@ Especifica si el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] siste
   
  Si el `ProvideDefaultName` elemento es `false`, **nombre** cuadros de la **Agregar nuevo elemento** y **nuevo proyecto** cuadros de diálogo contienen el valor `<Enter_name>`.  
   
- Use la [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento para especificar el nombre predeterminado del proyecto o elemento en el **Agregar nuevo elemento** y **nuevo proyecto** cuadros de diálogo.  
+ Use la [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) elemento para especificar el nombre predeterminado del proyecto o elemento en el **Agregar nuevo elemento** y **nuevo proyecto** cuadros de diálogo. Cuando el valor de la `ProvideDefaultName` elemento es `true`, la omisión de la `DefaultName` elemento para los proyectos rellena el cuadro de diálogo con el nombre de la plantilla, es decir, el valor de la [nombre](../extensibility/name-element-visual-studio-templates.md) elemento.
   
 ## <a name="example"></a>Ejemplo  
  El siguiente ejemplo de código establece la `ProvideDefaultName` elemento `false`.  

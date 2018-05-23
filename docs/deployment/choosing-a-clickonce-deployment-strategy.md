@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Elegir una estrategia de implementación de ClickOnce
 Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; la estrategia que elija depende principalmente del tipo de aplicación que vaya a implementar. Las tres estrategias de implementación son las siguientes:  
@@ -46,15 +46,6 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
   
  Ésta es la estrategia de implementación predeterminada.  
   
-## <a name="install-from-a-cd"></a>Instalar desde un CD  
- Con esta estrategia, su aplicación se implementa en medios extraíbles como un CD-ROM o DVD. Al igual que con la opción anterior, cuando el usuario elige instalar la aplicación, se instala y se inicia y se agregan elementos a la **iniciar** menú y **agregar o quitar programas** en **Control Panel**.  
-  
- Esta estrategia funciona mejor para aplicaciones que se implementarán a los usuarios sin la conectividad de red persistente o con conexiones con un ancho de banda reducido. Dado que la aplicación se instala desde medios extraíbles, no es necesaria ninguna conexión de red para la instalación; sin embargo, la conectividad de red todavía es necesaria para las actualizaciones de la aplicación.  
-  
- Para habilitar esta estrategia de implementación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], haga clic en **desde un CD-ROM o DVD-ROM** en el **cómo instala** página del Asistente para publicación.  
-  
- Para habilitar esta estrategia de implementación manualmente, cambie la **deploymentProvider** etiqueta en el manifiesto de implementación. (En Visual Studio, esta propiedad se expone como **dirección URL de instalación** en el **publicar** página del Diseñador de proyectos. En Mage.exe es **iniciar ubicación**.)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Iniciar la aplicación desde el Web o desde un recurso compartido de red  
  Esta estrategia es parecida a la primera, excepto en que la aplicación se comporta como una aplicación web. Cuando el usuario hace clic en un vínculo de una página Web (o hace doble clic en un icono del recurso compartido de archivos), se inicia la aplicación. Cuando los usuarios cierran la aplicación, ya no está disponible en su equipo local; no se agrega nada a la **iniciar** menú o **agregar o quitar programas** en **el Panel de Control**.  
   
@@ -66,6 +57,15 @@ Hay tres estrategias distintas para implementar una aplicación de [!INCLUDE[ndp
  Para habilitar esta estrategia de implementación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], haga clic en **no instalan la aplicación** en el **instalar o ejecutar desde el Web** página del Asistente para publicación.  
   
  Para habilitar esta estrategia de implementación manualmente, cambie la **instalar** etiqueta en el manifiesto de implementación. (Su valor puede ser **true** o **false**. En Mage.exe, utilice la **solo en línea** opción en el **tipo de aplicación** lista.)  
+
+## <a name="install-from-a-cd"></a>Instalar desde un CD  
+ Con esta estrategia, su aplicación se implementa en medios extraíbles como un CD-ROM o DVD. Al igual que con la opción anterior, cuando el usuario elige instalar la aplicación, se instala y se inicia y se agregan elementos a la **iniciar** menú y **agregar o quitar programas** en **Control Panel**.  
+  
+ Esta estrategia funciona mejor para aplicaciones que se implementarán a los usuarios sin la conectividad de red persistente o con conexiones con un ancho de banda reducido. Dado que la aplicación se instala desde medios extraíbles, no es necesaria ninguna conexión de red para la instalación; sin embargo, la conectividad de red todavía es necesaria para las actualizaciones de la aplicación.  
+  
+ Para habilitar esta estrategia de implementación en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], haga clic en **desde un CD-ROM o DVD-ROM** en el **cómo instala** página del Asistente para publicación.  
+  
+ Para habilitar esta estrategia de implementación manualmente, cambie la **deploymentProvider** etiqueta en el manifiesto de implementación. (En Visual Studio, esta propiedad se expone como **dirección URL de instalación** en el **publicar** página del Diseñador de proyectos. En Mage.exe es **iniciar ubicación**.)  
   
 ## <a name="web-browser-support"></a>Compatibilidad con exploradores web  
  Las aplicaciones orientadas a .NET Framework 3.5 pueden instalarse mediante cualquier explorador.  

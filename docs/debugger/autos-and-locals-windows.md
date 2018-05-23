@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 223bbf3d2f59b79214cf6acbff89946750cb312d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspeccionar las Variables en el automático y variables locales Windows en Visual Studio
 El **automático** ventana (durante la depuración, **CTRL + ALT + V, A**, o **Depurar > Windows > automático**) y la **locales** ventana (durante la depuración **CTRL + ALT + V, L**, o **Depurar > Windows > variables locales**) son muy útiles cuando desea ver los valores de las variables durante la depuración. En la ventana **Variables locales** se muestran las variables definidas en el ámbito local, que generalmente es la función o el método que se encuentra en ejecución. En la ventana **Automático** se muestran las variables usadas en torno a la línea actual (es decir, el lugar donde se detiene el depurador). Exactamente qué variables se muestran en esta ventana es diferente en distintos idiomas. Consulte [What variables appear in the Autos Window?](#bkmk_whatvariables) a continuación.  
@@ -28,7 +28,7 @@ El **automático** ventana (durante la depuración, **CTRL + ALT + V, A**, o **D
 Si necesita más información sobre la depuración básica, consulte [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinar objetos en las ventanas de variables locales y automáticas  
-Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. En el ejemplo siguiente se muestra un objeto [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) en la ventana **Variables locales** :  
+Las matrices y los objetos se muestran en las ventanas Automático y Variables locales como controles de árbol. Haga clic en la flecha situada a la izquierda del nombre de la variable para expandir la vista y mostrar los campos y las propiedades. Este es un ejemplo de un [FileStream](/dotnet/api/system.io.filestream) objeto en el **locales** ventana:  
   
 ![Variables locales&#45;FileStream](../debugger/media/locals-filestream.png "FileStream variables locales")  
   

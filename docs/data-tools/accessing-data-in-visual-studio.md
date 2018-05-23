@@ -1,5 +1,5 @@
 ---
-title: Acceso a datos en Visual Studio
+title: Acceso a datos y herramientas
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b43463dc35fa3f9703162817f6a8d63f44a87b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="accessing-data-in-visual-studio"></a>Acceso a datos en Visual Studio
+# <a name="access-data-in-visual-studio"></a>Obtener acceso a datos en Visual Studio
 
 En Visual Studio, puede crear aplicaciones que se conectan a los datos en prácticamente cualquier producto de base de datos o el servicio, en cualquier formato, en cualquier lugar, en un equipo local, en una red de área local o en una nube pública, privada o híbrida.
 
 Para las aplicaciones en JavaScript, Python, PHP, Ruby o C++, conectarse a los datos como que hace nada más, puede obtener bibliotecas y escribir código. Para aplicaciones. NET, Visual Studio proporciona herramientas que puede usar para explorar los orígenes de datos, crear modelos de objeto para almacenar y manipular datos en memoria y enlazar datos a la interfaz de usuario. Microsoft Azure proporciona SDK para. NET, Java, Node.js, PHP, Python, Ruby y aplicaciones móviles y herramientas en Visual Studio para conectarse al almacenamiento de Azure.
 
-Las listas siguientes muestran algunos de los muchos sistemas de base de datos y almacenamiento que se pueden usar desde Visual Studio. El [Microsoft Azure](https://azure.microsoft.com/) ofertas son servicios de datos que incluyen todas las de aprovisionamiento y administración de almacén de datos subyacente.  [Azure Tools para Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) es un componente opcional que le permite trabajar con almacenes de datos de Azure directamente desde Visual Studio. La mayoría de los otros SQL y NoSQL base de datos productos que aparecen aquí se puede hospedar en un equipo local, en una red local o en Microsoft Azure en una máquina virtual. En este escenario, usted es responsable de administrar la base de datos.
+Las listas siguientes muestran algunos de los muchos sistemas de base de datos y almacenamiento que se pueden usar desde Visual Studio. El [Microsoft Azure](https://azure.microsoft.com/) ofertas son servicios de datos que incluyen todas las de aprovisionamiento y administración de almacén de datos subyacente. El **desarrollo Azure** carga de trabajo en [2017 de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) le permite trabajar con almacenes de datos de Azure directamente desde Visual Studio.
+
+![Carga de trabajo de desarrollo de Azure](media/azure-development-workload.png)
+
+La mayoría de los otros SQL y NoSQL base de datos productos que aparecen aquí se puede hospedar en un equipo local, en una red local o en Microsoft Azure en una máquina virtual. Si hospeda la base de datos en una máquina virtual de Microsoft Azure, es responsable de administrar la base de datos.
 
 **Microsoft Azure**
 
@@ -68,7 +72,7 @@ Muchos proveedores de base de datos y otros fabricantes admiten la integración 
 
 Todos los accesos de datos. NET, incluido en .NET Core, se basan en ADO.NET, un conjunto de clases que define una interfaz para tener acceso a cualquier tipo de origen de datos relacional y no relacionales. Visual Studio dispone de varias herramientas y diseñadores que funcionan con ADO.NET para conectarse a bases de datos, manipular los datos y presentar los datos al usuario. La documentación de esta sección describe cómo usar estas herramientas. También puede programar directamente con los objetos de comando ADO.NET. Para obtener más información sobre cómo llamar directamente a las APIs ADO.NET, vea [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Para obtener documentación de acceso a datos relacionada específicamente con ASP.NET, vea [trabajar con datos](http://www.asp.net/web-forms/overview/presenting-and-managing-data) en el sitio ASP.NET. Para obtener un tutorial sobre el uso de Entity Framework con ASP.NET MVC, consulte [Introducción a Entity Framework 6 Code First con MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Para obtener documentación de acceso a datos relacionados con ASP.NET, vea [trabajar con datos](http://www.asp.net/web-forms/overview/presenting-and-managing-data) en el sitio ASP.NET. Para obtener un tutorial sobre el uso de Entity Framework con ASP.NET MVC, consulte [Introducción a Entity Framework 6 Code First con MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Las aplicaciones universales de plataforma de Windows (UWP) en C# o Visual Basic pueden usar el SDK de Microsoft Azure para .NET para tener acceso a almacenamiento de Azure y otros servicios de Azure. La clase Windows.Web.HttpClient permite la comunicación con cualquier servicio RESTful. Para obtener más información, consulte [cómo conectarse a un servidor HTTP mediante Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
