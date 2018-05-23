@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52898168eb0debf047613a03702647195ab7d3cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7aa00180cf5eb54bad9ceb28468f93b1d1f3d59
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile (Elemento)
   Representa la salida de un proyecto independiente para incluir con el elemento de proyecto cuando se implementa en SharePoint.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <ProjectOutputFile ProjectId = "GUID of the project"  
     ProjectPath = "Relative path of the project"  
     Target = "Deployment path of the project output"  

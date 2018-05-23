@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Tutorial: Extender el Explorador de servidores para mostrar elementos web
   En Visual Studio, puede usar el **las conexiones de SharePoint** nodo de **Explorador de servidores** para ver componentes en sitios de SharePoint. Sin embargo, **Explorador de servidores** no mostrar algunos componentes de forma predeterminada. En este tutorial, podrá ampliar **Explorador de servidores** para que se muestre la Galería de elementos Web en cada uno conectado de sitio de SharePoint.  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  En la parte superior del cuadro de diálogo, elija **.NET Framework 3.5** en la lista de versiones de .NET Framework.  
   
-4.  
-  
-5.  En la lista de plantillas de proyecto, elija **biblioteca de clases**, denomine el proyecto **WebPartCommands**y, a continuación, elija la **Aceptar** botón.  
+4.  En la lista de plantillas de proyecto, elija **biblioteca de clases**, denomine el proyecto **WebPartCommands**y, a continuación, elija la **Aceptar** botón.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **WebPartCommands** proyecto a la solución y abre el archivo de código predeterminado Class1.  
   
-6.  Elimine el archivo de código Class1 del proyecto.  
+5.  Elimine el archivo de código Class1 del proyecto.  
   
 ## <a name="configuring-the-projects"></a>Configurar los proyectos  
  Antes de escribir código para crear la extensión, debe agregar los archivos de código y las referencias de ensamblado y configurar la configuración del proyecto.  

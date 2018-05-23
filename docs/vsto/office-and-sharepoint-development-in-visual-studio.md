@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61d9b988f0e0898f0dfe3843456b711f9f39b7c5
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desarrollo de Office y SharePoint en Visual Studio
   Puede ampliar Microsoft Office y SharePoint mediante la creación de una aplicación ligera o un complemento que los usuarios descarguen desde la [Tienda Office](https://store.office.com/) o un catálogo de la organización, o bien mediante la creación de una solución basada en .NET Framework que los usuarios instalen en un equipo.  
@@ -50,11 +50,7 @@ ms.lasthandoff: 04/16/2018
   
  ![Aplicaciones para Office y SharePoint modelo conceptual](../vsto/media/officeandsharepointapps2015.png "aplicaciones para Office y SharePoint modelo conceptual")  
   
- **Más información**  
-  
-|En|Vea|  
-|--------|---------|  
-|Más información acerca de las herramientas de desarrollo de Office 365 Napa.|[Herramientas de desarrollo de Office 365 Napa](https://msdn.microsoft.com/library/dn974046.aspx)|  
+
   
 ### <a name="build-an-office-add-in"></a>Crear un complemento de Office  
  Puede crear un complemento de Office para ampliar la funcionalidad de Office. Se trata básicamente de una página Web que se hospeda en una aplicación de Office, como Excel, Word, Outlook y PowerPoint. La aplicación puede agregar funcionalidad a documentos, hojas de cálculo, mensajes de correo electrónico, citas, presentaciones y proyectos.  
@@ -71,7 +67,6 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Obtenga más información sobre los complementos de Office y luego cree uno.|[Complementos de Office](http://msdn.microsoft.com/office/dn448457)|  
 |Compare las distintas maneras en que puede ampliar Office para decidir si le conviene usar una aplicación o un complemento de Office.|[Guía básica de los complementos de Office, VSTO y VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|Más información acerca de las herramientas de desarrollo de Office 365 Napa.|[Herramientas de desarrollo de Office 365 Napa](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>Crear un complemento de SharePoint  
  Puede compilar un complemento de SharePoint a fin de ampliar la funcionalidad de SharePoint para los usuarios. Es básicamente una aplicación pequeña, fácil de usar e independiente que resuelve una necesidad a nivel de usuario o business.  
@@ -88,8 +83,7 @@ ms.lasthandoff: 04/16/2018
 |--------|---------|  
 |Obtenga más información sobre los complementos de SharePoint y luego cree uno.|[Complementos de SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
 |Compare los complementos de SharePoint con las soluciones tradicionales de SharePoint.|[Complementos para SharePoint comparados con las soluciones de SharePoint](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Elija si quiere compilar un complemento de SharePoint o una solución de SharePoint.|[Decidir entre los complementos de SharePoint y las soluciones de SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|Más información acerca de las herramientas de desarrollo de Office 365 Napa.|[Herramientas de desarrollo de Office 365 Napa](https://msdn.microsoft.com/library/dn974046.aspx)|  
+|Elija si quiere compilar un complemento de SharePoint o una solución de SharePoint.|[Decidir entre los complementos de SharePoint y las soluciones de SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|
   
 ##  <a name="Add-ins"></a> Crear un complemento de VSTO  
  Crear un complemento de VSTO para Office 2007 u Office 2010, o para ampliar Office 2013 y Office 2016 más allá de lo que es posible con los complementos de Office. Los complementos de VSTO solo se ejecutan en el escritorio. Los usuarios deben instalar los complementos VSTO, por lo que son normalmente más difíciles de implementar y admitir.  Sin embargo, su complemento de VSTO se puede integrar más estrechamente en Office. Por ejemplo, puede agregar pestañas y controles a la cinta de Office y realizar tareas de automatización avanzadas, como la combinación de documentos o la modificación de gráficos. Puede aprovechar .NET Framework y usar C# y Visual Basic para interactuar con objetos de Office.  

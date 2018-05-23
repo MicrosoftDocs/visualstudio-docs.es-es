@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Crear una lista, tipo de contenido y columna de sitio para SharePoint
   Los procedimientos siguientes muestran cómo crear columnas personalizadas de sitio de SharePoint, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También muestra cómo crear una lista que utiliza el nuevo tipo de contenido.  
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  En el archivo Elements.xml de la columna de sitio, deje el **tipo** establecer como **texto**y cambie el **grupo** si se establece en **columnas de sitio Clinic**. Cuando haya finalizado, archivo Elements.xml de la columna de sitio debe ser similar al ejemplo siguiente.  
   
-    ```  
+    ```xml  
     <Field  
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"  
          Name="Clinic - Patient Name"  
@@ -143,7 +143,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  En el **plantillas** panel, elija la **lista** plantilla, cambie el nombre a **pacientes**y, a continuación, elija la **agregar** botón.  
   
-5.  Deje el **personalizar la lista en función de** establecer como **predeterminado (en blanco)**y, a continuación, elija la **finalizar** botón.  
+5.  Deje el **personalizar la lista en función de** establecer como **predeterminado (en blanco)** y, a continuación, elija la **finalizar** botón.  
   
 6.  En el Diseñador de la lista, elija la **tipos de contenido** botón para mostrar el **configuración del tipo de contenido** cuadro de diálogo.  
   

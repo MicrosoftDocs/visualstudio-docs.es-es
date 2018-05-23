@@ -1,15 +1,15 @@
 ---
-title: Crear nuevos proyectos y soluciones en Visual Studio para Mac
+title: Creación de nuevos proyectos y soluciones
 description: En este artículo se explica cómo crear proyectos y soluciones en Visual Studio para Mac
 author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 327d0a51efd312c1a2b2909c90ff7668a1083529
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 948d5d5bba49571d4b4a73d4ba47a77b377d8b11
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="creating-new-projects-and-solutions"></a>Creación de nuevos proyectos y soluciones
 
@@ -33,7 +33,7 @@ Este método para agregar nuevos proyectos se puede usar para aprovechar las cap
 
 La página de inicio de Visual Studio muestra una lista de proyectos recientes en los que se ha estado trabajando:
 
- ![](media/create-new-projects-recent.png)
+ ![Sección de soluciones recientes en la página principal](media/create-new-projects-recent.png)
 
 Puede filtrar esta lista con el cuadro Filtrar o quitar elementos individuales de la lista. 
  

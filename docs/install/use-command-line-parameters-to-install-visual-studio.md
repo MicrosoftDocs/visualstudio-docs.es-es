@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
 
@@ -60,7 +60,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `--installPath <dir>` | El directorio de instalación en el que actuará la instancia. Para el comando de instalación, es **opcional** y es el lugar donde se instalará la instancia. Para otros comandos, es **obligatorio** y es la ubicación en la que se instaló la instancia anteriormente. |
 | `--addProductLang <language-locale>` | **Opcional**: durante una operación de instalación o modificación, determina los paquetes de idioma de la interfaz de usuario que se van a instalar con el producto. Puede aparecer varias veces en la línea de comandos para agregar varios paquetes de idioma. Si no está presente, la instalación usa la configuración regional del equipo. Para obtener más información, consulte la sección [Lista de configuraciones regionales de idioma](#list-of-language-locales) de esta página.|
 | `--removeProductLang <language-locale>` | **Opcional**: durante una operación de instalación o modificación, determina los paquetes de idioma de la interfaz de usuario que se van a quitar del producto. Puede aparecer varias veces en la línea de comandos para agregar varios paquetes de idioma. Para obtener más información, consulte la sección [Lista de configuraciones regionales de idioma](#list-of-language-locales) de esta página.|
-| `--add <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para agregar. Se instalan los componentes necesarios del artefacto, pero no los componentes recomendados ni opcionales. Puede controlar los componentes adicionales de forma global mediante `--includeRecommended` o `--includeOptional`. Para un control más preciso, puede anexar `;includeRecommended` o `;includeOptional` al identificador (por ejemplo, `--add Workload1;includeRecommended` o `--add Workload2;includeRecommended;includeOptional`). Para obtener más información, consulte nuestra página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). Puede repetir esta opción según sea necesario.|
+| `--add <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para agregar. Se instalan los componentes necesarios del artefacto, pero no los componentes recomendados ni opcionales. Puede controlar los componentes adicionales de forma global mediante `--includeRecommended` o `--includeOptional`. Para un control más preciso, puede anexar `;includeRecommended` o `;includeOptional` al identificador (por ejemplo, `--add Workload1;includeRecommended` o `--add Workload2;includeRecommended;includeOptional`). Para obtener más información, consulte la página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). Puede repetir esta opción según sea necesario.|
 | `--remove <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para quitar. Para obtener más información, consulte nuestra página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). Puede repetir esta opción según sea necesario.|
 | `--in <path>` | **Opcional**: el URI o la ruta de acceso de un archivo de respuesta.  |
 | `--all` | **Opcional**: si se instalan o no todas las cargas de trabajo y componentes para un producto. |
@@ -80,12 +80,12 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | ----------------------- | --------------- |
 | `--layout <dir>` | Especifica un directorio para crear una caché de instalación sin conexión. Para obtener más información, consulte [Crear una instalación sin conexión de Visual Studio 2017](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Opcional**: se usa con `--layout` para preparar una caché de instalación sin conexión con paquetes de recursos con los idiomas especificados. Para obtener más información, consulte la sección [Lista de configuraciones regionales de idioma](#list-of-language-locales) de esta página.|
-| `--add <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para agregar. Se instalan los componentes necesarios del artefacto, pero no los componentes recomendados ni opcionales. Puede controlar los componentes adicionales de forma global mediante `--includeRecommended` o `--includeOptional`. Para un control más preciso, puede anexar `;includeRecommended` o `;includeOptional` al identificador (por ejemplo, `--add Workload1;includeRecommended` o `--add Workload2;includeOptional`). Para obtener más información, consulte nuestra página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). <br/>**Nota**: Si se usa `--add`, solo se descargan las cargas de trabajo y los componentes especificados y sus dependencias. Si no se especifica `--add`, todos los componentes y las cargas de trabajo se descargan en el diseño.|
+| `--add <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para agregar. Se instalan los componentes necesarios del artefacto, pero no los componentes recomendados ni opcionales. Puede controlar los componentes adicionales de forma global mediante `--includeRecommended` o `--includeOptional`. Para un control más preciso, puede anexar `;includeRecommended` o `;includeOptional` al identificador (por ejemplo, `--add Workload1;includeRecommended` o `--add Workload2;includeOptional`). Para obtener más información, consulte la página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). <br/>**Nota**: Si se usa `--add`, solo se descargan las cargas de trabajo y los componentes especificados y sus dependencias. Si no se especifica `--add`, todos los componentes y las cargas de trabajo se descargan en el diseño.|
 | `--includeRecommended` | **Opcional**: incluye los componentes recomendados para cualquier carga de trabajo que se instale, pero no los componentes recomendados. Las cargas de trabajo se especifican con `--allWorkloads` o `--add`. |
 | `--includeOptional` | **Opcional**: incluye los componentes recomendados *y* opcionales para las cargas de trabajo que se incluyen en el diseño. Las cargas de trabajo se especifican con `--add`.  |
 | `--keepLayoutVersion` | **Novedad de la versión 15.3, opcional**: es posible aplicar cambios en el diseño sin actualizar la versión de este. |
-| `--verify` | **Novedad de la versión 15.3, opcional**: es posible comprobar el contenido del diseño.  Se muestra una lista con los archivos dañados o que no se hayan encontrado. |
-| `--fix` | **Novedad de la versión 15.3, opcional**: es posible comprobar el contenido del diseño.  Si se detecta que faltan archivos o que estos están dañados, se vuelven a descargar.  Para corregir el diseño, es necesario tener acceso a Internet. |
+| `--verify` | **Novedad de la versión 15.3, opcional**: es posible comprobar el contenido del diseño. Se muestra una lista con los archivos dañados o que no se hayan encontrado. |
+| `--fix` | **Novedad de la versión 15.3, opcional**: es posible comprobar el contenido del diseño.  Si se detecta que faltan archivos o que estos están dañados, se vuelven a descargar. Para corregir el diseño, es necesario tener acceso a Internet. |
 | `--clean <one or more paths to catalogs>` | **Novedad de la versión 15.3, opcional**: quita las versiones anteriores de los componentes de un diseño que se ha actualizado a una versión más reciente. |
 
 | **Opciones de instalación avanzadas** | **Descripción** |
@@ -103,7 +103,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `--noWeb` | **Novedad de la versión 15.3, opcional**: el programa de instalación ahora descarga de Internet cualquier contenido que se esté instalando.  Todo el contenido que se esté instalando debe estar disponible en un diseño sin conexión.  Si falta contenido del diseño, no se podrá realizar la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). |
 | `--path <name>=<path>` | **Novedad en 15.7 (opcional)**: se utiliza para especificar las rutas de acceso de instalación personalizada para la instalación. Los nombre de ruta de acceso admitidos son uso compartido, caché e instalar. |
 | `--path cache=<path>` | **Novedad en 15.7 (opcional)**: utiliza la ubicación que especifique para descargar los archivos de instalación. Esta ubicación solo puede establecerse la primera vez que se instala Visual Studio. Ejemplo: `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Novedad en 15.7 (opcional)**: contiene los archivos compartidos para las instalaciones en paralelo de Visual Studio. Algunas herramientas y SDK se instalan en una ubicación en esta unidad, mientras que otros pueden invalidar esta configuración e instalarse en otra unidad. Ejemplo: `--path shared="C:\VS\shared"` |
+| `--path shared=<path>` | **Novedad en 15.7 (opcional)**: contiene los archivos compartidos para las instalaciones en paralelo de Visual Studio. Algunas herramientas y SDK se instalan en una ubicación en esta unidad, mientras que otros pueden invalidar esta configuración e instalarse en otra unidad. Ejemplo: `--path shared="C:\VS\shared"` <br><br>Importante: Solo se puede establecer una vez y tiene que ser la primera vez que se instala Visual Studio. |
 | `--path install=<path>` | **Novedad en 15.7 (opcional)**: equivalente a `–-installPath`. En particular, `--installPath "C:\VS"` y `--path install="C:\VS"` son equivalentes. Solo se puede usar uno de los dos a la vez. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista de los id. de carga de trabajo y los id. de componente
@@ -114,24 +114,24 @@ Para obtener una lista de los identificadores de componente y carga de trabajo o
 
 | **Idioma-configuración regional** | **Idioma** |
 | ----------------------- | --------------- |
-| cs-CZ | Checo |
-| de-DE | Alemán |
-| en-US | Inglés |
-| es-ES | Español |
-| fr-FR | Francés |
-| it-IT | Italiano |
-| ja-JP | Japonés |
-| ko-KR | Coreano |
-| pl-PL | Polaco |
-| pt-BR | Portugués (Brasil) |
-| ru-RU | Ruso |
-| tr-TR | Turco |
-| zh-CN | Chino (simplificado) |
-| zh-TW | Chino (tradicional) |
+| Cs-cz | Checo |
+| De-de | Alemán |
+| En-us | Inglés |
+| Es-es | Español |
+| Fr-fr | Francés |
+| It-it | Italiano |
+| Ja-jp | Japonés |
+| Ko-kr | Coreano |
+| Pl-pl | Polaco |
+| Pt-br | Portugués (Brasil) |
+| Ru-ru | Ruso |
+| Tr-tr | Turco |
+| Zh-cn | Chino (simplificado) |
+| Zh-tw | Chino (tradicional) |
 
 ## <a name="error-codes"></a>Códigos de error
 
-En función del resultado de la operación, la variable de entorno `%ERRORLEVEL%` se establecerá en uno de los valores siguientes:
+En función del resultado de la operación, la variable de entorno `%ERRORLEVEL%` se establece en uno de los valores siguientes:
 
 | **Valor** | **Resultado** |
 | --------- | ---------- |

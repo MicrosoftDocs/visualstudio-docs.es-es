@@ -9,11 +9,11 @@ description: Obtenga información sobre la suscripción de aprendizaje de Plural
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b4782c1da48b21fffcb0ebc5abc05b56a8116ae0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -82,7 +82,7 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 | Visual Studio Enterprise (NFR<sup>1</sup>) | Programa                                       | No disponible                                  |NA|
 <sup>1</sup>  *Incluye: No para reventa (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Microsoft Valued Partner (MVP), Region Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 
-<sup>2</sup>  *Tras la expiración de las suscripciones de Pluralsight, puede optar a recibir 12 meses de acceso a 50 cursos de Pluralsight seleccionados en una de tres áreas de estudio.  La ventaja de Pluralsight es de un solo uso, asociado a la persona.  Una vez que el suscriptor consume el beneficio, no se restablece. Consulte a continuación las preguntas más frecuentes para obtener más detalles.*
+<sup>2</sup> *La ventaja de Pluralsight es de un solo uso, asociado al usuario.  Una vez que el suscriptor consume el beneficio, no se restablece. Consulte a continuación las preguntas más frecuentes para obtener más detalles.  Tras la expiración de las suscripciones de Pluralsight, puede optar a recibir 12 meses de acceso a 50 cursos de Pluralsight seleccionados en una de tres áreas de estudio.*
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
 

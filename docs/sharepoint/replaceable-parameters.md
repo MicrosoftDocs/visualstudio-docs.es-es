@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>Parámetros reemplazables
   Parámetros reemplazables, o *tokens*, puede usarse dentro de los archivos de proyecto para proporcionar valores para los elementos de la solución de SharePoint cuyos valores reales no se conocen en tiempo de diseño. Únicamente son una función similar a la norma [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de la plantilla. Para obtener más información, consulte [parámetros de plantilla](/visualstudio/ide/template-parameters).  
   
 ## <a name="token-format"></a>Formato de token  
- Los tokens comienzan y terminan con un carácter de signo de dólar ($). Los tokens que se usan se reemplazan por valores reales cuando un proyecto se empaqueta en un archivo de empaquetado (.wsp) de solución de SharePoint durante la implementación. Por ejemplo, el token **$SharePoint.Package.Name$** pueda resolver con la cadena "Paquete de prueba de SharePoint".  
+ Los tokens comienzan y terminan con un carácter de signo de dólar ($). En la implementación, los tokens que se usan se reemplazan por valores reales cuando un proyecto se empaqueta en un paquete de solución de SharePoint (.wsp archivo). Por ejemplo, el token **$SharePoint.Package.Name$** pueda resolver con la cadena "Paquete de prueba de SharePoint".  
   
 ## <a name="token-rules"></a>Reglas de los tokens  
  Las siguientes reglas se aplican a los tokens:  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  Los tokens que no siguen estas reglas se omiten sin proporcionar una advertencia o error.  
   
- El reemplazo de los tokens por valores de cadena se realiza inmediatamente después de la transformación de los manifiestos, por lo que las plantillas de manifiesto editadas por un usuario para usar símbolos (tokens).  
+ El reemplazo de los tokens por valores de cadena se realiza inmediatamente después de la transformación de los manifiestos. Este reemplazo permite al usuario editar las plantillas de manifiesto con tokens.  
   
 ### <a name="token-name-resolution"></a>Resolución de nombres de símbolo (token)  
  En la mayoría de los casos, un token se resuelve en un valor específico, independientemente de donde se encuentra. Sin embargo, si el token está relacionado con un paquete o una característica, valor del token depende de dónde se encuentra. Por ejemplo, si una característica es de empaquetar una, entonces el token `$SharePoint.Package.Name$` se resuelve en el valor de "Paquete A." Si la misma función está en el paquete B, a continuación, `$SharePoint.Package.Name$` se resuelve como "Paquete B."  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  Estas extensiones se definen mediante el `<TokenReplacementFileExtensions>` elemento en el archivo Microsoft.VisualStudio.SharePoint.targets, ubicado en el... \\< archivos de programa\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools carpeta.  
   
- Sin embargo, puede agregar extensiones de archivo adicionales a la lista. Para ello, agregue un `<TokenReplacementFileExtensions>` elemento a todos los elementos PropertyGroup en el archivo de proyecto de SharePoint que está definido antes de la \<importación > del archivo de destinos de SharePoint.  
+ Sin embargo, puede agregar extensiones de archivo adicionales a la lista. Agregar un `<TokenReplacementFileExtensions>` elemento a todos los elementos PropertyGroup en el archivo de proyecto de SharePoint que está definido antes de la \<importación > del archivo de destinos de SharePoint.  
   
 > [!NOTE]  
 >  Como reemplazo del token se produce una vez compilado un proyecto, no debe agregar las extensiones de archivo para tipos de archivo que se compilan, como. cs, .vb o .resx. Los tokens se reemplazan únicamente en los archivos que no se compilan.  
   
- Por ejemplo, para agregar las extensiones de nombre de archivo ".myextension" y ".yourextension" a la lista de extensiones de nombre de archivo de reemplazo del token, agregaría lo siguiente en un archivo .csproj:  
+ Por ejemplo, para agregar las extensiones de nombre de archivo ".myextension" y ".yourextension" a la lista de extensiones de nombre de archivo de reemplazo del token, podría agregar las siguientes acciones para un `.csproj` archivo:  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- Como alternativa, puede agregar la extensión directamente al archivo .targets. Sin embargo, esto modifica la lista de extensiones para todos los proyectos de SharePoint empaquetados en el sistema local, no solo su propia. Esto puede ser conveniente cuando es el único desarrollador en el sistema o si así lo requiere la mayoría de los proyectos. Sin embargo, dado que es específica del sistema, este enfoque no resulta muy portátil y, por lo tanto, se recomienda que agregará todas las extensiones al archivo de proyecto en su lugar.  
+ Puede agregar la extensión directamente al archivo .targets. Sin embargo, esto modifica la lista de extensiones para todos los proyectos de SharePoint empaquetados en el sistema local, no solo su propia. Esto puede ser conveniente cuando es el único desarrollador en el sistema o si así lo requiere la mayoría de los proyectos. Sin embargo, dado que es específica del sistema, este enfoque no resulta muy portátil y, por lo tanto, se recomienda que agregará todas las extensiones al archivo de proyecto en su lugar.  
   
 ## <a name="see-also"></a>Vea también  
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  

@@ -1,5 +1,5 @@
 ---
-title: Registro de eventos para soluciones de Office | Documentos de Microsoft
+title: Registro de eventos para soluciones de Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b1319e906060a1fe4d94fbd2e6bb0a3f9d53eb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="event-logging-for-office-solutions"></a>Registro de eventos para soluciones de Office
   Puede usar el visor de eventos en Windows para ver todos los mensajes de excepción capturados por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , cuando instale o desinstale soluciones de Office. Puede usar estos mensajes desde el registrador de eventos para resolver los problemas de instalación e implementación.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="reading-the-event-log"></a>Leer el registro de eventos  
+## <a name="read-the-event-log"></a>Leer el registro de eventos  
  Abra el **Visor de eventos** y aplique un filtro para los eventos que desea ver.  
   
-#### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Leer el registro de eventos en Windows Server 2003 y Windows XP  
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Leer el registro de eventos en Windows Server 2003 y Windows XP  
   
 1.  En el Panel de control, abra **Herramientas administrativas**.  
   
@@ -76,15 +76,15 @@ ms.lasthandoff: 04/16/2018
   
  Una vez desinstalada la solución de Office, los mensajes de excepción permanecen en el registro de eventos.  
   
- Para mostrar o registrar los mensajes de excepción cuando se ejecuta una solución de Office, consulte [depurar proyectos de Office](../vsto/debugging-office-projects.md) y [depurar proyectos de Office](../vsto/debugging-office-projects.md).  
+ Para mostrar o registrar los mensajes de excepción cuando se ejecuta una solución de Office, consulte [proyectos de Office depurar](../vsto/debugging-office-projects.md) y [proyectos de Office depurar](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Localización  
  El lenguaje del mensaje de excepción se determina según el idioma de Visual Studio Tools para Office Runtime. Por ejemplo, si el equipo del usuario final tiene instalado el paquete de idioma japonés, el mensaje de excepción se escribe en japonés en el registro de eventos.  
   
-## <a name="disabling-the-event-logger"></a>Deshabilitar el registrador de eventos  
+## <a name="disable-the-event-logger"></a>Deshabilitar al registrador de eventos  
  De forma predeterminada, el registrador de eventos está habilitado cuando se instalan o desinstalan las soluciones de Office. Puede deshabilitar el registrador de eventos estableciendo la variable de entorno VSTO_EVENTLOGDISABLED en "1" (uno).  
   
-#### <a name="to-disable-the-event-log"></a>Deshabilitar el registro de eventos  
+### <a name="to-disable-the-event-log"></a>Deshabilitar el registro de eventos  
   
 1.  En el Panel de Control, abra **Sistema**.  
   
@@ -100,6 +100,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)   
- [Solución de problemas de implementación de las soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)  
+ [Solucionar problemas de implementación de soluciones de Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
   

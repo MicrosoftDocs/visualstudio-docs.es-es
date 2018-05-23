@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 629b63b8645f1b5ebd84d25a04a4cec4e8bca6a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Cómo: Crear un paquete de solución de SharePoint con las tareas de MSBuild
   Puede compilar, limpiar y validar un paquete de SharePoint (.wsp) mediante tareas de MSBuild de línea de comandos en un equipo de desarrollo. También puede usar estos comandos para automatizar el proceso de compilación mediante Team Foundation Server en un equipo de compilación.  
@@ -36,13 +36,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Escriba el siguiente comando para crear un paquete para el proyecto. Reemplace *ProjectFileName* con el nombre del proyecto.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ProjectFileName  
     ```  
   
      Por ejemplo, podría ejecutar uno de los siguientes comandos para empaquetar un proyecto de SharePoint denominado ListDefinition1.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ListDefinition1.vbproj  
     msbuild /t:Package ListDefinition1.csproj  
     ```  
@@ -57,13 +57,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Escriba el siguiente comando para limpiar un paquete para el proyecto. Reemplace *ProjectFileName* con el nombre del proyecto.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
      Por ejemplo, podría ejecutar uno de los comandos siguientes para limpiar un proyecto de SharePoint denominado ListDefinition1.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
@@ -78,13 +78,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Escriba el siguiente comando para validar un paquete para el proyecto. Reemplace *ProjectFileName* con el nombre del proyecto.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
      Por ejemplo, podría ejecutar uno de los comandos siguientes para validar un proyecto de SharePoint denominado ListDefinition1.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
@@ -99,13 +99,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Escriba el siguiente comando para establecer una propiedad en un paquete para el proyecto. Reemplace *PropertyName* con la propiedad que desea establecer.  
   
-    ```  
+    ```cmd  
     msbuild /property:PropertyName=Value  
     ```  
   
      Por ejemplo, podría ejecutar el comando siguiente para establecer el nivel de advertencia.  
   
-    ```  
+    ```cmd  
     msbuild /property:WarningLevel = 2  
     ```  
   

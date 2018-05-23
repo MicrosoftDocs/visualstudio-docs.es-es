@@ -1,5 +1,5 @@
 ---
-title: Áreas de formulario de instrucciones para crear Outlook | Documentos de Microsoft
+title: Instrucciones para crear áreas de formulario de Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>Instrucciones para crear áreas de formulario de Outlook
   La siguiente información puede ayudarle a optimizar las áreas del formulario y a evitar posibles problemas:  
   
--   [Usar nombres de área de formulario](#UsingFormRegions).  
+-   [Usar nombres de región de formulario](#UsingFormRegions).  
   
 -   [Deshabilitar la herencia del área de formulario](#DisablingInheritance).  
   
--   [Información acerca de los nombres de tipos y clases de mensaje](#ClassNames).  
+-   [Descripción de los tipos y nombres de clase de mensaje](#ClassNames).  
   
 -   [Diseñar áreas de formulario adyacentes para el panel de lectura](#ReadingPane).  
   

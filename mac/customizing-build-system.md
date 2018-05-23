@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: e999c9c68a534611aa1db6e571594d11fc20201e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 16f14d1acb31612d2997937b9aa34f918b6376d6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="customizing-the-build-system"></a>Personalización del sistema de compilación
 
@@ -28,17 +28,17 @@ MSBuild usa un archivo XML, denominado archivo de proyecto, que define los *elem
 
 Para buscar el archivo MSBuild, haga clic con el botón derecho en el nombre del proyecto y seleccione **Mostrar en Finder**. La ventana de Finder muestra todos los archivos y las carpetas relacionados con el proyecto, incluido el archivo `.csproj`, como se muestra en la imagen siguiente:
 
-![](media/customizing-build-system-image1.png)
+![Ubicación de csproj en Finder](media/customizing-build-system-image1.png)
 
 Para mostrar el archivo `.csproj` en una nueva pestaña de Visual Studio para Mac, haga clic con el botón derecho en el nombre del proyecto y vaya a **Herramientas > Editar archivo**:
 
-![](media/customizing-build-system-image2.png)
+![Abrir csproj en el editor de código fuente](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>Composición del archivo de MSBuild
 
 Todos los archivos de MSBuild contienen un elemento raíz obligatorio `Project`, como:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 </Project>
@@ -46,7 +46,7 @@ Todos los archivos de MSBuild contienen un elemento raíz obligatorio `Project`,
 
 Normalmente, el proyecto también importará un archivo `.targets`. Este archivo contiene muchas de las reglas que describen cómo procesar y compilar los distintos archivos. La importación normalmente aparece hacia la parte inferior del archivo `proj` y, en los proyectos de C#, su aspecto es similar al siguiente:
 
-```
+```xml
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 ```
 
@@ -64,7 +64,7 @@ Se establecen mediante un elemento PropertyGroup y pueden contener cualquier nú
 
 Por ejemplo, el elemento PropertyGroup de una aplicación de consola sencilla podría parecerse al siguiente XML:
 
-```
+```xml
 <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -86,7 +86,7 @@ Los elementos se crean al declarar un `ItemGroup`. Puede haber cualquier número
 
 Por ejemplo, el siguiente fragmento de código crea las pantallas de inicio de iOS. Las pantallas de inicio tienen el tipo de compilación `BundleResource`, con la especificación como ruta de acceso a la imagen:
 
-```
+```xml
  <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\Default%402x.png" />
@@ -96,7 +96,7 @@ Por ejemplo, el siguiente fragmento de código crea las pantallas de inicio de i
     <BundleResource Include="Resources\Default-Landscape%402x.png" />
   </ItemGroup>
  ```
- 
+
  Con la sintaxis `@()` se puede hacer referencia a conjuntos de elementos desde expresiones. Por ejemplo, `@(BundleResource)` se evalúa como el conjunto de elementos BundleResource, lo que significa todos los elementos de BundleResource. Si no hay ningún elemento de este tipo, estará vacío, sin ningún error.
 
 ## <a name="resources-for-learning-msbuild"></a>Recursos de aprendizaje de MSBuild
@@ -105,5 +105,3 @@ Los siguientes recursos pueden usarse para obtener información más detallada s
 
 * [Información general sobre MSDN](https://msdn.microsoft.com/library/dd393574.aspx)
 * [Conceptos de MSDN](https://msdn.microsoft.com/library/dd637714.aspx)
-
-

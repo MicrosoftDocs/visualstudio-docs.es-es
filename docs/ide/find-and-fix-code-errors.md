@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -91,17 +91,15 @@ Las advertencias nuevas o actualizadas se muestran en la pestaña **Lista de err
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Usar bombillas para corregir o refactorizar el código
 
-Las [bombillas](../ide/quick-actions.md) son una característica relativamente nueva de Visual Studio que permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz en el código de C#, C++ y Visual Basic. Para obtener acceso a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia y seleccione **Acciones rápidas**, o presione **CTRL**+**.** cuando el cursor se encuentra en la línea con el subrayado ondulado de color. Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.
+Las [acciones rápidas](../ide/quick-actions.md), que están disponibles desde el icono de la bombilla o el destornillador, le permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz en el código de C#, C++ y Visual Basic. Para obtener acceso a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia y seleccione **Acciones rápidas y refactorizaciones**. O bien, cuando el cursor se encuentre en la línea con el subrayado ondulado de color, presione **Ctrl**+**.** o seleccione el icono de la bombilla o el destornillador en el margen. Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.
 
 ![Vista previa de bombilla de Visual Studio](../ide/media/quick-actions-options.png)
 
-Las bombillas pueden usarse siempre que los analizadores de código determinan que hay una posibilidad de corregir, refactorizar o mejorar el código. Haga clic en cualquier línea de código, haga clic con el botón derecho para abrir el menú contextual y seleccione **Acciones rápidas** (o bien, si prefiere la eficacia, presione **CTRL**+**.**). Si hay opciones disponibles de refactorización o de mejora, se muestran. En caso contrario, se mostrará el mensaje **No quick options available here** (No hay opciones rápidas disponibles aquí) en la esquina inferior izquierda del IDE.
+Las acciones rápidas pueden usarse siempre que los analizadores de código determinen que hay una posibilidad de corregir, refactorizar o mejorar el código. Haga clic en cualquier línea de código, haga clic con el botón derecho para abrir el menú contextual y seleccione **Acciones rápidas y refactorizaciones**. Si hay opciones disponibles de refactorización o de mejora, se muestran. En caso contrario, se mostrará el mensaje **No hay disponibles acciones rápidas aquí** en la esquina inferior izquierda del IDE.
 
-![Texto de bombilla "ninguna opción" de Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Texto de No hay disponibles acciones rápidas](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Con experiencia, puede usar rápidamente las teclas de dirección y **CTRL**+**.** para comprobar si hay posibilidades de refactorización con las opciones rápidas y limpiar el código.
-
-Para obtener más información sobre las bombillas, vea [Acciones rápidas](../ide/quick-actions.md).
+Con experiencia, puede usar rápidamente las teclas de dirección y **CTRL**+**.** para comprobar si hay posibilidades fáciles de refactorización y limpiar el código.
 
 ## <a name="debug-your-running-code"></a>Depurar el código en ejecución
 

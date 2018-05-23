@@ -1,6 +1,6 @@
 ---
-title: Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office System
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office System project
+title: Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office system
+decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05c7296412ffd3f87433f4790617f4b27ca75ae3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office System
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office system
 
-Debe habilitar explícitamente el acceso a Visual Basic para el sistema de proyectos de aplicaciones (VBA) en Microsoft Office para poder crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office System.
+Debe habilitar explícitamente el acceso a Visual Basic para el sistema de proyectos de aplicaciones (VBA) en Microsoft Office para poder crear o abrir un proyecto de Visual Studio Tools para el proyecto de sistema de Microsoft Office.
 
  Proyectos de desarrollo de Microsoft Office requieren acceso a Visual Basic para el sistema de proyectos de aplicaciones (VBA) en Microsoft Office Word y Microsoft Office Excel, aunque los proyectos no usen Visual Basic para aplicaciones. La compatibilidad con controles en tiempo de diseño en proyectos de Visual Basic y C# depende del sistema de proyectos de Visual Basic para Aplicaciones.
 
@@ -127,4 +127,4 @@ Debe habilitar explícitamente el acceso a Visual Basic para el sistema de proye
 
 ## <a name="see-also"></a>Vea también
 
- [Protección de soluciones de Office](../vsto/securing-office-solutions.md)
+ [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
