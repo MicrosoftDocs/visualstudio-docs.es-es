@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar un panel de acciones a documentos de Word o libros de Excel | Documentos de Microsoft'
+title: 'Cómo: agregar un panel de acciones a documentos de Word o libros de Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aeb6fa198f7e7c82e96a97382befc41a2f016d53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf4896411a46b2c75edd8216bd61623bc9b728f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel
   Para agregar un panel de acciones a un documento de Microsoft Office Word o un libro de Microsoft Excel, primero cree un control de usuario de formularios Windows Forms. A continuación, agregue el control de usuario para la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad de la `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) en el proyecto.  
@@ -62,10 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
-## <a name="adding-the-user-control-to-the-actions-pane"></a>Agregar el Control de usuario al panel de acciones  
+## <a name="add-the-user-control-to-the-actions-pane"></a>Agregar el control de usuario al panel de acciones  
  Para mostrar el panel Acciones, agregue el control de usuario para la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propiedad de la `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel).  
   
-#### <a name="to-add-the-user-control-to-the-actions-pane"></a>Para agregar el control de usuario al panel de acciones  
+### <a name="to-add-the-user-control-to-the-actions-pane"></a>Para agregar el control de usuario al panel de acciones  
   
 1.  Agregue el código siguiente a la `ThisDocument` o `ThisWorkbook` clase como una declaración de nivel de clase (no agregue este código a un método).  
   
@@ -81,6 +81,6 @@ ms.lasthandoff: 04/16/2018
  [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md)   
  [Tutorial: Insertar texto en un documento de un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Cómo: administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Tutorial: Inserción de texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Tutorial: Insertar texto en un documento de un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

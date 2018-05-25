@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 010cdbbb23b1e376ec12e7a6a6a903664a069d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 487cb4fe5ea15c2186f9284c557a1e9377ac801f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Cómo: Agregar nodos al área de trabajo desde el Explorador de esquemas XML
+# <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Cómo: agregar nodos al área de trabajo desde el Explorador de esquemas XML
 
-Este tema explica cómo agregar nodos a la [área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md) desde el Explorador de esquemas XML. Eso puede lograrse arrastrando y colocando nodos desde el Explorador de esquemas XML hasta una vista del Diseñador XSD o usando el menú contextual del Explorador de esquemas XML. También puede agregar los nodos que se resaltan como resultado de una búsqueda realizada por el Explorador de esquemas XML. Para obtener más información, consulte [Cómo: agregar establecer búsqueda resultado nodos de esquema para el área de trabajo](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
+Este tema explica cómo agregar nodos a la [área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md) desde el **Explorador de esquemas XML**. Esto puede lograrse arrastrando y colocando nodos desde el **Explorador de esquemas XML** en una vista de diseñador XSD, o mediante el uso de la **del explorador de esquemas XML** menú contextual. También puede agregar nodos que se resaltan como resultado de una búsqueda realizada por el **Explorador de esquemas XML**. Para obtener más información, consulte [Cómo: agregar nodos de resultados de búsqueda de conjunto de esquema para el área de trabajo](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).
 
 > [!NOTE]
-> Solo los nodos globales se pueden agregar a la [área de trabajo del Diseñador de esquemas de XML](../xml-tools/xml-schema-designer-workspace.md).
+> Solo los nodos globales se pueden agregar a la [área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md).
 
-## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Para agregar nodos mediante el menú contextual del Explorador de esquemas XML
+## <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Para agregar nodos mediante el menú contextual de explorador de XML
 
 1.  Siga los pasos de [Cómo: crear y editar un archivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
@@ -33,11 +33,11 @@ Este tema explica cómo agregar nodos a la [área de trabajo del Diseñador de e
 
 ## <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Para arrastrar y colocar un nodo en una vista
 
-1.  Haga clic con el botón secundario del mouse en el nodo `PurchaseOrderType` de la vista Gráfico. Seleccione **mostrar en Explorador de esquemas XML**.
+1.  Haga doble clic en el `PurchaseOrderType` nodo en la vista gráfico. Seleccione **mostrar en Explorador de esquemas XML**.
 
-     El nodo se resalta en el Explorador de esquemas XML.
+     El nodo se resalta en el **Explorador de esquemas XML**.
 
-2.  Haga clic con el botón secundario en el `PurchaseOrderType` nodo en el Explorador de esquemas XML y seleccione **mostrar todas las referencias**.
+2.  Haga clic con el botón secundario en el `PurchaseOrderType` nodo en el **Explorador de esquemas XML** y seleccione **mostrar todas las referencias**.
 
      Se resalta el nodo `purchaseOrder`.
 
@@ -51,7 +51,7 @@ Este tema explica cómo agregar nodos a la [área de trabajo del Diseñador de e
 
      ![Búsqueda de palabra clave de explorador de esquemas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Los resultados de la búsqueda se resaltan en el Explorador de esquemas XML y se marcan en la barra de desplazamiento vertical.
+     Los resultados de búsqueda se resaltan en el **Explorador de esquemas XML** y se marcan en la barra de desplazamiento vertical.
 
 2.  Agregar los resultados de búsqueda al área de trabajo haciendo clic en el **agregar nodos resaltados al área de trabajo** botón en el panel de resultados de resumen.
 

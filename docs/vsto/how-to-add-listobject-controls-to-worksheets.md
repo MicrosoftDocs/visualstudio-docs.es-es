@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ab95f3929b556f6ece0d3b44ee12bad6f21a361
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 5af88022529263446c82fc27aee9d781d7da945f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Cómo: agregar controles ListObject a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en proyectos de nivel de documento.  
@@ -44,7 +44,7 @@ ms.lasthandoff: 05/17/2018
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-#### <a name="to-use-the-ribbon-in-excel"></a>Usar la cinta de opciones en Excel  
+### <a name="to-use-the-ribbon-in-excel"></a>Usar la cinta de opciones en Excel  
   
 1.  En la ficha **Insertar** , del grupo **Tablas** , haga clic en **Tabla**.  
   
@@ -79,7 +79,7 @@ ms.lasthandoff: 05/17/2018
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]  
   
 ##  <a name="runtimeaddin"></a> Agregar controles ListObject en tiempo de ejecución en un proyecto de complemento de VSTO  
- Puede agregar un control <xref:Microsoft.Office.Tools.Excel.ListObject> mediante programación a cualquier hoja de cálculo abierta de un proyecto de complemento VSTO. Los objetos de lista creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando esta se guarda y, a continuación, se cierra. Para obtener más información, consulte [documentos de Word extender y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Puede agregar un control <xref:Microsoft.Office.Tools.Excel.ListObject> mediante programación a cualquier hoja de cálculo abierta de un proyecto de complemento de VSTO. Los objetos de lista creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando esta se guarda y, a continuación, se cierra. Para obtener más información, consulte [documentos de Word extender y libros de Excel en complementos VSTO en tiempo de ejecución](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Agregar un control ListObject a una hoja de cálculo mediante programación  
   

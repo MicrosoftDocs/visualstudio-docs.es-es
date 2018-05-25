@@ -28,11 +28,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f2c74fe2b6f145dd88acbc3bc11d66201acbffd5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4dff9c5f8602f1e11ef020400a11d7d165b23b04
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.  
@@ -48,7 +48,7 @@ ms.lasthandoff: 05/17/2018
 ### <a name="familiar-user-interface"></a>Interfaz de usuario conocida  
  Los usuarios de aplicaciones de Microsoft Office system ya están familiarizados con el uso de los paneles de tareas como la **estilos y formato** panel de tareas de Word. Los paneles de tareas personalizados se comportan como los demás paneles de tareas de Microsoft Office System. Los usuarios pueden acoplar paneles de tareas personalizados en diferentes lados de la ventana de la aplicación o pueden arrastrar paneles de tareas personalizados a cualquier lugar de la ventana. Puede crear un complemento de VSTO que muestre varios paneles de tareas personalizados al mismo tiempo, y los usuarios pueden controlar cada panel de tareas individualmente.  
   
-### <a name="windows-forms-support"></a>compatibilidad con formularios Windows Forms  
+### <a name="windows-forms-support"></a>Compatibilidad con Windows forms  
  La interfaz de usuario de un panel de tareas personalizado que se crea con las herramientas de desarrollo de Office en Visual Studio se basa en controles de Windows Forms. Puede usar el ya conocido Diseñador de Windows Forms para diseñar la interfaz de usuario de un panel de tareas personalizado. También puede usar la compatibilidad de enlace de datos de Windows Forms para enlazar un origen de datos a controles del panel de tareas.  
   
 ## <a name="create-a-custom-task-pane"></a>Crear un panel de tareas personalizado  
@@ -85,7 +85,7 @@ ms.lasthandoff: 05/17/2018
 ## <a name="access-the-application-from-the-task-pane"></a>Acceso a la aplicación desde el panel de tareas  
  Si desea automatizar la aplicación desde el control de usuario, puede acceder directamente al modelo de objetos usando `Globals.ThisAddIn.Application` en el código. La clase `Globals` estática proporciona acceso al objeto `ThisAddIn`. El campo `Application` de este objeto es el punto de entrada al modelo de objetos de la aplicación.  
   
- Para obtener más información sobre la `Application` campo de la `ThisAddIn` de objetos, consulte [complementos VSTO de programa](../vsto/programming-vsto-add-ins.md). Para ver un tutorial que muestra cómo automatizar una aplicación desde un panel de tareas personalizado, vea [Tutorial: automatizar una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Para obtener más información sobre la `Globals` de clases, consulte [acceso Global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).  
+ Para obtener más información sobre la `Application` campo de la `ThisAddIn` de objetos, consulte [complementos VSTO de programa](../vsto/programming-vsto-add-ins.md). Para ver un tutorial que muestra cómo automatizar una aplicación desde un panel de tareas personalizado, vea [Tutorial: automático de una aplicación desde un panel de tareas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Para obtener más información sobre la `Globals` de clases, consulte [acceso Global a objetos en los proyectos de Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Administrar la interfaz de usuario del panel de tareas  
  Después de crear el panel de tareas, puede usar las propiedades y los eventos del objeto <xref:Microsoft.Office.Tools.CustomTaskPane> para controlar la interfaz de usuario del panel de tareas y responder cuando el usuario cambia el panel de tareas.  
@@ -147,11 +147,6 @@ ms.lasthandoff: 05/17/2018
  Si desea mostrar un panel de tareas personalizado con varias ventanas del Explorador o el Inspector, deberá crear una nueva instancia del panel de tareas personalizado cuando se abre una ventana del Explorador o el Inspector. Para ello, controle el evento que se desencadena al crear una ventana del Explorador o el Inspector y, a continuación, cree el panel de tareas en el controlador de eventos. También puede administrar eventos del Explorador y del Inspector para ocultar o mostrar paneles de tareas, en función de qué ventana esté visible.  
   
  Para asociar el panel de tareas con un explorador o Inspector específico, use el <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> método para crear el panel de tareas y pase el <xref:Microsoft.Office.Interop.Outlook.Explorer> o <xref:Microsoft.Office.Interop.Outlook.Inspector> el objeto a la *ventana* parámetro. Para obtener más información acerca de cómo crear paneles de tareas personalizados, vea [introducción de paneles de tareas personalizados](../vsto/custom-task-panes.md).  
-  
- Para ver un tutorial que muestra cómo crear un panel de tareas para cada mensaje de correo electrónico que se abre, consulte [Tutorial: mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
-  
-### <a name="outlook-events"></a>Eventos de Outlook  
- Para supervisar el estado de las ventanas del Explorador, puede administrar los siguientes eventos relacionados con el Explorador:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   

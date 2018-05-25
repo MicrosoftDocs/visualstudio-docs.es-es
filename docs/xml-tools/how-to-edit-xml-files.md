@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e35baa6d6d7c5cba696ab7b5e0bb57dd722b5d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3754bcf87d77a3a67801ef7f9df8e07dc687b052
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-edit-xml-files"></a>Cómo: Editar archivos XML
+# <a name="how-to-edit-xml-files"></a>Cómo: editar archivos XML
 
-El Editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archivo XML independiente o en uno asociado con un proyecto de Visual Studio. El Editor XML está asociado con las siguientes extensiones de archivo: .config, .dtd, .xml, .xsd, .xdr, .xsl, .xslt y .vssettings. También está asociado con otros tipos de archivos que no tengan registrado un editor específico y que incluyan contenido XML o DTD.
+El Editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archivo XML independiente o en uno asociado con un proyecto de Visual Studio. El Editor XML está asociado con las siguientes extensiones de archivo: *.config*, *.dtd*, *.xml*, *.xsd*, *.xdr*, *.xsl*, *.xslt*, y *vssettings*. También está asociado con otros tipos de archivos que no tengan registrado un editor específico y que incluyan contenido XML o DTD.
 
 > [!NOTE]
 > Los documentos XHTML son manejados con el Editor HTML.
@@ -70,5 +70,5 @@ El Editor XML es el nuevo editor de archivos XML. Se puede utilizar en un archiv
 ## <a name="see-also"></a>Vea también
 
 - [Editor XML](../xml-tools/xml-editor.md)
-- [Propiedades de documentos XML, Ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)
-- [Cómo: Crear un esquema XML a partir de un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Propiedades del documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)
+- [Cómo: crear un esquema XML a partir de un documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

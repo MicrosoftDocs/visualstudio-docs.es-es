@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>Vista Inicio
 
@@ -26,7 +26,7 @@ La vista inicio contiene dos secciones principales, el *marca de agua* y **detal
 
 ## <a name="watermark"></a>Marca de agua
 
-El panel de marca de agua contiene una lista con los vínculos a todas las vistas del Diseñador XSD, el Editor XML y el Explorador de esquemas XML. Si el conjunto de esquemas tiene errores, se muestra el texto siguiente al final de la lista: "Use la lista de errores para ver y corregir los errores en el conjunto de esquemas".
+El panel de la marca de agua contiene una lista de vínculos a todas las vistas de diseñador XSD, el Editor XML, y **Explorador de esquemas XML**. Si el conjunto de esquemas tiene errores, se muestra el texto siguiente al final de la lista: "Use la lista de errores para ver y corregir los errores en el conjunto de esquemas".
 
 ## <a name="schema-set-details"></a>Detalles del conjunto de esquemas
 
@@ -42,9 +42,9 @@ Los siguientes botones están habilitados en la barra de herramientas del Diseñ
 
 |Opción|Descripción|
 |------------|-----------------|
-|**Mostrar vista inicio**|Cambia a la vista Inicio. Puede obtener acceso a esta vista usando el método abreviado de teclado: **CTRL + 1**.|
-|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Puede obtener acceso a esta vista usando el método abreviado de teclado: **CTRL + 2**.|
-|**Mostrar vista Gráfico**|Cambia a la vista Gráfico. Puede obtener acceso a esta vista usando el método abreviado de teclado: **CTRL + 3**.|
+|**Mostrar vista inicio**|Cambia a la vista Inicio. Puede obtener acceso a esta vista usando el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Puede obtener acceso a esta vista usando el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista Gráfico**|Cambia a la vista Gráfico. Puede obtener acceso a esta vista usando el método abreviado de teclado: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Vea también
 

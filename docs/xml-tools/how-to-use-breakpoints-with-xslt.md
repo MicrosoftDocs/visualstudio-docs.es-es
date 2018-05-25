@@ -9,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1c3a5e2001726c0f082bf17d279eb22a03fc86
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 430b7f14f35506b45fe73be47d056cdd7b6a9c95
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Cómo: utilizar puntos de interrupción con XSLT
 
 Puede establecer los puntos de interrupción en una hoja de estilos XSLT o en el documento de origen XML. Si establece un punto de interrupción en una etiqueta, cuando comienza la ejecución el punto de interrupción se traslada a la siguiente instrucción que tiene información de línea de código fuente.
 
-Para obtener más información, consulte [Fundamentos de depuración: puntos de interrupción](../debugger/using-breakpoints.md).
+Para obtener más información, consulte [Fundamentos de la depuración: puntos de interrupción](../debugger/using-breakpoints.md).
 
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>Establecer un punto de interrupción en una hoja de estilos
 

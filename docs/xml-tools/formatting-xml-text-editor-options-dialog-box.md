@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1046655812bf88f51af7590fd1b39ccea11f8eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formato, XML, Editor de texto, Cuadro de diálogo Opciones
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>Formato, XML, editor de texto, cuadro de diálogo Opciones
 
 Este cuadro de diálogo permite especificar las opciones de formato del Editor XML. Puede tener acceso a la **opciones** cuadro de diálogo desde el **herramientas** menú.
 
@@ -67,5 +67,5 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
 
 ## <a name="see-also"></a>Vea también
 
-- [Propiedades de documentos XML, Ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)
+- [Propiedades del documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)
 - [Componentes del Editor XML](../xml-tools/xml-editor-components.md)

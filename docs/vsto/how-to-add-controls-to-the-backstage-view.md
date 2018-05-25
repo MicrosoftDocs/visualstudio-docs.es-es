@@ -23,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d72cd3371a1465faa1dd505f71c5fe8c9e2e181d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6b775c7613b8cc0953e419b2546ec017c96e8454
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Cómo: agregar controles a la vista Backstage
-  Puede utilizar el Diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en el **archivo** ficha al ejecutar la aplicación, los controles que agregue a la **archivo** ficha aparece un grupo denominado  **Complementos**.  
+  Puede utilizar el Diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en el **archivo** ficha. Al ejecutar la aplicación, los controles que agregue a la **archivo** ficha aparece un grupo denominado **complementos**.  
   
  No se puede colocar controles antes o después de los controles integrados mediante el Diseñador de la cinta de opciones en Visual Studio. Un control integrado es un control que ya aparece en la vista Backstage. Si desea colocar controles antes o después de los controles integrados, debe usar un XML de cinta de opciones. Para obtener más información acerca de **cinta (XML)**, consulte [XML de cinta de opciones](../vsto/ribbon-xml.md). Para obtener más información acerca de cómo personalizar la vista Backstage, consulte [Introducción a la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182189) y [personalizar la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182188).  
   

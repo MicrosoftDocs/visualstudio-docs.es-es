@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a7d850f8045ce70166bec3324470abaf61b6de
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="editing-xslt-style-sheets"></a>Editar hojas de estilos XSLT
+# <a name="edit-xslt-style-sheets"></a>Editar hojas de estilos XSLT
 
 El Editor XML se puede utilizar también para editar hojas de estilos XSLT. Puede aprovechar las características predeterminadas del editor como IntelliSense, esquematización, fragmentos XML, etc. Además, se incluyen también nuevas características que facilitan la programación en XSLT.
 
@@ -29,7 +29,7 @@ El Editor XML se puede utilizar también para editar hojas de estilos XSLT. Pued
 
  **Subrayados ondulados**
 
- El Editor XML utiliza el archivo xslt.xsd instalado para validar las hojas de estilos XSLT. Los errores de validación se muestran con un subrayado ondulado de color azul. El Editor XML también compila la hoja de estilos en segundo plano e informa de los errores o advertencias del compilador mediante el subrayado ondulado adecuado.
+ El Editor XML utiliza instalado *xslt.xsd* archivo para validar las hojas de estilos XSLT. Los errores de validación se muestran con un subrayado ondulado de color azul. El Editor XML también compila la hoja de estilos en segundo plano e informa de los errores o advertencias del compilador mediante el subrayado ondulado adecuado.
 
  **Compatibilidad con bloques de scripts**
 

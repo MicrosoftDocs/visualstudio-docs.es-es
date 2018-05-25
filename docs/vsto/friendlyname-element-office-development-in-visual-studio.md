@@ -15,19 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52a8a34e7469518f2d14bab00df46ce0997343bd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 26842ab926ed7ef0ea2cfd62bf032c25b2c69d02
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt; elemento (desarrollo de Office en Visual Studio)
   El elemento `friendlyName` del espacio de nombres `vstov4` almacena el nombre que aparece en la lista de programas instalados.  
   
 ## <a name="syntax"></a>Sintaxis  
-
-xml  
-```  
+  
+```xml
 <friendlyName>  
 </friendlyName>  
 ```  

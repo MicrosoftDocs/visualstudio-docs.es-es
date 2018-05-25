@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f7f15cc3ce8396e4cd10a49a1427f1ba1be76b50
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="excel-object-model-overview"></a>Información general sobre el modelo de objetos de Excel
   Para desarrollar soluciones que usen Microsoft Office Excel, puede interactuar con los objetos proporcionados por el modelo de objetos de Excel. Este tema presenta los objetos más importantes:  
@@ -99,7 +99,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="range-object"></a>Range (objeto)  
  El objeto <xref:Microsoft.Office.Interop.Excel.Range> es el objeto que más utilizará en las aplicaciones de Excel. Para poder manipular una región de Excel, debe expresarla como un objeto <xref:Microsoft.Office.Interop.Excel.Range> y trabajar con métodos y propiedades de ese intervalo. Un objeto <xref:Microsoft.Office.Interop.Excel.Range> representa una celda, una fila, una columna, una selección de celdas que contiene uno o más bloques de celdas (que podrían o no ser contiguas) o incluso un grupo de celdas de varias hojas.  
   
- Visual Studio extiende el objeto <xref:Microsoft.Office.Interop.Excel.Range> proporcionando los tipos <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>. Estos tipos tienen la mayoría de las características de un objeto <xref:Microsoft.Office.Interop.Excel.Range>, además de nuevas características como la capacidad de enlace de datos y nuevos eventos. Para obtener más información, consulte [NamedRange Control](../vsto/namedrange-control.md) y [XmlMappedRange (Control)](../vsto/xmlmappedrange-control.md).  
+ Visual Studio extiende el objeto <xref:Microsoft.Office.Interop.Excel.Range> proporcionando los tipos <xref:Microsoft.Office.Tools.Excel.NamedRange> y <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>. Estos tipos tienen la mayoría de las características de un objeto <xref:Microsoft.Office.Interop.Excel.Range>, además de nuevas características como la capacidad de enlace de datos y nuevos eventos. Para obtener más información, consulte [control NamedRange](../vsto/namedrange-control.md) y [XmlMappedRange (control)](../vsto/xmlmappedrange-control.md).  
   
 ##  <a name="ExcelOMDocumentation"></a> Usar la documentación del modelo de objetos de Excel  
  Para obtener información completa sobre el modelo de objetos de Excel, puede consultar la referencia del ensamblado de interoperabilidad primario (PIA) de Excel y la referencia del modelo de objetos VBA.  
@@ -107,7 +107,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="primary-interop-assembly-reference"></a>Referencia de ensamblado de interoperabilidad primario  
  La documentación de referencia de los PIA de Excel describe los tipos Del ensamblado de interoperabilidad primario para Excel. Esta documentación está disponible en la siguiente ubicación: [referencia de ensamblado de interoperabilidad primario de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
- Para obtener más información sobre el diseño de los PIA de Excel, como las diferencias entre las clases e interfaces en el PIA y cómo se implementan los eventos en los PIA, consulte [información general sobre las clases y las Interfaces de los ensamblados de interoperabilidad primarios de Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ Para obtener más información sobre el diseño de los PIA de Excel, como las diferencias entre las clases e interfaces en el PIA y cómo se implementan los eventos en los PIA, consulte [información general de las clases e interfaces de los ensamblados de interoperabilidad primariosdeOffice](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>Referencia del modelo de objetos VBA  
  La referencia del modelo de objetos de VBA documenta el modelo de objetos de Excel tal como se expone al código de Visual Basic para Aplicaciones (VBA). Para obtener más información, consulte [referencia del modelo de objetos de Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199768).  

@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b260c6b0e63801134c3f15eabab5b13e2926e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6629aef7549a78f7cfdb73bb6d7ee0be3ac7412
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Cómo: Agregar nodos de resultados de búsqueda del conjunto de esquemas al área de trabajo
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Cómo: agregar nodos de resultados de búsqueda de conjunto de esquema para el área de trabajo
 
-En este tema se explica cómo agregar nodos que están resaltados en el Explorador de esquemas XML como el resultado de una búsqueda de palabras claves en el área de trabajo.
+Este tema explica cómo agregar nodos que están resaltados en el **Explorador de esquemas XML** como resultado de una búsqueda de palabra clave en el área de trabajo.
 
 > [!NOTE]
 > Solo los nodos globales se pueden agregar a la [área de trabajo](../xml-tools/xml-schema-designer-workspace.md).
@@ -34,7 +34,7 @@ En este tema se explica cómo agregar nodos que están resaltados en el Explorad
 
      ![Búsqueda de palabra clave de explorador de esquemas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Los resultados de la búsqueda se resaltan en el Explorador de esquemas XML y se marcan en la barra de desplazamiento vertical.
+     Los resultados de búsqueda se resaltan en el **Explorador de esquemas XML** y se marcan en la barra de desplazamiento vertical.
 
 3.  Agregar los resultados de búsqueda al área de trabajo haciendo clic en el **agregar nodos resaltados al área de trabajo** botón en el panel de resultados de resumen.
 

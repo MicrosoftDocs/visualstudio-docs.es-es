@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b87f9d1b850ce93851d78a8b43420ae473c41
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="xml-editor-intellisense-features"></a>Características de IntelliSense del Editor XML
 
@@ -73,14 +73,14 @@ Para obtener más información, consulte [Tutorial: utilizar XSLT IntelliSense](
 
 -   Finalizar una declaración DTD: `>`
 
-El Editor XML también tiene la capacidad para insertar una declaración de espacio de nombres si selecciona un elemento o un atributo certificado de espacio de nombres de una lista IntelliSense y el espacio de nombres de ese elemento o atributo no se encuentra aún en el ámbito.
+El editor XML también tiene la capacidad para insertar un espacio de nombres si selecciona un espacio de nombres completo del elemento o atributo de una lista IntelliSense y el espacio de nombres de ese elemento o atributo no está aún en el ámbito de declaración.
 
 Por ejemplo, si selecciona el elemento `e:Book` de la lista IntelliSense en la que el prefijo está enlazado con el espacio de nombres `http://books` que no se ha declarado en el documento, el Editor XML inserta automáticamente la declaración de espacio de nombres necesaria. A continuación se muestra el texto XML resultante:
 
 `<e:Book xmlns:e="http://books"`
 
 ## <a name="brace-matching"></a>Coincidencia de llaves
- El Editor XML proporciona resalte de llaves que le permite obtener información inmediata acerca de los elementos que acaba de cerrar. También puede utilizar el acceso directo del teclado (CTRL+]) para saltar de una llave a la siguiente llave coincidente.
+ El Editor XML proporciona resalte de llaves que le permite obtener información inmediata acerca de los elementos que acaba de cerrar. También puede utilizar el método abreviado de teclado (**Ctrl**+**]**) para saltar de una llave a la llave correspondiente.
 
  El Editor XML realiza esta acción en los siguientes elementos:
 
@@ -98,8 +98,8 @@ Por ejemplo, si selecciona el elemento `e:Book` de la lista IntelliSense en la q
 
 -   Comillas de apertura y cierre en atributos.
 
-## <a name="modifying-the-intellisense-options"></a>Modificación de las opciones IntelliSense
- Las características IntelliSense y finalización automática están habilitadas de forma predeterminada. Sin embargo, puede cambiar esto si modifica la configuración de las opciones y herramientas.
+## <a name="modify-the-intellisense-options"></a>Modificar las opciones de IntelliSense
+ Las características IntelliSense y finalización automática están habilitadas de forma predeterminada. Sin embargo, puede cambiar esto si modifica la **herramientas** > **opciones** configuración.
 
  El **inserción automática** sección de la **varios** página controla el comportamiento siguiente:
 
@@ -109,7 +109,7 @@ Por ejemplo, si selecciona el elemento `e:Book` de la lista IntelliSense en la q
 |Comillas de atributos|Inserta comillas de valor de atributo cuando se escribe un nuevo nombre de atributo.|
 |Otro marcado|Completa comentarios, CDATA, DOCTYPE, instrucciones de procesamiento y otras declaraciones de marcado.|
 
-#### <a name="to-change-the-auto-completion-behavior"></a>Para cambiar el comportamiento de finalización automática
+### <a name="to-change-the-auto-completion-behavior"></a>Para cambiar el comportamiento de finalización automática
 
 1.  Seleccione **Opciones** en el menú **Herramientas**.
 

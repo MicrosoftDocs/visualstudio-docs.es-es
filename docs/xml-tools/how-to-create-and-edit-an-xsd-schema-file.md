@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 298cb342b83dd512f591e03a6922a099c127cb3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Cómo: crear y editar un archivo de esquema XSD
 
@@ -22,11 +22,11 @@ En este tema se describe cómo crear un nuevo archivo de esquema XML (XSD) y lue
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Para crear un nuevo archivo de esquema XML
 
-1. En Visual Studio, abra el **archivo** menú y seleccione **New** > **archivo**. O bien, utilice el método abreviado de teclado CTRL+N.
+1. En Visual Studio, abra el **archivo** menú y seleccione **New** > **archivo**. O bien, use la **Ctrl**+**N** método abreviado de teclado.
 
 2. En el **nuevo archivo** cuadro de diálogo, seleccione **esquema XML** y, a continuación, seleccione **abiertos**.
 
-   Se creará un nuevo archivo. En Visual Studio aparece la vista Inicio y una ventana vacía del Explorador de esquema XML.
+   Se creará un nuevo archivo. La vista inicio y vacío **Explorador de esquemas XML** ventana aparece en Visual Studio.
 
 ## <a name="to-edit-a-file"></a>Para modificar un archivo
 
@@ -36,8 +36,8 @@ En este tema se describe cómo crear un nuevo archivo de esquema XML (XSD) y lue
 
 2. Copie el código de ejemplo de esquema XML del [esquema de pedido de compra](../xml-tools/sample-xsd-file-simple-schema.md) y péguelo para reemplazar el código que se ha agregado el nuevo archivo XSD de forma predeterminada.
 
-   El Explorador de esquema XML se actualiza con el nuevo conjunto de esquemas.
+   El **Explorador de esquemas XML** se actualiza con el nuevo conjunto de esquemas.
 
 ## <a name="see-also"></a>Vea también
 
-- [Trabajo con datos XML](../xml-tools/working-with-xml-data.md)
+- [Trabajar con datos XML](../xml-tools/working-with-xml-data.md)

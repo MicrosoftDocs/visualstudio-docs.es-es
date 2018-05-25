@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2bb1bcc13ad908b69a847662178cd6cd13aeec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 650478a92ea2dabc9aeef239a68bdff428429cd7
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Cómo: Examinar el Modelo de contenido de los nodos mediante la vista de Modelo de contenido
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Cómo: examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido
 
 Este tema describe cómo explorar los nodos mediante el [vista modelo de contenido](../xml-tools/content-model-view.md).
 

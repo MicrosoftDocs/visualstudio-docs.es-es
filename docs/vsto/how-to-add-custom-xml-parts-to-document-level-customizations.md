@@ -20,11 +20,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad9e78d6b87f85e09cbba68a4fd4297e09acf18e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d29515e9e8a1320975fb343ae101db21924d9767
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Cómo: agregar elementos XML personalizados a personalizaciones de nivel de documento
   Puede almacenar datos XML en un libro de Microsoft Office Excel o un documento de Microsoft Office Word creando un elemento XML personalizado en una personalización de nivel de documento. Para obtener más información, consulte [Introducción a elementos XML personalizados](../vsto/custom-xml-parts-overview.md).  
@@ -62,5 +62,4 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>Vea también  
  [Información general sobre elementos XML personalizados](../vsto/custom-xml-parts-overview.md)   
  [Cómo: agregar elementos XML personalizados a documentos mediante complementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
-  
   

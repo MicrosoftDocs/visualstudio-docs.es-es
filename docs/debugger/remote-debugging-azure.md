@@ -1,7 +1,7 @@
 ---
 title: Remoto depurar Core de ASP.NET en IIS y Azure | Documentos de Microsoft
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 202e9ce6e0a53c6967ebe1bacaa6553a1241298e
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Depuración remota de núcleo de ASP.NET en IIS en Azure en Visual Studio de 2017
 
@@ -67,13 +67,17 @@ Desde Visual Studio, puede publicar rápidamente y depurar la aplicación a una 
 
 1. En Visual Studio, haga clic en el nodo del proyecto y elija **publicar**.
 
-2. Elija **servicio de aplicaciones de Microsoft Azure** desde el **publicar** cuadro de diálogo, seleccione **crear nuevo**y siga las indicaciones para publicar.
+    Si previamente ha configurado ningún perfil de publicación, la **publicar** aparece el panel. Haga clic en **nuevo perfil**.
+
+1. Elija **servicio de aplicaciones de Azure** desde el **publicar** cuadro de diálogo, seleccione **crear nuevo**y siga las indicaciones para publicar.
 
     Para obtener instrucciones detalladas, consulte [implementar una aplicación web de ASP.NET Core en Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-3. Abra **Explorador de servidores** (**vista** > **Explorador de servidores**), haga doble clic en la instancia de servicio de aplicaciones y elija **adjuntar depurador**.
+    ![Publicación en Azure App Service](../debugger/media/remotedbg_azure_app_service_profile.png)
 
-4. En la aplicación ASP.NET en ejecución, haga clic en el vínculo a la **sobre** página.
+1. Abra **Explorador de servidores** (**vista** > **Explorador de servidores**), haga doble clic en la instancia de servicio de aplicaciones y elija **adjuntar depurador**.
+
+1. En la aplicación ASP.NET en ejecución, haga clic en el vínculo a la **sobre** página.
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
@@ -87,19 +91,24 @@ En primer lugar, siga los pasos descritos en [instale y ejecute IIS](/azure/virt
 
 Al abrir el puerto 80 en el grupo de seguridad de red, abrir el puerto 4022 para que el depurador remoto. De este modo, no tendrá que abrirla más tarde.
 
+### <a name="app-already-running-in-iis-on-the-azure-vm"></a>¿Aplicación que se están ejecutando en IIS en la máquina virtual de Azure?
+
+Este artículo incluye pasos sobre cómo configurar una configuración básica de IIS en Windows server y la implementación de la aplicación desde Visual Studio. Estos pasos se incluyen para asegurarse de que el servidor tiene los componentes necesarios de instalación, que la aplicación puede ejecutar correctamente y que está listo para realizar la depuración remota.
+
+* Si la aplicación se ejecuta en IIS y desea descargar el depurador remoto y para iniciar la depuración, vaya a [descargar e instalar las herramientas remotas en Windows Server](#BKMK_msvsmon).
+
+* Si desea obtener ayuda para asegurarse de la aplicación está configurada, implementa y ejecute correctamente en IIS para que puedan depurar, siga todos los pasos de este tema.
+
 ### <a name="update-browser-security-settings-on-windows-server"></a>Actualizar la configuración de seguridad del explorador en Windows Server
 
-Según la configuración de seguridad del explorador, puede ahorrar tiempo para agregar los siguientes sitios de confianza en el explorador, por lo que puede descargar más rápidamente el software descrito en este tutorial. Puede ser necesario tener acceso a estos sitios:
+Si está habilitada la configuración de seguridad mejorada de Internet Explorer (está habilitado de forma predeterminada), debe agregar algunos dominios como sitios de confianza para que le permitirán descargar algunos de los componentes de servidor web. Agregar los sitios de confianza, vaya a **opciones de Internet > seguridad > sitios de confianza > sitios**. Agregue los dominios siguientes.
 
 - Microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- visualstudio.com
 - IIS.NET
 
-Si está usando Internet Explorer, puede agregar los sitios de confianza, vaya a **opciones de Internet > seguridad > sitios de confianza > sitios**. Estos pasos son diferentes para otros exploradores. (Si tiene que descargar una versión anterior del depurador remoto de my.visualstudio.com, algunos sitios de confianza adicionales son necesarios para iniciar sesión).
-
-Al descargar el software, puede obtener las solicitudes para conceder permiso para cargar varias secuencias de comandos del sitio web y recursos. En la mayoría de los casos, estos recursos adicionales no son necesarios para instalar el software.
+Al descargar el software, puede obtener las solicitudes para conceder permiso para cargar varias secuencias de comandos del sitio web y recursos. Algunos de estos recursos no son necesarias, pero para simplificar el proceso, haga clic en **agregar** cuando se le solicite.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Instalar ASP.NET Core en Windows Server
 
@@ -110,13 +119,45 @@ Al descargar el software, puede obtener las solicitudes para conceder permiso pa
 
 3. Reiniciar el sistema (o ejecutar **net stop era /y** seguido **del comando net start w3svc** desde un símbolo del sistema para recoger un cambio en la ruta de acceso del sistema).
 
-## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Opcional) Instale WebDeploy 3.6 para hospedar servidores en Windows Server
+## <a name="choose-a-deployment-option"></a>Elija una opción de implementación
 
-En algunos casos, puede ser más rápido para importar configuración de publicación en Visual Studio en lugar de configurar manualmente opciones de implementación. Si prefiere importar configuración en lugar de configurar el perfil de publicación en Visual Studio de publicación, vea [importar configuración de publicación e implementar a IIS](../deployment/tutorial-import-publish-settings-iis.md). En caso contrario, permanezca en este tema y siga leyendo. Si completó el artículo sobre la importación de configuración de publicación e implementar correctamente, la aplicación, a continuación, vuelva a este tema e iniciar en la sección en [descargar las herramientas remotas](#BKMK_msvsmon).
+Si necesita ayuda para implementar la aplicación en IIS, considere las siguientes opciones:
 
-### <a name="BKMK_install_webdeploy"></a> (Opcional) Instale WebDeploy 3.6 en Windows Server
+* Implementar mediante la creación de un archivo de configuración de publicación en IIS e importar la configuración de Visual Studio. En algunos escenarios, se trata de una forma rápida de implementar la aplicación. Cuando se crea el archivo de configuración de publicación, los permisos se configuran automáticamente en IIS.
 
-[!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
+* Implementar mediante la publicación en una carpeta local y copia el resultado por un método preferido en una carpeta de aplicación preparada en IIS.
+
+## <a name="optional-deploy-using-a-publish-settings-file"></a>(Opcional) La implementación con un archivo de configuración de publicación
+
+Puede usar esta opción crea un archivo de configuración de publicación y se importa en Visual Studio.
+
+> [!NOTE]
+> Este método de implementación utiliza Web Deploy. Si desea configurar Web Deploy manualmente en Visual Studio en lugar de importar la configuración, puede instalar Web implementar 3.6 en lugar de 3.6 de implementación Web para servidores de hospedaje. Sin embargo, si configura Web Deploy manualmente, debe asegurarse de que una carpeta de la aplicación en el servidor está configurada con los valores correctos y permisos (vea [sitio Web de ASP.NET configurar](#BKMK_deploy_asp_net)).
+
+### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Instalar y configurar Web Deploy para los servidores de hospedaje de Windows Server
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
+
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Crear el archivo de configuración de publicación en IIS en Windows Server
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importar la configuración de publicación en Visual Studio e implementar
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+
+Después de que la aplicación se implementa correctamente, debe iniciarse automáticamente. Si la aplicación no se inicia desde Visual Studio, inicie la aplicación en IIS. Para ASP.NET Core, debe asegurarse de que el grupo de aplicaciones de campo para el **DefaultAppPool** está establecido en **sin código administrado**.
+
+1. En el **configuración** cuadro de diálogo, Habilitar depuración haciendo clic en **siguiente**, elija un **depurar** configuración y, a continuación, elija **quitar archivos adicionales en destino** en el **Publicar archivo** opciones.
+
+    > [!NOTE]
+    > Si elige una configuración de lanzamiento, deshabilite la depuración en el *web.config* archivos al publicar.
+
+1. Haga clic en **guardar** y, a continuación, volver a publicar la aplicación.
+
+## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(Opcional) Implementar mediante la publicación en una carpeta local
+
+Puede usar esta opción para implementar la aplicación si van a copiar la aplicación en IIS con Powershell, RoboCopy, o desea copiar manualmente los archivos.
 
 ### <a name="BKMK_deploy_asp_net"></a> Configurar el sitio Web de ASP.NET en el equipo de Windows Server
 
@@ -132,40 +173,6 @@ Si va a importar la configuración de publicación, puede omitir esta sección.
 
     Si no ve uno de estos usuarios con acceso, vaya a través de los pasos necesarios para agregar IUSR como un usuario con derechos de lectura y ejecución.
 
-### <a name="bkmk_webdeploy"></a> (Opcional) Publique e implemente la aplicación mediante Web Deploy desde Visual Studio
-
-Si ha instalado Web Deploy mediante el instalador de plataforma Web, puede implementar la aplicación directamente desde Visual Studio.
-
-1. Inicie Visual Studio con privilegios elevados y vuelva a abrir el proyecto.
-
-    Esto puede ser necesario para implementar la aplicación mediante Web Deploy.
-
-2. En el **Explorador de soluciones**, haga clic con el botón secundario en el nodo del proyecto y seleccione **Publicar**.
-
-3. Para **seleccionar un destino de publicación**, seleccione **Máquina Virtual de Microsoft Azure** y haga clic en **publicar**.
-
-    ![RemoteDBG_Publish_IISl](../debugger/media/remotedbg_azure_vm_profile.png "RemoteDBG_Publish_IIS")
-
-4. En el cuadro de diálogo, seleccione la máquina virtual de Azure que creó anteriormente.
-
-4. Especifique los parámetros de configuración de corrección para el programa de instalación de la máquina virtual de Azure e IIS.
-
-    ![RemoteDBG_Publish_WebDeployl](../debugger/media/remotedbg_iis_webdeploy_config.png "RemoteDBG_Publish_WebDeploy")
-
-    Si no resuelve un nombre de host al intentar validar en los siguientes pasos el **Server** texto cuadro, pruebe la dirección IP. Asegúrese de que utiliza el puerto 80 en el **Server** texto cuadro y asegúrese de que el puerto 80 está abierto en el firewall.
-
-6. Haga clic en **siguiente**, elija un **depurar** configuración y elija **quitar archivos adicionales en destino** en el **publicar archivos** Opciones.
-
-5. Haga clic en **Prev**y, a continuación, elija **validar**. Si se valida la configuración de la conexión, puede intentar publicar.
-
-6. Haga clic en **publicar** para publicar la aplicación.
-
-    La ficha salida le mostrará si la publicación sea correcta y que el explorador abrirá la aplicación.
-
-    Si se produce un error que haga mención Web Deploy, vuelva a comprobar los pasos de instalación de Web Deploy y asegúrese de que el [correcta puertos están abiertos](#bkmk_openports) están en el servidor.
-
-    Si la aplicación se implementa correctamente, pero no se ejecuta correctamente, vuelva a comprobar que IIS y el proyecto de Visual Studio usa la misma versión de ASP.NET. Si es no el problema, puede haber un problema con la configuración de IIS o la configuración del sitio Web. En el servidor de Windows, abra el sitio Web de IIS para los mensajes de error más específicos y, a continuación, volver a comprobar los pasos anteriores.
-
 ### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Opcional) Publique e implemente la aplicación al realizar la publicación en una carpeta local de Visual Studio
 
 Si no usa Web Deploy, debe publicar e implementar la aplicación mediante el sistema de archivos u otras herramientas. Puede iniciar mediante la creación de un paquete mediante el sistema de archivos y, a continuación, implementar manualmente el paquete o usar otras herramientas, como XCopy, RoboCopy o PowerShell. En esta sección, se supone que va a copiar manualmente el paquete si no se utiliza Web Deploy.
@@ -173,6 +180,10 @@ Si no usa Web Deploy, debe publicar e implementar la aplicación mediante el sis
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
 ### <a name="BKMK_msvsmon"></a> Descargue e instale las herramientas remotas en Windows Server
+
+En este tutorial, estamos utilizando Visual Studio de 2017.
+
+Si tiene problemas para abrir la página con la descarga del depurador remoto, consulte [desbloquear la descarga del archivo](../debugger/remote-debugging.md#unblock_msvsmon) para obtener ayuda.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -200,8 +211,10 @@ Si no usa Web Deploy, debe publicar e implementar la aplicación mediante el sis
     Si desea utilizar el **buscar** botón, puede que necesite [abrir el puerto UDP 3702](#bkmk_openports) en el servidor.
 
 5. Active  **Mostrar los procesos de todos los usuarios**.
-6. Escriba la primera letra de un nombre de proceso para encontrar rápidamente **dotnet.exe** (para ASP.NET Core).
-    >Nota: Para una aplicación ASP.NET Core, el nombre del proceso anterior era dnx.exe.
+
+6. Escriba la primera letra de un nombre de proceso para encontrar rápidamente *dotnet.exe* (para ASP.NET Core).
+   
+   Para una aplicación ASP.NET Core, el nombre del proceso anterior era *dnx.exe*.
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
 

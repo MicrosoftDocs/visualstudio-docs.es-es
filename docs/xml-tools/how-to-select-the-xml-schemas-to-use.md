@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edda7ab4875381b6213e893169fc8bc837427757
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d835a8592108b549a109f7bb7e128a8ae5b01611
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Cómo: Seleccionar los esquemas XML que se van a usar
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Cómo: seleccionar los esquemas XML para usar
 
-El Editor XML proporciona una caché de esquemas que está ubicada en el directorio %InstallDir%\Xml\Schemas. La caché de esquema incluye esquemas XML muy conocidos que se utilizan en IntelliSense y en la validación de documentos XML.
+El Editor XML proporciona una caché de esquema que está ubicada en el *%InstallDir%\Xml\Schemas* directory. La caché de esquema incluye esquemas XML muy conocidos que se utilizan en IntelliSense y en la validación de documentos XML.
 
 El **esquemas** propiedad de documento se utiliza para seleccionar uno o más XML esquema definición XSD (lenguaje) que se van a usar. Permite seleccionar esquemas de la caché de esquema o especificar un esquema que no está ubicado en la caché.
 
-Los esquemas especificados se guardan en el archivo oculto de opciones del usuario de la solución (.suo), junto con todas las demás propiedades de documento XML. Por tanto, no es necesario que vuelva a escribir estos valores la próxima vez que abra la solución.
+Los esquemas especificados se guardan en el archivo oculto de opciones de usuario de solución (. *suo*), junto con todo el código XML otra propiedades del documento. Por tanto, no es necesario que vuelva a escribir estos valores la próxima vez que abra la solución.
 
 > [!NOTE]
 > El editor puede realizar la validación mediante un esquema alineado o un esquema al que se haga referencia en el atributo `xsd:schemaLocation`. Para obtener más información, consulte [validación de documentos XML](../xml-tools/xml-document-validation.md).
@@ -33,7 +33,7 @@ Los esquemas especificados se guardan en el archivo oculto de opciones del usuar
 
 2.  En la ventana Propiedades del documento, haga clic en el botón en el **esquemas** campo.
 
-     El **esquemas XML** se muestra el cuadro de diálogo. El cuadro de diálogo enumera todos los esquemas con una extensión .xsd en la caché de esquema (incluidos los esquemas que se hace referenciados en el archivo catalog.xml), y también cualquier esquema que se encuentra en la solución actual, se abre en Visual Studio, al que hace referencia en un `xsd:schemaLocation` de atributo, o al que hace referencia en el **esquemas** propiedad.
+     El **esquemas XML** se muestra el cuadro de diálogo. El cuadro de diálogo enumera todos los esquemas con una. *xsd* extensión en la caché de esquema (incluidos los esquemas que se hace referencia en el *catalog.xml* archivo) y también cualquier esquema que está en la solución actual, abierta en Visual Studio, al que hace referencia en un `xsd:schemaLocation` atributo o se hace referencia en el **esquemas** propiedad.
 
 3.  Seleccione los esquemas que desea utilizar en la validación mediante una de las siguientes acciones:
 
@@ -75,5 +75,5 @@ Los esquemas especificados se guardan en el archivo oculto de opciones del usuar
 ## <a name="see-also"></a>Vea también
 
 - [Caché de esquema](../xml-tools/schema-cache.md)
-- [Cuadro de diálogo Esquemas XML](../xml-tools/xml-schemas-dialog-box.md)
+- [Cuadro de diálogo de esquemas XML](../xml-tools/xml-schemas-dialog-box.md)
 - [Editor XML](../xml-tools/xml-editor.md)

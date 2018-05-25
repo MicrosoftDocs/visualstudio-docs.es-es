@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (Explorador de esquemas XML)
 
@@ -31,7 +31,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales existentes en el esquema establecido.|
 |**Propiedades (ventana)**|Se abre la **propiedades** ventana (si no está ya abierto). Esta ventana muestra información sobre el nodo.|
 
-## <a name="node-type-namespace"></a>Tipo de nodo: espacio de nombres
+## <a name="node-type-namespace"></a>Tipo de nodo: Namespace
  En la tabla siguiente se describen las opciones disponibles para un nodo de espacio de nombres.
 
 |Opción|Descripción|
@@ -54,7 +54,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Ver código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento que está seleccionado en el Explorador de esquemas XML también estará seleccionado en el Editor XML.|
 |**Propiedades (ventana)**|Se abre la **propiedades** ventana (si no está ya abierto). Esta ventana muestra información sobre el nodo.|
 
-## <a name="all-global-node-types"></a>Todos los tipos de nodos globales
+## <a name="all-global-node-types"></a>Todos los tipos de nodo global
  En la tabla siguiente se describen las opciones disponibles para todos los nodos globales.
 
 |Opción|Descripción|
@@ -116,4 +116,4 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 ## <a name="see-also"></a>Vea también
 
 - [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md)
-- [Buscar en el conjunto de esquemas](../xml-tools/searching-the-schema-set.md)
+- [Buscar el conjunto de esquemas](../xml-tools/searching-the-schema-set.md)

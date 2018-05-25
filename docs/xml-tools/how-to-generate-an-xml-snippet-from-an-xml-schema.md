@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f598f01116d7ce2aec5759c411e456083f6932b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: Generar un fragmento XML a partir de un esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Cómo: generar un fragmento XML desde un esquema XML
 
-Con el Editor XML es posible generar fragmentos de código XML a partir de un esquema de lenguaje de definición de esquema XML (XSD). Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento puede presionar el tabulador para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
+Con el Editor XML es posible generar fragmentos de código XML a partir de un esquema de lenguaje de definición de esquema XML (XSD). Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento, puede presionar **ficha** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
 
 Esta característica solamente está disponible en elementos. Además, se aplican las siguientes reglas:
 
@@ -44,7 +44,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 ## <a name="example"></a>Ejemplo
 
- Los pasos de esta sección muestran cómo utilizar la característica del Editor XML de fragmento de código XML generado por esquema.
+ Los pasos de esta sección muestran cómo utilizar el fragmento XML generados por esquema, característica del Editor XML.
 
 > [!NOTE]
 > Antes de comenzar estos procedimientos, guarde el archivo de esquema en el equipo local.
@@ -85,11 +85,11 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
      **Póngase en contacto con** para agregar el elemento raíz.
 
-3.  Seleccione **póngase en contacto con** en la lista de miembros y presione ENTRAR.
+3.  Seleccione **póngase en contacto con** en la lista de miembros y presione **ENTRAR**.
 
      El editor agrega la etiqueta de apertura `<Contact` y coloca el cursor después del nombre del elemento.
 
-4.  Presione el tabulador para generar datos XML para el elemento `Contact` en función de su información de esquema.
+4.  Presione **ficha** para generar datos XML para el `Contact` elemento basado en su información de esquema.
 
 ## <a name="input"></a>Entrada
 
@@ -157,5 +157,5 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 ## <a name="see-also"></a>Vea también
 
-- [Fragmentos de código XML](../xml-tools/xml-snippets.md)
-- [Cómo: Usar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Fragmentos XML](../xml-tools/xml-snippets.md)
+- [Cómo: usar XML fragmentos de código](../xml-tools/how-to-use-xml-snippets.md)

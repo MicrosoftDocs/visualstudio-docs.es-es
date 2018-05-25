@@ -21,11 +21,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3dd4bd7c2b473b4bb48481fee6a991dde748eb26
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7b7461ba184850ba53099327fdad44e3103dcd87
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Ampliar documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución
   Puede utilizar un complemento de VSTO para personalizar documentos de Word y libros de Excel de las maneras siguientes:  
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/22/2018
   
  Para utilizar esta funcionalidad, se genera un objeto en tiempo de ejecución que extienda el documento o libro.  
   
- **Aplicación:** la información de este tema se aplica a los proyectos de complementos de VSTO para las siguientes aplicaciones: Excel y Word. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Se aplica a:** la información de este artículo se aplica a los proyectos de complemento de VSTO para las siguientes aplicaciones: Excel y Word. Para obtener más información, consulte [características disponibles por tipo de aplicación y el proyecto de Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Generar objetos extendidos en complementos VSTO  
  Los*objetos extendidos* son instancias de tipos proporcionados por el runtime de Visual Studio Tools para Office que agregan funcionalidad a los objetos ya existentes de forma nativa en los modelos de objetos de Word o Excel (denominados *objetos nativos de Office*). Para generar un objeto extendido para un objeto de Word o Excel, use el método `GetVstoObject`. La primera vez que llame el `GetVstoObject` objeto del método para especificado de Word o Excel, devuelve un nuevo objeto que extiende el objeto especificado. Cada vez que llame al método y especifique el mismo objeto de Word o Excel, devuelve el mismo objeto extendido.  
@@ -76,7 +76,7 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]  
   
 ### <a name="generate-listobject-host-controls"></a>Generar los controles host ListObject  
- Cuando se usa el método `GetVstoObject` para extender un <xref:Microsoft.Office.Interop.Excel.ListObject>, el método devuelve un <xref:Microsoft.Office.Tools.Excel.ListObject>. El <xref:Microsoft.Office.Tools.Excel.ListObject> tiene todas las características del <xref:Microsoft.Office.Interop.Excel.ListObject>original, pero también tiene funcionalidad adicional, como la capacidad de enlazar a datos utilizando el modelo de enlace de datos de formularios Windows Forms. Para obtener más información, consulte [control ListObject](../vsto/listobject-control.md).  
+ Cuando se usa el método `GetVstoObject` para extender un <xref:Microsoft.Office.Interop.Excel.ListObject>, el método devuelve un <xref:Microsoft.Office.Tools.Excel.ListObject>. El <xref:Microsoft.Office.Tools.Excel.ListObject> tiene todas las características de la versión original de <xref:Microsoft.Office.Interop.Excel.ListObject>. También tiene funcionalidad adicional y puede enlazarse a datos utilizando el modelo de enlace de datos de formularios Windows Forms. Para obtener más información, consulte [control ListObject](../vsto/listobject-control.md).  
   
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>Para generar un control host para un ListObject  
   
@@ -86,9 +86,9 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
 ###  <a name="AddControls"></a> Agregar controles administrados a documentos y hojas de cálculo  
- Después de generar un <xref:Microsoft.Office.Tools.Word.Document> o <xref:Microsoft.Office.Tools.Excel.Worksheet>, puede agregar controles al documento o la hoja de cálculo que representan estos objetos extendidos. Para ello, utilice la propiedad de los controles de la <xref:Microsoft.Office.Tools.Word.Document> o <xref:Microsoft.Office.Tools.Excel.Worksheet>. Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Después de generar un <xref:Microsoft.Office.Tools.Word.Document> o <xref:Microsoft.Office.Tools.Excel.Worksheet>, puede agregar controles al documento o la hoja de cálculo que representan estos objetos extendidos. Para agregar controles, use el `Controls` propiedad de la <xref:Microsoft.Office.Tools.Word.Document> o <xref:Microsoft.Office.Tools.Excel.Worksheet>. Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Puede agregar controles de formularios Windows Forms o *controles host*. Un control host es un control proporcionado por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que encapsula el control correspondiente del ensamblado de interoperabilidad primario de Word o Excel. Un control host expone todo el comportamiento del objeto nativo de Office subyacente, pero también desencadena eventos y se puede enlazar a datos utilizando el modelo de enlace de datos de formularios Windows Forms. Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).  
+ Puede agregar controles de formularios Windows Forms o *controles host*. Un control host es un control proporcionado por [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que encapsula el control correspondiente del ensamblado de interoperabilidad primario de Word o Excel. Un control host expone todo el comportamiento del objeto de Office nativo subyacente. También se desencadena eventos y se puede enlazar a datos utilizando el modelo de enlace de datos de formularios Windows Forms. Para obtener más información, consulte [elementos Host y hospedar información general sobre controles](../vsto/host-items-and-host-controls-overview.md).  
   
 > [!NOTE]  
 >  No se puede agregar un control <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> a una hoja de cálculo, ni un control <xref:Microsoft.Office.Tools.Word.XMLNode> o <xref:Microsoft.Office.Tools.Word.XMLNodes> a un documento mediante un complemento de VSTO. Estos controles host no pueden agregarse mediante programación. Para obtener más información, consulte [limitaciones de programación de elementos host y controles host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
@@ -102,25 +102,25 @@ ms.lasthandoff: 05/22/2018
  Si usa únicamente objetos nativos de Office en el complemento de VSTO, debe controlar estos eventos en el nivel de aplicación y, a continuación, escribir código adicional para determinar si el documento que desencadenó el evento es un complemento que ha personalizado. Los elementos host proporcionan estos eventos en el nivel de documento para que resulte más fácil controlar los eventos de un documento específico. Puede generar un elemento host y, a continuación, controlar el evento para ese elemento host.  
   
 ### <a name="example-that-uses-native-word-objects"></a>Ejemplo que utiliza objetos nativos de Word  
- En el ejemplo de código siguiente se muestra cómo controlar un evento en el nivel de aplicación para los documentos de Word. El método `CreateDocument` crea un nuevo documento y, a continuación, define un controlador de eventos <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> que impide que se guarde este documento. Puesto que se trata de un evento en el nivel de aplicación que se desencadena para el objeto <xref:Microsoft.Office.Interop.Word.Application> , el controlador de eventos debe comparar el parámetro `Doc` con el objeto `document1` para determinar si `document1` representa el documento guardado.  
+ En el ejemplo de código siguiente se muestra cómo controlar un evento en el nivel de aplicación para los documentos de Word. El método `CreateDocument` crea un nuevo documento y, a continuación, define un controlador de eventos <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> que impide que se guarde este documento. El evento es un evento de nivel de aplicación que se desencadena para el <xref:Microsoft.Office.Interop.Word.Application> objeto y el controlador de eventos deben comparar la `Doc` parámetro con el `document1` objeto para determinar si `document1` representa el documento guardado.  
   
- [!code-vb[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
+ [!code-vb[Trin_WordAddInDynamicControls #12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
  [!code-csharp[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#12)]  
   
 ### <a name="examples-that-use-a-host-item"></a>Ejemplos que utilizan un elemento host  
- Los ejemplos de código siguientes simplifican este proceso controlando el evento <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> de un elemento host <xref:Microsoft.Office.Tools.Word.Document> . El método `CreateDocument2` de estos ejemplos genera un <xref:Microsoft.Office.Tools.Word.Document> que extiende el objeto `document2` y, a continuación, define un controlador de eventos <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> que evita que se guarde el documento. Dado que solo se llama a este controlador de eventos cuando se guarda `document2` , el controlador de eventos puede cancelar la acción sin tener que realizar ningún trabajo adicional para comprobar qué documento se guardó.  
+ Los ejemplos de código siguientes simplifican este proceso controlando el evento <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> de un elemento host <xref:Microsoft.Office.Tools.Word.Document> . El `CreateDocument2` método en estos ejemplos genera un <xref:Microsoft.Office.Tools.Word.Document> que abarca el `document2` objeto y, a continuación, define un <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> controlador de eventos que evita que el documento que se va a guardar. Se llama al controlador de eventos solo cuando `document2` se guarda y se puede cancelar la acción sin tener que realizar ningún trabajo adicional para comprobar qué documento se guardó.  
   
  El siguiente ejemplo de código muestra esta tarea.  
   
- [!code-vb[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
+ [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]  
   
 ##  <a name="HasVstoObject"></a> Determinar si se ha extendido un objeto de Office  
- Para determinar si ya se ha generado un objeto extendido para un objeto nativo de Office determinado, use el método `HasVstoObject`. Este método devuelve **true** si ya se ha generado un objeto extendido; en caso contrario, devuelve **false**.  
+ Para determinar si ya se ha generado un objeto extendido para un objeto nativo de Office determinado, use el método `HasVstoObject`. Este método devuelve **true** si ya se ha generado un objeto extendido.  
   
  Utilice el método `Globals.Factory.HasVstoMethod`. Pase el objeto nativo de Word o Excel, como <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Worksheet>, que desea probar para un objeto extendido.  
   
- El método `HasVstoObject` resulta útil si desea ejecutar código solamente cuando un objeto de Office especificado tiene un objeto extendido. Por ejemplo, si tiene un complemento de VSTO de Word que controla el evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> para quitar controles administrados de un documento antes de que se guarde, puede utilizar el método `HasVstoObject` para determinar si se ha extendido el documento. Si no se ha extendido el documento, no puede contener controles administrados y, por tanto, el controlador de eventos puede simplemente volver sin intentar limpiar los controles del documento.  
+ El método `HasVstoObject` resulta útil si desea ejecutar código solamente cuando un objeto de Office especificado tiene un objeto extendido. Por ejemplo, si tiene un complemento de VSTO de Word que controla el <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> eventos para quitar controles administrados de un documento antes de guardarla, use la `HasVstoObject` método para determinar si se ha extendido el documento. Si no se ha extendido el documento, no puede haber controles administrados y el controlador de eventos puede volver sin intentar limpiar los controles en el documento.  
   
 ## <a name="see-also"></a>Vea también  
  [Programar complementos VSTO](../vsto/programming-vsto-add-ins.md)   

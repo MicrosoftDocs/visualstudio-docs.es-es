@@ -10,23 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bdcada913b926b27ccffdf1d7c0a6b2488ead8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dcb65958f7b339338b99495646bab57bd77af054
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Cómo: Imprimir diagramas desde las vistas Gráfico y Modelo de contenido
+# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Cómo: imprimir diagramas desde la vista gráfico y la vista de modelo de contenido
 
 En este tema se describe cómo imprimir un diagrama desde la vista gráfico y el contenido modelo de vista de diseñador de esquemas XML.
 
 ## <a name="to-print-diagrams-from-the-xml-schema-designer"></a>Para imprimir diagramas desde el Diseñador de esquemas XML
 
-1.  Abra un archivo XSD en Visual Studio y agregue algunos nodos a la [área de trabajo del Diseñador de esquemas de XML](../xml-tools/xml-schema-designer-workspace.md).
+1.  Abra un archivo XSD en Visual Studio y agregue algunos nodos a la [área de trabajo del Diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Exporte el diagrama en un archivo XPS usando el **Exportar diagrama como imagen...**  elemento de menú contextual en la superficie de diseño de la vista de gráfico o la vista de modelo de contenido.
+2.  Exporte el diagrama en un archivo XPS usando el **Exportar diagrama como imagen** elemento de menú contextual en la superficie de diseño de la vista de gráfico o la vista de modelo de contenido.
 
-     Al exportar un diagrama desde la vista Gráfico, se exportará toda la superficie de diseño al archivo XPS. Cuando se exporta un diagrama desde la vista Modelo de contenido y aparece más de un nodo en la superficie de diseño de dicha vista, solo se exportará el primer nodo al archivo XPS.
+     Al exportar un diagrama desde la vista gráfico, la superficie de diseño completo se exporta al archivo XPS. Cuando se exporta un diagrama desde la vista de modelo de contenido y aparece más de un nodo en la superficie de diseño de la vista modelo de contenido, solo el primer nodo se exporta al archivo XPS.
 
 3.  Imprima la imagen guardada en el archivo XPS usando un visor de XPS.
 

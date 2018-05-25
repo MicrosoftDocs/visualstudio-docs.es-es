@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b2767a952c566359b1c61bbdc83060bf905e99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 
 En este tema se describen las ventanas y los cuadros de diálogo del depurador. Solo se explican las partes de la interfaz de usuario que tienen un comportamiento de depuración específico de XSLT.
 
-Para obtener más información, consulte el [referencia de depuración de la interfaz de usuario](../debugger/debugging-user-interface-reference.md).
+Para obtener más información, consulte el [depuración: referencia de la interfaz de usuario](../debugger/debugging-user-interface-reference.md).
 
 ## <a name="locals-window"></a>Ventana Locales
  La ventana Locales muestra información acerca de las variables definidas en la hoja de estilos. Contiene tres columnas de información:
@@ -45,25 +45,25 @@ Para obtener más información, consulte el [referencia de depuración de la int
 |`position()`|La posición, o número de índice, del nodo de contexto, con respecto al tamaño del contexto.|
 |`self::node()`|El valor del nodo de contexto.|
 
-## <a name="output-window"></a>Resultados (Ventana)
+## <a name="output-window"></a>Resultados (ventana)
  La Ventana de salida muestra los mensajes de error o las excepciones de seguridad que se producen durante la depuración.
 
  El depurador de XSLT utiliza una ventana distinta para mostrar el resultado de la depuración. Se trata de la misma ventana empleada para mostrar los resultados de un **Mostrar resultado XSL** comando.
 
 ## <a name="task-list"></a>Lista de tareas
- La lista de tareas muestra todos los errores de compilación de la hoja de estilos. Al hacer doble clic en el error, el cursor se desplaza hasta la línea con el error.
+ El **lista de tareas** muestra todos los errores de compilación en la hoja de estilos. Al hacer doble clic en el error, el cursor se desplaza hasta la línea con el error.
 
- La lista de tareas incluye todos los errores que tienen lugar en los bloques de script del archivo XSLT.
+ El **lista de tareas** incluye todos los errores que se producen en los bloques de script en el archivo XSLT.
 
 > [!NOTE]
-> El depurador de XSLT no tiene advertencias, así que nunca aparecerán en la lista de tareas.
+> El depurador de XSLT no tiene advertencias, así que nunca aparecerán en la **lista de tareas**.
 
-## <a name="breakpoints-window"></a>Ventana Puntos de interrupción
+## <a name="breakpoints-window"></a>ventana Puntos de interrupción
  La ventana Puntos de interrupción muestra todos los puntos de interrupción definidos en el proyecto actual. Si se agrega un punto de interrupción mientras la ventana está a la vista, ésta se actualiza automáticamente para mostrar el nuevo punto de interrupción.
 
  La ventana Puntos de interrupción debe tener el mismo comportamiento que otros depuradores de Visual Studio.
 
-## <a name="command-windowimmediate-window"></a>Ventana Comandos/Ventana Inmediata
+## <a name="command-windowimmediate-window"></a>Ventana de comandos de ventana/Inmediato
  No están implementadas en esta versión del depurador de XSLT.
 
 ## <a name="watch-window"></a>Ventana Inspección
@@ -72,15 +72,15 @@ Para obtener más información, consulte el [referencia de depuración de la int
  Las variables que se muestran en esta ventana guardan relación con el contexto actual (el elemento superior de la pila de llamadas). Si cambia el contexto, la ventana Inspección se actualiza y muestra las variables definidas para ese contexto.
 
 ## <a name="call-stack-window"></a>Ventana Pila de llamadas
- La ventana Pila de llamadas se utiliza para ver los nombres de las funciones de la pila de llamadas, los tipos de parámetros y los valores de los parámetros. La información de la pila de llamadas solo se muestra cuando el programa que se está depurando se encuentra en estado de interrupción.
+ El **pila de llamadas** ventana se usa para ver los nombres de funciones en la pila de llamadas, los tipos de parámetro y los valores de parámetro. La información de la pila de llamadas solo se muestra cuando el programa que se está depurando se encuentra en estado de interrupción.
 
- La pila de llamadas representa los diversos contextos por los que atraviesa la ejecución XSLT. Por ejemplo, si hay una llamada de la plantilla "a" a la plantilla "b", la plantilla "a" y la plantilla "b" aparecen en la ventana Pila de llamadas con el contexto actual en primer lugar de la lista. El usuario puede ver la consulta actualmente en ejecución.
+ La pila de llamadas representa los diversos contextos por los que atraviesa la ejecución XSLT. Por ejemplo, si hay una llamada de la plantilla "a" a la plantilla "b", la plantilla "a" y la plantilla "b" aparece en la **pila de llamadas** ventana con el contexto actual en la parte superior de la lista. El usuario puede ver la consulta actualmente en ejecución.
 
  Si las plantillas no tienen un nombre en el archivo XSLT, se utilizan los nombres generados por el procesador XSLT.
 
- Al hacer clic en otro elemento que no es el que se encuentra en primer lugar de la lista se indica al visor dónde ha tenido lugar la bifurcación de la ejecución XSLT mediante el uso de resaltes y flechas verdes estándar.
+ Al hacer clic en otro elemento que no es el que se encuentra en primer lugar de la lista se indica al visor dónde ha tenido lugar la rama de la ejecución XSLT mediante el uso de resaltes y flechas verdes estándar.
 
-## <a name="quickwatch-dialog-box"></a>Cuadro de diálogo Inspección rápida
+## <a name="quickwatch-dialog-box"></a>Inspección rápida (cuadro de diálogo)
  El **Inspección rápida** cuadro de diálogo se usa para evaluar expresiones XPath 1.0. El nodo de contexto (el nodo `self::node()` de la ventana Locales) proporciona el contexto para la ejecución de la expresión XPath. El resultado de la ejecución de la expresión XPath se muestra en la ventana Inspección.
 
  En la siguiente lista se describen algunas restricciones en la evaluación de expresiones XPath.
@@ -93,7 +93,7 @@ Para obtener más información, consulte el [referencia de depuración de la int
 
 Para obtener más información, consulte [Cómo: evaluar una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
-## <a name="disassembly-window"></a>Ventana Desensamblado
+## <a name="disassembly-window"></a>ventana Desensamblado
  La ventana Desensamblado muestra el código ensamblador generado por el compilador de XSLT. Esta ventana se puede utilizar de la misma manera que todas las demás ventanas de desensamblado de Visual Studio.
 
  Para obtener más información, [Cómo: utilizar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).
@@ -102,4 +102,4 @@ Para obtener más información, consulte [Cómo: evaluar una expresión XPath](.
 
 - [Depuración de XSLT](../xml-tools/debugging-xslt.md)
 - [Conceptos básicos del depurador](../debugger/debugger-basics.md)
-- [Inspeccionar las Variables en el automático y variables locales Windows en Visual Studio](../debugger/autos-and-locals-windows.md)
+- [Inspeccionar las variables en las ventanas automático y variables locales en Visual Studio](../debugger/autos-and-locals-windows.md)

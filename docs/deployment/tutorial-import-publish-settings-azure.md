@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publicar una aplicación en el servicio de aplicaciones de Azure mediante la importación de configuración de publicación en Visual Studio
 
@@ -37,7 +37,7 @@ Un archivo de configuración de publicación (*\*.publishsettings*) es diferente
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-* Debe tener instalado Visual Studio y la **ASP.NET** y **.NET Framework** cargas de trabajo de desarrollo. Para una aplicación .NET Core, también necesitará el **.NET Core** carga de trabajo.
+* Debe tener instalado de Visual Studio 2017 y **ASP.NET** y **.NET Framework** cargas de trabajo de desarrollo. Para una aplicación .NET Core, también necesitará el **.NET Core** carga de trabajo.
 
     Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).
 
@@ -92,21 +92,7 @@ Un archivo de configuración de publicación (*\*.publishsettings*) es diferente
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importar la configuración de publicación en Visual Studio e implementar
 
-1. En el equipo donde tiene el proyecto ASP.NET abierto en Visual Studio, haga clic en el proyecto en el Explorador de soluciones y elija **publicar**.
-
-1. Si previamente ha configurado ningún perfil de publicación, la **publicar** aparece el panel. Haga clic en **crear nuevo perfil**.
-
-1. En el **elegir un destino de publicación** cuadro de diálogo, haga clic en **importar perfil**.
-
-    ![Elija publicar](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Navegue hasta la ubicación del archivo de configuración de publicación que ha creado en la sección anterior.
-
-1. En el **importar el archivo de configuración de publicación** cuadro de diálogo, seleccione el perfil que creó en la sección anterior y haga clic en **abiertos**.
-
-1. Seleccione uno de los dos perfiles importados y haga clic en **publicar**.
-
-    Visual Studio inicia el proceso de implementación y la ventana de salida muestra el progreso y los resultados.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Pasos siguientes
 

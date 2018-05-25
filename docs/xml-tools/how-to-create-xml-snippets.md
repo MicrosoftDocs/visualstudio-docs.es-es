@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-create-xml-snippets"></a>Crear fragmentos de código XML
+# <a name="how-to-create-xml-snippets"></a>Cómo: crear fragmentos XML
 
 El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
 
@@ -30,7 +30,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 3.  Haga clic en el panel del editor y seleccione **Insertar fragmento de código**.
 
-4.  Seleccione **fragmento** en la lista y presione ENTRAR.
+4.  Seleccione **fragmento** en la lista y presione **ENTRAR**.
 
 5.  Realice los cambios que considere oportunos en el nuevo fragmento.
 
@@ -40,13 +40,13 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 7.  Escriba el nombre del nuevo fragmento y seleccione **archivos de fragmento** desde el **Guardar como tipo** ventana desplegable.
 
-8.  Use la **guardar en** la lista desplegable para cambiar la ubicación del archivo a la carpeta de My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets y, a continuación, presione **guardar**.
+8.  Use la **guardar en** la lista desplegable para cambiar la ubicación del archivo en el *My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets* carpeta y, a continuación, presione **guardar**.
 
-## <a name="snippet-description"></a>Descripción del fragmento
+## <a name="snippet-description"></a>Descripción del fragmento de código
 
  En esta sección se describen algunos de los elementos principales del fragmento reutilizable. Para obtener más información acerca de los elementos de esquema utilizado por los fragmentos de código XML, vea [referencia de esquema de fragmentos de código](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>Elemento SnippetType
+### <a name="snippettype-element"></a>elemento SnippetType
 
  El editor admite dos tipos de fragmentos:
 
@@ -83,7 +83,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 -   $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el Editor XML antes de invocar el fragmento. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.
 
--   $end$ es una variable predefinida. Cuando el usuario presiona INTRO para terminar de editar los campos de fragmento de código, esta variable determina el lugar al que se mueve el carácter de intercalación (^).
+-   $end$ es una variable predefinida. Cuando el usuario presiona **ENTRAR** para terminar de editar los campos de fragmento de código, esta variable determina donde se mueve el símbolo de intercalación (^).
 
  El elemento `Code` anterior inserta el siguiente texto XML:
 
@@ -95,7 +95,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
  El valor del elemento name se marca como una región editable.
 
-### <a name="literal-element"></a>Elemento Literal
+### <a name="literal-element"></a>elemento Literal
 
  El elemento `Literal` se utiliza para identificar el texto de sustitución que se puede personalizar una vez que se ha insertado en el archivo. Por ejemplo, las cadenas de literales, los valores numéricos y algunos nombres de variables se pueden declarar como literales. Se puede definir un número cualquiera de literales en el fragmento XML y hacer referencia a ellos varias veces desde dentro del fragmento. A continuación se muestra un ejemplo de un elemento `Literal` que define una variable $name$ cuyo valor predeterminado es "name".
 
@@ -119,6 +119,6 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 ## <a name="see-also"></a>Vea también
 
-- [Fragmentos de código XML](../xml-tools/xml-snippets.md)
-- [Cómo: Usar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Cómo: Generar un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Fragmentos XML](../xml-tools/xml-snippets.md)
+- [Cómo: usar XML fragmentos de código](../xml-tools/how-to-use-xml-snippets.md)
+- [Cómo: generar un fragmento XML desde un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
