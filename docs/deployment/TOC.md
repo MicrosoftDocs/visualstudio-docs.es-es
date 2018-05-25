@@ -8,26 +8,26 @@
 ## [Implementación en Azure](quickstart-deploy-to-azure.md)
 # Tutoriales
 ## .NET
-### [Implementación de una aplicación .NET Core con la herramienta de publicación](/dotnet/core/deploying/deploy-with-vs)
-### [Empaquetado de una aplicación de escritorio para Microsoft Store (Puente de dispositivo de escritorio)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+### [Implementación de una aplicación .NET Core con la herramienta de publicación](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Empaquetado de una aplicación de escritorio para Microsoft Store (Puente de dispositivo de escritorio)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 ### [Compilar aplicaciones ClickOnce desde la línea de comandos](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
-### [Publicación de una aplicación de ASP.NET Core en Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Publicación de una aplicación de ASP.NET Core en Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Importar una configuración de publicación e implementar en Azure](tutorial-import-publish-settings-azure.md)
 ### [Importar una configuración de publicación e implementar en IIS](tutorial-import-publish-settings-iis.md)
-### [Implementación continua de ASP.NET Core en Azure con Git](/aspnet/core/publishing/azure-continuous-deployment)
-### [Implementación de ASP.NET en IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+### [Implementación continua de ASP.NET Core en Azure con Git](/aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Implementación de ASP.NET en IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Nativo
-### [Implementación en Visual C++](/cpp/ide/deployment-in-visual-cpp)
-### [Empaquetado de una aplicación de escritorio para Microsoft Store (Puente de dispositivo de escritorio)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-### [Implementación de una aplicación nativa con ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
+### [Implementación en Visual C++...](/cpp/ide/deployment-in-visual-cpp)
+### [Empaquetado de una aplicación de escritorio para Microsoft Store (Puente de dispositivo de escritorio)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Implementación de una aplicación nativa con ClickOnce...](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
 ## UWP
-### [Empaquetado de una aplicación UWP con Visual Studio](/windows/uwp/packaging/packaging-uwp-apps)
+### [Empaquetado de una aplicación UWP con Visual Studio](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Node.js
-### [Publicación en el sitio web de Azure con Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
+### [Publicación en el sitio web de Azure con Web Deploy](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Plantillas de
-### [Publicación en Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
+### [Publicación en Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 # Guías de procedimientos
 ## [Seguridad e implementación ClickOnce](clickonce-security-and-deployment.md)
 ### [Elegir una estrategia de implementación ClickOnce](choosing-a-clickonce-deployment-strategy.md)

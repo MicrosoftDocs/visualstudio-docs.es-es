@@ -10,11 +10,11 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d571252c34a286e26fbf97537c5fe4a527743d72
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Trabajo con R en Visual Studio
 
@@ -32,12 +32,12 @@ Para experimentar R en Visual Studio:
 
 A continuación, siga los vínculos que aparecen a continuación para obtener más información sobre características relacionadas con R, así como las funcionalidades generales del propio Visual Studio.
 
-| Característica | Description | Documentación general de Visual Studio | 
+| Característica | Description | Documentación general de Visual Studio |
 | --- | --- | --- |
 | [Sistema de proyectos de Visual Studio](r-projects-in-visual-studio.md) | Organice y administre archivos relacionados en una estructura práctica y aproveche plantillas útiles para elementos como código de R, documentación de R, R Markdown, consultas de SQL y procedimientos almacenados. Disfrute también del [administrador de paquetes](r-package-manager-in-visual-studio.md) y de la [integración de SQL Server](integrating-sql-server-with-r.md).  | [Soluciones y proyectos en Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Área de trabajo](r-workspaces-in-visual-studio.md) | RTVS se puede enlazar a áreas de trabajo locales y remotas, lo que le permite desarrollar código de R localmente con conjuntos de datos más pequeños para después ejecutarlo en equipos basados en la nube más eficaces con conjuntos de datos mucho más grandes. | N/D |
 | [Opciones de R Tools](options-for-r-tools-in-visual-studio.md) | Controlan diferentes aspectos de RTVS. | [Cuadro de diálogo Opciones](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Edición enriquecida, IntelliSense y fragmentos de código](editing-r-code-in-visual-studio.md) | Incluye colores de sintaxis, [IntelliSense](r-intellisense.md) en todo el código y las bibliotecas, formateo de código, ayuda para las firmas, Ir a definición, Buscar todas las referencias, [fragmentos de código](code-snippets-for-r.md) y mucho más. | [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Edición enriquecida, IntelliSense y fragmentos de código](editing-r-code-in-visual-studio.md) | Incluye colores de sintaxis, [IntelliSense](r-intellisense.md) en todo el código y las bibliotecas, formateo de código, ayuda para las firmas, Ir a definición, Buscar todas las referencias, [fragmentos de código](code-snippets-for-r.md) y mucho más. | [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown-with-r-in-visual-studio.md) | Los documentos de R Markdown ayudan a compartir los resultados de datos con código de R integrado dentro de bloques de código de Markdown. | N/D |
 | [Ventana interactiva](interactive-repl-for-r-in-visual-studio.md) | Proporciona una experiencia completa de REPL para R con la capacidad de ejecutar código fácilmente en un archivo de origen en la ventana interactiva. | N/D |
 | [Visualización de datos](visualizing-data-with-r-in-visual-studio.md) | El trazado es una parte integral de la experiencia de R y RTVS admite varias ventanas de trazado independientes, cada una con su propio historial y la capacidad de mover trazados entre ventanas. Los trazados se pueden guardar en archivos de mapa de bits y PDF, o copiarse al Portapapeles como un mapa de bits o metarchivo.  | N/D |
