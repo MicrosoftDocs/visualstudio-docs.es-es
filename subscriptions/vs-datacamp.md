@@ -9,11 +9,11 @@ description: Obtenga información sobre la suscripción de aprendizaje de DataCa
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 
@@ -83,6 +83,7 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con el uso de DataCamp?  Consulte estos recursos:
     - [Comunidad de DataCamp](https://www.datacamp.com/community/tutorials), que incluye tutoriales y foros.
-    - [Preguntas frecuentes](https://datacamp.groovehq.com/help_center).  La página de preguntas frecuentes le brinda también la oportunidad de enviar una solicitud de soporte técnico por correo electrónico.
+    - [Centro de ayuda de DataCamp](https://support.datacamp.com/hc), donde puede buscar temas de soporte técnico y consultar preguntas de usuarios de solicitudes.  
+    - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://www.visualstudio.com/subscriptions/support/) de Visual Studio.
 -  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://www.visualstudio.com/support/). 

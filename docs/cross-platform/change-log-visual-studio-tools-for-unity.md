@@ -1,7 +1,7 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,52 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="3701"></a>3.7.0.1
+ Lanzamiento 07-05-2018
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Instalador:**
+
+    -   Se ha corregido el problema de dependencia cuando se usan compilaciones experimentales.
+
+## <a name="3700"></a>3.7.0.0
+ Lanzamiento 07-05-2018
+
+### <a name="new-features"></a>Características nuevas
+
+-   **Debugging:** (Depuración)
+
+    -   Se ha agregado compatibilidad con la depuración orquestada (depuración de varios reproductores/editor en la misma sesión de Visual Studio).
+    
+    -   Se ha agregado compatibilidad con la depuración del reproductor USB de Android.
+    
+    -   Se ha agregado compatibilidad con la depuración del reproductor UWP/IL2CPP.
+
+-   **Evaluación:**
+
+    -   Se ha agregado compatibilidad con especificadores hexadecimales.
+    
+    -   Se ha mejorado la experiencia de evaluación de la ventana Inspección.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+-   **Integración:**
+
+    -   Se ha corregido el uso de valores de excepción.
+
+-   **Generación de proyectos:**
+
+    -   Se excluyen las unidades de compilación del administrador de paquetes de la generación.
 
 ## <a name="3605"></a>3.6.0.5
  Lanzamiento 13-03-2018
@@ -26,7 +64,7 @@ Registro de cambios de Visual Studio Tools para Unity.
 
 -   **Generación de proyectos:**
 
-    -   Se ha incluido compatibilidad con el nuevo generador de proyectos en Unity 2018.1.
+    -   Se ha agregado compatibilidad con el nuevo generador de proyectos en Unity 2018.1.
 
 ### <a name="bug-fixes"></a>Correcciones de errores
 

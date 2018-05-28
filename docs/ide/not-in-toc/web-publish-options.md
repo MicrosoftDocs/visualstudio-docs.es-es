@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c0a5c24f664d337df3d85f24078d7ed410c137
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0fd980aa7da59c98348c4dede5aee9835863d522
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # ¿Qué opciones de publicación son las adecuadas para mí?
 
@@ -98,7 +98,7 @@ Puede crear cualquier número de perfiles de implementación personalizados en V
 
 ### Cuándo optar por la implementación personalizada
 
-- Si está usando servicios en la nube en un proveedor que no sea Azure a los que se puede acceder mediante direcciones URL.
+- Usa servicios en la nube en un proveedor que no es Azure a los que se puede acceder mediante direcciones URL.
 - Si quiere implementar con credenciales que no sean las que usa con Visual Studio ni las que están asociadas directamente a las cuentas de Azure.
 - Si quiere eliminar archivos del destino cada vez que implementa.
 

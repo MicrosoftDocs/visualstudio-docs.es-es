@@ -19,25 +19,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="encodings-and-line-breaks"></a>Codificaciones y saltos de línea
+# <a name="encodings-and-line-endings"></a>Codificaciones y finales de línea
 
 Los siguientes caracteres se interpretan como saltos de línea en Visual Studio:
 
--   CR LF: Retorno de carro + avance de línea, caracteres Unicode 000D + 000A
+- CR LF: Retorno de carro + avance de línea, caracteres Unicode 000D + 000A
 
--   LF: Avance de línea, carácter Unicode 000A
+- LF: Avance de línea, carácter Unicode 000A
 
--   NEL: Línea siguiente, carácter Unicode 0085
+- NEL: Línea siguiente, carácter Unicode 0085
 
--   LS: Separador de líneas, carácter Unicode 2028
+- LS: Separador de líneas, carácter Unicode 2028
 
--   PS: Separador de párrafo, carácter Unicode 2029
+- PS: Separador de párrafo, carácter Unicode 2029
 
 El texto que se copia de otras aplicaciones mantiene la codificación original y los caracteres de salto de línea. Por ejemplo, cuando copia texto desde el Bloc de notas y lo pega en un archivo de texto en Visual Studio, el texto tiene la misma configuración que tenía en el Bloc de notas.
 
@@ -56,4 +56,4 @@ Puede usar el cuadro de diálogo **Archivo** > **Opciones avanzadas para guardar
 
 ## <a name="see-also"></a>Vea también
 
-- [Escribir código en el editor](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

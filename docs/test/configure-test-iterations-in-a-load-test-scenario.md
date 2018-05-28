@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a78921ff3415203a26da570a1966e41538ac5535
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iteraciones de prueba en un escenario de prueba de carga
 
@@ -46,24 +46,24 @@ La propiedad **Iteraciones de pruebas máximas** controla el número máximo de 
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Para especificar el número máximo de iteraciones de prueba
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
-2.  Aparecerá el Editor de prueba de carga. Se mostrará el árbol de la prueba de carga.
+2. Aparecerá el Editor de prueba de carga. Se mostrará el árbol de la prueba de carga.
 
-3.  En la carpeta **Escenarios** del árbol de la prueba de carga, elija el nodo de escenario para el que desea especificar el número máximo de iteraciones de prueba.
+3. En la carpeta **Escenarios** del árbol de la prueba de carga, elija el nodo de escenario para el que desea especificar el número máximo de iteraciones de prueba.
 
-4.  En el menú **Ver**, seleccione la ventana **Propiedades**.
+4. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
      Las categorías y propiedades del escenario se muestran en la ventana Propiedades.
 
-5.  En el cuadro de texto de la propiedad **Iteraciones de pruebas máximas**, escriba un valor que indique el número máximo de pruebas que se ejecutarán para el escenario cuando se ejecute la prueba de carga.
+5. En el cuadro de texto de la propiedad **Iteraciones de pruebas máximas**, escriba un valor que indique el número máximo de pruebas que se ejecutarán para el escenario cuando se ejecute la prueba de carga.
 
     > [!NOTE]
     > Si se usa el valor 0 para la propiedad **Iteraciones de pruebas máximas**, no se especifica un número máximo de iteraciones.
 
-6.  Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. A continuación, puede ejecutar su prueba de carga con el nuevo valor de **Iteraciones de pruebas máximas**.
+6. Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. A continuación, puede ejecutar su prueba de carga con el nuevo valor de **Iteraciones de pruebas máximas**.
 
-## <a name="specifying-think-times-between-test-iterations-for-a-scenario"></a>Especificar los tiempos de reflexión entre las iteraciones de prueba para un escenario
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Especificación de tiempos de reflexión de usuario entre iteraciones de prueba en un escenario
 
 La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se establece desde la ventana Propiedades mientras se editan las propiedades del escenario de prueba de carga en el Editor de pruebas de carga.
 
@@ -72,21 +72,21 @@ La propiedad **Tiempo de reflexión entre iteraciones de la prueba** se emplea p
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, vea [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
-### <a name="to-specify-the-think-times-between-test-iterations"></a>Para especificar los tiempos de reflexión entre las iteraciones de prueba
+### <a name="to-specify-the-think-time-between-test-iterations"></a>Para especificar el tiempo de reflexión de usuario entre iteraciones de prueba
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
      Aparece el **Editor de pruebas de carga**. Se mostrará el árbol de la prueba de carga.
 
-2.  En la carpeta **Escenarios** del árbol de la prueba de carga, elija el nodo de escenario para el que desea especificar los agentes que se van a usar.
+2. En la carpeta **Escenarios** de árboles de la prueba de carga, elija el nodo de escenario cuyo tiempo de reflexión de usuario quiere especificar.
 
-3.  En el menú **Ver**, seleccione la ventana **Propiedades**.
+3. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
      Las categorías y propiedades del escenario se muestran en la ventana Propiedades.
 
-4.  En el valor de la propiedad **Tiempo de reflexión entre iteraciones de la prueba**, escriba un número que represente el número de segundos que se va a esperar antes de iniciar la siguiente iteración de la prueba.
+4. En el valor de la propiedad **Tiempo de reflexión entre iteraciones de la prueba**, escriba un número que represente el número de segundos que se va a esperar antes de iniciar la siguiente iteración de la prueba.
 
-5.  Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. A continuación, puede ejecutar la prueba de carga con el nuevo valor de **Tiempo de reflexión entre iteraciones de la prueba**.
+5. Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. A continuación, puede ejecutar la prueba de carga con el nuevo valor de **Tiempo de reflexión entre iteraciones de la prueba**.
 
 ## <a name="see-also"></a>Vea también
 

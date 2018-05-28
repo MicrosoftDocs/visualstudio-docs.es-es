@@ -14,13 +14,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d7af966f171b4719e919bb15b279aff6951a7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 42b1baeec4543cb56d1e2320f26c9457dd7aac80
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="channels-threads-view"></a>Canales (Vista de subprocesos)
+# <a name="channels-threads-view"></a>Canales (vista Subprocesos)
 El visualizador de simultaneidad muestra cuatro tipos de canales: canales de subprocesos, de discos, de marcador y de GPU.  
   
 ## <a name="thread-channels"></a>Canales de subproceso  
@@ -49,4 +49,4 @@ El visualizador de simultaneidad muestra cuatro tipos de canales: canales de sub
  Los canales de GPU muestran información sobre la actividad de DirectX 11 en el sistema.  Cada motor de DirectX asociado a la tarjeta gráfica tiene un canal diferente.  Los segmentos individuales representan el tiempo dedicado a procesar un paquete DMA.  
   
 ## <a name="see-also"></a>Vea también  
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+ [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

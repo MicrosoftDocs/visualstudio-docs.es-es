@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Tutorial: Generar perfiles utilizando el método de muestreo en la línea de comandos
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Tutorial: Generar perfiles mediante muestreo desde la línea de comandos
 
 En este tutorial se muestra cómo generar perfiles para una aplicación utilizando las herramientas de la línea de comandos y el muestreo para identificar problemas de rendimiento.
 

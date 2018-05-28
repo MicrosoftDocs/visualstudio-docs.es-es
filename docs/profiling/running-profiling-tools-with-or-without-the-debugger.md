@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecución de herramientas de generación de perfiles con o sin el depurador
 Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (por ejemplo, **Uso de la CPU** y **Uso de la memoria**) se pueden ejecutar con o sin el depurador. Las herramientas de rendimiento sin depurador están diseñadas para ejecutarse en las configuraciones de la versión, mientras que las herramientas integradas en el depurador están diseñadas para ejecutarse en las configuraciones de depuración.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>¿Debería ejecutar la herramienta con o sin el depurador?  
@@ -39,9 +39,9 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración  
  La siguiente sección trata la depuración local. En secciones posteriores puede encontrar información sobre la depuración en un dispositivo y la depuración remota.  
   
-1.  Abra el proyecto que quiere depurar y luego haga clic en **Depurar / Iniciar depuración** (o en **Iniciar** en la barra de herramientas o presione **F5**).  
+1.  Abra el proyecto que quiere depurar y luego haga clic en **Depurar** > **Iniciar depuración** (o en **Iniciar** en la barra de herramientas o presione **F5**).  
   
-2.  La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar / Windows / Mostrar herramientas de diagnóstico**.  
+2.  La ventana **Herramientas de diagnóstico** aparece automáticamente a no ser que la desactive. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.  
   
 3.  Ejecute los escenarios cuyos datos desea recopilar.  
   
@@ -51,11 +51,11 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
   
      ![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Puede elegir si ve el **Uso de memoria** o el **Uso de CPU** (o ambos) con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas / Opciones / IntelliTrace**.  
+4.  Puede elegir si ve el **Uso de memoria** o el **Uso de CPU** (o ambos) con el ajuste **Seleccionar herramientas** en la barra de herramientas. Si ejecuta Visual Studio Enterprise, puede habilitar o deshabilitar IntelliTrace en **Herramientas** > **Opciones** > **IntelliTrace**.  
   
 5.  La sesión de diagnóstico termina cuando se detiene la depuración.  
   
- En Visual Studio 2015 Update 1, la ventana **Herramientas de diagnóstico** le facilita centrarse en los eventos que le interesan.   Ahora se muestran los nombres de evento con prefijos de categoría (**Gesto**, **Salida del programa**, **Punto de interrupción**, **Archivo**, etc.) por lo que puede examinar la lista para una categoría determinada u omitir las categorías que no le interesan rápidamente.  
+ En Visual Studio 2015 Update 1, la ventana **Herramientas de diagnóstico** le facilita centrarse en los eventos que le interesan.   Ahora se muestran los nombres de evento con prefijos de categoría (**Gesto**, **Salida del programa**, **Punto de interrupción**, **Archivo**, etc.) por lo que puede examinar la lista para buscar una categoría determinada u omitir las categorías que no le interesan rápidamente.  
   
  La ventana ahora tiene un cuadro de búsqueda para que pueda encontrar una cadena específica en cualquier lugar de la lista de eventos. Por ejemplo, el siguiente gráfico muestra los resultados de una búsqueda de la cadena "install", con la que coinciden cuatro eventos:  
   
@@ -72,7 +72,7 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
   
 1.  Abra el proyecto en Visual Studio.  
   
-2.  En el menú **Depurar**, elija **Generador de perfiles de rendimiento...** (Tecla de método abreviado: Alt + F2).  
+2.  En el menú **Depurar**, elija **Generador de perfiles de rendimiento** (tecla de método abreviado: **Alt**+**F2**).  
   
 3.  En la página de inicio de diagnóstico, elija una o varias herramientas para ejecutarlas en la sesión. Solo se muestran las herramientas que se pueden aplicar para el tipo de proyecto, el sistema operativo y el lenguaje de programación. Al elegir una herramienta de diagnóstico, se deshabilitan las selecciones de las herramientas que no se pueden ejecutar en la misma sesión de diagnóstico. Este es el aspecto que podrían tener las opciones para una aplicación UWP de C#:  
   
@@ -106,7 +106,7 @@ Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (p
 |![Paso 5](../profiling/media/procguid_6.png "ProcGuid_6")|Si los datos incluyen información de varias herramientas, los detalles de la herramienta se recopilan bajo pestañas.|  
 |![Paso 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Una herramienta puede tener una o varias vistas de detalle. La vista se filtra por la región seleccionada de la escala de tiempo.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Establecer el destino del análisis a otro dispositivo  
+## <a name="set-the-analysis-target-to-another-device"></a>Establecer el destino del análisis a otro dispositivo  
  Además de iniciar la aplicación desde el proyecto de Visual Studio, también puede ejecutar sesiones de diagnóstico en destinos alternativos. Por ejemplo, puede que le interese diagnosticar problemas de rendimiento en una versión de la aplicación que se instaló desde la Tienda de aplicaciones Windows.  
   
  ![Elegir destino de análisis de herramientas de diagnóstico](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

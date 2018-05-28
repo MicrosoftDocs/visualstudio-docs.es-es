@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78c983943f7cf99bf9dbe7ee60df06b033404719
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -149,5 +149,5 @@ Puede encontrar información relativa a determinado código, como los cambios re
 
 ## <a name="see-also"></a>Vea también
 
-- [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Visualización de la jerarquía de llamadas](../ide/reference/call-hierarchy.md)

@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
-Use la **escala de tiempo de aplicación** del generador de perfiles para buscar y corregir en aplicaciones XAML los problemas de rendimiento relacionados con la interacción. Esta herramienta le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos de las aplicaciones. Puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz (diseño y presentación), la atención de solicitudes de red y de disco y escenarios como el inicio de la aplicación, carga de la página y cambio de tamaño de las ventanas.  
+Use la **escala de tiempo de aplicación** del generador de perfiles para buscar y corregir en aplicaciones XAML los problemas de rendimiento relacionados con la interacción. Esta herramienta le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos de las aplicaciones. Puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz de usuario (diseño y presentación), la atención de solicitudes de red y de disco y escenarios tales como el inicio de la aplicación, la carga de la página y el cambio de tamaño de las ventanas.  
   
- **Escala de tiempo de aplicación** es una de las herramientas que puede iniciar con el comando **Debug / Performance Profiler...**.  
+ **Escala de tiempo de aplicación** es una de las herramientas que puede iniciar con el comando **Depurar** > **Generador de perfiles de rendimiento**.  
   
  Esta herramienta reemplaza a **Capacidad de respuesta de la IU de XAML** , que formaba parte del conjunto de herramientas de diagnóstico de Visual Studio 2013.  
   
@@ -46,7 +46,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
 1.  Abra la aplicación XAML.  
   
-2.  Haga clic en **Debug / Performance Profiler...**. Debería ver una lista de herramientas de generación de perfiles en la ventana .diagsession.  
+2.  Haga clic en **Depurar / Generador de perfiles de rendimiento**. Debería ver una lista de herramientas de generación de perfiles en la ventana .diagsession.  
   
 3.  Seleccione **Escala de tiempo de aplicación** y luego haga clic en **Iniciar** en la parte inferior de la ventana.  
   
@@ -96,7 +96,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 |||  
 |-|-|  
 |**Análisis**|Tiempo invertido en analizar archivos XAML y crear objetos.<br /><br /> Si se expande un nodo **Análisis** en **Detalles de la escala de tiempo** , se muestra la cadena de dependencia de todos los archivos XAML que se han analizado como resultado del evento de raíz. Esto le permitirá identificar análisis de archivos y creación de objetos innecesarios en escenarios sensibles al rendimiento y optimizarlos.|  
-|**Diseño**|En aplicaciones grandes, pueden mostrarse miles de elementos en la pantalla al mismo tiempo. Esto podría producir una baja tasa de imágenes por segundo en la interfaz y, por tanto, una mala capacidad de respuesta de la aplicación. El evento de diseño determina con precisión el costo de implementar estos elementos (es decir, el tiempo empleado en Arrange, Measure, ApplyTemplate y ArrangeOverride) y genera los árboles visuales que participaron en una fase de Diseño. Puede usar esta visualización para determinar qué árboles lógicos debe eliminar, o para evaluar otros mecanismos de aplazamiento que optimicen la fase de diseño.|  
+|**Diseño**|En aplicaciones grandes, pueden mostrarse miles de elementos en la pantalla al mismo tiempo. Esto podría producir una baja tasa de imágenes por segundo en la interfaz y, por tanto, una mala capacidad de respuesta de la aplicación. El evento de diseño determina con precisión el costo de implementar estos elementos (es decir, el tiempo empleado en Arrange, Measure, ApplyTemplate y ArrangeOverride) y genera los árboles visuales que participaron en una fase de Diseño. Puede usar esta visualización para determinar qué árboles lógicos debe eliminar o para evaluar otros mecanismos de aplazamiento que optimicen la fase de diseño.|  
 |**Representar**|Tiempo invertido en representar elementos XAML en la pantalla.|  
 |**E/S**|Tiempo invertido en recuperar datos desde el disco local o desde recursos de red a los que se tiene acceso mediante la API [Microsoft Windows Internet (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Código de aplicación**|Tiempo invertido en la ejecución de código (de usuario) de la aplicación no relacionado con el análisis ni el diseño.|  

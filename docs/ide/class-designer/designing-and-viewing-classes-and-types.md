@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdc89faaebff31981e7cece07c8530600f32454
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Diseñar y ver clases y tipos con el Diseñador de clases
 
@@ -58,5 +58,5 @@ Después de ajustar uno o varios diagramas de clases, puede copiarlos a document
 
 ## <a name="see-also"></a>Vea también
 
-- [Escribir código en el editor](../writing-code-in-the-code-and-text-editor.md)
+- [Características del editor de código](../writing-code-in-the-code-and-text-editor.md)
 - [Asignar dependencias en las soluciones](../../modeling/map-dependencies-across-your-solutions.md)

@@ -9,11 +9,11 @@ description: Términos de licencia de las suscripciones de Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 **TÉRMINOS DE LICENCIA DE SOFTWARE DE MICROSOFT PARA LAS SIGUIENTES SUSCRIPCIONES DE VISUAL STUDIO:**
 
@@ -128,7 +128,7 @@ SI CUMPLE CON ESTOS TÉRMINOS DE LICENCIA, TENDRÁ LOS DERECHOS SIGUIENTES PARA 
     (a veces denominado "multiplexación" o "agrupación") no reduce el número de licencias de cualquier tipo que necesita.
 
 
-8. **ACTIVACIÓN OBLIGATORIA.** La activación asocia el uso del software a un determinado dispositivo. Durante la activación, el software enviará información sobre el software y el dispositivo a Microsoft. Esta información incluye la clave de producto, el idioma y la versión del software, la dirección del protocolo de Internet del dispositivo y la información obtenida a partir de la configuración de hardware del dispositivo. Para obtener más información, vea [microsoft.com/piracy/activation.mspx.[(http://microsoft.com/piracy/activation.mspx)]. Mediante el uso del software, da su consentimiento a la transmisión de esta información. Antes de la activación, tiene derecho a usar la versión del software instalado durante el proceso de instalación. **Su derecho a usar el software después de la hora especificada en el proceso de instalación está limitada a menos que se active.** Esto tiene por objeto impedir su uso sin licencia. Si no lo activa, no podrá seguir usando el software después de ese momento. Si el dispositivo está conectado a Internet, el software puede conectarse automáticamente a Microsoft para la activación. También puede activar el software manualmente por Internet o por teléfono. En ese caso, pueden aplicarse cargos por el servicio de Internet y teléfono. Algunos cambios en el software o los componentes del equipo pueden requerir que haya que reactivar el software. **El software se lo recordará hasta que lo haga.**
+8. **ACTIVACIÓN OBLIGATORIA.** La activación asocia el uso del software a un determinado dispositivo. Durante la activación, el software envía información sobre el software y el dispositivo a Microsoft. Esta información incluye la clave de producto, el idioma y la versión del software, la dirección del protocolo de Internet del dispositivo y la información obtenida a partir de la configuración de hardware del dispositivo. Para más información, vea [Activación de productos de Microsoft](https://www.microsoft.com/en-us/piracy/mpa.aspx). Al usar el software, da su consentimiento para la transmisión de esta información. Antes de la activación, tiene derecho a usar la versión del software instalado durante el proceso de instalación. **Su derecho a usar el software después de la hora especificada en el proceso de instalación está limitada a menos que se active.** Esto tiene por objeto impedir su uso sin licencia. Si no lo activa, no podrá seguir usando el software después de ese momento. Si el dispositivo está conectado a Internet, el software puede conectarse automáticamente a Microsoft para la activación. También puede activar el software manualmente por Internet o por teléfono. En ese caso, pueden aplicarse cargos por el servicio de Internet y teléfono. Algunos cambios en el software o los componentes del equipo pueden requerir que haya que reactivar el software. **El software se lo recordará hasta que lo haga.**
 
 9. **VALIDACIÓN.**
 

@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de llamadas sincrónicas a [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] en funciones de aplicaciones de varias capas que se comunican con una o más bases de datos.
 
@@ -38,17 +38,17 @@ Para recopilar datos de interacción de capas en un equipo remoto, debe copiar e
 
 Los datos de interacción de capas solo se pueden ver en Visual Studio Enterprise. Los informes de interacción de capas basados en archivos no están disponibles en [VSPerfReport](../profiling/vsperfreport.md) .
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Agregar datos de interacción de capas con VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Agregar datos de interacción de capas con VSPerfCmd
 
 La herramienta de línea de comandos VSPerfASPNETCmd le permite tener acceso a la funcionalidad completa disponible en las herramientas de generación de perfiles. Para agregar la interacción de capas a los datos de generación de perfiles recopilados mediante VSPerfCmd, debe usar la utilidad **VSPerfCLREnv** para establecer y quitar las variables de entorno que activan los datos de interacción de capas. Las opciones que especifique y los procedimientos necesarios para recopilar datos dependen del tipo de aplicación con que esté generando perfiles.
 
-## <a name="profiling-stand-alone-applications"></a>Generar perfiles para aplicaciones independientes
+## <a name="profile-stand-alone-applications"></a>Generación de perfiles de aplicaciones independientes
 
 Para agregar datos de interacción de capas a una aplicación que no se ejecuta por otro proceso, como una aplicación de escritorio de Windows que realiza llamadas sincrónicas [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] a una base de datos de SQL Server, utilice la opción **VSPerfClrEnv /InteractionOn** para establecer las variables de entorno y la opción **VSPerfClrEnv /InteractionOff** para quitarlas.
 
 En el ejemplo siguiente, se generan perfiles para una aplicación de escritorio de Windows mediante el método de instrumentación y se recopilan datos de interacción de capas.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Ejemplo de generación de perfiles para una aplicación de escritorio de Windows
+### <a name="profile-a-windows-desktop-application-example"></a>Ejemplo de generación de perfiles para una aplicación de escritorio de Windows
 
 1. Abra una ventana del símbolo del sistema con privilegios de administrador. Haga clic en **Inicio**, seleccione **Todos los programas** y, a continuación, seleccione **Accesorios**. Haga clic con el botón derecho en **Símbolo del sistema** y, a continuación, haga clic en **Ejecutar como administrador**.
 
@@ -79,9 +79,9 @@ En el ejemplo siguiente, se generan perfiles para una aplicación de escritorio 
     vsperfclrenv /off
     ```
 
-Para obtener más información, consulte [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Para más información, vea [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Generar perfiles para servicios
+## <a name="profile-services"></a>Servicios de generación de perfiles
 
 Para generar perfiles para servicios, incluidas las aplicaciones [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], utilice la opción **VSPerfClrEnv /GlobalInteractionOn** para establecer las variables de entorno y la opción **VSPerfClrEnv /GlobalInteractionOff** para quitarlas.
 
@@ -89,7 +89,7 @@ Cuando genera perfiles para servicios, incluidas las aplicaciones web [!INCLUDE[
 
 En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediante el método de instrumentación y se recopilan datos de interacción de capas.
 
-### <a name="profiling-a-windows-service-example"></a>Un ejemplo de generación de perfiles para un servicio de Windows
+### <a name="profile-a-windows-service-example"></a>Ejemplo de generación de perfiles para un servicio de Windows
 
 1. Si es necesario, instale el servicio.
 
@@ -101,7 +101,7 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
     vsperfclrenv /globaltraceon
     ```
 
-4. Inicialice las variables de entorno de TIP. Escriba el comando siguiente
+4. Inicialice las variables de entorno de TIP. Escriba el comando siguiente:
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -143,9 +143,9 @@ Para obtener más información, consulte uno de los temas siguientes:
 
 [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
-[Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)
+[Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Agregar datos de interacción de capas con VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Agregar datos de interacción de capas con VSPerfASPNETCmd
 
 La herramienta de línea de comandos VSPerfASPNETCmd le permite generar perfiles fácilmente para aplicaciones web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. En comparación con la herramienta de línea de comandos **VSPerfCmd**, tiene menos opciones, no debe establecerse ninguna variable de entorno y no es necesario reiniciar el equipo. Estas características de VSPerfASPNETCmd hacen que la recopilación de datos de interacción de capas sea extraordinariamente sencilla.
 

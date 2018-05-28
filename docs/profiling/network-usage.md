@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41e41b4448bcec34a24464f4f62e85d0765436d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Análisis del uso de la red en aplicaciones UWP
 La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de las operaciones de red realizadas mediante la [Windows.Web.Http API](/uwp/api/windows.web.http). Analizar los datos puede ayudarle a resolver problemas como los problemas de acceso y autenticación, uso incorrecto de la caché y rendimiento deficiente de visualización y descarga.  
@@ -24,12 +24,12 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 > [!NOTE]
 >  Para obtener una descripción más completa de la herramienta Red, vea [Presentación de la herramienta de red de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
   
-## <a name="collecting-network-tool-data"></a>Recopilar datos de la herramienta de red  
+## <a name="collect-network-tool-data"></a>Recopilar datos de la herramienta de red  
  Debería ejecutar la herramienta **Red** con un proyecto de Visual Studio abierto en el equipo de Visual Studio.  
   
 1.  Abra el proyecto en Visual Studio.  
   
-2.  En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija **Red** y después **Iniciar**.  
+2.  En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento**. Elija **Red** y después **Iniciar**.  
   
 3.  La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   
@@ -41,7 +41,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
  ![La ventana Red](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>Analizando datos  
+## <a name="analyze-data"></a>Analizar datos  
  Puede analizar el tráfico HTTP capturado mientras se ejecuta la aplicación, o incluso después de cerrarla, seleccionando cualquiera de las operaciones de red que se muestran en la vista de resumen.  
   
  La vista de resumen **Red** muestra los datos de cada operación de red durante la ejecución de la aplicación. Elija un encabezado de columna para ordenar la lista o seleccione los tipos de contenido que desea mostrar en la vista de filtro **Tipo de contenido**.  
@@ -69,7 +69,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 2.  Las respuestas de error (4xx o 5xx) se muestran en la columna **Resultados** con un código de estado rojo, además de resaltarse en la barra de resumen. Esto hace fácil detectar errores entre las muchas solicitudes posibles en la aplicación.  
   
-3.  El botón de impresión bonita (dentro de la pestaña Cuerpo) puede ayudarle a analizar cargas de respuesta JSON, XML, HTML, CSS, JavaScript y TypeScript al aumentar la legibilidad del contenido.  
+3.  El botón de impresión con sangría (dentro de la pestaña Cuerpo) puede ayudarle a analizar cargas de respuesta JSON, XML, HTML, CSS, JavaScript y TypeScript al aumentar la legibilidad del contenido.  
   
 ## <a name="see-also"></a>Vea también  
  [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  

@@ -11,13 +11,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61d4506f4b9ee68e7920fa4bbb4c463d00cceb73
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5268e6821714dc6850541c319dba450bcc04490b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="setting-general-performance-session-options"></a>Establecer opciones generales de sesión de rendimiento
+# <a name="set-general-performance-session-options"></a>Establecimiento de opciones generales de sesión de rendimiento
 
 Puede establecer el método de recolección y las convenciones de nomenclatura de los datos de generación de perfiles para una sesión de rendimiento de las Herramientas de generación de perfiles de Visual Studio en la página **General** del cuadro de diálogo de propiedades de la sesión de rendimiento. Para abrir este cuadro de diálogo desde el **Explorador de rendimiento**, haga clic con el botón derecho del mouse en la sesión de rendimiento y, a continuación, en **Propiedades**.
 
@@ -35,13 +35,14 @@ El método de recolección base se establece mediante la selección de una opci�
 
 |||
 |-|-|
-|**Recopilar información de asignación de objetos .NET**. De forma predeterminada, los datos incluyen el número y el tamaño de los objetos asignados. Active o desactive esta casilla para habilitar o deshabilitar la recolección de datos de memoria de .NET.<br /><br /> **Recopilar también la información de duración de los objetos .NET**. Active esta casilla para incluir datos acerca de las generaciones de recolección de elementos no utilizados que se utilizaron para reclamar los objetos de memoria.|- [Recopilar datos de duración y de asignación de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**Recopilar información de asignación de objetos .NET**. De forma predeterminada, los datos incluyen el número y el tamaño de los objetos asignados. Active o desactive esta casilla para habilitar o deshabilitar la recolección de datos de memoria de .NET. |- [Recopilar datos de duración y de asignación de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**Recopilar también la información de duración de los objetos .NET**. Active esta casilla para incluir datos acerca de las generaciones de recolección de elementos no utilizados que se utilizaron para reclamar los objetos de memoria.|- [Recopilar datos de duración y de asignación de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  |
 
  Al comenzar a generar perfiles de una aplicación, aparece una página de la sesión de generación de perfiles en la que se puede pausar, reanudar y detener la generación de perfiles.
 
  ![Página de la sesión de generación de perfiles](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
-## <a name="setting-profiling-data-file-options"></a>Establecimiento de opciones del archivo de datos de generación de perfiles
+## <a name="set-profiling-data-file-options"></a>Establecimiento de opciones del archivo de datos de generación de perfiles
 
 |||
 |-|-|

@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 La herramienta de la línea de comandos VSPerfReport se usa para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El formato de informe predeterminado es un archivo .csv.  
@@ -65,7 +65,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**NoLogo**|Oculta la información de versión cuando el informe se está ejecutando.|  
 |**UserRulesDirectory**|Especifica el directorio que contiene las reglas de rendimiento definidas por el usuario [todavía sin implementar].|  
   
-## <a name="filter-options"></a>Opciones de filtro:  
+## <a name="filter-options"></a>Opciones de filtro  
  En la tabla siguiente se describen las opciones para filtrar los datos disponibles.  
   
 |Opciones|Description|  

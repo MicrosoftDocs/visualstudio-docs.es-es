@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML, en el código o mediante el Diseñador XAML. En este tema se describe cómo trabajar con elementos en el Diseñador XAML en Visual Studio o Blend para Visual Studio.
@@ -53,7 +53,7 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
 
         -   **Enviar al fondo** para enviar el elemento a la última posición del orden.
 
-     Cambie la propiedad **ZIndex** en la sección **Diseño** en la ventana Propiedades. En el caso de los elementos superpuestos, la propiedad **ZIndex** tiene prioridad sobre el orden de los elementos que se muestran en la ventana Esquema del documento. Un elemento con un valor **ZIndex** más bajo aparece delante cuando los elementos se superponen.
+     Cambie la propiedad **ZIndex** en la sección **Diseño** en la ventana Propiedades. En el caso de los elementos superpuestos, la propiedad **ZIndex** tiene prioridad sobre el orden de los elementos que se muestran en la ventana Esquema del documento. Cuando los elementos se superponen, aparece un elemento con un valor **ZIndex** más alto delante.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Cambiar la alineación de un elemento
  Puede alinear los elementos en la mesa de trabajo usando comandos de menú o arrastrando los elementos a las guías de alineación.
@@ -74,7 +74,7 @@ Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML,
 
      Cuando los bordes estén alineados, aparecerá un *límite de alineación* para indicar la alineación. El límite de alineación es una línea roja discontinua. Los límites de alineación aparecen solamente cuando está habilitado el **ajuste a las guías de alineación** . Para ver una ilustración de la mesa de trabajo que muestra los límites de alineación, vea [Crear una IU con el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="changing-the-an-elements-margins"></a>Cambiar los márgenes de un elemento
+## <a name="changing-an-elements-margins"></a>Cambiar los márgenes de un elemento
  Los márgenes del Diseñador XAML determinan cuánto espacio vacío hay alrededor de un elemento en la mesa de trabajo. Por ejemplo, los márgenes especifican la cantidad de espacio entre los bordes exteriores de un elemento y los límites de un panel `Grid` que contiene el elemento. Los márgenes también especifican la cantidad de espacio entre los elementos que están contenidos en un `StackPanel`.
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Para cambiar los márgenes de un elemento en la ventana Propiedades

@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
 Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simultaneidad, puede controlar cómo se recopilan los seguimientos.  El cuadro de diálogo tiene pestañas para los símbolos, Solo mi código, almacenamiento en búfer, filtrado, eventos de CLR, marcadores, proveedores y archivos.  
@@ -65,7 +65,7 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
   
  Puede utilizar la lista del nivel de importancia para filtrar los eventos que tienen una relevancia o nivel de ETW que sea menor que el valor especificado.  
   
-### <a name="configuring-an-existing-provider"></a>Configuración de un proveedor existente  
+### <a name="configure-an-existing-provider"></a>Configuración de un proveedor existente  
  Para modificar los valores asociados a un proveedor existente, selecciónelo en la lista y, después, elija el botón **Editar proveedor**.  Puede cambiar el nombre, el GUID y las opciones de filtrado.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Eliminación de los datos de marcador de filtro de los informes del Visualizador de simultaneidad  

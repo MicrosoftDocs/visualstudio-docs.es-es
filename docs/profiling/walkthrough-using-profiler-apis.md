@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
 En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Usará la API del generador de perfiles para limitar la cantidad de datos que se recopilan durante la generación de perfiles de instrumentación.  
@@ -37,9 +37,9 @@ En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de l
 ## <a name="prerequisites"></a>Requisitos previos  
  En este tutorial se da por supuesto que la elección del entorno de desarrollo está configurada para admitir la depuración y el muestreo. En los temas siguientes se proporciona una introducción de estos requisitos previos:  
   
- [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
+ [Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
   
- [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  De forma predeterminada, cuando se inicia el generador de perfiles, recopila datos en el nivel global. El código siguiente al principio del programa desactiva la generación de perfiles global.  
   
@@ -51,7 +51,7 @@ DataCollection.CurrentId);
   
  Puede desactivar la recopilación de datos en la línea de comandos sin usar una llamada de API. En los pasos siguientes se supone que el entorno de compilación de línea de comandos está configurado para ejecutar las herramientas de generación de perfiles y las herramientas de desarrollo. Esto incluye la configuración necesaria para VSInstr y VSPerfCmd. Vea las herramientas de generación de perfiles de línea de comandos.  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>Limitación de la recopilación de datos mediante las API del generador de perfiles  
+## <a name="limit-data-collection-using-profiler-apis"></a>Limitación de la recopilación de datos mediante las API del generador de perfiles  
   
 #### <a name="to-create-the-code-to-profile"></a>Para crear el código para generar perfiles  
   

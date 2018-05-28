@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5912e6704a50884df2000afb7c12f82f7a8aa69f
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c51b981e7863db371d8e50ae13e48afbc7f270fc
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación independiente de .NET Framework y recopilar estadísticas de la aplicación utilizando la línea de comandos
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación independiente de .NET Framework y recopilar estadísticas de la aplicación mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar Profiler a una aplicación independiente de .NET Framework en ejecución (cliente) y recopilar estadísticas de rendimiento mediante el método de muestreo.  
   
 > [!NOTE]
@@ -30,9 +30,9 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
   
  Para finalizar una sesión de generación de perfiles, el generador de perfiles no debe estar ya adjunto a la aplicación y debe cerrarse explícitamente. En la mayoría de los casos, recomendamos borrar las variables de entorno de generación de perfiles al final de una sesión.  
   
-## <a name="attaching-the-profiler"></a>Adjuntar el generador de perfiles  
+## <a name="attach-the-profiler"></a>Anexión del generador de perfiles  
   
-#### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Para adjuntar el Generador de perfiles a una aplicación .NET Framework que se esté ejecutando  
+#### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Para adjuntar el Generador de perfiles a una aplicación .NET Framework en ejecución  
   
 1.  Abra una ventana de símbolo del sistema.  
   
@@ -80,9 +80,9 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
     |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Cambia el evento de muestreo a llamadas al sistema por parte del proceso al kernel del sistema operativo (llamadas syscall). Si se especifica `Interval`, se establece el número de llamadas entre un muestreo y otro. El valor predeterminado es 10.|  
     |[/counter](../profiling/counter.md) **:** `Config`|Cambia el evento y el intervalo de muestreo por el contador de rendimiento del procesador y el intervalo especificados en `Config`.|  
   
-    -  
+     
   
-## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
+## <a name="control-data-collection"></a>Control de la recopilación de datos  
  Durante la ejecución de la aplicación de destino, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en un archivo de datos del generador de perfiles mediante el uso de las opciones de **VSPerfCmd.exe**. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
@@ -95,7 +95,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recopilación de datos para el proceso especificado por `PID`.|  
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por `PID` o por el nombre de proceso (ProcName). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
   
-## <a name="ending-the-profiling-session"></a>Finalizar la sesión de generación de perfiles  
+## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles  
  Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar de todos los procesos perfilados y se debe apagar explícitamente. Puede desasociar el generador de perfiles de una aplicación cuyo perfil se ha generado mediante el método de muestreo, el cierre de la aplicación o una llamada la opción **VSPerfCmd /detach**. Después, llame a la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /off** borra las variables de entorno de generación de perfiles.  
   
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  

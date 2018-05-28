@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 29472e2590a767c98c5674bce14712171f16fdbf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -285,7 +285,7 @@ Al ejecutar los dos métodos de prueba se muestra que las pruebas funcionan corr
 
 Pero los dos últimos métodos de prueba también son problemáticos. No puede saber qué condición del método en pruebas inicia la excepción cuando se ejecuta cualquier prueba. Alguna forma de diferenciar las dos condiciones, que es una cantidad de débito negativo o una cantidad mayor que el saldo, aumentaría la confianza en las pruebas.
 
-Examine de nuevo el método en pruebas y compruebe que ambas instrucciones condicionales utilizan un constructor `ArgumentOutOfRangeException` que toma su nombre del argumento como parámetro:
+Examine de nuevo el método en pruebas y compruebe que ambas instrucciones condicionales utilizan un constructor `ArgumentOutOfRangeException` que tan solo toma el nombre del argumento como parámetro:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

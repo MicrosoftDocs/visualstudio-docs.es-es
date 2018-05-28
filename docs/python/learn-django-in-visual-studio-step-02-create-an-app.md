@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2 del tutorial: Crear una aplicación de Django con vistas y plantillas de página
 
@@ -206,7 +206,7 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
         )
     ```
 
-    El primer argumento de `render`, como puede ver, es el objeto de solicitud, al que le sigue la ruta de acceso relativa al archivo de plantilla dentro de la carpeta `templates` de la aplicación. Se pone a un archivo de plantilla el nombre de la vista a la que brinda soporte, si procede. El tercer argumento para `render` es un diccionario de variables al que hace referencia la plantilla. Puede incluir objetos en el diccionario, en cuyo caso una variable de la plantilla puede hacer referencia a `{{ object.property }}`.
+    El primer argumento de `render`, como puede ver, es el objeto de solicitud, al que le sigue la ruta de acceso relativa al archivo de plantilla dentro de la carpeta `templates` de la aplicación. Se asigna a un archivo de plantilla el nombre de la vista que admite, si procede. El tercer argumento para `render` es un diccionario de variables al que hace referencia la plantilla. Puede incluir objetos en el diccionario, en cuyo caso una variable de la plantilla puede hacer referencia a `{{ object.property }}`.
 
 1. Ejecute el proyecto y observe la salida. Verá un mensaje similar al del paso 2.2, que indica que la plantilla funciona.
 

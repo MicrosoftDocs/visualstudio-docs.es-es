@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 La herramienta **VSPerfCmd.exe** se usa para iniciar y detener la recopilación de datos de rendimiento. Utiliza la siguiente sintaxis:  
@@ -54,7 +54,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn y ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Pausa la generación de perfiles para el subproceso especificado. Use **ThreadOff** solo al generar perfiles con el método de instrumentación.|  
 |[Mark](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Inserta una marca en el archivo de datos de generación de perfiles, con un texto opcional.|  
   
-## <a name="sampling-method-options"></a>Opciones del método de muestreo  
+## <a name="sample-method-options"></a>Opciones de método de muestreo  
  Las siguientes opciones solo están disponibles cuando se usa el método de generación de perfiles de muestreo.  
   
 |Opción|Description|  
@@ -66,7 +66,7 @@ VSPerfCmd [/U] [/options]
 |[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Recopila datos de asignación de memoria de .NET y de duración de los objetos. Úselo solo con la opción **VSPerfCmdLaunch**.|  
   
-### <a name="sampling-interval-options"></a>Opciones del intervalo de muestreo  
+### <a name="sample-interval-options"></a>Opciones de intervalo de muestreo  
  Las opciones siguientes especifican el tipo y la duración de los intervalos de muestreo. El valor predeterminado es **Timer**. También puede especificar un contador de CPU como intervalo mediante la opción **Counter**. Estas opciones solo se pueden especificar con **Launch** o con la primera opción **Attach** de una sesión de generación de perfiles.  
   
 |Opción|Description|  
@@ -75,7 +75,7 @@ VSPerfCmd [/U] [/options]
 |[Sys](../profiling/sys-vsperfcmd.md)[**:***n*]|Muestrea en cada llamada del sistema número n (valor predeterminado: 10).|  
 |[Timer](../profiling/timer.md)[**:***n*]|Muestrea en cada ciclo del procesador número n (valor predeterminado: 10 000 000).|  
   
-## <a name="service-component-and-kernel-mode-device-options"></a>Opciones de componentes de servicios y de dispositivos de modo de núcleo  
+## <a name="service-component-and-kernel-mode-device-options"></a>Opciones de componentes de servicios y de dispositivos de modo kernel  
  Las siguientes opciones de administración admiten la generación de perfiles de componentes de servicios o controladores de dispositivos de modo de núcleo. Las opciones de administración establecen permisos de generación de perfiles y controlan el servicio o el controlador de dispositivos de los que se han generado perfiles.  
   
  Las opciones de administración deben ejecutarse en un símbolo del sistema que se ejecute con credenciales administrativas.  

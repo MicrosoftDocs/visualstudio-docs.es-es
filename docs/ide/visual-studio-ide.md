@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 0fdc6acd2c14331d34ccb3f3435b1ee5fcc44a14
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Introducción al IDE de Visual Studio
 
@@ -169,7 +169,7 @@ Para ofrecerle una amplia información gráfica de Visual Studio, la siguiente i
 
 - El [Explorador de soluciones](../ide/solutions-and-projects-in-visual-studio.md) le permite ver y navegar por sus archivos de código, así como administrarlos. El Explorador de soluciones puede ayudar a organizar el código agrupando los archivos en soluciones y proyectos.
 
-- La ventana [Editor](../ide/writing-code-in-the-code-and-text-editor.md), que es donde probablemente pase más tiempo, muestra el código y le permite editar código fuente y diseñar IU.
+- La ventana [Editor](../ide/writing-code-in-the-code-and-text-editor.md), que es donde probablemente pase más tiempo, muestra el código y le permite editar código fuente y diseñar una interfaz de usuario.
 
 - La ventana de [Salida](../ide/reference/output-window.md) es el lugar en el que Visual Studio envía sus notificaciones, como mensajes de error y de depuración, advertencias del compilador, mensajes de estado de publicación, etc. Cada código fuente de mensaje tiene su propia pestaña.
 

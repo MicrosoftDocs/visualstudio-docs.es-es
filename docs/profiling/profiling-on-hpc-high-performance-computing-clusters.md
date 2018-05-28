@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (informática de alto rendimiento)
 
-Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las Herramientas de generación de perfiles de Visual Studio. Para obtener más información sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) en el sitio web de Microsoft.
+Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las Herramientas de generación de perfiles de Visual Studio. Para obtener más información sobre HPC, consulte [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) en el sitio web de Microsoft.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -57,7 +57,7 @@ Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:
 |*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. En el soporte de instalación de Visual Studio, la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
 |*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el soporte de instalación de Visual Studio la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC
+## <a name="profile-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC
 
 Configure una sesión de generación de perfiles mediante el Asistente de rendimiento HPC para especificar la información de destino y de clúster de HPC. Puede establecer opciones adicionales en las páginas de propiedades de la sesión de rendimiento. Las herramientas de generación de perfiles implementan los binarios de destino necesarios e inician el generador de perfiles y la aplicación HPC automáticamente.
 
@@ -105,7 +105,7 @@ Configure una sesión de generación de perfiles mediante el Asistente de rendim
 
 10. Haga clic en **Finalizar**.
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Establecer las propiedades de generación de perfiles de HPC usando las páginas de propiedades de la sesión de rendimiento
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Establecer las propiedades de generación de perfiles de HPC usando las páginas de propiedades de la sesión de rendimiento
 
 Puede cambiar las propiedades de la sesión de rendimiento que estableció en el Asistente para generación de perfiles de HPC en la página Propiedades de inicio de HPC de la página de propiedades de la sesión de rendimiento. Establezca las opciones adicionales en la página Propiedades avanzadas de HPC.
 
@@ -134,7 +134,7 @@ Puede cambiar las propiedades de la sesión de rendimiento que estableció en el
 |**Directorio de trabajo remoto**|Especifica la ruta de acceso a la carpeta que se usa en las instancias de proceso en los nodos de ejecución individuales.|
 |**Ubicación de implementación**|Especifica la ruta de acceso al directorio que el servidor HPC usa para organizar las imágenes para la implementación.|
 
-### <a name="advanced-properties"></a>Avanzadas (Propiedades)
+### <a name="advanced-properties"></a>Propiedades avanzadas
 
 |Property|Description|
 |--------------|-----------------|

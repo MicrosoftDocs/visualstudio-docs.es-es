@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee85f9946e16b0ecaafa196e1b197304ccde3bd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guía para principiantes para el muestreo de la CPU
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar datos de **muestreo**.
@@ -32,10 +32,10 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
  El método de **muestreo** recopila a intervalos especificados información sobre las funciones que se ejecutan en la aplicación. Después de acabar una generación de perfiles, la vista **Resumen** muestra el árbol con las llamadas de función más activas, lo que se denomina la **ruta de acceso activa**. Ahí es donde se llevó a cabo la mayor parte del trabajo de la aplicación. La vista también enumera qué funciones realizaron más trabajo individual y proporciona un gráfico de escala de tiempo que se puede usar para centrarse en segmentos específicos de la sesión de muestreo.  
   
- Si **Muestreo** no le proporciona los datos que necesita, otros métodos de recolección de las herramientas de generación de perfiles proporcionan diferentes tipos de información que pueden resultarle útiles. Para obtener más información sobre estos otros métodos, consulte [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md).  
+ Si **Muestreo** no le proporciona los datos que necesita, otros métodos de recolección de las herramientas de generación de perfiles proporcionan diferentes tipos de información que pueden resultarle útiles. Para más información sobre estos otros métodos, vea [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Si se generan perfiles de código que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para obtener más información sobre cómo asegurarse de que tiene los archivos necesarios, consulte [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Si se generan perfiles de código que llama a funciones de Windows, asegúrese de que dispone de los archivos .pdb más recientes. Sin estos archivos, las vistas de informe mostrarán nombres de funciones de Windows crípticos y difíciles de entender. Para más información sobre cómo asegurarse de que tiene los archivos necesarios, vea [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ##  <a name="Step1"></a> Crear y ejecutar una sesión de rendimiento  
  Para obtener los datos que necesita analizar, debe crear una sesión de rendimiento y luego ejecutar la sesión. El **Asistente de rendimiento** le permite hacer ambas cosas.  
@@ -68,7 +68,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
  Se recomienda empezar a analizar los datos examinando la **ruta de acceso activa** y, después, la lista de funciones que realizan la mayor parte del trabajo. Para acabar, céntrese en otras funciones mediante la **escala de tiempo de resumen**. También puede ver sugerencias y advertencias sobre la generación de perfiles en la ventana **Lista de errores**.  
   
- Tenga en cuenta que el método de muestreo podría no proporcionarle la información que necesita. Por ejemplo, solo se recopilan muestras cuando la aplicación ejecuta código en el modo usuario. Por tanto, algunas funciones, como las operaciones de entrada y salida, no se registran en el muestreo. Las herramientas de generación de perfiles proporcionan varios métodos de recopilación que le permiten centrarse en los datos importantes. Para obtener más información sobre los demás métodos, consulte [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md).  
+ Tenga en cuenta que el método de muestreo podría no proporcionarle la información que necesita. Por ejemplo, solo se recopilan muestras cuando la aplicación ejecuta código en el modo usuario. Por tanto, algunas funciones, como las operaciones de entrada y salida, no se registran en el muestreo. Las herramientas de generación de perfiles proporcionan varios métodos de recopilación que le permiten centrarse en los datos importantes. Para más información sobre los demás métodos, vea [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md).  
   
  Cada área numerada de la ilustración se corresponde con un paso del procedimiento.  
   
@@ -121,7 +121,7 @@ Puede utilizar las herramientas de generación de perfiles de Visual Studio para
   
 4.  Después de volver a ejecutar la sesión, se agrega otro archivo de datos a la carpeta **Informes** de la sesión en el **Explorador de rendimiento**. Seleccione los datos de generación de perfiles originales y nuevos, haga clic con el botón secundario en la selección y, luego, haga clic en **Comparar informes de rendimiento**.  
   
-     Se abre una nueva ventana de informe que muestra los resultados de la comparación. Para obtener más información sobre cómo utilizar la vista de comparación, consulte [Cómo: Comparar archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md).
+     Se abre una nueva ventana de informe que muestra los resultados de la comparación. Para más información sobre cómo utilizar la vista de comparación, vea [Cómo: Comparar archivos de datos de rendimiento](../profiling/how-to-compare-performance-data-files.md).
   
 ## <a name="see-also"></a>Vea también  
  [Explorador de rendimiento](../profiling/performance-explorer.md)   

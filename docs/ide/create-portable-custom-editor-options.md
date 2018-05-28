@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: ff3391023d9a863bd9f06b4608b327902a17f0ac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig
 
@@ -162,4 +162,4 @@ Para controlar el ámbito de las convenciones de EditorConfig, establezca la pro
 - [Convenciones de nomenclatura .NET](../ide/editorconfig-naming-conventions.md)
 - [Compatibilidad de EditorConfig con un servicio de lenguaje](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
-- [Escribir código en el editor](writing-code-in-the-code-and-text-editor.md)
+- [Características del editor de código](writing-code-in-the-code-and-text-editor.md)

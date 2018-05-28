@@ -1,5 +1,5 @@
 ---
-title: Configuración de retrasos de inicio de escenario para pruebas de carga en Visual Studio
+title: Configurar retrasos de inicio de escenario para pruebas de carga en Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurar retrasos de inicio de escenario en pruebas de carga
 
@@ -72,11 +72,11 @@ La propiedad **Deshabilitar durante el calentamiento** se establece mediante la 
 
      Aparece el **Editor de pruebas de carga**. Se mostrará el árbol de la prueba de carga.
 
-2. En la carpeta **Escenarios** del árbol de la prueba de carga, elija el nodo de escenario para el que desea especificar los agentes que se van a usar.
+2. En la carpeta **Escenarios** de árboles de la prueba de carga, elija el nodo de escenario cuyo comportamiento de preparación quiere cambiar.
 
 3. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
-     Las categorías y propiedades del escenario se muestran en la ventana Propiedades.
+     Las categorías y propiedades del escenario se muestran en la ventana **Propiedades**.
 
      En la propiedad **Deshabilitar durante el calentamiento**, seleccione **True** o **False**.
 

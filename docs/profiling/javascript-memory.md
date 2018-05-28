@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82ceb7879fcfca709ff6e94de81ae76ef908e07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Análisis del uso de memoria de JavaScript en aplicaciones de UWP
 El analizador de memoria de JavaScript está disponible en Visual Studio para ayudarle a entender el uso de memoria y a localizar fugas de memoria en las aplicaciones para UWP creadas para Windows con JavaScript. Las aplicaciones compatibles comprenden las aplicaciones universales de Windows.
@@ -50,7 +50,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
 2.  Si está ejecutando la aplicación desde Visual Studio, en la lista **Iniciar depuración** de la barra de herramientas **Estándar**, elija el destino de depuración del proyecto: **Equipo local** o **Dispositivo**.  
   
-3.  En la barra de menús, elija **Depurar**, **Generador de perfiles de rendimiento...**  
+3.  En la barra de menús, elija **Depurar** > **Generador de perfiles de rendimiento**.  
   
      De forma predeterminada, se analiza el proyecto de inicio actual. Si quieres cambiar el destino de análisis, elige **Cambiar destino**.  
   

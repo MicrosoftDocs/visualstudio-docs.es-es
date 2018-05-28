@@ -18,13 +18,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9ddcc2a374661525744e064929ca20daa83c97
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 36b5f5000ab18360d5146603862381e056b37284
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="analyzing-performance-tools-data"></a>Analizar datos de herramientas de rendimiento
+# <a name="analyze-performance-tools-data"></a>Análisis de datos de herramientas de rendimiento
 Los informes de rendimiento de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] le permiten ver y analizar problemas de rendimiento de la aplicación. En esta sección se proporciona información general de los informes de rendimiento y las vistas que pueden utilizarse para examinar los datos de rendimiento.  
   
 ## <a name="common-tasks"></a>Tareas comunes  
@@ -36,7 +36,7 @@ Los informes de rendimiento de las herramientas de generación de perfiles [!INC
 |**Configure, ordene y filtre las vistas de informes:** puede especificar y ordenar las columnas de datos que deben mostrarse en un informe, ordenar las filas del informe y filtrar los datos para incluir únicamente un segmento de tiempo que especifique.|-   [Personalizar las vistas de informes de las herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Comparar archivos de datos de rendimiento](../profiling/comparing-performance-data-files.md)  
+ [Comparación de archivos de datos de rendimiento](../profiling/comparing-performance-data-files.md)  
   
  [Guardar y exportar datos de herramientas de rendimiento](../profiling/saving-and-exporting-performance-tools-data.md)  
   

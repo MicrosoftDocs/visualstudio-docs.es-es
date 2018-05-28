@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Proyectos y soluciones, Cuadro de diálogo Opciones
 Establece el comportamiento [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] relacionado con proyectos y soluciones. Para acceder a estas opciones, seleccione **Herramientas > Opciones**, expanda **Proyectos y soluciones** y haga clic en **General**.
@@ -70,6 +70,12 @@ Cuando se selecciona, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
 **Preguntar antes de mover los archivos a una nueva ubicación**
 
 Cuando se selecciona, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muestra un cuadro de mensaje de confirmación antes de que las ubicaciones de archivos se cambien por las acciones en el Explorador de soluciones.
+
+**Reopen documents on solution load (Visual Studio 2017 version 15.8 preview 2 and later)** (Volver a abrir documentos en la carga de la solución [Visual Studio 2017 versión preliminar 2 de la versión 15.8 y versiones posteriores])
+ 
+Durante la carga de la solución, los documentos que estaban abiertos en la sesión anterior se vuelven a abrir automáticamente. Cuando se selecciona, los documentos que estaban abiertos la última vez que se cerró esta solución se abren automáticamente al cargar la solución.
+
+Volver a abrir determinados tipos de archivos o diseñadores puede retrasar la carga de la solución. Desactive esta opción para mejorar el rendimiento de la carga de la solución si no quiere restaurar el contexto previo de la solución.
 
 ## <a name="locations-tab-options"></a>Opciones de la pestaña Ubicaciones
 

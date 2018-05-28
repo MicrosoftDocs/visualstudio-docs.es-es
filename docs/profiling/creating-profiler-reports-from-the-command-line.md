@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c7bde83ce810f8260e61eacddf1a086953a63a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d925e2c20a304239c8b510bf9ecc1fba123c4dfa
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="creating-profiler-reports-from-the-command-line"></a>Crear informes del generador de perfiles desde la línea de comandos
+# <a name="create-profiler-reports-from-the-command-line"></a>Creación de informes del generador de perfiles desde la línea de comandos
 La herramienta de línea de comandos **VSPerfReport** permite crear informes .xml o de valores separados por comas (.csv) a partir de archivos de datos de generación de perfiles (.vsp). Los tipos de informes VSPerfReport coinciden estrechamente con las vistas basadas en las tablas de la interfaz para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Puede filtrar el informe para mostrar solo su código y mostrar solo un segmento del archivo de datos de generación de perfiles. Para obtener más información, consulte [VSPerfReport](../profiling/vsperfreport.md).  
   
  También puede hacer que los archivos de datos de generación de perfiles sean más fáciles de compartir incrustando símbolos en los archivos .vsp y creando archivos de informe pre-analizados (.vsps) que son menores y más rápidos de abrir.  
   
-## <a name="common-tasks"></a>Tareas comunes  
+## <a name="common-tasks"></a>Tareas comunes
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  

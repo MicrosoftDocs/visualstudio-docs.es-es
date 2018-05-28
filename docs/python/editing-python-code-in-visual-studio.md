@@ -1,7 +1,7 @@
 ---
 title: Edición de código de Python
 description: La edición de Python en Visual Studio proporciona IntelliSense, fragmentos de código y características de navegación, además de formato, linting y refactorización.
-ms.date: 03/05/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="editing-python-code"></a>Edición de código de Python
 
@@ -27,7 +27,7 @@ El editor también está integrado en la ventana interactiva de Visual Studio, l
 |---|---|
 | ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) para ver una demostración de la edición de código Python (2 minutos 30 segundos).|
 
-Para obtener documentación general sobre la edición de código en Visual Studio, consulte [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md). Consulte también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código.
+Para obtener documentación general sobre la edición de código en Visual Studio, vea [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md). Consulte también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código.
 
 También puede usar el Examinador de objetos de Visual Studio (**Ver > Otras ventanas > Examinador de objetos** o Ctrl+W,J) para inspeccionar las clases de Python definidas en cada módulo y las funciones definidas en esas clases.
 

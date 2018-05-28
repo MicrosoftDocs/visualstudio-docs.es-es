@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="utilization-view"></a>Vista de utilización
 La **Vista de utilización** muestra información acerca de la CPU, la GPU y otros recursos del sistema que el proceso actual usa (elija **Analizar** > **Visualizador de simultaneidad** para iniciar el visualizador de simultaneidad). Muestra el uso de núcleo promedio por el proceso analizado, el proceso inactivo, el proceso del sistema y otros procesos que se ejecutan en el sistema a lo largo del tiempo. No muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico. La vista se genera al dividir el tiempo de generación de perfiles en segmentos de tiempo cortos. Para cada segmento, el gráfico traza el promedio de subprocesos del proceso que se ejecutan en núcleos lógicos durante ese intervalo.  
@@ -51,4 +51,4 @@ La **Vista de utilización** muestra información acerca de la CPU, la GPU y otr
   
 ## <a name="see-also"></a>Vea también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
- [Vista Núcleos](../profiling/cores-view.md)
+ [Vista de núcleos](../profiling/cores-view.md)
