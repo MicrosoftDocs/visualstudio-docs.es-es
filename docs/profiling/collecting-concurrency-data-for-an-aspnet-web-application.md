@@ -13,16 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9868cf579c943a584627cfe5416b1d4a94f3350b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a5cdb1a0a77ece78f623a0fa21bc48672d1624cb
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335923"
 ---
-# <a name="collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Recopilar datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
+# <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Recopilación de datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
 El método de simultaneidad de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite recopilar datos de contención de recursos.  
   
-## <a name="common-tasks"></a>Tareas comunes  
+## <a name="common-tasks"></a>Tareas comunes
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
@@ -31,24 +32,25 @@ El método de simultaneidad de las herramientas de generación de perfiles de [!
 ## <a name="reference"></a>Referencia  
  [Referencia de las herramientas de generación de perfiles de la línea de comandos](../profiling/command-line-profiling-tools-reference.md)  
   
-## <a name="related-tasks"></a>Tareas relacionadas  
+## <a name="related-tasks"></a>Tareas relacionadas
   
-### <a name="profiling-aspnet-applications"></a>Generar perfiles de aplicaciones ASP.NET  
+### <a name="profile-aspnet-applications"></a>Generar perfiles de aplicaciones ASP.NET  
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
 |**Generar perfiles mediante el método de muestreo**|-   [Recopilar estadísticas de aplicación mediante muestreo](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|  
-|**Generar perfiles mediante el método de instrumentación**|-   [Recopilar datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
-|**Generar perfiles de recolección de elementos no utilizados y de asignación de memoria**|-   [Recopilar datos de memoria](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+|**Generar perfiles mediante el método de instrumentación**|-   [Recopilación de datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|  
+|**Generar perfiles de recolección de elementos no utilizados y de asignación de memoria**|-   [Recopilación de datos de memoria](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
+
   
-### <a name="profiling-concurrency-issues"></a>Generar perfiles de problemas de simultaneidad  
+### <a name="profile-concurrency-issues"></a>Generación de perfiles de problemas de simultaneidad  
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
 |**Generar perfiles de aplicaciones independientes (cliente)**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|  
-|**Generar perfiles de servicios**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
+|**Generar perfiles para servicios**|-   [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
-### <a name="analyzing-concurrency-data-views-and-reports"></a>Analizar vistas e informes de datos de simultaneidad  
+### <a name="analyze-concurrency-data-views-and-reports"></a>Análisis de vistas e informes de datos de simultaneidad  
  [Vistas de datos de contención de recursos](../profiling/resource-contention-data-views.md)  
   
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)  

@@ -10,21 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d194ddfb83570b4e2a5461dc70a0368215aaca5
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cece8a5b97f3a9c78bdda8c5e841661d2b4d58d
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335585"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Cómo: Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de simultaneidad utilizando la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) de .NET Framework y recopilar datos de simultaneidad de procesos y de subprocesos.  
   
 > [!NOTE]
->  Las herramientas de línea de comandos de las herramientas de generación de perfiles se encuentran en el subdirectorio \Team Tools\Performance Tools del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles versiones de 64 bits y de 32 bits de las herramientas. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando. Para obtener más información, consulte [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Las herramientas de línea de comandos de las herramientas de generación de perfiles se encuentran en el subdirectorio \Team Tools\Performance Tools del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles versiones de 64 bits y de 32 bits de las herramientas. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando. Para más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Mientras el generador de perfiles está adjunto a la aplicación, puede pausar y reanudar la recolección de datos. Para finalizar una sesión de generación de perfiles, el generador de perfiles no debe estar ya asociado a la aplicación y debe cerrarse explícitamente.  
   
-## <a name="starting-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles  
+## <a name="start-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles  
  Para iniciar una aplicación de destino de .NET Framework con el generador de perfiles, utilice VSPerfClrEnv.exe para establecer las variables de generación de perfiles de .NET Framework. Luego, use las opciones **/start** y **/launch** de VSPerfCmd para inicializar Profiler e iniciar la aplicación. Puede especificar **/start** y **/launch** y sus respectivas opciones en una línea de comandos única. También puede agregar la opción **/globaloff** a la línea de comandos para pausar la recolección de datos cuando se inicia la aplicación de destino. A continuación, use **/globalon** en una línea de comandos independiente para empezar a recopilar datos.  
   
 #### <a name="to-start-an-application-with-the-profiler"></a>Para iniciar una aplicación con el generador de perfiles  
@@ -67,7 +68,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
     |[/console](../profiling/console.md)|Inicia la aplicación de línea de comandos de destino en otra ventana.|  
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|Especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación.|  
   
-## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
+## <a name="control-data-collection"></a>Control de la recopilación de datos  
  Mientras se ejecuta la aplicación de destino, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en el archivo con las opciones de VSPerfCmd.exe. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de la aplicación.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
@@ -80,7 +81,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|  
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** inicia la recopilación de datos para el proceso especificado por el identificador de proceso (`PID`) o por el nombre de proceso (ProcName). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
   
-## <a name="ending-the-profiling-session"></a>Finalizar la sesión de generación de perfiles  
+## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles  
  Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Para dejar de recopilar datos de simultaneidad, cierre la aplicación para la que se generan perfiles o invoque la opción **VSPerfCmd /detach**. Después, invoque la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /off** borra las variables de entorno de generación de perfiles.  
   
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
@@ -98,4 +99,4 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
   
 ## <a name="see-also"></a>Vea también  
- [Recopilación simultánea de datos](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)
+ [Recopilar datos de simultaneidad](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)

@@ -9,11 +9,12 @@ description: Preguntas más frecuentes sobre la migración de la administración
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336131"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migración de la administración de suscripciones de Visual Studio
 
@@ -78,7 +79,7 @@ Continuará administrando suscripciones a través de VLSC hasta que reciba el co
 Inicie sesión en el [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y siga la ruta de acceso siguiente: **Suscripciones** > **Suscripciones de Visual Studio**. El PCN se encuentra debajo de **Contrato / Resultados del número de cliente público**. En este [artículo de ayuda](/find-pcn/), puede obtener instrucciones paso a paso sobre cómo localizar el PCN. 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>¿Cómo averiguo quién es mi contacto principal o el encargado de los avisos?
-Inicie sesión en el [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y siga la ruta de acceso siguiente: **Licencias > Resumen de la relación** Seleccione su **id. de licencia > Contactos**. En este [artículo de ayuda](/find-primary-contact/), puede obtener instrucciones paso a paso sobre cómo buscar el contacto principal o el encargado de los avisos. 
+Inicie sesión en el [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y siga la ruta de acceso siguiente: **Licencias > Resumen de la relación** Seleccione su **id. de licencia > Contactos**. En este [artículo de ayuda](find-primary-contact.md), puede obtener instrucciones paso a paso sobre cómo buscar el contacto principal o el encargado de los avisos. 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>¿Qué ocurre si mi contacto principal o el encargado de los avisos ya no está, ya no forma parte de la empresa o no está disponible para completar la incorporación?
 Deberá [ponerse en contacto con el Equipo de Soporte Técnico](https://www.visualstudio.com/subscriptions/support/#talktous) y proporcionar el correo electrónico que utilizó en el VLSC para administrar suscripciones. Una vez comprobado, el Equipo de Soporte Técnico podrá ayudarlo en el proceso de incorporación. 
@@ -106,8 +107,8 @@ Para obtener la información más actualizada sobre esta migración, visite nues
 
 - [Soporte técnico](https://www.visualstudio.com/subscriptions/support/) de administración y suscripciones de Visual Studio 
 
-- [Cómo buscar mi PCN](/find-pcn/)
+- [Cómo buscar mi PCN](find-pcn.md)
 
-- [Cómo buscar mi contacto principal o el encargado de los avisos](/find-primary-contact/) 
+- [Cómo buscar mi contacto principal o el encargado de los avisos](find-primary-contact.md) 
 
 - [Vídeo](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) para incorporar la organización y administrar a los administradores 

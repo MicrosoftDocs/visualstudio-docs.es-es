@@ -9,11 +9,12 @@ description: Obtenga información sobre las ventajas incluidas en su suscripció
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335598"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
@@ -22,7 +23,7 @@ Las suscripciones de Visual Studio ofrecen el conjunto de recursos más completo
 Las ventajas se agrupan en tres categorías:
 
 ## <a name="tools"></a>Herramientas
-La categoría Herramientas proporciona acceso a una amplia variedad de ventajas, incluidas las ventajas más destacadas, como el [IDE de Visual Studio](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/) y [Azure](/vs-azure/).  Dependiendo del nivel de suscripción, también verá las cuentas de desarrollador de Windows y Office 365, Visual Studio App Center y las ventajas de asociados como WhiteSource Bolt y ModernRequirements.
+La categoría Herramientas proporciona acceso a una amplia variedad de ventajas, incluidas las ventajas más destacadas, como el [IDE de Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md) y [Azure](vs-azure.md).  Dependiendo del nivel de suscripción, también verá las cuentas de desarrollador de Windows y Office 365, Visual Studio App Center y las ventajas de asociados como WhiteSource Bolt y ModernRequirements.
 
 ## <a name="professional-development"></a>Desarrollo profesional
 Para ayudarle a mejorar continuamente sus habilidades y mantenerse al día con las últimas tecnologías, le proporcionamos acceso a algunos de los mejores aprendizajes en línea disponibles desde líderes del sector. Entre los ejemplos del excelente contenido disponible se encuentran:

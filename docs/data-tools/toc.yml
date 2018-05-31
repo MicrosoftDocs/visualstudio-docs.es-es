@@ -1,0 +1,247 @@
+- name: Información general
+  items:
+    - name: Acceder a datos en Visual Studio
+      href: accessing-data-in-visual-studio.md
+- name: Tutoriales
+  items:
+    - name: Crear una aplicación de datos sencilla mediante ADO.NET
+      href: create-a-simple-data-application-by-using-adonet.md
+    - name: Crear una aplicación de datos sencilla con WPF y Entity Framework
+      href: create-a-simple-data-application-with-wpf-and-entity-framework-6.md
+    - name: Conectar a datos desde una aplicación de C++
+      href: visual-studio-data-tools-for-cpp.md
+    - name: Crear clases LINQ to SQL mediante Object Relational Designer
+      href: walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md
+    - name: Crear una aplicación de datos de n niveles
+      href: walkthrough-creating-an-n-tier-data-application.md
+- name: Conceptos
+  items:
+    - name: Sistemas de bases de datos compatibles
+      href: installing-database-systems-tools-and-samples.md
+    - name: Visual Studio Data Tools para .NET
+      href: visual-studio-data-tools-for-dotnet.md
+    - name: Herramientas de Entity Framework
+      href: entity-data-model-tools-in-visual-studio.md
+    - name: Herramientas de conjunto de datos
+      href: dataset-tools-in-visual-studio.md
+      items:
+        - name: Conjuntos de datos con tipo frente a conjuntos de datos sin tipo
+          href: typed-vs-untyped-datasets.md
+        - name: Información general de TableAdapters
+          href: fill-datasets-by-using-tableadapters.md
+        - name: Trabajar con conjuntos de datos en aplicaciones de n niveles
+          href: work-with-datasets-in-n-tier-applications.md
+    - name: Proyectos de base de datos y aplicaciones de capa de datos (DAC)
+      href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
+    - name: Introducción a las aplicaciones de datos de n niveles
+      href: n-tier-data-applications-overview.md
+- name: Guías de procedimientos
+  items:
+    - name: Crear una base de datos
+      href: create-a-sql-database-by-using-a-designer.md
+    - name: Agregar conexiones
+      href: add-new-connections.md
+      items:
+        - name: Guardar y editar cadenas de conexión
+          href: how-to-save-and-edit-connection-strings.md
+        - name: Conectar a datos de una base de datos de Access
+          href: connect-to-data-in-an-access-database-windows-forms.md
+    - name: Agregar orígenes de datos .NET
+      href: add-new-data-sources.md
+    - name: Usar herramientas de LINQ to SQL
+      href: linq-to-sql-tools-in-visual-studio2.md
+      items:
+        - name: Cambiar el tipo de valor devuelto de un método DataContext
+          href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
+        - name: Crear métodos DataContext asignados a procedimientos almacenados
+          href: how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md
+        - name: Configurar herencia mediante Object Relational Designer
+          href: how-to-configure-inheritance-by-using-the-o-r-designer.md
+        - name: Crear clases LINQ to SQL asignadas a tablas y vistas
+          href: how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md
+        - name: Ampliar código generado por Object Relational Designer
+          href: how-to-extend-code-generated-by-the-o-r-designer.md
+        - name: Crear una asociación entre clases LINQ to SQL
+          href: how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md
+        - name: Agregar validación a clases de entidad
+          href: how-to-add-validation-to-entity-classes.md
+        - name: 'Personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad'
+          href: walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md
+        - name: 'Asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones'
+          href: how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md
+        - name: Activar y desactivar la pluralización
+          href: how-to-turn-pluralization-on-and-off-o-r-designer.md
+    - name: Uso de herramientas de conjunto de datos
+      items:
+        - name: Crear y configurar conjuntos de datos en Visual Studio
+          href: create-and-configure-datasets-in-visual-studio.md
+          items:
+            - name: Crear relaciones entre conjuntos de datos
+              href: relationships-in-datasets.md
+            - name: Crear un conjunto de datos con el Diseñador de DataSet
+              href: walkthrough-creating-a-dataset-with-the-dataset-designer.md
+            - name: Crear una tabla de datos con el Diseñador de DataSet
+              href: walkthrough-creating-a-datatable-in-the-dataset-designer.md
+        - name: TableAdapters
+          items:
+            - name: Crear y configurar TableAdapters
+              href: create-and-configure-tableadapters.md
+            - name: Crear consultas parametrizadas de TableAdapter
+              href: create-parameterized-tableadapter-queries.md
+            - name: Acceder directamente a la base de datos con un TableAdapter
+              href: directly-access-the-database-with-a-tableadapter.md
+            - name: Desactivar restricciones al llenar un conjunto de datos
+              href: turn-off-constraints-while-filling-a-dataset.md
+            - name: Ampliar la funcionalidad de un TableAdapter
+              href: extend-the-functionality-of-a-tableadapter.md
+        - name: Leer datos XML en un conjunto de datos
+          href: read-xml-data-into-a-dataset.md
+        - name: Editar datos en conjuntos de datos
+          href: edit-data-in-datasets.md
+        - name: Validar datos en conjuntos de datos
+          href: validate-data-in-datasets.md
+        - name: Guardar los datos de nuevo en la base de datos
+          href: save-data-back-to-the-database.md
+          items:
+            - name: Insertar nuevos registros en una base de datos
+              href: insert-new-records-into-a-database.md
+            - name: Actualizar datos mediante un TableAdapter
+              href: update-data-by-using-a-tableadapter.md
+            - name: Ejecutar una actualización jerárquica
+              href: hierarchical-update.md
+            - name: Tratar las excepciones de simultaneidad
+              href: handle-a-concurrency-exception.md
+            - name: Guardar datos mediante una transacción
+              href: save-data-by-using-a-transaction.md
+              items:
+                - name: 'Tutorial: Guardar datos en una transacción'
+                  href: save-data-in-a-transaction.md
+            - name: Guardar datos en una base de datos (varias tablas)
+              href: save-data-to-a-database-multiple-tables.md
+            - name: Guardar los datos de un objeto en una base de datos
+              href: save-data-from-an-object-to-a-database.md
+            - name: Guardar datos con los métodos DBDirect de un TableAdapter
+              href: save-data-with-the-tableadapter-dbdirect-methods.md
+            - name: Guardar un conjunto de datos como XML
+              href: save-a-dataset-as-xml.md
+        - name: Consultar conjuntos de datos
+          href: query-datasets.md
+        - name: Aplicaciones con n capas
+          items:
+            - name: Agregar validación a un conjunto de datos de n niveles
+              href: add-validation-to-an-n-tier-dataset.md
+            - name: Agregar código a conjuntos de datos en aplicaciones de n niveles
+              href: add-code-to-datasets-in-n-tier-applications.md
+            - name: Agregar código a TableAdapters en aplicaciones de n niveles
+              href: add-code-to-tableadapters-in-n-tier-applications.md
+            - name: Separar conjuntos de datos y TableAdapters en proyectos diferentes
+              href: separate-datasets-and-tableadapters-into-different-projects.md
+    - name: Enlazar controles a orígenes de datos
+      href: bind-controls-to-data-in-visual-studio.md
+      items:
+        - name: Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos
+          href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
+        - name: Agregar controles personalizados a la ventana de orígenes de datos
+          href: add-custom-controls-to-the-data-sources-window.md
+        - name: Enlazar controles de WPF a datos
+          href: bind-wpf-controls-to-data-in-visual-studio.md
+          items:
+            - name: Enlazar controles de WPF a un conjunto de datos
+              href: bind-wpf-controls-to-a-dataset.md
+            - name: Enlazar controles de WPF a un servicio de datos de WCF
+              href: bind-wpf-controls-to-a-wcf-data-service.md
+            - name: Crear tablas de búsqueda
+              href: create-lookup-tables-in-wpf-applications.md
+            - name: Mostrar datos relacionados
+              href: display-related-data-in-wpf-applications.md
+            - name: Enlazar controles a imágenes desde una base de datos
+              href: bind-controls-to-pictures-from-a-database.md
+        - name: Enlazar controles de Windows Forms a datos
+          href: bind-windows-forms-controls-to-data-in-visual-studio.md
+          items:
+            - name: Filtrar y ordenar los datos en una aplicación Windows Forms
+              href: filter-and-sort-data-in-a-windows-forms-application.md
+            - name: Confirmar ediciones en proceso en controles enlazados a datos antes de guardar los datos
+              href: commit-in-process-edits-on-data-bound-controls-before-saving-data.md
+            - name: Crear tablas de búsqueda
+              href: create-lookup-tables-in-windows-forms-applications.md
+            - name: Crear Windows Forms para buscar en datos
+              href: create-a-windows-form-to-search-data.md
+            - name: Crear un control de usuario que admita enlaces de datos simples
+              href: create-a-windows-forms-user-control-that-supports-simple-data-binding.md
+            - name: Crear un control de usuario que admita enlaces de datos complejos
+              href: create-a-windows-forms-user-control-that-supports-complex-data-binding.md
+            - name: Crear un control de usuario que admita enlaces de datos de búsqueda
+              href: create-a-windows-forms-user-control-that-supports-lookup-data-binding.md
+            - name: Pasar datos de un formulario a otro
+              href: pass-data-between-forms.md
+        - name: Enlazar objetos personalizados
+          href: bind-objects-in-visual-studio.md
+        - name: Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos
+          href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
+    - name: Servicios de Windows Communication Foundation y WCF Data Services
+      href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
+      items:
+        - name: Trabajar con un modelo conceptual
+          href: working-with-a-conceptual-model-wcf-data-services.md
+        - name: Conectar a los datos en un servicio
+          href: how-to-connect-to-data-in-a-service.md
+        - name: Crear un servicio WCF en Windows Forms
+          href: walkthrough-creating-a-simple-wcf-service-in-windows-forms.md
+        - name: Crear un servicio de datos de WCF con WPF y Entity Framework
+          href: walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md
+        - name: Solucionar problemas de referencias de servicio
+          href: troubleshooting-service-references.md
+        - name: Configurar referencia de servicio (cuadro de diálogo)
+          href: configure-service-reference-dialog-box.md
+        - name: 'Agregar, actualizar o eliminar una referencia de servicio de datos de WCF'
+          href: how-to-add-update-or-remove-a-wcf-data-service-reference.md
+    - name: Actualizar archivos .mdf
+      href: upgrade-dot-mdf-files.md
+    - name: Solucionar errores de acceso a datos
+      href: additional-resources-for-troubleshooting-data-access-errors.md
+- name: Referencia
+  items:
+    - name: Object Relational Designer (LINQ to SQL)
+      items:
+        - name: DataContext (métodos)
+          href: datacontext-methods-o-r-designer.md
+        - name: Herencia de clases de datos
+          href: data-class-inheritance-o-r-designer.md
+        - name: Mensajes de Object Relational Designer
+          href: o-r-designer-messages.md
+          items:
+            - name: No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext
+              href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
+            - name: La cadena de conexión contiene credenciales con una contraseña en texto no cifrado y no usa seguridad integrada
+              href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md
+            - name: No se puede eliminar la propiedad <property name> porque participa en la asociación <association name>
+              href: the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md
+            - name: La propiedad <property name> no se puede eliminar
+              href: the-property-property-name-cannot-be-deleted.md
+            - name: Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
+              href: the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md
+            - name: No se puede crear una asociación <association name>; los tipos de propiedad no coinciden
+              href: cannot-create-an-association-association-name-property-types-do-not-match.md
+            - name: Advertencia. Se han realizado cambios en el cuadro de diálogo Configurar comportamiento que no se han aplicado
+              href: warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md
+            - name: Ha seleccionado un objeto de base de datos de un proveedor de bases de datos no admitido
+              href: you-have-selected-a-database-object-from-an-unsupported-database-provider.md
+            - name: 'Este método relacionado es el método de copia de seguridad para los siguientes métodos de inserción, actualización o eliminación'
+              href: this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md
+            - name: Uno o varios elementos seleccionados contienen un tipo de datos que el diseñador no admite
+              href: one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md
+            - name: El cambio del tipo devuelto de un método DataContext no se puede deshacer
+              href: changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md
+            - name: No se puede modificar el diseñador durante la depuración
+              href: the-designer-cannot-be-modified-while-debugging.md
+            - name: La conexión seleccionada usa un proveedor de base de datos que no se admite
+              href: the-selected-connection-uses-an-unsupported-database-provider.md
+            - name: Los objetos que va a agregar al diseñador usan una conexión de datos diferente a la que está usando el diseñador
+              href: the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md
+            - name: No se puede crear una asociación <association name>. La misma propiedad aparece más de una vez
+              href: cannot-create-an-association-association-name-property-listed-twice.md
+            - name: No se pudo recuperar información de esquema del objeto de base de datos
+              href: could-not-retrieve-schema-information-for-database-object-object-name.md
+            - name: Uno o varios objetos de base de datos seleccionados devuelven un esquema que no coincide con el esquema de la clase de datos de destino
+              href: one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md

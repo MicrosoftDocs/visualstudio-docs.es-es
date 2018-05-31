@@ -1,27 +1,29 @@
 ---
-title: "forEach (método, Map) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: forEach (método, Map) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 9cdf0adc-77c7-4407-8ba7-ada0fb09e507
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d0ffa12b9a1995df14f4868872238cdc45b674a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 549d7d625fb4dfe88b2db69e6aa0ff66c7e90f66
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335806"
 ---
 # <a name="foreach-method-map-javascript"></a>forEach (Método, Map de JavaScript)
 Realiza la acción especificada para cada elemento de un mapa.  
@@ -34,10 +36,10 @@ mapObj.forEach(callbackfn[, thisArg])
   
 #### <a name="parameters"></a>Parámetros  
  `mapObj`  
- Obligatorio. Objeto `Map`.  
+ Requerido. Un objeto `Map`.  
   
  `callbackfn`  
- Obligatorio. La función que `forEach` llama una vez para cada elemento en el mapa. `callbackfn`acepta hasta tres argumentos. `forEach`llamadas a la `callbackfn` funcionar una vez por cada elemento del mapa.  
+ Requerido. La función que `forEach` llama una vez para cada elemento en el mapa. `callbackfn` acepta hasta tres argumentos. `forEach` llamadas a la `callbackfn` funcionar una vez por cada elemento del mapa.  
   
  `thisArg`  
  Opcional. Un objeto que la `this` palabra clave puede hacer referencia a en el `callbackfn` (función). Si se omite `thisArg`, se usa `undefined` como valor `this`.  
@@ -52,7 +54,7 @@ mapObj.forEach(callbackfn[, thisArg])
   
  Puede declarar la función de devolución de llamada usando hasta tres parámetros, tal como se muestra en la tabla siguiente.  
   
-|Argumento de devolución de llamada|Definición|  
+|Argumento de devolución de llamada|de esquema JSON|  
 |-----------------------|----------------|  
 |`value`|Un valor contenido en el mapa.|  
 |`key`|Una clave contenida en el mapa.|  
@@ -68,8 +70,8 @@ m.set(2, "red");
 m.set("colors", 2);  
 m.set({x:1}, 3);  
   
-m.forEach(function (item, key, mapObj) {  
-    document.write(item.toString() + "<br />");  
+m.forEach(function (value, key, mapObj) {  
+    document.write(value.toString() + "<br />");  
 });  
   
 document.write("<br />");  

@@ -74,10 +74,9 @@
 #### [Administración de suscripciones para MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ## Recursos
-### [Términos de licencia de Visual Studio](vs-license-terms.md)
 ### [Artículo de licencias de Visual Studio](http://aka.ms/vslicensing)
 ### [Comparación de opciones de suscripción y precios](https://www.visualstudio.com/vs/pricing)
 ### [Comparación de las características de los IDE de Visual Studio](https://www.visualstudio.com/vs/compare)
 ### [Soporte técnico para suscripciones y administración de Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
-### [Licencia por volumen y derechos de uso del producto (PUR)](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Términos de licencias por volumen](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Acuerdo de productos y servicios de Microsoft (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

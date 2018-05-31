@@ -9,11 +9,12 @@ description: Obtenga información sobre cómo los administradores de suscripcion
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335897"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Acceso al portal y gestión de administradores para las suscripciones adquiridas a través de Licencias por volumen (VL)
 
@@ -36,7 +37,7 @@ Cuando la organización esté preparada para incorporarse al Portal de administr
 
      a. En el correo electrónico, los contactos principales o los encargados de los avisos encontrarán un vínculo único y los tres últimos dígitos de su número de cliente público (PCN).  (Si los contactos principales o los encargados de los avisos reciben más de un correo electrónico, significa que tienen más de un PCN. Tendrán que completar el proceso mediante el vínculo único del PCN al que se haga referencia en cada correo electrónico).
 
-     b. Para obtener el PCN completo, el contacto principal deberá iniciar sesión en el VLSC. [Instrucciones para buscar el PCN](/find-pcn/) 
+     b. Para obtener el PCN completo, el contacto principal deberá iniciar sesión en el VLSC. [Instrucciones para buscar el PCN](find-pcn.md) 
 
      c. Tras obtener el PCN, tendrá que seleccionar su vínculo único. Seguidamente, se le pedirá que inicie sesión. Podrá iniciar sesión con una cuenta profesional o educativa, si la organización se encuentra en AAD, o una cuenta Microsoft (MSA), si la organización no está en AAD. 
 
@@ -46,6 +47,6 @@ Cuando la organización esté preparada para incorporarse al Portal de administr
 
 3.  Acceso al nuevo portal de administración de suscripciones. Cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores recién agregados en los que se les invitará a acceder al nuevo portal y comenzar a administrar suscripciones.  
 
-Si necesita que le agreguen al nuevo Portal de administradores de suscripciones de Visual Studio y no sabe quién es su contacto principal o el encargado de los avisos, puede encontrar esta información después de iniciar sesión en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Eche un vistazo al tema [Encontrar al contacto principal](/find-primary-contact/) para conocer los pasos que se deben realizar para buscar el contacto principal o el encargado de los avisos en el VLSC.
+Si necesita que le agreguen al nuevo Portal de administradores de suscripciones de Visual Studio y no sabe quién es su contacto principal o el encargado de los avisos, puede encontrar esta información después de iniciar sesión en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Eche un vistazo al tema [Encontrar al contacto principal](find-primary-contact.md) para conocer los pasos que se deben realizar para buscar el contacto principal o el encargado de los avisos en el VLSC.
 
 Si ya lo han configurado como administrador, puede ir directamente al Portal de administración de suscripciones de Visual Studio en: [https://manage.visualstudio.com](https://manage.visualstudio.com). 

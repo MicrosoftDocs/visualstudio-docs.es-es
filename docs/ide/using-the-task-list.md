@@ -16,49 +16,40 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a82663fe397488ee78a82d4fab5d38bfec4ae37
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336076"
 ---
 # <a name="use-the-task-list"></a>Uso de la lista de tareas
 
-Use la **Lista de tareas** para hacer un seguimiento de los comentarios de código que usan tokens como `TODO` y `HACK`(o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida del código. Haga clic en el elemento de la lista para ir a su ubicación en el código fuente.
+Use la **Lista de tareas** para hacer un seguimiento de los comentarios de código que usan tokens como `TODO` y `HACK` (o tokens personalizados) y administrar los accesos directos que le llevarán directamente a una ubicación predefinida del código. Haga clic en el elemento de la lista para ir a su ubicación en el código fuente.
 
 ## <a name="the-task-list-window"></a>La ventana Lista de tareas
 
 Cuando la ventana **Lista de tareas** está abierta, aparece en la parte inferior de la ventana de la aplicación.
 
-### <a name="open-the-task-list"></a>Abrir la Lista de tareas
+Para abrir**Lista de tareas**, seleccione **Vista** > **Lista de tareas** o presione **Ctrl**+**\\**,**T** en el teclado.
 
-- En el menú **Ver**, elija **Lista de tareas** (teclado: **CTRL**+**\\**,**T**).
+![Ventana Lista de tareas](../ide/media/vs2015_task_list.png)
 
-    ![Ventana Lista de tareas](../ide/media/vs2015_task_list.png "vs2015_task_list")
+Para cambiar el criterio de ordenación de la lista, seleccione el encabezado de cualquier columna. Para refinar los resultados de la búsqueda, presione la tecla **Mayúsculas** y elija un segundo encabezado de columna. Como alternativa, elija **Ordenar por** en el menú contextual y elija un encabezado. Para refinar los resultados de la búsqueda, presione la tecla **Mayúsculas** y elija un segundo encabezado de columna.
 
-### <a name="change-the-sort-order-of-the-list"></a>Cambiar el criterio de ordenación de la lista
+Para mostrar u ocultar columnas, elija **Mostrar columnas** en el menú contextual. Seleccione las columnas que quiere mostrar u ocultar.
 
-- Haga clic en el encabezado de cualquier columna. Para refinar los resultados de la búsqueda, presione la tecla Mayúsculas y haga clic en otro encabezado de columna.
-
-     Como alternativa, en el menú contextual, elija **Ordenar por**y elija un encabezado. Para refinar los resultados de la búsqueda, presione la tecla **Mayúsculas** y elija un segundo encabezado de columna.
-
-### <a name="show-or-hide-columns"></a>Mostrar u ocultar columnas
-
-- En el menú contextual, elija **Mostrar columnas**. Elija las columnas que desee mostrar u ocultar.
-
-### <a name="change-the-order-of-the-columns"></a>Cambiar el orden de las columnas
-
-- Arrastre cualquier encabezado de columna hasta la ubicación que desee.
+Para cambiar el orden de las columnas, arrastre cualquier encabezado de columna a la ubicación que quiere.
 
 ## <a name="user-tasks"></a>Tareas de usuario
 
-La característica de tareas de usuario se retiró en Visual Studio 2015 y versiones posteriores. Cuando se abre una solución que tiene datos de tareas de usuario de Visual Studio 2013 y versiones anteriores, dichos datos no se verán afectados en el archivo *.suo*, pero las tareas de usuario no se mostrarán en la lista de tareas.
+La característica de tareas de usuario se retiró en Visual Studio 2015. Cuando se abre una solución que tiene datos de tareas de usuario de Visual Studio 2013 y versiones anteriores, dichos datos no se verán afectados en el archivo *.suo*, pero las tareas de usuario no se mostrarán en la lista de tareas.
 
-Si desea seguir teniendo acceso y actualizar los datos de tareas de usuario, debe abrir el proyecto en Visual Studio 2013 y copiar el contenido de las tareas de usuario en la herramienta de administración de proyecto preferido (por ejemplo, Team Foundation Server).
+Si quiere seguir teniendo acceso los datos de tareas de usuario y actualizarlos, abra el proyecto en Visual Studio 2013 y copie el contenido de las tareas de usuario en la herramienta de administración de proyecto que prefiera (por ejemplo, Team Foundation Server).
 
 ## <a name="tokens-and-comments"></a>Tokens y comentarios
 
-Un comentario en el código precedido de un marcador de comentario y un token predefinido aparecerán en la ventana **Lista de tareas** . Por ejemplo, el siguiente comentario de C# tiene tres partes distintas:
+También aparece un comentario en el código precedido de un marcador de comentario y un token predefinido en la ventana **Lista de tareas**. Por ejemplo, el siguiente comentario de C# tiene tres partes distintas:
 
 - El marcador de comentario (`//`)
 
@@ -72,39 +63,35 @@ Un comentario en el código precedido de un marcador de comentario y un token pr
 
 Dado que `TODO` es un token predefinido, este comentario aparece como una tarea `TODO` en la lista.
 
-###  <a name="customTokens"></a> Tokens personalizados
+### <a name="custom-tokens"></a>Tokens personalizados
 
-De forma predeterminada, Visual Studio incluye los tokens siguientes: `HACK`, `TODO`, `UNDONE` y `NOTE`. Estos no distinguen mayúsculas de minúsculas.
+De manera predeterminada, Visual Studio incluye los tokens siguientes: `HACK`, `TODO`, `UNDONE` y `NOTE`. No distinguen mayúsculas de minúsculas.
 
-También puede crear tokens propios personalizados.
-
-#### <a name="create-a-custom-token"></a>Crear un token personalizado
+También puede crear tokens propios personalizados. Para crear un token personalizado:
 
 1. En el menú **Herramientas** , elija **Opciones**.
 
 2. Abra la carpeta **Entorno** y, a continuación, elija **Lista de tareas**.
 
-     Se muestra la [página Opciones de la lista de tareas](../ide/reference/task-list-environment-options-dialog-box.md).
+   Se muestra la [página Opciones de la lista de tareas](../ide/reference/task-list-environment-options-dialog-box.md).
 
-     ![Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_options.png "vs2015_task_list_options")
+   ![Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. En la categoría **Tokens** , en el cuadro de texto **Nombre** , escriba el nombre del token; por ejemplo, "BUG".
+3. En el cuadro de texto **Nombre** de la categoría **Tokens**, escriba el nombre del token; por ejemplo, **BUG**.
 
 4. En la lista desplegable **Prioridad** , elija una prioridad predeterminada para el nuevo token. Elija el botón de **Agregar** .
 
-###  <a name="cppComments"></a> Comentarios TODO en C++
+### <a name="c-todo-comments"></a>Comentarios TODO en C++
 
-De forma predeterminada, los comentarios TODO en C++ no se muestran en la ventana **Lista de tareas** . Esto se puede cambiar:
+De manera predeterminada, los comentarios TODO en C++ se muestran en la ventana **Lista de tareas**.
 
-#### <a name="turn-off-c-todo-comments"></a>Desactivar los comentarios TODO en C++
-
-En el menú **Herramientas**, elija **Opciones** > **Editor de texto** > **C/C++** > **Vista** > **Enumerar tareas de comentario** y establezca el valor en false.
+Para desactivar los comentarios TODO en C++, en el menú **Herramientas**, elija **Opciones** > **Editor de texto** > **C/C++** > **Vista** > **Enumerar tareas de comentario** y establezca el valor en **false**.
 
 ## <a name="shortcuts"></a>Accesos directos
 
-Un *acceso directo* es un marcador en el código al que se le realiza el seguimiento en la **Lista de tareas**; su icono es diferente al de los marcadores normales. Haga doble clic en el acceso directo en la **Lista de tareas** para ir a la ubicación correspondiente en el código.
+Un *acceso directo* es un marcador en el código cuyo seguimiento se hace en **Lista de tareas**. Tiene un icono diferente que los marcadores normales. Haga doble clic en el acceso directo en la **Lista de tareas** para ir a la ubicación correspondiente en el código.
 
-![Icono de acceso directo a la Lista de tareas de Visual Studio](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")
+![Icono de acceso directo de Visual Studio](../ide/media/vs2015_task_list_bookmark.png)
 
 ### <a name="create-a-shortcut"></a>Crear un acceso directo
 
