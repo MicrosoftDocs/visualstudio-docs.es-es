@@ -15,20 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cf039f3d5330b2f4869ae323ac358a1220c2fbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d91b7d3927b9723c943676cf3ce15c4bc808b906
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692124"
 ---
-# <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Convertir los tipos de sistema de proyectos de SharePoint en otros tipos de proyecto de Visual Studio
+# <a name="converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Conversión entre tipos de sistema de proyecto de SharePoint y otros tipos de proyectos de Visual Studio
   En algunos casos podría tener un objeto en el sistema de proyectos de SharePoint y desea utilizar las características de un objeto correspondiente en el modelo de objetos de automatización de Visual Studio o el modelo de objetos de integración, o viceversa. En estos casos, puede usar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método del servicio de proyecto de SharePoint para convertir el objeto en un modelo de objetos diferentes.  
   
  Por ejemplo, podría tener un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objeto, pero desea utilizar métodos que solo están disponibles en un <xref:EnvDTE.Project> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objeto. En este caso, puede usar el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método para convertir el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> a una <xref:EnvDTE.Project> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>.  
   
  Para obtener más información sobre el modelo de objetos de automatización de Visual Studio y el modelo de objetos de integración de Visual Studio, vea [información general de la programación de modelo de herramientas de extensiones de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md).  
   
-## <a name="types-of-conversions"></a>Conversiones de tipos de  
+## <a name="types-of-conversions"></a>Conversiones de tipos de
  En la tabla siguiente se enumera los tipos que este método puede convertir entre el sistema de proyectos de SharePoint y los modelos de objetos de Visual Studio.  
   
 |Tipo de sistema de proyecto de SharePoint|Tipos correspondientes en los modelos de objetos de integración y automatización|  
@@ -48,9 +49,8 @@ ms.lasthandoff: 04/16/2018
   
 -   Código que registra el `projectService_ProjectAdded` método para controlar la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> eventos de un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objeto. Para obtener un ejemplo, vea [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Usar el servicio de proyecto de SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Cómo: recuperar el servicio de proyecto de SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)   
  [Información general del modelo de programación de extensiones de SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
-  
   

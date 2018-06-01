@@ -1,5 +1,5 @@
 ---
-title: Asistente para publicación (desarrollo de Office en Visual Studio) | Documentos de Microsoft
+title: Asistente para publicación (desarrollo de Office en Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2481557d1d75d64b5eb3f52f2755953ca344d323
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692725"
 ---
-# <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (Desarrollo de Office en Visual Studio)
+# <a name="publish-wizard-office-development-in-visual-studio"></a>Asistente para publicación (desarrollo de Office en Visual Studio)
   Use la **Asistente para publicación** para copiar archivos de la solución en una ubicación especificada, crear los archivos de manifiesto y crear un programa de instalación.  
   
  Para tener acceso a este asistente, en la **compilar** menú, elija **publicar** *nombresolución*. También puede tener acceso a la **Asistente para publicación de** de **el Explorador de soluciones**. Abra el menú contextual del nodo de proyecto y, a continuación, elija **publicar**.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/16/2018
   
  Escriba la ubicación como una ruta de acceso de disco, el recurso compartido de archivos, el sitio FTP o la dirección URL del sitio web, o haga clic en el **examinar** botón para buscar la ubicación. La ruta de acceso puede estar en estos formatos:  
   
--   Una ruta de acceso absoluta o relativa en formato Windows estándar, como C:\Deploy\MyApplication o \MyApplication.  
+-   Una ruta de acceso relativa o absoluta en el estándar de Windows de formato, como *C:\Deploy\MyApplication* o *\MyApplication*.  
   
--   Una ruta de acceso de convención de nomenclatura Universal (UNC), como \\\ServerName\MyApplication\\.  
+-   Una ruta de acceso de convención de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.  
   
 -   Una dirección URL de un sitio web del sitio, como http://www.microsoft.com/MyApplication.  
   
@@ -70,6 +71,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vea también  
  [Implementar una solución de Office mediante ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
  [Panel publicar, Diseñador de proyectos &#40;desarrollo de Office en Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
- [Implementación de una solución de Office](../vsto/deploying-an-office-solution.md)  
+ [Implementar una solución de Office](../vsto/deploying-an-office-solution.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Guardar datos en la base de datos
+title: Guardar los datos de nuevo en la base de datos
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691139"
 ---
-# <a name="save-data-back-to-the-database"></a>Guardar datos en la base de datos
+# <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 El conjunto de datos es una copia en memoria de datos. Si modifica datos, es una buena práctica para guardar los cambios en la base de datos. Para ello en uno de tres maneras:
 
 -   Llamando a uno de los métodos de actualización de un TableAdapter
@@ -221,7 +222,7 @@ Después de modificar un conjunto de datos, se pueden transmitir los cambios a u
 
  Para ilustrar cómo se realizan las actualizaciones, supongamos que la aplicación utiliza un conjunto de datos que contiene una tabla de datos único. La aplicación obtiene dos filas de la base de datos. Después de recuperarlas, la tabla de datos en memoria sería como la siguiente:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ Después de modificar un conjunto de datos, se pueden transmitir los cambios a u
 
  Su aplicación cambia el estado de Nancy Buchanan a "Preferred". Como resultado de este cambio, el valor de la propiedad <xref:System.Data.DataRow.RowState%2A> de esa fila cambia de <xref:System.Data.DataRowState.Unchanged> a <xref:System.Data.DataRowState.Modified>. El valor de la propiedad <xref:System.Data.DataRow.RowState%2A> de la primera fila se mantiene como <xref:System.Data.DataRowState.Unchanged>. Ahora, la tabla de datos tiene este aspecto:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred

@@ -1,5 +1,5 @@
 ---
-title: Compatibilidad del subprocesamiento en Office | Documentos de Microsoft
+title: Compatibilidad del subprocesamiento en Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 473287ed42fb2e4978a0f92717a01fdf31e28ad4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 966f012b2ff4860205186410951b759c2e214668
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693089"
 ---
 # <a name="threading-support-in-office"></a>Compatibilidad del subprocesamiento en Office
-  Este tema proporciona información sobre cómo se admite el subprocesamiento en el modelo de objetos de Microsoft Office. El modelo de objetos de Office no es seguro para subprocesos, pero es posible trabajar con varios subprocesos en una solución de Office. Las aplicaciones de Office son servidores de modelo de objetos componentes (COM). COM permite a los clientes llamar a servidores COM en subprocesos arbitrarios. Para los servidores COM que no son seguros para subprocesos, COM proporciona un mecanismo para serializar llamadas simultáneas para que sólo un subproceso lógico que se ejecuta en el servidor en cualquier momento. Este mecanismo se conoce como el modelo de contenedor uniproceso (STA). Porque las llamadas se serializan, los llamadores pueden quedar bloqueados durante períodos de tiempo mientras el servidor está ocupado o controlando otras llamadas en un subproceso en segundo plano.  
+  Este artículo proporciona información sobre cómo se admite el subprocesamiento en el modelo de objetos de Microsoft Office. El modelo de objetos de Office no es seguro para subprocesos, pero es posible trabajar con varios subprocesos en una solución de Office. Las aplicaciones de Office son servidores de modelo de objetos componentes (COM). COM permite a los clientes llamar a servidores COM en subprocesos arbitrarios. Para los servidores COM que no son seguros para subprocesos, COM proporciona un mecanismo para serializar llamadas simultáneas para que sólo un subproceso lógico que se ejecuta en el servidor en cualquier momento. Este mecanismo se conoce como el modelo de contenedor uniproceso (STA). Porque las llamadas se serializan, los llamadores pueden quedar bloqueados durante períodos de tiempo mientras el servidor está ocupado o controlando otras llamadas en un subproceso en segundo plano.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -42,11 +43,11 @@ ms.lasthandoff: 04/16/2018
   
 -   el cálculo de referencias  
   
- Para obtener información general sobre multithreading, vea [Managed Threading](/dotnet/standard/threading/).  
+ Para obtener información general sobre multithreading, vea [subprocesamiento administrado](/dotnet/standard/threading/).  
   
  Office se ejecuta en el STA principal. Comprender las implicaciones de este permite entender cómo utilizar varios subprocesos con Office.  
   
-## <a name="basic-multithreading-scenario"></a>Escenario de Multithreading básico  
+## <a name="basic-multithreading-scenario"></a>Escenario de multithreading básico  
  Código en soluciones de Office siempre se ejecuta en el subproceso de interfaz de usuario principal. Puede suavizar el rendimiento de la aplicación mediante la ejecución de una tarea independiente en un subproceso en segundo plano. El objetivo es completar dos tareas aparentemente al mismo tiempo en lugar de una tarea seguida por el otro, lo que dará lugar a una ejecución más uniforme (es decir, la razón principal para utilizar varios subprocesos). Por ejemplo, es posible que tenga el código de evento en el subproceso principal de la interfaz de usuario de Excel y en un subproceso en segundo plano puede ejecutar una tarea que recopila datos de un servidor y actualiza las celdas de la interfaz de usuario de Excel con los datos del servidor.  
   
 ## <a name="background-threads-that-call-into-the-office-object-model"></a>Subprocesos en segundo plano que llaman al modelo de objetos de Office  
@@ -62,13 +63,13 @@ ms.lasthandoff: 04/16/2018
   
  Sin embargo, en el caso de soluciones creadas con las herramientas de desarrollo de Office en Visual Studio, la interoperabilidad COM convierte todas las llamadas rechazadas a un <xref:System.Runtime.InteropServices.COMException> ("el filtro de mensajes indicó que la aplicación está ocupada"). Siempre que se realice un modelo de objetos llamar en un subproceso en segundo plano, debe estar preparado para controlar esta excepción. Normalmente, esto implica volver a intentarlo durante un período de tiempo y, a continuación, mostrar un cuadro de diálogo. Sin embargo, también puede crear el subproceso en segundo plano como STA y, a continuación, registrar un filtro de mensajes para ese subproceso controlar este caso.  
   
-## <a name="starting-the-thread-correctly"></a>Iniciar correctamente el subproceso  
+## <a name="start-the-thread-correctly"></a>El subproceso se inicia correctamente  
  Cuando se crea un nuevo subproceso STA, establezca el estado del apartamento en STA antes de iniciar el subproceso. En el ejemplo de código siguiente se muestra cómo utilizar este recurso.  
   
  [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
  [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- Para obtener más información, consulte [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
+ Para obtener más información, consulte [prácticas recomendadas del subprocesamiento administrado](/dotnet/standard/threading/managed-threading-best-practices).  
   
 ## <a name="modeless-forms"></a>Formularios no modales  
  Un formulario no modal permite a cierto tipo de interacción con la aplicación mientras se muestra el formulario. El usuario interactúa con el formulario y el formulario interactúa con la aplicación sin cerrar. El modelo de objetos de Office es compatible con formularios no modales administrados; Sin embargo, no debe utilizar en un subproceso en segundo plano.  
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vea también  
  [Subprocesamiento administrado](/dotnet/standard/threading/)  
  [Subprocesamiento (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [subprocesamiento (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
- [Uso de subprocesos y subprocesamiento](/dotnet/standard/threading/using-threads-and-threading)   
- [Diseño y creación de soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Utilizar subprocesos y subprocesamiento](/dotnet/standard/threading/using-threads-and-threading)   
+ [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

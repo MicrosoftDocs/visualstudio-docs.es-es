@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeea4b015cf728b2b6b40375ce87bcd3c1dd2b89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693645"
 ---
-# <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo Esquemas XML
+# <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo de esquemas XML
 
 El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas de lenguaje (XSD) XML definición de esquema para asociar a un documento XML. Podrá seleccionar un esquema de la caché de esquema o especificar un esquema que no está ubicado en la caché. Los esquemas seleccionados se consideran parte de un conjunto de esquemas. IntelliSense y la validación de documentos XML usan el conjunto de esquemas.
 
@@ -52,5 +53,5 @@ Quita el esquema seleccionado actualmente del conjunto de esquemas. Esto supone 
 ## <a name="see-also"></a>Vea también
 
 - [Componentes del Editor XML](../xml-tools/xml-editor-components.md)
-- [Cómo: Seleccionar los esquemas XML que se van a usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Cómo: seleccionar los esquemas XML para usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Caché de esquema](../xml-tools/schema-cache.md)

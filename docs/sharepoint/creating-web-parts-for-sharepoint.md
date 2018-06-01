@@ -28,23 +28,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691537"
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Crear elementos web para SharePoint
   Usando elementos web, puede modificar el contenido, el aspecto y el comportamiento de las páginas de un sitio de SharePoint a través de un explorador. Los elementos web son controles de servidor que se ejecutan dentro de una página de elementos web: son los bloques de creación de las páginas que aparecen en un sitio de SharePoint. Vea [bloques de creación: elementos Web](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Puede crear y depurar elementos web en un sitio de SharePoint mediante el uso de plantillas de Visual Studio.  
   
-## <a name="creating-a-web-part-in-visual-studio"></a>Crear un elemento web en Visual Studio  
+## <a name="create-a-web-part-in-visual-studio"></a>Crear un elemento web en Visual Studio
  Crear un elemento web agregando un **elemento Web** a un proyecto de SharePoint. Puede usar un **elemento Web** elemento en una solución en espacio aislado o una solución de granja de servidores.  
   
  Si desea diseñar visualmente un elemento web utilizando un diseñador, cree un **elemento Web Visual** proyecto o agregue **elemento Web Visual** a un proyecto de SharePoint. Puede usar un **elemento Web Visual** elemento en una solución de granja de servidores solo.  
   
-### <a name="web-part-item"></a>Elemento de elemento web  
+### <a name="web-part-item"></a>Elemento Web
  A **elemento Web** proporciona archivos que se pueden utilizar para diseñar un elemento web para un sitio de SharePoint. Cuando se agrega un **elemento Web** elemento, Visual Studio crea una carpeta en el proyecto y, a continuación, agrega varios archivos a la carpeta. En la tabla siguiente se describe cada archivo.  
   
 |Archivo|Descripción|  
@@ -55,10 +56,10 @@ ms.lasthandoff: 04/16/2018
   
  Para obtener más información, consulte [Cómo: crear un elemento Web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).  
   
-### <a name="visual-web-part-item"></a>Elemento de elemento web visual  
+### <a name="visual-web-part-item"></a>Elemento web Visual
  Un elemento web visual es un elemento web que se crea utilizando el diseñador de Visual Web Developer en Visual Studio. Un elemento web visual funciona igual que cualquier otro elemento web. Para agregar controles, como botones y cuadros de texto, a elemento web, agregue código a un archivo XML. Sin embargo, agregar controles a un elemento web visual arrastrando o copiando en el elemento web de Visual Studio **cuadro de herramientas**. El diseñador entonces genera el código necesario en el archivo XML. Vea [Cómo: crear un elemento Web de SharePoint utilizando un diseñador](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).  
   
-## <a name="sharepoint-controls"></a>Controles de SharePoint  
+## <a name="sharepoint-controls"></a>Controles de SharePoint
  Visual Studio proporciona algunos controles para crear páginas de SharePoint, como páginas de aplicación. Estos controles aparecen en la **cuadro de herramientas** en **controles de SharePoint**. La funcionalidad de estos controles se deriva de la [Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) espacio de nombres, que contiene controles de servidor ASP.NET que se utilizan en las páginas de sitio y lista de SharePoint.  
   
 |Nombre del control|Descripción|  
@@ -73,14 +74,14 @@ ms.lasthandoff: 04/16/2018
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Proporciona propiedades y métodos para registrar recursos, como scripts, en una página para que se puedan solicitar cuando se representa la página.|  
 |[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Aplica un tema a la página .aspx.|  
   
-## <a name="debugging-a-web-part"></a>Depurar un elemento web  
+## <a name="debug-a-web-part"></a>Depurar un elemento web
  Puede depurar un proyecto de SharePoint que contiene un elemento web igual que otros proyectos de Visual Studio. Al iniciar el depurador de Visual Studio, Visual Studio abre el sitio de SharePoint.  
   
  Para iniciar la depuración del código, agregue el elemento web a una página de elementos web de SharePoint.  
   
  Para obtener más información sobre cómo se depuran proyectos de SharePoint, vea [solución de problemas de soluciones de SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).  
   
-## <a name="visual-web-part-limitations"></a>Limitaciones de los elementos web visuales  
+## <a name="visual-web-part-limitations"></a>Limitaciones de los elementos web visuales
  A partir de Visual Studio, puede agregar elementos web visuales a las soluciones en espacio aislado de SharePoint y a las soluciones de granja. Sin embargo, los elementos web visuales tienen las siguientes limitaciones:  
   
 -   Los elementos web visuales no admiten parámetros reemplazables. Para obtener más información, consulte [parámetros reemplazables](../sharepoint/replaceable-parameters.md).  
@@ -103,14 +104,14 @@ ms.lasthandoff: 04/16/2018
   
  Para obtener más información acerca de las soluciones en espacio aislado, consulte [diferencias entre en un espacio aislado y soluciones de granja](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
-## <a name="creating-older-style-sharepoint-based-web-parts"></a>Crear elementos web basados en el estilo anterior de SharePoint  
+## <a name="create-older-style-sharepoint-based-web-parts"></a>Crear elementos web basado en SharePoint de estilo anterior
  Puede usar las plantillas de Visual Studio para crear elementos web de [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] personalizados para SharePoint. Los elementos web de [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] se compilan sobre la infraestructura de los elementos web de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] y son el tipo recomendado para los nuevos proyectos.  
   
  En muy pocos casos podría tener que crear un elemento web utilizando el elemento web del estilo anterior de SharePoint. Puede utilizar Visual Studio para crear estos tipos de elementos web, pero Visual Studio no proporciona plantillas diseñadas específicamente para ayudarle a crearlos.  
   
  Para obtener más información acerca de si desea crear un elemento web de SharePoint del estilo anterior, vea [infraestructura de elementos Web de Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=169290). Para obtener más información sobre cómo crear un elemento web utilizando el estilo anterior elemento web basado en SharePoint, vea [tutorial crear un elemento Web de SharePoint básica](http://go.microsoft.com/fwlink/?LinkId=169288).  
   
-## <a name="related-topics"></a>Temas relacionados  
+## <a name="related-topics"></a>Temas relacionados
   
 |Título|Descripción|  
 |-----------|-----------------|  
@@ -120,5 +121,4 @@ ms.lasthandoff: 04/16/2018
 |[Tutorial: Crear un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Describe cómo diseñar un elemento web para SharePoint.|  
 |[Tutorial: Crear un elemento web para SharePoint mediante un diseñador](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Describe cómo se diseña un elemento web de SharePoint arrastrando controles a una superficie de diseño visual.|  
 |[Tutorial: Crear un elemento web de Silverlight que muestre OData para SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Describe cómo diseñar un elemento web para SharePoint que hospeda una aplicación de Silverlight y muestra datos de listas de SharePoint.|  
-  
   

@@ -1,5 +1,5 @@
 ---
-title: Publicar (página), proyecto de diseñador (desarrollo de Office en Visual Studio) | Documentos de Microsoft
+title: Panel publicar, Diseñador de proyectos (desarrollo de Office en Visual Studio)
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee835542d88fa316eb3aec859e5aaf61d376f624
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692849"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Publicar (página), Diseñador de proyectos (Desarrollo de Office en Visual Studio)
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Panel publicar, Diseñador de proyectos (desarrollo de Office en Visual Studio)
   La página **Publicar** del **Diseñador de proyectos** se usa para configurar las propiedades de la implementación.  
   
  Para acceder a esta página, seleccione el proyecto en el **Explorador de soluciones**y luego, en el menú **Proyecto** , elija *Propiedades de* **nombreDelProyecto**. Si no se muestra la página **Publicar** , elija la pestaña **Publicar** .  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
   
  Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativa (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://*nombreDeServidor/nombreDeCarpeta*).  
   
- De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o el directorio publish\ si lo hace no tiene IIS instalado.  
+ De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o la *publicar\\*  directorio si no tiene IIS instalado.  
   
  **Dirección URL de la carpeta de instalación**  
  Opcional.  
@@ -99,7 +100,7 @@ ms.lasthandoff: 04/16/2018
  **Idioma de publicación**  
  Esta opción establece el idioma de los términos de licencia del software de Microsoft e incluye los paquetes de idioma en la lista de requisitos previos. No afecta al idioma de la personalización. Los idiomas instalados de Visual Studio determinan el idioma del programa de instalación.  
   
- Para obtener más información sobre cómo cambiar el **Idioma de publicación**, consulte [How to: Change the Publish Language for a ClickOnce Application](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
+ Para obtener más información sobre cómo cambiar la **idioma de publicación**, consulte [Cómo: cambiar el idioma de publicación para una aplicación ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
  **Versión de publicación**  
  Establece el número de versión de la personalización. Cuando se cambia el número de versión, la aplicación se publica como una actualización. Durante el proceso de compilación se crea una nueva carpeta para cada versión, lo que evita que se sobrescriba la versión previamente publicada. Cada parte de la versión de publicación (**Principal**, **Secundaria**, **Compilación**, **Revisión**) puede contener hasta cinco dígitos.  

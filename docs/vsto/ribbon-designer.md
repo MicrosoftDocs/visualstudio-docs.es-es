@@ -1,5 +1,5 @@
 ---
-title: El Diseñador de la cinta de opciones | Documentos de Microsoft
+title: Diseñador de la cinta de opciones
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -29,11 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c1ab841be09122a3a9e1680bf2ae3ae1c6df9aac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8cb8df33c89ce044572508918ba48edae2a6d75e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693349"
 ---
 # <a name="ribbon-designer"></a>Diseñador de la cinta de opciones
   El Diseñador de la cinta de opciones es un lienzo de diseño visual. Use el Diseñador de la cinta de opciones para agregar pestañas personalizadas, grupos y controles a la cinta de opciones de una aplicación de Microsoft Office.  
@@ -51,10 +52,10 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Hay algunas tareas que no se puede realizar mediante el Diseñador de la cinta de opciones. Para obtener más información sobre estas tareas y cómo se puede realizar, vea [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [Cómo: usar el Diseñador de la cinta de opciones para personalizar la cinta de opciones en Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [How do i Use el Diseñador de la cinta de opciones para personalizar la cinta de opciones en Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
-## <a name="adding-a-ribbon-visual-designer-item-to-a-project"></a>Agregar un elemento cinta (diseñador Visual) a un proyecto  
- Para utilizar el Diseñador de la cinta de opciones, agregue un nuevo **cinta (diseñador Visual)** elemento al proyecto. Para obtener más información, consulte [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+## <a name="add-a-ribbon-visual-designer-item-to-a-project"></a>Agregar un elemento cinta (diseñador Visual) a un proyecto  
+ Para utilizar el Diseñador de la cinta de opciones, agregue un nuevo **cinta (diseñador Visual)** elemento al proyecto. Para obtener más información, consulte [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
  Cuando se agrega un nuevo **cinta (diseñador Visual)** elemento, Visual Studio agrega automáticamente los siguientes archivos al proyecto:  
   
@@ -113,7 +114,7 @@ ms.lasthandoff: 04/16/2018
   
  Después de agregar una pestaña, puede agregar grupos para que contenga controles.  
   
-#### <a name="removing-custom-tabs-from-the-ribbon"></a>Quitar pestañas personalizadas de la cinta de opciones  
+#### <a name="remove-custom-tabs-from-the-ribbon"></a>Quitar pestañas personalizadas de la cinta de opciones  
  Hay tres maneras de quitar una pestaña personalizada de la cinta de opciones:  
   
 -   Haga clic en el diseñador y, a continuación, haga clic en **Quitar ficha de la cinta de opciones**.  
@@ -122,10 +123,10 @@ ms.lasthandoff: 04/16/2018
   
 -   Abra la **Editor de la colección de ficha**, seleccione la ficha y, a continuación, haga clic en **quitar**.  
   
-#### <a name="changing-the-position-of-a-tab-on-the-ribbon"></a>Cambiar la posición de una pestaña en la cinta de opciones  
+#### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Cambiar la posición de una pestaña en la cinta de opciones  
  Puede cambiar el orden de las fichas personalizadas en una cinta de opciones. También puede colocar pestañas personalizadas antes o después de una pestaña integrada en la cinta de opciones. Para obtener más información, consulte [Cómo: cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).  
   
-#### <a name="customizing-built-in-tabs-on-the-ribbon"></a>Personalizar las fichas integradas en la cinta de opciones  
+#### <a name="customize-built-in-tabs-on-the-ribbon"></a>Personalizar las fichas integradas de la cinta de opciones  
  Una pestaña integrada es una pestaña que ya está en la cinta de opciones de una aplicación de Microsoft Office. Por ejemplo, el **datos** ficha es una pestaña integrada en Excel.  
   
  Puede agregar grupos y controles a una pestaña integrada. De forma predeterminada, aparece un grupo personalizado como último grupo en una pestaña integrada, aunque puede moverlo antes o después de cualquier grupo integrado en la pestaña.  
@@ -156,7 +157,7 @@ ms.lasthandoff: 04/16/2018
 |**SplitButton**|Un botón con un menú asociado. Un botón de división puede contener cualquiera de los siguientes controles:<br /><br /> -Botón<br />: Casilla de verificación<br />-Galería<br />-Menú<br />: Botón de expansión<br />: Botón de alternancia<br />-Separador<br /><br /> Al igual que el menú, el botón de expansión tiene su propia superficie de diseño. Sin embargo, a diferencia de un menú, puede actualizar solo los elementos de un botón de división antes de carga la cinta de opciones en la aplicación de Office. Para obtener información sobre cómo actualizar los elementos de un botón de expansión, consulte [información general sobre el modelo de objetos de la cinta de opciones](../vsto/ribbon-object-model-overview.md).|  
 |**ToggleButton**|Un botón que aparece o no presionado.|  
   
-##  <a name="HandleEventsSetProperties"></a> Control de eventos y establecer propiedades  
+##  <a name="HandleEventsSetProperties"></a> Controlar los eventos y propiedades de configuración  
  El Diseñador de la cinta de opciones le permite establecer propiedades de control en tiempo de diseño mediante la **propiedades** ventana. Además, la cinta de opciones expone un modelo de objetos fuertemente tipado que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución.  
   
  Hacer doble clic en cualquier control en el diseñador para abrir un controlador de eventos para el evento predeterminado del control. Puede crear controladores de eventos para todos los demás eventos de control mediante la **propiedades** ventana.  
@@ -168,7 +169,7 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="CustomizingMicrosoftOfficeButton"></a> Personalizar la vista Backstage  
  Puede utilizar el Diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en el **archivo** ficha. Este menú se denomina vista Backstage.  
   
- No se puede colocar controles antes o después de los controles integrados mediante el Diseñador de la cinta de opciones. Un control integrado es un control que ya aparece en la vista Backstage. Si desea colocar controles antes o después de los controles integrados, debe usar XML de cinta de opciones. Para obtener más información acerca de **cinta (XML)**, consulte [XML de cinta de opciones](../vsto/ribbon-xml.md). Para obtener más información acerca de cómo personalizar la vista Backstage, consulte [Introducción a Office 2010 Backstage View for Developers](http://go.microsoft.com/fwlink/?LinkId=182189) y [personalizar Office 2010 Backstage View for Developers](http://go.microsoft.com/fwlink/?LinkId=182188).  
+ No se puede colocar controles antes o después de los controles integrados mediante el Diseñador de la cinta de opciones. Un control integrado es un control que ya aparece en la vista Backstage. Si desea colocar controles antes o después de los controles integrados, debe usar XML de cinta de opciones. Para obtener más información acerca de **cinta (XML)**, consulte [XML de cinta de opciones](../vsto/ribbon-xml.md). Para obtener más información acerca de cómo personalizar la vista Backstage, consulte [Introducción a la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182189) y [personalizar la vista Backstage de Office 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
  [!INCLUDE[appliesto_ribbon_2010](../vsto/includes/appliesto-ribbon-2010-md.md)]  
   
@@ -181,34 +182,34 @@ ms.lasthandoff: 04/16/2018
   
 |Acción|Método abreviado de teclado|  
 |------------|-----------------------|  
-|Mover un control antes de que el control anterior en la lista.|CTRL+FLECHA ARRIBA<br /><br /> CTRL+FLECHA IZQUIERDA|  
-|Mover un control después del control siguiente en la lista.|CTRL+FLECHA ABAJO<br /><br /> CTRL+FLECHA DERECHA|  
-|Mover la selección de un control a otro en el mismo grupo. En un panel desplegable, desplazarse entre el control primario y los controles en el panel de la lista desplegable.|ARRIBA<br /><br /> ABAJO|  
-|Iterar hacia delante a través de todos los controles.|TAB|  
-|Recorrer en iteración todos los controles hacia atrás.|MAYÚS+TAB|  
-|Elimine el control seleccionado o un conjunto de controles.|SUPRIMIR|  
-|Copie los controles seleccionados.|CTRL+C|  
-|Cortar los controles seleccionados.|CTRL+X|  
-|Pegar controles desde el Portapapeles.|CTRL+V|  
-|Seleccione el **cuadro de herramientas**.|CTRL+ALT+X|  
-|Seleccione el componente primario.|ESC|  
+|Mover un control antes de que el control anterior en la lista.|**CTRL**+**seguridad**<br /><br /> **CTRL**+**izquierda**|  
+|Mover un control después del control siguiente en la lista.|**CTRL**+**hacia abajo**<br /><br /> **CTRL**+**derecha**|  
+|Mover la selección de un control a otro en el mismo grupo. En un panel desplegable, desplazarse entre el control primario y los controles en el panel de la lista desplegable.|**Arriba**<br /><br /> **Hacia abajo**|  
+|Iterar hacia delante a través de todos los controles.|**Tabulación**|  
+|Recorrer en iteración todos los controles hacia atrás.|**Mayús**+**Tabulador**|  
+|Elimine el control seleccionado o un conjunto de controles.|**Eliminar**|  
+|Copie los controles seleccionados.|**CTRL**+**C**|  
+|Cortar los controles seleccionados.|**CTRL**+**X**|  
+|Pegar controles desde el Portapapeles.|**CTRL**+**V**|  
+|Seleccione el **cuadro de herramientas**.|**CTRL**+**Alt**+**X**|  
+|Seleccione el componente primario.|**Esc**|  
   
  Métodos abreviados de teclado que se aplican sólo en el menú de Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, y <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> se muestran en la tabla siguiente.  
   
 |Acción|Método abreviado de teclado|  
 |------------|-----------------------|  
-|Seleccione el control primario si el panel desplegable está abierto y no hay un control seleccionado en el panel de lista desplegable.|IZQUIERDA|  
-|Cierre el panel de lista desplegable si el panel desplegable está abierto y se selecciona el control primario.|IZQUIERDA|  
-|Abra el panel de lista desplegable.|DERECHA|  
-|Si se abre el panel de lista desplegable, seleccione el primer control en el panel de lista desplegable.|DERECHA|  
-|Cerrar un panel de lista desplegable.|ESC|  
+|Seleccione el control primario si el panel desplegable está abierto y no hay un control seleccionado en el panel de lista desplegable.|**Izquierda**|  
+|Cierre el panel de lista desplegable si el panel desplegable está abierto y se selecciona el control primario.|**Izquierda**|  
+|Abra el panel de lista desplegable.|**Derecha**|  
+|Si se abre el panel de lista desplegable, seleccione el primer control en el panel de lista desplegable.|**Derecha**|  
+|Cerrar un panel de lista desplegable.|**Esc**|  
   
 ## <a name="see-also"></a>Vea también  
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
  [XML de la cinta de opciones](../vsto/ribbon-xml.md)   
  [Tutorial: Crear una pestaña personalizada usando el Diseñador de la cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Cómo: exportar una cinta de opciones desde el Diseñador de la cinta de opciones a XML de la cinta de opciones](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Cómo: exportar una cinta de opciones desde el Diseñador de la cinta de opciones a XML de cinta de opciones](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
  [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Obtener acceso a la cinta en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)  
+ [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)  
   
   

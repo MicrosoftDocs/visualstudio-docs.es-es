@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 807fa532961edb4f2723858a47dcf1fe87134338
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691609"
 ---
 # <a name="create-sharepoint-solutions"></a>Crear soluciones de SharePoint
   Puede crear aplicaciones de SharePoint en Visual Studio como una alternativa a crearlas en SharePoint Designer. Visual Studio promueve el desarrollo rápido de SharePoint al ofrecer características como herramientas de depuración avanzadas, IntelliSense, finalización de instrucciones y plantillas de proyecto. Visual Studio también aprovecha las herramientas y los lenguajes avanzados basados en .NET Framework. Puede desarrollar proyectos de SharePoint mediante Visual Basic o Visual C# y puede desarrollar proyectos de aplicaciones para SharePoint mediante JavaScript.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 04/16/2018
 |![Centro para desarrolladores de MSDN](../sharepoint/media/vs-icon-msdndevcenter.gif "Centro para desarrolladores de MSDN")|**Centros de desarrolladores de MSDN**<br /><br /> -   [Centro de desarrollo de Visual Studio](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [Centro de desarrollo de SharePoint](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [Centro de desarrollo de SharePoint Server](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [Centro de desarrollo de SharePoint Designer](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [Centro de desarrollo de ASP.NET](http://msdn.microsoft.com/aa336522.aspx)|  
 |![Proporcionar comentarios](../sharepoint/media/vs-icon-feedback.gif "proporcionar comentarios")|**Proporcionar comentarios**<br /><br /> Proporcione comentarios sobre Visual Studio:<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> Proporcione comentarios sobre la documentación de Visual Studio:<br /><br /> -   **Vista ligera.** Si se encuentra al principio de cualquier tema, puede elegir el vínculo **Valorar este tema** para ir al final de ese tema, donde podrá especificar **Sí** o **No** como respuesta a **¿Le ha resultado útil?** A continuación, puede activar una o más de las casillas que aparecen si ha elegido **No**, proporcionar más información en el cuadro de texto o ambas acciones. Cuando termine, seleccione el botón **Enviar** .<br />-   **Vista sin scripts.** En la parte superior del tema, elija el vínculo **Comentarios** para proporcionar comentarios en el foro de comentarios sobre la biblioteca MSDN, TechNet y Expression.<br />-   **Vista clásica.** En la parte superior del tema, elija el vínculo **Haga clic para evaluar y enviar comentarios** para proporcionar comentarios sobre el tema al equipo de documentación.|  
   
-  
+ 

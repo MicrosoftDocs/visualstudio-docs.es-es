@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c36b1e079027bd0513a7396e703db610dd737639
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14abf52e65a796325d4af8bd95f5434c105c3fa3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693804"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Tutorial: Generador de perfiles XSLT
 
@@ -88,7 +89,7 @@ Los procedimientos descritos en el tutorial siguiente requieren Visual Studio y 
 
 5.  También puede ordenar los datos haciendo clic en los nombres de las columnas.
 
-### <a name="select-calltree-view"></a>Seleccione la vista Árbol de llamadas
+### <a name="select-call-tree-view"></a>Seleccione la vista árbol de llamadas
 
 1.  Seleccione **vista árbol de llamadas** en el **vista actual** lista desplegable. Esta vista es una vista de árbol de la ejecución del programa.
 
@@ -110,4 +111,4 @@ Los procedimientos descritos en el tutorial siguiente requieren Visual Studio y 
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Usar la herramienta Jerarquía XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Tutorial: Usar la jerarquía XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

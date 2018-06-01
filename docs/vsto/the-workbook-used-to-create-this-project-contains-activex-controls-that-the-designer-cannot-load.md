@@ -1,5 +1,5 @@
 ---
-title: El libro usado para crear este proyecto contiene controles ActiveX que no se puede cargar el diseñador | Documentos de Microsoft
+title: El libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,22 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d31674f54ce454db50a63572c24f92031e7d886
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d47ee32f23ca0eb856b2a8f618d60fae552a027
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693076"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>El libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar
   Este error aparece cuando se agrega un control a un documento de Word o a una hoja de cálculo de Excel, se guarda el documento o libro mediante programación y, a continuación, se crea una nueva solución en el nivel del documento basada en el documento o libro.  
   
  La información que describe el tipo administrado del control no se guarda con el documento ni con el libro. Al crear una nueva solución basada en ese documento o libro, Visual Studio no tiene bastante información para cargar el control en el diseñador del elemento host.  
   
-### <a name="to-correct-this-error"></a>Para corregir este error  
+## <a name="to-correct-this-error"></a>Para corregir este error  
   
 1.  Abra el documento o el libro.  
   
-2.  Quite los controles que se agregaron en tiempo de ejecución. Puede hacerlo seleccionándolos en el documento o en el libro y presionando la tecla SUPR.  
+2.  Quitar los controles que se agregaron en tiempo de ejecución. Puede hacerlo seleccionándolos en el documento o libro y presionando el **eliminar** clave.  
   
 3.  Cree una solución en el nivel del documento basada en el documento o en el libro.  
   

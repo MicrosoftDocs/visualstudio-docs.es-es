@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23492d45a0cd88566ab36dbdb803f68dd46037
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693947"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
 
-El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el Editor XML para permitirle trabajar con los esquemas del lenguaje de definición de esquema XML (XSD). Cuando se abre un archivo de esquema XML, el **del conjunto de esquemas** nodo aparece en el Explorador de esquemas XML. También aparecerán en el Explorador de esquemas XML todos los esquemas incluidos, importados o redefinidos para el archivo de destino, así como los archivos a los que se hace referencia mediante una instrucción `include` o `import`.
+El **Explorador de esquemas XML** está integrado con Microsoft Visual Studio y el Editor XML para permitirle trabajar con esquemas (XSD). Cuando se abre un archivo de esquema XML, el **del conjunto de esquemas** nodo aparece en el **Explorador de esquemas XML**. Todos los esquemas incluidos, importados o redefinidos para el archivo de destino, así como los archivos que se hace referencia mediante un `include` o `import` instrucción, también aparecen en la **Explorador de esquemas XML**.
 
- El Explorador de esquema XML permite hacer lo siguiente:
+ El **Explorador de esquemas XML** le permite hacer lo siguiente:
 
 -   Obtener información general rápida del conjunto de esquemas.
 
@@ -28,26 +29,26 @@ El Explorador de esquemas XML está integrado en Microsoft Visual Studio y en el
 
 -   Realizar búsquedas específicas del esquema y de palabras clave. Para obtener más información, consulte [buscar el conjunto de esquemas](../xml-tools/searching-the-schema-set.md).
 
--   Agregar los resultados de la búsqueda a la vista Gráfico o Modelo de contenido
+-   Agregar los resultados de búsqueda a la vista gráfico o modelo de contenido
 
--   Ordenar el árbol por documento, tipo o nombre. Para obtener más información, consulte [ordenar, filtrar y agrupar](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
+-   Ordenar el árbol por documento, tipo o nombre. Para obtener más información, consulte [ordenación, filtrado y agrupación](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).
 
 -   Abrir el Editor XML y saltar a las ubicaciones de código del archivo XSD. Para obtener más información, consulte [integración con el Editor de XML](../xml-tools/integration-with-xml-editor.md).
 
 -   Generar XML de ejemplo para elementos globales.
 
-El Explorador de esquema XML proporciona una vista jerárquica del conjunto de esquemas mediante una vista de árbol. El Explorador de esquema XML también proporciona búsqueda, filtrado, navegación y ordenación. Para tener acceso al Explorador de esquemas XML, realice una de las operaciones siguientes:
+El **Explorador de esquemas XML** proporciona una vista jerárquica del esquema que se establecen a través de una vista de árbol. El **Explorador de esquemas XML** también proporciona búsqueda, filtrado, navegación y ordenación. Para tener acceso a la **Explorador de esquemas XML**, realice una de las siguientes acciones:
 
 -   Si se encuentra en la [vista inicio](../xml-tools/start-view.md), haga clic en el **Explorador de esquemas XML** vínculo.
 
--   Si se encuentra en la [vista gráfico](../xml-tools/graph-view.md) o [vista modelo de contenido](../xml-tools/content-model-view.md) y dispone de nodos en el área de trabajo, use el menú contextual para seleccionar el Explorador de esquemas XML.
+-   Si se encuentra en la [vista gráfico](../xml-tools/graph-view.md) o [vista modelo de contenido](../xml-tools/content-model-view.md) y dispone de nodos en el área de trabajo, use el menú contextual para seleccionar la **Explorador de esquemas XML**.
 
--   También puede seleccionar la Explorerfrom del esquema XML del **vista** menú.
+-   También puede seleccionar la **Explorador de esquemas XML** desde el **vista** menú.
 
--   Puede tener acceso a la Explorerfrom de esquema de un archivo .vb que tenga un literal de XML de Visual Basic asociado con un archivo .xsd de XML. Para ver el esquema establecido en el Explorador de esquemas XML, haga clic en un nodo XML en un literal XML o una importación de espacio de nombres XML y seleccione el **mostrar en Explorador de esquemas** comando. Para obtener más información, consulte [integración de literales de XML con el Explorador de esquemas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+-   Puede tener acceso a la **Explorador de esquemas XML** desde una *.vb* archivo que tiene un literal XML de Visual Basic asociado con un *.xsd* archivo. Para ver el esquema establecido el **Explorador de esquemas XML**, haga clic en un nodo XML en un literal XML o una importación de espacio de nombres XML y seleccione el **mostrar en Explorador de esquemas** comando. Para obtener más información, consulte [literales integración de XML con el Explorador de esquemas XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Vista de árbol
- El Explorador de esquema XML muestra la información de conjunto de esquemas precompilada en una estructura de árbol. La estructura de árbol está organizada de la forma siguiente:
+ El **Explorador de esquemas XML** información del conjunto de esquemas de muestra compilado previamente en una estructura de árbol. La estructura de árbol está organizada de la forma siguiente:
 
 -   En la parte superior está el nodo del conjunto de esquemas.
 
@@ -72,7 +73,7 @@ A continuación se muestra un ejemplo de estructura de árbol:
 
 -   Al activar un nodo de espacio de nombres o de conjunto de esquemas no se realiza ninguna acción.
 
-## <a name="draging-and-dropping-nodes"></a>Arrastrar y colocar nodos
+## <a name="drag-and-drop-nodes"></a>Arrastrar y colocar nodos
  Puede arrastrar y colocar nodos globales, de archivo y de espacio de nombres en una vista del Diseñador XSD. Si la vista actual es el [vista inicio](../xml-tools/start-view.md), arrastrar un nodo en la vista se abrirá la [vista gráfico](../xml-tools/graph-view.md). Si la vista actual es el [vista modelo de contenido](../xml-tools/content-model-view.md) o vista de gráfico, la vista no cambiará al colocar un nodo sobre ella.
 
  Al colocar archivos en la vista, se agregarán todos los nodos globales en el archivo para el [área de trabajo de diseñador XSD](../xml-tools/xml-schema-designer-workspace.md). Al colocar los espacios de nombres en la vista, se agregarán al área de trabajo todos los nodos globales del espacio de nombres. El área de trabajo la comparten todas las vistas.
@@ -81,4 +82,4 @@ A continuación se muestra un ejemplo de estructura de árbol:
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Agregar nodos al área de trabajo desde el Explorador de esquemas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Cómo: agregar nodos al área de trabajo desde el Explorador de esquemas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

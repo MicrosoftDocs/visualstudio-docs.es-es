@@ -1,5 +1,5 @@
 ---
-title: Tutoriales de implementación de seguridad e | Documentos de Microsoft
+title: Tutoriales de seguridad e implementación
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a0d68bceffaf26297ca8a1709978cf3447520c3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 724050648aa7190844bad1e751d75fa22ccdebc8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693148"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Tutoriales de seguridad e implementación
   Los temas siguientes muestran cómo puede establecer la directiva de seguridad para permitir para ejecutar la solución y cómo puede implementar la solución de Office.  
   
 ## <a name="security-topics"></a>Temas de seguridad  
- [Cómo: Firmar soluciones de Office](../vsto/how-to-sign-office-solutions.md)  
+ [Cómo: firmar soluciones de Office](../vsto/how-to-sign-office-solutions.md)  
  Proporciona información sobre cómo conceder confianza a la solución utilizando un certificado.  
   
- [Cómo: Configurar la seguridad de la lista de inclusión](../vsto/how-to-configure-inclusion-list-security.md)  
+ [Cómo: configurar la seguridad de la lista de inclusión](../vsto/how-to-configure-inclusion-list-security.md)  
  Explica cómo configurar el [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] confianza símbolo del sistema para controlar si los usuarios finales tienen la opción de instalar soluciones de Office.  
   
 ## <a name="deployment-topics"></a>Temas de implementación  
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/16/2018
  [Cómo: publicar una solución de Office de nivel de documento en un servidor de SharePoint mediante ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)  
  Describe los pasos para implementar en un servidor de SharePoint.  
   
- [Cómo: instalar una solución de Office ClickOnce](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)  
+ [Cómo: instalar una solución de ClickOnce Office](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)  
  Proporciona los pasos necesarios para instalar soluciones de Office si se ejecuta el programa de instalación que se genera durante el proceso de publicación; abrir el archivo de manifiesto de implementación; o bien, abra un documento o libro personalizado.  
   
  [Cómo: instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)  
@@ -66,13 +67,13 @@ ms.lasthandoff: 04/16/2018
  [Datos en los tutoriales de soluciones de Office](../vsto/data-in-office-solutions-walkthroughs.md)  
  Enumera las guías paso a paso que muestran cómo trabajar con datos en sus soluciones.  
   
- [Introducción a &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Introducción &#40;desarrollo de Office en Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Proporciona vínculos a información sobre el programa de instalación, plantillas de proyecto, ensamblados de interoperabilidad primarios de Office y novedades en el desarrollo de Office.  
   
- [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)  
+ [Tareas comunes de programación en Office](../vsto/common-tasks-in-office-programming.md)  
  Enumera las preguntas más frecuentes sobre la programación con las soluciones de Office en Visual Studio y proporciona vínculos a temas que pueden ayudar a resolver problemas comunes.  
   
- [Diseño y creación de soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
  Proporciona vínculos a información acerca de cómo crear soluciones de Word y Excel y el papel de los ensamblados de la solución.  
   
 ## <a name="see-also"></a>Vea también  

@@ -18,24 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a9e2a631ae80e878ee5293ec3790f8ac93912e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06a5aa5d7f97f56bfbb21941ab996628b689c86a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691809"
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Crear definiciones de sitio para SharePoint
   El proyecto de definición de sitio de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] le permite crear un *definición del sitio*, que sirve como base para un nuevo sitio de SharePoint. Estas definiciones no sólo determinan la apariencia y el comportamiento del sitio de SharePoint, pero también su contenido de forma predeterminada y funcionalidad. En la definición puede colocar listas preconfiguradas, tipos de contenido, receptores de eventos, imágenes y otros elementos. SharePoint incluye algunas definiciones de sitio, como blogs, por ejemplo. Cuando se crea un sitio basado en la definición de sitio BLOG, el sitio contiene las listas, elementos Web y otros elementos que requiere un sitio de blog.  
   
  Para obtener más información acerca de las definiciones de sitio, consulte [plantillas de sitio y las definiciones de](http://go.microsoft.com/fwlink/?LinkId=179134).  
   
-## <a name="site-definition-projects"></a>Proyectos de definición de sitio  
+## <a name="site-definition-projects"></a>Proyectos de definición de sitio
  En los proyectos de definición de sitio [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proporcionan solo los archivos básicos que necesita un sitio de SharePoint; no proporcionan ninguna funcionalidad predeterminada. Debe agregar archivos y el contenido para proporcionar la funcionalidad que desee. Puede crear el sitio manualmente, mediante la creación y agregar los archivos que necesita.  
   
-## <a name="feature-stapling"></a>Asociación de características  
+## <a name="feature-stapling"></a>Grapado de características
  Una ventaja de crear definiciones de sitio en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] es que utilizan automáticamente *característica grapado*. Asociación de característica adjunta una característica a una definición de sitio en lugar de incrustar su funcionalidad en la propia definición de sitio. Esto le permite agregar la característica a cualquier sitio creado mediante el uso de la definición de sitio sin modificar la definición de sitio original. Para obtener más información, consulte [característica grapado](http://go.microsoft.com/fwlink/?LinkID=119283).  
   
-## <a name="site-definition-project-components"></a>Componentes del proyecto de definición de sitio  
+## <a name="site-definition-project-components"></a>Componentes del proyecto de definición de sitio
  Cuando se crea una solución de definición de sitio, los siguientes archivos de forma predeterminada se agregan a su **SiteDefinition** nodo.  
   
 |Nombre de archivo|Descripción|  
@@ -44,9 +45,9 @@ ms.lasthandoff: 04/16/2018
 |onet.Xml|Especifica la configuración del nuevo sitio, los componentes de la plantilla de definición de sitio y el comportamiento predeterminado. Esta configuración puede incluir atributos como los tipos de contenido que están habilitados, las vistas de lista predeterminadas, archivos de plantilla de documento y elementos que se incluyen con el sitio Web. De forma predeterminada, la `Modules` sección enumeran los archivos que se va a agregar al sitio de SharePoint y cómo están configurados.|  
 |webtemp_*SiteDefinitionName*.xml|Especifica las configuraciones de definición de sitio que aparece en el **selección de plantilla** sección de la **nuevo sitio de SharePoint** página.|  
   
- De forma predeterminada, todas las definiciones de sitio se almacenan en la *unidad:*carpeta \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates. Cada definición de sitio tiene su propia subcarpeta.  
+ De forma predeterminada, todas las definiciones de sitio se almacenan en la *unidad:* carpeta \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates. Cada definición de sitio tiene su propia subcarpeta.  
   
-## <a name="related-topics"></a>Temas relacionados  
+## <a name="related-topics"></a>Temas relacionados
   
 |Título|Descripción|  
 |-----------|-----------------|  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |[Programar páginas Web ASP.NET](http://go.microsoft.com/fwlink/?LinkId=178728)|Proporciona información sobre cómo crear controladores de eventos de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] páginas y cómo trabajar con scripts de cliente.|  
 |[Programación en Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=178729)|Describe cómo utilizar el modelo de objeto administrado que se proporciona en [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)].|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
   
-  
+ 

@@ -20,20 +20,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94f93d58933ad0aba6cde985dc260fe3341aa5d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691968"
 ---
-# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint
+# <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Crear plantillas de elementos y las plantillas de proyecto para los elementos de proyecto de SharePoint
   Cuando se define un tipo de elemento de proyecto de SharePoint personalizado, puede asociar con una plantilla de elementos o una plantilla de proyecto para que otros desarrolladores podrán usar el elemento de proyecto en Visual Studio. También puede crear a un Asistente para la plantilla.  
   
  Por ejemplo, Visual Studio no incluye una plantilla de proyecto o elemento para agregar un campo a un sitio de SharePoint. Puede definir un tipo de elemento de proyecto de SharePoint que representa un campo y, a continuación, crear una plantilla de elementos que otros desarrolladores pueden usar para agregar el elemento de campo a un proyecto de SharePoint. O bien, puede crear una plantilla de proyecto para que los desarrolladores pueden crear un nuevo proyecto de SharePoint que contiene el elemento de campo. En ambos casos, también puede proporcionar a un asistente que aparece cuando los desarrolladores utilizan la plantilla. Este asistente puede recopilar información de los desarrolladores a configurar el nuevo elemento o un proyecto.  
   
  Plantillas de elementos y las plantillas de proyecto son archivos .zip que contienen archivos que se utilizan por Visual Studio para crear un proyecto o elemento de proyecto. Para obtener más información sobre los fundamentos de plantillas de proyecto y plantillas de elementos, vea [crear plantillas de proyecto y elemento](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a> Crear plantillas de elementos  
+## <a name="create-item-templates"></a>Crear plantillas de elemento
  Cuando se crea una plantilla de elementos de un elemento de proyecto de SharePoint, hay algunos archivos que siempre se necesitan y archivos opcionales que podrían usarse para determinados tipos de elementos de proyecto. Para ver un tutorial que muestra cómo definir un tipo de elemento de proyecto de SharePoint y crear una plantilla de elemento para él, vea [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  En la tabla siguiente se enumera los archivos necesarios para crear una plantilla de elementos de un elemento de proyecto de SharePoint.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
 |.aspx|Un archivo de página ASP.NET. Este archivo contiene marcado XML que define una página de aplicación.|  
 |archivos .cs o .vb|Estos archivos de código definen el comportamiento de las personalizaciones de SharePoint que tienen un modelo de programación que se puede acceder desde Visual C# o código de Visual Basic, como páginas de aplicación, elementos Web y los flujos de trabajo.|  
   
-## <a name="creating-project-templates"></a>Creación de plantillas de proyecto  
+## <a name="create-project-templates"></a>Crear plantillas de proyecto
  Cuando se crea una plantilla de proyecto de SharePoint, hay algunos archivos que están siempre los archivos necesarios y opcionales que podrían usarse para determinados tipos de proyectos. Normalmente, los proyectos de SharePoint incluyen al menos un elemento de proyecto de SharePoint. Sin embargo, esto no es necesario. Por ejemplo, podría definir una plantilla de proyecto de SharePoint que está pensada para usarse solo para implementar soluciones de SharePoint que se crearon en otros proyectos.  
   
  Para ver un tutorial que muestra cómo definir un tipo de elemento de proyecto de SharePoint y crear una plantilla de proyecto para él, vea [Tutorial: crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -77,12 +78,12 @@ ms.lasthandoff: 04/16/2018
 |*featureName*.feature|Este archivo define una característica de SharePoint que se usa para agrupar varios elementos de proyecto para la implementación. Cuando se utiliza el Diseñador de características para personalizar una característica en el proyecto, Visual Studio almacena datos acerca de la característica en este archivo. Si desea agrupar los elementos de proyecto en características diferentes, puede incluir varios archivos .feature.<br /><br /> Cuando se crea una plantilla de proyecto de SharePoint personalizada, se recomienda incluir sólo el contenido mínimo necesario en cada archivo .feature, y configurar características con las API en el <xref:Microsoft.VisualStudio.SharePoint.Features> espacio de nombres en una extensión que está asociada a la plantilla de proyecto. Si lo hace, la plantilla de proyecto está protegida contra cambios futuros a la estructura del archivo .feature. Para obtener un ejemplo que muestra cómo crear un archivo .feature con sólo lo mínimo necesario el contenido, consulte [Tutorial: crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Si desea modificar directamente un archivo .feature, puede comprobar el contenido usando el esquema en % Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd.|  
 |*featureName*. Template.Xml|Este archivo proporciona la base para el archivo de manifiesto de característica (Feature.xml) para cada característica que se genera a partir del proyecto. Puede agregar contenido a este archivo si desea especificar un comportamiento determinado que no está diseñado para los usuarios de su tipo de proyecto pueden cambiar. Para obtener más información, consulte [bloques de creación: características](http://go.microsoft.com/fwlink/?LinkId=169183) y [Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795) archivos.<br /><br /> Al compilar un paquete de solución del proyecto, Visual Studio combina el contenido de cada par de *NombreCaracterística*archivo .feature y *NombreCaracterística*. Template.XML en un archivo de manifiesto de la característica. Para obtener más información acerca de cómo crear paquetes de soluciones, consulte [Cómo: crear un paquete de solución de SharePoint (wsp)](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b).|  
   
-## <a name="creating-wizards-for-item-templates-and-project-templates"></a>Crear a asistentes para plantillas de proyecto y plantillas de elementos  
+## <a name="create-wizards-for-item-templates-and-project-templates"></a>Crear a asistentes para plantillas de proyecto y plantillas de elementos
  Después de definir un tipo de elemento de proyecto de SharePoint y asociarlo a una plantilla de elemento o un proyecto, también puede crear a un asistente. El asistente muestra cuando un desarrollador usa la plantilla de elemento para agregar el elemento de proyecto de SharePoint a un proyecto, o cuando un desarrollador usa la plantilla de proyecto para crear un nuevo proyecto que contiene el elemento de proyecto de SharePoint. El asistente puede usarse para recopilar información de los desarrolladores e inicializar el nuevo elemento de proyecto de SharePoint.  
   
  Para ver tutoriales que muestran cómo crear asistentes para plantillas de proyecto y plantillas de elementos, vea [Tutorial: crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) y [Tutorial: crear un sitio Elemento de proyecto de columna con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Definir tipos de elemento de proyecto personalizado de SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [Tutorial: Crear un elemento de proyecto de acción personalizado con una plantilla de elementos, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)   
@@ -90,4 +91,4 @@ ms.lasthandoff: 04/16/2018
  [Tutorial: Crear un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
  [Crear plantillas para proyectos y elementos en Visual Studio](/visualstudio/ide/creating-project-and-item-templates)  
   
-  
+ 

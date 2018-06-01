@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0aca731f3f57b7c7024135a3d06d7b17481ba924
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692075"
 ---
-# <a name="api-reference-sharepoint-tools-extensibility"></a>Referencia de la API (Extensibilidad de Herramientas de SharePoint)
+# <a name="api-reference-sharepoint-tools-extensibility"></a>Referencia de la API (extensibilidad de herramientas de SharePoint)
   Esta sección contiene la documentación de referencia de la API para extender las herramientas de SharePoint en Visual Studio.  
   
-## <a name="in-this-section"></a>En esta sección  
+## <a name="in-this-section"></a>En esta sección
  <xref:Microsoft.VisualStudio.SharePoint>  
  Contiene los tipos que se usan para extender el sistema de proyectos de SharePoint. Por ejemplo, puede extender elementos de proyecto y proyectos SharePoint integrados, o puede crear sus propios elementos de proyecto.  
   
@@ -58,12 +59,11 @@ ms.lasthandoff: 04/16/2018
  <xref:Microsoft.VisualStudio.SharePoint.Validation>  
  Contiene tipos que se usan para personalizar el comportamiento de validación de paquetes y características de un proyecto de SharePoint.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Referencia &#40;extensibilidad de herramientas de SharePoint&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
  [Información general sobre el modelo de programación de SharePoint de extensiones de herramientas](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [Extender el sistema de proyectos de SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)   
  [Extender el nodo Conexiones de SharePoint en el Explorador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Extensión de SharePoint de empaquetado e implementación](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)  
-  
   

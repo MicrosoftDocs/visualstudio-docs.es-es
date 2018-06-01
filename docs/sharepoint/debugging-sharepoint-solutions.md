@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: dfa72bab32aa6af2188f8f6c04411b768b441e92
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692218"
 ---
 # <a name="debugging-sharepoint-solutions"></a>Depurar soluciones de SharePoint
   Puede depurar las soluciones de SharePoint utilizando el depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Al iniciar la depuración, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implementa los archivos de proyecto en el servidor de SharePoint y, a continuación, abre una instancia del sitio de SharePoint en el explorador Web. En las secciones siguientes se explica cómo depurar aplicaciones de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/23/2018
   
  A continuación se puede ver el archivo web.config resultante:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
     <configuration>  
         ...  

@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4354e58e8de2d877e726b4615bac3832bfc37d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693674"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordenar, filtrar y agrupar (Explorador de esquemas XML)
 
-En este tema se describe las opciones que están disponibles a través de la **ordenación, filtrado y agrupación opciones** menú en la barra de herramientas del explorador de esquemas XML.
+En este tema se describe las opciones que están disponibles a través de la **ordenación, filtrado y agrupación opciones** menú en el **Explorador de esquemas XML** barra de herramientas.
 
-## <a name="filter-options"></a>Opciones de filtro:
+## <a name="filter-options"></a>Opciones de filtro
 
  Están disponibles las opciones de filtro siguientes: De forma predeterminada, el **mostrar espacios de nombres** y **mostrar archivos de esquema** opciones están seleccionadas.
 
@@ -32,7 +33,7 @@ En este tema se describe las opciones que están disponibles a través de la **o
 
 ## <a name="sorting-options"></a>Opciones de ordenación
 
- Están disponibles las opciones de ordenación siguientes: El valor predeterminado es **ordenar por tipo**. Las opciones de ordenación no se aplican a archivos ni espacios de nombres.
+ Están disponibles las opciones de ordenación siguientes: El valor predeterminado es **ordenar por tipo**. **Ordenar por** opciones no se aplican a archivos y espacios de nombres.
 
 -   **Ordenar por tipo**.
 

@@ -7,13 +7,14 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3155eeaafdd419687b9111ef3e353f7a517aa10e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693450"
 ---
-# <a name="walkthrough-using-xslt-hierarchy"></a>Tutorial: Usar la herramienta Jerarquía XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Usar jerarquía XSLT
 
 La herramienta Jerarquía XSLT simplifica muchas tareas de desarrollo de XML. Una hoja de estilos XSLT usa a menudo instrucciones `includes` e `imports`. La compilación se inicia desde la hoja de estilos principal, pero cuando aparece un error como resultado de compilar una hoja de estilos XSLT, dicho error puede proceder de un origen distinto de la hoja de estilos principal. Es posible que se requiera acceso a las hojas de estilos importadas o incluidas para corregir el error o editar la hoja de estilos. Es posible que la ejecución paso a paso de la hoja de estilos en el depurador le permita abrir las hojas de estilos importadas e incluidas, y si lo desea puede agregar un punto de interrupción en algún punto en una o varias de las hojas de estilos incluidas.
 
@@ -47,7 +48,7 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
     </COLLECTION>
     ```
 
-1. Agregue el archivo `xslincludefile.xsl` siguiente:
+1. Agregue el siguiente *xslincludefile.xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -70,7 +71,7 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
     </xsl:stylesheet>
     ```
 
-3.  Agregue el archivo `xslinclude.xsl` siguiente:
+3.  Agregue el siguiente *xsinclude.xsl* archivo:
 
     ```xml
     <?xml version='1.0'?>

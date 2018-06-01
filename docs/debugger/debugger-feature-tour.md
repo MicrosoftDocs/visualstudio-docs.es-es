@@ -1,6 +1,6 @@
 ---
-title: Busque primero en el depurador
-description: Eche un vistazo rápido a las distintas características del depurador de Visual Studio.
+title: Primer vistazo al depurador
+description: Echar un vistazo rápido a las distintas características del depurador de Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,15 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691097"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Busque primero en el depurador de Visual Studio
 
-En este tema se presenta las características del depurador de Visual Studio. Si desea seguir el tutorial abriendo su propia aplicación en Visual Studio, puede hacerlo o bien puede seguir junto con una aplicación de ejemplo con el [guía para principiantes](../debugger/getting-started-with-the-debugger.md).
+En este tema se presentan las características del depurador de Visual Studio. Si desea seguir el tutorial abriendo su propia aplicación en Visual Studio, puede hacerlo o bien puede seguir junto con una aplicación de ejemplo con el [guía para principiantes](../debugger/getting-started-with-the-debugger.md).
 
 Las características descritas aquí son aplicables a C#, C++, Visual Basic, JavaScript y otros lenguajes compatibles con Visual Studio (excepto donde se indicó).
 
@@ -76,7 +77,7 @@ En el depurador, mantenga el mouse sobre una línea de código hasta que el **ej
 
 ![Ejecutar, haga clic en](../debugger/media/dbg-tour-run-to-click-2.png "ejecutar, haga clic en")
 
->  [!NOTE] 
+> [!NOTE]
 > El **ejecutar, haga clic en** botón (ejecución aquí) es una novedad en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Haga clic en el **ejecutar, haga clic en** botón (ejecución aquí). El depurador avanza a la línea de código donde ha hecho clic.
@@ -104,7 +105,6 @@ Si ha configurado los puntos de interrupción, el depurador se detiene en el pri
 Presione F5 para llegar a la línea de código si seleccionas **ejecutar hasta el Cursor**.
 
 Este comando es útil cuando se edita código y desea establecer un punto de interrupción temporal rápidamente e iniciar al depurador.
-
 
 > [!NOTE]
 > Puede usar **ejecutar hasta el Cursor** en el **pila de llamadas** ventana mientras está depurando.
@@ -179,7 +179,7 @@ También puede utilizar los menús contextuales de la **pila de llamadas** venta
 ## <a name="examine-an-exception"></a>Examinar una excepción
 
 Cuando la aplicación produce una excepción, el depurador le lleva a la línea de código que produjo la excepción.
-     
+
 ![Aplicación auxiliar de excepciones](../debugger/media/dbg-tour-exception-helper.png "aplicación auxiliar de excepciones")
 
 En este ejemplo, el **aplicación auxiliar de excepciones** muestra un `System.Argument` excepción y un mensaje de error que indica que la ruta de acceso no es un formato válido. Por lo tanto, sabemos que se produjo el error en un argumento de método o función.
@@ -188,7 +188,7 @@ En este ejemplo, el `DirectoryInfo` llamada dio el error en la cadena vacía que
 
 La aplicación auxiliar de excepciones es una característica excelente que puede ayudarle a depurar los errores. También puede hacer cosas como vista de detalles del error y agregue una inspección de la aplicación auxiliar de excepciones. O bien, si es necesario, puede cambiar las condiciones para producir la excepción concreta.
 
->  [!NOTE] 
+>  [!NOTE]
 > Reemplaza el Asistente de excepciones en la aplicación auxiliar de excepciones [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda el **configuración de excepciones** nodo para ver más opciones controlar este tipo de excepción, pero no es necesario cambiar ninguna acción para este paseo le!
@@ -209,7 +209,7 @@ Para obtener más información, consulte [depurar aplicaciones ASP.NET en direct
 
 Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de depuración. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**.
 
-![Paso hacia atrás y hacia delante botones](../debugger/media/intellitrace-step-back-icons-description.png  "botones paso hacia atrás y hacia delante")  
+![Paso hacia atrás y hacia delante botones](../debugger/media/intellitrace-step-back-icons-description.png  "botones paso hacia atrás y hacia delante")
 
 Para más información, consulte la página [Visualización de instantáneas mediante step-back de IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
 

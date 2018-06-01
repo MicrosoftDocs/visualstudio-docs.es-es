@@ -20,16 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f823c8c67750dec31c6c2b534ecc7500e20defaf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c6fc0b1169ff906d7cda36eeeb5a74410cf46a9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691501"
 ---
-# <a name="creating-a-business-data-connectivity-model"></a>Crea un modelo de conectividad a datos profesionales
+# <a name="creating-a-business-data-connectivity-model"></a>Crear un modelo de conectividad a datos empresariales
   Puede crear un modelo de conectividad de datos profesionales (BDC) o personalizar un modelo BDC existente mediante Visual Studio. Cada proyecto de SharePoint puede contener sólo un modelo. Para obtener más información, consulte [integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
-## <a name="creating-a-new-model"></a>Crear un nuevo modelo  
+## <a name="create-a-new-model"></a>Crear un nuevo modelo
  Para crear un nuevo modelo, cree un **modelo de conectividad a datos empresariales** proyecto o agregar un **modelo de conectividad a datos empresariales** elemento a una **proyecto vacío de SharePoint**.  
   
 > [!NOTE]  
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Visual Studio copia el ensamblado en ambas ubicaciones en el equipo local cuando se depura el proyecto.  
   
-## <a name="adding-an-existing-model"></a>Agregar un modelo existente  
+## <a name="add-an-existing-model"></a>Agregar un modelo existente
  Puede importar un modelo que se creó mediante otras herramientas como SharePoint Designer. Puede importar un modelo existente al proyecto en las situaciones siguientes:  
   
 -   Para personalizar un modelo que se ha implementado en una granja de servidores de SharePoint.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
  Puede agregar un sistema LOB de ensamblado de .NET Framework de tipo para el modelo importado seleccionando una opción en el **LobSystem de ensamblado .NET agregar**. Esto le permite escribir código personalizado y utilizar un diseñador para definir los metadatos del modelo importado.  
   
-## <a name="related-topics"></a>Temas relacionados  
+## <a name="related-topics"></a>Temas relacionados
   
 |Título|Descripción|  
 |-----------|-----------------|  
@@ -73,4 +74,4 @@ ms.lasthandoff: 04/16/2018
 |[Cómo: Usar un archivo de recursos para especificar nombres, propiedades y permisos localizados](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Describe cómo proporcionar cadenas que están combinadas con metadatos del modelo cuando el modelo es utilizado por un elemento Web o una página Web.|  
 |[Cómo: Incluir un ensamblado personalizado en una característica de BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Muestra cómo incluir un ensamblado personalizado en la característica.|  
   
-  
+ 

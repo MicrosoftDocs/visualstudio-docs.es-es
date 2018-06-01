@@ -1,5 +1,5 @@
 ---
-title: Información general sobre el modelo de objetos de la cinta de opciones | Documentos de Microsoft
+title: Información general sobre el modelo de objetos de la cinta de opciones
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c0d6defc160d08d0c92dd21370144c1ef748e7e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2be8f0ecdb4f2d7a8ea379474c4b5ec0062d2b57
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692966"
 ---
-# <a name="ribbon-object-model-overview"></a>Información general sobre el modelo de objetos para la cinta de opciones
-  La [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expone un modelo de objetos fuertemente tipado que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución. Por ejemplo, dinámicamente puede rellenar los controles de menú, o mostrar y ocultar controles como. También puede agregar fichas, grupos y controles a una cinta de opciones, pero solo antes de que se cargue la cinta de opciones mediante la aplicación de Office. Para obtener información, consulte [configuración de propiedades que se convierten en modo de sólo lectura](#SettingReadOnlyProperties).  
+# <a name="ribbon-object-model-overview"></a>Información general sobre el modelo de objetos de la cinta de opciones
+  La [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expone un modelo de objetos fuertemente tipado que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución. Por ejemplo, dinámicamente puede rellenar los controles de menú, o mostrar y ocultar controles como. También puede agregar fichas, grupos y controles a una cinta de opciones, pero solo antes de que se cargue la cinta de opciones mediante la aplicación de Office. Para obtener información, consulte [establecer las propiedades que se vuelven de solo lectura](#SettingReadOnlyProperties).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- Este modelo de objetos de la cinta de opciones consiste principalmente en la [clase Ribbon](#RibbonClass), [los eventos de Ribbon](#RibbonEvents), y [clases de controles de cinta de opciones](#RibbonControlClasses).  
+ Este modelo de objetos de la cinta de opciones consiste principalmente en la [cinta clase](#RibbonClass), [eventos de la cinta de opciones](#RibbonEvents), y [clases de controles de cinta de opciones](#RibbonControlClasses).  
   
 ##  <a name="RibbonClass"></a> Clase Ribbon  
  Cuando se agrega un nuevo **cinta (diseñador Visual)** elemento a un proyecto, Visual Studio agrega un **cinta** clase al proyecto. El **cinta** clase hereda de la <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> clase.  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**pestaña**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
+|**Tabulación**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
  El <xref:Microsoft.Office.Tools.Ribbon> espacio de nombres utiliza el prefijo "Ribbon" para estos tipos para evitar un conflicto de nombres con los nombres de clases de control en el <xref:System.Windows.Forms> espacio de nombres.  
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="common-tasks-using-the-properties-of-ribbon-controls"></a>Tareas comunes con las propiedades de controles de cinta de opciones  
  Cada `Ribbon` control contiene propiedades que puede usar para realizar varias tareas, como asignar una etiqueta a un control, u ocultar y mostrar controles.  
   
- En algunos casos, propiedades son de sólo lectura una vez cargada la cinta de opciones o después de agregar un control a un menú dinámico. Para obtener más información, consulte [establecer las propiedades que pasan a ser de solo lectura](#SettingReadOnlyProperties).  
+ En algunos casos, propiedades son de sólo lectura después de la carga de la cinta de opciones o después de agregar un control a un menú dinámico. Para obtener más información, consulte [establecer las propiedades que se vuelven de solo lectura](#SettingReadOnlyProperties).  
   
  En la tabla siguiente se describe algunas de las tareas que puede realizar mediante `Ribbon` propiedades del control.  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 04/16/2018
 |Agregar datos definidos por el usuario a un control.|Utilice la propiedad Tag.|  
 |Obtener los elementos de un <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>, o<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> control.|Utilice la propiedad Items.|  
 |Agregar elementos a un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> control.|Utilice la propiedad Items.|  
-|Agregar controles a un <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Utilice la propiedad Items.<br /><br /> Para agregar controles a la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> después de carga la cinta de opciones en la aplicación de Office, debe establecer el <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propiedad **true** antes de que se cargue la cinta de opciones en la aplicación de Office. Para obtener información, consulte [configuración de propiedades que se convierten en modo de sólo lectura](#SettingReadOnlyProperties).|  
+|Agregar controles a un <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Utilice la propiedad Items.<br /><br /> Para agregar controles a la <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> después de carga la cinta de opciones en la aplicación de Office, debe establecer el <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propiedad **true** antes de que se cargue la cinta de opciones en la aplicación de Office. Para obtener información, consulte [establecer las propiedades que se vuelven de solo lectura](#SettingReadOnlyProperties).|  
 |Obtener el elemento seleccionado de un <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use la propiedad SelectedItem. Para una <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, use el <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> propiedad.|  
 |Obtener los grupos un <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Utilice la propiedad <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|  
 |Especifique el número de filas y columnas que aparecen en un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use la <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> y <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propiedades.|  
@@ -98,35 +99,35 @@ ms.lasthandoff: 04/16/2018
   
 -   En el constructor de la **cinta** clase.  
   
--   En el método CreateRibbonExtensibilityObject de la `ThisAddin`, `ThisWorkbook`, o `ThisDocument` clase del proyecto.  
+-   En el `CreateRibbonExtensibilityObject` método de la `ThisAddin`, `ThisWorkbook`, o `ThisDocument` clase del proyecto.  
   
  Los menús dinámicos presentan algunas excepciones. Puede crear nuevos controles, establecer sus propiedades y, a continuación, agregarlos a un menú dinámico en tiempo de ejecución, incluso después de que se carga la cinta de opciones que contiene el menú.  
   
  Propiedades de controles que se agregan a un menú dinámico se pueden establecer en cualquier momento.  
   
- Para obtener más información, consulte [propiedades que pasan a ser de solo lectura](#ReadOnlyProperties).  
+ Para obtener más información, consulte [propiedades que son de sólo lectura](#ReadOnlyProperties).  
   
-### <a name="setting-properties-in-the-constructor-of-the-ribbon"></a>Establecer las propiedades en el Constructor de la cinta de opciones  
+### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>Establecer propiedades en el constructor de la cinta de opciones  
  Puede establecer las propiedades de un `Ribbon` control en el constructor de la **cinta** clase. Este código debe aparecer después de llamar a la `InitializeComponent` método. En el ejemplo siguiente se agrega un nuevo botón a un grupo si la hora actual es 17:00 hora del Pacífico (UTC-8) o una versión posterior.  
   
  Agregue el código siguiente.  
   
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
+ [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
+ [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]  
   
  En proyectos de Visual C# que se actualizaron desde Visual Studio 2008, el constructor aparece en el archivo de código de la cinta de opciones.  
   
  En proyectos de Visual Basic o en proyectos de Visual C# que haya creado en [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], el constructor aparece en el archivo de código del Diseñador de la cinta. Este archivo se denomina *suElementoDeCinta*. Designer.cs o *suElementoDeCinta*. Designer.vb. Para ver este archivo en proyectos de Visual Basic, primero debe hacer clic el **mostrar todos los archivos** botón en el Explorador de soluciones.  
   
-### <a name="setting-properties-in-the-createribbonextensibilityobject-method"></a>Establecer las propiedades en el método CreateRibbonExtensibilityObject  
- Puede establecer las propiedades de un `Ribbon` controlar cuando se reemplaza el método CreateRibbonExtensibilityObject en el `ThisAddin`, `ThisWorkbook`, o `ThisDocument` clase del proyecto. Para obtener más información sobre el método CreateRibbonExtensibilityObject, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
+### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>Establecer propiedades en el método CreateRibbonExtensibilityObject  
+ Puede establecer las propiedades de un `Ribbon` controlar cuando se reemplaza la `CreateRibbonExtensibilityObject` método en el `ThisAddin`, `ThisWorkbook`, o `ThisDocument` clase del proyecto. Para obtener más información sobre la `CreateRibbonExtensibilityObject` método, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).  
   
- En el ejemplo siguiente establece las propiedades de la cinta de opciones en el método CreateRibbonExtensibilityObject de la `ThisWorkbook` clase de un proyecto de libro de Excel.  
+ En el ejemplo siguiente establece las propiedades de la cinta de opciones en la `CreateRibbonExtensibilityObject` método de la `ThisWorkbook` clase de un proyecto de libro de Excel.  
   
  Agregue el código siguiente.  
   
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
+ [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
+ [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]  
   
 ###  <a name="ReadOnlyProperties"></a> Propiedades que se vuelven de solo lectura  
  La siguiente tabla muestra las propiedades que solo se pueden establecer antes de que cargue la cinta de opciones.  
@@ -159,7 +160,7 @@ ms.lasthandoff: 04/16/2018
 |**Pestañas**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**Título**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
   
-### <a name="setting-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Establecer las propiedades de las cintas de opciones que aparecen en los inspectores de Outlook  
+### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Establecer las propiedades de las cintas de opciones que aparecen en los inspectores de Outlook  
  Cada vez que un usuario abre un Inspector en el que aparece la cinta de opciones, se crea una nueva instancia de la cinta de opciones. Sin embargo, puede establecer las propiedades enumeradas en la tabla anterior antes de crear la primera instancia de la cinta de opciones. Después de la primera se crea instancia, estas propiedades pasan a ser de solo lectura porque la primera instancia define el archivo XML que utiliza Outlook para cargar la cinta de opciones.  
   
  Si tiene una lógica condicional que establece cualquiera de estas propiedades en un valor diferente cuando se crean otras instancias de la cinta de opciones, este código tendrá ningún efecto.  
@@ -167,7 +168,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Asegúrese de que el **nombre** propiedad se establece para cada control que se agrega a una cinta de opciones de Outlook. Si agrega un control a una cinta de opciones de Outlook en tiempo de ejecución, debe establecer esta propiedad en el código. Si agrega un control a una cinta de opciones de Outlook en tiempo de diseño, se establece automáticamente la propiedad Name.  
   
-## <a name="ribbon-control-events"></a>Eventos de Control de la cinta de opciones  
+## <a name="ribbon-control-events"></a>Eventos de control de la cinta de opciones  
  Cada clase de control contiene uno o varios eventos. En la tabla siguiente se describe estos eventos.  
   
 |evento|Descripción|  
@@ -187,7 +188,7 @@ ms.lasthandoff: 04/16/2018
 |*e*|A <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contiene un <xref:Microsoft.Office.Core.IRibbonControl>. Utilice este control para tener acceso a cualquier propiedad que no está disponible en el modelo de objetos de la cinta de opciones proporcionado la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].|  
   
 ## <a name="see-also"></a>Vea también  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
  [Cómo: empezar a personalizar la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Diseñador de la cinta](../vsto/ribbon-designer.md)   
@@ -196,7 +197,6 @@ ms.lasthandoff: 04/16/2018
  [Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
  [Cómo: personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)   
  [Cómo: agregar controles a la vista Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Cómo: exportar una cinta de opciones desde el Diseñador de la cinta de opciones a XML de la cinta de opciones](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Cómo: Mostrar errores de complementos de la interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)  
-  
-  
+ [Cómo: exportar una cinta de opciones desde el Diseñador de la cinta de opciones a XML de cinta de opciones](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [Cómo: agregar en Mostrar errores de interfaz de usuario](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ 

@@ -1,5 +1,5 @@
 ---
-title: Pasar datos entre formularios
+title: Pasar datos de un formulario a otro
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b8a1865dc6fce56f11faa453a4786ae799af7e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691217"
 ---
-# <a name="pass-data-between-forms"></a>Pasar datos entre formularios
+# <a name="pass-data-between-forms"></a>Pasar datos de un formulario a otro
 En este tutorial se proporcionan instrucciones paso a paso para pasar datos de un formulario a otro. Con las tablas customers y orders de Northwind, un formulario permite a los usuarios seleccionar a un cliente y un segundo formulario muestra los pedidos del cliente seleccionado. Este tutorial muestra cómo crear un método en el segundo formulario que recibe los datos de la primera forma.
 
 > [!NOTE]
@@ -145,7 +146,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
 5.  Agregue una cláusula WHERE para que devuelva la consulta `Orders` tomando como base el `CustomerID`. La consulta debe ser similar a lo siguiente:
 
-    ```
+    ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
     FROM Orders
     WHERE CustomerID = @CustomerID
