@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571422"
 ---
 # <a name="office-development-samples"></a>Ejemplos de desarrollo de Office
   Visual Studio incluye aplicaciones de ejemplo que muestran cómo usar Microsoft Office Developer Tools para crear soluciones de Office. El código de estos ejemplos muestra la sintaxis, la estructura y las técnicas usadas para compilar soluciones de Office.  
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |Ejemplo de interoperabilidad de VSTO y VBA|Muestra cómo llamar a un método en una personalización de nivel de documento para Excel desde el código de Visual Basic para Aplicaciones (VBA) del libro.<br /><br /> Este ejemplo solo está disponible en línea.|  
   
 ## <a name="see-also"></a>Vea también  
- [Muestras para desarrolladores MSDN: Aprender con ejemplos de código](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Tareas comunes en la programación de Office](../vsto/common-tasks-in-office-programming.md)  
+ [Muestras para desarrolladores de MSDN: aprender con ejemplos de código](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Tareas comunes de programación en Office](../vsto/common-tasks-in-office-programming.md)  
   
   

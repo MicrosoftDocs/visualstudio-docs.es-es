@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573250"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
 El [DebuggerDisplayAttribute (clase)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controla cómo se muestra un objeto, propiedad o campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+El ", nq" sufijo indica el evaluador de expresiones para quitar las comillas al mostrar el valor final (nq no = comillas). 
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra cómo utilizar `DebuggerDisplay`, junto con `DebuggerBrowseable` y `DebuggerTypeProxy`. Cuando se ve en una ventana de variables del depurador, como la ventana **Inspección** , genera una expansión similar a la siguiente:  

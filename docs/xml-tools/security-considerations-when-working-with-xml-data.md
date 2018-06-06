@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c79330091c5ef5cbe4f89dee1422d1de267f70c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572610"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Consideraciones de seguridad al trabajar con datos XML
 
@@ -32,7 +33,7 @@ En este tema se describen los aspectos de seguridad que debe conocer al trabajar
 
 -   El Editor XML utiliza las clases <xref:System.Net> para descargar esquemas
 
-## <a name="xslt-debugger"></a>Depurador de XSLT
+## <a name="xslt-debugger"></a>depurador de XSLT
 
  El depurador de XSLT utiliza el motor de depuración administrado de Visual Studio y las clases del espacio de nombres <xref:System.Xml> y <xref:System.Xml.Xsl>.
 

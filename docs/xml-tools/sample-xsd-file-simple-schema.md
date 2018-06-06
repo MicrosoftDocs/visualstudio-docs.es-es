@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0e2115c0d7839439f74b8c99be3ce5eecdef15
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 11a74d5214e434c7d7330bc7ea4e3bcd8a3e5905
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572704"
 ---
-# <a name="sample-xsd-file-simple-schema"></a>Ejemplo de archivo XSD: esquema simple
+# <a name="sample-xsd-file-simple-schema"></a>Archivo XSD de ejemplo: esquema Simple
 
 El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del Diseñador de esquemas XSD. Este archivo es un esquema de pedido de compra simple.
 

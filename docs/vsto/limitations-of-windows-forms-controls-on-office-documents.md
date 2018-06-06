@@ -1,5 +1,5 @@
 ---
-title: Limitaciones de Windows Forms controles en documentos de Office | Documentos de Microsoft
+title: Limitaciones de los controles de formularios Windows Forms en documentos de Office
 ms.date: 02/02/2017
 ms.technology: office-development
 ms.topic: conceptual
@@ -21,13 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1136d799bb6bee56f0589c798a7c61fe0879d556
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 104b8b3449b2ffb689caf66d5c180817b633f83e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572964"
 ---
-# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitaciones de los controles de formularios Windows Forms en los documentos de Office
+# <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitaciones de los controles de formularios Windows Forms en documentos de Office
 
 Hay algunas diferencias entre los controles de formularios Windows Forms que se agregan a documentos de Microsoft Office Word u hojas de cálculo de Microsoft Office Excel y controles de formularios Windows Forms que se agregan a Windows Forms. Por ejemplo, cuando se agrega un <xref:Microsoft.Office.Tools.Word.Controls.Button> como el control a un documento, propiedades <xref:System.Windows.Forms.Control.Dock>, <xref:System.Windows.Forms.Control.Anchor>, y <xref:System.Windows.Forms.Control.TabIndex> no se comportan como cabría esperar.
 
@@ -35,7 +36,7 @@ Muchas de estas diferencias se deben a la forma que se hospedan los controles de
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
-## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Limitaciones de los métodos y propiedades de controles de Windows Forms
+## <a name="limitations-of-methods-and-properties-of-windows-forms-controls"></a>Limitaciones de los métodos y propiedades de controles de formularios Windows Forms
 
 Hay una serie de métodos y propiedades de controles de formularios Windows Forms que no funcionan del mismo modo en un documento tal y como lo harían en un formulario Windows Forms y, por lo tanto, se recomienda que no usarse. Por ejemplo, establecer propiedades como <xref:System.Windows.Forms.Control.Dock> y <xref:System.Windows.Forms.Control.Anchor> sólo afecta a la posición del control en relación con el control de ActiveX de contenedor, en lugar de con el documento. La siguiente es una lista de métodos no compatibles y las propiedades de controles de formularios Windows Forms para Word y Excel:
 
@@ -66,14 +67,14 @@ No se puede establecer también la <xref:System.Windows.Forms.Control.Left> o <x
 
 - Agregar un control de formularios Windows Forms a un documento de Word en tiempo de diseño. Puede cambiar esto modificando el control en el diseñador.
 
-## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Diferencias en los controles de Windows Forms en documentos de Office
+## <a name="differences-in-windows-forms-controls-on-office-documents"></a>Diferencias en los controles de formularios Windows Forms en documentos de Office
 
 Controles de formularios Windows Forms tienen generalmente el mismo comportamiento en un documento de Office tal y como lo hacen en un formulario Windows Forms, pero existen algunas diferencias. La tabla siguiente describen las diferencias que existen para los controles de formularios Windows Forms en documentos de Office.
 
 |Funcionalidad|Diferencia|
 |-------------------|----------------|
 |Orden de tabulación del control|No puede desplazarse controles situados en una hoja de cálculo de Excel o un documento de Word.|
-|Agrupación de control|No se puede utilizar un <xref:System.Windows.Forms.GroupBox> control para contener otros controles en un documento de Office. Cuando se agregan varios botones de radio directamente al documento, los botones de opción no son mutuamente excluyentes. Puede escribir código para hacer que los botones de opción mutuamente excluyentes; Sin embargo, el método preferido es agregar los botones de radio a un control de usuario y, a continuación, agregue el control de usuario al documento. Para obtener más información, vea el ejemplo de controles de Word o Excel de muestra de controles en [ejemplos de desarrollo de Office y tutoriales](../vsto/office-development-samples-and-walkthroughs.md).|
+|Agrupación de control|No se puede utilizar un <xref:System.Windows.Forms.GroupBox> control para contener otros controles en un documento de Office. Cuando se agregan varios botones de radio directamente al documento, los botones de opción no son mutuamente excluyentes. Puede escribir código para hacer que los botones de opción mutuamente excluyentes; Sin embargo, el método preferido es agregar los botones de radio a un control de usuario y, a continuación, agregue el control de usuario al documento. Para obtener más información, vea el ejemplo de controles de Word o Excel de muestra de controles en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).|
 |Tipo de control|Controles de formularios Windows Forms que se usan en los documentos se encapsulan en una clase proporcionada por el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que proporciona a los controles una funcionalidad adicional específica a la hoja de cálculo de Excel o un documento de Word. Por ejemplo, si tiene un **botón** de control en una hoja de cálculo de Excel, asegúrese de especificar el tipo como <xref:Microsoft.Office.Tools.Excel.Controls.Button> en lugar de <xref:System.Windows.Forms.Button> cuando haga referencia o convertir el objeto.|
 |Posición del control y el tamaño|El tamaño y la posición del control se determina mediante las propiedades que forman parte del contenedor del control ActiveX. Las propiedades del control ActiveX adquieren los mismos valores que las propiedades equivalentes de un control de formularios Windows Forms. Al establecer el `Top`, `Left`, `Height`, o `Width` propiedades de un control, se mide en puntos, en lugar de píxeles.|
 |Posición del control en documentos de Word|Si agrega controles a un diseño de flujo, tenga en cuenta que los controles fluirán con el contenido que los cambios de contenido. No se puede delimitar el control a un párrafo cuando se arrastra desde el **cuadro de herramientas** porque el control se agrega al documento de Word en línea con el texto. Si emplea otro método para agregar el control, por ejemplo, haga doble clic en el control, se inserta el control de acuerdo con la opción de Word que ha configurado para insertar imágenes.<br /><br /> No se puede establecer la `Left` o `Top` propiedad de un control que está en línea con el texto.<br /><br /> No se puede colocar controles en un encabezado o pie de página, ni dentro de un subdocumento.|
@@ -83,7 +84,7 @@ Controles de formularios Windows Forms tienen generalmente el mismo comportamien
 |Cambiar el tamaño de control|Si cambia el tamaño de un control en el documento mediante uno de los controladores de ocho tamaño, las nuevas dimensiones del control no se reflejan en el **propiedades** ventana hasta que se vuelva a seleccionar el control.|
 |Controlar el comportamiento|Controles en una hoja de cálculo de Excel pueden tener un comportamiento impredecible cuando se divide la ventana de la hoja de cálculo. Por ejemplo, el acceso a un <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> en la hoja de cálculo sólo esté disponible en una de las ventanas.|
 |Control de nomenclatura|No se puede utilizar palabras reservadas para denominar controles. Por ejemplo, si agrega un <xref:Microsoft.Office.Tools.Excel.Controls.Button> a una hoja de cálculo y cambie el nombre a **System**, se producen errores al compilar el proyecto.|
-|Agregar controles mediante programación|No utilice el constructor del control para agregar un control al documento en tiempo de ejecución. En su lugar, use los métodos auxiliares proporcionados por el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Por ejemplo, use la <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> método para agregar un botón a una hoja de cálculo. Si desea agregar un control que no es compatible con estos métodos auxiliares, puede utilizar el método AddControl. Para obtener más información, consulta [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).|
+|Agregar controles mediante programación|No utilice el constructor del control para agregar un control al documento en tiempo de ejecución. En su lugar, use los métodos auxiliares proporcionados por el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Por ejemplo, use la <xref:Microsoft.Office.Tools.Excel.ControlExtensions.AddButton%2A> método para agregar un botón a una hoja de cálculo. Si desea agregar un control que no es compatible con estos métodos auxiliares, puede utilizar el `AddControl` método. Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).|
 |Copiando los controles|Si copia un control de formularios Windows Forms y péguelo en un documento en tiempo de ejecución, un contenedor vacío control ActiveX se pega en el documento. El control de formularios Windows Forms no aparece en la nueva ubicación y código subyacente del control original no se copia en el contenedor de controles ActiveX.|
 
 ## <a name="limitations-in-document-level-projects"></a>Limitaciones en los proyectos de nivel de documento
@@ -95,7 +96,7 @@ Algunas limitaciones del uso de controles de formularios Windows Forms en docume
 Ciertos controles de formularios Windows Forms se quitan de la **cuadro de herramientas** cuando una hoja de cálculo de Excel o un documento de Word está abierto en el Diseñador de Visual Studio. Esto es debido a las limitaciones técnicas o porque la funcionalidad ya está disponible en Word o Excel. Los proyectos de Excel y Word admiten todos los controles de formularios Windows Forms y otros componentes que aparecen en la **cuadro de herramientas** cuando el documento tiene el foco, y también puede agregar controles de terceros a una hoja de cálculo o documento.
 
 > [!NOTE]
-> Todos los controles se quitan de la **cuadro de herramientas** cuando un documento está protegido. Para obtener información acerca de la protección de documentos, consulte [protección de documentos en soluciones de nivel de documento](../vsto/document-protection-in-document-level-solutions.md).
+> Todos los controles se quitan de la **cuadro de herramientas** cuando un documento está protegido. Para obtener información acerca de la protección de documentos, consulte [protección en soluciones de nivel de documento de documentos](../vsto/document-protection-in-document-level-solutions.md).
 
 > [!NOTE]
 > Controles de terceros deben tener la <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo establecido en **true** para poder usarse en una solución de Office.
@@ -185,6 +186,6 @@ Si crea un proyecto de Office de nivel de documento que usa un documento de Word
 ## <a name="see-also"></a>Vea también
 
 - [Controles en documentos de Office](../vsto/controls-on-office-documents.md)
-- [Información general sobre controles de Windows Forms en documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Controles de formularios Windows Forms en información general acerca de documentos de Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Cómo: Agregar controles de Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Cómo: agregar controles de formularios Windows Forms a documentos de Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

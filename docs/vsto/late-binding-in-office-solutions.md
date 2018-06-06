@@ -1,5 +1,5 @@
 ---
-title: El enlace en tiempo de ejecución en las soluciones de Office | Documentos de Microsoft
+title: Enlace tardío en soluciones de Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5616ce958747f90c8015df858f657299ba52852b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572555"
 ---
-# <a name="late-binding-in-office-solutions"></a>Enlace en tiempo de ejecución en las soluciones de Office
+# <a name="late-binding-in-office-solutions"></a>Enlace tardío en soluciones de Office
   Algunos tipos en los modelos de objetos de aplicaciones de Office proporcionan funcionalidad que está disponible a través de características de enlace de tiempo de ejecución. Por ejemplo, algunos métodos y propiedades pueden devolver distintos tipos de objetos según el contexto de la aplicación de Office y algunos tipos pueden exponer métodos o propiedades en diferentes contextos diferentes.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
  Proyectos de Visual Basic donde **Option Strict** está desactivado y proyectos de Visual C# que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o el [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] puede trabajar directamente con los tipos que emplean estas características de enlace.  
   
-## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Conversión implícita y explícita de los valores devueltos del objeto  
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Conversión implícita y explícita del objeto de devolver valores  
  Muchos métodos y propiedades en devuelven ensamblados de interoperabilidad primarios (PIA) de Microsoft Office <xref:System.Object> valores, porque pueden devolver distintos tipos de objetos. Por ejemplo, el <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> propiedad devuelve un <xref:System.Object> porque su valor devuelto puede ser un <xref:Microsoft.Office.Interop.Excel.Worksheet> o <xref:Microsoft.Office.Interop.Excel.Chart> objeto, dependiendo de qué es la hoja activa.  
   
  Cuando un método o una propiedad devuelve un <xref:System.Object>, debe convertir explícitamente (en Visual Basic) el objeto al tipo correcto en proyectos de Visual Basic donde **Option Strict** se encuentra en. No es necesario convertir explícitamente <xref:System.Object> devuelven valores en proyectos de Visual Basic donde **Option Strict** está desactivada.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
  [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## <a name="accessing-members-that-are-available-only-through-late-binding"></a>Obtener acceso a miembros que están disponibles solo a través de enlace más tarde  
+## <a name="access-members-that-are-available-only-through-late-binding"></a>Obtener acceso a los miembros que están disponibles solo a través de enlace más tarde  
  Algunas propiedades y métodos de los PIA de Office están disponibles solo a través de enlaces de tiempo de ejecución. En Visual Basic, proyectos where **Option Strict** está apagado o en proyectos de Visual C# que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], puede usar las características de enlace en tiempo de ejecución en estos idiomas para tener acceso a los miembros enlazados en tiempo de ejecución. En Visual Basic, proyectos where **Option Strict** está activado, debe usar la reflexión para tener acceso a estos miembros.  
   
 ### <a name="examples"></a>Ejemplos  
@@ -67,9 +68,9 @@ ms.lasthandoff: 04/16/2018
  [Escribir código en soluciones de Office](../vsto/writing-code-in-office-solutions.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Uso de tipo dinámico &#40;C&#35; Guía de programación&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
- [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)  (Option Strict (Instrucción))  
+ [Option Strict (instrucción)](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflexión (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexión (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
- [Diseño y creación de soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

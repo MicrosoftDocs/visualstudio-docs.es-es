@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 240ab1961260f94ed5f27d5cdd03c7925cf37428
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 832038449cefffd6cd10349f66be0a1d20f683d2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571938"
 ---
-# <a name="sample-xsd-files"></a>Archivos XSD de muestra
+# <a name="sample-xsd-files"></a>Archivos XSD de ejemplo
 
 Los archivos de ejemplo de esta sección se utilizan en la documentación del Diseñador de esquemas XSD.
 
