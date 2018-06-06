@@ -14,12 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 53f34fbed4a2067836c5f2c7a8d4bf8aa6c09d29
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34690931"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747045"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Crear una base de datos y agregar las tablas en Visual Studio
 Puede usar Visual Studio para crear y actualizar un archivo de base de datos local de SQL Server Express LocalDB. También puede crear una base de datos mediante la ejecución de instrucciones de Transact-SQL en el **Explorador de objetos de SQL Server** ventana de herramientas en Visual Studio. En este tema, se creará un archivo .mdf y agregar tablas y claves mediante el Diseñador de tablas.
@@ -36,7 +36,7 @@ Para completar este tutorial, debe tener opcional **almacenamiento de datos y el
 
 3.  En la lista de plantillas de elementos, desplácese hacia abajo y seleccione **base de datos basada en servicio**.
 
-     ![Cuadro de diálogo de plantillas de elemento](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+     ![Cuadro de diálogo Plantillas de elemento](../data-tools/media/raddata-vsitemtemplates.png)
 
 4.  Nombre de la base de datos **SampleDatabase**y, a continuación, seleccione la **agregar** botón.
 
@@ -95,7 +95,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
     Verá algo parecido a esto:
 
-    ![Diseñador de tablas](../data-tools/media/raddata-table-designer.png "raddata Diseñador de tablas")
+    ![Diseñador de tablas](../data-tools/media/raddata-table-designer.png)
 
 7.  En la esquina superior izquierda de la **Diseñador de tablas**, seleccione la **actualización** botón.
 
@@ -130,7 +130,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 ### <a name="to-create-a-foreign-key"></a>Para crear una clave externa
 1.  En el panel de contexto en el lado derecho de la cuadrícula, abra el menú contextual de **claves externas**y, a continuación, seleccione **agregar nueva clave externa**, como se muestra en la siguiente ilustración.
 
-     ![Agregar una clave externa en el Diseñador de tablas](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Agregar una clave externa en el diseñador de tablas](../data-tools/media/foreignkey.png)
 
 2.  En el cuadro de texto que aparece, reemplace **ToTable** con `Customers`.
 

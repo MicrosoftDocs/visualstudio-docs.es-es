@@ -15,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ee33d880a56103ea024f22038350ec36021561b
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 3b03de87c13744e3b678d4f51e3950352fa2d475
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691793"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766719"
 ---
-# <a name="featureproperties-element"></a>FeatureProperties (Elemento)
+# <a name="featureproperties-element"></a>FeatureProperties (elemento)
   Una colección de valores de propiedad que se incluye con una característica cuando se implementa en SharePoint. Una vez implementada la característica, puede tener acceso a los valores de propiedad en el código.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -33,19 +33,19 @@ ms.locfileid: "34691793"
 </FeatureProperties>  
 ```  
   
-## <a name="attributes-and-elements"></a>Atributos y elementos  
+## <a name="attributes-and-elements"></a>Atributos y elementos
  En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
   
 ### <a name="attributes"></a>Atributos  
  Ninguno.  
   
-### <a name="child-elements"></a>Elementos secundarios  
+### <a name="child-elements"></a>Elementos secundarios
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |[FeatureProperty](../sharepoint/featureproperty-element.md)|Elemento opcional.<br /><br /> Representa una propiedad personalizada, en formato de clave/valor.|  
   
-### <a name="parent-elements"></a>Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
@@ -54,7 +54,7 @@ ms.locfileid: "34691793"
 ## <a name="remarks"></a>Comentarios  
  Para obtener más información sobre propiedades de características, vea [proporcionar información de implementación en los elementos de proyecto de empaquetado e](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).  
   
-## <a name="element-information"></a>Información de elemento  
+## <a name="element-information"></a>Información de elemento
   
 |Elemento|Descripción|  
 |-------------|-----------------|  
@@ -63,7 +63,7 @@ ms.locfileid: "34691793"
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Referencia de esquema de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [Proporcionar información de empaquetado e implementación en los elementos del proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   

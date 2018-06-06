@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c1869f11d4202237d628ff3f15f73906822ec47
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e2108ce50cca32be707931f5bcf11d4501e8d3d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692527"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764925"
 ---
-# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>Crear listas, tipos de contenido y columnas de sitio para SharePoint
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Crear columnas de sitio, los tipos de contenido y listas de SharePoint
   Visual Studio proporciona plantillas de elemento de proyecto para muchos elementos diferentes, fundamentales SharePoint, incluidos *enumera* y *tipos de contenido*, ambos de los cuales pueden incorporar columnas de sitio (o  *campos*). Los nuevos diseñadores para listas y tipos de contenido que la creación de estos elementos más fácil que nunca.  
   
 ## <a name="site-columns"></a>Columnas del sitio
  Columnas de sitio son uno de los elementos más básicos que puede agregar a un proyecto de SharePoint. Una columna de sitio representa un tipo de datos, como un número de teléfono, un comentario o el nombre de la ciudad de un contacto en una lista de contactos.  
   
- La nueva plantilla de elemento de proyecto de columna de sitio facilita la creación de columnas de sitio que en la versión anterior de Visual Studio. Después de crear una nueva columna de sitio, puede modificar el XML en el archivo Elements.xml de la columna de sitio para incluir la información que desee, como su nombre para mostrar, su tipo de datos y el grupo en el que desea que aparezca en SharePoint, la columna de sitio. Para obtener más información acerca de las columnas de sitio, consulte [Introducción a las columnas](http://go.microsoft.com/fwlink/?LinkId=224996).  
+ La nueva plantilla de elemento de proyecto de columna de sitio facilita la creación de columnas de sitio que en la versión anterior de Visual Studio. Después de crear una nueva columna de sitio, puede modificar el XML en la columna de sitio *Elements.xml* archivo que incluya la información que desee, como su nombre para mostrar, su tipo de datos y el grupo en el que desea que aparezca en la columna de sitio SharePoint. Para obtener más información acerca de las columnas de sitio, consulte [Introducción a las columnas](http://go.microsoft.com/fwlink/?LinkId=224996).  
   
 ## <a name="content-types-and-lists"></a>Listas y tipos de contenido
  Listas y tipos de contenido se encuentran entre con más frecuencia los elementos utilizados en SharePoint.  

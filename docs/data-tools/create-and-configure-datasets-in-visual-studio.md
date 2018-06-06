@@ -1,5 +1,5 @@
 ---
-title: Crear y configurar los conjuntos de datos en Visual Studio
+title: Crear y configurar conjuntos de datos en Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,13 +13,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8cbe95887e9a29fa98932a18c240bc558201fc43
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b47df77b9666b46f24665e9c99cbf9a0c52593cd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746577"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Crear y configurar los conjuntos de datos en Visual Studio
+# <a name="create-and-configure-datasets-in-visual-studio"></a>Crear y configurar conjuntos de datos en Visual Studio
 
 A *conjunto de datos* es un conjunto de objetos que almacenar los datos de una base de datos en memoria y admitir el seguimiento de cambios para permitir crear, leer, actualizar y eliminar operaciones (CRUD) en los datos sin necesidad de estar siempre conectado a la base de datos. Conjuntos de datos se diseñaron para simple *formularios sobre datos* aplicaciones empresariales. Para las aplicaciones nuevas, considere el uso de Entity Framework para almacenar y los datos en memoria del modelo. Para trabajar con conjuntos de datos, debe tener conocimientos básicos sobre conceptos de base de datos.
 
@@ -31,37 +32,37 @@ Se crea un tipo <xref:System.Data.DataSet> clase en Visual Studio en tiempo de d
 
 2.  Elija el tipo de origen de datos que se va a conectar a.
 
-     ![Asistente para la configuración del origen de datos](../data-tools/media/data-source-configuration-wizard.png "Asistente para la configuración del origen de datos")
+     ![Asistente para configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png)
 
 3.  Bases de datos, elija la base de datos o bases de datos que serán el origen de datos para el conjunto de datos.
 
-     ![Elegir la conexión de origen de datos](../data-tools/media/data-source-choose-a-connection.png "elegir la conexión de origen de datos")
+     ![Elegir la conexión de origen de datos](../data-tools/media/data-source-choose-a-connection.png)
 
 4.  Elija las tablas (o columnas individuales), procedimientos almacenados, funciones y vistas de la base de datos que desee representar en el conjunto de datos.
 
-     ![Seleccione los objetos de base de datos](../data-tools/media/raddata-chose-objects.png "raddata elegía objetos")
+     ![Seleccione los objetos de base de datos](../data-tools/media/raddata-chose-objects.png)
 
 5.  Haga clic en **Finalizar**.
 
 6.  El conjunto de datos aparece como un nodo en **el Explorador de soluciones**:
 
-     ![Conjunto de datos en el Explorador de soluciones](../data-tools/media/dataset-in-solution-explorer.png "conjunto de datos en el Explorador de soluciones")
+     ![Conjunto de datos en el Explorador de soluciones](../data-tools/media/dataset-in-solution-explorer.png)
 
      Haga clic en ese nodo y el conjunto de datos aparece en la **Diseñador de DataSet**. Tenga en cuenta que cada tabla del conjunto de datos tiene un objeto TableAdapter asociado, que se representa en la parte inferior. El adaptador de la tabla se utiliza para rellenar el conjunto de datos y, opcionalmente, para enviar comandos a la base de datos.
 
-     ![Diseñador de DataSet](../data-tools/media/dataset-designer.png "Diseñador de DataSet")
+     ![Diseñador de DataSet](../data-tools/media/dataset-designer.png)
 
 7.  Las líneas de relación que conecta las tablas representan relaciones de tabla, tal como se define en la base de datos. De forma predeterminada, las restricciones de clave externa en una base de datos se representan como una relación, con la actualización y eliminación las reglas establecidas en none. Por lo general, es lo que desea. Sin embargo, puede hacer clic en las líneas para que aparezca el **relación** cuadro de diálogo, donde puede cambiar el comportamiento de las actualizaciones jerárquicas. Para obtener más información, consulte [relaciones en conjuntos de datos](../data-tools/relationships-in-datasets.md) y [actualización jerárquica](../data-tools/hierarchical-update.md).
 
-     ![Cuadro de diálogo relación de conjunto de datos](../data-tools/media/raddata-relation-dialog.png "raddata cuadro de diálogo de relación")
+     ![Cuadro de diálogo relación de conjunto de datos](../data-tools/media/raddata-relation-dialog.png)
 
 8.  Haga clic en una tabla, el adaptador de la tabla o el nombre de columna en una tabla para ver sus propiedades en el **propiedades** ventana. Puede modificar algunos de los valores aquí. Recuerde que va a modificar el conjunto de datos, no la base de datos de origen.
 
-     ![Propiedades de columna de conjunto de datos](../data-tools/media/dataset-column-properties.png "propiedades de columna de conjunto de datos")
+     ![Propiedades de columna de conjunto de datos](../data-tools/media/dataset-column-properties.png)
 
 9. Puede agregar nuevas tablas o adaptadores de tablas al conjunto de datos, o agregar nuevas consultas para los adaptadores de tabla existente o especificar nuevas relaciones entre tablas arrastrando los elementos desde la **cuadro de herramientas** ficha. Esta ficha aparece cuando la **Diseñador de DataSet** tiene el foco.
 
-     ![Cuadro de herramientas del conjunto de datos](../data-tools/media/raddata-dataset-toolbox.png "raddata conjunto de datos de cuadro de herramientas")
+     ![Cuadro de herramientas del conjunto de datos](../data-tools/media/raddata-dataset-toolbox.png)
 
 10. A continuación, probablemente desee especificar cómo rellenar el conjunto de datos con datos. Para ello, use la **Asistente para configuración de TableAdapter**. Para obtener más información, consulte [rellenar conjuntos de datos mediante el uso de los TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
@@ -75,7 +76,7 @@ Este procedimiento muestra cómo agregar una tabla de la misma base de datos que
 
 3.  Haga clic en el nodo de conjunto de datos y seleccione **Configurar origen de datos con el Asistente para**.
 
-     ![Menú contextual de origen de datos](../data-tools/media/data-source-context-menu.png "menú contextual de origen de datos")
+     ![Menú contextual de origen de datos](../data-tools/media/data-source-context-menu.png)
 
 4.  Use el Asistente para especificar qué tablas adicionales, o procedimientos almacenados u otro objeto de base de datos, para agregar al conjunto de datos.
 

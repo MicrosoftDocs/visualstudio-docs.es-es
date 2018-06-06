@@ -9,11 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d9b900e47febb9e75b825fdb662c942fce7188b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e6a12bdbb45c5cdfdf0abb8fb738ae87bf67c45c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748379"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 En un lenguaje específico de dominio (DSL) creado con el SDK de visualización y modelado de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede alterar lo que sucede cuando el usuario copia y pega elementos.
@@ -29,7 +30,7 @@ En un lenguaje específico de dominio (DSL) creado con el SDK de visualización 
 
  Esta regla se aplica repetidamente a los elementos y vínculos copiados.
 
- ![Copiar y pegar elementos](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")
+ ![Elementos copiados y pegados](../modeling/media/dslcopypastedefault.png)
 
  Los elementos y vínculos copiados se serializan y almacenan en un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que se coloca en el portapapeles.
 
@@ -217,7 +218,7 @@ Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-ad
 ##  <a name="customizeLinks"></a> Personalizar el comportamiento de la copia de vínculo
  Cuando el usuario copia un elemento, el comportamiento estándar es que los elementos incrustados también se copien. Puede modificar el comportamiento estándar de la operación de copiar. En la definición DSL, seleccione un rol en un lado de una relación y, en la ventana de propiedades establecidas la **copia propaga** valor.
 
- ![Propiedad propagates Copy del rol de dominio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
+ ![Propiedad Propagates Copy del rol de dominio](../modeling/media/dslpropagatescopy.png)
 
  Existen tres valores:
 
@@ -227,7 +228,7 @@ Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-ad
 
 -   Propagate copy to link and opposite role player (Propagar copia a vínculo y encargado de rol opuesto): el grupo copiado incluye una copia del elemento en el otro extremo del vínculo.
 
- ![Efecto de copiar con PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")
+ ![Efecto de copiar con PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
  Los cambios que haga afectarán a los elementos y a la imagen que se copie.
 
@@ -237,9 +238,9 @@ Vea [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-ad
 > [!TIP]
 >  Para obtener más información acerca de cómo personalizar el modelo mediante el uso de código de programa, consulte [navegar y actualizar un modelo de código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- ![Diagrama de secuencia para la operación de copia](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")
+ ![Diagrama de secuencia para la operación de copia](../modeling/media/dslcopyseqdiagram.png)
 
- ![Diagrama de secuencia de la operación de pegar](../modeling/media/dslpasteseqdiagram.png "dslPasteSeqDiagram")
+ ![Diagrama de secuencia de la operación de pegado](../modeling/media/dslpasteseqdiagram.png)
 
 #### <a name="to-define-your-own-elementoperations"></a>Para definir sus propias ElementOperations
 

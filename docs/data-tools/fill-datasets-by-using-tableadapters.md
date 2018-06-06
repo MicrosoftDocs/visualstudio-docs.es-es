@@ -21,11 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a3f3dd16bef85ebe8b90dd5f456f4e386113a8b6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745703"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Rellenar conjuntos de datos mediante el uso de los TableAdapters
 Un componente de TableAdapter rellena un dataset con los datos de la base de datos, en función de una o varias consultas o procedimientos almacenados que especifique. También puede realizar los TableAdapters agrega, actualizaciones y eliminaciones en la base de datos para conservar los cambios realizados en el conjunto de datos. También puede emitir comandos globales que están relacionados con una tabla específica.
@@ -49,7 +50,7 @@ Un componente de TableAdapter rellena un dataset con los datos de la base de dat
 ## <a name="tableadapter-overview"></a>Información general sobre TableAdapter
  Los TableAdapters son componentes generados por diseñador que se conectan a una base de datos, la ejecución de consultas o procedimientos almacenados y rellenar su DataTable con los datos devueltos. Los TableAdapters también enviar datos actualizados desde la aplicación a la base de datos. Puede ejecutar tantas consultas como desee en un TableAdapter, siempre y cuando devuelvan datos que se ajustan al esquema de la tabla al que está asociado el TableAdapter. El siguiente diagrama muestra cómo interactúan los objetos TableAdapter con bases de datos y otros objetos en memoria:
 
- ![Flujo de datos en una aplicación cliente](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")
+ ![Flujo de datos de una aplicación cliente](../data-tools/media/clientdatadiagram.gif)
 
  Aunque los objetos TableAdapter se diseñan con el **Diseñador de Dataset**, las clases TableAdapter no se generan como clases anidadas de <xref:System.Data.DataSet>. Se encuentran en espacios de nombres independientes que son específicas de cada conjunto de datos. Por ejemplo, si tiene un conjunto de datos denominado `NorthwindDataSet`, los TableAdapters que están asociados a <xref:System.Data.DataTable>s en el `NorthwindDataSet` estarían en el `NorthwindDataSetTableAdapters` espacio de nombres. Para tener acceso a un TableAdapter determinado mediante programación, debe declarar una nueva instancia del TableAdapter. Por ejemplo:
 
@@ -63,7 +64,7 @@ Un componente de TableAdapter rellena un dataset con los datos de la base de dat
  La funcionalidad de actualización de un objeto TableAdapter depende de la cantidad de información está disponible en la consulta principal en el Asistente de TableAdapter. Por ejemplo, los TableAdapter configurados para obtener valores de varias tablas (consultas JOIN), valores escalares, vistas o los resultados de funciones de agregado no se crean inicialmente con la capacidad de enviar actualizaciones a la base de datos subyacente. Sin embargo, puede configurar los comandos INSERT, UPDATE y DELETE manualmente en el **propiedades** ventana.
 
 ## <a name="tableadapter-queries"></a>consultas TableAdapter
- ![TableAdapter con varias consultas](../data-tools/media/tableadapter.gif "TableAdapter")
+ ![TableAdapter con múltiples consultas](../data-tools/media/tableadapter.gif)
 
  Los TableAdapter pueden contener varias consultas que rellenan las tablas de datos asociados. Puede definir tantas consultas para un TableAdapter como requiera la aplicación, con tal de que cada consulta devuelva datos que cumplan el mismo esquema que la tabla de datos asociada. Esta función permite un TableAdapter cargar resultados diferentes en función de distintos criterios.
 

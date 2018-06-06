@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f807394497bff99e12546f7a1a913adffbff41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf59736e4cdeb8ddba256b24bc7c12984d288071
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767172"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Cómo: Agregar y quitar características y elementos de un paquete con el Diseñador de paquetes
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Cómo: agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes
   Cuando se crea una solución de SharePoint, Visual Studio agrega las características de SharePoint de forma predeterminada para el paquete de la solución. Antes de la implementación final, puede agregar y quitar elementos de proyecto de SharePoint y características para modificar el paquete de SharePoint.  
   
  Como alternativa, puede utilizar el Explorador de empaquetado para agregar y quitar elementos de proyecto de SharePoint. También puede ver y cambiar la jerarquía de los elementos de proyecto de SharePoint y características que se colocan en el paquete (.wsp). Para obtener más información, consulte [Cómo: agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="adding-features-to-a-sharepoint-package"></a>Agregar características a un paquete de SharePoint  
  Puede utilizar el Diseñador de paquetes para agregar características a un paquete de SharePoint.  
   
-#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Para agregar características de SharePoint con el Diseñador de paquetes  
+#### <a name="to-add-sharepoint-features-with-the-package-designer"></a>Para agregar características de SharePoint con el Diseñador de paquetes
   
 1.  Abra la **diseñador del paquete**.  
   
@@ -54,15 +55,14 @@ ms.lasthandoff: 04/16/2018
 ## <a name="removing-features-from-a-sharepoint-package"></a>Quitar características de un paquete de SharePoint  
  Puede usar el Diseñador de paquetes para quitar características a un paquete de SharePoint.  
   
-#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Para quitar características de SharePoint con el Diseñador de paquetes  
+#### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Para quitar características de SharePoint con el Diseñador de paquetes
   
 1.  En el **elementos del paquete** lista, elija un elemento que desea quitar y, a continuación, elija la **quitar** (<) botón o elija la **quitar todo** botón (<<) para quitar todos los elementos.  
   
      Los elementos de SharePoint aparecen en la **elementos de la solución** lista.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Crear paquetes de soluciones de SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)   
  [Cómo: Personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Cómo: crear un paquete](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)  
-  
   

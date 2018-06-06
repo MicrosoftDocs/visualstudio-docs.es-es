@@ -22,13 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f59f5e1b31baf9f731f58c9f21163c2a54f2a238
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 264fb0617f22f5112b28576416ab6b5c772f9a1e
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766924"
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>Cómo: Agregar una entidad a un modelo
+# <a name="how-to-add-an-entity-to-a-model"></a>Cómo: agregar una entidad a un modelo
   Para crear una entidad, agregue un control de entidad desde Visual Studio **cuadro de herramientas** en el Diseñador de conectividad de datos profesionales (BDC).  
   
 ### <a name="to-add-an-entity-to-the-model"></a>Para agregar una entidad al modelo  
@@ -51,11 +52,11 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Cómo: agregar un método Creator](../sharepoint/how-to-add-a-creator-method.md)   
  [Cómo: agregar un método Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Cómo: agregar un método Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Cómo: Agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)  
   
-  
+ 

@@ -39,7 +39,7 @@ ms.openlocfilehash: 52297a90f562ac534d0087c273cde05f021711af
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692878"
 ---
 # <a name="program-vsto-add-ins"></a>Programar complementos VSTO

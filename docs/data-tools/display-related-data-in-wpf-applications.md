@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57a617524f4f9bc03818d30ec434b2d4604b0f3e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746551"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Mostrar datos relacionados en aplicaciones WPF
 En algunas aplicaciones, puede trabajar con datos procedentes de varias tablas o entidades que se relacionan entre sí en una relación de elementos primarios y secundarios. Por ejemplo, puede mostrar una cuadrícula que muestra los clientes de un `Customers` tabla. Cuando el usuario selecciona un cliente concreto, otra cuadrícula muestra los pedidos de ese cliente de un relacionados `Orders` tabla.
@@ -53,7 +54,7 @@ Puede crear controles enlazados a datos que muestren los datos relacionados arra
 
      La siguiente ilustración muestra la relacionados **pedidos** tabla de la **clientes** tabla en un conjunto de datos en el **orígenes de datos** ventana.
 
-     ![Ventana de orígenes de datos que muestra la relación](../data-tools/media/datasources2.gif "DataSources2")
+     ![Ventana Orígenes de datos que muestra la relación](../data-tools/media/datasources2.gif)
 
 ## <a name="see-also"></a>Vea también
 

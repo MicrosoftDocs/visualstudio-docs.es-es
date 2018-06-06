@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1c7df62a0801534f8a23f7b5cde984c75742406a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d88ba8b5648135d361a145dbc98a82dee6836e50
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745599"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 En el contexto de las herramientas de datos de .NET en Visual Studio, el término *origen de datos* hace referencia a objetos de .NET que se conectan a un almacén de datos y exponen los datos a una aplicación. NET. Los diseñadores de Visual Studio pueden consumir la salida del origen de datos para generar el código reutilizable que enlaza los datos a los formularios cuando arrastra y coloca los objetos de base de datos de la **orígenes de datos** ventana. Este tipo de origen de datos puede ser:
@@ -39,11 +40,11 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 
  Para crear y editar orígenes de datos mediante el uso de la **Asistente para configuración de orígenes de datos** en una aplicación de formularios Windows Forms o Windows Presentation Foundation. Para Entity Framework, primero cree las clases de entidad y, a continuación, iniciar el asistente seleccionando **proyecto** > **Agregar nuevo origen de datos** (que se describe con más detalle más adelante en este artículo).
 
- ![Asistente para la configuración del origen de datos](../data-tools/media/data-source-configuration-wizard.png "Asistente para la configuración del origen de datos")
+ ![Asistente para configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png)
 
  Después de crear un origen de datos, aparece en el **orígenes de datos** ventana de herramientas (Mayús + Alt + D o **vista** > **otras ventanas**  >  **Origen de datos**). Puede arrastrar un origen de datos de la **orígenes de datos** ventana hasta una superficie de diseño del formulario o control. Esto hace que se genere el código reutilizable: código que muestra los datos que se originan en el almacén de datos para el usuario. La ilustración siguiente muestra un conjunto de datos que se ha colocado en un formulario Windows Forms. Si seleccionó F5 en la aplicación, los datos de la base de datos subyacente aparecerían en los controles del formulario.
 
- ![La operación de arrastrar del origen de datos](../data-tools/media/raddata-data-source-drag-operation.png "raddata origen de datos de la operación de arrastrar")
+ ![Operación de arrastre del origen de datos](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Origen de datos para una base de datos o un archivo de base de datos
 
@@ -53,15 +54,15 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 ### <a name="entity-classes"></a>Clases de entidad
  Para crear un modelo de Entity Framework como un origen de datos, primero ejecute el **Entity Data Model Wizard** para crear las clases de entidad (**proyecto** > **Agregar nuevo elemento**  >  **ADO.NET Entity Data Model**).
 
- ![Nuevo elemento de proyecto de modelo de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "elemento de proyecto de modelo de raddata nuevo Entity Framework")
+ ![Nuevo elemento de proyecto de modelo de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
  Elija el método por el que desea generar el modelo.
 
- ![Asistente de Entity Data Model](../data-tools/media/raddata-entity-data-model-wizard.png "raddata Asistente de Entity Data Model")
+ ![Asistente para Entity Data Model](../data-tools/media/raddata-entity-data-model-wizard.png)
 
  Agregar el modelo como un origen de datos. Las clases que se generaron aparecen en la **Asistente para configuración de orígenes de datos** cuando se elige la **objetos** categoría.
 
- ![Asistente para la configuración de origen de datos con las clases de entidad](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata Asistente para la configuración de origen de datos con las clases de entidad")
+ ![Asistente para la configuración de origen de datos con las clases de entidad](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Origen de datos para un servicio
  Para crear un origen de datos de un servicio, ejecute el **Asistente para configuración de orígenes de datos** y elija la **servicio** tipo de origen de datos. Esto es simplemente un acceso directo a la **Agregar referencia de servicio** cuadro de diálogo, que también puede tener acceso haciendo clic en el proyecto en **el Explorador de soluciones** y seleccionando **Agregar referencia de servicio** .

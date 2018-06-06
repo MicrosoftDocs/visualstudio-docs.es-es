@@ -19,11 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec2ff00c4d355b2683c888fcdb6a333bf15e1b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f035fc56cd673f12ba694d6a94ec57aea1d93b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745534"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Tutorial: Guardar datos en una transacción
 Este tutorial muestra cómo guardar datos en una transacción utilizando el <xref:System.Transactions> espacio de nombres. En este tutorial creará una aplicación de formularios Windows Forms. Deberá usar al Asistente para configuración de orígenes de datos para crear un conjunto de datos de dos tablas en la base de datos de ejemplo Northwind. Agregará controles enlazados a datos a un formulario Windows Forms y modificará el código de BindingNavigator botón Guardar actualizar la base de datos dentro de un TransactionScope.
@@ -52,7 +53,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
 1. En Visual Studio, en el **archivo** menú, seleccione **New**, **proyecto...** .
 
-2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **escritorio clásico de Windows**.
+2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **Windows Desktop**.
 
 3. En el panel central, seleccione la **aplicación de Windows Forms** tipo de proyecto.
 
@@ -75,7 +76,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         -o bien-
+         O bien
 
     -   Seleccione **nueva conexión** para iniciar el **agregar o modificar conexión** diálogo cuadro y crear una conexión a la base de datos Northwind.
 

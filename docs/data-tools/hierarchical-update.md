@@ -23,11 +23,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31bee5d824b612ddaeb264fe2f944746cdda68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 442d6cd60597219c25b41f26ad8c2dc2151248ee
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747474"
 ---
 # <a name="hierarchical-update"></a>Actualización jerárquica
 *Actualización jerárquica* hace referencia al proceso de guardar los datos actualizados (de un conjunto de datos con dos o más tablas relacionadas) a una base de datos manteniendo las reglas de integridad referencial. *La integridad referencial* hace referencia a las reglas de coherencia proporcionadas por las restricciones en una base de datos que controlan el comportamiento de insertar, actualizar y eliminar registros relacionados. Por ejemplo, es integridad referencial que exige la creación de un registro de cliente antes de permitir que los pedidos se va a crearse para ese cliente.  Para obtener más información acerca de las relaciones en conjuntos de datos, vea [relaciones en conjuntos de datos](../data-tools/relationships-in-datasets.md)
@@ -39,12 +40,12 @@ ms.lasthandoff: 04/26/2018
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Habilitar la actualización jerárquica en un conjunto de datos
  De forma predeterminada, la actualización jerárquica está habilitada para todos los nuevos conjuntos de datos que se agregan o se crean en un proyecto. Activar o desactivar la actualización jerárquica estableciendo la **actualización jerárquica** propiedad de un conjunto de datos con tipo en el conjunto de datos **True** o **False**:
 
- ![Configuración de actualización jerárquica](../data-tools/media/hierarchical-update-setting.png "la configuración de actualización jerárquica")
+ ![Configuración de actualización jerárquica](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>Crear a una nueva relación entre tablas
  Para crear una nueva relación entre dos tablas, en el Diseñador de Dataset, seleccione la barra de título de cada tabla, a continuación, haga clic en y seleccione **agregar relación**.
 
- ![Actualización jerárquica Agregar menú relación](../data-tools/media/hierarchical-update-add-relation-menu.png "actualización jerárquica agregar menús de relación")
+ ![Actualización jerárquica agregar menús de relación](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
 ## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Comprender las restricciones foreign key, las actualizaciones en cascada y las eliminaciones
  Es importante entender las restricciones foreign key cómo y comportamiento en cascada en la base de datos se crean en el código de conjunto de datos generado.

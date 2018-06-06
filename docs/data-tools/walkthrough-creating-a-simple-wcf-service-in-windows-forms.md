@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b2fc6b7a729be412b48c331eb5029df617d35c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7c9fd9337682abbcd7325a849b95846be3af118d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747185"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Tutorial: Crear un servicio WCF simple de formularios Windows Forms
 Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]. A continuación, se probará y se tendrá acceso a él desde una aplicación de Windows Forms.
@@ -37,12 +38,12 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 2.  En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual Basic** o **Visual C#** nodo y haga clic en **WCF**, seguido de **WCF Biblioteca de servicio**. Haga clic en **Aceptar** para abrir el proyecto.
 
-     ![El proyecto de biblioteca de servicios WCF](../data-tools/media/wcf1.PNG "wcf1")
+     ![El proyecto de biblioteca de servicios de WCF](../data-tools/media/wcf1.png)
 
     > [!NOTE]
     >  Se creará un servicio de trabajo que puede probar y acceder a él. Los dos pasos siguientes muestran cómo puede modificar el método predeterminado para utilizar un tipo de datos diferente. En una aplicación real, también agregaría sus propias funciones al servicio.
 
-3.  ![El archivo IService1](../data-tools/media/wcf2.png "wcf2")
+3.  ![El archivo IService1](../data-tools/media/wcf2.png)
 
      En **el Explorador de soluciones**, haga doble clic en IService1.vb o IService1.cs y busque la línea siguiente:
 
@@ -56,7 +57,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
      En el código anterior, observe los atributos `<OperationContract()>` o `[OperationContract]`. Estos atributos son obligatorios para cualquier método expuesto por el servicio.
 
-4.  ![El archivo Service1](../data-tools/media/wcf3.png "wcf3")
+4.  ![El archivo Service1](../data-tools/media/wcf3.png)
 
      En **el Explorador de soluciones**, haga doble clic en Service1.vb o Service1.cs y busque la línea siguiente:
 
@@ -76,15 +77,15 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 2.  En el **cliente de prueba WCF** formulario, haga doble clic en el **GetData()** método en **IService1**. El **GetData** se mostrará la pestaña.
 
-     ![El método GetData&#40; &#41; método](../data-tools/media/wcf4.png "wcf4")
+     ![El método GetData&#40; &#41; (método)](../data-tools/media/wcf4.png)
 
 3.  En el **solicitar** cuadro, seleccione la **valor** campo y el tipo `Hello`.
 
-     ![El campo de valor](../data-tools/media/wcf5.png "wcf5")
+     ![El campo Valor](../data-tools/media/wcf5.png)
 
 4.  Haga clic en el **Invoke** botón. Si un **advertencia de seguridad** aparece el cuadro de diálogo, haga clic en **Aceptar**. El resultado se mostrará en el **respuesta** cuadro.
 
-     ![El resultado en el cuadro respuesta](../data-tools/media/wcf6.png "wcf6")
+     ![El resultado en el cuadro Respuesta](../data-tools/media/wcf6.png)
 
 5.  En el **archivo** menú, haga clic en **Exit** para cerrar el formulario de prueba.
 
@@ -96,13 +97,13 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 2.  En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual Basic** o **Visual C#** nodo y seleccione **Windows**y, a continuación, seleccione **Aplicación de formularios Windows Forms**. Haga clic en **Aceptar** para abrir el proyecto.
 
-     ![Proyecto de aplicación de Windows Forms](../data-tools/media/wcf7.png "wcf7")
+     ![Proyecto de Aplicación de Windows Forms](../data-tools/media/wcf7.png)
 
 3.  Haga clic en **WindowsApplication1** y haga clic en **Agregar referencia de servicio**. El **Agregar referencia de servicio** se abre el cuadro de diálogo.
 
 4.  En el **Agregar referencia de servicio** cuadro de diálogo, haga clic en **Discover**.
 
-     ![El cuadro de diálogo Agregar referencia de servicio](../data-tools/media/wcf8.png "wcf8")
+     ![El cuadro de diálogo Agregar referencia de servicio](../data-tools/media/wcf8.png)
 
      **Service1** se mostrará en el **servicios** panel.
 
@@ -114,7 +115,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 2.  Desde el **cuadro de herramientas**, arrastre un `TextBox` (control), un `Label` (control) y un `Button` control al formulario.
 
-     ![Agregar controles al formulario](../data-tools/media/wcf9.png "wcf9")
+     ![Agregar controles al formulario](../data-tools/media/wcf9.png)
 
 3.  Haga doble clic en `Button` y agregue el código siguiente al controlador de eventos `Click`:
 
@@ -125,7 +126,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
 
 5.  Presione **F5** para ejecutar el proyecto. Escriba algún texto y haga clic en el botón. La etiqueta mostrará "Escribió:" y el texto que escribió.
 
-     ![El formulario que muestra el resultado](../data-tools/media/wcf10.png "wcf10")
+     ![El formulario que muestra el resultado](../data-tools/media/wcf10.png)
 
 ## <a name="see-also"></a>Vea también
 

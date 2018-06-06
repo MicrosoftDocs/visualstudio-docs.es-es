@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05f690d76d61ffd52abbc7b73cf162d7f6609708
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751902"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Cómo: obtener una visión general de un esquema configurado mediante la vista de gráfico
 
@@ -34,7 +35,7 @@ Este tema describe cómo utilizar el [vista gráfico](../xml-tools/graph-view.md
 
 6.  Seleccione **del conjunto de esquemas** nodo en el **Explorador de esquemas XML** y arrastre el nodo para la superficie de diseño de la vista gráfico. Debería ver todos los nodos globales y las flechas que conectan los nodos que tienen relaciones.
 
-     ![Vista gráfica](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
+     ![Vista de gráfico](../xml-tools/media/relationshipingraphview.gif)
 
 7.  Haga clic en cualquier nodo de la superficie de diseño y busque en la barra de ruta de navegación dónde se encuentra el nodo seleccionado dentro del conjunto de esquemas.
 

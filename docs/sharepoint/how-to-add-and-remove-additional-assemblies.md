@@ -19,18 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cadfffb2dbf977e23a0edb082065125aea4f5940
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddfdc09f27d5c94445064c064772e812779dcf08
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767782"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Cómo: Agregar y quitar ensamblados adicionales
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Cómo: agregar y quitar ensamblados adicionales
   Si un paquete de SharePoint depende de otros ensamblados para la funcionalidad o los datos, puede agregar esos ensamblados al paquete de solución (.wsp). De esta manera, el servidor de SharePoint se asegura de que los ensamblados personalizados se instalan con un paquete.  
   
  También puede agregar y cambiar los controles seguros y los archivos de recursos de clase asociados a los ensamblados.  
   
-## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Agregar ensamblados, controles seguros y recursos de clase adicionales  
+## <a name="adding-additional-assemblies-safe-controls-and-class-resources"></a>Agregar ensamblados adicionales, controles seguros y recursos de clase  
  Puede agregar ensamblados adicionales al paquete de solución de SharePoint. Los ensamblados adicionales de una solución en espacio aislado se implementan en la memoria caché global de ensamblados, pero los elementos de proyecto de SharePoint incluidos en una solución en espacio aislado se agregan a la base de datos de contenido. También puede agregar controles seguros y recursos de clase a estos ensamblados adicionales. Para obtener más información acerca de controles seguros, vea [proporcionando información empaquetado e implementación de elementos de proyecto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) o "Crear una entrada SafeControl" en [implementar elementos Web en SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
 #### <a name="to-add-an-existing-assembly"></a>Para agregar un ensamblado existente  
@@ -112,9 +113,8 @@ ms.lasthandoff: 04/16/2018
   
 3.  Elija la tecla Supr.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
  [Cómo: Agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
   

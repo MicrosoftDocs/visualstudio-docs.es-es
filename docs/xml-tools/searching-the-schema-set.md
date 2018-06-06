@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c110344499281243628d633d005506af5cd801d0
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751746"
 ---
 # <a name="search-the-schema-set"></a>Buscar el conjunto de esquemas
 
@@ -28,7 +29,7 @@ El **Explorador de esquemas XML** permite buscar el esquema especificado en las 
 
  Realizar búsquedas de palabra clave mediante la especificación de una subcadena en la **conjunto de esquemas de búsqueda** cuadro de texto de la **Explorador de esquemas XML** barra de herramientas.
 
- ![Búsqueda de palabra clave de explorador de esquemas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Búsqueda de palabras clave en el Explorador de esquemas XML](../xml-tools/media/schemaexplorersearch.gif)
 
  El **Explorador de esquemas XML** busca el esquema especificado para los siguientes atributos:
 
@@ -48,7 +49,7 @@ El **Explorador de esquemas XML** permite buscar el esquema especificado en las 
 
  Puede agregar los resultados de búsqueda al área de trabajo, haga clic en el **agregar nodos resaltados al área de trabajo** botón en el panel de resultados de resumen.
 
- ![Resultado de búsqueda del explorador de esquemas XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Resultado de búsqueda en el Explorador de esquemas XML](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>Resultados de Borrar búsqueda
 

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Enlazar datos a controles en un panel de acciones de Excel | Documentos de Microsoft'
+title: 'Tutorial: Enlazar datos a controles en un panel de acciones de Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87d960c01d8ac28b2a148e2f48ee51a877d97c20
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d450a9c52ae8558167bf4cb581ce2e36f44f4e9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767915"
 ---
-# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>Tutorial: Enlazar datos a controles en un panel de acciones de Excel
+# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Tutorial: Enlazar datos a controles en un panel de acciones de Excel
   Este tutorial muestra el enlace de datos a controles en un panel de acciones de Microsoft Office Excel. Los controles muestran una relación principal-detalle entre las tablas de una base de datos de SQL Server.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,20 +56,20 @@ ms.lasthandoff: 04/16/2018
   
 -   Permisos para leer y escribir en la base de datos de SQL Server.  
   
-## <a name="creating-the-project"></a>Crear el proyecto  
+## <a name="create-the-project"></a>Crear el proyecto  
  En primer lugar, es necesario crear un proyecto de libro de Excel.  
   
-#### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
+### <a name="to-create-a-new-project"></a>Para crear un nuevo proyecto  
   
-1.  Cree un proyecto de libro de Excel con el nombre **Mi panel de acciones de Excel**. En el asistente, seleccione **crear un nuevo documento**. Para obtener más información, consulta [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Cree un proyecto de libro de Excel con el nombre **Mi panel de acciones de Excel**. En el asistente, seleccione **crear un nuevo documento**. Para obtener más información, consulte [Cómo: proyectos de Office crear en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
      Visual Studio abre el nuevo libro de Excel en el diseñador y agrega el **Mi panel de acciones de Excel** proyecto al **el Explorador de soluciones**.  
   
-## <a name="adding-a-new-data-source-to-the-project"></a>Agregar un nuevo origen de datos al proyecto  
+## <a name="add-a-new-data-source-to-the-project"></a>Agregar un nuevo origen de datos al proyecto  
   
-#### <a name="to-add-a-new-data-source-to-the-project"></a>Para agregar un nuevo origen de datos al proyecto  
+### <a name="to-add-a-new-data-source-to-the-project"></a>Para agregar un nuevo origen de datos al proyecto  
   
-1.  Si la ventana **Orígenes de datos** no es visible, muéstrela; para ello, en la barra de menús, elija **Ver**, **Otras ventanas**, **Orígenes de datos**.  
+1.  Si el **orígenes de datos** ventana no está visible, muéstrela; para ello, en la barra de menús, elija **vista** > **otras ventanas**  >   **Orígenes de datos**.  
   
 2.  Elija **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
   
@@ -90,10 +91,10 @@ ms.lasthandoff: 04/16/2018
   
  El asistente agrega la **proveedores** tabla y **productos** la tabla a la **orígenes de datos** ventana. También agrega un conjunto de datos con tipo al proyecto que está visible en **el Explorador de soluciones**.  
   
-## <a name="adding-controls-to-the-worksheet"></a>Agregar controles a la hoja de cálculo  
+## <a name="add-controls-to-the-worksheet"></a>Agregar controles a la hoja de cálculo  
  A continuación, agregue un <xref:Microsoft.Office.Tools.Excel.NamedRange> control y un <xref:Microsoft.Office.Tools.Excel.ListObject> control a la primera hoja de cálculo.  
   
-#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Para agregar un control NamedRange y un control ListObject  
+### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Para agregar un control NamedRange y un control ListObject  
   
 1.  Compruebe que la **Pane.xlsx de acciones de Excel mi** libro está abierto en el Diseñador de Visual Studio, con `Sheet1` muestra.  
   
@@ -113,10 +114,10 @@ ms.lasthandoff: 04/16/2018
   
 7.  Para C# únicamente, seleccione **suppliersBindingSource** en la Bandeja de componentes y cambie la **modificadores** propiedad **interno** en la **propiedades** ventana.  
   
-## <a name="adding-controls-to-the-actions-pane"></a>Agregar controles al panel de acciones  
+## <a name="add-controls-to-the-actions-pane"></a>Agregar controles al panel de acciones  
  A continuación, necesita un control de panel de acciones que contiene un cuadro combinado.  
   
-#### <a name="to-add-an-actions-pane-control"></a>Para agregar un control de panel de acciones  
+### <a name="to-add-an-actions-pane-control"></a>Para agregar un control de panel de acciones  
   
 1.  Seleccione el **Mi panel de acciones de Excel** proyecto **el Explorador de soluciones**.  
   
@@ -124,7 +125,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **Control del panel de acciones**, asígnele el nombre **ActionsControl**y haga clic en **agregar**.  
   
-#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Para agregar controles de formularios Windows Forms enlazados a datos a un control de panel de acciones  
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Para agregar controles de formularios Windows Forms enlazados a datos a un control de panel de acciones  
   
 1.  Desde el **controles comunes** pestañas de la **cuadro de herramientas**, arrastre un <xref:System.Windows.Forms.ComboBox> hasta el control de panel de acciones.  
   
@@ -132,10 +133,10 @@ ms.lasthandoff: 04/16/2018
   
 3.  Cambiar el tamaño del control de usuario para ajustar el cuadro combinado.  
   
-## <a name="binding-the-control-on-the-actions-pane-to-data"></a>Enlazar el Control en el panel de acciones a los datos  
- En esta sección, establecerá el origen de datos de la <xref:System.Windows.Forms.ComboBox> al mismo origen de datos como el <xref:Microsoft.Office.Tools.Excel.NamedRange> control en la hoja de cálculo.  
+## <a name="bind-the-control-on-the-actions-pane-to-data"></a>Enlazar el control en el panel de acciones a los datos  
+ En esta sección, podrá establecer el origen de datos de la <xref:System.Windows.Forms.ComboBox> al mismo origen de datos como el <xref:Microsoft.Office.Tools.Excel.NamedRange> control en la hoja de cálculo.  
   
-#### <a name="to-set-data-binding-properties-of-the-control"></a>Para establecer las propiedades de enlace de datos del control  
+### <a name="to-set-data-binding-properties-of-the-control"></a>Para establecer las propiedades de enlace de datos del control  
   
 1.  Haga clic en el control de panel de acciones y, a continuación, haga clic en **ver código**.  
   
@@ -148,12 +149,12 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
-## <a name="showing-the-actions-pane"></a>Mostrar el panel de acciones  
+## <a name="show-the-actions-pane"></a>Mostrar el panel de acciones  
  El panel de acciones no está visible hasta que se agregue el control en tiempo de ejecución.  
   
 #### <a name="to-show-the-actions-pane"></a>Para mostrar el panel de acciones  
   
-1.  En **el Explorador de soluciones**, haga clic en ThisWorkbook.vb o ThisWorkbook.cs y, a continuación, haga clic en **ver código**.  
+1.  En **el Explorador de soluciones**, haga clic en *ThisWorkbook.vb* o *ThisWorkbook.cs*y, a continuación, haga clic en **ver código**.  
   
 2.  Crear una nueva instancia del control de usuario en el `ThisWorkbook` clase.  
   
@@ -165,12 +166,12 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## <a name="testing-the-application"></a>Probar la aplicación  
+## <a name="test-the-application"></a>Probar la aplicación  
  Ahora puede probar el documento para comprobar que se abre el panel de acciones cuando se abre el documento y que los controles tienen una relación principal-detalle.  
   
-#### <a name="to-test-your-document"></a>Para probar el documento  
+### <a name="to-test-your-document"></a>Para probar el documento  
   
-1.  Presione F5 para ejecutar el proyecto.  
+1.  Presione **F5** para ejecutar el proyecto.  
   
 2.  Confirme que el panel de acciones esté visible.  
   
@@ -188,6 +189,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vea también  
  [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md)   
  [Cómo: administrar el diseño de controles en paneles de acciones](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Enlace de datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Guardar los datos con el TableAdapter DBDirect métodos
+title: Guardar datos con los métodos DBDirect de un TableAdapter
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68842160d3ad7bf7e96d22f58607866c34f9ceb5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747552"
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar los datos con el TableAdapter DBDirect métodos
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones SQL directamente en una base de datos mediante los métodos DBDirect de un TableAdapter. Los métodos DBDirect de un TableAdapter proporcionan un nivel exhaustivo de control sobre las actualizaciones de base de datos. Puede usarlas para ejecutar instrucciones SQL específicas y procedimientos almacenados mediante una llamada a la persona `Insert`, `Update`, y `Delete` métodos según sea necesario por la aplicación (en lugar de sobrecargado `Update` método que realiza la actualización Instrucciones INSERT y DELETE en una llamada).
 
  Durante este tutorial aprenderá a:
@@ -63,7 +64,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
 1. En Visual Studio, en el **archivo** menú, seleccione **New**, **proyecto...** .
 
-2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **escritorio clásico de Windows**.
+2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **Windows Desktop**.
 
 3. En el panel central, seleccione la **aplicación de Windows Forms** tipo de proyecto.
 
@@ -86,7 +87,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
     -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         -o bien-
+         O bien
 
     -   Seleccione **nueva conexión** para iniciar el **agregar o modificar conexión** cuadro de diálogo.
 
@@ -115,7 +116,7 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
 2.  Establece las siguientes opciones **nombre** y **texto** propiedades en cada botón.
 
-    |Nombre|Texto|
+    |nombre|Texto|
     |----------|----------|
     |`InsertButton`|**Insertar**|
     |`UpdateButton`|**Actualizar**|

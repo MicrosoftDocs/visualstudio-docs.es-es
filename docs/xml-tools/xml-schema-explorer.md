@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a398450fdf2be1dd3280c96c3b55529e14af51d4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 110cad9883cbb129368dac4d481443a9f5d9813c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34693947"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751594"
 ---
 # <a name="xml-schema-explorer"></a>Explorador de esquemas XML
 
@@ -60,7 +60,7 @@ El **Explorador de esquemas XML** proporciona una vista jerárquica del esquema 
 
 A continuación se muestra un ejemplo de estructura de árbol:
 
-![Explorador de esquemas XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")
+![Explorador de esquemas XML](../xml-tools/media/xmlschemaexplorer.gif)
 
 ## <a name="selection-and-activation"></a>Selección y activación
  Para resaltar y seleccionar un nodo, haga clic una vez en el Explorador de esquemas.

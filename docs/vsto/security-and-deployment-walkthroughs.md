@@ -22,7 +22,7 @@ ms.openlocfilehash: 724050648aa7190844bad1e751d75fa22ccdebc8
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693148"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Tutoriales de seguridad e implementación

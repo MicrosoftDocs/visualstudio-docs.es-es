@@ -19,7 +19,7 @@ ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693323"
 ---
 # <a name="troubleshooting-office-solution-security"></a>Solucionar problemas de seguridad de soluciones de Office

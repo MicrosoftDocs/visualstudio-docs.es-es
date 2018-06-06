@@ -11,7 +11,7 @@ ms.openlocfilehash: 20223a18fa422facc7d7a0a74336402d6d391b0a
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693450"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Usar jerarquía XSLT

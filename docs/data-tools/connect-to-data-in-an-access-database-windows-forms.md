@@ -16,11 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d15cf1d8e2d7a7178b6ffc423319fcadd8e00cad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 233527e92a6d0d20294769d070e8dc81b33753b4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746821"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectarse a los datos en una base de datos de Access (formularios Windows Forms)
 Puede conectarse a una base de datos de Access (un archivo .mdf o un archivo .accdb) mediante Visual Studio. Después de definir la conexión, los datos aparecen en la **orígenes de datos** ventana. Desde esta ventana, puede arrastrar las tablas o vistas a los formularios.
@@ -37,7 +38,7 @@ Puede conectarse a una base de datos de Access (un archivo .mdf o un archivo .ac
 
 2.  En el **vista** menú, seleccione **otras ventanas** > **orígenes de datos**.
 
-     ![Ver orígenes de datos de otras ventanas](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 
 3.  En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos**.
 
@@ -59,7 +60,7 @@ Puede conectarse a una base de datos de Access (un archivo .mdf o un archivo .ac
 
 9. En el **Agregar conexión** cuadro de diálogo, seleccione **Microsoft Office 12.0 Access Database Engine OLE DB Provider** desde el **proveedor OLE DB** lista desplegable.
 
-     ![Proveedor de OLE DB Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")
+     ![Proveedor OLE DB de Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png)
 
      > [!NOTE]
      >  Si no ve **Microsoft Office 12.0 Access Database Engine OLE DB Provider** en la lista desplegable del proveedor de OLE DB, puede que necesite instalar la [2007 Office System Driver: Data Connectivity Components](https://www.microsoft.com/download/confirmation.aspx?id=23734).
@@ -87,7 +88,7 @@ Puede conectarse a una base de datos de Access (un archivo .mdf o un archivo .ac
 
 2.  En el **vista** menú, seleccione **otras ventanas** > **orígenes de datos**.
 
-     ![Ver orígenes de datos de otras ventanas](../data-tools/media/viewdatasources.png "ViewDataSources")
+     ![Ver orígenes de datos en Otras ventanas](../data-tools/media/viewdatasources.png)
 
 3.  En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos**.
 
@@ -103,7 +104,7 @@ Puede conectarse a una base de datos de Access (un archivo .mdf o un archivo .ac
 
 8.  En el **nombre de archivo de base de datos**, especifique la ruta de acceso y el nombre del archivo .mdb que desea conectarse y, a continuación, seleccione **Aceptar**.
 
-     ![Agregar el archivo de base de datos de acceso de conexión](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")
+     ![Agregar archivo de base de datos de acceso a la conexión](../data-tools/media/dataaddconnectionaccessmdb.png)
 
 9. Seleccione **siguiente** en el **elegir la conexión de datos** página.
 

@@ -13,16 +13,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b3dec7405e6d9964a1e622d5d872ad31efcd541d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ab473e4835e4ba6467a9af83e69bfabc43e8236
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748730"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Información general sobre la interfaz de usuario de las herramientas de los lenguajes específicos de dominio
 Cuando se abre una solución de herramientas de lenguajes específicos de dominio (herramientas ADSL) en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la interfaz de usuario será similar a la siguiente imagen.
 
- ![Diseñador DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![diseñador dsl](../modeling/media/dsl_designer.png)
 
  En la tabla siguiente se explica cómo se usan las partes de la interfaz de usuario.
 
@@ -36,7 +37,7 @@ Cuando se abre una solución de herramientas de lenguajes específicos de domini
 ## <a name="the-domain-model-diagram"></a>El diagrama del modelo de dominio
  El diagrama del modelo de dominio se divide en dos partes. Un lado del diagrama muestra los elementos y relaciones en el modelo. El otro lado muestra cómo se puede mostrar, el modelo e incluye las formas que se utilizan para mostrar los elementos y las propiedades del diagrama de modelo. La siguiente imagen muestra los elementos del diagrama.
 
- ![Diseñador DSL con carril](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![diseñador dsl con carril (cal](../modeling/media/dsl_desinger.png)
 
  La tabla siguiente explican algunos de los elementos del diagrama de modelo de dominio.
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 813f637f3bb12c3f3f4eec75abf1423de06f9707
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751850"
 ---
 # <a name="start-view"></a>Vista Inicio
 
@@ -22,7 +23,7 @@ La vista Inicio es el punto de lanzamiento del Diseñador de esquemas XML (XSD).
 
 La vista inicio contiene dos secciones principales, el *marca de agua* y **detalles del conjunto de esquemas** panel. También incluye la barra de herramientas, que está disponible en todas las vistas del Diseñador XSD.
 
-![Vista de inicio del Diseñador de esquemas XML](../xml-tools/media/xsddesigner_startview.gif "XSDDesigner_StartView")
+![Vista Inicio del Diseñador de esquemas XML](../xml-tools/media/xsddesigner_startview.gif)
 
 ## <a name="watermark"></a>Marca de agua
 
@@ -36,7 +37,7 @@ El **detalles del conjunto de esquemas** panel se enumeran los tipos de nodo de 
 
 Puede navegar entre la vista inicio, la [vista modelo de contenido](../xml-tools/content-model-view.md) y [vista gráfico](../xml-tools/graph-view.md) desde la barra de herramientas del Diseñador de esquemas XML.
 
-![Barra de herramientas de diseñador de esquemas XML](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+![Barra de herramientas del Diseñador de esquemas XML](../xml-tools/media/xsdstartviewtoolbar.gif)
 
 Los siguientes botones están habilitados en la barra de herramientas del Diseñador XML cuando está activa la vista Inicio:
 

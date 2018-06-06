@@ -11,13 +11,14 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e98be1dd16705be00f388419013686f861f3753
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 18f4153db019dd6ded97337d4599f02a6b02ef49
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748939"
 ---
-# <a name="navigate-and-update-a-model-in-program-code"></a>Navegar y actualizar un modelo en el código de programa
+# <a name="navigate-and-update-a-model-in-program-code"></a>Navegar por un modelo en el código del programa y actualizarlo
 
 Puede escribir código para crear y eliminar elementos del modelo, establecer sus propiedades y crear y eliminar los vínculos entre elementos. Todos los cambios deben realizarse dentro de una transacción. Si se ven los elementos en un diagrama, el diagrama se "corregirá" automáticamente al final de la transacción.
 
@@ -55,11 +56,11 @@ Puede escribir código para crear y eliminar elementos del modelo, establecer su
 ##  <a name="example"></a> Un ejemplo de definición de DSL
  Esta es la parte principal de DslDefinition.dsl de los ejemplos de este tema:
 
- ![Diagrama de definición DSL &#45; modelo de árbol genealógico](../modeling/media/familyt_person.png "FamilyT_Person")
+ ![Diagrama de definición DSL &#45; modelo de árbol genealógico](../modeling/media/familyt_person.png)
 
  Este modelo es una instancia de este DSL:
 
- ![Modelo de árbol de familia Tudor](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")
+ ![Modelo de árbol de familia Tudor](../modeling/media/tudor_familytreemodel.png)
 
 ### <a name="references-and-namespaces"></a>Las referencias y los espacios de nombres
  Para ejecutar el código de este tema, se debe hacer referencia:
@@ -350,7 +351,7 @@ using (Transaction t = targetDiagram.Store.
  En un ADSL, el elemento de modelo de dominio, que representa un concepto como persona o una canción, es independiente del elemento de forma que representa lo que ve en el diagrama. El elemento de modelo de dominio almacena las propiedades importantes y las relaciones de los conceptos. El elemento forma almacena el tamaño, la posición y el color de la vista del objeto en el diagrama y el diseño de los componentes.
 
 ### <a name="presentation-elements"></a>Elementos de presentación
- ![Diagrama de clases de tipos de forma y el elemento base](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")
+ ![Diagrama de clases de forma base y tipos de elementos](../modeling/media/dslshapesandelements.png)
 
  En la definición DSL, cada elemento que especifique crea una clase que se deriva de una de las siguientes clases estándares.
 
@@ -509,7 +510,7 @@ partial class MyDiagram
  Formas, conectores y diagramas son subtipos de <xref:Microsoft.VisualStudio.Modeling.ModelElement> y activos en el almacén. Por lo tanto, debe realizar cambios en ellos solo dentro de una transacción. Para obtener más información, consulte [Cómo: usar transacciones para actualizar el modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
 ##  <a name="docdata"></a> Vista de documento y los datos del documento
- ![Diagrama de clases de tipos de diagrama estándar](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")
+ ![Diagrama de clases de tipos de diagrama estándar](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>Almacenar particiones
  Cuando se carga un modelo, se carga en el diagrama que lo acompaña al mismo tiempo. Por lo general, el modelo se carga en Store.DefaultPartition, y se carga el contenido del diagrama en otra partición. Normalmente, se carga el contenido de cada partición y se guarda en un archivo independiente.

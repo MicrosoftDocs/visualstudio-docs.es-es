@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44e82b15ff2d4bdfaac5e8e9eca672ecdc1780a9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767626"
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Cómo: Agregar una propiedad a proyectos de SharePoint
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>Cómo: agregar una propiedad a los proyectos de SharePoint
   Puede utilizar una extensión de proyecto para agregar una propiedad a un proyecto de SharePoint. La propiedad aparece en la **propiedades** ventana cuando se selecciona el proyecto en **el Explorador de soluciones**.  
   
  Los pasos siguientes se supone que ya ha creado una extensión de proyecto. Para obtener más información, consulte [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
 3.  En el controlador de eventos para el <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> eventos, debe agregar una instancia de la clase de propiedades para el <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> colección del parámetro de argumentos del evento.  
   
 ## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se muestra cómo agregar dos propiedades a los proyectos de SharePoint. Una propiedad conserva sus datos en el archivo de opción de usuario de proyecto (el. archivo csproj.user o. vbproj.user archivo). La otra propiedad conserva sus datos en el archivo de proyecto (archivo .csproj o .vbproj).  
+ En el ejemplo de código siguiente se muestra cómo agregar dos propiedades a los proyectos de SharePoint. Una propiedad conserva sus datos en el archivo de opción de usuario de proyecto (la *. csproj.user* archivo o *. vbproj.user* archivo). La otra propiedad conserva sus datos en el archivo de proyecto (*.csproj* archivo o *.vbproj* archivo).  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
@@ -66,23 +67,23 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:System.ComponentModel.EditorAttribute>: Especifica un editor personalizado para utilizar para modificar la propiedad.  
   
-## <a name="compiling-the-code"></a>Compilar el código  
+## <a name="compiling-the-code"></a>Compilación del código  
  Este ejemplo requiere referencias a los siguientes ensamblados:  
   
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.Shell  
-  
--   Microsoft.VisualStudio.Shell.Interop  
-  
--   Microsoft.VisualStudio.Shell.Interop.8.0  
-  
+-   Microsoft.VisualStudio.SharePoint
+-    
+-   Microsoft.VisualStudio.Shell
+-     
+-   Microsoft.VisualStudio.Shell.Interop
+-     
+-   Microsoft.VisualStudio.Shell.Interop.8.0
+-     
 -   System.ComponentModel.Composition  
   
 ## <a name="deploying-the-extension"></a>Implementar la extensión  
  Para implementar la extensión, cree un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para el ensamblado y cualquier otro archivo que desee distribuir con la extensión. Para obtener más información, consulte [extensiones de implementación para las herramientas de SharePoint en Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Extender proyectos de SharePoint](../sharepoint/extending-sharepoint-projects.md)   
  [Cómo: crear una extensión de proyecto de SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
  [Cómo: agregar un elemento de menú contextual a los proyectos de SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   

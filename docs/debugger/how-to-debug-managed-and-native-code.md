@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 548b86406ba36a6f46a2dfb3d4d894b5621c298c
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: d8987d24a6302c9d9ffd7ffdb127e52c57e22ff9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764558"
 ---
 # <a name="tutorial-debug-managed-and-native-code-in-visual-studio"></a>Tutorial: Depurar código nativo y administrado en Visual Studio
 
@@ -39,7 +40,7 @@ En este tutorial va a:
 
 * Debe tener instalado Visual Studio y la **el desarrollo de escritorio con C++** carga de trabajo.
 
-    Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).
+    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
     Si necesita instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Node.js** y, después, haga clic en **Modificar**.
 
@@ -73,7 +74,7 @@ En este tutorial va a:
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
     #define MIXED_MODE_MULTIPLY_HPP
-    
+
     extern "C"
     {
         __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
@@ -106,7 +107,7 @@ En este tutorial va a:
 
 1. Elija una plantilla para el código de aplicación.
 
-    Para .NET Framework, en el **nuevo proyecto** diálogo cuadro, elija **Visual C#**, **escritorio clásico de Windows** desde la sección de plantillas instaladas y, a continuación, en el panel central Seleccione **aplicación de consola (.NET Framework)**.
+    Para .NET Framework, en el **nuevo proyecto** diálogo cuadro, elija **Visual C#**, **Windows Desktop** desde la sección de plantillas instaladas y, a continuación, en el panel central, seleccione  **(.NET Framework) de la aplicación de consola**.
 
     Para .NET Core, en la **nuevo proyecto** diálogo cuadro, elija **Visual C#**, **.NET Core** desde la sección de plantillas instaladas y, a continuación, en el panel central, seleccione  **(.NET Core) de la aplicación de consola**.
 
@@ -119,7 +120,7 @@ En este tutorial va a:
     ```csharp
     using System;
     using System.Runtime.InteropServices;
-    
+
     namespace Mixed_Mode_Calling_App
     {
         public class Program
@@ -133,7 +134,7 @@ En este tutorial va a:
             "mixed_mode_multiply", CallingConvention = CallingConvention.StdCall)]
             public static extern int Multiply(int x, int y);
             public static void Main(string[] args)
-            { 
+            {
                 int result = Multiply(7, 7);
                 Console.WriteLine("The answer is {0}", result);
                 Console.ReadKey();
@@ -165,9 +166,9 @@ En la mayoría de las versiones de Visual Studio de 2017, debe habilitar la depu
     ```
     "nativeDebugging": true
     ```
-    
+
     Por lo tanto, por ejemplo, el archivo podría ser similar al siguiente:
-    
+
     ```
     {
       "profiles": {

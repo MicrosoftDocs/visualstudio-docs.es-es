@@ -1,5 +1,5 @@
 ---
-title: Información general de implementación
+title: Guía de características de implementación
 description: Obtenga información acerca de las opciones para implementar aplicaciones desde Visual Studio.
 ms.custom: mvc
 ms.date: 11/26/2017
@@ -24,29 +24,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0136fb8f7b1075d2eadeaed10ab26026395b9671
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 8d2c84b8e5d37876d890d40144b281e236fdcd0c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766316"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Inicio rápido: Busque primero en la implementación en Visual Studio
 
 Al implementar una aplicación, servicio o componente, se distribuye para su instalación en otros equipos, dispositivos, servidores o en la nube. Elija el método apropiado en Visual Studio para el tipo de implementación que necesita. (Muchos tipos de aplicación admiten otras herramientas de implementación como la implementación de línea de comandos o NuGet que no se describen aquí).
 
-Vea los tutoriales para obtener instrucciones paso a paso.
+Vea los tutoriales para obtener instrucciones paso a paso de implementación. Si va a implementar una aplicación web y necesita obtener información más detallada para decidir cuál es la mejor opción de implementación de Visual Studio, consulte [qué opciones de publicación son adecuadas para mí?](../ide/not-in-toc/web-publish-options.md).
 
-### <a name="deploy-to-local-folder"></a>Implementar en la carpeta local
+## <a name="deploy-to-local-folder"></a>Implementar en la carpeta local
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, y **.NET Core**: usar la herramienta de publicación para implementar en una carpeta local. Las opciones disponibles dependen de su tipo de aplicación. En el Explorador de soluciones, haga clic en el proyecto y elija **publicar**. (Si previamente ha configurado ningún perfil de publicación, debe hacer clic **crear nuevo perfil**.) A continuación, elija **carpeta**. Para obtener más información, consulte [implementar en una carpeta local](quickstart-deploy-to-local-folder.md).
+Implementación en una carpeta local se utiliza normalmente para realizar pruebas o para iniciar una implementación por fases en el que se usará otra herramienta para la implementación final.
+
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, y. **Núcleo de NET**: usar la herramienta de publicación para implementar en una carpeta local. Las opciones disponibles dependen de su tipo de aplicación. En el Explorador de soluciones, haga clic en el proyecto y elija **publicar**. (Si previamente ha configurado ningún perfil de publicación, debe hacer clic **crear nuevo perfil**.) A continuación, elija **carpeta**. Para obtener más información, consulte [implementar en una carpeta local](quickstart-deploy-to-local-folder.md).
 
     ![Elija publicar](../deployment/media/quickstart-publish.png)
 
 - **El tiempo de ejecución Visual C++**: puede implementar el tiempo de ejecución de Visual C++ mediante la implementación local o vinculación estática. Para obtener más información, consulte [implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
 
-### <a name="publish-to-web-or-deploy-to-network-share"></a>Publicar en Web o implementar en el recurso compartido de red
+## <a name="azure"></a> Publicar en Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, y **.NET Core**: puede usar la herramienta de publicación para implementar en un sitio Web mediante FTP o Web Deploy. Para obtener más información, consulte [implementar en un sitio web](quickstart-deploy-to-a-web-site.md).
+- **ASP.NET**, **ASP.NET Core**, **Python**, y **Node.js**: puede usar la herramienta de publicación para implementar rápidamente aplicaciones al servicio de aplicaciones de Azure o en una Virtual de Azure Máquina. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **Publicar**. (Si previamente ha configurado ningún perfil de publicación, debe hacer clic **crear nuevo perfil**.) En el cuadro de diálogo Publicar, elija **servicio de aplicaciones** o **máquinas virtuales de Azure**y, a continuación, siga los pasos de configuración.
+
+    ![Elija el servicio de aplicaciones de Azure](../deployment/media/quickstart-publish-azure.png "elegir servicio de aplicaciones de Azure")
+
+    En Visual Studio 2017 versión 15,7, puede implementar aplicaciones ASP.NET Core **servicio de aplicaciones para Linux**.
+
+    Para obtener información acerca de cómo importar un perfil de publicación de servicio de aplicaciones de Azure para Visual Studio, vea [importar la configuración de publicación e implementar en Azure](../deployment/tutorial-import-publish-settings-azure.md).
+
+    Para obtener una introducción rápida, consulte [Publish to Azure](quickstart-deploy-to-azure.md). Consulte también [publicar una aplicación de ASP.NET Core en Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Para la implementación con Git, vea [implementación continua de núcleo de ASP.NET en Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
+
+    > [!NOTE]
+    > Si no dispone de una cuenta de Azure, puede [registrarte aquí](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
+
+## <a name="web"></a> Publicar en Web o implementar en el recurso compartido de red
+
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, y **Python**: puede usar la herramienta de publicación para implementar en un sitio Web mediante FTP o Web Deploy. Para obtener más información, consulte [implementar en un sitio web](quickstart-deploy-to-a-web-site.md).
 
     En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **Publicar**. (Si previamente ha configurado ningún perfil de publicación, debe hacer clic **crear nuevo perfil**.) En la herramienta de publicación, seleccione la opción que desee y siga los pasos de configuración.
 
@@ -60,20 +78,7 @@ Vea los tutoriales para obtener instrucciones paso a paso.
 
 - **Escritorio de Windows** puede publicar una aplicación de escritorio de Windows en un servidor web o un recurso compartido de red mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para obtener más información, consulte [implementar una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) y [implementar una aplicación nativa con ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
-### <a name="publish-to-azure"></a>Publicar en Azure
-
-- **ASP.NET, ASP.NET Core, Python, Node.js y .NET Core** aplicaciones web: puede usar la herramienta de publicación para implementar rápidamente aplicaciones de servicio de aplicaciones de Azure o a una máquina Virtual de Azure. En el Explorador de soluciones, haga clic con el botón derecho en el proyecto y seleccione **Publicar**. (Si previamente ha configurado ningún perfil de publicación, debe hacer clic **crear nuevo perfil**.) En el cuadro de diálogo Publicar, elija **servicio de aplicaciones de Microsoft Azure** o **máquinas virtuales de Microsoft Azure**y, a continuación, siga los pasos de configuración.
-
-    ![Elija el servicio de aplicaciones de Azure](../deployment/media/quickstart-publish-azure.png "elegir servicio de aplicaciones de Azure")
-
-    Para obtener información acerca de cómo importar un perfil de publicación de servicio de aplicaciones de Azure para Visual Studio, vea [importar la configuración de publicación e implementar en Azure](../deployment/tutorial-import-publish-settings-azure.md).
-
-    Para obtener una introducción rápida, consulte [Publish to Azure](quickstart-deploy-to-azure.md). Consulte también [publicar una aplicación de ASP.NET Core en Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Para la implementación con Git, vea [implementación continua de núcleo de ASP.NET en Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
-
-    > [!NOTE]
-    > Si no dispone de una cuenta de Azure, puede [registrarte aquí](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
-
-### <a name="publish-to-microsoft-store"></a>Publicar en el almacén de Microsoft
+## <a name="microsoft_store"></a> Publicar en el almacén de Microsoft
 
 Desde Visual Studio, puede crear paquetes de aplicaciones para su implementación en Microsoft Store.
 
@@ -85,7 +90,11 @@ Desde Visual Studio, puede crear paquetes de aplicaciones para su implementació
 
     ![Puente de escritorio](../deployment/media/feature-tour-desktop-bridge.png)
 
-### <a name="create-an-installer-package-windows-client"></a>Crear un paquete del instalador (cliente de Windows)
+## <a name="deploy-to-a-device-uwp"></a>Implementar en un dispositivo (UWP)
+
+Si va a implementar una aplicación de UWP para realizar pruebas en un dispositivo, consulte [UWP ejecutar aplicaciones en un equipo remoto en Visual Studio](../debugger/run-windows-store-apps-on-a-remote-machine.md).
+
+## <a name="installer"></a> Crear un paquete del instalador (cliente de Windows)
 
 Si se requiere más de una instalación compleja de una aplicación de escritorio que [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) puede proporcionar, puede crear un paquete de instalación, un proyecto de instalación o un arranque personalizado.
 
@@ -97,19 +106,26 @@ Si se requiere más de una instalación compleja de una aplicación de escritori
 
 - Puede instalar los componentes necesarios para las aplicaciones de escritorio mediante la configuración de un instalador genérico, que se conoce como un programa previo. Para obtener más información, consulte [requisitos previos de implementación de aplicación](../deployment/application-deployment-prerequisites.md).
 
-### <a name="deploy-to-test-lab"></a>Implementar para el laboratorio de pruebas
+## <a name="deploy-to-test-lab"></a>Implementar para el laboratorio de pruebas
 
 Puede habilitar más sofisticadas desarrollo y pruebas mediante la implementación de las aplicaciones en entornos virtuales. Para obtener más información, consulte [pruebas en un entorno de laboratorio](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md).
 
-### <a name="devops-deployment"></a>Implementación de DevOps
+## <a name="devops-deployment"></a>Implementación de DevOps
 
 En un entorno de equipo, puede usar Visual Studio Team Services (VSTS) para habilitar la implementación continua de la aplicación. Para obtener más información, consulte [de compilación y la versión](/vsts/build-release/index) y [implementar en Azure](/vsts/deploy-azure/index).
 
-### <a name="deployment-for-other-app-types"></a>Implementación para otros tipos de aplicación
+## <a name="deployment-for-other-app-types"></a>Implementación para otros tipos de aplicación
 
 | Tipo de aplicación | Escenario de implementación | Vínculo |
 | --- | --- | --- |
 | **Aplicación de Office** | Puede publicar un complemento de Office desde Visual Studio. | [Implementar y publicar el complemento de Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Servicio WCF o OData**  | Otras aplicaciones pueden utilizar los servicios RIA de WCF que se implementen en un servidor web. | [Desarrollar e implementar WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **LightSwitch** | LightSwitch ya no se admite en Visual Studio de 2017, pero todavía se puede implementar desde Visual Studio 2015 y versiones anteriores. | [Implementar aplicaciones de LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+
+## <a name="next-steps"></a>Pasos siguientes
+
+En este tutorial, se tardó un vistazo rápido a las opciones de implementación para aplicaciones diferentes. Si va a implementar una aplicación web, como ASP.NET, leer información más detallada acerca de algunas de las opciones de implementación disponibles en Visual Studio.
+
+> [!div class="nextstepaction"]
+> [¿Qué opciones de publicación están adecuadas para mí?](../ide/not-in-toc/web-publish-options.md)
 

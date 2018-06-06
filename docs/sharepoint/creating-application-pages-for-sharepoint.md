@@ -21,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8bc73918a2af82acab1fd465f5f80755cc594ba9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fab7bbed25d3f308eef02b7f975e71af6fa8183
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691984"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765010"
 ---
-# <a name="creating-application-pages-for-sharepoint"></a>Crear páginas de aplicación para SharePoint
+# <a name="create-application-pages-for-sharepoint"></a>Crear páginas de aplicación para SharePoint
   Un *página de la aplicación* es una página Web ASP.NET que está diseñada para su uso en un sitio SharePoint Web. Páginas de aplicación son un tipo especializado de página ASP.NET. La principal diferencia entre una página de aplicación y una página ASP.NET estándar es que una página de aplicación incluye contenido que se combina con una página maestra de SharePoint. Páginas de aplicación para compartir el mismo aspecto y comportamiento de otras páginas de un sitio permite que una página maestra.  
   
  Visual Studio le permite diseñar páginas de aplicación utilizando un diseñador. El diseñador muestra un área de contenido para cada marcador de posición de contenido que se define en una página maestra. Puede diseñar la página de aplicación arrastrando controles a estas áreas de contenido.  
@@ -55,7 +55,7 @@ ms.locfileid: "34691984"
   
 |Archivo|Descripción|  
 |----------|-----------------|  
-|Archivo de paginación ASP.NET (.aspx)|Contiene el marcado XML que define la página.|  
+|Archivo de paginación ASP.NET (*.aspx*)|Contiene el marcado XML que define la página.|  
 |Archivo de código de página de aplicación|Contiene el código subyacente de la página de aplicación. Agregue código que controla los eventos para este archivo.|  
 |Archivo de código del Diseñador de página de aplicación|Contiene el código generado por el diseñador. No modifique este archivo directamente.|  
   

@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1660d440b72c48787af2cf2c653a420982c8799
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7773c2c81527e065652486eb851f3c27828bf76d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767147"
 ---
-# <a name="how-to-add-a-finder-method"></a>Cómo: Agregar un método Finder
-  Para habilitar el servicio de conectividad a datos profesionales mostrar una lista de entidades en un elemento web o una lista, debe crear un *buscador* método. Un método Finder es un método especial que devuelve una colección de instancias de entidad. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-finder-method"></a>Cómo: agregar un método Finder
+  Para habilitar el servicio de conectividad de datos profesionales (BDC) mostrar una lista de entidades en un elemento web o una lista, debe crear un *buscador* método. Un método Finder es un método especial que devuelve una colección de instancias de entidad. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-finder-method"></a>Para crear un método Finder  
   
-1.  En el Diseñador de BDC, elija una entidad.  
+1.  En el **Diseñador de BDC**, elija una entidad.  
   
      Para obtener más información, consulte [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  En la barra de menús, elija **vista**, **otras ventanas**, **detalles del método de BDC**.  
+2.  En la barra de menús, elija **vista** > **otras ventanas** > **detalles del método de BDC**.  
   
      El **detalles del método de BDC** abre la ventana. Para obtener más información sobre la **detalles del método de BDC** ventana, consulte [herramientas información general del diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Información general de herramientas del diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   

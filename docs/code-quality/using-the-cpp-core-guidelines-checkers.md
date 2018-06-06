@@ -9,11 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 607b4f2d96e809f9c8b5aedf8362c5d5f54e097d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8b031fc1251ad06fdba154c086696337e552445
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747409"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de directrices de núcleo de C++
 Las directrices de núcleo de C++ son un conjunto portátil de directrices, reglas y procedimientos recomendados acerca de cómo escribir código en C++ creados por los diseñadores y los expertos en C++. Visual Studio admite actualmente un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de la directriz principal se instalan de forma predeterminada en Visual Studio de 2017 y se [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
@@ -24,11 +25,11 @@ Las directrices de núcleo de C++ son un conjunto portátil de directrices, regl
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Habilitar las instrucciones de comprobación de núcleo de C++ en el análisis de código
  Puede habilitar análisis de código en el proyecto seleccionando la **Habilitar análisis de código al compilar** casilla de verificación en la **análisis de código** sección de la **páginas de propiedades** cuadro de diálogo para el proyecto.
 
- ![Página de propiedades de configuración General de análisis de código](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+ ![Página de propiedades de configuración General de análisis de código](../code-quality/media/cppcorecheck_codeanalysis_general.png)
 
  Las reglas de comprobación de núcleo de C++ son extensiones para los conjuntos de reglas predeterminado que se ejecutan cuando se habilita el análisis de código. Dado que las reglas de comprobación de núcleo de C++ están en desarrollo, algunas reglas están bien consolidadas y algunos pueden no estar listos para su uso en todo el código, pero todavía pueden ser informativos. Las reglas se dividen en dos grupos: publicadas y experimental. Puede elegir si desea ejecutar las reglas publicadas o experimental en las propiedades del proyecto.
 
- ![Página de propiedades de configuración de las extensiones de análisis de código](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+ ![Página de propiedades de configuración de las extensiones de análisis de código](../code-quality/media/cppcorecheck_codeanalysis_extensions.png)
 
  Para habilitar o deshabilitar los conjuntos de reglas de comprobación de núcleo de C++, abra el **páginas de propiedades** cuadro de diálogo para el proyecto. En **propiedades de configuración**, expanda **análisis de código**, **extensiones**. En la lista desplegable junto al control **habilitar C++ Core comprobar (lanzamiento)** o **habilitar C++ Core comprobar (Experimental)**, elija **Sí** o **No**. Elija **Aceptar** o **aplicar** para guardar los cambios.
 
@@ -241,7 +242,7 @@ Tendrá que establecer algunas variables de entorno y usar las opciones de líne
 
 2.  En el **Administrador de paquetes de NuGet** ventana, busque Microsoft.CppCoreCheck.
 
-     ![Ventana del Administrador de paquetes de NuGet muestra paquete CppCoreCheck](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+     ![Muestra la ventana del Administrador de paquetes de NuGet CppCoreCheck paquete](../code-quality/media/cppcorecheck_nuget_window.png)
 
 3.  Seleccione el paquete de Microsoft.CppCoreCheck y, a continuación, elija la **instalar** botón para agregar las reglas a su proyecto.
 

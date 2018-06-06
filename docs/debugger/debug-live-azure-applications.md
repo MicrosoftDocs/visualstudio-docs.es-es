@@ -14,24 +14,18 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 415e2ee4da01affd2d34b2bbb1aafb5de697767e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766329"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicaciones de Azure de ASP.NET en directo con el depurador de instantánea
 
 El depurador de instantánea toma una instantánea de las aplicaciones de producción cuando se ejecuta código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
 Snappoints y logpoints son similares a los puntos de interrupción, pero a diferencia de los puntos de interrupción, snappoints no detendrá la aplicación cuando se produce. Normalmente, la captura una instantánea en un snappoint tiene 10 a 20 milisegundos. 
-
-La colección de instantáneas está disponible para las siguientes aplicaciones web que se ejecutan en Azure App Service:
-
-- Aplicaciones ASP.NET que se ejecutan en .NET Framework 4.6.1 o versiones posteriores.
-- Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.0 o posteriores en Windows.
-
-Además, el depurador de instantánea solo está disponible para Visual Studio de 2017 Enterprise versión 15.5 o superior y los planes de servicio de aplicaciones básica o superiores. 
 
 En este tutorial va a:
 
@@ -40,16 +34,27 @@ En este tutorial va a:
 > * Establecer un snappoint y ver una instantánea
 > * Establecer un logpoint
 
-## <a name="start-the-snapshot-debugger"></a>Iniciar al depurador de instantánea
+## <a name="prerequisites"></a>Requisitos previos
 
-1. Instalar [Visual Studio 2017 Enterprise versión 15,5](https://www.visualstudio.com/downloads/) o una versión posterior. Si está actualizando desde una instalación anterior de Visual Studio de 2017, ejecute al instalador de Visual Studio y compruebe el componente del depurador de instantánea en la carga de trabajo de desarrollo web y ASP.NET.
+* Depurador de instantánea solo está disponible para Visual Studio de 2017 Enterprise versión 15.5 o posterior con el **cargas de trabajo de desarrollo de ASP.NET y web**. Núcleo de ASP.NET, también necesita el. **Desarrollo principal de NET** instalada de la carga de trabajo.
 
-2. Abra el proyecto que le gustaría depuración instantánea. 
+    Si aún no está instalado, instale [Visual Studio 2017 Enterprise versión 15,5](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) o una versión posterior. Si está actualizando desde una instalación anterior de Visual Studio de 2017, ejecute el instalador de Visual Studio y compruebe el componente del depurador de instantánea la **cargas de trabajo de desarrollo de ASP.NET y web**.
+
+* Plan de servicio de aplicaciones de Azure básico o superior.
+
+* La colección de instantáneas está disponible para las siguientes aplicaciones web que se ejecutan en Azure App Service:
+
+    * Aplicaciones ASP.NET que se ejecutan en .NET Framework 4.6.1 o versiones posteriores.
+    * Aplicaciones ASP.NET Core que se ejecutan en .NET Core 2.0 o posteriores en Windows.
+
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Abra el proyecto e iniciar al depurador de instantánea
+
+1. Abra el proyecto que le gustaría depuración instantánea. 
 
     > [!IMPORTANT] 
     > Para depurar de instantánea, deberá abrir el **misma versión de código fuente** que se publica en el servicio de aplicaciones de Azure. 
 
-3. En el Explorador de la nube (**Vista > Explorador de nube**), haga clic en el proyecto se implementa en el servicio de aplicaciones de Azure y seleccione **adjuntar depurador de instantánea**.
+1. En el Explorador de la nube (**Vista > Explorador de nube**), haga clic en el proyecto se implementa en el servicio de aplicaciones de Azure y seleccione **adjuntar depurador de instantánea**.
 
    ![Iniciar al depurador de instantánea](../debugger/media/snapshot-launch.png)
 

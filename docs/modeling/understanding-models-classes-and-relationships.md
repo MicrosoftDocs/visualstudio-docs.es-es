@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 408c74dbbf23abee5d548484014e0f2ddc66963e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 394b21d396bf92b794060ff27ed940e25a77aa26
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748493"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
 Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición DSL, junto con cualquier código de programa personalizado que se haya escrito. La mayoría del código de programa en la solución DSL se genera a partir de este archivo.
@@ -25,13 +26,13 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 ## <a name="the-dsl-definition"></a>La definición de DSL
  Cuando se abre `Dsl\DslDefinition.dsl`, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pantalla será similar a la siguiente imagen.
 
- ![Diseñador DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![diseñador dsl](../modeling/media/dsl_designer.png)
 
  La información más importante en la definición de DSL se muestra en el diagrama de definición DSL. Obtener información adicional, que también es parte de DslDefinition.dsl, se muestra en el Explorador de DSL, que normalmente aparece en el lado del diagrama. Trabajar con el diagrama para las tareas más frecuentes y con el Explorador de DSL para las personalizaciones más avanzadas.
 
  El diagrama de definición DSL muestra las clases de dominio que definen los elementos del modelo y las relaciones que definen vínculos entre elementos del modelo. También muestra las formas y conectores que se usan para mostrar los elementos del modelo para el usuario.
 
- ![Diseñador DSL con carril](../modeling/media/dsl_desinger.png "dsl_desinger")
+ ![diseñador dsl con carril (cal](../modeling/media/dsl_desinger.png)
 
  Cuando se selecciona un elemento en la definición DSL, en el diagrama o en el Explorador de DSL, se muestra información sobre él en la ventana Propiedades. Información adicional puede mostrarse en la ventana Detalles de DSL.
 
@@ -45,13 +46,13 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  En esta ilustración se muestra un modelo que se ha creado por el usuario de una biblioteca de música ADSL. Álbumes de música se representan mediante cuadros que contienen listas de canciones. Intérpretes se representan mediante cuadros de esquinas redondeadas y están conectados a los álbumes que han contribuido.
 
- ![Modelo de instancia de DSL generado](../modeling/media/music_instance.png "Music_Instance")
+ ![Modelo de instancia de DSL generado](../modeling/media/music_instance.png)
 
  La definición DSL separa los dos aspectos. La apariencia de los elementos del modelo en el diagrama del modelo se define mediante el uso de las clases de formas y las clases de conector. La información que lleva en el modelo se define mediante las clases de dominio y las relaciones de dominio.
 
  La ilustración siguiente muestra las clases de dominio y las relaciones en la definición DSL de la biblioteca de música.
 
- ![Las relaciones de incrustación y referencia](../modeling/media/music_classes.png "Music_Classes")
+ ![Relaciones de incrustación y referencia](../modeling/media/music_classes.png)
 
  La ilustración muestra cuatro clases de dominio: música, álbum, intérprete y canción. Las clases de dominio definen propiedades de dominio como nombre, título y así sucesivamente. En el modelo de instancia, los valores de algunas de estas propiedades se muestran en el diagrama.
 
@@ -104,7 +105,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 ### <a name="the-explorer-displays-the-embedding-tree"></a>El explorador muestra el árbol de incrustación
  La definición DSL también crea un explorador, que los usuarios ven junto con su diagrama del modelo.
 
- ![Explorador generado de DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Explorador generado de DSL](../modeling/media/music_explorer.png)
 
  El explorador muestra todos los elementos en el modelo, incluso aquellos para los que no ha definido ninguna forma. Muestran los elementos y relaciones de incrustación, pero no hacer referencia a las relaciones.
 
@@ -122,7 +123,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  En la siguiente imagen, la línea entre las **Publisher** clase de dominio y el **PublisherCatalog** relación de dominio es el rol de origen. La línea entre la relación de dominio y el **álbum** clase de dominio es el rol de destino.
 
- ![Las funciones y propiedades. ] (../modeling/media/propertycode.png "PropertyCode")
+ ![Roles y propiedades.](../modeling/media/propertycode.png)
 
  Los nombres asociados con una relación son especialmente importantes cuando se escribe código de programa que atraviesa el modelo. Por ejemplo, cuando se compila la solución DSL, la clase generada publicador tiene una propiedad de catálogo que es una colección de álbumes. La clase álbum tiene una propiedad de publicador que es una única instancia de la clase de publicador.
 

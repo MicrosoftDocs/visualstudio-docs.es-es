@@ -18,21 +18,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aae6789d9961fa3cbf63ce073a33251465ee308a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 357730c8095e9449e9556fd4926afa0bbd53fb30
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767301"
 ---
-# <a name="how-to-create-a-bdc-model"></a>Cómo: Crear un modelo BDC
+# <a name="how-to-create-a-bdc-model"></a>Cómo: crear un modelo BDC
   Puede crear un modelo de conectividad de datos profesionales (BDC) mediante la plantilla para ese tipo de elemento y, a continuación, agregar el modelo a un proyecto de SharePoint. Para obtener más información, consulte [crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md). Para obtener más información sobre cómo diseñar el modelo, vea [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
 ### <a name="to-create-a-bdc-project"></a>Para crear un proyecto BDC  
   
-1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
+1.  En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.  
   
     > [!NOTE]  
-    >  Si su IDE está configurado para usar la configuración de desarrollo de Visual Basic, elija **archivo**, **nuevo proyecto**.  
+    >  Si su IDE está configurado para usar la configuración de desarrollo de Visual Basic, elija **archivo** > **nuevo proyecto**.  
   
      Aparece el cuadro de diálogo **Nuevo proyecto** .  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
      Se crea un proyecto de SharePoint vacío.  
   
-5.  En la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
+5.  En la barra de menús, elija **Proyecto** >  **Agregar nuevo elemento**.  
   
 6.  En el **Agregar nuevo elemento** diálogo cuadro, elija la **Office/SharePoint** nodo.  
   
@@ -61,11 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      A **modelo de conectividad a datos empresariales** elemento se agrega al proyecto. De forma predeterminada, el modelo aparece en el diseñador BDC. Para obtener más información, consulte [crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Cómo: agregar un archivo de modelo BDC existente a un proyecto de SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
  [Cómo: usar un archivo de recursos para especificar nombres localizados, propiedades y permisos](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
  [Cómo: incluir un ensamblado personalizado en una característica BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [Integrar Datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
   

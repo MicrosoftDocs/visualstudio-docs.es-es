@@ -1,5 +1,5 @@
 ---
-title: Descripción co-autoría y complementos | Documentos de Microsoft
+title: Comprender co-autoría y complementos
 ms.custom: ''
 ms.date: 07/20/2017
 ms.technology:
@@ -15,13 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 911db43b820a05928f97e727568582f939560e9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea525a97b38a043137b372f7c224f15c39478a97
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768175"
 ---
-# <a name="understanding-coauthoring-and-add-ins"></a>Descripción co-autoría y complementos
+# <a name="understand-coauthoring-and-add-ins"></a>Comprender co-autoría y complementos
 
 Co-autoría es una característica de escritorio de Excel para Windows que le permite modificar un libro que se hospeda en la nube (es decir, OneDrive, OneDrive para la empresa o SharePoint Online) simultáneamente con otros usuarios. Con la adición de esta característica, debe realizar ajustes a la solución de Excel con el fin de asegurarse de que funciona sin problemas incluso cuando los usuarios se co-autoría. Vea [sobre co-autoría en Excel](https://msdn.microsoft.com/vba/excel-vba/articles/about-coauthoring-in-excel).
 

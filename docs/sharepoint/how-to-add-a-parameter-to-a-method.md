@@ -22,22 +22,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e005152aa7a5b7c1905e768da878e72051bbdb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9268fd0deb463a29c8e6d19e98ad63c86b965292
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767093"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>Cómo: Agregar un parámetro a un método
+# <a name="how-to-add-a-parameter-to-a-method"></a>Cómo: agregar un parámetro a un método
   Usar un parámetro para pasar información en el método o para devolver información de un método. Todos los métodos deben tener al menos un parámetro. Para obtener más información sobre cómo diseñar un parámetro para admitir el tipo de método que se va a crear, vea [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
- Cuando se agrega un parámetro a un método, Visual Studio agrega el `<Parameter>` elemento en el XML del archivo del modelo en el proyecto. Para obtener más información sobre los atributos de un `<Parameter>` elemento, vea [parámetro](http://go.microsoft.com/fwlink/?LinkId=169284).  
+ Cuando se agrega un parámetro a un método, Visual Studio agrega el elemento de parámetro para el XML del archivo del modelo en el proyecto. Para obtener más información acerca de los atributos de un elemento de parámetro, consulte [parámetro](http://go.microsoft.com/fwlink/?LinkId=169284).  
   
 ### <a name="to-add-a-parameter-to-a-method"></a>Para agregar un parámetro a un método  
   
 1.  Agregar un método a una entidad.  
   
-2.  En la barra de menús, elija **vista**, **otras ventanas**, **detalles del método de BDC**.  
+2.  En la barra de menús, elija **vista** > **otras ventanas** > **detalles del método de BDC**.  
   
      El **detalles del método de BDC** abre la ventana. Para obtener más información, consulte [herramientas información general del diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
   
      Aparece un nuevo parámetro debajo la **parámetros** nodo.  
   
-5.  En la barra de menús, elija **vista**, **ventana propiedades**.  
+5.  En la barra de menús, elija **vista** > **ventana propiedades**.  
   
 6.  En el **propiedades** ventana, establezca el **nombre** propiedad a cualquier nombre que tenga sentido. Por ejemplo, si el método devolverá los clientes, podría denominar el método **GetCustomers**.  
   
@@ -57,11 +58,10 @@ ms.lasthandoff: 04/16/2018
   
 8.  Modificar el descriptor de tipo del parámetro. Para obtener más información, consulte [Cómo: definir el Descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Información general de herramientas del diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Cómo: agregar una entidad a un modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Cómo: definir el Descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [Cómo: definir una instancia de método](../sharepoint/how-to-define-a-method-instance.md)   
  [Diseñar un modelo de conectividad a datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
   

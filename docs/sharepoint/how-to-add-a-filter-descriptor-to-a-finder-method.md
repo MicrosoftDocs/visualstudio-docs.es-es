@@ -20,13 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 185876ec788bc3fcba917df77a7044a395bc8375
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 307759881c6795d33dfb5a1c1425402aece05efb
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766619"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Cómo: Agregar un descriptor de filtro para un método Finder
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Cómo: agregar un descriptor de filtro a un método Finder
   Descriptores de filtro permiten a los consumidores del modelo pasar valores a métodos antes de ejecutarlos. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
  Un escenario común es que los usuarios de SharePoint van a recuperar las instancias de un tipo de contenido externo que cumplen algunos criterios. Puede admitir este escenario agregando un descriptor de filtro a un método Finder.  
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  En el **detalles del método** ventana, elija el descriptor de tipo del parámetro.  
   
-3.  En la barra de menús, elija **vista**, **ventana propiedades**.  
+3.  En la barra de menús, elija **vista** > **ventana propiedades**.  
   
 4.  En el **propiedades** ventana, establezca el **nombre de tipo** propiedad a un tipo de datos que es adecuado para el filtro.  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
      Un nuevo descriptor de filtro aparece debajo del **descriptores de filtro** nodo.  
   
-7.  En la barra de menús, elija **vista**, **ventana propiedades**.  
+7.  En la barra de menús, elija **vista** > **ventana propiedades**.  
   
 8.  En el **propiedades** ventana, elija la **tipo** propiedad.  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Cómo: agregar un método Finder](../sharepoint/how-to-add-a-finder-method.md)   
  [Cómo: agregar un método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)   
  [Cómo: agregar un parámetro a un método](../sharepoint/how-to-add-a-parameter-to-a-method.md)   

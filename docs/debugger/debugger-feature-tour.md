@@ -17,7 +17,7 @@ ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34691097"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Busque primero en el depurador de Visual Studio

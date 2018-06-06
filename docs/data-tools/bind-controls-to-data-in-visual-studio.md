@@ -15,11 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4100066d6c6b86bf319cad3bc123098835807acb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27975cf387c92e5afcc61bd267f383a6bed414a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747396"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a datos en Visual Studio
 Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a controles. Puede crear estos controles enlazados a datos arrastrando elementos desde la **orígenes de datos** ventana hasta una superficie de diseño o controles en una superficie en Visual Studio.
@@ -33,7 +34,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
 |Conjunto de datos|Sí|Sí|No|
 |Entity Data Model|Sí<sup>1</sup>|Sí|Sí|
-|Clases LINQ to SQL|Ya no<sup>2</sup>|Ya no<sup>2</sup>|Ya no<sup>2</sup>|
+|Clases LINQ to SQL|No<sup>2</sup>|No<sup>2</sup>|No<sup>2</sup>|
 |Servicios (incluidos [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services y los servicios web)|Sí|Sí|Sí|
 |Object|Sí|Sí|Sí|
 |SharePoint|Sí|Sí|Sí|
@@ -45,7 +46,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 ## <a name="data-sources-window"></a>Ventana de orígenes de datos
  Orígenes de datos están disponibles para su proyecto como elementos en el **orígenes de datos** ventana. Esta ventana está visible o accesible desde el **vista** menú, cuando una superficie de diseño del formulario es la ventana activa en el proyecto. También puede arrastrar elementos desde esta ventana para crear controles que están enlazados a los datos subyacentes y también puede configurar los orígenes de datos con el botón secundario.
 
- ![Ventana Orígenes de datos](../data-tools/media/raddata-data-sources-window.png "raddata ventana de orígenes de datos")
+ ![Ventana de orígenes de datos](../data-tools/media/raddata-data-sources-window.png)
 
  Para cada tipo de datos que aparece en el **orígenes de datos** ventana, se crea un control predeterminado al arrastrar el elemento hasta el diseñador. Antes de arrastrar un elemento de la **orígenes de datos** ventana, puede cambiar el control que se va a crear. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana de orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 

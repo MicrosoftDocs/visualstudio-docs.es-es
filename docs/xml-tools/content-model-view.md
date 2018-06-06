@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 355fe0485327c5c92441cd54d42253d022c7bb6e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 0d7f04c482149cbc063a3788dd6be44c643bae6a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751798"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 
@@ -22,7 +23,7 @@ La vista Modelo de contenido proporciona una representación gráfica de los nod
 
  En la siguiente imagen, el **área de trabajo** panel contiene seis nodos de esquema. El `purchaseOrder` nodo está seleccionado en el **área de trabajo** panel y se muestra en la superficie de diseño.
 
- ![Vista de modelo de contenido del Diseñador de esquemas XML](../xml-tools/media/xsddesigner_contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![Vista Modelo de contenido del Diseñador de esquemas XML](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Panel área de trabajo
 
@@ -78,7 +79,7 @@ La vista Modelo de contenido proporciona una representación gráfica de los nod
 
  Los siguientes botones de la barra de herramientas de Diseñador XSD están habilitados cuando está activa la vista Modelo de contenido.
 
- ![Barra de herramientas de diseñador de esquemas XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![Barra de herramientas del Diseñador de esquemas XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Opción|Descripción|
 |------------|-----------------|

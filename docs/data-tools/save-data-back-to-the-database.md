@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6ecbf8e67b2c8db1b33fa1c5228d9d94f98e48c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691139"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748064"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 El conjunto de datos es una copia en memoria de datos. Si modifica datos, es una buena práctica para guardar los cambios en la base de datos. Para ello en uno de tres maneras:
@@ -60,7 +60,7 @@ Si está familiarizado con los TableAdapters, puede ir directamente a uno de est
 
  Si envía los cambios a la base de datos, un segundo paso es necesario. Si no está utilizando controles enlazados a datos, a continuación, se debe llamar manualmente al método Update del mismo TableAdapter (o adaptador de datos) que se utilizó para llenar el conjunto de datos. Sin embargo, también puede utilizar adaptadores diferentes, por ejemplo, para mover datos desde un origen de datos a otro o para actualizar múltiples orígenes de datos. Si no está usando el enlace de datos y está guardando los cambios para las tablas relacionadas, tendrá que crear manualmente una instancia de una variable de la clase de TableAdapterManager generado automáticamente y, a continuación, llame a su método UdpateAll.
 
- ![Las actualizaciones del conjunto de datos de Visual Basic](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates") dos fases actualizar proceso y el rol de DataRowVersion en una actualización correcta
+ ![Las actualizaciones del conjunto de datos de Visual Basic](../data-tools/media/vbdatasetupdates.gif) dos fases actualizar proceso y el rol de DataRowVersion en una actualización correcta
 
  Un conjunto de datos contiene colecciones de las tablas que contienen una colección de filas. Si tiene previsto actualizar un origen de datos subyacente más adelante, debe utilizar los métodos en la propiedad DataTable.DataRowCollection al agregar o quitar las filas. Los métodos realizan el seguimiento de cambios que se necesita para actualizar el origen de datos. Si se llama a la colección RemoveAt en la propiedad de filas, la eliminación no se comunican a la base de datos.
 

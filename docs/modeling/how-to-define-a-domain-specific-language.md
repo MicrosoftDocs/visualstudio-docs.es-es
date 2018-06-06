@@ -18,11 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4aea2750e3900beb0aaa62156c215376ff16d1ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f870bce3abea444d6a04c0076d7110345c55ea7c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750433"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 Para definir un lenguaje específico de dominio (DSL), cree una solución de Visual Studio desde una plantilla. La parte clave de la solución es el diagrama DSL Definition (Definición de DSL), que se almacena en DslDefinition.dsl. DSL Definition (Definición de DSL) define las clases y las formas del DSL. Después de modificar y agregar estos elementos, puede agregar código de programa para personalizar el DSL con más detalle.
@@ -48,7 +49,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
 1.  Crear una solución con la **lenguaje específico de dominio** plantilla, que puede encontrarse en **extensibilidad/tipos de otros proyectos** en el **nuevo proyecto** cuadro de diálogo.
 
-     ![Cuadro de diálogo DSL crear](../modeling/media/create_dsldialog.png "Create_DSLDialog")
+     ![Cuadro de diálogo para crear solución DSL](../modeling/media/create_dsldialog.png)
 
      Al hacer clic en **Aceptar**, **Asistente de lenguaje específico de dominio** se abre y muestra una lista de soluciones DSL de plantilla.
 
@@ -86,7 +87,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
  Ahora, la interfaz de usuario es similar a la imagen siguiente.
 
- ![Diseñador DSL](../modeling/media/dsl_designer.png "dsl_designer")
+ ![diseñador dsl](../modeling/media/dsl_designer.png)
 
  Esta solución define un lenguaje específico de dominio. Para obtener más información, consulte [información general de la interfaz de usuario de herramientas de lenguaje específico de dominio](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -99,7 +100,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
  Si se ejecuta una solución que ha creado desde el **lenguaje mínimo** plantilla, el Visual Studio experimental parecerán al ejemplo siguiente:
 
- ![](../modeling/media/dsl_min.png "DSL_min")
+ ![](../modeling/media/dsl_min.png)
 
  Experimente con las herramientas. Cree elementos y conéctelos.
 
@@ -139,11 +140,11 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
  La figura siguiente muestra las clases y relaciones que forman parte del DSL y que se usan como ejemplo en este tema.
 
- ![Las relaciones de incrustación y referencia](../modeling/media/music_classes.png "Music_Classes")
+ ![Relaciones de incrustación y referencia](../modeling/media/music_classes.png)
 
  La siguiente figura es un modelo de ejemplo de este DSL:
 
- ![Modelo de instancia de DSL generado](../modeling/media/music_instance.png "Music_Instance")
+ ![Modelo de instancia de DSL generado](../modeling/media/music_instance.png)
 
 > [!NOTE]
 >  Con "modelo" nos referimos a una instancia de su DSL que los usuarios crean y que normalmente se muestra como un diagrama. En este tema se explican tanto el diagrama DSL Definition (Definición de DSL) como los diagramas de modelo que aparecen cuando se usa su DSL.
@@ -235,7 +236,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Para definir una clase de elementos que aparecen como formas en un diagrama
 
-1.  **Definir y probar una clase de dominio tal y como se describe en**[definir clases de dominio](#classes) **.** 
+1.  **Definir y probar una clase de dominio tal y como se describe en**[definir clases de dominio](#classes) **.**
 
     -   La clase primaria debería ser la clase raíz. Es decir, debería haber una relación de incrustación entre la clase raíz y la nueva clase de dominio.
 
@@ -285,7 +286,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
     4.  Asegúrese de que hay una marca de verificación junto al nombre de cada elemento Decorator.
 
-     ![Ventana de asignaciones de formas y detalles de DSL](../modeling/media/dsldetailswindow.png "DslDetailsWindow")
+     ![Ventana de asignaciones de formas y detalles de DSL](../modeling/media/dsldetailswindow.png)
 
 7.  **Asegúrese de un elemento de cuadro de herramientas para crear elementos de la clase de dominio.**
 
@@ -331,7 +332,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
  Por ejemplo, si los álbumes y los artistas se muestran como formas en el diagrama, podría definir una relación llamada ArtistsAppearedOnAlbums que vincula los artistas con los álbumes en los que han trabajado. Vea el ejemplo en la figura.
 
- ![Modelo de instancia de DSL generado](../modeling/media/music_instance.png "Music_Instance")
+ ![Modelo de instancia de DSL generado](../modeling/media/music_instance.png)
 
  Las relaciones de referencia también pueden vincular elementos del mismo tipo. Por ejemplo, en un DSL que representa un árbol genealógico, la relación entre los padres y los hijos es una relación de referencia de persona a persona.
 
@@ -348,7 +349,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
  **Establece la propiedad permite duplicados de la relación,** si más de un vínculo de la misma clase puede existir entre el mismo par de elementos de modelo. Por ejemplo, podría permitir que un Profesor enseñe más de una Asignatura al mismo Estudiante.
 
- ![Mapas para los conectores de forma](../modeling/media/music_connector.png "Music_Connector")
+ ![Asignaciones de formas para conectores](../modeling/media/music_connector.png)
 
  Para obtener más información, consulte [propiedades de las relaciones de dominio](../modeling/properties-of-domain-relationships.md) y [propiedades de las funciones de dominio](../modeling/properties-of-domain-roles.md).
 
@@ -411,11 +412,11 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 ##  <a name="compartments"></a> Definir formas que contienen listas: compartimiento de formas
  Una forma de compartimiento contiene una o varias listas de elementos. Por ejemplo, en un DSL de biblioteca de música, podría usar formas de compartimiento para representar álbumes de música. En cada álbum, hay una lista de canciones.
 
- ![Forma de compartimiento](../modeling/media/compartmentshape.png "CompartmentShape")
+ ![Forma de compartimiento](../modeling/media/compartmentshape.png)
 
  En el método más sencillo de lograr este efecto en una definición de DSL, se define una clase de dominio para el contenedor y una clase de dominio para cada lista. La clase de contenedor se asigna a la forma de compartimiento.
 
- ![Mapa de formas](../modeling/media/music_mapcomp.png "Music_MapComp")
+ ![Asignación de formas](../modeling/media/music_mapcomp.png)
 
  Para obtener más información, consulte [propiedades de compartimiento formas](../modeling/properties-of-compartment-shapes.md).
 
@@ -505,7 +506,7 @@ Si está familiarizado con DSL, recomendamos que trabaje a través de la **DSL h
 
 7.  Abra el explorador del lenguaje. Compruebe que puede ver los nodos de contenedor con los nodos de elemento de lista dentro.
 
- ![Explorador generado de DSL](../modeling/media/music_explorer.png "Music_Explorer")
+ ![Explorador generado de DSL](../modeling/media/music_explorer.png)
 
  Después de probar una forma de compartimiento por primera vez, quizás quiera ajustar algunas de sus propiedades y agregar algunas características más avanzadas. Para obtener más información, consulte [personalizar y ampliar un lenguaje específico de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 

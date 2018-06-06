@@ -9,16 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ce2fa2f067b72d051aa21eba0db2b8f0eda8b43f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f4cfe9549880646fe9ba0a487045b005366c075
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749481"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico de dominio (DSL), en lugar de utilizar un diagrama DSL. Este tema explica cómo enlazar un formulario Windows Forms a un DSL, usando la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2") instancia un DSL, que muestra una interfaz de usuario del formulario de Windows y el Explorador de modelos.
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) instancia un DSL, que muestra una interfaz de usuario del formulario de Windows y el Explorador de modelos.
 
 ## <a name="creating-a-windows-forms-dsl"></a>Crear un formulario Windows Forms DSL
  El **mínimo diseñador WinForm** plantilla DSL crea un DSL mínimo que se puede modificar para satisfacer sus propias necesidades.
@@ -68,7 +69,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 ## <a name="updating-the-dsl-definition"></a>Actualización de la definición de DSL
  Los siguientes que la definición DSL se utiliza en este tutorial.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 #### <a name="to-update-the-dsl-definition"></a>Para actualizar la definición de DSL
 
@@ -127,7 +128,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
      Las propiedades y relaciones de la clase del modelo aparecen en la ventana de orígenes de datos.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
 #### <a name="to-connect-your-model-to-a-form"></a>Para conectar el modelo a un formulario
 
@@ -172,7 +173,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
 -   Garantiza que, cuando el usuario selecciona una fila, la ventana Propiedades muestra las propiedades del elemento del modelo correspondiente, en lugar de la fila de cuadrícula de datos.
 
- ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4") esquema de vínculos entre los orígenes de datos y vistas.
+ ![DslWpf4](../modeling/media/dslwpf4.png) esquema de vínculos entre los orígenes de datos y vistas.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Para completar los enlaces a la línea ADSL
 
@@ -301,7 +302,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 
      Puede modificar el nombre del elemento en la vista de cuadrícula de datos. También puede eliminar desde allí.
 
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Acerca del código para agregar un elemento
  Para los nuevos botones de elemento, el siguiente código alternativo es un poco más simple.

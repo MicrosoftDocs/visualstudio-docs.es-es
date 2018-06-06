@@ -28,14 +28,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 882c2edfc097b8da57cc26c431cbaaa72ba200b6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2a9cb18d1b9de7f4f67f8c3d153a9dfa4598612d
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34691537"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765731"
 ---
-# <a name="creating-web-parts-for-sharepoint"></a>Crear elementos web para SharePoint
+# <a name="create-web-parts-for-sharepoint"></a>Crear elementos web para SharePoint
   Usando elementos web, puede modificar el contenido, el aspecto y el comportamiento de las páginas de un sitio de SharePoint a través de un explorador. Los elementos web son controles de servidor que se ejecutan dentro de una página de elementos web: son los bloques de creación de las páginas que aparecen en un sitio de SharePoint. Vea [bloques de creación: elementos Web](http://go.microsoft.com/fwlink/?LinkID=182097).  
   
  Puede crear y depurar elementos web en un sitio de SharePoint mediante el uso de plantillas de Visual Studio.  
@@ -50,7 +50,7 @@ ms.locfileid: "34691537"
   
 |Archivo|Descripción|  
 |----------|-----------------|  
-|Elements.xml|Contiene información que utiliza el archivo de definición de características en el proyecto para implementar el elemento web.|  
+|*Elements.Xml*|Contiene información que utiliza el archivo de definición de características en el proyecto para implementar el elemento web.|  
 |Archivo .webpart|Proporciona información que SharePoint necesita para mostrar el elemento web en una galería de elementos web.|  
 |Archivo de código|Contiene métodos que agregan controles al elemento web y generan el contenido personalizado dentro del elemento web.|  
   
@@ -65,14 +65,14 @@ ms.locfileid: "34691537"
 |Nombre del control|Descripción|  
 |------------------|-----------------|  
 |[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Inserta un menú de ASP. Para obtener más información, consulte [información general sobre el Control de menú](http://go.microsoft.com/fwlink/?LinkId=235316).|  
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Inserta un **vínculo** elemento en la página .aspx y aplica una o más hojas de estilos externas definidas por **CssRegistration**.|  
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Inserta un control DateTime en la página .aspx.|  
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Inserta una validación de seguridad en la página .aspx|  
+|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Inserta un **vínculo** elemento en el *.aspx* página y se aplica una o más hojas de estilos externas definidas por **CssRegistration**.|  
+|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Inserta un control de fecha y hora en la *.aspx* página.|  
+|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Inserta una validación de seguridad en el *.aspx* página|  
 |[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Devuelve una propiedad de una lista especificada.|  
 |[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Devuelve una propiedad global del sitio web actual.|  
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Inserta un vínculo a una fuente RSS en la página .aspx.|  
+|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Inserta un vínculo a una fuente RSS en la *.aspx* página.|  
 |[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Proporciona propiedades y métodos para registrar recursos, como scripts, en una página para que se puedan solicitar cuando se representa la página.|  
-|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Aplica un tema a la página .aspx.|  
+|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Se aplica un tema a la *.aspx* página.|  
   
 ## <a name="debug-a-web-part"></a>Depurar un elemento web
  Puede depurar un proyecto de SharePoint que contiene un elemento web igual que otros proyectos de Visual Studio. Al iniciar el depurador de Visual Studio, Visual Studio abre el sitio de SharePoint.  

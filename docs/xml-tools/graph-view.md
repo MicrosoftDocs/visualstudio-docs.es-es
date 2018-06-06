@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751707"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -22,7 +23,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  La imagen siguiente muestra la vista Gráfico con seis nodos globales en su superficie de diseño.
 
- ![Vista de gráfico del Diseñador de esquemas XML](../xml-tools/media/xsddesigner_graphview.gif "XSDDesigner_GraphView")
+ ![Vista Gráfico del Diseñador de esquemas XML](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Superficie de diseño
 
@@ -34,7 +35,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  Si la superficie de diseño está en blanco, el Editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas del diseñador XSD.
 
- ![Diseñador XSD; Vista gráfica](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![Diseñador XSD; vista Gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
  Si el conjunto de esquemas tiene errores, se muestra el texto siguiente al final de la lista: "Use la lista de errores para ver y corregir los errores en el conjunto de esquemas".
 
@@ -98,7 +99,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  Cuando está activa la vista Gráfico, los botones siguientes de la barra de herramientas de XSD están habilitados.
 
- ![Barra de herramientas de diseñador de esquemas XML](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Barra de herramientas del Diseñador de esquemas XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opción|Descripción|
 |------------|-----------------|

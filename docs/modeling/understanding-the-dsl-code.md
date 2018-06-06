@@ -11,11 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c5daaad156b2a4372ab43a19ba2f2bdd6cdb87b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27581387b9775d2e2cf4401c811dab09b15c3722
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748678"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 Una solución de lenguaje específico de dominio (DSL) genera una API que puede usar para leer y actualizar instancias del DSL en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
@@ -28,7 +29,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  Si no está familiarizado con esta plantilla de solución, presione F5 y experimente. En concreto, tenga en cuenta que los puertos se crean arrastrando una herramienta de puerto a un componente, y que puede conectar puertos.
 
- ![Componentes y puertos interconectados](../modeling/media/componentsample.png "ComponentSample")
+ ![Componentes y puertos interconectados](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Estructura de la solución de DSL
  El **Dsl** proyecto que define la API para ADSL. El **DslPackage** proyecto que define cómo se integra con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. También puede agregar sus propios proyectos, que también pueden contener código generado a partir del modelo.

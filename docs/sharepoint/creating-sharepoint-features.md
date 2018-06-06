@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d119e84bba07c68e8d0466902d52d4ed9d151123
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ec6f0ef523733a0737b6d762d2835073ed1f3c06
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34692020"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766394"
 ---
-# <a name="creating-sharepoint-features"></a>Crear características de SharePoint
+# <a name="create-sharepoint-features"></a>Crear características de SharePoint
   Puede usar una característica de SharePoint para agrupar elementos relacionados de proyecto de SharePoint para una implementación más sencilla. Puede crear características, establecer ámbitos y marcar otras características como dependencias utilizando el Diseñador de características de SharePoint. El diseñador también genera un manifiesto, que es un archivo XML que describe cada característica.  
   
 ## <a name="add-features-to-the-sharepoint-solution"></a>Agregar características a la solución de SharePoint

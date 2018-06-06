@@ -19,13 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dafa11c17968eb5468ecd4eff462ff9474ce5131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8c838880dd7d7e7adfe080541f1419bd4651ff3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767447"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Cómo: Agregar y quitar características y elementos de un paquete con el explorador de empaquetado
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Cómo: agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado
   Para configurar un paquete para implementar elementos de SharePoint y las características, puede utilizar el Explorador de empaquetado. Puede ajustar los elementos de proyecto de SharePoint y características en el archivo .wsp.  
   
  Como alternativa, puede utilizar el Diseñador de paquetes para ver y cambiar el orden de las características que se va a cambiar el orden de activación. Para obtener más información, consulte [Cómo: agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).  
@@ -35,14 +36,14 @@ ms.lasthandoff: 04/16/2018
   
 #### <a name="to-open-the-packaging-explorer"></a>Para abrir el Explorador de empaquetado  
   
-1.  En la barra de menús, elija **vista**, **otras ventanas**, **Explorador de empaquetado**.  
+1.  En la barra de menús, elija **vista** > **otras ventanas** > **Explorador de empaquetado**.  
   
      El **Explorador de empaquetado** aparece en la **cuadro de herramientas**.  
   
 ## <a name="adding-a-feature-to-a-package"></a>Agregar una característica a un paquete  
  Puede agregar características nuevas y existentes a un paquete mediante el Explorador de empaquetado.  
   
-#### <a name="to-add-a-sharepoint-feature"></a>Para agregar una característica de SharePoint  
+#### <a name="to-add-a-sharepoint-feature"></a>Para agregar una característica de SharePoint
   
 1.  Abra la **Explorador de empaquetado**, abra el menú contextual para el proyecto y, a continuación, elija **Agregar característica**.  
   
@@ -60,13 +61,12 @@ ms.lasthandoff: 04/16/2018
 ## <a name="validating-a-feature-or-package"></a>Validar una característica o paquete  
  Puede identificar los posibles problemas en los paquetes y características de SharePoint mediante la validación de los archivos. Errores y advertencias se muestran en la ventana de salida y la ventana Lista de errores.  
   
-#### <a name="to-validate-a-sharepoint-feature-or-package"></a>Para validar un paquete o una característica de SharePoint  
+#### <a name="to-validate-a-sharepoint-feature-or-package"></a>Para validar un paquete o una característica de SharePoint
   
 1.  Abra la **Explorador de empaquetado**.  
   
 2.  Abrir un menú contextual para una característica o paquete y, a continuación, elija **validar**.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

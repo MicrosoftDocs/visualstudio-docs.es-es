@@ -20,25 +20,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43ec8b7c18d99880b1ab932ea28a371a7604b636
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8cf70cf7f69091590c950d6b5eccd6393708e7c9
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767214"
 ---
-# <a name="how-to-add-and-remove-mapped-folders"></a>Cómo: Agregar y quitar carpetas asignadas
+# <a name="how-to-add-and-remove-mapped-folders"></a>Cómo: agregar y quitar carpetas asignadas
   Algunas carpetas usadas habitualmente en SharePoint, como imágenes y diseños, profundamente se incrustan en la jerarquía de archivos. Puede asignar estas carpetas en un proyecto de SharePoint para tener acceso a ellos más fácilmente. Las carpetas asignadas son carpetas en el proyecto de SharePoint que corresponden a la ubicación física de los archivos de la instalación del servidor de SharePoint.  
   
  Al implementar una aplicación de SharePoint, el contenido de la carpeta asignada y todas sus subcarpetas se copian por el paquete de solución (.wsp) en el servidor que ejecuta SharePoint en la ubicación especificada en el árbol de carpetas de SharePoint. Esta ubicación viene determinada por la **ubicación de implementación** propiedad que se establece para la carpeta asignada. Todas las subcarpetas de la carpeta asignada son relativo a **ubicación de implementación** de la carpeta asignada. Tenga en cuenta que la **ubicación de implementación** propiedad, no el nombre de la carpeta asignada, determina dónde se implementan los elementos.  
-  
  Puede agregar las carpetas asignadas a un proyecto mediante el uso de comandos en la barra de menús o en el menú contextual para el proyecto. Puede usar el **carpeta asignada de SharePoint agregar "Imágenes"** y **agregar SharePoint "Diseños" carpeta** asignan de comandos para agregarlas carpetas que se usan con más frecuencia. Puede asignar cualquiera de las otras carpetas de SharePoint disponibles para el proyecto utilizando la **Agregar carpeta asignada de SharePoint** de comandos en el menú contextual y, a continuación, especificar las carpetas en el **Agregar carpeta asignada de SharePoint** cuadro de diálogo.  
   
-## <a name="adding-mapped-folders-to-a-project"></a>Agregar las carpetas asignadas a un proyecto  
+## <a name="add-mapped-folders-to-a-project"></a>Agregar las carpetas asignadas a un proyecto  
  El siguiente procedimiento describe cómo agregar dos carpetas asignadas a un proyecto de elemento web visual. Para empezar, cree un proyecto de elemento web visual.  
   
 #### <a name="to-add-mapped-folders-to-a-project"></a>Para agregar las carpetas asignadas a un proyecto  
   
-1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
+1.  En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.  
   
 2.  En el **nuevo proyecto** diálogo cuadro, expanda el el **Visual Basic** o **Visual C#** nodo, expanda el **Office/SharePoint** nodo y, a continuación, Elija la **soluciones de SharePoint** nodo.  
   
@@ -48,17 +48,17 @@ ms.lasthandoff: 04/16/2018
   
 5.  En el **Asistente para personalización de SharePoint**, elija la **finalizar** botón para conservar la configuración predeterminada.  
   
-6.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto**, **agregar SharePoint "Imágenes" asignado carpeta**.  
+6.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **agregar SharePoint "Imágenes" asignado carpeta**.  
   
      Una carpeta que se denomina **imágenes** aparece en el proyecto y contiene una subcarpeta denominada TestProject1. Esta carpeta asignada contiene imágenes para el proyecto del elemento web visual.  
   
-7.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto**, **Agregar carpeta asignada de SharePoint** para mostrar el **agregar Carpeta asignada de SharePoint** cuadro de diálogo.  
+7.  En **el Explorador de soluciones**, elija el nodo del proyecto y, a continuación, en la barra de menús, elija **proyecto** > **Agregar carpeta asignada de SharePoint** para mostrar el  **Agregar carpeta asignada de SharePoint** cuadro de diálogo.  
   
 8.  En la vista de árbol de carpetas que están disponibles para la asignación, elija la **recursos** carpeta y, a continuación, elija la **Aceptar** botón.  
   
-     Una carpeta que se denomina **recursos** aparece en el proyecto. Esta carpeta puede almacenar los elementos como archivos de recursos de cadena. Las subcarpetas pueden ser útiles para organizar el contenido de una carpeta asignada, pero se crean automáticamente cuando agrega una carpeta asignada mediante el **Agregar carpeta asignada de SharePoint** comando. Para agregar una subcarpeta, elija la **recursos** carpeta y, a continuación, en la barra de menús, elija **proyecto**, **nueva carpeta**.  
+     Una carpeta que se denomina **recursos** aparece en el proyecto. Esta carpeta puede almacenar los elementos como archivos de recursos de cadena. Las subcarpetas pueden ser útiles para organizar el contenido de una carpeta asignada, pero se crean automáticamente cuando agrega una carpeta asignada mediante el **Agregar carpeta asignada de SharePoint** comando. Para agregar una subcarpeta, elija la **recursos** carpeta y, a continuación, en la barra de menús, elija **proyecto** > **nueva carpeta**.  
   
-## <a name="changing-the-deployment-location-of-a-mapped-folder"></a>Cambiar la ubicación de implementación de una carpeta asignada  
+## <a name="change-the-deployment-location-of-a-mapped-folder"></a>Cambiar la ubicación de implementación de una carpeta asignada  
  De forma predeterminada, se agregan las carpetas asignadas a ubicaciones específicas en relación con la ruta de instalación raíz de SharePoint, que indica el token {SharePointRoot}. Sin embargo, puede cambiar esta ubicación cambiando el **ubicación de implementación** propiedad de la carpeta asignada. Cada carpeta asignada tiene su propio **ubicación de implementación** propiedad.  
   
 #### <a name="to-change-the-deployment-location-of-a-mapped-folder"></a>Para cambiar la ubicación de implementación de una carpeta asignada  
@@ -71,7 +71,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Elija el nodo y, a continuación, elija la **Aceptar** botón.  
   
-## <a name="renaming-or-removing-mapped-folders"></a>Cambiar el nombre o quitar carpetas asignadas  
+## <a name="rename-or-remove-mapped-folders"></a>Cambiar el nombre o quitar carpetas asignadas  
   
 #### <a name="to-rename-or-remove-a-mapped-folder"></a>Para cambiar el nombre o quitar una carpeta asignada  
   
@@ -83,7 +83,6 @@ ms.lasthandoff: 04/16/2018
   
 3.  Para quitar una carpeta asignada desde el proyecto, abra el menú contextual, elija **eliminar**y, a continuación, elija la **Aceptar** botón en el cuadro de diálogo para confirmar la eliminación.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Desarrollar soluciones de SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

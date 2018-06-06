@@ -37,7 +37,7 @@ ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34692618"
 ---
 # <a name="office-project-templates-overview"></a>Información general de plantillas de proyecto de Office
