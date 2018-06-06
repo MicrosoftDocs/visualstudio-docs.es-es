@@ -16,10 +16,10 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: 8da42ad20a42e24ee826a559c6d1d38efb172100
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/06/2018
 ms.locfileid: "34767642"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar las personalizaciones de la cinta de opciones en proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5

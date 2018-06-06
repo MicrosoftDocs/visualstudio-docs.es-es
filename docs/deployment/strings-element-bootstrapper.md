@@ -20,18 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df186776e9f1fe431343c8643e5186ff522dfff6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fccc928efe8d30ef5a2ee99b476a5b0e35b2090e
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815449"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Cadenas&gt; elemento (arranque)
 Define las cadenas localizadas para nombres de productos, nombres de paquete y mensajes de error de instalación.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml  
 <Strings>  
     <String  
         Name  
@@ -55,7 +56,7 @@ Define las cadenas localizadas para nombres de productos, nombres de paquete y m
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se especifica todas las cadenas en inglés para el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalador.  
   
-```  
+```xml  
 <Strings>  
     <String Name="DisplayName">.NET Framework 2.0</String>  
     <String Name="Culture">en</String>  

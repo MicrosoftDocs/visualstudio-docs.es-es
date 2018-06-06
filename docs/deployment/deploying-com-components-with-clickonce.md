@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 740d72f0ec339ded8ec8b721bbc2b94d706f8da7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ab25276596358f7c0a8c1f90bd38e89686e3196c
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815878"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implementar componentes COM con ClickOnce
 Implementación de componentes COM heredados ha sido tradicionalmente una tarea difícil. Los componentes tienen que ser registrados globalmente y, por tanto, pueden provocar efectos secundarios no deseados entre aplicaciones superpuestas. Normalmente esta situación no es un problema en las aplicaciones de .NET Framework porque los componentes se aíslan completamente a una aplicación o son compatibles en paralelo. Visual Studio permite implementar componentes COM aislados en Windows XP o un sistema operativo posterior.  
@@ -69,7 +70,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
 4.  En Class1.vb, agregue el código siguiente después del código generado para el `New` método:  
   
-    ```  
+    ```vb  
     Public Sub SayHello()  
        MsgBox "Message from the VB6Hello COM component"  
     End Sub  
@@ -102,7 +103,7 @@ Implementación de componentes COM heredados ha sido tradicionalmente una tarea 
   
 8.  Haga doble clic en el botón para agregar el código del controlador y, en el archivo de código, agregue código para que el controlador quede como sigue:  
   
-    ```  
+    ```vb  
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
         Dim VbObj As New VB6Hello.Class1  
         VbObj.SayHello()  

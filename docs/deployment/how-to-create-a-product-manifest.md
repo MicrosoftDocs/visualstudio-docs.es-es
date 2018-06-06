@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cac17f0b4ca7a2dd4e5c4cf6f1f2da9e4dc5f54
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bdb95f417cadac04a04e30b1e965392f2492d864
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815774"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Cómo: Crear un manifiesto de producto
 Para implementar los requisitos previos para la aplicación, puede crear un paquete de arranque. Un paquete de arranque contiene un archivo de manifiesto de producto único pero un manifiesto del paquete para cada configuración regional. El manifiesto del paquete contiene aspectos específicos de la localización de su paquete. Esto incluye cadenas, contratos de licencia de usuario final y los paquetes de idioma.  
@@ -41,7 +42,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
   
 3.  Agregue el siguiente código XML para describir el código de producto y de espacio de nombres XML para el paquete. Reemplace el código de producto con un identificador único para el paquete.  
   
-    ```  
+    ```xml  
     <Product  
     xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"   
     ProductCode="Custom.Bootstrapper.Package">  
@@ -49,7 +50,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
   
 4.  Agregue el código XML para especificar que el paquete tiene una dependencia. Este ejemplo utiliza una dependencia en Microsoft Windows Installer 3.1.  
   
-    ```  
+    ```xml  
     <RelatedProducts>  
         <DependsOnProduct Code="Microsoft.Windows.Installer.3.1" />  
       </RelatedProducts>  
@@ -57,7 +58,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
   
 5.  Agregue el código XML para obtener una lista de todos los archivos que se encuentran en el paquete del programa previo. En este ejemplo se utiliza el nombre de archivo de paquete CorePackage.msi.  
   
-    ```  
+    ```xml  
     <PackageFiles>  
         <PackageFile Name="CorePackage.msi"/>  
     </PackageFiles>  
@@ -67,14 +68,14 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
   
 7.  Agregue el código XML para instalar el paquete mediante los comandos del programa previo. El programa previo se agrega automáticamente el **/qn** marca para el archivo .msi, que se instalará en modo silencioso. Si el archivo .exe, el programa previo ejecuta el archivo .exe mediante el shell. El siguiente XML no muestra ningún argumento a CorePackage.msi, pero se puede colocar el argumento de línea de comandos en el atributo de argumentos.  
   
-    ```  
+    ```xml  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
 8.  Agregue el siguiente código XML para comprobar si se instaló este paquete de programa previo. Reemplace el código de producto con el GUID del componente redistribuible.  
   
-    ```  
+    ```xml  
     <InstallChecks>  
         <MsiProductCheck   
             Property="IsMsiInstalled"   
@@ -84,7 +85,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
   
 9. Agregue el código XML para cambiar el comportamiento del programa previo en función de si ya está instalado el componente de programa previo. Si el componente está instalado, el paquete de arranque no se ejecuta. El siguiente código XML comprueba si el usuario actual es un administrador porque este componente requiere privilegios administrativos.  
   
-    ```  
+    ```xml  
     <InstallConditions>  
         <BypassIf   
            Property="IsMsiInstalled"   
@@ -97,7 +98,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
   
 10. Agregue el código XML para establecer los códigos de salida si la instalación es correcta y si es necesario reiniciar el equipo. El siguiente código XML muestra que el error y FailReboot códigos, lo que indica que el programa previo no podrán continuar instalando paquetes de salida.  
   
-    ```  
+    ```xml  
     <ExitCodes>  
         <ExitCode Value="0" Result="Success"/>  
         <ExitCode Value="1641" Result="SuccessReboot"/>  
@@ -108,7 +109,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
   
 11. Agregue el siguiente código XML para finalizar la sección para los comandos del programa previo.  
   
-    ```  
+    ```xml  
         </Command>  
     </Commands>  
     ```  
@@ -118,7 +119,7 @@ Para implementar los requisitos previos para la aplicación, puede crear un paqu
 ## <a name="example"></a>Ejemplo  
  El manifiesto del producto contiene instrucciones de instalación de requisitos previos personalizados.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Product  
   xmlns="http://schemas.microsoft.com/developer/2004/01/bootstrapper"  

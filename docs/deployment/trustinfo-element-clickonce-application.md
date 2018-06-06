@@ -24,18 +24,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 516ed9ae36b97a75e5185c69b89fadf587ddeaa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34816008"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicación ClickOnce)
 Describe los permisos de seguridad mínimos necesarios para que la aplicación se ejecute en el equipo cliente.  
   
 ## <a name="syntax"></a>Sintaxis  
   
-```  
+```xml
   
       <trustInfo>  
    <security>  
@@ -104,7 +105,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
      Requerido. Identifica si la aplicación necesita una concesión sin restricciones de este permiso. Si es `true`, la concesión del permiso es incondicional. Si es `false`, o si este atributo no está definido, se restringe según los atributos específicos del permiso definidos en la etiqueta `IPermission` . Seleccione los permisos siguientes:  
   
-    ```  
+    ```xml  
     <IPermission  
       class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"   
       version="1"   
@@ -169,7 +170,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
  El primer ejemplo ilustra el elemento `trustInfo` para los permisos predeterminados disponibles en la zona de seguridad de Internet.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -205,7 +206,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
  El segundo ejemplo ilustra el elemento `trustInfo` para los permisos predeterminados disponibles en la zona de seguridad LocalIntranet.  
   
-```  
+```xml  
 <trustInfo>  
     <security>  
       <applicationRequestMinimum>  
@@ -257,7 +258,7 @@ Describe los permisos de seguridad mínimos necesarios para que la aplicación s
   
  El tercer ejemplo ilustra el elemento `trustInfo` para los permisos predeterminados disponibles en la zona de seguridad FullTrust.  
   
-```  
+```xml  
 <trustInfo>  
   <security>  
     <applicationRequestMinimum>  

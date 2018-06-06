@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c05d1317c2b8040baf23c98cff8a032f14f47798
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0ea5606913a4afb082fda09644dad7af8031a7e2
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815079"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Cómo: Usar ClickOnce para implementar aplicaciones que se pueden ejecutar en varias versiones de .NET Framework
 Puede implementar una aplicación que tenga como destino varias versiones de .NET Framework mediante la tecnología de implementación de ClickOnce. Esto requiere que generar y actualizar los manifiestos de aplicación e implementación.  
@@ -85,13 +86,13 @@ Puede implementar una aplicación que tenga como destino varias versiones de .NE
   
 2.  Agregar `group="framework"` a la dependencia XML para los ensamblados de centinela (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, y `System.Data.Entity`). Por ejemplo, el código XML debe ser similar al siguiente:  
   
-    ```  
+    ```xml  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
 3.  Actualizar el número de versión de la `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime en el número de versión de .NET Framework que es el denominador común. Por ejemplo, si la aplicación tiene como destino .NET Framework 3.5 y [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], use el 2.0.50727.0 número de versión y el código XML deben ser similar al siguiente:  
   
-    ```  
+    ```xml  
     <dependency>  
       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">  
         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />  
