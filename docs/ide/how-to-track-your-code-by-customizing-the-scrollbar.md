@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7094aba90a8844480536e6f44951fb7dc15ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745742"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento
 
@@ -33,11 +34,11 @@ Al trabajar con archivos de código largos, puede ser difícil tenerlo todo en m
 
     Este es el aspecto de la barra de desplazamiento tras buscar una cadena. Observe que aparecen todas las instancias de la cadena.
 
-    ![Barra de desplazamiento después de buscar una cadena.](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")
+    ![Barra de desplazamiento después de buscar una cadena.](../ide/media/enhancedscrollbarsearch.png)
 
     Aquí se muestra la barra de desplazamiento después de reemplazar todas las instancias de la cadena. Verá inmediatamente que la operación ha provocado algunos problemas.
 
-    ![Barra de desplazamiento después de reemplazar una cadena con errores](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")
+    ![Barra de desplazamiento tras reemplazar una cadena con errores](../ide/media/enhancedscrollbarreplace.png)
 
 ## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Para establecer el modo de presentación de la barra de desplazamiento
 
@@ -47,11 +48,11 @@ Al trabajar con archivos de código largos, puede ser difícil tenerlo todo en m
 
     Este es el aspecto del ejemplo de búsqueda cuando el modo Mapa está activado y el ancho se establece en **Medio**:
 
-    ![Barra de desplazamiento en modo Mapa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
+    ![Barra de desplazamiento en modo Mapa](../ide/media/enhancedscrollbar.png)
 
 2. En el modo Mapa, a fin de habilitar las vistas previas del código al mover el cursor hacia arriba y hacia abajo por la barra de desplazamiento, seleccione la opción **Mostrar información sobre herramientas de la vista previa**. Este es su aspecto:
 
-    ![La barra de desplazamiento con información sobre herramientas](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")
+    ![Barra de desplazamiento con información sobre herramientas](../ide/media/enhancedscrollbarsearchtooltip.png)
 
     Si quiere mantener el comportamiento de desplazamiento del modo Mapa y la información sobre herramientas de vista previa, pero no quiere ver la información general del código fuente, puede establecer **Información general del código fuente** en **Desactivado**.
 

@@ -12,11 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e595392f92c99f6f73d2a9d999356641c14b096d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573263"
 ---
 # <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
 
@@ -46,14 +47,10 @@ Cuando estos archivos se comprimen en un archivo *.zip* y se colocan en la carpe
 
 Para obtener más información sobre las carpetas de plantillas, vea [Cómo: Buscar y organizar plantillas](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="starter-kits"></a>Starter Kits
-
-Starter Kits son plantillas mejoradas que se pueden compartir con otros integrantes de la comunidad. Los Starter Kits incluyen ejemplos de código compilable, documentación y otros recursos para ayudar a los usuarios a obtener información sobre las nuevas herramientas y técnicas de programación y, al mismo tiempo, crear aplicaciones útiles y prácticas. El contenido y los procedimientos básicos de los Starter Kits son idénticos a los de las plantillas. Para obtener más información, vea [Cómo: Crear Starter Kits](../ide/how-to-create-starter-kits.md).
-
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
 - [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
 - [Parámetros de plantilla](../ide/template-parameters.md)
-- [Personalización de plantillas](../ide/customizing-project-and-item-templates.md)
+- [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
 - [Paquetes NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

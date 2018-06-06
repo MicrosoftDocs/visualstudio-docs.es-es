@@ -9,11 +9,12 @@ description: Puede producirse un error en el inicio de sesión si se utilizan al
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477657"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 
@@ -48,25 +49,26 @@ Siga estos pasos para agregar un nuevo suscriptor con una cuenta de directorio.
 1. Visite [Microsoft Business Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e inicie sesión.
 2. En la página de administración, haga clic en **Suscripciones** y, a continuación, en **Suscripciones de Visual Studio**.
 
-    ![Menú de suscripciones](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. Haga clic en el **Número de contrato** asociado a la suscripción de Visual Studio.
 
-    ![Selección de contrato](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
 4. Haga clic en **Asignar suscripción**.
 
-    ![Asignar suscripción](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. Seleccione el **Nivel de suscripción** deseado.
 
-    ![Nivel de suscripción](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. Compruebe que tiene suscripciones disponibles para asignar y haga clic en **Siguiente**.
 7.  Escriba los detalles de suscriptor y la dirección del directorio en el campo Dirección de correo electrónico y haga clic en **Siguiente**.
 
-    ![Email Address](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. Compruebe la información del suscriptor y haga clic en **Finalizar**.
 
 9. Informe al suscriptor de que la suscripción se ha aprovisionado mediante la siguiente [plantilla](#notifying-your-subscribers-with-directory-addresses).

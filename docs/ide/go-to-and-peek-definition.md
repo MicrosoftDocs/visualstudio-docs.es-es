@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe72522d235579147b645c27cf4f560827f555d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745768"
 ---
 # <a name="view-type-and-member-definitions"></a>Vista de definiciones de tipo y miembro
 
@@ -61,7 +62,7 @@ Al ejecutar el comando **Ir a definición** o **Ver la definición** para un ele
 
 Por ejemplo, si ejecuta el comando **Ir a definición** para <xref:System.Console>, los metadatos de <xref:System.Console> aparecen en el editor de código como código fuente de C#. El código es similar a su declaración, pero no muestra una implementación.
 
-![Metadatos como origen](../ide/media/metadatasource.png "MetadataSource")
+![Metadatos como origen](../ide/media/metadatasource.png)
 
 > [!NOTE]
 > Al intentar ejecutar el comando **Ir a definición** o **Ver la definición** para tipos o miembros marcados como internos, Visual Studio no muestra sus metadatos como código fuente, independientemente de si el ensamblado de referencia es de confianza o no.

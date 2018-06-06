@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8e17d0f9e25616f70e1d5f74cd0ed4916efc7b8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750927"
 ---
 # <a name="how-to-specify-plot-options-for-graphing-counters"></a>Cómo: Especificar valores de trazado para contadores gráficos
 
 El cuadro de diálogo **Opciones de trazado** permite cambiar el color y estilo de línea de un contador trazado en un gráfico. Puede corregir también el intervalo en un valor concreto o establecer el intervalo que se va a ajustar automáticamente, según los datos de ejemplo.
 
-![Cuadro de diálogo Opciones de trazado](../test/media/ltest_plotoptions.png "LTest_PlotOptions")
+![Cuadro de diálogo Opciones de trazado](../test/media/ltest_plotoptions.png)
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Para especificar opciones de trazado de gráficos
 

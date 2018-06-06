@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f745033ecb88fd70de4c7150dc5ae3165ab3c99b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef614cbfd611eb9994f378e655d50a8656aa0441
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746330"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Cómo: Crear un sombreador de textura de escala de grises
 
@@ -44,7 +45,7 @@ La ilustración siguiente muestra el gráfico de sombreador completo y una vista
 > [!NOTE]
 > En esta ilustración, se usó un plano como la forma de vista previa y se especificó una textura para demostrar mejor el efecto del sombreador.
 
-![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")
+![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-grayscale-effect.png)
 
 Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea [Diseñador de sombras](../designers/shader-designer.md)
 

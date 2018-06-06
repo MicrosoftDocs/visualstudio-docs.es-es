@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7bd7368dbdd5d66f1921d555fbbf731cebd664
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747058"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Cómo: Crear un sombreador de textura básico
 
@@ -47,7 +48,7 @@ La ilustración siguiente muestra el gráfico de sombreador completo y una vista
 > [!NOTE]
 > En esta ilustración, se usó un plano como la forma de vista previa y se especificó una textura para demostrar mejor el efecto del sombreador.
 
-![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")
+![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-texture-effect.png)
 
 Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea [Diseñador de sombras](../designers/shader-designer.md)
 

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477111"
 ---
 # <a name="utilization-view"></a>Vista de utilización
 La **Vista de utilización** muestra información acerca de la CPU, la GPU y otros recursos del sistema que el proceso actual usa (elija **Analizar** > **Visualizador de simultaneidad** para iniciar el visualizador de simultaneidad). Muestra el uso de núcleo promedio por el proceso analizado, el proceso inactivo, el proceso del sistema y otros procesos que se ejecutan en el sistema a lo largo del tiempo. No muestra qué núcleo concreto está activo en un momento dado. Por ejemplo, si dos núcleos se ejecutan al 50 por ciento de su capacidad durante un período de tiempo determinado, esta vista muestra que se está utilizando un núcleo lógico. La vista se genera al dividir el tiempo de generación de perfiles en segmentos de tiempo cortos. Para cada segmento, el gráfico traza el promedio de subprocesos del proceso que se ejecutan en núcleos lógicos durante ese intervalo.  
@@ -46,9 +47,9 @@ La **Vista de utilización** muestra información acerca de la CPU, la GPU y otr
   
  Si utiliza la GPU mediante C++ AMP o DirectX, quizá le interese identificar el número de motores de GPU en uso o de áreas donde la GPU está inactiva de forma inesperada.  
   
-## <a name="zooming"></a>Zoom  
+## <a name="zoom"></a>Zoom  
  Para ampliar el gráfico de utilización de CPU o el gráfico de actividad de GPU, seleccione una sección o utilice el control deslizante de zoom sobre el gráfico. La configuración de zoom se conserva cuando se cambia a otras vistas. Para reducir, use el control deslizante de zoom. También puede hacer zoom presionando Ctrl + rueda del mouse.  
   
 ## <a name="see-also"></a>Vea también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
- [Vista de núcleos](../profiling/cores-view.md)
+ [Vista Núcleos](../profiling/cores-view.md)

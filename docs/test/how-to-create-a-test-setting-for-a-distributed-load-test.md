@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b9ffd7206023885fc45e66af585ca34f75ce67f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29517fcf0f788150db43988fdacf54b3b8b5800c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751824"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Cómo: Crear una configuración de pruebas para una prueba de carga distribuida
 
@@ -74,7 +75,7 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
 
      Se mostrará la página **Roles**.
 
-     ![Roles de Configuración de pruebas](../test/media/load_testtestrole.png "Load_TestTestRole")
+     ![Roles de Configuración de pruebas](../test/media/load_testtestrole.png)
 
 10. Para ejecutar las pruebas de manera remota, o para ejecutar las pruebas de manera remota y recopilar datos de manera remota, use la lista desplegable **Método de ejecución de las pruebas** y seleccione **Ejecución remota**.
 
@@ -108,7 +109,7 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
 
      Se mostrará la página **Datos y diagnósticos**.
 
-     ![Datos y diagnósticos de Configuración de pruebas](../test/media/load_testtest.png "Load_TestTest")
+     ![Datos y diagnósticos de Configuración de pruebas](../test/media/load_testtest.png)
 
 18. En la página **Datos y diagnósticos**, defina el rol seleccionando los *adaptadores de datos de diagnóstico* que el rol usará para recopilar datos. Por tanto, si hay uno o más adaptadores de datos y diagnósticos habilitados para el rol, el controlador de pruebas seleccionará un equipo de agente de prueba disponible para recopilar los datos para los adaptadores de datos y diagnósticos especificados basándose en los atributos definidos para el rol. Para seleccionar los datos y los adaptadores de datos de diagnóstico que desea recopilar para cada rol, seleccione el rol. Para cada rol, seleccione los adaptadores de datos de diagnóstico según las necesidades de las pruebas. Si quiere configurar los adaptadores de datos de diagnóstico seleccionados para cada rol, elija **Configurar**.
 

@@ -10,11 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1ccd0c34a593e23bd62a86c26639b220598b8dad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ab2707de0b82d7e3af151c79ea5ee60e5869bfab
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571882"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalización de plantillas de proyectos y elementos
 
@@ -42,6 +43,5 @@ Por ejemplo, puede realizar las tareas siguientes:
 - [Cómo: Solucionar problemas de plantillas](../ide/how-to-troubleshoot-templates.md)
 - [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
 - [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
-- [Cómo: Crear Starter Kits](../ide/how-to-create-starter-kits.md)
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

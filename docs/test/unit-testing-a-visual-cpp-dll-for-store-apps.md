@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751876"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Cómo probar una DLL de Visual C++
 
@@ -31,13 +32,13 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 3.  Asigne al proyecto el nombre `RooterLibTests`, especifique la ubicación, asigne a la solución el nombre `RooterLib` y asegúrese de que esté activada la opción **Crear directorio para la solución**.
 
-     ![Especifique la ubicación y el nombre de solución y proyecto](../test/media/ute_cpp_windows_unittestlib_createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Especificar el nombre de la solución y el proyecto, y la ubicación](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
 4.  En el nuevo proyecto, abra **unittest1.cpp**.
 
-     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Tenga en cuenta lo siguiente:
+     Ten en cuenta lo siguiente:
 
     -   Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.
 
@@ -64,13 +65,13 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
      El proyecto de prueba se compila y ejecuta. Aparece la ventana Explorador de pruebas y la prueba se muestra debajo de **Pruebas superadas**. El panel Resumen de la parte inferior de la ventana proporciona detalles adicionales sobre la prueba seleccionada.
 
-     ![Explorador de pruebas](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Explorador de pruebas](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Agregar el proyecto DLL a la solución
 
 1.  En el Explorador de soluciones, elija el nombre de la solución. En el menú contextual, elija **Agregar** y después **Agregar nuevo proyecto**.
 
-     ![Cree el proyecto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png "UTE_Cpp_windows_RooterLib_Create")
+     ![Crear el proyecto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  En el cuadro de diálogo **Agregar nuevo proyecto**, elija **DLL (aplicaciones para UWP)**.
 
@@ -104,7 +105,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
     1.  En el Explorador de soluciones, seleccione el proyecto **RooterLib** y elija **Propiedades** en el menú contextual.
 
-         ![Agregue una definición de símbolo de preprocesador](../test/media/ute_cpp_windows_addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Agregar una definición de símbolo de preprocesador](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
     2.  En el cuadro de diálogo Página de propiedades de RooterLib, expanda **Propiedades de configuración**, después expanda **C++** y seleccione **Preprocesador**.
 
@@ -175,7 +176,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 5.  En el Explorador de pruebas, elija **Ejecutar todas**.
 
-     ![Prueba básica superada](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Prueba básica superada](../test/media/ute_cpp_testexplorer_basictest.png)
 
  Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
 
@@ -206,7 +207,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
 3.  La prueba sufre un error.
 
-     ![Se produce un error en RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Se produce un error RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Compruebe que todas las pruebas producen un error inmediatamente después de escribirlas. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.
@@ -278,7 +279,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
      La prueba sufre un error. Elige el nombre de la prueba en el Explorador de pruebas. Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del Explorador de pruebas.
 
-     ![Error de NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![Se ha producido un error en las pruebas NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 3.  Para ver por qué se produce el error, revise la función:
 
@@ -308,7 +309,7 @@ En este tema se describe una manera de crear pruebas unitarias para un archivo D
 
  Ahora, todas las pruebas pasan.
 
- ![Todas las pruebas pasan](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+ ![Todas las pruebas se realizan correctamente](../test/media/ute_ult_alltestspass.png)
 
 ##  <a name="Refactor_the_code_without_changing_tests"></a> Refactorizar el código sin cambiar las pruebas
 

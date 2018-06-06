@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c47ca792c25efe6ef77f3ee3a9baad61e801624
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752701"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 
@@ -33,13 +34,13 @@ Las siguientes herramientas están disponibles de manera predeterminada en la pe
 
 **Pointer**
 
-![Puntero de página HTML del Diseñador de ASP.NET Mobile](../../ide/reference/media/vxpointer.gif "vxPointer")
+![Puntero de página HTML del Diseñador de ASP.NET Mobile](../../ide/reference/media/vxpointer.gif)
 
 Esta herramienta está seleccionada de manera predeterminada cuando se abre cualquier pestaña del cuadro de herramientas. No se puede eliminar. El puntero le permite arrastrar objetos a la superficie de la vista Diseño, cambiar su tamaño y su ubicación en la página o formulario. Para obtener más información, vea [Cuadro de herramientas](../../ide/reference/toolbox.md).
 
 **Input (Button)**
 
-![Botón de página web HTML](../../ide/reference/media/vxbutton.gif "vxButton")
+![Botón de página Web HTML](../../ide/reference/media/vxbutton.gif)
 
 Inserta un elemento `input` de `type="button"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Button1"` para el primer botón, `id="Button2"` para el segundo y así sucesivamente.
 
@@ -51,7 +52,7 @@ Si arrastra **Input (Button)** a la superficie de la vista Diseño, se inserta c
 
 **Input (Reset)**
 
-![Captura de pantalla de HTMLpageResetButton](../../ide/reference/media/vxreset.gif "vxReset")
+![Captura de pantalla de HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Inserta un elemento `input` de `type="reset"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Reset1"` para el primer botón de reinicio, `id="Reset2"` para el segundo y así sucesivamente.
 
@@ -63,7 +64,7 @@ Si arrastra **Input (Reset)** a la superficie de la vista Diseño, se inserta c�
 
 **Input (Submit)**
 
-![Captura de pantalla de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![Captura de pantalla de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Inserta un elemento `input` de `type="submit"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Submit1"` para el primer botón de envío, `id="Submit2"` para el segundo y así sucesivamente.
 
@@ -75,7 +76,7 @@ Si arrastra **Input (Submit)** a la superficie de la vista Diseño, se inserta c
 
 **Input (Text)**
 
-![Captura de pantalla de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif "vxTextfield")
+![Captura de pantalla de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Inserta un elemento `input` de `type="text"` en el documento. Para cambiar el texto predeterminado que se muestra, edite el atributo `value`. De manera predeterminada, se inserta `id="Text1"` para el primer campo de texto, `id="Text2"` para el segundo y así sucesivamente.
 
@@ -90,7 +91,7 @@ Si arrastra **Input (Text)** a la superficie de la vista Diseño, se inserta có
 
 **Input (File)**
 
-![Campo Archivo de página HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![Campo Archivo de paginación HTML](../../ide/reference/media/vxfilefield.gif)
 
 Inserta un elemento `input` de `type="file"` en el documento. De manera predeterminada, se inserta `id="File1"` para el primer campo de archivo, `id="File2"` para el segundo y así sucesivamente.
 
@@ -105,7 +106,7 @@ Si arrastra **Input (File)** a la superficie de la vista Diseño, se inserta có
 
 **Input (Password)**
 
-![Campo Contraseña de Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")
+![Campo de contraseña de Visual Studio](../../ide/reference/media/vxpassword.gif)
 
 Inserta un elemento `input` de `type="password"`. De manera predeterminada, se inserta `id="Password1"` para el primer campo de contraseña, `id="Password2"` para el segundo y así sucesivamente.
 
@@ -120,7 +121,7 @@ Si arrastra **Input (Password)** a la superficie de la vista Diseño, se inserta
 
 **Input (Check box)**
 
-![Opción de casilla del cuadro de herramientas de página web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")
+![Opción de casilla de cuadro de herramientas de página Web HTML](../../ide/reference/media/vxcheckbox.gif)
 
 Inserta un elemento `input` de `type="checkbox"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Checkbox1"` para la primera casilla, `id="Checkbox2"` para la segunda y así sucesivamente.
 
@@ -132,7 +133,7 @@ Si arrastra **Input (Check box)** a la superficie de la vista Diseño, se insert
 
 **Input (Radio)**
 
-![Captura de pantalla de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif "vxRadio")
+![Captura de pantalla de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Inserta un elemento `input` de `type="radio"`. Para cambiar el texto que se muestra, edite la propiedad `name`. De manera predeterminada, se inserta `id="Radio1"` para el primer botón de selección, `id="Radio2"` para el segundo y así sucesivamente.
 
@@ -144,7 +145,7 @@ Si arrastra **Input (Radio)** a la superficie de la vista Diseño, se inserta c�
 
 **Input (Hidden)**
 
-![Elemento oculto de página HTML](../../ide/reference/media/vxhidden.gif "vxhidden")
+![Elemento oculto de página HTML](../../ide/reference/media/vxhidden.gif)
 
 Inserta un elemento `input` de `type="hidden"`. De manera predeterminada, se inserta `id="Hidden1"` para el primer campo oculto, `id="Hidden2"` para el segundo y así sucesivamente.
 
@@ -156,7 +157,7 @@ Si arrastra **Input (Hidden)** a la superficie de la vista Diseño, se inserta c
 
 **Textarea**
 
-![Área de texto de la barra de herramientas de la página HTML](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![Área de texto de la barra de herramientas de la página HTML](../../ide/reference/media/vxtextarea.gif)
 
 Inserta un elemento `textarea`. Puede cambiar el tamaño del área de texto o usar las barras de desplazamiento para ver el texto que se extiende más allá del área de visualización. Para cambiar el texto predeterminado que se muestra, edite el atributo `value`. De manera predeterminada, se inserta `id="textarea1"` para la primera área de texto, `id=" textarea 2"` para la segunda y así sucesivamente.
 
@@ -171,7 +172,7 @@ Si arrastra **Textarea** a la superficie de la vista Diseño, se inserta código
 
 **Table**
 
-![Captura de pantalla de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")
+![Captura de pantalla de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Inserta un elemento `table`.
 
@@ -183,7 +184,7 @@ Si arrastra **Table** a la superficie de la vista Diseño, se inserta código HT
 
 **Image**
 
-![Elemento de imagen de página HTML](../../ide/reference/media/vximage.gif "vxImage")
+![Elemento de imagen de página HTML](../../ide/reference/media/vximage.gif)
 
 Inserta un elemento `img`. Modifique este elemento para especificar su `src` y su texto `alt`.
 
@@ -195,7 +196,7 @@ Si arrastra **Image** a la superficie de la vista Diseño, se inserta código HT
 
 **Seleccionar**
 
-![Cuadro de herramientas desplegable de la página HTML](../../ide/reference/media/vxdropdown.gif "vxDropdown")
+![Cuadro de herramientas desplegable de la página HTML](../../ide/reference/media/vxdropdown.gif)
 
 Inserta un elemento `select` desplegable (sin atributo `size`). De manera predeterminada, se inserta `id="select1"` para el primer cuadro de lista, `id="select2"` para el segundo y así sucesivamente.
 
@@ -209,7 +210,7 @@ Para crear un elemento `select` multilínea, aumente el valor de la propiedad Si
 
 **Horizontal Rule**
 
-![Elemento de regla horizontal de página HTML](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")
+![Elemento de la regla horizontal de página HTML](../../ide/reference/media/vxhorizontal.gif)
 
 Inserta un elemento `hr`. Para aumentar el grosor de la línea, modifique el atributo `size`.
 
@@ -221,7 +222,7 @@ Si arrastra **Horizontal Rule** a la superficie de la vista Diseño, se inserta 
 
 **Div**
 
-![Etiqueta de página HTML](../../ide/reference/media/vxlabel.gif "vxLabel")
+![Etiqueta de página HTML](../../ide/reference/media/vxlabel.gif)
 
 Inserta un elemento `div` que incluye un atributo `ms_positioning="FlowLayout"`. Excepto por el ancho y alto, este elemento es idéntico a un panel de diseño de flujo. Para dar formato al texto que se encuentra en el elemento `div`, agregue un atributo `class="stylename"` a la etiqueta de apertura.
 

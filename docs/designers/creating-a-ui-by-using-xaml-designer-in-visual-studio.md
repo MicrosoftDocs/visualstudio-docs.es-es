@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 514bbd4b4b65a2f32b42a1f260368f219972e22c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 707fdd9c1ea0712d743bb62276599783507f0739
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745755"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
 El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarle a diseñar aplicaciones web y de Windows basadas en XAML. Puede crear interfaces de usuario para sus aplicaciones arrastrando controles desde el **Cuadro de herramientas** y estableciendo las propiedades en la ventana **Propiedades** . También puede modificar el XAML directamente en la vista XAML.
@@ -34,7 +35,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  En la vista Diseño, la ventana que contiene la *mesa de trabajo* es la ventana activa y se puede usar como superficie de trabajo principal. Puede usarla para diseñar visualmente una página en la aplicación agregando o dibujando elementos y modificándolos. Para obtener más información, consulta [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Esta ilustración muestra la mesa de trabajo en la vista Diseño.
 
- ![Vista Diseño del Diseñador XAML](../designers/media/xaml_editor_design_view.png "xaml_editor_design_view")
+ ![Vista de diseño del diseñador XAML](../designers/media/xaml_editor_design_view.png)
 
  Las siguientes características están disponibles en la mesa de trabajo:
 
@@ -56,7 +57,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  En la vista Diseño, en el área inferior izquierda de la pantalla, están disponibles otros comandos de la mesa de trabajo, tal como se muestra aquí:
 
- ![Comandos de la vista Diseño](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")
+ ![Comandos de la Vista de diseño](../designers/media/xaml_editor_design_controls.png)
 
  Estos comandos están disponibles en esta barra de herramientas:
 
@@ -70,7 +71,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  En la vista XAML, la ventana que contiene el editor XAML es la ventana activa, y el Editor XAML es la herramienta de creación principal. El lenguaje XAML proporciona un vocabulario declarativo basado en XML para especificar la interfaz de usuario de una aplicación. La vista XAML incluye IntelliSense, formato automático, resaltado de sintaxis y navegación por etiquetas. Esta ilustración muestra la vista XAML:
 
- ![Vista XAML](../designers/media/xaml_editor.png "xaml_editor")
+ ![Vista XAML](../designers/media/xaml_editor.png)
 
  **Barra de vista en dos paneles** La barra de vista en dos paneles aparece en la parte superior de la vista XAML cuando el Editor XAML está en la ventana inferior. La barra de vista en dos paneles permite controlar los tamaños relativos de la vista Diseño y la vista XAML. También puede intercambiar las ubicaciones de las vistas (con el botón **Intercambiar paneles** ), especificar si las vistas están organizadas horizontal o verticalmente y contraer cualquiera de las vistas.
 
@@ -79,7 +80,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 ## <a name="device-window"></a>Ventana de dispositivo
  La ventana Dispositivo en el diseñador XAML le permite simular varias vistas, presentaciones y opciones de presentación en tiempo de diseño para el proyecto. La ventana Dispositivo está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:
 
- ![Ventana de dispositivo](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")
+ ![Ventana de dispositivo](../designers/media/xaml_editor_device_panel.png)
 
  Estas son las opciones disponibles en la ventana Dispositivo:
 
@@ -114,7 +115,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  Para ver la ventana Esquema del documento, en la barra de menús elija **Vista**, **Otras ventanas**, **Esquema del documento**.
 
- ![Ventana Esquema del documento](../designers/media/xaml_editor_doc_outline.png "xaml_editor_doc_outline")
+ ![Ventana Esquema del documento](../designers/media/xaml_editor_doc_outline.png)
 
  Estas son las opciones disponibles en la ventana Esquema del documento:
 
@@ -129,7 +130,7 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 ## <a name="properties-window"></a>Propiedades (ventana)
  La ventana Propiedades permite establecer valores de propiedad en los controles. Este es su aspecto:
 
- ![Ventana Propiedades](../designers/media/xaml_editor_prop_window.png "xaml_editor_prop_window")
+ ![Propiedades (ventana)](../designers/media/xaml_editor_prop_window.png)
 
  Hay varias opciones en la parte superior de la ventana Propiedades. Puede cambiar el nombre del elemento seleccionado actualmente mediante el cuadro **Nombre** . En la esquina superior izquierda, hay un icono que representa el elemento actualmente seleccionado. Para organizar las propiedades por categoría o alfabéticamente, haga clic en **Categoría**, **Nombre**u **Origen** en la lista **Organizar por** . Para ver la lista de eventos de un control, haga clic en el botón **Eventos** , que muestra un símbolo de rayo. Para buscar una propiedad, empiece a escribir el nombre de la propiedad en el cuadro **Buscar propiedades** . La ventana Propiedades muestra las propiedades que coinciden con la búsqueda a medida que escribe. Algunas propiedades permiten establecer propiedades avanzadas si selecciona un botón de flecha hacia abajo. Para obtener más información sobre el uso de propiedades y el control de eventos, consulte [Inicio rápido: agregar controles y administrar eventos (XAML)](http://go.microsoft.com/fwlink/?LinkID=247983)
 

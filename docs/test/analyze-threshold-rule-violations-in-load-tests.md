@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 760d79677ea43602f000748d1eb0d65203c2c787
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750914"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analizar las infracciones de las reglas de umbral en las pruebas de carga usando el Analizador de prueba de carga
 
@@ -53,15 +54,15 @@ Si se ha producido alguna infracción, aparece un hipervínculo de **infraccione
 
  El icono puede ser alguno de los siguientes:
 
- ![Ninguna infracción del umbral](../test/media/icon_ltest_1.gif "Icon_LTest_1") Ninguna infracción del umbral.
+ ![No hay infracción de umbral](../test/media/icon_ltest_1.gif) Ninguna infracción del umbral.
 
- ![Se ha producido una infracción del umbral grave en el último intervalo](../test/media/icon_ltest_2.gif "Icon_LTest_2") Se ha producido una infracción del umbral grave en el último intervalo.
+ ![Infracción de umbral grave en el último intervalo](../test/media/icon_ltest_2.gif) Se ha producido una infracción del umbral grave en el último intervalo.
 
- ![Se ha producido una infracción del umbral grave en un intervalo anterior](../test/media/icon_ltest_3.gif "Icon_LTest_3") Se ha producido una infracción del umbral grave en un intervalo anterior.
+ ![Infracción de umbral grave en un intervalo anterior](../test/media/icon_ltest_3.gif) Se ha producido una infracción del umbral grave en un intervalo anterior.
 
- ![Se ha producido una infracción del umbral de advertencia en el último intervalo](../test/media/icon_ltest_4.gif "Icon_LTest_4") Se ha producido una infracción del umbral de advertencia en el último intervalo.
+ ![Infracción de umbral de advertencia en el último intervalo](../test/media/icon_ltest_4.gif) Se ha producido una infracción del umbral de advertencia en el último intervalo.
 
- ![Se ha producido una infracción del umbral de advertencia en un intervalo anterior](../test/media/icon_ltest_5.gif "Icon_LTest_5") Se ha producido una infracción del umbral de advertencia en un intervalo anterior.
+ ![Infracción de umbral de advertencia en un intervalo anterior](../test/media/icon_ltest_5.gif) Se ha producido una infracción del umbral de advertencia en un intervalo anterior.
 
  Opcionalmente, las infracciones del umbral también se pueden mostrar en el gráfico. El icono de umbral aparece en el gráfico junto al punto de datos donde se ha producido la infracción de umbral.
 

@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9cd01fc4f8ceff4b679ef81e2ce25d38624a3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 416e83790e4776f37f7ca7ce011a5a2fb2ad484c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747500"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Cómo: Mostrar los números de línea en el editor
 Puede mostrar u ocultar la numeración de las líneas del código.
@@ -37,7 +38,7 @@ Puede mostrar u ocultar la numeración de las líneas del código.
 
 2.  Active la casilla **Números de línea**.
 
-    ![Opciones para mostrar números de línea en el editor](../../ide/reference/media/vs_displaylinenumbers.png "VS_DisplayLineNumbers")
+    ![Opciones para mostrar números de línea en el editor](../../ide/reference/media/vs_displaylinenumbers.png)
 
 > [!NOTE]
 > Según el lenguaje o los valores de configuración, puede que tenga que activar la casilla **Mostrar todas las configuraciones** en el cuadro de diálogo **Opciones** para ver el subnodo **Todos los lenguajes**.

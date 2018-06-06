@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0e1c990a0014051c6732eb187150bd0c1d89afc8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7da7f881cf70ebfdafb3dbaaf2821471327fa81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751239"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el Diagrama de actividad de los usuarios virtuales
 
@@ -75,7 +76,7 @@ Los siguientes procedimientos muestran cómo ver el Diagrama de actividad del us
 
      **Panel Leyenda de detalles**
 
-     ![Panel Leyenda de detalles](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+     ![Panel Leyenda de detalles](../test/media/ltest_detailslegend.png)
 
 2.  Active o desactive las casillas correspondientes a errores, registros, pruebas, búsqueda y páginas aspx asociados a la prueba de carga.
 
@@ -87,7 +88,7 @@ Los siguientes procedimientos muestran cómo ver el Diagrama de actividad del us
 
      **Panel Resultados del filtro**
 
-     ![Panel Resultados del filtro](../test/media/ltest_filterresults.png "LTest_FilterResults")
+     ![Panel Resultados del filtro](../test/media/ltest_filterresults.png)
 
 3.  En los resultados del filtro, active o desactive las casillas correspondientes a las siguientes opciones de filtro:
 

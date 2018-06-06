@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e422bb2129b1446a336286d8436a7828b67c1653
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c91cd1a2ea721743c289b6664ddd0a76ceedbc4f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750843"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analizar la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de prueba de carga
 
 **Diagrama de actividad del usuario virtual**
 
- ![Diagrama de actividad del usuario virtual](../test/media/virtual_actchart.png "Virtual_ActChart")
+ ![Diagrama de actividad del usuario virtual](../test/media/virtual_actchart.png)
 
  La vista Detalles muestra el Diagrama de actividad de usuarios virtuales, que se utiliza para analizar lo que hicieron los usuarios virtuales durante la prueba de carga. El gráfico de actividad de los usuarios virtuales permite ver los modelos de actividad de los usuarios y modelos de carga, relacionar las pruebas con errores o lentas, y ver solicitudes con otra actividad de usuario virtual. El Diagrama de actividad del usuario virtual también puede ayudar a determinar los picos máximos en el uso de la CPU, las caídas de solicitudes por segundo, y qué pruebas o páginas se estaban ejecutando durante esos momentos de máxima y mínima actividad.
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/26/2018
 
  **Panel Leyenda de detalles**
 
- ![Panel Leyenda de detalles](../test/media/ltest_detailslegend.png "LTest_DetailsLegend")
+ ![Panel Leyenda de detalles](../test/media/ltest_detailslegend.png)
 
  El panel Leyenda de detalles está visible en el Diagrama de actividad del usuario virtual. El panel de leyenda de detalles permite filtrar las pruebas, las páginas y las transacciones según criterios diferentes. Por ejemplo, puede quitar ciertas pruebas de la vista o quitar todas las pruebas superadas, o bien quitar las pruebas no superadas en las que se produjeron determinados errores. También puede quitar todas las pruebas que no tienen registros.
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/26/2018
 
  **Panel Resultados del filtro**
 
- ![Panel Resultados del filtro](../test/media/ltest_filterresults.png "LTest_FilterResults")
+ ![Panel Resultados del filtro](../test/media/ltest_filterresults.png)
 
  El panel Resultados del filtro está visible en el Diagrama de actividad del usuario virtual. El panel Resultados del filtro puede filtrar por lo siguiente:
 

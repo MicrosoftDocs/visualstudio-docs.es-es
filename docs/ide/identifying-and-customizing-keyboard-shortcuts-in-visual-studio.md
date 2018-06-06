@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6c47739b2f6de55ea51a2a00ffc90aec696e8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747234"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 
@@ -48,7 +49,7 @@ Si un método abreviado se asigna a un comando en el contexto Global y no a otro
 
 2. Expanda **Entorno** y elija **Teclado**.
 
-   ![Mostrar métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png "OptionsKeyboard")
+   ![Mostrar métodos abreviados de teclado en el cuadro de diálogo Opciones](../ide/media/optionskeyboard.png)
 
 3. En el cuadro **Mostrar los comandos que contengan**, escriba todo o parte del nombre del comando sin espacios.
 
@@ -60,7 +61,7 @@ Si un método abreviado se asigna a un comando en el contexto Global y no a otro
 
 5. Si el comando tiene un método abreviado de teclado, aparece en la lista **Métodos abreviados para el comando seleccionado**.
 
-   ![Ver un método abreviado de un comando específico](../ide/media/viewshortcut.png "ViewShortcut")
+   ![Ver un acceso directo diferente para un comando especificado](../ide/media/viewshortcut.png)
 
 ## <a name="customize-a-keyboard-shortcut"></a>Personalizar un método abreviado de teclado
 
@@ -86,7 +87,7 @@ Si un método abreviado se asigna a un comando en el contexto Global y no a otro
 
      Si un método abreviado ya está asignado a otro comando, aparece en el cuadro **El método abreviado lo utiliza actualmente**. En ese caso, elija la tecla **Retroceso** para eliminar ese método abreviado antes de probar con otro.
 
-    ![Especificar un método abreviado diferente para un comando](../ide/media/reassignshortcut.png "ReassignShortcut")
+    ![Especificar un acceso directo diferente para un comando](../ide/media/reassignshortcut.png)
 
 7. Elija el botón **Asignar**.
 
@@ -107,7 +108,7 @@ Puede compartir los métodos abreviados de teclado personalizados exportándolos
 
 4. Active la casilla **Teclado** y elija el botón **Siguiente**.
 
-    ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png "ExportShortcuts")
+    ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png)
 
 5. En los cuadros **¿Qué nombre desea dar al archivo de configuración?** y **Almacenar mi archivo de configuración en este directorio**, deje los valores predeterminados o especifique otros diferentes y elija el botón **Finalizar**.
 
@@ -129,7 +130,7 @@ Puede compartir los métodos abreviados de teclado personalizados exportándolos
 
 7. Active la casilla **Teclado** y elija el botón **Finalizar**.
 
-    ![Importar solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png "ImportShortcuts")
+    ![Importar solo los métodos abreviados de teclado personalizados](../ide/media/importshortcuts.png)
 
 ## <a name="see-also"></a>Vea también
 

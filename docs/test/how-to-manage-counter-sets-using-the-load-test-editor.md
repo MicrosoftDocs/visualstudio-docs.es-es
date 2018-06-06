@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22897b072d7051eef5c08d27fc3235050474da60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751993"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Cómo: Administrar conjuntos de contadores personalizados usando el Editor de prueba de carga
 
@@ -30,7 +31,7 @@ Cuando se crea una prueba de carga con el **Asistente para prueba de carga nueva
 
 La administración de conjuntos de contadores implica la elección del conjunto de equipos del que desea recopilar datos de rendimiento, así como la asignación de un grupo de conjuntos de contadores para recopilar datos de cada equipo individual. Los contadores se administran en el **Editor de pruebas de carga**.
 
-![Administración de conjuntos de contadores](../test/media/loadtestmanagecountersets.png "LoadTestManageCounterSets")
+![Administrar conjuntos de contadores](../test/media/loadtestmanagecountersets.png)
 
 ## <a name="to-manage-counter-sets"></a>Para administrar conjuntos de contadores
 

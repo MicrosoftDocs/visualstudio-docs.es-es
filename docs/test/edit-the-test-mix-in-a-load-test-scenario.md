@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750940"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificar la combinación de las pruebas para especificar qué rendimiento web, pruebas unitarias y pruebas automatizadas de IU incluir en un escenario de prueba de carga
 
@@ -36,7 +37,7 @@ Al crear un nuevo escenario utilizando el Asistente para prueba de carga nueva, 
 
 Puede agregar más pruebas unitarias y de rendimiento web a la combinación de pruebas del escenario con el Editor de prueba de carga.
 
-![Agregar una prueba a una prueba de carga existente](../test/media/ltest_addingtests.png "LTest_AddingTests")
+![Agregar una prueba a una prueba de carga existente](../test/media/ltest_addingtests.png)
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Para agregar más pruebas a un escenario existente
 
@@ -55,7 +56,7 @@ Puede agregar más pruebas unitarias y de rendimiento web a la combinación de p
 5.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para obtener más información, vea [Control de combinación](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ##  <a name="EditingTestMixRemoveTest"></a> Quitar pruebas de un escenario
- ![Quitar una prueba de una prueba de carga existente](../test/media/ltest_removetest.png "LTest_RemoveTest")
+ ![Quitar una prueba de una prueba de carga existente](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Para quitar pruebas de un escenario
 

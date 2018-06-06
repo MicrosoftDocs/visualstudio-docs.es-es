@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b82a35ed56c0930b8d9c0ff8ec7bfcbd008a7648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751538"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Cómo: Crear informes de rendimiento de la prueba de carga con Microsoft Excel
 
@@ -39,7 +40,7 @@ Puede generar informes de prueba de carga de Microsoft Excel basados en dos o m�
 
  La siguiente ilustración es un ejemplo de un informe que muestra una correlación entre un declive en la velocidad de la transacción (Actualizar el carro) y la degeneración del contador (% de procesador). Esto señala un posible problema en el código de aplicación, en lugar de en la base de datos o en la red, y es un buen candidato al diagnóstico usando el Generador de perfiles de ASP.NET.
 
- ![Problema potencial en el código de la aplicación](../test/media/lt_excel.png "LT_Excel")
+ ![Problema potencial en el código de la aplicación](../test/media/lt_excel.png)
 
  Los informes de Excel se pueden generar en el Analizador de pruebas de carga, usando el botón **Crear informe en Excel** de la barra de herramientas o desde Excel, usando la opción **Cargar informe de pruebas** en la pestaña **Prueba de carga** de la cinta de opciones de Office.
 

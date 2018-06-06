@@ -16,17 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 989ebc629e79194fb6cd4c900b032cb93a090977
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751863"
 ---
 # <a name="load-test-results-summary-overview"></a>Información general de resumen de resultados de pruebas de carga
 
 Después de ejecutar una prueba de carga, puede ver el resumen para entender rápidamente los resultados. El resumen de la prueba de carga proporciona los resultados clave en un formato compacto y fácil leer. También puede imprimir el resumen de la prueba de carga. Resulta cómodo para utilizarlo cuando deba comunicar los resultados a los interesados. El resumen de la prueba de carga también es la vista predeterminada cuando se abre un resultado de prueba de carga de una prueba ejecutada previamente. Para obtener más información, consulte [Cómo: Tener acceso a los resultados de pruebas de carga para su análisis](../test/how-to-access-load-test-results-for-analysis.md).
 
- ![Vista de resumen](../test/media/ltest_summaryview.png "LTest_SummaryView")
+ ![Vista Resumen](../test/media/ltest_summaryview.png)
 
 ## <a name="the-load-test-summary"></a>Resumen de la prueba de carga
 

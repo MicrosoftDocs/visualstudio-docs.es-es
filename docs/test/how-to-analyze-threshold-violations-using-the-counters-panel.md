@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 483a591e190efa557ffff42c958c18171269e7ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751811"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>Cómo: Analizar las infracciones de reglas de umbral con el panel Contadores en el analizador de prueba de carga
 
@@ -22,21 +23,21 @@ El panel Contadores es visible en la vista Gráficos y en la vista Tablas del An
 
  Las infracciones de umbral están asociadas a contadores de rendimiento específicos e indican que un contador de rendimiento ha superado o no ha llegado a un valor de umbral especificado. Los iconos del panel Contadores indican las infracciones de umbral.
 
- ![Nodo Equipos del panel Contadores](../test/media/ltest_compnode.png "LTest_CompNode")
+ ![Nodo de equipos del panel Contadores](../test/media/ltest_compnode.png)
 
  El icono de una infracción de umbral se propaga desde el nodo donde reside el contador específico hasta la raíz. El icono alerta de una infracción en un contador que tal vez no esté visible en el árbol porque no se ha expandido. Un ejemplo del icono se puede ver en el nodo **Equipos** del panel Contadores en la ilustración anterior.
 
  El icono puede ser alguno de los siguientes:
 
- ![Ninguna infracción del umbral](../test/media/icon_ltest_1.gif "Icon_LTest_1") Ninguna infracción del umbral.
+ ![No hay infracción de umbral](../test/media/icon_ltest_1.gif) Ninguna infracción del umbral.
 
- ![Se ha producido una infracción del umbral grave en el último intervalo](../test/media/icon_ltest_2.gif "Icon_LTest_2") Se ha producido una infracción del umbral grave en el último intervalo.
+ ![Infracción de umbral grave en el último intervalo](../test/media/icon_ltest_2.gif) Se ha producido una infracción del umbral grave en el último intervalo.
 
- ![Se ha producido una infracción del umbral grave en un intervalo anterior](../test/media/icon_ltest_3.gif "Icon_LTest_3") Se ha producido una infracción del umbral grave en un intervalo anterior.
+ ![Infracción de umbral grave en un intervalo anterior](../test/media/icon_ltest_3.gif) Se ha producido una infracción del umbral grave en un intervalo anterior.
 
- ![Se ha producido una infracción del umbral de advertencia en el último intervalo](../test/media/icon_ltest_4.gif "Icon_LTest_4") Se ha producido una infracción del umbral de advertencia en el último intervalo.
+ ![Infracción de umbral de advertencia en el último intervalo](../test/media/icon_ltest_4.gif) Se ha producido una infracción del umbral de advertencia en el último intervalo.
 
- ![Se ha producido una infracción del umbral de advertencia en un intervalo anterior](../test/media/icon_ltest_5.gif "Icon_LTest_5") Se ha producido una infracción del umbral de advertencia en un intervalo anterior.
+ ![Infracción de umbral de advertencia en un intervalo anterior](../test/media/icon_ltest_5.gif) Se ha producido una infracción del umbral de advertencia en un intervalo anterior.
 
 ## <a name="to-analyze-threshold-violations-in-the-counters-panel"></a>Para analizar las infracciones de umbral en el panel Contadores
 

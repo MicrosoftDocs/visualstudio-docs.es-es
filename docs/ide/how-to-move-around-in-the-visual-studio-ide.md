@@ -19,11 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e78cba542c5a511eed13eedcde2665a832b09ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d38c465cac0c24c7e776acc131a5b5fe22aa824
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747136"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Cómo: moverse por el IDE de Visual Studio
 
@@ -55,7 +56,7 @@ También puede cambiar a un archivo concreto abierto en el editor sin tener en c
 
 El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows. No está disponible en los menús y solo se puede acceder a él mediante teclas de método abreviado. Puede usar uno de los dos comandos para acceder al **Navegador del IDE** (que se muestra a continuación) y desplazarse por los archivos, dependiendo del orden en el que quiere recorrerlos.
 
-![Navegador del IDE de Visual Studio](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")
+![Navegador IDE de Visual Studio](../ide/media/vs2015_ide_navigator.png)
 
 `Window.PreviousDocumentWindowNav` le permite moverse al último archivo abierto y `Window.NextDocumentWindowNav` le permite moverse en el orden inverso. La **Configuración general de desarrollo** asigna **Mayús**+**Alt**+**F7** a `Window.PreviousDocumentWindowNav` y **Alt**+**F7** a `Window.NextDocumentWindowNav`.
 

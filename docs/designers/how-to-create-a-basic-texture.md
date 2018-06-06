@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d58cbb439eb370af16ee68ca03a4d1db467861f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745635"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Cómo: Crear una textura básica
 En este documento se muestra cómo usar el Editor de imágenes para crear una textura básica.
@@ -36,7 +37,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 
  Los siguientes pasos muestran cómo crear una textura que representa un destino de "diana". Cuando termine, la textura debe ser similar a la siguiente imagen. Para mostrar mejor la transparencia de la textura, se configuró el Editor de imágenes para usar un modelo de color verde de cuadros para mostrarla.
 
- ![Destino de "diana" con transparencia mostrado en verde](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")
+ ![Destino de "Bullseye" con transparencia mostrado en verde](../designers/media/digit-bullseye-texture-in-editor.png)
 
  Antes de empezar, asegúrese de que se muestra la ventana **Propiedades**. Se usa la ventana **Propiedades** para establecer el tamaño de la imagen, cambiar las propiedades de las herramientas y especificar colores mientras trabaja.
 
@@ -84,7 +85,7 @@ En este documento se muestra cómo usar el Editor de imágenes para crear una te
 
  La textura de destino de "diana" está completa. Aquí está la imagen final, mostrada con transparencia.
 
- ![La textura de destino de "diana" completa](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")
+ ![La textura de destino "bullseye" completa](../designers/media/gfx_image_demo_bullseye.png)
 
  Como paso siguiente, puede generar niveles de MIP para esta textura. Para obtener información, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 

@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 364e5db22342a0a870a38db71506b39a6f0080b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745716"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Tutorial: Enlace a datos en el Diseñador XAML
 
@@ -82,7 +83,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
      En la siguiente ilustración, se muestra el cuadro de diálogo **Seleccionar objeto** con **ShoppingCart** seleccionado.
 
-     ![Cuadro de diálogo Seleccionar objeto](../designers/media/blendselectobject.PNG "BlendSelectObject")
+     ![Cuadro de diálogo Seleccionar objeto](../designers/media/blendselectobject.png)
 
 1. En el **cuadro de herramientas**, elija un control `TextBlock` para agregar al formulario.
 
@@ -92,7 +93,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
      En la siguiente ilustración, se muestra el cuadro de diálogo **Crear enlace de datos** con la propiedad **ItemCount** seleccionada.
 
-     ![Cuadro de diálogo Crear enlace de datos](../designers/media/xaml_create_data_binding.png "xaml_create_data_binding")
+     ![Cuadro de diálogo Crear enlace de datos](../designers/media/xaml_create_data_binding.png)
 
 1. Presione **F5** para ejecutar la aplicación.
 

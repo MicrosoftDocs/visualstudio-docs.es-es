@@ -13,17 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 110aa964c6163f508ba9cd5f26409d0a9912a17e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3293b526b3380d3052123d45f3fb7f6599f7b5f7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751980"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Cómo: Agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 
 Puede usar el panel Contadores para agregar contadores de rendimiento a un gráfico.
 
- ![Contador agregado a un gráfico](../test/media/ltest_selectcounter.png "LTest_SelectCounter")
+ ![Contador agregado a un gráfico](../test/media/ltest_selectcounter.png)
 
  **Consideraciones sobre el intervalo de muestreo de los contadores de rendimiento**
 

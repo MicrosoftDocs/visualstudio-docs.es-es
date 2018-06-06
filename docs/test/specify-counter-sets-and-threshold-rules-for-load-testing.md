@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13fcfac02761a8661195f6f888a9280b468e5de3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751347"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Especificar conjuntos de contadores y reglas de umbral para equipos en una prueba de carga
 
@@ -51,7 +52,7 @@ Los datos de los contadores se recopilan en el servidor y en cualquier equipo en
 
 Hay tres categorías de contador: de porcentajes, de recuentos y de promedios. Algunos ejemplos son el porcentaje de uso de la CPU, los recuentos de bloqueo de SQL Server y las solicitudes de IIS por segundo.
 
-![Conjuntos de contadores de la prueba de carga](../test/media/loadtestcountersets.png "LoadTestCounterSets")
+![Conjuntos de contadores de la prueba de carga](../test/media/loadtestcountersets.png)
 
 El equipo que ejecuta una prueba crea un informe con los datos de rendimiento de las solicitudes HTTP individuales. Por ejemplo, puede ser un equipo agente. Para las solicitudes, se podrían supervisar datos como el tiempo medio al primer byte, el tiempo de respuesta y las solicitudes por segundo.
 

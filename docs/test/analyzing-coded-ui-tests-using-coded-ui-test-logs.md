@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c2ce02ddef992bc9b9bde56be699a097594ffae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750732"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas
 
@@ -72,17 +73,17 @@ Cuando ejecute una prueba automatizada de IU una vez realizadas las modificacion
 
 4.  Elija el vínculo **Resultado** en el Explorador de pruebas.
 
-     ![Vínculo de resultados del Explorador de pruebas](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Vínculo de resultados del Explorador de pruebas](../test/media/cuit_htmlactionlog1.png)
 
      Con esto se muestra la salida de la prueba, que incluye un vínculo al registro de acciones.
 
-     ![Vínculos de salida y resultados de prueba de IU programada](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")
+     ![Vínculos de salida y resultados de prueba de IU programada](../test/media/cuit_htmlactionlog2.png)
 
 5.  Elija el vínculo *UITestActionLog.html*.
 
      El registro se muestra en el explorador web.
 
-     ![Archivo de registro de prueba de IU codificada](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Archivo de registro de prueba de IU codificada](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Vea también
 

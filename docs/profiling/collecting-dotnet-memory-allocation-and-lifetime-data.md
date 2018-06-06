@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91013c0f9a6f213b70710d29d9102efc04db2821
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548640"
 ---
-# <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Recopilar datos referentes a la asignación y duración de memoria de .NET
+# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Recopilar datos de asignación y duración de memoria de .NET
 
 Las Herramientas de generación de perfiles de Visual Studio admiten la recopilación de datos de duración de objetos y de asignación de memoria de .NET, lo cual lo ayuda a detectar problemas de rendimiento relacionados con la memoria de la aplicación.
 
@@ -60,12 +61,12 @@ Las tareas de la tabla siguiente describen las opciones que puede especificar en
 
 |Tarea|Contenido relacionado|
 |----------|---------------------|
-|En la página **General** , especifique los detalles de nomenclatura del archivo de datos de generación de perfiles generado (.vsp).|- [Recopilar datos de duración y de asignación de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|
-|En la página **Iniciar**, elija la aplicación que quiere iniciar si tiene varios proyectos .exe en la solución de código.|- [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|
-|En la página **Interacción de capas** , agregue los datos de la llamada ADO.NET a la ejecución de la generación de perfiles.|- [Recopilar datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|
+|En la página **General** , especifique los detalles de nomenclatura del archivo de datos de generación de perfiles generado (.vsp).|- [Recopilación de datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Cómo: establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)|
+|En la página **Iniciar**, elija la aplicación que quiere iniciar si tiene varios proyectos .exe en la solución de código.|- [Recopilación de datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|
+|En la página **Interacción de capas** , agregue los datos de la llamada ADO.NET a la ejecución de la generación de perfiles.|- [Recopilación de datos de interacción de capas](../profiling/collecting-tier-interaction-data.md)|
 |En la página **Eventos de Windows**, especifique uno o varios eventos de seguimiento de eventos para Windows (ETW) para recopilar con los datos de muestreo.|- [Cómo: Recopilar datos de seguimiento de eventos para Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
-|En la página **Contadores de Windows** , especifique uno o varios contadores de rendimiento de sistema operativo para agregar a los datos de generación de perfiles como marcas.|- [Cómo: recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|En la página **Avanzado**, especifique la versión del runtime de .NET Framework de la cual quiere generar el perfil si los módulos de aplicación utilizan varias versiones. De forma predeterminada, se genera el perfil de la primera versión cargada.|- [Cómo: Especificar el runtime de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|En la página **Contadores de Windows** , especifique uno o varios contadores de rendimiento de sistema operativo para agregar a los datos de generación de perfiles como marcas.|- [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)|
+|En la página **Avanzado**, especifique la versión del runtime de .NET Framework de la cual quiere generar el perfil si los módulos de aplicación utilizan varias versiones. De forma predeterminada, se genera el perfil de la primera versión cargada.|- [Cómo: Especificar runtime de .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>Tareas de instrumentación
 
@@ -80,6 +81,6 @@ Las tareas de la tabla siguiente son opciones del cuadro de diálogo **Páginas 
 
 ## <a name="see-also"></a>Vea también
 
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
-[Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)
+[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
+[Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)

@@ -21,11 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a887d31eded0f7f37e9ec5390a934c192836697
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749234"
 ---
 # <a name="options-text-editor-all-languages"></a>Opciones, Editor de texto, Todos los lenguajes
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del Editor de código. Estas opciones también se aplican a otros editores basados en el Editor de código, como la vista de origen del diseñador HTML. Para abrir este cuadro de diálogo, seleccione **Opciones** del menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los lenguajes** y, después, pulse **General**.
@@ -70,7 +71,7 @@ Este cuadro de diálogo le permite cambiar el comportamiento predeterminado del 
 
  Cuando está seleccionada, se muestra un indicador de flecha de retorno en el que una línea larga se ajusta en una segunda línea.
 
- ![Captura de pantalla de LineBreakSymbol](../../ide/reference/media/linebreak.gif "linebreak")
+ ![Captura de pantalla de LineBreakSymbol](../../ide/reference/media/linebreak.gif)
 
  Desactive esta casilla si prefiere no mostrar estos indicadores.
 

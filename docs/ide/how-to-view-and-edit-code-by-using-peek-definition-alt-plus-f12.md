@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746720"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Cómo: Ver y editar código mediante Ver la definición (Alt+F12)
 
@@ -29,7 +30,7 @@ Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En V
 
      En esta ilustración se muestra la ventana **Ver la definición** para un método denominado `Print()`:
 
-     ![Ventana de Peek](../ide/media/peekwindow.png "PeekWindow")
+     ![Ventana de Peek](../ide/media/peekwindow.png)
 
      La ventana de definición aparece debajo de la línea `printer.Print("Hello World!")` en el archivo original. La ventana no oculta ningún código del archivo original. Las líneas que siguen a `printer.Print("Hello World!")` aparecen bajo la ventana de definición.
 
@@ -43,19 +44,19 @@ Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En V
 
 Si ya tiene abierta una ventana **Ver la definición**, puede llamar a **Ver la definición** de nuevo en el código de esa ventana. Se abre otra ventana de definición. Aparece un conjunto de puntos de ruta de navegación junto a la pestaña de la ventana de definición, que se puede utilizar para navegar entre las ventanas de definición. La información sobre herramientas de cada punto muestra el nombre de archivo y la ruta acceso del archivo de definición que el punto representa.
 
-   ![Ventana de Peek dentro de una ventana de Peek](../ide/media/peekwithinpeek.png "PeekWithinPeek")
+   ![Ventana de Peek dentro de una ventana de Peek](../ide/media/peekwithinpeek.png)
 
 ### <a name="peek-definition-with-multiple-results"></a>Ver la definición con varios resultados
 
 Si usa **Ver la definición** en código que tiene varias definiciones (por ejemplo, una clase parcial), aparece una lista de resultados a la derecha de la vista de definición de código. Puede elegir cualquier resultado de la lista para mostrar su definición.
 
-   ![Ventana de Peek de varios resultados](../ide/media/peekmultiple.png "PeekMultiple")
+   ![Ventana de Peek de varios resultados](../ide/media/peekmultiple.png)
 
 ### <a name="edit-inside-the-peek-definition-window"></a>Edición dentro de la ventana Ver la definición
 
 Cuando empieza a editar dentro de una ventana **Ver la definición**, el archivo que está modificando se abre automáticamente como una pestaña independiente en el editor de código y refleja los cambios que realice. Puede seguir haciendo, deshaciendo y guardando cambios en la ventana **Ver la definición** y la pestaña continuará reflejando esos cambios. Incluso aunque cierre la ventana **Ver la definición** sin guardar los cambios, puede hacer, deshacer y guardar más cambios en la pestaña, retomando el proceso exactamente dónde se quedó en la ventana **Ver la definición**.
 
-   ![Edición dentro de una ventana de Peek](../ide/media/peekedit.png "PeekEdit")
+   ![Edición dentro de una ventana de Peek](../ide/media/peekedit.png)
 
 ### <a name="to-change-options-for-peek-definition"></a>Para cambiar las opciones para ver la definición
 

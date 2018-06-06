@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc94838423cea7eeab8cef6357267609394352b
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747631"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 
@@ -64,7 +65,7 @@ También puede crear un proyecto y plantillas de elemento personalizados. Para o
 
 Después de crear un proyecto nuevo, puede usar el **Explorador de soluciones** para ver y administrar el proyecto, la solución y sus elementos asociados. La siguiente ilustración muestra el **Explorador de soluciones** con una solución de C# que contiene dos proyectos.
 
-![Explorador de soluciones](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")
+![Explorador de soluciones](../ide/media/vs2015_solution_explorer.png)
 
 ## <a name="see-also"></a>Vea también
 

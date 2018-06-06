@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15298414788c112c4f6a1f761055efd38933dfde
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751447"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usar controles HTML5 en pruebas de IU codificada
 
@@ -45,7 +46,7 @@ Las pruebas de IU codificadas proporcionan soporte para algunos de los controles
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Control de audio
  **Control de audio:** las acciones en el control de audio de HTML5 se graban y se reproducen correctamente.
 
- ![Control de audio de HTML5](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")
+ ![Control Audio de HTML5](../test/media/codedui_html5_audio.png)
 
 |Acción|Grabando|Código generado|
 |------------|---------------|--------------------|
@@ -89,7 +90,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Control de vídeo
  **Control de vídeo:** las acciones en el control de vídeo de HTML5 se graban y se reproducen correctamente.
 
- ![Control de vídeo de HTML5](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")
+ ![Control Video de HTML5](../test/media/codedui_html5_video.png)
 
 |Acción|Grabando|Código generado|
 |------------|---------------|--------------------|
@@ -120,7 +121,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Control deslizante
  **Control deslizante:** las acciones en el control deslizante de HTML5 se graban y se reproducen correctamente.
 
- ![Control deslizante de HTML5](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")
+ ![Control Slider de HTML5](../test/media/codedui_html5_slider.png)
 
 |Acción|Grabando|Código generado|
 |------------|---------------|--------------------|
@@ -140,7 +141,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> Barra de progreso
  **Control de barra de progreso:** la barra de progreso es un control con el que no se puede interactuar. Puede agregar aserciones en las propiedades `Value` y `Max` de este control.
 
- ![Control de barra de progreso de HTML5](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")
+ ![Control ProgressBar de HTML5](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>Vea también
 

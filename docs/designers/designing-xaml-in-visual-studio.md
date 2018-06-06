@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c4ebc75ccd436b36e6f96bdc94372ee37b048989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6eb91664c78f3c11039f519a306e55a76f9c8e5a
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745729"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Diseño de XAML en Visual Studio
 
@@ -37,7 +38,7 @@ Para realizar las tareas más básicas, los IDE de Visual Studio y de Blend para
 
 - **Una interfaz de usuario coherente:** puede diseñar sus aplicaciones en el contexto familiar de la interfaz de usuario de Visual Studio, que permite cambiar entre los IDE de manera más agradable y productiva. Blend para Visual Studio usa el tema oscuro de Visual Studio, lo que le ayuda a centrarse en el contenido que está diseñando, ya que mejora el contraste entre el contenido y la interfaz de usuario. Vea [Creating a UI by using XAML Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md) (Crear una IU con el Diseñador XAML en Visual Studio).
 
-     ![Blend para IDE de Visual Studio](../designers/media/blendide.png "BlendIDE")
+     ![Blend para IDE de Visual Studio](../designers/media/blendide.png)
 
 - **IntelliSense en XAML:** ambos IDE admiten todas las funcionalidades comunes que cabe esperar de IntelliSense, incluida la finalización de instrucciones, la compatibilidad con operaciones comunes de editor, como comentar y dar formato al código, y la navegación a los recursos, los enlaces y el código.
 
@@ -45,7 +46,7 @@ Para realizar las tareas más básicas, los IDE de Visual Studio y de Blend para
 
 - **Experiencia de recarga de archivos:** tanto si edita los archivos XAML en Blend para Visual Studio como en Visual Studio, los archivos editados se recargarán automáticamente al cambiar de uno a otro. Para minimizar las interrupciones del flujo de trabajo, ahora puede establecer las preferencias de recarga de archivos en el cuadro de diálogo de recarga de archivos.
 
-     ![Experiencia de recarga de archivo](../designers/media/blendfilereload.png "BlendFileReload")
+     ![Experiencia de recarga de archivo](../designers/media/blendfilereload.png)
 
 - **Diseños y configuraciones sincronizados:** los diseños personalizados le permiten guardar y aplicar las personalizaciones de diseño de la ventana de herramientas. Visual Studio sincronizará estas personalizaciones y preferencias de Visual Studio y Blend para Visual Studio en los equipos cuando inicie sesión con la misma cuenta de Microsoft. Vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 

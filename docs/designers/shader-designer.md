@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb6e746c0ace5892dae7db014125c7e6dba92f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746785"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 
@@ -66,7 +67,7 @@ Los comandos que afectan al estado del Diseñador de sombras se encuentran en la
 
 Esta es la barra de herramientas **Modo Diseñador de sombras**:
 
-![La barra de herramientas Modo Diseñador de sombras.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-Modal-Toolbar")
+![Barra de herramientas modal del diseñador de sombras.](../designers/media/digit-dsd-modal-toolbar.png)
 
 En esta tabla se describen los elementos de la barra de herramientas **Modo Diseñador de sombras** que se muestran en el orden en que aparecen de izquierda a derecha:
 

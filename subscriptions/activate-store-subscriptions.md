@@ -9,11 +9,12 @@ description: Obtenga información sobre cómo activar las suscripciones de Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 751f2fb7931c2081be8c146b6bc3959cc60c2a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477280"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>¿Cómo puedo activar una suscripción adquirida en Microsoft Store?
 Si ha comprado una suscripción de Visual Studio a través de Microsoft Store, los pasos de activación se pueden iniciar desde la "página de confirmación" o el "correo electrónico de confirmación" recibido después del pago. 
@@ -32,7 +33,7 @@ Si ha comprado una suscripción de Visual Studio a través de Microsoft Store, l
 7. Después de iniciar sesión correctamente, aparecerá la ventana "Activate Your Visual Studio Subscription" (Activar la suscripción de Visual Studio).
 8. Escriba la información de clave de producto que está disponible en la "página de confirmación" o el "correo electrónico de confirmación" y haga clic en **Activar**.
 
-    ![Escribir la clave del producto](_img/buy-retail/enter-product-key.png)
+    <img alt="Enter product key" src="_img/buy-retail/enter-product-key.png" style="border: 1px solid #CCCCCC" />
 
 9. La suscripción ahora debería estar visible en la página [Suscripciones](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), y debería tener acceso a todos los beneficios de su suscripción. 
 

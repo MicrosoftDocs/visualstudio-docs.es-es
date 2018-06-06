@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3309435600991db85540c95dc969206619438e51
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477293"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Inicio rápido: Análisis de datos de uso de CPU en Visual Studio (ASP.NET)
 
@@ -49,13 +50,13 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
 1. En el Explorador de soluciones, abra `Models/Data.cs` y agregue la siguiente instrucción `using` a la parte superior del archivo:
 
-    ```cs
+    ```csharp
     using System.Threading;
     ```
 
 1. En Data.cs, reemplace el código siguiente:
 
-    ```cs
+    ```csharp
     public class Data
     {
     }
@@ -63,7 +64,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
     con este código:
 
-    ```cs
+    ```csharp
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
@@ -133,7 +134,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
 1. En el Explorador de soluciones, abra Controller/HomeControllers.cs y reemplace el código siguiente:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         ViewBag.Message = "Your application description page.";
@@ -144,7 +145,7 @@ El concentrador de diagnósticos le ofrece muchas otras opciones para ejecutar y
 
     con este código:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         Models.Simple s = new Models.Simple();

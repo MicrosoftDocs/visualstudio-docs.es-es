@@ -9,11 +9,12 @@ description: Descubra la ventaja de aprendizaje de Opsgility incluida en la susc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477639"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Ventaja de Opsgility para suscripciones de Visual Studio
 
@@ -52,8 +53,6 @@ Las suscripciones seleccionadas de Visual Studio incluyen un año de acceso de f
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones. 
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  ¿Necesita ayuda con Opsgility?  Consulte estos recursos:
-    - [Preguntas más frecuentes](https://www.opsgility.com/Home/FAQ)
-    - Envíe una incidencia de soporte técnico a través de la página de [contacto](https://www.opsgility.com/SupportTicket). 
+-  ¿Necesita ayuda con Opsgility?  Envíe una incidencia de soporte técnico a través de la página de [contacto](https://www.opsgility.com/SupportTicket). 
 -  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://www.visualstudio.com/subscriptions/support/) de Visual Studio.
 -  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Visual Studio Team Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://www.visualstudio.com/support/). 

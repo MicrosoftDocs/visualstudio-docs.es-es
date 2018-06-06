@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c4b8bb09795f35e3ae67065322e926a09dda0f19
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691864"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Herramientas de prueba para desarrolladores, escenarios y funciones
 
@@ -47,8 +48,7 @@ Tanto si elige las pruebas de UI codificada o pruebas genéricas de interfaz de 
 
 * [Usar Automatización de la interfaz de usuario para probar el código](use-ui-automation-to-test-your-code.md)
 * [Comenzar a crear, modificar y mantener una prueba de UI codificada](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Comprobación de aplicaciones de UWP con pruebas de UI codificadas](test-windows-store-8-1-apps-with-coded-ui-tests.md)
-* [Probar aplicaciones de Windows Phone con pruebas de UI codificadas](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
+* [Comprobación de aplicaciones de UWP con pruebas de UI codificadas](test-uwp-app-with-coded-ui-test.md)
 * [Probar aplicaciones de SharePoint con pruebas de UI codificadas](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introducción a las pruebas de UI codificadas con Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 

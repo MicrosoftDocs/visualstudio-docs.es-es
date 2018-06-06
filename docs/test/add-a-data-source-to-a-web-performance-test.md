@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6245647ca0af639bdd960e43f2c1adeed3982562
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750830"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Agregar un origen de datos a una prueba de rendimiento web
 
@@ -143,11 +144,11 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
 1. Cree una carpeta para organizar los artefactos de base de datos de los proyectos y agregar un elemento.
 
-     ![Adición de nuevo elemento a la carpeta de datos](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Agregar nuevo elemento a la carpeta de datos](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Crear un archivo de texto
 
-     ![Asignación del nombre ColorData.csv al nuevo archivo de texto](../test/media/web_test_databinding_foldernewitemtextfile.png "Web_Test_DataBinding_FolderNewItemTextFile")
+     ![Dar el nombre ColorData.csv al nuevo archivo de texto](../test/media/web_test_databinding_foldernewitemtextfile.png)
 
 3. Edite el archivo de texto y agregue lo siguiente:
 
@@ -159,7 +160,7 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
 4. Siga los pasos de [Enlazar los datos](#AddingDataBindingWebTest_BindSQLData), pero elija el archivo CSV como origen de datos.
 
-     ![Escritura de un nombre y elección del archivo CSV](../test/media/web_test_databinding_adddatasourcedialog.png "Web_Test_DataBinding_AddDataSourceDialog")
+     ![Especificar un nombre y elegir el archivo CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>P: ¿Qué ocurre si mi archivo CSV existente no contiene encabezados de columna?
 
@@ -167,7 +168,7 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
 1. Agregue un nuevo archivo de texto denominado schema.ini.
 
-     ![Adición de un archivo schema.ini](../test/media/web_test_databinding_schemafile.png "Web_Test_DataBinding_SchemaFile")
+     ![Agregar un archivo schema.ini](../test/media/web_test_databinding_schemafile.png)
 
 2. Edite el archivo schema.ini para agregar información que describa la estructura de los datos. Por ejemplo, un archivo de esquema que describa el archivo CSV podría ser similar al siguiente:
 
@@ -178,39 +179,39 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
 3. Agregue un origen de datos a la prueba.
 
-     ![Adición de origen de datos a prueba de rendimiento web](../test/media/web_test_databinding_sql_adddatasource.png "Web_Test_DataBinding_SQL_AddDataSource")
+     ![Agregar origen de datos a la prueba de rendimiento web](../test/media/web_test_databinding_sql_adddatasource.png)
 
 4. Si usa un archivo schema.ini, elija la base de datos (y no el archivo CSV) como origen de datos y asígnele un nombre.
 
-     ![Adición de origen de datos de base de datos](../test/media/web_test_databinding_adddatasourcecolortext.png "Web_Test_DataBinding_AddDataSourceColorText")
+     ![Agregar origen de datos de base de datos](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
 5. Cree una nueva conexión.
 
-     ![Elección de nueva conexión](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png "Web_Test_DataBinding_SQL_AddDataSourceDialogConnectionNew")
+     ![Elegir nueva conexión](../test/media/web_test_databinding_sql_adddatasourcedialogconnectionnew.png)
 
 6. Seleccionar el proveedor de datos .NET Framework para OLE DB.
 
-     ![Selección del proveedor de datos .NET Framework para OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png "Web_Test_DataBinding_AddDataSourceColorText2")
+     ![Seleccionar el proveedor de datos de .NET Framework para OLE DB](../test/media/web_test_databinding_adddatasourcecolortext2.png)
 
 7. Elija Avanzado.
 
-     ![Elección de Avanzado](../test/media/web_test_databinding_advanced.png "Web_Test_DataBinding_Advanced")
+     ![Elegir Avanzadas](../test/media/web_test_databinding_advanced.png)
 
 8. En la propiedad Proveedor, seleccione Microsoft.Jet.OLEDB.4.0 y después establezca Propiedades extendidas en Text;HDR=NO.
 
-     ![Aplicación de propiedades avanzadas](../test/media/web_test_databinding_advancedproperties.png "Web_Test_DataBinding_AdvancedProperties")
+     ![Aplicar propiedades avanzadas](../test/media/web_test_databinding_advancedproperties.png)
 
 9. Escriba el nombre de la carpeta que contiene el archivo de esquema y pruebe la conexión.
 
-     ![Especificación de la ruta de acceso a la carpeta de datos](../test/media/web_test_databinding_adddatasourcecolortext5.png "Web_Test_DataBinding_AddDataSourceColorText5")
+     ![Especificar la ruta de acceso a la carpeta de datos](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. Seleccione el archivo CSV que desee utilizar.
 
-     ![Selección del archivo de texto](../test/media/web_test_databinding_adddatasourcecolortext6.png "Web_Test_DataBinding_AddDataSourceColorText6")
+     ![Seleccionar el archivo de texto](../test/media/web_test_databinding_adddatasourcecolortext6.png)
 
      Cuando termine, el archivo CSV aparecerá como una tabla.
 
-     ![Origen de datos agregado a la prueba](../test/media/web_test_databinding_adddatasourcecolortext7.png "Web_Test_DataBinding_AddDataSourceColorText7")
+     ![Origen de datos agregado a la prueba](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
 ### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: ¿Cómo utilizo un archivo XML como origen de datos?
 
@@ -218,11 +219,11 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
 1. Cree una carpeta para organizar los artefactos de base de datos de los proyectos y agregar un elemento.
 
-     ![Adición de nuevo elemento a la carpeta de datos](../test/media/web_test_databinding_foldernewitem.png "Web_Test_DataBinding_FolderNewItem")
+     ![Agregar nuevo elemento a la carpeta de datos](../test/media/web_test_databinding_foldernewitem.png)
 
 2. Cree un archivo XML.
 
-     ![Adición del archivo ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png "Web_Test_DataBinding_AddItemXMLFile")
+     ![Agregar el archivo ColorData.xml](../test/media/web_test_databinding_additemxmlfile.png)
 
 3. Edite el archivo XML y agregue los datos:
 
@@ -242,7 +243,7 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
 4. Siga los pasos de [Enlazar los datos](#AddingDataBindingWebTest_BindSQLData), pero elija el archivo XML como origen de datos.
 
-     ![Especificación de un nombre y elección del archivo XML](../test/media/web_test_databinding_adddatasourcedialogxml.png "Web_Test_DataBinding_AddDataSourceDialogXML")
+     ![Especificar un nombre y elegir el archivo XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: ¿Se puede agregar un enlace de datos a una solicitud de servicio Web que use SOAP?
 
@@ -250,7 +251,7 @@ Utilice el enlace datos para proporcionar valores diferentes a la misma prueba; 
 
 1. Elija la solicitud de servicio Web en el árbol de solicitudes y, en la ventana Propiedades, elija los puntos suspensivos (...) de la propiedad Texto de la cadena.
 
-     ![Edición del cuerpo de la cadena del servicio web](../test/media/web_test_databinding_webservicerequest.png "Web_Test_DataBinding_WebServiceRequest")
+     ![Editar el cuerpo de la cadena del servicio Web](../test/media/web_test_databinding_webservicerequest.png)
 
 2. Reemplace los valores del cuerpo SOAP por valores enlazados a datos con la siguiente sintaxis:
 
