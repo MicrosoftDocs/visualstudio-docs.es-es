@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943704"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
 

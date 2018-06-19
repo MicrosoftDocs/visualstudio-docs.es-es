@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102933"
 ---
 # <a name="debug-engine"></a>Motor de depuración
 Un motor de depuración (Alemania) funciona con el sistema operativo o intérprete para proporcionar servicios de depuración como la evaluación de expresión, control y los puntos de interrupción de ejecución. La DE es responsable de supervisar el estado de un programa que se está depurando. Para lograr esto, la DE utiliza los métodos que sean a su disposición en el tiempo de ejecución admitida, si de la CPU o de la API proporcionada por el runtime.  

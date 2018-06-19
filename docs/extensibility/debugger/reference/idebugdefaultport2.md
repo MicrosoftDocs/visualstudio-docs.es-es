@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106908"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 Esta interfaz proporciona varios métodos para tener acceso a servidor de puertos y servicios de notificación.  

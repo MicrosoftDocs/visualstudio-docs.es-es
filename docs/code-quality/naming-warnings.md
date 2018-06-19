@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927092"
 ---
 # <a name="naming-warnings"></a>advertencias de nomenclatura
 Advertencias de nomenclatura de soporte técnico de cumplimiento de las convenciones de nomenclatura de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] directrices de diseño.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104636"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Agregar un controlador de menú a una barra de herramientas
 En este tutorial se basa en el [agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md) tutorial y se muestra cómo agregar un controlador de menú a la barra de herramientas de la ventana de herramientas. Los pasos que se muestran aquí también se pueden aplicar a la barra de herramientas que se crea en el [agregar una barra de herramientas](../extensibility/adding-a-toolbar.md) tutorial.  

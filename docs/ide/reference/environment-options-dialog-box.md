@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947942"
 ---
 # <a name="environment-options-dialog-box"></a>Opciones de entorno (Cuadro de diálogo)
 Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opciones** para establecer cómo ciertos elementos del entorno de desarrollo integrado (IDE) se muestran y se comportan. Para acceder a las páginas de Entorno, en la barra de menús, seleccione **Herramientas**, **Opciones** y, después, seleccione **Entorno**.

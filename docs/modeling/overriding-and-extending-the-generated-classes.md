@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951900"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Invalidar y ampliar clases generadas
 La definición DSL es una plataforma en la que puede crear un conjunto eficaz de herramientas que se basan en un lenguaje específico de dominio. Muchas de las extensiones y las adaptaciones pueden realizarse por reemplazar y ampliar las clases que se generan a partir de la definición DSL. Estas clases incluyen no solo las clases de dominio que haya definido explícitamente en el diagrama de definición DSL, sino también otras clases que definen el cuadro de herramientas, explorador, serialización y así sucesivamente.

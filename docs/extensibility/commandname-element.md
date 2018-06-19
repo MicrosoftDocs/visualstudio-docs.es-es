@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097619"
 ---
 # <a name="commandname-element"></a>Elemento CommandName
 El `CommandName` elemento especifica el texto que aparece en la categoría de teclado en el **opciones** cuadro de diálogo y en el **comandos** lista en la **personalizar** cuadro de diálogo cuadro.  

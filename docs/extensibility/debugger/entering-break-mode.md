@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098215"
 ---
 # <a name="entering-break-mode"></a>ENTRAR en modo de interrupción
 A continuación describe el proceso que se produce cuando se encuentra un punto de interrupción después de la ejecución paso a paso en una función, ejecute a la línea de código fuente que tiene el cursor en ella o un punto de interrupción.  

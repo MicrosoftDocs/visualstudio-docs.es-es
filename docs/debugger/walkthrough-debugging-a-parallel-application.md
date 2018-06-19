@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927300"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Tutorial: Depurar una aplicación paralela en Visual Studio
 Este tutorial muestra cómo utilizar el **tareas paralelas** y **pilas paralelas** windows para depurar una aplicación paralela. Estas ventanas ayudan a entender y comprobar el comportamiento en tiempo de ejecución del código que usa el [tarea Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o [Runtime de simultaneidad](/cpp/parallel/concrt/concurrency-runtime). En este tutorial se proporciona código de muestra con puntos de interrupción integrados. Después de que el código se interrumpe, se muestra cómo utilizar el **tareas paralelas** y **pilas paralelas** windows para examinarlo.  

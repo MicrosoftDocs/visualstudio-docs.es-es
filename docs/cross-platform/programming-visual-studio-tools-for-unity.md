@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31060127"
 ---
 # <a name="programming-visual-studio-tools-for-unity"></a>Programación de Visual Studio Tools para Unity
 En esta sección encontrará ejemplos de uso de Visual Studio Tools para la API de Unity.

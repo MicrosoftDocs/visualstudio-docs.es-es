@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945121"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 Implementa una solución después de una compilación o recompilación. Solo se aplica a los proyectos de código administrado.

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942659"
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>Teclado, Entorno, Opciones (cuadro de diálogo)
 Utilice esta página para establecer las asignaciones de teclado. Para obtener más información sobre las asignaciones, vea [Identificar y personalizar métodos abreviados de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

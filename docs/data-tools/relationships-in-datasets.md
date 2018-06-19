@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927209"
 ---
 # <a name="create-relationships-between-datasets"></a>Crear relaciones entre los conjuntos de datos
 Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:System.Data.DataRelation> objetos para representar una relación primaria-secundaria entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante la **Asistente para configuración de orígenes de datos**, o la **Diseñador de Dataset**, crea y configura el <xref:System.Data.DataRelation> objeto automáticamente.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102335"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Especifica el tipo de nombre de archivos que se va a recuperar.  

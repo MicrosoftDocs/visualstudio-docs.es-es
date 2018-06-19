@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926563"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de corrección extendidas para código administrado
 El conjunto de reglas reglas de corrección extendidas de Microsoft maximiza los errores de uso de lógica y un marco que son notificados por el análisis de código. Se pone especial énfasis en escenarios específicos como la interoperabilidad COM y aplicaciones móviles. Es aconsejable que incluya este conjunto de reglas si alguno de estos escenarios se aplica a su proyecto o para buscar problemas adicionales del proyecto.

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952831"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usar ModelBus de Visual Studio en plantillas de texto
 Si escribe plantillas de texto que lee un modelo que contenga [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hace referencia a ModelBus, desea resolver las referencias para tener acceso a los modelos de destino. En ese caso, tendrá que adaptar las plantillas de texto y los que se hace referencia lenguajes específicos de dominio (DSL):

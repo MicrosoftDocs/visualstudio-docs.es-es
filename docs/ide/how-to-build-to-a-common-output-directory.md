@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942050"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Cómo: Compilar en un directorio de salida común
 

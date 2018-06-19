@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098423"
 ---
 # <a name="adding-command-line-switches"></a>Adición de modificadores de línea de comandos
 Puede agregar modificadores de línea de comandos que se aplican a su VSPackage cuando se ejecuta devenv.exe. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del conmutador y sus propiedades. En este ejemplo, se agrega el modificador MySwitch para una subclase de VSPackage denominado **AddCommandSwitchPackage** sin argumentos y con el VSPackage que se cargan automáticamente.  

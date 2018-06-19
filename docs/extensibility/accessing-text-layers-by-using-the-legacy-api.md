@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098672"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>Obtener acceso a las capas de texto mediante la API heredado
 Normalmente, una capa de texto encapsula algún aspecto del diseño de texto. Por ejemplo, una capa de "una función a la vez" oculta el texto antes y después de una función que contiene el símbolo de intercalación (punto de inserción de texto).  

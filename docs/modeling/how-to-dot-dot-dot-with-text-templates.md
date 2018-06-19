@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953984"
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
 Plantillas de texto en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporcionan una forma útil de generar el texto de cualquier tipo. Puede usar plantillas de texto para generar texto en tiempo de ejecución como parte de la aplicación y en tiempo de diseño para generar algunos el código del proyecto. En este tema se resume con más frecuencia le pregunte "¿Cómo...?" preguntas frecuentes.

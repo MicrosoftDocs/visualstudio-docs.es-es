@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927064"
 ---
 # <a name="usage-warnings"></a>advertencias de uso
 Advertencias de uso admiten el uso apropiado de .NET Framework.

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948199"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Admite las ediciones de Visual Studio para visualización &amp; modelado del SDK
 Los siguientes son listas de las ediciones de Visual Studio que son compatibles con [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] en los entornos de creación y la implementación. Para obtener más información acerca de estas ediciones, vea Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [Centro para desarrolladores de](http://go.microsoft.com/fwlink/?LinkId=75628).

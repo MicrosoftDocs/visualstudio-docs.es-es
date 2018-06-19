@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101383"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Creación de un motor de depuración personalizadas
 Un motor de depuración (Alemania) es un componente que permite la depuración de arquitecturas de tiempo de ejecución determinadas. Normalmente hay sólo una implementación DE por cada entorno de tiempo de ejecución.  

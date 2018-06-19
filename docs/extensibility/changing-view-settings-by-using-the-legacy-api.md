@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099342"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Cambiar la configuración de la vista mediante la API heredado
 Configuración de características del editor principal, como el ajuste automático de línea, el margen de selección y el espacio virtual, se puede modificar por el usuario por medio de la **opciones** cuadro de diálogo. Sin embargo, también es posible cambiar esta configuración mediante programación.  

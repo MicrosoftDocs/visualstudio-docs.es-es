@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942583"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 Muestra un cuadro de mensaje que enumera todos los modificadores `devenv`, con una breve descripción de cada uno de ellos.

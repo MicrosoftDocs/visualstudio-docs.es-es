@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946369"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Visual Studio Architecture Tooling Guidance
 Esta guía de herramientas de arquitectura es un paquete descargable de instrucciones prácticas sobre el uso de las herramientas de modelado de Visual Studio 2010. Presenta una vista general de cómo usar las herramientas de modelado de una manera integrada y se describen los escenarios más comunes en que se usan las herramientas.

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953602"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad de los [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] SDK de visualización y modelado permite que un programa parte de bloqueo o la totalidad de un modelo de lenguaje específico de dominio (DSL) para que se puede leer pero no cambia. Se usa esta opción de solo lectura, por ejemplo, para que un usuario puede preguntar a compañeros para agregar anotaciones y revisar un modelo DSL pero puede no puedan cambiar el original.

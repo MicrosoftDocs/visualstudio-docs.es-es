@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097788"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>Obtener acceso a Text vista mediante la API heredado
 Una vista de texto es una presentación del texto que se almacena en un búfer de texto. Puede tener acceso a la vista de texto mediante el uso de la API heredada tal y como se muestra en la siguiente sección.
