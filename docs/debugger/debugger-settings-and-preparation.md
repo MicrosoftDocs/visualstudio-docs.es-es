@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473321"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparación y configuración de la depuración
 En esta sección se describe la configuración de las propiedades relacionadas con el depurador y la preparación necesaria para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si crea el programa en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante las plantillas de proyecto, esta configuración se habilita automáticamente en la configuración Debug.  

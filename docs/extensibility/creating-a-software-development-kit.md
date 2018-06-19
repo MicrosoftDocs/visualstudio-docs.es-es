@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109183"
 ---
 # <a name="creating-a-software-development-kit"></a>Creación de un kit de desarrollo de software
 Un kit de desarrollo de software (SDK) es un conjunto de API que puede hacer referencia como un solo elemento en Visual Studio. El **Administrador de referencias** cuadro de diálogo muestra todos los SDK que son relevantes para el proyecto. Cuando se agrega un SDK para un proyecto, la API están disponibles en Visual Studio.  

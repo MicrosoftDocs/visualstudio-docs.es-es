@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476385"
 ---
 # <a name="graphics-state"></a>Estado de los gráficos
 La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece información sobre el estado activo de los gráficos en el momento del evento actual (por ejemplo, durante una llamada a draw).  
