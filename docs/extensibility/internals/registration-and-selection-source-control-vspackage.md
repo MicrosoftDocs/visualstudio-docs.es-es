@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133042"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro y la selección (VSPackage de Control de código fuente)
 Un control de código fuente se debe registrar VSPackage para exponerlo a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Si se registra más de un control de código fuente VSPackage, el usuario puede seleccionar qué VSPackage para cargar en los momentos adecuados. Vea [VSPackages](../../extensibility/internals/vspackages.md) para obtener más información sobre VSPackages y cómo registrarlos.  

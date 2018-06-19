@@ -29,6 +29,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923434"
 ---
 # <a name="saving-data"></a>Guardado de datos
 Guardar los datos es que el proceso de guardar los datos modificados en modelo de datos de una aplicación en el almacén de datos original, normalmente una base de datos relacional como SQL Server.

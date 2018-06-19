@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922328"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Escrito frente a los conjuntos de datos sin tipo
 Un conjunto de datos con tipo es un conjunto de datos que primero se deriva de la base de <xref:System.Data.DataSet> clase y, a continuación, usa información de la **Diseñador de Dataset**, que está almacenado en un archivo .xsd, para generar un nuevo establecimiento inflexible de tipos dataset (clase). La información del esquema (tablas, columnas etc.) se genera y se compila en esta nueva clase de conjunto de datos como un conjunto de propiedades y objetos de primera clase. Puesto que un conjunto de datos con tipo hereda de la base de <xref:System.Data.DataSet> (clase), la clase con tipo asume toda la funcionalidad de la <xref:System.Data.DataSet> clase y puede usarse con métodos que toman una instancia de un <xref:System.Data.DataSet> clase como un parámetro.

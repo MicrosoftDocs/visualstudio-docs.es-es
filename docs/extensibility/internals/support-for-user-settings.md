@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134098"
 ---
 # <a name="support-for-user-settings"></a>Compatibilidad con la configuración de usuario
 Un VSPackage puede definir una o varias categorías de configuración, que son grupos de variables de estado que se conservan cuando un usuario elige el **configuración de importación y exportación de** comando el **herramientas** menú. Para habilitar esta persistencia, se usa las API de configuración en el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -33,14 +34,14 @@ Un VSPackage puede definir una o varias categorías de configuración, que son g
      Si un paquete VSPackage solo es compatible con varios puntos de configuración personalizada, cada punto de configuración personalizada se implementa mediante una clase distinta y cada uno está registrado por una instancia única de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> clase. Por consiguiente, una configuración de implementación de clase puede admitir más de una categoría de configuración.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Detalles de la entrada de configuración personalizada del registro de punto  
- Se crean puntos de configuración personalizada en una entrada del registro en la siguiente ubicación: HKLM\Software\Microsoft\VisualStudio\\*\<versión >*\UserSettings\\`<CSPName>`, donde `<CSPName>` es el nombre del punto de configuración personalizada de admite el VSPackage y  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por ejemplo 8.0.  
+ Se crean puntos de configuración personalizada en una entrada del registro en la siguiente ubicación: HKLM\Software\Microsoft\VisualStudio\\*\<versión >* \UserSettings\\`<CSPName>`, donde `<CSPName>` es el nombre del punto de configuración personalizada de admite el VSPackage y  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por ejemplo 8.0.  
   
 > [!NOTE]
 >  La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede ser invalidado con una alternativa raíz cuando el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] es el entorno de desarrollo integrado (IDE) inicializar. Para obtener más información, consulte [modificadores de línea de comandos](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  La estructura de la entrada del registro se muestra a continuación:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<versión >*\UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<versión >* \UserSettings\  
   
  `<CSPName`> = '#12345' s  
   

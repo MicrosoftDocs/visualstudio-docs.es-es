@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133765"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nueva generación de proyecto: Under the Hood, parte 1
 ¿Imaginar que acerca de cómo crear su propio tipo de proyecto? Se ha preguntado realmente, ¿qué ocurre cuando se crea un nuevo proyecto? Vamos a echar un vistazo en segundo plano y ver lo que realmente está ocurriendo.  
