@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142297"
 ---
 # <a name="signing-vsix-packages"></a>Firma de paquetes VSIX
 No es necesario que los ensamblados de extensión se firmen antes de que puede ejecutar en Visual Studio, pero es recomendable hacerlo.  

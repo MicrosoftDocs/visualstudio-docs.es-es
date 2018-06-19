@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110073"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Adjuntar y separar a un programa
 Para asociar al depurador requiere el envío de la secuencia correcta de métodos y eventos con los atributos adecuados.  

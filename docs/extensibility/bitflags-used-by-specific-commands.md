@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108791"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcadores de bits utilizada por los comandos específicos
 El comportamiento de un número de funciones de la API de complementos de Control de código fuente puede modificarse estableciendo uno o más bits en un solo valor. Estos valores se conocen como marcadores de bits. Los distintos marcadores de bits utilizadas por la API de complemento de Control de origen, que se detallan en este caso, agrupados por la función que los usa.  

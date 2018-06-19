@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31898566"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Las excepciones deben ser públicas
 |||
