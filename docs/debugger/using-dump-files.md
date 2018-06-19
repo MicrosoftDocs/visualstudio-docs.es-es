@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481832"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Usar archivos de volcado de memoria con Visual Studio
 Archivos de volcado de memoria con o sin montones; crear un archivo de volcado; abrir un archivo de volcado de memoria; buscar los archivos binarios, el del archivo pdb y el archivo de código fuente para un archivo de volcado.

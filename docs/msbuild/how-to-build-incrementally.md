@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578268"
 ---
 # <a name="how-to-build-incrementally"></a>Cómo: Compilar versiones incrementalmente
 Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).  

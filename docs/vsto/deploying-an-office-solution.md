@@ -31,6 +31,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34261963"
 ---
 # <a name="deploy-an-office-solution"></a>Implementar una solución de Office
   Puede implementar soluciones de Office mediante ClickOnce o Windows Installer. Si usa ClickOnce, se reducirá el número de pasos que requiere la implementación y actualización de la solución. Si utiliza Windows Installer, obtendrá control sobre cómo se instala la solución y qué páginas muestra el programa de instalación cuando los usuarios instalan la solución.  

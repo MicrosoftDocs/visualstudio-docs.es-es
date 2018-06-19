@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127111"
 ---
 # <a name="how-to-use-the-activity-log"></a>Cómo: usar el registro de actividad
 VSPackages puede escribir mensajes en el registro de actividad. Esta característica es especialmente útil para depurar los VSPackages en entornos de venta directa.  
@@ -48,7 +49,7 @@ VSPackages puede escribir mensajes en el registro de actividad. Esta caracterís
   
 1.  Ejecutar Visual Studio con la [o en el registro](../ide/reference/log-devenv-exe.md) conmutador de línea de comandos que se va a escribir ActivityLog.xml en el disco durante la sesión.
 
-2.  Después de cerrar Visual Studio, buscar el registro de actividad en la subcarpeta para los datos de Visual Studio: *% AppData %*\Microsoft\VisualStudio\15.0\ActivityLog.xml.  
+2.  Después de cerrar Visual Studio, buscar el registro de actividad en la subcarpeta para los datos de Visual Studio: *% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml.  
   
 3.  Abra el registro de actividad con cualquier editor de texto. Esta es una entrada típica:  
   

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565775"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Tutorial: Descargar ensamblados a petición con la API de implementación de ClickOnce
 De forma predeterminada, todos los ensamblados incluyen en una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se descargan cuando se ejecuta la aplicación por primera vez. Sin embargo, habrá partes de la aplicación que usan un pequeño conjunto de usuarios. En tal caso, es probable que quiera descargar un ensamblado solo cuando cree uno de sus tipos. El tutorial siguiente muestra cómo marcar determinados ensamblados de la aplicación como "opcionales" y cómo descargarlos utilizando clases en el <xref:System.Deployment.Application> espacio de nombres cuando common language runtime (CLR) los solicite.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127482"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Cómo: crear una Atom fuente de distribución para una galería privada
 Puede crear una Atom () fuente RSS en una ubicación de intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como galería privada. Para más información, vea [Private Galleries](../extensibility/private-galleries.md) (Galerías privadas).  

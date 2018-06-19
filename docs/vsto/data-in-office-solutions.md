@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263459"
 ---
 # <a name="data-in-office-solutions"></a>Datos en soluciones de Office
   Muchas soluciones de Office permiten a los usuarios recuperar o modificar datos. Al crear soluciones de Office con Visual Studio, hay varias maneras de trabajar con los datos.  

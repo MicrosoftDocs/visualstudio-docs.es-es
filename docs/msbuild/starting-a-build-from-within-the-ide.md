@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577501"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Iniciar una compilación desde el IDE
 Los sistemas de proyectos personalizados deben utilizar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar las compilaciones. En este tema se describen las razones de ello y se describe el procedimiento.  

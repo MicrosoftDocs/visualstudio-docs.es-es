@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477669"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Cómo: Depurar en un clúster de alto rendimiento
 La depuración de un programa multiproceso en un clúster de alto rendimiento es similar a la depuración de un programa normal en un equipo remoto. Sin embargo, hay algunas consideraciones adicionales. Para los requisitos de configuración remotos generales, vea [depuración remota](../debugger/remote-debugging.md).  

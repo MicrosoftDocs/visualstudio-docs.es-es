@@ -34,6 +34,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478127"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en la ventana **Inspección** mediante especificadores de formato.  

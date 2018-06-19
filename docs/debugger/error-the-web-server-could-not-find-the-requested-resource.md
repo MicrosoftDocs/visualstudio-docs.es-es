@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454321"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Error: El servidor Web no pudo encontrar el recurso solicitado
 Por motivos de seguridad, IIS ha devuelto un error genérico.  

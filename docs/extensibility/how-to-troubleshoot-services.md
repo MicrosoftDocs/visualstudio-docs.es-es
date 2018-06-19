@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128680"
 ---
 # <a name="how-to-troubleshoot-services"></a>Cómo: solucionar problemas de servicios
 Hay varios problemas comunes que pueden producirse al intentar obtener un servicio:  

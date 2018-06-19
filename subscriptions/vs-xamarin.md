@@ -14,6 +14,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448602"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Ventaja de formación de Xamarin University en las suscripciones de Visual Studio
 

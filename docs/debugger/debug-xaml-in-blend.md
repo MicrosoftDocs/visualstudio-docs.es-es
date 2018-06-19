@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477458"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML en Blend
 Puede usar las herramientas de [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] para depurar el código XAML de su aplicación. Cuando compila un proyecto, los errores se muestran en la **resultados** panel. Haz doble clic en un error para buscar el marcado relacionado con el error. Si necesita más espacio para trabajar, puede ocultar la **resultados** panel presionando F12.  

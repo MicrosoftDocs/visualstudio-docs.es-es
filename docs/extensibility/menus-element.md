@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136437"
 ---
 # <a name="menus-element"></a>Elemento de menús
 Define todos los menús y barras de herramientas que implementa un paquete VSPackage.  

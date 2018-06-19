@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571326"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 Inicia un contexto de seguimiento con un archivo de respuesta que especifica un marcador raíz.  

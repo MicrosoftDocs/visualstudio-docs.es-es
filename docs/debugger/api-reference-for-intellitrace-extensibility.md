@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457467"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Referencia de la API para la extensibilidad de IntelliTrace
 Con la información proporcionada en esta sección, podrá usar la API de extensibilidad de IntelliTrace para leer y descodificar los archivos .itrace de una aplicación.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475410"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Pestaña Salida (Cuadro de diálogo Opciones de mensaje)
 Use la **salida** ficha para especificar qué datos de cada mensaje a la lista en [vista mensajes](../debugger/messages-view.md). Para mostrar la [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **mensajes de registro** desde el **Spy** menú.  

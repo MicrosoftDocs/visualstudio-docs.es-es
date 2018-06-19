@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473191"
 ---
 # <a name="how-to-display-window-properties"></a>Cómo: Mostrar propiedades de ventana
 Para obtener más información acerca de una ventana que aparece en [Windows Vista](../debugger/windows-view.md), use la [cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md).  

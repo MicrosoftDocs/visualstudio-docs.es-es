@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478768"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Establece una inspección en Variables mediante la inspección y las ventanas de inspección rápida en Visual Studio
 Durante la depuración, puede usar el **inspección** y **Inspección rápida** windows para observar las variables y expresiones.  La diferencia es que la ventana **Inspección** puede mostrar varias variables, mientras que la ventana **Inspección rápida** muestra las variables de una en una. 

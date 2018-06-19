@@ -26,6 +26,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454549"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expresiones en el depurador de Visual Studio
 El depurador de Visual Studio incluye evaluadores de expresión que funcionan cuando escribe una expresión en el cuadro de diálogo **Inspección rápida** , la ventana **Inspección** o la ventana **Inmediato** . Los evaluadores de expresión también se utilizan en la ventana **Puntos de interrupción** y en muchos otros lugares en el depurador.

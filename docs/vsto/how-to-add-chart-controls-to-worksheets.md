@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548741"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Cómo: agregar controles Chart a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.Chart> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en las personalizaciones de nivel de documento. También puede agregar <xref:Microsoft.Office.Tools.Excel.Chart> controles en tiempo de ejecución en complementos VSTO.  

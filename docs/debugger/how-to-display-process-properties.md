@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481715"
 ---
 # <a name="how-to-display-process-properties"></a>Cómo: Mostrar las propiedades de los procesos
 Para obtener más información acerca de un proceso que se muestran en [vista procesos](../debugger/processes-view.md), use la [cuadro de diálogo de propiedades de proceso](../debugger/process-properties-dialog-box.md).  

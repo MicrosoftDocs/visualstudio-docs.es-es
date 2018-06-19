@@ -37,6 +37,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575902"
 ---
 # <a name="link-task"></a>Vincular tarea
 Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta del vinculador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable (.exe) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte [Opciones del enlazador](/cpp/build/reference/linker-options).  

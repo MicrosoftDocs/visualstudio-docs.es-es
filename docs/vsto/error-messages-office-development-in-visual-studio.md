@@ -20,6 +20,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263282"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Mensajes de error (desarrollo de Office en Visual Studio)
   Cada tema de mensaje de error proporciona información sobre las posibles causas de un error y las posibles soluciones o alternativas para resolver el problema.  

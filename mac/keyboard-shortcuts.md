@@ -10,6 +10,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34453821"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado comunes de Visual Studio para Mac
 

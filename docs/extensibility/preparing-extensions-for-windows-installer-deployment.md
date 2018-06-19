@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136331"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>Preparar las extensiones para la implementación de Windows Installer
 No se puede usar un paquete de Windows Installer (MSI) para implementar un paquete VSIX. Sin embargo, puede extraer el contenido de un paquete VSIX para la implementación de MSI. Este documento muestra cómo preparar un proyecto cuyo resultado predeterminado es un paquete VSIX para su inclusión en un proyecto de instalación.  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476863"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>Pestaña Ventanas (Cuadro de diálogo Opciones de mensaje)
 Use la **Windows** pestaña para establecer el ámbito de los mensajes que aparecen en [vista mensajes](../debugger/messages-view.md). Para mostrar la [cuadro de diálogo Opciones de mensaje](../debugger/message-options-dialog-box.md), elija **mensajes de registro** desde el **Spy** menú.  

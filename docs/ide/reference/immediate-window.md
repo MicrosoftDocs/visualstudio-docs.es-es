@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704530"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.

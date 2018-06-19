@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566204"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Comandos&gt; elemento (arranque)
 El `Commands` elemento implementa las pruebas descritas por los elementos subyacentes el `InstallChecks` elemento y declara el paquete en el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] debe instalar el programa previo si se produce un error en la prueba.  

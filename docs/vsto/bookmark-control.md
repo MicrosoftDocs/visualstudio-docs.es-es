@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264017"
 ---
 # <a name="bookmark-control"></a>Bookmark (control)
   El control <xref:Microsoft.Office.Tools.Word.Bookmark> es un marcador que tiene un nombre único, expone eventos y se puede enlazar a datos. El marcador se puede usar como marcador de posición para marcar un elemento o una ubicación en un documento de Microsoft Office Word. El control <xref:Microsoft.Office.Tools.Word.Bookmark> s una combinación de un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> y un objeto <xref:Microsoft.Office.Interop.Word.Range> .

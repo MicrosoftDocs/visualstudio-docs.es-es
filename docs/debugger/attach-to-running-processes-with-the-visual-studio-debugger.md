@@ -34,6 +34,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454562"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 Puede asociar el depurador de Visual Studio a un proceso en ejecución en un equipo local o remoto. Cuando el proceso se está ejecutando, haga clic en **Depurar > asociar al proceso** (o presione **CTRL + ALT + P**) para abrir el **adjuntar al proceso** cuadro de diálogo.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464357"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
 Recupera una marca que especifica si la función contiene cualquier control de excepciones de tipo C++ no administrado (por ejemplo, un bloque try/catch).  

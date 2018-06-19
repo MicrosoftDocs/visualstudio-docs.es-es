@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571866"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Cómo: Extender el proceso de compilación de Visual Studio
 El proceso de compilación [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se define mediante una serie de archivos .targets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se importan en el archivo del proyecto. Uno de estos archivos importados, Microsoft.Common.targets, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este tema se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  

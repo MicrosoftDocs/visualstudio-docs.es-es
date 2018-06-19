@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574690"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtener registros de compilación con MSBuild
 Mediante el uso de modificadores con MSBuild, puede especificar la cantidad de datos de compilación que quiere revisar y si quiere guardarlos en uno o más archivos. También puede especificar un registrador personalizado para recopilar datos de compilación. Para obtener información sobre los modificadores de la línea de comandos de MSBuild que no se tratan en este tema, consulte [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  

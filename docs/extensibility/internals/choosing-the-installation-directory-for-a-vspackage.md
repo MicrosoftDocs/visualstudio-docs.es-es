@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134450"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Elegir el directorio de instalación para un paquete VSPackage
 Un VSPackage y sus archivos auxiliares deben estar en el sistema de archivos de un usuario. La ubicación depende de si el VSPackage está administrado o no administrado, el esquema de control de versiones en paralelo y la elección del usuario.  

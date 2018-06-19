@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472716"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Cómo: Retroceder o avanzar en la memoria
 Al ver el contenido de la memoria en un **memoria** ventana o el **desensamblado** ventana, puede usar la barra de desplazamiento vertical para moverse hacia arriba o hacia abajo en el espacio de memoria.  

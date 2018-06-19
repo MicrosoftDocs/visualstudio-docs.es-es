@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477552"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Usar las ventanas de memoria en el depurador de Visual Studio
 El **memoria** ventana proporciona una vista en el espacio de memoria que se usa la aplicación. El **inspección** ventana, **Inspección rápida** cuadro de diálogo, **automático** ventana, y **locales** ventana Mostrar el contenido de las variables, que son se almacenan en ubicaciones específicas en la memoria. Pero la **memoria** ventana muestra la imagen a gran escala. Esta visión puede ser conveniente para examinar grandes conjuntos de datos (búferes de cadenas largas, por ejemplo), que no se muestran adecuadamente en las demás ventanas. Sin embargo, el **memoria** ventana no está limitado a la visualización de datos. Muestra todo lo que hay en el espacio de memoria, ya sean datos, código o bits aleatorios de la memoria no asignada.  

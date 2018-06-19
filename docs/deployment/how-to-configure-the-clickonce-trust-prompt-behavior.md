@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561560"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Cómo: Configurar el comportamiento del mensaje relativo a la confianza de ClickOnce
 Puede configurar el aviso de confianza de ClickOnce para controlar si los usuarios finales tienen la opción de instalar aplicaciones ClickOnce, como aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation, aplicaciones de consola, explorador WPF las aplicaciones y soluciones de Office. Configurar el aviso de confianza mediante el establecimiento de las claves del registro en el equipo de cada usuario final.  

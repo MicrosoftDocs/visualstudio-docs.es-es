@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568674"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Agregar un menú contextual en una ventana de herramientas
 En este tutorial, se coloca un menú contextual en una ventana de herramientas. Un menú contextual es un menú que aparece cuando un usuario seleccione un botón, el cuadro de texto o el fondo de la ventana. Comandos en un menú contextual comportan igual que los comandos en otros menús o barras de herramientas. Para admitir un menú contextual, especifíquelo en el archivo .vsct y mostrarlo en la respuesta para el botón secundario del mouse.  

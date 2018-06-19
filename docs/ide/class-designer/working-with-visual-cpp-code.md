@@ -25,6 +25,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33958456"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Trabajar con código de Visual C++ en el Diseñador de clases
 

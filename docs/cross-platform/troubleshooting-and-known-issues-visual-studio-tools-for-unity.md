@@ -1,23 +1,21 @@
 ---
-title: "Solución de problemas y problemas conocidos (Visual Studio Tools para Unity) | Microsoft Docs"
-ms.custom: 
-ms.date: 10/25/2017
-ms.reviewer: 
-ms.suite: 
+title: Solución de problemas y problemas conocidos (Visual Studio Tools para Unity) | Microsoft Docs
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: cb1da2ec2c41fcbec78864868d116bcd1684a5b2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562018"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solución de problemas y problemas conocidos (Visual Studio Tools para Unity)
 En esta sección encontrará soluciones a problemas comunes con Visual Studio Tools para Unity y descripciones de problemas conocidos. Asimismo descubrirá cómo puede ayudar a mejorar Visual Studio Tools para Unity mediante la notificación de errores.
@@ -40,8 +38,11 @@ Esto debería resolver el problema. En caso de que siga experimentando el proble
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Problemas de VS2015 e IntelliSense, o de colores de código.
+### <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Problemas de Visual Studio 2015 e IntelliSense, o de colores de código.
 Debe intentar actualizar el proyecto de Visual Studio 2015 a Update 3.
+
+### <a name="shader-files-without-code-coloration-when-using-visual-studio-2017"></a>Archivos de sombreador sin coloreado de código al usar Visual Studio de 2017
+Asegúrese de que la carga de trabajo de "Desarrollo para el escritorio con C++" está instalada en la instancia de Visual Studio de 2017. El analizador de C o C++ usado para el coloreado de código se incluye con esta carga de trabajo.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio deja de responder
 Varios complementos de Unity, como, por ejemplo, Parse, FMOD, UMP (Universal Media Player), ZFBrowser o Embedded Browser usan subprocesos nativos. Resulta problemático cuando un complemento acaba de asociar un subproceso nativo al runtime, que luego realiza llamadas de bloqueo al sistema operativo. Esto significa que Unity no puede interrumpir ese subproceso del depurador (o recarga del dominio) y deja de responder.
@@ -51,6 +52,23 @@ En el caso de FMOD hay una solución alternativa, puede pasar la [marca](https:/
 ### <a name="incompatible-project-in-visual-studio"></a>Proyecto no compatible en Visual Studio
 En primer lugar, compruebe que Visual Studio está establecido como editor de scripts externo en Unity (Editar/Preferencias/Herramientas externas). Después, compruebe que el complemento de Visual Studio está instalado en Unity ("Ayuda/Acerca de" debe mostrar en la parte inferior un mensaje como Microsoft Visual Studio Tools para Unity está habilitado). Después, compruebe que la extensión está instalada correctamente en Visual Studio (Ayuda/Acerca de).
 
+### <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Recargas adicionales o pérdida de todas las ventanas abiertas de Visual Studio
+No toque nunca los archivos de proyecto directamente desde un procesador de recursos o cualquier otra herramienta. Si realmente necesita manipular el archivo de proyecto, hay una API para hacerlo. Consulte la [sección Problemas de referencias de ensamblado](#Assembly-reference-issues).
+
+Si se producen recargas adicionales o si Visual Studio pierde todas las ventanas abiertas al realizar una recarga, asegúrese de que dispone de los paquetes de compatibilidad de .NET apropiados. Lea la sección siguiente sobre marcos para obtener más información.
+
+###  <a name="the-debugger-does-not-break-on-exceptions"></a>El depurador no provoca una interrupción ante excepciones
+Cuando se utiliza el runtime heredado de Unity (equivalente a .NET 3.5), el depurador siempre provocará una interrupción cuando una excepción no esté controlada (= fuera de un bloque try/catch). Si se controla la excepción, el depurador se basará en la ventana de configuración de excepciones para determinar si es necesaria una interrupción.
+
+Con el nuevo runtime (equivalente a .NET 4.6), Unity introdujo una manera nueva de administrar las excepciones de usuario y, como resultado, todas las excepciones se consideran "controladas por el usuario" aunque estén fuera de un bloque try/catch. Por eso ahora hay que marcarlas explícitamente en la ventana de configuración de excepciones si se quiere que el depurador provoque una interrupción.
+
+En la ventana Configuración de excepciones (Depurar > Ventanas > Configuración de excepciones), expanda el nodo de una categoría de excepciones (por ejemplo, Excepciones de Common Language Runtime, es decir, las excepciones. NET) y active la casilla de una excepción concreta que quiera capturar en esa categoría (por ejemplo System.NullReferenceException). También puede seleccionar una categoría de excepciones completa.
+
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>En Windows, Visual Studio le pide que descargue la plataforma de destino Unity
+Visual Studio Tools para Unity requiere .NET Framework 3.5, que no está instalado de forma predeterminada en Windows 8 ni 10. Para corregir este problema, siga las instrucciones para descargar e instalar .NET Framework 3.5.
+
+Cuando se utiliza el nuevo runtime de Unity, también son necesarios los paquetes de compatibilidad de .NET en sus versiones 4.6 y 4.7.1. Es posible usar el programa de instalación de VS2017 para instalarlos rápidamente (modifique la instalación de VS2017, busque los componentes individuales, categoría. NET, y seleccione todos los paquetes de compatibilidad 4.x).
+
 ### <a name="assembly-reference-issues"></a>Problemas de referencias de ensamblado
 Si el proyecto incluye referencias complejas o si se quiere controlar mejor este paso de generación, se puede usar nuestra [API](../cross-platform/customize-project-files-created-by-vstu.md) para manipular el contenido de la solución o el proyecto que se genera. También puede usar [archivos de respuesta](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) en el proyecto de Unity y los procesaremos.
 
@@ -58,7 +76,7 @@ Si el proyecto incluye referencias complejas o si se quiere controlar mejor este
 Si Visual Studio no encuentra una ubicación de origen para un punto de interrupción concreto, aparecerá una advertencia en el punto de interrupción. Compruebe que el comportamiento que usa está cargado y se emplea correctamente en la escena actual de Unity.
 
 ### <a name="breakpoints-not-hit"></a>Puntos de interrupción no ejecutados
- Compruebe que el comportamiento que usa está cargado y se emplea correctamente en la escena actual de Unity. Salga de Visual Studio y Unity y, luego, elimine todos los archivos generados (*.csproj, *.sln) y la carpeta de biblioteca completa.
+Compruebe que el comportamiento que usa está cargado y se emplea correctamente en la escena actual de Unity. Salga de Visual Studio y Unity y, luego, elimine todos los archivos generados (*.csproj, *.sln) y la carpeta de biblioteca completa.
 
 ### <a name="unable-to-attach"></a>Imposibilidad de efectuar la asociación
 -   Intente deshabilitar temporalmente el antivirus o cree reglas de exclusión para VS y Unity.
@@ -69,22 +87,9 @@ Si Visual Studio no encuentra una ubicación de origen para un punto de interrup
 ### <a name="unable-to-debug-android-players"></a>Imposibilidad de depurar reproductores de Android
 La multidifusión se usa para la detección de reproductores (que es el mecanismo predeterminado que usa Unity), pero después se usa una conexión TCP normal para asociar el depurador. La fase de detección es el principal problema con dispositivos Android.
 
-USB es muy rápido para la depuración, pero no es compatible con el mecanismo de detección de reproductores de Unity.
-Wi-Fi es más versátil, pero no ofrece la misma velocidad en comparación con USB debido a la latencia. Hemos visto una falta de compatibilidad de multidifusión adecuada en algunos enrutadores o dispositivos (por ejemplo, el caso de las series de Nexus).
+Wi-Fi es versátil, pero no ofrece la misma velocidad en comparación con USB debido a la latencia. Hemos visto una falta de compatibilidad de multidifusión adecuada en algunos enrutadores o dispositivos (por ejemplo, el caso de las series de Nexus).
 
-Puede probar lo siguiente mediante USB para ver los puertos abiertos en el dispositivo conectado (con el reproductor en ejecución para que pueda comprobar el puerto de depuración, siempre en el formato 56xxx):
-
-```shell
-adb shell netstat
-```
-
-Reenvíe el puerto al equipo local:
-
-```shell
-adb forward tcp:56xxx tcp:56xxx
-```
-
-Después, conecte VSTU mediante el puerto reenviado 127.0.0.1:56xxx.
+Con USB se agiliza mucho la depuración, y Visual Studio Tools para Unity es ahora capaz de detectar dispositivos USB y comunicarse con el servidor adb para reenviar correctamente los puertos en la depuración.
 
 ### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrar de UnityVS a Visual Studio Tools para Unity
  Si está migrando de UnityVS a Visual Studio Tools para Unity, debe generar nuevas soluciones de Visual Studio para los proyectos de Unity.
@@ -96,9 +101,6 @@ Después, conecte VSTU mediante el puerto reenviado 127.0.0.1:56xxx.
 2.  Importe el paquete de Visual Studio Tools para Unity en su proyecto de Unity. Para obtener información sobre cómo importar el paquete de VSTU, vea Configurar Visual Studio Tools para Unity en la página [Introducción](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .
 
 3.  Genere los nuevos archivos de solución y proyecto. Si quiere generarlos ahora, en el menú principal del Editor de Unity, elija **Visual Studio Tools**, **Generar archivos de proyecto**. De lo contrario, puede omitir este paso si lo desea; Visual Studio Tools para Unity generará los nuevos archivos automáticamente al elegir **Visual Studio Tools**, **Abrir en Visual Studio**.
-
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>En Windows, Visual Studio le pide que descargue la plataforma de destino Unity
- Visual Studio Tools para Unity requiere .NET Framework 3.5, que no está instalado de forma predeterminada en Windows 8 ni 10. Para corregir este problema, siga las instrucciones para descargar e instalar .NET Framework 3.5.
 
 ## <a name="known-issues"></a>Problemas conocidos
  Existen problemas conocidos en Visual Studio Tools para Unity que se deben a cómo interactúa el depurador con la antigua versión de Unity del compilador de C#. Estamos trabajando para ayudar a solucionar estos problemas, pero mientras tanto podría experimentar los siguientes problemas:

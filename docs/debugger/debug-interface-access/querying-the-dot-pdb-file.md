@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470067"
 ---
 # <a name="querying-the-pdb-file"></a>Consultar el archivo .pdb
 Un archivo de base de datos de programa (.pdb de extensión) es un archivo binario que contiene el tipo y la información de depuración simbólica recopilados a lo largo de compilar y vincular el proyecto. Se crea un archivo PDB cuando se compila un programa de C o C++ con **/Zi** o **/Zi** o un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], o [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programar con el **/debug** opción. Archivos de objeto contienen referencias en el archivo .pdb de la información de depuración. Para obtener más información sobre archivos pdb, consulte [archivos PDB](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f). Una aplicación de DIA puede usar los siguientes pasos generales para obtener más detalles sobre los distintos símbolos, objetos y elementos de datos dentro de una imagen ejecutable.  

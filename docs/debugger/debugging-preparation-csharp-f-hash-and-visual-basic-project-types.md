@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479221"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparación de la depuración: Tipos de proyectos de C#, F# y Visual Basic
 En los temas de esta sección se describe cómo se depuran los tipos de proyectos de C#, F# y [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] creados mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

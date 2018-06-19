@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267781"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Desarrollo en colaboración de las soluciones de Office
   Varios desarrolladores pueden trabajar en un proyecto de Office de la misma manera que colaboran en otros proyectos de Visual Studio. Visual Studio localiza correctamente la instalación de Microsoft Office en cada equipo, incluso si Office se instala en distintas ubicaciones. Sin embargo, hay algunas consideraciones importantes a tener en cuenta.  

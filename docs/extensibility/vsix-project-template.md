@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142398"
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto VSIX
 Puede utilizar la plantilla de proyecto de VSIX que incluya una o más extensiones de Visual Studio en un proyecto VSIX y, a continuación, publicar el paquete en el [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) sitio Web.  

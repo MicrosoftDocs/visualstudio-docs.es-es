@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479603"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso de datos de IntelliTrace guardados
 Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) para ir a puntos concretos de la ejecución de la aplicación. Este archivo puede contener eventos de rendimiento, excepciones, subprocesos, pasos de prueba, módulos y otra información del sistema que IntelliTrace recopila mientras se ejecuta la aplicación.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263696"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Recopilación de estadísticas de aplicación para aplicaciones independientes mediante la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar estadísticas de rendimiento para una aplicación cliente (independiente) mediante el método de muestreo desde la línea de comandos.  

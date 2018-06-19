@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128086"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Agregar directorios en el cuadro de diálogo nuevo proyecto
 Al crear nuevos tipos de proyecto, también puede registrar un nuevo directorio en el **nuevo proyecto** cuadro de diálogo para mostrar para su uso como plantillas. En el ejemplo de código siguiente se explica cómo registrar un nuevo directorio, también conocido como un nodo. En el ejemplo, se registran plantillas expuestas por el VSPackage CLSID_Package. Como resultado, el lado izquierdo de la **nuevo proyecto** cuadro de diálogo ofrece el nodo agregado, con un nombre determinado por el recurso Folder_Label_ResID. Este recurso se carga desde el archivo DLL satélite de VSPackage.  

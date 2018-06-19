@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474939"
 ---
 # <a name="debugging-linq"></a>Depurar LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite la depuración de código de Language-Integrated Query (LINQ), con algunas limitaciones. La mayor parte de las características de depuración funcionan con instrucciones LINQ, entre ellas la ejecución paso a paso, el establecimiento de puntos de interrupción y la presentación de resultados en las ventanas del depurador. En este tema se describe las principales limitaciones de la depuración LINQ.  

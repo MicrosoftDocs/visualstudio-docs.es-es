@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575083"
 ---
 # <a name="msbuild-glossary"></a>Glosario de MSBuild
 Estos términos se utilizan para describir Microsoft Build Engine (MSBuild) y sus componentes.  

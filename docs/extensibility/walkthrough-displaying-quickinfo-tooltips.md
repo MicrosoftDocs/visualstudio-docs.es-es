@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146769"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Tutorial: Mostrar informaciones sobre herramientas de QuickInfo
 Información rápida es una característica de IntelliSense que muestra las firmas de método y descripciones cuando un usuario mueve el puntero sobre un nombre de método. Puede implementar características basadas en lenguaje como QuickInfo definiendo los identificadores para los que desea proporcionar descripciones de QuickInfo y, a continuación, crear una información sobre herramientas en el que se va a mostrar el contenido. Puede definir QuickInfo en el contexto de un servicio de lenguaje, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y mostrar la información rápida para ese tipo, o puede mostrar información rápida para un tipo de contenido existente (por ejemplo, "text"). Este tutorial muestra cómo mostrar información rápida para el tipo de contenido "text".  

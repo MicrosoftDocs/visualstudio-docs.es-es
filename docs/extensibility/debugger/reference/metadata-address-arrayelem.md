@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125627"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 Esta estructura representa un elemento de matriz dentro de una matriz.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262196"
 ---
 # <a name="how-to-sign-office-solutions"></a>Cómo: firmar soluciones de Office
   Si se registra una solución, puede conceder confianza a la solución utilizando el certificado como prueba. Puede utilizar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones de directiva de seguridad adicional.  

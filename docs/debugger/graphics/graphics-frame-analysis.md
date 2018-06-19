@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479658"
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.  

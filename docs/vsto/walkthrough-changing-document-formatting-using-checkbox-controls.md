@@ -24,6 +24,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263869"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de un documento utilizando controles CheckBox
   Este tutorial muestra cómo usar controles de formularios Windows Forms en una personalización de nivel de documento para Microsoft Office Word para cambiar el formato de texto.  

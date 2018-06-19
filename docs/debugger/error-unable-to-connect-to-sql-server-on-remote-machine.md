@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31482157"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Error: No se puede establecer una conexión con SQL Server en el equipo remoto
 No se puede conectar a SQL Server en el equipo remoto *nombre*. Acceso denegado. Compruebe que ha instalado el depurador remoto en él. Si el equipo remoto no está en ningún dominio o si Visual Studio se ejecuta como cuenta local, el equipo remoto debe tener una cuenta con el mismo nombre de usuario y la misma contraseña que los de la cuenta local.  

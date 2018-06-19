@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567904"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 Detiene todo el seguimiento y libera la memoria que ha usado la sesión de seguimiento.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115598"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Esta interfaz representa un módulo, es decir, una unidad ejecutable de un programa, como un archivo DLL.  

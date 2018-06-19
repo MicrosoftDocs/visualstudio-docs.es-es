@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31562187"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizar aplicaciones ClickOnce
 La localización es el proceso de adaptar una aplicación a una referencia cultural concreta. Este proceso implica traducir el texto de la interfaz de usuario a un idioma específico de la región, usar el formato correcto de fecha y moneda, ajustar el tamaño de los controles en un formulario y reflejar los controles de derecha a izquierda si es necesario.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548819"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Cómo: agregar un panel de tareas personalizado a una aplicación
   Puede agregar un panel de tareas personalizado a las aplicaciones enumeradas anteriormente mediante el complemento de VSTO. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476902"
 ---
 # <a name="threads-view"></a>Vista de subprocesos
 La vista de subprocesos es una lista plana de todos los subprocesos asociados con windows en el sistema. Se muestran el identificador de subproceso y nombre del módulo para cada subproceso. No se incluyen los procesos, pero puede encontrar fácilmente el proceso que posee un subproceso seleccionado.  

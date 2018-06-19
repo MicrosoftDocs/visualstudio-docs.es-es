@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575109"
 ---
 # <a name="generateresource-task"></a>GenerateResource (Tarea)
 Convierte entre archivos .txt y .resx (formato de recursos basado en XML) y archivos .resources binarios de Common Language Runtime, que se pueden insertar en un archivo ejecutable binario en tiempo de ejecución o compilar en ensamblados satélite. Esta tarea normalmente se utiliza para convertir archivos .txt o .resx en archivos .resource. La tarea `GenerateResource` es funcionalmente similar a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  

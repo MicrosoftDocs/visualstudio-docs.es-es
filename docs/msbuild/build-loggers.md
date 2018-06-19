@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570465"
 ---
 # <a name="build-loggers"></a>Registradores de compilación
 Los registradores proporcionan un método para personalizar el resultado de la compilación y de mostrar mensajes, errores o advertencias en respuesta a eventos de compilación específicos. Cada registrador se implementa como una clase .NET que, a su vez, implementa la interfaz <xref:Microsoft.Build.Framework.ILogger>, definida en el ensamblado Microsoft.Build.Framework.dll.  

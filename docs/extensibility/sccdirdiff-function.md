@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138027"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff (función)
 Esta función muestra las diferencias entre el directorio local actual en el disco de cliente y el proyecto bajo control de código fuente correspondiente.  

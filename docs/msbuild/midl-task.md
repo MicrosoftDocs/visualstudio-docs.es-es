@@ -33,6 +33,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575730"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
 Encapsula la herramienta compilador de lenguaje de definición de interfaz de Microsoft (MIDL), midl.exe. Para obtener más información, consulte "Referencia de la línea de comandos de MIDL" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

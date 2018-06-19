@@ -27,6 +27,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561615"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Cómo: Publicar un proyecto que tiene una configuración regional específica
 No es raro que una aplicación contenga componentes con diferentes configuraciones regionales. En este escenario, crearía una solución con varios proyectos para después publicar diferentes proyectos para cada configuración regional. En este procedimiento se muestra cómo usar una macro para publicar el primer proyecto en una solución usando la configuración regional 'en'. Si quiere intentar este procedimiento con una configuración regional que no sea 'en', asegúrese de establecer `localeString` de manera que coincida con la configuración regional que está usando (por ejemplo, 'de' o 'de-DE').  

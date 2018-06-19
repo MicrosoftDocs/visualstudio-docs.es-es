@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263186"
 ---
 # <a name="call-tree-view---contention-data"></a>Vista Árbol de llamadas: datos de contención
 La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funciones que se recorrieron en la aplicación de la que se generaron perfiles. La raíz del árbol es el punto de entrada a la aplicación o el componente. Cada nodo de función enumera todas las funciones a las que llamó, el número de veces que se bloqueó la función y la cantidad de tiempo que se bloqueó la función porque estaba luchando por un recurso con otros subprocesos o procesos.  

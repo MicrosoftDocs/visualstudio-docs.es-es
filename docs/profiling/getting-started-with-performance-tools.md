@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576448"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introducción a las herramientas de rendimiento
 En esta sección se proporciona información general sobre los conceptos y las tareas que se aplicarán al recopilar, ver y analizar el rendimiento del código mediante las herramientas de generación de perfiles de Visual Studio.  

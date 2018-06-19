@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566009"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Implementar requisitos previos de aplicaciones de 64 bits
 La implementación de ClickOnce admite la instalación de aplicaciones en plataformas de 64 bits. Las plataformas de destino son **x86** para plataformas de 32 bits, **x64** para equipos compatibles con los conjuntos de instrucciones AMD64 y EM64T, y **Itanium** para el procesador Itanium de 64 bits.  
