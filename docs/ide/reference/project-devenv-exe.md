@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704082"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 Identifica un único proyecto dentro de la configuración de la solución especificada para compilar, limpiar, recompilar o implementar.

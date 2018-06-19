@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117779"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 El Administrador de sesión de depuración (SDM) se asocia al proceso.  

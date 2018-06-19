@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34266377"
 ---
 # <a name="c-library-reference"></a>Referencia de la biblioteca C
 Esta sección contiene información de referencia para el SDK del visualizador de simultaneidad.  

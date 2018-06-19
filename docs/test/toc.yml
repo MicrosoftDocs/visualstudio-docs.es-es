@@ -353,16 +353,14 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Crear un complemento para el visor de resultados
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: Usar la automatización de la interfaz de usuario para probar el código
+- name: Automatización de pruebas de interfaz de usuario
   href: use-ui-automation-to-test-your-code.md
   items:
-    - name: 'Tutorial: Crear, modificar y mantener una prueba de IU codificada'
+    - name: 'Tutorial: Crear, editar y mantener una prueba automatizada de IU'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
-    - name: Probar aplicaciones para Windows UWP con pruebas automatizadas de UI
-      href: test-windows-store-8-1-apps-with-coded-ui-tests.md
-    - name: Probar aplicaciones para UWP y Windows Phone 8.1 con pruebas automatizadas de IU
-      href: test-windows-phone-8-1-apps-with-coded-ui-tests.md
-    - name: Establecer una propiedad única de automatización para controles UWP para pruebas
+    - name: Comprobación de aplicaciones para UWP con pruebas automatizadas de IU
+      href: test-uwp-app-with-coded-ui-test.md
+    - name: Establecer una propiedad única de automatización para controles UWP
       href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Usar controles HTML5 en pruebas automatizadas de IU
       href: using-html5-controls-in-coded-ui-tests.md
@@ -370,7 +368,7 @@
       href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
     - name: Crear una prueba automatizada de IU controlada por datos
       href: creating-a-data-driven-coded-ui-test.md
-    - name: Hacer que las pruebas automatizadas de IU esperen eventos concretos durante la reproducción
+    - name: Esperar eventos concretos durante la reproducción
       href: making-coded-ui-tests-wait-for-specific-events-during-playback.md
     - name: Usar diferentes exploradores web con las pruebas automatizadas de IU
       href: using-different-web-browsers-with-coded-ui-tests.md
@@ -386,28 +384,10 @@
       href: testing-a-large-application-with-multiple-ui-maps.md
     - name: Habilitar pruebas de IU codificadas en los controles
       href: enable-coded-ui-testing-of-your-controls.md
-    - name: Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones
+    - name: Plataformas y configuraciones admitidas
       href: supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md
-    - name: Extender las pruebas automatizadas de IU y las grabaciones de acciones para la compatibilidad con Microsoft Excel
+    - name: Extender el marco de pruebas automatizadas de IU
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
-      items:
-        - name: Complemento de Excel de muestra para probar la IU codificada
-          href: sample-excel-add-in-for-coded-ui-testing.md
-        - name: Interfaz de muestra del Communicator de Excel
-          href: sample-excel-communicator-interface.md
-        - name: Extensión de muestra para probar la IU codificada para Excel
-          href: sample-coded-ui-test-extension-for-excel.md
-          items:
-            - name: 'Extensión de Excel de muestra: ExtensionPackage (Clase)'
-              href: sample-excel-extension-extensionpackage-class.md
-            - name: 'Extensión de Excel de muestra: TechnologyManager (Clase)'
-              href: sample-excel-extension-technologymanager-class.md
-            - name: 'Extensión de Excel de muestra: PropertyProvider (Clase)'
-              href: sample-excel-extension-propertyprovider-class.md
-            - name: 'Extensión de Excel de muestra: clases de elementos'
-              href: sample-excel-extension-element-classes.md
-            - name: 'Extensión de Excel de muestra: ActionFilter (Clase)'
-              href: sample-excel-extension-actionfilter-class.md
 - name: Administración de Lab Management
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:

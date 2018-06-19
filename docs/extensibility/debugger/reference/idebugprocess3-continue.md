@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117483"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Continúa ejecutando este proceso desde un estado de detención. Se conserva un estado de ejecución anterior (por ejemplo, un paso), y el proceso empieza a ejecutarse de nuevo.  

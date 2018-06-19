@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120041"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Esta interfaz notifica a un agente de escucha (normalmente el Administrador de depuración de sesión [SDM] o un motor de depuración) de proceso y programa la creación y destrucción en un puerto concreto. Esta información puede utilizarse para presentar una vista en tiempo real de los procesos y los programas que se ejecutan en el puerto.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565255"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punto de entrada&gt; elemento (aplicación ClickOnce)
 Identifica el ensamblado que se debe ejecutar cuando esto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecuta en un equipo cliente.  

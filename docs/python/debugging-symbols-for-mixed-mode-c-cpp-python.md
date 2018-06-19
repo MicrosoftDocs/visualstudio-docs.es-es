@@ -1,27 +1,22 @@
 ---
-title: Símbolos para la depuración en modo mixto de Python y C++ | Microsoft Docs
+title: Símbolos para la depuración en modo mixto de Python y C++
 description: Describe cómo Visual Studio ofrece la posibilidad de cargar símbolos para la depuración completa en modo mixto de C++ y Python.
-ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-dev_langs:
-- python
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 02c7465df84776f57ef7748b9838acbb54f5be9b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: fc4c477edd17e1c440b7a2288e7f5db841ec5c9e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584650"
 ---
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>Instalación de símbolos de depuración para intérpretes de Python
 
