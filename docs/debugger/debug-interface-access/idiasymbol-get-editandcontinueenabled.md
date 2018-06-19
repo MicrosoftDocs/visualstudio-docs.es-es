@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463486"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Recupera una marca que indica si el módulo se compiló con la [/Z7, / Zi, /ZI (formato de información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) modificador del compilador.  

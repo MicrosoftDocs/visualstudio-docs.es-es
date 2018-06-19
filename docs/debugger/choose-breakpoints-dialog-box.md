@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458250"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Cuadro de diálogo Elegir puntos de interrupción
 El **elegir puntos de interrupción** abre el cuadro de diálogo cuando se intenta establecer un punto de interrupción de una entrada ambigua en el **nuevo punto de interrupción** cuadro de diálogo. Un ejemplo común de entrada ambigua es el de un nombre de función sobrecargada.  

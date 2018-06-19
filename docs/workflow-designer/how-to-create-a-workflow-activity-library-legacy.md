@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31973172"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Cómo: Crear una biblioteca de actividades de flujo de trabajo (Heredado)
 

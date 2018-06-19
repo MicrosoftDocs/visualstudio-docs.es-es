@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974049"
 ---
 # <a name="how-to-create-an-activity-library"></a>Crear una biblioteca de actividades
 Las actividades personalizadas se usan para modelar los procesos de negocio concretos de un flujo de trabajo. Se ha proporcionado la plantilla Biblioteca de actividades en Visual Studio 2010 para permitirle crear tales actividades personalizadas visualmente mediante el Diseñador de flujo de trabajo de Windows.

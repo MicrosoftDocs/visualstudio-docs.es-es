@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473204"
 ---
 # <a name="how-to-control-messages-view"></a>Cómo: Controlar la vista Mensajes
 Con Spy ++, tiene un gran control sobre el contenido de un [vista mensajes](../debugger/messages-view.md) ventana. También puede [iniciar y detener](../debugger/how-to-start-and-stop-the-message-log-display.md) mostrar los mensajes en cualquier momento y se puede especificar:  

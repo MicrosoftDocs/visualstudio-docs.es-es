@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965984"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Trabajar con soluciones de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solución. Esta sección trata sobre cómo configurar y personalizar la solución.

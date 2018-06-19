@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965182"
 ---
 # <a name="writing-user-commands-and-actions"></a>Escribir acciones y comandos de usuario
 Puede personalizar un lenguaje específico de dominio agregando comandos al diagrama y respondiendo a gestos como los eventos de arrastrar y colocar, clic y doble clic.

@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472898"
 ---
 # <a name="debugging-options-dialog-box"></a>Depuración, Opciones (Cuadro de diálogo)
 El **depuración** carpeta, en la **opciones** cuadro de diálogo en el **herramientas** menú, proporciona las siguientes páginas, que permiten especificar el depurador, opciones de herramienta.  

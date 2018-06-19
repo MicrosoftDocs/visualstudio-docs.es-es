@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146201"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionar problemas de VSPackages
 A continuación es problemas comunes que podría tener con el paquete de VS y sugerencias para resolver los problemas.  
@@ -68,7 +69,7 @@ A continuación es problemas comunes que podría tener con el paquete de VS y su
   
     1.  Buscar el CLSID de VSPackage en la sección de paquetes del registro:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<versión >*\Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<versión >* \Packages  
   
     2.  Compruebe que la ruta de acceso proporcionado por la subclave SatelliteDll es correcta.  
   
@@ -121,7 +122,7 @@ A continuación es problemas comunes que podría tener con el paquete de VS y su
   
 2.  Para código no administrado, buscar el CLSID de VSPackage en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nodo de registro CLSID:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<versión >*\CLSID  
+     HKLM\Software\Microsoft\Visual Studio\\*\<versión >* \CLSID  
   
  Asegúrese de que la entrada InprocServer32 tiene la ruta de acceso correcta de la dll de VSPackage.  
   

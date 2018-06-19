@@ -17,6 +17,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425037"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Archivos de código de IntelliSense para Visual Basic
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471026"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API de extensibilidad de resumen de archivos de volcado de memoria
 Al utilizar las API de extensibilidad en esta sección, puede ampliar el. Sistema de proyectos exe y **resumen de volcado de memoria** página para su uso con su propio motor de depuración personalizadas.  

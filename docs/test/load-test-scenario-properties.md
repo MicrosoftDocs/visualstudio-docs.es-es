@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977220"
 ---
 # <a name="load-test-scenario-properties"></a>Propiedades de los escenarios de prueba de carga
 

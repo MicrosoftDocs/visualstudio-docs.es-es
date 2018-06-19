@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474773"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg (Clase)
 Representa una interfaz para el control mediante programación del componente de aplicación de diagnóstico de gráficos.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144755"
 ---
 # <a name="windows-installer-basics"></a>Conceptos básicos de Windows Installer
 Windows Installer instala y desinstala las aplicaciones o productos de software en el equipo del usuario, llevar a cabo estas tareas en unidades denominadas componentes de Windows Installer (a veces denominados WICs o simplemente componentes). Un GUID identifica cada WIC, que es la unidad básica de la instalación y el recuento de referencias para configuraciones mediante Windows Installer.  

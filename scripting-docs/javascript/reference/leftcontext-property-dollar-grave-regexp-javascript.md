@@ -1,13 +1,13 @@
 ---
 title: Propiedad leftContext ($') (RegExp) (JavaScript) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - $`
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - leftContext property ($`)
 ms.assetid: 840e56c0-eb7c-461f-bb56-91acff9b5bcf
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637805"
 ---
 # <a name="leftcontext-property--regexp-javascript"></a>leftContext (Propiedad) ($`) (RegExp) (JavaScript)
 Devuelve los caracteres desde el principio de una cadena de búsqueda hasta la posición antes del comienzo de la última coincidencia. Sólo lectura.  

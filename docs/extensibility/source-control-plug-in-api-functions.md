@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144374"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funciones de API de complemento de Control de código fuente
 La API de complementos de Control de código fuente proporciona las siguientes funciones, que deben ser implementadas por el complemento con arreglo a esta API de control de código fuente. Las firmas de cada función y la semántica asociada a las marcas de bits y otros parámetros se describen detalladamente en esta referencia.  
@@ -85,7 +86,7 @@ La API de complementos de Control de código fuente proporciona las siguientes f
 ## <a name="requirements"></a>Requisitos  
  Encabezado: scc.h  
   
- (Proporcionado en el SDK de entorno común incluye carpeta, de forma predeterminada *[unidad]*\Program Files\VSIP 8.0\EnvSDK\common\inc; también se proporciona en la carpeta VSIP con el ejemplo MSSCCI, *[unidad]*\Program Files\VSIP 8.0\MSSCCI).  
+ (Proporcionado en el SDK de entorno común incluye carpeta, de forma predeterminada *[unidad]* \Program Files\VSIP 8.0\EnvSDK\common\inc; también se proporciona en la carpeta VSIP con el ejemplo MSSCCI, *[unidad]* \Program Files\VSIP 8.0\MSSCCI).  
   
 ## <a name="see-also"></a>Vea también  
  [Complementos de Control de código fuente](../extensibility/source-control-plug-ins.md)   

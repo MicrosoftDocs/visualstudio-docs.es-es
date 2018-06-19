@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979391"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 La generación de código permite producir código de programa que está fuertemente tipado, pero que se puede modificar con facilidad cuando el modelo de origen cambia. Compare esto con la técnica alternativa de escribir un programa totalmente genérico que acepta un archivo de configuración, que es más flexible, pero produce código que no es tan fácil de leer ni de cambiar y que no tiene un rendimiento tan bueno. En este tutorial se muestra esta ventaja.

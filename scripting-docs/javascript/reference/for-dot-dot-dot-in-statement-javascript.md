@@ -1,12 +1,13 @@
 ---
-title: "for... en (instrucción de JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: for... en (instrucción de JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - iteration statements, for...in statement
 - loop structures, for...in statements
 ms.assetid: 1b51a0ce-89f7-4a69-88ed-017b47dc398f
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636735"
 ---
 # <a name="forin-statement-javascript"></a>for...in (Instrucción de JavaScript)
 Ejecuta una o varias instrucciones para cada propiedad de un objeto o cada elemento de una matriz.  

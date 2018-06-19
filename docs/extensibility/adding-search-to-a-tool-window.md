@@ -18,6 +18,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032075"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adición de búsqueda en una ventana de herramientas
 Al crear o actualizar una ventana de herramientas en la extensión, puede agregar la misma funcionalidad de búsqueda que aparece en otros lugares en Visual Studio. Esta funcionalidad incluye las siguientes características:  

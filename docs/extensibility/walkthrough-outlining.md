@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143903"
 ---
 # <a name="walkthrough-outlining"></a>Tutorial: esquematización
 Puede implementar características basadas en lenguaje como mediante la definición de los tipos de regiones de texto que desea expandir o contraer la esquematización. Puede definir las regiones en el contexto de un servicio de lenguaje, puede definir su propio tipo de contenido y la extensión de nombre de archivo y la definición de la región se aplican sólo a ese tipo o puede aplicar las definiciones de la región a un tipo de contenido existente (por ejemplo, "text"). Este tutorial muestra cómo definir y mostrar las regiones de esquematización.  

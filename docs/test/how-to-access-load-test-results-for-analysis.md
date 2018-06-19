@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966692"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Cómo: Tener acceso a los resultados de pruebas de carga para su análisis
 
