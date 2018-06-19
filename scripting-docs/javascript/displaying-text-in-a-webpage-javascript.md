@@ -1,12 +1,13 @@
 ---
-title: "Mostrar texto en una página web (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Mostrar texto en una página web (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - JavaScript, write
 - JavaScript, writing text
 ms.assetid: 3c2455e7-2402-45f2-9545-77a2b2490527
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569265"
 ---
 # <a name="displaying-text-in-a-webpage-javascript"></a>Mostrar texto en una página web (JavaScript)
 Hay varias maneras de mostrar texto en una página web. Cada una tiene sus ventajas y desventajas y admite usos concretos.  

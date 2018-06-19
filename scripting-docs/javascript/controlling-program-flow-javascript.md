@@ -1,12 +1,13 @@
 ---
 title: Controlar el flujo del programa (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -18,7 +19,7 @@ helpviewer_keywords:
 - break statement
 - control flow, about control flow
 ms.assetid: 4ef58c82-e5d6-4b09-9458-cf0aa3b39bf5
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569715"
 ---
 # <a name="controlling-program-flow-javascript"></a>Controlar el flujo del programa (JavaScript)
 Normalmente, las instrucciones de un script [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] se ejecutan una detrás de otra, en el orden en que se escriben. Esto se denomina ejecución secuencial y es la dirección predeterminada del flujo del programa.  

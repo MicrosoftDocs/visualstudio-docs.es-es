@@ -1,19 +1,20 @@
 ---
 title: Matrices con tipo (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: fa82c562-0ebf-4559-aecc-166e59f7fb64
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569365"
 ---
 # <a name="typed-arrays-javascript"></a>Matrices con tipo (JavaScript)
 Puede usar matrices con tipo para controlar datos binarios de orígenes como protocolos de red, formatos de archivo binario y búferes de gráficos sin procesar. Las matrices con tipo también pueden usarse para administrar datos binarios en memoria con diseños de byte conocidos.  

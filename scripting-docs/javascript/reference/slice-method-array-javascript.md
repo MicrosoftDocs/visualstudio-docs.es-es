@@ -1,13 +1,13 @@
 ---
-title: "slice (método, Array) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: slice (método, Array) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - slice
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - Array object
 - slice method
 ms.assetid: 3c122219-14de-4126-b091-809659c026d6
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640515"
 ---
 # <a name="slice-method-array-javascript"></a>slice (Método, Array de JavaScript)
 Devuelve una sección de una matriz.  

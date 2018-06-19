@@ -1,13 +1,13 @@
 ---
-title: "getYear (método, Date) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: getYear (método, Date) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getYear
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - dates, returning year
 - GetYear method
 ms.assetid: 0e23e832-acd4-49a9-a175-515d0094f172
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637085"
 ---
 # <a name="getyear-method-date-javascript"></a>getYear (Método, Date de JavaScript)
 Obtiene el año de un `Date` objeto.  

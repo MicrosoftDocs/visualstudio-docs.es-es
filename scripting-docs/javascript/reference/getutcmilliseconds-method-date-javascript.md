@@ -1,13 +1,13 @@
 ---
-title: "getUTCMilliseconds (método, Date) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: getUTCMilliseconds (método, Date) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getUTCMilliseconds
@@ -20,7 +20,7 @@ helpviewer_keywords:
 - UTC times, returning
 - getUTCMilliseconds method
 ms.assetid: 7491d387-7b6a-40df-89e5-55c64795ef70
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636825"
 ---
 # <a name="getutcmilliseconds-method-date-javascript"></a>getUTCMilliseconds (Método, Date de JavaScript)
 Obtiene los milisegundos de un `Date` objeto mediante la hora Universal coordinada (UTC).  

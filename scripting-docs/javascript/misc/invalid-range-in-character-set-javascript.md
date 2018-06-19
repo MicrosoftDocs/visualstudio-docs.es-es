@@ -1,13 +1,13 @@
 ---
-title: "Intervalo no válido en el carácter establecido (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Intervalo no válido en el carácter establecido (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5021
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633005"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Intervalo no válido en el juego de caracteres (JavaScript)
 Se intentó crear una expresión regular con un intervalo de conjunto de caracteres no válidos. Juegos de caracteres deben oscilar entre caracteres individuales, por ejemplo, a-z o 0-9; no se puede incluir clases de caracteres, como \w en un juego de caracteres. El primer carácter en el intervalo también debe preceder el segundo carácter en el intervalo. Por ejemplo:  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571485"
 ---
 # <a name="what39s-new-in-javascript"></a>Novedades de JavaScript
 En este documento se incluyen las nuevas características de JavaScript compatibles con el [modo Microsoft Edge](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx), [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)] y con las aplicaciones de la Tienda Windows Phone.  

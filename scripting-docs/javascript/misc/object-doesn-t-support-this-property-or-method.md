@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633415"
 ---
 # <a name="object-doesn39t-support-this-property-or-method"></a>Objeto&#39;t admite esta propiedad o método
 Ha especificado una propiedad o un método que no existe para este objeto. Hay objetos que no son compatibles con todas las propiedades y todos los métodos.  

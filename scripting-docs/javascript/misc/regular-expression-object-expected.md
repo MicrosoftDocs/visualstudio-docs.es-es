@@ -1,13 +1,13 @@
 ---
-title: "Se esperaba un objeto de expresión regular | Documentos de Microsoft"
-ms.custom: 
+title: Se esperaba un objeto de expresión regular | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5016
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632785"
 ---
 # <a name="regular-expression-object-expected"></a>Se esperaba un objeto de expresión regular
 Se intentó invocar el **RegExp.prototype.toString** o **RegExp.prototype.valueOf** método en un objeto de un tipo distinto de `RegExp`. El objeto de este tipo de invocación debe ser de tipo `RegExp`.  

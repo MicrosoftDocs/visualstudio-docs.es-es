@@ -29,6 +29,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571505"
 ---
 # <a name="writing-javascript-code"></a>Escribir código JavaScript
 Al igual que muchos otros lenguajes de programación, [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] se organiza en instrucciones, bloques que constan de conjuntos relacionados de instrucciones y comentarios. Dentro de una instrucción puede utilizar variables, cadenas, números y expresiones.  

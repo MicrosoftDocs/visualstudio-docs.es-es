@@ -1,18 +1,18 @@
 ---
-title: "Función JsSetRuntimeMemoryLimit | Microsoft Docs"
-ms.custom: 
+title: Función JsSetRuntimeMemoryLimit | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsSetRuntimeMemoryLimit
 helpviewer_keywords:
 - JsSetRuntimeMemoryLimit function
 ms.assetid: 74feb31f-19f6-43e3-b117-0694c59ac593
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568975"
 ---
 # <a name="jssetruntimememorylimit-function"></a>JsSetRuntimeMemoryLimit (Función)
 Establece el límite de memoria actual para un runtime.  

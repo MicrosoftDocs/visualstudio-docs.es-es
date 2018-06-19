@@ -1,13 +1,13 @@
 ---
-title: "Operador de asignación AND bit a bit (&amp;=) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Operador de asignación AND bit a bit (&amp;=) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '&='
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - AND operator
 - bitwise operators, AND operator
 ms.assetid: e7e2eabb-4fc1-4fdc-9dd8-1e6d715371fa
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634045"
 ---
 # <a name="bitwise-and-assignment-operator-amp-javascript"></a>Operador de asignación AND bit a bit (&amp;=) (JavaScript)
 Establece el resultado de una operación AND bit a bit en el valor de una variable y el valor de una expresión. La variable y la expresión se tratan como enteros de 32 bits.  

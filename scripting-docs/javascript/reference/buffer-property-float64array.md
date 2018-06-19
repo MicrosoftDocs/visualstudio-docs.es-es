@@ -1,19 +1,20 @@
 ---
-title: "búfer de propiedad (Float64Array) | Documentos de Microsoft"
-ms.custom: 
+title: búfer de propiedad (Float64Array) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 61bd0b28-6608-458c-9833-203d063081ec
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633765"
 ---
 # <a name="buffer-property-float64array"></a>buffer (Propiedad, Float64Array)
 Sólo lectura. Obtiene el ArrayBuffer al que hace referencia esta matriz.  

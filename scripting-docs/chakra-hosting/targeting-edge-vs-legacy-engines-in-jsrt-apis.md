@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569605"
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>Compatibilidad con motores de borde o motores heredados en las API de JsRT
 A partir de Windows 10, uno de los cambios que hemos realizado en Chakra (el motor de JavaScript), en la misma línea que la estrategia del explorador de Windows 10 de admitir un nuevo motor de representación Microsoft Edge, consiste en admitir dos motores de Chakra diferentes:  

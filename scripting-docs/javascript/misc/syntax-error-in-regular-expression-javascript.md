@@ -1,13 +1,13 @@
 ---
-title: "Error de sintaxis en expresión regular (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Error de sintaxis en expresión regular (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5017
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 7799ed69-c877-42a1-87cf-ad6739302c10
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632925"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Error de sintaxis en expresión regular (JavaScript)
 La estructura de la cadena de búsqueda infringe una o varias de las reglas gramaticales de una [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] expresión regular.  

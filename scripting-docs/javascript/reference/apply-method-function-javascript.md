@@ -1,13 +1,13 @@
 ---
-title: "Apply (método) (función) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Apply (método) (función) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - apply
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Apply method
 ms.assetid: b36df78e-b14b-46ca-b5cb-de752d80f40a
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633365"
 ---
 # <a name="apply-method-function-javascript"></a>apply (Método, Function de JavaScript)
 Llama a la función, sustituyendo el objeto especificado para la `this` valor de la función y la matriz especificada por los argumentos de la función.  

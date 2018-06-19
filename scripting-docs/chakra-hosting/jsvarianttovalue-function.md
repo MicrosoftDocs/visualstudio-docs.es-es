@@ -1,18 +1,18 @@
 ---
-title: "Función JsVariantToValue | Microsoft Docs"
-ms.custom: 
+title: Función JsVariantToValue | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsVariantToValue
 helpviewer_keywords:
 - JsVariantToValue function
 ms.assetid: e8f9eb8b-55b3-4b65-927e-cad5b482edee
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569015"
 ---
 # <a name="jsvarianttovalue-function"></a>JsVariantToValue (Función)
 Crea un valor de JavaScript que es una proyección del parámetro `VARIANT` pasado.  

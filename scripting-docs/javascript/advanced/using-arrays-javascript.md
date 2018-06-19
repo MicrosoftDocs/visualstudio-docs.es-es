@@ -1,12 +1,13 @@
 ---
 title: Uso de matrices (JavaScript) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: 785c5acd-b8b3-4152-af9a-dd42ecdd75ba
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569165"
 ---
 # <a name="using-arrays-javascript"></a>Utilizar matrices (JavaScript)
 Las matrices de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] son *dispersas*. Es decir, si tiene una matriz con tres elementos que están numerados 0, 1 y 2, puede crear el elemento 50 sin preocuparse por los elementos del 3 al 49. Si la matriz tiene una variable de longitud automática (consulte sobre los [objetos intrínsecos](../../javascript/intrinsic-objects-javascript.md) para obtener una explicación de la supervisión automática de la longitud de matriz), la variable de longitud se establece en 51, en lugar de en 4. Si bien puede crear matrices en las que no haya ningún hueco en la numeración de los elementos, no es necesario hacerlo.  

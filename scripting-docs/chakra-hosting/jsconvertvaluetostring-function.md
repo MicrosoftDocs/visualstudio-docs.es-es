@@ -1,18 +1,18 @@
 ---
-title: "Función JsConvertValueToString | Microsoft Docs"
-ms.custom: 
+title: Función JsConvertValueToString | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsConvertValueToString
 helpviewer_keywords:
 - JsConvertValueToString function
 ms.assetid: a97aca04-b2ce-446a-acf4-49cd6777a85c
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567745"
 ---
 # <a name="jsconvertvaluetostring-function"></a>JsConvertValueToString (Función)
 Convierte el valor en cadena mediante la semántica estándar de JavaScript.  

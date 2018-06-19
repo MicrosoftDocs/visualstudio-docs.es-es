@@ -1,13 +1,13 @@
 ---
-title: "@if(Instrucción de JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: '@if(Instrucción de JavaScript) | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@if_JavaScriptKeyword'
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - else statement
 - '@if statement'
 ms.assetid: ff11b29d-c06a-4276-b11d-db73e2da98ac
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -31,6 +31,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24634055"
 ---
 # <a name="if-statement-javascript"></a>@if(Instrucción de JavaScript)
 Ejecuta condicionalmente un grupo de instrucciones en función del valor de una expresión.  

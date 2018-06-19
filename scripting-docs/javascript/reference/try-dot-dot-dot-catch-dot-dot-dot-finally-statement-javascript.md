@@ -1,12 +1,13 @@
 ---
-title: "try... catch... finally (instrucción) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: try... catch... finally (instrucción) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - try_JavaScriptKeyword
@@ -22,7 +23,7 @@ helpviewer_keywords:
 - try-catch exception handling, catch block
 - try-catch exception handling
 ms.assetid: b7a0a54e-dfaa-4e41-bf25-bcaa43e601fb
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -31,6 +32,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641735"
 ---
 # <a name="trycatchfinally-statement-javascript"></a>try...catch...finally (Instrucción de JavaScript)
 Configura bloques de código en los que los errores que se producen en un bloque se controlan en otro. Los errores que se producen dentro del bloque `try` se detectan en el bloque `catch`. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  

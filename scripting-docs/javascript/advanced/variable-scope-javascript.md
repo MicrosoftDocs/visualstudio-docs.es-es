@@ -1,12 +1,13 @@
 ---
-title: "Ámbito de la variable (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Ámbito de la variable (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -17,7 +18,7 @@ helpviewer_keywords:
 - variable scope [JavaScript]
 - variables, scope [JavaScript]
 ms.assetid: a811a9a6-856f-46e9-8be3-f2d22a0c245f
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -26,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569325"
 ---
 # <a name="variable-scope-javascript"></a>Ámbito de la variable (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tiene dos ámbitos: global y local. Una variable que se declara fuera de la definición de una función es una variable global y su valor es accesible y modificable desde su programa. Si se declara dentro de la definición de una función, será local. Se crea y se destruye cada vez que se ejecuta la función y ningún código externo a la función puede tener acceso a ella. JavaScript no admite el ámbito de bloque (en el que un conjunto de llaves `{. . .}` define un nuevo ámbito), excepto en el caso especial de variables de ámbito de bloque.  

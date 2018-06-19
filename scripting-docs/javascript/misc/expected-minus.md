@@ -1,13 +1,13 @@
 ---
 title: Se esperaba &#39;-&#39; | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1012
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633435"
 ---
 # <a name="expected-39-39"></a>Se esperaba &#39;-&#39;
 Se intentó crear una expresión regular literal, pero no incluía una de las barras diagonales (/). Igual que se escriben literales de cadena como caracteres dentro de un par de comillas, literales de expresiones regulares se expresan como caracteres dentro de un par de caracteres de barra diagonal (/).  
