@@ -21,6 +21,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454649"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspeccionar las Variables en el automático y variables locales Windows en Visual Studio
 El **automático** ventana (durante la depuración, **CTRL + ALT + V, A**, o **Depurar > Windows > automático**) y la **locales** ventana (durante la depuración **CTRL + ALT + V, L**, o **Depurar > Windows > variables locales**) son muy útiles cuando desea ver los valores de las variables durante la depuración. En la ventana **Variables locales** se muestran las variables definidas en el ámbito local, que generalmente es la función o el método que se encuentra en ejecución. En la ventana **Automático** se muestran las variables usadas en torno a la línea actual (es decir, el lugar donde se detiene el depurador). Exactamente qué variables se muestran en esta ventana es diferente en distintos idiomas. Consulte [What variables appear in the Autos Window?](#bkmk_whatvariables) a continuación.  

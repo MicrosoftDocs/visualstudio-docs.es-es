@@ -23,6 +23,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454601"
 ---
 # <a name="forof-statement-javascript"></a>Instrucción for...of (JavaScript)
 Ejecuta una o varias instrucciones para cada valor de un iterador obtenido a partir de un objeto iterable.  

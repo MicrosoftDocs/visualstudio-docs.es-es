@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584404"
 ---
 # <a name="resource-details-view---contention-data"></a>Vista Detalles de recursos: datos de contención
 La vista Detalles de recursos presenta un gráfico de escala de tiempo de los eventos de bloqueo originados por las contenciones sobre un recurso seleccionado. Un evento de bloqueo se produce cuando un subproceso se ve obligado a suspender la ejecución porque otro subproceso ha bloqueado el acceso al recurso.  

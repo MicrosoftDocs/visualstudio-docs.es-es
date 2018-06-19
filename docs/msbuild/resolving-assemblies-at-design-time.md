@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574475"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Resolver ensamblados en tiempo de diseño
 Cuando se agrega una referencia a un ensamblado mediante la pestaña .NET del cuadro de diálogo Agregar referencia, la referencia señala a un ensamblado de referencia intermedio, es decir, un ensamblado que contiene toda la información de firma y de tipos, pero que no contiene código necesariamente. La pestaña .NET hace una lista de los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución en .NET Framework. Además, hace una lista de los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución de las carpetas AssemblyFoldersEx que utilizan otros fabricantes.  

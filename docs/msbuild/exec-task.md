@@ -2,11 +2,8 @@
 title: Exec (Tarea) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
 dev_langs:
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, Exec task
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
-caps.latest.revision: 20
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec3a4f2507baa3a1ee5f2543722d5c13503af2b0
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569692"
 ---
 # <a name="exec-task"></a>Exec (Tarea)
 Ejecuta el programa o comando especificado mediante los argumentos especificados.  
@@ -36,7 +33,7 @@ Ejecuta el programa o comando especificado mediante los argumentos especificados
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea `Exec`.  
   
-|Parámetro|Descripción|  
+|Parámetro|Description|  
 |---------------|-----------------|  
 |`Command`|Parámetro `String` requerido.<br /><br /> Comandos que se van a ejecutar. Estos pueden ser comandos del sistema, como attrib, o una aplicación ejecutable, como program.exe, runprogram.bat o setup.msi.<br /><br /> Este parámetro puede contener varias líneas de comandos. Alternativamente, puede colocar varios comandos en un archivo por lotes y ejecutarlo utilizando este parámetro.|  
 |`ConsoleOutput`|Parámetro de salida <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> La salida de cada elemento es una línea de la salida estándar o de la secuencia de errores estándar que emite la herramienta. Solo se captura si `ConsoleToMsBuild` está establecido en `true`.|
@@ -53,7 +50,7 @@ Ejecuta el programa o comando especificado mediante los argumentos especificados
 |`WorkingDirectory`|Parámetro `String` opcional.<br /><br /> Especifica el directorio en el que se ejecutará el comando.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta tarea es útil cuando una tarea de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] específica para el trabajo que desea realizar no está disponible. Sin embargo, la tarea `Exec`, a diferencia de una tarea más específica, no puede reunir la salida de la herramienta o comando que ejecuta.  
+ Esta tarea es útil cuando una tarea de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] específica para el trabajo que desea realizar no está disponible. Sin embargo, la tarea `Exec`, a diferencia de una tarea más específica, no puede realizar un procesamiento adicional ni operaciones condicionales en función del resultado de la herramienta o el comando que se ejecuta.
   
  La tarea `Exec` llama al archivo cmd.exe en vez de invocar directamente un proceso.  
   

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565697"
 ---
 # <a name="application-deployment-prerequisites"></a>Requisitos previos para la implementación de aplicaciones
 Para asegurarse de que su aplicación se instalará y se ejecutará correctamente, primero debe asegurarse de que todos los componentes de los que depende su aplicación ya estén instalados en el equipo de destino. Por ejemplo, la mayoría de las aplicaciones creadas con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen una dependencia de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; antes de instalar la aplicación, el equipo de destino debe tener la versión correcta de Common Language Runtime.  

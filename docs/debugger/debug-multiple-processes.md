@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478231"
 ---
 # <a name="debug-multiple-processes"></a>Depurar varios procesos
 Aquí se muestra cómo empezar a depurar procesos, cambiar entre procesos, interrumpir y continuar la ejecución, recorrer el código fuente, detenga la depuración y terminar o desasociar procesos.  

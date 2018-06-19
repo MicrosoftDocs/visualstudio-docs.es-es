@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473824"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Cómo: Buscar el nombre de un proceso de ASP.NET
 Para establecer una asociación a una aplicación [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] que se está ejecutando, es preciso conocer el nombre del proceso [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  

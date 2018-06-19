@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263934"
 ---
 # <a name="common-data-views"></a>Vistas de datos comunes
 Esta sección contiene información de referencia acerca de las vistas e informes de archivos de datos del generador de perfiles que son comunes para todos los métodos de generación de perfiles.  

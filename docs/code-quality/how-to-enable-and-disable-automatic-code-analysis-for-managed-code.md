@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919510"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de código automático para código administrado
 

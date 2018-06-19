@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475816"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Cómo: depurar desde un proyecto DLL en Visual Studio
 Es una manera de depurar un proyecto DLL especificar la aplicación que realiza la llamada en las propiedades del proyecto del proyecto de DLL y, a continuación, puede iniciar la depuración desde el propio proyecto DLL. Para que funcione este método, la aplicación debe llamar a la DLL y el archivo DLL debe estar en la ubicación donde la aplicación espera encontrarla (en caso contrario, la aplicación podría encontrar una versión diferente del archivo DLL y cargarla en su lugar, y que no ejecute los puntos de interrupción). Para otros métodos de depuración de archivos DLL, consulte [depurar proyectos DLL](../debugger/debugging-dll-projects.md).

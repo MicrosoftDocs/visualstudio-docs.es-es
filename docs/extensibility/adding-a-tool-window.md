@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107886"
 ---
 # <a name="adding-a-tool-window"></a>Agregar una ventana de herramientas
 En este tutorial aprenderá a crear una ventana de herramientas e integrarlos en Visual Studio en las siguientes maneras:  

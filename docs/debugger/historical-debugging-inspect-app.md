@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476827"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Inspeccionar la aplicación con depuración en Visual Studio de historial de IntelliTrace
 Puede usar [depuración histórica](../debugger/historical-debugging.md) para desplazarse hacia atrás y hacia delante a través de la ejecución de la aplicación e inspeccionar su estado.  

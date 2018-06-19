@@ -27,6 +27,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264781"
 ---
 # <a name="reduce-method-array-javascript"></a>reduce (Método, Array de JavaScript)
 Llama a la función de devolución de llamada especificado para todos los elementos de una matriz. El valor devuelto de la función de devolución de llamada es el resultado acumulado, y se proporciona como un argumento en la siguiente llamada a dicha función.  

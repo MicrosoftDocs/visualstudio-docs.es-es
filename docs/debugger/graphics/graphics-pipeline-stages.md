@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481306"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapas de canalización de gráficos
 La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etapa de la canalización de gráficos Direct3D transforma una llamada a draw individual.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559444"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Producto&gt; elemento (arranque)
 El `Product` elemento es el elemento XML de nivel superior dentro de un archivo de producto.  

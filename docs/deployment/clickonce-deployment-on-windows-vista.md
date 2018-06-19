@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31558937"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Implementación de ClickOnce en Windows Vista
 Compilar aplicaciones en Visual Studio para Control de cuentas de usuario (UAC) en Windows Vista normalmente genera un manifiesto incrustado, como datos binarias codifican XML en archivo ejecutable de la aplicación. Dado que las aplicaciones ClickOnce y COM sin registro requieren un manifiesto externo, Visual Studio genera un archivo para estos tipos de proyectos que contienen los datos UAC en lugar de un manifiesto incrustado. De forma predeterminada, Visual Studio usa información en un archivo denominado app.manifest para generar la información de manifiesto UAC externa (para la implementación de ClickOnce y COM sin registro), o para incrustar en el archivo ejecutable de la aplicación (para todos los demás casos). Visual Studio proporciona las siguientes opciones para la generación de manifiestos:  

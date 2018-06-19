@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578060"
 ---
 # <a name="cl-task"></a>CL (Tarea)
 Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera archivos ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o archivos de módulos de códigos (.netmodule). Para obtener más información, consulte [Opciones del compilador](/cpp/build/reference/compiler-options).  

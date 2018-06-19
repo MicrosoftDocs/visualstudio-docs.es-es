@@ -31,6 +31,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578762"
 ---
 # <a name="mt-task"></a>MT (Tarea)
 Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más información, vea "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117002"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Esta interfaz permite que un autor de llamada determinar si un proveedor de puerto puede conservar los puertos (de escribirlos en disco) entre las distintas invocaciones del depurador y, a continuación, obtener una lista de esos puertos conservados.  

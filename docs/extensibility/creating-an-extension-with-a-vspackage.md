@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109456"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Crear una extensión con un paquete VSPackage
 Este tutorial muestra cómo crear un proyecto VSIX y agregar un elemento de proyecto de VSPackage. Usaremos el VSPackage para obtener el servicio de Shell de interfaz de usuario para mostrar un cuadro de mensaje.  

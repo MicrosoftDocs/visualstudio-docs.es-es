@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109147"
 ---
 # <a name="hitting-a-breakpoint"></a>Alcanzar un punto de interrupción
 A continuación describe el proceso cuando el motor de depuración (Alemania) alcanza un punto de interrupción mientras se ejecuta o ejecución paso a paso:  

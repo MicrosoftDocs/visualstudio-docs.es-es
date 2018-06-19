@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564927"
 ---
 # <a name="clickonce-cache-overview"></a>Información general sobre la memoria caché de ClickOnce
 Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones, si están instalados de forma local u hospedados en línea, se almacenan en el equipo cliente en un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplicación *caché*. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] caché es una familia de directorios ocultos situados bajo el directorio de configuración Local de la carpeta de Documents and Settings del usuario actual. Esta memoria caché contiene todos los archivos de la aplicación, incluidos los ensamblados, archivos de configuración, aplicación y configuración de usuario y directorio de datos. La memoria caché también es responsable de la migración de directorio de datos de la aplicación a la versión más reciente. Para obtener más información acerca de la migración de datos, vea [obtener acceso Local y remoto datos en aplicaciones ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561459"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce y Authenticode
 *Authenticode* es una tecnología de Microsoft que usa una criptografía estándar del sector para firmar el código de una aplicación con certificados digitales que comprueban la autenticidad del publicador de la aplicación. Gracias al uso de Authenticode para la implementación de aplicaciones, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] reduce el riesgo de recibir un caballo de Troya. Un caballo de Troya es un virus u otro programa dañino creado por un tercero malintencionado y que aparenta ser un programa legítimo procedente de una fuente verificada y de confianza. La firma de implementaciones de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un certificado digital es un paso opcional para comprobar que los ensamblados y los archivos no se han alterado.  

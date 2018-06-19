@@ -1,16 +1,18 @@
 ---
-title: "PROFILER_SCRIPT_TYPE (enumeración) | Documentos de Microsoft"
-ms.custom: 
+title: PROFILER_SCRIPT_TYPE (enumeración) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: PROFILER_SCRIPT_TYPE
-apilocation: scrobj.dll
+apiname:
+- PROFILER_SCRIPT_TYPE
+apilocation:
+- scrobj.dll
 ms.assetid: 3ab6633a-6241-44f0-b837-14336f70c71e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734125"
 ---
 # <a name="profilerscripttype-enumeration"></a>PROFILER_SCRIPT_TYPE (Enumeración)
 Especifica el tipo de script.  

@@ -27,6 +27,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065311"
 ---
 # <a name="publishing-clickonce-applications"></a>Publicar aplicaciones ClickOnce
 Cuando se publica una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] por primera vez, las propiedades de publicación se pueden establecer con el Asistente para publicación. Sólo algunas de las propiedades están disponibles en el asistente; todas las restantes se establecen en sus valores predeterminados.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575941"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109338"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Se utiliza para determinar si un programa puede detener la ejecución tras alcanzar un punto concreto en la ejecución.  

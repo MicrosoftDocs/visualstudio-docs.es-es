@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473811"
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.  

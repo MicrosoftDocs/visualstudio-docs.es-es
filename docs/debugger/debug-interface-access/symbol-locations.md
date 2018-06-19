@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480272"
 ---
 # <a name="symbol-locations"></a>Symbol Locations
 Símbolos mayoría tienen una ubicación definida en el archivo de imagen. Se especifica la ubicación de un símbolo con un valor comprendido entre el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) enumeración. El símbolo puede admitir las propiedades adicionales según su ubicación.  

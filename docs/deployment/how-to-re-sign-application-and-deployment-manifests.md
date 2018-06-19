@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566139"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Cómo: Volver a firmar manifiestos de aplicación e implementación
 Después de realizar cambios a las propiedades de implementación en el manifiesto de aplicación para aplicaciones de Windows Forms, aplicaciones de Windows Presentation Foundation (xbap) o las soluciones de Office, debe volver a firmar la aplicación y los manifiestos de implementación con un certificado. Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de usuario final.  

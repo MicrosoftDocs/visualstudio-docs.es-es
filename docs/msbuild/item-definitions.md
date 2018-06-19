@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572509"
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 permite la declaración estática de los elementos de archivos de proyecto mediante el elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Sin embargo, sólo se pueden agregar metadatos en el nivel de elemento, aunque los metadatos sean idénticos para todos los elementos. A partir de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, un elemento de proyecto denominado [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) resuelve esta limitación. *ItemDefinitionGroup* permite definir un conjunto de definiciones de elementos, las cuales agregan valores de metadatos predeterminados a todos los elementos del tipo de elemento especificado.  

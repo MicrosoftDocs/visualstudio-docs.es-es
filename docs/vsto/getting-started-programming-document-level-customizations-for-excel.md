@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448433"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Empezar a programar personalizaciones de nivel de documento para Excel
   Si acaba de empezar a crear personalizaciones de nivel de documento para Microsoft Office Excel mediante el uso de Visual Studio, aquí es lo que necesita saber.  

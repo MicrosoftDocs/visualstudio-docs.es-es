@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578736"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker, Tarea)
 La tarea AL contiene AL.exe, una herramienta que se distribuye con [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. La herramienta Assembly Linker se utiliza para crear un ensamblado con un manifiesto a partir de uno o varios archivos que pueden ser módulos o archivos de recursos. Los compiladores y los entornos de desarrollo pueden proporcionar estas capacidades, por lo que a menudo no hace falta utilizar esta tarea directamente. Assembly Linker resulta de más utilidad para los programadores que necesitan crear un único ensamblado a partir de varios archivos de componentes, como los que se pueden producir en desarrollos de lenguajes combinados. Esta tarea no combina los módulos en un único archivo de ensamblado; los módulos individuales deben distribuirse y estar disponibles para que el ensamblado resultante se cargue correctamente. Para obtener más información sobre AL.exe, vea [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  

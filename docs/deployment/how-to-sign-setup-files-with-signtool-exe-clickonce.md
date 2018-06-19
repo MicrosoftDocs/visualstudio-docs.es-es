@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566126"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Cómo: Firmar archivos de instalación con SignTool.exe (ClickOnce)
 Puede usar SignTool.exe para firmar un programa de instalación (setup.exe). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.  

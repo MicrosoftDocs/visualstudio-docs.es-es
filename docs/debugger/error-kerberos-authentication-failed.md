@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474221"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Error: Error de autenticación Kerberos
 Al intentar realizar la depuración remota, podría aparecer el siguiente mensaje de error:  

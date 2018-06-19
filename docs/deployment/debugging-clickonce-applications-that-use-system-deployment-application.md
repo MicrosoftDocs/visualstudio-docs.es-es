@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561667"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>Depurar aplicaciones ClickOnce que utilizan System.Deployment.Application
 En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación le permite configurar cómo se actualiza una aplicación. Sin embargo, si tiene que usar y personalizar avanzados [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] características de implementación, debe tener acceso al modelo de objeto de implementación proporcionado por <xref:System.Deployment.Application>. Puede usar el <xref:System.Deployment.Application> API para las tareas avanzadas como:  

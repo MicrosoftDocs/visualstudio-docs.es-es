@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575324"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (Tarea)
 Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifiesto nativo. Un manifiesto nativo describe un componente al definir una identidad única para dicho componente e identificar todos los ensamblados y archivos que lo conforman. Un manifiesto de aplicación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] extiende un manifiesto nativo indicando el punto de entrada de la aplicación y especificando el nivel de seguridad de la aplicación.  

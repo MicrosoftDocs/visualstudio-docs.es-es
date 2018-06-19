@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122943"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 Destruye el identificador único asociado con esta propiedad, que indica que el autor de llamada ya no se ocupa de identificar esta propiedad de forma exclusiva de todas las demás propiedades.  

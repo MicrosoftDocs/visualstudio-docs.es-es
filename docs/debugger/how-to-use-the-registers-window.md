@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477016"
 ---
 # <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Ver valores de registrar y utilizar la ventana se registra en el depurador de Visual Studio
 La ventana registros solo está disponible si está habilitada la depuración de nivel de dirección en la **opciones** cuadro de diálogo, **depuración** nodo, **General** categoría.  

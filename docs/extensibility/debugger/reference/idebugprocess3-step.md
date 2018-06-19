@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116391"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Hace que el proceso paso a paso una instrucción o instrucción.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122436"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Alterna el estado de este virtualizado pendiente de punto de interrupción. Cuando un punto de interrupción pendiente está virtualizado, el motor de depuración intentará enlazarla cada vez que carga el nuevo código en el programa.  

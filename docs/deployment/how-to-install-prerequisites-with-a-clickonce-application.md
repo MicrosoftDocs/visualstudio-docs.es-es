@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559340"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Cómo: Instalar requisitos previos mediante una aplicación ClickOnce
 Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones requieren que esté instalada la versión correcta de .NET Framework en un equipo antes de poder ejecutar; muchas aplicaciones tienen además otros requisitos previos. Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, puede elegir un conjunto de componentes de requisitos previos para empaquetar junto con la aplicación. Durante la instalación, se realizará una comprobación de todos los requisitos previos determinar si ya existe; Si no se instalará antes de instalar el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.  

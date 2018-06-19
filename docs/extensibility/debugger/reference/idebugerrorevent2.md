@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31116495"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 Esta interfaz especifica un mensaje de error que se notifica al usuario.  

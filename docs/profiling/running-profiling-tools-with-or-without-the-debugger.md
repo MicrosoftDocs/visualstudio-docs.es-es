@@ -15,6 +15,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268274"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecución de herramientas de generación de perfiles con o sin el depurador
 Visual Studio ahora ofrece herramientas de rendimiento, algunas de las cuales (por ejemplo, **Uso de la CPU** y **Uso de la memoria**) se pueden ejecutar con o sin el depurador. Las herramientas de rendimiento sin depurador están diseñadas para ejecutarse en las configuraciones de la versión, mientras que las herramientas integradas en el depurador están diseñadas para ejecutarse en las configuraciones de depuración.  

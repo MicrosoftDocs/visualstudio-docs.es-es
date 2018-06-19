@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569909"
 ---
 # <a name="task-base-class"></a>Base de tarea (Clase)
 Muchas tareas heredan en última instancia de la clase <xref:Microsoft.Build.Utilities.Task>. Esta clase agrega varios parámetros a las tareas que derivan de ellos. Estos parámetros se muestran en este documento.  

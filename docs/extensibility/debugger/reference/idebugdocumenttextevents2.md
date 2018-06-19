@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107675"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Esta interfaz se utiliza para notificar a Visual Studio sobre los cambios en el documento de origen que proporcionan el motor de depuración.  

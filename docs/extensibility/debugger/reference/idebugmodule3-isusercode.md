@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112945"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 Recupera información sobre si el módulo representa el código de usuario o no.  

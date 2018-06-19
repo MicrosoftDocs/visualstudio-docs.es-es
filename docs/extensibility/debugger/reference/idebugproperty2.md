@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121578"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Esta interfaz representa una propiedad de marco de pila, una propiedad de documento de programa o alguna otra propiedad. La propiedad suele ser el resultado de evaluación de una expresión.  

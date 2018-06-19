@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476636"
 ---
 # <a name="window-search-dialog-box"></a>Cuadro de diálogo Buscar ventana
 Utilice este cuadro de diálogo para buscar y seleccionar el nodo de una ventana específica en [Windows Vista](../debugger/windows-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de vista de Windows. A continuación, elija **Buscar ventana** desde el **búsqueda** menú.  

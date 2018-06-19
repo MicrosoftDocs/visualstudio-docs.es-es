@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576045"
 ---
 # <a name="msbuild-task-reference"></a>Referencia de tareas de MSBuild
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas de la siguiente lista se incluyen con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Cuando se instala [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], hay tareas adicionales disponibles que se utilizan para compilar proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para obtener más información, consulte [Tareas de MSBuild específicas de Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  

@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481949"
 ---
 # <a name="how-to-stop-code-changes"></a>Cómo: Detener cambios en el código
 Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del código, puede detener la operación.  

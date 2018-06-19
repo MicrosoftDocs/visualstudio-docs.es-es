@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704241"
 ---
 # <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
 Evalúa y muestra la instrucción dada.

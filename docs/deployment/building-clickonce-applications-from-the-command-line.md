@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566191"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilar aplicaciones ClickOnce desde la línea de comandos
 En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], puede generar proyectos desde la línea de comandos, incluso si se crean en el entorno de desarrollo integrado (IDE). De hecho, puede volver a generar un proyecto creado con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en otro equipo que tiene sólo el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalado. Esto le permite reproducir una compilación mediante un proceso automatizado, por ejemplo, en una compilación central laboratorio o mediante técnicas avanzadas de scripting fuera del ámbito de compilar el proyecto en Sí.  

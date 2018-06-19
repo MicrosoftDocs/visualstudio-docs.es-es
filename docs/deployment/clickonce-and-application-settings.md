@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561706"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce y configuración de la aplicación
 Configuración de la aplicación de Windows Forms facilita la crear, almacenar y mantener aplicaciones personalizadas y las preferencias del usuario en el cliente. El siguiente documento describe cómo funcionan los archivos de configuración de la aplicación en una aplicación ClickOnce y cómo migra ClickOnce la configuración cuando el usuario realiza una actualización a la versión siguiente.  

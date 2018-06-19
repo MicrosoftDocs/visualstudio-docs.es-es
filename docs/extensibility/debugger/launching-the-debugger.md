@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108935"
 ---
 # <a name="launching-the-debugger"></a>Iniciar el depurador
 Iniciar al depurador requiere el envío de la secuencia correcta de métodos y eventos con los atributos adecuados.  

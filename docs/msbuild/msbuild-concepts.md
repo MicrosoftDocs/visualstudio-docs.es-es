@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573182"
 ---
 # <a name="msbuild-concepts"></a>Conceptos de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un esquema XML básico que puede utilizar para controlar cómo la plataforma de compilación compila el software. Para especificar los componentes de la compilación y cómo se van a compilar, utilice estos cuatro elementos de MSBuild: propiedades, elementos, tareas y destinos.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918499"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823: Evitar los campos privados no utilizados
 |||

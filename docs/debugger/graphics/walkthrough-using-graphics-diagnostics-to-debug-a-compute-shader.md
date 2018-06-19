@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481270"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Tutorial: Usar diagnósticos de gráficos para depurar un sombreador de cálculo
 En este tutorial se muestra cómo usar las herramientas de diagnóstico de gráficos de Visual Studio para investigar un sombreador de cálculo que genera resultados incorrectos.  

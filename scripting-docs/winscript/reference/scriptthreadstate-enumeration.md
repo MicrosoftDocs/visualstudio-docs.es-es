@@ -1,11 +1,11 @@
 ---
-title: "SCRIPTTHREADSTATE (enumeración) | Documentos de Microsoft"
-ms.custom: 
+title: SCRIPTTHREADSTATE (enumeración) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SCRIPTTHREADSTATE
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - SCRIPTTHREADSTATE enum
 ms.assetid: 975ec66b-c095-40ac-8ba9-631adb97b589
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733925"
 ---
 # <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE (Enumeración)
 Especifica el estado de un subproceso de un motor de scripting. Esta enumeración se usa en la [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) método.  

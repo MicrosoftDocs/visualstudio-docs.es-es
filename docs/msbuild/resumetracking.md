@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577319"
 ---
 # <a name="resumetracking"></a>ResumeTracking
 Reanuda el seguimiento en el contexto actual.  

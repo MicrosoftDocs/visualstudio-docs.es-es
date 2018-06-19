@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917099"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Características de accesibilidad del Visor de Ayuda
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Este tema incluye información sobre las características, productos y servicios que permiten que el Visor de Ayuda de Microsoft sea accesible para los usuarios con una amplia gama de opciones.

@@ -13,6 +13,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34478317"
 ---
 Si ha instalado Web Deploy mediante el instalador de plataforma Web, puede implementar la aplicación directamente desde Visual Studio.
 

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575564"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visual Studio permite comprender mejor el uso de hardware de alto nivel con la aplicación Direct3D. Con ella puede determinar si el rendimiento de la aplicación está enlazado a la CPU o a la GPU, y obtener más información sobre cómo usar el hardware de la plataforma con mayor eficacia. La herramienta Uso de GPU es compatible con aplicaciones que usan Direct3D 12, Direct3D 11 y Direct3D 10. No es compatible con otras API de gráficos, como Direct2D u OpenGL.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568645"
 ---
 # <a name="creating-forwarding-loggers"></a>Crear registradores de reenvío
 Los registradores de reenvío mejoran la eficacia del registro, ya que le permiten elegir los eventos que quiere supervisar al compilar proyectos en un sistema de varios procesadores. Al habilitar los registradores de reenvío, puede evitar que eventos no deseados sobrecarguen el registrador central, ralenticen el tiempo de compilación y saturen el registro.  

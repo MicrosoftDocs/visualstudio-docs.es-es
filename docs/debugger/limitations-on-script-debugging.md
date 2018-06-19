@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476840"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitaciones de la depuración de script
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] admite la depuración de script en el cliente, sujeta a las limitaciones descritas en este tema.  

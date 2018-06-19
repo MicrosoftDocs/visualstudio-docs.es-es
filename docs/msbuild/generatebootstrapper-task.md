@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573803"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (Tarea)
 Proporciona una forma automatizada de detectar, descargar e instalar una aplicación y sus requisitos previos. Actúa como instalador único que integra los instaladores independientes de todos los componentes que forman una aplicación.  

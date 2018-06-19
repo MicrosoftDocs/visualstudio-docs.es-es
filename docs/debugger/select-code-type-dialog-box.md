@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475147"
 ---
 # <a name="select-code-type-dialog-box"></a>Seleccionar tipo de código (Cuadro de diálogo)
 Para abrir este cuadro de diálogo, abra el **adjuntar al proceso** cuadro de diálogo y, a continuación, haga clic en el **seleccione** botón.  

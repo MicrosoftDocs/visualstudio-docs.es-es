@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31565424"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Tutorial: Crear un instalador personalizado para una aplicación ClickOnce
 Cualquier aplicación ClickOnce basada en un archivo .exe se pueden instalar en modo silencioso y actualizar a través de un instalador personalizado. Un instalador personalizado puede implementar la experiencia de usuario personalizada durante la instalación, incluidos los cuadros de diálogo personalizados para las operaciones de seguridad y mantenimiento. Para llevar a cabo operaciones de instalación, el instalador personalizado utiliza la <xref:System.Deployment.Application.InPlaceHostingManager> clase. Este tutorial muestra cómo crear a un instalador personalizado que instala silenciosamente una aplicación ClickOnce.  

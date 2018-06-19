@@ -24,6 +24,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065011"
 ---
 # <a name="debugger-security"></a>Seguridad del depurador
 La posibilidad de depurar otro proceso le confiere amplios poderes que, de otra forma, no tendría, especialmente al depurar de forma remota. Un depurador malintencionado podría infligir daños generalizados en el equipo depurado.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571817"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Cómo: Utilizar el mismo destino en varios archivos de proyecto
 Si ha creado varios archivos de proyecto con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], es posible que haya detectado la necesidad de utilizar las mismas tareas y destinos en los distintos archivos de proyecto. En lugar de incluir la descripción completa de estas tareas o destinos en cada archivo de proyecto, puede guardar un destino en un archivo de proyecto independiente y, a continuación, importarlo en un proyecto que necesite utilizar dicho destino.  

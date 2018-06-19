@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578418"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.  

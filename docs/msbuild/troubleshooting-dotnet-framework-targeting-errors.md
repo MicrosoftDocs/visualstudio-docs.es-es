@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571362"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Solucionar problemas de versión de .NET Framework de destino
 En este tema se describen los errores de MSBuild que pueden producirse debido a problemas de referencia y cómo pueden resolverse esos errores.  

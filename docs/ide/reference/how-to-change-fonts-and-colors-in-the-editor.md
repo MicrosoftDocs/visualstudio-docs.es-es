@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447822"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Cómo: Cambiar las fuentes y los colores del editor
 Puede cambiar el nombre de fuente predeterminado, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo para el texto diverso de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:

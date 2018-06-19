@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574645"
 ---
 # <a name="msbuild-inline-tasks"></a>Tareas insertadas de MSBuild
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. Para obtener más información, consulte [Tareas](../msbuild/msbuild-tasks.md).  

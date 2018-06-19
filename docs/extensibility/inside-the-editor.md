@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265780"
 ---
 # <a name="inside-the-editor"></a>Dentro del Editor
 El editor se compone de una serie de diferentes subsistemas, que están diseñadas para impedir que el editor de texto modelo independiente la vista de texto y la interfaz de usuario.  
