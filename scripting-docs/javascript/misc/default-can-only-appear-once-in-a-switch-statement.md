@@ -1,13 +1,13 @@
 ---
-title: "&#39; predeterminado &#39; solo puede aparecer una vez en un &#39; conmutador &#39; instrucción | Documentos de Microsoft"
-ms.custom: 
+title: '&#39; predeterminado &#39; solo puede aparecer una vez en un &#39; conmutador &#39; instrucción | Documentos de Microsoft'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1027
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633105"
 ---
 # <a name="39default39-can-only-appear-once-in-a-39switch39-statement"></a>&#39; predeterminado &#39; solo puede aparecer una vez en un &#39; conmutador &#39; instrucción
 Se intentó utilizar el **predeterminado** instrucción más de una vez dentro de una instrucción switch. El caso predeterminado siempre es la última instrucción case en una instrucción switch (es el caso de paso explícito).  

@@ -1,13 +1,13 @@
 ---
-title: "moveFirst (método, Enumerator) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: moveFirst (método, Enumerator) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - moveFirst
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - MoveFirst method
 ms.assetid: 96eedc66-7974-443c-b0cd-55373a7c0e59
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638925"
 ---
 # <a name="movefirst-method-enumerator-javascript"></a>moveFirst (Método, Enumerator de JavaScript)
 Restablece el elemento actual de la colección en el primer elemento.  

@@ -1,12 +1,13 @@
 ---
-title: "Object.getOwnPropertyNames (función) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Object.getOwnPropertyNames (función) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - getOwnPropertyNames method [JavaScript]
 - Object.getOwnPropertyNames method [JavaScript]
 ms.assetid: 59f4b6b1-02be-44b3-a06c-a5ca8f70c3d8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639935"
 ---
 # <a name="objectgetownpropertynames-function-javascript"></a>Object.getOwnPropertyNames (Función de JavaScript)
 Devuelve los nombres de las propiedades de un objeto propios. Las propiedades de un objeto propias son aquellos que se definen directamente en ese objeto y no se heredan del prototipo del objeto. Las propiedades de un objeto incluyen campos (objetos) y funciones.  

@@ -1,12 +1,13 @@
 ---
 title: WinRTError (objeto) (JavaScript) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - WinRTError object [JavaScript]
 - JavaScript, WinRTError object
 ms.assetid: d75ab8e5-e729-4d86-90fd-ea228c30dd66
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640895"
 ---
 # <a name="winrterror-object-javascript"></a>WinRTError (Objeto de JavaScript)
 Si una llamada a Windows Runtime devuelve un valor HRESULT que indica un error, JavaScript lo convierte en un error especial de Windows Runtime. Este objeto solo está disponible en aplicaciones de la [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] (si Windows en tiempo de ejecución está disponible) como parte del espacio de nombres global de JavaScript.  

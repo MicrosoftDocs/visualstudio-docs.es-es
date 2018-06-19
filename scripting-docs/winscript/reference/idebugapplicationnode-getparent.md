@@ -1,11 +1,11 @@
 ---
 title: IDebugApplicationNode::GetParent | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplicationNode.GetParent
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplicationNode::GetParent
 ms.assetid: 88ba3a53-0cd7-4e1f-8558-79c20ac76cc9
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725365"
 ---
 # <a name="idebugapplicationnodegetparent"></a>IDebugApplicationNode::GetParent
 Devuelve el nodo primario de este nodo de la aplicación.  

@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptSite::GetLCID | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptSite.GetLCID
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptSite_GetLCID
 ms.assetid: 7b4a2dc1-bcf6-4bbf-884e-97b305a28eb7
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724815"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
 Recupera el identificador de configuración regional asociado con la interfaz de usuario del host. El motor de scripting, utiliza el identificador para asegurarse de que las cadenas de error y otros elementos de interfaz de usuario generados por el motor aparecen en el idioma adecuado.  

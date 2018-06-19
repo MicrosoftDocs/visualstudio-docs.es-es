@@ -1,12 +1,13 @@
 ---
-title: "Object.Seal (función) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Object.Seal (función) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -16,7 +17,7 @@ helpviewer_keywords:
 - Object.seal function
 - seal function
 ms.assetid: e72c804a-4dab-4ec9-b9df-9c9c908aa12d
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +26,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641155"
 ---
 # <a name="objectseal-function-javascript"></a>Object.seal (Función de JavaScript)
 Evita la modificación de atributos de las propiedades existentes y evita la adición de propiedades nuevas.  

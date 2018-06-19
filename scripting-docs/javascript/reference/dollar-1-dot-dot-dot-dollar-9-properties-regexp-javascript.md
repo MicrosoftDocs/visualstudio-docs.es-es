@@ -1,13 +1,13 @@
 ---
 title: $1... $9 (propiedades, RegExp) (JavaScript) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - $1...$9
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - $1...$9 properties
 ms.assetid: 8bd84851-f62f-4eb1-a93d-b67135ea091a
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636645"
 ---
 # <a name="19-properties-regexp-javascript"></a>$1...$9 (Propiedades,RegExp de JavaScript)
 Devuelve que las nueve memorizadas más recientemente que las partes que se encontró durante la coincidencia de patrones. Sólo lectura.  

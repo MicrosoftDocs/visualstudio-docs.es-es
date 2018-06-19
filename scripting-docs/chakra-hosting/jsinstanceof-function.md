@@ -1,13 +1,13 @@
 ---
-title: "Función JsInstanceOf | Microsoft Docs"
-ms.custom: 
+title: Función JsInstanceOf | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 94399a62-b996-4fd2-82ce-1c26e7a4da08
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -16,6 +16,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568835"
 ---
 # <a name="jsinstanceof-function"></a>JsInstanceOf (función)
 Realizar pruebas del operador "instanceof" de JavaScript.  

@@ -1,13 +1,13 @@
 ---
-title: "Split (método) (cadena) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Split (método) (cadena) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - split
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - split method
 ms.assetid: 7f093336-c887-4efb-b91f-819b6d18a181
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640305"
 ---
 # <a name="split-method-string-javascript"></a>split (Método, String de JavaScript)
 Divide una cadena en subcadenas mediante el separador especificado y las devuelve como una matriz.  

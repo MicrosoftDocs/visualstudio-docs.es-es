@@ -1,18 +1,18 @@
 ---
-title: "Función JsGetPropertyIdFromName | Microsoft Docs"
-ms.custom: 
+title: Función JsGetPropertyIdFromName | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsGetPropertyIdFromName
 helpviewer_keywords:
 - JsGetPropertyIdFromName function
 ms.assetid: 1674906f-746a-4c62-99cd-023276683a86
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568375"
 ---
 # <a name="jsgetpropertyidfromname-function"></a>JsGetPropertyIdFromName (Función)
 Obtiene el identificador de propiedad asociado al nombre.  

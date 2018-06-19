@@ -1,13 +1,13 @@
 ---
-title: "substring (método, String) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: substring (método, String) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - substring
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - substrings
 - substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640935"
 ---
 # <a name="substring-method-string-javascript"></a>substring (Método, String de JavaScript)
 Devuelve la subcadena en la ubicación especificada dentro de un `String` objeto.  
@@ -52,7 +53,7 @@ Devuelve la subcadena en la ubicación especificada dentro de un `String` objeto
 ## <a name="remarks"></a>Comentarios  
  El `substring` método devuelve una cadena que contiene la subcadena desde `start` hacia arriba, pero no incluyen `end`.  
   
- El **subcadena** método usa el valor más bajo de `start` y `end` como punto inicial de la subcadena. Por ejemplo, strvar.substring (0, 3**)** y strvar.substring (3, 0) devuelven la misma subcadena.  
+ El **subcadena** método usa el valor más bajo de `start` y `end` como punto inicial de la subcadena. Por ejemplo, strvar.substring (0, 3 **)** y strvar.substring (3, 0) devuelven la misma subcadena.  
   
  Si el valor `start` o `end` es `NaN` o negativo, se reemplazan por cero.  
   

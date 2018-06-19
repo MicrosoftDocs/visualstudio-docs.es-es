@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262262"
 ---
 # <a name="net-memory-data-views"></a>Vistas de datos de memoria de .NET
 Esta sección contiene información de referencia acerca de las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de memoria de .NET.  

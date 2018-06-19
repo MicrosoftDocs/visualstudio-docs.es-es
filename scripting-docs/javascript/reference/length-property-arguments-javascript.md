@@ -1,13 +1,13 @@
 ---
 title: Length (propiedad, argumentos) (JavaScript) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - length Property
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - length property (arguments)
 - Length property
 ms.assetid: 3cf36823-15bc-489b-a951-24c4923d9dba
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637915"
 ---
 # <a name="length-property-arguments-javascript"></a>length (Propiedad, argumentos de JavaScript)
 Devuelve el número real de argumentos pasados a una función por el llamador.  

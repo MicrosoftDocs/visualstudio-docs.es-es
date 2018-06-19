@@ -1,13 +1,13 @@
 ---
 title: Propiedad rightContext ($&#39;) (RegExp) (JavaScript) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - $'
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - rightContext property ($')
 ms.assetid: 6999c056-d18c-4583-9dd9-8fbb6d3d0ee7
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640105"
 ---
 # <a name="rightcontext-property-39-regexp-javascript"></a>Propiedad rightContext ($&#39;) (RegExp) (JavaScript)
 Devuelve los caracteres desde la posición siguiente de la última coincidencia al final de la cadena buscada. Sólo lectura.  

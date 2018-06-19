@@ -1,13 +1,13 @@
 ---
-title: "Source (propiedad) (expresión Regular) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Source (propiedad) (expresión Regular) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - source
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Source property
 ms.assetid: d58ac57e-fcde-49d1-bbba-e8c4218448c4
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639895"
 ---
 # <a name="source-property-regular-expression-javascript"></a>source (Propiedad, Regular Expression de JavaScript)
 Devuelve una copia del texto del patrón de expresión regular. Sólo lectura. El `rgExp` argumento es un **expresión Regular** objeto. Puede ser un nombre de variable o un literal.  

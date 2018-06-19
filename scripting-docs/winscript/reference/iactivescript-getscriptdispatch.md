@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::GetScriptDispatch | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.GetScriptDispatch
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_GetScriptDispatch
 ms.assetid: 2092ccd4-1f4c-493a-b5b7-077a70ce95ca
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641435"
 ---
 # <a name="iactivescriptgetscriptdispatch"></a>IActiveScript::GetScriptDispatch
 Recupera el `IDispatch` interfaz para los métodos y propiedades asociados a la secuencia de comandos que se está ejecutando.  

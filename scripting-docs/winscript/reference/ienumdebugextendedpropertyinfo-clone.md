@@ -1,11 +1,11 @@
 ---
 title: IEnumDebugExtendedPropertyInfo::Clone | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IEnumDebugExtendedPropertyInfo.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IEnumDebugExtendedPropertyInfo::Clone
 ms.assetid: dd645cf6-bfb3-486c-829e-bb91a6639665
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727465"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
 Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.  

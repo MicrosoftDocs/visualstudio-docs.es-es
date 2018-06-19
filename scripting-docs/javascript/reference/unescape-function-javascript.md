@@ -1,13 +1,13 @@
 ---
-title: "unescape (función) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: unescape (función) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - unescape
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - Unescape method
 ms.assetid: 4adf0270-88b5-4d54-8110-d879d6ae97c2
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641405"
 ---
 # <a name="unescape-function-javascript"></a>unescape (Función de JavaScript)
 Descodifica `String` codifican los objetos con el `escape` función. Desusado.  

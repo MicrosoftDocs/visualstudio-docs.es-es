@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447887"
 ---
 # <a name="zoom-control-threads-view"></a>Control de zoom (vista Subprocesos)
 El control de zoom es un control deslizante que le ayuda a acercar y alejar la escala de tiempo para que pueda centrarse en áreas de especial interés. Dado que este control acerca el centro de la vista de escala de tiempo, deberá centrar el área de interés antes de acercarla.  

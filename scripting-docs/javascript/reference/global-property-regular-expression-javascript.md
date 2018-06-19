@@ -1,13 +1,13 @@
 ---
-title: "global (propiedad) (expresión Regular) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: global (propiedad) (expresión Regular) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Global
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - global property
 ms.assetid: 76a0f115-0d89-4aca-86d5-932895c6d649
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637435"
 ---
 # <a name="global-property-regular-expression-javascript"></a>global (Propiedad, Regular Expression, JavaScript)
 Devuelve un valor booleano que indica el estado del indicador global (**g**) utilizado con una expresión regular. Valor predeterminado es **false**. Sólo lectura.  

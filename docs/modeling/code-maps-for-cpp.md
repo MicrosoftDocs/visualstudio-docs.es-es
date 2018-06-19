@@ -14,6 +14,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263071"
 ---
 # <a name="code-maps-for-c-projects"></a>Mapas de código para proyectos de C++
 

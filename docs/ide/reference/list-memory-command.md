@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703424"
 ---
 # <a name="list-memory-command"></a>Mostrar memoria (Comando)
 Muestra el contenido del intervalo de memoria especificado.

@@ -1,13 +1,13 @@
 ---
-title: "getUTCDay (método, Date) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: getUTCDay (método, Date) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - getUTCDay
@@ -21,7 +21,7 @@ helpviewer_keywords:
 - UTC dates, returning
 - getUTCDay method
 ms.assetid: 2fceb5b0-6f77-4919-82c3-0877fd55bacb
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -30,6 +30,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636865"
 ---
 # <a name="getutcday-method-date-javascript"></a>getUTCDay (Método, Date de JavaScript)
 Obtiene el día de la semana mediante la hora Universal coordinada (UTC).  

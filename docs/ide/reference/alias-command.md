@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33703410"
 ---
 # <a name="alias-command"></a>Alias (Comando)
 Crea un nuevo alias para un comando completo, un comando completo con argumentos u otro alias.

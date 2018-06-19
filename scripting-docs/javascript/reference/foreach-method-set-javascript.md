@@ -1,19 +1,20 @@
 ---
-title: "forEach (método, Set) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: forEach (método, Set) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 813bff6e-6098-4260-ab6e-b0d2da6be94d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24636765"
 ---
 # <a name="foreach-method-set-javascript"></a>forEach (Método, Set de JavaScript)
 Realiza la acción especificada para cada elemento de un conjunto.  

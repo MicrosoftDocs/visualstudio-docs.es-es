@@ -1,16 +1,18 @@
 ---
-title: "PROFILER_EVENT_MASK (enumeración) | Documentos de Microsoft"
-ms.custom: 
+title: PROFILER_EVENT_MASK (enumeración) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: PROFILER_EVENT_MASK
-apilocation: scrobj.dll
+apiname:
+- PROFILER_EVENT_MASK
+apilocation:
+- scrobj.dll
 ms.assetid: c2168408-f4f6-4600-971d-f15b4edf4ca2
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734245"
 ---
 # <a name="profilereventmask-enumeration"></a>PROFILER_EVENT_MASK (Enumeración)
 Indica los tipos de eventos de los que se deben generar perfiles.  

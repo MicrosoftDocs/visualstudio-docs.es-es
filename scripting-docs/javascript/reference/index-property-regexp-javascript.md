@@ -1,13 +1,13 @@
 ---
 title: Index (propiedad) (RegExp) (JavaScript) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - index
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - Index property
 - matching strings
 ms.assetid: d8be1ef6-1bf2-43cd-b0b5-567a61eabaad
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24637365"
 ---
 # <a name="index-property-regexp-javascript"></a>index (Propiedad, RegExp de JavaScript)
 Devuelve la posición del carácter donde comienza la primera coincidencia en una cadena de búsqueda. Sólo lectura.  

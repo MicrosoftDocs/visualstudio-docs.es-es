@@ -1,16 +1,16 @@
 ---
 title: Hosts de Windows Script | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571695"
 ---
 # <a name="windows-script-hosts"></a>Windows Script (Hosts)
 Al implementar el host de Microsoft Windows Script, puede suponer de forma segura que un motor de scripting solo llama a la interfaz [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) en el contexto del subproceso base siempre y cuando el host haga lo siguiente:  

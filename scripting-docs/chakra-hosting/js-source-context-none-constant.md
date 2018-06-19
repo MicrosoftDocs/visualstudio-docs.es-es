@@ -1,18 +1,18 @@
 ---
 title: Constante JS_SOURCE_CONTEXT_NONE | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JS_SOURCE_CONTEXT_NONE
 helpviewer_keywords:
 - JS_SOURCE_CONTEXT_NONE constant
 ms.assetid: 3c599580-c814-4d75-8471-260fd864cb6f
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567575"
 ---
 # <a name="jssourcecontextnone-constant"></a>JS_SOURCE_CONTEXT_NONE (Constante)
 Contexto de origen vacío.  

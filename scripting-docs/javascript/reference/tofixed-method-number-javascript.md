@@ -1,13 +1,13 @@
 ---
-title: "toFixed (método, Number) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: toFixed (método, Number) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - toFixed
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - toFixed method
 ms.assetid: b5f03400-865e-4ab2-818c-f734c0f6d6f0
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640405"
 ---
 # <a name="tofixed-method-number-javascript"></a>toFixed (Método, Number de JavaScript)
 Representa un número en notación de punto fijo.  

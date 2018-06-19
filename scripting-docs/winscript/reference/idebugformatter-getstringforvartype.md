@@ -1,11 +1,11 @@
 ---
 title: IDebugFormatter::GetStringForVarType | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugFormatter.GetStringForVarType
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugFormatter::GetStringForVarType
 ms.assetid: 1c1a0499-ca57-47e0-8367-fdb4c902bca3
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727235"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
 Devuelve una cadena que representa el valor VARTYPE especificado.  
