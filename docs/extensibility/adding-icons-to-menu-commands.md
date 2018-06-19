@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098397"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Agregar iconos a los comandos de menú
 Los comandos pueden aparecer en los menús y barras de herramientas. En las barras de herramientas, es común para un comando que se mostrará con solo un icono (para ahorrar espacio) mientras en los menús normalmente aparece un comando con un icono y el texto.  

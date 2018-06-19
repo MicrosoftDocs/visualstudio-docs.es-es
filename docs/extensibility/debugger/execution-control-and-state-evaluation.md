@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098178"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Control de la ejecución y evaluación de estado
 Depurar una aplicación requiere la implementación de estas características de control de ejecución como la ejecución paso a paso en funciones, deténgase en los puntos de interrupción y continuar la ejecución. La depuración de bases de datos de Visual Studio su control de ejecución en los eventos enviados entre los componentes del depurador.  

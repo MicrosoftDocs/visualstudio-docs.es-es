@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945134"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notificaciones, Entorno, Opciones (cuadro de diálogo)
 Utilice esta opción para dejar de omitir las notificaciones que eligió anteriormente que se omitiesen mediante el cuadro de diálogo de notificaciones. Para más información, vea [Notificaciones](../../ide/visual-studio-notifications.md).

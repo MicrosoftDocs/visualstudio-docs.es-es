@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099381"
 ---
 # <a name="launch-based-attachment"></a>Datos adjuntos basada en Inicio
 Datos adjuntos en función de inicio a un programa son automático. Cuando se inicia el proceso que hospeda el programa envía el SDM, datos adjuntos basada en Inicio siguen una ruta de acceso similar a la que el método de conexión manual. Para obtener información, consulte [asociar al programa](../../extensibility/debugger/attaching-to-the-program.md).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097606"
 ---
 # <a name="creating-a-breakpoint"></a>Crear un punto de interrupción
 A continuación describe el proceso de creación de un punto de interrupción.  

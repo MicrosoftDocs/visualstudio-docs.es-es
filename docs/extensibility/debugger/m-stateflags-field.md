@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098126"
 ---
 # <a name="mstateflags-field"></a>m_stateFlags campo
 Almacena información sobre el estado actual de la <xref:System.Threading.Tasks.Task> objeto.  

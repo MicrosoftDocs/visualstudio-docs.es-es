@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100184"
 ---
 # <a name="buttontext-element"></a>Elemento ButtonText
 Este campo le permite especificar el texto que aparece en varios menús. De forma predeterminada, la `ButtonText` elemento aparece en controladores de menús. El `ButtonText` elemento también es el valor predeterminado si los demás campos de texto están en blanco. El `ButtonText` elemento no puede estar en blanco, incluso si se especifican los demás campos de texto.  

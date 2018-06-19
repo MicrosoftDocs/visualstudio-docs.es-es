@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947526"
 ---
 # <a name="security-of-text-templates"></a>Seguridad de las plantillas de texto
 Plantillas de texto tienen los siguientes problemas de seguridad:

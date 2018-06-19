@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104625"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Elegir entre VSPackages compartidos y con control de versiones
 Diferentes versiones de Visual Studio pueden coexistir en el mismo equipo. Paquetes VSPackage puede admitir cualquier combinación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versiones.  

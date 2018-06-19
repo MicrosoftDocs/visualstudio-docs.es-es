@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102426"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Agregar un submenú a un menú
 En este tutorial se basa en la demostración de [agregar un menú a la barra de menús de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) por que muestra cómo agregar un submenú a la **TestMenu** menú.  

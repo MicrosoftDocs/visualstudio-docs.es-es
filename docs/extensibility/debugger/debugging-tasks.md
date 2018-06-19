@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101149"
 ---
 # <a name="debugging-tasks"></a>Tareas de depuración
 Para depurar un programa, debe iniciarse y un motor de depuración (Alemania) debe estar conectado a él, o bien el Alemania debe asociarse a un programa iniciado previamente. Una vez conectado, la DE debe generar determinados eventos de inicio. En respuesta, el paquete de depuración intenta enlazar los puntos de interrupción establecidos en el IDE. Cuando el programa llega a un punto de interrupción enlazado, se detiene y espera proporcionados por el usuario.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103180"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementar y registrar un proveedor de puerto
 El rol de un proveedor de puerto es realizar un seguimiento y proporcionar puertos, lo que a su vez administración procesos. En el momento en que se debe crear un puerto, se crea una instancia del proveedor del puerto con CoCreate GUID del proveedor de puerto (el Administrador de sesión de depuración [SDM] va a usar el proveedor del puerto seleccionado por el usuario o el proveedor del puerto especificado por el sistema del proyecto). El SDM, a continuación, llame a [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) para ver si se puede agregar ninguno de los puertos. Si se puede agregar un puerto, se solicita un nuevo puerto mediante una llamada a [agregar puerto](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) y pasarle una [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) que describe el puerto. `AddPort` Devuelve un nuevo puerto representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz.  

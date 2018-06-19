@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099843"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (SDK de Visual Studio)
 Hay dos orígenes de eventos: el motor de depuración (Alemania) y la sesión de depuración de administrador (SDM). Eventos enviados desde un Alemania tienen un motor distinto de NULL, mientras que eventos enviados desde el SDM tienen un motor NULL.  
