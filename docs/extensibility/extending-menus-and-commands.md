@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128037"
 ---
 # <a name="extending-menus-and-commands"></a>Extender menús y comandos
 Comandos son la forma agregar acciones y procesos en Visual Studio. En la mayoría de los casos los comandos se muestran en los menús o barras de herramientas. La plantilla de proyecto de VSPackage muestra cómo implementar un comando muy básico. Para una implementación de un poco más, aunque todavía básica, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  

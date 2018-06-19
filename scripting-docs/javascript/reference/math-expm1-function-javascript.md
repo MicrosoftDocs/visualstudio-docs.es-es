@@ -1,19 +1,20 @@
 ---
-title: "Math.expm1 (función) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Math.expm1 (función) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 136655fc-f164-44e3-9038-62a47551db24
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638295"
 ---
 # <a name="mathexpm1-function-javascript"></a>Math.expm1 (función de JavaScript)
 Devuelve el resultado de restar 1 de e (la base de los logaritmos naturales) elevado a una potencia.  

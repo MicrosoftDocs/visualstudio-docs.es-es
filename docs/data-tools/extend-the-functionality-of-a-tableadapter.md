@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924454"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Ampliar la funcionalidad de un TableAdapter
 Puede ampliar la funcionalidad de un TableAdapter agregando código al archivo de clase parcial del TableAdapter.

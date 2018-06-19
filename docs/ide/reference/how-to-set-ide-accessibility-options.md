@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952108"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Cómo: Establecer opciones de accesibilidad del IDE
 

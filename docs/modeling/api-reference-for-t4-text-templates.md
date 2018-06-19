@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946106"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Referencia de API para plantillas de texto T4
 

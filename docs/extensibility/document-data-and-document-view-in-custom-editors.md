@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130265"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Datos del documento y la vista de documento en editores personalizados
 Un editor personalizado consta de dos partes: un objeto de datos de documento y un objeto de vista de documento. Como sugieren los nombres, el objeto de datos de documento representa los datos de texto que se mostrará y el objeto de vista de documento (o "vista") representa una o varias ventanas en el que se va a mostrar el objeto de datos del documento.  

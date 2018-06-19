@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921028"
 ---
 # <a name="code-analysis-application-errors"></a>Errores de la aplicación de análisis de código
 Esta sección es una referencia de los mensajes de error generados por la herramienta de análisis de código administrado. Para obtener ayuda sobre un mensaje de error específico, escriba el número de error en la **buscar** cuadro en el índice.

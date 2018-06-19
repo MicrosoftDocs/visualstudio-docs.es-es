@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262236"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Vista Árbol de llamadas: datos de instrumentación
 Los valores de una función en la vista Árbol de llamadas indican el tiempo de las instancias de la función a las que llamó la función primaria en el árbol de llamadas. Los valores de porcentaje se calculan comparando el valor de las instancias de la función con el tiempo inclusivo transcurrido total de todas las funciones de la ejecución de generación de perfiles.  

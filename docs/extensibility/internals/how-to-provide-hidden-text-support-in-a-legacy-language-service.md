@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132647"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Cómo: proporcionar compatibilidad en texto oculto en un servicio de lenguaje heredado
 Puede crear áreas de texto oculto además de regiones de esquema. Regiones de texto oculto pueden estar controlado por el cliente o controlados por el editor y se utilizan para ocultar una porción de texto completo. El editor muestra una región oculta como líneas horizontales. Un ejemplo de esto es la vista sólo secuencias de comandos en el editor HTML.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127697"
 ---
 # <a name="extern-element"></a>Elemento externo
 El elemento externo hace referencia a los archivos de encabezado externo (. h) para combinar con el archivo .vsct en tiempo de compilación. Los archivos que van a combinarse deben estar en la ruta de acceso de inclusión entregado al compilador VSCT o al que hace referencia un [elemento Include](../extensibility/include-element.md). Los archivos pueden estar otros archivos de vsct o archivos de encabezado de C++.  

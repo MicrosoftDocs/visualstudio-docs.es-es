@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129198"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Introducción a la plantilla de proyecto VSIX
 Puede usar la plantilla de proyecto de VSIX para crear una extensión o empaquetar una extensión existente para la implementación. La plantilla de proyecto de VSIX tiene las versiones de Visual Basic y Visual C# y se instala como parte del SDK de Visual Studio.  
@@ -35,7 +36,7 @@ Puede usar la plantilla de proyecto de VSIX para crear una extensión o empaquet
   
     2.  En el menú **Proyecto**, haga clic en **Exportar plantilla**. Complete los pasos del asistente.  
   
-         Se crea un archivo .zip en %USERPROFILE%\My Documents\Visual Studio  *\<versión >*\My Exported Templates\\.  
+         Se crea un archivo .zip en %USERPROFILE%\My Documents\Visual Studio  *\<versión >* \My Exported Templates\\.  
   
 2.  Crear un proyecto VSIX vacío.  
   

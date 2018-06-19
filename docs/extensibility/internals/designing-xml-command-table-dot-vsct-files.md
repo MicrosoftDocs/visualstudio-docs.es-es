@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133366"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Diseñar la tabla de comandos XML (. Archivos Vsct)
 Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia de los elementos de comando para un VSPackage. Elementos de comando incluyen botones, cuadros combinados, los menús, barras de herramientas y grupos de elementos de comando. Este tema describe cómo crearlos, cómo afectan a los menús y elementos de comandos y archivos de la tabla de comandos XML.

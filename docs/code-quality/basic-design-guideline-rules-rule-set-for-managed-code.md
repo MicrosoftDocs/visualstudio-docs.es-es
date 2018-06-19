@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31902277"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de directrices de diseño básicas para código administrado
 Puede usar el conjunto de reglas reglas de directrices de diseño básicas de Microsoft a centrarse en hacer que su código sea más fácil de entender y usar. Debe incluir este conjunto de reglas si el proyecto incluye código de bibliotecas o si desea exigir procedimientos recomendados para el código que es fácil de mantener.

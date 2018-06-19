@@ -1,19 +1,20 @@
 ---
-title: "Función Math.ACOSH (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Función Math.ACOSH (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 881dd2a0-36a5-403b-a3dc-523d8e1e1317
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -22,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639045"
 ---
 # <a name="mathacosh-function-javascript"></a>Función Math.acosh (JavaScript)
 Devuelve el arco coseno hiperbólico (o el coseno hiperbólico inverso) de un número.  

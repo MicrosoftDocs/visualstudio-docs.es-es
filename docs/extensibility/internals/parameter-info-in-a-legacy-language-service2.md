@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134612"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
 Información de parámetros de IntelliSense es el carácter (normalmente un paréntesis de apertura) para la lista de parámetros de método de inicio de una información sobre herramientas que muestra la firma de un método cuando el usuario escribe la lista de parámetros. Tal y como se escribe cada parámetro y se ha escrito el separador de parámetros (normalmente una coma), la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita.  

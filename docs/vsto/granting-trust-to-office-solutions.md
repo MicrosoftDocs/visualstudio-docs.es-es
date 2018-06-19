@@ -23,6 +23,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447250"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Conceder confianza a las soluciones de Office
   Conceder confianza a los medios de soluciones de Office modificar la directiva de seguridad de cada equipo de destino debe confiar en el ensamblado de la solución, el manifiesto de aplicación, el manifiesto de implementación y el documento. Se concede confianza a la solución de Office por usted o el usuario final.  

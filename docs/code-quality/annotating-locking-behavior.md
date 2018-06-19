@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31901533"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 Para evitar errores de simultaneidad en el programa multiproceso, siempre que siga una disciplina de bloqueo apropiada y utilizar anotaciones SAL.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135808"
 ---
 # <a name="command-routing-in-vspackages"></a>Enrutamiento de comandos en VSPackages
 Un comando se enruta en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] basándose en el contexto en el que se ejecuta. Se enruta desde el contexto inicial hacia fuera en el contexto global.  

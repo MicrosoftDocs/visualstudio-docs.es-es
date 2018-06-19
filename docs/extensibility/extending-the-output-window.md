@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131041"
 ---
 # <a name="extending-the-output-window"></a>Ampliar la ventana de salida
 El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. Visual Studio tiene estos paneles integrados: **generar**, en los proyectos que se comunican mensajes sobre las compilaciones, y **General**, en el que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica mensajes sobre el IDE. Los proyectos obtienen una referencia a la **compilar** automáticamente a través del panel la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interfaz y Visual Studio le proporciona acceso directo a la **General** panel a través de la <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servicio. Además de los paneles integrados, puede crear y administrar sus propios paneles personalizados.  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919682"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Advertencias de análisis de código de C/C++
 Esta sección enumeran las advertencias de análisis de código de C/C ++, excepto aquellos que se generan mediante la [comprobadores de directrices de núcleo de C++](code-analysis-for-cpp-corecheck.md). Para obtener información sobre el análisis de código, vea [/ANALYZE (análisis de código)](/cpp/build/reference/analyze-code-analysis) y [inicio rápido: análisis de código para C/C ++](../code-quality/quick-start-code-analysis-for-c-cpp.md).

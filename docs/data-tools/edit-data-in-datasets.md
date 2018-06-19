@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926384"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 Editar tablas de datos igual que edita los datos de una tabla en cualquier base de datos. El proceso puede incluir insertar, actualizar y eliminar registros en la tabla. En un formulario enlazado a datos, se puede especificar qué campos se puede modificar el usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios pueden enviarse a la base de datos más adelante. Si realiza ediciones mediante programación a los datos y tiene pensado enviar los cambios a la base de datos, debe usar los objetos y métodos que realizan el seguimiento de cambios para usted.

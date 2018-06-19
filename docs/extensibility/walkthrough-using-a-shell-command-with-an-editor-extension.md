@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148384"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Tutorial: Usar un comando de Shell con una extensión del Editor
 Desde un VSPackage, puede agregar características, como comandos de menú en el editor. Este tutorial muestra cómo agregar un elemento de gráfico a una vista de texto en el editor mediante la invocación de un comando de menú.  

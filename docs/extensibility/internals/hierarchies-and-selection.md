@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128564"
 ---
 # <a name="hierarchies-and-selection"></a>Las jerarquías y la selección
 Cuando se personalizan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe entender cómo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controla las jerarquías como proyectos y cómo utiliza el contexto de selección para determinar lo que se muestra al usuario. En esta sección se explica los conceptos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jerarquías y la selección.  

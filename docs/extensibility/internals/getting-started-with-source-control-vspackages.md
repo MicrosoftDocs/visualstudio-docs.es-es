@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133422"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>Introducción a VSPackages de Control de código fuente
 Un VSPackage de control de código fuente es una alternativa más avanzada para el complemento de control de código fuente. (Consulte [crear un complemento de Control de código fuente](../../extensibility/internals/creating-a-source-control-plug-in.md) para obtener más información sobre el origen de controlar el uso de complementos.) Un VSPackage de control de código fuente permite un control completo sobre el modelo de control de código fuente, características y la interfaz de usuario (UI) y se integra en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno como un paquete VSPackage.  

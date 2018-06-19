@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922447"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>Métodos abreviados de teclado para el Diseñador XAML
 Los métodos abreviados de teclado en el Diseñador XAML pueden agilizar el trabajo al reducir una acción que requiere varios clics del botón del mouse a un solo método abreviado de teclado.

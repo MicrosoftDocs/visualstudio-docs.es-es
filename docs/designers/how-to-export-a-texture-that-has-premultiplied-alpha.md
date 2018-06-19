@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922559"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Cómo: Exportar una textura que tiene valores alfa previamente multiplicados
 La canalización de contenido de la imagen puede generar texturas de alfa premultiplicado a partir de una imagen de origen. Pueden ser más fáciles de usar y más sólidas que las texturas que no contienen alfa previamente multiplicada.

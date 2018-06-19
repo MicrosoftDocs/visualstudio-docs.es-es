@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128889"
 ---
 # <a name="custom-tools"></a>Herramientas personalizadas
 *Herramientas personalizadas* le permiten asociar una herramienta con un elemento de un proyecto y ejecutar esa herramienta cada vez que se guarda el archivo. Determinadas herramientas personalizadas, a veces se denomina *generadores de un solo archivo*, con frecuencia se utilizan para implementar traductores que generan código de datos y viceversa. Por ejemplo, crear generadores de un solo archivo [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] código fuera de los archivos .settings y .resx fuente. El código fuente generado proporciona acceso fuertemente tipado a los datos en los archivos .settings y .resx. El [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] y [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipos de proyecto admiten herramientas personalizadas; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipos de proyecto no tienen que serlo. Sus propios tipos de proyecto también admiten las herramientas personalizadas.  

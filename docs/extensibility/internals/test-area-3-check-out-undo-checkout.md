@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134970"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Zona de ensayo 3: Extraer del repositorio / Deshacer desprotección
 Esta área de complemento de prueba de control de código fuente cubre los elementos de edición y reversión desde el almacén de versiones a través de la **desproteger** y **Deshacer desprotección** comandos.  

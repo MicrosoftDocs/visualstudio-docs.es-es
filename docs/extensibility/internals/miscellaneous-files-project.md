@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129982"
 ---
 # <a name="miscellaneous-files-project"></a>Proyecto de archivos varios
 Cuando un usuario abre elementos del proyecto, el IDE asigna al proyecto archivos varios todos los elementos que no son miembros de todos los proyectos en una solución.  

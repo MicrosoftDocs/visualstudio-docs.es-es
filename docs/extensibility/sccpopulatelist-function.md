@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140296"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (función)
 Esta función actualiza una lista de archivos para un comando de control de origen determinado y proporciona el estado del control de código fuente en todos los archivos determinados.  

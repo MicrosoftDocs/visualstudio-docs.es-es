@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141518"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Finalización automática de palabras en un servicio de lenguaje heredado
 Finalización automática de palabras rellena los caracteres que faltan en una palabra escrita parcialmente. Si hay solo una finalización posibles, la palabra se completa cuando se escribe el carácter de finalización. Si la palabra parcial coincide con más de una posibilidad, se muestra una lista de finalizaciones posibles. Una terminación de carácter puede ser cualquier carácter que no se utiliza para los identificadores.  

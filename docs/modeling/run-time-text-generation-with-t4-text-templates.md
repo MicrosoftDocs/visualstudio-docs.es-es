@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953120"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 

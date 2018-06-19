@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920843"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referencia del conjunto de reglas Análisis de código
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137773"
 ---
 # <a name="what39s-new-in-source-control"></a>¿Qué&#39;s de Control de código fuente
 En [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] puede proporcionar una solución de control de código fuente profundamente integrado mediante la implementación de un control de código fuente VSPackage. En esta sección se describe las características de control de código fuente VSPackages y proporciona una visión general de los pasos de implementación.  

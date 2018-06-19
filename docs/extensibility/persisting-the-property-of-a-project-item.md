@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138059"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Conservar la propiedad de un elemento de proyecto
 Puede que desee conservar una propiedad que se agrega a un elemento de proyecto, como el autor de un archivo de código fuente. Puede hacerlo mediante el almacenamiento de la propiedad en el archivo de proyecto.

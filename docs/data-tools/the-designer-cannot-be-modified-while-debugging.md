@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921233"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>No se puede modificar el diseñador durante la depuración
 

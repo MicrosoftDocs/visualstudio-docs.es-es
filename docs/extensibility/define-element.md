@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126967"
 ---
 # <a name="define-element"></a>Definir el elemento
 Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar atributos condicionales. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Vea también el [símbolos elemento](../extensibility/symbols-element.md).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132085"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Almacenar datos en el archivo de proyecto de MSBuild
 Un subtipo de proyecto que necesite conservar datos específicos del subtipo en el archivo de proyecto para su uso posterior. Un subtipo de proyecto usa la persistencia del archivo de proyecto para cumplir los requisitos siguientes:  

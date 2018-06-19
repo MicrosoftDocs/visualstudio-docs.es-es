@@ -1,13 +1,13 @@
 ---
-title: "LBound (método, VBArray) (JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: LBound (método, VBArray) (JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - lbound
@@ -18,7 +18,7 @@ dev_langs:
 helpviewer_keywords:
 - lbound method
 ms.assetid: 30ff5e8a-8165-494b-bce8-0a562ec2eec3
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -27,6 +27,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638205"
 ---
 # <a name="lbound-method-vbarray-javascript"></a>lbound (Método, VBArray de JavaScript)
 Devuelve el valor de índice más bajo utilizado en la dimensión especificada de un objeto VBArray.  

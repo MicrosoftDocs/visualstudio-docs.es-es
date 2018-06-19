@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134037"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Finalización de miembro en un servicio de lenguaje heredado
 La finalización de IntelliSense miembro es una información sobre herramientas que muestra una lista de posibles miembros de un ámbito determinado, como una clase, estructura, enumeración o espacio de nombres. Por ejemplo, en C#, si el usuario escribe "this" seguido por un punto, se presenta una lista de todos los miembros de la clase o estructura en el ámbito actual en una lista desde el que el usuario puede seleccionar.  

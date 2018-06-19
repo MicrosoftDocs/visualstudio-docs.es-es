@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130497"
 ---
 # <a name="extending-the-status-bar"></a>Extender la barra de estado
 Puede usar la barra de estado de Visual Studio en la parte inferior del IDE para mostrar información.  

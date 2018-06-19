@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923102"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de la mesa de trabajo en Blend
 Algunos métodos abreviados de teclado no tienen elementos de menú asociados, lo que significa que no puede usar la interfaz de usuario de [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] para descubrirlos. La siguiente tabla contiene los métodos abreviados que modifican una acción, por ejemplo, cambiar el tamaño de un objeto.

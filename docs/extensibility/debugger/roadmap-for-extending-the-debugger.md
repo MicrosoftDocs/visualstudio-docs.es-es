@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128109"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guía básica para ampliar el depurador
 Esta documentación proporciona información de referencia y la guía para extender la [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] del depurador con la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  

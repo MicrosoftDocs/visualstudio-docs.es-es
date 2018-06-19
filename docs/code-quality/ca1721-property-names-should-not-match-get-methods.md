@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918600"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Los nombres de propiedades no deberían coincidir con los métodos Get
 |||

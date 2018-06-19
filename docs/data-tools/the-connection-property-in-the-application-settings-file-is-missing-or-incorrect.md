@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921941"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 

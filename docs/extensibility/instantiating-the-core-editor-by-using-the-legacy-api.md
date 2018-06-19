@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132345"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Crear una instancia el Editor básico mediante la API heredado
 El editor es responsable de las funciones como inserción, eliminación, copiar y pegar de edición de texto. Estas funciones combinan con los proporcionados por los servicios de lenguaje, como el color de texto, la sangría y la finalización de instrucciones de IntelliSense.  

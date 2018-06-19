@@ -18,6 +18,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34476887"
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con código administrado mediante el depurador de Visual Studio
 

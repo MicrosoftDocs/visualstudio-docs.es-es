@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145963"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de Control de código fuente
 Esta sección proporciona instrucciones para probar el complemento con control de código fuente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se proporciona una amplia información general de las áreas de pruebas más comunes, así como algunas de las áreas más intrincadas que pueden ser problemáticas. Esta información general no pretende ser una lista exhaustiva de casos de prueba.  

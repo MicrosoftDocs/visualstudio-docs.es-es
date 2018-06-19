@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129740"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Persistencia y la tabla Document de ejecución
 En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, los proyectos son completamente responsables de administrar la persistencia de sus elementos de proyecto que llevar a cabo mediante el servicio, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Documentos son la unidad básica de persistencia en el entorno de Visual Studio. Proyectos de coordinan la apertura, guardar y cambiar el nombre de los documentos con la tabla de documento ejecución (RDT), un recurso que realiza un seguimiento del estado de todos los documentos abiertos.  

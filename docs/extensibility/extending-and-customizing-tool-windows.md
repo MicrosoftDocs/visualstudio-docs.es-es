@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129240"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Extender y personalizar las ventanas de herramientas
 Visual Studio proporciona varios tipos distintos de windows, por ejemplo las ventanas de herramientas, ventanas de documento y ventanas de diálogo. Otras ventanas, como la ventana Propiedades y la ventana de salida, la ventana Lista de tareas, son tipos de ventanas de herramientas.  

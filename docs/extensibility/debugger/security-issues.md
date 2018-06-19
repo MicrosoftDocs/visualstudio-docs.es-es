@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126902"
 ---
 # <a name="security-issues"></a>Problemas de seguridad
 Para depurar un programa con Visual Studio, los permisos necesitados son los mismos que un desarrollador debe ejecutar el programa. Esto incluye la depuración remota para la mayoría de los casos (algunas situaciones que afectan a otros servicios, como Internet Information Services, pueden requerir un mayor nivel de permisos).  

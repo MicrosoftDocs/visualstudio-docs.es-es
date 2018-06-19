@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127042"
 ---
 # <a name="taskstatecanceled-field"></a>Campo TASK_STATE_CANCELED
 La tarea se canceló antes de que ha alcanzado el estado de ejecución o se confirmó la cancelación y completar sin excepciones.  

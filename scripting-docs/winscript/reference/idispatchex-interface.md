@@ -1,17 +1,17 @@
 ---
 title: IDispatchEx (interfaz) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDispatchEx interface, about IDispatchEx
 - IDispatchEx interface
 ms.assetid: 37a3303f-f78e-4b5b-aac8-b836c92819de
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24730305"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx (Interfaz)
 `IDispatchEx`, una extensión de la `IDispatch` interfaz, admite características adecuados para lenguajes dinámicos, como los lenguajes de scripting. Esta sección se describe la `IDispatchEx` interfaz propia, las diferencias entre `IDispatch` y `IDispatchEx`y el motivo de las extensiones. Se espera que los lectores están familiarizados con `IDispatch` y tener acceso a la `IDispatch` documentación.  

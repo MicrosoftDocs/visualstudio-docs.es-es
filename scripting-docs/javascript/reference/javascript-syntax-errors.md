@@ -1,13 +1,13 @@
 ---
 title: Errores de sintaxis de JavaScript | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JavaScript
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - errors [JavaScript]
 - syntax errors, JavaScript
 ms.assetid: 0343dc19-5f5e-4a4c-83da-630b4fbcb3b6
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24639785"
 ---
 # <a name="javascript-syntax-errors"></a>Errores de sintaxis de JavaScript
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]errores de sintaxis se producen cuando la estructura de uno de sus [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] instrucciones infringe una o varias de las reglas sintácticas.  

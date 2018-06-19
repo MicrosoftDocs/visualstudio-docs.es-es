@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265049"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vistas de datos del método de muestreo del generador de perfiles
 Esta sección contiene información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de muestreo.  

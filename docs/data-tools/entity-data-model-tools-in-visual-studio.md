@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922993"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Herramientas de Entity Framework en Visual Studio
 Entity Framework es una tecnología de asignación objeto-relacional que permite a los desarrolladores de .NET trabajar con datos relacionales mediante el uso de objetos específicos del dominio. Elimina la necesidad de la mayor parte del código de acceso a datos que los desarrolladores normalmente deben escribir. Entity Framework es la asignación relacional de objetos (ORM) recomendada, modelado tecnología para nuevas aplicaciones de .NET.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129263"
 ---
 # <a name="how-to-open-standard-editors"></a>Cómo: abrir editores estándares
 Cuando se abre un editor estándar, permiten el IDE determinar un editor estándar para un tipo de archivo designado, en lugar de especificar un editor específico del proyecto para el archivo.  

@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919163"
 ---
 # <a name="globalization-warnings"></a>Advertencias de globalización
 Advertencias de globalización son compatibles con las aplicaciones y bibliotecas de uso internacional.

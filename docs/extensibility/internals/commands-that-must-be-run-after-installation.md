@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132346"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que se deben ejecutar después de la instalación
 Si implementa la extensión a través de un archivo .msi, debe ejecutar `devenv /setup` como parte de la instalación en orden para Visual Studio detectar las extensiones.  

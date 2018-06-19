@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917874"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Debe proteger los finalizadores
 |||

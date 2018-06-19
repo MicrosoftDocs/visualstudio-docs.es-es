@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916909"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Cómo: Guardar y editar cadenas de conexión
 Cadenas de conexión en aplicaciones de Visual Studio pueden guardar en el archivo de configuración de aplicación (conocido también como configuración de la aplicación) o codificado de forma rígida directamente en la aplicación. Si guarda las cadenas de conexión en el archivo de configuración de la aplicación, se simplifica la tarea de mantenimiento de la aplicación. Si la cadena de conexión debe modificarse, se puede actualizar en el archivo de configuración de la aplicación (cosa que no sucede si hubiera que cambiarla en el código fuente y tener que recompilar la aplicación).

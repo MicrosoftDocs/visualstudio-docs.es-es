@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133804"
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 Subtipos de proyecto permiten VSPackages ampliar proyectos basados en Microsoft Build Engine (MSBuild). El uso de agregación permite reutilizar la mayor parte de implementada en el sistema del proyecto principal administrada [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aún sigue personalizar el comportamiento de un escenario determinado.  

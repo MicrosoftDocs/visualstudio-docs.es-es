@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921067"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Tener acceso directamente a la base de datos con un TableAdapter
 Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapters se crean con métodos que se pueden ejecutar directamente en la base de datos. Estos métodos (`TableAdapter.Insert`, `TableAdapter.Update`, y `TableAdapter.Delete`) se puede llamar para manipular los datos directamente en la base de datos.

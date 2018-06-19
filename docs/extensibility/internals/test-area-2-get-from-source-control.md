@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133250"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: Obtener de Control de código fuente
 Esta área de ensayo trata los casos de prueba para recuperar elementos desde el almacén de versiones mediante el comando Get. Estos casos de prueba se pueden aplicar a ambos local y a los proyectos Web.  

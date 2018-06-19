@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133411"
 ---
 # <a name="solution-sln-file"></a>Solución (. Archivo sln)
 Una solución es una estructura para organizar los proyectos de Visual Studio. La solución mantiene la información de estado para los proyectos en .sln (basado en texto, compartido) y archivos .suo (opciones de solución binario, específica del usuario). Para obtener más información sobre .suo (archivos), consulte [opciones de usuario de la solución (. Archivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  

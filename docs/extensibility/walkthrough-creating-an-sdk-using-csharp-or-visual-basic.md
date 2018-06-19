@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146616"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Tutorial: Crear un SDK usando C# o Visual Basic
 En este tutorial, aprenderá a crear un SDK de biblioteca matemática simple mediante Visual C# y, a continuación, el SDK como una extensión de Visual Studio (VSIX) del paquete. Se realizarán los siguientes procedimientos:  

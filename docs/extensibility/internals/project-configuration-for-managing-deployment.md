@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132265"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuración del proyecto para administrar la implementación
 Implementación es el acto de mover físicamente los elementos de salida de un proceso de compilación a la ubicación esperada para la depuración y la instalación. Por ejemplo, una aplicación Web se podría basada en un equipo local y, a continuación, se coloca en el servidor.  

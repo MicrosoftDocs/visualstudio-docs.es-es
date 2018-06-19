@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129286"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Instrucciones de Control de origen adicionales para proyectos y editores
 Hay una serie de instrucciones que editores y proyectos deben respetar para admitir el control de código fuente.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129448"
 ---
 # <a name="model-for-source-control-packages"></a>Modelo para los paquetes de Control de código fuente
 El modelo siguiente representa un ejemplo de una implementación de control de código fuente. En el modelo, vea las interfaces que debe implementar y los servicios de entorno que se deben llamar. Al igual que todos los servicios, se llame realmente a los métodos de una interfaz concreta que obtiene mediante el servicio. Los nombres de las clases se identifican para que sea más fácil ver cómo se efectúa el control de código fuente.  

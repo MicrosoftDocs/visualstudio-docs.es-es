@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127075"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidad del depurador de Visual Studio
 Visual Studio incluye a un depurador de código fuente totalmente interactivo, proporciona una herramienta eficaz y fácil de usar para realizar un seguimiento de errores en el programa. El depurador tiene compatibilidad completa con Visual Basic, C#, C/C++ y JavaScript. Sin embargo, con el [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], es decir disponibles desde el [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), otros lenguajes de programación pueden admitirse en el depurador con las mismas características enriquecidas.  

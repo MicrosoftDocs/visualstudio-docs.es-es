@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128625"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>Visualización de archivos mediante el abierto con el comando
 Un proyecto puede pedir el IDE para mostrar el **abrir con** cuadro de diálogo. Esta solicitud pide al usuario que abra un archivo que tenga una selección de editores estándares. Los pasos siguientes describen este proceso.  

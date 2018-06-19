@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948306"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Compartir modelos y exportar diagramas
 En Visual Studio, puede compartir modelos y diagramas con sus compañeros de diversas formas.

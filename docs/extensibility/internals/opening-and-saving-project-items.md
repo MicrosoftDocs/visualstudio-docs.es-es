@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130607"
 ---
 # <a name="opening-and-saving-project-items"></a>Abrir y guardar elementos de proyecto
 Cuando se agrega un nuevo tipo de proyecto, debe administrar la apertura y el almacenamiento de los archivos de proyectos en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Los temas siguientes describen los diferentes métodos para abrir y guardar archivos.  

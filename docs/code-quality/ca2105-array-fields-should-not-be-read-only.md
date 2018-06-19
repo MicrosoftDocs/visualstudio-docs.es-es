@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915211"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Los campos de matrices no deberían ser de solo lectura
 |||

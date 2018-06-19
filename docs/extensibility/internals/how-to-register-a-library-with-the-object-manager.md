@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133000"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Cómo: registrar una biblioteca con el Administrador de objetos
 Exploración de símbolos de herramientas, como **vista de clases**, **Examinador de objetos**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos**, le permiten ver símbolos en el proyecto o en los componentes externos. Los símbolos incluyen los espacios de nombres, clases, interfaces, métodos y otros elementos del lenguaje. Las bibliotecas de realizar un seguimiento de estos símbolos y expóngalos a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el Administrador de objetos que rellena las herramientas con los datos.  

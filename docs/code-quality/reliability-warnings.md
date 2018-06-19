@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916753"
 ---
 # <a name="reliability-warnings"></a>advertencias de confiabilidad
 Advertencias de confiabilidad admiten la confiabilidad de bibliotecas y aplicaciones, como el uso de memoria y el subproceso correcto.

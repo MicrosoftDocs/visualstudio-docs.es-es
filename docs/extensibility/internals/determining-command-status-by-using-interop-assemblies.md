@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128182"
 ---
 # <a name="determining-command-status-by-using-interop-assemblies"></a>Determinar el estado del comando mediante el uso de ensamblados de interoperabilidad
 Un VSPackage debe realizar un seguimiento del estado de los comandos que puede controlar. Cuando un comando que se controla en el paquete de VS deja de estar habilitado o deshabilitado, no puede determinar el entorno. Es responsabilidad del paquete de VS para informar del entorno acerca de los Estados de comando, por ejemplo, el estado de general comandos como **cortar**, **copia**, y **pegar**.  

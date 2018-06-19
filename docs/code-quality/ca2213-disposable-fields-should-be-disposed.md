@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920490"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Aplique Dispose a los campos a los que se pueda
 |||

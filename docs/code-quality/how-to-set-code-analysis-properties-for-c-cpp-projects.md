@@ -25,6 +25,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920682"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Cómo: Establecer propiedades de análisis de código para proyectos de C/C++
 Puede configurar las reglas que usa la herramienta de análisis de código para analizar el código en cada configuración del proyecto. Además, puede dirigir el análisis de código para suprimir las advertencias de código que se ha generado y agregado al proyecto una herramienta de terceros.

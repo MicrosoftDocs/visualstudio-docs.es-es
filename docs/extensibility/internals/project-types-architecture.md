@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130614"
 ---
 # <a name="project-types-architecture"></a>Arquitectura de los tipos de proyecto
 Esta sección contiene información detallada acerca de la arquitectura de tipos de proyecto en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

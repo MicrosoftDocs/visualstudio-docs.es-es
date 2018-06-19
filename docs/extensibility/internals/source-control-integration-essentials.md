@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132039"
 ---
 # <a name="source-control-integration-essentials"></a>Essentials de integración del Control de código fuente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite dos tipos de integración del control de código fuente: un complemento de control de código fuente que proporciona la funcionalidad básica y se genera utilizando la API de complementos de Control de código fuente (anteriormente conocido como la API de MSSCCI) y una solución de integración del control de origen basado en el VSPackage que Proporciona una funcionalidad más sólida.  

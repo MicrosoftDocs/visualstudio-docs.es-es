@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126076"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Extender propiedades y la ventana de propiedades
 El **propiedades** ventana se usa para ver y editar las propiedades en tiempo de diseño y los eventos de los objetos seleccionados.  

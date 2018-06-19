@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952620"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizar el comportamiento de eliminación
 Normalmente, al eliminar un elemento también se eliminan los elementos relacionados. Se eliminan todas las relaciones conectadas a él y todos los elementos secundarios. Este comportamiento se denomina *elimine la propagación*. Puede personalizar la propagación de la eliminación, por ejemplo, para organizar que se eliminen otros elementos relacionados. Escribiendo código de programa puede hacer que la propagación de la eliminación dependa del estado del modelo. También puede hacer que se produzcan otros cambios en respuesta a una eliminación.

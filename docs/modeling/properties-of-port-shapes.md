@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951250"
 ---
 # <a name="properties-of-port-shapes"></a>Propiedades de las formas de puerto
 Puede usar formas de puerto para representar las clases de dominio en el diseñador generado.

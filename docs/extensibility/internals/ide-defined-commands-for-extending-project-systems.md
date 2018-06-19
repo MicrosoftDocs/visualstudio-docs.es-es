@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132020"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandos definidos por el IDE para ampliar sistemas del proyecto
 Si desea ampliar sistemas del proyecto, puede usar comandos y comando grupos proporcionados por el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  

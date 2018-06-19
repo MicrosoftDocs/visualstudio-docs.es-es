@@ -132,6 +132,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900451"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 Este artículo describen los usos típicos de anotaciones para parámetros de función sencilla, escalares y punteros a estructuras y clases y la mayoría de los tipos de búferes.  En este artículo también muestra los patrones de uso común para las anotaciones. Para obtener información sobre las anotaciones adicionales que están relacionados con las funciones, vea [anotar el comportamiento de la función](../code-quality/annotating-function-behavior.md)

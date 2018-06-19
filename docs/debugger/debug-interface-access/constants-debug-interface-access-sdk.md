@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458923"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Constantes (Debug Interface Access SDK)
 Estas constantes de cadena pueden utilizarse para identificar las distintas secciones de un archivo de base de datos (PDB) de depuración de programa a través del SDK de DIA.  

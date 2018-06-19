@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130721"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Control de glifo (VSPackage de Control de código fuente)
 Parte de la integración profunda disponible para VSPackages de control de código fuente es la capacidad para mostrar sus propios glifos para indicar el estado de los elementos bajo control de código fuente.  

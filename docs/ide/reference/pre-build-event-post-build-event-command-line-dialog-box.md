@@ -40,6 +40,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947978"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)
 Puede escribir eventos anteriores o posteriores a la compilación para la [página Eventos de compilación, Diseñador de proyectos (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) directamente en el cuadro de edición o puede seleccionar macros anteriores o posteriores a la compilación de una lista de macros disponibles.

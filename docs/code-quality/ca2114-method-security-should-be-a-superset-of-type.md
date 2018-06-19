@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31914957"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La seguridad del método debería ser un supraconjunto del tipo
 |||

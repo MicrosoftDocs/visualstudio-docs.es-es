@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133377"
 ---
 # <a name="custom-colorable-items"></a>Elementos coloreables personalizados
 Puede invalidar la lista de tipos para colorear, como palabras clave y los comentarios, mediante la implementación de elementos coloreables personalizados como parte de su servicio de lenguaje.  

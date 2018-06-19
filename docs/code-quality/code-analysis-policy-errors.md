@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922460"
 ---
 # <a name="code-analysis-policy-errors"></a>Errores de las directivas de análisis de código
 Los errores siguientes se producen si la directiva de análisis de código no se cumple en el momento de la inserción en el repositorio:

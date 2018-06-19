@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921450"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Conjuntos de datos independiente y TableAdapters en proyectos diferentes
 Los conjuntos de datos se han mejorado para que la [TableAdapters](create-and-configure-tableadapters.md) y clases de conjunto de datos se puedan generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.

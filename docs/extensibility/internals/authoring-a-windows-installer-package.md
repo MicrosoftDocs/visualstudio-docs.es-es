@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127943"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Creación de un paquete de Windows Installer
 Unidades de datos del modelo de Windows Installer. En lugar de escribir una secuencia de comandos de procedimientos para copiar archivos y escribir entradas del registro, por ejemplo, crea filas y columnas en tablas de base de datos que contienen datos de archivos y del registro.  

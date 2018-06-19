@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126882"
 ---
 # <a name="icon-element"></a>Icon (elemento)
 El atributo guid de la etiqueta de icono es el guid de un mapa de bits definido.  El atributo id, selecciona la ranura en la franja de mapa de bits. Este elemento es opcional.  Si este elemento se omite el valor de **guidOfficeIcon:msotcidNoIcon** se se implícito.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129051"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Cómo: abrir editores específica del proyecto
 Si un archivo de elemento que se está abriendo un proyecto intrínsecamente está enlazado al editor determinado para ese proyecto, el proyecto debe abrir el archivo con un editor específico del proyecto. El archivo no se puede delegar hasta del mecanismo del IDE para la selección de un editor. Por ejemplo, en lugar de utilizar un editor de mapa de bits estándar, puede usar esta opción de editor específico del proyecto para especificar un editor de mapa de bits específico que reconoce la información en el archivo que es único para el proyecto.  

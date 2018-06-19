@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923844"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar el Visor de Ayuda
 Puede personalizar el diseño de las ventanas del Visor de Ayuda, así como otras opciones como el tamaño de fuente, el número máximo de resultados y si se debe incluir el contenido en inglés.

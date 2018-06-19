@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139382"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validación de los puntos de interrupción en un servicio de lenguaje heredado
 Un punto de interrupción indica que debe detenerse la ejecución del programa en un momento determinado, mientras se está ejecutando en un depurador. Un usuario puede colocar un punto de interrupción en cualquier línea en el archivo de origen, ya que el editor no tiene ningún conocimiento de lo que constituye una ubicación válida para un punto de interrupción. Cuando se inicia el depurador, todos los puntos de interrupción marcadas (denominados interrupción pendientes) están enlazados a la ubicación adecuada en el programa en ejecución. Al mismo tiempo que los puntos de interrupción se validan para asegurarse de que marcan ubicaciones de código válido. Por ejemplo, un punto de interrupción en un comentario no es válido, porque no hay ningún código en esa ubicación en el código fuente. El depurador deshabilita los puntos de interrupción no válidos.  

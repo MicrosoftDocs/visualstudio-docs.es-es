@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129227"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Elemento que contribuye a la Agregar cuadro de diálogo nuevo elemento
 Un subtipo de proyecto puede proporcionar un nuevo directorio completando de elementos de la **Agregar nuevo elemento** cuadro de diálogo Registrar **Agregar elemento** plantillas en la `Projects` subclave del registro.  

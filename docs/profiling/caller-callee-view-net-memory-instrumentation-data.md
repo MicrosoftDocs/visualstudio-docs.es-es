@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34265506"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Vista Llamador y destinatario: datos de instrumentación de memoria de .NET
 La vista Llamador y destinatario de los datos de generación de perfiles de memoria de .NET recopilados mediante el método de instrumentación muestra la asignación y los datos de tiempo con relación a una función seleccionada y las funciones primarias y secundarias de esa función seleccionada. La vista Llamador y destinatario contiene tres cuadrículas.  

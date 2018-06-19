@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128926"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Introducción a los complementos de Control de código fuente
 Para crear un control de código fuente complemento, debe crear un archivo DLL que implementa las funciones definidas en la API de complemento de Control de origen, y, a continuación, registrar la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que esté disponible para su uso en el control de versiones de código de origen.  

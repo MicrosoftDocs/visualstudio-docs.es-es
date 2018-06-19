@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127049"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Cómo: desencadenar eventos cuando el Editor pierde el foco
 A veces es necesario saber cuándo un editor pierde el foco en el marco de ventana. Por ejemplo, deberá extraer el código desde una ventana de código después de que el editor ya no se centra en ella. El procedimiento siguiente proporciona los pasos que deben seguirse para recibir una notificación del editor pierde el foco.  

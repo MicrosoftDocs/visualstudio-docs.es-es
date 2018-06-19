@@ -13,6 +13,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131638"
 ---
 # <a name="in-place-activation"></a>Activación en contexto
 Si la vista del editor hospeda ActiveX u otros controles activos, debe implementar la vista del editor como un control ActiveX o como un objeto de datos de documento activo mediante el modelo de activación en contexto.  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133143"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Cómo: crear extensiones compatibles con 2017 de Visual Studio y Visual Studio 2015
 

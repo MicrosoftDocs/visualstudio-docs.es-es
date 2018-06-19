@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127245"
 ---
 # <a name="enumerators"></a>Enumeradores
 Esta sección enumeran los tipos de datos del enumerador en la API de complementos de Control de código fuente que debe conocer el complemento de control de código fuente.  

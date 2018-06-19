@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129123"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Interceptar comandos del servicio de lenguaje heredado
 Con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], puede hacer que los comandos de intercept de servicio de lenguaje que en caso contrario, controlaría la vista de texto. Esto es útil para el comportamiento específico del idioma que no administra la vista de texto. Puede interceptar estos comandos mediante la adición de uno o más filtros de comandos a la vista de texto de su servicio de lenguaje.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138777"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>Tutorial: Crear un Editor personalizado
 La plantilla de proyecto de VSPackage puede crear un editor personalizado simple en C++.  La plantilla de proyecto de VSPackage ya no admite proyectos de C# o Visual Basic. Para obtener más información, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  

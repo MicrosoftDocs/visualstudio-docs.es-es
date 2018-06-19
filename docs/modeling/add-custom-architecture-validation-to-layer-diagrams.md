@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952549"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de dependencia
 En Visual Studio, los usuarios pueden validar el código fuente en un proyecto con un modelo de capas para que puedan comprobar que el código fuente se ajusta a las dependencias de un diagrama de dependencia. Hay un algoritmo de validación estándar, pero puede definir sus propias extensiones de validación.

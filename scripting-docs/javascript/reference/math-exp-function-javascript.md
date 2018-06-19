@@ -1,13 +1,13 @@
 ---
-title: "Math.exp (función de JavaScript) | Documentos de Microsoft"
-ms.custom: 
+title: Math.exp (función de JavaScript) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - exp
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - logarithms
 - Euler's constant
 ms.assetid: a36845a8-2c15-45be-83f1-b33914423201
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -31,6 +31,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24638105"
 ---
 # <a name="mathexp-function-javascript"></a>Math.exp (Función de JavaScript)
 Devuelve e (la base de los logaritmos naturales) elevado a una potencia.  

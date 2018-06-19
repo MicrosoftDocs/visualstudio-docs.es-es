@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946928"
 ---
 # <a name="customizing-element-tools"></a>Personalizar herramientas de elemento
 En algunas definiciones de DSL, un concepto único se representa como un grupo de elementos. Por ejemplo, si crea un modelo en el que un componente tiene un conjunto fijo de puertos, desea siempre los puertos se creará al mismo tiempo que su componente primario. Por lo tanto, tiene que personalizar la herramienta de creación de elemento para que crea un grupo de elementos en lugar de solo uno. Para lograr esto, puede personalizar cómo se inicializa la herramienta de creación del elemento.

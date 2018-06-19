@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132109"
 ---
 # <a name="context-parameters"></a>Parámetros de contexto
 En el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] entorno de desarrollo integrado (IDE), puede agregar el asistentes para la **nuevo proyecto**, **Agregar nuevo elemento**, o **Agregar proyecto de Sub** cuadros de diálogo. Los asistentes agregados están disponibles en la **archivo** menú o haciendo clic en un proyecto en **el Explorador de soluciones**. El IDE pasa parámetros de contexto a la implementación del asistente. Los parámetros de contexto definen el estado del proyecto cuando el IDE llama el asistente.  
