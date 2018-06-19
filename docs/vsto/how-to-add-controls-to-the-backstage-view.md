@@ -28,6 +28,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34549082"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Cómo: agregar controles a la vista Backstage
   Puede utilizar el Diseñador de la cinta de opciones para agregar controles al menú que se abre al hacer clic en el **archivo** ficha. Al ejecutar la aplicación, los controles que agregue a la **archivo** ficha aparece un grupo denominado **complementos**.  

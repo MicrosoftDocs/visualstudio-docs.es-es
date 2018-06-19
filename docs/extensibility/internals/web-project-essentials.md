@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141000"
 ---
 # <a name="web-project-essentials"></a>Fundamentos de proyecto Web
 Proyectos Web crear aplicaciones Web. Puede utilizar un proyecto Web para crear una aplicación Web que tiene páginas Web inteligentes. Una página Web inteligente tiene código de servidor que representa la página Web a petición.  
@@ -34,7 +35,7 @@ Proyectos Web crear aplicaciones Web. Puede utilizar un proyecto Web para crear 
   
     -   Un proyecto de aplicación Web (WAP) produce un solo archivo ejecutable que combina el código para todas las páginas Web inteligentes, así como todos los archivos de origen en la carpeta.  
   
--   El archivo de solución para un proyecto Web se encuentra por separado desde el propio sitio Web. De forma predeterminada, los archivos de solución se encuentran en \Documents and Settings\\*suCuenta*documentos \My\\*\<Visual Studio ### >*\Projects\\ *YourWebSite*.  
+-   El archivo de solución para un proyecto Web se encuentra por separado desde el propio sitio Web. De forma predeterminada, los archivos de solución se encuentran en \Documents and Settings\\*suCuenta*documentos \My\\*\<Visual Studio ### >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     >  Si desea mantener el archivo de solución con el sitio Web, simplemente mueva allí y vuelva a abrirlo.  

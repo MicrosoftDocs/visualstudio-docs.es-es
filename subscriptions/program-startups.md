@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863656"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Suscripciones de Visual Studio ofrecidas a empresas emergentes
 Las empresas emergentes que reúnan los requisitos necesarios y que participen en el programa de Microsoft for Startups pueden ganar cinco [suscripciones de nube mensuales de Visual Studio Enterprise](https://www.visualstudio.com/vs/pricing/). Se trata de las mismas suscripciones que se ofrecen en el mercado, sin limitaciones ni restricciones especiales. Cada suscripción se debe asignar a un usuario final (que es el usuario con licencia) para que este pueda ejecutar Visual Studio y se le reconozca como suscriptor de Visual Studio Enterprise en VSTS.

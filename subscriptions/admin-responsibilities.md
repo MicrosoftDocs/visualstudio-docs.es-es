@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30863003"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, tiene la capacidad de administrar suscripciones para su organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.

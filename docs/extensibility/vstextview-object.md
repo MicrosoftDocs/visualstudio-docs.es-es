@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138732"
 ---
 # <a name="vstextview-object"></a>Objeto del objeto VSTextView
 La vista de texto es una ventana que permite a los usuarios ver y editar el texto Unicode del búfer de texto. En esencia, la vista es lo que hacen referencia mayoría de los usuarios como el editor. Dado que la vista se separa de búfer por varias capas de texto (ajuste de línea, esquematización de texto etc.), la vista no se garantiza que una representación exacta del texto en el búfer. Para obtener más información acerca de la vista de texto, consulte [obtener acceso a Text vista mediante la API heredado](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  

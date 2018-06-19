@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135618"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Cómo: proporcionar un contexto para los editores
 Para un editor, el contexto está activo sólo cuando el editor tiene el foco o tenía foco inmediatamente antes de que se ha movido el foco a una ventana de herramientas. Puede proporcionar el contexto para un editor haciendo lo siguiente:  

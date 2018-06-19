@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135953"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloreado de sintaxis en un servicio de lenguaje heredado
 Colores de sintaxis es una característica que hace que los diferentes elementos de un lenguaje de programación que se mostrará en un archivo de código fuente de diferentes colores y estilos. Para admitir esta característica, deberá suministrar un analizador o un escáner que puede identificar los tipos de elementos léxicos o tokens en el archivo. Muchos lenguajes distinguen palabras clave, delimitadores (por ejemplo, los paréntesis o llaves) y comentarios por ellos coloreado de maneras diferentes.  

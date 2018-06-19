@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135979"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Exponer tipos de diseñadores visuales
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe tener acceso a definiciones de clase y tipo en tiempo de diseño para mostrar un diseñador visual. Las clases se cargan desde un conjunto predefinido de ensamblados que incluyen el conjunto completo de dependencia del proyecto actual (referencias y sus dependencias). También puede ser necesario a los diseñadores visuales para tener acceso a clases y tipos que se definen en archivos generados por herramientas personalizadas.  

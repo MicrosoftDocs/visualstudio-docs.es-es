@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136543"
 ---
 # <a name="using-the-automation-model"></a>Utilizando el modelo de automatización
 Después de haber conectado el VSPackage a la automatización, puede obtener las propiedades y métodos mediante una llamada a la <xref:EnvDTE.DTEClass.GetObject%2A> método en la <xref:EnvDTE._DTE> objeto, pasando una cadena que representa el objeto que se va a recuperar.  

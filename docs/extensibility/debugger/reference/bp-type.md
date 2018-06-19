@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099231"
 ---
 # <a name="bptype"></a>BP_TYPE
 Especifica si el punto de interrupción está en una ubicación de código, que es una ubicación de datos o que es otro tipo de punto de interrupción.  

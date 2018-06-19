@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704738"
 ---
 # <a name="list-disassembly-command"></a>Mostrar desensamblador (Comando)
 Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139073"
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
 Permite que un paquete VSPackage tener acceso a un comando que se define en otro archivo de vsct. Por ejemplo, si el paquete de VS utiliza la norma **copia** comando, que se define mediante el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell, puede agregar el comando a un menú o barra de herramientas sin necesidad de volver a implementarlo.  

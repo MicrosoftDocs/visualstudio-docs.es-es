@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141677"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Uso del Administrador de texto para supervisar la configuración Global
 Si implementa un editor principal, debe supervisar los cambios realizados en la configuración global, ya que estos cambios pueden afectar a la instancia del editor. Puede realizar el seguimiento de los cambios de forma escuchar los eventos generados por el Administrador de texto. Por ejemplo, cuando se especifica una preferencia global para la apariencia o comportamiento de un componente en el editor de núcleo, por ejemplo, su objeto de datos del documento, el Administrador de texto almacena esta información y comunica a todos los clientes afectados.  

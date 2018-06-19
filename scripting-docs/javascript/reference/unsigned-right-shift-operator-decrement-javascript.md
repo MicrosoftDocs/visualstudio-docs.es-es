@@ -1,13 +1,13 @@
 ---
 title: Operador de desplazamiento a la derecha sin signo (&gt;&gt;&gt;) (JavaScript) | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '>>>'
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - unsigned right shift operator (>>>)
 - '>>> operator'
 ms.assetid: df48bdfc-8741-46ab-b681-449da57ac95c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641645"
 ---
 # <a name="unsigned-right-shift-operator-gtgtgt-javascript"></a>Operador de desplazamiento a la derecha sin signo (&gt;&gt;&gt;) (JavaScript)
 Desplaza hacia la derecha los bits de una expresión, sin mantener el signo.  

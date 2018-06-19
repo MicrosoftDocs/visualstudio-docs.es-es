@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141725"
 ---
 # <a name="supporting-multiple-document-views"></a>Admitir varias vistas del documento
 Puede proporcionar más de una vista de un documento mediante la creación de datos de documentos independientes y objetos de vista de documento para el editor. Algunos casos en que una vista de documento adicionales sería útil son:  

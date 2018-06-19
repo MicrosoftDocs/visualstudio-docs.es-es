@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140425"
 ---
 # <a name="when-to-create-project-types"></a>Cuándo se debe crear tipos de proyecto
 Crear un nuevo tipo de proyecto proporciona el punto de partida para personalizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para los usuarios. Sin embargo, crear un nuevo tipo de proyecto no es necesario para todos los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] las personalizaciones. Las instrucciones siguientes puede ayudarle a determinar si un nuevo tipo de proyecto es necesario para su escenario.  

@@ -1,13 +1,13 @@
 ---
 title: IActiveScriptParse32::AddScriptlet | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fcf11eb2-8e71-4cca-afda-a91791c243ff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 7b4ea62bf8afa4247fc7c4fdbea40c6b7c772661
@@ -15,6 +15,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724555"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
 Agrega un Subscript de código a la secuencia de comandos. Este método se usa en entornos donde el estado persistente de la secuencia de comandos es entrelazado con el documento de host y el host es responsable de la restauración de la secuencia de comandos, en lugar de mediante un `IPersist*` interfaz. Los ejemplos principales son lenguajes de scripting de HTML que permiten scriptlets de código incrustado en el documento HTML que se adjuntará a eventos intrínsecos (por ejemplo, ONCLICK="button1.text='Exit'").  

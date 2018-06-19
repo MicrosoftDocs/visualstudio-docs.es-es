@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465361"
 ---
 # <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
 Recupera una marca que especifica si el tipo de datos definido por el usuario tiene un constructor o destructor.  

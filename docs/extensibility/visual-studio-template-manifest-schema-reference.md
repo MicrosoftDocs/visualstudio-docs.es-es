@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142587"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referencia de esquema del manifiesto de plantilla de Visual Studio
 Este esquema describe el formato de los archivos de manifiesto (.vstman) de plantillas de Visual Studio generado para las plantillas de proyecto o un elemento de Visual Studio y describe la ubicación y otra información relevante acerca de la plantilla.  

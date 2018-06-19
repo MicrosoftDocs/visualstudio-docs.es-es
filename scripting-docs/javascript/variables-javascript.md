@@ -26,6 +26,7 @@ ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30307274"
 ---
 # <a name="variables-javascript"></a>Variables (JavaScript)
 En [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], una variable contiene un valor, por ejemplo, "hola" o 5. Cuando se usa la variable, se hace referencia a los datos que esta representa, por ejemplo `NumberOfDaysLeft = EndDate - TodaysDate`.  

@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Control de versiones en Visual Studio | VSTS y TFS
-description: "Guía de introducción al control de versiones en Visual Studio"
+description: Guía de introducción al control de versiones en Visual Studio
 keywords: VSTS, TFS, control de versiones
 author: steved0x
 ms.manager: douge
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795357"
 ---
 # <a name="version-control-in-visual-studio"></a>Control de versiones en Visual Studio
 

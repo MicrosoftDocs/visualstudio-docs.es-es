@@ -1,11 +1,11 @@
 ---
 title: IDispError::GetSource | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDispError.GetSource
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDispError::GetSource
 ms.assetid: 20def54c-a67c-4102-babf-6f0704e5fc5c
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727975"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 Devuelve el identificador de programación dependiente del idioma para la clase o la aplicación que ha provocado el error.  

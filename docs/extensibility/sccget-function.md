@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140657"
 ---
 # <a name="sccget-function"></a>SccGet (función)
 Esta función recupera una copia de uno o más archivos para ver y compilar pero no para su edición. En la mayoría de los sistemas, los archivos se etiquetan como de solo lectura.  

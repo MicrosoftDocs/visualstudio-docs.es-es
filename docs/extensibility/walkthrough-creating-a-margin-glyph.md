@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142635"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Tutorial: Crear un glifo de margen
 Puede personalizar la apariencia de los márgenes del editor mediante extensiones de editor personalizado. En este tutorial se coloca un glifo personalizado en el margen del indicador cada vez que aparece la palabra "todo" en un comentario de código.  

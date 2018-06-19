@@ -1,16 +1,18 @@
 ---
 title: IActiveScriptProfilerCallback::Initialize | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptProfilerCallback.Initialize
-apilocation: scrobj.dll
+apiname:
+- IActiveScriptProfilerCallback.Initialize
+apilocation:
+- scrobj.dll
 ms.assetid: a257111e-a50b-4962-9dd6-c893d40f6985
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724415"
 ---
 # <a name="iactivescriptprofilercallbackinitialize"></a>IActiveScriptProfilerCallback::Initialize
 Se llama para inicializar el objeto de generador de perfiles cuando se inicie la generación de perfiles en un motor de scripting.  

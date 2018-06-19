@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135827"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Compatibilidad con la ventana automático en un servicio de lenguaje heredado
 El **automático** ventana muestra expresiones como variables y parámetros que están en ámbito cuando se detenga el programa que se está depurando (ya sea debido a un punto de interrupción o una excepción). Las expresiones pueden incluir variables, locales o globales y los parámetros que se han cambiado en el ámbito local. El **automático** ventana también puede incluir creaciones de instancias de una clase, estructura o algún otro tipo. Todo lo que un evaluador de expresiones puede evaluar potencialmente se puede mostrar en el **automático** ventana.  

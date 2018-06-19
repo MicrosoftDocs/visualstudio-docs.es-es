@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136834"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Comprobar los subtipos de un proyecto en tiempo de ejecución
 Un VSPackage que depende de un subtipo de proyecto personalizado debe incluir lógica para buscar que para que puede generar un error si no está presente el subtipo de subtipo. El siguiente procedimiento muestra cómo comprobar la presencia de un subtipo especificado.  

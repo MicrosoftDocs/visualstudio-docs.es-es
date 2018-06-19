@@ -1,11 +1,11 @@
 ---
 title: IScriptEntry::SetText | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IScriptEntry.SetText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - ISetEntry::SetText
 ms.assetid: 4605481b-7707-43d1-ab78-a9207d0cf6fe
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24728995"
 ---
 # <a name="iscriptentrysettext"></a>IScriptEntry::SetText
 Establece el texto que se corresponde con un `IScriptEntry` bloque de scripts o el código fuente que se encuentra en un `IScriptScriptlet` controlador de eventos.  

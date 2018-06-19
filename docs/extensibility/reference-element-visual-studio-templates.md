@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136302"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference (Elemento, Plantillas de Visual Studio)
 Especifica la referencia de ensamblado para agregar cuando el elemento se agrega a un proyecto.  

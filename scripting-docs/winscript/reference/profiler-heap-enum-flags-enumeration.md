@@ -1,14 +1,14 @@
 ---
-title: "PROFILER_HEAP_ENUM_FLAGS (enumeración) | Documentos de Microsoft"
-ms.custom: 
+title: PROFILER_HEAP_ENUM_FLAGS (enumeración) | Documentos de Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 17936b7a-40d5-4774-b92b-b24ee391591e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734115"
 ---
 # <a name="profilerheapenumflags-enumeration"></a>PROFILER_HEAP_ENUM_FLAGS (Enumeración)
 Marcas que representan si se expone información adicional sobre un objeto de montón al que se apunta en una relación de objeto. Utilizado en el [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) método.  

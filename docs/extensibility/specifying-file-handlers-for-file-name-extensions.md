@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140692"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificar identificadores de archivos para las extensiones de nombre de archivo
 Hay varias maneras de determinar la aplicación que administra un archivo que tiene una extensión de archivo en particular. Los verbos OpenWithList y OpenWithProgids son dos formas de especificar identificadores de archivos en la entrada del registro para la extensión de archivo.  

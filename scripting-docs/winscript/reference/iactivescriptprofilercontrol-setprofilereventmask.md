@@ -1,16 +1,18 @@
 ---
 title: IActiveScriptProfilerControl::SetProfilerEventMask | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: IActiveScriptProfilerControl.SetProfilerEventMask
-apilocation: scrobj.dll
+apiname:
+- IActiveScriptProfilerControl.SetProfilerEventMask
+apilocation:
+- scrobj.dll
 ms.assetid: 207e192f-e12e-4fcb-b4d8-eaee50ecb86e
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724855"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
 Establece una máscara de bits de 4 bytes que especifica los tipos de eventos que debe activar el motor de scripting.  

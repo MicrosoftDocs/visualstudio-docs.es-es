@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135796"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad de CreatePkgDef
 Toma un archivo .dll para una extensión de Visual Studio como un parámetro y crea un archivo .pkgdef para acompañar la DLL. El archivo .pkgdef contiene toda la información que en caso contrario, se escribirán en el registro del sistema cuando se instala la extensión.  

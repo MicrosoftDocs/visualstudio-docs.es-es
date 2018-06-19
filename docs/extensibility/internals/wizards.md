@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138719"
 ---
 # <a name="wizards"></a>Asistentes
 Después de crear un asistente, normalmente desea agregarlo a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrar el entorno de desarrollo (IDE) de modo que otros puedan utilizarla. A continuación, aparece el Asistente de agregado en la **Agregar nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo. Para ver el **Agregar nuevo proyecto** o **Agregar nuevo elemento** diálogo cuadros, haga clic en una solución abierta en **el Explorador de soluciones**, seleccione **agregar**, y a continuación, haga clic en **nuevo proyecto** o **nuevo elemento**.  

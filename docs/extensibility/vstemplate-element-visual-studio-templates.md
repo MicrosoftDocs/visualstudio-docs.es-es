@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141407"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate (Elemento, Plantillas de Visual Studio)
 Contiene todos los metadatos acerca de la plantilla de proyecto, una plantilla de elemento o un kit de inicio.  

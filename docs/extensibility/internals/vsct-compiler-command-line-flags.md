@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139778"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Marcadores de línea de comandos del compilador VSCT
 El compilador de la tabla de comandos de Visual Studio (VSCT) proporciona modificadores de línea de comandos para asegurarse de compilación correcta de los archivos de vsct.  

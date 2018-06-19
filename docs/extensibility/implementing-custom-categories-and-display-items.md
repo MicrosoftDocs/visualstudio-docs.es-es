@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134888"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementación de categorías personalizadas y mostrar los elementos
 Un VSPackage puede proporcionar un control de las fuentes y colores de texto que contiene a la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) a través de categorías personalizadas y mostrar los elementos.
@@ -47,7 +48,7 @@ Un VSPackage puede proporcionar un control de las fuentes y colores de texto que
 
 ## <a name="to-create-or-identify-categories"></a>Para crear o identificar categorías
 
--   Construir un tipo especial de entrada de registro de la categoría en [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >*\FontAndColors\\`<Category>`]
+-   Construir un tipo especial de entrada de registro de la categoría en [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >* \FontAndColors\\`<Category>`]
 
      *\<Categoría >* es el nombre no traducido de la categoría.
 
@@ -62,7 +63,7 @@ Un VSPackage puede proporcionar un control de las fuentes y colores de texto que
 
 ## <a name="to-create-or-identify-groups"></a>Para crear o identificar los grupos
 
--   Construir un tipo especial de entrada de registro de la categoría en [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >*\FontAndColors\\  *\<grupo >*]
+-   Construir un tipo especial de entrada de registro de la categoría en [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >* \FontAndColors\\  *\<grupo >*]
 
      *\<grupo >* es el nombre no traducido del grupo.
 

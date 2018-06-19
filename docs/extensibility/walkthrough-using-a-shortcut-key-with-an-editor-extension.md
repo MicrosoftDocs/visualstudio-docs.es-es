@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704030"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Tutorial: Usar una tecla de método abreviado con una extensión del Editor
 Puede responder a teclas de método abreviado de la extensión del editor. En el siguiente tutorial muestra cómo agregar un elemento de gráfico de la vista a una vista de texto mediante una tecla de método abreviado. En este tutorial se basa en la plantilla del editor de elementos gráficos de área de visualización y permite agregar el elemento de gráfico utilizando el carácter +.  

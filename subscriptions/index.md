@@ -15,6 +15,7 @@ ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29795323"
 ---
 # <a name="visual-studio-subscriptions"></a>Suscripciones de Visual Studio
 Las suscripciones de Visual Studio son un conjunto de recursos completo para que pueda crear, implementar y administrar aplicaciones importantes en sus plataformas y dispositivos preferidos, como Windows, iOS, Android y Linux.  Entre las ventajas de las suscripciones, se incluyen el acceso a herramientas de desarrollo, servicios en la nube, software, aprendizaje y soporte técnico para sus necesidades de desarrollo y pruebas.

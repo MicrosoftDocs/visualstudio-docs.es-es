@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148631"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Tutorial: Mostrar ayuda para las firmas
 Ayuda para las firmas (también conocido como *información de parámetros*) muestra la firma de un método en una información sobre herramientas cuando un usuario escribe el carácter de inicio de lista de parámetros (normalmente un paréntesis de apertura). Como se escriben un separador de parámetros (normalmente una coma) y un parámetro, la información sobre herramientas se actualiza para mostrar el siguiente parámetro en negrita. Puede definir la firma de ayuda en el contexto de un servicio de lenguaje, puede definir su propio tipo de contenido y la extensión de nombre de archivo y mostrar la Ayuda de firma para ese tipo o puede ver la Ayuda de firma para un tipo de contenido existente (por ejemplo, "text"). Este tutorial muestra cómo ver la Ayuda de firma para el tipo de contenido "text".  

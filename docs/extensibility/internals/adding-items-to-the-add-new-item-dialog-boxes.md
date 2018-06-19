@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135071"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Agregar elementos a la para agregar elementos nuevos cuadros de diálogo
 El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuadro de diálogo con las claves del registro. Como se muestra en las siguientes entradas del registro, la sección AddItemTemplates contiene la ruta de acceso y el nombre del directorio de los elementos que están disponibles en la **Agregar nuevo elemento** se colocan el cuadro de diálogo.  

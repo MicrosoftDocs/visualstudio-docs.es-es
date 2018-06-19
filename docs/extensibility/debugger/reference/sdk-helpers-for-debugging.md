@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135927"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Aplicaciones auxiliares SDK para la depuración
 Estas funciones y declaraciones son funciones auxiliares globales para la implementación de motores de depuración, los evaluadores de expresión y los proveedores de símbolos en C++.  
@@ -420,7 +421,7 @@ HRESULT EnumMetricSections(
 |*[excepción]*|Un nombre para una excepción: por ejemplo, **_com_error** o **interrupción de Control**. Estos nombres también se usan para identificar una excepción determinada al usuario.|  
   
 ## <a name="requirements"></a>Requisitos  
- Estos archivos se encuentran en el [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] directorio de instalación de SDK (de forma predeterminada, *[unidad]*\Program SDK de Visual Studio 2010\\).  
+ Estos archivos se encuentran en el [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] directorio de instalación de SDK (de forma predeterminada, *[unidad]* \Program SDK de Visual Studio 2010\\).  
   
  Encabezado: includes\dbgmetric.h  
   

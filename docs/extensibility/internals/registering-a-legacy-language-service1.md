@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135719"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar un servicio de lenguaje heredado
 En managed package framework (MPF), el servicio de lenguaje es ofrecido por un paquete VSPackage (vea [VSPackages](../../extensibility/internals/vspackages.md)) y se registra con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mediante la adición de entradas y claves del registro. Este proceso de registro se realiza parte durante la instalación y en parte en tiempo de ejecución.  

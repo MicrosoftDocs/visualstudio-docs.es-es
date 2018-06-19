@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140234"
 ---
 # <a name="test-area-6-delete"></a>Probar el área 6: eliminar
 Esta área de complemento de prueba de control de código fuente trata las acciones de eliminación.  

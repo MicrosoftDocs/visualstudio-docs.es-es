@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136315"
 ---
 # <a name="registering-file-name-extensions-for-side-by-side-deployments"></a>Registrar las extensiones de nombre de archivo para las implementaciones en paralelo
 Para paquetes VSPackage implementado en un entorno en paralelo, debe registrar las extensiones de nombre de archivo para asociar los archivos de la versión correcta de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. A menos que utilice una extensión de nombre de archivo específico de la versión, el registro permite a los usuarios abrir el proyecto y archivos de proyecto elemento en la versión adecuada de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  

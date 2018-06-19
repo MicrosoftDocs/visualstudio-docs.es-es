@@ -1,16 +1,18 @@
 ---
 title: ISetNextStatement::SetNextStatement | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: ISetNextStatement.SetNextStatement
-apilocation: scrobj.dll
+apiname:
+- ISetNextStatement.SetNextStatement
+apilocation:
+- scrobj.dll
 ms.assetid: c5534f3b-39a5-4466-b8fc-69b717c6eee9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733885"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
 Este método actualiza el contexto del código siguiente que se puede ejecutar el intérprete de secuencias de comandos.  

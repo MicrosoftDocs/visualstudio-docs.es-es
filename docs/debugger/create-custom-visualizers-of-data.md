@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464841"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Crear los visualizadores personalizados de datos
  Los visualizadores son componentes de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaz de usuario del depurador. A *visualizador* crea un cuadro de diálogo u otra interfaz para mostrar una variable o un objeto de forma que se ajuste a su tipo de datos. Por ejemplo, un visualizador HTML interpreta una cadena HTML y muestra el resultado tal como aparecería en una ventana del explorador; un visualizador de mapa de bits interpreta una estructura de mapa de bits y muestra el gráfico que representa. Algunos visualizadores permiten modificar y ver los datos.

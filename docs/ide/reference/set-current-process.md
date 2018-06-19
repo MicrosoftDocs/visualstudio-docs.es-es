@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33705091"
 ---
 # <a name="set-current-process"></a>Establecer el proceso actual
 Establece el proceso especificado como el proceso activo en el depurador.

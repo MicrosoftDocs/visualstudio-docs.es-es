@@ -1,11 +1,11 @@
 ---
 title: IDebugHelper::CreatePropertyBrowserEx | Documentos de Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugHelper.CreatePropertyBrowserEx
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugHelper::CreatePropertyBrowserEx
 ms.assetid: 87ad322f-09da-4ce8-bb68-0b0bbeec645b
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727575"
 ---
 # <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
 Devuelve un explorador de propiedades que contiene una variante y permite la conversión personalizada de valores de tipo VARIANT o tipos VARTYPE a cadenas.  

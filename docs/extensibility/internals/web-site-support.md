@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139856"
 ---
 # <a name="web-site-support"></a>Compatibilidad con sitios Web
 Un sistema de proyectos de sitio Web es un sistema de proyecto que crea proyectos Web. Proyectos Web a su vez crean aplicaciones Web. Un proyecto de sitio Web genera un archivo ejecutable para cada página Web que está asociado el código. Archivos ejecutables adicionales se generan a partir de los archivos de código fuente en la carpeta.  

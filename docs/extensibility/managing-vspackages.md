@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140139"
 ---
 # <a name="managing-vspackages"></a>Administrar paquetes VSPackage
 En la mayoría de los casos no tiene que preocuparse sobre cómo administrar paquetes VSPackage, ya que las plantillas de proyecto y elemento de registrarán y cargan el paquete automáticamente. Sin embargo, en algunas circunstancias necesite obtener una explicación más detallada para administrar el paquete.  
