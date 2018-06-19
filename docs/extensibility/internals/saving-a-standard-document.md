@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132794"
 ---
 # <a name="saving-a-standard-document"></a>Guardar un documento estándar
 El entorno controla el guardar, guardar como y guardar todos los comandos. Cuando un usuario selecciona **guardar**, **Guardar como**, o **guardar todo** desde el **archivo** menú o se cierra la solución, lo que produce una  **Guardar todo**, se produce el siguiente proceso.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137607"
 ---
 # <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
 El servicio de lenguaje implementa el Administrador de ventanas de código y es responsable de administrar elementos de gráficos (por ejemplo, la barra de la lista desplegable). Para obtener más información, consulte [personalizar Windows de código mediante la API heredado](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  

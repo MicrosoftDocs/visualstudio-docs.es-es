@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134666"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Compatibilidad con la barra de navegación en un servicio de lenguaje heredado
 La barra de navegación en la parte superior de la vista del editor muestra los tipos y miembros en el archivo. Los tipos se muestran en la lista desplegable izquierda y los miembros se muestran en el derecho de la lista desplegable. Cuando el usuario selecciona un tipo, el símbolo de intercalación se coloca en la primera línea del tipo. Cuando el usuario selecciona un miembro, el símbolo de intercalación se coloca en la definición del miembro. Los cuadros de lista desplegable se actualizan para reflejar la ubicación actual del símbolo de intercalación.  

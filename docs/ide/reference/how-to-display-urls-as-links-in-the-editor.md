@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448057"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Cómo: Mostrar las direcciones URL como vínculos en el editor
 Puede elegir que el editor de código trate los localizadores uniformes de recursos (direcciones URL) en el código como vínculos activos. Cuando use esta característica, las direcciones URL:

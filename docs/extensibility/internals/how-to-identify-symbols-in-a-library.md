@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136134"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Cómo: identificar símbolos en una biblioteca
 Herramientas de exploración de símbolo de mostrar una vista jerárquica de los símbolos. Los símbolos representan espacios de nombres, objetos, clases, miembros de clase y otros elementos del lenguaje.  

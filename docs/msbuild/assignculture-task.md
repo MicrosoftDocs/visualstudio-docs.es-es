@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578723"
 ---
 # <a name="assignculture-task"></a>AssignCulture (Tarea)
 Esta tarea acepta una lista de elementos que puede contener una cadena de identificador de referencia cultural .NET válida como parte del nombre de archivo y genera elementos que tengan metadatos con el nombre `Culture` que contiene el correspondiente identificador de referencia cultural. Por ejemplo, el nombre de archivo Form1.fr-fr.resx tiene un indicador de referencia cultural "fr-fr" incluido, por lo que esta tarea genera un elemento que tiene el mismo nombre de archivo con los metadatos de `Culture` igual a `fr-fr`. La tarea también genera una lista de nombres de archivo con la referencia cultural que se quitó del nombre de archivo.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548303"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Cómo: ejecutar una transformación XSLT desde el Editor XML
 

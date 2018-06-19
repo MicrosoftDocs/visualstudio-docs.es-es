@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478296"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Vista subprocesos y tareas mediante la ventana Pilas paralelas
 El **pilas paralelas** ventana resulta útil cuando se depuran aplicaciones multithreading. Su **vista de subprocesos** muestra información de la pila de llamadas de todos los subprocesos en la aplicación. Permite navegar entre los subprocesos y marcos de pila de esos subprocesos. En código administrado, el **tareas vista** muestra las pilas de llamadas <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. En código nativo, el **tareas vista** muestra las pilas de llamadas [grupos de tareas](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algoritmos paralelos](/cpp/parallel/concrt/parallel-algorithms), [agentes asincrónicos](/cpp/parallel/concrt/asynchronous-agents)y [tareas ligeras](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  

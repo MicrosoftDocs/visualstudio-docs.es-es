@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137936"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (Plantillas de Visual Studio)
 Si `false`, especifica que la plantilla solo se mostrarán en especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268144"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar con el depurador Just en Visual Studio
 Depuración Just-In-Time inicia Visual Studio automáticamente cuando se produce una excepción o un bloqueo en una aplicación que se ejecuta fuera de Visual Studio. Esto le permite probar la aplicación cuando no se está ejecutando Visual Studio y empiece a depurar con Visual Studio cuando se produce un problema.

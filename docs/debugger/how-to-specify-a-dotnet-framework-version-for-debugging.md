@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476678"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Cómo: Especificar una versión de .NET Framework para la depuración
 El depurador de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] puede depurar versiones anteriores de Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] así como la versión actual. Si inicia una aplicación desde Visual Studio, el depurador siempre puede identificar la versión correcta de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para la aplicación que está depurando. Si la aplicación ya se está ejecutando y usa **adjuntar a**, el depurador no podrá siempre identificar una versión anterior de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Si esto ocurre, aparecerá un mensaje de error que indica,  

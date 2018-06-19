@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133285"
 ---
 # <a name="dynamically-adding-menu-items"></a>Agregar dinámicamente elementos de menú
 Puede agregar elementos de menú en tiempo de ejecución mediante la especificación de la `DynamicItemStart` comando marca en una definición de botón de marcador de posición en el archivo de tabla de comandos (vsct) de Visual Studio, a continuación, definir (en código), el número de menú de elementos para mostrar y controlar los comandos. Cuando se carga el paquete VSPackage, el marcador de posición se reemplaza con los elementos de menú dinámico.  

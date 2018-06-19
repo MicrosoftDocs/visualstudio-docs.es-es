@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472947"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Cómo: Salir de código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas
 Si el código tiene marcos nativos que no son visibles en el **pila de llamadas** ventana, salir de código administrado puede generar resultados inesperados. Como alternativa, puede usar un punto de interrupción en lugar de **paso a paso fuera**.  

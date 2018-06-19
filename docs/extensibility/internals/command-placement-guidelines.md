@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134465"
 ---
 # <a name="command-placement-guidelines"></a>Instrucciones de selección de ubicación de comando
 Prácticas recomendadas para la colocación de comandos en el entorno de desarrollo integrado (IDE) de Visual Studio varían según el tamaño del conjunto de comandos. Comandos se definen y se sitúa de acuerdo con la información de archivos de vsct.  
