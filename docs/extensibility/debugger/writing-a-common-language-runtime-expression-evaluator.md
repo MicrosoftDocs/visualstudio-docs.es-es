@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135855"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Escribir un evaluador de expresiones de tiempo de ejecución de lenguaje común
 > [!IMPORTANT]

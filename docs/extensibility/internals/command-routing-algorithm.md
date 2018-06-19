@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131505"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de enrutamiento de comandos
 En Visual Studio los comandos se controlan mediante un número de diferentes componentes. Comandos se enrutan desde el contexto más interno, que se basa en la selección actual, en el contexto más externo (también conocido como global). Para obtener más información, consulte [disponibilidad](../../extensibility/internals/command-availability.md).  

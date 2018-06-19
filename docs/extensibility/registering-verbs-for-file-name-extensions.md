@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138111"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrar los verbos para las extensiones de nombre de archivo
 La asociación de una extensión de nombre de archivo con una aplicación normalmente tiene una acción preferida que se produce cuando un usuario hace doble clic en un archivo. Esta preferencia acción está vinculada a un verbo, por ejemplo abierto, de que se corresponde con la acción.  

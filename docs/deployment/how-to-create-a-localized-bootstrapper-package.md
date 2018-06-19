@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566022"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Cómo: Crear un paquete de arranque localizado
 Después de crear un paquete de arranque, puede crear versiones localizadas del paquete del programa previo mediante la creación de más de dos archivos para cada configuración regional: archivo (por ejemplo, un eula.rtf) y un manifiesto del paquete (package.xml) de los términos de una licencia de software.  

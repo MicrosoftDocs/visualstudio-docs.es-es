@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132726"
 ---
 # <a name="solution-configuration"></a>Configuración de soluciones
 Configuraciones de soluciones almacenan propiedades de nivel de solución. Estos flujos dirigen el comportamiento de la **iniciar** tecla (F5) y **generar** comandos. De forma predeterminada, estos comandos generarán e iniciar la configuración de depuración. Ambos comandos se ejecutan en el contexto de una configuración de soluciones. Esto significa que el usuario puede esperar F5 para iniciar y cualquier la solución activa se configura a través de la configuración de compilación. El entorno está diseñado para optimizar para soluciones en lugar de proyectos en cuanto a la generación y ejecución.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128951"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>Cómo: implementar la buscar y reemplazar el mecanismo de
 Visual Studio proporciona dos maneras de implementar la búsqueda y reemplazo. Una manera es pasar una imagen de texto en el shell y que controle la búsqueda, el resaltado y reemplazar texto. Esto permite a los usuarios especificar varios intervalos de texto. O bien, el VSPackage puede controlar esta funcionalidad. En ambos casos debe notificar el shell sobre el destino actual y los destinos para todos los documentos abiertos.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130549"
 ---
 # <a name="document-lock-holder-management"></a>Administración de propietario de bloqueo de documento
 La tabla de documento ejecutando (RDT) mantiene un recuento de los documentos abiertos y los bloqueos de edición tienen. Es posible colocar un bloqueo de edición en un documento en el RDT cuando se edita mediante programación en segundo plano sin que el usuario ve un documento abierto en una ventana de documento. Esta funcionalidad se utiliza a menudo los diseñadores que modifique varios archivos a través de una interfaz gráfica de usuario.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134144"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar un servicio de lenguaje heredado
 Las secciones siguientes proporcionan listas de entradas del registro para el idioma diversas opciones de servicio disponibles en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -68,7 +69,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |nombre|Tipo|Intervalo|Descripción|  
 |----------|----------|-----------|-----------------|  
-|(Predeterminado)|REG_SZ|texto|El valor predeterminado se puede utilizar para documentar el nombre del idioma. El nombre de esta clave es un GUID de un evaluador de expresiones que tiene una entrada correspondiente en  *\<VS Reg raíz >*\AD7Metrics\Expression evaluador.|  
+|(Predeterminado)|REG_SZ|texto|El valor predeterminado se puede utilizar para documentar el nombre del idioma. El nombre de esta clave es un GUID de un evaluador de expresiones que tiene una entrada correspondiente en  *\<VS Reg raíz >* \AD7Metrics\Expression evaluador.|  
   
 ### <a name="example"></a>Ejemplo  
   
@@ -159,7 +160,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```  
   
 ## <a name="registry-entries-for-logical-view-options"></a>Entradas del registro de opciones de vista lógica  
- El *VS Reg raíz*\Editors\\*Editor GUI >*\LogicalViews clave puede contener los siguientes valores.  
+ El *VS Reg raíz*\Editors\\*Editor GUI >* \LogicalViews clave puede contener los siguientes valores.  
   
 |nombre|Tipo|Intervalo|Descripción|  
 |----------|----------|-----------|-----------------|  

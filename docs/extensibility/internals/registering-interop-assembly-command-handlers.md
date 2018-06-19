@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131915"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrar los controladores de comando de ensamblado de interoperabilidad
 Debe registrar un VSPackage con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que el entorno de desarrollo integrado (IDE) enruta sus comandos correctamente.  
@@ -30,7 +31,7 @@ Debe registrar un VSPackage con [!INCLUDE[vsprvs](../../code-quality/includes/vs
  [Referencia de formato de tabla de comandos](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) recursos se encuentran en archivos DLL de interfaz de usuario de satélite no administrada.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registro del controlador de comando de un paquete VSPackage  
- Un VSPackage que actúa como un controlador para la interfaz de usuario (UI)-basada en comandos requiere una entrada del registro con el mismo nombre que el VSPackage `GUID`. Esta entrada del registro especifica la ubicación del archivo de recursos de interfaz de usuario de VSPackage y el recurso de menú dentro de ese archivo. La entrada del registro en sí se encuentra en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<versión >*\Menus, donde  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por ejemplo 9.0.  
+ Un VSPackage que actúa como un controlador para la interfaz de usuario (UI)-basada en comandos requiere una entrada del registro con el mismo nombre que el VSPackage `GUID`. Esta entrada del registro especifica la ubicación del archivo de recursos de interfaz de usuario de VSPackage y el recurso de menú dentro de ese archivo. La entrada del registro en sí se encuentra en HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<versión >* \Menus, donde  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por ejemplo 9.0.  
   
 > [!NOTE]
 >  La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede ser invalidado con una alternativa raíz cuando el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell se inicializa. Para obtener más información acerca de la ruta de acceso raíz, consulte [instalar VSPackages con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  

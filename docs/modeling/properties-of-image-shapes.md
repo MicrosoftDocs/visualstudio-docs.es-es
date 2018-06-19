@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952633"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
 Puede usar formas de imagen para especificar cómo aparecen las clases de dominio en un diseñador generado. Define una forma de imagen, estableciendo el `Image` propiedad de la clase a un archivo de imagen predefinida. Se admiten los siguientes formatos:

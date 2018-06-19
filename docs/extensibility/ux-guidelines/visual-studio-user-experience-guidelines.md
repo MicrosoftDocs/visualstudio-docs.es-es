@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139869"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Instrucciones para la experiencia de usuario de Visual Studio
 Las instrucciones para la experiencia de usuario de Visual Studio están diseñados para quienes nuevas características de diseño para Visual Studio. Estas instrucciones contienen información sobre los modelos de usuario común y patrones de interacción para que los diseñadores de nuevas interfaces de usuario (UI) pueden crear experiencias de usuario que están perfecta y coherente en el entorno de desarrollo.  

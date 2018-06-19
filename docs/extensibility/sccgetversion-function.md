@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136450"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion (función)
 Esta función obtiene el número de versión de la API de complemento de Control de origen compatible con el complemento de control de código fuente.  

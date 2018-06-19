@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131152"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Cómo: obtener acceso a las fuentes integradas y la combinación de colores
 El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fuentes y colores que está asociado a la ventana del editor. Puede tener acceso a este esquema a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.
@@ -38,7 +39,7 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
 
 1.  Crear un GUID arbitrario.
 
-     Este GUID se utiliza para identificar de forma exclusiva una categoría**.** Esta categoría reutiliza la especificación de colores y fuentes de forma predeterminada del IDE.
+     Este GUID se utiliza para identificar de forma exclusiva una categoría **.** Esta categoría reutiliza la especificación de colores y fuentes de forma predeterminada del IDE.
 
     > [!NOTE]
     >  Cuando se recuperan datos de fuente y color con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o de otras interfaces, VSPackages usan este GUID para hacer referencia a información integrado.
@@ -51,7 +52,7 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
 
 1.  Construir un tipo especial de entrada de registro de la categoría en la siguiente ubicación:
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >*\FontAndColors\\*\<categoría >*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >* \FontAndColors\\*\<categoría >*]
 
      *\<Categoría >* es el nombre no traducido de la categoría.
 

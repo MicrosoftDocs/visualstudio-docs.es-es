@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581037"
 ---
 # <a name="resource-contention-data-views"></a>Vistas de datos de contención de recursos
 Esta sección contiene información de referencia sobre las vistas y los informes de archivos de datos del generador de perfiles que contienen datos de generación de perfiles de contención de subprocesos.  

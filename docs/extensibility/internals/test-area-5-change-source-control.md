@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134368"
 ---
 # <a name="test-area-5-change-source-control"></a>Zona de ensayo 5: Control de código fuente de cambio
 Esta área de complemento de prueba de control de código fuente trata cambiar el control de código fuente a través de la **cambiar Control de código fuente** comando.  

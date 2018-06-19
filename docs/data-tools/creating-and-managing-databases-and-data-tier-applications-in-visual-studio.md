@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31921545"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Proyectos de base de datos y aplicaciones de capa de datos en Visual Studio
 Puede usar proyectos de base de datos para crear nuevas bases de datos nuevas aplicaciones de capa de datos (DAC) y para actualizar bases de datos existentes y las aplicaciones de capa de datos. Proyectos de base de datos y los proyectos DAC permiten aplicar técnicas de administración de proyecto y de control de versión para los trabajos de desarrollo de base de datos de la misma manera que se aplican dichas técnicas al código administrado o nativo. Puede ayudar a su equipo de desarrollo administrar los cambios en las bases de datos y servidores de base de datos mediante la creación de un *proyecto DAC*, *proyecto de base de datos*, o un *proyecto de servidor* y escribirlos en el control de versiones. Los miembros del equipo, a continuación, pueden desproteger los archivos para realizar, compilar y probar los cambios en un *entorno de desarrollo aislado*, o espacio aislado, antes de compartirlos con el equipo. Para ayudar a garantizar la calidad del código, el equipo puede finalizar y probar todos los cambios para una versión concreta de la base de datos en un entorno de ensayo antes de implementar los cambios en producción.

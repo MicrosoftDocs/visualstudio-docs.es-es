@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34476719"
 ---
 # <a name="xml-schema-designer-workspace"></a>Área de trabajo del Diseñador de esquemas XML
 

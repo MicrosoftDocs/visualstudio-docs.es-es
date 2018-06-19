@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134413"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Cuando enlaza un punto de interrupción, o se convierte en independiente
 Cuando no se puede enlazar a un punto de interrupción en el momento en que se realiza una llamada a la [IDebugPendingBreakpoint2::CanBind ](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) /método siguiente, el enlace de tiempo y crear la hora del punto de interrupción son diferentes.  

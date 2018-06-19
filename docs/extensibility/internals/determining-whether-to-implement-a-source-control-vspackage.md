@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128882"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Determinar si se debe implementar un VSPackage de Control de código fuente
 Esta sección explican las opciones de los complementos de control de código fuente y el control de código fuente VSPackages para extender el control de código fuente soluciones y proporciona instrucciones generales acerca de cómo elegir una ruta de acceso de integración adecuado.  

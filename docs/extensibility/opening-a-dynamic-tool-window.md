@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138293"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Abra una ventana de herramientas dinámicas
 Las ventanas de herramientas normalmente se abren desde un comando en un menú o un método abreviado de teclado equivalente. En ocasiones, sin embargo, puede que tenga una ventana de herramientas que se abre cada vez que se aplica un contexto específico de la interfaz de usuario y se cierra cuando el contexto de la interfaz de usuario ya no es aplicable. Estos tipos de ventanas de herramientas se denominan *dinámica* o *visibles automáticamente*.  

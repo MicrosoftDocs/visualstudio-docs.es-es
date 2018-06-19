@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131599"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introducción al servicio de lenguaje y las extensiones de Editor
 Puede utilizar extensiones de editor para agregar características del servicio de lenguaje como la esquematización, coincidencia de llaves, IntelliSense y las bombillas a su propio lenguaje de programación o a cualquier tipo de contenido. También puede personalizar la apariencia y el comportamiento del editor de Visual Studio, por ejemplo texto colorear, márgenes, elementos gráficos y otros elementos visuales. También puede definir su propio tipo de contenido y especificar la apariencia y el comportamiento de las vistas de texto en el que aparece el contenido.  
@@ -66,7 +67,7 @@ Puede utilizar extensiones de editor para agregar características del servicio 
 ## <a name="running-extensions-in-the-experimental-instance"></a>Ejecuta las extensiones en la instancia Experimental  
  Puede aislar su versión de trabajo de Visual Studio mientras desarrolla una extensión mediante la implementación en la siguiente carpeta experimental (en Windows Vista y Windows 7):  
   
- *% LOCALAPPDATA %*\VisualStudio\10.0Exp\Extensions\\*empresa*\\*ExtensionID*  
+ *% LOCALAPPDATA %* \VisualStudio\10.0Exp\Extensions\\*empresa*\\*ExtensionID*  
   
  donde *% LOCALAPPDATA %* es el nombre del usuario ha iniciado sesión, *empresa* es el nombre de la compañía que posee la extensión y *ExtensionID* es el identificador de la extensión.  
   

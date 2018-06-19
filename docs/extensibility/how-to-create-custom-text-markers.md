@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132278"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Cómo: crear marcadores de texto personalizado
 Si desea crear un marcador de texto personalizado para enfatizar u organizar el código, debe realizar los pasos siguientes:  
@@ -34,9 +35,9 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
 1.  Cree una entrada del registro de la manera siguiente:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >*\Text Editor\External marcadores\\*\<MarkerGUID >*  
+     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* \Text Editor\External marcadores\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >*es un `GUID` usado para identificar el marcador que se va a agregar  
+     *\<MarkerGUID >* es un `GUID` usado para identificar el marcador que se va a agregar  
   
      *\<Versión >* es la versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], por ejemplo 8.0  
   
@@ -45,7 +46,7 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
     > [!NOTE]
     >  La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede ser invalidado con una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Crear cuatro valores en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >*\Text Editor\External marcadores\\*\<MarkerGUID >*  
+2.  Crear cuatro valores en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* \Text Editor\External marcadores\\*\<MarkerGUID >*  
   
     -   (Predeterminado)  
   

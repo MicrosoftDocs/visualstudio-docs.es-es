@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129646"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminación de ~ SAK archivos
 En origen Control complemento API 1.2, el ~ archivos SAK se reemplazaron por marcadores de capacidad y nuevas funciones que detectan si un complemento de control de origen es compatible con el archivo MSSCCPRJ y desprotecciones compartidas.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128778"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Cómo: suprimir las notificaciones de cambio de archivo
 Cuando ha cambiado el archivo físico que representa el búfer de texto, aparece un cuadro de diálogo con el mensaje **¿desea guardar los cambios en los siguientes elementos?** Esto se conoce como la notificación de cambio de archivo. Si muchos cambios van a estar en el archivo, sin embargo, este cuadro de diálogo con una y otra vez puede volverse rápidamente molesto.  

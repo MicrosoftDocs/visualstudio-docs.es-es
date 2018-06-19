@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473282"
 ---
 # <a name="how-to-display-message-properties"></a>Cómo: Mostrar las propiedades de los mensajes
 Para obtener más información acerca de un mensaje que aparece en [vista mensajes](../debugger/messages-view.md), use la [cuadro de diálogo de propiedades de mensaje](../debugger/message-properties-dialog-box.md).  

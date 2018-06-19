@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704907"
 ---
 # <a name="list-registers-command"></a>Mostrar registros (Comando)
 Muestra el valor de los registros seleccionados y permite modificar la lista de registros que se van a mostrar.

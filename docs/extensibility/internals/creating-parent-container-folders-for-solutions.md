@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132566"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>La creación de carpetas de contenedor primario para soluciones
 En la API de complemento de Control de origen de la versión 1.2, un usuario puede especificar un destino de control de código fuente de raíz única para todos los proyectos Web dentro de la solución. Esta raíz solo se llama a una raíz de unificado Super (SUR).  

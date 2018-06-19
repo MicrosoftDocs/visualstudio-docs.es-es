@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131625"
 ---
 # <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
 El **propiedades** ventana se usa para mostrar las propiedades de objetos seleccionados en los dos tipos principales de windows disponibles en la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Estos dos tipos de windows son:  

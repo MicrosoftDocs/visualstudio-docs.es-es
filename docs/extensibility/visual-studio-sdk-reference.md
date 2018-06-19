@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146850"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referencia SDK de Visual Studio
 Esta sección contiene información sobre los espacios de nombres de Visual Studio, los espacios de nombres relacionados y otras áreas de interés para los desarrolladores que usan el SDK de Visual Studio.  

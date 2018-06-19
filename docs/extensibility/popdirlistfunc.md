@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142191"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Se trata de una función de devolución de llamada dada a la [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) función para actualizar una recopilación de directorios y (opcionalmente) en los nombres de archivo para averiguar lo que están bajo control de código fuente.  

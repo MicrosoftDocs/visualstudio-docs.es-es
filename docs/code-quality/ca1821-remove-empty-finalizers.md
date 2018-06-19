@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31915237"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Quitar los finalizadores vacíos
 |||

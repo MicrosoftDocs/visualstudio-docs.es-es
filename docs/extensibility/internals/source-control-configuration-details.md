@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134131"
 ---
 # <a name="source-control-configuration-details"></a>Detalles de configuración de Control de código fuente
 Para implementar el control de código fuente, debe configurar correctamente un sistema de proyectos o un editor para hacer lo siguiente:

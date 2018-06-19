@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459680"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 Recupera una marca que indica que esta información de línea indica el principio de una instrucción, en lugar de una expresión, en el código fuente del programa.  

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134681"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y el servicio de imágenes
 Esta guía contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imagen que se introdujo en Visual Studio 2015.  
@@ -165,7 +166,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 |-|-|  
 |**Attribute**|**Definición**|  
 |URI|[Required] Un URI que define dónde se puede cargar la imagen desde. Puede ser uno de los siguientes:<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) utilizando la aplicación: / / / entidad<br />-Una referencia de recurso de componente absoluta<br />-Una ruta de acceso a un archivo que contiene un recurso nativo|  
-|Fondo|[Opcional] Indica qué tipo de segundo plano que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> *Luz:* el origen se puede usar en un fondo claro.<br /><br /> *Oscuro:*el origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* el origen se puede usar en cualquier fondo en modo de contraste alto.<br /><br /> *HighContrastLight:* el origen se puede usar en un fondo claro en el modo de contraste alto.<br /><br /> *HighContrastDark:* el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen se puede usar en cualquier fondo.<br /><br /> Si el fondo es *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, nunca se invierten los colores del código fuente. Si se omite o se establece en segundo plano *HighContrast*, la inversión de colores del código fuente se controla mediante la imagen **AllowColorInversion** atributo.|  
+|Fondo|[Opcional] Indica qué tipo de segundo plano que el origen está pensado para usarse.<br /><br /> Puede ser uno de los siguientes:<br /><br /> *Luz:* el origen se puede usar en un fondo claro.<br /><br /> *Oscuro:* el origen se puede usar en un fondo oscuro.<br /><br /> *HighContrast:* el origen se puede usar en cualquier fondo en modo de contraste alto.<br /><br /> *HighContrastLight:* el origen se puede usar en un fondo claro en el modo de contraste alto.<br /><br /> *HighContrastDark:* el origen se puede usar en un fondo oscuro en modo de contraste alto.<br /><br /> Si se omite el atributo Background, el origen se puede usar en cualquier fondo.<br /><br /> Si el fondo es *luz*, *oscuro*, *HighContrastLight*, o *HighContrastDark*, nunca se invierten los colores del código fuente. Si se omite o se establece en segundo plano *HighContrast*, la inversión de colores del código fuente se controla mediante la imagen **AllowColorInversion** atributo.|  
 |||  
   
  Un \<origen > elemento puede tener exactamente uno de los subelementos opcionales siguientes:  

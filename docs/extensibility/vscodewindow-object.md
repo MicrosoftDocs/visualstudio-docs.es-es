@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138647"
 ---
 # <a name="vscodewindow-object"></a>Objeto del objeto VSCodeWindow
 Una ventana de código es una ventana de documento especializado que puede incluir una o varias vistas de texto, normalmente la <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> objeto.  

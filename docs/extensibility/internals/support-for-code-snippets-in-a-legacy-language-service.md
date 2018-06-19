@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135687"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Compatibilidad con fragmentos de código en un servicio de lenguaje heredado
 Un fragmento de código es un fragmento de código que se inserta en el archivo de origen. El fragmento de código es una plantilla basada en XML con un conjunto de campos. Estos campos se resaltan después de que el fragmento de código se inserta y puede tener diferentes valores en función del contexto en el que se inserta el fragmento de código. Inmediatamente después de inserta el fragmento de código, el servicio de lenguaje puede dar formato el fragmento de código.  
@@ -52,7 +53,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
   
  Normalmente, hay dos ubicaciones donde se almacenan los archivos de plantilla de fragmento de código: 1) donde se instaló el idioma y (2) en la carpeta del usuario. Estas ubicaciones se agregan al registro hasta que el de Visual Studio **Administrador de fragmentos de código** puede encontrar los fragmentos de código. La carpeta del usuario es donde se almacenan los fragmentos de código creados por el usuario.  
   
- El diseño de carpeta habitual para los archivos de plantilla instalada de fragmento de código tiene el siguiente aspecto: *[InstallRoot]*\\*[TestLanguage]*\Snippets\\*[LCID]*\Snippets.  
+ El diseño de carpeta habitual para los archivos de plantilla instalada de fragmento de código tiene el siguiente aspecto: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
  *[InstallRoot]*  es la carpeta que el idioma se instala en.  
   
@@ -60,7 +61,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
   
  *[LCID]*  es el identificador de configuración regional. Se trata de las versiones localizadas de forma de los fragmentos de código se almacenan. Por ejemplo, el identificador de configuración regional para inglés es 1033, por lo que *[LCID]* se sustituye por 1033.  
   
- Debe proporcionarse un archivo adicional y que es un archivo de índice, normalmente denominado SnippetsIndex.xml o ExpansionsIndex.xml (puede utilizar cualquier nombre de archivo válido termina en .xml). Este archivo normalmente se almacena en la *[InstallRoot]*\\*[TestLanguage]* carpeta y especifica la ubicación exacta de la carpeta de fragmentos de código así como el identificador de idioma y el GUID del lenguaje servicio que utiliza los fragmentos de código. La ruta de acceso exacta del archivo de índice se coloca en el registro como se describe más adelante en "Instalar las entradas del registro". Este es un ejemplo de un archivo de SnippetsIndex.xml:  
+ Debe proporcionarse un archivo adicional y que es un archivo de índice, normalmente denominado SnippetsIndex.xml o ExpansionsIndex.xml (puede utilizar cualquier nombre de archivo válido termina en .xml). Este archivo normalmente se almacena en la *[InstallRoot]*\\ *[TestLanguage]* carpeta y especifica la ubicación exacta de la carpeta de fragmentos de código así como el identificador de idioma y el GUID del lenguaje servicio que utiliza los fragmentos de código. La ruta de acceso exacta del archivo de índice se coloca en el registro como se describe más adelante en "Instalar las entradas del registro". Este es un ejemplo de un archivo de SnippetsIndex.xml:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -81,7 +82,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
   
  En este ejemplo se da por supuesto que ha instalado el servicio de lenguaje en la carpeta de instalación de Visual Studio. % LCID % se sustituirá con el identificador de configuración regional actual. del usuario Varios \<SnippetDir > etiquetas se pueden agregar, uno para cada directorio diferente y la configuración regional. Además, una carpeta de fragmento de código puede contener subcarpetas, cada uno de los cuales se identifica en el archivo de índice con la \<SnippetSubDir > etiqueta que se incrusta en un \<SnippetDir > etiqueta.  
   
- Los usuarios también pueden crear sus propios fragmentos de código para su idioma. Normalmente se almacenan en la carpeta de configuración del usuario, por ejemplo *[TestDocs]*\Code fragmentos\\*[TestLanguage]*\Test fragmentos de código, donde *[TestDocs]* es la ubicación de carpeta de configuración del usuario de Visual Studio.  
+ Los usuarios también pueden crear sus propios fragmentos de código para su idioma. Normalmente se almacenan en la carpeta de configuración del usuario, por ejemplo *[TestDocs]* \Code fragmentos\\ *[TestLanguage]* \Test fragmentos de código, donde *[TestDocs]* es la ubicación de carpeta de configuración del usuario de Visual Studio.  
   
  Los siguientes elementos de sustitución pueden colocarse en la ruta de acceso almacenada en el \<DirPath > etiqueta en el archivo de índice.  
   
@@ -91,7 +92,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
 |% InstallRoot %|Carpeta de instalación raíz para Visual Studio, por ejemplo, C:\Program Files\Microsoft Visual Studio 8.|  
 |% ProjDir %|Carpeta que contiene el proyecto actual.|  
 |% ProjItem %|Carpeta que contiene el elemento de proyecto actual.|  
-|% TestDocs %|Carpeta en la carpeta de configuración del usuario, por ejemplo, C:\Documents and Settings\\*[username]*\My Studio\8.|  
+|% TestDocs %|Carpeta en la carpeta de configuración del usuario, por ejemplo, C:\Documents and Settings\\ *[username]* \My Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Habilitación de fragmentos de código para el servicio de lenguaje  
  Puede habilitar los fragmentos de código para el servicio de lenguaje mediante la adición de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> de atributo para el VSPackage (vea [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obtener más información). El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> y <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parámetros son opcionales, pero debe incluir el `SearchPaths` con el nombre de parámetro con el fin de informar a la **Administrador de fragmentos de código** de la ubicación de los fragmentos de código.  

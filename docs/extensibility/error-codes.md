@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130779"
 ---
 # <a name="error-codes"></a>Códigos de error
 Cuando una función de API de complemento de Control de código fuente, devuelve un error, se espera a ser uno de los siguientes códigos de error. Todos los errores son negativos, son positivos, las advertencias o los códigos de error informativo y correcta es 0.  

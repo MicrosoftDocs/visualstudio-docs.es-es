@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571560"
 ---
 # <a name="overriding-toolsversion-settings"></a>Invalidar el valor de la versión de herramientas
 Puede cambiar el conjunto de herramientas para los proyectos y soluciones de tres maneras:  

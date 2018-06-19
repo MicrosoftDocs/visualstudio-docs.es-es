@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131968"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Coincidencia de llaves en un servicio de lenguaje heredado
 Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de elementos del lenguaje que deben realizarse conjuntamente, como paréntesis y llaves. Cuando un programador escribe una llave de cierre, se resalta la llave de apertura.  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927118"
 ---
 # <a name="design-warnings"></a>Diseñar advertencias
 Advertencias compatibles con el cumplimiento de las instrucciones de diseño de .NET Framework de diseño.

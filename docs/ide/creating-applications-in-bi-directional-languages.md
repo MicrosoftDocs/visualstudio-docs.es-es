@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924588"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creación de aplicaciones en lenguajes bidireccionales
 

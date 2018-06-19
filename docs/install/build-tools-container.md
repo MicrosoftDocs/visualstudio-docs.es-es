@@ -1,12 +1,10 @@
 ---
-title: Instalar Build Tools en un contenedor | Microsoft Docs
+title: Instalar Visual Studio Build Tools en un contenedor
+description: Obtenga información sobre cómo instalar Visual Studio Build Tools en un contenedor de Windows para admitir los flujos de trabajo de integración continua y entrega continua (CI/CD).
 ms.custom: ''
-ms.date: 10/18/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-acquisition
-ms.tgt_pltfrm: ''
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
@@ -14,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a63b954c87e6b5308e499be2422948fa865964
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: d9dc5b1add4f81e91d0ea0e2cdc20e2581116525
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
+ms.locfileid: "31624897"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Build Tools en un contenedor
 
@@ -46,7 +45,7 @@ De forma predeterminada, Hyper-V no está habilitado. Debe estar habilitado para
 
 ## <a name="step-2-install-docker-for-windows"></a>Paso 2. Instalar Docker para Windows
 
-Si usa Windows 10, puede descargar e instalar [Docker Community Edition para Windows](https://www.docker.com/docker-windows). Puede usar PowerShell para [instalar Docker Enterprise Edition para Windows Server 2016](https://docs.docker.com/engine/installation/windows/docker-ee) con Desired State Configuration (DSC), o bien un [proveedor de paquete](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server) para una única instalación simple.
+Si usa Windows 10, puede [descargar e instalar Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Si usa Windows Server 2016, siga las [instrucciones para instalar Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
 
 ## <a name="step-3-switch-to-windows-containers"></a>Paso 3. Cambiar a contenedores de Windows
 
@@ -54,7 +53,7 @@ Solo se puede instalar Build Tools 2017 en Windows, lo que requiere [cambiar a c
 
 ## <a name="step-4-expand-maximum-container-disk-size"></a>Paso 4. Expandir el tamaño máximo de disco del contenedor
 
-Visual Studio Build Tools y, en mayor medida, Visual Studio, requieren una gran cantidad de espacio en disco para todas las herramientas que se instalan. Aunque en nuestro Dockerfile de ejemplo se deshabilita la memoria caché del paquete, el tamaño de disco de las imágenes de contenedor debe aumentarse para alojar el espacio necesario. Actualmente, en Windows solamente se puede aumentar el tamaño de disco cambiando la configuración de Docker.
+Visual Studio Build Tools y, en mayor medida, Visual Studio, requieren una gran cantidad de espacio en disco para todas las herramientas que se instalan. Aunque en el Dockerfile de ejemplo se deshabilita la caché del paquete, el tamaño de disco de las imágenes de contenedor debe aumentarse para alojar el espacio necesario. Actualmente, en Windows solamente se puede aumentar el tamaño de disco cambiando la configuración de Docker.
 
 **En Windows 10**:
 
@@ -116,7 +115,7 @@ Visual Studio Build Tools y, en mayor medida, Visual Studio, requieren una gran 
 
 ## <a name="step-5-create-and-build-the-dockerfile"></a>Paso 5. Crear y compilar el Dockerfile
 
-Debe guardar el Dockerfile de ejemplo siguiente en un archivo nuevo en el disco. Si el archivo se denomina simplemente "Dockerfile", se reconoce de forma predeterminada.
+Guarde el Dockerfile de ejemplo siguiente en un archivo nuevo en el disco. Si el archivo se denomina simplemente "Dockerfile", se reconoce de forma predeterminada.
 
 > [!NOTE]
 > En este Dockerfile de ejemplo solo se excluyen los SDK de Windows antiguos que no se pueden instalar en contenedores. Las versiones anteriores hacen que el comando genere un error.
@@ -137,22 +136,22 @@ Debe guardar el Dockerfile de ejemplo siguiente en un archivo nuevo en el disco.
 3. Guarde el contenido siguiente en C:\BuildTools\Dockerfile.
 
    ```dockerfile
-   # Use the latest Windows Server Core image.
-   FROM microsoft/windowsservercore
+   # escape=`
 
-   # Download useful tools to C:\Bin.
-   ADD https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe C:\\Bin\\nuget.exe
+   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
+   FROM microsoft/dotnet-framework:4.7.1
 
-   # Download the Build Tools bootstrapper outside of the PATH.
-   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\\TEMP\\vs_buildtools.exe
+   # Download the Build Tools bootstrapper.
+   ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
-   # Add C:\Bin to PATH and install Build Tools excluding workloads and components with known issues.
-   RUN setx /m PATH "%PATH%;C:\Bin" \
-    && C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache --installPath C:\BuildTools --all \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 \
-       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 \
-       --remove Microsoft.VisualStudio.Component.Windows81SDK \
+   # Install Build Tools excluding workloads and components with known issues.
+   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+       --installPath C:\BuildTools `
+       --all `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+       --remove Microsoft.VisualStudio.Component.Windows81SDK `
     || IF "%ERRORLEVEL%"=="3010" EXIT 0
 
    # Start developer command prompt with any other commands specified.
@@ -162,13 +161,16 @@ Debe guardar el Dockerfile de ejemplo siguiente en un archivo nuevo en el disco.
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
+   > [!NOTE]
+   > Si basa la imagen directamente en microsoft/windowsservercore, puede que .NET Framework no se instale correctamente y no se indique ningún error de instalación. El código administrado podría no ejecutarse una vez completada la instalación. En su lugar, base la imagen en [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o en otra versión más reciente.
+
 4. Ejecute el comando siguiente desde ese directorio.
 
    ```shell
    docker build -t buildtools2017:latest -m 2GB .
    ```
 
-   Este comando crea el archivo Dockerfile en el directorio actual con 2 GB de memoria. El valor predeterminado de 1 GB no es suficiente cuando se instalan algunas cargas de trabajo; pero es posible que pueda compilar con solo 1 GB de memoria en función de los requisitos de compilación.
+   Este comando compila el archivo Dockerfile en el directorio actual con 2 GB de memoria. El valor predeterminado de 1 GB no es suficiente cuando se instalan algunas cargas de trabajo; pero es posible que pueda compilar con solo 1 GB de memoria en función de los requisitos de compilación.
 
    La imagen final se etiqueta con "buildtools2017:latest" para que se pueda ejecutar fácilmente en un contenedor como "buildtools2017" ya que la etiqueta "latest" es el valor predeterminado si no se especifica ninguna etiqueta. Si quiere usar una versión específica de Visual Studio Build Tools 2017 en un [escenario más avanzado](advanced-build-tools-container.md), en su lugar se podría etiquetar el contenedor con un número de compilación de Visual Studio específico además de "latest", para que los contenedores puedan usar una versión determinada de forma coherente.
 
@@ -186,13 +188,15 @@ Ahora que se ha creado una imagen, también se puede ejecutar en un contenedor p
 Para usar esta imagen para el flujo de trabajo de CI/CD, puede publicarla en su propio [Azure Container Registry](https://azure.microsoft.com/services/container-registry) o en otro [registro de Docker](https://docs.docker.com/registry/deploying) interno para que los servidores solo tengan que extraerla.
 
 ## <a name="get-support"></a>Obtener soporte técnico
+
 En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017). Si ninguno de los pasos de solución de problemas ayuda, puede ponerse en contacto con nosotros por chat para obtener asistencia para la instalación (solo en inglés). Para más información, consulte la [página de soporte técnico de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
+
 * Puede notificarnos problemas del producto a través de la herramienta [Notificar un problema](../ide/how-to-report-a-problem-with-visual-studio-2017.md) que aparece en el instalador y en el IDE de Visual Studio.
 * Puede compartir una sugerencia de producto con nosotros en [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Puede realizar el seguimiento de los problemas del producto en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/), y hacer preguntas y encontrar respuestas.
-* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de nuestra [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
+* Puede realizar el seguimiento de los problemas del producto y encontrar respuestas en la [comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+* También puede ponerse en contacto con nosotros y otros desarrolladores de Visual Studio a través de la [conversación de Visual Studio en la comunidad de Gitter](https://gitter.im/Microsoft/VisualStudio).  (Esta opción requiere una cuenta de [GitHub](https://github.com/)).
 
 ## <a name="see-also"></a>Vea también
 

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129716"
 ---
 # <a name="solutions"></a>Soluciones
 Una solución es una agrupación de uno o varios proyectos que funcionan conjuntamente para crear una aplicación. La información de proyecto y el estado que forman parte de la solución se almacenan en dos archivos de solución, un archivo basado en texto de solución (.sln) y un archivo de solución binario usuario opción (.suo).  

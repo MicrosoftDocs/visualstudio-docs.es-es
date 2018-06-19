@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132157"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Cómo: proporcionar compatibilidad de esquematización expandida en un servicio de lenguaje heredado
 Hay dos opciones para ampliar la compatibilidad de esquematización para el lenguaje más allá de admitir la **contraer a definiciones** comando. Puede agregar regiones de esquema controlados por el editor y agregar regiones de esquema controlado por el cliente.  

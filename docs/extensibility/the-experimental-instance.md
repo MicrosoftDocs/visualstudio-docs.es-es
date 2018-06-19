@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138930"
 ---
 # <a name="the-experimental-instance"></a>La instancia Experimental
 Para proteger el entorno de desarrollo de Visual Studio desde las aplicaciones no se han comprobado que puede cambiarlo, el VSSDK proporciona un espacio experimental que puede utilizar para experimentar. Desarrollar nuevas aplicaciones con Visual Studio como de costumbre, pero su ejecución mediante el uso de esta instancia experimental.  
@@ -28,7 +29,7 @@ Para proteger el entorno de desarrollo de Visual Studio desde las aplicaciones n
   
  Si desea iniciar la instancia experimental de Visual Studio fuera de una solución específica, ejecute el comando siguiente en la ventana de comandos:  
   
- "*\<Ruta de instalación de visual studio >*\Common7\IDE\devenv.exe" RootSuffix Exp  
+ "*\<Ruta de instalación de visual studio >* \Common7\IDE\devenv.exe" RootSuffix Exp  
   
 > [!NOTE]
 >  La instancia experimental se escribe en el registro bajo la `<version number>Exp` y `<version number>Exp_Config` nodos. Por ejemplo es el área del registro experimental de Visual Studio 2015  
