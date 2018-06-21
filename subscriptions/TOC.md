@@ -64,7 +64,7 @@
 #### [Suscripciones expiradas](handle-expired-license.md)
 #### [Suscriptores con inicios de sesión con el correo electrónico personal](personal-email-sign-ins.md)
 ## Adquisición de suscripciones de Visual Studio
-### [Comparación de opciones de suscripción](https://www.visualstudio.com/vs/pricing)
+### [Comparación de opciones de suscripción](https://visualstudio.microsoft.com/vs/pricing)
 ### Compra de suscripciones de nube
 #### [Información general](vscloud-overview.md)
 #### [P+F sobre facturación](vscloud-billing-faq.md)
@@ -75,8 +75,8 @@
 #### [Microsoft for Startups](program-startups.md)
 ## Recursos
 ### [Artículo de licencias de Visual Studio](http://aka.ms/vslicensing)
-### [Comparación de opciones de suscripción y precios](https://www.visualstudio.com/vs/pricing)
-### [Comparación de las características de los IDE de Visual Studio](https://www.visualstudio.com/vs/compare)
-### [Soporte técnico para suscripciones y administración de Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
+### [Comparación de opciones de suscripción y precios](https://visualstudio.microsoft.com/vs/pricing)
+### [Comparación de las características de los IDE de Visual Studio](https://visualstudio.microsoft.com/vs/compare)
+### [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [Términos de licencias por volumen](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Acuerdo de productos y servicios de Microsoft (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)
