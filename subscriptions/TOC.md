@@ -1,4 +1,5 @@
 # [Suscripciones de Visual Studio](index.md)
+## [Novedades](whats-new-in-subscriptions.md)
 ## Experiencias del suscriptor
 ### [Uso del portal del suscriptor](using-the-subscriber-portal.md)
 #### [Activación de suscripciones comerciales](activate-store-subscriptions.md)

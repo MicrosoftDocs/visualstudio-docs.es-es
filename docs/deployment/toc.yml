@@ -8,12 +8,12 @@
   items:
     - name: Primer vistazo a la implementación
       href: deploying-applications-services-and-components.md
-    - name: Implementar en una carpeta local
-      href: quickstart-deploy-to-local-folder.md
+    - name: Implementación en Azure App Service
+      href: quickstart-deploy-to-azure.md
     - name: Implementar en un sitio web
       href: quickstart-deploy-to-a-web-site.md
-    - name: Implementar en Azure
-      href: quickstart-deploy-to-azure.md
+    - name: Implementar en una carpeta local
+      href: quickstart-deploy-to-local-folder.md
 - name: Tutoriales
   items:
     - name: .NET
