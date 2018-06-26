@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8803a1a0daa0efb9ead00e1e5169057fd88d218
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7c8a9806a7a0c84b71d247527d1d6eac4c5637e
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766368"
 ---
-# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: Máximo consumo de CPU por parte del proceso que se va a perfilar
+# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: Consumo máximo de CPU del proceso del que se está generando el perfil
 |||  
 |-|-|  
 |Identificador de regla|DA0502|  
@@ -34,5 +35,5 @@ ms.lasthandoff: 04/19/2018
 ## <a name="rule-description"></a>Descripción de la regla  
  Este mensaje indica el porcentaje de tiempo máximo que un procesador estuvo ocupado ejecutando instrucciones de la aplicación. El valor notificado es el valor máximo notificado entre todos los intervalos de medición en que estuvo activo el proceso del que se está generando el perfil. El porcentaje puede ser mayor que el 100 % en un equipo con más de un procesador.  
   
-## <a name="how-to-use-the-rule-data"></a>Cómo utilizar los datos de la regla  
+## <a name="how-to-use-the-rule-data"></a>Cómo usar los datos de la regla  
  Utilice el valor de la regla para comparar el rendimiento de distintas versiones o compilaciones del programa o para entender el rendimiento de la aplicación en otros escenarios de generación de perfiles diferentes.

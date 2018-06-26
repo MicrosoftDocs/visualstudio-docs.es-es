@@ -18,20 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b5f5000ab18360d5146603862381e056b37284
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b67db666c61d70c4fdfe4530e3249c5d86c1a6a7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690857"
 ---
-# <a name="analyze-performance-tools-data"></a>Análisis de datos de herramientas de rendimiento
+# <a name="analyze-performance-tools-data"></a>Analizar datos de herramientas de rendimiento
 Los informes de rendimiento de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] le permiten ver y analizar problemas de rendimiento de la aplicación. En esta sección se proporciona información general de los informes de rendimiento y las vistas que pueden utilizarse para examinar los datos de rendimiento.  
   
 ## <a name="common-tasks"></a>Tareas comunes  
   
 |Tarea|Contenido relacionado|  
 |----------|---------------------|  
-|**Utilice las reglas de rendimiento para identificar rápidamente problemas:** las reglas de rendimiento de las herramientas de generación de perfiles identifican problemas comunes y ayudan a navegar fácilmente al código fuente que contiene el problema. Los temas de ayuda detallados a menudo pueden sugerir una solución.|-   [Usar reglas de rendimiento para analizar datos](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Utilice las reglas de rendimiento para identificar rápidamente problemas:** las reglas de rendimiento de las herramientas de generación de perfiles identifican problemas comunes y ayudan a navegar fácilmente al código fuente que contiene el problema. Los temas de ayuda detallados a menudo pueden sugerir una solución.|-   [Usar reglas de rendimiento para el análisis de datos](../profiling/using-performance-rules-to-analyze-data.md)|  
 |**Conozca los detalles de la vista de informes:** las vistas de informes de las herramientas de generación de perfiles proporcionan datos de rendimiento agregados de procesos, subprocesos, módulos y funciones de una ejecución de generación de perfiles. Los datos que aparecen dependen del método de generación de perfiles utilizado para recopilar los datos.|-   [Vistas de informes de rendimiento](../profiling/performance-report-views.md)|  
 |**Configure, ordene y filtre las vistas de informes:** puede especificar y ordenar las columnas de datos que deben mostrarse en un informe, ordenar las filas del informe y filtrar los datos para incluir únicamente un segmento de tiempo que especifique.|-   [Personalizar las vistas de informes de las herramientas de rendimiento](../profiling/customizing-performance-tools-report-views.md)|  
   

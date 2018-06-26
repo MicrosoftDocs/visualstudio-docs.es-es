@@ -10,26 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c61d95758597b09b28ee5acd6268c44ea1bf0869
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c40350019d0878893568977df6db88c30fdc734
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764861"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a un servicio nativo para recopilar estadísticas de aplicación mediante la línea de comandos
-En este tema se describe cómo usar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio nativo y recopilar estadísticas de rendimiento mediante el método de muestreo.  
+En este artículo se describe cómo usar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio nativo y recopilar estadísticas de rendimiento mediante el método de muestreo.  
   
 > [!NOTE]
 >  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  Las herramientas de línea de comandos de las herramientas de generación de perfiles se encuentran en el subdirectorio \Team Tools\Performance Tools del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles versiones de 64 bits y de 32 bits de las herramientas. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando. Para obtener más información, consulte [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Las herramientas de línea de comandos de las herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana de símbolo del sistema o agregarla al propio comando. Para obtener más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Mientras el generador de perfiles está adjunto al servicio, puede pausar y reanudar la recolección de datos.  
   
  Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar del servicio y se debe cerrar explícitamente.  
   
-## <a name="starting-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles  
+## <a name="start-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles  
  Para adjuntar el generador de perfiles a un servicio nativo, use las opciones [/start](../profiling/start.md) y [/attach](../profiling/attach.md) de **VSPerfCmd.exe** para inicializar el generador de perfiles y adjuntarlo a la aplicación de destino. Puede especificar **/start** y **/attach** y sus respectivas opciones en una línea de comandos única. También puede agregar la opción [/globaloff](../profiling/globalon-and-globaloff.md) para pausar la recolección de datos en el inicio de la aplicación de destino. Después, puede usar [/globalon](../profiling/globalon-and-globaloff.md) para empezar a recopilar los datos.  
   
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>Para adjuntar el generador de perfiles a un servicio nativo  
@@ -44,7 +45,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
   
     -   La opción **/start:sample** inicializa el generador de perfiles.  
   
-    -   La opción **/output:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).  
+    -   La opción **/output:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.*vsp*).  
   
      Puede usar cualquiera de las siguientes opciones con la opción **/start:sample**.  
   
@@ -74,8 +75,8 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
     |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Cambia el evento de muestreo a llamadas al sistema por parte del proceso al kernel del sistema operativo (llamadas syscall). Si se especifica `Interval`, se establece el número de llamadas entre un muestreo y otro. El valor predeterminado es 10.|  
     |[/counter](../profiling/counter.md) **:** `Config`|Cambia el evento y el intervalo de muestreo al contador de rendimiento del procesador y al intervalo especificados en `Config`.|  
   
-## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
- Mientras la aplicación de destino se está ejecutando, puede usar las opciones de **VSPerfCmd.exe** para iniciar y detener la escritura de datos en el archivo de datos del generador de perfiles. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
+## <a name="control-data-collection"></a>Controlar la recopilación de datos  
+ Mientras la aplicación de destino se está ejecutando, puede usar las opciones de *VSPerfCmd.exe* para iniciar y detener la escritura de datos en el archivo de datos del generador de perfiles. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
   
@@ -87,7 +88,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|  
     |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por el identificador de proceso o por el nombre de proceso. **/detach** detiene la recopilación de datos para el proceso especificado o para todos los procesos si no se especifica uno.|  
   
-## <a name="ending-the-profiling-session"></a>Finalizar la sesión de generación de perfiles  
+## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles  
  Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar del servicio y se debe apagar explícitamente. Puede desasociar el servicio nativo para el que se está realizando la generación de perfiles con el método de muestreo deteniendo el servicio o llamando a la opción **VSPerfCmd /detach**. Después, llame a la opción [/shutdown](../profiling/shutdown.md) de **VSPerfCmd** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.  
   
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
@@ -105,5 +106,5 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
      **VSPerfCmd /shutdown**  
   
 ## <a name="see-also"></a>Vea también  
- [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
+ [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)   
  [Vistas de datos del método de muestreo](../profiling/profiler-sampling-method-data-views.md)

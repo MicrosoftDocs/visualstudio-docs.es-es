@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da44be7f972a75e143e00346bf4a39d0bdf65c27
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765637"
 ---
 # <a name="how-to-choose-sampling-events"></a>Cómo: Elegir eventos de muestreo
 De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] recopilan datos de rendimiento en un intervalo especificado como un número de ciclos de procesador que utiliza el proceso del que se genera el perfil. El número predeterminado de ciclos en un intervalo es de 10 000 000, que es aproximadamente 0,01 segundos en un equipo de 1 GH. Puede cambiar el número de ciclos en un intervalo, así como el evento de muestras. Los siguientes eventos de muestras están disponibles:  
@@ -61,7 +62,7 @@ De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[v
   
 ## <a name="see-also"></a>Vea también  
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
- [Cómo: Elegir métodos de colección](../profiling/how-to-choose-collection-methods.md)   
- [Contadores de CPU y de Windows](../profiling/cpu-and-windows-counters.md)   
+ [Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)   
+ [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)   
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)   
  [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)

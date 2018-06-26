@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45306283d6aaa2346b121455cca398e918b66e2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ad8d87c0574ac2c7671012fff6a81a568d6bff5f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764535"
 ---
 # <a name="empty-timeline-segment"></a>Segmento de escala de tiempo vacío
 En el visualizador de simultaneidad, el motivo por el que una sección de la escala de tiempo está vacía (tiene un fondo blanco) depende del tipo de canal.  
@@ -33,4 +34,4 @@ En el visualizador de simultaneidad, el motivo por el que una sección de la esc
   
 ## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)   
- [Control de zoom (vista de subprocesos)](../profiling/zoom-control-threads-view.md)
+ [Control de zoom (vista Subprocesos)](../profiling/zoom-control-threads-view.md)

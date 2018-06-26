@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d45d2da94535f4f017fab838a661a3c3e4bc438d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477358"
 ---
 # <a name="thread-details-view---contention-data"></a>Vista Detalles del subproceso: datos de contención
 La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los eventos de bloqueo en el subproceso seleccionado de una ejecución de generación de perfiles originados por las contenciones sobre recursos. Un evento de bloqueo se produce cuando el subproceso se ve obligado a suspender la ejecución porque otro subproceso ha bloqueado el acceso a un recurso.  
   
- Esta vista representa la escala de tiempo de ejecución del subproceso como una barra horizontal y los eventos de bloqueo como barras verticales en una escala de tiempo horizontal para el subproceso. Si es necesario, puede acercar una sección de la escala de tiempo para ver los eventos individuales. Para ver la ruta de acceso de ejecución de las funciones que dieron lugar al evento, haga clic en la barra del evento. Las funciones aparecen en la ventana Pila de llamadas. Si está disponible el código fuente de una función, puede hacer clic en el nombre de la función para editar el archivo de origen en el IDE de Visual Studio.  
+ Esta vista representa la escala de tiempo de ejecución del subproceso como una barra horizontal y los eventos de bloqueo como barras verticales en una escala de tiempo horizontal para el subproceso. Si es necesario, puede acercar una sección de la escala de tiempo para ver los eventos individuales. Para ver la ruta de acceso de ejecución de las funciones que dieron lugar al evento, haga clic en la barra del evento. Las funciones aparecen en la ventana **Pila de llamadas**. Si está disponible el código fuente de una función, puede hacer clic en el nombre de la función para editar el archivo de origen en el IDE de Visual Studio.  
   
-## <a name="navigating-the-timeline"></a>Navegar en la escala de tiempo  
+## <a name="navigate-the-timeline"></a>Navegar por la escala de tiempo  
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Para acercar un segmento de la escala de tiempo  
   
@@ -45,7 +46,7 @@ La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Para ver o editar el código fuente de una función en la pila de llamadas  
   
--   En la ventana Pila de llamadas, haga clic en el nombre de la función.  
+-   En la ventana **Pila de llamadas**, haga clic en el nombre de la función.  
   
  El código fuente de la función debe formar parte del proyecto actual.  
   

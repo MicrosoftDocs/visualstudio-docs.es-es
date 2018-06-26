@@ -1,27 +1,30 @@
 ---
-title: -Build (devenv.exe)
+title: Modificador Build de DevEnv
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
-- builds [Team System], command-line
+- builds, command-line
 - /build Devenv switch
 - Devenv, /build switch
 - build Devenv switch
+- command-line builds
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba1d23302cc0c3b9d14b23bd8547f33eb21ce0c3
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 777347ba36cf3443a509d1d6c8c44c23a86901e0
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764974"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
+
 Compila una solución mediante un archivo de configuración de solución especificado.
 
 ## <a name="syntax"></a>Sintaxis
@@ -31,33 +34,37 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 ```
 
 ## <a name="arguments"></a>Argumentos
- `SolutionName` Obligatorio. Ruta de acceso completa y nombre del archivo de solución.
 
- `SolnConfigName` Obligatorio. El nombre de la configuración de solución que se usará para compilar la solución mencionada en `SolutionName`.
-
- /project `ProjName` Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede especificar una ruta de acceso relativa desde la carpeta `SolutionName` al archivo del proyecto (o el nombre para mostrar del proyecto), o bien la ruta de acceso completa y el nombre del archivo del proyecto.
-
- /projectconfig `ProjConfigName` Opcional. El nombre de una configuración de compilación de proyecto que se usará para crear el `/project` mencionado.
+|||
+|-|-|
+|*SolutionName*|Obligatorio. Ruta de acceso completa y nombre del archivo de solución.|
+|*SolnConfigName*|Obligatorio. El nombre de la configuración de solución que se usará para compilar la solución mencionada en *SolutionName*. Si hay varias plataformas de solución disponibles, también se debe especificar la plataforma, por ejemplo **"Debug\|Win32"**.|
+|/project *ProjName*|Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede escribir una ruta de acceso relativa desde la carpeta *SolutionName* al archivo del proyecto (o el nombre para mostrar del proyecto), o bien la ruta de acceso completa y el nombre del archivo del proyecto.|
+|/projectconfig *ProjConfigName*|Opcional. El nombre de una configuración de compilación de proyecto que se va a usar para crear el proyecto mencionado. Si hay varias plataformas de proyecto disponibles, también se debe especificar la plataforma, por ejemplo **"Debug\|Win32"**.|
 
 ## <a name="remarks"></a>Comentarios
- Este modificador realiza la misma función que el comando de menú **Compilar solución** en el entorno de desarrollo integrado (IDE).
 
- Escriba las cadenas que incluyen espacios entre comillas dobles.
+- El modificador **/build** realiza la misma función que el comando de menú **Compilar solución** en el entorno de desarrollo integrado (IDE).
 
- Se puede mostrar información de resumen de las compilaciones, incluidos los errores, en la ventana **Comandos** o en cualquier archivo de registro especificado con el modificador `/out`.
+- Escriba las cadenas que incluyen espacios entre comillas dobles.
 
- Este comando solo compila proyectos que han cambiado desde la última compilación. Para compilar todos los proyectos en una solución, use [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md).
+- Se puede mostrar la información de resumen de las compilaciones, incluidos los errores, en la ventana de comandos, o bien en cualquier archivo de registro especificado con el modificador **/out**.
+
+- El modificador **/build** solo compila proyectos que han cambiado desde la última compilación. Para compilar todos los proyectos en una solución, use [/rebuild](../../ide/reference/rebuild-devenv-exe.md) en su lugar.
+
+- Si recibe un mensaje de error que dice **Configuración del proyecto no válida**, asegúrese de que ha especificado una plataforma de solución o de proyecto, por ejemplo **"Debug\|Win32"**.
 
 ## <a name="example"></a>Ejemplo
- Este ejemplo compila el proyecto `CSharpConsoleApp`, mediante la configuración de compilación de proyecto `Debug` en la configuración de solución `Debug` de `MySolution`.
+
+El comando siguiente compila el proyecto "CSharpConsoleApp", con la configuración de compilación de proyecto "Debug" dentro de la configuración de solución "Debug" de "MySolution".
 
 ```cmd
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Vea también
 
-- [Compilar y limpiar proyectos y soluciones en Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Compilación y limpieza de proyectos y soluciones](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)

@@ -9,26 +9,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c81443332a05fbd60a295613c5f34c579482199
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b11752200b891808f96b53e57453c0df815da3f4
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766685"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación independiente de .NET Framework para recopilar datos mediante la línea de comandos
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación de .NET Framework independiente para recopilar datos de memoria mediante la línea de comandos
 
-En este tema se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para adjuntar el generador de perfiles a una aplicación independiente (cliente) de .NET Framework en ejecución y recopilar datos de memoria.
+En este artículo se describe cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de Visual Studio para adjuntar el generador de perfiles a una aplicación independiente (cliente) de .NET Framework en ejecución y recopilar datos de memoria.
 
 > [!NOTE]
-> Las herramientas de línea de comandos de las herramientas de generación de perfiles se encuentran en el subdirectorio \Team Tools\Performance Tools del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando. Para obtener más información, consulte [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Las herramientas de línea de comandos de las herramientas de generación de perfiles se encuentran en el subdirectorio *\Team Tools\Performance Tools* del directorio de instalación de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando. Para obtener más información, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-Para adjuntar el generador de perfiles a una aplicación de .NET Framework y recopilar datos de memoria, debe usar la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar las variables de entorno adecuadas antes de iniciar la aplicación de destino. Mientras el generador de perfiles está adjunto a la aplicación, puede usar la herramienta **VSPerfCmd.exe** para pausar y reanudar la recolección de datos.
+Para adjuntar el generador de perfiles a una aplicación de .NET Framework y recopilar datos de memoria, debe usar la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar las variables de entorno adecuadas antes de iniciar la aplicación de destino. Mientras el generador de perfiles está adjunto a la aplicación, puede usar la herramienta *VSPerfCmd.exe* para pausar y reanudar la recolección de datos.
 
 Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar de todos los procesos perfilados y se debe apagar explícitamente. En la mayoría de los casos, recomendamos borrar las variables de entorno de generación de perfiles al final de una sesión.
 
-## <a name="attaching-the-profiler"></a>Adjuntar el generador de perfiles
+## <a name="attach-the-profiler"></a>Anexión del generador de perfiles
 
-### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Para adjuntar el Generador de perfiles a una aplicación .NET Framework que se esté ejecutando
+### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Para adjuntar el Generador de perfiles a una aplicación .NET Framework en ejecución
 
 1. Abra una ventana de símbolo del sistema.
 
@@ -72,9 +73,9 @@ Para finalizar una sesión de generación de perfiles, el generador de perfiles 
 
     - **/targetclr:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Opcional.
 
-## <a name="controlling-data-collection"></a>Controlar la recolección de datos
+## <a name="control-data-collection"></a>Controlar la recopilación de datos
 
-Cuando se ejecuta la aplicación de destino, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en el archivo con las opciones de **VSPerfCmd.exe**. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.
+Cuando se ejecuta la aplicación de destino, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en el archivo con las opciones de *VSPerfCmd.exe*. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.
 
 ### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos
 
@@ -86,7 +87,7 @@ Cuando se ejecuta la aplicación de destino, puede controlar la recolección de 
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recopilación de datos para el proceso especificado por `PID`.|
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por `PID` o por el nombre de proceso (ProcName). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|
 
-## <a name="ending-the-profiling-session"></a>Finalizar la sesión de generación de perfiles
+## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles
 
 Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar de todos los procesos perfilados y se debe apagar explícitamente. Puede desasociar el generador de perfiles de una aplicación cuyo perfil se ha generado mediante el método de muestreo, el cierre de la aplicación o una llamada la opción **VSPerfCmd /detach**. Después, llame a la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /off** borra las variables de entorno de generación de perfiles.
 
@@ -110,5 +111,5 @@ Para finalizar una sesión de generación de perfiles, el generador de perfiles 
 
 ## <a name="see-also"></a>Vea también
 
-[Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[Generar perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)  
 [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)

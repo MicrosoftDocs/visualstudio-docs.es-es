@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aee8da6d1faaa68bfc7b72d54760745f1566d219
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691191"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del Visualizador de simultaneidad
 Puede instrumentar el código fuente mediante el uso del SDK del visualizador de simultaneidad para mostrar información adicional en el visualizador de simultaneidad. Puede asociar los datos adicionales a fases y eventos en el código. Estas visualizaciones adicionales se denominan *marcadores*.  Para obtener un tutorial de introducción, consulte [Introducción al SDK del visualizador de simultaneidad](http://go.microsoft.com/fwlink/?LinkId=235405).  
@@ -120,11 +121,11 @@ Puede instrumentar el código fuente mediante el uso del SDK del visualizador de
     CvWriteFlag(series, _T("Writing a flag"));  
     ```  
   
-## <a name="related-topics"></a>Temas relacionados  
+## <a name="see-also"></a>Vea también  
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)|Describe la API del visualizador de simultaneidad de C++.|  
-|[Referencia de la biblioteca C](../profiling/c-library-reference.md)|Describe la API del visualizador de simultaneidad de C.|  
+|[Referencia de la biblioteca de C++](../profiling/cpp-library-reference.md)|Describe la API del visualizador de simultaneidad de C++.|  
+|[Referencia de la biblioteca de C](../profiling/c-library-reference.md)|Describe la API del visualizador de simultaneidad de C.|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Describe la API del visualizador de simultaneidad del código administrado.|  
 |[Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)|Información de referencia para las vistas y los informes de archivos de datos de generación de perfiles generados mediante el método de simultaneidad y que incluyen datos de ejecución de subprocesos.|

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691029"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Análisis del consumo de recursos y la actividad del subproceso de interfaz de usuario (XAML)
 Use la **escala de tiempo de aplicación** del generador de perfiles para buscar y corregir en aplicaciones XAML los problemas de rendimiento relacionados con la interacción. Esta herramienta le ayuda a mejorar el rendimiento de las aplicaciones XAML proporcionando una vista detallada del consumo de recursos de las aplicaciones. Puede analizar el tiempo consumido por la aplicación en la preparación de marcos de la interfaz de usuario (diseño y presentación), la atención de solicitudes de red y de disco y escenarios tales como el inicio de la aplicación, la carga de la página y el cambio de tamaño de las ventanas.  
@@ -34,10 +35,10 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 5.  Windows 7  
   
 > [!NOTE]
->  Puede recopilar y analizar datos de uso de CPU y de consumo de energía junto con los datos de la **Escala de tiempo de aplicación** . Consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+>  Puede recopilar y analizar datos de uso de CPU y de consumo de energía junto con los datos de la **Escala de tiempo de aplicación** . Vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Recopilar datos de la escala de tiempo de aplicación  
- Puede generar perfiles de capacidad de respuesta de la aplicación en su máquina local, en un dispositivo conectado, en un simulador o emulador de Visual Studio o un dispositivo remoto. Consulte [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+## <a name="collect-application-timeline-data"></a>Recopilar datos de la escala de tiempo de aplicación  
+ Puede generar perfiles de capacidad de respuesta de la aplicación en su máquina local, en un dispositivo conectado, en un simulador o emulador de Visual Studio o un dispositivo remoto. Vea [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
 >  Si es posible, ejecute la aplicación directamente en el dispositivo. El rendimiento de la aplicación observado en el simulador o a través de una conexión a escritorio remoto puede no ser igual al rendimiento real en el dispositivo. Por otro lado, la recopilación de datos mediante el uso de Herramientas remotas para Visual Studio no afecta a los datos de rendimiento.  
@@ -51,7 +52,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 3.  Seleccione **Escala de tiempo de aplicación** y luego haga clic en **Iniciar** en la parte inferior de la ventana.  
   
     > [!NOTE]
-    >  Puede aparecer una ventana, Control de cuentas de usuario, que le pida permiso para ejecutar VsEtwCollector.exe. Haga clic en **Sí**.  
+    >  Es posible que vea una ventana Control de cuentas de usuario en la que se le solicita permiso para ejecutar *VsEtwCollector.exe*. Haga clic en **Sí**.  
   
 4.  Ejecute el escenario del que quiera generar un perfil en su aplicación para recopilar datos de rendimiento.  
   
@@ -61,7 +62,7 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
   
      ![Informe del generador de perfiles de la escala de tiempo](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analizar datos de generación de perfiles de escala de tiempo  
+## <a name="analyze-timeline-profiling-data"></a>Analizar datos de generación de perfiles de escala de tiempo  
  Después de obtener los datos de la generación de perfiles, puede seguir estos pasos para iniciar el análisis:  
   
 1.  Examine la información de los gráficos **Utilización del subproceso de IU** y **Rendimiento visual (FPS)** y, a continuación, use las barras de navegación de la escala de tiempo para seleccionar el intervalo de tiempo que desea analizar.  
@@ -118,6 +119,6 @@ Use la **escala de tiempo de aplicación** del generador de perfiles para buscar
 ## <a name="see-also"></a>Vea también  
  [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications (Blog del equipo de WPF: Nueva herramienta de análisis de rendimiento de interfaz de usuario para aplicaciones de WPF)](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Procedimientos recomendados de rendimiento para aplicaciones para UWP con C++, C# y Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Optimizar WPF: Rendimiento de aplicaciones](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
+ [Optimizar el rendimiento de las aplicaciones WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Generación de perfiles en Visual Studio](../profiling/index.md)  
  [Guía de características de generación de perfiles](../profiling/profiling-feature-tour.md)

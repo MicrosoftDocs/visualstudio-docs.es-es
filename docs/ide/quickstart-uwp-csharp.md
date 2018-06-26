@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765874"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Inicio rápido: Crear su primera aplicación de la Plataforma universal de Windows en Visual Studio con XAML y C#
 
 En esta introducción al Entorno de desarrollo integrado (IDE) de Visual Studio, de entre 5 y 10 minutos, creará una aplicación "Hello World" que se ejecuta en cualquier dispositivo Windows 10. Para ello, deberá utilizar una plantilla de proyecto de la Plataforma universal de Windows (UWP), el lenguaje XAML (Extensible Application Markup Language) y el lenguaje de programación C#.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
@@ -32,7 +33,7 @@ En primer lugar, cree un proyecto de la Plataforma universal de Windows. En el t
 
 1. Abra Visual Studio 2017.
 
-2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
+2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
 3. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** y, a continuación, elija **Windows Universal**. En el panel central, elija **Aplicación vacía (Windows universal)**. Luego, asigne el nombre *HelloWorld* al proyecto y elija **Aceptar**.
 
@@ -59,7 +60,7 @@ Es hora de empezar a desarrollar. Deberá agregar un control de botón y una acc
 
   ![Abrir MainPage.xaml en el Explorador de soluciones ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Hay dos paneles: el **Diseñador XAML**, que incluye un lienzo de diseño, y el **Editor XAML**, en que puede agregar o modificar el código.    
+  Hay dos paneles: el **Diseñador XAML**, que incluye un lienzo de diseño, y el **Editor XAML**, en que puede agregar o modificar el código.
 
   ![El panel Diseñador XAML en el Editor XAML](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ Es el momento de compilar, implementar y ejecutar la aplicación UWP "Hello Worl
 
 1. Elija **Equipo local** para iniciar la aplicación.
 
-   ![Haga clic en Equipo Local para iniciar y depurar la aplicación UWP](../ide/media/uwp-start-or-debug.png "Haga clic en Equipo Local para iniciar y depurar la aplicación UWP")
+   ![Seleccionar Equipo local para iniciar y depurar la aplicación UWP](../ide/media/uwp-start-or-debug.png)
 
    (Como alternativa, puede elegir **Depurar** > **Iniciar depuración** en la barra de menús o presionar **F5** para iniciar la aplicación).
 

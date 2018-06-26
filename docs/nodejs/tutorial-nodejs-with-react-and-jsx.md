@@ -2,7 +2,7 @@
 title: Creación de una aplicación Node.js y React
 description: En este tutorial, creará una aplicación con Node.js Tools para Visual Studio.
 ms.custom: mvc
-ms.date: 02/19/2018
+ms.date: 05/23/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9958711ea64daee9876d3b16330685786b6d5825
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 9b7703c1e8884a5b65e4cdfbd91f2cc9b88c7f68
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765848"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 Visual Studio permite crear fácilmente un proyecto de Node.js y aprovechar IntelliSense y otras características integradas compatibles con Node.js. En este tutorial para Visual Studio, se crea un proyecto de aplicación web de Node.js a partir de una plantilla de Visual Studio. A continuación, se crea una aplicación sencilla con React.
@@ -34,22 +35,22 @@ En este tutorial aprenderá a:
 
 * Debe tener instalado Visual Studio 2017 y la carga de trabajo de desarrollo de Node.js.
 
-    Si todavía no tiene instalado Visual Studio, puede descargarlo de forma gratuita en [esta página](http://www.visualstudio.com).
+    Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
     Si necesita instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de Node.js** y, después, haga clic en **Modificar**.
 
 * Debe tener instalado el runtime de Node.js.
 
-    Si todavía no lo tiene instalado, instale la versión LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/). En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un runtime instalado, puede configurar el proyecto para que haga referencia al runtime instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**).
+    Este tutorial se ha probado con la versión 8.11.2.
 
-    Este tutorial se ha probado con la versión 8.9.4.
+    Si todavía no lo tiene instalado, instale la versión LTS desde el sitio web de [Node.js](https://nodejs.org/en/download/). En general, Visual Studio detecta automáticamente el entorno de ejecución de Node.js instalado. Si no detecta un runtime instalado, puede configurar el proyecto para que haga referencia al runtime instalado en la página de propiedades (después de crear un proyecto, haga clic con el botón derecho en el nodo del proyecto y elija **Propiedades**).
 
 ## <a name="create-a-project"></a>Crear un proyecto
 En primer lugar, cree un proyecto de aplicación web de Node.js.
 
 1. Abra Visual Studio 2017.
 
-1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto...**
+1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
 
 1. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** y después seleccione **Node.js**. En el panel central, elija **Aplicación web en blanco de Node.js**, escriba el nombre **NodejsWebAppBlank** y después haga clic en **Aceptar**.
 
@@ -88,7 +89,7 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
 
     ![Instalar paquetes de npm](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    En la ventana **Salida** se muestra el progreso de la instalación del paquete. Una vez instalado, el paquete aparece en el nodo **npm**.
+    Haga clic en la ventana **Salida** para ver el progreso de instalación del paquete (seleccione **Npm** en el campo **Mostrar resultados de**). Una vez instalado, el paquete aparece en el nodo **npm**.
 
     El archivo *package.json* del proyecto se actualiza con la nueva información de paquete, incluida su versión.
 
@@ -98,8 +99,8 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
     "dependencies": {
       "express": "4.16.2",
       "path": "0.12.7",
-      "react": "16.2.0",
-      "react-dom": "16.2.0",
+      "react": "16.4.0",
+      "react-dom": "16.4.0",
       "ts-loader": "4.0.1",
       "typescript": "2.7.2",
       "webpack": "4.1.1",
@@ -107,9 +108,9 @@ Esta aplicación requiere una serie de módulos de npm para ejecutarse correctam
     }
     ```
 
-1. Haga clic con el botón derecho en el nodo **npm** del proyecto y elija **Instalar los paquetes de NPM que faltan**.
+1. Haga clic con el botón derecho en el nodo **npm** del proyecto y seleccione **Actualizar los paquetes de NPM** .
 
-    En la ventana **Salida** se muestra el progreso de instalación de los paquetes.
+    Haga clic en la ventana **Salida** para ver el progreso de instalación de los paquetes. Esta operación puede tardar unos minutos y es posible que no vea los resultados inmediatamente.
 
     Estos son los módulos npm tal y como aparecen en el Explorador de soluciones después de su instalación.
 
@@ -133,7 +134,7 @@ Para esta sencilla aplicación, los nuevos archivos de proyecto se agregan en la
 
 1. En el cuadro de diálogo **Agregar nuevo elemento**, elija **Archivo JSX de TypeScript**, escriba el nombre *app.tsx* y haga clic en **Aceptar**.
 
-1. Repita estos pasos para agregar *webpack-config.js*.
+1. Repita estos pasos para agregar *webpack-config.js*. En lugar de un archivo de TypeScript JSX, elija **Archivo JavaScript**.
 
 1. Repita los mismos pasos para agregar *index.html* al proyecto. En lugar de un archivo JavaScript, elija **Archivo HTML**.
 
@@ -229,7 +230,7 @@ En los pasos anteriores, se agregó *webpack-config.js* al proyecto. A continuac
 
     El código de configuración de webpack indica a Webpack que utilice el cargador de TypeScript para transpilar el JSX.
 
-1. Abra tsconfig.json y agregue el código siguiente, que especifica las opciones del compilador TypeScript:
+1. Abra *tsconfig.json* y reemplace el código predeterminado por el código siguiente, que especifica las opciones del compilador TypeScript:
 
     ```json
     {
@@ -251,7 +252,7 @@ En los pasos anteriores, se agregó *webpack-config.js* al proyecto. A continuac
     }
     ```
 
-    app.tsx se especifica como el archivo de origen.
+    *app.tsx* se especifica como el archivo de origen.
 
 ## <a name="transpile-the-jsx"></a>Transpilar el JSX
 
@@ -331,7 +332,7 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
 
     ![Establecer un punto de interrupción](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. Con Chrome seleccionado como destino de depuración en Visual Studio, presione **Ctrl + F5** (**Depurar** > **Iniciar sin depurar**) para ejecutar la aplicación en el explorador.
+1. Con Chrome seleccionado como destino de depuración en Visual Studio, presione **Ctrl**+**F5** (**Depurar** > **Iniciar sin depurar**) para ejecutar la aplicación en el explorador.
 
     La aplicación se abre en una nueva pestaña del explorador.
 
@@ -346,7 +347,7 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
     Sabrá que el depurador se ha asociado correctamente cuando el Explorador DOM y la Consola de JavaScript se abran correctamente en Visual Studio. Estas herramientas de depuración son similares a las herramientas de desarrollo de Chrome y a las herramientas F12 para Edge.
 
     > [!NOTE]
-    > Si el depurador no se conecta y aparece el mensaje "No se puede asociar al proceso. Existe una operación que no es legal en el estado actual.", utilice el Administrador de tareas para cerrar todas las instancias de Chrome antes de iniciar Chrome en modo de depuración. Es posible que las extensiones de Chrome se estén ejecutando y eviten el modo de depuración completa.
+    > Si el depurador no se conecta y aparece el mensaje "No se puede asociar al proceso. Existe una operación que no es legal en el estado actual", utilice el Administrador de tareas para cerrar todas las instancias de Chrome antes de iniciar Chrome en modo de depuración. Es posible que las extensiones de Chrome se estén ejecutando y eviten el modo de depuración completa.
 
 1. Dado que el código ya se ejecuta con el punto de interrupción, actualice la página del explorador para alcanzar el punto de interrupción.
 
@@ -354,7 +355,7 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
 
     En función del estado del entorno y el explorador, puede alcanzar el punto de interrupción en *app-bundle.js* o su ubicación asignada en *app.tsx*. En cualquier caso, puede ejecutar paso a paso el código y examinar las variables.
 
-    * Si tiene que interrumpir el código en *app.tsx* y no puede hacerlo, use **Asociar al proceso** tal como se describe en los pasos anteriores para conectar el depurador. A continuación, abra desde el Explorador de soluciones el archivo *app.tsx* generado dinámicamente; para ello, abra **Documentos de Script** > **app.tsx**, establezca un punto de interrupción y actualice la página en el explorador.
+    * Si tiene que interrumpir el código en *app.tsx* y no puede hacerlo, use **Asociar al proceso** tal como se describe en los pasos anteriores para conectar el depurador. A continuación, abra desde el Explorador de soluciones el archivo *app.tsx* generado dinámicamente; para ello, abra **Documentos de Script** > **app.tsx**, establezca un punto de interrupción y actualice la página en el explorador. (Establezca el punto de interrupción en una línea de código que permita puntos de interrupción, como la instrucción `return` o una declaración `var`).
 
         Como alternativa, si tiene que interrumpir el código en un archivo *app.tsx* y no puede hacerlo, intente utilizar la instrucción `debugger;` de *app.tsx* o, en su lugar, establezca puntos de interrupción en las herramientas de desarrollo de Chrome.
 

@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90cd6b8d7fcb6a9eaf2d68f3eabe4b851979302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477007"
 ---
-# <a name="understanding-sampling-data-values"></a>Introducción a los valores de datos de muestreo
+# <a name="understand-sampling-data-values"></a>Introducción a los valores de datos de muestreo
 
 El método de generación de perfiles de *muestreo* de las Herramientas de generación de perfiles de Visual Studio interrumpe el procesador del equipo a intervalos establecidos y recopila la pila de llamadas a función. Una *pila de llamadas* es una estructura dinámica que almacena información sobre las funciones que se ejecutan en el procesador.
 
@@ -52,5 +53,5 @@ El porcentaje del número total de muestras exclusivas de la generación de perf
 
 ## <a name="see-also"></a>Vea también
 
-[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
-[Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)
+[Elección de métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
+[Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

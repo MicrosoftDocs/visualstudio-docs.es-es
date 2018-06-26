@@ -3,27 +3,30 @@ title: Visual Studio for Mac Tools for Unity
 description: Introducción a la extensión de Visual Studio Tools para Unity
 author: dantogno
 ms.author: v-davian
-ms.date: 07/17/2017
+ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b8384c3595627e288e2ef05cf9135242d37e6d36
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: f80debf3098fd8296ddfa205db3ed296707e23c0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572422"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
 ![Imagen estilizada de Unity y Visual Studio para Mac](media/vsmac-tools-unity-image1.png)
 
-Visual Studio for Mac Tools for Unity es una extensión gratuita de Visual Studio que convierte Visual Studio para Mac en una completa herramienta con la que se pueden desarrollar aplicaciones y juegos multiplataforma mediante la plataforma Unity.
+Visual Studio for Mac Tools for Unity es una extensión gratuita de Visual Studio que convierte Visual Studio para Mac en una completa herramienta con la que se pueden desarrollar aplicaciones y juegos multiplataforma mediante la plataforma Unity. 
 
-## <a name="overview"></a>Información general 
+La integración de Unity se incluye directamente en Visual Studio para Mac y, a partir de Unity 2018.1, Visual Studio para Mac es el IDE predeterminado de C# para los proyectos de Unity.
+
+## <a name="overview"></a>Información general
 
 Estas son algunas de las características clave de Visual Studio for Mac Tools for Unity:
 
 ### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>Compatible con Visual Studio para Mac Community Edition
 
-[Visual Studio para Mac Community Edition](https://www.visualstudio.com/) está disponible de forma gratuita.
+[Visual Studio para Mac Community Edition](https://www.visualstudio.com/) está disponible de forma gratuita y se incluye en las instalaciones de Unity a partir de Unity 2018.1. Vea la [documentación de instalación](setup-vsmac-tools-unity.md) de Visual Studio para Mac Tools para Unity para obtener más información.
 
 ### <a name="intellisense-for-unity-messages"></a>IntelliSense para mensajes de Unity
 
@@ -33,13 +36,10 @@ IntelliSense hace que resulte rápido y sencillo [implementar mensajes de Unity]
 
 Visual Studio for Mac Tools for Unity es compatible con todas las características de [depuración](using-vsmac-tools-unity.md#unity-debugging) que se esperan en Visual Studio:
 
-*   Establezca puntos de interrupción, incluidos puntos de interrupción condicionales.
-
-*   Evalúe las expresiones complejas en la ventana Inspección.
-
-*   Inspeccione y modifique el valor de variables y argumentos.
-
-*   Profundice en complejas estructuras de datos y objetos.
+* Establezca puntos de interrupción, incluidos puntos de interrupción condicionales.
+* Evalúe las expresiones complejas en la ventana Inspección.
+* Inspeccione y modifique el valor de variables y argumentos.
+* Profundice en complejas estructuras de datos y objetos.
 
 ### <a name="powerful-refactoring-and-context-actions"></a>Eficaces acciones de refactorización y contexto
 

@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad41dc48303fa836e4c15f0e450b3fade60ff646
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765744"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: Versión de CLR incompatible
+# <a name="da0029-unsupported-clr-version"></a>DA0029: Versión de CLR no admitida
 |||  
 |-|-|  
 |Identificador de regla|DA0029|  

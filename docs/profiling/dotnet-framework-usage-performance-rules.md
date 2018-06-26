@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddfe3d7bdc4cb274a7b70dca48e45794d5f1cac
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1903b61fce39bdd68b471472530857d720bac906
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766027"
 ---
 # <a name="net-framework-usage-performance-rules"></a>Reglas de rendimiento de uso de .NET Framework
 Las reglas de rendimiento de la categoría de uso de .NET Framework identifican los métodos específicos que se pueden optimizar, así como los patrones de uso más generales, como la recolección de elementos no utilizados y la contención de bloqueo, que se pueden investigar para detectar problemas de rendimiento.  
@@ -34,5 +35,5 @@ Las reglas de rendimiento de la categoría de uso de .NET Framework identifican 
 |[DA0022: Alta frecuencia de recolección de elementos no utilizados de gen. 2](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|Se está recuperando un número elevado de objetos de memoria de .NET en la recolección de elementos no utilizados de la generación 2. Si hay demasiados objetos de corta duración que sobreviven a la colección de la generación 1, es fácil que el coste de administración de memoria se vuelva excesivo. Esta regla se desencadena cuando la tasa de contenciones de bloqueo supera el valor de umbral superior de la regla DA0005.|  
 |[DA0023: Mucho tiempo de CPU de GC](../profiling/da0023-high-gc-cpu-time.md)|Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que la cantidad de tiempo que se invierte en la recolección de elementos no utilizados es considerable en comparación con el tiempo total de procesamiento de la aplicación.|  
 |[DA0024: Tiempo excesivo de CPU de GC](../profiling/da0024-excessive-gc-cpu-time.md)|Los datos de rendimiento del sistema recopilados durante la generación de perfiles indican que la cantidad de tiempo que se invierte en la recolección de elementos no utilizados es excesivamente alta en comparación con el tiempo total de procesamiento de la aplicación. Esta regla se desencadena cuando la cantidad de tiempo invertido en la recolección de elementos no utilizados supera el valor de umbral superior de la regla DA0023.|  
-|[DA0038: Alta frecuencia de contenciones de bloqueo](../profiling/da0038-high-rate-of-lock-contentions.md)|Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa considerablemente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de las contenciones.|  
-|[DA0039: Alta frecuencia de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa excesivamente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de las contenciones. Esta regla se desencadena cuando la tasa de contenciones de bloqueo supera el valor de umbral superior de la regla DA0038.|
+|[DA0038: Frecuencia alta de contenciones de bloqueo.](../profiling/da0038-high-rate-of-lock-contentions.md)|Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa considerablemente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de las contenciones.|  
+|[DA0039: Frecuencia muy alta de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md)|Los datos de rendimiento del sistema recopilados con los datos de generación de perfiles indican que se produjo una tasa excesivamente alta de contenciones de bloqueo durante la ejecución de la aplicación. Considere la posibilidad de volver a generar perfiles con el método de generación de perfiles de simultaneidad para encontrar la causa de las contenciones. Esta regla se desencadena cuando la tasa de contenciones de bloqueo supera el valor de umbral superior de la regla DA0038.|

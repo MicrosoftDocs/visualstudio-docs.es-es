@@ -16,20 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573146"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
-La herramienta **VSPerfCmd.exe** se usa para iniciar y detener la recopilación de datos de rendimiento. Utiliza la siguiente sintaxis:  
+La herramienta *VSPerfCmd.exe* se usa para iniciar y detener la recopilación de datos de rendimiento. Utiliza la siguiente sintaxis:  
   
 ```cmd  
 VSPerfCmd [/U] [/options]  
 ```  
   
- En las tablas siguientes se describen las opciones de la herramienta **VSPerfCmd.exe**.  
+ En las tablas siguientes se describen las opciones de la herramienta *VSPerfCmd.exe*.  
   
 |Opción|Description|  
 |------------|-----------------|  
@@ -43,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[QueryCounters](../profiling/querycounters.md)|Muestra una lista de contadores de CPU válidos para la máquina actual.|  
 |[WinCounter](../profiling/wincounter.md) **:** *path*|Especifica un evento de contador de rendimiento de Windows que se incluirá con datos de marca de perfil. Úselo solo con **Start**.|  
 |[AutoMark](../profiling/automark.md) **:** *n*|Especifica el intervalo de tiempo (en milisegundos) entre los eventos de recopilación de datos de contadores de rendimiento de Windows. Úselo con **WinCounter**.|  
-|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Colección de controles de eventos especificados de Seguimiento de eventos para Windows (ETW). Los datos ETW se recopilan en un archivo .itl que no es el archivo de datos de generación de perfiles (.vsp).|  
+|[Events](../profiling/events-vsperfcmd.md) **:** `option`|Colección de controles de eventos especificados de Seguimiento de eventos para Windows (ETW). Los datos ETW se recopilan en un archivo .*itl* que no es el archivo de datos de generación de perfiles (.*vsp*).|  
 |[Estado](../profiling/status.md)|Muestra el estado del generador de perfiles, información sobre los procesos de los que se están generando perfiles y las cuentas que tienen autoridad para controlar el generador de perfiles.|  
 |[Shutdown](../profiling/shutdown.md)[**:**`n`]|Cierra el archivo de datos de generación de perfiles y desactiva el generador de perfiles.|  
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Reanuda la recopilación de datos después de una llamada a **VSPerfCmdGlobalOff**.|  
@@ -62,8 +63,8 @@ VSPerfCmd [/U] [/options]
 |[Launch](../profiling/launch.md) **:** *Executable*|Inicia la aplicación específica y empieza a generar perfiles.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Especifica los argumentos de la línea de comandos que se van a pasar a la aplicación iniciada.|  
 |[Consola](../profiling/console.md)|Inicia el comando especificado en una nueva ventana del símbolo del sistema.|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Inicia la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso.|  
-|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por identificador de proceso o por nombre de proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  
+|[Attach](../profiling/attach.md) **:** *PID*[**,***PID*]|Inicia la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por el identificador o el nombre del proceso.|  
+|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Detiene la generación de perfiles de los procesos especificados. Los procesos se pueden identificar por el identificador o el nombre del proceso. Si no se especifica ningún proceso, la generación de perfiles se detiene para todos los procesos.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Recopila datos de asignación de memoria de .NET y de duración de los objetos. Úselo solo con la opción **VSPerfCmdLaunch**.|  
   
 ### <a name="sample-interval-options"></a>Opciones de intervalo de muestreo  

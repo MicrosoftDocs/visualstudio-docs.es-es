@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572220"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
-La herramienta de la línea de comandos VSPerfReport se usa para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El formato de informe predeterminado es un archivo .csv.  
+La herramienta de la línea de comandos VSPerfReport se usa para crear informes mediante los archivos de datos para la generación de perfiles de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. El formato de informe predeterminado es un archivo .*csv*.  
   
  VSPerfReport usa la sintaxis siguiente:  
   
@@ -32,18 +33,18 @@ La herramienta de la línea de comandos VSPerfReport se usa para crear informes 
 VSPerfReport [/U] vspfilename [/options]  
 ```  
   
- Tenga en cuenta que `filename` debe ser un archivo .vsp o .vsps válido.  
+ Tenga en cuenta que `filename` debe ser un archivo .*vsp* o .*vsps* válido.  
   
- La herramienta de línea de comandos VSPerfReport también se usa para comparar archivos .vsp o .vsps. Para generar un informe de diferencias ("diff"), use la sintaxis siguiente:  
+ La herramienta de línea de comandos VSPerfReport también se usa para comparar archivos .*vsp* o .*vsps*. Para generar un informe de diferencias ("diff"), use la sintaxis siguiente:  
   
 ```cmd  
 VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]  
 ```  
   
- `vspfilename1 and vspfilename2` deben ser archivos .vsp o .vsps válidos.  
+ `vspfilename1 and vspfilename2` deben ser archivos .*vsp* o .*vsps* válidos.  
   
 ## <a name="symbol-files"></a>Archivos de símbolos  
- Para mostrar información de símbolos como nombres de función y números de línea, VSPerfReport requiere acceso a los archivos de símbolos (.PDB) de los componentes para los que se generan perfiles y a los archivos de símbolos de Windows. Para obtener más información, consulte [Cómo: Especificar ubicaciones del archivo de símbolos desde la línea de comandos](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Para mostrar información de símbolos como nombres de función y números de línea, VSPerfReport requiere acceso a los archivos de símbolos (.PDB) de los componentes para los que se generan perfiles y a los archivos de símbolos de Windows. Para más información, vea [Cómo: Especificar ubicaciones del archivo de símbolos desde la línea de comandos](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Opciones generales de informe  
  En la tabla siguiente se describen las opciones generales de formato del informe y las opciones que seleccionan los datos de los que se va a informar.  
@@ -57,7 +58,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**ClearPackedSymbols**|Quita los símbolos insertados previamente de un archivo de datos del generador de perfiles. Ejecute este comando antes de ejecutar PackSymbols por segunda vez.|  
 |**SymbolPath:** `path`|Especifica una o más rutas de acceso de búsqueda o servidores de símbolos que contienen los símbolos para el archivo de datos del generador de perfiles.|  
 |**DebugSymPath**|Enumera las ubicaciones en las que se buscan los símbolos y si se encuentran. Esta opción es útil para resolver problemas de resolución de símbolos.|  
-|**PackSymbols**|Guarda los símbolos en el archivo de datos de generación de perfiles (.vsp) de modo que los archivos de símbolos (.pdb) no se requieran en el análisis.|  
+|**PackSymbols**|Guarda los símbolos en el archivo de datos de generación de perfiles (.vsp) de modo que los archivos de símbolos (.*pdb*) no se requieran en el análisis.|  
 |**Output:** *path*&#124;*filename*|Especifica una ubicación alternativa para los archivos de informe generados. De forma predeterminada, los informes se crean en el directorio actual.|  
 |**SummaryFile**|Analiza y guarda la información analizada en un archivo de resumen .vsps.|  
 |**PrintMarks**|Muestra los nombres y marcas de tiempo para todas las marcas del archivo de informe especificado.|  
@@ -84,7 +85,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Opciones|Description|  
 |-------------|-----------------|  
-|**Diff**  `vspfile1 vspfile2`|Compare dos archivos de informe (.vsp o .vsps). Las opciones de resumen se omitirán mediante la opción diff.|  
+|**Diff**  `vspfile1 vspfile2`|Se comparan dos archivos de informe (.*vsp* o .*vsps*). Las opciones de resumen se omitirán mediante la opción diff.|  
 |**Diff:**[*value*]|Se descarta cualquier diferencia entre dos valores que se encuentre bajo este valor de umbral. Asimismo, no se muestran nuevos datos que tengan valores por debajo de este umbral.|  
 |**DiffTable:**[*tablename*]|Use esta tabla concreta para comparar archivos. El valor predeterminado es la tabla de funciones.|  
 |**DiffColumn:**[*columnname*]|Use estos valores de comparación de columna específicos. El valor predeterminado es la columna de porcentaje de muestras exclusivas.|  

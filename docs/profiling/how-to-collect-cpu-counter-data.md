@@ -14,15 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994a50e66164dcd7a2a3768c8284825019e281e1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765104"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Cómo: Recopilar datos de contadores de CPU
 
-Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento específicos de hardware. En este tema se muestra cómo recopilar datos de contador de eventos cuando se utiliza el método de generación de perfiles de instrumentación.
+Un contador de eventos de CPU se utiliza para recopilar datos de rendimiento específicos de hardware. En este artículo se muestra cómo recopilar datos de contador de eventos cuando se usa el método de generación de perfiles de instrumentación.
 
 Se producen dos tipos de eventos de contador de CPU:
 
@@ -44,7 +45,7 @@ Se producen dos tipos de eventos de contador de CPU:
 
 - Recopilar datos de uno o más contadores al generar perfiles mediante la instrumentación.
 
-- Especificar un evento de contador como el intervalo de muestreo al generar perfiles mediante el muestreo. Para obtener más información, consulte [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).
+- Especificar un evento de contador como el intervalo de muestreo al generar perfiles mediante el muestreo. Para obtener más información, vea [Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Para recopilar datos del contador de rendimiento de CPU al generar perfiles mediante la instrumentación
 
@@ -61,7 +62,7 @@ Se producen dos tipos de eventos de contador de CPU:
 
 ## <a name="see-also"></a>Vea también
 
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Propiedades de la sesión de rendimiento](../profiling/performance-session-properties.md)  
+[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)  
 [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)  
-[Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
+[Elección de eventos de muestreo](../profiling/how-to-choose-sampling-events.md)

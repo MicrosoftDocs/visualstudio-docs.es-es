@@ -9,11 +9,12 @@ description: Obtener información sobre cómo sacar el máximo partido de las su
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548728"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -118,3 +119,21 @@ Para agregar una cuenta alternativa:
 ![Cuenta alternativa](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Una vez que haya agregado una cuenta alternativa, puede actualizarla o quitarla en cualquier momento. Para ello, haga clic en la pestaña **Suscripciones** y elija la opción adecuada en la sección **Vínculos relacionados**.  
+
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>P: Si no renuevo la suscripción, ¿cuánto tiempo mantendrá mis datos Microsoft?
+R: En función del canal de compra, Microsoft mantiene los datos de cliente durante diferentes periodos de tiempo.
+
+| Canal                                                | Duración (días) |
+|--------------------------------------------------------|-----------------|
+|    Venta directa (por ejemplo, a través de Microsoft Store)               |    360          |
+|    Centro de servicio de licencias por volumen (VLSC)              |    180          |
+|    Acuerdo de productos y servicios de Microsoft (MPSA)    |    180          |
+|    Suscripciones de nube de Visual Studio                   |    180          |
+|    Programa (por ejemplo, MCT, BizSpark, MPN, Imagine)          |    180          |
+|    No para reventa (p. ej., MVP, MSP)                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - Si decide cerrar la cuenta de Microsoft o de Azure AD, sus datos personales se anonimizan de forma inmediata.  
+> - No se quitarán completamente todos los datos personales si tiene suscripciones activas. 

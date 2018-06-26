@@ -15,15 +15,16 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767691"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
-Este tutorial recorre paso a paso la creación, ejecución y personalización de una serie de pruebas unitarias mediante el marco de pruebas unitarias para código administrado de Microsoft y el **Explorador de pruebas** de Visual Studio. Se empieza con un proyecto C# que está en desarrollo, se crean pruebas que utilizan el código, se ejecutan las pruebas y se examinan los resultados. Por último, puede cambiar el código del proyecto y volver a ejecutar las pruebas.
+En este artículo se recorre paso a paso la creación, ejecución y personalización de una serie de pruebas unitarias mediante el marco de pruebas unitarias para código administrado de Microsoft y el **Explorador de pruebas** de Visual Studio. Se empieza con un proyecto C# que está en desarrollo, se crean pruebas que utilizan el código, se ejecutan las pruebas y se examinan los resultados. Por último, puede cambiar el código del proyecto y volver a ejecutar las pruebas.
 
 > [!NOTE]
 > En este tutorial se utiliza el marco de pruebas unitarias de Microsoft para código administrado. El **Explorador de pruebas** también puede ejecutar pruebas de marcos de pruebas unitarias de terceros, que tienen adaptadores para el **Explorador de pruebas**. Para obtener más información, consulte [Instalar marcos de prueba unitaria de terceros](../test/install-third-party-unit-test-frameworks.md)
@@ -41,23 +42,20 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
 
 2. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-     Aparecerá el cuadro de diálogo **Nuevo proyecto** .
+   Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
 3. En **Plantillas instaladas**, haga clic en **Visual C#**.
 
 4. En la lista de tipos de aplicación, haga clic en **Biblioteca de clases**.
 
-5. En el cuadro **Nombre** , escriba `Bank` y haga clic en **Aceptar**.
+5. En el cuadro **Nombre** escriba **Bank** y, después, haga clic en **Aceptar**.
 
-    > [!NOTE]
-    > Si el nombre "Bank" ya está en uso, elija otro nombre para el proyecto.
+   Se crea el nuevo proyecto Bank y se muestra en el **Explorador de soluciones** con el archivo *Class1.cs* abierto en el editor de código.
 
-     Se crea el nuevo proyecto Bank y se muestra en el **Explorador de soluciones** con el archivo *Class1.cs* abierto en el editor de código.
+   > [!NOTE]
+   > Si *Class1.cs* no se abre en el editor de código, haga doble clic en el archivo *Class1.cs* en el **Explorador de soluciones** para abrirlo.
 
-    > [!NOTE]
-    > Si el archivo *Class1.cs* no se abre en el editor de código, en el haga doble clic en el archivo *Class1.cs* en el explorador de soluciones para abrirlo.
-
-6. Copie el código fuente del [proyecto de ejemplo para crear pruebas de unidad](../test/sample-project-for-creating-unit-tests.md) y reemplace el contenido original de *Class1.cs* por el código copiado.
+6. Copie el código fuente del [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md) y reemplace el contenido original de *Class1.cs* por el código copiado.
 
 7. Guarde el archivo como *BankAccount.cs*.
 
@@ -93,11 +91,11 @@ public void Debit(double amount)
 
 4. En el cuadro **Nombre**, escriba `BankTests` y seleccione **Aceptar**.
 
-     El proyecto **BankTests** se agrega a la solución **Bank**.
+   El proyecto **BankTests** se agrega a la solución **Bank**.
 
 5. En el proyecto **BankTests**, agregue una referencia al proyecto **Bank**.
 
-     En el Explorador de soluciones, seleccione **Referencias** en el proyecto **BankTests** y, después, elija **Agregar referencia** desde el menú contextual.
+   En el Explorador de soluciones, seleccione **Referencias** en el proyecto **BankTests** y, después, elija **Agregar referencia** desde el menú contextual.
 
 6. En el cuadro de diálogo del Administrador de referencia, expanda **Solución** y active el elemento **Bank** .
 
@@ -142,7 +140,7 @@ Los requisitos mínimos para una clase de prueba son los siguientes:
 
 - El atributo `[TestClass]` se requiere en el marco de pruebas unitarias para código administrado de Microsoft para cualquier clase que contenga métodos de prueba unitaria que desee ejecutar en el Explorador de pruebas.
 
-- Cada método de prueba que desee que ejecute el Explorador de pruebas debe tener el atributo `[TestMethod]`.
+- Cada método de prueba que quiera que ejecute el Explorador de pruebas debe tener el atributo `[TestMethod]`.
 
 Puede tener otras clases de un proyecto de prueba unitaria que no tengan el atributo `[TestClass]` y puede tener otros métodos de clases de prueba que no tengan el atributo `[TestMethod]` . Puede utilizar estos otros métodos y clases en sus métodos de prueba.
 
@@ -211,13 +209,13 @@ Un método de prueba debe cumplir los siguientes requisitos:
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Corrija el código y vuelva a ejecutar las pruebas
 
-**Analizar los resultados de pruebas**
+### <a name="analyze-the-test-results"></a>Analizar los resultados de pruebas
 
 El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro **Expected\<*value*>**) y lo que se recibió realmente (el parámetro **Actual\<*value*>**). Esperaba que se redujera el saldo pero, en realidad, aumentó en la cantidad retirada.
 
 La prueba unitaria puso al descubierto un error: la cantidad retirada se *agrega* al saldo de cuenta en lugar de ser *restada*.
 
-**Corregir el error**
+### <a name="correct-the-bug"></a>Corregir el error
 
 Para corregir el error, reemplace la línea:
 
@@ -231,22 +229,22 @@ Por:
 m_balance -= amount;
 ```
 
-**Vuelva a ejecutar la prueba**
+### <a name="rerun-the-test"></a>Vuelva a ejecutar la prueba
 
-En el Explorador de pruebas, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde, lo que indica que se ha superado la prueba, y la prueba se mueve al grupo de **Pruebas superadas**.
+En el Explorador de pruebas, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde para indicar que se ha superado la prueba, y la prueba se mueve al grupo de **Pruebas superadas**.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Utilice pruebas unitarias para mejorar el código
 
 En esta sección se describe cómo un proceso iterativo de análisis, el desarrollo de pruebas unitarias y la refactorización pueden servirle de ayuda para que el código de producción sea más compacto y eficaz.
 
-**Analizar los problemas**
+### <a name="analyze-the-issues"></a>Analizar los problemas
 
 Ha creado un método de prueba para confirmar que se resta correctamente una cantidad válida en el método `Debit`. Ahora, compruebe que el método produce <xref:System.ArgumentOutOfRangeException> si la cantidad de débito es:
 
 - mayor que el saldo, o
 - menor que cero.
 
-**Crear los métodos de prueba**
+### <a name="create-the-test-methods"></a>Crear los métodos de prueba
 
 Cree un método de prueba para comprobar que el comportamiento es el correcto cuando la cantidad de débito es menor que cero:
 
@@ -277,11 +275,11 @@ Para probar el caso en el que la cantidad retirada es mayor que el saldo, siga l
 
 3. Establecer `debitAmount` en un número mayor que el del saldo.
 
-**Ejecutar las pruebas**
+### <a name="run-the-tests"></a>Ejecutar las pruebas
 
 Al ejecutar los dos métodos de prueba se muestra que las pruebas funcionan correctamente.
 
-**Continuar el análisis**
+### <a name="continue-the-analysis"></a>Continuar el análisis
 
 Pero los dos últimos métodos de prueba también son problemáticos. No puede saber qué condición del método en pruebas inicia la excepción cuando se ejecuta cualquier prueba. Alguna forma de diferenciar las dos condiciones, que es una cantidad de débito negativo o una cantidad mayor que el saldo, aumentaría la confianza en las pruebas.
 
@@ -291,11 +289,11 @@ Examine de nuevo el método en pruebas y compruebe que ambas instrucciones condi
 throw new ArgumentOutOfRangeException("amount");
 ```
 
-Puede utilizar un constructor que proporciona información mucho más completa: <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` incluye el nombre del argumento, el valor del argumento y un mensaje definido por el usuario. Puede refactorizar el método en pruebas para utilizar este constructor. Incluso mejor, puede utilizar miembros de tipo que se encuentran disponibles públicamente para especificar los errores.
+Puede usar un constructor que proporcione información mucho más completa: <xref:System.ArgumentOutOfRangeException.%23ctor(System.String,System.Object,System.String)> incluye el nombre y el valor del argumento, y un mensaje definido por el usuario. Puede refactorizar el método en pruebas para utilizar este constructor. Incluso mejor, puede utilizar miembros de tipo que se encuentran disponibles públicamente para especificar los errores.
 
-**Refactorizar el código en pruebas**
+### <a name="refactor-the-code-under-test"></a>Refactorizar el código en pruebas
 
-Primero, defina dos constantes para los mensajes de error en el ámbito de la clase. Coloque este elemento en la clase sometida a prueba (`Bank`):
+Primero, defina dos constantes para los mensajes de error en el ámbito de la clase. Colóquelas en la clase sometida a prueba, BankAccount:
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -316,7 +314,7 @@ A continuación, modifique las dos instrucciones condicionales en el método `De
     }
 ```
 
-**Refactorizar los métodos de prueba**
+### <a name="refactor-the-test-methods"></a>Refactorizar los métodos de prueba
 
 Quite el atributo`ExpectedException` del método de prueba y, en su lugar, capture la excepción y compruebe el mensaje asociado. El método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> ofrece la posibilidad de comparar dos cadenas.
 
@@ -344,9 +342,9 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-**Vuelva a probar, reescriba y vuelva a analizar**
+### <a name="retest-rewrite-and-reanalyze"></a>Vuelva a probar, reescriba y vuelva a analizar
 
-Suponga que hay un error en el método en pruebas y el método `Debit` ni siquiera *inicia* una excepción <xref:System.ArgumentOutOfRangeException>, no importa que salga el mensaje correcto con la excepción. Actualmente, el método de prueba no trata este caso. Si el valor de `debitAmount` es válido (es decir, menor que el saldo pero mayor que cero), no se detecta ninguna excepción, por lo que la comprobación nunca se desencadena. Sí, el método de prueba se completa correctamente. Esto no es bueno, porque quiere que el método de prueba no se supere si no se produce ninguna excepción.
+Suponga que hay un error en el método en pruebas y el método `Debit` ni siquiera inicia una excepción <xref:System.ArgumentOutOfRangeException>, ni tampoco muestra el mensaje correcto con la excepción. Actualmente, el método de prueba no trata este caso. Si el valor de `debitAmount` es válido (es decir, menor que el saldo pero mayor que cero), no se detecta ninguna excepción, por lo que la comprobación nunca se desencadena. Sí, el método de prueba se completa correctamente. Esto no es bueno, porque quiere que el método de prueba no se supere si no se produce ninguna excepción.
 
 Se trata de un error en el método de prueba. Para resolver el problema, agregue una validación <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> al final del método de prueba para controlar el caso donde no se produce ninguna excepción.
 
