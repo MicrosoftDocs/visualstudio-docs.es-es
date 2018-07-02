@@ -826,3 +826,5 @@
   items:
     - name: Novedades del depurador de Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
+    - name: Depuración para principiantes sin experiencia
+      href: debugging-absolute-beginners.md
