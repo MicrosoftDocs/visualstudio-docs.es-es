@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0937af4a697b3cf789738d06b5e2ad0282a7d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34549011"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
 
@@ -31,7 +32,7 @@ A veces, una aplicación en paralelo continúa ejecutándose en serie repetidame
 
 Como se muestra en la siguiente ilustración, el visualizador de simultaneidad también puede exponer este síntoma en la vista Uso de CPU, donde, a pesar de la presencia de varios subprocesos, la aplicación consume solo un núcleo lógico.
 
-Para obtener más información, consulte "Patrón de rendimiento 1: identificar la contención de bloqueo" en el blog de Hazim Shafi [Herramientas de rendimiento en paralelo para Windows](http://go.microsoft.com/fwlink/?LinkID=160569) en el sitio web del blog de MSDN.
+Para obtener más información, vea "Patrón de rendimiento 1: identificar la contención de bloqueo" en el blog de Hazim Shafi [Herramientas de rendimiento en paralelo para Windows](http://go.microsoft.com/fwlink/?LinkID=160569) en el sitio web del blog de MSDN.
 
 ![Contención de bloqueo](../profiling/media/lockcontention_2.png "LockContention_2")
 
@@ -43,7 +44,7 @@ Cuando se produce una distribución irregular de trabajo entre varios subproceso
 
 Como se muestra en la siguiente ilustración, el visualizador de simultaneidad también puede exponer este síntoma en la vista Uso de CPU como un descenso gradual del uso de CPU.
 
-![Carga de trabajo desigual](../profiling/media/unevenworkload_2.png "UnevenWorkLoad_2")
+![Carga de trabajo desigual](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
 
 ## <a name="oversubscription"></a>Suscripción excesiva
 

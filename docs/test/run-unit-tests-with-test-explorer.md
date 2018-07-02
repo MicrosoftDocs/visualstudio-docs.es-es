@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752071"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -29,13 +30,13 @@ El **Explorador de pruebas** puede ejecutar pruebas de varios proyectos de prueb
 
 Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
 
-![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
 
 Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas muestra los resultados en los grupos predeterminados de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. Puede cambiar la manera en que el Explorador de pruebas agrupa las pruebas.
 
 Desde la barra de herramientas del Explorador de pruebas puede realizar gran parte del trabajo de búsqueda, organización y ejecución de las pruebas.
 
-![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png "UTE_ToolBar")
+![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>Ejecutar pruebas
 
@@ -47,7 +48,7 @@ Puede ejecutar todas las pruebas de la solución, todas las pruebas de un grupo 
 
 - Seleccione las pruebas individuales que desea ejecutar, abra el menú contextual de una prueba seleccionada y elija **Ejecutar pruebas seleccionadas**.
 
-- Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+- Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
 Según se vayan ejecutando las pruebas, se animará la barra de superado o no superado en la parte superior de la ventana del Explorador de pruebas. Al finalizar la ejecución de las pruebas, la barra de superado o no superado se pondrá verde si se superan todas las pruebas. En caso contrario, se pondrá roja.
 
@@ -65,7 +66,7 @@ Al ejecutar, escribir y volver a ejecutar las pruebas, el Explorador de pruebas 
 
 Para ver los detalles de una prueba individual, selecciónela.
 
-![Detalles de ejecución de las pruebas](../test/media/ute_testdetails.png "UTE_TestDetails")
+![Detalles de ejecución de las pruebas](../test/media/ute_testdetails.png)
 
 El panel de detalles de la prueba muestra la información siguiente:
 
@@ -91,9 +92,9 @@ El Explorador de pruebas permite agrupar las pruebas en las categorías predefin
 
 ### <a name="group-tests-in-the-test-list"></a>Agrupar pruebas en la lista de pruebas
 
- Para cambiar la forma en que se organizan las pruebas, seleccione la flecha abajo situada junto al botón **Agrupar por** ![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") y seleccione un nuevo criterio de agrupación.
+ Para cambiar la forma en que se organizan las pruebas, haga clic en la flecha abajo situada junto al botón **Agrupar por** ![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png) y seleccione un nuevo criterio de agrupación.
 
- ![Agrupar pruebas por categoría en el Explorador de pruebas](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![Agrupar pruebas por categoría en el Explorador de pruebas](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Grupos del Explorador de pruebas
 
@@ -135,7 +136,7 @@ Para filtrar por otros criterios:
 
 3. Escriba el valor de filtro entre comillas.
 
-![Filtrar pruebas en el Explorador de pruebas](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![Filtrar pruebas en el Explorador de pruebas](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > Las búsquedas distinguen entre mayúsculas y minúsculas, y coinciden con la cadena especificada en cualquier parte del valor de criterios.
@@ -162,7 +163,7 @@ Por ejemplo, `FullName:"MyClass" - FullName:"PerfTest"` devuelve todas las prueb
 
  Puede crear y guardar una lista de pruebas que desea ejecutar o ver como grupo. Al seleccionar una lista de reproducción, las pruebas de la lista aparecerán en el Explorador de pruebas. Si lo desea, puede agregar una prueba a varias listas de reproducción. Para acceder a todas las pruebas de un proyecto, elija la lista de reproducción predeterminada **Todas las pruebas** .
 
- ![Elegir una lista de reproducción](../test/media/ute_playlist.png "UTE_Playlist")
+ ![Elegir una lista de reproducción](../test/media/ute_playlist.png)
 
  **Para crear una lista de reproducción**, elija una o varias pruebas en el Explorador de pruebas. En el menú contextual, elija **Agregar a lista de reproducción**y **Nueva lista de reproducción**. Guarde el archivo con la ubicación y el nombre especificados en el cuadro de diálogo **Crear nueva lista de reproducción** .
 
@@ -170,7 +171,7 @@ Por ejemplo, `FullName:"MyClass" - FullName:"PerfTest"` devuelve todas las prueb
 
  **Para abrir una lista de reproducción**, elija Prueba y Lista de reproducción en el menú de Visual Studio, y seleccione un elemento entre las listas de reproducción usadas recientemente. O bien, elija Abrir lista de reproducción para especificar el nombre y la ubicación de la lista de reproducción específica.
 
- Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+ Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Depurar y analizar pruebas unitarias
 

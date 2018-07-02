@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 720a5d7ca5dfd0d8ab21100fa41c5b249a99858d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751681"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Cómo: Crear un complemento de Visual Studio para el visor de resultados de pruebas de rendimiento web
 
@@ -135,7 +136,7 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 6.  Desde el cuadro de herramientas, arrastre <xref:System.Windows.Forms.DataGridView> a la superficie de diseño de userControl1.
 
-7.  Haga clic en el glifo (![glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) situado en la esquina superior derecha de <xref:System.Windows.Forms.DataGridView> y siga estos pasos:
+7.  Haga clic en el glifo de etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha de <xref:System.Windows.Forms.DataGridView> y siga estos pasos:
 
     1.  Elija **Acoplar en contenedor primario**.
 

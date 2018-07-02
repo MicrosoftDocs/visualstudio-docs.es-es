@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750339"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3 del tutorial: Atender archivos estáticos, agregar páginas y usar la herencia de plantilla
 
 **Paso anterior: [Crear una aplicación de Django con vistas y plantillas de página](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-En los pasos anteriores de este tutorial, ha aprendido a crear una aplicación de Django mínima con una sola página HTML independiente. Sin embargo, las aplicaciones web modernas están formadas normalmente por muchas páginas y utilizan recursos compartidos, como archivos CSS y JavaScript, para proporcionar un comportamiento y un estilo uniformes.
+En los pasos anteriores de este tutorial, ha aprendido a crear una aplicación de Django mínima con una sola página HTML independiente. Pero las aplicaciones web modernas están formadas normalmente por muchas páginas y usan recursos compartidos, como archivos CSS y JavaScript, para proporcionar un comportamiento y un estilo uniformes.
 
 En este paso aprenderá lo siguiente:
 
@@ -40,8 +41,6 @@ Para ver las plantillas disponibles, vaya al **Explorador de soluciones**, haga 
 ![Cuadro de diálogo Agregar nuevo elemento en Visual Studio](media/django/step03-add-new-item-dialog.png)
 
 Para usar una plantilla, seleccione la plantilla deseada, especifique un nombre para el archivo y seleccione **Aceptar**. La adición de un elemento de este modo agrega automáticamente el archivo al proyecto de Visual Studio y marca los cambios para el control de código fuente.
-
-Visual Studio también agrega algunas opciones utilizadas con frecuencia al menú **Agregar** directamente. En un proyecto de Python, por ejemplo, podría ver los comandos **Página HTML** u **Hoja de estilos** en la parte inferior del menú **Agregar**, que le solicita un nombre y crea el archivo.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pregunta: ¿Cómo sabe Visual Studio qué plantillas de elemento debe ofrecer?
 
@@ -187,7 +186,7 @@ Una plantilla base delimita los bloques usando las etiquetas `{% block <block_na
 
 Los pasos siguientes muestran la herencia:
 
-1. En la carpeta `templates/HelloDjangoApp` de la aplicación, cree un nuevo archivo HTML (con el menú contextual **Agregar** > **Nuevo elemento** o **Agregar** > **Página HTML**) denominado `layout.html` y pegue el contenido siguiente. Puede ver que esta plantilla contiene un bloque denominado "content" que es todo lo que tienen que reemplazar las páginas de referencia:
+1. En la carpeta `templates/HelloDjangoApp` de la aplicación, cree un archivo HTML (mediante el menú contextual **Agregar** > **Nuevo elemento** o **Agregar** > **Página HTML**) denominado `layout.html` y reemplácelo por el siguiente marcado. Puede ver que esta plantilla contiene un bloque denominado "content" que es todo lo que tienen que reemplazar las páginas de referencia:
 
     ```html
     <!DOCTYPE html>

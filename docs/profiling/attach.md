@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cc2d1da953e0c358241a06ff99e7e47b014bd29
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34690632"
 ---
 # <a name="attach"></a>Attach
-La opción **Attach** de VSPerfCmd.exe comienza la generación de perfiles de muestra del proceso en ejecución que especifica el id. de proceso (PID).  
+La opción **Attach** de *VSPerfCmd.exe* comienza la generación de perfiles de muestra del proceso en ejecución que especifica el id. de proceso (PID).  
   
  Para usar la opción **Attach**, debe especificar el método **Sample** en la opción Start.  
   

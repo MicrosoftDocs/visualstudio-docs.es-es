@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3618c33c1d5dca9c676177cdce362b14b7f1858
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745583"
 ---
 # <a name="how-to-model-3d-terrain"></a>Cómo: modelar un terreno en 3D
 
@@ -26,7 +27,7 @@ Puede crear un terreno en 3D subdividiendo un plano para crear caras adicionales
 
 Cuando termine, el modelo debe tener este aspecto:
 
-![Escena 3D que muestra un modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Escena 3D en la que se muestra un modelo de terreno](../designers/media/digit-terrain-model.png)
 
 Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.
 
@@ -52,7 +53,7 @@ Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el 
 
 El modelo de terreno está completado. Este es el modelo final de nuevo, con sombreado Phong aplicado:
 
-![Escena 3D que muestra un modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![Escena 3D en la que se muestra un modelo de terreno](../designers/media/digit-terrain-model.png)
 
 Puede usar este modelo de terreno para mostrar el efecto del sombreador de degradado que se describe en [Cómo: Crear un sombreador de degradado basado en geometría](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

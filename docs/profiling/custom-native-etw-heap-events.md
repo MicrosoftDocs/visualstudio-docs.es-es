@@ -12,11 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d08abca1d20641a8e12261577ec1fdcf8179e080
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749465"
 ---
 # <a name="custom-native-etw-heap-events"></a>Eventos de montón ETW nativos personalizados
 
@@ -136,7 +137,7 @@ Esta biblioteca se puede usar fácilmente en C y C++.
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>Seguimiento del uso de la memoria
+## <a name="track-memory-usage"></a>Realizar un seguimiento del uso de la memoria
 Una vez realizadas estas llamadas, se puede realizar un seguimiento del uso del montón personalizado mediante la herramienta estándar **Uso de memoria** en Visual Studio.  Para obtener más información sobre cómo usar esta herramienta, vea la documentación sobre el [uso de memoria](../profiling/memory-usage.md). Asegúrese de que ha habilitado la generación de perfiles de montón con instantáneas. En caso contrario, no verá el uso del montón personalizado. 
 
 ![Habilitar la generación de perfiles de montón](media/heap-enable-heap.png)
@@ -154,7 +155,7 @@ El montón predeterminado *Montón de NT* tiene el mismo aspecto que antes, pero
 Al igual que en el montón de Windows estándar, también puede usar esta herramienta para comparar instantáneas y buscar fugas y daños en el montón personalizado. Esto se describe en la documentación principal sobre el [uso de memoria](../profiling/memory-usage.md).
 
 > [!TIP]
-> Visual Studio también contiene una herramienta **Uso de memoria** en el conjunto de herramientas **Generación de perfiles de rendimiento**, que se habilita en la opción de menú **Depurar > Generador de perfiles de rendimiento** o mediante la combinación de teclado **ALT+F2**.  Esta característica no incluye el seguimiento del montón y no mostrará el montón personalizado como se describe aquí.  Esta funcionalidad solo está incluida en la ventana **Herramientas de diagnóstico**, que se puede habilitar en el menú **Depurar > Windows > Mostrar herramientas de diagnóstico** o mediante la combinación de teclado **Ctrl+Alt+F2**.
+> Visual Studio también contiene la herramienta **Uso de memoria** en el conjunto de herramientas **Generación de perfiles de rendimiento**, que se habilita en la opción de menú **Depurar**>**Generador de perfiles de rendimiento** o mediante la combinación de teclado **Alt**+**F2**.  Esta característica no incluye el seguimiento del montón y no mostrará el montón personalizado como se describe aquí.  Esta funcionalidad solo está incluida en la ventana **Herramientas de diagnóstico**, que se puede habilitar en el menú **Depurar**>**Windows**>**Mostrar herramientas de diagnóstico** o mediante la combinación de teclado **Ctrl**+**Alt**+**F2**.
 
 ## <a name="see-also"></a>Vea también
 [Herramientas de generación de perfiles](../profiling/profiling-tools.md)  

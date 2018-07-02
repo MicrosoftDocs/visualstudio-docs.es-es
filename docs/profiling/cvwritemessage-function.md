@@ -28,13 +28,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf87ea20c3b37ffd6998cf078a08e1ef11049be5
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 966be7ab50c2e14ae43da7cf68d7ef6168255207
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34749631"
 ---
-# <a name="cvwritemessage-function"></a>CvWriteMessage (Función)
+# <a name="cvwritemessage-function"></a>Función CvWriteMessage
 Escribe un mensaje en el archivo de seguimiento del visualizador de simultaneidad.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -113,7 +114,7 @@ HRESULT CvWriteMessageExVA(
  S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** cvmarkers.h  
+ **Encabezado:** *cvmarkers.h*  
   
  **Unicode:** CvWriteMessageW, CvWriteMessageVW, CvWriteMessageExW, CvWriteMessageExVW  
   

@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750498"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Paso 6 del tutorial: Uso de la plantilla Proyecto web de Django de sondeos
 
@@ -111,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-Como puede ver, un modelo Poll mantiene una descripción en su campo `text` y una fecha de publicación en `pub_date`. Estos campos son identificadores únicos que existen para el elemento Poll de la base de datos; el campo `total_votes` se calcula en tiempo de ejecución.
+Como puede ver, un modelo Poll mantiene una descripción en su campo `text` y una fecha de publicación en `pub_date`. Estos campos son los únicos que existen para el elemento Poll de la base de datos. El campo `total_votes` se calcula en tiempo de ejecución.
 
 Un elemento Choice se relaciona con un elemento Poll a través del campo `poll`, contiene una descripción en `text` y mantiene un recuento para esa opción en `votes`. El campo `votes_percentage` se calcula en tiempo de ejecución y no se encuentra en la base de datos.
 

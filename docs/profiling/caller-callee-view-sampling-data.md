@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e964ec877b791fc3058068e2f89706cc5826e0f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335975"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548715"
 ---
-# <a name="caller--callee-view---sampling-data"></a>Vista Llamador y destinatario: datos de muestreo
+# <a name="callercallee-view---sampling-data"></a>Vista Llamador y destinatario: datos de muestreo
 La vista Llamador y destinatario muestra información de generación de perfiles para una función seleccionada y sus funciones primarias y secundarias. La vista Llamador y destinatario contiene tres cuadrículas.  
   
  **Función actual** se muestra en la cuadrícula central e incluye información sobre la generación de perfiles para la función seleccionada. Los valores incluyen todas las llamadas a la función que se muestrearon.  

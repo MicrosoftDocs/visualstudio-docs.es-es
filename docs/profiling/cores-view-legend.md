@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c10695eacdf680d247be8ef95ae14c3208ae92af
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ee31b1547f9607f54cc5db9d056b997f071633ff
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691592"
 ---
 # <a name="cores-view-legend"></a>Leyenda de la vista Núcleos
 La leyenda de la vista Núcleos identifica cada subproceso por color y nombre. Incluye columnas que muestran recuentos para los cambios de contexto entre núcleos, el total de cambios de contexto y el porcentaje de cambios de contexto que atraviesan núcleos. Las filas de la leyenda se ordenan por el número de cambios de contexto entre núcleos, en orden decreciente.  

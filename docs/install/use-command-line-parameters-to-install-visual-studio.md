@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a27148619879ea90dba21704a0aa57fdf5f04551
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477371"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
 
@@ -60,7 +61,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `--installPath <dir>` | El directorio de instalación en el que actuará la instancia. Para el comando de instalación, es **opcional** y es el lugar donde se instalará la instancia. Para otros comandos, es **obligatorio** y es la ubicación en la que se instaló la instancia anteriormente. |
 | `--addProductLang <language-locale>` | **Opcional**: durante una operación de instalación o modificación, determina los paquetes de idioma de la interfaz de usuario que se van a instalar con el producto. Puede aparecer varias veces en la línea de comandos para agregar varios paquetes de idioma. Si no está presente, la instalación usa la configuración regional del equipo. Para obtener más información, consulte la sección [Lista de configuraciones regionales de idioma](#list-of-language-locales) de esta página.|
 | `--removeProductLang <language-locale>` | **Opcional**: durante una operación de instalación o modificación, determina los paquetes de idioma de la interfaz de usuario que se van a quitar del producto. Puede aparecer varias veces en la línea de comandos para agregar varios paquetes de idioma. Para obtener más información, consulte la sección [Lista de configuraciones regionales de idioma](#list-of-language-locales) de esta página.|
-| `--add <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para agregar. Se instalan los componentes necesarios del artefacto, pero no los componentes recomendados ni opcionales. Puede controlar los componentes adicionales de forma global mediante `--includeRecommended` o `--includeOptional`. Para un control más preciso, puede anexar `;includeRecommended` o `;includeOptional` al identificador (por ejemplo, `--add Workload1;includeRecommended` o `--add Workload2;includeRecommended;includeOptional`). Para obtener más información, consulte la página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). Puede repetir esta opción según sea necesario.|
+| `--add <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para agregar. Se instalan los componentes necesarios del artefacto, pero no los componentes recomendados ni opcionales. Puede controlar los componentes adicionales de forma global mediante `--includeRecommended` o `--includeOptional`. Para incluir varias cargas de trabajo o componentes, repita el comando `--add` (por ejemplo, `--add Workload1 --add Workload2`). Para un control más preciso, puede anexar `;includeRecommended` o `;includeOptional` al identificador (por ejemplo, `--add Workload1;includeRecommended` o `--add Workload2;includeRecommended;includeOptional`). Para obtener más información, consulte la página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). Puede repetir esta opción según sea necesario.|
 | `--remove <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para quitar. Para obtener más información, consulte nuestra página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). Puede repetir esta opción según sea necesario.|
 | `--in <path>` | **Opcional**: el URI o la ruta de acceso de un archivo de respuesta.  |
 | `--all` | **Opcional**: si se instalan o no todas las cargas de trabajo y componentes para un producto. |

@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95996165351be2ead2f24556da1bfdcdd6fcc048
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746837"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Paso 2: Agregar un objeto aleatorio y una lista de iconos
 En este paso, creará un conjunto de símbolos para formar parejas en el juego. Cada símbolo se agrega a dos celdas aleatorias del elemento TableLayoutPanel en el formulario. Para ello, se utilizan dos instrucciones `new` para crear dos objetos. El primero es un objeto <xref:System.Random> como el usado en el juego de la prueba de matemáticas. Se utiliza en este código para elegir aleatoriamente celdas de TableLayoutPanel. El segundo objeto, que tal vez no conozca, es un objeto <xref:System.Collections.Generic.List%601> que se utiliza para almacenar los símbolos elegidos al azar.
@@ -35,7 +36,7 @@ En este paso, creará un conjunto de símbolos para formar parejas en el juego. 
 
 3.  Al agregar el objeto de lista, observe que se abre la ventana **IntelliSense**. El ejemplo siguiente corresponde a Visual C#, pero aparece un texto similar cuando se agrega una lista en Visual Basic.
 
-     ![Ventana Propiedades en la que se muestra el evento Click](../ide/media/express_listintellisense.png "Express_ListIntellisense") Ventana de IntelliSense
+     ![Ventana Propiedades en la que se muestra el evento Click](../ide/media/express_listintellisense.png) Ventana de IntelliSense
 
     > [!NOTE]
     >  La ventana de IntelliSense solo aparece cuando se escribe código manualmente. Si copia y pega el código, no aparece.

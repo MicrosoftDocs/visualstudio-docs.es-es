@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34692306"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores del Visualizador de simultaneidad
 En el visualizador de simultaneidad, los marcadores son iconos que representan los eventos que se producen en una aplicación.  Normalmente, la aplicación genera estos eventos para designar las fases o las instancias de una aplicación.  Los eventos se pueden generar mediante la aplicación o las bibliotecas y los runtimes que utiliza la aplicación.  
@@ -34,7 +35,7 @@ En el visualizador de simultaneidad, los marcadores son iconos que representan l
  Cada subproceso que genera marcadores tiene un canal de escala de tiempo independiente.  El identificador del subproceso que es responsable de generar los eventos de marcador se muestra junto a la descripción del canal de marcador.  El identificador que se muestra en el lado izquierdo del canal de marcador coincide con el de otro subproceso en el proceso actual.  
   
 ## <a name="marker-importance"></a>Importancia de los marcadores  
- Los marcadores pueden tener uno de cuatro niveles de importancia: baja, normal, alta y crítica.  Los orígenes de los marcadores se pueden filtrar según el nivel de importancia.  Por ejemplo, si solo quiere ver los marcadores de un origen concreto que tenga importancia crítica o normal, puede configurar el filtro en el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). La importancia de un marcador se muestra en la información sobre herramientas y en el [Informe de marcadores](../profiling/markers-report.md).  
+ Los marcadores pueden tener uno de cuatro niveles de importancia: baja, normal, alta y crítica.  Los orígenes de los marcadores se pueden filtrar según el nivel de importancia.  Por ejemplo, si solo quiere ver los marcadores de un origen concreto que tenga importancia crítica o normal, puede configurar el filtro en el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). La importancia de un marcador aparece en la información sobre herramientas y en el [informe Marcadores](../profiling/markers-report.md).  
   
 ## <a name="marker-category"></a>Categoría de los marcadores  
  Una categoría de marcador indica un grupo de eventos de marcador que proceden del mismo origen.  El visualizador de simultaneidad usa colores para distinguir las diferentes categorías de marcas e intervalos. El visualizador de simultaneidad se puede configurar para que use categorías con las que filtrar los eventos de marcador de un proveedor de eventos determinado.  Utilice el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para configurar el filtro.  
@@ -59,7 +60,7 @@ En el visualizador de simultaneidad, los marcadores son iconos que representan l
  Puede utilizar la pestaña Marcadores en el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para controlar si los marcadores de diversos orígenes se muestran en el visualizador de simultaneidad y puede filtrar por marcadores según la importancia y la categoría.  
   
 ## <a name="markers-from-eventsource"></a>Marcadores de EventSource  
- El visualizador de simultaneidad también puede mostrar eventos EventSource.  Para obtener más información, consulte [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).  
+ El visualizador de simultaneidad también puede mostrar eventos EventSource.  Para obtener más información, vea [Visualizar eventos EventSource como marcadores](../profiling/visualizing-eventsource-events-as-markers.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Marcadores de marca](../profiling/flag-markers.md)   

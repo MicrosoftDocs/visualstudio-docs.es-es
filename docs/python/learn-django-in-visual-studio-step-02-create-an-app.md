@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750511"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Paso 2 del tutorial: Crear una aplicación de Django con vistas y plantillas de página
 
@@ -210,9 +211,7 @@ En los pasos siguientes se muestra el uso de las plantillas de página:
 
 1. Ejecute el proyecto y observe la salida. Verá un mensaje similar al del paso 2.2, que indica que la plantilla funciona.
 
-    Sin embargo, tenga en cuenta que el código HTML que usó en la propiedad `content` se representa solo como texto sin formato porque la función `render` convierte automáticamente en escape ese HTML. Aunque puede eludir secuencias de escape, lo ideal es que lo evite utilizando HTML alineado en primer lugar. El estilo y el formato se conservan mejor en la plantilla de página, no en el código, y es sencillo crear variables adicionales cuando sea necesario.
-
-    Por ejemplo, cambie `templates/index.html` para que coincida con el siguiente marcado, que agrega un título de página y mantiene todo el formato en la plantilla de página:
+    Sin embargo, tenga en cuenta que el código HTML que usó en la propiedad `content` se representa solo como texto sin formato porque la función `render` convierte automáticamente en escape ese HTML. El escape automático evita vulnerabilidades accidentales en los ataques por inyección de código: los desarrolladores suelen recopilar información de una página y emplearla como valor en otra mediante un marcador de posición de plantilla. El escape también sirve como recordatorio de que es mejor conservar el HTML en la plantilla de página y fuera del código. Por suerte, resulta sencillo crear variables adicionales cuando es necesario. Por ejemplo, cambie `templates/index.html` para que coincida con el siguiente marcado, que agrega un título de página y mantiene todo el formato en la plantilla de página:
 
     ```html
     <html>

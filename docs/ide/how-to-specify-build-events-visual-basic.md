@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 849a0b14e5b4453a2e4bd60fc25a59b04add224b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d673877ecabcbd68759c7f1e7fa821335f8eb6c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746213"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Cómo: Especificar eventos de compilación (Visual Basic)
 
@@ -69,7 +70,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 3.  En *Module1.vb*, agregue la línea siguiente a las demás instrucciones `Imports` de la parte superior del archivo:
 
-    ```
+    ```vb
     Imports System.Xml
     ```
 
@@ -128,7 +129,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 1.  Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.
 
-2.  En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Escritorio clásico de Windows** y, después, la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `VBWinApp`.
+2.  En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Escritorio de Windows** y, después, la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `VBWinApp`.
 3.  Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.
 
 4.  En el **Diseñador de proyectos**, vaya a la página **Publicar** y establezca **Ubicación de publicación** en *C:\TEMP*.

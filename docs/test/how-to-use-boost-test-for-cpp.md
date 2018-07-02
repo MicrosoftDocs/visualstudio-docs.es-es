@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751629"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Cómo usar Boost.Test para C++ en Visual Studio
 
 En la **versión 15.5 de Visual Studio 2017** y en las versiones posteriores, el adaptador de prueba Boost.Test se integra en el IDE de Visual Studio como componente de la carga de trabajo **Desarrollo para el escritorio con C++**.
 
-![Test Adapter para Boost.Test](media/cpp-boost-component.png "Componente de Test Adapter para Boost.Test")
+![Test Adapter para Boost.Test](media/cpp-boost-component.png)
 
 Si no tiene instalada la carga de trabajo **Desarrollo para el escritorio con C++**, abra el **Instalador de Visual Studio** y seleccione **Modificar**. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija el botón **Modificar**.
 
@@ -43,7 +44,7 @@ Boost.Test requiere [Boost](http://www.boost.org/)! Si no tiene Boost instalado,
 
 1. Para crear un archivo .cpp para las pruebas, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y elija **Agregar nuevo elemento**.
 
-   ![Plantilla de elemento de Boost.Test](media/boost_test_item_template.png "Plantilla de elemento de Boost.Test")
+   ![Plantilla de elemento Boost.Test](media/boost_test_item_template.png)
 
 1. El archivo nuevo contiene un método de prueba de ejemplo. Compile el proyecto para permitir que el **Explorador de pruebas** descubra el método.
 
@@ -87,7 +88,7 @@ En la versión 15.5 de Visual Studio 2017, no hay disponible ninguna plantilla d
 
 1. En el archivo .cpp de prueba, agregue las directivas `#include` que sean necesarias para que los tipos y funciones del programa estén visibles en el código de prueba. El programa suele estar un nivel por encima en la jerarquía de carpetas. Si escribe `#include "../"`, aparecerá una ventana de IntelliSense en la que podrá seleccionar la ruta de acceso completa al archivo de encabezado.
 
-   ![Agregar directivas #include](media/cpp-gtest-includes.png "Agregar directivas #include al archivo .cpp de prueba")
+   ![Agregar directivas #include](media/cpp-gtest-includes.png)
 
    Puede usar la biblioteca independiente con lo siguiente:
 

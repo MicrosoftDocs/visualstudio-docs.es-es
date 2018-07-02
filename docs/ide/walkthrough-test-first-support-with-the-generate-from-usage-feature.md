@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 866c4e1762efe6bb94586fc1c7258ffaa309eea8
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748197"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
 
@@ -41,7 +42,7 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
 3.  En el panel central, elija **Proyecto de prueba unitaria** y acepte el nombre predeterminado, `UnitTestProject1`. En la siguiente ilustración se muestra el cuadro de diálogo cuando aparece en [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], el cuadro de diálogo es similar.
 
-     ![Cuadro de diálogo Nuevo proyecto de prueba](../ide/media/newproject_test.png "NewProject_Test")
+     ![Cuadro de diálogo Nuevo proyecto de prueba](../ide/media/newproject_test.png)
 
 4.  Elija **Aceptar** para cerrar el cuadro de diálogo **Nuevo proyecto**.
 
@@ -66,9 +67,9 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
 3.  Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una instancia de una clase denominada `Automobile`, como se muestra en las siguientes capturas de pantalla. Aparece un subrayado ondulado, que indica un error en tiempo de compilación. También aparece una bombilla [Acciones rápidas](../ide/quick-actions.md) en el margen izquierdo (solo para C#) o directamente debajo de la línea ondulada si sitúa el cursor encima.
 
-     ![Acciones rápidas en Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")
+     ![Acciones rápidas en Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Acciones rápidas en C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")
+     ![Acciones rápidas en C&#35;](../ide/media/genclass_underline.png)
 
 4.  Elija o haga clic en la bombilla **Acciones rápidas**. Verá un mensaje de error que indica que el tipo `Automobile` no está definido. También se le presentarán algunas soluciones.
 
@@ -76,7 +77,7 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
 6. En la lista **Proyecto**, haga clic en **GFUDemo\_VB** o en **GFUDemo_CS** para indicar a Visual Studio que agregue el archivo al proyecto de biblioteca de clases en lugar de agregarlo al proyecto de prueba. Si aún no está seleccionado, elija **Crear nuevo archivo** y asígnele el nombre *Automobile.cs* o *Automobile.vb*.
 
-     ![Cuadro de diálogo Generar nuevo tipo](../ide/media/genotherdialog.png "GenOtherDialog")
+     ![Cuadro de diálogo Generar nuevo tipo](../ide/media/genotherdialog.png)
 
 6.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo y crear el nuevo archivo.
 
@@ -133,7 +134,7 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
 
      La ventana **Navegar a** se muestra en la siguiente ilustración.
 
-     ![Resultados de pruebas con error](../ide/media/testsfailed.png "TestsFailed")
+     ![Resultados de pruebas no superados](../ide/media/testsfailed.png)
 
 2.  En la ventana **Resultados de pruebas**, haga doble clic en cada fila de resultados de pruebas para ir a la ubicación de cada prueba.
 
@@ -155,7 +156,7 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
 
      Esta vez las pruebas son correctas. La ventana **Navegar a** se muestra en la siguiente ilustración.
 
-     ![Resultados de pruebas superados](../ide/media/testspassed.png "TestsPassed")
+     ![Resultados de pruebas superados](../ide/media/testspassed.png)
 
 ## <a name="see-also"></a>Vea también
 

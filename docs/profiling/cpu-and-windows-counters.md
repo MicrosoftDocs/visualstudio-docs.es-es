@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748743"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 
@@ -45,7 +46,7 @@ El generador de perfiles de Visual Studio sigue admitiendo eventos concretos par
 
 Los eventos portátiles son un grupo de contadores de CPU que no son específicos de un procesador determinado. Todos los demás contadores de CPU se denominan eventos de plataforma y podrían no admitirse en diversas plataformas.
 
- Los contadores para eventos portátiles y de plataforma se definen en archivos .XML, en que se proporcionan valores específicos relacionados con los contadores. Existen varios archivos para diferentes CPU, porque los datos de las CPU de Intel y AMD, por ejemplo, son diferentes. El generador de perfiles [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] utiliza esta información para mostrarle al usuario contadores adecuados, tanto portátiles como de la plataforma, para medir el rendimiento.
+ Los contadores para eventos portátiles y de plataforma se definen en archivos .*xml*, en los que se proporcionan valores específicos relacionados con los contadores. Existen varios archivos para diferentes CPU, porque los datos de las CPU de Intel y AMD, por ejemplo, son diferentes. El generador de perfiles [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] utiliza esta información para mostrarle al usuario contadores adecuados, tanto portátiles como de la plataforma, para medir el rendimiento.
 
 ### <a name="portable-events"></a>Eventos portátiles
 
@@ -78,7 +79,7 @@ Los eventos portátiles incluyen los siguientes eventos:
 |Líneas no ejecutadas en la lectura de caché en L2|Indica el número de líneas no ejecutadas en la lectura de caché de segundo nivel.|
 |Referencias de lectura de caché en L2|Indica el número de referencias en la lectura de caché de segundo nivel. Incluye líneas no ejecutadas de carga, así como líneas no ejecutadas y aciertos en la lectura de propiedad (RFO).|
 
-## <a name="viewing-available-counters"></a>Ver los contadores disponibles
+## <a name="view-available-counters"></a>Ver los contadores disponibles
 
 Los contadores de CPU disponibles en el IDE de Visual Studio se pueden enumerar en una ventana del símbolo del sistema.
 
@@ -126,13 +127,13 @@ Mediante la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     donde **\<Visual Studio Performance Tools Directory>** es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio, normalmente
+     donde *\<Visual Studio Performance Tools Directory>* es la ruta de acceso al directorio de herramientas de rendimiento de la instalación de Visual Studio, normalmente
 
-     C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *C:\Archivos de programa\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 ## <a name="see-also"></a>Vea también
 
 [Información general](../profiling/overviews-performance-tools.md)  
-[Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)  
-[Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
+[Elección de eventos de muestreo](../profiling/how-to-choose-sampling-events.md)  
+[Recopilación de datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
 [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)

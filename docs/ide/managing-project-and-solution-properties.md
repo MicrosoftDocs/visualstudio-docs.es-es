@@ -9,21 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b39c4d1e515530f50d086cb107d4ec0d297d48
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746317"
 ---
 # <a name="manage-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 
 Los proyectos tienen propiedades que controlan muchos aspectos de la compilación, la depuración, las pruebas y la implementación. Algunas propiedades están presentes en todos los tipos de proyecto, mientras que otras son exclusivas de plataformas o idiomas específicos. Para acceder a las propiedades del proyecto, haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y elija **Propiedades**, o bien escriba "propiedades" en el cuadro de búsqueda **Inicio rápido** de la barra de menús.
 
-![Menú contextual del proyecto](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")
+![Menú contextual del proyecto](../ide/media/vs2015_proj_prop_menu.gif)
 
 Los proyectos de .NET también pueden tener un nodo de propiedades en el propio árbol del proyecto.
 
-![Nodo de propiedades en el árbol del Explorador de soluciones](../ide/media/vs2015_props_se.png "VS2015_Props_SE")
+![Nodo de propiedades en el árbol del explorador de soluciones](../ide/media/vs2015_props_se.png)
 
 ## <a name="project-properties"></a>Propiedades del proyecto
 
@@ -33,7 +34,7 @@ Las propiedades del proyecto se organizan en grupos y cada grupo tiene su propia
 
 En los proyectos de C#, F# y Visual Basic, las propiedades se exponen en el **Diseñador de proyectos**. En la siguiente ilustración se muestra la página **Propiedad de compilación** de un proyecto de WPF en C#:
 
-![Diseñador de proyectos de Visual Studio](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")
+![Diseñador de proyectos de Visual Studio](../ide/media/vs2015_proppage_build.png)
 
 Para obtener información sobre estas páginas de propiedades en el **Diseñador de proyectos**, vea [Referencia de propiedades del proyecto](../ide/reference/project-properties-reference.md).
 
@@ -44,7 +45,7 @@ Para obtener información sobre estas páginas de propiedades en el **Diseñador
 
 Los proyectos de C++ y JavaScript tienen una interfaz de usuario diferente para administrar las propiedades del proyecto. Esta ilustración muestra una página de propiedades de un proyecto de C++ (las páginas de JavaScript son similares):
 
-![Propiedades de proyecto de Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Propiedades de proyecto de Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
 Para obtener información sobre las propiedades de proyectos de C++, vea [Trabajar con configuraciones de proyecto (C++)](/cpp/ide/working-with-project-properties). Para obtener más información sobre las propiedades de JavaScript, vea [Página de propiedades, JavaScript](../ide/reference/property-pages-javascript.md).
 

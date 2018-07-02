@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750368"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Paso 4 del tutorial: Usar la plantilla completa Proyecto web de Django
 
@@ -40,7 +41,7 @@ La plantilla también proporciona autenticación básica, que se explica en el p
 
 1. Dado que la plantilla de nuevo incluye un archivo `requirements.txt`, Visual Studio le pregunta dónde desea instalar estas dependencias. Elija la opción **Install into a virtual environment** (Instalar en un entorno virtual) y, en el cuadro de diálogo **Agregar entorno virtual**, seleccione **Crear** para aceptar los valores predeterminados.
 
-1. Una vez que Python finalice la configuración del entorno virtual, siga las instrucciones del `readme.html` que aparece para crear un superusuario de Django (esto es, un administrador). Simplemente haga clic con el botón derecho en el proyecto de Visual Studio y seleccione el comando **Python** > **Django Create Superuser** (Crear superusuario de Django); a continuación, siga las indicaciones. Asegúrese de registrar su nombre de usuario y contraseña cuando los use al ejecutar las características de autenticación de la aplicación.
+1. Una vez que Visual Studio haya finalizado la configuración del entorno virtual, siga las instrucciones del `readme.html` que aparece para crear un superusuario de Django (esto es, un administrador). Simplemente haga clic con el botón derecho en el proyecto de Visual Studio y seleccione el comando **Python** > **Django Create Superuser** (Crear superusuario de Django); a continuación, siga las indicaciones. Asegúrese de registrar su nombre de usuario y contraseña cuando los use al ejecutar las características de autenticación de la aplicación.
 
 1. Modifique la configuración para que el proyecto "DjangoWeb" sea el predeterminado para la solución de Visual Studio; para ello, haga clic con el botón derecho en ese proyecto en el **Explorador de soluciones** y seleccione **Establecer como proyecto de inicio**. El proyecto de inicio, que se muestra en negrita, es lo que ejecuta cuando se inicia el depurador.
 

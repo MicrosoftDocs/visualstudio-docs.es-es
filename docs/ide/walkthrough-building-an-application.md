@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748223"
 ---
 # <a name="walkthrough-build-an-application"></a>Tutorial: Compilar una aplicación
 
@@ -33,31 +34,31 @@ Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadr
 
 1. Abra el cuadro de diálogo **Administrador de configuración**.
 
-   ![Menú Compilar, comando Administrador de configuración](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![Menú Compilar, comando Administrador de configuración](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. En la lista **Configuración de soluciones activas**, elija **\<Nueva...\>**.
 
 1. En el cuadro de diálogo **Nueva configuración de la solución**, asigne a la nueva configuración el nombre `Test`, copie valores de la configuración de **depuración** existente y luego elija el botón **Aceptar**.
 
-   ![Cuadro de diálogo Nueva configuración de la solución](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![Cuadro de diálogo Nueva configuración de la solución](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. En la lista **Plataforma de soluciones activas**, elija **\<Nueva...\>**.
 
 1. En el cuadro de diálogo **Nueva plataforma de soluciones**, elija **x64** y no copie valores de la plataforma x86.
 
-   ![Cuadro de diálogo Nueva plataforma de solución](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![Cuadro de diálogo Nueva plataforma de solución](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. Elija el botón **Aceptar** .
 
    La configuración de soluciones activa ha cambiado a **Prueba** y la plataforma de soluciones activas se ha establecido en x64.
 
-   ![Administrador de configuración con configuración de prueba](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![Administrador de configuración con una configuración de prueba](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. Elija **Cerrar**.
 
 Puede comprobar o cambiar rápidamente la configuración de soluciones activas mediante la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar**.
 
-![Opción Configuración de soluciones de la barra de herramientas Estándar](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![Opción Configuración de soluciones de la barra de herramientas estándar](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>Compilar la aplicación
 
@@ -83,9 +84,9 @@ A continuación presentamos determinado código que causa que el compilador gene
 
 La ventana **Salida** muestra los resultados de la compilación. La compilación se ha realizado correctamente, pero se han generado advertencias:
 
-![Ventana de salida de Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![Ventana de salida de Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![Ventana de salida de Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Ventana de salida de Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 Es posible ocultar temporalmente determinados mensajes de advertencia durante una compilación en lugar de que se acumulen en los resultados de la compilación.
 
@@ -99,7 +100,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 1. Elija la página **Compilación** y, después, en el cuadro **Suprimir advertencias**, especifique el número de advertencia **0168**.
 
-     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      Para obtener más información, consulte [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -107,7 +108,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
      La ventana **Salida** solo muestra información de resumen de la compilación.
 
-     ![Ventana de salida, advertencias de compilación de Visual C&#35;](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![Ventana de salida, advertencias de compilación de Visual C&#35;](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>Suprimir todas las advertencias de compilación de Visual Basic
 
@@ -119,7 +120,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 1. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
 
-     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsupresswarnings.png)
 
      Para obtener más información, vea [Configurar advertencias en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -127,7 +128,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
  La ventana **Salida** solo muestra información de resumen de la compilación.
 
- ![Ventana de salida, advertencias de compilación de Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![Ventana de salida, advertencias de compilación de Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  Para obtener más información, consulte [Cómo: Suprimir advertencias del compilador](../ide/how-to-suppress-compiler-warnings.md).
 
@@ -143,7 +144,7 @@ Se puede cambiar la cantidad de información sobre el proceso de compilación qu
 
 1. Abra el cuadro de diálogo **Opciones**.
 
-     ![Comando Opciones en el menú Herramientas](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")
+     ![Comando Opciones del menú Herramientas](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. Elija la categoría **Proyectos y soluciones** y luego elija la página **Compilar y ejecutar**.
 
@@ -174,7 +175,7 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
 1. Abra el **Diseñador de proyectos**.
 
-     ![Menú Ver, comando Páginas de propiedades](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menú Ver, comando Páginas de propiedades](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Elija la página **Compilación**.
 
@@ -191,13 +192,13 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
 1. Compile la aplicación.
 
-     ![El comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>Especificar una compilación de versión para C# #
 
 1. Abra el **Diseñador de proyectos**.
 
-     ![Menú Ver, comando Páginas de propiedades](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![Menú Ver, comando Páginas de propiedades](../ide/media/buildwalk_viewpropertypages.png)
 
 1. Seleccione la página **Compilación**.
 
@@ -216,7 +217,7 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
 1. Compile la aplicación.
 
-     ![El comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png)
 
    El archivo ejecutable se copia a la ruta de acceso de red especificada. La ruta de acceso sería `\\myserver\builds\\FileName.exe`.
 

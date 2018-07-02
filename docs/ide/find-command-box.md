@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c93c2d77f62fe22c682240b879b85af8040974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5e11d83ea0c87bae058f5421c424922fa389a9c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752416"
 ---
 # <a name="findcommand-box"></a>Buscar/Comando (cuadro)
 
@@ -27,7 +28,7 @@ Para ejecutar un comando de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md
 
 El cuadro **Buscar comando** conserva los últimos 20 elementos escritos y los muestra en una lista desplegable. Puede navegar por la lista con las **teclas de dirección**.
 
-![Cuadro Buscar comando](../ide/media/findcommandbox.png "FindCommandBox")
+![Cuadro Buscar&#47;Comando](../ide/media/findcommandbox.png)
 
 ## <a name="searching-for-text"></a>Buscar texto
 

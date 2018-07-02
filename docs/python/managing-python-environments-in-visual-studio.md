@@ -1,7 +1,7 @@
 ---
 title: Administración de entornos e intérpretes de Python
 description: Use la ventana Entornos de Python para administrar entornos globales, virtuales y de conda, instalar paquetes e intérpretes de Python y asignar entornos a proyectos de Visual Studio.
-ms.date: 05/07/2018
+ms.date: 05/22/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1ba3902fde77e297148c2006f89dd61bca1e902b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477579"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 
 Un *entorno* de Python es un contexto en el que se ejecuta el código de Python e incluye los entornos globales, virtuales y de conda. Un entorno consta de un intérprete, una biblioteca (normalmente la biblioteca estándar de Python) y un conjunto de paquetes instalados. Todos estos componentes determinan qué construcciones de lenguaje y sintaxis son válidas, a qué función de sistema operativo puede acceder y qué paquetes puede usar.
 
-En Visual Studio en Windows, es en la ventana de [entornos de Python](#the-python-environments-window), tal como se describe en este artículo, donde administra estos entornos y selecciona uno como el valor predeterminado para los proyectos nuevos. Para un proyecto dado, también puede seleccionar un entorno específico en lugar de usar el valor predeterminado.
+En Visual Studio en Windows, es en la ventana de [entornos de Python](#the-python-environments-window), tal como se describe en este artículo, donde administra estos entornos y selecciona uno como el valor predeterminado para los proyectos nuevos. Para un proyecto dado, también puede [seleccionar un entorno específico](selecting-a-python-environment-for-a-project.md) en lugar de usar el valor predeterminado.
 
 **Nota**: Si no está familiarizado con Python en Visual Studio, vea los siguientes artículos para obtener los conocimientos necesarios:
 
@@ -30,7 +31,7 @@ En Visual Studio en Windows, es en la ventana de [entornos de Python](#the-pytho
 
 También debe tener en cuenta que no puede administrar los entornos para el código de Python que se abre solo como carpeta con el comando **Archivo** > **Abrir** > **Carpeta**. En su lugar, [cree un proyecto de Python a partir del código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md) para disfrutar de las características del entorno de Visual Studio.
 
-Si desea instalar paquetes en un entorno, consulte la [pestaña Paquetes](python-environments-window-tab-reference.md#packages-tab).
+Si quiere instalar paquetes en un entorno, vea la referencia de la [pestaña Paquetes](python-environments-window-tab-reference.md#packages-tab).
 
 ## <a name="types-of-environments"></a>Tipos de entornos
 
@@ -55,9 +56,10 @@ Un entorno de Conda es el creado mediante la herramienta `conda` o con la admini
 
 Para ver la versión de conda, donde se almacenan los entornos de Conda, y otra información, ejecute `conda info` en un símbolo del sistema de Anaconda (es decir, un símbolo del sistema donde Anaconda está en la ruta de acceso):
 
-```bash
+```cli
 conda info
 ```
+
 Las carpetas de entorno de Conda tienen el siguiente aspecto:
 
 ```output
@@ -85,17 +87,18 @@ En cualquier caso, la ventana **Entornos de Python** aparece como una pestaña d
 
 ![Ventana Python Environments (Entornos de Python)](media/environments-default-view.png)
 
-El entorno predeterminado en negrita es Python 3.6, que Visual Studio usa para los nuevos proyectos. Se puede usar cualquier entorno de la lista, de cualquier tipo, como el valor predeterminado.
+Si no ve un entorno previsto en la lista, vea [Identificación manual de un entorno existente](#manually-identify-an-existing-environment).
 
-Los comandos que aparecen en la parte inferior de la ventana se aplican al intérprete seleccionado que, como puede ver, es la instalación específica en `C:\Python36-32` (el entorno predeterminado en negrita es parte de una instalación de Anaconda). Si no ve un entorno que espera, consulte [Identificación manual de un entorno existente](#manually-identify-an-existing-environment).
+Al seleccionar un entorno de la lista, se muestran distintas propiedades y comandos de ese entorno en la pestaña **Información general**. Por ejemplo, en la imagen anterior puede ver que la ubicación del intérprete es `C:\Python36-32`. Use la lista desplegable situada debajo de la lista de entornos para cambiar de pestañas, como **Paquetes** o **IntelliSense**. Estas pestañas se describen en [Referencia de pestañas de la ventana Entornos de Python](python-environments-window-tab-reference.md).
 
-A la derecha de cada entorno de la lista figura un control que abre una ventana interactiva para ese entorno. En Visual Studio 2017, versión 15.5 y anteriores, aparece otro control que actualiza la base de datos de IntelliSense para ese entorno. Vea [Environments window reference](python-environments-window-tab-reference.md#intellisense-tab) (Referencia de la ventana de entornos) para obtener más información acerca de la base de datos.
+Al seleccionar un entorno, este no se activa de forma alguna. El entorno predeterminado, que aparece en negrita en la lista, es el entorno que está activado actualmente y que Visual Studio usa para todos los proyectos nuevos. Para activar otro entorno, use el comando **Convertir este entorno en el predeterminado para nuevos proyectos**. En el contexto de un proyecto siempre puede activar otro entorno. Para obtener más información, consulte [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
 
-Debajo de la lista de entornos hay un selector desplegable para las opciones **Introducción**, **Paquetes** e **IntelliSense** que se describen en el artículo sobre la [referencia de pestaña de la ventana Entornos de Python](python-environments-window-tab-reference.md). Además, si expande la ventana **Entornos de Python** con un ancho suficiente, estas opciones se muestran como pestañas, lo cual puede resultarle más cómodo:
+A la derecha de cada entorno de la lista figura un control que abre una ventana interactiva para ese entorno. En Visual Studio 2017, versión 15.5 y anteriores, aparece otro control que actualiza la base de datos de IntelliSense para ese entorno. Vea [Referencia de pestañas de la ventana Entornos de Python](python-environments-window-tab-reference.md#intellisense-tab) para obtener información detallada sobre la base de datos.
 
-![Vista de la ventana Python Environments (Entornos de Python) expandida](media/environments-expanded-view.png)
-
-En la imagen anterior puede ver la lista completa de los entornos en este equipo en particular, junto con los comandos adicionales para crear entornos.
+> [!Tip]
+> Si expande la ventana **Entornos de Python** con un ancho suficiente, obtendrá una vista más completa de los entornos con la que podrá trabajar de una manera más cómoda.
+>
+> ![Vista de la ventana Python Environments (Entornos de Python) expandida](media/environments-expanded-view.png)
 
 > [!Note]
 > Aunque Visual Studio respeta la opción de paquetes de sitio de sistema, no ofrece una forma de cambiarla desde dentro de Visual Studio.

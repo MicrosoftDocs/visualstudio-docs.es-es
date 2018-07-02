@@ -15,11 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec694fc904df2fd15ada008d9cb9f64f1df8492e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752097"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -84,7 +85,7 @@ En algunas situaciones, se utilizarán diferentes bloques de código, en funció
 
  Por ejemplo, suponga que al ejecutar una prueba con la entrada “2", se detecta que el 50 % de una determinada función está cubierto. Al ejecutar la prueba una segunda vez con la entrada “-2" se observa en la vista de color de destino que el otro 50 % de la función está cubierto. Ahora se fusionan mediante combinación los resultados de las dos series de pruebas y tanto el informe como la vista de color de cobertura muestran que el 100 % de la función se ha analizado.
 
- Utilice ![icono para el botón Combinar en la ventana de cobertura de código](../test/media/codecoverage-mergeicon.png "CodeCoverage MergeIcon")**combinar resultados de la cobertura de código** para ello. Se puede elegir cualquier combinación de ejecuciones recientes o de resultados importados. Si se desea combinar resultados exportados, se deben importar primero.
+ Use ![Icono para el botón Combinar en la ventana de cobertura de código](../test/media/codecoverage-mergeicon.png)**Combinar resultados de la cobertura de código** para ello. Se puede elegir cualquier combinación de ejecuciones recientes o de resultados importados. Si se desea combinar resultados exportados, se deben importar primero.
 
  Utilice **Exportar resultados de la cobertura de código** para guardar los resultados de una operación Merge.
 
@@ -258,7 +259,7 @@ Al insertar en el repositorio el código, las pruebas se ejecutarán en el servi
 
    Si tiene más de una definición de origen de la prueba, repita este paso para cada una.
 
-   ![Establecer la definición de compilación para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Establecer la definición de compilación para cobertura de código](../test/media/codecoverage-plaincc.png)
 
 > [!TIP]
 > Si no hay ningún campo denominado **Tipo de archivo de parámetros de ejecución**, cambie la propiedad **Ejecutor de pruebas**. En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.

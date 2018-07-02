@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752084"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -51,19 +52,19 @@ En las siguientes secciones se explican los pasos básicos que sirven para empez
 
 Hay que definir y ejecutar pruebas en uno o varios proyectos de prueba que estén en la misma solución que el código que quiere probar. Para agregar un nuevo proyecto de prueba a una solución existente, haga clic con el botón derecho en el nodo de la solución en el **Explorador de soluciones** y seleccione **Agregar | Nuevo proyecto**. Después, en el panel izquierdo, elija **Prueba de Visual C++** y elija uno de los tipos de proyecto en el panel central. En la siguiente ilustración se muestran los proyectos de prueba que hay disponibles cuando se instala la carga de trabajo de **desarrollo para el escritorio con C++**:
 
-![Proyectos de prueba de C++](media/cpp-new-test-project.png "C++: plantillas de nuevo proyecto de prueba")
+![Proyectos de prueba de C++](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Crear referencias a otros proyectos en la solución
 
 Para permitir que el código de prueba tenga acceso a las funciones en el proyecto que se va a probar, agregue una referencia al proyecto en el proyecto de prueba. Haga clic con el botón secundario en el nodo de proyecto de prueba en el **Explorador de soluciones** y elija **Agregar | Referencia**. Luego, en el cuadro de diálogo, seleccione los proyectos que quiera probar.
 
-![Agregar referencia](media/cpp-add-ref-test-project.png "Prueba de C++: agregar una referencia a proyectos que se van a probar")
+![Agregar referencia](media/cpp-add-ref-test-project.png)
 
 ### <a name="add-include-directives-for-header-files"></a>Agregar directivas #include de archivos de encabezado
 
 Después, en el archivo .cpp de prueba unitaria, agregue una directiva `#include` relativa a cualquier archivo de encabezado que declare los tipos y funciones que quiera probar. Escriba `#include "` y, de este modo, IntelliSense se activará para ayudarle a elegir. Repita esto mismo con los encabezados que haya.
 
-![Agregar directivas include](media/cpp-add-includes-test-project.png "Prueba de C++: agregar include de archivos de encabezado")
+![Agregar directivas include](media/cpp-add-includes-test-project.png)
 
 ### <a name="write-test-methods"></a>Escribir métodos de prueba
 
@@ -72,7 +73,7 @@ Después, en el archivo .cpp de prueba unitaria, agregue una directiva `#include
 
 El archivo .cpp del proyecto de prueba tiene un método y una clase de código auxiliar definidos automáticamente para que pueda ver un ejemplo de cómo escribir código de prueba. Observe que las firmas usan las macros TEST_CLASS y TEST_METHOD, lo que hace que los métodos se puedan detectar desde la ventana Explorador de pruebas.
 
-![Agregar directivas include](media/cpp-write-test-methods.png "Prueba de C++: agregar include de archivos de encabezado")
+![Agregar directivas include](media/cpp-write-test-methods.png)
 
 TEST_CLASS y TEST_METHOD forman parte del [Marco de pruebas nativo de Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). El **Explorador de pruebas** detecta métodos de prueba en otros marcos admitidos de forma similar.
 
@@ -94,7 +95,7 @@ Puede agregar *rasgos* para probar métodos para especificar los propietarios de
 
 1. En el menú **Prueba**, elija **Windows** > **Explorador de pruebas**. En la siguiente ilustración se muestra un proyecto de prueba cuyas pruebas aún no se han ejecutado.
 
-   ![Explorador de pruebas antes de ejecutar las pruebas](media/cpp-test-explorer.png "Explorador de pruebas de C++")
+   ![Explorador de pruebas antes de ejecutar las pruebas](media/cpp-test-explorer.png)
 
    > [!NOTE]
    > La integración de CTest con el **Explorador de pruebas** aún no está disponible. Realice pruebas de CTest desde el menú principal de CMake.
@@ -103,7 +104,7 @@ Puede agregar *rasgos* para probar métodos para especificar los propietarios de
 
 1. En el Explorador de pruebas, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados. Después de ejecutar todas las pruebas, la ventana muestra cuáles se han superado y cuáles no:
 
-![Explorador de pruebas después de ejecutar las pruebas](media/cpp-test-explorer-passed.png "Explorador de pruebas de C++ después de ejecutar las pruebas")
+![Explorador de pruebas después de ejecutar las pruebas](media/cpp-test-explorer-passed.png)
 
 En las pruebas no superadas, el mensaje ofrece detalles que ayudan a diagnosticar la causa. Puede hacer clic con el botón derecho en la prueba no superada y elegir **Depurar pruebas seleccionadas** para ir paso a paso por la función donde se ha producido el error.
 

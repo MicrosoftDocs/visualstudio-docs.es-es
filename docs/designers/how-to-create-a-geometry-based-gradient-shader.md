@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2aeea5cf70b3c9a70b9f8e80961825bfff179a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745781"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Cómo: Crear un sombreador de gradiente basado en geometría
 
@@ -49,13 +50,13 @@ La ilustración siguiente muestra el gráfico de sombreador completo y una vista
 > [!NOTE]
 > En esta ilustración, se especificó un color naranja para mostrar mejor el efecto del sombreador pero como la forma de vista previa no tiene ninguna posición en el espacio global, no se puede ver una vista previa completa del sombreador en el Diseñador de sombras. El sombreador se debe previsualizar en una escena real para demostrar el efecto completo.
 
- ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")
+ ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-gradient-effect-graph.png)
 
  Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea **Vista previa de sombreadores** en [Diseñador de sombras](../designers/shader-designer.md)
 
  La siguiente ilustración muestra el sombreador descrito en este documento aplicado a una escena 3D que se demuestra en [Cómo: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md). La intensidad del color aumenta con el alto del punto en la posición global.
 
- ![Efecto de degradado aplicado a un modelo de terreno 3D](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")
+ ![Efecto de degradado aplicado a un modelo de terreno 3D](../designers/media/digit-gradient-effect-result.png)
 
  Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

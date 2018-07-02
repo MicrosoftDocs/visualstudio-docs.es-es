@@ -11,16 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 314aedd06755fba89c1e7e427613b0cad4e81b12
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: fd9703e6d18f075cb1033a03552caa7708b719b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751393"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalación de la compatibilidad con Python en Visual Studio
 
 > [!Note]
-> La compatibilidad con Python actualmente solo está disponible en Visual Studio para Windows; en Mac y Linux, la compatibilidad con Python está disponible a través de Visual Studio Code. Consulte las [preguntas y respuestas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
+> La compatibilidad con Python actualmente solo está disponible en Visual Studio para Windows. En Mac y Linux, la compatibilidad con Python está disponible mediante [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
 1. Descargue y ejecute el instalador de Visual Studio 2017 más reciente para Windows (la compatibilidad con Python está presente en la versión 15.2 y en versiones posteriores). Si tiene Visual Studio ya instalado, ejecute el instalador de Visual Studio y vaya al paso 2.
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/27/2018
 
 ## <a name="see-also"></a>Vea también
 
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment) (Identificación manual de un intérprete de Python existente).
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente).
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md).
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations).
 

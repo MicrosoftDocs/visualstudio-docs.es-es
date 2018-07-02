@@ -14,11 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 4de04bcd612c11f2b739fbdb1521008a45a3aead
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751720"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones UWP
 
@@ -45,11 +46,11 @@ Los procedimientos siguientes describen los pasos para crear, ejecutar y depurar
 
 6.  Deje seleccionada la opción **Crear directorio para la solución** y elija el botón **Aceptar** .
 
-     ![Biblioteca de pruebas unitarias adaptada](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+     ![Biblioteca de pruebas unitarias adaptada](../test/media/unit_test_win8_1.png)
 
      El Explorador de soluciones se rellena con el nuevo proyecto de prueba unitaria de UWP y el editor de código muestra la prueba unitaria predeterminada denominada UnitTest1.
 
-     ![Nuevo proyecto de prueba unitaria adaptada](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Nuevo proyecto de prueba unitaria adaptada](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Editar el archivo de manifiesto de la aplicación para UWP del proyecto de prueba unitaria
 
@@ -99,7 +100,7 @@ En el Editor de código, edite la prueba unitaria y agregue las aserciones y la 
     >
     > Además, puede elegir **Depurar pruebas seleccionadas**, **Abrir prueba**y usar la opción **Propiedades** .
     >
-    > ![Explorador de pruebas unitarias&#45; menú de contexto de pruebas unitarias](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Explorador de pruebas unitarias: menú contextual de pruebas unitarias](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
     La prueba unitaria se ejecuta. Al finalizar, el Explorador de pruebas muestra el estado de la prueba y el tiempo transcurrido y proporciona un vínculo al origen.
 

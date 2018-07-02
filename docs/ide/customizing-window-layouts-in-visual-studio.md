@@ -25,11 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2cd35623f1c90dbfa47204d901fdaa48340fc5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746850"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 
@@ -94,23 +95,23 @@ Para devolver una ventana de herramientas o una ventana de documento al punto de
 
 La siguiente ilustración muestra el rombo de guía para las ventanas de documento que solo se pueden acoplar dentro del marco de edición:
 
-![Rombo de guía de ventana del documento](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
+![Rombos de guía de ventana de documento](../ide/media/documentwindowguidediamonds.png)
 
 Las ventanas de herramientas se pueden fijar a un lado de un marco del IDE o en el marco de edición. Cuando se arrastra una ventana de herramientas a otra ubicación, aparece un rombo de guía para ayudarle a volver a acoplar la ventana.
 
 Rombo de guía para las ventanas de herramientas
 
-![Rombos de guía de ventanas de herramientas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+![Rombos de guía de ventanas de herramientas](../ide/media/vs10guidediamond.png)
 
 La siguiente ilustración muestra cómo se acopla el **Explorador de soluciones** en una nueva ubicación, lo que se muestra en el área sombreada azul:
 
-![Acoplar el Explorador de soluciones en una nueva posición](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")
+![Acoplar el Explorador de soluciones en una nueva posición](../ide/media/vs2015_dock_diamond.png)
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Cerrar y ocultar automáticamente las ventanas de herramientas
 
 Puede cerrar una ventana de herramientas haciendo clic en la **X** situada en la esquina superior derecha de la barra de título. Para volver a abrir la ventana, utilice su comando de menú o un método abreviado de teclado. Las ventanas de herramientas admiten una característica denominada *Ocultar automáticamente*, lo que hace que una ventana se deslice fuera de la vista cuando se utiliza una ventana diferente. Cuando una ventana se oculta automáticamente, su nombre aparece en una pestaña situada en el borde del IDE. Para utilizar la ventana de nuevo, haga clic sobre la pestaña para que vuelva a aparecer la ventana.
 
-![Ocultar automáticamente](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")
+![Ocultar automáticamente](../ide/media/vs2015_auto_hide.png)
 
 > [!NOTE]
 > Para establecer si Ocultar automáticamente se aplica a las ventanas de herramientas por separado o como grupos acoplados, active o desactive la opción **El botón Ocultar automáticamente afecta solo a las ventanas de herramientas activas** en el cuadro de diálogo **Opciones**. Para obtener más información, consulta [General, Entorno, Opciones (Cuadro de diálogo)](../ide/reference/general-environment-options-dialog-box.md).
@@ -167,7 +168,7 @@ Primero, vamos a crear una solución de prueba que tiene dos proyectos, cada uno
 
 Para cambiar entre diseños, use los métodos abreviados de teclado o pulse **Ventana** > **Aplicar diseño de ventana** en el menú principal.
 
-![Aplicar menú de diseño de ventana](../ide/media/vs2015_applywindowlayout.png "VS2017_ApplyWindowLayout")
+![Aplicar menú de diseño de ventana](../ide/media/vs2015_applywindowlayout.png)
 
 Después de aplicar el diseño de UI, fíjese en que el diseño se conserva en el modo de edición y en el modo de depuración.
 
@@ -180,7 +181,7 @@ Si tiene una configuración de varios monitores en el trabajo y un portátil en 
 
 Para quitar, cambiar el nombre o reordenar el diseño personalizado, pulse **Ventana** > **Administrar diseños de ventana**. Si mueve un diseño, el enlace de teclado se ajusta automáticamente para reflejar la nueva posición en la lista. Los enlaces no se pueden modificar de otra forma, por lo que se puede almacenar un máximo de 10 diseños a la vez.
 
-![Administrar diseños de ventana](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
+![Administrar los diseños de la ventana](../ide/media/managewindowlayouts.png)
 
 Para recordar el método abreviado de teclado que está asignado a cada diseño, pulse **Ventana** > **Aplicar diseño de ventana**.
 

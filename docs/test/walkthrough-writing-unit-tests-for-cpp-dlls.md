@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751837"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Cómo escribir pruebas unitarias de DLL de C++
 
@@ -45,11 +46,11 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      En este tutorial, el proyecto de prueba se llama `NativeRooterTest`.
 
-     ![Crear un proyecto de prueba unitaria de C++](../test/media/utecpp01.png "UteCpp01")
+     ![Creación de un proyecto de prueba unitaria de C++](../test/media/utecpp01.png)
 
 2.  En el nuevo proyecto, inspeccione **unittest1.cpp**.
 
-     ![Proyecto de prueba con TEST_CLASS y TEST_METHOD](../test/media/utecpp2.png "UteCpp2")
+     ![Proyecto de prueba con TEST&#95;CLASS y TEST&#95;METHOD](../test/media/utecpp2.png)
 
      Tenga en cuenta que:
 
@@ -82,7 +83,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
          La prueba aparece en **Pruebas superadas**.
 
-         ![Explorador de pruebas unitarias con una prueba superada](../test/media/utecpp04.png "UteCpp04")
+         ![Explorador de pruebas unitarias con una prueba superada](../test/media/utecpp04.png)
 
 ##  <a name="create_dll_project"></a> Crear un proyecto DLL
 
@@ -90,17 +91,17 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      En este tutorial, el proyecto se llama `RootFinder`.
 
-     ![Crear un proyecto Win32 de C++](../test/media/utecpp05.png "UteCpp05")
+     ![Creación de un proyecto Win32 de C++](../test/media/utecpp05.png)
 
 2.  Seleccione **DLL** y **Exportar símbolos** en el asistente para aplicaciones Win32.
 
      La opción **Exportar símbolos** genera una cómoda macro que puede utilizar para declarar métodos exportados.
 
-     ![Asistente para proyectos de C++ con las opciones de DLL y de exportar símbolos](../test/media/utecpp06.png "UteCpp06")
+     ![Asistente para proyectos de C++ con las opciones de DLL y de exportar símbolos](../test/media/utecpp06.png)
 
 3.  Declare una función exportada en el archivo .h principal:
 
-     ![Nuevo proyecto de código DLL y archivo .h con macros de API](../test/media/utecpp07.png "UteCpp07")
+     ![Nuevo proyecto de código DLL y archivo .h con macros de API](../test/media/utecpp07.png)
 
      El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
@@ -120,13 +121,13 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
     1.  Abra las propiedades del proyecto de prueba y elija **Propiedades comunes**, **Framework y Referencias**.
 
-         ![Propiedades del proyecto de C++ | Marco de trabajo y referencias](../test/media/utecpp08.png "UteCpp08")
+         ![Propiedades del proyecto de C++ | Marco de trabajo y referencias](../test/media/utecpp08.png)
 
     2.  Elija **Agregar nueva referencia**.
 
          En el cuadro de diálogo **Agregar referencia** , seleccione el proyecto DLL y elija **Agregar**.
 
-         ![Propiedades del proyecto de C++ | Agregar nueva referencia](../test/media/utecpp09.png "UteCpp09")
+         ![Propiedades del proyecto de C++ | Agregar nueva referencia](../test/media/utecpp09.png)
 
 2.  En el archivo .cpp de prueba unitaria principal, incluya el archivo .h del código DLL:
 
@@ -160,7 +161,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 5.  En el Explorador de pruebas, elija **Ejecutar todas**.
 
-     ![Explorador de pruebas unitarias: prueba básica superada](../test/media/utecpp10.png "UteCpp10")
+     ![Explorador de pruebas unitarias&#45; prueba básica superada](../test/media/utecpp10.png)
 
  Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.
 
@@ -189,7 +190,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      Se produce un error en la nueva prueba.
 
-     ![Se produce un error en RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Se produce un error RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Compruebe que todas las pruebas producen un error inmediatamente después de escribirlas. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.
@@ -217,7 +218,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      Ambas pruebas quedan superadas.
 
-     ![Explorador de pruebas unitarias: prueba de intervalo superada](../test/media/utecpp12.png "UteCpp12")
+     ![Explorador de pruebas unitarias&#45; prueba de intervalo superada](../test/media/utecpp12.png)
 
     > [!TIP]
     > Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.
@@ -263,7 +264,7 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
      Se resalta el error de aserción. El mensaje de error es visible en el panel de detalles del Explorador de pruebas.
 
-     ![Error de NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![Se ha producido un error en las pruebas NegativeRangeTests](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
 4.  Para ver por qué se produce el error, revise la función:
 
@@ -291,10 +292,10 @@ En este tutorial se describe cómo desarrollar una DLL de C++ nativa creando ant
 
 6.  Ahora, todas las pruebas pasan.
 
-     ![Todas las pruebas pasan](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
+     ![Todas las pruebas se realizan correctamente](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
-> Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+> Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
 
 ##  <a name="refactor"></a> Refactorizar el código sin cambiar las pruebas

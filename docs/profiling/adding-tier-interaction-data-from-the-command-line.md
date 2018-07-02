@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548666"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Agregar datos de interacción de capas desde la línea de comandos
 
@@ -79,7 +80,7 @@ En el ejemplo siguiente, se generan perfiles para una aplicación de escritorio 
     vsperfclrenv /off
     ```
 
-Para más información, vea [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Para obtener más información, vea [Generación de perfiles de aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
 ## <a name="profile-services"></a>Servicios de generación de perfiles
 
@@ -141,9 +142,9 @@ En el ejemplo siguiente, se generan perfiles para un servicio de Windows mediant
 
 Para obtener más información, consulte uno de los temas siguientes:
 
-[Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
-[Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
+[Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)
 
 ## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Agregar datos de interacción de capas con VSPerfASPNETCmd
 
@@ -155,4 +156,4 @@ Para agregar la interacción de capas a los datos de generación de perfiles rec
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Para obtener más información sobre VSPerfASPNETCmd, consulte [Generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Para obtener más información sobre VSPerfASPNETCmd, vea [Generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

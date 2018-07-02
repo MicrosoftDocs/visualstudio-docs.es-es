@@ -1,6 +1,6 @@
 ---
-title: IntelliSense de Visual Studio
-ms.date: 11/04/2016
+title: Información de parámetros, lista de miembros e información rápida
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -17,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748480"
 ---
-# <a name="using-intellisense-in-visual-studio"></a>Uso de IntelliSense en Visual Studio
+# <a name="intellisense-in-visual-studio"></a>IntelliSense en Visual Studio
 
-IntelliSense es el término general que se usa para describir varias características: Lista de miembros, Información de parámetros, Información rápida y Palabra completa. Estas características le permiten obtener más información acerca del código que utiliza, a realizar un seguimiento de los parámetros que escribe y a agregar llamadas a propiedades y a métodos con tan solo presionar unas teclas.
+IntelliSense es un auxiliar de finalización de código que incluye una serie de características: Lista de miembros, Información de parámetros, Información rápida y Palabra completa. Estas características permiten obtener más información sobre el código que usa, realizar el seguimiento de los parámetros que escribe y agregar llamadas a propiedades y a métodos con tan solo presionar unas teclas.
 
 Muchos aspectos de IntelliSense son específicos del lenguaje. Para más información sobre IntelliSense para distintos lenguajes, vea los temas enumerados en la sección [Vea también](#see-also).
 
@@ -37,7 +38,7 @@ Después de seleccionar un elemento, puede insertarlo en el código presionando 
 
 En la lista de miembros, el icono de la izquierda representa el tipo del miembro, como el espacio de nombres, la clase, la función o la variable. Para ver una lista de iconos, vea [Iconos de la vista de clases y del examinador de objetos](../ide/class-view-and-object-browser-icons.md). La lista puede ser bastante larga, así que presione **Re Pág** y **Av Pág** para subir o bajar en ella.
 
-![Lista de miembros de Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Lista de miembros de Visual Studio](../ide/media/vs2015_intellisense.png)
 
 Puede invocar la característica **Lista de miembros** manualmente. Para ello, presione **CTRL**+**J** y elija **Edición** > **IntelliSense** > **Lista de miembros** o seleccione el botón **Lista de miembros** de la barra de herramientas del editor. Cuando se invoca en una línea en blanco o fuera de un ámbito reconocible, la lista muestra símbolos del espacio de nombres global.
 
@@ -51,7 +52,7 @@ La información de parámetros proporciona información acerca del número, los 
 
 El parámetro en negrita indica el siguiente parámetro requerido a medida que escribe la función. En el caso de funciones sobrecargadas, se puede utilizar las teclas de flecha **Arriba** y **Abajo** para ver información de parámetros alternativos para las sobrecargas de funciones.
 
-![Información de parámetros](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![Información de parámetros](../ide/media/vs2015_param_info.png)
 
 Cuando se anotan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md).
 
@@ -61,11 +62,11 @@ Para invocar manualmente la información de parámetros, elija **Edición** > **
 
 La opción Información rápida muestra la declaración completa de cualquier identificador del código.
 
-![Información rápida de Visual Studio](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Información rápida de Visual Studio](../ide/media/vs2015_quick_info.png)
 
 Cuando se selecciona un miembro en el cuadro **Lista de miembros**, también aparece la información rápida.
 
-![Información de parámetros en un archivo de código de C&#35;](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Información de parámetros en un archivo de código de C&#35;](../ide/media/vs2015_paraminfo.png)
 
 Para invocar manualmente la información rápida, elija **Edición** > **IntelliSense** > **Información rápida**, presione **CTRL**+**I** o seleccione el botón **Información rápida** de la barra de herramientas del editor.
 

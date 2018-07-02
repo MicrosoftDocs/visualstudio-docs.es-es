@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748236"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -93,7 +94,7 @@ La operación **Agregar using** de IntelliSense agrega automáticamente la direc
 
 Para iniciar la operación **Agregar using**, coloque el cursor en una referencia de tipo que no se pueda resolver. Por ejemplo, al crear una aplicación de consola y después agregar `XmlTextReader` en el cuerpo del método `Main`, aparece un subrayado ondulado de color rojo en esa línea de código porque no se puede resolver la referencia de tipo. Puede invocar **Agregar using** a través de **Acciones rápidas**. **Acciones rápidas** solo está visible cuando el cursor se coloca en el tipo sin enlazar.
 
-![Imagen expandida de Agregar using, Acción rápida](../ide/media/addusing-quickaction.png "QuickAction AddUsing")
+![Imagen expandida de Agregar using, Acción rápida](../ide/media/addusing-quickaction.png)
 
 Haga clic en el icono de bombilla y después elija **using System.Xml;** para agregar automáticamente la directiva using.
 
@@ -143,11 +144,11 @@ En el editor de código, IntelliSense puede ayudarle a enlazar métodos (control
 
 Si escribe el operador `+=` después de un campo de evento en un archivo *.cs*, IntelliSense le indicará que presione la tecla **TAB**. Al hacerlo, se inserta una nueva instancia de un delegado que apunta al método que controlará el evento.
 
-![Botón Enlazar automáticamente](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Botón Enlazar automáticamente](../ide/media/vxautohookup.gif)
 
 Si presiona **TAB**, IntelliSense completa la instrucción automáticamente y muestra la referencia del controlador de eventos como texto seleccionado en el editor de código. Para completar el enlace de eventos automático, IntelliSense le indicará que presione la tecla **TAB** para crear un código auxiliar vacío del controlador de eventos.
 
-![Generar controlador de eventos](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Generar controlador de eventos](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Si un nuevo delegado creado por IntelliSense hace referencia a un controlador de eventos existente, IntelliSense comunica esta información en la información rápida. A continuación, puede modificar la referencia. El texto estará ya seleccionado en el editor de código. De lo contrario, el enlace de eventos automático se habrá completado en este momento.

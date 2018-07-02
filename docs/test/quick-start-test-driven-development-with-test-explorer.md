@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751428"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -28,7 +29,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 -   Ver en una ventana toda la información necesaria.
 
 ## <a name="using-test-explorer"></a>Usar el Explorador de pruebas
- ![Explorador de pruebas unitarias con el botón Ejecutar todas](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![Explorador de pruebas unitarias con el botón Ejecutar todas](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para ejecutar pruebas unitarias mediante el Explorador de pruebas
 
@@ -44,7 +45,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
     2.  Escriba cada prueba unitaria como un método. Anteponga el atributo `[TestMethod]` a cada método de prueba.
 
-2.  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+2.  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
 3.  En la barra de menús, elija **Prueba**, **Ejecutar pruebas unitarias**, **Todas las pruebas**.
 
@@ -79,7 +80,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
     -   En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#**, **Prueba** y, a continuación, elija **Proyecto de prueba unitaria**.
 
-         ![Nuevo código y proyectos de prueba](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![Nuevo código y proyectos de prueba](../test/media/unittestexplorerwalk1.png)
 
 3.  Escriba un método de prueba básico. Compruebe el resultado obtenido para una entrada específica:
 
@@ -125,7 +126,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
 7.  Seleccione los elementos bajo **Seguimiento de la pila** para ver dónde se produjo un error en la prueba.
 
- ![Explorador de pruebas unitarias que muestra una prueba no superada.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![Explorador de pruebas unitarias que muestra una prueba no superada](../test/media/unittestexplorerwalkthrough2.png)
 
  En este punto, se ha creado una prueba y un código auxiliar que se modificarán para que la prueba se complete correctamente.
 
@@ -146,7 +147,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
      La prueba se supera.
 
-     ![Explorador de pruebas unitarias que muestra una prueba superada.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Explorador de pruebas unitarias que muestra una prueba superada](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Agregar pruebas para ampliar el intervalo de entradas
 
@@ -288,4 +289,4 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
      Todas las pruebas se completan correctamente.
 
-     ![Explorador de pruebas unitarias que muestra 3 pruebas superadas.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Explorador de pruebas unitarias que muestra 3 pruebas superadas](../test/media/unittestexplorerwalkthrough4.png)

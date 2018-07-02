@@ -18,11 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3178738b707069fdf885c9821b7b7f1e17b246c
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 3e139fe1858772ed0505f774ce4c36e00bc059e0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746131"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 
@@ -32,7 +33,7 @@ Obtenga información sobre la manera en que el editor de Visual Studio admite la
 
 Las características del editor de Visual Studio como el uso de colores para la sintaxis, la finalización de instrucciones y Navegar a pueden ayudarle a leer, crear y editar el código más fácilmente. En la captura de pantalla siguiente se muestra un ejemplo de cómo se edita un script Perl en Visual Studio. Se aplica color automáticamente a la sintaxis. Por ejemplo, los comentarios del código aparecen en color verde, el código en negro, las rutas de acceso en rojo y las instrucciones en azul. El editor de Visual Studio aplica color automáticamente a la sintaxis de todos los lenguajes que admite. Además, cuando se empieza a escribir un objeto o una palabra clave del lenguaje conocidos, la finalización de instrucciones muestra una lista de las posibles instrucciones y objetos. La finalización de instrucciones puede ayudarle a crear código de manera más rápida y fácil.
 
-![Colores de sintaxis en script Perl](../ide/media/vside_perledit.png "VSIDE_PerlEdit")
+![Colores de sintaxis en script Perl](../ide/media/vside_perledit.png)
 
 Visual Studio actualmente ofrece compatibilidad con el uso de colores para la sintaxis y la finalización de instrucciones básicas para los lenguajes siguientes mediante [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje favorito no está en la tabla, no se preocupe: puede agregarlo.
 

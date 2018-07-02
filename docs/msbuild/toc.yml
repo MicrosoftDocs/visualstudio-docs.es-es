@@ -84,6 +84,8 @@
               items:
                 - name: 'Tutorial: Crear una tarea insertada'
                   href: walkthrough-creating-an-inline-task.md
+            - name: Tareas insertadas de MSBuild con RoslynCodeTaskFactory
+              href: msbuild-roslyncodetaskfactory.md
         - name: Comparar propiedades y elementos
           href: comparing-properties-and-items.md
         - name: Caracteres especiales de MSBuild
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Delete (Tarea)
               href: delete-task.md
+            - name: Tarea DownloadFile
+              href: downloadfile-task.md
             - name: Error (Tarea)
               href: error-task.md
             - name: Exec (Tarea)
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: UnregisterAssembly (Tarea)
               href: unregisterassembly-task.md
+            - name: Tarea Unzip
+              href: unzip-task.md
             - name: UpdateManifest (Tarea)
               href: updatemanifest-task.md
             - name: Vbc (Tarea)
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: XslTransformation (Tarea)
               href: xsltransformation-task.md
+            - name: Tarea ZipDirectory
+              href: zipdirectory-task.md
         - name: Condiciones de MSBuild
           href: msbuild-conditions.md
         - name: Construcciones condicionales de MSBuild

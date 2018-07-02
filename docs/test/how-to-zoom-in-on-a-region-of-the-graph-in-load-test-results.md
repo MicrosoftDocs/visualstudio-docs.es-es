@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750976"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Cómo: Acercar una región del gráfico en los resultados de pruebas de carga
 
@@ -39,7 +40,7 @@ Una vez terminada una prueba de carga, puede usar las barras de zoom para acerca
 > [!TIP]
 > Puede usar **Sincronizar controles de zoom horizontal** de la barra de herramientas para activar o desactivar la sincronización de zoom horizontal automática. Con la sincronización activada, cualquier zoom que aplique a un gráfico también se aplicará a cualquier otro gráfico de la vista de gráficos.
 
- ![Control de zoom de vista de gráficos](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") Control de zoom de vista de gráficos
+ ![Control de zoom de vista de gráficos](../test/media/ltest_zoomcontrol.png) Control de zoom de vista de gráficos
 
  En la ilustración anterior, se ha acercado el gráfico Sistema a prueba para investigar problemas de umbral. Las infracciones de umbral se han habilitado usando **Mostrar infracciones de umbral en el gráfico** en la lista desplegable **Opciones del gráfico** de la barra de herramientas.
 

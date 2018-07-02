@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747872"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Paso 2: Crear un problema de suma aleatoria
 En la segunda parte del tutorial, agregará problemas de matemáticas basados en números aleatorios para crear una prueba desafiante. También puede crear un método denominado `StartTheQuiz()` que establezca los problemas e inicie el temporizador de cuenta atrás. Más adelante en este tutorial, agregará los problemas de resta, multiplicación y división.
@@ -59,7 +60,7 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
 
      Observe que cuando escribe el punto (.) después de `randomizer` en el código, se abre una ventana de IntelliSense en la que se muestran todos los métodos del objeto aleatorio a los que puede llamar. Por ejemplo, IntelliSense muestra el método `Next()` de la forma siguiente.
 
-     ![Método Next](../ide/media/express_randomwhite.png "Express_RandomWhite") Método Next
+     ![Método Next](../ide/media/express_randomwhite.png) Método Next
 
      Cuando escribe un punto después de un objeto, IntelliSense muestra una lista de los miembros del objeto, como las propiedades, métodos y eventos.
 
@@ -88,7 +89,7 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
 
      Aparece un problema de suma aleatoria, tal y como se muestra en la ilustración siguiente.
 
-     ![Problema de sumas aleatorias](../ide/media/express_additionproblem.png "Express_AdditionProblem") Problema de sumas aleatorias
+     ![Problema de sumas aleatorias](../ide/media/express_additionproblem.png) Problema de sumas aleatorias
 
      En el siguiente paso del tutorial, agregará la suma.
 

@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edf3a7eaecfbd133a2bd087620929cf6e3290b79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746000"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
 
@@ -30,14 +31,14 @@ Si aún no lo ha hecho, inicie sesión Visual Studio a fin de notificar un probl
 2. Si no ha iniciado sesión, seleccione **Iniciar sesión**; se encuentra en la parte derecha de la herramienta, tal y como se muestra en la siguiente captura de pantalla.
 3. Siga las instrucciones en pantalla para iniciar sesión.
 
- ![Iniciar sesión para notificar un problema](../ide/media/sign-in-new-ux.png "Iniciar sesión para notificar un problema")
+ ![Inicie sesión para notificar un problema](../ide/media/sign-in-new-ux.png)
 
 ## Buscar y votar problemas similares <a name="search_and_vote"></a>
 
 1. Busque el problema y vea si otros usuarios también lo han notificado.
 2. Si alguien lo ha notificado, "vótelo" para indicárnoslo.
 
-  ![Buscar y votar problemas similares](../ide/media/search-and-vote.png "Buscar y votar problemas similares")
+  ![Buscar y votar problemas similares](../ide/media/search-and-vote.png)
 
 ## Informar de un problema nuevo<a name="report_new_problem"></a>
 
@@ -45,7 +46,7 @@ Si aún no lo ha hecho, inicie sesión Visual Studio a fin de notificar un probl
 2. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.
 3. Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.
 
-  ![Informar de un problema nuevo](../ide/media/report-new-problem.png "Informar de un problema nuevo")
+  ![Notificar un problema nuevo](../ide/media/report-new-problem.png)
 
 ## Proporcionar una captura de pantalla y datos adjuntos (opcional) <a name="provide_screenshots"></a>
 
@@ -58,7 +59,7 @@ Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a dia
 1. Haga clic en la pestaña **Grabar**.
 2. Haga clic en **Iniciar grabación**. Proporcione permiso para ejecutar la herramienta.
 
-  ![Hacer clic en "Iniciar grabación" para proporcionar un archivo de seguimiento y de volcado de memoria del montón ](../ide/media/record-dialog-box.png "Proporcionar archivos de seguimiento y de volcado de memoria del montón")
+  ![Haga clic en "Iniciar grabación" para proporcionar un archivo de seguimiento y de volcado de memoria del montón ](../ide/media/record-dialog-box.png)
 
 3. Cuando aparezca la herramienta **Grabación de acciones de usuario**, realice los pasos que reproducen el problema.
 4. Cuando haya terminado, haga clic en el botón **Detener grabación**.

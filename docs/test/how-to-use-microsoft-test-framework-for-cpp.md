@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751694"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
 
@@ -55,7 +56,7 @@ Use los métodos estáticos de la clase [Assert](microsoft-visualstudio-testtool
 2.  En el Explorador de pruebas, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
 3. En la **Ventana de salida**, seleccione **Pruebas** en la lista desplegable para ver los mensajes escritos por la clase `Logger`:
 
-  ![Ventana de salida de C++ con mensajes de prueba](media/cpp-test-output-window.png "Ventana de salida")
+  ![Ventana de salida de C++ con mensajes de prueba](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definir rasgos para permitir la agrupación
 Se pueden definir rasgos en los métodos de prueba para poder clasificar y agrupar las pruebas en el **Explorador de pruebas**. Para definir un rasgo, use la macro `TEST_METHOD_ATTRIBUTE` . Por ejemplo definir un rasgo denominado `TEST_MY_TRAIT`:

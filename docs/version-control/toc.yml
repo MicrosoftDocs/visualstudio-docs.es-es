@@ -85,5 +85,5 @@
       href: /vsts/git/tutorial/howto?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json
 - name: Recursos
   items:
-    - name: Información sobre Git
-      href: 'https://www.visualstudio.com/learn-git/'
+    - name: ¿Qué es Git?
+      href: /azure/devops/git/what-is-git

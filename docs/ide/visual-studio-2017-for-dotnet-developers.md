@@ -12,11 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748756"
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guía de productividad de Visual Studio 2017 para desarrolladores de .NET
 
@@ -88,7 +89,7 @@ Visual Studio 2017 incluye un gran número de refactorizaciones, acciones de gen
   - [SonarLint para Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Refactorizaciones en Visual Studio](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![Refactorizaciones en Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>Necesito encontrar usos, ir a la implementación, navegar a ensamblados descompilados.
 Visual Studio de 2017 tiene muchas características para ayudarle a buscar código base y navegar por él. Más información sobre las [características de navegación por el código](../ide/navigating-code.md)
@@ -119,7 +120,7 @@ Hemos agregado una gran cantidad de nuevas funcionalidades de depuración en Vis
 - La depuración [Retroceder](../debugger/how-to-use-intellitrace-step-back.md) le permite volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior.
 - [Depuración de instantáneas](/azure/application-insights/app-insights-snapshot-debugger) le permite investigar el estado de una aplicación web en directo en el momento en que se inició una excepción (debe estar en Azure).
 
-![Nueva Aplicación auxiliar de excepciones en VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![Nueva aplicación auxiliar de excepciones en VS2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Deseo usar el control de versiones con mis proyectos.
 Puede usar git o TFVC para almacenar y actualizar el código en Visual Studio.

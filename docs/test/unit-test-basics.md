@@ -11,11 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c40c484a4a14ed103c1d29f979f4a767066a4a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751522"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -41,7 +42,7 @@ Para obtener una introducción a las pruebas unitarias que le guíe directamente
 
 En este tema, usamos el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y se presentan mediante el marco de pruebas unitarias para código administrado de Microsoft. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos.
 
- ![Solución MyBank](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")
+ ![Solución MyBank](../test/media/ute_mybanksolution.png)
 
  Nuestro primer intento de un diseño para la aplicación `MyBank` incluye un componente de cuentas que representa una cuenta individual y sus transacciones con el banco, así como un componente de base de datos que representa la funcionalidad para agregar y administrar las cuentas individuales.
 
@@ -85,15 +86,15 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
 1.  En la ventana del editor de código, haga clic en el botón secundario y elija **Crear pruebas unitarias** en el menú contextual.
 
-     ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")
+     ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
 
 2.  Haga clic en Aceptar para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
 
-     ![Haga clic con el botón derecho en el editor y seleccione Crear pruebas unitarias](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Haga clic con el botón derecho en el editor y elija Crear pruebas unitarias](../test/media/createunittestsdialog.png)
 
 3.  El código auxiliar de prueba unitaria se crea en un proyecto de prueba unitaria nuevo para todos los métodos de la clase.
 
-     ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")
+     ![Se crean las pruebas unitarias](../test/media/createunittestsstubs.png)
 
 4.  Avance para saber cómo [agregar código a los métodos de prueba unitaria](#BKMK_Writing_your_tests) (de modo que la prueba sea significativa) y cómo agregar pruebas unitarias adicionales para probar exhaustivamente el código.
 
@@ -204,7 +205,7 @@ public void My_Test ()
 
 Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de pruebas. Si el Explorador de pruebas no está visible, elija **Prueba** en el menú de Visual Studio, elija **Ventanas**y, después, **Explorador de pruebas**.
 
- ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Explorador de pruebas unitarias](../test/media/ute_failedpassednotrunsummary.png)
 
  Al ejecutar, escribir y volver a ejecutar las pruebas, la vista predeterminada del Explorador de pruebas muestra los resultados en grupos de **Pruebas no superadas**, **Pruebas superadas**, **Pruebas omitidas** y **Pruebas no ejecutadas**. Se puede elegir el título de un grupo para abrir la vista que muestra todas las pruebas de ese grupo.
 
@@ -214,11 +215,11 @@ Al compilar el proyecto de prueba, las pruebas aparecen en el Explorador de prue
 
 La barra de herramientas del Explorador de pruebas le ayuda a detectar, organizar y ejecutar las pruebas que le interesan.
 
- ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png "UTE_ToolBar")
+ ![Ejecutar pruebas desde la barra de herramientas del Explorador de pruebas](../test/media/ute_toolbar.png)
 
  Se puede elegir **Ejecutar todas** para ejecutar todas las pruebas o bien **Ejecutar** para elegir un subconjunto de pruebas que se desea ejecutar. Después de ejecutar un conjunto de pruebas, aparecerá un resumen de la serie de pruebas en la parte inferior de la ventana Explorador de pruebas. Seleccione una prueba para ver los detalles de esa prueba en el panel inferior. Elija **Abrir prueba** en el menú contextual (teclado: F12) para mostrar el código fuente de la prueba seleccionada.
 
- Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
+ Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
 ### <a name="run-tests-after-every-build"></a>Ejecutar pruebas después de cada compilación
 
@@ -227,17 +228,17 @@ La barra de herramientas del Explorador de pruebas le ayuda a detectar, organiza
 
 |||
 |-|-|
-|![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar o **Ejecutar pruebas después de compilar** en la barra de herramientas del Explorador de pruebas.|
+|![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar o **Ejecutar pruebas después de compilar** en la barra de herramientas del Explorador de pruebas.|
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrar y agrupar la lista de pruebas
 
 Si tiene un gran número de pruebas, puede escribir en el cuadro de búsqueda del Explorador de pruebas para filtrar la lista por la cadena especificada. Para limitar aún más el evento de filtro, elija una opción de la lista de filtros.
 
- ![Categorías de filtro de búsqueda](../test/media/ute_searchfilter.png "UTE_SearchFilter")
+ ![Categorías de filtro de búsqueda](../test/media/ute_searchfilter.png)
 
 |||
 |-|-|
-|![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Para agrupar las pruebas por categoría, elija el botón **Agrupar por** .|
+|![Botón de grupo Explorador de pruebas](../test/media/ute_groupby_btn.png)|Para agrupar las pruebas por categoría, elija el botón **Agrupar por** .|
 
  Para más información, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
 
@@ -260,7 +261,7 @@ Más información sobre la [depuración de pruebas unitarias](../debugger/debugg
 
  **R:** Use IntelliSense para generar clases y métodos en el código del proyecto. Escriba una instrucción en un método de prueba que llame a la clase o método que desea generar y, a continuación, abra el menú de IntelliSense bajo la llamada. Si la llamada es a un constructor de la nueva clase, elija **Generar nuevo tipo** en el menú y siga el asistente para insertar la clase en el proyecto de código. Si la llamada es a un método, elija **Generar nuevo método** en el menú de IntelliSense.
 
- ![Menú de IntelliSense Generar código auxiliar del método](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")
+ ![Menú de IntelliSense Generar código auxiliar del método](../test/media/ute_generatemethodstubintellisense.png)
 
  **P: ¿Puedo crear pruebas unitarias que usan varios conjuntos de datos como entrada para ejecutar la prueba?**
 
@@ -304,9 +305,9 @@ El método con el atributo se ejecuta una vez para cada fila de la tabla. El Exp
 
  Los resultados de la cobertura aparecen en la ventana Resultados de la cobertura de código.
 
- ![Resultados de la cobertura de código](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")
+ ![Resultados de la cobertura de código](../test/media/ute_codecoverageresults.png)
 
- Obtenga más información sobre la [cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+ Más información sobre [cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
  **P: ¿Cómo puedo probar en el código métodos que tengan dependencias externas?**
 
@@ -326,6 +327,6 @@ Más información sobre cómo [aislar métodos de prueba unitaria con Microsoft 
 
  **A:** Sí, siga estos pasos para [buscar e instalar otros marcos](../test/install-third-party-unit-test-frameworks.md). Después de reiniciar Visual Studio, vuelva a abrir la solución para crear las pruebas unitarias y seleccione los marcos instalados aquí:
 
- ![Selección de otro marco de pruebas unitarias instalado](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")
+ ![Seleccione otro marco de prueba unitaria instalado](../test/media/createunittestsdialogextensions.png)
 
  El código auxiliar de prueba unitaria se creará con el marco seleccionado.

@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750745"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Cómo: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
 
@@ -63,11 +64,11 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 5.  En la pestaña **Compilar** elija **Opciones de compilación avanzadas** tal como se muestra en la siguiente ilustración.
 
-     ![Opciones de compilación avanzadas](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![Opciones de compilación avanzadas](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  Utilice la lista desplegable **Marco de destino (todas las configuraciones)** para cambiar el marco de destino a **.NET Framework 3.5** o una versión posterior, como se muestra en la llamada B en la siguiente ilustración. No debe especificar una versión de cliente.
 
-     ![Lista desplegable Marco de destino](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![Lista desplegable de la plataforma de destino](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Cambiar el destino a una versión concreta de .NET Framework para proyectos de prueba unitaria de Visual C#
 
@@ -85,7 +86,7 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 5.  En la pestaña **Aplicación**, seleccione **Plataforma de destino**. En la lista desplegable, elija **.NET Framework 3.5** o una versión posterior, como se muestra en la siguiente ilustración. No debe especificar una versión de cliente.
 
-     ![Lista desplegable Marco de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![Lista desplegable de la plataforma de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Cambiar el destino a una versión concreta de .NET Framework para proyectos de prueba unitaria de C++/CLI
 

@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d43bd048b19f0a9b8516769440fafb5a5013b867
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750700"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Cómo: Crear un editor de cuerpo HTTP personalizado para el Editor de prueba de rendimiento web
 
@@ -52,7 +53,7 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 5.  En el **Cuadro de herramientas**, bajo la categoría **Controles comunes**, arrastre un <xref:System.Windows.Forms.RichTextBox> hasta la superficie de UserControl1.
 
-6.  Elija el glifo de la etiqueta de acción (![glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) situado en la esquina superior derecha del control <xref:System.Windows.Forms.RichTextBox> y seleccione **Acoplar en contenedor primario**.
+6.  Elija el glifo de la etiqueta de acción (![Glifo de etiqueta inteligente](../test/media/vs_winformsmttagglyph.gif)) situado en la esquina superior derecha del control <xref:System.Windows.Forms.RichTextBox> y seleccione **Acoplar en contenedor primario**.
 
 7.  En el Explorador de soluciones, haga clic con el botón derecho en el proyecto Biblioteca de controles de Windows Forms y seleccione **Propiedades**.
 

@@ -16,13 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 251dac9f457e1103173de01f0a9522c8199a9571
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5e86cd1318d4b0db35ce6fa0e0abd925100fe34
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548442"
 ---
-# <a name="collecting-tier-interaction-data"></a>Recopilar datos de interacción de capas
+# <a name="collect-tier-interaction-data"></a>Recopilar datos de interacción de capas
 
 La generación de perfiles de interacción de capas proporciona información adicional sobre los tiempos de ejecución de funciones de aplicaciones de varias capas que se comunican con las bases de datos a través de servicios de ADO.NET. Los datos se recopilan solamente para las llamadas a funciones sincrónicas.
 
@@ -48,4 +49,4 @@ Debido a un error en el Asistente para rendimiento, debe agregar la opción de r
 
 ## <a name="see-also"></a>Vea también
 
-[Vista Interacciones de capas](../profiling/tier-interactions-view.md)
+[Interacciones de capas (vista)](../profiling/tier-interactions-view.md)

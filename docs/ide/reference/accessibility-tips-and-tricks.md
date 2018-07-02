@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebcf8adb89a2e152f1f4dd1cd0e324d1b25a782
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747461"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de accesibilidad de Visual Studio
 
@@ -34,13 +35,13 @@ Visual Studio tiene características de accesibilidad integradas que son compati
 
 Algunas personas tienen más dificultades para ver ciertos colores. Si necesita más contraste al escribir código pero no quiere usar los típicos temas de "Contraste alto", ofrecemos un tema "Azul (contraste adicional)".
 
-  ![Comparar el tema Azul y el tema Azul (contraste adicional)](media/blue-extra-contrast-theme.png "Vea la diferencia entre el tema Azul y el tema Azul (contraste adicional)")
+  ![Compare el tema Azul y el tema Azul (contraste adicional)](media/blue-extra-contrast-theme.png)
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Uso de anotaciones para revelar información útil sobre el código
 
 El editor de Visual Studio incluye numerosos elementos gráficos en el texto que le permiten conocer las características y las funciones en puntos concretos de una línea de código, como bombillas, subrayados ondulados de error y advertencia, marcadores, etc. Puede usar el conjunto de comandos "Mostrar anotaciones de línea" para detectar estos elementos gráficos y navegar por ellos.
 
-  ![Usar el conjunto de comandos Mostrar anotaciones de línea](media/show-line-annotations-command-set.png "Muestra cómo establecer el conjunto de comandos Mostrar anotaciones de línea")
+  ![Use el conjunto de comandos Mostrar anotaciones de línea](media/show-line-annotations-command-set.png)
 
 ## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Obtener acceso a las barras de herramientas mediante combinaciones de teclas de método abreviado
 
@@ -82,18 +83,18 @@ Esta es la manera de hacerlo.
 
 1. En el cuadro **Búsqueda** de un equipo con Windows 10, escriba **Cambiar sonidos del sistema**.
 
-  ![Cuadro de búsqueda de Windows 10](media/type-here-to-search.png "Escriba Cambiar sonidos del sistema en el cuadro de búsqueda de un equipo con Windows 10")
+  ![Cuadro de búsqueda en Windows 10](media/type-here-to-search.png)
 
   (O bien, si tiene Cortana habilitado, diga "Hola Cortana" y, después, diga "Cambiar sonidos del sistema").
 
 2. Haga doble clic en **Cambiar sonidos del sistema**.
 
-  ![Resultados de la búsqueda en Windows 10](media/change-system-sounds.png "Haga doble clic en Cambiar sonidos del sistema en los resultados de la búsqueda")
+  ![Resultados de la búsqueda en Windows 10](media/change-system-sounds.png)
 
 3. En el cuadro de diálogo **Sonido**, haga clic en la pestaña **Sonidos**. <br><br>
  Después, en **Eventos de programa**, desplácese hasta **Microsoft Visual Studio** y seleccione los sonidos que quiere aplicar a los eventos seleccionados.
 
-  ![Pestaña Sonidos del applet Sonido en Windows 10](media/sound-applet.png "Haga doble clic en Cambiar sonidos del sistema en los resultados de la búsqueda")
+  ![Pestaña Sonido del applet Sonido en Windows 10](media/sound-applet.png)
 
 4. Haga clic en **Aceptar**.
 

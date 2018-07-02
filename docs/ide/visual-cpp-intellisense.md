@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748090"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C++
 
@@ -35,29 +36,29 @@ Cuando empiece a escribir una palabra clave, un tipo, una función, el nombre de
 
 Para ver una lista de los iconos y sus significados, vea [Iconos de la Vista de clases y del Examinador de objetos](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C&#43;&#43; ventana Palabra completa](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Ventana Palabra completa de Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
 La primera vez que se invoca la lista de miembros solo muestra los miembros a los que se puede acceder en el contexto actual. Si presiona**Ctrl**+**J** a continuación, aparecen todos los miembros, independientemente de su accesibilidad. Si se invoca una tercera vez, se muestra una lista de elementos de programa aún más amplia. Puede desactivar la lista de miembros en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++** > **General** > **Lista de miembros automática**.
 
-![Visual C&#43;&#43; Lista de miembros](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Lista de miembros de Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
 ### <a name="parameter-help"></a>Ayuda de parámetros
 
 Cuando se escribe una llave de apertura de una llamada de función o un corchete angular en una declaración de variable de plantilla de clase, el editor muestra una pequeña ventana con los tipos de parámetros para cada sobrecarga de la función o el constructor. El parámetro "actual" &mdash;basado en la ubicación del cursor&mdash; está en negrita. Puede desactivar la información de parámetros en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++** > **General** > **Información de parámetros**.
 
-![Visual C&#43;&#43; Ayuda del parámetro](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Ayuda de parámetros de Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
 ### <a name="quick-info"></a>Información rápida
 
 Cuando coloca el cursor del mouse sobre una variable, se muestra una pequeña ventana en línea que muestra la información de tipo y el encabezado en el que se define el tipo. Para ver la firma de la función, coloque el puntero sobre una llamada a función. Puede desactivar la información rápida en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++** > **Avanzado** > **Información rápida automática**.
 
-![Visual C&#43;&#43; InformaciónRápida](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![InformaciónRápida de Visual C&#43;&#43;](../ide/media/vs2015_cpp_quickinfo.png)
 
 ### <a name="error-squiggles"></a>Subrayados ondulados de error
 
 Los subrayados ondulados bajo un elemento de programa (variable, palabra clave, llave, nombre de tipo, etc.), intentan indicarle la existencia de un error o un posible error en el código. Un subrayado ondulado aparece cuando escribe una declaración adelantada, para recordarle que aún le queda por escribir la implementación. Un subrayado ondulado de color púrpura se muestra en un proyecto compartido para indicar que hay un error en código que no está activo actualmente, como sucede, por ejemplo, cuando está trabajando en el contexto de Windows pero introduce algo que sería un error en un contexto de Android. Un subrayado ondulado de color rojo indica una advertencia o un error del compilador en el código activo que tiene que resolver.
 
-![Visual C&#43;&#43; subrayados ondulados de errores](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Líneas de subrayado de errores de Visual C&#43;&#43;](../ide/media/vs2015_cpp_error_quiggles.png)
 
 ### <a name="code-colorization-and-fonts"></a>Coloración y fuentes de código
 
@@ -69,7 +70,7 @@ En un proyecto de código compartido, algunas características de IntelliSense, 
 
 Esta es una aplicación de OpenGLES que está configurada para compilarse para Android e iOS. La ilustración muestra el código compartido que se está editando. En la primera imagen, Android es el proyecto activo:
 
-![El proyecto Android es el proyecto activo.](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")
+![El proyecto Android es el proyecto activo.](../ide/media/intellisensecppcrossplatform.png)
 
 Tenga en cuenta lo siguiente:
 
@@ -81,7 +82,7 @@ Tenga en cuenta lo siguiente:
 
 Ahora cambie el proyecto activo a **iOS.StaticLibrary** y observe cómo cambia el subrayado ondulado.
 
-![iOS está seleccionado como el proyecto activo.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
+![iOS está seleccionado como el proyecto activo.](../ide/media/intellisensecppcrossplatform2.png)
 
 Tenga en cuenta lo siguiente:
 
@@ -95,11 +96,11 @@ Tenga en cuenta lo siguiente:
 
 Al abrir un único archivo fuera de cualquier proyecto, se sigue obteniendo IntelliSense. Puede habilitar o deshabilitar características específicas de IntelliSense en el cuadro de diálogo **Opciones**, en **Editor de texto** > **C/C++**  >  **Avanzado**. Para configurar IntelliSense para archivos individuales que no forman parte de un proyecto, busque la sección **IntelliSense y exploración para archivos que no forman parte de proyectos**.
 
-![Visual C&#43;&#43; Intellisense de archivo único](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Archivo único de IntelliSense de Visual C&#43;&#43;](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
 De forma predeterminada, IntelliSense de archivo único solo utiliza directorios de inclusión estándar para buscar archivos de encabezado. Para agregar directorios adicionales, abra el menú contextual del nodo **Solución** y agregue el directorio a la lista **Depurar código fuente**, tal como se muestra en la siguiente ilustración:
 
-![Agregar una ruta a un archivo de encabezado.](../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
+![Agregar una ruta a un archivo de encabezado.](../ide/media/intellisensedebugyourcode.jpg)
 
 ## <a name="see-also"></a>Vea también
 
