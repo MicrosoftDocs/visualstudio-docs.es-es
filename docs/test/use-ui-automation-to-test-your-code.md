@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ad00d05bf6eba2a3853c0af79bf9decaaba236f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4b9e63b930122d36903187128d4bebeb1ff96143
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751733"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35669239"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
@@ -35,7 +35,7 @@ Como se muestra en la ilustración siguiente, una experiencia típica de desarro
 
 Crear una prueba de IU codificada es fácil. Basta con efectuar la prueba manualmente mientras el **generador de pruebas automatizadas de IU** se ejecuta en segundo plano. También puede especificar qué valores deben aparecer en campos concretos. El **generador de pruebas automatizadas de IU** registra las acciones y genera código a partir de estas. Después de crear la prueba, puede editarla en un editor especializado que permita modificar la secuencia de acciones.
 
-Como alternativa, si tiene un caso de prueba que se haya registrado en Microsoft Test Manager, puede generar código a partir de este. Para obtener más información, consulte [Grabar y reproducir pruebas manuales](/vsts/manual-test/getting-started/record-play-back-manual-tests).
+Como alternativa, si tiene un caso de prueba que se haya registrado en Microsoft Test Manager, puede generar código a partir de este. Para obtener más información, consulte [Grabar y reproducir pruebas manuales](/vsts/test/mtm/record-play-back-manual-tests).
 
 El editor y el **generador especializados de pruebas automatizadas de IU** facilitan la creación y la edición de pruebas automatizadas de IU, aunque sus conocimientos principales se concentren en las pruebas en lugar de en la codificación. Pero si es un desarrollador y desea extender la prueba de forma más avanzada, el código se estructura para que sea fácil de copiar y adaptar. Por ejemplo, puede registrar una prueba para comprar algo en un sitio web y, a continuación, editar el código generado para agregar un bucle que compre muchos elementos.
 
@@ -105,7 +105,7 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
     > [!TIP]
     > Alterne entre el registro de acciones y la comprobación de valores. Genere código al final de cada secuencia de acciones o comprobaciones. Si lo desea, podrá insertar nuevas acciones y comprobaciones más adelante.
 
-     Para obtener más detalles, consulte [Validar las propiedades de los controles](#VerifyingCodeUsingCUITGenerateAssertions).
+     Para obtener más detalles, consulte [Validar las propiedades de los controles](#validate-the-properties-of-ui-controls).
 
 5. Vea el código de prueba generado.
 
@@ -140,7 +140,7 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
 8. Ejecute la prueba.
 
-   Use el Explorador de pruebas o abra el menú contextual del método de prueba y después elija **Ejecutar pruebas**. Para obtener más información sobre cómo ejecutar pruebas, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md) y *Opciones adicionales para ejecutar pruebas de IU codificadas* en la sección [Pasos adicionales](#VerifyCodeUsingCUITWhatsNext) al final de este tema.
+   Use el Explorador de pruebas o abra el menú contextual del método de prueba y después elija **Ejecutar pruebas**. Para obtener más información sobre cómo ejecutar pruebas, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md) y *Opciones adicionales para ejecutar pruebas de IU codificadas* en la sección [Pasos adicionales](#what's-next?) al final de este tema.
 
 Las secciones restantes de este tema proporcionan más detalles sobre los pasos de este procedimiento.
 
@@ -284,13 +284,13 @@ Compruebe que el archivo de configuración tenga la clave `RecordImplicitiHovers
 
 Después de crear la prueba de IU codificada, podrá editarla mediante cualquiera de las siguientes herramientas de Visual Studio:
 
-- Use el **generador de pruebas automatizadas de IU** para agregar controles y validación adicionales a las pruebas. Consulte la sección [Agregar controles y validar sus propiedades](#VerifyingCodeUsingCUITGenerateAssertions) en este tema.
+- Use el **generador de pruebas automatizadas de IU** para agregar controles y validación adicionales a las pruebas. Consulte la sección [Agregar controles y validar sus propiedades](#validate-the-properties-of-ui-controls) en este tema.
 
 - El **Editor de pruebas automatizadas de IU** permite modificar fácilmente este tipo de pruebas. Con el **Editor de pruebas automatizadas de IU** puede buscar, ver y modificar métodos de prueba. También puede editar acciones de interfaz de usuario y los controles asociados en la asignación de controles de IU. Para obtener más información, consulte [Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 - **Editor de código:**
 
-    - Agregue código manualmente para los controles en la prueba, como se describe en la sección para [codificar acciones y propiedades de controles de IU](#VerifyingCodeCUITActionsandProperties) de este tema.
+    - Agregue código manualmente para los controles en la prueba, como se describe en la sección para [codificar acciones y propiedades de controles de IU](#coded-ui-control-actions-and-properties) de este tema.
 
     - Después de crear una prueba de IU codificada, puede modificarla para que esté controlada por datos. Para obtener más información, consulte [Crear una prueba de IU codificada controlada por datos](../test/creating-a-data-driven-coded-ui-test.md).
 
@@ -454,7 +454,7 @@ Puede analizar pruebas de IU codificadas mediante los registros de dichas prueba
 
 - [Extender las pruebas automatizadas de IU y las grabaciones de acciones](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener más información sobre las pruebas manuales, vea [Run manual tests with Microsoft Test Manager](/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager) (Ejecución de pruebas manuales con Microsoft Test Manager). Para obtener más información acerca de las pruebas automatizadas, vea [Herramientas de prueba de Visual Studio](../test/improve-code-quality.md).
+Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manuales. Para obtener más información sobre las pruebas manuales, vea [Run manual tests with Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager) (Ejecución de pruebas manuales con Microsoft Test Manager). Para obtener más información acerca de las pruebas automatizadas, vea [Herramientas de prueba de Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Vea también
 

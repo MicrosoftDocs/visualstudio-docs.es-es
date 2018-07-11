@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 88c42b710b08ca7dae8d779da3d6e093179ddca6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692374"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "35669415"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas automatizadas de IU con el Editor de pruebas automatizadas de IU
 
@@ -92,9 +92,9 @@ Tras completar las modificaciones, guarde los cambios en el archivo UIMap.Design
 
 - Puede usar el botón **Buscar** de la barra de herramientas del editor de pruebas automatizadas de IU para abrir la herramienta Buscar y reemplazar en Visual Studio. Después puede usar el control Buscar para localizar una acción de la interfaz de usuario en el editor de pruebas de IU codificadas. Por ejemplo, puede intentar buscar "Hacer clic en el botón 'Inicio de sesión'". Esto puede ser útil en las pruebas de gran tamaño. No puede usar la funcionalidad de reemplazo en la herramienta Buscar y reemplazar del Editor de pruebas automatizadas de IU. Para obtener más información, consulte el control Buscar en [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
 
-- En ocasiones puede ser difícil visualizar dónde se ubican los controles en la interfaz de usuario de la aplicación sometida a prueba. Una de las capacidades del editor de pruebas de IU codificadas es que puede seleccionar un control de la asignación de controles de IU y ver su ubicación en la aplicación sometida a prueba. Para obtener más información, vea [Buscar un control de interfaz de usuario en la aplicación sometida a prueba](#CodedUITestEditor_LocateUIControl), que se encuentra en un apartado posterior de este artículo.
+- En ocasiones puede ser difícil visualizar dónde se ubican los controles en la interfaz de usuario de la aplicación sometida a prueba. Una de las capacidades del editor de pruebas de IU codificadas es que puede seleccionar un control de la asignación de controles de IU y ver su ubicación en la aplicación sometida a prueba. Para obtener más información, vea [Buscar un control de interfaz de usuario en la aplicación sometida a prueba](#locate-a-ui-control-in-the-application-under-test), que se encuentra en un apartado posterior de este artículo.
 
-- Es posible que sea necesario expandir el control de contenedor que contiene el control que desea editar. Para obtener más información, vea [Buscar un control y sus descendientes](#CodedUITestEditor_LocateDecendants), que se encuentra en un apartado posterior de este artículo.
+- Es posible que sea necesario expandir el control de contenedor que contiene el control que desea editar. Para obtener más información, vea [Buscar un control y sus descendientes](#locate-a-control-and-its-descendants), que se encuentra en un apartado posterior de este artículo.
 
 ## <a name="delete-unwanted-ui-actions"></a>Eliminar acciones de IU no deseadas
 

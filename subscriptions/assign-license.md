@@ -9,12 +9,12 @@ description: Obtenga información sobre la manera en que los administradores pue
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4325921bbaa75e0fb8a8a16947c45901b6f01649
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d0dbd509d60ed3528186e41c98f374ab6db60fa3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477384"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36327029"
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Asignar licencias en el Portal de administradores de suscripciones de Visual Studio
 
@@ -26,9 +26,7 @@ Si tiene licencias disponibles para suscripciones de Visual Studio, puede asigna
 1.  Iniciar sesión en el [portal de administradores](https://manage.visualstudio.com)
 
 2.  Para asignar un solo suscriptor de Visual Studio, haga clic en **Agregar** en la parte superior de la tabla.
-
-    <img alt="Add subscriber" src="_img\assign-license-add\assign-license-add.png" style="border: 1px solid #CCCCCC" />
-
+   
 3.  Escriba la información en los campos del formulario para el nuevo suscriptor. Si su organización usa Azure Active Directory, este campo actúa como una función de búsqueda para buscar personas en el directorio actual, por lo que puede seleccionar el usuario correcto entre los resultados de la búsqueda. Una vez que haya seleccionado a esa persona, se rellenarán automáticamente su nombre, correo electrónico de inicio de sesión y correo electrónico de notificación, como se ve a continuación. 
 
     Si su organización no usa Azure Active Directory (Azure AD) pero tiene una dirección de correo electrónico para recibir mensajes diferente de la que se usa para iniciar sesión, puede especificarla aquí. Seleccione el hipervínculo "Add a different email for receiving communication" (Agregar un correo electrónico diferente para recibir comunicaciones). 
@@ -43,23 +41,17 @@ Si tiene licencias disponibles para suscripciones de Visual Studio, puede asigna
 
 4.  Después de agregar el suscriptor, se enviará automáticamente un correo electrónico de asignación al nuevo suscriptor con instrucciones adicionales. Puede volver a enviar el correo electrónico de asignación en cualquier momento si selecciona el suscriptor y hace clic en el botón **Reenviar** en el menú superior.
 
-    <img alt="Subscriber added" src="_img\assign-license-add\add-subscriber-complete.png" style="border: 1px solid #CCCCCC" />
 
 ## <a name="bulk-assignments"></a>Asignaciones en masa
 1.  Para agregar varios suscriptores a la vez, vaya a la pestaña **Administrar suscriptores**. En la cinta de la parte superior, haga clic en **Agregar en masa**. 
 
-    <img alt="Bulk add" src="_img\assign-license-add\bulk-assign-add.png" style="border: 1px solid #CCCCCC" />
-
 2. La asignación en masa usa una plantilla de Microsoft Excel para cargar los suscriptores. En el cuadro de diálogo para cargar varios suscriptores, haga clic en **Descargar** para descargar la plantilla. Descargue siempre la versión más reciente de esta plantilla. Si usa una versión antigua, se puede producir un error en la carga masiva.
-
-    <img alt="Upload multiple subscribers" src="_img\assign-license-add\bulk-assign-upload.png" style="border: 1px solid #CCCCCC" />
 
 3.  En la hoja de cálculo de Excel, rellene los campos con la información de las personas a las que quiere asignar suscripciones. El campo Referencia es opcional. Si ha rellenado alguna parte de la plantilla de forma incorrecta, verá un mensaje de error que describe el problema. Guarde el archivo localmente cuando haya terminado.
 **Para garantizar una carga sin problemas, tenga en cuenta los siguientes procedimientos recomendados:**
     - Asegúrese de que ninguno de los campos del formulario contiene comas.
     - Quite los espacios delante y detrás de los campos del formulario, como los nombres de los usuarios.
     - Asegúrese de que los nombres de los usuarios no contienen espacios adicionales entre las partes de los nombres compuestos o los apellidos (por ejemplo, el nombre compuesto "Maggie May" no debe escribirse "Maggie  May", ya que el sistema no eliminará el espacio adicional).
-    <img alt="Bulk add template" src="_img\assign-license-add\bulk-template.png" style="border: 1px solid #CCCCCC" />
 
 4.  Vuelva al Portal de administración de Suscripciones de Visual Studio y, en el cuadro de diálogo para cargar varios suscriptores, haga clic en **Examinar**. Vaya al archivo de Excel que ha guardado y haga clic en **Aceptar**. Verá el progreso de la carga en la pantalla. 
 
@@ -70,4 +62,3 @@ Si la plantilla contiene errores, se producirá un error en la carga y se mostra
 
 Cuando la carga se realice correctamente, verá la lista de suscriptores y un mensaje de confirmación.
 
-   <img alt="Upload complete" src="_img\assign-license-add\bulk-assign-upload-complete.png" style="border: 1px solid #CCCCCC" />
