@@ -12,80 +12,125 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0979c0e7ec0fa53879766136d27ab79b0f490a17
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746000"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "36755929"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Cómo notificar un problema con Visual Studio 2017
 
-Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. A continuación le indicamos cómo debe notificarnos un problema para que podamos diagnosticarlo y corregirlo.
+Si experimenta un problema con Visual Studio, nos gustaría que nos lo comunicara. Aquí le mostramos cómo notificar un problema a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/) para que podamos diagnosticarlo y corregirlo.
 
-## <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
+## <a name="report-a-problem-by-using-visual-studio"></a>Notificación de un problema con Visual Studio
 
-Si aún no lo ha hecho, inicie sesión Visual Studio a fin de notificar un problema. De este modo, podrá informarnos sobre los problemas que experimente y votar o comentarlos. También puede votar o comentar otros problemas que vea publicados.
+Para notificar un problema de Visual Studio, debe iniciar el informe en Visual Studio o el instalador de Visual Studio. No podrá hacerlo directamente a través del sitio web de la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/). La generación de informes mediante Visual Studio permite incluir información de diagnóstico automáticamente en el informe.
+
+![Menú emergente para notificar un problema en la Comunidad de desarrolladores de Visual Studio](media/report-an-issue.png)
 
 1. En Visual Studio, seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema**.
-2. Si no ha iniciado sesión, seleccione **Iniciar sesión**; se encuentra en la parte derecha de la herramienta, tal y como se muestra en la siguiente captura de pantalla.
-3. Siga las instrucciones en pantalla para iniciar sesión.
 
- ![Inicie sesión para notificar un problema](../ide/media/sign-in-new-ux.png)
+   > [!TIP]
+   > Si no puede completar la instalación de Visual Studio o no puede tener acceso a la herramienta de comentarios dentro de Visual Studio, puede notificar un problema mediante el **Instalador de Visual Studio**. Para ello, haga clic en el icono de comentario en la esquina superior derecha del **Instalador de Visual Studio**.
 
-## Buscar y votar problemas similares <a name="search_and_vote"></a>
+1. Si no ha iniciado sesión, seleccione **Iniciar sesión**; se encuentra en la parte derecha de la herramienta, tal y como se muestra en la siguiente captura de pantalla. Siga las instrucciones en pantalla para iniciar sesión.
 
-1. Busque el problema y vea si otros usuarios también lo han notificado.
-2. Si alguien lo ha notificado, "vótelo" para indicárnoslo.
+   ![Inicie sesión para notificar un problema](../ide/media/sign-in-new-ux.png)
 
-  ![Buscar y votar problemas similares](../ide/media/search-and-vote.png)
+   Para notificar un problema que esté experimentando, inicie sesión. También puede votar por otros problemas publicados o agregar comentarios.
 
-## Informar de un problema nuevo<a name="report_new_problem"></a>
+1. Cuando haya iniciado sesión, podrá ver sus **Problemas** y **Actividad** en la pantalla **Elementos que sigo**.
 
-1. Si no encuentra lo que busca, haga clic en el botón **Informar de un problema nuevo** en la parte inferior de la pantalla.
-2. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.
-3. Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.
+    ![Elementos que sigo](../ide/media/items-i-follow.png)
 
-  ![Notificar un problema nuevo](../ide/media/report-new-problem.png)
+1. Visual Studio proporciona una interfaz que permite buscar el problema y ver si otros usuarios lo han notificado. Si alguien lo ha notificado, "vótelo" para indicárnoslo.
+   > [!NOTE]
+   > Para realizar una búsqueda, indique el texto en el cuadro de búsqueda y presione Entrar o haga clic en el icono de búsqueda.
 
-## Proporcionar una captura de pantalla y datos adjuntos (opcional) <a name="provide_screenshots"></a>
+   ![Buscar y votar problemas similares](../ide/media/search-and-vote.png)
 
- Elija enviar la pantalla actual a Microsoft. Puede adjuntar capturas de pantalla adicionales u otros archivos si hace clic en el botón **Adjuntar archivos adicionales**.
+1. Si no encuentra el problema que ha detectado, elija **Informar de un problema nuevo** en la parte inferior de la pantalla.
 
-## Proporcionar un volcado de seguimiento y montón (opcional) <a name="provide_a_trace_and_heap_dump"></a>
+   > [!NOTE]
+   > El botón **Informar de un problema nuevo** solo aparece en la interfaz de Visual Studio correspondiente a la Comunidad de desarrolladores. No se puede notificar un problema directamente en el sitio web de la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/).
 
-Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a diagnosticar problemas. Apreciamos mucho que use la herramienta **Notificar un problema** para grabar los pasos de reproducción y enviar los datos a Microsoft. A continuación le mostramos cómo hacerlo.
+1. Asigne un título descriptivo al problema que nos ayude a dirigirlo al equipo de Visual Studio correcto.
+
+1. Proporcione detalles adicionales y, si es posible, los pasos para reproducir el problema.
+
+   ![Notificar un problema nuevo](../ide/media/report-new-problem.png)
+
+1. Seleccione **Siguiente** para ir a la pestaña **Datos adjuntos**. Aquí puede hacer una captura de la pantalla actual para enviársela a Microsoft. Para adjuntar capturas de pantalla adicionales u otros archivos, elija **Adjuntar archivos adicionales**.
+
+   ![Adjuntar una captura de pantalla a un informe de problemas de Visual Studio](media/report-a-problem-screenshot.png)
+
+1. Si no quiere adjuntar una captura de pantalla ni [grabar una reproducción](#record-a-repro), seleccione **Siguiente** para ir a la pestaña **Resumen**.
+
+1. Seleccione **Enviar** para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. (Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción para el informe).
+
+   Para obtener información sobre qué datos se recopilan, vea [Datos que recopilamos](developer-community-privacy.md#data-we-collect).
+
+## <a name="record-a-repro"></a>Grabación de una reproducción
+
+Los archivos de seguimiento y de volcado de memoria del montón nos ayudan a diagnosticar problemas. Apreciamos mucho que use la herramienta **Notificar un problema** para grabar los pasos de reproducción y enviar los datos a Microsoft. A continuación le mostramos cómo hacerlo:
+
+1. Tras escribir un título y una descripción del problema, seleccione **Siguiente** para ir a la pestaña **Datos adjuntos**.
 
 1. Haga clic en la pestaña **Grabar**.
-2. Haga clic en **Iniciar grabación**. Proporcione permiso para ejecutar la herramienta.
 
-  ![Haga clic en "Iniciar grabación" para proporcionar un archivo de seguimiento y de volcado de memoria del montón ](../ide/media/record-dialog-box.png)
+1. Si puede reproducir el problema en Visual Studio, seleccione la instancia actual en **Grabar sus acciones**. Si no puede, por ejemplo, en el caso de que Visual Studio esté bloqueado, seleccione **\<Crear una instancia nueva>** para grabar las acciones en una instancia nueva de Visual Studio.
 
-3. Cuando aparezca la herramienta **Grabación de acciones de usuario**, realice los pasos que reproducen el problema.
-4. Cuando haya terminado, haga clic en el botón **Detener grabación**.
-5. Espere unos minutos mientras Visual Studio recopila y empaqueta la información que ha grabado.
+1. Seleccione **Iniciar grabación**. Proporcione permiso para ejecutar la herramienta.
 
-## Enviar el informe <a name="submit_the_report"></a>
+   ![Elija "Iniciar grabación" para proporcionar un archivo de seguimiento y de volcado de memoria del montón en un informe de problema de Visual Studio.](../ide/media/record-dialog-box.png)
 
- Haga clic en el botón **Enviar** para enviar el informe junto con todas las imágenes y archivos de volcado o de seguimiento. (Si el botón **Enviar** está atenuado, asegúrese de que ha proporcionado un título y una descripción para el informe).
+1. Cuando aparezca la herramienta **Grabación de acciones de usuario**, realice los pasos que reproducen el problema.
 
-## Alternativas de informes <a name="alternate_reporting"></a>
+1. Cuando haya terminado, haga clic en el botón **Detener grabación**.
 
-### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Notificar un problema mediante el Instalador de Visual Studio
+1. Espere unos minutos mientras Visual Studio recopila y empaqueta la información que ha grabado.
 
-Si no puede completar la instalación de Visual Studio o no puede tener acceso a la herramienta de comentarios dentro de Visual Studio, puede notificar un problema mediante el **Instalador de Visual Studio**. Para ello, haga clic en el icono de comentario en la esquina superior derecha del **Instalador de Visual Studio**.
+   Para obtener información sobre qué datos se recopilan, vea [Datos que recopilamos](developer-community-privacy.md#data-we-collect).
 
- ![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios en el Instalador de Visual Studio para abrir la herramienta de comentarios](../install/media/report-a-problem.png)
+## <a name="when-further-information-is-needed-need-more-info"></a>En caso de necesitar más información (Se necesita más información)
 
-### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Buscar problemas y soluciones en la comunidad de desarrolladores de Visual Studio
+A partir de la versión 15.5 de Visual Studio 2017, hay un nuevo flujo de trabajo para ayudar a los usuarios a proporcionar información adicional en los informes de problemas.
 
-Si no quiere o no sabe notificar un problema mediante Visual Studio, es posible que ese problema ya haya sido notificado y que se haya publicado una solución en la comunidad de desarrolladores de Visual Studio. Para obtener más información, vea la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
+1. Si un ingeniero de Microsoft establece el problema de la [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/) en el estado **Se necesita más información**, los usuarios que hayan publicado, votado, seguido o comentado el problema recibirán una notificación en la herramienta **Notificar un problema** de Visual Studio.
 
-#### <a name="provide-product-feedback-or-a-suggestion"></a>Proporcionar comentarios sobre el producto o una sugerencia
+   ![Notificación Se necesita más información en Visual Studio](../ide/media/nmi-notification.png)
+
+1. Haga clic en el vínculo **Ver problemas** para filtrar y ordenar la vista por los problemas que requieran atención. Estos problemas también tienen un indicador junto a ellos, para diferenciarlos en la búsqueda en general.
+
+1. Haga clic en un problema para ver sus detalles.
+
+   ![Notificación Se necesita más información](../ide/media/nmi-details-view.png)
+
+1. Para ver la solicitud **Se necesita más información**, haga clic en el vínculo **Ver la solicitud y responder** de la vista de detalles del problema. Cuadro de diálogo en el que se muestra la solicitud.
+
+   ![Notificación Se necesita más información](../ide/media/nmi-request.png)
+
+1. Para proporcionar más información, puede agregar comentarios, datos adjuntos o grabar los pasos. Esta experiencia es similar a la notificación de un nuevo problema o a la de proporcionar información adicional cuando se vota un problema.
+
+1. El ingeniero de Microsoft que haya solicitado la información recibirá una notificación cuando se agregue información adicional. Si tienen información suficiente para investigar el problema, cambiarán el estado. En caso contrario, el ingeniero solicitará más información.
+
+   > [!NOTE]
+   > * Cuando responda, la notificación desaparecerá. En su lugar, verá un banner en el que se le dan las gracias y se le indica un método para proporcionar más información.
+   > * Cuando el estado del problema cambie, la notificación desaparecerá para todos los usuarios que sigan el problema.
+   > * A una misma solicitud **Se necesita más información** pueden responder varias personas.
+   > * Al acceder a la [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/) directamente mediante un explorador web, no aparece no hay ningún flujo de trabajo **Se necesita más información**, pero sí que puede proporcionar comentarios y datos adjuntos mediante ese método.
+
+## <a name="search-for-solutions-or-provide-feedback"></a>Búsqueda de soluciones o envío de comentarios
+
+Si no quiere o no puede notificar un problema mediante Visual Studio, es posible que ese problema ya se haya notificado y que se haya publicado una solución en la página [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/).
 
 Si no tiene un problema para notificar, pero quiere proporcionar comentarios sobre el producto o una sugerencia, también hay un lugar para eso. Para obtener más información, vea la página [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide).
 
 ## <a name="see-also"></a>Vea también
 
 * [Hable con nosotros](../ide/talk-to-us.md)
+* [Notificación de un problema con Visual Studio para Mac](/visualstudio/mac/report-a-problem)
+* [Notificación de un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
 * [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/)
+* [Privacidad de datos de la Comunidad de desarrolladores](developer-community-privacy.md)

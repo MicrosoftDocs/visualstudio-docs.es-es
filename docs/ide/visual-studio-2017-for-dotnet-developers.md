@@ -1,36 +1,37 @@
 ---
-title: Visual Studio 2017 para desarrolladores de .NET
-description: Información general de las características de Visual Studio 2017 para ayudarle a escribir código de .NET mejor y más rápidamente.
+title: Aumento de la productividad de desarrollo de .NET
+description: Información general sobre la navegación, el análisis de código, las pruebas unitarias y otras características para ayudarle a escribir código .NET mejor y más rápido.
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.date: 01/16/2018
+ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c4577b1d04b74bdc351927603604d2f92d31eb9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748756"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37175309"
 ---
-# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Guía de productividad de Visual Studio 2017 para desarrolladores de .NET
+# <a name="visual-studio-2017-c-productivity-guide"></a>Guía de productividad de C# para Visual Studio 2017
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) aumenta la productividad de los desarrolladores a un nivel nunca visto. Hemos mejorado el rendimiento y la confiabilidad del inicio y la carga de la solución, la detección de pruebas y la latencia de escritura. También hemos agregado y mejorado características que agilizan la escritura de código de calidad. Algunas de estas características son: navegación a los ensamblados descompilados, sugerencias de nombres de variable mientras se escribe, una vista jerárquica en el **Explorador de pruebas**, Ir a todo (**CTRL**+**T**) para navegar a las declaraciones de archivo/tipo/miembro/símbolo, una **aplicación auxiliar de excepciones** inteligente, la configuración y la aplicación de estilo de código, así como numerosas correcciones de código y refactorizaciones.
-
-Siga esta guía para optimizar su productividad.
+Vea cómo [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) aumenta la productividad de los desarrolladores a un nivel nunca visto. Aproveche las mejoras de productividad y rendimiento, como la navegación a los ensamblados descompilados, las sugerencias de nombres de variable mientras se escribe, una vista jerárquica en el **Explorador de pruebas**, Ir a todo (**CTRL**+**T**) para navegar a las declaraciones de archivo/tipo/miembro/símbolo, una **aplicación auxiliar de excepciones** inteligente, la configuración y la aplicación de estilo de código, así como numerosas correcciones de código y refactorizaciones.
 
 ##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Estoy habituado a los métodos abreviados de mi teclado de una extensión/editor/IDE diferente.
 
-Si anteriormente usaba otro IDE o entorno de codificación, es posible que la instalación de una de estas extensiones le sea útil:
+**Novedades de la versión 15.8 de Visual Studio 2017** Si ya conoce otro IDE o entorno de programación, puede cambiar las combinaciones de teclado a *Visual Studio Code* o *ReSharper (Visual Studio)*:
 
-- [Emacs Emulación](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
+![Combinaciones de teclado de Visual Studio](../ide/media/VS2017Guide-Keyboard.png)
+
+Algunas extensiones también ofrecen combinaciones de teclado:
 - [HotKeys for Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [Emacs Emulación](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 Estos son accesos directos populares de Visual Studio:
@@ -44,14 +45,18 @@ Estos son accesos directos populares de Visual Studio:
 | **Ctrl**+**.** (también **Alt**+**Entrar** en el perfil de C#) | Acciones rápidas y refactorizaciones | Ver qué correcciones de código, acciones de generación de código, refactorizaciones u otras acciones rápidas están disponibles en la posición del cursor o selección de código |
 | **Ctrl**+**D** | Línea duplicada | Duplica la línea de código en la que se encuentra el cursor (disponible en la **Visual Studio 2017, versión 15.6** y posteriores) |
 | **Mayús**+**Alt**+**+**/**-** | Expandir o contraer la selección | Expande o contrae la selección actual en el editor (disponible en **Visual Studio 2017 versión 15.5** y posteriores). |
+| **Mayús** + **Alt** + **Ins** | Inserción del siguiente símbolo de inserción coincidente | Permite agregar una selección y el símbolo de inserción en la ubicación siguiente que coincida con la actual (disponible en la **versión 15.8 de Visual Studio 2017** y versiones posteriores). |
 | **Ctrl**+**Q** | Inicio rápido | Buscar todos los valores de Visual Studio |
 | **F5** | Iniciar depuración | Iniciar la depuración de la aplicación |
 | **CTRL**+**F5** | Ejecutar sin depurar | Ejecutar la aplicación localmente sin depuración |
 | **CTRL**+**K**,**D** (perfil predeterminado) o **CTRL**+**E**,**D** (perfil de C#) | Dar formato al documento | Limpiar el formato de las infracciones en el archivo según la configuración de nueva línea, espaciado y sangría |
 | **CTRL**+**\\**,**E** (perfil predeterminado) o **CTRL**+**W**,**E** (perfil de C#) | Ver lista de errores | Ver todos los errores en el documento, proyecto o solución |
+| **Alt** + **RePág o AvPág** | Ir al problema siguiente o anterior | Permite ir al error, advertencia o sugerencia siguiente o anterior del documento (disponible en la **versión 15.8 de Visual Studio 2017** y versiones posteriores). |
 
 > [!NOTE]
-> Algunas extensiones desenlazan los enlaces de teclado de Visual Studio predeterminados. Para usar los siguientes comandos, restaure los enlaces de teclado a los valores predeterminados de Visual Studio. Para ello, vaya a: **Herramientas** > **Importar y exportar configuración** > **Restablecer todas las configuraciones** o **Herramientas** > **Opciones** > **Teclado** > **Restablecer**.
+> Algunas extensiones desenlazan los enlaces de teclado de Visual Studio predeterminados. Para usar los anteriores comandos, restaure los enlaces de teclado a los valores predeterminados de Visual Studio. Para ello, vaya a **Herramientas** > **Importar y exportar configuración** > **Restablecer todas las configuraciones** o **Herramientas** > **Opciones** > **Teclado** > **Restablecer**.
+
+Vea más métodos abreviados de teclado y comandos de Visual Studio en [nuestra documentación](..\ide\tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Necesito una manera de desplazarme rápidamente a los archivos o tipos.
 Visual Studio 2017 tiene una característica denominada **Ir a todo** (**Ctrl**+**T**). Ir a todo permite saltar rápidamente a cualquier archivo, tipo, miembro o declaración de símbolo.
@@ -85,6 +90,7 @@ Visual Studio 2017 incluye un gran número de refactorizaciones, acciones de gen
   - Consulte más información en nuestra [documentación](https://aka.ms/refactorings)
 - Escriba su propia refactorización o corrección de código con [analizadores de Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 - Varios miembros de la comunidad han escrito extensiones gratuitas que agregan más inspecciones de código:
+  - [Analizadores de FXCop](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint para Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -120,7 +126,7 @@ Hemos agregado una gran cantidad de nuevas funcionalidades de depuración en Vis
 - La depuración [Retroceder](../debugger/how-to-use-intellitrace-step-back.md) le permite volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior.
 - [Depuración de instantáneas](/azure/application-insights/app-insights-snapshot-debugger) le permite investigar el estado de una aplicación web en directo en el momento en que se inició una excepción (debe estar en Azure).
 
-![Nueva aplicación auxiliar de excepciones en VS2017](../ide/media/VSGuide_Debugging.png)
+![Nueva aplicación auxiliar de excepciones de Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Deseo usar el control de versiones con mis proyectos.
 Puede usar git o TFVC para almacenar y actualizar el código en Visual Studio.
@@ -141,8 +147,6 @@ La lista siguiente incluye características de editor y productividad que aument
 | Modo de finalización y sugerencias | Cambia el comportamiento de la finalización en IntelliSense (los desarrolladores con conocimientos de IntelliJ tienden a cambiar esta configuración predeterminada) | **Menú** > **Editar** > **IntelliSense** > **Alternar el modo de finalización** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Muestra la información de referencia de código y el historial de cambios en el editor | **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens** |
 | [Fragmentos de código](../ide/visual-csharp-code-snippets.md) | Ayudan al código auxiliar fuera del texto reutilizable común |  Escriba un nombre de fragmento de código y presione **Tabulación** dos veces. |
-
-![Fragmentos de código en Visual Studio](../ide/media/VSGuide_SmartEditor.png)
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>¿Falta alguna característica que mejora su productividad o está experimentando un bajo rendimiento?
 Tiene varias formas de enviarnos sus comentarios:
