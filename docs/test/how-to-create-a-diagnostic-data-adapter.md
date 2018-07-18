@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44d25ffee531c7b18240dcc65272d25bcb9e3402
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844747"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Cómo: Crear un adaptador de datos de diagnóstico
 
@@ -31,7 +32,7 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
 
  A continuación se muestra una lista parcial de eventos clave que puede usar al crear el adaptador de datos de diagnóstico. Para obtener una lista completa de los eventos del adaptador de datos de diagnóstico, vea la clase abstracta <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>.
 
-|evento|Description|
+|evento|Descripción|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Inicio de la ejecución de pruebas|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Final de la ejecución de pruebas|
@@ -92,13 +93,13 @@ Para crear un *adaptador de datos de diagnóstico*, debe crear una biblioteca de
 
 5.  Agregue <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> a la clase para que el adaptador de datos de diagnóstico lo identifique como un adaptador de datos de diagnóstico, y reemplace **Compañía**, **Producto** y **Versión** por la información apropiada del adaptador de datos de diagnóstico:
 
-    ```
+    ```csharp
     [DataCollectorTypeUri("datacollector://Company/Product/Version")]
     ```
 
 6.  Agregue el atributo <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> a la clase, reemplazando los parámetros por la información apropiada para el adaptador de datos de diagnóstico:
 
-    ```
+    ```csharp
     [DataCollectorFriendlyName("Collect Log Files", false)]
     ```
 

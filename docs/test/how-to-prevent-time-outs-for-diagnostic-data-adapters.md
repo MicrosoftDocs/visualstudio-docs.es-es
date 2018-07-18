@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d7d15f2e65d30235e67fd0775684fd22e8eed0fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844243"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Cómo: Evitar los tiempos de espera para los adaptadores de datos de diagnóstico
 
@@ -63,7 +64,7 @@ Si utiliza adaptadores de datos de diagnóstico en la configuración de pruebas,
 
 4.  Debe modificar la sección de configuración de ejecución de pruebas para aumentar los valores de tiempo de espera. Esta sección tiene el siguiente formato:
 
-    ```
+    ```text
     <!-- Begin: Test execution settings -->
 
         <!-- How long test runner will wait for an event raised to all local data collectors to complete.  Default is 300. -->
@@ -81,7 +82,7 @@ Si utiliza adaptadores de datos de diagnóstico en la configuración de pruebas,
 
 7.  Para aumentar el tiempo de espera para transferir datos de un error o cuando una prueba finaliza en el equipo que ejecuta las pruebas, agregue el siguiente tiempo de espera a **mtm.exe.config** en la sección appSettings del archivo:
 
-    ```
+    ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->
     <add key="GetCollectorDataTimeout" value="300"/>
     ```

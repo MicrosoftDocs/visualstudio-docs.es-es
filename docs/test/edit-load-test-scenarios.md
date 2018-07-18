@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: efc9c9af36e5484728b05db1171bb2e9bc30ba0b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 91d314d1903598392737d9f72fdfc9fa02239a47
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35669119"
 ---
 # <a name="edit-load-test-scenarios"></a>Editar escenarios de prueba de carga
 
@@ -32,9 +33,8 @@ Las opciones y los valores de configuración iniciales que se especifican al cre
 
 Los escenarios contienen los componentes siguientes:
 
-|||
-|-|-|
 |Término|de esquema JSON|
+|-|-|
 |Combinación de exploradores|Simula que los usuarios virtuales acceden a un sitio web a través de diversos exploradores web.|
 |Modelo de carga|Especifica el número de usuarios virtuales que están activos durante una prueba de carga y la tasa con que se inician nuevos usuarios. Por ejemplo: de pasos, constante y basada en objetivos.|
 |Modelo de combinación de pruebas|Especifica la probabilidad de que un usuario virtual ejecute una prueba determinada en un escenario de prueba de carga. Por ejemplo: 20% de posibilidades de ejecutar TestA y 80% de ejecutar TestB. El modelo de combinación de pruebas debe reflejar los objetivos de la prueba para un escenario determinado.|

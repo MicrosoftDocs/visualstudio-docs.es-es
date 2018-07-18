@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35669270"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estrategias para solucionar problemas de controladores de pruebas y agentes de prueba en pruebas de carga
 
@@ -44,7 +45,7 @@ En este artículo se tratan algunos problemas comunes que pueden aparecer cuando
 
 3.  Edite la entrada del modificador `EqtTraceLevel` de la sección de diagnósticos del sistema del archivo. Su código debería ser similar a este:
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -136,7 +137,7 @@ En este artículo se tratan algunos problemas comunes que pueden aparecer cuando
 
 -   Vuelva a ejecutar el proceso de instalación del agente de prueba. Esta vez, especifique la dirección IP del controlador de pruebas en lugar de su nombre.
 
- Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. El valor de la propiedad `BindTo` se debe establecer para cada proceso que se ejecute en un equipo que tenga más de un adaptador de red. El procedimiento para establecer la propiedad `BindTo` es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de pruebas y el proceso del agente de pruebas, use los archivos de configuración que se especifican en [Establecer el nivel del registro de un equipo de controlador de pruebas](#Logging).
+ Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. El valor de la propiedad `BindTo` se debe establecer para cada proceso que se ejecute en un equipo que tenga más de un adaptador de red. El procedimiento para establecer la propiedad `BindTo` es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de pruebas y el proceso del agente de pruebas, use los archivos de configuración que se especifican en [Establecer el nivel del registro de un equipo de controlador de pruebas](#setting-the-logging-level-on-a-test-controller-computer).
 
 ## <a name="see-also"></a>Vea también
 

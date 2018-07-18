@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35669110"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edición de los modelos de carga para modelar las actividades de usuarios virtuales
 
@@ -79,7 +80,7 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
  En la siguiente tabla, hay un ejemplo que muestra un modelo basado en objetivos con la siguiente configuración de propiedades:
 
-|Grupo de propiedades|Property|Valor|
+|Grupo de propiedades|Propiedad.|Valor|
 |--------------------|--------------|-----------|
 |Contador de rendimiento|Categoría|Procesador|
 |Contador de rendimiento|Equipo|ContosoServer1|
@@ -109,7 +110,7 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 |Tareas|Temas relacionados|
 |-----------|-----------------------|
-|**Especificar el modelo de carga inicial de la prueba de carga:** al crear una prueba de carga mediante el Asistente para prueba de carga nueva, debe seleccionar un modelo de carga.|-   [Cambiar el patrón de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#EditingLoadPatternsChanging)|
+|**Especificar el modelo de carga inicial de la prueba de carga:** al crear una prueba de carga mediante el Asistente para prueba de carga nueva, debe seleccionar un modelo de carga.|-   [Cambiar el patrón de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
 |**Editar el modelo de carga de la prueba de carga:** después de crear la prueba de carga, puede modificar el modelo de carga en el Editor de pruebas de carga.|-   [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Especificar si los usuarios virtuales del escenario de prueba de carga deben incluir datos de memoria caché web:** puede cambiar la propiedad **Porcentaje de nuevos usuarios** para influir en la manera en la que la prueba de carga simula el almacenamiento en caché web realizado por un explorador web para los usuarios virtuales.|-   [Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Especificar el tiempo de rampa de paso para un modelo de carga de pasos:** la propiedad **Tiempo de rampa de paso** permite que el aumento de un paso al siguiente (por ejemplo, de 100 a 200 usuarios) se produzca de manera gradual en lugar de inmediatamente.|-   [Cómo: Especificar la propiedad Step Ramp Time para un modelo de carga por pasos](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
