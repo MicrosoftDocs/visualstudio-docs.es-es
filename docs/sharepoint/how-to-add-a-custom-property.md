@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar una propiedad personalizada | Documentos de Microsoft'
+title: 'Cómo: agregar una propiedad personalizada | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,15 +22,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85b37d275f2e8c63afff6f301c21794ba2742eaf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767954"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756235"
 ---
 # <a name="how-to-add-a-custom-property"></a>Cómo: agregar una propiedad personalizada
-  Puede agregar propiedades personalizadas al modelo mediante la **Editor de propiedades**. Puede tener acceso a estas propiedades en el código para recuperar información como cadenas de conexión y otros datos en tiempo de ejecución.  
+  Puede agregar propiedades personalizadas al modelo mediante el **Editor de propiedades**. Puede tener acceso a estas propiedades en el código para recuperar información como cadenas de conexión y otros datos en tiempo de ejecución.  
   
 ### <a name="to-add-a-custom-property"></a>Para agregar una propiedad personalizada  
   
@@ -38,7 +38,7 @@ ms.locfileid: "34767954"
   
 2.  En la barra de menús, elija **vista** > **ventana propiedades**.  
   
-3.  En el **propiedades** ventana, elija la **propiedades personalizadas** propiedad y, a continuación, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Elipse del Diseñador de Mobile NET")).  
+3.  En el **propiedades** ventana, elija el **propiedades personalizadas** propiedad y, a continuación, elija el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Elipse del Diseñador de NET Mobile")).  
   
      El **Editor de propiedades** aparece el cuadro de diálogo.  
   
@@ -46,12 +46,12 @@ ms.locfileid: "34767954"
   
 5.  Para el **tipo** campo de la propiedad personalizada, elija el tipo de datos adecuado.  
   
-6.  Para el **valor** campo de la propiedad personalizada, especifique un valor y, a continuación, elija la **Aceptar** botón.  
+6.  Para el **valor** campo de la propiedad personalizada, especifique un valor y, a continuación, elija el **Aceptar** botón.  
   
 ## <a name="see-also"></a>Vea también
  [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Integrar Datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+ [Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

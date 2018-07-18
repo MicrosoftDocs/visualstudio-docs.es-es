@@ -1,5 +1,5 @@
 ---
-title: 'Diseñador de flujo de trabajo: Cómo: usar el Editor de expresiones'
+title: 'Diseñador de flujo de trabajo - Cómo: usar el Editor de expresiones'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,33 +12,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e14a967b9721973d8d545e10f58cab3c68b8e15
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c1f2ab9cad6f54b8d1106fd68eb017434cf5cfef
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976509"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756149"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Cómo: Utilizar el Editor de expresiones
 
-El Editor de expresiones es un control del Diseñador de flujo de trabajo de Windows que se utiliza en muchas actividades de flujo de trabajo como un medio para especificar y evaluar estas expresiones. El Editor de expresiones proporciona una experiencia de edición IDE completa, que incluye IntelliSense, el uso de distintos colores, ParamInfo y subrayados ondulados de errores, entre otras características. El compilador valida la expresión una vez se ha escrito. Si la expresión no es válida, se muestra un icono de error. También se puede abrir el editor como un **Editor de expresiones** cuadro de diálogo.
+El Editor de expresiones es un control del Diseñador de flujo de trabajo que se usa en muchas actividades de flujo de trabajo para escribir y evaluar expresiones. El Editor de expresiones proporciona un IDE completo edición experiencia, incluido IntelliSense, colores, ParamInfo y subrayados ondulados de errores, entre otras características. El compilador valida la expresión después de que se escribe. Si la expresión no es válida, se muestra un icono de error. También se puede abrir el editor como un **Editor de expresiones** cuadro de diálogo.
 
- Las expresiones son valores literales o de código de Visual Basic enlazadas a argumentos o propiedades. Contienen elementos de valor (p. ej. variables, constantes, literales, propiedades) que se combinan con operaciones para proporcionar un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa mayúsculas y minúsculas no es relevante, la comparación se realiza utilizando un único es igual a inicio de sesión ("=") en lugar de ("=="), los operadores booleanos son las palabras "y" y "o" en lugar de los símbolos "& &" y "&#124;&#124;", y **nada**  se utiliza en lugar de **null**. Para obtener más información sobre las expresiones y operadores en Visual Basic y algunos ejemplos, consulte [operadores y expresiones en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=186818).
+Las expresiones son valores literales o de código de Visual Basic enlazadas a argumentos o propiedades. Contienen elementos de valor (por ejemplo, variables, constantes, literales, propiedades) que se combinan con operaciones para producir un nuevo valor. Las expresiones se escriben con la sintaxis de VB.NET aunque la aplicación esté en un programa que use C#. Esto significa que la capitalización no importa, la comparación se realiza mediante un único igual inicie sesión ("=" en lugar de "=="), los operadores booleanos son las palabras "y" y "o" en lugar de los símbolos "& &" y "||", y **nada** se usa en lugar de **null**. Para obtener más información sobre las expresiones y operadores en Visual Basic y ver algunos ejemplos, consulte [operadores y expresiones en Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
- El **Editor de expresiones** se comporta como sigue:
+El **Editor de expresiones** se comporta como sigue:
 
--   Si el foco no está en el Editor de expresiones, tiene la apariencia de un control TextBlock normal.
+- Si el foco no está en el Editor de expresiones, tiene la apariencia de un control TextBlock normal.
 
--   Cuando el foco está en el Editor de expresiones, se asemeja y se comporta como el control del Editor de expresiones. Tras haber perdido el foco, se vuelve a parecer a un TextBlock normal.
+- Cuando el foco está en el Editor de expresiones, se asemeja y se comporta como el control del Editor de expresiones. Una vez perdido el foco, el Editor de expresiones aspecto nuevo un TextBlock normal.
 
--   Si coloca el foco en el Editor de expresiones en un diseñador de flujo de trabajo hospedado en otro host, se comporta como un TextBox. Cuando el foco se pierde en el diseñador de flujo de trabajo hospedado en otro host, el Editor se asemeja de nuevo a un TextBlock.
+- Si coloca el foco en el Editor de expresiones en un diseñador de flujo de trabajo hospedado en otro host, se comporta como un TextBox. Cuando el foco se pierde en el diseñador de flujo de trabajo hospedado en otro host, el Editor se asemeja de nuevo a un TextBlock.
 
 > [!NOTE]
-> IntelliSense para el Editor de expresiones está disponible solo dentro de Visual Studio 2010. En Visual Studio 2010 y en los escenarios hospedados, el compilador valida la expresión después de que se ha especificado y el editor de expresiones muestra un icono de error si la expresión no es válida.
+> IntelliSense para el Editor de expresiones está disponible solo dentro de Visual Studio. En Visual Studio y los escenarios hospedado en otro host, el compilador valida la expresión después de que se escribe y el editor de expresiones muestra un icono de error si la expresión no es válida.
 
-## <a name="use-the-expression-editor"></a>Utilice el editor de expresiones
+## <a name="use-the-expression-editor"></a>Usar el Editor de expresiones
 
-1.  En Visual Studio 2010, abra un proyecto de flujo de trabajo nueva o existente.
+1.  En Visual Studio, abra un proyecto de flujo de trabajo nueva o existente.
 
 2.  Por ejemplo, agregue la actividad <xref:System.Activities.Statements.Assign> a su flujo de trabajo.
 
@@ -47,13 +47,13 @@ El Editor de expresiones es un control del Diseñador de flujo de trabajo de Win
 
 3.  Haga clic en el editor de expresiones de la izquierda en el diseñador de actividades para la actividad <xref:System.Activities.Statements.Assign>.
 
-     Las cadenas de marca de agua gris  **\<a >** y  **\<escriba una expresión de VB >** es cadenas de texto de manera predeterminada para los editores de expresiones en la <xref:System.Activities.Statements.Assign> actividad.
+     Las cadenas de marca de agua gris  **\<a >** y  **\<escriba una expresión de VB >** es cadenas de texto de la predeterminada para los editores de expresiones en el <xref:System.Activities.Statements.Assign> actividad.
 
 4.  Escriba su expresión. Si escribe una cadena, asegúrese de colocar comillas dobles en torno a la cadena. Si decide enlazar el argumento de expresión a una variable, no ponga las comillas dobles.
 
-     Cuando haya terminado, seleccione una región o área fuera del Editor de expresiones para desplazar el foco hacia otra parte del diseñador. Esto hará que el compilador valide la expresión tal como se describe previamente.
+     Cuando haya terminado, seleccione una región o área fuera el Editor de expresiones para desplazar el foco a otra parte del diseñador. Desplazar el foco, hace que el compilador validar la expresión, como se describió anteriormente.
 
-     Una forma alternativa de escribir o modificar una expresión es hacer clic en los puntos suspensivos junto al nombre de la propiedad en la cuadrícula de propiedades. Se abrirá la **Editor de expresiones** como cuadro de diálogo.
+     Una manera alternativa de escribir o editar una expresión es hacer clic en el botón de puntos suspensivos junto al nombre de propiedad en la cuadrícula de propiedades. Al seleccionar el botón de puntos suspensivos se abre el **Editor de expresiones** como un cuadro de diálogo.
 
 ## <a name="see-also"></a>Vea también
 

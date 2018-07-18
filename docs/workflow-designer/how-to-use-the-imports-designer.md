@@ -1,5 +1,5 @@
 ---
-title: 'Diseñador de flujo de trabajo: Cómo: usar el Diseñador de importaciones'
+title: 'Diseñador de flujo de trabajo - Cómo: usar el Diseñador de importaciones'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de974ebba6fbe746a4d7acb4c1a20fefa5488a8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970653"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755867"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
 
-El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. Muy parecida a la **importa** o **con** habilitar palabras clave en Visual Basic y C#, especificar espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.
+El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. De forma similar a la **importa** o **mediante** habilitar palabras clave en Visual Basic y C#, la especificación de espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.
 
 El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas se incluyen las siguientes:
 
@@ -35,7 +35,7 @@ El diseñador de importaciones reacciona tanto a los cambios en la interfaz de u
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Para agregar un espacio de nombres a la lista de espacios de nombres importados
 
-1.  Abra una aplicación de servicio de flujo de trabajo de WCF, la aplicación de consola de flujos de trabajo o el proyecto de biblioteca de actividades en Visual Studio 2010 o una aplicación de flujo de trabajo rehospedado.
+1.  Abra una aplicación de servicio de flujo de trabajo de WCF, aplicación de consola de flujos de trabajo o proyecto de biblioteca de actividades en Visual Studio o una aplicación de flujo de trabajo rehospedado.
 
 2.  Haga clic en **importaciones** en la parte inferior del lienzo principal. Aparecerá el diseñador de importaciones.
 
@@ -45,4 +45,4 @@ El diseñador de importaciones reacciona tanto a los cambios en la interfaz de u
 
 4.  Presione **ENTRAR** para agregar el espacio de nombres a la lista.
 
-5.  Si desea quitar un espacio de nombres de la lista, seleccione el espacio de nombres y, a continuación, presione la **eliminar** clave en el teclado. Observe que un espacio de nombres solo se puede eliminar si el espacio de nombres no es válido por cualquier razón, por ejemplo si el proyecto ya no hace referencia al ensamblado que contiene el espacio de nombres.
+5.  Si desea quitar un espacio de nombres de la lista, seleccione el espacio de nombres y, a continuación, presione el **eliminar** en el teclado. Observe que un espacio de nombres solo se puede eliminar si el espacio de nombres no es válido por cualquier razón, por ejemplo si el proyecto ya no hace referencia al ensamblado que contiene el espacio de nombres.

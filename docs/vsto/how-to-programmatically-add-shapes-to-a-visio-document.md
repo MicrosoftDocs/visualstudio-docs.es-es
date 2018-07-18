@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar formas a un documento de Visio mediante programación | Documentos de Microsoft'
+title: 'Cómo: agregar formas a un documento de Visio mediante programación'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1cc4369977e1989960fe9448d4dd7d56e67ed7a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32fc1b61505711cbcf353819372bcd1452bf3716
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256674"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Cómo: Agregar formas a un documento de Visio mediante programación
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Cómo: agregar formas a un documento de Visio mediante programación
   Puede agregar formas a un documento de Microsoft Office Visio recuperando los patrones de una galería de símbolos y colocando las formas en la página activa.  
   
  Para obtener más información, vea la documentación de referencia de VBA del método [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) , la propiedad [Microsoft.Office.Interop.Visio.Application.ActivePage](http://msdn.microsoft.com/library/office/ff765484.aspx) y el método [Microsoft.Office.Interop.Visio.Page.Drop](http://msdn.microsoft.com/library/office/ff765054.aspx) .  
   
-## <a name="adding-shapes-to-a-visio-document"></a>Agregar formas a un documento de Visio  
+## <a name="add-shapes-to-a-visio-document"></a>Agregar formas a un documento de Visio  
   
-#### <a name="to-add-shapes-to-a-visio-document"></a>Para agregar formas a un documento de Visio  
+### <a name="to-add-shapes-to-a-visio-document"></a>Para agregar formas a un documento de Visio  
   
 -   Con un documento activo, recupere los patrones de la colección Documents.Masters y coloque las formas en el documento activo. Puede recuperar un patrón mediante el índice o el nombre del patrón.  
   
@@ -40,8 +41,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones de Visio](../vsto/visio-solutions.md)   
- [Información general del modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
+ [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
  [Trabajar con formas de Visio](../vsto/working-with-visio-shapes.md)   
- [Cómo: Copiar y pegar formas en un documento de Visio mediante programación](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [Cómo: copiar y pegar formas en un documento de Visio mediante programación](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

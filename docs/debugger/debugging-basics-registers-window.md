@@ -1,5 +1,5 @@
 ---
-title: Acerca de la ventana registros | Documentos de Microsoft
+title: Acerca de la ventana registros | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b2c34971750d8e6db0173f6034342b9efbfd97
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474419"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056302"
 ---
-# <a name="about-the-registers-window-in-visual-studio"></a>Acerca de la ventana registros en Visual Studio
-El **registra** ventana solo está disponible si está habilitada la depuración de nivel de dirección en la **opciones** cuadro de diálogo, **depuración** nodo.  
+# <a name="about-the-registers-window-in-visual-studio"></a>Acerca de la ventana de registros en Visual Studio
+El **registra** ventana solo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo, **depuración** nodo.  
   
  Los registros son ubicaciones especiales dentro de un procesador (CPU) en las que se almacenan pequeñas cantidades de datos con los que el procesador trabaja de forma activa en cada momento. Cuando el código fuente se compila o se interpreta, se generan instrucciones que transfieren datos de la memoria a los registros y viceversa, según sea necesario. El acceso a los datos de los registros es muy rápido en comparación con el acceso a la memoria, de modo que el código que permite al procesador mantener datos en un registro para el acceso repetido a ellos suele ejecutarse más rápidamente que el código que requiere que el procesador cargue y descargue constantemente los registros. Para facilitar el que el compilador mantenga los datos en los registros y realice otras optimizaciones, debe evitar el uso de variables globales y usar variables locales siempre que sea posible. Del código escrito de este modo se dice que tiene una buena localidad de referencia. En algunos lenguajes, como C/C++, el programador puede declarar una variable de registro, lo que indica al compilador que haga lo posible por mantener la variable en un registro en todo momento. Para obtener más información, consulte [palabra clave Register](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  
   
@@ -39,20 +39,16 @@ El **registra** ventana solo está disponible si está habilitada la depuración
   
  El código administrado se compila en tiempo de ejecución en código nativo que obtiene acceso a los registros físicos del microprocesador. El **registra** ventana muestra estos registros físicos para código nativo o common language runtime. El **registra** ventana no muestra información para las secuencias de comandos o una aplicación de SQL, porque el script y SQL son lenguajes que no admiten el concepto de registros.  
   
- Para obtener más información acerca de cómo mostrar la **registra** ventana, consulte [utilizar la ventana registros](../debugger/how-to-use-the-registers-window.md).  
+ Para obtener más información acerca de cómo mostrar la **registra** ventana, consulte [mediante la ventana registros](../debugger/how-to-use-the-registers-window.md).  
   
- Cuando examine el **registra** ventana, verá las entradas, como en este ejemplo:  
+ Cuando observa la **registra** ventana, podrá ver entradas como `EAX = 003110D8`.  
   
-```  
-EAX = 003110D8  
-```  
+ El símbolo a la izquierda de la `=` inicio de sesión es el nombre del registro, `EAX`, en este caso. El número a la derecha de la `=` sesión representa el contenido del registro.  
   
- El símbolo situado a la izquierda del signo = es el nombre del registro, en este caso, EAX. El número a la derecha del signo = representa el contenido del registro.  
-  
- El **registra** ventana permite algo más que simplemente ver el contenido de un registro. Cuando el programa está en modo de interrupción en el código nativo, puede hacer clic en el contenido de un registro y modificar el valor. Esto no es algo que deba hacerse a la ligera. Si no comprende la función del registro que modifica y los datos que contiene, el resultado del cambio será probablemente el bloqueo del programa, u otra consecuencia no deseada. Desgraciadamente, una explicación detallada de los conjuntos de registros de los diversos procesadores Intel y compatibles queda muy lejos del alcance de esta breve introducción.  
+ El **registra** ventana le permite hacer más que simplemente ver el contenido de un registro. Cuando el programa está en modo de interrupción en el código nativo, puede hacer clic en el contenido de un registro y modificar el valor. Esto no es algo que deba hacerse a la ligera. Si no comprende la función del registro que modifica y los datos que contiene, el resultado del cambio será probablemente el bloqueo del programa, u otra consecuencia no deseada. Desgraciadamente, una explicación detallada de los conjuntos de registros de los diversos procesadores Intel y compatibles queda muy lejos del alcance de esta breve introducción.  
   
 ## <a name="register-groups"></a>Grupos de registros  
- Para reducir la acumulación de elementos, el **registra** ventana registros organiza en grupos. Si hace clic derecho en el **registra** ventana, verá un menú contextual que contiene una lista de grupos que puede mostrar u ocultar según su conveniencia.  
+ Para reducir el desorden, el **registra** ventana registros organiza en grupos. Si hace clic derecho en el **registra** ventana, verá un menú contextual que contiene una lista de grupos, que puede mostrar u ocultar según estime oportuno.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: utilizar la ventana registros](../debugger/how-to-use-the-registers-window.md)   

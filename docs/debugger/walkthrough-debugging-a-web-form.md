@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depurar un formulario Web Forms | Documentos de Microsoft'
+title: 'Tutorial: Depurar un formulario Web Forms | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22fd6f033dd76e15311912256bc0597dfc3260c6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480337"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057179"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Tutorial: Depurar un formulario Web Forms
 Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], también conocidas como formularios Web Forms. Muestra cómo iniciar y detener la ejecución, establecer puntos de interrupción y examinar variables en el **inspección** ventana.  
@@ -49,7 +49,7 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 3.  En el **plantillas** panel, haga clic en **sitio Web de ASP.NET**.  
   
-4.  En el **ubicación** de línea, haga clic en **HTTP** en la lista y en el cuadro de texto, escriba **http://localhost/WebSite**.  
+4.  En el **ubicación** línea, haga clic en **HTTP** en la lista y, en el cuadro de texto, escriba **http://localhost/WebSite**.  
   
 5.  En el **lenguaje** lista, haga clic en **Visual C#** o **Visual Basic**.  
   
@@ -59,13 +59,13 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 7.  Haga clic en el **diseño** ficha en el margen inferior.  
   
-8.  Haga clic en el **cuadro de herramientas** ficha en el margen izquierdo o selecciónela en la **vista** menú.  
+8.  Haga clic en el **cuadro de herramientas** pestaña en el margen izquierdo o selecciónela en la **vista** menú.  
   
      Se abrirá el **Cuadro de herramientas** .  
   
-9. En el **cuadro de herramientas**, haga clic en el **botón** control y agregarlo a la superficie de diseño principal, Default.aspx.  
+9. En el **cuadro de herramientas**, haga clic en el **botón** controlar y agregarlo a la superficie de diseño principal, Default.aspx.  
   
-10. En el **cuadro de herramientas**, haga clic en el **Textbox** controlar y arrastre el control a la superficie de diseño principal, Default.aspx.  
+10. En el **cuadro de herramientas**, haga clic en el **Textbox** control y arrastre el control a la superficie de diseño principal, Default.aspx.  
   
 11. Haga doble clic en el control de botón que colocó.  
   
@@ -73,11 +73,11 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 12. Agregue a la función `Button1_Click` las siguientes líneas de código:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
   
-    // C#  
+    ```csharp
     TextBox1.Text = "Button was clicked!";  
     ```  
   
@@ -91,11 +91,11 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 1.  En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo en la misma línea que el texto que ha agregado:  
   
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
     ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
-  
-    // C#  
+
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
@@ -117,17 +117,13 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
      El **inspección** ventana muestra el valor de la variable `TextBox1.Text`:  
   
-    ```  
-    ""  
-    ```  
+    '""' 
   
 7.  En el **depurar** menú, haga clic en **paso a paso por**.  
   
      El valor de `TextBox1.Text` cambia en el **inspección** ventana leer:  
   
-    ```  
-    "Button was clicked!"  
-    ```  
+    `"Button was clicked!"`  
   
 8.  En el **depurar** menú, haga clic en **continuar**.  
   
@@ -147,11 +143,11 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
   
 2.  En la ventana de Default.aspx.cs o Default.aspx.vb, haga clic en el margen izquierdo para establecer de nuevo un punto de interrupción en la línea que ha agregado:   
   
-    ```  
-    ' Visual Basic  
-    TextBox1.Text = "Button was clicked!"  
+    ```vb  
+    TextBox1.Text = "Button was clicked!"
+    ```
   
-    // C#  
+    ```csharp  
     textBox1.Text = "Button was clicked!";  
     ```  
   
@@ -168,4 +164,4 @@ Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vst
 6.  Cuando haya terminado la depuración, en el **depurar** menú, haga clic en **Detener depuración**.  
   
 ## <a name="see-also"></a>Vea también  
- [Depurar aplicaciones ASP.](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+ [Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

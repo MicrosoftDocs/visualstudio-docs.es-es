@@ -1,5 +1,5 @@
 ---
-title: Diseñador de flujo de trabajo - Diseñador de actividades PickBranch
+title: Diseñador de flujo de trabajo - Diseñador de actividad PickBranch
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea106a96a5d6b81ee0b0b898c881eb752582f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0c2a36392f3f83f533c2d072398800e105727b0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976578"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755565"
 ---
 # <a name="pickbranch-activity-designer"></a>Diseñador de actividades PickBranch
 
@@ -25,34 +25,34 @@ La clase <xref:System.Activities.Statements.PickBranch> proporciona una ruta de 
 
 ## <a name="pickbranch"></a>PickBranch
 
-Los objetos <xref:System.Activities.Statements.PickBranch> se encuentran en la colección de la propiedad <xref:System.Activities.Statements.Pick.Branches%2A> de una actividad de la clase <xref:System.Activities.Statements.Pick>. Cada actividad de la clase <xref:System.Activities.Statements.PickBranch> se encuentra en una bifurcación de la actividad de la clase <xref:System.Activities.Statements.Pick> y se puede ejecutar debido a que algún evento de entrada actúa como desencadenador. De esta manera el Diseñador de flujo de trabajo de Windows proporciona el modelado de flujo de control basado en eventos. Cada clase <xref:System.Activities.Statements.PickBranch> contiene una propiedad <xref:System.Activities.Statements.PickBranch.Trigger%2A> y una propiedad <xref:System.Activities.Statements.PickBranch.Action%2A>.
+Los objetos <xref:System.Activities.Statements.PickBranch> se encuentran en la colección de la propiedad <xref:System.Activities.Statements.Pick.Branches%2A> de una actividad de la clase <xref:System.Activities.Statements.Pick>. Cada actividad de la clase <xref:System.Activities.Statements.PickBranch> se encuentra en una bifurcación de la actividad de la clase <xref:System.Activities.Statements.Pick> y se puede ejecutar debido a que algún evento de entrada actúa como desencadenador. De este modo, el Diseñador de flujo de trabajo proporciona modelado de flujo de control basado en eventos. Cada clase <xref:System.Activities.Statements.PickBranch> contiene una propiedad <xref:System.Activities.Statements.PickBranch.Trigger%2A> y una propiedad <xref:System.Activities.Statements.PickBranch.Action%2A>.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Usar el diseñador de actividad Pick
 
-El **PickBranch** diseñador puede encontrarse en el **flujo de Control** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **cuadro de herramientas** pestaña en el Diseñador de flujo de trabajo (como alternativa, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X).
+Acceso a la **PickBranch** diseñador en la **flujo de Control** categoría de la **cuadro de herramientas**.
 
-Dos vacío <xref:System.Activities.Statements.PickBranch> objetos con nombres para mostrar **Branch1** y **Branch2** se crean de forma predeterminada como elementos de un <xref:System.Activities.Statements.Pick> actividad cuando la **elegir** Diseñador de actividad se coloca inicialmente en el Diseñador de flujo de trabajo. Los respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valores de propiedad se pueden editar en el **PickBranch** encabezado del diseñador o en el **propiedades** ventana para cada bifurcación.
+Dos vacío <xref:System.Activities.Statements.PickBranch> objetos con los nombres para mostrar **Branch1** y **Branch2** se crean de forma predeterminada como elementos de un <xref:System.Activities.Statements.Pick> actividad cuando la **elegir** Diseñador de actividad se coloca inicialmente en el Diseñador de flujo de trabajo. Los respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> se pueden editar los valores de propiedad en el **PickBranch** encabezado del diseñador o dentro del **propiedades** ventana para cada bifurcación.
 
-Hay dos maneras de agregar <xref:System.Activities.Statements.PickBranch> objetos a la colección de un <xref:System.Activities.Statements.Pick> objeto: arrastrando y colocando el **PickBranch** diseñador desde el **cuadro de herramientas** o mediante el menú contextual de en el **elegir** superficie de diseño:
+Hay dos maneras de agregar <xref:System.Activities.Statements.PickBranch> objetos a la colección de un <xref:System.Activities.Statements.Pick> objeto: arrastrando y colocando el **PickBranch** diseñador desde el **cuadro de herramientas**, o mediante el menú contextual dentro de la **elegir** superficie de diseño:
 
-1.  El **PickBranch** el diseñador crea un <xref:System.Activities.Statements.PickBranch> cuando se arrastra desde el **cuadro de herramientas** y se coloca en una de las bifurcaciones de un **elegir** Diseñador de actividad en el Superficie del Diseñador de flujo de trabajo. Los nuevos objetos <xref:System.Activities.Statements.PickBranch> se pueden colocar dentro del diseñador <xref:System.Activities.Statements.Pick> a la izquierda o derecha de cualquier elemento <xref:System.Activities.Statements.PickBranch> existente que ya se encuentre en la colección. Al arrastrar un **PickBranch** diseñador en la **elegir** diseñador con el mouse, el **elegir** diseñador utiliza una banda azul grisácea vertical para indicar dónde el <xref:System.Activities.Statements.PickBranch> se agrega a una posición determinada del mouse.
+- El **PickBranch** el diseñador crea un <xref:System.Activities.Statements.PickBranch> cuando se arrastra desde el **cuadro de herramientas** y coloca en una de las bifurcaciones de un **elegir** Diseñador de actividad en el Superficie del Diseñador de flujo de trabajo. Los nuevos objetos <xref:System.Activities.Statements.PickBranch> se pueden colocar dentro del diseñador <xref:System.Activities.Statements.Pick> a la izquierda o derecha de cualquier elemento <xref:System.Activities.Statements.PickBranch> existente que ya se encuentre en la colección. Al arrastrar un **PickBranch** diseñador la **elegir** diseñador con un mouse, el **elegir** diseñador utiliza una banda azul grisáceo vertical para indicar dónde el <xref:System.Activities.Statements.PickBranch> se agrega una posición determinada del mouse.
 
-2.  Haga clic en **elegir** Diseñador de actividad (pero no dentro **PickBranch** diseñador) para obtener un menú contextual y seleccione **crear la bifurcación** para agregar un nuevo <xref:System.Activities.Statements.PickBranch>. Tenga en cuenta que la nueva <xref:System.Activities.Statements.PickBranch> se agrega a la derecha de la existente <xref:System.Activities.Statements.PickBranch> objetos en el **elegir** diseñador.
+- Haga clic en **elegir** Diseñador de actividad (pero no dentro **PickBranch** designer) para obtener un menú contextual y seleccione **crear rama** para agregar un nuevo <xref:System.Activities.Statements.PickBranch>. Tenga en cuenta que el nuevo <xref:System.Activities.Statements.PickBranch> se agrega a la derecha de la existente <xref:System.Activities.Statements.PickBranch> objetos en el **elegir** diseñador.
 
- El **PickBranch** diseñador se puede expandir para que muestre el **desencadenador** y **acción** cuadros o contraídos, haga clic en los corchetes angulares dobles en el lado derecho de sus encabezados. Editar la <xref:System.Activities.Statements.PickBranch.Trigger%2A> y <xref:System.Activities.Statements.PickBranch.Action%2A> de cada <xref:System.Activities.Statements.PickBranch> colocando las actividades en el **desencadenador** y **acción** cuadros de sus diseñadores.
+El **PickBranch** diseñador se puede expandir para mostrar el **desencadenador** y **acción** cuadros o contraído, haga clic en los corchetes angulares dobles en el lado derecho de sus encabezados. Editar el <xref:System.Activities.Statements.PickBranch.Trigger%2A> y <xref:System.Activities.Statements.PickBranch.Action%2A> de cada <xref:System.Activities.Statements.PickBranch> colocando las actividades en el **desencadenador** y **acción** cuadros de sus diseñadores.
 
- El <xref:System.Activities.Statements.PickBranch> objetos en el <xref:System.Activities.Statements.Pick.Branches%2A> colección de un <xref:System.Activities.Statements.Pick> de objetos, se pueden reordenar arrastrándolas y colocándolas en una ubicación nueva en el **elegir** diseñador. El **elegir** diseñador utiliza una banda azul grisácea vertical para indicar dónde el <xref:System.Activities.Statements.PickBranch> se agrega para una posición determinada del mouse.
+El <xref:System.Activities.Statements.PickBranch> objetos en el <xref:System.Activities.Statements.Pick.Branches%2A> colección de un <xref:System.Activities.Statements.Pick> de objetos, se pueden reordenar arrastrándolos y colocándolos en una nueva ubicación dentro de la **elegir** diseñador. El **elegir** diseñador utiliza una banda azul grisáceo vertical para indicar dónde el <xref:System.Activities.Statements.PickBranch> se agrega una posición determinada del mouse.
 
- Hay dos formas de eliminar una clase <xref:System.Activities.Statements.PickBranch>:
+Hay dos formas de eliminar una clase <xref:System.Activities.Statements.PickBranch>:
 
-1.  Seleccione el **PickBranch** diseñador y elimínelo.
+- Seleccione el **PickBranch** diseñador y elimínelo.
+- Seleccione el **PickBranch** diseñador, con el botón secundario para obtener el menú contextual y seleccione **eliminar**.
 
-2.  Seleccione el **PickBranch** contextual Diseñador, para obtener el menú contextual y seleccione **eliminar**.
-
- No olvide seleccionar la **PickBranch** diseñador, como seleccionar una de las actividades dentro de su **desencadenador** o **acción** cuadros elimina por error una de esas actividades y no la <xref:System.Activities.Statements.PickBranch> objeto.
+No olvide seleccionar la **PickBranch** diseñador, ya que si selecciona una de las actividades dentro de su **desencadenador** o **acción** cuadros por equivocación, una de esas actividades y no la <xref:System.Activities.Statements.PickBranch> objeto.
 
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>Propiedades PickBranch en el Diseñador de flujo de trabajo
- La tabla siguiente muestran los más útiles <xref:System.Activities.Statements.PickBranch> propiedades y se describe cómo se utilizan en el Diseñador de flujo de trabajo.
+
+La tabla siguiente muestran los más útiles <xref:System.Activities.Statements.PickBranch> propiedades y se describe cómo se usan en el Diseñador de flujo de trabajo.
 
 |Nombre de la propiedad|Obligatorio|Uso|
 |-------------------|--------------|-----------|

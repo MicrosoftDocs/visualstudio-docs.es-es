@@ -1,5 +1,5 @@
 ---
-title: 'Diseñador de flujo de trabajo: Cómo: usar la ruta de navegación'
+title: 'Diseñador de flujo de trabajo - Cómo: usar la ruta de navegación'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92f3e35d4182297601741bd603aa3c5a17e54d67
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975071"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757624"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Utilizar la ruta de navegación
 
-Hay tres maneras principales para cambiar el conjunto de actividades que se muestran en el Diseñador de flujo de trabajo de Windows:
+Hay tres maneras principales para cambiar el conjunto de actividades que se muestran en el Diseñador de flujo de trabajo:
 
 1.  Haga doble clic para desplazarse hasta una actividad secundaria.
 
@@ -29,7 +29,7 @@ Hay tres maneras principales para cambiar el conjunto de actividades que se mues
 
 ## <a name="using-breadcrumb-navigation"></a>Utilizar la barra de ruta de navegación
 
-1.  Haga doble clic en una actividad del Diseñador de flujo de trabajo para cambiar la actividad raíz para la actividad donde ha hecho clic. A continuación, la actividad donde ha hecho clic se expande totalmente desde la raíz y se muestran sus antecesores en la barra de ruta de navegación. En ocasiones esto se denomina aumentar o disminuir el detalle de una actividad.
+1.  Haga doble clic en una actividad del Diseñador de flujo de trabajo para cambiar la actividad raíz a la actividad donde ha hecho clic. A continuación, la actividad donde ha hecho clic se expande totalmente desde la raíz y se muestran sus antecesores en la barra de ruta de navegación. En ocasiones esto se denomina aumentar o disminuir el detalle de una actividad.
 
 2.  Para desplazarse hasta un antecesor de la actividad raíz actual, haga clic en la actividad en la barra de ruta de navegación.
 
@@ -44,12 +44,12 @@ Hay tres maneras principales para cambiar el conjunto de actividades que se mues
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Expandir o contraer todas las actividades
 
-1.  Use la **Expandir todo** y **Contraer todo** botones en la interfaz de usuario para expandir o contraer todas las actividades bajo la raíz de la ruta de navegación actual. Observe que las acciones de expandir y contraer todas las actividades son estados globales. Esto significa que al cambiar la actividad raíz mediante la ruta de navegación, expandir todas o contraer todo el estado persiste hasta que haga clic **restaurar**.
+1.  Use la **Expandir todo** y **Contraer todo** botones en la interfaz de usuario para expandir o contraer todas las actividades bajo la raíz de la ruta de navegación actual. Observe que las acciones de expandir y contraer todas las actividades son estados globales. Esto significa que al cambiar la actividad raíz mediante la ruta de navegación, la expansión de todas o contraer todo el estado persiste hasta que haga clic **restaurar**.
 
-2.  Después de que se ha aplicado expandir todas o contraer todas, puede hacer clic en el **restaurar** botón que aparece para volver atrás y comprobar el estado que se había aplicado anteriormente a cada actividad.
-
-    > [!WARNING]
-    > Si una actividad, como <xref:System.Activities.Statements.Flowchart>, ha salido del estado de expansión en su lugar, la funcionalidad asociada con el **Expandir todo** y **Contraer todo** botones está deshabilitado en el **diagrama de flujo**  diseñador. Para obtener más información sobre la **Flowchart** designer, vea el [diagrama de flujo](../workflow-designer/flowchart-activity-designer.md) tema.
+2.  Una vez que se ha aplicado expandir todas o contraer todos los Estados, haga clic en el **restaurar** botón que aparece para volver a comprobar el estado previamente aplicado a cada actividad.
 
     > [!WARNING]
-    > Expandir todo tiene también un efecto especial en **conmutador** y **TryCatch** diseñadores de actividad. Al hacer clic en **Expandir todo**, se muestran todos los casos de conmutador y todos los bloques try/catch/finally. Haga clic en **restaurar** o **Contraer todo** estos diseñadores vuelven a su estado predeterminado, desde el que puede hacer clic en un caso o bloque individuales para ver su contenido.
+    > Si una actividad, como <xref:System.Activities.Statements.Flowchart>, ha salido del estado de expansión en su lugar, la funcionalidad asociada con el **Expandir todo** y **Contraer todo** botones está deshabilitado en el **diagrama de flujo**  diseñador. Para obtener más información sobre la **Flowchart** designer, vea el [Flowchart](../workflow-designer/flowchart-activity-designer.md) tema.
+
+    > [!WARNING]
+    > Expandir todo tiene también un efecto especial **conmutador** y **TryCatch** diseñadores de actividad. Al hacer clic en **Expandir todo**, se muestran todos los casos de conmutador y todos los bloques try/catch/finally. Al hacer clic en **restaurar** o **Contraer todo** devuelve estos diseñadores a su estado predeterminado, desde el que puede hacer clic en un caso o bloque individuales para ver su contenido.

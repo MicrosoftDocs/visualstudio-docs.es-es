@@ -1,5 +1,5 @@
 ---
-title: 'Error: Error de autenticación de Kerberos | Documentos de Microsoft'
+title: 'Error: Error de autenticación de Kerberos | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b3ed3349403bef0c85af9775f77cc980fc4e63
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 085b120974ee23d0d7e3712cdbb0a8f7f7021e83
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474221"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056862"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Error: Error de autenticación Kerberos
 Al intentar realizar la depuración remota, podría aparecer el siguiente mensaje de error:  
   
-```  
+```cmd
 Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Kerberos authentication failed.  
 ```  
   
@@ -40,7 +40,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 -   Kerberos está deshabilitado en el controlador de dominio.  
   
- Si la autenticación Kerberos no está disponible, cambie la cuenta que se usa para ejecutar el Monitor de depuración remota de Visual Studio. Para conocer el procedimiento, consulte [Error: servicio de The Visual Studio Remote Debugger en el equipo de destino no se puede conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
+ Si la autenticación Kerberos no está disponible, cambie la cuenta que se usa para ejecutar el Monitor de depuración remota de Visual Studio. Para conocer el procedimiento, consulte [Error: servicio The Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).  
   
  Si ambos equipos están conectados al mismo dominio y todavía aparece este mensaje, compruebe que DNS en el equipo de destino está resolviendo correctamente el nombre del equipo host del depurador. Vea el procedimiento siguiente.  
   
@@ -50,7 +50,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 2.  En el **símbolo** ventana, escriba:  
   
-    ```  
+    ```cmd
     ping <debugger_host_computer_name>  
     ```  
   

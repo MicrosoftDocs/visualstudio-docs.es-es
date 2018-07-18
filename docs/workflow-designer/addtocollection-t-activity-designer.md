@@ -12,35 +12,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0302ef4c974179619800ece37fa7650ea2b4ebd0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976707"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755829"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Diseñador de actividad
 
-El **AddToCollection\<T >** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.AddToCollection%601> actividad.
+El **AddToCollection\<T >** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.AddToCollection%601> actividad.
 
-## <a name="the-addtocollectiont-activity"></a>El AddToCollection\<T > actividad
+## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > actividad
 
 La actividad <xref:System.Activities.Statements.AddToCollection%601> agrega un elemento a una colección.
 
-### <a name="using-the-addtocollectiont-activity-designer"></a>Mediante el AddToCollection\<T > Diseñador de actividad
+### <a name="using-the-addtocollectiont-activity-designer"></a>Uso de AddToCollection\<T > Diseñador de actividad
 
-El **AddToCollection\<T >** Diseñador de actividad puede encontrarse en el **colección** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el  **Cuadro de herramientas** ficha del Diseñador de flujo de trabajo (como alternativa, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+El **AddToCollection\<T >** Diseñador de actividad puede encontrarse en el **colección** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el  **Cuadro de herramientas** ficha del Diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** desde el **vista** menús o presione **Ctrl**+**Alt** + **X**.
 
-El **AddToCollection\<T >** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se colocan las actividades, por ejemplo, dentro de un <xref:System.Activities.Statements.Sequence>. Quitar el **AddToCollection\<T >** Diseñador de actividad crea una <xref:System.Activities.Statements.AddToCollection%601> actividad con el valor predeterminado es <xref:System.Activities.Activity.DisplayName%2A> de AddToCollection < Int32\>. (De forma predeterminada, el *TypeArgument* es **Int32**. TypeArgument puede cambiarse en la cuadrícula de propiedades.) El <xref:System.Activities.Activity.DisplayName%2A> valor se puede editar en el encabezado de la **AddToCollection < T\>**  Diseñador de actividad o en la **DisplayName** cuadro de la cuadrícula de propiedades. Es preciso editar las otras propiedades en la cuadrícula de propiedades.
+El **AddToCollection\<T >** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se colocan las actividades, por ejemplo, dentro de un <xref:System.Activities.Statements.Sequence>. Quitar el **AddToCollection\<T >** Diseñador de actividad se crea un <xref:System.Activities.Statements.AddToCollection%601> actividad con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de AddToCollection < Int32\>. (De forma predeterminada, el *TypeArgument* es **Int32**. TypeArgument puede cambiarse en la cuadrícula de propiedades.) El <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado de la **AddToCollection < T\>**  Diseñador de actividad o en el **DisplayName** cuadro de la cuadrícula de propiedades. Es preciso editar las otras propiedades en la cuadrícula de propiedades.
 
-### <a name="the-addtocollectiont-properties"></a>El AddToCollection\<T > Propiedades
+### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > Propiedades
 
 En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.AddToCollection%601> y se describe cómo se utilizan en el diseñador.
 
 |Nombre de la propiedad|Obligatorio|Uso|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nombre descriptivo de la actividad <xref:System.Activities.Statements.AddToCollection%601>. El valor predeterminado es AddToCollection < Int32\>. Pese a que el valor <xref:System.Activities.Activity.DisplayName%2A> no es obligatorio, se recomienda usar uno.|
-|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|Elemento que se va a agregar a la colección\<T >. Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
+|<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|El elemento que se va a agregar a la colección\<T >. Este elemento es de tipo *T*, que es de tipo *TypeArgument*. Para especificar el elemento, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
 |<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|La colección a la que se debe agregar el elemento. Esta colección es de tipo **ICollection < TypeArgument\>**. Para especificar la colección, escriba una expresión de Visual Basic en la cuadrícula de propiedades.|
 |*TypeArgument*|True|El tipo T de los elementos que se incluyen en la interfaz <xref:System.Collections.Generic.ICollection%601>. De forma predeterminada, esto *TypeArgument* tipo está establecido en **Int32**. Para cambiar el tipo, cambie el valor de la *TypeArgument* en el cuadro combinado en la cuadrícula de propiedades.|
 

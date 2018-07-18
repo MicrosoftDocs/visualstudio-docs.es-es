@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Adjuntar extensiones de código administrado a documentos | Documentos de Microsoft'
+title: 'Cómo: Adjuntar extensiones de código a los documentos administrado'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,36 +16,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe415cfb0635f133baf191f027ca7ae0111989a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257049"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Cómo: Adjuntar extensiones de código administrado a documentos
-  Puede adjuntar un ensamblado de personalización a un documento existente de Microsoft Office Word o un libro de Microsoft Office Excel. El documento o libro puede estar en cualquier formato de archivo que sea compatible con los proyectos de Microsoft Office y herramientas de desarrollo de Visual Studio. Para obtener más información, consulte [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).  
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>Cómo: Adjuntar extensiones de código a los documentos administrado
+  Puede adjuntar un ensamblado de personalización a un documento existente de Microsoft Office Word o un libro de Microsoft Office Excel. El documento o libro puede estar en cualquier formato de archivo que es compatible con los proyectos de Microsoft Office y herramientas de desarrollo en Visual Studio. Para obtener más información, consulte [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Para adjuntar una personalización a un documento de Word o Excel, use la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> método de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase. Dado que la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase está diseñada para ejecutarse en un equipo que no tiene instalado Microsoft Office, puede utilizar este método en soluciones que no están directamente relacionados con el desarrollo de Microsoft Office (como una aplicación de formularios Windows Forms o de consola).  
+ Para adjuntar una personalización a un documento de Word o Excel, use el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> método de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase. Dado que la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase está diseñada para ejecutarse en un equipo que no tiene instalado Microsoft Office, puede usar este método en soluciones que no están directamente relacionados con el desarrollo de Microsoft Office (por ejemplo, una consola o aplicación de Windows Forms).  
   
 > [!NOTE]  
->  Se producirá un error en la personalización cargar si el código espera controles que no tienen el documento especificado.  
+>  La personalización no se cargará si el código espera que los controles que no tienen el documento especificado.  
   
- ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo a vídeo") para una demostración en vídeo relacionada, vea [¿cómo adjuntar I: o separar un ensamblado de VSTO desde un documento de Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: asociar o desasociar un ensamblado de VSTO desde un documento de Word?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Para asociar extensiones de código administrado a un documento  
   
-1.  En un proyecto que no requiere Microsoft Office, como una aplicación de consola o un proyecto de formularios Windows Forms, agregue una referencia a la Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll y Microsoft.VisualStudio.Tools.Applications.Runtime.dll ensamblados.  
+1.  En un proyecto que no requiere Microsoft Office, como una aplicación de consola o un proyecto de Windows Forms, agregue una referencia a la *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* y  *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* ensamblados.  
   
-2.  Agregue el siguiente **importaciones** o **con** instrucciones a la parte superior del archivo de código.  
+2.  Agregue el siguiente **importaciones** o **mediante** instrucciones a la parte superior del archivo de código.  
   
      [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
      [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]  
   
-3.  Llame el método estático <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> método.  
+3.  Llamar a estático <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> método.  
   
-     El siguiente ejemplo de código utiliza el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> sobrecarga. Esta sobrecarga toma la ruta de acceso completa del documento y un <xref:System.Uri> que especifica la ubicación del manifiesto de implementación para la personalización que desea asociar al documento. En este ejemplo se supone que un documento de Word llamado **WordDocument1.docx** se encuentra en el escritorio, y que el manifiesto de implementación se encuentra en una carpeta que se denomina **publicar** que se encuentra también en el escritorio.  
+     El siguiente ejemplo de código utiliza el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> sobrecargar. Esta sobrecarga toma la ruta de acceso completa del documento y un <xref:System.Uri> que especifica la ubicación del manifiesto de implementación para la personalización que desee asociar al documento. En este ejemplo se supone que un documento de Word llamado **WordDocument1.docx** está en el escritorio, y que se encuentra el manifiesto de implementación en una carpeta que se denomina **publicar** que también está en el escritorio.  
   
      [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
      [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]  
@@ -55,5 +56,5 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Vea también  
  [Administrar documentos en un servidor mediante la clase ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [Cómo: quitar extensiones de código administrado de documentos](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
- [Manifiestos de implementación y aplicación en soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
+ [Manifiestos de aplicación e implementación de soluciones de Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

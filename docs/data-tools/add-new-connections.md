@@ -9,28 +9,28 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747097"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845020"
 ---
 # <a name="add-new-connections"></a>Agregar nuevas conexiones
 
-Puede probar la conexión a una base de datos o un servicio y explorar el contenido de la base de datos y esquemas, puede utilizar **Explorador de servidores**, **Explorer nube**, o **Explorador de objetos de SQL Server**. La funcionalidad de estas ventanas se superpone hasta cierto punto. Las diferencias básicas son:
+Puede probar la conexión a una base de datos o un servicio y explorar el contenido de la base de datos y esquemas, mediante el uso de **Explorador de servidores**, **Cloud Explorer**, o **Explorador de objetos de SQL Server**. La funcionalidad de estas ventanas se superpone en cierta medida. Las diferencias básicas son:
 
 - Explorador de servidores
 
-   Se instala de forma predeterminada en Visual Studio. Puede utilizarse para probar las conexiones y ver las bases de datos de SQL Server, las otras bases de datos que tienen instalado un proveedor ADO.NET y algunos servicios de Azure. También muestra objetos de bajo nivel, como los contadores de rendimiento de sistema y registros de eventos, colas de mensajes. Si un origen de datos no tiene ningún proveedor ADO.NET, no aparece aquí, pero todavía puede usarlo desde Visual Studio mediante la conexión mediante programación.
+   Se instala de forma predeterminada en Visual Studio. Puede utilizarse para probar las conexiones y ver bases de datos de SQL Server, las otras bases de datos que tienen instalado un proveedor de ADO.NET y algunos servicios de Azure. También muestra los objetos de bajo nivel, como las colas de mensajes, los registros de eventos y contadores de rendimiento del sistema. Si un origen de datos no tiene ningún proveedor ADO.NET, no se mostrará aquí, pero todavía puede usarlo desde Visual Studio mediante la conexión mediante programación.
 
 - Cloud Explorer
 
-   Instalar manualmente esta ventana como una extensión de Visual Studio mediante la selección **herramientas**, **extensiones y actualizaciones**, **en línea**, **Visual Studio Markeplace**. Proporciona funciones especializadas para explorar y conectarse a los servicios de Azure.
+   Instale esta ventana manualmente como una extensión de Visual Studio seleccionando **herramientas** > **extensiones y actualizaciones** > **Online**  >  **Visual Studio Marketplace**. Proporciona la funcionalidad especializada para explorar y conectarse a servicios de Azure.
 
 - Explorador de objetos de SQL Server
 
-   Instalado con SQL Server Data Tools y visibles en el **vista** menú. Si no lo ve no existe, vaya a **programas y características** en el Panel de Control, busque Visual Studio y, a continuación, seleccione **cambio** para volver a ejecutar el programa de instalación después de seleccionar la casilla de verificación para SQL Server Data Tools. Use **Explorador de objetos de SQL Server** para ver bases de datos SQL (si tienen un proveedor ADO.NET), crear nuevas bases de datos, modificar esquemas, crear procedimientos almacenados, recuperar cadenas de conexión, ver los datos y mucho más. Las bases de datos SQL que tienen instalado un proveedor de ADO.NET no aparecen aquí, pero todavía puede conectarse a ellos mediante programación.
+   Instale con SQL Server Data Tools y se muestre en el **vista** menú. Si no ve allí, vaya a **programas y características** en el Panel de Control, busque Visual Studio y, a continuación, seleccione **cambio** para volver a ejecutar el programa de instalación después de seleccionar la casilla de verificación para SQL Server Data Tools. Use **Explorador de objetos de SQL Server** para ver bases de datos SQL (si tienen un proveedor de ADO.NET), crear nuevas bases de datos, modificar esquemas, crear procedimientos almacenados, recuperar cadenas de conexión, ver los datos y mucho más. Las bases de datos SQL que no tienen instalado ningún proveedor de ADO.NET no se mostrarán aquí, pero todavía puede conectarse a ellos mediante programación.
 
 ## <a name="add-a-connection-in-server-explorer"></a>Agregar una conexión en el Explorador de servidores
 
@@ -38,19 +38,19 @@ Para crear una conexión a la base de datos, haga clic en el **Agregar conexión
 
 ![Icono de explorador nueva conexión de servidor](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
-Se abrirá la **Agregar conexión** cuadro de diálogo. En este caso, se ha introducido el nombre de la instancia de SQL Server LocalDB.
+Se abrirá el **Agregar conexión** cuadro de diálogo. En este caso, hemos especificado el nombre de la instancia de SQL Server LocalDB.
 
 ![Agregar nueva conexión](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Cambiar el proveedor
 
-Si el origen de datos no es lo desea, haga clic en el **cambio** botón para elegir un nuevo origen de datos o un nuevo proveedor de datos ADO.NET. El nuevo proveedor podría solicitar las credenciales, en función de cómo haya configurado.
+Si el origen de datos no es lo que desea, haga clic en el **cambio** botón para elegir un origen de datos o un nuevo proveedor de datos ADO.NET. El nuevo proveedor podría solicitar sus credenciales, en función de cómo haya configurado.
 
 ![Proveedor de datos de cambio AD0.NET](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>Probar la conexión
 
-Después de elegir el origen de datos, haga clic en **Probar conexión**. Si no tiene éxito, debe solucionar en función de la documentación del fabricante.
+Una vez que haya elegido el origen de datos, haga clic en **Probar conexión**. Si no tiene éxito, deberá solucionar según la documentación del fabricante.
 
 ![Probar conexión](../data-tools/media/raddata-test-connection.png)
 

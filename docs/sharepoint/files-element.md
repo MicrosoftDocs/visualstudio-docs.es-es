@@ -1,5 +1,5 @@
 ---
-title: Archivos elemento | Documentos de Microsoft
+title: Archivos elemento | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 330c408aa0e283eb282b93f77726ccc5d9547795
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 37fc7bb582482f645fe5699196ca33d79304a5c3
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766911"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327299"
 ---
 # <a name="files-element"></a>Files (elemento)
-  Especifica los archivos que se implementan con el elemento de proyecto de SharePoint, como los archivos de elemento de característica y el resultado de los proyectos dependientes que no es de SharePoint.  
+  Especifica los archivos para implementar con el elemento de proyecto de SharePoint, como los archivos de elemento de característica y la salida de los proyectos de SharePoint que no son dependientes.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -48,7 +48,7 @@ ms.locfileid: "34766911"
 |Elemento|Descripción|  
 |-------------|-----------------|  
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|Opcional **ProjectItemFileType** elemento.<br /><br /> Representa un archivo de SharePoint, como archivo de elemento de característica, se incluyen con el elemento de proyecto cuando se implementa en SharePoint.|  
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Opcional **ProjectOutputFileType** elemento.<br /><br /> Representa el resultado de un proyecto para incluir con el elemento de proyecto cuando se implementa en SharePoint.|  
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|Opcional **ProjectOutputFileType** elemento.<br /><br /> Representa la salida de un proyecto para incluir con el elemento de proyecto cuando se implementa en SharePoint.|  
   
 ### <a name="parent-elements"></a>Elementos primarios
   
@@ -60,12 +60,12 @@ ms.locfileid: "34766911"
   
 |||  
 |-|-|  
-|**Espacio de nombres**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
-|**Nombre del esquema**|Esquema de elemento de proyecto de SharePoint|  
+|**Espacio de nombres**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel/SharePointTools/2010|  
+|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
 |**Archivo de validación**|ProjectItemModelSchema.xsd|  
 |**Puede estar vacío**|No|  
   
 ## <a name="see-also"></a>Vea también
- [Referencia de esquema de los elementos de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

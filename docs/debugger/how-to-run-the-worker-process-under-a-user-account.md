@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: ejecutar el proceso de trabajo en una cuenta de usuario | Documentos de Microsoft'
+title: 'Cómo: ejecutar el proceso de trabajo en una cuenta de usuario | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6407e4768acbeaf32cf4bebaf7064f04f21fba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475759"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057192"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario
 Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) bajo una cuenta de usuario, siga estos pasos.  
 
  > [!IMPORTANT]
- > A partir de Windows Server 2008 R2, se recomienda el uso de la [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como la identidad para cada grupo de aplicaciones.
+ > A partir de Windows Server 2008 R2, se recomienda el uso de la [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como identidad para cada grupo de aplicaciones.
   
 ## <a name="procedure"></a>Procedimiento  
   
@@ -40,7 +40,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
   
 1.  Abra el archivo machine.config, ubicado en el equipo en la carpeta CONFIG, en la ruta de acceso en la que instaló el motor en tiempo de ejecución.  
   
-2.  Buscar el &lt;processModel&gt; sección y cambie los atributos user y password por el nombre y la contraseña de la cuenta de usuario que desee que se ejecute aspnet_wp.exe.  
+2.  Buscar el &lt;processModel&gt; sección y cambie los atributos de usuario y contraseña para el nombre y la contraseña de la cuenta de usuario que desea que se ejecute aspnet_wp.exe.  
   
 3.  Guarde el archivo machine.config.  
   
@@ -58,17 +58,17 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
   
 5.  Abra un símbolo de comandos de Windows y restablezca el servidor ejecutando:  
   
-    ```  
+    ```cmd
     iisreset  
     ```  
     o  
   
-    ```  
+    ```cmd
     net stop iisadmin /y  
     net start w3svc  
     ```  
   
-6.  Busque la carpeta de archivos temporales de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], que debe estar ubicada en la misma ruta de acceso que la carpeta CONFIG. Haga clic en la contraseña [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] carpeta de archivos y elija **propiedades** en el menú contextual.  
+6.  Busque la carpeta de archivos temporales de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], que debe estar ubicada en la misma ruta de acceso que la carpeta CONFIG. Haga clic en temporal [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] carpeta de archivos y elija **propiedades** en el menú contextual.  
   
 7.  En el cuadro de diálogo **Propiedades de los archivos ASP.NET temporales** , haga clic en la ficha **Seguridad** .  
   
@@ -87,6 +87,6 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 13. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Propiedades de los archivos ASP.NET temporales** .  
   
 ## <a name="see-also"></a>Vea también  
-[Depurar aplicaciones ASP.](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
 [Depuración ASP.NET: requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)  
   

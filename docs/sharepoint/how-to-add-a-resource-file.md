@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agregar un archivo de recursos | Documentos de Microsoft'
+title: 'Cómo: agregar un archivo de recursos | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,15 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 533deb22f37af012ab9c4fd3a8d369edad64ce06
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 3406e65ad96b93cd21890d61270c0ed989ad496c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766833"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756576"
 ---
 # <a name="how-to-add-a-resource-file"></a>Cómo: agregar un archivo de recursos
-  Los comandos para agregar archivos de recursos está en el menú contextual de los nodos de la característica en el Explorador de soluciones y el nodo de la solución. Para obtener más información, consulte [localizar soluciones de SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
+  Los comandos para agregar archivos de recursos está en el menú contextual del nodo de la solución y los nodos de la característica en el Explorador de soluciones. Para obtener más información, consulte [soluciones de SharePoint localizar](../sharepoint/localizing-sharepoint-solutions.md).  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>Para agregar un archivo de recursos global a una solución de SharePoint  
   
@@ -34,14 +34,14 @@ ms.locfileid: "34766833"
   
 2.  En **el Explorador de soluciones**, elija un nodo de proyecto de SharePoint y, a continuación, en la barra de menús, elija **proyecto** > **Agregar nuevo elemento**.  
   
-3.  En el **Agregar nuevo elemento** diálogo cuadro, elija la **archivo de recursos globales** plantilla y, a continuación, elija la **agregar** botón.  
+3.  En el **Agregar nuevo elemento** diálogo cuadro, elija el **archivo de recursos globales** plantilla y, a continuación, elija el **agregar** botón.  
   
     > [!NOTE]  
     >  La plantilla de elemento de proyecto de archivo de recursos globales solo aparece cuando se selecciona un elemento de proyecto de SharePoint.  
   
 4.  En el **Agregar recurso** diálogo cuadro, elija una referencia cultural para el archivo de recursos, como el inglés (Estados Unidos).  
   
-     Este paso agrega un archivo de recursos global a la solución en el formato, recursos * x ***.*** referencia cultural ***.** resx, como por ejemplo, *recurso1.en-US.resx*.  
+     Este paso agrega un archivo de recursos global a la solución en el formato recurso * x ***.*** referencia cultural ***.** resx, como por ejemplo, *recurso1.en-US.resx*.  
   
 5.  Cuando el **Editor de recursos** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregar recursos al archivo de recursos.  
   
@@ -51,7 +51,7 @@ ms.locfileid: "34766833"
   
 2.  En **el Explorador de soluciones**, abra el menú contextual para el nombre de una característica en el **características** nodo y, a continuación, elija **Agregar recurso de características**.  
   
-     Este paso agrega un archivo de recursos a la característica en el formato * NombreArchivoRecursos ***.*** referencia cultural ***.** resx, como por ejemplo, *Característica1.en-US.resx*.  
+     Este paso agrega un archivo de recursos a la característica en el formato, * NombreArchivoRecursos ***.*** referencia cultural ***.** resx, como por ejemplo, *Característica1.en-US.resx*.  
   
 3.  Cuando el **Editor de recursos** se abre en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], agregar recursos al archivo de recursos.  
   

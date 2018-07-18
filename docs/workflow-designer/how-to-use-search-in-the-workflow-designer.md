@@ -10,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d3b5863e6273e96d7e0047f89cd16a69358c49cc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751668"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757973"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Usar una búsqueda en el Diseñador de flujo de trabajo
 
-Para facilitar la creación de flujos de trabajo mayores y más complejos, se puede usar Search en el diseñador de flujo de trabajo para encontrar elementos por palabra clave. Observe que el diseñador no admite Replace. La búsqueda buscará lo siguiente en el diseñador:
+Para facilitar la creación de flujos de trabajo más grandes y complejas, puede buscar dentro del Diseñador de flujo de trabajo para buscar elementos por palabra clave. Observe que el diseñador no admite Replace.
 
 ## <a name="quick-find"></a>Búsqueda rápida
 
@@ -33,24 +33,24 @@ Búsqueda rápida busca lo siguiente en el diseñador:
 
 -   Expresiones
 
-### <a name="using-quick-find"></a>Usar Búsqueda rápida
+### <a name="use-quick-find"></a>Usar la búsqueda rápida
 
-1.  Con el Diseñador de flujo de trabajo abierto, presione **CTRL+f**, o seleccione **editar**, **buscar y reemplazar**, **búsqueda rápida**.
+1.  Con el Diseñador de flujo de trabajo abierto, presione **CTRL+f**, o bien seleccione **editar** > **buscar y reemplazar** > **búsqueda rápida**.
 
 2.  Escriba el término de búsqueda en el **buscar** cuadro de texto y haga clic en **Buscar siguiente**.
 
-3.  El término de búsqueda se encontrará en el flujo de trabajo actual. La captura de pantalla siguiente muestra un nombre para mostrar de la actividad en el diseñador.
+3.  El término de búsqueda se encuentra en el flujo de trabajo actual. La siguiente imagen muestra el nombre para mostrar una actividad que se encuentra en el diseñador:
 
-     ![Resultado de la búsqueda en el Diseñador de flujo de trabajo](../workflow-designer/media/designersearch.png)
+   ![Resultado de la búsqueda en el Diseñador de flujo de trabajo](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>Buscar en archivos
 
-Al usar Buscar en archivos se buscarán cadenas en archivos de flujo de trabajo, incluidos archivos XAML.
+Buscar en archivos busca cadenas en archivos de flujo de trabajo, incluidos los archivos XAML.
 
-### <a name="using-find-in-files"></a>Usar Buscar en archivos
+### <a name="use-find-in-files"></a>Usar la función Buscar en archivos
 
-1.  En Visual Studio, presione **Ctrl + Mayús + F**, o seleccione **editar**, **buscar y reemplazar**, **buscar en archivos**
+1.  En Visual Studio, presione **Ctrl**+**MAYÚS**+**F**, o bien seleccione **editar**  >   **Buscar y reemplazar** > **buscar en archivos**.
 
-2.  Escriba el elemento que se busca en el **buscar** cuadro de texto y haga clic en **buscar todos**
+2.  Escriba el elemento de búsqueda en el **buscar** cuadro de texto y haga clic en **Buscar todo**.
 
-3.  Se mostrará el resultado de la búsqueda en Visual Studio**resultado de la búsqueda** vista. Al hacer doble clic, un elemento de resultado navegará a la actividad que contiene la coincidencia en el diseñador de flujo de trabajo.
+3.  Resultado de la búsqueda se muestra en el **resultado de la búsqueda** vista. Haga doble clic en un elemento de resultado se desplaza a la actividad que contiene a la coincidencia en el Diseñador de flujo de trabajo.

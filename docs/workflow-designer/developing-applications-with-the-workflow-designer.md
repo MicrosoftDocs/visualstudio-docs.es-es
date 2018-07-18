@@ -8,9 +8,9 @@ f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
 helpviewer_keywords:
-- Visual Studio 2010 Workflow Designer [WFD], overview
+- Visual Studio Workflow Designer [WFD], overview
 - Workflow Designer [WFD]
-- Visual Studio 2010 Workflow Designer [WFD]
+- Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 author: gewarren
@@ -18,35 +18,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc9e42146bfa7de259551ff1c90d27201db5725
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6fa987303ccbc3c6dc9122fb03daef02896a327
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970130"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756426"
 ---
-# <a name="developing-applications-with-the-workflow-designer"></a>Desarrollar aplicaciones con el Diseñador de flujo de trabajo
+# <a name="develop-apps-with-the-workflow-designer"></a>Desarrollar aplicaciones con el Diseñador de flujo de trabajo
 
-El Diseñador de flujo de trabajo de Windows es un diseñador visual y un depurador para la creación gráfica y depuración de aplicaciones de Windows Workflow Foundation (WF) en .NET Framework 4 que se hospeda en el entorno de desarrollo de Visual Studio 2010. Permite crear una aplicación de flujo de trabajo compuesta, la biblioteca de actividades o el servicio de Windows Communication Foundation (WCF) mediante el uso de plantillas y diseñadores de actividad. Para obtener más información acerca de los flujos de trabajo, consulte la [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
+El Diseñador de flujo de trabajo es un diseñador visual y un depurador para la creación gráfica y depuración de [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) aplicaciones (WF) en Visual Studio. Permite crear una aplicación de flujo de trabajo compuesta, biblioteca de actividades o servicio de Windows Communication Foundation (WCF) mediante el uso de plantillas y diseñadores de actividad.
 
- Éstos son varias nuevas características de diseño que establecen esta nueva versión del Diseñador de flujo de trabajo además de las versiones anteriores del Diseñador de flujo de trabajo:
+## <a name="install-windows-workflow-foundation"></a>Instalar Windows Workflow Foundation
 
--   El Diseñador de flujo de trabajo se basa en Windows Presentation Foundation (WPF). Esto mejora el uso del diseñador de actividades, así como el rendimiento para flujos de trabajo amplios y complejos.
+Para usar las plantillas de proyecto de flujo de trabajo en Visual Studio 2017, instale primero el **Windows Workflow Foundation** componente.
 
--   Las actividades personalizadas se diseñan ahora con [!INCLUDE[avalon2](../workflow-designer/includes/avalon2_md.md)], mediante XAML y se ha simplificado el modelo de programación para crear los diseñadores de actividades.
+1. Abra el instalador de Visual Studio. Una forma rápida para abrirlo es seleccionando **herramientas** > **obtener herramientas y características** en Visual Studio.
 
--   Se ha implementado una actividad de diagrama de flujo, de forma que se puede visualizar el flujo del programa con un estilo de modelado de diagramas de flujo que le resulte familiar.
+1. En el instalador de Visual Studio, seleccione el **componentes individuales** ficha.
 
--   El Diseñador de flujo de trabajo tiene un nuevo diseñador de variables que le permite declarar y definir el ámbito de las variables dentro de los flujos de trabajo, vinculándolos a las actividades.
+1. Desplácese hacia abajo hasta la **las actividades de desarrollo** categoría y, a continuación, seleccione el **Windows Workflow Foundation** componente.
 
--   En Visual Studio 2010, el Diseñador de flujo de trabajo proporciona capacidades completas de IntelliSense al crear expresiones de Visual Basic en los flujos de trabajo de .NET Framework 4.
+   ![Componente de Windows Workflow Foundation para Visual Studio 2017](media/windows-workflow-foundation-component.png)
 
--   El uso de las capacidades de depuración se amplía ahora a XAML, lo cual hace posible el establecimiento de puntos de interrupción en la definición del flujo de trabajo XAML e ir al código XAML en tiempo de ejecución, que proporciona un uso similar al del código administrado.
+1. Seleccione **Modificar**.
 
--   Rehospedar el Diseñador de flujo de trabajo fuera de Visual Studio se simplifica en gran medida en comparación con versiones anteriores, requiere ahora unas pocas líneas de código.
+   Visual Studio instala la **Windows Workflow Foundation** componente.
 
--   El nuevo <xref:System.Activities.Statements.Flowchart> actividad y su [Flowchart](../workflow-designer/flowchart-activity-designer.md) le permiten visualizar el flujo del programa con el estilo de modelado de diagrama de flujo familiar.
+## <a name="see-also"></a>Vea también
 
--   Se han mejorado las actividades de mensajería, lo que le permite escribir totalmente declarativos (sin código) servicios Windows Communication Foundation (WCF).
-
--   El **Agregar referencia de servicio...**  funcionalidad le permite generar automáticamente actividades que acceder a servicios Web.
+- [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

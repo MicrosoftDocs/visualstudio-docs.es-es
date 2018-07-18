@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: administrar el diseño de controles en paneles de acciones | Documentos de Microsoft'
+title: 'Cómo: administrar el diseño de controles en paneles de acciones'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,26 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0831740c612e4e9d4eddd47a0648302e9460f060
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f523d56b189fb1517df7e22d18cd689e9300eff3
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255920"
 ---
-# <a name="how-to-manage-control-layout-on-actions-panes"></a>Cómo: Administrar el diseño de controles en paneles de acciones
-  Un panel de acciones se acopla a la derecha de un documento u hoja de cálculo de forma predeterminada; Sin embargo, se puede acoplar a la izquierda, superior o inferior. Si está utilizando varios controles de usuario, puede escribir código para apilar correctamente los controles de usuario en el panel Acciones. Para obtener más información, consulta [Actions Pane Overview](../vsto/actions-pane-overview.md).  
+# <a name="how-to-manage-control-layout-on-actions-panes"></a>Cómo: administrar el diseño de controles en paneles de acciones
+  Un panel de acciones se acopla a la derecha de un documento u hoja de cálculo de forma predeterminada; Sin embargo, se puede acoplar a la izquierda, superior o inferior. Si está utilizando varios controles de usuario, puede escribir código para apilar correctamente los controles de usuario en el panel de acciones. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  El orden de apilamiento de los controles depende de si el panel de acciones está acoplado vertical u horizontalmente.  
   
 > [!NOTE]  
->  Si el usuario cambia el tamaño del panel de acciones en tiempo de ejecución, puede establecer los controles que se va a cambiar el tamaño con el panel de acciones. Puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de Windows Forms para anclar los controles al panel de acciones. Para obtener más información, consulte [Cómo: delimitar controles en formularios Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
+>  Si el usuario cambia el tamaño del panel de acciones en tiempo de ejecución, puede establecer los controles para cambiar el tamaño con el panel de acciones. Puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de Windows Forms para anclar los controles al panel de acciones. Para obtener más información, consulte [Cómo: delimitar controles en Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
   
 > [!NOTE]  
 >  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
-### <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Para establecer el orden de apilamiento de los controles de panel de acciones  
+## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Para establecer el orden de apilamiento de los controles del panel de acciones  
   
 1.  Abra un proyecto de nivel de documento para Microsoft Office Word que incluye un panel de acciones con varios controles de usuario o controles del panel de acciones anidados. Para obtener más información, consulte [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
      [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]  
   
-4.  Si la orientación es horizontal, apile los controles de panel de acciones desde la izquierda; en caso contrario, colóquelos en una pila de la parte superior.  
+4.  Si la orientación es horizontal, los controles del panel de acción de la izquierda; la pila en caso contrario, apilar desde la parte superior.  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
      [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]  
@@ -62,16 +63,16 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
  [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]  
   
-## <a name="compiling-the-code"></a>Compilar el código  
+## <a name="compile-the-code"></a>Compile el código  
  Para este ejemplo se necesita:  
   
--   Controles de un proyecto de nivel de documento de Word con un panel de acciones que contiene varios controles de usuario o el panel de acciones anidados.  
+-   Controla un proyecto de nivel de documento de Word con un panel de acciones que contiene varios controles de usuario o el panel de acciones anidados.  
   
 ## <a name="see-also"></a>Vea también  
- [Información general sobre paneles de acciones](../vsto/actions-pane-overview.md)   
+ [Información general sobre el panel de acciones](../vsto/actions-pane-overview.md)   
  [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Cómo: agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Tutorial: Insertar texto en un documento de un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Tutorial: Inserción de texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Cómo: agregar un panel de acciones a documentos de Word o Excel workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [Tutorial: Insertar texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [Tutorial: Insertar texto en un documento desde un panel de acciones](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

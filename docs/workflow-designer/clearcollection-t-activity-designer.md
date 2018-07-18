@@ -12,27 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d9d246fa6bad55e47ddff73c888906f2979695
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2422f7165e3f00e4059bc593c129c7723daed2f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974517"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757901"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > Diseñador de actividad
 
-El **ClearCollection\<T >** Diseñador de actividades se usa para crear y configurar un <xref:System.Activities.Statements.ClearCollection%601> actividad.
+El **ClearCollection\<T >** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.ClearCollection%601> actividad.
 
-## <a name="the-clearcollectiont-activity"></a>El ClearCollection\<T > actividad
- La actividad <xref:System.Activities.Statements.ClearCollection%601> borra una colección especificada de todos los elementos.
+## <a name="the-clearcollectiont-activity"></a>ClearCollection\<T > actividad
 
-### <a name="using-the-clearcollectiont-activity-designer"></a>Mediante el ClearCollection\<T > Diseñador de actividad
- El **ClearCollection\<T >** Diseñador de actividad puede encontrarse en el **colección** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el  **Cuadro de herramientas** ficha del Diseñador de flujo de trabajo (como alternativa, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+La actividad <xref:System.Activities.Statements.ClearCollection%601> borra una colección especificada de todos los elementos.
 
- El **ClearCollection\<T >** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se colocan las actividades, por ejemplo, dentro de un <xref:System.Activities.Statements.Sequence>. Al colocar el Diseñador de actividad se crea un <xref:System.Activities.Statements.ClearCollection%601> actividad con el valor predeterminado es <xref:System.Activities.Activity.DisplayName%2A> de ClearCollection < Int32\>. (De forma predeterminada, el *TypeArgument* es **Int32**. TypeArgument puede cambiarse en la cuadrícula de propiedades.) El <xref:System.Activities.Activity.DisplayName%2A> valor se puede editar en el encabezado de la **ClearCollection < T\>**  Diseñador de actividad o en la **DisplayName** cuadro de la cuadrícula de propiedades. Es preciso editar las otras propiedades en la cuadrícula de propiedades.
+### <a name="using-the-clearcollectiont-activity-designer"></a>Uso de ClearCollection\<T > Diseñador de actividad
 
-### <a name="the-clearcollectiont-properties"></a>El ClearCollection\<T > Propiedades
- En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.ClearCollection%601> y se describe cómo se utilizan en el diseñador.
+El **ClearCollection\<T >** Diseñador de actividad puede encontrarse en el **colección** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el  **Cuadro de herramientas** ficha del Diseñador de flujo de trabajo. Como alternativa, seleccione **cuadro de herramientas** desde el **vista** menús o presione **Ctrl**+**Alt** + **X**.
+
+El **ClearCollection\<T >** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde se colocan las actividades, por ejemplo, dentro de un <xref:System.Activities.Statements.Sequence>. Al colocar el Diseñador de actividad se crea un <xref:System.Activities.Statements.ClearCollection%601> actividad con un valor predeterminado <xref:System.Activities.Activity.DisplayName%2A> de ClearCollection < Int32\>. (De forma predeterminada, el *TypeArgument* es **Int32**. TypeArgument puede cambiarse en la cuadrícula de propiedades.) El <xref:System.Activities.Activity.DisplayName%2A> se puede editar en el encabezado de la **ClearCollection < T\>**  Diseñador de actividad o en el **DisplayName** cuadro de la cuadrícula de propiedades. Es preciso editar las otras propiedades en la cuadrícula de propiedades.
+
+### <a name="the-clearcollectiont-properties"></a>ClearCollection\<T > Propiedades
+
+En la tabla siguiente se muestran las propiedades <xref:System.Activities.Statements.ClearCollection%601> y se describe cómo se utilizan en el diseñador.
 
 |Nombre de la propiedad|Obligatorio|Uso|
 |-------------------|--------------|-----------|

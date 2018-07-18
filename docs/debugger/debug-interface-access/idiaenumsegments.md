@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments | Documentos de Microsoft
+title: IDiaEnumSegments | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa63e85a19a1aec5102d3f59b027e3cddf849a62
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 30e359192ea6d19d6bc6e31de3c91943bda2deee
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468754"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056875"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
-Enumera los distintos segmentos incluidos en el origen de datos.  
+Enumera los distintos segmentos contenidos en el origen de datos.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,7 +35,7 @@ IDiaEnumSegments : IUnknown
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) versión de este enumerador.|  
+|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versión de este enumerador.|  
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Recupera el número de segmentos.|  
 |[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Recupera un segmento por medio de un índice.|  
 |[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Recupera un número especificado de segmentos de la secuencia de enumeración.|  
@@ -46,10 +46,10 @@ IDiaEnumSegments : IUnknown
 ## <a name="remarks"></a>Comentarios  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Obtener esta interfaz mediante una llamada a la `QueryInterface` método en un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objeto. Vea el ejemplo para obtener más información.  
+ Esta interfaz se obtiene mediante una llamada a la `QueryInterface` método en un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objeto. Vea el ejemplo para obtener más información.  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo muestra cómo obtener el `IDiaEnumSections` interfaz de una tabla. Para obtener un ejemplo más completo del uso de segmentos, vea el [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) interfaz.  
+ En este ejemplo se muestra cómo obtener el `IDiaEnumSections` interfaz desde una tabla. Para obtener un ejemplo más completo del uso de segmentos, consulte el [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) interfaz.  
   
 ```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
@@ -71,7 +71,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
   
  Biblioteca: diaguids.lib  
   
- DLL: msdia80.dll  
+ Archivo DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

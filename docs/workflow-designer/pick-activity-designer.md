@@ -1,5 +1,5 @@
 ---
-title: Diseñador de flujo de trabajo - Diseñador de actividades de selección
+title: Diseñador de flujo de trabajo - Diseñador de actividades Pick
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f664ac3a22b91780d392e0fef3224cd80b1e7919
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb12deec8bba5ac7974b0aa730726f309f1c9c46
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975437"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757756"
 ---
 # <a name="pick-activity-designer"></a>Diseñador de actividades Pick
 
@@ -25,15 +25,13 @@ La actividad <xref:System.Activities.Statements.Pick> proporciona un flujo de co
 
 ## <a name="the-pick-activity"></a>Actividad Pick
 
-Una actividad <xref:System.Activities.Statements.Pick> contiene una colección de objetos <xref:System.Activities.Statements.PickBranch>, uno de los cuales puede ejecutar la actividad <xref:System.Activities.Statements.Pick> a causa de algún evento de entrada que actúa como un desencadenador. De esta manera el Diseñador de flujo de trabajo de Windows proporciona modelado de flujo de control basado en eventos. Cada clase <xref:System.Activities.Statements.PickBranch> contiene una propiedad <xref:System.Activities.Statements.PickBranch.Trigger%2A> y una propiedad <xref:System.Activities.Statements.PickBranch.Action%2A>. Al principio de un <xref:System.Activities.Statements.Pick> ejecución de la actividad, todas las actividades de desencadenador de la <xref:System.Activities.Statements.PickBranch> se programan elementos. Cuando se completa la primera actividad, se programa la actividad de acción correspondiente y el resto de actividades de desencadenador se cancelan.
+Una actividad <xref:System.Activities.Statements.Pick> contiene una colección de objetos <xref:System.Activities.Statements.PickBranch>, uno de los cuales puede ejecutar la actividad <xref:System.Activities.Statements.Pick> a causa de algún evento de entrada que actúa como un desencadenador. De esta manera, el Diseñador de flujo de trabajo proporciona modelado de flujo de control basado en eventos. Cada clase <xref:System.Activities.Statements.PickBranch> contiene una propiedad <xref:System.Activities.Statements.PickBranch.Trigger%2A> y una propiedad <xref:System.Activities.Statements.PickBranch.Action%2A>. Al principio de un <xref:System.Activities.Statements.Pick> ejecución de la actividad, todas las actividades de desencadenador de la <xref:System.Activities.Statements.PickBranch> elementos están programados. Cuando se completa la primera actividad, se programa la actividad de acción correspondiente y el resto de actividades de desencadenador se cancelan.
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>Usar el diseñador de actividad Pick
 
-El **elegir** Diseñador de actividad puede encontrarse en el **flujo de Control** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas**ficha en el Diseñador de flujo de trabajo (como alternativa, seleccione **barra de herramientas** desde el **vista** menú o CTRL + ALT + X.)
+Acceso a la **elegir** Diseñador de actividad en el **flujo de Control** categoría de la **cuadro de herramientas**. El **elegir** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde normalmente se colocan los diseñadores de actividad, por ejemplo, en un  **Secuencia** Diseñador de actividad. Después de colocarlo en el Diseñador de flujo de trabajo, crea un <xref:System.Activities.Statements.Pick> actividad, que de forma predeterminada contiene dos vacío <xref:System.Activities.Statements.PickBranch> actividades como elementos con nombres Branch1 y Branch2 para mostrar. Los respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> se pueden editar los valores de propiedad en el **PickBranch** encabezado del Diseñador de actividad o dentro del **propiedades** ventana para cada bifurcación.
 
-El **elegir** Diseñador de actividad se puede arrastrar desde el **cuadro de herramientas** y colocar en la superficie del Diseñador de flujo de trabajo donde normalmente se colocan los diseñadores de actividades, por ejemplo, en un  **Secuencia** Diseñador de actividad. Después de colocarlo en el Diseñador de flujo de trabajo, crea un <xref:System.Activities.Statements.Pick> actividad, que de forma predeterminada contiene dos vacío <xref:System.Activities.Statements.PickBranch> actividades como elementos con mostrar nombres de Branch1 y Branch2. Los respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valores de propiedad se pueden editar en el **PickBranch** encabezado del Diseñador de actividad o en la **propiedades** ventana para cada bifurcación.
-
-Hay dos maneras de agregar <xref:System.Activities.Statements.PickBranch> actividades a la colección de un <xref:System.Activities.Statements.Pick> objeto: arrastrando y colocando el **PickBranch** diseñador desde el **cuadro de herramientas** o mediante el menú contextual de en el **elegir** superficie de diseño. Para obtener más información, consulte el [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tema. Observe que el único elemento que se puede colocar dentro de un **elegir** Diseñador de actividad es un **PickBranch** Diseñador de actividad.
+Hay dos maneras de agregar <xref:System.Activities.Statements.PickBranch> actividades a la colección de un <xref:System.Activities.Statements.Pick> objeto: arrastrando y colocando el **PickBranch** diseñador desde el **cuadro de herramientas** o mediante el menú contextual dentro de la **elegir** superficie de diseño. Para obtener más información, consulte el [PickBranch](../workflow-designer/pickbranch-activity-designer.md) tema. Tenga en cuenta que el único elemento que se puede colocar dentro un **elegir** Diseñador de actividad es un **PickBranch** Diseñador de actividad.
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>Propiedades de la actividad Pick en el Diseñador de flujo de trabajo
 

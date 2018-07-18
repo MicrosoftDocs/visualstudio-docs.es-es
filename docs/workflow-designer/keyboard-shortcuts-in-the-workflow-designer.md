@@ -1,5 +1,5 @@
 ---
-title: 'Diseñador de flujo de trabajo: métodos abreviados de teclado en el Diseñador de flujo de trabajo'
+title: Diseñador de flujo de trabajo - métodos abreviados de teclado en el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977649"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756599"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
 
-Puede tener acceso a toda la funcionalidad básica del Diseñador de flujo de trabajo de Windows con el teclado.
+Puede tener acceso a toda la funcionalidad principal del Diseñador de flujo de trabajo mediante el teclado.
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>Navegar por el Diseñador de flujo de trabajo mediante el teclado
 
-Dentro de Visual Studio 2010, los accesos directos globales y los accesos directos de depuración se aplican hasta el Diseñador de flujo de trabajo. Además, se ha creado un número de métodos abreviados de teclado específicos de diseñador de flujo de trabajo. En Visual Studio 2010, se pueden reasignar todos los métodos abreviados de teclado. Sin embargo, en una aplicación hospedada en otro host, estos métodos abreviados de teclado están codificados de forma rígida.
+Dentro de Visual Studio, los accesos directos de depuración y accesos directos globales se aplican en el Diseñador de flujo de trabajo. Además, se ha creado una serie de métodos abreviados de teclado específicos de diseñador de flujo de trabajo. En Visual Studio, se pueden reasignar todos los métodos abreviados de teclado. Sin embargo, en una aplicación hospedada en otro host, estos métodos abreviados de teclado están codificados de forma rígida.
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Métodos abreviados de teclado del Diseñador de flujo de trabajo
 
@@ -49,13 +49,13 @@ En la tabla siguiente se resume los métodos abreviados de teclado asignados a l
 
 ### <a name="flowchart"></a>Diagrama de flujo
 
-La siguiente lista muestra los gestos que se utilizan para construir un diagrama de flujo con el teclado. Como en el resto del Diseñador de flujo de trabajo, las actividades se agregan a la superficie del diseñador mediante los métodos abreviados de cuadro de herramientas global proporcionados con Visual Studio 2010.
+La siguiente lista muestra los gestos que se utilizan para construir un diagrama de flujo con el teclado. Como se muestra en el resto del Diseñador de flujo de trabajo, las actividades se agregan a la superficie del diseñador mediante los métodos abreviados de cuadro de herramientas global proporcionados con Visual Studio.
 
 - Para mover una actividad, seleccione la actividad y utilice las teclas de dirección para cambiar la posición.
 
 - Para cambiar el tamaño de un diagrama de flujo, mueva una actividad más allá del borde actual del diagrama de flujo mediante las teclas de dirección. El diagrama de flujo cambia su tamaño automáticamente.
 
-- Para establecer una actividad como nodo de inicio, utilice la **establecer como nodo inicial** comando en el menú contextual.
+- Para establecer una actividad como nodo de inicio, use el **establecer como nodo inicial** comando en el menú contextual.
 
 - Para conectar actividades:
 
@@ -73,11 +73,11 @@ Notas sobre cómo conectar las actividades mediante el teclado:
 
 - Si una pareja de actividades no se puede conectar, por ejemplo si la actividad de origen ya tiene una conexión de salida, aún se pueden efectuar otras conexiones entre actividades en la selección siempre que sea posible.
 
-- Cuando un **FlowDecision** se incluye en la selección y la **FlowDecision** no tiene ningún conector saliente, el conector se coloca en el **True** bifurcación.
+- Cuando un **FlowDecision** se incluye en la selección y la **FlowDecision** no tiene ningún conector de salida, el conector se coloca en el **True** rama.
 
 ### <a name="expression-editing"></a>Edición de Expresiones
 
-De forma predeterminada, los métodos abreviados de teclado para la edición de texto de Visual Basic se aplican en el editor de expresiones en el Diseñador de flujo de trabajo, con las siguientes limitaciones:
+De forma predeterminada, los métodos abreviados de teclado predeterminado para la edición de texto de Visual Basic se aplican en el editor de expresiones en el Diseñador de flujo de trabajo, con las siguientes limitaciones:
 
 - La reasignación de métodos abreviados de teclado para los siguientes comandos no tiene efecto alguno. Cuando edite una expresión, solo puede utilizar los métodos abreviados de teclado predeterminados para tener acceso a estos comandos.
 
@@ -88,4 +88,4 @@ De forma predeterminada, los métodos abreviados de teclado para la edición de 
    - Undo
    - Redo
 
-- Para reasignar los métodos abreviados de teclado para comandos de edición de expresión en el Diseñador de flujo de trabajo en Visual Studio 2010, modifique los accesos directos en el ámbito del Diseñador de flujo de trabajo. Los cambios realizados en el ámbito del Editor de texto no se aplican automáticamente al diseñador de flujo de trabajo. Si desea reasignar los accesos directos en ambos lugares, debe aplicar los cambios dos veces (una vez para cada ámbito).
+- Para reasignar los métodos abreviados de teclado para comandos de edición de expresiones dentro del Diseñador de flujo de trabajo en Visual Studio, edite los accesos directos en el ámbito del Diseñador de flujo de trabajo. Los cambios realizados en el ámbito del Editor de texto no se aplican automáticamente al diseñador de flujo de trabajo. Si desea reasignar los accesos directos en ambos lugares, debe aplicar los cambios dos veces (una vez para cada ámbito).

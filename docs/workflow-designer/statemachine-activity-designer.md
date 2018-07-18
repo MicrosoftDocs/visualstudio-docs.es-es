@@ -1,5 +1,5 @@
 ---
-title: Diseñador de flujo de trabajo - Diseñador de actividades StateMachine
+title: Diseñador de flujo de trabajo - Diseñador de actividad StateMachine
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c7afb2131ae6e05c8232eb8dc735e5131698a69
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974928"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758237"
 ---
 # <a name="statemachine-activity-designer"></a>Diseñador de actividades StateMachine
 
@@ -26,7 +26,7 @@ La actividad <xref:System.Activities.Statements.StateMachine> contiene una colec
 
 ## <a name="using-the-statemachine-activity-designer"></a>Usar el diseñador de actividad StateMachine
 
-Para agregar un <xref:System.Activities.Statements.StateMachine> actividad, arrastre el **StateMachine** Diseñador de actividad desde la **máquina de estados** sección de la **cuadro de herramientas** y colóquela en el flujo de trabajo de Windows Superficie del diseñador. Para agregar un estado secundario a esta <xref:System.Activities.Statements.StateMachine> actividad, arrastre un <xref:System.Activities.Statements.State> o <xref:System.Activities.Core.Presentation.FinalState> desde el **cuadro de herramientas** y colóquela sobre la **StateMachine**.
+Para agregar un <xref:System.Activities.Statements.StateMachine> actividad, arrastre el **StateMachine** Diseñador de actividades desde el **máquina de estados** sección de la **cuadro de herramientas** y colóquelo en el Diseñador de flujo de trabajo superficie. Para agregar un estado secundario a esta <xref:System.Activities.Statements.StateMachine> actividad, arrastre un <xref:System.Activities.Statements.State> o <xref:System.Activities.Core.Presentation.FinalState> desde el **cuadro de herramientas** y colóquela en la **StateMachine**.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Propiedades de la actividad StateMachine en el Diseñador de flujo de trabajo
 
