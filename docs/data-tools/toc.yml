@@ -1,7 +1,5 @@
 - name: Información general
-  items:
-    - name: Acceder a datos en Visual Studio
-      href: accessing-data-in-visual-studio.md
+  href: accessing-data-in-visual-studio.md
 - name: Tutoriales
   items:
     - name: Crear una aplicación de datos sencilla mediante ADO.NET

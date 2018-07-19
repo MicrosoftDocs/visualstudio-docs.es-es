@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2bf76fea98cb30b0b32ede245be3bbd774699b58
+ms.openlocfilehash: dc5c1323affee0e6a14639ec76702679d9e045ee
 ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/11/2018
-ms.locfileid: "38943285"
+ms.locfileid: "38941250"
 ---
-MSBuild
+Visual Studio 2013

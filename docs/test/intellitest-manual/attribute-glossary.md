@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1e42b9cae54186ed723c6c0567b5af247796d23d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 64e02cae39497a14cc087791a60b4f61c9bcd8fd
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815917"
 ---
 # <a name="attribute-glossary"></a>Glosario de atributos
 
@@ -51,7 +52,7 @@ Este atributo declara que el valor controlado no puede ser **null**. Puede adjun
 
 * un **parámetro** de un método de prueba parametrizado
 
-  ```
+  ```csharp
   // assume foo is not null
   [PexMethod]
   public void SomeTest([PexAssumeNotNull]IFoo foo, ...) {}
@@ -59,7 +60,7 @@ Este atributo declara que el valor controlado no puede ser **null**. Puede adjun
 
 * un **campo**
 
-  ```
+  ```csharp
   public class Foo {
      // this field should not be null
      [PexAssumeNotNull]
@@ -69,7 +70,7 @@ Este atributo declara que el valor controlado no puede ser **null**. Puede adjun
 
 * un **tipo**
 
-  ```
+  ```csharp
   // never consider null for Foo types
   [PexAssumeNotNull]
   public class Foo {}
@@ -94,7 +95,7 @@ También es muy recomendable hacer que esas clases sean **parciales**, de manera
 
 **Conjunto adicional y categorías**:
 
-```
+```csharp
 [TestClass] // MSTest test fixture attribute
 [PexClass(Suite = "checkin")] // fixture attribute
 public partial class MyTests { ... }
@@ -102,7 +103,7 @@ public partial class MyTests { ... }
 
 **Especificar el tipo en la prueba**:
 
-```
+```csharp
 [PexClass(typeof(Foo))] // this is a test for Foo
 public partial class FooTest { ... }
 ```
@@ -131,7 +132,7 @@ La prueba unitaria parametrizada:
 
 **Ejemplo**
 
-```
+```csharp
 [PexClass]
 public partial class MyTests {
      [PexMethod]
@@ -150,7 +151,7 @@ public partial class MyTests {
 
 Este atributo puede establecerse en el nivel de ensamblado para invalidar los valores de configuración predeterminados de todas las exploraciones.
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
 [assembly: PexAssemblySettings(TestFramework = "Naked")]
@@ -161,7 +162,7 @@ using Microsoft.Pex.Framework;
 
 Este atributo especifica un ensamblado que se está probando mediante el proyecto de prueba actual. 
 
-```
+```csharp
 [assembly: PexAssemblyUnderTest("MyAssembly")]
 ```
 
@@ -172,7 +173,7 @@ Este atributo se usa para especificar un ensamblado que se va a instrumentar.
 
 **Ejemplo**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 
 // the assembly containing ATypeFromTheAssemblyToInstrument should be instrumented
@@ -189,7 +190,7 @@ Este atributo le indica a IntelliTest que puede usar un tipo particular para cre
 
 **Ejemplo**
 
-```
+```csharp
 [PexMethod]
 [PexUseType(typeof(A))]
 [PexUseType(typeof(B))]
@@ -208,7 +209,7 @@ Si este atributo está adjunto a [PexMethod](#pexmethod) (o a [PexClass](#pexcla
 
 La prueba siguiente especifica que el constructor de **Stack** puede generar **ArgumentOutOfRangeException**:
 
-```
+```csharp
 class Stack {
   int[] _elements;
   int _count;
@@ -223,7 +224,7 @@ class Stack {
 
 El filtro se adjunta a un accesorio como se indica a continuación (también puede definirse en el nivel de prueba o ensamblado):
 
-```
+```csharp
 [PexMethod]
 [PexAllowedException(typeof(ArgumentOutOfRangeException))]
 class CtorTest(int capacity) {

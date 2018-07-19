@@ -1,5 +1,5 @@
 ---
-title: Las asignaciones de puerto del depurador remoto | Documentos de Microsoft
+title: Las asignaciones de puerto del depurador remoto | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab48d9b6a67563171e28dab1f08e496750585288
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 59379e2b6a10ac98a739487eac064f3b261f35c5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476054"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057809"
 ---
 # <a name="remote-debugger-port-assignments"></a>Asignaciones de puertos del depurador remoto
 El depurador remoto de Visual Studio se puede ejecutar como una aplicación o como un servicio en segundo plano. Cuando se ejecuta como una aplicación, usa un puerto asignado de forma predeterminada como se muestra a continuación:  
@@ -31,13 +31,13 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
  En otras palabras, el número de puerto asignado al depurador remoto se incrementa en 2 para cada versión. Puede establecer un número de puerto distinto según desee. Explicaremos cómo establecer números de puerto en una sección posterior.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 32 bits  
- TCP 4022 (en Visual Studio de 2017) es el puerto principal y se requiere para todos los escenarios. Puede configurar este puerto desde la línea de comandos o en la ventana del depurador remoto.  
+ 4022 TCP (en Visual Studio 2017) es el puerto principal y se requiere para todos los escenarios. Puede configurar este puerto desde la línea de comandos o en la ventana del depurador remoto.  
   
- En la ventana del depurador remoto, haga clic en **Herramientas > opciones**y establecer el número de puerto TCP/IP.  
+ En la ventana del depurador remoto, haga clic en **Herramientas > opciones**y establezca el número de puerto TCP/IP.  
   
- En la línea de comandos, iniciar el depurador remoto con la **/puerto** cambiar: **msvsmon /port \<número de puerto >**.  
+ En la línea de comandos, inicie el depurador remoto con el **/puerto** cambiar: **msvsmon /port \<número de puerto >**.  
   
- Puede encontrar todo el depurador remoto modificadores de línea de comandos en la Ayuda de depuración remota (presione **F1** o haga clic en **Ayuda > uso de** en la ventana del depurador remoto).  
+ Puede encontrar todo el depurador remoto modificadores de línea de comandos en la Ayuda de depuración remota (presione **F1** o haga clic en **Ayuda > uso** en la ventana del depurador remoto).  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Puerto del depurador remoto en sistemas operativos de 64 bits  
  Cuando se inicia la versión de 64 bits del depurador remoto, usa el puerto 4022 de forma predeterminada.  Si depura un proceso de 32 bits, la versión de 64 bits del depurador remoto inicia una versión de 32 bits del depurador remoto en el puerto 4023. Si ejecuta al depurador remoto de 32 bits, usa 4022 y 4023 no se utiliza.  
@@ -52,9 +52,8 @@ El depurador remoto de Visual Studio se puede ejecutar como una aplicación o co
 ## <a name="remote-debugger-ports-on-azure"></a>Puertos del depurador remoto en Azure  
  El depurador remoto en Azure usa los puertos siguientes. Los puertos del servicio en la nube se asignan a los puertos en la máquina virtual individual. Todos los puertos son TCP.  
   
-||||  
+|Conexión|Puerto en el servicio en la nube|Puerto en la máquina virtual|
 |-|-|-|  
-|**Conexión**|**Puerto en el servicio en la nube**|**Puerto en la máquina virtual**|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  

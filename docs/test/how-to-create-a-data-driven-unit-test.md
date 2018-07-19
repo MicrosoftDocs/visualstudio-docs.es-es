@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117605"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Cómo: Crear una prueba unitaria controlada por datos
 
@@ -113,13 +114,13 @@ El método `Assert` incluye un mensaje que muestra los valores `x` y `y` de una 
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Especificar el DataSourceAttribute
  El atributo `DataSource` especifica la cadena de conexión para el origen de datos y el nombre de la tabla que se utiliza en el método de prueba. La información exacta de la cadena de conexión es diferente, dependiendo de qué tipo de origen de datos está utilizando. En este ejemplo, se utiliza una base de datos de SqlServerCe.
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 El atributo de origen de datos tiene tres constructores.
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -127,7 +128,7 @@ El atributo de origen de datos tiene tres constructores.
 
  Un archivo app.config permite cambiar la ubicación del origen de datos sin realizar cambios en la propia prueba unitaria. Para obtener información sobre cómo crear y utilizar un archivo app.config, consulte [Tutorial: usar un archivo de configuración para definir un origen de datos](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -135,7 +136,7 @@ El atributo de origen de datos tiene tres constructores.
 
  Las cadenas de conexión dependen del tipo de origen de datos, pero debe contener un elemento de proveedor que especifique el nombre invariable del proveedor de datos.
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,

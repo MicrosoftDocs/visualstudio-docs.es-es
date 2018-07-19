@@ -1,5 +1,5 @@
 ---
-title: Trabajar con documentos de Visio | Documentos de Microsoft
+title: Trabajar con documentos de Visio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,26 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3c9d5f3ad8344e2ae231a5c3680226fa945f4c46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 832c0cc7cfc6ad40c45e5134b57b1fc32cf8896b
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258832"
 ---
-# <a name="working-with-visio-documents"></a>Trabajar con documentos de Visio
+# <a name="work-with-visio-documents"></a>Trabajar con documentos de Visio
   Los temas de esta sección proporcionan procedimientos paso a paso y ejemplos de código para que usar el modelo de objetos de Microsoft Office Visio para trabajar con documentos en proyectos de Office.  
   
 |Tarea|Procedimiento|  
 |----------|---------------|  
-|Crear un documento de Visio en blanco o un nuevo documento que se basa en una plantilla, Galería de símbolos o documento de Visio existente.|[Cómo: Crear nuevos documentos de Visio mediante programación](../vsto/how-to-programmatically-create-new-visio-documents.md)|  
-|Abra un documento de Visio existente y especifique las opciones de lectura y escritura, de solo lectura y acoplado.|[Cómo: Abrir documentos de Visio mediante programación](../vsto/how-to-programmatically-open-visio-documents.md)|  
-|Cierre el documento de Visio activo.|[Cómo: Cerrar documentos de Visio mediante programación](../vsto/how-to-programmatically-close-visio-documents.md)|  
-|Guardar un documento con el mismo nombre o con un nombre nuevo.|[Cómo: Guardar documentos de Visio mediante programación](../vsto/how-to-programmatically-save-visio-documents.md)|  
-|Imprimir un documento completo o una página especificada.|[Cómo: Imprimir documentos de Visio mediante programación](../vsto/how-to-programmatically-print-visio-documents.md)|  
+|Crear un documento de Visio en blanco o un documento nuevo que se basa en una plantilla, Galería de símbolos o documento de Visio existente.|[Cómo: crear nuevos documentos de Visio mediante programación](../vsto/how-to-programmatically-create-new-visio-documents.md)|  
+|Abra un documento de Visio existente y especifique las opciones de lectura/escritura, de solo lectura y acoplado.|[Cómo: abrir documentos de Visio mediante programación](../vsto/how-to-programmatically-open-visio-documents.md)|  
+|Cierre el documento de Visio activo.|[Cómo: cerrar documentos de Visio mediante programación](../vsto/how-to-programmatically-close-visio-documents.md)|  
+|Guardar un documento con el mismo nombre o con un nombre nuevo.|[Cómo: guardar documentos de Visio mediante programación](../vsto/how-to-programmatically-save-visio-documents.md)|  
+|Imprimir un documento completo o una página especificada.|[Cómo: imprimir documentos de Visio mediante programación](../vsto/how-to-programmatically-print-visio-documents.md)|  
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones de Visio](../vsto/visio-solutions.md)   
- [Información general del modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
+ [Información general sobre el modelo de objetos de Visio](../vsto/visio-object-model-overview.md)   
  [Información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
   
   

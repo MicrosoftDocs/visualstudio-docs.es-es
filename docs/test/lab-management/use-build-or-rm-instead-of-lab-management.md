@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 607bc4646a6bacd0ae119d07e832ffca2f279152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845384"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Usar Build y Release Management en lugar de Lab Management para las pruebas automatizadas
 
@@ -58,7 +59,7 @@ En la tabla siguiente se resumen las actividades típicas que se realizan en el 
 
 | Pasos | Con el centro de laboratorio | Con Build o Release Management |
 |-------|----------------------|-----------------|
-| Administrar una biblioteca de plantillas de entorno. | Cree un entorno de laboratorio. Instale el software necesario en las máquinas virtuales. Prepare el sistema y almacene el entorno como una plantilla en la biblioteca. | Use la consola de administración de SCVMM directamente para crear y administrar cualquier plantilla de máquina virtual o plantillas de servicio. Si usa Azure, seleccione una de las [plantillas de inicio rápido de Azure](/resources/templates/). |
+| Administrar una biblioteca de plantillas de entorno. | Cree un entorno de laboratorio. Instale el software necesario en las máquinas virtuales. Prepare el sistema y almacene el entorno como una plantilla en la biblioteca. | Use la consola de administración de SCVMM directamente para crear y administrar cualquier plantilla de máquina virtual o plantillas de servicio. Si usa Azure, seleccione una de las [plantillas de inicio rápido de Azure](https://azure.microsoft.com/resources/templates/). |
 | Crear un entorno de laboratorio. | Seleccione una plantilla de entorno en la biblioteca e impleméntela. Proporcione los parámetros necesarios para personalizar las configuraciones de máquina virtual. | Use la consola de administración de SCVMM directamente para crear máquinas virtuales o instancias de servicio de las plantillas. Use Azure Portal directamente para crear recursos. O, cree una definición de versión con un entorno. Use las tareas de Azure o las tareas de la [extensión de integración de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) para crear máquinas virtuales. Crear una versión de esta definición es equivalente a crear un entorno en el centro de laboratorio. |
 | Conectarse a las máquinas. | Abra el entorno de laboratorio en el Visor de entorno. | Use la consola de administración de SCVMM directamente para conectarse a las máquinas virtuales. De manera alternativa, use la dirección IP o los nombres DNS de las máquinas virtuales para abrir las sesiones de escritorio remoto. |
 | Tomar un punto de control de un entorno o restaurar un entorno a un punto de control limpio. | Abra el entorno de laboratorio en el Visor de entorno. Seleccione la opción para tomar un punto de control o para restaurar a un punto de control anterior. | Use la consola de administración de SCVMM directamente para realizar estas operaciones en las máquinas virtuales. O, para realizar estos pasos como parte de una automatización mayor, incluya las tareas de punto de control desde la [extensión de integración de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) como parte del entorno en una definición de versión. |

@@ -1,5 +1,5 @@
 ---
-title: Combinar XML en paquetes y características manifiestos | Documentos de Microsoft
+title: Manifiestos de la combinación de XML en paquetes y características | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,27 +15,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ae4eef0cc0e596f6ecd0848363f51c55b606d4a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119795"
 ---
-# <a name="merging-xml-in-feature-and-package-manifests"></a>Combinar XML en manifiestos de la característica y el paquete
-  Paquetes y las características se definen mediante [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] los archivos de manifiesto. Estos manifiestos empaquetados son una combinación de datos generados a partir de los diseñadores y personaliza [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] especificados en la plantilla de manifiesto por los usuarios. Durante el empaquetado, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] combina personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrucciones con proporcionados por el diseñador [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar el empaquetado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] archivo de manifiesto. Elementos similares, con las excepciones que se mencionan más adelante en excepciones de combinación se combinan para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] errores de validación después de implementar los archivos en SharePoint y para realizar el manifiesto de archivos más pequeño y eficaz.  
+# <a name="merge-xml-in-feature-and-package-manifests"></a>Combinar XML en manifiestos de características y paquetes
+  Las características y los paquetes se definen mediante [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] los archivos de manifiesto. Estos manifiestos empaquetados son una combinación de datos generados a partir de los diseñadores y personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] especificados en la plantilla de manifiesto por los usuarios. Durante el empaquetado, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] combina personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instrucciones con proporcionados por el diseñador [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar el empaquetado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] archivo de manifiesto. Elementos similares, con las excepciones que se indica más adelante en excepciones de combinación se combinan para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] errores de validación después de implementar los archivos en SharePoint y para realizar el manifiesto de archivos más pequeño y eficaz.  
   
-## <a name="modifying-the-manifests"></a>Modificar los manifiestos  
- No se puede modificar directamente los archivos de manifiesto empaquetados hasta que se deshabiliten a los diseñadores de característica o paquete. Sin embargo, puede agregar manualmente personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos a la plantilla de manifiesto ya sea a través de los diseñadores de características y paquetes o [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Para obtener más información, consulte [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) y [Cómo: personalizar un paquete de solución de SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
+## <a name="modify-the-manifests"></a>Modificar los manifiestos
+ No se puede modificar directamente los archivos de manifiesto empaquetados hasta que deshabilite a los diseñadores de característica o paquete. Sin embargo, puede agregar manualmente personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos a la plantilla de manifiesto ya sea a través de los diseñadores de paquetes y características o [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Para obtener más información, consulte [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) y [Cómo: personalizar un paquete de solución SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).  
   
-## <a name="feature-and-package-manifest-merge-process"></a>Proceso de mezcla de manifiesto de características y paquetes  
+## <a name="feature-and-package-manifest-merge-process"></a>Proceso de mezcla de manifiesto de características y paquetes
  Al combinar los elementos personalizados junto con los elementos proporcionados por el diseñador, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utiliza el siguiente proceso. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] comprueba si cada elemento tiene un valor de clave única. Si un elemento no tiene ningún valor de clave única, se anexa al archivo de manifiesto empaquetado. De forma similar, no se pueden combinar los elementos que tienen varias claves. Por lo tanto, se anexan al archivo de manifiesto.  
   
- Si un elemento tiene una clave única, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compara los valores del diseñador y claves personalizadas. Si los valores coinciden, combinan en un solo valor. Si los valores son distintos, se descarta el valor de clave de diseñador y se utiliza el valor de clave personalizado. También se combinan las colecciones. Por ejemplo, si el generado por el diseñador [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] y personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] tanto contiene una colección de ensamblados, el manifiesto empaquetado contiene solo una colección de ensamblados.  
+ Si un elemento tiene una clave única, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] compara los valores del diseñador y de las claves personalizadas. Si los valores coinciden, se combinan en un solo valor. Si los valores difieren, se descarta el valor de clave de diseñador y se usa el valor de clave personalizado. También se combinan las colecciones. Por ejemplo, si el diseñador genera [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] y personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ambas contienen una colección de ensamblados, el manifiesto empaquetado contiene sólo una colección de ensamblados.  
   
-## <a name="merge-exceptions"></a>Mezcla de excepciones  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] combina la mayoría de diseñador [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos junto con personalizado similar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos siempre que tengan un atributo de identificación única. Sin embargo, algunos elementos no tienen el identificador único necesario para [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] combinar. Estos elementos se conocen como *mezcla excepciones*. En estos casos, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no combina personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos junto con los proporcionados por el diseñador [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos, pero en su lugar los anexa al archivo de manifiesto empaquetado.  
+## <a name="merge-exceptions"></a>Combinar excepciones
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] combina la mayoría de diseñador [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos junto con personalizado similar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos siempre y cuando tengan un atributo de identificación único. Sin embargo, algunos elementos no tienen el identificador único necesario para [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] combinación. Estos elementos se conocen como *mezcla excepciones*. En estos casos, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] no combina personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos junto con los proporcionados por el diseñador [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementos, pero en su lugar, se anexa al archivo de manifiesto empaquetado.  
   
- Aquí te mostramos una lista de excepciones de combinación de características y paquetes [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] los archivos de manifiesto.  
+ La siguiente es una lista de excepciones de la combinación de características y paquetes [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] los archivos de manifiesto.  
   
 |Diseñador|Elemento XML|  
 |--------------|-----------------|  
@@ -44,44 +45,43 @@ ms.lasthandoff: 04/16/2018
 |Diseñador de paquetes|SafeControl|  
 |Diseñador de paquetes|CodeAccessSecurity|  
   
-## <a name="feature-manifest-elements"></a>Elementos de manifiesto de características  
- En la tabla siguiente es una lista de todos los elementos de manifiesto de características que se pueden combinar y la clave única que se utiliza para la coincidencia.  
+## <a name="feature-manifest-elements"></a>Elementos del manifiesto de característica
+ En la tabla siguiente es una lista de todos los elementos de manifiesto de característica que se pueden combinar y la clave única que se usa para la coincidencia.  
   
 |Nombre del elemento|Clave única|  
 |------------------|----------------|  
-|Característica (todos los atributos)|*Nombre de atributo* (cada nombre de atributo del elemento de característica es una clave única).|  
+|Característica (todos los atributos)|*Nombre del atributo* (cada nombre de atributo del elemento de característica es una clave única).|  
 |ElementFile|Ubicación|  
 |ElementManifests/ElementManifest|Ubicación|  
-|Propiedad/propiedades|Key|  
+|Las propiedades o propiedad|Key|  
 |CustomUpgradeAction|nombre|  
 |CustomUpgradeActionParameter|nombre|  
   
 > [!NOTE]  
->  Dado que es la única manera de modificar el elemento CustomUpgradeAction personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor, el efecto de combinar no es bajo.  
+>  Dado que es la única manera de modificar el elemento CustomUpgradeAction en personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor, el efecto de combinar no es bajo.  
   
-## <a name="package-manifest-elements"></a>Elementos del manifiesto del paquete  
- En la tabla siguiente es una lista de todos los elementos de manifiesto de paquete que se pueden combinar y la clave única que se utiliza para la coincidencia.  
+## <a name="package-manifest-elements"></a>Elementos del manifiesto del paquete
+ En la tabla siguiente es una lista de todos los elementos de manifiesto de paquete que se pueden combinar y la clave única que se usa para la coincidencia.  
   
 |Nombre del elemento|Clave única|  
 |------------------|----------------|  
-|Solución (todos los atributos)|*Nombre de atributo* (cada nombre de atributo del elemento de solución es una clave única).|  
+|Solución (todos los atributos)|*Nombre del atributo* (cada nombre de atributo del elemento de solución es una clave única).|  
 |ApplicationResourceFiles/ApplicationResourceFile|Ubicación|  
 |Ensamblados y ensamblado|Ubicación|  
 |ClassResources/ClassResource|Ubicación|  
 |DwpFiles/DwpFile|Ubicación|  
 |FeatureManifests/FeatureManifest|Ubicación|  
-|Recurso|Ubicación|  
+|Los recursos o recurso|Ubicación|  
 |RootFiles/RootFile|Ubicación|  
 |SiteDefinitionManifests/SiteDefinitionManifest|Ubicación|  
 |WebTempFile|Ubicación|  
-|Plantillasarchivos/TemplateFile|Ubicación|  
+|TemplateFiles/TemplateFile|Ubicación|  
 |SolutionDependency|SolutionID|  
   
-## <a name="manually-add-deployed-files"></a>Agregar archivos implementados manualmente  
- Algunos elementos del manifiesto, como ApplicationResourceFile y DwpFiles, especifican una ubicación que incluye un nombre de archivo. Sin embargo, al agregar una entrada de nombre de archivo a la plantilla de manifiesto no agrega el archivo subyacente al paquete. Debe agregar el archivo al proyecto para incluir en el paquete y establezca su propiedad de tipo de implementación en consecuencia.  
+## <a name="manually-add-deployed-files"></a>Agregar manualmente los archivos implementados
+ Algunos elementos del manifiesto, como ApplicationResourceFile y DwpFiles, especifican una ubicación que incluye un nombre de archivo. Sin embargo, agregar una entrada de nombre de archivo a la plantilla de manifiesto no agrega el archivo subyacente al paquete. Debe agregar el archivo al proyecto para incluirlo en el paquete y establezca su propiedad de tipo de implementación en consecuencia.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  
   

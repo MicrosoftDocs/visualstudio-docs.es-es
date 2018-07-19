@@ -1,7 +1,7 @@
 ---
 title: Pruebas unitarias para Python
 description: Configuración de pruebas unitarias para código de Python en Visual Studio para aprovechar al máximo las características del Explorador de pruebas con el fin de detectar, ejecutar y depurar las pruebas.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e75a689f3c03d7ad358da6dc9413f70aaf2c4eab
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 37d545adf33a6350f3d2484e4f820ebca8f7353d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584167"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056428"
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Configuración de pruebas unitarias para código de Python
 

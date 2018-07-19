@@ -1,7 +1,7 @@
 ---
 title: Selección de un entorno y un intérprete de Python para un proyecto
 description: Cómo asignar el entorno de Python que se va a usar para un proyecto de Visual Studio, además de instrucciones sobre cómo crear entornos virtuales.
-ms.date: 03/21/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c38436c5cf3d89b4224fbdbe9bd072f2a6c10d0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976694"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117113"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Cómo asignar el entorno de Python que se usa en un proyecto
 
@@ -38,7 +38,7 @@ Para activar rápidamente un entorno distinto, haga clic con el botón derecho e
 
 El menú contextual del nodo **Entornos de Python** también proporciona comandos adicionales:
 
-| Comando | Description |
+| Comando | Descripción |
 | --- | --- |
 | Agregar entorno virtual... | Inicia el proceso de creación de un nuevo entorno virtual en el proyecto. Consulte [Creación de un entorno virtual](#create-a-virtual-environment). |
 | Agregar entorno virtual existente... | Le pide que seleccione una carpeta que contenga un entorno virtual y lo agrega a la lista bajo **Entornos de Python**, pero no lo activa. Consulte [Activación de un entorno virtual existente](#activate-an-existing-virtual-environment). |

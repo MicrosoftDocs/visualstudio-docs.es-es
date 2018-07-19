@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a46ab4db647c60f451ae2f9d5c9d68e654de7084
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747435"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757258"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Compilar aplicaciones con interfaz de usuario nativa mediante Xamarin en Visual Studio
 
@@ -50,7 +50,7 @@ Deberá llevar a cabo estas operaciones para compilarla:
 >  -   Aplicaciones de Xamarin con la interfaz de usuario nativa:
 >     -   [Hello, Android](/xamarin/android/get-started/hello-android/) (aplicación sencilla con una pantalla)
 >     -   [Hello, Android multiscreen](/xamarin/android/get-started/hello-android-multiscreen/) (aplicación con navegación entre pantallas)
->     -   [Android Fragments WalkThrough](/xamarin/android/platform/fragments/fragments/implementing-with-fragments/walkthrough/) (Tutorial de fragmentos de Android, que se usa para las pantallas maestra o de detalles, entre otras cosas)
+>     -   [Android Fragments WalkThrough](/xamarin/android/platform/fragments/implementing-with-fragments/) (Tutorial de fragmentos de Android, que se usa para las pantallas maestra o de detalles, entre otras cosas)
 >     -   [Hello, iOS](/xamarin/ios/get-started/hello-iOS/)
 >     -   [Hello, iOS Multiscreen](/xamarin/ios/get-started/hello-iOS-multiscreen/)
 
@@ -247,7 +247,7 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
 
 6.  En la ventana **Propiedades**, establezca estas propiedades. (Puede ser útil ordenar la lista alfabéticamente con el botón de ordenación de la barra de herramientas de la ventana Propiedades):
 
-    |Property|Valor|
+    |Propiedad.|Valor|
     |--------------|-----------|
     |**text**|**Buscar por código postal**|
     |**identificador**|`@+id/ZipCodeSearchLabel`|
@@ -302,7 +302,7 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
 
 9. Desde el **Cuadro de herramientas**, arrastre un control **Number** hasta **RelativeLayout** y colóquelo debajo de la etiqueta **Código postal**. Después, establezca las siguientes propiedades:
 
-    |Property|Valor|
+    |Propiedad.|Valor|
     |--------------|-----------|
     |**identificador**|`@+id/zipCodeEntry`|
     |**layout_marginStart**|`10dp`|
@@ -327,7 +327,7 @@ Visual Studio no tiene una plantilla de solución para crear aplicaciones de int
 
 10. Desde el **Cuadro de herramientas**, arrastre un **Botón** hasta el control **RelativeLayout** y colóquelo a la derecha del control zipCodeEntry. Después, establezca estas propiedades:
 
-    |Property|Valor|
+    |Propiedad.|Valor|
     |--------------|-----------|
     |**identificador**|`@+id/weatherBtn`|
     |**texto**|**Obtener el tiempo**|

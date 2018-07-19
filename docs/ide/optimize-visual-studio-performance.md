@@ -13,11 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4afd84dfaccc632143b380619a2324e607e833fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8d67ef259309750e115be0065a6eb2024e4cf1c8
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280356"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimización del rendimiento de Visual Studio
 
@@ -25,9 +26,9 @@ Este artículo proporciona algunas sugerencias que se pueden probar en el caso d
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Actualización a Visual Studio 2017, versión 15.6 o posterior
 
-Si actualmente usa Visual Studio 2015, descargue [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) de forma gratuita para comprobar su mejora del rendimiento. Las soluciones se cargan dos o tres veces más rápido en Visual Studio 2017, con mejoras de rendimiento también en otras áreas. Visual Studio 2017 es compatible en paralelo con Visual Studio 2015, por lo que no pierde nada por probarlo.
+Si actualmente usa Visual Studio 2015, descargue [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) de forma gratuita para comprobar su mejora del rendimiento. Las soluciones se cargan dos o tres veces más rápido en Visual Studio 2017, con mejoras de rendimiento también en otras áreas. Visual Studio 2017 es compatible en paralelo con Visual Studio 2015, por lo que no pierde nada por probarlo.
 
-Si ya usa Visual Studio 2017, asegúrese de que está ejecutando la versión 15.6 o una posterior. Los datos demuestran que las soluciones se cargan dos o tres veces más rápido en la versión 15.6. Descárguela [aquí](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
+Si ya usa Visual Studio 2017, asegúrese de que está ejecutando la versión 15.6 o una posterior. Los datos demuestran que las soluciones se cargan dos o tres veces más rápido en la versión 15.6. Descárguela [aquí](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
 
 ## <a name="extensions-and-tool-windows"></a>Extensiones y ventanas de herramientas
 

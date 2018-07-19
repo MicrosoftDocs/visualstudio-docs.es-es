@@ -1,5 +1,5 @@
 ---
-title: Administrar excepciones con el depurador de Visual Studio | Documentos de Microsoft
+title: Administración de excepciones con el depurador de Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 04/05/2017
 ms.technology: vs-ide-debug
@@ -34,16 +34,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed17cc303bfb7194c7f438e32afb1be7f484eb5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1437728a75e0c6e8babff690bb18c7bd30d3add4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478049"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057475"
 ---
-# <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administrar excepciones con el depurador de Visual Studio
+# <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administración de excepciones con el depurador de Visual Studio
 
-Una excepción es una indicación de estado de error que se produce mientras se ejecuta un programa. Puede indicar al depurador qué excepciones (o conjuntos de excepciones) que se interrumpa en y en qué punto desea que el depurador se interrumpa (cuando el depurador interrumpe, se muestra donde se produjo la excepción). También puede agregar o eliminar las excepciones. Con una solución abierta en Visual Studio, utilice **Depurar > Windows > configuración de excepciones** para abrir el **configuración de excepciones** ventana. 
+Una excepción es una indicación de estado de error que se produce mientras se ejecuta un programa. Puede indicar al depurador para interrumpir en qué excepciones (o conjuntos de excepciones) y el momento en que desea que el depurador se interrumpa (cuando el depurador se interrumpe, muestra donde se produjo la excepción). También puede agregar o eliminar las excepciones. Con una solución abierta en Visual Studio, utilice **Depurar > Windows > configuración de excepciones** para abrir el **configuración de excepciones** ventana. 
 
 Puede y debe proporcionar controladores que respondan a las excepciones más importantes, pero es importante saber cómo configurar el depurador para interrumpir siempre la ejecución de algunas excepciones.
   
@@ -51,17 +51,17 @@ Cuando se produce una excepción, el depurador escribe un mensaje en la ventana 
   
 -   Cuando se produce una excepción y no se controla.  
   
--   Cuando el depurador está configurado para interrumpir la ejecución antes de que se invoque un controlador.  
+-   Cuando el depurador está configurado para interrumpir la ejecución antes de que se invoque ningún controlador.  
   
--   Si ha configurado [solo mi código](../debugger/just-my-code.md), y el depurador está configurado para que se interrumpa en cualquier excepción que no se controla en código de usuario.  
+-   Si ha establecido [solo mi código](../debugger/just-my-code.md), y el depurador está configurado para que se interrumpa en cualquier excepción no controlada en código de usuario.  
   
 > [!NOTE]
 >  ASP.NET tiene un controlador de excepciones de nivel superior que muestra las páginas de error en un explorador. No interrumpe la ejecución a menos que **Solo mi código** esté activado. Para obtener un ejemplo, consulta [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) a continuación.  
   
 > [!NOTE]
->  En una aplicación de Visual Basic, el depurador administra todos los errores como excepciones, incluso si se usan en los controladores de errores de estilo de Error.    
+>  En una aplicación de Visual Basic, el depurador administra todos los errores como excepciones, incluso si usa en los controladores de errores de estilo de Error.    
   
-## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Indicar al depurador que interrumpa cuando se produce una excepción  
+## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Indicar al depurador para interrumpir cuando se produce una excepción  
 El depurador puede interrumpir la ejecución en el momento en que se produce una excepción, permitiendo así depurarla antes de que se invoque un controlador.  
   
 En el **configuración de excepciones** ventana (**Depurar > Windows > configuración de excepciones**), expanda el nodo de una categoría de excepciones (por ejemplo, **excepciones Common Language Runtime**, lo que significa que las excepciones. NET) y seleccione la casilla de verificación para una excepción concreta dentro de esa categoría (por ejemplo **System.AccessViolationException**). También puede seleccionar una categoría de excepciones completa.  
@@ -71,7 +71,7 @@ En el **configuración de excepciones** ventana (**Depurar > Windows > configura
 > [!TIP]
 > Si quiere buscar una determinada excepción, use la ventana **Buscar** de la barra de herramientas de **Configuración de excepciones** . También puede usar la búsqueda para filtrar espacios de nombres específicos (por ejemplo **System.IO**).
   
-Si selecciona una excepción en el **configuración de excepciones** ventana, la ejecución del depurador se interrumpirá siempre que se produzca la excepción, independientemente de si se está controlada o no. En este punto, la excepción se denomina primera excepción. A continuación se muestran un par de escenarios de ejemplo:  
+Si selecciona una excepción en el **configuración de excepciones** ventana, la ejecución del depurador se interrumpirá siempre que se produce la excepción, independientemente de si se está controlada o no. En este punto, la excepción se denomina primera excepción. A continuación se muestran un par de escenarios de ejemplo:  
   
 *  En la siguiente aplicación de consola de C#, el método Main produce una excepción **AccessViolationException** dentro de un bloque `try/catch` :  
   
@@ -93,7 +93,7 @@ Si selecciona una excepción en el **configuración de excepciones** ventana, la
   
      Si activó **AccessViolationException** en la **Configuración de excepciones**y ejecuta este código en el depurador, la ejecución se interrumpirá en la línea `throw` . A continuación puede continuar la ejecución. La consola debería mostrar ambas líneas:  
   
-    ```  
+    ```cmd
     caught exception  
     goodbye  
     ```  
@@ -139,9 +139,9 @@ Si selecciona una excepción en el **configuración de excepciones** ventana, la
   
  Si desea restaurar la configuración de excepciones a los valores predeterminados, haga clic en el botón **Restaurar** de la barra de herramientas:  
   
- ![Restaurar valores predeterminados de configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+ ![Restaurar valores predeterminados en la configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a> Indicar al depurador para continuar en excepciones no controladas por el usuario  
+##  <a name="BKMK_UserUnhandled"></a> Indicar al depurador para continuar en las excepciones no controladas de usuario  
  Si está depurando código .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), puede indicar al depurador que no interrumpa la ejecución en excepciones que no se controlan en el código de usuario, pero que sí se controlan en otro lugar.  
   
 1.  En la ventana **Configuración de excepciones** , abra el menú contextual de una ventana con el botón derecho y, a continuación, seleccione **Mostrar columnas**. (Si ha desactivado **Solo mi código**, no verá este comando).  
@@ -152,7 +152,7 @@ Si selecciona una excepción en el **configuración de excepciones** ventana, la
   
  Por ejemplo, para controlar las excepciones, las aplicaciones web ASP.NET las convierten en un código de estado HTTP 500 ([Exception Handling in ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)[Control de excepciones en la API de ASP.NET]), lo cual podría no ser una ayuda a la hora de determinar el origen de la excepción. En el ejemplo siguiente, el código del usuario realiza una llamada a `String.Format()` que produce una excepción <xref:System.FormatException>. La ejecución se interrumpe del modo siguiente:  
   
- ![se interrumpe en usuario&#45;excepción no controlada por](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![se interrumpe en usuario&#45;excepción unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Agregar y eliminar excepciones  
  Las excepciones se pueden agregar y eliminar. Puede eliminar cualquier tipo de excepción de cualquier categoría; para ello, seleccione la excepción y haga clic en el botón **Eliminar** (el signo menos) de la barra de herramientas de **Configuración de excepciones** , o haga clic con el botón derecho en la excepción y seleccione **Eliminar** en el menú contextual. Eliminar una excepción tiene el mismo efecto que no activar la excepción: el depurador no se interrumpirá cuando se produzca la excepción.  
@@ -164,7 +164,7 @@ Si selecciona una excepción en el **configuración de excepciones** ventana, la
 > [!TIP]
 >  No olvide revisar la ortografía. El **configuración de excepciones** ventana no comprueba la existencia de una excepción agregada. Por tanto, si escribe **Sytem.UriTemplateMatchException**, obtendrá una entrada para esa excepción (y no para **System.UriTemplateMatchException**).  
   
- Configuración de excepciones se conserva en el archivo .suo de la solución, por lo que se aplican a una solución concreta. No se puede reutilizar esta configuración de soluciones. Actualmente solo se conservan las excepciones agregadas, no las eliminadas. En otras palabras, puede agregar una excepción, cerrar la solución y volver a abrirla, y la excepción seguirá estando ahí. Pero si elimina una excepción y cierra y vuelve a abrir la solución, volverá a aparecer la excepción.  
+ Configuración de excepciones se conserva en el archivo .suo de la solución, para que se apliquen a una solución concreta. No se puede reutilizar esta configuración a través de soluciones. Actualmente solo se conservan las excepciones agregadas, no las eliminadas. En otras palabras, puede agregar una excepción, cerrar la solución y volver a abrirla, y la excepción seguirá estando ahí. Pero si elimina una excepción y cierra y vuelve a abrir la solución, volverá a aparecer la excepción.  
   
  La ventana **Configuración de excepciones** admite tipos genéricos de excepciones en C#, pero no en Visual Basic. Para interrumpir la ejecución en excepciones como `MyNamespace.GenericException<T>`, agregue la excepción como **MyNamespace.GenericException`1**. Es decir, si creó una excepción como esta:  
   
@@ -183,12 +183,12 @@ public class GenericException<T> : Exception
 
 ## <a name="add-conditions-to-an-exception"></a>Agregar condiciones a una excepción
 
-Puede establecer condiciones en las excepciones producidas en el **configuración de excepciones** cuadro de diálogo. Entre las condiciones actualmente compatibles se incluyen los nombres de módulo para incluir o excluir de la excepción. Al establecer los nombres de módulo como condiciones, puede hacer que interrumpa la excepción solo en los módulos de código determinado o puede evitar la interrupción en módulos concretos.
+Puede establecer condiciones en las excepciones en el **configuración de excepciones** cuadro de diálogo. Las condiciones admitidas actualmente incluyen los nombres de módulo para incluir o excluir de la excepción. Al establecer los nombres de módulo como condiciones, puede elegir interrumpir para la excepción sólo en los módulos de código determinado o puede evitar interrupciones en módulos concretos.
 
 > [!NOTE]
 > Agregar condiciones a una excepción es nueva en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-Para agregar excepciones condicionales, elija la **Editar condición** icono en el cuadro de diálogo de configuración de excepciones o haga clic en la excepción y elija **editar condiciones**.
+Para agregar excepciones condicionales, elija el **Editar condición** icono en el cuadro de diálogo Configuración de excepciones o haga clic en la excepción y elija **editar condiciones**.
 
 ![Las condiciones de una excepción](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
   

@@ -1,5 +1,5 @@
 ---
-title: Diagnosticar problemas después de la implementación | Documentos de Microsoft
+title: Diagnosticar problemas después de la implementación | Microsoft Docs
 ms.custom: ''
 ms.date: 04/10/2018
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a29e25c19d3dae18efd967a4fb26e1cd4f576a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479616"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058014"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnosis de problemas tras la implementación
 Para diagnosticar problemas en la aplicación web ASP.NET después de la implementación con IntelliTrace, incluya la información de compilación en su versión para que Visual Studio pueda encontrar automáticamente los archivos de código fuente y archivos de símbolos correctos que se necesitan para depurar el registro de IntelliTrace.  
@@ -26,7 +26,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
  **Necesitará:**  
   
--   Visual Studio 2017, Visual Studio 2015 o Team Foundation Server de 2017 2015, 2013, 2012 o 2010 para configurar la compilación  
+-   Visual Studio 2017, Visual Studio 2015 o Team Foundation Server 2017, 2015, 2013, 2012 o 2010 para configurar la compilación  
   
 -   Microsoft Monitoring Agent para supervisar la aplicación y registrar los datos de diagnóstico  
 
@@ -39,11 +39,11 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
  Haga lo siguiente si usa control de versiones de Team Foundation o Git.  
  
- ####  <a name="TFS2017"></a> Servidor de Team Foundation Server de 2017
+ ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
  Configure la definición de compilación para agregar las ubicaciones del código fuente, la compilación y los símbolos al manifiesto de compilación (archivo BuildInfo.config). Team Foundation Build crea automáticamente el archivo y lo copia en la carpeta de salida del proyecto.
   
-1.  Si ya tiene una definición de compilación mediante la plantilla de ASP.NET Core (.NET Framework), puede seleccionar [editar la definición de compilación o crear una nueva definición de compilación.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)
+1.  Si ya tiene una definición de compilación mediante la plantilla de ASP.NET Core (.NET Framework), puede [editar la definición de compilación o crear una nueva definición de compilación.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)
   
      ![Ver definición de compilación en TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
   
@@ -55,9 +55,9 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
      Si usa una plantilla personalizada, asegúrese de que la plantilla tiene una actividad para indizar el origen. Posteriormente, podrá agregar un argumento de MSBuild para especificar dónde quiere guardar los archivos de símbolos.
   
-     ![Establecer la ruta de acceso de símbolos en la definición de compilación de 2017 TFS](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![Configurar la ruta de acceso de símbolos en la definición de compilación TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     Para obtener más información sobre los símbolos, consulte [publicar datos de símbolos](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Para obtener más información sobre los símbolos, vea [publicar datos de símbolos](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
 4.  Agregue este argumento de MSBuild para incluir el TFS y las ubicaciones de símbolos al archivo de manifiesto de compilación:  
   
@@ -67,9 +67,9 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
 6.  Ejecute una nueva compilación.  
   
-    Vaya a [paso 2: lanzar la aplicación](#DeployRelease)  
+    Vaya a [paso 2: publicar la aplicación](#DeployRelease)  
 
-####  <a name="TFS2013"></a> Servidor de Team Foundation Server 2013  
+####  <a name="TFS2013"></a> Team Foundation Server 2013  
  Configure la definición de compilación para agregar las ubicaciones del código fuente, la compilación y los símbolos al manifiesto de compilación (archivo BuildInfo.config). Team Foundation Build crea automáticamente el archivo y lo copia en la carpeta de salida del proyecto.  
 
 1.  [Edite la definición de compilación o cree una nueva definición de compilación.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
@@ -84,9 +84,9 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
      Si usa una plantilla personalizada, asegúrese de que la plantilla tiene una actividad para indizar el origen. Posteriormente, podrá agregar un argumento de MSBuild para especificar dónde quiere guardar los archivos de símbolos.  
 
-     ![Establecer la ruta de acceso de símbolos en la definición de compilación de TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![Configurar la ruta de acceso de símbolos en la definición de compilación de TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
 
-     Para obtener más información sobre los símbolos, consulte [publicar datos de símbolos](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Para obtener más información sobre los símbolos, vea [publicar datos de símbolos](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
 
 4.  Agregue este argumento de MSBuild para incluir el TFS y las ubicaciones de símbolos al archivo de manifiesto de compilación:  
 
@@ -98,11 +98,11 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
   
      **/ p: buildsymbolstorepath =**\<*ruta a símbolos*>  
   
-     ![Incluir información de servidor de compilación en la compilación def TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
+     ![Incluir información del servidor de compilación en la definición de compilación TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
      Y agregue estas líneas al archivo de proyecto web (.csproj, .vbproj):  
   
-    ```  
+    ```xml
     <!-- Import the targets file. Change the folder location as necessary. -->  
        <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
   
@@ -112,7 +112,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
 6.  Ejecute una nueva compilación.  
 
-    Vaya a [paso 2: lanzar la aplicación](#DeployRelease)  
+    Vaya a [paso 2: publicar la aplicación](#DeployRelease)  
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 o 2010  
  Haga lo siguiente para crear automáticamente el manifiesto de compilación (archivo BuildInfo.config) para el proyecto y copiar el archivo en la carpeta de salida del proyecto. El archivo aparece como "*NombreDelProyecto*.BuildInfo.config" en la carpeta de salida, pero tendrá el nombre "BuildInfo.config" en la carpeta de implementación después de publicar la aplicación.  
@@ -137,7 +137,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
 4.  Ejecute una nueva compilación.  
 
-    Vaya a [paso 2: lanzar la aplicación](#DeployRelease)  
+    Vaya a [paso 2: publicar la aplicación](#DeployRelease)  
 
 ###  <a name="ManualBuild"></a> Crear el manifiesto de compilación para una compilación manual con Visual Studio  
  Haga lo siguiente para crear automáticamente el manifiesto de compilación (archivo BuildInfo.config) para el proyecto y copiar el archivo en la carpeta de salida del proyecto. El archivo aparece como "*NombreDelProyecto*.BuildInfo.config" en la carpeta de salida, pero tendrá el nombre "BuildInfo.config" en la carpeta de implementación después de publicar la aplicación.  
@@ -164,7 +164,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
 4.  Ejecute una nueva compilación.  
 
-    Vaya a [paso 2: lanzar la aplicación](#DeployRelease)  
+    Vaya a [paso 2: publicar la aplicación](#DeployRelease)  
 
 ###  <a name="MSBuild"></a> Crear el manifiesto de compilación para una compilación manual con MSBuild.exe  
  Agregue estos argumentos de compilación cuando ejecute una compilación:  
@@ -175,15 +175,15 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
  **/ p: buildsymbolstorepath =**\<*ruta a símbolos*>  
 
-##  <a name="DeployRelease"></a> Paso 2: Lanzar la aplicación  
+##  <a name="DeployRelease"></a> Paso 2: Publicar la aplicación  
  Si usa el [paquete Web.Deploy](http://msdn.microsoft.com/library/dd394698.aspx) creado por el proceso de compilación para implementar la aplicación, el nombre del manifiesto de compilación se cambiará automáticamente de “*NombreDelProyecto*.BuildInfo.config” a “BuildInfo.config” y se copiará en la misma carpeta que el archivo Web.config de la aplicación en el servidor web.  
 
  Si usa otros métodos para implementar la aplicación, asegúrese de cambiar el nombre del manifiesto de compilación de “*NombreDelProyecto*.BuildInfo.config” a “BuildInfo.config” y que se copie en la misma carpeta que el archivo Web.config de la aplicación en el servidor web.  
 
 ## <a name="step-3-monitor-your-app"></a>Paso 3: supervisar la aplicación  
- Establezca la supervisión de rendimiento de aplicaciones en el servidor web para identificar los posibles problemas de la aplicación, registrar eventos de diagnóstico y guardar estos eventos en un archivo de registro de IntelliTrace. Vea [supervisar la publicación para problemas de implementación de](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+ Establezca la supervisión de rendimiento de aplicaciones en el servidor web para identificar los posibles problemas de la aplicación, registrar eventos de diagnóstico y guardar estos eventos en un archivo de registro de IntelliTrace. Consulte [supervisa su versión para problemas de implementación](../debugger/using-the-intellitrace-stand-alone-collector.md).  
 
-##  <a name="InvestigateEvents"></a> Paso 4: Detectar el problema  
+##  <a name="InvestigateEvents"></a> Paso 4: Buscar el problema  
  Necesitará Visual Studio Enterprise en el equipo de desarrollo o en otro equipo para revisar los eventos registrados y depurar el código con IntelliTrace. También puede usar herramientas como CodeLens, mapas de depurador y mapas de código para diagnosticar el problema.  
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Abrir el registro de IntelliTrace y la solución correspondiente  
@@ -200,7 +200,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
      Si tiene un área de trabajo asignada a esta solución o proyecto, Visual Studio seleccionará dicha área de trabajo para colocar el código fuente encontrado.  
 
-     ![Abrir desde el control de código fuente al área de trabajo asignada](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
+     ![Abrir desde el control de código fuente para el área de trabajo asignada](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
 
      De lo contrario, elija otra área de trabajo o cree una nueva. Visual Studio asignará la bifurcación completa a esta área de trabajo.  
 
@@ -232,15 +232,15 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
      Si el método está en el código de aplicación, Visual Studio va a ese método.  
 
-     ![Vaya al código de la aplicación de eventos de rendimiento](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Vaya al código de aplicación de eventos de rendimiento](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
 
-     Ahora puede revisar otros valores registrados, la pila de llamadas, recorrer el código o utilizar la ventana **IntelliTrace** para [moverse hacia atrás o hacia delante “en el tiempo” por otros métodos](../debugger/intellitrace.md) a los que se llamó durante este evento de rendimiento. [¿Qué es todos los eventos e información en el registro de IntelliTrace? ](../debugger/using-saved-intellitrace-data.md) [¿Qué más puedo hacer desde aquí?](#WhatElse) ¿[Quiere obtener más información acerca de los eventos de rendimiento?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     Ahora puede revisar otros valores registrados, la pila de llamadas, recorrer el código o utilizar la ventana **IntelliTrace** para [moverse hacia atrás o hacia delante “en el tiempo” por otros métodos](../debugger/intellitrace.md) a los que se llamó durante este evento de rendimiento. [¿Qué es todos los eventos e información en el registro de IntelliTrace? ](../debugger/using-saved-intellitrace-data.md) [¿Qué más puedo hacer desde aquí?](#WhatElse) ¿[Desea obtener más información acerca de los eventos de rendimiento?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
 
 ### <a name="diagnose-an-exception"></a>Diagnosticar una excepción  
 
 1.  En **Datos de excepción**, revise los eventos de excepciones registrados, sus tipos, mensajes y cuándo se produjeron las excepciones. Para profundizar en el código, inicie la depuración desde el evento más reciente de un grupo de excepciones.  
 
-     ![Iniciar la depuración desde el evento de excepción](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![Iniciar la depuración desde eventos de excepción](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")  
 
      También puede hacer doble clic en el evento.  
 
@@ -252,22 +252,22 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
 ###  <a name="WhatElse"></a> ¿Qué más puedo hacer desde aquí?  
 
--   [Obtener más información acerca de este código](../ide/find-code-changes-and-other-history-with-codelens.md). Para buscar referencias a este código, su historial de cambios, errores relacionados, elementos de trabajo, revisiones de código o pruebas unitarias - todo ello sin salir del editor - use los indicadores de CodeLens en el editor.  
+-   [Obtener más información sobre este código](../ide/find-code-changes-and-other-history-with-codelens.md). Para buscar las referencias a este código, su historial de cambios, errores relacionados, elementos de trabajo, revisiones de código o las pruebas unitarias - todo sin salir del editor: use los indicadores de CodeLens en el editor.  
 
      ![CodeLens &#45; ver referencias a este código](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
 
-     ![CodeLens &#45; Ver historial de cambios de este código](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![CodeLens &#45; Ver historial para este código de cambios](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
 
--   [Asignar su lugar en el código durante la depuración.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Para realizar un seguimiento visual de los métodos llamados durante la sesión de depuración, asigne la pila de llamadas.  
+-   [Asignar su lugar en el código mientras depura.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Para realizar un seguimiento visual de los métodos llamados durante la sesión de depuración, asigne la pila de llamadas.  
 
      ![Asignar la pila de llamadas durante la depuración](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
 
 ###  <a name="FAQ"></a> Preguntas y respuestas  
 
-####  <a name="WhyInclude"></a> P: ¿por qué incluir información acerca de mi proyecto, control de código fuente, compilación y símbolos con mi versión?  
+####  <a name="WhyInclude"></a> P: ¿por qué incluir información sobre mi proyecto, control de código fuente, compilación y símbolos en mi versión?  
  Visual Studio usa esta información para buscar la solución y el código fuente que coincidan con la versión que intente depurar. Después de abrir el registro de IntelliTrace y seleccionar el evento para iniciar la depuración, Visual Studio usa símbolos para buscar y mostrar el código donde se produjo el evento. Después, podrá consultar los valores que se registraron y avanzar o retroceder en la ejecución del código.  
 
- Si usa TFS y esta información no se encuentra en el manifiesto de compilación (archivo BuildInfo.config), Visual Studio buscará el código fuente correspondiente y los símbolos en el TFS conectado actualmente. Si Visual Studio no puede encontrar el TFS correctos ni código fuente que coincida, se le pedirá que elija un TFS distinto.  
+ Si usa TFS y esta información no está en el manifiesto de compilación (archivo BuildInfo.config), Visual Studio buscará el código fuente correspondiente y los símbolos en el TFS conectado actualmente. Si Visual Studio no puede encontrar el TFS correctos ni código fuente que coincida, se le pedirá que elija un TFS distinto.  
 
 ####  <a name="InvalidConfigFile"></a> P: ¿el registro de IntelliTrace falta información sobre una aplicación implementada. ¿Por qué ocurre esto? ¿Qué hago?  
  Esto puede ocurrir si realiza la implementación desde un equipo de desarrollo o si no está conectado a TFS durante la implementación.  
@@ -282,11 +282,11 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
      El nombre del proyecto en Visual Studio. Por ejemplo:  
 
-    ```  
+    ```xml
     <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
     ```  
 
--   **Errónea**  
+-   **SourceControl**  
 
 -   Información sobre el sistema de control de código fuente y las siguientes propiedades obligatorias:  
 
@@ -300,7 +300,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
          Por ejemplo:  
 
-        ```  
+        ```xml
         <SourceControl type="TFS">  
            <TfsSourceControl>  
               <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
@@ -322,7 +322,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
          Por ejemplo:  
 
-        ```  
+        ```xml
         <SourceControl type="Git">   
            <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
               <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
@@ -336,7 +336,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
      Información sobre el sistema de compilación, ya sea `"TeamBuild"` o `"MSBuild"`, y las siguientes propiedades obligatorias:  
 
-    -   **BuildLabel** (para TeamBuild): nombre y número de la compilación. Esta etiqueta también se usa como nombre del evento de implementación. Para obtener más información acerca de los números de compilación, consulte [Use números de compilación para proporcionar nombres descriptivos a las compilaciones completadas](http://msdn.microsoft.com/Library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+    -   **BuildLabel** (para TeamBuild): nombre y número de la compilación. Esta etiqueta también se usa como nombre del evento de implementación. Para obtener más información acerca de los números de compilación, véase [Use números de compilación para dar nombres significativos a las compilaciones completadas](http://msdn.microsoft.com/Library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
 
     -   **SymbolPath** (recomendado): lista de URI de las ubicaciones de símbolos (archivo PDB) separadas por punto y coma. Estas URI pueden ser URL o UNC. Esto permite a Visual Studio buscar los símbolos que coinciden para ayudarle con la depuración.  
 
@@ -350,7 +350,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
     -   **TFS**  
 
-        ```  
+        ```xml
         <Build type="TeamBuild">  
            <MsBuild>  
               <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
@@ -364,7 +364,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
     -   **Git**  
 
-        ```  
+        ```xml
         <Build type="MSBuild">   
            <MSBuild>  
               <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
@@ -387,7 +387,7 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
 
 -   Visual Studio no encontró la solución o el proyecto en la colección de equipo actual.  
 
-     Cuando la compilación el archivo de manifiesto (\<*ProjectName*>. BuildInfo.config) no especifica dónde Visual Studio puede encontrar el código fuente correspondiente, Visual Studio usa el TFS conectado actualmente para encontrar la solución correspondiente o el proyecto. Si la colección de equipo actual no tiene el código fuente correspondiente, Visual Studio le pedirá que se conecte a otra colección de equipo.  
+     Cuando la compilación el archivo de manifiesto (\<*ProjectName*>. BuildInfo.config) no especifica dónde puede encontrar el código fuente correspondiente, Visual Studio Visual Studio usa el TFS conectado actualmente para buscar la coincidencia de solución o proyecto. Si la colección de equipo actual no tiene el código fuente correspondiente, Visual Studio le pedirá que se conecte a otra colección de equipo.  
 
 -   Visual Studio no encontró la solución o proyecto en la colección especificada por el archivo de manifiesto de compilación (\<*ProjectName*>. BuildInfo.config).  
 
@@ -396,9 +396,9 @@ Para diagnosticar problemas en la aplicación web ASP.NET después de la impleme
      ![Abrir desde el control de código fuente &#45; migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
 ####  <a name="WhatWorkspace"></a> P: ¿qué es un área de trabajo?  
- **R:** su [área de trabajo almacena una copia del origen de](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) para que pueda desarrollar y probarlo por separado antes de proteger su contribución. Si aún no tiene un área de trabajo asignada específicamente a la solución o proyecto encontrados, Visual Studio le pedirá que elija un área de trabajo disponible o que cree una nueva área de trabajo con el nombre del equipo como nombre predeterminado del área.  
+ **R:** su [área de trabajo almacena una copia del origen de](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) para que pueda desarrollar y probarlo por separado antes de proteger su trabajo. Si aún no tiene un área de trabajo asignada específicamente a la solución o proyecto encontrados, Visual Studio le pedirá que elija un área de trabajo disponible o que cree una nueva área de trabajo con el nombre del equipo como nombre predeterminado del área.  
 
-####  <a name="UntrustedSymbols"></a> P: ¿por qué aparece este mensaje sobre símbolos que no se confía?  
- ![¿Depurar con la ruta de acceso de símbolos que no se confía? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+####  <a name="UntrustedSymbols"></a> P: ¿por qué obtengo el mensaje sobre símbolos que no se confía?  
+ ![¿Depurar con la ruta de acceso de símbolos de confianza? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **R:** este mensaje aparece cuando la ruta de acceso de símbolos en el archivo de manifiesto de compilación (\<*ProjectName*>. BuildInfo.config) no se incluye en la lista de rutas de acceso de símbolos de confianza. Puede agregar la ruta de acceso a dicha lista en las opciones del depurador.

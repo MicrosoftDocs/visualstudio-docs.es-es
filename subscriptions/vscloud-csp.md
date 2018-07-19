@@ -9,21 +9,21 @@ description: Información para proveedores de soluciones en la nube sobre cómo 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199084"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283382"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Adquirir y administrar suscripciones de nube de Visual Studio para los clientes
 
-Los partners que participen en el programa [Proveedor de soluciones en la nube (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) pueden adquirir suscripciones de nube de Visual Studio Enterprise y de Professional de Visual Studio para sus clientes. 
+Los partners que participen en el programa [Proveedor de soluciones en la nube (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) pueden adquirir suscripciones de nube de Visual Studio Enterprise y de Professional de Visual Studio para sus clientes.
 
-[Comparación de las opciones de suscripción de nube](https://www.visualstudio.com/vs/pricing)
+[Comparación de las opciones de suscripción de nube](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Requisitos previos
-En primer lugar, hay que configurar el inquilino del cliente en el Centro de partners y crear una suscripción de Azure para dicho inquilino. 
+En primer lugar, hay que configurar el inquilino del cliente en el Centro de partners y crear una suscripción de Azure para dicho inquilino.
 [Más información](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>Cómo comprarlas
@@ -58,9 +58,10 @@ Tras confirmar la compra, puede elegir **Administrar** para asignar suscripcione
 
 Si tiene más de una suscripción de Azure con este cliente, use el menú desplegable para elegir aquella con la que haya realizado las compras.  En **Resumen de licencias** se muestra el número de suscripciones que hay asignadas y cuántas de ellas están disponibles para cada opción de suscripción de nube de Visual Studio.  A través de este resumen también se pueden adquirir más suscripciones o reducir el número de suscripciones.
 
-Seleccione **Agregar** para asignar una suscripción a un usuario nuevo.  El número en pantalla se actualiza y el usuario final recibe una notificación por correo electrónico. Tras esto, el usuario final puede iniciar sesión con la dirección de correo electrónico que proporcionó para activar la suscripción de Visual Studio en el [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+Seleccione **Agregar** para asignar una suscripción a un usuario nuevo.  El número en pantalla se actualiza y el usuario final recibe una notificación por correo electrónico.
+Tras esto, el usuario final puede iniciar sesión con la dirección de correo electrónico que proporcionó para activar la suscripción de Visual Studio en el [portal de suscriptores de Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 
-Para reasignar una suscripción de Visual Studio a otro usuario, puede eliminar el suscriptor actual y agregar uno nuevo. 
+Para reasignar una suscripción de Visual Studio a otro usuario, puede eliminar el suscriptor actual y agregar uno nuevo.
 
 Si un suscriptor no ha activado su suscripción de Visual Studio, puede deberse a que no haya recibido el correo electrónico de invitación.  Puede solicitar que se reenvíe la invitación de activación al usuario también desde el portal de administración de Visual Studio.
 
@@ -81,15 +82,17 @@ Ofrecemos un descuento del 5 % por la sexta unidad que se adquiera (para un mism
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **mensuales**?
-R: En la primera compra, facturaremos una cantidad prorrateada para cubrir los días restantes del mes actual. Por ejemplo, si se compran 10 suscripciones de nube mensuales de Visual Studio Professional el 15 de abril, cobraríamos solo cinco unidades (porque siguen quedando por delante 15 de los 30 días del mes en curso), o bien el 50 % y prorratearíamos las unidades facturadas al 50 %. A partir del 1 de mayo, y así cada mes en adelante hasta que se cancele, se facturarán las 10 unidades por completo.
+R: En la primera compra, facturaremos una cantidad prorrateada para cubrir los días restantes del mes actual. Por ejemplo, si se compran 10 suscripciones de nube mensuales de Visual Studio Professional el 15 de abril, cobraríamos solo cinco unidades (porque siguen quedando por delante 15 de los 30 días del mes en curso), o bien el 50 % y prorratearíamos las unidades facturadas al 50 %.
+A partir del 1 de mayo, y así cada mes en adelante hasta que se cancele, se facturarán las 10 unidades por completo.
 
-Si, más adelante, la cantidad de pago se incrementa, también prorratearemos la diferencia en las unidades para cubrir los días restantes del mes en curso. Así, si el 10 de mayo se adquiere una suscripción de nube de Visual Studio Professional mensual más, facturaríamos aproximadamente 0,677 unidades (21 días restantes del mes de mayo, que tiene 31 días). 
+Si, más adelante, la cantidad de pago se incrementa, también prorratearemos la diferencia en las unidades para cubrir los días restantes del mes en curso. Así, si el 10 de mayo se adquiere una suscripción de nube de Visual Studio Professional mensual más, facturaríamos aproximadamente 0,677 unidades (21 días restantes del mes de mayo, que tiene 31 días).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>P: ¿Cómo se procesan los cargos de las suscripciones de nube **anuales**?
 R: En cada compra, facturaremos inmediatamente la cantidad total adquirida. Los cargos no se distribuyen a lo largo del año y no hay ningún prorrateo. Si se adquieren suscripciones de nube anuales en distintos momentos del año, tendrá suscripciones que se renueven en distintos meses. En este sentido, no consideramos que todas las suscripciones de nube anuales de un cliente sean inseparables, como suele suceder con las adquisiciones de contratos de licencias por volumen de Microsoft.
 
 ### <a name="q-how-do-cancelations-work"></a>P: ¿Cómo funcionan las cancelaciones?
-R: Cuando una suscripción de nube de Visual Studio se cancela, se cancela la renovación automática. La suscripción prosigue hasta la fecha de renovación normal y, tras ello, sencillamente expira. Al expirar, el suscriptor de Visual Studio ya no puede usar Visual Studio ni disfrutar de ninguna otra ventaja de la suscripción.
+R: Cuando una suscripción de nube de Visual Studio se cancela, se cancela la renovación automática. La suscripción prosigue hasta la fecha de renovación normal y, tras ello, sencillamente expira.
+Al expirar, el suscriptor de Visual Studio ya no puede usar Visual Studio ni disfrutar de ninguna otra ventaja de la suscripción.
 
 En las suscripciones de nube mensuales, las cancelaciones surten efecto el primer día del siguiente mes. Si cancela solo algunas de las suscripciones de nube mensuales del cliente, asegúrese de quitar a los usuarios correspondientes al inicio del siguiente mes para, de este modo, procurar que las personas adecuadas sigan teniendo suscripciones activas asignadas.
 
@@ -108,7 +111,7 @@ Por ejemplo, si se adquieren seis suscripciones mensuales de Visual Studio Profe
 
 Además, el descuento solo es válido en los cargos de un determinado período de facturación mensual. Es decir, si se adquieren cinco suscripciones anuales de Visual Studio Professional en un mes y el siguiente mes se adquieren otras cinco más, pagará el precio normal de las 10 suscripciones.
 
-Estos descuentos aparecen reflejados en los datos de precios del [Centro de partners](https://partnercenter.microsoft.com). 
+Estos descuentos aparecen reflejados en los datos de precios del [Centro de partners](https://partnercenter.microsoft.com).
 
 ### <a name="q-are-there-renewal-discounts"></a>P: ¿Hay descuentos por renovación?
 

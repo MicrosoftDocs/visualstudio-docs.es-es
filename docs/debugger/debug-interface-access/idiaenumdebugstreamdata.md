@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData | Documentos de Microsoft
+title: IDiaEnumDebugStreamData | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5fe2d4a627b9d607607ba53c3962d244c5c369
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 67b71fb229172049d11a036d5a98275f93fe2cd3
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460630"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058287"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
-Proporciona acceso a los registros de un flujo de datos de depuración.  
+Proporciona acceso a los registros en un flujo de datos de depuración.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -35,9 +35,9 @@ IDiaEnumDebugStreamData : IUnknown
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) versión de este enumerador.|  
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Recupera el [interfaz IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versión de este enumerador.|  
 |[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Recupera el número de registros en el flujo de datos de depuración.|  
-|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Recupera el nombre de la secuencia de datos de depuración.|  
+|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|Recupera el nombre del flujo de datos de depuración.|  
 |[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|Recupera el registro especificado.|  
 |[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|Recupera el número especificado de registros de la secuencia enumerada.|  
 |[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|Omite un número especificado de registros en una secuencia enumerada.|  
@@ -45,13 +45,13 @@ IDiaEnumDebugStreamData : IUnknown
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Crea un enumerador que contiene la misma secuencia enumerada que el enumerador actual.|  
   
 ## <a name="remarks"></a>Comentarios  
- Esta interfaz representa una secuencia de registros en un flujo de datos de depuración. El tamaño y la interpretación de cada registro es dependiente de la secuencia de datos procede del registro. Esta interfaz proporciona eficazmente el acceso a los bytes de datos sin procesar en el archivo de símbolos.  
+ Esta interfaz representa una secuencia de registros en un flujo de datos de depuración. El tamaño y la interpretación de cada registro es dependiente de la secuencia de datos que procede el registro. Esta interfaz, efectivamente, brinda acceso a los bytes de datos sin procesar en el archivo de símbolos.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Llame a la [idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) o [idiaenumdebugstreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) métodos para obtener un `IDiaEnumDebugStreamData` objeto.  
+ Llame a la [Idiaenumdebugstreams](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md) o [Idiaenumdebugstreams](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md) métodos para obtener un `IDiaEnumDebugStreamData` objeto.  
   
 ## <a name="example"></a>Ejemplo  
- Este ejemplo muestra cómo obtener acceso a una única secuencia de datos y sus registros.  
+ En este ejemplo se muestra cómo obtener acceso a un único flujo de datos y sus registros.  
   
 ```C++  
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)  
@@ -109,9 +109,9 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
   
  Biblioteca: diaguids.lib  
   
- DLL: msdia80.dll  
+ Archivo DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
+ [Idiaenumdebugstreams](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)   
  [IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)

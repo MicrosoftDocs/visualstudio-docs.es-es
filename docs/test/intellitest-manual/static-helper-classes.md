@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815904"
 ---
 # <a name="static-helper-classes"></a>Clases auxiliares estáticas
 
@@ -41,7 +42,7 @@ Si la condición que se presupone no se mantiene en alguna entrada de prueba, se
 
 La siguiente prueba parametrizada no considerará **j=0**:
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 El código anterior es casi equivalente a:
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ Si la condición declarada no se mantiene en alguna entrada de prueba, se genera
 
 Lo que se muestra a continuación declara que el valor absoluto de un entero es positivo:
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ La clase **PexChoose** puede funcionar de dos modos:
 
 * Simplemente llame a **PexChoose.Value** para generar un valor nuevo:
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ Una clase estática para registrar los valores con nombre.
 
 Cuando IntelliTest explora el código, **PexObserve** se usa para registrar valores calculados con sus representaciones de cadena con formato. Los valores están asociados con nombres únicos.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **Ejemplo**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ Normalmente, IntelliTest intenta cubrir todas las rutas de ejecución del códig
 
 En este ejemplo se muestra la implementación del método **PexAssume.Arrays.ElementsAreNotNull**. En el método, ignora las restricciones sobre la longitud del valor de la matriz para evitar que IntelliTest intente generar tamaños diferentes de matriz. Las restricciones solo se ignoran aquí. Si el código probado se comporta de manera diferente para las distintas longitudes de la matriz, IntelliTest no puede generar diferentes tamaños de matriz desde las restricciones del código probado.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {

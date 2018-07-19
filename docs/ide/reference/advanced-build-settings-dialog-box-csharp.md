@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc9900927218e543b4e7ba962d7ea019d927c8a8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c39e68c05f438b787bb7a0930f2ad0ba6a324ee1
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948358"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057546"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Configuración de compilación avanzada (Cuadro de diálogo, C#)
 
@@ -54,7 +54,7 @@ Use el cuadro de diálogo **Configuración de compilación avanzada** del **Dise
 
  Las opciones siguientes le permiten especificar opciones de salida avanzadas.
 
- **Información de depuración** Especifica el tipo de información de depuración generada por el compilador. Para obtener información sobre cómo configurar el rendimiento de depuración de una aplicación, consulte [Facilitar la depuración de una imagen](http://msdn.microsoft.com/Library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3). Esta configuración tiene las siguientes opciones:
+ **Información de depuración** Especifica el tipo de información de depuración generada por el compilador. Para obtener información sobre cómo configurar el rendimiento de depuración de una aplicación, consulte [Facilitar la depuración de una imagen](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Esta configuración tiene las siguientes opciones:
 
 - **none**
 

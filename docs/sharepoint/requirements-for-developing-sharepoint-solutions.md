@@ -1,5 +1,5 @@
 ---
-title: Requisitos para desarrollar soluciones de SharePoint | Documentos de Microsoft
+title: Requisitos para desarrollar soluciones de SharePoint | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2cb92476d64abebb0dae24109e57940a19505cc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9c9d6a726b290bfed1c086f9fb03290a37c91490
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119402"
 ---
 # <a name="requirements-for-developing-sharepoint-solutions"></a>Requisitos para desarrollar soluciones de SharePoint
- 
 Debe instalar en el sistema los requisitos previos siguientes para poder utilizar las herramientas de desarrollo de las soluciones de SharePoint incluidas en Visual Studio:
 
 - Visual Studio con C# o Visual Basic o una edición de Visual Studio Application Lifecycle Management (ALM).
@@ -37,7 +37,7 @@ Debe instalar en el sistema los requisitos previos siguientes para poder utiliza
 - [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] instalado en 64 bits [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] o de 64 bits [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] R2.
 
 > [!NOTE]
-> Mientras que oficialmente solo los sistemas operativos de servidor son compatibles con SharePoint, también se permiten dos sistemas operativos cliente: [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] y [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] SP1. Para obtener más información, consulte [Guía de instalación de la estación de trabajo de desarrollador de SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkID=164557).
+> Mientras que oficialmente solo los sistemas operativos de servidor son compatibles con SharePoint, también se permiten dos sistemas operativos cliente: [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] y [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] SP1. Para obtener más información, consulte [Guía de instalación de estación de trabajo de SharePoint Server 2010 para desarrolladores](http://go.microsoft.com/fwlink/?LinkID=164557).
 
 Los tipos de proyecto Modelo de conectividad a datos profesionales (BDC) requieren que [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] se instale en el sistema.
 
@@ -49,15 +49,13 @@ Para desarrollar las soluciones de SharePoint en Visual Studio, debe instalar Sh
 Para obtener más información sobre cómo instalar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], consulte [instalar Visual Studio](../install/install-visual-studio.md).
 
 ## <a name="vista-and-windows-7-user-account-control-uac"></a>Control de cuentas de usuario (UAC) de Windows Vista y Windows 7
-
 [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] y [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporan una característica de seguridad que se conoce como Control de cuentas de usuario (UAC). Para poder desarrollar soluciones de SharePoint mediante [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en sistemas [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] y [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], UAC requiere que se ejecute [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] como administrador del sistema. En el escritorio, abra el menú contextual para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]y, a continuación, elija **ejecutar como administrador**.
 
-Para configurar el acceso directo del escritorio para siempre se ejecute como administrador, abra el menú contextual, elija **propiedades**, elija la **avanzadas** y, a continuación, seleccione la **ejecutar como administrador**  casilla de verificación.
+Para configurar el acceso directo del escritorio para que se ejecute siempre como administrador, abra el menú contextual, elija **propiedades**, elija el **avanzadas** y, a continuación, seleccione el **ejecutar como administrador**  casilla de verificación.
 
 Para obtener más información, consulte [descripción y configuración de Control de cuentas de usuario en Windows Vista](http://go.microsoft.com/fwlink/?LinkID=156476). y [Control de cuentas de usuario de Windows 7](http://go.microsoft.com/fwlink/?LinkId=177523).
 
 ## <a name="sharepoint-permissions-considerations"></a>Consideraciones sobre los permisos de SharePoint
-
 Para desarrollar las soluciones de SharePoint, debe tener los permisos necesarios para ejecutar y depurar soluciones de SharePoint. Antes de probar una solución de SharePoint, dé los pasos siguientes para asegurarse de que tiene los permisos necesarios:
 
 1. Agregue su cuenta de usuario como administrador del sistema.
@@ -66,10 +64,9 @@ Para desarrollar las soluciones de SharePoint, debe tener los permisos necesario
 
     1. En Administración Central de SharePoint, elija el **administrar el grupo de administradores de la granja de servidores** vínculo.
 
-    2. En el **administradores de la granja** página, elija la **New** botón.
+    2. En el **administradores de la granja** página, elija el **New** botón.
 
 3. Agregue su cuenta de usuario al grupo WSS_ADMIN_WPG.
 
 ## <a name="see-also"></a>Vea también
-
 [Introducción a &#40;desarrollo de SharePoint en Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)

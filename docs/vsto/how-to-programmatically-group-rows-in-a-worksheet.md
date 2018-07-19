@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: agrupar las filas en una hoja de cálculo mediante programación | Documentos de Microsoft'
+title: 'Cómo: agrupar filas en una hoja de cálculo mediante programación'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,23 +23,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 894e3971c257a6461aa975a9d6bb1cf933234440
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa9624f90a337fb85ba2868b3b5c4f3cb1553ffb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258741"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Cómo: Agrupar filas de una hoja de cálculo mediante programación
-  Puede agrupar uno o más filas enteras. Para crear un grupo en una hoja de cálculo, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto de rango de Excel nativo.  
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Cómo: agrupar filas en una hoja de cálculo mediante programación
+  Puede agrupar uno o más filas completas. Para crear un grupo en una hoja de cálculo, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>Uso de un Control NamedRange  
+## <a name="use-a-namedrange-control"></a>Usar un control NamedRange  
  Si agrega un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a un proyecto de nivel de documento en tiempo de diseño, puede utilizar el control para crear mediante programación un grupo. En el siguiente ejemplo se da por supuesto que hay tres <xref:Microsoft.Office.Tools.Excel.NamedRange> controles en la misma hoja de cálculo: `data2001`, `data2002`, y `dataAll`. Cada rango con nombre hace referencia a una fila completa en la hoja de cálculo.  
   
-#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Para crear un grupo de controles NamedRange en una hoja de cálculo  
+### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Para crear un grupo de controles NamedRange en una hoja de cálculo  
   
-1.  Grupo tres rangos con nombre mediante una llamada a la <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> método de cada rango. Este código se debe colocar en una clase Sheet, no en la clase `ThisWorkbook` .  
+1.  Tres rangos con nombre de grupo mediante una llamada a la <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> método de cada rango. Este código se debe colocar en una clase Sheet, no en la clase `ThisWorkbook` .  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
@@ -47,12 +48,12 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Para desagrupar filas, llame a la <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> método.  
   
-## <a name="using-native-excel-ranges"></a>Uso de rangos de Excel nativo  
+## <a name="use-native-excel-ranges"></a>Utilice los rangos de Excel nativos  
  El código supone que tiene tres rangos de Excel denominados `data2001`, `data2002`, y `dataAll` en una hoja de cálculo.  
   
-#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Para crear un grupo de rangos de Excel en una hoja de cálculo  
+### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Para crear un grupo de rangos de Excel en una hoja de cálculo  
   
-1.  Grupo tres rangos con nombre mediante una llamada a la <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> método de cada rango. En el siguiente ejemplo se da por supuesto que hay tres <xref:Microsoft.Office.Interop.Excel.Range> controles denominados `data2001`, `data2002`, y `dataAll` en la misma hoja de cálculo. Cada rango con nombre hace referencia a una fila completa en la hoja de cálculo.  
+1.  Tres rangos con nombre de grupo mediante una llamada a la <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> método de cada rango. En el siguiente ejemplo se da por supuesto que hay tres <xref:Microsoft.Office.Interop.Excel.Range> controles denominados `data2001`, `data2002`, y `dataAll` en la misma hoja de cálculo. Cada rango con nombre hace referencia a una fila completa en la hoja de cálculo.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
@@ -62,7 +63,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)   
- [NamedRange (Control)](../vsto/namedrange-control.md)   
+ [NamedRange (control)](../vsto/namedrange-control.md)   
  [Cómo: agregar controles NamedRange a hojas de cálculo](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Parámetros opcionales en las soluciones de Office](../vsto/optional-parameters-in-office-solutions.md)  
   

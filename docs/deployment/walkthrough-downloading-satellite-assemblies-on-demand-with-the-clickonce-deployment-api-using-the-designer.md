@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Descargar ensamblados satélite a petición con la implementación de ClickOnce mediante el Diseñador de API | Documentos de Microsoft'
+title: 'Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,17 +22,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a56cc87978ebc5b8c64c0a2a6774186048efa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6438bbb905244902a8f5407a2ad8dea74430c430
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31560900"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233469"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Tutorial: Descargar ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.  
   
- Como se describe en [localizar aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md), puede incluir varios ensamblados satélite para varias referencias culturales en la misma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. De forma predeterminada, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] descargará todos los ensamblados satélite en su implementación en el equipo cliente, aunque un cliente individual probablemente solo requiera un único ensamblado satélite.  
+ Como se describe en [localizar aplicaciones ClickOnce](../deployment/localizing-clickonce-applications.md), puede incluir varios ensamblados satélite para varias referencias culturales en el mismo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. De forma predeterminada, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] descargará todos los ensamblados satélite en su implementación en el equipo cliente, aunque un cliente individual probablemente solo requiera un único ensamblado satélite.  
   
  En este tutorial se demuestra cómo marcar los ensamblados satélite como opcionales y descargar únicamente el ensamblado que necesite un equipo cliente para la configuración de su referencia cultural actual.  
   
@@ -45,13 +45,13 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
   
 2.  Haga doble clic en el nombre del proyecto en el Explorador de soluciones y haga clic en **propiedades**.  
   
-3.  Haga clic en el **publicar** ficha y, a continuación, haga clic en **archivos de la aplicación**.  
+3.  Haga clic en el **publicar** pestaña y, a continuación, haga clic en **archivos de la aplicación**.  
   
 4.  Seleccione el **mostrar todos los archivos** casilla de verificación para mostrar los ensamblados satélite. De forma predeterminada, todos los ensamblados satélite se incluirán en la implementación y estarán visibles en este cuadro de diálogo.  
   
-     Un ensamblado satélite tiene un nombre en el formulario *isoCode*\ApplicationName.resources.dll, donde *isoCode* es un identificador de idioma en formato RFC 1766.  
+     Un ensamblado satélite tendrá un nombre en el formulario *isoCode*\ApplicationName.resources.dll, donde *isoCode* es un identificador de idioma en formato RFC 1766.  
   
-5.  Haga clic en **nuevo...**  en el **grupo de descarga** lista para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite japonés, especificaría el nombre del grupo de descarga `ja-JP`.  
+5.  Haga clic en **New** en el **grupo de descarga** lista para cada identificador de idioma. Cuando se le pida un nombre de grupo de descarga, escriba el identificador de idioma. Por ejemplo, para un ensamblado satélite japonés, especificaría el nombre del grupo de descarga `ja-JP`.  
   
 6.  Cerrar la **archivos de la aplicación** cuadro de diálogo.  
   
@@ -67,7 +67,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
   
 1.  En el **propiedades** ventana de la aplicación, haga clic en el **aplicación** ficha.  
   
-2.  En la parte inferior de la página de fichas, haga clic en **ver eventos de aplicaciones**.  
+2.  En la parte inferior de la página de ficha, haga clic en **ver eventos de aplicación**.  
   
 3.  Agregue las siguientes importaciones al principio del archivo ApplicationEvents.VB.  
   

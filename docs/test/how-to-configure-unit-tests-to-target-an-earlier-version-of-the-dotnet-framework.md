@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750745"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233495"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Cómo: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
 
@@ -32,7 +32,7 @@ Puede crear proyectos de prueba unitaria destinados a versiones específicas de 
 
 **Probar aplicaciones de SharePoint**
 
-Las funciones enumeradas anteriormente también permiten escribir pruebas unitarias y pruebas de integración de aplicaciones de SharePoint mediante Visual Studio. Para obtener más información sobre cómo desarrollar aplicaciones de SharePoint con Visual Studio, consulte [Crear soluciones de SharePoint](/office-dev/office-dev/create-sharepoint-solutions), [Compilar y depurar soluciones de SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) y [Comprobar y depurar código de SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).
+Las funciones enumeradas anteriormente también permiten escribir pruebas unitarias y pruebas de integración de aplicaciones de SharePoint mediante Visual Studio. Para obtener más información sobre cómo desarrollar aplicaciones de SharePoint con Visual Studio, consulte [Crear soluciones de SharePoint](../sharepoint/create-sharepoint-solutions.md), [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) y [Comprobar y depurar código de SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Limitaciones**
 
@@ -126,6 +126,6 @@ Se aplican las siguientes limitaciones cuando cambia el destino los proyectos de
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear soluciones de SharePoint](/office-dev/office-dev/create-sharepoint-solutions)
-- [Compilar y depurar soluciones de SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [Crear soluciones de SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Compilar y depurar soluciones de SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

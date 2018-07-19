@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eef4f8b66da517e471a25bb36e777f6cc343b0a3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a6d8741982efd5329e7c14f0a32fb66bbdd377f5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995785"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282065"
 ---
 # <a name="change-the-installation-locations-in-visual-studio-2017"></a>Cambio de las ubicaciones de instalación en Visual Studio 2017
 
@@ -54,7 +54,7 @@ Esta es la manera de hacerlo.
 
 ## <a name="get-support"></a>Obtener soporte técnico
 
-En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017) para obtener ayuda. También puede ponerse en contacto con nosotros para obtener ayuda sobre la instalación por [chat en directo](https://www.visualstudio.com/vs/support/#talktous) (solo en inglés); para obtener más información, consulte la [página "Póngase en contacto con nosotros" de Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+En ocasiones, algo no sale según lo previsto. Si se produce un error en la instalación de Visual Studio, consulte la página [Troubleshooting Visual Studio 2017 installation and upgrade issues](troubleshooting-installation-issues.md) (Solucionar problemas de errores de instalación y actualización de Visual Studio 2017) para obtener ayuda. También puede ponerse en contacto con nosotros para obtener ayuda sobre la instalación por [chat en directo](https://visualstudio.microsoft.com/vs/support/#talktous) (solo en inglés); para obtener más información, consulte la [página "Póngase en contacto con nosotros" de Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Aquí tiene algunas opciones de soporte técnico más:
 

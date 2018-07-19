@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d4254e8f45da6a476207740cfa28e1db2253e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0bef10ec68f5336e9bb80d008e18d6d972c756d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571560"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327094"
 ---
 # <a name="overriding-toolsversion-settings"></a>Invalidar el valor de la versión de herramientas
 Puede cambiar el conjunto de herramientas para los proyectos y soluciones de tres maneras:  
@@ -32,7 +32,7 @@ Puede cambiar el conjunto de herramientas para los proyectos y soluciones de tre
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Invalidar la configuración de ToolsVersion de proyectos y soluciones en compilaciones de la línea de comandos  
  Aunque normalmente los proyectos de Visual Studio creados con ToolsVersion se especifican en el archivo del proyecto, puede usar el modificador `/ToolsVersion` (o `/tv`) en la línea de comandos para invalidar ese valor y compilar todos los proyectos y sus dependencias proyecto a proyecto con un conjunto de herramientas diferente. Por ejemplo:  
   
-```  
+```cmd  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
@@ -77,7 +77,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 3.  En un símbolo del sistema, escriba el siguiente comando:  
   
-    ```  
+    ```cmd  
     msbuild projectA.proj /t:go /toolsversion:3.5  
     ```  
   

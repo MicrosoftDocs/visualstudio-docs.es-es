@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20c692e648e094d6d7c62cc5099b73ba2f27e3c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844308"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar un entorno de laboratorio para DevOps
 
@@ -29,14 +30,14 @@ Un entorno de laboratorio es una colección de máquinas virtuales y físicas qu
 
 Estos son algunos ejemplos de topologías comunes de entornos de laboratorio:
 
-| Topología | Description |
+| Topología | Descripción |
 |---|---|
 |![Topología de servidor único](../media/topology_backend.png)| Este entorno de laboratorio tiene una *topología de servidores*, que suele usarse para ejecutar pruebas manuales en aplicaciones de servidor y que permite a los evaluadores usar sus propios equipos cliente para comprobar errores en el entorno. En una topología de backend, el entorno de laboratorio solo contiene servidores. Al usar este tipo de topología, normalmente se conecta a los servidores del entorno de laboratorio mediante un equipo cliente que no forma parte del entorno.|
 |![Entorno de laboratorio en la nube](../media/topology_cloud.png)| Este entorno de laboratorio proporciona funciones y características similares como la _topología de servidores_, pero elimina la necesidad de que las máquinas virtuales o físicas se ejecuten en un entorno local; lo que puede reducir el tiempo de preparación, simplificar el mantenimiento y minimizar costos. Configurar varios sitios web y máquinas vituales, junto con redes personalizadas, es rápido y sencillo en un entorno de nube como Microsoft Azure.|
 |![Entorno de laboratorio cliente-servidor](../media/topology_clientserver.png)| Este entorno de laboratorio tiene una *topología de cliente/servidor*, que suele usarse para probar una aplicación que tiene componentes de servidor y de cliente. En una topología de cliente/servidor, todos los equipos cliente y los equipos servidor usados para probar la aplicación se encuentran en el entorno de laboratorio. Al usar esta topología, puede recopilar datos de prueba de todos los equipos que afecten a las pruebas.|
 
-|         |         |
-|---------|---------|
+|   |   |
+|---|---|
 |  ![icono de cámara de película para vídeo](../../install/media/video-icon.png)  |    [Vea un vídeo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sobre la administración de entornos de laboratorio para pruebas. |
 
 ## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Uso de la nube con Team Services o Team Foundation Server Build y Release
@@ -115,7 +116,7 @@ Los entornos estándar y los entornos de SCVMM admiten un gran número de caract
 
 Estos son algunos conceptos adicionales que es importante que conozca antes de continuar:
 
-|Término|Description|
+|Término|Descripción|
 |----------|-----------------|
 |Centro de laboratorio|El área de Microsoft Test Manager donde se crean y administran los entornos de laboratorio.|
 |Laboratorio de proyecto de equipo|La colección de entornos de laboratorio que se han configurado para que pueda conectarse a estos y ejecutar sus máquinas virtuales.|

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: abrir documentos existentes mediante programación | Documentos de Microsoft'
+title: 'Cómo: abrir documentos existentes mediante programación'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,35 +16,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c7542b2222839afc75b3b5b1b84fc5afe56f523
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd9e120283c392978a21fa9f796f9eed5e3dab31
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258728"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>Cómo: Abrir documentos existentes mediante programación
+# <a name="how-to-programmatically-open-existing-documents"></a>Cómo: abrir documentos existentes mediante programación
   El <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> método abre el documento de Microsoft Office Word existente especificado por un nombre de ruta de acceso y nombre completo. Este método devuelve un <xref:Microsoft.Office.Interop.Word.Document> que representa el documento abierto.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-open-a-document"></a>Para abrir un documento  
+## <a name="to-open-a-document"></a>Para abrir un documento  
   
 -   Llame a la <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> método de la <xref:Microsoft.Office.Interop.Word.Documents> colección y proporcionar una ruta de acceso al documento.  
   
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]  
   
-### <a name="to-open-a-document-as-read-only"></a>Para abrir un documento como de solo lectura  
+## <a name="to-open-a-document-as-read-only"></a>Para abrir un documento como de solo lectura  
   
--   Llame a la <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> método, proporcione una ruta de acceso al documento y establecer el *ReadOnly* argumento pasado a **True** en la llamada al método.  
+-   Llame a la <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> método, proporcione una ruta de acceso al documento y establecer el *ReadOnly* argumento **True** en la llamada al método.  
   
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]  
   
-## <a name="compiling-the-code"></a>Compilar el código  
+## <a name="compile-the-code"></a>Compile el código  
  Para este ejemplo de código se necesita lo siguiente:  
   
--   Debe existir un documento denominado NewDocument.doc en un directorio denominado Test en la unidad C.  
+-   Un documento denominado *NewDocument.doc* debe existir en un directorio denominado *prueba* en la unidad C.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: crear nuevos documentos mediante programación](../vsto/how-to-programmatically-create-new-documents.md)   

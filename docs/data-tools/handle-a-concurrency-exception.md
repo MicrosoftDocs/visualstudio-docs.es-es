@@ -20,15 +20,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c68a093effe39597fc2802bc54f471dbce8b1bf5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b7895a15dcc7536ee29317a2c02546bf125a6b4a
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752338"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117204"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
-Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se producen cuando dos usuarios intentan cambiar los mismos datos al mismo tiempo en una base de datos. En este tutorial, creará una aplicación de Windows que ilustra cómo detectar una <xref:System.Data.DBConcurrencyException>, busque la fila que produjo el error y obtenga información acerca de una estrategia para cómo controlarla.
+Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se producen cuando dos usuarios intentan cambiar los mismos datos al mismo tiempo en una base de datos. En este tutorial, creará una aplicación de Windows que ilustra cómo detectar una <xref:System.Data.DBConcurrencyException>, busque la fila que produjo el error y obtenga información sobre una estrategia para saber cómo controlarla.
 
  Este tutorial le guía a través del proceso siguiente:
 
@@ -40,46 +40,46 @@ Las excepciones de simultaneidad (<xref:System.Data.DBConcurrencyException>) se 
 
 4.  Llenar un conjunto de datos con datos de la tabla `Customers` de la base de datos Northwind.
 
-5.  Use la **mostrar datos de tabla** característica de **Explorador de servidores** para tener acceso a la `Customers` datos y el cambio de un registro de la tabla.
+5.  Use la **mostrar datos de tabla** de características en **Explorador de servidores** para tener acceso a la `Customers` datos y un registro de cambio de la tabla.
 
-6.  Cambiar el mismo registro a un valor diferente, actualizar el conjunto de datos e intentar escribir los cambios en la base de datos, lo que produce un error de simultaneidad.
+6.  Cambiar el mismo registro en un valor diferente, actualizar el conjunto de datos e intenta escribir los cambios en la base de datos, lo que resulta en que se produzca un error de simultaneidad.
 
-7.  Detectar el error y luego mostrar las diferentes versiones del registro, de modo que el usuario pueda determinar si continuar y actualizar la base de datos o cancelar la actualización.
+7.  Detectar el error, mostrar las diferentes versiones del registro, que permite al usuario determinar si debe continuar y actualizar la base de datos o cancelar la actualización.
 
 ## <a name="prerequisites"></a>Requisitos previos
-Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
+En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
 
-1.  Si no tiene SQL Server Express LocalDB, puede instalarlo desde el [página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o a través del **instalador de Visual Studio**. El instalador de Visual Studio, se puede instalar SQL Server Express LocalDB como parte de la **almacenamiento de datos y el procesamiento** carga de trabajo, o como un componente individual.
+1.  Si no tiene SQL Server Express LocalDB, instálelo de desde el [página de descarga de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), o a través del **instalador de Visual Studio**. En el **instalador de Visual Studio**, puede instalar SQL Server Express LocalDB como parte de la **procesamiento y almacenamiento de datos** carga de trabajo, o como un componente individual.
 
 2.  Instalar la base de datos de ejemplo Northwind, siga estos pasos:
 
-    1. En Visual Studio, abra el **Explorador de objetos de SQL Server** ventana. (Explorador de objetos de SQL Server se instala como parte de la **almacenamiento de datos y el procesamiento** carga de trabajo en el instalador de Visual Studio.) Expanda el **SQL Server** nodo. Haga doble clic en la instancia de LocalDB y seleccione **nueva consulta...** .
+    1. En Visual Studio, abra el **Explorador de objetos de SQL Server** ventana. (Explorador de objetos de SQL Server se instala como parte de la **procesamiento y almacenamiento de datos** carga de trabajo en el instalador de Visual Studio.) Expanda el **SQL Server** nodo. Haga doble clic en la instancia de LocalDB y seleccione **nueva consulta**.
 
        Se abre una ventana del editor de consultas.
 
-    2. Copia la [script Transact-SQL de Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) en el Portapapeles. Este script de T-SQL crea la base de datos Northwind desde el principio y lo rellena con datos.
+    2. Copia el [script Transact-SQL de Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) en el Portapapeles. Este script de Transact-SQL crea la base de datos Northwind desde el principio y lo rellena con datos.
 
-    3. Pegue el script de T-SQL en el editor de consultas y, a continuación, elija la **Execute** botón.
+    3. Pegue el script de Transact-SQL en el editor de consultas y, a continuación, elija el **Execute** botón.
 
-       Después de unos minutos, finaliza la ejecución de la consulta y se crea la base de datos Northwind.
+       Después de un breve tiempo, finalice la consulta y se crea la base de datos Northwind.
 
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de la configuración activa o la edición que esté usando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la ayuda según la configuración activa o la edición que esté usando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
- Iniciar el tutorial creando una nueva aplicación de Windows Forms.
+ Primer paso del tutorial creando una nueva aplicación de Windows Forms.
 
 #### <a name="to-create-a-new-windows-forms-application-project"></a>Para crear un nuevo proyecto de aplicación de Windows Forms
 
-1. En Visual Studio, en el **archivo** menú, seleccione **New**, **proyecto...** .
+1. En Visual Studio, en el **archivo** menú, seleccione **New** > **proyecto**.
 
-2. Expanda **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **Windows Desktop**.
+2. Expanda el **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **Windows Desktop**.
 
 3. En el panel central, seleccione la **aplicación de Windows Forms** tipo de proyecto.
 
 4. Denomine el proyecto **ConcurrencyWalkthrough**y, a continuación, elija **Aceptar**.
 
-     El **ConcurrencyWalkthrough** se crea y se agrega al proyecto **el Explorador de soluciones**, y abre un nuevo formulario en el diseñador.
+     El **ConcurrencyWalkthrough** se crea y se agrega al proyecto **el Explorador de soluciones**, y se abre un nuevo formulario en el diseñador.
 
 ## <a name="create-the-northwind-dataset"></a>Crear el conjunto de datos Northwind
  En esta sección, creará un conjunto de datos denominado `NorthwindDataSet`.
@@ -88,14 +88,14 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
 1.  En el **datos** menú, elija **Agregar nuevo origen de datos**.
 
-     El [Asistente para configuración de orígenes de datos](../data-tools/media/data-source-configuration-wizard.png) se abre.
+     El [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png) se abre.
 
 2.  En el **elegir un tipo de origen de datos** pantalla, seleccione **base de datos**.
 
-3.  Seleccione una conexión a la base de datos de ejemplo Northwind desde la lista de conexiones disponibles. Si la conexión no está disponible en la lista de conexiones, seleccione **nueva conexión**
+3.  Seleccione una conexión a la base de datos de ejemplo Northwind desde la lista de conexiones disponibles. Si la conexión no está disponible en la lista de conexiones, seleccione **nueva conexión**.
 
     > [!NOTE]
-    >  Si se conecta a un archivo de base de datos local, seleccione **n** cuando se le pregunte si prefiere que desea agregar el archivo al proyecto.
+    >  Si se conecta a un archivo de base de datos local, seleccione **No** cuando se le pregunte si prefiere que desea agregar el archivo al proyecto.
 
 4.  En el **Guardar cadena de conexión en el archivo de configuración de aplicación** pantalla, seleccione **siguiente**.
 
@@ -103,44 +103,44 @@ Este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo North
 
 6.  Seleccione **finalizar** para agregar el conjunto de datos al proyecto.
 
-## <a name="create-a-data-bound-datagridview-control"></a>Crear un control DataGridView enlazado a datos
- En esta sección, creará un <xref:System.Windows.Forms.DataGridView> arrastrando el **clientes** de elementos de la **orígenes de datos** ventana hasta los formularios Windows Forms.
+## <a name="create-a-data-bound-datagridview-control"></a>Crear un control de DataGridView enlazado a datos
+ En esta sección, creará un <xref:System.Windows.Forms.DataGridView> arrastrando el **clientes** de elemento de la **orígenes de datos** ventana hasta el formulario de Windows.
 
 #### <a name="to-create-a-datagridview-control-that-is-bound-to-the-customers-table"></a>Para crear un control DataGridView enlazado a la tabla Customers
 
 1.  En el **datos** menú, elija **Mostrar orígenes de datos** para abrir el **ventana Orígenes de datos**.
 
-2.  En el **orígenes de datos** ventana, expanda la **NorthwindDataSet** nodo y, a continuación, seleccione la **clientes** tabla.
+2.  En el **orígenes de datos** ventana, expanda el **NorthwindDataSet** nodo y, a continuación, seleccione el **clientes** tabla.
 
-3.  Seleccione la flecha hacia abajo en el nodo de tabla y, a continuación, seleccione **DataGridView** en la lista desplegable.
+3.  Seleccione la flecha abajo en el nodo de tabla y, a continuación, seleccione **DataGridView** en la lista desplegable.
 
 4.  Arrastre la tabla hasta un área vacía de su formulario.
 
-     A <xref:System.Windows.Forms.DataGridView> control denominado `CustomersDataGridView` y un <xref:System.Windows.Forms.BindingNavigator> denominado `CustomersBindingNavigator` se agregan al formulario que está enlazado a la <xref:System.Windows.Forms.BindingSource>. Esto es, a su vez depende de la `Customers` tabla el `NorthwindDataSet`.
+     Un <xref:System.Windows.Forms.DataGridView> control denominado `CustomersDataGridView` y un <xref:System.Windows.Forms.BindingNavigator> denominado `CustomersBindingNavigator` se agregan al formulario que está enlazado a la <xref:System.Windows.Forms.BindingSource>. Esto, a su vez, depende de la `Customers` de tabla en la `NorthwindDataSet`.
 
 ## <a name="test-the-form"></a>Comprobar el formulario
  Ahora es posible comprobar el formulario para asegurarse de que se comporta de la forma prevista.
 
 #### <a name="to-test-the-form"></a>Para comprobar el formulario
 
-1.  Seleccione **F5** para ejecutar la aplicación
+1.  Seleccione **F5** para ejecutar la aplicación.
 
-     El formulario aparece con un <xref:System.Windows.Forms.DataGridView> control en el mismo que se rellena con datos de la `Customers` tabla.
+     El formulario aparece con un <xref:System.Windows.Forms.DataGridView> control en él que se rellena con datos de la `Customers` tabla.
 
 2.  En el **depurar** menú, seleccione **Detener depuración**.
 
 ## <a name="handle-concurrency-errors"></a>Controlar los errores de simultaneidad
- Cómo controlar errores depende de las reglas de negocios específicas que rigen la aplicación. En este tutorial, usamos la estrategia siguiente como ejemplo de cómo controlar el error de simultaneidad.
+ Cómo controlar los errores depende de las reglas de negocios específicas que rigen la aplicación. En este tutorial, usamos la estrategia siguiente como ejemplo de cómo controlar el error de simultaneidad.
 
- La aplicación presenta al usuario tres versiones del registro:
+ La aplicación presentará al usuario tres versiones del registro:
 
 -   El registro actual en la base de datos
 
--   El registro original que se carga en el conjunto de datos
+-   El registro original cargado en el conjunto de datos
 
 -   Los cambios propuestos en el conjunto de datos
 
-El usuario es capaz de sobrescribir la base de datos con la versión propuesta o cancelar la actualización y actualizar el conjunto de datos con los nuevos valores de la base de datos.
+El usuario, a continuación, es capaz de sobrescribir la base de datos con la versión propuesta, o cancelar la actualización y actualizar el conjunto de datos con los nuevos valores de la base de datos.
 
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Para habilitar el control de errores de simultaneidad
 
@@ -153,12 +153,12 @@ El usuario es capaz de sobrescribir la base de datos con la versión propuesta o
 4.  Reenviar la actualización o reestablecer los datos en el conjunto de datos.
 
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Agregue código para controlar la excepción de simultaneidad
- Cuando se intenta realizar una actualización pero se produce una excepción, por lo general desea hacer algo con la información proporcionada por la excepción.
+ Cuando se intenta realizar una actualización y se produce una excepción, por lo general desea hacer algo con la información suministrada por la excepción producida.
 
- En esta sección, agregará código que intenta actualizar la base de datos. El usuario controle también cualquier <xref:System.Data.DBConcurrencyException> que se produzca, además de cualquier otra excepción.
+ En esta sección, agregue código que intenta actualizar la base de datos. El usuario controle también cualquier <xref:System.Data.DBConcurrencyException> que puedan generarse, así como cualquier otra excepción.
 
 > [!NOTE]
->  Los métodos `CreateMessage` y `ProcessDialogResults` se agregarán más adelante en este tutorial.
+>  El `CreateMessage` y `ProcessDialogResults` se agregan métodos más adelante en este tutorial.
 
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Para agregar control de errores para el error de simultaneidad
 
@@ -172,18 +172,18 @@ El usuario es capaz de sobrescribir la base de datos con la versión propuesta o
      [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
      [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
-### <a name="display-choices-to-the-user"></a>Opciones de presentación para el usuario
- El código que acaba de escribir llama al procedimiento `CreateMessage` para mostrar información de error al usuario. En este tutorial, usa un cuadro de mensaje para mostrar las distintas versiones del registro para el usuario. Esto permite al usuario elegir si desea sobrescribir el registro con los cambios o cancelar la edición. Cuando el usuario selecciona una opción (hace clic en un botón) en el cuadro de mensaje, la respuesta se pasa al método `ProcessDialogResult`.
+### <a name="display-choices-to-the-user"></a>Mostrar opciones al usuario
+ El código que acaba de escribir llama al procedimiento `CreateMessage` para mostrar información de error al usuario. En este tutorial, usará un cuadro de mensaje para mostrar las diferentes versiones del registro para el usuario. Esto permite al usuario elegir si desea sobrescribir el registro con los cambios o cancelar la edición. Cuando el usuario selecciona una opción (hace clic en un botón) en el cuadro de mensaje, la respuesta se pasa al método `ProcessDialogResult`.
 
 ##### <a name="to-create-the-message-to-display-to-the-user"></a>Para crear el mensaje que se mostrará al usuario
 
--   Cree el mensaje agregando el código siguiente a la **Editor de código**. Escriba este código debajo del método `UpdateDatabase`.
+-   Crear el mensaje agregando el código siguiente a la **Editor de código**. Escriba este código debajo del método `UpdateDatabase`.
 
      [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
      [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>Procesar la respuesta del usuario
- También se necesita código para procesar la respuesta del usuario en el cuadro de mensajes. Las opciones son sobrescribir el registro actual en la base de datos con el cambio propuesto o abandonar los cambios locales y actualizar la tabla de datos con el registro que está actualmente en la base de datos. Si el usuario elige Sí, el <xref:System.Data.DataTable.Merge%2A> método se llama con la *preserveChanges* establecido en `true`. Esto hace que el intento de actualización se realice correctamente, dado que la versión original del registro ahora coincide con el registro en la base de datos.
+ También necesita código para procesar la respuesta del usuario en el cuadro de mensaje. Las opciones son sobrescribir el registro actual en la base de datos con el cambio propuesto, o abandonar los cambios locales y actualizar la tabla de datos con el registro que está actualmente en la base de datos. Si el usuario elige **Sí**, <xref:System.Data.DataTable.Merge%2A> se llama al método con el *preserveChanges* establecido en `true`. Esto hace que el intento de actualización se realice correctamente, porque la versión original del registro ahora coincide con el registro en la base de datos.
 
 ##### <a name="to-process-the-user-input-from-the-message-box"></a>Para procesar la respuesta del usuario en el cuadro de mensaje
 
@@ -193,7 +193,7 @@ El usuario es capaz de sobrescribir la base de datos con la versión propuesta o
      [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>Comprobar el formulario
- Puede comprobar el formulario para asegurarse de que se comporta de la forma prevista. Para simular una infracción de la simultaneidad necesita cambiar los datos en la base de datos después de rellenar el NorthwindDataSet.
+ Puede comprobar el formulario para asegurarse de que se comporta de la forma prevista. Para simular una infracción de simultaneidad, cambia los datos en la base de datos después de rellenar el NorthwindDataSet.
 
 #### <a name="to-test-the-form"></a>Para comprobar el formulario
 
@@ -220,7 +220,7 @@ El usuario es capaz de sobrescribir la base de datos con la versión propuesta o
 
      Se produce el error de simultaneidad y aparece el cuadro de mensaje.
 
-10. Seleccionar **n** cancela la actualización y actualiza el conjunto de datos con los valores que se encuentran actualmente en la base de datos. Seleccionar **Sí** escribe el valor propuesto para la base de datos.
+10. Seleccionar **n** cancela la actualización y actualiza el conjunto de datos con los valores que están actualmente en la base de datos. Seleccionar **Sí** escribe el valor propuesto para la base de datos.
 
 ## <a name="see-also"></a>Vea también
 

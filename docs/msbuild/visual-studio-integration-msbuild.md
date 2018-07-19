@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e9cddadd65628e23ee6be366edbc72edb82498be
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575941"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327055"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.  
@@ -45,7 +45,7 @@ Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/include
 ## <a name="configurations-and-platforms"></a>Configuraciones y plataformas  
  Las configuraciones se representan en los proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mediante propiedades agrupadas en un elemento `PropertyGroup` que contiene un atributo `Condition` . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examina estas condiciones para crear una lista de las configuraciones y plataformas del proyecto que se van a mostrar. Para extraer correctamente esta lista, las condiciones deben tener un formato similar al siguiente:  
   
-```  
+```xml  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
 Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  

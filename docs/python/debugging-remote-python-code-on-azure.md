@@ -1,7 +1,7 @@
 ---
 title: Depuración remota de Azure con Python
 description: Describe cómo configurar una instancia de Azure App Service para usar Visual Studio para la depuración remota de una aplicación de Python.
-ms.date: 07/12/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11a624ec6582e5e07e51de6d4ab29b84dc53d4a1
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 92fd9cf7c81b0b383a185a76eaaf5a3bfc8b93a5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031896"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057985"
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Depuración remota de código de Python en Azure
 

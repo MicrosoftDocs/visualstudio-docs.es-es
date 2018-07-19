@@ -1,7 +1,7 @@
 ---
 title: Plantilla de proyecto de servicio de nube de Azure para Python
 description: Información general de la plantilla de Visual Studio para Azure Cloud Services escrita en Python, que incluye la implementación de roles, las dependencias y la solución de problemas.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2e1518b387f859e4be4427b05b2010167c7205c6
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031818"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058664"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Proyectos de servicio en la nube de Azure para Python
 
@@ -29,7 +29,7 @@ Este artículo contiene detalles sobre la plantilla de proyecto y otra compatibi
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
-1. Instale el [SDK de Azure .NET para Visual Studio](https://www.visualstudio.com/vs/azure-tools/), que se necesita para usar la plantilla de servicios en la nube.
+1. Instale el [SDK de Azure .NET para Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), que se necesita para usar la plantilla de servicios en la nube.
 1. En Visual Studio, seleccione **Archivo > Nuevo > Proyecto...** , busque "Azure Python" y seleccione **Servicio en la nube Azure** en la lista:
 
     ![Plantilla de proyectos en la nube de Azure para Python](media/template-azure-cloud-project.png)

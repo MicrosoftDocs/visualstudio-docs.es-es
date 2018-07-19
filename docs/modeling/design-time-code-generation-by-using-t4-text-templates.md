@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954097"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117698"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
-Las plantillas de texto T4 en tiempo de diseño permiten generar código de programa y otros archivos de su proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de su aplicación.
+Las plantillas de texto T4 en tiempo de diseño permiten generar código de programa y otros archivos de su proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de la aplicación.
 
- Por ejemplo, podría tener un modelo que define un flujo de trabajo, como una tabla o un diagrama. A partir del modelo, puede generar el software que ejecuta el flujo de trabajo. Cuando cambien los requisitos del usuario, es fácil debatir el nuevo flujo de trabajo con los usuarios. Regenerar el código del flujo de trabajo es más confiable que actualizar el código a mano.
+ Por ejemplo, podría tener un modelo que define un flujo de trabajo, como una tabla o un diagrama. A partir del modelo, puede generar el software que ejecuta el flujo de trabajo. Cuando cambian los requisitos del usuario, es fácil debatir el nuevo flujo de trabajo con los usuarios. Regenerar el código del flujo de trabajo es más confiable que actualizar el código a mano.
 
 > [!NOTE]
->  A *modelo* es un origen de datos que describe un aspecto determinado de una aplicación. Puede ser cualquier formulario, en cualquier tipo de archivo o base de datos. No tiene que estar en ningún formulario concreto, como un modelo UML o un modelo de lenguaje específico del dominio. Los modelos típicos están en el formulario de tablas o archivos XML.
+>  Un *modelo* es un origen de datos que describe un aspecto determinado de una aplicación. Puede ser cualquier formulario, en cualquier tipo de archivo o base de datos. No tiene que estar en ningún formulario concreto, como un modelo UML o un modelo de lenguaje específico del dominio. Los modelos típicos están en el formulario de tablas o archivos XML.
 
- Probablemente ya está familiarizado con la generación de código. Al definir los recursos en un **.resx** un archivo en su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se genera automáticamente a la solución, un conjunto de clases y métodos. El archivo de recursos hace que resulte más fácil y confiable editar los recursos que editar las clases y los métodos. Con las plantillas de texto, puede generar código de la misma manera a partir de un origen con un diseño propio.
+ Probablemente ya está familiarizado con la generación de código. Al definir los recursos en un **.resx** de archivos en su [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se genera automáticamente a la solución, un conjunto de clases y métodos. El archivo de recursos hace que resulte más fácil y confiable editar los recursos que editar las clases y los métodos. Con las plantillas de texto, puede generar código de la misma manera a partir de un origen con un diseño propio.
 
  Una plantilla de texto contiene una mezcla del texto que se desea generar y el código de programa que genera partes variables del texto. El código de programa y el texto permiten repetir u omitir condicionalmente partes del texto generado. El texto generado por sí mismo puede ser código de programa que formará parte de la aplicación.
 
@@ -42,13 +42,13 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
 
 1.  Crear un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de proyecto o abrir uno existente.
 
-     Por ejemplo, en la **archivo** menú, elija **New**, **proyecto**.
+     Por ejemplo, en el **archivo** menú, elija **New** > **proyecto**.
 
-2.  Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre con la extensión **.tt**.
+2.  Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre que tenga la extensión **.tt**.
 
-     Para ello, en **el Explorador de soluciones**, en el menú contextual del proyecto, elija **agregar**, **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **plantilla de texto** desde el panel central.
+     Para ello, en **el Explorador de soluciones**, en el menú contextual del proyecto, elija **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo seleccione **plantilla de texto** desde el panel central.
 
-     Tenga en cuenta que la **herramienta personalizada** es propiedad del archivo **TextTemplatingFileGenerator**.
+     Tenga en cuenta que el **Custom Tool** es propiedad del archivo **TextTemplatingFileGenerator**.
 
 3.  Abra el archivo. Ya contendrá las siguientes directivas:
 
@@ -67,12 +67,12 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
 
 5.  Guarde el archivo.
 
-     Es posible que vea una **advertencia de seguridad** cuadro de mensaje que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
+     Es posible que vea un **advertencia de seguridad** cuadro de mensaje que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.
 
-6.  En **el Explorador de soluciones**, expanda el nodo de archivo de plantilla y verá un archivo con la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.
+6.  En **el Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo que tiene la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.
 
     > [!NOTE]
-    >  Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** para ver el archivo de salida.
+    >  Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.
 
 ### <a name="regenerating-the-code"></a>Volver a generar el código
  Se ejecutará una plantilla, que generará el archivo subsidiario, en cualquiera de los siguientes casos:
@@ -81,11 +81,11 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
 
 -   Guarde la plantilla.
 
--   Haga clic en **Transformar todas las plantillas** en el **generar** menú. De este modo se transformarán todas las plantillas de la solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+-   Haga clic en **Transformar todas las plantillas** en el **compilar** menú. De este modo se transformarán todas las plantillas de la solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 -   En **el Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.
 
- También puede configurar un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para que las plantillas se ejecuten cuando hayan cambiado los archivos de datos que leen. Para obtener más información, consulte [volver a generar automáticamente el código](#Regenerating).
+ También puede configurar un proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para que las plantillas se ejecuten cuando hayan cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).
 
 ## <a name="generating-variable-text"></a>Generar texto variable
  Las plantillas de texto permiten utilizar código de programa para modificar el contenido del archivo generado.
@@ -296,12 +296,12 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ##  <a name="Regenerating"></a> Volver a generar el código automáticamente
  Normalmente, se generan varios archivos de una solución de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] con un único modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
- Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **generar** menú.
+ Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **compilar** menú.
 
  Si ha instalado el SDK de modelado de Visual Studio, puede tener todas las plantillas se transformen automáticamente cada vez que realice una compilación. Para ello, edite el archivo de proyecto (.csproj o .vbproj) en un editor de texto y agregue las siguientes líneas cerca del final del archivo, después de cualquier otra instrucción `<import>`:
 
 > [!NOTE]
-> En Visual Studio de 2017, el SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> En Visual Studio 2017, el SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ```
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -322,7 +322,7 @@ Warning("A warning message");
 ```
 
 ##  <a name="Converting"></a> Convertir un archivo existente en una plantilla
- Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. Primero cree un archivo normal como prototipo, como un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de archivos y, a continuación, agregue gradualmente código de generación que modifique el archivo resultante.
+ Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar cree un archivo normal como prototipo, como un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de archivo y, a continuación, agregue gradualmente código de generación que modifique el archivo resultante.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño
 
@@ -359,7 +359,7 @@ Warning("A warning message");
 7.  Identifique una parte del archivo que desea modificar. Por ejemplo, una parte que aparece solamente bajo ciertas condiciones o una parte que se repite o donde los valores concretos varían. Inserte el código de generación. Guarde el archivo y compruebe que el archivo subsidiario se genera correctamente. Repita este paso.
 
 ## <a name="guidelines-for-code-generation"></a>Directrices para la generación de código
- Vea [directrices para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md).
+ Consulte [directrices para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

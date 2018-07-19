@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751428"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845761"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -66,11 +66,11 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
 
 > [!NOTE]
-> Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para obtener más información, consulte [Usar diferentes marcos de prueba con el Explorador de pruebas](#frameworks).
+> Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
 
 
 ##  <a name="walkthrough"></a> Tutorial: utilizar pruebas unitarias para desarrollar un método
- En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para obtener más información, vea [Usar diferentes marcos de prueba](#frameworks).
+ En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
 
 #### <a name="creating-the-test-and-method"></a>Crear la prueba y el método
 
@@ -190,7 +190,7 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 
 3.  Inspeccione el método que se está probando para ver qué puede ser incorrecto. En la clase `MyMath.Rooter` , reescriba el código:
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;

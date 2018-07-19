@@ -1,7 +1,7 @@
 ---
 title: Opciones y configuración de Python
 description: Referencia de las distintas configuraciones de Visual Studio que se relacionan con proyectos y código de Python.
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 23f78c754a9dc0f72e896128d857b70a49e8b09a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 33c519d737f510e3c987d791e420f1bd6c2d39d2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032127"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117763"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opciones de Python en Visual Studio
 
@@ -41,7 +41,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas > Opciones > Python**).
 
-| Opción | Default | Description |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | Mostrar la Ventana de salida al crear entornos virtuales| Activado | Desactívela para evitar que aparezca la ventana de salida. |
 | Mostrar la Ventana de salida al instalar o desinstalar paquetes | Activado | Desactívela para evitar que aparezca la ventana de salida. |
@@ -60,7 +60,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas > Opciones > Python > Depuración**).
 
-| Opción | Default | Description |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | Preguntar antes de ejecutar si hay errores | Activado | Cuando se establece, le pide que confirme que quiere ejecutar código que contiene errores. Desactive esta opción para deshabilitar la advertencia. |
 | Esperar a la entrada cuando el proceso termine de forma anómala<br/><br/>Esperar a la entrada cuando el proceso termine de manera correcta | Activado (para ambos) | Un programa de Python iniciado desde Visual Studio se ejecuta en su propia ventana de consola. De manera predeterminada, la ventana espera a que presione una tecla antes de cerrarla independientemente de cómo finaliza el programa. Para quitar ese mensaje y cerrar la ventana automáticamente, desactive una o ambas opciones. |
@@ -74,7 +74,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas > Opciones > Python > Diagnóstico**).
 
-| Opción | Default | Description |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | Incluye registros de análisis | Activado | Incluye registros detallados relacionados con el análisis de los entornos de Python instalados al guardar el diagnóstico en un archivo o copiarlo en el Portapapeles mediante los botones. Esta opción puede aumentar significativamente el tamaño del archivo generado, pero a menudo es necesaria para diagnosticar problemas de IntelliSense. |
 | Guardar diagnóstico en archivo (botón) | N/D | Solicita un nombre de archivo y, a continuación, guarda el registro en un archivo de texto. |
@@ -86,7 +86,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 (Pestaña **Herramientas > Opciones > Python > Ventanas interactivas**).
 
-| Opción | Default | Description |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | Scripts | N/D | Especifica una carpeta general para los scripts de inicio que se van a aplicar a las ventanas interactivas en todos los entornos. Vea [Scripts de inicio](python-environments-window-tab-reference.md#startup-scripts). En cambio, tenga en cuenta que esta característica no funciona actualmente. |
 | Usar flechas arriba o abajo para navegar por el historial | Activado | Usa las teclas de flecha para navegar por el historial en la ventana interactiva. Desactive esta opción para usar las teclas de flecha para navegar dentro del resultado de la ventana interactiva en su lugar. |
@@ -101,7 +101,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 ### <a name="completion-results"></a>Resultados de finalización
 
-| Opción | Default | Description |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | Mostrar la intersección de los miembros tras su finalización | Desactivado | Cuando se establece, muestra solo finalizaciones admitidas por todos los tipos posibles. |
 | Filtrar la lista según una cadena de búsqueda | Activado | Aplica el filtrado de las sugerencias de finalización a medida que escribe (está activada de manera predeterminada). |
@@ -109,7 +109,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 ### <a name="selection-in-completion-list"></a>Selección en la lista de finalización
 
-| Opción | Default | Description |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | Confirmado escribiendo los siguientes caracteres | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Normalmente, estos caracteres siguen un identificador que puede seleccionarse de una lista de finalización, por lo que es conveniente confirmar la finalización simplemente escribiendo un carácter. Puede quitar o agregar caracteres específicos a la lista según se quiera.  |
 | Entrar confirma la finalización actual | Activado | Cuando se establece, la tecla Entrar selecciona y aplica la finalización seleccionada actualmente como sucede con los caracteres anteriores (pero, por supuesto, no existe un carácter para Entrar por lo que no puede estar en esa lista directamente). |
@@ -117,7 +117,7 @@ También hay opciones adicionales específicas de Python en la pestaña **Editor
 
 ### <a name="miscellaneous-options"></a>Otras opciones
 
-| Opción | Default | Description |
+| Opción | Default | Descripción |
 | --- | --- | --- |
 | Especificar el modo de esquematización al abrir los archivos | Activado | Activa automáticamente la característica de esquematización de Visual Studio en el editor al abrir un archivo de código de Python. |
 | Quitar mensajes de REPL al pegar | Activado | Quita >>> y ... del texto pegado, lo que permite una transferencia sencilla de código de la ventana interactiva al editor. Desactive esta opción si necesita conservar esos caracteres al pegar desde otros orígenes. |

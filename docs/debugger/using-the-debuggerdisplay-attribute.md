@@ -1,5 +1,5 @@
 ---
-title: Usar el atributo DebuggerDisplay | Documentos de Microsoft
+title: Usar el atributo DebuggerDisplay | Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2017
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573250"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057591"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usar el atributo DebuggerDisplay
-El [DebuggerDisplayAttribute (clase)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controla cómo se muestra un objeto, propiedad o campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
+El [DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controla cómo se muestra un objeto, propiedad o campo en las ventanas de variables del depurador. Este atributo se puede aplicar a tipos, delegados, propiedades, campos y ensamblados.  
   
  El atributo `DebuggerDisplay` tiene un argumento único, que es una cadena que se va a mostrar en la columna de valor de las instancias del tipo. Esta cadena puede contener llaves (`{` y `}`). El texto encerrado entre llaves se evalúa como un campo, una propiedad o un método.  
   
@@ -35,7 +35,7 @@ El [DebuggerDisplayAttribute (clase)](/dotnet/api/system.diagnostics.debuggerdis
   
  En la tabla siguiente se muestran algunos posibles usos del atributo `DebuggerDisplay` y resultados de ejemplo.  
   
-|Atributo|Resultado que aparece en la columna de valor|  
+|Atributo|Resultado que aparece en la columna valor|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Se utiliza en un tipo con campos `x` y `y`.|`x = 5 y = 18`|  
 |La sintaxis del parámetro`[DebuggerDisplay("String value is {getString()}")]`puede variar según el lenguaje. Por consiguiente, utilícela con cuidado.|`String value is [5, 6, 6]`|  
@@ -51,7 +51,7 @@ El [DebuggerDisplayAttribute (clase)](/dotnet/api/system.diagnostics.debuggerdis
   
  Para compilar autoexp.cs, abra un Símbolo del sistema para desarrolladores para VS2015 y ejecute los siguientes comandos.  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
@@ -177,7 +177,7 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Utilizar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
- [Crear vistas personalizadas de los objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md)   
+ [Usar el atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Crear vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [Especificadores de formato en C#](../debugger/format-specifiers-in-csharp.md)   
  [Mejorar la depuración con los atributos de visualización del depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

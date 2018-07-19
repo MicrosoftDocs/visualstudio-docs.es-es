@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454706"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281110"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalación del desarrollo móvil multiplataforma con C++
 
@@ -25,7 +25,7 @@ Puede usar C++ en Visual Studio para compilar aplicaciones de escritorio de Wind
 
 ## <a name="requirements"></a>Requisitos
 
-- Para obtener información sobre los requisitos de instalación, vea [Visual Studio Product Family System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs) (Requisitos del sistema de la familia de productos de Visual Studio).
+- Para obtener información sobre los requisitos de instalación, vea [Visual Studio Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-vs) (Requisitos del sistema de la familia de productos de Visual Studio).
 
    > [!IMPORTANT]
    > Si usa Windows 7 o Windows Server 2008 R2, puede desarrollar código para aplicaciones de escritorio de Windows, aplicaciones y bibliotecas de Android Native Activity, así como aplicaciones y bibliotecas de código para iOS, pero no aplicaciones de UWP ni de Windows Phone.

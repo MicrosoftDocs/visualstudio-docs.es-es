@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327396"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Uso del Portal de administradores de suscripciones de Visual Studio
 
@@ -50,7 +51,7 @@ Cuando la organización esté preparada para incorporarse al Portal de administr
 > [!NOTE]
 > Si los contactos principales o los encargados de los avisos reciben más de un correo electrónico, significa que tienen más de un PCN. Tendrán que completar el proceso mediante el vínculo único del PCN al que se haga referencia en cada correo electrónico.*
 
-Si necesita que le agreguen al nuevo Portal de administradores de suscripciones de Visual Studio y no sabe quién es su contacto principal o el encargado de los avisos, puede encontrar esta información después de iniciar sesión en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Eche un vistazo al tema [Encontrar al contacto principal](/find-primary-contact/) para conocer los pasos que se deben realizar para buscar el contacto principal o el encargado de los avisos en el VLSC.
+Si necesita que le agreguen al nuevo Portal de administradores de suscripciones de Visual Studio y no sabe quién es su contacto principal o el encargado de los avisos, puede encontrar esta información después de iniciar sesión en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Eche un vistazo al tema [Encontrar al contacto principal](find-primary-contact.md) para conocer los pasos que se deben realizar para buscar el contacto principal o el encargado de los avisos en el VLSC.
 Si ya le han hecho administrador, puede ir directamente al [Portal de administradores de suscripciones de Visual Studio](https://manage.visualstudio.com).
 
 ### <a name="understanding-the-subscribers-page"></a>Descripción de la página Suscriptores
@@ -67,11 +68,9 @@ Una vez que haya asignado las suscripciones, la pestaña Suscriptores ofrecerá 
 - Campo opcional para otra dirección de correo electrónico para las comunicaciones de inicio de sesión. 
 
 En el lado izquierdo de esta página puede ver información adicional sobre el número de licencias de suscripción adquiridas, asignadas y todavía disponibles en su organización para cada contrato.
-
-   ![Página Suscriptores del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/subscribers-page.png)
+    ![Página Suscriptores del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Descripción de la página Detalles
 Para obtener más información sobre el contrato que está consultando, seleccione la pestaña Detalles. Aquí se muestra el estado del contrato, la cuenta de compras, los detalles de la organización, los contactos principales (VLSC), los superadministradores (si están disponibles) y otra información pertinente.
-
-   ![Página Detalles del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/details-page.png)
+    ![Página Detalles del Portal de administradores de suscripciones de Visual Studio](_img/using-admin-portal/details-page.png)
 

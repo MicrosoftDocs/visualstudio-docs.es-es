@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449031"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058596"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 El visualizador de simultaneidad puede mostrar eventos EventSource como marcadores, y puede controlar cómo se muestran los marcadores. Para ver los marcadores de EventSource, registre el GUID del proveedor de ETW mediante el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). El visualizador de simultaneidad tiene convenciones predeterminadas para representar eventos de EventSource como [marcadores de marca](../profiling/flag-markers.md), [marcadores de intervalo](../profiling/span-markers.md) y [marcadores de mensaje](../profiling/message-markers.md). Puede personalizar cómo se muestran los eventos EventSource agregando campos personalizados a los eventos. Para obtener más información sobre los marcadores, consulte [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md). Para obtener más información sobre eventos EventSource, consulte <xref:System.Diagnostics.Tracing>.  
@@ -25,9 +25,9 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
   
 ### <a name="marker-type"></a>Tipo de marcador  
   
-1.  Los eventos que tienen un [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start orwin:Stop se tratan como el principio o el final de un intervalo, respectivamente.  Los intervalos anidados o superpuestos no se pueden mostrar. Los pares de eventos que comienzan en un subproceso y acaban en otro no se pueden mostrar.  
+1.  Los eventos que tienen un [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start orwin:Stop se tratan como el principio o el final de un intervalo, respectivamente.  Los intervalos anidados o superpuestos no se pueden mostrar. Los pares de eventos que comienzan en un subproceso y acaban en otro no se pueden mostrar.  
   
-2.  Un evento cuyo código de operación no es win:Start ni win:Stop se trata como una marca de marcador a menos que su [Level](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) sea win:Verbose o superior.  
+2.  Un evento cuyo código de operación no es win:Start ni win:Stop se trata como una marca de marcador a menos que su [Level](/windows/desktop/WES/defining-severity-levels) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) sea win:Verbose o superior.  
   
 3.  En los demás casos, el evento se trata como un mensaje.  
   

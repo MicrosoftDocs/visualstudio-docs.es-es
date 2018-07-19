@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: crear un paquete de solución de SharePoint con las tareas de MSBuild | Documentos de Microsoft'
+title: 'Cómo: crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 5a95eb80b860a1447fe6e958edb9c98b66805a90
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37119371"
 ---
-# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Cómo: Crear un paquete de solución de SharePoint con las tareas de MSBuild
-  Puede compilar, limpiar y validar un paquete de SharePoint (.wsp) mediante tareas de MSBuild de línea de comandos en un equipo de desarrollo. También puede usar estos comandos para automatizar el proceso de compilación mediante Team Foundation Server en un equipo de compilación.  
+# <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Cómo: crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild
+  Puede compilar, limpiar y validar un paquete de SharePoint (*.wsp*) con las tareas de MSBuild de línea de comandos en un equipo de desarrollo. También puede usar estos comandos para automatizar el proceso de compilación mediante Team Foundation Server en un equipo de compilación.  
   
-## <a name="building-a-sharepoint-package"></a>Compilar un paquete de SharePoint  
+## <a name="build-a-sharepoint-package"></a>Crear un paquete de SharePoint  
   
-#### <a name="to-build-a-sharepoint-package"></a>Para crear un paquete de SharePoint  
+#### <a name="to-build-a-sharepoint-package"></a>Para compilar un paquete de SharePoint  
   
-1.  En las ventanas **iniciar** menú, elija **todos los programas**, **Accesorios**, **símbolo**.  
+1.  En el Windows **iniciar** menú, elija **todos los programas** > **Accesorios** > **símbolo**.  
   
 2.  Cambie al directorio donde se encuentra el proyecto de SharePoint.  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:Package ListDefinition1.csproj  
     ```  
   
-## <a name="cleaning-a-sharepoint-package"></a>Limpiar un paquete de SharePoint  
+## <a name="clean-a-sharepoint-package"></a>Limpiar un paquete de SharePoint  
   
 #### <a name="to-clean-a-sharepoint-package"></a>Para limpiar un paquete de SharePoint  
   
@@ -68,7 +69,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
   
-## <a name="validating-a-sharepoint-package"></a>Validar un paquete de SharePoint  
+## <a name="validate-a-sharepoint-package"></a>Validar un paquete de SharePoint  
   
 #### <a name="to-validate-a-sharepoint-package"></a>Para validar un paquete de SharePoint  
   
@@ -89,7 +90,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
   
-## <a name="setting-properties-in-a-sharepoint-package"></a>Establecer las propiedades en un paquete de SharePoint  
+## <a name="set-properties-in-a-sharepoint-package"></a>Establecer propiedades en un paquete de SharePoint  
   
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Para establecer una propiedad en un paquete de SharePoint  
   
@@ -109,9 +110,7 @@ ms.lasthandoff: 05/22/2018
     msbuild /property:WarningLevel = 2  
     ```  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
  [Crear características de SharePoint](../sharepoint/creating-sharepoint-features.md)   
  [Cómo: personalizar una característica de SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [Cómo: Agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
-  
+ [Cómo: agregar y quitar elementos de las características de SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

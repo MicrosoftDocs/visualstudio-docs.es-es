@@ -9,21 +9,21 @@ description: Información detallada sobre qué suscripciones se ofrecen, las reg
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9593614b58f8f4c77ec24891cdb9ada33eac3e60
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863630"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281035"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
-Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada. 
+Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>Suscripciones para partners con una competencia de MPN
-Cuando un partner obtiene una competencia (ya sea Silver o Gold), adquiere un número básico de suscripciones de Visual Studio Enterprise. Las ventajas centrales varían si el partner obtiene al menos una competencia Gold. La suscripción de Visual Studio Enterprise es una oferta personalizada que equivale aproximadamente a la [suscripción de nube anual de Visual Studio Enterprise](https://www.visualstudio.com/vs/pricing/), si bien prescindiendo de ciertas ventajas (muchas de las cuales se ofrecen por separado a los partners como ventajas de MPN generales, más que como parte de las suscripciones de Visual Studio Enterprise ofrecidas a través de MPN). 
+Cuando un partner obtiene una competencia (ya sea Silver o Gold), adquiere un número básico de suscripciones de Visual Studio Enterprise. Las ventajas centrales varían si el partner obtiene al menos una competencia Gold. La suscripción de Visual Studio Enterprise es una oferta personalizada que equivale aproximadamente a la [suscripción de nube anual de Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), si bien prescindiendo de ciertas ventajas (muchas de las cuales se ofrecen por separado a los partners como ventajas de MPN generales, más que como parte de las suscripciones de Visual Studio Enterprise ofrecidas a través de MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Ventajas centrales de Visual Studio para obtener al menos una competencia de cualquier tipo
-| Competencias obtenidas solo en el nivel Silver               | Al menos una competencia obtenida en el nivel Gold   | 
+| Competencias obtenidas solo en el nivel Silver               | Al menos una competencia obtenida en el nivel Gold   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 suscripciones de Visual Studio Enterprise                   | 10 suscripciones de Visual Studio Enterprise          |
 
@@ -39,7 +39,7 @@ Cuando un partner obtiene una competencia (ya sea Silver o Gold), adquiere un n�
 Independientemente de cuántas competencias obtenga un partner, el número de suscripciones de Visual Studio está limitado a lo siguiente:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Límites de suscripciones de Visual Studio obtenidas a través de competencias
-| Ventaja máxima para partners con competencias solo Silver                   | Ventaja máxima para partners con al menos una competencia Gold               | 
+| Ventaja máxima para partners con competencias solo Silver                   | Ventaja máxima para partners con al menos una competencia Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 suscripciones de Visual Studio Enterprise por país; 75 en todo el mundo          | 50 suscripciones de Visual Studio Enterprise por país; 150 en todo el mundo         |
 
@@ -57,12 +57,13 @@ Los suscriptores de Visual Studio Professional (MPN) también pueden descargar y
 La suscripción de Visual Studio Professional (MPN) no incluye ventajas de VSTS, créditos mensuales de Azure, soporte técnico, cursos ni ninguna otra ventaja de suscriptor disponible con las suscripciones de Visual Studio que se encuentran en el mercado.
 
 ## <a name="internal-use-only-restriction"></a>Restricción de solo para uso interno
-Las reglas de MPN estipulan que todo el software que se ofrece como una ventaja del programa se puede usar única y exclusivamente de manera interna. Esto es válido para el software que se ofrece para uso de suscriptores individuales de Visual Studio y, asimismo, para las ventajas generales de licencia de software MPN. 
+Las reglas de MPN estipulan que todo el software que se ofrece como una ventaja del programa se puede usar única y exclusivamente de manera interna. Esto es válido para el software que se ofrece para uso de suscriptores individuales de Visual Studio y, asimismo, para las ventajas generales de licencia de software MPN.
 
 Esta restricción de solo para uso interno significa básicamente que los partners no pueden usar el software como parte del trabajo que realicen para alguien ajeno a su propia organización. Por tanto, compilar una aplicación que vayan a usar solo los empleados del partner es correcto, pero no compilar una aplicación que forme parte de un proyecto de cliente.
 
 ## <a name="sign-in-required-with-visual-studio"></a>Inicio de sesión obligatorio en Visual Studio
-En una suscripción de Visual Studio ofrecida a través de MPN, es preciso que el usuario con licencia inicie sesión en Visual Studio con la misma identidad/nombre de usuario que se usó para activar la suscripción de Visual Studio. Al no proporcionarse claves de producto para desbloquear el producto, el inicio de sesión es la única opción para ejecutar Visual Studio. El suscriptor de Visual Studio puede operar sin conexión durante 30 días, transcurridos los cuales Visual Studio dejará de funcionar. Mientras funciona en línea, Visual Studio actualiza regularmente el estado de licencia del usuario en modo silencioso para procurar que la suscripción siga siendo válida.
+En una suscripción de Visual Studio ofrecida a través de MPN, es preciso que el usuario con licencia inicie sesión en Visual Studio con la misma identidad/nombre de usuario que se usó para activar la suscripción de Visual Studio.
+Al no proporcionarse claves de producto para desbloquear el producto, el inicio de sesión es la única opción para ejecutar Visual Studio. El suscriptor de Visual Studio puede operar sin conexión durante 30 días, transcurridos los cuales Visual Studio dejará de funcionar. Mientras funciona en línea, Visual Studio actualiza regularmente el estado de licencia del usuario en modo silencioso para procurar que la suscripción siga siendo válida.
 
 ## <a name="resources"></a>Recursos
 

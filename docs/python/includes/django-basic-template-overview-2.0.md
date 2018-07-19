@@ -1,10 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: b629de8144e08c7c0019a0a116f84e5877c3a477
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 0ee0234e91cdf07c2b52c39d065d527a776dc4ce
+ms.sourcegitcommit: 64bf371ffe294e9b3cf769db03cf0f5c1a9b680c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/15/2018
+ms.locfileid: "35666982"
 ---
 ### <a name="create-a-project-using-django-20"></a>Creación de un proyecto con Django 2.0
 
@@ -16,7 +17,7 @@ En la actualidad, la plantilla Proyecto web de Django en blanco utiliza la versi
 
 1. Ejecute `pip install django` para instalar el paquete de Django más reciente en su entorno global de Python.
 
-1. Ejecute `django-admin startproject <project_name>` reemplazando `<project_name>` por el mismo nombre de proyecto que se utilizó en el paso 1, por ejemplo, "HelloDjango". El comando `startproject` crea un archivo `manage.py` junto con la correspondiente carpeta `<project_name>` que contiene los archivos `__init.py__`, `settings.py`, `urls.py` y `wsgi.py`.
+1. Ejecute `django-admin startproject <project_name>` reemplazando `<project_name>` por el mismo nombre de proyecto que se utilizó en el paso 1, por ejemplo, "HelloDjango". El comando `startproject` crea un archivo `manage.py` junto con la correspondiente carpeta `<project_name>` que contiene los archivos `__init__.py`, `settings.py`, `urls.py` y `wsgi.py`.
 
 1. En Visual Studio, reemplace los archivos de Django 1.x del proyecto por los archivos de Django 2.x del modo siguiente:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: depurar código optimizado | Documentos de Microsoft'
+title: 'Cómo: depurar código optimizado | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,21 +23,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9610f71a197c47521e2139d40aff1afde6a8a894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478085"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058515"
 ---
 # <a name="how-to-debug-optimized-code"></a>Cómo: Depurar código optimizado
 > [!NOTE]
 >  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 > [!NOTE]
->  El [/Zo (mejorar la depuración optimizada)](/cpp/build/reference/zo-enhance-optimized-debugging)opción del compilador (introducida en Visual Studio Update 3) genera información de depuración más enriquecida para código optimizado (proyectos que no se compilan con la **/Od** opción del compilador. Vea [opciones /O (optimizar código)](/cpp/build/reference/o-options-optimize-code)). Esto incluye compatibilidad mejorada para la depuración de las variables locales y las funciones insertadas.  
+>  El [/Zo (mejorar la depuración optimizada)](/cpp/build/reference/zo-enhance-optimized-debugging)opción del compilador (introducida en Visual Studio Update 3) genera información de depuración más enriquecida para código optimizado (proyectos que no se compilan con la **/Od** opción del compilador. Consulte [opciones /O (optimizar código)](/cpp/build/reference/o-options-optimize-code)). Esto incluye compatibilidad mejorada para la depuración de las variables locales y las funciones insertadas.  
 >   
->  [Editar y continuar](../debugger/edit-and-continue-visual-csharp.md) está deshabilitada cuando el **/zo** se utiliza la opción de compilador.  
+>  [Editar y continuar](../debugger/edit-and-continue-visual-csharp.md) está deshabilitada cuando el **/Zo** se usa la opción de compilador.  
   
  Cuando el compilador optimiza el código, cambia de posición y reorganiza las instrucciones. Esto produce el código compilado más eficaz. Debido a esta reorganización, el depurador no siempre puede identificar el código fuente que corresponde a un conjunto de instrucciones.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "31478085"
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Para activar la optimización en una configuración de compilación Debug  
   
-1.  Cuando vaya a crear un proyecto nuevo, seleccione el destino `Win32 Debug`. Use la `Win32``Debug` hasta que el programa esté depurado por completo y esté listo para crear un `Win32 Release` destino. El compilador no optimiza el destino `Win32 Debug`.  
+1.  Cuando vaya a crear un proyecto nuevo, seleccione el destino `Win32 Debug`. Use la `Win32``Debug` de destino hasta que el programa esté depurado por completo y listo para compilar un `Win32 Release` destino. El compilador no optimiza el destino `Win32 Debug`.  
   
 2.  Seleccione el proyecto en el Explorador de soluciones.  
   
@@ -67,7 +67,7 @@ ms.locfileid: "31478085"
   
 4.  En el **páginas de propiedades** diálogo cuadro, asegúrese de que `Debug` está seleccionado en el **configuración** lista desplegable.  
   
-5.  En la vista de carpetas de la izquierda, seleccione el **C/C++** carpeta.  
+5.  En la vista de carpetas de la izquierda, seleccione el **C o C++** carpeta.  
   
 6.  En el **C++** carpeta, seleccione `Optimization`.  
   
@@ -75,20 +75,20 @@ ms.locfileid: "31478085"
   
 8.  Si elige la opción `Custom` para `Optimization`, puede definir opciones para cualquiera de las demás propiedades que se muestran en la lista de propiedades.  
   
-9. Seleccione Propiedades de configuración, C/C ++, nodo de línea de comandos de la página de propiedades del proyecto y agregue `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` a la **opciones adicionales** cuadro de texto.  
+9. Seleccione las propiedades de configuración, C/C ++, nodo de línea de comandos de la página de propiedades del proyecto y agregue `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` a la **opciones adicionales** cuadro de texto.  
   
     > [!WARNING]
     >  `/Zo` requiere Visual Studio 2013 Update 3 o una versión posterior.  
     >   
     >  Agregar `/Zo` deshabilitará [editar y continuar](../debugger/edit-and-continue-visual-csharp.md).  
   
- Cuando depure el código optimizado, use la **desensamblado** ventana para ver qué instrucciones se crean y se ejecutan realmente. Al establecer los puntos de interrupción, debe saber que un punto de interrupción se puede desplazar junto con una instrucción. Por ejemplo, considere el siguiente código:  
+ Cuando se depura código optimizado, use la **desensamblado** ventana para ver qué instrucciones se crean y se ejecuta realmente. Al establecer los puntos de interrupción, debe saber que un punto de interrupción se puede desplazar junto con una instrucción. Por ejemplo, considere el siguiente código:  
   
-```  
+```cpp
 for (x=0; x<10; x++)  
 ```  
   
- Suponga que se establece un punto de interrupción en esta línea. Podría pensarse que el punto de interrupción se va a alcanzar 10 veces, pero, si el código está optimizado, el punto de interrupción sólo se ejecutará una vez. Esto se debe a que la primera instrucción establece el valor de `x` en 0. El compilador reconoce que esto sólo se tiene que hacer una vez y lo saca del bucle. El punto de interrupción se traslada con ella. Las instrucciones que comparan e incrementan `x` permanecen dentro del bucle. Al ver el **desensamblado** ventana, el [unidad de paso](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) se establece automáticamente como instrucción para obtener un mayor control, lo que resulta útil cuando se recorra el código optimizado.  
+ Suponga que se establece un punto de interrupción en esta línea. Podría pensarse que el punto de interrupción se va a alcanzar 10 veces, pero, si el código está optimizado, el punto de interrupción sólo se ejecutará una vez. Esto se debe a que la primera instrucción establece el valor de `x` en 0. El compilador reconoce que esto sólo se tiene que hacer una vez y lo saca del bucle. El punto de interrupción se traslada con ella. Las instrucciones que comparan e incrementan `x` permanecen dentro del bucle. Cuando ve el **desensamblado** ventana, el [unidad paso](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) se establece automáticamente en la instrucción para un mayor control, lo que resulta útil cuando se recorra el código optimizado.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
