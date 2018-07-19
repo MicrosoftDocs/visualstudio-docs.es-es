@@ -10,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972368"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755514"
 ---
 # <a name="state-machine-activity-designers"></a>Diseñadores de actividad de equipo de estado
 
-Diseñador de flujo de trabajo de Windows incluye un número de diseñadores de actividad que se pueden utilizar cuando cree flujos de trabajo. Esta sección contiene los diseñadores de actividad proporcionados por el sistema que se usan para crear y administrar flujos de trabajo de máquina de estados. Los siguientes temas describen estos diseñadores y ofrecen orientación sobre cómo usarlas.
+Diseñador de flujo de trabajo incluye un número de diseñadores de actividad que puede utilizar cuando cree flujos de trabajo. Esta sección contiene los diseñadores de actividad proporcionados por el sistema que se usan para crear y administrar flujos de trabajo de máquina de estados. Los siguientes temas describen estos diseñadores y ofrecen orientación sobre cómo usarlas.
 
 ## <a name="reference"></a>Referencia
  <xref:System.Activities.Statements.StateMachine>

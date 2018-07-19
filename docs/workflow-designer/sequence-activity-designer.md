@@ -12,22 +12,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e72c5b5e43ca037a6d65e3e4980fdb0f89f000f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58aea13f99f225c01806186903b62a58362715b3
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972047"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755712"
 ---
 # <a name="sequence-activity-designer"></a>Diseñador actividades Sequence
 
 La actividad <xref:System.Activities.Statements.Sequence> contiene una colección ordenada de actividades secundarias que ejecuta por orden.
 
-Otra manera de ejecutar un conjunto de actividades por orden es utilizar una actividad <xref:System.Activities.Statements.Flowchart>. Considere el uso de la [Flowchart](../workflow-designer/flowchart-activity-designer.md) cuando haya una bifurcación simple o un bucle flujo del programa que desee en el diagrama del modelo.
+Otra manera de ejecutar un conjunto de actividades por orden es utilizar una actividad <xref:System.Activities.Statements.Flowchart>. Considere el uso de la [Flowchart](../workflow-designer/flowchart-activity-designer.md) cuando haya una bifurcación simple o un bucle de flujo del programa que desee en el diagrama del modelo.
 
 ## <a name="using-the-sequence-activity-designer"></a>Utilizar el diseñador de actividades Sequence
 
-Para agregar una <xref:System.Activities.Statements.Sequence> actividad, arrastre la **secuencia** Diseñador de actividad desde la **cuadro de herramientas** y colóquelo en la superficie del Diseñador de flujo de trabajo de Windows. Para agregar una actividad secundaria a esta <xref:System.Activities.Statements.Sequence> actividad, arrastre alguna otra actividad desde la **cuadro de herramientas** y colóquelo en el triángulo en el cuadro con el texto de la sugerencia "Coloque la actividad aquí".
+Para agregar un <xref:System.Activities.Statements.Sequence> actividad, arrastre el **secuencia** Diseñador de actividades desde el **cuadro de herramientas** y colóquelo en la superficie del Diseñador de flujo de trabajo. Para agregar una actividad secundaria a esta <xref:System.Activities.Statements.Sequence> actividad, arrastre alguna otra actividad desde la **cuadro de herramientas** y colóquelo en el triángulo en el cuadro de texto con la sugerencia "Coloque la actividad aquí".
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Propiedades de la actividad Sequence en el Diseñador de flujo de trabajo
 
